@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #05070d;
+  --color-ink-900: #0a0e1a;
+  --color-ink-800: #111729;
+  --color-ink-700: #1a2238;
+  --color-ink-600: #283354;
+  --color-neon-400: #22d3ee;
+  --color-neon-500: #06b6d4;
+  --color-violet-glow: #8b5cf6;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink-950);
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, #22d3ee 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-glow {
+  background: linear-gradient(160deg, rgba(17, 23, 41, 0.9), rgba(10, 14, 26, 0.95));
+  border: 1px solid rgba(40, 51, 84, 0.6);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-glow:hover {
+  border-color: rgba(34, 211, 238, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px -12px rgba(34, 211, 238, 0.18);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(40, 51, 84, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 51, 84, 0.35) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+}
+
+.prose-id p {
+  margin-bottom: 1.1rem;
+  line-height: 1.85;
+  color: #cbd5e1;
+}
+
+.prose-id h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
