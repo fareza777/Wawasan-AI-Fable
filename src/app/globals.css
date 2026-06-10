@@ -265,20 +265,20 @@ h1, h2, h3, .font-display {
   color: #c084fc;
 }
 
-/* ===== Light mode — soft warm palette ===== */
+/* ===== Light mode — soft neutral palette ===== */
 [data-theme="light"] {
-  --color-ink-950: #f7f3ef;
-  --color-ink-900: #f0ebe5;
-  --color-ink-800: #e8e2da;
-  --color-ink-700: #ddd5cb;
-  --color-ink-600: #c8bfb3;
+  --color-ink-950: #fafaf9;
+  --color-ink-900: #f5f5f4;
+  --color-ink-800: #ececea;
+  --color-ink-700: #e4e4e2;
+  --color-ink-600: #d4d4d0;
   --color-neon-400: #0d9488;
   --color-neon-500: #0f766e;
   --color-violet-glow: #7c6aad;
   --score-ring-from: #6b9e96;
   --score-ring-to: #9a8ab5;
-  --score-ring-track: #e4ddd4;
-  --score-ring-bg: #f0ebe5;
+  --score-ring-track: #e8e8e6;
+  --score-ring-bg: #f5f5f4;
   --score-text-high: #3d7a62;
   --score-text-mid: #3d7a72;
   --score-text-warn: #a67c3d;
@@ -286,29 +286,29 @@ h1, h2, h3, .font-display {
 }
 
 [data-theme="light"] body {
-  background-color: #f7f3ef;
-  color: #4a4540;
+  background-color: #fafaf9;
+  color: #292524;
 }
 
 [data-theme="light"] .text-slate-50,
 [data-theme="light"] .text-slate-100 {
-  color: #3d3835 !important;
+  color: #1c1917 !important;
 }
 
 [data-theme="light"] .text-slate-200 {
-  color: #4a4540 !important;
+  color: #292524 !important;
 }
 
 [data-theme="light"] .text-slate-300 {
-  color: #5c5650 !important;
+  color: #44403c !important;
 }
 
 [data-theme="light"] .text-slate-400 {
-  color: #6b6560 !important;
+  color: #57534e !important;
 }
 
 [data-theme="light"] .text-slate-500 {
-  color: #8a837c !important;
+  color: #78716c !important;
 }
 
 [data-theme="light"] .text-neon-400 {
@@ -318,36 +318,36 @@ h1, h2, h3, .font-display {
 [data-theme="light"] .bg-ink-800\/60,
 [data-theme="light"] .bg-ink-800\/80,
 [data-theme="light"] .bg-ink-800 {
-  background-color: rgba(232, 226, 218, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.72) !important;
 }
 
 [data-theme="light"] .bg-ink-900\/60,
 [data-theme="light"] .bg-ink-900\/40,
 [data-theme="light"] .bg-ink-900\/80,
 [data-theme="light"] .bg-ink-900 {
-  background-color: rgba(240, 235, 229, 0.85) !important;
+  background-color: rgba(255, 255, 255, 0.88) !important;
 }
 
 [data-theme="light"] .bg-ink-950\/70,
 [data-theme="light"] .bg-ink-950\/80,
 [data-theme="light"] .bg-ink-950 {
-  background-color: rgba(247, 243, 239, 0.95) !important;
+  background-color: rgba(250, 250, 249, 0.96) !important;
 }
 
 [data-theme="light"] .border-ink-600,
 [data-theme="light"] .border-ink-700,
 [data-theme="light"] .border-ink-700\/60 {
-  border-color: #ddd5cb !important;
+  border-color: #e7e5e4 !important;
 }
 
 [data-theme="light"] .card-glow {
-  background: linear-gradient(160deg, #faf6f2, #f0ebe5);
-  border-color: #ddd5cb;
-  box-shadow: 0 4px 24px -8px rgba(74, 69, 64, 0.08);
+  background: linear-gradient(160deg, #ffffff, #f8f8f7);
+  border-color: #e7e5e4;
+  box-shadow: 0 2px 16px -6px rgba(28, 25, 23, 0.06);
 }
 
 [data-theme="light"] .card-glow:hover {
-  box-shadow: 0 12px 32px -12px rgba(13, 148, 136, 0.15);
+  box-shadow: 0 8px 28px -10px rgba(13, 148, 136, 0.12);
 }
 
 [data-theme="light"] .glow-title {
@@ -363,16 +363,20 @@ h1, h2, h3, .font-display {
 
 [data-theme="light"] .hero-grid {
   background-image:
-    linear-gradient(rgba(200, 191, 179, 0.35) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(200, 191, 179, 0.35) 1px, transparent 1px);
+    linear-gradient(rgba(214, 211, 209, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 211, 209, 0.22) 1px, transparent 1px);
 }
 
 [data-theme="light"] .aurora {
-  opacity: 0.15;
+  opacity: 0.07;
 }
 
 [data-theme="light"] .noise-overlay {
-  opacity: 0.015;
+  opacity: 0.008;
+}
+
+[data-theme="light"] .pointer-glow {
+  opacity: 0.35;
 }
 
 [data-theme="light"] .rank-one {
@@ -386,12 +390,16 @@ h1, h2, h3, .font-display {
 
 [data-theme="light"] .prose-id p,
 [data-theme="light"] .prose-id li {
-  color: #5c5650;
+  color: #292524;
 }
 
 [data-theme="light"] .prose-id h2,
 [data-theme="light"] .prose-id h3 {
-  color: #3d3835;
+  color: #1c1917;
+}
+
+[data-theme="light"] .lead-paragraph {
+  color: #292524;
 }
 
 [data-theme="light"] .prose-id code {
@@ -400,11 +408,11 @@ h1, h2, h3, .font-display {
 }
 
 [data-theme="light"] ::-webkit-scrollbar-track {
-  background: #f7f3ef;
+  background: #fafaf9;
 }
 
 [data-theme="light"] ::-webkit-scrollbar-thumb {
-  background: #c8bfb3;
+  background: #d6d3d1;
 }
 
 [data-theme="light"] ::selection {
