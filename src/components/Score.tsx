@@ -6,10 +6,11 @@ export function scoreColor(score: number) {
 }
 
 export function ScoreBadge({ score, size = "md" }: { score: number; size?: "md" | "lg" }) {
-  const dim = size === "lg" ? "h-16 w-16 text-2xl" : "h-11 w-11 text-sm";
+  const dim = size === "lg" ? "h-16 w-16 text-2xl" : "h-12 w-12 text-sm";
   return (
     <div
-      className={`${dim} flex shrink-0 items-center justify-center rounded-xl border border-ink-600 bg-ink-800 font-mono font-bold ${scoreColor(score)}`}
+      className={`score-ring-mini ${dim} flex shrink-0 items-center justify-center rounded-full font-mono font-bold ${scoreColor(score)}`}
+      style={{ "--skor": score } as React.CSSProperties}
     >
       {score.toFixed(1)}
     </div>
@@ -35,7 +36,8 @@ export function ScoreBar({ label, value }: { label: string; value: number }) {
 
 export function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="rounded-md border border-ink-600 bg-ink-800/70 px-2 py-0.5 text-xs font-medium text-slate-300">
+    <span className="inline-flex items-center gap-1.5 rounded-md border border-ink-600 bg-ink-800/70 px-2 py-0.5 text-xs font-medium text-slate-300">
+      <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-neon-400 to-violet-glow" />
       {children}
     </span>
   );

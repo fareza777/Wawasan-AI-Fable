@@ -34,10 +34,12 @@ export default function ModelPage() {
             <Link
               key={m.slug}
               href={`/model/${m.slug}`}
-              className="grid grid-cols-[3rem_1fr_5rem] items-center gap-4 border-b border-ink-700/60 bg-ink-900/60 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 sm:grid-cols-[3rem_1fr_8rem_5rem]"
+              className={`grid grid-cols-[3rem_1fr_5rem] items-center gap-4 border-b border-ink-700/60 bg-ink-900/60 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 sm:grid-cols-[3rem_1fr_8rem_5rem] ${
+                i === 0 ? "rank-one" : ""
+              }`}
             >
               <span className="font-mono text-lg font-bold text-slate-500">
-                {String(i + 1).padStart(2, "0")}
+                {i === 0 ? "👑" : String(i + 1).padStart(2, "0")}
               </span>
               <div className="min-w-0">
                 <div className="font-bold text-slate-100">{m.name}</div>

@@ -5,6 +5,7 @@ import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
 import ReviewCard from "@/components/ReviewCard";
 import ArtikelCard from "@/components/ArtikelCard";
+import TopicTicker from "@/components/TopicTicker";
 import { scoreColor } from "@/components/Score";
 
 function byDateDesc<T extends { date: string }>(arr: T[]) {
@@ -12,27 +13,35 @@ function byDateDesc<T extends { date: string }>(arr: T[]) {
 }
 
 function SectionHead({
+  nomor,
   kicker,
   title,
   href,
 }: {
+  nomor: string;
   kicker: string;
   title: string;
   href: string;
 }) {
   return (
     <div className="mb-8 flex items-end justify-between gap-4">
-      <div>
-        <p className="font-mono text-xs font-semibold uppercase tracking-widest text-neon-400">
-          {kicker}
-        </p>
-        <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-50 sm:text-3xl">
-          {title}
-        </h2>
+      <div className="flex items-start gap-4">
+        <span className="font-mono text-4xl font-extrabold leading-none text-ink-600 sm:text-5xl">
+          {nomor}
+        </span>
+        <div>
+          <p className="flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-widest text-neon-400">
+            {kicker}
+            <span className="h-px w-12 bg-gradient-to-r from-neon-400 to-transparent" />
+          </p>
+          <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-50 sm:text-3xl">
+            {title}
+          </h2>
+        </div>
       </div>
       <Link
         href={href}
-        className="hidden shrink-0 text-sm font-semibold text-neon-400 hover:underline sm:block"
+        className="link-underline hidden shrink-0 text-sm font-semibold text-neon-400 sm:block"
       >
         Lihat semua →
       </Link>
@@ -61,7 +70,7 @@ export default function Home() {
               <span className="h-2 w-2 animate-pulse-slow rounded-full bg-emerald-400" />
               {totalReview}+ review dari pemakaian nyata — bukan rilis pers
             </p>
-            <h1 className="fade-up delay-1 mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-50 sm:text-6xl">
+            <h1 className="fade-up delay-1 glow-title mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-50 sm:text-6xl">
               Navigasi Dunia AI,{" "}
               <span className="text-gradient">dalam Bahasa Kita</span>
             </h1>
@@ -101,8 +110,8 @@ export default function Home() {
           </div>
 
           {/* Terminal mock */}
-          <div className="fade-up delay-3 float-slow hidden lg:block">
-            <div className="overflow-hidden rounded-2xl border border-ink-600 bg-ink-900/90 shadow-2xl shadow-neon-500/10">
+          <div className="fade-up delay-3 float-slow tilt-wrap hidden lg:block">
+            <div className="tilt-card overflow-hidden rounded-2xl border border-ink-600 bg-ink-900/90 shadow-2xl shadow-neon-500/10">
               <div className="flex items-center gap-2 border-b border-ink-700 bg-ink-800/80 px-4 py-3">
                 <span className="h-3 w-3 rounded-full bg-rose-500/80" />
                 <span className="h-3 w-3 rounded-full bg-amber-500/80" />
@@ -139,9 +148,11 @@ export default function Home() {
         </div>
       </section>
 
+      <TopicTicker />
+
       {/* ===== Review Repo ===== */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <SectionHead kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
+        <SectionHead nomor="01" kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
         <div className="grid gap-6 md:grid-cols-3">
           {featuredRepos.map((r) => (
             <ReviewCard key={r.slug} review={r} basePath="/repo" />
@@ -152,16 +163,18 @@ export default function Home() {
       {/* ===== Leaderboard Model ===== */}
       <section className="border-y border-ink-700/60 bg-ink-900/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead kicker="// skor model" title="Papan Skor Model LLM" href="/model" />
+          <SectionHead nomor="02" kicker="// skor model" title="Papan Skor Model LLM" href="/model" />
           <div className="overflow-hidden rounded-2xl border border-ink-700">
             {topModels.map((m, i) => (
               <Link
                 key={m.slug}
                 href={`/model/${m.slug}`}
-                className="flex items-center gap-4 border-b border-ink-700/60 bg-ink-900/60 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80"
+                className={`flex items-center gap-4 border-b border-ink-700/60 bg-ink-900/60 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 ${
+                  i === 0 ? "rank-one" : ""
+                }`}
               >
                 <span className="w-8 font-mono text-lg font-bold text-slate-500">
-                  {String(i + 1).padStart(2, "0")}
+                  {i === 0 ? "👑" : String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="min-w-0 flex-1">
                   <div className="font-bold text-slate-100">{m.name}</div>
@@ -189,7 +202,7 @@ export default function Home() {
 
       {/* ===== Review Stack ===== */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <SectionHead kicker="// review stack" title="Stack & Tools Coding AI" href="/stack" />
+        <SectionHead nomor="03" kicker="// review stack" title="Stack & Tools Coding AI" href="/stack" />
         <div className="grid gap-6 md:grid-cols-3">
           {featuredStacks.map((s) => (
             <ReviewCard key={s.slug} review={s} basePath="/stack" />
@@ -200,7 +213,7 @@ export default function Home() {
       {/* ===== Berita ===== */}
       <section className="border-t border-ink-700/60 bg-ink-900/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead kicker="// berita & wawasan" title="Tulisan Terbaru" href="/berita" />
+          <SectionHead nomor="04" kicker="// berita & wawasan" title="Tulisan Terbaru" href="/berita" />
           <div className="grid gap-6 md:grid-cols-3">
             {latestNews.map((b) => (
               <ArtikelCard key={b.slug} artikel={b} />
@@ -210,8 +223,10 @@ export default function Home() {
       </section>
 
       {/* ===== CTA ===== */}
+      <div className="section-divider mx-auto max-w-4xl" />
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="relative overflow-hidden rounded-3xl border border-ink-600 bg-gradient-to-br from-ink-800 via-ink-900 to-ink-950 p-10 text-center sm:p-14">
+          <div className="dot-pattern absolute inset-0" aria-hidden />
           <div className="aurora -top-20 right-0 h-48 w-96 bg-violet-glow" />
           <h2 className="relative text-2xl font-extrabold text-slate-50 sm:text-3xl">
             Butuh bantuan menerapkan AI &amp; otomasi di organisasimu?

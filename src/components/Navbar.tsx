@@ -22,7 +22,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-ink-700/60 bg-ink-950/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link href="/" className="flex shrink-0 items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-neon-500 to-violet-glow font-mono text-sm font-bold text-ink-950">
+          <span className="logo-mark flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-neon-500 to-violet-glow font-mono text-sm font-bold text-ink-950">
             W
           </span>
           <span className="text-lg font-bold tracking-tight text-slate-100">

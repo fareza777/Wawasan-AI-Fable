@@ -14,7 +14,7 @@ export default function ReviewCard({
   const type = basePath.replace("/", "") as ContentType;
 
   return (
-    <Link href={`${basePath}/${review.slug}`} className="card-glow group block rounded-2xl p-6">
+    <Link href={`${basePath}/${review.slug}`} className="card-glow reveal group block rounded-2xl p-6">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <h3 className="text-lg font-bold text-slate-100 transition-colors group-hover:text-neon-400">

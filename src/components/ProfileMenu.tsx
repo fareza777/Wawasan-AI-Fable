@@ -101,9 +101,12 @@ export default function ProfileMenu() {
       <button
         onClick={() => setOpen(!open)}
         aria-label="Menu profil"
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-neon-500 to-violet-glow font-bold text-ink-950"
+        className="flex h-9 w-9 items-center justify-center rounded-full p-[2px]"
+        style={{ background: "conic-gradient(from 140deg, #22d3ee, #8b5cf6, #c084fc, #22d3ee)" }}
       >
-        {initial}
+        <span className="flex h-full w-full items-center justify-center rounded-full bg-ink-900 font-bold text-neon-400">
+          {initial}
+        </span>
       </button>
 
       {open && (

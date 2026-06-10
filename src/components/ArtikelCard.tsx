@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { Artikel } from "@/lib/types";
 import { formatTanggal } from "@/lib/format";
+import { getKategoriStyle } from "@/lib/kategori";
 
 export default function ArtikelCard({ artikel }: { artikel: Artikel }) {
   return (
-    <Link href={`/berita/${artikel.slug}`} className="card-glow block rounded-2xl p-6">
+    <Link href={`/berita/${artikel.slug}`} className="card-glow reveal block rounded-2xl p-6">
       <div className="flex items-center gap-3 text-xs text-slate-400">
-        <span className="rounded-md bg-violet-glow/15 px-2 py-0.5 font-semibold text-violet-300">
+        <span className={`rounded-md px-2 py-0.5 font-semibold ${getKategoriStyle(artikel.category)}`}>
           {artikel.category}
         </span>
         <span>{formatTanggal(artikel.date)}</span>

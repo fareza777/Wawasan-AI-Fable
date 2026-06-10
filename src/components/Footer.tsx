@@ -3,17 +3,26 @@ import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-ink-700/60 bg-ink-900/40">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="mb-12 flex flex-col items-center gap-5 rounded-3xl border border-ink-600 bg-gradient-to-br from-ink-800/80 to-ink-900 p-8 text-center sm:p-10">
-          <h3 className="text-xl font-extrabold text-slate-50 sm:text-2xl">
+    <footer className="relative overflow-hidden border-t border-ink-700/60 bg-ink-900/40">
+      <div
+        className="watermark-text pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 text-[16vw] sm:text-[11rem]"
+        aria-hidden
+      >
+        WAWASAN AI
+      </div>
+      <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <div className="relative mb-12 flex flex-col items-center gap-5 overflow-hidden rounded-3xl border border-ink-600 bg-gradient-to-br from-ink-800/80 to-ink-900 p-8 text-center sm:p-10">
+          <div className="dot-pattern absolute inset-0" aria-hidden />
+          <h3 className="relative text-xl font-extrabold text-slate-50 sm:text-2xl">
             Jangan ketinggalan review &amp; wawasan terbaru
           </h3>
-          <p className="max-w-md text-sm leading-relaxed text-slate-400">
+          <p className="relative max-w-md text-sm leading-relaxed text-slate-400">
             Review repo, skor model, dan analisis AI dengan konteks Indonesia —
             langsung dari Wawasan AI.
           </p>
-          <NewsletterForm />
+          <div className="relative w-full max-w-md">
+            <NewsletterForm />
+          </div>
         </div>
 
         <div className="grid gap-10 md:grid-cols-3">

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { berita, getArtikel } from "@/data/berita";
 import { formatTanggal } from "@/lib/format";
+import { getKategoriStyle } from "@/lib/kategori";
 
 export function generateStaticParams() {
   return berita.map((b) => ({ slug: b.slug }));
@@ -34,7 +35,7 @@ export default async function BeritaDetailPage({
 
       <header className="mt-6">
         <div className="flex items-center gap-3 text-sm text-slate-400">
-          <span className="rounded-md bg-violet-glow/15 px-2.5 py-1 text-xs font-semibold text-violet-300">
+          <span className={`rounded-md px-2.5 py-1 text-xs font-semibold ${getKategoriStyle(artikel.category)}`}>
             {artikel.category}
           </span>
           <span>{formatTanggal(artikel.date)}</span>
