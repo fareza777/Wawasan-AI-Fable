@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import SearchModal from "./SearchModal";
 import ProfileMenu from "./ProfileMenu";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { href: "/repo", label: "Review Repo" },
   { href: "/model", label: "Review Model" },
   { href: "/stack", label: "Review Stack" },
   { href: "/berita", label: "Berita" },
+  { href: "/koleksi", label: "Koleksi" },
   { href: "/tentang", label: "Tentang" },
 ];
 
@@ -54,9 +56,9 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                pathname.startsWith(l.href)
+                pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href))
                   ? "bg-ink-800 text-neon-400"
-                  : "text-slate-400 hover:bg-ink-800/60 hover:text-slate-100"
+                  : "text-slate-300 hover:bg-ink-800/60 hover:text-slate-100"
               }`}
             >
               {l.label}
@@ -66,6 +68,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <SearchModal />
+          <ThemeToggle />
           <div className="hidden lg:block">
             <ProfileMenu />
           </div>
@@ -92,18 +95,13 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 hover:bg-ink-800"
+              className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
+                pathname.startsWith(l.href) ? "bg-ink-800 text-neon-400" : "text-slate-300 hover:bg-ink-800"
+              }`}
             >
               {l.label}
             </Link>
           ))}
-          <Link
-            href="/koleksi"
-            onClick={() => setOpen(false)}
-            className="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 hover:bg-ink-800"
-          >
-            Koleksi Saya
-          </Link>
           <div className="mt-3 px-3">
             <ProfileMenu />
           </div>

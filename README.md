@@ -1,35 +1,49 @@
-# Wawasan AI 🇮🇩
+# Wawasan AI
 
-**Portal review AI Indonesia** — review repo GitHub, skor model LLM, review stack & tools, dan berita/wawasan AI. Ditulis dari pemakaian nyata oleh [Fajar M Reza](https://prompt-lab.xyz).
+**Portal review AI Indonesia** — review repo GitHub, model LLM, review stack & tools, dan berita/wawasan AI oleh tim editorial Wawasan AI.
 
 ## Rubrik
 
-- **Review Repo GitHub** (`/repo`) — 11 review: OpenClaw, Hermes, DeerFlow, n8n, Dify, Ollama, Open WebUI, LangGraph, Flowise, CrewAI, ComfyUI
-- **Review Model LLM** (`/model`) — 11 model di papan skor, dengan penilaian khusus kemampuan bahasa Indonesia
-- **Review Stack & Tools** (`/stack`) — 10 review: Claude Code, Cursor, Codex, Windsurf, Cline, Gemini CLI, Copilot, v0, Bolt.new, Aider
-- **Berita & Wawasan** (`/berita`) — 10 artikel: analisis, tutorial, dan opini dengan konteks Indonesia
+- **Review Repo GitHub** (`/repo`) — 11 review open-source AI
+- **Review Model LLM** (`/model`) — 11 model dengan evaluasi bahasa Indonesia
+- **Review Stack & Tools** (`/stack`) — 10 review tool coding AI
+- **Berita & Wawasan** (`/berita`) — 10 artikel analisis, tutorial, dan opini
 
 ## Fitur
 
-- **Pencarian global** — tombol Cari di navbar atau `Ctrl/⌘ + K`, mencari di seluruh review dan artikel
-- **Profil lokal & Koleksi** — tombol "Masuk" membuat profil di perangkat (localStorage, tanpa server); bookmark review favorit ke halaman `/koleksi`
-- **Reading progress bar**, tombol bagikan, score ring, animasi halus, font khusus (Space Grotesk + Inter + JetBrains Mono)
-- **Newsletter form** di footer (saat ini via mailto; siap diganti provider seperti Mailchimp/Resend)
+- **Pencarian global** — `Ctrl/⌘ + K`, full-text search termasuk isi artikel
+- **Filter & sort** — di setiap halaman daftar rubrik
+- **Koleksi & bookmark** — profil lokal, export/import JSON
+- **Bandingkan model** — `/bandingkan` side-by-side
+- **Tag pages** — `/tag/[tag]` agregasi lintas rubrik
+- **Indeks A–Z** — `/indeks`
+- **Changelog skor** — `/changelog` riwayat perubahan editorial
+- **RSS feed** — `/feed.xml`
+- **Mode terang/gelap** — toggle di navbar
+- **Newsletter** — API Resend (atau mode demo lokal)
+- **Analytics** — Plausible (opsional via env)
+- **OG image** — auto-generated per share
+- **GitHub stars** — live di halaman review repo
 
 ## Stack
 
-- [Next.js 15](https://nextjs.org) (App Router, static generation)
-- [Tailwind CSS 4](https://tailwindcss.com)
+- Next.js 15 (App Router, static generation)
+- Tailwind CSS 4
 - TypeScript
 
 ## Menjalankan Lokal
 
 ```bash
 npm install
+cp .env.example .env.local   # opsional
 npm run dev
 ```
 
 Buka [http://localhost:3000](http://localhost:3000).
+
+## Environment Variables
+
+Lihat `.env.example` untuk `NEXT_PUBLIC_SITE_URL`, Plausible, dan Resend newsletter.
 
 ## Menambah Konten
 
@@ -39,9 +53,8 @@ Semua konten ada di `src/data/`:
 - `models.ts` — review model LLM
 - `stacks.ts` — review tools
 - `berita.ts` — artikel berita & wawasan
-
-Tambahkan entri baru ke array, dan halaman daftar + detail + sitemap akan ter-update otomatis saat build.
+- `changelog.ts` — riwayat perubahan skor
 
 ## Deploy
 
-Siap deploy ke [Vercel](https://vercel.com) tanpa konfigurasi tambahan: import repo, dan selesai. Setelah punya domain sendiri, ganti `metadataBase` di `src/app/layout.tsx` serta `BASE` di `src/app/sitemap.ts`.
+Siap deploy ke Vercel: import repo, set env vars, selesai.

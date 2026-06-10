@@ -4,7 +4,7 @@ const topik = [
   "Ollama & LLM Lokal",
   "DeerFlow",
   "n8n Otomasi",
-  "Papan Skor Model",
+  "Review Model LLM",
   "MCP",
   "Vibe Coding",
   "Cursor vs Windsurf",

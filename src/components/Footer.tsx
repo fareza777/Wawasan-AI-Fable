@@ -1,15 +1,11 @@
 import Link from "next/link";
 import NewsletterForm from "./NewsletterForm";
-import { repos } from "@/data/repos";
-import { models } from "@/data/models";
-import { stacks } from "@/data/stacks";
-import { berita } from "@/data/berita";
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-ink-700/60 bg-ink-900/40">
       <div
-        className="watermark-text pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 text-[16vw] sm:text-[11rem]"
+        className="watermark-text pointer-events-none absolute -bottom-4 left-1/2 max-w-full -translate-x-1/2 truncate text-[12vw] sm:-bottom-6 sm:text-[9rem]"
         aria-hidden
       >
         WAWASAN AI
@@ -20,9 +16,8 @@ export default function Footer() {
           <h3 className="relative text-xl font-extrabold text-slate-50 sm:text-2xl">
             Jangan ketinggalan review &amp; wawasan terbaru
           </h3>
-          <p className="relative max-w-md text-sm leading-relaxed text-slate-400">
-            Review repo, skor model, dan analisis AI dengan konteks Indonesia —
-            langsung dari Wawasan AI.
+          <p className="relative max-w-md text-sm leading-relaxed text-slate-300">
+            Review repo, model, dan analisis AI — dari Wawasan AI.
           </p>
           <div className="relative w-full max-w-md">
             <NewsletterForm />
@@ -39,59 +34,36 @@ export default function Footer() {
                 Wawasan<span className="text-gradient">AI</span>
               </span>
             </div>
-            <p className="mt-3 text-sm leading-relaxed text-slate-400">
-              Portal review AI Indonesia: repo GitHub, model LLM, stack & tools,
-              dan wawasan AI — ditulis dari pemakaian nyata, bukan sekadar rilis pers.
+            <p className="mt-3 text-sm leading-relaxed text-slate-300">
+              Portal review AI: repo GitHub, model LLM, stack &amp; tools, dan wawasan AI.
             </p>
           </div>
 
           <div className="text-sm">
             <h3 className="mb-3 font-semibold text-slate-200">Rubrik</h3>
-            <ul className="space-y-2 text-slate-400">
-              <li>
-                <Link href="/repo" className="hover:text-neon-400">
-                  Review Repo GitHub <span className="font-mono text-xs text-slate-600">({repos.length})</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/model" className="hover:text-neon-400">
-                  Review Model LLM <span className="font-mono text-xs text-slate-600">({models.length})</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/stack" className="hover:text-neon-400">
-                  Review Stack & Tools <span className="font-mono text-xs text-slate-600">({stacks.length})</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/berita" className="hover:text-neon-400">
-                  Berita & Wawasan <span className="font-mono text-xs text-slate-600">({berita.length})</span>
-                </Link>
-              </li>
-              <li><Link href="/koleksi" className="hover:text-neon-400">Koleksi Saya</Link></li>
+            <ul className="space-y-2 text-slate-300">
+              <li><Link href="/repo" className="hover:text-neon-400">Review Repo GitHub</Link></li>
+              <li><Link href="/model" className="hover:text-neon-400">Review Model LLM</Link></li>
+              <li><Link href="/stack" className="hover:text-neon-400">Review Stack & Tools</Link></li>
+              <li><Link href="/berita" className="hover:text-neon-400">Berita & Wawasan</Link></li>
+              <li><Link href="/koleksi" className="hover:text-neon-400">Koleksi</Link></li>
+              <li><Link href="/bandingkan" className="hover:text-neon-400">Bandingkan Model</Link></li>
             </ul>
           </div>
 
           <div className="text-sm">
-            <h3 className="mb-3 font-semibold text-slate-200">Proyek Lain</h3>
-            <ul className="space-y-2 text-slate-400">
-              <li>
-                <a href="https://prompt-lab.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-neon-400">
-                  Prompt Lab ↗
-                </a>
-              </li>
-              <li>
-                <a href="https://prima-rawajati.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-neon-400">
-                  Prima Rawajati ↗
-                </a>
-              </li>
-              <li><Link href="/tentang" className="hover:text-neon-400">Tentang Penulis</Link></li>
+            <h3 className="mb-3 font-semibold text-slate-200">Sumber Daya</h3>
+            <ul className="space-y-2 text-slate-300">
+              <li><Link href="/indeks" className="hover:text-neon-400">Indeks A–Z</Link></li>
+              <li><Link href="/changelog" className="hover:text-neon-400">Changelog Skor</Link></li>
+              <li><Link href="/feed.xml" className="hover:text-neon-400">RSS Feed</Link></li>
+              <li><Link href="/tentang" className="hover:text-neon-400">Tentang Kami</Link></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="border-t border-ink-700/60 py-5 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Wawasan AI · Dibuat oleh Fajar M Reza · Skor review adalah opini editorial dari pemakaian langsung.
+        © {new Date().getFullYear()} Wawasan AI
       </div>
     </footer>
   );

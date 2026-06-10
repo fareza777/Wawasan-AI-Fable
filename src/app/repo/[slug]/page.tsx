@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { repos, getRepo } from "@/data/repos";
 import ReviewDetail from "@/components/ReviewDetail";
+import { fetchGitHubStats } from "@/lib/githubMeta";
 
 export function generateStaticParams() {
   return repos.map((r) => ({ slug: r.slug }));
@@ -27,18 +28,13 @@ export default async function RepoDetailPage({
 }) {
   const review = getRepo((await params).slug);
   if (!review) notFound();
-  const idx = repos.findIndex((r) => r.slug === review.slug);
-  const berikutnya = repos[(idx + 1) % repos.length];
+  const githubStats = review.link ? await fetchGitHubStats(review.link) : null;
   return (
     <ReviewDetail
       review={review}
       backHref="/repo"
-      backLabel="Review Repo"
-      next={{
-        href: `/repo/${berikutnya.slug}`,
-        name: berikutnya.name,
-        tagline: berikutnya.tagline,
-      }}
+      backLabel="Semua Review Repo"
+      githubStats={githubStats}
     />
   );
 }

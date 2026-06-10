@@ -69,3 +69,32 @@ export function clearProfile() {
   localStorage.removeItem(PROFILE_KEY);
   emit();
 }
+
+export function clearAllData() {
+  localStorage.removeItem(BOOKMARK_KEY);
+  localStorage.removeItem(PROFILE_KEY);
+  localStorage.removeItem("wawasanai:read");
+  localStorage.removeItem("wawasanai:lastVisit");
+  localStorage.removeItem("wawasanai:newsletter");
+  emit();
+}
+
+export function exportBookmarks(): string {
+  return JSON.stringify({ bookmarks: getBookmarks(), profile: getProfile() }, null, 2);
+}
+
+export function importBookmarks(json: string): boolean {
+  try {
+    const data = JSON.parse(json);
+    if (Array.isArray(data.bookmarks)) {
+      localStorage.setItem(BOOKMARK_KEY, JSON.stringify(data.bookmarks));
+    }
+    if (data.profile?.name) {
+      localStorage.setItem(PROFILE_KEY, JSON.stringify(data.profile));
+    }
+    emit();
+    return true;
+  } catch {
+    return false;
+  }
+}

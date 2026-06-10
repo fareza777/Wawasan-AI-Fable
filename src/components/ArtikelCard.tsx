@@ -2,20 +2,26 @@ import Link from "next/link";
 import { Artikel } from "@/lib/types";
 import { formatTanggal } from "@/lib/format";
 import { getKategoriStyle } from "@/lib/kategori";
-
+import CoverArt from "./CoverArt";
+import NewContentBadge from "./NewContentBadge";
 export default function ArtikelCard({ artikel }: { artikel: Artikel }) {
   return (
-    <Link href={`/berita/${artikel.slug}`} className="card-glow reveal block rounded-2xl p-6">
-      <div className="flex items-center gap-3 text-xs text-slate-400">
+    <Link
+      href={`/berita/${artikel.slug}`}
+      className="card-glow reveal block rounded-2xl border border-amber-500/20 bg-gradient-to-br from-amber-500/10 to-ink-900/80 p-6"
+    >
+      <CoverArt category={artikel.category} title={artikel.title} />
+      <div className="flex flex-wrap items-center gap-3 text-xs text-slate-300">
         <span className={`rounded-md px-2 py-0.5 font-semibold ${getKategoriStyle(artikel.category)}`}>
           {artikel.category}
         </span>
         <span>{formatTanggal(artikel.date)}</span>
         <span>·</span>
         <span>{artikel.readingTime}</span>
+        <NewContentBadge date={artikel.date} />
       </div>
       <h3 className="mt-3 text-lg font-bold leading-snug text-slate-100">{artikel.title}</h3>
-      <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-400">{artikel.excerpt}</p>
+      <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-300">{artikel.excerpt}</p>
       <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-neon-400">
         Baca selengkapnya
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

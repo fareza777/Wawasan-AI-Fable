@@ -73,6 +73,8 @@ export const repos: Review[] = [
       "Kelemahan terbesarnya adalah dokumentasi dan ekosistem yang belum sematang framework besar. Tapi justru di situ nilainya sebagai bahan belajar: kamu dipaksa memahami konsep dasar seperti tool calling, context window management, dan agentic loop — fondasi yang berlaku di framework mana pun.",
       "Rekomendasi saya: pakai Hermes sebagai 'sekolah' arsitektur agent. Setelah paham polanya, kamu akan jauh lebih percaya diri mengevaluasi framework lain — dan tahu kapan sebuah abstraksi membantu atau justru menghalangi.",
     ],
+    link: "https://github.com/NousResearch/hermes-agent",
+    linkLabel: "Nous Research",
     date: "2026-05-25",
   },
   {

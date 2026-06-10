@@ -18,6 +18,7 @@ export type Review = {
   link?: string;
   linkLabel?: string;
   date: string; // YYYY-MM-DD
+  updatedAt?: string; // YYYY-MM-DD
   featured?: boolean;
 };
 
