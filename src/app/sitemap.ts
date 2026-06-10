@@ -5,7 +5,7 @@ import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
 import { allTags } from "@/lib/tags";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasanai.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const statis = [

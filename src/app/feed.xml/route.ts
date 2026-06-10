@@ -1,7 +1,7 @@
 import { berita } from "@/data/berita";
 import { repos } from "@/data/repos";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasanai.com";
 
 export async function GET() {
   const items = [

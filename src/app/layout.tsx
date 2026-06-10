@@ -28,7 +28,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasanai.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
