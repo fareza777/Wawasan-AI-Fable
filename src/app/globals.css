@@ -210,6 +210,9 @@ h1, h2, h3, .font-display {
   margin-bottom: 1.1rem;
   line-height: 1.85;
   color: #cbd5e1;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .prose-id h2 {

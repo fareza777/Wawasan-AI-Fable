@@ -6,7 +6,6 @@ import ScoreRing from "./ScoreRing";
 import BookmarkButton from "./BookmarkButton";
 import ShareButton from "./ShareButton";
 import ReadingProgress from "./ReadingProgress";
-import TableOfContents from "./TableOfContents";
 import RelatedContent from "./RelatedContent";
 import ScoreFeedback from "./ScoreFeedback";
 import GitHubStars from "./GitHubStars";
@@ -14,13 +13,6 @@ import ItemLogo from "./ItemLogo";
 import { getRelatedReviews } from "@/lib/related";
 import { formatTanggal } from "@/lib/format";
 import ReviewReadTracker from "./ReviewReadTracker";
-
-const tocItems = [
-  { id: "skor-rinci", label: "Skor Rinci" },
-  { id: "kelebihan-kekurangan", label: "Kelebihan & Kekurangan" },
-  { id: "ulasan-lengkap", label: "Ulasan Lengkap" },
-  { id: "verdict", label: "Verdict" },
-];
 
 export default function ReviewDetail({
   review,
@@ -36,13 +28,11 @@ export default function ReviewDetail({
   const type = backHref.replace("/", "") as ContentType;
 
   return (
-    <article className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <ReadingProgress />
       <ReviewReadTracker type={type} slug={review.slug} />
 
-      <div className="lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
-        <div className="min-w-0 max-w-3xl">
-          <Link href={backHref} className="text-sm font-medium text-neon-400 hover:underline">
+      <Link href={backHref} className="text-sm font-medium text-neon-400 hover:underline">
             ← {backLabel}
           </Link>
 
@@ -73,7 +63,7 @@ export default function ReviewDetail({
             <ShareButton title={`Review ${review.name} — Wawasan AI`} />
           </div>
 
-          <p className="fade-up delay-2 mt-8 rounded-2xl border border-ink-600 bg-ink-800/50 p-6 leading-relaxed text-slate-300">
+          <p className="fade-up delay-2 mt-8 rounded-2xl border border-ink-600 bg-ink-800/50 p-6 text-justify leading-relaxed text-slate-300">
             {review.summary}
           </p>
 
@@ -130,7 +120,7 @@ export default function ReviewDetail({
               </svg>
               Verdict
             </h2>
-            <p className="mt-3 leading-relaxed text-slate-200">{review.verdict}</p>
+            <p className="mt-3 text-justify leading-relaxed text-slate-200">{review.verdict}</p>
           </section>
 
           {review.link && (
@@ -144,11 +134,7 @@ export default function ReviewDetail({
             </a>
           )}
 
-          <RelatedContent items={getRelatedReviews(type, review.slug, review.tags)} />
-        </div>
-
-        <TableOfContents items={tocItems} />
-      </div>
+      <RelatedContent items={getRelatedReviews(type, review.slug, review.tags)} />
     </article>
   );
 }
