@@ -138,6 +138,15 @@ h1, h2, h3, .font-display {
   opacity: 1;
 }
 
+/* ===== Section band (homepage alternating blocks) ===== */
+.section-muted {
+  background-color: rgba(17, 23, 41, 0.35);
+}
+
+[data-theme="light"] .section-muted {
+  background-color: #ececea;
+}
+
 /* ===== Latar hero ===== */
 .hero-grid {
   background-image:

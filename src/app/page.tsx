@@ -139,12 +139,14 @@ export default function Home() {
       <TopicTicker />
 
       {/* ===== Review Repo ===== */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <SectionHead nomor="01" kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
-        <div className="grid gap-6 md:grid-cols-3">
-          {featuredRepos.map((r) => (
-            <ReviewCard key={r.slug} review={r} basePath="/repo" />
-          ))}
+      <section className="section-muted">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <SectionHead nomor="01" kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
+          <div className="grid gap-6 md:grid-cols-3">
+            {featuredRepos.map((r) => (
+              <ReviewCard key={r.slug} review={r} basePath="/repo" />
+            ))}
+          </div>
         </div>
       </section>
 
