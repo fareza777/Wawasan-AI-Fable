@@ -6,6 +6,7 @@ import { berita } from "@/data/berita";
 import ReviewCard from "@/components/ReviewCard";
 import ArtikelCard from "@/components/ArtikelCard";
 import TopicTicker from "@/components/TopicTicker";
+import HeroSearch from "@/components/HeroSearch";
 import { scoreColor } from "@/components/Score";
 
 function byDateDesc<T extends { date: string }>(arr: T[]) {
@@ -64,20 +65,19 @@ export default function Home() {
         <div className="aurora -top-24 left-[15%] h-80 w-80 bg-neon-500" />
         <div className="aurora -top-10 right-[10%] h-72 w-72 bg-violet-glow" style={{ animationDelay: "-7s" }} />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-16 sm:px-6 sm:pt-24 lg:grid-cols-2">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-12 sm:px-6 sm:pt-20 lg:grid-cols-2">
           <div>
             <p className="fade-up inline-flex items-center gap-2 rounded-full border border-ink-600 bg-ink-800/70 px-4 py-1.5 text-xs font-medium text-slate-300">
               <span className="h-2 w-2 animate-pulse-slow rounded-full bg-emerald-400" />
-              {totalReview}+ review dari pemakaian nyata — bukan rilis pers
+              Portal review &amp; wawasan AI Indonesia
             </p>
-            <h1 className="fade-up delay-1 glow-title mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-50 sm:text-6xl">
-              Navigasi Dunia AI,{" "}
-              <span className="text-gradient">dalam Bahasa Kita</span>
+            <h1 className="fade-up delay-1 glow-title mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
+              Review dan Navigasi{" "}
+              <span className="text-gradient">Dunia AI</span>
             </h1>
-            <p className="fade-up delay-2 mt-6 max-w-xl text-lg leading-relaxed text-slate-400">
-              Review mendalam repo GitHub, papan skor model LLM, ulasan stack
-              coding AI, dan wawasan otomasi — diuji langsung, ditulis jujur,
-              dengan konteks Indonesia.
+            <p className="fade-up delay-2 mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
+              Review repo GitHub, model LLM, stack coding AI, dan wawasan
+              otomasi untuk profesional dan organisasi.
             </p>
             <div className="fade-up delay-3 mt-9 flex flex-wrap items-center gap-3">
               <Link
@@ -90,23 +90,11 @@ export default function Home() {
                 href="/model"
                 className="rounded-xl border border-ink-600 bg-ink-800/60 px-6 py-3 text-sm font-bold text-slate-200 transition-colors hover:border-neon-400/50"
               >
-                Papan Skor Model →
+                Review Model LLM →
               </Link>
             </div>
 
-            <div className="fade-up delay-4 mt-12 grid max-w-md grid-cols-4 gap-3">
-              {[
-                { angka: repos.length, label: "Repo" },
-                { angka: models.length, label: "Model" },
-                { angka: stacks.length, label: "Stack" },
-                { angka: berita.length, label: "Artikel" },
-              ].map((s) => (
-                <div key={s.label} className="rounded-xl border border-ink-700 bg-ink-900/60 p-3 text-center">
-                  <div className="font-mono text-xl font-extrabold text-gradient">{s.angka}</div>
-                  <div className="mt-0.5 text-[11px] uppercase tracking-wider text-slate-500">{s.label}</div>
-                </div>
-              ))}
-            </div>
+            <HeroSearch />
           </div>
 
           {/* Terminal mock */}
@@ -116,7 +104,7 @@ export default function Home() {
                 <span className="h-3 w-3 rounded-full bg-rose-500/80" />
                 <span className="h-3 w-3 rounded-full bg-amber-500/80" />
                 <span className="h-3 w-3 rounded-full bg-emerald-500/80" />
-                <span className="ml-3 font-mono text-xs text-slate-500">fajar@wawasan-ai ~ </span>
+                <span className="ml-3 font-mono text-xs text-slate-500">wawasan@portal ~ </span>
               </div>
               <div className="space-y-3 p-6 font-mono text-[13px] leading-relaxed">
                 <p className="text-slate-400">
@@ -163,7 +151,7 @@ export default function Home() {
       {/* ===== Leaderboard Model ===== */}
       <section className="border-y border-ink-700/60 bg-ink-900/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead nomor="02" kicker="// skor model" title="Papan Skor Model LLM" href="/model" />
+          <SectionHead nomor="02" kicker="// review model" title="Review Model LLM" href="/model" />
           <div className="overflow-hidden rounded-2xl border border-ink-700">
             {topModels.map((m, i) => (
               <Link
@@ -193,10 +181,6 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <p className="mt-4 text-center text-sm text-slate-500">
-            Termasuk skor khusus <span className="text-slate-300">kemampuan bahasa Indonesia</span> —
-            yang tidak akan kamu temukan di benchmark global.
-          </p>
         </div>
       </section>
 
@@ -229,18 +213,17 @@ export default function Home() {
           <div className="dot-pattern absolute inset-0" aria-hidden />
           <div className="aurora -top-20 right-0 h-48 w-96 bg-violet-glow" />
           <h2 className="relative text-2xl font-extrabold text-slate-50 sm:text-3xl">
-            Butuh bantuan menerapkan AI &amp; otomasi di organisasimu?
+            Butuh bantuan menerapkan AI di organisasimu?
           </h2>
-          <p className="relative mx-auto mt-4 max-w-xl leading-relaxed text-slate-400">
-            Dari setup agent dan otomasi workflow sampai pelatihan tim — saya
-            membantu organisasi di Indonesia mengadopsi AI dengan cara yang
-            realistis dan aman.
+          <p className="relative mx-auto mt-4 max-w-xl leading-relaxed text-slate-300">
+            Wawasan AI membantu organisasi di Indonesia mengadopsi AI — dari konsultasi
+            dan setup otomasi sampai pelatihan tim.
           </p>
           <Link
             href="/tentang"
             className="relative mt-7 inline-block rounded-xl bg-gradient-to-r from-neon-500 to-violet-glow px-7 py-3 text-sm font-bold text-ink-950 transition-opacity hover:opacity-90"
           >
-            Kenalan dengan Penulis →
+            Tentang Wawasan AI →
           </Link>
         </div>
       </section>

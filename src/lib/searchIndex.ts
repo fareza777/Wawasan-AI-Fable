@@ -1,6 +1,3 @@
-// Indeks pencarian ringan: hanya judul/tag/ringkasan, tanpa isi artikel,
-// agar bundle client tetap kecil.
-
 import { repos } from "@/data/repos";
 import { models } from "@/data/models";
 import { stacks } from "@/data/stacks";
@@ -26,7 +23,7 @@ export const searchIndex: SearchItem[] = [
     href: `/repo/${r.slug}`,
     title: r.name,
     subtitle: r.tagline,
-    keywords: `${r.name} ${r.tagline} ${r.tags.join(" ")}`.toLowerCase(),
+    keywords: `${r.name} ${r.tagline} ${r.tags.join(" ")} ${r.summary} ${r.body.join(" ")} ${r.pros.join(" ")} ${r.cons.join(" ")}`.toLowerCase(),
     score: r.score,
   })),
   ...models.map((m) => ({
@@ -36,7 +33,7 @@ export const searchIndex: SearchItem[] = [
     href: `/model/${m.slug}`,
     title: m.name,
     subtitle: m.tagline,
-    keywords: `${m.name} ${m.tagline} ${m.tags.join(" ")}`.toLowerCase(),
+    keywords: `${m.name} ${m.tagline} ${m.tags.join(" ")} ${m.summary} ${m.body.join(" ")}`.toLowerCase(),
     score: m.score,
   })),
   ...stacks.map((s) => ({
@@ -46,7 +43,7 @@ export const searchIndex: SearchItem[] = [
     href: `/stack/${s.slug}`,
     title: s.name,
     subtitle: s.tagline,
-    keywords: `${s.name} ${s.tagline} ${s.tags.join(" ")}`.toLowerCase(),
+    keywords: `${s.name} ${s.tagline} ${s.tags.join(" ")} ${s.summary} ${s.body.join(" ")}`.toLowerCase(),
     score: s.score,
   })),
   ...berita.map((b) => ({
@@ -56,11 +53,11 @@ export const searchIndex: SearchItem[] = [
     href: `/berita/${b.slug}`,
     title: b.title,
     subtitle: b.excerpt,
-    keywords: `${b.title} ${b.excerpt} ${b.category}`.toLowerCase(),
+    keywords: `${b.title} ${b.excerpt} ${b.category} ${b.body.map((s) => `${s.heading ?? ""} ${s.paragraphs.join(" ")}`).join(" ")}`.toLowerCase(),
   })),
 ];
 
-export function cariKonten(query: string, limit = 8): SearchItem[] {
+export function cariKonten(query: string, limit = 12): SearchItem[] {
   const q = query.trim().toLowerCase();
   if (!q) return [];
   const terms = q.split(/\s+/);
@@ -68,7 +65,8 @@ export function cariKonten(query: string, limit = 8): SearchItem[] {
     .map((item) => {
       let skor = 0;
       for (const t of terms) {
-        if (item.title.toLowerCase().includes(t)) skor += 3;
+        if (item.title.toLowerCase().includes(t)) skor += 5;
+        else if (item.subtitle.toLowerCase().includes(t)) skor += 3;
         else if (item.keywords.includes(t)) skor += 1;
       }
       return { item, skor };

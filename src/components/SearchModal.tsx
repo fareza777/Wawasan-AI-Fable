@@ -12,14 +12,24 @@ const typeStyle: Record<string, string> = {
   berita: "bg-amber-500/15 text-amber-300",
 };
 
+function shortcutLabel() {
+  if (typeof navigator !== "undefined" && /Mac|iPhone|iPad/.test(navigator.platform)) return "⌘K";
+  return "Ctrl+K";
+}
+
 export default function SearchModal() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
+  const [modKey, setModKey] = useState("Ctrl+K");
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
   const results: SearchItem[] = cariKonten(query);
+
+  useEffect(() => {
+    setModKey(shortcutLabel());
+  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -51,7 +61,7 @@ export default function SearchModal() {
       <button
         onClick={() => setOpen(true)}
         aria-label="Cari konten"
-        className="flex h-9 items-center gap-2 rounded-lg border border-ink-600 bg-ink-800/60 px-3 text-sm text-slate-400 transition-colors hover:border-neon-400/40 hover:text-slate-200"
+        className="flex h-9 items-center gap-2 rounded-lg border border-ink-600 bg-ink-800/60 px-3 text-sm text-slate-300 transition-colors hover:border-neon-400/40 hover:text-slate-100"
       >
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="11" cy="11" r="7" />
@@ -59,7 +69,7 @@ export default function SearchModal() {
         </svg>
         <span className="hidden lg:inline">Cari…</span>
         <kbd className="hidden rounded border border-ink-600 bg-ink-900 px-1.5 py-0.5 font-mono text-[10px] text-slate-500 lg:inline">
-          ⌘K
+          {modKey}
         </kbd>
       </button>
 
@@ -87,7 +97,7 @@ export default function SearchModal() {
                 onKeyDown={(e) => {
                   if (e.key === "ArrowDown") {
                     e.preventDefault();
-                    setActive((a) => Math.min(a + 1, results.length - 1));
+                    setActive((a) => Math.min(a + 1, Math.max(0, results.length - 1)));
                   } else if (e.key === "ArrowUp") {
                     e.preventDefault();
                     setActive((a) => Math.max(a - 1, 0));
@@ -103,7 +113,7 @@ export default function SearchModal() {
             <div className="max-h-80 overflow-y-auto p-2">
               {query.trim() === "" ? (
                 <p className="px-3 py-6 text-center text-sm text-slate-500">
-                  Ketik untuk mencari di seluruh review dan artikel.
+                  Ketik untuk mencari di seluruh review dan artikel (termasuk isi).
                 </p>
               ) : results.length === 0 ? (
                 <p className="px-3 py-6 text-center text-sm text-slate-500">

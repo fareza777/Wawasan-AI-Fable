@@ -6,8 +6,10 @@ import {
   Profile,
   getProfile,
   saveProfile,
-  clearProfile,
+  clearAllData,
   getBookmarks,
+  exportBookmarks,
+  importBookmarks,
   STORAGE_EVENT,
 } from "@/lib/storage";
 
@@ -18,6 +20,7 @@ export default function ProfileMenu() {
   const [showLogin, setShowLogin] = useState(false);
   const [name, setName] = useState("");
   const wrapRef = useRef<HTMLDivElement>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const sync = () => {
@@ -58,10 +61,10 @@ export default function ProfileMenu() {
               className="w-full max-w-sm rounded-2xl border border-ink-600 bg-ink-900 p-7 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <h2 className="text-lg font-bold text-slate-100">Selamat datang 👋</h2>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                Buat profil lokal untuk menyimpan koleksi review favoritmu.
-                Data tersimpan di perangkat ini saja — tanpa server, tanpa password.
+              <h2 className="text-lg font-bold text-slate-100">Akun Wawasan AI</h2>
+              <p className="mt-2 text-sm leading-relaxed text-slate-300">
+                Buat profil lokal untuk menyimpan koleksi review favorit. Data tersimpan di perangkat
+                ini saja — tanpa server, tanpa password.
               </p>
               <form
                 onSubmit={(e) => {
@@ -76,7 +79,7 @@ export default function ProfileMenu() {
                   autoFocus
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Siapa namamu?"
+                  placeholder="Nama atau tim kamu"
                   className="mt-5 w-full rounded-xl border border-ink-600 bg-ink-800 px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-neon-400/60"
                 />
                 <button
@@ -100,7 +103,7 @@ export default function ProfileMenu() {
     <div className="relative" ref={wrapRef}>
       <button
         onClick={() => setOpen(!open)}
-        aria-label="Menu profil"
+        aria-label="Menu akun"
         className="flex h-9 w-9 items-center justify-center rounded-full p-[2px]"
         style={{ background: "conic-gradient(from 140deg, #22d3ee, #8b5cf6, #c084fc, #22d3ee)" }}
       >
@@ -110,29 +113,64 @@ export default function ProfileMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-11 w-56 overflow-hidden rounded-xl border border-ink-600 bg-ink-900 shadow-2xl">
+        <div className="absolute right-0 top-11 w-60 overflow-hidden rounded-xl border border-ink-600 bg-ink-900 shadow-2xl">
           <div className="border-b border-ink-700 px-4 py-3">
             <p className="text-sm font-bold text-slate-100">{profile.name}</p>
-            <p className="text-xs text-slate-500">Profil lokal · perangkat ini</p>
+            <p className="text-xs text-slate-500">Akun lokal · perangkat ini</p>
           </div>
           <Link
             href="/koleksi"
             onClick={() => setOpen(false)}
             className="flex items-center justify-between px-4 py-3 text-sm text-slate-300 transition-colors hover:bg-ink-800"
           >
-            <span>Koleksi Saya</span>
+            <span>Koleksi</span>
             <span className="rounded-full bg-neon-500/15 px-2 py-0.5 font-mono text-xs font-bold text-neon-400">
               {count}
             </span>
           </Link>
           <button
             onClick={() => {
-              clearProfile();
+              const blob = new Blob([exportBookmarks()], { type: "application/json" });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = "wawasan-ai-koleksi.json";
+              a.click();
+              URL.revokeObjectURL(url);
+            }}
+            className="w-full px-4 py-3 text-left text-sm text-slate-300 transition-colors hover:bg-ink-800"
+          >
+            Export koleksi
+          </button>
+          <button
+            onClick={() => fileRef.current?.click()}
+            className="w-full px-4 py-3 text-left text-sm text-slate-300 transition-colors hover:bg-ink-800"
+          >
+            Import koleksi
+          </button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json"
+            className="hidden"
+            onChange={(e) => {
+              const file = e.target.files?.[0];
+              if (!file) return;
+              const reader = new FileReader();
+              reader.onload = () => {
+                if (typeof reader.result === "string") importBookmarks(reader.result);
+              };
+              reader.readAsText(file);
+            }}
+          />
+          <button
+            onClick={() => {
+              clearAllData();
               setOpen(false);
             }}
             className="w-full px-4 py-3 text-left text-sm text-rose-400 transition-colors hover:bg-ink-800"
           >
-            Keluar
+            Hapus semua data
           </button>
         </div>
       )}

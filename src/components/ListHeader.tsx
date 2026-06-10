@@ -15,7 +15,7 @@ export default function ListHeader({
       <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-50 sm:text-4xl">
         {title}
       </h1>
-      <p className="mt-4 leading-relaxed text-slate-400">{description}</p>
+      <p className="mt-4 leading-relaxed text-slate-300">{description}</p>
     </header>
   );
 }

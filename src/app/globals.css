@@ -19,6 +19,14 @@
 
 html {
   scroll-behavior: smooth;
+  --score-ring-from: #22d3ee;
+  --score-ring-to: #8b5cf6;
+  --score-ring-track: #1a2238;
+  --score-ring-bg: #111729;
+  --score-text-high: #34d399;
+  --score-text-mid: #22d3ee;
+  --score-text-warn: #fbbf24;
+  --score-text-low: #fb7185;
 }
 
 body {
@@ -194,6 +202,210 @@ h1, h2, h3, .font-display {
   color: #f1f5f9;
   margin-top: 2.2rem;
   margin-bottom: 0.9rem;
+  scroll-margin-top: 6rem;
+}
+
+.prose-id h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.prose-id ul, .prose-id ol {
+  margin: 1rem 0 1.1rem 1.25rem;
+  color: #cbd5e1;
+}
+
+.prose-id li {
+  margin-bottom: 0.4rem;
+  line-height: 1.75;
+}
+
+.prose-id blockquote {
+  margin: 1.5rem 0;
+  border-left: 3px solid #22d3ee;
+  padding-left: 1rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.prose-id a {
+  color: #22d3ee;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-id code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: rgba(26, 34, 56, 0.8);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  color: #c084fc;
+}
+
+/* ===== Light mode — soft warm palette ===== */
+[data-theme="light"] {
+  --color-ink-950: #f7f3ef;
+  --color-ink-900: #f0ebe5;
+  --color-ink-800: #e8e2da;
+  --color-ink-700: #ddd5cb;
+  --color-ink-600: #c8bfb3;
+  --color-neon-400: #0d9488;
+  --color-neon-500: #0f766e;
+  --color-violet-glow: #7c6aad;
+  --score-ring-from: #6b9e96;
+  --score-ring-to: #9a8ab5;
+  --score-ring-track: #e4ddd4;
+  --score-ring-bg: #f0ebe5;
+  --score-text-high: #3d7a62;
+  --score-text-mid: #3d7a72;
+  --score-text-warn: #a67c3d;
+  --score-text-low: #a65d5d;
+}
+
+[data-theme="light"] body {
+  background-color: #f7f3ef;
+  color: #4a4540;
+}
+
+[data-theme="light"] .text-slate-50,
+[data-theme="light"] .text-slate-100 {
+  color: #3d3835 !important;
+}
+
+[data-theme="light"] .text-slate-200 {
+  color: #4a4540 !important;
+}
+
+[data-theme="light"] .text-slate-300 {
+  color: #5c5650 !important;
+}
+
+[data-theme="light"] .text-slate-400 {
+  color: #6b6560 !important;
+}
+
+[data-theme="light"] .text-slate-500 {
+  color: #8a837c !important;
+}
+
+[data-theme="light"] .text-neon-400 {
+  color: #0d9488 !important;
+}
+
+[data-theme="light"] .bg-ink-800\/60,
+[data-theme="light"] .bg-ink-800\/80,
+[data-theme="light"] .bg-ink-800 {
+  background-color: rgba(232, 226, 218, 0.7) !important;
+}
+
+[data-theme="light"] .bg-ink-900\/60,
+[data-theme="light"] .bg-ink-900\/40,
+[data-theme="light"] .bg-ink-900\/80,
+[data-theme="light"] .bg-ink-900 {
+  background-color: rgba(240, 235, 229, 0.85) !important;
+}
+
+[data-theme="light"] .bg-ink-950\/70,
+[data-theme="light"] .bg-ink-950\/80,
+[data-theme="light"] .bg-ink-950 {
+  background-color: rgba(247, 243, 239, 0.95) !important;
+}
+
+[data-theme="light"] .border-ink-600,
+[data-theme="light"] .border-ink-700,
+[data-theme="light"] .border-ink-700\/60 {
+  border-color: #ddd5cb !important;
+}
+
+[data-theme="light"] .card-glow {
+  background: linear-gradient(160deg, #faf6f2, #f0ebe5);
+  border-color: #ddd5cb;
+  box-shadow: 0 4px 24px -8px rgba(74, 69, 64, 0.08);
+}
+
+[data-theme="light"] .card-glow:hover {
+  box-shadow: 0 12px 32px -12px rgba(13, 148, 136, 0.15);
+}
+
+[data-theme="light"] .glow-title {
+  text-shadow: none;
+}
+
+[data-theme="light"] .text-gradient {
+  background: linear-gradient(100deg, #0d9488, #7c6aad, #0d9488);
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+[data-theme="light"] .hero-grid {
+  background-image:
+    linear-gradient(rgba(200, 191, 179, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 191, 179, 0.35) 1px, transparent 1px);
+}
+
+[data-theme="light"] .aurora {
+  opacity: 0.15;
+}
+
+[data-theme="light"] .noise-overlay {
+  opacity: 0.015;
+}
+
+[data-theme="light"] .rank-one {
+  background: linear-gradient(120deg, rgba(13, 148, 136, 0.06), rgba(124, 106, 173, 0.06)) !important;
+  border-left-color: #0d9488;
+}
+
+[data-theme="light"] .watermark-text {
+  -webkit-text-stroke: 1px rgba(200, 191, 179, 0.5);
+}
+
+[data-theme="light"] .prose-id p,
+[data-theme="light"] .prose-id li {
+  color: #5c5650;
+}
+
+[data-theme="light"] .prose-id h2,
+[data-theme="light"] .prose-id h3 {
+  color: #3d3835;
+}
+
+[data-theme="light"] .prose-id code {
+  background: rgba(232, 226, 218, 0.9);
+  color: #7c6aad;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #f7f3ef;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #c8bfb3;
+}
+
+[data-theme="light"] ::selection {
+  background: rgba(13, 148, 136, 0.2);
+}
+
+[data-theme="light"] .text-emerald-400 {
+  color: var(--score-text-high) !important;
+}
+
+[data-theme="light"] .text-neon-400 {
+  color: var(--score-text-mid) !important;
+}
+
+[data-theme="light"] .text-amber-400 {
+  color: var(--score-text-warn) !important;
+}
+
+[data-theme="light"] .text-rose-400 {
+  color: var(--score-text-low) !important;
 }
 
 /* ===== 1. Film grain / noise overlay ===== */
@@ -253,8 +465,16 @@ h1, h2, h3, .font-display {
 /* ===== 7. Score ring mini (conic) ===== */
 .score-ring-mini {
   background:
-    radial-gradient(closest-side, var(--color-ink-800) 76%, transparent 77% 100%),
-    conic-gradient(#22d3ee calc(var(--skor) * 10%), #8b5cf6 calc(var(--skor) * 10%), #1a2238 0);
+    radial-gradient(closest-side, var(--score-ring-bg) 76%, transparent 77% 100%),
+    conic-gradient(
+      var(--score-ring-from) calc(var(--skor) * 10%),
+      var(--score-ring-to) calc(var(--skor) * 10%),
+      var(--score-ring-track) 0
+    );
+}
+
+.score-ring-track {
+  stroke: var(--score-ring-track);
 }
 
 /* ===== 8. Sorotan peringkat #1 ===== */
@@ -372,6 +592,12 @@ a:hover > .logo-mark {
   background: radial-gradient(circle, rgba(34, 211, 238, 0.07), rgba(139, 92, 246, 0.04) 45%, transparent 70%);
   transform: translate(-50%, -50%);
   transition: opacity 0.4s ease;
+}
+
+@media (hover: none) {
+  .pointer-glow {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

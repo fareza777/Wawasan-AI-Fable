@@ -4,25 +4,33 @@ export default function ScoreRing({ score }: { score: number }) {
   const r = 30;
   const c = 2 * Math.PI * r;
   const filled = (score / 10) * c;
+  const gradId = `ringGrad-${score.toFixed(1).replace(".", "")}`;
 
   return (
-    <div className="relative h-20 w-20 shrink-0">
+    <div className="score-ring-wrap relative h-20 w-20 shrink-0">
       <svg viewBox="0 0 72 72" className="h-full w-full -rotate-90">
-        <circle cx="36" cy="36" r={r} fill="none" stroke="#1a2238" strokeWidth="6" />
         <circle
           cx="36"
           cy="36"
           r={r}
           fill="none"
-          stroke="url(#ringGradient)"
+          className="score-ring-track"
+          strokeWidth="6"
+        />
+        <circle
+          cx="36"
+          cy="36"
+          r={r}
+          fill="none"
+          stroke={`url(#${gradId})`}
           strokeWidth="6"
           strokeLinecap="round"
           strokeDasharray={`${filled} ${c - filled}`}
         />
         <defs>
-          <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#22d3ee" />
-            <stop offset="100%" stopColor="#8b5cf6" />
+          <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" className="score-ring-stop-from" stopColor="var(--score-ring-from)" />
+            <stop offset="100%" className="score-ring-stop-to" stopColor="var(--score-ring-to)" />
           </linearGradient>
         </defs>
       </svg>
