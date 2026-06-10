@@ -223,6 +223,192 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-04-18",
   },
+  {
+    slug: "grok-4",
+    name: "Grok 4",
+    tagline: "Model nyeleneh dari xAI dengan mata yang selalu memantau X",
+    tags: ["xAI", "Proprietary", "Real-time", "Reasoning"],
+    score: 8.5,
+    scores: [
+      { label: "Penalaran", value: 8.8 },
+      { label: "Coding", value: 8.3 },
+      { label: "Bahasa Indonesia", value: 8.0 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 7.8 },
+    ],
+    summary:
+      "Model flagship xAI dengan penalaran kuat dan keunggulan unik: akses real-time ke linimasa X. Gayanya yang santai dan kadang nyeleneh membuatnya terasa berbeda dari asisten AI lain yang serba sopan.",
+    pros: [
+      "Akses real-time ke X — kuat untuk memantau isu dan tren yang sedang panas",
+      "Penalaran kelas atas, bersaing dengan model frontier untuk soal sulit",
+      "Gaya jawaban lugas dan jarang bertele-tele dengan disclaimer",
+    ],
+    cons: [
+      "Akses penuh terikat langganan X Premium — terasa mahal dalam dolar",
+      "Gaya nyelenehnya kadang kurang pas untuk konteks formal dan kedinasan",
+      "Ekosistem API dan tooling pihak ketiga masih kalah matang",
+    ],
+    verdict:
+      "Pilih Grok kalau kebutuhan utamamu adalah informasi terkini dari media sosial dengan penalaran yang serius. Untuk dokumen resmi dan kerja kantoran, saya tetap pegang model lain.",
+    body: [
+      "Grok 4 punya satu jualan yang tidak dimiliki pesaing mana pun: ia hidup di dalam X. Saat saya bertanya soal isu yang baru ramai beberapa jam lalu — termasuk topik yang sedang trending di Indonesia — ia bisa menjawab dengan konteks segar, bukan pengetahuan beku dari data latihan. Untuk pemantauan opini publik dan riset isu, ini kemampuan yang nyata bedanya.",
+      "Di luar gimik real-time, mesin penalarannya sendiri serius. Untuk soal logika, matematika, dan analisis berlapis, Grok 4 bermain di papan atas — xAI jelas tidak main-main dengan komputasi yang mereka kerahkan. Coding-nya juga kompeten, meski untuk sesi agentic panjang ia belum jadi pilihan pertama saya.",
+      "Soal gaya, ini selera: Grok sengaja didesain nyeleneh, suka bercanda, dan minim basa-basi. Buat percakapan santai itu menyegarkan; buat draft surat dinas, saya harus sering menyuruhnya 'serius sedikit'. Bahasa Indonesianya bagus untuk percakapan, tapi register formalnya kadang meleset.",
+      "Catatan akses untuk pembaca Indonesia: jalur paling mudah adalah langganan X Premium, yang harganya dalam dolar lumayan menggigit, dan API-nya butuh kartu pembayaran internasional. Kalau kebutuhanmu bukan data real-time, ada opsi lain yang lebih ekonomis.",
+    ],
+    link: "https://x.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-04-08",
+  },
+  {
+    slug: "kimi-k2",
+    name: "Kimi K2",
+    tagline: "MoE open-weight raksasa yang jago kerja agentic — dengan harga kaki lima",
+    tags: ["Moonshot AI", "Open Weight", "Agent", "Coding", "Murah"],
+    score: 8.8,
+    scores: [
+      { label: "Penalaran", value: 8.8 },
+      { label: "Coding", value: 9.0 },
+      { label: "Bahasa Indonesia", value: 8.0 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    summary:
+      "Model mixture-of-experts raksasa dari Moonshot AI yang dirancang sejak awal untuk tool-use dan kerja agentic. Kemampuan coding-nya menempel ketat ke model proprietary papan atas, dengan harga API yang jauh lebih ramah dan bobot yang terbuka.",
+    pros: [
+      "Kemampuan agentic dan tool-use terbaik di kalangan model open-weight",
+      "Coding sangat kuat — terasa dekat dengan model proprietary mahal",
+      "Harga API murah, cocok untuk pemakaian volume tinggi",
+      "Open weight — bisa di-host sendiri untuk kedaulatan data",
+    ],
+    cons: [
+      "Ukurannya raksasa — self-host realistis hanya untuk organisasi ber-GPU serius",
+      "Bahasa Indonesia kompeten tapi belum sehalus model frontier Barat",
+      "Pertimbangan kebijakan data jika memakai API resminya",
+    ],
+    verdict:
+      "Kimi K2 adalah bukti bahwa dunia open sudah bisa bermain di liga agentic. Untuk asisten coding hemat biaya lewat API, ini salah satu rekomendasi pertama saya saat ini.",
+    body: [
+      "Kalau DeepSeek mengguncang soal harga, Kimi K2 mengguncang soal kemampuan kerja. Moonshot AI melatih model ini secara khusus untuk skenario agentic — memanggil tool, mengeksekusi langkah berurutan, memperbaiki kesalahan sendiri — dan hasilnya terasa: saat saya pasangkan dengan tool coding agentic, ia menyelesaikan tugas multi-langkah dengan kepatuhan yang jarang saya temui di model open lain.",
+      "Untuk coding, K2 berada di papan atas dunia open-weight. Refactor lintas file, menulis test, memahami codebase menengah — semuanya dikerjakan dengan percaya diri. Dengan harga API yang jauh di bawah model proprietary sekelas, kalkulasi biayanya sangat menarik untuk developer Indonesia yang menghitung pengeluaran dalam dolar.",
+      "Sifat open weight-nya tetap saya catat dengan realistis: ini model MoE raksasa, jadi 'bisa di-host sendiri' dalam praktiknya berarti butuh server ber-GPU kelas data center. Untuk individu, jalur masuk yang masuk akal adalah API resminya atau penyedia inference pihak ketiga yang sudah banyak menyajikannya.",
+      "Kelemahan yang saya rasakan ada di kehalusan bahasa: untuk output Indonesia yang dibaca manusia — artikel, surat, naskah — gaya tulisannya masih sesekali kaku. Strategi saya sama seperti DeepSeek: K2 untuk kerja teknis dan agentic di belakang layar, model frontier untuk teks yang tampil ke publik.",
+    ],
+    link: "https://www.moonshot.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-03-25",
+  },
+  {
+    slug: "glm-4-6",
+    name: "GLM-4.6",
+    tagline: "Kuda hitam coding dari Zhipu — alternatif murah yang serius",
+    tags: ["Zhipu AI", "Open Weight", "Coding", "Agent", "Murah"],
+    score: 8.6,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 8.9 },
+      { label: "Bahasa Indonesia", value: 7.8 },
+      { label: "Kecepatan", value: 8.3 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    summary:
+      "Model open-weight dari Zhipu AI (Z.ai) yang melejit sebagai alternatif murah di tool coding agentic. Untuk pekerjaan kode sehari-hari, jarak rasanya ke model proprietary mahal makin tipis — dengan biaya langganan yang jauh lebih ringan.",
+    pros: [
+      "Coding agentic sangat kompeten — nyaman dipakai di tool seperti Claude Code dan sejenisnya",
+      "Paket langganan coding-nya termasuk yang termurah di industri",
+      "Open weight — opsi self-host terbuka untuk organisasi",
+    ],
+    cons: [
+      "Bahasa Indonesia paling lemah di antara model yang saya ulas — cukup untuk teknis, kurang untuk naskah",
+      "Brand dan dokumentasi berbahasa Inggrisnya belum serapi pemain besar",
+      "Pertimbangan kebijakan data jika memakai layanan resminya",
+    ],
+    verdict:
+      "Kalau tagihan asisten coding-mu mulai bikin meringis, GLM-4.6 adalah downgrade harga tanpa downgrade rasa yang berarti. Untuk kerja kode murni, ini sleeper hit tahun ini.",
+    body: [
+      "GLM-4.6 adalah model yang naik daun lewat jalur yang tidak biasa: bukan lewat hype peluncuran, tapi lewat komunitas pengguna tool coding agentic yang mencari alternatif murah dari model proprietary. Zhipu cerdik menangkap momen ini — mereka menawarkan paket langganan coding dengan harga yang, dihitung dalam dolar, terasa hampir tidak masuk akal murahnya bagi developer Indonesia.",
+      "Dalam pemakaian saya untuk kerja kode sehari-hari — bug fix, fitur kecil-menengah, menulis test — GLM-4.6 menyelesaikan sebagian besar tugas dengan baik. Ia paham instruksi tool-use, jarang ngawur saat mengedit file, dan cukup tahan untuk sesi agentic beberapa langkah. Untuk tugas arsitektur besar atau debugging paling pelik, model frontier masih unggul, tapi jaraknya tidak lagi selebar harganya.",
+      "Sebagai model open-weight, ia juga membuka opsi self-host — relevan untuk perusahaan atau instansi Indonesia yang datanya tidak boleh keluar. Seperti model besar lain, ini butuh hardware serius, tapi penyedia inference pihak ketiga sudah banyak yang menyajikannya kalau mau jalan tengah.",
+      "Catatan jujur soal bahasa: untuk output berbahasa Indonesia yang luwes, GLM bukan pilihan saya. Jawaban teknisnya bisa dipahami, tapi gaya tulisannya sering terasa seperti terjemahan. Posisikan ia sebagai kuda beban coding, bukan penulis naskah.",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-03-10",
+  },
+  {
+    slug: "mistral",
+    name: "Mistral Large / Medium",
+    tagline: "Juara Eropa: efisien, enterprise-ready, dan punya Le Chat",
+    tags: ["Mistral AI", "Eropa", "Enterprise", "Efisien"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 8.3 },
+      { label: "Coding", value: 8.2 },
+      { label: "Bahasa Indonesia", value: 7.8 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    summary:
+      "Lini model andalan Mistral AI, satu-satunya pemain frontier dari Eropa. Filosofinya jelas: performa kompetitif dari model yang lebih kecil dan efisien, dengan opsi deployment fleksibel yang disukai enterprise — plus asisten Le Chat yang sangat responsif.",
+    pros: [
+      "Sangat efisien — respons cepat dengan biaya inference rendah",
+      "Opsi deployment fleksibel (cloud, on-premise) — menarik untuk kebutuhan kedaulatan data",
+      "Le Chat adalah salah satu asisten AI gratis tercepat yang bisa dicoba",
+    ],
+    cons: [
+      "Bahasa Indonesia jelas di bawah fokus mereka — kuat di bahasa-bahasa Eropa",
+      "Untuk penalaran paling sulit masih selapis di bawah model frontier",
+      "Gaungnya di komunitas Indonesia kecil, tutorial lokal minim",
+    ],
+    verdict:
+      "Mistral adalah pilihan rasional untuk kebutuhan enterprise yang menimbang efisiensi dan kontrol data, bukan sekadar skor benchmark. Untuk pengguna Indonesia perorangan, Le Chat layak dicoba — gratisnya kencang sekali.",
+    body: [
+      "Mistral menarik justru karena tidak ikut perlombaan 'model terbesar'. Filosofi mereka konsisten dari awal: kejar performa maksimal dari parameter seminimal mungkin. Hasilnya adalah model-model yang responsnya kencang dan biaya operasinya rendah — pendekatan yang, menurut saya, lebih relevan untuk mayoritas use case nyata daripada mengejar satu-dua poin benchmark.",
+      "Sebagai juara Eropa, Mistral menjual sesuatu yang makin laku: kedaulatan. Mereka menawarkan deployment on-premise dan komitmen regulasi ala Eropa yang membuat bank dan pemerintahan nyaman. Bagi instansi Indonesia yang punya kekhawatiran serupa soal data, model bisnis Mistral ini patut dipelajari — meski tentu kontraknya enterprise-minded, bukan untuk perorangan.",
+      "Le Chat, asisten gratisnya, adalah kejutan yang menyenangkan: kecepatannya termasuk yang paling kencang yang pernah saya pakai, dan tier gratisnya cukup murah hati. Untuk tanya-jawab cepat sehari-hari, ia sangat layak masuk rotasi.",
+      "Kelemahan untuk kita jelas: bahasa Indonesia bukan prioritas Mistral. Hasilnya bisa dipakai, tapi terasa lebih kaku dibanding model yang dilatih dengan perhatian ke Asia Tenggara. Untuk kerja berbahasa Inggris atau Eropa, nilai tambahnya jauh lebih terasa.",
+    ],
+    link: "https://mistral.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-02-20",
+  },
+  {
+    slug: "gemma-3",
+    name: "Gemma 3",
+    tagline: "Model open kecil terbaik — multimodal yang muat di laptop kentang",
+    tags: ["Google", "Open Weight", "Lokal", "Multimodal", "Kecil"],
+    score: 7.9,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.3 },
+      { label: "Bahasa Indonesia", value: 8.3 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    summary:
+      "Keluarga model open kecil dari Google yang dirancang untuk perangkat terbatas: dari ponsel sampai laptop tanpa GPU. Kemampuan multibahasa dan multimodalnya mengejutkan untuk ukurannya — pintu masuk terbaik ke dunia AI lokal.",
+    pros: [
+      "Performa terbaik di kelas model kecil — realistis dijalankan di laptop biasa",
+      "Multimodal: varian tertentu bisa memahami gambar, langka di ukuran ini",
+      "Bahasa Indonesia mengejutkan bagusnya untuk model sekecil ini",
+      "Gratis total via Ollama atau LM Studio — tanpa API, tanpa kartu kredit",
+    ],
+    cons: [
+      "Tetap model kecil — penalaran kompleks dan coding serius bukan arenanya",
+      "Lisensinya open dengan syarat penggunaan khas Google, bukan lisensi bebas murni",
+    ],
+    verdict:
+      "Untuk siapa pun di Indonesia yang ingin mencoba AI lokal di laptop seadanya tanpa keluar uang sepeser pun, Gemma 3 adalah titik mulai terbaik. Tahu batasnya, dan ia akan jadi alat yang sangat berguna.",
+    body: [
+      "Gemma 3 adalah jawaban untuk pertanyaan yang paling sering saya terima: 'laptop saya biasa saja, internet pas-pasan, bisa pakai AI tidak?' Bisa. Distilasi dari teknologi Gemini ini dirancang khusus untuk perangkat terbatas, dan varian kecilnya berjalan lancar bahkan di laptop tanpa GPU dedicated — kondisi mayoritas perangkat di Indonesia.",
+      "Yang membuat saya terkesan adalah seberapa banyak kemampuan yang dijejalkan ke ukuran sekecil ini. Bahasa Indonesianya tergolong bagus — warisan dari fokus multibahasa Gemini — dan varian yang lebih besar bahkan bisa memahami gambar, fitur yang dulu eksklusif model raksasa. Untuk ringkasan dokumen, draft tulisan, dan tanya-jawab umum secara offline, ia sangat bisa diandalkan.",
+      "Cara pakainya juga ramah pemula: pasang Ollama atau LM Studio, unduh sekali, dan selesai — tidak ada API key, tidak ada kartu kredit, tidak ada tagihan dolar. Untuk pelajar dan ASN yang ingin memproses data sensitif tanpa mengirimnya ke cloud siapa pun, ini kombinasi privasi dan gratis yang sulit dilawan.",
+      "Yang penting adalah ekspektasi: ini model kecil, dan fisika tidak bisa ditipu. Untuk penalaran berlapis, coding serius, atau tulisan panjang yang bernuansa, ia akan kehabisan napas. Posisikan Gemma sebagai asisten ringan harian, dan kamu tidak akan kecewa.",
+    ],
+    link: "https://ai.google.dev/gemma",
+    linkLabel: "Situs Resmi",
+    date: "2026-02-05",
+  },
 ];
 
 export function getModel(slug: string) {

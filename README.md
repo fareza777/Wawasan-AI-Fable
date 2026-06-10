@@ -4,10 +4,17 @@
 
 ## Rubrik
 
-- **Review Repo GitHub** (`/repo`) — OpenClaw, Hermes, DeerFlow, n8n, Dify, Ollama
-- **Review Model LLM** (`/model`) — papan skor dengan penilaian khusus kemampuan bahasa Indonesia
-- **Review Stack & Tools** (`/stack`) — Claude Code, Cursor, Codex, Windsurf, Cline
-- **Berita & Wawasan** (`/berita`) — analisis, tutorial, dan opini dengan konteks Indonesia
+- **Review Repo GitHub** (`/repo`) — 11 review: OpenClaw, Hermes, DeerFlow, n8n, Dify, Ollama, Open WebUI, LangGraph, Flowise, CrewAI, ComfyUI
+- **Review Model LLM** (`/model`) — 11 model di papan skor, dengan penilaian khusus kemampuan bahasa Indonesia
+- **Review Stack & Tools** (`/stack`) — 10 review: Claude Code, Cursor, Codex, Windsurf, Cline, Gemini CLI, Copilot, v0, Bolt.new, Aider
+- **Berita & Wawasan** (`/berita`) — 10 artikel: analisis, tutorial, dan opini dengan konteks Indonesia
+
+## Fitur
+
+- **Pencarian global** — tombol Cari di navbar atau `Ctrl/⌘ + K`, mencari di seluruh review dan artikel
+- **Profil lokal & Koleksi** — tombol "Masuk" membuat profil di perangkat (localStorage, tanpa server); bookmark review favorit ke halaman `/koleksi`
+- **Reading progress bar**, tombol bagikan, score ring, animasi halus, font khusus (Space Grotesk + Inter + JetBrains Mono)
+- **Newsletter form** di footer (saat ini via mailto; siap diganti provider seperti Mailchimp/Resend)
 
 ## Stack
 

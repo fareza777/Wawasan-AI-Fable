@@ -229,6 +229,194 @@ export const repos: Review[] = [
     linkLabel: "Lihat di GitHub",
     date: "2026-04-15",
   },
+  {
+    slug: "open-webui",
+    name: "Open WebUI",
+    tagline: "Antarmuka chat self-hosted yang membuat LLM lokal terasa seperti produk jadi",
+    tags: ["LLM Lokal", "UI Chat", "Self-hosted", "Privasi"],
+    score: 8.9,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Open WebUI adalah pasangan paling natural untuk Ollama: antarmuka chat ala ChatGPT yang berjalan sepenuhnya di server sendiri. Lengkap dengan manajemen pengguna, RAG dokumen, dan dukungan multi-model — semuanya tanpa data keluar dari mesinmu.",
+    pros: [
+      "Pengalaman pakai setara produk komersial, padahal gratis dan self-hosted",
+      "Satu perintah Docker dan langsung jalan — pasangan sempurna untuk Ollama",
+      "Fitur RAG bawaan: unggah dokumen, langsung bisa ditanya-tanyai",
+      "Multi-user dengan kontrol akses, cocok untuk dipakai satu kantor",
+    ],
+    cons: [
+      "Fitur lanjutan (pipeline, tool, function) butuh waktu untuk dipahami",
+      "Kualitas jawaban tetap dibatasi model lokal yang dipakai di belakangnya",
+      "Update sering membawa perubahan UI yang kadang membingungkan pengguna lama",
+    ],
+    verdict:
+      "Kalau Ollama adalah mesinnya, Open WebUI adalah bodinya. Inilah cara paling cepat menghadirkan 'ChatGPT internal' yang sepenuhnya privat untuk keluarga, tim, atau instansi.",
+    body: [
+      "Setelah memasang Ollama, pertanyaan berikutnya hampir selalu sama: 'masa ngobrolnya lewat terminal terus?' Open WebUI adalah jawabannya. Proyek ini menghadirkan antarmuka chat yang rapi dan familiar — riwayat percakapan, pemilihan model, render markdown, sampai input suara — di atas model lokal yang berjalan di mesinmu sendiri. Saya memasangnya lewat Docker dan dalam lima menit sudah punya 'ChatGPT pribadi' yang bisa diakses dari HP lewat jaringan rumah.",
+      "Yang membuat saya betah adalah fiturnya yang ternyata jauh melampaui sekadar tampilan chat. Ada manajemen pengguna lengkap dengan peran admin, sehingga satu instalasi bisa dipakai banyak orang. Ada fitur unggah dokumen dengan RAG bawaan, jadi model bisa menjawab berdasarkan file PDF peraturan atau SOP yang kita beri. Bahkan ada sistem 'model kustom' untuk membuat persona dengan system prompt tertentu — semacam GPTs versi lokal.",
+      "Untuk konteks Indonesia, kombinasi Ollama plus Open WebUI di satu server adalah resep yang sering saya sarankan ke instansi yang datanya tidak boleh menyentuh cloud asing. Modalnya cuma satu PC atau server dengan GPU sekadarnya, dan seluruh pegawai bisa menikmati asisten AI tanpa biaya langganan per orang — penghematan yang sangat berarti ketika anggaran dihitung dalam rupiah. Antarmukanya juga nyaman dipakai berbahasa Indonesia.",
+      "Kekurangannya lebih ke sisi pengelolaan: fitur lanjutan seperti pipelines dan tools punya kurva belajar sendiri, dan ritme update yang cepat kadang mengubah letak menu yang sudah dihafal pengguna. Tapi itu harga yang wajar untuk proyek sehidup ini. Bagi saya, Open WebUI adalah bukti bahwa pengalaman AI kelas premium tidak harus berarti data kita ikut terkirim ke luar negeri.",
+    ],
+    link: "https://github.com/open-webui/open-webui",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-03-28",
+  },
+  {
+    slug: "langgraph",
+    name: "LangGraph",
+    tagline: "Orkestrasi agent berbasis graph untuk alur kerja AI yang serius",
+    tags: ["AI Agent", "Framework", "Python", "Orkestrasi"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "LangGraph memodelkan alur kerja agent sebagai graph: setiap node adalah langkah, setiap edge adalah keputusan. Pendekatan ini memberi kontrol penuh atas perilaku agent — termasuk percabangan, perulangan, dan intervensi manusia di tengah proses.",
+    pros: [
+      "Kontrol alur yang eksplisit — perilaku agent bisa diprediksi dan diaudit",
+      "Dukungan state, checkpoint, dan human-in-the-loop bawaan",
+      "Jadi fondasi banyak proyek agent serius (termasuk DeerFlow yang saya review)",
+    ],
+    cons: [
+      "Kurva belajar curam — konsep state, node, dan edge butuh waktu dicerna",
+      "Terasa berlebihan (overkill) untuk chatbot atau otomasi sederhana",
+      "Dokumentasi luas tapi kadang tertinggal dari kecepatan perubahan API-nya",
+    ],
+    verdict:
+      "Bukan tool untuk pemula, tapi begitu kebutuhanmu melewati 'chatbot biasa' menuju agent multi-langkah yang harus bisa dipertanggungjawabkan, LangGraph adalah salah satu fondasi paling matang yang tersedia.",
+    body: [
+      "Setelah beberapa kali membangun agent dengan pendekatan 'biarkan LLM memutuskan semuanya', saya sampai pada kesimpulan yang sama dengan banyak praktisi: untuk alur kerja serius, kita butuh kontrol. LangGraph hadir tepat di titik itu. Alih-alih satu loop agent yang gelap, alur kerja dipecah menjadi graph eksplisit — node untuk setiap langkah, edge untuk setiap keputusan — sehingga kita selalu tahu agent sedang di mana dan mau ke mana.",
+      "Fitur yang paling saya hargai adalah manajemen state dan checkpoint. Setiap langkah agent tersimpan, bisa dilanjutkan setelah gangguan, dan bisa 'di-rewind' untuk debugging. Ada pula pola human-in-the-loop bawaan: agent berhenti di titik tertentu menunggu persetujuan manusia sebelum lanjut. Untuk dunia birokrasi yang saya geluti — di mana setiap keputusan harus ada penanggung jawabnya — pola seperti ini bukan fitur tambahan, melainkan syarat mutlak.",
+      "Jujur saja, kurva belajarnya tidak ramah. Datang dari dunia 'prompt lalu jadi', konsep StateGraph, reducer, dan conditional edge awalnya terasa seperti belajar framework backend baru. Saya butuh beberapa akhir pekan oprek sebelum polanya nyantol. Dokumentasinya luas dan contoh-contohnya banyak, tapi karena proyek ini bergerak cepat, beberapa tutorial pihak ketiga sudah tidak cocok lagi dengan API terbaru.",
+      "Rekomendasi saya: jangan mulai dari LangGraph kalau kebutuhanmu masih bisa diselesaikan n8n atau Dify. Tapi kalau kamu developer yang diminta membangun sistem agent multi-langkah untuk organisasi — yang harus bisa diaudit, dilanjutkan, dan diawasi manusia — investasi belajar LangGraph akan terbayar. Fakta bahwa proyek sekelas DeerFlow dibangun di atasnya bukan kebetulan.",
+    ],
+    link: "https://github.com/langchain-ai/langgraph",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-03-15",
+  },
+  {
+    slug: "flowise",
+    name: "Flowise",
+    tagline: "Rakit aplikasi LLM dengan drag-and-drop, tanpa harus jago koding",
+    tags: ["Low-code", "LLM", "RAG", "Self-hosted"],
+    score: 8.1,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.0 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "Flowise membawa konsep visual builder ke dunia aplikasi LLM: susun node chain, agent, dan vector store di kanvas, lalu chatbot-mu langsung jadi lengkap dengan API dan widget embed. Jalan tengah antara n8n yang generalis dan koding LangChain langsung.",
+    pros: [
+      "Membangun chatbot RAG fungsional dalam hitungan jam, bukan minggu",
+      "Hasil rakitan langsung dapat API dan widget chat yang bisa ditempel ke website",
+      "Self-hosted via Docker, data dan dokumen tetap di server sendiri",
+    ],
+    cons: [
+      "Dokumentasi sering tertinggal dari fitur — banyak hal dipelajari lewat trial-and-error",
+      "Untuk kebutuhan produksi skala besar, abstraksi visualnya mulai terasa membatasi",
+      "Beberapa fitur tim dan enterprise digeser ke versi berbayar",
+    ],
+    verdict:
+      "Prototyping aplikasi LLM tercepat yang pernah saya pakai untuk non-engineer. Sempurna untuk membuktikan ide ke atasan; untuk produksi berat, siapkan rencana naik kelas.",
+    body: [
+      "Flowise adalah tool yang saya pakai ketika ingin membuktikan sebuah ide AI ke orang lain secepat mungkin. Konsepnya mirip n8n tapi khusus dunia LLM: kanvas visual berisi node-node — model, prompt, memory, vector store, document loader — yang dihubungkan menjadi sebuah chatflow. Pertama kali mencoba, saya berhasil merakit chatbot yang menjawab berdasarkan kumpulan dokumen PDF dalam satu sore, tanpa menulis kode sama sekali.",
+      "Nilai jual terbesarnya menurut saya ada di ujung alurnya: begitu chatflow jadi, Flowise langsung menyediakan endpoint API dan widget chat yang tinggal ditempel ke website mana pun. Untuk UMKM yang ingin punya layanan tanya-jawab produk di websitenya, atau unit kerja yang ingin membuat asisten informasi layanan publik, jarak dari ide ke demo yang bisa dipegang jadi sangat pendek. Inilah jenis 'kemenangan kecil' yang ampuh untuk meyakinkan pimpinan agar mau berinvestasi di AI.",
+      "Kekurangannya mulai terasa ketika prototipe naik kelas jadi sistem sungguhan. Dokumentasinya kerap tertinggal dari fitur-fitur baru, sehingga banyak hal harus dipelajari lewat coba-coba atau ubek-ubek forum komunitas. Logika yang rumit — percabangan kondisional yang dalam, penanganan error yang rapi — bisa dirakit, tapi kanvasnya cepat berubah jadi benang kusut. Dan seperti banyak proyek open-source lain, beberapa fitur kolaborasi tim kini diarahkan ke paket berbayar.",
+      "Posisi Flowise di peta saya: di bawah Dify untuk kelengkapan platform, di atas koding manual untuk kecepatan. Kalau organisasimu butuh satu platform terkelola, Dify lebih matang; kalau butuh otomasi umum plus AI, n8n lebih luas. Tapi untuk satu tujuan spesifik — merakit dan memamerkan aplikasi LLM secepat-cepatnya dengan modal server sendiri — Flowise tetap juaranya.",
+    ],
+    link: "https://github.com/FlowiseAI/Flowise",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-02-20",
+  },
+  {
+    slug: "crewai",
+    name: "CrewAI",
+    tagline: "Susun 'kru' AI dengan peran dan tugas masing-masing, biarkan mereka bekerja sama",
+    tags: ["Multi-Agent", "AI Agent", "Python", "Framework"],
+    score: 8.0,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "CrewAI menawarkan cara berpikir yang intuitif tentang multi-agent: definisikan agent dengan peran, latar belakang, dan tujuan — seperti menyusun tim kerja — lalu beri mereka daftar tugas. Mudah dipahami, cepat menghasilkan, meski hasilnya tidak selalu konsisten.",
+    pros: [
+      "Mental model 'tim kerja' yang langsung nyantol bahkan untuk non-engineer",
+      "Dari nol sampai kru multi-agent berjalan hanya butuh puluhan baris kode",
+      "Fleksibel dengan berbagai LLM, termasuk model lokal via Ollama",
+      "Komunitas dan materi belajarnya tumbuh pesat",
+    ],
+    cons: [
+      "Hasil antar-eksekusi bisa berbeda-beda — kontrol alurnya tidak seketat LangGraph",
+      "Konsumsi token boros: banyak agent berarti banyak pemanggilan model",
+      "Arah pengembangan makin condong ke platform komersialnya",
+    ],
+    verdict:
+      "Gerbang masuk paling menyenangkan ke dunia multi-agent — cocok untuk belajar dan otomasi internal yang toleran variasi. Untuk sistem yang menuntut konsistensi ketat, pertimbangkan orkestrasi yang lebih eksplisit.",
+    body: [
+      "Dari semua framework multi-agent yang saya coba, CrewAI punya mental model yang paling gampang dijelaskan ke orang awam: kamu menyusun 'kru' seperti menyusun tim kerja di kantor. Setiap agent diberi peran (analis, penulis, pemeriksa), latar belakang, dan tujuan; lalu kamu definisikan daftar tugas dan urutan kerjanya. Konsep yang sangat akrab bagi siapa pun yang pernah membagi tugas dalam sebuah kepanitiaan.",
+      "Eksperimen pertama saya: kru tiga agent untuk menyusun draft materi sosialisasi — satu agent meriset topik, satu menulis draft, satu mengedit gaya bahasanya agar sesuai pembaca awam. Hasilnya mengejutkan untuk usaha sekecil itu; kodenya pendek dan terbaca seperti deskripsi pekerjaan biasa. Dipasangkan dengan model lokal lewat Ollama pun bisa, meski hasil terbaik tetap datang dari model API yang lebih kuat.",
+      "Kelemahan utamanya terasa setelah dipakai berulang: karena koordinasi antar-agent banyak diserahkan ke LLM, hasil eksekusi yang sama bisa berbeda kualitas dari hari ke hari. Untuk tugas kreatif seperti drafting itu bisa diterima, tapi untuk alur yang menuntut konsistensi — misalnya validasi data — saya lebih percaya orkestrasi eksplisit ala LangGraph. Biaya token juga perlu diwaspadai: tiga agent yang saling 'berdiskusi' berarti tagihan API berlipat, hal yang sensitif untuk kantong rupiah.",
+      "Saya menempatkan CrewAI sebagai alat belajar dan alat produksi ringan. Sebagai bahan belajar konsep multi-agent, dia nyaris tak tertandingi karena kesederhanaannya. Sebagai alat produksi, pakai untuk otomasi internal yang outputnya tetap direview manusia — jangan untuk proses kritis tanpa pengawasan. Perhatikan juga bahwa proyek ini makin serius menggarap platform komersialnya, jadi pantau baik-baik mana fitur yang tetap open-source.",
+    ],
+    link: "https://github.com/crewAIInc/crewAI",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-02-10",
+  },
+  {
+    slug: "comfyui",
+    name: "ComfyUI",
+    tagline: "Kanvas node-based untuk meracik gambar dan video AI sesukamu",
+    tags: ["Image Generation", "Workflow", "Stable Diffusion", "Self-hosted"],
+    score: 8.8,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "ComfyUI adalah standar de facto untuk AI image dan video generation secara lokal: setiap tahap proses — dari prompt, model, sampler, hingga upscaling — adalah node yang bisa dirangkai bebas di kanvas. Kuasa penuh bagi yang mau belajar, membingungkan bagi yang cuma mau klik 'generate'.",
+    pros: [
+      "Kontrol granular atas seluruh pipeline generasi gambar dan video",
+      "Ekosistem custom node raksasa — hampir semua teknik baru hadir di sini lebih dulu",
+      "Workflow tersimpan di dalam file gambar — berbagi resep semudah berbagi PNG",
+      "Sekali punya GPU, generate sepuasnya tanpa biaya langganan per gambar",
+    ],
+    cons: [
+      "Tampilan awal berupa jaring node bisa membuat pemula langsung mundur",
+      "Sangat haus VRAM — GPU kelas atas masih barang mewah dengan harga Indonesia",
+      "Manajemen custom node dan dependensinya kadang berujung konflik versi",
+    ],
+    verdict:
+      "Kalau kamu serius di AI visual — bukan sekadar iseng — ComfyUI adalah investasi belajar terbaik saat ini. Lebih curam dari tool sekali-klik, tapi memberi kendali yang tidak ditawarkan siapa pun.",
+    body: [
+      "ComfyUI mengambil filosofi yang sama dengan n8n tapi untuk dunia visual: seluruh proses pembuatan gambar AI dibongkar menjadi node-node di kanvas — loader model, encoder prompt, sampler, VAE, upscaler — yang bebas dirangkai ulang. Pertama kali membukanya saya sempat keder melihat jaring kabel di layar, tapi justru dari situ saya akhirnya paham apa yang sebenarnya terjadi ketika sebuah gambar AI 'dilahirkan'.",
+      "Kekuatan terbesarnya adalah ekosistem. Hampir setiap teknik baru di dunia image dan video generation — ControlNet, IP-Adapter, berbagai model video terbaru — biasanya tersedia sebagai custom node ComfyUI lebih dulu sebelum muncul di tool lain. Fitur favorit saya: workflow lengkap tersimpan di metadata file gambar hasilnya, jadi 'resep' sebuah gambar bisa dibagikan cukup dengan mengirim file PNG-nya, lalu di-drag ke kanvas orang lain.",
+      "Untuk konteks Indonesia, kalkulasi ekonominya menarik sekaligus menyakitkan. Menyakitkan karena ComfyUI haus VRAM, sementara GPU kelas atas harganya bisa setara motor — daya beli kita memang belum ramah hobi ini. Tapi menariknya: sekali investasi GPU (atau sewa GPU cloud per jam saat butuh), kamu bisa generate ribuan aset visual tanpa biaya per gambar. Untuk pelaku usaha kreatif, desainer, atau tim humas instansi yang rutin butuh materi visual, hitungannya bisa jauh lebih hemat daripada langganan layanan komersial.",
+      "Saran saya untuk memulai: jangan langsung merakit workflow dari nol. Unduh workflow jadi dari komunitas, jalankan, lalu pelan-pelan bongkar dan ubah satu node demi satu node. Manajemen custom node memang kadang merepotkan — konflik dependensi Python adalah ritual yang hampir pasti kamu temui — tapi komunitasnya sangat aktif dan solusinya hampir selalu sudah ada di pembahasan orang lain. Ini tool yang memberi imbalan setimpal dengan kesabaranmu.",
+    ],
+    link: "https://github.com/comfyanonymous/ComfyUI",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-02-01",
+  },
 ];
 
 export function getRepo(slug: string) {

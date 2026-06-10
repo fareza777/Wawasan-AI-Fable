@@ -187,6 +187,196 @@ export const stacks: Review[] = [
     linkLabel: "Lihat di GitHub",
     date: "2026-05-08",
   },
+  {
+    slug: "gemini-cli",
+    name: "Gemini CLI",
+    tagline: "Agen coding terminal dari Google dengan tier gratis paling royal",
+    tags: ["CLI", "Open Source", "Google"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Kode", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 9.7 },
+    ],
+    summary:
+      "Jawaban Google untuk agentic coding di terminal: open-source, ditenagai Gemini dengan jendela konteks raksasa, dan tier gratis yang nyaris tidak masuk akal saking besarnya. Pintu masuk termurah ke dunia CLI agent.",
+    pros: [
+      "Tier gratis sangat besar — cukup login akun Google, tanpa kartu kredit",
+      "Jendela konteks raksasa: muat codebase besar sekaligus",
+      "Open-source penuh, berkembang cepat dengan dukungan komunitas",
+      "Terhubung ke Google Search untuk grounding informasi terbaru",
+    ],
+    cons: [
+      "Untuk tugas agentic panjang masih kurang tahan napas dibanding Claude Code",
+      "Kadang terlalu agresif mengubah kode di luar lingkup permintaan",
+      "Kualitas output fluktuatif saat kuota gratis dialihkan ke model yang lebih ringan",
+    ],
+    verdict:
+      "Kalau Cline adalah jalur hemat di IDE, Gemini CLI adalah jalur hemat di terminal. Untuk pelajar dan ASN dengan anggaran pas-pasan seperti saya dulu, tidak ada alasan untuk tidak mencobanya.",
+    body: [
+      "Google masuk ke arena CLI agent dengan senjata yang sulit dilawan: gratis. Cukup login dengan akun Google biasa, dan kamu mendapat jatah pemakaian harian yang untuk kebanyakan orang tidak akan habis. Di negara dengan kurs rupiah-dolar seperti kita, ini bukan fitur kecil — ini penentu apakah seorang mahasiswa bisa belajar agentic coding atau tidak.",
+      "Secara kemampuan, Gemini CLI mengikuti pakem yang sama dengan pesaingnya: membaca codebase, merencanakan, mengedit file, menjalankan perintah, dan mendukung MCP untuk integrasi eksternal. Keunggulan khasnya ada di jendela konteks yang sangat besar — untuk tugas seperti 'jelaskan arsitektur repo ini' atau analisis lintas banyak file sekaligus, ia bisa menelan semuanya tanpa perlu strategi pemotongan konteks yang rumit. Integrasi Google Search juga membuatnya jago saat butuh informasi terkini, misalnya API library yang baru berubah.",
+      "Dalam pemakaian saya, untuk tugas eksplorasi dan perubahan kecil-menengah hasilnya memuaskan. Yang masih terasa adalah jarak dengan Claude Code di tugas panjang multi-langkah: Gemini CLI lebih sering kehilangan arah, dan kadang menyentuh file yang tidak saya minta. Statusnya yang open-source membantu — perbaikan datang cepat, dan komunitasnya aktif menambal kekurangan.",
+      "Rekomendasi saya sederhana: jadikan Gemini CLI tool pertama yang dicoba kalau anggaranmu nol. Belajar pola kerja agentic di sini, dan kalau nanti kebutuhanmu naik kelas, kebiasaan yang terbentuk langsung terbawa ke tool berbayar mana pun.",
+    ],
+    link: "https://geminicli.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-04-20",
+  },
+  {
+    slug: "github-copilot",
+    name: "GitHub Copilot",
+    tagline: "Pelopor AI pair programming yang kini multi-model dan agentic",
+    tags: ["IDE", "GitHub", "Multi-Model"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Kode", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.8 },
+      { label: "Ekosistem & Integrasi", value: 9.3 },
+      { label: "Harga", value: 8.3 },
+    ],
+    summary:
+      "Tool yang memulai semuanya. Copilot kini jauh lebih dari autocomplete: bisa memilih model dari beberapa vendor, punya agent mode, dan menyatu paling dalam dengan GitHub — tempat kode kita semua hidup.",
+    pros: [
+      "Integrasi GitHub terdalam: review PR, isu, dan coding agent di satu ekosistem",
+      "Multi-model — bebas memilih otak (Claude, GPT, Gemini) sesuai tugas",
+      "Gratis untuk pelajar dan maintainer open-source terverifikasi",
+      "Tersedia di hampir semua editor, bukan cuma VS Code",
+    ],
+    cons: [
+      "Agent mode-nya datang belakangan dan masih terasa selangkah di belakang pionir",
+      "Pengalaman terbaiknya terkunci di VS Code — di editor lain terasa dikurangi",
+      "Banyaknya fitur dan tingkatan paket membuat orientasi awal membingungkan",
+    ],
+    verdict:
+      "Bukan lagi yang tercanggih, tapi yang paling terintegrasi. Kalau hidupmu sudah di GitHub — dan apalagi kalau kamu pelajar yang dapat akses gratis — Copilot adalah pilihan paling tanpa-gesekan.",
+    body: [
+      "GitHub Copilot adalah produk yang memperkenalkan dunia pada AI pair programming, dan menariknya ia menolak menjadi fosil. Setelah sempat tertinggal dari Cursor dan kawan-kawan, Copilot berbenah besar: kini ia multi-model (kamu bisa memilih Claude, GPT, atau Gemini sebagai otaknya), punya agent mode untuk tugas multi-file, dan bahkan coding agent yang bisa mengerjakan isu GitHub secara mandiri lalu membuka pull request.",
+      "Kekuatan sejatinya bukan di kecanggihan agennya, melainkan di posisinya: Copilot hidup di tempat kode kita hidup. Review PR otomatis, saran perbaikan langsung di tab Files Changed, delegasi isu ke agen — semuanya tanpa keluar dari GitHub. Untuk tim yang workflow-nya sudah berpusat di GitHub, gesekan adopsinya nyaris nol, dan itu nilai yang sering diremehkan.",
+      "Catatan penting untuk pembaca Indonesia: program GitHub Education memberi Copilot gratis untuk pelajar dan pengajar, dan maintainer open-source populer juga dapat akses cuma-cuma. Bagi mahasiswa, ini cara legal mendapat AI coding kelas berbayar tanpa keluar sedolar pun — manfaatkan sebelum lulus.",
+      "Dalam pemakaian saya, autocomplete-nya tetap solid dan chat-nya kompeten, tapi untuk tugas agentic berat saya masih berpaling ke tool spesialis. Posisi Copilot hari ini mirip aplikasi bawaan yang bagus: mungkin bukan yang terbaik di tiap kategori, tapi selalu ada, terintegrasi rapi, dan untuk mayoritas pekerjaan sehari-hari itu sudah cukup.",
+    ],
+    link: "https://github.com/features/copilot",
+    linkLabel: "Situs Resmi",
+    date: "2026-04-08",
+  },
+  {
+    slug: "v0",
+    name: "v0",
+    tagline: "Generator UI dari Vercel: dari prompt jadi antarmuka React siap pakai",
+    tags: ["UI Generator", "Next.js", "Vercel"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Kode", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.8 },
+      { label: "Ekosistem & Integrasi", value: 8.6 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Tulis deskripsi (atau tempel screenshot), dapatkan UI React/Tailwind yang rapi dan bisa langsung dipakai. Untuk ekosistem Next.js, tidak ada yang menghasilkan antarmuka sebagus dan secepat v0.",
+    pros: [
+      "Kualitas visual output terbaik di kelasnya — modern, rapi, responsif",
+      "Kode React + Tailwind + shadcn/ui yang idiomatis dan enak diedit manual",
+      "Bisa mulai dari screenshot atau desain Figma, bukan cuma teks",
+      "Deploy ke Vercel tinggal sekali klik",
+    ],
+    cons: [
+      "Sangat terpaku pada satu stack — di luar Next.js/React nilainya jatuh",
+      "Logika backend dan aplikasi kompleks bukan kekuatannya",
+      "Sistem kredit berbasis dolar cepat terkuras untuk iterasi intensif",
+    ],
+    verdict:
+      "Bukan pengganti developer, tapi pemusnah halaman kosong. Untuk pengguna Next.js, v0 adalah cara tercepat dari ide ke UI yang layak ditunjukkan ke klien — gunakan tier gratisnya untuk draft, rapikan sendiri sisanya.",
+    body: [
+      "v0 lahir dari pemahaman sederhana Vercel: bagian paling melelahkan dari memulai proyek web adalah menatap halaman kosong. Kamu menulis deskripsi — 'dashboard admin dengan sidebar, tabel transaksi, dan grafik bulanan' — dan dalam hitungan detik muncul UI React yang bukan sekadar berfungsi, tapi terlihat seperti dikerjakan desainer. Inilah pembeda utamanya dari generator lain: seleranya bagus.",
+      "Rahasianya ada di fokus. v0 tidak mencoba mendukung semua framework; ia all-in pada React, Tailwind, dan shadcn/ui — stack yang kebetulan jadi standar de facto industri saat ini. Hasilnya kode yang idiomatis: komponen terstruktur wajar, kelas Tailwind tertata, dan yang terpenting, mudah diambil alih dan diedit manual. Saya sering memakai v0 hanya untuk draft pertama, lalu menyempurnakannya dengan Claude Code di repo lokal — kombinasi yang sangat produktif.",
+      "Kelemahannya adalah cermin dari kekuatannya. Keluar dari ekosistem React, v0 kehilangan relevansi. Untuk logika bisnis rumit, integrasi database serius, atau aplikasi multi-halaman yang dalam, kamu akan menabrak batasnya dan lebih baik pindah ke tool agentic penuh. Sistem kreditnya juga perlu diwaspadai: iterasi bolak-balik mengejar detail kecil bisa menguras kuota lebih cepat dari dugaan — biasakan menulis prompt yang spesifik sejak awal.",
+      "Untuk konteks Indonesia: tier gratisnya cukup untuk merasakan nilainya dan menggarap proyek kecil, dan bagi freelancer web, kemampuan menyulap brief klien jadi mockup hidup dalam sehari adalah nilai jual nyata. Anggap v0 sebagai asisten desainer-frontend, bukan sebagai pabrik aplikasi.",
+    ],
+    link: "https://v0.app",
+    linkLabel: "Situs Resmi",
+    date: "2026-03-18",
+  },
+  {
+    slug: "bolt-new",
+    name: "Bolt.new",
+    tagline: "Bangun dan deploy aplikasi full-stack langsung dari browser",
+    tags: ["Web Builder", "Full-Stack", "StackBlitz"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Kode", value: 7.5 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Dari prompt jadi aplikasi full-stack yang berjalan — semuanya di browser, tanpa instalasi apa pun. Berkat WebContainers milik StackBlitz, Bolt bisa menjalankan, mengetes, dan men-deploy aplikasimu di tempat.",
+    pros: [
+      "Nol instalasi: laptop kentang dan warnet pun bisa — semua jalan di browser",
+      "Full-stack sungguhan: frontend, backend, database, sampai deploy dalam satu alur",
+      "AI bisa melihat error runtime dan memperbaikinya sendiri",
+      "Dukungan framework lebih luas dari v0 — tidak terkunci di React",
+    ],
+    cons: [
+      "Konsumsi token sangat boros — iterasi panjang cepat menguras kuota",
+      "Kualitas kode menurun drastis begitu aplikasi melewati ukuran sedang",
+      "Kurang cocok untuk masuk ke codebase besar yang sudah ada",
+    ],
+    verdict:
+      "Mesin prototipe terbaik untuk non-developer dan pemula. Untuk validasi ide dan MVP akhir pekan, Bolt luar biasa; untuk produk jangka panjang, siapkan rencana migrasi keluar.",
+    body: [
+      "Bolt.new dibangun di atas teknologi yang membuat saya geleng-geleng pertama kali melihatnya: WebContainers, runtime Node.js yang berjalan sepenuhnya di dalam browser. Artinya, AI di Bolt tidak cuma menulis kode — ia menginstal dependensi, menjalankan dev server, melihat error yang muncul, dan memperbaikinya, semua tanpa kamu menginstal apa pun. Untuk konteks Indonesia, ini berarti laptop spek rendah atau bahkan komputer pinjaman pun cukup untuk membangun aplikasi.",
+      "Alur kerjanya memabukkan bagi pemula: tulis ide ('aplikasi kasir sederhana untuk warung dengan rekap harian'), tonton aplikasinya terbentuk dan langsung berjalan di preview, minta revisi dengan bahasa sehari-hari, lalu deploy dengan beberapa klik. Integrasi dengan layanan database dan autentikasi populer membuat klaim 'full-stack'-nya bukan omong kosong — kamu benar-benar bisa punya aplikasi hidup dengan data tersimpan dalam satu sesi.",
+      "Tapi ada dua jebakan yang harus diketahui sebelum jatuh cinta. Pertama, ekonomi token: Bolt mengirim banyak konteks di tiap iterasi, sehingga sesi coba-coba yang panjang bisa menguras kuota dengan kecepatan mengejutkan — sakit terasa di kurs rupiah. Kedua, kurva kualitas: untuk aplikasi kecil hasilnya mengesankan, tapi begitu proyek membesar, AI mulai kesulitan menjaga konsistensi dan kode mulai kusut. Bolt paling bersinar di fase nol-ke-satu, bukan satu-ke-seratus.",
+      "Posisi saya: Bolt adalah tool validasi ide terbaik untuk orang yang belum (atau tidak mau) jadi developer penuh. Bangun MVP-mu di sini, tunjukkan ke calon pengguna, dan kalau idenya terbukti, ekspor kodenya dan lanjutkan pengembangan serius dengan tool agentic di repo lokal.",
+    ],
+    link: "https://bolt.new",
+    linkLabel: "Situs Resmi",
+    date: "2026-02-25",
+  },
+  {
+    slug: "aider",
+    name: "Aider",
+    tagline: "Pelopor pair programming di terminal — open-source dan berakar pada git",
+    tags: ["CLI", "Open Source", "BYOK"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Kode", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 7.6 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 9.3 },
+    ],
+    summary:
+      "Jauh sebelum 'agentic coding' jadi kata kunci, Aider sudah melakukan pair programming di terminal. Open-source, bring-your-own-key, dan punya disiplin git terbaik: setiap perubahan AI jadi commit rapi yang mudah di-undo.",
+    pros: [
+      "Integrasi git terbaik di kelasnya — tiap perubahan tercatat sebagai commit terpisah",
+      "BYOK murni: pakai model apa pun, dari frontier sampai lokal via Ollama",
+      "Repo map yang cerdas membuatnya hemat token di codebase besar",
+      "Open-source penuh dengan komunitas yang setia",
+    ],
+    cons: [
+      "Antarmuka teks polosnya terasa spartan dibanding pesaing modern",
+      "Lebih bergaya 'pair programming' yang dibimbing — kurang otonom untuk tugas panjang",
+      "Laju pengembangannya melambat dibanding para pesaing bermodal besar",
+    ],
+    verdict:
+      "Veteran yang tetap relevan karena dua hal: disiplin git dan kebebasan memilih model. Untuk yang ingin kontrol penuh dengan biaya minimal, Aider masih layak duduk di toolbox — meski bukan lagi bintang utamanya.",
+    body: [
+      "Sebelum Claude Code dan kawan-kawan lahir, Aider sudah membuktikan bahwa terminal adalah rumah alami untuk AI pair programming. Proyek open-source ini punya filosofi yang khas: alih-alih agen otonom yang dilepas sendirian, Aider adalah partner yang bekerja bersamamu — kamu menunjuk file, mendiskusikan perubahan, dan ia mengeksekusi dengan presisi.",
+      "Fitur pembedanya sampai hari ini adalah hubungannya dengan git. Setiap perubahan yang dibuat Aider otomatis menjadi commit tersendiri dengan pesan yang masuk akal. Kedengarannya sepele, tapi efeknya besar: riwayat eksperimenmu terdokumentasi rapi, dan membatalkan perubahan AI yang keliru cukup dengan satu perintah git. Banyak tool yang lebih baru justru belum menyamai kedisiplinan ini. Repo map-nya juga cerdas — ia membangun peta struktur codebase sehingga model paham konteks tanpa harus menelan semua file, yang berarti hemat token.",
+      "Seperti Cline, Aider menganut bring-your-own-key: tanpa langganan, kamu hanya membayar token API yang dipakai, dan bebas memilih model dari yang termurah sampai frontier — termasuk model lokal lewat Ollama untuk setup nol biaya. Untuk pelajar Indonesia yang menghitung tiap dolar, kombinasi Aider + model murah adalah salah satu jalur belajar paling ekonomis di terminal.",
+      "Jujur saja: dikepung pesaing bermodal raksasa, Aider kini terasa seperti veteran ketimbang pionir garis depan. Antarmukanya polos, dan untuk tugas otonom berlapis-lapis ia kalah napas dari agen modern. Tapi sebagai tool pair programming yang patuh, transparan, dan murah — apalagi untuk perubahan terarah di codebase yang kamu kenal — Aider tetap pilihan yang terhormat.",
+    ],
+    link: "https://github.com/Aider-AI/aider",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-02-10",
+  },
 ];
 
 export function getStack(slug: string) {

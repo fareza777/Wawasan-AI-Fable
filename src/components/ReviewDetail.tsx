@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { Review } from "@/lib/types";
-import { ScoreBadge, ScoreBar, Tag } from "./Score";
-import { formatTanggal } from "@/lib/format";
+import { ContentType } from "@/lib/storage";
+import { ScoreBar, Tag } from "./Score";
+import ScoreRing from "./ScoreRing";
+import BookmarkButton from "./BookmarkButton";
+import ShareButton from "./ShareButton";
+import ReadingProgress from "./ReadingProgress";
 
 export default function ReviewDetail({
   review,
@@ -12,13 +16,16 @@ export default function ReviewDetail({
   backHref: string;
   backLabel: string;
 }) {
+  const type = backHref.replace("/", "") as ContentType;
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+      <ReadingProgress />
       <Link href={backHref} className="text-sm font-medium text-neon-400 hover:underline">
         ← {backLabel}
       </Link>
 
-      <header className="mt-6 flex items-start justify-between gap-6">
+      <header className="fade-up mt-6 flex items-start justify-between gap-6">
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight text-slate-50 sm:text-4xl">
             {review.name}
@@ -30,17 +37,22 @@ export default function ReviewDetail({
             ))}
           </div>
           <p className="mt-3 text-xs text-slate-500">
-            Diulas {formatTanggal(review.date)} oleh Fajar M Reza
+            Diulas oleh Fajar M Reza
           </p>
         </div>
-        <ScoreBadge score={review.score} size="lg" />
+        <ScoreRing score={review.score} />
       </header>
 
-      <p className="mt-8 rounded-2xl border border-ink-600 bg-ink-800/50 p-6 leading-relaxed text-slate-300">
+      <div className="fade-up delay-1 mt-6 flex items-center gap-3">
+        <BookmarkButton type={type} slug={review.slug} size="lg" />
+        <ShareButton title={`Review ${review.name} — Wawasan AI`} />
+      </div>
+
+      <p className="fade-up delay-2 mt-8 rounded-2xl border border-ink-600 bg-ink-800/50 p-6 leading-relaxed text-slate-300">
         {review.summary}
       </p>
 
-      <section className="mt-10">
+      <section className="fade-up delay-3 mt-10">
         <h2 className="text-xl font-bold text-slate-100">Skor Rinci</h2>
         <div className="mt-5 space-y-4">
           {review.scores.map((s) => (
@@ -49,7 +61,7 @@ export default function ReviewDetail({
         </div>
       </section>
 
-      <section className="mt-10 grid gap-6 sm:grid-cols-2">
+      <section className="fade-up delay-4 mt-10 grid gap-6 sm:grid-cols-2">
         <div className="rounded-2xl border border-emerald-500/25 bg-emerald-500/5 p-6">
           <h2 className="font-bold text-emerald-400">👍 Kelebihan</h2>
           <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-slate-300">

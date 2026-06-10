@@ -155,6 +155,172 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "apa-itu-mcp-protokol-penghubung-ai",
+    title: "Apa Itu MCP? Mengenal 'USB-C-nya AI' yang Membuat Asisten Pintarmu Benar-Benar Berguna",
+    excerpt:
+      "MCP membuat AI bisa menyambung ke tool dan data apa pun lewat satu protokol standar. Inilah penjelasan tanpa jargon — dan kenapa ini penting untuk pengguna di Indonesia.",
+    category: "Panduan",
+    date: "2026-04-08",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Bayangkan zaman dulu ketika setiap ponsel punya colokan charger sendiri-sendiri — Nokia beda dengan Sony, Sony beda dengan Samsung. Lalu datang USB-C, dan tiba-tiba satu kabel bisa untuk semua. Model Context Protocol (MCP) melakukan hal yang sama untuk AI: ia adalah colokan standar yang membuat model AI bisa tersambung ke tool, database, dan layanan apa pun tanpa integrasi khusus satu per satu.",
+          "Sebelum MCP, kalau kamu mau asisten AI bisa membaca Google Drive, mengecek kalender, dan menjalankan query database, tiap koneksi harus dibangun sendiri — kerja ulang yang melelahkan dan rapuh. Dengan MCP, pembuat tool cukup membuat satu 'server MCP', dan semua aplikasi AI yang mendukung protokol ini langsung bisa memakainya. Itulah kenapa banyak orang menyebutnya USB-C-nya AI — dan kenapa adopsinya menyebar begitu cepat.",
+        ],
+      },
+      {
+        heading: "Cara kerjanya, tanpa jargon",
+        paragraphs: [
+          "Strukturnya sederhana: ada klien (aplikasi AI yang kamu pakai — Claude Code, OpenClaw, editor coding, dan lain-lain) dan ada server MCP (program kecil yang 'membungkus' suatu layanan agar bisa diajak bicara oleh AI). Server MCP memberi tahu si model: 'ini daftar hal yang bisa kamu lakukan lewat saya' — misalnya cari file, baca email, atau tarik data dari spreadsheet.",
+          "Model lalu memutuskan sendiri kapan memanggil kemampuan itu, persis seperti asisten manusia yang tahu kapan harus membuka lemari arsip. Yang penting dipahami: MCP bukan model AI, bukan juga aplikasi. Ia hanya bahasa perantara — tapi justru bahasa perantara yang disepakati bersama itulah yang selama ini hilang.",
+        ],
+      },
+      {
+        heading: "Manfaat nyata untuk pengguna Indonesia",
+        paragraphs: [
+          "Contoh paling membumi: asisten AI yang bisa membaca folder dokumen kerjamu langsung, tanpa perlu copy-paste bolak-balik — untuk ASN seperti saya, ini mengubah cara menelaah dokumen panjang. Untuk pemilik UMKM, server MCP untuk spreadsheet atau database berarti AI bisa menjawab 'berapa stok barang X' dari data nyata, bukan mengarang. Untuk pengguna n8n dan OpenClaw, MCP membuka ribuan integrasi siap pakai yang dibuat komunitas.",
+          "Kabar baiknya lagi: banyak server MCP bersifat open-source dan bisa jalan di komputer sendiri, sehingga data tidak harus keluar dari infrastruktur kita — relevan sekali untuk instansi dengan aturan data ketat. Saran saya: mulai dari server MCP filesystem yang paling sederhana, rasakan bedanya, lalu jelajahi katalog server yang terus bertambah. Begitu terbiasa, kamu akan heran dulu bisa hidup tanpa ini.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "vibe-coding-peluang-dan-jebakan",
+    title: "Vibe Coding: Membangun Aplikasi Tanpa Menulis Kode — Peluang Sekaligus Jebakannya",
+    excerpt:
+      "Kini siapa pun bisa 'ngobrol' dengan AI dan jadi punya aplikasi. Saya senang sekaligus waswas — ini catatan jujur soal peluang dan jebakan vibe coding untuk orang Indonesia.",
+    category: "Opini",
+    date: "2026-03-22",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Beberapa bulan terakhir saya menyaksikan fenomena yang dulu terasa mustahil: teman-teman yang tidak pernah menulis satu baris kode pun kini punya aplikasi buatan sendiri. Mereka cukup mendeskripsikan keinginannya ke AI — 'buatkan aplikasi pencatat kas RT yang bisa diakses dari HP' — lalu memoles hasilnya lewat percakapan. Inilah yang disebut vibe coding: membangun software dengan mengandalkan 'vibe', bukan pemahaman teknis.",
+          "Sebagai orang yang belajar otomasi secara otodidak, saya ikut senang. Tapi sebagai orang yang sudah cukup sering melihat kode hasil AI dari dekat, saya juga waswas. Tulisan ini mencoba jujur di dua sisi: vibe coding adalah peluang nyata, dan pada saat yang sama jebakan yang nyata pula.",
+        ],
+      },
+      {
+        heading: "Peluangnya sungguhan",
+        paragraphs: [
+          "Untuk konteks Indonesia, ini demokratisasi yang berarti. Pemilik warung bisa bikin kalkulator HPP sendiri, pengurus komunitas bisa bikin sistem pendaftaran acara, staf kantor bisa bikin dashboard rekap — hal-hal yang dulu butuh menyewa programmer dengan biaya yang tidak masuk akal untuk kebutuhan sekecil itu. Jarak antara 'punya ide' dan 'punya prototipe' menyusut dari berbulan-bulan menjadi semalam.",
+          "Dan untuk yang ingin serius, vibe coding adalah pintu masuk belajar yang menyenangkan. Banyak orang yang mulanya cuma 'ngobrol' dengan AI lama-lama penasaran kenapa kodenya begini, lalu tanpa sadar mulai belajar betulan. Itu jalur belajar yang valid — saya sendiri belajar banyak dengan cara serupa.",
+        ],
+      },
+      {
+        heading: "Jebakan yang jarang dibicarakan",
+        paragraphs: [
+          "Pertama, keamanan. Aplikasi hasil vibe coding sering terlihat jalan tapi bolong di tempat yang tidak terlihat: password tersimpan sembarangan, data bisa diakses siapa saja, kunci API tertanam di kode yang dipublikasikan. Kalau aplikasimu hanya dipakai sendiri, risikonya kecil; begitu menyimpan data orang lain — apalagi data pelanggan atau warga — kamu memikul tanggung jawab yang tidak bisa didelegasikan ke AI.",
+          "Kedua, maintainability. Aplikasi yang lahir dari percakapan seminggu bisa jadi tidak bisa diubah enam bulan kemudian, karena tidak ada yang benar-benar paham isinya — termasuk pembuatnya. Menambah fitur kecil bisa merusak fitur lain, dan kamu tidak tahu kenapa. Software itu bukan barang jadi, ia makhluk hidup yang harus dirawat.",
+          "Ketiga — dan ini yang paling halus — ilusi kompetensi. Berhasil mem-vibe-code sebuah aplikasi terasa seperti 'sudah bisa bikin software', padahal yang kita kuasai baru kulitnya. Bahayanya muncul saat ilusi itu dibawa ke ranah profesional: menerima proyek berbayar atau memasang sistem untuk kantor tanpa kemampuan menilai apakah hasilnya aman dan benar. Nasihat saya sederhana: silakan vibe coding sebebas-bebasnya untuk diri sendiri, tapi begitu menyangkut uang dan data orang lain, ajak orang yang paham untuk me-review — atau jadilah orang yang paham itu dengan belajar sungguhan.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "keamanan-ai-agent-checklist",
+    title: "Checklist Keamanan Sebelum Memasang AI Agent Self-Hosted di Server Sendiri",
+    excerpt:
+      "AI agent seperti OpenClaw bisa menjalankan perintah di servermu — itulah kekuatannya, sekaligus risikonya. Lima pemeriksaan wajib sebelum kamu menyalakannya.",
+    category: "Tutorial",
+    date: "2026-02-28",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "AI agent self-hosted seperti OpenClaw memikat karena satu hal: ia bisa benar-benar mengerjakan sesuatu — menjalankan perintah, membaca file, mengirim pesan. Tapi kemampuan itu pedang bermata dua. Agen yang bisa menjalankan perintah di servermu adalah agen yang, kalau salah arah atau dimanipulasi, bisa merusak servermu juga.",
+          "Saya memasang dan membongkar cukup banyak agen di server sendiri untuk tahu bahwa sebagian besar masalah bisa dicegah dengan persiapan sederhana. Berikut checklist yang saya jalankan sendiri sebelum menyalakan agen baru — tidak butuh keahlian security khusus, hanya kedisiplinan.",
+        ],
+      },
+      {
+        heading: "1. Isolasi: beri agen 'kamar' sendiri",
+        paragraphs: [
+          "Jangan jalankan agen sebagai root atau di user utama yang menyimpan semua datamu. Buat user Linux terpisah khusus untuk agen, atau lebih baik lagi jalankan di dalam container (Docker) atau VPS murah yang memang dialokasikan untuk eksperimen. Prinsipnya: kalau agen mengamuk atau dibobol, kerusakannya terkurung di kamarnya sendiri.",
+          "Bonus dari isolasi: kamu jadi berani bereksperimen. Agen di lingkungan terisolasi boleh dikasih kebebasan lebih, karena skenario terburuknya cuma 'hapus container, buat ulang'.",
+        ],
+      },
+      {
+        heading: "2. Batasi izin dan jauhkan data sensitif",
+        paragraphs: [
+          "Beri agen hanya akses yang ia butuhkan untuk tugasnya — tidak lebih. Kalau tugasnya merekap pesan, ia tidak perlu akses hapus file. Kalau ia perlu API key, buat key terpisah dengan cakupan paling sempit dan limit pengeluaran, jangan pakai key utama. Tinjau ulang daftar tool yang diaktifkan: tiap tool tambahan adalah pintu tambahan.",
+          "Dan ini yang paling sering dilanggar: jangan taruh data sensitif di jangkauan agen. Dokumen rahasia kantor, data pribadi warga, file keuangan — semua itu tidak boleh berada di folder yang bisa dibaca agen yang tersambung ke internet. Untuk ASN dan siapa pun yang memegang data orang lain, anggap ini garis merah, bukan saran.",
+        ],
+      },
+      {
+        heading: "3. Waspadai prompt injection, dan selalu punya backup",
+        paragraphs: [
+          "Prompt injection itu serangan yang sederhana tapi efektif: penyerang menitipkan instruksi jahat di konten yang akan dibaca agenmu — email, halaman web, pesan masuk — dan agen yang polos bisa menurutinya seolah perintah darimu. Pertahanannya berlapis: jangan beri agen kemampuan destruktif yang berjalan otomatis tanpa konfirmasi, curigai agen yang memproses konten dari orang tak dikenal, dan aktifkan mode konfirmasi manusia untuk aksi penting seperti mengirim uang, menghapus data, atau mengirim pesan keluar.",
+          "Terakhir, backup. Sebelum agen pertama kali menyala, pastikan ada salinan data penting di tempat yang tidak bisa dijangkau si agen. Backup yang bisa dihapus oleh agen yang sama bukanlah backup. Kedengarannya paranoid, sampai hari kamu bersyukur pernah paranoid.",
+          "Checklist ini tidak membuat sistemmu kebal — tidak ada yang bisa. Tapi ia mengubah risiko dari 'bencana' menjadi 'pelajaran yang bisa dipulihkan', dan itu cukup untuk mulai bereksperimen dengan tenang.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "rag-vs-konteks-panjang",
+    title: "RAG vs Context Window Jutaan Token: Kapan Butuh Pipeline, Kapan Cukup Lempar Semua Dokumen?",
+    excerpt:
+      "Model berkonteks panjang membuat banyak orang bertanya: masih perlu RAG? Jawabannya tergantung skala, frekuensi, dan — yang sering dilupakan — tagihan.",
+    category: "Analisis",
+    date: "2026-02-10",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Dulu jawabannya gampang: model hanya kuat membaca beberapa halaman, jadi kalau mau AI menjawab dari dokumen banyak, kamu wajib membangun pipeline RAG — sistem yang memotong dokumen, menyimpannya di database vektor, lalu mengambil potongan relevan untuk tiap pertanyaan. Sekarang model berkonteks ratusan ribu hingga jutaan token mengubah hitungannya: untuk banyak kasus, kamu bisa melempar seluruh dokumen mentah-mentah ke model dan selesai.",
+          "Lalu apakah RAG sudah mati? Belum — tapi wilayah kekuasaannya menyempit. Pertanyaan yang tepat bukan 'mana yang lebih canggih', melainkan 'untuk kasus saya, mana yang lebih sederhana dan lebih murah'. Mari kita bedah.",
+        ],
+      },
+      {
+        heading: "Kapan konteks panjang saja sudah cukup",
+        paragraphs: [
+          "Kalau total dokumenmu muat di context window dan pertanyaannya tidak terlalu sering, lempar saja semuanya. Menelaah satu kontrak panjang, membandingkan beberapa peraturan, merangkum laporan tahunan — untuk pekerjaan begini, membangun pipeline RAG itu seperti membangun gudang untuk menyimpan tiga kardus. Konteks panjang juga unggul saat jawabannya butuh pemahaman lintas-dokumen yang utuh: model melihat semuanya sekaligus, bukan potongan-potongan yang diambil sistem pencari.",
+          "Pola pemakaian saya sehari-hari sebagai ASN justru hampir semuanya kategori ini: dokumen kerja datang per kasus, ditelaah, selesai. Tidak ada alasan merawat database vektor untuk itu.",
+        ],
+      },
+      {
+        heading: "Kapan RAG tetap tak tergantikan",
+        paragraphs: [
+          "Pertama, skala: kalau korpusmu ribuan dokumen — arsip peraturan satu instansi, basis pengetahuan layanan pelanggan, dokumentasi produk bertahun-tahun — tidak ada context window yang muat, dan RAG kembali jadi satu-satunya jalan. Kedua, frekuensi: chatbot yang menjawab ratusan pertanyaan sehari dari basis pengetahuan yang sama akan jauh lebih hemat mengambil potongan kecil yang relevan ketimbang membayar pembacaan seluruh korpus berulang-ulang.",
+          "Di sinilah implikasi biaya yang sering dilupakan: kamu membayar per token yang dibaca model, dan membaca dokumen raksasa untuk tiap pertanyaan kecil itu seperti menyewa truk kontainer untuk antar satu paket. Fitur prompt caching memang memangkas biaya pembacaan berulang secara signifikan, tapi tidak menghilangkan logika dasarnya. Untuk dompet Indonesia — apalagi UMKM yang menimbang tiap rupiah tagihan API — selisihnya terasa.",
+          "Rumus praktis saya: mulai dari yang paling sederhana, yaitu lempar dokumen ke model berkonteks panjang. Baru bangun RAG kalau (a) dokumen tidak muat, (b) volume pertanyaan tinggi dan tagihan mulai sakit, atau (c) korpus terus bertambah dan butuh diperbarui tanpa menyentuh ulang semuanya. RAG itu jawaban untuk masalah skala — jangan mengadopsi masalah skala sebelum kamu memilikinya.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "peta-karier-ai-untuk-orang-indonesia",
+    title: "Peta Karier dan Cuan di Era AI untuk Orang Indonesia Biasa — Tanpa Gelar Peneliti",
+    excerpt:
+      "Tidak perlu jadi peneliti machine learning untuk dapat penghasilan dari gelombang AI. Empat jalur realistis untuk orang Indonesia — beserta syarat dan risikonya yang jujur.",
+    category: "Analisis",
+    date: "2026-01-18",
+    readingTime: "8 menit",
+    body: [
+      {
+        paragraphs: [
+          "Setiap kali AI ramai dibicarakan, narasi kariernya selalu sama: jadi peneliti machine learning bergaji fantastis di perusahaan besar. Jalur itu nyata, tapi relevan untuk segelintir orang — butuh latar matematika kuat dan biasanya gelar lanjutan. Padahal di bawah radar, ada lapisan peluang yang jauh lebih bisa dijangkau orang Indonesia biasa: pekerjaan yang intinya menjembatani kemampuan AI dengan kebutuhan nyata di sekitar kita.",
+          "Tulisan ini memetakan jalur-jalur itu tanpa hype. Tidak ada janji 'cuan puluhan juta dalam sebulan' — yang ada adalah peluang riil yang menuntut belajar sungguhan, plus kejujuran soal di mana persaingannya berat.",
+        ],
+      },
+      {
+        heading: "Empat jalur yang realistis",
+        paragraphs: [
+          "Pertama, 'AI engineer dadakan' — sebutan saya untuk orang yang bisa merangkai layanan AI yang sudah ada (API model, n8n, Dify, agen coding) menjadi solusi kerja, tanpa membangun model dari nol. Banyak perusahaan menengah Indonesia tidak butuh peneliti; mereka butuh orang yang bisa membuat sistem 'baca email masuk, klasifikasikan, balas otomatis yang rutin'. Modal masuknya: kemauan belajar tooling dan kemampuan memahami proses bisnis.",
+          "Kedua, konsultan otomasi UMKM. Jutaan usaha kecil kita masih merekap pesanan manual dan membalas pertanyaan pelanggan yang sama berulang-ulang di WhatsApp. Orang yang bisa datang, memetakan proses, dan memasang otomasi sederhana — lalu mengajari pemiliknya — menjual hasil yang sangat konkret: waktu. Kuncinya bukan teknologi canggih, tapi kemampuan bicara bahasa pedagang, bukan bahasa engineer.",
+          "Ketiga, content ops: mengoperasikan produksi konten berbantuan AI untuk bisnis — riset, draft, edit, jadwal, ukur. Yang dibayar di sini bukan kemampuan menyuruh AI menulis (semua orang bisa), melainkan kurasi dan kontrol kualitas: memastikan konten akurat, bernada tepat, dan tidak generik. Keempat, jasa pembuatan chatbot — customer service UMKM, FAQ instansi, asisten internal kantor. Pasarnya nyata, tapi ini jalur yang paling cepat ramai pesaing; pembedanya ada di pemahaman domain dan layanan purna jual, bukan di chatbotnya sendiri.",
+        ],
+      },
+      {
+        heading: "Catatan jujur sebelum melompat",
+        paragraphs: [
+          "Semua jalur di atas punya musuh yang sama: tool yang makin mudah. Apa yang hari ini kamu jual sebagai jasa, tahun depan mungkin jadi fitur sekali klik. Pertahanannya bukan merahasiakan trik, melainkan terus naik level ke hal yang lebih sulit ditiru: pemahaman mendalam atas industri tertentu, kepercayaan klien, dan kemampuan menilai kapan AI salah. Posisikan dirimu sebagai orang yang bertanggung jawab atas hasil, bukan operator tool.",
+          "Dan untuk yang sudah bekerja — termasuk sesama ASN — jalur paling aman sering kali bukan resign, melainkan menjadi orang yang paling paham AI di organisasimu sendiri. Nilai itu tidak selalu cair sebagai uang langsung, tapi cair sebagai peran, jejaring, dan pilihan. Mulailah dari masalah nyata di depan mata, bukan dari teknologi yang sedang viral; orang yang menyelesaikan masalah membosankan dengan AI akan selalu menang dari orang yang mendemokan AI keren tanpa masalah untuk diselesaikan.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
