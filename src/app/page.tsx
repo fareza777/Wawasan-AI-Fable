@@ -99,7 +99,7 @@ export default function Home() {
 
           {/* Terminal mock */}
           <div className="fade-up delay-3 float-slow tilt-wrap hidden lg:block">
-            <div className="tilt-card overflow-hidden rounded-2xl border border-ink-600 bg-ink-900/90 shadow-2xl shadow-neon-500/10">
+            <div className="terminal-mock tilt-card overflow-hidden rounded-2xl border border-ink-600 bg-ink-900/90 shadow-2xl shadow-neon-500/10">
               <div className="flex items-center gap-2 border-b border-ink-700 bg-ink-800/80 px-4 py-3">
                 <span className="h-3 w-3 rounded-full bg-rose-500/80" />
                 <span className="h-3 w-3 rounded-full bg-amber-500/80" />
@@ -211,7 +211,7 @@ export default function Home() {
       {/* ===== CTA ===== */}
       <div className="section-divider mx-auto max-w-4xl" />
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <div className="relative overflow-hidden rounded-3xl border border-ink-600 bg-gradient-to-br from-ink-800 via-ink-900 to-ink-950 p-10 text-center sm:p-14">
+        <div className="panel-white relative overflow-hidden rounded-3xl border border-ink-600 bg-gradient-to-br from-ink-800 via-ink-900 to-ink-950 p-10 text-center sm:p-14">
           <div className="dot-pattern absolute inset-0" aria-hidden />
           <div className="aurora -top-20 right-0 h-48 w-96 bg-violet-glow" />
           <h2 className="relative text-2xl font-extrabold text-slate-50 sm:text-3xl">
