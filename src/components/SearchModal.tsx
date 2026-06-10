@@ -106,9 +106,17 @@ export default function SearchModal() {
                   Ketik untuk mencari di seluruh review dan artikel.
                 </p>
               ) : results.length === 0 ? (
-                <p className="px-3 py-6 text-center text-sm text-slate-500">
-                  Tidak ada hasil untuk “{query}”.
-                </p>
+                <div className="flex flex-col items-center gap-3 px-3 py-8">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-slate-600">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m21 21-4.3-4.3M8.5 11h5" strokeLinecap="round" />
+                  </svg>
+                  <p className="text-center text-sm text-slate-500">
+                    Tidak ada hasil untuk “{query}”.
+                    <br />
+                    <span className="text-xs text-slate-600">Coba kata kunci lain: “agent”, “lokal”, “coding”…</span>
+                  </p>
+                </div>
               ) : (
                 results.map((r, i) => (
                   <button

@@ -27,5 +27,18 @@ export default async function ModelDetailPage({
 }) {
   const review = getModel((await params).slug);
   if (!review) notFound();
-  return <ReviewDetail review={review} backHref="/model" backLabel="Semua Review Model" />;
+  const idx = models.findIndex((m) => m.slug === review.slug);
+  const berikutnya = models[(idx + 1) % models.length];
+  return (
+    <ReviewDetail
+      review={review}
+      backHref="/model"
+      backLabel="Review Model"
+      next={{
+        href: `/model/${berikutnya.slug}`,
+        name: berikutnya.name,
+        tagline: berikutnya.tagline,
+      }}
+    />
+  );
 }

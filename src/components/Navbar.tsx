@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import SearchModal from "./SearchModal";
 import ProfileMenu from "./ProfileMenu";
@@ -16,11 +16,29 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-ink-700/60 bg-ink-950/80 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <header
+      className={`sticky top-0 z-50 border-b backdrop-blur-xl transition-all duration-300 ${
+        scrolled
+          ? "border-ink-700/80 bg-ink-950/95 shadow-lg shadow-ink-950/60"
+          : "border-ink-700/40 bg-ink-950/70"
+      }`}
+    >
+      <nav
+        className={`mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 transition-all duration-300 sm:px-6 ${
+          scrolled ? "py-2" : "py-3.5"
+        }`}
+      >
         <Link href="/" className="flex shrink-0 items-center gap-2.5" onClick={() => setOpen(false)}>
           <span className="logo-mark flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-neon-500 to-violet-glow font-mono text-sm font-bold text-ink-950">
             W

@@ -27,5 +27,18 @@ export default async function StackDetailPage({
 }) {
   const review = getStack((await params).slug);
   if (!review) notFound();
-  return <ReviewDetail review={review} backHref="/stack" backLabel="Semua Review Stack" />;
+  const idx = stacks.findIndex((s) => s.slug === review.slug);
+  const berikutnya = stacks[(idx + 1) % stacks.length];
+  return (
+    <ReviewDetail
+      review={review}
+      backHref="/stack"
+      backLabel="Review Stack"
+      next={{
+        href: `/stack/${berikutnya.slug}`,
+        name: berikutnya.name,
+        tagline: berikutnya.tagline,
+      }}
+    />
+  );
 }

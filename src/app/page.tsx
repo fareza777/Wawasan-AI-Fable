@@ -6,7 +6,15 @@ import { berita } from "@/data/berita";
 import ReviewCard from "@/components/ReviewCard";
 import ArtikelCard from "@/components/ArtikelCard";
 import TopicTicker from "@/components/TopicTicker";
+import SectionDots from "@/components/SectionDots";
 import { scoreColor } from "@/components/Score";
+
+const homeSections = [
+  { id: "repo-pilihan", label: "Repo" },
+  { id: "papan-skor", label: "Model" },
+  { id: "stack-tools", label: "Stack" },
+  { id: "tulisan-terbaru", label: "Berita" },
+];
 
 function byDateDesc<T extends { date: string }>(arr: T[]) {
   return [...arr].sort((a, b) => b.date.localeCompare(a.date));
@@ -149,9 +157,10 @@ export default function Home() {
       </section>
 
       <TopicTicker />
+      <SectionDots sections={homeSections} />
 
       {/* ===== Review Repo ===== */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <section id="repo-pilihan" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <SectionHead nomor="01" kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
         <div className="grid gap-6 md:grid-cols-3">
           {featuredRepos.map((r) => (
@@ -161,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* ===== Leaderboard Model ===== */}
-      <section className="border-y border-ink-700/60 bg-ink-900/40">
+      <section id="papan-skor" className="border-y border-ink-700/60 bg-ink-900/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <SectionHead nomor="02" kicker="// skor model" title="Papan Skor Model LLM" href="/model" />
           <div className="overflow-hidden rounded-2xl border border-ink-700">
@@ -201,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* ===== Review Stack ===== */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <section id="stack-tools" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <SectionHead nomor="03" kicker="// review stack" title="Stack & Tools Coding AI" href="/stack" />
         <div className="grid gap-6 md:grid-cols-3">
           {featuredStacks.map((s) => (
@@ -211,7 +220,7 @@ export default function Home() {
       </section>
 
       {/* ===== Berita ===== */}
-      <section className="border-t border-ink-700/60 bg-ink-900/40">
+      <section id="tulisan-terbaru" className="border-t border-ink-700/60 bg-ink-900/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <SectionHead nomor="04" kicker="// berita & wawasan" title="Tulisan Terbaru" href="/berita" />
           <div className="grid gap-6 md:grid-cols-3">

@@ -27,5 +27,18 @@ export default async function RepoDetailPage({
 }) {
   const review = getRepo((await params).slug);
   if (!review) notFound();
-  return <ReviewDetail review={review} backHref="/repo" backLabel="Semua Review Repo" />;
+  const idx = repos.findIndex((r) => r.slug === review.slug);
+  const berikutnya = repos[(idx + 1) % repos.length];
+  return (
+    <ReviewDetail
+      review={review}
+      backHref="/repo"
+      backLabel="Review Repo"
+      next={{
+        href: `/repo/${berikutnya.slug}`,
+        name: berikutnya.name,
+        tagline: berikutnya.tagline,
+      }}
+    />
+  );
 }

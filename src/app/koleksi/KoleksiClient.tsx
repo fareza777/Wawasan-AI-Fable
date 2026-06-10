@@ -33,7 +33,32 @@ export default function KoleksiClient() {
     return () => window.removeEventListener(STORAGE_EVENT, sync);
   }, []);
 
-  if (!ready) return <div className="min-h-[50vh]" />;
+  if (!ready) {
+    return (
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <div className="skeleton mx-auto h-4 w-32" />
+          <div className="skeleton mx-auto h-9 w-64" />
+          <div className="skeleton mx-auto h-4 w-80" />
+        </div>
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="rounded-2xl border border-ink-700 p-6">
+              <div className="flex items-start gap-3">
+                <div className="skeleton h-9 w-9 rounded-xl" />
+                <div className="flex-1 space-y-2">
+                  <div className="skeleton h-5 w-2/3" />
+                  <div className="skeleton h-4 w-full" />
+                </div>
+              </div>
+              <div className="skeleton mt-5 h-16 w-full" />
+              <div className="skeleton mt-4 h-4 w-1/2" />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   const savedRepos = repos.filter((r) =>
     items.some((i) => i.type === "repo" && i.slug === r.slug)
@@ -63,7 +88,13 @@ export default function KoleksiClient() {
       />
 
       {total === 0 && (
-        <div className="mt-12 flex flex-col items-center gap-4">
+        <div className="mt-12 flex flex-col items-center gap-5">
+          <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-ink-600 bg-ink-800/50">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-slate-500">
+              <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M9 10h6" strokeLinecap="round" />
+            </svg>
+          </div>
           <Link
             href="/repo"
             className="rounded-xl bg-gradient-to-r from-neon-500 to-violet-glow px-6 py-3 text-sm font-bold text-ink-950 transition-opacity hover:opacity-90"

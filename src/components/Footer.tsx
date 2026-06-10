@@ -1,5 +1,9 @@
 import Link from "next/link";
 import NewsletterForm from "./NewsletterForm";
+import { repos } from "@/data/repos";
+import { models } from "@/data/models";
+import { stacks } from "@/data/stacks";
+import { berita } from "@/data/berita";
 
 export default function Footer() {
   return (
@@ -44,10 +48,26 @@ export default function Footer() {
           <div className="text-sm">
             <h3 className="mb-3 font-semibold text-slate-200">Rubrik</h3>
             <ul className="space-y-2 text-slate-400">
-              <li><Link href="/repo" className="hover:text-neon-400">Review Repo GitHub</Link></li>
-              <li><Link href="/model" className="hover:text-neon-400">Review Model LLM</Link></li>
-              <li><Link href="/stack" className="hover:text-neon-400">Review Stack & Tools</Link></li>
-              <li><Link href="/berita" className="hover:text-neon-400">Berita & Wawasan</Link></li>
+              <li>
+                <Link href="/repo" className="hover:text-neon-400">
+                  Review Repo GitHub <span className="font-mono text-xs text-slate-600">({repos.length})</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/model" className="hover:text-neon-400">
+                  Review Model LLM <span className="font-mono text-xs text-slate-600">({models.length})</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/stack" className="hover:text-neon-400">
+                  Review Stack & Tools <span className="font-mono text-xs text-slate-600">({stacks.length})</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/berita" className="hover:text-neon-400">
+                  Berita & Wawasan <span className="font-mono text-xs text-slate-600">({berita.length})</span>
+                </Link>
+              </li>
               <li><Link href="/koleksi" className="hover:text-neon-400">Koleksi Saya</Link></li>
             </ul>
           </div>

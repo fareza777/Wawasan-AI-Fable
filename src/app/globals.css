@@ -32,6 +32,22 @@ body {
 h1, h2, h3, .font-display {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+/* ===== Transisi antar halaman (progressive) ===== */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.22s;
+}
+
+/* ===== Anchor & scroll offset ===== */
+[id] {
+  scroll-margin-top: 90px;
 }
 
 ::selection {
@@ -194,6 +210,68 @@ h1, h2, h3, .font-display {
   color: #f1f5f9;
   margin-top: 2.2rem;
   margin-bottom: 0.9rem;
+}
+
+/* Paragraf pembuka lebih besar */
+.lead-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #e2e8f0;
+}
+
+/* Drop cap editorial */
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  line-height: 0.85;
+  font-weight: 800;
+  color: #22d3ee;
+  padding-right: 0.6rem;
+  padding-top: 0.35rem;
+}
+
+/* Anchor heading: tanda # muncul saat hover */
+.anchor-heading {
+  position: relative;
+}
+
+.anchor-heading a {
+  opacity: 0;
+  margin-left: 0.5rem;
+  color: #22d3ee;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.anchor-heading:hover a,
+.anchor-heading a:focus-visible {
+  opacity: 1;
+}
+
+/* Pull-quote verdict */
+.pull-quote {
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(180deg, #22d3ee, #8b5cf6) 1;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.65;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+/* ===== Skeleton shimmer ===== */
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(100deg, #111729 35%, #1a2238 50%, #111729 65%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+  border-radius: 0.5rem;
 }
 
 /* ===== 1. Film grain / noise overlay ===== */
