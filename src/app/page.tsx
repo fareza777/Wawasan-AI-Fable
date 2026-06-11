@@ -6,7 +6,7 @@ import { berita } from "@/data/berita";
 import ReviewCard from "@/components/ReviewCard";
 import ArtikelCard from "@/components/ArtikelCard";
 import TopicTicker from "@/components/TopicTicker";
-import HeroSearch from "@/components/HeroSearch";
+import HeroFuturisticVisual from "@/components/HeroFuturisticVisual";
 import { scoreColor } from "@/components/Score";
 
 function byDateDesc<T extends { date: string }>(arr: T[]) {
@@ -55,8 +55,6 @@ export default function Home() {
   const topModels = [...models].sort((a, b) => b.score - a.score).slice(0, 6);
   const featuredStacks = byDateDesc(stacks).slice(0, 3);
   const latestNews = byDateDesc(berita).slice(0, 3);
-  const totalReview = repos.length + models.length + stacks.length;
-
   return (
     <>
       {/* ===== Hero ===== */}
@@ -94,45 +92,9 @@ export default function Home() {
               </Link>
             </div>
 
-            <HeroSearch />
           </div>
 
-          {/* Terminal mock */}
-          <div className="fade-up delay-3 float-slow tilt-wrap hidden lg:block">
-            <div className="terminal-mock tilt-card overflow-hidden rounded-2xl border border-ink-600 bg-ink-900/90 shadow-2xl shadow-neon-500/10">
-              <div className="flex items-center gap-2 border-b border-ink-700 bg-ink-800/80 px-4 py-3">
-                <span className="h-3 w-3 rounded-full bg-rose-500/80" />
-                <span className="h-3 w-3 rounded-full bg-amber-500/80" />
-                <span className="h-3 w-3 rounded-full bg-emerald-500/80" />
-                <span className="ml-3 font-mono text-xs text-slate-500">wawasan@portal ~ </span>
-              </div>
-              <div className="space-y-3 p-6 font-mono text-[13px] leading-relaxed">
-                <p className="text-slate-400">
-                  <span className="text-emerald-400">$</span> wawasan cari{" "}
-                  <span className="text-neon-400">&quot;agent terbaik untuk pemula&quot;</span>
-                </p>
-                <p className="text-slate-500">→ menelusuri {totalReview}+ review …</p>
-                <div className="space-y-1.5 rounded-lg border border-ink-700 bg-ink-950/60 p-4">
-                  <p className="text-slate-300">
-                    <span className="text-violet-300">[repo]</span> OpenClaw{" "}
-                    <span className="text-emerald-400">★ 9.2</span> — asisten di WhatsApp-mu
-                  </p>
-                  <p className="text-slate-300">
-                    <span className="text-violet-300">[stack]</span> Claude Code{" "}
-                    <span className="text-emerald-400">★ 9.5</span> — agen coding terminal
-                  </p>
-                  <p className="text-slate-300">
-                    <span className="text-violet-300">[repo]</span> n8n{" "}
-                    <span className="text-emerald-400">★ 9.0</span> — otomasi visual
-                  </p>
-                </div>
-                <p className="text-slate-400">
-                  <span className="text-emerald-400">$</span>{" "}
-                  <span className="cursor-blink inline-block h-4 w-2 translate-y-0.5 bg-neon-400" />
-                </p>
-              </div>
-            </div>
-          </div>
+          <HeroFuturisticVisual />
         </div>
       </section>
 

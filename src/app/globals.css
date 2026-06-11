@@ -714,6 +714,165 @@ h1, h2, h3, .font-display {
   border-left: 3px solid #22d3ee;
 }
 
+/* ===== Hero futuristic visual (CSS only — Neural Orbit) ===== */
+.hero-visual-stage {
+  position: relative;
+  width: min(400px, 100%);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.hero-visual-glow {
+  position: absolute;
+  inset: 12%;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.2), rgba(139, 92, 246, 0.08) 55%, transparent 70%);
+  animation: hero-pulse 4s ease-in-out infinite;
+}
+
+.hero-visual-ring {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 9999px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.hero-visual-ring-outer {
+  width: 100%;
+  height: 100%;
+  animation: hero-orbit-spin 48s linear infinite reverse;
+}
+
+.hero-visual-ring-mid {
+  width: 72%;
+  height: 72%;
+  border-color: rgba(139, 92, 246, 0.25);
+  animation: hero-orbit-spin 32s linear infinite;
+}
+
+.hero-visual-ring-inner {
+  width: 44%;
+  height: 44%;
+  border-color: rgba(34, 211, 238, 0.35);
+  border-style: dashed;
+  animation: hero-orbit-spin 20s linear infinite reverse;
+}
+
+.hero-visual-core {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  margin: auto;
+  display: flex;
+  height: 5.5rem;
+  width: 5.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(34, 211, 238, 0.45);
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.15), rgba(17, 23, 41, 0.92) 65%);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.25), inset 0 0 24px rgba(139, 92, 246, 0.15);
+}
+
+.hero-visual-core-text {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #22d3ee, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-visual-orbit {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  animation: hero-orbit-spin 26s linear infinite;
+}
+
+.hero-visual-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%) translateX(min(148px, 42vw));
+  animation: hero-orbit-spin 26s linear infinite reverse;
+}
+
+.hero-visual-node-label {
+  position: absolute;
+  top: -1.25rem;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.hero-visual-svg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.hero-visual-scan {
+  position: absolute;
+  inset: 8%;
+  z-index: 4;
+  border-radius: 9999px;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: radial-gradient(circle, black 55%, transparent 72%);
+}
+
+.hero-visual-scan::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.7), transparent);
+  animation: hero-scan 5s ease-in-out infinite;
+}
+
+@keyframes hero-orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hero-pulse {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+@keyframes hero-scan {
+  0% { top: 0%; opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+[data-theme="light"] .hero-visual-core {
+  background: radial-gradient(circle at 35% 30%, #ffffff, #e8ecf2 70%);
+  box-shadow: 0 0 36px rgba(13, 148, 136, 0.2), inset 0 0 20px rgba(124, 106, 173, 0.12);
+}
+
+[data-theme="light"] .hero-visual-glow {
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.15), rgba(124, 106, 173, 0.06) 55%, transparent 70%);
+}
+
 /* ===== 10. Dot pattern ===== */
 .dot-pattern {
   background-image: radial-gradient(rgba(34, 211, 238, 0.18) 1px, transparent 1.5px);
@@ -832,7 +991,9 @@ a:hover > .logo-mark {
 
 @media (prefers-reduced-motion: reduce) {
   .text-gradient, .aurora, .fade-up, .cursor-blink, .animate-pulse-slow, .float-slow,
-  .marquee-track, .glitch::before, .glitch::after, .reveal {
+  .marquee-track, .glitch::before, .glitch::after, .reveal,
+  .hero-visual-orbit, .hero-visual-ring, .hero-visual-glow, .hero-visual-scan::after,
+  .hero-visual-node {
     animation: none;
   }
   .fade-up {
