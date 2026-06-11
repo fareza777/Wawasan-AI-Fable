@@ -2,7 +2,7 @@
 
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Line, Stars } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { createPlanetTexture, createSunTexture } from "./textures";
 
@@ -17,30 +17,6 @@ const PLANETS = [
 
 const ORBIT_TILT = -0.42;
 const SYSTEM_SCALE = 0.88;
-
-function OrbitRing({ radius }: { radius: number }) {
-  const points = useMemo(() => {
-    const pts: [number, number, number][] = [];
-    for (let i = 0; i <= 96; i++) {
-      const a = (i / 96) * Math.PI * 2;
-      pts.push([Math.cos(a) * radius, 0, Math.sin(a) * radius]);
-    }
-    return pts;
-  }, [radius]);
-
-  return (
-    <Line
-      points={points}
-      color="#94a3b8"
-      transparent
-      opacity={0.32}
-      lineWidth={1}
-      dashed
-      dashSize={0.14}
-      gapSize={0.1}
-    />
-  );
-}
 
 function PlanetMesh({
   orbit,
@@ -107,19 +83,19 @@ function Sun({ texture, reducedMotion }: { texture: THREE.CanvasTexture; reduced
     <>
       <mesh ref={glowRef} frustumCulled={false}>
         <sphereGeometry args={[0.62, 32, 32]} />
-        <meshBasicMaterial color="#fbbf24" transparent opacity={0.12} depthWrite={false} />
+        <meshBasicMaterial color="#ea580c" transparent opacity={0.18} depthWrite={false} />
       </mesh>
       <mesh ref={ref} frustumCulled={false}>
         <sphereGeometry args={[0.46, 64, 64]} />
         <meshStandardMaterial
           map={texture}
-          emissive="#f59e0b"
-          emissiveIntensity={1.4}
-          roughness={0.55}
+          emissive="#ea580c"
+          emissiveIntensity={1.65}
+          roughness={0.48}
           metalness={0}
         />
       </mesh>
-      <pointLight intensity={28} distance={24} decay={2} color="#fde68a" />
+      <pointLight intensity={28} distance={24} decay={2} color="#fb923c" />
     </>
   );
 }
@@ -135,8 +111,6 @@ function Scene({ reducedMotion }: { reducedMotion: boolean }) {
 
   if (!textures) return null;
 
-  const orbitRadii = [...new Set(PLANETS.map((p) => p.orbit))];
-
   return (
     <group scale={SYSTEM_SCALE}>
       <ambientLight intensity={0.35} />
@@ -151,9 +125,6 @@ function Scene({ reducedMotion }: { reducedMotion: boolean }) {
         speed={reducedMotion ? 0 : 0.35}
       />
       <group rotation={[ORBIT_TILT, 0, 0]}>
-        {orbitRadii.map((r) => (
-          <OrbitRing key={r} radius={r} />
-        ))}
         <Sun texture={textures.sun} reducedMotion={reducedMotion} />
         {PLANETS.map((p, i) => (
           <PlanetMesh

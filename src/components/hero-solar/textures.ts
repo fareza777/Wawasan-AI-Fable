@@ -88,19 +88,57 @@ export function createPlanetTexture(kind: PlanetKind): THREE.CanvasTexture {
 }
 
 export function createSunTexture(): THREE.CanvasTexture {
-  const size = 256;
+  const size = 512;
   const canvas = document.createElement("canvas");
   canvas.width = size;
   canvas.height = size;
   const ctx = canvas.getContext("2d")!;
-  const g = ctx.createRadialGradient(size * 0.45, size * 0.4, 8, size / 2, size / 2, size / 2);
-  g.addColorStop(0, "#fffef0");
-  g.addColorStop(0.35, "#fde047");
-  g.addColorStop(0.7, "#f59e0b");
-  g.addColorStop(1, "#ea580c");
-  ctx.fillStyle = g;
+
+  const base = ctx.createRadialGradient(
+    size * 0.44,
+    size * 0.42,
+    6,
+    size / 2,
+    size / 2,
+    size / 2,
+  );
+  base.addColorStop(0, "#fff7ed");
+  base.addColorStop(0.18, "#fdba74");
+  base.addColorStop(0.45, "#f97316");
+  base.addColorStop(0.72, "#ea580c");
+  base.addColorStop(1, "#c2410c");
+  ctx.fillStyle = base;
   ctx.fillRect(0, 0, size, size);
-  noise(ctx, size, size, 20);
+
+  for (let i = 0; i < 14; i++) {
+    const y = (i / 14) * size;
+    const bh = size / 14 + 6;
+    const band = ctx.createLinearGradient(0, y, 0, y + bh);
+    const warm = i % 2 === 0 ? "#fb923c" : "#ea580c";
+    const deep = i % 2 === 0 ? "#c2410c" : "#9a3412";
+    band.addColorStop(0, warm);
+    band.addColorStop(1, deep);
+    ctx.globalAlpha = 0.22;
+    ctx.fillStyle = band;
+    ctx.fillRect(0, y, size, bh);
+  }
+  ctx.globalAlpha = 1;
+
+  for (let i = 0; i < 6; i++) {
+    const x = 40 + Math.random() * (size - 80);
+    const y = 40 + Math.random() * (size - 80);
+    const r = 18 + Math.random() * 42;
+    const spot = ctx.createRadialGradient(x, y, 0, x, y, r);
+    spot.addColorStop(0, "rgba(255, 237, 213, 0.55)");
+    spot.addColorStop(0.5, "rgba(234, 88, 12, 0.35)");
+    spot.addColorStop(1, "rgba(154, 52, 18, 0)");
+    ctx.fillStyle = spot;
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  noise(ctx, size, size, 28);
 
   const tex = new THREE.CanvasTexture(canvas);
   tex.colorSpace = THREE.SRGBColorSpace;
