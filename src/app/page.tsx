@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       {/* ===== Hero ===== */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-x-hidden overflow-y-visible">
         <div className="hero-grid absolute inset-0" />
         <div className="aurora -top-24 left-[15%] h-80 w-80 bg-neon-500" />
         <div className="aurora -top-10 right-[10%] h-72 w-72 bg-violet-glow" style={{ animationDelay: "-7s" }} />

@@ -724,6 +724,7 @@ h1, h2, h3, .font-display {
   justify-content: center;
   margin-top: 2rem;
   width: 100%;
+  overflow: visible;
   pointer-events: none;
 }
 
@@ -746,8 +747,9 @@ h1, h2, h3, .font-display {
 .hero-visual-float {
   position: relative;
   width: 100%;
-  max-width: 440px;
-  height: min(420px, 52vw);
+  max-width: 460px;
+  height: min(460px, 56vw);
+  overflow: visible;
   animation: hero-drift 8s ease-in-out infinite;
 }
 
@@ -755,6 +757,7 @@ h1, h2, h3, .font-display {
   display: block;
   width: 100% !important;
   height: 100% !important;
+  overflow: visible !important;
 }
 
 .hero-visual-canvas--loading {
@@ -765,32 +768,9 @@ h1, h2, h3, .font-display {
   );
 }
 
-.hero-planet-label-3d {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #334155;
-  text-shadow:
-    0 0 6px rgba(255, 255, 255, 0.95),
-    0 1px 3px rgba(15, 23, 42, 0.25);
-  pointer-events: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
 @keyframes hero-drift {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
-}
-
-[data-theme="dark"] .hero-planet-label-3d {
-  color: #e2e8f0;
-}
-
-[data-theme="light"] .hero-planet-label-3d {
-  color: #1e293b;
 }
 
 /* ===== 10. Dot pattern ===== */
