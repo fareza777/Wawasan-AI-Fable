@@ -714,78 +714,87 @@ h1, h2, h3, .font-display {
   border-left: 3px solid #22d3ee;
 }
 
-/* ===== Hero layout + futuristic visual ===== */
+/* ===== Hero layout + constellation visual ===== */
 .hero-shell {
-  min-height: clamp(420px, 52vw, 520px);
+  min-height: clamp(400px, 48vw, 500px);
 }
 
 .hero-visual-aside {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   pointer-events: none;
 }
 
 @media (min-width: 1024px) {
   .hero-shell {
-    padding-right: min(440px, 44vw);
+    padding-right: min(420px, 42vw);
   }
 
   .hero-visual-aside {
     position: absolute;
     top: 50%;
-    right: 1.5rem;
-    z-index: 5;
+    right: 0.5rem;
+    z-index: 2;
     margin-top: 0;
-    width: min(400px, 40vw);
-    transform: translateY(-50%);
+    width: min(420px, 42vw);
+    transform: translateY(-48%);
   }
 }
 
-.hero-visual-panel {
-  display: flex;
+.hero-visual-float {
   width: 100%;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1.5rem;
-  border: 1px solid rgba(8, 145, 178, 0.35);
-  background: rgba(255, 255, 255, 0.82);
-  padding: 1rem 1rem 0.75rem;
-  box-shadow:
-    0 24px 64px rgba(15, 23, 42, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
+  max-width: 420px;
+  animation: hero-drift 7s ease-in-out infinite;
+  mask-image: radial-gradient(ellipse 72% 72% at 50% 50%, #000 42%, transparent 100%);
 }
 
-.hero-visual-svg-root {
+.hero-visual-svg {
   display: block;
   width: 100%;
-  max-width: 400px;
   height: auto;
+  overflow: visible;
 }
 
-.hero-visual-caption {
-  margin-top: 0.75rem;
-  text-align: center;
+.hero-visual-label {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
-  color: #475569;
+  fill: #5c6b7e;
 }
 
-[data-theme="dark"] .hero-visual-panel {
-  border-color: rgba(34, 211, 238, 0.35);
-  background: rgba(10, 14, 26, 0.88);
-  box-shadow:
-    0 24px 64px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+.hero-visual-core-fill {
+  fill: rgba(255, 255, 255, 0.55);
+  stroke: rgba(14, 154, 175, 0.25);
+  stroke-width: 1;
 }
 
-[data-theme="dark"] .hero-visual-caption {
-  color: #94a3b8;
+.hero-visual-core-text {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  fill: url(#heroArc);
+}
+
+@keyframes hero-drift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+[data-theme="dark"] .hero-visual-core-fill {
+  fill: rgba(10, 14, 26, 0.72);
+  stroke: rgba(34, 211, 238, 0.35);
+}
+
+[data-theme="dark"] .hero-visual-label {
+  fill: #8b9cb3;
+}
+
+[data-theme="light"] .hero-visual-label {
+  fill: #4b5c70;
 }
 
 /* ===== 10. Dot pattern ===== */
@@ -906,7 +915,7 @@ a:hover > .logo-mark {
 
 @media (prefers-reduced-motion: reduce) {
   .text-gradient, .aurora, .fade-up, .cursor-blink, .animate-pulse-slow, .float-slow,
-  .marquee-track, .glitch::before, .glitch::after, .reveal,
+  .marquee-track, .glitch::before, .glitch::after, .reveal, .hero-visual-float,
   .fade-up {
     opacity: 1;
   }
