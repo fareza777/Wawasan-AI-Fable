@@ -1,5 +1,6 @@
 import { WeeklyTrendingRepo } from "./trendshift";
 import { Review } from "./types";
+import { getWeeklyTopEntry } from "@/data/weeklyTop";
 
 const TOPIC_ID: Record<string, string> = {
   "AI agent": "Agen AI",
@@ -124,9 +125,17 @@ export function getIndonesianDescription(repo: WeeklyTrendingRepo, review?: Revi
 }
 
 export function getWeeklyHighlights(repo: WeeklyTrendingRepo, review?: Review): string[] {
+  // 1. PRIORITAS TERTINGGI: hand-curated narasi dari weeklyTop.ts
+  const curated = getWeeklyTopEntry(repo.fullName);
+  if (curated) {
+    return curated.highlights.slice(0, 6);
+  }
+
+  // 2. Kalau repo sudah punya review mendalam
   if (review?.highlights?.length) return review.highlights.slice(0, 8);
   if (review?.pros?.length) return review.pros.slice(0, 6);
 
+  // 3. Fallback: auto-generate dari topics + description (kode lama)
   const items: string[] = [];
 
   for (const topic of repo.topics) {
