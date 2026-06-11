@@ -1,0 +1,16 @@
+---
+description: Otomatis commit, push, dan deploy setelah setiap revisi kode
+alwaysApply: true
+---
+
+# Auto push & deploy
+
+Setelah selesai mengubah kode di repo ini:
+
+1. **Commit** perubahan dengan pesan singkat yang menjelaskan *why*.
+2. **Push** ke `origin main` — jangan tunggu user meminta push.
+3. **Deploy production** dengan `npx vercel --prod --yes` setelah push berhasil (integrasi Git→Vercel tidak selalu trigger otomatis di project ini).
+
+Jangan push file sensitif (`.env`, kredensial). Jangan force-push ke `main`.
+
+Jika tidak ada perubahan untuk di-commit, skip commit/push/deploy.
