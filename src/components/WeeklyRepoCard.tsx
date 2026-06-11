@@ -77,7 +77,7 @@ export default function WeeklyRepoCard({
           )}
 
           <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-neon-400">
-            {open ? "Tutup highlight" : "Lihat fitur & fungsi"}
+            {open ? "Tutup detail" : "Lihat fungsi & kegunaan"}
             <svg
               width="14"
               height="14"
@@ -95,7 +95,7 @@ export default function WeeklyRepoCard({
 
       {open && (
         <div className="border-t border-ink-700/60 px-5 pb-5 sm:px-6 sm:pb-6">
-          <h3 className="text-sm font-bold text-slate-200">Fitur & fungsi utama</h3>
+          <h3 className="text-sm font-bold text-slate-200">Fungsi & kegunaan</h3>
           <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-300">
             {highlights.map((h) => (
               <li key={h} className="flex gap-2.5">

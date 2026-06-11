@@ -17,7 +17,7 @@ const SLUG_ICONS: Record<string, string> = {
   // Stack
   "claude-code": "https://cdn.simpleicons.org/anthropic",
   cursor: "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-  codex: "https://cdn.simpleicons.org/openai",
+  codex: "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
   windsurf: "https://www.google.com/s2/favicons?domain=windsurf.com&sz=128",
   cline: "https://github.com/cline.png",
   "gemini-cli": "https://cdn.simpleicons.org/google",
