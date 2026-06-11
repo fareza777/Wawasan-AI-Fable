@@ -1,127 +1,160 @@
-/** Hero kanan — Neural Orbit (SVG + SMIL, tanpa konflik transform CSS). */
+/** Hero kanan — Neural Orbit (SVG, warna inline agar selalu terlihat). */
 const NODES = [
-  { label: "repo", color: "#06b6d4", angle: 0, dur: 22 },
-  { label: "model", color: "#8b5cf6", angle: 60, dur: 18 },
-  { label: "stack", color: "#10b981", angle: 120, dur: 26 },
-  { label: "agent", color: "#ec4899", angle: 180, dur: 20 },
-  { label: "RAG", color: "#f59e0b", angle: 240, dur: 30 },
-  { label: "MCP", color: "#3b82f6", angle: 300, dur: 24 },
+  { label: "repo", color: "#0891b2", angle: 0, dur: 22 },
+  { label: "model", color: "#7c3aed", angle: 60, dur: 18 },
+  { label: "stack", color: "#059669", angle: 120, dur: 26 },
+  { label: "agent", color: "#db2777", angle: 180, dur: 20 },
+  { label: "RAG", color: "#d97706", angle: 240, dur: 30 },
+  { label: "MCP", color: "#2563eb", angle: 300, dur: 24 },
 ] as const;
+
+const CX = 200;
+const CY = 200;
+const ORBIT_R = 148;
 
 export default function HeroFuturisticVisual() {
   return (
-    <div className="hero-visual" aria-hidden>
+    <div className="hero-visual-panel">
       <svg
         className="hero-visual-svg-root"
         viewBox="0 0 400 400"
+        width={400}
+        height={400}
         role="img"
         aria-label="Neural orbit AI navigation"
       >
         <defs>
           <radialGradient id="heroCoreGrad" cx="35%" cy="30%" r="70%">
             <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="100%" stopColor="#dce4ee" />
+            <stop offset="100%" stopColor="#dbeafe" />
           </radialGradient>
           <linearGradient id="heroStrokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#06b6d4" />
-            <stop offset="100%" stopColor="#8b5cf6" />
+            <stop offset="0%" stopColor="#0891b2" />
+            <stop offset="100%" stopColor="#7c3aed" />
           </linearGradient>
-          <filter id="heroGlow" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
         </defs>
 
-        {/* Glow */}
-        <circle cx="200" cy="200" r="130" fill="none" className="hero-visual-ambient" />
+        <circle cx={CX} cy={CY} r={128} fill="rgba(8,145,178,0.12)" />
 
-        {/* Rotating rings */}
         <g>
           <animateTransform
             attributeName="transform"
             type="rotate"
-            from="0 200 200"
-            to="360 200 200"
+            from={`0 ${CX} ${CY}`}
+            to={`360 ${CX} ${CY}`}
             dur="48s"
             repeatCount="indefinite"
           />
-          <circle cx="200" cy="200" r="196" fill="none" className="hero-visual-ring-stroke" strokeWidth="1.5" />
+          <circle
+            cx={CX}
+            cy={CY}
+            r={196}
+            fill="none"
+            stroke="url(#heroStrokeGrad)"
+            strokeWidth={2}
+            opacity={0.7}
+          />
         </g>
+
         <g>
           <animateTransform
             attributeName="transform"
             type="rotate"
-            from="360 200 200"
-            to="0 200 200"
+            from={`360 ${CX} ${CY}`}
+            to={`0 ${CX} ${CY}`}
             dur="32s"
             repeatCount="indefinite"
           />
-          <circle cx="200" cy="200" r="142" fill="none" className="hero-visual-ring-stroke hero-visual-ring-mid" strokeWidth="1.25" />
+          <circle
+            cx={CX}
+            cy={CY}
+            r={142}
+            fill="none"
+            stroke="#7c3aed"
+            strokeWidth={1.5}
+            opacity={0.55}
+          />
         </g>
+
         <g>
           <animateTransform
             attributeName="transform"
             type="rotate"
-            from="0 200 200"
-            to="360 200 200"
+            from={`0 ${CX} ${CY}`}
+            to={`360 ${CX} ${CY}`}
             dur="20s"
             repeatCount="indefinite"
           />
           <circle
-            cx="200"
-            cy="200"
-            r="88"
+            cx={CX}
+            cy={CY}
+            r={88}
             fill="none"
-            className="hero-visual-ring-stroke hero-visual-ring-inner"
-            strokeWidth="1"
-            strokeDasharray="5 9"
+            stroke="#0891b2"
+            strokeWidth={1.25}
+            strokeDasharray="6 10"
+            opacity={0.65}
           />
         </g>
 
-        {/* Static guide circles */}
-        <circle cx="200" cy="200" r="148" className="hero-visual-guide" />
-        <circle cx="200" cy="200" r="52" className="hero-visual-guide hero-visual-guide-inner" />
+        <circle
+          cx={CX}
+          cy={CY}
+          r={ORBIT_R}
+          fill="none"
+          stroke="url(#heroStrokeGrad)"
+          strokeWidth={1}
+          opacity={0.35}
+        />
 
-        {/* Orbiting nodes */}
         {NODES.map((n) => (
           <g key={n.label}>
             <animateTransform
               attributeName="transform"
               type="rotate"
-              from={`${n.angle} 200 200`}
-              to={`${n.angle + 360} 200 200`}
+              from={`${n.angle} ${CX} ${CY}`}
+              to={`${n.angle + 360} ${CX} ${CY}`}
               dur={`${n.dur}s`}
               repeatCount="indefinite"
             />
-            <g filter="url(#heroGlow)">
-              <circle cx="348" cy="200" r="9" fill={n.color} className="hero-visual-node-dot" />
-            </g>
-            <text x="348" y="182" className="hero-visual-node-text" textAnchor="middle">
-              {n.label}
+            <circle cx={CX + ORBIT_R} cy={CY} r={10} fill={n.color} />
+            <circle cx={CX + ORBIT_R} cy={CY} r={14} fill="none" stroke={n.color} strokeWidth={1} opacity={0.45} />
+            <text
+              x={CX + ORBIT_R}
+              y={CY - 18}
+              textAnchor="middle"
+              fill="#334155"
+              fontFamily="var(--font-mono)"
+              fontSize={11}
+              fontWeight={700}
+              letterSpacing="0.1em"
+            >
+              {n.label.toUpperCase()}
             </text>
           </g>
         ))}
 
-        {/* Core */}
-        <circle cx="200" cy="200" r="44" className="hero-visual-core-circle" fill="url(#heroCoreGrad)" />
-        <text x="200" y="210" className="hero-visual-core-label" textAnchor="middle">
+        <circle
+          cx={CX}
+          cy={CY}
+          r={46}
+          fill="url(#heroCoreGrad)"
+          stroke="#0891b2"
+          strokeWidth={2}
+        />
+        <text
+          x={CX}
+          y={CY + 9}
+          textAnchor="middle"
+          fill="url(#heroStrokeGrad)"
+          fontFamily="var(--font-display)"
+          fontSize={28}
+          fontWeight={800}
+        >
           AI
         </text>
-
-        {/* Scan line */}
-        <rect x="72" y="72" width="256" height="256" rx="128" className="hero-visual-scan-mask" />
-        <g className="hero-visual-scan-line">
-          <line x1="72" y1="200" x2="328" y2="200" className="hero-visual-scan-stroke" />
-          <animateTransform
-            attributeName="transform"
-            type="translate"
-            values="0 -128; 0 128; 0 -128"
-            dur="5s"
-            repeatCount="indefinite"
-          />
-        </g>
       </svg>
-      <p className="hero-visual-caption">Neural navigation · live</
+      <p className="hero-visual-caption">Neural navigation · live</p>
+    </div>
+  );
+}
