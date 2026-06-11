@@ -10,7 +10,7 @@ export default function HeroFuturisticVisual() {
   ];
 
   return (
-    <div className="hero-visual fade-up delay-3 float-slow hidden lg:block" aria-hidden>
+    <div className="hero-visual float-slow hidden w-full md:block" aria-hidden>
       <div className="hero-visual-stage">
         <div className="hero-visual-glow" />
         <div className="hero-visual-ring hero-visual-ring-outer" />
@@ -28,17 +28,23 @@ export default function HeroFuturisticVisual() {
               animationDirection: n.reverse ? "reverse" : "normal",
             }}
           >
-            <span
+            <div
               className="hero-visual-node"
               style={{
                 backgroundColor: n.color,
                 boxShadow: `0 0 18px ${n.color}88`,
-                animationDuration: `${n.duration}s`,
-                animationDirection: n.reverse ? "normal" : "reverse",
               }}
             >
-              <span className="hero-visual-node-label">{n.label}</span>
-            </span>
+              <span
+                className="hero-visual-node-label"
+                style={{
+                  animationDuration: `${n.duration}s`,
+                  animationDirection: n.reverse ? "normal" : "reverse",
+                }}
+              >
+                {n.label}
+              </span>
+            </div>
           </div>
         ))}
         <svg className="hero-visual-svg" viewBox="0 0 400 400" fill="none">

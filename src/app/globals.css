@@ -715,6 +715,11 @@ h1, h2, h3, .font-display {
 }
 
 /* ===== Hero futuristic visual (CSS only — Neural Orbit) ===== */
+.hero-visual {
+  min-height: min(400px, 70vw);
+  opacity: 1;
+}
+
 .hero-visual-stage {
   position: relative;
   width: min(400px, 100%);
@@ -732,10 +737,13 @@ h1, h2, h3, .font-display {
 
 .hero-visual-ring {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto;
   border-radius: 9999px;
-  border: 1px solid rgba(34, 211, 238, 0.2);
+  border: 1px solid rgba(34, 211, 238, 0.35);
 }
 
 .hero-visual-ring-outer {
@@ -796,19 +804,19 @@ h1, h2, h3, .font-display {
   position: absolute;
   top: 50%;
   left: 50%;
-  display: flex;
-  height: 2rem;
-  width: 2rem;
-  align-items: center;
-  justify-content: center;
+  height: 0.875rem;
+  width: 0.875rem;
+  margin-top: -0.4375rem;
+  margin-left: -0.4375rem;
   border-radius: 9999px;
-  transform: translate(-50%, -50%) translateX(min(148px, 42vw));
-  animation: hero-orbit-spin 26s linear infinite reverse;
+  transform: translateX(148px);
 }
 
 .hero-visual-node-label {
   position: absolute;
-  top: -1.25rem;
+  top: -1.35rem;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: var(--font-mono);
   font-size: 9px;
   font-weight: 600;
@@ -816,6 +824,7 @@ h1, h2, h3, .font-display {
   letter-spacing: 0.08em;
   color: #64748b;
   white-space: nowrap;
+  animation: hero-orbit-spin 26s linear infinite reverse;
 }
 
 .hero-visual-svg {
@@ -870,7 +879,19 @@ h1, h2, h3, .font-display {
 }
 
 [data-theme="light"] .hero-visual-glow {
-  background: radial-gradient(circle, rgba(13, 148, 136, 0.15), rgba(124, 106, 173, 0.06) 55%, transparent 70%);
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.22), rgba(124, 106, 173, 0.1) 55%, transparent 70%);
+}
+
+[data-theme="light"] .hero-visual-ring {
+  border-color: rgba(13, 148, 136, 0.45);
+}
+
+[data-theme="light"] .hero-visual-ring-mid {
+  border-color: rgba(124, 106, 173, 0.4);
+}
+
+[data-theme="light"] .hero-visual-node-label {
+  color: #475569;
 }
 
 /* ===== 10. Dot pattern ===== */
@@ -993,7 +1014,7 @@ a:hover > .logo-mark {
   .text-gradient, .aurora, .fade-up, .cursor-blink, .animate-pulse-slow, .float-slow,
   .marquee-track, .glitch::before, .glitch::after, .reveal,
   .hero-visual-orbit, .hero-visual-ring, .hero-visual-glow, .hero-visual-scan::after,
-  .hero-visual-node {
+  .hero-visual-node-label {
     animation: none;
   }
   .fade-up {

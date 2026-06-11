@@ -63,7 +63,7 @@ export default function Home() {
         <div className="aurora -top-24 left-[15%] h-80 w-80 bg-neon-500" />
         <div className="aurora -top-10 right-[10%] h-72 w-72 bg-violet-glow" style={{ animationDelay: "-7s" }} />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-12 sm:px-6 sm:pt-20 lg:grid-cols-2">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-12 sm:px-6 sm:pt-20 md:grid-cols-2">
           <div>
             <p className="fade-up inline-flex items-center gap-2 rounded-full border border-ink-600 bg-ink-800/70 px-4 py-1.5 text-xs font-medium text-slate-300">
               <span className="h-2 w-2 animate-pulse-slow rounded-full bg-emerald-400" />
