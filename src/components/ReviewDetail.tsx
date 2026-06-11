@@ -67,6 +67,26 @@ export default function ReviewDetail({
             {review.summary}
           </p>
 
+          {review.highlights && review.highlights.length > 0 && (
+            <section
+              id="fitur-highlight"
+              className="panel-white fade-up delay-2 mt-8 scroll-mt-24 rounded-2xl border border-neon-500/20 p-6 sm:p-8"
+            >
+              <h2 className="text-xl font-bold text-slate-100">Fitur Highlight</h2>
+              <p className="mt-2 text-sm text-slate-400">
+                Ringkasan kemampuan utama dari dokumentasi dan README resmi proyek.
+              </p>
+              <ul className="mt-5 space-y-2.5 text-sm leading-relaxed text-slate-300">
+                {review.highlights.map((h) => (
+                  <li key={h} className="flex gap-2.5">
+                    <span className="mt-0.5 shrink-0 text-neon-400">•</span>
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           <ScoreFeedback slug={review.slug} />
 
           <section id="skor-rinci" className="panel-white fade-up delay-3 mt-10 scroll-mt-24 rounded-2xl border p-6 sm:p-8">

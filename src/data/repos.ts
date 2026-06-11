@@ -16,6 +16,16 @@ export const repos: Review[] = [
     ],
     summary:
       "OpenClaw adalah salah satu proyek open-source paling viral di dunia AI agent: asisten personal yang berjalan di mesinmu sendiri dan bisa diajak ngobrol lewat WhatsApp, Telegram, hingga Discord. Bukan sekadar chatbot — dia bisa mengeksekusi tugas, mengelola file, menjalankan skrip, dan punya memori jangka panjang.",
+    highlights: [
+      "Gateway lokal sebagai control plane tunggal untuk sesi, kanal chat, tools, dan event",
+      "Multi-channel inbox: WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, Microsoft Teams, Matrix, Feishu, LINE, WebChat, dan lainnya",
+      "Multi-agent routing — arahkan kanal/akun/peers ke agent terisolasi dengan workspace dan sesi sendiri",
+      "Voice Wake + Talk Mode di macOS/iOS/Android; Live Canvas sebagai workspace visual yang dikendalikan agent",
+      "Tools bawaan: browser, canvas, nodes, cron, sesi, serta aksi Discord/Slack",
+      "Aplikasi pendamping opsional: Windows Hub, macOS menu bar, iOS/Android nodes",
+      "Onboarding wizard (`openclaw onboard`) + ekosistem skill/plugin lewat ClawHub",
+      "Keamanan DM: pairing code default, sandbox Docker untuk sesi non-main",
+    ],
     pros: [
       "Konsep 'asisten yang benar-benar milikmu' — data dan kontrol penuh di tangan sendiri",
       "Integrasi kanal chat sehari-hari (WhatsApp, Telegram) yang terasa natural",
@@ -55,6 +65,18 @@ export const repos: Review[] = [
     ],
     summary:
       "Hermes mengambil pendekatan berbeda dari framework agent raksasa: minimalis, transparan, dan mudah dimodifikasi. Cocok untuk yang ingin memahami cara kerja agent dari dalam, bukan sekadar memakai kotak hitam.",
+    highlights: [
+      "Loop pembelajaran mandiri: skill dibuat dari pengalaman, diperbaiki saat dipakai, dan memori dipelihara antar sesi",
+      "TUI terminal penuh: multiline editing, autocomplete slash-command, riwayat percakapan, interrupt-and-redirect",
+      "Multi-kanal dari satu gateway: Telegram, Discord, Slack, WhatsApp, Signal, Email, plus CLI",
+      "40+ tools dengan sistem toolset yang bisa dikonfigurasi per kebutuhan",
+      "Sistem skill kompatibel standar agentskills.io + Skills Hub",
+      "Cron scheduler bawaan untuk otomasi terjadwal (laporan harian, backup, audit) dengan delivery ke platform mana pun",
+      "Subagent paralel dan skrip Python RPC untuk menciutkan pipeline multi-langkah",
+      "Enam backend terminal: local, Docker, SSH, Singularity, Modal, Daytona (serverless hibernasi saat idle)",
+      "Integrasi MCP untuk memperluas kemampuan agent",
+      "Migrasi dari OpenClaw: impor memori, skill, konfigurasi kanal, dan API key (`hermes claw migrate`)",
+    ],
     pros: [
       "Kode ringkas dan mudah dibaca — sangat bagus untuk belajar arsitektur agent",
       "Loop agent (reasoning → tool call → observasi) terlihat jelas, gampang di-debug",
@@ -92,6 +114,17 @@ export const repos: Review[] = [
     ],
     summary:
       "DeerFlow (Deep Exploration and Efficient Research Flow) adalah jawaban open-source untuk fitur 'Deep Research' ala produk komersial. Sistem multi-agent yang bisa merencanakan riset, mencari sumber, dan menyusun laporan lengkap — semuanya bisa di-self-host.",
+    highlights: [
+      "Super agent harness (v2): orkestrasi sub-agent, memori, sandbox, dan skill yang bisa diperluas",
+      "Skill modular (Markdown + referensi) — riset, laporan, slide, web, gambar, video; aktifkan per tugas dengan `/skill-name`",
+      "Sub-agent paralel dengan konteks terisolasi; lead agent mensintesis hasil jadi laporan, situs, atau deck",
+      "Sandbox & filesystem per tugas: baca/tulis file, eksekusi bash (Docker/container atau lokal terbatas)",
+      "Memori jangka panjang antar sesi: profil, preferensi, dan pengetahuan terakumulasi disimpan lokal",
+      "Kanal IM bawaan: Telegram, Slack, Feishu/Lark, WeChat, WeCom, DingTalk — tanpa IP publik",
+      "Integrasi MCP server + OAuth untuk memperluas tools",
+      "Observability: LangSmith dan Langfuse tracing bawaan",
+      "Setup wizard interaktif (`make setup`) + deploy Docker/production (`make up`)",
+    ],
     pros: [
       "Hasil riset terstruktur dengan kualitas mengejutkan untuk proyek open-source",
       "Arsitektur multi-agent (planner, researcher, coder, reporter) yang rapi di atas LangGraph",
@@ -131,6 +164,15 @@ export const repos: Review[] = [
     ],
     summary:
       "n8n adalah platform otomasi workflow open-source yang kini menjelma menjadi salah satu cara termudah membangun AI agent untuk kebutuhan nyata. Ratusan integrasi siap pakai, editor visual, dan node AI yang makin matang.",
+    highlights: [
+      "Editor workflow visual drag-and-drop dengan 400+ integrasi siap pakai",
+      "Platform AI-native: bangun AI agent workflow berbasis LangChain dengan data dan model sendiri",
+      "Tulis JavaScript/Python inline atau pasang paket npm saat butuh kode kustom",
+      "900+ template workflow siap pakai dari komunitas",
+      "Self-host dengan lisensi fair-code — kontrol penuh atas data dan deployment",
+      "Fitur enterprise: permission granular, SSO, dan deployment air-gapped",
+      "Node AI Agent: tool calling, memori percakapan, dan RAG dari editor visual",
+    ],
     pros: [
       "Editor visual yang membuat otomasi kompleks bisa dipahami siapa saja",
       "400+ integrasi: Google Sheets, Telegram, WhatsApp API, database, dll.",
@@ -170,6 +212,16 @@ export const repos: Review[] = [
     ],
     summary:
       "Dify menggabungkan pipeline RAG, orkestrasi agent, manajemen prompt, dan monitoring dalam satu platform self-hosted. Salah satu repo dengan pertumbuhan bintang tercepat di GitHub, dan memang pantas.",
+    highlights: [
+      "Workflow AI visual di kanvas — susun, uji, dan iterasi alur kerja kompleks",
+      "Dukungan ratusan model LLM dari puluhan provider (GPT, Llama, Mistral, OpenAI-compatible, self-hosted)",
+      "Prompt IDE: crafting prompt, perbandingan performa model, dan fitur tambahan seperti TTS",
+      "Pipeline RAG lengkap: ingestion dokumen (PDF, PPT, dll.), chunking, embedding, hingga reranking",
+      "Agent berbasis Function Calling atau ReAct dengan 50+ tools bawaan (Google Search, DALL·E, WolframAlpha, dll.)",
+      "LLMOps: log aplikasi, analitik performa, perbaikan prompt berkelanjutan dari data produksi",
+      "Backend-as-a-Service — setiap fitur punya API untuk integrasi ke sistem bisnis",
+      "Deploy cepat via Docker Compose; observability dengan Opik, Langfuse, atau Arize Phoenix",
+    ],
     pros: [
       "Satu platform untuk knowledge base, chatbot, agent, dan workflow",
       "Pipeline RAG bawaan yang solid: chunking, embedding, reranking",
@@ -208,6 +260,16 @@ export const repos: Review[] = [
     ],
     summary:
       "Satu perintah — ollama run — dan model LLM berjalan di mesinmu sendiri, tanpa internet, tanpa biaya API, tanpa data keluar. Ollama adalah gerbang utama dunia LLM lokal.",
+    highlights: [
+      "Satu perintah menjalankan model: `ollama run` dengan unduhan, kuantisasi, dan alokasi GPU/CPU otomatis",
+      "Pustaka model luas: Llama, Qwen, Gemma, DeepSeek, Mistral, dan ratusan model di ollama.com/library",
+      "REST API lokal untuk chat, generate, dan manajemen model",
+      "API kompatibel OpenAI — mudah dicolok ke Dify, n8n, Open WebUI, OpenClaw, dan tool lain",
+      "SDK resmi: ollama-python dan ollama-js",
+      "Modelfile untuk kustomisasi model (system prompt, parameter, adapter)",
+      "Integrasi launch: Claude Code, Codex, Copilot CLI, OpenClaw, OpenCode lewat `ollama launch`",
+      "Backend llama.cpp; dukungan macOS, Windows, Linux, dan Docker",
+    ],
     pros: [
       "Instalasi dan pemakaian sesederhana itu: satu perintah, model jalan",
       "Pustaka model lengkap: Llama, Qwen, Gemma, DeepSeek, Mistral, dll.",
@@ -246,6 +308,18 @@ export const repos: Review[] = [
     ],
     summary:
       "Open WebUI adalah pasangan paling natural untuk Ollama: antarmuka chat ala ChatGPT yang berjalan sepenuhnya di server sendiri. Lengkap dengan manajemen pengguna, RAG dokumen, dan dukungan multi-model — semuanya tanpa data keluar dari mesinmu.",
+    highlights: [
+      "Integrasi Ollama dan API OpenAI-compatible (LM Studio, Groq, Mistral, OpenRouter, dll.)",
+      "RAG lokal: unggah dokumen ke library atau chat, 9 pilihan vector DB, ekstraksi via Tika/Docling/OCR",
+      "Web search untuk RAG dari 15+ provider (Brave, Tavily, Perplexity, DuckDuckGo, SearXNG, dll.)",
+      "Multi-user dengan RBAC, grup pengguna, dan kontrol akses granular",
+      "Model Builder: buat model Ollama kustom, persona/agent, dan karakter dari Web UI",
+      "Python function calling tools bawaan dengan code editor di workspace tools",
+      "Voice/video call hands-free: STT (Whisper, Deepgram, Azure) dan TTS multi-provider",
+      "Generasi & edit gambar: DALL·E, Gemini, ComfyUI lokal, AUTOMATIC1111",
+      "Pipelines plugin framework untuk rate limit, monitoring Langfuse, filter toxic, dan logika kustom",
+      "Deploy Docker/Kubernetes; PWA mobile; observability OpenTelemetry",
+    ],
     pros: [
       "Pengalaman pakai setara produk komersial, padahal gratis dan self-hosted",
       "Satu perintah Docker dan langsung jalan — pasangan sempurna untuk Ollama",
@@ -284,6 +358,16 @@ export const repos: Review[] = [
     ],
     summary:
       "LangGraph memodelkan alur kerja agent sebagai graph: setiap node adalah langkah, setiap edge adalah keputusan. Pendekatan ini memberi kontrol penuh atas perilaku agent — termasuk percabangan, perulangan, dan intervensi manusia di tengah proses.",
+    highlights: [
+      "Orkestrasi agent berbasis graph: node = langkah, edge = keputusan/conditional routing",
+      "Durable execution — agent bertahan dari kegagalan dan melanjutkan dari checkpoint terakhir",
+      "Human-in-the-loop: inspeksi dan modifikasi state agent kapan saja saat eksekusi",
+      "Memori komprehensif: working memory sesi + persistent memory antar sesi",
+      "State management eksplisit dengan reducer dan subgraph untuk alur kompleks",
+      "Debugging & tracing via LangSmith: visualisasi jalur eksekusi dan transisi state",
+      "Production deployment via LangSmith Deployment untuk workflow stateful jangka panjang",
+      "Versi Python dan JavaScript (LangGraph.js); fondasi DeerFlow, Deep Agents, dan proyek enterprise",
+    ],
     pros: [
       "Kontrol alur yang eksplisit — perilaku agent bisa diprediksi dan diaudit",
       "Dukungan state, checkpoint, dan human-in-the-loop bawaan",
@@ -321,6 +405,16 @@ export const repos: Review[] = [
     ],
     summary:
       "Flowise membawa konsep visual builder ke dunia aplikasi LLM: susun node chain, agent, dan vector store di kanvas, lalu chatbot-mu langsung jadi lengkap dengan API dan widget embed. Jalan tengah antara n8n yang generalis dan koding LangChain langsung.",
+    highlights: [
+      "Chatflow builder visual: rakit chain LLM, memory, prompt, dan vector store tanpa kode",
+      "Agentflow untuk multi-agent dengan tool calling dan orkestrasi visual",
+      "Document store & vector store untuk RAG — unggah dokumen, chunk, dan retrieval",
+      "Setiap chatflow langsung dapat REST API endpoint dan widget chat yang bisa di-embed",
+      "100+ integrasi komponen LangChain (model, embedding, loader, retriever, tool)",
+      "Custom tools via function calling dan kode Python",
+      "Self-host via Docker Compose, NPM, atau cloud (AWS, GCP, Azure, Railway)",
+      "Dukungan multi-LLM: OpenAI, Anthropic, Ollama, Azure, Hugging Face, dan lainnya",
+    ],
     pros: [
       "Membangun chatbot RAG fungsional dalam hitungan jam, bukan minggu",
       "Hasil rakitan langsung dapat API dan widget chat yang bisa ditempel ke website",
@@ -358,6 +452,16 @@ export const repos: Review[] = [
     ],
     summary:
       "CrewAI menawarkan cara berpikir yang intuitif tentang multi-agent: definisikan agent dengan peran, latar belakang, dan tujuan — seperti menyusun tim kerja — lalu beri mereka daftar tugas. Mudah dipahami, cepat menghasilkan, meski hasilnya tidak selalu konsisten.",
+    highlights: [
+      "Crews: tim agent otonom dengan peran (role), goal, backstory, dan delegasi tugas dinamis",
+      "Flows: workflow event-driven untuk kontrol presisi di produksi dengan state management aman",
+      "Kombinasi Crews + Flows: otonomi agent dengan branching kondisional dan integrasi kode Python",
+      "Framework standalone — tidak bergantung LangChain; eksekusi ringan dan cepat",
+      "Tools, memory, guardrails, dan output terstruktur (Pydantic/JSON) per task",
+      "Human-in-the-loop pada eksekusi tugas untuk review sebelum lanjut",
+      "Dukungan berbagai LLM termasuk model lokal via Ollama",
+      "Paket opsional `crewai[tools]` untuk tool siap pakai (search, scraping, dll.)",
+    ],
     pros: [
       "Mental model 'tim kerja' yang langsung nyantol bahkan untuk non-engineer",
       "Dari nol sampai kru multi-agent berjalan hanya butuh puluhan baris kode",
@@ -396,6 +500,17 @@ export const repos: Review[] = [
     ],
     summary:
       "ComfyUI adalah standar de facto untuk AI image dan video generation secara lokal: setiap tahap proses — dari prompt, model, sampler, hingga upscaling — adalah node yang bisa dirangkai bebas di kanvas. Kuasa penuh bagi yang mau belajar, membingungkan bagi yang cuma mau klik 'generate'.",
+    highlights: [
+      "Antarmuka node/graph untuk merakit pipeline generasi tanpa menulis kode",
+      "Model gambar: SD1.x/2.x, SDXL, SD3, Flux, Hunyuan, Qwen Image, dan puluhan model open-source terbaru",
+      "Model video: SVD, Mochi, LTX-Video, Hunyuan Video, Wan 2.1/2.2",
+      "Model audio & 3D: Stable Audio, ACE Step, Hunyuan3D",
+      "ControlNet, T2I-Adapter, LoRA, inpainting, area composition, dan upscaler (ESRGAN, SwinIR, dll.)",
+      "Workflow tersimpan di metadata PNG/WebP/FLAC — berbagi resep cukup kirim file hasil",
+      "Eksekusi parsial: hanya re-run node yang berubah; smart offloading untuk GPU kecil (≥1 GB VRAM)",
+      "Ekosistem custom node raksasa — teknik baru biasanya hadir di ComfyUI lebih dulu",
+      "API endpoint untuk integrasi pipeline produksi; App Mode untuk UI sederhana di atas workflow kompleks",
+    ],
     pros: [
       "Kontrol granular atas seluruh pipeline generasi gambar dan video",
       "Ekosistem custom node raksasa — hampir semua teknik baru hadir di sini lebih dulu",

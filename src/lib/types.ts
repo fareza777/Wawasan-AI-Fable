@@ -11,6 +11,7 @@ export type Review = {
   score: number; // 0-10 skor keseluruhan
   scores: ScoreDetail[];
   summary: string;
+  highlights?: string[];
   pros: string[];
   cons: string[];
   verdict: string;
