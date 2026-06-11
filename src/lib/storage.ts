@@ -1,11 +1,18 @@
 // Penyimpanan sisi-klien (localStorage) untuk bookmark & profil lokal.
 // Perubahan disiarkan lewat custom event agar semua komponen ikut ter-update.
 
-export type ContentType = "repo" | "model" | "stack" | "berita";
+export type ContentType = "repo" | "model" | "stack" | "berita" | "weekly";
+
+export type BookmarkMeta = {
+  title?: string;
+  href?: string;
+  githubUrl?: string;
+};
 
 export type BookmarkItem = {
   type: ContentType;
   slug: string;
+  meta?: BookmarkMeta;
 };
 
 export type Profile = {
@@ -21,6 +28,14 @@ function emit() {
   window.dispatchEvent(new Event(STORAGE_EVENT));
 }
 
+export function weeklySlug(fullName: string): string {
+  return encodeURIComponent(fullName);
+}
+
+export function weeklyFullName(slug: string): string {
+  return decodeURIComponent(slug);
+}
+
 export function getBookmarks(): BookmarkItem[] {
   if (typeof window === "undefined") return [];
   try {
@@ -34,13 +49,17 @@ export function isBookmarked(type: ContentType, slug: string): boolean {
   return getBookmarks().some((b) => b.type === type && b.slug === slug);
 }
 
-export function toggleBookmark(type: ContentType, slug: string): boolean {
+export function toggleBookmark(
+  type: ContentType,
+  slug: string,
+  meta?: BookmarkMeta,
+): boolean {
   const items = getBookmarks();
   const idx = items.findIndex((b) => b.type === type && b.slug === slug);
   if (idx >= 0) {
     items.splice(idx, 1);
   } else {
-    items.push({ type, slug });
+    items.push({ type, slug, meta });
   }
   localStorage.setItem(BOOKMARK_KEY, JSON.stringify(items));
   emit();
@@ -60,7 +79,7 @@ export function getProfile(): Profile | null {
 export function saveProfile(name: string) {
   localStorage.setItem(
     PROFILE_KEY,
-    JSON.stringify({ name: name.trim(), joinedAt: new Date().toISOString() })
+    JSON.stringify({ name: name.trim(), joinedAt: new Date().toISOString() }),
   );
   emit();
 }

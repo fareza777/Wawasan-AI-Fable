@@ -15,6 +15,7 @@ import {
 } from "@/lib/storage";
 import ReviewCard from "@/components/ReviewCard";
 import ArtikelCard from "@/components/ArtikelCard";
+import WeeklyKoleksiCard from "@/components/WeeklyKoleksiCard";
 import ListHeader from "@/components/ListHeader";
 
 const popular = [
@@ -53,6 +54,7 @@ export default function KoleksiClient() {
   const savedBerita = berita.filter((b) =>
     items.some((i) => i.type === "berita" && i.slug === b.slug)
   );
+  const savedWeekly = items.filter((i) => i.type === "weekly");
 
   const total = items.length;
 
@@ -95,6 +97,17 @@ export default function KoleksiClient() {
             Jelajahi Semua Review →
           </Link>
         </div>
+      )}
+
+      {savedWeekly.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl font-bold text-slate-100">Top Weekly Repo</h2>
+          <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {savedWeekly.map((item) => (
+              <WeeklyKoleksiCard key={item.slug} item={item} />
+            ))}
+          </div>
+        </section>
       )}
 
       {savedRepos.length > 0 && (

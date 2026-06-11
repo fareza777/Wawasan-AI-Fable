@@ -5,6 +5,7 @@ import Link from "next/link";
 import { WeeklyTrendingRepo } from "@/lib/trendshift";
 import { Tag } from "./Score";
 import { translateTopic } from "@/lib/weeklyId";
+import WeeklyBookmarkButton from "./WeeklyBookmarkButton";
 
 export default function WeeklyRepoCard({
   repo,
@@ -31,10 +32,13 @@ export default function WeeklyRepoCard({
         isTop ? "rank-one border-neon-500/30" : "border-ink-700"
       }`}
     >
+      <div className="flex items-start justify-end px-5 pt-4 sm:px-6 sm:pt-5">
+        <WeeklyBookmarkButton fullName={repo.fullName} githubUrl={repo.githubUrl} />
+      </div>
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full flex-col gap-4 p-5 text-left sm:flex-row sm:items-start sm:gap-5 sm:p-6"
+        className="-mt-2 flex w-full flex-col gap-4 px-5 pb-5 text-left sm:flex-row sm:items-start sm:gap-5 sm:px-6 sm:pb-6"
         aria-expanded={open}
       >
         <div

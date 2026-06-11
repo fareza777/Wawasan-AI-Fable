@@ -28,6 +28,12 @@ export const rubrikStyle: Record<
     label: "Artikel",
     gradient: "from-amber-500/20 to-amber-500/5",
   },
+  weekly: {
+    accent: "text-neon-400",
+    border: "border-neon-500/30",
+    label: "Weekly",
+    gradient: "from-neon-500/20 to-violet-glow/5",
+  },
 };
 
 export function slugifyTag(tag: string) {

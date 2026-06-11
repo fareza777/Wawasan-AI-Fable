@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import {
+  BookmarkMeta,
   ContentType,
   isBookmarked,
   toggleBookmark,
@@ -12,10 +13,12 @@ export default function BookmarkButton({
   type,
   slug,
   size = "md",
+  meta,
 }: {
   type: ContentType;
   slug: string;
   size?: "md" | "lg";
+  meta?: BookmarkMeta;
 }) {
   const [saved, setSaved] = useState(false);
 
@@ -33,7 +36,7 @@ export default function BookmarkButton({
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
-        toggleBookmark(type, slug);
+        toggleBookmark(type, slug, meta);
       }}
       aria-label={saved ? "Hapus dari koleksi" : "Simpan ke koleksi"}
       title={saved ? "Hapus dari koleksi" : "Simpan ke koleksi"}

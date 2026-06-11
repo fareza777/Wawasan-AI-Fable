@@ -13,7 +13,7 @@ export default function BandingkanPage() {
       <ListHeader
         kicker="// perbandingan"
         title="Bandingkan Model LLM"
-        description="Pilih dua model dan bandingkan skor rinci dari penalaran, coding, kecepatan, hingga harga/performa."
+        description="Pilih dua model dan bandingkan skor, biaya API/langganan, serta modalitas teks, gambar, video, dan audio."
       />
       <div className="mt-12">
         <ModelCompare />
