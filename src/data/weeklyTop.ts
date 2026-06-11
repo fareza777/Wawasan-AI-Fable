@@ -1,16 +1,21 @@
 // src/data/weeklyTop.ts
-// Hand-curated narasi "Fungsi & kegunaan" untuk Top Weekly Repo.
+// Hand-curated narasi "Fungsi & kegunaan" + deskripsi singkat untuk Top Weekly Repo.
 // Sumber repo otomatis dari Trendshift API; deskripsi & highlights di sini ditulis manual
 // dengan nada editorial Wawasan AI — bukan generic template.
 // Update rutin: tiap minggu cek repo baru, tulis narasi yang menjelaskan
 // fungsi & kegunaan yang benar (bukan terjemahan mentah dari deskripsi GitHub).
 
 export type WeeklyTopEntry = {
+  /** Narasi pendek 1-2 kalimat yang muncul di kartu list. Bahasa Indonesia, tone Wawasan AI. */
+  description: string;
+  /** Bullet "Fungsi & kegunaan" yang muncul saat user klik expand. */
   highlights: string[];
 };
 
 export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
   "mvanhorn/last30days-skill": {
+    description:
+      "Skill agen AI yang riset topik apapun dengan menyatukan sumber Reddit, X, YouTube, Hacker News, Polymarket, dan web jadi satu ringkasan yang ditautkan ke aslinya.",
     highlights: [
       "Riset topik apapun dengan menggabungkan sumber dari Reddit, X (Twitter), YouTube, Hacker News, Polymarket, dan web umum sekaligus.",
       "Menghasilkan ringkasan yang 'ter-grounded' — setiap klaim ditautkan ke sumber aslinya, bukan halusinasi model.",
@@ -19,6 +24,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "addyosmani/agent-skills": {
+    description:
+      "Kumpulan skill engineering kelas produksi dari Addy Osmani (Chrome Lead di Google) untuk dipasang ke Claude Code, Cursor, atau agen coding AI lain.",
     highlights: [
       "Kumpulan skill engineering kelas produksi untuk agen coding AI — best practice yang biasa dipakai engineer senior, dikurasi jadi prompt siap pakai.",
       "Dikelola oleh Addy Osmani (Engineering Lead Chrome di Google) — bobot otoritasnya tinggi untuk standar kualitas.",
@@ -27,6 +34,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "apple/container": {
+    description:
+      "Tool resmi Apple untuk menjalankan container Linux di Mac dengan Swift, dioptimasi untuk Apple Silicon — bukan wrapper Docker.",
     highlights: [
       "Tool resmi Apple untuk menjalankan container Linux di Mac, dibangun pakai Swift dan dioptimasi untuk Apple Silicon.",
       "Bedanya dari Docker Desktop: pakai lightweight virtual machine per container, bukan emulasi x86 — start cepat, native performance.",
@@ -35,22 +44,28 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "phuryn/pm-skills": {
+    description:
+      "Marketplace 100+ skill agentic khusus product management — dari ideation sampai strategi, eksekusi, peluncuran, dan growth.",
     highlights: [
       "Marketplace berisi 100+ skill agentic khusus product management — dari penemuan ide sampai strategi, eksekusi, peluncuran, dan growth.",
       "Setiap skill dirancang untuk dipasang ke agen AI (Claude, Cursor, dll) yang membantu pekerjaan PM: menulis PRD, prioritization, planning sprint, dll.",
       "Alternatif dari 'PM prompt pack' di ChatGPT — versi yang lebih terstruktur dan bisa dikustomisasi per workflow tim PM.",
-      "Berguna untuk founder, PM, dan siapa saja yang perlu助手 AI khusus product management.",
+      "Berguna untuk founder, PM, dan siapa saja yang perlu asisten AI khusus product management.",
     ],
   },
   "XiaomiMiMo/MiMo-Code": {
+    description:
+      "Model AI kecil dari Xiaomi (MiMo) yang dirancang khusus untuk coding dan tool-use agentik — performa setara frontier dengan biaya inference rendah.",
     highlights: [
       "Model AI kecil dari Xiaomi (MiMo = Mini Language Model) yang dirancang khusus untuk tugas coding dan tool-use agentik.",
       "Pendekatan Xiaomi berbeda dari model frontier besar: ukuran lebih kecil, biaya inference rendah, tapi performa setara untuk task coding tertentu.",
       "Model terbuka (open weights) — bisa dijalankan lokal atau di-host sendiri untuk menjaga privasi kode.",
-      "Berguna untuk developer yang ingin降低成本 API coding agent tanpa mengorbankan kualitas pada task-task umum.",
+      "Berguna untuk developer yang ingin menurunkan biaya API coding agent tanpa mengorbankan kualitas pada task-task umum.",
     ],
   },
   "RyanCodrai/turbovec": {
+    description:
+      "Vector index berbasis TurboQuant, ditulis Rust dengan Python bindings — alternatif ringan dan cepat untuk FAISS, Qdrant, atau Pinecone.",
     highlights: [
       "Vector database / index yang dibangun di atas TurboQuant, ditulis dalam Rust dengan Python bindings — fokus pada kecepatan dan efisiensi memori.",
       "Dirancang untuk workload RAG (Retrieval-Augmented Generation): pencarian nearest-neighbor cepat untuk embedding model AI.",
@@ -59,6 +74,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "mattpocock/skills": {
+    description:
+      "Kumpulan skill engineering TypeScript/AI dari direktori .claude Matt Pocock — teruji harian untuk coding agent, bukan teori.",
     highlights: [
       "Kumpulan skill yang diambil langsung dari direktori .claude Matt Pocock — engineer TypeScript/AI yang dikenal di komunitas.",
       "Skill engineering praktis yang sudah teruji harian oleh Matt sendiri untuk coding agent-nya — bukan teori, melainkan hasil pemakaian nyata.",
@@ -67,6 +84,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "chopratejas/headroom": {
+    description:
+      "Kompresor output tool, log, dan chunk RAG sebelum sampai ke LLM — hemat 60-95% token dengan jawaban tetap sama.",
     highlights: [
       "Memampatkan output tool, log, file, dan chunk RAG sebelum sampai ke LLM — klaim penghematan 60-95% token dengan jawaban tetap sama.",
       "Bekerja sebagai library Python, proxy, atau MCP server — fleksibel dipasang di titik mana pun dalam alur AI.",
@@ -75,6 +94,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "msitarzewski/agency-agents": {
+    description:
+      "Koleksi 100+ persona agen AI siap pakai dengan karakter dan deliverable spesifik — frontend wizard, reality checker, dan lain-lain.",
     highlights: [
       "Kumpulan 'persona' agen AI siap pakai yang masing-masing punya karakter, proses, dan deliverable spesifik — frontend wizard, Reddit community ninja, whimsy injector, reality checker, dll.",
       "Konsep 'AI agency in a box': setiap agen bisa diperlakukan sebagai anggota tim virtual dengan keahlian jelas.",
@@ -83,6 +104,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "Leonxlnx/taste-skill": {
+    description:
+      "Skill prompt engineering untuk menyaring output AI yang generik dan steril — bikin hasil AI punya karakter dan tidak terasa template.",
     highlights: [
       "Skill untuk agen AI yang berfungsi sebagai 'penyaring rasa' — mencegah AI menghasilkan output yang membosankan dan generik.",
       "Masalah yang diselesaikan: output AI sering terlalu 'aman' dan steril; taste-skill menambahkan filter untuk membuat output lebih hidup, punya karakter, dan tidak terasa seperti template.",
