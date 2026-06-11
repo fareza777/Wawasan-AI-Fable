@@ -47,7 +47,7 @@ export default function ModelCompare() {
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
         {[modelA, modelB].map((m) => (
-          <div key={m.slug} className="rounded-2xl border border-ink-600 bg-ink-900/60 p-6">
+          <div key={m.slug} className="panel-white rounded-2xl border p-6">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-bold text-slate-100">{m.name}</h3>
               <span className={`font-mono text-2xl font-bold ${scoreColor(m.score)}`}>{m.score.toFixed(1)}</span>

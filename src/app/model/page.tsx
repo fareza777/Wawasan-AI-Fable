@@ -24,14 +24,14 @@ export default function ModelPage() {
       <div className="mt-6 text-center">
         <Link
           href="/bandingkan"
-          className="inline-flex items-center gap-2 rounded-xl border border-violet-500/30 bg-violet-500/10 px-5 py-2.5 text-sm font-semibold text-violet-300 hover:border-violet-400/50"
+          className="panel-white inline-flex items-center gap-2 rounded-xl border border-violet-500/30 px-5 py-2.5 text-sm font-semibold text-violet-300 hover:border-violet-400/50"
         >
           Bandingkan 2 model side-by-side →
         </Link>
       </div>
 
-      <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-ink-700">
-        <div className="hidden grid-cols-[3rem_1fr_8rem_5rem] gap-4 border-b border-ink-700 bg-ink-800/80 px-5 py-3 font-mono text-xs uppercase tracking-wider text-slate-400 sm:grid">
+      <div className="panel-white mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-ink-700">
+        <div className="hidden grid-cols-[3rem_1fr_8rem_5rem] gap-4 border-b border-ink-700/40 bg-ink-800/80 px-5 py-3 font-mono text-xs uppercase tracking-wider text-slate-400 sm:grid">
           <span>#</span>
           <span>Model</span>
           <span className="text-right">B. Indonesia</span>
@@ -43,7 +43,7 @@ export default function ModelPage() {
             <Link
               key={m.slug}
               href={`/model/${m.slug}`}
-              className={`grid grid-cols-[3rem_1fr_5rem] items-center gap-4 border-b border-ink-700/60 bg-ink-900/60 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 sm:grid-cols-[3rem_1fr_8rem_5rem] ${
+              className={`grid grid-cols-[3rem_1fr_5rem] items-center gap-4 border-b border-ink-700/40 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 sm:grid-cols-[3rem_1fr_8rem_5rem] ${
                 i === 0 ? "rank-one" : ""
               }`}
             >

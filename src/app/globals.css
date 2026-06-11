@@ -476,8 +476,18 @@ h1, h2, h3, .font-display {
 }
 
 [data-theme="light"] .rank-one {
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.55)) !important;
-  border-left-color: #0d9488;
+  background: #ffffff !important;
+  border-left: 3px solid #0d9488;
+}
+
+[data-theme="light"] .panel-white .bg-ink-800,
+[data-theme="light"] .panel-white .bg-ink-800\/80,
+[data-theme="light"] .panel-white .hover\:bg-ink-800\/80:hover {
+  background-color: #f1f5f4 !important;
+}
+
+[data-theme="light"] .panel-white .hover\:bg-ink-800:hover {
+  background-color: #e8ecea !important;
 }
 
 [data-theme="light"] .watermark-text {

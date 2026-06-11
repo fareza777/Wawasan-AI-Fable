@@ -11,7 +11,7 @@ export default function Footer() {
         WAWASAN AI
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="relative mb-12 flex flex-col items-center gap-5 overflow-hidden rounded-3xl border border-ink-600 bg-gradient-to-br from-ink-800/80 to-ink-900 p-8 text-center sm:p-10">
+        <div className="panel-white relative mb-12 flex flex-col items-center gap-5 overflow-hidden rounded-3xl border p-8 text-center sm:p-10">
           <div className="dot-pattern absolute inset-0" aria-hidden />
           <h3 className="relative text-xl font-extrabold text-slate-50 sm:text-2xl">
             Jangan ketinggalan review &amp; wawasan terbaru

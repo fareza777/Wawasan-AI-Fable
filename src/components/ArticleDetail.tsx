@@ -27,7 +27,7 @@ export default function ArticleDetail({ artikel }: { artikel: Artikel }) {
         ← Semua Berita & Wawasan
       </Link>
 
-      <CoverArt category={artikel.category} title={artikel.title} />
+      <CoverArt slug={artikel.slug} category={artikel.category} title={artikel.title} />
 
       <header className="mt-2">
         <div className="flex flex-wrap items-center gap-3 text-sm text-slate-300">

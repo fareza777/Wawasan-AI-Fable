@@ -8,9 +8,9 @@ export default function ArtikelCard({ artikel }: { artikel: Artikel }) {
   return (
     <Link
       href={`/berita/${artikel.slug}`}
-      className="card-glow reveal block rounded-2xl border border-amber-500/20 bg-gradient-to-br from-amber-500/10 to-ink-900/80 p-6"
+      className="card-glow reveal block rounded-2xl border border-amber-500/20 p-6"
     >
-      <CoverArt category={artikel.category} title={artikel.title} />
+      <CoverArt slug={artikel.slug} category={artikel.category} title={artikel.title} />
       <div className="flex flex-wrap items-center gap-3 text-xs text-slate-300">
         <span className={`rounded-md px-2 py-0.5 font-semibold ${getKategoriStyle(artikel.category)}`}>
           {artikel.category}

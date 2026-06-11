@@ -20,7 +20,7 @@ export default function ChangelogPage() {
       />
       <div className="mt-12 space-y-4">
         {scoreChangelog.map((entry) => (
-          <div key={`${entry.slug}-${entry.date}`} className="rounded-2xl border border-ink-600 bg-ink-900/60 p-5">
+          <div key={`${entry.slug}-${entry.date}`} className="panel-white rounded-2xl border p-5">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <Link
                 href={`/${entry.type}/${entry.slug}`}

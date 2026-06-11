@@ -154,12 +154,12 @@ export default function Home() {
       <section className="border-y border-ink-700/60 bg-ink-900/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <SectionHead nomor="02" kicker="// review model" title="Review Model LLM" href="/model" />
-          <div className="overflow-hidden rounded-2xl border border-ink-700">
+          <div className="panel-white overflow-hidden rounded-2xl border border-ink-700">
             {topModels.map((m, i) => (
               <Link
                 key={m.slug}
                 href={`/model/${m.slug}`}
-                className={`flex items-center gap-4 border-b border-ink-700/60 bg-ink-900/60 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 ${
+                className={`flex items-center gap-4 border-b border-ink-700/40 px-5 py-4 transition-colors last:border-0 hover:bg-ink-800/80 ${
                   i === 0 ? "rank-one" : ""
                 }`}
               >

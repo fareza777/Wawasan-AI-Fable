@@ -86,7 +86,7 @@ export default function TentangPage() {
       <h2 className="mt-14 text-xl font-bold text-slate-100">Nilai Editorial</h2>
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {nilai.map((n) => (
-          <div key={n.judul} className="rounded-2xl border border-ink-700 bg-ink-900/60 p-5">
+          <div key={n.judul} className="panel-white rounded-2xl border p-5">
             <h3 className="font-bold text-neon-400">{n.judul}</h3>
             <p className="mt-1.5 text-sm leading-relaxed text-slate-300">{n.desc}</p>
           </div>
@@ -99,14 +99,14 @@ export default function TentangPage() {
       </p>
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {layanan.map((l) => (
-          <div key={l.judul} className="rounded-2xl border border-ink-700 bg-ink-900/60 p-5">
+          <div key={l.judul} className="panel-white rounded-2xl border p-5">
             <h3 className="font-bold text-neon-400">{l.judul}</h3>
             <p className="mt-1.5 text-sm leading-relaxed text-slate-300">{l.desc}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-12 rounded-2xl border border-neon-500/30 bg-gradient-to-br from-ink-800 to-ink-900 p-8 text-center">
+      <div className="panel-white mt-12 rounded-2xl border border-neon-500/30 p-8 text-center">
         <h2 className="text-xl font-bold text-slate-50">Hubungi Wawasan AI</h2>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-slate-300">
           Punya produk yang ingin direview? Tidak setuju dengan skor kami? Atau butuh bantuan adopsi AI
