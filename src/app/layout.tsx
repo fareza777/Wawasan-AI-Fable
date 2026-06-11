@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: "%s · Wawasan AI",
   },
   description:
-    "Portal review AI berbahasa Indonesia: review repo GitHub, model LLM, stack & tools coding AI, serta berita dan wawasan AI.",
+    "Portal review AI berbahasa Indonesia: review repo GitHub, model LLM, tools coding AI, serta berita dan wawasan AI.",
   keywords: [
     "AI Indonesia",
     "review AI",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wawasan AI — Portal Review AI Indonesia",
     description:
-      "Review repo GitHub, model LLM, stack AI, dan wawasan AI dalam bahasa Indonesia.",
+      "Review repo GitHub, model LLM, tools coding AI, dan wawasan AI dalam bahasa Indonesia.",
     type: "website",
     locale: "id_ID",
     siteName: "Wawasan AI",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wawasan AI — Portal Review AI Indonesia",
     description:
-      "Review repo GitHub, skor model LLM, review stack AI, dan wawasan AI dalam bahasa Indonesia.",
+      "Review repo GitHub, skor model LLM, review tools coding AI, dan wawasan AI dalam bahasa Indonesia.",
     images: ["/opengraph-image"],
   },
   alternates: {

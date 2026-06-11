@@ -46,7 +46,7 @@ export default function OgImage() {
           <span style={{ fontSize: 48, fontWeight: 800, color: "#f1f5f9" }}>Wawasan AI</span>
         </div>
         <p style={{ fontSize: 36, color: "#94a3b8", lineHeight: 1.4, maxWidth: 900 }}>
-          Portal review AI Indonesia — repo GitHub, model LLM, stack & tools, berita & wawasan.
+          Portal review AI Indonesia — repo GitHub, model LLM, tools coding AI, berita & wawasan.
         </p>
       </div>
     ),

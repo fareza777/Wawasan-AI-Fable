@@ -15,19 +15,6 @@ const covers: Record<string, { gradient: string; elements: ReactNode }> = {
       </>
     ),
   },
-  "memilih-llm-untuk-bahasa-indonesia": {
-    gradient: "linear-gradient(120deg,#1a1a2e 0%,#16213e 60%,#b45309 100%)",
-    elements: (
-      <>
-        <text x="80" y="130" fill="#fbbf24" fontSize="72" fontWeight="800" fontFamily="system-ui,sans-serif" opacity="0.25">ID</text>
-        <rect x="200" y="40" width="200" height="100" rx="16" fill="rgba(255,255,255,0.1)" stroke="rgba(251,191,36,0.5)" />
-        <text x="220" y="75" fill="#fef3c7" fontSize="13" fontFamily="system-ui,sans-serif">Bahasa Indonesia</text>
-        <text x="220" y="100" fill="#94a3b8" fontSize="11" fontFamily="ui-monospace,monospace">Claude · GPT · Qwen</text>
-        <circle cx="450" cy="90" r="35" fill="none" stroke="#22d3ee" strokeWidth="3" />
-        <path d="M435 90 L448 103 L468 78" stroke="#22d3ee" strokeWidth="3" fill="none" />
-      </>
-    ),
-  },
   "asn-dan-ai-otomasi-birokrasi": {
     gradient: "linear-gradient(160deg,#1c1917 0%,#44403c 40%,#0d9488 100%)",
     elements: (

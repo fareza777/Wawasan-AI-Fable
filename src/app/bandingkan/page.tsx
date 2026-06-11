@@ -4,7 +4,7 @@ import ListHeader from "@/components/ListHeader";
 
 export const metadata: Metadata = {
   title: "Bandingkan Model LLM",
-  description: "Bandingkan skor model LLM side-by-side — termasuk kemampuan bahasa Indonesia.",
+  description: "Bandingkan skor model LLM side-by-side — penalaran, coding, kecepatan, dan harga.",
 };
 
 export default function BandingkanPage() {
@@ -13,7 +13,7 @@ export default function BandingkanPage() {
       <ListHeader
         kicker="// perbandingan"
         title="Bandingkan Model LLM"
-        description="Pilih dua model dan bandingkan skor rinci — termasuk kemampuan bahasa Indonesia yang tidak ada di benchmark global."
+        description="Pilih dua model dan bandingkan skor rinci dari penalaran, coding, kecepatan, hingga harga/performa."
       />
       <div className="mt-12">
         <ModelCompare />

@@ -101,7 +101,7 @@ export const repos: Review[] = [
     cons: [
       "Konsumsi token cukup besar — siapkan budget API atau model lokal yang kuat",
       "Setup awal butuh beberapa konfigurasi (API pencarian, model, dsb.)",
-      "Bahasa Indonesia perlu sedikit penyesuaian prompt untuk hasil maksimal",
+      "Butuh tuning prompt untuk tugas domain spesifik",
     ],
     verdict:
       "Kalau pekerjaanmu melibatkan riset, ringkasan kebijakan, atau penyusunan laporan — DeerFlow bisa menghemat waktu secara dramatis. Salah satu repo paling berguna yang pernah saya coba.",
@@ -262,7 +262,7 @@ export const repos: Review[] = [
     body: [
       "Setelah memasang Ollama, pertanyaan berikutnya hampir selalu sama: 'masa ngobrolnya lewat terminal terus?' Open WebUI adalah jawabannya. Proyek ini menghadirkan antarmuka chat yang rapi dan familiar — riwayat percakapan, pemilihan model, render markdown, sampai input suara — di atas model lokal yang berjalan di mesinmu sendiri. Saya memasangnya lewat Docker dan dalam lima menit sudah punya 'ChatGPT pribadi' yang bisa diakses dari HP lewat jaringan rumah.",
       "Yang membuat saya betah adalah fiturnya yang ternyata jauh melampaui sekadar tampilan chat. Ada manajemen pengguna lengkap dengan peran admin, sehingga satu instalasi bisa dipakai banyak orang. Ada fitur unggah dokumen dengan RAG bawaan, jadi model bisa menjawab berdasarkan file PDF peraturan atau SOP yang kita beri. Bahkan ada sistem 'model kustom' untuk membuat persona dengan system prompt tertentu — semacam GPTs versi lokal.",
-      "Untuk konteks Indonesia, kombinasi Ollama plus Open WebUI di satu server adalah resep yang sering saya sarankan ke instansi yang datanya tidak boleh menyentuh cloud asing. Modalnya cuma satu PC atau server dengan GPU sekadarnya, dan seluruh pegawai bisa menikmati asisten AI tanpa biaya langganan per orang — penghematan yang sangat berarti ketika anggaran dihitung dalam rupiah. Antarmukanya juga nyaman dipakai berbahasa Indonesia.",
+      "Untuk konteks Indonesia, kombinasi Ollama plus Open WebUI di satu server adalah resep yang sering saya sarankan ke instansi yang datanya tidak boleh menyentuh cloud asing. Modalnya cuma satu PC atau server dengan GPU sekadarnya, dan seluruh pegawai bisa menikmati asisten AI tanpa biaya langganan per orang — penghematan yang sangat berarti ketika anggaran dihitung dalam rupiah.",
       "Kekurangannya lebih ke sisi pengelolaan: fitur lanjutan seperti pipelines dan tools punya kurva belajar sendiri, dan ritme update yang cepat kadang mengubah letak menu yang sudah dihafal pengguna. Tapi itu harga yang wajar untuk proyek sehidup ini. Bagi saya, Open WebUI adalah bukti bahwa pengalaman AI kelas premium tidak harus berarti data kita ikut terkirim ke luar negeri.",
     ],
     link: "https://github.com/open-webui/open-webui",

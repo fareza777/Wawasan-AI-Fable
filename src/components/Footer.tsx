@@ -35,7 +35,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-slate-300">
-              Portal review AI: repo GitHub, model LLM, stack &amp; tools, dan wawasan AI.
+              Portal review AI: repo GitHub, model LLM, tools coding AI, dan wawasan AI.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-2 text-slate-300">
               <li><Link href="/repo" className="hover:text-neon-400">Review Repo GitHub</Link></li>
               <li><Link href="/model" className="hover:text-neon-400">Review Model LLM</Link></li>
-              <li><Link href="/stack" className="hover:text-neon-400">Review Stack & Tools</Link></li>
+              <li><Link href="/stack" className="hover:text-neon-400">Review Tools</Link></li>
               <li><Link href="/berita" className="hover:text-neon-400">Berita & Wawasan</Link></li>
               <li><Link href="/koleksi" className="hover:text-neon-400">Koleksi</Link></li>
               <li><Link href="/bandingkan" className="hover:text-neon-400">Bandingkan Model</Link></li>

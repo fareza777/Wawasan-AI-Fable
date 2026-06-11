@@ -25,7 +25,7 @@ export const scoreChangelog: ScoreChange[] = [
     previous: 9.3,
     current: 9.5,
     date: "2026-05-28",
-    reason: "Peningkatan tool-use dan kualitas bahasa Indonesia pada tugas panjang.",
+    reason: "Peningkatan tool-use dan stabilitas pada tugas panjang.",
   },
   {
     slug: "cursor",

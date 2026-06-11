@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Tentang Wawasan AI",
   description:
-    "Wawasan AI adalah portal review AI Indonesia — review repo GitHub, skor model LLM, ulasan stack & tools, dan berita AI dengan konteks lokal.",
+    "Wawasan AI adalah portal review AI Indonesia — review repo GitHub, skor model LLM, ulasan tools coding AI, dan berita dengan konteks lokal.",
 };
 
 const nilai = [
@@ -14,7 +14,7 @@ const nilai = [
   },
   {
     judul: "Konteks Indonesia",
-    desc: "Bahasa Indonesia, daya beli lokal, dan kebutuhan organisasi di Indonesia jadi lensa utama.",
+    desc: "Daya beli lokal, infrastruktur data, dan kebutuhan organisasi di Indonesia jadi lensa utama.",
   },
   {
     judul: "Independen & Transparan",
@@ -48,7 +48,7 @@ const layanan = [
 const rubrik = [
   { href: "/repo", label: "Review Repo GitHub", count: "11+" },
   { href: "/model", label: "Skor Model LLM", count: "11" },
-  { href: "/stack", label: "Review Stack & Tools", count: "10" },
+  { href: "/stack", label: "Review Tools", count: "10" },
   { href: "/berita", label: "Berita & Wawasan", count: "10+" },
 ];
 
@@ -63,14 +63,14 @@ export default function TentangPage() {
       <div className="prose-id mt-8">
         <p>
           Wawasan AI adalah portal review dan wawasan AI berbahasa Indonesia. Kami menguji repo
-          open-source, membandingkan model LLM, mengevaluasi stack coding AI, dan menulis analisis
+          open-source, membandingkan model LLM, mengevaluasi tools coding AI, dan menulis analisis
           dengan konteks lokal — agar organisasi dan profesional di Indonesia bisa membuat keputusan
           AI yang lebih cerdas.
         </p>
         <p>
           Konten AI berbahasa Indonesia masih didominasi terjemahan berita dan hype. Wawasan AI
           mengisi celah itu dengan review mendalam: repo mana yang layak dicoba, model mana yang
-          jago bahasa Indonesia, dan tool mana yang sepadan harganya.
+          masuk akal untuk workload-mu, dan tool mana yang sepadan harganya.
         </p>
       </div>
 

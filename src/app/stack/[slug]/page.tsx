@@ -31,7 +31,7 @@ export default async function StackDetailPage({
     <ReviewDetail
       review={review}
       backHref="/stack"
-      backLabel="Review Stack"
+      backLabel="Review Tools"
     />
   );
 }

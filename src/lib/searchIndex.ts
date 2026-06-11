@@ -38,7 +38,7 @@ export const searchIndex: SearchItem[] = [
   })),
   ...stacks.map((s) => ({
     type: "stack" as const,
-    typeLabel: "Stack",
+    typeLabel: "Tools",
     slug: s.slug,
     href: `/stack/${s.slug}`,
     title: s.name,

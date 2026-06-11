@@ -74,7 +74,7 @@ export default function Home() {
               <span className="text-gradient">Dunia AI</span>
             </h1>
             <p className="fade-up delay-2 mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-              Review repo GitHub, model LLM, stack coding AI, dan wawasan
+              Review repo GitHub, model LLM, tools coding AI, dan wawasan
               otomasi untuk profesional dan organisasi.
             </p>
             <div className="fade-up delay-3 mt-9 flex flex-wrap items-center gap-3">
@@ -149,9 +149,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Review Stack ===== */}
+      {/* ===== Review Tools ===== */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <SectionHead nomor="03" kicker="// review stack" title="Stack & Tools Coding AI" href="/stack" />
+        <SectionHead nomor="03" kicker="// review tools" title="Tools Coding AI" href="/stack" />
         <div className="grid gap-6 md:grid-cols-3">
           {featuredStacks.map((s) => (
             <ReviewCard key={s.slug} review={s} basePath="/stack" />

@@ -19,7 +19,7 @@ export const rubrikStyle: Record<
   stack: {
     accent: "text-emerald-300",
     border: "border-emerald-500/30",
-    label: "Stack",
+    label: "Tools",
     gradient: "from-emerald-500/20 to-emerald-500/5",
   },
   berita: {

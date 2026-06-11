@@ -121,7 +121,7 @@ export default function KoleksiClient() {
 
       {savedStacks.length > 0 && (
         <section className="mt-14">
-          <h2 className="text-xl font-bold text-slate-100">Stack & Tools</h2>
+          <h2 className="text-xl font-bold text-slate-100">Tools Coding AI</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {savedStacks.map((s) => (
               <ReviewCard key={s.slug} review={s} basePath="/stack" contentType="stack" />

@@ -8,7 +8,7 @@ import { scoreColor } from "@/components/Score";
 export const metadata: Metadata = {
   title: "Skor & Review Model LLM",
   description:
-    "Review model LLM versi Indonesia — termasuk evaluasi kemampuan bahasa Indonesia.",
+    "Review model LLM dari pemakaian nyata — penalaran, coding, kecepatan, dan harga.",
 };
 
 export default function ModelPage() {
@@ -18,7 +18,7 @@ export default function ModelPage() {
       <ListHeader
         kicker="// review model"
         title="Review Model LLM"
-        description="Model bahasa besar dinilai dari penalaran, coding, kecepatan, harga — dan kemampuan bahasa Indonesia."
+        description="Model bahasa besar dinilai dari penalaran, coding, kecepatan, dan rasio harga/performa."
       />
 
       <div className="mt-6 text-center">
@@ -34,11 +34,11 @@ export default function ModelPage() {
         <div className="hidden grid-cols-[3rem_1fr_8rem_5rem] gap-4 border-b border-ink-700/40 bg-ink-800/80 px-5 py-3 font-mono text-xs uppercase tracking-wider text-slate-400 sm:grid">
           <span>#</span>
           <span>Model</span>
-          <span className="text-right">B. Indonesia</span>
+          <span className="text-right">Coding</span>
           <span className="text-right">Skor</span>
         </div>
         {sorted.map((m, i) => {
-          const idScore = m.scores.find((s) => s.label === "Bahasa Indonesia")?.value;
+          const codingScore = m.scores.find((s) => s.label === "Coding")?.value;
           return (
             <Link
               key={m.slug}
@@ -55,7 +55,7 @@ export default function ModelPage() {
                 <div className="truncate text-sm text-slate-300">{m.tagline}</div>
               </div>
               <span className="hidden text-right font-mono text-slate-300 sm:block">
-                {idScore?.toFixed(1) ?? "—"}
+                {codingScore?.toFixed(1) ?? "—"}
               </span>
               <span className={`text-right font-mono text-xl font-bold ${scoreColor(m.score)}`}>
                 {m.score.toFixed(1)}
