@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="id"
       data-theme="light"
+      data-steel="2"
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
@@ -98,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={jsonLd} />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem("wawasanai:theme");if(!t)t="light";document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme="light"}})();`,
+            __html: `(function(){try{var t=localStorage.getItem("wawasanai:theme");if(!t)t="light";document.documentElement.dataset.theme=t;var s=localStorage.getItem("wawasanai:steel");if(!s)s="2";document.documentElement.dataset.steel=s}catch(e){document.documentElement.dataset.theme="light";document.documentElement.dataset.steel="2"}})();`,
           }}
         />
       </head>

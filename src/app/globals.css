@@ -303,28 +303,71 @@ h1, h2, h3, .font-display {
   --score-text-low: #a65d5d;
 }
 
+/* ----- Silver plate variants (no cross-hatch — anti-dizzy) ----- */
+.steel-v1,
+[data-theme="light"][data-steel="1"] body {
+  background-color: #bcc2ca;
+  background-image:
+    radial-gradient(ellipse 100% 55% at 50% 0%, rgba(255, 255, 255, 0.42), transparent 58%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 10px,
+      rgba(255, 255, 255, 0.045) 10px,
+      rgba(255, 255, 255, 0.045) 11px
+    ),
+    linear-gradient(180deg, #d2d6dc 0%, #b0b7c1 48%, #c6cbd2 100%);
+}
+
+.steel-v2,
+[data-theme="light"]:not([data-steel]) body,
+[data-theme="light"][data-steel="2"] body {
+  background-color: #b8bec7;
+  background-image:
+    radial-gradient(ellipse 90% 55% at 50% 8%, rgba(255, 255, 255, 0.58), transparent 62%),
+    radial-gradient(ellipse 70% 45% at 50% 100%, rgba(0, 0, 0, 0.09), transparent 55%),
+    linear-gradient(168deg, #e0e4ea 0%, #aab1bb 42%, #cdd2d9 72%, #a3aab4 100%);
+}
+
+.steel-v3,
+[data-theme="light"][data-steel="3"] body {
+  background-color: #c4c8cf;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 28% 18%, rgba(255, 255, 255, 0.38), transparent 52%),
+    linear-gradient(180deg, #d6d9df 0%, #c0c5cc 55%, #b4b9c0 100%);
+}
+
+.steel-v4,
+[data-theme="light"][data-steel="4"] body {
+  background-color: #b6bcc5;
+  background-image:
+    radial-gradient(ellipse 85% 50% at 50% 0%, rgba(255, 255, 255, 0.35), transparent 60%),
+    repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 28px,
+      rgba(255, 255, 255, 0.035) 28px,
+      rgba(255, 255, 255, 0.035) 29px,
+      transparent 29px,
+      transparent 56px,
+      rgba(0, 0, 0, 0.025) 56px,
+      rgba(0, 0, 0, 0.025) 57px
+    ),
+    linear-gradient(160deg, #d0d4da 0%, #a8afb9 50%, #c2c7ce 100%);
+}
+
+.steel-v5,
+[data-theme="light"][data-steel="5"] body {
+  background-color: #aeb6c2;
+  background-image:
+    radial-gradient(ellipse 75% 45% at 70% 12%, rgba(220, 232, 248, 0.55), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 10% 90%, rgba(0, 0, 0, 0.07), transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"),
+    linear-gradient(175deg, #d8dde6 0%, #9eabb8 45%, #c5ccd6 100%);
+}
+
 [data-theme="light"] body {
   color: #1e293b;
-  background-color: #b4b9c2;
-  background-image:
-    radial-gradient(ellipse 130% 70% at 50% -15%, rgba(255, 255, 255, 0.55), transparent 55%),
-    radial-gradient(ellipse 55% 45% at 100% 0%, rgba(255, 255, 255, 0.22), transparent 50%),
-    radial-gradient(ellipse 45% 35% at 0% 100%, rgba(0, 0, 0, 0.1), transparent 55%),
-    repeating-linear-gradient(
-      -14deg,
-      transparent 0,
-      transparent 3px,
-      rgba(255, 255, 255, 0.08) 3px,
-      rgba(255, 255, 255, 0.08) 4px
-    ),
-    repeating-linear-gradient(
-      76deg,
-      transparent 0,
-      transparent 11px,
-      rgba(0, 0, 0, 0.035) 11px,
-      rgba(0, 0, 0, 0.035) 12px
-    ),
-    linear-gradient(165deg, #d8dbe0 0%, #aeb4be 24%, #d0d4da 50%, #9aa1ac 76%, #c4c9d1 100%);
   background-attachment: fixed;
 }
 
