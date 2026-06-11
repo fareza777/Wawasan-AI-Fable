@@ -1,4 +1,6 @@
-export type WeeklyTrendingRepo = {
+export type TrendCadence = "daily" | "weekly";
+
+export type TrendingRepo = {
   rank: number;
   fullName: string;
   owner: string;
@@ -11,6 +13,14 @@ export type WeeklyTrendingRepo = {
   dateCreated?: string;
 };
 
+/** @deprecated use TrendingRepo */
+export type WeeklyTrendingRepo = TrendingRepo;
+
+export type TrendingPeriodOption = {
+  label: string;
+  path: string;
+};
+
 export type WeeklyPeriod = {
   year: number;
   week: number;
@@ -18,15 +28,20 @@ export type WeeklyPeriod = {
   path: string;
 };
 
-export type WeeklyTrendingData = {
+export type TrendingData = {
+  cadence: TrendCadence;
   title: string;
-  weekLabel: string;
-  period: WeeklyPeriod;
+  periodLabel: string;
+  period: WeeklyPeriod | null;
   sourceUrl: string;
   fetchedAt: string;
-  repos: WeeklyTrendingRepo[];
+  repos: TrendingRepo[];
 };
 
+/** @deprecated use TrendingData */
+export type WeeklyTrendingData = TrendingData & { weekLabel: string };
+
+const TRENDSHIFT_HOME_URL = "https://trendshift.io/";
 const TRENDSHIFT_WEEKLY_URL = "https://trendshift.io/weekly";
 const TOP_N = 10;
 const FETCH_HEADERS = {
@@ -60,13 +75,14 @@ function parseKeywords(value: string[] | string | undefined): string[] {
   return value.split(",").map((k) => k.trim()).filter(Boolean);
 }
 
-function parseJsonLd(html: string): JsonLdItemList | null {
+function parseJsonLd(html: string, cadence: TrendCadence): JsonLdItemList | null {
+  const pattern = cadence === "weekly" ? /weekly/i : /daily/i;
   const matches = html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g);
   for (const match of matches) {
     try {
       const data = JSON.parse(match[1]) as JsonLdItemList;
       if (data["@type"] !== "ItemList" || !Array.isArray(data.itemListElement)) continue;
-      if (data.name && !/weekly/i.test(data.name)) continue;
+      if (data.name && !pattern.test(data.name)) continue;
       return data;
     } catch {
       continue;
@@ -75,7 +91,7 @@ function parseJsonLd(html: string): JsonLdItemList | null {
   return null;
 }
 
-function parsePeriodFromHtml(html: string, sourceUrl: string): WeeklyPeriod {
+function parseWeeklyPeriodFromHtml(html: string, sourceUrl: string): WeeklyPeriod {
   const fromUrl = sourceUrl.match(/weekly\/(\d{4})\/(\d{1,2})/);
   if (fromUrl) {
     const year = Number(fromUrl[1]);
@@ -112,7 +128,7 @@ function periodKey(year: number, week: number): string {
   return `${year}-${week}`;
 }
 
-function toRepo(item: JsonLdListItem): WeeklyTrendingRepo | null {
+function toRepo(item: JsonLdListItem): TrendingRepo | null {
   const fullName = item.item?.name?.trim();
   if (!fullName || !fullName.includes("/")) return null;
   const [owner, repo] = fullName.split("/");
@@ -137,13 +153,12 @@ function weeklyFetchUrl(period?: { year: number; week: number }): string {
   return `https://trendshift.io/weekly/${period.year}/${period.week}`;
 }
 
-async function fetchWeeklyHtml(period?: { year: number; week: number }): Promise<{
-  html: string;
-  sourceUrl: string;
-}> {
-  const sourceUrl = weeklyFetchUrl(period);
+async function fetchTrendshiftHtml(
+  sourceUrl: string,
+  revalidateSeconds: number,
+): Promise<{ html: string; sourceUrl: string }> {
   const res = await fetch(sourceUrl, {
-    next: { revalidate: 6 * 60 * 60 },
+    next: { revalidate: revalidateSeconds },
     headers: FETCH_HEADERS,
   });
 
@@ -154,44 +169,85 @@ async function fetchWeeklyHtml(period?: { year: number; week: number }): Promise
   return { html: await res.text(), sourceUrl };
 }
 
-export async function fetchWeeklyTrendingRepos(period?: {
-  year: number;
-  week: number;
-}): Promise<WeeklyTrendingData> {
-  const { html, sourceUrl } = await fetchWeeklyHtml(period);
-  const list = parseJsonLd(html);
-  if (!list?.itemListElement?.length) {
-    throw new Error("Trendshift weekly data not found in page");
-  }
-
-  const repos = list.itemListElement
+function toTrendingData(
+  cadence: TrendCadence,
+  list: JsonLdItemList,
+  sourceUrl: string,
+  html: string,
+  weeklyPeriod?: WeeklyPeriod | null,
+): TrendingData {
+  const repos = list.itemListElement!
     .map(toRepo)
-    .filter((r): r is WeeklyTrendingRepo => r !== null)
+    .filter((r): r is TrendingRepo => r !== null)
     .sort((a, b) => a.rank - b.rank)
     .slice(0, TOP_N);
 
-  const parsedPeriod = parsePeriodFromHtml(html, sourceUrl);
+  const period =
+    cadence === "weekly"
+      ? (weeklyPeriod ?? parseWeeklyPeriodFromHtml(html, sourceUrl))
+      : null;
+
+  const periodLabel =
+    cadence === "daily"
+      ? "Hari ini"
+      : period?.label ?? "Minggu ini";
 
   return {
-    title: list.name ?? "Weekly trending repositories",
-    weekLabel: parsedPeriod.label,
-    period: parsedPeriod,
+    cadence,
+    title: list.name ?? `Trending repositories (${cadence})`,
+    periodLabel,
+    period,
     sourceUrl,
     fetchedAt: new Date().toISOString(),
     repos,
   };
 }
 
-export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<WeeklyPeriod[]> {
-  const periods: WeeklyPeriod[] = [];
+export async function fetchDailyTrendingRepos(): Promise<TrendingData> {
+  const { html, sourceUrl } = await fetchTrendshiftHtml(TRENDSHIFT_HOME_URL, 3600);
+  const list = parseJsonLd(html, "daily");
+  if (!list?.itemListElement?.length) {
+    throw new Error("Trendshift daily data not found in page");
+  }
+  return toTrendingData("daily", list, sourceUrl, html, null);
+}
+
+export async function fetchWeeklyTrendingRepos(period?: {
+  year: number;
+  week: number;
+}): Promise<TrendingData> {
+  const sourceUrl = weeklyFetchUrl(period);
+  const { html } = await fetchTrendshiftHtml(sourceUrl, 21_600);
+  const list = parseJsonLd(html, "weekly");
+  if (!list?.itemListElement?.length) {
+    throw new Error("Trendshift weekly data not found in page");
+  }
+  const parsedPeriod = parseWeeklyPeriodFromHtml(html, sourceUrl);
+  return toTrendingData("weekly", list, sourceUrl, html, parsedPeriod);
+}
+
+/** Back-compat: weekLabel alias */
+export function withWeekLabel(data: TrendingData): WeeklyTrendingData {
+  return { ...data, weekLabel: data.periodLabel };
+}
+
+export async function fetchAvailableDailyPeriods(): Promise<TrendingPeriodOption[]> {
+  try {
+    await fetchDailyTrendingRepos();
+    return [{ label: "Hari ini", path: "/repo/weekly?cadence=daily" }];
+  } catch {
+    return [];
+  }
+}
+
+export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<TrendingPeriodOption[]> {
+  const periods: TrendingPeriodOption[] = [];
 
   try {
     const current = await fetchWeeklyTrendingRepos();
-    if (current.period.week > 0) {
+    if (current.period && current.period.week > 0) {
       periods.push({
-        year: current.period.year,
-        week: current.period.week,
-        label: current.weekLabel,
+        label: current.periodLabel,
         path: "/repo/weekly",
       });
 
@@ -207,12 +263,10 @@ export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<WeeklyP
         try {
           const archived = await fetchWeeklyTrendingRepos({ year, week });
           const key = periodKey(year, week);
-          if (periods.some((p) => periodKey(p.year, p.week) === key)) break;
+          if (periods.some((p) => p.path === `/repo/weekly/${year}/${week}`)) break;
 
           periods.push({
-            year,
-            week,
-            label: archived.weekLabel,
+            label: archived.periodLabel,
             path: `/repo/weekly/${year}/${week}`,
           });
         } catch {

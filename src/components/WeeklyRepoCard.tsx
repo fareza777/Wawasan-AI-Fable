@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { WeeklyTrendingRepo } from "@/lib/trendshift";
+import { TrendingRepo } from "@/lib/trendshift";
 import { Tag } from "./Score";
 import { translateTopic } from "@/lib/weeklyId";
 import WeeklyBookmarkButton from "./WeeklyBookmarkButton";
@@ -15,7 +15,7 @@ export default function WeeklyRepoCard({
   stars,
   forks,
 }: {
-  repo: WeeklyTrendingRepo;
+  repo: TrendingRepo;
   description: string;
   highlights: string[];
   reviewHref?: string;

@@ -1,4 +1,4 @@
-import { WeeklyTrendingRepo } from "./trendshift";
+import { TrendingRepo } from "./trendshift";
 import { Review } from "./types";
 import { getWeeklyTopEntry } from "@/data/weeklyTop";
 
@@ -102,7 +102,7 @@ function dedupe(items: string[]): string[] {
   });
 }
 
-export function getIndonesianDescription(repo: WeeklyTrendingRepo, review?: Review): string {
+export function getIndonesianDescription(repo: TrendingRepo, review?: Review): string {
   if (review?.summary) return review.summary;
 
   const name = shortRepoName(repo.fullName);
@@ -131,7 +131,7 @@ export function getIndonesianDescription(repo: WeeklyTrendingRepo, review?: Revi
   return `${name} — lihat README di GitHub untuk ringkasan fungsi resmi proyek ini.`;
 }
 
-export function getWeeklyHighlights(repo: WeeklyTrendingRepo, review?: Review): string[] {
+export function getWeeklyHighlights(repo: TrendingRepo, review?: Review): string[] {
   // 1. PRIORITAS TERTINGGI: hand-curated narasi dari weeklyTop.ts
   const curated = getWeeklyTopEntry(repo.fullName);
   if (curated) {

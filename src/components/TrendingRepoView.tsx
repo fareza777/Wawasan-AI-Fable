@@ -1,12 +1,13 @@
-import Link from "next/link";
 import WeeklyRepoCard from "@/components/WeeklyRepoCard";
-import WeeklyWeekPicker from "@/components/WeeklyWeekPicker";
+import TrendingPeriodPicker from "@/components/TrendingPeriodPicker";
 import { repos } from "@/data/repos";
 import { fetchGitHubStats } from "@/lib/githubMeta";
 import {
+  fetchAvailableDailyPeriods,
   fetchAvailableWeeklyPeriods,
+  fetchDailyTrendingRepos,
   fetchWeeklyTrendingRepos,
-  WeeklyPeriod,
+  TrendCadence,
 } from "@/lib/trendshift";
 import { formatTanggal } from "@/lib/format";
 import { getIndonesianDescription, getWeeklyHighlights } from "@/lib/weeklyId";
@@ -18,16 +19,22 @@ function findReview(githubUrl: string) {
   return repos.find((r) => r.link?.toLowerCase().includes(full));
 }
 
-export default async function WeeklyRepoView({
+export default async function TrendingRepoView({
+  cadence,
   period,
   currentPath,
 }: {
+  cadence: TrendCadence;
   period?: { year: number; week: number };
   currentPath: string;
 }) {
   const [data, periods] = await Promise.all([
-    fetchWeeklyTrendingRepos(period),
-    fetchAvailableWeeklyPeriods(),
+    cadence === "daily"
+      ? fetchDailyTrendingRepos()
+      : fetchWeeklyTrendingRepos(period),
+    cadence === "daily"
+      ? fetchAvailableDailyPeriods()
+      : fetchAvailableWeeklyPeriods(),
   ]);
 
   const today = new Date().toISOString().slice(0, 10);
@@ -47,10 +54,7 @@ export default async function WeeklyRepoView({
   );
 
   const reviewedCount = enriched.filter((e) => e.reviewHref).length;
-
-  const periodList: WeeklyPeriod[] = periods.length
-    ? periods
-    : [data.period];
+  const listLabel = cadence === "daily" ? "Top Daily Repo" : "Top Weekly Repo";
 
   return (
     <>
@@ -58,7 +62,7 @@ export default async function WeeklyRepoView({
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-neon-400">
-              {data.weekLabel}
+              {data.periodLabel}
             </p>
             <p className="mt-1 text-sm text-slate-300">
               {reviewedCount} dari 10 repo sudah punya review mendalam di Wawasan AI.
@@ -76,10 +80,10 @@ export default async function WeeklyRepoView({
             </a>
           </div>
         </div>
-        <WeeklyWeekPicker periods={periodList} currentPath={currentPath} />
+        <TrendingPeriodPicker cadence={cadence} periods={periods} currentPath={currentPath} />
       </div>
 
-      <ol className="fade-up delay-1 mt-10 space-y-4" aria-label="Top Weekly Repo">
+      <ol className="fade-up delay-1 mt-10 space-y-4" aria-label={listLabel}>
         {enriched.map(({ repo, stats, reviewHref, description, highlights }) => (
           <li key={repo.fullName}>
             <WeeklyRepoCard
@@ -97,9 +101,9 @@ export default async function WeeklyRepoView({
       <section className="panel-white fade-up delay-2 mt-12 rounded-2xl border p-6 sm:p-8">
         <h2 className="text-lg font-bold text-slate-100">Tentang data ini</h2>
         <p className="mt-3 text-sm leading-relaxed text-slate-300">
-          Peringkat mingguan diambil dari{" "}
+          Peringkat {cadence === "daily" ? "harian" : "mingguan"} diambil dari{" "}
           <a
-            href="https://trendshift.io/weekly"
+            href={cadence === "daily" ? "https://trendshift.io/" : "https://trendshift.io/weekly"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-neon-400 hover:underline"

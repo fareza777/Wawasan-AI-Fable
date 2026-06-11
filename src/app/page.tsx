@@ -105,7 +105,7 @@ export default function Home() {
       {/* ===== Top Weekly Repo ===== */}
       <section className="section-muted">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead nomor="01" kicker="// top weekly" title="Top Weekly Repo" href="/repo/weekly" />
+          <SectionHead nomor="01" kicker="// top trending" title="Top Weekly Repo" href="/repo/weekly" />
           <WeeklyHomePreview />
         </div>
       </section>

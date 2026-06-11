@@ -24,10 +24,10 @@ export default function RepoPage() {
         className="panel-white card-glow mt-10 flex flex-col gap-3 rounded-2xl border border-cyan-500/25 bg-gradient-to-br from-cyan-500/10 to-violet-glow/5 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"
       >
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-neon-400">// top weekly</p>
-          <p className="mt-1 font-semibold text-slate-100">Top Weekly Repo</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-neon-400">// top trending</p>
+          <p className="mt-1 font-semibold text-slate-100">Top Daily &amp; Weekly Repo</p>
           <p className="mt-1 text-sm text-slate-400">
-            Momentum trending dari Trendshift — repo mana yang sedang naik daun minggu ini.
+            Momentum trending harian dan mingguan dari Trendshift — repo yang sedang naik daun.
           </p>
         </div>
         <span className="inline-flex shrink-0 items-center gap-1 text-sm font-bold text-neon-400">

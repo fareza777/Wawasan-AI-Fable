@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
-import WeeklyRepoView from "@/components/WeeklyRepoView";
+import TrendingCadenceTabs from "@/components/TrendingCadenceTabs";
+import TrendingRepoView from "@/components/TrendingRepoView";
 
 export const revalidate = 21_600;
 
@@ -44,7 +45,15 @@ export default async function WeeklyArchivePage({ params }: Props) {
         />
       </div>
 
-      <WeeklyRepoView period={{ year: y, week: w }} currentPath={currentPath} />
+      <div className="fade-up mt-8">
+        <TrendingCadenceTabs active="weekly" />
+      </div>
+
+      <TrendingRepoView
+        cadence="weekly"
+        period={{ year: y, week: w }}
+        currentPath={currentPath}
+      />
     </div>
   );
 }
