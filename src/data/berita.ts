@@ -27,24 +27,24 @@ export const berita: Artikel[] = [
       {
         heading: "Dari mana mulai?",
         paragraphs: [
-          "Jalur yang saya sarankan: (1) pasang Ollama dan rasakan LLM lokal, (2) coba n8n untuk otomasi visual pertamamu, (3) kalau sudah nyaman, jajal OpenClaw atau agen coding. Semua tahap itu sudah saya ulas satu per satu di rubrik Review Repo dan Review Tools di situs ini.",
+          "Jalur yang disarankan editorial: (1) pasang Ollama dan rasakan LLM lokal, (2) coba n8n untuk otomasi visual pertamamu, (3) kalau sudah nyaman, jajal OpenClaw atau agen coding. Semua tahap itu sudah diulas satu per satu di rubrik Review Repo dan Review Tools di situs ini.",
         ],
       },
     ],
   },
   {
     slug: "asn-dan-ai-otomasi-birokrasi",
-    title: "ASN dan AI: Otomasi Kecil-kecilan yang Dampaknya Tidak Kecil",
+    title: "Sektor Publik dan AI: Otomasi Administratif yang Berdampak",
     excerpt:
-      "Pengalaman pribadi seorang ASN mengotomasi pekerjaan administratif dengan AI — apa yang berhasil, apa yang harus hati-hati, dan kenapa birokrasi justru lahan paling subur untuk otomasi.",
+      "Bagaimana instansi pemerintahan bisa mengotomasi pekerjaan administratif dengan AI — apa yang berhasil, apa yang harus dijaga, dan kenapa birokrasi justru lahan paling subur untuk otomasi.",
     category: "Opini",
     date: "2026-05-15",
     readingTime: "7 menit",
     body: [
       {
         paragraphs: [
-          "Sebagai ASN, saya berani bilang: birokrasi adalah salah satu lahan paling subur untuk otomasi AI. Pekerjaan kami penuh pola berulang — rekap, format laporan, surat-menyurat, telaah dokumen — persis jenis pekerjaan yang paling cepat terbantu oleh LLM dan agen.",
-          "Tapi justru karena bekerja di pemerintahan, saya juga paham batasannya: data tidak boleh sembarang keluar, kebijakan penggunaan teknologi harus diikuti, dan hasil AI tetap tanggung jawab manusia yang menandatanganinya.",
+          "Birokrasi adalah salah satu lahan paling subur untuk otomasi AI. Pekerjaan di sektor publik penuh pola berulang — rekap, format laporan, surat-menyurat, telaah dokumen — persis jenis pekerjaan yang paling cepat terbantu oleh LLM dan agen.",
+          "Tapi justru karena bekerja di pemerintahan, batasannya harus dipahami dengan jelas: data tidak boleh sembarang keluar, kebijakan penggunaan teknologi harus diikuti, dan hasil AI tetap tanggung jawab manusia yang menandatanganinya.",
         ],
       },
       {
@@ -59,7 +59,7 @@ export const berita: Artikel[] = [
         paragraphs: [
           "Pertama: jangan pernah menempelkan data pribadi warga atau dokumen rahasia ke layanan AI publik. Kalau ragu, anggap tidak boleh. Untuk kebutuhan seperti itu, satu-satunya jalur yang layak adalah model lokal di infrastruktur sendiri.",
           "Kedua: AI menghasilkan draft, manusia yang bertanggung jawab. Setiap keluaran harus dibaca dan diverifikasi — halusinasi yang masuk ke dokumen resmi bukan salah modelnya, tapi salah kita.",
-          "Ketiga: bawa serta rekan kerja. Otomasi yang dibangun sendirian akan mati saat kita pindah tugas. Dokumentasikan, ajari, dan jadikan kemampuan tim — itu bedanya proyek pribadi dan perubahan cara kerja.",
+          "Ketiga: bawa serta rekan kerja. Otomasi yang dibangun sendirian akan mati saat penanggung jawabnya pindah tugas. Dokumentasikan, ajari, dan jadikan kemampuan tim — itu bedanya inisiatif individu dan perubahan cara kerja.",
         ],
       },
     ],
@@ -88,7 +88,7 @@ export const berita: Artikel[] = [
         heading: "Langkah 2: Pilih model sesuai spek",
         paragraphs: [
           "Aturan kasarnya: model butuh RAM/VRAM kira-kira sebesar ukuran filenya plus sedikit ruang. RAM 8 GB: pakai model 3-4B (kecil tapi tetap berguna untuk ringkasan dan draft). RAM 16 GB: model 7-8B adalah sweet spot — coba 'ollama run qwen3:8b'. RAM 32 GB ke atas atau punya GPU: model 14B+ mulai terasa 'pintar' untuk penalaran.",
-          "Rekomendasi utama saya keluarga Qwen untuk keseimbangan ukuran dan performa. Alternatifnya Gemma dan Llama.",
+          "Rekomendasi utama editorial: keluarga Qwen untuk keseimbangan ukuran dan performa. Alternatifnya Gemma dan Llama.",
         ],
       },
       {
@@ -102,9 +102,9 @@ export const berita: Artikel[] = [
   },
   {
     slug: "indonesia-butuh-komunitas-review-ai",
-    title: "Kenapa Indonesia Butuh Media Review AI Sendiri (dan Kenapa Saya Membuat Wawasan AI)",
+    title: "Kenapa Indonesia Butuh Media Review AI Sendiri",
     excerpt:
-      "Konten AI berbahasa Indonesia masih didominasi berita terjemahan dan hype. Yang langka: review mendalam dari orang yang benar-benar memakai tool-nya. Wawasan AI hadir mengisi celah itu.",
+      "Konten AI berbahasa Indonesia masih didominasi berita terjemahan dan hype. Yang langka: review mendalam dari tim yang benar-benar menguji tool-nya. Wawasan AI hadir mengisi celah itu.",
     category: "Editorial",
     date: "2026-04-20",
     readingTime: "4 menit",
@@ -119,8 +119,8 @@ export const berita: Artikel[] = [
         heading: "Apa yang Wawasan AI tawarkan",
         paragraphs: [
           "Tiga rubrik utama: Review Repo GitHub (proyek open-source AI yang layak dicoba, dari OpenClaw sampai DeerFlow), Review Model LLM (dinilai dari penalaran, coding, kecepatan, dan harga), dan Review Tools (tool coding dan otomasi, dinilai dari pemakaian nyata).",
-          "Prinsipnya sederhana: hanya mengulas yang sudah saya pakai sendiri, jujur soal kekurangan, dan selalu menjawab pertanyaan 'untuk siapa tool ini masuk akal?'. Tidak ada skor sempurna gratisan — skor di situs ini adalah opini editorial dari pemakaian langsung.",
-          "Wawasan AI baru mulai. Kalau kamu punya repo, model, atau tool yang ingin diulas — atau tidak setuju dengan skor saya — sampaikan. Justru perdebatan seperti itulah yang komunitas AI Indonesia butuhkan.",
+          "Prinsipnya sederhana: hanya mengulas yang sudah diuji langsung tim editorial, jujur soal kekurangan, dan selalu menjawab pertanyaan 'untuk siapa tool ini masuk akal?'. Tidak ada skor sempurna gratisan — skor di situs ini adalah opini editorial dari pengujian langsung.",
+          "Wawasan AI baru mulai. Kalau kamu punya repo, model, atau tool yang ingin diulas — atau tidak setuju dengan penilaian editorial — sampaikan. Justru perdebatan seperti itulah yang komunitas AI Indonesia butuhkan.",
         ],
       },
     ],
@@ -143,15 +143,15 @@ export const berita: Artikel[] = [
       {
         heading: "Cara kerjanya, tanpa jargon",
         paragraphs: [
-          "Strukturnya sederhana: ada klien (aplikasi AI yang kamu pakai — Claude Code, OpenClaw, editor coding, dan lain-lain) dan ada server MCP (program kecil yang 'membungkus' suatu layanan agar bisa diajak bicara oleh AI). Server MCP memberi tahu si model: 'ini daftar hal yang bisa kamu lakukan lewat saya' — misalnya cari file, baca email, atau tarik data dari spreadsheet.",
+          "Strukturnya sederhana: ada klien (aplikasi AI yang kamu pakai — Claude Code, OpenClaw, editor coding, dan lain-lain) dan ada server MCP (program kecil yang 'membungkus' suatu layanan agar bisa diajak bicara oleh AI). Server MCP memberi tahu si model: 'ini daftar hal yang bisa kamu lakukan lewat server ini' — misalnya cari file, baca email, atau tarik data dari spreadsheet.",
           "Model lalu memutuskan sendiri kapan memanggil kemampuan itu, persis seperti asisten manusia yang tahu kapan harus membuka lemari arsip. Yang penting dipahami: MCP bukan model AI, bukan juga aplikasi. Ia hanya bahasa perantara — tapi justru bahasa perantara yang disepakati bersama itulah yang selama ini hilang.",
         ],
       },
       {
         heading: "Manfaat nyata untuk pengguna Indonesia",
         paragraphs: [
-          "Contoh paling membumi: asisten AI yang bisa membaca folder dokumen kerjamu langsung, tanpa perlu copy-paste bolak-balik — untuk ASN seperti saya, ini mengubah cara menelaah dokumen panjang. Untuk pemilik UMKM, server MCP untuk spreadsheet atau database berarti AI bisa menjawab 'berapa stok barang X' dari data nyata, bukan mengarang. Untuk pengguna n8n dan OpenClaw, MCP membuka ribuan integrasi siap pakai yang dibuat komunitas.",
-          "Kabar baiknya lagi: banyak server MCP bersifat open-source dan bisa jalan di komputer sendiri, sehingga data tidak harus keluar dari infrastruktur kita — relevan sekali untuk instansi dengan aturan data ketat. Saran saya: mulai dari server MCP filesystem yang paling sederhana, rasakan bedanya, lalu jelajahi katalog server yang terus bertambah. Begitu terbiasa, kamu akan heran dulu bisa hidup tanpa ini.",
+          "Contoh paling membumi: asisten AI yang bisa membaca folder dokumen kerja langsung, tanpa perlu copy-paste bolak-balik — untuk pegawai sektor publik, ini mengubah cara menelaah dokumen panjang. Untuk pemilik UMKM, server MCP untuk spreadsheet atau database berarti AI bisa menjawab 'berapa stok barang X' dari data nyata, bukan mengarang. Untuk pengguna n8n dan OpenClaw, MCP membuka ribuan integrasi siap pakai yang dibuat komunitas.",
+          "Kabar baiknya lagi: banyak server MCP bersifat open-source dan bisa jalan di komputer sendiri, sehingga data tidak harus keluar dari infrastruktur kita — relevan sekali untuk instansi dengan aturan data ketat. Saran editorial: mulai dari server MCP filesystem yang paling sederhana, rasakan bedanya, lalu jelajahi katalog server yang terus bertambah. Begitu terbiasa, kamu akan heran dulu bisa hidup tanpa ini.",
         ],
       },
     ],
@@ -160,22 +160,22 @@ export const berita: Artikel[] = [
     slug: "vibe-coding-peluang-dan-jebakan",
     title: "Vibe Coding: Membangun Aplikasi Tanpa Menulis Kode — Peluang Sekaligus Jebakannya",
     excerpt:
-      "Kini siapa pun bisa 'ngobrol' dengan AI dan jadi punya aplikasi. Saya senang sekaligus waswas — ini catatan jujur soal peluang dan jebakan vibe coding untuk orang Indonesia.",
+      "Kini siapa pun bisa 'ngobrol' dengan AI dan jadi punya aplikasi. Fenomena ini membawa peluang sekaligus risiko — ini catatan jujur editorial soal peluang dan jebakan vibe coding untuk orang Indonesia.",
     category: "Opini",
     date: "2026-03-22",
     readingTime: "7 menit",
     body: [
       {
         paragraphs: [
-          "Beberapa bulan terakhir saya menyaksikan fenomena yang dulu terasa mustahil: teman-teman yang tidak pernah menulis satu baris kode pun kini punya aplikasi buatan sendiri. Mereka cukup mendeskripsikan keinginannya ke AI — 'buatkan aplikasi pencatat kas RT yang bisa diakses dari HP' — lalu memoles hasilnya lewat percakapan. Inilah yang disebut vibe coding: membangun software dengan mengandalkan 'vibe', bukan pemahaman teknis.",
-          "Sebagai orang yang belajar otomasi secara otodidak, saya ikut senang. Tapi sebagai orang yang sudah cukup sering melihat kode hasil AI dari dekat, saya juga waswas. Tulisan ini mencoba jujur di dua sisi: vibe coding adalah peluang nyata, dan pada saat yang sama jebakan yang nyata pula.",
+          "Beberapa bulan terakhir fenomena yang dulu terasa mustahil makin umum: orang yang tidak pernah menulis satu baris kode pun kini punya aplikasi buatan sendiri. Mereka cukup mendeskripsikan keinginannya ke AI — 'buatkan aplikasi pencatat kas RT yang bisa diakses dari HP' — lalu memoles hasilnya lewat percakapan. Inilah yang disebut vibe coding: membangun software dengan mengandalkan 'vibe', bukan pemahaman teknis.",
+          "Dari sudut pandang editorial, ini kabar baik sekaligus peringatan. Banyak kode hasil AI terlihat jalan di permukaan, tapi bolong di tempat yang tidak terlihat. Tulisan ini mencoba jujur di dua sisi: vibe coding adalah peluang nyata, dan pada saat yang sama jebakan yang nyata pula.",
         ],
       },
       {
         heading: "Peluangnya sungguhan",
         paragraphs: [
           "Untuk konteks Indonesia, ini demokratisasi yang berarti. Pemilik warung bisa bikin kalkulator HPP sendiri, pengurus komunitas bisa bikin sistem pendaftaran acara, staf kantor bisa bikin dashboard rekap — hal-hal yang dulu butuh menyewa programmer dengan biaya yang tidak masuk akal untuk kebutuhan sekecil itu. Jarak antara 'punya ide' dan 'punya prototipe' menyusut dari berbulan-bulan menjadi semalam.",
-          "Dan untuk yang ingin serius, vibe coding adalah pintu masuk belajar yang menyenangkan. Banyak orang yang mulanya cuma 'ngobrol' dengan AI lama-lama penasaran kenapa kodenya begini, lalu tanpa sadar mulai belajar betulan. Itu jalur belajar yang valid — saya sendiri belajar banyak dengan cara serupa.",
+          "Dan untuk yang ingin serius, vibe coding adalah pintu masuk belajar yang menyenangkan. Banyak orang yang mulanya cuma 'ngobrol' dengan AI lama-lama penasaran kenapa kodenya begini, lalu tanpa sadar mulai belajar betulan. Itu jalur belajar yang valid — dan pola yang sama terlihat di banyak kasus pengujian editorial.",
         ],
       },
       {
@@ -183,7 +183,7 @@ export const berita: Artikel[] = [
         paragraphs: [
           "Pertama, keamanan. Aplikasi hasil vibe coding sering terlihat jalan tapi bolong di tempat yang tidak terlihat: password tersimpan sembarangan, data bisa diakses siapa saja, kunci API tertanam di kode yang dipublikasikan. Kalau aplikasimu hanya dipakai sendiri, risikonya kecil; begitu menyimpan data orang lain — apalagi data pelanggan atau warga — kamu memikul tanggung jawab yang tidak bisa didelegasikan ke AI.",
           "Kedua, maintainability. Aplikasi yang lahir dari percakapan seminggu bisa jadi tidak bisa diubah enam bulan kemudian, karena tidak ada yang benar-benar paham isinya — termasuk pembuatnya. Menambah fitur kecil bisa merusak fitur lain, dan kamu tidak tahu kenapa. Software itu bukan barang jadi, ia makhluk hidup yang harus dirawat.",
-          "Ketiga — dan ini yang paling halus — ilusi kompetensi. Berhasil mem-vibe-code sebuah aplikasi terasa seperti 'sudah bisa bikin software', padahal yang kita kuasai baru kulitnya. Bahayanya muncul saat ilusi itu dibawa ke ranah profesional: menerima proyek berbayar atau memasang sistem untuk kantor tanpa kemampuan menilai apakah hasilnya aman dan benar. Nasihat saya sederhana: silakan vibe coding sebebas-bebasnya untuk diri sendiri, tapi begitu menyangkut uang dan data orang lain, ajak orang yang paham untuk me-review — atau jadilah orang yang paham itu dengan belajar sungguhan.",
+          "Ketiga — dan ini yang paling halus — ilusi kompetensi. Berhasil mem-vibe-code sebuah aplikasi terasa seperti 'sudah bisa bikin software', padahal yang dikuasai baru kulitnya. Bahayanya muncul saat ilusi itu dibawa ke ranah profesional: menerima proyek berbayar atau memasang sistem untuk kantor tanpa kemampuan menilai apakah hasilnya aman dan benar. Nasihat editorial sederhana: silakan vibe coding sebebas-bebasnya untuk diri sendiri, tapi begitu menyangkut uang dan data orang lain, ajak orang yang paham untuk me-review — atau jadilah orang yang paham itu dengan belajar sungguhan.",
         ],
       },
     ],
@@ -200,7 +200,7 @@ export const berita: Artikel[] = [
       {
         paragraphs: [
           "AI agent self-hosted seperti OpenClaw memikat karena satu hal: ia bisa benar-benar mengerjakan sesuatu — menjalankan perintah, membaca file, mengirim pesan. Tapi kemampuan itu pedang bermata dua. Agen yang bisa menjalankan perintah di servermu adalah agen yang, kalau salah arah atau dimanipulasi, bisa merusak servermu juga.",
-          "Saya memasang dan membongkar cukup banyak agen di server sendiri untuk tahu bahwa sebagian besar masalah bisa dicegah dengan persiapan sederhana. Berikut checklist yang saya jalankan sendiri sebelum menyalakan agen baru — tidak butuh keahlian security khusus, hanya kedisiplinan.",
+          "Tim editorial Wawasan AI memasang dan membongkar cukup banyak agen di server sendiri untuk tahu bahwa sebagian besar masalah bisa dicegah dengan persiapan sederhana. Berikut checklist yang dijalankan editorial sebelum menyalakan agen baru — tidak butuh keahlian security khusus, hanya kedisiplinan.",
         ],
       },
       {
@@ -214,7 +214,7 @@ export const berita: Artikel[] = [
         heading: "2. Batasi izin dan jauhkan data sensitif",
         paragraphs: [
           "Beri agen hanya akses yang ia butuhkan untuk tugasnya — tidak lebih. Kalau tugasnya merekap pesan, ia tidak perlu akses hapus file. Kalau ia perlu API key, buat key terpisah dengan cakupan paling sempit dan limit pengeluaran, jangan pakai key utama. Tinjau ulang daftar tool yang diaktifkan: tiap tool tambahan adalah pintu tambahan.",
-          "Dan ini yang paling sering dilanggar: jangan taruh data sensitif di jangkauan agen. Dokumen rahasia kantor, data pribadi warga, file keuangan — semua itu tidak boleh berada di folder yang bisa dibaca agen yang tersambung ke internet. Untuk ASN dan siapa pun yang memegang data orang lain, anggap ini garis merah, bukan saran.",
+          "Dan ini yang paling sering dilanggar: jangan taruh data sensitif di jangkauan agen. Dokumen rahasia kantor, data pribadi warga, file keuangan — semua itu tidak boleh berada di folder yang bisa dibaca agen yang tersambung ke internet. Untuk pegawai sektor publik dan siapa pun yang memegang data orang lain, anggap ini garis merah, bukan saran.",
         ],
       },
       {
@@ -239,14 +239,14 @@ export const berita: Artikel[] = [
       {
         paragraphs: [
           "Dulu jawabannya gampang: model hanya kuat membaca beberapa halaman, jadi kalau mau AI menjawab dari dokumen banyak, kamu wajib membangun pipeline RAG — sistem yang memotong dokumen, menyimpannya di database vektor, lalu mengambil potongan relevan untuk tiap pertanyaan. Sekarang model berkonteks ratusan ribu hingga jutaan token mengubah hitungannya: untuk banyak kasus, kamu bisa melempar seluruh dokumen mentah-mentah ke model dan selesai.",
-          "Lalu apakah RAG sudah mati? Belum — tapi wilayah kekuasaannya menyempit. Pertanyaan yang tepat bukan 'mana yang lebih canggih', melainkan 'untuk kasus saya, mana yang lebih sederhana dan lebih murah'. Mari kita bedah.",
+          "Lalu apakah RAG sudah mati? Belum — tapi wilayah kekuasaannya menyempit. Pertanyaan yang tepat bukan 'mana yang lebih canggih', melainkan 'untuk kasus tertentu, mana yang lebih sederhana dan lebih murah'. Mari kita bedah.",
         ],
       },
       {
         heading: "Kapan konteks panjang saja sudah cukup",
         paragraphs: [
           "Kalau total dokumenmu muat di context window dan pertanyaannya tidak terlalu sering, lempar saja semuanya. Menelaah satu kontrak panjang, membandingkan beberapa peraturan, merangkum laporan tahunan — untuk pekerjaan begini, membangun pipeline RAG itu seperti membangun gudang untuk menyimpan tiga kardus. Konteks panjang juga unggul saat jawabannya butuh pemahaman lintas-dokumen yang utuh: model melihat semuanya sekaligus, bukan potongan-potongan yang diambil sistem pencari.",
-          "Pola pemakaian saya sehari-hari sebagai ASN justru hampir semuanya kategori ini: dokumen kerja datang per kasus, ditelaah, selesai. Tidak ada alasan merawat database vektor untuk itu.",
+          "Pola pemakaian di sektor publik justru hampir semuanya kategori ini: dokumen kerja datang per kasus, ditelaah, selesai. Tidak ada alasan merawat database vektor untuk itu.",
         ],
       },
       {
@@ -254,7 +254,7 @@ export const berita: Artikel[] = [
         paragraphs: [
           "Pertama, skala: kalau korpusmu ribuan dokumen — arsip peraturan satu instansi, basis pengetahuan layanan pelanggan, dokumentasi produk bertahun-tahun — tidak ada context window yang muat, dan RAG kembali jadi satu-satunya jalan. Kedua, frekuensi: chatbot yang menjawab ratusan pertanyaan sehari dari basis pengetahuan yang sama akan jauh lebih hemat mengambil potongan kecil yang relevan ketimbang membayar pembacaan seluruh korpus berulang-ulang.",
           "Di sinilah implikasi biaya yang sering dilupakan: kamu membayar per token yang dibaca model, dan membaca dokumen raksasa untuk tiap pertanyaan kecil itu seperti menyewa truk kontainer untuk antar satu paket. Fitur prompt caching memang memangkas biaya pembacaan berulang secara signifikan, tapi tidak menghilangkan logika dasarnya. Untuk dompet Indonesia — apalagi UMKM yang menimbang tiap rupiah tagihan API — selisihnya terasa.",
-          "Rumus praktis saya: mulai dari yang paling sederhana, yaitu lempar dokumen ke model berkonteks panjang. Baru bangun RAG kalau (a) dokumen tidak muat, (b) volume pertanyaan tinggi dan tagihan mulai sakit, atau (c) korpus terus bertambah dan butuh diperbarui tanpa menyentuh ulang semuanya. RAG itu jawaban untuk masalah skala — jangan mengadopsi masalah skala sebelum kamu memilikinya.",
+          "Rumus praktis editorial: mulai dari yang paling sederhana, yaitu lempar dokumen ke model berkonteks panjang. Baru bangun RAG kalau (a) dokumen tidak muat, (b) volume pertanyaan tinggi dan tagihan mulai sakit, atau (c) korpus terus bertambah dan butuh diperbarui tanpa menyentuh ulang semuanya. RAG itu jawaban untuk masalah skala — jangan mengadopsi masalah skala sebelum kamu memilikinya.",
         ],
       },
     ],
@@ -277,7 +277,7 @@ export const berita: Artikel[] = [
       {
         heading: "Empat jalur yang realistis",
         paragraphs: [
-          "Pertama, 'AI engineer dadakan' — sebutan saya untuk orang yang bisa merangkai layanan AI yang sudah ada (API model, n8n, Dify, agen coding) menjadi solusi kerja, tanpa membangun model dari nol. Banyak perusahaan menengah Indonesia tidak butuh peneliti; mereka butuh orang yang bisa membuat sistem 'baca email masuk, klasifikasikan, balas otomatis yang rutin'. Modal masuknya: kemauan belajar tooling dan kemampuan memahami proses bisnis.",
+          "Pertama, 'AI engineer dadakan' — istilah untuk orang yang bisa merangkai layanan AI yang sudah ada (API model, n8n, Dify, agen coding) menjadi solusi kerja, tanpa membangun model dari nol. Banyak perusahaan menengah Indonesia tidak butuh peneliti; mereka butuh orang yang bisa membuat sistem 'baca email masuk, klasifikasikan, balas otomatis yang rutin'. Modal masuknya: kemauan belajar tooling dan kemampuan memahami proses bisnis.",
           "Kedua, konsultan otomasi UMKM. Jutaan usaha kecil kita masih merekap pesanan manual dan membalas pertanyaan pelanggan yang sama berulang-ulang di WhatsApp. Orang yang bisa datang, memetakan proses, dan memasang otomasi sederhana — lalu mengajari pemiliknya — menjual hasil yang sangat konkret: waktu. Kuncinya bukan teknologi canggih, tapi kemampuan bicara bahasa pedagang, bukan bahasa engineer.",
           "Ketiga, content ops: mengoperasikan produksi konten berbantuan AI untuk bisnis — riset, draft, edit, jadwal, ukur. Yang dibayar di sini bukan kemampuan menyuruh AI menulis (semua orang bisa), melainkan kurasi dan kontrol kualitas: memastikan konten akurat, bernada tepat, dan tidak generik. Keempat, jasa pembuatan chatbot — customer service UMKM, FAQ instansi, asisten internal kantor. Pasarnya nyata, tapi ini jalur yang paling cepat ramai pesaing; pembedanya ada di pemahaman domain dan layanan purna jual, bukan di chatbotnya sendiri.",
         ],
@@ -286,7 +286,7 @@ export const berita: Artikel[] = [
         heading: "Catatan jujur sebelum melompat",
         paragraphs: [
           "Semua jalur di atas punya musuh yang sama: tool yang makin mudah. Apa yang hari ini kamu jual sebagai jasa, tahun depan mungkin jadi fitur sekali klik. Pertahanannya bukan merahasiakan trik, melainkan terus naik level ke hal yang lebih sulit ditiru: pemahaman mendalam atas industri tertentu, kepercayaan klien, dan kemampuan menilai kapan AI salah. Posisikan dirimu sebagai orang yang bertanggung jawab atas hasil, bukan operator tool.",
-          "Dan untuk yang sudah bekerja — termasuk sesama ASN — jalur paling aman sering kali bukan resign, melainkan menjadi orang yang paling paham AI di organisasimu sendiri. Nilai itu tidak selalu cair sebagai uang langsung, tapi cair sebagai peran, jejaring, dan pilihan. Mulailah dari masalah nyata di depan mata, bukan dari teknologi yang sedang viral; orang yang menyelesaikan masalah membosankan dengan AI akan selalu menang dari orang yang mendemokan AI keren tanpa masalah untuk diselesaikan.",
+          "Dan untuk yang sudah bekerja — termasuk pegawai sektor publik — jalur paling aman sering kali bukan resign, melainkan menjadi orang yang paling paham AI di organisasimu sendiri. Nilai itu tidak selalu cair sebagai uang langsung, tapi cair sebagai peran, jejaring, dan pilihan. Mulailah dari masalah nyata di depan mata, bukan dari teknologi yang sedang viral; orang yang menyelesaikan masalah membosankan dengan AI akan selalu menang dari orang yang mendemokan AI keren tanpa masalah untuk diselesaikan.",
         ],
       },
     ],

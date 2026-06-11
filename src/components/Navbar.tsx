@@ -9,7 +9,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { href: "/repo", label: "Review Repo" },
-  { href: "/repo/weekly", label: "Top Mingguan" },
+  { href: "/repo/weekly", label: "Top Weekly Repo" },
   { href: "/model", label: "Review Model" },
   { href: "/stack", label: "Review Tools" },
   { href: "/berita", label: "Berita" },

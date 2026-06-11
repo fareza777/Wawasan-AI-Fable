@@ -6,20 +6,21 @@ import { repos } from "@/data/repos";
 import { fetchWeeklyTrendingRepos } from "@/lib/trendshift";
 import { fetchGitHubStats } from "@/lib/githubMeta";
 import { formatTanggal } from "@/lib/format";
+import { getIndonesianDescription, getWeeklyHighlights } from "@/lib/weeklyId";
 
 export const metadata: Metadata = {
-  title: "Top 10 Repo Minggu Ini",
+  title: "Top Weekly Repo",
   description:
     "10 repositori GitHub paling trending minggu ini — kurasi momentum dari Trendshift, dengan konteks editorial Wawasan AI.",
 };
 
 export const revalidate = 21_600;
 
-function findReviewSlug(githubUrl: string) {
+function findReview(githubUrl: string) {
   const match = githubUrl.match(/github\.com\/([^/]+\/[^/]+)/i);
   if (!match) return undefined;
   const full = match[1].toLowerCase();
-  return repos.find((r) => r.link?.toLowerCase().includes(full))?.slug;
+  return repos.find((r) => r.link?.toLowerCase().includes(full));
 }
 
 export default async function WeeklyRepoPage() {
@@ -28,12 +29,15 @@ export default async function WeeklyRepoPage() {
 
   const enriched = await Promise.all(
     data.repos.map(async (repo) => {
+      const review = findReview(repo.githubUrl);
       const stats = await fetchGitHubStats(repo.githubUrl);
-      const reviewSlug = findReviewSlug(repo.githubUrl);
       return {
         repo,
         stats,
-        reviewHref: reviewSlug ? `/repo/${reviewSlug}` : undefined,
+        review,
+        reviewHref: review ? `/repo/${review.slug}` : undefined,
+        description: getIndonesianDescription(repo, review),
+        highlights: getWeeklyHighlights(repo, review),
       };
     }),
   );
@@ -51,9 +55,9 @@ export default async function WeeklyRepoPage() {
 
       <div className="mt-6">
         <ListHeader
-          kicker="// top mingguan"
-          title="Top 10 Repo Minggu Ini"
-          description="Repositori GitHub dengan momentum tertinggi minggu ini — diambil dari peringkat mingguan Trendshift, lalu disajikan dengan konteks untuk pembaca Wawasan AI."
+          kicker="// top weekly"
+          title="Top Weekly Repo"
+          description="Repositori GitHub dengan momentum tertinggi minggu ini — diambil dari peringkat mingguan Trendshift, lalu disajikan dengan konteks editorial Wawasan AI."
         />
       </div>
 
@@ -79,11 +83,13 @@ export default async function WeeklyRepoPage() {
         </div>
       </div>
 
-      <ol className="fade-up delay-1 mt-10 space-y-4" aria-label="Top 10 repo minggu ini">
-        {enriched.map(({ repo, stats, reviewHref }) => (
+      <ol className="fade-up delay-1 mt-10 space-y-4" aria-label="Top Weekly Repo">
+        {enriched.map(({ repo, stats, reviewHref, description, highlights }) => (
           <li key={repo.fullName}>
             <WeeklyRepoCard
               repo={repo}
+              description={description}
+              highlights={highlights}
               reviewHref={reviewHref}
               stars={stats?.stars}
               forks={stats?.forks}

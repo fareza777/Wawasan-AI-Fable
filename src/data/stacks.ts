@@ -15,7 +15,7 @@ export const stacks: Review[] = [
       { label: "Harga", value: 8.0 },
     ],
     summary:
-      "Claude Code bukan autocomplete — ia agen yang membaca seluruh codebase, merencanakan, mengedit banyak file, menjalankan tes, dan memperbaiki kesalahannya sendiri. Tool yang paling mengubah cara saya bekerja.",
+      "Claude Code bukan autocomplete — ia agen yang membaca seluruh codebase, merencanakan, mengedit banyak file, menjalankan tes, dan memperbaiki kesalahannya sendiri. Tool yang paling mengubah cara kerja developer dalam pengujian editorial.",
     pros: [
       "Mengerjakan tugas utuh end-to-end, bukan sekadar saran baris kode",
       "Paham konteks repo besar: konvensi, struktur, riwayat git",
@@ -32,7 +32,7 @@ export const stacks: Review[] = [
     body: [
       "Pergeseran dari 'autocomplete pintar' ke 'agen yang diberi tugas' adalah lompatan terbesar di dunia developer tools beberapa tahun terakhir, dan Claude Code adalah contoh terbaiknya. Alur kerjanya berbeda secara fundamental: kamu mendeskripsikan hasil yang diinginkan, agen yang menyusun rencana, menyentuh file-file yang relevan, menjalankan build dan tes, lalu melaporkan hasilnya.",
       "Yang membuatnya menonjol dibanding pesaing adalah keandalan pada tugas panjang. Refactor lintas puluhan file, migrasi dependensi, menulis fitur lengkap dengan tesnya — Claude Code bisa dilepas mengerjakan itu sementara kamu fokus ke hal lain. Fitur seperti CLAUDE.md (memori proyek), custom commands, dan MCP server membuatnya makin menyatu dengan workflow tim.",
-      "Untuk pengguna Indonesia, catatan utamanya adalah biaya berbasis dolar. Saran saya: mulai dari paket yang ada, ukur nilai per jam kerja yang dihemat — bagi yang produktif, hitungannya hampir selalu masuk. Dan pelajari cara memberi instruksi yang baik; perbedaan hasil antara instruksi asal-asalan dan instruksi terstruktur itu dramatis.",
+      "Untuk pengguna Indonesia, catatan utamanya adalah biaya berbasis dolar. Saran editorial: mulai dari paket yang ada, ukur nilai per jam kerja yang dihemat — bagi yang produktif, hitungannya hampir selalu masuk. Dan pelajari cara memberi instruksi yang baik; perbedaan hasil antara instruksi asal-asalan dan instruksi terstruktur itu dramatis.",
     ],
     link: "https://claude.com/claude-code",
     linkLabel: "Situs Resmi",
@@ -70,7 +70,7 @@ export const stacks: Review[] = [
     body: [
       "Cursor adalah produk yang membuat jutaan developer pertama kali merasakan 'AI yang benar-benar membantu'. Fitur Tab-nya melegenda: ia memprediksi bukan hanya baris berikutnya tapi seluruh niat perubahanmu — rename variabel di satu tempat, dan ia menawarkan perubahan konsisten di seluruh file.",
       "Sebagai fork VS Code, biaya perpindahannya nyaris nol. Semua ekstensi, tema, dan kebiasaan lama tetap jalan, sementara kemampuan AI-nya hadir di setiap sudut: chat dengan konteks codebase, edit inline, dan mode agent untuk tugas multi-file.",
-      "Untuk developer Indonesia yang baru mulai dengan AI coding, rekomendasi saya tetap: coba Cursor dulu. Kurva belajarnya paling landai, hasilnya langsung terasa, dan tier gratisnya cukup untuk merasakan nilainya sebelum berlangganan.",
+      "Untuk developer Indonesia yang baru mulai dengan AI coding, rekomendasi editorial tetap: coba Cursor dulu. Kurva belajarnya paling landai, hasilnya langsung terasa, dan tier gratisnya cukup untuk merasakan nilainya sebelum berlangganan.",
     ],
     link: "https://cursor.com",
     linkLabel: "Situs Resmi",
@@ -108,7 +108,7 @@ export const stacks: Review[] = [
     body: [
       "Codex menarik karena visinya sedikit berbeda: alih-alih satu agen yang menemanimu di terminal, OpenAI mendorong model 'delegasi' — lempar beberapa tugas ke agen-agen cloud yang bekerja paralel di sandbox masing-masing, lalu review hasilnya sebagai pull request.",
       "Untuk tim yang sudah hidup di ekosistem ChatGPT dan GitHub, alurnya terasa alami: tulis tugas dari mana saja (termasuk ponsel!), biarkan agen bekerja, dan hasil review-able muncul di repo. Pola kerja asinkron seperti ini cocok untuk backlog berisi tugas-tugas kecil yang menumpuk.",
-      "Dalam pengujian saya, kualitas kodenya kompetitif, meski untuk sesi interaktif panjang di terminal saya masih lebih nyaman dengan Claude Code. Posisi Codex paling kuat justru sebagai 'pasukan tugas kecil': perbaikan bug minor, penambahan tes, update dependensi — delegasikan dan lupakan.",
+      "Dalam pengujian editorial, kualitas kodenya kompetitif, meski untuk sesi interaktif panjang di terminal tim editorial masih lebih nyaman dengan Claude Code. Posisi Codex paling kuat justru sebagai 'pasukan tugas kecil': perbaikan bug minor, penambahan tes, update dependensi — delegasikan dan lupakan.",
     ],
     link: "https://openai.com/codex",
     linkLabel: "Situs Resmi",
@@ -144,7 +144,7 @@ export const stacks: Review[] = [
     body: [
       "Windsurf memperkenalkan istilah yang kini dipakai semua orang: 'agentic IDE'. Fitur andalannya, Cascade, memantau apa yang sedang kamu kerjakan dan menjaga pemahaman konteks secara berkelanjutan — sehingga saat kamu meminta sesuatu, ia sudah tahu file mana yang relevan tanpa perlu dijelaskan.",
       "Pengalaman penggunaannya termasuk yang paling halus: preview perubahan yang jernih, alur approve/reject yang nyaman, dan integrasi terminal yang baik. Beberapa pola UX-nya kemudian ditiru pesaing — tanda inovasinya nyata.",
-      "Sisi gelapnya ada di luar produk: saga akuisisi yang berlarut-larut membuat banyak pengguna bertanya-tanya soal masa depannya. Saran pragmatis saya: nikmati produknya (terutama tier gratisnya yang murah hati), tapi jangan bangun ketergantungan workflow yang dalam sebelum arah perusahaannya jelas.",
+      "Sisi gelapnya ada di luar produk: saga akuisisi yang berlarut-larut membuat banyak pengguna bertanya-tanya soal masa depannya. Saran pragmatis editorial: nikmati produknya (terutama tier gratisnya yang murah hati), tapi jangan bangun ketergantungan workflow yang dalam sebelum arah perusahaannya jelas.",
     ],
     link: "https://windsurf.com",
     linkLabel: "Situs Resmi",
@@ -214,12 +214,12 @@ export const stacks: Review[] = [
       "Kualitas output fluktuatif saat kuota gratis dialihkan ke model yang lebih ringan",
     ],
     verdict:
-      "Kalau Cline adalah jalur hemat di IDE, Gemini CLI adalah jalur hemat di terminal. Untuk pelajar dan ASN dengan anggaran pas-pasan seperti saya dulu, tidak ada alasan untuk tidak mencobanya.",
+      "Kalau Cline adalah jalur hemat di IDE, Gemini CLI adalah jalur hemat di terminal. Untuk pelajar dan pegawai sektor publik dengan anggaran terbatas, tidak ada alasan untuk tidak mencobanya.",
     body: [
       "Google masuk ke arena CLI agent dengan senjata yang sulit dilawan: gratis. Cukup login dengan akun Google biasa, dan kamu mendapat jatah pemakaian harian yang untuk kebanyakan orang tidak akan habis. Di negara dengan kurs rupiah-dolar seperti kita, ini bukan fitur kecil — ini penentu apakah seorang mahasiswa bisa belajar agentic coding atau tidak.",
       "Secara kemampuan, Gemini CLI mengikuti pakem yang sama dengan pesaingnya: membaca codebase, merencanakan, mengedit file, menjalankan perintah, dan mendukung MCP untuk integrasi eksternal. Keunggulan khasnya ada di jendela konteks yang sangat besar — untuk tugas seperti 'jelaskan arsitektur repo ini' atau analisis lintas banyak file sekaligus, ia bisa menelan semuanya tanpa perlu strategi pemotongan konteks yang rumit. Integrasi Google Search juga membuatnya jago saat butuh informasi terkini, misalnya API library yang baru berubah.",
-      "Dalam pemakaian saya, untuk tugas eksplorasi dan perubahan kecil-menengah hasilnya memuaskan. Yang masih terasa adalah jarak dengan Claude Code di tugas panjang multi-langkah: Gemini CLI lebih sering kehilangan arah, dan kadang menyentuh file yang tidak saya minta. Statusnya yang open-source membantu — perbaikan datang cepat, dan komunitasnya aktif menambal kekurangan.",
-      "Rekomendasi saya sederhana: jadikan Gemini CLI tool pertama yang dicoba kalau anggaranmu nol. Belajar pola kerja agentic di sini, dan kalau nanti kebutuhanmu naik kelas, kebiasaan yang terbentuk langsung terbawa ke tool berbayar mana pun.",
+      "Dalam pengujian editorial, untuk tugas eksplorasi dan perubahan kecil-menengah hasilnya memuaskan. Yang masih terasa adalah jarak dengan Claude Code di tugas panjang multi-langkah: Gemini CLI lebih sering kehilangan arah, dan kadang menyentuh file yang tidak diminta. Statusnya yang open-source membantu — perbaikan datang cepat, dan komunitasnya aktif menambal kekurangan.",
+      "Rekomendasi editorial sederhana: jadikan Gemini CLI tool pertama yang dicoba kalau anggaranmu nol. Belajar pola kerja agentic di sini, dan kalau nanti kebutuhanmu naik kelas, kebiasaan yang terbentuk langsung terbawa ke tool berbayar mana pun.",
     ],
     link: "https://geminicli.com",
     linkLabel: "Situs Resmi",
@@ -257,7 +257,7 @@ export const stacks: Review[] = [
       "GitHub Copilot adalah produk yang memperkenalkan dunia pada AI pair programming, dan menariknya ia menolak menjadi fosil. Setelah sempat tertinggal dari Cursor dan kawan-kawan, Copilot berbenah besar: kini ia multi-model (kamu bisa memilih Claude, GPT, atau Gemini sebagai otaknya), punya agent mode untuk tugas multi-file, dan bahkan coding agent yang bisa mengerjakan isu GitHub secara mandiri lalu membuka pull request.",
       "Kekuatan sejatinya bukan di kecanggihan agennya, melainkan di posisinya: Copilot hidup di tempat kode kita hidup. Review PR otomatis, saran perbaikan langsung di tab Files Changed, delegasi isu ke agen — semuanya tanpa keluar dari GitHub. Untuk tim yang workflow-nya sudah berpusat di GitHub, gesekan adopsinya nyaris nol, dan itu nilai yang sering diremehkan.",
       "Catatan penting untuk pembaca Indonesia: program GitHub Education memberi Copilot gratis untuk pelajar dan pengajar, dan maintainer open-source populer juga dapat akses cuma-cuma. Bagi mahasiswa, ini cara legal mendapat AI coding kelas berbayar tanpa keluar sedolar pun — manfaatkan sebelum lulus.",
-      "Dalam pemakaian saya, autocomplete-nya tetap solid dan chat-nya kompeten, tapi untuk tugas agentic berat saya masih berpaling ke tool spesialis. Posisi Copilot hari ini mirip aplikasi bawaan yang bagus: mungkin bukan yang terbaik di tiap kategori, tapi selalu ada, terintegrasi rapi, dan untuk mayoritas pekerjaan sehari-hari itu sudah cukup.",
+      "Dalam pengujian editorial, autocomplete-nya tetap solid dan chat-nya kompeten, tapi untuk tugas agentic berat tim editorial masih berpaling ke tool spesialis. Posisi Copilot hari ini mirip aplikasi bawaan yang bagus: mungkin bukan yang terbaik di tiap kategori, tapi selalu ada, terintegrasi rapi, dan untuk mayoritas pekerjaan sehari-hari itu sudah cukup.",
     ],
     link: "https://github.com/features/copilot",
     linkLabel: "Situs Resmi",
@@ -293,7 +293,7 @@ export const stacks: Review[] = [
       "Bukan pengganti developer, tapi pemusnah halaman kosong. Untuk pengguna Next.js, v0 adalah cara tercepat dari ide ke UI yang layak ditunjukkan ke klien — gunakan tier gratisnya untuk draft, rapikan sendiri sisanya.",
     body: [
       "v0 lahir dari pemahaman sederhana Vercel: bagian paling melelahkan dari memulai proyek web adalah menatap halaman kosong. Kamu menulis deskripsi — 'dashboard admin dengan sidebar, tabel transaksi, dan grafik bulanan' — dan dalam hitungan detik muncul UI React yang bukan sekadar berfungsi, tapi terlihat seperti dikerjakan desainer. Inilah pembeda utamanya dari generator lain: seleranya bagus.",
-      "Rahasianya ada di fokus. v0 tidak mencoba mendukung semua framework; ia all-in pada React, Tailwind, dan shadcn/ui — stack yang kebetulan jadi standar de facto industri saat ini. Hasilnya kode yang idiomatis: komponen terstruktur wajar, kelas Tailwind tertata, dan yang terpenting, mudah diambil alih dan diedit manual. Saya sering memakai v0 hanya untuk draft pertama, lalu menyempurnakannya dengan Claude Code di repo lokal — kombinasi yang sangat produktif.",
+      "Rahasianya ada di fokus. v0 tidak mencoba mendukung semua framework; ia all-in pada React, Tailwind, dan shadcn/ui — stack yang kebetulan jadi standar de facto industri saat ini. Hasilnya kode yang idiomatis: komponen terstruktur wajar, kelas Tailwind tertata, dan yang terpenting, mudah diambil alih dan diedit manual. Tim editorial sering memakai v0 hanya untuk draft pertama, lalu menyempurnakannya dengan Claude Code di repo lokal — kombinasi yang sangat produktif.",
       "Kelemahannya adalah cermin dari kekuatannya. Keluar dari ekosistem React, v0 kehilangan relevansi. Untuk logika bisnis rumit, integrasi database serius, atau aplikasi multi-halaman yang dalam, kamu akan menabrak batasnya dan lebih baik pindah ke tool agentic penuh. Sistem kreditnya juga perlu diwaspadai: iterasi bolak-balik mengejar detail kecil bisa menguras kuota lebih cepat dari dugaan — biasakan menulis prompt yang spesifik sejak awal.",
       "Untuk konteks Indonesia: tier gratisnya cukup untuk merasakan nilainya dan menggarap proyek kecil, dan bagi freelancer web, kemampuan menyulap brief klien jadi mockup hidup dalam sehari adalah nilai jual nyata. Anggap v0 sebagai asisten desainer-frontend, bukan sebagai pabrik aplikasi.",
     ],
@@ -330,10 +330,10 @@ export const stacks: Review[] = [
     verdict:
       "Mesin prototipe terbaik untuk non-developer dan pemula. Untuk validasi ide dan MVP akhir pekan, Bolt luar biasa; untuk produk jangka panjang, siapkan rencana migrasi keluar.",
     body: [
-      "Bolt.new dibangun di atas teknologi yang membuat saya geleng-geleng pertama kali melihatnya: WebContainers, runtime Node.js yang berjalan sepenuhnya di dalam browser. Artinya, AI di Bolt tidak cuma menulis kode — ia menginstal dependensi, menjalankan dev server, melihat error yang muncul, dan memperbaikinya, semua tanpa kamu menginstal apa pun. Untuk konteks Indonesia, ini berarti laptop spek rendah atau bahkan komputer pinjaman pun cukup untuk membangun aplikasi.",
+      "Bolt.new dibangun di atas teknologi yang membuat tim editorial terkesan sejak pertama kali melihatnya: WebContainers, runtime Node.js yang berjalan sepenuhnya di dalam browser. Artinya, AI di Bolt tidak cuma menulis kode — ia menginstal dependensi, menjalankan dev server, melihat error yang muncul, dan memperbaikinya, semua tanpa kamu menginstal apa pun. Untuk konteks Indonesia, ini berarti laptop spek rendah atau bahkan komputer pinjaman pun cukup untuk membangun aplikasi.",
       "Alur kerjanya memabukkan bagi pemula: tulis ide ('aplikasi kasir sederhana untuk warung dengan rekap harian'), tonton aplikasinya terbentuk dan langsung berjalan di preview, minta revisi dengan bahasa sehari-hari, lalu deploy dengan beberapa klik. Integrasi dengan layanan database dan autentikasi populer membuat klaim 'full-stack'-nya bukan omong kosong — kamu benar-benar bisa punya aplikasi hidup dengan data tersimpan dalam satu sesi.",
       "Tapi ada dua jebakan yang harus diketahui sebelum jatuh cinta. Pertama, ekonomi token: Bolt mengirim banyak konteks di tiap iterasi, sehingga sesi coba-coba yang panjang bisa menguras kuota dengan kecepatan mengejutkan — sakit terasa di kurs rupiah. Kedua, kurva kualitas: untuk aplikasi kecil hasilnya mengesankan, tapi begitu proyek membesar, AI mulai kesulitan menjaga konsistensi dan kode mulai kusut. Bolt paling bersinar di fase nol-ke-satu, bukan satu-ke-seratus.",
-      "Posisi saya: Bolt adalah tool validasi ide terbaik untuk orang yang belum (atau tidak mau) jadi developer penuh. Bangun MVP-mu di sini, tunjukkan ke calon pengguna, dan kalau idenya terbukti, ekspor kodenya dan lanjutkan pengembangan serius dengan tool agentic di repo lokal.",
+      "Kesimpulan ulasan: Bolt adalah tool validasi ide terbaik untuk orang yang belum (atau tidak mau) jadi developer penuh. Bangun MVP-mu di sini, tunjukkan ke calon pengguna, dan kalau idenya terbukti, ekspor kodenya dan lanjutkan pengembangan serius dengan tool agentic di repo lokal.",
     ],
     link: "https://bolt.new",
     linkLabel: "Situs Resmi",

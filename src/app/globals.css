@@ -720,15 +720,18 @@ h1, h2, h3, .font-display {
 }
 
 .hero-visual-aside {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  width: 100%;
-  overflow: visible;
-  pointer-events: none;
+  display: none;
 }
 
 @media (min-width: 1024px) {
+  .hero-visual-aside {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
   .hero-shell {
     padding-right: min(420px, 42vw);
   }

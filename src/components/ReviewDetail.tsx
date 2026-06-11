@@ -7,7 +7,6 @@ import BookmarkButton from "./BookmarkButton";
 import ShareButton from "./ShareButton";
 import ReadingProgress from "./ReadingProgress";
 import RelatedContent from "./RelatedContent";
-import ScoreFeedback from "./ScoreFeedback";
 import GitHubStars from "./GitHubStars";
 import ItemLogo from "./ItemLogo";
 import { getRelatedReviews } from "@/lib/related";
@@ -86,8 +85,6 @@ export default function ReviewDetail({
               </ul>
             </section>
           )}
-
-          <ScoreFeedback slug={review.slug} />
 
           <section id="skor-rinci" className="panel-white fade-up delay-3 mt-10 scroll-mt-24 rounded-2xl border p-6 sm:p-8">
             <h2 className="text-xl font-bold text-slate-100">Skor Rinci</h2>

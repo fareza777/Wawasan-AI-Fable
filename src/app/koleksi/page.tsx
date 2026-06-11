@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import KoleksiClient from "./KoleksiClient";
 
 export const metadata: Metadata = {
-  title: "Koleksi Saya",
+  title: "Koleksi Tersimpan",
   description: "Review dan artikel yang kamu simpan di Wawasan AI.",
 };
 
