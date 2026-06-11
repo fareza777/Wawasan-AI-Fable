@@ -744,57 +744,108 @@ h1, h2, h3, .font-display {
 }
 
 .hero-visual-float {
+  position: relative;
   width: 100%;
-  max-width: 420px;
-  animation: hero-drift 7s ease-in-out infinite;
-  mask-image: radial-gradient(ellipse 72% 72% at 50% 50%, #000 42%, transparent 100%);
+  max-width: 440px;
+  animation: hero-drift 8s ease-in-out infinite;
+}
+
+.hero-visual-bloom {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(48px);
+  pointer-events: none;
+  animation: hero-bloom 9s ease-in-out infinite alternate;
+}
+
+.hero-visual-bloom-a {
+  top: 18%;
+  left: 12%;
+  width: 46%;
+  height: 46%;
+  background: rgba(13, 148, 136, 0.22);
+}
+
+.hero-visual-bloom-b {
+  right: 8%;
+  bottom: 14%;
+  width: 42%;
+  height: 42%;
+  background: rgba(124, 58, 237, 0.16);
+  animation-delay: -4s;
 }
 
 .hero-visual-svg {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: auto;
   overflow: visible;
 }
 
+.hero-visual-tag {
+  fill: rgba(255, 255, 255, 0.72);
+  stroke: rgba(13, 148, 136, 0.22);
+  stroke-width: 0.75;
+}
+
 .hero-visual-label {
   font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  fill: #5c6b7e;
+  fill: #334155;
 }
 
 .hero-visual-core-fill {
-  fill: rgba(255, 255, 255, 0.55);
-  stroke: rgba(14, 154, 175, 0.25);
-  stroke-width: 1;
+  fill: rgba(255, 255, 255, 0.78);
+  stroke: rgba(13, 148, 136, 0.4);
+  stroke-width: 1.25;
 }
 
 .hero-visual-core-text {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 800;
-  fill: url(#heroArc);
+  fill: url(#heroCoreText);
 }
 
 @keyframes hero-drift {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes hero-bloom {
+  0% { opacity: 0.55; transform: scale(1); }
+  100% { opacity: 0.9; transform: scale(1.08); }
 }
 
 [data-theme="dark"] .hero-visual-core-fill {
-  fill: rgba(10, 14, 26, 0.72);
-  stroke: rgba(34, 211, 238, 0.35);
+  fill: rgba(12, 18, 34, 0.88);
+  stroke: rgba(34, 211, 238, 0.45);
+}
+
+[data-theme="dark"] .hero-visual-tag {
+  fill: rgba(15, 22, 40, 0.82);
+  stroke: rgba(34, 211, 238, 0.28);
 }
 
 [data-theme="dark"] .hero-visual-label {
-  fill: #8b9cb3;
+  fill: #cbd5e1;
 }
 
 [data-theme="light"] .hero-visual-label {
-  fill: #4b5c70;
+  fill: #1e293b;
+}
+
+[data-theme="light"] .hero-visual-bloom-a {
+  background: rgba(13, 148, 136, 0.18);
+}
+
+[data-theme="light"] .hero-visual-bloom-b {
+  background: rgba(124, 58, 237, 0.12);
 }
 
 /* ===== 10. Dot pattern ===== */
@@ -916,6 +967,7 @@ a:hover > .logo-mark {
 @media (prefers-reduced-motion: reduce) {
   .text-gradient, .aurora, .fade-up, .cursor-blink, .animate-pulse-slow, .float-slow,
   .marquee-track, .glitch::before, .glitch::after, .reveal, .hero-visual-float,
+  .hero-visual-bloom,
   .fade-up {
     opacity: 1;
   }
