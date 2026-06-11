@@ -107,6 +107,13 @@ export function getIndonesianDescription(repo: WeeklyTrendingRepo, review?: Revi
 
   const name = shortRepoName(repo.fullName);
 
+  // 1. PRIORITAS TERTINGGI: hand-curated deskripsi Indonesia dari weeklyTop.ts
+  const curated = getWeeklyTopEntry(repo.fullName);
+  if (curated?.description?.trim()) {
+    return curated.description;
+  }
+
+  // 2. Fallback: deskripsi GitHub di-localize (Inggris, dengan istilah teknis diterjemahkan)
   if (repo.description?.trim()) {
     return finishSentence(`${name}: ${localizeDescription(repo.description)}`);
   }
