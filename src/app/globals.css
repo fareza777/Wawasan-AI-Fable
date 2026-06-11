@@ -460,12 +460,19 @@ h1, h2, h3, .font-display {
   background-color: rgba(17, 23, 41, 0.85) !important;
 }
 
+.panel-white {
+  background: linear-gradient(160deg, rgba(17, 23, 41, 0.88), rgba(8, 11, 20, 0.96));
+  border-color: rgba(40, 51, 84, 0.55);
+  box-shadow: 0 8px 28px -14px rgba(0, 0, 0, 0.35);
+}
+
 [data-theme="light"] .panel-white {
-  background: #ffffff !important;
+  background: #fafbfc !important;
   background-image: none !important;
+  border-color: rgba(148, 155, 168, 0.45) !important;
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.95) inset,
-    0 8px 32px -12px rgba(15, 23, 42, 0.14);
+    0 6px 24px -10px rgba(15, 23, 42, 0.12);
 }
 
 [data-theme="light"] .prose-id p,

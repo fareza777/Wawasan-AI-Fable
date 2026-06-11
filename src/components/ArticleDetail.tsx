@@ -53,7 +53,7 @@ export default function ArticleDetail({ artikel }: { artikel: Artikel }) {
         <ShareButton title={`${artikel.title} — Wawasan AI`} />
       </div>
 
-      <div className="prose-id mt-10 border-t border-ink-700 pt-8">
+      <div className="panel-white prose-id mt-10 rounded-2xl border p-6 sm:p-8">
         {artikel.body.map((section, i) => (
           <section key={i}>
             {section.heading && <h2>{section.heading}</h2>}

@@ -17,7 +17,7 @@ export default function ScoreFeedback({ slug }: { slug: string }) {
   };
 
   return (
-    <div className="mt-6 flex flex-wrap items-center gap-3 rounded-xl border border-ink-600 bg-ink-900/50 px-4 py-3">
+    <div className="panel-white mt-6 flex flex-wrap items-center gap-3 rounded-xl border px-4 py-3">
       <span className="text-sm text-slate-400">Setuju dengan skor ini?</span>
       <button
         onClick={() => cast("up")}

@@ -63,13 +63,13 @@ export default function ReviewDetail({
             <ShareButton title={`Review ${review.name} — Wawasan AI`} />
           </div>
 
-          <p className="fade-up delay-2 mt-8 rounded-2xl border border-ink-600 bg-ink-800/50 p-6 text-justify leading-relaxed text-slate-300">
+          <p className="panel-white fade-up delay-2 mt-8 rounded-2xl border p-6 text-justify leading-relaxed text-slate-300">
             {review.summary}
           </p>
 
           <ScoreFeedback slug={review.slug} />
 
-          <section id="skor-rinci" className="fade-up delay-3 mt-10 scroll-mt-24">
+          <section id="skor-rinci" className="panel-white fade-up delay-3 mt-10 scroll-mt-24 rounded-2xl border p-6 sm:p-8">
             <h2 className="text-xl font-bold text-slate-100">Skor Rinci</h2>
             <div className="mt-5 space-y-4">
               {review.scores.map((s) => (
@@ -79,7 +79,7 @@ export default function ReviewDetail({
           </section>
 
           <section id="kelebihan-kekurangan" className="fade-up delay-4 mt-10 grid scroll-mt-24 gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-emerald-500/25 bg-emerald-500/5 p-6">
+            <div className="panel-white rounded-2xl border border-emerald-500/30 p-6">
               <h2 className="font-bold text-emerald-400">Kelebihan</h2>
               <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-slate-300">
                 {review.pros.map((p) => (
@@ -90,7 +90,7 @@ export default function ReviewDetail({
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl border border-rose-500/25 bg-rose-500/5 p-6">
+            <div className="panel-white rounded-2xl border border-rose-500/30 p-6">
               <h2 className="font-bold text-rose-400">Kekurangan</h2>
               <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-slate-300">
                 {review.cons.map((c) => (
@@ -103,7 +103,7 @@ export default function ReviewDetail({
             </div>
           </section>
 
-          <section id="ulasan-lengkap" className="prose-id mt-10 scroll-mt-24">
+          <section id="ulasan-lengkap" className="panel-white prose-id mt-10 scroll-mt-24 rounded-2xl border p-6 sm:p-8">
             <h2>Ulasan Lengkap</h2>
             {review.body.map((p, i) => (
               <p key={i}>{p}</p>
@@ -112,7 +112,7 @@ export default function ReviewDetail({
 
           <section
             id="verdict"
-            className="mt-10 scroll-mt-24 rounded-2xl border border-neon-500/30 bg-gradient-to-br from-ink-800 to-ink-900 p-6"
+            className="panel-white mt-10 scroll-mt-24 rounded-2xl border border-neon-500/30 p-6"
           >
             <h2 className="flex items-center gap-2 font-bold text-neon-400">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
