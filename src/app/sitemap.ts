@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statis = [
     "",
     "/repo",
+    "/repo/weekly",
     "/model",
     "/stack",
     "/berita",

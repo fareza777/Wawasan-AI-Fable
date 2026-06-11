@@ -9,12 +9,21 @@ import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { href: "/repo", label: "Review Repo" },
+  { href: "/repo/weekly", label: "Top Mingguan" },
   { href: "/model", label: "Review Model" },
   { href: "/stack", label: "Review Tools" },
   { href: "/berita", label: "Berita" },
   { href: "/koleksi", label: "Koleksi" },
   { href: "/tentang", label: "Tentang" },
 ];
+
+function navActive(pathname: string, href: string) {
+  if (pathname === href) return true;
+  if (href === "/repo") {
+    return pathname.startsWith("/repo/") && !pathname.startsWith("/repo/weekly");
+  }
+  return href !== "/" && pathname.startsWith(`${href}/`);
+}
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -56,7 +65,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href))
+                navActive(pathname, l.href)
                   ? "bg-ink-800 text-neon-400"
                   : "text-slate-300 hover:bg-ink-800/60 hover:text-slate-100"
               }`}
@@ -96,7 +105,7 @@ export default function Navbar() {
               href={l.href}
               onClick={() => setOpen(false)}
               className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
-                pathname.startsWith(l.href) ? "bg-ink-800 text-neon-400" : "text-slate-300 hover:bg-ink-800"
+                navActive(pathname, l.href) ? "bg-ink-800 text-neon-400" : "text-slate-300 hover:bg-ink-800"
               }`}
             >
               {l.label}
