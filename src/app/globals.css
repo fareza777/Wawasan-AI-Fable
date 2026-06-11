@@ -320,7 +320,6 @@ h1, h2, h3, .font-display {
 }
 
 .steel-v2,
-[data-theme="light"]:not([data-steel]) body,
 [data-theme="light"][data-steel="2"] body {
   background-color: #b8bec7;
   background-image:
@@ -357,6 +356,7 @@ h1, h2, h3, .font-display {
 }
 
 .steel-v5,
+[data-theme="light"]:not([data-steel]) body,
 [data-theme="light"][data-steel="5"] body {
   background-color: #aeb6c2;
   background-image:
