@@ -714,7 +714,7 @@ h1, h2, h3, .font-display {
   border-left: 3px solid #22d3ee;
 }
 
-/* ===== Hero layout + constellation visual ===== */
+/* ===== Hero layout + solar system visual ===== */
 .hero-shell {
   min-height: clamp(400px, 48vw, 500px);
 }
@@ -758,21 +758,13 @@ h1, h2, h3, .font-display {
   animation: hero-bloom 9s ease-in-out infinite alternate;
 }
 
-.hero-visual-bloom-a {
-  top: 18%;
-  left: 12%;
-  width: 46%;
-  height: 46%;
-  background: rgba(13, 148, 136, 0.22);
-}
-
-.hero-visual-bloom-b {
-  right: 8%;
-  bottom: 14%;
-  width: 42%;
-  height: 42%;
-  background: rgba(124, 58, 237, 0.16);
-  animation-delay: -4s;
+.hero-visual-bloom-sun {
+  top: 50%;
+  left: 50%;
+  width: 55%;
+  height: 55%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.35), rgba(249, 115, 22, 0.08) 55%, transparent 72%);
+  animation: hero-sun-bloom 5s ease-in-out infinite alternate;
 }
 
 .hero-visual-svg {
@@ -784,32 +776,18 @@ h1, h2, h3, .font-display {
   overflow: visible;
 }
 
-.hero-visual-tag {
-  fill: rgba(255, 255, 255, 0.72);
-  stroke: rgba(13, 148, 136, 0.22);
-  stroke-width: 0.75;
+.hero-orbit-path {
+  stroke: rgba(100, 116, 139, 0.28);
+  stroke-dasharray: 2 10;
 }
 
-.hero-visual-label {
+.hero-planet-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   fill: #334155;
-}
-
-.hero-visual-core-fill {
-  fill: rgba(255, 255, 255, 0.78);
-  stroke: rgba(13, 148, 136, 0.4);
-  stroke-width: 1.25;
-}
-
-.hero-visual-core-text {
-  font-family: var(--font-display);
-  font-size: 30px;
-  font-weight: 800;
-  fill: url(#heroCoreText);
 }
 
 @keyframes hero-drift {
@@ -822,30 +800,25 @@ h1, h2, h3, .font-display {
   100% { opacity: 0.9; transform: scale(1.08); }
 }
 
-[data-theme="dark"] .hero-visual-core-fill {
-  fill: rgba(12, 18, 34, 0.88);
-  stroke: rgba(34, 211, 238, 0.45);
+@keyframes hero-sun-bloom {
+  0% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0.92; transform: translate(-50%, -50%) scale(1.1); }
 }
 
-[data-theme="dark"] .hero-visual-tag {
-  fill: rgba(15, 22, 40, 0.82);
-  stroke: rgba(34, 211, 238, 0.28);
+[data-theme="dark"] .hero-orbit-path {
+  stroke: rgba(148, 163, 184, 0.22);
 }
 
-[data-theme="dark"] .hero-visual-label {
-  fill: #cbd5e1;
+[data-theme="dark"] .hero-planet-label {
+  fill: #e2e8f0;
 }
 
-[data-theme="light"] .hero-visual-label {
+[data-theme="light"] .hero-planet-label {
   fill: #1e293b;
 }
 
-[data-theme="light"] .hero-visual-bloom-a {
-  background: rgba(13, 148, 136, 0.18);
-}
-
-[data-theme="light"] .hero-visual-bloom-b {
-  background: rgba(124, 58, 237, 0.12);
+[data-theme="light"] .hero-orbit-path {
+  stroke: rgba(71, 85, 105, 0.3);
 }
 
 /* ===== 10. Dot pattern ===== */

@@ -1,34 +1,106 @@
-/** Hero kanan — organic neural compass (jelas, natural, tanpa kotak). */
-const NODES = [
-  { label: "repo", color: "#0d9488", glow: "#5eead4", angle: -20, dur: 24 },
-  { label: "model", color: "#7c3aed", glow: "#c4b5fd", angle: 40, dur: 20 },
-  { label: "stack", color: "#059669", glow: "#6ee7b7", angle: 100, dur: 28 },
-  { label: "agent", color: "#db2777", glow: "#f9a8d4", angle: 160, dur: 22 },
-  { label: "RAG", color: "#d97706", glow: "#fcd34d", angle: 220, dur: 32 },
-  { label: "MCP", color: "#2563eb", glow: "#93c5fd", angle: 280, dur: 26 },
+/** Hero kanan — tata surya AI (matahari + planet, label tanpa kotak). */
+const PLANETS = [
+  {
+    label: "repo",
+    orbit: 86,
+    size: 5,
+    angle: 15,
+    dur: 16,
+    grad: ["#d6d3d1", "#78716c"],
+    ring: false,
+  },
+  {
+    label: "MCP",
+    orbit: 102,
+    size: 5.5,
+    angle: 95,
+    dur: 22,
+    grad: ["#93c5fd", "#1d4ed8"],
+    ring: false,
+  },
+  {
+    label: "stack",
+    orbit: 118,
+    size: 6.5,
+    angle: 175,
+    dur: 28,
+    grad: ["#6ee7b7", "#047857"],
+    ring: false,
+  },
+  {
+    label: "model",
+    orbit: 136,
+    size: 10,
+    angle: 250,
+    dur: 36,
+    grad: ["#c4b5fd", "#5b21b6"],
+    ring: true,
+  },
+  {
+    label: "agent",
+    orbit: 152,
+    size: 6,
+    angle: 310,
+    dur: 24,
+    grad: ["#fda4af", "#be123c"],
+    ring: false,
+  },
+  {
+    label: "RAG",
+    orbit: 168,
+    size: 7.5,
+    angle: 55,
+    dur: 42,
+    grad: ["#fdba74", "#c2410c"],
+    ring: false,
+  },
 ] as const;
 
 const CX = 200;
 const CY = 200;
-const ORBIT = 138;
-const LABEL_R = ORBIT + 34;
 
-function polar(angle: number, radius: number) {
-  const rad = (angle * Math.PI) / 180;
-  return { x: CX + radius * Math.cos(rad), y: CY + radius * Math.sin(rad) };
-}
-
-function curveToCenter(angle: number) {
-  const outer = polar(angle, ORBIT);
-  const ctrl = polar(angle, ORBIT * 0.45);
-  return `M ${outer.x} ${outer.y} Q ${ctrl.x} ${ctrl.y} ${CX} ${CY}`;
+function Planet({
+  cx,
+  cy,
+  size,
+  grad,
+  ring,
+  gradId,
+}: {
+  cx: number;
+  cy: number;
+  size: number;
+  grad: readonly [string, string];
+  ring: boolean;
+  gradId: string;
+}) {
+  return (
+    <g>
+      {ring && (
+        <ellipse
+          cx={cx}
+          cy={cy}
+          rx={size + 7}
+          ry={size * 0.35}
+          fill="none"
+          stroke="rgba(196, 181, 253, 0.55)"
+          strokeWidth={1.25}
+          transform={`rotate(-18 ${cx} ${cy})`}
+        />
+      )}
+      <circle cx={cx - size * 0.25} cy={cy - size * 0.25} r={size * 1.1} fill={grad[0]} opacity={0.22} />
+      <circle cx={cx} cy={cy} r={size} fill={`url(#${gradId})`} />
+      <circle cx={cx - size * 0.28} cy={cy - size * 0.32} r={size * 0.22} fill="#fff" opacity={0.55} />
+    </g>
+  );
 }
 
 export default function HeroFuturisticVisual() {
+  const orbits = [...new Set(PLANETS.map((p) => p.orbit))];
+
   return (
     <div className="hero-visual-float" aria-hidden>
-      <div className="hero-visual-bloom hero-visual-bloom-a" />
-      <div className="hero-visual-bloom hero-visual-bloom-b" />
+      <div className="hero-visual-bloom hero-visual-bloom-sun" />
 
       <svg
         className="hero-visual-svg"
@@ -36,157 +108,102 @@ export default function HeroFuturisticVisual() {
         width={400}
         height={400}
         role="img"
-        aria-label="Navigasi neural AI"
+        aria-label="Tata surya navigasi AI"
       >
         <defs>
-          <radialGradient id="heroNebula" cx="50%" cy="48%" r="52%">
-            <stop offset="0%" stopColor="#0d9488" stopOpacity="0.28" />
-            <stop offset="42%" stopColor="#7c3aed" stopOpacity="0.14" />
+          <radialGradient id="spaceGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.18" />
+            <stop offset="55%" stopColor="#7c3aed" stopOpacity="0.06" />
             <stop offset="100%" stopColor="#7c3aed" stopOpacity="0" />
           </radialGradient>
-          <linearGradient id="heroRing" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0d9488" />
-            <stop offset="50%" stopColor="#6366f1" />
-            <stop offset="100%" stopColor="#a855f7" />
-          </linearGradient>
-          <linearGradient id="heroCoreText" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0f766e" />
-            <stop offset="100%" stopColor="#7c3aed" />
-          </linearGradient>
-          <filter id="heroBloom" x="-60%" y="-60%" width="220%" height="220%">
-            <feGaussianBlur stdDeviation="6" result="b" />
+          <radialGradient id="sunCore" cx="38%" cy="35%" r="65%">
+            <stop offset="0%" stopColor="#fff7c2" />
+            <stop offset="35%" stopColor="#fde047" />
+            <stop offset="65%" stopColor="#f59e0b" />
+            <stop offset="100%" stopColor="#ea580c" />
+          </radialGradient>
+          <filter id="sunGlow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="8" result="b" />
             <feMerge>
               <feMergeNode in="b" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
-          <filter id="heroDotGlow" x="-120%" y="-120%" width="340%" height="340%">
-            <feGaussianBlur stdDeviation="3.5" result="b" />
-            <feMerge>
-              <feMergeNode in="b" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
+          <filter id="labelLegible">
+            <feDropShadow dx="0" dy="0" stdDeviation="1.2" floodColor="#ffffff" floodOpacity="0.95" />
+            <feDropShadow dx="0" dy="1" stdDeviation="2" floodColor="#0f172a" floodOpacity="0.25" />
           </filter>
+          {PLANETS.map((p) => (
+            <radialGradient
+              key={`grad-${p.label}`}
+              id={`planet-${p.label}`}
+              cx="32%"
+              cy="28%"
+              r="68%"
+            >
+              <stop offset="0%" stopColor={p.grad[0]} />
+              <stop offset="100%" stopColor={p.grad[1]} />
+            </radialGradient>
+          ))}
         </defs>
 
-        <circle cx={CX} cy={CY} r={185} fill="url(#heroNebula)" />
+        <circle cx={CX} cy={CY} r={190} fill="url(#spaceGlow)" />
 
-        {/* Primary orbit — tilted ellipse for organic feel */}
-        <g opacity={0.55}>
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            from={`0 ${CX} ${CY}`}
-            to={`360 ${CX} ${CY}`}
-            dur="90s"
-            repeatCount="indefinite"
-          />
-          <ellipse
+        {/* Orbit paths */}
+        {orbits.map((r) => (
+          <circle
+            key={r}
             cx={CX}
             cy={CY}
-            rx={ORBIT + 6}
-            ry={ORBIT - 4}
+            r={r}
             fill="none"
-            stroke="url(#heroRing)"
-            strokeWidth={2}
-            opacity={0.7}
+            className="hero-orbit-path"
+            strokeWidth={0.75}
           />
-        </g>
+        ))}
 
-        <ellipse
-          cx={CX}
-          cy={CY}
-          rx={ORBIT}
-          ry={ORBIT * 0.94}
-          fill="none"
-          stroke="url(#heroRing)"
-          strokeWidth={1.25}
-          opacity={0.45}
-        />
-
-        {/* Flow lines to center */}
-        <g opacity={0.3}>
-          {NODES.map((n) => (
-            <path
-              key={`flow-${n.label}`}
-              d={curveToCenter(n.angle)}
-              fill="none"
-              stroke="url(#heroRing)"
-              strokeWidth={1}
-              strokeLinecap="round"
-            />
-          ))}
-        </g>
-
-        {/* Fixed labels — always readable */}
-        {NODES.map((n) => {
-          const p = polar(n.angle, LABEL_R);
-          const w = n.label.length * 7.2 + 18;
-          return (
-            <g key={`lbl-${n.label}`}>
-              <rect
-                x={p.x - w / 2}
-                y={p.y - 11}
-                width={w}
-                height={18}
-                rx={9}
-                className="hero-visual-tag"
-              />
-              <text x={p.x} y={p.y + 4} textAnchor="middle" className="hero-visual-label">
-                {n.label}
-              </text>
-            </g>
-          );
-        })}
-
-        {/* Orbiting luminous nodes */}
-        {NODES.map((n) => (
-          <g key={`dot-${n.label}`}>
+        {/* Planets + labels (orbit together) */}
+        {PLANETS.map((p) => (
+          <g key={p.label}>
             <animateTransform
               attributeName="transform"
               type="rotate"
-              from={`${n.angle} ${CX} ${CY}`}
-              to={`${n.angle + 360} ${CX} ${CY}`}
-              dur={`${n.dur}s`}
+              from={`${p.angle} ${CX} ${CY}`}
+              to={`${p.angle + 360} ${CX} ${CY}`}
+              dur={`${p.dur}s`}
               repeatCount="indefinite"
             />
-            <circle
-              cx={CX + ORBIT}
+            <Planet
+              cx={CX + p.orbit}
               cy={CY}
-              r={16}
-              fill={n.glow}
-              opacity={0.35}
+              size={p.size}
+              grad={p.grad}
+              ring={p.ring}
+              gradId={`planet-${p.label}`}
             />
-            <circle
-              cx={CX + ORBIT}
-              cy={CY}
-              r={8}
-              fill={n.color}
-              filter="url(#heroDotGlow)"
-            />
-            <circle cx={CX + ORBIT} cy={CY} r={3} fill="#fff" opacity={0.85} />
+            <text
+              x={CX + p.orbit}
+              y={CY - p.size - 10}
+              textAnchor="middle"
+              className="hero-planet-label"
+              filter="url(#labelLegible)"
+            >
+              {p.label}
+            </text>
           </g>
         ))}
 
-        {/* Core */}
-        <g className="hero-visual-core" filter="url(#heroBloom)">
-          <circle cx={CX} cy={CY} r={52} fill="none" stroke="url(#heroRing)" strokeWidth={1}>
-            <animate attributeName="r" values="52;58;52" dur="3.5s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.28;0.55;0.28" dur="3.5s" repeatCount="indefinite" />
+        {/* Sun */}
+        <g filter="url(#sunGlow)" className="hero-sun">
+          <circle cx={CX} cy={CY} r={44} fill="#fbbf24" opacity={0.2}>
+            <animate attributeName="r" values="44;50;44" dur="4s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.15;0.28;0.15" dur="4s" repeatCount="indefinite" />
           </circle>
-          <circle
-            cx={CX}
-            cy={CY}
-            r={42}
-            fill="none"
-            stroke="url(#heroRing)"
-            strokeWidth={1.75}
-            opacity={0.75}
-          />
-          <circle cx={CX} cy={CY} r={34} className="hero-visual-core-fill" />
-          <text x={CX} y={CY + 10} textAnchor="middle" className="hero-visual-core-text">
-            AI
-          </text>
+          <circle cx={CX} cy={CY} r={36} fill="#fde047" opacity={0.35}>
+            <animate attributeName="opacity" values="0.28;0.45;0.28" dur="3s" repeatCount="indefinite" />
+          </circle>
+          <circle cx={CX} cy={CY} r={28} fill="url(#sunCore)" />
+          <circle cx={CX - 8} cy={CY - 9} r={6} fill="#fff" opacity={0.35} />
         </g>
       </svg>
     </div>
