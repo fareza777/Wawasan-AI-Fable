@@ -714,183 +714,124 @@ h1, h2, h3, .font-display {
   border-left: 3px solid #22d3ee;
 }
 
-/* ===== Hero futuristic visual (CSS only — Neural Orbit) ===== */
+/* ===== Hero futuristic visual (SVG Neural Orbit) ===== */
 .hero-visual {
-  min-height: min(400px, 70vw);
-  opacity: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.5rem 0;
 }
 
-.hero-visual-stage {
-  position: relative;
-  width: min(400px, 100%);
-  aspect-ratio: 1;
-  margin-inline: auto;
+.hero-visual-svg-root {
+  display: block;
+  width: min(400px, 88vw);
+  height: auto;
+  overflow: visible;
 }
 
-.hero-visual-glow {
-  position: absolute;
-  inset: 12%;
-  border-radius: 9999px;
-  background: radial-gradient(circle, rgba(34, 211, 238, 0.2), rgba(139, 92, 246, 0.08) 55%, transparent 70%);
+.hero-visual-ambient {
+  fill: rgba(6, 182, 212, 0.14);
+  stroke: none;
   animation: hero-pulse 4s ease-in-out infinite;
 }
 
-.hero-visual-ring {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  border-radius: 9999px;
-  border: 1px solid rgba(34, 211, 238, 0.35);
-}
-
-.hero-visual-ring-outer {
-  width: 100%;
-  height: 100%;
-  animation: hero-orbit-spin 48s linear infinite reverse;
+.hero-visual-ring-stroke {
+  fill: none;
+  stroke: url(#heroStrokeGrad);
+  opacity: 0.55;
 }
 
 .hero-visual-ring-mid {
-  width: 72%;
-  height: 72%;
-  border-color: rgba(139, 92, 246, 0.25);
-  animation: hero-orbit-spin 32s linear infinite;
+  opacity: 0.4;
 }
 
 .hero-visual-ring-inner {
-  width: 44%;
-  height: 44%;
-  border-color: rgba(34, 211, 238, 0.35);
-  border-style: dashed;
-  animation: hero-orbit-spin 20s linear infinite reverse;
+  opacity: 0.5;
 }
 
-.hero-visual-core {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  margin: auto;
-  display: flex;
-  height: 5.5rem;
-  width: 5.5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  border: 1px solid rgba(34, 211, 238, 0.45);
-  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.15), rgba(17, 23, 41, 0.92) 65%);
-  box-shadow: 0 0 40px rgba(34, 211, 238, 0.25), inset 0 0 24px rgba(139, 92, 246, 0.15);
+.hero-visual-guide {
+  fill: none;
+  stroke: url(#heroStrokeGrad);
+  stroke-width: 1;
+  opacity: 0.28;
 }
 
-.hero-visual-core-text {
+.hero-visual-guide-inner {
+  opacity: 0.38;
+}
+
+.hero-visual-core-circle {
+  stroke: rgba(6, 182, 212, 0.55);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 18px rgba(6, 182, 212, 0.35));
+}
+
+.hero-visual-core-label {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 26px;
   font-weight: 800;
-  background: linear-gradient(135deg, #22d3ee, #c084fc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  fill: url(#heroStrokeGrad);
 }
 
-.hero-visual-orbit {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  animation: hero-orbit-spin 26s linear infinite;
-}
-
-.hero-visual-node {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 0.875rem;
-  width: 0.875rem;
-  margin-top: -0.4375rem;
-  margin-left: -0.4375rem;
-  border-radius: 9999px;
-  transform: translateX(148px);
-}
-
-.hero-visual-node-label {
-  position: absolute;
-  top: -1.35rem;
-  left: 50%;
-  transform: translateX(-50%);
+.hero-visual-node-text {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  fill: #64748b;
+}
+
+.hero-visual-scan-mask {
+  fill: none;
+  stroke: none;
+  opacity: 0;
+}
+
+.hero-visual-scan-stroke {
+  stroke: rgba(6, 182, 212, 0.65);
+  stroke-width: 2;
+  opacity: 0.7;
+}
+
+.hero-visual-caption {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.25em;
   color: #64748b;
-  white-space: nowrap;
-  animation: hero-orbit-spin 26s linear infinite reverse;
-}
-
-.hero-visual-svg {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  pointer-events: none;
-}
-
-.hero-visual-scan {
-  position: absolute;
-  inset: 8%;
-  z-index: 4;
-  border-radius: 9999px;
-  overflow: hidden;
-  pointer-events: none;
-  mask-image: radial-gradient(circle, black 55%, transparent 72%);
-}
-
-.hero-visual-scan::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.7), transparent);
-  animation: hero-scan 5s ease-in-out infinite;
-}
-
-@keyframes hero-orbit-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 @keyframes hero-pulse {
-  0%, 100% { opacity: 0.65; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.04); }
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.85; }
 }
 
-@keyframes hero-scan {
-  0% { top: 0%; opacity: 0; }
-  15% { opacity: 1; }
-  85% { opacity: 1; }
-  100% { top: 100%; opacity: 0; }
+[data-theme="dark"] .hero-visual-core-circle {
+  fill: rgba(17, 23, 41, 0.95);
+  stroke: rgba(34, 211, 238, 0.5);
 }
 
-[data-theme="light"] .hero-visual-core {
-  background: radial-gradient(circle at 35% 30%, #ffffff, #e8ecf2 70%);
-  box-shadow: 0 0 36px rgba(13, 148, 136, 0.2), inset 0 0 20px rgba(124, 106, 173, 0.12);
+[data-theme="dark"] .hero-visual-core-label {
+  fill: #22d3ee;
 }
 
-[data-theme="light"] .hero-visual-glow {
-  background: radial-gradient(circle, rgba(13, 148, 136, 0.22), rgba(124, 106, 173, 0.1) 55%, transparent 70%);
+[data-theme="light"] .hero-visual-ambient {
+  opacity: 0.16;
 }
 
-[data-theme="light"] .hero-visual-ring {
-  border-color: rgba(13, 148, 136, 0.45);
+[data-theme="light"] .hero-visual-ring-stroke {
+  opacity: 0.65;
 }
 
-[data-theme="light"] .hero-visual-ring-mid {
-  border-color: rgba(124, 106, 173, 0.4);
-}
-
-[data-theme="light"] .hero-visual-node-label {
+[data-theme="light"] .hero-visual-node-text,
+[data-theme="light"] .hero-visual-caption {
+  fill: #475569;
   color: #475569;
 }
 
@@ -1013,9 +954,9 @@ a:hover > .logo-mark {
 @media (prefers-reduced-motion: reduce) {
   .text-gradient, .aurora, .fade-up, .cursor-blink, .animate-pulse-slow, .float-slow,
   .marquee-track, .glitch::before, .glitch::after, .reveal,
-  .hero-visual-orbit, .hero-visual-ring, .hero-visual-glow, .hero-visual-scan::after,
-  .hero-visual-node-label {
+  .hero-visual-ambient {
     animation: none;
+    opacity: 0.7;
   }
   .fade-up {
     opacity: 1;
