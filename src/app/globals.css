@@ -747,47 +747,37 @@ h1, h2, h3, .font-display {
   position: relative;
   width: 100%;
   max-width: 440px;
+  height: min(420px, 52vw);
   animation: hero-drift 8s ease-in-out infinite;
 }
 
-.hero-visual-bloom {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(48px);
-  pointer-events: none;
-  animation: hero-bloom 9s ease-in-out infinite alternate;
-}
-
-.hero-visual-bloom-sun {
-  top: 50%;
-  left: 50%;
-  width: 55%;
-  height: 55%;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.35), rgba(249, 115, 22, 0.08) 55%, transparent 72%);
-  animation: hero-sun-bloom 5s ease-in-out infinite alternate;
-}
-
-.hero-visual-svg {
-  position: relative;
-  z-index: 1;
+.hero-visual-canvas {
   display: block;
-  width: 100%;
-  height: auto;
-  overflow: visible;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.hero-orbit-path {
-  stroke: rgba(100, 116, 139, 0.28);
-  stroke-dasharray: 2 10;
+.hero-visual-canvas--loading {
+  background: radial-gradient(
+    ellipse 70% 70% at 50% 45%,
+    rgba(251, 191, 36, 0.12),
+    transparent 70%
+  );
 }
 
-.hero-planet-label {
+.hero-planet-label-3d {
   font-family: var(--font-mono);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  fill: #334155;
+  color: #334155;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.95),
+    0 1px 3px rgba(15, 23, 42, 0.25);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
 }
 
 @keyframes hero-drift {
@@ -795,30 +785,12 @@ h1, h2, h3, .font-display {
   50% { transform: translateY(-10px); }
 }
 
-@keyframes hero-bloom {
-  0% { opacity: 0.55; transform: scale(1); }
-  100% { opacity: 0.9; transform: scale(1.08); }
+[data-theme="dark"] .hero-planet-label-3d {
+  color: #e2e8f0;
 }
 
-@keyframes hero-sun-bloom {
-  0% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
-  100% { opacity: 0.92; transform: translate(-50%, -50%) scale(1.1); }
-}
-
-[data-theme="dark"] .hero-orbit-path {
-  stroke: rgba(148, 163, 184, 0.22);
-}
-
-[data-theme="dark"] .hero-planet-label {
-  fill: #e2e8f0;
-}
-
-[data-theme="light"] .hero-planet-label {
-  fill: #1e293b;
-}
-
-[data-theme="light"] .hero-orbit-path {
-  stroke: rgba(71, 85, 105, 0.3);
+[data-theme="light"] .hero-planet-label-3d {
+  color: #1e293b;
 }
 
 /* ===== 10. Dot pattern ===== */
@@ -940,7 +912,6 @@ a:hover > .logo-mark {
 @media (prefers-reduced-motion: reduce) {
   .text-gradient, .aurora, .fade-up, .cursor-blink, .animate-pulse-slow, .float-slow,
   .marquee-track, .glitch::before, .glitch::after, .reveal, .hero-visual-float,
-  .hero-visual-bloom,
   .fade-up {
     opacity: 1;
   }
