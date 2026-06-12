@@ -397,6 +397,42 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-02-05",
   },
+  {
+    slug: "muse-spark",
+    name: "Muse Spark",
+    tagline: "Model eksperimental Meta untuk generasi kreatif multimodal",
+    tags: ["Meta", "Open Weight", "Multimodal", "Kreatif"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    summary:
+      "Muse Spark adalah keluarga model eksperimental dari Meta yang fokus pada generasi kreatif multimodal — teks, gambar, dan audio dalam satu pipeline. Intelligence index 52 dan bobot terbuka menjadikannya pilihan menarik untuk eksplorasi pipeline generasi konten di infrastruktur sendiri. Bukan model penalaran terkuat, tapi kelebihannya ada pada kelancaran dan integrasi multimodal.",
+    pros: [
+      "Multimodal terpadu (teks, gambar, audio) dalam satu model — tidak perlu chain beberapa model",
+      "Open weight — bisa dijalankan lokal lewat Ollama, vLLM, atau transformers",
+      "Throughput tinggi untuk kategori ukurannya (median output 100+ tokens/sec)",
+      "Cocok untuk pipeline generasi konten kreatif yang tidak butuh penalaran berat",
+    ],
+    cons: [
+      "Intelligence index lebih rendah dari frontier (52) — kurang cocok untuk coding agent atau analisis",
+      "Dokumentasi dan tooling pihak ketiga masih terbatas dibanding model mainstream",
+      "Penalaran kompleks masih sering keliru pada prompt ambigu",
+    ],
+    verdict:
+      "Rekomendasi: pakai untuk eksplorasi multimodal di mesin sendiri, bukan untuk pekerjaan coding atau analisis berat. Pilih Qwen 3 atau Llama 4 kalau butuh penalaran; pilih Muse Spark kalau butuh generasi konten kreatif dengan integrasi native.",
+    body: [
+      "Meta memperkenalkan Muse Spark sebagai bagian dari eksplorasinya di generative multimodal — model yang sejak awal dirancang untuk menghasilkan teks, gambar, dan audio dalam satu sistem, bukan digabung dari komponen terpisah. Pendekatan ini berbeda dari kebanyakan model open-weight di kelas yang sama, yang biasanya khusus di satu modalitas. Hasilnya adalah model yang mulus untuk pipeline konten, meskipun intelligence indexnya tidak setinggi frontier.",
+      "Dalam pengujian editorial Wawasan AI, Muse Spark menunjukkan kelebihannya di workload yang meminta orkestrasi beberapa modalitas: misalnya menghasilkan caption otomatis untuk serangkaian gambar, atau menulis narasi audio dari skrip yang sudah ada. Untuk kasus seperti ini, latensi rendah dan integrasi native multimodal sangat terasa — model tidak perlu 'menerjemahkan' antar modalitas lewat pipeline terpisah.",
+      "Kritik yang perlu dicatat: intelligence index 52 (berdasarkan benchmark Artificial Analysis) menempatkannya di bawah frontier seperti Claude Opus 4.5 (90+) atau DeepSeek V3 (60+). Untuk coding agentic, analisis data, atau penalaran berat, Muse Spark kurang tepat — pilih Qwen 3 atau DeepSeek. Untuk generasi konten kreatif, integrasi multimodal, atau eksplorasi di mesin lokal dengan sumber daya terbatas, ia punya nilai yang tidak ditawarkan model lain.",
+    ],
+    link: "https://ai.meta.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-12",
+  },
 ];
 
 export function getModel(slug: string) {
