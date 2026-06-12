@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import WeeklyHomePreview from "@/components/WeeklyHomePreview";
+import { repos } from "@/data/repos";
+import { models } from "@/data/models";
+import { stacks } from "@/data/stacks";
+import { berita } from "@/data/berita";
 
 export const metadata: Metadata = {
   title: "Tentang Wawasan AI",
@@ -28,12 +31,12 @@ const layanan = [
 ];
 
 const rubrik = [
-  { href: "/repo/daily", label: "Top Daily Repo", count: "10+" },
-  { href: "/repo/weekly", label: "Top Weekly Repo", count: "10+" },
-  { href: "/repo", label: "Review Repo GitHub", count: "11+" },
-  { href: "/model", label: "Skor Model LLM", count: "11" },
-  { href: "/stack", label: "Review Tools", count: "10" },
-  { href: "/berita", label: "Berita & Wawasan", count: "10+" },
+  { href: "/repo/daily", label: "Top Daily Repo", count: "10" },
+  { href: "/repo/weekly", label: "Top Weekly Repo", count: "10" },
+  { href: "/repo", label: "Review Repo GitHub", count: String(repos.length) },
+  { href: "/model", label: "Skor Model LLM", count: String(models.length) },
+  { href: "/stack", label: "Review Tools", count: String(stacks.length) },
+  { href: "/berita", label: "Berita & Wawasan", count: String(berita.length) },
 ];
 
 export default function TentangPage() {
@@ -65,35 +68,6 @@ export default function TentangPage() {
             <h3 className="mt-1 font-bold text-slate-100">{r.label}</h3>
           </Link>
         ))}
-      </div>
-
-      <div className="mt-14 flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-neon-400">
-            // top trending
-          </p>
-          <h2 className="mt-2 text-xl font-bold text-slate-100">Top Daily & Weekly Repo</h2>
-          <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
-            Repo open-source yang sedang naik daun — diambil dari Trendshift, dengan narasi bahasa Indonesia.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          <Link
-            href="/repo/daily"
-            className="rounded-xl border border-ink-600 bg-ink-800/60 px-4 py-2 text-sm font-semibold text-slate-200 transition-colors hover:border-neon-400/50"
-          >
-            Top Daily →
-          </Link>
-          <Link
-            href="/repo/weekly"
-            className="rounded-xl border border-neon-500/30 bg-neon-500/10 px-4 py-2 text-sm font-semibold text-neon-400 transition-colors hover:bg-neon-500/15"
-          >
-            Top Weekly →
-          </Link>
-        </div>
-      </div>
-      <div className="mt-6">
-        <WeeklyHomePreview />
       </div>
 
       <h2 className="mt-14 text-xl font-bold text-slate-100">Layanan Perusahaan</h2>

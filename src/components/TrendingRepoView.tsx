@@ -3,12 +3,13 @@ import TrendingPeriodPicker from "@/components/TrendingPeriodPicker";
 import { repos } from "@/data/repos";
 import { fetchGitHubStats } from "@/lib/githubMeta";
 import {
+  buildWeeklyPeriodOptions,
   fetchAvailableDailyPeriods,
-  fetchAvailableWeeklyPeriods,
   fetchDailySnapshot,
   fetchDailyTrendingRepos,
   fetchWeeklyTrendingRepos,
   TrendCadence,
+  WeeklyPeriod,
 } from "@/lib/trendshift";
 import { formatTanggal } from "@/lib/format";
 import { getIndonesianDescription, getWeeklyHighlights } from "@/lib/weeklyId";
@@ -31,16 +32,18 @@ export default async function TrendingRepoView({
 }) {
   const isDailyArchive = cadence === "daily" && period !== undefined && "date" in period;
 
-  const [data, periods] = await Promise.all([
-    isDailyArchive
-      ? fetchDailySnapshot(period.date)
-      : cadence === "daily"
-        ? fetchDailyTrendingRepos()
-        : fetchWeeklyTrendingRepos(period as { year: number; week: number } | undefined),
+  const data = isDailyArchive
+    ? await fetchDailySnapshot(period.date)
+    : cadence === "daily"
+      ? await fetchDailyTrendingRepos()
+      : await fetchWeeklyTrendingRepos(period as { year: number; week: number } | undefined);
+
+  const periods =
     cadence === "daily"
-      ? fetchAvailableDailyPeriods()
-      : fetchAvailableWeeklyPeriods(),
-  ]);
+      ? await fetchAvailableDailyPeriods()
+      : buildWeeklyPeriodOptions(
+          data.period && "week" in data.period ? (data.period as WeeklyPeriod) : null,
+        );
 
   const today = isDailyArchive
     ? period.date

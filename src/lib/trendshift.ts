@@ -315,42 +315,43 @@ export async function fetchAvailableDailyPeriods(maxDays = 30): Promise<Trending
   return periods;
 }
 
-export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<TrendingPeriodOption[]> {
-  const periods: TrendingPeriodOption[] = [];
+/** Bangun opsi riwayat minggu tanpa fetch berulang ke Trendshift. */
+export function buildWeeklyPeriodOptions(
+  period: WeeklyPeriod | null | undefined,
+  maxWeeks = 8,
+): TrendingPeriodOption[] {
+  if (!period || period.week <= 0) {
+    return [{ label: "Minggu ini", path: "/repo/weekly" }];
+  }
 
+  const periods: TrendingPeriodOption[] = [];
+  let { year, week } = period;
+  const onCurrentWeek = period.path === "/repo/weekly";
+
+  for (let i = 0; i < maxWeeks; i++) {
+    periods.push({
+      label: i === 0 ? period.label : `Minggu ke-${week}, ${year}`,
+      path: i === 0 && onCurrentWeek ? "/repo/weekly" : `/repo/weekly/${year}/${week}`,
+    });
+    week -= 1;
+    if (week < 1) {
+      year -= 1;
+      week = 52;
+    }
+  }
+
+  return periods;
+}
+
+/** @deprecated prefer buildWeeklyPeriodOptions after satu kali fetchWeeklyTrendingRepos */
+export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<TrendingPeriodOption[]> {
   try {
     const current = await fetchWeeklyTrendingRepos();
-    if (current.period && "week" in current.period && current.period.week > 0) {
-      periods.push({
-        label: current.periodLabel,
-        path: "/repo/weekly",
-      });
-
-      let { year, week } = current.period;
-
-      for (let i = 1; i < maxWeeks; i++) {
-        week -= 1;
-        if (week < 1) {
-          year -= 1;
-          week = 52;
-        }
-
-        try {
-          const archived = await fetchWeeklyTrendingRepos({ year, week });
-          if (periods.some((p) => p.path === `/repo/weekly/${year}/${week}`)) break;
-
-          periods.push({
-            label: archived.periodLabel,
-            path: `/repo/weekly/${year}/${week}`,
-          });
-        } catch {
-          break;
-        }
-      }
+    if (current.period && "week" in current.period) {
+      return buildWeeklyPeriodOptions(current.period, maxWeeks);
     }
   } catch {
     return [];
   }
-
-  return periods;
+  return [{ label: "Minggu ini", path: "/repo/weekly" }];
 }
