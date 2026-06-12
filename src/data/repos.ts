@@ -594,6 +594,56 @@ export const repos: Review[] = [
     date: "2026-06-12",
     updatedAt: "2026-06-12",
   },
+  {
+    slug: "autogpt",
+    name: "AutoGPT",
+    tagline: "Pelopor agent otonom open-source yang memicu era AI agent",
+    tags: ["AI Agent", "Autonomous Agent", "Python", "Open Source"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "AutoGPT adalah proyek yang menamai dan mempopulerkan konsep autonomous agent pada 2023 — lebih dari dua tahun kemudian ia masih berdiri, berevolusi, dan tetap jadi rujukan fundamental. Platform ini menyediakan agen yang merencanakan, menggunakan tool, dan mengeksekusi tugas panjang dengan sedikit intervensi manusia, plus marketplace plugin dan Forge untuk membangun agent sendiri.",
+    highlights: [
+      "Pionir agent otonom: loop plan-act-observe-reflect yang kini menjadi DNA hampir semua framework agent modern",
+      "185 ribu bintang dan 46 ribu fork di GitHub — salah satu repositori AI dengan adopsi komunitas terluas",
+      "Dukungan multi-model: OpenAI, Anthropic Claude, Llama API, Azure OpenAI, hingga model lokal lewat kompatibilitas OpenAI",
+      "Lapisan memori persisten berbasis vector store untuk konteks jangka panjang antar sesi",
+      "Sistem plugin/tool yang bisa diperluas; marketplace agpt.co untuk distribusi plugin siap pakai",
+      "Forge: kerangka kerja untuk membangun, menguji, dan mendistribusikan agent kustom",
+      "Benchmark suite (AGiXT-based) untuk mengukur performa agent pada tugas dunia nyata",
+      "Antarmuka CLI + web (agpt.co) plus mode headless untuk dijalankan sebagai service di server sendiri",
+      "Aktif dikembangkan hingga 2026 — commit terbaru per Juni 2026, menandakan proyek hidup, bukan artefak hype",
+    ],
+    pros: [
+      "Nama dan referensi utama saat membahas AI agent otonom — material edukasi dan contoh paling banyak",
+      "Dukungan model sangat luas, termasuk rute ke Ollama dan provider OpenAI-compatible",
+      "Marketplace plugin dan Forge mempercepat eksperimen tanpa harus menulis semuanya dari nol",
+      "Komunitas dan basis pengetahuan sangat besar — hampir setiap masalah sudah pernah ditanyakan orang lain",
+    ],
+    cons: [
+      "Antarmuka CLI default kurang ramah untuk pengguna non-teknis dibanding platform low-code modern",
+      "Konsep lama yang dipercepat: biaya token untuk tugas panjang masih perlu perhatian serius",
+      "Dokumentasi resmi kadang tertinggal dari kecepatan perubahan plugin dan integrasi",
+    ],
+    verdict:
+      "Tetap wajib dipahami siapa pun yang ingin mengerti dari mana ekosistem AI agent berasal. Sebagai alat produksi 2026, ia lebih cocok jadi fondasi belajar dan eksperimen dibanding pilihan utama dibanding platform baru yang lebih terfokus.",
+    body: [
+      "Sebelum AutoGPT, istilah autonomous agent nyaris tidak ada di percakapan AI mainstream. Pada Maret 2023, proyek ini muncul dengan klaim sederhana: biarkan GPT menjalankan loop agentik sendiri, dengan akses internet, memori, dan tool — dan saksikan ia menyelesaikan tugas dari satu instruksi singkat. Hampir dalam semalam, AutoGPT menjadi repositori dengan pertumbuhan bintang tercepat di GitHub, dan memicu gelombang framework agent yang kita kenal sekarang: CrewAI, LangGraph, DeerFlow, hingga OpenClaw, semuanya punya utang konseptual ke eksperimen awal ini.",
+      "Dalam pengujian editorial Wawasan AI, nilai AutoGPT di 2026 bukan pada kemampuannya mengalahkan platform agent baru — beberapa framework modern memang lebih ergonomis untuk kasus produksi. Nilai utamanya ada di posisi historis dan transparansi: kode loop agentik-nya terbuka, plugin marketplace-nya menunjukkan orkestrasi tool secara eksplisit, dan Forge memberi cetak biru untuk membangun agent dari nol. Untuk pelajar dan engineer yang ingin memahami jeroan agent, AutoGPT adalah teks wajib baca.",
+      "Secara teknis, proyek ini sudah matang. Mendukung banyak model lewat API, memori persisten berbasis vector store untuk konteks jangka panjang, sistem plugin yang bisa diperluas, dan mode headless untuk dijalankan sebagai service. Lisensi NOASSERTION menarik untuk dicermati sebelum pemakaian komersial ketat — bagi sebagian besar eksperimen internal dan riset, ini bukan hambatan, tetapi organisasi dengan kebijakan compliance ketat perlu tinjauan hukum.",
+      "Untuk konteks Indonesia, AutoGPT paling cocok sebagai batu loncatan: pasang Ollama sebagai backend, jalankan agent sederhana untuk tugas-tugas operasional yang jelas batasnya (ringkasan, klasifikasi, draf dokumen), lalu bandingkan dengan framework lain yang diulas Wawasan AI. Dari situ, keputusan jatuh ke platform yang lebih spesifik per kasus penggunaan: n8n untuk otomasi, Dify untuk aplikasi LLM, CrewAI untuk multi-agent, atau DeerFlow untuk riset mendalam. AutoGPT adalah titik awal yang bagus, bukan tujuan akhir.",
+    ],
+    link: "https://github.com/Significant-Gravitas/AutoGPT",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-13",
+    updatedAt: "2026-06-13",
+  },
 ];
 
 export function getRepo(slug: string) {
