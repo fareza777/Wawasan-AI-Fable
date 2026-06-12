@@ -493,6 +493,48 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-12",
   },
+  {
+    slug: "qwen3-7-plus",
+    name: "Qwen3.7 Plus",
+    tagline: "Varian multimodal Qwen3.7 — visi, penalaran, dan tool-use dalam satu agen",
+    tags: ["Alibaba", "Proprietary", "Multimodal", "Agent"],
+    score: 8.7,
+    scores: [
+      { label: "Penalaran", value: 8.8 },
+      { label: "Coding", value: 8.4 },
+      { label: "Kecepatan", value: 8.2 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 53.3,
+    aa_coding_index: 46.5,
+    aa_price_input: 0.4,
+    aa_price_output: 1.16,
+    aa_synced_at: "2026-06-13",
+    summary:
+      "Varian multimodal dari keluarga Qwen3.7 yang dirancang sejak lahir untuk kerja agentic: membaca gambar dan video, penalaran multi-langkah, eksekusi tool, dan iterasi mandiri lewat loop RL di platform Bailian. Intelligence index 53,3 (sumber: Artificial Analysis) menempatkannya di papan atas model proprietary dari laboratorium non-AS — dengan harga API yang ramah untuk pasar Indonesia.",
+    pros: [
+      "Multimodal native — memahami gambar dan video, bukan hanya teks",
+      "Lima kemampuan agentic terpadu: penalaran, self-programming, tool-use, verifikasi, iterasi",
+      "Vision Arena #16 saat preview — laboratorium Alibaba masuk 5 besar global untuk visi",
+      "Harga API terjangkau ($0,40 input / $1,16 output per 1M token) untuk kelas multimodal frontier",
+    ],
+    cons: [
+      "Visi membaca saja, tidak menghasilkan gambar atau video — beda dengan keluarga model kreatif",
+      "Akses penuh lewat Bailian/Model Studio — butuh kartu pembayaran internasional",
+      "Ekosistem plugin dan integrasi pihak ketiga belum setinggi OpenAI atau Anthropic",
+    ],
+    verdict:
+      "Qwen3.7 Plus adalah pilihan rasional untuk agen multimodal yang tidak perlu membuat gambar. Untuk otomasi yang 'melihat layar' dan bertindak — RPA, GUI agent, OCR pipeline — ini salah satu model paling menarik tahun ini.",
+    body: [
+      "Qwen3.7 Plus adalah saudara multimodal dari Qwen3.7-Max. Alibaba merancang keluarga 3.7 sejak awal untuk era agen: penalaran multi-langkah, penggunaan tool, dan iterasi mandiri sampai tugas benar-benar selesai. Bedanya, Plus menambahkan pemahaman gambar dan video — kemampuan yang dulu terpisah dari model penalaran murni. Hasilnya adalah model yang bisa membaca tangkapan layar, menavigasi antarmuka, lalu mengeksekusi perintah di dalamnya.",
+      "Dalam pengujian editorial lewat Vision Arena, Qwen3.7-Plus-Preview sempat menduduki peringkat #16 dunia untuk kemampuan visi — menjadikan laboratorium Alibaba sebagai salah satu dari lima besar global di kategori ini. Untuk kasus Indonesia yang banyak melibatkan dokumen visual, foto produk, atau bukti screenshot, kemampuan visinya terasa langsung berguna: alih-alih OCR terpisah lalu lempar ke LLM, semua terjadi dalam satu model. (Sumber: Artificial Analysis.)",
+      "Soal harga, di sinilah Plus terasa berbeda dari frontier multimodal Barat: API $0,40 per juta token input dan $1,16 output. Untuk kelas multimodal proprietary, ini di kuadran bawah — dan bagi developer Indonesia yang menghitung dolar, selisihnya langsung terasa. Intelligence index 53,3 di benchmark Artificial Analysis menempatkannya di atas model open-weight pada umumnya, meski masih di bawah frontier kelas atas seperti Claude Opus atau GPT-5. Untuk kerja agentic harian Plus sangat mumpuni; untuk penalaran paling berat, Max masih lebih tajam.",
+      "Kelemahan yang teridentifikasi: Qwen3.7 Plus tidak menghasilkan gambar atau video — fokusnya murni pemahaman. Untuk pipeline kreatif, keluarga Wan atau model difusi terpisah masih diperlukan. Juga, aksesnya lewat Bailian/Model Studio Alibaba Cloud yang, meski punya tier gratis, untuk pemakaian serius tetap butuh kartu pembayaran internasional. Strategi pemakaian yang masuk akal: Plus untuk agen GUI dan otomasi dokumen, Max untuk penalaran murni, dan Qwen open-weight untuk workload volume tinggi yang sensitif data.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-13",
+  },
 ];
 
 export function getModel(slug: string) {
