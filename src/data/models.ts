@@ -13,6 +13,11 @@ export const models: Review[] = [
       { label: "Kecepatan", value: 8.5 },
       { label: "Harga/Performa", value: 8.5 },
     ],
+    aa_intelligence_index: 43.1,
+    aa_coding_index: 42.9,
+    aa_price_input: 5,
+    aa_price_output: 25,
+    aa_synced_at: "2026-06-12",
     summary:
       "Model flagship Anthropic yang menjadi standar emas untuk tugas coding dan agentic. Kemampuannya mengerjakan tugas panjang multi-langkah — refactor besar, debugging lintas file, riset mendalam — masih sulit ditandingi.",
     pros: [
@@ -50,6 +55,11 @@ export const models: Review[] = [
       { label: "Kecepatan", value: 8.5 },
       { label: "Harga/Performa", value: 8.5 },
     ],
+    aa_intelligence_index: 44.6,
+    aa_coding_index: 36.0,
+    aa_price_input: 1.25,
+    aa_price_output: 10,
+    aa_synced_at: "2026-06-12",
     summary:
       "Model andalan OpenAI dengan sistem routing pintar yang memilih sendiri kapan perlu 'berpikir keras'. Ekosistemnya — ChatGPT, API, integrasi pihak ketiga — tetap yang paling luas di industri.",
     pros: [
@@ -87,6 +97,11 @@ export const models: Review[] = [
       { label: "Kecepatan", value: 9.0 },
       { label: "Harga/Performa", value: 9.0 },
     ],
+    aa_intelligence_index: 57.2,
+    aa_coding_index: 55.5,
+    aa_price_input: 2,
+    aa_price_output: 12,
+    aa_synced_at: "2026-06-12",
     summary:
       "Lompatan besar Google: penalaran frontier, kemampuan multimodal (video, audio, gambar) terbaik, dan context window jutaan token. Integrasinya dengan ekosistem Google membuatnya sulit diabaikan.",
     pros: [
@@ -117,13 +132,18 @@ export const models: Review[] = [
     name: "DeepSeek V3.x / R1",
     tagline: "Open-weight disruptor: performa frontier, harga kaki lima",
     tags: ["DeepSeek", "Open Weight", "Reasoning", "Murah"],
-    score: 8.8,
+    score: 8.0,
     scores: [
-      { label: "Penalaran", value: 9.0 },
-      { label: "Coding", value: 8.8 },
-      { label: "Kecepatan", value: 8.0 },
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 7.5 },
       { label: "Harga/Performa", value: 10 },
     ],
+    aa_intelligence_index: 16.5,
+    aa_coding_index: 16.4,
+    aa_price_input: 0.4,
+    aa_price_output: 2,
+    aa_synced_at: "2026-06-12",
     summary:
       "Model dari Tiongkok yang mengguncang industri: kemampuan mendekati model frontier dengan harga API sepersekian, dan bobotnya terbuka untuk di-host sendiri. Pilihan rasional untuk volume besar.",
     pros: [
@@ -152,13 +172,18 @@ export const models: Review[] = [
     name: "Qwen 3",
     tagline: "Keluarga model open terlengkap — dari laptop sampai data center",
     tags: ["Alibaba", "Open Weight", "Multilingual", "Lokal"],
-    score: 8.7,
+    score: 8.0,
     scores: [
-      { label: "Penalaran", value: 8.8 },
-      { label: "Coding", value: 8.8 },
-      { label: "Kecepatan", value: 8.5 },
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 8.0 },
       { label: "Harga/Performa", value: 9.5 },
     ],
+    aa_intelligence_index: 25.9,
+    aa_coding_index: 14.0,
+    aa_price_input: 0.1,
+    aa_price_output: 0.4,
+    aa_synced_at: "2026-06-12",
     summary:
       "Keluarga model open-weight Alibaba dengan rentang ukuran terlengkap, varian coding yang sangat kompeten, dan opsi MoE untuk skala server. Favorit komunitas self-host.",
     pros: [
@@ -187,13 +212,18 @@ export const models: Review[] = [
     name: "Llama 4",
     tagline: "Fondasi ekosistem open dari Meta — standar de facto industri",
     tags: ["Meta", "Open Weight", "Multimodal"],
-    score: 8.3,
+    score: 7.8,
     scores: [
-      { label: "Penalaran", value: 8.3 },
-      { label: "Coding", value: 8.0 },
-      { label: "Kecepatan", value: 8.5 },
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 8.0 },
       { label: "Harga/Performa", value: 9.0 },
     ],
+    aa_intelligence_index: 18.4,
+    aa_coding_index: 15.6,
+    aa_price_input: 0.35,
+    aa_price_output: 1.1,
+    aa_synced_at: "2026-06-12",
     summary:
       "Generasi terbaru keluarga Llama dengan arsitektur MoE dan kemampuan multimodal. Bukan yang tertajam di setiap benchmark, tapi ekosistem dan dukungannya tetap yang paling luas di dunia open model.",
     pros: [
@@ -229,6 +259,11 @@ export const models: Review[] = [
       { label: "Kecepatan", value: 8.0 },
       { label: "Harga/Performa", value: 7.8 },
     ],
+    aa_intelligence_index: 41.5,
+    aa_coding_index: 40.5,
+    aa_price_input: 5.5,
+    aa_price_output: 27.5,
+    aa_synced_at: "2026-06-12",
     summary:
       "Model flagship xAI dengan penalaran kuat dan keunggulan unik: akses real-time ke linimasa X. Gayanya yang santai dan kadang nyeleneh membuatnya terasa berbeda dari asisten AI lain yang serba sopan.",
     pros: [
@@ -258,13 +293,18 @@ export const models: Review[] = [
     name: "Kimi K2",
     tagline: "MoE open-weight raksasa yang jago kerja agentic — dengan harga kaki lima",
     tags: ["Moonshot AI", "Open Weight", "Agent", "Coding", "Murah"],
-    score: 8.8,
+    score: 8.0,
     scores: [
-      { label: "Penalaran", value: 8.8 },
-      { label: "Coding", value: 9.0 },
-      { label: "Kecepatan", value: 8.0 },
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 7.5 },
       { label: "Harga/Performa", value: 9.5 },
     ],
+    aa_intelligence_index: 26.3,
+    aa_coding_index: 22.1,
+    aa_price_input: 0.585,
+    aa_price_output: 2.34,
+    aa_synced_at: "2026-06-12",
     summary:
       "Model mixture-of-experts raksasa dari Moonshot AI yang dirancang sejak awal untuk tool-use dan kerja agentic. Kemampuan coding-nya menempel ketat ke model proprietary papan atas, dengan harga API yang jauh lebih ramah dan bobot yang terbuka.",
     pros: [
@@ -297,11 +337,16 @@ export const models: Review[] = [
     tags: ["Zhipu AI", "Open Weight", "Coding", "Agent", "Murah"],
     score: 8.6,
     scores: [
-      { label: "Penalaran", value: 8.6 },
-      { label: "Coding", value: 8.9 },
-      { label: "Kecepatan", value: 8.3 },
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 8.5 },
       { label: "Harga/Performa", value: 9.5 },
     ],
+    aa_intelligence_index: 30.2,
+    aa_coding_index: 30.2,
+    aa_price_input: 0.6,
+    aa_price_output: 2.2,
+    aa_synced_at: "2026-06-12",
     summary:
       "Model open-weight dari Zhipu AI (Z.ai) yang melejit sebagai alternatif murah di tool coding agentic. Untuk pekerjaan kode sehari-hari, jarak rasanya ke model proprietary mahal makin tipis — dengan biaya langganan yang jauh lebih ringan.",
     pros: [
@@ -331,13 +376,18 @@ export const models: Review[] = [
     name: "Mistral Large / Medium",
     tagline: "Juara Eropa: efisien, enterprise-ready, dan punya Le Chat",
     tags: ["Mistral AI", "Eropa", "Enterprise", "Efisien"],
-    score: 8.2,
+    score: 7.0,
     scores: [
-      { label: "Penalaran", value: 8.3 },
-      { label: "Coding", value: 8.2 },
-      { label: "Kecepatan", value: 9.0 },
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 7.5 },
       { label: "Harga/Performa", value: 8.5 },
     ],
+    aa_intelligence_index: 18.6,
+    aa_coding_index: 16.4,
+    aa_price_input: 0.15,
+    aa_price_output: 0.6,
+    aa_synced_at: "2026-06-12",
     summary:
       "Lini model andalan Mistral AI, satu-satunya pemain frontier dari Eropa. Filosofinya jelas: performa kompetitif dari model yang lebih kecil dan efisien, dengan opsi deployment fleksibel yang disukai enterprise — plus asisten Le Chat yang sangat responsif.",
     pros: [
@@ -367,13 +417,18 @@ export const models: Review[] = [
     name: "Gemma 3",
     tagline: "Model open kecil terbaik — multimodal yang muat di laptop kentang",
     tags: ["Google", "Open Weight", "Lokal", "Multimodal", "Kecil"],
-    score: 7.9,
+    score: 6.8,
     scores: [
-      { label: "Penalaran", value: 7.5 },
-      { label: "Coding", value: 7.3 },
-      { label: "Kecepatan", value: 9.0 },
-      { label: "Harga/Performa", value: 9.5 },
+      { label: "Penalaran", value: 6.5 },
+      { label: "Coding", value: 6.0 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 9.0 },
     ],
+    aa_intelligence_index: 7.7,
+    aa_coding_index: 0.0,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-06-12",
     summary:
       "Keluarga model open kecil dari Google yang dirancang untuk perangkat terbatas: dari ponsel sampai laptop tanpa GPU. Kemampuan multibahasa dan multimodalnya mengejutkan untuk ukurannya — pintu masuk terbaik ke dunia AI lokal.",
     pros: [
@@ -409,6 +464,11 @@ export const models: Review[] = [
       { label: "Kecepatan", value: 9.0 },
       { label: "Harga/Performa", value: 9.5 },
     ],
+    aa_intelligence_index: 52.2,
+    aa_coding_index: 47.5,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-06-12",
     summary:
       "Muse Spark adalah keluarga model eksperimental dari Meta yang fokus pada generasi kreatif multimodal — teks, gambar, dan audio dalam satu pipeline. Intelligence index 52 dan bobot terbuka menjadikannya pilihan menarik untuk eksplorasi pipeline generasi konten di infrastruktur sendiri. Bukan model penalaran terkuat, tapi kelebihannya ada pada kelancaran dan integrasi multimodal.",
     pros: [

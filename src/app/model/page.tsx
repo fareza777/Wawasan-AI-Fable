@@ -67,6 +67,27 @@ export default function ModelPage() {
 
       <h2 className="mt-16 text-2xl font-extrabold text-slate-50">Review Lengkap</h2>
       <ContentFilters items={models} type="review" basePath="/model" mode="model" />
+
+      <div className="panel-white mt-12 rounded-2xl border border-ink-700/50 bg-gradient-to-br from-ink-800/60 to-ink-900/40 p-6">
+        <h3 className="text-sm font-bold uppercase tracking-wider text-slate-300">
+          Tentang skor di halaman ini
+        </h3>
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
+          Skor di Wawasan AI (0-10) adalah <strong className="text-slate-200">rating editorial</strong> yang
+          menggabungkan penalaran, coding, kecepatan, dan rasio harga/performa — bukan benchmark
+          murni. Untuk benchmark independen lintas model, lihat{" "}
+          <a
+            href="https://artificialanalysis.ai/leaderboards/models"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neon-400 hover:underline"
+          >
+            Artificial Analysis
+          </a>
+          . Pada review tertentu kami cantumkan <code className="text-xs text-slate-300">aa_intelligence_index</code> sebagai
+          pembanding — skala AA berbeda (0-100, median industri ≈ 20).
+        </p>
+      </div>
     </div>
   );
 }
