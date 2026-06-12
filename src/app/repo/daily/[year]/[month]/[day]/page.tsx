@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
-import TrendingCadenceTabs from "@/components/TrendingCadenceTabs";
 import TrendingRepoView from "@/components/TrendingRepoView";
 import { formatTanggal } from "@/lib/format";
 
@@ -54,10 +53,6 @@ export default async function DailyArchivePage({ params }: Props) {
           title="Top Daily Repo"
           description={`Arsip peringkat ${formatTanggal(iso)} — snapshot Trendshift yang disimpan pada hari itu.`}
         />
-      </div>
-
-      <div className="fade-up mt-8">
-        <TrendingCadenceTabs active="daily" />
       </div>
 
       <TrendingRepoView

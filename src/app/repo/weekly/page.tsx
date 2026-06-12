@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
-import TrendingCadenceTabs from "@/components/TrendingCadenceTabs";
 import TrendingRepoView from "@/components/TrendingRepoView";
 
 export const metadata: Metadata = {
@@ -34,10 +33,6 @@ export default async function WeeklyRepoPage({ searchParams }: Props) {
           title="Top Weekly Repo"
           description="Repositori GitHub dengan momentum tertinggi minggu ini — diambil dari peringkat mingguan Trendshift, lalu disajikan dengan konteks editorial Wawasan AI."
         />
-      </div>
-
-      <div className="fade-up mt-8">
-        <TrendingCadenceTabs active="weekly" />
       </div>
 
       <TrendingRepoView cadence="weekly" currentPath="/repo/weekly" />

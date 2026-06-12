@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ListHeader from "@/components/ListHeader";
-import TrendingCadenceTabs from "@/components/TrendingCadenceTabs";
 import TrendingRepoView from "@/components/TrendingRepoView";
 
 export const metadata: Metadata = {
@@ -28,10 +27,6 @@ export default function DailyRepoPage() {
           title="Top Daily Repo"
           description="Repositori GitHub dengan momentum tertinggi hari ini — diambil dari peringkat harian Trendshift, lalu disajikan dengan konteks editorial Wawasan AI."
         />
-      </div>
-
-      <div className="fade-up mt-8">
-        <TrendingCadenceTabs active="daily" />
       </div>
 
       <TrendingRepoView cadence="daily" currentPath="/repo/daily" />
