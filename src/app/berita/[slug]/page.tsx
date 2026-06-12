@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { berita, getArtikel } from "@/data/berita";
 import ArticleDetail from "@/components/ArticleDetail";
 import JsonLd from "@/components/JsonLd";
-import { articleDetailMeta, articleJsonLd } from "@/lib/seo";
+import { articleBreadcrumbJsonLd, articleDetailMeta, articleJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return berita.map((b) => ({ slug: b.slug }));
@@ -30,6 +30,7 @@ export default async function BeritaDetailPage({
   return (
     <>
       <JsonLd data={articleJsonLd(artikel, path)} />
+      <JsonLd data={articleBreadcrumbJsonLd(artikel, path)} />
       <ArticleDetail artikel={artikel} />
     </>
   );

@@ -9,7 +9,7 @@ import ThemeProvider from "@/components/ThemeProvider";
 import Analytics from "@/components/Analytics";
 import ConsentBanner from "@/components/ConsentBanner";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -80,19 +80,7 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Wawasan AI",
-  url: SITE_URL,
-  description: "Portal review AI Indonesia",
-  inLanguage: "id",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${SITE_URL}/indeks?q={search_term_string}`,
-    "query-input": "required name=search_term_string",
-  },
-};
+const jsonLd = [websiteJsonLd(), organizationJsonLd()];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -104,7 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        <JsonLd data={jsonLd} />
+        {jsonLd.map((data) => (
+          <JsonLd key={data["@type"] as string} data={data} />
+        ))}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem("wawasanai:theme");if(!t)t="dark";document.documentElement.dataset.theme=t;var s=localStorage.getItem("wawasanai:steel");if(!s||s==="2"){s="5";localStorage.setItem("wawasanai:steel","5")}document.documentElement.dataset.steel=s}catch(e){document.documentElement.dataset.theme="dark";document.documentElement.dataset.steel="5"}})();`,

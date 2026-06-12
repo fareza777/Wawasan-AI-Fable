@@ -4,7 +4,7 @@ import { repos, getRepo } from "@/data/repos";
 import ReviewDetail from "@/components/ReviewDetail";
 import JsonLd from "@/components/JsonLd";
 import { fetchGitHubStats } from "@/lib/githubMeta";
-import { reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
+import { reviewBreadcrumbJsonLd, reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return repos.map((r) => ({ slug: r.slug }));
@@ -32,6 +32,13 @@ export default async function RepoDetailPage({
   return (
     <>
       <JsonLd data={reviewJsonLd(review, path)} />
+      <JsonLd
+        data={reviewBreadcrumbJsonLd(
+          { label: "Review Repo GitHub", path: "/repo" },
+          review,
+          path,
+        )}
+      />
       <ReviewDetail
         review={review}
         backHref="/repo"

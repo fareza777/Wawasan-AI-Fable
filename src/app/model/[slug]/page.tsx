@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { models, getModel } from "@/data/models";
 import ReviewDetail from "@/components/ReviewDetail";
 import JsonLd from "@/components/JsonLd";
-import { reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
+import { reviewBreadcrumbJsonLd, reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return models.map((m) => ({ slug: m.slug }));
@@ -30,6 +30,13 @@ export default async function ModelDetailPage({
   return (
     <>
       <JsonLd data={reviewJsonLd(review, path)} />
+      <JsonLd
+        data={reviewBreadcrumbJsonLd(
+          { label: "Review Model LLM", path: "/model" },
+          review,
+          path,
+        )}
+      />
       <ReviewDetail
         review={review}
         backHref="/model"

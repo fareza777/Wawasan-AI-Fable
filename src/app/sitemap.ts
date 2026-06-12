@@ -5,8 +5,9 @@ import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
 import { allTags } from "@/lib/tags";
 import { SITE_URL } from "@/lib/seo";
+import { listDailyArchiveSitemapEntries } from "@/lib/trendshift";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const statis = [
     "",
     "/repo",
@@ -38,5 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...berita.map((b) => ({ url: `${SITE_URL}/berita/${b.slug}`, lastModified: b.date })),
   ].map((d) => ({ ...d, changeFrequency: "monthly" as const, priority: 0.6 }));
 
-  return [...statis, ...tags, ...detail];
+  const dailyArchives = (await listDailyArchiveSitemapEntries()).map((a) => ({
+    url: `${SITE_URL}${a.path}`,
+    lastModified: a.lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.4,
+  }));
+
+  return [...statis, ...tags, ...detail, ...dailyArchives];
 }

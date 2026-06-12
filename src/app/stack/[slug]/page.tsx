@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { stacks, getStack } from "@/data/stacks";
 import ReviewDetail from "@/components/ReviewDetail";
 import JsonLd from "@/components/JsonLd";
-import { reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
+import { reviewBreadcrumbJsonLd, reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return stacks.map((s) => ({ slug: s.slug }));
@@ -30,6 +30,13 @@ export default async function StackDetailPage({
   return (
     <>
       <JsonLd data={reviewJsonLd(review, path)} />
+      <JsonLd
+        data={reviewBreadcrumbJsonLd(
+          { label: "Review Tools Coding AI", path: "/stack" },
+          review,
+          path,
+        )}
+      />
       <ReviewDetail
         review={review}
         backHref="/stack"
