@@ -298,14 +298,13 @@ export async function fetchAvailableDailyPeriods(maxDays = 30): Promise<Trending
     const dates = entries
       .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
       .map((f) => f.replace(/\.json$/, ""))
-      .filter((d) => d !== today)
       .sort()
       .reverse()
       .slice(0, maxDays);
 
     for (const date of dates) {
       periods.push({
-        label: formatTanggal(date),
+        label: date === today ? `${formatTanggal(date)} (tersimpan)` : formatTanggal(date),
         path: dailyArchivePath(date),
       });
     }
