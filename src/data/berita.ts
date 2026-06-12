@@ -317,20 +317,20 @@ export const berita: Artikel[] = [
         heading: "2. Memahami konteks bisnis, bukan hanya kode",
         paragraphs: [
           "Skill kedua yang membedakan: kemampuan menerjemahkan kebutuhan bisnis ke solusi teknis. Banyak engineer hebat yang bisa membangun apa saja, tapi gagal paham mengapa pengguna benar-benar membutuhkannya. AI engineer yang paling dicari tahu kapan harus berhenti menambahkan fitur dan mulai mendengarkan: 'apa yang sebulan ini paling sering membuat Anda kesal di tempat kerja?'",
-          "Untuk konteks Indonesia, ini尤为重要. UMKM yang butuh otomasi tidak peduli apakah Anda menggunakan GPT-5 atau Claude Opus — mereka peduli apakah struk mereka otomatis terisi tiap malam. Skill menerjemahkan bahasa teknis ke bahasa masalah nyata adalah yang membuat engineer Indonesia bisa charging premium untuk klien lokal.",
+          "Untuk konteks Indonesia, ini skill yang membuat seorang engineer bisa charging premium untuk klien lokal: kemampuan menerjemahkan bahasa teknis ke bahasa masalah nyata. UMKM yang butuh otomasi tidak peduli apakah Anda menggunakan GPT-5 atau Claude Opus — mereka peduli apakah struk mereka otomatis terisi tiap malam.",
         ],
       },
       {
         heading: "3. Self-hosting dan kedaulatan data",
         paragraphs: [
           "Skill ketiga yang meningkat tajam permintaannya: kemampuan menjalankan AI di infrastruktur sendiri. Untuk banyak perusahaan di Indonesia — apalagi yang bergerak di sektor publik, keuangan, atau kesehatan — mengirim data ke API publik bukan opsi. Ollama, vLLM, LM Studio, dan kawan-kawan menjadi literasi wajib, sama seperti Linux wajib untuk backend engineer lima tahun lalu.",
-          "Prasyaratnya:一台 laptop dengan RAM 16 GB sudah cukup untuk mulai. Pasang Ollama, unduh Qwen 3 8B, dan biarkan model itu menjadi 'rekan' Anda sehari-hari. Setelah beberapa minggu, intuisi tentang ukuran model, latency, dan biaya akan terlatih dengan sendirinya — intuisi yang tidak bisa dibeli dari tutorial manapun.",
+          "Prasyaratnya: laptop dengan RAM 16 GB sudah cukup untuk mulai. Pasang Ollama, unduh Qwen 3 8B, dan biarkan model itu menjadi 'rekan' Anda sehari-hari. Setelah beberapa minggu, intuisi tentang ukuran model, latency, dan biaya akan terlatih dengan sendirinya — intuisi yang tidak bisa dibeli dari tutorial manapun.",
         ],
       },
       {
         heading: "4. Evaluasi, bukan hanya output",
         paragraphs: [
-          "Skill keempat: kemampuan menilai apakah hasil AI benar-benar bagus, bukan sekadar 'kelihatannya bagus'. Untuk文案 atau ringkasan, mata manusia masih lebih bisa diandalkan dari metrik otomatis. Untuk alur kerja yang melibatkan keputusan (misal klasifikasi dokumen hukum), membangun set evaluasi kecil dari 50 contoh yang sudah diberi label manusia adalah investasi terbaik yang bisa dilakukan engineer.",
+          "Skill keempat: kemampuan menilai apakah hasil AI benar-benar bagus, bukan sekadar 'kelihatannya bagus'. Untuk ringkasan atau draf dokumen, mata manusia masih lebih bisa diandalkan dari metrik otomatis. Untuk alur kerja yang melibatkan keputusan — misalnya klasifikasi dokumen hukum — membangun set evaluasi kecil dari 50 contoh yang sudah diberi label manusia adalah investasi terbaik yang bisa dilakukan engineer.",
           "Di sinilah bedanya 'prompt engineer' dan 'AI engineer' sesungguhnya: prompt engineer puas ketika output kelihatannya meyakinkan; AI engineer tahu bahwa tanpa evaluasi yang terstruktur, keyakinan itu kosong. Untuk standar industri Indonesia, kemampuan ini yang membedakan konsultan mahal dari konsultan biasa.",
         ],
       },
@@ -338,7 +338,52 @@ export const berita: Artikel[] = [
         heading: "5. Menulis narasi, bukan hanya kode",
         paragraphs: [
           "Skill kelima yang sering diabaikan: kemampuan menulis dengan jelas. README yang baik, dokumentasi internal, presentasi ke stakeholder non-teknis — semua ini sering membedakan AI engineer yang dihargai dari yang sekadar produktif. Di era di mana AI sendiri sudah bisa menghasilkan kode, kemampuan menjelaskan 'mengapa' dan 'untuk apa' menjadi semakin bernilai.",
-          "Untuk konteks Indonesia, skill ini mengambil bentuk tambahan: kemampuan menulis dalam dua bahasa. Dokumentasi internal bisa bahasa Inggris, tapi laporan ke klien atau presentasi ke领导 sering perlu bahasa Indonesia yang baik. AI engineer yang bisa menulis narasi untuk kedua audiens — dan tahu kapan masing-masing digunakan — akan selalu punya keunggulan di pasar lokal.",
+          "Untuk konteks Indonesia, skill ini mengambil bentuk tambahan: kemampuan menulis dalam dua bahasa. Dokumentasi internal bisa bahasa Inggris, tapi laporan ke klien atau presentasi ke atasan sering perlu bahasa Indonesia yang baik. AI engineer yang bisa menulis narasi untuk kedua audiens — dan tahu kapan masing-masing digunakan — akan selalu punya keunggulan di pasar lokal.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "warung-soto-pun-kini-butuh-apa-itu-ai-engineer",
+    title: "Warung Soto pun Kini Butuh AI Engineer: Apa yang Sebenarnya Diminta Pasar?",
+    excerpt:
+      "Lowongan AI engineer di 2026 sudah masuk ke restoran, retail, dan UMKM. Di balik judul yang ramai, kompetensi yang diminta ternyata lebih sederhana dan lebih bisa dipelajari dari yang dibayangkan.",
+    category: "Analisis",
+    date: "2026-06-13",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Beberapa bulan terakhir iklan lowongan kerja di platform pencarian kerja Indonesia menampilkan kalimat yang dulu jarang muncul di luar startup teknologi: 'dicari AI engineer' — dan kadang muncul di tempat yang tak terduga, dari restoran cepat saji sampai jaringan klinik gigi. Fenomena ini bukan sekadar bahasa marketing. Di baliknya ada pergeseran kebutuhan yang nyata: pekerjaan-pekerjaan yang dulu sepenuhnya manual kini minta disentuh otomasi, dan orang yang bisa menyentuhnya disebut dengan jabatan baru.",
+          "Pertanyaan yang muncul di banyak percakapan editorial: apa sebenarnya yang diminta pasar ketika mereka menulis 'AI engineer' di judul lowongan? Apakah riset mutakhir? Membangun model dari nol? Atau sesuatu yang lebih sederhana — dan justru lebih bisa dicapai orang Indonesia yang gigih belajar di waktu luang? Tulisan ini mencoba memetakan apa yang benar-benar terjadi di balik judul-jurusan yang ramai itu.",
+        ],
+      },
+      {
+        heading: "Di balik judul 'AI engineer' yang banyak dipasang",
+        paragraphs: [
+          "Kalau dibedah, sebagian besar lowongan itu meminta kemampuan merangkai, bukan kemampuan meneliti. Perusahaan ingin orang yang bisa menyambungkan model bahasa yang sudah ada ke sistem internal mereka: chatbot yang bisa menjawab pertanyaan umum pelanggan, pipeline yang membaca formulir masuk dan mengekstrak data penting, atau agen yang mengirim ringkasan harian ke grup manajemen. Tugas-tugas itu dulu akan diserahkan ke vendor konsultasi dengan biaya puluhan juta per bulan; sekarang perusahaan menengah mencarinya sebagai posisi tetap dengan gaji yang masuk akal.",
+          "Di sinilah realitas yang perlu dilihat jujur: judul 'AI engineer' hari ini mencakup spektrum yang sangat lebar, dari orang yang bisa memasang workflow n8n di laptop sampai orang yang bisa menyetel model open-source. Yang membedakan kandidat yang dilirik dari yang tidak biasanya bukan gelar, melainkan portofolio kecil yang menunjukkan 'saya pernah pasang sesuatu yang benar-benar dipakai'. Untuk konteks Indonesia, itu kabar baik: lebih banyak orang punya pintu masuk daripada yang dibayangkan.",
+        ],
+      },
+      {
+        heading: "Kenapa warung dan klinik pun ikut pasang lowongan",
+        paragraphs: [
+          "Alasan yang paling sering muncul di balik permintaan dari usaha non-teknologi: kompetisi dan biaya operasional. Pemilik usaha kecil melihat kompetitor mereka yang sudah menggunakan WhatsApp auto-reply pintar, pelayan chatbot di website, atau sistem rekap pesanan otomatis — dan merasa harus mengejar. Di saat yang sama, mereka sadar bahwa biaya untuk menambahkan karyawan administrasi baru terus naik, sementara pekerjaan yang sifatnya repetitif tidak memberikan nilai tambah bila dilakukan manusia.",
+          "Pola yang muncul: banyak usaha kecil kita tidak punya departemen IT, jadi mereka mencari satu orang yang bisa menjadi 'tukang AI' internal — memasang otomasi, melatih karyawan menggunakan tool baru, memperbaiki saat ada yang rusak. Jabatan resminya bisa apa saja, dari 'AI engineer' sampai 'staf digitalisasi', tapi bentuk pekerjaannya mirip: menerjemahkan keluhan pemilik usaha soal proses bisnis ke solusi yang bisa dipasang AI. Untuk seseorang dengan kemampuan komunikasi yang baik dan kemauan belajar, ini peluang yang lebih dekat dari yang terlihat.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya perlu dikuasai",
+        paragraphs: [
+          "Kalau diturunkan ke kemampuan konkret, ada empat yang muncul konsisten. Pertama, familiar dengan satu atau dua model bahasa besar — cukup untuk tahu kapan harus pakai model besar yang mahal dan kapan model kecil lokal sudah cukup. Kedua, bisa merangkai workflow otomasi: n8n, Make, atau tools serupa. Ketiga, paham cara menyambungkan API: membaca dokumentasi, mengirim request, menangani error. Keempat, dan ini yang sering diremehkan, kemampuan mendengar: menggali dari pemilik usaha apa yang sebenarnya menghambat mereka, lalu menerjemahkannya ke solusi teknis.",
+          "Tidak perlu jadi programmer ulung untuk mulai. Yang diminta pasar adalah kemampuan teknis yang cukup ditambah kemampuan memahami masalah nyata. Untuk pelajar, fresh graduate, atau pekerja yang ingin pindah jalur, itu kombinasi yang bisa dibangun pelan-pelan — dan justru kombinasi yang banyak dimiliki orang Indonesia yang sudah terbiasa menerjemahkan bahasa teknis ke bahasa keseharian.",
+        ],
+      },
+      {
+        heading: "Realita yang perlu dijaga",
+        paragraphs: [
+          "Di tengah optimisme itu, ada sisi yang perlu dijaga. Pertama, jangan sampai title 'AI engineer' menjadi syarat yang berlebihan untuk pekerjaan yang sebenarnya bisa dipelajari staf non-teknis dalam beberapa minggu. Kedua, jam kerja yang tidak masuk akal — banyak lowongan AI engineer datang dengan ekspektasi 'bisa bekerja kapan saja karena AI tidak tidur' — adalah red flag yang harus diwaspadai. Ketiga, gaji yang ditawarkan tidak selalu sefantastis judulnya: banyak yang memasang rentang yang terlalu lebar, dan kandidat pemula sering ditawarkan di ujung bawah.",
+          "Nasihat editorial: kalau kamu sedang melamar atau menerima tawaran, lihat substansinya, bukan judulnya. Apakah pekerjaan itu benar-benar memungkinkan kamu belajar? Apakah ada ruang untuk bertanya dan gagal? Apakah gajinya mencerminkan keterampilan yang diminta? Dan kalau kamu seorang perekrut, pertimbangkan apakah posisi yang kamu buka benar-benar butuh 'AI engineer', atau cukup dicari orang yang mau belajar — dengan titel yang lebih jujur. Kedua sisi pasar perlu saling menjaga, kalau tidak judul besar akan cepat kehilangan makna.",
         ],
       },
     ],
