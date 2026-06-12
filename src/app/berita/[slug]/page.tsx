@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { berita, getArtikel } from "@/data/berita";
 import ArticleDetail from "@/components/ArticleDetail";
+import JsonLd from "@/components/JsonLd";
+import { articleDetailMeta, articleJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return berita.map((b) => ({ slug: b.slug }));
@@ -14,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const artikel = getArtikel((await params).slug);
   if (!artikel) return {};
-  return { title: artikel.title, description: artikel.excerpt };
+  return articleDetailMeta(artikel, `/berita/${artikel.slug}`);
 }
 
 export default async function BeritaDetailPage({
@@ -24,5 +26,11 @@ export default async function BeritaDetailPage({
 }) {
   const artikel = getArtikel((await params).slug);
   if (!artikel) notFound();
-  return <ArticleDetail artikel={artikel} />;
+  const path = `/berita/${artikel.slug}`;
+  return (
+    <>
+      <JsonLd data={articleJsonLd(artikel, path)} />
+      <ArticleDetail artikel={artikel} />
+    </>
+  );
 }

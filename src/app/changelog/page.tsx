@@ -4,10 +4,12 @@ import { scoreChangelog } from "@/data/changelog";
 import { scoreColor } from "@/components/Score";
 import { formatTanggal } from "@/lib/format";
 import ListHeader from "@/components/ListHeader";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Changelog Skor",
   description: "Riwayat perubahan skor review Wawasan AI — transparansi editorial.",
+  ...canonicalPath("/changelog"),
 };
 
 export default function ChangelogPage() {

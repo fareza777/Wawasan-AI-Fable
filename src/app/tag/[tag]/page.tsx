@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { allTags, getItemsByTag, getTagLabel } from "@/lib/tags";
 import { rubrikStyle } from "@/lib/rubrik";
 import { scoreColor } from "@/components/Score";
+import { canonicalPath } from "@/lib/seo";
 
 export function generateStaticParams() {
   return allTags.map((t) => ({ tag: t.slug }));
@@ -14,8 +15,13 @@ export async function generateMetadata({
 }: {
   params: Promise<{ tag: string }>;
 }): Promise<Metadata> {
-  const label = getTagLabel((await params).tag);
-  return { title: `Tag: ${label}`, description: `Semua konten Wawasan AI dengan tag ${label}.` };
+  const tag = (await params).tag;
+  const label = getTagLabel(tag);
+  return {
+    title: `Tag: ${label}`,
+    description: `Semua konten Wawasan AI dengan tag ${label}.`,
+    ...canonicalPath(`/tag/${tag}`),
+  };
 }
 
 export default async function TagPage({ params }: { params: Promise<{ tag: string }> }) {

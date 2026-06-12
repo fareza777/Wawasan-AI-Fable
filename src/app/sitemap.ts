@@ -4,10 +4,7 @@ import { models } from "@/data/models";
 import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
 import { allTags } from "@/lib/tags";
-
-// FIX 2026-06-12: site URL default. Override via Vercel env var
-// NEXT_PUBLIC_SITE_URL. See skill: wawasan-ai-deploy-workflow.
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
+import { SITE_URL } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const statis = [
@@ -19,27 +16,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/stack",
     "/berita",
     "/tentang",
-    "/koleksi",
     "/bandingkan",
     "/indeks",
     "/changelog",
   ].map((p) => ({
-    url: `${BASE}${p}`,
+    url: `${SITE_URL}${p}`,
     changeFrequency: "weekly" as const,
     priority: p === "" ? 1 : 0.8,
   }));
 
   const tags = allTags.map((t) => ({
-    url: `${BASE}/tag/${t.slug}`,
+    url: `${SITE_URL}/tag/${t.slug}`,
     changeFrequency: "weekly" as const,
     priority: 0.5,
   }));
 
   const detail = [
-    ...repos.map((r) => ({ url: `${BASE}/repo/${r.slug}`, lastModified: r.updatedAt ?? r.date })),
-    ...models.map((m) => ({ url: `${BASE}/model/${m.slug}`, lastModified: m.updatedAt ?? m.date })),
-    ...stacks.map((s) => ({ url: `${BASE}/stack/${s.slug}`, lastModified: s.updatedAt ?? s.date })),
-    ...berita.map((b) => ({ url: `${BASE}/berita/${b.slug}`, lastModified: b.date })),
+    ...repos.map((r) => ({ url: `${SITE_URL}/repo/${r.slug}`, lastModified: r.updatedAt ?? r.date })),
+    ...models.map((m) => ({ url: `${SITE_URL}/model/${m.slug}`, lastModified: m.updatedAt ?? m.date })),
+    ...stacks.map((s) => ({ url: `${SITE_URL}/stack/${s.slug}`, lastModified: s.updatedAt ?? s.date })),
+    ...berita.map((b) => ({ url: `${SITE_URL}/berita/${b.slug}`, lastModified: b.date })),
   ].map((d) => ({ ...d, changeFrequency: "monthly" as const, priority: 0.6 }));
 
   return [...statis, ...tags, ...detail];

@@ -4,11 +4,13 @@ import { repos } from "@/data/repos";
 import { models } from "@/data/models";
 import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Tentang Wawasan AI",
   description:
     "Wawasan AI adalah portal review AI Indonesia — review repo GitHub, skor model LLM, ulasan tools coding AI, dan berita dengan konteks lokal.",
+  ...canonicalPath("/tentang"),
 };
 
 const layanan = [

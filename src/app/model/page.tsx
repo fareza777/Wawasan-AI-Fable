@@ -4,11 +4,13 @@ import { models } from "@/data/models";
 import ListHeader from "@/components/ListHeader";
 import ContentFilters from "@/components/ContentFilters";
 import { scoreColor } from "@/components/Score";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Skor & Review Model LLM",
   description:
     "Review model LLM dari pemakaian nyata — penalaran, coding, kecepatan, dan harga.",
+  ...canonicalPath("/model"),
 };
 
 export default function ModelPage() {

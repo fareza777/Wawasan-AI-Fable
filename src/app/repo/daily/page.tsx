@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Top Daily Repo",
   description:
     "10 repositori GitHub trending harian dari Trendshift, dengan konteks editorial Wawasan AI.",
+  ...canonicalPath("/repo/daily"),
 };
 
 export const revalidate = 3600;

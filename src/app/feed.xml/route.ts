@@ -1,21 +1,18 @@
 import { berita } from "@/data/berita";
 import { repos } from "@/data/repos";
-
-// FIX 2026-06-12: site URL default. Override via Vercel env var
-// NEXT_PUBLIC_SITE_URL. See skill: wawasan-ai-deploy-workflow.
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
+import { SITE_URL } from "@/lib/seo";
 
 export async function GET() {
   const items = [
     ...berita.map((b) => ({
       title: b.title,
-      link: `${BASE}/berita/${b.slug}`,
+      link: `${SITE_URL}/berita/${b.slug}`,
       date: b.date,
       description: b.excerpt,
     })),
     ...repos.slice(0, 5).map((r) => ({
       title: `Review: ${r.name}`,
-      link: `${BASE}/repo/${r.slug}`,
+      link: `${SITE_URL}/repo/${r.slug}`,
       date: r.date,
       description: r.summary,
     })),
@@ -25,10 +22,10 @@ export async function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wawasan AI</title>
-    <link>${BASE}</link>
+    <link>${SITE_URL}</link>
     <description>Portal review AI Indonesia — repo, model, stack, dan wawasan AI.</description>
     <language>id</language>
-    <atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
     ${items
       .map(
         (item) => `

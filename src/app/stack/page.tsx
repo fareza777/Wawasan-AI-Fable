@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { stacks } from "@/data/stacks";
 import ListHeader from "@/components/ListHeader";
 import ContentFilters from "@/components/ContentFilters";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Review Tools Coding AI",
   description:
     "Review tool coding AI dan otomasi — dengan konteks pengguna Indonesia.",
+  ...canonicalPath("/stack"),
 };
 
 export default function StackPage() {

@@ -9,6 +9,7 @@ import ThemeProvider from "@/components/ThemeProvider";
 import Analytics from "@/components/Analytics";
 import ConsentBanner from "@/components/ConsentBanner";
 import JsonLd from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,11 +28,6 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-code",
   display: "swap",
 });
-
-// FIX 2026-06-12: site URL default. Override di Vercel env var
-// NEXT_PUBLIC_SITE_URL. Saat ini: Vercel default subdomain (no custom domain).
-// Kalau Pak Fajar beli domain nanti, cukup ubah env var di Vercel dashboard.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -54,10 +50,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Wawasan AI" }],
   icons: { icon: "/favicon.svg" },
-  // FIX 2026-06-12: alternates.canonical to absolute homepage.
-  // Sub-pages override this in their own metadata export.
   alternates: {
-    canonical: "/",
     types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
   },
   openGraph: {

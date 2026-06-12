@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
+import { canonicalPath } from "@/lib/seo";
 
 export const revalidate = 21_600;
 
@@ -13,6 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Top Weekly Repo — Minggu ke-${week}, ${year}`,
     description: `Arsip Top Weekly Repo minggu ke-${week} tahun ${year} dari Trendshift.`,
+    ...canonicalPath(`/repo/weekly/${year}/${week}`),
   };
 }
 

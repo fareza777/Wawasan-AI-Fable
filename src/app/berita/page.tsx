@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { berita } from "@/data/berita";
 import ListHeader from "@/components/ListHeader";
 import ContentFilters from "@/components/ContentFilters";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Berita & Wawasan AI",
   description:
     "Analisis, panduan, dan opini seputar AI dengan konteks Indonesia: tren AI agent, LLM lokal, otomasi, dan banyak lagi.",
+  ...canonicalPath("/berita"),
 };
 
 export default function BeritaPage() {

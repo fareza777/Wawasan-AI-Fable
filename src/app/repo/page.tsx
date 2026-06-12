@@ -3,11 +3,13 @@ import Link from "next/link";
 import { repos } from "@/data/repos";
 import ListHeader from "@/components/ListHeader";
 import ContentFilters from "@/components/ContentFilters";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Review Repo GitHub AI",
   description:
     "Review mendalam proyek open-source AI terbaik di GitHub — dalam bahasa Indonesia.",
+  ...canonicalPath("/repo"),
 };
 
 export default function RepoPage() {

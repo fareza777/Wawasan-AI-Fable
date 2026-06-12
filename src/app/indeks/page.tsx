@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getIndexDirectory } from "@/lib/indexDirectory";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Indeks A–Z",
   description: "Direktori lengkap semua review dan artikel Wawasan AI.",
+  ...canonicalPath("/indeks"),
 };
 
 export default function IndeksPage() {

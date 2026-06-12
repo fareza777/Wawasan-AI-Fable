@@ -3,11 +3,13 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Top Weekly Repo",
   description:
     "10 repositori GitHub trending mingguan dari Trendshift, dengan konteks editorial Wawasan AI.",
+  ...canonicalPath("/repo/weekly"),
 };
 
 export const revalidate = 21_600;

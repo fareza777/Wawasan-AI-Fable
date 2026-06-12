@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { models, getModel } from "@/data/models";
 import ReviewDetail from "@/components/ReviewDetail";
+import JsonLd from "@/components/JsonLd";
+import { reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return models.map((m) => ({ slug: m.slug }));
@@ -14,10 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const review = getModel((await params).slug);
   if (!review) return {};
-  return {
-    title: `Review ${review.name} — Skor ${review.score.toFixed(1)}/10`,
-    description: review.summary,
-  };
+  return reviewDetailMeta(review, `/model/${review.slug}`);
 }
 
 export default async function ModelDetailPage({
@@ -27,11 +26,15 @@ export default async function ModelDetailPage({
 }) {
   const review = getModel((await params).slug);
   if (!review) notFound();
+  const path = `/model/${review.slug}`;
   return (
-    <ReviewDetail
-      review={review}
-      backHref="/model"
-      backLabel="Review Model"
-    />
+    <>
+      <JsonLd data={reviewJsonLd(review, path)} />
+      <ReviewDetail
+        review={review}
+        backHref="/model"
+        backLabel="Review Model"
+      />
+    </>
   );
 }

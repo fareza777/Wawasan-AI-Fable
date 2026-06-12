@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import ModelCompare from "@/components/ModelCompare";
 import ListHeader from "@/components/ListHeader";
+import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Bandingkan Model LLM",
   description: "Bandingkan skor model LLM side-by-side — penalaran, coding, kecepatan, dan harga.",
+  ...canonicalPath("/bandingkan"),
 };
 
 export default function BandingkanPage() {

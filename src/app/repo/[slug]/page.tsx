@@ -2,7 +2,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { repos, getRepo } from "@/data/repos";
 import ReviewDetail from "@/components/ReviewDetail";
+import JsonLd from "@/components/JsonLd";
 import { fetchGitHubStats } from "@/lib/githubMeta";
+import { reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return repos.map((r) => ({ slug: r.slug }));
@@ -15,10 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const review = getRepo((await params).slug);
   if (!review) return {};
-  return {
-    title: `Review ${review.name} — Skor ${review.score.toFixed(1)}/10`,
-    description: review.summary,
-  };
+  return reviewDetailMeta(review, `/repo/${review.slug}`);
 }
 
 export default async function RepoDetailPage({
@@ -29,12 +28,16 @@ export default async function RepoDetailPage({
   const review = getRepo((await params).slug);
   if (!review) notFound();
   const githubStats = review.link ? await fetchGitHubStats(review.link) : null;
+  const path = `/repo/${review.slug}`;
   return (
-    <ReviewDetail
-      review={review}
-      backHref="/repo"
-      backLabel="Semua Review Repo"
-      githubStats={githubStats}
-    />
+    <>
+      <JsonLd data={reviewJsonLd(review, path)} />
+      <ReviewDetail
+        review={review}
+        backHref="/repo"
+        backLabel="Semua Review Repo"
+        githubStats={githubStats}
+      />
+    </>
   );
 }

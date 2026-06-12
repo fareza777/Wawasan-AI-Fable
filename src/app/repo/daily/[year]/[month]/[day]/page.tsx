@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
 import { formatTanggal } from "@/lib/format";
+import { canonicalPath } from "@/lib/seo";
 
 export const revalidate = 21_600;
 
@@ -16,9 +17,11 @@ function toIsoDate(year: string, month: string, day: string): string {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { year, month, day } = await params;
   const date = toIsoDate(year, month, day);
+  const path = `/repo/daily/${year}/${month.padStart(2, "0")}/${day.padStart(2, "0")}`;
   return {
     title: `Top Daily Repo — ${formatTanggal(date)}`,
     description: `Arsip Top Daily Repo ${formatTanggal(date)} dari Trendshift.`,
+    ...canonicalPath(path),
   };
 }
 

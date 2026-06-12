@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { stacks, getStack } from "@/data/stacks";
 import ReviewDetail from "@/components/ReviewDetail";
+import JsonLd from "@/components/JsonLd";
+import { reviewDetailMeta, reviewJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return stacks.map((s) => ({ slug: s.slug }));
@@ -14,10 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const review = getStack((await params).slug);
   if (!review) return {};
-  return {
-    title: `Review ${review.name} — Skor ${review.score.toFixed(1)}/10`,
-    description: review.summary,
-  };
+  return reviewDetailMeta(review, `/stack/${review.slug}`);
 }
 
 export default async function StackDetailPage({
@@ -27,11 +26,15 @@ export default async function StackDetailPage({
 }) {
   const review = getStack((await params).slug);
   if (!review) notFound();
+  const path = `/stack/${review.slug}`;
   return (
-    <ReviewDetail
-      review={review}
-      backHref="/stack"
-      backLabel="Review Tools"
-    />
+    <>
+      <JsonLd data={reviewJsonLd(review, path)} />
+      <ReviewDetail
+        review={review}
+        backHref="/stack"
+        backLabel="Review Tools"
+      />
+    </>
   );
 }
