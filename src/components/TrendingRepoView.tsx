@@ -29,22 +29,21 @@ export default async function TrendingRepoView({
   period?: { year: number; week: number } | { date: string };
   currentPath: string;
 }) {
-  // Determine data source: daily snapshot (archive) or live (today/weekly)
-  const isDailyArchive = cadence === "daily" && "date" in (period ?? {});
+  const isDailyArchive = cadence === "daily" && period !== undefined && "date" in period;
 
   const [data, periods] = await Promise.all([
     isDailyArchive
-      ? fetchDailySnapshot((period as { date: string }).date)
+      ? fetchDailySnapshot(period.date)
       : cadence === "daily"
-      ? fetchDailyTrendingRepos()
-      : fetchWeeklyTrendingRepos(period as { year: number; week: number } | undefined),
+        ? fetchDailyTrendingRepos()
+        : fetchWeeklyTrendingRepos(period as { year: number; week: number } | undefined),
     cadence === "daily"
       ? fetchAvailableDailyPeriods()
       : fetchAvailableWeeklyPeriods(),
   ]);
 
   const today = isDailyArchive
-    ? (period as { date: string }).date
+    ? period.date
     : new Date().toISOString().slice(0, 10);
 
   const enriched = await Promise.all(
@@ -118,10 +117,11 @@ export default async function TrendingRepoView({
           >
             Trendshift
           </a>
-          — platform yang melacak repositori GitHub naik daun berdasarkan momentum
-          percakapan, bukan sekadar jumlah bintang. Wawasan AI menyajikan daftar ini
-          sebagai radar awal: repo mana yang layak dipelajari, diuji, dan mungkin
-          direview lebih dalam.
+          {isDailyArchive
+            ? " — arsip ini disimpan sebagai snapshot harian agar peringkat historis tetap tersedia."
+            : " — platform yang melacak repositori GitHub naik daun berdasarkan momentum percakapan, bukan sekadar jumlah bintang."}{" "}
+          Wawasan AI menyajikan daftar ini sebagai radar awal: repo mana yang layak dipelajari,
+          diuji, dan mungkin direview lebih dalam.
         </p>
       </section>
     </>

@@ -1,0 +1,152 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-12T11:38:05.131Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "apple/container",
+      "owner": "apple",
+      "repo": "container",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "githubUrl": "https://github.com/apple/container",
+      "trendshiftUrl": "https://trendshift.io/repositories/14789",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2025-05-30T21:26:05Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "elder-plinius/CL4R1T4S",
+      "owner": "elder-plinius",
+      "repo": "CL4R1T4S",
+      "description": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+      "githubUrl": "https://github.com/elder-plinius/CL4R1T4S",
+      "trendshiftUrl": "https://trendshift.io/repositories/22834",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2025-03-04T20:03:16Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "githubUrl": "https://github.com/addyosmani/agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25200",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-15T20:20:26Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bannedbook/fanqiang",
+      "owner": "bannedbook",
+      "repo": "fanqiang",
+      "description": "翻墙-科学上网",
+      "githubUrl": "https://github.com/bannedbook/fanqiang",
+      "trendshiftUrl": "https://trendshift.io/repositories/9012",
+      "language": "Kotlin",
+      "topics": [
+        "Proxy"
+      ],
+      "dateCreated": "2015-01-14T00:34:25Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "XiaomiMiMo/MiMo-Code",
+      "owner": "XiaomiMiMo",
+      "repo": "MiMo-Code",
+      "description": "",
+      "githubUrl": "https://github.com/XiaomiMiMo/MiMo-Code",
+      "trendshiftUrl": "https://trendshift.io/repositories/49776",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-10T11:52:41Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "NVIDIA/SkillSpector",
+      "owner": "NVIDIA",
+      "repo": "SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "githubUrl": "https://github.com/NVIDIA/SkillSpector",
+      "trendshiftUrl": "https://trendshift.io/repositories/37404",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-21T00:28:43Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "kenn-io/agentsview",
+      "owner": "kenn-io",
+      "repo": "agentsview",
+      "description": "Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!",
+      "githubUrl": "https://github.com/kenn-io/agentsview",
+      "trendshiftUrl": "https://trendshift.io/repositories/22755",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "Search"
+      ],
+      "dateCreated": "2026-02-19T19:33:24Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-09T19:45:18Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "mindfold-ai/Trellis",
+      "owner": "mindfold-ai",
+      "repo": "Trellis",
+      "description": "The best agent harness.",
+      "githubUrl": "https://github.com/mindfold-ai/Trellis",
+      "trendshiftUrl": "https://trendshift.io/repositories/21702",
+      "language": "TypeScript",
+      "topics": [
+        "AI workflow"
+      ],
+      "dateCreated": "2026-01-26T11:49:10Z"
+    }
+  ]
+}

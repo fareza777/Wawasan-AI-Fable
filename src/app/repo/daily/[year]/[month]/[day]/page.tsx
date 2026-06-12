@@ -4,17 +4,22 @@ import { notFound } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
 import TrendingCadenceTabs from "@/components/TrendingCadenceTabs";
 import TrendingRepoView from "@/components/TrendingRepoView";
+import { formatTanggal } from "@/lib/format";
 
 export const revalidate = 21_600;
 
 type Props = { params: Promise<{ year: string; month: string; day: string }> };
 
+function toIsoDate(year: string, month: string, day: string): string {
+  return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { year, month, day } = await params;
-  const date = `${year}-${month}-${day}`;
+  const date = toIsoDate(year, month, day);
   return {
-    title: `Top Daily Repo — ${date}`,
-    description: `Arsip Top Daily Repo ${date} dari Trendshift.`,
+    title: `Top Daily Repo — ${formatTanggal(date)}`,
+    description: `Arsip Top Daily Repo ${formatTanggal(date)} dari Trendshift.`,
   };
 }
 
@@ -31,8 +36,8 @@ export default async function DailyArchivePage({ params }: Props) {
     notFound();
   }
 
-  const date = `${year}-${month}-${day}`;
-  const currentPath = `/repo/daily/${year}/${month}/${day}`;
+  const iso = toIsoDate(year, month, day);
+  const currentPath = `/repo/daily/${year}/${month.padStart(2, "0")}/${day.padStart(2, "0")}`;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -47,7 +52,7 @@ export default async function DailyArchivePage({ params }: Props) {
         <ListHeader
           kicker="// arsip harian"
           title="Top Daily Repo"
-          description={`Arsip peringkat harian ${date} — snapshot Trendshift yang disimpan pada hari itu.`}
+          description={`Arsip peringkat ${formatTanggal(iso)} — snapshot Trendshift yang disimpan pada hari itu.`}
         />
       </div>
 
@@ -57,7 +62,7 @@ export default async function DailyArchivePage({ params }: Props) {
 
       <TrendingRepoView
         cadence="daily"
-        period={{ date }}
+        period={{ date: iso }}
         currentPath={currentPath}
       />
     </div>

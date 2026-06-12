@@ -18,7 +18,7 @@ export default function TrendingPeriodPicker({
     return (
       <p className="text-xs text-slate-500">
         {cadence === "daily"
-          ? "Riwayat harian akan tersedia seiring arsip Trendshift bertambah."
+          ? "Riwayat harian belum tersedia — coba lagi nanti."
           : "Riwayat minggu akan bertambah seiring waktu — kembali lagi nanti untuk melihat arsip."}
       </p>
     );

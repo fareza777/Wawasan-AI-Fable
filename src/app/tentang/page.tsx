@@ -1,30 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import WeeklyHomePreview from "@/components/WeeklyHomePreview";
 
 export const metadata: Metadata = {
   title: "Tentang Wawasan AI",
   description:
     "Wawasan AI adalah portal review AI Indonesia — review repo GitHub, skor model LLM, ulasan tools coding AI, dan berita dengan konteks lokal.",
 };
-
-const nilai = [
-  {
-    judul: "Evaluasi Editorial",
-    desc: "Setiap review mengikuti metodologi editorial Wawasan AI — independen dan berbasis pengujian terstruktur.",
-  },
-  {
-    judul: "Konteks Indonesia",
-    desc: "Daya beli lokal, infrastruktur data, dan kebutuhan organisasi di Indonesia jadi lensa utama.",
-  },
-  {
-    judul: "Independen & Transparan",
-    desc: "Skor bisa berubah seiring pembaruan produk. Riwayat perubahan tercatat di changelog.",
-  },
-  {
-    judul: "Praktis, Bukan Hype",
-    desc: "Fokus pada apa yang benar-benar bisa dipakai hari ini — bukan prediksi futuristik.",
-  },
-];
 
 const layanan = [
   {
@@ -46,6 +28,7 @@ const layanan = [
 ];
 
 const rubrik = [
+  { href: "/repo/weekly", label: "Top Trending Repo", count: "10+" },
   { href: "/repo", label: "Review Repo GitHub", count: "11+" },
   { href: "/model", label: "Skor Model LLM", count: "11" },
   { href: "/stack", label: "Review Tools", count: "10" },
@@ -74,7 +57,7 @@ export default function TentangPage() {
         </p>
       </div>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {rubrik.map((r) => (
           <Link key={r.href} href={r.href} className="card-glow rounded-2xl p-5">
             <div className="font-mono text-2xl font-extrabold text-gradient">{r.count}</div>
@@ -83,14 +66,33 @@ export default function TentangPage() {
         ))}
       </div>
 
-      <h2 className="mt-14 text-xl font-bold text-slate-100">Nilai Editorial</h2>
-      <div className="mt-5 grid gap-4 sm:grid-cols-2">
-        {nilai.map((n) => (
-          <div key={n.judul} className="panel-white rounded-2xl border p-5">
-            <h3 className="font-bold text-neon-400">{n.judul}</h3>
-            <p className="mt-1.5 text-sm leading-relaxed text-slate-300">{n.desc}</p>
-          </div>
-        ))}
+      <div className="mt-14 flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-neon-400">
+            // top trending
+          </p>
+          <h2 className="mt-2 text-xl font-bold text-slate-100">Top Trending Repo</h2>
+          <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+            Repo open-source yang sedang naik daun — diambil dari Trendshift, dengan narasi bahasa Indonesia.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href="/repo/weekly?cadence=daily"
+            className="rounded-xl border border-ink-600 bg-ink-800/60 px-4 py-2 text-sm font-semibold text-slate-200 transition-colors hover:border-neon-400/50"
+          >
+            Top Daily →
+          </Link>
+          <Link
+            href="/repo/weekly"
+            className="rounded-xl border border-neon-500/30 bg-neon-500/10 px-4 py-2 text-sm font-semibold text-neon-400 transition-colors hover:bg-neon-500/15"
+          >
+            Top Weekly →
+          </Link>
+        </div>
+      </div>
+      <div className="mt-6">
+        <WeeklyHomePreview />
       </div>
 
       <h2 className="mt-14 text-xl font-bold text-slate-100">Layanan Perusahaan</h2>
