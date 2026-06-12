@@ -28,7 +28,8 @@ const layanan = [
 ];
 
 const rubrik = [
-  { href: "/repo/weekly", label: "Top Trending Repo", count: "10+" },
+  { href: "/repo/daily", label: "Top Daily Repo", count: "10+" },
+  { href: "/repo/weekly", label: "Top Weekly Repo", count: "10+" },
   { href: "/repo", label: "Review Repo GitHub", count: "11+" },
   { href: "/model", label: "Skor Model LLM", count: "11" },
   { href: "/stack", label: "Review Tools", count: "10" },
@@ -71,14 +72,14 @@ export default function TentangPage() {
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-neon-400">
             // top trending
           </p>
-          <h2 className="mt-2 text-xl font-bold text-slate-100">Top Trending Repo</h2>
+          <h2 className="mt-2 text-xl font-bold text-slate-100">Top Daily & Weekly Repo</h2>
           <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
             Repo open-source yang sedang naik daun — diambil dari Trendshift, dengan narasi bahasa Indonesia.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
           <Link
-            href="/repo/weekly?cadence=daily"
+            href="/repo/daily"
             className="rounded-xl border border-ink-600 bg-ink-800/60 px-4 py-2 text-sm font-semibold text-slate-200 transition-colors hover:border-neon-400/50"
           >
             Top Daily →

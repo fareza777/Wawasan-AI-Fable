@@ -42,7 +42,7 @@ export default async function DailyArchivePage({ params }: Props) {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <Link
-        href="/repo/weekly?cadence=daily"
+        href="/repo/daily"
         className="text-sm font-medium text-neon-400 hover:underline"
       >
         ← Top Daily hari ini

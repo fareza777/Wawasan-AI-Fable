@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
 import TrendingCadenceTabs from "@/components/TrendingCadenceTabs";
 import TrendingRepoView from "@/components/TrendingRepoView";
-import { TrendCadence } from "@/lib/trendshift";
 
 export const metadata: Metadata = {
-  title: "Top Trending Repo",
+  title: "Top Weekly Repo",
   description:
-    "10 repositori GitHub trending harian dan mingguan dari Trendshift, dengan konteks editorial Wawasan AI.",
+    "10 repositori GitHub trending mingguan dari Trendshift, dengan konteks editorial Wawasan AI.",
 };
 
-export const revalidate = 3600;
+export const revalidate = 21_600;
 
 type Props = { searchParams: Promise<{ cadence?: string }> };
 
-export default async function TrendingRepoPage({ searchParams }: Props) {
+export default async function WeeklyRepoPage({ searchParams }: Props) {
   const { cadence } = await searchParams;
-  const mode: TrendCadence = cadence === "daily" ? "daily" : "weekly";
-  const isDaily = mode === "daily";
+  if (cadence === "daily") redirect("/repo/daily");
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -31,24 +30,17 @@ export default async function TrendingRepoPage({ searchParams }: Props) {
 
       <div className="mt-6">
         <ListHeader
-          kicker={isDaily ? "// top daily" : "// top weekly"}
-          title={isDaily ? "Top Daily Repo" : "Top Weekly Repo"}
-          description={
-            isDaily
-              ? "Repositori GitHub dengan momentum tertinggi hari ini — diambil dari peringkat harian Trendshift, lalu disajikan dengan konteks editorial Wawasan AI."
-              : "Repositori GitHub dengan momentum tertinggi minggu ini — diambil dari peringkat mingguan Trendshift, lalu disajikan dengan konteks editorial Wawasan AI."
-          }
+          kicker="// top weekly"
+          title="Top Weekly Repo"
+          description="Repositori GitHub dengan momentum tertinggi minggu ini — diambil dari peringkat mingguan Trendshift, lalu disajikan dengan konteks editorial Wawasan AI."
         />
       </div>
 
       <div className="fade-up mt-8">
-        <TrendingCadenceTabs active={mode} />
+        <TrendingCadenceTabs active="weekly" />
       </div>
 
-      <TrendingRepoView
-        cadence={mode}
-        currentPath={isDaily ? "/repo/weekly?cadence=daily" : "/repo/weekly"}
-      />
+      <TrendingRepoView cadence="weekly" currentPath="/repo/weekly" />
     </div>
   );
 }

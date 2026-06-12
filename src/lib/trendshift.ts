@@ -290,7 +290,7 @@ export async function saveDailySnapshot(date: string, data: TrendingData): Promi
 export async function fetchAvailableDailyPeriods(maxDays = 30): Promise<TrendingPeriodOption[]> {
   const today = new Date().toISOString().slice(0, 10);
   const periods: TrendingPeriodOption[] = [
-    { label: "Hari ini", path: "/repo/weekly?cadence=daily" },
+    { label: "Hari ini", path: "/repo/daily" },
   ];
 
   try {

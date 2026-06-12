@@ -8,6 +8,7 @@ import ReviewCard from "@/components/ReviewCard";
 import ArtikelCard from "@/components/ArtikelCard";
 import TopicTicker from "@/components/TopicTicker";
 import HeroFuturisticVisual from "@/components/HeroFuturisticVisual";
+import DailyHomePreview from "@/components/DailyHomePreview";
 import WeeklyHomePreview from "@/components/WeeklyHomePreview";
 import { scoreColor } from "@/components/Score";
 
@@ -130,29 +131,36 @@ export default function Home() {
 
       <TopicTicker />
 
-      {/* ===== Top Weekly Repo ===== */}
+      {/* ===== Top Daily Repo ===== */}
       <section className="section-muted">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead nomor="01" kicker="// top trending" title="Top Weekly Repo" href="/repo/weekly" />
+          <SectionHead nomor="01" kicker="// top daily" title="Top Daily Repo" href="/repo/daily" />
+          <DailyHomePreview />
+        </div>
+      </section>
+
+      {/* ===== Top Weekly Repo ===== */}
+      <section className="border-y border-ink-700/60 bg-ink-900/40">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <SectionHead nomor="02" kicker="// top weekly" title="Top Weekly Repo" href="/repo/weekly" />
           <WeeklyHomePreview />
         </div>
       </section>
 
       {/* ===== Review Repo ===== */}
-      <section className="border-y border-ink-700/60 bg-ink-900/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead nomor="02" kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <SectionHead nomor="03" kicker="// review repo" title="Repo GitHub Pilihan" href="/repo" />
           <div className="grid gap-6 md:grid-cols-3">
             {featuredRepos.map((r) => (
               <ReviewCard key={r.slug} review={r} basePath="/repo" />
             ))}
           </div>
-        </div>
       </section>
 
       {/* ===== Leaderboard Model ===== */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead nomor="03" kicker="// review model" title="Review Model LLM" href="/model" />
+      <section className="border-t border-ink-700/60 bg-ink-900/40">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <SectionHead nomor="04" kicker="// review model" title="Review Model LLM" href="/model" />
           <div className="panel-white overflow-hidden rounded-2xl border border-ink-700">
             {topModels.map((m, i) => (
               <Link
@@ -182,28 +190,29 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
       </section>
 
       {/* ===== Review Tools ===== */}
-      <section className="border-t border-ink-700/60 bg-ink-900/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <SectionHead nomor="04" kicker="// review tools" title="Tools Coding AI" href="/stack" />
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <SectionHead nomor="05" kicker="// review tools" title="Tools Coding AI" href="/stack" />
         <div className="grid gap-6 md:grid-cols-3">
           {featuredStacks.map((s) => (
             <ReviewCard key={s.slug} review={s} basePath="/stack" />
           ))}
         </div>
-        </div>
       </section>
 
       {/* ===== Berita ===== */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <SectionHead nomor="05" kicker="// berita & wawasan" title="Tulisan Terbaru" href="/berita" />
+      <section className="border-t border-ink-700/60 bg-ink-900/40">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <SectionHead nomor="06" kicker="// berita & wawasan" title="Tulisan Terbaru" href="/berita" />
           <div className="grid gap-6 md:grid-cols-3">
             {latestNews.map((b) => (
               <ArtikelCard key={b.slug} artikel={b} />
             ))}
           </div>
+        </div>
       </section>
 
       {/* ===== CTA ===== */}

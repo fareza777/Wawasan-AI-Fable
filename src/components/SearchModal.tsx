@@ -14,7 +14,7 @@ const typeStyle: Record<string, string> = {
 };
 
 const quickLinks = [
-  { href: "/repo/weekly?cadence=daily", label: "Top Daily" },
+  { href: "/repo/daily", label: "Top Daily" },
   { href: "/repo/weekly", label: "Top Weekly" },
   { href: "/repo/openclaw", label: "OpenClaw" },
   { href: "/model/claude-opus-4-5", label: "Claude Opus 4.5" },

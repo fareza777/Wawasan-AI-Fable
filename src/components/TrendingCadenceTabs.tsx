@@ -13,7 +13,7 @@ export default function TrendingCadenceTabs({ active }: { active: TrendCadence }
 
   return (
     <div className="flex flex-wrap gap-2" role="tablist" aria-label="Jenis peringkat trending">
-      <Link href="/repo/weekly?cadence=daily" className={tabClass("daily")} role="tab" aria-selected={active === "daily"}>
+      <Link href="/repo/daily" className={tabClass("daily")} role="tab" aria-selected={active === "daily"}>
         Top Daily Repo
       </Link>
       <Link href="/repo/weekly" className={tabClass("weekly")} role="tab" aria-selected={active === "weekly"}>

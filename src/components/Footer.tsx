@@ -43,12 +43,11 @@ export default function Footer() {
             <h3 className="mb-3 font-semibold text-slate-200">Rubrik</h3>
             <ul className="space-y-2 text-slate-300">
               <li><Link href="/repo" className="hover:text-neon-400">Review Repo GitHub</Link></li>
-              <li><Link href="/repo/weekly?cadence=daily" className="hover:text-neon-400">Top Daily Repo</Link></li>
+              <li><Link href="/repo/daily" className="hover:text-neon-400">Top Daily Repo</Link></li>
               <li><Link href="/repo/weekly" className="hover:text-neon-400">Top Weekly Repo</Link></li>
               <li><Link href="/model" className="hover:text-neon-400">Review Model LLM</Link></li>
               <li><Link href="/stack" className="hover:text-neon-400">Review Tools</Link></li>
               <li><Link href="/berita" className="hover:text-neon-400">Berita & Wawasan</Link></li>
-              <li><Link href="/koleksi" className="hover:text-neon-400">Koleksi</Link></li>
               <li><Link href="/bandingkan" className="hover:text-neon-400">Bandingkan Model</Link></li>
             </ul>
           </div>

@@ -9,18 +9,28 @@ import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { href: "/repo", label: "Review Repo" },
-  { href: "/repo/weekly", label: "Top Trending Repo" },
+  { href: "/repo/daily", label: "Top Daily Repo" },
+  { href: "/repo/weekly", label: "Top Weekly Repo" },
   { href: "/model", label: "Review Model" },
   { href: "/stack", label: "Review Tools" },
   { href: "/berita", label: "Berita" },
-  { href: "/koleksi", label: "Koleksi" },
   { href: "/tentang", label: "Tentang" },
 ];
 
 function navActive(pathname: string, href: string) {
   if (pathname === href) return true;
   if (href === "/repo") {
-    return pathname.startsWith("/repo/") && !pathname.startsWith("/repo/weekly");
+    return (
+      pathname.startsWith("/repo/") &&
+      !pathname.startsWith("/repo/weekly") &&
+      !pathname.startsWith("/repo/daily")
+    );
+  }
+  if (href === "/repo/daily") {
+    return pathname.startsWith("/repo/daily");
+  }
+  if (href === "/repo/weekly") {
+    return pathname.startsWith("/repo/weekly");
   }
   return href !== "/" && pathname.startsWith(`${href}/`);
 }
@@ -59,7 +69,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-1 xl:flex">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -78,11 +88,9 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <SearchModal />
           <ThemeToggle />
-          <div className="hidden lg:block">
-            <ProfileMenu />
-          </div>
+          <ProfileMenu />
           <button
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-ink-600 text-slate-300 lg:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-ink-600 text-slate-300 xl:hidden"
             onClick={() => setOpen(!open)}
             aria-label="Buka menu"
           >
@@ -98,7 +106,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-ink-700/60 px-4 pb-4 lg:hidden">
+        <div className="border-t border-ink-700/60 px-4 pb-4 xl:hidden">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -111,9 +119,6 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <div className="mt-3 px-3">
-            <ProfileMenu />
-          </div>
         </div>
       )}
     </header>

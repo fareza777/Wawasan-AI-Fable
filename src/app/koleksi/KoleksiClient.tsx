@@ -42,6 +42,24 @@ export default function KoleksiClient() {
 
   if (!ready) return <div className="min-h-[50vh]" />;
 
+  if (!profile) {
+    return (
+      <div className="mx-auto max-w-lg px-4 py-24 text-center sm:px-6">
+        <h1 className="text-2xl font-bold text-slate-100">Koleksi tersimpan</h1>
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
+          Masuk dulu lewat tombol <strong className="text-slate-200">Masuk</strong> di kanan atas
+          navbar untuk mengakses koleksi bookmark-mu.
+        </p>
+        <Link
+          href="/"
+          className="mt-8 inline-block rounded-xl border border-ink-600 px-6 py-3 text-sm font-semibold text-slate-200 hover:border-neon-400/50"
+        >
+          Kembali ke beranda
+        </Link>
+      </div>
+    );
+  }
+
   const savedRepos = repos.filter((r) =>
     items.some((i) => i.type === "repo" && i.slug === r.slug)
   );
