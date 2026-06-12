@@ -291,6 +291,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "skill-ai-engineer-paling-dicari-2026",
+    title: "Lima Skill AI Engineer yang Paling Dicari Perusahaan Indonesia di 2026",
+    excerpt:
+      "Bukan riset mutakhir yang paling dibutuhkan pasar, melainkan kemampuan merangkai alat yang sudah ada menjadi solusi yang benar-benar dipakai. Lima skill ini jadi pembeda utama.",
+    category: "Analisis",
+    date: "2026-06-12",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau bertanya ke perekrut teknologi di Jakarta, Bandung, atau Surabaya, lowongan AI engineer di 2026 sudah tidak lagi terdengar seperti posisi riset yang sakral. Yang dicari adalah orang yang bisa merangkai API yang sudah ada, menghubungkan layanan, dan memastikan sistem yang dibangun benar-benar dipakai tim operasional — bukan menghasilkan makalah. Pergeseran ini diam-diam sudah berlangsung dua tahun, dan akselerasinya terasa tahun ini.",
+          "Pertanyaannya jadi: skill apa yang benar-benar membedakan kandidat yang langsung produktif dari yang baru jago teori? Berikut lima yang muncul konsisten di percakapan dengan tim engineering lokal, lengkap dengan cara membangunnya untuk orang Indonesia yang tidak punya akses ke Silicon Valley.",
+        ],
+      },
+      {
+        heading: "1. Merangkai agen — bukan membangun model",
+        paragraphs: [
+          "Skill pertama dan paling nyata: kemampuan merangkai 'agen' dari komponen yang sudah jadi. OpenClaw untuk orkestrasi pesan, n8n untuk workflow visual, Ollama untuk model lokal — ketiga nama ini adalah toolkit dasar yang dicari tim. Yang membedakan kandidat andal bukan apakah mereka bisa menulis paper tentang attention mechanism, melainkan seberapa cepat mereka bisa memasang pipeline 'baca email masuk, klasifikasikan, balas otomatis' dalam sehari.",
+          "Cara membangunnya: jangan mulai dari teori. Pilih satu workflow nyata di tempat kerja, lalu pasang. Saat pertama gagal, baca log. Saat kedua gagal, tanya di Discord komunitas. Saat ketiga baru jadi — di situ skill sudah terbentuk. Iterasi seperti ini jauh lebih efektif daripada kursus online yang membuat lulus tanpa pernah menyentuh produksi.",
+        ],
+      },
+      {
+        heading: "2. Memahami konteks bisnis, bukan hanya kode",
+        paragraphs: [
+          "Skill kedua yang membedakan: kemampuan menerjemahkan kebutuhan bisnis ke solusi teknis. Banyak engineer hebat yang bisa membangun apa saja, tapi gagal paham mengapa pengguna benar-benar membutuhkannya. AI engineer yang paling dicari tahu kapan harus berhenti menambahkan fitur dan mulai mendengarkan: 'apa yang sebulan ini paling sering membuat Anda kesal di tempat kerja?'",
+          "Untuk konteks Indonesia, ini尤为重要. UMKM yang butuh otomasi tidak peduli apakah Anda menggunakan GPT-5 atau Claude Opus — mereka peduli apakah struk mereka otomatis terisi tiap malam. Skill menerjemahkan bahasa teknis ke bahasa masalah nyata adalah yang membuat engineer Indonesia bisa charging premium untuk klien lokal.",
+        ],
+      },
+      {
+        heading: "3. Self-hosting dan kedaulatan data",
+        paragraphs: [
+          "Skill ketiga yang meningkat tajam permintaannya: kemampuan menjalankan AI di infrastruktur sendiri. Untuk banyak perusahaan di Indonesia — apalagi yang bergerak di sektor publik, keuangan, atau kesehatan — mengirim data ke API publik bukan opsi. Ollama, vLLM, LM Studio, dan kawan-kawan menjadi literasi wajib, sama seperti Linux wajib untuk backend engineer lima tahun lalu.",
+          "Prasyaratnya:一台 laptop dengan RAM 16 GB sudah cukup untuk mulai. Pasang Ollama, unduh Qwen 3 8B, dan biarkan model itu menjadi 'rekan' Anda sehari-hari. Setelah beberapa minggu, intuisi tentang ukuran model, latency, dan biaya akan terlatih dengan sendirinya — intuisi yang tidak bisa dibeli dari tutorial manapun.",
+        ],
+      },
+      {
+        heading: "4. Evaluasi, bukan hanya output",
+        paragraphs: [
+          "Skill keempat: kemampuan menilai apakah hasil AI benar-benar bagus, bukan sekadar 'kelihatannya bagus'. Untuk文案 atau ringkasan, mata manusia masih lebih bisa diandalkan dari metrik otomatis. Untuk alur kerja yang melibatkan keputusan (misal klasifikasi dokumen hukum), membangun set evaluasi kecil dari 50 contoh yang sudah diberi label manusia adalah investasi terbaik yang bisa dilakukan engineer.",
+          "Di sinilah bedanya 'prompt engineer' dan 'AI engineer' sesungguhnya: prompt engineer puas ketika output kelihatannya meyakinkan; AI engineer tahu bahwa tanpa evaluasi yang terstruktur, keyakinan itu kosong. Untuk standar industri Indonesia, kemampuan ini yang membedakan konsultan mahal dari konsultan biasa.",
+        ],
+      },
+      {
+        heading: "5. Menulis narasi, bukan hanya kode",
+        paragraphs: [
+          "Skill kelima yang sering diabaikan: kemampuan menulis dengan jelas. README yang baik, dokumentasi internal, presentasi ke stakeholder non-teknis — semua ini sering membedakan AI engineer yang dihargai dari yang sekadar produktif. Di era di mana AI sendiri sudah bisa menghasilkan kode, kemampuan menjelaskan 'mengapa' dan 'untuk apa' menjadi semakin bernilai.",
+          "Untuk konteks Indonesia, skill ini mengambil bentuk tambahan: kemampuan menulis dalam dua bahasa. Dokumentasi internal bisa bahasa Inggris, tapi laporan ke klien atau presentasi ke领导 sering perlu bahasa Indonesia yang baik. AI engineer yang bisa menulis narasi untuk kedua audiens — dan tahu kapan masing-masing digunakan — akan selalu punya keunggulan di pasar lokal.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
