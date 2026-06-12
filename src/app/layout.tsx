@@ -28,7 +28,10 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasanai.com";
+// FIX 2026-06-12: site URL default. Override di Vercel env var
+// NEXT_PUBLIC_SITE_URL. Saat ini: Vercel default subdomain (no custom domain).
+// Kalau Pak Fajar beli domain nanti, cukup ubah env var di Vercel dashboard.
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -51,6 +54,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Wawasan AI" }],
   icons: { icon: "/favicon.svg" },
+  // FIX 2026-06-12: alternates.canonical to absolute homepage.
+  // Sub-pages override this in their own metadata export.
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
+  },
   openGraph: {
     title: "Wawasan AI — Portal Review AI Indonesia",
     description:
@@ -58,6 +67,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     siteName: "Wawasan AI",
+    url: SITE_URL,
     images: [{ url: "/opengraph-image" }],
   },
   twitter: {
@@ -67,8 +77,10 @@ export const metadata: Metadata = {
       "Review repo GitHub, skor model LLM, review tools coding AI, dan wawasan AI dalam bahasa Indonesia.",
     images: ["/opengraph-image"],
   },
-  alternates: {
-    types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 },
   },
 };
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { repos } from "@/data/repos";
 import { models } from "@/data/models";
 import { stacks } from "@/data/stacks";
@@ -9,6 +10,33 @@ import TopicTicker from "@/components/TopicTicker";
 import HeroFuturisticVisual from "@/components/HeroFuturisticVisual";
 import WeeklyHomePreview from "@/components/WeeklyHomePreview";
 import { scoreColor } from "@/components/Score";
+
+// FIX 2026-06-12: explicit homepage metadata to prevent title duplication
+// "Wawasan AI | Wawasan AI" caused by layout template + missing page title.
+// `title.absolute` skips the layout's "%s · Wawasan AI" template entirely.
+export const metadata: Metadata = {
+  title: {
+    absolute: "Wawasan AI — Review & Navigasi Dunia AI untuk Indonesia",
+  },
+  description:
+    "Portal review AI Indonesia: review repo GitHub (Claude Code, Cursor), model LLM (Claude, GPT, Gemini), AI stack, workflow AI, dan berita AI. Kurasi independen untuk keputusan AI dalam 30 detik.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Wawasan AI — Review & Navigasi Dunia AI untuk Indonesia",
+    description:
+      "Portal review AI Indonesia: review repo GitHub, model LLM, AI stack, workflow, dan berita AI. Kurasi independen.",
+    type: "website",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wawasan AI — Review & Navigasi Dunia AI untuk Indonesia",
+    description:
+      "Portal review AI Indonesia: review repo GitHub, model LLM, AI stack, workflow, dan berita AI.",
+  },
+};
 
 function byDateDesc<T extends { date: string }>(arr: T[]) {
   return [...arr].sort((a, b) => b.date.localeCompare(a.date));

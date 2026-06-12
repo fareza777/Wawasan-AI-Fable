@@ -5,7 +5,9 @@ import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
 import { allTags } from "@/lib/tags";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasanai.com";
+// FIX 2026-06-12: site URL default. Override via Vercel env var
+// NEXT_PUBLIC_SITE_URL. See skill: wawasan-ai-deploy-workflow.
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wawasan-ai.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const statis = [
