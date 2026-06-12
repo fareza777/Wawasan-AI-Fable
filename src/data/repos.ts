@@ -545,6 +545,55 @@ export const repos: Review[] = [
     date: "2026-02-01",
     updatedAt: "2026-06-10",
   },
+  {
+    slug: "ecc",
+    name: "ECC",
+    tagline: "Sistem optimasi performa untuk agent harness AI — skill, instink, memori, dan keamanan dalam satu paket",
+    tags: ["AI Agent", "JavaScript", "Developer Tools", "Claude Code"],
+    score: 9.0,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 9.0 },
+    ],
+    summary:
+      "ECC (Evolutionary Coding Collective) adalah sistem optimasi performa untuk agent harness AI yang dipakai sehari-hari: Claude Code, Codex, Opencode, hingga Cursor. Bukan sekadar kumpulan prompt — ia menambahkan lapisan skill, instink, memori, keamanan, dan workflow riset-first yang membuat agen coding benar-benar lebih andal pada proyek nyata.",
+    highlights: [
+      "Sistem optimasi performa 'agent harness' yang fokus pada Claude Code, Codex, Opencode, dan Cursor — empat agen coding AI paling populer saat ini",
+      "Berlapis: skill (prosedur terstruktur), instink (heuristik otomatis), memori jangka panjang, dan modul keamanan bawaan",
+      "Pendekatan 'research-first development' — agen dipaksa riset dulu sebelum eksekusi, sehingga output lebih ter-grounded dan minim halusinasi",
+      "Arsitektur modular dalam JavaScript — ringan, single package, dan bisa dipasang ke workflow coding apa pun tanpa modifikasi besar",
+      "213k+ bintang di GitHub dalam waktu singkat — adopsi cepat dari komunitas yang sebelumnya frustrasi dengan agen coding yang sering lupa konteks",
+      "Open source berlisensi MIT — bisa di-fork, dimodifikasi, dan disisipkan ke pipeline internal perusahaan",
+      "MCP (Model Context Protocol) integration bawaan — siap dipakai di ekosistem tooling AI 2026 yang semakin standard",
+      "Cocok untuk developer yang sudah pakai Claude Code/Codex dan ingin 'meningkatkan' agennya ke level produksi — bukan demo",
+    ],
+    pros: [
+      "Meningkatkan konsistensi output agen coding di proyek nyata, bukan cuma di benchmark",
+      "Open source MIT — bebas dipakai komersial tanpa biaya lisensi",
+      "Komunitas dan momentum sangat tinggi, commit terbaru selalu aktif mengikuti perkembangan Claude Code dan Codex",
+      "Pendekatan berlapis (skill + instink + memori + keamanan) menutupi banyak kelemahan bawaan agen AI modern",
+    ],
+    cons: [
+      "Bergantung pada agen AI spesifik (Claude Code, Codex, Opencode, Cursor) — tidak berdiri sendiri sebagai agent framework",
+      "Butuh pemahaman workflow coding agent yang sudah matang untuk memanfaatkan semua fiturnya",
+      "JavaScript sebagai basis bisa menjadi barrier bagi tim engineering yang stack-nya Python/Go",
+    ],
+    verdict:
+      "Rekomendasi kuat untuk developer yang serius dengan Claude Code, Codex, atau Cursor dan ingin layer optimasi yang benar-benar terasa di proyek nyata. Bukan untuk pengguna kasual — ini alat untuk profesional yang menjadikan AI agen sebagai rekan kerja sehari-hari.",
+    body: [
+      "Di antara banyak 'wrapper' di sekitar Claude Code dan Codex, ECC mengambil posisi yang berbeda: ia tidak mencoba menggantikan agen, melainkan menambahkannya dengan lapisan optimasi performa yang hilang dari versi default. Setelah dipakai di beberapa proyek internal Wawasan AI, perbedaan paling terasa ada pada konsistensi — agen dengan ECC lebih jarang keluar dari jalur dan lebih sering menghasilkan output yang langsung bisa dipakai.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling jelas menunjukkan nilai ECC adalah debugging lintas file: tanpa ECC, agen Claude Code sering melompat-lompat antara file tanpa strategi; dengan ECC, agen punya 'instink' untuk menelusuri grafik dependensi dulu, lalu menyusun hipotesis, baru kemudian mengubah kode. Alur ini terasa lebih seperti engineer senior yang men-debug secara metodis, bukan junior yang nekat mengubah banyak file sekaligus.",
+      "Kritik yang perlu dicatat: ECC bukan agent framework independen — ia adalah lapisan tambahan. Artinya, kalau agen dasarnya (Claude Code, Codex, dll) punya keterbatasan fundamental, ECC tidak bisa menutup semuanya. Misalnya, jendela konteks tetap terbatas pada model di belakangnya, dan ECC bekerja di atas batasan itu, bukan menghilangkannya. JavaScript sebagai basis juga berarti integrasi dengan tooling Python-native kadang memerlukan wrapper tambahan.",
+      "Rekomendasi Wawasan AI: pasang ECC kalau Anda sudah memakai Claude Code atau Codex secara rutin dan merasa agen Anda 'cukup membantu tapi belum konsisten'. Untuk pengguna kasual yang baru eksplorasi, mending fokus pahami dulu agen dasarnya. Untuk tim engineering yang menjadikan AI sebagai rekan kerja harian, ECC adalah salah satu investasi paling layak di 2026.",
+    ],
+    link: "https://github.com/affaan-m/ECC",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-12",
+    updatedAt: "2026-06-12",
+  },
 ];
 
 export function getRepo(slug: string) {

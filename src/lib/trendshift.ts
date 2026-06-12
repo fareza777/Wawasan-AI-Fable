@@ -1,3 +1,6 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+
 export type TrendCadence = "daily" | "weekly";
 
 export type TrendingRepo = {
@@ -28,11 +31,17 @@ export type WeeklyPeriod = {
   path: string;
 };
 
+export type DailyPeriod = {
+  date: string; // YYYY-MM-DD
+  label: string;
+  path: string;
+};
+
 export type TrendingData = {
   cadence: TrendCadence;
   title: string;
   periodLabel: string;
-  period: WeeklyPeriod | null;
+  period: WeeklyPeriod | DailyPeriod | null;
   sourceUrl: string;
   fetchedAt: string;
   repos: TrendingRepo[];
@@ -122,6 +131,27 @@ function parseWeeklyPeriodFromHtml(html: string, sourceUrl: string): WeeklyPerio
     label: "Minggu ini",
     path: "/repo/weekly",
   };
+}
+
+const DAILY_SNAPSHOTS_DIR = path.join(process.cwd(), "src", "data", "dailySnapshots");
+
+function dailySnapshotPath(date: string): string {
+  return path.join(DAILY_SNAPSHOTS_DIR, `${date}.json`);
+}
+
+function dateToPathSegments(date: string): { year: string; month: string; day: string } {
+  const [y, m, d] = date.split("-");
+  return { year: y, month: m, day: d };
+}
+
+function formatDailyLabel(date: string): string {
+  // YYYY-MM-DD → "12 Juni 2026"
+  const months = [
+    "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+    "Juli", "Agustus", "September", "Oktober", "November", "Desember",
+  ];
+  const [y, m, d] = date.split("-").map(Number);
+  return `${d} ${months[m - 1] ?? ""} ${y}`.trim();
 }
 
 function periodKey(year: number, week: number): string {
@@ -231,13 +261,51 @@ export function withWeekLabel(data: TrendingData): WeeklyTrendingData {
   return { ...data, weekLabel: data.periodLabel };
 }
 
-export async function fetchAvailableDailyPeriods(): Promise<TrendingPeriodOption[]> {
+export async function fetchDailySnapshot(date: string): Promise<TrendingData> {
+  // date: YYYY-MM-DD
+  const filePath = dailySnapshotPath(date);
+  const raw = await fs.readFile(filePath, "utf-8");
+  const data = JSON.parse(raw) as TrendingData;
+
+  // Rebuild DailyPeriod from date for downstream consumers
+  const { year, month, day } = dateToPathSegments(date);
+  data.period = {
+    date,
+    label: formatDailyLabel(date),
+    path: `/repo/weekly/${year}/${month}/${day}`,
+  };
+  data.cadence = "daily";
+  return data;
+}
+
+export async function fetchAvailableDailyPeriods(maxDays = 30): Promise<TrendingPeriodOption[]> {
+  const today = new Date().toISOString().slice(0, 10);
+  const periods: TrendingPeriodOption[] = [
+    { label: "Hari ini", path: "/repo/weekly?cadence=daily" },
+  ];
+
   try {
-    await fetchDailyTrendingRepos();
-    return [{ label: "Hari ini", path: "/repo/weekly?cadence=daily" }];
+    const entries = await fs.readdir(DAILY_SNAPSHOTS_DIR);
+    const dates = entries
+      .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+      .map((f) => f.replace(/\.json$/, ""))
+      .filter((d) => d !== today)
+      .sort()
+      .reverse()
+      .slice(0, maxDays);
+
+    for (const date of dates) {
+      const { year, month, day } = dateToPathSegments(date);
+      periods.push({
+        label: formatDailyLabel(date),
+        path: `/repo/weekly/${year}/${month}/${day}`,
+      });
+    }
   } catch {
-    return [];
+    // directory doesn't exist yet — no historical snapshots
   }
+
+  return periods;
 }
 
 export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<TrendingPeriodOption[]> {
@@ -245,7 +313,7 @@ export async function fetchAvailableWeeklyPeriods(maxWeeks = 8): Promise<Trendin
 
   try {
     const current = await fetchWeeklyTrendingRepos();
-    if (current.period && current.period.week > 0) {
+    if (current.period && "week" in current.period && current.period.week > 0) {
       periods.push({
         label: current.periodLabel,
         path: "/repo/weekly",

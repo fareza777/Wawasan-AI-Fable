@@ -5,6 +5,7 @@ import { fetchGitHubStats } from "@/lib/githubMeta";
 import {
   fetchAvailableDailyPeriods,
   fetchAvailableWeeklyPeriods,
+  fetchDailySnapshot,
   fetchDailyTrendingRepos,
   fetchWeeklyTrendingRepos,
   TrendCadence,
@@ -25,19 +26,26 @@ export default async function TrendingRepoView({
   currentPath,
 }: {
   cadence: TrendCadence;
-  period?: { year: number; week: number };
+  period?: { year: number; week: number } | { date: string };
   currentPath: string;
 }) {
+  // Determine data source: daily snapshot (archive) or live (today/weekly)
+  const isDailyArchive = cadence === "daily" && "date" in (period ?? {});
+
   const [data, periods] = await Promise.all([
-    cadence === "daily"
+    isDailyArchive
+      ? fetchDailySnapshot((period as { date: string }).date)
+      : cadence === "daily"
       ? fetchDailyTrendingRepos()
-      : fetchWeeklyTrendingRepos(period),
+      : fetchWeeklyTrendingRepos(period as { year: number; week: number } | undefined),
     cadence === "daily"
       ? fetchAvailableDailyPeriods()
       : fetchAvailableWeeklyPeriods(),
   ]);
 
-  const today = new Date().toISOString().slice(0, 10);
+  const today = isDailyArchive
+    ? (period as { date: string }).date
+    : new Date().toISOString().slice(0, 10);
 
   const enriched = await Promise.all(
     data.repos.map(async (repo) => {
