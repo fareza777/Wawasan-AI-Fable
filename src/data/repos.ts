@@ -644,6 +644,55 @@ export const repos: Review[] = [
     date: "2026-06-13",
     updatedAt: "2026-06-13",
   },
+  {
+    slug: "prompts-chat",
+    name: "Prompts.chat",
+    tagline: "Galeri prompt AI terbesar dari komunitas — gratis, open-source, dan bisa di-self-host",
+    tags: ["AI Prompts", "Komunitas", "Open Source", "Self-hosted"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Prompts.chat (dulu dikenal sebagai Awesome ChatGPT Prompts) adalah repositori prompt AI terbesar yang lahir dari komunitas: lebih dari 163 ribu bintang dan 21 ribu fork di GitHub, dengan ratusan ribu kontribusi prompt dari pengguna di seluruh dunia. Bisa dipakai langsung lewat web di prompts.chat atau di-self-host untuk organisasi yang butuh privasi penuh.",
+    highlights: [
+      "163 ribu bintang dan 21 ribu fork — salah satu repositori prompt AI dengan pertumbuhan tertinggi sepanjang masa",
+      "Basis data prompt raksasa dari komunitas, mencakup GPT, Claude, Gemini, LLaMA, dan hampir semua model LLM populer",
+      "Antarmuka web interaktif di prompts.chat: telusuri, salin, dan coba prompt tanpa daftar akun",
+      "Beragam kategori prompt: produktivitas, penulisan, coding, riset, edukasi, kreatif, hingga persona untuk simulasi peran",
+      "Open source dan bisa di-self-host — organisasi bisa menjalankan versi privat untuk karyawan tanpa data keluar",
+      "Multi-bahasa: kontribusi prompt datang dari pengguna global, banyak koleksi berkualitas dalam bahasa Inggris dan terjemahan",
+      "Dikelola oleh f (Fatih Kadir Akin) — kontributor independen dengan track panjang di ekosistem prompt engineering",
+      "Aktif diperbarui hingga Juni 2026 — repositori hidup, bukan arsip statis yang ditinggal maintainer",
+    ],
+    pros: [
+      "Cara paling cepat menemukan prompt yang sudah teruji untuk kebutuhan spesifik — dari email profesional sampai persona konsultasi",
+      "Tidak butuh API key atau langganan untuk memakai versi web publik",
+      "Bisa di-self-host dengan privat penuh, cocok untuk organisasi dengan kebijakan data ketat",
+      "Komunitas aktif: prompt baru muncul hampir setiap hari dan sering kali lebih segar dari dokumentasi resmi model",
+    ],
+    cons: [
+      "Kualitas prompt sangat bervariasi — perlu eksperimen untuk menemukan yang benar-benar cocok dengan model yang dipakai",
+      "Tidak ada kurasi editor formal, jadi pencarian prompt yang bagus bisa makan waktu",
+      "Lisensi NOASSERTION perlu dicermati untuk penggunaan komersial ketat pada prompt spesifik",
+    ],
+    verdict:
+      "Tujuan pertama yang harus dibuka saat mulai eksperimen dengan model LLM baru. Untuk pengguna individu, bookmark prompts.chat; untuk organisasi, jadwalkan self-host supaya perpustakaan prompt internal tetap privat dan bisa dikurasi sesuai kebutuhan tim.",
+    body: [
+      "Sebelum orang mengenal teknik prompt engineering, ada satu halaman yang lebih dulu jadi semacam kanon: Awesome ChatGPT Prompts milik Fatih Kadir Akin. Berawal dari daftar prompt sederhana di README GitHub, proyek ini tumbuh menjadi repositori dengan lebih dari 163 ribu bintang — angka yang hanya dicapai oleh sedikit proyek AI sepanjang sejarah. Rebranding ke Prompts.chat pada akhirnya membawa misi yang sama, tetapi dengan antarmuka web yang lebih mudah dijangkau pengguna non-teknis.",
+      "Yang membuat Prompts.chat menonjol adalah kombinasi antara skala dan aksesibilitas. Di situs publiknya, siapa pun bisa menelusuri ratusan ribu kontribusi prompt dari pengguna seluruh dunia — dari persona wawancara kerja sampai asisten debugging kode — lalu langsung mencobanya di model favorit tanpa harus membuat akun. Untuk pengguna yang baru mulai eksplorasi kemampuan LLM, ini sering kali cara paling cepat untuk menyadari seberapa besar perbedaan prompt yang ditulis dengan niat versus prompt asal tempel.",
+      "Dalam pengujian editorial Wawasan AI, nilai terbesar Prompts.chat justru ada pada kemampuan self-host-nya. Banyak organisasi di Indonesia — lembaga pendidikan, BUMN, startup yang menangani data pelanggan — tidak bisa mengandalkan layanan publik karena regulasi internal. Dengan menjalankan versi self-hosted, mereka bisa membangun perpustakaan prompt internal yang dikurasi untuk domain spesifik: template analisis kontrak untuk tim legal, draf laporan untuk divisi compliance, atau checklist quality assurance untuk tim customer service. Semua tetap di server sendiri, prompt bisa ditambah dan dinilai internal.",
+      "Rekomendasi penggunaan: perlakukan Prompts.chat sebagai titik awal, bukan tujuan akhir. Gunakan versi publik untuk eksplorasi dan belajar, tapi curasi prompt yang terbukti bekerja untuk kebutuhan tim, simpan di repositori internal, dan iterasi berdasarkan hasil nyata. Bagi pengguna kasual yang baru kenal LLM, versi web-nya saja sudah cukup untuk menghemat waktu berjam-jam menulis prompt dari nol. Bagi tim engineering dan AI strategist, self-host dengan kurasi internal adalah nilai sesungguhnya yang ditawarkan proyek open-source ini.",
+    ],
+    link: "https://github.com/f/prompts.chat",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-14",
+    updatedAt: "2026-06-14",
+  },
 ];
 
 export function getRepo(slug: string) {
