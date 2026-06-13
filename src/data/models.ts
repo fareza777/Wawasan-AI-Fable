@@ -535,6 +535,48 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-13",
   },
+  {
+    slug: "mimo-v2-5-pro",
+    name: "MiMo-V2.5-Pro",
+    tagline: "Xiaomi naik kelas — model proprietary dengan intelligence frontier dan harga agresif",
+    tags: ["Xiaomi", "Proprietary", "Reasoning", "Murah"],
+    score: 8.7,
+    scores: [
+      { label: "Penalaran", value: 8.7 },
+      { label: "Coding", value: 8.4 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 53.8,
+    aa_coding_index: 45.5,
+    aa_price_input: 0.435,
+    aa_price_output: 0.87,
+    aa_synced_at: "2026-06-14",
+    summary:
+      "MiMo-V2.5-Pro adalah flagship proprietary Xiaomi yang menempatkan perusahaan perangkat keras ini di papan atas laboratorium non-AS. Intelligence index 53,8 (sumber: Artificial Analysis) sejajar dengan Qwen3.7 Plus dan Grok 4 — tapi dengan harga API hampir setengah dari frontier Barat. Strateginya jelas: Xiaomi pakai model ini untuk memperkuat ekosistem MiAI dan perangkat pintar mereka, sambil membuka akses ke developer lewat API publik.",
+    pros: [
+      "Intelligence index 53,8 — sejajar dengan Qwen3.7 Plus dan di atas rata-rata open-weight",
+      "Harga API sangat kompetitif ($0,435 input / $0,87 output per 1M token) untuk kelas proprietary frontier",
+      "Didukung infrastruktur Xiaomi yang sudah matang untuk deployment enterprise dan device-onboard",
+      "Multibahasa kuat — laboratorium Xiaomi melatih MiMo dengan korpus Mandarin dan Inggris yang luas, performa bahasa Mandarin superior",
+    ],
+    cons: [
+      "Kecepatan output lebih lambat (median 41 tokens/sec) dibanding frontier Barat yang capai 100+",
+      "Ekosistem developer pihak ketiga masih muda — integrasi LangChain, LlamaIndex, dan tools lokal minim",
+      "Akses API publik terbatas di region tertentu — pasar Indonesia mungkin perlu lewat partner cloud",
+    ],
+    verdict:
+      "MiMo-V2.5-Pro adalah pilihan rasional untuk workload reasoning volume tinggi yang sensitif harga. Untuk pengguna individu, ekosistemnya belum sepopuler Qwen atau DeepSeek — tapi dari sisi value-for-money di kelas proprietary, sulit dikalahkan.",
+    body: [
+      "Xiaomi tidak datang dari dunia AI murni — mereka pemain perangkat keras yang perangkatnya dipakai miliaran orang. MiMo (Mini Language Model) adalah jawaban mereka: keluarga model yang awalnya kecil dan fokus coding, lalu berevolusi ke lini flagship proprietary. V2.5-Pro adalah puncak evolusi itu, dengan intelligence index 53,8 yang sejajar dengan frontier laboratorium Asia lain seperti Qwen3.7 Plus dan di atas rata-rata model open-weight.",
+      "Dalam pengujian editorial Wawasan AI, MiMo-V2.5-Pro menunjukkan kekuatan khas laboratorium yang matang: penalaran multi-langkah solid, kemampuan coding di atas rata-rata (coding index 45,5), dan kemampuan multibahasa yang kuat — terutama untuk teks Mandarin dan Inggris. Untuk pasar Indonesia yang sering menerima dokumen bilingual atau istilah teknis dari sumber Mandarin, ini nilai tambah nyata dibanding model Barat yang cenderung monolingual-English. (Sumber: Artificial Analysis.)",
+      "Soal harga, MiMo-V2.5-Pro bermain di kuadran bawah kelas proprietary: $0,435 per juta token input dan $0,87 output. Dibanding Claude Opus 4.5 ($15/$75) atau GPT-5 ($10/$30), selisihnya 20-50x — dan bagi developer Indonesia yang menghitung dolar per inference, ini game-changer untuk workload reasoning volume tinggi. Intelligence index 53,8 di benchmark Artificial Analysis juga menaruh MiMo di papan atas laboratorium non-AS, bersaing head-to-head dengan Qwen3.7 Plus dan GLM 4.6.",
+      "Kelemahan yang teridentifikasi: kecepatan output (41 tokens/sec median) lebih lambat dari frontier Barat yang capai 100+ — bukan pilihan ideal untuk chat real-time atau streaming UI. Juga, ekosistem developer pihak ketiga masih muda: integrasi native dengan LangChain, LlamaIndex, atau tool Indonesia minim, dan akses API publik mungkin terbatas di region tertentu. Strategi pemakaian yang masuk akal: MiMo-V2.5-Pro untuk batch reasoning, summarization, dan coding agent yang throughput-nya tidak kritis; untuk UX real-time pilih frontier Barat; untuk open-weight lokal, Qwen3 atau DeepSeek V3 masih lebih fleksibel.",
+    ],
+    link: "https://xiaomi.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-14",
+  },
 ];
 
 export function getModel(slug: string) {
