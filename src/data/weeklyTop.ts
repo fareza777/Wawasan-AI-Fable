@@ -183,6 +183,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "99k+ bintang di GitHub menjadikannya salah satu tool paling populer di kalangan developer yang rutin gonta-ganti antara Claude Code, Codex, dan Gemini CLI.",
     ],
   },
+  "GoogleCloudPlatform/knowledge-catalog": {
+    description:
+      "Repositori resmi Google untuk Knowledge Catalog (sebelumnya Dataplex) — knowledge graph data enterprise yang kasih agen AI konteks dan semantik bisnis saat querying BigQuery.",
+    highlights: [
+      "Knowledge Catalog (sebelumnya Dataplex Universal Catalog) adalah lapisan governance dan akses data AI-centric di BigQuery — mengelola metadata teknis dan bisnis lintas data terstruktur maupun tidak terstruktur.",
+      "Membangun dynamic knowledge graph yang memberi agen AI konteks nyata: bukan cuma nama tabel, tapi juga lineage, kebijakan akses, dan istilah bisnis yang relevan dengan query.",
+      "Repositori ini berisi tools, agen referensi, dan sample untuk context management, enrichment, dan retrieval — titik masuk resmi bagi engineer yang mau integrasikan AI agent dengan data lake Google Cloud.",
+      "Apache 2.0 dan dikelola langsung tim Google Cloud — relevan untuk UMKM sampai enterprise yang pakai BigQuery dan ingin AI agent-nya 'paham' data internal tanpa harus fine-tune model.",
+    ],
+  },
+  "Paca-AI/paca": {
+    description:
+      "Alternatif open-source untuk Jira/Trello/ClickUp yang menempatkan agen AI sebagai anggota tim Scrum setara manusia — self-hosted, gratis, dan bisa dikustomisasi lewat plugin WASM.",
+    highlights: [
+      "Platform project management self-hosted (Apache 2.0) di mana agen AI dan manusia berkolaborasi di board yang sama — bukan chatbot tempelan, melainkan 'rekan satu tim' di sprint planning dan backlog refinement.",
+      "Siklus kerja P-A-C-A (Plan-Act-Check-Adapt) dirancang khusus untuk tim campuran: BDD spec ditulis bareng AI, QA agent memverifikasi, dan board mencerminkan progres nyata antara manusia dan mesin.",
+      "Sistem plugin berbasis WebAssembly (WASM) — tulis di Go, Rust, atau AssemblyScript, lalu pasang lewat marketplace internal tanpa sentuh core; cocok untuk studio dan agency yang butuh workflow custom.",
+      "Dilengkapi MCP server resmi (@paca-ai/paca-mcp) sehingga Claude Desktop atau coding agent apapun bisa baca-tulis task, sprint, dan dokumen langsung dari workspace Paca lewat protokol standar.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
