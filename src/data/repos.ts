@@ -693,6 +693,57 @@ export const repos: Review[] = [
     date: "2026-06-14",
     updatedAt: "2026-06-14",
   },
+  {
+    slug: "transformers",
+    name: "Hugging Face Transformers",
+    tagline: "Framework model AI standar industri — 161 ribu bintang, 33 ribu fork",
+    tags: ["AI Framework", "Python", "PyTorch", "Open Source"],
+    score: 9.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.5 },
+      { label: "Kesiapan Produksi", value: 9.0 },
+    ],
+    summary:
+      "Hugging Face Transformers adalah framework Python paling berpengaruh di era model AI modern: pustaka yang menyatukan lebih dari 250 arsitektur model — dari GPT, BERT, LLaMA, Qwen, DeepSeek, hingga Gemma dan GLM — dalam satu API yang konsisten untuk inference dan training. Dengan 161 ribu bintang dan dukungan dari hampir seluruh lab AI besar dunia, ia menjadi semacam standar de facto untuk eksperimen, riset, dan produksi.",
+    highlights: [
+      "161 ribu bintang dan 33 ribu fork di GitHub — salah satu repositori Python paling berpengaruh sepanjang dekade ini",
+      "Mendukung lebih dari 250 arsitektur model dalam satu API: transformer, diffusion, multimodal, dan time-series",
+      "Cakupan modalitas lengkap: teks, gambar, audio, video, dan multimodal (vision-language, speech-to-text, OCR)",
+      "Pipeline API tingkat tinggi: `pipeline('sentiment-analysis')` langsung bisa dipakai dalam beberapa baris kode",
+      "AutoModel + AutoTokenizer: kode yang sama bisa memuat checkpoint berbeda (BERT, LLaMA, Qwen, Mistral) tanpa perubahan",
+      "Dukungan penuh untuk PyTorch, TensorFlow, dan JAX — bisa berpindah backend dengan satu argumen",
+      "Terintegrasi dengan Hugging Face Hub: 1,5 juta+ model publik siap di-pipeline-kan lewat `from_pretrained`",
+      "Ekosistem pelatihan: Trainer, Accelerate, PEFT/LoRA, TRL, BitsAndBytes untuk fine-tuning hemat VRAM",
+      "Tokenizer, dataset, dan evaluator independen yang sering diimpor di luar konteks Transformers itu sendiri",
+      "Aktif diperbarui ke Juni 2026 — rilis minor hampir tiap minggu, dukungan model baru mengikuti ritme publikasi lab",
+    ],
+    pros: [
+      "Standar industri: tutorial, blog, dan contoh kode dari hampir semua lab AI besar menggunakan Transformers",
+      "API yang konsisten untuk inference, training, dan ekspor model — mengurangi biaya belajar saat berpindah model",
+      "Ekosistem orkestrasi di sekitarnya (Hub, Datasets, Spaces, Inference Endpoints) membuat workflow end-to-end jadi jauh lebih ringkas",
+      "Komunitas kontributor yang sangat aktif; isu di GitHub umumnya mendapat respons dalam hitungan hari",
+    ],
+    cons: [
+      "Ukuran instalasi besar (PyTorch + transformers + tokenizer banyak) — bisa di luar jangkauan laptop tipis untuk eksperimen cepat",
+      "API kadang berubah antar versi mayor, sehingga kode lama butuh migrasi ketika upgrade",
+      "Dokumentasi yang sangat luas kadang menyulitkan pemula menemukan fungsi yang relevan dengan cepat",
+    ],
+    verdict:
+      "Jika Anda membangun, meneliti, atau mengintegrasikan model AI di Python dan belum pernah memakai Transformers, sekaranglah waktunya. Hampir semua jalur — dari eksperimen satu file, fine-tuning domain-spesifik, hingga deployment skala produksi — dimulai dari pustaka ini.",
+    body: [
+      "Sebelum ada Transformers, bekerja dengan model AI berarti berurusan dengan puluhan repositori berbeda, masing-masing dengan API, format tokenizer, dan konvensi training yang tidak saling memahami. Hugging Face mengubah lanskap itu dengan satu keputusan berani: menyatukan lebih dari 250 arsitektur model di bawah satu API yang konsisten. Hasilnya, kode yang memuat BERT hari ini bisa memuat LLaMA besok dengan perubahan minimal — sebuah abstraksi yang dulu nyaris mustahil di ekosistem AI.",
+      "Dampaknya terasa di seluruh industri. Tutorial resmi dari OpenAI untuk wrapper tertentu, demo dari Meta untuk LLaMA, hingga contoh integrasi dari Alibaba untuk Qwen — semuanya merujuk ke Transformers sebagai titik masuk. Di komunitas riset dan startup, ini menjadi default; bahkan pustaka lain seperti LangChain, LlamaIndex, dan Haystack menjadikan Transformers sebagai salah satu backend inference utama mereka.",
+      "Dalam pengujian editorial Wawasan AI, kami paling sering memanfaatkan tiga jalur Transformers: pipeline siap-pakai untuk prototipe cepat, AutoModel + PEFT/LoRA untuk fine-tuning domain-spesifik pada data internal (cocok untuk UMKM dan korporasi di Indonesia yang punya data berbahasa Indonesia), dan export ke format ONNX/GGUF untuk deployment di mesin on-premise. Ketiga jalur ini menunjukkan fleksibilitas yang jarang ditandingi pustaka lain.",
+      "Rekomendasi penggunaan: pasang Transformers via `pip install transformers[torch]` di lingkungan Python 3.10+, lalu coba `pipeline` untuk sentimen atau ringkasan teks dalam hitungan menit. Untuk produksi, manfaatkan Hugging Face Hub atau Inference Endpoints agar tidak mengelola infrastruktur GPU sendiri. Bagi tim AI di Indonesia yang ingin serius mengadopsi model open-source, menguasai Transformers adalah investasi yang jauh lebih aman daripada mempelajari ulang setiap repositori model secara terpisah.",
+    ],
+    link: "https://github.com/huggingface/transformers",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-15",
+    updatedAt: "2026-06-15",
+  },
 ];
 
 export function getRepo(slug: string) {
