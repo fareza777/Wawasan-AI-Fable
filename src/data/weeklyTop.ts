@@ -213,6 +213,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Dilengkapi MCP server resmi (@paca-ai/paca-mcp) sehingga Claude Desktop atau coding agent apapun bisa baca-tulis task, sprint, dan dokumen langsung dari workspace Paca lewat protokol standar.",
     ],
   },
+  "microsoft/SkillOpt": {
+    description:
+      "Riset Microsoft yang memperlakukan 'skill' agen AI (prompt + workflow) sebagai objek yang bisa di-optimasi seperti model — meningkatkan akurasi agent pada benchmark +15-19% tanpa fine-tune LLM.",
+    highlights: [
+      "Memperlakukan dokumen skill natural-language sebagai 'trainable state' dari agen yang frozen — bedanya dengan prompt engineering manual: di sini skill-nya dipelajari lewat rollouts dan reflection, bukan ditulis tangan.",
+      "Optimizer model mengusulkan bounded edits (add/delete/replace) ke skill, lalu validation gate di held-out batch yang menentukan apakah kandidat baru diterima — disiplin DL diterapkan ke ruang teks.",
+      "Punya plugin siap pakai untuk Claude Code dan Codex: `/improve` di Claude Code memberikan gain +15-19 poin pada Codex agentic loop dan Claude Code benchmark (ALFWorld, dst).",
+      "Open source (MIT) dari Microsoft Research — relevan untuk tim yang mau dorong akurasi agen tanpa menyentuh bobot model, hanya mempertajam prompt-nya lewat data.",
+    ],
+  },
+  "omnigent-ai/omnigent": {
+    description:
+      "Meta-harness open-source dari Databricks yang menyatukan Claude Code, Codex, Pi, dan agen custom di bawah satu orkestrator — dengan policy guardrail, cost meter, dan kolaborasi live multi-device.",
+    highlights: [
+      "Layer common di atas harness yang sudah ada (Claude Code, Codex, Pi, OpenAI Agents SDK, Claude Agents SDK) — tim bisa swap atau mix harness tanpa rewrite, dan policy enforcement konsisten lintas semuanya.",
+      "Polly orchestrator memecah task jadi sub-task untuk beberapa agen yang jalan paralel; session cost meter live, plus policy toggle seperti 'cost budget pause di $3' dan 'block git push setelah npm install' sampai user approve.",
+      "Bisa di-deploy di server dengan stable URL, sehingga sesi coding agent reachable dari laptop, HP, atau tim lain secara real-time — fokus ke kolaborasi, bukan cuma eksekusi.",
+      "Open source (Apache 2.0) dari tim AI Databricks, dibangun bareng Neon — alternatif governance-friendly untuk ad-hoc harness yang berkembang tanpa kontrol.",
+    ],
+  },
+  "shadcn/improve": {
+    description:
+      "Skill agen AI dari shadcn (kreator shadcn/ui) yang pakai model paling mampu untuk audit codebase dan menulis rencana implementasi — lalu menyerahkannya ke model murah untuk eksekusi.",
+    highlights: [
+      "Skill dengan format Agent Skills universal — bekerja di Claude Code, Codex, atau agen apapun yang dukung standar; cukup `/improve` dan agen termahal akan mengaudit codebase end-to-end.",
+      "Audit fans out ke subagents paralel untuk 9 kategori: correctness, security, performance, test coverage, tech debt, dependencies, DX, docs, direction — setiap finding punya evidence file:line, impact, effort, confidence.",
+      "Output-nya bukan patch langsung, melainkan file plan markdown di folder `plans/` — ditulis untuk 'executor paling lemah' sehingga model murah bisa menjalankan dengan drift check otomatis via git commit stamp.",
+      "Pemisahan 'advisor pintar + executor murah' adalah pattern operasional yang sedang naik — relevan untuk founder dan tech lead yang ingin workflow engineering lebih disiplin tanpa membayar GPT-5 untuk setiap refactor.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
