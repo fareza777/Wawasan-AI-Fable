@@ -377,6 +377,44 @@ export const stacks: Review[] = [
     linkLabel: "Lihat di GitHub",
     date: "2026-02-10",
   },
+  {
+    slug: "deepnote",
+    name: "Deepnote",
+    tagline: "Notebook data kolaboratif dengan AI copilot dan integrasi warehouse",
+    tags: ["Data Workspace", "AI Copilot", "Freemium"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 8.0 },
+    ],
+    summary:
+      "Jupyter yang sudah disulap jadi platform kolaboratif: AI copilot, real-time co-editing, dan koneksi sekali klik ke Snowflake, BigQuery, Redshift, dan PostgreSQL. Pilihan masuk akal untuk tim data Indonesia yang mulai serius dengan analitik bersama.",
+    pros: [
+      "Kolaborasi real-time yang matang — beberapa analis bisa edit notebook yang sama tanpa saling menimpa",
+      "Konektor warehouse bawaan (Snowflake, BigQuery, Redshift, Postgres) — tidak perlu ETL manual",
+      "AI copilot dengan GPT-5 dan Sonnet 4.6 di paket Team, plus auto-AI untuk eksplorasi dataset",
+      "Ekspor dan impor .ipynb penuh — tidak mengunci kamu di ekosistem Deepnote",
+    ],
+    cons: [
+      "Tier gratis ketat: 3 editor, 5 project, dan kuota AI sangat tipis (10 completion, 5 auto-AI per bulan)",
+      "Tanpa self-host — datamu selalu di cloud mereka, implikasi penting untuk compliance lokal",
+      "Untuk analitik yang sangat ad-hoc di laptop lokal, Jupyter klasik masih lebih gesit",
+    ],
+    verdict:
+      "Standar yang solid untuk notebook kolaboratif bertenaga AI — bukan untuk yang kerja sendirian di laptop, tapi tim data Indonesia yang pelan-pelan migrasi dari spreadsheet ke Python akan langsung mendapat nilai.",
+    body: [
+      "Deepnote mengambil alih posisi yang selama ini diisi Jupyter di banyak workflow data profesional, lalu menambahkan hal-hal yang Jupyter klasik tidak punya: kolaborasi real-time yang andal, AI copilot yang paham konteks cell di sekitarnya, dan koneksi ke data warehouse yang tidak butuh setup lokal. Buat analis Indonesia yang bekerja dengan data pelanggan di BigQuery atau transaksi di PostgreSQL, menghilangkan 'setup lokal' saja sudah menghapus satu lapisan gesekan yang sering menggagalkan eksperimen.",
+      "Yang paling terasa di pengujian editorial adalah alur kolaborasinya. Saat dua atau tiga analis membuka notebook yang sama, kursor masing-masing tampil dengan warna berbeda dan perubahannya masuk tanpa konflik. Untuk tim yang biasa bekerja dengan spreadsheet bersama dan sering kehilangan jejak versi, transisi ke Deepnote memberi mereka jejak audit yang jelas. SQL block-nya juga punya Jinja bawaan dan menampilkan hasil query sebagai dataframe interaktif — kualitas kecil yang menghilangkan bolak-balik antara tool.",
+      "AI copilot-nya mengikuti standar industri: bisa melengkapi kode, menjelaskan blok yang sudah ada, dan di tier Team bisa dipakai untuk eksplorasi dataset dengan pertanyaan bahasa alami. Hasilnya tidak seajaib Claude Code untuk tugas rekayasa perangkat lunak panjang, tapi untuk analisis data — terutama SQL berulang dan visualisasi cepat — ia menghemat waktu dengan konsisten. AI credits $39/bulan di paket Team cukup untuk pemakaian harian kebanyakan tim kecil.",
+      "Catatan penting untuk pengguna Indonesia: tidak ada opsi self-host. Datamu selalu tersimpan di cloud Deepnote, dengan kepatuhan SOC 2 dan HIPAA yang bagus tapi tetap di luar yurisdiksi lokal. Untuk UMKM yang mengelola data pelanggan dalam jumlah besar, keputusan untuk bergantung pada platform SaaS asing perlu dipertimbangkan. Untuk tim startup dan korporat yang sudah nyaman dengan Google Cloud atau AWS, barrier ini kecil dan nilai kolaborasi yang didapat jauh lebih besar.",
+    ],
+    link: "https://deepnote.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-14",
+  },
 ];
 
 export function getStack(slug: string) {
