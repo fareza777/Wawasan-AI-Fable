@@ -393,6 +393,56 @@ export const berita: Artikel[] = [
     ],
   },
   {
+    slug: "adopsi-ai-tembus-92-pemerintah-siapkan-peta-jalan-untuk-perkuat-daya-saing",
+    title:
+      "Angka 92% Adopsi AI dan Peta Jalan yang Belum Lahir: Sebenarnya Indonesia Sudah di Mana?",
+    excerpt:
+      "Pemerintah klaim adopsi AI di Indonesia sudah 92%, tapi manfaat produktivitas masih samar. Peta jalan nasional yang dinanti pun masih berupa rancangan — ini catatan editorial soal klaim besar dan realitas lapangan.",
+    category: "Analisis",
+    date: "2026-06-15",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Beberapa hari lalu Wakil Menteri Komunikasi dan Digital menyampaikan angka yang membuat banyak orang berhenti scroll: tingkat adopsi AI di Indonesia disebut sudah menyentuh 92% per Februari 2026. Angka itu diucapkan di forum IBM AI Leadership Exchange, di depan pelaku industri dan korporasi besar, lengkap dengan kabar bahwa pemerintah sedang menyelesaikan rancangan peraturan presiden tentang peta jalan AI nasional. Di atas kertas, ini adalah berita besar: Indonesia tampak sudah melompat ke barisan depan adopsi AI global.",
+          "Tapi sebelum dirayakan — atau dicemaskan — angka 92% itu perlu dibongkar. Apa sebenarnya yang diukur? Siapa yang dihitung? Dan kenapa dengan adopsi setinggi itu, cerita di lapangan tentang produktivitas yang naik signifikan masih susah ditemukan? Tulisan ini adalah catatan editorial Wawasan AI soal klaim besar, angka yang perlu diterjemahkan, dan apa yang sebenarnya bisa kita tunggu dari peta jalan yang dijanjikan.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya diukur oleh angka 92% itu?",
+        paragraphs: [
+          "Angka 92% yang disampaikan Wamenkomdigi Nezar Patria bersumber dari data internal Komdigi dan dipublikasikan lebih luas lewat berbagai media pada Februari 2026. Yang perlu dipahami: 'adopsi' di sini bukan berarti 92% perusahaan Indonesia sudah memakai AI dalam operasional produksi. Definisi yang dipakai lebih longgar — termasuk siapa saja yang pernah menggunakan AI untuk produktivitas: dari pelajar yang menyalin tugas ke ChatGPT, pedagang yang memakai template balasan otomatis di WhatsApp, sampai perusahaan besar yang menjalankan pipeline agentik terintegrasi.",
+          "Dengan definisi longgar seperti itu, 92% bukan hal yang mengejutkan. Generative AI memang sudah masuk ke hampir semua lapisan masyarakat dalam dua tahun terakhir — sering tanpa mereka sadari sebagai 'AI'. Filter spam di email, rekomendasi di marketplace, autocomplete di aplikasi chatting, semuanya sudah memakai model AI. Yang berubah pasca-2023 adalah masuknya AI generatif yang bisa diajak ngobrol, dan itu memang menyentuh semua orang dengan sangat cepat.",
+          "Karena itu klaim '92% adopsi' adalah benar secara angka, tapi menyesatkan secara makna. Yang sebenarnya perlu ditanyakan bukan berapa banyak orang yang pernah mencoba AI, melainkan berapa banyak organisasi yang sudah mengintegrasikan AI ke sistem kerjanya dan merasakan manfaat produktivitas yang terukur. Di sinilah ceritanya berbeda — dan jauh lebih rumit.",
+        ],
+      },
+      {
+        heading: "Kenapa produktivitas masih samar, walau adopsi tinggi?",
+        paragraphs: [
+          "Ada jurang yang lebar antara 'pernah pakai' dan 'benar-benar dipakai dalam sistem'. Banyak organisasi, terutama UMKM dan instansi di luar Jakarta, sudah mencoba AI — biasanya ChatGPT gratis atau Copilot di Microsoft 365 — tapi pemakaian itu berhenti di taraf eksperimen personal. Tidak ada workflow yang berubah, tidak ada SOP yang direvisi, dan yang paling penting: tidak ada metrik yang diukur untuk melihat apakah pemakaian itu benar-benar menghemat waktu atau hanya perasaan subjektif.",
+          "Dalam pengujian editorial Wawasan AI, pola yang berulang adalah: seorang staf menemukan AI berguna, mulai memakainya untuk tugas pribadinya, lalu diam-diam kembali ke cara lama saat beban kerja naik karena tidak ada dukungan institusional. Tidak ada atasan yang tahu, tidak ada pelatihan yang difasilitasi, tidak ada kebijakan yang mengatur. Pemakaian AI di level individu memang meledak, tapi di level organisasi yang menentukan perubahan produktivitas nasional, gerakannya masih lambat.",
+          "Menteri Komunikasi dan Digital sendiri di forum terpisah sempat menyebut AI berpotensi menambah PDB Indonesia hingga 3,67% — angka yang sering dikutip dari studi global. Tapi dalam pengujian editorial Wawasan AI, kontribusi riil AI ke produktivitas Indonesia sulit diisolasi dari faktor lain: pemulihan ekonomi pascapandemi, adopsi cloud yang masif, dan otomasi pra-AI yang sudah jalan lebih dulu. Yang jelas: angka 3,67% adalah potensi, bukan capaian — dan membedakannya penting agar kita tidak salah membaca grafik.",
+        ],
+      },
+      {
+        heading: "Peta jalan yang dijanjikan — apa yang bisa kita harapkan?",
+        paragraphs: [
+          "Kabar baiknya: pemerintah sudah merampungkan rancangan peraturan presiden tentang peta jalan AI nasional, dan saat ini tinggal menunggu pengesahan. Peta jalan ini fokus ke pembangunan ekosistem AI yang etis dan bertanggung jawab — bukan cuma soal penggunaan, tapi juga perlindungan data, transparansi algoritma, dan tata kelola. Untuk konteks Indonesia yang aturan datanya tersebar di banyak kementerian, satu dokumen payung seperti ini sudah lama dinanti.",
+          "Tapi perlu juga diingat: peta jalan adalah dokumen arah, bukan jaminan hasil. Perpres yang bagus bisa jadi sia-sia kalau tidak disertai dengan kapasitas implementasi di level kementerian dan daerah. Pengalaman dari regulasi teknologi sebelumnya menunjukkan bahwa yang sering menjadi hambatan bukan ketiadaan aturan, melainkan lemahnya pengawasan, tumpang tindih otoritas, dan sanksi yang tidak pernah ditegakkan. Untuk ASN, pemilik UMKM, dan developer yang ingin membangun di atas ekosistem AI Indonesia, yang ditunggu bukan cuma perpresnya — tapi juga badan yang dipercaya mengeksekusi dan mengawasi implementasinya.",
+          "Yang patut diapresiasi dari pidato Wamenkomdigi di forum IBM adalah nada yang dipilih: bukan optimisme kosong, melainkan pengakuan jujur bahwa adopsi tinggi belum berarti produktivitas naik. 'Pemanfaatan belum terintegrasi secara strategis' adalah kalimat yang jarang diucapkan pejabat — dan justru kalimat itulah yang memberi harapan bahwa ke depan, fokusnya bukan lagi soal berapa banyak yang mencoba, tapi berapa banyak yang benar-benar merasakan dampaknya.",
+        ],
+      },
+      {
+        heading: "Buat pembaca yang bertanya: lalu kita harus bagaimana?",
+        paragraphs: [
+          "Buat ASN dan pekerja kantoran: angka 92% itu bisa dibaca sebagai 'kamu tidak sendirian', bukan 'kamu sudah ketinggalan'. Adopsi setinggi itu justru memudahkan: carilah rekan kerja yang sudah lebih dulu memakai AI untuk tugas nyata, dan belajar dari mereka. Yang mengubah produktivitas bukan tool-nya, melainkan komunitas kecil yang saling mengajari di unit kerja masing-masing.",
+          "Buat pemilik UMKM: klaim 92% sering dipakai vendor untuk menjual tool AI yang sebenarnya belum kamu butuhkan. Sebelum berlangganan, tanya dulu: pekerjaan repetitif apa yang paling menyita waktumu? Kalau belum bisa menjawab dengan jelas, jangan beli — pahami dulu masalahnya. Untuk banyak kasus, model lokal gratis via Ollama sudah lebih dari cukup untuk memulai tanpa biaya langganan bulanan.",
+          "Buat masyarakat umum: adopsi AI yang meledak bukan berarti kamu wajib memakainya. Yang berubah adalah opsi-opsi yang tersedia: dari mencari informasi sampai menyusun dokumen, sekarang ada alat yang bisa mempercepat. Gunakan secukupnya, pahami keterbatasannya, dan jangan ragu untuk tetap berpikir sendiri. AI adalah alat bantu yang ampuh — tapi arah dan pertanggung jawabannya tetap di tangan manusia. Klaim 92% adalah pengingat bahwa kita semua sudah masuk ke era ini; bagaimana kita memakainya adalah cerita yang akan ditulis satu per satu oleh masing-masing dari kita.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "warung-soto-pun-kini-butuh-apa-itu-ai-engineer",
     title: "Warung Soto pun Kini Butuh AI Engineer: Apa yang Sebenarnya Diminta Pasar?",
     excerpt:
