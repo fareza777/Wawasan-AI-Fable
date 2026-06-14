@@ -93,6 +93,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Salah satu masalah klasik LLM agent: konteks penuh karena output terlalu panjang; headroom memecahkan ini dengan kompresi cerdas.",
     ],
   },
+  "elder-plinius/CL4R1T4S": {
+    description:
+      "Kumpulan system prompt 'yang bocor' dari 24 vendor AI besar (ChatGPT, Claude, Gemini, Grok, Perplexity, Cursor, Lovable, Replit) — demi transparansi dan observabilitas sistem AI.",
+    highlights: [
+      "Repositori publik terbesar yang mengumpulkan system prompt dari 24 vendor AI frontier — OpenAI, Anthropic, Google, Meta, xAI, Mistral, Moonshot, dan banyak lagi.",
+      "Menjawab pertanyaan mendasar: 'siapa sebenarnya yang sedang saya ajak bicara saat chat dengan AI?' — prompt yang tidak terlihat membentuk kepribadian, batasan, dan framing etis dari model.",
+      "Mencakup coding agent juga: Cursor, Devin, Cline, Windsurf, Replit, Bolt, Lovable, Vercel v0, Manus — berguna untuk engineer yang ingin tahu instruksi sistem yang dipakai tool mereka sendiri.",
+      "Dipakai komunitas AI red-teaming dan prompt engineering untuk memahami refusal pattern dan perilaku model — dikelola Pliny the Prompter, kontroversial tapi berpengaruh besar di niche-nya.",
+    ],
+  },
   "msitarzewski/agency-agents": {
     description:
       "Koleksi 100+ persona agen AI siap pakai dengan karakter dan deliverable spesifik — frontend wizard, reality checker, dan lain-lain.",
