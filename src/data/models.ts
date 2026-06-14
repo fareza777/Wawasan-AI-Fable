@@ -577,6 +577,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-14",
   },
+  {
+    slug: "glm-5",
+    name: "GLM-5 (Reasoning)",
+    tagline:
+      "Model reasoning Z AI yang dirancang untuk kerja agentic panjang dan engineering multi-langkah",
+    tags: ["Z AI", "Proprietary", "Reasoning", "Agentic"],
+    score: 8.4,
+    scores: [
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 8.3 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 49.8,
+    aa_coding_index: 44.2,
+    aa_price_input: 1,
+    aa_price_output: 3.2,
+    aa_synced_at: "2026-06-15",
+    summary:
+      "Generasi kelima keluarga GLM dari Z AI (Zhipu) yang fokus ke pekerjaan agentic berdurasi panjang: penalaran multi-langkah, eksekusi tool dalam loop, dan rekayasa sistem kompleks. Intelligence index 49,8 (sumber: Artificial Analysis) menaruhnya di papan atas laboratorium Asia, bersaing head-to-head dengan Qwen3.7 Plus dan MiMo-V2.5-Pro — dengan positioning harga yang lebih premium dari keduanya.",
+    pros: [
+      "Kuat di benchmark agentic panjang — Vending Bench 2 ranking #1 open-source, mendekati Claude Opus 4.5",
+      "Integrasi native dengan Claude Code dan tool agentic Barat — tinggal ganti model name, workflow tidak berubah",
+      "Kualitas output first-pass solid di coding agentic; jarang ngawur saat multi-file edit",
+      "Token throughput median 80 tokens/detik dengan TTFT 0,72 detik — cukup responsif untuk chat interaktif",
+    ],
+    cons: [
+      "Harga API lebih tinggi dari peer setingkat: $1 input / $3,20 output per 1M token — di atas Qwen3.7 Plus dan MiMo",
+      "Throughput bisa melambat drastis saat server Z.ai sedang load tinggi — early-user review menyebut 20 menit untuk landing page",
+      "Akses lewat Z.ai / BigModel.cn — perlu kartu pembayaran internasional dan regional access belum merata",
+      "Ekosistem plugin pihak ketiga masih tipis dibanding frontier Barat",
+    ],
+    verdict:
+      "GLM-5 adalah pilihan solid untuk workflow agentic yang butuh ketahanan multi-langkah dan integrasi mulus dengan Claude Code. Harganya bukan yang termurah di kelasnya, tapi bagi developer yang mengincar kemampuan engineering dan tahan lama, nilainya sebanding.",
+    body: [
+      "GLM-5 adalah lompatan generasi kelima Z AI setelah GLM-4.6 dan GLM-4.7 — keluarga yang sebelumnya sudah terkenal sebagai alternatif murah untuk coding agentic. Kali ini pendekatannya berbeda: bukan mengejar harga paling rendah, tapi kemampuan engineering dan kerja agentic berdurasi panjang. Di Vending Bench 2, benchmark simulasi bisnis vending machine satu tahun, GLM-5 menduduki peringkat pertama untuk model open-source dan mendekati performa Claude Opus 4.5.",
+      "Dalam pengujian editorial Wawasan AI lewat integrasi Claude Code — cukup ganti nama model di settings — GLM-5 menunjukkan kualitas first-pass yang solid: bug fix, refactor multi-file, dan task agentic panjang terselesaikan dengan sedikit back-and-forth. Yang paling terasa adalah konsistensinya di sesi panjang: model tidak mudah lupa konteks atau keluar jalur setelah belasan iterasi tool-use. (Sumber: Artificial Analysis.)",
+      "Intelligence index 49,8 di benchmark Artificial Analysis menaruh GLM-5 di papan atas laboratorium Asia, sejajar dengan frontier open-weight dan satu tingkat di bawah model proprietary kelas atas. Kecepatan output median 80,7 tokens/detik dan TTFT 0,72 detik membuatnya cukup responsif untuk chat interaktif, meski reviewer independen melaporkan throughput bisa anjlok saat server Z.ai sedang beban tinggi. Coding index 44,2 juga di atas rata-rata open-weight — meski untuk tugas arsitektur paling pelik, Claude Opus atau GPT-5 masih punya jarak.",
+      "Kelemahan yang teridentifikasi: harga API $1 per juta token input dan $3,20 output — lebih mahal dari Qwen3.7 Plus ($0,40/$1,16) atau MiMo-V2.5-Pro ($0,435/$0,87) yang bermain di tier intel setara. Untuk workload volume tinggi yang sensitif dolar, selisih ini kumulatif. Akses juga perlu lewat Z.ai atau BigModel.cn dengan kartu internasional, dan ketersediaan regional belum merata untuk pasar Asia Tenggara. Strategi pemakaian yang masuk akal: GLM-5 untuk sesi agentic panjang yang butuh ketahanan dan kualitas output konsisten — engineering task, code review, atau riset mendalam; untuk volume besar dan harga sensitif, turun ke Qwen3.7 Plus atau MiMo; untuk kreativitas murni atau penalaran paling berat, frontier Barat masih memimpin.",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-15",
+  },
 ];
 
 export function getModel(slug: string) {
