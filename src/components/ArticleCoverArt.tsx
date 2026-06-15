@@ -126,6 +126,81 @@ const covers: Record<string, { gradient: string; elements: ReactNode }> = {
       </>
     ),
   },
+  "skill-ai-engineer-paling-dicari-2026": {
+    gradient: "linear-gradient(135deg,#0f172a 0%,#1e3a8a 45%,#f59e0b 100%)",
+    elements: (
+      <>
+        <rect x="55" y="40" width="72" height="52" rx="8" fill="rgba(34,211,238,0.15)" stroke="#22d3ee" strokeWidth="1.5" />
+        <text x="68" y="72" fill="#cffafe" fontSize="9" fontWeight="700" fontFamily="system-ui,sans-serif">agent</text>
+        <rect x="138" y="40" width="72" height="52" rx="8" fill="rgba(52,211,153,0.15)" stroke="#34d399" strokeWidth="1.5" />
+        <text x="148" y="72" fill="#a7f3d0" fontSize="9" fontWeight="700" fontFamily="system-ui,sans-serif">bisnis</text>
+        <rect x="221" y="40" width="72" height="52" rx="8" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" strokeWidth="1.5" />
+        <text x="228" y="72" fill="#ddd6fe" fontSize="9" fontWeight="700" fontFamily="system-ui,sans-serif">self-host</text>
+        <rect x="96" y="100" width="72" height="52" rx="8" fill="rgba(251,191,36,0.15)" stroke="#fbbf24" strokeWidth="1.5" />
+        <text x="108" y="132" fill="#fef3c7" fontSize="9" fontWeight="700" fontFamily="system-ui,sans-serif">eval</text>
+        <rect x="179" y="100" width="72" height="52" rx="8" fill="rgba(244,114,182,0.15)" stroke="#f472b6" strokeWidth="1.5" />
+        <text x="188" y="132" fill="#fce7f3" fontSize="9" fontWeight="700" fontFamily="system-ui,sans-serif">narasi</text>
+        <text x="310" y="75" fill="#e2e8f0" fontSize="22" fontWeight="800" fontFamily="system-ui,sans-serif">5</text>
+        <text x="340" y="75" fill="#94a3b8" fontSize="13" fontWeight="600" fontFamily="system-ui,sans-serif">skill</text>
+        <text x="310" y="100" fill="#fbbf24" fontSize="11" fontFamily="system-ui,sans-serif">2026 · ID</text>
+      </>
+    ),
+  },
+  "top-145000-asn-bakal-dilatih-microsoft-biar-jago-ai": {
+    gradient: "linear-gradient(160deg,#1c1917 0%,#1e3a5f 50%,#0078d4 100%)",
+    elements: (
+      <>
+        <rect x="50" y="30" width="100" height="110" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" />
+        <rect x="62" y="42" width="76" height="10" rx="2" fill="#0d9488" />
+        <rect x="62" y="58" width="55" height="6" rx="2" fill="rgba(255,255,255,0.2)" />
+        <rect x="62" y="70" width="65" height="6" rx="2" fill="rgba(255,255,255,0.15)" />
+        <rect x="62" y="82" width="45" height="6" rx="2" fill="rgba(255,255,255,0.12)" />
+        <text x="62" y="118" fill="#ccfbf1" fontSize="9" fontFamily="system-ui,sans-serif">BKN · ASN</text>
+        <rect x="175" y="50" width="130" height="80" rx="10" fill="rgba(0,120,212,0.2)" stroke="#0078d4" strokeWidth="2" />
+        <rect x="190" y="65" width="18" height="18" fill="#f25022" />
+        <rect x="212" y="65" width="18" height="18" fill="#7fba00" />
+        <rect x="234" y="65" width="18" height="18" fill="#00a4ef" />
+        <rect x="256" y="65" width="18" height="18" fill="#ffb900" />
+        <text x="188" y="108" fill="#bfdbfe" fontSize="10" fontFamily="system-ui,sans-serif">GARUDA AI</text>
+        <text x="310" y="70" fill="#fff" fontSize="26" fontWeight="800" fontFamily="system-ui,sans-serif">145K</text>
+        <text x="310" y="95" fill="#94a3b8" fontSize="11" fontFamily="system-ui,sans-serif">ASN dilatih</text>
+      </>
+    ),
+  },
+  "adopsi-ai-tembus-92-pemerintah-siapkan-peta-jalan-untuk-perkuat-daya-saing": {
+    gradient: "linear-gradient(135deg,#0f172a 0%,#7f1d1d 35%,#0d9488 100%)",
+    elements: (
+      <>
+        <circle cx="130" cy="85" r="55" fill="none" stroke="rgba(255,255,255,0.12)" strokeWidth="8" />
+        <path d="M130 30 A55 55 0 1 1 72 115" fill="none" stroke="#22d3ee" strokeWidth="8" strokeLinecap="round" />
+        <text x="95" y="82" fill="#fff" fontSize="28" fontWeight="800" fontFamily="system-ui,sans-serif">92%</text>
+        <text x="88" y="102" fill="#94a3b8" fontSize="9" fontFamily="system-ui,sans-serif">adopsi AI</text>
+        <path d="M220 120 L260 90 L300 100 L340 60 L400 45" stroke="#34d399" strokeWidth="2.5" fill="none" strokeDasharray="6 4" />
+        <circle cx="260" cy="90" r="6" fill="#34d399" />
+        <circle cx="300" cy="100" r="6" fill="#34d399" />
+        <circle cx="340" cy="60" r="6" fill="#fbbf24" />
+        <circle cx="400" cy="45" r="8" fill="none" stroke="#fbbf24" strokeWidth="2" strokeDasharray="3 3" />
+        <text x="218" y="138" fill="#a7f3d0" fontSize="11" fontWeight="600" fontFamily="system-ui,sans-serif">peta jalan nasional →</text>
+      </>
+    ),
+  },
+  "warung-soto-pun-kini-butuh-apa-itu-ai-engineer": {
+    gradient: "linear-gradient(120deg,#431407 0%,#78350f 40%,#0d9488 100%)",
+    elements: (
+      <>
+        <path d="M40 130 L40 70 L120 50 L200 70 L200 130 Z" fill="rgba(251,191,36,0.15)" stroke="#fbbf24" strokeWidth="2" />
+        <rect x="55" y="85" width="90" height="8" rx="2" fill="rgba(255,255,255,0.2)" />
+        <rect x="55" y="100" width="70" height="6" rx="2" fill="rgba(255,255,255,0.12)" />
+        <text x="68" y="78" fill="#fef3c7" fontSize="11" fontWeight="700" fontFamily="system-ui,sans-serif">warung</text>
+        <rect x="240" y="45" width="150" height="95" rx="12" fill="#1e293b" stroke="#22d3ee" strokeWidth="2" />
+        <text x="258" y="72" fill="#22d3ee" fontSize="10" fontFamily="ui-monospace,monospace">lowongan:</text>
+        <text x="258" y="92" fill="#e2e8f0" fontSize="12" fontWeight="700" fontFamily="system-ui,sans-serif">AI Engineer</text>
+        <text x="258" y="112" fill="#64748b" fontSize="9" fontFamily="system-ui,sans-serif">merangkai · otomasi</text>
+        <path d="M200 90 L240 90" stroke="#34d399" strokeWidth="2" strokeDasharray="5 3" />
+        <circle cx="220" cy="90" r="5" fill="#34d399" />
+      </>
+    ),
+  },
 };
 
 export function getCoverGradient(slug: string) {
