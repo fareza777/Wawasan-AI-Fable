@@ -744,6 +744,57 @@ export const repos: Review[] = [
     date: "2026-06-15",
     updatedAt: "2026-06-15",
   },
+  {
+    slug: "nvidia-skillspector",
+    name: "NVIDIA SkillSpector",
+    tagline: "Scanner keamanan untuk skill AI agent — tangkap pola berbahaya sebelum dipasang",
+    tags: ["Keamanan AI", "AI Agent", "Python", "Open Source"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "NVIDIA SkillSpector adalah pemindai keamanan khusus untuk skill AI agent — potongan instruksi yang dijalankan oleh Claude Code, Codex CLI, Gemini CLI, dan sejenisnya. Berdasarkan riset empiris yang menemukan 26,1 persen skill mengandung kerentanan dan 5,2 persen berniat jahat, proyek ini membawa kebiasaan audit ala dependensi tradisional ke dunia AI agent yang masih sangat baru.",
+    highlights: [
+      "Riset acuan: 26,1 persen skill agent mengandung kerentanan, 5,2 persen berniat jahat (Liu et al., 2026)",
+      "Pipeline dua tahap: analisis statis (pattern, AST, taint tracking, YARA, OSV.dev) + analisis semantik LLM opsional",
+      "64 pola kerentanan dalam 16 kategori: prompt injection, exfiltration data, eskalasi privilege, supply chain, excessive agency, dan lain-lain",
+      "Pemeriksaan dependensi langsung ke OSV.dev — mendeteksi paket dengan CVE yang sudah dipublikasikan",
+      "Skor severitas lima tingkat dari LOW sampai CRITICAL dengan penjelasan konteks per temuan",
+      "Anti-jailbreak built-in pada prompt LLM analis agar skill berbahaya tidak memanipulasi proses audit",
+      "Antarmuka CLI sederhana: satu perintah untuk memindai satu skill atau direktori utuh",
+      "Lisensi Apache 2.0 — dapat dipakai ulang secara komersial, termasuk untuk produk audit internal",
+      "Kontribusi NVIDIA sebagai sinyal bahwa keamanan AI agent kini masuk radar korporasi besar",
+      "Cocok untuk tim yang sudah menjalankan skill dari marketplace publik (ClawHub, Skills Hub, dan lain-lain)",
+    ],
+    pros: [
+      "Mengisi kekosongan alat audit di ekosistem skill agent yang belum punya standar keamanan",
+      "Deteksi dua lapis: pattern klasik untuk yang jelas, LLM untuk yang halus dan kontekstual",
+      "Riset akademis di belakangnya terdokumentasi dan dapat diverifikasi",
+      "Lisensi permisif (Apache 2.0) memungkinkan integrasi ke pipeline CI/CD internal",
+    ],
+    cons: [
+      "Proyek masih muda (23 commit di main) — basis data pola dan stabilitas API akan terus berubah",
+      "Analisis semantik LLM menambah biaya dan latensi; perlu konfigurasi endpoint OpenAI-compatible",
+      "Belum ada integrasi one-click ke marketplace skill populer — masih manual lewat CLI",
+    ],
+    verdict:
+      "Tool yang wajib masuk di pipeline setiap tim yang memakai skill AI agent dari sumber publik. Belum matang untuk dijadikan penjaga tunggal, namun sebagai lapisan audit pertama nilainya sudah sangat terasa — terutama di tengah ledakan instalasi skill yang belum diimbangi kebiasaan audit yang baik.",
+    body: [
+      "Selama setahun terakhir, ekosistem skill AI agent tumbuh dengan kecepatan yang tidak diimbangi oleh alat audit. Marketplace seperti ClawHub, Skills Hub, dan repositori komunitas bermunculan dengan sedikit atau tanpa kurasi keamanan. NVIDIA, lewat SkillSpector, mencoba mengisi kekosongan itu: sebuah pemindai otomatis yang memeriksa skill sebelum dipasang, dengan pendekatan yang meniru bagaimana dunia open-source tradisional meninjau dependensi.",
+      "Yang membuat SkillSpector menarik adalah landasan empirisnya. Proyek ini berangkat dari riset yang memindai ribuan skill agent di dunia nyata dan menemukan angka yang cukup membuat siapa pun berhenti sejenak: lebih dari seperempat mengandung kerentanan, dan sekitar lima persen di antaranya berniat jahat. Angka itu bukan sensasional — mereka muncul dari karya tulis akademis yang bisa dirunut, dan menjadi dasar bagi 64 pola audit yang disusun dalam 16 kategori.",
+      "Dalam pengujian editorial Wawasan AI, alur kerja yang paling praktis adalah menjalankan SkillSpector di CLI sebelum sebuah skill dimasukkan ke direktori agent. Tahap pertama — analisis statis — biasanya sudah cukup untuk menemukan pola-pola yang mencolok: instruksi yang meminta env variable, akses SSH, atau pola pengkodean yang mencoba menyamarkan muatan berbahaya. Tahap kedua, analisis semantik LLM, berguna untuk pola yang lebih halus yang lolos dari pattern matching statis.",
+      "Untuk konteks Indonesia, alat ini relevan bagi dua kelompok pengguna. Pertama, tim developer dan security engineer di perusahaan fintech, e-commerce, dan BUMN yang mulai mengadopsi AI agent untuk otomasi internal — mereka memerlukan cara cepat untuk meninjau skill dari marketplace sebelum dipakai di lingkungan produksi. Kedua, kontributor skill itu sendiri: menjalankan SkillSpector sebelum merilis skill adalah cara murah untuk memastikan tidak ada pola yang secara tidak sengaja memicu temuan positif palsu ketika orang lain meninjaunya.",
+    ],
+    link: "https://github.com/NVIDIA/SkillSpector",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-16",
+    updatedAt: "2026-06-16",
+  },
 ];
 
 export function getRepo(slug: string) {
