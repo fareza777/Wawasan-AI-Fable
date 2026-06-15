@@ -621,6 +621,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-15",
   },
+  {
+    slug: "qwen3-6-max-preview",
+    name: "Qwen3.6 Max Preview",
+    tagline:
+      "Flagship proprietary Alibaba April 2026 — fokus agentic coding dan top-2 dunia untuk programming",
+    tags: ["Alibaba", "Proprietary", "Agentic", "Coding"],
+    score: 8.6,
+    scores: [
+      { label: "Penalaran", value: 8.7 },
+      { label: "Coding", value: 8.5 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 51.8,
+    aa_coding_index: 44.9,
+    aa_price_input: 1.3,
+    aa_price_output: 7.8,
+    aa_synced_at: "2026-06-16",
+    summary:
+      "Qwen3.6 Max Preview adalah flagship proprietary Alibaba yang dirilis 20 April 2026, dirancang sejak lahir untuk kerja agentic berdurasi panjang. Intelligence index 51,8 (sumber: Artificial Analysis) menaruhnya di papan atas laboratorium Asia dan mendudukkannya di peringkat kedua dunia untuk benchmark pemrograman. Bedanya dengan saudara Qwen3.7 Plus: Max adalah varian penalaran murni tanpa beban multimodal, dengan fokus ke engineering multi-langkah dan tool-use intensif — serta positioning harga premium yang mencerminkan kelas flagship.",
+    pros: [
+      "Coding dan agentic task kelas atas — menduduki peringkat #2 dunia untuk benchmark pemrograman dalam tiga hari pertama rilis",
+      "Intelligence index 51,8 (sumber: Artificial Analysis) — sejajar dengan frontier Asia (Qwen3.7 Plus, MiMo-V2.5-Pro) dan di atas open-weight pada umumnya",
+      "Penalaran multi-langkah solid untuk engineering task: refactor multi-file, debugging lintas modul, dan iterasi tool-use panjang",
+      "Akses lewat Qwen Studio dan Alibaba Cloud Model Studio — infrastruktur enterprise yang sudah matang untuk deployment produksi",
+    ],
+    cons: [
+      "Harga API premium: $1,30 input / $7,80 output per 1M token — di atas Qwen3.7 Plus dan MiMo yang bermain di intel setara",
+      "Throughput output 47 tokens/detik — lebih lambat dari frontier Barat yang capai 100+ token/detik, kurang ideal untuk chat real-time",
+      "Proprietary hosted tanpa bobot terbuka — tidak bisa di-deploy lokal atau di-fine-tune untuk kasus spesifik",
+      "Ekosistem plugin pihak ketiga dan integrasi SDK lokal masih kalah matang dari frontier AS, akses regional perlu kartu pembayaran internasional",
+    ],
+    verdict:
+      "Qwen3.6 Max Preview adalah pilihan rasional untuk tim engineering Asia yang mengincar kemampuan agentic coding kelas dunia dengan infrastruktur enterprise yang sudah teruji. Bukan yang termurah di kelas intel-nya, tapi untuk workflow engineering yang tahan lama dan dapat diandalkan, nilainya sebanding dengan flagship frontier Barat.",
+    body: [
+      "Qwen3.6 Max Preview melompat dari garis keluarga Qwen3-Max yang sebelumnya sudah terkenal sebagai model penalaran murni kelas atas. Alibaba merilis model ini pada 20 April 2026 dengan satu misi: menggeser dominasi frontier Barat untuk benchmark pemrograman dan kerja agentic. Dalam tiga hari pertama, model ini mengklaim posisi kedua pada Artificial Analysis Intelligence Index dan menduduki puncak untuk enam benchmark pemrograman besar — klaim yang biasanya butuh waktu berbulan-bulan untuk sebuah iterasi model.",
+      "Dalam pengujian editorial Wawasan AI, Qwen3.6 Max Preview menunjukkan DNA laboratorium yang matang untuk pekerjaan engineering: refactor lintas file dengan sedikit back-and-forth, iterasi tool-use yang konsisten di sesi panjang, dan kemampuan mempertahankan konteks setelah belasan putaran eksekusi. Yang paling terasa adalah kombinasi penalaran murni (tanpa beban multimodal) dengan optimasi agentic — ini bukan model generik yang ditambahi tool, melainkan model yang dirancang dari bawah untuk alur kerja agentic. (Sumber: Artificial Analysis.)",
+      "Soal angka: intelligence index 51,8 di benchmark Artificial Analysis menempatkan Qwen3.6 Max Preview sejajar dengan Qwen3.7 Plus (53,3) dan MiMo-V2.5-Pro (53,8) — satu tingkat di bawah model proprietary kelas atas (Claude Opus 4.5, GPT-5) tapi di atas open-weight pada umumnya. Coding index 44,9 menunjukkan kekuatan utama model ini: mendekati GLM-5 (44,2) dan MiMo (45,5), tapi lebih rendah dari benchmark spesifik pemrograman yang menjadi posisi teratasnya. Kecepatan output median 47,2 tokens/detik dan TTFT 1,78 detik menempatkannya di tier menengah — responsif untuk alur kerja agentic, tapi bukan pilihan optimal untuk antarmuka chat real-time dengan streaming UI.",
+      "Kelemahan yang teridentifikasi: harga API $1,30 per juta token input dan $7,80 output — premium dibanding saudara Qwen3.7 Plus ($0,40/$1,16) atau MiMo-V2.5-Pro ($0,435/$0,87) yang bermain di tier intel serupa. Untuk workload volume tinggi yang sensitif dolar, selisih ini kumulatif dan menjadi pertimbangan serius. Juga, sebagai model proprietary hosted, tidak ada opsi deployment lokal atau fine-tune — berbeda dengan keluarga Qwen3 open-weight yang tetap tersedia. Strategi pemakaian yang masuk akal: Qwen3.6 Max Preview untuk sesi engineering intensif yang butuh kualitas output konsisten dan kemampuan agentic panjang — code review mendalam, refactor sistem besar, atau riset kode multi-langkah; untuk volume tinggi dan harga sensitif, turun ke Qwen3.7 Plus atau MiMo; untuk deployment lokal yang fleksibel, keluarga Qwen3 open-weight masih jadi pilihan utama.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-16",
+  },
 ];
 
 export function getModel(slug: string) {
