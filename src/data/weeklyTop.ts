@@ -243,6 +243,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Pemisahan 'advisor pintar + executor murah' adalah pattern operasional yang sedang naik — relevan untuk founder dan tech lead yang ingin workflow engineering lebih disiplin tanpa membayar GPT-5 untuk setiap refactor.",
     ],
   },
+  "Panniantong/Agent-Reach": {
+    description:
+      "CLI 'mata' untuk AI agent — baca dan cari di 12+ platform (X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, LinkedIn, RSS, web) lewat satu perintah, tanpa bayar API key.",
+    highlights: [
+      "Satu CLI yang menyatukan pembacaan 12+ platform: Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Instagram, LinkedIn, Boss直聘, RSS, dan sembarang URL web (via Jina/Exa).",
+      "Filosofi 'zero API fees' — pakai cookie login + scraper open source (twitter-cli, rdt-cli, xhs-cli, bili-cli, yt-dlp) jadi agent tidak butuh subscription Twitter API, Reddit API, atau Apify.",
+      "Dibuat untuk dipasang ke coding agent (Claude Code, OpenClaw, Cursor, Windsurf) lewat SKILL.md — agent cukup `agent-reach search-twitter \"query\"` atau `agent-reach read <url>` dari terminal.",
+      "Dilengkapi `agent-reach doctor` untuk self-diagnosis channel, dan `agent-reach install --env=auto` yang menarik dependency yang dibutuhkan secara otomatis — plug-and-play untuk workflow riset agentik.",
+    ],
+  },
+  "tamnd/kage": {
+    description:
+      "Tool Go untuk 'mengarsipkan' situs web jadi HTML statis siap baca offline — jalankan headless Chrome, snapshot DOM manusia, buang semua JavaScript, simpan CSS/gambar/font ke lokal.",
+    highlights: [
+      "Mirror website ke folder lokal berisi file .html polos — buka langsung dari disk, kirim ke teman, atau simpan ke ZIM; tidak ada spinner atau blank screen enam bulan kemudian.",
+      "Menggunakan headless Chrome asli untuk merender halaman, lalu menghapus seluruh JavaScript dan menurunkan aset (CSS, gambar, font) ke path lokal — DOM yang dilihat manusia, bukan DOM yang dilihat crawler.",
+      "Punya mode `kage pack` yang mengubah mirror jadi satu file ZIM, binary viewer mandiri, atau double-click app — sekali simpan, bisa dibuka di mana pun tanpa install apa pun.",
+      "Berguna untuk AI/RAG engineer yang butuh korpus dokumentasi offline, jurnalis yang ingin snapshot artikel investigasi, atau siapa saja yang muak dengan 'Save As' browser yang tidak benar-benar menyimpan halaman.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
