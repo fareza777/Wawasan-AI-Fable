@@ -415,44 +415,6 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-14",
   },
-  {
-    slug: "lovable",
-    name: "Lovable",
-    tagline: "AI app builder yang menulis full-stack web app dari deskripsi bahasa alami",
-    tags: ["Lovable", "Freemium", "AI App Builder"],
-    score: 8.4,
-    scores: [
-      { label: "Kemampuan Agentic", value: 8.5 },
-      { label: "Kualitas Output", value: 8.5 },
-      { label: "Pengalaman Pengguna", value: 9.0 },
-      { label: "Ekosistem & Integrasi", value: 8.4 },
-      { label: "Harga", value: 7.2 },
-    ],
-    summary:
-      "Lovable (sebelumnya GPT Engineer) adalah tool no-code yang paling serius mendekati janji 'bikin aplikasi dari kalimat': prompt jadi React + Tailwind + Supabase, deploy satu klik, dan bisa di-edit visual atau lewat chat. Standar baru untuk founder non-teknis yang butuh MVP dalam hitungan jam, meski tiga puluh persen sisanya masih butuh campur tangan developer.",
-    pros: [
-      "Dari prompt ke aplikasi full-stack yang berjalan di domain sendiri dalam hitungan menit",
-      "Integrasi Supabase bawaan yang mulus untuk autentikasi, database, dan penyimpanan file",
-      "Mode edit visual dan chat membuat non-developer bisa beriterasi tanpa menyentuh kode",
-      "Output kode React + Tailwind yang bersih dan bisa diunduh untuk dilanjutkan tim developer",
-    ],
-    cons: [
-      "Model bisnis berbasis kredit yang cepat habis ketika iterasi panjang",
-      "Sekitar tujuh puluh persen jarak tempuh — sisanya sering butuh campur tangan developer untuk logika kompleks",
-      "Stack yang dikunci ke React + Supabase, bukan pilihan ideal untuk kebutuhan di luar standar",
-    ],
-    verdict:
-      "Standar baru untuk 'vibe coding' yang hasilnya bisa dipakai nyata, bukan sekadar mockup. Catatan untuk pengguna Indonesia: harga dalam dolar perlu diperhitungkan, dan untuk aplikasi serius tetap siapkan backup developer untuk porsi akhir.",
-    body: [
-      "Lovable mengambil posisi yang belum ditempati tool lain dengan cukup percaya diri: full-stack web app dari prompt bahasa alami, dengan hosting dan database yang sudah termasuk. Kamu mendeskripsikan ide — 'marketplace untuk jual kue tradisional dengan integrasi ongkir JNE' — dan dalam beberapa menit Lovable menghasilkan halaman beranda, halaman produk, form checkout, dasbor admin, dan backend Supabase yang semuanya saling tersambung. Untuk founder Indonesia yang memiliki ide tetapi tidak punya technical co-founder, ini menghilangkan bottleneck yang selama ini memaksa mereka menyewa agen dengan biaya puluhan juta rupiah.",
-      "Yang paling terasa di pengujian editorial adalah kualitas output visualnya. Tidak seperti tool AI builder lain yang cenderung menghasilkan antarmuka generik yang kentara dibuat AI, Lovable konsisten mengeluarkan desain yang modern dan proporsional — utilitas tailwind diterapkan dengan baik, tipografi rapi, dan layout responsif. Supabase sebagai backend bawaan juga bekerja sangat mulus: setup autentikasi (email, Google, magic link), tabel database, dan penyimpanan file dilakukan lewat chat tanpa harus membuka dasbor Supabase sama sekali. Untuk workflow prototyping dan iterasi cepat, ini adalah paket paling lengkap yang ada di pasaran.",
-      "Tentu ada batas yang perlu dipahami. Pertama, model bisnis berbasis kredit: setiap pesan ke AI dan setiap generasi menghabiskan kredit, dan iterasi panjang bisa dengan cepat mengikis paket Pro 25 dolar per bulan. Kedua, istilah 'tujuh puluh persen jarak tempuh' yang dipakai reviewer independen sangat akurat — untuk landing page, dasbor internal, dan aplikasi CRUD standar, Lovable sangat bisa diandalkan. Tetapi untuk logika bisnis yang kompleks, integrasi payment gateway non-standar, atau optimalisasi performa, hasilnya sering kali perlu disentuh developer. Output kode React + Tailwind-nya sendiri bersih dan bisa diekspor ke GitHub, jadi pelimpahan ke tim developer untuk finishing bukan masalah besar.",
-      "Untuk pengguna Indonesia, implikasi praktisnya jelas. Harga Pro 25 dolar per bulan dan Business 50 dolar per bulan perlu dikonversi ke rupiah dan dibandingkan dengan biaya menyewa freelancer untuk MVP serupa (sering Rp 5-15 juta untuk scope yang sama). Bagi yang peduli anggaran, paket Free dengan 5 pesan AI per hari sudah cukup untuk eksplorasi ide dan validasi konsep sebelum commit ke paket berbayar. Diskon 50 persen untuk pelajar dan mahasiswa juga menarik, terutama untuk tugas akhir dan projek kampus. Lovable tidak akan menggantikan developer untuk aplikasi produksi yang serius, tetapi sebagai akselerator dari ide ke prototipe yang bisa dipresentasikan ke investor atau pengguna — belum ada tool lain yang secepat dan se-solid ini.",
-    ],
-    link: "https://lovable.dev",
-    linkLabel: "Situs Resmi",
-    date: "2026-06-15",
-  },
 ];
 
 export function getStack(slug: string) {
