@@ -1,5 +1,9 @@
-import fs from "node:fs/promises";
-import path from "node:path";
+import {
+  dailySnapshotExists,
+  listDailySnapshotDates,
+  readDailySnapshotRaw,
+  writeDailySnapshotRaw,
+} from "@/lib/daily-snapshot-store";
 import { formatTanggal } from "@/lib/format";
 
 export type TrendCadence = "daily" | "weekly";
@@ -79,8 +83,6 @@ type JsonLdItemList = {
   itemListElement?: JsonLdListItem[];
 };
 
-const DAILY_SNAPSHOTS_DIR = path.join(process.cwd(), "src", "data", "dailySnapshots");
-
 function parseKeywords(value: string[] | string | undefined): string[] {
   if (!value) return [];
   if (Array.isArray(value)) return value;
@@ -101,10 +103,6 @@ function parseJsonLd(html: string, cadence: TrendCadence): JsonLdItemList | null
     }
   }
   return null;
-}
-
-function dailySnapshotPath(date: string): string {
-  return path.join(DAILY_SNAPSHOTS_DIR, `${date}.json`);
 }
 
 function dateToPathSegments(date: string): { year: string; month: string; day: string } {
@@ -235,7 +233,14 @@ export async function fetchDailyTrendingRepos(): Promise<TrendingData> {
   if (!list?.itemListElement?.length) {
     throw new Error("Trendshift daily data not found in page");
   }
-  return toTrendingData("daily", list, sourceUrl, html, null);
+  const data = toTrendingData("daily", list, sourceUrl, html, null);
+
+  const today = new Date().toISOString().slice(0, 10);
+  if (!(await dailySnapshotExists(today))) {
+    await saveDailySnapshot(today, data);
+  }
+
+  return data;
 }
 
 export async function fetchWeeklyTrendingRepos(period?: {
@@ -258,8 +263,7 @@ export function withWeekLabel(data: TrendingData): WeeklyTrendingData {
 }
 
 export async function fetchDailySnapshot(date: string): Promise<TrendingData> {
-  const filePath = dailySnapshotPath(date);
-  const raw = await fs.readFile(filePath, "utf-8");
+  const raw = await readDailySnapshotRaw(date);
   const data = JSON.parse(raw) as TrendingData;
 
   data.period = {
@@ -273,7 +277,6 @@ export async function fetchDailySnapshot(date: string): Promise<TrendingData> {
 }
 
 export async function saveDailySnapshot(date: string, data: TrendingData): Promise<void> {
-  await fs.mkdir(DAILY_SNAPSHOTS_DIR, { recursive: true });
   const payload: TrendingData = {
     ...data,
     cadence: "daily",
@@ -284,25 +287,18 @@ export async function saveDailySnapshot(date: string, data: TrendingData): Promi
       path: dailyArchivePath(date),
     },
   };
-  await fs.writeFile(dailySnapshotPath(date), JSON.stringify(payload, null, 2), "utf-8");
+  await writeDailySnapshotRaw(date, JSON.stringify(payload, null, 2));
 }
 
 /** Path + tanggal untuk entri sitemap arsip harian yang punya snapshot lokal. */
 export async function listDailyArchiveSitemapEntries(): Promise<
   { path: string; lastModified: string }[]
 > {
-  try {
-    const entries = await fs.readdir(DAILY_SNAPSHOTS_DIR);
-    return entries
-      .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
-      .map((f) => {
-        const date = f.replace(/\.json$/, "");
-        return { path: dailyArchivePath(date), lastModified: date };
-      })
-      .sort((a, b) => b.lastModified.localeCompare(a.lastModified));
-  } catch {
-    return [];
-  }
+  const dates = await listDailySnapshotDates();
+  return dates.map((date) => ({
+    path: dailyArchivePath(date),
+    lastModified: date,
+  }));
 }
 
 export async function fetchAvailableDailyPeriods(maxDays = 30): Promise<TrendingPeriodOption[]> {
@@ -311,23 +307,12 @@ export async function fetchAvailableDailyPeriods(maxDays = 30): Promise<Trending
     { label: "Hari ini", path: "/repo/daily" },
   ];
 
-  try {
-    const entries = await fs.readdir(DAILY_SNAPSHOTS_DIR);
-    const dates = entries
-      .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
-      .map((f) => f.replace(/\.json$/, ""))
-      .sort()
-      .reverse()
-      .slice(0, maxDays);
-
-    for (const date of dates) {
-      periods.push({
-        label: date === today ? `${formatTanggal(date)} (tersimpan)` : formatTanggal(date),
-        path: dailyArchivePath(date),
-      });
-    }
-  } catch {
-    // belum ada snapshot — riwayat muncul setelah snapshot harian disimpan
+  const dates = (await listDailySnapshotDates()).slice(0, maxDays);
+  for (const date of dates) {
+    periods.push({
+      label: date === today ? `${formatTanggal(date)} (tersimpan)` : formatTanggal(date),
+      path: dailyArchivePath(date),
+    });
   }
 
   return periods;

@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
+import { dailySnapshotExists } from "@/lib/daily-snapshot-store";
 import { formatTanggal } from "@/lib/format";
 import { canonicalPath } from "@/lib/seo";
 
@@ -39,6 +39,10 @@ export default async function DailyArchivePage({ params }: Props) {
   }
 
   const iso = toIsoDate(year, month, day);
+  if (!(await dailySnapshotExists(iso))) {
+    notFound();
+  }
+
   const currentPath = `/repo/daily/${year}/${month.padStart(2, "0")}/${day.padStart(2, "0")}`;
 
   return (

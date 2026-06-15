@@ -1,0 +1,152 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-15T08:10:44.233Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "iptv-org/iptv",
+      "owner": "iptv-org",
+      "repo": "iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "githubUrl": "https://github.com/iptv-org/iptv",
+      "trendshiftUrl": "https://trendshift.io/repositories/730",
+      "language": "TypeScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2018-11-14T22:00:57Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "elder-plinius/CL4R1T4S",
+      "owner": "elder-plinius",
+      "repo": "CL4R1T4S",
+      "description": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+      "githubUrl": "https://github.com/elder-plinius/CL4R1T4S",
+      "trendshiftUrl": "https://trendshift.io/repositories/22834",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2025-03-04T20:03:16Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "NVIDIA/SkillSpector",
+      "owner": "NVIDIA",
+      "repo": "SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "githubUrl": "https://github.com/NVIDIA/SkillSpector",
+      "trendshiftUrl": "https://trendshift.io/repositories/37404",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-21T00:28:43Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "farion1231/cc-switch",
+      "owner": "farion1231",
+      "repo": "cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+      "githubUrl": "https://github.com/farion1231/cc-switch",
+      "trendshiftUrl": "https://trendshift.io/repositories/15372",
+      "language": "Rust",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2025-08-04T14:16:16Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "tamnd/kage",
+      "owner": "tamnd",
+      "repo": "kage",
+      "description": "Shadow any website for offline viewing, with the JavaScript stripped out",
+      "githubUrl": "https://github.com/tamnd/kage",
+      "trendshiftUrl": "https://trendshift.io/repositories/53454",
+      "language": "Go",
+      "topics": [
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2026-06-14T11:21:55Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "freeCodeCamp/freeCodeCamp",
+      "owner": "freeCodeCamp",
+      "repo": "freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "githubUrl": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "trendshiftUrl": "https://trendshift.io/repositories/1778",
+      "language": "TypeScript",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2014-12-24T17:49:19Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "vorssaint/vorssaint-utils",
+      "owner": "vorssaint",
+      "repo": "vorssaint-utils",
+      "description": "",
+      "githubUrl": "https://github.com/vorssaint/vorssaint-utils",
+      "trendshiftUrl": "https://trendshift.io/repositories/53716",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-06-12T15:25:43Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "labuladong/fucking-algorithm",
+      "owner": "labuladong",
+      "repo": "fucking-algorithm",
+      "description": "Crack LeetCode, not only how, but also why.",
+      "githubUrl": "https://github.com/labuladong/fucking-algorithm",
+      "trendshiftUrl": "https://trendshift.io/repositories/427",
+      "language": "Markdown",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2020-02-19T09:01:23Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "microsoft/SkillOpt",
+      "owner": "microsoft",
+      "repo": "SkillOpt",
+      "description": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
+      "githubUrl": "https://github.com/microsoft/SkillOpt",
+      "trendshiftUrl": "https://trendshift.io/repositories/38498",
+      "language": "Python",
+      "topics": [
+        "NLP",
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-08T06:41:01Z"
+    }
+  ]
+}
