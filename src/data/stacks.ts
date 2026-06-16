@@ -453,6 +453,45 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-15",
   },
+  {
+    slug: "continue",
+    name: "Continue",
+    tagline: "Asisten coding open-source yang menyambungkan VS Code ke model apa pun yang kamu mau",
+    tags: ["Continue", "Open Source", "Self-Host"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 9.2 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "Continue adalah ekstensi open-source berlisensi Apache 2.0 yang sudah terpasang lebih dari 3,2 juta kali di VS Code dan JetBrains. Tidak seperti asisten coding proprietary, Continue tidak memaksakan model atau vendor — kamu menyambungkannya ke Claude, GPT, Gemini, atau model lokal lewat Ollama, dan membayar hanya untuk token yang dipakai. Tambahan terbaru, source-controlled AI checks yang berjalan di setiap pull request, menjadikannya salah satu tool paling fleksibel di kelasnya untuk developer yang peduli pada kendali dan privasi.",
+    pros: [
+      "Open-source Apache 2.0 dengan lebih dari 3,2 juta instal di VS Code marketplace, aktif dipelihara oleh tim inti dan komunitas",
+      "Bisa disambungkan ke hampir semua LLM — Claude, GPT-4, Gemini, Llama, DeepSeek, atau model lokal lewat Ollama dan LM Studio",
+      "Fitur agent, chat, edit, dan autocomplete dalam satu paket yang konsisten di VS Code dan JetBrains",
+      "Source-controlled AI checks via Continue CLI (cn) menjalankan agen AI di setiap pull request sebagai GitHub status check",
+      "Harga transparan: pay-as-you-go 3 dolar per juta token untuk Starter, atau BYOK penuh untuk perusahaan",
+    ],
+    cons: [
+      "Pengalaman out-of-the-box tidak sepolished Cursor atau Claude Code — perlu konfigurasi model dan prompt untuk hasil optimal",
+      "Bergerak cepat sehingga dokumentasi dan contoh-contoh preset kadang tertinggal dari fitur terbaru",
+      "Untuk self-host dengan model besar tetap butuh GPU sendiri; pemula tanpa kartu grafis dedicated akan lebih praktis pakai API",
+    ],
+    verdict:
+      "Pilihan paling masuk akal untuk developer dan tim yang menolak vendor lock-in. Standar baru untuk asisten coding open-source — bukan yang paling halus, tapi paling bebas dan bisa diatur.",
+    body: [
+      "Sebelum ada Continue, pilihan asisten coding AI di editor terbagi dua: terima langganan bulanan dari vendor besar dengan model yang mereka tentukan, atau pasang ekstensi tidak resmi yang kualitas dan keamanannya tidak terjamin. Continue memecah dikotomi itu dengan posisi yang sekarang terasa jelas: ekstensi open-source berlisensi Apache 2.0 yang menyambungkan VS Code atau JetBrains ke model apa pun yang ingin kamu pakai — Claude, GPT-4, Gemini, Llama, DeepSeek, atau model lokal yang berjalan di laptop sendiri lewat Ollama. Konfigurasinya berupa file YAML sederhana, dan lebih dari tiga puluh penyedia model sudah didukung resmi. Untuk developer Indonesia yang peduli pada independensi data atau yang hanya ingin mencoba beberapa model sebelum commit ke satu vendor, kontrol seperti ini sangat berharga.",
+      "Dalam pengujian editorial, empat kemampuan utama Continue terasa paling relevan untuk workflow harian. Autocomplete berjalan cepat dan bisa diarahkan ke model kecil (seperti Qwen2.5-Coder 7B lewat Ollama) untuk saran inline yang murah. Chat sidebar bisa melampirkan konteks file, folder, atau bahkan hasil grep dari codebase, sehingga pertanyaan seperti 'apa beda dua fungsi ini' bisa dijawab tanpa copy-paste. Edit mode memungkinkan refactor lokal terhadap blok yang di-highlight dengan instruksi bahasa alami, dan mode agent — yang paling kuat — bisa menjalankan perintah terminal, membaca output, dan mengiterasi sampai tugas selesai. Source-controlled AI checks yang diperkenalkan lewat Continue CLI (cn) adalah tambahan baru yang berbeda: agen AI dijalankan di setiap pull request sebagai GitHub status check, dengan aturan didefinisikan sebagai markdown di folder .continue/checks/. Hasilnya, code review otomatis yang reproducible dan bisa diaudit.",
+      "Tentu ada kompromi yang perlu dipahami. Pertama, Continue tidak datang dengan model bawaan yang dioptimasi untuk UX — kamu harus memilih model sendiri, men-setup API key, dan menulis prompt sistem yang sesuai. Bagi yang sudah berpengalaman, ini kekuatan; bagi pemula, ini satu langkah ekstra yang bisa membuat mereka kembali ke Cursor atau Copilot yang lebih plug-and-play. Kedua, karena bergerak cepat, dokumentasi dan preset bawaan kadang tertinggal dari kemampuan aktual — komunitas Discord dan GitHub Discussions sering lebih mutakhir. Ketiga, fitur self-host memang menggembirakan secara prinsip, tetapi menjalankan Llama 3.1 70B atau DeepSeek Coder di laptop tanpa GPU dedicated tidak realistis; untuk pemakaian serius, API eksternal atau server dengan GPU tetap jalan termudahnya. Model kecil seperti Qwen2.5-Coder 7B atau Phi-3 sudah sangat membantu untuk autocomplete dan tidak butuh GPU kencang.",
+      "Untuk pengguna dan tim di Indonesia, implikasi praktisnya menarik di beberapa sisi. Harga Starter 3 dolar per juta token (input dan output sama) untuk model frontier seperti Claude Sonnet berarti sebuah sesi coding produktif seharian bisa ditekan di bawah 1 dolar, jauh lebih murah dari langganan bulanan 20 dolar Cursor Pro atau 10 dolar Copilot untuk pemakaian setara — dengan catatan kamu membawa model sendiri. Paket Team 20 dolar per kursi per bulan sudah termasuk 10 dolar kredit dan fitur manajemen terpusat, cocok untuk tim kecil yang ingin mengendalikan penggunaan AI di seluruh organisasi tanpa harus setup SSO enterprise. Untuk perusahaan dan startup yang memproses kode sensitif — fintech, healthtech, atau yang punya klien dengan regulasi ketat — opsi self-host dengan Ollama di server internal adalah pembeda terbesar Continue dibanding kompetitor proprietary. Di mana pun kodenya berada, di situ AI-nya bekerja. Continue bukan tool yang paling halus di pasaran, tapi untuk developer yang menolak dikte vendor dan ingin asisten AI yang mengikuti arsitektur mereka — bukan sebaliknya — belum ada alternatif seterbuka ini.",
+    ],
+    link: "https://continue.dev",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-16",
+  },
 ];
 
 export function getStack(slug: string) {
