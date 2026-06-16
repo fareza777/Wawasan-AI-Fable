@@ -263,6 +263,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Berguna untuk AI/RAG engineer yang butuh korpus dokumentasi offline, jurnalis yang ingin snapshot artikel investigasi, atau siapa saja yang muak dengan 'Save As' browser yang tidak benar-benar menyimpan halaman.",
     ],
   },
+  "agentscope-ai/QwenPaw": {
+    description:
+      "Asisten AI personal open-source dari tim AgentScope Alibaba — deploy lokal atau cloud, terhubung ke multi-channel chat (DingTalk, Feishu, WeChat, Discord, Telegram), dan extensible lewat sistem 'skill'.",
+    highlights: [
+      "Arsitektur 'skill-based' jadi fitur utamanya: agent menentukan apa yang bisa dia lakukan lewat skill (scheduling, PDF/Office processing, news digest, custom skill) — tanpa lock-in, plugin share lewat AgentScope Platform marketplace.",
+      "Multi-agent collaboration: bisa spawn banyak agent independen masing-masing dengan role sendiri, lalu aktifkan skill kolaborasi agar mereka tackle task kompleks bareng-bareng — pattern 'supervisor + worker' yang lagi tren.",
+      "Dukungan multi-channel out-of-the-box — satu QwenPaw bisa sekaligus nyala di DingTalk, Feishu, WeChat, Discord, Telegram; cocok untuk tim distributed yang chat di platform berbeda.",
+      "Memory-evolving & local-first: agent belajar dari interaksi dan reflect pengalaman, sementara data memory tetap di mesin/cloud milik sendiri (no third-party hosting) — menjawab kekhawatiran privasi AI asisten pribadi.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
