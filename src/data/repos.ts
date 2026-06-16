@@ -795,6 +795,58 @@ export const repos: Review[] = [
     date: "2026-06-16",
     updatedAt: "2026-06-16",
   },
+  {
+    slug: "langchain",
+    name: "LangChain",
+    tagline: "Framework agent engineering 139 ribu bintang — fondasi orkestrasi LLM",
+    tags: ["AI Framework", "Python", "Open Source", "Multi-Agent"],
+    score: 9.3,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 9.0 },
+    ],
+    summary:
+      "LangChain adalah framework agent engineering yang menyatukan lebih dari 600 integrasi model, tool, vector store, dan loader di bawah satu API Python (dan TypeScript). Setelah berevolusi dari sekadar \"rantai prompt\", sekarang posisinya lebih sebagai platform orkestrasi agent dengan ekosistem Deep Agents, LangGraph, dan LangSmith yang saling melengkapi.",
+    highlights: [
+      "139 ribu bintang dan 23 ribu fork — salah satu repositori Python paling berpengaruh di era AI modern",
+      "600+ integrasi: provider model (OpenAI, Anthropic, Google, Mistral, Ollama, dan lainnya), vector store, loader dokumen, dan tool eksternal",
+      "API konsisten lintas model: ganti GPT-5 ke Claude Opus 4.5 ke Qwen3 dengan satu argumen, kode lain tidak berubah",
+      "Standar `langchain-core` (Jun 2026: 1.4.7) — abstraksi Runnable, Message, dan Tool yang dipakai hampir semua agent framework Python lain",
+      "Deep Agents: paket tingkat tinggi untuk agent dengan planning, sub-agent, dan akses filesystem bawaan",
+      "LangGraph: framework orkestrasi low-level untuk workflow stateful, branching, dan long-running agent",
+      "LangSmith: observability, evaluasi, dan debugging agent — dasbor untuk menelusuri trace, versi prompt, dan dataset eval",
+      "Quickstart ramping: `from langchain.chat_models import init_chat_model` lalu `model.invoke(...)` sudah jalan dalam hitungan menit",
+      "Ekosistem Loader & Splitter: PDF, HTML, Markdown, Notion, Slack, GitHub, dan seterusnya — pipeline RAG tersusun dari komponen-komponen kecil",
+      "Aktif diperbarui ke Juni 2026 — rilis minor hampir tiap minggu, mengikuti ritme publikasi model dan lab AI besar",
+    ],
+    pros: [
+      "Standar de facto: tutorial resmi dari hampir semua lab AI besar merujuk ke LangChain sebagai titik masuk",
+      "Abstraksi yang konsisten membuat perpindahan antar model dan tool tidak perlu tulis ulang kode",
+      "Ekosistem berlapis: high-level chains untuk pemula, low-level LangGraph untuk engineering yang butuh kontrol penuh",
+      "LangSmith + LangGraph Deployment memungkinkan jalur menuju produksi yang relatif jelas",
+    ],
+    cons: [
+      "Permukaan API sangat luas — pemula butuh waktu untuk memetakan komponen mana yang relevan dengan kasus mereka",
+      "Abstraksi kadang menyembunyikan detail yang penting saat debugging pada tingkat rendah",
+      "Konsumsi token bisa membengkak kalau chain panjang tidak diaudit — perlu observability yang disiplin",
+    ],
+    verdict:
+      "Kalau Anda membangun aplikasi LLM serius di Python dan belum pernah memakai LangChain, mulailah dari sini. Bukan satu-satunya pilihan, tapi merupakan jalan paling teruji untuk prototyping cepat dan jalur menuju produksi.",
+    body: [
+      "Sebelum ada LangChain, mengintegrasikan LLM ke aplikasi berarti menulis kode boilerplate berulang untuk setiap provider: format pesan, parsing output, retry, streaming. Sejak akhir 2022, LangChain mengubah itu dengan satu keputusan sederhana — sediakan antarmuka Runnable yang seragam untuk model, tool, retriever, dan parser. Hasilnya, kode yang memanggil GPT-4 hari ini bisa dipindahkan ke Claude atau Qwen dengan mengubah satu string, bukan menulis ulang logika integrasi.",
+      "Dampaknya terasa di seluruh ekosistem. Hampir setiap tutorial resmi dari OpenAI, Anthropic, Google, Meta, Alibaba, hingga Mistral menyentuh LangChain sebagai titik masuk. Framework lain seperti LlamaIndex, Haystack, dan bahkan sebagian kode Open WebUI menjadikan LangChain sebagai salah satu backend inferensi utama. Di komunitas startup dan riset, ini adalah default; menentangnya biasanya butuh alasan yang sangat spesifik.",
+      "Dalam pengujian editorial Wawasan AI, kombinasi yang paling sering kami manfaatkan adalah LangChain + LangGraph + LangSmith: LangChain untuk komposisi komponen, LangGraph untuk workflow stateful yang bisa diaudit, dan LangSmith untuk menelusuri trace saat agent berperilaku tak terduga. Pola ini sangat cocok untuk tim engineering di Indonesia yang ingin membangun agen customer service, asisten riset, atau pipeline RAG berbasis dokumen internal — terutama karena semua komponennya open-source dan bisa di-deploy on-premise.",
+      "Rekomendasi penggunaan: pasang via `uv add langchain` (atau `pip install langchain[anthropic]` untuk salah satu provider populer), lalu mulai dari quickstart chat model. Setelah nyaman, eksplorasi LangGraph saat workflow mulai bercabang, dan pasang LangSmith begitu siap membahas trace. Untuk UMKM dan tim korporat di Indonesia yang serius mengadopsi LLM, menguasai LangChain adalah investasi yang lebih aman daripada mempelajari ulang setiap integrasi model satu per satu.",
+    ],
+    link: "https://github.com/langchain-ai/langchain",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-17",
+    updatedAt: "2026-06-17",
+    featured: true,
+  },
 ];
 
 export function getRepo(slug: string) {
