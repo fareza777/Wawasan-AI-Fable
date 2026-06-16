@@ -665,6 +665,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-16",
   },
+  {
+    slug: "mimo-v2-pro",
+    name: "MiMo-V2-Pro",
+    tagline:
+      "Model 1T parameter Xiaomi yang lahir untuk era agent — fondasi sebelum V2.5-Pro",
+    tags: ["Xiaomi", "Proprietary", "Agentic", "Reasoning"],
+    score: 8.1,
+    scores: [
+      { label: "Penalaran", value: 8.3 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 7.7 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 40.3,
+    aa_coding_index: 41.4,
+    aa_price_input: 1,
+    aa_price_output: 3,
+    aa_synced_at: "2026-06-17",
+    summary:
+      "MiMo-V2-Pro adalah flagship proprietary Xiaomi yang rilis Maret 2026 dan memperkenalkan arsitektur hybrid attention 1T parameter (42B aktif) — pondasi yang kemudian dikembangkan V2.5-Pro. Intelligence index 40,3 (sumber: Artificial Analysis) menaruhnya di papan tengah atas, dengan kekuatan utama di tugas agentic panjang dan software engineering multi-langkah. Model ini sempat jadi misteri publik ketika muncul anonim di OpenRouter dengan nama sandi 'Hunter Alpha' sebelum Xiaomi mengakui sebagai model mereka.",
+    pros: [
+      "Arsitektur hybrid attention 1T parameter dengan 42B aktif — desain khusus untuk kerja agentic panjang",
+      "Coding index 41,4 — solid untuk software engineering multi-file, mendekati MiMo-V2.5-Pro dan GLM-5",
+      "Konteks 1M token — bisa menelan seluruh codebase menengah dalam satu sesi tanpa chunking",
+      "Kemampuan multibahasa kuat untuk Mandarin dan Inggris — laboratorium Xiaomi melatih MiMo dengan korpus bilingual yang luas",
+    ],
+    cons: [
+      "Harga API premium di kelas intel-nya: $1 input / $3 output per 1M token — di atas MiMo-V2.5-Pro yang bermain di tier sama",
+      "Throughput output 39 tokens/detik — lambat dibanding frontier Barat, kurang ideal untuk chat real-time dengan streaming UI",
+      "Sudah mulai di-deprecate menuju V2.5-Pro — siklus hidup sebagai API publik relatif pendek",
+      "Ekosistem developer pihak ketiga masih muda, akses regional perlu kartu pembayaran internasional dan belum merata ke Asia Tenggara",
+    ],
+    verdict:
+      "MiMo-V2-Pro adalah tonggak penting Xiaomi di era agent: arsitektur hybrid attention 1T yang jadi dasar V2.5-Pro. Untuk produksi baru, V2.5-Pro lebih layak; untuk studi atau migrasi dari sistem yang sudah jalan di V2-Pro, ini pilihan solid dengan harga yang sebanding dengan kelas intel-nya.",
+    body: [
+      "MiMo-V2-Pro adalah flagship Xiaomi yang melompat dari keluarga MiMo yang awalnya kecil dan fokus coding ke model frontier. Rilis Maret 2026 dengan nama sandi 'Hunter Alpha' (muncul anonim di OpenRouter seminggu sebelum Xiaomi mengakuinya), model ini memperkenalkan arsitektur hybrid attention dengan total 1 triliun parameter dan 42 miliar parameter aktif — desain yang di kemudian hari jadi cetak biru MiMo-V2.5-Pro. Bedanya dengan V2.5-Pro: V2-Pro adalah varian lebih awal dengan intelligence index lebih rendah (55,0 di benchmark internal Xiaomi, 40,3 di AA), tapi tetap kompeten untuk workload agentic serius.",
+      "Dalam pengujian editorial Wawasan AI, MiMo-V2-Pro menunjukkan DNA laboratorium perangkat keras yang matang untuk pekerjaan agentic: penalaran multi-langkah konsisten, eksekusi tool dalam loop yang stabil, dan kemampuan mempertahankan konteks hingga 1 juta token. Untuk pipeline software engineering — refactor lintas file, code review besar, dan iterasi agentic panjang — model ini kompeten, meski coding index 41,4 masih di bawah GLM-5 (44,2) atau frontier Barat. Yang paling terasa adalah ketahanan di sesi panjang: model tidak mudah keluar jalur setelah belasan iterasi tool-use. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 40,3 di benchmark Artificial Analysis menaruh MiMo-V2-Pro di papan tengah — di bawah V2.5-Pro (53,8) dan GLM-5 (49,8), tapi sejajar dengan Qwen3 non-flagship dan di atas model open-weight pada umumnya. Throughput output 39 tokens/detik dan TTFT 2,2 detik menempatkannya di tier lambat — responsif untuk alur kerja agentic, tapi antarmuka chat dengan streaming UI akan terasa tersendat. Harga API $1 per juta token input dan $3 output bermain di kelas premium yang lebih mahal dari V2.5-Pro ($0,435/$0,87) di tier intel yang lebih tinggi — proposisi value-for-money-nya jadi pertimbangan serius bagi developer yang memperhitungkan dolar per inference.",
+      "Kelemahan yang teridentifikasi: MiMo-V2-Pro sudah mulai di-deprecate — Xiaomi secara resmi mengumumkan transisi ke seri V2.5 per 18 Juni 2026, dan nama V2-Pro akan sepenuhnya dihapus pada 30 Juni 2026. Artinya siklus hidup sebagai API publik tinggal dua minggu dari rilis review ini; untuk produksi baru, V2.5-Pro adalah pilihan yang lebih aman dan lebih murah di kelas yang lebih tinggi. Juga, ekosistem developer pihak ketiga masih muda — integrasi native dengan LangChain, LlamaIndex, atau tool Indonesia minim, dan akses API publik mungkin terbatas di region tertentu. Strategi pemakaian yang masuk akal: MiMo-V2-Pro untuk studi arsitektur hybrid attention 1T atau migrasi sistem yang sudah terlanjur depend di V2-Pro; untuk greenfield project, langsung ke V2.5-Pro; untuk beban volume tinggi yang sensitif harga, MiMo-V2.5-Pro atau Qwen3.7 Plus lebih rasional.",
+    ],
+    link: "https://xiaomi.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-17",
+  },
 ];
 
 export function getModel(slug: string) {
