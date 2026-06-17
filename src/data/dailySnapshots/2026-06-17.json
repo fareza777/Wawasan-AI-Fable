@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "17 Juni 2026",
-  "period": {
-    "date": "2026-06-17",
-    "label": "17 Juni 2026",
-    "path": "/repo/daily/2026/06/17"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-17T00:05:43.785Z",
+  "fetchedAt": "2026-06-17T06:37:58.883Z",
   "repos": [
     {
       "rank": 1,
@@ -27,124 +23,47 @@
     },
     {
       "rank": 2,
-      "fullName": "Panniantong/Agent-Reach",
-      "owner": "Panniantong",
-      "repo": "Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
-      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "fullName": "google-research/timesfm",
+      "owner": "google-research",
+      "repo": "timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "githubUrl": "https://github.com/google-research/timesfm",
+      "trendshiftUrl": "https://trendshift.io/repositories/10050",
       "language": "Python",
-      "topics": [
-        "AI agent",
-        "Web scraping",
-        "Search"
-      ],
-      "dateCreated": "2026-02-24T02:10:24Z"
+      "topics": [],
+      "dateCreated": "2024-04-29T21:26:26Z"
     },
     {
       "rank": 3,
-      "fullName": "GoogleCloudPlatform/knowledge-catalog",
-      "owner": "GoogleCloudPlatform",
-      "repo": "knowledge-catalog",
-      "description": "Google Cloud Knowledge Catalog Tools and Samples",
-      "githubUrl": "https://github.com/GoogleCloudPlatform/knowledge-catalog",
-      "trendshiftUrl": "https://trendshift.io/repositories/51719",
-      "language": "Python",
+      "fullName": "alibaba/zvec",
+      "owner": "alibaba",
+      "repo": "zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "githubUrl": "https://github.com/alibaba/zvec",
+      "trendshiftUrl": "https://trendshift.io/repositories/20830",
+      "language": "C++",
       "topics": [
-        "RAG"
+        "Vector database",
+        "Search"
       ],
-      "dateCreated": "2026-05-04T16:36:24Z"
+      "dateCreated": "2025-12-05T07:45:38Z"
     },
     {
       "rank": 4,
-      "fullName": "freeCodeCamp/freeCodeCamp",
-      "owner": "freeCodeCamp",
-      "repo": "freeCodeCamp",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "githubUrl": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "trendshiftUrl": "https://trendshift.io/repositories/1778",
-      "language": "TypeScript",
+      "fullName": "zai-org/GLM-5",
+      "owner": "zai-org",
+      "repo": "GLM-5",
+      "description": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "githubUrl": "https://github.com/zai-org/GLM-5",
+      "trendshiftUrl": "https://trendshift.io/repositories/22855",
       "topics": [
-        "Programming examples"
+        "NLP",
+        "AI agent"
       ],
-      "dateCreated": "2014-12-24T17:49:19Z"
+      "dateCreated": "2026-02-09T08:17:02Z"
     },
     {
       "rank": 5,
-      "fullName": "omnigent-ai/omnigent",
-      "owner": "omnigent-ai",
-      "repo": "omnigent",
-      "description": "Run a coding or knowledge-work agent on your laptop, pick it back up from your phone, and share the live session with a teammate. One command stands up a local agent server with a terminal UI and a web UI — so the same session is reachable from your terminal, your browser, and your phone",
-      "githubUrl": "https://github.com/omnigent-ai/omnigent",
-      "trendshiftUrl": "https://trendshift.io/repositories/51997",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI workflow"
-      ],
-      "dateCreated": "2026-06-11T12:18:13Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "mattpocock/skills",
-      "owner": "mattpocock",
-      "repo": "skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/21589",
-      "language": "Shell",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-03T11:15:53Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "iptv-org/iptv",
-      "owner": "iptv-org",
-      "repo": "iptv",
-      "description": "Collection of publicly available IPTV channels from all over the world",
-      "githubUrl": "https://github.com/iptv-org/iptv",
-      "trendshiftUrl": "https://trendshift.io/repositories/730",
-      "language": "TypeScript",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2018-11-14T22:00:57Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "obra/superpowers",
-      "owner": "obra",
-      "repo": "superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "githubUrl": "https://github.com/obra/superpowers",
-      "trendshiftUrl": "https://trendshift.io/repositories/17415",
-      "language": "Shell",
-      "topics": [
-        "AI agent",
-        "AI coding assistant",
-        "AI skills"
-      ],
-      "dateCreated": "2025-10-09T19:45:18Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "farion1231/cc-switch",
-      "owner": "farion1231",
-      "repo": "cc-switch",
-      "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
-      "githubUrl": "https://github.com/farion1231/cc-switch",
-      "trendshiftUrl": "https://trendshift.io/repositories/15372",
-      "language": "Rust",
-      "topics": [
-        "AI coding assistant",
-        "MCP"
-      ],
-      "dateCreated": "2025-08-04T14:16:16Z"
-    },
-    {
-      "rank": 10,
       "fullName": "agentscope-ai/QwenPaw",
       "owner": "agentscope-ai",
       "repo": "QwenPaw",
@@ -160,6 +79,77 @@
         "Self-hosted"
       ],
       "dateCreated": "2026-02-24T03:42:56Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "owner": "Universal-Debloater-Alliance",
+      "repo": "universal-android-debloater-next-generation",
+      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
+      "githubUrl": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "trendshiftUrl": "https://trendshift.io/repositories/8652",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2023-10-26T17:00:49Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "freeCodeCamp/freeCodeCamp",
+      "owner": "freeCodeCamp",
+      "repo": "freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "githubUrl": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "trendshiftUrl": "https://trendshift.io/repositories/1778",
+      "language": "TypeScript",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2014-12-24T17:49:19Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "iptv-org/iptv",
+      "owner": "iptv-org",
+      "repo": "iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "githubUrl": "https://github.com/iptv-org/iptv",
+      "trendshiftUrl": "https://trendshift.io/repositories/730",
+      "language": "TypeScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2018-11-14T22:00:57Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-09T19:45:18Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "farion1231/cc-switch",
+      "owner": "farion1231",
+      "repo": "cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+      "githubUrl": "https://github.com/farion1231/cc-switch",
+      "trendshiftUrl": "https://trendshift.io/repositories/15372",
+      "language": "Rust",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2025-08-04T14:16:16Z"
     }
   ]
 }
