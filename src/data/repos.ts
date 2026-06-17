@@ -847,6 +847,58 @@ export const repos: Review[] = [
     updatedAt: "2026-06-17",
     featured: true,
   },
+  {
+    slug: "firecrawl",
+    name: "Firecrawl",
+    tagline: "API pengikis web dan crawler skala besar — 134 ribu bintang, fondasi RAG modern",
+    tags: ["AI Crawler", "Web Scraping", "TypeScript", "Open Source"],
+    score: 9.1,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Firecrawl adalah API pengikis web (web scraper) dan crawler skala besar yang dirancang khusus untuk kebutuhan AI modern: dari membangun indeks RAG, menyuplai agen riset, hingga mengisi dataset pelatihan. Dengan 134 ribu bintang dan lebih dari 7.800 fork, ia menjadi salah satu infrastruktur paling banyak diadopsi di balik aplikasi LLM kontemporer.",
+    highlights: [
+      "134 ribu bintang dan 7.842 fork di GitHub — salah satu repositori crawler paling aktif di komunitas AI modern",
+      "API tunggal untuk tiga kebutuhan: scrape satu URL, crawl seluruh situs, atau search + scrape sekaligus",
+      "Output Markdown terstruktur yang sudah bersih dari boilerplate HTML — siap di-chunk ke vector store",
+      "Penanganan JavaScript-heavy: merender halaman SPA, menunggu elemen dinamis, mengambil konten setelah hydrated",
+      "Smart extraction opsional lewat LLM: pilih field spesifik dari halaman tanpa menulis parser manual",
+      "Dukungan format ganda: Markdown, HTML, JSON, screenshot, dan metadata lengkap (og:image, author, published_at)",
+      "Antrian dan job queue bawaan untuk crawl puluhan ribu halaman tanpa mengelola infrastruktur workers sendiri",
+      "SDK resmi untuk Python, Node, Go, Rust, dan Ruby — plug ke stack apa pun",
+      "Lisensi AGPL-3.0 untuk self-hosted; versi cloud (firecrawl.dev) menawarkan hosted API dengan tier gratis",
+      "Aktif diperbarui ke Juni 2026 — dukungan model LLM extraction terbaru (Claude, GPT-5, Gemini) diperbarui rutin",
+    ],
+    pros: [
+      "Menyimpan developer dari menulis boilerplate scraping untuk tiap situs baru — output langsung siap untuk pipeline RAG",
+      "Penanganan JavaScript rendering, rate limiting, dan anti-bot yang biasanya butuh minggu untuk dibangun sendiri",
+      "Ekosistem SDK yang luas dan aktif — integrasi dengan LangChain, LlamaIndex, Dify, dan n8n sudah built-in",
+      "Dokumentasi contoh nyata yang menunjukkan alur dari crawl hingga query vector store",
+    ],
+    cons: [
+      "Lisensi AGPL-3.0 menjadi perhatian bagi tim yang ingin menanam Firecrawl ke produk proprietary tanpa kontribusi balik",
+      "Untuk crawl skala sangat besar (jutaan halaman), biaya cloud tier berbayar bisa membengkak — perlu optimasi query",
+      "Bergantung pada struktur halaman target: situs dengan layout yang sangat tidak konsisten kadang masih butuh parser kustom",
+    ],
+    verdict:
+      "Standar de facto untuk pipeline RAG dan agen riset skala produksi. Kalau proyek AI Anda memerlukan data web yang bersih dan terstruktur, Firecrawl adalah titik masuk paling pragmatis yang kami temui di Wawasan AI.",
+    body: [
+      "Membangun aplikasi LLM yang andal hampir selalu berujung pada satu pertanyaan yang sama: bagaimana cara mendapatkan data web yang bersih, terstruktur, dan siap pakai untuk model? Menjawab pertanyaan itu dari nol berarti menggabungkan headless browser, queue worker, rate limiter, parser HTML, dan deteksi anti-bot — pekerjaan yang menelan berminggu-minggu bahkan untuk satu kasus penggunaan. Firecrawl mengambil jalan pintas itu dan menawarkan hasilnya sebagai satu API: berikan URL, terima Markdown.",
+      "Yang membuat Firecrawl menonjol bukan hanya kemampuannya merender halaman JavaScript, melainkan keseluruhan alur kerja yang ia sediakan. Mode scrape untuk satu halaman, mode crawl untuk menelusuri tautan internal sebuah situs, dan mode search yang menggabungkan pencarian Google dengan scraping instan — semuanya bisa diakses lewat endpoint yang konsisten. Bagi tim riset di Indonesia yang ingin membangun basis pengetahuan dari portal berita, direktori UMKM, atau arsip regulasi, kombinasi ini sangat praktis.",
+      "Dalam pengujian editorial Wawasan AI, alur yang paling sering kami manfaatkan adalah Firecrawl + LangChain + Chroma: Firecrawl mengambil halaman target dan mengeluarkan Markdown terstruktur, LangChain memecahnya menjadi chunk yang sesuai untuk window context, dan Chroma menyimpan embedding untuk retrieval. Pola yang sama diadopsi oleh banyak tim AI di startup dan korporasi besar; kelebihannya adalah waktu dari ide ke prototipe yang bisa diukur dalam hitungan jam, bukan minggu.",
+      "Untuk konteks Indonesia, Firecrawl sangat relevan bagi beberapa kasus: agregasi berita dan rilis pers untuk model analisis sentimen, pengumpulan data UMKM dari marketplace dan direktori lokal untuk riset pasar, serta pembangunan knowledge base internal dari dokumentasi publik perusahaan. Lisensi AGPL-3.0 perlu dipertimbangkan untuk penggunaan proprietary, namun opsi self-hosted tersedia dan sebagian besar eksperimen awal cukup memakai tier gratis firecrawl.dev. Bagi tim yang serius membangun agen riset atau pipeline RAG, Firecrawl adalah investasi awal yang paling hemat biaya.",
+    ],
+    link: "https://github.com/firecrawl/firecrawl",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-18",
+    updatedAt: "2026-06-18",
+    featured: true,
+  },
 ];
 
 export function getRepo(slug: string) {
