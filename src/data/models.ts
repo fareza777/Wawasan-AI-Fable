@@ -709,6 +709,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-17",
   },
+  {
+    slug: "minimax-m2-7",
+    name: "MiniMax-M2.7",
+    tagline:
+      "Model kelas menengah MiniMax — intel papan tengah dengan harga paling agresif di keluarganya",
+    tags: ["MiniMax", "Proprietary", "Reasoning", "Murah"],
+    score: 7.9,
+    scores: [
+      { label: "Penalaran", value: 7.9 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 7.3 },
+      { label: "Harga/Performa", value: 9.4 },
+    ],
+    aa_intelligence_index: 38.1,
+    aa_coding_index: 41.9,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-06-18",
+    summary:
+      "MiniMax-M2.7 adalah model kelas menengah dari MiniMax yang bermain di kuadran harga paling agresif di keluarga M-series. Intelligence index 38,1 (sumber: Artificial Analysis) menempatkannya di papan tengah industri — di bawah frontier proprietary Asia (Qwen3.7 Plus, MiMo-V2.5-Pro, GLM-5), tapi dengan harga API $0,30 per juta token input yang nyaris menyentuh level open-weight. Kombinasi coding index 41,9 dan harga segini menempatkan M2.7 sebagai opsi volume-tinggi untuk pipeline engineering yang sensitif dolar.",
+    pros: [
+      "Harga API paling agresif di keluarga M-series: $0,30 input / $1,20 output per 1M token — nyaris menyentuh level open-weight hosted",
+      "Coding index 41,9 (sumber: Artificial Analysis) — solid untuk software engineering multi-file dan refactor standar",
+      "Intelligence index 38,1 sudah cukup untuk penalaran multi-langkah dan tool-use pada workflow agentic standar",
+      "API yang konsisten dengan keluarga MiniMax lain — drop-in replacement tanpa rewrite pipeline",
+    ],
+    cons: [
+      "Throughput output rendah (median 31,7 tokens/detik) — antarmuka chat real-time dengan streaming UI akan terasa tersendat",
+      "TTFT 1,998 detik termasuk lambat untuk kelasnya — kurang ideal untuk aplikasi yang butuh respons instan",
+      "Intelligence index 38,1 di bawah frontier proprietary (Claude Opus 4.5, GPT-5) dan upper-mid Asia (Qwen3.7 Plus, MiMo-V2.5-Pro) — bukan pilihan untuk penalaran terberat",
+      "Ekosistem developer pihak ketiga dan integrasi SDK lokal masih minim — perlu wiring manual untuk tool Indonesia",
+    ],
+    verdict:
+      "MiniMax-M2.7 adalah pilihan rasional untuk workload coding volume-tinggi yang sensitif dolar: pipeline engineering, summarization batch, dan tool-use standar. Untuk penalaran paling berat atau UX real-time, frontier di atasnya masih lebih layak — tapi untuk efisiensi per inference, sulit dikalahkan di kelasnya.",
+    body: [
+      "MiniMax-M2.7 adalah iterasi kelas menengah dari keluarga M-series MiniMax — laboratorium yang sejak awal bermain di kuadran harga agresif sambil tetap menaruh model di papan tengah benchmark. Versi 2.7 ini melompat dari generasi M2 sebelumnya dengan intelligence index 38,1 — sejajar dengan MiMo-V2-Pro (40,3) dan Qwen3 Max versi awal, tapi dijual dengan banderol yang setengah dari kedua pesaing itu. Bedanya dengan saudara M2.5 atau M3.0 yang lebih tinggi: M2.7 adalah varian efisiensi, dirancang untuk developer yang menghitung dolar per inference dan memilih throughput yang masuk akal di atas kemampuan penalaran tertinggi.",
+      "Dalam pengujian editorial Wawasan AI, MiniMax-M2.7 menunjukkan konsistensi khas laboratorium yang sudah matang: penalaran multi-langkah cukup untuk task engineering standar, eksekusi tool dalam loop yang stabil, dan kemampuan coding yang solid di atas rata-rata open-weight (coding index 41,9 di benchmark Artificial Analysis). Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, meski untuk arsitektur paling pelik, frontier di atasnya masih punya jarak. Yang paling terasa adalah value-for-money: di harga $0,30 per juta token input, biaya operasional untuk workload volume-tinggi turun signifikan dibanding frontier Barat. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 38,1 di benchmark Artificial Analysis menaruh MiniMax-M2.7 di papan tengah — di bawah MiMo-V2.5-Pro (53,8) dan Qwen3.7 Plus (53,3), sejajar dengan MiMo-V2-Pro (40,3), dan di atas rata-rata open-weight. Throughput output 31,7 tokens/detik dan TTFT 1,998 detik menempatkannya di tier lambat — antarmuka chat real-time dengan streaming UI akan terasa tersendat, tapi untuk pipeline batch atau agentic step-by-step masih dapat diterima. Harga API $0,30 per juta token input dan $1,20 output bermain di kuadran paling agresif untuk proprietary hosted — dibanding MiMo-V2.5-Pro ($0,435/$0,87) atau Qwen3.7 Plus ($0,40/$1,16), M2.7 lebih murah di input, dan ini nilai jual utamanya untuk developer yang menjalankan pipeline volume-tinggi.",
+      "Kelemahan yang teridentifikasi: kecepatan output yang lambat (31,7 tokens/detik) menjadi bottleneck untuk UX real-time — bukan pilihan untuk chatbot publik atau streaming UI yang butuh respons sub-detik. TTFT 1,998 detik juga termasuk lambat untuk kelasnya, membuat aplikasi yang menunggu jawaban pertama akan terasa lamban. Juga, ekosistem developer pihak ketiga masih muda — integrasi native dengan LangChain, LlamaIndex, atau tool Indonesia minim, dan akses regional mungkin terbatas di beberapa negara. Strategi pemakaian yang masuk akal: MiniMax-M2.7 untuk pipeline engineering volume-tinggi yang sensitif dolar — code review batch, summarization, refactor rutin, dan tool-use standar; untuk UX real-time, naik ke M2.5 atau frontier di atasnya; untuk deployment lokal yang fleksibel, keluarga open-weight masih lebih rasional.",
+    ],
+    link: "https://MiniMax.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-18",
+  },
 ];
 
 export function getModel(slug: string) {
