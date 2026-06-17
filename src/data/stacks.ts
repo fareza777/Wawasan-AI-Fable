@@ -492,6 +492,45 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-16",
   },
+  {
+    slug: "mastra",
+    name: "Mastra",
+    tagline: "Framework TypeScript open-source untuk AI agents, workflows, dan RAG produksi",
+    tags: ["Mastra", "Open Source", "Agent Framework", "TypeScript"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 8.6 },
+    ],
+    summary:
+      "Mastra adalah framework TypeScript berlisensi Apache 2.0 yang dibuat oleh tim inti di balik Gatsby, merangkum primitive AI paling penting ke satu API yang fully-typed: agents, workflows, tools, RAG, memory, evals, dan OpenTelemetry. Alih-alih menyambung setengah lusin library dengan abstraksi yang tidak cocok, developer TypeScript dapat satu paket yang menutupi seluruh siklus hidup dari prompt tunggal sampai workflow multi-step yang tahan lama dengan observabilitas bawaan. Digunakan oleh tim mulai dari Replit sampai Marsh McLennan untuk produksi serius, Mastra diam-diam menjadi titik awal default untuk aplikasi AI di ekosistem TypeScript.",
+    pros: [
+      "Framework open-source Apache 2.0 dari tim inti Gatsby, dengan primitive lengkap: agents, workflows, tools, RAG, memory, evals, dan observability dalam satu API fully-typed",
+      "Workflow engine yang deterministic dan durable untuk multi-step orchestration, bukan hanya chain sederhana — cocok untuk proses bisnis yang harus bisa diaudit",
+      "Integrasi native dengan framework server populer (Next.js, Express, Hono) dan Model Context Protocol (MCP) penuh untuk akses ke ekosistem tool eksternal",
+      "Observability dan evals bawaan lewat OpenTelemetry, sehingga trace agent, token usage, dan prompt-injection guard bisa langsung di-route ke stack monitoring yang sudah ada",
+      "Harga 100 persen gratis untuk self-host — tidak ada tagihan platform, kamu hanya membayar token model pilihan sendiri",
+    ],
+    cons: [
+      "Pengalaman onboarding masih kalah matang dibanding LangChain atau Vercel AI SDK — dokumentasi preset dan contoh-contoh end-to-end belum selengkap kompetitor",
+      "Ekosistem plugin dan integrasi pihak ketiga lebih kecil; komunitas masih bertumbuh dan beberapa integrasi (mis. vector store tertentu) masih contrib-based",
+      "Karena framework-nya opinionated, perpindahan dari Vercel AI SDK atau LangGraph ke Mastra butuh refactor cukup besar, terutama kalau arsitektur existing sudah terikat dengan primitive kompetitor",
+    ],
+    verdict:
+      "Pilihan utama untuk tim TypeScript yang ingin framework agentic serius dengan fondasi observability dan durabilitas sejak hari pertama. Standar baru untuk stack AI di ekosistem JS — belum se-matang LangChain, tapi fondasi teknis dan open-core-nya sangat solid.",
+    body: [
+      "Dalam dua tahun terakhir, membangun aplikasi AI di TypeScript berarti menyambung banyak library sekaligus — LangChain untuk orchestration, Vercel AI SDK untuk UI streaming, sebuah vector store untuk RAG, sebuah evaluator terpisah, dan observability yang ditempel belakangan. Setiap perpustakaan membawa abstraksi dan konvensi sendiri, dan hasil yang sering muncul adalah tumpukan yang jalan di development tapi rapuh saat masuk produksi. Mastra muncul sebagai jawaban untuk masalah itu: satu framework TypeScript berlisensi Apache 2.0 yang membawa semua primitive yang dibutuhkan produk AI serius ke satu API fully-typed. Tim di baliknya adalah orang-orang yang membangun Gatsby, sehingga tidak mengherankan kalau API-nya terasa disiplin dan ramah untuk developer yang sudah akrab dengan ekosistem React dan Node.",
+      "Saat diuji sebagai fondasi agent, empat kemampuan utama Mastra terasa paling relevan untuk workflow produksi. Pertama, agent yang bisa memakai tool, menyimpan memori, dan mengiterasi sampai tugas selesai, dengan konvensi yang jelas tentang input, output, dan retry. Kedua, workflow engine yang deterministic — bukan sekadar chain LLM, melainkan grafus langkah yang bisa mencakup branching, paralelisme, dan durable execution yang tahan terhadap restart. Ketiga, RAG pipeline bawaan yang langsung mencolok ke vector store populer (Postgres pgvector, Pinecone, Chroma) lewat adapter yang konsisten. Keempat, sistem evals dan observability yang keluar dari kotak lewat OpenTelemetry, sehingga setiap pemanggilan agent, penggunaan token, dan hasil eval bisa di-route ke Datadog, Honeycomb, atau stack internal tanpa harus menulis instrumentation manual. Semua ini dikemas dengan type system TypeScript yang ketat, sehingga editor bisa autocomplete nama tool dan struktur argumen, dan refactor terasa aman seperti proyek Node biasa.",
+      "Tentu ada kompromi yang perlu dipahami. Pertama, Mastra masih relatif muda dibanding LangChain, dan ekosistem plugin serta integrasi pihak ketiga belum sebesar itu — untuk vector store atau tool tertentu, kontribusi dari komunitas masih contrib-based dan mungkin perlu maintenance tambahan. Kedua, karena framework-nya opinionated, tim yang sudah terlanjur membangun di atas Vercel AI SDK atau LangGraph akan menghadapi refactor yang cukup besar untuk berpindah. Ketiga, dokumentasi preset dan tutorial end-to-end belum selengkap kompetitor yang sudah lebih dulu mapan; untuk kasus-kasus niche, kamu akan membaca source code di GitHub lebih sering daripada tutorial. Yang menarik, kode sumbernya sendiri bersih dan terstruktur dengan baik, sehingga hal ini bukan blocker melainkan investasi waktu onboarding yang lebih tinggi di awal.",
+      "Untuk pengguna dan tim di Indonesia, implikasi praktis Mastra menarik di beberapa sisi. Karena sepenuhnya open-source dan self-hostable, biaya platformnya nol — kamu hanya membayar token model pilihan sendiri (Claude, GPT, Gemini, atau model lokal lewat Ollama), sehingga total cost of ownership sangat transparan dan bisa diprediksi, berbeda dengan platform agentic proprietary yang sering mengenakan biaya per eksekusi atau per workflow. Bagi startup yang sedang bangun produk AI pertama mereka dan ingin menghindari vendor lock-in sejak awal, posisi ini sangat menarik. Kedua, untuk perusahaan yang memproses data sensitif — fintech, healthtech, atau yang punya klien dengan regulasi ketat — opsi self-host Mastra di server internal dengan logging yang mengalir ke stack SIEM internal adalah kombinasi yang solid. Ketiga, karena TypeScript adalah salah satu bahasa paling banyak dipakai di komunitas developer Indonesia, kurva belajar Mastra relatif landai untuk developer yang sudah akrab dengan Node, Express, dan Next.js. Diskusi di GitHub Discussions dan Discord sudah mulai ada kontribusi dari developer Asia Tenggara, sehingga mencari second opinion atau contoh integrasi spesifik kawasan ini tidak sesulit sebelumnya. Mastra belum se-matang LangChain, dan bukan tool untuk developer yang ingin hasil dalam satu sore — tapi untuk tim TypeScript yang ingin membangun fondasi agentic serius dengan observability dan durabilitas sejak hari pertama, Mastra adalah titik awal yang sangat solid di 2026.",
+    ],
+    link: "https://mastra.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-17",
+  },
 ];
 
 export function getStack(slug: string) {

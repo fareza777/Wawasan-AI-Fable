@@ -1,0 +1,165 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "17 Juni 2026",
+  "period": {
+    "date": "2026-06-17",
+    "label": "17 Juni 2026",
+    "path": "/repo/daily/2026/06/17"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-17T00:05:43.785Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Search"
+      ],
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "GoogleCloudPlatform/knowledge-catalog",
+      "owner": "GoogleCloudPlatform",
+      "repo": "knowledge-catalog",
+      "description": "Google Cloud Knowledge Catalog Tools and Samples",
+      "githubUrl": "https://github.com/GoogleCloudPlatform/knowledge-catalog",
+      "trendshiftUrl": "https://trendshift.io/repositories/51719",
+      "language": "Python",
+      "topics": [
+        "RAG"
+      ],
+      "dateCreated": "2026-05-04T16:36:24Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "freeCodeCamp/freeCodeCamp",
+      "owner": "freeCodeCamp",
+      "repo": "freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "githubUrl": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "trendshiftUrl": "https://trendshift.io/repositories/1778",
+      "language": "TypeScript",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2014-12-24T17:49:19Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "omnigent-ai/omnigent",
+      "owner": "omnigent-ai",
+      "repo": "omnigent",
+      "description": "Run a coding or knowledge-work agent on your laptop, pick it back up from your phone, and share the live session with a teammate. One command stands up a local agent server with a terminal UI and a web UI — so the same session is reachable from your terminal, your browser, and your phone",
+      "githubUrl": "https://github.com/omnigent-ai/omnigent",
+      "trendshiftUrl": "https://trendshift.io/repositories/51997",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-06-11T12:18:13Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "iptv-org/iptv",
+      "owner": "iptv-org",
+      "repo": "iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "githubUrl": "https://github.com/iptv-org/iptv",
+      "trendshiftUrl": "https://trendshift.io/repositories/730",
+      "language": "TypeScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2018-11-14T22:00:57Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-09T19:45:18Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "farion1231/cc-switch",
+      "owner": "farion1231",
+      "repo": "cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+      "githubUrl": "https://github.com/farion1231/cc-switch",
+      "trendshiftUrl": "https://trendshift.io/repositories/15372",
+      "language": "Rust",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2025-08-04T14:16:16Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "agentscope-ai/QwenPaw",
+      "owner": "agentscope-ai",
+      "repo": "QwenPaw",
+      "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+      "githubUrl": "https://github.com/agentscope-ai/QwenPaw",
+      "trendshiftUrl": "https://trendshift.io/repositories/25882",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills",
+        "Local LLM",
+        "Chatbot",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-02-24T03:42:56Z"
+    }
+  ]
+}
