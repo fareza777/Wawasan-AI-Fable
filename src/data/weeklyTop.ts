@@ -273,6 +273,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Memory-evolving & local-first: agent belajar dari interaksi dan reflect pengalaman, sementara data memory tetap di mesin/cloud milik sendiri (no third-party hosting) — menjawab kekhawatiran privasi AI asisten pribadi.",
     ],
   },
+  "Kilo-Org/kilocode": {
+    description:
+      "Platform agentik engineering open-source all-in-one — coding agent untuk VS Code, JetBrains, dan CLI yang support 500+ model AI (Claude, GPT, Gemini) tanpa lock-in vendor.",
+    highlights: [
+      "Coding agent open-source yang support 500+ model AI (Claude Sonnet, GPT, Gemini, dll) lewat satu antarmuka — tidak terkunci ke vendor tertentu, tinggal switch model sesuai task dan budget.",
+      "Tersedia di tiga permukaan sekaligus: extension VS Code, plugin JetBrains, dan CLI standalone — agent yang 'menemani di mana pun kamu kerja', bukan salah satu saja.",
+      "Fitur lengkap agentik: inline autocomplete, browser automation, refactor otomatis, custom mode (planning/coding/debugging), sampai code review otomatis untuk pull request lewat cloud workflow.",
+      "Berguna untuk developer yang ingin kontrol penuh atas tool AI coding-nya — tidak mau bergantung ke Copilot atau Cursor saja, atau butuh workflow agentik yang bisa di-host sendiri dan dikustomisasi.",
+    ],
+  },
+  "DeusData/codebase-memory-mcp": {
+    description:
+      "Mesin code intelligence tercepat untuk AI coding agent — index repo jadi knowledge graph via tree-sitter dalam milidetik, Linux kernel (28M LOC) selesai 3 menit, ships sebagai single static binary.",
+    highlights: [
+      "MCP server yang meng-index codebase jadi knowledge graph persisten (fungsi, kelas, call chain, HTTP route, cross-service link) pakai tree-sitter + Hybrid LSP — repo rata-rata selesai dalam milidetik, Linux kernel 28M LOC hanya 3 menit.",
+      "Dukungan 158 bahasa via tree-sitter, plus semantic type resolution untuk Python, TypeScript, Go, Rust, Java, C++, dan 6 bahasa lain — bukan text search, tapi pemahaman struktur kode yang bisa di-query lewat Cypher on the fly.",
+      "Hemat 99% token dibanding pendekatan file-reading mentah — agent cuma query 'di mana fungsi X dipanggil dan apa caller-nya' daripada harus baca satu-satu file, mempercepat iterasi coding agentik secara drastis.",
+      "Ships sebagai satu static binary (macOS/Linux/Windows) dengan auto-install ke Claude Code, Codex CLI, ChatGPT, Cursor, dan lain-lain — plug-and-play, zero dependency, plus UI visualisasi graph-nya sendiri.",
+    ],
+  },
+  "github/spec-kit": {
+    description:
+      "Toolkit spec-driven development resmi dari GitHub — bikin spec, plan, dan task lebih dulu sebelum coding, biar coding agent (Copilot, Claude Code, Gemini CLI) implement dari brief yang jelas, bukan dari vibe-coding.",
+    highlights: [
+      "Toolkit open-source dari GitHub yang memperkenalkan workflow 'Specify → Plan → Tasks → Implement' — coding agent tidak lagi menebak dari prompt pendek, tapi dari dokumen PRD + technical plan + task breakdown yang sudah disusun manusia.",
+      "Bisa dipasang ke coding agent populer (GitHub Copilot, Claude Code, Gemini CLI) lewat perintah `/speckit.specify`, `/speckit.plan`, `/speckit.tasks` — workflow spec-driven jadi format standar lintas IDE dan CLI, bukan kebiasaan satu tool saja.",
+      "Mengatasi masalah klasik 'looks right but doesn't work' — dengan spec yang eksplisit, output agent lebih jarang meleset karena brief-nya jelas, traceability keputusan ada di dokumen, dan perubahan di-spec dulu sebelum kode.",
+      "Cocok untuk tim engineering yang ingin scale pemakaian coding agent — bukan hanya demo one-shot, tapi workflow reproducible yang bisa di-review, di-share, dan di-onboard-kan ke developer baru dengan kurva belajar landai.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
