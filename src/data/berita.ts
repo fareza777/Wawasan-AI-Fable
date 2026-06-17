@@ -577,6 +577,47 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "wamenkomdigi-aturan-ai-diusulkan-dalam-bentuk-undang-undang",
+    title: "Regulasi AI Berlapis: Perpres Jalan Pintas, Undang-Undang Janji Panjang",
+    excerpt:
+      "Wamenkomdigi Nezar Patria menyebut Baleg DPR mengusulkan regulasi AI dalam bentuk undang-undang — sementara Peta Jalan AI Nasional menunggu tanda tangan Presiden.",
+    category: "Opini",
+    date: "2026-06-18",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Di sebuah sesi tanya jawab di Indonesia AI Ethics Summit, Rabu pekan lalu, Wakil Menteri Komunikasi dan Digital Nezar Patria melontarkan satu kalimat yang lebih politis dari yang terlihat di permukaan: Badan Legislasi DPR, katanya, secara informal mengusulkan agar Indonesia mulai mengkaji penyusunan Undang-Undang Kecerdasan Artifisial. Bukan dalam bentuk surat keputusan, bukan Peraturan Pemerintah, bukan pula sekedar surat edaran — melainkan undang-undang, setara dengan UU Perlindungan Data Pribadi yang sudah lebih dulu berlaku.",
+          "Sekilas ini terdengar seperti pengumuman reguler tentang kebijakan. Padahal, di baliknya tersimpan satu pertanyaan besar yang akan menentukan seperti apa lanskap AI Indonesia satu dekade ke depan: apakah cukup dengan Peraturan Presiden Peta Jalan AI Nasional yang tinggal menunggu tanda tangan di Sekretariat Negara, atau perlu naik kelas menjadi undang-undang?",
+        ],
+      },
+      {
+        heading: "Kenapa Perpres tidak cukup untuk jangka panjang?",
+        paragraphs: [
+          "Logika pemerintah memilih Perpres untuk tahap awal cukup jelas: perkembangan AI bergerak terlalu cepat untuk dikejar oleh proses legislasi yang membutuhkan kajian panjang, harmonisasi lintas-kementerian, dan ratifikasi DPR. Perpres cukup untuk merespons enam sampai dua belas bulan ke depan, terutama untuk hal-hal operasional seperti peta jalan, pembentukan komite etika, dan pedoman adopsi di sektor publik.",
+          "Tapi Perpres punya kelemahan struktural. Ia bisa direvisi atau dicabut tanpa melewati parlemen. Ketika menyangkut hal-hal mendasar — misalnya kewajiban audit algoritma untuk sistem yang dipakai publik, atau batasan penggunaan AI untuk keputusan yang memengaruhi hak warga (penilaian kredit, rekrutmen ASN, seleksi bantuan sosial) — fondasi hukumnya terasa tipis kalau hanya berdiri di atas Perpres. Regulasi sefundamental itu biasanya membutuhkan payung undang-undang supaya tahan banting terhadap ganti menteri, ganti presiden, atau pergeseran prioritas politik.",
+          "Dalam pengujian editorial Wawasan AI, ini bukan debat akademis. Ini soal bagaimana seorang ASN di Dinas Sosial yang akan menggunakan AI untuk memverifikasi kelayakan penerima bansos akan merujuk dasar hukum mana: Perpres yang bisa berganti di tengah jalan, atau UU yang memberikan kepastian lebih lama?",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya mengusulkan undang-undang AI?",
+        paragraphs: [
+          "Usulan Baleg DPR, menurut Nezar, masih dalam tahap kaji-ulang dan disampaikan secara informal. Artinya, belum ada naskah akademik, belum ada Daftar Inventarisasi Masalah, dan belum ada tim penyusun yang dianggarkan. Yang ada adalah sinyal politik: parlemen melihat perlu ada aturan yang lebih kuat untuk AI, di level yang sama dengan UU PDP atau UU ITE.",
+          "Kalau serius diwujudkan, undang-undang AI pada akhirnya akan mengatur setidaknya empat hal: pertama, definisi dan klasifikasi sistem AI berdasarkan tingkat risiko (low-risk, limited-risk, high-risk) — pola yang mulai menjadi konsensus global lewat EU AI Act. Kedua, kewajiban transparansi untuk sistem yang dipakai publik, termasuk hak warga untuk tahu ketika keputusan yang menyangkut dirinya dibuat atau dibantu oleh algoritma. Ketiga, perlindungan terhadap praktik diskriminatif dan penggunaan data yang melanggar UU PDP. Keempat, tata kelola internal — siapa yang mengawasi, siapa yang punya otoritas memberi sanksi, dan bagaimana jalur bandingnya.",
+          "Tahapannya pun tidak singkat. UU PDP butuh hampir satu dekade dari naskah akademik awal sampai disahkan. Kalau UU AI dimulai kaji-ulang di 2026, target realistisnya baru bisa berlaku penuh di 2029 atau 2030. Artinya, untuk empat tahun ke depan, Perpres akan tetap menjadi payung utama. Waktunya harus dipakai sebaik-baiknya untuk uji coba, eksperimentasi, dan akumulasi bukti yang akan dipakai sebagai input naskah akademik.",
+        ],
+      },
+      {
+        heading: "Yang patut dicermati enam sampai dua belas bulan ke depan",
+        paragraphs: [
+          "Ada tiga indikator yang layak dipantau. Pertama, apakah Peta Jalan AI Nasional benar-benar keluar sebagai Perpres dalam semester kedua 2026 — kalau tidak, ada sinyal bahwa prioritas politik bergeser. Kedua, apakah Baleg DPR secara resmi memasukkan AI ke dalam Prolegnas (Program Legislasi Nasional) untuk periode lima tahun berikutnya — kalau iya, maka kereta UU AI benar-benar mulai jalan. Ketiga, apakah muncul yurisprudensi atau putusan penting dari pengadilan di Indonesia yang menyentuh AI, misalnya kasus sengketa konsumer yang diputus menggunakan AI sebagai asesor, atau gugatan terhadap diskriminasi algoritmik di platform lowongan kerja. Putusan-putusan seperti ini sering kali menjadi pemicu percepatan legislasi, sama seperti kasus di Eropa yang menjadi katalis EU AI Act.",
+          "Untuk pekerja dan pelaku usaha di Indonesia, implikasinya praktis: mulailah memperhatikan bukan hanya fitur AI yang dipakai, tetapi juga jenis-jenis keputusan yang mulai diambil atau dibantu oleh AI. Apakah vendor yang kamu pakai bisa menjelaskan data apa yang dipakai untuk melatih modelnya? Apakah ada hak untuk meminta penjelasan ketika keputusan otomatis diambil terhadapmu? Apakah ada jalur untuk memperbaikinya kalau hasilnya keliru? Pertanyaan-pertanyaan ini — yang terdengar seperti jargon — akan semakin sering muncul di kehidupan sehari-hari, dari proses lamaran kerja sampai pengajuan KPR. Memahaminya sekarang akan menghemat banyak waktu di kemudian hari.",
+          "Yang jelas, satu hal sudah pasti: AI tidak akan diatur dengan baik kalau hanya mengandalkan niat baik satu pihak. Butuh regulasi yang cukup kuat untuk menahan penyalahgunaan, cukup fleksibel untuk tidak membunuh inovasi, dan cukup jelas untuk ditegakkan. Apapun bentuk akhirnya — Perpres, UU, atau kombinasi keduanya — yang dibutuhkan Indonesia bukan regulasi tercepat, melainkan regulasi yang tahan uji satu dekade.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
