@@ -303,6 +303,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Cocok untuk tim engineering yang ingin scale pemakaian coding agent — bukan hanya demo one-shot, tapi workflow reproducible yang bisa di-review, di-share, dan di-onboard-kan ke developer baru dengan kurva belajar landai.",
     ],
   },
+  "OpenCut-app/OpenCut": {
+    description:
+      "Editor video open-source alternatif CapCut untuk web, desktop, dan mobile — dibangun ulang dengan Rust core, arsitektur plugin-first, dan MCP server untuk AI agent.",
+    highlights: [
+      "Alternatif CapCut yang sepenuhnya open-source (MIT) dan gratis — target ambisius: 'satu codebase untuk web, desktop, dan mobile' lewat Rust core lintas platform.",
+      "Sedang ditulis ulang dari nol dengan Editor API dan arsitektur plugin-first — pihak ketiga bisa bikin plugin resmi (transisi, efek, encoder) yang jalan mulus lintas platform.",
+      "Roadmap mencakup MCP server, headless mode untuk otomatisasi rendering batch, dan scripting tab di dalam editor — dirancang supaya AI agent bisa akses timeline lewat protokol standar.",
+      "Relevan untuk content creator dan tim video yang bosan lock-in CapCut/Premiere — ada backing sponsor (fal.ai) sehingga sustainability-nya bukan pertanyaan, dan 57k+ bintang di GitHub dalam setahun.",
+    ],
+  },
+  "google-research/timesfm": {
+    description:
+      "Time-series foundation model open-source dari Google Research — pretrained untuk forecasting deret waktu apa pun, dengan checkpoint di Hugging Face dan integrasi BigQuery ML.",
+    highlights: [
+      "Foundation model dari Google Research khusus time-series forecasting (TimesFM = Time Series Foundation Model) — pendekatan decoder-only, ICML 2024, dan sudah sampai versi 2.5 di Juni 2026.",
+      "Cara pakainya sangat praktis: 'feed' data deret waktu (sales, sensor, trafik, saham) → dapat prediksi multi-step tanpa harus training model dari awal — 'pretrained untuk forecasting, bukan dilatih ulang per use case'.",
+      "Sudah dipakai di produk Google internal: BigQuery ML (forecasting via SQL), Google Sheets (forecast di spreadsheet bisnis), dan Vertex Model Garden (endpoint agentik untuk panggil dari workflow apa pun).",
+      "Dilengkapi Hugging Face checkpoint, dokumentasi finetuning dengan PEFT/LoRA, dan AGENTS.md + SKILL.md — coding agent yang butuh kemampuan forecasting deret waktu bisa langsung pakai lewat protokol standar.",
+    ],
+  },
+  "EpicGames/lore": {
+    description:
+      "Sistem version control generasi baru buatan Epic Games — content-addressed, Merkle tree, dioptimasi untuk file biner besar (game asset, film, model ML) dengan SDK multi-bahasa.",
+    highlights: [
+      "VCS open-source dari Epic Games (MIT) yang dirancang khusus untuk aset biner besar — beda dari Git yang struggle sama file besar, Lore pakai content-addressed storage, Merkle tree, dan chunking untuk deduplication.",
+      "Sparse on-demand hydration: workspace tidak perlu download semua aset di awal, cukup fetch chunk yang sedang dibuka — krusial untuk repo game/film/model ML yang ukurannya ratusan GB.",
+      "Server-side architecture dengan caching dan locking yang scalable — tim besar (developer game, studio VFX) bisa kolaborasi tanpa bottleneck, plus 'free branching' yang ringan seperti di Git tapi untuk binary.",
+      "SDK resmi untuk C/C++, C#, Rust, Go, Python, JavaScript — sama persis stack yang dipakai tim Unreal dan tool AI modern, sehingga integrasi ke pipeline yang sudah ada relatif mulus.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
