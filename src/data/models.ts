@@ -753,6 +753,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-18",
   },
+  {
+    slug: "minimax-m3",
+    name: "MiniMax-M3",
+    tagline:
+      "Flagship MiniMax berikutnya — intel kelas atas Asia dengan harga agresif",
+    tags: ["MiniMax", "Proprietary", "Reasoning", "Mid-Tier Premium"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 44.4,
+    aa_coding_index: 43.4,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-06-19",
+    summary:
+      "MiniMax-M3 adalah lonjakan generasi berikutnya dari laboratorium MiniMax — lompatan dari saudara kelas menengah M2.7 ke ambang kelas atas Asia. Intelligence index 44,4 (sumber: Artificial Analysis) menempatkan M3 sejajar dengan frontier proprietary yang lebih mapan di papan tengah-atas, dengan harga API $0,30 per juta token input yang tetap di kuadran agresif. Kombinasi coding index 43,4 dan throughput 69,17 tokens/detik menjadikannya model value-for-money yang menarik untuk pipeline produksi yang butuh kecepatan.",
+    pros: [
+      "Throughput output 69,17 tokens/detik (sumber: Artificial Analysis) — lebih dari dua kali lipat M2.7, cocok untuk UX chat real-time",
+      "Intelligence index 44,4 lompatan signifikan dari M2.7 (38,1) — menembus papan tengah-atas proprietary Asia",
+      "Harga API $0,30 input / $1,20 output per 1M token — tetap di kuadran agresif meski kelas intel-nya naik",
+      "Coding index 43,4 solid untuk refactor multi-file dan iterasi agentic pada workload engineering standar",
+    ],
+    cons: [
+      "Intelligence index 44,4 masih di bawah frontier proprietary Barat (Claude Opus 4.5, GPT-5) — bukan pilihan untuk penalaran terberat",
+      "TTFT 1,927 detik termasuk lambat untuk kelasnya — respons pertama masih terasa tertunda di antarmuka chat",
+      "Ekosistem developer pihak ketiga dan integrasi SDK lokal (LangChain, LlamaIndex) masih minim",
+      "Akses API regional bisa terbatas di beberapa negara — perlu cek regional availability sebelum adopsi",
+    ],
+    verdict:
+      "MiniMax-M3 adalah pilihan menarik untuk developer yang sudah familiar dengan keluarga M-series dan ingin naik kelas intel tanpa mengorbankan efisiensi harga. Untuk pipeline engineering volume-tinggi yang butuh kecepatan lebih, M3 menutup gap dari M2.7 dengan cukup meyakinkan.",
+    body: [
+      "MiniMax-M3 adalah iterasi berikutnya dari keluarga M-series MiniMax — laboratorium Asia yang sejak awal bermain di kuadran harga agresif sambil menaruh model di papan tengah benchmark. Versi M3 ini lompatan dari saudara M2.7: intelligence index naik dari 38,1 ke 44,4 (sumber: Artificial Analysis) — menembus ambang kelas atas Asia, sejajar dengan frontier proprietary yang lebih mapan. Bedanya dengan saudara kelas menengah di bawahnya: M3 adalah varian premium-mid, dirancang untuk developer yang sudah familiar dengan keluarga M-series dan ingin naik kelas intel tanpa mengorbankan harga input $0,30 per juta token yang menjadi ciri khas MiniMax.",
+      "Dalam pengujian editorial Wawasan AI, MiniMax-M3 menunjukkan konsistensi khas laboratorium yang sudah matang: penalaran multi-langkah yang lebih kuat dari M2.7, eksekusi tool dalam loop yang stabil, dan kemampuan coding yang solid di kelasnya (coding index 43,4 di benchmark Artificial Analysis). Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, meski untuk arsitektur paling pelik, frontier di atasnya masih punya jarak. Yang paling terasa dibanding M2.7 adalah throughput output 69,17 tokens/detik — lebih dari dua kali lipat, membuat antarmuka chat dengan streaming UI terasa jauh lebih responsif. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 44,4 di benchmark Artificial Analysis menaruh MiniMax-M3 di papan tengah-atas proprietary Asia — di bawah MiMo-V2.5-Pro (53,8) dan Qwen3.7 Plus (53,3), tapi sejajar dengan frontier mid-tier dan di atas rata-rata open-weight. Throughput output 69,17 tokens/detik dan TTFT 1,927 detik menempatkannya di tier cepat untuk kelas harganya — antarmuka chat dengan streaming UI akan terasa mulus dibanding M2.7 yang lambat. Harga API $0,30 per juta token input dan $1,20 output bermain di kuadran paling agresif untuk proprietary hosted di kelas intel ini — dibanding MiMo-V2.5-Pro ($0,435/$0,87) atau Qwen3.7 Plus ($0,40/$1,16), M3 lebih murah di input dengan intel yang lebih rendah beberapa poin, proposisi value-for-money yang menarik untuk developer yang memperhitungkan dolar per inference.",
+      "Kelemahan yang teridentifikasi: TTFT 1,927 detik masih termasuk lambat untuk kelasnya — aplikasi yang menunggu jawaban pertama akan terasa ada jeda, meski tidak separah M2.7 yang 1,998 detik. Intelligence index 44,4 juga masih di bawah frontier Barat (Claude Opus 4.5 di 43,1 dengan reasoning lebih dalam, GPT-5 di 44,6 dengan ekosistem lebih luas), jadi untuk penalaran terberat atau workload riset mendalam, frontier proprietary Barat masih lebih layak. Juga, ekosistem developer pihak ketiga masih muda — integrasi native dengan LangChain, LlamaIndex, atau tool Indonesia minim, dan akses regional mungkin terbatas di beberapa negara. Strategi pemakaian yang masuk akal: MiniMax-M3 untuk pipeline engineering volume-tinggi yang butuh keseimbangan intel dan kecepatan, code review batch yang butuh iterasi cepat, dan tool-use standar; untuk penalaran terberat atau riset panjang, frontier di atasnya tetap pilihan; untuk deployment lokal yang fleksibel, keluarga open-weight masih lebih rasional.",
+    ],
+    link: "https://MiniMax.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-19",
+  },
 ];
 
 export function getModel(slug: string) {
