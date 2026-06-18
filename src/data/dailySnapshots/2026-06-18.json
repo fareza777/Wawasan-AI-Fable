@@ -1,0 +1,161 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "18 Juni 2026",
+  "period": {
+    "date": "2026-06-18",
+    "label": "18 Juni 2026",
+    "path": "/repo/daily/2026/06/18"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-18T00:03:29.355Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "EpicGames/lore",
+      "owner": "EpicGames",
+      "repo": "lore",
+      "description": "Lore is a next-generation, open source revision control system",
+      "githubUrl": "https://github.com/EpicGames/lore",
+      "trendshiftUrl": "https://trendshift.io/repositories/57129",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-05-21T19:32:07Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "DeusData/codebase-memory-mcp",
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "githubUrl": "https://github.com/DeusData/codebase-memory-mcp",
+      "trendshiftUrl": "https://trendshift.io/repositories/23635",
+      "language": "C",
+      "topics": [
+        "AI coding assistant",
+        "AI infrastructure",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-24T22:01:00Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Kilo-Org/kilocode",
+      "owner": "Kilo-Org",
+      "repo": "kilocode",
+      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "githubUrl": "https://github.com/Kilo-Org/kilocode",
+      "trendshiftUrl": "https://trendshift.io/repositories/14151",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-03-10T15:34:26Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "github/spec-kit",
+      "owner": "github",
+      "repo": "spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "githubUrl": "https://github.com/github/spec-kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/15463",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-21T22:54:31Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "google-research/timesfm",
+      "owner": "google-research",
+      "repo": "timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "githubUrl": "https://github.com/google-research/timesfm",
+      "trendshiftUrl": "https://trendshift.io/repositories/10050",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2024-04-29T21:26:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-09T19:45:18Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "agentscope-ai/QwenPaw",
+      "owner": "agentscope-ai",
+      "repo": "QwenPaw",
+      "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+      "githubUrl": "https://github.com/agentscope-ai/QwenPaw",
+      "trendshiftUrl": "https://trendshift.io/repositories/25882",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills",
+        "Local LLM",
+        "Chatbot",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-02-24T03:42:56Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "omnigent-ai/omnigent",
+      "owner": "omnigent-ai",
+      "repo": "omnigent",
+      "description": "Run a coding or knowledge-work agent on your laptop, pick it back up from your phone, and share the live session with a teammate. One command stands up a local agent server with a terminal UI and a web UI — so the same session is reachable from your terminal, your browser, and your phone",
+      "githubUrl": "https://github.com/omnigent-ai/omnigent",
+      "trendshiftUrl": "https://trendshift.io/repositories/51997",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-06-11T12:18:13Z"
+    }
+  ]
+}

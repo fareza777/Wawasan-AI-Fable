@@ -531,6 +531,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-17",
   },
+  {
+    slug: "midjourney",
+    name: "Midjourney",
+    tagline: "Generator gambar AI dengan estetika paling halus di kelasnya",
+    tags: ["Midjourney", "Paid", "Image Gen", "Artistic"],
+    score: 9.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 9.7 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Midjourney adalah generator gambar AI yang sudah bertahan sebagai tolok ukur estetika sejak 2022. Versi 7 yang dirilis awal 2026 membawa text rendering yang akurat, Omni Reference untuk konsistensi objek lintas gambar, dan editor web bawaan dengan inpainting-outpainting — semua dalam satu langganan yang tidak menawarkan API publik resmi. Untuk hasil gambar yang langsung indah tanpa perlu banyak post-processing, Midjourney masih jadi pilihan pertama kreator, agency, dan tim branding yang mengejar look-and-feel, bukan sekadar fungsional.",
+    pros: [
+      "Kualitas estetik gambar konsisten di atas kompetitor — coherent lighting, tekstur, dan komposisi yang sulit ditiru DALL-E atau Flux untuk gaya artistik dan sinematik",
+      "Editor web bawaan (inpainting, outpainting, region vary, remix) yang menyatu dengan workflow generatif — tidak perlu lompat ke Photoshop untuk kebanyakan revisi",
+      "Omni Reference (baru di v7) menjaga konsistensi objek, produk, atau karakter di banyak frame berbeda, berguna untuk campaign dan storyboard",
+      "Komunitas Discord yang masih aktif jadi bank referensi gratis, parameter trick, dan curation — tidak ada tool image-gen lain yang punya basis kreator sebesar ini",
+      "Stealth Mode (Pro dan Mega) membuat hasil dan prompt tidak muncul di galeri publik, penting untuk klien agency dan kerja pra-rilis",
+    ],
+    cons: [
+      "Tidak punya API publik resmi — untuk integrasi aplikasi atau workflow otomatis, harus pakai middleware pihak ketiga dengan harga per-request lebih mahal",
+      "Bukan model open-weight: model proprietary dan bobot tertutup, sehingga tidak bisa di-fine-tune atau dijalankan lokal untuk data sensitif",
+      "Harga berbasis langganan bulanan bisa mahal untuk pemakaian sporadis — Basic $10 sebulan hanya dapat 3,3 jam Fast GPU dan tidak ada Relax Mode, sehingga gambar baru berhenti di tengah proses",
+      "Bergerak di luar gaya naturalistik semakin tergantung prompt engineering; pengguna baru sering butuh 10-20 iterasi untuk dapat hasil yang reliable di gaya tertentu",
+    ],
+    verdict:
+      "Standar emas untuk image generation artistik dan siap-pakai pada 2026. Pilih kalau prioritasmu adalah look-and-feel yang langsung matang dan kamu tidak butuh API atau self-host — catatan utamanya adalah harga dan ekosistem tertutup.",
+    body: [
+      "Dalam empat tahun sejak kemunculannya, Midjourney sudah menjadi sinonim untuk AI image generation kelas atas — bukan karena paling cepat atau paling murah, tapi karena hasilnya paling sering 'siap pakai' tanpa perlu banyak post-processing. Versi 7 yang stabil di 2026 menutup banyak keluhan generasi sebelumnya: text rendering di dalam gambar (logo, label, signage) sudah jauh lebih akurat, model lebih koheren untuk adegan multi-karakter, dan Omni Reference memungkinkan kreator menempelkan satu objek atau produk ke banyak komposisi berbeda dengan konsistensi yang sebelumnya hampir mustahil. Di sisi workflow, editor web bawaan dengan inpainting, outpainting, region vary, dan remix menghapus kebutuhan lompat ke Photoshop untuk sebagian besar revisi kreatif — semua terjadi di satu tab browser.",
+      "Dalam pengujian editorial, empat kemampuan Midjourney paling terasa bedanya dibanding DALL-E 3, Imagen 4, atau Flux. Pertama, kualitas estetik tetap superior untuk gaya-gaya yang menuntut kehalusan — sinematik, editorial fashion, fantasy art, dan ilustrasi komersial masih terlihat satu tingkat di atas kompetitor open-weight. Kedua, ekosistem kontrol prompt (parameter seperti --stylize, --chaos, --weird, --sref untuk style reference, --cref untuk character reference) memberi kreator granular control yang tidak ditemukan di tool lain. Ketiga, komunitas Discord — yang dulu jadi satu-satunya cara mengakses Midjourney — masih hidup dan jadi bank pengetahuan tacit terbaik untuk parameter trick dan curation prompt. Keempat, Stealth Mode di paket Pro ($60) dan Mega ($120) membuat hasil tidak muncul di galeri publik, fitur yang penting untuk agency, brand besar, dan pekerjaan pra-rilis yang butuh kerahasiaan.",
+      "Tentu ada kompromi substansial. Pertama, tidak seperti Stable Diffusion, Flux, atau Imagen yang merilis bobot model, Midjourney adalah proprietary closed-weight — tidak bisa di-fine-tune, tidak bisa dijalankan lokal untuk data klien yang sensitif, dan tidak bisa di-deploy di server internal. Kedua, tidak ada API publik resmi, sehingga workflow otomatis (mis. pipeline e-commerce yang generate ratusan variasi produk) harus lewat middleware pihak ketiga seperti ImaginePro atau EvoLink yang mengenakan biaya per-request dan menambah dependency. Ketiga, struktur harga berbasis langganan dengan GPU time membuat pemakaian sporadis terasa mahal — paket Basic $10 hanya memberikan 3,3 jam Fast GPU tanpa Relax Mode, sehingga eksperimen panjang sering mentok di tengah jalan; paket Standard $30 dengan Relax Mode adalah titik masuk yang lebih realistis untuk kreator reguler. Keempat, kendali prompt masih punya learning curve: pengguna baru sering butuh belasan iterasi untuk menguasai kombinasi style reference, weight, dan parameter sebelum bisa output yang reliable di gaya tertentu.",
+      "Untuk pengguna dan tim di Indonesia, implikasi Midjourney menarik di beberapa sisi. Harga langganan dalam dolar AS ditambah PPN 11 persen untuk transaksi luar negeri (bisa ditekan lewat kartu kredit atau e-wallet yang tidak menambah mark-up besar) menempatkan Midjourney di kelas menengah-atas untuk kreator solo, tetapi tetap masuk akal untuk agency, tim marketing, atau freelancer yang menjual jasa visual. Paket Standard $30 (sekitar Rp 480 ribu per bulan dengan kurs standar) sudah mencakup 15 jam Fast GPU plus Relax Mode unlimited, cukup untuk kebanyakan workflow kreatif aktif. Diskusi di komunitas Discord Bahasa Indonesia untuk Midjourney juga cukup aktif — banyak praktisi kreatif di Jakarta, Bandung, dan Yogyakarta yang berbagi preset dan workflow. Untuk pemula yang baru coba-coba, alternatif open-weight seperti Stable Diffusion 3.5 atau Flux.1-dev lewat ComfyUI tetap opsi lebih murah (modal kartu grafis) dan lebih fleksibel, meskipun kualitas estetiknya untuk gaya artistik kelas atas belum bisa menyamai Midjourney. Untuk brand yang butuh konsistensi visual di banyak aset, Omni Reference v7 adalah pembeda terbesar dibanding pesaing — fitur ini menghemat banyak waktu retouching ketika harus membuat campaign dengan karakter atau produk yang sama di banyak angle. Midjourney bukan tool yang paling fleksibel atau paling murah, tapi di 2026 ia masih jadi titik awal paling aman untuk siapa pun yang mengejar hasil gambar yang langsung siap dipakai, bukan eksperimen model.",
+    ],
+    link: "https://www.midjourney.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-18",
+  },
 ];
 
 export function getStack(slug: string) {
