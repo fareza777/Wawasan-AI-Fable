@@ -899,6 +899,56 @@ export const repos: Review[] = [
     updatedAt: "2026-06-18",
     featured: true,
   },
+  {
+    slug: "browser-use",
+    name: "Browser-Use",
+    tagline: "Bikin website bisa dikendalikan AI agent secara langsung",
+    tags: ["AI Agent", "Browser Automation", "Python", "Open Source"],
+    score: 9.0,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 9.0 },
+    ],
+    summary:
+      "Browser-Use adalah pustaka Python open-source yang menjadikan browser sebagai tool bawaan bagi AI agent: agent bisa melihat halaman, membaca elemen, mengisi formulir, mengklik tombol, dan menavigasi alur multi-halaman hanya dengan instruksi bahasa alami. Dengan hampir 100 ribu bintang, ia menjadi salah satu pondasi paling populer untuk agent yang benar-benar perlu berinteraksi dengan web dunia nyata.",
+    highlights: [
+      "Lebih dari 99 ribu bintang dan 11 ribu fork di GitHub — salah satu repositori AI paling cepat pertumbuhannya di 2025–2026",
+      "Abstraksi tinggi: agent menentukan langkah dalam bahasa alami, library yang menerjemahkannya ke aksi browser (klik, scroll, isi form, navigasi)",
+      "Berbasis Playwright — mendukung Chromium, Firefox, dan WebKit dengan kontrol penuh atas rendering dan event",
+      "Output terstruktur: elemen halaman diekstrak sebagai daftar actionable item dengan selector dan konteks visual",
+      "Dukungan multi-modal: agent bisa 'melihat' screenshot halaman dan menggabungkan penglihatan dengan teks untuk keputusan yang lebih akurat",
+      "Kompatibel dengan hampir semua LLM utama lewat API standar (OpenAI, Anthropic, Google, Ollama, Azure, dan lainnya)",
+      "Mode self-hosted sepenuhnya — jalankan browser dan model lokal tanpa data meninggalkan server sendiri",
+      "Lisensi MIT — bebas dipakai untuk riset, komersial, dan modifikasi internal",
+      "Ekosistem aktif: integrasi resmi dengan LangChain, LlamaIndex, dan platform agent lain",
+      "Cocok untuk otomasi riset, pengujian E2E berbasis AI, dan alur kerja internal yang sebelumnya hanya bisa dilakukan manusia",
+    ],
+    pros: [
+      "Konsep yang sangat pragmatis: agent benar-benar mengendalikan browser, bukan hanya memanggil API khusus — ini membuka hampir seluruh web sebagai tool",
+      "Pertumbuhan komunitas yang sangat cepat, integrasi dengan banyak framework agent lain, dan dokumentasi yang terus membaik",
+      "Lisensi MIT dan arsitektur terbuka membuatnya aman untuk pemakaian jangka panjang di lingkungan produksi",
+    ],
+    cons: [
+      "Browser automation pada dasarnya rapuh terhadap perubahan UI — selector dan layout situs bisa bikin agent gagal sampai diprompt ulang",
+      "Latensi dan biaya token lebih tinggi dibanding tool API-native: setiap aksi memerlukan pemrosesan visual atau teks dari model",
+      "Untuk halaman dengan proteksi anti-bot ketat (CAPTCHA, fingerprinting) perlu penyesuaian ekstra agar andal",
+    ],
+    verdict:
+      "Kalau Anda membangun AI agent yang perlu berinteraksi dengan website di luar API publik, Browser-Use adalah titik masuk paling pragmatis di 2026. Pondasi yang ringan, lisensi aman, dan momentum komunitas yang sulit diabaikan.",
+    body: [
+      "Sebelum ada library seperti Browser-Use, mengajarkan AI agent untuk berinteraksi dengan website berarti menulis scraper, parser, dan handler untuk setiap situs satu per satu. Browser-Use mengubah paradigma itu: agent cukup diberi instruksi dalam bahasa alami, lalu library menerjemahkannya menjadi aksi browser — klik tombol, isi formulir, ambil teks, navigasi ke URL berikutnya. Hampir 100 ribu bintang di GitHub dalam waktu kurang dari dua tahun adalah bukti bahwa pendekatan ini menjawab kebutuhan yang sangat nyata.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling meyakinkan adalah alur riset berbasis web: agent menelusuri direktori publik, membuka setiap halaman target, mengekstrak informasi yang relevan, lalu merangkumnya menjadi laporan terstruktur. Alur ini dulunya butuh scripting khusus untuk setiap situs, sekarang cukup didefinisikan sebagai tujuan dan langkah. Dipasangkan dengan model lewat Ollama, semuanya bisa berjalan di server lokal tanpa data keluar — nilai yang sangat relevan untuk organisasi di Indonesia yang menangani data riset sensitif.",
+      "Kekuatan terbesar Browser-Use ada pada ringkasannya. Ia tidak menggantikan framework agent lain, melainkan menambahkan kemampuan browser sebagai salah satu tool yang tersedia. Integrasi dengan LangChain, LlamaIndex, dan platform lain sudah tersedia secara resmi atau komunitas, sehingga ia masuk sebagai komponen, bukan platform baru yang harus dipelajari dari nol. Lisensi MIT menambah rasa aman untuk adopsi jangka panjang.",
+      "Batasan yang perlu dipahami: otomasi browser pada dasarnya sensitif terhadap perubahan UI. Situs yang sering memperbarui layout bisa membuat instruksi yang dulu berhasil tiba-tiba gagal. Namun untuk alur yang relatif stabil — portal internal, direktori publik, formulir yang tidak sering berubah — Browser-Use sudah lebih dari cukup dan menjadi salah satu fondasi paling praktis di ekosistem agent modern.",
+    ],
+    link: "https://github.com/browser-use/browser-use",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-19",
+    updatedAt: "2026-06-19",
+  },
 ];
 
 export function getRepo(slug: string) {
