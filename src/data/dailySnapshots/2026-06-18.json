@@ -1,44 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "18 Juni 2026",
-  "period": {
-    "date": "2026-06-18",
-    "label": "18 Juni 2026",
-    "path": "/repo/daily/2026/06/18"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-18T00:03:29.355Z",
+  "fetchedAt": "2026-06-18T06:20:46.805Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-06-12T00:52:37Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "EpicGames/lore",
-      "owner": "EpicGames",
-      "repo": "lore",
-      "description": "Lore is a next-generation, open source revision control system",
-      "githubUrl": "https://github.com/EpicGames/lore",
-      "trendshiftUrl": "https://trendshift.io/repositories/57129",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-05-21T19:32:07Z"
-    },
-    {
-      "rank": 3,
       "fullName": "DeusData/codebase-memory-mcp",
       "owner": "DeusData",
       "repo": "codebase-memory-mcp",
@@ -54,36 +23,80 @@
       "dateCreated": "2026-02-24T22:01:00Z"
     },
     {
-      "rank": 4,
-      "fullName": "Kilo-Org/kilocode",
-      "owner": "Kilo-Org",
-      "repo": "kilocode",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
-      "githubUrl": "https://github.com/Kilo-Org/kilocode",
-      "trendshiftUrl": "https://trendshift.io/repositories/14151",
+      "rank": 2,
+      "fullName": "OpenCut-app/OpenCut",
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "description": "The open-source CapCut alternative",
+      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
+      "trendshiftUrl": "https://trendshift.io/repositories/19761",
       "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2025-06-22T08:02:17Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
       "topics": [
         "AI agent",
         "AI coding assistant"
       ],
-      "dateCreated": "2025-03-10T15:34:26Z"
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-29T15:23:22Z"
     },
     {
       "rank": 5,
-      "fullName": "github/spec-kit",
-      "owner": "github",
-      "repo": "spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-      "githubUrl": "https://github.com/github/spec-kit",
-      "trendshiftUrl": "https://trendshift.io/repositories/15463",
-      "language": "Python",
+      "fullName": "EpicGames/lore",
+      "owner": "EpicGames",
+      "repo": "lore",
+      "description": "Lore is a next-generation, open source revision control system",
+      "githubUrl": "https://github.com/EpicGames/lore",
+      "trendshiftUrl": "https://trendshift.io/repositories/57129",
+      "language": "Rust",
       "topics": [
-        "AI coding assistant"
+        "File management"
       ],
-      "dateCreated": "2025-08-21T22:54:31Z"
+      "dateCreated": "2026-05-21T19:32:07Z"
     },
     {
       "rank": 6,
+      "fullName": "vercel/eve",
+      "owner": "vercel",
+      "repo": "eve",
+      "description": "The Framework for Building Agents",
+      "githubUrl": "https://github.com/vercel/eve",
+      "trendshiftUrl": "https://trendshift.io/repositories/57608",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-16T10:51:20Z"
+    },
+    {
+      "rank": 7,
       "fullName": "google-research/timesfm",
       "owner": "google-research",
       "repo": "timesfm",
@@ -95,38 +108,18 @@
       "dateCreated": "2024-04-29T21:26:26Z"
     },
     {
-      "rank": 7,
-      "fullName": "obra/superpowers",
-      "owner": "obra",
-      "repo": "superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "githubUrl": "https://github.com/obra/superpowers",
-      "trendshiftUrl": "https://trendshift.io/repositories/17415",
-      "language": "Shell",
-      "topics": [
-        "AI agent",
-        "AI coding assistant",
-        "AI skills"
-      ],
-      "dateCreated": "2025-10-09T19:45:18Z"
-    },
-    {
       "rank": 8,
-      "fullName": "agentscope-ai/QwenPaw",
-      "owner": "agentscope-ai",
-      "repo": "QwenPaw",
-      "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
-      "githubUrl": "https://github.com/agentscope-ai/QwenPaw",
-      "trendshiftUrl": "https://trendshift.io/repositories/25882",
-      "language": "Python",
+      "fullName": "makeplane/plane",
+      "owner": "makeplane",
+      "repo": "plane",
+      "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+      "githubUrl": "https://github.com/makeplane/plane",
+      "trendshiftUrl": "https://trendshift.io/repositories/1641",
+      "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "AI skills",
-        "Local LLM",
-        "Chatbot",
         "Self-hosted"
       ],
-      "dateCreated": "2026-02-24T03:42:56Z"
+      "dateCreated": "2022-11-19T12:55:01Z"
     },
     {
       "rank": 9,
@@ -144,18 +137,19 @@
     },
     {
       "rank": 10,
-      "fullName": "omnigent-ai/omnigent",
-      "owner": "omnigent-ai",
-      "repo": "omnigent",
-      "description": "Run a coding or knowledge-work agent on your laptop, pick it back up from your phone, and share the live session with a teammate. One command stands up a local agent server with a terminal UI and a web UI — so the same session is reachable from your terminal, your browser, and your phone",
-      "githubUrl": "https://github.com/omnigent-ai/omnigent",
-      "trendshiftUrl": "https://trendshift.io/repositories/51997",
-      "language": "Python",
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
       "topics": [
         "AI agent",
-        "AI workflow"
+        "AI coding assistant",
+        "AI skills"
       ],
-      "dateCreated": "2026-06-11T12:18:13Z"
+      "dateCreated": "2025-10-09T19:45:18Z"
     }
   ]
 }
