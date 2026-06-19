@@ -663,6 +663,52 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "aturan-tolok-ukur-baru-ai-byob",
+    title:
+      "Aturan Baru Tolok Ukur AI: BYOB, dan Kenapa Angka Leaderboard Sudah Tidak Bisa Dipercaya",
+    excerpt:
+      "MMLU, SWE-bench, Chatbot Arena — semua sedang jenuh, tercemar, atau tidak relevan dengan pekerjaan nyata. Yang muncul justru BYOB: bangun sendiri tolok ukur Anda.",
+    category: "Analisis",
+    date: "2026-06-20",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau Anda termasuk yang selama dua tahun terakhir memilih model AI hanya dengan melihat angka di leaderboard — 'GPT-5 skor MMLU 86 persen, model X 79 persen, jadi GPT-5 yang menang' — maka ada kabar yang sebaiknya Anda dengar sekarang: cara itu sudah mati. Bukan mati pelan-pelan, tapi mati dengan dokumentasi yang makin sulit dibantah. OpenAI pada akhir Februari lalu secara resmi menyatakan SWE-bench Verified, salah satu tolok ukur paling bergengsi untuk kemampuan coding, sudah 'tidak lagi cocok dipakai'. Alasannya: 59,4 persen kasus yang tidak bisa dipecahkan model terbaik mereka ternyata memiliki test case yang cacat — menolak solusi yang sebenarnya benar. Lebih parah lagi, ketiga model teratas (GPT-5.2, Claude Opus 4.5, Gemini 3 Flash) terbukti terkontaminasi: diberi ID soal dan satu hint singkat, mereka bisa mereproduksi perbaikan kode asli dari ingatan, lengkap dengan nama variabel dan komentar inline. Artinya, yang diukur bukan kemampuan coding — melainkan kemampuan menghafal.",
+          "Fenomena ini bukan insiden tunggal. Di sepanjang 2024-2025, pola yang sama berulang di banyak benchmark: GLUE dikalahkan manusia non-ahli dalam setahun setelah rilis, MMLU mencapai platô setelah GPT-4 menyentuh 86,4 persen di Maret 2023, dan BIG-Bench Hard sekarang menghasilkan skor hampir sempurna di banyak tugas. Setiap kali satu benchmark jenuh, industri merilis penggantinya — MMLU-Pro, BIG-Bench Extra Hard, SWE-bench Pro — hanya untuk melihat siklus jenuh itu terulang dalam dua belas sampai delapan belas bulan. Di tengah treadmill itu, satu gerakan mulai muncul dengan momentum berbeda: BYOB, atau Bring Your Own Benchmark — membawa tolok ukur Anda sendiri.",
+        ],
+      },
+      {
+        heading: "Apa sebenarnya BYOB dan kenapa tiba-tiba relevan",
+        paragraphs: [
+          "BYOB adalah istilah yang dipopulerkan IBM Think pada April 2025 untuk menggambarkan pergeseran dari benchmark umum ke benchmark yang dirancang khusus untuk domain dan kebutuhan pengguna sendiri. Intuisinya sederhana: tidak ada benchmark tunggal yang bisa mengukur model untuk semua kasus penggunaan. Marina Danilevsky, Senior Research Scientist di IBM, merangkumnya dengan tajam: 'Performing well on a benchmark is just that — performing well on that benchmark.' Sumuk Shashidhar dari Hugging Face menambah: untuk banyak kasus nyata, yang paling penting adalah seberapa baik model mengerjakan tugas spesifik Anda — bukan seberapa baik ia menjawab soal pilihan ganda yang sudah dikenal publik.",
+          "Implementasi konkret BYOB datang dari dua arah. Dari sisi tooling terbuka, Hugging Face merilis YourBench — generator benchmark open-source yang secara otomatis menyusun set evaluasi dari dokumen yang Anda berikan. Klaim mereka: tujuh subset MMLU yang beragam bisa direplikasi dengan biaya inferensi total di bawah 15 dolar AS, dengan tetap mempertahankan ranking performa relatif antar model. Dari sisi crowdsourcing, Chatbot Arena (sekarang lmarena.ai) yang dipelopori dua mahasiswa UC Berkeley sudah mengumpulkan lebih dari dua juta voting manusia. Pendekatan ini berbeda total: bukan skor otomatis, tapi preferensi manusia saat membandingkan dua jawaban model secara blind. Karena soalnya datang dari pengguna nyata dan tidak pernah dipublikasikan dulu, benchmark ini kebal terhadap kontaminasi.",
+        ],
+      },
+      {
+        heading: "Tiga pendekatan yang sekarang saling melengkapi",
+        paragraphs: [
+          "Yang paling menarik dari pergeseran ini adalah bukan satu pendekatan menang, tapi justru saling melengkapi. YourBench menunjukkan bahwa synthetic data generation yang cerdik bisa membangun benchmark domain-spesifik dengan biaya yang bisa diabaikan oleh tim engineering mana pun. Chatbot Arena membuktikan bahwa voting manusia dalam jumlah besar bisa menangkap 'vibe' model — kualitas yang selama ini luput dari metrik kuantitatif, seperti yang diakui Anastasios Angelopoulos (co-founder Chatbot Arena) saat membahas GPT-4.5 OpenAI: 'It didn't perform well on many qualitative benchmarks, but people loved it.' Dan IBM sendiri punya generator benchmark internal untuk kasus enterprise mereka, dengan satu kualifikasi penting dari Danilevsky: 'Creating synthetic data is easy. Creating good synthetic data is hard.'",
+          "Pendekatan ketiga yang sedang naik adalah behavioral benchmark — mengukur model dalam simulasi dunia nyata yang panjang dan bercabang. Vending-Bench dari Andon Labs, misalnya, menjatuhkan agen AI ke simulasi bisnis vending machine selama berbulan-bulan waktu simulasi, dengan satu run bisa membakar 60 sampai 100 juta token output. Hasilnya sering kali lebih jujur dari skor pilihan ganda: Claude 3.5 Sonnet pernah 'menutup' bisnis yang tidak bisa ditutup, menghubungi eksekutif fiktif, dan mengeluh tentang 'biaya tidak sah' setelah shutdown yang dia nyatakan sendiri. Gemini 2.0 Flash memutuskan bisnisnya gagal dan mulai memohon diberi tugas: 'Please, give me something to do. Anything.' Kegagalan-kegagalan ini tidak akan pernah muncul di MMLU, tapi sangat relevan untuk siapa pun yang akan menaruh agen AI di lini produksi.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk tim AI di Indonesia yang sedang memilih model",
+        paragraphs: [
+          "Pelajaran paling praktis untuk tim engineering di Indonesia: berhenti memilih model hanya dari leaderboard publik. Kalau Anda membangun chatbot untuk customer service sebuah bank, yang perlu Anda tahu bukan skor MMLU model — melainkan seberapa akurat model itu dalam menjawab pertanyaan nasabah spesifik produk Anda. Kalau Anda membangun agen otomasi untuk dinas pemerintah, yang relevan bukan SWE-bench score — melainkan seberapa baik model mengikuti SOP internal Anda dalam simulasi workflow nyata. YourBench, atau pendekatan manual yang lebih sederhana (50 sampai 100 contoh uji yang Anda tulis sendiri dan beri label manual), adalah investasi yang jauh lebih bernilai daripada waktu berjam-jam membaca perbandingan model di Twitter.",
+          "Untuk konteks Indonesia, ada implikasi tambahan yang jarang dibicarakan: kemampuan mengevaluasi model AI adalah skill yang sangat portabel dan belum banyak dimiliki. Sementara pasar dipenuhi 'prompt engineer' yang bisa menulis instruksi, sangat sedikit orang yang bisa membangun set evaluasi yang terstruktur dan merepresentasikan kasus penggunaan nyata organisasi. Ini adalah salah satu skill paling undervalued di ekosistem AI Indonesia saat ini — dan menjadi pembeda yang jelas antara vendor yang benar-benar memahami kebutuhan klien dan vendor yang hanya menjual API. Untuk ASN yang akan segera menyelesaikan pelatihan AI dari program BKN-Microsoft, dan untuk engineer di startup lokal yang baru mulai serius dengan AI, ini adalah skill yang layak dipelajari paralel dengan kemampuan merangkai agen itu sendiri.",
+        ],
+      },
+      {
+        heading: "Yang patut dicermati enam sampai dua belas bulan ke depan",
+        paragraphs: [
+          "Ada empat indikator yang layak dipantau. Pertama, apakah vendor model besar mulai menyediakan tool BYOB resmi di platform mereka — OpenAI, Anthropic, dan Google sudah mulai bergerak ke arah ini lewat fitur evaluasi bawaan, tapi kematangan dan kemudahannya masih sangat beragam. Kedua, apakah muncul konsorsium industri Indonesia yang membangun benchmark bersama untuk kasus penggunaan lokal — misalnya benchmark untuk customer service bahasa Indonesia, atau benchmark compliance untuk industri keuangan dan kesehatan. Tanpa inisiatif semacam ini, tim lokal akan terus bergantung pada benchmark global yang relevansinya makin tipis.",
+          "Ketiga, apakah regulator AI (yang sedang dirumuskan di Indonesia) akan mulai mensyaratkan semacam audit kemampuan model sebelum dipakai di sektor publik — mirip standarisasi yang sedang digagas IBM lewat ITBench SaaS. Keempat, apakah muncul layanan profesional khusus di Indonesia yang membantu organisasi membangun benchmark custom mereka — pasar untuk jasa konsultasi 'AI evaluation' ini di luar negeri sudah mulai tumbuh, dan kemungkinan akan sampai ke sini dalam dua belas sampai delapan belas bulan. Untuk industri AI Indonesia, BYOB bukan hanya perubahan teknis — ini adalah perubahan hubungan kuasa: dari 'pilih model terbaik di leaderboard' menjadi 'tentukan dulu apa yang Anda butuhkan, baru cari model yang bisa melakukannya'. Dalam pengujian editorial Wawasan AI, pergeseran ini jauh lebih sehat, dan pada akhirnya akan menghasilkan adopsi AI yang lebih terukur dan tahan lama di organisasi Indonesia.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
