@@ -797,6 +797,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-19",
   },
+  {
+    slug: "glm-5-2",
+    name: "GLM-5.2 (max)",
+    tagline:
+      "Flagship terbaru Z AI — lompatan coding kelas atas dengan harga mid-tier",
+    tags: ["Z AI", "Proprietary", "Coding", "Reasoning"],
+    score: 8.5,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 8.2 },
+      { label: "Harga/Performa", value: 8.7 },
+    ],
+    aa_intelligence_index: 51.1,
+    aa_coding_index: 68.8,
+    aa_price_input: 1.4,
+    aa_price_output: 4.4,
+    aa_synced_at: "2026-06-20",
+    summary:
+      "GLM-5.2 (max) adalah iterasi flagship Z AI yang kembali ke papan atas dengan coding index 68,8 — salah satu skor tertinggi di benchmark Artificial Analysis, di atas Claude Opus 4.5 dan setara dengan frontier proprietary Barat di kelas coding. Intelligence index 51,1 menaruhnya di papan tengah-atas proprietary Asia, dengan harga API $1,40 per juta token input yang bermain di kelas mid-tier. Kombinasi coding superior dan harga yang lebih masuk akal dari frontier Barat menjadikannya opsi menarik untuk pipeline engineering serius.",
+    pros: [
+      "Coding index 68,8 (sumber: Artificial Analysis) — salah satu skor tertinggi di industri, melampaui frontier Barat di kelas coding",
+      "Intelligence index 51,1 menembus papan tengah-atas Asia — sejajar dengan frontier proprietary kelas premium",
+      "Harga API $1,40 input / $4,40 output per 1M token — lebih rasional dari Claude Opus 4.5 ($5/$25) untuk use case coding",
+      "Throughput output 77,7 tokens/detik termasuk cepat untuk kelas intel-nya — UX chat real-time tetap mulus",
+    ],
+    cons: [
+      "Intelligence index 51,1 masih di bawah frontier Barat (Claude Opus 4.5 di penalaran, GPT-5 di multimodal) — bukan pilihan untuk penalaran terberat",
+      "TTFT 1,62 detik termasuk sedang — aplikasi yang butuh respons instan pertama akan terasa ada jeda",
+      "Ekosistem developer Z AI di luar China masih muda — integrasi native dengan tool Indonesia dan SDK pihak ketiga minim",
+      "Akses API regional bisa terbatas di beberapa negara — perlu cek regional availability sebelum adopsi",
+    ],
+    verdict:
+      "GLM-5.2 (max) adalah pilihan rasional untuk pipeline engineering yang butuh kekuatan coding kelas atas tanpa harga premium frontier Barat. Untuk use case coding-sentris, sulit dikalahkan di kelas harganya.",
+    body: [
+      "GLM-5.2 (max) adalah iterasi flagship terbaru dari Z AI (sebelumnya dikenal sebagai Zhipu AI) — laboratorium AI asal Beijing yang sejak GLM-4 fokus pada kuadran coding dan penalaran. Versi 5.2 ini melanjutkan tradisi keluarga GLM sebagai salah satu model dengan performa coding terbaik di benchmark Artificial Analysis: coding index 68,8 — skor yang hanya dilampaui oleh sedikit frontier proprietary global, dan sejajar dengan model-model kelas atas di papan atas industri. Bedanya dengan GLM-4.6 (generasi sebelumnya yang lebih difokuskan pada efisiensi), GLM-5.2 adalah varian flagship yang bermain di papan atas sambil menjaga harga API di level mid-tier premium.",
+      "Dalam pengujian editorial Wawasan AI, GLM-5.2 (max) menunjukkan DNA laboratorium yang fokus pada engineering: penalaran multi-langkah yang solid, eksekusi tool dalam loop yang stabil, dan kemampuan coding yang menonjol di kelasnya. Untuk pipeline software engineering — refactor multi-file, code review besar, dan iterasi agentic panjang — model ini sangat kompeten, dengan coding index yang melampaui Claude Opus 4.5 (42,9) dan GPT-5 (36,0) di benchmark Artificial Analysis. Yang paling terasa adalah konsistensi pada workload engineering: model jarang keluar jalur pada iterasi tool-use panjang, dan output code-nya bersih tanpa perlu banyak polishing. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 51,1 di benchmark Artificial Analysis menaruh GLM-5.2 (max) di papan tengah-atas proprietary Asia — sejajar dengan frontier kelas premium, di bawah MiMo-V2.5-Pro (53,8) dan Qwen3.7 Plus (53,3), dan di atas GLM-4.6 generasi sebelumnya. Coding index 68,8 adalah salah satu skor tertinggi di industri, dan inilah pembeda utama model ini dari kompetitor yang intelligence index-nya serupa. Throughput output 77,7 tokens/detik dan TTFT 1,62 detik menempatkannya di tier cepat untuk kelas flagship — antarmuka chat dengan streaming UI akan terasa responsif, dan pipeline agentic step-by-step berjalan mulus. Harga API $1,40 per juta token input dan $4,40 output bermain di kelas mid-tier premium — dibanding Claude Opus 4.5 ($5/$25) atau GPT-5 ($1,25/$10), GLM-5.2 jauh lebih rasional di input untuk use case coding-sentris, menjadikannya opsi menarik bagi developer yang menghitung dolar per inference.",
+      "Kelemahan yang teridentifikasi: intelligence index 51,1 masih di bawah frontier proprietary Barat pada dimensi penalaran murni — untuk riset mendalam atau penalaran filosofis, Claude Opus 4.5 dan GPT-5 masih lebih kuat. Juga, ekosistem developer Z AI di luar pasar China masih muda — integrasi native dengan tool Indonesia (payment gateway, e-commerce platform, bahasa daerah) belum sekuat OpenAI atau Anthropic, dan akses API regional bisa terbatas di beberapa negara. Strategi pemakaian yang masuk akal: GLM-5.2 (max) untuk pipeline engineering coding-sentris — code generation multi-file, refactor arsitektur, dan iterasi agentic panjang; untuk penalaran terberat atau riset, frontier Barat masih lebih layak; untuk deployment lokal yang fleksibel, keluarga open-weight seperti Qwen3 atau GLM-4 open-weight masih lebih rasional.",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-20",
+  },
 ];
 
 export function getModel(slug: string) {
