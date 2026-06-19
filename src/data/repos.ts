@@ -949,6 +949,56 @@ export const repos: Review[] = [
     date: "2026-06-19",
     updatedAt: "2026-06-19",
   },
+  {
+    slug: "llms-from-scratch",
+    name: "LLMs from Scratch",
+    tagline: "Bangun LLM mirip ChatGPT di PyTorch, langkah demi langkah dari nol",
+    tags: ["AI Framework", "PyTorch", "Python", "Open Source"],
+    score: 9.1,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "LLMs from Scratch adalah repositori panduan resmi buku Sebastian Raschka yang memandu pembaca membangun model bahasa besar mirip ChatGPT di PyTorch dari nol — mulai dari tokenisasi, attention, pretraining, hingga fine-tuning untuk instruction following. Dengan 97 ribu bintang dan 14 ribu fork, ia menjadi salah satu materi pembelajaran LLM paling otoritatif yang tersedia secara terbuka.",
+    highlights: [
+      "97 ribu bintang dan hampir 15 ribu fork di GitHub — referensi belajar LLM paling populer di komunitas global",
+      "Pendekatan benar-benar from-scratch: setiap komponen (tokenizer, attention, multi-head, layer norm) diimplementasikan dan dijelaskan baris per baris",
+      "Topik lengkap dari hulu ke hilir: tokenisasi, mekanisme attention, arsitektur GPT, pretraining, fine-tuning, dan instruction tuning",
+      "Disertai buku O'Reilly 'Build a Large Language Model (From Scratch)' sebagai referensi utama — struktur repo mengikuti tiap bab buku",
+      "Berbasis PyTorch murni — mudah dipahami dan dimodifikasi, tanpa abstrusi berat dari library lain",
+      "Berisi Jupyter Notebook untuk setiap tahap, sehingga tiap eksperimen bisa dijalankan ulang di GPU lokal atau Google Colab",
+      "Bagian instruction tuning melatih model dari hasil pretraining agar bisa menjawab pertanyaan dan mengikuti instruksi seperti asisten",
+      "Mendukung eksperimen dengan dataset skala kecil (mis. teks fiksi) sehingga latihan tetap berjalan di laptop atau single GPU",
+      "Disertai file utilitas untuk download dataset, manajemen checkpoint, dan visualisasi loss curve",
+      "Lisensi open-source (NOASSERTION untuk kode, lisensi buku mengikuti O'Reilly) — bebas dipakai untuk belajar dan mengajar",
+    ],
+    pros: [
+      "Materi paling otoritatif untuk memahami internal LLM — penulisnya (Sebastian Raschka) dikenal lewat buku bestseller 'Hands-On Machine Learning' dan kini 'Build a LLM from Scratch'",
+      "Kode sangat mudah dibaca, anotasi jelas, dan struktur repo mengikuti alur buku sehingga pembaca tidak perlu berpindah konteks",
+      "Komunitas dan ekosistem pendidikan yang sangat aktif — banyak fork yang menambahkan terjemahan, dataset lokal, dan eksperimen lanjutan",
+    ],
+    cons: [
+      "Fokus pada aspek edukatif, bukan sebagai library siap-produksi: tidak menyediakan pipeline inference skala besar atau serving layer",
+      "Pretraining skala penuh tetap membutuhkan resource komputasi besar; versi repo hanya melatih model kecil untuk tujuan pembelajaran",
+      "Bergantung pada pemahaman dasar PyTorch — pembaca yang belum pernah memakai library ini mungkin perlu pendamping kursus intro",
+    ],
+    verdict:
+      "LLMs from Scratch adalah titik masuk paling jujur untuk benar-benar memahami apa yang terjadi di dalam ChatGPT dan model bahasa modern. Kalau Anda ingin berhenti menjadi pengguna LLM dan mulai memahami cara kerjanya, repositori ini adalah bacaan wajib.",
+    body: [
+      "Kebanyakan orang yang menggunakan ChatGPT, Claude, atau Llama setiap hari belum pernah melihat bagaimana model-model itu dibangun dari dalam. Library seperti transformers dari Hugging Face memang memudahkan pemakaian, tapi menyembunyikan detail bagaimana attention bekerja, bagaimana token diubah menjadi embedding, dan bagaimana proses pretraining menghasilkan kemampuan generalisasi. Repositori LLMs from Scratch mengambil posisi sebaliknya: ia membongkar semua itu, komponen demi komponen, hingga pembaca bisa menulis sendiri model mirip GPT dalam PyTorch.",
+      "Strukturnya mengikuti buku best-seller Sebastian Raschka, 'Build a Large Language Model (From Scratch)' yang diterbitkan O'Reilly. Setiap bab buku memiliki folder dan notebook yang sesuai — tokenizer, mekanisme attention, multi-head attention, layer normalization, arsitektur GPT utuh, pretraining dengan dataset kecil, lalu instruction tuning. Pendekatan ini membuat perpindahan dari teori ke praktik menjadi mulus, dan banyak instruktur di Indonesia yang menggunakan repositori ini sebagai materi utama kursus LLM mereka karena penjelasan yang konsisten dan kode yang bisa dijalankan ulang.",
+      "Dalam pengujian editorial Wawasan AI, nilai paling besar dari repositori ini adalah kemampuannya menghapus kesan magis dari LLM. Setelah mengikuti bab pretraining dan instruction tuning, konsep seperti temperature sampling, KV-cache, atau top-k filtering menjadi jauh lebih intuitif karena pembaca sudah membangun versi sederhananya sendiri. Sangat berguna untuk engineer, dosen, dan peneliti di Indonesia yang ingin mengajarkan AI generatif secara jujur — tidak cukup dengan demo API, perlu pemahaman fundamental yang bisa di-debug baris per baris.",
+      "Batasan yang perlu dipahami: repositori ini adalah materi pembelajaran, bukan library siap-produksi. Untuk melayani model ke ribuan pengguna, Anda masih perlu menggabungkan outputnya dengan FastAPI, vLLM, atau platform serving lain. Namun sebagai pondasi pemahaman, ia sulit ditandingi — sedikit repositori yang menyajikan pembelajaran LLM dengan kedalaman yang sama dan reputasi penulis yang sebanding.",
+    ],
+    link: "https://github.com/rasbt/LLMs-from-scratch",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-20",
+    updatedAt: "2026-06-20",
+  },
 ];
 
 export function getRepo(slug: string) {
