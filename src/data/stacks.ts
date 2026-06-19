@@ -571,6 +571,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-18",
   },
+  {
+    slug: "kling",
+    name: "Kling",
+    tagline: "Generator video AI dari Kuaishou dengan 4K native dan audio sinkron",
+    tags: ["Kuaishou", "Freemium", "Video Gen", "Cost-Effective"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "Kling adalah generator video AI dari Kuaishou yang menutup dua kelemahan utama generative video pada 2025: durasi clip yang terlalu pendek dan tidak adanya audio native. Versi 3.0 membawa output 4K, klip sampai 15 detik dalam satu shot, mode Omni dengan storyboard multi-shot, audio lip-sync multibahasa, dan API resmi — semuanya dengan harga yang terasa paling masuk akal di kelasnya.",
+    pros: [
+      "Klip sampai 15 detik dalam satu shot pada model Omni, dengan output native 4K yang jarang ditandingi kompetitor di harga serupa",
+      "Audio generation native dengan lip-sync multibahasa (Inggris, Mandarin, Indonesia, Jepang, Korea) langsung dari prompt teks — tidak perlu tool terpisah",
+      "Mode Omni storyboard memungkinkan multi-shot sequence dengan karakter konsisten, fitur yang dulu hanya ada di Sora Storyboard dan Seedance",
+      "Harga per-kredit paling kompetitif di kelas premium: paket Standard $10 sebulan sudah cukup untuk eksplorasi serius, Pro $37 sebulan menutup sebagian besar workflow kreator",
+      "Punya API resmi untuk developer dengan akses ke model Omni dan pricing transparan per-detik — jarang di tool video AI kelas atas",
+    ],
+    cons: [
+      "Antarmuka web kadang lambat saat beban puncak; render 4K 15 detik di Standard plan bisa antri beberapa menit bahkan sampai hitungan jam",
+      "Konsistensi karakter pada image-to-video masih kalah dari Veo 3.1 untuk adegan kompleks dengan banyak subjek",
+      "Kebijakan kredit tidak rollover — kalau tidak dipakai bulan ini, hangus; ini merugikan kreator dengan workload musiman",
+      "Kontrol kamera sinematik (pan, tilt, dolly) ada tapi kurang presisi dibanding Runway Director Mode untuk videografer yang butuh kendali shot-by-shot",
+    ],
+    verdict:
+      "Pilihan paling value untuk generative video premium di 2026 — terutama kalau prioritasmu adalah native audio, clip panjang, dan harga yang tidak menguras. Pilih Kling dulu sebelum Sora atau Veo kecuali kamu butuh konsistensi karakter kelas atas atau kendali kamera sangat spesifik.",
+    body: [
+      "Dalam dua tahun sejak peluncuran pertamanya di Juni 2024, Kling berevolusi dari model China yang ramai dibicarakan di media menjadi salah satu dari tiga nama yang selalu muncul di diskusi AI video kelas atas, berdampingan dengan Sora dan Veo. Yang membedakan Kling dari kompetitor adalah kombinasi yang jarang ditemukan di satu produk: output 4K native, clip sampai 15 detik dalam satu shot, audio lip-sync multibahasa yang built-in, dan mode Omni storyboard untuk multi-shot sequence — semuanya dijual dengan struktur harga per-kredit yang terasa paling masuk akal di kelas premium. Buat kreator dan tim yang sebelumnya harus kompromi antara kualitas, durasi, dan harga, Kling 3.0 menutup ketiga celah itu sekaligus.",
+      "Dalam pengujian editorial, lima hal paling terasa bedanya dibanding Sora 2, Veo 3.1, dan Runway Gen-4. Pertama, kemampuan image-to-video dengan motion control tetap salah satu yang terbaik — wajah karakter tetap koheren saat kamera mengikuti subjek berlari, menari, atau melakukan gerakan cepat, sesuatu yang masih jadi titik lemah banyak model lain. Kedua, audio generation native dengan lip-sync multibahasa menghapus kebutuhan tool terpisah seperti ElevenLabs atau Suno untuk sinkronisasi dialog; prompt 'seorang chef menjelaskan resep dalam bahasa Indonesia' sudah menghasilkan video dengan suara yang match dengan gerakan mulut. Ketiga, mode Omni storyboard memungkinkan kreator membuat sequence multi-shot (establishing shot, medium shot, close-up) dalam satu project dengan konsistensi karakter yang terjaga — fitur ini dulu hanya tersedia di Sora Storyboard dengan antrian akses terbatas. Keempat, motion control dengan cinematic camera moves (pan, dolly, crane, orbit) memberi videografer kendali yang cukup granular untuk sebagian besar penggunaan profesional, meskipun belum sepresisi Runway Director Mode. Kelima, harga per-kredit di paket Standard dan Pro terasa paling kompetitif di kelas premium: untuk $10 sebulan kreator sudah dapat akses ke model Omni dan fitur dasar, sementara paket Pro $37 menutup sebagian besar workflow reguler tanpa perlu top-up.",
+      "Tentu ada kompromi substansial yang harus diketahui. Pertama, antarmuka web kadang lambat saat beban puncak — render 4K 15 detik di paket Standard bisa antri dari beberapa menit sampai hitungan jam, dan pengalaman pengguna untuk free tier dengan 66 kredit harian yang expire dalam 24 jam terasa dibuat-buat untuk mendorong upgrade. Kedua, kebijakan kredit tidak rollover: kalau kreator tidak pakai bulan ini, kredit hangus, merugikan freelancer dengan workload musiman atau tim yang proyeknya tidak rata setiap bulan. Ketiga, meskipun image-to-video sangat kuat untuk subjek tunggal, konsistensi karakter pada adegan multi-karakter masih kalah dari Veo 3.1 untuk penggunaan profesional seperti agency campaign atau short film. Keempat, kontrol kamera sinematik ada tapi kurang presisi dibanding Runway Director Mode untuk videografer yang terbiasa dengan shot-by-shot control; pengguna perlu beberapa iterasi prompt untuk dapat gerakan kamera yang persis seperti yang dibayangkan.",
+      "Untuk pengguna dan tim di Indonesia, implikasi Kling menarik di beberapa sisi. Harga dalam dolar AS dengan paket Standard $10 (sekitar Rp 160 ribu per bulan dengan kurs standar) dan Pro $37 (sekitar Rp 590 ribu) menempatkan Kling di kelas menengah untuk kreator solo, dengan value yang sulit ditandingi untuk kemampuan yang ditawarkan. Yang paling relevan untuk pasar Indonesia: Kling punya landing page resmi dalam bahasa Indonesia di kling.ai/id dan tutorial bahasa Indonesia yang cukup aktif di YouTube serta komunitas kreator lokal, menurunkan barrier entry untuk pemula. Native lip-sync untuk bahasa Indonesia juga sudah didukung, membuka pintu untuk konten edukatif, penjelasan produk, atau narasi pendek dalam bahasa Indonesia tanpa harus sinkronisasi audio terpisah. Untuk kreator agency atau brand besar di Jakarta, Bandung, dan Yogyakarta yang perlu video pendek untuk social media atau campaign, paket Pro $37 sebulan dengan output 4K dan audio sinkron biasanya lebih dari cukup untuk production bulanan. Untuk pemula yang baru coba-coba, free tier dengan 66 kredit harian sudah cukup untuk eksplorasi serius sebelum memutuskan upgrade. Satu catatan penting untuk konteks Indonesia: pembayaran subscription luar negeri masih kena PPN 11 persen dan charge kartu kredit internasional, jadi markup total sekitar 12-15 persen di atas harga yang tertera; beberapa kreator lokal memilih top-up via platform pihak ketiga yang kadang lebih murah tapi menambah dependency. Kling bukan tool yang paling presisi atau paling halus secara visual, tapi di 2026 ia adalah titik masuk paling realistis untuk siapa pun yang serius membuat generative video premium tanpa membakar budget.",
+    ],
+    link: "https://kling.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-19",
+  },
 ];
 
 export function getStack(slug: string) {
