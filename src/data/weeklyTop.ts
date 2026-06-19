@@ -333,6 +333,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "SDK resmi untuk C/C++, C#, Rust, Go, Python, JavaScript — sama persis stack yang dipakai tim Unreal dan tool AI modern, sehingga integrasi ke pipeline yang sudah ada relatif mulus.",
     ],
   },
+  "Waishnav/devspace": {
+    description:
+      "Server MCP self-hosted yang bikin ChatGPT bisa baca, edit, dan jalankan kode di project lokal kamu langsung — tanpa upload source ke server pihak ketiga.",
+    highlights: [
+      "Server MCP self-hosted yang membuka akses ChatGPT ke file, terminal, dan tooling lokal — install via 'npm install -g @waishnav/devspace', expose lewat tunnel (Cloudflare/ngrok/Tailscale), dan ChatGPT langsung punya kemampuan coding agentik ala Codex.",
+      "Cocok untuk user ChatGPT Plus/Pro yang mau pakai GPT-5 untuk planning + handover ke coding agent di project lokal, tanpa harus copy-paste file atau nge-share codebase ke cloud orang lain.",
+      "Owner password approval page saat client pertama kali konek, plus konfigurasi folder mana yang boleh diakses — setiap aksi (read/edit/run) lewat DevSpace tetap bisa diinspeksi, jadi 'kontrol' tetap di tangan developer.",
+      "Pendekatan 'one tunnel, one project' yang ringan: default endpoint lokal di 127.0.0.1:7676, dokumentasi lengkap untuk setup, security model, dan troubleshooting — bukan platform SaaS, melainkan tool developer yang portable.",
+    ],
+  },
+  "yaojingang/yao-meta-skill": {
+    description:
+      "Framework 'Skill OS' untuk authoring, evaluasi, dan tata kelola agent skill yang reusable — Skill IR, target compiler multi-platform, Output Eval Lab, dan Review Studio untuk release gate.",
+    highlights: [
+      "Skill OS 2.0: bukan cuma bikin SKILL.md, tapi govern full lifecycle — semantic contract (Skill IR), target compiler untuk OpenAI/Claude/Agent Skills/VS Code, Output Eval Lab, release governance, dan SkillOps telemetry untuk iterasi.",
+      "Membungkus workflow yang berulang jadi paket skill yang portable lintas platform — masukkan runbook, transcript, atau prompt set, dapat 'lean entrypoint' dengan intent, trigger, input/output, dan boundary yang jelas.",
+      "Review Studio 2.0 sebagai gate rilis: satu halaman HTML yang menggabungkan intent check, output eval, context cost, runtime probe, trust signal, dan adoption drift — reviewer tinggal lihat ringkasan, bukan baca source dari nol.",
+      "Dilengkapi Output Eval Lab (assertion grading + execution/timing/token evidence + blind A/B review), world-class evidence ledger, dan claim guard yang menahan 'public claim' sebelum evidence lengkap — fokus ke engineering rigor, bukan hype.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
