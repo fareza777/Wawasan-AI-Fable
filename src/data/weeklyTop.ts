@@ -353,6 +353,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Dilengkapi Output Eval Lab (assertion grading + execution/timing/token evidence + blind A/B review), world-class evidence ledger, dan claim guard yang menahan 'public claim' sebelum evidence lengkap — fokus ke engineering rigor, bukan hype.",
     ],
   },
+  "StarTrail-org/PixelRAG": {
+    description:
+      "Pendekatan RAG baru yang render halaman web jadi screenshot tile, lalu embed pakai Qwen3-VL LoRA — tabel, chart, dan layout tetap utuh, tidak hilang saat diparse jadi teks.",
+    highlights: [
+      "PixelRAG menggantikan parsing-to-text yang sering kehilangan tabel dan chart dengan render-to-image, lalu retrieve tile yang tepat — angka di tabel tetap terbaca langsung dari gambar.",
+      "Embedder Qwen3-VL di-LoRA fine-tune khusus untuk screenshot halaman web, sehingga ruang vektornya paham konten visual, bukan hanya teks di sekitarnya.",
+      "Pakai CLI `pixelshot` (Playwright/CDP, tanpa backend) untuk capture, lalu pipeline `pixelrag chunk → embed → build-index` sampai serve FAISS lewat FastAPI — bisa di-render di CPU atau GPU.",
+      "Cocok untuk knowledge base internal yang penuh dashboard, spreadsheet, dan laporan visual — use case yang selama ini jadi titik lemah RAG teks tradisional.",
+    ],
+  },
+  "calesthio/OpenMontage": {
+    description:
+      "Sistem produksi video agentik open-source pertama — 12 pipeline, 52 tool, dan 500+ skill yang mengubah AI coding assistant jadi studio produksi video dari riset sampai render akhir.",
+    highlights: [
+      "Pipeline terstruktur mengikuti alur produksi nyata: research → proposal → script → scene_plan → assets → edit → compose, dengan director skill per stage yang mengajar agen cara eksekusi tahapannya.",
+      "12 pipeline siap pakai (explainer, talking head, screen demo, trailer sinematik, animasi, podcast, localization, documentary montage, dll) + 52 tool untuk video/image/TTS/music/subtitle/enhancement.",
+      "Web research jadi tahap kelas satu: agen jalankan 15-25+ pencarian YouTube, Reddit, HN, news, dan sumber akademik sebelum nulis script — output grounded, bukan halusinasi.",
+      "Bisa bikin video 'real footage' dari stok gratis dan arsip terbuka (bukan animasi still image) serta render via Remotion; contoh kasus nyata seperti trailer 'SIGNAL FROM TOMORROW' dan short 'THE LAST BANANA' biaya total <$2.",
+    ],
+  },
+  "Forsy-AI/agent-apprenticeship": {
+    description:
+      "Ekosistem terbuka di mana agen AI saling bertukar 'pengalaman kerja' lewat workflow loop, lesson yang bisa dipakai ulang, dan sinyal training yang dikumpulkan dari kerja dunia nyata.",
+    highlights: [
+      "Framework `npx agent-apprenticeship init` yang membungkus long-horizon task jadi workflow loop antara apprentice agent dan mentor agent — bisa model-assisted, expert-led, atau hybrid.",
+      "Seed dataset awal sudah termasuk 500+ task dunia nyata, 495 lesson reusable, 1000+ execution trace, dan 1000+ episode rollout — fondasi training signal yang langsung bisa dipakai.",
+      "Kompatibel dengan agen yang banyak dipakai: Codex, Cursor, Claude Code, OpenClaw, OpenCode, Hermes Agent — mentor loop bisa di-swap ke OpenAI/Anthropic/Gemini/OpenRouter.",
+      "Setiap task yang selesai lewat Agent Apprenticeship bisa diestimasi nilai ekonominya (khususnya domain khusus), jadi 'pekerjaan agen' punya metrik nilai — bukan cuma selesai/tidak.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
