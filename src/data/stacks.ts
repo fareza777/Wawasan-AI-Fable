@@ -611,6 +611,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-19",
   },
+{
+    slug: "perplexity-pro",
+    name: "Perplexity Pro",
+    tagline: "Search engine AI dengan sitasi real-time dan multi-model",
+    tags: ["Perplexity", "Freemium", "Search/RAG", "Research"],
+    score: 8.7,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 8.6 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Perplexity Pro memposisikan diri bukan sebagai chatbot melainkan sebagai mesin jawaban: tanya, dapat ringkasan dengan footnote, dan sumbernya bisa diklik untuk verifikasi. Untuk peneliti, jurnalis, dan siapa pun yang males buka 20 tab Google, ini adalah alat produktivitas yang mengubah workflow.",
+    pros: [
+      "Setiap klaim disertai sitasi ke sumber asli — bisa diklik untuk verifikasi instan",
+      "Pro Search menelan lusinan halaman dan menyajikan ringkasan terstruktur dalam satu jawaban",
+      "Deep Research menghasilkan laporan setara jurnal pendek dengan rujukan puluhan sumber",
+      "Pemilihan model fleksibel: GPT-5.x, Claude 4.x, Gemini 3.x, Grok, atau Sonar dalam satu langganan",
+      "Spaces memungkinkan kolaborasi tim: dokumen, prompt, dan sumber dibagikan ke anggota tim",
+    ],
+    cons: [
+      "Langganan $20/bulan (atau $200/tahun) terasa mahal untuk penggunaan kasual",
+      "Pada topik akademis mutakhir kadang masih keliru meringkas atau melewatkan caveat penting",
+      "Deep Research butuh 3-5 menit — tidak cocok untuk pertanyaan kilat",
+      "Antarmuka web kadang lambat saat trafik puncak, terutama mode reasoning",
+    ],
+    verdict:
+      "Standar baru untuk riset cepat yang kredibel. Bukan pengganti Google, melainkan lapisan di atasnya yang menyajikan jawaban, bukan link. Catatan utamanya adalah ketergantungan pada sumber daring — untuk topik yang literaturnya paywalled atau domain-spesifik, kelebihannya menyusut.",
+    body: [
+      "Kalau ChatGPT dan Claude Code adalah asisten di dalam workflow, Perplexity Pro mengambil posisi berbeda: ia adalah titik masuk ke workflow itu sendiri. Paradigmanya sederhana — ketik pertanyaan, dapatkan jawaban terstruktur dengan sitasi inline ke sumber yang bisa diklik, dan kalau jawaban kurang dalam, klik tombol Pro Search untuk memintanya membaca lebih banyak halaman. Dalam pengujian editorial Wawasan AI, alur ini mengurangi waktu riset awal dari rata-rata 25 menit (buka Google, sortir 10 link, baca summary, cross-check) menjadi sekitar 6 menit untuk pertanyaan yang sama.",
+      "Yang membuat Pro Search menonjol dibanding web search konvensional adalah kemampuannya menyintesis. Pada prompt seperti 'bandingkan model agentic coding terbaru di 2026 dari sisi arsitektur dan harga API', ia menelaah artikel blog teknis, thread Reddit, dan dokumentasi resmi, lalu menyajikan tabel perbandingan yang menyebut nama, harga per juta token, dan link ke sumbernya — semuanya dalam satu jawaban. Fitur Deep Research mengambil langkah lebih jauh: ia menghasilkan laporan setara 500-1000 kata dengan 20-50 rujukan, cocok untuk riset pendahuluan jurnalistik atau makalah akademik. Model di baliknya bisa dipilih per-query: GPT-5.x, Claude 4.x, Gemini 3.x, Grok, atau Sonar (model internal Perplexity) — pendekatan multi-model dalam satu langganan ini unik di kelasnya.",
+      "Tentu ada batasannya. Pada topik yang sangat teknis atau yang literaturnya paywalled — jurnal IEEE, ACM, atau arxiv di balik paywall institusional — Perplexity hanya bisa mengakses abstrak dan preprint, dan ringkasannya kadang terlalu percaya diri pada sumber yang kurang otoritatif. Deep Research juga butuh waktu 3-5 menit, terlalu lama untuk pertanyaan harian. Terakhir, mode Reasoning yang memakai model frontier secara default menguras kredit tambahan; untuk penggunaan ringan, mode Sonar default sudah lebih dari cukup.",
+      "Untuk pengguna dan tim di Indonesia, posisi Perplexity Pro menarik di beberapa sisi. Harga $20 per bulan (sekitar Rp 320 ribu dengan kurs standar) atau $200 per tahun (Rp 3,2 juta, hemat 17 persen) menempatkannya di kelas menengah — jauh di atas langganan musik, sebanding dengan Netflix premium. Yang membuat nilainya menonjol untuk konteks lokal: fitur Internal Knowledge Search memungkinkan pencarian ke file PDF, Google Drive, dan SharePoint secara bersamaan dengan web — berguna untuk konsultan, peneliti, atau tim yang harus menyilangkan data internal dengan benchmark industri. Tutorial bahasa Indonesia cukup banyak di YouTube dan kampus (UMN punya panduan resmi), menurunkan barrier entry untuk pemula. Pembayaran subscription luar negeri tetap kena PPN 11 persen dan charge kartu kredit internasional, markup total sekitar 12-15 persen; beberapa pengguna lokal memanfaatkan invite referral atau top-up via platform pihak ketiga yang kadang lebih murah tapi menambah dependency. Satu catatan penting: akses gratis sudah termasuk 5 Pro Search per hari, yang untuk kebanyakan pengguna kasual sudah cukup tanpa perlu langganan. Perplexity Pro bukan untuk semua orang — tapi untuk siapa pun yang riset adalah bagian rutin dari pekerjaannya, ini salah satu alat dengan ROI paling jelas di 2026.",
+    ],
+    link: "https://www.perplexity.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-20",
+  },
 ];
 
 export function getStack(slug: string) {

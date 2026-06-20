@@ -1,0 +1,158 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "20 Juni 2026",
+  "period": {
+    "date": "2026-06-20",
+    "label": "20 Juni 2026",
+    "path": "/repo/daily/2026/06/20"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-20T00:09:40.008Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "chopratejas/headroom",
+      "owner": "chopratejas",
+      "repo": "headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "githubUrl": "https://github.com/chopratejas/headroom",
+      "trendshiftUrl": "https://trendshift.io/repositories/20881",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-01-07T19:58:51Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "google-research/timesfm",
+      "owner": "google-research",
+      "repo": "timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "githubUrl": "https://github.com/google-research/timesfm",
+      "trendshiftUrl": "https://trendshift.io/repositories/10050",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2024-04-29T21:26:26Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "DeusData/codebase-memory-mcp",
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "githubUrl": "https://github.com/DeusData/codebase-memory-mcp",
+      "trendshiftUrl": "https://trendshift.io/repositories/23635",
+      "language": "C",
+      "topics": [
+        "AI coding assistant",
+        "AI infrastructure",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-24T22:01:00Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "massgravel/Microsoft-Activation-Scripts",
+      "owner": "massgravel",
+      "repo": "Microsoft-Activation-Scripts",
+      "description": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting.",
+      "githubUrl": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+      "trendshiftUrl": "https://trendshift.io/repositories/2965",
+      "language": "Batchfile",
+      "topics": [],
+      "dateCreated": "2020-01-12T23:03:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Kilo-Org/kilocode",
+      "owner": "Kilo-Org",
+      "repo": "kilocode",
+      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "githubUrl": "https://github.com/Kilo-Org/kilocode",
+      "trendshiftUrl": "https://trendshift.io/repositories/14151",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-03-10T15:34:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "yaojingang/yao-meta-skill",
+      "owner": "yaojingang",
+      "repo": "yao-meta-skill",
+      "description": "YAO = Yielding AI Outcomes. A rigorous engineering, evaluation, governance, and portability system for reusable agent skills.",
+      "githubUrl": "https://github.com/yaojingang/yao-meta-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/42166",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-31T11:59:35Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tw93/Pake",
+      "owner": "tw93",
+      "repo": "Pake",
+      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
+      "githubUrl": "https://github.com/tw93/Pake",
+      "trendshiftUrl": "https://trendshift.io/repositories/1622",
+      "language": "Rust",
+      "topics": [
+        "Headless browser"
+      ],
+      "dateCreated": "2022-10-14T09:32:57Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "OpenCut-app/OpenCut",
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "description": "The open-source CapCut alternative",
+      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
+      "trendshiftUrl": "https://trendshift.io/repositories/19761",
+      "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2025-06-22T08:02:17Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Waishnav/devspace",
+      "owner": "Waishnav",
+      "repo": "devspace",
+      "description": "Turn ChatGPT into Codex",
+      "githubUrl": "https://github.com/Waishnav/devspace",
+      "trendshiftUrl": "https://trendshift.io/repositories/56375",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "MCP",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-06-14T16:57:27Z"
+    }
+  ]
+}
