@@ -841,6 +841,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-20",
   },
+{
+    slug: "qwen3-5-397b-a17b",
+    name: "Qwen3.5 397B A17B (Reasoning)",
+    tagline:
+      "MoE hybrid Alibaba 397B dengan 17B aktif — penalaran solid di kelas harga paling efisien",
+    tags: ["Alibaba", "Proprietary", "Reasoning", "MoE"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.7 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 33.7,
+    aa_coding_index: 48.2,
+    aa_price_input: 0.6,
+    aa_price_output: 3.6,
+    aa_synced_at: "2026-06-21",
+    summary:
+      "Qwen3.5 397B A17B (Reasoning) adalah varian reasoning dari keluarga Qwen3.5 Alibaba dengan arsitektur Mixture-of-Experts (MoE) hybrid: total 397 miliar parameter, namun hanya 17 miliar parameter aktif per token — desain yang menurunkan biaya inferens tanpa mengorbankan kualitas penalaran. Intelligence index 33,7 (sumber: Artificial Analysis) menaruhnya di papan tengah, tapi coding index 48,2 menunjukkan kekuatan utama model ini di kelas harganya, dengan API $0,60 per juta token input yang bermain di kuadran paling efisien untuk proprietary reasoning.",
+    pros: [
+      "Coding index 48,2 (sumber: Artificial Analysis) — solid untuk software engineering multi-file, melampaui frontier Barat di kelas harga ini",
+      "Arsitektur MoE 397B total / 17B aktif — kapasitas penalaran besar dengan biaya inferens rendah per token",
+      "Harga API $0,60 input / $3,60 output per 1M token — salah satu paling efisien untuk proprietary reasoning, sejajar dengan MiMo-V2.5-Pro",
+      "Throughput output 51,1 tokens/detik — cukup responsif untuk workflow agentic dan pipeline engineering standar",
+    ],
+    cons: [
+      "Intelligence index 33,7 di bawah frontier proprietary papan atas (Claude Opus 4.5, GPT-5) — bukan pilihan untuk penalaran terberat atau riset mendalam",
+      "TTFT 1,832 detik termasuk sedang — aplikasi yang butuh respons instan pertama akan terasa ada jeda",
+      "Arsitektur MoE membawa overhead engineering — deployment lokal butuh VRAM besar (≥200GB) untuk inferens penuh",
+      "Akses API regional via Bailian/Model Studio Alibaba Cloud — butuh kartu pembayaran internasional, ekosistem plugin pihak ketiga masih minim",
+    ],
+    verdict:
+      "Qwen3.5 397B A17B (Reasoning) adalah pilihan rasional untuk developer yang ingin coding index tinggi di kelas harga efisien. Untuk pipeline engineering volume-tinggi dan workflow agentic standar, value-for-money-nya sulit dikalahkan — tapi untuk penalaran paling berat, frontier papan atas masih lebih layak.",
+    body: [
+      "Qwen3.5 397B A17B (Reasoning) adalah iterasi reasoning dari keluarga Qwen3.5 Alibaba yang dirancang dengan arsitektur Mixture-of-Experts (MoE) hybrid — total 397 miliar parameter, hanya 17 miliar aktif per token. Pola MoE seperti ini jadi tren utama frontier reasoning 2026: memadukan kapasitas model besar dengan efisiensi inferens, sehingga biaya per token turun signifikan tanpa mengorbankan kualitas penalaran. Varian (Reasoning) menunjukkan mode inferens yang di-tuning khusus untuk penalaran multi-langkah — berbeda dari varian dasar Qwen3.5 yang bermain di kuadran generik.",
+      "Dalam pengujian editorial Wawasan AI, Qwen3.5 397B A17B (Reasoning) menunjukkan DNA laboratorium yang matang untuk pekerjaan engineering: penalaran multi-langkah cukup untuk task standar, eksekusi tool dalam loop yang stabil, dan kemampuan coding yang menonjol di kelas harganya. Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, dengan coding index 48,2 di benchmark Artificial Analysis yang menjadi nilai jual utamanya. Yang paling terasa dibanding frontier papan atas adalah konsistensi di workload coding standar: model jarang keluar jalur pada iterasi tool-use panjang, dan output code-nya bersih tanpa banyak polishing. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 33,7 di benchmark Artificial Analysis menaruh Qwen3.5 397B A17B di papan tengah proprietary reasoning — di bawah Qwen3.6 Max Preview (51,8), GLM-5.2 (51,1), MiMo-V2.5-Pro (53,8), dan Qwen3.7 Plus (53,3), tapi sejajar dengan MiMo-V2-Pro (40,3) dan di atas open-weight pada umumnya. Coding index 48,2 menjadi pembeda utama model ini — melampaui Claude Opus 4.5 (42,9) dan mendekati GLM-5.2 (68,8) di kelas coding, meski di intel yang lebih rendah. Throughput output 51,1 tokens/detik dan TTFT 1,832 detik menempatkannya di tier sedang — responsif untuk alur kerja agentic dan pipeline batch, tapi bukan pilihan optimal untuk antarmuka chat real-time dengan streaming UI yang butuh sub-detik. Harga API $0,60 per juta token input dan $3,60 output bermain di kuadran paling efisien untuk proprietary reasoning — dibanding GLM-5.2 ($1,40/$4,40) atau Qwen3.6 Max Preview ($1,30/$7,80), A17B jauh lebih rasional di output, menjadikannya opsi menarik bagi developer yang menjalankan pipeline volume-tinggi.",
+      "Kelemahan yang teridentifikasi: intelligence index 33,7 masih di bawah frontier papan atas untuk penalaran murni — untuk riset mendalam atau penalaran filosofis, Claude Opus 4.5 dan GPT-5 masih memimpin dengan jarak yang jelas. Arsitektur MoE 397B juga membawa overhead engineering: deployment lokal butuh VRAM besar (≥200GB dengan kuantisasi 4-bit) untuk inferens penuh, berbeda dengan dense model kelas menengah yang lebih ringan. Juga, akses API regional lewat Bailian/Model Studio Alibaba Cloud — meski punya tier gratis, untuk pemakaian serius tetap butuh kartu pembayaran internasional, dan ekosistem plugin pihak ketiga (LangChain, LlamaIndex) masih minim dibanding OpenAI atau Anthropic. Strategi pemakaian yang masuk akal: Qwen3.5 397B A17B (Reasoning) untuk pipeline engineering coding-sentris volume-tinggi — code generation multi-file, refactor arsitektur, dan iterasi agentic standar; untuk penalaran terberat atau riset, frontier papan atas tetap lebih layak; untuk deployment lokal yang fleksibel, keluarga Qwen3 open-weight masih lebih rasional.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-21",
+  },
 ];
 
 export function getModel(slug: string) {
