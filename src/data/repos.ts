@@ -999,6 +999,56 @@ export const repos: Review[] = [
     date: "2026-06-20",
     updatedAt: "2026-06-20",
   },
+  {
+    slug: "tradingagents",
+    name: "TradingAgents",
+    tagline: "Framework multi-agent LLM untuk trading finansial ala hedge fund",
+    tags: ["AI Agent", "Multi-Agent", "Finansial", "Python"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "TradingAgents dari Tauric Research adalah framework multi-agent yang menerjemahkan arsitektur trading firm ke dalam orkestrasi LLM: analis fundamental, analis sentimen, analis teknikal, dan risk manager saling berdiskusi sebelum mengeksekusi keputusan. Berbeda dari bot trading biasa, pendekatannya menitikberatkan proses deliberatif ala hedge fund yang bisa diaudit.",
+    highlights: [
+      "Arsitektur multi-agent berlapis: empat peran analis (fundamental, sentimen, teknikal, bull/bear researcher) + risk manager + trader, masing-masing dengan persona dan prompt khusus",
+      "Deliberasi agent yang bisa diaudit: keputusan diambil setelah diskusi antar-agent, sehingga alur reasoning tersimpan dan dapat ditelusuri",
+      "Mendukung banyak penyedia LLM lewat litellm: OpenAI, Anthropic, Google, OpenRouter, serta model lokal via Ollama untuk privasi penuh",
+      "Integrasi data pasar: Alpha Vantage, yfinance, dan sumber berita finansial untuk analisis teknikal dan sentimen real-time",
+      "Konfigurasi tickers fleksibel — bisa backtest satu saham, sektoral, atau portofolio sekaligus",
+      "Backtesting built-in dengan rentang tanggal kustom dan pelaporan metrik (return, Sharpe ratio, drawdown)",
+      "Codebase modular: setiap agent dipisah sebagai modul Python yang mudah dimodifikasi atau diganti dengan logika sendiri",
+      "Lisensi Apache-2.0 — bebas dipakai untuk riset, edukasi, dan eksperimen internal tanpa khawatir restriksi",
+      "Disertai paper arxiv (2412.20138) yang menjelaskan rasional arsitektur agent-nya",
+      "Komunitas yang tumbuh cepat: lebih dari 87 ribu bintang di GitHub pada 2026, banyak diskusi teknis di issue tracker",
+    ],
+    pros: [
+      "Pendekatan deliberatif yang transparan — keputusan trading bisa ditelusuri kembali lewat log reasoning antar-agent, penting untuk riset dan audit",
+      "Arsitektur agent yang bisa dimodifikasi: tiap peran berdiri sendiri sehingga developer dapat mengganti logika satu agent tanpa menyentuh keseluruhan pipeline",
+      "Lisensi Apache-2.0 dan dukungan multi-provider lewat litellm membuatnya fleksibel untuk riset akademik maupun eksperimen pribadi",
+    ],
+    cons: [
+      "Bukan platform trading siap-pakai: ini framework riset dan eksperimen, bukan bot yang bisa langsung dipasang ke broker live trading",
+      "Kualitas output sangat bergantung pada model LLM yang dipakai — model kecil bisa menghasilkan reasoning yang tidak konsisten",
+      "Risiko pasar tidak hilang hanya karena reasoning-nya baik; pengguna tetap perlu memahami bahwa hasil backtesting tidak menjamin performa live",
+    ],
+    verdict:
+      "TradingAgents adalah salah satu eksperimen paling menarik di ranah agent finansial: ia menjadikan proses deliberatif sebagai produk, bukan sekadar hasil akhir. Sangat layak dievaluasi oleh developer, peneliti, dan tim edukasi yang ingin memahami bagaimana orkestrasi agent bisa dipakai untuk keputusan berisiko tinggi.",
+    body: [
+      "Selama beberapa tahun terakhir, komunitas open-source sudah terbiasa dengan bot trading otomatis berbasis aturan dan indikator teknikal. TradingAgents dari Tauric Research mengambil arah berbeda: ia tidak berusaha menggantikan analis manusia dengan satu model raksasa, melainkan membangun ulang alur kerja analis hedge fund ke dalam orkestrasi agent. Ada agent yang berperan sebagai analis fundamental, ada yang membaca sentimen pasar, ada yang mempelajari pola teknikal, lalu hasilnya dipertemukan dalam sesi diskusi yang dikawal oleh risk manager sebelum keputusan akhir diambil. Arsitektur ini menarik karena reasoning-nya terdokumentasi, bukan kotak hitam.",
+      "Yang membuat proyek ini menonjol adalah keterbukaan prosesnya. Setiap agent menuliskan pertimbangan, menelusuri data pasar dari Alpha Vantage atau yfinance, lalu bertukar argumen. Pengguna dapat membaca log reasoning lengkap, menelusuri mengapa keputusan tertentu diambil, dan memodifikasi satu agent tanpa mengganggu keseluruhan pipeline. Pendekatan seperti ini jarang dijumpai di tool finansial komersial, dan menjadi alasan mengapa repositori ini sangat menarik untuk keperluan riset dan edukasi.",
+      "Dalam pengujian editorial Wawasan AI, eksperimen paling meyakinkan adalah simulasi backtesting pada satu ticker populer selama rentang waktu tertentu. Hasilnya bukan sekadar angka return, melainkan laporan naratif: agent menjelaskan mengapa satu saham dianggap menarik, bagaimana sentimen pasar minggu itu berubah, dan risiko apa yang dilihat risk manager. Pola ini sangat dekat dengan cara tim riset fundamental di Indonesia menyusun memo investasi internal — bedanya, di sini prosesnya bisa dijalankan ulang dan diaudit sepenuhnya.",
+      "Batasan yang perlu dipahami: TradingAgents adalah framework riset dan eksperimen, bukan bot trading siap-pakai. Tidak ada integrasi broker yang langsung mengeksekusi order ke pasar live, dan kualitas reasoning-nya sangat bergantung pada model LLM yang dipilih. Untuk konteks Indonesia, proyek ini lebih cocok dipakai sebagai alat pembelajaran dan eksplorasi metodologis — bukan sebagai sistem trading yang mengelola uang sungguhan. Namun sebagai demonstrasi bagaimana agent bisa dipakai untuk keputusan finansial yang serius, ia adalah salah satu referensi paling kuat di open-source saat ini.",
+    ],
+    link: "https://github.com/TauricResearch/TradingAgents",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-21",
+    updatedAt: "2026-06-21",
+  },
 ];
 
 export function getRepo(slug: string) {
