@@ -1,17 +1,71 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "20 Juni 2026",
-  "period": {
-    "date": "2026-06-20",
-    "label": "20 Juni 2026",
-    "path": "/repo/daily/2026/06/20"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-20T00:09:40.008Z",
+  "fetchedAt": "2026-06-20T05:54:46.235Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "tw93/Pake",
+      "owner": "tw93",
+      "repo": "Pake",
+      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
+      "githubUrl": "https://github.com/tw93/Pake",
+      "trendshiftUrl": "https://trendshift.io/repositories/1622",
+      "language": "Rust",
+      "topics": [
+        "Headless browser"
+      ],
+      "dateCreated": "2022-10-14T09:32:57Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "tinyhumansai/tiny.place",
+      "owner": "tinyhumansai",
+      "repo": "tiny.place",
+      "description": "The social economy for autonomous AI agents.",
+      "githubUrl": "https://github.com/tinyhumansai/tiny.place",
+      "trendshiftUrl": "https://trendshift.io/repositories/59291",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-07T03:01:58Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "yorgai/ORGII",
+      "owner": "yorgai",
+      "repo": "ORGII",
+      "description": "",
+      "githubUrl": "https://github.com/yorgai/ORGII",
+      "trendshiftUrl": "https://trendshift.io/repositories/56464",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-01T12:52:57Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "koala73/worldmonitor",
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "githubUrl": "https://github.com/koala73/worldmonitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/20793",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM",
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-08T17:26:06Z"
+    },
+    {
+      "rank": 5,
       "fullName": "chopratejas/headroom",
       "owner": "chopratejas",
       "repo": "headroom",
@@ -26,34 +80,7 @@
       "dateCreated": "2026-01-07T19:58:51Z"
     },
     {
-      "rank": 2,
-      "fullName": "google-research/timesfm",
-      "owner": "google-research",
-      "repo": "timesfm",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "githubUrl": "https://github.com/google-research/timesfm",
-      "trendshiftUrl": "https://trendshift.io/repositories/10050",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2024-04-29T21:26:26Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-06-12T00:52:37Z"
-    },
-    {
-      "rank": 4,
+      "rank": 6,
       "fullName": "DeusData/codebase-memory-mcp",
       "owner": "DeusData",
       "repo": "codebase-memory-mcp",
@@ -69,90 +96,68 @@
       "dateCreated": "2026-02-24T22:01:00Z"
     },
     {
-      "rank": 5,
-      "fullName": "massgravel/Microsoft-Activation-Scripts",
-      "owner": "massgravel",
-      "repo": "Microsoft-Activation-Scripts",
-      "description": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting.",
-      "githubUrl": "https://github.com/massgravel/Microsoft-Activation-Scripts",
-      "trendshiftUrl": "https://trendshift.io/repositories/2965",
-      "language": "Batchfile",
-      "topics": [],
-      "dateCreated": "2020-01-12T23:03:34Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "Kilo-Org/kilocode",
-      "owner": "Kilo-Org",
-      "repo": "kilocode",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
-      "githubUrl": "https://github.com/Kilo-Org/kilocode",
-      "trendshiftUrl": "https://trendshift.io/repositories/14151",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2025-03-10T15:34:26Z"
-    },
-    {
       "rank": 7,
-      "fullName": "yaojingang/yao-meta-skill",
-      "owner": "yaojingang",
-      "repo": "yao-meta-skill",
-      "description": "YAO = Yielding AI Outcomes. A rigorous engineering, evaluation, governance, and portability system for reusable agent skills.",
-      "githubUrl": "https://github.com/yaojingang/yao-meta-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/42166",
-      "language": "Python",
+      "fullName": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "description": "macOS video editor built for AI",
+      "githubUrl": "https://github.com/palmier-io/palmier-pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/41342",
+      "language": "Swift",
       "topics": [
-        "AI agent",
-        "AI skills"
+        "AI video generation",
+        "MCP",
+        "Video editing"
       ],
-      "dateCreated": "2026-03-31T11:59:35Z"
+      "dateCreated": "2026-04-07T04:15:51Z"
     },
     {
       "rank": 8,
-      "fullName": "tw93/Pake",
-      "owner": "tw93",
-      "repo": "Pake",
-      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
-      "githubUrl": "https://github.com/tw93/Pake",
-      "trendshiftUrl": "https://trendshift.io/repositories/1622",
-      "language": "Rust",
+      "fullName": "BuilderIO/skills",
+      "owner": "BuilderIO",
+      "repo": "skills",
+      "description": "Skills for coding agents",
+      "githubUrl": "https://github.com/BuilderIO/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/49818",
+      "language": "JavaScript",
       "topics": [
-        "Headless browser"
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
       ],
-      "dateCreated": "2022-10-14T09:32:57Z"
+      "dateCreated": "2026-06-10T16:04:20Z"
     },
     {
       "rank": 9,
-      "fullName": "OpenCut-app/OpenCut",
-      "owner": "OpenCut-app",
-      "repo": "OpenCut",
-      "description": "The open-source CapCut alternative",
-      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
-      "trendshiftUrl": "https://trendshift.io/repositories/19761",
-      "language": "TypeScript",
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
       "topics": [
-        "Video editing"
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
       ],
-      "dateCreated": "2025-06-22T08:02:17Z"
+      "dateCreated": "2025-10-09T19:45:18Z"
     },
     {
       "rank": 10,
-      "fullName": "Waishnav/devspace",
-      "owner": "Waishnav",
-      "repo": "devspace",
-      "description": "Turn ChatGPT into Codex",
-      "githubUrl": "https://github.com/Waishnav/devspace",
-      "trendshiftUrl": "https://trendshift.io/repositories/56375",
-      "language": "TypeScript",
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
       "topics": [
-        "AI coding assistant",
-        "MCP",
-        "Self-hosted"
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
       ],
-      "dateCreated": "2026-06-14T16:57:27Z"
+      "dateCreated": "2026-03-29T15:23:22Z"
     }
   ]
 }
