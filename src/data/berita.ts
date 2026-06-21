@@ -750,6 +750,48 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "digital-realty-servicefabric-mcp-data-center-ai",
+    title: "Digital Realty dan MCP: Ketika Data Center Mulai Berbicara Bahasa AI Agent",
+    excerpt:
+      "Digital Realty mengumumkan ServiceFabric MCP di 800+ data center — protokol yang sama yang dipakai agen AI kini juga menjangkau infrastruktur fisik. Apa artinya untuk rencana cloud Indonesia?",
+    category: "Analisis",
+    date: "2026-06-22",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Sebagian besar percakapan tentang AI agent selama ini berputar di sekeliling model, prompt, dan tool yang dipakai agen. Jarang yang membicarakan tempat agen itu hidup: server, rak, catu daya, koneksi antar data center. Padahal di situlah cerita terbesar enterprise AI berikutnya sedang ditulis — dan Digital Realty, operator data center terbesar di dunia, pekan lalu meletakkan kartu penting di atas meja lewat peluncuran ServiceFabric Model Context Protocol (MCP).",
+          "Layanan ini bukan sekadar peluncuran produk biasa. Digital Realty mengumumkan bahwa 800 lebih data center mereka sekarang bisa diprogram lewat protokol yang sama dengan yang dipakai oleh aplikasi AI agent — MCP. Artinya, agen yang berjalan di atas infrastruktur Digital Realty kini bisa meminta, menyesuaikan, dan mengorkestrasi sumber daya komputasi, jaringan, dan storage lewat bahasa standar. Untuk yang sudah terbiasa dengan konsep MCP sebagai 'USB-C-nya AI', ini adalah saat colokan itu masuk ke dinding secara literal.",
+        ],
+      },
+      {
+        heading: "Apa sebenarnya yang diumumkan",
+        paragraphs: [
+          "ServiceFabric MCP adalah implementasi protokol Model Context Protocol di atas platform interkoneksi ServiceFabric milik Digital Realty. Protokol ini awalnya dipopulerkan oleh Anthropic pada 2024 sebagai cara standar bagi aplikasi AI untuk terhubung dengan tool dan sumber data eksternal — dan sejak itu menjadi salah satu standar terbuka paling cepat diadopsi di ekosistem AI agent.",
+          "Yang baru dari pengumuman Digital Realty adalah cakupan: bukan satu produk AI, melainkan lapisan programmable di atas infrastruktur fisik. Lewat ServiceFabric MCP, agen AI bisa membaca status kapasitas data center tertentu, meminta jalur jaringan dedicated ke cloud provider, atau mengorkestrasi penempatan workload di lokasi dengan regulasi data tertentu — semua lewat protokol terbuka yang sama dengan yang dipakai untuk mengakses file atau basis data. Arsitektur di baliknya, AI Private Exchange (AIPx), membawa komponen policy dan orkestrasi yang dipatenkan untuk memastikan bahwa permintaan agen tetap sesuai dengan aturan operasional dan kepatuhan.",
+          "Untuk korporasi besar yang sudah menjalankan AI agent di lingkungan hybrid, ini menghilangkan satu lapisan integrasi khusus yang sebelumnya harus dibangun untuk setiap penyedia data center. Untuk ekosistem AI agent secara keseluruhan, ini adalah sinyal bahwa infrastruktur fisik sedang mengejar laju protokol perangkat lunak — sesuatu yang tidak selalu terjadi di industri ini.",
+        ],
+      },
+      {
+        heading: "Kenapa ini relevan untuk Indonesia",
+        paragraphs: [
+          "Indonesia bukan pasar utama Digital Realty, dan ServiceFabric MCP kemungkinan besar tidak akan langsung tersedia di data center dalam negeri dalam waktu dekat. Tapi implikasinya untuk ekosistem AI Indonesia cukup signifikan, dan bekerja di beberapa lapis sekaligus.",
+          "Lapis pertama adalah soal kedaulatan data. Banyak instansi pemerintah dan perusahaan keuangan di Indonesia diwajibkan menyimpan data di yurisdiksi lokal. Ketika AI agent menjadi lebih umum di operasional harian — untuk otomasi dokumen, analisis, hingga customer service — pertanyaan yang akan muncul bukan hanya 'di mana data disimpan', tapi 'siapa yang bisa diprogram oleh AI untuk memindahkan data itu'. Standar terbuka seperti MCP, kalau diadopsi secara luas oleh operator data center lokal, memberi cara yang lebih transparan untuk mengaudit dan mengontrol akses agen terhadap infrastruktur.",
+          "Lapis kedua adalah soal biaya dan pilihan. Ekosistem AI enterprise saat ini sangat bergantung pada beberapa hyperscaler global. Kehadiran protokol terbuka di lapisan infrastruktur memberi peluang bagi operator data center lokal — termasuk yang melayani pasar regional seperti NeutraDC, DCI Indonesia, atau pemain edge — untuk menawarkan layanan yang lebih interoperable dengan tool AI global. Bagi UMKM dan startup lokal yang sudah mengadopsi MCP untuk aplikasi internal, ini membuka pintu untuk memilih hosting yang tidak mengunci mereka pada satu vendor cloud tertentu.",
+          "Lapis ketiga, dan ini yang paling mudah dilewatkan: standarisasi protokol di level infrastruktur menurunkan hambatan teknis untuk adopsi AI agent di sektor-sektor yang selama ini bergerak lambat. Banyak kegagalan proyek AI di organisasi Indonesia bukan karena modelnya salah, tapi karena integrasi dengan sistem backend — mulai dari sistem pembayaran, ERP, hingga basis data internal — terlalu mahal dan terlalu rapuh untuk dijaga. Kalau infrastruktur komunikasi antar sistem makin seragam lewat protokol terbuka, biaya integrasi itu turun, dan proyek-proyek AI agent yang tadinya sulit dibenarkan dari sisi ROI menjadi lebih realistis.",
+        ],
+      },
+      {
+        heading: "Tanda-tanda yang patut diperhatikan",
+        paragraphs: [
+          "Bukan berarti pengumuman Digital Realty langsung mengubah lanskap AI Indonesia dalam hitungan minggu. Tapi ada beberapa tanda yang layak dipantau enam sampai dua belas bulan ke depan. Pertama, apakah operator data center regional Asia Tenggara — termasuk yang beroperasi di Indonesia — ikut mengumumkan dukungan MCP atau protokol terbuka serupa. Kedua, apakah integrator lokal mulai menawarkan jasa 'MCP server untuk sistem internal' sebagai layanan profesional, mirip dengan yang sudah mulai tumbuh untuk server MCP filesystem dan basis data di pasar global.",
+          "Ketiga, dan ini yang paling penting untuk pengambil keputusan di sektor publik dan korporasi besar: apakah proposal AI agent yang masuk ke meja procurement mulai menyebut MCP atau 'protokol terbuka yang kompatibel' sebagai bagian dari arsitektur. Kalau iya, itu sinyal bahwa pasar sudah bergeser dari pendekatan 'AI agent sebagai addon' menjadi 'AI agent sebagai bagian dari infrastruktur IT yang harus bisa diaudit dan diinteroperasikan'. Untuk ASN yang mengikuti program pelatihan AI, dan untuk CIO di perusahaan menengah yang sedang merancang roadmap AI, memahami arah pergeseran ini akan sangat membantu dalam menyusun strategi yang tidak cepat usang.",
+          "Yang patut dicermati juga adalah apakah inisiatif seperti ini akhirnya mendorong terbentuknya semacam konsorsium standar terbuka di tingkat nasional. Pengalaman global menunjukkan bahwa adopsi protokol terbuka paling sehat ketika ada ekosistem lokal yang aktif menyumbangkan implementasi, dokumentasi, dan use case — bukan sekadar menjadi konsumen. Dalam pengujian editorial Wawasan AI, ServiceFabric MCP adalah pengingat bahwa infrastruktur AI bukan hanya soal siapa punya GPU paling banyak, tapi juga soal siapa yang menulis aturan main untuk menghubungkan semuanya.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
