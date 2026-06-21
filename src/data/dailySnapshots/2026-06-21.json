@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "21 Juni 2026",
+  "period": {
+    "date": "2026-06-21",
+    "label": "21 Juni 2026",
+    "path": "/repo/daily/2026/06/21"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-21T00:04:03.879Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "tw93/Pake",
+      "owner": "tw93",
+      "repo": "Pake",
+      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
+      "githubUrl": "https://github.com/tw93/Pake",
+      "trendshiftUrl": "https://trendshift.io/repositories/1622",
+      "language": "Rust",
+      "topics": [
+        "Headless browser"
+      ],
+      "dateCreated": "2022-10-14T09:32:57Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "description": "macOS video editor built for AI",
+      "githubUrl": "https://github.com/palmier-io/palmier-pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/41342",
+      "language": "Swift",
+      "topics": [
+        "AI video generation",
+        "MCP",
+        "Video editing"
+      ],
+      "dateCreated": "2026-04-07T04:15:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "chopratejas/headroom",
+      "owner": "chopratejas",
+      "repo": "headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "githubUrl": "https://github.com/chopratejas/headroom",
+      "trendshiftUrl": "https://trendshift.io/repositories/20881",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-01-07T19:58:51Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "penpot/penpot",
+      "owner": "penpot",
+      "repo": "penpot",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "githubUrl": "https://github.com/penpot/penpot",
+      "trendshiftUrl": "https://trendshift.io/repositories/3702",
+      "language": "Clojure",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2015-12-29T22:09:07Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-29T15:23:22Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "StarTrail-org/PixelRAG",
+      "owner": "StarTrail-org",
+      "repo": "PixelRAG",
+      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
+      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
+      "trendshiftUrl": "https://trendshift.io/repositories/49753",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "RAG"
+      ],
+      "dateCreated": "2026-05-29T07:25:40Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tursodatabase/turso",
+      "owner": "tursodatabase",
+      "repo": "turso",
+      "description": "Turso is an in-process SQL database, compatible with SQLite.",
+      "githubUrl": "https://github.com/tursodatabase/turso",
+      "trendshiftUrl": "https://trendshift.io/repositories/14144",
+      "language": "Rust",
+      "topics": [
+        "MCP"
+      ],
+      "dateCreated": "2023-08-26T09:21:36Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "DeusData/codebase-memory-mcp",
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "githubUrl": "https://github.com/DeusData/codebase-memory-mcp",
+      "trendshiftUrl": "https://trendshift.io/repositories/23635",
+      "language": "C",
+      "topics": [
+        "AI coding assistant",
+        "AI infrastructure",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-24T22:01:00Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Forsy-AI/agent-apprenticeship",
+      "owner": "Forsy-AI",
+      "repo": "agent-apprenticeship",
+      "description": "The living ecosystem for AI agents learning from real-world work through iterative loops and training-signal exchange.",
+      "githubUrl": "https://github.com/Forsy-AI/agent-apprenticeship",
+      "trendshiftUrl": "https://trendshift.io/repositories/59731",
+      "topics": [],
+      "dateCreated": "2026-06-19T16:19:37Z"
+    }
+  ]
+}

@@ -651,6 +651,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-20",
   },
+  {
+    slug: "hex",
+    name: "Hex",
+    tagline: "Data workspace AI-first dengan SQL, Python, dan app publishing",
+    tags: ["Hex", "Freemium", "Data Analytics", "Collaborative"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 8.8 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.9 },
+      { label: "Harga", value: 7.2 },
+    ],
+    summary:
+      "Hex adalah data workspace kolaboratif yang menyatukan SQL notebook, Python, dan app builder dalam satu produk, dengan asisten Hex AI yang menulis query, menjelaskan kode, dan membangun visualisasi dari prompt bahasa alami. Buat tim data yang sering bolak-balik antara Jupyter, dashboard BI, dan spreadsheet, Hex menutup celah itu dengan workflow dari eksplorasi sampai publikasi yang tidak perlu pindah alat.",
+    pros: [
+      "Hex AI (Notebook, Threads, Semantic Model) adalah salah satu asisten AI terkuat di kategori data notebook — SQL generation dari prompt bahasa alami akurat karena sadar terhadap schema warehouse",
+      "Workflow dari notebook ke published app paling mulus: sekali analisis selesai, klik Publish dan stakeholder non-teknis bisa interaksi dengan filter, parameter, dan chart interaktif tanpa lihat kode",
+      "Konektor warehouse native ke Snowflake, BigQuery, Redshift, Databricks, Postgres — plus integrasi dbt untuk semantic model, dan Git untuk version control",
+      "Real-time collaboration seperti Google Docs: banyak analis bisa edit notebook bersamaan, ada komentar inline, scheduled runs, dan version history bawaan",
+      "Magic AI juga generate Python cell, jelaskan query yang error, dan suggest chart dari data — menekan waktu debugging yang biasanya makan setengah waktu eksplorasi",
+    ],
+    cons: [
+      "Harga Team $75 per editor per bulan cukup mahal untuk ukuran startup Indonesia — lebih mahal dari Looker dan mode BI tradisional",
+      "Free Community plan cuma 5 notebook dengan compute kecil, jadi eksplorasi serius butuh upgrade ke Professional $36/editor/bulan",
+      "Threads agent bekerja di dalam workspace, bukan agent umum yang bisa browsing, kirim email, atau kerja di tool eksternal seperti Claude Code",
+      "Kurva belajar untuk pengguna yang terbiasa dengan Jupyter murni: cell model Hex, app builder, dan semantic layer punya konsep sendiri yang butuh waktu adaptasi",
+    ],
+    verdict:
+      "Titik masuk paling realistis untuk tim data yang ingin menyatukan eksplorasi, analisis, dan dashboard dalam satu alat AI-native. Pilih Hex kalau tim inti Anda SQL-first dan sering publish insight ke stakeholder bisnis; skip kalau workflow Anda solo exploratory atau murni dashboarding.",
+    body: [
+      "Kalau Jupyter adalah buku catatan pribadi untuk data scientist, Hex adalah buku catatan bersama yang berakhir di dashboard interaktif. Paradigmanya cukup jelas: analis menulis SQL atau Python di cell yang berbagi data environment yang sama, Hex AI menulis atau menjelaskan kode berdasarkan schema warehouse yang sudah terkoneksi, lalu satu klik Publish mengubah notebook menjadi aplikasi interaktif yang bisa dipakai manajer non-teknis. Workflow ini menjawab masalah paling umum di tim data modern: hasil analisis yang terkubur di notebook pribadi atau terulang di spreadsheet terpisah. Dalam pengujian editorial Wawasan AI, alur ini memotong rata-rata dua tool — yang biasanya adalah Jupyter plus dashboard BI seperti Looker atau Metabase — menjadi satu workspace.",
+      "Yang membuat Hex menonjol dibanding Deepnote atau Mode adalah Hex AI yang aware terhadap semantic layer. Bukan sekadar autocomplete kode: agen Notebook bisa menulis SQL kompleks dari prompt bahasa alami yang menyebut nama kolom di schema, agen Threads memungkinkan user bisnis bertanya dalam bahasa Inggris biasa dan dapat jawaban dengan sitasi ke cell notebook, dan agen Semantic Model membantu tim mendokumentasikan business logic yang biasanya tercecer di Slack atau Notion. Untuk query analitis yang biasanya butuh 15-20 menit drafting dan debugging di Jupyter, Hex AI menurunkan waktu itu ke 2-3 menit dengan akurasi yang cukup tinggi — terutama untuk SQL aggregate, window function, dan CTE yang strukturnya mudah dipelajari model. Hex AI juga generate Python cell untuk Pandas atau scikit-learn, jelaskan error traceback, dan suggest visualisasi dari data frame, menurunkan friksi debugging yang biasanya makan setengah waktu eksplorasi data.",
+      "Tentu ada batasannya. Pertama, kemampuan agentic Hex AI berakhir di batas workspace — tidak seperti Claude Code atau Codex yang bisa browsing, menjalankan command shell, atau mengirim email, Threads agent Hex hanya bisa akses data dan notebook di dalam platform. Kedua, harga Team $75 per editor per bulan adalah titik sakit utama untuk pasar Indonesia; untuk startup dengan 5 analis, tagihan bulanan sudah di kisaran Rp 6 juta sebelum PPN dan charge kartu kredit internasional. Ketiga, free Community plan yang membatasi 5 notebook dan compute kecil membuat onboarding gratis berakhir cepat — setelah satu sprint eksplorasi serius, pengguna biasanya sudah harus memutuskan upgrade atau pindah ke Deepnote yang free tier lebih generous. Keempat, kurva belajar bukan nol: konsep cell logic, semantic model, dan app builder Hex punya idiom sendiri yang butuh adaptasi, terutama untuk analis yang bertahun-tahun pakai Jupyter vanilla atau pengguna bisnis yang pertama kali berinteraksi dengan notebook.",
+      "Untuk pengguna dan tim di Indonesia, posisi Hex menarik di beberapa sisi. Harga Professional $36 per editor per bulan (sekitar Rp 580 ribu dengan kurs standar) adalah titik masuk paling realistis untuk solo analis atau tim kecil yang sudah terhubung dengan warehouse modern; paket Team $75 (sekitar Rp 1,2 juta) masuk akal untuk tim data yang lebih besar yang nilai penghematan waktu dari Hex AI dan konsolidasi tooling. Yang membuat nilai Hex menonjol untuk konteks lokal: integrasi native ke BigQuery dan PostgreSQL (banyak dipakai startup fintech dan e-commerce Indonesia), kemampuan untuk publish dashboard yang bisa di-embed ke Notion internal atau Slack channel (cocok untuk reporting mingguan tim growth), dan template yang cukup banyak di komunitas untuk use case umum seperti cohort analysis, funnel reporting, dan A/B test evaluation. Tutorial bahasa Indonesia masih terbatas di YouTube dan blog, dan dokumentasi resmi Hex Learn masih didominasi bahasa Inggris, tapi ini bukan blocker serius untuk analis yang sudah nyaman dengan query SQL. Pembayaran subscription luar negeri tetap kena PPN 11 persen dan charge kartu kredit internasional, markup total sekitar 12-15 persen di atas harga tertera; beberapa tim lokal memilih top-up via platform pihak ketiga atau tagihan corporate yang lebih efisien. Untuk akademisi dan mahasiswa, free Community plan sudah cukup untuk eksplorasi dataset kecil dan portfolio pribadi. Untuk konsultan data atau agensi yang handle banyak klien dengan schema warehouse berbeda, Hex bukan pilihan terbaik — itu medan Deepnote atau Jupyter vanilla yang lebih fleksibel. Tapi untuk startup B2B atau korporasi menengah yang sudah investasi di Snowflake atau BigQuery dan ingin tim data lebih kolaboratif, Hex di 2026 adalah salah satu pilihan paling matang di kategori AI-first data workspace.",
+    ],
+    link: "https://hex.tech",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-21",
+  },
 ];
 
 export function getStack(slug: string) {
