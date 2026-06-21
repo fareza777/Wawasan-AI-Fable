@@ -383,6 +383,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Setiap task yang selesai lewat Agent Apprenticeship bisa diestimasi nilai ekonominya (khususnya domain khusus), jadi 'pekerjaan agen' punya metrik nilai — bukan cuma selesai/tidak.",
     ],
   },
+  "iptv-org/iptv": {
+    description:
+      "Daftar publik 100+ ribu channel TV live dari seluruh dunia yang dikurasi komunitas — tinggal salin URL M3U ke VLC, Kodi, atau player IPTV apa pun, gratis.",
+    highlights: [
+      "Repositori IPTV publik terbesar di GitHub: lebih dari 100 ribu channel dari 200+ negara, dikurasi komunitas dan diperbarui otomatis lewat GitHub Actions.",
+      "Salin satu URL playlist M3U ke VLC, Kodi, IINA, atau player IPTV mana pun — tidak perlu install aplikasi tambahan, tidak perlu sign-up, tidak perlu langganan.",
+      "Dilengkapi EPG (Electronic Program Guide) terpisah, database metadata channel, API publik, dan daftar Awesome IPTV player — bukan cuma playlist, tapi ekosistem lengkap untuk nonton TV live legal.",
+      "Cocok untuk pengguna yang ingin akses channel berita, olahraga, dan hiburan gratis via internet, atau untuk developer IPTV player yang butuh sumber playlist terverifikasi.",
+    ],
+  },
+  "palmier-io/palmier-pro": {
+    description:
+      "Editor video open-source untuk macOS Apple Silicon yang 'dibangun untuk AI' — Claude Code, Codex, atau Cursor bisa edit timeline lewat MCP server bawaan, bukan cuma nonton hasil render.",
+    highlights: [
+      "Editor video native Swift dari Palmier Inc (Y Combinator S24) yang dirancang dari awal dengan AI workflow sebagai warga kelas satu — bukan bolt-on, melainkan MCP server lokal di port 19789 yang diekspos sejak app dibuka.",
+      "Claude Code, Codex, atau Cursor bisa menambah, memotong, dan menyusun clip di timeline lewat protokol MCP standar — `claude mcp add --transport http palmier-pro http://127.0.0.1:19789/mcp` langsung nyala, agen AI menjadi editor video yang bisa berkolaborasi.",
+      "Generator AI bawaan untuk Seedance, Kling, Nano Banana Pro langsung di timeline — video dan image di-generate, di-drag, dan di-compose di tempat yang sama tanpa harus bolak-balik ke tool lain.",
+      "100% open source (GPLv3) untuk editor dan MCP server-nya; butuh macOS 26 Tahoe di Apple Silicon, dan fitur generative AI-nya subscription-based — relevan untuk tim content creator yang ingin AI agent jadi co-editor, bukan cuma generator.",
+    ],
+  },
+  "tw93/Pake": {
+    description:
+      "CLI Rust + Tauri yang membungkus halaman web apa pun jadi aplikasi desktop native — jauh lebih ringan dari Electron (20x lebih kecil), cocok untuk bikin wrapper ChatGPT, WhatsApp Web, atau dashboard internal.",
+    highlights: [
+      "Web-to-desktop converter open-source dari developer Tw93: satu perintah `pake <url>` langsung menghasilkan installer native untuk macOS, Windows, dan Linux — pakai WebView OS (WKWebView/WebView2/WebKitGTK), bukan Chromium embed.",
+      "Bedanya dari Electron: bundle 20x lebih kecil, start-up nyaris instan, dan konsumsi RAM ratusan megabyte lebih hemat — karena tidak embed Chromium, melainkan WebView yang sudah ada di OS.",
+      "Kustomisasi lengkap lewat CLI: judul, ikon, lebar minimum, full-screen mode, dan JavaScript injection untuk tweak tampilan — WebView yang dibungkus tetap ngerasa native, bukan wrapper yang kaku.",
+      "Cocok untuk developer yang ingin bikin 'aplikasi wrapper' untuk ChatGPT, WhatsApp Web, Linear, atau dashboard internal tanpa setup native project — 50+ ribu bintang di GitHub jadi bukti komunitas sudah adopsi sebagai standar.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
