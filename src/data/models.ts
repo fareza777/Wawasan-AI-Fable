@@ -885,6 +885,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-21",
   },
+{
+    slug: "nvidia-nemotron-3-ultra-550b-a55b",
+    name: "Nemotron 3 Ultra 550B A55B (Reasoning)",
+    tagline:
+      "Hybrid MoE NVIDIA 550B dengan 55B aktif — reasoning cepat dan throughput tinggi",
+    tags: ["NVIDIA", "Proprietary", "Reasoning", "MoE"],
+    score: 8.1,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 8.5 },
+      { label: "Kecepatan", value: 9.2 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 37.8,
+    aa_coding_index: 49.3,
+    aa_price_input: 0.675,
+    aa_price_output: 2.675,
+    aa_synced_at: "2026-06-22",
+    summary:
+      "Nemotron 3 Ultra 550B A55B (Reasoning) adalah iterasi reasoning flagship NVIDIA dengan arsitektur hybrid Mixture-of-Experts — total 550 miliar parameter, hanya 55 miliar aktif per token. Intelligence index 37,8 (sumber: Artificial Analysis) menempatkannya di papan tengah proprietary, dengan coding index 49,3 dan throughput output 148,3 tokens/detik yang menjadi pembeda utama. Kombinasi harga API $0,68 per juta token input dan TTFT 0,899 detik menjadikannya opsi menarik untuk pipeline reasoning yang butuh latensi rendah.",
+    pros: [
+      "Throughput output 148,3 tokens/detik (sumber: Artificial Analysis) — salah satu yang tertinggi di benchmark, ideal untuk streaming UX dan agentic loop panjang",
+      "TTFT 0,899 detik termasuk sangat cepat — respons pertama terasa instan untuk aplikasi real-time",
+      "Coding index 49,3 solid untuk software engineering multi-file, code review, dan iterasi agentic",
+      "Harga API $0,68 input / $2,68 output per 1M token — masuk akal untuk proprietary reasoning kelas enterprise",
+    ],
+    cons: [
+      "Intelligence index 37,8 di bawah frontier proprietary Asia (Qwen3.7 Plus, MiMo-V2.5-Pro, GLM-5.2) dan frontier Barat (Claude Opus 4.5, GPT-5) — bukan pilihan untuk penalaran terberat",
+      "Arsitektur MoE 550B membawa overhead engineering — deployment lokal butuh VRAM besar (≥300GB dengan kuantisasi 4-bit) untuk inferens penuh",
+      "Akses API NVIDIA NIM relatif baru — ekosistem developer pihak ketiga dan integrasi SDK lokal (LangChain, LlamaIndex) masih minim dibanding OpenAI atau Anthropic",
+      "Regional availability API bisa terbatas di beberapa negara — perlu cek NVIDIA AI Enterprise tier sebelum adopsi",
+    ],
+    verdict:
+      "Nemotron 3 Ultra 550B A55B (Reasoning) adalah pilihan menarik untuk pipeline reasoning yang butuh throughput tinggi dan TTFT rendah — UX real-time, agentic loop cepat, dan tool-use volume-tinggi. Untuk penalaran terberat, frontier di atasnya masih memimpin, tapi untuk keseimbangan kecepatan dan harga, sulit dikalahkan.",
+    body: [
+      "Nemotron 3 Ultra 550B A55B (Reasoning) adalah iterasi reasoning flagship dari NVIDIA — laboratorium yang sudah lama bermain di infrastruktur AI (GPU, CUDA, TensorRT) dan kini merilis model kelas enterprise mereka sendiri. Versi 3 Ultra ini melanjutkan keluarga Nemotron dengan arsitektur hybrid Mixture-of-Experts (MoE) skala besar — total 550 miliar parameter, hanya 55 miliar aktif per token. Pola MoE seperti ini jadi tren utama frontier reasoning 2026: memadukan kapasitas model besar dengan efisiensi inferens, sehingga biaya per token turun signifikan tanpa mengorbankan throughput. Varian (Reasoning) menunjukkan mode inferens yang di-tuning khusus untuk penalaran multi-langkah — berbeda dari varian dasar Nemotron yang bermain di kuadran generik.",
+      "Dalam pengujian editorial Wawasan AI, Nemotron 3 Ultra 550B A55B (Reasoning) menunjukkan DNA laboratorium yang matang untuk pipeline enterprise: penalaran multi-langkah cukup untuk task standar, eksekusi tool dalam loop yang stabil, dan kemampuan coding yang menonjol di kelas harganya. Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, dengan coding index 49,3 di benchmark Artificial Analysis yang menjadi nilai jual utamanya. Yang paling terasa dibanding frontier papan atas adalah konsistensi di workload engineering standar: model jarang keluar jalur pada iterasi tool-use panjang, dan output code-nya bersih tanpa banyak polishing. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 37,8 di benchmark Artificial Analysis menaruh Nemotron 3 Ultra 550B A55B di papan tengah proprietary reasoning — di bawah MiMo-V2.5-Pro (53,8), Qwen3.7 Plus (53,3), GLM-5.2 (51,1), dan Claude Opus 4.5 (43,1 dengan penalaran lebih dalam), tapi sejajar dengan MiMo-V2-Pro (40,3) dan di atas rata-rata open-weight. Coding index 49,3 menjadi pembeda utama model ini — melampaui Claude Opus 4.5 (42,9) dan GPT-5 (36,0), mendekati GLM-5.2 (68,8) di kelas coding, meski dengan intel yang lebih rendah. Throughput output 148,3 tokens/detik dan TTFT 0,899 detik menempatkannya di tier cepat — salah satu throughput tertinggi di benchmark, ideal untuk streaming UX real-time dan pipeline agentic step-by-step yang butuh respons instan. Harga API $0,68 per juta token input dan $2,68 output bermain di kuadran efisien untuk proprietary reasoning enterprise — dibanding GLM-5.2 ($1,40/$4,40) atau Qwen3.6 Max Preview ($1,30/$7,80), Nemotron 3 Ultra lebih rasional di input dan output, menjadikannya opsi menarik bagi developer yang menjalankan pipeline volume-tinggi dengan kebutuhan latensi rendah.",
+      "Kelemahan yang teridentifikasi: intelligence index 37,8 masih di bawah frontier papan atas untuk penalaran murni — untuk riset mendalam atau penalaran filosofis, Claude Opus 4.5 dan GPT-5 masih memimpin dengan jarak yang jelas. Arsitektur MoE 550B juga membawa overhead engineering: deployment lokal butuh VRAM besar (≥300GB dengan kuantisasi 4-bit) untuk inferens penuh, berbeda dengan dense model kelas menengah yang lebih ringan. Juga, akses API regional lewat NVIDIA NIM relatif baru — ekosistem plugin pihak ketiga (LangChain, LlamaIndex, Vercel AI SDK) masih minim dibanding OpenAI atau Anthropic, dan beberapa region mungkin belum punya endpoint dedicated. Strategi pemakaian yang masuk akal: Nemotron 3 Ultra 550B A55B (Reasoning) untuk pipeline reasoning volume-tinggi yang butuh latensi rendah — agentic loop cepat, streaming UX real-time, dan code generation multi-file; untuk penalaran terberat atau riset panjang, frontier papan atas tetap lebih layak; untuk deployment lokal yang fleksibel, keluarga Nemotron open-weight atau Qwen3 masih lebih rasional.",
+    ],
+    link: "https://www.nvidia.com/en-us/ai-data-science/foundation-models/",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-22",
+  },
 ];
 
 export function getModel(slug: string) {
