@@ -1,17 +1,27 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "21 Juni 2026",
-  "period": {
-    "date": "2026-06-21",
-    "label": "21 Juni 2026",
-    "path": "/repo/daily/2026/06/21"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-21T00:04:03.879Z",
+  "fetchedAt": "2026-06-21T06:27:38.673Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "zhongerxin/cowart",
+      "owner": "zhongerxin",
+      "repo": "cowart",
+      "description": "",
+      "githubUrl": "https://github.com/zhongerxin/cowart",
+      "trendshiftUrl": "https://trendshift.io/repositories/60229",
+      "language": "JavaScript",
+      "topics": [
+        "AI image generation"
+      ],
+      "dateCreated": "2026-06-18T16:08:30Z"
+    },
+    {
+      "rank": 2,
       "fullName": "tw93/Pake",
       "owner": "tw93",
       "repo": "Pake",
@@ -25,35 +35,19 @@
       "dateCreated": "2022-10-14T09:32:57Z"
     },
     {
-      "rank": 2,
-      "fullName": "palmier-io/palmier-pro",
-      "owner": "palmier-io",
-      "repo": "palmier-pro",
-      "description": "macOS video editor built for AI",
-      "githubUrl": "https://github.com/palmier-io/palmier-pro",
-      "trendshiftUrl": "https://trendshift.io/repositories/41342",
-      "language": "Swift",
-      "topics": [
-        "AI video generation",
-        "MCP",
-        "Video editing"
-      ],
-      "dateCreated": "2026-04-07T04:15:51Z"
-    },
-    {
       "rank": 3,
-      "fullName": "chopratejas/headroom",
-      "owner": "chopratejas",
-      "repo": "headroom",
-      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
-      "githubUrl": "https://github.com/chopratejas/headroom",
-      "trendshiftUrl": "https://trendshift.io/repositories/20881",
+      "fullName": "StarTrail-org/PixelRAG",
+      "owner": "StarTrail-org",
+      "repo": "PixelRAG",
+      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
+      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
+      "trendshiftUrl": "https://trendshift.io/repositories/49753",
       "language": "Python",
       "topics": [
-        "AI agent",
-        "AI infrastructure"
+        "Computer vision",
+        "RAG"
       ],
-      "dateCreated": "2026-01-07T19:58:51Z"
+      "dateCreated": "2026-05-29T07:25:40Z"
     },
     {
       "rank": 4,
@@ -71,37 +65,6 @@
     },
     {
       "rank": 5,
-      "fullName": "calesthio/OpenMontage",
-      "owner": "calesthio",
-      "repo": "OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "githubUrl": "https://github.com/calesthio/OpenMontage",
-      "trendshiftUrl": "https://trendshift.io/repositories/24682",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI video generation",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-03-29T15:23:22Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "StarTrail-org/PixelRAG",
-      "owner": "StarTrail-org",
-      "repo": "PixelRAG",
-      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
-      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
-      "trendshiftUrl": "https://trendshift.io/repositories/49753",
-      "language": "Python",
-      "topics": [
-        "Computer vision",
-        "RAG"
-      ],
-      "dateCreated": "2026-05-29T07:25:40Z"
-    },
-    {
-      "rank": 7,
       "fullName": "DietrichGebert/ponytail",
       "owner": "DietrichGebert",
       "repo": "ponytail",
@@ -116,45 +79,73 @@
       "dateCreated": "2026-06-12T00:52:37Z"
     },
     {
-      "rank": 8,
-      "fullName": "tursodatabase/turso",
-      "owner": "tursodatabase",
-      "repo": "turso",
-      "description": "Turso is an in-process SQL database, compatible with SQLite.",
-      "githubUrl": "https://github.com/tursodatabase/turso",
-      "trendshiftUrl": "https://trendshift.io/repositories/14144",
-      "language": "Rust",
+      "rank": 6,
+      "fullName": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "description": "macOS video editor built for AI",
+      "githubUrl": "https://github.com/palmier-io/palmier-pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/41342",
+      "language": "Swift",
       "topics": [
-        "MCP"
+        "AI video generation",
+        "MCP",
+        "Video editing"
       ],
-      "dateCreated": "2023-08-26T09:21:36Z"
+      "dateCreated": "2026-04-07T04:15:51Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "mysk-research/loupe",
+      "owner": "mysk-research",
+      "repo": "loupe",
+      "description": "A privacy-focused iOS app that raises awareness about what native apps can see",
+      "githubUrl": "https://github.com/mysk-research/loupe",
+      "trendshiftUrl": "https://trendshift.io/repositories/46885",
+      "topics": [],
+      "dateCreated": "2026-06-04T00:45:57Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "jbiaojerry/ebook-treasure-chest",
+      "owner": "jbiaojerry",
+      "repo": "ebook-treasure-chest",
+      "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
+      "githubUrl": "https://github.com/jbiaojerry/ebook-treasure-chest",
+      "trendshiftUrl": "https://trendshift.io/repositories/25923",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2023-09-13T12:22:09Z"
     },
     {
       "rank": 9,
-      "fullName": "DeusData/codebase-memory-mcp",
-      "owner": "DeusData",
-      "repo": "codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "githubUrl": "https://github.com/DeusData/codebase-memory-mcp",
-      "trendshiftUrl": "https://trendshift.io/repositories/23635",
-      "language": "C",
+      "fullName": "elder-plinius/GLOSSOPETRAE",
+      "owner": "elder-plinius",
+      "repo": "GLOSSOPETRAE",
+      "description": "LINGUISTIC ENGINE FOR AI",
+      "githubUrl": "https://github.com/elder-plinius/GLOSSOPETRAE",
+      "trendshiftUrl": "https://trendshift.io/repositories/60233",
+      "language": "JavaScript",
       "topics": [
-        "AI coding assistant",
-        "AI infrastructure",
-        "MCP"
+        "NLP"
       ],
-      "dateCreated": "2026-02-24T22:01:00Z"
+      "dateCreated": "2026-02-02T18:42:31Z"
     },
     {
       "rank": 10,
-      "fullName": "Forsy-AI/agent-apprenticeship",
-      "owner": "Forsy-AI",
-      "repo": "agent-apprenticeship",
-      "description": "The living ecosystem for AI agents learning from real-world work through iterative loops and training-signal exchange.",
-      "githubUrl": "https://github.com/Forsy-AI/agent-apprenticeship",
-      "trendshiftUrl": "https://trendshift.io/repositories/59731",
-      "topics": [],
-      "dateCreated": "2026-06-19T16:19:37Z"
+      "fullName": "iptv-org/iptv",
+      "owner": "iptv-org",
+      "repo": "iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "githubUrl": "https://github.com/iptv-org/iptv",
+      "trendshiftUrl": "https://trendshift.io/repositories/730",
+      "language": "TypeScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2018-11-14T22:00:57Z"
     }
   ]
 }
