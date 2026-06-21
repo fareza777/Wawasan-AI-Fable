@@ -1049,6 +1049,56 @@ export const repos: Review[] = [
     date: "2026-06-21",
     updatedAt: "2026-06-21",
   },
+  {
+    slug: "vllm",
+    name: "vLLM",
+    tagline: "Mesin inferensi LLM throughput tinggi yang jadi standar industri",
+    tags: ["LLM Serving", "Inferensi", "Python", "Open Source"],
+    score: 9.0,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 9.0 },
+    ],
+    summary:
+      "vLLM adalah mesin inferensi dan serving LLM open-source dari UC Berkeley yang kini jadi tumpuan banyak deployment produksi. Dengan teknik PagedAttention, continuous batching, dan dukungan lebih dari 200 arsitektur model, vLLM memberikan throughput tinggi dengan jejak memori yang efisien — fitur yang menjadikannya pilihan default untuk self-hosting model besar.",
+    highlights: [
+      "PagedAttention: manajemen KV-cache ala virtual memory paging yang menekan fragmentasi dan menggandakan throughput dibanding sistem naive",
+      "Continuous batching + chunked prefill + prefix caching: pipelining request yang masuk sehingga utilisasi GPU tetap padat di skenario produksi",
+      "Dukungan 200+ arsitektur model Hugging Face: Llama, Qwen, DeepSeek-V3, Mixtral, GPT-OSS, Mamba, model multimodal (LLaVA, Qwen-VL), embedding, dan reward model",
+      "OpenAI-compatible API server plus dukungan Anthropic Messages API dan gRPC untuk migrasi drop-in dari layanan komersial",
+      "Kuantisasi lebar: FP8, MXFP8/MXFP4, NVFP4, INT8, INT4, GPTQ, AWQ, GGUF, BitsAndBytes — fleksibel untuk hardware kelas konsumen hingga data center",
+      "Optimasi kernel GPU: FlashAttention, FlashInfer, FlashMLA, TRTLLM-GEN, Triton, CUTLASS, MoE kernels — hasil kontribusi dari komunitas dan vendor hardware",
+      "Hardware broad: NVIDIA/AMD GPU, Google TPU, Intel Gaudi, Huawei Ascend, Rebellions NPU, Apple Silicon, CPU x86/ARM/PowerPC",
+      "Speculative decoding (n-gram, suffix, EAGLE, DFlash) untuk mempercepat waktu respons pertama tanpa mengorbankan kualitas",
+      "Disaggregated prefill/decode/encode: arsitektur serving yang memisahkan fase prompt-processing dan generation untuk utilisasi hardware lebih baik",
+      "Lisensi Apache-2.0, kontributor dari 2.000+ individu dan puluhan institusi akademik serta perusahaan",
+    ],
+    pros: [
+      "Throughput dan efisiensi memori terbaik di kelasnya — ideal untuk self-hosting model besar dengan biaya GPU yang masuk akal",
+      "Komunitas sangat aktif, ritme rilis cepat, dan dukungan model baru biasanya hadir dalam hitungan hari setelah rilis upstream",
+      "API server yang kompatibel OpenAI membuat migrasi dari layanan komersial ke self-hosted menjadi plug-and-play",
+    ],
+    cons: [
+      "Kebutuhan hardware tetap nontrivial: untuk ukuran model dan latency serius, GPU kelas data center atau multi-GPU tetap perlu",
+      "Dokumentasi tersebar antara docs resmi, paper, dan diskusi komunitas — onboarding awal butuh waktu eksplorasi",
+      "Pada model-model baru atau eksotis, beberapa fitur lanjutan (quantization, speculative decoding) kadang butuh penyesuaian manual",
+    ],
+    verdict:
+      "Standar de facto untuk LLM serving open-source. Kalau Anda serius menjalankan model secara self-hosted — untuk produk internal, riset, atau UMKM yang ingin menjaga data di tempat — vLLM adalah titik awal yang paling masuk akal di 2026.",
+    body: [
+      "Kalau OpenClaw dan Hermes merepresentasikan gelombang agent, maka vLLM merepresentasikan fondasi yang menopang semuanya: kemampuan menjalankan model bahasa besar secara efisien, murah, dan bisa di-scale. Berawal dari riset di Sky Computing Lab, UC Berkeley, vLLM memperkenalkan PagedAttention — ide sederhana namun berdampak besar yang meminjam konsep virtual memory paging untuk mengelola KV-cache di GPU. Hasilnya, utilisasi hardware melonjak dan inferensi yang awalnya mahal menjadi jauh lebih ekonomis.",
+      "Yang membuat vLLM menonjol di ekosistem open-source adalah kombinasi kelengkapan fitur dan kedalaman optimasi. Continuous batching menjaga GPU tetap sibuk di skenario concurrent requests. Kuantisasi modern (FP8, NVFP4, GPTQ, AWQ) memungkinkan model besar berjalan di hardware yang lebih terjangkau. OpenAI-compatible API server memudahkan transisi dari layanan komersial. Dan dukungan lebih dari 200 arsitektur model — dari Llama, Qwen, DeepSeek-V3, hingga model multimodal seperti LLaVA dan Qwen-VL — membuat vLLM sangat jarang menemui kasus model yang tidak didukung.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling meyakinkan adalah deployment self-hosted untuk tim kecil-menengah. Sebuah instance vLLM dengan satu GPU kelas menengah sudah cukup melayani beberapa ratus request per menit untuk model 7B–14B. Bagi konteks Indonesia, ini relevan: tim developer, kampus, atau startup yang ingin menjalankan asisten internal, chatbot layanan pelanggan, atau pipeline analisis dokumen kini punya opsi yang tidak harus bergantung pada API komersial. Untuk UMKM yang khawatir soal privasi data, vLLM + GPU on-prem adalah kombinasi yang semakin realistis.",
+      "Bukan berarti tanpa kompromi. vLLM tetaplah tool untuk tim yang paham infrastruktur: kapasitas GPU perlu diperhitungkan, model baru kadang butuh konfigurasi quantization manual, dan beberapa fitur advanced seperti speculative decoding atau disaggregated serving perlu tuning. Dokumentasi resmi terus membaik, tapi densitas fitur membuat kurva belajar terasa curam di awal. Namun bagi siapa pun yang berniat serius di dunia LLM self-hosted, melewati kurva itu sebanding dengan apa yang diperoleh. vLLM bukan sekadar proyek — ini infrastruktur.",
+    ],
+    link: "https://github.com/vllm-project/vllm",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-22",
+    updatedAt: "2026-06-22",
+  },
 ];
 
 export function getRepo(slug: string) {
