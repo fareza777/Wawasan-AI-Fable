@@ -413,6 +413,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Cocok untuk developer yang ingin bikin 'aplikasi wrapper' untuk ChatGPT, WhatsApp Web, Linear, atau dashboard internal tanpa setup native project — 50+ ribu bintang di GitHub jadi bukti komunitas sudah adopsi sebagai standar.",
     ],
   },
+  "bytedance/deer-flow": {
+    description:
+      "Harness SuperAgent open-source dari ByteDance yang riset, kode, dan bikin konten dalam satu workflow multi-agen — pakai sandbox, memori, sub-agen, dan skill ekstensibel untuk task yang makan menit sampai jam.",
+    highlights: [
+      "DeerFlow 2.0 (Deep Exploration and Efficient Research Flow) ditulis ulang dari nol oleh ByteDance dan sempat rebut #1 GitHub Trending pada 28 Februari 2026 — di atas pondasi LangChain, LangGraph, dan protokol MCP standar.",
+      "Orkestrasi multi-agen: satu prompt bisa dipecah ke sub-agen riset, coding, dan content creation yang jalan paralel di sandbox terisolasi, lalu hasilnya di-sintesis jadi laporan, podcast, atau slide — output podcast termasuk built-in.",
+      "Coding Plan dari ByteDance Volcengine merekomendasikan Doubao-Seed-2.0-Code, DeepSeek v3.2, dan Kimi 2.5 sebagai LLM backend — bisa juga pakai OpenAI/Anthropic; setup satu baris lewat CLI atau web UI.",
+      "100% open source (MIT) Python + Node.js; pakai InfoQuest dari BytePlus untuk web search, dukung skill ekstensibel untuk domain khusus (finance, akademis, dsb) — relevan untuk tim riset, jurnalis data, dan konsultan yang mau otomatisasi deep research.",
+    ],
+  },
+  "jamiepine/voicebox": {
+    description:
+      "Studio voice AI open-source yang jalan lokal — clone suara, dikte global ke aplikasi mana pun, dan bikin agen AI (Claude Code, Cursor) bicara lewat suara cloned lewat MCP server bawaan.",
+    highlights: [
+      "Voicebox v0.5 menyatukan voice cloning (Qwen3-TTS, Whisper), multi-track timeline editor, dan push-to-talk global yang auto-paste transkrip ke field aplikasi manapun — 30+ ribu bintang GitHub dan GUI native untuk macOS/Windows.",
+      "Mendukung hampir semua akselerator GPU: MLX (Metal) 4-5x lebih cepat di Apple Silicon, PyTorch CUDA di NVIDIA, ROCm di AMD, DirectML universal di Windows, IPEX di Intel Arc, sampai CPU fallback — auto-detect saat instalasi.",
+      "REST API lokal di port 17493 (`/generate`, `/speak`, `/transcribe`) plus MCP server HTTP yang langsung plug ke Claude Code, Cursor, Windsurf, Cline lewat `claude mcp add voicebox --transport http` — agen bisa 'bicara' dengan suara cloned yang konsisten antar-task.",
+      "Semua pemrosesan 100% lokal (privasi penuh, tidak ada data ke cloud), engine preset Qwen CustomVoice dan Kokoro mendukung bahasa selain Inggris; relevan untuk creator, podcaster, dan developer yang mau kasih 'suara khas' ke agen AI mereka sendiri.",
+    ],
+  },
+  "ZhuLinsen/daily_stock_analysis": {
+    description:
+      "Sistem analisis saham multi-pasar bertenaga LLM untuk saham A/HK/US/JP/Korea — kumpulkan data pasar real-time, news, dan dashboard keputusan yang auto-push tiap pagi ke WeCom, Feishu, Telegram, Discord, Slack, atau email.",
+    highlights: [
+      "Repo Python open-source (MIT) yang fokus ke investor ritel Asia: tiap pagi sistem menarik data multi-sumber, menjalankan analisis teknikal + fundamental lewat LLM, dan menghasilkan 'dashboard keputusan' siap baca — bukan sekadar notifikasi harga.",
+      "Pipeline analisis end-to-end: kutipan real-time + berita dari banyak sumber → ringkasan via LLM (DeepSeek, GPT, atau model lokal) → output visual dengan indikator teknikal dan sinyal beli/jaga/jual yang bisa dikonfigurasi per-watchlist.",
+      "Auto-push gratis via GitHub Actions — zero biaya operasional (cukup modal LLM API opsional); mendukung notifikasi ke banyak channel sekaligus, dan tiap watchlist saham bisa punya prompt analisa yang berbeda.",
+      "44+ ribu bintang GitHub dengan komunitas CN aktif; relevan untuk trader ritel Indonesia yang juga pantau saham regional, atau developer yang ingin bangun pipeline riset pasar otomatis — kustomisasi prompt LLM jadi kunci untuk gaya analisa masing-masing.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
