@@ -1,0 +1,164 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "22 Juni 2026",
+  "period": {
+    "date": "2026-06-22",
+    "label": "22 Juni 2026",
+    "path": "/repo/daily/2026/06/22"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-22T00:03:52.866Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-29T15:23:22Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "description": "macOS video editor built for AI",
+      "githubUrl": "https://github.com/palmier-io/palmier-pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/41342",
+      "language": "Swift",
+      "topics": [
+        "AI video generation",
+        "MCP",
+        "Video editing"
+      ],
+      "dateCreated": "2026-04-07T04:15:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "StarTrail-org/PixelRAG",
+      "owner": "StarTrail-org",
+      "repo": "PixelRAG",
+      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
+      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
+      "trendshiftUrl": "https://trendshift.io/repositories/49753",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "RAG"
+      ],
+      "dateCreated": "2026-05-29T07:25:40Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "zhongerxin/cowart",
+      "owner": "zhongerxin",
+      "repo": "cowart",
+      "description": "",
+      "githubUrl": "https://github.com/zhongerxin/cowart",
+      "trendshiftUrl": "https://trendshift.io/repositories/60229",
+      "language": "JavaScript",
+      "topics": [
+        "AI image generation"
+      ],
+      "dateCreated": "2026-06-18T16:08:30Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "tw93/Pake",
+      "owner": "tw93",
+      "repo": "Pake",
+      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
+      "githubUrl": "https://github.com/tw93/Pake",
+      "trendshiftUrl": "https://trendshift.io/repositories/1622",
+      "language": "Rust",
+      "topics": [
+        "Headless browser"
+      ],
+      "dateCreated": "2022-10-14T09:32:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2026-01-10T06:43:20Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "penpot/penpot",
+      "owner": "penpot",
+      "repo": "penpot",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "githubUrl": "https://github.com/penpot/penpot",
+      "trendshiftUrl": "https://trendshift.io/repositories/3702",
+      "language": "Clojure",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2015-12-29T22:09:07Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "jamiepine/voicebox",
+      "owner": "jamiepine",
+      "repo": "voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "githubUrl": "https://github.com/jamiepine/voicebox",
+      "trendshiftUrl": "https://trendshift.io/repositories/21213",
+      "language": "TypeScript",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-01-25T12:27:03Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "bytedance/deer-flow",
+      "owner": "bytedance",
+      "repo": "deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "githubUrl": "https://github.com/bytedance/deer-flow",
+      "trendshiftUrl": "https://trendshift.io/repositories/14699",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2025-05-07T02:50:19Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    }
+  ]
+}

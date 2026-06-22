@@ -691,6 +691,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-21",
   },
+  {
+    slug: "jetbrains-ai",
+    name: "JetBrains AI Assistant",
+    tagline: "Asisten AI native di seluruh IDE JetBrains dengan agen Junie",
+    tags: ["JetBrains", "Freemium", "IDE Assistant", "Coding"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.3 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 9.1 },
+      { label: "Harga", value: 8.3 },
+    ],
+    summary:
+      "JetBrains AI Assistant menyatukan chat, refactor, dan agen Junie langsung di IntelliJ, PyCharm, WebStorm, dan IDE JetBrains lainnya — tanpa pindah ke editor terpisah. Untuk tim yang sudah hidup di ekosistem JetBrains, ini adalah lapisan AI paling natural dibanding menambah Cursor atau Copilot di samping.",
+    pros: [
+      "Integrasi IDE paling dalam di kelasnya: aware terhadap PSI, symbol, dan refactor engine JetBrains — bukan sekadar autocomplete di atas editor",
+      "Junie agent (2026) bisa menjalankan tugas multi-langkah di repo: edit file, jalankan run configuration, dan iterasi dari error build",
+      "Multi-model dalam satu langganan: GPT-5, Claude 4.5 Sonnet, Gemini 2.5 Pro, plus model JetBrains sendiri",
+      "AI Free tier dengan unlimited code completion plus 3 kredit premium per 30 hari — cukup untuk evaluasi serius",
+      "Ekosistem plugin, VCS, dan run/debug configuration yang sudah mapan — AI tidak perlu 'belajar ulang' struktur proyek dari nol",
+    ],
+    cons: [
+      "Harga AI Ultimate $30/bulan per pengguna terasa mahal dibanding GitHub Copilot $10 untuk solo developer",
+      "Junie masih kalah dari Claude Code atau Codex pada tugas lintas repo sangat besar dengan banyak subagent",
+      "Nilai maksimal hanya terasa kalau kamu sudah commit ke JetBrains IDE — migrasi dari VS Code butuh adaptasi keyboard dan workflow",
+      "Beberapa fitur agentic butuh koneksi cloud stabil; offline hanya completion lokal terbatas",
+    ],
+    verdict:
+      "Pilihan paling masuk akal untuk developer yang sudah di JetBrains dan ingin AI tanpa ganti editor. Catatan utamanya: kalau timmu belum di ekosistem JetBrains, barrier migrasi IDE lebih berat daripada sekadar subscribe AI Pro.",
+    body: [
+      "JetBrains memasuki gelombang AI coding dengan pendekatan yang konsisten dengan DNA produknya: bukan membangun editor baru, melainkan menyuntikkan asisten ke IDE yang sudah dipakai jutaan developer. JetBrains AI Assistant menggabungkan chat kontekstual, refactor bertenaga model, dan Junie — agen yang bisa mengerjakan tugas multi-langkah di dalam proyek — langsung di panel yang sama dengan struktur file, run configuration, dan VCS. Paradigmanya berbeda dari Cursor (editor AI-first) atau Claude Code (terminal-first): kamu tetap di IntelliJ atau PyCharm, dan AI bekerja di atas abstraksi PSI yang sudah dipahami IDE selama bertahun-tahun.",
+      "Dalam pengujian editorial Wawasan AI, keunggulan paling terasa pada integrasi semantik. Saat meminta refactor extract method, rename symbol lintas modul, atau generate test dari class Java/Kotlin, asisten tidak sekadar menulis teks — ia memanfaatkan engine refactor JetBrains sehingga hasilnya konsisten dengan AST proyek. Junie menambah lapisan agentic: prompt seperti 'perbaiki test yang gagal di modul payment dan jalankan ulang suite' bisa menghasilkan iterasi edit-run-fix tanpa keluar dari IDE. Multi-model (GPT-5, Claude 4.5 Sonnet, Gemini 2.5 Pro) memberi fleksibilitas per tugas: Claude untuk reasoning panjang, GPT untuk codegen cepat, Gemini untuk konteks besar. Rating G2 sekitar 4.6/5 mencerminkan kepuasan pengguna enterprise yang sudah embedded di stack JetBrains.",
+      "Komprominya nyata. Pertama, harga: AI Pro $10/bulan cocok untuk individu, tapi AI Ultimate $30/bulan dan paket bisnis ($20–60 per seat) cepat menumpuk untuk tim kecil — terutama dibanding GitHub Copilot yang $10 untuk completion plus chat dasar. Kedua, Junie belum setajam Claude Code pada refactor monorepo raksasa atau workflow terminal-heavy yang mengandalkan MCP dan shell bebas. Ketiga, nilai produk terikat erat ke IDE JetBrains; developer yang nyaman di VS Code + Cursor akan merasa friction tinggi meski fitur AI-nya setara. Keempat, sebagian fitur premium bergantung pada cloud JetBrains — koneksi lambat dari Indonesia bisa memperlambat respons agent dibanding model lokal atau endpoint regional.",
+      "Untuk pengguna dan tim di Indonesia, posisi JetBrains AI menarik di beberapa sisi. Harga AI Pro $10 (sekitar Rp 160 ribu/bulan) masuk akal untuk developer solo di Jakarta, Bandung, atau Yogyakarta yang sudah pakai IntelliJ untuk Android/Kotlin atau backend Java — lebih murah dari Cursor Pro dan setara Copilot individu. Komunitas JetBrains Indonesia cukup aktif (JUG, meetup Kotlin), dan dokumentasi resmi sudah tersedia dalam bahasa Inggris dengan banyak tutorial lokal di YouTube. Untuk perusahaan fintech atau enterprise yang sudah standardisasi JetBrains + YouTrack, paket AI Pro Business ($20/seat) atau Ultimate Business ($60/seat) lebih mudah di-justify sebagai add-on lisensi existing daripada migrasi seluruh tim ke editor baru. Pembayaran tetap dalam USD dengan charge kartu internasional plus PPN 11 persen — markup total sekitar 12–15 persen. Kalau tim masih di VS Code, evaluasi Cursor atau Copilot dulu; tapi kalau IDE JetBrains sudah non-negotiable, AI Assistant adalah upgrade paling seamless di 2026.",
+    ],
+    link: "https://www.jetbrains.com/ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-22",
+  },
 ];
 
 export function getStack(slug: string) {
