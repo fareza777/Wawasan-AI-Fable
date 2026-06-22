@@ -792,6 +792,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "deepseek-ollama-vps-ai-lokal-indonesia",
+    title: "DeepSeek di VPS Sendiri: Ketika AI Lokal Mulai Terasa Murah untuk Orang Indonesia",
+    excerpt:
+      "Tutorial Hostinger untuk menjalankan DeepSeek dengan Ollama di VPS seharga Rp 213 ribuan per bulan memicu pertanyaan lebih besar — apakah ini akhir dari ketergantungan kita pada API berbayar?",
+    category: "Tutorial",
+    date: "2026-06-23",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Beberapa waktu lalu beredar tutorial yang tampak sederhana dari Hostinger: jalankan DeepSeek R1 di VPS seharga Rp 213.900 per bulan, pasang Ollama sebagai runtime-nya, akses lewat Open WebUI di browser, selesai. Di permukaan, ini kelihatannya cuma tutorial teknis untuk developer rumahan. Tapi kalau dilihat lebih jernih, ini adalah salah satu titik di mana AI pribadi yang benar-benar lokal — bukan versi gratis yang diam-diam mengirim data ke server luar — menjadi sesuatu yang bisa dimiliki orang Indonesia dengan gaji di atas rata-rata.",
+          "Pertanyaan yang lebih layak diajukan bukan 'apakah tutorialnya jalan', karena secara teknis ia jelas jalan: ribuan orang sudah menjalankan setup identik di Ubuntu dan CentOS. Pertanyaannya adalah: untuk konteks apa setup seperti ini benar-benar masuk akal di Indonesia, kapan ia overkill, dan di mana jebakan yang jarang dibicarakan di tutorial yang lebih banyak membahas instalasi. Tulisan ini mencoba menjawabnya dari sudut pandang yang lebih dekat dengan realitas kita — bukan dari slide presentasi vendor.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya ditawarkan setup DeepSeek plus Ollama",
+        paragraphs: [
+          "Ollama adalah runtime model AI yang dirancang agar model besar bisa dijalankan di server pribadi atau komputer lokal. Tugasnya: mengelola model, menyediakan API yang kompatibel dengan format OpenAI di localhost, dan menjadi fondasi untuk berbagai antarmuka di atasnya. DeepSeek R1 adalah keluarga model AI yang menarik karena untuk penalaran dan kode mendekati kualitas model frontier, dengan biaya yang jauh lebih rendah — baik dari sisi ukuran unduhan maupun kebutuhan hardware.",
+          "Versi paling ringan, DeepSeek R1 1.5B, muat di laptop dengan RAM 8 GB dan jalan sekitar 20 sampai 40 token per detik di CPU. Versi 7B — yang paling sering dijadikan titik tengah — butuh RAM 16 GB dan menghasilkan 5 sampai 12 token per detik tanpa GPU, cukup untuk percakapan interaktif. Versi 14B ke atas baru benar-benar membutuhkan GPU atau RAM 32 GB ke atas. Angka-angka ini bukan teori: di banyak server pengujian, termasuk beberapa yang dipakai oleh tim redaksi untuk eksperimen, perilaku yang sama persis teramati dengan konsumsi memori yang kadang 20 persen lebih tinggi dari yang dijanjikan dokumentasi — jadi selalu sisakan ruang.",
+          "Komponen ketiga yang jarang dibicarakan di tutorial adalah Open WebUI. Ini adalah antarmuka chat berbasis browser yang bisa dipasang di atas Ollama. Tanpa Open WebUI, kamu berinteraksi dengan model lewat terminal — yang untuk sebagian orang terasa kurang nyaman. Dengannya, kamu dapat tampilan yang mirip ChatGPT, riwayat percakapan, manajemen banyak model, dan kemampuan mengunggah dokumen untuk konteks tambahan. Untuk organisasi atau komunitas kecil yang ingin merasakan AI tanpa berlangganan layanan berbayar, kombinasi ketiganya adalah paket paling lengkap yang bisa dipasang dalam satu sore.",
+        ],
+      },
+      {
+        heading: "Kenapa ini terasa relevan untuk Indonesia",
+        paragraphs: [
+          "Ada tiga alasan yang membuat setup ini bukan cuma urusan komunitas teknis. Pertama, soal kedaulatan data. Banyak pekerjaan di sektor publik, kesehatan, dan keuangan di Indonesia tidak bisa — atau tidak seharusnya — mengirim data ke API publik. Dengan model yang jalan di server sendiri, dokumen yang diproses tidak pernah meninggalkan infrastruktur internal. Untuk ASN yang akan menyelesaikan pelatihan AI dari program BKN-Microsoft, ini melengkapi gambaran: setelah belajar memakai AI di platform publik, langkah lanjutan yang paling sehat adalah mencoba versi lokal untuk memahami trade-off-nya secara langsung.",
+          "Kedua, soal biaya yang lebih masuk akal untuk jangka panjang. Berlangganan API publik dengan tarif $3 sampai $15 per juta token terdengar murah sampai kamu benar-benar menghitung pemakaian tim yang aktif setiap hari. Untuk satu staf yang menggunakan AI secara intensif, tagihan bulanan bisa dengan mudah menyentuh puluhan dolar. VPS seharga Rp 213 ribuan per bulan adalah biaya tetap yang tidak peduli seberapa sering kamu memanggil model — dan setelah model terpasang, tidak ada lagi tagihan per panggilan. Untuk UMKM yang mengotomasi tugas-tugas repetitif, atau tim riset kecil yang ingin eksperimen tanpa khawatir tagihan, ini perubahan kalkulasi yang signifikan.",
+          "Ketiga, soal pembelajaran. Menginstal Ollama, menarik model, dan menghubungkannya ke antarmuka adalah cara yang sangat efektif untuk memahami bagaimana AI bekerja di balik layar. Pengetahuan ini tidak akan usang meskipun model berganti setiap beberapa bulan — fondasinya tetap sama. Banyak orang Indonesia yang kini percaya diri memakai AI karena memang pernah mencoba langsung, bukan karena membaca tutorial daring. Di pasar kerja 2026, kemampuan untuk menjelaskan dengan jujur apa yang bisa dan belum bisa dilakukan model lokal menjadi pembeda yang lebih nyata dari sertifikasi kursus online yang hanya mengajarkan pemakaian antarmuka.",
+        ],
+      },
+      {
+        heading: "Di mana jebakan yang jarang dibicarakan",
+        paragraphs: [
+          "Pertama, keamanan tidak otomatis muncul dari pemasangan. Banyak panduan pemula langsung menyarankan untuk membuka port 8080 ke internet publik supaya Open WebUI bisa diakses dari mana saja. Tanpa Nginx reverse proxy dengan TLS, tanpa autentikasi yang kuat, dan tanpa firewall yang membatasi akses, kamu baru saja memasang layanan AI yang bisa dicoba siapa pun dari seluruh dunia — dengan data percakapan yang mungkin sensitif. Untuk penggunaan produksi, langkah keamanan tambahan ini wajib, bukan opsional.",
+          "Kedua, kualitas output untuk bahasa Indonesia masih lebih rendah dibanding untuk bahasa Inggris. DeepSeek dan model open-source lain dilatih dengan proporsi data bahasa Indonesia yang jauh lebih kecil, sehingga untuk percakapan ringan hasilnya cukup, tetapi untuk dokumen formal, ringkasan peraturan, atau terjemahan yang memerlukan nuansa, hasilnya masih sering memerlukan suntingan besar. Dalam pengujian editorial Wawasan AI, untuk tugas yang menyangkut bahasa Indonesia formal, model proprietary besar masih memimpin — dan model lokal lebih cocok untuk iterasi cepat dan drafting awal yang akan direview manusia.",
+          "Ketiga, model lokal tidak belajar dari percakapanmu. Setiap sesi adalah sesi yang terpisah, kecuali kamu menyimpan konteks secara manual. Berbeda dengan ChatGPT atau Claude yang mengingat preferensi dan gaya bicaramu lintas sesi, model lokal dimulai dari nol setiap kali. Untuk workflow yang memerlukan konsistensi, ini berarti kamu perlu membangun sistem konteks sendiri — dan itu pekerjaan tambahan yang sering tidak diperhitungkan saat membandingkan biaya self-hosting dengan langganan bulanan.",
+        ],
+      },
+      {
+        heading: "Paling jujur: kapan harus pakai, kapan jangan",
+        paragraphs: [
+          "Pakai setup DeepSeek plus Ollama ketika: pekerjaanmu bersifat repetitif dan tidak terlalu sensitif terhadap nuansa bahasa — misalnya merapikan teks, membuat draf awal, menjawab pertanyaan rutin. Pakai ketika data yang diproses tidak boleh keluar dari server. Pakai ketika kamu ingin memahami AI secara mendalam dan bersedia menginvestasikan waktu untuk maintenance. Dan pakai ketika workload tim cukup stabil sehingga biaya VPS bulanan lebih murah dari total tagihan API yang akan kamu bayar.",
+          "Jangan pakai ketika kamu butuh kualitas output bahasa Indonesia formal pada tingkat pertama tanpa suntingan. Jangan pakai ketika timmu tidak punya waktu untuk merawat server — VPS yang tidak pernah di-update adalah VPS yang pada akhirnya akan jadi target exploit. Jangan pakai untuk prototipe yang harus jadi dalam dua minggu kalau kamu belum pernah instal Linux di server sebelumnya. Dan jangan pakai dengan harapan menggantikan seluruh langganan AI berbayar sekaligus — paling sehat adalah menjalankannya berdampingan selama beberapa bulan, lihat apa yang benar-benar pindah, baru putuskan.",
+          "Pada akhirnya, keputusan untuk menjalankan AI sendiri bukan tentang teknologi — itu soal siapa yang memegang kendali atas data dan biaya. Tutorial yang ramai dibagikan minggu lalu adalah pintu masuk yang bagus untuk mulai berpikir tentang hal itu. Setelah pintu terbuka, yang menentukan nilainya adalah apa yang kamu lakukan di baliknya: model apa yang kamu pasang, untuk apa kamu memakainya, dan seberapa jujur kamu menilai apakah setup itu benar-benar melayani kebutuhanmu — bukan hanya memenuhi hasrat untuk mencoba hal baru. Dalam pengujian editorial Wawasan AI, itulah perbedaan antara bermain-main dengan AI dan benar-benar mengadopsinya.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
