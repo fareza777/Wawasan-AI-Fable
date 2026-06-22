@@ -1099,6 +1099,55 @@ export const repos: Review[] = [
     date: "2026-06-22",
     updatedAt: "2026-06-22",
   },
+  {
+    slug: "llm-course",
+    name: "LLM Course",
+    tagline:
+      "Kursus LLM gratis dan terstruktur dari dasar matematika hingga fine-tuning model besar",
+    tags: ["Edukasi", "LLM", "Python", "Open Source"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "LLM Course karya Maxime Labonne adalah salah satu kurikulum open-source paling lengkap untuk siapa pun yang ingin serius mendalami large language models: dari landasan matematika dan Python, hingga teknik membangun, melatih, dan men-deploy model skala besar — semuanya ditata dalam roadmap yang runut, dengan notebook Colab siap pakai tanpa setup lokal.",
+    highlights: [
+      "Tiga jalur terstruktur: LLM Fundamentals (opsional), LLM Scientist (membangun model terbaik), dan LLM Engineer (membangun aplikasi LLM)",
+      "80 ribu bintang dan lebih dari 9 ribu fork di GitHub — salah satu sumber belajar LLM paling populer di komunitas global",
+      "Roadmap visual untuk tiap jalur, dengan pranala ke notebook Colab yang berjalan di tier gratis Google Colab",
+      "Notebook fine-tuning siap pakai: Llama 3.1 dengan Unsloth, Llama 3 dengan ORPO, Mistral-7B dengan DPO dan QLoRA, CodeLlama dengan Axolotl",
+      "Notebook kuantisasi yang membandingkan GPTQ, GGUF/llama.cpp, AWQ, HQQ, dan EXLamaV2 — relevan untuk deployment di hardware konsumen",
+      "Ekosistem tool pelengkap: LLM AutoEval (evaluasi otomatis via RunPod), LazyMergekit (merge model satu klik), AutoQuant, AutoAbliteration, AutoDedup",
+      "Artikel penjelasan tertulis di blog pribadi untuk hampir tiap notebook — konteks teoretis di samping kode yang bisa langsung dijalankan",
+      "Lisensi Apache-2.0 — bebas digunakan, dimodifikasi, dan diajarkan ulang, termasuk di lingkungan korporasi dan kampus di Indonesia",
+    ],
+    pros: [
+      "Kurikulum runut yang menutup celah antara tutorial singkat yang ramai di media sosial dan paper akademik — sangat cocok untuk belajar mandiri yang serius",
+      "Notebook Colab menghilangkan hambatan setup; pemula cukup klik tombol dan mulai bereksperimen",
+      "Cakupan topik yang luas: dari matematika dasar sampai quantization dan Mixture of Experts, semuanya dalam satu repositori",
+    ],
+    cons: [
+      "Repositori ini lebih merupakan kumpulan sumber belajar daripada pustaka kode siap-produksi — perlu ekspektasi yang tepat",
+      "Konten sebagian besar berbasis Colab dan notebook: untuk pipeline produksi, pengguna tetap harus mem-porting ke script dan infrastruktur sendiri",
+      "Repositori jarang menerima pembaruan besar sejak awal 2026 — beberapa tautan ke model atau library generasi terbaru bisa jadi usang",
+    ],
+    verdict:
+      "Titik masuk paling masuk akal untuk siapa pun yang ingin memahami LLM secara menyeluruh, dari landasan sampai praktik. Sangat cocok untuk mahasiswa, dosen, dan profesional di Indonesia yang ingin membangun kapasitas AI tanpa harus mengorbit lab riset besar.",
+    body: [
+      "Di tengah ledakan konten AI yang datang dari segala arah — video pendek, blog dangkal, hingga kursus premium ratusan dolar — LLM Course dari Maxime Labonne menawarkan sesuatu yang relatif langka: kurikulum yang runut, gratis, dan bisa langsung dipakai. Repositori ini membagi perjalanan belajar LLM menjadi tiga jalur yang saling melengkapi, masing-masing dengan roadmap visual dan notebook Colab siap jalan. Pendekatan ini menghilangkan salah satu hambatan terbesar belajar AI: kebingungan menentukan dari mana harus mulai.",
+      "Dalam pengujian editorial Wawasan AI, nilai terbesar LLM Course justru ada pada konsistensi rancangannya. Saat mengikuti jalur LLM Scientist, alur dari fine-tuning Llama 3.1 dengan Unsloth, eksperimen ORPO, hingga DPO terasa menyatu — tidak seperti kebanyakan tutorial terpisah yang harus disambung-sambung sendiri. Notebook kuantisasi juga memberi gambaran nyata bagaimana model besar bisa dijalankan di GPU konsumen, sesuatu yang sangat relevan untuk individu dan tim kecil di Indonesia yang tidak punya akses ke cluster GPU besar.",
+      "Untuk konteks Indonesia, repositori ini sangat berguna bagi dosen, mahasiswa, dan trainer yang ingin mengajarkan LLM dengan kurikulum yang teruji. Materi dapat dipakai langsung di kelas, workshop, atau program pelatihan internal, dengan penyesuaian seperlunya. Keterbukaan lisensi Apache-2.0 memungkinkan materi diadaptasi ke dalam bahasa Indonesia atau konteks lokal — sesuatu yang tidak selalu diizinkan oleh kursus proprietary.",
+      "Batasan yang perlu dipahami: LLM Course adalah sumber belajar, bukan framework produksi. Setelah lulus dari notebook, pengguna tetap harus mem-porting alur ke pipeline yang andal, menulis tes sendiri, dan mengelola deployment secara serius. Selain itu, repositori ini tidak terlalu sering diperbarui, jadi beberapa teknik baru — seperti arsitektur mutakhir atau rilis pustaka terbaru — mungkin belum tercermin. Namun sebagai titik masuk, ia masih menjadi salah satu investasi belajar dengan rasio usaha-versus-manfaat terbaik di 2026.",
+    ],
+    link: "https://github.com/mlabonne/llm-course",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-23",
+    updatedAt: "2026-06-23",
+  },
 ];
 
 export function getRepo(slug: string) {
