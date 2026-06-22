@@ -4,6 +4,7 @@ import {
   readDailySnapshotRaw,
   writeDailySnapshotRaw,
 } from "@/lib/daily-snapshot-store";
+import { WEEKLY_TOP } from "@/data/weeklyTop";
 import { formatTanggal } from "@/lib/format";
 
 export type TrendCadence = "daily" | "weekly";
@@ -227,20 +228,74 @@ function toTrendingData(
   };
 }
 
+function buildWeeklyFallbackFromCurated(): TrendingData {
+  const fullNames = Object.keys(WEEKLY_TOP).slice(0, TOP_N);
+  const repos: TrendingRepo[] = [];
+  for (const [index, fullName] of fullNames.entries()) {
+    const entry = WEEKLY_TOP[fullName];
+    const [owner, repo] = fullName.split("/");
+    if (!owner || !repo) continue;
+    repos.push({
+      rank: index + 1,
+      fullName,
+      owner,
+      repo,
+      description: entry?.description ?? "",
+      githubUrl: `https://github.com/${fullName}`,
+      trendshiftUrl: TRENDSHIFT_WEEKLY_URL,
+      topics: [],
+    });
+  }
+
+  const year = new Date().getFullYear();
+  return {
+    cadence: "weekly",
+    title: "Top Weekly Repo (kurasi Wawasan AI)",
+    periodLabel: "Minggu ini",
+    period: {
+      year,
+      week: 0,
+      label: "Minggu ini",
+      path: "/repo/weekly",
+    },
+    sourceUrl: TRENDSHIFT_WEEKLY_URL,
+    fetchedAt: new Date().toISOString(),
+    repos,
+  };
+}
+
+async function loadLatestDailySnapshot(): Promise<TrendingData | null> {
+  const dates = await listDailySnapshotDates();
+  if (!dates.length) return null;
+  return fetchDailySnapshot(dates[0]);
+}
+
 export async function fetchDailyTrendingRepos(): Promise<TrendingData> {
-  const { html, sourceUrl } = await fetchTrendshiftHtml(TRENDSHIFT_HOME_URL, 3600);
-  const list = parseJsonLd(html, "daily");
-  if (!list?.itemListElement?.length) {
-    throw new Error("Trendshift daily data not found in page");
-  }
-  const data = toTrendingData("daily", list, sourceUrl, html, null);
+  try {
+    const { html, sourceUrl } = await fetchTrendshiftHtml(TRENDSHIFT_HOME_URL, 3600);
+    const list = parseJsonLd(html, "daily");
+    if (!list?.itemListElement?.length) {
+      throw new Error("Trendshift daily data not found in page");
+    }
+    const data = toTrendingData("daily", list, sourceUrl, html, null);
 
-  const today = new Date().toISOString().slice(0, 10);
-  if (!(await dailySnapshotExists(today))) {
-    await saveDailySnapshot(today, data);
-  }
+    const today = new Date().toISOString().slice(0, 10);
+    if (!(await dailySnapshotExists(today))) {
+      await saveDailySnapshot(today, data);
+    }
 
-  return data;
+    return data;
+  } catch (error) {
+    const snapshot = await loadLatestDailySnapshot();
+    if (snapshot) {
+      console.warn(
+        "[trendshift] daily live fetch failed, using latest snapshot:",
+        error instanceof Error ? error.message : error,
+      );
+      return snapshot;
+    }
+    throw error;
+  }
 }
 
 export async function fetchWeeklyTrendingRepos(period?: {
@@ -248,13 +303,24 @@ export async function fetchWeeklyTrendingRepos(period?: {
   week: number;
 }): Promise<TrendingData> {
   const sourceUrl = weeklyFetchUrl(period);
-  const { html } = await fetchTrendshiftHtml(sourceUrl, 21_600);
-  const list = parseJsonLd(html, "weekly");
-  if (!list?.itemListElement?.length) {
-    throw new Error("Trendshift weekly data not found in page");
+  try {
+    const { html } = await fetchTrendshiftHtml(sourceUrl, 21_600);
+    const list = parseJsonLd(html, "weekly");
+    if (!list?.itemListElement?.length) {
+      throw new Error("Trendshift weekly data not found in page");
+    }
+    const parsedPeriod = parseWeeklyPeriodFromHtml(html, sourceUrl);
+    return toTrendingData("weekly", list, sourceUrl, html, parsedPeriod);
+  } catch (error) {
+    if (period) {
+      throw error;
+    }
+    console.warn(
+      "[trendshift] weekly live fetch failed, using curated weeklyTop fallback:",
+      error instanceof Error ? error.message : error,
+    );
+    return buildWeeklyFallbackFromCurated();
   }
-  const parsedPeriod = parseWeeklyPeriodFromHtml(html, sourceUrl);
-  return toTrendingData("weekly", list, sourceUrl, html, parsedPeriod);
 }
 
 /** Back-compat: weekLabel alias */
