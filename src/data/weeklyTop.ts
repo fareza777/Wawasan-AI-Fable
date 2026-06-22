@@ -83,7 +83,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Bisa dipasang ke Claude Code atau agen AI lain — bermanfaat untuk developer yang ingin workflow coding-nya distandardkan.",
     ],
   },
-  "chopratejas/headroom": {
+  "headroomlabs-ai/headroom": {
     description:
       "Kompresor output tool, log, dan chunk RAG sebelum sampai ke LLM — hemat 60-95% token dengan jawaban tetap sama.",
     highlights: [
@@ -441,6 +441,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Pipeline analisis end-to-end: kutipan real-time + berita dari banyak sumber → ringkasan via LLM (DeepSeek, GPT, atau model lokal) → output visual dengan indikator teknikal dan sinyal beli/jaga/jual yang bisa dikonfigurasi per-watchlist.",
       "Auto-push gratis via GitHub Actions — zero biaya operasional (cukup modal LLM API opsional); mendukung notifikasi ke banyak channel sekaligus, dan tiap watchlist saham bisa punya prompt analisa yang berbeda.",
       "44+ ribu bintang GitHub dengan komunitas CN aktif; relevan untuk trader ritel Indonesia yang juga pantau saham regional, atau developer yang ingin bangun pipeline riset pasar otomatis — kustomisasi prompt LLM jadi kunci untuk gaya analisa masing-masing.",
+    ],
+  },
+  "mukul975/Anthropic-Cybersecurity-Skills": {
+    description:
+      "Pustaka 754 skill cybersecurity untuk AI agent yang dipetakan ke 5 framework industri (MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF) — langsung pasang ke Claude Code, Codex, Cursor, atau Gemini CLI.",
+    highlights: [
+      "Pustaka cybersecurity skill terbuka terbesar untuk AI agent: 754 skill terstruktur, 26 domain keamanan, mengikuti standar agentskills.io — sekali pasang, AI agent langsung punya 'naluri' analis keamanan senior.",
+      "Satu-satunya pustaka skill yang memetakan setiap skill ke 5 framework sekaligus (MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF) — auditor dan compliance officer bisa cross-check coverage tanpa kerja manual tambahan.",
+      "Mendukung 20+ platform AI agent: Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI, OpenClaw, Hermes Agent, dan lain-lain — workflow yang sama, tidak perlu rewrite per tool.",
+      "Apache 2.0 dan community-driven (bukan project resmi Anthropic PBC) — 17 ribu bintang GitHub, 2 ribu fork, dipakai sebagai referensi oleh index skill seperti agentskillsindex.com; relevan untuk security engineer, blue team, dan tim DevSecOps yang ingin scale investigasi lewat agentik AI.",
+    ],
+  },
+  "Stirling-Tools/Stirling-PDF": {
+    description:
+      "Aplikasi PDF open-source #1 di GitHub (80+ ribu bintang) — edit, tanda tangani, redact, konversi, dan otomasi PDF via desktop app, web UI, atau self-hosted server dengan API privat.",
+    highlights: [
+      "Aplikasi PDF open-source terlengkap di GitHub (80+ ribu bintang) dengan 50+ tool: edit, merge, split, sign, redact, convert, OCR, compress — semua di satu platform yang bisa dijalankan sebagai desktop app, web UI, atau self-hosted server dengan API privat.",
+      "Pendekatan 'PDF tanpa cloud': dokumen tidak pernah dikirim ke server pihak ketiga — deployment lokal (Docker satu baris) atau on-prem enterprise dengan SSO, audit trail, dan API REST ke hampir semua tool.",
+      "Workflow otomasi tanpa kode di UI + REST API untuk integrasi ke pipeline yang sudah ada — tim yang memproses jutaan PDF per bulan bisa scripting pipeline tanpa harus beli Adobe Acrobat atau Foxit.",
+      "Antarmuka sudah diterjemahkan ke 40+ bahasa (termasuk Indonesia) dan dilisensikan open-core (MIT untuk versi komunitas) — relevan untuk admin, legal team, dan tim operasional perusahaan Indonesia yang butuh kontrol penuh atas dokumen sensitif.",
     ],
   },
 };
