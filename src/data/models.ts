@@ -929,6 +929,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-22",
   },
+  {
+    slug: "ring-2-6-1t",
+    name: "Ring-2.6-1T",
+    tagline:
+      "Flagship trillion-parameter InclusionAI — arsitektur ring attention 1T dengan harga paling agresif di kelas reasoning",
+    tags: ["InclusionAI", "Proprietary", "Reasoning", "Long Context"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.7 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.3 },
+    ],
+    aa_intelligence_index: 30.6,
+    aa_coding_index: 42.8,
+    aa_price_input: 0.3,
+    aa_price_output: 2.5,
+    aa_synced_at: "2026-06-23",
+    summary:
+      "Ring-2.6-1T adalah iterasi flagship dari InclusionAI — laboratorium AI milik Ant Group — dengan arsitektur trillion-parameter (1T total) yang menggunakan pola ring attention untuk menangani context panjang secara efisien. Intelligence index 30,6 (sumber: Artificial Analysis) menempatkannya di papan tengah proprietary Asia, tapi kombinasi coding index 42,8, throughput output 137,5 tokens/detik, dan harga API $0,30 per juta token input menjadikannya model value-for-money yang menarik untuk pipeline reasoning volume-tinggi di Indonesia.",
+    pros: [
+      "Throughput output 137,5 tokens/detik (sumber: Artificial Analysis) — salah satu yang tertinggi di kelas harganya, ideal untuk streaming UX dan agentic loop cepat",
+      "Harga API $0,30 input / $2,50 output per 1M token — paling agresif untuk proprietary reasoning kelas atas, sejajar dengan MiMo-V2.5-Pro di input",
+      "Coding index 42,8 solid untuk software engineering multi-file — melampaui frontier Barat GPT-5 (36,0) dan mendekati Claude Opus 4.5 (42,9)",
+      "Arsitektur ring attention dirancang untuk context panjang — pipeline yang butuh ingestion dokumen panjang tanpa RAG bisa lebih sederhana",
+    ],
+    cons: [
+      "Intelligence index 30,6 di bawah frontier proprietary papan atas (Claude Opus 4.5, GPT-5, GLM-5.2, MiMo-V2.5-Pro) — bukan pilihan untuk penalaran terberat atau riset mendalam",
+      "Arsitektur 1T total membawa overhead engineering besar — deployment lokal butuh cluster GPU serius, bukan opsi untuk self-host rumahan",
+      "Ekosistem developer InclusionAI di luar China relatif muda — integrasi native dengan tool Indonesia dan SDK pihak ketiga (LangChain, LlamaIndex) masih minim",
+      "Akses API regional lewat platform Ant Group / Lingyang bisa terbatas di beberapa negara — perlu cek regional availability sebelum adopsi",
+    ],
+    verdict:
+      "Ring-2.6-1T adalah pilihan rasional untuk pipeline reasoning volume-tinggi yang butuh keseimbangan intel, kecepatan, dan harga — UX real-time, agentic loop cepat, dan code generation multi-file. Untuk penalaran terberat atau riset panjang, frontier papan atas masih memimpin, tapi untuk value-for-money di kelas reasoning Asia, sulit dikalahkan.",
+    body: [
+      "Ring-2.6-1T adalah iterasi flagship dari InclusionAI — laboratorium AI milik Ant Group (perusahaan di balik Alipay dan layanan finansial Asia) yang sejak 2024 aktif merilis keluarga model ring. Versi 2.6-1T ini melompat ke arsitektur trillion-parameter dengan total 1 triliun bobot, dirancang khusus untuk menangani context panjang secara efisien lewat pola ring attention — teknik yang membagi sequence panjang ke dalam ring (cincin) komputasi, sehingga biaya memori tumbuh sub-linear terhadap panjang input. Pola arsitektur seperti ini jadi salah satu pendekatan utama di 2026 untuk memadukan kapasitas model besar dengan efisiensi inferens pada context window panjang.",
+      "Dalam pengujian editorial Wawasan AI, Ring-2.6-1T menunjukkan DNA laboratorium yang matang untuk pipeline reasoning volume-tinggi: penalaran multi-langkah cukup untuk task standar, eksekusi tool dalam loop yang stabil, dan kemampuan coding yang solid di kelas harganya. Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, dengan coding index 42,8 di benchmark Artificial Analysis yang melampaui frontier Barat GPT-5 (36,0) dan mendekati Claude Opus 4.5 (42,9). Yang paling terasa dibanding frontier papan atas adalah throughput output 137,5 tokens/detik — salah satu yang tertinggi di kelas harganya, ideal untuk streaming UX real-time dan pipeline agentic step-by-step yang butuh respons instan. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 30,6 di benchmark Artificial Analysis menaruh Ring-2.6-1T di papan tengah proprietary Asia — di bawah MiMo-V2.5-Pro (53,8), Qwen3.7 Plus (53,3), GLM-5.2 (51,1), dan Claude Opus 4.5 (43,1 dengan penalaran lebih dalam), tapi sejajar dengan Qwen3.5 397B A17B (33,7) dan MiMo-V2-Pro (40,3). Coding index 42,8 menjadi nilai jual utama di kelas harganya — melampaui frontier Barat GPT-5 (36,0) di dimensi coding dengan harga yang jauh lebih efisien. Throughput output 137,5 tokens/detik dan TTFT 1,938 detik menempatkannya di tier cepat — antarmuka chat dengan streaming UI akan terasa mulus, dan pipeline agentic step-by-step berjalan responsif. Harga API $0,30 per juta token input dan $2,50 output bermain di kuadran paling agresif untuk proprietary reasoning kelas trillion-parameter — dibanding GLM-5.2 ($1,40/$4,40) atau Qwen3.6 Max Preview ($1,30/$7,80), Ring-2.6-1T 4-5x lebih murah di input, menjadikannya opsi menarik bagi developer yang menjalankan pipeline volume-tinggi dengan sensitivitas harga.",
+      "Kelemahan yang teridentifikasi: intelligence index 30,6 masih di bawah frontier papan atas untuk penalaran murni — untuk riset mendalam atau penalaran filosofis, Claude Opus 4.5, GPT-5, dan frontier proprietary papan atas masih memimpin dengan jarak yang jelas. Arsitektur 1T total juga membawa overhead engineering besar: deployment lokal butuh cluster GPU serius dengan VRAM masif (≥500GB dengan kuantisasi 4-bit) untuk inferens penuh, berbeda dengan dense model kelas menengah yang lebih ringan atau keluarga open-weight yang lebih fleksibel. Juga, ekosistem developer InclusionAI di luar pasar Asia masih muda — integrasi native dengan tool Indonesia (payment gateway, e-commerce platform) belum sekuat OpenAI atau Anthropic, dan akses API regional lewat platform Ant Group/Lingyang mungkin terbatas di beberapa negara. Strategi pemakaian yang masuk akal: Ring-2.6-1T untuk pipeline reasoning volume-tinggi yang butuh keseimbangan intel, kecepatan, dan harga — agentic loop cepat, streaming UX real-time, code generation multi-file, dan ingestion dokumen panjang; untuk penalaran terberat atau riset, frontier papan atas tetap lebih layak; untuk deployment lokal yang fleksibel, keluarga open-weight seperti Qwen3 atau GLM-4 masih lebih rasional.",
+    ],
+    link: "https://inclusionai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-23",
+  },
 ];
 
 export function getModel(slug: string) {
