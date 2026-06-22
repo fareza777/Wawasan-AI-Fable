@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "22 Juni 2026",
-  "period": {
-    "date": "2026-06-22",
-    "label": "22 Juni 2026",
-    "path": "/repo/daily/2026/06/22"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-22T00:03:52.866Z",
+  "fetchedAt": "2026-06-22T06:58:39.997Z",
   "repos": [
     {
       "rank": 1,
@@ -28,6 +24,20 @@
     },
     {
       "rank": 2,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2026-01-10T06:43:20Z"
+    },
+    {
+      "rank": 3,
       "fullName": "palmier-io/palmier-pro",
       "owner": "palmier-io",
       "repo": "palmier-pro",
@@ -43,22 +53,37 @@
       "dateCreated": "2026-04-07T04:15:51Z"
     },
     {
-      "rank": 3,
-      "fullName": "StarTrail-org/PixelRAG",
-      "owner": "StarTrail-org",
-      "repo": "PixelRAG",
-      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
-      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
-      "trendshiftUrl": "https://trendshift.io/repositories/49753",
-      "language": "Python",
+      "rank": 4,
+      "fullName": "yuanzhongqiao/deep-printfilm",
+      "owner": "yuanzhongqiao",
+      "repo": "deep-printfilm",
+      "description": "短剧平台 AI Short Film  Motion Comic Generation Platform Industrial AI Motion Comic & Video Workbench",
+      "githubUrl": "https://github.com/yuanzhongqiao/deep-printfilm",
+      "trendshiftUrl": "https://trendshift.io/repositories/35182",
+      "language": "TypeScript",
       "topics": [
-        "Computer vision",
-        "RAG"
+        "AI image generation",
+        "AI video generation"
       ],
-      "dateCreated": "2026-05-29T07:25:40Z"
+      "dateCreated": "2026-03-15T06:31:40Z"
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 6,
       "fullName": "zhongerxin/cowart",
       "owner": "zhongerxin",
       "repo": "cowart",
@@ -72,63 +97,33 @@
       "dateCreated": "2026-06-18T16:08:30Z"
     },
     {
-      "rank": 5,
-      "fullName": "tw93/Pake",
-      "owner": "tw93",
-      "repo": "Pake",
-      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
-      "githubUrl": "https://github.com/tw93/Pake",
-      "trendshiftUrl": "https://trendshift.io/repositories/1622",
-      "language": "Rust",
-      "topics": [
-        "Headless browser"
-      ],
-      "dateCreated": "2022-10-14T09:32:57Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "ZhuLinsen/daily_stock_analysis",
-      "owner": "ZhuLinsen",
-      "repo": "daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "trendshiftUrl": "https://trendshift.io/repositories/18527",
-      "language": "Python",
-      "topics": [
-        "Fintech"
-      ],
-      "dateCreated": "2026-01-10T06:43:20Z"
-    },
-    {
       "rank": 7,
-      "fullName": "penpot/penpot",
-      "owner": "penpot",
-      "repo": "penpot",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "githubUrl": "https://github.com/penpot/penpot",
-      "trendshiftUrl": "https://trendshift.io/repositories/3702",
-      "language": "Clojure",
+      "fullName": "asgeirtj/system_prompts_leaks",
+      "owner": "asgeirtj",
+      "repo": "system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "githubUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "trendshiftUrl": "https://trendshift.io/repositories/14577",
+      "language": "JavaScript",
       "topics": [
-        "Self-hosted"
+        "Chatbot"
       ],
-      "dateCreated": "2015-12-29T22:09:07Z"
+      "dateCreated": "2025-05-03T02:43:56Z"
     },
     {
       "rank": 8,
-      "fullName": "jamiepine/voicebox",
-      "owner": "jamiepine",
-      "repo": "voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "githubUrl": "https://github.com/jamiepine/voicebox",
-      "trendshiftUrl": "https://trendshift.io/repositories/21213",
-      "language": "TypeScript",
+      "fullName": "StarTrail-org/PixelRAG",
+      "owner": "StarTrail-org",
+      "repo": "PixelRAG",
+      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
+      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
+      "trendshiftUrl": "https://trendshift.io/repositories/49753",
+      "language": "Python",
       "topics": [
-        "AI voice",
-        "Text to speech",
-        "Audio processing",
-        "Self-hosted"
+        "Computer vision",
+        "RAG"
       ],
-      "dateCreated": "2026-01-25T12:27:03Z"
+      "dateCreated": "2026-05-29T07:25:40Z"
     },
     {
       "rank": 9,
@@ -147,18 +142,18 @@
     },
     {
       "rank": 10,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
+      "fullName": "chopratejas/headroom",
+      "owner": "chopratejas",
+      "repo": "headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "githubUrl": "https://github.com/chopratejas/headroom",
+      "trendshiftUrl": "https://trendshift.io/repositories/20881",
+      "language": "Python",
       "topics": [
         "AI agent",
-        "AI coding assistant"
+        "AI infrastructure"
       ],
-      "dateCreated": "2026-06-12T00:52:37Z"
+      "dateCreated": "2026-01-07T19:58:51Z"
     }
   ]
 }
