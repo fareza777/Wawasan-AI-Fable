@@ -1148,6 +1148,55 @@ export const repos: Review[] = [
     date: "2026-06-23",
     updatedAt: "2026-06-23",
   },
+  {
+    slug: "front-end-checklist",
+    name: "Front-End Checklist",
+    tagline:
+      "Daftar periksa modern untuk proyek web yang bisa dipakai manusia maupun AI agent",
+    tags: ["Front-End", "Checklist", "AI Agent", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "Front-End Checklist adalah salah satu referensi paling populer untuk memastikan kualitas proyek web modern: kumpulan aturan praktis yang dikuratori dari pedoman resmi, dikemas dalam format checklist interaktif, dan kini dirancang agar bisa dibaca oleh manusia maupun AI agent. Lebih dari 73 ribu bintang dan 6.600 fork menjadikannya titik acuan yang sukar diabaikan.",
+    highlights: [
+      "Ribuan aturan praktis yang dikuratori dari sumber-sumber otoritatif untuk HTML, CSS, JavaScript, performa, aksesibilitas, dan SEO",
+      "Mode khusus AI agent: format markdown terstruktur yang dapat dipahami dan dijalankan oleh coding agent modern",
+      "Aplikasi web interaktif di frontendchecklist.io dengan progress tracker, filter per kategori, dan kemampuan menandai item selesai",
+      "Kategori terstruktur: Head, HTML, CSS, JavaScript, Images, Fonts, Accessibility, Performance, SEO, Security, dan banyak lagi",
+      "Berjalan sebagai situs statis ringan tanpa backend — mudah di-host di GitHub Pages, Cloudflare Pages, atau Vercel",
+      "Repositori sudah translate ke banyak bahasa: Portugis, Spanyol, Rusia, Italia, dan lainnya — memudahkan adopsi komunitas lokal",
+      "Lisensi MIT, menerima kontribusi komunitas dengan alur pull request yang terdokumentasi jelas",
+      "73 ribu bintang di GitHub dan lebih dari seribu watch — salah satu checklist paling banyak di-bookmark di komunitas front-end",
+    ],
+    pros: [
+      "Referensi yang netral, tidak memihak framework atau tool tertentu — cocok untuk tim dengan stack beragam",
+      "Berfungsi ganda untuk manusia (visual checklist) dan AI agent (markdown siap-konsumsi) — nilai tambah di era agentic coding",
+      "Sangat ringan secara runtime: tidak ada dependency berat, bisa di-host di mana pun",
+    ],
+    cons: [
+      "Bukan framework atau pustaka kode — tidak bisa langsung di-include ke dalam pipeline build aplikasi",
+      "Sebagian aturan berkembang mengikuti praktik komunitas, sehingga bisa tertinggal dari tren terbaru (misalnya edge runtime)",
+      "Repositori statis tidak otomatis menyesuaikan dengan standar baru; pembaruan dilakukan secara manual oleh maintainer",
+    ],
+    verdict:
+      "Sangat layak dijadikan acuan wajib di setiap awal proyek web. Untuk tim di Indonesia, kombinasi format manusia-plus-agent menjadikannya alat on-boarding baru yang efektif — baik untuk developer junior maupun untuk workflow agentic.",
+    body: [
+      "Front-End Checklist berdiri di posisi yang cukup unik di ekosistem web: bukan framework, bukan pustaka, melainkan sebuah kompas. Proyek ini merangkum poin-poin yang sering dilewatkan di tengah kesibukan development — mulai dari meta tag dasar, praktik aksesibilitas, optimasi gambar, hingga konfigurasi SEO dan security header. Aturan-aturannya diambil dari sumber otoritatif dan ditata ulang menjadi daftar yang mudah diikuti. Hasilnya adalah semacam standar de facto informal yang dipakai banyak tim untuk sign-off sebelum sebuah situs dianggap layak tayang.",
+      "Yang membuat proyek ini relevan di 2026 adalah penambahan mode untuk AI agent. Front-End Checklist tidak hanya menyajikan informasi dalam format visual untuk manusia, tetapi juga dalam struktur markdown yang dapat diproses oleh coding agent modern. Artinya, sebuah agent yang ditugaskan memulai proyek web baru bisa memakai checklist ini sebagai pedoman kerja dan menandai poin yang sudah terpenuhi. Pendekatan ini sejalan dengan tren agentic coding yang semakin matang di mana AI tidak hanya menulis kode, tetapi juga memastikan kepatuhan terhadap standar.",
+      "Dalam pengujian editorial Wawasan AI, nilai paling terasa dari Front-End Checklist adalah kemampuannya menegakkan kualitas minimum di tim dengan tingkat pengalaman beragam. Untuk konteks Indonesia, hal ini berguna di banyak situasi: tim startup kecil yang ingin menaikkan standar rilis tanpa menambah tooling berat, dosen yang ingin memberikan pedoman konsisten untuk tugas akhir mahasiswa, atau freelancer yang ingin menunjukkan proses quality assurance ke klien. Format visual yang ringan juga memudahkan pelaporan progres ke pemangku kebijakan non-teknis.",
+      "Batasan yang perlu dipahami: Front-End Checklist adalah referensi, bukan alat otomatis. Ia tidak akan menjalankan audit terhadap kode Anda, tidak menghasilkan laporan, dan tidak terintegrasi ke dalam pipeline CI/CD. Pemeriksaan tetap harus dilakukan manual atau dengan tool lain. Selain itu, repositori ini utamanya diperbarui oleh maintainer, sehingga beberapa standar baru — misalnya praktik untuk edge function atau platform low-code — bisa tertinggal. Namun untuk tujuan menyamakan standar minimum di seluruh anggota tim, tidak banyak alat lain yang sepadan dengan Front-End Checklist pada 2026.",
+    ],
+    link: "https://github.com/thedaviddias/Front-End-Checklist",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-24",
+    updatedAt: "2026-06-24",
+  },
 ];
 
 export function getRepo(slug: string) {
