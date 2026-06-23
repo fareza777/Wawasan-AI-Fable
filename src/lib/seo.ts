@@ -24,19 +24,60 @@ function socialImages(path: string) {
   return { openGraphImage: [{ url: image }], twitterImage: [image] };
 }
 
+export function absoluteAssetUrl(path: string) {
+  return `${SITE_URL}${path}`;
+}
+
+export function isoArticleTime(date: string) {
+  return `${date}T00:00:00.000Z`;
+}
+
+export function articleKeywords(artikel: Artikel): string[] {
+  const titleTerms = artikel.title
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s-]/gu, " ")
+    .split(/\s+/)
+    .filter((word) => word.length > 3);
+
+  return [
+    artikel.category,
+    "berita AI Indonesia",
+    "wawasan AI",
+    artikel.title,
+    ...titleTerms.slice(0, 8),
+  ];
+}
+
+export function reviewKeywords(review: Review): string[] {
+  return [
+    `review ${review.name}`,
+    review.name,
+    ...review.tags.slice(0, 10),
+    "Wawasan AI",
+    "review AI Indonesia",
+  ];
+}
+
 export function reviewDetailMeta(review: Review, path: string): Metadata {
   const title = `Review ${review.name} — Skor ${review.score.toFixed(1)}/10`;
   const description = review.summary;
   const { openGraphImage, twitterImage } = socialImages(path);
+  const published = isoArticleTime(review.date);
+  const modified = isoArticleTime(review.updatedAt ?? review.date);
+
   return {
     title,
     description,
+    keywords: reviewKeywords(review),
     ...canonicalPath(path),
     openGraph: {
       title,
       description,
       url: path,
       type: "article",
+      locale: "id_ID",
+      publishedTime: published,
+      modifiedTime: modified,
       images: openGraphImage,
     },
     twitter: {
@@ -50,15 +91,22 @@ export function reviewDetailMeta(review: Review, path: string): Metadata {
 
 export function articleDetailMeta(artikel: Artikel, path: string): Metadata {
   const { openGraphImage, twitterImage } = socialImages(path);
+  const published = isoArticleTime(artikel.date);
+
   return {
     title: artikel.title,
     description: artikel.excerpt,
+    keywords: articleKeywords(artikel),
     ...canonicalPath(path),
     openGraph: {
       title: artikel.title,
       description: artikel.excerpt,
       url: path,
       type: "article",
+      locale: "id_ID",
+      section: artikel.category,
+      publishedTime: published,
+      modifiedTime: published,
       images: openGraphImage,
     },
     twitter: {
@@ -134,14 +182,18 @@ export function websiteJsonLd() {
 }
 
 export function reviewJsonLd(review: Review, path: string) {
+  const pageUrl = absoluteAssetUrl(path);
+
   return {
     "@context": "https://schema.org",
     "@type": "Review",
-    url: `${SITE_URL}${path}`,
+    url: pageUrl,
     datePublished: review.date,
     ...(review.updatedAt ? { dateModified: review.updatedAt } : {}),
     author: ORG_PUBLISHER,
     publisher: ORG_PUBLISHER,
+    image: `${pageUrl}/opengraph-image`,
+    mainEntityOfPage: pageUrl,
     itemReviewed: {
       "@type": "SoftwareApplication",
       name: review.name,
@@ -159,16 +211,22 @@ export function reviewJsonLd(review: Review, path: string) {
 }
 
 export function articleJsonLd(artikel: Artikel, path: string) {
+  const pageUrl = absoluteAssetUrl(path);
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: artikel.title,
     description: artikel.excerpt,
-    url: `${SITE_URL}${path}`,
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    image: `${pageUrl}/opengraph-image`,
     datePublished: artikel.date,
+    dateModified: artikel.date,
     author: ORG_PUBLISHER,
     publisher: ORG_PUBLISHER,
     inLanguage: "id",
     articleSection: artikel.category,
+    keywords: articleKeywords(artikel).join(", "),
   };
 }

@@ -6,6 +6,7 @@ import { berita } from "@/data/berita";
 import { allTags } from "@/lib/tags";
 import { SITE_URL } from "@/lib/seo";
 import { listDailyArchiveSitemapEntries } from "@/lib/trendshift";
+import { listWeeklyArchiveSitemapEntries } from "@/lib/weekly-sitemap";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const statis = [
@@ -20,6 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/bandingkan",
     "/indeks",
     "/changelog",
+    "/feed.xml",
   ].map((p) => ({
     url: `${SITE_URL}${p}`,
     changeFrequency: "weekly" as const,
@@ -46,5 +48,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.4,
   }));
 
-  return [...statis, ...tags, ...detail, ...dailyArchives];
+  const weeklyArchives = listWeeklyArchiveSitemapEntries().map((a) => ({
+    url: `${SITE_URL}${a.path}`,
+    lastModified: a.lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.45,
+  }));
+
+  return [...statis, ...tags, ...detail, ...dailyArchives, ...weeklyArchives];
 }
