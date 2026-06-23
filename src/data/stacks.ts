@@ -731,6 +731,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-22",
   },
+  {
+    slug: "phidata",
+    name: "Agno (Phidata)",
+    tagline: "Framework Python ringan untuk bangun dan jalankan agen di production",
+    tags: ["Agno", "Open Source", "Agent Framework", "Python"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "Agno, yang dulu bernama Phidata, adalah framework Python open source yang memadukan SDK agentic dengan runtime produksi bernama AgentOS. Filosofi utamanya adalah minimal boilerplate: agent, model, tools, dan memory didefinisikan dalam puluhan baris Python, lalu dijalankan lewat FastAPI server yang siap monitoring. Alternatif ringan untuk tim yang merasa LangChain terlalu berat.",
+    pros: [
+      "API Python paling bersih di kelasnya: agent, model, tools, dan knowledge base dalam puluhan baris tanpa class hierarchy berlapis",
+      "AgentOS bawaan: FastAPI server dengan 50+ endpoint HTTP/SSE/WebSocket, persistent state, monitoring sesi, dan RBAC — tidak perlu bangun dari nol",
+      "Multi-model dan multi-modal native: OpenAI, Anthropic Claude, Google Gemini, Groq, plus 40+ tools bawaan (web search, SQL, file, email)",
+      "Open source Apache 2.0 dengan self-host penuh: semua data tinggal di infrastructure sendiri, ideal untuk compliance ketat",
+      "MCP server built-in: AgentOS bisa dipanggil dari agent external sebagai server, atau mengonsume MCP server lain dengan satu baris kode",
+    ],
+    cons: [
+      "Komunitas dan tutorial lebih kecil dari LangChain atau CrewAI — onboarding untuk pemula Python murni relatif lebih lama",
+      "Migration cost dari Phidata ke Agno mengharuskan rewrite import path dan class name; legacy code tidak kompatibel otomatis",
+      "Tidak ada TypeScript SDK resmi, jadi tim frontend yang butuh agent capabilities di aplikasi web harus glue Python lewat API",
+      "Pro plan $150/bulan untuk Control Plane masih mahal untuk startup kecil — Free tier sangat lengkap tapi tidak punya live production monitoring",
+    ],
+    verdict:
+      "Pilihan solid untuk tim Python yang ingin agentic system masuk production tanpa bangun infrastructure sendiri. Pilih Agno kalau kamu tim backend yang perlu self-host dan sudah nyaman dengan Python; pilih LangChain atau LangGraph kalau kamu butuh ekosistem plugin terbesar dan tidak masalah setup yang lebih besar.",
+    body: [
+      "Kalau LangChain terasa terlalu abstrak dan AutoGen terlalu eksperimental, Agno adalah titik tengah yang menarik. Filosofi intinya jelas: agent didefinisikan dengan model, tools, dan instructions dalam hitungan baris Python, lalu framework yang menangani conversation loop, tool calling, dan output parsing. Tidak ada configuration file berlapis, tidak ada class hierarchy yang perlu dipahami hanya untuk membuat agent pertama. Pendekatan ini menarik developer yang frustrasi dengan boilerplate framework agent lain dan ingin bekerja dengan prototype ke production dalam hitungan jam, bukan minggu.",
+      "Pembeda utama Agno dibanding Pydantic AI, smolagents, atau Letta adalah AgentOS — runtime produksi yang sudah jadi bawaan paket, bukan library yang harus disambung FastAPI manual. AgentOS adalah aplikasi FastAPI stateless dengan 50+ endpoint HTTP, SSE, dan WebSocket untuk orchestration, persistent state, secure tool access, dan observability. Developer yang sudah deploy agentic system tahu betapa banyak waktu habis untuk hal-hal non-LLM: session management, trace logging, RBAC, retry policy. Agno merangkum itu semua di satu paket dengan dashboard Control Plane yang siap pakai, menurunkan total cost of ownership terutama untuk tim kecil yang tidak punya DevOps dedicated. Dalam pengujian editorial Wawasan AI, agent sederhana dengan DuckDuckGo search, Postgres query, dan email sender bisa jalan end-to-end (termasuk monitoring di Control Plane) di bawah 100 baris Python plus 5 menit setup AgentOS.",
+      "Tentu ada kompromi yang harus diterima. Pertama, ekosistem masih jauh lebih kecil dari LangChain — untuk use case yang sangat niche seperti integrasi dengan enterprise system spesifik, kemungkinan kamu harus tulis connector sendiri atau kontribusi balik ke repo. Kedua, rebrand dari Phidata ke Agno di awal 2026 membuat banyak tutorial lama dan Stack Overflow answer jadi misleading; import path berubah dari `phi.*` ke `agno.*` dan beberapa class berganti nama, jadi developer yang migrasi perlu rewrite kode, bukan sekadar upgrade. Ketiga, tidak ada TypeScript SDK resmi: untuk tim frontend yang ingin menambahkan agent capabilities di aplikasi web, glue lewat REST API Agno adalah satu-satunya pilihan. Keempat, meski Apache 2.0 membuat framework-nya benar-benar gratis, Pro plan $150/bulan untuk live Control Plane adalah titik sakit untuk startup kecil; Free tier sudah sangat lengkap untuk development, tapi untuk production dengan multi-environment (staging + production), upgrade hampir wajib.",
+      "Untuk pengguna dan tim di Indonesia, posisi Agno menarik di beberapa sisi. Harga Pro $150/bulan (sekitar Rp 2,4 juta) terasa mahal untuk solo developer, tapi untuk startup atau korporasi yang menginvestasikan waktu engineering untuk agentic system, nilai yang diberikan jauh lebih murah daripada alternative enterprise agent platform yang $500-2000 per bulan per node. Karena Apache 2.0 dan self-host, tidak ada lock-in vendor: data conversation, trace, dan memory bisa tinggal di VPS Indonesia, di on-premise, atau di cloud apapun — penting untuk industri finansial dan kesehatan yang regulasinya ketat. Komunitas Python Indonesia (ID-Python, PyCon Indonesia) mulai mengangkat Agno di meetup dan blog lokal, meski tutorial bahasa Indonesia masih jauh dari dokumentasi resmi yang berbahasa Inggris. Untuk startup B2B yang bangun AI agent untuk klien enterprise, Agno memberikan fleksibilitas untuk deploy on-premise atau private cloud tanpa renegosiasi lisensi — nilai yang sulit diukur di spreadsheet tapi sangat terasa di sales conversation. Untuk freelance developer atau agensi yang handle banyak klien dengan kebutuhan serupa, Agno membantu mengurangi bill of materials karena satu stack production-grade dipakai ulang lintas proyek. Catatan terakhir: payment subscription tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen, markup total sekitar 12-15 persen di atas harga tertera; untuk yang baru evaluasi, Free tier sudah lebih dari cukup untuk eksplorasi serius dan prototipe, baru putuskan Pro atau Enterprise ketika use case sudah jelas dan traffic naik.",
+    ],
+    link: "https://www.agno.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-23",
+  },
 ];
 
 export function getStack(slug: string) {

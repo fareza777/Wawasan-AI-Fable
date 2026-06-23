@@ -1,0 +1,159 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "23 Juni 2026",
+  "period": {
+    "date": "2026-06-23",
+    "label": "23 Juni 2026",
+    "path": "/repo/daily/2026/06/23"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-23T00:05:16.289Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-29T15:23:22Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "description": "macOS video editor built for AI",
+      "githubUrl": "https://github.com/palmier-io/palmier-pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/41342",
+      "language": "Swift",
+      "topics": [
+        "AI video generation",
+        "MCP",
+        "Video editing"
+      ],
+      "dateCreated": "2026-04-07T04:15:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2026-01-10T06:43:20Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "unicity-astrid/book",
+      "owner": "unicity-astrid",
+      "repo": "book",
+      "description": "The canonical reference for Astrid OS: kernel, capsules, host ABI, the bus, and the security model.",
+      "githubUrl": "https://github.com/unicity-astrid/book",
+      "trendshiftUrl": "https://trendshift.io/repositories/60294",
+      "language": "Perl",
+      "topics": [],
+      "dateCreated": "2026-06-06T02:16:50Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "mukul975/Anthropic-Cybersecurity-Skills",
+      "owner": "mukul975",
+      "repo": "Anthropic-Cybersecurity-Skills",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/23422",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-25T09:47:50Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "StarTrail-org/PixelRAG",
+      "owner": "StarTrail-org",
+      "repo": "PixelRAG",
+      "description": "The end of web parsing. The beginning of scalable pixel-native search.",
+      "githubUrl": "https://github.com/StarTrail-org/PixelRAG",
+      "trendshiftUrl": "https://trendshift.io/repositories/49753",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "RAG"
+      ],
+      "dateCreated": "2026-05-29T07:25:40Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "unicity-astrid/handbook",
+      "owner": "unicity-astrid",
+      "repo": "handbook",
+      "description": "How to work on Astrid: the polyrepo, the kernel-is-dumb law, the RFC trigger, contribution tiers, and the release process.",
+      "githubUrl": "https://github.com/unicity-astrid/handbook",
+      "trendshiftUrl": "https://trendshift.io/repositories/60290",
+      "topics": [],
+      "dateCreated": "2026-06-06T02:16:56Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Stirling-Tools/Stirling-PDF",
+      "owner": "Stirling-Tools",
+      "repo": "Stirling-PDF",
+      "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+      "githubUrl": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "trendshiftUrl": "https://trendshift.io/repositories/6483",
+      "language": "Java",
+      "topics": [
+        "Document processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2023-01-27T18:22:42Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "zhaoxuya520/reverse-skill",
+      "owner": "zhaoxuya520",
+      "repo": "reverse-skill",
+      "description": "逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+      "githubUrl": "https://github.com/zhaoxuya520/reverse-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/43969",
+      "language": "PowerShell",
+      "topics": [
+        "AI agent",
+        "AI skills",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-05-13T14:37:57Z"
+    }
+  ]
+}
