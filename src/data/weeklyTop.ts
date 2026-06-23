@@ -463,6 +463,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Antarmuka sudah diterjemahkan ke 40+ bahasa (termasuk Indonesia) dan dilisensikan open-core (MIT untuk versi komunitas) — relevan untuk admin, legal team, dan tim operasional perusahaan Indonesia yang butuh kontrol penuh atas dokumen sensitif.",
     ],
   },
+  "topoteretes/cognee": {
+    description:
+      "Mesin knowledge open-source (19k+ bintang) yang kasih agen AI memori jangka panjang lewat knowledge graph self-hosted — bukan vector DB biasa, melainkan memory layer yang belajar dari waktu ke waktu.",
+    highlights: [
+      "Menggabungkan vector search, graph database, dan pendekatan cognitive science jadi satu 'knowledge engine' — agen AI bisa meng-ingest data dari format apa pun lalu query dengan makna yang mempertimbangkan relasi, bukan hanya kemiripan teks.",
+      "ECL pipeline (Extract → Cognify → Load) membangun knowledge graph dari interaksi dan dokumen agen — memory-nya persistent lintas session, sehingga agen 'ingat' konteks sebelumnya tanpa harus di-prompt ulang.",
+      "Mendukung multi-modal (teks, gambar, audio) dan punya MCP server resmi untuk dipasang ke Claude Code, Cursor, dan coding agent lain — 'memory layer' universal yang plug ke workflow agentik apa pun.",
+      "Apache 2.0, bisa di-deploy lokal, Modal, Railway, Fly.io, Render, atau Daytona — relevan untuk tim yang ingin agen AI-nya punya ingatan jangka panjang tanpa lock-in ke SaaS proprietary atau fine-tune model.",
+    ],
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    description:
+      "Template Next.js 16 (MIT) yang mengubah URL situs mana pun menjadi codebase modern lewat satu perintah `/clone-website` — didukung Claude Code, Codex, Cursor, Windsurf, dan 12 coding agent lain.",
+    highlights: [
+      "Pipeline 5 fase (Reconnaissance → Foundation → Component Specs → Parallel Build → Assembly & QA) yang dispatch builder agent paralel lewat git worktree — setiap section situs dibangun terpisah lalu di-merge.",
+      "Output bersih: Next.js 16 + React 19 + TypeScript strict, Tailwind v4 dengan design token oklch yang diekstrak dari situs asli, plus komponen shadcn/ui siap pakai — bukan scrap statis HTML.",
+      "Bisa dipakai untuk migrasi platform (WordPress/Webflow/Squarespace ke Next.js), rekonstruksi source code yang hilang, atau eksplorasi desain situs produksi untuk pembelajaran — README-nya eksplisit melarang phishing dan pelanggaran ToS.",
+      "Mendukung 13 coding agent: Claude Code (direkomendasikan dengan Opus 4.7), Codex CLI, OpenCode, Copilot, Cursor, Windsurf, Gemini CLI, Cline, Roo Code, Continue, Amazon Q, Augment, dan Aider — workflow yang sama lintas tool pilihan developer.",
+    ],
+  },
+  "zhaoxuya520/reverse-skill": {
+    description:
+      "Skill router pack (PowerShell + multi-platform) yang mengubah AI coding agent jadi asisten reverse engineering, authorized pentest, dan CTF — mendukung Claude Code, Kiro, Cursor, Cline, Windsurf, dan Codex.",
+    highlights: [
+      "Mendeklarasikan AI agent sebagai 'security-task skill router': agent meng-klasifikasi task, masuk ke workflow yang tepat (APK reverse, IDA Pro, JS reverse, radare2, pentest, firmware, EDR bypass, LLM security), lalu panggil tool asli untuk eksekusi.",
+      "Toolchain di-bootstrap on-demand — tersedia modul untuk jadx, Frida, radare2, pwntools, EMBA, Firmadyne, AFL++, Hashcat, Nuclei, Nmap, SQLMap, FFUF, dan lain-lain; agent tahu tool mana yang ada di mesin dan auto-install yang kurang.",
+      "Knowledge base 'self-evolving' lewat field-journal dan precedent library — setiap workflow authorized yang selesai dicatat sebagai referensi untuk task berikutnya, sehingga pengalaman terakumulasi lintas proyek.",
+      "Multi-platform scripts (Windows PowerShell, Linux/macOS Bash, Kali) plus routing table dan AI Agent Bootstrap Flow yang mendeteksi OS dan menyuntikkan RULES.md — relevan untuk security researcher, blue team, dan kontestan CTF yang ingin otomatisasi workflow lewat Claude Code atau Cursor.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
