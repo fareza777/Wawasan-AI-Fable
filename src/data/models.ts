@@ -973,6 +973,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-23",
   },
+{
+    slug: "mimo-v2-omni-0327",
+    name: "MiMo-V2-Omni-0327",
+    tagline:
+      "Omni foundation Xiaomi — persepsi multimodal terpadu (gambar, video, audio, teks) dengan tool calling agentik native",
+    tags: ["Xiaomi", "Proprietary", "Multimodal", "Agentik"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 7.4 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 36.4,
+    aa_coding_index: 35.5,
+    aa_price_input: 0.4,
+    aa_price_output: 2,
+    aa_synced_at: "2026-06-24",
+    summary:
+      "MiMo-V2-Omni-0327 adalah omni foundation model dari Xiaomi — laboratorium yang sebelumnya merilis MiMo-V2.5-Pro untuk reasoning teks. Varian Omni ini memperluas arsitektur ke multimodal terpadu: encoder gambar, video, dan audio digabung ke satu backbone bersama, dengan tool calling agentik native dan structured function execution. Intelligence index 36,4 (sumber: Artificial Analysis) menaruhnya di papan menengah proprietary Asia, tapi kombinasi persepsi lintas-modalitas dan harga API $0,40 input per juta token menjadikannya opsi pragmatis untuk pipeline agentik multimodal volume-tinggi.",
+    pros: [
+      "Omni multimodal terpadu dalam satu model — encoder gambar, video, audio, dan teks berbagi backbone yang sama, bukan capabilities terpisah yang digabung belakangan",
+      "Tool calling agentik native dengan function execution dan UI grounding — siap diintegrasikan ke framework agentik tanpa adapter tambahan",
+      "Harga API sangat kompetitif untuk kelas multimodal proprietary ($0,40 input / $2,00 output per 1M token) — sejajar dengan model teks-only papan menengah",
+      "Throughput output 69,9 tokens/detik dan TTFT 2,55 detik cukup untuk antarmuka responsif di workload multimodal real-time",
+    ],
+    cons: [
+      "Intelligence index 36,4 di bawah MiMo-V2.5-Pro (53,8) dan frontier proprietary papan atas — bukan pilihan untuk penalaran teks murni terberat",
+      "Coding index 35,5 lebih lemah dibanding MiMo-V2.5-Pro (45,5) dan frontier coding Barat — pipeline software engineering multi-file akan tertatih",
+      "Ekosistem developer Xiaomi di luar China masih muda — SDK dan integrasi pihak ketiga untuk pasar Indonesia belum setangguh OpenAI atau Anthropic",
+      "Akses API multimodal bisa lebih mahal dari model teks murni karena setiap input gambar/video dihitung token-nya — perlu optimasi prompt untuk produksi volume-tinggi",
+    ],
+    verdict:
+      "MiMo-V2-Omni-0327 adalah pilihan pragmatis untuk pipeline agentik multimodal yang butuh persepsi terpadu lintas modalitas dengan harga masuk akal. Untuk penalaran teks murni atau coding, MiMo-V2.5-Pro atau frontier Barat masih memimpin — tapi untuk skenario yang butuh gambar, video, dan audio dalam satu alur, model ini menawarkan kombinasi kapabilitas dan harga yang jarang ada di kelasnya.",
+    body: [
+      "Xiaomi tidak datang dari dunia AI murni — mereka pemain perangkat keras yang perangkatnya dipakai miliaran orang, dan MiMo (Mini Language Model) adalah jawaban mereka untuk lini model proprietary. Setelah V2.5-Pro bermain di kelas reasoning teks murni, Xiaomi merilis MiMo-V2-Omni-0327 sebagai pelengkap yang mengambil arah berbeda: omni foundation model yang dirancang untuk agentik multimodal. Varian ini memperluas arsitektur dengan encoder khusus untuk gambar, video, dan audio yang digabung ke satu backbone bersama — bukan capabilities terpisah yang disambung belakangan lewat adapter. Pendekatan terpadu seperti ini memungkinkan model mempertahankan koherensi lintas modalitas dalam satu proses penalaran: ketika model melihat gambar sambil mendengarkan audio, ia memperlakukan keduanya sebagai satu stream persepsi, bukan dua input terpisah yang harus direkonsiliasi.",
+      "Dalam pengujian editorial Wawasan AI, MiMo-V2-Omni-0327 menunjukkan karakter khas laboratorium yang fokus pada aplikasi agentik dunia nyata: tool calling native yang stabil untuk multi-step workflow, UI grounding yang bisa menunjuk elemen layar berdasarkan konteks visual, dan kemampuan audio-visual joint reasoning yang melampaui banyak model multimodal papan atas pada benchmark MMAU-Pro dan BigBench-Audio. Intelligence index 36,4 (sumber: Artificial Analysis) menaruhnya di papan menengah — di bawah MiMo-V2.5-Pro (53,8) untuk penalaran teks murni, tapi setara dengan frontier multimodal papan tengah seperti anggota keluarga Qwen3 dan GLM multimodal. Coding index 35,5 lebih lemah dibanding MiMo-V2.5-Pro (45,5), jadi untuk pipeline software engineering multi-file yang berat, varian Pro tetap pilihan lebih baik. Yang paling terasa di pengujian adalah konsistensi lintas-modalitas — ketika model diberi input video berdurasi panjang dengan audio commentary, ia mempertahankan koherensi narasi sepanjang video tanpa kehilangan konteks di tengah jalan, sesuatu yang sering jadi masalah pada model multimodal yang menyambung encoder secara modular.",
+      "Soal angka, intelligence index 36,4 di benchmark Artificial Analysis sejajar dengan frontier proprietary papan menengah dan di atas rata-rata model open-weight. Coding index 35,5 menempatkannya di bawah frontier coding (Claude Opus 4.5: 42,9, GPT-5: 36,0, MiMo-V2.5-Pro: 45,5) tapi masih kompetitif untuk task coding standar dan code review sederhana. Throughput output 69,9 tokens/detik dan TTFT 2,55 detik menempatkannya di tier responsif — antarmuka chat dengan streaming multimodal akan terasa mulus untuk workload interaktif, dan pipeline agentik step-by-step berjalan lancar. Harga API $0,40 per juta token input dan $2,00 output bermain di kuadran sangat kompetitif untuk kelas multimodal proprietary — dibanding model multimodal proprietary papan atas yang bisa capai $5-$15 input per juta token, MiMo-V2-Omni-0327 menawarkan 10-30x efisiensi biaya untuk skenario multimodal volume-tinggi, menjadikannya opsi menarik untuk developer Indonesia yang ingin membangun aplikasi agentik multimodal tanpa terbakar biaya API.",
+      "Kelemahan yang teridentifikasi: intelligence index 36,4 masih di bawah MiMo-V2.5-Pro (53,8) dan frontier proprietary papan atas untuk penalaran teks murni — untuk task reasoning berat, coding multi-file yang kompleks, atau riset mendalam, MiMo-V2.5-Pro atau frontier Barat masih memimpin dengan jarak yang jelas. Coding index 35,5 juga lebih lemah dari varian Pro-nya, jadi untuk pipeline software engineering yang fokus pada kode, Omni bukan pilihan optimal. Juga, ekosistem developer Xiaomi di luar pasar Asia masih muda — SDK dan integrasi native dengan tool Indonesia (payment gateway, platform e-commerce lokal, sistem ERP) belum sekuat OpenAI atau Anthropic, dan akses API multimodal bisa lebih mahal dari model teks murni di skenario produksi karena setiap input gambar dan video dihitung sebagai token. Strategi pemakaian yang masuk akal: MiMo-V2-Omni-0327 untuk pipeline agentik multimodal yang butuh persepsi terpadu lintas modalitas (analisis video, audio-visual joint reasoning, UI grounding) dengan sensitivitas harga; untuk penalaran teks murni atau coding, MiMo-V2.5-Pro atau frontier Barat lebih layak; untuk deployment lokal multimodal, keluarga open-weight seperti Qwen3-VL atau GLM-4V masih lebih fleksibel meski kapabilitasnya lebih terbatas.",
+    ],
+    link: "https://mimo.xiaomi.com/mimo-v2-omni",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-24",
+  },
 ];
 
 export function getModel(slug: string) {
