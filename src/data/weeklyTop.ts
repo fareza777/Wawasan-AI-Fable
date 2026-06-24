@@ -493,6 +493,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Multi-platform scripts (Windows PowerShell, Linux/macOS Bash, Kali) plus routing table dan AI Agent Bootstrap Flow yang mendeteksi OS dan menyuntikkan RULES.md — relevan untuk security researcher, blue team, dan kontestan CTF yang ingin otomatisasi workflow lewat Claude Code atau Cursor.",
     ],
   },
+  "baidu/Unlimited-OCR": {
+    description:
+      "Model OCR open-source 3B parameter dari Baidu (rilis 22 Juni 2026) yang mem-parse PDF dan dokumen multi-halaman dalam satu kali jalan — tidak perlu split-stitch manual, jalan lokal di GPU consumer.",
+    highlights: [
+      "Model 3B parameter (MIT-licensed) yang memproses sampai 40 halaman PDF dalam satu forward pass lewat konteks 32K dan KV-cache konstan — tabel yang melintasi halaman, footnote, dan layout tetap terjaga utuh.",
+      "Output terstruktur: tabel jadi HTML, equation jadi LaTeX, layout dengan bounding box dan reading order natural — siap dipakai pipeline downstream tanpa post-processing ribet.",
+      "Arsitektur modern: vision encoder SAM + CLIP DeepEncoder, text decoder DeepSeek-V2 MoE, dan Reference Sliding Window Attention sebagai inovasi utama — dua mode 'gundam' (cepat) dan 'base' (fidelity tinggi) untuk dokumen padat.",
+      "Jalan lokal via HuggingFace Transformers, vLLM, SGLang, Ollama, MLX (Apple Silicon), atau GGUF quantization — dokumen tidak pernah dikirim ke cloud, relevan untuk legal, finance, dan riset yang memproses data sensitif.",
+    ],
+  },
+  "googleworkspace/cli": {
+    description:
+      "CLI resmi dari tim Google Workspace (gws, ditulis Rust) yang menyatukan Drive, Gmail, Calendar, Sheets, Docs, Chat, dan Admin dalam satu perintah — auto-generate dari Discovery Service, plus 40+ skill untuk AI agent.",
+    highlights: [
+      "Satu binary Rust yang mengakses semua API Google Workspace (Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin SDK) lewat command line terstruktur — bukan wrapper, melainkan klien yang membaca Google Discovery Service saat runtime.",
+      "Permukaan perintah selalu up-to-date: setiap endpoint API baru Google otomatis muncul tanpa update manual — CLI tradisional harus tunggu rilis baru untuk fitur baru.",
+      "Output JSON terstruktur, auto-pagination, --dry-run preview, dan 40+ 'skill' bawaan yang bisa dipasang ke Claude Code, Cursor, atau agen AI lain untuk otomasi workflow Workspace.",
+      "OAuth interaktif atau service account, kredensial terenkripsi AES-256-GCM di OS keyring, mendukung multi-account via env var untuk headless/scripted environment — relevan untuk tim yang mau scripting Workspace tanpa boilerplate SDK.",
+    ],
+  },
+  "shanraisshan/claude-code-best-practice": {
+    description:
+      "Ensiklopedia Claude Code terlengkap di GitHub — petakan setiap primitif (agents, commands, skills, hooks, MCP, memory) dengan best practice + contoh implementasi, plus 80+ tips dari engineer Anthropic dan Karpathy.",
+    highlights: [
+      "Single-repo encyclopedia Claude Code: setiap primitif (agents, commands, skills, hooks, MCP servers, memory, settings, status line, plugins) dipasangkan dengan writeup best practice dan file implementasi runnable yang tinggal di-copy.",
+      "80+ tips field-tested dari Boris Cherny (pencipta Claude Code), Thariq (Anthropic), Cat Wu, dan Andrej Karpathy — bukan opini netizen, melainkan pattern yang dipakai orang yang membangun Claude Code itu sendiri.",
+      "Tiga layer di atas primitif: orchestration workflow Command → Agent → Skill, tabel kurasi 10 framework Claude Code populer (Superpowers, Spec Kit, gstack, BMAD-METHOD, OpenSpec), dan tips section yang terus di-update tiap rilis CLI baru.",
+      "MIT-licensed, update tiap rilis Claude Code (badge di README menunjukkan versi CLI yang dilacak) — relevan untuk developer Indonesia yang sudah pakai Claude Code harian dan ingin naik level dari 'bisa dipakai' ke 'produksi-grade'.",
+    ],
+  },
 };
 
 // Helper: lookup dengan fallback ke template-generated highlights
