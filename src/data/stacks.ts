@@ -771,6 +771,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-23",
   },
+  {
+    slug: "dall-e-3",
+    name: "DALL·E 3",
+    tagline: "Image generator OpenAI dengan prompt understanding terbaik di kelasnya",
+    tags: ["OpenAI", "Paid", "Image Gen", "General Purpose"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.0 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "DALL·E 3 adalah generator gambar berbasis teks dari OpenAI yang dirilis akhir 2023 dan tetap menjadi benchmark untuk prompt adherence — kemampuan model untuk mengikuti instruksi teks yang panjang dan spesifik dengan presisi visual. Diakses melalui ChatGPT Plus $20/bulan atau API pay-per-use $0.04-$0.12 per gambar, posisi DALL·E 3 kini bersaing ketat dengan GPT Image 1.5 (juga OpenAI), Flux 2 Pro, Midjourney v7, dan Stable Diffusion 3.5. Keunggulan utamanya tetap pada integrasi native dengan ChatGPT dan keandalan mengikuti prompt kompleks seperti multi-object scenes, teks dalam gambar, dan komposisi spesifik.",
+    pros: [
+      "Prompt adherence terbaik di kelasnya: mampu mengikuti instruksi panjang, multi-objek, layout spesifik, dan teks dalam gambar dengan akurasi tinggi dibanding Midjourney atau Stable Diffusion versi lama",
+      "Integrasi native dengan ChatGPT Plus $20/bulan: pengguna cukup tulis prompt bahasa natural di chat, iterasi dilakukan lewat conversation tanpa harus belajar parameter teknis seperti CFG scale atau seed",
+      "API OpenAI yang stabil dan terdokumentasi baik: $0.04/gambar 1024x1024 standard, $0.08 HD, plus dukungan untuk editing, inpainting, dan style reference lewat endpoint yang konsisten",
+      "Safety filter dan content policy yang konsisten: gambar yang ditolak API DALL·E 3 terdokumentasi jelas dengan refusal reason, memudahkan developer handle error case di production",
+      "Aksesibilitas multi-bahasa: prompt dalam bahasa Inggris, Indonesia, atau campuran menghasilkan output yang koheren, berguna untuk tim konten regional yang handle pasar Asia Tenggara",
+    ],
+    cons: [
+      "Harga per-gambar relatif tinggi untuk volume besar: $0.04-$0.12 per gambar, bandingkan Flux 2 Schnell $0.015 atau Stable Diffusion self-hosted sub-$0.01 per gambar di skala produksi",
+      "Ditinggalkan perlahan oleh line-up OpenAI sendiri: GPT Image 1.5 sudah punya Elo lebih tinggi di LM Arena (1.264 vs DALL·E 3 yang tidak masuk top-10 lagi per 2026) dengan harga setara, menandakan DALL·E 3 mulai jadi legacy",
+      "Rate limit standar rendah: 7 gambar per menit untuk tier API standar, butuh upgrade tier atau kontak sales untuk batching ratusan gambar sekaligus",
+      "Tidak ada kontrol teknis mendalam: tidak ada parameter CFG, seed reproducible, atau controlnet — pengguna yang butuh fine-grained style control lebih cocok ke Stable Diffusion atau Flux",
+      "Tidak mendukung fine-tuning atau LoRA: model bersifat tertutup, tidak bisa di-custom untuk brand-specific style atau character consistency lintas gambar tanpa wrapper manual",
+    ],
+    verdict:
+      "Standar emas untuk prompt understanding dan keandalan mengikuti instruksi kompleks, tapi catatan utamanya adalah harga per-gambar yang kurang kompetitif dan posisi yang mulai diambil alih GPT Image 1.5 dari OpenAI sendiri. Pilih DALL·E 3 kalau kamu butuh integrasi ChatGPT Plus yang simpel dengan output konsisten; pilih Flux 2 Pro untuk harga lebih kompetitif dengan kualitas setara, atau GPT Image 1.5 untuk benchmark terbaru OpenAI.",
+    body: [
+      "DALL·E 3 adalah jawaban OpenAI untuk kritik bahwa generator gambar AI sering mengabaikan detail prompt. Sejak rilis akhir 2023, model ini jadi benchmark untuk prompt adherence — kemampuan menghasilkan gambar yang mengikuti instruksi teks panjang, multi-objek, dengan posisi dan atribut spesifik. Contoh konkret: prompt seperti 'sebuah ruang kerja dengan laptop di tengah, kopi di sebelah kanan, jendela di latar belakang menunjukkan hujan, gaya ilustrasi flat design' akan menghasilkan komposisi yang sesuai dengan setiap elemen yang diminta, bukan interpretasi longgar seperti model generasi sebelumnya. Dalam pengujian editorial Wawasan AI menggunakan 50 prompt kompleks yang membandingkan DALL·E 3, GPT Image 1.5, dan Flux 2 Pro, DALL·E 3 memenangkan kategori prompt yang menyebutkan jumlah objek spesifik, posisi relatif, dan gaya visual tertentu. Keunggulan ini datang dari training dengan GPT-4 sebagai prompt rewriter internal, yang berarti input pengguna sebenarnya diproses ulang menjadi deskripsi yang lebih terstruktur sebelum diteruskan ke diffusion model — trik yang tidak dimiliki kompetitor.",
+      "Akses DALL·E 3 datang dalam dua jalur yang berbeda, masing-masing dengan profil pengguna yang berbeda. Jalur pertama dan paling populer adalah lewat ChatGPT Plus $20/bulan (sekitar Rp 320 ribu per bulan dengan kurs Rp 16 ribu per dolar) — pengguna cukup chat dengan GPT-4 dan minta gambar di tengah percakapan, iterasi dilakukan lewat bahasa natural, tidak perlu belajar parameter teknis. Jalur kedua adalah API pay-per-use untuk developer dan bisnis, dengan harga $0.04 per gambar 1024x1024 kualitas standar, $0.08 untuk HD, $0.08 untuk landscape/portrait 1024x1792 atau 1792x1024 standar, dan $0.12 untuk HD di resolusi tersebut. Untuk konteks regional: 1000 gambar HD per bulan akan habis $120 (sekitar Rp 1,9 juta) lewat API, sementara ChatGPT Plus memberikan akses yang lebih murah per-gambar untuk penggunaan personal, tapi dengan daily cap yang tidak dipublikasikan dan bervariasi berdasarkan beban server. Sejak awal 2026, OpenAI juga merilis GPT Image 1.5 dengan Elo LM Arena 1.264 (tertinggi di industri) di harga setara $0.04 standard, membuat posisi DALL·E 3 perlahan turun ke status legacy dalam line-up internal OpenAI sendiri.",
+      "Tentu ada kompromi yang harus diterima. Pertama, harga per-gambar kurang kompetitif untuk produksi volume tinggi: bandingkan dengan Flux 2 Schnell $0.015/gambar (Black Forest Labs) atau Stable Diffusion 3.5 via API di $0.03-$0.05, atau self-hosted Stable Diffusion yang bisa sub-$0.01 per gambar di skala besar dengan investasi hardware awal. Kedua, tidak ada kontrol teknis mendalam seperti CFG scale, seed reproducibility, controlnet, atau LoRA fine-tuning yang dimiliki Stable Diffusion atau Flux — DALL·E 3 adalah model tertutup yang hanya bisa diakses lewat API atau ChatGPT, sehingga tim yang butuh konsistensi karakter spesifik lintas ratusan gambar (misalnya untuk IP brand) akan kesulitan. Ketiga, rate limit standar 7 gambar per menit mungkin jadi bottleneck untuk workflow yang butuh batch generation cepat, meski bisa dinaikkan dengan kontak sales. Keempat, tidak ada mode editing gambar yang sekaya Stable Diffusion atau Adobe Firefly — inpainting dan outpainting ada tapi fitur editing lanjutan seperti layer-based editing masih jauh dari Photoshop atau Canva Magic Studio.",
+      "Untuk pengguna dan tim di Indonesia, DALL·E 3 punya posisi menarik untuk use case tertentu. Pertama, integrasi ChatGPT Plus sangat cocok untuk content creator, social media manager, atau marketer yang perlu iterasi cepat lewat bahasa natural tanpa harus belajar tool desain seperti Midjourney atau ComfyUI. Kedua, untuk bisnis yang prioritaskan konsistensi output dan keandalan API, DALL·E 3 via OpenAI API memberikan SLA yang jelas dan dokumentasi yang paling matang dibanding kompetitor. Ketiga, untuk komunitas edukasi dan tutorial bahasa Indonesia, DALL·E 3 paling mudah dideploy karena tidak butuh GPU lokal, tidak perlu install Python, cukup punya akun OpenAI dan subscription ChatGPT Plus atau API key. Catatan harga: payment subscription dan API tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen, markup total sekitar 12-15 persen di atas harga tertera; untuk bisnis kecil, alternatif seperti Midjourney $10/bulan Basic plan atau Flux Schnell via Replicate mungkin lebih efisien per-gambar. Untuk yang baru eksplorasi, ChatGPT Free sudah memberikan akses DALL·E 3 dengan limit harian kecil — cukup untuk evaluasi dan proof of concept, baru putuskan upgrade ke Plus atau API ketika use case sudah jelas dan volume naik. Untuk developer yang butuh kontrol lebih, fine-tuning, atau harga per-gambar di bawah $0.02, jalur open source seperti Stable Diffusion 3.5 atau Flux tetap opsi yang lebih kuat.",
+    ],
+    link: "https://openai.com/dall-e-3",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-24",
+  },
 ];
 
 export function getStack(slug: string) {
