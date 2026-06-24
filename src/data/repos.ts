@@ -1197,6 +1197,58 @@ export const repos: Review[] = [
     date: "2026-06-24",
     updatedAt: "2026-06-24",
   },
+  {
+    slug: "learn-claude-code",
+    name: "Learn Claude Code",
+    tagline:
+      "Repositori edukatif untuk membangun ulang agent harness ala Claude Code dari nol",
+    tags: ["AI Agent", "Edukasi", "Python", "Open Source"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "Learn Claude Code dari shareAI-lab adalah repositori edukatif yang membongkar cara kerja agent harness modern ala Claude Code — dari loop agent, orkestrasi sub-agent, hingga sistem permission — dan membimbing pembaca membangunnya ulang dari nol dalam Python. Lebih dari 68 ribu bintang di GitHub menjadikannya salah satu sumber belajar agentic engineering paling ramai dibicarakan di 2026.",
+    highlights: [
+      "Filosofi 'Bash is all you need': agent harness modern tidak harus berupa workflow visual rumit, cukup loop CLI yang disiplin dan tool yang jelas batasannya",
+      "Loop agent kanonik: model menerima pesan, memilih tool, hasil tool di-append ke messages, dan loop berulang sampai stop_reason bukan tool_use",
+      "Tool set lengkap ala Claude Code: bash, read, write, edit, glob, grep, browser, dengan deskripsi yang tegas dan komposable",
+      "Sistem skill on-demand: pengetahuan domain (dokumentasi produk, API, gaya penulisan) dimuat sesuai kebutuhan, bukan dijejalkan ke system prompt",
+      "Sub-agent dengan isolasi konteks: agent khusus yang di-spawn untuk tugas berat tanpa mengotori konteks utama, plus kompaksi otomatis saat konteks membesar",
+      "Task system dengan dependency graph: pekerjaan kompleks dipecah jadi node yang bisa jalan paralel dengan worktree terisolasi",
+      "Asynchronous mailbox untuk koordinasi multi-agent: agent saling kirim pesan lewat antrian, bukan RPC sinkron yang mudah macet",
+      "Permission governance: sandboxing, approval workflow, dan trust boundary yang eksplisit — contoh bagus untuk agent yang menyentuh filesystem dan shell",
+      "Hook extension system: titik-titik ekstensi resmi yang aman untuk menambah perilaku tanpa memonopoli loop utama",
+      "Memory persistence + routing MCP: agent mengingat lintas sesi dan bisa memanggil tool eksternal lewat Model Context Protocol",
+    ],
+    pros: [
+      "Materi paling runut untuk memahami agent harness modern: pembaca diajak menulis setiap komponen dari nol, bukan cuma memakai framework jadi",
+      "Repositori aktif dan sangat populer di komunitas global — lebih dari 68 ribu bintang dan 11 ribu fork, dengan kontribusi rutin yang membuat contoh-contohnya tetap relevan",
+      "Kode singkat dan mudah dibaca: setiap modul fokus pada satu tanggung jawab, sehingga bisa dipelajari sebagai pola arsitektur",
+      "Lisensi MIT: bebas dipakai, dimodifikasi, dan diajarkan ulang di lingkungan kampus, korporasi, maupun komunitas di Indonesia",
+    ],
+    cons: [
+      "Posisi utamanya adalah sumber belajar, bukan framework produksi: setelah memahami polanya, pengguna tetap harus menulis implementasi production-grade sendiri",
+      "Fokus kuat pada CLI/terminal: pembaca yang lebih nyaman dengan antarmuka visual mungkin perlu waktu untuk terbiasa",
+      "Bergerak cepat mengikuti tren agentic engineering: beberapa bagian bisa tertinggal dari rilis terbaru model dan toolchain",
+    ],
+    verdict:
+      "Titik masuk paling jujur untuk siapa pun yang ingin tahu apa yang sebenarnya terjadi di balik AI agent CLI populer. Untuk developer, dosen, dan engineer di Indonesia yang ingin membangun kapasitas agentic tanpa tergantung pada satu vendor, repositori ini hampir tidak punya tanding di 2026.",
+    body: [
+      "Di tengah ramainya produk agent yang mengklaim 'cukup drag-and-drop', Learn Claude Code mengambil posisi yang berbeda: menulis ulang agent harness modern dari nol, baris per baris, dengan penjelasan mengapa setiap keputusan diambil. Pendekatan ini sangat berharga karena sebagian besar framework agent justru menutupi logika intinya di balik abstraksi. Di sini, pembaca melihat langsung loop agent, sistem tool, kompaksi konteks, dan mekanisme permission — semua hal yang membedakan mainan demo dari produk yang benar-benar bisa dipakai.",
+      "Dalam pengujian editorial Wawasan AI, nilai terbesar repositori ini ada pada kejelasan arsitekturnya. Saat mengikuti bab tentang task system dan dependency graph, alur kerja multi-agent yang biasanya terasa misterius tiba-tiba menjadi masuk akal: setiap tugas punya node sendiri, dependency-nya eksplisit, dan worktree mencegah pekerjaan paralel saling menimpa. Pola ini bisa diadopsi ke stack internal mana pun — dari pipeline riset hingga otomasi operasi — tanpa tergantung pada satu vendor agent tertentu.",
+      "Untuk konteks Indonesia, Learn Claude Code sangat relevan bagi dosen, mahasiswa, dan engineer yang ingin mengajarkan atau mempelajari agentic engineering dengan kurikulum yang tidak terjebak pada satu ekosistem komersial. Materi dapat dipakai di kelas, workshop, atau bootcamp dengan penyesuaian minimal, dan lisensi MIT memungkinkan adaptasi ke dalam bahasa Indonesia atau contoh kasus lokal — sesuatu yang tidak selalu dimungkinkan oleh kursus proprietary.",
+      "Batasan yang perlu dipahami: ini adalah repositori belajar, bukan toolkit siap pakai untuk production deployment. Setelah memahami polanya, pengguna tetap harus menulis lapisan observability, retry, audit, dan hardening sendiri. Namun di 2026, dengan semakin banyak tim di Indonesia yang mempertimbangkan membangun agent internal, memiliki pemahaman mendalam tentang cara kerja harness jelas lebih bernilai daripada sekadar bisa memanggil API dari library orang lain.",
+    ],
+    link: "https://github.com/shareAI-lab/learn-claude-code",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-25",
+    updatedAt: "2026-06-25",
+  },
 ];
 
 export function getRepo(slug: string) {
