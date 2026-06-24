@@ -883,6 +883,47 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "tumbuh-51-empat-tahun-berturut-turut-hostinger-naik-kelas-ke-ai-powerhouse",
+    title: "Hostinger dan Perpindahan Lajur: Saat Hosting Berubah Menjadi Panggung AI",
+    excerpt:
+      "Pendapatan tumbuh 51% empat tahun berturut-turut dan strategi Hostinger mengubah asumsi dasar: hosting bukan lagi infrastruktur pinggiran, melainkan panggung utama AI UMKM.",
+    category: "Analisis",
+    date: "2026-06-24",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Dulu cerita tentang penyedia hosting adalah cerita yang membosankan: harga turun, uptime naik, pelanggan pindah-pindah hanya karena selisih beberapa dolar per bulan. Pembicaraan soal pilihan server, lokasi data center, dan konfigurasi PHP adalah wilayah yang cuma menarik bagi teknisi. Namun sejak 2024-2026, ada satu cerita yang berulang dari berbagai penjuru: pemain hosting tradisional yang tadinya nyaris tidak pernah masuk headline teknologi, tiba-tiba naik kelas menjadi jembatan utama ke adopsi AI.",
+          "Hostinger adalah contoh paling gamblang dari pergeseran itu. Penyedia hosting asal Lithuania yang selama dua dekade kita kenal sebagai pilihan ramah UMKM ini mengumumkan pertumbuhan pendapatan 51% year-on-year di 2025 menjadi 275,4 juta euro, dan mencapai rekor empat tahun berturut-turut di atas 50%. Pelanggan sudah lebih dari 5 juta di 150 negara, dan Indonesia sudah masuk lima pasar terbesar sejajar India, Brasil, Amerika Serikat, dan Prancis. Bukan kebetulan angka-angka itu muncul di tahun yang sama ketika Hostinger merilis Hostinger Horizons dan OpenClaw sebagai produk andalan.",
+        ],
+      },
+      {
+        heading: "Apa sebenarnya yang bergeser dari hosting ke AI powerhouse",
+        paragraphs: [
+          "Pergeseran Hostinger bukan soal menambahkan fitur AI sebagai pelengkap. Mereka secara eksplisit mengubah asumsi dasar: dari menjual paket hosting menjadi menjual 'tempat di mana AI membangun, menjalankan, dan melayani produk Anda'. Dua produk menjadi tulang punggung. Pertama, Hostinger Horizons, platform pengembangan website tanpa coding yang memungkinkan pengguna menuliskan ide dalam bahasa sehari-hari dan menerima website berfungsi lengkap dengan hosting, domain, serta email di belakangnya. Sejak peluncuran, Horizons sudah dipakai lebih dari 1 juta pengguna global, dan komposisi pemakaiannya justru yang menarik: 49% untuk website bisnis dan portofolio, 10% untuk ecommerce, 5% untuk SaaS dashboard.",
+          "Kedua, OpenClaw, platform agen AI yang dipasang dengan satu klik. Bedanya dari solusi DIY: kredit AI sudah termasuk dalam paket, jadi pengguna tidak perlu akun OpenAI atau Anthropic atau API key terpisah. Founder bisa menghubungkan OpenClaw ke Telegram atau WhatsApp untuk menyortir pesan dan jadwal, tim sales bisa menggunakannya untuk menyaring leads, dan tim developer bisa memakainya untuk deteksi bug serta saran refactoring. Ada dua varian: managed dengan lingkungan terisolasi dan backup otomatis, dan self-managed untuk pengguna VPS yang butuh akses root penuh.",
+          "Pelajaran yang paling penting dari strategi ini bukan spesifik produknya, melainkan arahnya: pemain infrastruktur lama naik kelas dengan menambah lapisan AI di atas fondasi yang sudah dimiliki. Bukan sebaliknya, membangun AI agent dari nol tanpa infrastruktur. Itulah yang membedakan Hostinger dari seribu startup AI baru yang harus memikirkan hosting, domain, deployment, dan keamanan dari awal setiap kali mereka membuka satu customer baru.",
+        ],
+      },
+      {
+        heading: "Implikasi untuk UMKM dan founder Indonesia",
+        paragraphs: [
+          "Untuk UMKM Indonesia, perubahan ini punya konsekuensi praktis yang langsung terasa. Pertama, ambang batas teknis untuk 'punya produk digital' turun drastis. Seorang desainer grafis di Indonesia bernama Azis, misalnya, membangun appaaja.com menggunakan Horizons untuk menyatukan konversi gambar, penyuntingan PDF, dan tugas harian -- semuanya tanpa menulis kode, dan data tetap berada di database miliknya sendiri. Kasus seperti Azis menunjukkan bahwa persoalan klasik UMKM soal biaya developer dan waktu tunggu sudah tidak lagi jadi alasan menunda kehadiran digital.",
+          "Kedua, untuk founder rintisan, OpenClaw menjawab salah satu masalah paling sering kita temui di lapangan: bot yang harus disetup berhari-hari sebelum bisa dipakai untuk hal sederhana seperti menjawab pertanyaan pelanggan atau menyortir pesan masuk. Dengan pemasangan satu klik, founder bisa fokus pada produk, bukan pada infrastruktur. Ada catatan penting dari sisi keamanan: pesan DM dianggap input tidak terpercaya secara default, dan hanya pengirim dengan pairing code yang bisa berinteraksi dengan bot sampai user menyetujui pairing secara eksplisit. Pembatasan ini bukan birokrasi, melainkan pengaman yang justru menyelamatkan UMKM dari skenario phishing yang sudah mulai menimpa bot layanan publik di berbagai negara.",
+          "Ketiga, dan ini yang paling relevan untuk konteks lokal, Hostinger sudah mengoperasikan data center di Indonesia. Untuk industri yang diatur ketat seperti healthtech, fintech, dan sebagian besar layanan publik, kehadiran data center lokal bukan fitur tambahan melainkan prasyarat hukum. UMKM yang bergerak di sekitar layanan tersebut kini punya opsi baru yang tidak mengharuskan mereka menyewa data center sendiri atau menandatangani kontrak dengan pemain global yang tidak punya kehadiran lokal.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dipelajari dari strategi internal Hostinger sendiri",
+        paragraphs: [
+          "Di balik layar, ada dua pekerjaan rumah yang justru lebih menarik dari sisi pembelajaran. Pertama, infrastruktur AI: Hostinger bermitra dengan nexos.ai sebagai lapisan pengelolaan model, mulai dari routing sampai load balancing dan failover. Mereka mengklaim keputusan ini menghemat biaya setara dua tahun gaji developer dibanding membangun sendiri. Untuk organisasi Indonesia yang sedang menimbang 'beli versus bangun' infrastruktur AI, angka ini layak dijadikan titik referensi -- bukan sebagai dogma, melainkan sebagai bukti bahwa untuk banyak kasus, membeli lapisan AI yang sudah jadi lebih masuk akal secara ekonomi daripada membangun sendiri dari nol.",
+          "Kedua, mereka punya AI agent internal bernama Kodee yang menangani layanan pelanggan. Akhir 2025, Kodee sudah menangani 81% interaksi tanpa intervensi manusia, naik dari 50% di awal tahun, dengan penghematan sekitar 9 juta euro per tahun. Kombinasi keduanya -- bermitra untuk lapisan AI publik, dan membangun AI internal untuk efisiensi operasional -- adalah pola yang bisa ditiru. Bukan semuanya harus dibangun, dan bukan semuanya harus dibeli; yang penting adalah memiliki kejelasan soal mana yang masuk kategori operasional dan mana yang masuk kategori pembeda produk.",
+          "Ada satu ironi yang patut dicatat: sementara banyak startup AI baru berlomba menjadi 'AI platform' tanpa fondasi infrastruktur, pemain hosting tua justru mengajarkan bahwa AI tumbuh paling subur di atas infrastruktur yang sudah matang. Untuk ekosistem digital Indonesia, implikasinya jelas: pemain lama yang berani menambahkan lapisan AI akan sulit disamai oleh pemain baru yang tidak punya infrastruktur. Dalam pengujian editorial Wawasan AI, itulah yang sering membedakan pemain yang kebetulan naik daun dari mereka yang benar-benar mengubah pasar.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
