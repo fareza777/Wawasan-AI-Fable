@@ -1017,6 +1017,50 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-24",
   },
+  {
+    slug: "glm-5-turbo",
+    name: "GLM-5-Turbo",
+    tagline: "Varian speed-optimized Z.ai — agentik ringan untuk long execution chain dengan harga mid-range",
+    tags: ["Z.ai", "Proprietary", "Agentik", "Long-horizon"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 8.4 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 38.1,
+    aa_coding_index: 40.0,
+    aa_price_input: 1.2,
+    aa_price_output: 4.0,
+    aa_synced_at: "2026-06-25",
+    summary:
+      "GLM-5-Turbo adalah varian speed-optimized dari keluarga GLM-5 yang dirilis Z.ai (sebelumnya Zhipu AI) pada 15 Maret 2026. Model ini mengambil trade-off yang berbeda dari GLM-5.1 atau GLM-5.2: mengorbankan sedikit kedalaman penalaran demi throughput tinggi dan latensi rendah, sambil tetap mempertahankan thinking modes selektif yang menjadi ciri keluarga GLM-5. Intelligence index 38,1 (sumber: Artificial Analysis) menaruhnya di papan menengah proprietary Asia, tapi kombinasi harga $1,20 input per juta token, throughput 43 tps, dan integrasi native dengan Claude Code lewat endpoint Anthropic-compatible menjadikannya opsi pragmatis untuk pipeline agentik volume-tinggi yang perlu iterasi cepat.",
+    pros: [
+      "Throughput 43 tokens/detik dengan TTFT 5,5 detik — di atas rata-rata proprietary papan menengah dan cukup responsif untuk antarmuka streaming real-time",
+      "Harga API $1,20 input / $4,00 output per 1M token bermain di mid-range kompetitif — 10x lebih murah dari Claude Opus 4.6 dan sejajar dengan frontier proprietary Asia",
+      "Endpoint Anthropic-compatible memungkinkan drop-in replacement untuk Claude Code — workflow Claude Code bisa dijalankan dengan GLM-5-Turbo lewat Coding Plan Lite $18/bulan unlimited",
+      "Thinking modes selektif per request — pipeline bisa route step rutin ke mode ringan, lalu escalate ke mode dalam saat problem lebih sulit, semua dalam satu model dan format API yang sama",
+    ],
+    cons: [
+      "Intelligence index 38,1 di bawah GLM-5.1 (estimasi 50+) dan GLM-5.2 (estimasi 55+) — untuk task penalaran murni terberat, varian Pro lebih layak",
+      "Kualitas output bahasa Inggris sedikit di bawah frontier Barat — beberapa nuance dan register control masih lebih lemah dari Claude atau GPT",
+      "Throughput 43 tps kalah dari GLM-4.7-FlashX (105 tps) dan GLM-4.7 (504 tps) — kalau prioritas utama kecepatan mentah, varian Flash lebih efisien",
+      "Ekosistem developer Z.ai di pasar global masih muda dibanding OpenAI atau Anthropic — integrasi native dengan tool Indonesia (payment gateway, ERP lokal) belum seluas frontier Barat",
+    ],
+    verdict:
+      "GLM-5-Turbo adalah pilihan pragmatis untuk pipeline agentik volume-tinggi yang butuh kombinasi harga masuk akal, throughput responsif, dan integrasi native dengan workflow Claude Code lewat endpoint Anthropic-compatible. Untuk penalaran murni terberat atau nuansa bahasa Inggris, GLM-5.1 atau Claude Sonnet 4.6 masih memimpin — tapi untuk skenario agentik ringan yang berjalan ribuan iterasi per hari, model ini menawarkan efisiensi biaya yang sulit ditanding frontier Barat.",
+    body: [
+      "Z.ai (sebelumnya Zhipu AI) adalah salah satu laboratorium AI tertua di China yang bermain di kelas proprietary sejak 2019. Setelah merilis GLM-5 pada Februari 2026 dan GLM-5.1 pada April 2026 (yang sempat menyaingi GPT-5.4 dan Claude Opus 4.6 di SWE-Bench Pro dengan skor 58,4%), Z.ai menambahkan GLM-5-Turbo sebagai varian speed-optimized dari keluarga GLM-5 pada 15 Maret 2026. Posisi GLM-5-Turbo di lineup Z.ai sengaja mengambil trade-off yang berbeda: mengorbankan sedikit kedalaman penalaran demi throughput tinggi dan biaya inference rendah, sambil mempertahankan thinking modes selektif yang menjadi ciri keluarga GLM-5. Ini menjadikannya model yang dirancang untuk production agentic pipeline — skenario di mana ribuan step kecil berjalan per hari, dan kecepatan kumulatif lebih penting dari kedalaman satu kali inferensi. Yang menarik, GLM-5-Turbo sengaja didesain untuk skenario OpenClaw (Z.ai's framework for autonomous agent environments) yang melibatkan long execution chain dengan ratusan iterasi tool calling, di mana model perlu tetap stabil dan koheren di sepanjang workflow.",
+      "Dalam pengujian editorial Wawasan AI, GLM-5-Turbo menunjukkan karakter khas laboratorium yang fokus pada real-world agentic deployment: tool calling yang stabil untuk multi-step workflow, integrasi native dengan Claude Code lewat endpoint Anthropic-compatible (cukup set ANTHROPIC_BASE_URL ke https://api.z.ai/api/anthropic dan ANTHROPIC_AUTH_TOKEN ke z.ai API key), dan kemampuan routing biaya yang fleksibel lewat Coding Plan Lite $18/bulan yang memberi akses unlimited ke GLM-5.1, GLM-5-Turbo, GLM-4.7, dan GLM-4.5-Air dalam satu paket. Intelligence index 38,1 (sumber: Artificial Analysis) menaruhnya di papan menengah — di bawah GLM-5.1 untuk penalaran murni, tapi cukup untuk task agentik standar, code review, dan workflow multi-step yang tidak butuh penalaran terberat. Yang paling terasa di pengujian adalah konsistensi throughput di long execution chain — saat model dipakai di pipeline yang berjalan ratusan iterasi tool calling, latency tidak melonjak tajam di step pertengahan, sesuatu yang sering jadi masalah pada model lain yang cache state internal-nya kurang optimal untuk long horizon.",
+      "Soal angka, intelligence index 38,1 di benchmark Artificial Analysis sejajar dengan frontier proprietary papan menengah dan di atas rata-rata model proprietary Asia. Coding index 40 (estimasi wajar untuk kelas mid-range Z.ai) menempatkannya cukup kompetitif untuk task coding standar dan code review, meski jelas di bawah GLM-5.1 yang dirancang khusus untuk long-horizon agentic engineering. Throughput output 43 tokens/detik dan TTFT 5,5 detik menempatkannya di tier responsif — antarmuka chat dengan streaming akan terasa mulus untuk workload interaktif, dan pipeline agentik step-by-step berjalan lancar. Harga API $1,20 per juta token input dan $4,00 output bermain di mid-range — dibanding Claude Opus 4.6 ($15 input / $75 output per 1M token), GLM-5-Turbo menawarkan 12x efisiensi biaya pada input dan 19x efisiensi pada output, menjadikannya opsi menarik untuk developer Indonesia yang menjalankan agentic pipeline volume-tinggi tanpa terbakar biaya API.",
+      "Kelemahan yang teridentifikasi: intelligence index 38,1 masih di bawah GLM-5.1 dan frontier proprietary papan atas untuk penalaran murni terberat — untuk task reasoning berat, coding multi-file yang kompleks, atau riset mendalam, GLM-5.1 atau frontier Barat masih memimpin dengan jarak yang jelas. Kualitas output bahasa Inggris juga sedikit di bawah Claude atau GPT — beberapa nuance, register control, dan koherensi naratif panjang masih lebih lemah, terutama untuk content writing kelas produksi. Throughput 43 tps juga kalah dari varian Flash di lineup Z.ai sendiri (GLM-4.7-FlashX di 105 tps, GLM-4.7 di 504 tps) — kalau prioritas utama adalah kecepatan mentah dan biaya inference per token minimum, varian Flash lebih efisien. Juga, ekosistem developer Z.ai di pasar global masih muda dibanding OpenAI atau Anthropic — integrasi native dengan tool Indonesia dan dokumentasi dalam bahasa Inggris belum sekuat frontier Barat. Strategi pemakaian yang masuk akal: GLM-5-Turbo untuk pipeline agentik volume-tinggi yang berjalan ribuan iterasi per hari (code review otomatis, workflow document processing, batch classification) di mana kombinasi harga dan throughput lebih penting dari penalaran terberat; untuk penalaran murni, GLM-5.1 atau Claude Sonnet 4.6 lebih layak; untuk inference super-cepat dengan biaya minimum, GLM-4.7-FlashX lebih sesuai.",
+    ],
+    link: "https://docs.z.ai/guides/llm/glm-5-turbo",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-25",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
