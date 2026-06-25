@@ -514,16 +514,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "shanraisshan/claude-code-best-practice": {
-    description:
-      "Ensiklopedia Claude Code terlengkap di GitHub — petakan setiap primitif (agents, commands, skills, hooks, MCP, memory) dengan best practice + contoh implementasi, plus 80+ tips dari engineer Anthropic dan Karpathy.",
-    highlights: [
-      "Single-repo encyclopedia Claude Code: setiap primitif (agents, commands, skills, hooks, MCP servers, memory, settings, status line, plugins) dipasangkan dengan writeup best practice dan file implementasi runnable yang tinggal di-copy.",
-      "80+ tips field-tested dari Boris Cherny (pencipta Claude Code), Thariq (Anthropic), Cat Wu, dan Andrej Karpathy — bukan opini netizen, melainkan pattern yang dipakai orang yang membangun Claude Code itu sendiri.",
-      "Tiga layer di atas primitif: orchestration workflow Command → Agent → Skill, tabel kurasi 10 framework Claude Code populer (Superpowers, Spec Kit, gstack, BMAD-METHOD, OpenSpec), dan tips section yang terus di-update tiap rilis CLI baru.",
-      "MIT-licensed, update tiap rilis Claude Code (badge di README menunjukkan versi CLI yang dilacak) — relevan untuk developer Indonesia yang sudah pakai Claude Code harian dan ingin naik level dari 'bisa dipakai' ke 'produksi-grade'.",
-    ],
-  },
-};
+      description:
+        "Ensiklopedia Claude Code terlengkap di GitHub — petakan setiap primitif (agents, commands, skills, hooks, MCP, memory) dengan best practice + contoh implementasi, plus 80+ tips dari engineer Anthropic dan Karpathy.",
+      highlights: [
+        "Single-repo encyclopedia Claude Code: setiap primitif (agents, commands, skills, hooks, MCP servers, memory, settings, status line, plugins) dipasangkan dengan writeup best practice dan file implementasi runnable yang tinggal di-copy.",
+        "80+ tips field-tested dari Boris Cherny (pencipta Claude Code), Thariq (Anthropic), Cat Wu, dan Andrej Karpathy — bukan opini netizen, melainkan pattern yang dipakai orang yang membangun Claude Code itu sendiri.",
+        "Tiga layer di atas primitif: orchestration workflow Command → Agent → Skill, tabel kurasi 10 framework Claude Code populer (Superpowers, Spec Kit, gstack, BMAD-METHOD, OpenSpec), dan tips section yang terus di-update tiap rilis CLI baru.",
+        "MIT-licensed, update tiap rilis Claude Code (badge di README menunjukkan versi CLI yang dilacak) — relevan untuk developer Indonesia yang sudah pakai Claude Code harian dan ingin naik level dari 'bisa dipakai' ke 'produksi-grade'.",
+      ],
+    },
+    "google-labs-code/design.md": {
+      description:
+        "Spesifikasi format open-source dari Google Labs (Apache 2.0) agar visual identity brand bisa 'dibaca langsung' oleh coding agent lewat DESIGN.md — tokens di YAML, rationale di Markdown, dan CLI lint/export ke Tailwind/CSS.",
+      highlights: [
+        "Format file hybrid: YAML front matter untuk design token yang machine-readable (warna, tipografi, rounded, spacing, komponen), plus body Markdown untuk rationale human-readable — agent dapat nilai presisi, desainer tetap pegang 'mengapa'-nya.",
+        "Ekosistem CLI resmi: `npx @google/design.md lint` untuk validasi (cek rasio kontras WCAG), `diff` untuk regresi token antar versi, dan `export` ke Tailwind v3/v4, CSS variables, atau format DTCG — bukan cuma spec, tapi tooling siap pakai.",
+        "Skema token yang lengkap: color, dimension, typography reference via `{path.to.token}`, section canonical (Colors, Typography, Layout, Elevation, Components, Do's and Don'ts) plus aturan consumer behavior untuk unknown content — cukup matang untuk dipakai tim design system skala produksi.",
+        "Dikeluarkan dari Google Labs (16.8k+ bintang, format v0.3.0 per Juni 2026) dengan disclaimer eksplisit bukan produk resmi Google — relevan untuk developer Indonesia yang ingin coding agent berhenti 'nebak warna brand' saat generate komponen baru.",
+      ],
+    },
+    "cobusgreyling/loop-engineering": {
+      description:
+        "Framework 'loop engineering' (MIT) untuk menggantikan ritual prompt coding agent manual dengan sistem yang berjalan otomatis — 7 pola produksi, starter kit Grok/Claude Code/Codex, plus CLI loop-audit dan loop-cost.",
+      highlights: [
+        "Konsep 'loop engineering' yang dipopulerkan Addy Osmani dan Boris Cherny: bukan manusia yang prompt agent lagi, melainkan manusia mendesain loop (tujuan + iterasi) yang prompt agent — geser fokus dari 'penge-pres tombol' ke 'arsitek sistem'.",
+        "Tujuh pola siap pakai dengan trade-off eksplisit: Daily Triage, PR Babysitter, CI Sweeper, Dependency Sweeper, Changelog Drafter, Post-Merge Cleanup, Issue Triage — masing-masing punya cadence, biaya token, dan level otonomi (L1/L2) yang bisa dipilih tim.",
+        "Tiga CLI companion resmi: `loop-init` (scaffold starter + budget/run-log), `loop-audit` (skor kesiapan loop + saran), `loop-cost` (estimasi token spend) — workflow engineering mature yang biasanya hanya ada di proyek enterprise, dikemas jadi satu paket npm.",
+        "Anatomi loop lengkap lima primitif (automation, worktrees, skills, plugins/MCP, sub-agents) plus state memory — flowchart mermaid menunjukkan alur 'implementer → verifier → MCP/git → human gate' sehingga reviewer paham kapan harus eskalasi, bukan asal auto-merge.",
+      ],
+    },
+    "interviewstreet/hiring-agent": {
+      description:
+        "Agen scoring resume open-source dari tim HackerRank (MIT, Python 3.11) — parse PDF → JSON terstruktur, perkaya dengan sinyal GitHub, lalu nilai objektif lewat LLM lokal (Ollama) atau Gemini dengan bukti dan deduksi yang bisa diaudit.",
+      highlights: [
+        "Pipeline end-to-end yang jujur: pymupdf ubah PDF ke Markdown, Jinja template pecah per section (Basics, Work, Education, Skills, Projects), LLM ekstrak jadi JSON Resume style — output terstruktur, bukan ringkasan paragraf yang tidak bisa dibandingkan.",
+        "Enrichment GitHub yang tidak asal: tool tarik profil + repo kandidat, minta LLM pilih tepat 7 proyek dengan ambang commit minimum, lalu klasifikasikan — jadi open source vs self-project vs production jelas terpisah saat scoring.",
+        "Scoring fairness-first: kategori open_source, self_projects, production, technical_skills plus bonus dan deduksi dengan 'evidence' di setiap baris — bukan skor hitam-putih, melainkan jejak audit yang bisa ditinjau balik oleh kandidat.",
+        "Plug-in Ollama lokal (gemma3:1b/4b/12b) atau Gemini cloud lewat env var, Python 3.11.13, mode development menulis CSV kumulatif — berguna untuk recruiter, tech lead, atau siapa saja yang ingin otomasi screening tanpa mengorbankan transparansi ke kandidat.",
+      ],
+    },
+  };
 
 // Helper: lookup dengan fallback ke template-generated highlights
 export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
