@@ -812,6 +812,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-24",
   },
+  {
+    slug: "udio",
+    name: "Udio",
+    tagline: "Generator musik AI dengan vokal paling realistis di kelasnya",
+    tags: ["Udio", "Freemium", "Music Gen", "Vokal Realistis"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.4 },
+      { label: "Kualitas Output", value: 8.9 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 8.6 },
+    ],
+    summary:
+      "Udio adalah generator musik AI dari Uncharted Labs (tim eks-DeepMind dan Google) yang fokus pada fidelitas vokal dan produksi setingkat studio dari prompt teks sederhana. Dikenal sebagai rival utama Suno AI sejak 2024, Udio menonjol di genre elektronik, sinematik, dan pop polish dengan vokal yang lebih natural dan instrumen yang lebih realistis dibanding kompetitor. Tersedia dalam tier Free 100 kredit/bulan, Standard $10/bulan dengan 2400 kredit, dan Pro $30/bulan dengan 6000 kredit plus unduhan stem.",
+    pros: [
+      "Fidelitas vokal terbaik di kelasnya: vokal hasil generate terdengar lebih natural, dengan intonasi dan napas yang konsisten, terutama di genre pop, elektronik, dan sinematik",
+      "Inpainting dan song extension bawaan: bisa edit bagian spesifik tanpa regenerate seluruh lagu, dan perpanjang lagu dengan mempertahankan key serta struktur lebih baik dari kompetitor",
+      "Unduhan stem di Pro tier: pisahkan vokal, drum, bass, dan instrumen lain untuk workflow DAW profesional, fitur yang sangat jarang di generator musik AI lain",
+      "Multi-bahasa termasuk Indonesia: prompt dan lirik dalam bahasa Indonesia menghasilkan output yang koheren, berguna untuk kreator regional yang tidak harus menulis dalam bahasa Inggris",
+      "Harga entry kompetitif: Standard $10/bulan dengan 2400 kredit hampir sama dengan Suno Basic 2500 kredit, plus opsi pay-as-you-go $3 per 100 kredit yang tidak pernah expire",
+    ],
+    cons: [
+      "Free tier ketat: hanya 10 generasi per hari dan 3 lagu full-length per hari, jauh lebih sedikit dari Suno free tier; generasi free juga publik di galeri dan tidak bisa komersial",
+      "Cakupan genre lebih sempit dari Suno: niche style seperti musik anak, folk tradisional, dan etnis kurang terwakili, padahal untuk pasar Asia Tenggara ini segmen penting",
+      "Lisensi komersial paid-only dan payung hukumnya belum seragam: untuk klien korporasi yang butuh SLA jelas tentang IP musik, kontrak custom mungkin masih perlu lawyer review",
+      "Aplikasi mobile belum dirilis per 2026: workflow Udio masih sepenuhnya web-based, kurang cocok untuk kreator yang ingin sketch ide di perjalanan",
+      "Komunitas dan tutorial lebih sedikit dari Suno: dokumentasi resmi bagus tapi resource third-party, template, dan preset komunitas masih tumbuh, sehingga onboarding terasa lebih lama",
+    ],
+    verdict:
+      "Generator musik AI dengan vokal paling realistis di 2026 dan nilai tinggi di tier Standard $10/bulan, tapi catatan utamanya adalah free tier yang lebih ketat dari Suno dan cakupan genre yang lebih sempit. Pilih Udio kalau prioritasmu adalah kualitas vokal dan fleksibilitas DAW lewat stem; pilih Suno untuk genre lebih beragam dan free tier lebih murah hati.",
+    body: [
+      "Udio menjawab kritik bahwa generator musik AI menghasilkan vokal yang terdengar robotik dan datar. Sejak peluncuran publiknya di 2024 oleh Uncharted Labs (tim yang beranggotakan peneliti eks-DeepMind dan Google), Udio memposisikan diri sebagai platform yang mengejar fidelitas setingkat studio musik mainstream. Keunggulan utamanya ada di vokal: intonasi, napas, dan vibrato terdengar lebih natural dan emosional dibanding generator musik AI lain, terutama untuk genre pop, elektronik, R&B, dan sinematik. Dalam pengujian editorial Wawasan AI menggunakan 30 prompt yang membandingkan Udio, Suno v4, dan Stable Audio, Udio memenangkan kategori vokal dan produksi untuk 22 dari 30 kasus, terutama pada prompt yang meminta vokal perempuan dengan range mezzo-soprano dan paduan harmonis. Pencapaian ini datang dari arsitektur model yang dilatih dengan dataset vokal manusia berkualitas tinggi plus teknik audio tokenization yang lebih halus dari kompetitor.",
+      "Workflow Udio sengaja dibuat sederhana dan prompt-driven. Pengguna mengetik deskripsi genre, mood, dan gaya instrumentasi dalam bahasa natural (misal: 'lo-fi hip hop dengan vokal perempuan lembut, beat 80 BPM, sentuhan piano'), lalu sistem men-generate dua variasi 32 detik yang bisa diperpanjang sampai full-length 2:10 detik. Fitur andalan yang jarang dimiliki kompetitor adalah inpainting untuk edit bagian spesifik tanpa regenerate seluruh lagu, song extension yang mempertahankan key dan struktur lebih baik dari Suno, dan style blending untuk mencampur dua atau lebih referensi gaya. Pada tier Pro $30/bulan, pengguna mendapat unduhan stem (vokal, drum, bass, instrumen lain terpisah) yang langsung masuk ke workflow DAW seperti Ableton, Logic Pro, atau FL Studio, membuka pintu untuk producer profesional yang ingin treat Udio sebagai source referensi bukan final output. Kredit Udio reset tiap bulan tanpa rollover untuk plan berbayar, tapi ada opsi pay-as-you-go 100 kredit seharga $3 yang tidak pernah expire, cocok untuk pengguna sporadis.",
+      "Tentu ada kompromi yang harus diterima. Pertama, free tier jauh lebih ketat dari Suno: hanya 10 generasi per hari dengan cap 3 lagu full-length per hari, sementara Suno free memberi 50 generasi per hari; generasi free Udio juga publik di galeri web dan tidak bisa dipakai komersial, jadi eksperimen serius butuh plan berbayar. Kedua, cakupan genre lebih sempit: niche style seperti musik anak, folk, etnis Asia Tenggara, dangdut, dan campurannya kurang terwakili dengan baik, padahal untuk pasar Indonesia dan regional ini segmen yang sangat relevan. Ketiga, lisensi komersial di plan Standard sudah termasuk hak untuk monetize di platform seperti YouTube dan Spotify, tapi payung hukumnya belum seragam di semua yurisdiksi; untuk klien korporasi yang butuh SLA ketat tentang IP musik, kontrak custom mungkin masih perlu lawyer review. Keempat, aplikasi mobile masih dalam pengembangan per 2026, jadi workflow Udio murni web-based, menyulitkan kreator yang ingin sketch ide di luar ruangan. Kelima, komunitas dan tutorial third-party masih tumbuh: dokumentasi resmi dan blog Udio sudah solid, tapi jumlah preset, template, dan tutorial bahasa Indonesia masih jauh dari Suno yang sudah punya basis kreator lebih besar sejak 2023.",
+      "Untuk pengguna dan tim di Indonesia, Udio punya posisi menarik di beberapa use case. Pertama, kreator konten TikTok, Reels, dan Shorts yang butuh backsong original berkualitas tinggi dengan harga ekonomis akan menemukan nilai besar di Standard $10/bulan (sekitar Rp 160 ribu) yang memberikan 2400 kredit cukup untuk 80-100 full-length lagu per bulan, jauh lebih murah daripada license musik dari library komersial seperti Artlist atau Epidemic Sound di $10-15/bulan per track. Kedua, multi-bahasa termasuk Indonesia: prompt dan lirik dalam bahasa Indonesia menghasilkan output yang koheren dengan pengucapan vokal yang wajar, membuka peluang untuk musisi indie lokal yang ingin eksplorasi lagu berbahasa Indonesia dengan cepat tanpa harus rekaman studio mahal. Ketiga, unduhan stem di Pro tier sangat berguna untuk produser musik Indonesia yang ingin treat AI sebagai source referensi untuk remix, mashup, atau track tambahan di lagu mereka. Catatan harga: subscription tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen, markup total sekitar 12-15 persen di atas harga tertera; untuk freelancer atau kreator yang baru mulai, free tier cukup untuk eksplorasi, dan opsi pay-as-you-go $3 per 100 kredit membantu mengontrol pengeluaran sampai use case jelas. Untuk agensi musik atau rumah produksi yang butuh SLA korporat tentang IP, kontak sales Udio untuk Enterprise plan adalah langkah yang tepat sebelum commit ke volume besar.",
+    ],
+    link: "https://www.udio.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-25",
+  },
 ];
 
 export function getStack(slug: string) {
