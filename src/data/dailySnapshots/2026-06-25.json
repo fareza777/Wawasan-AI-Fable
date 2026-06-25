@@ -1,63 +1,27 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "25 Juni 2026",
-  "period": {
-    "date": "2026-06-25",
-    "label": "25 Juni 2026",
-    "path": "/repo/daily/2026/06/25"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-25T00:04:36.102Z",
+  "fetchedAt": "2026-06-25T05:42:39.257Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "calesthio/OpenMontage",
-      "owner": "calesthio",
-      "repo": "OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "githubUrl": "https://github.com/calesthio/OpenMontage",
-      "trendshiftUrl": "https://trendshift.io/repositories/24682",
-      "language": "Python",
+      "fullName": "kunchenguid/no-mistakes",
+      "owner": "kunchenguid",
+      "repo": "no-mistakes",
+      "description": "git push no-mistakes",
+      "githubUrl": "https://github.com/kunchenguid/no-mistakes",
+      "trendshiftUrl": "https://trendshift.io/repositories/27829",
+      "language": "Go",
       "topics": [
-        "AI agent",
-        "AI video generation",
-        "Workflow automation"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-03-29T15:23:22Z"
+      "dateCreated": "2026-04-05T06:43:05Z"
     },
     {
       "rank": 2,
-      "fullName": "baidu/Unlimited-OCR",
-      "owner": "baidu",
-      "repo": "Unlimited-OCR",
-      "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
-      "githubUrl": "https://github.com/baidu/Unlimited-OCR",
-      "trendshiftUrl": "https://trendshift.io/repositories/62053",
-      "language": "Python",
-      "topics": [
-        "Computer vision",
-        "Document processing"
-      ],
-      "dateCreated": "2026-06-18T08:40:15Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "topoteretes/cognee",
-      "owner": "topoteretes",
-      "repo": "cognee",
-      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
-      "githubUrl": "https://github.com/topoteretes/cognee",
-      "trendshiftUrl": "https://trendshift.io/repositories/13955",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI memory"
-      ],
-      "dateCreated": "2023-08-16T16:16:33Z"
-    },
-    {
-      "rank": 4,
       "fullName": "zhaoxuya520/reverse-skill",
       "owner": "zhaoxuya520",
       "repo": "reverse-skill",
@@ -71,6 +35,36 @@
         "Pentesting"
       ],
       "dateCreated": "2026-05-13T14:37:57Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "google-labs-code/design.md",
+      "owner": "google-labs-code",
+      "repo": "design.md",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "githubUrl": "https://github.com/google-labs-code/design.md",
+      "trendshiftUrl": "https://trendshift.io/repositories/27294",
+      "language": "TypeScript",
+      "topics": [
+        "Design system"
+      ],
+      "dateCreated": "2026-04-10T17:54:59Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-29T15:23:22Z"
     },
     {
       "rank": 5,
@@ -88,61 +82,6 @@
     },
     {
       "rank": 6,
-      "fullName": "googleworkspace/cli",
-      "owner": "googleworkspace",
-      "repo": "cli",
-      "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
-      "githubUrl": "https://github.com/googleworkspace/cli",
-      "trendshiftUrl": "https://trendshift.io/repositories/22413",
-      "language": "Rust",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-02T19:46:06Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "google-labs-code/design.md",
-      "owner": "google-labs-code",
-      "repo": "design.md",
-      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
-      "githubUrl": "https://github.com/google-labs-code/design.md",
-      "trendshiftUrl": "https://trendshift.io/repositories/27294",
-      "language": "TypeScript",
-      "topics": [
-        "Design system"
-      ],
-      "dateCreated": "2026-04-10T17:54:59Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "apple/container",
-      "owner": "apple",
-      "repo": "container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
-      "githubUrl": "https://github.com/apple/container",
-      "trendshiftUrl": "https://trendshift.io/repositories/14789",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2025-05-30T21:26:05Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "ShadowHackrs/gmail-account-creator",
-      "owner": "ShadowHackrs",
-      "repo": "gmail-account-creator",
-      "description": "🚀 Advanced automated Gmail account creation tool with anti-detection, phone verification bypass, 5sim integration, and beautiful modern interface. Create Gmail accounts in bulk with ease.",
-      "githubUrl": "https://github.com/ShadowHackrs/gmail-account-creator",
-      "trendshiftUrl": "https://trendshift.io/repositories/63013",
-      "language": "Python",
-      "topics": [
-        "Web scraping"
-      ],
-      "dateCreated": "2026-01-14T18:42:23Z"
-    },
-    {
-      "rank": 10,
       "fullName": "JCodesMore/ai-website-cloner-template",
       "owner": "JCodesMore",
       "repo": "ai-website-cloner-template",
@@ -154,6 +93,67 @@
         "AI coding assistant"
       ],
       "dateCreated": "2026-03-13T11:14:39Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "interviewstreet/hiring-agent",
+      "owner": "interviewstreet",
+      "repo": "hiring-agent",
+      "description": "AI agent to evaluate and score resumes.",
+      "githubUrl": "https://github.com/interviewstreet/hiring-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/44257",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "RAG",
+        "Document processing"
+      ],
+      "dateCreated": "2025-07-29T01:50:34Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "flutter/flutter",
+      "owner": "flutter",
+      "repo": "flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "githubUrl": "https://github.com/flutter/flutter",
+      "trendshiftUrl": "https://trendshift.io/repositories/3477",
+      "language": "Dart",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2015-03-06T22:54:58Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Search"
+      ],
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
     }
   ]
 }
