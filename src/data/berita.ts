@@ -924,6 +924,44 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "literasi-ai-asn-lebih-dari-sertifikat",
+    title: "Literasi AI untuk ASN: Bukan Cuma Hafal Tool, tapi Mengubah Cara Kerja Birokrasi",
+    excerpt:
+      "Target 145 ribu ASN melek AI baru langkah pertama. Pertanyaan yang lebih sulit: bagaimana memastikan literasi itu benar-benar mengubah pekerjaan, bukan hanya menambah sertifikat di lemari arsip.",
+    category: "Opini",
+    date: "2026-06-26",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau Anda mengikuti pemberitaan ASN dan AI belakangan ini, hampir semua headline bernada sama: 145 ribu aparatur sipil negara akan dilatih kecerdasan buatan. Badan Kepegawaian Negara (BKN) mencanangkan target besar itu, vendor-vendor teknologi besar berlomba menawarkan kurikulum, dan di ruang rapat instansi daerah istilah literasi AI makin sering terdengar. Kesan yang muncul seolah-olah masalah selesai begitu pelatihan diadakan.",
+          "Padahal, dari pengalaman editorial melihat program serupa di sektor lain, yang sering luput adalah pertanyaan sebenarnya: apa yang berubah di meja kerja ASN setelah pelatihan selesai? Apakah ASN kembali ke cara lama begitu kursus ditutup, atau ada pergeseran permanen dalam cara mereka menulis laporan, menelaah dokumen, dan mengambil keputusan? Tulisan ini mencoba melihat melampaui angka target, ke hal yang jauh lebih membosankan tapi jauh lebih menentukan: bagaimana literasi AI benar-benar mengubah cara aparat bekerja dari level staf ke level pejabat, atau justru hanya menambah satu baris baru di daftar riwayat pelatihan.",
+        ],
+      },
+      {
+        heading: "Mengapa target besar saja tidak cukup",
+        paragraphs: [
+          "Ada tiga jebakan umum dalam program literasi AI untuk ASN yang perlu dikenali sejak awal. Pertama, ketergantungan pada satu platform. Begitu ASN terbiasa dengan satu ekosistem AI tertentu, berpindah ke alat dari vendor lain menjadi pekerjaan ulang yang sering dihindari. Kedua, pelatihan yang berhenti di permukaan. Peserta dilatih cara klik tombol dan menulis prompt sederhana, bukan cara berpikir kritis terhadap keluaran AI, padahal kemampuan menilai keluaranlah yang menentukan apakah AI benar-benar membantu atau justru memperburuk pekerjaan. Ketiga, tidak ada ruang untuk gagal. ASN yang takut salah akan memilih tidak memakai AI sama sekali, dan program literasi kembali menjadi sia-sia.",
+          "Catatan penting dari sisi kebijakan: literasi AI bukan tujuan akhir, melainkan prasyarat. Tujuan akhirnya adalah birokrasi yang lebih cepat dan lebih akurat dalam melayani warga. Jika program literasi tidak diikat pada indikator kinerja yang terukur, misalnya waktu rata-rata penerbitan surat keputusan, atau tingkat kesalahan dalam telaah dokumen, maka yang terjadi adalah ASN punya sertifikat baru tanpa ada perubahan yang warga rasakan. Ini bukan kegagalan ASN, melainkan kegagalan desain program di level instansi dan kementerian.",
+        ],
+      },
+      {
+        heading: "Fondasi yang harus dibangun sebelum pelatihan dimulai",
+        paragraphs: [
+          "Sebelum kelas-kelas pelatihan digelar, ada tiga fondasi yang wajib ada lebih dulu. Pertama, kebijakan internal yang jelas soal data mana yang boleh diproses dengan AI dan mana yang wajib tetap berada di dalam server instansi. Tanpa kebijakan ini, setiap ASN akan membuat aturan main sendiri, dan yang terjadi adalah ketidakpastian: ASN yang konservatif tidak berani memakai AI sama sekali, ASN yang berani malah mengambil risiko yang tidak terkira. Kedua, infrastruktur dasar yang setara. Banyak kantor dinas di luar Jawa masih bergulat dengan koneksi internet yang tidak stabil dan perangkat komputer yang sudah tua. Melatih ASN memakai AI di atas fondasi seperti itu sama saja menyuruh mereka berenang tanpa air.",
+          "Ketiga, dan ini yang sering dilupakan: dukungan atasan langsung. Banyak program literasi profesional gagal bukan karena pesertanya tidak mampu, melainkan karena setelah kembali ke satuan kerja, mereka diminta kembali ke cara lama oleh atasan yang tidak paham. ASN yang baru belajar prompting yang efektif akan kembali ke mengetik manual kalau atasannya menilai AI sebagai ancaman, bukan alat. Untuk itu, literasi AI untuk ASN idealnya menyertakan pula pelatihan kepemimpinan digital untuk pejabat struktural, bukan agar pejabat ikut mengetik prompt, melainkan agar mereka memahami apa yang bisa dan tidak bisa dilakukan bawahan mereka dengan AI.",
+        ],
+      },
+      {
+        heading: "Indikator yang jujur untuk mengukur keberhasilan",
+        paragraphs: [
+          "Bagaimana kita tahu program literasi AI benar-benar berhasil? Bukan dari jumlah peserta yang lulus, melainkan dari perubahan kecil yang konsisten di unit kerja sehari-hari. Indikator yang jujur biasanya berupa hal-hal yang warga bisa rasakan: surat keterangan yang dulu butuh tiga hari kini bisa jadi satu hari dengan tetap akurat; telaah peraturan yang dulu dibaca seadanya kini dapat ringkasan padat untuk bahan diskusi; laporan bulanan yang dulu penuh typo kini rapi dan konsisten. Indikator seperti ini mungkin tidak seksi untuk komunikasi publik, tapi jauh lebih bermakna daripada angka kelulusan pelatihan.",
+          "Ada satu ironi yang perlu dicatat: ASN yang paling berpotensi mendapat manfaat besar dari AI sering kali yang paling terancam, yaitu mereka yang pekerjaannya administratif berulang, terstandar, dan mudah diotomatisasi. Justru karena itulah literasi AI untuk ASN bukan program nice-to-have, melainkan kebutuhan mendesak. Yang akan terjadi adalah salah satu dari dua hal: ASN yang melek AI akan mengendalikan alat itu untuk pekerjaan mereka, atau ASN yang menolak AI akan digantikan oleh ASN yang melek AI. Tidak ada jalan tengah. Catatan editorial Wawasan AI untuk pembaca yang bergerak di sektor publik: mulailah dari satu workflow nyata di meja kerja Anda, pasang satu tool AI yang sesuai, lalu evaluasi jujur apa yang berubah dan apa yang tidak. Dari situ, literasi yang sesungguhnya akan tumbuh, bukan dari sertifikat, melainkan dari pengalaman memakai.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
