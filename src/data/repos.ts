@@ -1249,6 +1249,57 @@ export const repos: Review[] = [
     date: "2026-06-25",
     updatedAt: "2026-06-25",
   },
+{
+    slug: "career-ops",
+    name: "Career-Ops",
+    tagline:
+      "Sistem pencarian kerja berbasis AI di atas Claude Code dengan 14 skill mode dan dasbor Go",
+    tags: ["AI Agent", "Job Search", "Claude Code", "Open Source"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Keksiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Career-Ops dari santifer adalah sistem otomasi pencarian kerja yang dibangun di atas Claude Code. Repositori ini menawarkan 14 skill mode untuk berbagai skenario lamaran, dasbor ringkas berbasis Go untuk memantau progres, generator PDF untuk resume dan surat lamaran, serta pemrosesan batch untuk pengiriman massal. Lebih dari 55 ribu bintang di GitHub menunjukkan bahwa pendekatan AI-native untuk job hunting mendapat daya tarik yang cukup besar di komunitas global pada 2026.",
+    highlights: [
+      "14 skill mode khusus untuk job search: mulai dari riset perusahaan, analisis lowongan, hingga tailoring resume per posisi",
+      "Dibangun di atas Claude Code sebagai runtime agent, sehingga alur tool use, permission, dan loop agent mengikuti pola Anthropic yang sudah teruji",
+      "Dasbor Go ringan untuk memantau progres lamaran, status batch, dan statistik keberhasilan tanpa harus membuka terminal terus-menerus",
+      "Generator PDF terintegrasi untuk resume, cover letter, dan portofolio siap kirim, mengurangi friksi saat berpindah platform",
+      "Batch processing untuk mengirim lamaran massal dengan personalisasi per pelamar, berguna untuk kampanye job hunt yang agresif",
+      "Open source berlisensi MIT: bisa diaudit, di-fork, dan dijalankan sendiri di server pribadi tanpa ketergantungan SaaS",
+      "Topik GitHub yang luas (claude-code, anthropic, interview-prep, resume) menunjukkan positioning yang jelas di niche agentic career tools",
+      "Aktivitas commit tinggi dengan update terakhir kurang dari dua minggu, menandakan pemeliharaan aktif dari maintainer",
+      "Struktur monorepo JavaScript/TypeScript yang relatif mudah dijelajahi bagi developer yang sudah familiar dengan ekosistem Node",
+    ],
+    pros: [
+      "Pendekatan end-to-end untuk job hunt: dari riset pasar, personalisasi dokumen, hingga pengiriman dan pelacakan — semua dalam satu sistem",
+      "Komunitas besar dengan 55 ribu bintang dan hampir 11 ribu fork, menandakan ekosistem dan diskusi yang hidup di GitHub serta Discord",
+      "Lisensi MIT dan open source: memungkinkan perusahaan atau institusi di Indonesia menyesuaikan alur kerja dengan kebutuhan internal mereka",
+      "Menggunakan Claude Code sebagai fondasi berarti pengguna mendapat akses ke tool harness yang terus diperbarui Anthropic tanpa harus menulis ulang sendiri",
+    ],
+    cons: [
+      "Fokus pada ekosistem Claude Code: pengguna yang lebih nyaman dengan GPT, Gemini, atau model lokal lain perlu adapter tambahan",
+      "Pertumbuhan bintang yang sangat cepat dalam waktu singkat perlu dilihat dengan hati-hati: penting untuk membedakan popularitas awal dari kualitas jangka panjang",
+      "Dokumentasi teknis belum selengkap framework mapan; kontributor baru mungkin perlu waktu membaca kode untuk memahami arsitekturnya",
+    ],
+    verdict:
+      "Career-Ops adalah contoh menarik bagaimana agentic workflow bisa dispesialisasikan untuk satu domain — dalam hal ini pencarian kerja. Untuk job seeker tech-savvy di Indonesia yang ingin mengotomasi sebagian besar proses lamaran dan siap berinvestasi waktu untuk setup, repositori ini menawarkan titik masuk yang solid di 2026.",
+    body: [
+      "Di tengah melonjaknya popularitas agentic AI, banyak proyek hanya menjadi pembungkus tipis di atas API. Career-Ops mengambil arah berbeda: ia membangun sistem lengkap di atas Claude Code, dengan 14 skill mode yang masing-masing menjawab satu tahap berbeda dari siklus lamaran kerja. Mulai dari riset perusahaan dan posisi, hingga penulisan cover letter yang dipersonalisasi, semuanya dirancang sebagai komponen agent yang bisa dipanggil sesuai kebutuhan. Pendekatan ini membuat job hunt tidak lagi menjadi proses linear satu-satu, melainkan alur kerja paralel yang bisa dijalankan secara disiplin.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling menarik dari Career-Ops adalah cara ia memadukan fleksibilitas agent dengan struktur pipeline. Dasbor Go yang ringan memberikan visibilitas ke progres batch lamaran tanpa harus menggali log terminal setiap saat, sementara generator PDF menghilangkan friksi saat berpindah platform rekrutmen. Kombinasi ini terasa cocok untuk job seeker yang ingin menjaga profesionalisme tanpa kehilangan efisiensi, terutama saat menghadapi ratusan posisi sekaligus di pasar kerja teknologi yang sangat kompetitif.",
+      "Untuk konteks Indonesia, Career-Ops punya potensi menarik di kalangan fresh graduate, pekerja yang ingin transisi karier, dan konselor karier di kampus. Lisensi MIT memungkinkan institusi pendidikan atau komunitas seperti GDG dan komunitas AI lokal untuk menyesuaikan alur lamaran dengan pasar kerja domestik — misalnya dengan menambahkan template surat lamaran berbahasa Indonesia atau menyaring posisi dari platform lokal seperti Glints, JobStreet, dan LinkedIn. Namun perlu diingat bahwa posisi di Indonesia seringkali melewati jalur referral dan networking yang sulit diotomasi; agent hanya membantu bagian yang terstruktur, bukan menggantikan relasi manusia.",
+      "Batasan yang perlu dipahami: Career-Ops sangat bergantung pada Claude Code, sehingga pengguna yang ingin menjalankan sepenuhnya di atas model lokal seperti Llama atau Qwen perlu menulis adapter tambahan. Selain itu, popularitas yang sangat tinggi dalam waktu singkat perlu disikapi secara proporsional — nilai sebuah tools biasanya baru teruji setelah setahun pemakaian di beragam kondisi pasar kerja. Untuk tahap awal, Career-Ops paling masuk akal sebagai eksperimen terstruktur: coba untuk satu atau dua minggu, ukur berapa posisi yang berhasil dijangkau dan berapa respons yang datang, baru putuskan apakah layak menjadi bagian rutin dari workflow job hunt Anda.",
+    ],
+    link: "https://github.com/santifer/career-ops",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-26",
+    updatedAt: "2026-06-26",
+  },
 ];
 
 export function getRepo(slug: string) {
