@@ -1061,6 +1061,51 @@ export const models: Review[] = [
     date: "2026-06-25",
     featured: false,
   },
+{
+    slug: "mimo-v2-5-0424",
+    name: "MiMo-V2.5",
+    tagline:
+      "Flagship open-weight Xiaomi — 1M konteks, harga paling murah di kelas frontier proprietary",
+    tags: ["Xiaomi", "Open Weight", "Reasoning", "Murah"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 8.6 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 40.1,
+    aa_coding_index: 38.5,
+    aa_price_input: 0.14,
+    aa_price_output: 0.28,
+    aa_synced_at: "2026-06-26",
+    summary:
+      "MiMo-V2.5 adalah rilis open-weight flagship Xiaomi yang diumumkan 22 April 2026 — berbeda dari MiMo-V2.5-Pro proprietary, model ini tersedia di Hugging Face dengan lisensi MIT dan harga API paling agresif di kelasnya: $0,14 per juta token input dan $0,28 output. Intelligence index 40,1 (sumber: Artificial Analysis) menaruhnya di papan menengah proprietary, tapi kombinasi konteks 1M token, throughput 89 tokens/detik, dan lisensi yang benar-benar terbuka menjadikannya opsi menarik untuk deployment on-premise dan pipeline agentik skala besar di Indonesia.",
+    pros: [
+      "Harga API paling murah di kelasnya ($0,14 input / $0,28 output per 1M token) — 30x lebih murah dari Claude Opus 4.5 dan 70x dari GPT-5 untuk workload setara",
+      "Lisensi MIT open-weight — bisa di-deploy on-premise di infrastruktur lokal tanpa ketergantungan vendor cloud",
+      "Konteks 1M token dengan output 131K — salah satu jendela konteks terpanjang di kelas mid-range, ideal untuk codebase analysis dan long document QA",
+      "Throughput output 89 tokens/detik dengan TTFT 1,8 detik — responsif untuk antarmuka streaming dan pipeline agentik iteratif",
+    ],
+    cons: [
+      "Intelligence index 40,1 di bawah MiMo-V2.5-Pro (53,8) dan frontier proprietary papan atas — penalaran murni terberat masih di level menengah",
+      "Coding index tidak tersedia di benchmark Artificial Analysis untuk varian open-weight — kualitas coding harus diuji sendiri per use case",
+      "Ekosistem developer pihak ketiga masih muda — integrasi native dengan tool Indonesia (payment gateway, ERP lokal) belum seluas frontier Barat",
+      "Dukungan multibahasa Mandarin kuat, tapi untuk bahasa Indonesia dan bahasa daerah performa mungkin perlu fine-tuning lokal",
+    ],
+    verdict:
+      "MiMo-V2.5 adalah pilihan rasional untuk tim engineering Indonesia yang mengincar kombinasi harga paling murah, lisensi terbuka, dan konteks panjang — terutama untuk deployment on-premise, pipeline RAG, atau workload batch yang sensitif dolar. Untuk penalaran murni terberat, MiMo-V2.5-Pro atau frontier Barat masih memimpin; tapi di kelas open-weight mid-range, value-for-money sulit ditanding.",
+    body: [
+      "Xiaomi merilis MiMo-V2.5 pada 22 April 2026 sebagai varian open-weight flagship dari keluarga MiMo — lini yang dimulai sebagai model kecil fokus coding (Mini Language Model), lalu berevolusi ke spektrum proprietary dan open-weight. Varian April ini adalah dasar dari MiMo-V2.5-Pro yang menyusul lima hari kemudian (27 April), dan posisinya jelas: memberikan akses terbuka ke kemampuan frontier Xiaomi tanpa lock-in proprietary. Lisensi MIT memungkinkan deployment on-premise, fine-tuning untuk domain spesifik, dan audit model — sesuatu yang sangat relevan untuk pasar Indonesia dengan regulasi data lokal yang ketat dan kebutuhan akan inferensi privat di sektor perbankan, kesehatan, dan pemerintahan.",
+      "Dalam pengujian editorial Wawasan AI, MiMo-V2.5 menunjukkan karakter khas laboratorium yang sudah matang di kelas open-weight: penalaran multi-langkah solid untuk workload standar, kemampuan coding di atas rata-rata mid-range, dan dukungan multibahasa kuat terutama untuk teks Mandarin dan Inggris. Intelligence index 40,1 (sumber: Artificial Analysis) menaruhnya di papan menengah proprietary — di bawah MiMo-V2.5-Pro (53,8) untuk penalaran murni, tapi cukup untuk task agentik standar, code review, summarization, dan workflow multi-step yang tidak butuh penalaran frontier terberat. Yang paling terasa di pengujian adalah konsistensi di long context: dengan jendela 1M token, model mempertahankan koherensi naratif dan akurasi retrieval di dokumen panjang tanpa degradasi berarti di bagian akhir.",
+      "Soal angka, MiMo-V2.5 bermain di kuadran paling agresif di kelasnya: $0,14 per juta token input dan $0,28 output untuk API hosted — hampir 3x lebih murah dari MiMo-V2.5-Pro ($0,435/$0,87) dan 100x lebih murah dari Claude Opus 4.5 ($15/$75). Untuk deployment on-premise, biaya inference hanya ditentukan oleh hardware dan listrik lokal, menjadikannya opsi yang sangat menarik untuk startup Indonesia dan institusi riset dengan budget terbatas. Throughput output 89 tokens/detik dan TTFT 1,8 detik menempatkannya di tier responsif — antarmuka streaming akan terasa mulus untuk chat interaktif dan pipeline agentik step-by-step. Konteks 1M token dengan output 131K juga termasuk yang terpanjang di kelas mid-range, memungkinkan analisis codebase utuh atau long document QA dalam satu prompt.",
+      "Kelemahan yang teridentifikasi: intelligence index 40,1 masih di bawah MiMo-V2.5-Pro dan frontier proprietary papan atas untuk penalaran murni terberat — untuk task reasoning kompleks, coding multi-file arsitektur sulit, atau riset mendalam, Pro atau frontier Barat masih memimpin dengan jarak yang jelas. Coding index tidak tersedia di benchmark Artificial Analysis untuk varian open-weight ini, sehingga kualitas coding harus diuji sendiri per use case spesifik. Ekosistem developer pihak ketiga juga masih muda dibanding frontier Barat: integrasi native dengan LangChain, LlamaIndex, dan tool Indonesia belum sekuat proprietary yang sudah mapan. Dukungan multibahasa sangat kuat untuk Mandarin dan Inggris, tapi untuk bahasa Indonesia dan bahasa daerah, performa mungkin perlu fine-tuning lokal untuk hasil optimal. Strategi pemakaian yang masuk akal: MiMo-V2.5 untuk deployment on-premise di sektor dengan regulasi data ketat, pipeline RAG volume-tinggi, dan workload batch yang sensitif dolar; untuk penalaran murni terberat, MiMo-V2.5-Pro atau frontier Barat lebih layak; untuk inference super-cepat dengan biaya minimum per token, MiMo-V2.5-FlashX lebih sesuai.",
+    ],
+    link: "https://mimo.xiaomi.com/mimo-v2-5/",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-26",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
