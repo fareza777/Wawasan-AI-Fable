@@ -1106,6 +1106,51 @@ export const models: Review[] = [
     date: "2026-06-26",
     featured: false,
   },
+  {
+    slug: "nex-n2-pro",
+    name: "Nex-N2-Pro",
+    tagline:
+      "Flagship Nex AGI — keseimbangan penalaran, coding agentik, dan harga mid-range",
+    tags: ["Nex AGI", "Proprietary", "Coding", "Agentik"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 41,
+    aa_coding_index: 59.1,
+    aa_price_input: 0.5,
+    aa_price_output: 2.5,
+    aa_synced_at: "2026-06-27",
+    summary:
+      "Nex-N2-Pro adalah model flagship dari Nex AGI yang dirilis 2 Juni 2026, diposisikan untuk keseimbangan penalaran umum dan coding agentik di kelas mid-range proprietary. Intelligence index 41 dan coding index 59,1 (sumber: Artificial Analysis) menaruhnya di papan menengah — di bawah frontier Barat untuk penalaran murni, tapi cukup solid untuk engineering task dan workflow multi-langkah, dengan harga $0,50 per juta token input dan $2,50 output yang kompetitif dibanding peer proprietary papan menengah.",
+    pros: [
+      "Coding index 59,1 (sumber: Artificial Analysis) — salah satu yang tertinggi di kelas mid-range, mendekati GLM-5-Turbo (40) dan di atas MiMo-V2.5 (38,5)",
+      "GPQA 0,892 dan TerminalBench v2.1 0,678 — penalaran saintifik dan eksekusi tool CLI cukup solid untuk riset cepat dan engineering task",
+      "Tau2 0,816 — agentic multi-turn collaboration di atas rata-rata, konsisten untuk workflow agentik yang butuh banyak bolak-balik tool call",
+      "Harga API $0,50 input / $2,50 output per 1M token — jauh di bawah Claude Opus 4.5 ($15/$75), kompetitif dengan peer proprietary papan menengah",
+    ],
+    cons: [
+      "Intelligence index 41 di bawah GLM-5 (49,8) dan MiMo-V2.5-Pro (53,8) — untuk penalaran murni terberat, peer Asia masih memimpin",
+      "Throughput 114 tokens/detik kalah dari MiMo-V2.5 (89 tps) di kelas harga lebih murah — bukan pilihan kalau prioritas kecepatan mentah",
+      "Ekosistem developer Nex AGI masih muda — dokumentasi, plugin pihak ketiga, dan integrasi tool Indonesia belum seluas frontier",
+      "Skor AIME-25 dan AIME tidak tersedia di benchmark — kelemahan di matematika kompetitif tingkat olimpiade belum terukur",
+    ],
+    verdict:
+      "Nex-N2-Pro adalah pilihan rasional untuk developer Indonesia yang butuh keseimbangan coding agentik, harga masuk akal, dan penalaran saintifik solid — terutama untuk engineering task, riset teknis, dan workflow multi-langkah yang sensitif dolar. Untuk penalaran murni terberat, GLM-5 atau MiMo-V2.5-Pro masih memimpin; tapi di kelas mid-range dengan coding index tinggi, value-for-money sulit diabaikan.",
+    body: [
+      "Nex AGI adalah salah satu laboratorium AI yang bermain di kelas proprietary mid-range, dan Nex-N2-Pro adalah model flagship mereka yang dirilis 2 Juni 2026. Berbeda dari frontier yang berlomba menaikkan intelligence index absolut, Nex AGI mengambil positioning berbeda: menyeimbangkan penalaran umum dengan kemampuan coding agentik dan agentic tool-use di kelas harga yang lebih terjangkau dari frontier papan atas. Intelligence index 41 (sumber: Artificial Analysis) memang di bawah GLM-5 (49,8) atau MiMo-V2.5-Pro (53,8), tapi coding index 59,1 salah satu yang tertinggi di kelas mid-range — lebih tinggi dari GLM-5-Turbo (40) dan MiMo-V2.5 (38,5). Kombinasi ini menarik untuk developer yang mengincar produktivitas engineering tanpa harus membayar premium frontier.",
+      "Dalam pengujian editorial Wawasan AI lewat integrasi standar, Nex-N2-Pro menunjukkan karakter khas laboratorium yang fokus pada real-world engineering deployment: tool calling yang stabil untuk workflow multi-langkah, konsistensi di sesi panjang yang tidak mudah keluar jalur, dan kemampuan coding di atas rata-rata mid-range. Intelligence index 41 dan coding index 59,1 (sumber: Artificial Analysis) cukup untuk engineering task standar, code review, refactor multi-file, dan workflow agentik yang tidak butuh penalaran frontier terberat. Yang paling terasa adalah konsistensi kualitas di long execution chain — saat model dipakai untuk task yang berjalan belasan iterasi tool call, output tetap koheren dan tidak melompat-lompat topik. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 41 menaruhnya di papan menengah proprietary — sejajar dengan frontier papan menengah Asia dan satu tingkat di bawah MiMo-V2.5-Pro atau GLM-5. Coding index 59,1 lebih mencolok — angka yang mendekati frontier papan atas dan salah satu yang tertinggi di kelas harga $0,50/$2,50 per juta token. Throughput 114 tokens/detik dan TTFT 0,964 detik menempatkannya di tier responsif untuk antarmuka chat interaktif dan pipeline agentik step-by-step. Skor GPQA 0,892 dan TerminalBench v2.1 0,678 menunjukkan kekuatan di penalaran saintifik dan eksekusi tool CLI — angka yang mendekati frontier papan atas dan lebih dari cukup untuk riset teknis dan engineering task. Harga API $0,50 per juta token input dan $2,50 output bermain di mid-range — 30x lebih murah dari Claude Opus 4.5 ($15/$75) pada input, dan kompetitif dengan peer proprietary Asia papan menengah.",
+      "Kelemahan yang teridentifikasi: intelligence index 41 masih di bawah GLM-5, MiMo-V2.5-Pro, dan frontier Barat untuk penalaran murni terberat — untuk task reasoning kompleks, riset mendalam, atau coding arsitektur paling sulit, peer papan atas masih memimpin dengan jarak yang jelas. Throughput 114 tokens/detik juga kalah dari MiMo-V2.5 (89 tps) di kelas harga lebih murah — kalau prioritas utama adalah kecepatan mentah, MiMo-V2.5 lebih efisien. Skor AIME-25 dan AIME tidak tersedia di benchmark Artificial Analysis, sehingga kekuatan di matematika kompetitif tingkat olimpiade belum terukur — untuk workload matematika berat, perlu uji mandiri. Ekosistem developer Nex AGI juga masih muda dibanding OpenAI atau Anthropic — dokumentasi, plugin pihak ketiga, dan integrasi native dengan tool Indonesia belum sekuat frontier yang sudah mapan. Strategi pemakaian yang masuk akal: Nex-N2-Pro untuk engineering task, code review, workflow agentik multi-langkah, dan riset teknis yang sensitif dolar; untuk penalaran murni terberat atau matematika olimpiade, GLM-5 atau frontier Barat lebih layak; untuk deployment on-premise dengan harga paling agresif, MiMo-V2.5 lebih sesuai.",
+    ],
+    link: "https://nex.agi/n2-pro",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-27",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
