@@ -1,0 +1,151 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-26T05:48:22.853Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "google-labs-code/design.md",
+      "owner": "google-labs-code",
+      "repo": "design.md",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "githubUrl": "https://github.com/google-labs-code/design.md",
+      "trendshiftUrl": "https://trendshift.io/repositories/27294",
+      "language": "TypeScript",
+      "topics": [
+        "Design system"
+      ],
+      "dateCreated": "2026-04-10T17:54:59Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "xbtlin/ai-berkshire",
+      "owner": "xbtlin",
+      "repo": "ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework   built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "githubUrl": "https://github.com/xbtlin/ai-berkshire",
+      "trendshiftUrl": "https://trendshift.io/repositories/63696",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Fintech"
+      ],
+      "dateCreated": "2026-04-07T11:19:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "mauriceboe/TREK",
+      "owner": "mauriceboe",
+      "repo": "TREK",
+      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
+      "githubUrl": "https://github.com/mauriceboe/TREK",
+      "trendshiftUrl": "https://trendshift.io/repositories/24392",
+      "language": "TypeScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-19T11:51:54Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "baidu/Unlimited-OCR",
+      "owner": "baidu",
+      "repo": "Unlimited-OCR",
+      "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+      "githubUrl": "https://github.com/baidu/Unlimited-OCR",
+      "trendshiftUrl": "https://trendshift.io/repositories/62053",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "Document processing"
+      ],
+      "dateCreated": "2026-06-18T08:40:15Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "inkeep/open-knowledge",
+      "owner": "inkeep",
+      "repo": "open-knowledge",
+      "description": "Beautiful, AI-native markdown editor and LLM Wiki",
+      "githubUrl": "https://github.com/inkeep/open-knowledge",
+      "trendshiftUrl": "https://trendshift.io/repositories/64803",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-06-03T11:12:40Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "every-app/open-seo",
+      "owner": "every-app",
+      "repo": "open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
+      "githubUrl": "https://github.com/every-app/open-seo",
+      "trendshiftUrl": "https://trendshift.io/repositories/22289",
+      "language": "TypeScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-02-27T18:57:41Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "JCodesMore/ai-website-cloner-template",
+      "owner": "JCodesMore",
+      "repo": "ai-website-cloner-template",
+      "description": "Clone any website with one command using AI coding agents",
+      "githubUrl": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "trendshiftUrl": "https://trendshift.io/repositories/24302",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-13T11:14:39Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "shanraisshan/claude-code-best-practice",
+      "owner": "shanraisshan",
+      "repo": "claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "githubUrl": "https://github.com/shanraisshan/claude-code-best-practice",
+      "trendshiftUrl": "https://trendshift.io/repositories/20530",
+      "language": "HTML",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-10-31T14:15:28Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "opendatalab/MinerU",
+      "owner": "opendatalab",
+      "repo": "MinerU",
+      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
+      "githubUrl": "https://github.com/opendatalab/MinerU",
+      "trendshiftUrl": "https://trendshift.io/repositories/11174",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2024-02-29T08:52:34Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "NanmiCoder/MediaCrawler",
+      "owner": "NanmiCoder",
+      "repo": "MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
+      "githubUrl": "https://github.com/NanmiCoder/MediaCrawler",
+      "trendshiftUrl": "https://trendshift.io/repositories/8291",
+      "language": "Python",
+      "topics": [
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2023-06-09T12:14:34Z"
+    }
+  ]
+}
