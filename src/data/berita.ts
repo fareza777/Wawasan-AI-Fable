@@ -962,6 +962,47 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "kolaborasi-bkn-dan-microsoft-dorong-pemanfaatan-ai-di-lingkungan-asn",
+    title: "BKN dan Microsoft Menyusun Peta Jalan AI untuk ASN: Bukan Sekadar Pelatihan, tapi Mengubah Cara Bekerja",
+    excerpt:
+      "Kolaborasi BKN dan Microsoft lewat Garuda AI for Microsoft Elevate menyasar 145 ribu ASN dengan format angkatan yang berbeda. Pertanyaan yang lebih penting: apakah pelatihan model ini benar-benar menempel di meja kerja.",
+    category: "Analisis",
+    date: "2026-06-27",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau Anda menyebut kata AI di ruang rapat kepegawaian daerah, responsnya kini tidak lagi berupa tatapan kosong melainkan daftar pertanyaan. Siapa yang dilatih pertama, kurikulum apa yang dipakai, dan yang paling penting: setelah lulus, ASN kembali ke cara kerja yang mana. Badan Kepegawaian Negara menjawab tantangan itu dengan menggandeng Microsoft Indonesia lewat nota kesepahaman yang diteken 28 April 2026, dengan program bernama Garuda AI for Microsoft Elevate. Targetnya besar, 145 ribu ASN, dan formatnya bukan kelas satu paket untuk semua orang melainkan dibagi dalam beberapa angkatan dengan fokus yang berbeda.",
+          "Program ini sudah berjalan sejak Mei dan akan berakhir pada Juli 2026. Sampai pertengahan Juni, sudah 12.551 peserta yang mendaftar. Bagi yang belum familiar dengan format pelatihan ASN, angka itu mungkin terasa biasa. Yang menarik justru struktur kurikulumnya: enam angkatan AI for Public Impact untuk ASN secara umum, dan satu angkatan khusus bernama AI Policy Lab for Leaders yang dikhususkan untuk pembuat kebijakan. Pembagian ini menunjukkan satu hal yang sering terlewat di banyak program literasi AI di Indonesia: tidak semua ASN butuh skill yang sama, dan memaksa pejabat struktural duduk di kelas yang sama dengan staf administrasi sering menghasilkan dua kelompok yang sama-sama tidak puas.",
+        ],
+      },
+      {
+        heading: "Mengapa format angkatan khusus untuk pemimpin penting",
+        paragraphs: [
+          "Salah satu kelemahan paling umum program transformasi digital di birokrasi Indonesia adalah pelatihan yang hanya menyasar lapisan staf, sementara pengambil keputusan dibiarkan memakai intuisi lama. Hasilnya bisa ditebak: staf kembali ke kantor dengan pengetahuan baru, lalu disuruh kembali ke cara kerja lama oleh atasan yang tidak paham apa yang baru saja dipelajari bawahan. AI Policy Lab for Leaders mencoba menjawab jebakan ini dengan kurikulum terpisah yang fokus pada tata kelola, arah strategis, dan kebijakan implementasi AI di instansi, bukan pada cara menulis prompt di Microsoft Copilot.",
+          "Kepala BKN Prof Zudan menyebut karakter ASN masa depan yang dikejar program ini sebagai agile, digital, dan AI-ready. Tiga kata itu terdengar slogan, tapi kalau diturunkan ke dalam desain pelatihan, masing-masing punya implikasi yang berbeda. Agile berarti peserta dilatih menerima perubahan workflow sebagai hal yang rutin, bukan pengecualian. Digital bukan cuma soal memakai laptop, melainkan soal berpindah dari proses manual berbasis kertas ke alur yang sudah terotomatisasi. AI-ready adalah kemampuan menilai keluaran AI dengan kritis, bukan mempercayainya bulat-bulat. Untuk pejabat struktural, AI-ready lebih kompleks: mereka harus mampu memutuskan workflow mana yang aman untuk diberikan ke AI, dan mana yang tetap harus diawasi manusia.",
+          "Ada sisi lain yang sering luput dari pemberitaan. Pelatihan dengan format seperti ini memberi Microsoft Indonesia posisi yang strategis sebagai salah satu pintu masuk utama AI di birokrasi Indonesia. Microsoft sendiri lewat laporan Work Trend Index 2026 memperkenalkan konsep Frontier Firm, yaitu organisasi di mana individu tidak hanya bekerja dengan cara konvensional melainkan berkolaborasi dengan AI agent. Menyiapkan 145 ribu ASN dengan tooling Microsoft jelas mempercepat terbentuknya pasar untuk konsep Frontier Firm di Indonesia. Bagi pengamat independen, ini bukan hal negatif, tapi patut dibaca dengan jeli: ketika vendor tunggal punya akses sedalam ini ke program pelatihan ASN, interoperabilitas dan portabilitas skill ASN ke tool AI lain harus dijaga sejak awal supaya ketergantungan tidak terbentuk diam-diam.",
+        ],
+      },
+      {
+        heading: "Antara sertifikat dan perubahan yang benar-benar terjadi",
+        paragraphs: [
+          "Pelatihan AI untuk ASN punya jebakan yang sama dengan program-program literasi profesional di Indonesia: mudah diukur dari jumlah peserta yang lulus, tapi sulit diukur dari perubahan yang benar-benar terjadi di meja kerja. Indikator yang lebih jujur biasanya bukan jumlah sertifikat yang diterbitkan, melainkan hal-hal yang jauh lebih membosankan untuk dikomunikasikan ke publik: berapa lama rata-rata penerbitan surat keputusan setelah ASN memakai AI, berapa persen kesalahan di telaah dokumen sebelum dan sesudah, berapa banyak rapat yang dulu butuh dua jam kini cukup dengan satu jam karena notulensi dan ringkasan keputusan sudah otomatis.",
+          "Kabar baiknya, format angkatan yang berbeda-beda dalam program Garuda AI memberi ruang untuk evaluasi yang lebih jujur. AI for Public Impact menyasar keterampilan pemakaian sehari-hari, AI Policy Lab for Leaders menyasar kemampuan memimpin transformasi. Kalau kedua kelompok ini dievaluasi dengan indikator yang berbeda, hasilnya akan lebih informatif daripada satu laporan kelulusan gabungan. Untuk instansi penerima, ini juga menjadi cara bagus untuk mengidentifikasi champion di internal, ASN yang tidak hanya mampu memakai AI melainkan juga menularkan kemampuan itu ke unit kerjanya tanpa menunggu instruksi pusat.",
+          "Ada catatan penting untuk daerah. BKN seringkali jadi jembatan antara pusat dan instansi daerah, tapi implementasi di lapangan sangat bergantung pada infrastruktur dasar. Banyak kantor dinas di luar Jawa masih bergulat dengan koneksi internet yang tidak stabil dan perangkat komputer yang sudah lewat masa pakainya. Melatih ASN memakai Copilot di atas fondasi seperti itu sama saja seperti menyuruh orang berenang tanpa air. Karena itu, keberhasilan program Garuda AI akan sangat ditentukan oleh kesiapan infrastruktur di level pemerintah daerah, dan ini adalah variabel yang tidak bisa diselesaikan hanya oleh BKN atau Microsoft saja.",
+        ],
+      },
+      {
+        heading: "Yang perlu diperhatikan setelah angkatan terakhir lulus",
+        paragraphs: [
+          "Setelah angkatan terakhir lulus pada Juli 2026, pekerjaan yang sebenarnya baru dimulai. Pertama, perlu ada mekanisme resertifikasi yang ringan, bukan untuk menambah biaya melainkan untuk memastikan ASN yang sudah lulus tidak kembali ke cara lama karena lupa atau tidak pernah memakai skill-nya lagi. Kedua, perlu ada forum horizontal antar-instansi tempat ASN yang sudah melek AI bisa saling bertukar trik dan workflow yang berhasil, semacam komunitas praktik yang tidak bergantung pada pusat. Ketiga, perlu ada audit internal yang jujur tentang workflow mana yang sudah aman untuk diotomasi dan mana yang tidak, supaya ASN tidak memakai AI di area yang seharusnya tetap di bawah kendali manusia, misalnya telaah regulasi yang menyangkut hak warga.",
+          "Kedua, dan ini yang paling sulit, peserta program harus kembali ke satuan kerja yang kadang tidak mengerti apa yang baru saja dipelajari. Tanpa dukungan atasan langsung, sertifikat baru hanya akan jadi baris tambahan di daftar riwayat pelatihan. Untuk itu, AI Policy Lab for Leaders harus benar-benar menghasilkan pejabat yang paham batas dan kemampuan AI, bukan pejabat yang bangga ikut pelatihan tetapi kembali ke cara lama begitu sampai di kantor. Ketiga, hasil program harus bisa diakses publik, paling tidak dalam bentuk laporan berkala yang menyebut instansi mana saja yang sudah mengubah workflow-nya dan mana yang belum. Tanpa transparansi, program ini akan sulit dievaluasi secara independen oleh masyarakat yang seharusnya menjadi penerima manfaat akhir dari birokrasi yang lebih cepat dan lebih akurat.",
+          "Catatan editorial Wawasan AI untuk pembaca yang bergerak di instansi pemerintah: ketika program seperti Garuda AI sudah tersedia, godaan terbesar adalah mendaftar dan menunggu pelatihan datang, tanpa dulu memeriksa fondasi di satuan kerja sendiri. Apakah komputer cukup, apakah koneksi cukup, apakah ada kebijakan internal soal data mana yang boleh diproses dengan AI. Begitu fondasi itu ada, barulah pelatihan menjadi investasi yang sepadan. Kalau fondasi belum ada, pelatihan hanya akan jadi jalan menuju sertifikat yang menggantung tanpa cerita perubahan di baliknya.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
