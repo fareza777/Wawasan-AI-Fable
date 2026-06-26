@@ -553,6 +553,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Plug-in Ollama lokal (gemma3:1b/4b/12b) atau Gemini cloud lewat env var, Python 3.11.13, mode development menulis CSV kumulatif — berguna untuk recruiter, tech lead, atau siapa saja yang ingin otomasi screening tanpa mengorbankan transparansi ke kandidat.",
       ],
     },
+    "xbtlin/ai-berkshire": {
+      description:
+        "Framework riset investasi value ala Berkshire yang dibungkus jadi skill untuk Claude Code — empat methodologi master (Buffett, Munger, Duan Yongping, Li Lu) dijalankan paralel oleh multi-agent, lengkap dengan track record backtest +69% di 2024.",
+      highlights: [
+        "Arsitektur multi-agent yang saling menguji: empat agen analis (Buffett, Munger, Duan Yongping, Li Lu) riset emiten yang sama secara paralel, lalu saling berdebat lewat 'adversarial review' — bukan satu prompt panjang, melainkan orkestrasi agentik yang meniru cara investment committee bekerja.",
+        "Skill untuk Claude Code, bukan aplikasi mandiri: tinggal pasang ke .claude/skills lalu panggil lewat workflow — cocok buat pengguna Claude Code yang ingin menambah kapabilitas riset finansial tanpa setup pipeline baru.",
+        "Track record terlampir: per Juni 2026 framework mengklaim +69,29% (2024) dan +66,38% YTD 2025 vs benchmark indeks — angka outperformance ini yang biasanya jadi sorotan, sekaligus titik kritis yang harus diverifikasi ulang sebelum percaya sebagai strategi, bukan sekadar materi demo.",
+        "Fokus value investing fundamental: cash flow, moat, manajemen, margin of safety — checklist terstruktur yang bisa dipakai analis ritel, mahasiswa keuangan, atau jurnalis yang butuh second opinion sebelum menulis.",
+      ],
+    },
+    "hugohe3/ppt-master": {
+      description:
+        "Generator PowerPoint AI yang menghasilkan file .pptx native editable (bukan slide gambar) dari dokumen apa pun — shape asli, animasi, speaker note bersuara, plus opsi pakai template .pptx kamu sendiri.",
+      highlights: [
+        "Output benar-benar editable: AI menghasilkan shape & animasi PowerPoint native lewat python-pptx, bukan render slide sebagai gambar PNG — artinya setiap kotak teks, tabel, dan chart bisa diedit di PowerPoint/Keynote setelah dibuat.",
+        "Pipeline dokumen-ke-deck: masukkan PDF/URL/markdown → sistem ekstrak struktur → render ke slide dengan template opsional. Speaker note otomatis dan bisa di-convert jadi audio narasi (TTS) untuk video presentasi.",
+        "Pendekatan pragmatis: README eksplisit menolak imajinasi fitur yang tidak ada — fokus pada alur yang benar-benar jalan (doc → outline → pptx), dengan konfigurasi model, retry, dan fallback yang terdokumentasi.",
+        "Dibiayai sponsor relay API (PackyCode, APIKEY.FUN, RunAPI, dsb) — berguna untuk pengguna Claude Code/Codex di region dengan akses API terbatas yang perlu jalur relay hemat biaya.",
+      ],
+    },
+    "inkeep/open-knowledge": {
+      description:
+        "Editor markdown WYSIWYG lokal-first dengan AI agent built-in (Claude, Codex, Cursor) lewat MCP — untuk catatan pribadi, knowledge base, spesifikasi engineering, sampai LLM Wiki yang bisa dikolaborasikan via Git.",
+      highlights: [
+        "WYSIWYG penuh untuk file markdown: edit markdown seperti Google Doc atau Notion, tapi file-nya tetap .md di disk — tidak ada lock-in format proprietary, semua bisa dibuka di editor teks biasa.",
+        "Integrasi agen AI native lewat MCP/skills: Claude Code, Codex, Cursor, OpenCode bisa langsung baca-tulis knowledge base lewat Model Context Protocol — agen kedua (second brain) untuk LLM, bukan sekadar chat sidebar.",
+        "Kolaborasi tim tanpa server proprietary: sharing & auto-sync ditenagai Git/GitHub di belakang layar — pakai workflow yang sudah dikenal engineer, bukan signup ke SaaS baru.",
+        "Embedding HTML, rich component, dan TUI built-in: penulis spec engineering, wiki visual, atau dashboard internal Markdown bisa menanamkan diagram, tabel, dan blok interaktif — plus CLI untuk pengguna terminal.",
+      ],
+    },
   };
 
 // Helper: lookup dengan fallback ke template-generated highlights
