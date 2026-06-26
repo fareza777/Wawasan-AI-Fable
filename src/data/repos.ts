@@ -1300,6 +1300,57 @@ export const repos: Review[] = [
     date: "2026-06-26",
     updatedAt: "2026-06-26",
   },
+  {
+    slug: "nocobase",
+    name: "NocoBase",
+    tagline:
+      "Platform AI + no-code open-source untuk membangun sistem bisnis internal tanpa harus coding dari nol",
+    tags: ["AI Agent", "No-Code", "Self-hosted", "TypeScript"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "NocoBase adalah platform AI + no-code open-source yang dirancang untuk membangun sistem internal perusahaan — CRM, ERP, dasbor admin, hingga basis data operasional — dengan cepat. Berbeda dari generator kode AI yang menebak dari nol, NocoBase memadukan kecerdasan buatan dengan infrastruktur low-code yang sudah teruji dan antarmuka WYSIWYG, sehingga tim bisa bergerak cepat tanpa mengorbankan keandalan.",
+    highlights: [
+      "Arsitektur data-driven dengan model relasional lengkap: setiap tabel, relasi, dan field bisa dikonfigurasi lewat antarmuka visual tanpa harus menulis migrasi database",
+      "AI agent bawaan yang bekerja di atas infrastruktur low-code, bukan menebak dari nol: hasil lebih konsisten, lebih mudah di-debug, dan bisa di-rollback",
+      "Editor blok WYSIWYG untuk halaman, formulir, tabel, dan dasbor: susun tampilan dengan drag-and-drop, lalu ikat ke sumber data lewat beberapa klik",
+      "Plugin dan blok kustom lewat TypeScript: developer bisa menambah kemampuan baru dengan API publik yang terdokumentasi, tanpa fork ke codebase inti",
+      "Otentikasi, peran, dan izin granular bawaan: cocok untuk aplikasi multi-pengguna dengan kebutuhan kepatuhan dan audit",
+      "Workflow automation dengan pemicu kondisi, penjadwalan, dan eksekusi skrip: alur persetujuan, notifikasi, dan integrasi pihak ketiga bisa diatur tanpa kode",
+      "Antarmuka multibahasa termasuk dukungan bahasa Indonesia di sebagian area, dan dokumentasi yang terus diperbarui",
+      "Mode self-hosted penuh: data tetap di server sendiri, tidak ada lock-in vendor, cocok untuk industri dengan regulasi ketat",
+      "Lisensi AGPL-3.0: kode sumber terbuka untuk diaudit dan dimodifikasi; banyak pengguna korporasi menjalankan versi self-hosted tanpa khawatir lisensi tersembunyi",
+    ],
+    pros: [
+      "Pendekatan hybrid AI + low-code yang realistis: AI mempercepat, infrastruktur low-code menstabilkan — hasil lebih andal dibanding generator kode murni",
+      "Skalabilitas untuk aplikasi internal serius: bukan mainan demo, sudah dipakai untuk CRM, ERP, dan dasbor operasional di berbagai ukuran organisasi",
+      "Fleksibilitas tinggi lewat plugin TypeScript: developer bisa menyesuaikan perilaku tanpa harus fork platform, sehingga tetap bisa mengikuti rilis resmi",
+      "Self-hostable dengan lisensi terbuka: cocok untuk perusahaan Indonesia yang perlu mempertahankan kendali data sendiri demi kepatuhan terhadap regulasi lokal",
+    ],
+    cons: [
+      "Kurva belajar menengah: meski drag-and-drop mudah di permukaan, memaksimalkan alur kerja kompleks tetap butuh pemahaman model data dan konsep blok",
+      "AI bawaan masih dalam tahap pengembangan: untuk kasus yang butuh orkestrasi model kompleks, pengguna perlu menulis plugin atau integrasi sendiri",
+      "Lisensi AGPL-3.0 bisa menjadi perhatian bagi produk SaaS turunan: untuk penggunaan internal atau self-hosted, konsekuensinya minimal",
+    ],
+    verdict:
+      "NocoBase adalah pilihan menarik untuk tim Indonesia yang ingin membangun sistem internal serius — CRM, ERP, dasbor operasional — tanpa harus coding dari nol dan tanpa menitipkan data ke vendor SaaS. Di 2026, ketika banyak perusahaan lokal mulai serius mendigitalkan proses internal, platform seperti ini menawarkan titik masuk yang realistis.",
+    body: [
+      "Di pasar platform internal untuk bisnis, pilihan yang tersedia biasanya jatuh ke dua kutub: alat SaaS yang mudah dipakai tapi mengunci data di vendor, atau framework sumber terbuka yang fleksibel tapi butuh developer penuh waktu untuk memulai. NocoBase mencoba menempati posisi tengah: antarmuka no-code yang cukup ramah untuk staf operasional, sekaligus fondasi data-driven yang cukup serius untuk ditangani tim engineering. AI agent bawaannya tidak menggantikan struktur low-code — ia bekerja di atasnya, mempercepat tugas-tugas yang biasanya membosankan seperti menghasilkan formulir, mengisi data dummy, atau menulis skrip workflow sederhana.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa dari NocoBase adalah konsistensi struktur data. Karena setiap tabel dan relasi didefinisikan secara eksplisit lewat model, hasil yang dihasilkan AI agent tetap bisa diaudit dan dimodifikasi. Tidak ada kejutan tiba-tiba berupa skema basis data yang diciptakan ulang setiap kali permintaan berubah — sesuatu yang sering menjadi sumber frustrasi di generator kode AI murni. Pendekatan ini sangat membantu pada fase awal proyek, ketika logika bisnis masih sering berubah dan konsistensi data adalah hal pertama yang harus dijaga.",
+      "Untuk konteks Indonesia, NocoBase punya potensi besar di segmen UMKM, perusahaan distribusi, dan tim operasional di sektor yang mulai bergerak dari Excel ke aplikasi khusus. Tim yang sebelumnya mengandalkan spreadsheet bersama bisa bermigrasi ke sistem dengan peran, izin, dan alur kerja persetujuan tanpa harus mempekerjakan developer khusus. Kemampuan self-host berarti kendali data tetap di tangan pemilik usaha — penting untuk industri dengan regulasi data yang ketat, dan untuk perusahaan yang khawatir soal kedaulatan data di tengah semakin maraknya diskusi soal pemrosesan data lintas batas.",
+      "Batasan yang perlu dipahami: NocoBase adalah platform, bukan produk jadi. Keberhasilan implementasi sangat bergantung pada kemampuan tim memodelkan proses bisnis dengan benar. AI membantu mempercepat, tapi tidak menggantikan penilaian manusia. Untuk kasus yang membutuhkan integrasi model bahasa kompleks atau orkestrasi agentik tingkat lanjut, plugin dan kode kustom masih diperlukan. Namun sebagai fondasi sistem internal yang terbuka dan bisa dikembangkan, NocoBase adalah salah satu opsi paling pragmatis di 2026 — terutama bagi organisasi di Indonesia yang ingin memulai transformasi digital tanpa harus mengorbankan kendali atas data sendiri.",
+    ],
+    link: "https://github.com/nocobase/nocobase",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-27",
+    updatedAt: "2026-06-27",
+  },
 ];
 
 export function getRepo(slug: string) {
