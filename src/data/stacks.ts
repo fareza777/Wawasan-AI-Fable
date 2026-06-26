@@ -853,6 +853,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-25",
   },
+{
+    slug: "gpt4all",
+    name: "GPT4All",
+    tagline: "Jalankan LLM open source di desktop tanpa GPU khusus",
+    tags: ["Nomic AI", "Open Source", "Local LLM", "Desktop Chat"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 7.7 },
+      { label: "Pengalaman Pengguna", value: 8.9 },
+      { label: "Ekosistem & Integrasi", value: 7.3 },
+      { label: "Harga", value: 9.6 },
+    ],
+    summary:
+      "GPT4All adalah aplikasi desktop open source dari Nomic AI yang menjalankan ribuan model bahasa open source (Llama, Mistral, Qwen, DeepSeek, Phi, dan lain-lain) langsung di laptop atau PC tanpa perlu GPU khusus atau koneksi cloud. Diposisikan sebagai entry point paling ramah untuk pengguna non-teknis di ekosistem local LLM, dengan LocalDocs bawaan untuk chat dengan dokumen lokal secara privat dan Reasoner 2026 yang menambahkan tool calling serta code sandboxing di perangkat. Gratis sepenuhnya, tersedia untuk Windows, macOS, Linux, dan Windows ARM, dengan lebih dari 3 juta unduhan kumulatif di 2026.",
+    pros: [
+      "Pemasangan paling sederhana di kelasnya: installer GUI double-click untuk Windows, macOS, Linux, dan Windows ARM, tanpa command line, tanpa Docker, tanpa Python environment",
+      "Berjalan di CPU tanpa GPU khusus: laptop Intel Core i3 generasi kedua ke atas atau AMD Bulldozer sudah cukup untuk model 7B quantized Q4, ideal untuk hardware kantor lama atau laptop consumer mainstream",
+      "LocalDocs bawaan untuk RAG privat: cukup drag-and-drop folder PDF, Markdown, atau teks ke aplikasi, lalu tanya jawab dengan dokumen tanpa data pernah meninggalkan mesin lokal",
+      "Gratis sepenuhnya tanpa tier, tanpa watermark, tanpa bripsi generasi harian, tanpa telemetry wajib: model sekali diunduh menjadi offline selamanya",
+      "Mendukung ribuan model GGUF dari keluarga Llama, Mistral, Qwen, DeepSeek, Phi, Gemma, dan lain-lain, sehingga pengguna tidak terkunci pada satu vendor model",
+    ],
+    cons: [
+      "Kecepatan inference lebih lambat dari Ollama atau vLLM: benchmark Maret 2026 menunjukkan GPT4All berada di urutan bawah untuk tokens per detik pada model 8B Q4, terutama karena default konfigurasi engine yang mengorbankan throughput demi kompatibilitas hardware luas",
+      "Kurangnya API server yang stabil: tidak seperti Ollama yang expose OpenAI-compatible REST API untuk integrasi aplikasi, GPT4All lebih fokus ke antarmuka chat desktop, sehingga developer yang butuh backend headless lebih cocok ke Ollama atau LM Studio",
+      "Model library tidak sekurat Ollama: GPT4All menyediakan model-model pilihan tetapi tidak sekonsisten LM Studio dalam deteksi hardware otomatis untuk pemilihan quantization optimal, pengguna perlu tahu sendiri tradeoff Q4 vs Q5 vs Q8",
+      "Tidak ada mobile client resmi: workflow murni desktop, tidak seperti LM Studio atau Ollama yang punya opsi integrasi dengan klien mobile via API",
+      "Dokumentasi teknis lebih dangkal dari kompetitor: GUI-nya bagus untuk pemula, tetapi advanced user yang ingin tweak prompt template, sampling parameter, atau integrasi ke pipeline RAG custom akan menemukan lebih sedikit referensi resmi",
+    ],
+    verdict:
+      "Entry point paling ramah di dunia local LLM untuk pengguna non-teknis dan profesional yang mengutamakan privasi data, dengan catatan utamanya adalah kecepatan inference yang lebih lambat dari Ollama dan tidak adanya API server stabil untuk integrasi aplikasi. Pilih GPT4All kalau kamu butuh aplikasi desktop double-click-install untuk chat dengan dokumen lokal secara privat tanpa biaya; pilih Ollama untuk backend headless + REST API untuk developer; pilih LM Studio untuk eksplorasi model dengan GUI lebih kaya.",
+    body: [
+      "GPT4All menjawab salah satu hambatan terbesar adopsi local LLM di 2026: tidak semua orang nyaman dengan terminal, Docker, atau WSL2. Sejak pertama kali dirilis oleh Nomic AI (perusahaan New York yang meraih pendanaan Series A $17 juta dengan valuasi $100 juta pada 2023, dipelopori oleh Brandon Duderstadt dan Andriy Mulyar), GPT4All memposisikan diri sebagai lapisan aplikasi desktop yang membungkus llama.cpp engine di balik antarmuka visual yang ramah. Versi 3.x per 2026 menambahkan redesign UI menyeluruh, perluasan dukungan arsitektur model, dan integrasi LocalDocs untuk RAG privat secara default. Yang paling membedakannya dari Ollama atau LM Studio adalah fokus pada pengguna akhir yang ingin langsung mengobrol dengan AI tanpa setup: download installer, jalankan, pilih model dari daftar, mulai chat. Total unduhan kumulatif GPT4All sudah melewati 3 juta pada 2026 menurut laporan internal komunitas, menjadikan-nya salah satu dari tiga runner local LLM paling banyak dipakai selain Ollama dan LM Studio.",
+      "Workflow GPT4All sengaja dibuat agar instalasi tidak jadi penghalang. Aplikasi mendukung Windows (x64 dan ARM), macOS (universal binary untuk Intel dan Apple Silicon), dan Linux (AppImage untuk Ubuntu dan distro turunan). Persyaratan hardware minimum Intel Core i3 generasi kedua atau AMD Bulldozer sudah cukup untuk menjalankan model 7B quantized Q4, sesuatu yang biasanya butuh GPU dedicated pada platform lain. Setelah aplikasi terbuka, pengguna memilih dari ribuan model GGUF yang sudah dikurasi Nomic, mencakup keluarga Llama 3.x, Mistral, Mixtral, Qwen 2.5, DeepSeek R1 Distillation, Phi-4, Gemma 2, dan banyak lagi. Fitur unggulan LocalDocs memungkinkan drag-and-drop folder berisi PDF, Markdown, TXT, atau dokumen Office ke aplikasi, lalu sistem secara otomatis membuat embedding dan index untuk menjawab pertanyaan berbasis isi dokumen tanpa data pernah dikirim ke cloud. Pada rilis Reasoner 2026, GPT4All menambahkan kemampuan agentic terbatas: tool calling untuk integrasi ke script lokal, serta code sandboxing untuk eksekusi kode Python yang aman di dalam environment aplikasi.",
+      "Tentu ada kompromi yang harus diterima. Pertama, kecepatan inference lebih lambat dari Ollama: benchmark Maret 2026 dari dasroot.net menunjukkan GPT4All 3.4.2 menghasilkan tokens per detik lebih rendah dibanding Ollama 0.5.7 pada model 8B Q4 di RTX 3090, karena default konfigurasi engine lebih mengutamakan kompatibilitas hardware luas daripada throughput maksimal. Kedua, tidak ada API server stabil: tidak seperti Ollama yang expose REST API OpenAI-compatible di port 11434 untuk integrasi aplikasi, GPT4All murni aplikasi desktop chat; developer yang butuh backend headless untuk produk mereka akan menemukan LM Studio atau Ollama lebih cocok. Ketiga, model library tidak sekurat Ollama dalam deteksi hardware otomatis: GPT4All menyediakan model-model pilihan tetapi tidak selalu merekomendasikan quantization optimal untuk GPU atau RAM yang tersedia, sehingga pengguna perlu pengetahuan sendiri tentang tradeoff Q4_K_M (lebih kecil, lebih cepat, sedikit kehilangan akurasi) versus Q5_K_M atau Q8_0. Keempat, tidak ada mobile client resmi, semua workflow harus lewat desktop. Kelima, dokumentasi teknis lebih dangkal dibanding Ollama atau llama.cpp, GUI-nya sangat ramah untuk pemula tetapi advanced user yang ingin tweak prompt template, sampling parameter, atau integrasi ke pipeline RAG custom akan menemukan lebih sedikit referensi resmi.",
+      "Untuk pengguna dan tim di Indonesia, GPT4All punya posisi menarik untuk beberapa skenario spesifik. Pertama, profesional hukum, konsultan, atau tim riset yang menangani dokumen rahasia klien akan menemukan nilai besar di LocalDocs: rapat notulen, kontrak, atau laporan compliance dapat diindeks dan ditanyakan secara lokal tanpa risiko kebocoran ke server cloud pihak ketiga, keuntungan compliance yang signifikan di era UU PDP. Kedua, institusi pendidikan dan universitas yang mengajarkan AI tanpa budget untuk API cloud dapat memberikan GPT4All kepada mahasiswa untuk eksplorasi LLM sepenuhnya gratis, dengan hardware yang umumnya sudah dimiliki (laptop 4-8 tahun terakhir dengan RAM 8-16 GB sudah cukup). Ketiga, komunitas developer Indonesia yang aktif di Telegram, Discord, atau forum lokal punya referensi dan tutorial GPT4All dalam bahasa Indonesia yang cukup banyak, terutama untuk setup awal di laptop ASUS, Lenovo, atau Acer mainstream. Catatan harga: aplikasi gratis sepenuhnya, model-model open source juga gratis, biaya hanya muncul dari hardware (upgrade RAM ke 16 GB sekitar Rp 500-700 ribu untuk satu kali, atau SSD NVMe tambahan Rp 400-600 ribu untuk koleksi model besar). Dibanding Ollama gratis tetapi butuh CLI atau LM Studio gratis tetapi proprietary source code, GPT4All adalah satu-satunya yang gratis, open source, dan double-click install. Untuk pemula yang baru ingin eksplorasi AI lokal tanpa commitment teknis, GPT4All adalah starting point paling tidak mengintimidasi di 2026.",
+    ],
+    link: "https://www.nomic.ai/gpt4all",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-26",
+  },
 ];
 
 export function getStack(slug: string) {
