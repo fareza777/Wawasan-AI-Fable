@@ -894,6 +894,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-26",
   },
+  {
+    slug: "tabnine",
+    name: "Tabnine",
+    tagline: "AI code completion enterprise dengan privasi dan deployment on-prem",
+    tags: ["Tabnine", "Paid", "Code Completion", "Enterprise"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.9 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Tabnine adalah asisten AI coding asal Israel yang membedakan dirinya lewat privasi enterprise dan fleksibilitas deployment, dengan opsi SaaS, VPC, on-prem Kubernetes, hingga fully air-gapped untuk industri yang regulated. Di 2026, Tabnine menambahkan Agentic Platform dengan Context Engine, MCP support, dan CLI agentic yang bisa menjalankan workflow multi-langkah lewat terminal, namun completion-nya tidak se-sharp Cursor atau Copilot untuk general-purpose coding.",
+    pros: [
+      "Pilihan deployment paling fleksibel di kelasnya: SaaS, VPC, on-prem K8s, hingga fully air-gapped — satu-satunya asisten AI coding yang lulus review security untuk defense, healthcare, dan finance",
+      "Zero data retention dan never-trains-on-your-code guarantee: kode tidak pernah disimpan atau dipakai untuk training, penting untuk compliance GDPR, SOC 2, ISO 27001",
+      "Context Engine (2026) memahami arsitektur codebase organisasi dengan koneksi unlimited ke GitHub, GitLab, Bitbucket, dan Perforce — agent menghasilkan saran yang sesuai standar internal",
+      "MCP support bawaan di Agentic Platform: agent bisa pakai Git operations, testing frameworks, linters, JIRA, Confluence, Docker, CI/CD lewat protokol standar tanpa custom integration",
+      "Multi-model BYO: bisa pakai Anthropic, OpenAI, Google, Meta, Mistral, atau model proprietary internal lewat endpoint on-prem tanpa lock-in vendor",
+    ],
+    cons: [
+      "Completion tidak se-sharp Cursor atau Copilot untuk general-purpose coding — Tabnine sengaja mengorbankan kualitas suggestion demi kontrol privasi, sehingga developer individual yang tidak butuh compliance akan menemukan alternatif lebih akurat",
+      "Harga $39/user/bulan (Code Assistant) atau $59/user/bulan (Agentic Platform) dengan annual subscription wajib — tidak ada free tier sejak 2025 dan tidak ada monthly billing untuk plan self-serve",
+      "Self-serve pricing tidak dipublikasikan: enterprise plan butuh sales conversation untuk quote, memperpanjang procurement cycle untuk tim yang butuh evaluasi cepat",
+      "Code Review Agent dan CLI agentic masih kalah dari Claude Code atau Codex pada workflow monorepo raksasa yang butuh subagent orchestration kompleks",
+      "Komunitas dan tutorial lebih kecil dari Copilot atau Cursor — onboarding terasa lebih lama untuk developer yang baru pertama kali setup on-prem deployment",
+    ],
+    verdict:
+      "Pilihan utama untuk organisasi dengan compliance requirement ketat yang tidak bisa pakai Copilot atau Cursor, dengan catatan utamanya adalah harga tinggi dan completion yang kurang tajam dibanding kompetitor. Pilih Tabnine kalau timmu di regulated industry dan butuh air-gapped deployment; pilih Cursor atau Copilot untuk raw completion quality dengan budget lebih fleksibel.",
+    body: [
+      "Tabnine berawal dari Codota yang didirikan di Israel pada 2018, sebelum rebranding dan pivot ke arah enterprise AI coding dengan positioning yang sangat berbeda dari kompetitor. Alih-alih bersaing di kualitas completion atau popularitas developer individual, Tabnine memilih jalur compliance: zero code retention, never-trains-on-your-code, dan pilihan deployment dari SaaS sampai fully air-gapped yang lulus review security untuk industri defense, healthcare, finance, dan government. Pendekatan ini menjadikannya satu-satunya asisten AI coding yang umumnya diterima oleh tim legal dan security di perusahaan yang tidak bisa mengirim kode ke server eksternal. Pada 2026, Gartner Magic Quadrant menamai Tabnine sebagai Visionary di kategori enterprise AI coding agents, sebuah validasi yang membuat procurement di korporasi besar jauh lebih mulus dibanding dua tahun lalu.",
+      "Di 2026, Tabnine menawarkan dua tier dengan annual subscription wajib. Tabnine Code Assistant seharga $39 per user per bulan memberikan code completion multi-line, AI chat grounded ke codebase, dan integrasi ke semua IDE utama (VS Code, JetBrains, Visual Studio, Eclipse, dan lain-lain), dengan dukungan model dari Anthropic, OpenAI, Google, Meta, dan Mistral. Tabnine Agentic Platform seharga $59 per user per bulan menambahkan Context Engine yang memahami arsitektur organisasi lewat koneksi unlimited ke GitHub, GitLab, Bitbucket, dan Perforce, MCP support untuk integrasi ke Git, JIRA, Confluence, Docker, dan CI/CD, serta Tabnine CLI — agent terminal-native untuk workflow code change, refactoring, dan pull request. Code Review Agent Tabnine memenangkan Best Innovation in AI Coding di 2025 AI TechAwards, dan unlimited usage diberikan kalau organisasi bring their own LLM lewat endpoint on-prem, atau membayar reserved token quota + 5% handling fee kalau pakai LLM yang disediakan Tabnine. Dalam pengujian editorial Wawasan AI, Context Engine cukup akurat untuk menghasilkan saran yang sesuai standar internal seperti naming convention dan error handling pattern yang sudah established di repositori.",
+      "Tentu ada kompromi yang harus diterima. Pertama, completion tidak se-sharp Cursor atau Copilot untuk general-purpose coding — Tabnine sengaja mengorbankan kualitas suggestion mentah demi kontrol privasi dan compliance, sehingga developer individual atau tim startup tanpa kebutuhan compliance akan menemukan saran yang lebih akurat di Cursor atau Copilot dengan harga lebih murah. Kedua, harga $39 dan $59 per user per bulan dengan annual subscription wajib, plus tidak adanya free tier sejak sunset di 2025, menjadikannya opsi yang mahal untuk solo developer atau tim kecil. Ketiga, self-serve pricing tidak dipublikasikan — enterprise plan butuh sales conversation untuk quote, yang memperpanjang procurement cycle untuk tim yang butuh evaluasi cepat atau ekspansi mendadak. Keempat, Code Review Agent dan CLI agentic masih kalah dari Claude Code atau Codex pada workflow monorepo raksasa dengan banyak subagent yang harus di-orchestrate secara paralel. Kelima, komunitas dan tutorial third-party lebih kecil dari Copilot atau Cursor yang sudah punya basis developer lebih besar, sehingga onboarding untuk deployment on-prem pertama kali terasa lebih lama.",
+      "Untuk pengguna dan tim di Indonesia, posisi Tabnine menarik untuk segmen enterprise spesifik. Pertama, perusahaan BFSI (bank, fintech, asuransi) yang tunduk pada regulasi OJK dan UU PDP akan menemukan nilai besar di opsi deployment on-prem Kubernetes atau fully air-gapped — kode tidak pernah meninggalkan infrastructure sendiri, memenuhi syarat data sovereignty yang semakin ketat. Kedua, rumah sakit, klinik, dan perusahaan healthtech yang handle rekam medis pasien punya kebutuhan serupa, dan compliance HIPAA-style yang Tabnine tawarkan lewat SOC 2 + ISO 27001 bisa menjadi shortcut untuk audit internal. Ketiga, startup enterprise B2B yang menjual ke korporasi besar akan menemukan bahwa sertifikat compliance Tabnine mempercepat sales cycle dibanding menawarkan tool AI coding yang belum lolos review security klien. Catatan harga: subscription tetap dalam USD dengan annual commitment, charge kartu kredit internasional plus PPN 11 persen, markup total sekitar 12-15 persen di atas harga tertera; untuk startup kecil dan solo developer, Copilot $10/bulan atau Cursor $20/bulan adalah opsi yang lebih realistis. Komunitas developer Indonesia yang aktif di ID-Git, Jakarta Java User Group, atau Python Indonesia mulai mengangkat Tabnine di diskusi soal on-prem deployment, meski tutorial bahasa Indonesia masih terbatas di YouTube dan blog. Untuk evaluasi, tim bisa minta trial lewat sales atau gunakan versi SaaS untuk proof of concept sebelum commit ke deployment on-prem yang lebih berat. Untuk yang baru eksplorasi AI coding, Copilot atau Cursor lebih ramah untuk entry; untuk yang perlu compliance, Tabnine adalah salah satu dari sedikit pilihan yang lolos review legal.",
+    ],
+    link: "https://www.tabnine.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-27",
+  },
 ];
 
 export function getStack(slug: string) {
