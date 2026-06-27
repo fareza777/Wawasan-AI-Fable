@@ -1351,6 +1351,57 @@ export const repos: Review[] = [
     date: "2026-06-27",
     updatedAt: "2026-06-27",
   },
+{
+    slug: "daily-stock-analysis",
+    name: "Daily Stock Analysis",
+    tagline:
+      "Sistem analisis saham multi-pasar berbasis LLM dengan dasbor keputusan dan notifikasi otomatis",
+    tags: ["AI Agent", "Quant", "Python", "Open Source"],
+    score: 8.3,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Daily Stock Analysis adalah sistem terbuka yang menggabungkan data pasar saham multi-wilayah, berita real-time, dan penalaran LLM untuk menghasilkan dasbor keputusan yang bisa dijadwalkan otomatis tanpa biaya API tambahan. Proyek ini menarik karena menurunkan ambang eksperimen kuantitatif bagi developer ritel — mereka bisa memiliki pipeline analisis saham lengkap hanya dengan satu instalasi, dan biaya operasionalnya sengaja didesain mendekati nol lewat caching berlapis dan penggunaan endpoint gratis di mana pun memungkinkan.",
+    highlights: [
+      "Pipeline data multi-pasar yang menyatukan saham A-share, Hong Kong, dan Amerika Serikat lewat satu konfigurasi terpadu, mengurangi pekerjaan integrasi yang biasanya dilakukan terpisah per bursa",
+      "Agregasi berita real-time dari berbagai sumber yang relevan dengan emiten tertentu, dipadukan dengan ringkasan LLM sehingga analis tidak perlu membaca puluhan headline satu per satu",
+      "Dasbor keputusan yang menampilkan skor teknikal, sentimen, dan anomali harga dalam satu tampilan — dirancang untuk memperlihatkan konteks, bukan sekadar daftar indikator",
+      "Modul AI agent yang bisa menjalankan analisis dengan template prompt terpisah per strategi (day-trade, swing, position), sehingga output lebih fokus dibanding prompt generik",
+      "Penjadwalan otomatis lewat GitHub Actions atau cron job lokal, lengkap dengan laporan harian yang dikirim lewat Telegram, email, atau webhook kustom",
+      "Biaya operasional mendekati nol dengan caching multi-level dan dukungan endpoint LLM gratis — menarik untuk komunitas ritel dan akademisi yang ingin bereksperimen tanpa terbebani biaya API besar",
+      "Visualisasi bergerak dengan pustaka charting populer (ECharts, Plotly), sehingga bisa langsung disisipkan ke laporan HTML atau PDF",
+      "Konfigurasi berbasis YAML yang mudah diaudit: pengguna bisa melihat prompt apa yang dikirim ke model, dan menyesuaikan strategi tanpa harus menyentuh kode",
+      "Lisensi MIT, sehingga bebas dipakai untuk eksperimen pribadi, riset akademis, maupun prototype internal di perusahaan kecil",
+    ],
+    pros: [
+      "Pendekatan end-to-end yang jarang ditemui di proyek open-source: data, berita, dan penalaran model digabung jadi satu pipeline, bukan komponen terpisah yang harus disambung manual",
+      "Biaya operasional rendah lewat caching dan dukungan endpoint gratis — cocok untuk komunitas ritel Indonesia yang ingin belajar tanpa terbebani biaya API",
+      "Dokumentasi bahasa Mandarin dan Inggris yang lengkap dengan contoh strategi siap pakai, menurunkan kurva belajar bagi pengguna baru",
+      "Lisensi MIT dan arsitektur modular: developer bisa menambahkan bursa baru, sumber berita lokal, atau model bahasa alternatif tanpa fork ke codebase inti",
+    ],
+    cons: [
+      "Faktor regional: dokumentasi utama dan prompt default masih sangat berorientasi pasar saham China (A-share, Hong Kong), sehingga pengguna di pasar AS atau emerging markets perlu menulis strategi sendiri",
+      "Bergantung pada kualitas berita dan data eksternal: jika sumber umpan lambat atau terblokir, kualitas rekomendasi menurun drastis — perlu rencana cadangan",
+      "Bukan saran finansial: hasil analisis adalah eksperimen kuantitatif, bukan rekomendasi investasi, sehingga harus digunakan dengan pertimbangan risiko masing-masing",
+    ],
+    verdict:
+      "Daily Stock Analysis adalah titik masuk pragmatis untuk komunitas Indonesia yang ingin bereksperimen dengan analisis saham berbasis LLM tanpa harus merakit pipeline dari nol. Di 2026, ketika semakin banyak trader ritel tertarik pada otomatisasi berbasis AI, proyek seperti ini menurunkan ambang masuk secara signifikan.",
+    body: [
+      "Di komunitas kuantitatif ritel, hambatan terbesar biasanya bukan ide strategi, melainkan pekerjaan infrastruktur: mengambil data historis, membersihkannya, menggabungkannya dengan berita, lalu menulis prompt yang konsisten. Daily Stock Analysis mencoba mengangkat beban itu dengan menyediakan pipeline terpadu yang sudah mencakup data pasar, agregasi berita, dan penalaran model bahasa dalam satu paket. Hasilnya, pengguna cukup fokus pada strategi dan parameter — selebihnya, sistem yang bekerja.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah konsistensi output. Karena proyek ini membagi analisis ke dalam beberapa template prompt yang terpisah per strategi, hasil untuk day-trade dan swing trade punya format yang jelas dan bisa dibandingkan. Pola ini berbeda dari banyak bot Telegram serbaguna yang mencampur semuanya menjadi satu pesan panjang. Untuk pengguna yang ingin mengevaluasi keputusan dengan tenang, struktur seperti ini sangat membantu.",
+      "Untuk konteks Indonesia, proyek ini punya keterbatasan regional yang jelas: dokumentasi dan strategi bawaan sangat berorientasi pasar China, sehingga pengguna saham IDX perlu menulis prompt sendiri atau menambahkan feed berita lokal. Di sisi lain, biaya operasional yang rendah menjadikannya menarik untuk komunitas akademisi, riset, dan trader pemula yang ingin belajar tanpa terbebani biaya API besar. Pendekatan berlapis seperti ini juga membuka peluang kontribusi lokal: menambahkan feed berita BEI, kalender dividen, atau sentimen media sosial berbahasa Indonesia.",
+      "Batasan yang perlu dipahami: proyek ini adalah alat eksperimen kuantitatif, bukan penasihat finansial. Output yang dihasilkan adalah hasil penalaran model terhadap data historis dan berita terkini — tidak ada jaminan akurasi, dan pengguna tetap harus menanggung risiko keputusan investasinya sendiri. Namun sebagai fondasi terbuka untuk eksplorasi AI di pasar modal, Daily Stock Analysis adalah salah satu titik masuk paling pragmatis yang tersedia saat ini.",
+    ],
+    link: "https://github.com/ZhuLinsen/daily_stock_analysis",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-28",
+    updatedAt: "2026-06-28",
+  },
 ];
 
 export function getRepo(slug: string) {
