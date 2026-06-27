@@ -583,6 +583,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Embedding HTML, rich component, dan TUI built-in: penulis spec engineering, wiki visual, atau dashboard internal Markdown bisa menanamkan diagram, tabel, dan blok interaktif — plus CLI untuk pengguna terminal.",
       ],
     },
+    "deepseek-ai/DeepSpec": {
+      description:
+        "Toolkit open-source (MIT) dari DeepSeek untuk melatih & mengevaluasi model 'draft' speculative decoding — DSpark yang diklaim 51–400% lebih cepat dari Eagle3 dan DFlash untuk inference LLM.",
+      highlights: [
+        "Speculative decoding = model kecil 'menebak' token yang akan keluar, lalu model besar memverifikasi paralel — throughput inference naik tanpa mengubah output; DSpark dari DeepSeek diklaim punya acceptance length 16–31% lebih tinggi dari Eagle3/DFlash.",
+        "Full-stack codebase: data preparation → training → evaluation, lengkap dengan konfigurasi untuk Qwen3 dan Gemma sebagai target model. Default config pakai 8 GPU per node; untuk skala kecil, CUDA_VISIBLE_DEVICES tinggal dipersempit.",
+        "Catch yang jarang dibicarakan: target cache untuk melatih draft model sekecil Qwen3-4B butuh ~38 TB storage — artinya ini toolkit level riset/infrastruktur, bukan untuk hobbyist; lebih cocok untuk tim ML engineering yang sudah main inference optimization.",
+        "MIT-licensed dan open-sourced Juni 2026 berbarengan dengan rilis V4 Flash/Pro — sinyal DeepSeek tetap konsisten merilis riset inference ke publik, melengkapi tren speculative decoding jadi 'commodity layer' untuk inference engine.",
+      ],
+    },
+    "opendatalab/MinerU": {
+      description:
+        "Tool open-source (AGPL-3.0) konversi PDF, DOCX, PPTX, dan gambar jadi Markdown/JSON terstruktur untuk pipeline LLM — hadir dengan OCR 109 bahasa, pengenalan rumus LaTeX, dan tabel HTML.",
+      highlights: [
+        "Solusi end-to-end untuk dokumen kompleks: hapus header/footer/nomor halaman otomatis, pertahankan struktur (heading, paragraf, daftar, caption), baca multi-kolom sesuai urutan baca manusia — output Markdown atau JSON yang siap masuk RAG pipeline.",
+        "Pintar di layout yang biasanya jadi batu sandungan: rumus matematika → LaTeX, tabel → HTML, gambar + caption diekstrak terpisah, plus auto-OCR untuk PDF hasil scan dengan 109 bahasa termasuk aksara CJK dan Arab.",
+        "Asal-usul dari pre-training InternLM dan kini jadi salah satu parser dokumen paling matang di ekosistem open-source (~71k bintang) — alternatif dari layanan komersial seperti Adobe Extract atau Unstructured.io dengan kualitas setara untuk dokumen ilmiah.",
+        "Integrasi vLLM di versi 2.5+: parsing dokumen panjang jadi jauh lebih cepat dengan multi-GPU deployment lewat mineru-router — bukan cuma CLI, ada web demo, SDK Python, dan HuggingFace Space untuk coba tanpa install.",
+      ],
+    },
   };
 
 // Helper: lookup dengan fallback ke template-generated highlights
