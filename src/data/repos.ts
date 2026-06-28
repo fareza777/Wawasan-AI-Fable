@@ -1402,6 +1402,55 @@ export const repos: Review[] = [
     date: "2026-06-28",
     updatedAt: "2026-06-28",
   },
+{
+    slug: "cherry-studio",
+    name: "Cherry Studio",
+    tagline: "Studio produktivitas AI all-in-one dengan 300+ asisten dan agen otonom",
+    tags: ["AI Agent", "Desktop App", "TypeScript", "Multi-Model"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Cherry Studio adalah aplikasi desktop open-source yang menyatukan puluhan model LLM, lebih dari 300 asisten siap pakai, dan agen otonom dalam satu antarmuka. Dengan hampir 48 ribu bintang di GitHub dan pertumbuhan yang konsisten, ia menjadi pilihan populer bagi pengguna yang ingin pengalaman ChatGPT-like tanpa meninggalkan ekosistem lokal dan tanpa terkunci pada satu vendor.",
+    highlights: [
+      "Lebih dari 300 asisten bawaan yang bisa langsung dipakai: penulisan, coding, riset, terjemahan, hingga persona konsultasi spesifik",
+      "Dukungan multi-provider dalam satu aplikasi: OpenAI, Anthropic Claude, Google Gemini, DeepSeek, Ollama, dan endpoint OpenAI-compatible lainnya",
+      "Agen otonom dengan akses tool dan kemampuan multi-langkah untuk tugas yang melampaui chat biasa",
+      "Mode vibe coding dan integrasi dengan Claude Code serta Codex untuk workflow pengembangan",
+      "Sistem skill modular (agent-skills / awesome-skills) yang bisa ditambah atau dibagikan lewat direktori komunitas",
+      "Antarmuka desktop native untuk Windows, macOS, dan Linux terasa ringan dibanding membuka banyak tab browser",
+      "Pengaturan parameter model lengkap: temperature, top-p, max token, dan preset per percakapan",
+      "Lisensi AGPL-3.0 untuk transparansi penuh dan kontribusi balik ke komunitas open-source",
+    ],
+    pros: [
+      "Satu aplikasi untuk hampir semua model LLM populer, tanpa perlu beralih tab atau layanan",
+      "Koleksi asisten bawaan yang sangat banyak, hemat waktu dibanding menulis prompt dari nol",
+      "Agen otonom bawaan yang bisa menjalankan tool, bukan sekadar menjawab dalam chat",
+      "Aktif dikembangkan dengan rilis rutin dan komunitas pengguna yang besar",
+    ],
+    cons: [
+      "Ukuran aplikasi dan konsumsi memori lumayan karena menyatukan banyak fitur dalam satu paket",
+      "Dokumentasi resmi masih lebih tipis dibanding pemain besar seperti Dify atau n8n, sebagian dipelajari lewat preset dan contoh",
+      "AGPL-3.0 membawa implikasi tertentu untuk integrasi ke produk proprietary, perlu ditinjau tim legal bila akan dibundel ulang",
+    ],
+    verdict:
+      "Pilihan menarik bagi pengguna yang ingin satu aplikasi desktop untuk hampir semua kebutuhan AI tanpa harus bolak-balik antara layanan chat, code assistant, dan tool otomasi. Bukan sekadar wrapper, agen otonom dan sistem skill membuat Cherry Studio terasa seperti workstation AI pribadi.",
+    body: [
+      "Dulu, mengadopsi beberapa model LLM berarti menginstall beberapa aplikasi atau berlangganan banyak layanan sekaligus. Cherry Studio mengambil pendekatan berbeda: menyatukan semuanya dalam satu aplikasi desktop yang rapi. Hasilnya, pengguna bisa berpindah dari Claude untuk penulisan ke DeepSeek untuk coding ke Ollama lokal untuk percobaan privat, semuanya dari jendela yang sama, dengan riwayat percakapan yang terorganisir per proyek.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah waktu yang dihemat oleh 300+ asisten bawaan. Untuk tugas yang berulang, merangkum rapat, menerjemahkan dokumen, menyusun draf email profesional, atau membantu debugging kode, asisten yang sudah terlatih pada konteks tersebut biasanya menghasilkan output yang jauh lebih siap pakai dibanding prompt yang ditulis ulang dari nol setiap kali. Agen otonom bawaan juga menambah lapisan kegunaan: bukan hanya menjawab, tetapi bisa menjalankan tool dan langkah-langkah terstruktur untuk tugas yang lebih panjang.",
+      "Untuk konteks Indonesia, AGPL-3.0 sebagai lisensi utama membawa catatan penting. Untuk pemakaian pribadi, eksperimen, dan sebagian besar skenario internal, lisensi ini bukan hambatan. Namun untuk organisasi yang ingin membundel Cherry Studio ke dalam produk proprietary atau mendistribusikan ulang sebagai layanan, konsultasi dengan tim hukum sangat disarankan. Di sisi lain, model bisnis Cherry AI di situs resminya menunjukkan arah komersial yang sehat: ada layanan cloud berbayar untuk pengguna yang ingin pengalaman lebih turnkey.",
+      "Rekomendasi penggunaan: pasang Cherry Studio untuk merasakan dulu manfaat multi-model dalam satu aplikasi. Gunakan asisten bawaan untuk tugas harian yang berulang, lalu evaluasi apakah alur kerja Anda cukup khas untuk layak membangun skill atau asisten kustom sendiri. Untuk pengguna individu dan tim kecil yang selama ini berlangganan banyak tool AI terpisah, Cherry Studio adalah salah satu cara paling praktis untuk menyederhanakan tumpukan teknologi sekaligus menjaga fleksibilitas penuh atas pilihan model.",
+    ],
+    link: "https://github.com/CherryHQ/cherry-studio",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-29",
+    updatedAt: "2026-06-29",
+  },
 ];
 
 export function getRepo(slug: string) {
