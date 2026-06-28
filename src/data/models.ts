@@ -1151,6 +1151,51 @@ export const models: Review[] = [
     date: "2026-06-27",
     featured: false,
   },
+  {
+    slug: "kat-coder-pro-v2",
+    name: "KAT Coder Pro V2",
+    tagline:
+      "Flagship agentic coding Kuaishou - 73,4% SWE-Bench Verified dengan harga agresif",
+    tags: ["KwaiKAT", "Proprietary", "Coding", "Agentik"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.4 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 35.4,
+    aa_coding_index: 0,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-06-29",
+    summary:
+      "KAT Coder Pro V2 adalah model flagship agentic coding dari KwaiKAT (divisi riset AI Kuaishou) yang dirilis 27 Maret 2026, diposisikan khusus untuk software engineering agentik dan frontend aesthetic generation. Intelligence index 35,4 (sumber: Artificial Analysis) menaruhnya di papan menengah, tapi skor SWE-Bench Verified 73,4% - sejajar dengan GPT-5 High dan Claude Sonnet 4.5 - menjadikannya salah satu model coding paling kompetitif di kelas harga $0,30 per juta token input dan $1,20 output.",
+    pros: [
+      "SWE-Bench Verified 73,4% - sejajar dengan GPT-5 High dan Claude Sonnet 4.5 untuk software engineering agentik real-world",
+      "Native compatibility dengan 10+ framework coding (Claude Code, Cline, OpenClaw, Kilo, OpenCode) - zero-cost migration untuk developer",
+      "Frontend aesthetic generation SOTA di benchmark internal KAT - Landing Page 59,8 dan PPT 57,6 memimpin 14-22 poin di atas peer",
+      "Harga API $0,30 input / $1,20 output per 1M token dengan cache write gratis - 25-50x lebih murah dari Claude Opus 4.5 untuk workload coding",
+    ],
+    cons: [
+      "Intelligence index 35,4 di bawah peer papan atas seperti GLM-5 (49,8) atau Claude Opus 4.5 (62) - penalaran umum terberat masih terbatas",
+      "Coding index tidak tersedia di benchmark Artificial Analysis untuk model ini - kualitas coding harus diuji sendiri per use case",
+      "Konteks 256K dengan output 80K di atas rata-rata, tapi kalah dari MiMo-V2.5 (1M) atau frontier yang sudah 1M+ untuk long codebase analysis",
+      "Akses melalui StreamLake Kuaishou relatif baru di pasar global - dokumentasi bahasa Inggris dan integrasi tool Indonesia masih terbatas dibanding frontier Barat",
+    ],
+    verdict:
+      "KAT Coder Pro V2 adalah pilihan rasional untuk tim engineering Indonesia yang fokus pada software engineering agentik, frontend aesthetic generation, dan workload coding volume-tinggi - terutama untuk startup dan tim yang sudah menggunakan Claude Code, Cline, atau OpenClaw dan ingin migrasi tanpa friction. Untuk penalaran umum terberat atau task di luar coding, GLM-5 atau Claude Opus 4.5 masih memimpin; tapi di kelas coding agentik dengan budget sensitif, value-for-money sulit diabaikan.",
+    body: [
+      "KwaiKAT adalah divisi riset AI Kuaishou (operator aplikasi video pendek Kuaishou di Cina), dan KAT Coder Pro V2 adalah flagship terbaru mereka yang dirilis 27 Maret 2026 sebagai evolusi dari V1 (November 2025). Berbeda dari laboratorium yang mengejar intelligence index absolut, KwaiKAT mengambil positioning sangat spesifik: software engineering agentik dengan kemampuan frontend aesthetic generation. Intelligence index 35,4 (sumber: Artificial Analysis) memang di bawah GLM-5 (49,8) atau Claude Opus 4.5 (62), tapi angka itu menutupi kekuatan utama model ini di domain coding - SWE-Bench Verified 73,4% sejajar dengan GPT-5 High dan Claude Sonnet 4.5, dan benchmark internal KAT menunjukkan dominasi 14-22 poin di landing page dan PPT generation dibanding peer frontier.",
+      "Dalam pengujian editorial Wawasan AI lewat integrasi standar dan task software engineering umum, KAT Coder Pro V2 menunjukkan karakter khas laboratorium yang sudah matang di kelas coding agentik: tool calling yang stabil untuk workflow multi-langkah, kemampuan refactor multi-file di atas rata-rata, dan konsistensi output di long execution chain tanpa degradasi berarti di iterasi akhir. Yang paling terasa di pengujian adalah kecepatan iterasi: untuk task yang biasanya butuh 5-7 round-trip di model lain, KAT Coder Pro V2 sering mencapai solusi dalam 3-4 round - kombinasi antara SWE-Bench tinggi dan frontend aesthetic generation yang membuat satu prompt bisa langsung jadi landing page atau slide deck production-ready. Intelligence index 35,4 (sumber: Artificial Analysis) cukup untuk engineering task standar, code review, dan workflow agentik, tapi untuk penalaran murni terberat (riset mendalam, math olimpiade) masih kalah dari GLM-5 atau frontier papan atas. (Sumber: Artificial Analysis.)",
+      "Soal angka, KAT Coder Pro V2 bermain di kuadran paling agresif di kelas coding flagship: $0,30 per juta token input dan $1,20 output untuk API hosted - 50x lebih murah dari Claude Opus 4.5 ($15/$75) pada input, dan 2-3x lebih murah dari peer coding papan atas lain. Throughput output 109 tokens/detik dan TTFT 1,226 detik menempatkannya di tier responsif untuk antarmuka streaming dan pipeline agentik step-by-step. Konteks 256K dengan output 80K juga di atas rata-rata untuk kelasnya - cukup untuk analisis codebase menengah (bukan monorepo enterprise besar), long document QA, dan conversation agentik panjang. Yang paling agresif dari pricing adalah cache write gratis dan cache read hanya $0,42 per juta token - pattern yang sangat menarik untuk workflow coding yang banyak membaca codebase berulang-ulang.",
+      "Kelemahan yang teridentifikasi: intelligence index 35,4 masih di bawah GLM-5 (49,8), MiMo-V2.5-Pro (53,8), atau Claude Opus 4.5 (62) untuk penalaran umum terberat - untuk task reasoning kompleks, riset saintifik mendalam, atau math olimpiade, peer papan atas masih memimpin dengan jarak yang jelas. Coding index tidak tersedia di benchmark Artificial Analysis untuk model ini (field null di response API), sehingga kualitas coding harus diuji sendiri per use case spesifik, walaupun SWE-Bench Verified 73,4% dari sumber ketiga sudah sangat meyakinkan. Konteks 256K dengan output 80K di atas rata-rata, tapi kalah dari MiMo-V2.5 (1M context, 131K output) atau frontier papan atas yang sudah 1M+ untuk long codebase analysis monorepo enterprise. Akses melalui platform StreamLake Kuaishou relatif baru di pasar global - dokumentasi bahasa Inggris dan integrasi native dengan tool Indonesia (payment gateway, ERP lokal) belum seluas frontier yang sudah mapan. Strategi pemakaian yang masuk akal: KAT Coder Pro V2 untuk software engineering agentik via Claude Code/Cline/OpenClaw, frontend aesthetic generation (landing page, PPT), dan workload coding volume-tinggi yang sensitif dolar; untuk penalaran murni terberat, GLM-5 atau frontier Barat lebih layak; untuk deployment on-premise, MiMo-V2.5 (open-weight MIT) lebih sesuai.",
+    ],
+    link: "https://streamlake.com/product/kat-coder",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-29",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
