@@ -603,6 +603,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Integrasi vLLM di versi 2.5+: parsing dokumen panjang jadi jauh lebih cepat dengan multi-GPU deployment lewat mineru-router — bukan cuma CLI, ada web demo, SDK Python, dan HuggingFace Space untuk coba tanpa install.",
       ],
     },
+    "unicity-astrid/book": {
+      description:
+        "Buku referensi kanonik (mdBook, Rust-style technical writing) untuk Astrid OS — OS userspace buat AI agent yang menjalanan kapsul WASM terisolasi lewat microkernel Rust dengan capability token ed25519 dan audit chain BLAKE3.",
+      highlights: [
+        "Referensi kanonik untuk arsitektur Astrid OS: kernel, model kapsul, host ABI, IPC bus, dan security model — disusun dengan gaya 'textbook' kering-teknis (bukan marketing), setiap klaim punya jangkar file:baris ke kode nyata.",
+        "Berguna untuk siapa yang mau membangun capsule (modul WASM terisolasi) atau memahami trust model: capabilities selalu menyempit, sandbox WASM tak punya ambient authority, dan audit chain BLAKE3 membuat log tamper-evident.",
+        "Dipakai sebagai pintu masuk kedua setelah README repo kernel — README menjelaskan visi, buku ini menjelaskan 'apa yang sebenarnya berjalan' (apa yang sudah di-ship, apa yang masih stub) sehingga engineer tidak salah asumsi.",
+        "Multi-bahasa terjemahan dilakukan via Weblate (Inggris/Cina disinkronkan) dan dilisensikan MIT/Apache-2.0 — bagian dari polyrepo Astr id di mana kernel, SDK, RFC, dan setiap capsule punya repo sendiri-sendiri.",
+      ],
+    },
+    "unicity-astrid/handbook": {
+      description:
+        "Handbook kontributor resmi tim Astrid (Unicity Labs) — hukum operasional untuk bekerja di polyrepo OS-AI: kapan butuh RFC, kenapa 'kernel is dumb' adalah arsitektur bukan gaya, dan bagaimana release dipotong.",
+      highlights: [
+        "Tiga aturan keras yang jadi landasan: kernel harus 'dumb' (cuma route event, enforce capability, jalankan sandbox — semua logika di capsule), RFC wajib untuk perubahan ABI/IPC/manifest, dan dokumentasi yang outdated adalah bug.",
+        "Penjelasan operasional polyrepo: repo mana yang punya apa, kernel-internal vs contract-surface, kapan PR bisa langsung merge vs harus lewat RFC, dan cara menulis capsule yang lulus adversarial self-review.",
+        "Tiga release rule konkret: version bump selalu PR terpisah, setiap core PR menutup issue, commit GPG-signed, dan crate security-critical dapat extra review — standar yang jarang ditulis eksplisit di proyek open-source.",
+        "Dilisensikan MIT/Apache-2.0 dan dibuat dengan mdBook (sama tool dengan Rust official docs) — relevan untuk maintainer proyek open-source dan engineer yang ingin belajar standar disiplin release ala Unicity Labs.",
+      ],
+    },
   };
 
 // Helper: lookup dengan fallback ke template-generated highlights
