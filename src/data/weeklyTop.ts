@@ -623,6 +623,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Dilisensikan MIT/Apache-2.0 dan dibuat dengan mdBook (sama tool dengan Rust official docs) — relevan untuk maintainer proyek open-source dan engineer yang ingin belajar standar disiplin release ala Unicity Labs.",
       ],
     },
+    "hasaneyldrm/exercises-dataset": {
+      description:
+        "Dataset fitness terlengkap di GitHub dengan 1.324 latihan — masing-masing membawa GIF animasi, thumbnail, otot target, equipment, dan instruksi bilingual (EN/TR) yang siap pakai untuk aplikasi kebugaran.",
+      highlights: [
+        "Cakupan 1.324 latihan dengan kategori muscle group, equipment, dan instruksi langkah demi langkah dalam dua bahasa (Inggris dan Turki) — JSON terstruktur yang tinggal di-load ke aplikasi atau dipakai untuk fine-tuning model ML.",
+        "Dilengkapi media demo untuk setiap gerakan: thumbnail JPG statis plus GIF animasi yang menunjukkan rentang gerak utuh, sehingga developer tidak perlu rekam video sendiri atau cari stok footage.",
+        "Use case langsung: workout generator acak, rekomendasi latihan per muscle group, computer-vision exercise recognition (estimasi postur dari landmark), atau RAG chatbot kebugaran yang bisa jawab 'latihan apa untuk punggung dengan dumbbell'.",
+        "Batasan penting: lisensi eksplisit non-komersial — konten media tetap milik masing-masing copyright holder, jadi untuk produk SaaS atau app berbayar perlu deal langsung dengan pemilik atau pakai dataset alternatif yang komersial.",
+      ],
+    },
+    "HKUDS/Vibe-Trading": {
+      description:
+        "Workstation riset finansial multi-agen dari HKU Data Science (MIT, 14k★) — ubah pertanyaan natural language jadi strategi trading, backtest lintas 6 pasar (A/HK/US/crypto/futures/forex), lalu ekspor ke TradingView, MT5, atau MCP.",
+      highlights: [
+        "Paradigma 'vibe-trading': pengguna tanya pakai bahasa biasa ('backtest BTC-USDT MA 20/50 untuk 2024'), agen pilih data source otomatis, tulis kode strategi, jalankan 7 engine backtest, dan tampilkan chart + laporan — bukan tool analisis, melainkan workstation riset yang meniru cara quant researcher bekerja.",
+        "Cakupan pasar yang jarang ditandingi tool open-source: A股/港股/US equities, crypto, futures (CFFEX/CME/ICE/Eurex), forex, plus 5 sumber data dengan auto-fallback — tidak perlu daftar 5 API berbeda untuk riset multi-aset.",
+        "Validasi statistik serius: Monte Carlo permutation test, Bootstrap Sharpe CI, dan Walk-Forward analysis — bukan sekadar equity curve cantik, melainkan pengujian yang biasa dipakai akademisi dan quant desk untuk filter strategi overfit.",
+        "29 preset agent swarm siap pakai (investment_committee, crypto_trading_desk, quant_strategy_desk, macro_rates_fx_desk) plus export ke Pine Script v6, MT5, dan MCP server yang bisa dipasang ke Claude Desktop atau Cursor — plug-and-play untuk pengguna yang ingin langsung eksplorasi tanpa bangun pipeline dari nol.",
+      ],
+    },
+    "vercel-labs/deepsec": {
+      description:
+        "Harness keamanan open-source dari Vercel Labs (TypeScript, 4.1k★) — pakai coding agent (Claude/Codex) untuk scan, investigasi, dan revalidasi kerentanan di codebase besar secara paralel dengan severity P0–P2 plus jejak audit git committer.",
+      highlights: [
+        "Arsitektur lima tahap yang matured: scan (110 regex matcher, ~15 detik untuk 2.000 file tanpa panggil AI) → investigate (coding agent telusuri data flow) → revalidate (agen kedua filter false positive) → enrich (petakan git committer responsible) → export (markdown/JSON untuk tiket).",
+        "Didesain untuk codebase AI-era: klaimnya, security review tradisional sudah kalah cepat dari refactor dan code generation agentik, jadi dipindah ke loop yang sama dengan development — output actionable langsung, bukan PDF tebal yang jarang dibaca tim engineering.",
+        "Plug-in ke workflow yang sudah ada: pakai Claude/Codex subscription existing tanpa setup tambahan (Vercel OIDC token 12 jam, atau AI Gateway API key) — fanout ke Vercel Sandboxes mendukung 1.000+ concurrent scan untuk repo besar.",
+        "Catch penting: pakai Opus 4.7 max effort dan GPT-5.5 xhigh, biaya scan repo besar bisa ribuan sampai puluhan ribu dolar — bukan tool untuk dipakai setiap commit, melainkan audit terjadwal (mingguan/bulanan) atau sebelum release besar. Repo open-source dan research-only aman karena tidak ada data keluar (egress terbatas ke coding agent host).",
+      ],
+    },
   };
 
 // Helper: lookup dengan fallback ke template-generated highlights
