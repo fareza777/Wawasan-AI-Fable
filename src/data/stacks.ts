@@ -935,6 +935,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-27",
   },
+  {
+    slug: "jan",
+    name: "Jan",
+    tagline: "Desktop AI client open-source untuk menjalankan LLM lokal seperti alternatif LM Studio",
+    tags: ["Jan", "Open Source", "Local LLM", "Desktop App"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.0 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.3 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "Jan adalah aplikasi desktop open-source (Apache 2.0) dari Menlo Research Singapura yang memungkinkan menjalankan LLM lokal seperti Llama, Qwen, Gemma, Mistral, dan DeepSeek langsung di laptop atau workstation tanpa ketergantungan cloud. Lebih dari sekadar chat UI, Jan menyediakan OpenAI-compatible API server di localhost:1337, MCP support untuk integrasi agent, dan jembatan opsional ke OpenAI, Anthropic, Gemini, dan Groq ketika model lokal tidak cukup. Dengan lebih dari 5,9 juta unduhan dan 43 ribu bintang GitHub di v0.8.3, Jan menjadi salah satu pionir kategori local-first AI workstation yang menarik untuk developer, researcher, dan organisasi dengan kebutuhan privasi ketat.",
+    pros: [
+      "Gratis dan open-source di bawah Apache 2.0 — commercial-friendly tanpa biaya lisensi, cukup download binary dari jan.ai atau compile dari GitHub",
+      "Privasi total karena model berjalan 100% lokal di device user, tidak ada telemetry wajib, tidak ada data yang keluar ke server pihak ketiga secara default",
+      "OpenAI-compatible API server di localhost:1337 memungkinkan tool apa pun yang dibangun untuk OpenAI SDK langsung terintegrasi dengan satu perubahan base URL",
+      "Model-agnostik: support Llama, Qwen, Gemma, Mistral, DeepSeek, Kimi, dan apa pun dalam format GGUF dari HuggingFace — tidak ada vendor lock-in",
+      "MCP (Model Context Protocol) support bawaan, memungkinkan Jan berfungsi sebagai agent yang bisa membaca file, menjalankan tool, dan orchestrate workflow",
+    ],
+    cons: [
+      "Performa sangat tergantung hardware user — model 70B butuh GPU 48GB VRAM atau RAM 64GB+, laptop low-spec akan lambat atau tidak bisa menjalankan model besar sama sekali",
+      "Setup awal lebih teknis dibanding ChatGPT — user harus download model dari HuggingFace, konfigurasi context length, temperature, dan quantization setting secara manual",
+      "Memory/personalization masih dalam roadmap (Coming Soon per jun 2026) — belum ada cross-session context carry-over seperti ChatGPT Plus atau Claude Pro",
+      "Cloud bridge opsional ke OpenAI/Anthropic/Gemini butuh API key masing-masing — kalau diaktifkan justru menghilangkan keunggulan utama privasi lokal",
+      "Komunitas dan tutorial bahasa Indonesia masih terbatas dibanding LM Studio — onboarding terasa lebih manual untuk user yang baru pertama kali setup local LLM",
+    ],
+    verdict:
+      "Pilihan solid untuk developer, researcher, dan organisasi yang ingin menjalankan LLM secara lokal dengan kontrol penuh atas data, dengan catatan bahwa pengalaman terbaik tetap butuh hardware yang memadai. Pilih Jan kalau privasi dan fleksibilitas model jadi prioritas utama; pilih LM Studio kalau butuh UX yang lebih polished; pilih Ollama kalau lebih suka CLI; pilih ChatGPT Plus kalau tidak peduli privasi dan mau raw capability.",
+    body: [
+      "Jan berawal dari project open-source di GitHub yang didirikan oleh Menlo Research, sebuah perusahaan teknologi berbasis di Singapura, dengan misi menyamakan akses ke AI capabilities tanpa mengorbankan privasi user. Alih-alih menjadi layanan SaaS seperti ChatGPT atau Claude, Jan mengambil jalur yang sebaliknya: aplikasi desktop cross-platform yang bisa di-install di Mac, Windows, dan Linux, dengan model LLM yang berjalan langsung di hardware user. Backend inference menggunakan llama.cpp yang sudah terbukti di komunitas open-source, dibungkus dengan UI berbasis Tauri dan TypeScript yang terasa native dan responsif. Sejak v0.8.3 yang rilis awal 2026, Jan sudah mencapai lebih dari 5,9 juta unduhan dan 43 ribu bintang di GitHub, menjadi salah satu local-first AI workstation paling mature di pasar, dengan positioning yang berbeda dari LM Studio (lebih polish tapi proprietary) dan Ollama (lebih CLI-focused).",
+      "Di 2026, Jan menawarkan arsitektur hybrid yang menarik. Core-nya adalah local inference engine yang support model-model open-weight populer: Llama dari Meta, Qwen dari Alibaba, Gemma dari Google, Mistral dari Mistral AI, DeepSeek dari DeepSeek AI, Kimi dari Moonshot, dan apa pun yang tersedia dalam format GGUF di HuggingFace. User cukup download model dari dalam aplikasi atau import file GGUF lokal, lalu Jan akan load dan jalankan tanpa perlu internet. Untuk use case yang butuh model proprietary atau lebih besar, Jan menyediakan cloud bridge opsional ke OpenAI, Anthropic, Gemini, dan Groq — user bisa toggle kapan perlu. Fitur teknis yang membedakan Jan adalah OpenAI-compatible API server yang berjalan di localhost:1337, sehingga tool atau aplikasi apa pun yang dibangun dengan OpenAI SDK bisa langsung point ke Jan dengan satu perubahan base URL, menjadikannya drop-in replacement untuk development dan testing lokal. MCP support bawaan menambahkan kemampuan agentic — Jan bisa membaca file, menjalankan command, dan berinteraksi dengan tool lain lewat protokol standar.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, performa sangat tergantung hardware user — model 70B parameter butuh GPU dengan 48GB VRAM atau minimal RAM 64GB untuk CPU-only inference, dan laptop kelas consumer biasanya tidak memenuhi syarat ini untuk model besar. Kedua, setup awal lebih teknis dibanding ChatGPT — user harus download model dari HuggingFace, memilih quantization level (Q4_K_M, Q5_K_M, Q8_0), konfigurasi context length, dan tuning temperature secara manual. Ketiga, fitur memory dan personalization masih dalam roadmap (Coming Soon per jun 2026), sehingga belum ada cross-session context carry-over seperti ChatGPT Plus atau Claude Pro yang mengingat preferensi user dari percakapan sebelumnya. Keempat, cloud bridge opsional yang ditawarkan sebenarnya sedikit kontradiktif dengan positioning privasi — kalau user mengaktifkan bridge ke OpenAI atau Anthropic, data tetap keluar ke server mereka. Kelima, komunitas dan tutorial bahasa Indonesia masih terbatas dibanding LM Studio yang sudah lebih dulu populer di kalangan kreator dan developer Indonesia, sehingga onboarding untuk user awam terasa lebih manual.",
+      "Untuk pengguna dan tim di Indonesia, posisi Jan menarik untuk beberapa segmen spesifik. Pertama, developer dan researcher yang fokus pada eksperimen LLM open-weight akan menemukan nilai besar di model-agnostik approach Jan — bisa bandingkan Llama, Qwen, dan DeepSeek side-by-side tanpa lock-in ke satu provider. Kedua, organisasi dengan compliance requirement ketat (BFSI, healthtech, government) yang tidak bisa mengirim data ke cloud akan menemukan Jan sebagai alternatif serius dibanding private cluster GPU yang butuh investasi jutaan dolar. Ketiga, startup dan tim kecil yang ingin demo prototipe AI tanpa burned budget API cloud akan menemukan localhost:1337 server Jan sangat berguna untuk development dan testing. Catatan harga: Jan sendiri gratis dan open-source, tapi user tetap perlu investasi hardware — workstation dengan GPU RTX 4090 (24GB VRAM) di Indonesia sekitar Rp 35-50 juta, atau Apple Silicon MacBook Pro M3 Max dengan 64GB unified memory di angka Rp 60-80 juta. Untuk komparasi, ChatGPT Plus $20/bulan (~Rp 320 ribu) untuk satu user selama setahun sudah di angka Rp 3,8 juta — jauh lebih murah dari investasi hardware, tapi dengan implikasi privasi dan ketergantungan cloud. Komunitas developer Indonesia yang aktif di Python Indonesia, Jakarta AI Meetup, dan komunitas Hugging Face Jakarta mulai mengangkat Jan di diskusi tentang local AI deployment, meski masih belum sepopuler LM Studio di YouTube tutorial. Untuk evaluasi, user bisa download binary gratis dari jan.ai dan coba model Llama 3.2 3B atau Qwen 2.5 7B untuk proof of concept sebelum commit ke hardware investment yang lebih serius.",
+    ],
+    link: "https://www.jan.ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-28",
+  },
 ];
 
 export function getStack(slug: string) {

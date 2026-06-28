@@ -1,13 +1,29 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "Hari ini",
-  "period": null,
+  "periodLabel": "28 Juni 2026",
+  "period": {
+    "date": "2026-06-28",
+    "label": "28 Juni 2026",
+    "path": "/repo/daily/2026/06/28"
+  },
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-28T05:54:47.216Z",
+  "fetchedAt": "2026-06-28T11:51:30.115Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "XxHuberrr/Mineradio",
+      "owner": "XxHuberrr",
+      "repo": "Mineradio",
+      "description": "一款以电影镜头、粒子视觉和歌词舞台为核心的沉浸式音乐播放器。",
+      "githubUrl": "https://github.com/XxHuberrr/Mineradio",
+      "trendshiftUrl": "https://trendshift.io/repositories/66115",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-06-02T12:50:48Z"
+    },
+    {
+      "rank": 2,
       "fullName": "xbtlin/ai-berkshire",
       "owner": "xbtlin",
       "repo": "ai-berkshire",
@@ -20,18 +36,6 @@
         "Fintech"
       ],
       "dateCreated": "2026-04-07T11:19:51Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "XxHuberrr/Mineradio",
-      "owner": "XxHuberrr",
-      "repo": "Mineradio",
-      "description": "一款以电影镜头、粒子视觉和歌词舞台为核心的沉浸式音乐播放器。",
-      "githubUrl": "https://github.com/XxHuberrr/Mineradio",
-      "trendshiftUrl": "https://trendshift.io/repositories/66115",
-      "language": "HTML",
-      "topics": [],
-      "dateCreated": "2026-06-02T12:50:48Z"
     },
     {
       "rank": 3,
@@ -79,6 +83,30 @@
     },
     {
       "rank": 6,
+      "fullName": "simplex-chat/simplex-chat",
+      "owner": "simplex-chat",
+      "repo": "simplex-chat",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+      "githubUrl": "https://github.com/simplex-chat/simplex-chat",
+      "trendshiftUrl": "https://trendshift.io/repositories/11898",
+      "language": "Haskell",
+      "topics": [],
+      "dateCreated": "2019-12-21T09:50:09Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Yu9191/wloc",
+      "owner": "Yu9191",
+      "repo": "wloc",
+      "description": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
+      "githubUrl": "https://github.com/Yu9191/wloc",
+      "trendshiftUrl": "https://trendshift.io/repositories/66089",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-06-24T06:15:30Z"
+    },
+    {
+      "rank": 8,
       "fullName": "hugohe3/ppt-master",
       "owner": "hugohe3",
       "repo": "ppt-master",
@@ -93,7 +121,7 @@
       "dateCreated": "2025-12-10T06:54:33Z"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "fullName": "prajwalch/TorrentSearch",
       "owner": "prajwalch",
       "repo": "TorrentSearch",
@@ -107,47 +135,20 @@
       "dateCreated": "2025-03-21T13:45:43Z"
     },
     {
-      "rank": 8,
-      "fullName": "every-app/open-seo",
-      "owner": "every-app",
-      "repo": "open-seo",
-      "description": "Open source alternative to Semrush and Ahrefs",
-      "githubUrl": "https://github.com/every-app/open-seo",
-      "trendshiftUrl": "https://trendshift.io/repositories/22289",
-      "language": "TypeScript",
-      "topics": [
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-02-27T18:57:41Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "vercel-labs/deepsec",
-      "owner": "vercel-labs",
-      "repo": "deepsec",
-      "description": "Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents",
-      "githubUrl": "https://github.com/vercel-labs/deepsec",
-      "trendshiftUrl": "https://trendshift.io/repositories/29235",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "Pentesting"
-      ],
-      "dateCreated": "2026-04-30T16:16:11Z"
-    },
-    {
       "rank": 10,
-      "fullName": "deepseek-ai/DeepSpec",
-      "owner": "deepseek-ai",
-      "repo": "DeepSpec",
-      "description": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
-      "githubUrl": "https://github.com/deepseek-ai/DeepSpec",
-      "trendshiftUrl": "https://trendshift.io/repositories/65981",
+      "fullName": "HKUDS/Vibe-Trading",
+      "owner": "HKUDS",
+      "repo": "Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "githubUrl": "https://github.com/HKUDS/Vibe-Trading",
+      "trendshiftUrl": "https://trendshift.io/repositories/25527",
       "language": "Python",
       "topics": [
-        "AI infrastructure"
+        "AI agent",
+        "Workflow automation",
+        "Fintech"
       ],
-      "dateCreated": "2026-06-26T12:36:05Z"
+      "dateCreated": "2026-04-01T09:52:20Z"
     }
   ]
 }
