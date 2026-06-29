@@ -1196,6 +1196,51 @@ export const models: Review[] = [
     date: "2026-06-29",
     featured: false,
   },
+  {
+    slug: "kat-coder-pro-v1",
+    name: "KAT Coder Pro V1",
+    tagline:
+      "Pendahulu KAT Coder Pro V2 - SWE-Bench 73,4% pertama dari KwaiKAT dengan harga paling agresif",
+    tags: ["KwaiKAT", "Proprietary", "Coding", "Agentik"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 8.8 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 34.6,
+    aa_coding_index: 58.9,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-06-30",
+    summary:
+      "KAT Coder Pro V1 adalah model agentic coding pertama dari KwaiKAT (divisi riset AI Kuaishou) yang dirilis 10 November 2025, diposisikan khusus untuk software engineering agentik dengan SWE-Bench Verified 73,4% - angka yang sama dengan penerusnya V2. Intelligence index 34,6 (sumber: Artificial Analysis) menaruhnya di papan menengah, tapi skor SWE-Bench 73,4% di kelas harga API $0,21-$0,30 per juta token input menjadikannya pilihan entry-level paling menarik di keluarga KAT Coder untuk developer yang baru eksplorasi agentic coding dengan budget ketat.",
+    pros: [
+      "SWE-Bench Verified 73,4% - sejajar dengan GPT-5 High dan Claude Sonnet 4.5 untuk software engineering agentik real-world",
+      "Harga API paling agresif di keluarga KAT Coder - $0,21 per juta token input via Kilo, $0,30 via StreamLake, output $0,83-$1,20",
+      "Konteks 256K dengan output 128K - lebih besar dari V2 (256K/80K), mendukung long codebase analysis dan conversation agentik panjang",
+      "Native compatibility dengan Claude Code, Cline, OpenClaw, Kilo, OpenCode - migration mulus dari setup coding agentik populer",
+    ],
+    cons: [
+      "Intelligence index 34,6 di bawah V2 (35,4) dan frontier papan atas seperti GLM-5 (49,8) atau Claude Opus 4.5 (62) - penalaran umum terberat masih terbatas",
+      "Coding index 58,9 lebih rendah dari peer proprietary coding papan atas - SWE-Bench tinggi tapi agregat coding belum setaraf Claude Sonnet 4.5",
+      "Akses via Kilo Code (OpenRouter) atau StreamLake Kuaishou relatif baru di pasar global - dokumentasi bahasa Inggris dan integrasi tool Indonesia masih terbatas",
+      "Posisi digantikan V2 (rilis 27 Maret 2026) - untuk greenfield project V2 lebih layak, V1 masuk akal hanya untuk workload legacy atau optimasi biaya lebih agresif",
+    ],
+    verdict:
+      "KAT Coder Pro V1 adalah pilihan rasional untuk developer Indonesia yang ingin eksplorasi agentic coding dengan budget paling ketat di keluarga KAT Coder - terutama untuk eksperimen Claude Code/Cline/OpenClaw dan workload coding volume-tinggi yang tidak butuh intelligence index frontier. Untuk greenfield project, V2 lebih layak karena intelligence index lebih tinggi di harga identik; tapi di kelas harga paling bawah dengan SWE-Bench 73,4%, value-for-money V1 sulit diabaikan untuk use case legacy dan optimasi biaya.",
+    body: [
+      "KwaiKAT adalah divisi riset AI Kuaishou (operator aplikasi video pendek Kuaishou di Cina), dan KAT Coder Pro V1 adalah model agentic coding pertama mereka yang dirilis 10 November 2025 sebagai pembuka keluarga KAT Coder. Berbeda dari laboratorium yang mengejar intelligence index absolut, KwaiKAT mengambil positioning sangat spesifik dari awal: software engineering agentik dengan tool-use capability yang sudah matang. Intelligence index 34,6 (sumber: Artificial Analysis) memang di bawah GLM-5 (49,8) atau Claude Opus 4.5 (62), tapi angka itu menutupi kekuatan utama V1 di domain coding - SWE-Bench Verified 73,4% sejajar dengan GPT-5 High dan Claude Sonnet 4.5, sebuah pencapaian yang remarkable untuk model entry-level pertama dari laboratorium yang relatif baru di pasar global. V1 menjadi fondasi yang kemudian ditingkatkan menjadi V2 (rilis 27 Maret 2026), tapi untuk workload yang tidak sensitif pada intelligence index, V1 tetap relevan di kelas harga paling agresif.",
+      "Dalam pengujian editorial Wawasan AI lewat integrasi standar dan task software engineering umum, KAT Coder Pro V1 menunjukkan karakteristik khas model agentic coding KwaiKAT: tool calling yang stabil untuk workflow multi-langkah, kemampuan refactor multi-file di atas rata-rata untuk kelas harganya, dan konsistensi output di long execution chain. Yang paling terasa di pengujian adalah rasio harga/performa: untuk task coding standar (code review, refactor, generate unit test, debug stack trace), V1 memberikan output yang comparable dengan model peer di kelas harga 2-3x lebih mahal. Intelligence index 34,6 (sumber: Artificial Analysis) cukup untuk engineering task standar, tapi untuk penalaran murni terberat (riset mendalam, math olimpiade, planning arsitektur kompleks) masih kalah dari GLM-5 atau frontier papan atas. (Sumber: Artificial Analysis.)",
+      "Soal angka, KAT Coder Pro V1 bermain di kuadran paling agresif di kelas coding model: $0,21-$0,30 per juta token input dan $0,83-$1,20 output untuk API hosted - 50-70x lebih murah dari Claude Opus 4.5 ($15/$75) pada input, dan 2-3x lebih murah dari peer coding papan atas lain. Throughput output 108,6 tokens/detik dan TTFT 1,144 detik menempatkannya di tier responsif untuk antarmuka streaming dan pipeline agentik step-by-step. Konteks 256K dengan output 128K - lebih besar dari V2 (256K/80K) - mendukung analisis codebase menengah dan long document QA dengan headroom yang cukup. Yang menarik dari pricing V1 adalah variasinya antar platform: $0,21/$0,83 via Kilo Code (OpenRouter aggregator) untuk developer kecil, dan $0,30/$1,20 via StreamLake Kuaishou langsung untuk enterprise commitment.",
+      "Kelemahan yang teridentifikasi: intelligence index 34,6 masih di bawah V2 (35,4), GLM-5 (49,8), MiMo-V2.5-Pro (53,8), atau Claude Opus 4.5 (62) untuk penalaran umum terberat - untuk task reasoning kompleks, riset saintifik mendalam, atau math olimpiade, peer papan atas masih memimpin dengan jarak yang jelas. Coding index 58,9 di benchmark Artificial Analysis juga lebih rendah dari peer proprietary coding papan atas - SWE-Bench tinggi (73,4%) belum tentu merepresentasikan kualitas coding agregat di semua task, jadi perlu uji sendiri per use case spesifik. Posisi V1 juga sudah digantikan V2 (rilis 27 Maret 2026) - untuk greenfield project baru, V2 lebih layak karena intelligence index lebih tinggi di harga yang hampir identik ($0,30/$1,20). Akses via Kilo Code atau StreamLake Kuaishou relatif baru di pasar global - dokumentasi bahasa Inggris dan integrasi native dengan tool Indonesia (payment gateway, ERP lokal) belum seluas frontier yang sudah mapan. Strategi pemakaian yang masuk akal: KAT Coder Pro V1 untuk eksplorasi agentic coding dengan budget paling ketat, workload legacy yang sudah teruji di V1, atau optimasi biaya ekstra untuk pipeline coding volume-tinggi; untuk greenfield project, V2 lebih layak; untuk penalaran murni terberat, GLM-5 atau frontier Barat lebih sesuai; untuk deployment on-premise, MiMo-V2.5 (open-weight MIT) lebih sesuai.",
+    ],
+    link: "https://openrouter.ai/kwaipilot/kat-coder-pro",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-30",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
