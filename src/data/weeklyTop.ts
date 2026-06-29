@@ -653,6 +653,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Catch penting: pakai Opus 4.7 max effort dan GPT-5.5 xhigh, biaya scan repo besar bisa ribuan sampai puluhan ribu dolar — bukan tool untuk dipakai setiap commit, melainkan audit terjadwal (mingguan/bulanan) atau sebelum release besar. Repo open-source dan research-only aman karena tidak ada data keluar (egress terbatas ke coding agent host).",
       ],
     },
+    "ripienaar/free-for-dev": {
+      description:
+        "Daftar SaaS, PaaS, dan IaaS dengan tier gratis untuk developer — 127k+ bintang, jadi referensi legendaris saat mau pilih hosting, CI/CD, monitoring, atau database tanpa bayar.",
+      highlights: [
+        "Daftar legendaris (127k+ bintang, kontribusi 1.600+ orang) yang merangkum ratusan layanan SaaS/PaaS/IaaS dengan tier gratis minimal satu tahun — bukan free trial, melainkan tier yang benar-benar bisa dipakai jangka panjang.",
+        "Cakupan luas tapi fokus infra: cloud provider, CI/CD, monitoring, artifact registry, BaaS, CDN, DNS, Docker related, sampai low-code platform — kurasi untuk DevOps/Sysadmin/Infrastructure Developer.",
+        "Formatnya opinionated dan ada baris jelas: hanya layanan yang punya free tier (bukan free trial), tier harus setahun untuk time-bucketed, dan TLS tidak boleh dipotong di paid plan — jadi yang muncul benar-benar usable.",
+        "Berguna untuk developer Indonesia, freelancer, atau tim startup yang mau stack production-grade tanpa kartu kredit — alternatif cek ke Crunchbase/Capterra yang sering bias marketing.",
+      ],
+    },
+    "simplex-chat/simplex-chat": {
+      description:
+        "Messenger open-source tanpa ID pengguna sama sekali (bukan nomor telepon, bukan username, bukan anonymous ID acak) — metadata siapa bicara dengan siapa tidak bisa dilacak oleh server SimpleX.",
+      highlights: [
+        "Pendekatan 'no user identifiers of any kind': SimpleX tidak pakai nomor telepon, username, atau bahkan random number sebagai identitas — pesan di-deliver lewat antrian sesi terenkripsi, sehingga server tidak tahu siapa yang bicara dengan siapa.",
+        "Quantum-resistant end-to-end encryption untuk pesan, file, audio call, video call, sampai push notification (yang cuma berisi metadata terenkripsi, bukan isi) — di-audit Trail of Bits pada 2022 dan 2024.",
+        "Multi-platform (iOS, Android, macOS, Windows, Linux), self-hostable (pakai server kamu sendiri lalu tetap bisa chat dengan pengguna di server SimpleX publik), dan ada fitur unik seperti 'incognito mode', 'live messages', dan secret chat group yang hanya anggota tahu keberadaannya.",
+        "Relevan untuk jurnalis, aktivis, atau siapa saja yang paham metadata sering lebih berbahaya dari isi pesan — SimpleX menjawab 'bukan cuma E2EE, tapi juga E2E-metadata'.",
+      ],
+    },
+    "browser-use/video-use": {
+      description:
+        "Skill dari tim browser-use yang bikin Claude Code (atau coding agent lain) jadi editor video — drop folder footage mentah, kasih instruksi natural language, dapat final.mp4 yang sudah di-trim, color-graded, dan ada subtitle.",
+      highlights: [
+        "Workflow 'drop folder → chat → final.mp4' tanpa preset, menu, atau timeline — agent inventaris footage, susun strategi edit, tunggu approval, lalu render hasilnya di folder edit/.",
+        "Fitur editing otomatis: potong filler word ('umm', 'uh', false start), color grade otomatis (warm cinematic / neutral punch / custom ffmpeg chain), audio fade 30ms di setiap cut, dan subtitle burn-in 2-word UPPERCASE yang customizable.",
+        "Multi-animation overlay lewat sub-agent paralel: HyperFrames, Remotion, Manim, atau PIL — tiap animation di-spawn terpisah, lalu di-merge di akhir. Self-evaluation di setiap cut boundary sebelum output ditampilkan ke user.",
+        "Skill portable ke Claude Code, Codex, Hermes, Openclaw, atau agent dengan shell access — dipasang sekali via symlink ke folder skills/, plus dukungan ElevenLabs untuk voiceover opsional. Open source 100%, relevan untuk content creator Indonesia yang mau batch edit video tanpa Premiere.",
+      ],
+    },
   };
 
 // Helper: lookup dengan fallback ke template-generated highlights
