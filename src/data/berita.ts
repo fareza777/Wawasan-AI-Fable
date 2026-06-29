@@ -1051,6 +1051,41 @@ export const berita: Artikel[] = [
       },
     ],
   },
+
+{
+    slug: "kementerian-komunikasi-dan-digital",
+    title: "92% Bisnis Sudah Pakai AI, tapi Produktivitasnya Masih Menjadi Pekerjaan Rumah",
+    excerpt:
+      "Angka adopsi AI di Indonesia menembus 92 persen, namun pemanfaatannya untuk produktivitas nyata masih minim. Membaca data ini tanpa ilusi — dan melihat apa yang sebenarnya harus dikejar.",
+    category: "Analisis",
+    date: "2026-06-30",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Pernyataan Menteri Komunikasi dan Digital Meutya Hafid pada Februari 2026 sempat berhenti di banyak headline: tingkat adopsi AI di Indonesia sudah 92 persen. Bagi yang awam, kedengarannya seperti Indonesia sudah tiba di garis depan transformasi digital. Bagi yang lebih dekat dengan realitas operasional, angka itu lebih sering dibaca sebagai pernyataan niat daripada pencapaian — 92 persen mengadopsi, tapi dipakai untuk apa dan seproduktif apa, adalah pertanyaan yang tidak selesai dijawab oleh angka tunggal.",
+          "Tiga bulan setelah pernyataan itu, pasar sudah bergerak lebih jauh. Google for Startups Accelerator meluluskan 63 startup Indonesia lewat Garuda Spark Innovation Hub, sementara laporan akselerasi AI Liputan6 menyebut adopsi korporasi melonjak 47 persen. Arahnya jelas — Indonesia tidak lagi menjadi penonton adopsi AI. Yang belum jelas adalah bagaimana angka yang memukau itu diterjemahkan menjadi produktivitas yang bisa diukur, terutama di sektor-sektor yang menjadi tulang punggung ekonomi domestik.",
+        ],
+      },
+      {
+        heading: "Membaca angka 92 persen tanpa ilusi",
+        paragraphs: [
+          "Pertama, perlu dibedakan antara 'sudah pernah pakai' dan 'sudah pakai untuk kerja'. Survei yang menghitung adopsi sering memasukkan siapa saja yang pernah membuka ChatGPT atau mencoba Copilot sekali — itu definisi yang sangat longgar. Ketika pertanyaan dipersempit menjadi 'berapa persen tim yang rutin menggunakan AI dalam workflow produksi mingguan', angkanya akan turun drastis. Untuk keperluan editorial, kita perlu membedakan antara adopsi percakapan dan adopsi proses. Yang pertama hampir gratis, yang kedua butuh perubahan cara kerja yang nyata.",
+          "Kedua, lonjakan 47 persen pada adopsi korporasi memberi sinyal yang lebih kuat. Angka itu berasal dari lingkungan yang lebih terstruktur: perusahaan besar dengan tim IT, anggaran pelatihan, dan kebutuhan bisnis konkret. Jika korporasi besar sudah masuk, biasanya dalam dua tahun gelombang akan mengalir ke UMKM dan sektor publik — dan itu yang sedang kita lihat sekarang. Telkom, XL Axiata, dan Indosat sudah memaparkan inisiatif AI for Network dan Network for AI di berbagai forum sepanjang 2026, sehingga infrastruktur untuk adopsi massal sudah disiapkan.",
+          "Ketiga, dan ini yang paling halus, produktivitas AI tidak otomatis terasa di GDP atau kesejahteraan pekerja. Banyak studi global menunjukkan adopsi AI meningkatkan output per pekerja, tapi tidak selalu diterjemahkan menjadi pemerataan. Untuk konteks Indonesia, tantangannya justru di sini: bagaimana memastikan produktivitas yang tercipta tidak hanya dinikmati segelintir perusahaan besar, melainkan sampai ke warung, klinik kecil, dan sekolah pelosok yang juga menghadapi biaya operasional makin mahal.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk UMKM, instansi publik, dan talenta lokal",
+        paragraphs: [
+          "Untuk UMKM, adopsi 92 persen mestinya dibaca sebagai kabar baik yang belum terealisasi. Sebagian besar pemilik usaha kecil kita sudah mendengar tentang AI, bahkan sudah mencoba-coba lewat WhatsApp atau marketplace. Yang belum mereka miliki adalah workflow terstruktur yang bisa menghemat waktu rutin: rekap pesanan, jawaban pertanyaan yang berulang, ringkasan laporan. Disitulah jembatan menuju produktivitas nyata perlu dibangun — lewat pendampingan, template yang siap pakai, dan contoh kasus yang relevan dengan dagangan mereka.",
+          "Untuk instansi publik, kabar bahwa korporasi melonjak 47 persen patut menjadi alarm yang sehat. Ketika sektor swasta sudah lebih cepat bergerak, birokrasi yang lambat akan tertinggal bukan hanya dalam pelayanan, tapi juga dalam menarik talenta. Generasi pekerja baru akan memilih tempat kerja yang sudah melek AI. Instansi yang masih ragu-ragu perlu mulai dari eksperimen kecil yang aman: otomasi dokumen non-rahasia, ringkasan regulasi, atau bot FAQ internal yang self-hosted. Tidak perlu langsung ambisius; yang penting mulai.",
+          "Untuk talenta digital lokal, ekosistem startup yang makin matang — 2.500 startup aktif, 63 lulusan accelerator dalam setahun, Garuda Spark Innovation Hub yang baru dibuka — adalah peluang yang belum pernah seenak ini. Tapi editorial ingin jujur: peluang itu bukan otomatis jatuh ke siapa saja. Yang memenangkan gelombang ini adalah mereka yang bisa menghubungkan kemampuan teknis dengan pemahaman masalah lokal. Developer yang bisa bicara dengan pedagang, dengan perawat puskesmas, dengan guru SD — dan kemudian menerjemahkan kebutuhan itu menjadi alat yang benar-benar dipakai — akan selalu dicari, jauh setelah hype model AI generasi berikutnya mereda.",
+          "Dalam pengujian editorial Wawasan AI, klaim 'sudah adopsi AI' hendaknya diganti dengan pertanyaan yang lebih tajam: adopsi untuk apa, dipakai siapa, menghemat berapa jam per minggu, dan apakah hasilnya sudah terdokumentasi. Kalau jawabannya masih kabur, maka yang perlu dikejar bukan angka adopsi yang lebih tinggi, melainkan produktivitas yang bisa dibuktikan. Indonesia sudah memulai — sekarang yang ditunggu adalah bab berikutnya: dari sekadar memakai menjadi benar-benar diandalkan.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
