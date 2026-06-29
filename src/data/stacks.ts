@@ -976,6 +976,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-28",
   },
+  {
+    slug: "langgraph",
+    name: "LangGraph",
+    tagline: "Framework graph untuk LLM agents dengan kontrol penuh atas state dan checkpointing",
+    tags: ["LangChain", "Open Source", "Agent Framework", "Python/JS"],
+    score: 8.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 9.1 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "LangGraph adalah library open-source berlisensi MIT dari tim LangChain yang membingkai alur kerja agen sebagai graph stateful: setiap node adalah langkah komputasi, setiap edge adalah transisi, dan state global dibagikan ke seluruh node dengan kontrol penuh. Dibanding LCEL atau framework linear lain, LangGraph unggul di workflow multi-agen yang butuh branching, paralelisme, durable execution lewat checkpoint, dan human-in-the-loop yang masuk akal untuk kasus produksi. Menjadi salah satu primitive paling banyak diadopsi di 2025-2026 untuk tim yang ingin orkestrasi agentic serius di Python maupun JavaScript.",
+    pros: [
+      "Model graph stateful yang eksplisit: branching, paralelisme, dan conditional edge lebih mudah dinyatakan dibanding LCEL atau chain linear",
+      "Checkpointing bawaan lewat thread_id membuat agen bisa di-pause, di-resume, dan di-replay — krusial untuk workflow panjang atau human-in-the-loop",
+      "Ekosistem LangChain lengkap: integrasi dengan 600+ model, vector store, loader, dan tool lewat langchain-core tetap usable sebagai node",
+      "Library Python dan JavaScript (LangGraph.js) rilis bersamaan, sehingga tim full-stack bisa pakai primitive yang sama di backend dan frontend",
+      "Open-source MIT murni, self-host gratis — kamu hanya membayar token model pilihan sendiri lewat standard provider API",
+    ],
+    cons: [
+      "Kurva belajar lebih tinggi dibanding LangChain LCEL atau Vercel AI SDK — konsep graph, state, dan reducer butuh waktu untuk terbiasa",
+      "Dokumentasi cookbook dan tutorial end-to-end masih bias ke kasus umum; skenario niche mengharuskan membaca source code di GitHub",
+      "Versi 1.0 baru stabil di awal 2026 setelah dua tahun iterasi cepat — beberapa pola API dari v0.x sudah deprecated dan migrasi kadang nontrivial",
+      "Observability dan deployment production masih mengandalkan LangSmith/LangGraph Platform yang terpisah dari library inti, menambah satu komponen operasional",
+    ],
+    verdict:
+      "Standar de facto untuk orkestrasi agentic yang butuh kontrol state dan durabilitas di Python. Pilih LangGraph kalau agenmu punya workflow non-linear; pilih LangChain LCEL kalau chain linear sudah cukup; pilih Mastra kalau kamu di ekosistem TypeScript murni.",
+    body: [
+      "Selama 2023-2024, banyak developer yang membangun agen AI di Python menemukan keterbatasan pola LangChain Expression Language (LCEL) ketika workflow-nya berhenti linear. Begitu alur kerja menuntut branching, paralelisme, atau kemampuan untuk pause dan resume dari checkpoint yang persisten, chain sederhana menjadi tidak cukup. Tim LangChain menjawab kebutuhan itu dengan LangGraph, library open-source berlisensi MIT yang memodelkan agen sebagai stateful graph: setiap node adalah fungsi Python atau TypeScript yang menerima dan mengembalikan state, setiap edge adalah transisi bersyarat, dan satu state global dibagikan ke semua node dengan reducer yang eksplisit. Pola ini terinspirasi dari Pregel, sistem graph terdistribusi Google, dan actor model dari toolkit Akka, tapi dibungkus dengan API Python dan JavaScript yang terasa natural untuk developer LLM. Setelah dua tahun iterasi cepat, versi 1.0 akhirnya stabil di awal 2026 dan mulai menjadi default bagi tim yang membangun sistem agentic serius.",
+      "Di 2026, empat fitur LangGraph paling relevan untuk kasus produksi. Pertama, model graph stateful-nya yang eksplisit — alur kerja non-linear dengan conditional edge (mis. kalau hasil retrieval tidak relevan, lempar ke node fallback) dan paralelisme (jalankan researcher dan code writer secara bersamaan lalu gabungkan) lebih mudah dinyatakan dibanding LCEL atau tool-call loop. Kedua, checkpointing bawaan lewat thread_id dan checkpointer adapter (MemorySaver untuk testing, Sqlite/Postgres untuk produksi) — agen bisa di-pause, di-resume, dan di-replay dari titik mana pun, yang krusial untuk workflow panjang atau human-in-the-loop yang menunggu approval manusia berjam-jam kemudian. Ketiga, ekosistem LangChain lengkap tetap usable sebagai node — semua 600+ integrasi model, vector store, loader, dan tool dari langchain-core bisa dipanggil langsung dari node graph, sehingga tim tidak perlu menulis ulang integrasi. Keempat, library Python dan JavaScript (LangGraph.js) rilis bersamaan, memungkinkan tim full-stack membangun agentic workflow yang sama di backend dan frontend dengan primitive identik.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, kurva belajar lebih tinggi dibanding LCEL atau Vercel AI SDK — konsep graph, state, reducer, dan channel butuh waktu untuk terbiasa, dan developer yang datang dari background non-distributed-systems mungkin akan merasa abstraksinya terlalu eksplisit. Kedua, dokumentasi cookbook dan tutorial end-to-end masih bias ke kasus umum seperti chatbot dengan retrieval atau RAG agentic; untuk skenario niche seperti multi-tenant routing atau game-AI agent, developer akan lebih sering membaca source code di GitHub daripada mengikuti tutorial. Ketiga, versi 1.0 baru stabil di awal 2026 setelah dua tahun iterasi cepat dengan breaking change di API — beberapa pola dari v0.x sudah deprecated dan migrasi kadang nontrivial, terutama untuk tim yang terlanjur commit ke graph definition lama. Keempat, observability dan deployment production masih mengandalkan LangSmith dan LangGraph Platform yang dijual terpisah dari library inti, sehingga menambah satu komponen operasional di stack kamu meski tidak wajib dipakai untuk development lokal.",
+      "Untuk pengguna dan tim di Indonesia, posisi LangGraph menarik di beberapa segmen spesifik. Pertama, karena sepenuhnya open-source dan self-hostable, biaya platformnya nol — kamu hanya membayar token model pilihan sendiri (Claude, GPT, Gemini, DeepSeek, atau model lokal lewat Ollama), berbeda dengan platform agentic proprietary yang mengenakan biaya per eksekusi atau per workflow. Kedua, untuk startup yang ingin bangun produk agentic serius tanpa vendor lock-in sejak awal, kombinasi LangGraph + Postgres checkpointer + model API pilihan adalah fondasi yang sangat solid. Ketiga, untuk perusahaan dengan compliance requirement ketat (fintech, healthtech, atau vendor pemerintah), opsi self-host LangGraph di server internal dengan logging yang mengalir ke stack SIEM internal adalah kombinasi yang solid tanpa harus mengirim data ke cloud. Keempat, diskusi di GitHub Discussions, Discord LangChain, dan meetup komunitas seperti Jakarta AI Meetup dan Python Indonesia mulai mengangkat LangGraph untuk workflow RAG dan multi-agen, sehingga mencari second opinion atau contoh integrasi spesifik kawasan ini tidak sesulit sebelumnya. Standar harga hardware: development lokal bisa di laptop biasa dengan model via API, sedangkan deployment produksi dengan Postgres checkpointer di VM Rp 2-5 juta per bulan atau di Kubernetes cluster enterprise yang lebih besar. Untuk evaluasi, developer Python Indonesia bisa pip install langgraph dan coba quickstart dari dokumentasi resmi untuk proof of concept dalam satu sore sebelum commit ke arsitektur produksi yang lebih serius.",
+    ],
+    link: "https://langchain-ai.github.io/langgraph/",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-29",
+  },
 ];
 
 export function getStack(slug: string) {

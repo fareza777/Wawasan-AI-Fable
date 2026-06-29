@@ -1,0 +1,152 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "29 Juni 2026",
+  "period": {
+    "date": "2026-06-29",
+    "label": "29 Juni 2026",
+    "path": "/repo/daily/2026/06/29"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-06-29T00:05:35.624Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "hasaneyldrm/exercises-dataset",
+      "owner": "hasaneyldrm",
+      "repo": "exercises-dataset",
+      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
+      "githubUrl": "https://github.com/hasaneyldrm/exercises-dataset",
+      "trendshiftUrl": "https://trendshift.io/repositories/66951",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-03-18T03:07:18Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "vercel-labs/deepsec",
+      "owner": "vercel-labs",
+      "repo": "deepsec",
+      "description": "Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents",
+      "githubUrl": "https://github.com/vercel-labs/deepsec",
+      "trendshiftUrl": "https://trendshift.io/repositories/29235",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-04-30T16:16:11Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "XxHuberrr/Mineradio",
+      "owner": "XxHuberrr",
+      "repo": "Mineradio",
+      "description": "一款以电影镜头、粒子视觉和歌词舞台为核心的沉浸式音乐播放器。",
+      "githubUrl": "https://github.com/XxHuberrr/Mineradio",
+      "trendshiftUrl": "https://trendshift.io/repositories/66115",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-06-02T12:50:48Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "simplex-chat/simplex-chat",
+      "owner": "simplex-chat",
+      "repo": "simplex-chat",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+      "githubUrl": "https://github.com/simplex-chat/simplex-chat",
+      "trendshiftUrl": "https://trendshift.io/repositories/11898",
+      "language": "Haskell",
+      "topics": [],
+      "dateCreated": "2019-12-21T09:50:09Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ripienaar/free-for-dev",
+      "owner": "ripienaar",
+      "repo": "free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "githubUrl": "https://github.com/ripienaar/free-for-dev",
+      "trendshiftUrl": "https://trendshift.io/repositories/1871",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2015-03-18T21:06:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "bikini/exploitarium",
+      "owner": "bikini",
+      "repo": "exploitarium",
+      "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz",
+      "githubUrl": "https://github.com/bikini/exploitarium",
+      "trendshiftUrl": "https://trendshift.io/repositories/65837",
+      "language": "Python",
+      "topics": [
+        "Pentesting"
+      ],
+      "dateCreated": "2026-06-23T05:14:11Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "DeusData/codebase-memory-mcp",
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "githubUrl": "https://github.com/DeusData/codebase-memory-mcp",
+      "trendshiftUrl": "https://trendshift.io/repositories/23635",
+      "language": "C",
+      "topics": [
+        "AI coding assistant",
+        "AI infrastructure",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-24T22:01:00Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "xbtlin/ai-berkshire",
+      "owner": "xbtlin",
+      "repo": "ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework   built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "githubUrl": "https://github.com/xbtlin/ai-berkshire",
+      "trendshiftUrl": "https://trendshift.io/repositories/63696",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Fintech"
+      ],
+      "dateCreated": "2026-04-07T11:19:51Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "altic-dev/FluidVoice",
+      "owner": "altic-dev",
+      "repo": "FluidVoice",
+      "description": "FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. One ⭐ takes us a long way :))",
+      "githubUrl": "https://github.com/altic-dev/FluidVoice",
+      "trendshiftUrl": "https://trendshift.io/repositories/16601",
+      "language": "Swift",
+      "topics": [
+        "AI voice"
+      ],
+      "dateCreated": "2025-09-21T17:35:02Z"
+    }
+  ]
+}
