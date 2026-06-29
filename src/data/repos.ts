@@ -1451,6 +1451,56 @@ export const repos: Review[] = [
     date: "2026-06-29",
     updatedAt: "2026-06-29",
   },
+{
+    slug: "agency-agents",
+    name: "Agency Agents",
+    tagline: "Koleksi 150+ persona AI spesialis siap pakai lintas divisi",
+    tags: ["AI Agent", "Multi-Agent", "Persona", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Agency Agents dari msitarzewski adalah salah satu repositori AI agent paling ramai di GitHub dengan lebih dari 118 ribu bintang: kumpulan persona AI spesialis yang membagi pekerjaan ala agensi digital — engineering, desain, paid media, sales, marketing, hingga product management — menjadi lebih dari 150 agen siap pakai yang bisa dipasang ke Claude Code, Cursor, Codex, Gemini CLI, dan banyak lagi.",
+    highlights: [
+      "Roster 150+ agen spesialis yang terbagi dalam 16 divisi: engineering, design, paid media, sales, marketing, product, operations, support, legal, finance, HR, security, research, data, content, dan education",
+      "Setiap agen punya identitas, kepribadian, dan gaya komunikasi unik — bukan template prompt generik",
+      "Dokumen per agen lengkap dengan misi, workflow, deliverable konkret, dan metrik keberhasilan",
+      "App native untuk macOS, Linux, dan Windows yang tinggal klik untuk memasang agen ke Claude Code, Cursor, Codex, Gemini CLI, Osaurus, dan lain-lain",
+      "Skrip instalasi CLI interaktif dengan filter per divisi dan agen tertentu, plus deteksi otomatis tools yang sudah terpasang",
+      "Konversi otomatis ke format 14 tools populer: Claude Code, Cursor, GitHub Copilot, OpenClaw, OpenCode, Codex, Aider, Windsurf, Kimi Code, Antigravity, Gemini CLI, Osaurus, Hermes, dan Qwen",
+      "Lisensi MIT sehingga bebas dipakai untuk eksperimen pribadi, komersial, dan kontribusi ulang",
+      "Pertumbuhan komunitas yang konsisten dengan rilisan rutin dan kontribusi dari berbagai latar belakang",
+    ],
+    pros: [
+      "Cakupan persona yang sangat luas — satu repositori untuk banyak peran berbeda, hemat waktu menyusun prompt dari nol",
+      "Onboarding rendah hambatan lewat app desktop atau skrip interaktif, cocok untuk pengguna non-teknis yang ingin coba AI agent",
+      "Dokumen per agen ditulis dengan struktur konsisten, sehingga mudah diadaptasi ke konteks lokal atau workflow internal",
+      "Komunitas dan momentum yang sangat kuat, indikasi bahwa repositori ini akan terus dipelihara dan diperluas",
+    ],
+    cons: [
+      "Sebagian besar agen menggunakan Claude Code atau tool serupa sebagai runtime utama — pengguna di ekosistem lain perlu konversi lebih dulu",
+      "Kualitas persona tidak selalu setara; beberapa divisi (engineering, design) lebih matang dibanding yang lain",
+      "Karena jumlah agen sangat banyak, memilih kombinasi yang tepat untuk kasus penggunaan tertentu butuh eksplorasi awal",
+    ],
+    verdict:
+      "Repositori wajib bookmark bagi siapa pun yang sudah atau ingin mulai memakai AI agent untuk pekerjaan harian. Bukan sekadar kumpulan prompt, tapi fondasi komunitas yang bisa dipelajari, diadopsi sebagian, atau dikontribusikan ulang.",
+    body: [
+      "Di 2026, tren AI agent bergeser dari membangun satu agent serba bisa menjadi merangkai banyak agent dengan peran spesifik. Agency Agents menangkap tren itu dengan cara yang sangat pragmatis: menyediakan roster lebih dari 150 persona siap pakai yang membagi pekerjaan ala agensi digital — mulai dari frontend developer, UX researcher, PPC strategist, hingga pipeline analyst dan brand guardian. Setiap agen ditulis sebagai dokumen Markdown yang merinci misi, kepribadian, workflow, dan deliverable yang diharapkan, sehingga tidak terasa seperti prompt generik yang disalin dari tutorial.",
+      "Yang membuat proyek ini menonjol adalah luasnya cakupan. Pada saat banyak repositori agent berfokus pada satu domain — coding, riset, atau otomasi — Agency Agents mencoba mencakup hampir semua peran yang lazim ditemukan di tim produk dan marketing. Pendekatan ini jelas bukan tanpa kompromi: kualitas tiap agen bervariasi, dan beberapa divisi (terutama engineering dan design) jauh lebih matang dibanding yang lain. Tetap saja, sebagai titik awal untuk bereksperimen dengan peran-peran baru, nilai praktisnya sangat tinggi.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah waktu onboarding yang rendah. Pengguna Claude Code cukup menjalankan satu skrip untuk memasang semua agen engineering, sementara pengguna Cursor bisa memilih beberapa agen spesifik lewat app desktop. Bagi pengguna di Indonesia yang ingin menambahkan kemampuan AI ke workflow tim tanpa harus menulis prompt engineering dari nol, repositori ini menurunkan ambang masuk secara signifikan — terutama untuk UMKM dan tim kecil yang tidak punya headcount khusus untuk mengelola agent.",
+      "Konteks regional: dokumentasi dan contoh prompt masih sangat berorientasi ekosistem global dan pasar berbahasa Inggris. Pengguna di Indonesia yang ingin menyesuaikan persona untuk konteks lokal — bahasa, gaya komunikasi, atau kasus penggunaan khas industri lokal — perlu melakukan adaptasi sendiri. Namun karena setiap agen berbentuk dokumen Markdown yang mudah diedit, kustomisasi ini relatif ringan. Secara keseluruhan, Agency Agents adalah salah satu repositori AI agent paling representatif di 2026 dan layak masuk daftar referensi utama komunitas.",
+    ],
+    link: "https://github.com/msitarzewski/agency-agents",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-06-30",
+    updatedAt: "2026-06-30",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
