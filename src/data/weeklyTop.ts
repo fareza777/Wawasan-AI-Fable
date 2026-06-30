@@ -683,6 +683,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Skill portable ke Claude Code, Codex, Hermes, Openclaw, atau agent dengan shell access — dipasang sekali via symlink ke folder skills/, plus dukungan ElevenLabs untuk voiceover opsional. Open source 100%, relevan untuk content creator Indonesia yang mau batch edit video tanpa Premiere.",
       ],
     },
+    "0xNyk/council-of-high-intelligence": {
+      description:
+        "Skill multi-agen untuk Claude Code/Codex yang punya 18 persona AI (Socrates, Feynman, Kahneman, Torvalds, dll) untuk musyawarahjawabkan keputusan sulit dengan voting lintas provider LLM — bukan satu model nebak, tapi deliberasi multi-perspektif.",
+      highlights: [
+        "Konsep 'council of high intelligence': 18 persona dengan gaya berpikir berbeda (Aristoteles=Socratic, Kahneman=behavioral econ, Torvalds=engineering blunt, Aurelius=stoic) — gabungan 'polarity pairs' yang sengaja saling menantang supaya keluar dari echo chamber satu model.",
+        "Multi-provider auto-routing: anggota council otomatis disebar ke Claude, OpenAI Codex, Gemini CLI, dan Ollama lokal — jadi dapat 'model diversity' sungguhan, bukan cuma costume change di satu backend.",
+        "Mode cepat: --quick (3 anggota), --duo (2 polaritas), --triad (3 panel fokus), sampai execution-lean (5 panel Torvalds/Feynman/Sun Tzu/Aurelius/Ada untuk ship-now decision) — ada panel untuk strategi launch, stability, dan review kode.",
+        "Setup satu baris via install.sh lalu panggil /council di Claude Code, atau npx skills add 0xNyk/council-of-high-intelligence untuk client lain — relevan untuk founder/CTO Indonesia yang ingin second-opinion dari banyak perspektif sebelum commit keputusan arsitektur besar.",
+      ],
+    },
+    "google/agents-cli": {
+      description:
+        "CLI resmi Google untuk build, evaluasi, dan deploy agen AI di Google Cloud — disuntikkan sebagai skill ke Claude Code, Codex, atau Gemini CLI, jadi coding agent kamu langsung tahu cara scaffold ADK, deploy ke Agent Runtime/Cloud Run, dan setup observability.",
+      highlights: [
+        "Pendekatan 'Build Agents with Agents': sekali install (uvx google-agents-cli setup), coding agent kamu dapat 7 skill (workflow, ADK API, scaffold, eval, deploy, publish, observability) — sehingga prompt natural language seperti 'buat travel expense agent dengan approval rule $50' langsung jadi proyek ADK yang jalan.",
+        "Bundle evaluasi yang serius sebelum deploy: agents-cli eval run + eval compare bisa jalankan dataset, hitung trajectory scoring, dan bandingin dua run — bukan demo, melainkan pengujian yang siap untuk production gate.",
+        "Jalur deploy otomatis: satu perintah agents-cli create finance-agent -y --deployment-target agent_runtime sudah inject IaC, set up CI/CD, dan push ke Agent Runtime/Cloud Run/GKE — mempersingkat 'create to production' dari hitungan minggu ke hitungan jam.",
+        "Bisa dipakai dua mode: lewat coding agent (Claude Code, Codex, Antigravity) atau langsung sebagai CLI di terminal — Python 3.11+ + uv + Node.js saja. Didukung penuh ADK Python, dokumentasi di google.github.io/agents-cli, relevan buat tim Indonesia yang target enterprise compliance.",
+      ],
+    },
+    "usestrix/strix": {
+      description:
+        "Open-source AI hacker agent yang jalan langsung di Docker sandbox — multi-agen yang menguji, mengeksploitasi, dan memvalidasi kerentanan aplikasi web/API (IDOR, SQLi, XSS, SSRF, broken access control) lewat HTTP proxy, browser, dan Python runtime, lengkap dengan PoC per temuan.",
+      highlights: [
+        "Bukan SAST, tapi runtime pentest: Strix menjalankan aplikasi binerimu di sandbox asli, lalu agennya menyerang endpoint sungguhan — setiap temuan diverifikasi dengan proof-of-concept yang reproducible, bukan 'kemungkinan SQL injection' yang belum tentu exploitable.",
+        "Multi-agent graph of agents: specialized agents untuk access control, injection, SSRF, business logic, dan infra — jalan paralel dan saling berbagi temuan, jadi satu scan bisa cover attack surface yang biasanya butuh beberapa tool berbeda.",
+        "Toolkit lengkap untuk hacking simulasi: HTTP proxy untuk manipulasi request/response, browser automation multi-tab untuk test XSS/CSRF/auth flow, Python runtime untuk tulis exploit custom, plus OSINT/reconnaissance — semua lewat CLI satu perintah (strix --target ./app-directory).",
+        "Integrasi CI/CD: jalankan di GitHub Actions/GitLab untuk block PR yang punya kerentanan tinggi sebelum merge, plus opsi Strix Cloud (one-click autofix jadi ready-to-merge PR). Open source Apache-2.0, 26k★, relevan untuk dev/security tim Indonesia yang perlu pentest cepat tanpa nunggu jadwal konsultan.",
+      ],
+    },
   };
 
 // Helper: lookup dengan fallback ke template-generated highlights
