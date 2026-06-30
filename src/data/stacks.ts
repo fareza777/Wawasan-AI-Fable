@@ -1016,6 +1016,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-29",
   },
+  {
+    slug: "flux",
+    name: "Flux",
+    tagline: "Image generator open-weight dari Black Forest Labs, kualitas SOTA di kelasnya",
+    tags: ["Black Forest Labs", "Open Weight", "Image Gen", "SOTA"],
+    score: 8.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 9.4 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Flux adalah keluarga model image generation open-weight dari Black Forest Labs (BFL), tim yang sebelumnya membangun Stable Diffusion, yang sejak rilis perdananya Agustus 2024 menjadi salah satu tolok ukur kualitas gambar AI. Di 2026, lineup lengkapnya mencakup FLUX.1 Schnell (Apache 2.0, cepat), FLUX.1 Dev (open-weight non-komersial), FLUX.1 Pro/Kontext (API komersial), dan generasi terbaru FLUX.2 dengan varian klein, flex, pro, dan max. Keunggulan utama Flux dibanding kompetitor seperti Midjourney atau DALL-E 3 adalah prompt following yang lebih presisi, rendering teks dalam gambar yang jauh lebih bersih, anatomi manusia yang konsisten, dan fleksibilitas deployment lewat API BFL resmi atau provider pihak ketiga seperti Replicate, fal, Together AI, dan Hugging Face Inference.",
+    pros: [
+      "Kualitas gambar SOTA di banyak benchmark independen, terutama untuk prompt following, rendering teks, dan anatomi manusia yang konsisten",
+      "Open-weight untuk varian Dev dan Schnell — developer bisa self-host, fine-tune, dan modifikasi sesuai kebutuhan",
+      "Ekosistem multi-provider yang matang: API resmi BFL, Replicate, fal, Together AI, dan Hugging Face Inference memberikan pilihan harga dan latensi",
+      "Harga per gambar kompetitif: FLUX.1 Pro mulai $0.04, FLUX.2 Pro mulai $0.03, FLUX.2 klein 4B mulai $0.014 untuk volume tinggi",
+      "Playground gratis di playground.bfl.ai untuk uji coba prompt tanpa registrasi dan tanpa kartu kredit",
+    ],
+    cons: [
+      "Self-host varian Dev/Pro butuh GPU 24GB VRAM ke atas (RTX 4090, A5000, atau cloud A100/H100), modal hardware yang signifikan",
+      "Varian open-weight (Dev, Schnell) masih di bawah Pro/Max dari sisi kualitas detail halus dan 4K output",
+      "Tidak ada consumer-facing web app resmi yang sekomplit Midjourney atau Adobe Firefly — playground BFL fiturnya minimalis",
+      "Dokumentasi API masih di fase transisi antara FLUX.1 dan FLUX.2 — beberapa endpoint lama deprecated dan migrasi butuh penyesuaian",
+    ],
+    verdict:
+      "Standar de facto untuk image generation open-weight di 2026 dengan kualitas yang menyaingi Midjourney. Pilih Flux kalau kamu butuh kontrol penuh lewat open-weight atau self-host; pilih Midjourney kalau prioritas estetika out-of-the-box dan community showcase; pilih DALL-E 3 kalau ekosistem OpenAI sudah jadi default di stack kamu.",
+    body: [
+      "Flux adalah keluarga model image generation yang dikembangkan Black Forest Labs (BFL), startup di Freiburg, Jerman, yang didirikan oleh beberapa peneliti senior di balik arsitektur Stable Diffusion asli. Rilis pertama FLUX.1 pada Agustus 2024 langsung menarik perhatian komunitas AI image generation karena dua hal: prompt following yang jauh lebih presisi dibanding Stable Diffusion XL atau SD3, dan rendering teks di dalam gambar yang akhirnya bisa dibaca dengan baik — kelemahan kronis yang selalu dikeluhkan pengguna DALL-E dan Midjourney. Sejak itu, BFL memperluas lineup menjadi empat varian FLUX.1 (Schnell, Dev, Pro, Kontext) dan di akhir 2025 merilis generasi baru FLUX.2 dengan arsitektur paralel diffusion transformer yang lebih scalable. Di 2026, Flux menjadi salah satu dari dua atau tiga model yang paling sering disebut dalam diskusi 'model image gen terbaik' bersama Midjourney v7 dan Imagen 3 Google, dengan pembeda utama bahwa varian open-weight-nya memungkinkan self-host dan fine-tune — sesuatu yang tidak ditawarkan kompetitor proprietary.",
+      "Di 2026, empat fitur Flux paling relevan untuk evaluator dan developer. Pertama, kualitas gambar SOTA di banyak benchmark — skor ELO internal BFL menempatkan FLUX.1 Pro di kisaran 1060, tertinggi di antara text-to-image model pada awal 2026, dengan FLUX.2 Max memperkuat posisi di tier tertinggi lewat output 4MP dan konsistensi karakter yang lebih baik untuk serial visual. Kedua, open-weight untuk varian Dev dan Schnell — file bobot tersedia di Hugging Face dengan lisensi Apache 2.0 (Schnell) dan FLUX.1 Dev Non-Commercial License (Dev), memungkinkan developer melakukan fine-tune dengan LoRA, DreamBooth, atau textual inversion untuk gaya atau subjek spesifik. Ketiga, ekosistem multi-provider yang sudah matang — selain API resmi di bfl.ai, model Flux juga tersedia di Replicate, fal, Together AI, Hugging Face Inference, dan AWS Bedrock, memberikan opsi harga (mulai $0.014 per gambar di FLUX.2 klein 4B) dan latensi yang berbeda sesuai kebutuhan. Keempat, playground gratis di playground.bfl.ai yang bisa dipakai untuk uji coba prompt tanpa registrasi dan tanpa kartu kredit, ideal untuk quick evaluation sebelum commit ke API berbayar.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, self-host varian Dev/Pro butuh GPU 24GB VRAM ke atas — kartu consumer seperti RTX 4090 atau workstation A5000 sudah cukup untuk inference, tapi training LoRA atau fine-tune DreamBooth biasanya butuh A100/H100 80GB yang hanya realistic lewat layanan cloud GPU. Kedua, varian open-weight (Dev, Schnell) berada satu tingkat di bawah Pro/Max dari sisi kualitas detail halus, konsistensi anatomi pada subjek kompleks, dan kemampuan output 4K — untuk use case profesional seperti kebutuhan agensi periklanan atau studio desain, gap ini masih terasa. Ketiga, tidak ada consumer-facing web app resmi yang sekomplit Midjourney Discord atau Adobe Firefly — playground BFL fiturnya minimalis dan tidak mendukung image editing iteratif yang nyaman, sehingga workflow profesional biasanya berakhir di ComfyUI, A1111, atau platform pihak ketiga. Keempat, dokumentasi API masih di fase transisi antara FLUX.1 dan FLUX.2 — beberapa endpoint lama sudah deprecated dan migrasi ke FLUX.2 kadang memerlukan penyesuaian kode, terutama untuk aplikasi yang sudah di-produksi di 2024-2025.",
+      "Untuk pengguna dan tim di Indonesia, posisi Flux menarik di beberapa segmen spesifik. Pertama, varian open-weight Dev dan Schnell memungkinkan self-host di server lokal atau VPS GPU — relevan untuk studio desain atau agensi yang menangani materi klien sensitif dan tidak boleh keluar dari yurisdiksi, atau untuk riset akademik di kampus dengan GPU server yang sudah ada. Kedua, harga per gambar yang sangat rendah di tier klein ($0.014 per gambar, sekitar Rp 230 dengan kurs Rp 16.500 per dolar) membuat Flux masuk akal untuk workflow volume tinggi seperti content marketing, ilustrasi artikel, atau asset e-commerce — biaya untuk 1000 gambar hanya sekitar Rp 230 ribu, jauh di bawah harga ilustrasi stok atau commissioning desainer. Ketiga, kualitas rendering teks di Flux sangat membantu untuk UMKM yang butuh materi promosi berbahasa Indonesia — banner, poster, atau konten media sosial dengan headline dalam Bahasa Indonesia yang tetap terbaca jelas, tidak jadi huruf acak-acakan seperti yang sering terjadi di generator lain. Keempat, untuk startup yang membangun produk image generation, API BFL atau Replicate bisa diintegrrasi dalam hitungan jam, dan lisensi open-weight memberikan jalan keluar untuk transisi ke self-host ketika volume sudah membesar dan biaya per gambar jadi tidak ekonomis. Standar operasional: freelancer atau kreator konten bisa mulai dari playground gratis atau Replicate pay-as-you-go dengan modal di bawah $10 untuk eksplorasi; studio kecil dengan workload rutin biasanya berlangganan Replicate atau fal di tier $20-50 per bulan; agensi atau platform dengan traffic tinggi akan menemukan harga enterprise BFL di kisaran custom quote yang biasanya lebih efisien dari biaya self-host GPU. Untuk evaluasi, developer Indonesia bisa clone repo ComfyUI-Flux atau diffusers dari Hugging Face dan coba di GPU lokal atau Colab gratis untuk proof of concept sebelum commit ke API production.",
+    ],
+    link: "https://bfl.ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-06-30",
+  },
 ];
 
 export function getStack(slug: string) {
