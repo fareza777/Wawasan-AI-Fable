@@ -1086,6 +1086,46 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "openai-hingga-anthropic-rapatkan-barisan-lawan-model-ai-china",
+    title: "OpenAI, Anthropic, dan Google Rapatkan Barisan Lawan Model AI China: Apa yang Sebenarnya Terjadi",
+    excerpt:
+      "Tiga raksasa AI Amerika akhirnya bekerja sama lewat Frontier Model Forum untuk mendeteksi praktik distilasi adversarial dari China. Untuk pengguna Indonesia, ini lebih relevan dari yang terlihat di headline.",
+    category: "Berita",
+    date: "2026-07-01",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selama bertahun-tahun, OpenAI, Anthropic, dan Google bersaing ketat memperebutkan posisi model AI teratas di pasar global. Namun pada awal April 2026, ketiganya muncul dengan pengumuman yang jarang terjadi di Silicon Valley: mereka resmi bekerja sama lewat Frontier Model Forum untuk berbagi data deteksi praktik 'distilasi adversarial' yang dilakukan oleh rival mereka asal China, terutama DeepSeek.",
+          "Bekerja sama di level ini bukan hal kecil. Tiga perusahaan yang secara terbuka bersaing memperebutkan developer dan pelanggan korporat kini berbagi intelijen teknis tentang serangan yang ditujukan ke produk mereka. Tujuannya spesifik: mengidentifikasi siapa yang sedang menyedot kemampuan model frontier lewat jutaan query API untuk melatih model tiruan dengan biaya jauh lebih murah. Dalam lanskap AI yang biasanya didominasi oleh kabar rilis dan demo, ini adalah episode 'spionase korporat' yang relatif baru.",
+        ],
+      },
+      {
+        heading: "Apa sebenarnya distilasi adversarial itu?",
+        paragraphs: [
+          "Distilasi, dalam bentuk yang sah, adalah teknik umum: melatih model kecil dengan output dari model besar. Hampir semua laboratorium melakukannya untuk membuat varian yang lebih cepat dan lebih murah. Yang menjadi masalah adalah versi 'adversarial'-nya: mengguyur API GPT, Claude, atau Gemini dengan jutaan query yang dirancang khusus untuk mengekstrak pola penalaran dan pengetahuan model frontier, lalu menggunakan output itu sebagai data latihan untuk model pesaing.",
+          "Hasilnya bisa meniru dua sampai tiga tahun riset dan miliaran dolar komputasi hanya dalam hitungan minggu. Textbook case adalah DeepSeek R1 yang rilis Januari 2025: performanya mendekati model frontier Amerika dengan biaya latihan yang jauh lebih kecil. Sejak saat itu, distilasi adversarial menjadi salah satu kekhawatiran utama laboratorium Silicon Valley. OpenAI sendiri menuduh DeepSeek mencoba 'menikmati hasil tanpa berkontribusi pada kemampuan yang dikembangkan oleh OpenAI dan laboratorium Amerika lainnya' dalam memo resmi mereka ke Kongres.",
+        ],
+      },
+      {
+        heading: "Kenapa pengguna Indonesia perlu ikut memperhatikan",
+        paragraphs: [
+          "Pada permukaan, ini cerita tentang perebutan sumber daya AI antar negara adidaya. Tapi jika dipakai lebih jernih, ada beberapa implikasi konkret untuk ekosistem teknologi Indonesia. Pertama, akses ke model frontier dari laboratorium Amerika bisa makin terbatas di pasar tertentu. Jika Washington merespons dengan kerangka ekspor yang lebih ketat, beberapa varian model yang sebelumnya bisa diakses developer Indonesia lewat API bisa hilang atau naik harga signifikan dalam beberapa bulan ke depan.",
+          "Kedua, dan ini yang lebih strategis, distilasi adalah salah satu alasan model open-weight seperti Qwen dan DeepSeek menjadi begitu matang dalam dua tahun terakhir. Model-model itu pada dasarnya belajar dari output model frontier. Bagi komunitas developer Indonesia yang membangun di atas model open-weight, ini kabar baik sekaligus peringatan: kemampuan yang tersedia hari ini bisa menyempit jika tekanan geopolitik meningkat, dan kemampuan untuk mengevaluasi, menyetel, dan meng-host model sendiri akan semakin penting.",
+          "Ketiga, fenomena ini memperlihatkan bahwa pada akhirnya, AI bukan hanya soal siapa punya model paling kuat, tapi siapa yang punya arsitektur paling tahan goncangan. Untuk startup dan korporasi Indonesia yang sedang menimbang kontrak API, ini saat yang tepat untuk memastikan strategi AI tidak bergantung pada satu provider saja. Pola multi-model, model lokal untuk workload sensitif, dan fallback workflow sudah bukan nice-to-have; itu prasyarat dasar.",
+        ],
+      },
+      {
+        heading: "Yang perlu dicermati enam sampai dua belas bulan ke depan",
+        paragraphs: [
+          "Ada beberapa indikator yang layak dipantau. Pertama, apakah kerja sama lewat Frontier Model Forum melebar ke bentuk yang lebih operasional, misalnya shared blacklist IP atau blokir otomatis untuk query yang mencurigakan. Jika sampai sejauh itu, beberapa skenario penggunaan model tertentu di Indonesia bisa ikut terdampak.",
+          "Kedua, apakah pemerintah AS mengeluarkan kerangka ekspor yang lebih jelas untuk model AI, mirip dengan yang sudah diterapkan untuk chip grafis Nvidia. Ketiga, apakah model open-weight dari China makin matang di kemampuan agentik atau malah kena dampak embargo hardware. Keempat, apakah muncul konsorsium regional yang menyediakan akses model frontier dengan harga lebih bersahabat untuk negara berkembang - dan apakah Indonesia ada di meja ketika itu terjadi.",
+          "Dalam pengujian editorial Wawasan AI, cerita tentang distilasi adversarial ini bukan kabar gembira atau kabar buruk yang sederhana. Ini pengingat bahwa kemampuan teknis dan kemampuan geopolitik sekarang saling tempel. Untuk pengguna dan developer di Indonesia, implikasi praktisnya baru akan terasa dalam hitungan bulan, tapi konsekuensi mengabaikannya bisa lebih mahal dari yang dibayangkan. Yang bisa dilakukan sekarang: diversifikasi model, investasi pada kemampuan host sendiri untuk workload penting, dan menjadikan literasi AI bukan hanya soal 'cara pakai', tapi juga 'siapa bermain di belakang layar'.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
