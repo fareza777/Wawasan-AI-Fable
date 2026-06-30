@@ -1501,6 +1501,58 @@ export const repos: Review[] = [
     updatedAt: "2026-06-30",
     featured: false,
   },
+  {
+    slug: "agent-reach",
+    name: "Agent Reach",
+    tagline:
+      "CLI serba bisa untuk memberi agen AI kemampuan membaca dan mencari di Twitter, Reddit, YouTube, dan banyak platform lain tanpa biaya API",
+    tags: ["AI Agent", "CLI", "Python", "Web Scraping"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Agent Reach adalah CLI sumber terbuka yang berfungsi sebagai jembatan antara agen AI dan platform-platform media sosial serta forum diskusi yang biasanya sulit diakses tanpa API berbayar. Dengan hampir 47 ribu bintang di GitHub dan pertumbuhan yang konsisten, proyek ini menarik karena menurunkan ambang eksperimen riset sosial menjadi sekadar instalasi satu paket: tidak perlu mendaftar developer account, tidak perlu mengelola API key, dan tidak ada tagihan per-request.",
+    highlights: [
+      "Satu CLI untuk membaca dan mencari di Twitter, Reddit, YouTube, GitHub, Bilibili, dan XiaoHongShu - tanpa API key, tanpa biaya per-request, dan tanpa proses registrasi developer",
+      "Dirancang untuk dipasangkan ke agen AI seperti Claude Code, Cursor, dan Codex sebagai tool tambahan: agen bisa menelusuri, merangkum, dan menanyakan data sosial lewat antarmuka yang konsisten",
+      "Dukungan pencarian lintas platform dengan filter sederhana: kata kunci, rentang waktu, dan batasan jumlah hasil, sehingga alur riset sosial bisa direplikasi otomatis",
+      "Output terstruktur yang mudah diolah lebih lanjut: hasil scrape bisa langsung diteruskan ke prompt atau pipeline analisis tanpa harus menulis parser sendiri",
+      "Konfigurasi berbasis CLI yang ringan: cukup install lewat pip atau uv, lalu panggil sebagai sub-command dari terminal atau dari dalam loop agent",
+      "Lisensi MIT, sehingga bebas dipakai untuk eksperimen pribadi, riset akademis, hingga prototype internal di perusahaan kecil",
+      "Aktif dipelihara dengan rilis rutin: repositori diperbarui mengikuti perubahan struktur halaman target, sehingga pengguna tidak perlu memikirkan pemeliharaan scraper sendiri",
+      "Komunitas yang tumbuh cepat dengan hampir 47 ribu bintang dan lebih dari 3.700 fork - indikasi kuat bahwa pendekatan tanpa API ini menarik bagi banyak praktisi AI",
+      "Cocok untuk alur riset yang membutuhkan data real-time dari platform yang tidak menyediakan API publik resmi, tanpa harus bergantung pada layanan pihak ketiga yang mahal",
+    ],
+    pros: [
+      "Menurunkan ambang riset sosial berbasis AI secara signifikan: tidak perlu mendaftar developer account, tidak perlu mengelola API key, dan tidak ada tagihan per-request",
+      "Cakupan platform yang luas dan relevan untuk pasar global maupun Asia: Reddit dan YouTube untuk pasar Barat, Bilibili dan XiaoHongShu untuk konteks Asia",
+      "Integrasi langsung ke agen AI populer seperti Claude Code dan Cursor melalui konvensi tool yang sederhana, sehingga bisa diadopsi tanpa refactor besar",
+      "Lisensi MIT dan dokumentasi terbuka, memungkinkan kontribusi balik dari komunitas dan adaptasi ke kebutuhan lokal",
+    ],
+    cons: [
+      "Bergantung pada struktur halaman target: ketika platform besar mengubah tata letak, sebagian perintah bisa terganggu sampai rilis perbaikan tersedia",
+      "Cakupan platform masih didominasi layanan berbahasa Inggris dan Mandarin: untuk sumber lokal Indonesia seperti X (Twitter) berbahasa Indonesia, Kaskus, atau forum komunitas, pengguna perlu adapter tambahan",
+      "Risiko etika dan terms of service: scraping tanpa API resmi bisa melanggar ketentuan platform, sehingga perlu kehati-hatian untuk penggunaan komersial atau volume tinggi",
+    ],
+    verdict:
+      "Agent Reach adalah titik masuk yang sangat pragmatis untuk siapa pun yang ingin menambahkan kemampuan riset sosial ke agen AI tanpa terbebani biaya API. Di 2026, ketika semakin banyak workflow AI membutuhkan data real-time dari platform sosial, CLI seperti ini menjadi jembatan yang sangat dibutuhkan.",
+    body: [
+      "Riset berbasis AI sering terhenti di satu titik yang sama: begitu agent membutuhkan data dari media sosial atau forum publik, prosesnya tiba-tiba menjadi mahal dan penuh birokrasi. Pendaftaran developer account, verifikasi identitas, pengelolaan API key, dan tagihan per-request menjadi hambatan yang sering kali lebih besar dari manfaat otomatisasinya. Agent Reach mengambil jalan berbeda: menyediakan CLI yang langsung membaca halaman publik platform populer dan menyerahkannya ke agen lewat antarmuka yang konsisten. Hasilnya, eksperimen yang biasanya butuh waktu berminggu-minggu untuk menyiapkan infrastruktur bisa dimulai dalam hitungan menit.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah kecepatan onboarding. Setelah instalasi satu paket, pengguna bisa langsung memanggil perintah sederhana untuk mengambil cuitan terbaru, komentar Reddit, atau transkrip YouTube, lalu menyerahkannya ke agen untuk dianalisis. Pola ini sangat cocok untuk alur riset cepat, misalnya memantau sentimen publik terhadap topik tertentu, merangkum diskusi teknis, atau membangun dataset awal untuk eksperimen prompt. Yang menarik, hasil yang dikembalikan sudah cukup terstruktur untuk diproses lebih lanjut, sehingga tidak perlu menulis parser khusus untuk setiap platform.",
+      "Untuk konteks Indonesia, Agent Reach punya potensi sekaligus keterbatasan. Potensinya: banyak workflow riset di Indonesia membutuhkan data dari platform yang sama dengan yang didukung - Twitter untuk opini publik, Reddit untuk diskusi niche, YouTube untuk konten edukatif. Keterbatasannya: sumber lokal seperti Kaskus, forum komunitas daerah, atau platform e-commerce lokal belum masuk daftar bawaan, sehingga pengguna yang fokus pada konteks Indonesia perlu menulis adapter sendiri atau menunggu kontribusi komunitas. Namun karena lisensinya MIT dan strukturnya terbuka, kustomisasi ini relatif ringan dan bisa dibagikan kembali ke komunitas.",
+      "Batasan yang perlu dipahami: Agent Reach adalah CLI riset, bukan layanan resmi dari platform yang didukung. Artinya, ia rentan terhadap perubahan struktur halaman, dan pengguna tetap harus memperhatikan ketentuan layanan masing-masing platform, terutama untuk penggunaan volume tinggi atau komersial. Untuk eksperimen, riset akademis, dan prototype, ia bekerja dengan baik; untuk produksi skala besar, perlu lapisan caching, penjadwalan, dan strategi fallback. Secara keseluruhan, Agent Reach adalah salah satu titik masuk paling pragmatis untuk menghubungkan agen AI dengan data sosial real-time di 2026 - terutama bagi komunitas yang ingin bergerak cepat tanpa terbebani biaya API.",
+    ],
+    link: "https://github.com/Panniantong/Agent-Reach",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-01",
+    updatedAt: "2026-07-01",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
