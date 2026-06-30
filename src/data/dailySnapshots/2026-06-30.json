@@ -1,57 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "30 Juni 2026",
-  "period": {
-    "date": "2026-06-30",
-    "label": "30 Juni 2026",
-    "path": "/repo/daily/2026/06/30"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-06-30T00:07:07.731Z",
+  "fetchedAt": "2026-06-30T05:46:12.392Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "hasaneyldrm/exercises-dataset",
-      "owner": "hasaneyldrm",
-      "repo": "exercises-dataset",
-      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
-      "githubUrl": "https://github.com/hasaneyldrm/exercises-dataset",
-      "trendshiftUrl": "https://trendshift.io/repositories/66951",
-      "language": "HTML",
-      "topics": [
-        "Programming examples"
-      ],
-      "dateCreated": "2026-03-18T03:07:18Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "ripienaar/free-for-dev",
-      "owner": "ripienaar",
-      "repo": "free-for-dev",
-      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
-      "githubUrl": "https://github.com/ripienaar/free-for-dev",
-      "trendshiftUrl": "https://trendshift.io/repositories/1871",
-      "language": "HTML",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2015-03-18T21:06:26Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "simplex-chat/simplex-chat",
-      "owner": "simplex-chat",
-      "repo": "simplex-chat",
-      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
-      "githubUrl": "https://github.com/simplex-chat/simplex-chat",
-      "trendshiftUrl": "https://trendshift.io/repositories/11898",
-      "language": "Haskell",
-      "topics": [],
-      "dateCreated": "2019-12-21T09:50:09Z"
-    },
-    {
-      "rank": 4,
       "fullName": "msitarzewski/agency-agents",
       "owner": "msitarzewski",
       "repo": "agency-agents",
@@ -63,6 +19,51 @@
         "AI agent"
       ],
       "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "h4ckf0r0day/obscura",
+      "owner": "h4ckf0r0day",
+      "repo": "obscura",
+      "description": "The headless browser for AI agents and web scraping",
+      "githubUrl": "https://github.com/h4ckf0r0day/obscura",
+      "trendshiftUrl": "https://trendshift.io/repositories/25837",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2026-04-13T10:31:41Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "0xNyk/council-of-high-intelligence",
+      "owner": "0xNyk",
+      "repo": "council-of-high-intelligence",
+      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council",
+      "githubUrl": "https://github.com/0xNyk/council-of-high-intelligence",
+      "trendshiftUrl": "https://trendshift.io/repositories/26250",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-03-02T08:47:09Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "soxoj/maigret",
+      "owner": "soxoj",
+      "repo": "maigret",
+      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+      "githubUrl": "https://github.com/soxoj/maigret",
+      "trendshiftUrl": "https://trendshift.io/repositories/12333",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2020-06-27T14:16:42Z"
     },
     {
       "rank": 5,
@@ -80,32 +81,6 @@
     },
     {
       "rank": 6,
-      "fullName": "Krishnagangwal/CS-Fundamentals",
-      "owner": "Krishnagangwal",
-      "repo": "CS-Fundamentals",
-      "description": "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design & Software Engineering",
-      "githubUrl": "https://github.com/Krishnagangwal/CS-Fundamentals",
-      "trendshiftUrl": "https://trendshift.io/repositories/67893",
-      "topics": [],
-      "dateCreated": "2026-06-28T07:08:15Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "browser-use/video-use",
-      "owner": "browser-use",
-      "repo": "video-use",
-      "description": "Edit videos with coding agents",
-      "githubUrl": "https://github.com/browser-use/video-use",
-      "trendshiftUrl": "https://trendshift.io/repositories/26040",
-      "language": "Python",
-      "topics": [
-        "AI video generation",
-        "Video editing"
-      ],
-      "dateCreated": "2026-04-12T01:34:42Z"
-    },
-    {
-      "rank": 8,
       "fullName": "xbtlin/ai-berkshire",
       "owner": "xbtlin",
       "repo": "ai-berkshire",
@@ -120,34 +95,61 @@
       "dateCreated": "2026-04-07T11:19:51Z"
     },
     {
-      "rank": 9,
-      "fullName": "HKUDS/Vibe-Trading",
-      "owner": "HKUDS",
-      "repo": "Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "githubUrl": "https://github.com/HKUDS/Vibe-Trading",
-      "trendshiftUrl": "https://trendshift.io/repositories/25527",
+      "rank": 7,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
       "language": "Python",
       "topics": [
         "AI agent",
-        "Workflow automation",
-        "Fintech"
+        "Web scraping",
+        "Search"
       ],
-      "dateCreated": "2026-04-01T09:52:20Z"
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Unclecheng-li/VulnClaw",
+      "owner": "Unclecheng-li",
+      "repo": "VulnClaw",
+      "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+      "githubUrl": "https://github.com/Unclecheng-li/VulnClaw",
+      "trendshiftUrl": "https://trendshift.io/repositories/67898",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "MCP",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-04-18T13:02:17Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "refactoringhq/tolaria",
+      "owner": "refactoringhq",
+      "repo": "tolaria",
+      "description": "Desktop app to manage markdown knowledge bases",
+      "githubUrl": "https://github.com/refactoringhq/tolaria",
+      "trendshiftUrl": "https://trendshift.io/repositories/26432",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-02-14T19:43:14Z"
     },
     {
       "rank": 10,
-      "fullName": "bikini/exploitarium",
-      "owner": "bikini",
-      "repo": "exploitarium",
-      "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz",
-      "githubUrl": "https://github.com/bikini/exploitarium",
-      "trendshiftUrl": "https://trendshift.io/repositories/65837",
+      "fullName": "Windy3f3f3f3f/claude-code-from-scratch",
+      "owner": "Windy3f3f3f3f",
+      "repo": "claude-code-from-scratch",
+      "description": "Build your own Claude Code from scratch.  🔍 Claude Code 开源了 50 万行代码，读不动？用 ~4000 行 TypeScript / Python 从零复现核心架构，11 章分步教程带你理解 coding agent 精髓",
+      "githubUrl": "https://github.com/Windy3f3f3f3f/claude-code-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/68595",
       "language": "Python",
-      "topics": [
-        "Pentesting"
-      ],
-      "dateCreated": "2026-06-23T05:14:11Z"
+      "topics": [],
+      "dateCreated": "2026-03-31T12:26:06Z"
     }
   ]
 }
