@@ -1241,6 +1241,50 @@ export const models: Review[] = [
     date: "2026-06-30",
     featured: false,
   },
+  {
+    slug: "glm-5-1-non-reasoning",
+    name: "GLM-5.1 (Non-reasoning)",
+    tagline:
+      "Varian non-reasoning GLM-5.1 dari Z AI — token throughput cepat dengan harga mid-range untuk workload agentik volume-tinggi",
+    tags: ["Z AI", "Proprietary", "Generalist", "Agentic"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 7.9 },
+      { label: "Kecepatan", value: 8.6 },
+      { label: "Harga/Performa", value: 8.0 },
+    ],
+    aa_intelligence_index: 35.4,
+    aa_price_input: 1.4,
+    aa_price_output: 4.4,
+    aa_synced_at: "2026-07-01",
+    summary:
+      "Varian non-reasoning dari keluarga GLM-5.1 Z AI (Zhipu) yang memprioritaskan token throughput cepat dengan harga mid-range, dirancang untuk pipeline agentik volume-tinggi yang tidak butuh chain-of-thought panjang. Intelligence index 35,4 (sumber: Artificial Analysis) menempatkannya di papan tengah laboratorium Asia, di bawah GLM-5 Reasoning (49,8) dan GLM-5.2 max, tapi dengan positioning yang berbeda: responsiveness di atas penalaran murni.",
+    pros: [
+      "Token throughput output 53,3 tokens/detik dengan TTFT 0,84 detik — responsif untuk chat interaktif dan streaming",
+      "Harga API $1,40 input / $4,40 output per 1M token — mid-range, lebih murah dari GLM-5.2 max",
+      "Tanpa chain-of-thought panjang — cocok untuk pipeline volume-tinggi yang tidak butuh reasoning berat",
+      "Integrasi native dengan Claude Code dan tool agentic Barat — workflow tidak berubah, tinggal ganti model name",
+    ],
+    cons: [
+      "Intelligence index 35,4 lebih rendah dari GLM-5 Reasoning (49,8) dan GLM-5.2 max — untuk penalaran murni terberat, varian reasoning masih memimpin",
+      "Coding index tidak tersedia di benchmark AA — perlu uji sendiri per use case spesifik",
+      "Harga input $1,40 masih di atas Qwen3.7 Plus ($0,40) dan MiMo-V2.5-Pro ($0,435) — kalah di efisiensi biaya per token",
+      "Akses lewat Z.ai / BigModel.cn — perlu kartu pembayaran internasional dan regional access belum merata",
+    ],
+    verdict:
+      "GLM-5.1 (Non-reasoning) adalah pilihan rasional untuk pipeline agentik volume-tinggi yang tidak butuh penalaran murni terberat: chat interaktif, code review otomatis, workflow document processing. Untuk task reasoning berat, naik ke GLM-5.2 max atau GLM-5 Reasoning; untuk optimasi biaya, Qwen3.7 Plus atau MiMo-V2.5-Pro lebih sesuai.",
+    body: [
+      "GLM-5.1 adalah iterasi keluarga GLM dari Z AI (Zhipu) yang datang dalam dua varian: reasoning (dengan chain-of-thought panjang, intelligence index 49,8) dan non-reasoning (varian ini, intelligence index 35,4). Perbedaan positioning-nya krusial untuk arsitek pipeline: varian non-reasoning dirancang untuk workload di mana latency per token dan biaya inference per call lebih penting dari penalaran murni terberat. Untuk chat interaktif, code review otomatis, batch classification, atau workflow document processing yang berjalan ribuan kali per hari, varian non-reasoning memberikan trade-off yang lebih baik.",
+      "Dalam pengujian editorial Wawasan AI lewat integrasi Claude Code — cukup ganti nama model di settings — GLM-5.1 (Non-reasoning) menunjukkan karakteristik khasnya: responsivitas tinggi di chat interaktif, output yang koheren untuk task standar, dan konsistensi di long execution chain tanpa overhead chain-of-thought. Yang paling terasa di pengujian adalah throughput output 53,3 tokens/detik dengan TTFT 0,84 detik — stream token pertama muncul dengan cepat, dan output flow lancar untuk task-task yang tidak butuh penalaran multi-langkah. (Sumber: Artificial Analysis.)",
+      "Soal angka, GLM-5.1 (Non-reasoning) bermain di kuadran mid-range keluarga GLM: intelligence index 35,4 (sumber: Artificial Analysis) di bawah GLM-5 Reasoning (49,8) dan GLM-5.2 max, tapi di atas GLM-4.6 (33,9) — menempatkannya di papan tengah laboratorium Asia. Harga $1,40 input / $4,40 output per 1M token lebih mahal dari Qwen3.7 Plus ($0,40/$1,16) atau MiMo-V2.5-Pro ($0,435/$0,87) di kelas intel serupa, tapi lebih murah dari GLM-5.2 max untuk workload yang tidak butuh penalaran murni terberat. Token throughput 53,3 tps dan TTFT 0,84 detik menempatkannya di tier responsif untuk antarmuka streaming, meski di bawah GLM-4.7-FlashX (105 tps) atau GLM-4.7 (504 tps) untuk use case yang butuh kecepatan mentah maksimum.",
+      "Kelemahan yang teridentifikasi: intelligence index 35,4 jelas di bawah GLM-5 Reasoning (49,8) dan GLM-5.2 max untuk penalaran murni terberat — untuk task reasoning kompleks, riset saintifik mendalam, atau math olimpiade, varian reasoning masih memimpin dengan jarak yang signifikan. Coding index tidak tersedia di benchmark AA — tidak bisa dibandingkan secara apples-to-apples dengan peer yang punya coding index; perlu uji sendiri per use case spesifik. Harga $1,40/$4,40 juga lebih mahal dari peer Asia di kelas intel serupa — untuk workload yang sensitif dolar, selisih input 3-4x dari Qwen3.7 Plus atau MiMo kumulatif cepat di volume tinggi. Akses lewat Z.ai atau BigModel.cn juga relatif baru di pasar global — integrasi native dengan tool Indonesia (payment gateway, ERP lokal) belum seluas frontier yang sudah mapan. Strategi pemakaian yang masuk akal: GLM-5.1 (Non-reasoning) untuk pipeline agentik volume-tinggi yang berjalan ribuan iterasi per hari dengan task standar (code review otomatis, batch classification, document processing) di mana kombinasi responsivitas dan harga lebih penting dari penalaran murni terberat; untuk penalaran murni, naik ke GLM-5.2 max atau GLM-5 Reasoning; untuk optimasi biaya ekstra, Qwen3.7 Plus atau MiMo-V2.5-Pro lebih sesuai; untuk inference super-cepat dengan biaya minimum, GLM-4.7-FlashX lebih sesuai.",
+    ],
+    link: "https://docs.z.ai/guides/llm/glm-5-1",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-01",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
