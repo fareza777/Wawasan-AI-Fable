@@ -1056,6 +1056,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-06-30",
   },
+  {
+    slug: "vanna",
+    name: "Vanna",
+    tagline: "Text-to-SQL agent open-source yang belajar dari skema database Anda",
+    tags: ["Vanna AI", "Open Source", "Data Analytics", "Text-to-SQL"],
+    score: 7.8,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 7.7 },
+      { label: "Pengalaman Pengguna", value: 7.4 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "Vanna adalah framework Python open-source berlisensi MIT yang menerjemahkan pertanyaan natural language menjadi SQL yang akurat terhadap database internal Anda, dengan pendekatan RAG yang dilatih pada DDL, dokumentasi, dan pasangan question-SQL. Berbeda dengan tool Text-to-SQL generik, Vanna belajar khusus pada skema dan gaya query organisasi, menghasilkan akurasi yang lebih tinggi untuk database dengan tabel banyak dan naming convention tidak standar. Tersedia sebagai Community Edition gratis untuk self-host, Premium $25/bulan untuk fitur hosted, dan Enterprise dengan deployment on-prem dan support prioritas.",
+    pros: [
+      "Akurasi SQL tinggi pada database internal karena training dilakukan pada DDL, dokumentasi, dan query history spesifik organisasi, bukan model generik",
+      "Open-source MIT License dengan Community Edition gratis: install via pip, pakai LLM lokal (Ollama) atau API (OpenAI, Anthropic, Gemini) sesuai kebutuhan",
+      "Dukungan database luas: PostgreSQL, Snowflake, BigQuery, SQLite, MySQL, dan database lain yang punya Python connector",
+      "Integrasi mulus ke Jupyter, Slack, FastAPI, dan Streamlit, memungkinkan deployment sebagai bot internal atau web app dalam hitungan jam",
+      "Harga Premium $25/bulan sangat ekonomis untuk use case SMB dibanding kompetitor SaaS yang sering di tier $50-200/bulan per seat",
+    ],
+    cons: [
+      "Repositori GitHub resmi berstatus archived (read-only) sejak 29 Maret 2026: bug fix dan fitur baru sangat bergantung pada kontribusi komunitas fork, bukan maintainer utama",
+      "Butuh effort training dan pemeliharaan: tim harus menyiapkan DDL, dokumentasi bisnis, dan pasangan question-SQL agar akurasi tinggi, proses yang biasanya makan waktu 1-2 minggu untuk database enterprise",
+      "Akurasi turun signifikan pada query ambiguitas atau pertanyaan yang tidak ada di training corpus, masih perlu validasi manusia untuk query yang dipakai di dashboard produksi",
+      "Tidak ada kontrol akses database yang built-in: developer harus implementasi row-level security sendiri, tidak cocok untuk dipakai langsung oleh end-user bisnis tanpa lapisan middleware",
+      "Dokumentasi komunitas lebih sedikit dari tool Text-to-SQL proprietary: tutorial, preset, dan troubleshooting bahasa Indonesia masih minim, tim biasanya harus rakit dari dokumentasi resmi dan blog engineering",
+    ],
+    verdict:
+      "Pilihan tepat untuk tim data Indonesia yang butuh Text-to-SQL fleksibel dan bisa self-host dengan kontrol penuh atas data, tapi catatan utamanya adalah repositori GitHub yang sudah archived sejak Maret 2026 sehingga maintenance jangka panjang bergantung pada komunitas fork. Pilih Vanna kalau kamu butuh kustomisasi mendalam dan harga open-source; pilih tool SaaS proprietary untuk go-live cepat tanpa engineering overhead.",
+    body: [
+      "Vanna adalah framework Python open-source yang menjawab salah satu masalah paling sering di tim data: menerjemahkan pertanyaan bisnis dalam bahasa natural menjadi SQL yang benar terhadap database internal. Cara kerjanya adalah RAG (Retrieval-Augmented Generation) dengan corpus training khusus: organisasi memasang DDL (skema tabel), dokumentasi bisnis, dan contoh pasangan question-SQL yang sudah ada, lalu Vanna menyimpan embedding semuanya ke vector database. Saat pengguna bertanya lewat chat, Vanna melakukan Agentic Retrieval untuk mencari konteks relevan dari corpus itu, lalu LLM yang dipilih (OpenAI, Anthropic, Gemini, atau lokal lewat Ollama) men-generate SQL berdasarkan konteks yang ditemukan. Pendekatan ini berbeda dengan tool Text-to-SQL generik yang biasanya menggunakan model umum tanpa training spesifik, dan menghasilkan akurasi yang lebih tinggi untuk database dengan banyak tabel atau naming convention internal yang unik. Komunitas Vanna aktif di GitHub dan Discord dengan ratusan kontributor, meski sejak 29 Maret 2026 repositori resmi berstatus archived (read-only) sehingga perkembangan fitur baru dan bug fix sangat bergantung pada fork komunitas aktif seperti vanna-ai/vanna fork yang dipelihara pihak ketiga.",
+      "Workflow Vanna sengaja dibuat fleksibel dan modular. Pengguna baru cukup install via pip, import library, lalu jalankan fungsi vn.train() dengan DDL database, dokumentasi, atau dataframe contoh. Setelah training, Vanna bisa dipakai lewat Jupyter notebook untuk eksplorasi data, lewat Streamlit atau Flask untuk web app internal, lewat Slack/Teams bot untuk query dari chat, atau lewat FastAPI untuk API yang di-inject ke dashboard atau produk lain. Vanna mendukung PostgreSQL, Snowflake, BigQuery, SQLite, MySQL, ClickHouse, dan database lain yang punya Python connector, menjadikannya salah satu framework Text-to-SQL paling portabel di pasaran. Fitur unggulan lain adalah Plotly/Chart integration yang langsung men-generate visualisasi dari hasil query, dan self-correction yang bisa menjalankan query, cek error, lalu men-generate ulang SQL yang diperbaiki secara otomatis. Pada Premium $25/bulan, pengguna mendapat hosting Vanna Cloud dengan akses kontrol, audit log, dan observability, sementara Enterprise menawarkan deployment on-prem untuk organisasi dengan regulasi data ketat seperti bank, rumah sakit, atau perusahaan fintech.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, repositori GitHub resmi berstatus archived (read-only) sejak 29 Maret 2026: maintainer utama sudah tidak lagi push commit reguler, dan fitur baru seperti dukungan multimodal, agentic loop yang lebih panjang, atau integrasi dengan database baru sangat bergantung pada fork komunitas. Kedua, butuh effort training dan pemeliharaan yang tidak kecil: untuk database enterprise dengan 50-200 tabel, proses training yang efektif (DDL, dokumentasi bisnis, 50-100 pasangan question-SQL representative) biasanya makan waktu 1-2 minggu dan memerlukan kolaborasi dengan business analyst. Ketiga, akurasi turun signifikan pada query yang ambiguitas atau pertanyaan yang tidak terwakili di training corpus, dan Vanna masih belum bisa diandalkan 100 persen untuk query yang dipakai di dashboard produksi tanpa lapisan validasi manusia. Keempat, tidak ada kontrol akses database yang built-in di Vanna itu sendiri: developer harus implementasi row-level security lewat middleware, sehingga untuk dipakai langsung oleh end-user bisnis di luar tim data, biasanya butuh wrapper tambahan. Kelima, dokumentasi dan tutorial third-party masih tumbuh: Vanna punya dokumentasi resmi solid dan cookbook yang cukup lengkap, tapi jumlah preset, template, dan tutorial bahasa Indonesia masih jauh dari tool proprietary yang sudah punya tim dokumentasi penuh.",
+      "Untuk pengguna dan tim di Indonesia, Vanna punya posisi menarik di beberapa use case spesifik. Pertama, untuk startup dan korporasi yang mengelola data pelanggan di Indonesia dengan regulasi ketat (UU PDP, sektor keuangan, kesehatan), kemampuan self-host Vanna memungkinkan database tetap di server lokal atau VPS region Singapore tanpa harus query keluar ke API pihak ketiga, dan biaya LLM bisa diminimalkan dengan Ollama + model lokal seperti Llama 3.1 70B atau Qwen 2.5 32B. Kedua, untuk freelancer data analyst atau konsultan BI yang mengelola banyak klien, harga Premium $25/bulan (sekitar Rp 400 ribu) sangat kompetitif dibanding tool Text-to-SQL proprietary di tier $50-200/bulan per seat, dan lisensi open-source MIT memungkinkan Vanna di-deploy di project klien tanpa fee lisensi tambahan. Ketiga, untuk kampus dan institusi riset, kombinasi Vanna + Ollama memungkinkan eksplorasi database riset (Sinta, Scopus metadata, data epidemiologi) sepenuhnya gratis tanpa ketergantungan API komersial. Keempat, untuk UMKM yang baru mulai adopsi analitik data, integrasi Vanna ke Slack atau Teams memungkinkan owner bisnis bertanya langsung ke database penjualan dalam bahasa Indonesia dan dapat jawaban dalam hitungan detik, mengurangi ketergantungan pada admin database. Catatan harga: subscription Premium tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen, markup total sekitar 12-15 persen di atas harga tertera; untuk pengguna yang sama sekali tidak ingin biaya recurring, opsi self-host Community Edition + Ollama lokal adalah pilihan paling ekonomis dengan catatan effort engineering awal yang lebih besar. Untuk yang baru eksplorasi, panduan resmi di vanna.ai/docs memberikan quickstart 30 menit yang cukup untuk proof of concept, dan Jupyter notebook demo yang bisa dijalankan end-to-end dengan SQLite sample database untuk evaluasi akurasi sebelum commit ke project production.",
+    ],
+    link: "https://vanna.ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-01",
+  },
 ];
 
 export function getStack(slug: string) {
