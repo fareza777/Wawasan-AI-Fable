@@ -1,31 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "1 Juli 2026",
-  "period": {
-    "date": "2026-07-01",
-    "label": "1 Juli 2026",
-    "path": "/repo/daily/2026/07/01"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-01T00:09:41.840Z",
+  "fetchedAt": "2026-07-01T06:05:25.019Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "msitarzewski/agency-agents",
-      "owner": "msitarzewski",
-      "repo": "agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "githubUrl": "https://github.com/msitarzewski/agency-agents",
-      "trendshiftUrl": "https://trendshift.io/repositories/22315",
-      "language": "Shell",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2025-10-13T12:12:29Z"
-    },
-    {
-      "rank": 2,
       "fullName": "hasaneyldrm/exercises-dataset",
       "owner": "hasaneyldrm",
       "repo": "exercises-dataset",
@@ -39,64 +21,63 @@
       "dateCreated": "2026-03-18T03:07:18Z"
     },
     {
+      "rank": 2,
+      "fullName": "microsoft/AI-For-Beginners",
+      "owner": "microsoft",
+      "repo": "AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "githubUrl": "https://github.com/microsoft/AI-For-Beginners",
+      "trendshiftUrl": "https://trendshift.io/repositories/4657",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "AI skills",
+        "Programming examples"
+      ],
+      "dateCreated": "2021-03-03T16:27:36Z"
+    },
+    {
       "rank": 3,
-      "fullName": "baairon/torlink",
-      "owner": "baairon",
-      "repo": "torlink",
-      "description": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.",
-      "githubUrl": "https://github.com/baairon/torlink",
-      "trendshiftUrl": "https://trendshift.io/repositories/66632",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-06-25T12:37:15Z"
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
     },
     {
       "rank": 4,
-      "fullName": "usestrix/strix",
-      "owner": "usestrix",
-      "repo": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "githubUrl": "https://github.com/usestrix/strix",
-      "trendshiftUrl": "https://trendshift.io/repositories/15362",
-      "language": "Python",
+      "fullName": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
+      "trendshiftUrl": "https://trendshift.io/repositories/23589",
+      "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "Pentesting"
+        "AI infrastructure",
+        "Proxy"
       ],
-      "dateCreated": "2025-08-05T21:28:30Z"
+      "dateCreated": "2026-02-13T12:38:31Z"
     },
     {
       "rank": 5,
-      "fullName": "deepseek-ai/DeepSpec",
-      "owner": "deepseek-ai",
-      "repo": "DeepSpec",
-      "description": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
-      "githubUrl": "https://github.com/deepseek-ai/DeepSpec",
-      "trendshiftUrl": "https://trendshift.io/repositories/65981",
+      "fullName": "google-research/tabfm",
+      "owner": "google-research",
+      "repo": "tabfm",
+      "description": "",
+      "githubUrl": "https://github.com/google-research/tabfm",
+      "trendshiftUrl": "https://trendshift.io/repositories/69399",
       "language": "Python",
-      "topics": [
-        "AI infrastructure"
-      ],
-      "dateCreated": "2026-06-26T12:36:05Z"
+      "topics": [],
+      "dateCreated": "2026-06-16T21:06:19Z"
     },
     {
       "rank": 6,
-      "fullName": "HKUDS/Vibe-Trading",
-      "owner": "HKUDS",
-      "repo": "Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "githubUrl": "https://github.com/HKUDS/Vibe-Trading",
-      "trendshiftUrl": "https://trendshift.io/repositories/25527",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Workflow automation",
-        "Fintech"
-      ],
-      "dateCreated": "2026-04-01T09:52:20Z"
-    },
-    {
-      "rank": 7,
       "fullName": "google/agents-cli",
       "owner": "google",
       "repo": "agents-cli",
@@ -112,34 +93,51 @@
       "dateCreated": "2026-04-08T17:09:55Z"
     },
     {
-      "rank": 8,
-      "fullName": "microsoft/AI-For-Beginners",
-      "owner": "microsoft",
-      "repo": "AI-For-Beginners",
-      "description": "12 Weeks, 24 Lessons, AI for All!",
-      "githubUrl": "https://github.com/microsoft/AI-For-Beginners",
-      "trendshiftUrl": "https://trendshift.io/repositories/4657",
-      "language": "Jupyter Notebook",
+      "rank": 7,
+      "fullName": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "githubUrl": "https://github.com/usestrix/strix",
+      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "language": "Python",
       "topics": [
-        "AI skills",
-        "Programming examples"
+        "AI agent",
+        "Pentesting"
       ],
-      "dateCreated": "2021-03-03T16:27:36Z"
+      "dateCreated": "2025-08-05T21:28:30Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-09T19:45:18Z"
     },
     {
       "rank": 9,
-      "fullName": "diegosouzapw/OmniRoute",
-      "owner": "diegosouzapw",
-      "repo": "OmniRoute",
-      "description": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
-      "trendshiftUrl": "https://trendshift.io/repositories/23589",
-      "language": "TypeScript",
+      "fullName": "h4ckf0r0day/obscura",
+      "owner": "h4ckf0r0day",
+      "repo": "obscura",
+      "description": "The headless browser for AI agents and web scraping",
+      "githubUrl": "https://github.com/h4ckf0r0day/obscura",
+      "trendshiftUrl": "https://trendshift.io/repositories/25837",
+      "language": "Rust",
       "topics": [
-        "AI infrastructure",
-        "Proxy"
+        "AI agent",
+        "Headless browser",
+        "Web scraping"
       ],
-      "dateCreated": "2026-02-13T12:38:31Z"
+      "dateCreated": "2026-04-13T10:31:41Z"
     },
     {
       "rank": 10,
