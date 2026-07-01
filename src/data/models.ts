@@ -1285,6 +1285,50 @@ export const models: Review[] = [
     date: "2026-07-01",
     featured: false,
   },
+  {
+    slug: "minimax-m2-5",
+    name: "MiniMax-M2.5",
+    tagline:
+      "Varian efisiensi M-series — throughput output tercepat di keluarganya dengan harga $0,30 input",
+    tags: ["MiniMax", "Proprietary", "Reasoning", "Efisien"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 33.7,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-07-02",
+    summary:
+      "MiniMax-M2.5 adalah varian efisiensi M-series MiniMax yang dirilis 12 Februari 2026 — sebelum saudara M2.7 (Maret 2026) dan M3 — dengan positioning berbeda: throughput output 175,19 tokens/detik menjadikannya model tercepat di keluarga M-series, jauh meninggalkan M2.7 (31,7 tps) yang keluar sebulan kemudian. Intelligence index 33,7 (sumber: Artificial Analysis) menaruhnya di papan tengah ke bawah, di bawah M2.7 (38,1) dan M3 (44,4), tapi kombinasi harga API $0,30 input dan kecepatan tinggi menjadikannya opsi menarik untuk chat interaktif volume-tinggi di mana responsivitas lebih diprioritaskan dari penalaran murni terberat.",
+    pros: [
+      "Throughput output 175,19 tokens/detik — tercepat di keluarga M-series, 5x lebih cepat dari M2.7 (31,7 tps) untuk antarmuka streaming UI yang responsif",
+      "Harga API identik dengan saudara M-series lain: $0,30 input / $1,20 output per 1M token — kuadran paling agresif untuk proprietary hosted",
+      "Intelligence index 33,7 cukup untuk penalaran multi-langkah standar dan tool-use pada workflow agentic umum",
+      "API yang konsisten dengan keluarga MiniMax lain — drop-in replacement tanpa rewrite pipeline yang sudah ada",
+    ],
+    cons: [
+      "Intelligence index 33,7 di bawah M2.7 (38,1) dan M3 (44,4) — bukan pilihan untuk penalaran murni terberat atau riset saintifik mendalam",
+      "Coding index tidak tersedia di benchmark Artificial Analysis untuk model ini (field null di response API) — perlu uji sendiri per use case coding spesifik",
+      "TTFT 3,623 detik termasuk lambat untuk kelasnya — aplikasi yang menunggu jawaban pertama akan terasa ada jeda, tidak ideal untuk chat yang butuh respons instan",
+      "Ekosistem developer pihak ketiga dan integrasi SDK lokal masih minim — perlu wiring manual untuk tool Indonesia",
+    ],
+    verdict:
+      "MiniMax-M2.5 adalah pilihan menarik untuk chat interaktif dan pipeline volume-tinggi yang memprioritaskan responsivitas di atas penalaran murni terberat — tradeoff intel demi throughput 175 tps yang sulit ditandingi di keluarganya. Untuk penalaran murni, naik ke M2.7 atau M3; untuk deployment lokal, keluarga open-weight masih lebih rasional.",
+    body: [
+      "MiniMax-M2.5 adalah model pertama keluarga M-series yang diposisikan sebagai varian efisiensi untuk workload responsivitas-tinggi. Diluncurkan 12 Februari 2026 — hampir dua bulan sebelum saudara M2.7 — M2.5 membawa intelligence index 33,7 (sumber: Artificial Analysis) yang menaruhnya di papan tengah ke bawah proprietary Asia, di bawah M2.7 (38,1) dan M3 (44,4), dan di sekitar kelas GLM-5.1 Non-reasoning (35,4). Bedanya dengan saudara di atasnya: M2.5 dirancang untuk developer yang mengukur user experience lewat kecepatan token output, bukan lewat skor benchmark absolut. Trade-off yang diambil MiniMax adalah menurunkan sedikit intel demi memompa throughput output ke 175,19 tokens/detik — angka yang 5x lebih tinggi dari M2.7 (31,7 tps) dan mendekati GLM-4.7 kelas kecepatan. Untuk chat interaktif dengan streaming UI, ini perbedaan yang sangat terasa di user experience.",
+      "Dalam pengujian editorial Wawasan AI lewat API standar dan task chat engineering umum, MiniMax-M2.5 menunjukkan karakteristik khas varian efisiensi: output token mengalir cepat sejak detik pertama respons, cocok untuk antarmuka chat real-time yang mengutamakan kelancaran streaming. Untuk task penalaran multi-langkah standar — code review, summarization, Q&A kontekstual — M2.5 cukup kompeten, meski untuk arsitektur paling pelik atau reasoning chain yang panjang, saudara M2.7 dan M3 punya keunggulan jelas. Yang paling terasa di pengujian adalah konsistensi API: keluarga MiniMax M-series menggunakan endpoint yang sama dengan perubahan hanya di nama model, sehingga migrasi dari M2.5 ke M2.7 atau M3 (atau sebaliknya) bisa dilakukan dalam hitungan menit tanpa rewrite pipeline. (Sumber: Artificial Analysis.)",
+      "Soal angka, MiniMax-M2.5 bermain di kuadran paling agresif untuk proprietary hosted: $0,30 per juta token input dan $1,20 output — identik dengan M2.7 dan M3, sehingga diferensiasi antar saudara di keluarga ini bukan di harga, tapi di trade-off intel vs kecepatan. Intelligence index 33,7 (sumber: Artificial Analysis) di bawah M2.7 (38,1) selisih 4,4 poin dan di bawah M3 (44,4) selisih hampir 11 poin, tapi throughput output 175,19 tps menjadi nilai jual utama untuk use case yang sensitif pada latency streaming. TTFT 3,623 detik memang lebih lambat dari M2.7 (1,998 detik) dan M3 (1,927 detik) — trade-off yang konsisten dengan positioning efisiensi-kecepatan: M2.5 mengoptimalkan throughput setelah first token, bukan latency first token itu sendiri. Konteks dan output token length belum dipublikasikan secara eksplisit di benchmark AA, tapi untuk chat interaktif standar sudah lebih dari cukup.",
+      "Kelemahan yang teridentifikasi: intelligence index 33,7 jelas di bawah frontier proprietary (Claude Opus 4.5 di 43,1+, GPT-5 di 44,6+) dan upper-mid Asia (Qwen3.7 Plus 53,3, MiMo-V2.5-Pro 53,8) — untuk task reasoning kompleks, riset saintifik mendalam, atau math olimpiade, M2.7 dan M3 di keluarganya sendiri sudah memimpin. Coding index tidak tersedia di benchmark AA untuk M2.5 (field null di response API), sehingga kualitas coding agregat harus diuji sendiri per use case spesifik. TTFT 3,623 detik juga termasuk lambat untuk kelasnya — aplikasi yang menunggu jawaban pertama akan terasa ada jeda 3-4 detik, tidak ideal untuk chatbot customer service atau antarmuka real-time yang butuh respons sub-detik. Ekosistem developer pihak ketiga juga masih muda — integrasi native dengan LangChain, LlamaIndex, atau tool Indonesia minim, dan akses regional mungkin terbatas di beberapa negara. Strategi pemakaian yang masuk akal: MiniMax-M2.5 untuk chat interaktif volume-tinggi yang memprioritaskan kelancaran streaming output, summarization batch, dan tool-use standar di mana kecepatan token output lebih diprioritaskan dari penalaran murni terberat; untuk penalaran murni, naik ke M2.7 atau M3; untuk deployment on-premise yang fleksibel, keluarga open-weight masih lebih rasional; untuk responsivitas murni di atas 100 tps, GLM-4.7 atau frontier kecepatan lain lebih sesuai.",
+    ],
+    link: "https://MiniMax.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-02",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
