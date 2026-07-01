@@ -704,16 +704,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       ],
     },
     "usestrix/strix": {
-      description:
-        "Open-source AI hacker agent yang jalan langsung di Docker sandbox — multi-agen yang menguji, mengeksploitasi, dan memvalidasi kerentanan aplikasi web/API (IDOR, SQLi, XSS, SSRF, broken access control) lewat HTTP proxy, browser, dan Python runtime, lengkap dengan PoC per temuan.",
-      highlights: [
-        "Bukan SAST, tapi runtime pentest: Strix menjalankan aplikasi binerimu di sandbox asli, lalu agennya menyerang endpoint sungguhan — setiap temuan diverifikasi dengan proof-of-concept yang reproducible, bukan 'kemungkinan SQL injection' yang belum tentu exploitable.",
-        "Multi-agent graph of agents: specialized agents untuk access control, injection, SSRF, business logic, dan infra — jalan paralel dan saling berbagi temuan, jadi satu scan bisa cover attack surface yang biasanya butuh beberapa tool berbeda.",
-        "Toolkit lengkap untuk hacking simulasi: HTTP proxy untuk manipulasi request/response, browser automation multi-tab untuk test XSS/CSRF/auth flow, Python runtime untuk tulis exploit custom, plus OSINT/reconnaissance — semua lewat CLI satu perintah (strix --target ./app-directory).",
-        "Integrasi CI/CD: jalankan di GitHub Actions/GitLab untuk block PR yang punya kerentanan tinggi sebelum merge, plus opsi Strix Cloud (one-click autofix jadi ready-to-merge PR). Open source Apache-2.0, 26k★, relevan untuk dev/security tim Indonesia yang perlu pentest cepat tanpa nunggu jadwal konsultan.",
-      ],
-    },
-  };
+          description:
+            "Open-source AI hacker agent yang jalan langsung di Docker sandbox — multi-agen yang menguji, mengeksploitasi, dan memvalidasi kerentanan aplikasi web/API (IDOR, SQLi, XSS, SSRF, broken access control) lewat HTTP proxy, browser, dan Python runtime, lengkap dengan PoC per temuan.",
+          highlights: [
+            "Bukan SAST, tapi runtime pentest: Strix menjalankan aplikasi binerimu di sandbox asli, lalu agennya menyerang endpoint sungguhan — setiap temuan diverifikasi dengan proof-of-concept yang reproducible, bukan 'kemungkinan SQL injection' yang belum tentu exploitable.",
+            "Multi-agent graph of agents: specialized agents untuk access control, injection, SSRF, business logic, dan infra — jalan paralel dan saling berbagi temuan, jadi satu scan bisa cover attack surface yang biasanya butuh beberapa tool berbeda.",
+            "Toolkit lengkap untuk hacking simulasi: HTTP proxy untuk manipulasi request/response, browser automation multi-tab untuk test XSS/CSRF/auth flow, Python runtime untuk tulis exploit custom, plus OSINT/reconnaissance — semua lewat CLI satu perintah (strix --target ./app-directory).",
+            "Integrasi CI/CD: jalankan di GitHub Actions/GitLab untuk block PR yang punya kerentanan tinggi sebelum merge, plus opsi Strix Cloud (one-click autofix jadi ready-to-merge PR). Open source Apache-2.0, 26k★, relevan untuk dev/security tim Indonesia yang perlu pentest cepat tanpa nunggu jadwal konsultan.",
+          ],
+        },
+        "microsoft/AI-For-Beginners": {
+        description:
+          "Kurikulum resmi Microsoft selama 12 minggu dan 24 pelajaran untuk belajar AI dari nol — TensorFlow, PyTorch, computer vision, NLP, hingga etika AI, lengkap dengan quiz, lab, dan sudah diterjemahkan ke 50+ bahasa termasuk bahasa Indonesia.",
+        highlights: [
+          "Kurikulum bertahap 12 minggu / 24 pelajaran yang ramah pemula: tidak butuh background matematika berat, setiap pelajaran berisi pre-quiz, instruksi tertulis, lab kode, dan post-quiz untuk mengukur pemahaman.",
+          "Cakupan luas tapi terstruktur: simbolic AI, neural network, computer vision (CNN, transfer learning), NLP (recurrent, transformer), Generative AI, multi-agent, dan etika AI — menggunakan TensorFlow dan PyTorch secara bergantian.",
+          "Terjemahan otomatis ke 50+ bahasa lewat GitHub Actions (termasuk bahasa Indonesia) — komunitas global bisa belajar dalam bahasa ibu, dan kontribusi open-source lewat pull request sangat welcomed.",
+          "Bagian dari seri 'For Beginners' Microsoft yang legendaris (ML-For-Beginners, Web-For-Beginners, Data-Science-For-Beginners) — gratis, MIT-licensed, dan sudah dipakai puluhan ribu pembelajar untuk transisi ke karier AI.",
+        ],
+      },
+      "diegosouzapw/OmniRoute": {
+        description:
+          "AI gateway open-source gratis yang menyatukan 160+ provider LLM (Claude, GPT, Gemini, Groq, DeepSeek) di balik satu endpoint OpenAI-compatible — lengkap dengan auto-fallback 4 lapis, kompresi token 15-75%, dan dukungan MCP/A2A.",
+        highlights: [
+          "Routing pintar dengan auto-fallback 4 lapis (Subscription → API Key → Cheap → Free) — kalau Claude Code kena rate-limit, otomatis pindah ke API key, lalu ke model murah, lalu ke tier gratis tanpa downtime coding agent.",
+          "Kompresi prompt bawaan 5 mode (Lite 15%, Standard/Caveman 30%, Aggressive 50%, Ultra 75%) yang aktif transparan di setiap request — tagihan API coding agent bisa turun drastis tanpa ubah kode.",
+          "Format translation otomatis antara OpenAI, Claude, Gemini, dan Responses API — tool apa pun yang OpenAI-compatible langsung bisa pakai provider mana pun, tanpa edit SDK.",
+          "Bonus: MCP server dengan 29 tools, A2A protocol untuk agent-to-agent, proxy 3-level (bypass geo-restriction), dashboard observability dengan p50/p95/p99 telemetry — ditulis 100% TypeScript dengan 4.690+ automated test, jalan di Web/Desktop/Android/PWA.",
+        ],
+      },
+      "google/copybara": {
+        description:
+          "Tool resmi Google untuk menyinkronkan dan mentransformasi kode antar repository (private ↔ public) — stateless, commit message sebagai state, dan dipakai internal untuk menjaga source of truth sambil tetap menerima kontribusi publik.",
+        highlights: [
+          "Menjawab masalah klasik monorepo vs public release: pilih satu repo sebagai 'authoritative source of truth', lalu Copybara secara otomatis mirror perubahan ke repo lain dengan transformasi yang bisa dikonfigurasi (rename package, hapus internal-only file, dst).",
+          "Stateless dengan state disimpan di commit message destination repo (sebagai label) — banyak user atau service bisa menjalankan Copybara dengan config sama dan menghasilkan output identik, tanpa database eksternal.",
+          "Mendukung Git secara penuh dan Mercurial secara eksperimental, dengan arsitektur extensible yang bisa ditambah custom origin/destination — workflow default pakai file copy.bara.sky untuk definisi pemindahan kode antar-branch.",
+          "Pakai kasus nyata di Google: sync confidential repo ke public (misal TensorFlow), kontribusi balik dari public repo ke internal monorepo, dan import satu kali ke repo baru — Apache-2.0 dan battle-tested selama bertahun-tahun di production Google.",
+        ],
+      },
+    };
 
 // Helper: lookup dengan fallback ke template-generated highlights
 export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
