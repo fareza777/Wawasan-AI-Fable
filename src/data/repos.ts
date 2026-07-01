@@ -1553,6 +1553,58 @@ export const repos: Review[] = [
     updatedAt: "2026-07-01",
     featured: false,
   },
+  {
+    slug: "cowagent",
+    name: "CowAgent",
+    tagline:
+      "Agent harness ringan berawal dari chat-on-WeChat, kini multi-model dan multi-channel dengan memori yang self-evolve",
+    tags: ["AI Agent", "Python", "Self-hosted", "Multi-Channel"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "CowAgent (dulunya chatgpt-on-wechat) dari zhayujie adalah salah satu proyek agent harness dengan pertumbuhan paling konsisten di GitHub: hampir 46 ribu bintang dan lebih dari 10 ribu fork. Bermula sebagai jembatan ChatGPT ke WeChat pada 2022, proyek ini berevolusi menjadi agent harness multi-model yang merencanakan tugas, memanggil tool dan skill, menyimpan memori jangka panjang, dan bisa dipasang di banyak channel - dari WeChat, Telegram, Discord, Slack, hingga LINE - lewat instalasi satu baris.",
+    highlights: [
+      "Agent harness yang merencanakan tugas, mengeksekusi tool, dan mengelola skill lewat satu loop orkestrasi - bukan sekadar chatbot prompt-respons",
+      "Dukungan multi-model: OpenAI, Claude, DeepSeek, Gemini, Qwen, Ollama lokal, dan banyak lagi lewat konfigurasi model provider yang fleksibel",
+      "Channel adapter yang luas: WeChat (asalnya), Telegram, Discord, Slack, LINE, Lark, dan email - cocok untuk otomasi di banyak permukaan percakapan",
+      "Sistem memori dan knowledge base yang self-evolve: agent bisa menyimpan catatan, merujuknya kembali, dan membangun basis pengetahuan dari interaksi nyata",
+      "Tool dan skill registry berbasis file, sehingga menambah kemampuan baru cukup menulis modul Python sederhana - ekstensi tidak perlu fork ke core",
+      "Plugin ecosystem yang sudah matang: lebih dari 40 plugin resmi mencakup pencarian web, image generation, scheduler, TTS, hingga integrasi database",
+      "Lisensi MIT yang ramah untuk eksperimen pribadi, komersial, dan kontribusi komunitas",
+      "Dokumentasi berbahasa Mandarin dan Inggris lengkap dengan cookbook, contoh deployment, dan arsitektur internal - memudahkan onboarding bertahap",
+      "Basis pengguna yang besar di komunitas Asia karena origin-nya dari WeChat, namun API dan struktur kodenya sepenuhnya general untuk konteks global",
+    ],
+    pros: [
+      "Onboarding paling ringan di kelasnya - banyak pengguna yang sudah menjalankannya di WeChat pribadi kurang dari 30 menit setelah clone",
+      "Arsitektur harness yang fleksibel: pisah antara channel adapter, brain (LLM), dan skill - memudahkan integrasi ke stack yang sudah ada",
+      "Komunitas dan momentum sangat kuat dengan lebih dari 10 ribu fork - indikasi adopsi yang melampaui sekadar hobi",
+      "Mendukung model lokal lewat Ollama dan provider lain, relevan untuk pengguna di Indonesia yang ingin menekan biaya API dan menjaga privasi",
+    ],
+    cons: [
+      "Dokumentasi publik paling lengkap masih berbahasa Mandarin - pengguna yang tidak fasih sering mengandalkan terjemahan komunitas atau contoh di issue tracker",
+      "Beberapa fitur advanced (knowledge base self-evolve, multi-agent collaboration) masih relatif baru dan API-nya bisa berubah antar versi mayor",
+      "Origin sebagai proyek personal membuat arsitektur kadang terasa organik - developer yang berharap pola strict corporate akan perlu waktu untuk membaca kode",
+    ],
+    verdict:
+      "CowAgent adalah bukti bahwa proyek komunitas yang berangkat dari satu use case (chat-on-WeChat) bisa tumbuh menjadi agent harness yang serius. Di 2026, ketika banyak platform AI agent berlomba menambah fitur enterprise, posisi CowAgent sebagai pilihan ringan, terbuka, dan multi-channel menjadikannya menarik bagi pengguna yang ingin harness powerful tanpa overhead framework besar.",
+    body: [
+      "Di 2022, sebelum istilah AI agent menjadi tren, zhayujie menulis chatgpt-on-wechat sebagai jembatan sederhana antara API ChatGPT dan WeChat. Empat tahun kemudian, proyek itu sudah bertransformasi menjadi CowAgent - agent harness yang merencanakan tugas, mengeksekusi tool, mengelola skill, dan menyimpan memori. Evolusi ini menarik karena bukan hasil pivot besar-besaran, melainkan akumulasi kebutuhan nyata dari basis pengguna yang terus tumbuh: dari sekadar menjawab pesan WeChat, CowAgent sekarang dipakai untuk otomasi customer service, riset internal, scheduling, sampai integrasi enterprise yang lebih kompleks.",
+      "Yang membuat CowAgent menonjol di antara agent harness lain adalah keseimbangan antara keringanan instalasi dan keluasan fitur. Pengguna yang baru pertama kali mencoba agent bisa menjalankannya di WeChat pribadi dalam waktu kurang dari 30 menit - cukup clone, isi API key, dan jalankan. Di sisi lain, developer yang ingin menulis skill atau tool baru tidak perlu memahami keseluruhan codebase; tool registry berbasis file dan plugin loader yang sederhana membuat ekstensi menjadi soal menulis modul Python dengan konvensi tertentu. Pola ini berbeda dari framework besar seperti LangChain atau Agno yang menuntut lebih banyak wiring di awal.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah fleksibilitas channel adapter. Setelah konfigurasi dasar, kami bisa menjalankan agent yang sama di WeChat, Telegram, dan Discord secara paralel - masing-masing channel punya adapter sendiri, sementara brain dan skill registry-nya dipakai bersama. Untuk konteks Indonesia, ini sangat relevan: banyak tim operasional dan UMKM sudah terbiasa dengan platform chat yang berbeda (misal WhatsApp, LINE, Telegram), dan CowAgent memberi fondasi untuk menyatukan otomasi di channel-channel itu tanpa harus memilih satu stack saja. Catatan: WhatsApp adapter tidak built-in resmi di saat penulisan, namun bisa dipasang lewat plugin komunitas atau ditambah sendiri mengikuti pola adapter yang sudah ada.",
+      "Konteks regional: ekosistem CowAgent paling matang untuk pengguna yang membaca dokumentasi Mandarin - ini bukan kelemahan fatal karena README dan cookbook sudah punya terjemahan Inggris yang cukup lengkap, namun untuk fitur-fitur advanced pengguna yang tidak fasih mungkin perlu menggali issue tracker atau grup Discord komunitas. Pengguna di Indonesia yang ingin memaksimalkan CowAgent biasanya menggabungkannya dengan Ollama untuk menjalankan model lokal, sehingga mengurangi ketergantungan pada API berbayar dan membuka peluang deployment di server sendiri. Secara keseluruhan, CowAgent adalah salah satu agent harness yang paling representatif di 2026 - bukan yang paling modular atau paling enterprise, tapi yang paling mudah dijalankan dan paling cepat berevolusi mengikuti kebutuhan nyata komunitas.",
+    ],
+    link: "https://github.com/zhayujie/CowAgent",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-02",
+    updatedAt: "2026-07-02",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
