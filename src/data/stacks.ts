@@ -1097,6 +1097,49 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-07-01",
   },
+  {
+    slug: "whisper",
+    name: "Whisper",
+    tagline: "Speech-to-text open-source dari OpenAI, 99 bahasa dan akurasi 2,7% WER",
+    tags: ["OpenAI", "Open Source", "Speech-to-Text", "Multilingual"],
+    score: 8.7,
+    scores: [
+      { label: "Kemampuan Agentic", value: 6.5 },
+      { label: "Kualitas Output", value: 9.2 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 9.5 },
+      { label: "Harga", value: 9.6 },
+    ],
+    summary:
+      "Whisper adalah model automatic speech recognition (ASR) open-source dari OpenAI yang menjadi standar de facto untuk transkripsi multibahasa sejak 2022, dengan iterasi large-v3 (1,55 miliar parameter, dilisensikan Apache 2.0) mencapai 2,7% word error rate pada audio bersih untuk 99 bahasa termasuk Kanton, Jawa, dan bahasa dengan data pelatihan terbatas. Tersedia gratis untuk self-host lewat pip, Hugging Face, atau API resmi OpenAI seharga $0,006 per menit audio tanpa biaya bahasa atau format tambahan, menjadikannya pilihan ekonomis untuk pipeline transkripsi podcast, subtitle video, dan arsip rapat dalam volume besar.",
+    pros: [
+      "Akurasi terbaik di kelas open-source: 2,7% WER pada audio bersih dan 4,2% pada audio dunia nyata, menyaingi atau mengalahkan API komersial seperti Deepgram Nova-3 dan ElevenLabs Scribe di banyak benchmark",
+      "Mendukung 99 bahasa dengan auto-detection, termasuk bahasa dengan sumber terbatas seperti Kanton, bahasa daerah Asia Tenggara, dan bahasa dengan code-switching khas pengguna Indonesia seperti campuran Indonesia-Jawa atau Indonesia-Inggris",
+      "Lisensi Apache 2.0 yang sepenuhnya gratis untuk self-host: total biaya hanya GPU lokal atau cloud spot instance, tanpa biaya per menit atau biaya lisensi tambahan",
+      "Word-level timestamp out-of-the-box yang akurat untuk pipeline subtitle otomatis, indexing podcast, dan pencarian di dalam file audio yang panjang",
+      "Ekosistem komunitas sangat aktif: 98,6 ribu bintang di GitHub, 4,8 juta unduhan bulanan dari Hugging Face, integrasi siap pakai dengan Hugging Face Transformers, faster-whisper (CTranslate2), whisper.cpp, dan platform API self-hosted seperti OpenWhispr",
+      "OpenAI API harga $0,006 per menit (sekitar Rp 110 per menit) dengan billing granular per detik, tanpa premium untuk bahasa tertentu atau format audio",
+    ],
+    cons: [
+      "Bukan model real-time: latency Whisper dioptimalkan untuk transkripsi batch, dengan chunk 30 detik per proses, sehingga tidak cocok untuk voice agent atau live captioning yang butuh latency di bawah 300 milidetik (untuk ini gunakan Deepgram atau ElevenLabs streaming)",
+      "Risiko halusinasi pada audio panjang: komunitas mendeteksi 5-10 halusinasi per video 45 menit, terutama di bagian hening atau ketika model menebak kata yang tidak diucapkan, sehingga workflow berisiko tinggi seperti transkripsi medis atau hukum wajib punya lapisan validasi manusia",
+      "Belum ada speaker diarization bawaan: memisahkan siapa yang berbicara kapan membutuhkan model terpisah seperti pyannote.audio atau whisper-diarization wrapper, menambah komponen engineering di pipeline",
+      "Kebutuhan GPU substansial untuk inference lokal: large-v3 butuh sekitar 10 GB VRAM, sehingga workstation tanpa GPU NVIDIA kelas data center perlu fallback ke API atau model lebih kecil (small/medium) dengan akurasi turun signifikan",
+      "Repositori cenderung stagnant: update large-v3 stabil sejak akhir 2024, dan sebagian besar perbaikan seperti large-v3-turbo datang dari komunitas atau fork seperti faster-whisper, bukan maintainer OpenAI",
+      "Dokumentasi dan tutorial berbahasa Indonesia masih minim, sebagian besar panduan di Hugging Face dan GitHub ditulis dalam bahasa Inggris atau Mandarin",
+    ],
+    verdict:
+      "Standar de facto untuk transkripsi multibahasa open-source dengan rasio harga-akurasi terbaik di pasar, tapi catatan utamanya adalah bahwa Whisper adalah model batch, bukan engine streaming, dan halusinasi pada audio panjang membuatnya wajib lewat validasi manusia untuk use case berisiko tinggi. Pilih Whisper kalau kamu memproses arsip audio dalam volume besar dengan budget terbatas; pilih Deepgram atau AssemblyAI kalau kamu butuh streaming di bawah 300 ms atau diarization built-in.",
+    body: [
+      "Whisper adalah model automatic speech recognition (ASR) dan speech translation dari OpenAI yang pertama kali dipublikasikan September 2022 sebagai paper Robust Speech Recognition via Large-Scale Weak Supervision oleh Alec Radford dan tim. Model ini dilatih pada 680 ribu jam audio berlabel dan 4 juta hour pseudo-labeled, menggunakan arsitektur Transformer encoder-decoder yang menerima log-Mel spectrogram dan menghasilkan transkripsi teks langsung, dengan token bahasa yang memungkinkan auto-detection untuk 99 bahasa. Setelah iterasi large-v1 dan large-v2, versi large-v3 yang dilisensikan Apache 2.0 muncul sebagai flagship dengan 1,55 miliar parameter, menggunakan 128 Mel frequency bins (naik dari 80) dan token bahasa baru untuk Kanton yang sebelumnya tidak ada di v2. Performa large-v3 menunjukkan penurunan 10-20% word error rate dibanding large-v2 di sebagian besar benchmark, dengan keunggulan paling besar diucapkan bahasa dengan sumber terbatas dan audio dengan noise.",
+      "Untuk integrasi, ada empat jalur utama yang masing-masing punya trade-off berbeda. Jalur pertama, Hugging Face Transformers dengan pipeline automatic-speech-recognition, cocok untuk eksperimen cepat dan prototyping karena setup-nya hanya tiga baris Python, tapi performanya bukan yang tercepat. Jalur kedua, faster-whisper dari SYSTRAN yang menggunakan CTranslate2 untuk inference 4-6 kali lebih cepat dengan memori lebih rendah, menjadikannya default untuk pipeline produksi self-hosted. Jalur ketiga, whisper.cpp dari Georgi Gerganov yang mengkonversi model ke format GGML untuk inference di CPU Apple Silicon atau perangkat edge seperti Raspberry Pi, membuka kasus penggunaan offline di mana data audio tidak boleh keluar dari perangkat. Jalur keempat, OpenAI Audio API dengan nama model whisper-1 seharga $0,006 per menit (sekitar Rp 110 per menit pada kurs Rp 18.500 per dolar), cocok untuk spike load atau ketika kamu tidak mau mengelola infrastruktur GPU sendiri. Di luar empat jalur ini, ada ratusan wrapper dan tool turunan termasuk OpenWhispr untuk desktop dictation, Scriberr untuk self-host, dan TypeWhisper untuk integrasi macOS.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, Whisper adalah model batch, bukan engine streaming, sehingga tidak cocok untuk voice agent real-time atau live caption di mana latency di bawah 300 milidetik wajib; untuk kasus itu Deepgram Nova-3, ElevenLabs Scribe v2, atau AssemblyAI Universal-3 Pro dengan mode streaming adalah pilihan yang lebih sesuai. Kedua, risiko halusinasi: komunitas mendeteksi 5-10 halusinasi per video berdurasi 45 menit, biasanya berupa frasa yang terdengar masuk akal tapi tidak diucapkan, muncul ketika model menebak dari keheningan atau noise statis, sehingga workflow penting seperti transkripsi medis, hukum, atau notulensi rapat yang tunduk pada regulasi wajib lewat validasi manusia. Ketiga, tidak ada speaker diarization bawaan, jadi untuk memisahkan siapa yang berbicara kapan dalam rapat multi-peserta atau wawancara kamu butuh model terpisah seperti pyannote.audio atau whisper-diarization wrapper. Keempat, kebutuhan GPU substansial untuk inference lokal large-v3, sekitar 10 GB VRAM di FP16, sehingga workstation tanpa GPU NVIDIA kelas data center perlu fallback ke API OpenAI atau model lebih kecil. Kelima, repositori cenderung stagnant: perbaikan besar seperti large-v3-turbo datang dari wrapper atau fork komunitas, bukan maintainer OpenAI. Keenam, dokumentasi berbahasa Indonesia sangat minim, sebagian besar panduan di Hugging Face dan GitHub ditulis dalam bahasa Inggris atau Mandarin.",
+      "Untuk pengguna dan tim di Indonesia, Whisper punya posisi menarik di beberapa use case spesifik. Pertama, untuk rumah produksi podcast, channel YouTube edukasi, atau tim redaksi media yang perlu subtitle otomatis untuk konten berdurasi puluhan ribu menit per bulan, kombinasi faster-whisper self-host dengan GPU cloud (modal Rp 2-5 juta per bulan untuk AWS g5.xlarge atau provider lokal seperti IDCloudHost atau Biznet Gio) memproses volume yang sama dengan biaya total di bawah Rp 50 per menit, dibandingkan Rp 600-1.500 per menit di ElevenLabs atau AssemblyAI. Kedua, untuk tim customer service atau riset yang perlu transkripsi wawancara, notulensi rapat, atau interview dalam campuran bahasa Indonesia-Jawa atau Indonesia-Inggris, auto-detection Whisper sangat akurat dan tidak perlu training tambahan; cukup tambahkan initial prompt dalam bahasa yang relevan. Ketiga, untuk startup yang membangun produk voice-to-text atau healthcare documentation, open-source Apache 2.0 memungkinkan deployment on-prem di server internal tanpa mengirim data audio ke cloud, memenuhi regulasi UU PDP dan sektor keuangan dan kesehatan. Keempat, untuk kampus dan peneliti, kombinasi whisper.cpp + model base atau small memungkinkan transkripsi data riset lapangan (wawancara ethnografi, focus group discussion) di laptop biasa tanpa koneksi internet, cocok untuk studi di daerah 3T dengan konektivitas terbatas. Standar harga: OpenAI API $0,006/menit + PPN 11%, self-host lebih ekonomis dengan syarat punya tim DevOps untuk maintenance; untuk eksplorasi, Hugging Face Spaces menyediakan demo interaktif dan Jupyter notebook yang bisa kamu jalankan end-to-end di bawah 10 menit untuk proof of konsep sebelum commit ke arsitektur produksi.",
+    ],
+    link: "https://github.com/openai/whisper",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-02",
+  },
 ];
 
 export function getStack(slug: string) {

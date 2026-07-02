@@ -1,0 +1,155 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "2 Juli 2026",
+  "period": {
+    "date": "2026-07-02",
+    "label": "2 Juli 2026",
+    "path": "/repo/daily/2026/07/02"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-02T00:10:18.164Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "githubUrl": "https://github.com/usestrix/strix",
+      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-08-05T21:28:30Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "microsoft/AI-For-Beginners",
+      "owner": "microsoft",
+      "repo": "AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "githubUrl": "https://github.com/microsoft/AI-For-Beginners",
+      "trendshiftUrl": "https://trendshift.io/repositories/4657",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "AI skills",
+        "Programming examples"
+      ],
+      "dateCreated": "2021-03-03T16:27:36Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
+      "trendshiftUrl": "https://trendshift.io/repositories/23589",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Proxy"
+      ],
+      "dateCreated": "2026-02-13T12:38:31Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "hasaneyldrm/exercises-dataset",
+      "owner": "hasaneyldrm",
+      "repo": "exercises-dataset",
+      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
+      "githubUrl": "https://github.com/hasaneyldrm/exercises-dataset",
+      "trendshiftUrl": "https://trendshift.io/repositories/66951",
+      "language": "HTML",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2026-03-18T03:07:18Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "erincatto/box3d",
+      "owner": "erincatto",
+      "repo": "box3d",
+      "description": "Box3D is a 3D physics engine for games",
+      "githubUrl": "https://github.com/erincatto/box3d",
+      "trendshiftUrl": "https://trendshift.io/repositories/70037",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-05-10T20:26:19Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "facebook/astryx",
+      "owner": "facebook",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/facebook/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "Design system",
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "JuliusBrussee/caveman",
+      "owner": "JuliusBrussee",
+      "repo": "caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "githubUrl": "https://github.com/JuliusBrussee/caveman",
+      "trendshiftUrl": "https://trendshift.io/repositories/25391",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-04T10:03:00Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "HKUDS/Vibe-Trading",
+      "owner": "HKUDS",
+      "repo": "Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "githubUrl": "https://github.com/HKUDS/Vibe-Trading",
+      "trendshiftUrl": "https://trendshift.io/repositories/25527",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Workflow automation",
+        "Fintech"
+      ],
+      "dateCreated": "2026-04-01T09:52:20Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "multica-ai/andrej-karpathy-skills",
+      "owner": "multica-ai",
+      "repo": "andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "githubUrl": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21654",
+      "topics": [],
+      "dateCreated": "2026-01-27T03:53:13Z"
+    }
+  ]
+}
