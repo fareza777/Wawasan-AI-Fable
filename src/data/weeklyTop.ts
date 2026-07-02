@@ -743,6 +743,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
           "Pakai kasus nyata di Google: sync confidential repo ke public (misal TensorFlow), kontribusi balik dari public repo ke internal monorepo, dan import satu kali ke repo baru — Apache-2.0 dan battle-tested selama bertahun-tahun di production Google.",
         ],
       },
+      "JuliusBrussee/caveman": {
+        description:
+          "Skill Claude Code yang bikin agen coding bicara 'seperti gua purba' — kompres output 65-75% token, akurasi teknik tetap 100%, dan kompatibel ke 30+ coding agent.",
+        highlights: [
+          "Kompresor gaya bahasa untuk coding agent: bikin agen bicara ringkas (mirip telegraph) tanpa kehilangan akurasi teknis — benchmark internal klaim rata-rata 65% output token lebih sedikit, dan sampai 87% di task debugging tertentu.",
+          "Bukan cuma untuk Claude Code: skill yang sama bisa dipasang ke 30+ coding agent lewat auto-activation atau rule file (Codex, Gemini, Cursor, Windsurf, Cline, Copilot, dan lain-lain) — kompresi gaya bahasa, bukan terjemahan, jadi tidak peduli bahasa asli prompt kamu.",
+          "Ekosistem command di sekeliling skill: /caveman-commit (Conventional Commit pendek), /caveman-review (komentar PR satu baris), /caveman-stats (tracking token saving + estimasi USD), dan caveman-shrink (MCP middleware yang membungkus tool lain).",
+          "Viral karena sederhana dan efeknya langsung terasa di tagihan API: 78k+ bintang GitHub dan masuk trending karena menyentuh pain point yang universal — biaya coding agent bengkak karena agen terlalu banyak kata pengisi dan basa-basi.",
+        ],
+      },
+      "langchain-ai/openwiki": {
+        description:
+          "CLI resmi LangChain yang menulis dan merawat dokumentasi agent-ready untuk codebase — openwiki menghasilkan folder wiki/ yang bisa di-query langsung oleh AI agent lewat /init dan /update.",
+        highlights: [
+          "Tool dokumentasi codebase yang dirancang dari awal untuk konsumsi AI agent: CLI npm install -g openwiki, jalankan openwiki --init, dan langsung muncul folder openwiki/ berisi dokumentasi terstruktur yang siap di-retrieve oleh Claude Code, Codex, atau coding agent lain.",
+          "Auto-update berdasarkan perubahan repo: openwiki --update membaca diff dari commit terakhir dan menyegarkan wiki yang ada — bukan dokumentasi statis yang cepat basi, melainkan living documentation yang mengikuti kode.",
+          "CLI interaktif atau non-interaktif (-p / --print) plus integrasi OpenRouter sebagai model backend (pilih model lewat /model di CLI) — fleksibel untuk dipakai one-shot di CI atau sesi interaktif di terminal.",
+          "Punya workflow GitHub Actions siap pakai di examples/openwiki-update.yml yang bisa langsung disalin ke repo untuk update terjadwal — bagian dari tren 'agent-ready docs' yang lagi naik, relevan untuk tim engineering yang ingin AI agent selalu onboard tanpa copy-paste manual.",
+        ],
+      },
+      "facebook/astryx": {
+        description:
+          "Design system open-source dari Meta (Astryx) yang dipakai di 13.000+ aplikasi internal — 150+ komponen React dengan StyleX, agent-ready CLI, dan filosofi 'satu sistem untuk manusia dan AI'.",
+        highlights: [
+          "Design system yang dipakai di 13.000+ aplikasi internal Meta selama 8 tahun dan kini di-open-source — 150+ komponen React, 7 tema siap pakai (neutral, butter, matcha, gothic, y2k, dll), dark mode, dan templates lengkap.",
+          "Filosofi 'agent-first': API, docs, dan CLI dirancang bareng agar manusia dan AI assistant build dengan cara yang sama dari referensi yang sama — bukan retrofit, melainkan sistem yang sejak awal mengasumsikan coding agent sebagai warga kelas satu.",
+          "Tanpa lock-in styling: StyleX hanya di-internal, konsumen cukup import CSS dan pakai typed React component. Override dengan className Tailwind/CSS Modules/vanilla CSS — 'swizzle' command bahkan bisa eject source komponen ke project kamu sendiri untuk dimiliki penuh.",
+          "MIT-licensed, paket npm sudah publish (@astryxdesign/core, @astryxdesign/cli, @astryxdesign/build, themes), dan Astryx CLI bisa dipasang sebagai npm script untuk konsistensi invoke — relevan untuk tim Indonesia yang ingin design system serius dari Meta tanpa adopsi tooling baru.",
+        ],
+      },
     };
 
 // Helper: lookup dengan fallback ke template-generated highlights
