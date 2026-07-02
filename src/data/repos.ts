@@ -1605,6 +1605,60 @@ export const repos: Review[] = [
     updatedAt: "2026-07-02",
     featured: false,
   },
+  {
+    slug: "nanobot",
+    name: "nanobot",
+    tagline:
+      "Agent AI personal ultra-ringan dari HKUDS: WebUI, channel chat, tool, memori, MCP, dan deployment dalam satu paket yang bisa dimiliki sendiri",
+    tags: ["AI Agent", "Python", "Self-hosted", "Multi-Channel"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "nanobot dari HKUDS (Data Intelligence Lab, University of Hong Kong) adalah agent AI personal yang sengaja dirancang ringan: core agent kecil dan mudah dibaca, tapi dikelilingi komponen praktis yang dibutuhkan untuk kerja jangka panjang - WebUI, channel chat, tool, memori, MCP, model routing, automasi, dan deployment. Dengan hampir 45 ribu bintang di GitHub, paket ini menjadi salah satu titik masuk paling ramah untuk pengguna yang ingin memiliki sendiri agen AI-nya tanpa terjebak pada satu vendor.",
+    highlights: [
+      "Agent core ultra-ringan yang sengaja ditulis ringkas dan mudah dibaca - arsitekturnya didokumentasikan terbuka lewat halaman architecture dan development",
+      "WebUI bawaan yang menyatu dalam paket: tidak perlu pasang server terpisah, cukup jalankan CLI dan akses lewat browser",
+      "Channel chat adapter yang luas: Telegram, Discord, WeChat, Slack, Email, Feishu, dan QQ - cocokan untuk surface percakapan yang berbeda",
+      "Sistem memori bawaan termasuk default idle auto-compact dan perintah /dream untuk merawat konteks jangka panjang",
+      "Dukungan Model Context Protocol (MCP) yang stabil, dengan reconnect logic dan HTTP probing yang lebih aman",
+      "Model routing fleksibel: multi-provider (OpenAI, Claude, Gemini, DeepSeek, Ollama lokal, Kimi, MiniMax, StepFun, dan banyak lagi) plus fallback_models untuk ketahanan",
+      "SDK Python resmi dengan runtime controls - memungkinkan integrasi programatik ke pipeline atau produk internal",
+      "Workspace project dengan akses kontrol yang jelas, session-bound automations, dan CLI Apps untuk ekstensi non-MCP",
+      "Rilis v0.2.2 (22 Juni 2026) membawa segmented WebUI transcripts, automation management, dan search/STT provider yang lebih kaya",
+      "Lisensi MIT, multibahasa dokumentasi termasuk Bahasa Indonesia, dan komunitas aktif lewat Discord, Feishu, dan WeChat",
+    ],
+    pros: [
+      "Onboarding yang ramah untuk pengguna non-teknis: README menyediakan jalur 'Start Without Technical Background' di samping quick start untuk developer",
+      "Cakupan fitur yang sangat luas untuk ukuran agent personal - WebUI, channel, tool, memori, MCP, dan automasi semuanya dalam satu wheel PyPI",
+      "Kualitas rilis yang konsisten dan cepat - nyaris setiap hari ada update yang meningkatkan ketahanan runtime, ditunjukkan lewat news log di README",
+      "Dokumentasi multibahasa yang sudah termasuk Bahasa Indonesia, menurunkan ambang adopsi untuk pengguna lokal",
+      "Lisensi MIT dan SDK Python yang stabil, membuka peluang integrasi ke produk internal atau otomasi skala kecil-menengah",
+    ],
+    cons: [
+      "Proyek masih dalam iterasi cepat (rilis mayor v0.2.2 baru Juni 2026) - API internal dan konvensi CLI Apps masih mungkin berubah di versi mayor berikutnya",
+      "Beberapa channel (terutama WhatsApp) mengandalkan adapter komunitas - pengguna yang butuh integrasi resmi perlu kontribusi sendiri atau menunggu",
+      "WebUI dan model routing kaya fitur, tapi kurva belajar konfigurasi provider + MCP bisa terasa berat untuk pengguna yang baru pertama kali menjalankan agent",
+    ],
+    verdict:
+      "nanobot adalah salah satu titik masuk paling praktis di 2026 untuk siapa pun yang ingin memiliki agent AI personal secara lokal, multibahasa, dan mudah dikembangkan. Posisi 'ringan tapi lengkap' menjadikannya pilihan menarik di antara agent harness yang cenderung berat atau terlalu minimalis.",
+    body: [
+      "Agent AI personal sering berada di dua ekstrem: yang terlalu sederhana hanya jadi chatbot prompt-respons, dan yang terlalu besar menuntut pemahaman framework mendalam sebelum bisa dijalankan. nanobot mengambil jalan tengah yang menarik: agent core sengaja dibuat kecil dan mudah dibaca, sementara komponen praktis yang dibutuhkan untuk kerja jangka panjang - WebUI, channel chat, tool, memori, MCP, model routing, automasi, deployment - dibundel sebagai paket Python yang bisa dipasang dengan satu perintah. Pendekatan ini membuat eksperimen pertama bisa selesai dalam hitungan menit, sementara pengguna tingkat lanjut tetap punya cukup ruang untuk menulis ekstensi lewat SDK dan CLI Apps.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah kelengkapan paket default-nya. Begitu CLI terpasang, WebUI langsung tersedia tanpa setup server tambahan, channel adapter siap dipakai untuk Telegram, Discord, Slack, dan Email, dan sistem memori dengan default idle auto-compact menjaga konteks tetap sehat selama sesi panjang. Saat workload tumbuh, model routing dengan fallback_models memberi ketahanan ketika provider utama sedang lambat atau error. Pola ini berbeda dari agent harness besar yang menuntut lebih banyak wiring di awal, dan dari CLI minimal yang tidak punya antarmuka visual untuk eksplorasi.",
+      "Untuk konteks Indonesia, nanobot punya dua nilai tambah yang relevan. Pertama, dokumentasi multibahasanya sudah mencakup Bahasa Indonesia, yang menurunkan ambang adopsi untuk pengguna yang tidak nyaman dengan dokumentasi Inggris atau Mandarin. Kedua, kombinasi dukungan provider lokal (misal provider yang expose endpoint OpenAI-compatible) dan channel chat populer di Indonesia (Telegram, WhatsApp lewat adapter komunitas) membuatnya relatif mudah dipasang untuk eksperimen internal tim atau otomasi UMKM. Lisensi MIT juga memberi keleluasaan untuk modifikasi sesuai kebutuhan lokal.",
+      "Batasan yang perlu dipahami: nanobot adalah proyek dengan iterasi cepat - v0.2.2 baru keluar 22 Juni 2026, dengan log perubahan harian yang menunjukkan perhatian tim pada ketahanan runtime. Artinya, konvensi CLI Apps dan API internal masih mungkin berubah di versi mayor berikutnya, sehingga pengguna yang akan membangun di atasnya perlu mengikuti catatan rilis. Untuk deployment skala besar atau komersial, perlu pertimbangan tambahan soal observability, kontrol akses, dan strategi rotasi secret API. Secara keseluruhan, nanobot adalah salah satu representasi paling jujur dari arah agent AI personal di 2026 - ringan, terbuka, multibahasa, dan dirancang untuk dimiliki sendiri, bukan untuk dikunci ke satu vendor.",
+    ],
+    link: "https://github.com/HKUDS/nanobot",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-03",
+    updatedAt: "2026-07-03",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
