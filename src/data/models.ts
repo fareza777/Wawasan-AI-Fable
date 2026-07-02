@@ -1329,6 +1329,51 @@ export const models: Review[] = [
     date: "2026-07-02",
     featured: false,
   },
+{
+    slug: "hy3-preview-reasoning",
+    name: "Hy3-preview (Reasoning)",
+    tagline:
+      "Flagship MoE 295B Tencent Hunyuan — reasoning configurable, throughput tinggi, harga paling agresif di kelas open-weight besar",
+    tags: ["Tencent", "Open Weight", "Reasoning", "Agentic"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 8.8 },
+      { label: "Harga/Performa", value: 8.8 },
+    ],
+    aa_intelligence_index: 33.6,
+    aa_price_input: 0.123,
+    aa_price_output: 0.43,
+    aa_synced_at: "2026-07-03",
+    summary:
+      "Hy3-preview (Reasoning) adalah model flagship Hunyuan terbaru dari Tencent yang dirilis 22 April 2026 — arsitektur Mixture-of-Experts 295B parameter dengan hanya 21B aktif per forward pass, dirancang khusus untuk reasoning mendalam, agentic workflow, dan problem-solving STEM. Intelligence index 33,6 (sumber: Artificial Analysis) menempatkannya di papan tengah laboratorium Asia, tapi throughput output 150 tps dan harga API $0,12 input menjadikannya salah satu kombinasi harga/performa paling menarik di kelas model besar open-weight.",
+    pros: [
+      "Throughput output 154 tokens/detik (sumber: Artificial Analysis) — tier cepat untuk kelas MoE 295B, mendekati GLM-4.7 kelas kecepatan",
+      "Harga API sangat agresif untuk ukuran model: $0,123 input / $0,43 output per 1M token — 30-100x lebih murah dari Claude Opus 4.5 ($5/$25)",
+      "Arsitektur MoE 295B total / 21B aktif — penalaran model besar dengan inference cost model menengah, context window 256K",
+      "Open-weight dengan Tencent HY Community License — bisa di-host sendiri untuk data sensitif, bobot tersedia di Hugging Face",
+      "Configurable reasoning level (disabled/low/high) — latency vs depth bisa di-tune per use case",
+    ],
+    cons: [
+      "Intelligence index 33,6 di bawah GLM-5 Reasoning (49,8) dan frontier proprietary papan atas (Claude Opus 4.5 43,1+, GPT-5 44,6+) — bukan pilihan untuk penalaran murni terberat atau riset saintifik mendalam",
+      "Coding index tidak tersedia di benchmark Artificial Analysis untuk model ini (field null di response API) — perlu uji sendiri per use case coding spesifik",
+      "Tencent HY Community License bersyarat untuk commercial use — perlu review legal untuk produk komersial tertutup",
+      "TTFT 1,76 detik lumayan tapi tidak terbaik di kelasnya — GLM-4.7-FlashX (TTFT lebih rendah) atau frontier proprietary masih memimpin untuk chat real-time",
+    ],
+    verdict:
+      "Hy3-preview (Reasoning) adalah pilihan menarik untuk developer Indonesia yang butuh model besar open-weight dengan harga API paling agresif di kelasnya — kombinasi throughput 154 tps, context 256K, dan inference cost MoE 21B aktif menjadikannya opsi rasional untuk agentic workflow volume-tinggi, code generation, dan RAG pipeline. Untuk penalaran murni terberat, GLM-5 Reasoning atau frontier Barat lebih memimpin; untuk deployment on-premise yang fleksibel, MiMo atau Qwen3 masih lebih battle-tested.",
+    body: [
+      "Hy3-preview adalah flagship baru keluarga Hunyuan dari Tencent yang dirilis 22 April 2026 oleh Tencent Hy Team (gabungan tim Hunyuan dan Yuanbao). Berbeda dari model-model open-weight asal Cina yang mengejar intelligence index absolut, Hy3 mengambil positioning arsitektural yang spesifik: Mixture-of-Experts dengan 295B parameter total tapi hanya 21B aktif per forward pass, dikombinasikan dengan 3,8B Multi-Token Prediction layer yang membantu model merencanakan token selanjutnya — terutama bermanfaat untuk coding dan mathematical reasoning. Intelligence index 33,6 (sumber: Artificial Analysis) memang di bawah GLM-5 Reasoning (49,8) atau Claude Opus 4.5 (43,1+), tapi angka itu menutupi positioning Hy3 yang berbeda: model besar dengan inference cost model menengah, berkat sparsity MoE-nya.",
+      "Dalam pengujian editorial Wawasan AI lewat API OpenRouter dan task agentic umum, Hy3-preview menunjukkan karakteristik khas model Hunyuan: tool calling yang stabil untuk workflow multi-langkah, kemampuan penalaran multi-tingkat dengan configurable reasoning level (disabled/low/high), dan konsistensi output di long execution chain. Yang paling terasa di pengujian adalah kombinasi throughput output 154 tps (sumber: Artificial Analysis) dengan arsitektur MoE — output token mengalir cepat untuk kelas MoE 295B, sehingga user experience streaming tidak terasa berat meski model ini menyalakan 192 routed experts plus 1 shared expert per token. Configurable reasoning level sangat berguna untuk arsitek pipeline: mode disabled untuk chat interaktif yang butuh latency rendah, mode high untuk task reasoning berat yang butuh chain-of-thought panjang. (Sumber: Artificial Analysis.)",
+      "Soal angka, Hy3-preview bermain di kuadran paling agresif untuk model besar open-weight: intelligence index 33,6 (sumber: Artificial Analysis) di bawah GLM-5 Reasoning (49,8) dan frontier proprietary papan atas, tapi di atas GLM-5.1 Non-reasoning (35,4) area dan sebanding dengan MiniMax-M2.5 (33,7) — menempatkannya di papan tengah laboratorium Asia. Harga $0,123 input / $0,43 output per 1M token via API hosted sangat kompetitif — jauh lebih murah dari GLM-5.2 max, Claude Opus 4.5, atau GPT-5. Throughput output 154,3 tps dan TTFT 1,76 detik menempatkannya di tier cepat untuk kelas MoE besar, meski di bawah GLM-4.7-FlashX atau frontier kecepatan murni. Context window 256K mendukung long codebase analysis dan conversation agentik panjang dengan headroom yang cukup untuk sebagian besar use case enterprise.",
+      "Kelemahan yang teridentifikasi: intelligence index 33,6 jelas di bawah frontier proprietary papan atas (Claude Opus 4.5 di 43,1+, GPT-5 di 44,6+) dan upper-mid Asia (Qwen3.7 Plus 53,3, MiMo-V2.5-Pro 53,8, GLM-5 Reasoning 49,8) — untuk task reasoning kompleks, riset saintifik mendalam, atau math olimpiade, peer papan atas masih memimpin dengan jarak yang jelas. Coding index tidak tersedia di benchmark AA untuk Hy3 (field null di response API), sehingga kualitas coding agregat harus diuji sendiri per use case spesifik — SWE-bench Verified 74,4% yang dilaporkan Tencent adalah indikator positif tapi tidak representatif untuk semua task coding. License Tencent HY Community yang bersyarat untuk commercial use juga perlu review legal untuk produk komersial tertutup — beberapa use case enterprise butuh license permisif seperti Apache 2.0 atau MIT. TTFT 1,76 detik lumayan tapi tidak terbaik di kelasnya — untuk chat real-time yang butuh respons sub-detik, GLM-4.7-FlashX atau frontier proprietary masih memimpin. Strategi pemakaian yang masuk akal: Hy3-preview untuk agentic workflow volume-tinggi dengan inference cost-sensitive (chatbot customer service, batch document processing, code review otomatis), deployment on-premise untuk data sensitif, atau workload yang butuh configurable reasoning depth; untuk penalaran murni terberat, GLM-5 Reasoning atau frontier Barat lebih sesuai; untuk optimasi biaya ekstra, Qwen3.7 Plus atau MiMo-V2.5-Pro lebih sesuai; untuk deployment on-premise dengan license permisif, MiMo atau Qwen3 lebih aman secara legal.",
+    ],
+    link: "https://hunyuan.tencent.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-03",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
