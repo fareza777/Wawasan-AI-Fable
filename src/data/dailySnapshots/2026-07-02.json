@@ -1,17 +1,27 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "2 Juli 2026",
-  "period": {
-    "date": "2026-07-02",
-    "label": "2 Juli 2026",
-    "path": "/repo/daily/2026/07/02"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-02T00:10:18.164Z",
+  "fetchedAt": "2026-07-02T05:32:46.271Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "langchain-ai/openwiki",
+      "owner": "langchain-ai",
+      "repo": "openwiki",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+      "githubUrl": "https://github.com/langchain-ai/openwiki",
+      "trendshiftUrl": "https://trendshift.io/repositories/70339",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T23:48:26Z"
+    },
+    {
+      "rank": 2,
       "fullName": "msitarzewski/agency-agents",
       "owner": "msitarzewski",
       "repo": "agency-agents",
@@ -23,21 +33,6 @@
         "AI agent"
       ],
       "dateCreated": "2025-10-13T12:12:29Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "usestrix/strix",
-      "owner": "usestrix",
-      "repo": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "githubUrl": "https://github.com/usestrix/strix",
-      "trendshiftUrl": "https://trendshift.io/repositories/15362",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Pentesting"
-      ],
-      "dateCreated": "2025-08-05T21:28:30Z"
     },
     {
       "rank": 3,
@@ -56,35 +51,6 @@
     },
     {
       "rank": 4,
-      "fullName": "diegosouzapw/OmniRoute",
-      "owner": "diegosouzapw",
-      "repo": "OmniRoute",
-      "description": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
-      "trendshiftUrl": "https://trendshift.io/repositories/23589",
-      "language": "TypeScript",
-      "topics": [
-        "AI infrastructure",
-        "Proxy"
-      ],
-      "dateCreated": "2026-02-13T12:38:31Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "hasaneyldrm/exercises-dataset",
-      "owner": "hasaneyldrm",
-      "repo": "exercises-dataset",
-      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
-      "githubUrl": "https://github.com/hasaneyldrm/exercises-dataset",
-      "trendshiftUrl": "https://trendshift.io/repositories/66951",
-      "language": "HTML",
-      "topics": [
-        "Programming examples"
-      ],
-      "dateCreated": "2026-03-18T03:07:18Z"
-    },
-    {
-      "rank": 6,
       "fullName": "erincatto/box3d",
       "owner": "erincatto",
       "repo": "box3d",
@@ -92,40 +58,43 @@
       "githubUrl": "https://github.com/erincatto/box3d",
       "trendshiftUrl": "https://trendshift.io/repositories/70037",
       "language": "C",
-      "topics": [],
+      "topics": [
+        "Game development"
+      ],
       "dateCreated": "2026-05-10T20:26:19Z"
     },
     {
-      "rank": 7,
-      "fullName": "facebook/astryx",
-      "owner": "facebook",
-      "repo": "astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "githubUrl": "https://github.com/facebook/astryx",
-      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "rank": 5,
+      "fullName": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "githubUrl": "https://github.com/usestrix/strix",
+      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-08-05T21:28:30Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "yikart/AiToEarn",
+      "owner": "yikart",
+      "repo": "AiToEarn",
+      "description": "Let's use AI to Earn!",
+      "githubUrl": "https://github.com/yikart/AiToEarn",
+      "trendshiftUrl": "https://trendshift.io/repositories/20785",
       "language": "TypeScript",
       "topics": [
-        "Design system",
-        "UI components"
+        "AI agent",
+        "Workflow automation"
       ],
-      "dateCreated": "2026-01-09T16:20:32Z"
+      "dateCreated": "2025-02-24T08:03:24Z"
     },
     {
-      "rank": 8,
-      "fullName": "JuliusBrussee/caveman",
-      "owner": "JuliusBrussee",
-      "repo": "caveman",
-      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-      "githubUrl": "https://github.com/JuliusBrussee/caveman",
-      "trendshiftUrl": "https://trendshift.io/repositories/25391",
-      "language": "JavaScript",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-04-04T10:03:00Z"
-    },
-    {
-      "rank": 9,
+      "rank": 7,
       "fullName": "HKUDS/Vibe-Trading",
       "owner": "HKUDS",
       "repo": "Vibe-Trading",
@@ -141,15 +110,49 @@
       "dateCreated": "2026-04-01T09:52:20Z"
     },
     {
+      "rank": 8,
+      "fullName": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
+      "trendshiftUrl": "https://trendshift.io/repositories/23589",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Proxy"
+      ],
+      "dateCreated": "2026-02-13T12:38:31Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "facebook/astryx",
+      "owner": "facebook",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/facebook/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "Design system",
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
       "rank": 10,
-      "fullName": "multica-ai/andrej-karpathy-skills",
-      "owner": "multica-ai",
-      "repo": "andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "githubUrl": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/21654",
-      "topics": [],
-      "dateCreated": "2026-01-27T03:53:13Z"
+      "fullName": "rommapp/romm",
+      "owner": "rommapp",
+      "repo": "romm",
+      "description": "A beautiful, powerful, self-hosted rom manager and player.",
+      "githubUrl": "https://github.com/rommapp/romm",
+      "trendshiftUrl": "https://trendshift.io/repositories/14133",
+      "language": "Python",
+      "topics": [
+        "Self-hosted",
+        "Emulator"
+      ],
+      "dateCreated": "2023-03-08T16:11:01Z"
     }
   ]
 }
