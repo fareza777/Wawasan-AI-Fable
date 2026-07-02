@@ -1126,6 +1126,53 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "pemerintah-targetkan-dua-perpres-ai-rampung-pada-2026-draf-final-sudah-di-setneg",
+    title: "Dua Perpres AI di Meja Setneg: Akhirnya Ada Aturan Main untuk Kecerdasan Buatan di Indonesia",
+    excerpt: "Setelah bertahun-tahun jadi wacana, dua regulasi utama AI Indonesia — Perpres Etika AI dan Perpres Peta Jalan AI — sudah masuk tahap penandatanganan di Setneg. Ini ringkasan dan implikasinya untuk industri lokal.",
+    category: "Opini",
+    date: "2026-07-03",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau ditarik mundur dua tahun, narasi AI di Indonesia lebih banyak berisi wacana regulasi yang molor. Pada 2024, pemerintah sudah berjanji akan mengeluarkan Peraturan Presiden tentang Etika AI, tapi pembahasan lintas kementerian berlarut-larut dan posisinya berpindah-pindah dari meja Komdigi ke Kementerian Hukum, lalu kembali lagi. Sampai akhirnya, pada awal Juni 2026, Menteri Komunikasi dan Digital Meutya Hafid memastikan kedua draf final sudah diserahkan ke Sekretariat Negara dan ditargetkan rampung paling lambat akhir tahun ini.",
+          "Bukan satu, tapi dua regulasi yang disiapkan sekaligus: Perpres Etika AI dan Perpres Peta Jalan AI. Keduanya masuk dalam daftar 46 rancangan perpres yang harus ditetapkan dalam satu tahun ke depan, sebagaimana tertuang dalam Keputusan Presiden Nomor 38 Tahun 2025. Artinya, kedua beleid ini tidak lagi masuk kategori 'kalau sempat' — ada target waktu dan ada konsekuensi politis kalau tidak jadi.",
+        ],
+      },
+      {
+        heading: "Apa isi dua Perpres itu, dan kenapa dipisah",
+        paragraphs: [
+          "Pemisahan ini bukan kebetulan birokrasi, melainkan pilihan desain yang cukup matang. Perpres Peta Jalan AI adalah dokumen strategi: memetakan arah pengembangan AI Indonesia sampai 2030, mulai dari kebutuhan talenta, infrastruktur, riset, sampai sektor prioritas seperti pendidikan, kesehatan, dan keuangan. Dokumen ini yang akan menjadi kompas belanja negara dan acuan kerja sama internasional.",
+          "Perpres Etika AI, sementara itu, adalah payung hukum operasional. Tujuannya bukan mengatur detail teknis penggunaan AI, melainkan memberi prinsip dan rambu: transparansi, fairness, pengawasan manusia, non-diskriminasi, manajemen risiko, hingga kewajiban uji dampak untuk sistem AI berisiko tinggi. Detail teknisnya diserahkan ke regulator sektoral — OJK untuk keuangan, Kementerian Kesehatan untuk layanan medis, dan seterusnya. Pola ini mirip dengan apa yang dilakukan Uni Eropa di AI Act, hanya saja dengan pendekatan yang lebih ringkas dan adaptif terhadap konteks lokal.",
+          "Dalam penelusuran editorial Wawasan AI, kombinasi 'strategi' dan 'etika' ini menarik karena mengakui dua hal sekaligus. Pertama, AI bukan hanya soal teknologi, tapi juga arah ekonomi dan kedaulatan digital. Kedua,regulasi yang terlalu kaku akan membunuh inovasi, dan regulasi yang terlalu longgar akan meninggalkan publik tanpa perlindungan. Peta jalan menjawab kebutuhan pertama; Etika AI menjawab kebutuhan kedua.",
+        ],
+      },
+      {
+        heading: "Lompatan yang tidak datang dari ruang kosong",
+        paragraphs: [
+          "Kalau dibandingkan dengan negara lain, Indonesia sebenarnya bukan yang paling cepat. Data OECD AI Policy Observatory yang dirujuk pemberitaan Kompas menunjukkan bahwa pada awal 2026 lebih dari 70 negara sudah memiliki setidaknya satu kebijakan, strategi, atau regulasi terkait AI. Dari perspektif filosofi regulasi, secara umum ada tiga kelompok besar. Uni Eropa memimpin pendekatan regulasi hukum keras berbasis risiko. Amerika Serikat memilih kombinasi regulasi mandiri industri dan hukum negara. Jepang dan Singapura berada di kubu tata kelola lunak dengan pedoman industri yang lebih fleksibel.",
+          "Indonesia, lewat dua Perpres ini, terlihat mengambil jalan tengah. Tidak sekeras EU yang membuat AI Act sepanjang ratusan halaman dengan empat tingkat klasifikasi risiko, tapi juga tidak selonggar Jepang yang banyak mengandalkan self-regulation. Peta Jalan AI akan jadi dokumen strategis yang lebih politis, sementara Etika AI akan jadi kerangka kerja yang bisa langsung dirujuk oleh regulator, penegak hukum, dan pengadilan. Untuk negara dengan 270 juta pengguna internet dan adopsi AI yang sangat cepat tapi tidak merata, jalan tengah ini rasional — sepanjang implementasinya konsisten.",
+        ],
+      },
+      {
+        heading: "Tekanan dari luar dan dari dalam",
+        paragraphs: [
+          "Proses menuju dua Perpres ini tidak mulus. Meutya Hafid sendiri mengakui bahwa sejumlah perusahaan dari luar negeri, termasuk dari Amerika Serikat, sempat meminta draf dibahas ulang. Detail permintaannya tidak diungkap ke publik, tapi dalam konteks AI global saat ini, tekanan seperti ini lazim terjadi: vendor model besar ingin kepastian bahwa regulasi tidak akan memblokir model mereka dari pasar Indonesia, sementara pemerintah ingin memastikan ada ruang untuk pengembangan model lokal dan talenta domestik.",
+          "Di sisi lain, kasus-kasus yang jadi pemicu moral regulasi AI di Indonesia juga sudah menumpuk. Clearview AI yang menyalin foto wajah warga Eropa, Grok AI yang dipakai untuk membuat konten pelecehan seksual, hingga World App yang memindai retina warga dengan iming-iming uang tunai — tiga contoh ini disebut langsung oleh Menkominfo sebagai latar belakang urgensi Etika AI. Risiko penyalahgunaan data pribadi, manipulasi konten, eksploitasi anak, hingga ancaman keamanan publik bukan lagi skenario hipotetis.",
+        ],
+      },
+      {
+        heading: "Apa yang perlu dilakukan industri, startup, dan pembaca",
+        paragraphs: [
+          "Buat industri besar dan startup yang menggunakan AI dalam produknya, ada tiga hal yang layak disiapkan mulai sekarang. Pertama, pemetaan sistem AI yang digunakan — model apa, data apa yang diproses, output apa yang dihasilkan ke pengguna. Ini akan menjadi dasar uji dampak yang kemungkinan akan diwajibkan di sektor-sektor tertentu. Kedua, dokumentasi dasar: model card, log penggunaan, dan catatan uji bias. Kalau regulator meminta audit enam bulan dari sekarang, yang punya catatan akan jauh lebih siap dibanding yang harus menyusun dari nol.",
+          "Ketiga, untuk yang beroperasi di sektor teregulasi (keuangan, kesehatan, pendidikan), siapkan jalur komunikasi dengan regulator sektoral kalian. Perpres Etika AI akan jadi payung, tapi aturan teknis akan diturunkan oleh OJK, Kemenkes, Kemendikbud, dan sebagainya. Mereka yang sudah duduk di meja lebih awal akan ikut menentukan bentuk aturan turunannya.",
+          "Untuk pembaca umum, implikasi praktisnya lebih sederhana: mulai pertanyakan AI apa yang kalian pakai, data apa yang kalian berikan, dan risiko apa yang kalian tanggung. Literasi AI bukan hanya soal 'cara pakai ChatGPT', tapi juga soal 'siapa yang mengawasi sistem ini dan siapa yang bertanggung jawab kalau salah'. Dua Perpres yang akan keluar tahun ini adalah langkah pertama untuk menjawab pertanyaan kedua — tapi kerja besarnya baru akan dimulai setelah kedua beleid itu ditandatangani.",
+          "Dalam pengujian editorial Wawasan AI, kabar masuknya draf final ke Setneg adalah berita baik yang datang dengan catatan. Bagus karena ada kepastian regulasi yang sudah lama ditunggu. Catatannya: regulasi yang bagus di atas kertas bisa mandul di implementasi, dan regulasi yang sederhana tapi ditegakkan konsisten biasanya lebih berguna daripada yang ambisius tapi tidak pernah dipakai. Untuk Indonesia, harapannya sederhana: dua Perpres ini tidak jadi dokumen pajangan, tapi jadi pegangan kerja yang benar-benar mengubah cara AI dikembangkan dan dipakai di negeri ini.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
