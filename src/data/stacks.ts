@@ -1140,6 +1140,46 @@ export const stacks: Review[] = [
     linkLabel: "Lihat di GitHub",
     date: "2026-07-02",
   },
+  {
+    slug: "codestral",
+    name: "Codestral",
+    tagline: "Model code dari Mistral yang open weight dan bisa self-host",
+    tags: ["Mistral", "Open Weight", "Code Model", "Self-Host"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Codestral adalah model code khusus dari Mistral yang rilis dengan lisensi open weight (versi awal di bawah Mistral AI Non-Production License, lalu Codestral 2 di bawah Apache 2.0), dirancang untuk fill-in-the-middle, code completion, dan integrasi ke IDE atau tool agentic lewat API. Posisi harganya berada di kelas menengah: lebih murah dari Claude Sonnet atau GPT-4o untuk inference, tapi tidak seekonomis DeepSeek Coder atau Qwen2.5-Coder untuk pemakaian volume besar.",
+    pros: [
+      "256K context window, yang terbesar di antara code model open weight per awal 2026 dan cukup untuk membaca satu modul besar atau beberapa file sekaligus",
+      "Tersedia di banyak provider (Mistral langsung, Azure AI Foundry, Google Vertex AI, OpenRouter, Vercel AI Gateway) — tidak terkunci di satu vendor",
+      "Mendukung 80+ bahasa pemrograman dengan akurasi fill-in-the-middle yang solid di Python, JavaScript, TypeScript, dan Rust",
+      "Open weight untuk Codestral 2, jadi bisa di-deploy di infrastruktur sendiri tanpa ketergantungan API",
+      "API function calling dan JSON schema native, cocok untuk dipakai sebagai backend tool agentic selain sekadar autocomplete",
+    ],
+    cons: [
+      "Untuk penalaran panjang atau arsitektur refactor lintas puluhan file, hasilnya masih kalah dari Claude Sonnet 4.5 atau GPT-4.1 yang jadi patokan di benchmark SWE-bench Verified",
+      "Performa code completion kurang halus di editor ringan; untuk pengalaman IDE yang mulus biasanya tetap dipakai sebagai backend di tool seperti Continue.dev atau Cline",
+      "Ekosistem tutorial bahasa Indonesia sangat minim, sebagian besar dokumentasi dan contoh ada di komunitas Mistral Discord atau Hugging Face berbahasa Inggris",
+    ],
+    verdict:
+      "Pilihan pragmatis untuk tim yang ingin model code open weight dari vendor non-Cina dengan harga API di kelas menengah dan portabilitas multi-cloud, tapi standar agentic coding untuk tugas berat masih dipegang Claude Code dan Cursor. Pilih Codestral kalau kamu butuh self-host atau multi-cloud dengan kontrol lisensi yang jelas; pilih Claude Sonnet kalau kamu mau hasil terbaik tanpa pusing setup.",
+    body: [
+      "Codestral adalah code model pertama yang dirilis Mistral AI pada Mei 2024 dengan positioning sebagai model code khusus, bukan general-purpose LLM yang disuruh menulis kode. Varian awalnya (22 miliar parameter, 7 miliar versi Mamba) dilatih pada dataset khusus code dengan arsitektur yang mendukung fill-in-the-middle — pola di mana model menyisipkan kode di tengah file yang sudah ada, berguna untuk refactor inline atau melanjutkan blok fungsi yang terpotong. Setelah iterasi pertama itu, Mistral merilis Codestral 2 pada awal 2026 dengan lisensi Apache 2.0 (varian sebelumnya di bawah Mistral AI Non-Production License yang membatasi penggunaan komersial), memperbesar context window ke 256K token dan memperbaiki performa di benchmark HumanEval, MBPP, dan SWE-bench Verified hingga mendekati frontier model proprietary di kelasnya.",
+      "Yang membuat Codestral menarik untuk pasar Indonesia adalah kombinasi harga, lisensi, dan portabilitas. Harga API di Mistral langsung adalah $0,30 per 1 juta token input dan $0,90 per 1 juta token output (sekitar Rp 5.500 input dan Rp 16.500 output per 1 juta token pada kurs Rp 18.500 per dolar), dengan diskon 50% untuk batch API menjadi $0,15 dan $0,45. Bandingkan dengan Claude Sonnet 4.5 di $3 input dan $15 output per 1 juta token, atau GPT-4.1 di $2,50 input dan $10 output: selisihnya 7-10 kali lebih murah untuk workload code completion volume besar. OpenRouter menambahkan cache read $0,03 per 1 juta token, yang lebih jauh menekan biaya untuk skenario RAG codebase. Lisensi Apache 2.0 pada Codestral 2 berarti tim bisa download bobotnya dan jalankan di infrastruktur sendiri, memenuhi kebutuhan data residency untuk sektor keuangan dan kesehatan yang tunduk pada UU PDP. Varian Mamba 7B dengan harga $0,25 per 1 juta token input dan output (flat) cocok untuk inference cepat di edge device atau workstation tanpa GPU data center.",
+      "Integrasi ke workflow tim engineering relatif straightforward. Untuk IDE, ada plugin resmi Mistral untuk VS Code dan JetBrains, dan Codestral jadi salah satu model default di Continue.dev dan Cline — dua tool open source populer yang menyambungkan banyak backend LLM ke editor. Untuk pipeline agentic, Codestral mendukung function calling dan JSON schema native, jadi bisa dipasang di belakang tool seperti LangGraph, CrewAI, atau Vanna sebagai backend code execution dan code review. Untuk workload self-host, komunitas menyediakan quantization GGUF dan deployment script untuk vLLM, TGI, dan Ollama, dengan kebutuhan hardware mulai dari satu GPU RTX 4090 24 GB untuk quantized 7B hingga multi-GPU H100 untuk full precision 22B. Penyedia cloud yang menawarkan Codestral antara lain Azure AI Foundry ($0,30 input / $0,90 output per 1M), Google Vertex AI ($0,20 input / $0,60 output — lebih murah 33% dari Mistral langsung karena jalur enterprise Google), Vercel AI Gateway, dan OpenRouter.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, untuk refactor arsitektur besar atau debug lintas puluhan file, hasil Codestral masih di belakang Claude Sonnet 4.5 atau GPT-4.1 yang jadi patokan — benchmark SWE-bench Verified menunjukkan gap 15-25 poin persentase pada tugas multi-file agentic, jadi untuk coding agent utama tim, Codestral lebih tepat diposisikan sebagai salah satu backend, bukan satu-satunya. Kedua, pengalaman di editor ringan (misal Notepad++ atau Sublime) belum sehalus Cursor Tab atau Copilot yang dioptimasi untuk completion latency di bawah 200 ms — untuk editor yang sensitif latency, jalankan Codestral via local server atau provider dengan region terdekat (Vertex AI Singapore untuk pengguna Indonesia). Ketiga, dokumentasi dan tutorial berbahasa Indonesia masih minim; sebagian besar panduan ada di Mistral documentation, Hugging Face model card, dan diskusi komunitas di Discord yang berbahasa Inggris dan Perancis.",
+      "Untuk pengguna dan tim di Indonesia, Codestral punya beberapa use case spesifik yang menarik. Pertama, untuk startup yang membangun produk code assistant atau AI pair-programmer dengan brand lokal, lisensi Apache 2.0 + harga API Mistral langsung memungkinkan unit economics yang sehat tanpa harus menggantungkan ke OpenAI atau Anthropic yang margin-nya lebih ketat. Kedua, untuk kampus dan tim riset yang ingin eksperimen model code open weight dari vendor non-Cina (sebagai alternatif Qwen2.5-Coder dari Alibaba atau DeepSeek Coder), Codestral menawarkan kualitas mendekati frontier dengan dukungan multi-cloud dan quantization yang matang. Ketiga, untuk tim enterprise di sektor finance dan healthcare yang punya regulasi data residency ketat, opsi self-host via vLLM atau Ollama di on-prem GPU cluster (modal Rp 200-500 juta untuk 4x H100 80 GB atau 8x RTX 4090 24 GB) memungkinkan deployment tanpa data code keluar ke cloud. Standar harga: API Mistral $0,30 input / $0,90 output per 1M token (~$5,5K dan ~$16,5K per miliar token dalam Rupiah), self-host break-even sekitar 3-6 bulan untuk workload di atas 50 juta token per hari, dan tersedia juga tier gratis dengan rate limit terbatas untuk eksplorasi awal.",
+    ],
+    link: "https://mistral.ai/news/codestral/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-03",
+  },
 ];
 
 export function getStack(slug: string) {

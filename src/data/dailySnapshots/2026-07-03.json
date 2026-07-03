@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "3 Juli 2026",
+  "period": {
+    "date": "2026-07-03",
+    "label": "3 Juli 2026",
+    "path": "/repo/daily/2026/07/03"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-03T00:03:31.196Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "githubUrl": "https://github.com/usestrix/strix",
+      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-08-05T21:28:30Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "JuliusBrussee/caveman",
+      "owner": "JuliusBrussee",
+      "repo": "caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "githubUrl": "https://github.com/JuliusBrussee/caveman",
+      "trendshiftUrl": "https://trendshift.io/repositories/25391",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-04T10:03:00Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "langchain-ai/openwiki",
+      "owner": "langchain-ai",
+      "repo": "openwiki",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+      "githubUrl": "https://github.com/langchain-ai/openwiki",
+      "trendshiftUrl": "https://trendshift.io/repositories/70339",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T23:48:26Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "microsoft/AI-For-Beginners",
+      "owner": "microsoft",
+      "repo": "AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "githubUrl": "https://github.com/microsoft/AI-For-Beginners",
+      "trendshiftUrl": "https://trendshift.io/repositories/4657",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "AI skills",
+        "Programming examples"
+      ],
+      "dateCreated": "2021-03-03T16:27:36Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "erincatto/box3d",
+      "owner": "erincatto",
+      "repo": "box3d",
+      "description": "Box3D is a 3D physics engine for games",
+      "githubUrl": "https://github.com/erincatto/box3d",
+      "trendshiftUrl": "https://trendshift.io/repositories/70037",
+      "language": "C",
+      "topics": [
+        "Game development"
+      ],
+      "dateCreated": "2026-05-10T20:26:19Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "facebook/astryx",
+      "owner": "facebook",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/facebook/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "Design system",
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "santifer/career-ops",
+      "owner": "santifer",
+      "repo": "career-ops",
+      "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+      "githubUrl": "https://github.com/santifer/career-ops",
+      "trendshiftUrl": "https://trendshift.io/repositories/25195",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Resume building"
+      ],
+      "dateCreated": "2026-04-04T18:21:18Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "openai/codex-plugin-cc",
+      "owner": "openai",
+      "repo": "codex-plugin-cc",
+      "description": "Use Codex from Claude Code to review code or delegate tasks.",
+      "githubUrl": "https://github.com/openai/codex-plugin-cc",
+      "trendshiftUrl": "https://trendshift.io/repositories/25232",
+      "language": "JavaScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-30T15:29:52Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "safishamsi/graphify",
+      "owner": "safishamsi",
+      "repo": "graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "githubUrl": "https://github.com/safishamsi/graphify",
+      "trendshiftUrl": "https://trendshift.io/repositories/25296",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-03T15:49:07Z"
+    }
+  ]
+}
