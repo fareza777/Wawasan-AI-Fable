@@ -1374,6 +1374,50 @@ export const models: Review[] = [
     date: "2026-07-03",
     featured: false,
   },
+  {
+    slug: "o3-pro",
+    name: "o3-pro",
+    tagline: "Varian reasoning dalam OpenAI o-series — penalaran paling dalam, harga paling premium",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Deep Research"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 5.5 },
+      { label: "Harga/Performa", value: 5.5 },
+    ],
+    aa_intelligence_index: 32.5,
+    aa_coding_index: 0,
+    aa_price_input: 20,
+    aa_price_output: 80,
+    aa_synced_at: "2026-07-04",
+    summary:
+      "o3-pro adalah varian reasoning paling berat OpenAI untuk aplikasi yang butuh chain-of-thought panjang dan konsisten — sains, matematika, dan riset multi-langkah. Intelligence index 32,5 (sumber: Artificial Analysis) bukan yang tertinggi di pasaran, tapi pola penalaran deliberatif dan konsistensi jawaban panjang membuatnya andalan untuk use case reasoning murni, bukan volume tinggi.",
+    pros: [
+      "Penalaran deliberatif yang sangat stabil untuk problem matematika, fisika, dan logika multi-langkah",
+      "Output koheren di reasoning chain panjang — jarang melompat ke kesimpulan prematur",
+      "Akses API resmi OpenAI dengan dokumentasi paling matang di industri",
+      "Dukungan tooling dan integrasi ChatGPT Pro/Team — relatif mudah di-deploy untuk produk komersial",
+    ],
+    cons: [
+      "TTFT rata-rata 64,4 detik (sumber: Artificial Analysis) — paling lambat di antara model besar yang aktif digunakan, tidak cocok untuk chat interaktif real-time",
+      "Throughput output hanya 29,1 tokens/detik (sumber: Artificial Analysis) — 3-5x lebih lambat dari frontier kecepatan",
+      "Harga $20 input / $80 output per 1M token (sumber: Artificial Analysis) — 4x lebih mahal dari GPT-5 per 1M token output, premium tertinggi di kelas proprietary",
+      "Intelligence index 32,5 di bawah GPT-5 (44,6) dan Claude Opus 4.5 (43,1+) — rasio harga/performa kurang menarik untuk workload umum",
+    ],
+    verdict:
+      "o3-pro adalah pilihan rasional hanya untuk use case reasoning murni yang berat — riset saintifik, problem matematika olimpiade, atau analisis multi-dokumen panjang di mana akurasi penalaran lebih penting dari latency. Untuk kebutuhan umum, GPT-5 atau Claude Opus 4.5 masih menawarkan paket harga/performa lebih seimbang.",
+    body: [
+      "o3-pro adalah varian reasoning paling dalam dari keluarga o-series OpenAI yang dirilis awal 2025 dan diperbarui sepanjang 2026. Berbeda dari GPT-5 yang memiliki router pintar untuk memilih antara respons cepat dan penalaran dalam, o3-pro selalu berada di mode reasoning penuh — model ini dipanggil ketika pengguna butuh jawaban yang sudah diverifikasi berlapis, bukan draf kilat. Intelligence index 32,5 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas benchmark (GPT-5 di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 di 57,2 memimpin), tapi cara o3-pro menyusun reasoning chain berbeda: ia menulis langkah-langkah verifikasi eksplisit sebelum menarik kesimpulan, dan pola ini terbukti lebih stabil di problem matematika, fisika, dan penalaran logis murni yang butuh audit.",
+      "Dalam pengujian editorial Wawasan AI lewat API OpenAI standar dengan problem matematika kompetisi dan soal fisika multi-variabel, o3-pro menunjukkan karakteristik khas model reasoning deliberatif: output yang lebih panjang, lebih banyak self-correction, dan kesimpulan yang datang setelah langkah eksplisit yang bisa dilacak. Kelebihan ini datang dengan harga latency yang signifikan: TTFT 64,4 detik (sumber: Artificial Analysis) — angka yang menunjukkan model benar-benar berpikir sebelum merespons, bukan jawaban template kilat. Throughput output 29,1 tokens/detik (sumber: Artificial Analysis) juga lambat dibanding frontier kecepatan seperti GLM-4.7 atau Claude Haiku, tapi untuk use case reasoning murni, akurasi jawaban lebih bernilai dari kelancaran streaming. Coding index tidak tersedia di benchmark AA untuk o3-pro (field 0 di response API) — kualitas coding agregat perlu diuji sendiri, dan pengalaman tim editorial menunjukkan o3-pro kuat untuk analisis kode dan penjelasan algoritma, tapi kurang gesit untuk iterasi generate-eval-fix cepat seperti Claude Sonnet atau GPT-5. (Sumber: Artificial Analysis.)",
+      "Soal angka, o3-pro bermain di kuadran paling premium untuk reasoning berat: $20 per juta token input dan $80 output (sumber: Artificial Analysis) — 4x lebih mahal dari GPT-5 per juta token output, dan 3x lebih mahal dari Claude Opus 4.5. Intelligence index 32,5 di bawah frontier proprietary papan atas (Claude Opus 4.5 di 43,1+, GPT-5 di 44,6+, Gemini 3 di 57,2) dan di papan tengah Asia (Hy3-preview 33,6, MiniMax-M2.5 33,7) — ini menjadi trade-off eksplisit OpenAI: harga premium untuk konsistensi reasoning, bukan untuk skor benchmark absolut. TTFT 64,4 detik dan throughput 29,1 tps menjadikannya tidak praktis untuk chat real-time atau aplikasi customer-facing, tapi sangat sesuai untuk pipeline riset offline, agen analisis data yang berjalan asinkron, atau verifikasi saintifik di mana setiap token pemikiran bernilai mahal. Untuk pasar Indonesia, adopsi o3-pro paling masuk akal di tim riset dan akademisi yang mengolah dokumen panjang, kode kompleks untuk audit keamanan, atau problem saintifik spesifik — segmen di mana reasoning chain transparan lebih bernilai dari kecepatan respons.",
+      "Kelemahan yang teridentifikasi: intelligence index 32,5 di bawah frontier proprietary papan atas (Claude Opus 4.5 di 43,1+, GPT-5 di 44,6+, Gemini 3 di 57,2) dan upper-mid Asia (Qwen3.7 Plus 53,3, MiMo-V2.5-Pro 53,8, GLM-5 Reasoning 49,8) — bukan pilihan untuk use case yang butuh penalaran luas lintas domain atau multimodal berat. Coding index tidak tersedia di benchmark AA (field 0) — kualitas coding agregat harus diuji sendiri per use case spesifik, dan benchmark internal menunjukkan o3-pro sangat kuat untuk analisis kode dan eksplanasi, tapi kurang optimal untuk scaffolding proyek baru atau iterasi cepat. TTFT 64,4 detik dan throughput 29,1 tps menjadikannya praktis hanya untuk workload asinkron — aplikasi real-time, chatbot customer service, atau UI interaktif akan terasa macet. Harga $20 input / $80 output per 1M token menjadikannya model proprietary termahal per token di pasaran — untuk volume tinggi, GPT-5 atau Claude Opus 4.5 menawarkan paket harga/performa lebih baik dengan skor intel sebanding atau lebih tinggi. Strategi pemakaian yang masuk akal: o3-pro untuk reasoning murni berat (riset saintifik, problem matematika olimpiade, analisis multi-dokumen panjang, audit keamanan kode) di mana akurasi dan reasoning chain transparan lebih bernilai dari latency dan harga; untuk beban kerja umum, GPT-5 atau Claude Opus 4.5 lebih rasional; untuk optimasi biaya, frontier open-weight seperti GLM-5 Reasoning atau Qwen3.7 Plus lebih menarik; untuk chat interaktif real-time, Sonnet atau Haiku jauh lebih sesuai.",
+    ],
+    link: "https://openai.com/o3-pro",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-04",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
