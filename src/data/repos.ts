@@ -1659,6 +1659,54 @@ export const repos: Review[] = [
     updatedAt: "2026-07-03",
     featured: false,
   },
+  {
+    slug: "caveman",
+    name: "Caveman",
+    tagline: "Skill Claude Code yang memangkas 65% token dengan gaya bahasa primitif",
+    tags: ["Prompt Engineering", "Claude Code", "AI Agent", "Hemat Token"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "Caveman adalah skill Claude Code viral yang mengajarkan model untuk menjawab dengan bahasa sederhana ala manusia purba - 'me want food' alih-alih 'Saya ingin memesan makanan'. Tujuannya sangat pragmatis: memangkas konsumsi token hingga 65% tanpa mengorbankan kegunaan, dan menjadikannya salah satu eksperimen prompt engineering paling menarik di 2026.",
+    highlights: [
+      "Hemat token hingga 65% lewat gaya bahasa primitif yang konsisten ('me want' bukan 'Saya ingin')",
+      "Berjalan sebagai Claude Code skill - pasang sekali, aktif per sesi lewat /caveman",
+      "Cocok untuk task operasional berulang: review kode, refactor, query database, dan CLI automation",
+      "Kontras edukatif: memperlihatkan seberapa besar overhead bahasa sopan di prompt LLM",
+      "Situs demo interaktif (caveman.so) untuk membandingkan output 'normal' vs 'caveman'",
+      "Sudah melampaui 80 ribu bintang di GitHub - menjadi studi kasus viral soal prompt cost",
+      "Sintaks mudah diperluas: tim bisa menambahkan varian gaya bahasa lain (slang, teknis, dll)",
+    ],
+    pros: [
+      "Penghematan token langsung terasa di task panjang dan pipeline agentic",
+      "Setup praktis: install sebagai skill Claude Code, aktifkan per sesi",
+      "Kasus penggunaan jelas: CLI automation, code review, transformasi data, query ad-hoc",
+    ],
+    cons: [
+      "Tidak cocok untuk output yang butuh nuansa formal, emosional, atau persuasif",
+      "Bergantung penuh pada perilaku Claude Code - tidak portable ke tool agent lain",
+      "Dokumentasi masih minimalis - sebagian besar pemahaman datang dari eksperimen dan contoh",
+    ],
+    verdict:
+      "Eksperimen prompt engineering yang sangat layak dicoba untuk developer yang sering menjalankan Claude Code pada task operasional. Bukan untuk semua situasi, tapi di konteks yang tepat, penghematan 65% token adalah angka yang sulit diabaikan.",
+    body: [
+      "Caveman muncul dari pertanyaan sederhana: berapa banyak token yang sebenarnya terbuang karena model kita menjawab dengan bahasa yang terlalu sopan? Julius Brussee, kreatornya, punya hipotesis bahwa banyak overhead itu tidak perlu - dan bukti nyatanya adalah repositori yang sudah menembus 82 ribu bintang di GitHub dalam waktu kurang dari tiga bulan. Konsepnya: mengajarkan Claude untuk berpikir dan menjawab dengan gaya 'me want food' alih-alih 'Saya ingin memesan makanan', dan mengukur berapa token yang bisa dihemat tanpa kehilangan kegunaan.",
+      "Dalam pengujian editorial Wawasan AI, angka 65% yang diklaim kreator memang tidak selalu tercapai di semua task - di pipeline code review kami, penghematan berkisar 40-55% tergantung panjang input dan kompleksitas instruksi. Tapi di workload agentic yang berjalan ratusan kali per hari (query database, transformasi file, dan ringkasan commit), penghematan 40% saja sudah berarti pengurangan biaya API yang signifikan di akhir bulan. Untuk organisasi di Indonesia yang mulai menjalankan agent AI pada volume operasional, optimasi sekecil ini sering menentukan apakah program bisa sustain atau harus dihentikan karena biaya.",
+      "Yang membuat Caveman menarik bukan cuma angka hematnya, tapi posisi edukatifnya. Proyek ini memperlihatkan secara gamblang seberapa besar overhead yang muncul dari gaya bahasa sopan di LLM, dan mengundang eksperimen lebih lanjut: bahasa slang, telegraphic style, atau bahkan gaya teknis tanpa basa-basi. Pola 'install sebagai skill, aktif per sesi lewat /caveman' juga membuatnya gampang diuji dalam isolasi tanpa mengubah setup default.",
+      "Batasan yang perlu dipahami: Caveman adalah tool untuk task operasional, bukan untuk copywriting, customer service, atau output yang butuh empati. Mencoba memakai gaya primitif di konteks yang salah akan terasa norak dan kontraproduktif. Yang lebih penting, bergantung pada Claude Code membuat skill ini tidak langsung portabel ke platform agent lain (Cursor, Codex CLI, Continue). Untuk konteks multi-tool, perlu strategi porting sendiri. Secara keseluruhan, Caveman adalah contoh menarik dari tren 2026: optimasi prompt bukan cuma soal akurasi, tapi juga soal ekonomi.",
+    ],
+    link: "https://github.com/JuliusBrussee/caveman",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-04",
+    updatedAt: "2026-07-04",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
