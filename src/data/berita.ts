@@ -1173,6 +1173,49 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "ntt-data-gandeng-cursor-percepat-modernisasi-sistem-enterprise-dengan-ai-agent",
+    title:
+      "Saat NTT DATA Gandeng Cursor untuk Modernisasi Enterprise: Pelajaran yang Bisa Dipetik Industri Indonesia",
+    excerpt:
+      "Kemitraan NTT DATA dan Cursor menandai masuknya agen coding AI ke jantung modernisasi enterprise global. Buat industri dan developer di Indonesia, ini lebih dari sekadar berita akuisisi teknologi.",
+    category: "Analisis",
+    date: "2026-07-04",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Pada 24 Juni 2026, NTT DATA, perusahaan layanan TI asal Jepang yang membawahi salah satu operasi teknologi terbesar di dunia, mengumumkan kemitraan strategis dengan Cursor, platform coding AI multi-model yang didirikan oleh tim di balik beberapa eksperimen agentik paling serius di Silicon Valley. Bukan sebagai vendor, melainkan sebagai pengguna utama: NTT DATA akan memakai agen coding Cursor untuk memperkuat dan mempercepat lini rekayasa perangkat lunaknya yang melayani ribuan klien enterprise di lebih dari 50 negara.",
+          "Dari sudut pandang luar, ini mungkin terlihat seperti satu pengumuman korporat biasa. Tapi di balik kata 'partnership' ada pergeseran yang lebih besar yang relevan bahkan untuk developer, startup, dan kepala IT di Indonesia. Untuk pertama kalinya, salah satu integrator sistem paling konservatif di dunia secara resmi menyatakan bahwa agen coding AI bukan lagi eksperimen melainkan lapisan inti dari cara mereka membangun software. Pertanyaannya bukan 'apakah ini akan terjadi di tempat kerja saya', tapi 'siapa yang siap ketika ini terjadi'.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya diumumkan, dan kenapa ini penting",
+        paragraphs: [
+          "Cursor, bagi yang belum familiar, bukan editor kode biasa. Ia adalah lingkungan pengembangan yang menyatukan editor, model AI, dan agen yang bisa membaca basis kode besar, menulis perubahan, menjalankan pengujian, dan memperbaiki dirinya sendiri saat gagal. Yang berbeda dari sekadar autocomplete adalah kemampuan 'agentic': Cursor bisa diberi tujuan ('refactor modul pembayaran ini agar sesuai dengan standar PCI DSS'), lalu merancang langkah, mengeksekusi, dan kembali melapor. Inilah jenis kapabilitas yang biasanya duduk di kepala engineer senior, sekarang mulai duduk di dalam software.",
+          "NTT DATA, dengan puluhan ribu engineer yang melayani klien enterprise di sektor keuangan, kesehatan, dan pemerintahan, melihat peluang di situ. Modernisasi sistem warisan (legacy) - basis kode mainframe dan monolitik yang sudah puluhan tahun berjalan - adalah pekerjaan yang mahal, lambat, dan penuh risiko. Dengan agen coding, sebagian dari pekerjaan identifikasi, translasi, dan refactoring bisa dilakukan dengan kecepatan yang sebelumnya tidak masuk akal. Klaim resmi mereka menyebut transformasi yang biasanya butuh beberapa bulan kini bisa dikompresi menjadi beberapa minggu, dengan konsistensi yang lebih terjaga karena setiap perubahan melalui gerbang kendali yang sama.",
+          "Tapi yang menarik dari sisi tata kelola adalah bagian yang kurang disorot media: kemitraan ini tidak hanya soal kecepatan, tetapi juga kontrol. Cursor akan dipakai dengan mode privasi organisasi, single sign-on, administrasi terpusat, kontrol granular atas apa yang boleh dilakukan agen, dan kebijakan yang siap diaudit. Di sinilah ceritanya menjadi relevan untuk industri Indonesia: adopsi AI di level enterprise bukan hanya masalah siapa yang paling cepat, tetapi siapa yang bisa menjawab pertanyaan 'bagaimana kalau agen ini salah?' dengan meyakinkan.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dipetik industri dan developer Indonesia",
+        paragraphs: [
+          "Pelajaran pertama yang paling konkret: kalau integrator global sebesar NTT DATA merasa agen coding sudah siap untuk masuk ke sistem yang menangani uang, data pribadi, dan layanan publik, maka debat 'apakah AI bisa dipakai untuk kode produksi' sudah selesai di banyak tempat. Pertanyaannya bergeser ke 'bagaimana kita mengadopsinya tanpa mengorbankan kendali'. Untuk CTO dan kepala TI di Indonesia yang masih berdebat internal soal boleh tidaknya engineer menggunakan Copilot atau Cursor, kemitraan ini adalah isyarat bahwa standar industri global sudah bergerak, dan menunggu lebih lama hanya membuat organisasi kita makin ketinggalan.",
+          "Pelajaran kedua: kemampuan teknis tetap penting, tapi kemampuan 'mengelola' agen yang akan jadi pembeda. Dalam lowongan AI engineer di Indonesia 2026, kita sudah melihat pergeseran dari 'bisa coding' ke 'bisa mengarahkan agen'. Developer yang jago tidak akan tergantikan, tapi developer yang jago dan bisa memanfaatkan agen untuk melipatgandakan outputnya akan jauh lebih bernilai daripada yang hanya mengandalkan kecepatan mengetik. Untuk mahasiswa dan fresh graduate, ini bukan kabar buruk: justru pintu masuk jadi lebih jelas, karena yang diminta pasar bukan 'peneliti AI', melainkan orang yang bisa merangkai alat yang sudah ada menjadi solusi yang benar-benar dipakai.",
+          "Pelajaran ketiga dan paling penting untuk konteks lokal: kedaulatan data. NTT DATA menekankan mode privasi dan kontrol granular bukan tanpa alasan. Untuk industri Indonesia yang beroperasi di sektor keuangan, kesehatan, dan pemerintahan, mengirim kode ke API AI publik sering bukan opsi. Pelajaran dari kemitraan ini bukan 'wajib pakai Cursor', melainkan 'kalau memakai AI untuk kode produksi, pastikan ada lapisan kontrol yang setara dengan yang dipakai integrator global'. Bagi yang tidak siap dengan itu, model lokal di infrastruktur sendiri, atau agen yang dijalankan di lingkungan terisolasi, adalah jalur tengah yang layak. Ollama dan beberapa model open-weight sudah cukup untuk banyak workload; dan untuk yang lebih berat, vendor lokal yang menawarkan deployment on-premise makin bermunculan.",
+        ],
+      },
+      {
+        heading: "Yang layak dipantau enam sampai dua belas bulan ke depan",
+        paragraphs: [
+          "Ada beberapa indikator yang akan menunjukkan apakah kemitraan ini benar-benar mengubah industri atau hanya jadi cerita press release. Pertama, apakah model adopsi 'agen di dalam integrator' mereplikasi ke integrator lokal. Jika dalam satu tahun ke depan kita mulai melihat perusahaan seperti Telkom, Astra, atau BCA mengumumkan program serupa - menggunakan agen coding untuk modernisasi sistem internal mereka - itu pertanda bahwa model ini sudah melampaui fase uji coba.",
+          "Kedua, apakah muncul lapisan layanan baru: konsultan yang membantu perusahaan Indonesia memasang agen coding dengan tata kelola yang setara standar enterprise. Ini peluang yang jelas untuk startup dan integrator lokal, sekaligus untuk engineer yang ingin bergeser dari peran teknis murni ke peran konsultasi.",
+          "Ketiga, apakah regulator di Indonesia memberi sinyal terkait penggunaan AI untuk software yang menangani data publik. Sampai saat ini belum ada pedoman spesifik, tapi dengan dua Perpres AI yang akan keluar tahun ini, aturan main untuk adopsi AI di sektor teregulasi akan makin jelas. Perusahaan yang sudah siap dengan tata kelola internal yang baik akan jauh lebih lancar melewati proses ini dibanding yang baru mulai berpikir tentang AI saat aturan sudah keluar.",
+          "Dalam pengujian editorial Wawasan AI, berita tentang NTT DATA dan Cursor bukan akhir dari satu cerita, melainkan permulaan dari cerita yang lebih relevan untuk kita. Agen coding bukan lagi mainan engineer di Silicon Valley; ia mulai menjadi bagian dari bagaimana software enterprise dibangun, diaudit, dan dijalankan. Buat industri dan developer Indonesia, pertanyaannya sederhana: mau jadi penonton, atau mau mulai memasang fondasi sekarang? Jawaban itu tidak akan datang dari pengumuman press release mana pun - ia akan datang dari keputusan-keputusan kecil yang dibuat di setiap unit TI, setiap tim engineering, dan setiap kelas pemrograman di Indonesia dalam satu-dua tahun ke depan.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
