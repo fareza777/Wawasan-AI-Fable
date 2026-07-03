@@ -771,11 +771,41 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
           "Filosofi 'agent-first': API, docs, dan CLI dirancang bareng agar manusia dan AI assistant build dengan cara yang sama dari referensi yang sama — bukan retrofit, melainkan sistem yang sejak awal mengasumsikan coding agent sebagai warga kelas satu.",
           "Tanpa lock-in styling: StyleX hanya di-internal, konsumen cukup import CSS dan pakai typed React component. Override dengan className Tailwind/CSS Modules/vanilla CSS — 'swizzle' command bahkan bisa eject source komponen ke project kamu sendiri untuk dimiliki penuh.",
           "MIT-licensed, paket npm sudah publish (@astryxdesign/core, @astryxdesign/cli, @astryxdesign/build, themes), dan Astryx CLI bisa dipasang sebagai npm script untuk konsistensi invoke — relevan untuk tim Indonesia yang ingin design system serius dari Meta tanpa adopsi tooling baru.",
-        ],
-      },
-    };
+            ],
+          },
+          "alibaba/page-agent": {
+          description:
+          "Agen GUI dari Alibaba yang tinggal di dalam halaman web sebagai JavaScript — kontrol antarmuka web pakai bahasa natural lewat DOM langsung, tanpa headless browser, screenshot, atau model multi-modal.",
+          highlights: [
+          "Pendekatan 'in-page agent': library JavaScript yang di-embed ke aplikasi web, lalu baca live DOM sebagai teks (bukan screenshot) dan akting seperti user asli — tanpa Chrome DevTools Protocol, tanpa Playwright, tanpa visi model.",
+          "Algoritma 'DOM dehydration' memampatkan pohon DOM jadi FlatDomTree yang bersih dan terstruktur, sehingga model teks kecil bisa bertindak tepat tanpa harus menelan seluruh halaman HTML.",
+          "Model-agnostic lewat endpoint OpenAI-compatible apa pun, plus built-in operation allowlist dan data masking untuk batasi apa yang boleh dilakukan AI terhadap UI sensitif — kontrol penuh tetap di developer.",
+          "MIT-licensed dan dibangun di atas browser-use; ideal untuk copilot, form-filling otomatis, atau automasi dalam aplikasi milik sendiri — bukan untuk situs pihak ketiga atau area yang dilindungi ToS.",
+          ],
+          },
+          "harvard-edge/cs249r_book": {
+          description:
+          "Buku open-source resmi dari Harvard University untuk mata kuliah CS249r — 'Machine Learning Systems Engineering' yang mengajarkan cara merancang sistem ML lengkap dari pondasi sampai deployment skala produksi.",
+          highlights: [
+          "Buku teks kolaboratif dari Harvard Edge lab dengan 112 kontributor, 25k+ bintang GitHub, dan 3k+ fork — ditulis dengan gaya pedagogi Hennessy & Patterson dalam dua volume: 'Build, Optimize, Deploy' (single-machine) lalu 'Scale, Distribute, Governance' (fleet).",
+          "Pendekatan 'build to learn' lewat TinyTorch: reimplementasi framework deep learning dari nol dalam skala kecil, lalu deploy ke Arduino, Raspberry Pi, atau simulator hardware — teori bukan cuma dibaca, melainkan dijalankan dan diukur.",
+          "Cocok untuk engineer yang ingin naik level dari 'bisa training model' ke 'bisa engineering sistem ML': optimasi hardware-aware, KV-cache, ko-design model-hardware, distributed training, fault tolerance, dan governance untuk production fleet.",
+          "Dua jilid sama-sama ketat secara akademis (bukan survey populer); setiap bab dapat berdiri sendiri, dan kurikulum lab + hardware kit opsional untuk yang ingin belajar lewat praktik — relevan untuk mahasiswa dan profesional Indonesia yang serius di AI systems.",
+          ],
+          },
+          "openai/codex-plugin-cc": {
+          description:
+          "Plugin resmi OpenAI (rilis 31 Maret 2026) yang menjalankan Codex CLI langsung dari dalam sesi Claude Code — pakai Codex untuk code review, adversarial review, dan delegasi rescue tanpa harus keluar dari tool pesaing.",
+          highlights: [
+          "Plugin Claude Code resmi dari OpenAI yang meng-ekspos Codex CLI lewat perintah slash (`/codex:review`, `/codex:adversarial-review`, `/codex:rescue`, `/codex:status`) — momen langka di mana vendor mengirim agennya ke dalam ekosistem kompetitor.",
+          "Tiga mode berbeda: review read-only untuk diff uncommitted, adversarial review yang menantang asumsi desain, dan rescue untuk delegasi investigasi/fix bug ke Codex sebagai subagent background.",
+          "Setup empat baris lewat plugin marketplace (`/plugin marketplace add openai/codex-plugin-cc`, `/plugin install codex@openai-codex`), pakai kredensial Codex yang sudah ada — bukan runtime baru, melainkan wrapper tipis dengan arsitektur companion script + broker yang stateful.",
+          "Signifikansi strategisnya besar untuk pengguna dual-tool: workflow khas 'tulis di Claude Code, review di Codex dengan model berbeda' sekarang satu sesi — relevan untuk engineer Indonesia yang sudah langganan keduanya dan ingin tool diversity sungguhan.",
+          ],
+          },
+          };
 
-// Helper: lookup dengan fallback ke template-generated highlights
+          // Helper: lookup dengan fallback ke template-generated highlights
 export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
   return WEEKLY_TOP[fullName];
 }
