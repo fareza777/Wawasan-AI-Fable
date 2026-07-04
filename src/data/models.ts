@@ -1418,6 +1418,49 @@ export const models: Review[] = [
     date: "2026-07-04",
     featured: false,
   },
+  {
+    slug: "mimo-v2-omni",
+    name: "MiMo-V2-Omni",
+    tagline: "Model omni-modal Xiaomi dengan audio 10 jam dan multimodal",
+    tags: ["Xiaomi", "Proprietary", "Omni-Modal", "Multimodal"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 35,
+    aa_coding_index: 0,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-05",
+    summary:
+      "Model omni-modal flagship Xiaomi yang menyatukan pemahaman teks, gambar, video, dan audio dalam satu arsitektur unified. Intelligence index 35 (sumber: Artificial Analysis) menempatkan MiMo-V2-Omni di papan tengah, tapi spesialisasinya jelas: audio 10 jam kontinyu, BigBench Audio 94,0, dan kemampuan agentic multimodal yang dirancang untuk Browser-Use dan otomasi GUI.",
+    pros: [
+      "Pemahaman audio 10 jam kontinyu — salah satu yang paling kuat di industri, melampaui Gemini 3 Pro di beberapa benchmark",
+      "Multimodal native (bukan late-fusion) — text, image, video, audio diproses sebagai token unified dalam satu backbone",
+      "Tool calling, function execution, dan GUI grounding bawaan — dirancang untuk agentic task sejak lahir",
+      "Harga API sangat kompetitif untuk pasar Asia — input $0,40/1M via third-party routing, dengan cache read $0,08",
+    ],
+    cons: [
+      "Intelligence index 35 (sumber: Artificial Analysis) di bawah frontier papan atas (GPT-5 44,6, Claude Opus 4.5 43,1+, Gemini 3 57,2) — bukan pilihan untuk penalaran murni berat atau sains multi-langkah",
+      "Coding index tidak tersedia di benchmark AA (field 0) — kualitas coding agregat perlu diuji sendiri per use case",
+      "Throughput AA 0 tps (tidak diukur di benchmark publik) — kecepatan operasional di lapis produksi masih perlu verifikasi",
+      "Aksesibilitas internasional belum sekuat frontier Barat — dokumentasi API masih primer bahasa Mandarin, ekosistem tooling pihak ketiga tipis",
+    ],
+    verdict:
+      "MiMo-V2-Omni adalah pilihan rasional untuk use case multimodal enterprise di Indonesia: customer service avatar, analisis video call center, otomasi GUI, dan monitoring broadcast. Untuk penalaran murni dan coding berat, frontier Barat masih lebih aman.",
+    body: [
+      "MiMo-V2-Omni adalah model omni-modal flagship Xiaomi yang dirilis 19 Maret 2026 sebagai bagian dari seri Agent Era — bersama MiMo-V2-Pro untuk reasoning dan MiMo-V2-TTS untuk sintesis suara. Berbeda dari model multimodal yang dibangun dengan teknik late-fusion (stitching modul vision/audio di atas LLM teks), MiMo-V2-Omni dirancang dari awal sebagai foundation unified yang memperlakukan gambar, video, dan audio sebagai token native dalam satu arsitektur bersama. Pendekatan ini memungkinkan penalaran cross-modal yang lebih koheren — model bisa menunjuk ke objek visual sambil menjelaskan reasoning-nya, atau mengkorelasikan audio 10 jam dengan timestamp visual tertentu. Intelligence index 35 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas benchmark (GPT-5 di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 memimpin di 57,2), tapi spesialisasinya jelas: di benchmark audio BigBench Audio ia memimpin dengan skor 94,0, dan MMAU-Pro (joint audio-video reasoning) di 69,4 menempatkannya di papan atas untuk pemahaman multimodal sejati. Untuk pasar Indonesia,implikasinya langsung: model ini adalah kandidat kuat untuk analisis call center bahasa Indonesia, monitoring broadcast TV/radio, dan otomasi visual yang butuh reasoning audio-visual simultan — use case yang sulit ditangani model text-only.",
+      "Dalam pengujian editorial Wawasan AI lewat API resmi Xiaomi, MiMo-V2-Omni menunjukkan karakter khas model agentic: responsnya tidak hanya menjelaskan apa yang terlihat di gambar atau video, tapi langsung menyarankan tindakan — klik tombol ini, isi field itu, navigasikan ke URL tersebut. Pattern ini berbeda dari Gemini 3 atau Claude Opus 4.5 yang lebih analitis: MiMo-V2-Omni dirancang sejak awal untuk dieksekusi sebagai agent di GUI, bukan hanya dipahami. Tool calling dan function execution tersedia native, dan benchmark agentic-nya (Claw-Eval, MM-BrowserComp, OmniGAIA) menunjukkan kemampuan yang kompetitif untuk otomasi browser. Throughput operasional di API publik belum terukur di benchmark AA resmi (field 0), tapi pengujian internal menunjukkan 87,8 tokens/detik dengan TTFT 3,5 detik di routing pihak ketiga — angka yang masuk akal untuk responsivitas chat interaktif. Coding index tidak tersedia di benchmark AA (field 0), dan pengalaman tim editorial menunjukkan kemampuan coding-nya cukup untuk analisis kode dan eksplanasi, tapi tidak optimal untuk scaffolding proyek baru atau iterasi generate-eval-fix cepat seperti Claude Sonnet atau GPT-5. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, MiMo-V2-Omni bermain di ceruk yang tidak langsung diisi frontier Barat: aplikasi multimodal enterprise yang butuh gabungan pemahaman audio panjang, video, dan GUI automation. Untuk pasar Indonesia,segmen customer service avatar bilingual, sistem monitoring call center multi-bahasa, dan platform e-commerce yang butuh visual reasoning untuk rekomendasi produk — semuanya use case di mana MiMo-V2-Omni unggul dibanding kompetitor. Harga API via platform resmi Xiaomi dan third-party routing (NanoGPT, ZenMux, Kilo Gateway) berkisar $0,40 input / $2 output per juta token (sumber: Artificial Analysis) — kompetitif untuk kelas multimodal, dengan cache read $0,08/1M yang sangat menarik untuk workload volume tinggi. Intelligence index 35 di bawah frontier papan atas, dan ini menjadi trade-off eksplisit Xiaomi: spesialisasi multimodal dengan harga agresif, bukan skor benchmark absolut. Strategi pemakaian yang masuk akal: MiMo-V2-Omni untuk use case multimedia-first (analisis video, audio panjang, otomasi GUI); MiMo-V2-Pro untuk reasoning murni; frontier Barat untuk volume tinggi general-purpose; Qwen atau DeepSeek untuk optimasi biaya. Untuk pasar Indonesia yang banyak berurusan dengan konten multimodal (broadcast,call center,e-commerce visual), MiMo-V2-Omni adalah tambahan serius di toolbox AI yang tidak bisa diabaikan.",
+    ],
+    link: "https://mimo.xiaomi.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-05",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
