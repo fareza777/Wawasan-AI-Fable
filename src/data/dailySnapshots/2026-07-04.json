@@ -1,0 +1,152 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-04T05:10:57.886Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "teamchong/pxpipe",
+      "owner": "teamchong",
+      "repo": "pxpipe",
+      "description": "cut Fable 5 token usage by rendering text context as images",
+      "githubUrl": "https://github.com/teamchong/pxpipe",
+      "trendshiftUrl": "https://trendshift.io/repositories/71973",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-05-20T12:39:42Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "erincatto/box3d",
+      "owner": "erincatto",
+      "repo": "box3d",
+      "description": "Box3D is a 3D physics engine for games",
+      "githubUrl": "https://github.com/erincatto/box3d",
+      "trendshiftUrl": "https://trendshift.io/repositories/70037",
+      "language": "C",
+      "topics": [
+        "Game development"
+      ],
+      "dateCreated": "2026-05-10T20:26:19Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "facebook/astryx",
+      "owner": "facebook",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/facebook/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "Design system",
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation",
+        "Resume building"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "githubUrl": "https://github.com/usestrix/strix",
+      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-08-05T21:28:30Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "openai/codex-plugin-cc",
+      "owner": "openai",
+      "repo": "codex-plugin-cc",
+      "description": "Use Codex from Claude Code to review code or delegate tasks.",
+      "githubUrl": "https://github.com/openai/codex-plugin-cc",
+      "trendshiftUrl": "https://trendshift.io/repositories/25232",
+      "language": "JavaScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-30T15:29:52Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "JuliusBrussee/caveman",
+      "owner": "JuliusBrussee",
+      "repo": "caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "githubUrl": "https://github.com/JuliusBrussee/caveman",
+      "trendshiftUrl": "https://trendshift.io/repositories/25391",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-04T10:03:00Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "symbolica-ai/arcgentica",
+      "owner": "symbolica-ai",
+      "repo": "arcgentica",
+      "description": "An ARC-AGI solution using Agentica from Symbolica",
+      "githubUrl": "https://github.com/symbolica-ai/arcgentica",
+      "trendshiftUrl": "https://trendshift.io/repositories/72083",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-12T02:26:00Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ogulcancelik/herdr",
+      "owner": "ogulcancelik",
+      "repo": "herdr",
+      "description": "agent multiplexer that lives in your terminal.",
+      "githubUrl": "https://github.com/ogulcancelik/herdr",
+      "trendshiftUrl": "https://trendshift.io/repositories/32084",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-03-27T17:54:33Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "cobusgreyling/loop-engineering",
+      "owner": "cobusgreyling",
+      "repo": "loop-engineering",
+      "description": "Practical reference and patterns for loop engineering,  designing systems that prompt and orchestrate AI coding agents (inspired by Addy Osmani and Boris Cherny / Anthropic)",
+      "githubUrl": "https://github.com/cobusgreyling/loop-engineering",
+      "trendshiftUrl": "https://trendshift.io/repositories/50831",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-06-09T06:28:20Z"
+    }
+  ]
+}
