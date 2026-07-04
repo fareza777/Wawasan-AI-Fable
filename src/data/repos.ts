@@ -1707,6 +1707,55 @@ export const repos: Review[] = [
     updatedAt: "2026-07-04",
     featured: false,
   },
+{
+    slug: "siyuan",
+    name: "SiYuan",
+    tagline: "Aplikasi catatan block-level self-hosted dengan knowledge graph dan integrasi MCP",
+    tags: ["AI Agent", "Self-hosted", "Knowledge Base", "Open Source"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 9.0 },
+    ],
+    summary:
+      "SiYuan adalah aplikasi pencatat block-level yang menggabungkan markdown, database, dan knowledge graph dalam satu paket self-hosted. Berbeda dari Notion atau Obsidian, SiYuan menyimpan seluruh data secara lokal dengan format open, dan sekarang menambahkan dukungan Model Context Protocol (MCP) supaya AI agent bisa membaca serta menulis notes lewat protokol standar.",
+    highlights: [
+      "Block-level editing: setiap paragraf, heading, dan kode adalah unit yang bisa direferensikan lewat backlink dan embedding",
+      "Knowledge graph otomatis dari tautan internal - visualisasi hubungan antar catatan seperti Obsidian tapi native",
+      "Dukungan MCP server bawaan (melalui plugin) - AI agent bisa query dan menulis notes lewat protokol standar",
+      "Format database SQLite terbuka (.sy) - semua data bisa di-backup, di-restore, atau di-migrasi ke tool lain",
+      "Sync self-hosted via S3, WebDAV, atau object storage lokal - privasi penuh tanpa vendor lock-in",
+      "Lisensi AGPL-3.0 dengan paket AppImage, dmg, exe, dan build Android - bisa dipakai di desktop dan mobile",
+      "Plugin resmi AI assistant (pakai OpenAI-compatible API) - merangkum, menerjemahkan, dan menjawab dari notes",
+      "Komunitas 45 ribu bintang di GitHub dan 2,8 ribu fork - basis pengguna aktif sejak 2020",
+    ],
+    pros: [
+      "Privasi penuh: data disimpan lokal dengan format terbuka, bukan server proprietary",
+      "Block-level reference + database hybrid - lebih fleksibel dari Notion untuk workflow teknis",
+      "Dukungan MCP membuka integrasi dengan Claude, Cursor, dan agent framework lain secara native",
+    ],
+    cons: [
+      "Antarmuka desktop berbasis Electron - ringan, tapi tidak sepolished Obsidian atau Notion",
+      "Dokumentasi komunitas didominasi bahasa Mandarin - developer Indonesia perlu effort lebih untuk onboarding",
+      "Ekstensi plugin masih di bawah ekosistem Obsidian - beberapa use case belum tercakup",
+    ],
+    verdict:
+      "SiYuan adalah pilihan kuat untuk tim dan individu di Indonesia yang butuh knowledge base self-hosted dengan integrasi AI modern lewat MCP. Bukan alternatif Notion dalam artian UX, tapi lebih sebagai pondasi data lokal yang siap di-query oleh agent.",
+    body: [
+      "SiYuan pertama kali muncul dari komunitas developer B3log pada 2020 sebagai jawaban atas kebutuhan catatan yang benar-benar self-hosted. Alih-alih mengandalkan server proprietary seperti Notion, SiYuan menyimpan semua notes dalam file SQLite lokal dengan struktur block-level - artinya setiap paragraf, kode, dan heading punya ID unik yang bisa di-referensi dari note lain, di-embed ke dokumen ketiga, atau di-query lewat API. Format ini membuat knowledge base tumbuh secara organik lewat backlink tanpa kehilangan granularity, dan di tahun 2026 blok-blok itu akhirnya bisa diakses langsung oleh AI agent lewat Model Context Protocol (MCP).",
+      "Dalam pengujian editorial Wawasan AI, kombinasi block-level reference dan MCP server menjadi pembeda utama dibanding Obsidian. Di Obsidian, integrasi AI biasanya lewat plugin komunitas yang tidak standar; di SiYuan, MCP adalah protokol terbuka - artinya satu konfigurasi di Claude Desktop atau Cursor bisa membaca notes, mencari blok terkait, dan menulis rangkuman ke note baru tanpa setup tambahan. Untuk workflow riset di Indonesia yang sering mengumpulkan potongan informasi dari banyak sumber (artikel jurnal, transkrip wawancara, catatan meeting), kemampuan query terstruktur lewat agent langsung terasa lebih produktif dibanding copy-paste manual.",
+      "Aspek privasi dan format terbuka sering jadi pertimbangan utama untuk organisasi di Indonesia yang bergerak di sektor regulasi tinggi (keuangan, kesehatan, pemerintahan). SiYuan memakai lisensi AGPL-3.0 dengan storage SQLite lokal, dan mendukung sinkronisasi lewat S3, WebDAV, atau object storage internal - artinya perusahaan bisa menyimpan data notes di server mereka sendiri dan tetap pakai tooling modern. Dukungan database (bukan sekadar markdown) juga berarti catatan terstruktur seperti tracker habit, daftar bug, atau pipeline konten bisa dipandang sebagai queryable table, bukan cuma flat text.",
+      "Keterbatasan yang perlu dipahami: SiYuan tidak sepolished Obsidian atau Notion dari sisi UX, dan sebagian besar dokumentasi komunitas - termasuk banyak plugin - masih didominasi bahasa Mandarin, jadi developer Indonesia perlu sedikit effort untuk onboarding. Ekosistem plugin juga belum seluas Obsidian, sehingga beberapa use case spesifik (misal diagram kompleks atau templating advanced) mungkin butuh workaround. Namun untuk fondasi knowledge base lokal yang siap di-query AI agent lewat standar terbuka, SiYuan adalah salah satu opsi paling solid di 2026.",
+    ],
+    link: "https://github.com/siyuan-note/siyuan",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-05",
+    updatedAt: "2026-07-05",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {

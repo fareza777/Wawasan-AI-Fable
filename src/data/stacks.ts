@@ -1180,6 +1180,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-07-03",
   },
+  {
+    slug: "notion-ai",
+    name: "Notion AI",
+    tagline: "Asisten AI terintegrasi di Notion workspace, paham konteks dokumen dan database tim",
+    tags: ["Notion", "Paid", "Productivity", "Workspace"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.7 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 6.8 },
+    ],
+    summary:
+      "Notion AI adalah asisten AI yang tinggal di dalam workspace Notion dan dirancang untuk menjawab pertanyaan, merangkum halaman, auto-fill database, dan menjalankan workflow agentik lewat Custom Agents. Sejak Mei 2025 Notion menghapus add-on AI $10 untuk pelanggan baru dan membundle fitur AI penuh ke paket Business ($20/user/bulan) serta Enterprise — sebuah perubahan yang membuat Notion AI bukan fitur opsional, melainkan pemicu upgrade. Untuk tim yang sudah hidup di Notion, ini adalah salah satu opsi AI paling kontekstual di pasaran; untuk pengguna umum yang hanya butuh AI serba bisa, ChatGPT atau Claude tetap jadi pilihan yang lebih fleksibel.",
+    pros: [
+      "Sangat kontekstual: Notion AI bisa menjawab pertanyaan berdasarkan halaman, database, dan dokumen tim tanpa harus copy-paste manual ke chat terpisah",
+      "Custom Agents dengan MCP integration (per 2026) memungkinkan AI memanggil tool eksternal seperti Slack, Gmail, GitHub, atau Linear langsung dari workspace Notion",
+      "AI Meeting Notes otomatis merekam, mentranskrip, dan merangkum rapat dari Google Meet, Zoom, atau Microsoft Teams lalu menyimpannya sebagai halaman Notion yang siap dibagikan",
+      "Auto-fill database dengan property inference: dari satu prompt, Notion AI bisa mengekstrak status, prioritas, assignee, dan tag dari teks bebas ke kolom database terstruktur",
+      "Pengalaman pengguna mulus karena AI terasa sebagai bagian native dari editor, bukan tool terpisah — invoke lewat spasi atau slash command tanpa keluar halaman",
+    ],
+    cons: [
+      "Harga efektif naik pasca Mei 2025: paket Business $20/user/bulan (sekitar Rp 370.000 per user) adalah satu-satunya tier per-seat yang dapat AI penuh, sedangkan Free dan Plus hanya dapat trial terbatas",
+      "Custom Agents memakai Notion credits yang harganya $10 per 1.000 credits (tidak carry over ke bulan berikutnya) — pemakaian berat bisa menambah tagihan signifikan di atas subscription",
+      "Tidak bisa search web, generate gambar, atau eksekusi kode seperti ChatGPT atau Claude — cakupan sengaja dibatasi ke workspace dan tool yang terhubung",
+      "Ketergantungan penuh pada ekosistem Notion: tim yang sebagian workflow-nya ada di luar Notion (misal Obsidian, Confluence, Google Docs) tidak akan mendapat nilai kontekstual yang sama",
+    ],
+    verdict:
+      "Standar baru untuk AI di dalam knowledge workspace — pilihan utama untuk tim yang sudah mengandalkan Notion sebagai pusat dokumentasi, tapi bukan pengganti ChatGPT atau Claude untuk tugas AI umum. Pilih Notion AI kalau workspace tim sudah matang di Notion dan kamu butuh Q&A instan atas dokumen internal; pilih ChatGPT Plus ($20/bulan flat) kalau kamu butuh AI serba bisa tanpa komitmen workspace.",
+    body: [
+      "Notion AI adalah asisten AI native yang diperkenalkan Notion pada akhir 2023 dan berevolusi signifikan selama 2024-2026 menjadi lebih dari sekadar text generator. Versi 2026 menambahkan empat fitur utama: Notion Agent yang bisa menjalankan multi-step task di workspace, AI Q&A yang menjawab pertanyaan berdasarkan halaman dan database tim, AI Meeting Notes yang merekam rapat dan menyimpannya sebagai halaman siap-bagi, dan Enterprise Search yang mengindeks tool eksternal seperti Slack, Gmail, Google Drive, dan GitHub untuk pencarian terpusat. Per Mei 2025, Notion menghapus add-on AI $10/user/bulan untuk pelanggan baru dan membundle fitur lengkap ke paket Business ($20/user/bulan tahunan atau $24 bulanan) dan Enterprise (custom) — sebuah strategi yang membuat AI bukan fitur opsional, melainkan pemicu upgrade dari Plus ke Business untuk tim yang aktif berkolaborasi.",
+      "Yang membuat Notion AI unik di kategori workspace AI adalah kemampuan menjawab pertanyaan berdasarkan konteks internal tim tanpa harus copy-paste dokumen ke chat terpisah. Q&A bekerja dengan cara mengindeks seluruh workspace (halaman publik, database yang diizinkan, dan sejak 2026 juga tool eksternal via Enterprise Search), lalu merangkum jawaban dengan sitasi ke halaman sumber — pola yang mirip dengan Glean atau Slack AI tapi langsung di dalam editor tempat tim menulis. Custom Agents, yang mulai mengenakan Notion credits sejak 4 Mei 2026 dengan tarif $10 per 1.000 credits (tidak rollover), memungkinkan tim membangun agen spesifik (mis. agen onboarding karyawan baru yang menarik SOP dari wiki, atau agen standup harian yang merangkum update dari Slack) dengan integrasi MCP ke tool eksternal. Untuk Meeting Notes, Notion AI bisa join Google Meet, Zoom, atau Teams via Add to Calendar, merekam audio, mentranskrip, lalu menghasilkan halaman Notion dengan ringkasan keputusan, action items, dan link rekaman.",
+      "Integrasi ke workflow tim relatif mulus karena AI terasa sebagai bagian native dari editor, bukan tool terpisah. Invoke lewat spasi (ketik spasi di halaman kosong) atau slash command (/ai) langsung di halaman mana pun, tanpa harus membuka tab baru atau copy-paste. Auto-fill database adalah fitur yang sangat berguna untuk tim operasional: dari satu baris teks bebas, Notion AI bisa mengekstrak status (Not Started/In Progress/Done), prioritas (P0/P1/P2), assignee, due date, dan tag ke kolom database terstruktur — pola yang biasanya butuh Zapier atau Make untuk otomasi manual. Untuk tim engineering, integrasi MCP ke GitHub, Linear, dan Jira memungkinkan Notion AI menarik konteks issue dan PR langsung ke halaman dokumentasi. Untuk tim marketing dan operasional, integrasi ke Figma, Loom, dan Google Drive memungkinkan AI merangkum video loom atau desain Figma ke dalam satu halaman Notion.",
+      "Tentu ada kompromi yang harus dipahami sebelum berlangganan. Pertama, cakupan Notion AI sengaja dibatasi ke workspace dan tool terhubung — tidak ada web search real-time (jawaban berdasarkan pengetahuan cutoff training, bukan internet terkini), tidak ada image generation, tidak ada code execution interpreter. Untuk tugas AI umum di luar workspace, ChatGPT Plus ($20/bulan flat per pengguna tanpa batasan credits) atau Claude Pro ($20/bulan) lebih fleksibel. Kedua, harga efektif naik pasca restrukturisasi Mei 2025: kalau tim kamu sebelumnya di Plus $8/user/bulan dan add-on AI $8/user/bulan, total $16; sekarang opsi termurah untuk AI penuh adalah Business $20/user/bulan, kenaikan ~25% untuk benefit AI yang lebih luas tapi juga komitmen workspace yang lebih tinggi. Ketiga, Custom Agents credits tidak carry over — kalau tim tidak habis pakai 1.000 credits di bulan itu, sisa hangus. Untuk pengguna dengan workload AI berat (ribuan credits per bulan), tambahan tagihan $50-200/bulan per tim perlu dimasukkan ke unit economics.",
+      "Untuk pengguna dan tim di Indonesia, Notion AI punya beberapa use case spesifik yang menarik. Pertama, untuk startup dan tim agency yang Notion jadi pusat dokumentasi klien (brief, SOP, invoice, deliverable), Custom Agents bisa jadi agen khusus per klien yang menjawab pertanyaan tim baru dari onboarding kit — mengurangi ramp-up time dari hari menjadi jam. Kedua, untuk korporasi dan BUMN yang Notion-nya dipakai lintas departemen (HR, Legal, Marketing, Engineering), Enterprise Search yang mengindeks Slack, Gmail, dan Drive menggantikan kebutuhan tim berlangganan Glean ($100+/user/bulan) atau Slack AI enterprise. Ketiga, untuk content team dan journalist yang menulis di Notion, Meeting Notes dan transkrip rapat dalam Bahasa Indonesia (akurasinya cukup baik untuk percakapan formal, sedikit kurang untuk slang atau bilingual campur) menggantikan peran Otter.ai atau Fireflies.ai ($10-20/user/bulan). Standar harga: paket Business $20/user/bulan tahunan (sekitar Rp 370.000 per user/bulan pada kurs Rp 18.500 per dolar), Free dengan trial AI terbatas, Custom Agents $10 per 1.000 credits (tidak rollover), Enterprise custom dengan zero data retention dan SSO/SAML/SCIM. Untuk solo creator atau tim kecil yang belum pakai Notion, ChatGPT Plus atau Claude Pro lebih cost-effective; untuk tim 10+ yang sudah Notion-centric, Business tier dengan Notion AI adalah nilai tambah yang sulit diabaikan.",
+    ],
+    link: "https://www.notion.so/product/ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-04",
+  }
 ];
 
 export function getStack(slug: string) {
