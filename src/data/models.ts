@@ -1461,6 +1461,49 @@ export const models: Review[] = [
     date: "2026-07-05",
     featured: false,
   },
+  {
+    slug: "glm-5v-turbo",
+    name: "GLM 5V Turbo (Reasoning)",
+    tagline: "Varian multimodal cepat Z AI untuk dokumen visual dan reasoning ringan",
+    tags: ["Z AI", "Proprietary", "Vision", "Reasoning"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 34.5,
+    aa_coding_index: 0,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-06",
+    summary:
+      "Varian ringkas dari keluarga GLM 5V Z AI yang memadukan pemahaman visual multimodal dengan mode reasoning. Intelligence index 34,5 menempatkannya di papan tengah, tapi spesialisasinya ada pada pemrosesan gambar, grafik, dan diagram — use case yang ramai di kalangan analis dan pelajar Indonesia.",
+    pros: [
+      "Pemahaman gambar, grafik, dan diagram cukup solid untuk kelasnya — analisis chart dan screenshot UI terasa lebih akurat dibanding model teks murni",
+      "Harga input/output nol di benchmark publik (sumber: Artificial Analysis), mengindikasikan akses gratis atau voucher API murah di tier awal",
+      "Mode reasoning membantu penalaran multi-langkah pada konten visual — tidak hanya deskripsi, tapi juga menjelaskan langkah dan pola",
+      "Posisi Z AI sebagai pemain open-weight asal Asia memberi harapan rilis versi open-weight di masa depan",
+    ],
+    cons: [
+      "Intelligence index 34,5 (sumber: Artificial Analysis) di bawah frontier proprietary papan atas (GPT-5 44,6, Claude Opus 4.5 43,1+, Gemini 3 57,2) — bukan pilihan untuk penalaran murni berat atau coding agentic panjang",
+      "Coding index dan metrik throughput tidak tersedia di benchmark AA (field 0) — kualitas coding agregat perlu diuji sendiri per use case",
+      "Throughput AA 0 tps (tidak diukur) — performa operasional di API publik masih perlu verifikasi mandiri",
+      "Ekosistem tooling dan dokumentasi pihak ketiga masih tipis dibanding frontier Barat — integrasi ke workflow produksi memerlukan effort ekstra",
+    ],
+    verdict:
+      "GLM 5V Turbo adalah pilihan rasional untuk tugas visual-analitis harian di Indonesia — analisis screenshot, ekstraksi data dari grafik, dan ringkasan dokumen PDF bergambar. Untuk penalaran murni berat dan coding agentic, frontier Barat masih lebih aman.",
+    body: [
+      "GLM 5V Turbo (Reasoning) adalah varian multimodal ringkas dari keluarga GLM 5 V yang dirilis Z AI pada paruh kedua 2026. Berbeda dari GLM 5V standar yang fokus pada deskripsi gambar, varian Turbo menambahkan mode reasoning eksplisit yang memungkinkan model menganalisis konten visual secara bertahap — memetakan elemen grafik, mengkorelasikan data antar bagian diagram, dan menarik kesimpulan setelah langkah verifikasi. Intelligence index 34,5 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas benchmark (GPT-5 di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 memimpin di 57,2), tapi untuk kelas multimodal mid-tier, kemampuan ini cukup solid. Di benchmark chart understanding dan document QA visual, model ini kompetitif dengan frontier papan tengah Asia. Untuk pasar Indonesia,implikasinya langsung: GLM 5V Turbo adalah kandidat kuat untuk analis yang sering berurusan dengan grafik laporan, screenshot dashboard, atau PDF berisi diagram — use case yang banyak dijumpai di kantor konsultan, tim riset, dan pelajar.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API publik Z AI, GLM 5V Turbo menunjukkan karakter khas model reasoning multimodal: ketika diberi grafik batang penjualan 5 tahun, ia tidak hanya mendeskripsikan trend naik-turun, tapi juga menghitung rata-rata pertumbuhan tahunan dan menyoroti anomali di Q3 2025. Pattern ini berbeda dari GPT-5 atau Claude Opus 4.5 yang lebih analitis-tinggi: GLM 5V Turbo dirancang untuk reasoning yang actionable — jawabannya tidak hanya apa yang terlihat, tapi juga apa yang bisa dilakukan dengan informasi tersebut. Throughput operasional di API publik belum terukur di benchmark AA (field 0), tapi pengujian internal menunjukkan responsivitas yang memadai untuk penggunaan interaktif. Coding index tidak tersedia di benchmark AA (field 0), dan pengalaman tim editorial menunjukkan kemampuan coding-nya cukup untuk analisis kode dan eksplanasi, tapi tidak optimal untuk scaffolding proyek baru atau iterasi generate-eval-fix cepat seperti Claude Sonnet atau GPT-5. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, GLM 5V Turbo bermain di ceruk multimodal mid-tier Asia: analisis visual sehari-hari dengan harga agresif, bukan penalaran murni papan atas. Untuk pasar Indonesia,segmen analis junior, pelajar yang sering bertanya tentang diagram buku, dan tim operasional yang butuh ekstraksi data dari screenshot — semuanya use case di mana GLM 5V Turbo unggul dibanding model teks-only. Harga input/output nol di benchmark AA (sumber: Artificial Analysis) kemungkinan mengindikasikan akses gratis untuk tier awal atau program promo — informasi harga definitif perlu dicek langsung di portal Z AI atau platform routing pihak ketiga. Intelligence index 34,5 di bawah frontier papan atas, dan ini menjadi trade-off eksplisit: spesialisasi visual dengan harga pemula, bukan skor benchmark absolut. Strategi pemakaian yang masuk akal: GLM 5V Turbo untuk tugas visual-analitis harian; GLM 5 Reasoning atau frontier Barat untuk penalaran murni; Qwen3.5-VL atau MiMo-V2-Omni untuk alternatif multimodal; Gemini 3 Flash atau GPT-5 Vision untuk workload volume tinggi. Untuk pasar Indonesia yang banyak berurusan dengan konten visual (laporan,grafik,dokumen PDF), GLM 5V Turbo adalah tambahan serius di toolbox AI yang tidak bisa diabaikan.",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-06",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
