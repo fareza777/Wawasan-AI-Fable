@@ -1220,7 +1220,47 @@ export const stacks: Review[] = [
     link: "https://www.notion.so/product/ai",
     linkLabel: "Situs Resmi",
     date: "2026-07-04",
-  }
+  },
+  {
+    slug: "n8n",
+    name: "n8n",
+    tagline: "Workflow automation open-source dengan 400+ integrasi dan AI agent bawaan",
+    tags: ["n8n", "Open Source", "Workflow Automation", "Self-Host"],
+    score: 8.8,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.7 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 9.4 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "n8n adalah platform workflow automation open-source (lisensi Sustainable Use License + opsi self-host penuh) yang punya 400+ node integrasi, AI agent native untuk LangChain, dan bisa di-deploy di cloud atau on-prem. Sebagai alternatif utama Zapier dan Make, n8n unggul di tiga hal: harga jauh lebih rendah untuk volume tinggi, kontrol penuh atas data lewat self-host, dan kemampuan workflow yang lebih kompleks lewat branching eksplisit. Untuk tim Indonesia yang otomatisasi operasional jadi tulang punggung efisiensi, n8n adalah titik masuk yang paling masuk akal di kelasnya.",
+    pros: [
+      "Harga signifikan lebih rendah dari Zapier untuk workload volume besar - mulai $24/bulan (Starter, ~Rp 444.000) untuk 10.000 eksekusi, bandingkan Zapier Professional $599/bulan untuk 20.000 task",
+      "Self-host gratis sepenuhnya di Docker, Kubernetes, atau Railway, memungkinkan kontrol data penuh untuk perusahaan yang tunduk UU PDP atau compliance industri",
+      "AI agent node dengan LangChain bawaan untuk menarik konteks (RAG), memanggil tool eksternal, dan menghasilkan output terstruktur - tanpa setup tambahan",
+      "Ekspresi JavaScript native di setiap node untuk logic kustom, jauh lebih fleksibel dari visual-only builder di Make atau Zapier",
+      "400+ integrasi resmi plus community node yang mencakup hampir semua SaaS populer: Google Workspace, Slack, Notion, GitHub, Supabase, MySQL, Postgres, dan API custom",
+    ],
+    cons: [
+      "Self-host butuh minimal server 2 vCPU + 4 GB RAM yang hidup terus-menerus (modal Rp 150-300 ribu/bulan di VPS Indonesia atau Rp 60-150 ribu/bulan di Hetzner/AWS Lightsail)",
+      "Learning curve lebih tinggi dari Zapier dan Make - UI visual butuh waktu adaptasi, dan JavaScript di node wajib dikuasai untuk workflow non-trivial",
+      "Komunitas dan tutorial bahasa Indonesia masih terbatas; dokumentasi dan forum resmi dominan berbahasa Inggris dan Jerman",
+      "Saat self-host, backup, upgrade, dan monitoring adalah tanggung jawab operator - bukan sepenuhnya 'free'",
+    ],
+    verdict:
+      "Standar baru untuk workflow automation yang menghargai kendali dan biaya - pilihan utama untuk tim Indonesia yang tidak ingin terkunci vendor dan punya volume integrasi tinggi, tapi Zapier masih lebih cepat untuk kebutuhan non-teknis yang sesekali. Pilih n8n kalau kamu punya tim teknis dan volume workload yang membenarkan investasi setup; pilih Zapier kalau tim non-teknis butuh otomatisasi dalam hitungan jam.",
+    body: [
+      "n8n adalah platform workflow automation yang lahir di Berlin pada 2019 sebagai alternatif open-source Zapier, dan selama lima tahun berkembang jadi salah satu tulang punggung otomasi untuk ribuan tim engineering dan operasional. Versi 2026-nya, yang dibangun di atas TypeScript dengan arsitektur node-based, menawarkan lebih dari 400 integrasi resmi (Google Workspace, Slack, Notion, GitHub, Supabase, Stripe, PostgreSQL, dan lain-lain) plus komunitas node untuk ratusan service tambahan. Model bisnisnya hybrid: ada opsi cloud ($24/bulan untuk paket Starter, $60/bulan Pro, custom Enterprise) plus lisensi Sustainable Use License untuk self-host - yang mengizinkan pemakaian komersial untuk organisasi di bawah 10 juta dolar revenue tahunan. Untuk yang revenue-nya di atas angka itu atau butuh white-label, ada Enterprise self-host yang lisensinya lebih longgar.",
+      "Yang membedakan n8n dari Zapier dan Make adalah tiga hal teknis yang krusial untuk pasar Indonesia. Pertama, harga untuk volume besar. Starter $24/bulan sudah termasuk 10.000 eksekusi workflow; untuk startup Indonesia yang otomatisasi jadi tulang punggung efisiensi (mis. integrasi Tokopedia/Shopee, pengiriman invoice otomatis, dan sinkronisasi CRM ke Google Sheets), cost per workflow bisa 10-20 kali lebih rendah dari Zapier yang $20/100 task. Kedua, kemampuan AI agent native. Sejak versi 1.30 (awal 2025), n8n punya node AI Agent yang mengorkestrasi LLM dengan tool calling, memory, dan RAG bawaan - lengkap dengan integrasi OpenAI, Anthropic, Google Gemini, Ollama (untuk self-host), dan koneksi ke vector database. Ketiga, ekspresi JavaScript native di setiap node, yang sangat berguna untuk transformasi data custom (mis. parsing CSV dari attachment email, mapping field antar sistem, atau generate signature JWT untuk API internal).",
+      "Workflow editor visualnya terdiri dari node-node yang dihubungkan dengan garis alur, dengan panel kanan untuk konfigurasi tiap node. Tooltip di setiap node sangat informatif, dan format dokumentasinya mengikuti pola Read the Docs yang bisa dijelajahi offline lewat pencarian bawaan. Untuk workflow yang kompleks, ada fitur Function node yang menerima dan memproses data via JavaScript lengkap - pola yang sangat familiar untuk developer Indonesia yang sudah biasa dengan Node.js. Untuk workflow non-teknis, node IF, Switch, Merge, dan Set sudah cukup untuk hampir semua kasus percabangan. Testing flow juga bagus: tombol Execute Node di tiap node menunjukkan output step-by-step tanpa harus trigger workflow utuh, pola yang mirip Postman untuk API debugging.",
+      "Untuk pengguna dan tim Indonesia, n8n punya beberapa use case spesifik yang bernilai tinggi. Pertama, untuk bisnis e-commerce yang jualan di Tokopedia, Shopee, dan TikTok Shop sekaligus, ada node TikTok Shop, Tokopedia, dan Shopee community yang bisa dipakai untuk sinkronisasi produk, update stok real-time, dan tarik order ke sistem internal (mis. Accurate, Jurnal, atau ERP rumah tangga) - menggantikan workflow manual yang biasanya butuh admin dedicated. Kedua, untuk agency marketing dan operasional yang mengelola banyak akun klien, workflow Notion-to-Slack-to-Google Sheets bisa di-orkestrasi tanpa batasan task yang biasanya jadi penghalang di Zapier. Ketiga, untuk korporasi dan fintech yang tunduk UU PDP dan wajib menyimpan data di yurisdiksi lokal, self-host dengan VPS Indonesia (Niagahoster, IDCloudHost, Biznet Gio) atau data center on-prem memastikan data tidak pernah keluar negeri. Modal teknis: 2 vCPU + 4 GB RAM ($20-30/bulan di VPS) sudah cukup untuk workload startup; high-availability setup dengan 2 node + queue Redis butuh 4-8 GB RAM dan setup 2-4 jam pertama. Standar harga: Starter $24/bulan (~Rp 444.000), Pro $60/bulan (~Rp 1,1 juta), Enterprise cloud custom, self-host gratis + biaya VPS Rp 150-300 ribu/bulan, Enterprise self-host $40 ribu/tahun. Untuk tim operasional Indonesia yang pusing dengan tagihan Zapier, n8n adalah nilai terbaik di kelasnya.",
+    ],
+    link: "https://n8n.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-05",
+  },
 ];
 
 export function getStack(slug: string) {
