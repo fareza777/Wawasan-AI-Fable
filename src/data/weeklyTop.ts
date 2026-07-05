@@ -623,6 +623,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Dilisensikan MIT/Apache-2.0 dan dibuat dengan mdBook (sama tool dengan Rust official docs) — relevan untuk maintainer proyek open-source dan engineer yang ingin belajar standar disiplin release ala Unicity Labs.",
       ],
     },
+    "unicity-sphere/sphere": {
+      description:
+        "Platform Web3 dari Unicity Labs yang menyatukan wallet dual-layer, messaging P2P (DM + grup), dan marketplace agen AI dalam satu aplikasi — dirancang untuk 'Autonomous Agentic Internet'.",
+      highlights: [
+        "AgentSphere dari Unicity Labs menyatukan wallet kripto dual-layer (ALPHA L1 + state transition L3) dengan DM Nostr, group chat NIP-29, dan marketplace agen AI dalam satu aplikasi web.",
+        "Wallet menerapkan protokol Sphere Connect (iframe/popup) sehingga dApp eksternal bisa minta tanda tangan, kirim token, dan memicu intent tanpa meninggalkan workflow mereka — permission-based, user selalu approve dulu.",
+        "Bagian dari visi 'Autonomous Agentic Internet' Unicity: agen AI bisa bertransaksi, chatting, dan bernegosiasi peer-to-peer lewat Sphere SDK, sementara blockchain tinggal jadi trust anchor (eksekusi off-chain, settlement on-chain).",
+        "Stack modern (React 19, Vite, TanStack Query, Tailwind v4) plus deploy satu baris via Docker Compose di port 3010 — relevan untuk builder Web3 Indonesia yang ingin eksplorasi wallet + agen tanpa bikin dari nol.",
+      ],
+    },
     "hasaneyldrm/exercises-dataset": {
       description:
         "Dataset fitness terlengkap di GitHub dengan 1.324 latihan — masing-masing membawa GIF animasi, thumbnail, otot target, equipment, dan instruksi bilingual (EN/TR) yang siap pakai untuk aplikasi kebugaran.",
@@ -802,6 +812,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
           "Setup empat baris lewat plugin marketplace (`/plugin marketplace add openai/codex-plugin-cc`, `/plugin install codex@openai-codex`), pakai kredensial Codex yang sudah ada — bukan runtime baru, melainkan wrapper tipis dengan arsitektur companion script + broker yang stateful.",
           "Signifikansi strategisnya besar untuk pengguna dual-tool: workflow khas 'tulis di Claude Code, review di Codex dengan model berbeda' sekarang satu sesi — relevan untuk engineer Indonesia yang sudah langganan keduanya dan ingin tool diversity sungguhan.",
           ],
+          },
+          "elder-plinius/T3MP3ST": {
+            description:
+              "Framework red-teaming otonom dari elder-plinius yang membungkus AI coding agent (Claude Code, Codex, Hermes) jadi 'zero-day hunter' — bug bounty, CTF, dan audit smart contract lewat satu War Room tanpa API key tambahan.",
+            highlights: [
+              "T3MP3ST bukan tool keamanan terpisah: ia menempel ke AI coding agent yang sudah ada di mesin (Claude Code, Codex, Hermes) sebagai 'otak', sementara T3MP3ST jadi 'mesin perang' di sekelilingnya — tanpa API key kedua, tanpa tagihan kedua, tanpa cloud lock-in.",
+              "Output benchmark yang bisa diaudit ulang: `npm run verify-claims` re-derive semua klaim README dari data committed, sehingga pembaca bukan diminta 'percaya angka' — 90,1% pass@1 di XBEN-XBOW dan CTF hint-free dibuktikan lewat reproduksi.",
+              "Domain yang sudah stabil (web apps, CTF, robotics/OT/embedded disclosure) dipisahkan eksplisit dari yang masih roadmap (source code Python-only ingest, smart contract reproduction) lewat tabel status — langka di tool AI-agentik yang biasanya oversell kapabilitas.",
+              "Lisensi AGPL-3.0 dengan disclaimer 'authorized use only' yang serius: relevan untuk security researcher, bug bounty hunter, dan tim red-team Indonesia yang ingin tooling otonom tanpa harus bangun dari nol atau bayar konsultan.",
+            ],
+          },
+          "Zackriya-Solutions/meetily": {
+            description:
+              "Asisten rapat AI privacy-first (Meetily) dari Zackriya Solutions yang transkrip live, identifikasi pembicara, dan rangkum rapat pakai Whisper/Parakeet + Ollama — 100% lokal di macOS/Windows tanpa kirim audio ke cloud.",
+            highlights: [
+              "Arsitektur Rust + stack lokal: transkripsi Parakeet/Whisper 4x lebih cepat dari baseline, speaker diarization, dan summarization lewat Ollama — tidak satu pun paket audio yang meninggalkan mesin, sesuai regulasi privasi enterprise.",
+              "Live transcription yang mengikuti rapat secara real-time (bukan rekam lalu proses), lengkap dengan ringkasan poin kunci, action items, dan speaker attribution — produktivitas langsung terasa di meeting pertama.",
+              "Cross-platform desktop app (Tauri/Rust) untuk macOS & Windows, integrasi dengan mikrofon sistem dan meeting app (Zoom, Meet, Teams) tanpa root driver — instal sekali, jalan cross-OS dengan UI konsisten.",
+              "Edisi Community gratis dengan Pro opsional untuk akurasi lebih tinggi, export advanced, dan workflow summary custom — base code MIT-friendly dan aktif di Discord, relevan untuk konsultan, jurnalis, dan tim internal Indonesia yang membahas hal sensitif.",
+            ],
+          },
+          "MadsLorentzen/ai-job-search": {
+            description:
+              "Framework lamaran kerja AI berbasis Claude Code (oleh Mads Lorentzen) yang mengubah proses apply jadi pipeline terstruktur — `/scrape` cari lowongan, `/apply` evaluasi kecocokan, lalu agen penulis + peninjau saling iterasi untuk hasil akhir.",
+            highlights: [
+              "Workflow Claude Code dengan command terstruktur: `/setup` isi profil dari folder dokumen LinkedIn export atau interview, `/scrape` cari lowongan lewat job portal lokal, `/apply <url>` evaluasi fit dan tulis CV/cover letter — bukan satu prompt panjang, melainkan pipeline agentik.",
+              "Arsitektur 'drafter-reviewer' yang jarang ada di tool apply kerja: satu agen nulis CV/cover letter, agen kedua mengkritik dan revisi, sampai final output — mencegah halusinasi formatting LaTeX dan memastikan relevansi ke lowongan spesifik.",
+              "Output LaTeX siap compile (lualatex/xelatex) dengan template terpisah untuk CV dan surat — desain typografis bersih, ratusan pelamar bisa dilayani tanpa satu per satu menulis di Word.",
+              "Job portal skills fokus pasar Denmark (Jobindex, Jobnet, Akademikernes Jobbank, LinkedIn) tapi pattern-nya language-agnostic dan bisa di-port ke job board Indonesia (JobStreet, Glints, LinkedIn ID) — cocok untuk job seeker tech yang ingin otomasi apply tanpa kehilangan personalisasi.",
+            ],
           },
           };
 
