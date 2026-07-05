@@ -1,40 +1,43 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "5 Juli 2026",
-  "period": {
-    "date": "2026-07-05",
-    "label": "5 Juli 2026",
-    "path": "/repo/daily/2026/07/05"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-05T00:09:56.817Z",
+  "fetchedAt": "2026-07-05T05:39:32.979Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "teamchong/pxpipe",
-      "owner": "teamchong",
-      "repo": "pxpipe",
-      "description": "cut Fable 5 token usage by rendering text context as images",
-      "githubUrl": "https://github.com/teamchong/pxpipe",
-      "trendshiftUrl": "https://trendshift.io/repositories/71973",
+      "fullName": "elder-plinius/T3MP3ST",
+      "owner": "elder-plinius",
+      "repo": "T3MP3ST",
+      "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
+      "githubUrl": "https://github.com/elder-plinius/T3MP3ST",
+      "trendshiftUrl": "https://trendshift.io/repositories/73214",
       "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-05-20T12:39:42Z"
+      "topics": [
+        "AI agent",
+        "Pentesting",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-02T17:53:55Z"
     },
     {
       "rank": 2,
-      "fullName": "langchain-ai/openwiki",
-      "owner": "langchain-ai",
-      "repo": "openwiki",
-      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
-      "githubUrl": "https://github.com/langchain-ai/openwiki",
-      "trendshiftUrl": "https://trendshift.io/repositories/70339",
-      "language": "TypeScript",
+      "fullName": "Usagi-org/ai-goofish-monitor",
+      "owner": "Usagi-org",
+      "repo": "ai-goofish-monitor",
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "githubUrl": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17190",
+      "language": "Python",
       "topics": [
-        "AI agent"
+        "Headless browser",
+        "Web scraping",
+        "E-commerce",
+        "Monitoring"
       ],
-      "dateCreated": "2026-06-22T23:48:26Z"
+      "dateCreated": "2025-07-16T08:13:41Z"
     },
     {
       "rank": 3,
@@ -52,22 +55,6 @@
     },
     {
       "rank": 4,
-      "fullName": "Zackriya-Solutions/meetily",
-      "owner": "Zackriya-Solutions",
-      "repo": "meetily",
-      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows.",
-      "githubUrl": "https://github.com/Zackriya-Solutions/meetily",
-      "trendshiftUrl": "https://trendshift.io/repositories/21958",
-      "language": "Rust",
-      "topics": [
-        "AI agent",
-        "Audio processing",
-        "Self-hosted"
-      ],
-      "dateCreated": "2024-12-26T12:52:14Z"
-    },
-    {
-      "rank": 5,
       "fullName": "k1tbyte/Wand-Enhancer",
       "owner": "k1tbyte",
       "repo": "Wand-Enhancer",
@@ -79,7 +66,7 @@
       "dateCreated": "2024-11-17T20:02:10Z"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "fullName": "MadsLorentzen/ai-job-search",
       "owner": "MadsLorentzen",
       "repo": "ai-job-search",
@@ -96,7 +83,66 @@
       "dateCreated": "2026-03-18T14:33:04Z"
     },
     {
+      "rank": 6,
+      "fullName": "langchain-ai/openwiki",
+      "owner": "langchain-ai",
+      "repo": "openwiki",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+      "githubUrl": "https://github.com/langchain-ai/openwiki",
+      "trendshiftUrl": "https://trendshift.io/repositories/70339",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T23:48:26Z"
+    },
+    {
       "rank": 7,
+      "fullName": "firecrawl/firecrawl",
+      "owner": "firecrawl",
+      "repo": "firecrawl",
+      "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "githubUrl": "https://github.com/firecrawl/firecrawl",
+      "trendshiftUrl": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "topics": [
+        "AI workflow",
+        "Web scraping"
+      ],
+      "dateCreated": "2024-04-15T21:02:29Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Zackriya-Solutions/meetily",
+      "owner": "Zackriya-Solutions",
+      "repo": "meetily",
+      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows.",
+      "githubUrl": "https://github.com/Zackriya-Solutions/meetily",
+      "trendshiftUrl": "https://trendshift.io/repositories/21958",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2024-12-26T12:52:14Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ammaarreshi/Generals-Mac-iOS-iPad",
+      "owner": "ammaarreshi",
+      "repo": "Generals-Mac-iOS-iPad",
+      "description": "Command & Conquer Generals: Zero Hour running natively on macOS, iPhone & iPad — real engine (EA GPL v3 source, via GeneralsX), DXVK/MoltenVK renderer, RTS touch controls. No game assets included.",
+      "githubUrl": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad",
+      "trendshiftUrl": "https://trendshift.io/repositories/73021",
+      "language": "C++",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-07-04T02:59:39Z"
+    },
+    {
+      "rank": 10,
       "fullName": "asgeirtj/system_prompts_leaks",
       "owner": "asgeirtj",
       "repo": "system_prompts_leaks",
@@ -108,47 +154,6 @@
         "Chatbot"
       ],
       "dateCreated": "2025-05-03T02:43:56Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "usestrix/strix",
-      "owner": "usestrix",
-      "repo": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "githubUrl": "https://github.com/usestrix/strix",
-      "trendshiftUrl": "https://trendshift.io/repositories/15362",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Pentesting"
-      ],
-      "dateCreated": "2025-08-05T21:28:30Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "alibaba/page-agent",
-      "owner": "alibaba",
-      "repo": "page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
-      "githubUrl": "https://github.com/alibaba/page-agent",
-      "trendshiftUrl": "https://trendshift.io/repositories/22551",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2025-09-23T09:30:17Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "canopy-network/canopy",
-      "owner": "canopy-network",
-      "repo": "canopy",
-      "description": "The official go implementation of the Canopy Network protocol",
-      "githubUrl": "https://github.com/canopy-network/canopy",
-      "trendshiftUrl": "https://trendshift.io/repositories/21774",
-      "language": "Go",
-      "topics": [],
-      "dateCreated": "2024-10-30T11:39:07Z"
     }
   ]
 }
