@@ -1756,6 +1756,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-05",
     featured: false,
   },
+  {
+    slug: "ppt-master",
+    name: "PPT Master",
+    tagline: "AI yang ubah dokumen apa pun jadi presentasi PowerPoint-native yang bisa diedit",
+    tags: ["AI Agent", "Presentasi", "Python", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "PPT Master adalah generator presentasi AI open-source yang berbeda dari kebanyakan tools sejenis: outputnya adalah file .pptx native dengan shape, animasi, chart yang bisa diedit - bukan slide gambar. Cocok untuk tim yang sering mengubah dokumen panjang jadi deck tanpa kehilangan kontrol atas konten.",
+    highlights: [
+      "Output .pptx native dengan shape dan animasi PowerPoint asli, bukan render gambar",
+      "Chart dan tabel yang bisa diedit penuh - ganti data langsung di PowerPoint setelah deck dibuat",
+      "Speaker notes otomatis dengan opsi audio narration (text-to-speech) untuk setiap slide",
+      "Dukungan template .pptx kustom - hormati brand guidelines perusahaan lewat template sendiri",
+      "Pipeline input fleksibel: dokumen PDF, Markdown, atau teks bebas lewat command line dan web UI",
+      "Arsitektur agent multi-langkah: plan outline, generate konten per slide, render shape via python-pptx",
+      "Open-source MIT license, deploy lokal tanpa ketergantungan cloud proprietary",
+      "Komunitas 36 ribu bintang GitHub - basis pengguna aktif sejak rilis awal 2026",
+    ],
+    pros: [
+      "Output benar-benar editable - bukan slide gambar yang harus regenerate dari awal",
+      "Sangat cocok untuk workflow yang sering mengubah dokumen panjang jadi presentasi",
+      "Mendukung brand custom lewat template .pptx - konsisten visual tanpa setup rumit",
+      "Lisensi MIT, self-host, dan tidak kirim data ke layanan cloud proprietary",
+    ],
+    cons: [
+      "Kualitas output sangat tergantung kualitas model LLM yang dikonfigurasi - perlu eksperimen",
+      "Layout shape otomatis masih kalah fleksibel dibanding desainer manusia untuk deck critical",
+      "Chart kompleks dengan banyak series kadang perlu penyesuaian manual setelah deck dibuat",
+    ],
+    verdict:
+      "PPT Master adalah pilihan pragmatis untuk tim yang butuh presentasi rutin dari dokumen tanpa harus mulai dari slide kosong. Bukan pengganti desainer untuk deck critical, tapi accelerator kuat untuk 80% workflow presentasi harian.",
+    body: [
+      "Hampir semua generator presentasi AI yang dievaluasi Wawasan AI punya keterbatasan yang sama: outputnya adalah slide gambar (PNG atau PDF), bukan file PowerPoint yang bisa diedit. Begitu deck dibuat, mengubah satu angka di chart berarti regenerate seluruh presentasi. PPT Master dari Hugo He mengambil pendekatan berbeda - outputnya adalah .pptx native dengan shape, animasi, dan chart yang bisa dimodifikasi langsung di PowerPoint, persis seperti deck yang dibuat tangan.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah alur dokumen-ke-deck rutin. Tim riset yang menghasilkan laporan mingguan, konsultan yang menyiapkan briefing klien dari dokumen panjang, atau dosen yang mengubah paper jadi materi kuliah - semuanya mendapat acceleration signifikan. Yang paling membedakan PPT Master dibanding kompetitornya adalah dukungan template .pptx kustom: brand guidelines perusahaan tinggal disuntikkan lewat file template, dan setiap deck baru otomatis mengikuti style yang sudah ditetapkan.",
+      "Arsitekturnya cukup transparan untuk dipahami dan dimodifikasi: agent multi-langkah yang pertama-tama merencanakan outline, lalu generate konten per slide sesuai outline, dan akhirnya render shape via python-pptx ke file PowerPoint. Pipeline ini bisa disisipkan di workflow yang lebih besar - misalnya dari DeerFlow yang riset topik, ke PPT Master yang ubah hasil riset jadi deck. Fleksibilitas ini yang menjadikan PPT Master komponen yang menarik di stack agent modern.",
+      "Keterbatasan yang perlu dipahami: kualitas layout shape otomatis masih kalah dari desainer manusia untuk deck sangat penting (pitch investor, keynote). Beberapa chart kompleks dengan banyak series juga kadang butuh penyesuaian manual. Tapi untuk 80% workflow presentasi harian - briefing internal, deck mingguan, materi pelatihan - PPT Master adalah accelerator yang sulit ditandingi open-source lain di kelasnya pada 2026.",
+    ],
+    link: "https://github.com/hugohe3/ppt-master",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-06",
+    updatedAt: "2026-07-06",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
