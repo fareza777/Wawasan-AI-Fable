@@ -1806,6 +1806,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-06",
     featured: false,
   },
+{
+    slug: "copilotkit",
+    name: "CopilotKit",
+    tagline: "Stack frontend native agent untuk React & Generative UI dengan protokol AG-UI terbuka",
+    tags: ["AI Agent", "Generative UI", "TypeScript", "React"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "CopilotKit adalah framework frontend yang membawa agent dan Generative UI ke dalam aplikasi React, Angular, hingga mobile. Lebih dari 35 ribu bintang GitHub dan protokol AG-UI terbuka menjadikannya salah satu pondasi praktis untuk membangun copilot dan UI yang dihasilkan AI di produk nyata.",
+    highlights: [
+      "Frontend stack terpadu untuk agent: React, Angular, Mobile, Slack, dan channel lain dalam satu paket integrasi",
+      "Protokol AG-UI terbuka - standar interoperabilitas agent-to-UI yang bisa diadopsi lintas framework frontend",
+      "Komponen React siap pakai: Chat, Popup, Sidebar, dan Headless UI untuk membangun copilot tanpa menulis dari nol",
+      "Integrasi mendalam dengan LangGraph, CrewAI, AutoGen, dan OpenAI Agents SDK lewat adapter resmi",
+      "Generative UI: agent bisa merender form, tabel, dan komponen kompleks di dalam chat sebagai respons dinamis",
+      "CoAgents baru memungkinkan agen stateful yang berbagi state dengan frontend lewat arsitektur manusia-di-loop",
+      "open-source MIT dengan ekosistem plugin pihak ketiga yang terus tumbuh pada 2026",
+      "Dokumentasi rapi plus playground interaktif untuk prototyping alur agent sebelum integrasi ke aplikasi produksi",
+    ],
+    pros: [
+      "Mempercepat drastis waktu pengembangan UI agentic - developer React bisa produktif dalam hitungan jam, bukan minggu",
+      "AG-UI sebagai protokol terbuka mengurangi vendor lock-in: frontend tidak terikat pada satu backend agent tertentu",
+      "Komunitas besar dan aktif (lebih dari 35 ribu bintang) dengan ritme rilis tinggi dan diskusi konstruktif",
+      "Cakupan framework luas - tidak hanya React, juga Angular, mobile (React Native), dan integrasi Slack",
+    ],
+    cons: [
+      "Masih relatif baru di ruang frontend agentic - best practice komunitas masih terus terbentuk di 2026",
+      "Beberapa fitur Generative UI memerlukan pemahaman state management React yang cukup matang",
+      "Kontribusi kode backend agent tetap dipegang tim CopilotKit - pengguna perlu menulis adapter sendiri untuk stack proprietary",
+    ],
+    verdict:
+      "CopilotKit adalah pilihan pragmatis bagi tim frontend Indonesia yang ingin membawa kemampuan agentic ke produk mereka tanpa membangun infrastruktur dari nol. Protokol AG-UI terbuka menjadikannya investasi jangka panjang yang tidak cepat obsolet.",
+    body: [
+      "Selama 2025-2026, banyak framework agentic bermunculan dengan janji serupa, namun CopilotKit mengambil sudut yang jarang disentuh: lapisan frontend. Alih-alih bersaing di orkestrasi backend, proyek ini fokus pada hal yang paling dekat dengan pengguna - cara agent berinteraksi dengan UI di aplikasi React, Angular, mobile, hingga Slack. Hasilnya adalah framework terpadu yang membuat copilot dan Generative UI terasa seperti komponen native, bukan tempelan.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah integrasi copilot ke aplikasi internal yang sudah ada. Tim dapat menambahkan panel chat, popup, atau sidebar interaktif dalam hitungan jam, lalu menghubungkannya ke agent LangGraph atau CrewAI lewat adapter resmi. Yang paling membedakan CopilotKit adalah protokol AG-UI - standar terbuka untuk komunikasi agent-to-UI - yang berarti frontend tidak terikat pada satu backend agent tertentu. Pemilih model LLM, orkestrator, maupun tooling bisa diganti tanpa harus merombak lapisan presentasi.",
+      "Fitur CoAgents yang lebih baru menambahkan dimensi menarik: agen stateful yang bisa berbagi state dengan frontend secara real-time, memungkinkan pola manusia-di-loop yang lebih alami. Misalnya, agent bisa menampilkan tabel yang bisa diedit langsung di chat, menunggu konfirmasi pengguna, lalu melanjutkan alur kerja. Arsitektur ini terasa familiar bagi developer React modern - tidak ada lagi pemisahan kaku antara logika backend dan presentasi. Untuk konteks Indonesia, CopilotKit relevan bagi produk SaaS lokal, aplikasi internal perusahaan, maupun dashboard AI yang increasingly marak di sektor fintech dan edutech.",
+      "Keterbatasan yang perlu dipahami: ekosistem best practice masih terus terbentuk, dan beberapa fitur Generative UI memerlukan pemahaman state management React yang matang - pemula mungkin perlu waktu untuk membiasakan diri. Selain itu, kontribusi pada backend agent tetap terpusat di tim CopilotKit, sehingga pengguna dengan stack proprietary perlu menulis adapter sendiri. Namun untuk sebagian besar kasus - membangun copilot di produk SaaS, dashboard internal, atau aplikasi pelanggan - CopilotKit adalah titik masuk paling pragmatis di paruh kedua 2026.",
+    ],
+    link: "https://github.com/CopilotKit/CopilotKit",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-07",
+    updatedAt: "2026-07-07",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
