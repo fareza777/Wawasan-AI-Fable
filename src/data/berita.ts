@@ -1313,6 +1313,63 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "coocon-perluas-bisnis-data-berbasis-mcp-menuju-era-agen-ai",
+    title: "COOCON dan Standarisasi Global Agen AI: Peluang atau Ancaman untuk Infrastruktur Lokal?",
+    excerpt:
+      "Saat raksasa pembayaran Korea Selatan bergabung ke konsorsium AI agent internasional, pertanyaan sebenarnya bukan soal Korea — tapi apakah Indonesia siap ketika data dan pembayaran kita menjadi bahan bakar agen AI lintas negara.",
+    category: "Analisis",
+    date: "2026-07-07",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Pengumuman dari Seoul minggu lalu mungkin terlihat seperti berita korporat biasa: COOCON, perusahaan payment gateway Korea Selatan, bergabung sebagai Silver Member ke Agentic AI Foundation (AAIF) di bawah naungan Linux Foundation. Tapi di balik pengumuman itu ada sinyal yang lebih besar — bahwa infrastruktur pembayaran dan data global sedang disusun ulang supaya bisa langsung dipakai oleh agen AI, bukan lagi hanya oleh manusia lewat aplikasi.",
+          "Buat pembaca di Indonesia, relevansinya tidak langsung terasa karena nama perusahaannya asing dan use case-nya terdengar futuristik. Tapi COOCON secara eksplisit menyebut QRIS — standar QR pembayaran nasional Indonesia — sebagai salah satu integrator pembayaran yang sudah mereka selesaikan. Artinya, ketika arsitektur MCP-based mereka matang, agen AI global berpotensi punya jalur native untuk bertransaksi menggunakan QRIS. Pertanyaannya: siapkah ekosistem lokal untuk skenario itu?",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya diumumkan COOCON",
+        paragraphs: [
+          "COOCON (KOSDAQ 294570) bukan perusahaan kecil. Mereka punya jaringan 2 juta merchant QR, 40.000 ATM, dan platform data yang menghubungkan sekitar 500 institusi domestik Korea serta 2.000 institusi finansial di lebih dari 40 negara lewat 300-an API. Angka-angka itu menjelaskan kenapa mereka diundang ke AAIF — bukan sekadar sebagai pengamat, tapi sebagai pemain infrastruktur yang datanya relevan.",
+          "AAIF sendiri adalah konsorsium open-source di bawah Linux Foundation yang beranggotakan lebih dari 180 organisasi, termasuk nama-nama besar seperti Anthropic, OpenAI, Google, Microsoft, Circle, Stripe, dan Tron. Misi yang tertulis: mengembangkan standar terbuka untuk interoperabilitas AI agent — bagaimana agen dari vendor berbeda bisa saling membayar, bertukar data, dan mengoordinasikan tindakan. Dua area kerja yang COOCON masuki adalah AI agent payments dan MCP-based data business. Kombinasi keduanya menunjukkan bahwa data dan pembayaran dipandang sebagai satu paket, bukan dua hal terpisah.",
+          "MCP — Model Context Protocol — sudah dibahas di artikel terpisah di situs ini sebagai protokol penghubung antara agen AI dan sumber data. Yang berubah dengan pengumuman ini: pemain sebesar COOCON kini menyatakan transisi arsitektur mereka ke MCP secara eksplisit, dan bersedia menyumbangkan waktu engineers ke working group standarisasi. Ini bukan lagi eksperimen — ini awal konsolidasi industri.",
+        ],
+      },
+      {
+        heading: "Kaitan langsung dengan Indonesia: QRIS dan data kita",
+        paragraphs: [
+          "QRIS adalah detail kecil di pengumuman COOCON yang justru paling relevan buat pembaca di Indonesia. QRIS — standar QR yang dipakai Bank Indonesia dan Asosiasi Sistem Pembayaran Indonesia — sudah menjadi salah satu integrator pembayaran global COOCON. Artinya, kalau arsitektur MCP mereka jadi kenyataan, agen AI dari berbagai vendor bisa saja memiliki kemampuan untuk membayar dan menerima pembayaran melalui QRIS tanpa harus melewati aplikasi mobile banking tradisional.",
+          "Implikasinya tidak kecil. UMKM yang sekarang menerima pembayaran lewat QRIS di toko, warung, atau booth bazaar pada dasarnya sudah punya endpoint pembayaran yang secara teknis bisa diakses agen AI. Bayangkan skenario: agen belanja milik konsumen memesan bahan dapur, membayar lewat QRIS merchant favorit, lalu agen merchant mengirim konfirmasi dan resi otomatis. Atau agen travel agent memesan tiket pesawat dan penginapan dengan pembayaran QRIS end-to-end. Semua itu terdengar futuristik, tapi fondasi infrastrukturnya sudah ada hari ini.",
+          "Di sisi data, ada pertanyaan yang lebih halus. Platform COOCON menghubungkan data dari ribuan institusi finansial lewat API. Ketika API itu dibungkus ulang dengan format MCP, agen AI bisa saja meminta data agregat tentang pola transaksi, profil risiko, atau perilaku konsumen — lintas batas negara — secara terprogram. Buat Indonesia, ini bisa berarti kesempatan (data kita lebih mudah diakses oleh sistem AI global, mendorong inklusi) atau risiko (data kita keluar dari yurisdiksi lokal tanpa kontrol yang jelas).",
+        ],
+      },
+      {
+        heading: "Peluang konkret untuk developer dan UMKM lokal",
+        paragraphs: [
+          "Untuk developer Indonesia yang ingin memanfaatkan momentum ini tanpa harus pindah ke Seoul, ada beberapa jalur realistis. Pertama, eksplorasi teknis MCP itu sendiri — protokolnya open dan reference implementation-nya tersedia di repositori publik. Siapa pun yang sudah pernah membangun REST API sekarang punya kesempatan untuk membungkus API itu jadi MCP server, sehingga bisa diakses agen AI dari luar. Bagi startup fintech lokal, ini jalur untuk membuat layanan mereka relevan di era agen tanpa harus menunggu vendor global datang lebih dulu.",
+          "Kedua, perhatikan tiga area fokus COOCON tahun ini: global payments, stablecoin, dan AI-based data business. Dua di antaranya menyentuh Indonesia secara langsung — pembayaran QRIS yang sudah matang, dan stablecoin yang meski belum diatur di Indonesia, sedang ramai dibicarakan di tingkat regional. Buat developer yang sudah familiar dengan blockchain dan smart contract, area ini kemungkinan akan jadi pasar kerja baru dalam 12-24 bulan ke depan.",
+          "Ketiga, UMKM dan bisnis kecil sebaiknya mulai berpikir tentang bagaimana agen AI akan berinteraksi dengan usaha mereka, bukan hanya sebagai alat bantu internal tapi juga sebagai customer atau supplier baru. Mempersiapkan catalog produk dalam format terstruktur (bukan cuma PDF atau foto Instagram), memastikan QRIS selalu aktif dan terekam dengan benar, dan mulai memikirkan otomasi laporan penjualan adalah langkah-langkah kecil yang akan terasa sangat relevan ketika agen AI benar-benar jadi pelanggan aktif.",
+        ],
+      },
+      {
+        heading: "Pertanyaan kedaulatan data yang harus dijawab sekarang",
+        paragraphs: [
+          "Di sisi lain, ada kekhawatiran yang tidak bisa diabaikan. Pertama, soal lokasi dan yurisdiksi data. Ketika data finansial Indonesia difasilitasi lewat platform seperti COOCON dan arsitektur MCP-nya, lalu lintas data melewati infrastruktur global. Untuk industri yang tunduk pada regulasi OJK, Bank Indonesia, atau UU PDP, pertanyaan 'di mana data saya diproses' dan 'siapa yang punya akses ke log permintaan' harus punya jawaban yang jelas sebelum integrasi masuk ke sistem produksi.",
+          "Kedua, soal standar terbuka versus standar yang dikendalikan vendor. AAIF di bawah Linux Foundation terdengar netral, tapi anggota voting dan working group-nya tetap didominasi perusahaan besar dari Amerika, Korea, dan China. Indonesia belum terlihat punya kursi di meja itu. Kalau Indonesia hanya jadi pasar — bukan penentu standar — maka kita akan mengadopsi protokol yang aturan mainnya ditulis orang lain. Ini bukan argumen untuk menolak adopsi, melainkan untuk mendorong partisipasi aktif.",
+          "Ketiga, soal transparansi agen itu sendiri. Standar interoperabilitas yang baik seharusnya tidak hanya memungkinkan agen dari vendor berbeda saling bertransaksi, tapi juga memastikan bahwa manusia di belakang transaksi — baik konsumen maupun merchant — memahami bahwa mereka sedang berurusan dengan agen, bukan manusia. Disclosure yang jelas adalah prasyarat kepercayaan, dan ini bagian yang sering kali luput dari pembicaraan teknis tentang protokol.",
+        ],
+      },
+      {
+        heading: "Apa yang layak dipantau dalam 6-12 bulan ke depan",
+        paragraphs: [
+          "Beberapa indikator konkret yang bisa diamati: rilis resmi reference MCP server dari pemain besar, penyertaan bank atau fintech Indonesia dalam working group AAIF atau konsorsium sejenis, dan kemunculan agen AI lokal yang sudah bisa bertransaksi end-to-end lewat QRIS. Jika salah satu dari tiga hal ini terjadi dalam 6-12 bulan ke depan, kita sudah memasuki era baru — di mana agen AI bukan hanya menulis email atau merangkum dokumen, tapi benar-benar melakukan tindakan ekonomi atas nama manusia.",
+          "Buat regulator dan pembuat kebijakan, ini saat yang tepat untuk duduk bersama pelaku industri dan menyusun posisi Indonesia: di mana kita ingin berdiri dalam konsorsium standar global, data apa yang harus tetap di yurisdiksi lokal, dan bagaimana memastikan UMKM mendapat perlindungan saat agen AI menjadi pihak dalam transaksi mereka. Menunggu sampai semuanya matang akan membuat Indonesia cuma jadi pengadopsi, bukan penentu.",
+          "Dalam pengujian editorial Wawasan AI, pengumuman COOCON ke AAIF adalah penanda bahwa industri payment global sudah mulai memperlakukan AI agent sebagai pengguna infrastruktur yang setara dengan manusia — lengkap dengan jalur pembayaran, akses data, dan standar interoperabilitasnya. Buat pembaca di Indonesia, ini bukan berita Korea yang jauh — ini pengingat bahwa infrastruktur yang kita pakai sehari-hari sedang didefinisikan ulang di tempat lain, dan opsi untuk ikut menentukan arahnya masih terbuka. Yang dibutuhkan bukan kepanikan, melainkan kehadiran yang konsisten di ruang-ruang standar tersebut — sebelum pintu rapatnya sendiri.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
