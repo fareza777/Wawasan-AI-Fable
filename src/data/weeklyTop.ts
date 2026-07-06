@@ -843,6 +843,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
               "Job portal skills fokus pasar Denmark (Jobindex, Jobnet, Akademikernes Jobbank, LinkedIn) tapi pattern-nya language-agnostic dan bisa di-port ke job board Indonesia (JobStreet, Glints, LinkedIn ID) — cocok untuk job seeker tech yang ingin otomasi apply tanpa kehilangan personalisasi.",
             ],
           },
+          "ruvnet/RuView": {
+            description:
+              "Platform WiFi sensing (RuView / WiFi DensePose) dari ruvnet yang ubah sinyal WiFi biasa jadi 'radar' — deteksi orang, hitung napas dan detak jantung contactless, klasifikasi aktivitas, lewat ESP32 murah tanpa kamera.",
+            highlights: [
+              "Pendekatan 'WiFi DensePose' yang terkenal: pakai Channel State Information (CSI) dari ESP32 murah ($9 per node) untuk membaca pantulan sinyal WiFi terhadap tubuh manusia — bisa 'lihat' orang melalui tembok, dalam gelap, tanpa kamera atau wearable.",
+              "Vital sign contactless: mengukur pernapasan dan detak jantung saat tidur atau duduk, plus pengenalan aktivitas (jalan, duduk, jatuh, gestur) dan sleep stage classification dengan apnea screening — relevan untuk eldercare, baby monitor, dan wellness tracker.",
+              "Ditenagai model kecil ruvnet/wifi-densepose-pretrained di Hugging Face (8 KB setelah 4-bit quantization, jalan di Raspberry Pi) dan mesh multi-frekuensi 6 channel WiFi — adaptif di tiap ruangan dalam ~30 detik, attestation Ed25519 untuk anti-tamper.",
+              "Integrasi smart-home native: Home Assistant MQTT, Apple Home / Google Home / Alexa lewat Matter bridge, 21 entitas per node (someone-sleeping, fall-risk-elevated, bed-exit, dll) — bukan demo riset, melainkan tool produksi untuk smart-home enthusiast dan tim IoT Indonesia.",
+            ],
+          },
+          "steipete/CodexBar": {
+            description:
+              "App macOS menubar (Swift) dari Peter Steinberger yang memantau limit dan usage 57+ provider AI coding sekaligus — Codex, Claude, Cursor, Gemini, Copilot, Groq, dan lain-lain, langsung di bar atas layar tanpa login ulang.",
+            highlights: [
+              "Satu ikon menubar untuk 57+ provider (Codex, Claude, Cursor, Gemini, Copilot, Grok, GroqCloud, ElevenLabs, Deepgram, z.ai, MiniMax, Kiro, Zed, Vertex AI, Augment, OpenRouter, LiteLLM, AWS Bedrock) — bukan switcher, melainkan 'radar' real-time yang kasih tahu sisa quota dan kapan reset.",
+              "Info kontekstual yang actionable: hitung mundur ke reset berikutnya (session, mingguan, bulanan), saldo credits, Admin API spend, dan status insiden provider — berhenti nebak 'boleh mulai long task sekarang atau nanti'.",
+              "Privacy-first arsitektur: pakai ulang sesi provider yang sudah ada (OAuth, device flow, API key, cookie browser, file lokal) tanpa simpan password — relevan untuk developer yang punya banyak langganan AI dan ogah daftarkan token ke app ketiga.",
+              "Distribusi lengkap: Homebrew cask untuk macOS, formula Linux glibc, AUR Arch, plus CLI standalone (codexbar serve) yang bisa dipasang di tmux, SketchyBar, Zellij, dan ZSH lewat plugin — bukan app eksklusif Mac, melainkan stack menu-bar universal.",
+            ],
+          },
           };
 
           // Helper: lookup dengan fallback ke template-generated highlights
