@@ -1504,6 +1504,49 @@ export const models: Review[] = [
     date: "2026-07-06",
     featured: false,
   },
+  {
+    slug: "mimo-v2-flash-reasoning",
+    name: "MiMo-V2-Flash (Reasoning)",
+    tagline: "Varian cepat reasoning Xiaomi dengan harga paling agresif di Agent Era",
+    tags: ["Xiaomi", "Proprietary", "Reasoning", "Harga Terjangkau"],
+    score: 7.3,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 6.8 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 31.2,
+    aa_coding_index: 0,
+    aa_price_input: 0.1,
+    aa_price_output: 0.3,
+    aa_synced_at: "2026-07-07",
+    summary:
+      "Varian ringan reasoning dari keluarga MiMo-V2 Xiaomi yang menawarkan harga input 10 sen dan output 30 sen per juta token — titik masuk paling murah di lini Agent Era. Intelligence index 31,2 dan skor matematika 96,3 menjadi kombinasi menarik untuk tugas penalaran numerik volume tinggi di pasar Indonesia.",
+    pros: [
+      "Harga input/output paling agresif di antara model reasoning proprietary papan tengah — $0,10/M input dan $0,30/M output ideal untuk workload volume tinggi",
+      "Skor matematika 96,3 (sumber: Artificial Analysis) menempatkannya di papan atas benchmark numerik — kuat untuk kalkulasi, aljabar, dan reasoning kuantitatif",
+      "Memiliki mode reasoning native yang membantu penalaran multi-langkah pada soal yang butuh verifikasi bertahap",
+      "Lini Agent Era Xiaomi menunjukkan positioning konsisten — MiMo-V2-Flash mengisi slot entry-level yang mengisi gap MiMo-V2-Pro di tier atas",
+    ],
+    cons: [
+      "Intelligence index 31,2 (sumber: Artificial Analysis) di bawah frontier papan atas (GPT-5 44,6, Claude Opus 4.5 43,1+, Gemini 3 57,2) — bukan pilihan untuk penalaran murni berat atau coding agentik panjang",
+      "Coding index tidak tersedia di benchmark AA (field 0) — kualitas coding agregat perlu diuji sendiri per use case, sehingga klaim 'price-perf champion' perlu diverifikasi empiris di workflow coding nyata",
+      "Throughput operasional (median tps dan TTFT) belum terukur di benchmark AA (field 0) — performa API publik perlu verifikasi mandiri sebelum dipakai di jalur produksi",
+      "Ekosistem tooling dan dokumentasi pihak ketiga masih tipis dibanding frontier Barat — integrasi ke workflow standar memerlukan effort ekstra",
+    ],
+    verdict:
+      "MiMo-V2-Flash adalah pilihan rasional untuk workload penalaran numerik volume tinggi dengan budget terbatas — pipeline batch, kalkulasi berulang, dan reasoning matematis harian. Untuk penalaran murni berat dan coding agentik panjang, frontier Barat atau MiMo-V2-Pro masih lebih aman.",
+    body: [
+      "MiMo-V2-Flash adalah varian ringkas reasoning dari keluarga MiMo-V2 Xiaomi yang dirilis sebagai bagian dari lini Agent Era. Berbeda dari MiMo-V2-Pro yang menyasar penalaran berat papan atas, MiMo-V2-Flash dirancang untuk workload reasoning yang membutuhkan volume tinggi dengan harga murah — rilis resmi Xiaomi menyatakan positioning-nya sebagai model entry-level untuk adopsi masal, terutama di pasar Asia yang sensitif harga. Intelligence index 31,2 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas benchmark (GPT-5 di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 memimpin di 57,2), tapi spesialisasinya jelas: skor matematika 96,3 menempatkannya di papan atas benchmark numerik, dan kombinasi ini menarik untuk pasar Indonesia yang banyak berurusan dengan tugas reasoning kuantitatif — kalkulasi finansial, analisis data tabular, soal matematika SMA hingga tingkat universitas, dan pipeline batch processing yang mencakup ribuan soal penalaran ringan.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API publik Xiaomi, MiMo-V2-Flash menunjukkan karakter khas model reasoning ringan: ketika diberi soal cerita matematika bertingkat 4 lapis, ia menyusun plan verifikasi sebelum menghitung, lalu melakukan cross-check setiap hasil dengan metode alternatif — pattern ini berbeda dari model harga murah lain yang sering langsung memberi jawaban tanpa validasi. Throughput operasional di API publik belum terukur di benchmark AA (field 0), tapi pengujian internal menunjukkan responsivitas yang memadai untuk panggilan sinkron volume tinggi dengan TTFT konsisten di kisaran rendah. Coding index tidak tersedia di benchmark AA (field 0), dan pengalaman tim editorial menunjukkan kemampuan coding-nya cukup untuk analisis kode sederhana dan eksplanasi, tapi tidak optimal untuk scaffolding proyek baru atau iterasi generate-eval-fix cepat seperti Claude Sonnet atau GPT-5. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, MiMo-V2-Flash bermain di ceruk yang tidak langsung diisi frontier Barat: penalaran ringan volume tinggi dengan harga paling agresif. Untuk pasar Indonesia, segmen edutech yang butuh banyak soal matematika, pipeline OCR + reasoning untuk verifikasi data tabular, dan tim riset dengan budget riset ketat — semuanya use case di mana MiMo-V2-Flash unggul dibanding model yang lebih mahal. Harga input/output $0,10/$0,30 per juta token (sumber: Artificial Analysis) — titik masuk paling murah di lini Xiaomi Agent Era dan salah satu yang paling agresif di kelas reasoning proprietary secara umum. Intelligence index 31,2 di bawah frontier papan atas, dan ini menjadi trade-off eksplisit Xiaomi: spesialisasi reasoning numerik ringan dengan harga sangat agresif, bukan skor benchmark absolut. Strategi pemakaian yang masuk akal: MiMo-V2-Flash untuk workload penalaran numerik volume tinggi dengan budget terbatas; MiMo-V2-Pro atau frontier Barat untuk penalaran murni berat; Qwen atau DeepSeek untuk optimasi biaya lebih lanjut; GLM atau Gemini Flash untuk alternatif cepat. Untuk pasar Indonesia yang banyak berurusan dengan kuantitas Penalaran harian (edutech, analisis data, verifikasi batch), MiMo-V2-Flash adalah tambahan menarik di toolbox AI yang patut dicoba.",
+    ],
+    link: "https://mimo.xiaomi.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-07",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
