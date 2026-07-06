@@ -1,0 +1,153 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-06T05:58:56.982Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "Zackriya-Solutions/meetily",
+      "owner": "Zackriya-Solutions",
+      "repo": "meetily",
+      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows.",
+      "githubUrl": "https://github.com/Zackriya-Solutions/meetily",
+      "trendshiftUrl": "https://trendshift.io/repositories/21958",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2024-12-26T12:52:14Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "asgeirtj/system_prompts_leaks",
+      "owner": "asgeirtj",
+      "repo": "system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "githubUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "trendshiftUrl": "https://trendshift.io/repositories/14577",
+      "language": "JavaScript",
+      "topics": [
+        "Chatbot"
+      ],
+      "dateCreated": "2025-05-03T02:43:56Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "alibaba/zvec",
+      "owner": "alibaba",
+      "repo": "zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "githubUrl": "https://github.com/alibaba/zvec",
+      "trendshiftUrl": "https://trendshift.io/repositories/20830",
+      "language": "C++",
+      "topics": [
+        "Vector database",
+        "Search"
+      ],
+      "dateCreated": "2025-12-05T07:45:38Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "langchain-ai/openwiki",
+      "owner": "langchain-ai",
+      "repo": "openwiki",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+      "githubUrl": "https://github.com/langchain-ai/openwiki",
+      "trendshiftUrl": "https://trendshift.io/repositories/70339",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T23:48:26Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "steipete/CodexBar",
+      "owner": "steipete",
+      "repo": "CodexBar",
+      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+      "githubUrl": "https://github.com/steipete/CodexBar",
+      "trendshiftUrl": "https://trendshift.io/repositories/19295",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2025-11-16T17:00:44Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Leonxlnx/taste-skill",
+      "owner": "Leonxlnx",
+      "repo": "taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "githubUrl": "https://github.com/Leonxlnx/taste-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/21681",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-19T21:44:05Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "MaximeRivest/riddle",
+      "owner": "MaximeRivest",
+      "repo": "riddle",
+      "description": "The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a flowing hand",
+      "githubUrl": "https://github.com/MaximeRivest/riddle",
+      "trendshiftUrl": "https://trendshift.io/repositories/74094",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-05T15:48:08Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "alibaba/page-agent",
+      "owner": "alibaba",
+      "repo": "page-agent",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "githubUrl": "https://github.com/alibaba/page-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/22551",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-09-23T09:30:17Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "hesreallyhim/awesome-claude-code",
+      "owner": "hesreallyhim",
+      "repo": "awesome-claude-code",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "githubUrl": "https://github.com/hesreallyhim/awesome-claude-code",
+      "trendshiftUrl": "https://trendshift.io/repositories/14325",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills",
+        "Curated list"
+      ],
+      "dateCreated": "2025-04-19T20:55:59Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "alirezarezvani/claude-skills",
+      "owner": "alirezarezvani",
+      "repo": "claude-skills",
+      "description": "337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "githubUrl": "https://github.com/alirezarezvani/claude-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21486",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-10-19T04:04:05Z"
+    }
+  ]
+}
