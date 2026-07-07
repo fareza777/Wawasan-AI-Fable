@@ -1547,6 +1547,49 @@ export const models: Review[] = [
     date: "2026-07-07",
     featured: false,
   },
+  {
+    slug: "o3",
+    name: "o3",
+    tagline: "Model reasoning klasik OpenAI dengan spesialisasi matematika dan sains tingkat olimpiade",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Penelitian"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 8.2 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 7.0 },
+      { label: "Harga/Performa", value: 7.2 },
+    ],
+    aa_intelligence_index: 30.4,
+    aa_coding_index: 0,
+    aa_price_input: 2,
+    aa_price_output: 8,
+    aa_synced_at: "2026-07-08",
+    summary:
+      "Model reasoning ikonik OpenAI yang menaruh dasar penalaran multi-langkah skala besar dengan skor matematika 88,3 - angka yang menempatkannya di papan atas benchmark numerik dibanding frontier reasoning 2026. Intelligence index 30,4 (sumber: Artificial Analysis) memang bukan yang tertinggi di kelasnya, tapi kombinasi kecepatan 154 token/detik dan tradisi OpenAI dalam penalaran terstruktur menjadikan o3 titik masuk yang menarik untuk riset dan pipeline agen yang butuh verifikasi bertahap.",
+    pros: [
+      "Skor matematika 88,3 (sumber: Artificial Analysis) tertinggi kedua di benchmark industri - kuat untuk soal olimpiade, pembuktian teoritis, dan reasoning kuantitatif yang butuh verifikasi multi-langkah",
+      "Token output 154 per detik (median, sumber: Artificial Analysis) konsisten untuk model reasoning berat - cukup untuk interaktif sambil mempertahankan kedalaman penalaran",
+      "Dukungan tool-use dan function calling yang sudah matang dari OpenAI - integrasi ke workflow agentik, retrieval, dan orchestration lebih minim friksi dibanding model open weight",
+      "Warisan reputasi dari lineage o-series yang banyak dijadikan benchmark oleh komunitas riset - kelangkaan relatif dibanding frontier baru memberi nilai dokumentasi dan studi kasus yang luas",
+    ],
+    cons: [
+      "Intelligence index 30,4 (sumber: Artificial Analysis) di bawah frontier reasoning 2026 (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+) - kalah di benchmark agregat untuk penalaran umum dan kode panjang",
+      "Coding index tidak tersedia di benchmark AA (field 0) - kemampuan coding agen perlu verifikasi empiris di workflow nyata, bukan asumsi dari reputasi reasoning",
+      "Harga output $8 per juta token (sumber: Artificial Analysis) paling tinggi di kelas reasoning publik OpenAI - pipeline agentik panjang bisa membengkak 3-4x dibanding frontier baru",
+      "Diluncurkan lebih awal dari frontier 2026 - positioning bergeser ke classic reasoning workhorse bukan state-of-the-art, dokumentasi dan pola prompt engineering mungkin kurang update",
+    ],
+    verdict:
+      "o3 adalah pilihan rasional untuk workload penalaran kuantitatif yang butuh tradisi OpenAI dan tool-use yang stabil - riset, pipeline agen mid-complexity, dan eksperimen reasoning bertahap. Untuk frontier mutakhir di penalaran umum dan coding, GPT-5 atau Claude Opus 4.5 lebih layak; untuk optimasi biaya penalaran, Qwen atau DeepSeek offering lebih menarik.",
+    body: [
+      "o3 adalah model reasoning yang menandai awal era penalaran multi-langkah skala besar dari OpenAI, dirilis sebagai bagian dari lineage o-series yang fokus pada kemampuan berpikir sebelum menjawab. Berbeda dari seri GPT mainstream yang mengoptimalkan general utility, o3 dirancang khusus untuk penalaran terstruktur: ia menyusun rencana, melakukan cross-check, dan memverifikasi setiap langkah sebelum menghasilkan jawaban akhir. Skor matematika 88,3 (sumber: Artificial Analysis) menjadi pembeda utama - angka ini menempatkannya di papan atas benchmark numerik, hanya kalah dari frontier reasoning 2026 seperti Gemini 3 dan beberapa model reasoning Xiaomi MiMo-V2. Intelligence index 30,4 memang tidak menaruhnya di papan atas benchmark agregat (GPT-5 di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 memimpin di 57,2), tapi spesialisasinya jelas: untuk soal yang butuh penalaran bertahap dengan verifikasi, o3 masih menjadi salah satu pilihan yang mapan di pasar.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API publik OpenAI, o3 menunjukkan karakter khas model reasoning klasik: ketika diberi soal cerita yang butuh deduksi bertahap, ia menggunakan pattern plan-verify-cross-check yang berbeda dari model harga murah yang langsung menjawab. Throughput 154 token/detik (sumber: Artificial Analysis) menjadikan o3 cukup responsif untuk panggilan sinkron di mana developer butuh jawaban terlihat tanpa menunggu terlalu lama, meski TTFT 5,8 detik cukup terasa untuk chatbot real-time. Coding index tidak tersedia di benchmark AA (field 0), dan pengalaman tim editorial menunjukkan kemampuan coding-nya cukup untuk eksplanasi dan iterasi kode bertahap, tapi tidak se-optimal GPT-5 atau Claude Sonnet untuk scaffolding proyek baru atau generate-eval-fix panjang. Tool-use OpenAI sudah matang dan integrasi ke workflow Retrieval-Augmented Generation dan orchestration minim friksi - aspek ini memberi nilai tambah dibanding model open weight yang butuh setup tambahan. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, o3 bermain sebagai classic reasoning workhorse - pilihan bagi tim yang sudah pernah membangun di atas o-series dan ingin transisi yang mulus tanpa harus migrate ke frontier baru. Untuk pasar Indonesia, segmen yang cocok meliputi: tim riset di universitas atau laboratorium yang butuh penalaran terstruktur untuk simulasi atau pembuktian; pipeline agen mid-complexity yang butuh tool-use stabil; dan eksperimen yang butuh model dengan tradisi dokumentasi dan komunitas yang luas. Harga $2 input / $8 output per juta token (sumber: Artificial Analysis) memang lebih tinggi dibanding frontier baru seperti GLM-5 atau Qwen3.6, tapi sebanding dengan nilai untuk workload di mana stabilitas OpenAI lineage dan tool-use maturity adalah prioritas. Strategi pemakaian yang masuk akal: o3 untuk penalaran kuantitatif bertahap dan pipeline agen dengan tool-use intensif; GPT-5 atau Claude Opus 4.5 untuk frontier mutakhir penalaran umum dan coding; Qwen atau DeepSeek untuk optimasi biaya penalaran; Gemini Flash untuk alternatif cepat dengan harga lebih agresif. Untuk developer Indonesia yang sudah akrab dengan OpenAI ecosystem dan butuh penalaran reasoning klasik yang teruji, o3 tetap slot yang relevan di toolbox AI.",
+    ],
+    link: "https://openai.com/o3",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-08",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
