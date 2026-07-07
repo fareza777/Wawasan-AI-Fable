@@ -1856,6 +1856,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-07",
     featured: false,
   },
+  {
+    slug: "openclaude",
+    name: "OpenClaude",
+    tagline: "Coding agent CLI open-source yang jalan di mana saja dan pakai model apa saja",
+    tags: ["AI Agent", "Coding Agent", "TypeScript", "CLI"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "OpenClaude adalah coding-agent CLI open-source berlisensi MIT yang dirancang sebagai alternatif transparan untuk asisten coding proprietary. Mendukung beragam backend (OpenAI, Gemini, GitHub Models, Codex OAuth, Ollama, Atomic Chat) dalam satu workflow terminal-first yang konsisten: prompt, tools, agents, MCP, slash commands, dan streaming output.",
+    highlights: [
+      "Mendukung banyak backend lewat API OpenAI-compatible, Gemini, GitHub Models, Codex OAuth, Codex, Ollama, Atomic Chat, dan provider lain yang terus bertambah",
+      "Workflow terminal-first: prompt, tools, agents, MCP, slash commands, dan streaming output dalam satu antarmuka CLI",
+      "Dukungan Model Context Protocol (MCP) untuk memperluas kemampuan dengan tool eksternal",
+      "Slash commands untuk tindakan cepat yang bisa dikustomisasi sesuai workflow tim",
+      "Sistem sub-agent yang bisa dipakai untuk memecah tugas coding besar menjadi unit lebih kecil",
+      "Channel output streaming yang informatif, cocok untuk monitoring eksekusi panjang",
+      "Setup guides terpisah untuk tiap provider sehingga onboarding per backend jelas dan tidak ambigu",
+      "Mode source build untuk kontributor yang ingin memodifikasi atau mempelajari agen dari dalam",
+      "VS Code extension resmi untuk integrasi ke editor populer tanpa meninggalkan IDE",
+    ],
+    pros: [
+      "Multi-provider tanpa vendor lock-in - bisa ganti backend dari Ollama lokal ke API komersial tanpa mengubah workflow",
+      "Open-source MIT memungkinkan audit, kontribusi, dan penggunaan internal tanpa lisensi tambahan",
+      "Komunitas aktif dengan lebih dari 29 ribu bintang dan rilis yang konsisten",
+    ],
+    cons: [
+      "Backend Ollama dan provider lokal memerlukan konfigurasi tambahan untuk setup pertama kali",
+      "Dokumentasi masih mengandalkan eksplorasi kode langsung untuk sebagian skenario lanjutan",
+      "Beberapa fitur masih tertinggal dibanding Claude Code proprietary, terutama di integrasi IDE non-VS Code",
+    ],
+    verdict:
+      "Pilihan menarik untuk tim engineering Indonesia yang ingin coding agent CLI open-source dengan fleksibilitas backend penuh. Untuk yang sudah sering menggunakan Ollama atau GitHub Models, OpenClaude adalah jembatan yang ringan dan transparan ke workflow agentic.",
+    body: [
+      "Di tengah maraknya coding agent CLI proprietary, OpenClaude mengambil posisi yang berbeda: proyek open-source berlisensi MIT yang sengaja meniru ergonomik CLI coding agent modern tanpa mengunci pengguna pada satu vendor. Tagline singkatnya - 'runs anywhere, uses anything' - merangkum janji utama: dapat dijalankan di mana saja (lokal, server, kontainer) dan memakai backend model apa pun yang mendukung API OpenAI-compatible.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling praktis adalah mode hybrid: tim engineering dapat memakai OpenAI atau Gemini saat perlu kualitas puncak untuk review kode, lalu beralih ke Ollama lokal saat memproses data internal yang tidak boleh keluar dari mesin. Transisi ini terjadi hanya dengan mengubah konfigurasi provider, tanpa harus membiasakan diri dengan antarmuka baru. Workflow terminal-first (prompt, tools, agents, MCP, slash commands, dan streaming output) tetap konsisten.",
+      "Arsitekturnya cukup terbuka untuk dipahami: agen menerima prompt, memilih tool dari registri MCP dan built-in, mengeksekusi langkah-langkah, lalu melaporkan hasil lewat channel streaming. Sub-agent dapat dipakai untuk memecah tugas besar - misalnya 'refactor semua handler error di folder src/' - menjadi unit yang lebih fokus. Pendekatan ini mirip dengan tool calling di framework agent lain, namun dengan kompleksitas yang sengaja ditekan. Ekosistem MCP memberikan ruang ekspansi: tim yang sudah punya server MCP internal bisa langsung mengintegrasikannya ke OpenClaude.",
+      "Keterbatasan yang perlu dipahami: untuk provider lokal seperti Ollama, kualitas respons sangat bergantung pada model yang dijalankan - menggunakan model quantized kecil akan terasa jauh lebih lambat dibanding Sonnet atau GPT-4. Beberapa fitur integrasi IDE masih cenderung ke VS Code, sehingga pengguna JetBrains atau Neovim perlu sedikit usaha tambahan. Namun untuk sebagian besar workflow coding harian di Indonesia - scaffolding proyek, migrasi kode, dokumentasi, dan refactor terstruktur - OpenClaude adalah alternatif open-source yang sulit diabaikan pada paruh kedua 2026.",
+    ],
+    link: "https://github.com/Gitlawb/openclaude",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-08",
+    updatedAt: "2026-07-08",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
