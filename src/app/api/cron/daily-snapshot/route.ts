@@ -1,3 +1,7 @@
+/**
+ * Manual snapshot trigger (opsional). Production snapshots come from git commits
+ * in src/data/dailySnapshots/ — not from this route on Vercel.
+ */
 import { NextResponse } from "next/server";
 import { fetchDailyTrendingRepos } from "@/lib/trendshift";
 
