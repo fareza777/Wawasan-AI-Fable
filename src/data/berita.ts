@@ -1370,6 +1370,67 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "cara-menjalankan-llm-open-source-di-komputer-pribadi-anda",
+    title: "LLM Open-Source di Komputer Sendiri: Bukan Lagi Soal GPU Mahal, Tapi Soal Apa yang Sebenarnya Kamu Butuhkan",
+    excerpt:
+      "Tutorial kilat untuk menjalankan model AI open-source di laptop atau PC pribadi — plus kerangka keputusan kapan lokal lebih masuk akal dari berlangganan API, dengan pertimbangan hardware, data, dan konteks bahasa Indonesia.",
+    category: "Tutorial",
+    date: "2026-07-08",
+    readingTime: "8 menit",
+    body: [
+      {
+        paragraphs: [
+          "Dua tahun lalu, menjalankan model AI besar di komputer pribadi terdengar seperti urusan laboratorium. Hari ini, dengan Ollama, LM Studio, atau llama.cpp, seorang pekerja yang punya laptop RAM 16 GB sudah bisa mengunduh model 7 sampai 8 miliar parameter dan menjalankan percakapan yang cukup layak dalam hitungan menit. Tidak perlu kartu grafis mahal, tidak perlu sewa server cloud, tidak perlu berlangganan bulanan. Yang berubah bukan hanya alatnya, tetapi asumsi dasarnya: AI yang benar-benar berjalan di mesinmu sendiri kini menjadi opsi yang realistis, bukan eksperimen pinggiran.",
+          "Tapi ‘bisa dijalankan di lokal’ tidak otomatis berarti ‘harus dijalankan di lokal’. Ada biaya listrik, ada overhead pemeliharaan, ada kualitas output bahasa Indonesia yang masih di bawah model proprietary besar, dan ada fakta bahwa beberapa workflow memang lebih praktis dengan API publik. Tulisan ini bukan tutorial instalasi — literatur itu sudah melimpah. Yang disajikan di sini adalah kerangka keputusan: kapan lokal lebih masuk akal, kapan harus berhenti memaksakan diri, dan bagaimana menjadikan pilihan ini sadar biaya, sadar privasi, dan sadar konteks lokal — bukan sekadar ikut-ikutan tren ‘pakai AI di laptop sendiri’.",
+        ],
+      },
+      {
+        heading: "Sebelum mulai: tiga pertanyaan yang jarang ditanyakan",
+        paragraphs: [
+          "Pertanyaan pertama: untuk apa sebenarnya model ini akan dipakai. Kalau tujuannya adalah percakapan singkat, merapikan catatan, atau eksperimen tanpa output formal — model lokal 7 sampai 8 miliar parameter sudah lebih dari cukup. Kalau tujuannya adalah analisis dokumen panjang, penalaran multi-langkah, atau menghasilkan teks bahasa Indonesia formal pada kualitas pertama — kebanyakan model lokal masih di bawah GPT-4o, Claude Sonnet, atau Gemini 2.5 Pro yang tersedia via API. Jujur pada kebutuhan sendiri menghemat waktu dan tenaga di kemudian hari.",
+          "Pertanyaan kedua: bagaimana dengan data yang akan diproses. Ini pertanyaan yang membedakan pemakaian rumahan dari pemakaian produksi. Untuk pekerjaan yang datanya boleh lewat server luar — ringkasan artikel publik, drafting email, tanya jawab umum — layanan API tetap rasional karena biaya setup dan pemeliharaan ditanggung vendor. Untuk dokumen yang tidak boleh meninggalkan infrastruktur sendiri — rekam medis, data klien, kontrak internal, naskah riset yang belum dipublikasi — model lokal di server sendiri bukan opsi gaya hidup, melainkan kebutuhan operasional.",
+          "Pertanyaan ketiga: siapa yang akan memelihara sistem ini. Model lokal perlu di-update, driver perlu disesuaikan, dan error kadang muncul tanpa permisi. Kalau yang memelihara hanya kamu sendiri dengan waktu luang terbatas, pertimbangkan matang-matang: VPS yang di-host-kan pihak ketiga bisa jadi jalan tengah, dengan catatan bahwa vendor VPS tersebut memegang akses ke data. Pilih dengan sadar, bukan karena semua orang bilang ‘self-host itu wajib’.",
+        ],
+      },
+      {
+        heading: "Spek minimum dan rekomendasi yang lebih realistis dari judul panduan populer",
+        paragraphs: [
+          "Kalau kamu membaca panduan ‘jalankan LLM di laptop RAM 8 GB’, yang dimaksud biasanya adalah model 1 sampai 3 miliar parameter. Realistisnya, model sekecil itu berguna untuk percakapan ringan dan tanya jawab berbasis dokumen kecil, tapi untuk penalaran dan mengikuti instruksi yang kompleks akan sering mengecewakan. Untuk kebanyakan pengguna yang serius mencoba AI sendiri, sweet spot ada di model 7 sampai 8 miliar parameter dengan RAM 16 GB.",
+          "Untuk model 7B seperti Qwen 2.5, Gemma 2, atau Mistral, laptop RAM 16 GB tanpa GPU dedicated sudah cukup. Kecepatan yang wajar: 5 sampai 12 token per detik di CPU modern, cukup untuk percakapan interaktif dan tidak nyaman untuk hal lain. Untuk model 14B ke atas, butuh RAM 32 GB atau GPU dengan VRAM 12 GB ke atas. Dan untuk model 70B — kelas yang mendekati GPT-4 — perlu workstation dengan GPU profesional atau dua GPU kelas konsumen. Tidak ada jalan pintas: model yang lebih besar secara konsisten lebih mampu, dan lebih mampu butuh sumber daya yang lebih besar.",
+          "Rekomendasi utama editorial untuk pembaca Indonesia: mulai dari Qwen 2.5 7B atau Gemma 2 9B sebagai model pertama. Keduanya mendukung bahasa Indonesia dengan cukup baik untuk drafting dan iterasi cepat, komunitasnya aktif di GitHub, dan performanya konsisten di berbagai hardware. Setelah nyaman, baru bereksperimen dengan model lain — DeepSeek untuk penalaran, Llama untuk general purpose, atau model lokal-spesifik seperti Sahabat-AI dari Indosat yang dilatih dengan data bahasa Indonesia yang lebih banyak.",
+        ],
+      },
+      {
+        heading: "Lima langkah konkret yang bisa dijalankan sore ini juga",
+        paragraphs: [
+          "Pertama, unduh Ollama dari ollama.com dan pasang. Installer untuk Windows, macOS, dan Linux tersedia. Setelah terpasang, buka terminal dan ketik ‘ollama run qwen2.5:7b’. Tunggu unduh selesai — sekitar 4 sampai 5 GB — lalu mulai mengetik. Sudah, tidak ada konfigurasi tambahan yang wajib.",
+          "Kedua, jika ingin antarmuka yang lebih ramah daripada terminal, pasang Open WebUI atau LibreChat. Keduanya adalah aplikasi chat berbasis browser yang berjalan di atas Ollama. Instalasi via Docker satu baris, dan hasilnya mirip ChatGPT tetapi sepenuhnya lokal. Untuk pengguna yang lebih suka klik daripada ketik, ini langkah yang sangat meningkatkan kenyamanan harian.",
+          "Ketiga, hubungkan ke alat produktivitas yang sudah dipakai sehari-hari. Karena Ollama menyajikan API yang kompatibel dengan format OpenAI di localhost:11434, hampir semua alat yang mendukung OpenAI bisa diarahkan ke Ollama: n8n untuk otomasi, Dify untuk chatbot dokumen, Continue atau Cline di VS Code untuk asisten coding. Karena tidak ada tagihan per token, pemakaian jadi jauh lebih rileks.",
+          "Keempat, sediakan ruang untuk memori. Model 7B pada umumnya memakai 5 sampai 6 GB RAM saat aktif. Pastikan sistem operasi dan aplikasi lain masih punya ruang. Kalau laptop RAM 16 GB dipakai untuk coding dan browsing dengan 20 tab Chrome, model 7B mungkin akan membuat sistem swap dan terasa lambat. Tutup yang tidak perlu, atau naik ke RAM 32 GB jika memang serius.",
+          "Kelima, jadwalkan update model setiap beberapa bulan. Keluarga model open-source berkembang cepat: yang terbaik sekitar enam bulan lalu sudah bukan yang terbaik hari ini. Luangkan waktu satu jam setiap satu atau dua bulan untuk menarik model baru, bandingkan dengan yang lama, dan pensiunkan yang kalah. Ini bukan kebutuhan teknis, melainkan kebiasaan yang membedakan pengguna kasual dari pengguna yang benar-benar memanfaatkan ekosistem open-source.",
+        ],
+      },
+      {
+        heading: "Jebakan yang hampir selalu tidak dibahas di panduan pemula",
+        paragraphs: [
+          "Pertama, keamanan tidak otomatis muncul dari pemasangan Ollama atau LM Studio. Begitu ada layanan yang mendengarkan di port — default 11434 untuk Ollama — perangkatmu menjadi target potensial jika port itu terekspos ke internet. Untuk produksi, wajib ada reverse proxy dengan TLS, autentikasi, dan firewall. Untuk eksperimen rumahan, cukup pastikan firewall aktif dan Ollama hanya mendengarkan di localhost saja, bukan 0.0.0.0.",
+          "Kedua, kualitas output bahasa Indonesia belum menyamai model proprietary besar. Di banyak panduan berbahasa Inggris, model 7B tampak ‘cukup pintar’. Tapi begitu dipakai untuk merangkum risalah rapat dalam bahasa Indonesia formal, menyusun surat resmi, atau menerjemahkan dokumen dengan nuansa lokal, kualitasnya turun signifikan. Untuk teks-teks tersebut, model lokal lebih cocok untuk drafting awal yang akan disunting manusia.",
+          "Ketiga, model lokal tidak mengingat percakapan antar sesi. Tidak ada sistem memori bawaan yang membuat model ‘mengenal’ kamu atau preferensimu setelah sesi ditutup. Untuk workflow yang memerlukan kontinuitas, perlu dibangun sistem konteks sendiri — file ringkasan yang di-load di awal percakapan, atau integrasi dengan vector database untuk retrieval. Ini pekerjaan tambahan yang sering tidak diperhitungkan saat membandingkan ‘gratis tapi repot’ dengan ‘berbayar tapi praktis’.",
+          "Keempat, ukuran model pada penyimpanan tidak merepresentasikan kualitas. Model 70B yang di-quantize agresif ke Q4 bisa muat di RAM 24 GB dan berjalan di laptop, tapi kualitas penalarannya turun drastis dibanding versi Q8 atau FP16 yang sama-sama muat di server. Untuk eksperimen pribadi, quantization adalah kompromi yang masuk akal. Untuk produksi, quantization kelas ini seringkali bukan jawaban.",
+        ],
+      },
+      {
+        heading: "Kapan lokal lebih masuk akal, kapan harus pakai API",
+        paragraphs: [
+          "Lokal lebih masuk akal ketika: data yang diproses tidak boleh keluar dari infrastruktur sendiri. Ketika volume pemakaian tinggi sehingga tagihan API akan signifikan — sebuah tim kecil yang memakai model secara intensif bisa dengan mudah menghabiskan puluhan dolar per hari di API, setara dengan biaya satu VPS yang dedicated. Ketika ada kebutuhan untuk menyesuaikan model — fine-tune, prompt-cache khusus, integrasi erat dengan sistem internal. Atau ketika AI akan menjadi ‘mainan’ sehari-hari yang ingin dieksplorasi tanpa khawatir tagihan kumulatif.",
+          "API lebih masuk akal ketika: workload tidak menentu dan kadang melonjak. Berlangganan API membayar sesuai pemakaian, jadi tidak ada biaya idle. Ketika kualitas output adalah prioritas utama dan perbedaan 10 sampai 20 persen antara model lokal dan model frontier menentukan hasil. Ketika tim tidak punya bandwidth untuk memelihara infrastruktur tambahan. Atau untuk pekerjaan yang sifatnya sekali jadi dan mahal jika gagal — proofreading naskah penting, validasi kontrak bernilai tinggi.",
+          "Jalan tengah yang sering paling realistis untuk individu dan organisasi kecil di Indonesia adalah campuran: pakai API untuk tugas yang memerlukan kualitas puncak dan sensitif terhadap nuansa, dan pakai lokal untuk iterasi cepat, eksperimen, dan tugas yang volumenya tinggi dengan toleransi kesalahan lebih besar. Ini bukan kompromi yang idealis, melainkan kompromi yang jujur tentang di mana masing-masing opsi menang dan kalah.",
+          "Pada akhirnya, menjalankan AI sendiri bukan pernyataan teknologi — itu keputusan operasional. Yang menentukan nilainya bukan seberapa keren setup teknisnya, melainkan apakah ia benar-benar melayani kebutuhanmu: data apa yang diproses, biaya apa yang mau ditanggung, dan seberapa besar toleransi terhadap hasil yang tidak sempurna. Kalau jawabannya ‘iya untuk semua’, lokal adalah pilihan yang sangat baik hari ini. Kalau ada keraguan, tidak ada salahnya memulai dengan API dan pindah ke lokal setelah paham betul apa yang dibutuhkan. Dalam pengujian editorial Wawasan AI, itulah urutan yang paling sering menghasilkan keputusan yang disesali lebih sedikit di kemudian hari.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
