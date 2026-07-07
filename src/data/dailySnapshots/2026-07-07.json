@@ -1,47 +1,59 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "7 Juli 2026",
-  "period": {
-    "date": "2026-07-07",
-    "label": "7 Juli 2026",
-    "path": "/repo/daily/2026/07/07"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-07T00:07:19.244Z",
+  "fetchedAt": "2026-07-07T05:40:32.914Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "langchain-ai/openwiki",
-      "owner": "langchain-ai",
-      "repo": "openwiki",
-      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
-      "githubUrl": "https://github.com/langchain-ai/openwiki",
-      "trendshiftUrl": "https://trendshift.io/repositories/70339",
-      "language": "TypeScript",
+      "fullName": "Diolinux/PhotoGIMP",
+      "owner": "Diolinux",
+      "repo": "PhotoGIMP",
+      "description": "A Patch for GIMP 3+ for Photoshop Users",
+      "githubUrl": "https://github.com/Diolinux/PhotoGIMP",
+      "trendshiftUrl": "https://trendshift.io/repositories/23452",
+      "language": "CSS",
       "topics": [
-        "AI agent"
+        "Image editing"
       ],
-      "dateCreated": "2026-06-22T23:48:26Z"
+      "dateCreated": "2020-06-19T19:32:09Z"
     },
     {
       "rank": 2,
-      "fullName": "Zackriya-Solutions/meetily",
-      "owner": "Zackriya-Solutions",
-      "repo": "meetily",
-      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows.",
-      "githubUrl": "https://github.com/Zackriya-Solutions/meetily",
-      "trendshiftUrl": "https://trendshift.io/repositories/21958",
-      "language": "Rust",
+      "fullName": "iOfficeAI/OfficeCLI",
+      "owner": "iOfficeAI",
+      "repo": "OfficeCLI",
+      "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+      "githubUrl": "https://github.com/iOfficeAI/OfficeCLI",
+      "trendshiftUrl": "https://trendshift.io/repositories/24391",
+      "language": "C#",
       "topics": [
         "AI agent",
-        "Audio processing",
-        "Self-hosted"
+        "MCP",
+        "Document processing"
       ],
-      "dateCreated": "2024-12-26T12:52:14Z"
+      "dateCreated": "2026-03-15T07:39:12Z"
     },
     {
       "rank": 3,
+      "fullName": "isjiamu/gzh-design-skill",
+      "owner": "isjiamu",
+      "repo": "gzh-design-skill",
+      "description": "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
+      "githubUrl": "https://github.com/isjiamu/gzh-design-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/75200",
+      "language": "HTML",
+      "topics": [
+        "AI agent",
+        "AI skills",
+        "Document processing"
+      ],
+      "dateCreated": "2026-07-01T04:28:03Z"
+    },
+    {
+      "rank": 4,
       "fullName": "MadsLorentzen/ai-job-search",
       "owner": "MadsLorentzen",
       "repo": "ai-job-search",
@@ -58,7 +70,7 @@
       "dateCreated": "2026-03-18T14:33:04Z"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "fullName": "asgeirtj/system_prompts_leaks",
       "owner": "asgeirtj",
       "repo": "system_prompts_leaks",
@@ -72,47 +84,35 @@
       "dateCreated": "2025-05-03T02:43:56Z"
     },
     {
-      "rank": 5,
-      "fullName": "Leonxlnx/taste-skill",
-      "owner": "Leonxlnx",
-      "repo": "taste-skill",
-      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
-      "githubUrl": "https://github.com/Leonxlnx/taste-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/21681",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-19T21:44:05Z"
-    },
-    {
       "rank": 6,
-      "fullName": "ruvnet/RuView",
-      "owner": "ruvnet",
-      "repo": "RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "githubUrl": "https://github.com/ruvnet/RuView",
-      "trendshiftUrl": "https://trendshift.io/repositories/22266",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2025-06-07T04:32:30Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "elder-plinius/T3MP3ST",
-      "owner": "elder-plinius",
-      "repo": "T3MP3ST",
-      "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
-      "githubUrl": "https://github.com/elder-plinius/T3MP3ST",
-      "trendshiftUrl": "https://trendshift.io/repositories/73214",
+      "fullName": "TencentCloud/TencentDB-Agent-Memory",
+      "owner": "TencentCloud",
+      "repo": "TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+      "githubUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "trendshiftUrl": "https://trendshift.io/repositories/29310",
       "language": "TypeScript",
       "topics": [
         "AI agent",
-        "Pentesting",
-        "Self-hosted"
+        "AI memory"
       ],
-      "dateCreated": "2026-07-02T17:53:55Z"
+      "dateCreated": "2026-04-07T06:34:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "bradautomates/claude-video",
+      "owner": "bradautomates",
+      "repo": "claude-video",
+      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+      "githubUrl": "https://github.com/bradautomates/claude-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/30967",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "AI video generation",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-04-24T04:40:43Z"
     },
     {
       "rank": 8,
@@ -131,28 +131,30 @@
     },
     {
       "rank": 9,
-      "fullName": "davidondrej/skills",
-      "owner": "davidondrej",
-      "repo": "skills",
-      "description": "access to david ondrej's personal agent skills",
-      "githubUrl": "https://github.com/davidondrej/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/74399",
+      "fullName": "ruvnet/RuView",
+      "owner": "ruvnet",
+      "repo": "RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "githubUrl": "https://github.com/ruvnet/RuView",
+      "trendshiftUrl": "https://trendshift.io/repositories/22266",
+      "language": "Rust",
       "topics": [],
-      "dateCreated": "2026-06-24T12:32:04Z"
+      "dateCreated": "2025-06-07T04:32:30Z"
     },
     {
       "rank": 10,
-      "fullName": "synthetic-sciences/openscience",
-      "owner": "synthetic-sciences",
-      "repo": "openscience",
-      "description": "The open-source AI workbench for scientific research",
-      "githubUrl": "https://github.com/synthetic-sciences/openscience",
-      "trendshiftUrl": "https://trendshift.io/repositories/72895",
-      "language": "TypeScript",
+      "fullName": "Leonxlnx/taste-skill",
+      "owner": "Leonxlnx",
+      "repo": "taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "githubUrl": "https://github.com/Leonxlnx/taste-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/21681",
+      "language": "JavaScript",
       "topics": [
-        "AI agent"
+        "AI agent",
+        "AI skills"
       ],
-      "dateCreated": "2026-07-03T15:06:45Z"
+      "dateCreated": "2026-02-19T21:44:05Z"
     }
   ]
 }
