@@ -1,0 +1,158 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "7 Juli 2026",
+  "period": {
+    "date": "2026-07-07",
+    "label": "7 Juli 2026",
+    "path": "/repo/daily/2026/07/07"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-07T00:07:19.244Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "langchain-ai/openwiki",
+      "owner": "langchain-ai",
+      "repo": "openwiki",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+      "githubUrl": "https://github.com/langchain-ai/openwiki",
+      "trendshiftUrl": "https://trendshift.io/repositories/70339",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T23:48:26Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Zackriya-Solutions/meetily",
+      "owner": "Zackriya-Solutions",
+      "repo": "meetily",
+      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted,  Open-source Ai meeting note taker for macOS & Windows.",
+      "githubUrl": "https://github.com/Zackriya-Solutions/meetily",
+      "trendshiftUrl": "https://trendshift.io/repositories/21958",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2024-12-26T12:52:14Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation",
+        "Resume building"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "asgeirtj/system_prompts_leaks",
+      "owner": "asgeirtj",
+      "repo": "system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "githubUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "trendshiftUrl": "https://trendshift.io/repositories/14577",
+      "language": "JavaScript",
+      "topics": [
+        "Chatbot"
+      ],
+      "dateCreated": "2025-05-03T02:43:56Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Leonxlnx/taste-skill",
+      "owner": "Leonxlnx",
+      "repo": "taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "githubUrl": "https://github.com/Leonxlnx/taste-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/21681",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-19T21:44:05Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ruvnet/RuView",
+      "owner": "ruvnet",
+      "repo": "RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "githubUrl": "https://github.com/ruvnet/RuView",
+      "trendshiftUrl": "https://trendshift.io/repositories/22266",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2025-06-07T04:32:30Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "elder-plinius/T3MP3ST",
+      "owner": "elder-plinius",
+      "repo": "T3MP3ST",
+      "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
+      "githubUrl": "https://github.com/elder-plinius/T3MP3ST",
+      "trendshiftUrl": "https://trendshift.io/repositories/73214",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Pentesting",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-02T17:53:55Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "firecrawl/firecrawl",
+      "owner": "firecrawl",
+      "repo": "firecrawl",
+      "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "githubUrl": "https://github.com/firecrawl/firecrawl",
+      "trendshiftUrl": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "topics": [
+        "AI workflow",
+        "Web scraping"
+      ],
+      "dateCreated": "2024-04-15T21:02:29Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "davidondrej/skills",
+      "owner": "davidondrej",
+      "repo": "skills",
+      "description": "access to david ondrej's personal agent skills",
+      "githubUrl": "https://github.com/davidondrej/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/74399",
+      "topics": [],
+      "dateCreated": "2026-06-24T12:32:04Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "synthetic-sciences/openscience",
+      "owner": "synthetic-sciences",
+      "repo": "openscience",
+      "description": "The open-source AI workbench for scientific research",
+      "githubUrl": "https://github.com/synthetic-sciences/openscience",
+      "trendshiftUrl": "https://trendshift.io/repositories/72895",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-03T15:06:45Z"
+    }
+  ]
+}

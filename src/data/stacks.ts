@@ -1261,6 +1261,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-07-05",
   },
+{
+    slug: "you-pro",
+    name: "You.com (Pro)",
+    tagline: "AI search multi-model dengan custom agents dan Genius Assistant",
+    tags: ["You.com", "Freemium", "Search/RAG", "Multi-Modal"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 7.6 },
+      { label: "Pengalaman Pengguna", value: 8.1 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "You.com (YouPro) adalah platform AI all-in-one yang menggabungkan AI search, multi-model chat (GPT-4o, Claude 3.5 Sonnet, Gemini, Llama 3, DeepSeek), custom agents, dan riset dengan sitasi dalam satu langganan $15/bulan (tahunan) atau $20/bulan bulanan. Dibanding Perplexity yang fokus murni ke cited search, YouPro unggul di fleksibilitas - satu akun untuk banyak model tanpa subscription terpisah - tapi catatan utamanya adalah akurasi jawaban yang sesekali lebih rendah dari Perplexity dalam pengujian independen. Untuk pengguna Indonesia yang ingin satu langganan AI untuk search, chat, dan eksperimen model tanpa repot manage banyak akun, YouPro adalah pilihan value-for-money terbaik di kelasnya.",
+    pros: [
+      "Harga $15/bulan (tahunan, ~Rp 240.000) atau $20/bulan bulanan - lebih murah dari ChatGPT Plus $20/bulan tapi mencakup banyak model frontier (GPT-4o, Claude 3.5 Sonnet, Gemini, Llama 3, DeepSeek R1) plus research mode dengan sitasi",
+      "Custom Agents dengan instruksi spesifik untuk use case repetitif (riset pasar, code review, summarization); sekali dibuat, bisa dipanggil ulang tanpa re-prompt",
+      "Context window 64k untuk Pro dan 200k untuk Team - cukup untuk analisis dokumen panjang, kontrak legal, atau codebase yang disalin langsung",
+      "File upload 25MB per query di Pro (50MB di Team) mencakup PDF, DOCX, CSV, gambar - cukup untuk analisis laporan keuangan atau paper akademis",
+      "Riset dengan sitasi otomatis (nomor footnote yang bisa diklik untuk verifikasi) - fitur yang membedakan dari ChatGPT biasa yang tidak selalu web-grounded",
+    ],
+    cons: [
+      "Akurasi jawaban lebih rendah dari Perplexity dalam pengujian independen (April 2026, 40 query test: Perplexity 3 error faktual, You.com 7 error) - sitasi ada tapi sintesis multi-sumber kadang menghasilkan halusinasi yang lebih sulit dilacak",
+      "Antarmuka lebih padat dari Perplexity - sidebar dengan histori, tab Research/Chat/Create/Agents, dan panel konfigurasi model bisa terasa overwhelming untuk pengguna kasual",
+      "Free tier sangat terbatas (basic Q&A dengan query count rendah) - untuk merasakan nilai penuh, hampir wajib upgrade ke Pro",
+      "Dukungan pelanggan dan dokumentasi tidak se-responsif ChatGPT atau Claude - forum dan Discord resmi lebih aktif dibanding support channel formal",
+    ],
+    verdict:
+      "Standar baru untuk platform AI all-in-one dengan value terbaik untuk pengguna multi-model, tapi Perplexity tetap lebih akurat untuk riset murni. Pilih YouPro kalau kamu ingin satu langganan yang mencakup banyak model frontier plus custom agents untuk workflow harian; pilih Perplexity kalau prioritas utamamu adalah akurasi riset dengan sitasi yang bisa dilacak.",
+    body: [
+      "You.com memulai hidupnya pada 2020 sebagai search engine AI-first yang menantang Google dengan jawaban tersintesis, dan selama lima tahun berevolusi menjadi platform produktivitas yang lebih luas. YouPro, subscription tier utama mereka, bukan sekadar search wrapper - ia adalah hub yang mengintegrasikan search real-time, multi-model chat, custom agents, image generation (FLUX, Stable Diffusion, DALL-E), dan riset multi-langkah dalam satu akun. Model bisnisnya sederhana: free tier dengan basic Q&A, Pro $15/bulan (tahunan) atau $20/bulan (monthly) dengan akses semua model frontier dan unlimited queries, Team $25/bulan dengan context window lebih besar dan zero data retention untuk compliance, serta Enterprise custom pricing untuk organisasi besar.",
+      "Yang membedakan YouPro dari ChatGPT Plus ($20/bulan) atau Claude Pro ($20/bulan) adalah aggregation approach-nya. Dengan satu langganan YouPro $15/bulan, pengguna bisa gonta-ganti model di tengah percakapan - mulai dari GPT-4o untuk reasoning umum, ke Claude 3.5 Sonnet untuk analisis teks panjang, ke Gemini untuk konteks multimodal, ke DeepSeek R1 untuk reasoning chain-of-thought - tanpa perlu subscription terpisah ke masing-masing provider. Untuk pengguna Indonesia yang kurs dolarnya sensitif tapi ingin eksperimen dengan banyak model frontier, model bisnis ini sangat menarik: $15/bulan (~Rp 240.000 dengan kurs Rp 16.000) untuk akses ke stack model yang kalau dibeli terpisah akan biaya $60-80/bulan. Research mode-nya juga mature: setiap klaim disertai footnote bernomor yang bisa diklik untuk verifikasi sumber, mirip dengan Perplexity tapi dengan kemampuan mengikuti link dan cross-reference yang lebih baik.",
+      "Workflow editor untuk Custom Agents adalah fitur yang paling membedakan YouPro dari search engine biasa. Setelah klik Create Agent, pengguna bisa menulis system prompt lengkap (bisa beberapa paragraf), menentukan model default, dan menambahkan knowledge base (upload PDF/DOCX sekali, agent akan merujuknya untuk semua query berikutnya). Untuk use case repetitif - misalnya 'agent riset pasar' yang setiap pagi diminta rangkum berita industri dari 10 sumber, atau 'agent code reviewer' yang selalu pakai style guide tertentu - Custom Agents menghemat waktu prompting yang signifikan. File upload support hingga 25MB per query di Pro mencakup PDF laporan keuangan, paper akademis (PDF IEEE/ACM biasanya 2-5MB), spreadsheet CSV untuk analisis data, dan gambar untuk OCR atau deskripsi. Context window 64k di Pro juga generous untuk kebanyakan use case; Team upgrade ke 200k untuk analisis dokumen yang lebih panjang.",
+      "Untuk konteks Indonesia, YouPro punya beberapa use case spesifik yang bernilai tinggi. Pertama, untuk jurnalis, content creator, dan researcher yang butuh satu platform AI untuk berbagai task (riset dengan sitasi, draft artikel, edit gambar, eksperimen dengan model berbeda), YouPro menggantikan kebutuhan akan 3-4 subscription terpisah - cost saving yang signifikan untuk freelancer atau small agency. Kedua, untuk profesional hukum dan compliance yang analisis kontrak atau regulasi, fitur Custom Agent yang di-train dengan dokumen internal perusahaan memungkinkan Q&A yang spesifik tanpa expose data ke model publik (wajib pilih Team $25/bulan untuk zero data retention, penting untuk klien yang tunduk UU PDP atau confidentiality clause). Ketiga, untuk mahasiswa dan akademisi Indonesia, free tier cukup untuk skripsi atau paper, tapi Pro $15/bulan dengan akses GPT-4o dan Claude 3.5 Sonnet adalah nilai tinggi dibanding beli akun masing-masing. Catatan: untuk akurasi riset tertinggi, terutama untuk topik yang butuh jurnal akademis atau sumber primer, Perplexity masih lebih reliable; YouPro lebih cocok untuk 'general purpose AI workspace' yang mencakup search tapi juga chat, agents, dan image generation. Standar harga: Pro $15/bulan tahunan (~Rp 240.000) atau $20/bulan bulanan (~Rp 320.000), Team $25/bulan (~Rp 400.000), Enterprise custom, free tier $0 dengan limit. Untuk pengguna Indonesia yang menghargai fleksibilitas multi-model dalam satu langganan, YouPro adalah sweet spot value yang sulit ditandingi.",
+    ],
+    link: "https://you.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-07",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
