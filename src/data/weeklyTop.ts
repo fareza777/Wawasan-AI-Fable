@@ -383,6 +383,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Setiap task yang selesai lewat Agent Apprenticeship bisa diestimasi nilai ekonominya (khususnya domain khusus), jadi 'pekerjaan agen' punya metrik nilai — bukan cuma selesai/tidak.",
     ],
   },
+  "iOfficeAI/OfficeCLI": {
+    description:
+      "Suite Office pertama di dunia yang dirancang khusus untuk AI agent (C#, Apache 2.0, single binary) — baca, edit, dan otomasi Word, Excel, PowerPoint tanpa install Microsoft Office sama sekali.",
+    highlights: [
+      "CLI resmi untuk Office yang dirancang untuk AI agent: create, read, modify, dan reorganize file .docx/.xlsx/.pptx lewat satu binary portable (Homebrew, npm, curl one-liner) — tidak butuh Microsoft Office terinstall di mesin.",
+      "Loop 'render → look → fix' lewat HTML rendering engine internal: agent bisa lihat visual dokumen yang dibuat atau diubah lewat browser preview di localhost, sehingga revisi bukan ditebak dari struktur XML melainkan dari apa yang benar-benar tampil.",
+      "Auto-install skill ke coding agent yang terdeteksi (Claude Code, Cursor, Windsurf, GitHub Copilot) lewat `officecli install` — sekali jalan, agent langsung bisa bikin presentasi, edit Excel, atau generate laporan Word lewat perintah natural language.",
+      "Cakupan fitur enterprise-grade: equation LaTeX, mermaid → native shape, RTL & CJK support, pivot table, chart, animasi PowerPoint, track changes, OLE — relevan untuk tim yang ingin pipeline dokumen otomatis di CI/CD atau headless Docker tanpa Office.",
+    ],
+  },
+  "kyutai-labs/pocket-tts": {
+    description:
+      "TTS ringan 100M parameter dari Kyutai Labs yang jalan mulus di CPU saja (~6x real-time di MacBook Air M4) — cloning suara, multi-bahasa, dan latensi ~200 ms tanpa perlu GPU atau API cloud.",
+    highlights: [
+      "Model TTS 100M parameter dari Kyutai Labs (Moshi creators) yang dirancang khusus untuk CPU — berjalan di laptop biasa tanpa GPU, dengan kecepatan ~6x real-time dan latensi ~200 ms untuk audio chunk pertama.",
+      "Fitur cloning suara siap pakai lewat CLI `export-voice` atau Python API: rekam atau upload sampel audio pendek, lalu synthesize teks dengan suara kustom — katalog suara built-in (alba, giovanni, lola, dst) sudah tersedia untuk 6 bahasa.",
+      "Multi-bahasa out-of-the-box: Inggris, Prancis, Jerman, Portugis, Italia, Spanyol — dengan varian '24 layers' untuk kualitas lebih tinggi pada bahasa non-Inggris, dan dukungan input teks tak terbatas untuk dokumen panjang.",
+      "Pakai via `pip install pocket-tts` atau `uvx pocket-tts` untuk one-shot; serve HTTP lewat `pocket-tts serve` untuk integrasi ke aplikasi; bahkan ada build in-browser lewat ONNX/WebGPU — relevan untuk developer yang ingin TTS lokal-first tanpa ketergantungan OpenAI/Google API.",
+    ],
+  },
   "iptv-org/iptv": {
     description:
       "Daftar publik 100+ ribu channel TV live dari seluruh dunia yang dikurasi komunitas — tinggal salin URL M3U ke VLC, Kodi, atau player IPTV apa pun, gratis.",
