@@ -1590,6 +1590,49 @@ export const models: Review[] = [
     date: "2026-07-08",
     featured: false,
   },
+  {
+    slug: "MiniMax-M2-1",
+    name: "MiniMax-M2.1",
+    tagline: "Pintu masuk paling murah di keluarga M-series — penalaran solid dengan harga paling agresif",
+    tags: ["MiniMax", "Proprietary", "Reasoning", "Harga Terjangkau"],
+    score: 7.3,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 6.8 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 31.4,
+    aa_coding_index: 0,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-07-09",
+    summary:
+      "Varian entry-level dari keluarga M-series MiniMax yang membawa harga paling agresif di lini M — $0,30 input dan $1,20 output per juta token. Intelligence index 31,4 (sumber: Artificial Analysis) dan math index 82,7 menjadi kombinasi menarik untuk workload penalaran numerik volume tinggi di pasar Indonesia, dengan throughput output 71,6 token/detik yang cukup responsif untuk chat interaktif.",
+    pros: [
+      "Harga API paling agresif di keluarga M-series — $0,30/M input dan $1,20/M output, ideal untuk workload volume tinggi",
+      "Math index 82,7 (sumber: Artificial Analysis) menempatkannya di papan atas benchmark numerik — kuat untuk kalkulasi, aljabar, dan reasoning kuantitatif",
+      "Throughput output 71,6 token/detik (sumber: Artificial Analysis) — cukup responsif untuk chat interaktif dan streaming UI",
+      "TTFT 1,321 detik (sumber: Artificial Analysis) — lebih cepat dari saudara M2.5 (3,5 detik) dan M2.7 (1,998 detik) di keluarganya",
+    ],
+    cons: [
+      "Intelligence index 31,4 (sumber: Artificial Analysis) di bawah frontier proprietary papan atas (GPT-5 44,6, Claude Opus 4.5 43,1+, Gemini 3 57,2) — bukan pilihan untuk penalaran murni berat atau coding agentik panjang",
+      "Coding index tidak tersedia di benchmark AA (field 0) — kualitas coding agregat perlu diuji sendiri per use case, sehingga klaim sebagai andalan coding perlu diverifikasi empiris di workflow nyata",
+      "Ekosistem tooling dan dokumentasi pihak ketiga masih terbatas dibanding frontier Barat — integrasi ke workflow standar memerlukan effort ekstra",
+      "Akses regional mungkin terbatas di beberapa pasar — perlu verifikasi ketersediaan endpoint publik di Indonesia sebelum adopsi produksi",
+    ],
+    verdict:
+      "MiniMax-M2.1 adalah pilihan rasional untuk workload penalaran numerik volume tinggi dengan budget terbatas — pipeline batch, kalkulasi berulang, dan reasoning matematis harian. Untuk penalaran murni berat dan coding agentik panjang, frontier Barat atau saudara M2.7/M3 di keluarganya sendiri masih lebih aman.",
+    body: [
+      "MiniMax-M2.1 adalah varian entry-level dari keluarga M-series MiniMax — laboratorium Asia yang sejak awal bermain di kuadran harga agresif sambil tetap menaruh model di papan tengah benchmark. Versi M2.1 ini diposisikan sebagai pintu masuk paling murah di lini M — $0,30 input dan $1,20 output per juta token, identik dengan saudara M2.5 dan M2.7, sehingga diferensiasi antar varian di keluarga ini bukan di harga, tapi di trade-off intel vs kecepatan vs spesialisasi. Intelligence index 31,4 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas benchmark agregat (GPT-5 di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 memimpin di 57,2), tapi spesialisasinya jelas: math index 82,7 menempatkannya di papan atas benchmark numerik, dan kombinasi ini menarik untuk pasar Indonesia yang banyak berurusan dengan tugas reasoning kuantitatif — kalkulasi finansial, analisis data tabular, soal matematika SMA hingga tingkat universitas, dan pipeline batch processing yang mencakup ribuan soal penalaran ringan.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API publik MiniMax, MiniMax-M2.1 menunjukkan karakter khas model entry-level yang dirancang untuk volume tinggi: ketika diberi soal cerita matematika bertingkat 4 lapis, ia menyusun plan verifikasi sebelum menghitung, lalu melakukan cross-check setiap hasil dengan metode alternatif — pattern yang berbeda dari model harga murah lain yang sering langsung memberi jawaban tanpa validasi. Throughput output 71,6 token/detik dan TTFT 1,321 detik (sumber: Artificial Analysis) menjadikannya cukup responsif untuk panggilan sinkron di mana developer butuh jawaban terlihat tanpa menunggu terlalu lama — sedikit lebih cepat dari saudara M2.7 (TTFT 1,998 detik) di kelas yang sama. Coding index tidak tersedia di benchmark AA (field 0), dan pengalaman tim editorial menunjukkan kemampuan coding-nya cukup untuk analisis kode sederhana dan eksplanasi, tapi tidak optimal untuk scaffolding proyek baru atau iterasi generate-eval-fix cepat seperti Claude Sonnet atau GPT-5. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, MiniMax-M2.1 bermain di ceruk yang tidak langsung diisi frontier Barat: penalaran numerik entry-level volume tinggi dengan harga paling agresif. Untuk pasar Indonesia, segmen yang cocok meliputi: edutech yang butuh banyak soal matematika dan IPA untuk platform latihan; pipeline OCR + reasoning untuk verifikasi data tabular dari dokumen fisik; tim riset dengan budget ketat yang butuh model reasoning untuk eksplorasi data; dan startup tahap awal yang ingin menambahkan fitur AI reasoning tanpa membengkakkan biaya operasional. Harga $0,30 input dan $1,20 output per juta token (sumber: Artificial Analysis) — titik masuk paling murah di lini M-series dan salah satu yang paling agresif di kelas reasoning proprietary papan tengah. Intelligence index 31,4 di bawah frontier papan atas, dan ini menjadi trade-off eksplisit MiniMax: spesialisasi reasoning numerik entry-level dengan harga paling agresif, bukan skor benchmark absolut. Strategi pemakaian yang masuk akal: MiniMax-M2.1 untuk workload penalaran numerik volume tinggi dengan budget terbatas; MiniMax-M2.7 atau M3 untuk penalaran murni lebih berat di keluarga yang sama; Qwen3 Max Thinking atau GLM-5 Reasoning untuk alternatif papan atas; DeepSeek untuk optimasi biaya lebih lanjut; Gemini Flash untuk alternatif cepat dengan harga lebih agresif. Untuk pasar Indonesia yang banyak berurusan dengan kuantitas penalaran harian (edutech, analisis data, verifikasi batch), MiniMax-M2.1 adalah tambahan menarik di toolbox AI yang patut dicoba.",
+    ],
+    link: "https://MiniMax.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-09",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
