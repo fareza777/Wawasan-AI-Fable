@@ -1,10 +1,14 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "Hari ini",
-  "period": null,
+  "periodLabel": "8 Juli 2026",
+  "period": {
+    "date": "2026-07-08",
+    "label": "8 Juli 2026",
+    "path": "/repo/daily/2026/07/08"
+  },
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-08T04:46:55.398Z",
+  "fetchedAt": "2026-07-08T00:09:58.916Z",
   "repos": [
     {
       "rank": 1,
@@ -25,6 +29,20 @@
     },
     {
       "rank": 2,
+      "fullName": "Diolinux/PhotoGIMP",
+      "owner": "Diolinux",
+      "repo": "PhotoGIMP",
+      "description": "A Patch for GIMP 3+ for Photoshop Users",
+      "githubUrl": "https://github.com/Diolinux/PhotoGIMP",
+      "trendshiftUrl": "https://trendshift.io/repositories/23452",
+      "language": "CSS",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2020-06-19T19:32:09Z"
+    },
+    {
+      "rank": 3,
       "fullName": "iOfficeAI/OfficeCLI",
       "owner": "iOfficeAI",
       "repo": "OfficeCLI",
@@ -40,81 +58,7 @@
       "dateCreated": "2026-03-15T07:39:12Z"
     },
     {
-      "rank": 3,
-      "fullName": "VoltAgent/awesome-design-md",
-      "owner": "VoltAgent",
-      "repo": "awesome-design-md",
-      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
-      "trendshiftUrl": "https://trendshift.io/repositories/25016",
-      "topics": [
-        "AI coding assistant",
-        "Design system",
-        "Curated list"
-      ],
-      "dateCreated": "2026-03-31T16:37:01Z"
-    },
-    {
       "rank": 4,
-      "fullName": "rowboatlabs/rowboat",
-      "owner": "rowboatlabs",
-      "repo": "rowboat",
-      "description": "Open-source AI coworker, with memory",
-      "githubUrl": "https://github.com/rowboatlabs/rowboat",
-      "trendshiftUrl": "https://trendshift.io/repositories/13609",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI memory",
-        "Local LLM"
-      ],
-      "dateCreated": "2025-01-13T09:30:40Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "peetzweg/opendisplay",
-      "owner": "peetzweg",
-      "repo": "opendisplay",
-      "description": "Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.",
-      "githubUrl": "https://github.com/peetzweg/opendisplay",
-      "trendshiftUrl": "https://trendshift.io/repositories/72556",
-      "language": "Swift",
-      "topics": [
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-06-10T09:08:00Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "AhmadIbrahiim/Website-downloader",
-      "owner": "AhmadIbrahiim",
-      "repo": "Website-downloader",
-      "description": "💡  Download the complete source code of any website (including all assets). [ Javascripts, Stylesheets, Images ]  using Node.js",
-      "githubUrl": "https://github.com/AhmadIbrahiim/Website-downloader",
-      "trendshiftUrl": "https://trendshift.io/repositories/18926",
-      "language": "HTML",
-      "topics": [
-        "Web scraping"
-      ],
-      "dateCreated": "2019-10-26T08:06:23Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "WeZZard/jlens-qwen36",
-      "owner": "WeZZard",
-      "repo": "jlens-qwen36",
-      "description": "J-space / Jacobian-lens visualizer for Qwen3.6-27B (4-bit) on Apple Silicon, ported to Apple MLX",
-      "githubUrl": "https://github.com/WeZZard/jlens-qwen36",
-      "trendshiftUrl": "https://trendshift.io/repositories/75974",
-      "language": "Python",
-      "topics": [
-        "NLP",
-        "Local LLM"
-      ],
-      "dateCreated": "2026-07-07T18:33:14Z"
-    },
-    {
-      "rank": 8,
       "fullName": "isjiamu/gzh-design-skill",
       "owner": "isjiamu",
       "repo": "gzh-design-skill",
@@ -130,21 +74,33 @@
       "dateCreated": "2026-07-01T04:28:03Z"
     },
     {
-      "rank": 9,
-      "fullName": "chuspeeism/dashiAI-ppt-skill",
-      "owner": "chuspeeism",
-      "repo": "dashiAI-ppt-skill",
-      "description": "",
-      "githubUrl": "https://github.com/chuspeeism/dashiAI-ppt-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/75716",
+      "rank": 5,
+      "fullName": "asgeirtj/system_prompts_leaks",
+      "owner": "asgeirtj",
+      "repo": "system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "githubUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "trendshiftUrl": "https://trendshift.io/repositories/14577",
       "language": "JavaScript",
       "topics": [
-        "AI skills"
+        "Chatbot"
       ],
-      "dateCreated": "2026-06-10T07:46:43Z"
+      "dateCreated": "2025-05-03T02:43:56Z"
     },
     {
-      "rank": 10,
+      "rank": 6,
+      "fullName": "ruvnet/RuView",
+      "owner": "ruvnet",
+      "repo": "RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "githubUrl": "https://github.com/ruvnet/RuView",
+      "trendshiftUrl": "https://trendshift.io/repositories/22266",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2025-06-07T04:32:30Z"
+    },
+    {
+      "rank": 7,
       "fullName": "bradautomates/claude-video",
       "owner": "bradautomates",
       "repo": "claude-video",
@@ -158,6 +114,52 @@
         "AI workflow"
       ],
       "dateCreated": "2026-04-24T04:40:43Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "githubUrl": "https://github.com/addyosmani/agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25200",
+      "language": "Shell",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-15T20:20:26Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "kyutai-labs/pocket-tts",
+      "owner": "kyutai-labs",
+      "repo": "pocket-tts",
+      "description": "A TTS that fits in your CPU (and pocket)",
+      "githubUrl": "https://github.com/kyutai-labs/pocket-tts",
+      "trendshiftUrl": "https://trendshift.io/repositories/18805",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing"
+      ],
+      "dateCreated": "2026-01-07T17:33:32Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "langchain-ai/openwiki",
+      "owner": "langchain-ai",
+      "repo": "openwiki",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+      "githubUrl": "https://github.com/langchain-ai/openwiki",
+      "trendshiftUrl": "https://trendshift.io/repositories/70339",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T23:48:26Z"
     }
   ]
 }

@@ -874,18 +874,48 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
             ],
           },
           "steipete/CodexBar": {
-            description:
-              "App macOS menubar (Swift) dari Peter Steinberger yang memantau limit dan usage 57+ provider AI coding sekaligus — Codex, Claude, Cursor, Gemini, Copilot, Groq, dan lain-lain, langsung di bar atas layar tanpa login ulang.",
-            highlights: [
-              "Satu ikon menubar untuk 57+ provider (Codex, Claude, Cursor, Gemini, Copilot, Grok, GroqCloud, ElevenLabs, Deepgram, z.ai, MiniMax, Kiro, Zed, Vertex AI, Augment, OpenRouter, LiteLLM, AWS Bedrock) — bukan switcher, melainkan 'radar' real-time yang kasih tahu sisa quota dan kapan reset.",
-              "Info kontekstual yang actionable: hitung mundur ke reset berikutnya (session, mingguan, bulanan), saldo credits, Admin API spend, dan status insiden provider — berhenti nebak 'boleh mulai long task sekarang atau nanti'.",
-              "Privacy-first arsitektur: pakai ulang sesi provider yang sudah ada (OAuth, device flow, API key, cookie browser, file lokal) tanpa simpan password — relevan untuk developer yang punya banyak langganan AI dan ogah daftarkan token ke app ketiga.",
-              "Distribusi lengkap: Homebrew cask untuk macOS, formula Linux glibc, AUR Arch, plus CLI standalone (codexbar serve) yang bisa dipasang di tmux, SketchyBar, Zellij, dan ZSH lewat plugin — bukan app eksklusif Mac, melainkan stack menu-bar universal.",
-            ],
-          },
+              description:
+                "App macOS menubar (Swift) dari Peter Steinberger yang memantau limit dan usage 57+ provider AI coding sekaligus — Codex, Claude, Cursor, Gemini, Copilot, Groq, dan lain-lain, langsung di bar atas layar tanpa login ulang.",
+              highlights: [
+                "Satu ikon menubar untuk 57+ provider (Codex, Claude, Cursor, Gemini, Copilot, Grok, GroqCloud, ElevenLabs, Deepgram, z.ai, MiniMax, Kiro, Zed, Vertex AI, Augment, OpenRouter, LiteLLM, AWS Bedrock) — bukan switcher, melainkan 'radar' real-time yang kasih tahu sisa quota dan kapan reset.",
+                "Info kontekstual yang actionable: hitung mundur ke reset berikutnya (session, mingguan, bulanan), saldo credits, Admin API spend, dan status insiden provider — berhenti nebak 'boleh mulai long task sekarang atau nanti'.",
+                "Privacy-first arsitektur: pakai ulang sesi provider yang sudah ada (OAuth, device flow, API key, cookie browser, file lokal) tanpa simpan password — relevan untuk developer yang punya banyak langganan AI dan ogah daftarkan token ke app ketiga.",
+                "Distribusi lengkap: Homebrew cask untuk macOS, formula Linux glibc, AUR Arch, plus CLI standalone (codexbar serve) yang bisa dipasang di tmux, SketchyBar, Zellij, dan ZSH lewat plugin — bukan app eksklusif Mac, melainkan stack menu-bar universal.",
+              ],
+            },
+            "VoltAgent/awesome-design-md": {
+              description:
+                "Kurasi 73 file DESIGN.md dari brand-brand populer — format plain-text design system yang dipahami coding agent, jadi cukup copy satu file dan minta AI generate UI yang konsisten secara visual.",
+              highlights: [
+                "Konsep DESIGN.md diperkenalkan Google Stitch: file markdown biasa yang berisi token, tipografi, warna, dan aturan UI — tidak perlu export Figma atau JSON schema; format ini yang paling natural dibaca LLM, jadi langsung 'klik' untuk coding agent.",
+                "73 file DESIGN.md siap pakai diekstrak dari website brand nyata (rank #150 global GitHub) — cukup copy satu ke root project, lalu minta Claude Code atau Cursor 'bangun halaman dengan style ini' dan hasilnya langsung konsisten secara visual.",
+                "Pelengkap AGENTS.md: kalau AGENTS.md kasih tau coding agent cara membangun project, DESIGN.md kasih tau cara project 'terlihat dan terasa' — kombinasi keduanya = workflow AI agent yang benar-benar paham desain, bukan asal pilih warna.",
+                "Ada request DESIGN.md privat untuk website spesifik (termasuk yang exclusive), plus tooling LaunchKit untuk build website dengan vibe coding — relevan untuk developer Indonesia yang mau stop kasih agent 'bikin UI yang bagus' tanpa brief visual konkret.",
+              ],
+            },
+            "bradautomates/claude-video": {
+              description:
+                "Skill /watch untuk Claude Code yang kasih kemampuan menonton video — download dengan yt-dlp, extract frame scene-aware lewat ffmpeg, dan transkrip audio (caption gratis atau Whisper fallback), lalu Claude benar-benar melihat video, bukan hanya membaca judulnya.",
+              highlights: [
+                "Masalah nyata yang dijawab: paste link YouTube ke Claude, agen biasanya cuma nebak dari judul atau transcript yang hilang 90% konteks visual — /watch bikin Claude download video, extract frame scene-aware, dan baca gambar plus dengerin audio lewat Whisper.",
+                "Frame budget pintar: ≤30 detik = 30 frame dense, >10 menit = 100 frame capped dengan warning 'sparse scan' — ditambah mode `--start`/`--end` untuk window fokus, sehingga konteks tidak jebol tapi akurasi tetap tinggi untuk momen spesifik.",
+                "Pipeline tiga tahap dengan fallback hemat biaya: yt-dlp cek caption dulu (gratis), kalau tidak ada Whisper extract audio mono 16kHz ~480 KB/menit, lalu dedup frame otomatis pakai mean absolute difference — frame identik dari screen recording panjang dibuang sebelum dikirim ke Claude.",
+                "Pasang sekali, pakai berulang: plugin marketplace untuk Claude Code atau `npx skills add bradautomates/claude-video -g` untuk 50+ agent lain (Codex, Cursor, Copilot, Gemini CLI) — workflow analisis video pakai bahasa natural jadi standar lintas tool.",
+              ],
+            },
+            "rowboatlabs/rowboat": {
+              description:
+                "AI coworker desktop open-source (Y Combinator S24) dengan knowledge graph living yang meng-index email, meeting, Slack, dan history kerja — plus surface built-in (email client, notes, browser, code mode) untuk langsung bertindak.",
+              highlights: [
+                "Knowledge graph backlinked ala Obsidian yang meng-index email, meeting, Slack, dan percakapan asisten jadi satu 'memori' persisten — bukan chatbot terpisah, melainkan coworker yang benar-benar tahu konteks pekerjaanmu dari waktu ke waktu.",
+                "Surface kerja built-in (bukan cuma chat): email client yang auto-sort penting vs noise dan draft balasan dengan konteks kerja, notes, browser, code mode, meeting note taker, plus workspace terpisah per project — agen AI tinggal klik, bukan ngetik prompt.",
+                "Background agents yang trigger otomatis: jalan saat email baru masuk, atau terjadwal (misal tiap jam 8 pagi), bisa search web, pakai browser, dan tulis code lewat Claude Code atau Codex — bukan demo one-shot, melainkan otomasi rutin yang benar-benar berjalan.",
+                "Open source dengan download Mac/Windows/Linux dan setup lokal — data email, meeting, dan knowledge graph tetap di mesin sendiri, relevan untuk profesional Indonesia yang mau AI coworker powerful tanpa harus serahkan data kerja ke cloud orang lain.",
+              ],
+            },
           };
 
           // Helper: lookup dengan fallback ke template-generated highlights
-export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
-  return WEEKLY_TOP[fullName];
-}
+          export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
+            return WEEKLY_TOP[fullName];
+          }
