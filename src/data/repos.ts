@@ -1906,6 +1906,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-08",
     featured: false,
   },
+  {
+    slug: "aionui",
+    name: "AionUi",
+    tagline: "Cowork app open-source yang menyatukan 16+ CLI agent dalam satu antarmuka",
+    tags: ["AI Agent", "Cowork", "Multi-Agent", "TypeScript"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "AionUi adalah aplikasi cowork open-source berlisensi Apache-2.0 yang menyatukan banyak CLI agent populer - dari Claude Code, Codex, Hermes Agent, OpenClaw, hingga Gemini CLI - ke dalam satu antarmuka desktop lintas platform. Built-in agent tanpa konfigurasi, Team Mode untuk multi-agent terkoordinasi, dan integrasi MCP terpusat menjadikannya kandidat kuat sebagai 'command center' AI agent harian.",
+    highlights: [
+      "Built-in agent tanpa setup: tidak perlu install CLI terpisah, tinggal tempel API key langsung jalan",
+      "Auto-detect 16+ CLI agent terpasang: Claude Code, Codex, Qwen Code, Hermes Agent, OpenClaw, OpenCode, Cursor Agent, Goose AI, dan lainnya",
+      "Team Mode dengan Leader/Teammate: agent pemimpin memecah tugas dan mendelegasikan ke agent lain secara paralel lewat async mailbox",
+      "21 asisten profesional bawaan: Cowork, PPT Creator (Morph), Word Creator, Excel Creator, Dashboard Creator, Academic Paper Writer, Financial Model Creator",
+      "OfficeCLI terintegrasi: hasil PPT/Word/Excel langsung dapat diedit, bukan file yang terkunci",
+      "Multi-kanal remote access: WebUI plus Telegram, Lark, DingTalk, dan WeChat - cocok untuk otomasi 24/7",
+      "MCP terpusat: konfigurasi tool Model Context Protocol sekali, otomatis tersinkron ke semua agent",
+      "Mode YOLO/Full-Auto untuk eksekusi tanpa konfirmasi manual, plus cron scheduler untuk otomasi terjadwal",
+      "Cross-platform native: macOS, Windows, dan Linux dengan Aion CLI (aionrs) berbasis Rust sebagai backend tambahan",
+    ],
+    pros: [
+      "Kurva adopsi paling landai di kelasnya - CLI agent apapun yang sudah terpasang langsung terdeteksi dan dipakai",
+      "Team Mode memungkinkan orkestrasi multi-agent nyata tanpa harus bangun infrastruktur MCP sendiri",
+      "21 asisten built-in menutup banyak workflow produktivitas harian (dokumen, slide, spreadsheet) sejak hari pertama",
+    ],
+    cons: [
+      "Dokumentasi masih sangat bergantung eksplorasi langsung di repo dan Discord, terutama untuk konfigurasi lanjutan",
+      "Beberapa asisten Office (terutama Morph PPT) butuh resource mesin yang tidak ringan - laptop spek rendah akan kewalahan",
+      "Bergerak cepat - integrasi CLI agent baru kadang lebih cepat rilis dari dokumentasinya, sehingga ada jeda saat fitur baru muncul",
+    ],
+    verdict:
+      "Pilihan menarik untuk tim engineering dan knowledge worker Indonesia yang sudah memakai beberapa CLI agent (Claude Code, Hermes Agent, Codex) dan ingin satu permukaan kontrol. Bukan sekadar 'chat client' - ini cowork platform yang berusaha jadi rumah bersama semua agent di workstation lokal.",
+    body: [
+      "Saat hampir setiap rilis coding agent CLI baru hadir dengan antarmuka dan workflow-nya sendiri, AionUi mengambil posisi yang jarang disentuh: rumah bersama. Aplikasi desktop open-source ini (Apache-2.0, lebih dari 29 ribu bintang GitHub) mendeteksi otomatis CLI agent yang sudah terpasang di mesin - Claude Code, Codex, Hermes Agent, OpenClaw, OpenCode, Cursor Agent, dan belasan lainnya - lalu menyajikannya dalam satu antarmuka yang konsisten. Premisnya sederhana: agent apapun boleh dipakai, yang penting penggunanya tidak lagi berpindah-pindah terminal.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling praktis adalah konsolidasi: seorang developer yang sehari-hari memakai Claude Code untuk review, Hermes Agent untuk otomasi ringan, dan OpenClaw untuk eksperimen, bisa menjalankan semuanya dari satu jendela tanpa harus mengingat pintasan dan konfigurasi masing-masing. Lebih menarik lagi, Team Mode memungkinkan satu agent 'Leader' memecah tugas besar dan mendelegasikan ke beberapa 'Teammate' lewat protokol internal (ACP) - pola orkestrasi yang biasanya hanya tersedia di framework backend, kini diangkat ke level UI.",
+      "Bagian yang sering luput adalah ekosistem asisten built-in. AionUi mengemas 21 asisten profesional - mulai dari PPT Creator (Morph), Word Creator, Excel Creator, hingga Academic Paper Writer - yang semuanya menghasilkan file yang dapat diedit kembali, bukan dokumen yang terkunci di dalam chat. Kombinasi dengan OfficeCLI (sub-proyek dari tim yang sama) membuat workflow dokumen terasa native: minta presentasi, dapatkan .pptx yang tinggal dirapikan. Untuk konteks Indonesia, kemampuan multi-kanal (Telegram, Lark, DingTalk, WeChat) plus cron scheduler juga relevan bagi tim yang ingin otomasi 24/7 lewat kanal chat yang sudah akrab dipakai.",
+      "Keterbatasan yang perlu dipahami: dokumentasi masih sangat bergantung eksplorasi langsung di repo dan Discord, terutama untuk skenario lanjutan seperti konfigurasi Team Mode yang dalam. Beberapa asisten Office, khususnya Morph PPT, juga butuh resource mesin yang tidak ringan - laptop spek rendah akan kewalahan saat generate presentasi besar. Namun bagi tim yang sudah berinvestasi di beberapa CLI agent, AionUi adalah lapisan konsolidasi yang sulit diabaikan pada paruh kedua 2026 - bukan menggantikan agent, melainkan menyatukan mereka.",
+    ],
+    link: "https://github.com/iOfficeAI/AionUi",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-09",
+    updatedAt: "2026-07-09",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
