@@ -1302,6 +1302,47 @@ export const stacks: Review[] = [
     date: "2026-07-07",
     featured: false,
   },
+  {
+    slug: "sora-2",
+    name: "Sora 2",
+    tagline: "Generator video OpenAI dengan audio sync, standar baru 2026",
+    tags: ["OpenAI", "Paid", "Video Gen", "API"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 9.4 },
+      { label: "Pengalaman Pengguna", value: 7.5 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Sora 2 adalah model text/image-to-video OpenAI yang menghasilkan klip 720p dengan audio sync sampai ~20 detik, dan sampai sekarang merupakan tolok ukur paling konsisten untuk gerakan fisik realistis, kohesi multi-karakter, serta dialog yang sinkron dengan gambar. Akses resmi kini hanya lewat OpenAI API (Sora 2 USD 0.10/detik, Sora 2 Pro USD 0.30/detik) setelah pengalaman web/app Sora resmi dihentikan pada 26 April 2026 - bukan tool point-and-click lagi, melainkan layanan model yang dipasang ke pipeline developer.",
+    pros: [
+      "Kualitas gerak fisik, pencahayaan, dan kontinuitas multi-shot masih menjadi benchmark di kelasnya - sulit ditandingi Veo 3 atau Kling untuk adegan sinematik",
+      "Audio sync bawaan (dialog, ambient, musik) menghilangkan kebutuhan akan langkah TTS terpisah di pipeline",
+      "API resmi dengan dokumentasi lengkap dan snapshot stabil (sora-2-2025-10-06) - integrasi ke workflow n8n, Make, atau backend Python/Node cukup straightforward",
+      "Modalitas input ganda: text prompt murni atau text + image reference - fleksibel untuk storyboard atau image-to-video",
+      "Output portrait 720x1280 dan landscape 1280x720 native - siap publish ke TikTok, Reels, Shorts tanpa resize",
+    ],
+    cons: [
+      "Akses consumer (sora.chatgpt.com) sudah dihentikan April 2026 - pengguna non-developer harus lewat aggregator pihak ketiga atau berburu invite beta produk baru",
+      "API hanya dihargai per detik tanpa paket unlimited - satu klip 20 detik USD 2-6, batch 50 klip bisa USD 100-300 per hari yang serius",
+      "Durasi klip dibatasi ~20 detik; untuk konten panjang harusdisambung manual atau gunakan workflow shot-list multi-klip",
+      "Tidak ada kontrol fine-grained seperti camera path keyframe atau inpainting per frame yang biasanya ada di tool editor video profesional",
+    ],
+    verdict:
+      "Standar baru untuk text-to-video dengan audio sync, tapi aksesnya sekarang murni API dan biaya per-detik cukup tajam untuk eksperimen kasual. Pilih Sora 2 kalau pipeline konten kamu sudah matang dan throughput-nya membenarkan biaya; pilih Kling atau Veo 3 lewat consumer app kalau prioritasnya adalah eksplorasi visual tanpa setup teknis.",
+    body: [
+      "Sora generasi kedua, dirilis OpenAI pada akhir 2025, adalah lompatan besar dari Sora 1 (Februari 2024) yang sempat mencuri perhatian sebagai demo text-to-video pertama yang benar-benar koheren. Sora 2 menaikkan standar pada tiga dimensi yang paling sulit: kontinuitas gerakan fisik (mantel yang berkibar konsisten, air yang memantul benar, tangan yang tidak menumbuhkan jari ekstra), kohesi multi-karakter dalam satu frame, dan audio sync - dialog yang selaras dengan gerak mulut, ambient sound yang sesuai konteks, musik latar yang tidak mendominasi. Snapshot stabil yang aktif per Juli 2026 adalah sora-2-2025-10-06, sementara snapshot sora-2-2025-12-08 sudah ditandai deprecated di dokumentasi resmi. Output native adalah portrait 720x1280 atau landscape 1280x720 pada ~24 FPS, dengan durasi maksimum yang dilaporkan di kisaran 20 detik per generasi (tergantung prompt dan beban server).",
+      "Perubahan paling signifikan di paruh pertama 2026 adalah strategi akses OpenAI. Pengalaman web dan app Sora yang sebelumnya diakses lewat sora.com dan sora.chatgpt.com resmi dihentikan pada 26 April 2026 - halaman help center OpenAI menjelaskan bahwa pengguna yang sudahtelah membuat konten diminta melakukan export sebelum jendela ekspor ditutup, dan data akan dihapus permanen setelahnya. API Sora 2 masih aktif dan dijadwalkan berlanjut sampai 24 September 2026, memberi developer dan integrator waktu ~2,5 bulan untuk migrasi atau penyelesaian workflow yang ada. Harga API per Juli 2026 adalah Sora 2 USD 0,10 per detik video (720p portrait/landscape) dan Sora 2 Pro USD 0,30 per detik untuk kualitas lebih tinggi - bandingkan dengan Runway Gen-4 yang USD 0,12-0,50/detik dan Kling 2.0 yang lebih murah tapi kualitas audio masih di belakang.",
+      "Untuk workflow teknis, integrasi Sora 2 paling sering dijumpai dalam tiga pola. Pertama, pipeline content marketing yang sudah matang: script generator (Claude/GPT) -> prompt engineer per-shot -> Sora 2 generation API -> auto-upload ke TikTok/Reels/Shorts lewat Zapier/n8n. Pola kedua adalah storyboard-to-video untuk agency dan brand: text prompt + image reference dari Midjourney atau Flux diserialisasi ke Sora untuk konsistensi visual karakter. Pola ketiga adalah eksperimen sinematik untuk filmmaker independen yang menghasilkan 50-200 klip pendek per konsep, lalu menyeleksi 3-5 yang terbaik. Untuk ketiga pola ini, kunci efisiensi adalah batching asynchronous - submit 20 prompt dalam satu batch, polling webhook completion, lalu unduh hasilnya sekaligus; pola sync menunggu tiap video satu per satu akan menghancurkan throughput.",
+      "Untuk konteks Indonesia, implikasi utamanya ada tiga. Pertama, biaya API murni dolar - pada kurs Rp 16.000, satu klip 20 detik Sora 2 adalah Rp 32.000 dan Sora 2 Pro Rp 96.000; untuk kreator atau agency yangmemproduksi dalam jumlah besar konten, ini setara modal kerja bulanan yang nyata dan perlu diperhitungkan di business model, bukan dianggap 'coba-coba gratis'. Kedua, tidak ada infrastruktur lokal yang relevan - OpenAI API diakses dari mana saja dengan latensi yang wajar (rata-rata 80-150 ms dari Jakarta ke endpoint US), tapi workflow image-to-video yang berat akan lebih cepat dari VPS Singapore (Niagahoster SG, IDCloudHost SG, atau Biznet Gio SG) daripada direct dari koneksi rumahan. Ketiga, untuk kreator Indonesia yang sebelumnya mengandalkan sora.chatgpt.com lewat ChatGPT Plus, transisi ke API memerlukan kemampuan teknis yang tidak dimiliki semua orang - komunitas seperti Indonesia AI Community dan beberapa YouTuber lokal sudah mulai bikin tutorial 'Sora 2 via API untuk kreator', tapi adopsi masih di awal dan harganya akan jadi filter alami. Catatan akhir: OpenAI sampai sekarang belum mengumumkan produk consumer pengganti, jadi untuk hobbyist dan kreator kasual, alternatif realistis di paruh kedua 2026 adalah Kling 2.0 (consumer app kuat), Veo 3 lewat Gemini API, atau Runway Gen-4 - semuanya dibahas di entry Wawasan AI lainnya.",
+    ],
+    link: "https://platform.openai.com/docs/models/sora-2",
+    linkLabel: "Dokumentasi API",
+    date: "2026-07-08",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
