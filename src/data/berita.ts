@@ -1431,6 +1431,60 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "10-startup-ai-indonesia-yang-wajib-dipantau-di-2026",
+    title: "Sepuluh Startup AI Indonesia yang Layak Dipantau di 2026",
+    excerpt:
+      "Bukan daftar sensasional — melainkan pilihan startup yang produknya dipakai nyata di Indonesia, dari deteksi malaria sampai otomasi keuangan UMKM.",
+    category: "Analisis",
+    date: "2026-07-09",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau anda mendengar 'startup AI Indonesia', yang pertama muncul di kepala biasanya adalah ChatGPT atau aplikasi global lain. Padahal ekosistem lokal sudah cukup ramai — dan yang menarik, sebagian besar bukan meniru chatbot, melainkan menyasar masalah yang sangat khas Indonesia: dokumen tidak terstruktur, transaksi keuangan tanpa struktur formal, diagnosis medis di daerah dengan sedikit dokter spesialis.",
+          "Tulisan ini bukan daftar sensasional. Sepuluh nama berikut dipilih karena produknya benar-benar dipakai (bukan sekadar demo), punya rekam jejak pendanaan yang bisa diverifikasi, dan menunjukkan arah yang cukup jelas di mana AI lokal bergerak di 2026. Sebagian fokus enterprise, sebagian langsung menyentuh konsumen, dan beberapa di antaranya cukup kecil sehingga belum masuk radar media nasional — tapi justru karena itulah layak diperhatikan sejak awal.",
+        ],
+      },
+      {
+        heading: "Kesehatan: AI untuk dokter, bukan untuk pasien",
+        paragraphs: [
+          "Pertama, sektor kesehatan. Ada satu nama yang selalu muncul di diskusi telemedicine: Prodia Widya Husada dengan lini layanan yang sudah memanfaatkan AI untuk analisis hasil lab, dan Aido Health yang menyediakan skrining awal berbasis foto. Yang menarik adalah pendekatan 'AI untuk dokter, bukan untuk pasien' — alat bantu, bukan pengganti diagnosis.",
+          "Untuk konteks Indonesia yang jumlah dokter spesialisnya tidak merata, nilai utamanya ada di sini: mempercepat triase dan mengurangi beban administratif, sehingga dokter punya lebih banyak waktu untuk konsultasi yang benar-benar butuh keahlian manusia. Bukan aplikasi kesehatan yang penuh jargon, melainkan alat kerja yang tenang.",
+        ],
+      },
+      {
+        heading: "Fintech: dari kredit UMKM sampai deteksi fraud",
+        paragraphs: [
+          "Sektor fintech Indonesia sudah matang, dan AI dipakai di banyak lini yang tidak terlihat konsumen. Kredivo dan Akulaku sudah memanfaatkan machine learning untuk penilaian kredit konsumen yang sebelumnya tidak punya rekam jejak formal — problem yang sangat khas Indonesia di mana jutaan orang bertransaksi tapi tidak punya kartu kredit atau laporan bank tradisional.",
+          "Di sisi B2B, Fazz Financial (melalui layanan Finfra) dan Privy menggunakan AI untuk verifikasi dokumen dan deteksi fraud — membaca KTP, tanda tangan, sampai pola transaksi mencurigakan. Untuk UMKM yang mengurus puluhan invoice per hari, ini jenis otomasi yang langsung terasa dampaknya: lebih sedikit pekerjaan manual, lebih sedikit kesalahan, dan audit trail yang lebih bersih.",
+        ],
+      },
+      {
+        heading: "Logistik dan pertanian: AI di luar layar ponsel",
+        paragraphs: [
+          "Dua sektor yang jarang masuk headline justru paling menarik. Waresix (sekarang bagian dari Hablog) dan Kargo Technologies memanfaatkan AI untuk optimasi rute truk — masalah yang tidak glamour tapi menentukan harga barang di pasar. Efisiensi 10-15 persen di rute pengiriman berarti selisih harga yang sampai ke konsumen.",
+          "Di pertanian, startup seperti Hara dan TaniHub Group (lewat fitur TaniFund) memakai AI untuk memprediksi hasil panen, memantau harga komoditas, dan mengelola risiko bagi petani. Pendekatan mereka data-driven tapi praktis: bukan jargon futuristik, melainkan alat bantu yang membuat keputusan sehari-hari lebih terinformasi.",
+        ],
+      },
+      {
+        heading: "Pendidikan dan bahasa",
+        paragraphs: [
+          "Pendidikan adalah sektor di mana AI paling mudah overclaim. Dari pengalaman editorial, yang benar-benar jalan biasanya bukan yang menjanjikan 'guru AI', melainkan yang membantu hal konkret: penilaian otomatis esai, rekomendasi materi, atau latihan bahasa. Ruangguru sudah lama punya fitur seperti ini, dan Zenius juga bergerak ke arah yang sama. Yang terbaru, startup seperti Bisa AI fokus pada AI untuk bahasa Indonesia — model yang dilatih untuk nuansa lokal, termasuk slang dan singkatan yang dipakai sehari-hari.",
+          "Ini penting karena sebagian besar model global masih lemah di konteks Indonesia: mereka paham bahasa Indonesia formal, tapi sering miss pada percakapan sehari-hari atau istilah teknis lokal. Startup yang berinvestasi di data lokal punya keunggulan jangka panjang yang tidak bisa ditiru hanya dengan menyetel bahasa di prompt.",
+        ],
+      },
+      {
+        heading: "Tiga hal yang perlu diperhatikan sebelum berinvestasi atau memakai",
+        paragraphs: [
+          "Pertama, jangan tertipu demo. Tanyakan apakah produk sudah dipakai oleh puluhan atau ratusan pelanggan nyata selama minimal satu tahun. Startup AI yang masih di tahap demo terlalu sering menjanjikan yang belum bisa dipertahankan.",
+          "Kedua, perhatikan apakah data mereka keluar dari Indonesia atau tidak. Untuk sektor publik, kesehatan, dan fintech yang memproses data pribadi, ini bukan pilihan — data sensitif wajib diproses di infrastruktur yang sesuai aturan. Startup yang transparan soal di mana data mereka disimpan dan diproses layak mendapat nilai lebih.",
+          "Ketiga, lihat apakah mereka punya rekam jejak iterasi produk. Startup AI yang merilis pembaruan bermakna setiap beberapa bulan, memperbaiki kelemahan berdasarkan umpan balik pengguna, biasanya lebih sehat daripada yang mengumumkan fitur besar tanpa bukti kelanjutan. Pada akhirnya, daftar nama di atas bukan soal siapa yang paling rame di media — melainkan siapa yang diam-diam membangun produk yang bertahan. Itulah yang layak dipantau di paruh kedua 2026 dan setelahnya.",
+          "Daftar ini disusun oleh tim editorial Wawasan AI berdasarkan riset terbuka, pengujian produk yang tersedia untuk publik, dan diskusi dengan pengguna. Ini bukan rekomendasi investasi, melainkan peta awal untuk memahami arah ekosistem AI lokal. Kalau anda punya koreksi atau nama lain yang layak masuk, kirim lewat halaman kontak — kami dengan senang hati memperbarui daftar ini.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
