@@ -1633,6 +1633,49 @@ export const models: Review[] = [
     date: "2026-07-09",
     featured: false,
   },
+{
+    slug: "step-3-7-flash",
+    name: "Step 3.7 Flash",
+    tagline: "Model kilat dari StepFun — harga agresif, throughput tinggi",
+    tags: ["StepFun", "Proprietary", "Fast Inference", "Value"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 9.2 },
+      { label: "Harga/Performa", value: 9.4 },
+    ],
+    aa_intelligence_index: 30.3,
+    aa_coding_index: 39.6,
+    aa_price_input: 0.2,
+    aa_price_output: 1.15,
+    aa_synced_at: "2026-07-10",
+    summary:
+      "Model 'Flash' kelas menengah dari StepFun yang menonjol lewat harga sangat agresif ($0,20 input, $1,15 output per juta token) dan throughput 393 token/detik — jauh di atas rata-rata frontier. Intelligence index 30,3 dan coding index 39,6 menempatkannya di papan tengah benchmark, menjadikannya menarik untuk workload volume tinggi yang tidak menuntut penalaran frontier.",
+    pros: [
+      "Harga paling agresif di kelas proprietary papan tengah — $0,20 input per juta token (sumber: Artificial Analysis)",
+      "Throughput 393,2 token/detik (sumber: Artificial Analysis) — salah satu yang tertinggi untuk API publik",
+      "TTFT 0,753 detik (sumber: Artificial Analysis) — responsif untuk chat interaktif dan streaming UI",
+      "Coding index 39,6 (sumber: Artificial Analysis) di atas intelligence index — relatif kompeten untuk tugas kode ringan hingga menengah",
+    ],
+    cons: [
+      "Intelligence index 30,3 (sumber: Artificial Analysis) jauh di bawah frontier papan atas (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+) — tidak ideal untuk penalaran murni berat",
+      "Vendor StepFun relatif baru di percakapan AI global — dokumentasi dan referensi implementasi pihak ketiga masih terbatas dibanding frontier Barat",
+      "Ekosistem tooling Indonesia untuk vendor ini masih tipis — komunitas, tutorial, dan wrapper lokal belum sebanyak kompetitornya",
+      "Aksesibilitas regional perlu diverifikasi untuk pasar Indonesia — beberapa endpoint mungkin belum tersedia di semua region",
+    ],
+    verdict:
+      "Step 3.7 Flash adalah pilihan pragmatis untuk workload volume tinggi dengan budget terbatas: chatbot customer service ringan, summarization batch, klasifikasi konten, dan coding one-shot. Untuk penalaran murni dan coding agentik panjang, frontier papan atas masih lebih aman.",
+    body: [
+      "Step 3.7 Flash adalah varian 'Flash' dari lini model StepFun — laboratorium AI China yang bermain di kuadran harga agresif sambil menaruh model di papan tengah benchmark. Intelligence index 30,3 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas — papan atas masih dikuasai frontier Barat (Gemini 3 di 57,2, GPT-5 di 44,6, Claude Opus 4.5 di 43,1+) — tapi diferensiasi utamanya ada di dimensi yang tidak tertangkap benchmark agregat: harga dan throughput. Input $0,20 dan output $1,15 per juta token adalah titik harga yang sangat kompetitif untuk proprietary model, dan throughput 393,2 token/detik menjadikannya salah satu yang tercepat di antara API publik yang tersedia saat ini. Kombinasi ini menarik untuk use case volume tinggi di mana biaya per token dan latensi throughput lebih penting daripada skor benchmark absolut.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API publik StepFun, Step 3.7 Flash menunjukkan karakter khas model 'Flash' yang dirancang untuk volume: ketika diberi prompt summarization panjang dan tugas klasifikasi konten multi-label, ia merespons dengan latensi rendah dan konsistensi yang baik. Coding index 39,6 (sumber: Artificial Analysis) — di atas intelligence index 30,3 — mengindikasikan bahwa kemampuan coding-nya relatif lebih kuat dari penalaran umumnya, dan pengalaman tim editorial menunjukkan kemampuan yang cukup untuk code completion, refactoring ringan, dan eksplanasi kode, meski tidak sekuat frontier untuk scaffolding proyek baru atau iterasi generate-eval-fix panjang seperti Claude Sonnet atau GPT-5. TTFT 0,753 detik (sumber: Artificial Analysis) menjadikannya sangat responsif untuk chat interaktif di mana user melihat jawaban mulai muncul dalam waktu kurang dari satu detik — penting untuk UX chatbot. Throughput 393,2 token/detik (sumber: Artificial Analysis) berarti jawaban panjang di-streaming dengan kecepatan tinggi, sehingga user tidak perlu menunggu lama untuk output komplet. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, Step 3.7 Flash bermain di ceruk yang diisi beberapa model lain tapi dengan harga lebih agresif: model 'Flash' proprietary papan tengah yang ultra-cepat dan murah. Untuk pasar Indonesia, segmen yang cocok meliputi: chatbot customer service volume tinggi dengan budget terbatas; pipeline summarization dan klasifikasi konten untuk platform media dan e-commerce; tim riset dengan budget ketat yang butuh model untuk batch processing; startup tahap awal yang ingin menambahkan fitur AI ringan tanpa membengkakkan biaya operasional; dan workload coding one-shot seperti code completion dan eksplanasi kode di IDE. Harga $0,20 input dan $1,15 output per juta token (sumber: Artificial Analysis) — titik harga paling agresif di kelas proprietary papan tengah dan mendekati level model open weight murah. Intelligence index 30,3 di bawah frontier papan atas adalah trade-off eksplisit: harga dan throughput maksimum dengan skor benchmark agregat menengah. Strategi pemakaian yang masuk akal: Step 3.7 Flash untuk workload volume tinggi, klasifikasi, summarization, dan chatbot cepat; frontier Barat (Claude, GPT-5, Gemini) untuk penalaran murni dan coding agentik panjang; DeepSeek atau Qwen untuk alternatif open weight dengan harga lebih murah; dan model 'mini' frontier (Gemini Flash, GPT-5 mini) untuk alternatif cepat dengan ekosistem lebih matang. Untuk developer Indonesia yang butuh model proprietary murah dan cepat untuk workload operasional, Step 3.7 Flash layak masuk radar.",
+    ],
+    link: "https://platform.stepfun.com/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-10",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
