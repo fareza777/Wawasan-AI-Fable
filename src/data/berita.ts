@@ -1485,6 +1485,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "menteri-umkm-90-persen-belum-manfaatkan-ai-apa-yang-sebenarnya-terjadi",
+    title: "Ketika 90 Persen UMKM Belum Sentuh AI: Statistiknya Bicara, Tapi Ceritanya Lebih Rumit",
+    excerpt:
+      "Menteri UMKM Maman Abdurrahman baru saja menyatakan lebih dari 90 persen UMKM belum memanfaatkan AI. Angkanya mengejutkan, tapi konteks di baliknya jauh lebih menentukan: apa yang sebenarnya menghambat, dan jalur masuk yang realistis untuk pemilik warung.",
+    category: "Analisis",
+    date: "2026-07-10",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau anda mengikuti wacana AI di media nasional minggu-minggu ini, mungkin anda pernah berhenti di satu kalimat yang diucapkan Menteri UMKM Maman Abdurrahman: lebih dari 90 persen pelaku UMKM di Indonesia belum memanfaatkan kecerdasan buatan. Angka itu muncul di tengah peluncuran berbagai program pelatihan — dari Meta yang melatih 150 UMKM, ASEAN Foundation yang menargetkan 50 ribu UMKM, sampai Telkomsel yang menutup DCE Academy 2026 dengan peserta UMKM lokal. Di permukaan, pernyataan menteri dan program-program itu tampak saling bertentangan: mengapa begitu banyak yang dibantu kalau kebanyakan belum memulai sama sekali.",
+          "Tentu saja tidak bertentangan. Yang ditunjukkan oleh angka 90 persen itu sebenarnya bukan kegagalan, melainkan ukuran pasar: dari sekitar 64 juta unit UMKM yang tersebar dari Sabang sampai Merauke, hanya sebagian kecil yang sudah pernah mencoba AI secara sengaja — bahkan sekadar untuk hal sederhana seperti menulis caption Instagram atau membalas chat pelanggan. Pertanyaan yang lebih layak diajukan bukan 'kenapa mereka belum pakai', melainkan 'apa yang sebenarnya dibutuhkan supaya yang belum bisa mulai, dan yang sudah mulai tidak berhenti di tengah jalan'. Tulisan ini mencoba menjawabnya dari sudut pandang yang lebih dekat dengan realitas pelaku UMKM di Indonesia — bukan dari press release vendor atau pidato peluncuran program.",
+        ],
+      },
+      {
+        heading: "Angka 90 persen: besar, tapi tidak tunggal",
+        paragraphs: [
+          "Pertama, penting untuk membaca angka itu dengan konteks. Definisi 'memanfaatkan AI' sangat bervariasi. Ada UMKM yang memakai template ChatGPT untuk caption — itu sudah memanfaatkan AI, tapi dalam survei definisi ketat bisa jadi tidak dihitung. Ada yang memakai fitur AI di marketplace seperti Tokopedia atau Shopee untuk membuat deskripsi produk otomatis — itu juga AI, meski penggunanya tidak selalu sadar. Ada yang memasang chatbot WhatsApp dari layanan SaaS lokal dan tidak pernah menyentuh model AI secara langsung — itu juga utilisasi. Jadi angka '90 persen belum memanfaatkan' kemungkinan besar menghitung utilisasi yang sadar dan intensional, bukan paparan tidak langsung yang sudah lebih luas.",
+          "Kedua, 'belum memanfaatkan' bukan berarti 'menolak'. Survei internal beberapa asosiasi ritel lokal menunjukkan bahwa banyak pemilik UMKM sebenarnya ingin mencoba, tapi terhenti di tiga hal yang sama: tidak tahu harus mulai dari mana, khawatir biayanya tidak terjangkau, dan tidak yakin AI benar-benar akan membantu usaha mereka yang skalanya kecil. Ketiga hal ini bukan masalah teknis — melainkan masalah komunikasi, pendampingan, dan contoh yang relevan dengan keseharian mereka. Program-program pelatihan yang ramai diluncurkan Juli ini sebagian besar menjawab dua hal pertama; yang ketiga masih jadi pekerjaan rumah.",
+          "Ketiga, distribusi adopsi juga tidak merata. UMKM di sektor kreatif, IT, dan digital agency sudah memakai AI sejak 2023. UMKM di sektor makanan, fesyen, dan kecantikan mulai adopsi sejak 2024-2025 lewat generative AI untuk konten. UMKM di sektor pertanian, logistik pedesaan, dan jasa konvensional baru benar-benar mengenal AI di 2026 — itupun kebanyakan lewat program pemerintah atau korporasi, bukan inisiatif sendiri. Jadi '90 persen' menyembunyikan lajur yang berbeda-beda: ada yang sudah matang, ada yang baru mulai, dan ada yang belum tahu AI itu apa.",
+        ],
+      },
+      {
+        heading: "Tiga hambatan nyata yang jarang diangkat di panggung peluncuran",
+        paragraphs: [
+          "Hambatan pertama: bahasa dan literasi digital dasar. Banyak pemilik UMKM — terutama yang berusia di atas 40 tahun dan menjalankan usaha keluarga — belum nyaman dengan mengetik perintah ke chatbot AI. Bukan karena tidak mampu, tapi karena belum pernah ada yang menunjukkan bahwa mengetik 'tolong buatkan caption untuk foto rendang kotak-kotak dengan harga Rp 35.000' itu sama mudahnya dengan mengirim pesan WhatsApp. Di sinilah program pendampingan satu-satu masih jauh lebih efektif daripada webinar massal atau tutorial YouTube yang mengasumsikan penonton sudah nyaman dengan keyboard.",
+          "Hambatan kedua: contoh yang tidak sesuai konteks. Sebagian besar tutorial AI yang beredar di internet memakai contoh bisnis di Amerika atau Eropa — toko kopi di Brooklyn, startup B2B di Berlin, atau agensi konten di Los Angeles. Contoh-contoh itu terasa jauh dari warung makan di pinggir jalan Solo, toko kelontong di Pasar Wage, atau penjahit rumahan di Cirebon. Yang dibutuhkan UMKM Indonesia bukan 'bagaimana AI mengubah bisnis', melainkan 'bagaimana AI bisa bantu saya menulis caption untuk promosi baju batik hari ini'. Perbedaan kecil ini menentukan apakah mereka akan coba atau langsung tutup laptop.",
+          "Hambatan ketiga: biaya yang tidak transparan. Banyak UMKM pernah mencoba layanan AI berbayar, kaget dengan tagihan, dan langsung kapok. Yang kurang dipahami adalah model bisnis AI modern — ada yang gratis dengan batas pemakaian, ada yang bayar per bulan flat, ada yang bayar per panggilan API. Tanpa penjelasan yang jelas tentang opsi mana yang cocok untuk volume pemakaian mereka, UMKM akan selalu mengambil keputusan konservatif: tidak pakai sama sekali. Di sinilah peran asosiasi, koperasi, dan komunitas lokal menjadi sangat penting — mereka bisa menjelaskan dalam bahasa yang dipahami tetangganya sendiri.",
+        ],
+      },
+      {
+        heading: "Jalur masuk yang realistis untuk UMKM yang baru mau mulai",
+        paragraphs: [
+          "Untuk UMKM yang benar-benar baru mulai, jalur paling realistis bukan langsung ke ChatGPT berbayar atau setup Ollama di laptop. Jalur paling realistis adalah lewat aplikasi yang sudah dipakai sehari-hari. WhatsApp Business sekarang sudah punya fitur balas otomatis berbasis AI yang gratis. Google Docs punya fitur bantuan tulis dalam Bahasa Indonesia. Canva punya generator desain berbasis AI yang bisa dipakai gratis dengan watermark. TikTok dan Instagram punya filter serta efek AI built-in. Semua itu sudah 'AI', sudah dipakai jutaan UMKM di Indonesia, dan tidak butuh pemahaman teknis sama sekali.",
+          "Setelah nyaman dengan yang built-in, langkah berikutnya adalah eksplorasi satu atau dua tool khusus. Untuk UMKM yang sering menulis konten, ChatGPT gratis atau Bing Microsoft Creator sudah cukup. Untuk yang perlu desain, Canva Pro dengan kredit AI-nya adalah titik masuk yang masuk akal. Untuk yang punya toko online dan perlu deskripsi produk massal, layanan seperti Pollo API yang dibahas di artikel lain di situs ini menawarkan kredit gratis yang cukup untuk ratusan deskripsi produk. Kuncinya: jangan langsung berinvestasi besar, coba dulu yang gratis atau murah, dan lihat apakah memang membantu atau hanya terasa canggih lima menit lalu dilupakan.",
+          "Untuk komunitas dan asosiasi yang mendampingi UMKM, rekomendasi editorial Wawasan AI sederhana: fokus pada pendampingan praktis, bukan pelatihan teori. Ajarkan tiga hal saja — cara menulis prompt yang jelas, cara menyunting hasil AI supaya tidak generik, dan cara mengenali output yang salah atau menyesatkan. Tiga hal ini sudah mencakup 80 persen kebutuhan harian UMKM. Sisanya — fine-tune model, integrasi API, automasi lanjutan — bisa dipelajari nanti, setelah fondasi ini kuat. UMKM yang memahami tiga hal dasar biasanya akan menemukan sendiri kebutuhan berikutnya, dan baru pada titik itulah pelatihan lanjutan benar-benar bermanfaat.",
+        ],
+      },
+      {
+        heading: "Yang layak dipantau di paruh kedua 2026",
+        paragraphs: [
+          "Beberapa indikator yang akan menunjukkan apakah angka 90 persen itu benar-benar turun dalam 6-12 bulan ke depan: pertama, jumlah UMKM yang mengikuti pelatihan AI bersertifikat dari program pemerintah — data ini biasanya keluar triwulanan. Kedua, adopsi fitur AI di aplikasi yang sudah dipakai UMKM (WhatsApp Business, Tokopedia, Shopee, GoFood) — vendor biasanya mengumumkan angkanya di akhir tahun. Ketiga, kemunculan UMKM yang memproduksi barang atau jasa dengan bantuan AI secara terbuka — ini indikator kualitatif yang biasanya paling jujur tentang adopsi sesungguhnya.",
+          "Yang juga layak dipantau: peran startup lokal yang menyediakan tool AI dengan antarmuka berbahasa Indonesia dan contoh kasus lokal. Bukan tool global yang menerjemahkan dokumentasinya, melainkan produk yang dari awal dirancang untuk pemilik warung di Indonesia. Pemain seperti ini akan menjadi penentu apakah adopsi AI di UMKM benar-benar merata, atau hanya terkonsentrasi di kota besar dan sektor yang sudah melek digital. Pada akhirnya, yang menentukan bukan berapa banyak program yang diluncurkan, melainkan berapa banyak UMKM yang setelah program selesai masih lanjut memakai AI dalam keseharian mereka.",
+          "Dalam pengujian editorial Wawasan AI, pernyataan Menteri UMKM tentang 90 persen itu bukan alarm — melainkan pengingat bahwa pasar AI untuk UMKM Indonesia masih sangat besar, dan cara kita mendekati pasar itu akan menentukan apakah Indonesia benar-benar menjadi ekonomi digital yang inklusif atau hanya menjadi konsumen teknologi negara lain. Yang dibutuhkan bukan pelatihan massal tanpa tindak lanjut, melainkan pendampingan yang sabar, contoh yang relevan, dan alat yang benar-benar menyelesaikan masalah nyata. Kalau ketiga hal itu ada, angka 90 persen akan turun bukan karena program yang ramai, melainkan karena UMKM melihat sendiri bahwa AI benar-benar berguna untuk usaha mereka — bukan hanya untuk perusahaan besar di Jakarta.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
