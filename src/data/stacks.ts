@@ -1343,6 +1343,47 @@ export const stacks: Review[] = [
     date: "2026-07-08",
     featured: false,
   },
+  {
+    slug: "stable-diffusion",
+    name: "Stable Diffusion",
+    tagline: "Model image diffusion open-weight yang jadi pondasi ekosistem image gen self-host",
+    tags: ["Stability AI", "Open Source", "Image Gen", "Self-Host"],
+    score: 8.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.8 },
+      { label: "Pengalaman Pengguna", value: 7.2 },
+      { label: "Ekosistem & Integrasi", value: 9.4 },
+      { label: "Harga", value: 9.5 },
+    ],
+    summary:
+      "Stable Diffusion adalah keluarga model text-to-image diffusion open-weight dari Stability AI yang sejak rilis perdananya Agustus 2022 jadi pondasi utama image generation open source. Di 2026, ekosistemnya sudah matang dengan SD 1.5, SD 2.1, SDXL, SD 3.5 (Medium, Large, Large Turbo), dan SD 4 yang rencananya rilis akhir tahun - semuanya tersedia gratis untuk download dan dijalankan di GPU consumer. Kombinasi bobot terbuka, ekosistem ComfyUI/A1111/InvokeAI yang besar, dan komunitas LoRA/ControlNet/IP-Adapter yang aktif membuat Stable Diffusion tetap jadi pilihan utama untuk workflow image gen skala besar dengan kontrol teknis penuh dan biaya marjinal mendekati nol setelah investasi hardware awal.",
+    pros: [
+      "Open weight dengan lisensi permisif (CreativeML Open RAIL-M untuk SD 1.5/SDXL, Stability AI Community License untuk SD 3.5) - download, modifikasi, dan komersialkan tanpa royalti ke Stability AI",
+      "Ekosistem tooling paling matang di kelasnya: ComfyUI, Automatic1111, Forge, InvokeAI, dan Fooocus masing-masing punya komunitas dan workflow library sendiri",
+      "LoRA, ControlNet, IP-Adapter, dan T2I-Adapter memungkinkan fine-tune style/karakter dan kontrol posisi/depth/pose yang tidak ditawarkan Midjourney atau DALL-E",
+      "Biaya per-gambar setelah self-host mendekati nol: sekali beli GPU, biaya listrik dan depresiasi hardware saja",
+      "Komunitas aktif dengan ribuan checkpoint dan LoRA di CivitAI dan Hugging Face - gaya artistik, karakter, dan use case spesifik biasanya sudah ada model jadi",
+    ],
+    cons: [
+      "Kualitas estetik di kelas atas (gaya artistik hiper-realistis atau surealis) masih di belakang Midjourney v7 untuk prompt sederhana - perlu ComfyUI workflow dan model yang tepat untuk mengejar kualitas setara",
+      "Setup awal nontrivial: install Python, dependensi CUDA, download model, pilih sampler dan scheduler - learning curve nyata untuk non-teknis",
+      "Kebutuhan GPU tidak kecil: SDXL nyaman di 8 GB VRAM, SD 3.5 Large idealnya 12-16 GB, SD 4 rumored butuh 24 GB; kartu consumer RTX 3060 ke bawah terbatas untuk SD 3.5",
+      "Lisensi bergeser: Stability AI Community License untuk SD 3.5 membatasi penggunaan jika annual revenue di atas $1 juta - perusahaan besar perlu cek legal compliance",
+    ],
+    verdict:
+      "Standar emas untuk image gen open-weight yang memberi kontrol penuh dan biaya marjinal mendekati nol setelah investasi hardware, tapi memerlukan kemauan teknis untuk setup dan tuning. Pilih Stable Diffusion kalau kamu mau self-host, fine-tune gaya sendiri, atau memproduksi gambar dalam volume besar dengan unit economics sehat; pilih Midjourney atau DALL-E 3 kalau prioritasnya hasil estetik instan tanpa setup teknis.",
+    body: [
+      "Stable Diffusion adalah model text-to-image berbasis diffusion yang pertama kali dirilis Stability AI pada Agustus 2022 dengan pendekatan berbeda dari model proprietary waktu itu: bobot model dibuka untuk publik, siapa saja bisa download dan menjalankan di GPU sendiri. Sejak saat itu, SD berevolusi lewat beberapa generasi besar - SD 1.5 (Oktober 2022, baseline 512x512), SD 2.1 (November 2022, peningkatan kualitas dan prompt understanding), SDXL (Juli 2023, resolusi 1024x1024 native), SD 3.5 Medium/Large/Large Turbo (Oktober 2024, arsitektur MMDiT dengan text encoder lebih kuat), dan SD 4 yang sampai Juli 2026 masih dalam tahap akhir pengembangan dengan janji perbaikan besar di tipografi dan konsistensi multi-karakter. Lisensi yang dipakai juga bergeser: SD 1.5, SD 2.1, dan SDXL di bawah CreativeML Open RAIL-M yang longgar; SD 3.5 di bawah Stability AI Community License yang membatasi penggunaan untuk entitas dengan pendapatan tahunan di atas $1 juta - detail ini perlu dicermati untuk deployment komersial skala besar.",
+      "Yang membuat Stable Diffusion tetap relevan di 2026 bukan modelnya saja, melainkan ekosistem tooling dan komunitas yang mengitarinya. Untuk inference, empat tool utama mendominasi: Automatic1111 (A1111) WebUI yang jadi standar de facto untuk eksplorasi, ComfyUI yang berbasis node graph dan memungkinkan workflow kompleks (img2img, inpainting, ControlNet, multi-pass) tanpa coding, Forge yang merupakan fork A1111 dengan optimasi VRAM lebih efisien, dan InvokeAI yang fokus ke profesional dengan API native dan kanvas unified. Untuk kontrol presisi, ada ControlNet (pose, depth, edge, segmentation), IP-Adapter (image prompt/reference), T2I-Adapter, dan LoRA/LyCORIS untuk fine-tuning ringan pada gaya, karakter, atau konsep spesifik. Ribuan checkpoint dan LoRA tersedia gratis di CivitAI dan Hugging Face - untuk gaya artistik (ghibli, anime, photorealistic, comic), karakter (real person atau IP), atau use case niche (product photography, fashion, arsitektur), biasanya sudah ada model komunitas yang siap pakai, menghemat waktu training dari nol.",
+      "Use case profesional yang tidak bisa dilayani Midjourney atau DALL-E biasanya berakhir di Stable Diffusion. Pertama, produksi gambar dalam volume besar: sekali investasi GPU (RTX 4090 24 GB di harga Rp 25-30 juta sekali bayar), biaya per-gambar turun ke level listrik dan depresiasi hardware, yaitu sub-Rp 100 per gambar untuk SDXL - di workflow yang menghasilkan ratusan atau ribuan gambar per hari (e-commerce, social media content, marketing personalization), unit economics-nya 10-100x lebih baik dari API proprietary. Kedua, konsistensi karakter dan gaya lintas banyak gambar: dengan LoRA yang dilatih pada 10-30 gambar referensi, kamu bisa generate ratusan variasi produk atau kampanye dengan karakter yang sama persis - ini sulit di Midjourney (v6/v7 sudah lebih baik tapi tetap tidak sekonsisten fine-tune) dan mustahil di DALL-E 3. Ketiga, kontrol teknis mendalam: untuk adegan dengan layout spesifik, camera angle, atau style reference, ControlNet dan IP-Adapter memberi determinisme yang tidak ada di tool proprietary. Keempat, compliance dan data privacy: untuk industri dengan regulasi ketat (keuangan, kesehatan, pemerintah), self-host berarti data tidak pernah keluar server, memenuhi UU PDP dan standar ISO 27001 tanpa DPA khusus.",
+      "Untuk pengguna dan tim di Indonesia, Stable Diffusion punya beberapa implikasi menarik. Pertama, investasi hardware sekali yang signifikan tapi jangka panjang: workstation dengan RTX 4090 24 GB di harga Rp 25-30 juta (second hand lebih murah) atau RTX 5090 32 GB di Rp 50-70 juta (jika ada di pasar Indonesia), sudah cukup untuk sebagian besar workflow SD 3.5. Untuk inference yang lebih serius, multi-GPU rig (4x RTX 4090 di Rp 100-150 juta) atau sewa GPU cloud (RunPod, Vast.ai, TensorWave dengan tarif $0.30-0.80 per jam untuk H100 80 GB atau RTX 4090) memberikan throughput produksi tanpa modal hardware. Kedua, komunitas lokal aktif: ada beberapa grup Telegram dan Discord berbahasa Indonesia untuk ComfyUI workflow, training LoRA, dan troubleshooting - searchable dengan kata kunci seperti 'Stable Diffusion Indonesia' atau 'ComfyUI ID'. Ketiga, untuk freelancer dan agency yang menjual jasa image gen, model bisnis unit economics-nya sehat: modal sekali di hardware, biaya operasional rendah, margin per-gambar bisa Rp 5.000-50.000 tergantung kompleksitas dan klien. Keempat, untuk kampus dan riset, bobot terbuka memungkinkan eksperimen reproducibility yang tidak bisa dilakukan dengan model proprietary - paper akademik tentang diffusion model di Indonesia umumnya pakai SD 1.5 atau SDXL sebagai baseline. Standar harga: model dan LoRA gratis, ComfyUI/A1111 gratis, ComfyUI Manager dan custom node gratis, GPU cloud $0.30-0.80 per jam. Catatan penting: untuk deployment komersial di atas $1 juta pendapatan per tahun, perlu baca Stability AI Community License dan klausul-klausulnya untuk SD 3.5 atau konsultasi legal - SD 1.5/SDXL di CreativeML Open RAIL-M lebih fleksibel untuk enterprise.",
+    ],
+    link: "https://stability.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-09",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
