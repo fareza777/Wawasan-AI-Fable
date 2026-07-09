@@ -1956,6 +1956,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-09",
     featured: false,
   },
+{
+    slug: "google-workspace-cli",
+    name: "Google Workspace CLI",
+    tagline: "Satu CLI untuk Drive, Gmail, Calendar, dan 25+ layanan Workspace lainnya",
+    tags: ["CLI", "Rust", "AI Agent", "Google Workspace"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Google Workspace CLI (gwcli) adalah command-line resmi dari tim Google Workspace yang menyatukan lebih dari 25 layanan - Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, dan lain-lain - dalam satu antarmuka terminal. Dibangun dengan Rust dan secara dinamis merefleksikan Google Discovery Service, sehingga penambahan layanan baru dari Google otomatis tersedia di CLI.",
+    highlights: [
+      "Lebih dari 25 layanan Workspace tersedia lewat satu binary: Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, Contacts, Tasks, Forms, dan masih banyak lagi",
+      "Arsitektur Discovery-driven: command surface dibangun otomatis dari Google Discovery Service, sehingga layanan baru Google langsung tersedia tanpa rilis CLI terpisah",
+      "Dukungan resmi Gemini CLI Extension - bisa dipasang sebagai ekstensi untuk Gemini CLI sehingga perintah gwcli dapat dipanggil dari agent percakapan",
+      "AI agent skills built-in: setiap service diekspos sebagai skill yang siap dipakai oleh coding agent modern",
+      "Filter dan query lintas layanan, misalnya mencari file di Drive lalu mengirim lewat Gmail dalam satu pipeline",
+      "Output terstruktur (JSON/TSV) sehingga mudah dipipe ke jq, awk, atau script otomasi shell",
+      "Lisensi Apache-2.0 dan proyek resmi googleworkspace - kontribusi dan issue tracker terbuka untuk umum",
+      "Auth lewat OAuth standar Google dengan panduan setup yang jelas untuk service account dan akun personal",
+      "Cocok untuk workflow data-ops dan otomasi back-office yang sebelumnya hanya bisa dilakukan lewat Apps Script atau API call manual",
+    ],
+    pros: [
+      "Permukaan CLI tunggal untuk seluruh Workspace - hemat konteks switching saat mengelola banyak layanan Google",
+      "Proyek resmi googleworkspace dengan lisensi Apache-2.0 - keandalan dan dukungan jangka panjang yang lebih jelas daripada wrapper komunitas",
+      "Integrasi native dengan Gemini CLI Extension membuka jalur orkestrasi lewat AI agent tanpa glue code tambahan",
+    ],
+    cons: [
+      "Bergantung pada Google Discovery Service yang kadang menambah/menghapus API lebih cepat dari changelog CLI-nya, sehingga command tertentu bisa saja hilang antar versi",
+      "Setup OAuth untuk akun dengan banyak domain Workspace memerlukan konfigurasi project GCP yang tidak trivial untuk pengguna non-teknis",
+      "Dokumentasi masih condong ke use case developer - pengguna bisnis yang terbiasa dengan UI Google Workspace akan perlu belajar ulang",
+    ],
+    verdict:
+      "Pilihan tepat untuk tim engineering dan admin Indonesia yang mengelola banyak akun Workspace dan ingin scripting untuk menggantikan klik manual. Bukan menggantikan GUI Workspace, melainkan perpanjangan tangan di terminal yang sangat dibutuhkan pada paruh kedua 2026.",
+    body: [
+      "Saat tim engineering dan admin di Indonesia mengelola banyak akun Google Workspace - Drive berisi ribuan file, Gmail dengan ratusan label, Calendar yang dipakai lintas tim - CLI resmi yang menyatukan semuanya menjadi kebutuhan praktis, bukan kemewahan. Google Workspace CLI (gwcli) muncul menjawab kebutuhan itu: command-line tool resmi dari googleworkspace yang membungkus lebih dari 25 layanan Workspace dalam satu binary Rust. Yang menarik, surface command-nya tidak ditulis tangan satu per satu - CLI merefleksikan Google Discovery Service secara dinamis, sehingga begitu Google menambah layanan baru di Discovery, perintah untuk layanan itu otomatis tersedia di versi CLI berikutnya.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling sering muncul adalah otomasi lintas layanan: mencari file terbaru di Drive berdasarkan kata kunci, mengirim hasilnya lewat Gmail ke daftar penerima dari Contacts, lalu membuat acara Calendar untuk rapat review - semua dalam satu pipeline shell. Output terstruktur JSON atau TSV yang bisa di-pipe ke jq atau script lain membuat workflow seperti ETL mini untuk data Workspace menjadi hal yang sehari-hari, bukan proyek khusus. Sebelumnya, skenario ini biasanya diselesaikan dengan Apps Script atau kombinasi curl + Google API client, yang overhead setup-nya signifikan.",
+      "Yang sering luput adalah integrasi Gemini CLI Extension. Karena gwcli adalah produk resmi googleworkspace, ia hadir dengan paket ekstensi untuk Gemini CLI - artinya perintah gwcli bisa dipanggil dari dalam percakapan AI agent. Bagi tim yang sudah mengadopsi workflow agentic (Hermes Agent, Claude Code, Codex), ini membuka pola baru: agent bisa 'berbicara' dengan Workspace lewat gwcli tanpa glue code tambahan. Kombinasi dengan AI agent skills built-in di setiap service membuat CLI ini terasa lebih seperti platform otomasi daripada sekadar tool - setiap layanan Workspace adalah modul yang siap diorkestrasi.",
+      "Keterbatasan yang perlu dipahami: gwcli masih relatif baru di ekosistem resmi googleworkspace, sehingga dokumentasi condong ke use case developer. Pengguna bisnis yang terbiasa dengan antarmuka GUI mungkin perlu pendampingan saat setup OAuth untuk akun multi-domain. Selain itu, ketergantungan pada Google Discovery Service berarti command tertentu bisa hilang antar versi tanpa changelog yang eksplisit - workflow yang sudah built perlu diuji ulang setelah upgrade. Namun untuk sebagian besar tim Indonesia yang mengelola Workspace dalam skala menengah ke besar - kantor cabang, startup, institusi pendidikan - gwcli adalah lapisan otomasi yang sebelumnya tidak ada, dan kini tersedia resmi.",
+    ],
+    link: "https://github.com/googleworkspace/cli",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-10",
+    updatedAt: "2026-07-10",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
