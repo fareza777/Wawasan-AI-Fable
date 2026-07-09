@@ -913,6 +913,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                 "Open source dengan download Mac/Windows/Linux dan setup lokal — data email, meeting, dan knowledge graph tetap di mesin sendiri, relevan untuk profesional Indonesia yang mau AI coworker powerful tanpa harus serahkan data kerja ke cloud orang lain.",
               ],
             },
+            "emilkowalski/skills": {
+              description:
+                "Skill AI dari Emil Kowalski (motion designer Vercel/Linear) yang mengajari agen coding soal 'taste' desain dan animasi — biar UI hasil AI berhenti terasa generik dan punya karakter.",
+              highlights: [
+                "Kumpulan skill open-source (npx skills@latest add emilkowalski/skills) yang menyuntikkan panduan desain & animasi dari Emil Kowalski ke coding agent — battle-tested dari pekerjaannya di Vercel dan Linear.",
+                "Berisi skill utama emil-design-eng (animasi + design advice), review-animations (audit ketat motion UI), animation-vocabulary (kosa kata gerak yang tepat), dan apple-design (prinsip motion dari WWDC).",
+                "Menjawab masalah klasik 'agen tidak punya taste' — agent sering pilih easing yang salah (ease-in untuk enter animation) atau solid border di tempat semi-transparent shadow; skill ini kasih rule yang konsisten dan bisa diaudit.",
+                "Bagian dari gerakan 'agent with taste' yang digaungkan bareng addyosmani/agent-skills, design.md, dan taste-skill — fondasi tooling agar AI agent output UI yang tidak masuk kategori 'AI slop'.",
+              ],
+            },
+            "vercel-labs/native": {
+              description:
+                "Toolkit resmi Vercel Labs untuk bikin aplikasi desktop native pakai markup `.native` + logika Zig — UI ekspresif, performa native, tanpa WebView, tanpa embed browser di binary.",
+              highlights: [
+                "SDK + CLI (npm i -g @native-sdk/cli) dari Vercel Labs yang memungkinkan developer bikin desktop app dengan view declarative di file `.native` dan logika di `main.zig` — engine-nya gambar piksel langsung ke window OS, tanpa WebView, Chromium, atau interpreter.",
+                "Workflow terasa kayak web framework modern: `native init` scaffold app, `native dev` hot-reload view dengan state terjaga, `native check` validasi UI dalam milidetik, `native test` UI test headless, `native build` jadi binary rilis optimal.",
+                "Komponen built-in (button, tab, text field, dialog, chart, virtual list) sudah dirancang dengan tipografi, spasi, dan warna yang 'considered' — hasil `native init` sudah terlihat intentional tanpa setup dari nol.",
+                "Alternatif menarik dari Tauri/Electron untuk tim yang mau performance native tapi malas pakai C++/Rust weight — landing di sweet spot antara ekspresivitas web dan native rendering, ditenagai Zig di balik layar.",
+              ],
+            },
+            "withmarbleapp/os-taxonomy": {
+              description:
+                "Taksonomi kurikulum open-source dari Marble — 1.590 micro-topik pendidikan anak usia sekolah dasar yang terhubung lewat 3.221 prerequisite edge dan dipetakan ke standar kurikulum nasional (NGSS, Common Core, UK NC).",
+              highlights: [
+                "Dataset JSON terstruktur yang mendekomposisi 'apa yang anak pelajari' menjadi micro-topik (mis. 'Building sentences', 'Apparent brightness of stars'), masing-masing dengan deskripsi, evidence mastery, tipe, dan rentang usia.",
+                "Graph prerequisite sebagai directed acyclic graph (DAG) dengan 3.221 edge hard/soft — setiap ketergantungan antar topik diberi alasan satu baris, sehingga reasoning kurikulum bisa diaudit.",
+                "Align langsung ke NGSS, Common Core, dan UK National Curriculum lewat standards key — mudah dipakai untuk adaptasi kurikulum regional atau pembangunan platform edtech yang butuh ontologi belajar yang teruji.",
+                "Dilengkapi 183 domain cluster (ringkasan satu paragraf per subject/domain/age band) dan visualisasi 3D interaktif di withmarble.com/curriculum — fondasi data yang matang untuk AI tutor, lesson planner, dan product edtech.",
+              ],
+            },
           };
 
           // Helper: lookup dengan fallback ke template-generated highlights
