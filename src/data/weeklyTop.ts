@@ -393,6 +393,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Cakupan fitur enterprise-grade: equation LaTeX, mermaid → native shape, RTL & CJK support, pivot table, chart, animasi PowerPoint, track changes, OLE — relevan untuk tim yang ingin pipeline dokumen otomatis di CI/CD atau headless Docker tanpa Office.",
     ],
   },
+  "JustVugg/colibri": {
+    description:
+      "Engine C murni (2.400 LOC, tanpa dependency) yang menjalankan GLM-5.2 744B MoE di mesin konsumen ~25 GB RAM — streaming 21.504 expert dari disk dengan per-layer LRU cache, tanpa GPU.",
+    highlights: [
+      "Tiny engine, immense model: satu file C (`c/glm.c` ~2.400 baris) zero-deps yang menjalankan GLM-5.2 744B-parameter MoE di laptop/PC dengan RAM 25 GB — bagian dense 17B tetap resident di int4 (~9,9 GB), 21.504 routed expert di-stream dari disk (~370 GB).",
+      "Pakai 'physics of the disk': per-layer LRU cache + OS page cache sebagai L2 gratis + async expert readahead via `WILLNEED` — bukan framework, melainkan satu kode native yang sangat hemat untuk menjawab 'bisakah frontier 744B jalan di consumer hardware?'.",
+      "Implementasi faithful GLM-5.2 (`glm_moe_dsa`): MLA attention dengan compressed KV cache 57× lebih kecil, sigmoid router ala DeepSeek-V3, native MTP speculative decoding (int8, 2,2–2,8 tok/forward), DSA sparse attention, dan FP8→int4 converter resumable yang unduh shard per shard.",
+      "Catch penting: ini bukan 'fast' — cold decode ~0,05–0,1 tok/s; butuh SSD cepat dan mengerti thermal/Win paging. Cocok untuk developer yang ingin lihat inference frontier 744B di mesin murah, atau riset sistem MoE off-GPU yang kreatif.",
+    ],
+  },
+  "stablyai/orca": {
+    description:
+      "Orkestrator AI 'ADE' desktop+mobile dari stably.ai — jalankan Codex, Claude Code, OpenCode, atau Pi bersamaan di worktree paralel, monitor dari HP, dan pilih hasil terbaik.",
+    highlights: [
+      "The AI Orchestrator for 100x builders: satu aplikasi desktop (macOS/Windows/Linux) plus companion iOS/Android yang menjalankan Codex, Claude Code, OpenCode, atau Pi side-by-side — fan satu prompt ke lima agen, masing-masing di worktree git terisolasi, bandingkan hasilnya, merge yang menang.",
+      "Parallel worktrees bukan teori: setiap agen dapat working directory terpisah, sehingga perubahan tidak konflik — relevan untuk founder/lead yang sering pakai beberapa coding agent sekaligus dan ingin 'race' untuk pilih output terbaik.",
+      "Mobile companion app (App Store + TestFlight + APK Android): dapat notifikasi saat agen selesai, kirim follow-up dari mana saja — bukan dashboard web yang harus dibuka, melainkan kontrol native di saku developer.",
+      "Subscription-based dengan lisensi jelas, plus model 'pakai API key/subscription kamu sendiri' — bukan runtime baru yang mengunci token, melainkan shell yang menghormati kredensial yang sudah kamu punya di masing-masing coding agent.",
+    ],
+  },
   "kyutai-labs/pocket-tts": {
     description:
       "TTS ringan 100M parameter dari Kyutai Labs yang jalan mulus di CPU saja (~6x real-time di MacBook Air M4) — cloning suara, multi-bahasa, dan latensi ~200 ms tanpa perlu GPU atau API cloud.",
