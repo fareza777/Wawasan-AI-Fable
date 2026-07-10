@@ -1384,6 +1384,47 @@ export const stacks: Review[] = [
     date: "2026-07-09",
     featured: false,
   },
+  {
+    slug: "suno",
+    name: "Suno",
+    tagline: "Generator musik AI dengan vokal nyanyi dari prompt teks",
+    tags: ["Suno", "Freemium", "Music Gen", "AI Composer"],
+    score: 8.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Suno adalah generator musik AI pertama yang konsisten menghasilkan lagu utuh dengan vokal nyanyi yang koheren dari prompt teks atau audio referensi. Per Juli 2026 model v5 (cabang v5.5) adalah standar de facto untuk eksplorasi musik AI consumer-grade, dengan paket Free 50 kredit/hari, Pro USD 8/bulan 2.500 kredit, dan Premier USD 24/bulan 10.000 kredit - kombinasi yang menempatkan Suno di posisi tengah antara tool eksperimen kasual dan layanan produksi profesional.",
+    pros: [
+      "Model v5 menghasilkan vokal nyanyi dengan intonasi, dinamika, dan artikulasi bahasa Inggris/Indonesia yang jauh lebih natural dibanding v3.5/v4 - reduksi artifact 'robot voice' signifikan",
+      "Workflow prompt-to-song dalam 30-90 detik membuat loop eksperimentasi sangat cepat: regenerate dengan style tag berbeda tanpa harus mulai dari nol",
+      "Mode 'Upload Audio' memungkinkan transformasi rekaman vocal/guide sederhana menjadi aransemen lengkap dengan backing track - berguna untuk musisi yang sudah punya ide melody",
+      "Hak komersial tersedia di paket Pro dan Premier (perubahan terms 2025) sehingga lagu bisa dipakai untuk monetisasi YouTube, Spotify, atau iklan tanpa klaim otomatis",
+      "Antarmuka web dan mobile app konsisten, dengan fitur persona dan stem export (4 track terpisah) di paket Premier - cukup untuk prototipe produksi indie",
+    ],
+    cons: [
+      "Hak komersial di paket Free masih terbatas - hasil generate Free tidak boleh dipakai untuk monetisasi, hanya eksplorasi personal",
+      "Konsistensi di luar bahasa Inggris/Indonesia belum merata: untuk prompt berbahasa Mandarin, Jepang, Korea, atau bahasa daerah Indonesia, vokal bisa terdengar lebih artifisial dan prosodi kurang akurat",
+      "Durasi output di Free dibatasi sampai ~8 menit per lagu, Pro/Premier sampai ~30 menit - untuk podcast audio, audiobook, atau background stream panjang, ini masih kurang",
+      "Kontrol musik detail (key signature, time signature, BPM eksplisit) lebih lemah dibanding DAW tradisional - Suno lebih cocok untuk ideation dan prototype dibanding produksi presisi tinggi",
+    ],
+    verdict:
+      "Standar de facto untuk music gen AI consumer-grade di 2026, terutama untuk eksplorasi cepat dan vokal nyanyi yang koheren. Pilih Suno kalau prioritasnya adalah kecepatan menghasilkan lagu utuh dengan vokal tanpa setup teknis; pilih Udio untuk kontrol presisi genre, atau Stable Audio/AudioCraft kalau kamu butuh self-host dan bobot terbuka.",
+    body: [
+      "Suno adalah layanan generator musik AI yang didirikan tim kecil di Cambridge, Massachusetts pada 2023 dan sejak rilis publik awal 2024 menjadi benchmark untuk teks-ke-musik dengan vokal. Berbeda dari generator audio sebelumnya yang fokus ke sound effect, ambience, atau backing track instrumental, Suno memposisikan diri dari awal sebagai 'lagu utuh' - prompt teks sederhana seperti 'acoustic folk song about rainy morning in Bandung' akan menghasilkan vokal, lirik, melodi, dan aransemen lengkap dalam waktu kurang dari dua menit. Per Juli 2026, model yang aktif adalah cabang v5 (dengan varian v5.5 yang menyediakan kontrol 'persona' untuk gaya vokal konsisten lintas generasi), menggantikan v3.5 dan v4 yang sudah ditandai deprecated di dokumentasi resmi.",
+      "Mekanisme pricing per Juli 2026 mengikuti tiga tier yang relatif sederhana. Free Plan memberikan 50 kredit per hari (cukup untuk sekitar 10 lagu pendek sampai 8 menit), tanpa hak komersial - hasil generate hanya untuk penggunaan personal dan eksplorasi. Pro Plan seharga USD 8 per bulan (kurs Rp 16.000 sekitar Rp 128.000/bulan) menaikkan kuota ke 2.500 kredit per bulan dengan hak komersial penuh, generasi prioritas (antrian lebih pendek saat server sibuk), dan akses ke v5.5. Premier Plan USD 24 per bulan (Rp 384.000/bulan) memberikan 10.000 kredit per bulan, akses stem export 4-track terpisah (vokal/drum/bass/instrumental), dan kualitas generasi tertinggi. Paket tahunan mendapat diskon sekitar 20%. Untuk kreator Indonesia yang baru mulai, Free sudah cukup untuk validasi ide; begitu mulai serius menghasilkan konten untuk YouTube, podcast, atau klien, Pro adalah sweet spot termurah yang sudah mengaktifkan hak komersial.",
+      "Untuk konteks Indonesia, ada tiga implikasi utama. Pertama, soal hak komersial: per terms of service 2025, lagu yang di-generate di paket Pro dan Premier boleh dipakai untuk monetisasi penuh - termasuk YouTube Content ID, distribusi ke Spotify/Apple Music lewat distributor, dan iklan - selama satu akun menghasilkan kurang dari 1.000.000 USD pendapatan tahunan dari konten Suno. Untuk kreator Indonesia yang biasanya menghasilkan di bawah ambang ini, ini bukan masalah. Kedua, soal bahasa: v5 sudah sangat baik untuk lirik bahasa Indonesia dengan intonasi dan artikulasi natural, walau untuk bahasa daerah (Jawa, Sunda, Minang) hasilnya masih terdengar lebih 'asing' dibanding Inggris atau Indonesia baku. Ketiga, soal komunitas dan tutorial: ada beberapa kreator Indonesia yang sudah rutin menghasilkan konten 'lagu AI' untuk YouTube Shorts dan TikTok, dan grup Telegram seperti 'AI Musik Indonesia' aktif membahas prompt engineering untuk genre yang relevan dengan pasar lokal (campuran dangdut, pop, hingga indie folk).",
+      "Untuk workflow teknis, Suno paling sering dipakai dalam empat pola. Pertama, prototyping ide: songwriter membuat 5-10 variasi aransemen untuk satu lirik dalam 10 menit, lalu pilih yang terbaik untuk direkam ulang dengan musisi sungguhan. Kedua, content creation rutin: YouTuber dan podcaster menghasilkan intro/outro dan background music original yang bebas copyright dengan biaya Rp 128.000/bulan - lebih murah dan lebih orisinil dibanding subscription stock music. Ketiga, eksperimen untuk jingle iklan atau audio branding: agensi kecil yang tidak punya budget untuk studio rekaman bisa menghasilkan 20-50 variasi jingle dalam satu sesi, lalu pitch ke klien. Keempat, eksplorasi hobi: pengguna non-musisi yang penasaran 'bagaimana rasanya jadi komposer' bisa langsung menghasilkan lagu tanpa teori musik. Untuk ketiga use case pertama, integrasi Suno ke workflow otomatis lewat API (USD 0.05-0.10 per lagu tergantung panjang) cukup straightforward lewat n8n, Make, atau backend Python/Node - dokumentasi resmi di suno.com/api sudah stabil. Catatan akhir: untuk pengguna yang butuh kontrol presisi di atas prompt, genre spesifik (jazz progresif, metal teknis), atau self-host karena alasan compliance, alternatif Udio dan Stable Audio lebih sesuai; untuk eksplorasi kasual dan produksi konten cepat, Suno v5 tetap pilihan paling pragmatis di paruh kedua 2026.",
+    ],
+    link: "https://suno.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-10",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

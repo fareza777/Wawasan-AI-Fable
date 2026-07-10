@@ -1,0 +1,161 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "10 Juli 2026",
+  "period": {
+    "date": "2026-07-10",
+    "label": "10 Juli 2026",
+    "path": "/repo/daily/2026/07/10"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-10T00:05:26.276Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation",
+        "Resume building"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "iOfficeAI/OfficeCLI",
+      "owner": "iOfficeAI",
+      "repo": "OfficeCLI",
+      "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+      "githubUrl": "https://github.com/iOfficeAI/OfficeCLI",
+      "trendshiftUrl": "https://trendshift.io/repositories/24391",
+      "language": "C#",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "Document processing"
+      ],
+      "dateCreated": "2026-03-15T07:39:12Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "vercel-labs/native",
+      "owner": "vercel-labs",
+      "repo": "native",
+      "description": "Build desktop + mobile apps with Zig and web UI",
+      "githubUrl": "https://github.com/vercel-labs/native",
+      "trendshiftUrl": "https://trendshift.io/repositories/28473",
+      "language": "Zig",
+      "topics": [],
+      "dateCreated": "2026-05-08T19:53:41Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "withmarbleapp/os-taxonomy",
+      "owner": "withmarbleapp",
+      "repo": "os-taxonomy",
+      "description": "",
+      "githubUrl": "https://github.com/withmarbleapp/os-taxonomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/76834",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-07-08T09:27:48Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "githubUrl": "https://github.com/addyosmani/agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25200",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-15T20:20:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "jamiepine/voicebox",
+      "owner": "jamiepine",
+      "repo": "voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "githubUrl": "https://github.com/jamiepine/voicebox",
+      "trendshiftUrl": "https://trendshift.io/repositories/21213",
+      "language": "TypeScript",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-01-25T12:27:03Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "VoltAgent/awesome-design-md",
+      "owner": "VoltAgent",
+      "repo": "awesome-design-md",
+      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
+      "trendshiftUrl": "https://trendshift.io/repositories/25016",
+      "topics": [
+        "AI coding assistant",
+        "Design system",
+        "Curated list"
+      ],
+      "dateCreated": "2026-03-31T16:37:01Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "vxcontrol/pentagi",
+      "owner": "vxcontrol",
+      "repo": "pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "githubUrl": "https://github.com/vxcontrol/pentagi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15161",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting",
+        "Self-hosted"
+      ],
+      "dateCreated": "2025-01-06T22:22:48Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ruanyf/weekly",
+      "owner": "ruanyf",
+      "repo": "weekly",
+      "description": "科技爱好者周刊，每周五发布",
+      "githubUrl": "https://github.com/ruanyf/weekly",
+      "trendshiftUrl": "https://trendshift.io/repositories/6132",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2018-10-13T12:36:07Z"
+    }
+  ]
+}
