@@ -2006,6 +2006,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-10",
     featured: false,
   },
+{
+  slug: "llamafile",
+  name: "Llamafile",
+  tagline: "Distribusi dan menjalankan LLM dalam satu file biner tunggal",
+  tags: ["Local LLM", "Single-File", "Open Source", "C++"],
+  score: 8.6,
+  scores: [
+    { label: "Kemudahan Setup", value: 9.2 },
+    { label: "Fitur & Ekstensibilitas", value: 8.5 },
+    { label: "Komunitas & Momentum", value: 8.8 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Kesiapan Produksi", value: 8.4 },
+  ],
+  summary:
+    "Llamafile dari Mozilla AI menjawab salah satu hambatan terbesar adopsi LLM lokal: cara mendistribusikan dan menjalankan model besar tanpa pusing dengan Python, CUDA, atau environment manager. Paket model dan runtime dibungkus jadi satu file executable yang jalan di Linux, macOS, Windows, maupun BSD - tinggal unduh, chmod, dan jalankan, persis seperti binary executable biasa.",
+  highlights: [
+    "Distribusi model + runtime dalam satu file executable - model GGUF dibundle bersama inference engine berbasis llama.cpp",
+    "Cross-platform: Linux, macOS, Windows, dan BSD (FreeBSD/OpenBSD) tanpa environment terpisah",
+    "CPU-first dengan akselerasi GPU opsional via Vulkan, CUDA, dan Metal - fallback graceful saat GPU tidak tersedia",
+    "Server OpenAI API-compatible built-in - aplikasi yang sudah terintegrasi dengan OpenAI client bisa langsung diarahkan ke llamafile lokal",
+    "Cosmo: serve runtime untuk orkestrasi multi-model lewat embedding Cosmopolitan Libc",
+    "Kompresi file menggunakan Cosmopolitan Libc menjadikan satu binary lintas arsitektur (x86_64 + ARM64) tanpa kompres dan uncompress manual",
+    "Lisensi Apache-2.0 untuk kode - memberikan kebebasan bagi vendor untuk membundle di produk mereka",
+    "Didukung penuh Mozilla AI dengan dokumentasi di docs.mozilla.ai/llamafile",
+    "Mendukung banyak model populer: Llama, Mistral, Qwen, DeepSeek, Phi, dan lain-lain yang kompatibel dengan format GGUF",
+  ],
+  pros: [
+    "Onboarding paling cepat di kategori local LLM - download satu file, jalankan, jadi server OpenAI-compatible tanpa langkah setup tambahan",
+    "Bebas dependency hell - tidak perlu Python, conda, atau virtualenv, menarik untuk pengguna non-engineer",
+    "Lisensi Apache-2.0 dari Mozilla AI memberikan transparansi dan keamanan jangka panjang",
+  ],
+  cons: [
+    "Ukuran file model yang dibundle cukup besar - versi Gigabyte-plus biasa untuk model 7B+ parameter",
+    "Performa murni CPU masih kalah dari setup CUDA native pada GPU yang kuat - akselerasi GPU yang konsisten masih menuntut tuning",
+    "Ekosistem tooling sekitar (UI, observability) belum sekaya solusi seperti Ollama atau LM Studio - lebih cocok untuk pengguna teknis",
+  ],
+  verdict:
+    "Standar baru untuk distribusi LLM lokal yang portable dan siap dibagikan. Mozilla AI lewat llamafile menghilangkan hambatan terbesar LLM lokal - dependency hell - dan menggantinya dengan file yang bisa dilampirkan via email, ditaruh di USB, atau dilayani dari server manapun.",
+  body: [
+    "LLM lokal di 2026 seharusnya sudah menjadi hal yang mudah, namun kenyataannya justru kebalikannya: setup llama.cpp dari sumber, install driver CUDA yang match dengan versi PyTorch, lalu memastikan Ollama atau LM Studio mau membaca model di folder yang benar. Untuk sebagian besar pengguna di Indonesia - terutama UMKM, sekolah, dan tim riset dengan bandwidth terbatas - onboarding seperti itu sudah cukup untuk menyerah sebelum merasakan manfaatnya. Llamafile dari Mozilla AI muncul sebagai jawaban radikal untuk masalah ini: bagaimana kalau distribusi model LLM sesederhana mendistribusikan executable biasa?",
+    "Dalam pengujian editorial Wawasan AI, skenario yang paling sering muncul adalah mengirim model LLM 7B ke peneliti di kota lain lewat USB drive atau link unduhan biasa. Begitu diterima, chmod +x, jalankan, dan dalam detik sebuah server OpenAI-compatible sudah berjalan di localhost. Klien apa pun yang sudah ditulis untuk OpenAI - termasuk tools agentic, dashboard internal, maupun skrip ETL - bisa langsung diarahkan ke endpoint tersebut dengan mengganti base URL. Tidak ada Python, tidak ada CUDA toolkit, tidak ada pesan error tentang library yang hilang.",
+    "Yang sering luput adalah peran Cosmo dan Cosmopolitan Libc di balik layar. Cosmo memungkinkan satu binary yang sama dieksekusi di Linux, macOS, Windows, dan BSD - di arsitektur x86_64 maupun ARM64. Untuk pengguna Indonesia yang sering berpindah antara laptop kerja Linux, Macbook tim creative, dan server VPS dengan FreeBSD - semuanya cukup dengan satu file yang sama. Server model multi-tenant lewat embedding Cosmo juga mulai menarik untuk studio kecil yang ingin menjadikan llamafile sebagai fondasi layanan AI mereka tanpa biaya cloud inference bulanan.",
+    "Keterbatasan yang perlu dipahami: performa CPU-only yang kalah dari native CUDA pada GPU discrete masih merupakan trade-off real untuk skenario inferensi ratusan token per detik. Untuk workload percakapan singkat atau ringkasan dokumen, ini lebih dari cukup; untuk pembangunan aplikasi real-time dengan throughput tinggi, akselerasi GPU lewat Vulkan/CUDA/Metal perlu setup driver yang lebih hati-hati. Namun di kelasnya - distribusi LLM portabel tanpa dependency hell - llamafile adalah pilihan paling pragmatis di pasaran per paruh kedua 2026, dan sebuah tonggak bagaimana open-source bisa membalik narasi bahwa LLM hanya untuk raksasa teknologi.",
+  ],
+  link: "https://github.com/mozilla-ai/llamafile",
+  linkLabel: "Mozilla AI",
+  date: "2026-07-11",
+  updatedAt: "2026-07-11",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
