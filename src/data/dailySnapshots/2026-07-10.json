@@ -1,17 +1,27 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "10 Juli 2026",
-  "period": {
-    "date": "2026-07-10",
-    "label": "10 Juli 2026",
-    "path": "/repo/daily/2026/07/10"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-10T00:05:26.276Z",
+  "fetchedAt": "2026-07-10T05:37:17.210Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "JustVugg/colibri",
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "githubUrl": "https://github.com/JustVugg/colibri",
+      "trendshiftUrl": "https://trendshift.io/repositories/73945",
+      "language": "C",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-01T12:27:49Z"
+    },
+    {
+      "rank": 2,
       "fullName": "MadsLorentzen/ai-job-search",
       "owner": "MadsLorentzen",
       "repo": "ai-job-search",
@@ -28,7 +38,62 @@
       "dateCreated": "2026-03-18T14:33:04Z"
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "VoltAgent/awesome-design-md",
+      "owner": "VoltAgent",
+      "repo": "awesome-design-md",
+      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
+      "trendshiftUrl": "https://trendshift.io/repositories/25016",
+      "topics": [
+        "AI coding assistant",
+        "Design system",
+        "Curated list"
+      ],
+      "dateCreated": "2026-03-31T16:37:01Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "inkeep/open-knowledge",
+      "owner": "inkeep",
+      "repo": "open-knowledge",
+      "description": "Beautiful, AI-native markdown editor and LLM Wiki",
+      "githubUrl": "https://github.com/inkeep/open-knowledge",
+      "trendshiftUrl": "https://trendshift.io/repositories/64803",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-06-03T11:12:40Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 7,
       "fullName": "iOfficeAI/OfficeCLI",
       "owner": "iOfficeAI",
       "repo": "OfficeCLI",
@@ -44,92 +109,7 @@
       "dateCreated": "2026-03-15T07:39:12Z"
     },
     {
-      "rank": 3,
-      "fullName": "emilkowalski/skills",
-      "owner": "emilkowalski",
-      "repo": "skills",
-      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
-      "githubUrl": "https://github.com/emilkowalski/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/44614",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-16T13:52:31Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "vercel-labs/native",
-      "owner": "vercel-labs",
-      "repo": "native",
-      "description": "Build desktop + mobile apps with Zig and web UI",
-      "githubUrl": "https://github.com/vercel-labs/native",
-      "trendshiftUrl": "https://trendshift.io/repositories/28473",
-      "language": "Zig",
-      "topics": [],
-      "dateCreated": "2026-05-08T19:53:41Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "withmarbleapp/os-taxonomy",
-      "owner": "withmarbleapp",
-      "repo": "os-taxonomy",
-      "description": "",
-      "githubUrl": "https://github.com/withmarbleapp/os-taxonomy",
-      "trendshiftUrl": "https://trendshift.io/repositories/76834",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2026-07-08T09:27:48Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "addyosmani/agent-skills",
-      "owner": "addyosmani",
-      "repo": "agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "githubUrl": "https://github.com/addyosmani/agent-skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/25200",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant",
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-15T20:20:26Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "jamiepine/voicebox",
-      "owner": "jamiepine",
-      "repo": "voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "githubUrl": "https://github.com/jamiepine/voicebox",
-      "trendshiftUrl": "https://trendshift.io/repositories/21213",
-      "language": "TypeScript",
-      "topics": [
-        "AI voice",
-        "Text to speech",
-        "Audio processing",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-01-25T12:27:03Z"
-    },
-    {
       "rank": 8,
-      "fullName": "VoltAgent/awesome-design-md",
-      "owner": "VoltAgent",
-      "repo": "awesome-design-md",
-      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
-      "trendshiftUrl": "https://trendshift.io/repositories/25016",
-      "topics": [
-        "AI coding assistant",
-        "Design system",
-        "Curated list"
-      ],
-      "dateCreated": "2026-03-31T16:37:01Z"
-    },
-    {
-      "rank": 9,
       "fullName": "vxcontrol/pentagi",
       "owner": "vxcontrol",
       "repo": "pentagi",
@@ -145,17 +125,33 @@
       "dateCreated": "2025-01-06T22:22:48Z"
     },
     {
-      "rank": 10,
-      "fullName": "ruanyf/weekly",
-      "owner": "ruanyf",
-      "repo": "weekly",
-      "description": "科技爱好者周刊，每周五发布",
-      "githubUrl": "https://github.com/ruanyf/weekly",
-      "trendshiftUrl": "https://trendshift.io/repositories/6132",
+      "rank": 9,
+      "fullName": "unclecode/crawl4ai",
+      "owner": "unclecode",
+      "repo": "crawl4ai",
+      "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+      "githubUrl": "https://github.com/unclecode/crawl4ai",
+      "trendshiftUrl": "https://trendshift.io/repositories/11716",
+      "language": "Python",
       "topics": [
-        "Curated list"
+        "Headless browser",
+        "Web scraping"
       ],
-      "dateCreated": "2018-10-13T12:36:07Z"
+      "dateCreated": "2024-05-09T09:48:50Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "BigPizzaV3/CodexPlusPlus",
+      "owner": "BigPizzaV3",
+      "repo": "CodexPlusPlus",
+      "description": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服",
+      "githubUrl": "https://github.com/BigPizzaV3/CodexPlusPlus",
+      "trendshiftUrl": "https://trendshift.io/repositories/27329",
+      "language": "Rust",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-06T09:32:49Z"
     }
   ]
 }
