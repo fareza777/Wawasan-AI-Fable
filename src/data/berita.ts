@@ -1534,8 +1534,49 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "anggota-dpr-govtech-prabowo-langkah-besar-menuju-pemerintahan-modern",
+    title: "Anggota DPR Sebut GovTech Prabowo Langkah Besar Menuju Pemerintahan Modern — tapi Apa yang Sebenarnya Berubah?",
+    excerpt:
+      "Pernyataan anggota DPR baru-baru ini menyulut kembali wacana GovTech sebagai masa depan birokrasi Indonesia. Di balik jargon modernisasi, yang menarik bukan tekad politiknya, melainkan apa yang benar-benar sudah berjalan, apa yang masih sebatas rencana, dan kenapa ASN perlu memahami bedanya.",
+    category: "Analisis",
+    date: "2026-07-11",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Beberapa hari terakhir, percakapan soal GovTech — atau government technology — kembali muncul setelah salah satu anggota DPR menyebut langkah pemerintahan Presiden Prabowo soal GovTech sebagai lompatan besar menuju birokrasi modern. Kata 'GovTech' sendiri sebenarnya bukan hal baru di telinga siapa pun yang mengikuti kebijakan digitalisasi Pelayanan Publik: konsep ini sudah lebih satu dekade diterapkan di Estonia, Singapura, dan Korea Selatan, dan Indonesia sudah memasukkannya ke dalam blueprint transformasi digital nasional sejak 2020. Yang berubah sekarang adalah bahwa wacana ini akhirnya punya vehikul politik yang lebih tegas — dan di situlah harapan serta kekhawatirannya bertemu.",
+          "Penting untuk tidak menelan wacana GovTech bulat-bulat. Di balik pernyataan para pejabat, ada perbedaan besar antara niat modernisasi yang tertuang dalam pidato, dokumen kebijakan seperti Perpres yang sudah diterbitkan sepanjang 2026, dan kenyataan di kantor kelurahan atau dinas di luar Jakarta. Tulisan ini mencoba membedah apa yang sebenarnya sudah berubah, apa yang masih berupa niat, dan — yang paling relevan untuk pembaca Wawasan AI — apa implikasinya bagi ASN, vendor lokal, dan ekosistem startup Indonesia yang ingin bermain di ruang ini.",
+        ],
+      },
+      {
+        heading: "Apa yang sudah benar-benar berjalan, dan apa yang masih rencana",
+        paragraphs: [
+          "Kalau melihat dokumen resmi yang sudah diterbitkan sepanjang paruh pertama 2026, ada beberapa pokok yang relatif matang. Pertama, kerangka regulasi. Dua Perpres yang terbit awal tahun ini sudah memberi payung hukum yang lebih jelas soal bagaimana AI dan sistem digital bisa dipakai di instansi pemerintah, lengkap dengan batasan untuk data pribadi warga dan dokumen rahasia. Sebelumnya, banyak ASN ragu memakai AI karena takut salah prosedur — keraguan itu sekarang punya pegangan hukum yang lebih eksplisit.",
+          "Kedua, konsolidasi platform. Inisiatif GovTech biasanya identik dengan menyatukan layanan yang sebelumnya tersebar di banyak aplikasi — dari sistem kepegawaian, perizinan, sampai bantuan sosial — ke satu identitas warga yang konsisten. Ini pekerjaan besar yang sudah mulai terlihat di beberapa kota dan provinsi, meski di tingkat nasional masih jauh dari selesai.",
+          "Ketiga, infrastruktur komputasi. Pemerintah sudah berinvestasi di pusat data nasional dan beberapa kapasitas cloud yang dikelola BUMN. Ini bukan hal yang siap dipakai ASN sehari-hari, tapi fondasinya sudah dibangun — dan itu berbeda dengan situasi dua-tiga tahun lalu ketika wacana GovTech lebih banyak di panggung peluncuran dibanding di ruang server.",
+          "Di sisi lain, ada beberapa hal yang masih jauh dari implementasi. Integrasi penuh antara sistem pusat dan sistem daerah masih sering macet karena alasan teknis yang membosankan: format data tidak konsisten, API berbeda versi, atau prosedur yang harus disetujui banyak pihak. Kedua, literasi ASN di tier terbawah — kelurahan, puskesmas, kantor camat — masih menjadi titik lemah: sebanyak apapun platform dipasang, kalau operatornya tidak nyaman maka yang turun kualitas. Ketiga, transparansi anggaran dan tata kelola proyek GovTech sering masih menjadi pekerjaan rumah — pernyataan niat modernisasi yang besar tanpa angka yang bisa diaudit akan selamanya menjadi wacana.",
+        ],
+      },
+      {
+        heading: "Implikasi untuk ASN, vendor lokal, dan startup",
+        paragraphs: [
+          "Untuk ASN, implikasi paling nyata adalah perubahan ekspektasi kerja. Beberapa tahun ke depan, kemampuan menggunakan alat bantu digital — termasuk AI generatif, otomasi workflow, dan platform GovTech resmi — akan menjadi keterampilan yang diasumsikan, bukan nilai tambah. Yang tidak berubah adalah prinsip dasarnya: ASN memikul tanggung jawab akhir atas keputusan, dan AI hanya alat. ASN yang paling nyaman dengan teknologi baru biasanya bukan yang paling teknis, melainkan yang paling jelas memahami batas antara 'AI membantu' dan 'AI memutuskan'.",
+          "Untuk vendor lokal, GovTech adalah peluang sekaligus peringatan. Peluangnya jelas: pasar layanan konsultasi, integrasi, dan pendampingan implementasi sangat besar dan hanya bisa diisi oleh pemain lokal yang paham regulasi dan bahasa daerah. Peringatannya: banyak proyek GovTech berakhir sebagai showcase mahal yang tidak terpakai karena vendor tidak dilibatkan dari awal untuk menguji dengan pengguna nyata. Vendor yang menang biasanya yang berani mengulang-ulang uji coba bersama operator di lapangan, bukan yang paling pandai mempresentasikan deck.",
+          "Untuk startup AI, GovTech adalah salah satu ceruk paling menjanjikan di Indonesia — dan salah satu yang paling sulit. Menjanjikan, karena anggarannya besar dan jangka waktunya panjang. Sulit, karena syaratnya banyak: harus memenuhi regulasi data, harus menerima siklus tender yang lambat, dan harus mampu bertahan dalam birokrasi yang perputarannya tidak secepat dunia startup. Startup yang sukses di ceruk ini biasanya yang memilih sabar, membangun hubungan multi-tahun dengan satu atau dua instansi, dan berinvestasi pada kemampuan 'compliance' yang di startup lain sering dianggap membosankan.",
+        ],
+      },
+      {
+        heading: "Apa yang layak ditunggu — dan apa yang harus mulai dipersiapkan",
+        paragraphs: [
+          "Yang layak ditunggu dalam 12-18 bulan ke depan: hadirnya platform GovTech yang benar-benar dipakai lintas instansi dan lintas daerah, dengan identitas warga yang konsisten. Ketika ini terjadi, dampaknya akan terasa di hal-hal kecil sehari-hari: mengurus dokumen tidak lagi butuh datang bolak-balik, bantuan sosial cair lebih cepat, dan perizinan yang dulunya berminggu-minggu menjadi hitungan hari. Ini bukan janji baru — sudah menjadi kenyataan di Estonia dan Singapura — dan akan menjadi tolak ukur paling jujur apakah GovTech Prabowo berhasil atau hanya menjadi jargon politik.",
+          "Yang harus mulai dipersiapkan sekarang, untuk ASN: biasakan setidaknya satu workflow digital dengan AI generatif dalam pekerjaan harian — bisa merapikan notulen, merangkum dokumen panjang, atau membuat draft pertama telaah. Untuk vendor: bangun portofolio kecil yang bisa di-audit, lebih baik satu proyek yang berhasil dengan telemetri jelas daripada lima proyek yang tidak ada yang tahu hasilnya. Untuk startup: pilih satu instansi atau satu kabupaten, jadilah mitranya untuk jangka panjang, dan bersiaplah untuk siklus yang lebih lambat dari yang biasa.",
+          "Dalam pengujian editorial Wawasan AI, pernyataan anggota DPR tentang GovTech Prabowo ini paling akurat dibaca bukan sebagai peristiwa tunggal, melainkan sebagai penanda bahwa tahun 2026 adalah tahun di mana wacana digitalisasi birokrasi Indonesia berhenti menjadi eksperimen pinggiran dan mulai masuk ke arus utama kebijakan. Apakah hasilnya akan benar-benar terasa di kantor kelurahan dan puskesmas di luar Jakarta, itu soal yang baru akan terbukti dalam 18-36 bulan ke depan — dan selama itulah kerja sunyi ASN, vendor, dan startup akan menentukan apakah GovTech adalah kata kunci kosong, atau benar-benar perubahan yang selama ini dijanjikan.",
+        ],
+      },
+    ],
+  },
 ];
-
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
 }

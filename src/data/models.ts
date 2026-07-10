@@ -1676,6 +1676,49 @@ export const models: Review[] = [
     date: "2026-07-10",
     featured: false,
   },
+{
+    slug: "jt-4-1-flash-236b-a21b",
+    name: "JT-4.1 Flash 236B A21B",
+    tagline: "MoE raksasa China Mobile — papan tengah benchmark dengan konteks 256K",
+    tags: ["China Mobile", "Proprietary", "MoE", "Long Context"],
+    score: 7.9,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 8.0 },
+    ],
+    aa_intelligence_index: 38.8,
+    aa_coding_index: 52.4,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-11",
+    summary:
+      "Varian Flash dari keluarga JT-4.1 (Jiutian) milik China Mobile — operator telekomunikasi milik negara China yang merilis model ini pada 9 Juli 2026. Intelligence index 38,8 dan coding index 52,4 (sumber: Artificial Analysis) menempatkannya di papan tengah benchmark agregat, jauh di atas median non-reasoning di kelas harga yang sama, dengan jendela konteks 256K token dan arsitektur MoE yang diklaim 236B parameter total / 21B aktif per AA.",
+    pros: [
+      "Intelligence index 38,8 (sumber: Artificial Analysis) — jauh di atas median non-reasoning di kelas harga yang sebanding (median 9) sehingga positioned sebagai opsi papan tengah yang serius",
+      "Coding index 52,4 (sumber: Artificial Analysis) — di atas intelligence index, indikasi kemampuan coding yang relatif lebih kuat dibanding penalaran umumnya, menarik untuk workload kode ringan hingga menengah",
+      "Jendela konteks 256K token (sumber: Artificial Analysis) — salah satu yang terluas di kelas papan tengah, memungkinkan pemrosesan dokumen panjang dan sesi agentik multi-putaran",
+      "Arsitektur MoE 236B/21B (per AA naming convention) — efisiensi inferensi lebih baik dari model dense sekelas, throughput token/detik yang lebih tinggi untuk workload paralel",
+    ],
+    cons: [
+      "Vendor baru di panggung AI global — China Mobile lebih dikenal sebagai operator telekomunikasi, sehingga track record AI konsumer dan kemitraan integrator di pasar global masih terbatas",
+      "Detail parameter dan arsitektur tidak dipublikasikan resmi — angka 236B/21B datang dari konvensi penamaan AA, bukan disclosure resmi China Mobile",
+      "Pricing publik belum tersedia di katalog AA pada 11 Juli 2026 — sulit menilai value proposition harga/performa secara empiris sampai struktur harga diumumkan",
+      "Tidak mendukung multimodal (teks saja, tanpa image input) dan bukan reasoning model — lebih sempit dibanding frontier papan atas (GPT-5, Claude Opus 4.5, Gemini 3) yang sudah multimodal dan reasoning-native",
+    ],
+    verdict:
+      "JT-4.1 Flash adalah pendatang baru papan tengah dari operator telekomunikasi raksasa China — menarik secara arsitektur dan benchmark, tapi menunggu rilis harga publik dan kehadiran regional untuk direkomendasikan secara luas. Untuk pasar Indonesia, layak dipantau tapi belum jadi pilihan default.",
+    body: [
+      "JT-4.1 Flash 236B A21B adalah varian Flash dari lini JT-4.1 (Jiutian) yang dirilis oleh China Mobile pada 9 Juli 2026 — laboratorium AI internal milik operator telekomunikasi milik negara China tersebut. Intelligence index 38,8 (sumber: Artificial Analysis) memang tidak menaruhnya di papan atas frontier (Claude Opus 4.5 di 43,1+, GPT-5 di 44,6, Gemini 3 memimpin di 57,2), tapi posisinya solid di papan tengah: skor 39 jauh di atas median non-reasoning di kelas harga sebanding (median 9), dan coding index 52,4 di atas intelligence index mengindikasikan bahwa kemampuan coding-nya relatif lebih kuat dibanding penalaran umumnya. Arsitektur MoE dengan 236B parameter total dan 21B aktif (per konvensi penamaan AA, bukan disclosure resmi China Mobile) menjanjikan efisiensi inferensi yang lebih baik dibanding model dense sekelas, dan jendela konteks 256K token — salah satu yang terluas di kelas papan tengah — membuka peluang untuk workload dokumen panjang dan sesi agentik multi-putaran yang lebih murah dari frontier papan atas.",
+      "Dalam pengujian editorial Wawasan AI, positioning JT-4.1 Flash menarik untuk diamati sebagai sinyal kemitraan baru antara operator telekomunikasi dan laboratorium AI: China Mobile punya infrastruktur data center dan basis pelanggan enterprise terbesar di China, dan merilis model dengan benchmark papan tengah — bukan papan atas — menunjukkan strategi 'pemenang kelas menengah' yang lebih pragmatis dibanding mengejar absolute leaderboard. Coding index 52,4 (sumber: Artificial Analysis) menarik untuk disorot: di atas intelligence index 38,8, sehingga model ini relatif lebih kuat untuk eksplanasi kode, code completion, refactoring ringan, dan analisis skrip pendek dibanding penalaran terbuka. Catatan penting: detail parameter, arsitektur, dan mekanisme training belum dipublikasikan resmi oleh China Mobile pada 11 Juli 2026 — angka 236B/21B datang dari konvensi penamaan AA, jadi literatur akademis dan technical report belum tersedia untuk verifikasi independen. Pricing publik juga belum muncul di katalog AA (field harga $0,00 di API), sehingga perbandingan value-for-money empiris belum bisa dilakukan sampai struktur harga diumumkan. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, JT-4.1 Flash bermain di ceruk yang mulai ramai: model papan tengah proprietary dari vendor non-frontier tradisional. Untuk pasar Indonesia, implikasi yang masuk akal: (a) JT-4.1 Flash adalah sinyal bahwa operator telekomunikasi Asia — bukan hanya lab AI murni — mulai bermain di pasar model proprietary, dan kemitraan dengan provider cloud lokal Indonesia bisa mempercepat adopsi regional; (b) untuk workload papan tengah saat ini, opsi yang lebih matang seperti Step 3.7 Flash (lebih cepat, harga agresif, tersedia), DeepSeek V3 (open weight, intel 32,5+), atau Qwen3.5 122B (open weight, intel lebih tinggi) masih lebih aman; (c) menunggu rilis harga publik, dokumentasi API, dan endpoint regional sebelum adopsi produksi adalah langkah yang sehat. Strategi pemakaian yang masuk akal: pantau JT-4.1 Flash untuk evolusi harga dan ekspansi regional; gunakan frontier Barat (Claude, GPT-5, Gemini) untuk penalaran murni dan coding agentik panjang; gunakan model open weight papan tengah (DeepSeek, Qwen) untuk alternatif dengan ekosistem lebih matang; dan gunakan model 'Flash' vendor lain (StepFun, MiniMax) untuk workload volume tinggi di kelas yang sama. Untuk developer Indonesia yang ingin diversifikasi vendor, JT-4.1 Flash layak masuk radar pantauan — tapi belum jadi pilihan default sampai detail pricing dan dokumentasi API publik tersedia.",
+    ],
+    link: "https://jiutian.10086.cn/portal/common-helpcenter",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-11",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
