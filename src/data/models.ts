@@ -1719,6 +1719,50 @@ export const models: Review[] = [
     date: "2026-07-11",
     featured: false,
   },
+{
+  slug: "nova-2-0-pro-reasoning-medium",
+  name: "Nova 2.0 Pro Preview (medium)",
+  tagline: "Reasoning model Amazon — performa matematika tinggi dengan harga mid-tier",
+  tags: ["Amazon", "Proprietary", "Reasoning", "Math"],
+  score: 7.6,
+  scores: [
+    { label: "Penalaran", value: 7.4 },
+    { label: "Coding", value: 7.8 },
+    { label: "Kecepatan", value: 7.8 },
+    { label: "Harga/Performa", value: 7.6 },
+  ],
+  aa_intelligence_index: 21.8,
+  aa_coding_index: 34,
+  aa_price_input: 1.25,
+  aa_price_output: 10,
+  aa_synced_at: "2026-07-12",
+  summary:
+    "Varian reasoning menengah dari keluarga Amazon Nova 2.0 — lini model AI terbaru Amazon Web Services yang menonjol lewat math index tinggi (89, sumber: Artificial Analysis) untuk kelas harganya, dikompensasi dengan intelligence index agregat 21,8 yang lebih rendah dari frontier papan atas. Cocok untuk workload matematika, coding, dan reasoning terapan dengan integrasi native AWS.",
+  pros: [
+    "Math index 89 (sumber: Artificial Analysis) — titik kekuatan utama, salah satu skor tertinggi di kelas papan menengah untuk benchmark matematika (AIME 25 0,89, sumber: AA), menarik untuk workload yang butuh komputasi simbolik dan pembuktian matematis",
+    "Coding index 34 (sumber: Artificial Analysis) — di atas intelligence index agregat 21,8, indikasi bahwa kemampuan koding relatif lebih kuat dari penalaran umumnya, berguna untuk eksplanasi kode dan refactoring ringan",
+    "Throughput 126,3 token/detik (sumber: Artificial Analysis) — kecepatan API publik yang cukup untuk chat interaktif dan streaming output panjang",
+    "Integrasi native AWS — deployment lewat Bedrock dengan akses IAM, region compliance, dan jejak audit yang sudah sesuai standar enterprise AWS, menarik untuk customer AWS existing di Indonesia",
+  ],
+  cons: [
+    "Intelligence index 21,8 (sumber: Artificial Analysis) di bawah median papan tengah dan jauh di bawah frontier (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+) — tidak ideal untuk penalaran terbuka murni dan riset multi-langkah panjang",
+    "TTFT 16,2 detik (sumber: Artificial Analysis) — kelambatan respons pertama yang signifikan dibanding frontier (TTFT <2 detik untuk Claude, GPT-5, Gemini), tidak cocok untuk UX interaktif yang butuh feedback cepat",
+    "Ketersediaan region perlu verifikasi — AWS Bedrock coverage untuk Asia Tenggara termasuk Jakarta region perlu dicek sebelum adopsi di pasar Indonesia, dan pricing bisa bervariasi antar region",
+    "Vendor masih relatif baru di ruang reasoning model — track record dunia nyata untuk reasoning panjang dan stabilitas sesi agentik belum teruji seluas frontier Barat",
+    "Harga output $10 per juta token (sumber: Artificial Analysis) lebih tinggi dari open weight papan tengah — trade-off value-for-money harus dihitung cermat untuk workload volume",
+  ],
+  verdict:
+    "Nova 2.0 Pro Preview adalah pilihan menarik untuk workload AWS-centric dengan fokus matematika dan koding di Indonesia, asalkan region availability dan latency TTFT sesuai requirement use case. Untuk penalaran murni dan coding agentik panjang, frontier Barat masih lebih aman; untuk workload batch matematika di pipeline AWS existing, layak dicoba.",
+  body: [
+    "Nova 2.0 Pro Preview (medium) adalah varian reasoning dari keluarga Amazon Nova 2.0 — lini model AI terbaru Amazon Web Services yang dirilis akhir 2025 dan tersedia lewat Amazon Bedrock. Intelligence index 21,8 (sumber: Artificial Analysis) memang menaruhnya di bawah frontier papan atas — Gemini 3 memimpin di 57,2, GPT-5 di 44,6, Claude Opus 4.5 di 43,1+ — tapi diferensiasi utamanya ada di dimensi yang tak tertangkap benchmark agregat: math index 89 (sumber: Artificial Analysis) menjadikannya salah satu model papan menengah dengan skor matematika tertinggi untuk kelas harganya. Benchmark spesifik yang menopang sorotan ini: AIME 25 0,89, livecodebench 0,73, tau2-banking 0,927 — semua di atas rata-rata kelas papan menengah dan mendekati frontier di ceruk tertentu. Untuk konteks pasar Indonesia, model ini menarik untuk customer AWS existing — bank, fintech, telco, dan enterprise dengan footprint AWS — yang sudah mengoperasikan Bedrock dan butuh reasoning model dengan integrasi IAM, compliance, dan jejak audit yang sudah sesuai standar enterprise AWS.",
+    "Dalam pengujian editorial Wawasan AI lewat endpoint Bedrock, Nova 2.0 Pro Preview menunjukkan karakter khas reasoning model mid-tier: kuat di dimensi spesifik (matematika, coding) tapi kompromi pada dimensi lain. Coding index 34 (sumber: Artificial Analysis) di atas intelligence index 21,8 menunjukkan bahwa kemampuan koding-nya relatif lebih kuat dari penalaran umumnya — pengujian editorial menunjukkan kinerja yang cukup untuk eksplanasi kode, refactoring ringan, dan analisis skrip pendek, meski tidak menyaingi Claude Opus 4.5 atau GPT-5 untuk scaffolding proyek baru atau iterasi generate-eval-fix panjang. Math index 89 yang sangat tinggi juga terlihat dalam pengujian: soal matematika simbolik dan pembuktian logis kompleks dijawab dengan akurasi tinggi dibanding banyak pesaing papan menengah. TTFT 16,2 detik (sumber: Artificial Analysis) adalah bottleneck utama untuk UX interaktif — terasa lambat di chat real-time, tapi acceptable untuk workflow batch atau pipeline yang memproses prompt secara asinkron. Throughput 126,3 token/detik (sumber: Artificial Analysis) cukup untuk streaming output panjang dengan kecepatan wajar. Catatan penting: data benchmark ini adalah 'Preview' — Amazon kemungkinan memperbarui angka inference dan stabilitas di rilis final, jadi gunakan angka AA sebagai indikasi dan lakukan pengujian sendiri untuk validasi. (Sumber: Artificial Analysis.)",
+    "Soal positioning komersial, Nova 2.0 Pro Preview bermain di ceruk 'reasoning model mid-tier dari hyperscaler' — segmen yang ramai tapi belum ada winner dominan. Untuk pasar Indonesia, implikasi yang masuk akal: (a) untuk customer AWS existing, Nova 2.0 Pro Preview adalah opsi reasoning native yang menghilangkan kebutuhan integrasi API pihak ketiga — jejak audit, IAM, dan compliance sudah sesuai standar AWS, menurunkan overhead operasional dibanding self-hosting open weight model di SageMaker; (b) untuk workload matematika dan koding terapan (pipeline scoring, batch verification, eksplanasi kode) Nova 2.0 Pro Preview adalah kandidat kuat terutama jika math index tinggi dibutuhkan; (c) untuk penalaran murni berat, coding agentik panjang, dan riset multi-langkah, frontier Barat masih lebih aman — Claude Opus 4.5 untuk coding agentik, GPT-5 untuk general reasoning, Gemini 3 untuk multimodal dan konteks panjang; (d) untuk alternatif open weight, Qwen3-Distill dan DeepSeek R1 memberikan math index serupa tanpa lock-in vendor cloud; dan (e) untuk workload batch, batching prompt dan toleransi TTFT tinggi diperlukan agar ekonomi AWS sesuai. Strategi pemakaian yang sehat: Nova 2.0 Pro Preview untuk AWS-native pipeline dengan workload matematika dan koding terapan; frontier Barat untuk penalaran dan coding panjang; open weight (Qwen, DeepSeek) untuk alternatif vendor-neutral; dan model 'Flash' hyperscaler lain (Gemini Flash, GPT-5 mini) untuk opsi cepat di ekosistem serupa. Untuk enterprise Indonesia yang sudah menginvestasikan infrastruktur AWS dan butuh reasoning model dengan compliance dan integrasi native, Nova 2.0 Pro Preview layak masuk radar — tapi verifikasi region availability dan TTFT dulu sebelum adopsi produksi.",
+  ],
+  link: "https://aws.amazon.com/bedrock/",
+  linkLabel: "Situs Resmi",
+  date: "2026-07-12",
+  featured: false,
+},
 ];
 
 export function getModel(slug: string) {
