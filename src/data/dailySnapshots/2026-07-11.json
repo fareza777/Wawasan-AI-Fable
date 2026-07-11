@@ -1,0 +1,164 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "11 Juli 2026",
+  "period": {
+    "date": "2026-07-11",
+    "label": "11 Juli 2026",
+    "path": "/repo/daily/2026/07/11"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-11T00:05:09.334Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "JustVugg/colibri",
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "githubUrl": "https://github.com/JustVugg/colibri",
+      "trendshiftUrl": "https://trendshift.io/repositories/73945",
+      "language": "C",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-01T12:27:49Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "malisper/pgrust",
+      "owner": "malisper",
+      "repo": "pgrust",
+      "description": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+      "githubUrl": "https://github.com/malisper/pgrust",
+      "trendshiftUrl": "https://trendshift.io/repositories/64601",
+      "language": "Rust",
+      "topics": [
+        "WebAssembly"
+      ],
+      "dateCreated": "2026-04-20T03:35:59Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "wonderwhy-er/DesktopCommanderMCP",
+      "owner": "wonderwhy-er",
+      "repo": "DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "githubUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "trendshiftUrl": "https://trendshift.io/repositories/13251",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2024-12-04T08:26:08Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "VoltAgent/awesome-design-md",
+      "owner": "VoltAgent",
+      "repo": "awesome-design-md",
+      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
+      "trendshiftUrl": "https://trendshift.io/repositories/25016",
+      "topics": [
+        "AI coding assistant",
+        "Design system",
+        "Curated list"
+      ],
+      "dateCreated": "2026-03-31T16:37:01Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation",
+        "Resume building"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "oven-sh/bun",
+      "owner": "oven-sh",
+      "repo": "bun",
+      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+      "githubUrl": "https://github.com/oven-sh/bun",
+      "trendshiftUrl": "https://trendshift.io/repositories/371",
+      "language": "Rust",
+      "topics": [
+        "Bundler"
+      ],
+      "dateCreated": "2021-04-14T00:48:17Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "iOfficeAI/OfficeCLI",
+      "owner": "iOfficeAI",
+      "repo": "OfficeCLI",
+      "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+      "githubUrl": "https://github.com/iOfficeAI/OfficeCLI",
+      "trendshiftUrl": "https://trendshift.io/repositories/24391",
+      "language": "C#",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "Document processing"
+      ],
+      "dateCreated": "2026-03-15T07:39:12Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Shubhamsaboo/awesome-llm-apps",
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "githubUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "trendshiftUrl": "https://trendshift.io/repositories/9876",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Local LLM",
+        "RAG",
+        "Curated list"
+      ],
+      "dateCreated": "2024-04-29T05:30:25Z"
+    }
+  ]
+}

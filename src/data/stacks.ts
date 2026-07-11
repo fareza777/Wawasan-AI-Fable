@@ -1425,6 +1425,47 @@ export const stacks: Review[] = [
     date: "2026-07-10",
     featured: false,
   },
+{
+    slug: "replit-agent",
+    name: "Replit Agent",
+    tagline: "Agen coding yang bangun dan jalankan aplikasi langsung dari prompt, di cloud",
+    tags: ["Replit", "Freemium", "Agent Platform", "Full-Stack Dev"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Kode", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Replit Agent adalah agen otonom yang tidak hanya menulis kode, tapi juga membangun environment, meng-install dependensi, menjalankan build, membuka browser untuk verifikasi, dan memperbaiki error sendiri — semua di dalam workspace Replit yang sudah tertanam di cloud. Per Juli 2026, Agent4 adalah generasi terbaru dengan multi-file planning, integrasi database Postgres bawaan, dan deploy one-click ke domain publik; model di belakang layar memakai Claude Sonnet dan GPT-4o bergantian tergantung kompleksitas tugas, dengan paket Free untuk eksplorasi, Core USD 20/bulan, dan Pro USD 40/bulan untuk pemakaian serius.",
+    pros: [
+      "End-to-end di cloud: tidak perlu setup lokal, terminal, atau install dependensi - browser cukup, agen yang urus sisanya",
+      "Bisa membaca screenshot, menjalankan aplikasi di tab browser, dan memperbaiki error runtime dengan sendirinya (visual feedback loop)",
+      "Integrasi database Postgres, secret management, dan deployment domain publik sudah built-in - tidak perlu konfigurasi infrastruktur terpisah",
+      "Cocok untuk pengguna non-teknis sampai developer intermediate: prompt bahasa natural cukup untuk menghasilkan aplikasi fungsional dalam 5-15 menit",
+      "Checkpoint sistem memungkinkan branching eksperimen dan rollback ke versi sebelumnya tanpa kehilangan progres",
+    ],
+    cons: [
+      "Harga Pro USD 40/bulan (Rp 640.000) cukup tinggi untuk freelancer atau pelajar Indonesia, terutama dibanding BYOK tools seperti Aider atau Cline yang pakai API budget",
+      "Kualitas kode cenderung 'aplikasi cepat jadi' - untuk software yang perlu arsitektur jangka panjang, review dan refactor manual tetap wajib",
+      "Lock-in pada platform Replit: sulit migrasi codebase ke luar karena terintegrasi dengan environment mereka (walaupun export manual tetap dimungkinkan)",
+      "Keterbatasan paket Free hanya beberapa generasi per hari; eksplorasi serius butuh paket berbayar",
+    ],
+    verdict:
+      "Standar baru untuk 'aplikasi jadi dalam 15 menit' dan paling demokratis untuk pengguna non-teknis yang ingin bangun produk tanpa nyentuh terminal. Pilih Replit Agent kalau prioritasnya adalah time-to-prototype dan zero setup; pilih Claude Code atau Cursor untuk software engineering serius dengan kontrol codebase penuh.",
+    body: [
+      "Replit sudah lebih dari satu dekade dikenal sebagai IDE berbasis browser yang ramah untuk pemula. Lewat Agent yang rilis September 2024 dan sekarang sudah di generasi keempat (Agent4 per awal 2026), mereka mengambil posisi yang lebih berani: bukan lagi tempat menulis kode, tapi tempat mendeskripsikan aplikasi dalam bahasa natural dan menonton agen membangun, menjalankan, serta memverifikasi hasilnya. Mekanisme intinya berbeda dari AI editor pada umumnya - setelah menerima prompt seperti 'buat dashboard admin untuk toko online dengan tabel produk dan chart penjualan bulanan', agen menyusun rencana multi-langkah, membuat file HTML/CSS/JS, meng-install dependensi via Nix package manager, menjalankan server dev, lalu membuka tab browser untuk memastikan tidak ada error di console. Kalau ada masalah, ia memperbaiki sendiri dengan iterasi sampai aplikasi tampil benar.",
+      "Stack dan model di belakang layar cukup menarik. Untuk generasi terbaru, Replit menggabungkan Claude Sonnet 4 (Anthropic) sebagai default planning engine dengan GPT-4o (OpenAI) untuk tugas image understanding dan fallback pada error - mereka bukan model sendiri melainkan orkestrasi multi-model yang diarahkan oleh agent loop proprietary. Pricing per Juli 2026 mengikuti tiga tier utama: paket Free memberikan akses terbatas ke Agent dengan jumlah generasi harian yang dibatasi dan watermark pada app yang di-deploy; Core seharga USD 20 per bulan (Rp 320.000) membuka generasi lebih banyak plus deployment domain publik; Pro USD 40 per bulan (Rp 640.000) menambah kapasitas tertinggi, akses ke model lebih kuat, dan priority queue saat server sibuk. Untuk penggunaan komersial tim, ada paket Teams dan Enterprise yang menambahkan SSO, audit log, dan seat management.",
+      "Untuk konteks Indonesia, implikasi Replit Agent cukup spesifik dan layak ditimbang. Pertama, proposisi nilai 'tanpa setup lokal' sangat relevan untuk pengguna di kota-kota tier 2 dan 3 yang laptopnya kurang mumpuni atau koneksi internet sering putus saat download tool development - karena semua jalan di cloud, yang dibutuhkan cuma browser modern dan koneksi stabil. Kedua, hambatan utamanya adalah harga: USD 40 per bulan (sekitar Rp 640.000) setara setengah upah minimum regional beberapa kota, dan untuk freelancer atau startup yang menghitung setiap dolar, BYOK tools seperti Cline atau Aider + API Claude/GPT budget lebih ekonomis. Ketiga, untuk edukasi dan bootcamp coding, Replit Agent punya potensi menarik: siswa yang belum familiar dengan terminal bisa langsung fokus ke logika aplikasi dan product thinking tanpa harus melewati setup ritual Git, Node, Python yang sering jadi dropout trigger di kursus pemula. Keempat, untuk komunitas developer lokal, sudah ada beberapa grup Telegram dan Discord yang membahas prompt engineering Replit Agent untuk kasus use case spesifik Indonesia - dari dashboard admin toko kelontong sampai sistem antrian klinik - searchable dengan kata kunci 'Replit Indonesia' atau 'Replit Agent tutorial Bahasa Indonesia'.",
+      "Pattern penggunaan yang paling sering muncul di 2026 ada empat. Pertama, prototyping cepat untuk startup founder dan product manager: dari ide di Notion jadi aplikasi yang bisa di-link ke investor dalam satu sore. Kedua, internal tools untuk UMKM dan tim operasional non-teknis: agen bangun dashboard sederhana, sistem inventory, atau form registrasi event tanpa perlu hire developer. Ketiga, eksplorasi untuk individu yang belajar bikin web app tapi belum nyaman dengan full-stack tooling - hasilnya sudah bisa online tanpa harus paham Nginx, SSL, atau deployment. Keempat, eksperimen untuk developer sendiri yang ingin validasi UI/UX flow cepat sebelum mengerjakannya di codebase utama. Untuk ketiga pola pertama, limitasi utama 'kode yang perlu di-refactor kemudian' biasanya bukan masalah karena tujuannya memang prototype atau one-off tool; untuk pola keempat, Replit Agent bisa jadi alat brainstorming visual yang efektif. Catatan akhir: untuk software yang akan dipelihara bertahun-tahun, eksport codebase ke GitHub dan lanjutkan dengan Claude Code atau Cursor tetap lebih sehat; Replit Agent paling kuat sebagai 'pabrik MVP', bukan sebagai rumah jangka panjang untuk software produk.",
+    ],
+    link: "https://replit.com/agent",
+    linkLabel: "Coba Gratis",
+    date: "2026-07-11",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
