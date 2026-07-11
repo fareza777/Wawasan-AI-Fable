@@ -954,18 +954,48 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
               ],
             },
             "withmarbleapp/os-taxonomy": {
-              description:
-                "Taksonomi kurikulum open-source dari Marble — 1.590 micro-topik pendidikan anak usia sekolah dasar yang terhubung lewat 3.221 prerequisite edge dan dipetakan ke standar kurikulum nasional (NGSS, Common Core, UK NC).",
-              highlights: [
-                "Dataset JSON terstruktur yang mendekomposisi 'apa yang anak pelajari' menjadi micro-topik (mis. 'Building sentences', 'Apparent brightness of stars'), masing-masing dengan deskripsi, evidence mastery, tipe, dan rentang usia.",
-                "Graph prerequisite sebagai directed acyclic graph (DAG) dengan 3.221 edge hard/soft — setiap ketergantungan antar topik diberi alasan satu baris, sehingga reasoning kurikulum bisa diaudit.",
-                "Align langsung ke NGSS, Common Core, dan UK National Curriculum lewat standards key — mudah dipakai untuk adaptasi kurikulum regional atau pembangunan platform edtech yang butuh ontologi belajar yang teruji.",
-                "Dilengkapi 183 domain cluster (ringkasan satu paragraf per subject/domain/age band) dan visualisasi 3D interaktif di withmarble.com/curriculum — fondasi data yang matang untuk AI tutor, lesson planner, dan product edtech.",
-              ],
-            },
-          };
+                          description:
+                            "Taksonomi kurikulum open-source dari Marble — 1.590 micro-topik pendidikan anak usia sekolah dasar yang terhubung lewat 3.221 prerequisite edge dan dipetakan ke standar kurikulum nasional (NGSS, Common Core, UK NC).",
+                          highlights: [
+                            "Dataset JSON terstruktur yang mendekomposisi 'apa yang anak pelajari' menjadi micro-topik (mis. 'Building sentences', 'Apparent brightness of stars'), masing-masing dengan deskripsi, evidence mastery, tipe, dan rentang usia.",
+                            "Graph prerequisite sebagai directed acyclic graph (DAG) dengan 3.221 edge hard/soft — setiap ketergantungan antar topik diberi alasan satu baris, sehingga reasoning kurikulum bisa diaudit.",
+                            "Align langsung ke NGSS, Common Core, dan UK National Curriculum lewat standards key — mudah dipakai untuk adaptasi kurikulum regional atau pembangunan platform edtech yang butuh ontologi belajar yang teruji.",
+                            "Dilengkapi 183 domain cluster (ringkasan satu paragraf per subject/domain/age band) dan visualisasi 3D interaktif di withmarble.com/curriculum — fondasi data yang matang untuk AI tutor, lesson planner, dan product edtech.",
+                          ],
+                        },
+                        "Dicklesworthstone/destructive_command_guard": {
+                          description:
+                            "Safety hook untuk AI coding agent — blokir perintah destruktif (rm -rf, git reset --hard, DROP TABLE) sebelum sempat dieksekusi, dukungan Claude Code, Codex, Gemini CLI, Copilot, Cursor, Hermes Agent, dan Grok.",
+                          highlights: [
+                            "Hook pre-execution yang memblokir perintah berbahaya dari AI coding agent sebelum sempat jalan — `rm -rf ./src`, `git reset --hard`, `DROP TABLE users` ditahan dengan penjelasan jelas plus alternatif yang lebih aman.",
+                            "Dukungan agent terlengkap di kelasnya: Claude Code, Codex CLI 0.125.0+, Gemini CLI, GitHub Copilot CLI, Cursor IDE, Hermes Agent, Grok (xAI), Antigravity CLI, OpenCode, Pi, Aider — dipasang sekali, cover semua tool yang developer pakai.",
+                            "50+ security pack out-of-the-box (database, Kubernetes, Docker, AWS/GCP/Azure, Terraform) plus heredoc/inline script scanning — bukan regex polos, melainkan SIMD-accelerated filtering sub-millisecond yang tidak memperlambat workflow agentik.",
+                            "Install satu baris (`curl install.sh | bash -s -- --easy-mode`), dukungan Windows native lewat PowerShell, plus mode scan untuk CI/pre-commit — `dcg explain \"cmd\"` kasih tahu kenapa sesuatu diblokir, fail-open design yang tidak pernah halangi kerja karena timeout.",
+                          ],
+                        },
+                        "malisper/pgrust": {
+                          description:
+                            "Postgres ditulis ulang dari nol di Rust — kompatibel dengan Postgres 18.3 dan lulus 46.000+ regression test, dengan versi berikutnya yang diklaim 50x lebih cepat di analytical workload.",
+                          highlights: [
+                            "Rewrite Postgres di Rust yang tetap disk-compatible dengan Postgres 18.3 dan lulus 46.000+ regression query — bukan fork, melainkan re-implementation yang dipakai test suite Postgres resmi sebagai oracle.",
+                            "Versi terbaru yang sedang dikembangkan mengklaim thread-per-connection (bukan process), 50% lebih cepat di transaction workload, dan ~300x lebih cepat di analytical workload (vs Postgres, 2x lebih lambat dari ClickHouse di clickbench).",
+                            "Filosofi 'make Postgres easier to change from the inside': behavior Postgres-shaped, real Postgres test sebagai oracle, Rust + AI-assisted programming untuk eksplorasi perubahan server yang lebih dalam.",
+                            "Bukan produksi-ready: extension PL/Python/Perl/Tcl belum kompatibel, performance belum dioptimasi. Cocok untuk engineer yang tertarik Postgres internals atau observasi masa depan DBMS — roadmap termasuk multi-threaded internals, built-in connection pooling, fast forking workflow, dan no-vacuum storage.",
+                          ],
+                        },
+                        "par274/sharpemu": {
+                          description:
+                            "Emulator PlayStation 5 eksperimental dari nol (C#/.NET, GPL-2.0) — fokus ke akurasi dan infrastruktur, bisa load eboot.bin asli dan eksekusi CPU instruction native untuk penelitian dan edukasi.",
+                          highlights: [
+                            "Emulator PS5 yang ditulis dari nol di C#/.NET — berbeda dari emulator yang biasanya C/C++, proyek ini fokus ke Windows/Linux/macOS sebagai target platform dengan rilis penelitian murni (no commercial goals).",
+                            "Sudah bisa muat `eboot.bin` game asli, eksekusi native CPU instruction, baca metadata game, load system module (`prx` / `sys_module`), handle sebagian fungsi kernel, Fiber dan AMPR exports, serta PlayGo scenarios.",
+                            "Reach graphic awal: beberapa game sudah sampai tahap `sceVideoOut` dan AGC (AMD GPU command) — masih sangat awal tapi membuktikan jalur rendering dimulai, dengan shader/resource submit dan video output yang jalan di sebagian game.",
+                            "100% proyek riset dan edukasi — fokus ke arsitektur sistem dan reverse engineering PS5, bukan game-specific compatibility atau PS4. Berguna untuk developer dan researcher yang tertarik GPU low-level, custom OS internals, dan AGC.",
+                          ],
+                        },
+            };
 
-          // Helper: lookup dengan fallback ke template-generated highlights
-          export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
-            return WEEKLY_TOP[fullName];
-          }
+            // Helper: lookup dengan fallback ke template-generated highlights
+            export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
+              return WEEKLY_TOP[fullName];
+            }
