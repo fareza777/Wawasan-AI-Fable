@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "11 Juli 2026",
-  "period": {
-    "date": "2026-07-11",
-    "label": "11 Juli 2026",
-    "path": "/repo/daily/2026/07/11"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-11T00:05:09.334Z",
+  "fetchedAt": "2026-07-11T04:42:34.877Z",
   "repos": [
     {
       "rank": 1,
@@ -26,95 +22,20 @@
     },
     {
       "rank": 2,
-      "fullName": "emilkowalski/skills",
-      "owner": "emilkowalski",
-      "repo": "skills",
-      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
-      "githubUrl": "https://github.com/emilkowalski/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "fullName": "par274/sharpemu",
+      "owner": "par274",
+      "repo": "sharpemu",
+      "description": "An experimental PlayStation 5 emulator project.",
+      "githubUrl": "https://github.com/par274/sharpemu",
+      "trendshiftUrl": "https://trendshift.io/repositories/79103",
+      "language": "C#",
       "topics": [
-        "AI skills"
+        "Emulator"
       ],
-      "dateCreated": "2026-03-16T13:52:31Z"
+      "dateCreated": "2026-03-11T12:46:36Z"
     },
     {
       "rank": 3,
-      "fullName": "malisper/pgrust",
-      "owner": "malisper",
-      "repo": "pgrust",
-      "description": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
-      "githubUrl": "https://github.com/malisper/pgrust",
-      "trendshiftUrl": "https://trendshift.io/repositories/64601",
-      "language": "Rust",
-      "topics": [
-        "WebAssembly"
-      ],
-      "dateCreated": "2026-04-20T03:35:59Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "wonderwhy-er/DesktopCommanderMCP",
-      "owner": "wonderwhy-er",
-      "repo": "DesktopCommanderMCP",
-      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-      "githubUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "trendshiftUrl": "https://trendshift.io/repositories/13251",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "MCP"
-      ],
-      "dateCreated": "2024-12-04T08:26:08Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "stablyai/orca",
-      "owner": "stablyai",
-      "repo": "orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-      "githubUrl": "https://github.com/stablyai/orca",
-      "trendshiftUrl": "https://trendshift.io/repositories/26256",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-03-17T03:28:57Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "VoltAgent/awesome-design-md",
-      "owner": "VoltAgent",
-      "repo": "awesome-design-md",
-      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
-      "trendshiftUrl": "https://trendshift.io/repositories/25016",
-      "topics": [
-        "AI coding assistant",
-        "Design system",
-        "Curated list"
-      ],
-      "dateCreated": "2026-03-31T16:37:01Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "MadsLorentzen/ai-job-search",
-      "owner": "MadsLorentzen",
-      "repo": "ai-job-search",
-      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
-      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
-      "trendshiftUrl": "https://trendshift.io/repositories/43622",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI workflow",
-        "Workflow automation",
-        "Resume building"
-      ],
-      "dateCreated": "2026-03-18T14:33:04Z"
-    },
-    {
-      "rank": 8,
       "fullName": "oven-sh/bun",
       "owner": "oven-sh",
       "repo": "bun",
@@ -128,23 +49,22 @@
       "dateCreated": "2021-04-14T00:48:17Z"
     },
     {
-      "rank": 9,
-      "fullName": "iOfficeAI/OfficeCLI",
-      "owner": "iOfficeAI",
-      "repo": "OfficeCLI",
-      "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
-      "githubUrl": "https://github.com/iOfficeAI/OfficeCLI",
-      "trendshiftUrl": "https://trendshift.io/repositories/24391",
-      "language": "C#",
+      "rank": 4,
+      "fullName": "MengTo/Skills",
+      "owner": "MengTo",
+      "repo": "Skills",
+      "description": "Clawdbot AgentSkills for web design and prompting",
+      "githubUrl": "https://github.com/MengTo/Skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/75772",
+      "language": "JavaScript",
       "topics": [
         "AI agent",
-        "MCP",
-        "Document processing"
+        "AI skills"
       ],
-      "dateCreated": "2026-03-15T07:39:12Z"
+      "dateCreated": "2026-02-03T10:10:55Z"
     },
     {
-      "rank": 10,
+      "rank": 5,
       "fullName": "Shubhamsaboo/awesome-llm-apps",
       "owner": "Shubhamsaboo",
       "repo": "awesome-llm-apps",
@@ -159,6 +79,75 @@
         "Curated list"
       ],
       "dateCreated": "2024-04-29T05:30:25Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "wonderwhy-er/DesktopCommanderMCP",
+      "owner": "wonderwhy-er",
+      "repo": "DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "githubUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "trendshiftUrl": "https://trendshift.io/repositories/13251",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2024-12-04T08:26:08Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "zhishile/codex-auth-helper",
+      "owner": "zhishile",
+      "repo": "codex-auth-helper",
+      "description": "Codex登陆助手：安全地在本地导出您的已登录 ChatGPT 会话配置，生成符合 Codex 规范的 auth.json 本地备份文件。",
+      "githubUrl": "https://github.com/zhishile/codex-auth-helper",
+      "trendshiftUrl": "https://trendshift.io/repositories/47604",
+      "language": "CSS",
+      "topics": [
+        "Authentication"
+      ],
+      "dateCreated": "2026-06-02T02:23:56Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "tailscale/tailscale",
+      "owner": "tailscale",
+      "repo": "tailscale",
+      "description": "The easiest, most secure way to use WireGuard and 2FA.",
+      "githubUrl": "https://github.com/tailscale/tailscale",
+      "trendshiftUrl": "https://trendshift.io/repositories/1883",
+      "language": "Go",
+      "topics": [],
+      "dateCreated": "2020-01-31T22:00:03Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "SmileLikeYe/agent-chief",
+      "owner": "SmileLikeYe",
+      "repo": "agent-chief",
+      "description": "Attention is your scarcest resource. Chief is the local-first layer that guards it — turning every agent, alert, and feed into one honest call: interrupt, or not.",
+      "githubUrl": "https://github.com/SmileLikeYe/agent-chief",
+      "trendshiftUrl": "https://trendshift.io/repositories/76631",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-07-04T15:28:56Z"
     }
   ]
 }
