@@ -1576,6 +1576,88 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "pemkot-tangsel-gembleng-kompetensi-ai-untuk-asn-demi-layanan-publik",
+    title: "Pemkot Tangsel Gembleng Kompetensi AI untuk ASN: Janji Layanan Publik yang Lebih Cepat atau Sekadar Pola Lama dengan Alat Baru?",
+    excerpt:
+      "Pemkot Tangerang Selatan menggembleng aparatur dengan pelatihan AI secara masif. Di balik pelatihan yang ramai, yang menentukan hasilnya adalah apakah ASN benar-benar dipakai untuk kerja harian — atau hanya berhenti di sertifikat.",
+    category: "Opini",
+    date: "2026-07-12",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Rencana Pemerintah Kota Tangerang Selatan untuk menggembleng aparatur sipil negara dengan kompetensi kecerdasan buatan adalah kabar baik di atas kertas. Di tengah desakan supaya layanan publik tidak lagi identik dengan antrean panjang dan bolak-balik ke kantor kelurahan, membekali ASN dengan kemampuan memakai AI adalah salah satu jawaban paling masuk akal — dan sudah mulai dilakukan di berbagai daerah lain dengan pendekatan yang berbeda-beda pula.",
+          "Tapi niat baik di tingkat kebijakan perlu dibaca dengan hati-hati. Pelatihan AI untuk ASN di Indonesia sudah menjadi semacam formula wajib di banyak instansi: habis dilantik, ASN dikumpulkan, diputar video tutorial tentang ChatGPT, lalu diakomodasi sertifikat. Hasilnya beragam — ada yang serius, ada yang berhenti di seremonial. Bedanya biasanya bukan di anggaran, melainkan di tiga hal: apakah ada workflow spesifik yang dibantu AI, apakah tersedia infrastruktur yang aman untuk dipakai, dan apakah atasan benar-benar memberi ruang untuk ASN mempraktikkannya di pekerjaan nyata.",
+        ],
+      },
+      {
+        heading: "Apa yang biasanya luput dari pelatihan AI untuk ASN",
+        paragraphs: [
+          "Pertama, keamanan data. Pekerjaan ASN penuh dengan dokumen yang tidak boleh keluar dari kantor — data pribadi warga, dokumen rahasia, informasi kebijakan yang belum dipublikasikan. Pelatihan yang tidak menyentuh topik ini biasanya berakhir dengan ASN yang belajar mengetik ke chatbot publik dengan contoh yang tidak tepat, atau malah menyimpan dokumen sensitif di layanan cloud yang belum tentu compliant dengan aturan. Pelatihan AI yang serius untuk ASN harus memasukkan sesi khusus tentang batas penggunaan: dokumen mana yang boleh, mana yang tidak, dan bagaimana jalur self-hosted untuk kebutuhan yang lebih sensitif.",
+          "Kedua, integrasi ke workflow nyata. Banyak pelatihan berhenti di level 'kenalkan alat ini, silakan coba-coba'. Setelah pelatihan selesai, ASN kembali ke rutinitas lama karena tidak ada waktu untuk benar-benar mengubah cara kerja. Pelatihan yang berhasil adalah yang berangkat dari masalah nyata: 'bagaimana cara merapikan notulen rapat lebih cepat', 'bagaimana cara menulis draft telaah lebih singkat', 'bagaimana cara menjawab pertanyaan warga lewat WhatsApp dengan basis data yang sudah ada' — dan menyediakan alat yang spesifik untuk menjawabnya, lengkap dengan pendampingan di minggu-minggu pertama.",
+          "Ketiga, keberlanjutan. PNS yang rajin pindah tugas, pejabat yang berganti, dan anggaran yang harus dipertanggungjawabkan — tiga hal ini membuat hampir setiap inisiatif pelatihan pemerintah berisiko mati pelan-pelan. Satu orang yang rajin di Diskominfo tidak cukup: kemampuan harus terdistribusi ke banyak orang dan terdokumentasi dengan baik supaya tidak padam ketika penanggung jawabnya pindah. Pelatihan yang disertai modul yang bisa dipelajari ulang oleh siapapun secara swadaya biasanya lebih bertahan lama dibanding pelatihan yang hanya bergantung pada sosok tertentu.",
+        ],
+      },
+      {
+        heading: "Yang sebenarnya bisa diharapkan, kalau dijalankan dengan benar",
+        paragraphs: [
+          "Kalau tiga hal di atas dijawab dengan serius — keamanan data, integrasi workflow, dan keberlanjutan — maka ASN Tangsel dan daerah lain yang bergerak di jalur yang sama akan merasakan dampak yang cukup nyata dalam hitungan bulan, bukan tahun. Draft pertama telaahan peraturan yang dulunya butuh seharian bisa selesai dalam jam. Rekap laporan harian lintas kelurahan yang biasa memakan waktu staf kecamatan di akhir pekan bisa di-handle oleh workflow sederhana yang dijalankan di server sendiri. Dan yang lebih penting: beban administratif ASN yang sering jadi keluhan utama birokrasi Indonesia akan turun drastis, memberi ruang untuk hal yang sebenarnya jadi inti pekerjaan mereka — mendengar warga, memecahkan masalah lintas instansi, dan mengkoordinasikan kebijakan.",
+          "Untuk warga, dampaknya baru akan terasa setelah beberapa bulan: waktu layanan yang lebih singkat, dokumen yang tidak lagi harus diantar bolak-balik, dan kualitas jawaban yang lebih konsisten karena ASN punya asisten yang membantu menyusun informasi dari basis data internal. Ini bukan lompatan yang dramatis, tapi akumulasi hal-hal kecil yang membuat pengalaman berurusan dengan kantor pemerintah menjadi tidak lagi melelahkan.",
+          "Untuk ekosistem startup dan vendor lokal AI, inisiatif seperti ini adalah peluang yang nyata. Banyak kebutuhan spesifik ASN — mulai dari sistem notulensi otomatis, chatbot pelayanan publik yang tahu konteks lokal, sampai dashboard rekap lintas dinas — saat ini belum punya solusi lokal yang matang. Pemain yang serius bermain di sini biasanya yang memilih sabar: membangun bersama satu instansi percontohan, membuktikan dampaknya dengan angka, lalu melebar lewat referensi, bukan lewat presentasi ke banyak pihak sekaligus.",
+        ],
+      },
+      {
+        heading: "Apa yang layak dipantau dalam 6-12 bulan ke depan",
+        paragraphs: [
+          "Indikator paling jujur untuk menilai apakah inisiatif seperti di Tangsel ini benar-benar berjalan adalah bukan jumlah ASN yang ikut pelatihan, melainkan apakah workflow yang dibantu AI benar-benar dipakai di harian. Caranya mudah diawami dari luar: cek apakah website resmi pemkot mulai mempublikasikan ringkasan layanan dengan pola yang konsisten dan bahasa yang lebih jelas, lihat apakah waktu rata-rata penerbitan layanan tertentu turun dari angka sebelumnya, dan perhatikan apakah muncul Layanan Publik baru berbasis chat atau formulir yang sebelumnya tidak ada.",
+          "Untuk ASN yang kebetulan menjadi bagian dari program ini, saran editorial sederhana: manfaatkan momentum ini untuk benar-benar memakai AI di pekerjaan harianmu, bukan hanya untuk kebutuhan pelatihan. Pilih satu workflow yang paling sering kamu lakukan — bisa berupa rekap, draft, atau riset kecil — dan minta pendampingan untuk mengotomatisasikannya. Dalam beberapa minggu kamu akan merasakan sendiri bedanya, dan kemampuan itu akan ikut kamu ke mana pun kamu bertugas berikutnya.",
+          "Dalam pengujian editorial Wawasan AI, inisiatif seperti Pemkot Tangsel yang menggembleng kompetensi AI untuk ASN adalah kabar baik yang perlu dibaca tanpa terburu-buru optimistis. Hasilnya baru akan terasa kalau keamanan data, integrasi workflow, dan keberlanjutan dijawab dengan serius — dan kalau ASN diberi ruang yang cukup untuk benar-benar mempraktikkannya di lapangan. Kalau iya, ASN Indonesia akan menjadi salah satu kelompok pekerja paling produktif di dunia dalam dekade ini, dan Layanan Publik akan berubah dari keluhan rutin menjadi sesuatu yang membuat warga cukup percaya untuk mengurus sendiri tanpa calo. Kalau tidak, pelatihan AI untuk ASN akan masuk ke daftar panjang inisiatif pemerintah yang terlalu bagus untuk dipresentasikan dan terlalu cepat untuk dilupakan, dan kita akan kembali berharap pada GovTech berikutnya sambil menyelipkan amplop untuk mempercepat pengurusan dokumen yang mestinya sudah bisa selesai dalam sehari.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "pemkot-tangsel-gembleng-kompetensi-ai-untuk-asn-demi-layanan-publik",
+    title: "Pemkot Tangsel Gembleng Kompetensi AI untuk ASN: Janji Layanan Publik yang Lebih Cepat atau Sekadar Pola Lama dengan Alat Baru?",
+    excerpt:
+      "Pemkot Tangerang Selatan menggembleng aparatur dengan pelatihan AI secara masif. Di balik pelatihan yang ramai, yang menentukan hasilnya adalah apakah ASN benar-benar dipakai untuk kerja harian — atau hanya berhenti di sertifikat.",
+    category: "Opini",
+    date: "2026-07-12",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Rencana Pemerintah Kota Tangerang Selatan untuk menggembleng aparatur sipil negara dengan kompetensi kecerdasan buatan adalah kabar baik di atas kertas. Di tengah desakan supaya layanan publik tidak lagi identik dengan antrean panjang dan bolak-balik ke kantor kelurahan, membekali ASN dengan kemampuan memakai AI adalah salah satu jawaban paling masuk akal — dan sudah mulai dilakukan di berbagai daerah lain dengan pendekatan yang berbeda-beda pula.",
+          "Tapi niat baik di tingkat kebijakan perlu dibaca dengan hati-hati. Pelatihan AI untuk ASN di Indonesia sudah menjadi semacam formula wajib di banyak instansi: habis dilantik, ASN dikumpulkan, diputar video tutorial tentang ChatGPT, lalu diakomodasi sertifikat. Hasilnya beragam — ada yang serius, ada yang berhenti di seremonial. Bedanya biasanya bukan di anggaran, melainkan di tiga hal: apakah ada workflow spesifik yang dibantu AI, apakah tersedia infrastruktur yang aman untuk dipakai, dan apakah atasan benar-benar memberi ruang untuk ASN mempraktikkannya di pekerjaan nyata.",
+        ],
+      },
+      {
+        heading: "Apa yang biasanya luput dari pelatihan AI untuk ASN",
+        paragraphs: [
+          "Pertama, keamanan data. Pekerjaan ASN penuh dengan dokumen yang tidak boleh keluar dari kantor — data pribadi warga, dokumen rahasia, informasi kebijakan yang belum dipublikasikan. Pelatihan yang tidak menyentuh topik ini biasanya berakhir dengan ASN yang belajar mengetik ke chatbot publik dengan contoh yang tidak tepat, atau malah menyimpan dokumen sensitif di layanan cloud yang belum tentu compliant dengan aturan. Pelatihan AI yang serius untuk ASN harus memasukkan sesi khusus tentang batas penggunaan: dokumen mana yang boleh, mana yang tidak, dan bagaimana jalur self-hosted untuk kebutuhan yang lebih sensitif.",
+          "Kedua, integrasi ke workflow nyata. Banyak pelatihan berhenti di level 'kenalkan alat ini, silakan coba-coba'. Setelah pelatihan selesai, ASN kembali ke rutinitas lama karena tidak ada waktu untuk benar-benar mengubah cara kerja. Pelatihan yang berhasil adalah yang berangkat dari masalah nyata: 'bagaimana cara merapikan notulen rapat lebih cepat', 'bagaimana cara menulis draft telaah lebih singkat', 'bagaimana cara menjawab pertanyaan warga lewat WhatsApp dengan basis data yang sudah ada' — dan menyediakan alat yang spesifik untuk menjawabnya, lengkap dengan pendampingan di minggu-minggu pertama.",
+          "Ketiga, keberlanjutan. PNS yang rajin pindah tugas, pejabat yang berganti, dan anggaran yang harus dipertanggungjawabkan — tiga hal ini membuat hampir setiap inisiatif pelatihan pemerintah berisiko mati pelan-pelan. Satu orang yang rajin di Diskominfo tidak cukup: kemampuan harus terdistribusi ke banyak orang dan terdokumentasi dengan baik supaya tidak padam ketika penanggung jawabnya pindah. Pelatihan yang disertai modul yang bisa dipelajari ulang oleh siapapun secara swadaya biasanya lebih bertahan lama dibanding pelatihan yang hanya bergantung pada sosok tertentu.",
+        ],
+      },
+      {
+        heading: "Yang sebenarnya bisa diharapkan, kalau dijalankan dengan benar",
+        paragraphs: [
+          "Kalau tiga hal di atas dijawab dengan serius — keamanan data, integrasi workflow, dan keberlanjutan — maka ASN Tangsel dan daerah lain yang bergerak di jalur yang sama akan merasakan dampak yang cukup nyata dalam hitungan bulan, bukan tahun. Draft pertama telaahan peraturan yang dulunya butuh seharian bisa selesai dalam jam. Rekap laporan harian lintas kelurahan yang biasa memakan waktu staf kecamatan di akhir pekan bisa di-handle oleh workflow sederhana yang dijalankan di server sendiri. Dan yang lebih penting: beban administratif ASN yang sering jadi keluhan utama birokrasi Indonesia akan turun drastis, memberi ruang untuk hal yang sebenarnya jadi inti pekerjaan mereka — mendengar warga, memecahkan masalah lintas instansi, dan mengkoordinasikan kebijakan.",
+          "Untuk warga, dampaknya baru akan terasa setelah beberapa bulan: waktu layanan yang lebih singkat, dokumen yang tidak lagi harus diantar bolak-balik, dan kualitas jawaban yang lebih konsisten karena ASN punya asisten yang membantu menyusun informasi dari basis data internal. Ini bukan lompatan yang dramatis, tapi akumulasi hal-hal kecil yang membuat pengalaman berurusan dengan kantor pemerintah menjadi tidak lagi melelahkan.",
+          "Untuk ekosistem startup dan vendor lokal AI, inisiatif seperti ini adalah peluang yang nyata. Banyak kebutuhan spesifik ASN — mulai dari sistem notulensi otomatis, chatbot pelayanan publik yang tahu konteks lokal, sampai dashboard rekap lintas dinas — saat ini belum punya solusi lokal yang matang. Pemain yang serius bermain di sini biasanya yang memilih sabar: membangun bersama satu instansi percontohan, membuktikan dampaknya dengan angka, lalu melebar lewat referensi, bukan lewat presentasi ke banyak pihak sekaligus.",
+        ],
+      },
+      {
+        heading: "Apa yang layak dipantau dalam 6-12 bulan ke depan",
+        paragraphs: [
+          "Indikator paling jujur untuk menilai apakah inisiatif seperti di Tangsel ini benar-benar berjalan adalah bukan jumlah ASN yang ikut pelatihan, melainkan apakah workflow yang dibantu AI benar-benar dipakai di harian. Caranya mudah diawami dari luar: cek apakah website resmi pemkot mulai mempublikasikan ringkasan layanan dengan pola yang konsisten dan bahasa yang lebih jelas, lihat apakah waktu rata-rata penerbitan layanan tertentu turun dari angka sebelumnya, dan perhatikan apakah muncul Layanan Publik baru berbasis chat atau formulir yang sebelumnya tidak ada.",
+          "Untuk ASN yang kebetulan menjadi bagian dari program ini, saran editorial sederhana: manfaatkan momentum ini untuk benar-benar memakai AI di pekerjaan harianmu, bukan hanya untuk kebutuhan pelatihan. Pilih satu workflow yang paling sering kamu lakukan — bisa berupa rekap, draft, atau riset kecil — dan minta pendampingan untuk mengotomatisasikannya. Dalam beberapa minggu kamu akan merasakan sendiri bedanya, dan kemampuan itu akan ikut kamu ke mana pun kamu bertugas berikutnya.",
+          "Dalam pengujian editorial Wawasan AI, inisiatif seperti Pemkot Tangsel yang menggembleng kompetensi AI untuk ASN adalah kabar baik yang perlu dibaca tanpa terburu-buru optimistis. Hasilnya baru akan terasa kalau keamanan data, integrasi workflow, dan keberlanjutan dijawab dengan serius — dan kalau ASN diberi ruang yang cukup untuk benar-benar mempraktikkannya di lapangan. Kalau iya, ASN Indonesia akan menjadi salah satu kelompok pekerja paling produktif di dunia dalam dekade ini, dan Layanan Publik akan berubah dari keluhan rutin menjadi sesuatu yang membuat warga cukup percaya untuk mengurus sendiri tanpa calo. Kalau tidak, pelatihan AI untuk ASN akan masuk ke daftar panjang inisiatif pemerintah yang terlalu bagus untuk dipresentasikan dan terlalu cepat untuk dilupakan, dan kita akan kembali berharap pada GovTech berikutnya sambil menyelipkan amplop untuk mempercepat pengurusan dokumen yang mestinya sudah bisa selesai dalam sehari.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
