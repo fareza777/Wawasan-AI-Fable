@@ -2056,6 +2056,56 @@ export const repos: Review[] = [
   updatedAt: "2026-07-11",
   featured: false,
 },
+  {
+    slug: "awesome-opensource-ai",
+    name: "Awesome Open-Source AI",
+    tagline: "Daftar kurasi harian proyek AI open-source yang benar-benar terbuka",
+    tags: ["Awesome List", "Open Source", "AI Direktori", "Multi-kategori"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "Awesome Open-Source AI adalah daftar kurasi harian yang memetakan proyek AI benar-benar terbuka dari model, agent, RAG, hingga infrastruktur inferensi. Dipelihara oleh Alvin Real dengan pembaruan harian dan homepage sendiri di awesomeosai.com, repositori ini menjadi titik awal yang efisien untuk menavigasi lautan proyek AI open-source.",
+    highlights: [
+      "Kurasi proyek AI yang benar-benar open-source (bukan sekadar source-available) \u2014 pembeda penting di tengah tren lisensi 'open-washing' industri",
+      "Pembaruan harian dengan commit terbaru terlihat jelas di timeline repositori",
+      "Cakupan luas: model bahasa, agent framework, RAG pipeline, vector database, tool MLOps, dan infrastruktur inferensi",
+      "Lisensi CC0-1.0 \u2014 bebas digunakan ulang untuk publikasi, dataset turunan, atau kompilasi internal tanpa atribusi ketat",
+      "Beranda khusus (awesomeosai.com) yang menampilkan ringkasan kategori dan rekomendasi editor",
+      "Topik repositori terstruktur: agents, RAG, generative-ai, MLOps, open-source-ai, llm",
+      "4.000+ bintang dengan 493 fork \u2014 metrik yang konsisten dengan repositori referensi komunitas",
+      "Format Markdown bersih dengan tautan langsung ke repositori sumber dan deskripsi singkat",
+    ],
+    pros: [
+      "Efisien untuk discovery: satu tautan memetakan lanskap AI open-source yang sebelumnya harus dikumpulkan manual dari banyak sumber",
+      "Kurasi fokus pada 'truly open' menyaring proyek dengan lisensi restrictive yang sering lolos dari daftar serupa",
+      "Lisensi CC0 memungkinkan reutilisasi untuk materi edukatif, briefing internal, atau direktori lokal",
+      "Pembaruan harian menjaga relevansi di ekosistem yang bergerak cepat",
+    ],
+    cons: [
+      "Awesome-list pada dasarnya adalah sumber sekunder \u2014 tetap perlu validasi manual sebelum mengadopsi proyek",
+      "Tidak ada jaminan coverage lengkap untuk kategori niche (misal AI untuk audio, video, atau domain spesifik)",
+      "Bergantung pada satu kurator \u2014 risiko jika aktivitas pemeliharaan melambat",
+    ],
+    verdict:
+      "Titik awal yang sangat baik untuk siapa pun yang ingin memetakan lanskap AI open-source secara terstruktur. Bukan pengganti riset mendalam, tapi kompas yang efisien untuk navigasi awal.",
+    body: [
+      "Di tengah banjirnya proyek AI baru tiap minggu, pertanyaan pertama yang sering muncul di tim engineering dan product bukan 'model mana yang terbaik' tapi 'dari mana kita mulai melihat opsi'. Awesome Open-Source AI menjawab kebutuhan itu: sebuah daftar kurasi yang memetakan ratusan proyek AI benar-benar terbuka \u2014 model, agent, RAG, MLOps, hingga infrastruktur inferensi \u2014 dalam satu repositori Markdown yang mudah dinavigasi.",
+      "Yang membedakan repositori ini dari banyak awesome-list lain adalah fokusnya pada truly open-source. Banyak proyek AI modern memakai lisensi 'source-available' yang melarang penggunaan komersial atau distribusi ulang; kurasi di sini secara eksplisit memfilter kriteria itu. Hasilnya, daftar yang lebih pendek tapi lebih bisa dipakai untuk produksi dan eksperimen jangka panjang.",
+      "Dalam pengujian editorial Wawasan AI, repositori ini paling bermanfaat sebagai titik awal scoping: daripada membuka GitHub Trending acak, tim bisa menelusuri kategori yang relevan dan mempersempit kandidat berdasarkan lisensi, bahasa, dan aktivitas komunitas. Homepage di awesomeosai.com juga memberikan tampilan yang lebih ramah untuk eksplorasi kasual daripada format Markdown mentah.",
+      "Keterbatasan yang perlu dipahami: seperti semua awesome-list, repositori ini adalah sumber sekunder. Setiap proyek yang akan diadopsi tetap perlu dievaluasi langsung \u2014 popularitas bintang tidak selalu mencerminkan kesiapan produksi atau keamanan. Untuk konteks Indonesia, repositori ini sangat berguna bagi tim yang membangun tooling internal dan ingin memastikan fondasi AI-nya benar-benar terbuka serta bebas dari jebakan lisensi di kemudian hari.",
+    ],
+    link: "https://github.com/alvinreal/awesome-opensource-ai",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-12",
+    updatedAt: "2026-07-12",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
