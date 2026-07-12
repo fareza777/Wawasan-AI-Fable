@@ -2106,6 +2106,57 @@ export const repos: Review[] = [
     updatedAt: "2026-07-12",
     featured: false,
   },
+{
+    slug: "adeus",
+    name: "ADeus",
+    tagline: "Perangkat wearable AI open-source yang menyimpan semua percakapan Anda di server sendiri",
+    tags: ["AI Wearable", "Privasi", "Self-hosted", "TypeScript"],
+    score: 7.8,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.0 },
+      { label: "Komunitas & Momentum", value: 7.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "ADeus adalah wearable AI yang merekam apa yang Anda katakan dan dengar di dunia nyata, lalu mentranskrip serta menyimpannya di server milik sendiri. Setelah data berada di server lokal, Anda bisa mengobrol dengan Adeus lewat aplikasi - AI personal yang benar-benar memahami konteks hidup Anda, bukan hanya prompt sesaat.",
+    highlights: [
+      "Open-source AI wearable: perangkat keras custom plus firmware yang bisa diaudit sepenuhnya",
+      "Transkripsi real-time dari percakapan dunia nyata menggunakan model Whisper",
+      "Penyimpanan lokal di server sendiri - data tidak pernah meninggalkan infrastruktur pengguna",
+      "Aplikasi pendamping untuk chat dengan Adeus, dengan memori jangka panjang berbasis konteks percakapan historis",
+      "Integrasi model LLM pilihan pengguna - dari API komersial hingga model lokal lewat Ollama",
+      "Arsitektur modular: firmware perangkat, server backend, dan aplikasi klien terpisah",
+      "Topik GitHub: ai, open, open-source-ai, wear, wearable, wearable-devices",
+      "Homepage dokumentasi di docs.adeus.ai dengan panduan setup dan referensi API",
+    ],
+    pros: [
+      "Posisi unik di kategori yang sangat langka: AI wearable dengan firmware open-source dan data storage lokal",
+      "Cocok untuk pengguna yang khawatir dengan privasi percakapan harian - semua data tetap di server sendiri",
+      "Fondasi yang baik untuk eksperimen: komponen firmware, server, dan aplikasi bisa dimodifikasi",
+      "Dokumentasi di docs.adeus.ai memandu setup dari perangkat hingga deployment server",
+    ],
+    cons: [
+      "Lisensi Creative Commons BY-NC-ND 4.0 - non-komersial dan melarang karya turunan, bukan open-source dalam pengertian OSI",
+      "Aktivitas pengembangan sudah melambat sejak awal 2024 - perlu kesiapan untuk memaintain sendiri atau fork",
+      "Bergantung pada ketersediaan komponen hardware - populasi perangkat yang beredar relatif kecil",
+      "Kasus penggunaan masih niche: pengguna umum akan lebih praktis dengan aplikasi pencatat di ponsel",
+    ],
+    verdict:
+      "Repositori yang menarik dari sisi visi dan arsitektur, namun posisi lisensi dan status pemeliharaan perlu diperhitungkan sebelum diadopsi untuk proyek serius. Layak dijelajahi sebagai referensi desain dan sumber inspirasi untuk membangun wearable AI sendiri.",
+    body: [
+      "Dalam percakapan tentang AI agent, topik yang paling sering muncul adalah asisten untuk dunia digital - chat, email, dokumen, dan kalender. ADeus mengambil arah yang berbeda: bagaimana kalau AI bisa memahami konteks dari percakapan luring Anda - pertemuan dengan rekan kerja, diskusi dengan keluarga, atau ide yang muncul saat berjalan kaki? Untuk menjawab itu, proyek ini merancang perangkat wearable custom yang merekam audio, mentranskrip dengan Whisper, lalu menyimpan semuanya di server lokal pengguna. AI kemudian dapat diakses lewat aplikasi dengan memori yang terakumulasi dari percakapan nyata.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling menarik dari ADeus bukan hasil akhirnya, melainkan pemikirannya tentang arsitektur: firmware terpisah dari server backend, server backend terpisah dari aplikasi klien, dan setiap komponen bisa diganti dengan implementasi sendiri. Bagi developer yang ingin memahami pipeline AI wearable end-to-end - dari mikrofon hingga antarmuka chat - struktur ini adalah bahan studi yang sangat berharga. Begitu data percakapan berada di server sendiri, integrasi ke Ollama atau API LLM lain menjadi urusan konfigurasi, bukan modifikasi kode.",
+      "Konteks Indonesia menarik untuk disinggung: di negara dengan budaya komunikasi verbal yang kuat - dari musyawarah keluarga hingga rapat RT/RW - potensi AI yang memahami konteks percakapan luring sangat besar. Namun di saat yang sama, sensitifitas data percakapan harian juga tinggi; banyak pengguna akan lebih percaya solusi yang datanya tidak pernah meninggalkan rumah. ADeus menyentuh kedua sisi tersebut, sehingga bagi sebagian orang nilai utamanya bukan produk jadi, melainkan cetak biru yang bisa direplikasi untuk konteks lokal.",
+      "Keterbatasan yang perlu dipahami secara jujur: lisensi CC BY-NC-ND 4.0 melarang penggunaan komersial dan karya turunan, sehingga ADeus bukan proyek open-source dalam pengertian OSI - lebih tepat disebut source-available. Aktivitas pengembangan juga sudah melambat sejak awal 2024. Artinya, siapa pun yang ingin serius mengadopsi atau mengembangkan lebih lanjut perlu kesiapan untuk memaintain sendiri, melakukan fork, atau menghitung ulang keputusan bisnis di atas fondasi ini. Sebagai referensi arsitektur dan titik awal percobaan, ADeus tetap salah satu repositori paling informatif di kategorinya.",
+    ],
+    link: "https://github.com/adamcohenhillel/ADeus",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-13",
+    updatedAt: "2026-07-13",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
