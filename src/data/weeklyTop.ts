@@ -993,6 +993,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                             "100% proyek riset dan edukasi — fokus ke arsitektur sistem dan reverse engineering PS5, bukan game-specific compatibility atau PS4. Berguna untuk developer dan researcher yang tertarik GPU low-level, custom OS internals, dan AGC.",
                           ],
                         },
+                        "asgeirtj/system_prompts_leaks": {
+                          description:
+                            "Repositori 'pembocoran' system prompt terbesar dan paling aktif diperbarui (56k+ bintang, diliput Washington Post) — kumpulkan prompt sistem mentah dari Anthropic, OpenAI, Google, xAI, Cursor, Copilot, VS Code, Perplexity, dan banyak lagi.",
+                          highlights: [
+                            "Repositori yang rajin di-update tiap ada rilis model atau produk baru: tiap kali Anthropic, OpenAI, atau vendor lain merilis versi baru, system prompt-nya diekstrak dan dipublikasikan di sini — jadi punya 'snapshot' historis prompt dari waktu ke waktu.",
+                            "Mencakup bukan cuma chatbot consumer, tapi juga tool developer: Claude Code, Codex CLI, VS Code Copilot, Cursor, Zed AI, Docker Gordon AI, Antigravity, Perplexity Computer — berguna untuk engineer yang ingin tahu instruksi sistem di balik tool yang mereka pakai sehari-hari.",
+                            "Diliput The Washington Post sebagai referensi untuk memahami 'aturan tersembunyi' di balik AI — jawaban langsung untuk pertanyaan mendasar 'siapa yang sebenarnya saya ajak bicara saat chat dengan AI?'.",
+                            "Dilengkapi diff antar versi (mis. 'Claude Fable 5 vs Opus 4.8'), link ke 48 tool definition + skill, dan struktur folder per vendor — bukan cuma kumpulan teks, melainkan basis data historis yang bisa diaudit per rilis.",
+                          ],
+                        },
             };
 
             // Helper: lookup dengan fallback ke template-generated highlights
