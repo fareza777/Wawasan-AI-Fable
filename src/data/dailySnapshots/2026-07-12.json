@@ -1,0 +1,157 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "12 Juli 2026",
+  "period": {
+    "date": "2026-07-12",
+    "label": "12 Juli 2026",
+    "path": "/repo/daily/2026/07/12"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-12T00:03:58.977Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "JustVugg/colibri",
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "githubUrl": "https://github.com/JustVugg/colibri",
+      "trendshiftUrl": "https://trendshift.io/repositories/73945",
+      "language": "C",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-01T12:27:49Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Dicklesworthstone/destructive_command_guard",
+      "owner": "Dicklesworthstone",
+      "repo": "destructive_command_guard",
+      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+      "githubUrl": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "trendshiftUrl": "https://trendshift.io/repositories/40043",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-01-07T22:27:34Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "k1tbyte/Wand-Enhancer",
+      "owner": "k1tbyte",
+      "repo": "Wand-Enhancer",
+      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+      "githubUrl": "https://github.com/k1tbyte/Wand-Enhancer",
+      "trendshiftUrl": "https://trendshift.io/repositories/24694",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2024-11-17T20:02:10Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "HKUDS/Vibe-Trading",
+      "owner": "HKUDS",
+      "repo": "Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "githubUrl": "https://github.com/HKUDS/Vibe-Trading",
+      "trendshiftUrl": "https://trendshift.io/repositories/25527",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Workflow automation",
+        "Fintech"
+      ],
+      "dateCreated": "2026-04-01T09:52:20Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Shubhamsaboo/awesome-llm-apps",
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "githubUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "trendshiftUrl": "https://trendshift.io/repositories/9876",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Local LLM",
+        "RAG",
+        "Curated list"
+      ],
+      "dateCreated": "2024-04-29T05:30:25Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "wonderwhy-er/DesktopCommanderMCP",
+      "owner": "wonderwhy-er",
+      "repo": "DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "githubUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "trendshiftUrl": "https://trendshift.io/repositories/13251",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2024-12-04T08:26:08Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "malisper/pgrust",
+      "owner": "malisper",
+      "repo": "pgrust",
+      "description": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+      "githubUrl": "https://github.com/malisper/pgrust",
+      "trendshiftUrl": "https://trendshift.io/repositories/64601",
+      "language": "Rust",
+      "topics": [
+        "WebAssembly"
+      ],
+      "dateCreated": "2026-04-20T03:35:59Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "AprilNEA/OpenLogi",
+      "owner": "AprilNEA",
+      "repo": "OpenLogi",
+      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+      "githubUrl": "https://github.com/AprilNEA/OpenLogi",
+      "trendshiftUrl": "https://trendshift.io/repositories/42303",
+      "language": "Rust",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-05-24T10:10:36Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "par274/sharpemu",
+      "owner": "par274",
+      "repo": "sharpemu",
+      "description": "An experimental PlayStation 5 emulator project.",
+      "githubUrl": "https://github.com/par274/sharpemu",
+      "trendshiftUrl": "https://trendshift.io/repositories/79103",
+      "language": "C#",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-03-11T12:46:36Z"
+    }
+  ]
+}

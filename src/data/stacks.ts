@@ -1466,6 +1466,47 @@ export const stacks: Review[] = [
     date: "2026-07-11",
     featured: false,
   },
+{
+    slug: "langflow",
+    name: "Langflow",
+    tagline: "Visual builder low-code untuk aplikasi AI agentik dan RAG",
+    tags: ["Langflow", "Open Source", "No-Code/Low-Code", "Agent Builder"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.6 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "Langflow adalah builder visual berbasis node yang memungkinkan developer dan non-developer untuk merancang, menguji, dan men-deploy workflow AI kompleks (chatbot RAG, agen multi-step, pipeline retrieval) tanpa menulis kode boilerplate. Per Juli 2026 versi 1.4 sudah stabil dengan marketplace komponen, integrasi native ke semua LLM besar (OpenAI, Anthropic, Google, Ollama, vLLM), dan mode self-host satu-kali-perintah via Docker — kombinasi yang menjadikannya salah satu framework orkestrasi AI paling terbuka di ekosistem.",
+    pros: [
+      "Visual canvas drag-and-drop yang intuitif: alur data, prompt, dan logika branching terlihat jelas tanpa harus baca kode",
+      "100+ komponen bawaan mencakup loader dokumen, vector store, embedding model, agen, dan tool API — tinggal drag dan konfigurasikan",
+      "Dual-mode: bisa dipakai via UI web untuk eksplorasi cepat, atau di-impor sebagai library Python untuk integrasi ke codebase produksi",
+      "Self-host gratis dengan Docker Compose atau pip install, tanpa lock-in ke vendor — codebase MIT licensed di GitHub",
+      "Komunitas aktif: lebih dari 50.000 bintang GitHub, Discord resmi dengan ribuan anggota, dan banyak tutorial bahasa Indonesia untuk kasus RAG dasar",
+    ],
+    cons: [
+      "Untuk workflow kompleks (cabang bersyarat, loop, multi-agen) UI bisa menjadi padat dan sulit di-debug dibanding menulis kode langsung",
+      "Performa pada volume tinggi (ratusan request per detik) lebih lambat dibanding pipeline Python murni yang di-optimasi — perlu profiling manual untuk use case produksi besar",
+      "Dokumentasi tertinggal dari kecepatan rilis fitur; beberapa integrasi baru (seperti MCP server) hanya terdokumentasi di issue GitHub atau blog komunitas",
+      "Kurva belajar untuk konsep AI (embedding, chunking, prompt engineering) tetap ada — Low-code bukan berarti no-knowledge, pemahaman dasar tetap wajib",
+    ],
+    verdict:
+      "Standar de facto untuk visual AI builder open source di 2026, terutama untuk prototyping RAG dan agen tanpa harus bangun infrastruktur dari nol. Pilih Langflow kalau prioritasnya adalah kecepatan eksplorasi dan fleksibilitas model; pilih Flowise untuk alternatif UI yang lebih ringan, atau LangChain/LlamaIndex kode-native kalau kamu butuh kontrol penuh dan optimasi performa.",
+    body: [
+      "Di tengah ledakan aplikasi AI generatif, salah satu tantangan terbesar bagi tim developer dan product owner adalah merangkai komponen-komponen LLM (prompt, retrieval, memory, tool) menjadi alur yang bisa jalan andal. Menulis semuanya dari awal di Python memang fleksibel, tapi untuk eksplorasi cepat atau untuk anggota tim yang tidak nyaman dengan kode, pendekatan visual jauh lebih efisien. Di sinilah Langflow mengambil posisi: framework open source yang menyediakan canvas drag-and-drop untuk merancang pipeline AI, lengkap dengan semua komponen mainstream yang dibutuhkan. Berbeda dari n8n atau Zapier yang fokus ke workflow bisnis umum, Langflow spesifik untuk orkestrasi AI — prompt template, vector store, embedding, agent loop, MCP tool, semuanya jadi node yang tinggal disambung.",
+      "Stack teknis di balik Langflow relatif bersahaja: backend Python (FastAPI), frontend React (dengan React Flow sebagai canvas engine), database SQLite bawaan untuk penyimpanan flow. Versi 1.4 per Juli 2026 menambahkan beberapa fitur yang sebelumnya jadi permintaan komunitas: MCP server sebagai komponen pertama-class, custom component editor dengan validasi schema otomatis, dan mode 'export to Python' yang menghasilkan kode setara dari flow visual. Untuk integrasi LLM, semua provider utama sudah didukung: OpenAI, Anthropic Claude, Google Gemini, Mistral, Cohere, Groq, serta model lokal lewat Ollama dan vLLM. Vector store yang didukung mencakup Chroma, FAISS, Pinecone, Weaviate, Qdrant, AstraDB. Harga keseluruhan: gratis sepenuhnya untuk self-host (kode MIT), ada tier Langflow Cloud managed hosting mulai USD 20 per bulan per workspace, dan paket Enterprise dengan SSO dan audit log untuk tim korporat.",
+      "Untuk konteks Indonesia, Langflow punya beberapa implikasi menarik. Pertama, untuk UMKM dan startup yang ingin bangun chatbot customer service atau asisten internal berbasis dokumen perusahaan (knowledge base), Langflow memungkinkan produk MVP jalan dalam hitungan hari tanpa harus hire AI engineer khusus. Kedua, untuk kampus dan komunitas edukasi, ada beberapa tutorial bahasa Indonesia di YouTube dan blog yang mengajarkan bangun RAG sederhana dengan Langflow + Ollama lokal — modal yang dibutuhkan cuma laptop dengan RAM 16 GB, tanpa langganan API berbayar. Ketiga, untuk freelancer dan konsultan IT, Langflow bisa jadi value proposition yang menarik untuk klien yang ingin 'punya AI' tapi tidak paham teknis: hasil visual lebih mudah dipresentasikan dibanding pipeline Python yang hanya kelihatan kode. Keempat, untuk enterprise, lisensi MIT memungkinkan deployment on-premise penuh tanpa biaya lisensi, hanya perlu investasi di infrastruktur server dan SDM untuk maintenance.",
+      "Pattern penggunaan yang paling sering muncul di komunitas ada empat. Pertama, prototyping RAG chatbot untuk knowledge base internal perusahaan: tim legal atau HR bangun asisten yang bisa menjawab pertanyaan karyawan berdasarkan dokumen kebijakan, dengan retrieval yang bisa diuji dan di-tuning langsung di canvas. Kedua, eksplorasi agen multi-step: workflow yang memanggil API eksternal (Crm, payment gateway, database internal) digabung dengan logika LLM untuk ambil keputusan atau generate output. Ketiga, hackathon dan demo produk: founder atau mahasiswa bikin prototype AI dalam 24-48 jam dengan tim yang sebagian besar non-engineer, dan Langflow memungkinkan kolaborasi visual yang efektif. Keempat, teaching aid untuk kursus AI: dosen atau instruktur bootcamp pakai Langflow untuk demo konsep embedding, retrieval, agent loop tanpa harus setup Jupyter dan environment lokal setiap siswa. Untuk ketiga pola pertama, keterbatasan performa dan keterbatasan debugging visual workflow kompleks biasanya bukan blocker karena tujuannya memang eksplorasi atau MVP; untuk pola keempat dan untuk deployment produksi skala besar, kombinasi Langflow (untuk prototyping) + custom Python rewrite (untuk optimasi) tetap jadi pola paling sehat. Catatan akhir: untuk pengguna yang butuh pipeline sangat ringan dan tidak ingin dependency Python, alternatif Flowise (basis Node.js) patut dipertimbangkan; untuk yang butuh kontrol penuh dan tidak masalah dengan kode, LangChain atau LlamaIndex tetap jadi standar industri.",
+    ],
+    link: "https://www.langflow.org",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-12",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
