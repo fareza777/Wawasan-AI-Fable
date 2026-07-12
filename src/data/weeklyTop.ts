@@ -1003,6 +1003,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                             "Dilengkapi diff antar versi (mis. 'Claude Fable 5 vs Opus 4.8'), link ke 48 tool definition + skill, dan struktur folder per vendor — bukan cuma kumpulan teks, melainkan basis data historis yang bisa diaudit per rilis.",
                           ],
                         },
+                        "router-for-me/CLIProxyAPI": {
+                          description:
+                            "Proxy lokal (Go, 40k+ bintang) yang membungkus Antigravity, ChatGPT Codex, Claude Code, dan Grok jadi satu endpoint API OpenAI-compatible — pakai tier gratis Gemini 3.1 Pro, GPT 5.5, Grok 4.3, dan Claude lewat satu key.",
+                          highlights: [
+                            "Menjawab masalah nyata developer: banyak akun langganan coding agent (Antigravity, Codex, Claude Code, Grok) yang punya tier gratis atau murah tapi tidak ter-expose lewat API — CLIProxyAPI membungkusnya jadi server OpenAI-compatible lokal.",
+                            "Multi-account dan multi-provider dalam satu endpoint: tinggal set environment variable, dan coding agent apa pun yang pakai SDK OpenAI (termasuk tool custom) langsung dapat akses ke semua model lewat base URL yang sama.",
+                            "Bukan reverse-engineering asal: proyek mengikuti ToS masing-masing provider, fokus pada exposure API resmi + paket subscription pribadi jadi surface standar — sehingga developer Indonesia yang punya akun langganan pribadi bisa pakai frontier model tanpa bayar API key tambahan.",
+                            "Tertulis dalam Go (single binary, deployment ringan), aktif di-update tiap rilis model baru, dan punya dashboard logs sederhana — relevan untuk founder dan engineer yang ingin cost-effective access ke model frontier lewat akun langganan yang sudah mereka bayar.",
+                          ],
+                        },
+                        "catchorg/Catch2": {
+                          description:
+                            "Framework testing C++ modern (21k+ bintang, BSL-1.0) yang bikin unit test, TDD, dan BDD terasa natural — test case pakai string bebas, assertion seperti ekspresi boolean, plus micro-benchmark bawaan.",
+                          highlights: [
+                            "Framework testing C++ yang dirancang untuk keterbacaan: test case ditulis pakai string bebas (bukan identifier), REQUIRE / CHECK terasa seperti ekspresi boolean normal — on-boarding engineer baru ke codebase C++ jadi jauh lebih singkat.",
+                            "Dukungan penuh untuk unit test, TDD, dan BDD lewat macro yang sama, plus fitur micro-benchmark bawaan — developer tidak perlu install Google Benchmark terpisah untuk profiling fungsi kritis.",
+                            "Catch2 v3 (rilis 2023) ditulis ulang sebagai header + library yang lebih modular, mendukung C++14/17/20, AMD64/x86_64/ARM64, Linux/macOS/Windows — dipakai oleh LLVM, RE2, pybind11, dan banyak library C++ mainstream.",
+                            "Lisensi BSL-1.0 (Business Source License) untuk proyek proprietary; versi Catch2 v2 tetap MIT — pilihan fleksibel untuk kontributor open-source dan tim enterprise yang perlu compliance.",
+                          ],
+                        },
+                        "cosmtrek/mindwalk": {
+                          description:
+                            "Visualizer 3D yang memutar ulang session coding agent (Claude Code, Codex) di atas 'peta' codebase — lihat file mana yang disentuh agen, seberapa dalam, dan apakah scope-nya sesuai dengan brief kamu.",
+                          highlights: [
+                            "Membaca session log Claude Code dan Codex JSONL lokal, lalu render ulang aktivitasnya sebagai cahaya yang bergerak di peta 3D repo: file yang disentuh agen menyala, yang tidak disentuh tetap gelap — visual yang langsung kasih gambaran 'pemahaman' agen terhadap task.",
+                            "Peta repo punya dua mode: radial tree (struktur folder sebagai pohon yang menyebar) dan treemap plain (luas ∝ jumlah baris kode) — pilih representasi yang paling cocok untuk arsitektur codebase kamu.",
+                            "Full lokal dalam satu binary Go: tidak ada session data yang dikirim ke server, hanya membaca ~/.claude/projects dan ~/.codex/sessions — relevan untuk developer yang peduli privasi histori coding agent mereka.",
+                            "Dilengkapi CLI mindwalk serve (scan + buka UI di port acak), mindwalk open <session.jsonl> untuk replay spesifik, dan mindwalk build/trace untuk ekspor JSON citymap atau normalized trace — ringan dipasang via curl one-liner, Windows/Linux/macOS semua didukung.",
+                          ],
+                        },
             };
 
             // Helper: lookup dengan fallback ke template-generated highlights
