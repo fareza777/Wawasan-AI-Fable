@@ -1,17 +1,54 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "12 Juli 2026",
-  "period": {
-    "date": "2026-07-12",
-    "label": "12 Juli 2026",
-    "path": "/repo/daily/2026/07/12"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-12T00:03:58.977Z",
+  "fetchedAt": "2026-07-12T04:54:13.201Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "OpenCut-app/OpenCut",
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "description": "The open-source CapCut alternative",
+      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
+      "trendshiftUrl": "https://trendshift.io/repositories/19761",
+      "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2025-06-22T08:02:17Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "jaywcjlove/awesome-mac",
+      "owner": "jaywcjlove",
+      "repo": "awesome-mac",
+      "description": " This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.",
+      "githubUrl": "https://github.com/jaywcjlove/awesome-mac",
+      "trendshiftUrl": "https://trendshift.io/repositories/630",
+      "language": "Swift",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2016-07-17T15:33:47Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 4,
       "fullName": "JustVugg/colibri",
       "owner": "JustVugg",
       "repo": "colibri",
@@ -25,133 +62,84 @@
       "dateCreated": "2026-07-01T12:27:49Z"
     },
     {
-      "rank": 2,
-      "fullName": "emilkowalski/skills",
-      "owner": "emilkowalski",
-      "repo": "skills",
-      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
-      "githubUrl": "https://github.com/emilkowalski/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/44614",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-16T13:52:31Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "Dicklesworthstone/destructive_command_guard",
-      "owner": "Dicklesworthstone",
-      "repo": "destructive_command_guard",
-      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-      "githubUrl": "https://github.com/Dicklesworthstone/destructive_command_guard",
-      "trendshiftUrl": "https://trendshift.io/repositories/40043",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-01-07T22:27:34Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "k1tbyte/Wand-Enhancer",
-      "owner": "k1tbyte",
-      "repo": "Wand-Enhancer",
-      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
-      "githubUrl": "https://github.com/k1tbyte/Wand-Enhancer",
-      "trendshiftUrl": "https://trendshift.io/repositories/24694",
-      "language": "C#",
-      "topics": [],
-      "dateCreated": "2024-11-17T20:02:10Z"
-    },
-    {
       "rank": 5,
-      "fullName": "HKUDS/Vibe-Trading",
-      "owner": "HKUDS",
-      "repo": "Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "githubUrl": "https://github.com/HKUDS/Vibe-Trading",
-      "trendshiftUrl": "https://trendshift.io/repositories/25527",
-      "language": "Python",
+      "fullName": "hmjz100/LinkSwift",
+      "owner": "hmjz100",
+      "repo": "LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "githubUrl": "https://github.com/hmjz100/LinkSwift",
+      "trendshiftUrl": "https://trendshift.io/repositories/13630",
+      "language": "JavaScript",
       "topics": [
-        "AI agent",
-        "Workflow automation",
-        "Fintech"
+        "File management"
       ],
-      "dateCreated": "2026-04-01T09:52:20Z"
+      "dateCreated": "2022-08-10T11:59:44Z"
     },
     {
       "rank": 6,
-      "fullName": "Shubhamsaboo/awesome-llm-apps",
-      "owner": "Shubhamsaboo",
-      "repo": "awesome-llm-apps",
-      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "githubUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "trendshiftUrl": "https://trendshift.io/repositories/9876",
-      "language": "Python",
+      "fullName": "1c7/chinese-independent-developer",
+      "owner": "1c7",
+      "repo": "chinese-independent-developer",
+      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
+      "githubUrl": "https://github.com/1c7/chinese-independent-developer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4388",
       "topics": [
-        "AI agent",
-        "Local LLM",
-        "RAG",
         "Curated list"
       ],
-      "dateCreated": "2024-04-29T05:30:25Z"
+      "dateCreated": "2017-09-21T11:08:23Z"
     },
     {
       "rank": 7,
-      "fullName": "wonderwhy-er/DesktopCommanderMCP",
-      "owner": "wonderwhy-er",
-      "repo": "DesktopCommanderMCP",
-      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-      "githubUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "trendshiftUrl": "https://trendshift.io/repositories/13251",
-      "language": "TypeScript",
+      "fullName": "catchorg/Catch2",
+      "owner": "catchorg",
+      "repo": "Catch2",
+      "description": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)",
+      "githubUrl": "https://github.com/catchorg/Catch2",
+      "trendshiftUrl": "https://trendshift.io/repositories/1236",
+      "language": "C++",
       "topics": [
-        "AI agent",
-        "MCP"
+        "Static analysis"
       ],
-      "dateCreated": "2024-12-04T08:26:08Z"
+      "dateCreated": "2010-11-08T18:22:56Z"
     },
     {
       "rank": 8,
-      "fullName": "malisper/pgrust",
-      "owner": "malisper",
-      "repo": "pgrust",
-      "description": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
-      "githubUrl": "https://github.com/malisper/pgrust",
-      "trendshiftUrl": "https://trendshift.io/repositories/64601",
-      "language": "Rust",
-      "topics": [
-        "WebAssembly"
-      ],
-      "dateCreated": "2026-04-20T03:35:59Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "AprilNEA/OpenLogi",
-      "owner": "AprilNEA",
-      "repo": "OpenLogi",
-      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "githubUrl": "https://github.com/AprilNEA/OpenLogi",
-      "trendshiftUrl": "https://trendshift.io/repositories/42303",
-      "language": "Rust",
+      "fullName": "Leantime/leantime",
+      "owner": "Leantime",
+      "repo": "leantime",
+      "description": "Leantime is a goals focused project management system for non-project managers. Building with ADHD, Autism, and dyslexia in mind.",
+      "githubUrl": "https://github.com/Leantime/leantime",
+      "trendshiftUrl": "https://trendshift.io/repositories/2264",
+      "language": "PHP",
       "topics": [
         "Self-hosted"
       ],
-      "dateCreated": "2026-05-24T10:10:36Z"
+      "dateCreated": "2015-01-23T17:52:06Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "BryanLunduke/LCOS",
+      "owner": "BryanLunduke",
+      "repo": "LCOS",
+      "description": "The Lunduke Computer Operating System",
+      "githubUrl": "https://github.com/BryanLunduke/LCOS",
+      "trendshiftUrl": "https://trendshift.io/repositories/79921",
+      "topics": [],
+      "dateCreated": "2026-07-11T17:39:07Z"
     },
     {
       "rank": 10,
-      "fullName": "par274/sharpemu",
-      "owner": "par274",
-      "repo": "sharpemu",
-      "description": "An experimental PlayStation 5 emulator project.",
-      "githubUrl": "https://github.com/par274/sharpemu",
-      "trendshiftUrl": "https://trendshift.io/repositories/79103",
-      "language": "C#",
+      "fullName": "Hao0321/video-autopilot-kit",
+      "owner": "Hao0321",
+      "repo": "video-autopilot-kit",
+      "description": "Fill-in-your-own-data framework for YouTube / short-form video automation: CapCut JSON + ffmpeg tooling + an onboarding questionnaire. Ships with zero private data.",
+      "githubUrl": "https://github.com/Hao0321/video-autopilot-kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/79558",
+      "language": "Python",
       "topics": [
-        "Emulator"
+        "Workflow automation"
       ],
-      "dateCreated": "2026-03-11T12:46:36Z"
+      "dateCreated": "2026-06-01T14:38:19Z"
     }
   ]
 }
