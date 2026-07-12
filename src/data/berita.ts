@@ -1658,6 +1658,47 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "lowongan-transjakarta-2026-ai-engineer-sales-executive",
+    title: "Transjakarta Buka Lowongan AI Engineer dan Sales Executive: Tanda BUMD Jakarta Mulai Serius dengan AI, atau Sekadar Cari Vendor Cepat?",
+    excerpt:
+      "PT Transportasi Jakarta membuka lowongan untuk posisi AI engineer dan sales executive dengan deadline 22 Agustus 2026. Yang ditunggu bukan berapa banyak pelamar, melainkan apakah posisinya memang diisi oleh orang yang akan mengubah produk atau hanya jadi formalitas belanja modal.",
+    category: "Analisis",
+    date: "2026-07-13",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "PT Transportasi Jakarta — operator BRT yang menaungi layanan bus Transjakarta di bawah Pemerintah Provinsi DKI Jakarta — membuka lowongan untuk dua posisi yang tidak biasanya muncul bersamaan dalam satu iklan pekerjaan BUMN atau BUMD: AI engineer dan sales executive. Pendaftaran disebut dibuka hingga 22 Agustus 2026. Bagi pembaca yang mengikuti perjalanan adopsi AI di sektor publik Indonesia, kombinasi dua peran ini di satu perusahaan yang selama ini hanya dikenal sebagai operator bus adalah isyarat yang lebih menarik daripada penampilannya di permukaan.",
+          "Selama beberapa tahun terakhir, image Transjakarta di mata publik didominasi oleh masalah klasik operator: tarif subsidi, kepadatan di jam sibuk, sampai keluhan armada lama. Belakangan, seiring dengan naiknya tuntutan terhadap integrasi pembayaran digital, informasi rute real-time, dan analisis pola penumpang, posisi teknis yang sebelumnya hanya berhenti di tim IT pendukung mulai mendapat ruang. Membuka lowongan khusus AI engineer adalah langkah yang berbeda dari biasanya — artinya Transjakarta sudah sampai ke tahap di mana model dan pipeline AI bukan sekadar percobaan anak magang, melainkan kebutuhan operasional yang diperkirakan bertahan sampai beberapa tahun ke depan.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya mereka cari",
+        paragraphs: [
+          "Posisi AI engineer di konteks BUMD transportasi biasanya bukan berarti orang yang menulis paper transformer — itu bukan dunia mereka. Yang dimaksud lebih sering adalah engineer yang bisa merangkai model yang sudah ada (bukan melatih dari nol) menjadi layanan yang operasional: sistem rekomendasi rute, prediksi kepadatan, klasifikasi keluhan penumpang, chatbot layanan, sampai analisis teks untuk keluhan media sosial. Alat yang dipakai pun cenderung mainstream: Python, FastAPI atau Flask, PostgreSQL atau ClickHouse untuk telemetri, plus model dari OpenAI, Anthropic, atau open-source lewat Ollama untuk inference. Yang membedakan kandidat yang diterima dari yang tidak biasanya bukan skill coding murni, melainkan kemampuan menerjemahkan masalah operasional ke dalam pipeline AI yang jelas — dan kemampuan me-review hasilnya supaya tidak merugikan penumpang ketika model salah.",
+          "Posisi sales executive yang dibuka bersamaan menarik untuk dicermati. Di BUMD operator, peran sales biasanya tidak sepopuler di startup, tapi kalau ditaruh di samping AI engineer dalam satu lowongan, yang terlintas di benak banyak pengamat industri adalah arah baru: monetisasi data. Transjakarta mengelola salah satu basis data pergerakan harian terbesar di Jakarta — tap-in tap-out, pola rute, waktu tunggu, sampai integrasi dengan MRT dan LRT. Kalau data itu diperlakukan sebagai aset yang bisa diolah menjadi produk (misalnya analytics untuk retailer di halte, prediksi okupansi untuk mitra iklan, atau layanan data untuk riset transportasi), maka peran sales executive punya arti yang jelas: menjual produk AI ke pasar B2B di luar tiket penumpang. Itu penjelasan yang konsisten dengan pembukaan dua posisi sekaligus.",
+        ],
+      },
+      {
+        heading: "Kenapa ini layak diperhatikan dari kacamata pembaca Wawasan AI",
+        paragraphs: [
+          "Pertama, karena lowongan ini memberi sinyal yang lebih kuat daripada pernyataan press release. Membuka posisi permanen untuk dua peran yang sebelumnya tidak ada di struktur organisasi menandakan ada komitmen anggaran dan ada atasan yang mau bertanggung jawab atas hasilnya. Itu berbeda dari MoU atau pilot project tiga bulan — biasanya berakhir dipresentasikan di seminar dan dilupakan begitu anggaran proyek berganti tahun. Pembaca yang ingin tahu apakah badan publik Indonesia memang serius menggunakan AI bisa menggunakan lowongan seperti ini sebagai proxy: kalau posisi baru bertahan sampai tahun berikutnya dan diubah jadi organik, kita boleh mulai menganggapnya serius.",
+          "Kedua, bagi talenta AI yang sedang mencari kerja di Indonesia, lowongan seperti ini memperlebar pilihan yang biasanya didominasi startup dan korporasi multinasional. BUMN dan BUMD selama ini kurang menarik untuk engineer berpengalaman karena dianggap birokratis, gaji cenderung lebih rendah dari pasar, dan proses rekrutmen panjang. Kalau Transjakarta membayar dengan serius dan memberi ruang yang cukup untuk engineer bekerja tanpa terlalu banyak rapat yang tidak relevan, ini bisa jadi preseden yang baik — sekaligus menjadi tekanan halus bagi BUMD lain di sektor serupa (PDAM, operator pelabuhan, operator bandara) bahwa standar gaji dan tantangan teknis akan naik tahun ini juga.",
+          "Ketiga, bagi penumpang dan warga Jakarta pada umumnya, yang akan terasa dari perekrutan ini dalam dua sampai tiga tahun ke depan bukan fitur AI-nya secara langsung. Yang terasa adalah apakah informasi di aplikasi Transjakarta jadi lebih akurat, apakah chatbot layanan pelanggan menjawab dengan benar di percobaan pertama, apakah rekap keluhan tidak lagi lambat sampai tiga hari, dan apakah halte-halte tertentu mulai dipasang layanan tambahan yang sebelumnya tidak ada. Itu indikator yang lebih jujur daripada rilis berita tentang transformasi digital yang biasanya tidak berubah apapun di lapangan.",
+        ],
+      },
+      {
+        heading: "Yang patut dilihat dalam enam sampai dua belas bulan ke depan",
+        paragraphs: [
+          "Indikator paling sederhana: buka halaman karir Transjakarta di akhir tahun dan cek apakah lowongan untuk kedua posisi ini masih terbuka (alias belum terisi), atau muncul lowongan lanjutan di posisi yang sama. Kalau muncul, biasanya berarti yang diterima pertama sudah cukup berhasil untuk dibuktikan ada kebutuhan kedua. Kalau posisinya lenyap dalam tiga bulan, kemungkinan besar eksperimen dihentikan lebih cepat dari yang dibayangkan — atau yang diterima tidak sejalan dengan harapan manajemen.",
+          "Indikator kedua: lihat apakah aplikasi Transjakarta atau kanal komunikasi resmi mulai mempublikasikan fitur baru yang diumumkan sebagai hasil adopsi AI. Bukan klaim besar-besaran tentang transformasi digital, tapi hal kecil yang bisa diverifikasi: misalnya ringkasan otomatis pengaduan per halte, rute rekomendasi yang berubah sesuai pola penumpang, atau chatbot yang tidak lagi terdengar robotik. Banyak fitur AI di layanan publik yang tidak diumumkan secara resmi tapi terasa di penggunaan harian.",
+          "Indikator ketiga: amati apakah muncul produk atau layanan monetisasi data yang dikerjakan oleh tim sales yang baru direkrut. Bukan semata untuk menaikkan pendapatan BUMD — yang juga penting — tapi untuk melihat apakah ada struktur B2B yang benar-benar berjalan dengan klien nyata di luar penumpang reguler. Itulah tanda bahwa kombinasi AI engineer dan sales executive yang dibuka bersamaan merupakan keputusan yang dikoneksikan, bukan penempatan dua posisi tanpa hubungan yang hanya mengisi struktur organisasi yang sedang diperluas.",
+          "Dalam pengujian editorial Wawasan AI, lowongan seperti ini sebaiknya dibaca sebagai isyarat, bukan jaminan. Banyak BUMN dan BUMD yang sudah membuka posisi serupa sebelumnya, hanya untuk menutupinya enam bulan kemudian ketika bukti dampaknya tidak terkumpul. Yang akan menentukan apakah Transjakarta kali ini berbeda adalah apakah kedua posisi diisi oleh orang yang benar-benar diberi ruang untuk bekerja dengan dukungan atasan dan anggaran yang konsisten, atau hanya dijadikan formalitas rekrutmen untuk menutupi rapat internal yang sudah terlanjur menjanjikan sesuatu ke dewan. Untuk talenta AI di Indonesia, ini juga pengingat bahwa peluang di luar startup dan multinasional sedang tumbuh, dan kalau beberapa BUMD serius membuka posisi serupa dalam satu-dua tahun ke depan, peta karier AI di Indonesia akan berbeda cukup signifikan dari yang terlihat hari ini.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
