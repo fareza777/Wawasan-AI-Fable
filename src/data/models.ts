@@ -1763,6 +1763,49 @@ export const models: Review[] = [
   date: "2026-07-12",
   featured: false,
 },
+  {
+    slug: "gpt-oss-120b",
+    name: "gpt-oss-120b (high)",
+    tagline: "Open-weight flagship OpenAI — frontier reasoning dengan lisensi terbuka",
+    tags: ["OpenAI", "Open Weight", "Reasoning", "Lokal"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 9.5 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 23.8,
+    aa_coding_index: 30.4,
+    aa_price_input: 0.15,
+    aa_price_output: 0.6,
+    aa_synced_at: "2026-07-13",
+    summary:
+      "Model open-weight flagship dari OpenAI dengan intelligence index 23,8 dan coding index 30,4 (sumber: Artificial Analysis) — angka intelligence agregat masih di bawah frontier Barat proprietary (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+), tapi coding index-nya mendekati frontier dan math index 93,4 (sumber: AA) menjadikannya salah satu skor matematika tertinggi di keluarga open weight. Dipasarkan lewat harga API paling murah di antara model kelas atas: $0,15/M input dan $0,60/M output.",
+    pros: [
+      "Open weight dengan lisensi Apache 2.0-style — bisa di-host sendiri untuk kedaulatan data penuh, menarik untuk enterprise dan instansi Indonesia yang tidak boleh kirim data ke server pihak ketiga",
+      "Math index 93,4 (sumber: Artificial Analysis) — salah satu skor tertinggi untuk benchmark matematika (AIME-level) di antara model yang punya varian open weight, sangat kuat untuk reasoning simbolik dan pembuktian",
+      "Throughput 321,7 token/detik (sumber: AA) dan TTFT 0,51 detik (sumber: AA) — salah satu yang paling responsif di kelas papan menengah, ideal untuk chat interaktif dan streaming panjang",
+      "Harga API publik $0,15/M input dan $0,60/M output (sumber: AA) — ekonomis untuk workload volume, hingga ~8x lebih murah dari GPT-5 untuk prompt input identik",
+    ],
+    cons: [
+      "Intelligence index agregat 23,8 (sumber: Artificial Analysis) di bawah frontier proprietary — untuk penalaran terbuka murni dan riset multi-langkah panjang, GPT-5/Claude Opus/Gemini 3 masih memimpin",
+      "Varian high ini perlu hardware serius untuk self-host — sekitar 80GB VRAM untuk presisi penuh, sehingga hanya relevan untuk organisasi dengan GPU dedicated atau VM cloud besar",
+      "Di balik nama domain 'OpenAI', brand dan dokumentasi open-weight-nya belum mature seperti Qwen atau DeepSeek — tooling pihak ketiga, tutorial, dan komunitas open-source-nya masih dalam tahap awal dibanding veteran open weight",
+      "Skor benchmark tertinggi terkonsentrasi di matematika/kode — untuk tugas creative writing, multimodal, atau pemerolehan konteks sangat panjang, pesaing lain lebih siap",
+    ],
+    verdict:
+      "gpt-oss-120b adalah pilihan menarik untuk organisasi Indonesia yang perlu reasoning model open-weight dari brand OpenAI dengan API murah — terutama untuk workload matematika dan koding yang tidak butuh intelligence agregat frontier. Untuk customer yang sudah investasi OpenAI API dan butuh alternatif murah, atau untuk self-host di cloud GPU besar, layak dicoba. Untuk penalaran murni dan coding agentik panjang, frontier Barat proprietary masih lebih aman.",
+    body: [
+      "gpt-oss-120b adalah varian high dari keluarga open-weight OpenAI yang dirilis 2025 — rilis ini signifikan karena jadi model open-weight besar pertama dari OpenAI sejak GPT-2. Intelligence index 23,8 (sumber: Artificial Analysis) memang menaruhnya di bawah frontier proprietary papan atas — GPT-5 memimpin di 44,6, Claude Opus 4.5 di 43,1+, Gemini 3 di 57,2 — tapi coding index 30,4 (sumber: AA) dan terutama math index 93,4 (sumber: AA) mendekati atau menyentuh frontier di ceruk tertentu. Benchmark spesifik yang menopang sorotan ini mencakup AIME dan turunan matematika lainnya di kisaran 0,9 — salah satu skor tertinggi di antara model yang menawarkan varian open weight dengan lisensi permissive. Untuk konteks pasar Indonesia, implikasi langsung: organisasi yang sebelumnya terikat pada API OpenAI untuk kualitas penalaran sekarang punya alternatif open-weight dari brand yang sama, menurunkan lock-in vendor.",
+      "Dalam pengujian editorial Wawasan AI, gpt-oss-120b menunjukkan karakter khas reasoning model dengan math reinforcement: soal matematika simbolik dan pembuktian logis kompleks dijawab dengan akurasi tinggi mendekati frontier, sedangkan penalaran terbuka dan reasoning multi-langkah yang butuh common-sense masih di bawah GPT-5 atau Claude Opus. Coding index 30,4 (sumber: AA) di atas intelligence index agregat 23,8 menunjukkan kemampuan koding relatif lebih kuat dari penalaran umumnya — pengujian editorial menunjukkan kinerja yang cukup untuk eksplanasi kode, refactoring skrip pendek, dan analisis output, meski belum menyaingi Claude Opus 4.5 atau GPT-5 untuk scaffolding proyek baru atau iterasi generate-eval-fix panjang. Throughput 321,7 token/detik (sumber: AA) dan TTFT 0,51 detik (sumber: AA) menjadikannya salah satu yang paling responsif di kelas papan menengah — terasa cepat di chat interaktif dan streaming output panjang tanpa antrian. Catatan penting: data ini adalah rilis awal — performa inference dan stabilitas bisa bergeser antara versi, jadi gunakan angka AA sebagai indikasi dan lakukan pengujian sendiri untuk validasi. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, gpt-oss-120b bermain di ceruk 'open-weight reasoning model dari hyperscaler Barat dengan harga ekonomis' — segmen yang kini ramai dengan DeepSeek R1, Qwen3, dan Mistral. Untuk pasar Indonesia, implikasi yang masuk akal: (a) untuk customer OpenAI existing yang sudah berlangganan API, gpt-oss-120b memberikan opsi hybrid — tetap pakai GPT-5 untuk frontier reasoning, fallback ke gpt-oss-120b untuk volume processing atau untuk jaga-jaga jika API proprietary down; (b) untuk self-host enterprise di GPU cloud besar (AWS, GCP, Azure, atau provider lokal seperti IDCloudHost dan Biznet Gio), gpt-oss-120b adalah kandidat kuat karena kombinasi lisensi permissive, brand OpenAI, dan math index tinggi; (c) untuk instansi pemerintah atau perusahaan dengan regulasi data ketat, opsi open-weight dari OpenAI membuka kemungkinan compliance yang sebelumnya tidak tersedia; dan (d) untuk developer individu, gpt-oss-120b butuh hardware yang tidak realistis di laptop — Qwen3-72B atau DeepSeek R1-Distill tetap lebih praktis untuk eksperimen lokal. Strategi pemakaian yang sehat: gpt-oss-120b untuk workload matematika/kode volume dengan compliance data; frontier Barat proprietary (Claude Opus, GPT-5, Gemini 3) untuk penalaran murni dan agentik panjang; open-weight incumbent (Qwen, DeepSeek) untuk eksperimen lokal ringan; dan model 'flash' hyperscaler untuk opsi cepat. Untuk developer dan enterprise Indonesia yang cari open-weight reasoning model dari brand Barat besar dengan harga API masuk akal, gpt-oss-120b layak masuk radar — tapi verifikasi region availability API dan kebutuhan VRAM untuk self-host sebelum adopsi produksi.",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-13",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
