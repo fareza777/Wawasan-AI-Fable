@@ -2157,6 +2157,56 @@ export const repos: Review[] = [
     updatedAt: "2026-07-13",
     featured: false,
   },
+{
+  slug: "awesome-generative-ai-apps",
+  name: "Awesome Generative AI Apps",
+  tagline: "50+ aplikasi AI generatif siap clone, deploy, dan monetize dalam satu repositori kurasi",
+  tags: ["Generative AI", "AI Apps", "JavaScript", "Open Source"],
+  score: 8.2,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 8.5 },
+    { label: "Komunitas & Momentum", value: 8.5 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Kesiapan Produksi", value: 7.5 },
+  ],
+  summary:
+    "Repositori kurasi yang memetakan lebih dari 50 aplikasi AI generatif siap pakai - generator gambar, alat video, virtual try-on, template AI SaaS, dan integrasi platform - semuanya open-source dan bisa dideploy dengan satu klik lewat Vercel. Tujuannya mempercepat waktu dari ide ke produk jadi dengan menyediakan titik awal yang sudah terbukti untuk berbagai kasus penggunaan AI modern.",
+  highlights: [
+    "Lebih dari 50 aplikasi AI generatif dalam satu repositori: image generator, video tool, virtual try-on, dan AI SaaS template",
+    "Setiap template mendukung deploy satu klik ke Vercel - mempersingkat waktu dari clone ke URL publik",
+    "Kategori luas: generator gambar, video, virtual try-on, AI SaaS boilerplate, dan integrasi platform",
+    "Lisensi MIT - bebas digunakan untuk eksperimen, modifikasi, hingga produk komersial",
+    "Kontributor aktif di JavaScript dan TypeScript dengan fokus pada app full-stack",
+    "Cocok untuk developer indie dan tim kecil yang ingin belajar pattern AI app modern tanpa membangun dari nol",
+    "Dilengkapi dokumentasi setup per template sehingga onboarding relatif cepat",
+    "Topik GitHub: ai-apps, ai-image-generator, ai-saas, ai-tools, ai-video-generator, awesome",
+  ],
+  pros: [
+    "Mempercepat waktu dari ide ke produk jadi: setiap template adalah starting point yang sudah terbukti, bukan boilerplate kosong",
+    "Deploy satu klik ke Vercel menghilangkan friksi DevOps yang sering menghambat iterasi awal",
+    "Lisensi MIT memberi kebebasan penuh untuk komersial - tidak ada jebakan lisensi restrictive",
+    "Kurasi beragam kasus penggunaan - berguna sebagai referensi pattern untuk hampir semua kategori AI app modern",
+  ],
+  cons: [
+    "Sekitar 50+ aplikasi adalah titik awal, bukan produk jadi - tetap perlu modifikasi substantial untuk use case spesifik",
+    "Bergantung pada API pihak ketiga (OpenAI, Replicate, dan lain-lain) - biaya operasional bisa naik tajam saat traffic naik",
+    "Tidak semua template diperbarui dengan frekuensi sama - perlu audit sebelum mengadopsi untuk produksi",
+  ],
+  verdict:
+    "Repositori yang sangat praktis untuk developer yang ingin melihat AI app nyata dalam berbagai kategori dan belajar dari kode yang sudah berjalan. Bukan sumber teori, tapi showroom pattern yang siap pakai - cocok untuk eksplorasi cepat dan bootstrap produk awal.",
+  body: [
+    "Salah satu tantangan terbesar developer yang baru masuk ke dunia AI application bukan pemahaman model atau API, melainkan dari mana harus mulai menulis kode. Awesome Generative AI Apps menjawab itu dengan cara yang langsung: lebih dari 50 aplikasi AI generatif yang sudah jalan, terdokumentasi, dan bisa dideploy ke Vercel dalam hitungan menit. Mulai dari generator gambar dan video, virtual try-on, hingga template SaaS lengkap dengan billing - semua dikurasi dalam satu repositori yang fokus pada real-world implementation.",
+    "Yang paling menarik dari repositori ini adalah konsistensi pendekatannya: setiap aplikasi mengikuti pattern yang sama (Next.js + API provider pilihan + UI yang bersih), sehingga developer bisa membaca beberapa template dan langsung memahami idiom yang dipakai. Deploy satu klik ke Vercel berarti transisi dari clone ke URL publik hanya butuh beberapa menit - menghilangkan friksi DevOps yang sering membunuh momentum iterasi awal. Lisensi MIT memberi kebebasan penuh untuk penggunaan komersial, fork, dan modifikasi.",
+    "Dalam pengujian editorial Wawasan AI, repositori ini paling bermanfaat sebagai katalog pattern: daripada membaca dokumentasi API yang abstrak, developer bisa membaca kode aplikasi yang sudah jalan dan melihat bagaimana panggilan API diterjemahkan menjadi UX yang usable. Untuk konteks Indonesia, ini sangat relevan bagi tim kecil dan developer indie yang ingin meluncurkan produk AI tanpa harus merekrut full-stack engineer khusus - template yang ada sudah mencakup struktur yang dibutuhkan.",
+    "Keterbatasan yang perlu dipahami: repositori ini adalah titik awal, bukan produk jadi. Sekitar 50+ aplikasi adalah showcase yang perlu dimodifikasi substantial untuk use case spesifik. Banyak template bergantung pada API komersial (OpenAI, Replicate, dan lain-lain), sehingga biaya operasional bisa naik tajam saat traffic meningkat - perlu strategi caching atau self-hosting model untuk produksi serius. Sebagai referensi pattern dan bootstrap awal, Awesome Generative AI Apps adalah salah satu repositori paling praktis di kategorinya.",
+  ],
+  link: "https://github.com/Anil-matcha/awesome-generative-ai-apps",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-14",
+  updatedAt: "2026-07-14",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
