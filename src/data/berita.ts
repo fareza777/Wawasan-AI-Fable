@@ -1699,6 +1699,54 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "ipari-kabupaten-buru-ai-penyuluhan-agama-era-digital",
+    title: "Penyuluh Agama di Kabupaten Buru Diajak Bicara dengan AI: Ketika Dakwah Mulai Memakai Alat yang Biasa Dipakai Anak Kantoran",
+    excerpt:
+      "Ketua IPARI Kabupaten Buru mengikuti pelatihan penyuluhan interaktif berbantu AI yang digelar Kemenag — sebuah eksperimen sunyi di daerah 3T yang menarik untuk dibaca dari kacamata keterbatasan, bukan dari kacamata optimisme promosi.",
+    category: "Analisis",
+    date: "2026-07-14",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ada satu kelompok pekerja di Indonesia yang hampir tidak pernah masuk ke headlines adopsi AI: penyuluh agama. Bukan ASN Kemenag secara umum, melainkan mereka yang sehari-hari turun ke kampung, ke majelis taklim, ke rumah ibadah, ke kelompok-kelompok kecil yang jauh dari kamera pers. Ketika Ketua Ikatan Penyuluh Agama Republik Indonesia (IPARI) Kabupaten Buru, Maluku, mengikuti Pelatihan Penyuluhan Interaktif Berbantu AI yang digelar Kementerian Agama, yang terjadi sebenarnya adalah sesuatu yang lebih menarik dari biasanya: Kemenag mencoba membawa bahasa AI ke tangan orang-orang yang pekerjaannya lebih banyak mendengar daripada menulis.",
+          "Penting untuk tidak membesar-besarkan berita ini. Pelatihan seperti ini belum tentu berarti perubahan cara kerja di lapangan, dan satu orang yang dilatih belum tentu mengubah perilaku ratusan penyuluh lain di satu kabupaten. Tapi tepat untuk dibaca sebagai isyarat arah: Kemenag, lewat IPARI, sedang menguji apakah AI bisa menjadi alat yang berguna untuk profesi yang pekerjaannya adalah percakapan — dan itu bukan pekerjaan yang mudah diotomasi.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya dilatihkan",
+        paragraphs: [
+          "Penyuluh agama bukan penceramah satu arah. Mereka bekerja dalam format kelompok kecil, dengan jemaah yang punya pertanyaan berbeda-beda, latar belakang berbeda, dan kebutuhan bimbingan yang tidak bisa dijawab dengan satu khutbah. Ketika Kemenag membawa AI ke pelatihan ini, yang dilatihkan kemungkinan besar bukan bagaimana menggantikan peran penyuluh, melainkan bagaimana membantu pekerjaan administratif dan persiapan materi yang selama ini menyita waktu: menyusun outline pengajian mingguan, mencari dalil dan riwayat yang relevan, menyesuaikan bahasa untuk audiens kampung versus audiens pesantren, dan membuat rangkuman tanya-jawab yang rapi setelah sesi.",
+          "Di konteks itulah AI generatif punya nilai praktis yang jelas. Penyuluh yang biasanya menulis rangkuman kegiatan di buku laporan akhir bulan kini bisa meminta model untuk merapikan catatan lapangan menjadi paragraf rapi, dengan tetap menyunting ulang sebelum diserahkan ke atasan. Yang perlu dijaga di sini bukan teknologinya, melainkan batasannya: hasil AI untuk materi keagamaan tetap harus diverifikasi manual oleh penyuluh yang memahami konteks audiensnya, karena salah memparafrase ayat atau riwayat adalah kerusakan yang tidak bisa dipulihkan hanya dengan revisi prompt.",
+        ],
+      },
+      {
+        heading: "Kenapa lokasi dan formatnya penting",
+        paragraphs: [
+          "Kabupaten Buru bukan pilihan acak untuk pelatihan seperti ini. Sebagai bagian dari Provinsi Maluku, kabupaten ini termasuk kategori daerah 3T (terdepan, terluar, tertinggal) — infrastruktur internet tidak merata, akses ke laptop pribadi tidak selalu ada, dan banyak penyuluh yang usianya sudah di atas 45. Ketika Kemenag memilih untuk memulai pilot di sini, ada dua kemungkinan: atau ini adalah kebijakan afirmatif yang serius untuk memastikan penyuluh di daerah 3T tidak ketinggalan kereta AI, atau ini adalah kejuaraan simbolis yang lebih banyak menghasilkan berita daripada keterampilan baru. Membedakannya hanya bisa dilakukan enam sampai dua belas bulan ke depan dengan menanyakan apakah workshop yang sama diikuti dengan pendampingan rutin.",
+          "Format interaktif juga menarik untuk dicermati. Kata interaktif di pelatihan seperti ini sering dipakai longgar — bisa berarti peserta benar-benar praktek menggunakan AI, atau hanya menonton dan berdiskusi tanpa praktik. Yang perlu pembaca Wawasan AI waspadai adalah hype yang sering menyertai pengumuman pelatihan AI di instansi pemerintah: workshop tiga hari, foto bersama, rilis berita, lalu tidak ada kelanjutan. Yang menentukan apakah pelatihan ini benar-benar berdampak adalah apakah ada tahap lanjutan yang memaksa peserta mempraktikkan alatnya di pekerjaan rutin dan melaporkan hasilnya.",
+        ],
+      },
+      {
+        heading: "Risiko yang harus dijaga",
+        paragraphs: [
+          "Risiko pertama: ketergantungan pada narasi tunggal. AI generatif dilatih dengan data teks yang banyaknya bias terhadap satu mazhab atau satu tradisi keilmuan. Kalau penyuluh agama di daerah meminta model menyusun khutbah Jumat atau ceramah pengajian, ada kemungkinan ia menerima hasil yang condong ke satu tafsir tanpa disadari. Untuk konteks Indonesia yang majemuk seperti Kabupaten Buru, dengan latar belakang Islam, Kristen, dan kepercayaan lokal yang hidup berdampingan, ini bukan risiko kecil. Penyuluh harus diperlengkapi dengan kemampuan membaca hasil AI secara kritis, bukan hanya kemampuan menulis prompt yang lebih panjang.",
+          "Risiko kedua: keamanan data jemaah. Percakapan antara penyuluh dan jemaah kadang memuat hal yang sangat pribadi — masalah keluarga, keraguan iman, pertanyaan tentang kehidupan yang tidak akan pernah ditulis di laporan resmi. Kalau data percakapan itu masuk ke layanan AI publik untuk diproses, ia bisa tersimpan di server yang tidak kita kuasai. Untuk konteks seperti ini, model lokal yang dijalankan di perangkat Kemenag Kabupaten adalah satu-satunya jalur yang aman, dan itu berarti investasi infrastruktur yang tidak kecil.",
+          "Risiko ketiga: beban administratif tambahan. Ironi yang sering terjadi pada pelatihan AI di instansi pemerintah adalah alat baru dipakai hanya untuk mempercepat pembuatan laporan, bukan untuk memperbaiki pekerjaan inti. Kalau penyuluh agama pulang dari pelatihan dan yang berubah hanya cara ia menulis laporan bulanan — sementara ceramah dan bimbingannya masih sama seperti sebelumnya — maka yang terjadi bukan transformasi, melainkan adminstrasi yang lebih rapi di atas pekerjaan lama. Itu bukan kiamat, tapi juga bukan kabar baik.",
+        ],
+      },
+      {
+        heading: "Apa yang layak dipantau dalam enam sampai dua belas bulan ke depan",
+        paragraphs: [
+          "Indikator paling sederhana: cek apakah Kemenag Kabupaten Buru atau IPARI daerah mempublikasikan dokumentasi lanjutan dari pelatihan ini — bukan berupa rilis tunggal, tapi berupa laporan periodik, contoh materi yang dibantu AI, atau testimoni penyuluh yang sudah mempraktikkannya. Kalau ada, kemungkinan besar inisiatif ini punya kelanjutan. Kalau hanya ada satu rilis dan tidak terdengar kabarnya lagi, pola itu sudah kita kenal terlalu baik dari banyak pelatihan AI di sektor publik Indonesia.",
+          "Indikator kedua: amati apakah muncul materi keagamaan — ceramah, pengajian, bimbingan — yang menggunakan AI sebagai alat bantu dan diakui secara terbuka oleh penyuluhnya. Bukan berarti penyuluh harus mengakui setiap kali memakai AI, tapi transparansi pada atasan dan jemaah adalah tanda bahwa penggunaan AI sudah dianggap wajar, bukan sesuatu yang disembunyikan karena khawatir dianggap malas atau tidak otentik.",
+          "Indikator ketiga: lihat apakah pelatihan serupa diperluas ke kabupaten lain di Maluku atau ke provinsi 3T lain. Skala kecil di satu kabupaten adalah eksperimen; replikasi ke banyak daerah adalah kebijakan. Keduanya perlu waktu untuk dibedakan, dan membedakannya lebih berguna daripada menghakimi pilot pertama.",
+          "Dalam pengujian editorial Wawasan AI, kabar seperti pelatihan AI untuk penyuluh agama di Kabupaten Buru sebaiknya dibaca sebagai permulaan yang menarik, bukan sebagai bukti transformasi. Yang menentukan apakah kabar ini akan terasa di jemaah-jemaah kecil yang dikunjungi penyuluh adalah apakah Kemenag berani menyediakan pendampingan pasca-pelatihan yang konsisten, infrastruktur yang aman untuk data percakapan, dan kurikulum yang mengajarkan keterbacaan kritis terhadap hasil AI, bukan hanya kemahiran menulis prompt. Kalau iya, penyuluh agama di Indonesia bisa menjadi salah satu kelompok pekerja yang paling menarik untuk diamati dalam dua tahun ke depan — karena mereka adalah profesi yang bekerja dalam percakapan, dan percakapan adalah medan di mana AI generatif paling sulit diterapkan tanpa kehilangan makna. Kalau tidak, pelatihan ini akan masuk ke daftar panjang inisiatif Kemenag yang bagus untuk headline dan mudah untuk dilupakan, dan kita akan kembali ke pertanyaan lama tentang bagaimana teknologi bisa benar-benar menyentuh mereka yang pekerjaannya tidak terlihat di layar tetapi terasa di lingkungan paling dekat dengan kehidupan warga.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
