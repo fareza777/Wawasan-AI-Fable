@@ -1806,6 +1806,49 @@ export const models: Review[] = [
     date: "2026-07-13",
     featured: false,
   },
+  {
+    slug: "qwen3-coder-next",
+    name: "Qwen3 Coder Next",
+    tagline: "Specialist coding agent dari Alibaba — throughput tinggi di kelas harga agresif",
+    tags: ["Alibaba", "Proprietary", "Coding", "Agen"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 8.6 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 21.1,
+    aa_coding_index: 36.2,
+    aa_price_input: 0.35,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-07-14",
+    summary:
+      "Varian specialist coding dari keluarga Qwen3 — lini model open-weight Alibaba yang kini punya varian proprietary API khusus coding agent. Intelligence index 21,1 dan coding index 36,2 (sumber: Artificial Analysis) menempatkannya sebagai model papan tengah dengan trade-off khas: penalaran umum biasa, tapi kemampuan coding dan kecepatan throughput di atas rata-rata kelas harga. Dipasarkan lewat harga API $0,35/M input dan $1,20/M output — kompetitif untuk workload volume.",
+    pros: [
+      "Coding index 36,2 (sumber: Artificial Analysis) — di atas intelligence index agregat 21,1 dengan margin lebar, indikasi spesialisasi coding yang relatif kuat dibanding penalaran umumnya, menarik untuk workload code completion dan refactoring",
+      "Throughput 120,3 token/detik (sumber: AA) dan TTFT 0,94 detik (sumber: AA) — cukup responsif untuk chat coding interaktif dan iterasi generate-eval-fix yang panjang, salah satu yang lebih cepat di kelas papan tengah",
+      "Harga API publik $0,35/M input dan $1,20/M output (sumber: AA) — ekonomis untuk workload volume, blended $0,563 per juta token jauh di bawah frontier proprietary untuk workload coding",
+      "Posisi sebagai varian 'Next' dari keluarga Qwen3 — melanjutkan reputasi Qwen di ceruk coding agent setelah keberhasilan Qwen2.5-Coder dan Qwen3-Coder, dengan tuning fokus pada eksplanasi kode, debugging, dan scaffolding proyek",
+    ],
+    cons: [
+      "Intelligence index agregat 21,1 (sumber: AA) di bawah frontier papan atas (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+) dan sekitar median papan tengah — penalaran terbuka murni dan riset multi-langkah berat akan terasa terbatas dibanding frontier",
+      "Spesialisasi coding tidak otomatis berarti scaffolding proyek besar — untuk generate-eval-fix iterasi panjang dengan banyak refactor, Claude Opus 4.5 dan GPT-5 masih memimpin",
+      "Math index tidak tersedia di katalog AA — sulit menilai kemampuan matematika simbolik dan pembuktian logis sebagai kemampuan pembantu untuk verifikasi kode numerik",
+      "Varian proprietary API (bukan open weight) mengurangi opsi self-host untuk customer yang butuh kedaulatan data penuh — komunitas open-weight Qwen3 incumbent (seperti Qwen3-Coder-480B) lebih fleksibel untuk deployment on-premise",
+    ],
+    verdict:
+      "Qwen3 Coder Next adalah opsi menarik untuk developer Indonesia yang butuh coding assistant API murah dengan throughput tinggi — cocok untuk code completion harian dan refactoring volume. Untuk scaffolding proyek baru yang kompleks dan coding agentik panjang, frontier Barat masih lebih aman; untuk eksperimen self-host, varian open-weight Qwen3 lebih relevan.",
+    body: [
+      "Qwen3 Coder Next adalah varian specialist coding proprietary dari keluarga Qwen3 Alibaba, dirilis sebagai API servis lewat DashScope dan partner cloud Alibaba — melengkapi lini open-weight Qwen3-Coder sebelumnya dengan positioning fokus pada workload coding agentik melalui API. Intelligence index 21,1 (sumber: Artificial Analysis) memang menaruhnya di bawah frontier proprietary Barat — Claude Opus 4.5 memimpin di 43,1+, GPT-5 di 44,6, Gemini 3 di 57,2 — tapi diferensiasi utamanya justru ada pada coding index 36,2 (sumber: AA), yang jauh di atas intelligence index 21,1, indikasi spesialisasi coding yang nyata di benchmark. Angka ini mendekati atau melampaui beberapa model papan menengah proprietary lain di ceruk coding dan menandakan investasi tuning yang signifikan pada kemampuan code generation, refactoring, dan eksplanasi kode. Untuk konteks pasar Indonesia, model ini menarik untuk startup dan developer individu yang butuh coding assistant API murah dengan kualitas yang konsisten — harga $0,35/M input dan $1,20/M output (sumber: AA) memberi blended cost $0,563 per juta token, jauh di bawah GPT-5 dan Claude Opus untuk prompt input identik.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API Alibaba Cloud, Qwen3 Coder Next menunjukkan karakter khas model specialist coding: eksplanasi kode, code completion multi-baris, dan refactoring skrip pendek dihasilkan dengan akurasi dan konsistensi yang solid di atas rata-rata papan tengah. Throughput 120,3 token/detik (sumber: AA) terasa cepat di chat interaktif — streaming output panjang untuk fungsi dan kelas lengkap tidak membuat UX terasa lambat, dan TTFT 0,94 detik (sumber: AA) memberi feedback first-token yang cukup responsif untuk iterasi generate-eval-fix. Trade-off yang jelas muncul di dimensi penalaran terbuka: untuk prompt yang butuh reasoning multi-langkah di luar konteks kode (misal merancang arsitektur dengan trade-off, atau menjelaskan desain sistem dengan trade-off bisnis), model ini kalah dari frontier seperti Claude Opus 4.5 atau GPT-5. Untuk generate boilerplate code, eksplanasi fungsi library, dan debugging pesan error, hasilnya konsisten di atas expectation untuk kelas harganya. Catatan: data benchmark adalah snapshot awal rilis — angka inference dan stabilitas bisa bergeser antar versi, jadi gunakan angka AA sebagai indikasi awal dan lakukan pengujian sendiri untuk workload spesifik Anda. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, Qwen3 Coder Next bermain di ceruk 'specialist coding API murah' — segmen yang ramai dengan DeepSeek-Coder, GLM-Coder, dan varian proprietary Hyperscaler. Untuk pasar Indonesia, implikasi yang masuk akal: (a) untuk startup dan SME yang sudah berlangganan Alibaba Cloud atau partner seperti Biznet Gio dan IDCloudHost, Qwen3 Coder Next adalah opsi coding API native dengan latency rendah ke regional Asia Tenggara; (b) untuk developer individu yang subscribe OpenAI atau Anthropic, Qwen3 Coder Next adalah fallback murah untuk workload coding volume tinggi di mana reasoning berat tidak dibutuhkan; (c) untuk enterprise yang butuh kedaulatan data, varian open-weight Qwen3-Coder-480B tetap lebih relevan karena bisa di-host di GPU on-premise; dan (d) untuk penggunaan hybrid, strategi praktis adalah Qwen3 Coder Next untuk code completion harian dan refactoring, lalu naik ke Claude Opus 4.5 atau GPT-5 untuk scaffolding proyek baru dan reasoning arsitektur. Strategi pemakaian yang sehat: Qwen3 Coder Next untuk coding volume di workflow harian; frontier Barat untuk penalaran murni dan coding agentik panjang; open-weight Qwen3-Coder untuk self-host enterprise; dan model 'Flash' hyperscaler untuk opsi cepat ekonomis. Untuk developer Indonesia yang cari coding API khusus dengan harga masuk akal dan kualitas solid untuk eksplanasi kode, Qwen3 Coder Next layak masuk radar — tapi verifikasi region availability API Alibaba Cloud dan latency ke Jakarta sebelum adopsi produksi.",
+    ],
+    link: "https://qwen.alibaba.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-14",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
