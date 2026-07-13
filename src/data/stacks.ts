@@ -1507,7 +1507,48 @@ export const stacks: Review[] = [
     date: "2026-07-12",
     featured: false,
   },
-];
+{
+    slug: "make",
+    name: "Make",
+    tagline: "Workflow automation visual dengan graph builder drag-and-drop dan 1.500+ integrasi",
+    tags: ["Make", "Freemium", "Workflow Automation", "Visual Builder"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 8.7 },
+      { label: "Pengalaman Pengguna", value: 9.0 },
+      { label: "Ekosistem & Integrasi", value: 9.2 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "Make (sebelumnya Integromat) memposisikan diri sebagai platform workflow automation visual dengan graph builder yang menampilkan alur sebagai kanvas node dan garis, lebih mudah di-debug dibanding list-step ala Zapier. Untuk pengguna non-developer sampai teknis menengah yang butuh otomasi menengah-kompleks tanpa harus nulis kode panjang, Make adalah sweet spot antara kesederhanaan Zapier dan kekuatan n8n.",
+    pros: [
+      "Graph builder visual dengan canvas drag-and-drop jauh lebih mudah dipahami untuk workflow multi-cabang dibanding list-step ala Zapier — alur error dan logika terlihat sekilas dalam satu kanvas",
+      "Ekosistem 1.500+ aplikasi (Google Workspace, Slack, Notion, Salesforce, HubSpot, Stripe, Airtable, Tokopedia via HTTP, dan lain-lain) plus kemampuan HTTP dan webhook native untuk API custom apa pun",
+      "Free tier 1.000 operasi per bulan cukup untuk eksperimen awal dan automasi personal skala kecil — tidak ada competitor di kelas visual yang kasih alokasi gratis selonggar ini",
+      "Built-in AI module sejak 2024 (OpenAI, Anthropic, Google Gemini, Mistral) dengan prompt template, function calling, dan image generation langsung di canvas tanpa setup tambahan",
+      "Built-in data transformer dengan ekspresi visual untuk mapping field, filter array, agregasi, dan iterator — pola yang lebih ramah untuk non-developer dibanding JavaScript node di n8n",
+    ],
+    cons: [
+      "Harga per operasi lebih mahal dari n8n self-host untuk volume tinggi: Pro $16/bulan untuk 10.000 operasi (~Rp 260 ribu), bandingkan n8n Starter $24/bulan untuk 10.000 eksekusi dengan self-host gratis",
+      "Workflow sangat kompleks (50+ node dengan branching berlapis) membuat kanvas penuh dan sulit di-maintain — di titik ini n8n atau kode custom biasanya lebih scalable",
+      "Free tier 1.000 operasi/bulan cepat habis kalau workflow memicu multi-step (tiap modul dihitung operasi terpisah) — eksperimen sering mentok di mid-trial",
+      "Tidak ada opsi self-host — seluruh data dan workflow melewati infrastruktur Make (berbasis EU/US), jadi kurang cocok untuk industri dengan UU PDP ketat atau yang wajib menyimpan data lokal",
+      "Komunitas dan tutorial bahasa Indonesia masih terbatas; dokumentasi resmi dominan Inggris, dan forum komunitas aktifnya terutama di Reddit r/makeautomation (mayoritas pengguna AS/EU)",
+    ],
+    verdict:
+      "Standar emas untuk workflow automation visual di kelasnya — pilihan utama untuk tim marketing, operasional, dan SMB yang butuh otomasi kuat tanpa self-host atau JavaScript. n8n tetap lebih murah dan fleksibel untuk volume besar, Zapier lebih cepat untuk kebutuhan kasual, tapi Make adalah sweet spot yang paling seimbang di 2026. Catatan utamanya adalah harga per operasi yang lebih mahal dari n8n self-host untuk workload di atas 50.000 operasi/bulan.",
+    body: [
+      "Make adalah platform workflow automation visual yang lahir di Prague pada 2012 dengan nama Integromat, lalu di-rebrand jadi Make pada 2022 setelah akuisisi oleh Celonis. Versi 2026-nya, yang dibangun di atas arsitektur web modern dengan backend Go dan frontend React, menawarkan lebih dari 1.500 aplikasi pre-built (Google Workspace, Slack, Notion, Salesforce, HubSpot, Stripe, Airtable, MySQL, PostgreSQL, dan ratusan lainnya) plus modul HTTP, webhook, email parser, dan AI generatif. Model bisnisnya murni SaaS dengan lima tier: Free (1.000 operasi/bulan, $0), Core (10.000 operasi, $9/bulan ditagih tahunan atau $10.59/bulan bulanan), Pro (10.000 operasi + advanced features, $16/bulan tahunan atau $18.82 bulanan), Teams (kolaborasi + audit log, $29/bulan tahunan atau $34.12 bulanan), dan Enterprise (custom dengan SLA, SSO, dan data residency EU/US). Setiap workflow dijalankan sebagai kumpulan operasi — satu trigger + satu action biasanya dihitung 1-2 operasi, tapi loop dan iterator mengalikan jumlah ini sesuai jumlah iterasi.",
+      "Yang membuat Make menonjol di kelas visual adalah graph builder-nya. Alur ditampilkan sebagai kanvas drag-and-drop dengan node-node yang dihubungkan garis, persis seperti workflow diagram yang biasa digambar di Miro atau Lucidchart. Pendekatan ini punya keuntungan besar dibanding list-step ala Zapier: branching (IF, Switch, Router) terlihat sekilas sebagai percabangan visual, bukan baris demi baris yang harus di-trace mental. Setiap node menampilkan input dan output di sisi yang relevan (kiri-kanan), tooltip menjelaskan field yang tersedia, dan panel kanan menampilkan konfigurasi + history eksekusi per-node. Untuk debugging, klik kanan node lalu View executions menampilkan payload input-output aktual — fitur yang sangat membantu untuk tracing kenapa workflow gagal di tengah. Sejak 2024, Make juga punya AI module bawaan (OpenAI GPT-5.x, Anthropic Claude 4.x, Google Gemini 3.x, Mistral) yang bisa dipanggil sebagai node biasa dengan prompt template, function calling untuk tool use, dan dukungan image generation — pola yang menyederhanakan banyak use case yang biasanya butuh setup custom di n8n atau kode manual.",
+      "Ekosistem integrasi adalah kekuatan utama kedua. Untuk konteks Indonesia, integrasi langsung ke platform lokal memang terbatas — Tokopedia, Shopee, dan TikTok Shop belum punya modul resmi Make (umumnya pengguna pakai HTTP node + API resmi mereka), tapi untuk SaaS global coverage-nya sangat luas: Salesforce, HubSpot, Stripe, Xendit (untuk payment gateway lokal), Midtrans, dan API banking via webhook. Modul HTTP + webhook + JSON parser memungkinkan koneksi ke API apa pun yang expose dokumentasi publik, menurunkan gap untuk service yang tidak punya modul dedicated. Data transformer bawaan (iterator, aggregator, filter, array mapper) cukup kuat untuk 80 persen kebutuhan data shaping tanpa harus nulis kode, dan ekspresi Make (Miranda DSL mereka) relatif intuitif untuk hal-hal seperti `{{if empty(1.result)}}fallback{{else}}{{1.result}}{{end}}`. Dokumentasi resmi lengkap dengan video tutorial, recipe template, dan academy gratis (Make Academy) yang mengeluarkan sertifikat.",
+      "Untuk pengguna dan tim di Indonesia, Make punya beberapa use case spesifik yang bernilai tinggi. Pertama, untuk e-commerce dan SMB yang jualan di marketplace global (Amazon, eBay, Etsy, Shopify) sambil mengelola inventori lokal, workflow sync-order + update-stok bisa di-setup dalam hitungan jam tanpa coding — ROI langsung terasa kalau menggantikan admin dedicated. Kedua, untuk agency marketing dan operasional yang mengelola banyak akun klien, workflow cross-platform (mis. tarik lead dari Facebook Ads ke Google Sheets ke CRM ke Slack notif) sangat scalable di kanvas Make. Ketiga, untuk content creator dan tim marketing yang mau pipeline AI generatif (generate caption Instagram via GPT, generate hero image via DALL-E, schedule post via Buffer), Make adalah glue yang sangat accessible. Pembayaran subscription luar negeri tetap kena PPN 11 persen dan charge kartu kredit internasional, markup total sekitar 12-15 persen; pengguna lokal biasanya pakai kartu kredit, PayPal, atau top-up via platform pihak ketiga. Modal teknis: tidak ada, karena Make sepenuhnya cloud-based dan berbasis browser — cukup akun email dan browser modern. Standar harga: Free $0, Core $9/bulan (~Rp 150 ribu) untuk 10.000 operasi, Pro $16/bulan (~Rp 260 ribu), Teams $29/bulan (~Rp 470 ribu), Enterprise custom. Untuk tim Indonesia yang butuh workflow automation visual kelas dunia tanpa self-host atau JavaScript, Make adalah pilihan paling seimbang — bukan yang paling murah, tapi yang paling usable untuk rentang use case luas.",
+    ],
+    link: "https://www.make.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-13",
+    featured: false,
+  },];
 
 export function getStack(slug: string) {
   return stacks.find((s) => s.slug === slug);

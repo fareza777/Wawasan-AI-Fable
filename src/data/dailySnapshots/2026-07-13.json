@@ -1,0 +1,147 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "13 Juli 2026",
+  "period": {
+    "date": "2026-07-13",
+    "label": "13 Juli 2026",
+    "path": "/repo/daily/2026/07/13"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-13T01:17:59.890Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "JustVugg/colibri",
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "githubUrl": "https://github.com/JustVugg/colibri",
+      "trendshiftUrl": "https://trendshift.io/repositories/73945",
+      "language": "C",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-01T12:27:49Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+      "owner": "vinhhien112",
+      "repo": "Three.js-Object-Sculptor-Codex-Plugin",
+      "description": "Codex plugin that turns attached object images into code-only, animation-ready procedural Three.js models.",
+      "githubUrl": "https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+      "trendshiftUrl": "https://trendshift.io/repositories/77853",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-07-09T16:23:29Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "nagisanzenin/engram",
+      "owner": "nagisanzenin",
+      "repo": "engram",
+      "description": "Evidence-based learning engine for Claude Code — first-principles curricula, free-recall verification with receipts, FSRS-scheduled memory, and explorable artifacts. Learn anything; keep it.",
+      "githubUrl": "https://github.com/nagisanzenin/engram",
+      "trendshiftUrl": "https://trendshift.io/repositories/73576",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-07-05T09:53:10Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "par274/sharpemu",
+      "owner": "par274",
+      "repo": "sharpemu",
+      "description": "An experimental PlayStation 5 emulator project.",
+      "githubUrl": "https://github.com/par274/sharpemu",
+      "trendshiftUrl": "https://trendshift.io/repositories/79103",
+      "language": "C#",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-03-11T12:46:36Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "oso95/scroll-world",
+      "owner": "oso95",
+      "repo": "scroll-world",
+      "description": "Claude Code skill/plugin: immersive scroll-scrubbed 'fly through the world' landing pages generated with Higgsfield (Emons-style diorama flights, seamless connectors, portable scrub engine).",
+      "githubUrl": "https://github.com/oso95/scroll-world",
+      "trendshiftUrl": "https://trendshift.io/repositories/78158",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-06T21:28:58Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "davidondrej/skills",
+      "owner": "davidondrej",
+      "repo": "skills",
+      "description": "access to david ondrej's personal agent skills",
+      "githubUrl": "https://github.com/davidondrej/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/74399",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-24T12:32:04Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "oomol-lab/open-connector",
+      "owner": "oomol-lab",
+      "repo": "open-connector",
+      "description": "Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "githubUrl": "https://github.com/oomol-lab/open-connector",
+      "trendshiftUrl": "https://trendshift.io/repositories/73900",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "Authentication"
+      ],
+      "dateCreated": "2026-06-29T10:49:36Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "rand-monster/lowpoly-tree-generator",
+      "owner": "rand-monster",
+      "repo": "lowpoly-tree-generator",
+      "description": "Parameter-driven low-poly tree generation, rigging, and animation for Three.js",
+      "githubUrl": "https://github.com/rand-monster/lowpoly-tree-generator",
+      "trendshiftUrl": "https://trendshift.io/repositories/80606",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-07-10T14:30:34Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "maxktz/superzed",
+      "owner": "maxktz",
+      "repo": "superzed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "githubUrl": "https://github.com/maxktz/superzed",
+      "trendshiftUrl": "https://trendshift.io/repositories/80603",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-03-07T08:37:51Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Nmzik/KytyPS5",
+      "owner": "Nmzik",
+      "repo": "KytyPS5",
+      "description": "PlayStation 5 emulator for Windows",
+      "githubUrl": "https://github.com/Nmzik/KytyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/79105",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-06-09T14:58:38Z"
+    }
+  ]
+}
