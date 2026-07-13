@@ -1033,6 +1033,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                             "Dilengkapi CLI mindwalk serve (scan + buka UI di port acak), mindwalk open <session.jsonl> untuk replay spesifik, dan mindwalk build/trace untuk ekspor JSON citymap atau normalized trace — ringan dipasang via curl one-liner, Windows/Linux/macOS semua didukung.",
                           ],
                         },
+                        "Graphify-Labs/graphify": {
+                          description:
+                            "Skill untuk Claude Code yang mengubah folder apa pun — kode, PDF, screenshot, bahkan tulisan tangan di whiteboard — jadi knowledge graph interaktif yang persisten lintas session.",
+                          highlights: [
+                            "Skill `/graphify` untuk Claude Code: jalankan di folder mana pun (codebase, paper, notes, screenshot), dan agen baca pakai multimodal vision untuk bangun graph yang menjelaskan konsep + relasi di dalamnya — bukan ringkasan teks, melainkan struktur yang bisa di-query.",
+                            "Klaim 71,5× lebih hemat token dibanding baca ulang raw files — sekali graphify, query minggu kemudian ('apa yang menghubungkan attention ke optimizer?') langsung dijawab dari graph.json tanpa harus ingest ulang dokumen.",
+                            "Output lengkap: graph.html interaktif (klik node, filter komunitas), Obsidian vault, wiki artikel per komunitas, GRAPH_REPORT.md berisi 'god nodes' dan pertanyaan lanjutan, plus SHA256 cache supaya re-run cuma proses file yang berubah.",
+                            "Plug ke coding agent lewat SKILL.md standar — tersedia di Claude Code, OpenCode, Codex, Cursor, Gemini CLI. Cocok untuk researcher, engineer, atau siapa saja yang kerja dengan banyak aset digital dan muak dengan grep/folder-crawl manual.",
+                          ],
+                        },
+                        "Nutlope/hallmark": {
+                          description:
+                            "Design skill anti-AI-slop dari Together AI untuk Claude Code, Cursor, dan Codex — kasih coding agent 20 tema, 57 slop-test gate, dan 4 verb agar UI yang di-generate punya karakter, bukan template default.",
+                          highlights: [
+                            "Skill dari tim Together AI yang menolak output 'AI banget': agent pilih makrostruktur berdasarkan brief, pilih satu dari 20 tema, lalu jalankan 57 slop-test gate plus self-critique sebelum emit — hasilnya dua halaman untuk brief berbeda tidak terasa warna-swap dari template yang sama.",
+                            "Empat verb praktis: default (bangun UI baru), `hallmark audit` (skor kode existing tanpa edit), `hallmark redesign` (buang struktur, rebuild dengan fingerprint baru), dan `hallmark study` (ekstrak DNA desain dari URL/screenshot, tolak pixel-clone dan template berbayar).",
+                            "Mode 'Custom' untuk brief yang tidak masuk katalog: agent bikin palette, tipografi, dan layout tailor-made — aturan slop-test sama, tapi tanpa template di belakang, sehingga setiap output punya sidik jari desain sendiri.",
+                            "Open source dan kompatibel Claude Code, Cursor, Codex — relevan untuk founder, designer, atau siapa saja yang muak lihat output AI agent terasa generik dan ingin workflow desain dengan 'taste' yang konsisten.",
+                          ],
+                        },
             };
 
             // Helper: lookup dengan fallback ke template-generated highlights
