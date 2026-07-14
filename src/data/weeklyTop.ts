@@ -1051,11 +1051,41 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                             "Empat verb praktis: default (bangun UI baru), `hallmark audit` (skor kode existing tanpa edit), `hallmark redesign` (buang struktur, rebuild dengan fingerprint baru), dan `hallmark study` (ekstrak DNA desain dari URL/screenshot, tolak pixel-clone dan template berbayar).",
                             "Mode 'Custom' untuk brief yang tidak masuk katalog: agent bikin palette, tipografi, dan layout tailor-made — aturan slop-test sama, tapi tanpa template di belakang, sehingga setiap output punya sidik jari desain sendiri.",
                             "Open source dan kompatibel Claude Code, Cursor, Codex — relevan untuk founder, designer, atau siapa saja yang muak lihat output AI agent terasa generik dan ingin workflow desain dengan 'taste' yang konsisten.",
-                          ],
-                        },
-            };
+                                                      ],
+                                                    },
+                                                    "1c7/chinese-independent-developer": {
+                                                      description:
+                                                        "Kurasi daftar ratusan produk indie dari developer independen China — katalog 'siapa bikin apa' yang di-update mingguan lewat kontribusi komunitas lewat Pull Request.",
+                                                      highlights: [
+                                                        "Repositori legendaris (53k+ bintang) yang meng-agregat ratusan produk indie dari developer independen China — fokus pada produk yang sudah jadi (web/App), bukan tool developer atau forum.",
+                                                        "Standar 'satu kalimat produk' yang ketat: deskripsi seperti 'AI video generator' ditolak, yang diterima adalah 'tiga langkah bikin short video vertikal tanpa skill editing' — mendorong copywriting yang menjual, bukan kategori kosong.",
+                                                        "Kurasi mingguan lewat Pull Request dari kontributor, dengan tiga status jelas (sedang dikembangkan / sudah live / sudah mati) sehingga pembaca bisa bedakan 'proyek aktif' dari 'karya lama'.",
+                                                        "Berguna untuk founder, desainer, atau siapa saja yang ingin lihat 'apa yang sedang dibuat orang di pasar aplikasi China' sebagai referensi produk, model monetisasi, atau peluang adaptasi ke pasar lain.",
+                                                      ],
+                                                    },
+                                                    "Raphire/Win11Debloat": {
+                                                      description:
+                                                        "Skrip PowerShell ringan yang menghapus bloatware, matikan telemetry, dan rapikan Windows 10/11 ke kondisi default yang lebih bersih — sekali klik, tanpa install tool tambahan.",
+                                                      highlights: [
+                                                        "Skrip PowerShell open-source (51k+ bintang) yang membersihkan Windows dari bloatware bawaan OEM, matikan telemetry Microsoft, dan tweak registry untuk performa & privasi lebih baik.",
+                                                        "Mode interaktif atau preset all-in-one: jalankan tanpa argumen untuk menu, atau pakai `-RunDefaults` / `-RunAppList` untuk automasi bersih dalam satu perintah — cocok untuk sysadmin yang setup puluhan PC sekaligus.",
+                                                        "Dukungan Windows 10 dan Windows 11 dari satu skrip yang sama, plus Regfiles dan Scripts folder yang terdokumentasi — setiap tweak yang dilakukan bisa diinspeksi sebelum dijalankan.",
+                                                        "Pendekatan 'tanpa install aplikasi tambahan' — murni PowerShell dari Microsoft, jadi tidak ada dependency eksternal dan aman dipakai di laptop perusahaan yang strict soal software baru.",
+                                                      ],
+                                                    },
+                                                    "coreyhaines31/marketingskills": {
+                                                      description:
+                                                        "Kumpulan 45+ skill marketing siap pakai untuk Claude Code, Codex, dan Cursor — copywriting, CRO, SEO, ads, analytics, growth, dan pricing, dirangkai biar AI agent paham funnel end-to-end.",
+                                                      highlights: [
+                                                        "Marketplace 45+ skill marketing yang mengikuti standar Agent Skills — dipasang ke Claude Code, OpenAI Codex, Cursor, Windsurf, atau agen apa pun yang dukung agentskills.io.",
+                                                        "Struktur berlapis: skill `product-marketing` jadi fondasi (dibaca dulu semua skill lain), lalu dikelilingi 6 kluster — SEO & Content, CRO, Copy, Paid & Measurement, Growth & Retention, Sales & GTM — yang saling cross-reference.",
+                                                        "Cakupan yang jarang ditandingi: dari `signup`, `paywalls`, `cro`, `copywriting`, `cold-email`, `ab-testing`, `analytics`, `programmatic-seo`, sampai `pricing`, `churn-prevention`, dan `marketing-psychology` — hampir semua fungsi marketer teknikal ada.",
+                                                        "Dibuat oleh Corey Haines (Conversion Factory) untuk marketer teknis dan founder yang ingin AI coding agent-nya menulis landing page, audit onboarding, atau brainstorm growth loop dengan framework yang sama dengan konsultan senior.",
+                                                      ],
+                                                    },
+                                        };
 
-            // Helper: lookup dengan fallback ke template-generated highlights
-            export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
-              return WEEKLY_TOP[fullName];
-            }
+                                        // Helper: lookup dengan fallback ke template-generated highlights
+                                        export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
+                                          return WEEKLY_TOP[fullName];
+                                        }
