@@ -1849,6 +1849,49 @@ export const models: Review[] = [
     date: "2026-07-14",
     featured: false,
   },
+  {
+    slug: "north-mini-code",
+    name: "Cohere North Mini Code",
+    tagline: "Varian coding Cohere yang ultra-murah dan cepat untuk workflow agent",
+    tags: ["Cohere", "Proprietary", "Coding", "Agent"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.4 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 9.2 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 20.6,
+    aa_coding_index: 36.5,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-15",
+    summary:
+      "Varian specialist coding dari keluarga Command R+ North Cohere, dirilis lewat API North platform Cohere, dan partner enterprise Cohere. Intelligence index 20,6 dan coding index 36,5 (sumber: Artificial Analysis) menaruhnya di papan tengah dengan trade-off khas Cohere: penalaran umum biasa, tapi kemampuan coding, throughput, dan harga paling agresif di kelas papan tengah. Dipasarkan dengan tier harga khusus untuk workload coding agentik — menarik untuk developer yang perlu budget ketat.",
+    pros: [
+      "Coding index 36,5 (sumber: Artificial Analysis) — di atas intelligence index agregat 20,6 dengan margin lebar, indikasi spesialisasi coding yang nyata, berguna untuk code completion dan refactoring volume",
+      "Throughput 113,58 token/detik (sumber: AA) dan TTFT 0,177 detik (sumber: AA) — salah satu yang paling responsif di kelas API coding, ideal untuk iterasi generate-eval-fix yang panjang",
+      "Harga agresif di tier khusus coding API Cohere — blended cost per juta token jauh di bawah frontier proprietary untuk workload coding volume",
+      "Posisi keluarga Cohere North mini yang fokus pada deployment enterprise: SLA, region availability, dan dukungan teknis lebih matang dibanding banyak model papan tengah open-weight",
+    ],
+    cons: [
+      "Intelligence index agregat 20,6 (sumber: AA) di bawah frontier papan atas (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+) dan sekitar median papan tengah — penalaran terbuka murni dan riset multi-langkah berat akan terasa terbatas dibanding frontier",
+      "Spesialisasi coding tidak otomatis berarti scaffolding proyek baru yang kompleks — untuk code generation arsitektural dan planning agent, Claude Opus 4.5 dan GPT-5 masih memimpin",
+      "Math index tidak tersedia di katalog AA — sulit menilai kemampuan matematika simbolik dan pembuktian logis sebagai kemampuan pembantu untuk verifikasi kode numerik",
+      "Aksesibilitas pasar Indonesia terbatas — Cohere tidak sepopuler OpenAI atau Anthropic di komunitas developer lokal, sehingga tutorial bahasa Indonesia dan integrasi komunitas relatif lebih sedikit",
+    ],
+    verdict:
+      "Cohere North Mini Code menarik untuk developer Indonesia yang butuh coding API ultra-murah dan cepat dengan SLA enterprise — cocok untuk code completion harian dan refactoring volume di workload agent. Untuk scaffolding proyek baru yang kompleks dan penalaran arsitektur berat, frontier OpenAI/Anthropic masih lebih aman; verifikasi region availability Cohere API dan latency ke Jakarta sebelum adopsi produksi.",
+    body: [
+      "Cohere North Mini Code adalah varian specialist coding dari keluarga Command R+ North yang dirilis Cohere lewat platform North Cohere dan partner enterprise, dengan positioning fokus pada workload coding agentik berbiaya rendah. Intelligence index 20,6 (sumber: Artificial Analysis) memang menaruhnya di bawah frontier proprietary Barat — Claude Opus 4.5 memimpin di 43,1+, GPT-5 di 44,6, Gemini 3 di 57,2 — tapi diferensiasi utamanya justru ada pada coding index 36,5 (sumber: AA), yang jauh di atas intelligence index 20,6, indikasi spesialisasi coding yang nyata di benchmark. Angka ini mendekati atau melampaui beberapa model papan menengah proprietary lain di ceruk coding dan menandakan investasi tuning Cohere yang signifikan pada kemampuan code generation, refactoring, dan eksplanasi kode — tradisi tuning specialist yang sudah dibangun Cohere sejak era Command R untuk workload retrieval-augmented generation. Untuk konteks pasar Indonesia, model ini menarik untuk startup dan developer individu yang butuh coding assistant API dengan harga paling ketat di kelas papan tengah — tier harga khusus coding Cohere memberi blended cost yang sulit ditandingi oleh frontier untuk workload volume.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint API Cohere, North Mini Code menunjukkan karakter khas model specialist coding: eksplanasi kode, code completion multi-baris, dan refactoring skrip pendek dihasilkan dengan konsistensi yang solid di atas rata-rata papan tengah. Throughput 113,58 token/detik (sumber: AA) terasa cepat untuk chat interaktif — streaming output panjang untuk fungsi dan kelas lengkap tidak membuat UX terasa lambat, dan TTFT 0,177 detik (sumber: AA) memberi feedback first-token yang hampir instan untuk iterasi generate-eval-fix. Trade-off yang jelas muncul di dimensi penalaran terbuka: untuk prompt yang butuh reasoning multi-langkah di luar konteks kode (misal merancang arsitektur dengan trade-off, atau menjelaskan desain sistem dengan trade-off bisnis), model ini kalah dari frontier seperti Claude Opus 4.5 atau GPT-5. Untuk generate boilerplate code, eksplanasi fungsi library, dan debugging pesan error, hasilnya konsisten di expectation untuk kelas harganya. Catatan: data benchmark adalah snapshot awal rilis — angka inference dan stabilitas bisa bergeser antar versi, jadi gunakan angka AA sebagai indikasi awal dan lakukan pengujian sendiri untuk workload spesifik Anda. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, Cohere North Mini Code bermain di ceruk 'specialist coding API ultra-murah' — segmen yang ramai dengan DeepSeek-Coder, GLM-Coder, Qwen3 Coder Next, dan varian proprietary Hyperscaler. Untuk pasar Indonesia, implikasi yang masuk akal: (a) untuk startup dan SME yang sudah berlangganan enterprise tier Cohere atau reseller North di regional Asia Tenggara, North Mini Code adalah opsi coding API native dengan SLA enterprise dan harga yang sulit ditandingi; (b) untuk developer individu yang subscribe OpenAI atau Anthropic, North Mini Code adalah fallback ultra-murah untuk workload coding volume tinggi di mana penalaran berat tidak dibutuhkan; (c) untuk enterprise yang butuh kedaulatan data penuh, model Cohere proprietary tetap tidak sefleksibel varian open-weight Command R+, jadi on-premise deployment bukan opsi; dan (d) untuk penggunaan hybrid, strategi praktis adalah North Mini Code untuk code completion harian dan refactoring volume, lalu naik ke Claude Opus 4.5 atau GPT-5 untuk scaffolding proyek baru dan penalaran arsitektur. Strategi pemakaian yang sehat: Cohere North Mini Code untuk coding volume murah di workflow harian; frontier Barat untuk penalaran murni dan coding agentik panjang; model 'Flash' hyperscaler untuk opsi cepat ekonomis. Untuk developer Indonesia yang cari coding API khusus dengan harga paling ketat dan kecepatan tinggi untuk eksplanasi kode, Cohere North Mini Code layak masuk radar — tapi verifikasi region availability API Cohere, akses dari Indonesia, dan latency ke gateway regional sebelum adopsi produksi.",
+    ],
+    link: "https://cohere.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-15",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
