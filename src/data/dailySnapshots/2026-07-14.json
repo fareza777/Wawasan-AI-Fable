@@ -1,31 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "14 Juli 2026",
-  "period": {
-    "date": "2026-07-14",
-    "label": "14 Juli 2026",
-    "path": "/repo/daily/2026/07/14"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-14T00:21:01.411Z",
+  "fetchedAt": "2026-07-14T04:27:51.471Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "JustVugg/colibri",
-      "owner": "JustVugg",
-      "repo": "colibri",
-      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "githubUrl": "https://github.com/JustVugg/colibri",
-      "trendshiftUrl": "https://trendshift.io/repositories/73945",
-      "language": "C",
-      "topics": [
-        "Local LLM"
-      ],
-      "dateCreated": "2026-07-01T12:27:49Z"
-    },
-    {
-      "rank": 2,
       "fullName": "OpenCut-app/OpenCut",
       "owner": "OpenCut-app",
       "repo": "OpenCut",
@@ -39,17 +21,35 @@
       "dateCreated": "2025-06-22T08:02:17Z"
     },
     {
-      "rank": 3,
-      "fullName": "1c7/chinese-independent-developer",
-      "owner": "1c7",
-      "repo": "chinese-independent-developer",
-      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
-      "githubUrl": "https://github.com/1c7/chinese-independent-developer",
-      "trendshiftUrl": "https://trendshift.io/repositories/4388",
+      "rank": 2,
+      "fullName": "Nutlope/hallmark",
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "githubUrl": "https://github.com/Nutlope/hallmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/33587",
+      "language": "CSS",
       "topics": [
-        "Curated list"
+        "AI skills"
       ],
-      "dateCreated": "2017-09-21T11:08:23Z"
+      "dateCreated": "2026-04-27T20:47:10Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "moeru-ai/airi",
+      "owner": "moeru-ai",
+      "repo": "airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "githubUrl": "https://github.com/moeru-ai/airi",
+      "trendshiftUrl": "https://trendshift.io/repositories/14636",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Digital human",
+        "Chatbot",
+        "Self-hosted"
+      ],
+      "dateCreated": "2024-12-01T16:33:36Z"
     },
     {
       "rank": 4,
@@ -69,23 +69,6 @@
     },
     {
       "rank": 5,
-      "fullName": "Shubhamsaboo/awesome-llm-apps",
-      "owner": "Shubhamsaboo",
-      "repo": "awesome-llm-apps",
-      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "githubUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "trendshiftUrl": "https://trendshift.io/repositories/9876",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Local LLM",
-        "RAG",
-        "Curated list"
-      ],
-      "dateCreated": "2024-04-29T05:30:25Z"
-    },
-    {
-      "rank": 6,
       "fullName": "Graphify-Labs/graphify",
       "owner": "Graphify-Labs",
       "repo": "graphify",
@@ -98,6 +81,21 @@
         "AI skills"
       ],
       "dateCreated": "2026-04-03T15:49:07Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "coreyhaines31/marketingskills",
+      "owner": "coreyhaines31",
+      "repo": "marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "githubUrl": "https://github.com/coreyhaines31/marketingskills",
+      "trendshiftUrl": "https://trendshift.io/repositories/18529",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-01-15T19:45:23Z"
     },
     {
       "rank": 7,
@@ -116,46 +114,49 @@
     },
     {
       "rank": 8,
-      "fullName": "Nutlope/hallmark",
-      "owner": "Nutlope",
-      "repo": "hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "githubUrl": "https://github.com/Nutlope/hallmark",
-      "trendshiftUrl": "https://trendshift.io/repositories/33587",
-      "language": "CSS",
+      "fullName": "github/spec-kit",
+      "owner": "github",
+      "repo": "spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "githubUrl": "https://github.com/github/spec-kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/15463",
+      "language": "Python",
       "topics": [
-        "AI skills"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-04-27T20:47:10Z"
+      "dateCreated": "2025-08-21T22:54:31Z"
     },
     {
       "rank": 9,
-      "fullName": "Dicklesworthstone/destructive_command_guard",
-      "owner": "Dicklesworthstone",
-      "repo": "destructive_command_guard",
-      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-      "githubUrl": "https://github.com/Dicklesworthstone/destructive_command_guard",
-      "trendshiftUrl": "https://trendshift.io/repositories/40043",
-      "language": "Rust",
+      "fullName": "cobusgreyling/loop-engineering",
+      "owner": "cobusgreyling",
+      "repo": "loop-engineering",
+      "description": "Practical reference and patterns for loop engineering,  designing systems that prompt and orchestrate AI coding agents (inspired by Addy Osmani and Boris Cherny / Anthropic)",
+      "githubUrl": "https://github.com/cobusgreyling/loop-engineering",
+      "trendshiftUrl": "https://trendshift.io/repositories/50831",
+      "language": "JavaScript",
       "topics": [
-        "AI agent"
+        "AI agent",
+        "AI workflow"
       ],
-      "dateCreated": "2026-01-07T22:27:34Z"
+      "dateCreated": "2026-06-09T06:28:20Z"
     },
     {
       "rank": 10,
-      "fullName": "router-for-me/CLIProxyAPI",
-      "owner": "router-for-me",
-      "repo": "CLIProxyAPI",
-      "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model through API",
-      "githubUrl": "https://github.com/router-for-me/CLIProxyAPI",
-      "trendshiftUrl": "https://trendshift.io/repositories/19331",
-      "language": "Go",
+      "fullName": "Shubhamsaboo/awesome-llm-apps",
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "githubUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "trendshiftUrl": "https://trendshift.io/repositories/9876",
+      "language": "Python",
       "topics": [
-        "AI coding assistant",
-        "Proxy"
+        "AI agent",
+        "Local LLM",
+        "RAG",
+        "Curated list"
       ],
-      "dateCreated": "2025-07-01T19:43:27Z"
+      "dateCreated": "2024-04-29T05:30:25Z"
     }
   ]
 }
