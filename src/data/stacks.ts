@@ -1548,7 +1548,50 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-07-13",
     featured: false,
-  },];
+  },
+  {
+    slug: "crewai",
+    name: "CrewAI",
+    tagline: "Orkestrasi multi-agent berbasis peran dengan kolaborasi otonom lewat Python",
+    tags: ["CrewAI", "Open Source", "Agent Framework", "Python"],
+    score: 8.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 9.0 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "CrewAI adalah framework Python open-source untuk orkestrasi multi-agent yang meniru pola tim kerja manusia: setiap agent punya peran, tujuan, dan alat spesifik, lalu mereka saling delegasi tugas secara otonom sampai target tercapai. Per Juli 2026 versi 0.130+ sudah stabil dengan lebih dari 55.000 bintang GitHub, arsitektur 'Crews + Flows' untuk workflow kompleks, dukungan LLM apa pun (OpenAI, Anthropic, Google, Ollama, vLLM), dan lisensi MIT yang memungkinkan self-host gratis — kombinasi yang menjadikannya salah satu pilihan utama untuk membangun sistem agen kolaboratif berbasis Python.",
+    pros: [
+      "Pola role-based delegation yang intuitif: setiap agent punya role, goal, dan backstory, dan kerangka kerja mereka berkomunikasi lewat delegation dan information sharing — jauh lebih natural untuk orkestrasi multi-pakar dibanding graph eksplisit ala LangGraph",
+      "Komunitas besar dan adopsi luas: lebih dari 55.000 bintang GitHub, ratusan kontributor, ekosistem tutorial YouTube dan blog yang melimpah, plus integrasi ke banyak template industri (riset pasar, content pipeline, due diligence)",
+      "Dukungan LLM universal lewat LiteLLM-style abstraction: OpenAI, Anthropic Claude, Google Gemini, Mistral, Cohere, Groq, dan model lokal lewat Ollama/vLLM — tinggal ganti string model tanpa ubah kode orkestrasi",
+      "Arsitektur 'Crews + Flows' (sejak versi 0.80+): Crews untuk kolaborasi otonom antar agent, Flows untuk kontrol event-driven presisi — kombinasi dua paradigma di satu framework menghilangkan kebutuhan pakai dua tools berbeda",
+      "Open source MIT licensed dengan opsi deployment fleksibel: bisa jalan lokal via CLI/Python script, di-deploy sebagai service dengan FastAPI wrapper, atau di-hosting di CrewAI AMP Suite (edisi enterprise berbayar) untuk tim yang butuh observability dan kontrol plane",
+    ],
+    cons: [
+      "Kurva belajar cukup tinggi untuk developer yang belum familiar dengan pola agentic: konsep role, task delegation, memory sharing, dan proses kolaborasi butuh waktu untuk dipahami sebelum workflow pertama bisa jalan stabil",
+      "Debugging bisa menantang saat beberapa agent berinteraksi: error traceback sering muncul di agent yang salah, bukan di titik inisiasi masalah — perlu logging terstruktur dan tracing eksplisit untuk produksi",
+      "Performa dan latensi tinggi pada workflow multi-agent yang memanggil banyak LLM secara berurutan: 5 agent yang masing-masing panggil GPT-4 bisa dengan mudah menghasilkan 30-60 detik waktu respons per eksekusi penuh",
+      "Komunitas dan tutorial bahasa Indonesia masih terbatas dibanding framework populer seperti n8n atau LangChain; dokumentasi resmi dominan bahasa Inggris dan sebagian besar konten komunitas berkualitas tinggi berasal dari AS/EU",
+      "Perubahan API antar versi mayor cukup sering terjadi (tim CrewAI iterasi cepat mengikuti best practice agentic terbaru) — kode yang ditulis untuk versi 0.50 mungkin perlu penyesuaian saat upgrade ke 0.130+",
+    ],
+    verdict:
+      "Standar de facto untuk multi-agent framework berbasis Python di 2026, terutama untuk tim yang ingin bangun workflow kolaboratif mirip tim manusia tanpa harus rakit semuanya dari awal. Pilih CrewAI kalau prioritasnya adalah abstraksi peran yang intuitif dan komunitas besar; pilih LangGraph kalau kamu butuh kontrol graph eksplisit dan presisi tinggi, atau AutoGen kalau preferensi kamu ke arsitektur Microsoft dengan integrasi Azure native.",
+    body: [
+      "Di tengah hype agentic AI 2025-2026, banyak framework muncul dengan janji menyederhanakan orkestrasi multi-agent — tapi CrewAI mendapat traksi yang berbeda karena pendekatannya yang metaforis dan pragmatis. Alih-alih meminta developer menentukan graph transisi state secara eksplisit (seperti LangGraph) atau setup event-driven loop manual (seperti AutoGen), CrewAI menawarkan pola role-playing: developer mendefinisikan beberapa agent dengan role spesifik (mis. Researcher, Writer, Editor, Critic), masing-masing dengan goal, backstory, dan daftar tool, lalu framework secara otomatis mengatur bagaimana mereka berkolaborasi, mendelegasikan sub-tugas, dan menggabungkan output sampai target tercapai. Pendekatan ini terasa natural karena mirip cara tim manusia bekerja — setiap orang punya peran dan expertise, lalu mereka bernegosiasi dan membagi kerja.",
+      "Stack teknis CrewAI per Juli 2026 cukup solid. Inti framework adalah Python package yang bisa di-install via pip (crewai dan crewai-tools), dengan dependency pada LiteLLM untuk abstraksi multi-provider LLM, Pydantic untuk validasi output terstruktur, dan beberapa utility internal untuk manajemen memory serta proses eksekusi. Versi 0.130+ menambahkan arsitektur 'Flows' yang melengkapi pola 'Crews' — Crews untuk kolaborasi otonom antar agent (cocok untuk tugas yang strukturnya fleksibel dan adaptif), Flows untuk workflow event-driven presisi (cocok untuk pipeline yang butuh kontrol langkah eksplisit). Developer bisa pakai keduanya secara terpisah atau digabung dalam satu aplikasi. Untuk integrasi LLM, semua provider mainstream didukung: OpenAI (GPT-5.x, GPT-4.1, GPT-4o), Anthropic (Claude Opus 4.x, Sonnet 4.x), Google (Gemini 3.x), Mistral, Cohere, Groq, DeepSeek, dan model lokal lewat Ollama/vLLM/LM Studio. Untuk tool integration, ada ratusan tool bawaan (web search via Serper/DDG, scraping, file I/O, code execution, database query, Slack, GitHub, dll) plus kemampuan custom tool dengan decorator sederhana.",
+      "Harga dan opsi deployment adalah salah satu kekuatan utama CrewAI dibanding kompetitor. Open-source edition sepenuhnya gratis dan MIT licensed: developer bisa install via pip, jalankan crew dari script Python atau Jupyter notebook, deploy sebagai REST API dengan wrapper FastAPI, atau di-hosting di infrastruktur sendiri tanpa biaya lisensi. CrewAI AMP Suite adalah edisi enterprise berbayar (harga Enterprise biasanya enam-digit USD per tahun untuk tim besar, tidak dipublikasikan terbuka) yang menambahkan control plane untuk observability, governance, security, integrasi enterprise, dan dukungan 24/7. Untuk pemula dan eksperimen, tersedia Crew Control Plane gratis di app.crewai.com yang menyediakan antarmuka web untuk setup dan monitoring crew tanpa install lokal — sweet spot untuk memvalidasi ide sebelum investasi infrastruktur. Pola kontribusi komunitas juga aktif: lebih dari 1.000 kontributor, banyak contoh di repositori crewAI-examples (trip planner, stock analysis, job posting, content pipeline), dan Discord resmi dengan ribuan anggota yang saling bantu.",
+      "Untuk konteks Indonesia, ada empat implikasi utama. Pertama, untuk startup dan tim produk yang ingin bangun fitur AI kolaboratif (mis. asisten riset pasar otomatis, pipeline content generation, atau alat due diligence), CrewAI memungkinkan MVP jalan dalam hitungan minggu dengan tim kecil — modal yang dibutuhkan cuma API key LLM dan developer Python yang memahami paradigma agentic. Kedua, untuk kampus dan bootcamp, pola role-based sangat mudah diajarkan ke mahasiswa non-CS karena metafornya relatable (tim, peran, tugas) — beberapa dosen TI lokal sudah mengintegrasikan CrewAI ke kurikulum AI/ML. Ketiga, untuk freelancer dan konsultan, kemampuan self-host tanpa biaya lisensi memungkinkan mereka menawarkan solusi enterprise ke klien dengan margin yang sehat — terutama untuk klien yang khawatir data mereka diproses di cloud vendor asing. Keempat, untuk penggunaan dalam negeri, latensi ke API OpenAI/Anthropic dari Indonesia biasanya 300-800 ms per panggilan; untuk workflow multi-agent yang memanggil 5-10 LLM, total latensi bisa 5-15 detik per eksekusi — perlu optimasi seperti panggilan paralel, caching, atau pakai model lokal lewat Ollama untuk data yang tidak boleh keluar. Pola penggunaan yang paling sering muncul: (a) riset otomatis (agent Researcher + Web Search + agent Writer yang merangkum), (b) pipeline content (ideation -> draft -> edit -> publish), (c) code review kolaboratif (agent Coder + agent Reviewer + agent Tester), (d) due diligence bisnis (agent Financial + agent Market + agent Legal yang menganalisis paralel lalu mengonsolidasikan ke agent keputusan). Catatan akhir: untuk pengguna yang butuh kontrol graph eksplisit dan presisi tinggi di setiap transisi, LangGraph tetap lebih sesuai; untuk pengguna yang sudah investasi di ekosistem Microsoft Azure, AutoGen menawarkan integrasi yang lebih native; tapi untuk keseimbangan antara kemudahan pakai, komunitas, dan fleksibilitas, CrewAI adalah pilihan paling pragmatis di paruh kedua 2026.",
+    ],
+    link: "https://www.crewai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-14",
+    featured: false,
+    },
+];
 
 export function getStack(slug: string) {
   return stacks.find((s) => s.slug === slug);
