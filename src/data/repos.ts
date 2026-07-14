@@ -2207,6 +2207,54 @@ export const repos: Review[] = [
   updatedAt: "2026-07-14",
   featured: false,
 },
+  {
+  slug: "awesome-llm-apps",
+  name: "Awesome LLM Apps",
+  tagline: "100+ aplikasi AI agent & RAG open-source yang tinggal clone, custom, ship",
+  tags: ["AI Agent", "RAG", "Open Source", "Koleksi Template"],
+  score: 8.7,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.5 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Kesiapan Produksi", value: 8.0 },
+  ],
+  summary:
+    "Awesome LLM Apps dari Shubhamsaboo adalah repositori kurasi yang merangkum lebih dari 100 aplikasi AI agent dan Retrieval Augmented Generation (RAG) siap pakai - semuanya open-source berlisensi Apache-2.0, hand-built, dan dites end-to-end. Fokusnya sederhana: menghilangkan jarak antara clone repositori dan URL publik dengan template yang bisa langsung dijalankan bersama Claude, Gemini, GPT, DeepSeek, Llama, Qwen, atau model open-source lain.",
+  highlights: [
+    "100+ template aplikasi AI agent dan RAG yang sudah dites end-to-end, bukan contoh toy project",
+    "Kategori lengkap: Agent Skills, Starter AI Agents, Advanced AI Agents, Always-on Agents, Multi-agent Teams, Voice AI Agents, Autonomous Game-Playing Agents, dan MCP AI Agents",
+    "Kompabilitas model luas: Claude, Gemini, GPT, DeepSeek, Llama, Qwen, dan model open-source lain lewat Ollama atau endpoint kompatibel",
+    "Bagian khusus untuk Generative UI dan Agentic Frontends - pola UX yang siap di-clone untuk produk AI modern",
+    "Template LLM Apps with Memory dan Chat with X (YouTube, GitHub, PDF, data tabular) - referensi implementasi retrieval dan augmentasi",
+    "MCP AI Agents section - contoh integrasi Model Context Protocol untuk memperluas kapabilitas agent lewat tool eksternal",
+    "Lisensi Apache-2.0 - bebas untuk penggunaan komersial, modifikasi, dan distribusi ulang",
+    "Tutorial step-by-step pendamping di Unwind AI (theunwindai.com) untuk setiap template, memudahkan onboarding developer yang baru mulai",
+  ],
+  pros: [
+    "Skala kurasi yang besar (100+ template) dengan kualitas terjaga - setiap app hand-built, bukan hasil generator",
+    "Lisensi Apache-2.0 memberi kebebasan penuh untuk komersial, berbeda dengan banyak awesome-list lain yang pakai lisensi ambigu",
+    "Kategori terstruktur dengan pemisah jelas antara starter, advanced, multi-agent, dan game-playing - memudahkan pencarian sesuai tingkat kematangan",
+  ],
+  cons: [
+    "Bergantung pada API pihak ketiga untuk banyak template - biaya operasional bisa membengkak saat traffic naik tanpa strategi caching",
+    "Kualitas tiap template bervariasi - beberapa app sangat siap produksi, yang lain lebih sebagai titik awal yang perlu pengembangan lanjutan",
+  ],
+  verdict:
+    "Repositori wajib di-bookmark untuk developer yang ingin belajar pattern AI agent dan RAG dari kode yang sudah berjalan. Bukan sekadar awesome-list, tapi showroom pattern produksi yang bisa langsung dijadikan titik awal produk atau studi arsitektur.",
+  body: [
+    "Di antara ratusan awesome-list yang bermunculan untuk AI, Awesome LLM Apps menonjol karena pendekatannya yang pragmatis: alih-alih cuma mengumpulkan tautan, repositori ini merangkum lebih dari 100 aplikasi yang benar-benar berjalan, dites end-to-end, dan berlisensi Apache-2.0. Hasilnya adalah katalog pattern yang bisa langsung di-clone, dijalankan, dan dimodifikasi - menghilangkan gap antara tutorial abstrak dan kode yang hidup. Mulai dari agent sederhana sampai multi-agent team, voice agent real-time, sampai generative UI, setiap template disertai dokumentasi setup dan tutorial pendamping di Unwind AI.",
+    "Yang paling menarik dari struktur repositori ini adalah pembagian kategorinya yang sangat jelas. Agent Skills memisahkan skill yang bisa dipasang ke agent manapun, sementara Starter AI Agents berisi entry point paling sederhana - cocok untuk developer yang baru masuk ke dunia agentic. Advanced AI Agents dan Multi-agent Teams masuk ke orkestrasi yang lebih kompleks: alur delegasi, role-based agent, sampai kolaborasi antar agent. Untuk konteks Indonesia, kategori Voice AI Agents dan Chat with X sangat relevan - banyak tim lokal sedang membangun customer service agent berbahasa Indonesia dan RAG untuk dokumen internal perusahaan.",
+    "Dalam pengujian editorial Wawasan AI, repositori ini paling kuat sebagai katalog pattern implementasi: membaca template MCP AI Agents memberi gambaran konkret bagaimana Model Context Protocol dipakai di production, sementara bagian LLM Apps with Memory menunjukkan pola persistensi yang biasanya absen dari tutorial pendek. Kompabilitas model yang luas - dari Claude, Gemini, GPT, sampai DeepSeek, Llama, dan Qwen lewat Ollama - juga penting untuk konteks Indonesia di mana ketersediaan API komersial kadang terbatas atau mahal; developer bisa mengganti backend model tanpa menulis ulang logika agent.",
+    "Keterbatasan yang perlu dipahami: banyak template tetap bergantung pada API pihak ketiga (OpenAI, Anthropic, Gemini), sehingga biaya operasional bisa membengkak saat traffic naik - perlu strategi caching, batching, atau self-hosting model lewat Ollama atau vLLM untuk produksi serius. Kualitas tiap template juga bervariasi; beberapa sangat siap dipakai, yang lain berfungsi sebagai titik awal yang masih perlu pengembangan. Sebagai repositori belajar dan bootstrap produk awal, Awesome LLM Apps adalah salah satu sumber paling kaya di kategorinya, dan layak menjadi bookmark wajib bagi developer AI Indonesia yang ingin beralih dari tutorial ke implementasi nyata.",
+  ],
+  link: "https://github.com/Shubhamsaboo/awesome-llm-apps",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-15",
+  updatedAt: "2026-07-15",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
