@@ -2255,6 +2255,55 @@ export const repos: Review[] = [
   updatedAt: "2026-07-15",
   featured: false,
 },
+  {
+    slug: "graphify",
+    name: "Graphify",
+    tagline: "Skill AI coding yang mengubah folder kode jadi knowledge graph queryable",
+    tags: ["AI Agent", "Knowledge Graph", "Python", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Graphify adalah skill AI coding assistant yang dipasang ke Claude Code, Codex, Cursor, Gemini CLI, dan tool serupa: setiap folder berisi kode, skema SQL, skrip R, shell, dokumen, paper, gambar, atau video otomatis diubah menjadi knowledge graph yang bisa di-query. Tujuannya sederhana - menyatukan pemahaman app code, schema database, dan infrastruktur dalam satu graf yang sama.",
+    highlights: [
+      "Skill plug-and-play untuk Claude Code, Codex, OpenCode, Cursor, Gemini CLI, dan coding assistant lain",
+      "Ingesti multi-format: kode sumber, skema SQL, skrip R, shell script, dokumentasi, paper, gambar, dan video diproses sebagai node graph",
+      "Penggunaan algoritma Leiden untuk community detection sehingga cluster entitas terbentuk otomatis dari data",
+      "Parser tree-sitter untuk bahasa pemrograman populer - menghasilkan graph yang presisi tanpa LLM tambahan",
+      "Pendekatan GraphRAG: retrieval berbasis graf yang lebih kaya konteks dibanding vector search murni",
+      "Lisensi MIT - bebas dipakai untuk kebutuhan komersial, modifikasi, dan distribusi ulang",
+      "Output yang queryable lewat prompt AI: tanyakan relasi antar modul, dependency antar layanan, atau blast radius satu perubahan",
+      "Aktif dipelihara: commit terbaru per minggu dengan iterasi fitur yang konsisten",
+    ],
+    pros: [
+      "Mempercepat onboarding ke codebase baru - langsung tanyakan dependensi dan pola antar file lewat prompt biasa",
+      "Cocok untuk monorepo besar, legacy code, dan sistem terdistribusi di mana grep biasa sudah tidak memadai",
+      "Lisensi MIT dan pendekatan berbasis skill berarti adopsi rendah risiko - tidak perlu migrasi tooling",
+    ],
+    cons: [
+      "Bergantung pada kualitas coding assistant yang dipakai - hasil paling kuat di Claude Code dan Cursor",
+      "Butuh pemahaman GraphRAG untuk tuning prompt dan interpretasi hasil - learning curve untuk tim yang baru pertama kali mengenal konsep graf",
+      "Repositori relatif muda - sebagian edge case parsing masih perlu kontribusi komunitas",
+    ],
+    verdict:
+      "Alat yang menjawab salah satu masalah klasik developer modern: memahami codebase besar tanpa harus membaca setiap file. Sangat relevan untuk tim engineering Indonesia yang mengelola monorepo atau sistem warisan - layak dicoba sebagai lapisan tambahan di atas Claude Code atau Cursor.",
+    body: [
+      "Graphify muncul dari kebutuhan yang makin terasa di tim engineering modern: ketika codebase sudah tumbuh melewati ratusan ribu baris dan terbagi dalam banyak layanan, grep biasa tidak lagi cukup untuk menjawab pertanyaan seperti dependensi mana yang paling berisiko jika satu library di-upgrade, atau modul mana yang benar-benar memanggil fungsi X. Graphify mengusulkan pendekatan knowledge graph - setiap entitas kode, skema, atau dokumen menjadi node, dan relasi antar entitas menjadi edge. Hasilnya adalah representasi yang bisa di-query lewat prompt bahasa alami, sehingga AI coding assistant bisa menjawab pertanyaan arsitektur dengan akurasi yang lebih tinggi dibanding pencarian teks murni.",
+      "Yang menarik dari pendekatan Graphify adalah dukungannya untuk banyak format: bukan hanya kode sumber, tapi juga skema SQL, skrip R, shell script, paper, gambar, hingga video. Untuk konteks Indonesia, kemampuan ini sangat relevan bagi tim data engineering dan riset yang sering mengelola repositori hybrid - kode aplikasi di satu sisi, notebook analitik dan dokumen spesifikasi di sisi lain. Dengan graphifikasi semua menjadi satu struktur, tanya jawab antara developer dan asisten AI menjadi jauh lebih koheren, terutama untuk proyek yang melibatkan data engineer, analis, dan software engineer sekaligus.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling bermanfaat adalah eksplorasi monorepo internal: dengan memasang Graphify sebagai skill di Claude Code atau Cursor, prompt sederhana seperti apa saja yang menggunakan tabel user_transactions dapat dijawab dengan jalur relasi yang spesifik, lengkap dengan konteks file dan modul. Pendekatan GraphRAG yang dipakai juga terasa lebih tepat untuk pertanyaan lintas-domain dibanding vector search yang kadang kehilangan relasi struktural. Algoritma Leiden untuk community detection membantu menemukan cluster alami - berguna saat melakukan audit dependency atau merancang ulang batas layanan.",
+      "Keterbatasan yang perlu dipahami: kualitas output sangat dipengaruhi oleh coding assistant yang dipakai - di Claude Code dan Cursor hasilnya paling matang karena integrasi skill paling dalam. Tim yang baru pertama kali mendengar konsep graph database mungkin perlu waktu untuk memahami bagaimana query terhadap graph bekerja, meskipun untuk penggunaan sehari-hari prompt bahasa alami sudah cukup. Repositori ini masih relatif muda, jadi sebagian edge case parsing untuk bahasa pemrograman yang kurang umum mungkin belum di-handle sempurna. Secara keseluruhan, Graphify adalah salah satu skill AI coding paling praktis untuk tim engineering yang ingin lapisan pemahaman tambahan di atas assistant mereka - layak masuk radar developer Indonesia.",
+    ],
+    link: "https://github.com/Graphify-Labs/graphify",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-16",
+    updatedAt: "2026-07-16",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
