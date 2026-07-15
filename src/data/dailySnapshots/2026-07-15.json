@@ -1,13 +1,45 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "Hari ini",
-  "period": null,
+  "periodLabel": "15 Juli 2026",
+  "period": {
+    "date": "2026-07-15",
+    "label": "15 Juli 2026",
+    "path": "/repo/daily/2026/07/15"
+  },
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-15T04:28:03.469Z",
+  "fetchedAt": "2026-07-15T00:05:10.754Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "OpenCut-app/OpenCut",
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "description": "The open-source CapCut alternative",
+      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
+      "trendshiftUrl": "https://trendshift.io/repositories/19761",
+      "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2025-06-22T08:02:17Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "JustVugg/colibri",
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "githubUrl": "https://github.com/JustVugg/colibri",
+      "trendshiftUrl": "https://trendshift.io/repositories/73945",
+      "language": "C",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-01T12:27:49Z"
+    },
+    {
+      "rank": 3,
       "fullName": "1c7/chinese-independent-developer",
       "owner": "1c7",
       "repo": "chinese-independent-developer",
@@ -20,7 +52,7 @@
       "dateCreated": "2017-09-21T11:08:23Z"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "fullName": "Shubhamsaboo/awesome-llm-apps",
       "owner": "Shubhamsaboo",
       "repo": "awesome-llm-apps",
@@ -35,32 +67,6 @@
         "Curated list"
       ],
       "dateCreated": "2024-04-29T05:30:25Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "Raphire/Win11Debloat",
-      "owner": "Raphire",
-      "repo": "Win11Debloat",
-      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-      "githubUrl": "https://github.com/Raphire/Win11Debloat",
-      "trendshiftUrl": "https://trendshift.io/repositories/10266",
-      "language": "PowerShell",
-      "topics": [],
-      "dateCreated": "2020-10-27T22:26:59Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "HenryNdubuaku/maths-cs-ai-compendium",
-      "owner": "HenryNdubuaku",
-      "repo": "maths-cs-ai-compendium",
-      "description": "Become a cracked AI/ML Research Engineer",
-      "githubUrl": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
-      "trendshiftUrl": "https://trendshift.io/repositories/21344",
-      "language": "TypeScript",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2026-02-03T16:28:18Z"
     },
     {
       "rank": 5,
@@ -79,33 +85,20 @@
     },
     {
       "rank": 6,
-      "fullName": "stablyai/orca",
-      "owner": "stablyai",
-      "repo": "orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-      "githubUrl": "https://github.com/stablyai/orca",
-      "trendshiftUrl": "https://trendshift.io/repositories/26256",
-      "language": "TypeScript",
+      "fullName": "Nutlope/hallmark",
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "githubUrl": "https://github.com/Nutlope/hallmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/33587",
+      "language": "CSS",
       "topics": [
-        "AI agent",
-        "AI coding assistant"
+        "AI skills"
       ],
-      "dateCreated": "2026-03-17T03:28:57Z"
+      "dateCreated": "2026-04-27T20:47:10Z"
     },
     {
       "rank": 7,
-      "fullName": "team-reflect/reflect-open",
-      "owner": "team-reflect",
-      "repo": "reflect-open",
-      "description": "Open-source Reflect rewrite",
-      "githubUrl": "https://github.com/team-reflect/reflect-open",
-      "trendshiftUrl": "https://trendshift.io/repositories/82379",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-06-09T02:23:15Z"
-    },
-    {
-      "rank": 8,
       "fullName": "HKUDS/Vibe-Trading",
       "owner": "HKUDS",
       "repo": "Vibe-Trading",
@@ -121,32 +114,43 @@
       "dateCreated": "2026-04-01T09:52:20Z"
     },
     {
+      "rank": 8,
+      "fullName": "Raphire/Win11Debloat",
+      "owner": "Raphire",
+      "repo": "Win11Debloat",
+      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+      "githubUrl": "https://github.com/Raphire/Win11Debloat",
+      "trendshiftUrl": "https://trendshift.io/repositories/10266",
+      "language": "PowerShell",
+      "topics": [],
+      "dateCreated": "2020-10-27T22:26:59Z"
+    },
+    {
       "rank": 9,
-      "fullName": "OpenCut-app/OpenCut",
-      "owner": "OpenCut-app",
-      "repo": "OpenCut",
-      "description": "The open-source CapCut alternative",
-      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
-      "trendshiftUrl": "https://trendshift.io/repositories/19761",
-      "language": "TypeScript",
+      "fullName": "coreyhaines31/marketingskills",
+      "owner": "coreyhaines31",
+      "repo": "marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "githubUrl": "https://github.com/coreyhaines31/marketingskills",
+      "trendshiftUrl": "https://trendshift.io/repositories/18529",
+      "language": "JavaScript",
       "topics": [
-        "Video editing"
+        "AI agent",
+        "AI skills"
       ],
-      "dateCreated": "2025-06-22T08:02:17Z"
+      "dateCreated": "2026-01-15T19:45:23Z"
     },
     {
       "rank": 10,
-      "fullName": "mattpocock/skills",
-      "owner": "mattpocock",
-      "repo": "skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/21589",
-      "language": "Shell",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-03T11:15:53Z"
+      "fullName": "modiqo/waggle",
+      "owner": "modiqo",
+      "repo": "waggle",
+      "description": "Attributed, resolvable artifact references for agent handoffs — a ~30-byte token instead of pasted context. MCP-native; the reference layer for the agent-harness world.",
+      "githubUrl": "https://github.com/modiqo/waggle",
+      "trendshiftUrl": "https://trendshift.io/repositories/82635",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-08T04:33:09Z"
     }
   ]
 }

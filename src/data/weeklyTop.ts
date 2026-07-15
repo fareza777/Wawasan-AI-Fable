@@ -1074,16 +1074,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                       ],
                                                     },
                                                     "coreyhaines31/marketingskills": {
-                                                      description:
-                                                        "Kumpulan 45+ skill marketing siap pakai untuk Claude Code, Codex, dan Cursor — copywriting, CRO, SEO, ads, analytics, growth, dan pricing, dirangkai biar AI agent paham funnel end-to-end.",
-                                                      highlights: [
-                                                        "Marketplace 45+ skill marketing yang mengikuti standar Agent Skills — dipasang ke Claude Code, OpenAI Codex, Cursor, Windsurf, atau agen apa pun yang dukung agentskills.io.",
-                                                        "Struktur berlapis: skill `product-marketing` jadi fondasi (dibaca dulu semua skill lain), lalu dikelilingi 6 kluster — SEO & Content, CRO, Copy, Paid & Measurement, Growth & Retention, Sales & GTM — yang saling cross-reference.",
-                                                        "Cakupan yang jarang ditandingi: dari `signup`, `paywalls`, `cro`, `copywriting`, `cold-email`, `ab-testing`, `analytics`, `programmatic-seo`, sampai `pricing`, `churn-prevention`, dan `marketing-psychology` — hampir semua fungsi marketer teknikal ada.",
-                                                        "Dibuat oleh Corey Haines (Conversion Factory) untuk marketer teknis dan founder yang ingin AI coding agent-nya menulis landing page, audit onboarding, atau brainstorm growth loop dengan framework yang sama dengan konsultan senior.",
-                                                      ],
-                                                    },
-                                        };
+                                                        description:
+                                                          "Kumpulan 45+ skill marketing siap pakai untuk Claude Code, Codex, dan Cursor — copywriting, CRO, SEO, ads, analytics, growth, dan pricing, dirangkai biar AI agent paham funnel end-to-end.",
+                                                        highlights: [
+                                                          "Marketplace 45+ skill marketing yang mengikuti standar Agent Skills — dipasang ke Claude Code, OpenAI Codex, Cursor, Windsurf, atau agen apa pun yang dukung agentskills.io.",
+                                                          "Struktur berlapis: skill `product-marketing` jadi fondasi (dibaca dulu semua skill lain), lalu dikelilingi 6 kluster — SEO & Content, CRO, Copy, Paid & Measurement, Growth & Retention, Sales & GTM — yang saling cross-reference.",
+                                                          "Cakupan yang jarang ditandingi: dari `signup`, `paywalls`, `cro`, `copywriting`, `cold-email`, `ab-testing`, `analytics`, `programmatic-seo`, sampai `pricing`, `churn-prevention`, dan `marketing-psychology` — hampir semua fungsi marketer teknikal ada.",
+                                                          "Dibuat oleh Corey Haines (Conversion Factory) untuk marketer teknis dan founder yang ingin AI coding agent-nya menulis landing page, audit onboarding, atau brainstorm growth loop dengan framework yang sama dengan konsultan senior.",
+                                                        ],
+                                                      },
+                                                      "Shubhamsaboo/awesome-llm-apps": {
+                                                        description:
+                                                          "Kurasi 100+ aplikasi LLM siap pakai (agentik & RAG) dari Shubhamsaboo — setiap proyek hand-built, dites end-to-end, dan berlisensi Apache 2.0, lengkap dengan template yang bisa langsung dijalankan bersama Claude, GPT, Gemini, DeepSeek, Llama, atau Qwen.",
+                                                        highlights: [
+                                                          "Repositori kurasi berisi lebih dari 100 aplikasi AI agent dan Retrieval Augmented Generation (RAG) yang siap jalan — bukan daftar link mati, melainkan proyek hand-built yang dites end-to-end dan berlisensi Apache-2.0.",
+                                                          "Fokus menghilangkan jarak antara clone repositori dan URL publik: setiap app punya template runnable yang bisa langsung disambungkan ke Claude, OpenAI GPT, Gemini, DeepSeek, Llama, Qwen, atau model open-source lain lewat konfigurasi terpadu.",
+                                                          "Spektrum aplikasi luas: dari chatbot RAG sederhana, agent multi-step dengan tool-use, sampai workflow agentik kompleks (AI researcher, financial analyst, customer support) — berguna sebagai 'peta' use case nyata sebelum engineer membangun dari nol.",
+                                                          "121k+ bintang di GitHub menjadikannya salah satu referensi 'awesome list' paling aktif untuk komunitas pembangun aplikasi LLM — relevan untuk developer Indonesia yang ingin belajar agentik AI lewat kode jalan, bukan teori.",
+                                                        ],
+                                                      },
+                                                      "HenryNdubuaku/maths-cs-ai-compendium": {
+                                                        description:
+                                                          "Kurasi roadmap belajar terstruktur dari Henry Ndubuaku untuk menjadi 'cracked AI/ML Research Engineer' — matematika, ilmu komputer, dan AI/ML disusun progresif dari fondasi sampai frontier, lengkap dengan paper, lecture, dan resource publik.",
+                                                        highlights: [
+                                                          "Repositori 'cracked' yang merangkum roadmap lengkap untuk calon AI/ML Research Engineer: matematika (kalkulus, aljabar linear, probabilitas), ilmu komputer (algoritma, sistem, teori), dan AI/ML (deep learning, RL, LLM) disusun berurutan dari fondasi sampai frontier.",
+                                                          "Setiap topik dipasangkan dengan resource publik pilihan (paper, buku, lecture video, kursus) — bukan daftar link generik, melainkan kurasi yang mencerminkan jalur belajar yang benar-benar dipakai orang yang masuk lab riset top.",
+                                                          "Pendekatan 'belajar yang dalam' lewat proyek dan paper reading, bukan tutorial cepat — targetnya engineer yang serius transisi ke riset, bukan kursus kilat 'jadi AI engineer dalam 30 hari'.",
+                                                          "Dilengkapi daftar kemampuan 'must-know' (PyTorch, CUDA, distributed training, paper writing) plus panduan karir dan etika riset — relevan untuk mahasiswa dan profesional Indonesia yang ingin serius menapaki karier riset AI/ML.",
+                                                        ],
+                                                      },
+                                                    };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
