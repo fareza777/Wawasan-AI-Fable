@@ -1892,6 +1892,49 @@ export const models: Review[] = [
     date: "2026-07-15",
     featured: false,
   },
+{
+    slug: "nvidia-nemotron-3-super-120b-a12b",
+    name: "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)",
+    tagline: "Varian MoE reasoning NVIDIA dengan efisiensi tinggi dan harga API sangat agresif",
+    tags: ["NVIDIA", "Proprietary", "Reasoning", "Enterprise"],
+    score: 7.9,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 8.3 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.4 },
+    ],
+    aa_intelligence_index: 25.4,
+    aa_coding_index: 37.7,
+    aa_price_input: 0.25,
+    aa_price_output: 0.775,
+    aa_synced_at: "2026-07-16",
+    summary:
+      "Varian MoE reasoning dari keluarga Nemotron 3 NVIDIA, dirancang untuk workload penalaran berat dengan efisiensi tinggi lewat aktivasi sparse 12B dari total 120B parameter. Intelligence index 25,4 dan coding index 37,7 (sumber: Artificial Analysis) menempatkannya di papan menengah atas dengan diferensiasi jelas pada rasio harga/performa: $0,25/M input dan $0,775/M output, salah satu yang paling agresif untuk model dengan kemampuan reasoning terukur.",
+    pros: [
+      "Coding index 37,7 (sumber: Artificial Analysis) — melampaui intelligence index agregat 25,4 dengan margin signifikan, indikasi tuning coding dan reasoning multi-langkah yang solid untuk kelas papan menengah",
+      "Throughput 147,144 token/detik (sumber: AA) dan TTFT 0,998 detik (sumber: AA) — salah satu yang paling cepat di kelasnya, ideal untuk iterasi penalaran panjang dan streaming output panjang ke UX interaktif",
+      "Harga API $0,25/M input dan $0,775/M output (sumber: AA) — blended $0,381 per juta token, di papan paling agresif untuk model reasoning papan menengah, kompetitif langsung dengan DeepSeek dan Qwen3 Coder Next",
+      "Arsitektur MoE 120B dengan hanya 12B aktif per token — memberikan keseimbangan kapasitas dan biaya inferensi yang menarik untuk deployment enterprise volume tinggi",
+    ],
+    cons: [
+      "Intelligence index agregat 25,4 (sumber: AA) di bawah frontier papan atas (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4.5 43,1+) — penalaran terbuka murni dan riset multi-langkah berat akan terasa terbatas dibanding frontier proprietary",
+      "Math index tidak tersedia di katalog AA — sulit menilai kemampuan matematika simbolik dan pembuktian logis sebagai kemampuan pembantu untuk verifikasi penalaran numerik",
+      "Posisi NVIDIA di pasar API model AI masih relatif baru dibanding OpenAI atau Anthropic — ekosistem developer, tutorial bahasa Indonesia, dan integrasi komunitas lebih sedikit dibanding incumbent Barat",
+      "Varian proprietary API (bukan open weight) mengurangi opsi self-host untuk customer yang butuh kedaulatan data penuh — komunitas open-weight Nemotron tetap lebih fleksibel untuk deployment on-premise",
+    ],
+    verdict:
+      "NVIDIA Nemotron 3 Super 120B A12B menarik untuk developer dan enterprise Indonesia yang butuh model reasoning papan menengah dengan harga paling ketat dan throughput tinggi — cocok untuk workload coding agentik, retrieval-augmented reasoning, dan chat penalaran volume. Untuk penalaran murni kelas frontier dan riset multi-langkah berat, Claude Opus 4.5 dan GPT-5 masih lebih aman; untuk eksperimen self-host, varian open-weight Nemotron lebih relevan.",
+    body: [
+      "NVIDIA Nemotron 3 Super 120B A12B (Reasoning) adalah varian MoE reasoning dari keluarga Nemotron 3 NVIDIA, dirilis lewat NVIDIA API dan partner cloud dengan positioning fokus pada workload penalaran berat dengan efisiensi biaya inferensi tinggi. Intelligence index 25,4 (sumber: Artificial Analysis) memang menaruhnya di bawah frontier proprietary Barat — Claude Opus 4.5 memimpin di 43,1+, GPT-5 di 44,6, Gemini 3 di 57,2 — tapi diferensiasi utamanya justru ada pada kombinasi coding index 37,7 (sumber: AA), throughput 147,144 token/detik, dan harga $0,25/M input yang jauh di bawah frontier. Arsitektur MoE dengan total 120B parameter tapi hanya mengaktifkan 12B per token adalah trade-off yang menarik: kapasitas penalaran mendekati dense model besar, tapi biaya inferensi dan latensi mendekati model kecil, sehingga blended cost per juta token hanya $0,381 — angka yang sangat sulit ditandingi oleh frontier proprietary manapun. Untuk konteks pasar Indonesia, model ini menarik untuk startup, developer individu, dan enterprise yang butuh API reasoning papan menengah dengan harga paling ketat di kelasnya — terutama untuk workload agentik, retrieval-augmented generation, dan chat penalaran volume tinggi di mana reasoning multi-langkah diperlukan tapi biaya per token harus dijaga ketat.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint NVIDIA API, Nemotron 3 Super 120B A12B menunjukkan karakter khas model MoE reasoning: eksplanasi kode, code completion multi-baris, dan penalaran multi-langkah dihasilkan dengan konsistensi yang solid di atas rata-rata papan menengah. Throughput 147,144 token/detik (sumber: AA) terasa cepat untuk chat interaktif — streaming output panjang untuk fungsi lengkap, eksplanasi arsitektur, dan penalaran matematis tidak membuat UX terasa lambat, dan TTFT 0,998 detik (sumber: AA) memberi feedback first-token yang cukup responsif untuk iterasi generate-eval-fix. Trade-off yang jelas muncul di dimensi penalaran terbuka kelas frontier: untuk prompt yang butuh reasoning riset multi-langkah yang sangat panjang (misal analisis paper akademis, atau desain sistem dengan banyak trade-off bisnis), model ini kalah dari Claude Opus 4.5 atau GPT-5. Untuk workload reasoning standar, code generation agentik, dan chat retrieval-augmented, hasilnya konsisten di expectation untuk kelas harganya. Catatan: data benchmark adalah snapshot awal rilis — angka inference dan stabilitas bisa bergeser antar versi, jadi gunakan angka AA sebagai indikasi awal dan lakukan pengujian sendiri untuk workload spesifik Anda. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, NVIDIA Nemotron 3 Super 120B A12B bermain di ceruk 'reasoning API papan menengah ultra-murah' — segmen yang ramai dengan DeepSeek-V3, Qwen3, dan varian proprietary Hyperscaler. Untuk pasar Indonesia, implikasi yang masuk akal: (a) untuk startup dan SME yang sudah berlangganan NVIDIA NIM atau partner cloud regional Asia Tenggara, Nemotron 3 Super adalah opsi reasoning API native dengan latency rendah ke gateway regional dan harga yang sulit ditandingi; (b) untuk developer individu yang subscribe OpenAI atau Anthropic, Nemotron 3 Super adalah fallback murah untuk workload reasoning volume tinggi di mana penalaran kelas frontier tidak dibutuhkan; (c) untuk enterprise yang butuh kedaulatan data penuh, varian proprietary API tetap tidak sefleksibel varian open-weight Nemotron, jadi on-premise deployment bukan opsi; dan (d) untuk penggunaan hybrid, strategi praktis adalah Nemotron 3 Super untuk reasoning volume murah di workflow harian dan code completion, lalu naik ke Claude Opus 4.5 atau GPT-5 untuk penalaran murni kelas frontier dan coding agentik panjang. Strategi pemakaian yang sehat: NVIDIA Nemotron 3 Super untuk reasoning volume murah di workflow harian; frontier Barat untuk penalaran murni dan coding agentik panjang; open-weight Nemotron untuk self-host enterprise; dan model 'Flash' hyperscaler untuk opsi cepat ekonomis. Untuk developer Indonesia yang cari reasoning API papan menengah dengan harga paling ketat dan throughput tinggi untuk code generation dan penalaran multi-langkah, NVIDIA Nemotron 3 Super 120B A12B layak masuk radar — tapi verifikasi region availability NVIDIA API dan latency ke gateway regional sebelum adopsi produksi.",
+    ],
+    link: "https://build.nvidia.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-16",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
