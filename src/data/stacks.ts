@@ -1591,6 +1591,48 @@ export const stacks: Review[] = [
     date: "2026-07-14",
     featured: false,
     },
+  {
+    slug: "replit",
+    name: "Replit",
+    tagline: "IDE cloud-native dengan deployment dan kolaborasi real-time dalam satu platform",
+    tags: ["Replit", "Freemium", "Cloud IDE", "Education"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 9.0 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Replit adalah platform pengembangan perangkat lunak berbasis cloud yang menggabungkan IDE, runtime, basis data, dan deployment dalam satu pengalaman terpadu di browser. Per Juli 2026, lebih dari 30 juta pengguna aktif bulanan mengandalkan Replit untuk membangun, menjalankan, dan mempublikasikan aplikasi tanpa konfigurasi lokal, dengan Reserved VM yang menggantikan Always-On Containers, integrasi native ke Agent4 (lihat entry replit-agent), dan paket harga Free, Core USD 20/bulan, serta Pro USD 40/bulan yang menjadikannya titik masuk paling ramah untuk pemula sekaligus alat prototyping serius bagi developer berpengalaman.",
+    pros: [
+      "Zero setup: buka browser, tulis kode, jalankan, deploy ke domain publik — tidak perlu install runtime, package manager, atau konfigurasi container, ideal untuk pemula atau laptop dengan spesifikasi rendah",
+      "Kolaborasi real-time ala Google Docs: banyak developer bisa mengetik di file yang sama secara bersamaan dengan kursor berwarna per pengguna, menjadikan Replit kuat untuk mengajar, pair programming, dan code review jarak jauh",
+      "Deployment satu klik dengan Reserved VM: aplikasi web bisa live di replit.app atau domain kustom dalam hitungan detik, dengan autoscaling dan SSL otomatis tanpa harus pusing dengan Nginx, systemd, atau cloud config",
+      "Edukasi dan adopsi komunitas massive: lebih dari 30 juta pengguna, integrasi resmi ke kurikulum sekolah dan bootcamp di 150+ negara, plus program Replit for Education yang memberi akses gratis untuk guru dan siswa",
+      "Multi-bahasa runtime mendukung hampir semua bahasa mainstream (Python, Node, Go, Rust, Java, C++, HTML/CSS/JS, Bash) lewat Nix package manager — tinggal pilih bahasa, semua dependensi dan runtime ter-install otomatis",
+    ],
+    cons: [
+      "Harga Pro USD 40/bulan (Rp 640.000) terasa mahal untuk pasar Indonesia dibanding BYOK tools seperti Aider atau Cline + API Claude/GPT budget, apalagi karena harga naik beberapa kali dalam dua tahun terakhir",
+      "Keterbatasan paket Free beberapa generasi Agent per hari dan compute sharing yang lambat saat trafik padat — eksperimen serius atau aplikasi produksi butuh paket berbayar",
+      "Lock-in platform yang nyata: aplikasi yang memakai fitur proprietary Replit (seperti Object Database bawaan) sulit dimigrasi ke platform lain, walaupun export codebase manual ke GitHub tetap dimungkinkan",
+      "Performa Reserved VM untuk aplikasi traffic tinggi bisa lebih mahal daripada VPS konvensional di provider seperti Hetzner atau Contabo kalau workload sudah stabil dan predictable",
+      "Riwayat perubahan harga yang agresif dan renaming paket (dari Hacker ke Core ke Pro, dari Always-On Containers ke Reserved VM) menciptakan ketidakpastian untuk pengguna yang menghitung TCO jangka panjang",
+    ],
+    verdict:
+      "Platform cloud IDE paling lengkap untuk pemula, edukasi, dan prototyping cepat di 2026; pilih Replit kalau prioritasnya adalah zero-setup dan kolaboratif, bandingkan dengan VS Code + Railway/Render untuk software serius jangka panjang dengan kontrol biaya lebih transparan.",
+    body: [
+      "Replit bermula pada 2016 sebagai IDE di browser untuk belajar coding tanpa pusing dengan instalasi lokal — dan satu dekade kemudian, mereka masih menjadi titik masuk paling ramah di pasar yang makin kompetitif. Filosofi intinya adalah 'semua yang dibutuhkan untuk membuat aplikasi ada di satu tempat': kode editor, terminal, runtime interpreter, package manager, basis data, dan deployment infrastructure semuanya hidup dalam satu workspace berbasis web. Alih-alih install VS Code, lalu Node.js, lalu PostgreSQL, lalu setup akun Vercel atau Railway, pengguna cukup membuka replit.com, pilih bahasa, dan langsung menulis kode yang berjalan di cloud. Untuk konteks edukasi dan pengguna non-teknis, proposisi nilai ini sangat kuat: fokus jadi pada logika dan kreativitas, bukan pada setup ritual yang sering jadi penghalang terbesar di awal perjalanan belajar.",
+      "Arsitektur teknis Replit per Juli 2026 berbeda secara fundamental dari IDE tradisional. Bahasa runtime dijalankan di container berbasis Nix package manager yang reproducible dan terisolasi: pengguna bisa menentukan dependensi lewat file replit.nix atau cukup menambahkan lewat UI, lalu Nix menyusun ulang environment secara deklaratif. Untuk deployment, Reserved VM (menggantikan Always-On Containers sejak 2025) adalah fitur kunci: aplikasi bisa selalu online dengan VM dedicated, scaling otomatis, dan domain publik dalam hitungan detik. Multiplayer real-time — salah satu fitur Replit yang paling dikenal — memakai protokol collaboration mirip Operational Transform atau CRDT sehingga banyak developer bisa mengetik di file yang sama dengan kursor berwarna per pengguna, lengkap dengan chat bawaan dan komentar inline. Ghostwriter, autocomplete AI Replit yang rilis 2023, sekarang menjadi salah satu dari beberapa backend Agent4 yang beraksi sesuai konteks prompt. Integrasi database sudah built-in: PostgreSQL dengan tiga klik, plus Object Database proprietary (Replit DB) untuk prototyping cepat, ditambah Object Storage via AWS S3-compatible API. Bahasa yang didukung nyaris tak terbatas lewat Nix: Python, Node.js, Go, Rust, Java, C++, Ruby, PHP, Bash, HTML/CSS/JS, plus bahasa emerging seperti Bun dan Deno runtime.",
+      "Harga Replit mengikuti model freemium dengan tiga tier publik utama plus paket Teams dan Enterprise untuk perusahaan. Paket Free memberikan akses ke workspace publik, generasi Agent terbatas, dan deployment ke replit.app subdomain tanpa Reserved VM (aplikasi tidur setelah tidak ada trafik). Core seharga USD 20 per bulan (sekitar Rp 320.000 dengan kurs Juli 2026) membuka lebih banyak generasi Agent, deployment Reserved VM untuk satu aplikasi, dan akses ke private workspace. Pro seharga USD 40 per bulan (Rp 640.000) menambah kapasitas Agent tertinggi, jumlah Reserved VM lebih banyak, dan prioritas saat server sibuk. Untuk tim dan Enterprise, harga tidak dipublikasikan terbuka dan biasanya disesuaikan dengan seat count, kebutuhan SSO, dan integrasi compliance. Sebagai perbandingan, Reserved VM di Replit seharga sekitar USD 0.30 per hari untuk VM kecil — angka yang kompetitif untuk prototyping dan side project, tapi bisa lebih mahal dari VPS di Hetzner atau Contabo kalau workload sudah traffic tinggi dan stabil. Monetisasi tambahan berasal dari Bounties — pasar freelancer di mana developer bisa mem-posting tugas kecil (perbaiki bug, tambah fitur) dan developer lain dibayar per penyelesaian, seringkali dalam bentuk kredit platform atau tunai via Stripe.",
+      "Untuk konteks Indonesia, Replit punya beberapa implikasi spesifik dan relevan. Pertama, bagi pengguna di kota tier 2 dan 3 dengan laptop berspesifikasi rendah atau koneksi internet sering terputus saat download tool development tradisional, proposisi 'cukup buka browser' menghilangkan hambatan utama yang sering menggugurkan niat belajar coding. Kedua, bagi bootcamp dan komunitas coding Indonesia yang mengajarkan web development dasar, integrasi Replit ke kurikulum jauh lebih ringan dibanding setup VS Code + Node + Git + GitHub + Vercel — beberapa komunitas seperti CodeSaya dan teman developer lokal sudah membuat tutorial bahasa Indonesia yang mengajarkan dasar JavaScript dan Python memakai Replit sebagai titik masuk. Ketiga, bagi UMKM dan startup tahap awal, kombinasi Reserved VM + Agent4 memungkinkan prototyping aplikasi bisnis (dashboard admin, sistem antrian, form reservasi) tanpa investasi DevOps engineer — biaya USD 40/bulan masih terjangkau kalau dihitung dibanding gaji junior developer full-time. Keempat, untuk komunitas mahasiswa informatika, Bounties dan Replit Community bisa jadi jalur belajar sambil menghasilkan — menulis kontribusi ke proyek open source atau freelance kecil di Bounties sambil portofolio terbuka di profile.replit.com. Catatan akhir: untuk software yang akan dipelihara jangka panjang, eksport codebase ke GitHub dan migrasi ke Railway, Render, atau Fly.io tetap lebih sehat secara arsitektur; Replit paling kuat sebagai 'pabrik ide dan MVP kolaboratif', bukan rumah jangka panjang untuk software produk berskala besar.",
+    ],
+    link: "https://replit.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-15",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
