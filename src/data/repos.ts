@@ -2304,6 +2304,55 @@ export const repos: Review[] = [
     updatedAt: "2026-07-16",
     featured: false,
   },
+{
+    slug: "claude-mem",
+    name: "Claude-Mem",
+    tagline: "Memori lintas sesi otomatis untuk setiap AI coding agent - capture, compress, inject",
+    tags: ["AI Agent", "Memory", "Claude", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Claude-Mem dari thedotmack adalah plugin memori lintas sesi untuk AI coding agent - menangkap setiap aksi agent selama sesi, mengompresnya dengan AI, lalu menyuntikkan kembali konteks yang relevan ke sesi berikutnya. Sudah mendukung Claude Code, Codex, Gemini, Copilot, OpenCode, dan agen populer lain - menjadikannya salah satu solusi persistensi konteks paling luas di ekosistem saat ini.",
+    highlights: [
+      "Capture otomatis setiap aksi agent selama sesi - prompt, tool call, hasil, dan keputusan arsitektur tersimpan tanpa campur tangan developer",
+      "Kompresi AI untuk meringkas ribuan interaksi menjadi unit memori yang relevan - biaya token jauh lebih rendah dibanding full transcript",
+      "Injeksi konteks otomatis di sesi baru - agent tahu apa yang sudah dikerjakan, apa yang diputuskan, dan apa yang harus dilanjutkan",
+      "Dukungan multi-agent: Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode - tidak terkunci pada satu vendor",
+      "Backend ChromaDB untuk retrieval vektor + SQLite untuk metadata terstruktur - kombinasi yang umum, mudah diinspeksi dan di-backup",
+      "Arsitektur skill-based - bisa dipasang sebagai plugin ringan tanpa migrasi tooling yang sudah ada",
+      "Lisensi Apache-2.0 - bebas untuk penggunaan komersial dan modifikasi internal",
+      "Aktivitas commit tinggi (87k+ stars, 7,5k forks, push terbaru dalam satu hari) - menandakan iterasi aktif dari maintainer",
+    ],
+    pros: [
+      "Menghilangkan salah satu titik paling menyebalkan di workflow AI coding - kehilangan konteks antar sesi - sehingga agent benar-benar berkelanjutan",
+      "Dukungan multi-agent yang luas berarti tim yang heterogeneous (Claude Code untuk sebagian task, Codex untuk task lain) tetap mendapat memori bersama",
+      "Lisensi Apache-2.0 dan arsitektur plugin membuat adopsi rendah risiko - cukup pasang, tidak perlu sentuh stack yang sudah jadi",
+    ],
+    cons: [
+      "Bergantung pada kualitas kompresi AI untuk menentukan memori mana yang relevan - tanpa tuning, agent kadang menarik konteks yang terlalu luas atau terlalu sempit",
+      "Butuh ChromaDB atau instance retrieval lain yang harus dijalankan berdampingan dengan workflow developer - menambah satu proses lagi yang harus dijaga",
+      "Repositori relatif masih berkembang - edge case untuk agent di luar daftar dukungan resmi mungkin belum tertangani sempurna",
+    ],
+    verdict:
+      "Solusi yang menjawab kebutuhan paling nyata dari praktisi AI coding modern: kontinuitas konteks lintas sesi. Sangat relevan untuk developer Indonesia yang sering berpindah konteks antar proyek atau yang ingin agent mereka benar-benar ingat keputusan arsitektur minggu lalu - layak masuk radar utama siapa pun yang serius dengan workflow agentik.",
+    body: [
+      "Salah satu masalah paling terasa di workflow AI coding modern adalah sifat agent yang amnesia: tutup sesi, buka sesi baru, agent lupa apa yang sudah dikerjakan, apa yang sudah diputuskan, dan apa yang harus dilanjutkan. Claude-Mem dari thedotmack mengusulkan solusi yang elegan - sebuah plugin yang menangkap setiap aksi agent selama sesi (prompt, tool call, hasil eksekusi, keputusan yang diambil), mengompresnya dengan AI menjadi unit memori yang relevan, lalu menyuntikkan kembali konteks yang tepat di awal sesi berikutnya. Hasilnya adalah agent yang benar-benar berkelanjutan, bukan sekadar pintar dalam satu percakapan pendek.",
+      "Yang membuat Claude-Mem menonjol dibanding eksperimen memori lain adalah cakupan agennya yang sangat luas. Bukan hanya Claude Code sebagai titik awal, plugin ini juga mendukung OpenClaw, Codex, Gemini, Copilot, OpenCode, dan daftar yang terus bertambah - artinya tim yang menggunakan campuran agen tidak perlu mengelola beberapa sistem memori terpisah. Backend teknisnya juga pragmatis: ChromaDB untuk retrieval vektor yang bisa di-query secara semantik, SQLite untuk metadata terstruktur yang mudah di-backup dan di-inspeksi, dan lapisan kompresi AI untuk menjaga agar memori yang tersimpan tetap padat dan murah saat di-inject kembali.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling bermanfaat adalah workflow multi-hari: agent yang dipakai untuk refactor API Senin, diberi task lanjutan Rabu, dan langsung tahu file mana yang sudah disentuh, pola error yang sudah muncul, dan keputusan yang sudah diambil soal naming atau struktur. Untuk konteks Indonesia, kemampuan ini sangat relevan bagi tim yang sering berpindah konteks antar proyek - konsultan yang handle beberapa klien, freelancer yang kerjanya multi-tenant, atau engineer di startup yang sprint-nya pendek dan sering reset. Claude-Mem pada dasarnya menjadikan memory layer sebagai fitur default, bukan kemewahan opsional.",
+      "Keterbatasan yang perlu dipahami: kualitas injeksi konteks sangat bergantung pada model kompresi yang dipakai - tanpa tuning yang tepat, agent kadang menarik konteks terlalu luas sehingga biaya token naik, atau terlalu sempit sehingga memori penting justru hilang. Infrastruktur ChromaDB atau retrieval backend lain juga menambah satu proses lagi yang harus dijaga bersama workflow utama, sehingga adopsi di lingkungan dengan kebijakan dev-environment yang ketat mungkin perlu diskusi dengan tim platform. Secara keseluruhan, Claude-Mem adalah salah satu plugin memori paling matang dan paling luas cakupannya di ekosistem AI coding saat ini - layak dicoba siapa pun yang ingin AI agent-nya benar-benar ingat, bukan sekadar menjawab.",
+    ],
+    link: "https://github.com/thedotmack/claude-mem",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-16",
+    updatedAt: "2026-07-16",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
