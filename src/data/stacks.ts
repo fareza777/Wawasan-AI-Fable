@@ -1633,6 +1633,48 @@ export const stacks: Review[] = [
     date: "2026-07-15",
     featured: false,
   },
+{
+    slug: "github-actions-ai",
+    name: "GitHub Actions + Copilot",
+    tagline: "Otomatisasi CI/CD dengan AI-assisted YAML generation dan self-healing workflows",
+    tags: ["GitHub", "Freemium", "DevOps", "CI/CD"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 9.3 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "GitHub Actions adalah mesin otomasi workflow yang sudah built-in ke setiap repository GitHub, dan integrasi AI Copilot di dalamnya pada Juli 2026 menjadikannya titik masuk paling murah untuk pipeline CI/CD yang bisa menulis dan memperbaiki YAML sendiri. Dengan Copilot CLI, Copilot Coding Agent, dan Actions Copilot extensions, developer bisa generate workflow dari prompt bahasa alami, meminta AI memperbaiki step yang gagal, dan membiarkan agen menyelesaikan isu end-to-end — semuanya tanpa meninggalkan ekosistem GitHub.",
+    pros: [
+      "Integrasi native ke GitHub: zero setup tambahan karena Actions sudah built-in ke setiap repo dan trigger otomatis dari push, PR, atau jadwal cron",
+      "AI-assisted YAML generation lewat Copilot CLI atau Copilot Chat yang menerjemahkan deskripsi pipeline bahasa alami menjadi workflow YAML yang siap pakai",
+      "Marketplace Actions dengan 20.000+ action komunitas siap pakai untuk bahasa, framework, dan layanan cloud apapun — dari deploy Vercel sampai publish ke npm",
+      "Self-hosted runner gratis untuk yang mau eksekusi di infrastruktur sendiri (hardware lokal, VPS Hetzner, atau Raspberry Pi cluster) tanpa bayar per menit",
+      "Free tier 2.000 menit/bulan untuk repo publik cukup untuk side project dan CI pribadi, sementara paket Team USD 4/user/bulan menambahkan 3.000 menit dan akses ke Copilot Business",
+    ],
+    cons: [
+      "Harga untuk repo private di paket Free hanya 200 menit/bulan — pipeline yang menjalankan test suite besar atau build image Docker bisa habis dalam hitungan hari, dan paket Team USD 4/user/bulan bisa membengkak untuk tim besar",
+      "YAML Actions terkenal verbose dan sensitif terhadap indentasi; satu spasi salah bisa membuat pipeline gagal total dan pesan error kadang tidak intuitif untuk pemula",
+      "Performa runner hosted GitHub masih kalah dari CI/CD spesialis seperti Buildkite atau CircleCI untuk monorepo besar atau workload berat, dengan cold start yang terasa di job pertama hari itu",
+      "Kontrol akses dan secret management untuk produksi enterprise masih perlu setup manual lewat environment protection rules dan fine-grained PAT — tidak sekuat GitLab atau Jenkins yang punya role-based access lebih granular",
+      "Lock-in ke ekosistem GitHub: workflow, secret, dan artifact yang dibuat di Actions tidak otomatis portable ke Jenkins atau GitLab CI, migrasi penuh butuh rewrite YAML dan penyesuaian runner",
+    ],
+    verdict:
+      "Pilihan default paling masuk akal untuk mayoritas proyek open source dan tim kecil yang sudah di GitHub, dengan nilai tambah AI Copilot yang makin relevan di 2026. Untuk workload berat atau kontrol enterprise granular, bandingkan dengan Buildkite, CircleCI, atau GitLab CI yang punya runner dedicated dan pricing lebih transparan untuk traffic tinggi.",
+    body: [
+      "GitHub Actions lahir sebagai jawaban GitHub untuk CI/CD internal pada 2019, dan dalam tujuh tahun kemudian ia tumbuh menjadi salah satu mesin otomasi workflow paling banyak dipakai di dunia — GitHub sendiri melaporkan lebih dari 350 juta workflow berjalan di platform mereka per awal 2026. Filosofi intinya sederhana: karena Actions sudah built-in ke setiap repository, tidak perlu setup runner eksternal, tidak perlu konfigurasi webhooks manual, dan tidak perlu integrasi akun ketiga. Cukup commit file .github/workflows/build.yml ke repo, dan pipeline langsung aktif. Pendekatan ini menurunkan barrier to entry secara dramatis dibanding Jenkins atau Travis CI yang butuh instalasi dan konfigurasi server terpisah, dan menjelaskan adopsi massal dari developer indie sampai enterprise.",
+      "Integrasi AI Copilot ke Actions datang dalam tiga lapis per Juli 2026. Pertama, Copilot CLI memberikan akses ke agen langsung dari terminal: developer bisa mengetik prompt seperti 'buat workflow yang menjalankan test Python dan deploy ke Vercel saat push ke main' dan CLI akan menghasilkan file YAML yang siap di-commit. Kedua, Copilot Coding Agent di web GitHub bisa menugaskan agen untuk menyelesaikan isu GitHub secara end-to-end — agen membuat branch, menulis kode, menulis unit test, menjalankan pipeline, memperbaiki kalau gagal, lalu membuka pull request. Ketiga, marketplace sekarang punya Actions resmi dari GitHub untuk AI-assisted debugging: workflow yang gagal bisa di-pipe ke Copilot untuk diagnosis otomatis dan saran perbaikan. Tiga lapis ini menjadikan Actions bukan sekadar runner YAML, melainkan platform otomasi yang punya reasoning capability — cukup penting untuk membedakan dari kompetitor yang masih murni declarative.",
+      "Harga Actions mengikuti model freemium yang agresif untuk mendorong adopsi. Repository publik mendapatkan 2.000 menit/bulan gratis tanpa batas concurrent job, sementara repository private di paket Free hanya 200 menit/bulan dengan limit concurrent 20 job. Paket Team USD 4 per user per bulan (sekitar Rp 64.000 dengan kurs Juli 2026) menambahkan 3.000 menit untuk private repo, sementara paket Enterprise USD 21 per user per bulan (Rp 336.000) membuka 50.000 menit dan fitur keamanan enterprise. Untuk developer Indonesia yang baru mulai, paket Free di repo publik biasanya cukup: pipeline untuk project React, Python, atau Node.js rata-rata menghabiskan 1-3 menit per run, dan 2.000 menit sebulan cukup untuk ratusan push harian. Untuk self-hosted runner, Actions gratis sepenuhnya: GitHub menyediakan software runner open-source yang bisa dijalankan di VPS Hetzner EUR 4/bulan (Rp 70.000), Raspberry Pi, atau server kantor — opsi yang sangat relevan untuk startup Indonesia yang ingin CI/CD full tanpa biaya cloud tambahan.",
+      "Untuk konteks Indonesia, GitHub Actions punya beberapa implikasi spesifik yang sering tidak dibahas. Pertama, bagi komunitas open source Indonesia, Actions memungkinkan setiap maintainer pustaka atau framework lokal (mis. proyek SaaS Indonesia, pustaka NLP bahasa Indonesia, atau wrapper API lokal) untuk punya pipeline CI/CD berkualitas enterprise tanpa biaya — cukup aktifkan workflow untuk test multi-OS dan publish ke npm/PyPI otomatis saat tag rilis. Kedua, bagi tim startup yang sudah pakai GitHub untuk kode, integrasi Actions ke deployment Vercel, Railway, atau Fly.io memungkinkan pipeline full dari push sampai production dalam hitungan menit tanpa toolchain terpisah. Ketiga, bagi mahasiswa informatika dan bootcamp, Actions adalah cara belajar CI/CD dengan biaya nol dan contoh yang banyak di GitHub sendiri — banyak tutorial bahasa Indonesia yang mengajarkan Actions lewat studi kasus deploy Hugo atau Next.js ke Vercel. Keempat, untuk freelancer dan konsultan yang bekerja di banyak repo klien, Actions meminimalkan switching cost karena tidak perlu login ke platform CI/CD terpisah per klien. Catatan akhir: untuk monorepo besar atau pipeline yang menjalankan Selenium test di banyak browser, pertimbangkan self-hosted runner di hardware sendiri — hosted runner GitHub bisa dua sampai tiga kali lebih mahal dari VPS dedicated kalau workload sudah stabil, dan latency GitHub-hosted runner dari Asia Tenggara kadang terasa di cold start job pertama hari itu.",
+    ],
+    link: "https://github.com/features/actions",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-16",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
