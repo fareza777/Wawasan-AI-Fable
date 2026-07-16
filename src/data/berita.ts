@@ -1845,6 +1845,74 @@ export const berita: Artikel[] = [
     },
   ],
 },
+{
+  slug: "hermes-agent-vs-openclaw-agen-ai-open-source-mana-yang-menang-di-2026",
+  title: "Hermes Agent vs OpenClaw: Dua Agen AI Open-Source yang Bikin Developer Indonesia Pusing Pilih",
+  excerpt:
+    "Keduanya gratis, sama-sama bisa menjalankan perintah di server, dan sama-sama keturunan proyek open-source yang ramai di 2026. Tapi siapa yang lebih pas untuk tim lokal?",
+  category: "Analisis",
+  date: "2026-07-17",
+  readingTime: "7 menit",
+  body: [
+    {
+      paragraphs: [
+        "Kalau Anda perhatikan percakapan di komunitas AI Indonesia enam bulan terakhir, ada dua nama yang muncul terus di hampir semua diskusi teknis: Hermes Agent dari Nous Research dan OpenClaw dari tim open-source independen. Keduanya gratis, keduanya bisa dijalankan di server sendiri, dan keduanya mengklaim bisa mengeksekusi perintah komputer bukan sekadar menjawab pertanyaan. Buat developer yang sudah bosan dengan langganan API $20 per bulan, pilihan di antara keduanya kini terasa seperti memilih antara dua merk smartphone yang sama-sama bagus — dan justru itulah masalahnya.",
+        "Tulisan ini bukan deklarasi pemenang absolut. Setiap proyek punya kekuatan dan kelemahan masing-masing, dan jawaban benar untuk studio kecil di Jakarta belum tentu jawaban benar untuk tim startup di Yogyakarta atau pelajar SMK yang baru belajar ngoding di laptop. Yang bisa dilakukan di sini adalah membedah dua proyek ini dengan jujur — apa yang benar-benar kerja, apa yang hanya marketing — supaya Anda punya kerangka pikir saat memutuskan mana yang akan dipasang minggu depan.",
+      ],
+    },
+    {
+      heading: "Sekilas profil keduanya, supaya konteksnya jelas",
+      paragraphs: [
+        "Hermes Agent dari Nous Research lahir dari keluarga model Hermes yang sudah lama dikenal di komunitas riset sebagai model dengan kemampuan penalaran yang solid dan jendela konteks panjang. Versi agent-nya menambahkan lapisan orchestration: model Hermes sendiri jadi otak, lalu di sekitarnya dipasang tool-tool untuk baca-tulis file, jalankan shell command, dan sambungkan ke layanan eksternal lewat MCP. Pendekatan ini bikin Hermes Agent terasa lebih seperti pasangan riset yang bisa Anda suruh eksplorasi repository — bukan sekadar autocomplete.",
+        "OpenClaw, di sisi lain, datang dari pendekatan yang lebih pragmatis. Tim di baliknya tidak membangun model sendiri, mereka mengemas agent loop yang bisa dipasang di atas banyak model open-weight yang sudah ada — Qwen, Llama, DeepSeek, dan lain-lain. Fokus mereka adalah runtime: bagaimana caranya agent bisa menjalankan perintah dengan andal, logging yang bersih, dan isolasi yang aman. Buat Anda yang sudah punya model favorit dan hanya butuh lapisan eksekusi, OpenClaw terasa lebih ringan untuk diadopsi.",
+      ],
+    },
+    {
+      heading: "Lima dimensi pembanding yang patut dipertimbangkan",
+      paragraphs: [
+        "Pertama, kemampuan penalaran. Hermes Agent mewarisi kualitas model Hermes yang terkenal kuat di reasoning chain dan reading comprehension yang panjang. Untuk eksplorasi codebase, menjawab pertanyaan lintas file, atau merangkum dokumen panjang, performanya cenderung lebih konsisten. OpenClaw performa penalarannya sangat bergantung model yang Anda pasang di belakangnya — pasang Qwen 3 32B dan hasilnya bisa sama bagusnya; pasang model kecil dan jangan harap keajaiban.",
+        "Kedua, keamanan dan isolasi. Kedua proyek sadar bahwa agent yang bisa menjalankan shell command punya risiko besar. Hermes Agent menambahkan permission system berlapis di mana setiap aksi lewat tool harus dikonfirmasi dulu. OpenClaw menyediakan sandbox Docker sebagai default dan sangat menyarankan Anda tidak menjalankan agent-nya di host langsung. Untuk konteks Indonesia — di mana banyak tim masih pakai VPS shared dan belum punya tim DevOps khusus — pendekatan OpenClaw yang menyediakan isolasi Docker terasa lebih aman untuk pemula.",
+        "Ketiga, ekosistem integrasi. Hermes Agent mengandalkan MCP sebagai protokol standar, sehingga integrasi ke tool eksternal mengikuti pola yang sama seperti ekosistem Claude Code. OpenClaw mendukung MCP juga, tapi punya ekosistem plugin internal yang lebih kaya untuk kasus penggunaan umum seperti coding, deploy, dan monitoring. Untuk developer Indonesia yang sudah akrab dengan Claude Code, transisi ke Hermes Agent terasa lebih natural.",
+        "Keempat, dokumentasi dan komunitas berbahasa Inggris vs bahasa lain. Hermes Agent datang dengan dokumentasi yang lebih akademis dan condong ke audiens riset. OpenClaw menulis lebih banyak tutorial praktis untuk kasus penggunaan developer harian. Untuk pemula, OpenClaw terasa lebih ramah. Untuk pengguna yang sudah paham konsep dan butuh kontrol mendalam, dokumentasi Hermes Agent lebih memuaskan.",
+        "Kelima, biaya operasional. Keduanya gratis dari sisi lisensi, tapi biaya operasional berbeda. Hermes Agent, kalau Anda pakai model Hermes bawaan, butuh GPU yang cukup besar atau API key dari Nous Research. OpenClaw bisa dijalankan dengan model 7B di laptop dengan RAM 16 GB, atau model 14B di server rumahan. Buat pelajar, peneliti, atau UMKM yang hitungannya perak, OpenClaw lebih ramah kantong.",
+      ],
+    },
+    {
+      heading: "Skenario pemakaian — kapan pilih yang mana",
+      paragraphs: [
+        "Untuk tim riset kecil, penulis teknis, atau developer yang sering berurusan dengan dokumen panjang dan codebase besar, Hermes Agent terasa lebih pas. Kemampuannya mempertahankan konteks panjang dan mengikuti instruksi bertingkat membuatnya cocok untuk eksplorasi repositori yang butuh penalaran mendalam.",
+        "Untuk tim ops, sysadmin, atau developer yang ingin agent bisa menjalankan perintah di VPS dengan aman, OpenClaw terasa lebih pas. Sandbox Docker bawaan dan dukungan multi-model bikin setup harian lebih fleksibel — Anda bisa ganti model tanpa re-pasang agent.",
+        "Untuk pemula yang baru pertama kali mendengar kata agent, OpenClaw adalah titik masuk yang lebih lembut. Dokumentasinya menulis alur setup dari nol, dan komunitasnya aktif menjawab pertanyaan pemula. Hermes Agent lebih cocok untuk yang sudah tahu apa yang mereka cari.",
+        "Untuk organisasi besar dengan aturan data ketat, keduanya sama-sama mendukung self-host — tapi ini bukan keputusan ringan. Audit internal, kepatuhan terhadap UU PDP, dan kebijakan data center perlu dipertimbangkan sebelum keduanya dipasang di server produksi.",
+      ],
+    },
+    {
+      heading: "Konteks Indonesia: bahasa, pembayaran, dan dukungan lokal",
+      paragraphs: [
+        "Salah satu pertimbangan yang jarang dibahas di review internasional adalah dukungan bahasa Indonesia. Hermes Agent, karena mewarisi model Hermes, punya kemampuan bahasa Indonesia yang cukup baik — tapi tetap kalah dari model yang memang dilatih dengan korpus Indonesia. OpenClaw, karena bisa dipasang di atas banyak model, memberi Anda kebebasan memilih model yang paling cocok untuk bahasa target. Untuk tim yang banyak bekerja dengan dokumen berbahasa Indonesia, ini keunggulan nyata.",
+        "Masalah pembayaran dan akses juga nyata. Nous Research tidak menyediakan langganan berbayar dari Indonesia secara langsung — Anda harus pakai API key pihak ketiga atau self-host. OpenClaw tidak punya masalah ini karena sepenuhnya gratis dan self-hostable. Untuk pelajar, peneliti, atau UMKM yang belum punya kartu kredit internasional, OpenClaw jelas lebih mudah.",
+        "Komunitas lokal juga ikut menentukan. Grup Telegram OpenClaw Indonesia sudah cukup aktif dengan banyak yang saling bantu debug masalah sehari-hari. Untuk Hermes Agent, komunitasnya lebih banyak di Discord global — bukan masalah kalau Anda nyaman dengan bahasa Inggris, tapi bisa terasa menyulitkan untuk yang lebih suka bertanya dalam bahasa Indonesia.",
+      ],
+    },
+    {
+      heading: "Yang perlu diwaspadai dari keduanya",
+      paragraphs: [
+        "Jangan pasang agent manapun di mesin yang menyimpan data produksi sensitif tanpa isolasi. Kedua proyek sama-sama mampu menjalankan perintah yang destructive jika di-instruksikan dengan cara tertentu. Sandbox itu bukan pilihan, itu keharusan.",
+        "Jangan terlalu cepat percaya dengan benchmark kemampuan agent. Tes dulu dengan kasus penggunaan spesifik Anda — misalnya, suruh agent eksplorasi salah satu repo internal Anda dan lihat apakah hasilnya masuk akal. Klaim dari kedua proyek di media sosial selalu lebih optimistis dari performa riil di lapangan.",
+        "Jangan pasang keduanya sekaligus di mesin yang sama. Agent yang bersaing untuk kontrol atas file dan shell akan konflik. Pilih satu, evaluasi 2-4 minggu, baru pertimbangkan untuk eksplorasi yang lain di mesin terpisah.",
+        "Versi bergerak cepat. Saat artikel ini ditulis, kedua proyek sudah melewati beberapa iterasi mayor. Sebelum Anda mengikuti tutorial yang Anda temukan di blog, pastikan tutorial itu cocok dengan versi yang sedang Anda pasang.",
+      ],
+    },
+    {
+      heading: "Jadi, mana yang menang?",
+      paragraphs: [
+        "Tidak ada pemenang universal. Hermes Agent menang di penalaran mendalam dan integrasi MCP ala Claude Code; OpenClaw menang di keamanan, fleksibilitas model, dan kemudahan setup untuk pemula. Buat developer Indonesia yang baru mulai eksplorasi agent, OpenClaw adalah titik masuk yang lebih lembut dan murah. Buat tim yang sudah paham apa yang mereka butuhkan dan ingin kontrol mendalam, Hermes Agent layak dicoba dulu — terutama kalau Anda sudah akrab dengan workflow Claude Code.",
+        "Yang lebih penting dari pilihan awal adalah kemampuan untuk pindah ketika kebutuhan berubah. Jangan jadikan keputusan ini sebagai komitmen jangka panjang yang berat untuk dibalik. Dunia agent open-source di 2026 masih bergerak cepat, dan kedua proyek ini akan terus berevolusi. Pilih yang paling cocok untuk masalah Anda minggu ini, dan bersiaplah untuk menimbang ulang ketika versi baru muncul bulan depan.",
+        "Dalam pengujian editorial Wawasan AI, keduanya punya tempat masing-masing di toolbox developer Indonesia. Tidak ada juara tunggal, hanya kecocokan spesifik untuk konteks spesifik. Uji langsung, catat hasilnya, dan biarkan pengalaman Anda sendiri yang menjadi verdict final — bukan headline media sosial.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
