@@ -1,45 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "16 Juli 2026",
-  "period": {
-    "date": "2026-07-16",
-    "label": "16 Juli 2026",
-    "path": "/repo/daily/2026/07/16"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-16T00:06:13.751Z",
+  "fetchedAt": "2026-07-16T04:39:19.311Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "Nutlope/hallmark",
-      "owner": "Nutlope",
-      "repo": "hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "githubUrl": "https://github.com/Nutlope/hallmark",
-      "trendshiftUrl": "https://trendshift.io/repositories/33587",
-      "language": "CSS",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-04-27T20:47:10Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "1c7/chinese-independent-developer",
-      "owner": "1c7",
-      "repo": "chinese-independent-developer",
-      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
-      "githubUrl": "https://github.com/1c7/chinese-independent-developer",
-      "trendshiftUrl": "https://trendshift.io/repositories/4388",
-      "language": "Python",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2017-09-21T11:08:23Z"
-    },
-    {
-      "rank": 3,
       "fullName": "xai-org/grok-build",
       "owner": "xai-org",
       "repo": "grok-build",
@@ -47,8 +15,38 @@
       "githubUrl": "https://github.com/xai-org/grok-build",
       "trendshiftUrl": "https://trendshift.io/repositories/83820",
       "language": "Rust",
-      "topics": [],
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
       "dateCreated": "2026-07-14T20:04:23Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Fei-Away/Codex-Dream-Skin",
+      "owner": "Fei-Away",
+      "repo": "Codex-Dream-Skin",
+      "description": "Codex Dream Skin",
+      "githubUrl": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "trendshiftUrl": "https://trendshift.io/repositories/84043",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-07-15T12:34:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
     },
     {
       "rank": 4,
@@ -66,6 +64,35 @@
     },
     {
       "rank": 5,
+      "fullName": "Nutlope/hallmark",
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "githubUrl": "https://github.com/Nutlope/hallmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/33587",
+      "language": "CSS",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-27T20:47:10Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "HKUDS/DeepTutor",
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "githubUrl": "https://github.com/HKUDS/DeepTutor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17099",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "RAG"
+      ],
+      "dateCreated": "2025-12-28T15:35:54Z"
+    },
+    {
+      "rank": 7,
       "fullName": "Shubhamsaboo/awesome-llm-apps",
       "owner": "Shubhamsaboo",
       "repo": "awesome-llm-apps",
@@ -82,7 +109,36 @@
       "dateCreated": "2024-04-29T05:30:25Z"
     },
     {
-      "rank": 6,
+      "rank": 8,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "openinterpreter/openinterpreter",
+      "owner": "openinterpreter",
+      "repo": "openinterpreter",
+      "description": "A lightweight coding agent, optimized for open models like GLM, Deepseek, and Kimi",
+      "githubUrl": "https://github.com/openinterpreter/openinterpreter",
+      "trendshiftUrl": "https://trendshift.io/repositories/8740",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2023-07-14T07:10:44Z"
+    },
+    {
+      "rank": 10,
       "fullName": "HenryNdubuaku/maths-cs-ai-compendium",
       "owner": "HenryNdubuaku",
       "repo": "maths-cs-ai-compendium",
@@ -94,61 +150,6 @@
         "Curated list"
       ],
       "dateCreated": "2026-02-03T16:28:18Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "Graphify-Labs/graphify",
-      "owner": "Graphify-Labs",
-      "repo": "graphify",
-      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
-      "githubUrl": "https://github.com/Graphify-Labs/graphify",
-      "trendshiftUrl": "https://trendshift.io/repositories/25296",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-04-03T15:49:07Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "Raphire/Win11Debloat",
-      "owner": "Raphire",
-      "repo": "Win11Debloat",
-      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-      "githubUrl": "https://github.com/Raphire/Win11Debloat",
-      "trendshiftUrl": "https://trendshift.io/repositories/10266",
-      "language": "PowerShell",
-      "topics": [],
-      "dateCreated": "2020-10-27T22:26:59Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "JustVugg/colibri",
-      "owner": "JustVugg",
-      "repo": "colibri",
-      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "githubUrl": "https://github.com/JustVugg/colibri",
-      "trendshiftUrl": "https://trendshift.io/repositories/73945",
-      "language": "C",
-      "topics": [
-        "Local LLM"
-      ],
-      "dateCreated": "2026-07-01T12:27:49Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "sharpemu/sharpemu",
-      "owner": "sharpemu",
-      "repo": "sharpemu",
-      "description": "An experimental PlayStation 5 emulator project.",
-      "githubUrl": "https://github.com/sharpemu/sharpemu",
-      "trendshiftUrl": "https://trendshift.io/repositories/79103",
-      "language": "C#",
-      "topics": [
-        "Emulator"
-      ],
-      "dateCreated": "2026-03-11T12:46:36Z"
     }
   ]
 }
