@@ -1103,6 +1103,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                           "Dilengkapi daftar kemampuan 'must-know' (PyTorch, CUDA, distributed training, paper writing) plus panduan karir dan etika riset — relevan untuk mahasiswa dan profesional Indonesia yang ingin serius menapaki karier riset AI/ML.",
                                                         ],
                                                       },
+                                                      "HKUDS/DeepTutor": {
+                                                        description:
+                                                          "Tutor AI 'seumur hidup' yang dipersonalisasi dari lab HKU Data Science — bukan chatbot Q&A, melainkan agen yang menghafal konteks belajar, memori, dan materi/sumber Anda untuk menjelaskan konsep dengan cara Anda.",
+                                                        highlights: [
+                                                          "Proyek HKUDS (Hong Kong University Data Science) yang bertujuan jadi 'tutor pribadi sepanjang hayat' — sistem AI yang menyesuaikan cara menjelaskan, kedalaman, dan urutan materi dengan profil belajar spesifik tiap pengguna.",
+                                                          "Pipeline RAG end-to-end: mengindeks buku, paper, dan catatan Anda (PDF, DOCX, markdown), lalu memanggil AI agent untuk menjawab, merangkum, atau membuat soal berdasarkan sumber tersebut — bukan jawaban model dari memori internal.",
+                                                          "Antarmuka web Next.js 16 plus CLI 'agent-native' untuk automasi — ditambah modul 'partner' (diskusi socratic), 'guided learning' (latihan bertahap), dan 'deep research' (riset multi-langkah) dalam satu paket.",
+                                                          "Dikelola tim di balik LightRAG dan proyek agentik terkenal lain — track record kuat di ranah RAG dan personalisasi agen AI, relevan untuk pelajar/peneliti Indonesia yang belajar AI/ML secara mandiri.",
+                                                        ],
+                                                      },
+                                                      "xai-org/grok-build": {
+                                                        description:
+                                                          "Agen coding TUI resmi dari xAI (SpaceXAI) — 'grok' CLI Rust yang memahami basis kode, edit file, jalankan perintah shell, dan orchestrate task panjang lewat terminal atau ACP di editor.",
+                                                        highlights: [
+                                                          "Tool coding agent resmi xAI: ditulis Rust, dijalankan sebagai TUI full-screen dengan interaksi mouse, tetapi juga bisa dipakai headless untuk scripting/CI atau dipasang ke editor lewat Agent Client Protocol (ACP).",
+                                                          "Model-model Grok jadi otak: 'grok' CLI/TUI bukan model terpisah, melainkan harness Rust untuk model xAI yang menulis kode, membaca repo, dan mengeksekusi shell — fokus produktivitas coding agentik di terminal.",
+                                                          "Instalasi satu baris (curl+bash di Unix, irm+iex di PowerShell) plus biner rilis untuk macOS, Linux, Windows — tidak perlu setup Rust toolchain kecuali mau bangun dari sumber.",
+                                                          "Arsitektur extensible dengan registry tools, agent loop terpisah dari UI, dan integrasi editor lewat ACP — repositori publik disinkron periodik dari monorepo internal SpaceXAI, jadi fiturnya mengikuti kemampuan production Grok.",
+                                                        ],
+                                                      },
                                                     };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
