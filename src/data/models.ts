@@ -1935,6 +1935,49 @@ export const models: Review[] = [
     date: "2026-07-16",
     featured: false,
   },
+  {
+  slug: "hy3",
+  name: "Hy3",
+  tagline: "Flagship Hunyuan reasoning generasi ketiga Tencent — coding dan tool-use kelas atas",
+  tags: ["Tencent", "Proprietary", "Reasoning", "Coding"],
+  score: 8.1,
+  scores: [
+    { label: "Penalaran", value: 8.0 },
+    { label: "Coding", value: 8.6 },
+    { label: "Kecepatan", value: 7.5 },
+    { label: "Harga/Performa", value: 8.8 },
+  ],
+  aa_intelligence_index: 41.2,
+  aa_coding_index: 58.8,
+  aa_price_input: 0.123,
+  aa_price_output: 0.43,
+  aa_synced_at: "2026-07-17",
+  summary:
+    "Flagship reasoning terbaru dari keluarga Hunyuan Tencent — arsitektur MoE generasi ketiga dengan intelligence index 41,2 dan coding index 58,8 (sumber: Artificial Analysis). Diferensiasi utamanya: reasoning configurability, tool-use agentik yang solid, dan harga API agresif di kisaran $0,123 input / $0,430 output per juta token — dikelola lewat Tencent Cloud dan endpoint partner regional Asia Tenggara.",
+  pros: [
+    "Coding index 58,8 (sumber: Artificial Analysis) — salah satu yang tertinggi di kelasnya, unggul di code generation dan code completion multi-baris dibanding pesaing sebanding",
+    "Intelligence index 41,2 (sumber: AA) menempatkan Hy3 di papan atas laboratorium Asia, kompetitif langsung dengan frontier proprietary Barat",
+    "Harga API $0,123/M input dan $0,430/M output (sumber: AA) — salah satu tier paling agresif untuk model reasoning kelas atas, ekonomis untuk workload penalaran volume",
+    "Throughput 47,9 token/detik dengan TTFT 1,481 detik (sumber: AA) — cukup responsif untuk chat interaktif dan streaming output panjang",
+  ],
+  cons: [
+    "Throughput 47,9 token/detik (sumber: AA) kalah dari frontier hyperscaler yang tembus 100+ tps — terasa lebih lambat untuk iterasi generate-eval-fix cepat pada output panjang",
+    "Posisi Tencent di pasar API model AI untuk kawasan Indonesia masih relatif baru dibanding OpenAI atau Anthropic — ekosistem developer, tutorial bahasa Indonesia, dan integrasi komunitas lebih sedikit",
+    "Model proprietary API (bukan open weight) membatasi opsi self-host untuk customer yang butuh kedaulatan data penuh atau deployment on-premise",
+    "Math index tidak tersedia di katalog Artificial Analysis — sulit menilai kemampuan matematika simbolik dan pembuktian logis sebagai pembantu verifikasi penalaran numerik",
+  ],
+  verdict:
+    "Untuk developer dan startup Asia Tenggara (termasuk Indonesia) yang butuh reasoning API kelas atas dengan harga agresif dan coding agentik solid, Tencent Hy3 adalah opsi yang layak dipertimbangkan di samping frontier Barat. Untuk penalaran murni kelas paling depan, Claude Opus 4.5 dan GPT-5 masih memimpin; untuk deployment self-host kedaulatan data, varian open-weight Hunyuan tetap lebih relevan.",
+  body: [
+    "Hy3 adalah flagship reasoning generasi ketiga dari keluarga Hunyuan Tencent, diposisikan sebagai jawaban laboratorium Asia untuk workload reasoning mendalam, coding agentik, dan tool-use multi-langkah. Intelligence index 41,2 (sumber: Artificial Analysis) menempatkannya di papan atas laboratorium Asia dan sebanding dengan frontier proprietary Barat — untuk konteks, GPT-5 di 44,6 dan Claude Opus 4.5 di 43,1+, jadi Hy3 bermain di tier yang sama dari sisi benchmark agregat. Diferensiasi utamanya justru ada pada coding index 58,8 (sumber: AA) — salah satu angka tertinggi di kelasnya — yang menunjukkan tuning khusus untuk code generation dan code completion multi-baris, kombinasi yang menarik untuk developer Indonesia yang banyak membangun workflow coding agentik dengan Claude Code atau serupa. Arsitektur MoE generasi ketiga memungkinkan kapasitas penalaran mendekati dense model besar, dengan harga API $0,123/M input dan $0,430/M output (sumber: AA) yang jauh di bawah frontier proprietary Barat — blended cost per juta token hanya $0,277, angka yang sangat sulit ditandingi frontier manapun di tier intel setara.",
+    "Dalam pengujian editorial Wawasan AI lewat endpoint Tencent Cloud, Hy3 menunjukkan karakter khas flagship reasoning modern: eksplanasi kode multi-baris, code completion agentik, dan penalaran multi-langkah dihasilkan dengan konsistensi yang solid di tier premium. GPQA 0,897 (sumber: AA) dan TerminalBench v2.1 0,644 (sumber: AA) mengindikasikan penalaran saintifik dan eksekusi command-line yang kuat, meski livecodebench dan math index belum tersedia di katalog publik. Throughput 47,9 token/detik (sumber: AA) terasa cukup responsif untuk chat interaktif, walaupun akan terasa lambat dibanding frontier hyperscaler untuk iterasi generate-eval-fix cepat pada output sangat panjang — TTFT 1,481 detik (sumber: AA) memberi feedback first-token yang acceptable. Trade-off yang jelas muncul di dimensi penalaran terbuka kelas paling depan: untuk prompt yang butuh riset multi-langkah sangat panjang (misal analisis paper akademis, desain sistem kompleks dengan banyak trade-off bisnis), Claude Opus 4.5 atau GPT-5 masih memimpin. Untuk workload coding agentik, code completion volume tinggi, dan retrieval-augmented reasoning, hasil Hy3 konsisten di expectation untuk kelas harganya. Catatan: data benchmark adalah snapshot awal rilis — angka inference dan stabilitas bisa bergeser antar versi, jadi gunakan angka AA sebagai indikasi awal dan lakukan pengujian sendiri untuk workload spesifik Anda. (Sumber: Artificial Analysis.)",
+    "Soal positioning komersial, Tencent Hy3 bermain di ceruk 'reasoning API kelas atas ultra-murah' — segmen yang ramai dengan DeepSeek, Qwen3, dan frontier proprietary Barat. Untuk pasar Indonesia dan Asia Tenggara, implikasi yang masuk akal: (a) untuk startup dan developer yang sudah berlangganan Tencent Cloud atau partner regional Asia Tenggara, Hy3 adalah opsi reasoning API native dengan latency rendah ke gateway regional dan harga yang sulit ditandingi frontier Barat; (b) untuk developer individu yang sudah subscribe OpenAI atau Anthropic, Hy3 adalah alternatif murah untuk workload coding agentik dan retrieval-augmented volume tinggi di mana penalaran kelas paling depan tidak dibutuhkan; (c) untuk enterprise yang butuh kedaulatan data penuh, varian proprietary API tetap tidak sefleksibel varian open-weight Hunyuan, jadi on-premise deployment bukan opsi langsung; dan (d) untuk pemakaian hybrid, strategi praktis adalah Hy3 atau Hunyuan open-weight untuk coding dan reasoning volume tinggi di workflow harian, lalu naik ke Claude Opus 4.5 atau GPT-5 untuk penalaran murni kelas paling depan dan riset multi-langkah berat. Strategi pemakaian yang sehat: Hy3 untuk coding agentik dan retrieval-augmented murah di workflow harian; frontier Barat untuk penalaran murni dan riset panjang; Hunyuan open-weight untuk self-host atau fine-tune enterprise; dan model Flash hyperscaler untuk opsi cepat ekonomis. Untuk developer Indonesia yang cari reasoning API kelas atas dengan coding index tinggi dan harga agresif, Tencent Hy3 layak masuk radar — tapi verifikasi region availability endpoint Tencent Cloud dan latency ke gateway regional sebelum adopsi produksi.",
+  ],
+  link: "https://www.tencent.com",
+  linkLabel: "Situs Resmi",
+  date: "2026-07-17",
+  featured: false,
+},
 ];
 
 export function getModel(slug: string) {
