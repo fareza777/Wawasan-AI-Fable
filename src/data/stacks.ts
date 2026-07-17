@@ -1675,6 +1675,45 @@ export const stacks: Review[] = [
     date: "2026-07-16",
     featured: false,
   },
+  {
+    slug: "runway-gen-3",
+    name: "Runway Gen-3",
+    tagline: "Video AI pionir dengan kontrol sinematik dan API paling matang",
+    tags: ["Runway", "Paid", "Video Gen", "Professional"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.8 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "Runway Gen-3 adalah model text-to-video dan image-to-video yang melepas Runway dari status eksperimental menjadi platform video AI komersial paling matang — sampai titik bahwa kompetitor baru (Sora 2, Veo 3, Kling 2.0) sering dibandingkan head-to-head dengan Gen-3 sebagai benchmark. Pada Juli 2026, Runway sudah merilis Gen-4.5 sebagai produk utama, tapi Gen-3 tetap dipertahankan untuk pengguna yang butuh workflow stabil, kontrol kamera presisi, dan API yang sudah battle-tested di pipeline production studio Hollywood dan agensi kreatif Asia Tenggara.",
+    pros: [
+      "Konsistensi temporal yang baik untuk adegan 4-10 detik dengan kontrol camera motion (pan, tilt, dolly) lewat parameter motion brush yang tidak dimiliki Sora atau Veo default",
+      "API production-ready dengan throughput tinggi dan webhook event; dipakai studio Hollywood untuk previz, mood board, dan iklan pendek sebelum syuting",
+      "Ekosistem editing terbagus di kelasnya: inpainting video, frame interpolation, dan image-to-video dengan kontrol style reference",
+      "Komunitas dan tutorial bahasa Inggris sangat banyak, termasuk preset komunitas untuk cyberpunk, anime, dokumenter, dan lain-lain",
+    ],
+    cons: [
+      "Harga per detik output relatif mahal: paket Standard USD 15/bulan (~Rp 277.000) hanya dapat 625 credits yang habis untuk sekitar 52 detik Gen-4 atau kurang di Gen-3 high-quality",
+      "Pada Juli 2026, Gen-3 sudah jadi legacy product — Runway mendorong upgrade ke Gen-4.5 yang kualitasnya lebih tinggi di motion dan adherence prompt",
+      "Antarmuka web kadang lambat untuk render panjang karena antrian global; pengguna profesional biasanya render lewat API untuk SLA lebih pasti",
+    ],
+    verdict:
+      "Tetap relevan sebagai pilihan utama untuk workflow yang butuh stabilitas dan kontrol kamera, dengan catatan penting bahwa Runway sudah merilis Gen-4.5 sebagai produk utama dan Gen-3 akan digradual phasing-out. Pilih Gen-3 hanya kalau kamu butuh API yang sudah battle-tested atau motion brush legacy; untuk proyek baru, pertimbangkan Gen-4.5 atau bandingkan head-to-head dengan Kling dari Kuaishou yang unggul di gerakan manusia.",
+    body: [
+      "Runway Gen-3 adalah model generasi video kedua yang melepas Runway dari status eksperimental menjadi platform video AI kelas profesional. Diluncurkan Juni 2024 sebagai penerus Gen-2, Gen-3 memperkenalkan motion brush yang memberi kontrol kamera eksplisit (pan, tilt, dolly, zoom) pada bagian tertentu dari frame — fitur yang langsung menjadi standar de facto untuk previz sinematik dan iklan pendek. Pada Juli 2026, Gen-3 masih bisa diakses via dropdown model selector di web Runway dan via API, walaupun perusahaan sudah mendorong Gen-4.5 (rilis Maret 2026) dan Gen-4 Turbo sebagai produk utama — Gen-3 dipertahankan karena sudah punya workflow matang di kalangan studio dan integrator yang tidak ingin migrasi ke model baru tanpa uji stabilitas.",
+      "Kualitas output Gen-3 untuk motion realistik masih sangat kuat di beberapa kategori: gerakan kamera halus (tracking shot, dolly), konsistensi objek (orang yang tetap dikenali lintas frame), dan kepatuhan pada prompt kompleks yang menyebutkan beberapa subjek. Untuk shot berdurasi 4 detik — sweet spot default — Gen-3 menghasilkan video 720p atau 1080p dengan detail wajah dan tekstur pakaian yang meyakinkan. Untuk shot 10 detik yang sering diminta klien iklan, hasilnya mulai inconsistent di sekitar detik ke-7 sampai ke-9: subjek bisa morph atau keluar frame. Kompetitor seperti Veo 3 dari Google dan Kling 2.0 dari Kuaishou sudah menyamai atau melewati Gen-3 di gerakan manusia dan durasi panjang, tapi Gen-3 tetap punya keunggulan di kontrol kamera presisi dan API yang sudah teruji di production pipeline.",
+      "Harga Runway mengikuti model credit-based yang tidak generik: 1 detik output Gen-3 high-quality sekitar 12 credits, 1 detik Gen-3 Alpha Turbo sekitar 6 credits, dan 1 detik Gen-4.5 sekitar 12 credits. Paket Free memberi 125 credits saat signup (~10 detik Gen-3) — cukup untuk eksplorasi dan memastikan workflow cocok, tapi jelas tidak untuk produksi. Paket Standard USD 15/bulan (~Rp 277.000 dengan kurs Juli 2026) memberi 625 credits yang habis untuk 52 detik Gen-4 atau kira-kira 100 detik Gen-3 Turbo. Paket Pro USD 35/bulan (~Rp 647.000) menambah 2.250 credits dengan akses ke semua model dan fitur Alpha. Paket Unlimited USD 95/bulan (~Rp 1.757.000) memberi credit tak terbatas tapi dengan mode relax yang lebih lambat saat traffic puncak. Untuk studio kecil atau freelancer Indonesia, model credit-based ini terasa mahal dibanding Kling atau Hailuo yang menawarkan paket bulanan lebih murah atau Veo 3 yang tersedia via Vertex AI dengan harga per karakter output.",
+      "Untuk konteks Indonesia, Runway punya beberapa implikasi spesifik. Pertama, bagi studio animasi dan production house di Jakarta, Bandung, dan Yogyakarta, Runway Gen-3 adalah titik masuk paling stabil untuk previz klien: motion brush memungkinkan shot kamera spesifik yang diminta sutradara lokal (mis. dolly in ke karakter utama, atau pan reveal kota Jakarta modern), dan hasilnya bisa di-review dalam hitungan menit tanpa harus render 3D penuh. Kedua, bagi content creator TikTok dan Instagram Reels yang butuh variasi stock footage dalam jumlah banyak, paket Pro USD 35/bulan masih masuk akal untuk menghasilkan 50-70 detik video unik per bulan — modal minimal untuk akun personal branding. Ketiga, bagi tim marketing korporasi Indonesia yang harus produce video iklan pendek untuk Ramadan, Lebaran, atau promo akhir tahun, Runway memungkinkan iterasi cepat tanpa harus booking studio syuting, dengan biaya 1-3 video pendek sekitar Rp 300-600 ribu. Catatan akhir: untuk gerakan manusia kompleks (dance, sports, olahraga), Kling dan Veo 3 secara konsisten mengungguli Gen-3 di konsistensi anatomi; untuk shot statis atau kamera motion sederhana, Gen-3 masih andalan. Pertimbangkan juga Vidu dari Shengshu (asal China) atau Hailuo AI (juga dari China) yang punya paket lebih murah untuk pasar Asia Tenggara.",
+    ],
+    link: "https://runwayml.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-17",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

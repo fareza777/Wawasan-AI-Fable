@@ -1,0 +1,156 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "17 Juli 2026",
+  "period": {
+    "date": "2026-07-17",
+    "label": "17 Juli 2026",
+    "path": "/repo/daily/2026/07/17"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-17T00:08:26.234Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "xai-org/grok-build",
+      "owner": "xai-org",
+      "repo": "grok-build",
+      "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+      "githubUrl": "https://github.com/xai-org/grok-build",
+      "trendshiftUrl": "https://trendshift.io/repositories/83820",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-07-14T20:04:23Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Fei-Away/Codex-Dream-Skin",
+      "owner": "Fei-Away",
+      "repo": "Codex-Dream-Skin",
+      "description": "Codex Dream Skin",
+      "githubUrl": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "trendshiftUrl": "https://trendshift.io/repositories/84043",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-07-15T12:34:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Nutlope/hallmark",
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "githubUrl": "https://github.com/Nutlope/hallmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/33587",
+      "language": "CSS",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-27T20:47:10Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "OpenCut-app/OpenCut",
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "description": "The open-source CapCut alternative",
+      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
+      "trendshiftUrl": "https://trendshift.io/repositories/19761",
+      "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2025-06-22T08:02:17Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "tandpfun/wardrobe",
+      "owner": "tandpfun",
+      "repo": "wardrobe",
+      "description": "Your clothes, extracted and organized with gpt-image.",
+      "githubUrl": "https://github.com/tandpfun/wardrobe",
+      "trendshiftUrl": "https://trendshift.io/repositories/84145",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-07-16T06:17:00Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "HKUDS/DeepTutor",
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "githubUrl": "https://github.com/HKUDS/DeepTutor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17099",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "RAG"
+      ],
+      "dateCreated": "2025-12-28T15:35:54Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Shubhamsaboo/awesome-llm-apps",
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "githubUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "trendshiftUrl": "https://trendshift.io/repositories/9876",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Local LLM",
+        "RAG",
+        "Curated list"
+      ],
+      "dateCreated": "2024-04-29T05:30:25Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "codecrafters-io/build-your-own-x",
+      "owner": "codecrafters-io",
+      "repo": "build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "githubUrl": "https://github.com/codecrafters-io/build-your-own-x",
+      "trendshiftUrl": "https://trendshift.io/repositories/2841",
+      "language": "Markdown",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2018-05-09T12:03:18Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "openinterpreter/openinterpreter",
+      "owner": "openinterpreter",
+      "repo": "openinterpreter",
+      "description": "A coding agent for low-cost models",
+      "githubUrl": "https://github.com/openinterpreter/openinterpreter",
+      "trendshiftUrl": "https://trendshift.io/repositories/8740",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2023-07-14T07:10:44Z"
+    }
+  ]
+}
