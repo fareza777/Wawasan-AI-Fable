@@ -1913,6 +1913,59 @@ export const berita: Artikel[] = [
     },
   ],
 },
+{
+  slug: "indonesia-kejar-posisi-ekonomi-digital-terbesar-asia-lewat-ai",
+  title: "Indonesia Kejar Posisi Ekonomi Digital Terbesar di Asia, AI Jadi Senjata Utama",
+  excerpt:
+    "Pemerintah menargetkan Indonesia menjadi ekonomi digital terbesar di Asia lewat AI. Klaim ambisius itu layak dibedah — berapa yang sudah jadi kenyataan, dan berapa yang baru narasi.",
+  category: "Opini",
+  date: "2026-07-18",
+  readingTime: "7 menit",
+  body: [
+    {
+      paragraphs: [
+        "Kalau ada satu narasi yang paling sering diulang dalam pidato ekonomi Indonesia sepanjang 2026, itu adalah posisi ekonomi digital terbesar di Asia. Targetnya dipasang di depan umum oleh petinggi Komdigi dan sejumlah menteri teknis: Indonesia, dengan populasi 280 juta jiwa dan penetrasi internet yang sudah melewati 80 persen, punya modal demografis yang tidak bisa diabaikan. Pertanyaannya bukan apakah AI akan mengubah lanskap ekonomi digital Indonesia — itu sudah terjadi. Pertanyaannya adalah berapa banyak dari target ambisius itu yang benar-benar sedang dibangun di atas realitas, dan berapa yang masih berupa headline tanpa isi.",
+        "Tanda-tanda yang sudah jadi kenyataan tidak sedikit. Belasan unicorn dan decacorn baru muncul dari Indonesia dalam dua tahun terakhir, dan sebagian besar model bisnisnya mengadopsi AI sebagai komponen inti. Aplikasi pinjaman online yang dulu skoringnya kaku, kini menggunakan AI untuk menilai kelayakan dengan lebih akurat. Platform logistik memanfaatkan AI untuk optimasi rute di ribuan pulau. Pertanian presisi, monitoring lingkungan, dan layanan kesehatan berbasis telemedicine sudah bukan wacana. Indonesia bahkan sempat masuk radar sebagai salah satu pasar adopsi AI generatif yang paling agresif di Asia Tenggara, berdasarkan beberapa laporan riset global.",
+      ],
+    },
+    {
+      heading: "Di mana posisi Indonesia sebenarnya di peta regional",
+      paragraphs: [
+        "Kalau dibandingkan dengan tetangga, posisi Indonesia sulit disederhanakan menjadi satu angka. Singapura jelas unggul dari sisi infrastruktur dan regulasi, dan menjadi hub regional yang menarik talenta AI dari seluruh dunia. Vietnam menarik investasi besar di sektor manufaktur berbasis AI dan menjadi basis produksi perangkat pintar. Malaysia dan Thailand berlari di jalur yang berbeda — masing-masing dengan kekuatan lokal yang berbeda pula. Indonesia, dengan pasar domestik yang paling besar di kawasan, punya keuntungan yang tidak dimiliki negara lain: kemampuan menjadi pasar uji coba (test market) untuk produk AI yang melayani populasi Muslim terbesar di dunia, komunitas multilingual, dan perilaku konsumen mobile-first.",
+        "Tapi pasar besar saja tidak cukup. Beberapa indikator yang lebih jujur tentang kesiapan Indonesia: jumlah peneliti AI aktif, kualitas publikasi ilmiah, kuantitas talenta teknik yang bisa di-rekrut, dan kecepatan adopsi di sektor publik. Di semua indikator itu, Indonesia masih berada di posisi menengah kawasan. Artinya, target menjadi yang terbesar membutuhkan lompatan signifikan dalam pendidikan, riset, dan terutama kemampuan menjaga talenta supaya tidak terbang ke luar.",
+      ],
+    },
+    {
+      heading: "Sektor publik sebagai penentu, bukan swasta",
+      paragraphs: [
+        "Salah satu titik kritis yang jarang dibicarakan secara terbuka adalah peran sektor publik. Swasta Indonesia sudah agresif mengadopsi AI — bank, telco, e-commerce, dan startup logistik berlomba-lomba menanam modal. Tapi dampak makroekonomi yang paling terasa justru akan datang dari pemerintah: ketika layanan publik mengadopsi AI, skala efisiensi yang bisa dicapai tidak terbatas pada satu perusahaan, tapi ratusan juta transaksi warga per tahun.",
+        "Beberapa inisiatif yang patut diperhatikan: program pelatihan AI untuk ASN yang sudah jalan di beberapa kota seperti Tangsel, rencana besar GovTech yang disiapkan pemerintahan Prabowo untuk sentralisasi layanan publik, dan dorongan dari Komdigi untuk menyusun dua Perpres AI di 2026 yang mengatur tata kelola dan etika. Kalau eksekusi semua inisiatif ini benar, dampaknya terhadap produktivitas ekonomi akan terasa dalam 2-3 tahun. Kalau berhenti di tataran wacana, target ekonomi digital terbesar di Asia akan tetap menjadi headline tanpa isi.",
+      ],
+    },
+    {
+      heading: "Tantangan struktural yang tidak bisa diselesaikan dengan semangat saja",
+      paragraphs: [
+        "Ada empat tantangan yang harus diakui secara jujur. Pertama, talenta. Indonesia menghasilkan ratusan ribu sarjana IT setiap tahun, tapi yang punya kemampuan AI tingkat lanjut masih jauh dari kebutuhan industri. Kedua, infrastruktur. Pusat data hyperscale masih sedikit, dan ketergantungan pada cloud luar negeri membuat biaya operasional lebih mahal dari yang seharusnya. Ketiga, regulasi. Payung hukum AI masih dalam tahap penyusunan, dan ketidakpastian regulasi membuat banyak korporasi menunggu di tempat. Keempat, data. Indonesia kaya data, tapi ekosistem berbagi data antar-instansi masih lemah — silo-silo data di kementerian dan pemda menghambat pengembangan model yang benar-benar kontekstual.",
+        "Keempat tantangan ini saling mengunci. Tanpa talenta yang cukup, adopsi AI di sektor publik akan lambat. Tanpa regulasi yang jelas, investasi korporasi akan menunggu. Tanpa infrastruktur, biaya layanan AI akan tetap tinggi dan eksperimen akan mahal. Tanpa data yang mengalir, model yang dilatih akan bias dan kurang relevan untuk konteks lokal. Solusi untuk salah satu tantangan membutuhkan progress simultan di tiga tantangan lainnya — itulah yang membuat target ambisius terasa berat, tapi juga bisa berubah menjadi lompatan kalau ada koordinasi lintas pihak yang serius.",
+      ],
+    },
+    {
+      heading: "Apa artinya untuk pekerja dan pelaku usaha Indonesia",
+      paragraphs: [
+        "Untuk pekerja, implikasinya langsung: skill yang relevan dengan AI akan menentukan relevansi di pasar kerja dalam 5 tahun ke depan. Bukan berarti semua orang harus jadi programmer AI, tapi familiaritas dengan workflow AI-assisted, kemampuan menulis prompt yang efektif, dan intuisi untuk menilai output model akan menjadi keterampilan dasar seperti Microsoft Office di tahun 2000-an. Untuk pekerja ASN, ini juga berlaku — otomasi akan masuk ke pekerjaan administratif secara perlahan tapi pasti, dan mereka yang sudah paham cara kerja agen AI akan jauh lebih siap mengarahkan transformasi di unit kerjanya.",
+        "Untuk pelaku UMKM, momen ini justru peluang besar. Tool AI yang 5 tahun lalu hanya bisa diakses perusahaan besar dengan budget miliaran, kini bisa dipakai UMKM dengan modal puluhan ribu rupiah per bulan. Otomasi customer service, pembukuan, desain grafis, sampai riset pasar — semua bisa diakses. Yang dibutuhkan bukan investasi modal, tapi investasi waktu untuk belajar. Untuk startup dan investor, ceruk yang paling menarik bukan lagi copy-paste aplikasi dari Silicon Valley, melainkan solusi yang memahami konteks lokal: bahasa daerah, perilaku konsumen, struktur UMKM, dan tantangan geografis Indonesia yang unik.",
+      ],
+    },
+    {
+      heading: "Catatan penutup: peluang besar, tapi jangan sampai euphoria",
+      paragraphs: [
+        "Target menjadi ekonomi digital terbesar di Asia lewat AI bukan tidak mungkin — modal demografi dan perilaku digital Indonesia memang nyata. Tapi euphoria tanpa eksekusi hanya akan menghasilkan headline kosong. Yang akan menentukan hasilnya adalah ratusan keputusan kecil di level eksekusi: apakah talenta lokal diberi ruang berkembang atau dibiarkan terbang ke luar, apakah regulasi disusun untuk melindungi sekaligus mendorong inovasi, apakah data diperlakukan sebagai aset strategis atau tetap terjebak di silo-silo birokrasi.",
+        "Untuk pembaca Wawasan AI yang sehari-hari bersentuhan dengan dunia AI — entah sebagai developer, peneliti, ASN, guru, atau pemilik UMKM — peran kalian jauh lebih penting dari yang sering dibayangkan. Indonesia tidak akan mencapai target ekonominya hanya karena pidato menteri yang bagus. Yang akan mendorong transformasi adalah ekosistem lokal yang saling menguatkan: komunitas yang berbagi praktik baik, ASN yang berani coba di unit kerjanya, UMKM yang mengadopsi tool baru, dan developer Indonesia yang membangun produk untuk pasar Indonesia. Kalau ekosistem itu tumbuh dengan sehat, target ekonomi digital terbesar di Asia bukan lagi ambisi retoris — itu cuma soal waktu.",
+        "Dalam pengujian editorial Wawasan AI, Indonesia punya semua modal untuk menjadi pemain utama AI di Asia. Yang membedakan antara target dan kenyataan adalah konsistensi eksekusi dalam 2-3 tahun ke depan. Pantau terus indikator riilnya — berapa talenta yang kembali dan bertahan di Indonesia, berapa produk lokal yang dipakai di pasar regional, berapa instansi publik yang sudah menggunakan AI dalam layanan sehari-hari. Di situlah jawabannya akan terlihat, bukan di pidato-pidato seremonial.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
