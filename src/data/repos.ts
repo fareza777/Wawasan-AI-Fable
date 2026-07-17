@@ -2353,7 +2353,55 @@ export const repos: Review[] = [
     updatedAt: "2026-07-16",
     featured: false,
   },
-];
+{
+  slug: "activepieces",
+  name: "Activepieces",
+  tagline: "Platform orkestrasi AI agent dan MCP dengan marketplace 400 lebih server siap pakai",
+  tags: ["AI Agent", "MCP", "Workflow Automation", "Open Source"],
+  score: 8.7,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "Activepieces adalah platform orkestrasi agentic workflow yang memposisikan diri sebagai alternatif open-source terhadap Zapier dan n8n, dengan penekanan kuat pada AI agent dan Model Context Protocol. Lebih dari 400 server MCP sudah tersedia di marketplace resmi, menjadikannya salah satu hub koneksi AI-ke-tools paling kaya di ekosistem open source saat ini.",
+  highlights: [
+    "Dukungan Model Context Protocol sebagai warga kelas satu - bukan sekadar integrasi tambahan, tapi fondasi utama koneksi ke tools eksternal",
+    "Marketplace resmi dengan lebih dari 400 server MCP siap pakai, mencakup CRM, database, produktivitas, komunikasi, dan service Indonesia",
+    "Visual builder untuk merangkai flow AI agent dengan antarmuka drag-and-drop - bisa dipakai oleh non-developer setelah onboarding singkat",
+    "Dukungan human-in-the-loop: pause workflow untuk approval manual sebelum lanjut ke langkah berikutnya - penting untuk otomasi bisnis sensitif",
+    "Self-hosted friendly: satu binary TypeScript dengan database Postgres, bisa dijalankan di VPS kecil atau di dalam Kubernetes",
+    "Lisensi open source dengan edisi komunitas yang sepenuhnya gratis untuk penggunaan produksi tanpa batasan flow aktif",
+    "Integrasi native ke OpenAI, Anthropic, Google Gemini, dan provider LLM lokal seperti Ollama - fleksibel mengikuti strategi biaya tim",
+    "Aktivitas commit dan rilis tinggi - lebih dari 23 ribu bintang di GitHub dengan iterasi fitur mingguan",
+  ],
+  pros: [
+    "Menggabungkan kekuatan workflow automation klasik dengan kemampuan AI agent modern dalam satu platform - tidak perlu menyatukan dua tool berbeda",
+    "Marketplace MCP yang luas berarti tim tidak perlu menulis integrasi custom untuk sebagian besar use case standar, sehingga time-to-value jauh lebih cepat",
+    "Pendekatan self-host friendly cocok untuk tim Indonesia yang sering beroperasi di atas VPS lokal atau private cloud karena regulasi data",
+  ],
+  cons: [
+    "Sebagian integrasi premium dan fitur governance hanya tersedia di edisi berbayar - perlu audit fitur sebelum adopsi produksi jangka panjang",
+    "Karena fiturnya sangat luas, onboarding ke visual builder tetap butuh waktu untuk pengguna yang benar-benar baru di dunia workflow automation",
+    "Komunitas berbahasa Indonesia masih relatif kecil dibanding basis pengguna global - dokumentasi lokal dan contoh use case spesifik Indonesia masih terbatas",
+  ],
+  verdict:
+    "Salah satu platform AI workflow paling matang untuk tim yang ingin menyatukan otomasi bisnis dengan kemampuan agent modern. Sangat relevan bagi startup dan tim enterprise Indonesia yang sudah lelah menyambung-nyambungkan tool - layak masuk radar utama siapa pun yang serius membangun otomasi agentik di atas fondasi open source.",
+  body: [
+    "Di antara banyak platform workflow automation yang bermunculan di era AI, Activepieces menonjol karena memilih posisi yang sangat tegas: menjadikan Model Context Protocol sebagai warga kelas satu, bukan fitur tambahan. Artinya, setiap blok dalam flow bukan hanya sekadar konektor ke aplikasi - ia juga bisa berfungsi sebagai MCP server yang bisa dipanggil oleh agent luar. Dengan lebih dari 400 server MCP di marketplace resminya, Activepieces secara efektif menjadi salah satu hub koneksi AI-ke-tools paling kaya di ekosistem open source, setara atau melampaui banyak platform berbayar.",
+    "Yang paling terasa dalam pemakaian sehari-hari adalah visual builder-nya yang dirancang dengan baik. Setiap langkah flow bisa ditambahkan dengan drag-and-drop, variabel antar langkah bisa di-drag dari hasil langkah sebelumnya, dan AI agent bisa disisipkan di tengah flow dengan satu blok khusus. Untuk konteks Indonesia, pendekatan ini cocok untuk tim operasional dan bisnis yang tidak punya background engineering namun ingin memanfaatkan AI - misalnya staf finance yang ingin menghubungkan invoice lewat OCR agent ke sistem ERP, atau tim customer service yang ingin auto-routing tiket berdasarkan sentiment agent sebelum diteruskan ke agen manusia.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah orkestrasi agent-to-agent: satu agent dipakai untuk klasifikasi email masuk, hasilnya diserahkan ke agent kedua yang memanggil MCP server CRM untuk memperbarui data kontak, lalu agent ketiga mengirim response otomatis lewat MCP server Gmail. Semua berjalan di dalam satu flow Activepieces tanpa perlu menulis kode glue. Fitur human-in-the-loop juga terasa penting untuk konteks regulasi - workflow bisa dipause untuk approval manual sebelum mengeksekusi langkah sensitif seperti transfer data pelanggan atau pemrosesan transaksi finansial.",
+    "Keterbatasan yang perlu dipahami: walau edisi komunitasnya gratis dan sepenuhnya open source, sebagian fitur governance, audit log, dan SSO hanya tersedia di edisi berbayar, sehingga tim enterprise perlu audit matang sebelum adopsi jangka panjang. Karena scope fiturnya sangat luas, pengguna yang benar-benar baru di workflow automation tetap butuh waktu onboarding - meski lebih pendek dibanding platform serupa. Komunitas berbahasa Indonesia juga masih kecil, sehingga contoh use case spesifik industri lokal masih jarang. Secara keseluruhan, Activepieces adalah salah satu pondasi paling solid untuk membangun otomasi agentik di atas open source - layak dicoba siapa pun yang ingin beralih dari workflow automation klasik ke era AI agent.",
+  ],
+  link: "https://github.com/activepieces/activepieces",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-18",
+  updatedAt: "2026-07-18",
+  featured: false,
+},];
 
 export function getRepo(slug: string) {
   return repos.find((r) => r.slug === slug);
