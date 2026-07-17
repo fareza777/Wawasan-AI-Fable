@@ -1114,16 +1114,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                         ],
                                                       },
                                                       "xai-org/grok-build": {
-                                                        description:
-                                                          "Agen coding TUI resmi dari xAI (SpaceXAI) — 'grok' CLI Rust yang memahami basis kode, edit file, jalankan perintah shell, dan orchestrate task panjang lewat terminal atau ACP di editor.",
-                                                        highlights: [
-                                                          "Tool coding agent resmi xAI: ditulis Rust, dijalankan sebagai TUI full-screen dengan interaksi mouse, tetapi juga bisa dipakai headless untuk scripting/CI atau dipasang ke editor lewat Agent Client Protocol (ACP).",
-                                                          "Model-model Grok jadi otak: 'grok' CLI/TUI bukan model terpisah, melainkan harness Rust untuk model xAI yang menulis kode, membaca repo, dan mengeksekusi shell — fokus produktivitas coding agentik di terminal.",
-                                                          "Instalasi satu baris (curl+bash di Unix, irm+iex di PowerShell) plus biner rilis untuk macOS, Linux, Windows — tidak perlu setup Rust toolchain kecuali mau bangun dari sumber.",
-                                                          "Arsitektur extensible dengan registry tools, agent loop terpisah dari UI, dan integrasi editor lewat ACP — repositori publik disinkron periodik dari monorepo internal SpaceXAI, jadi fiturnya mengikuti kemampuan production Grok.",
-                                                        ],
-                                                      },
-                                                    };
+                                                                                                                description:
+                                                                                                                  "Agen coding TUI resmi dari xAI (SpaceXAI) — 'grok' CLI Rust yang memahami basis kode, edit file, jalankan perintah shell, dan orchestrate task panjang lewat terminal atau ACP di editor.",
+                                                                                                                highlights: [
+                                                                                                                  "Tool coding agent resmi xAI: ditulis Rust, dijalankan sebagai TUI full-screen dengan interaksi mouse, tetapi juga bisa dipakai headless untuk scripting/CI atau dipasang ke editor lewat Agent Client Protocol (ACP).",
+                                                                                                                  "Model-model Grok jadi otak: 'grok' CLI/TUI bukan model terpisah, melainkan harness Rust untuk model xAI yang menulis kode, membaca repo, dan mengeksekusi shell — fokus produktivitas coding agentik di terminal.",
+                                                                                                                  "Instalasi satu baris (curl+bash di Unix, irm+iex di PowerShell) plus biner rilis untuk macOS, Linux, Windows — tidak perlu setup Rust toolchain kecuali mau bangun dari sumber.",
+                                                                                                                  "Arsitektur extensible dengan registry tools, agent loop terpisah dari UI, dan integrasi editor lewat ACP — repositori publik disinkron periodik dari monorepo internal SpaceXAI, jadi fiturnya mengikuti kemampuan production Grok.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                              "Younesfdj/gitfut": {
+                                                                                                                description:
+                                                                                                                  "Generator 'kartu pemain' ala FIFA/FUT untuk profil GitHub — enam sinyal (pace, shooting, passing, dribbling, defending, physical) di-scout langsung dari GraphQL API jadi kartu PNG tinggal embed di README.",
+                                                                                                                highlights: [
+                                                                                                                  "Konsep 'player card ala World Cup/FUT untuk developer': masukkan username GitHub, dapat kartu PNG dengan skor 1–99 plus tier Bronze sampai Icon (90+) yang auto-update tiap commit, star, atau PR baru.",
+                                                                                                                  "Enam stat diambil langsung dari GitHub GraphQL API (bukan self-report): PAC=commits 1 tahun terakhir, SHO=bintang repo, PAS=PR+followers, DRI=diversitas bahasa, DEF=review+issue, PHY=kontribusi lifetime — tiap profil punya 'shape' unik.",
+                                                                                                                  "Embed sekali, kartu re-scout sendiri: `[![My GitFut card](https://gitfut.com/USERNAME.png)](https://gitfut.com/USERNAME)` langsung nyala di README, portfolio, atau bio — tanpa rebuild, tanpa maintenance.",
+                                                                                                                  "Stack modern (Next.js + TypeScript + Tailwind + Redis) plus endpoint publik `gitfut.com/<user>.png` untuk rendering cepat; kustomisasi negara lewat `?country=XX` — cocok untuk developer yang ingin bio GitHub-nya stand out tanpa setup tambahan.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                            };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
