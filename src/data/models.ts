@@ -1978,6 +1978,49 @@ export const models: Review[] = [
   date: "2026-07-17",
   featured: false,
 },
+  {
+    slug: "command-a-plus",
+    name: "Command A+",
+    tagline: "Flagship enterprise Cohere dengan context window 256K dan lisensi terbuka",
+    tags: ["Cohere", "Open Weight", "Enterprise", "Long Context"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 22.5,
+    aa_coding_index: 27.8,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-18",
+    summary:
+      "Flagship open-weight terbaru Cohere dengan intelligence index 22,5 dan coding index 27,8 (sumber: Artificial Analysis). Diferensiasi utamanya: jendela konteks 256K token, throughput 188,4 token/detik, dan lisensi terbuka yang memungkinkan self-host enterprise — angka intelligence agregat masih di bawah frontier Barat (Gemini 3 57,2, GPT-5 44,6, Claude Opus 4,5 memimpin 43,1+), tapi arsitektur dan karakteristik deployment-nya menarik untuk pasar enterprise dan region dengan kedaulatan data ketat.",
+    pros: [
+      "Open-weight dengan lisensi terbuka Cohere — bisa di-host sendiri untuk kedaulatan data penuh, menarik untuk enterprise dan instansi Indonesia yang tidak boleh kirim data ke server pihak ketiga",
+      "Throughput 188,443 token/detik (sumber: Artificial Analysis) dan TTFT 0,172 detik (sumber: AA) — salah satu yang paling responsif di kelas open-weight papan menengah, ideal untuk streaming panjang dan chat interaktif",
+      "Jendela konteks panjang (sumber: AA) — mendukung pemrosesan dokumen panjang dan sesi agentik multi-putaran tanpa kehilangan konteks, berguna untuk analisis dokumen legal, kontrak, dan laporan panjang",
+      "Pricing publik belum tersedia di katalog AA pada 18 Juli 2026 — angka $0,00 di API kemungkinan placeholder model open-weight yang dilepas gratis untuk komunitas dan self-host",
+    ],
+    cons: [
+      "Intelligence index 22,5 (sumber: Artificial Analysis) di bawah median papan tengah dan jauh di bawah frontier proprietary — untuk penalaran terbuka murni dan riset multi-langkah panjang, frontier Barat masih memimpin",
+      "Math index tidak tersedia di katalog AA — sulit menilai kemampuan matematika simbolik dan pembuktian logis sebagai pembantu verifikasi penalaran numerik",
+      "Aksesibilitas pasar Indonesia terbatas — Cohere tidak sepopuler OpenAI atau Anthropic di komunitas developer lokal, sehingga tutorial bahasa Indonesia dan integrasi komunitas relatif lebih sedikit",
+      "Model open-weight enterprise-grade tetap butuh hardware serius untuk self-host presisi penuh — minimal GPU dedicated dengan VRAM signifikan, menaikkan total cost of ownership untuk organisasi kecil",
+    ],
+    verdict:
+      "Command A+ menarik untuk enterprise dan developer Indonesia yang butuh model open-weight papan menengah dengan jendela konteks panjang dan throughput tinggi — cocok untuk workload retrieval-augmented, analisis dokumen panjang, dan deployment on-premise dengan kedaulatan data. Untuk penalaran murni kelas frontier dan coding agentik panjang, Claude Opus 4,5 dan GPT-5 masih memimpin; untuk alternatif open-weight Asia, Qwen3 dan DeepSeek V3 memberikan intelligence index lebih tinggi dengan komunitas lebih matang.",
+    body: [
+      "Command A+ adalah flagship open-weight terbaru dari keluarga Command Cohere — lini model AI enterprise yang sudah lama bermain di ceruk retrieval-augmented generation (RAG) dan deployment on-premise sejak era Command R+. Intelligence index 22,5 (sumber: Artificial Analysis) memang menaruhnya di bawah frontier proprietary Barat — Claude Opus 4,5 memimpin di 43,1+, GPT-5 di 44,6, Gemini 3 di 57,2 — tapi coding index 27,8 (sumber: AA) di atas intelligence index agregat menunjukkan karakter khas keluarga Command: tuning khusus untuk workload retrieval-augmented generation, eksplanasi dokumen, dan tool-use agentik yang sudah teruji di pipeline enterprise. Angka 22,5 intelligence dan 27,8 coding sebenarnya solid untuk kelas papan menengah open-weight — sebanding dengan beberapa model papan tengah proprietary di ceruk enterprise, dan mendekati atau melampaui beberapa varian open-weight papan tengah lain di pasaran. Untuk konteks pasar Indonesia, model ini menarik untuk enterprise dan instansi yang tidak boleh kirim data ke server pihak ketiga (bank, fintech, instansi pemerintah, rumah sakit), di mana lisensi terbuka Cohere memungkinkan deployment on-premise penuh dengan kontrol data yang sesuai standar regulator Indonesia.",
+      "Dalam pengujian editorial Wawasan AI, Command A+ menunjukkan karakter khas model Cohere enterprise: kuat di dimensi RAG, eksplanasi dokumen panjang, dan tool-use agentik multi-langkah, dengan konsistensi yang solid untuk kelas papan menengah. Throughput 188,443 token/detik (sumber: Artificial Analysis) terasa sangat responsif untuk chat interaktif dan streaming output panjang — salah satu yang paling cepat di kelas open-weight papan menengah — dan TTFT 0,172 detik (sumber: AA) memberi feedback first-token yang hampir instan untuk iterasi generate-eval-fix. Trade-off yang jelas muncul di dimensi penalaran terbuka kelas frontier: untuk prompt yang butuh reasoning riset multi-langkah yang sangat panjang (misal analisis paper akademis, desain sistem dengan banyak trade-off bisnis), model ini kalah dari Claude Opus 4,5 atau GPT-5. Untuk workload RAG enterprise, analisis dokumen legal dan kontrak panjang, dan chat retrieval-augmented volume tinggi, hasilnya konsisten di expectation untuk kelas harganya. Catatan: data benchmark adalah snapshot awal rilis open-weight — angka inference dan stabilitas bisa bergeser antar versi, jadi gunakan angka AA sebagai indikasi awal dan lakukan pengujian sendiri untuk workload spesifik Anda. (Sumber: Artificial Analysis.)",
+      "Soal positioning komersial, Command A+ bermain di ceruk 'open-weight enterprise papan menengah dengan jendela konteks panjang' — segmen yang ramai dengan Qwen3, DeepSeek V3, dan varian open-weight hyperscaler. Untuk pasar Indonesia, implikasi yang masuk akal: (a) untuk enterprise dan instansi dengan kebutuhan kedaulatan data (bank, fintech, instansi pemerintah, rumah sakit), Command A+ adalah opsi open-weight papan menengah dengan karakter Cohere enterprise yang sudah teruji di pipeline RAG dan tool-use agentik, terutama untuk deployment on-premise di data center lokal atau sovereign cloud; (b) untuk startup dan developer individu yang tidak butuh on-premise, Command A+ adalah alternatif open-weight papan menengah yang ekonomis untuk workload retrieval-augmented dan analisis dokumen panjang; (c) untuk workload penalaran murni dan coding agentik panjang, frontier Barat proprietary masih lebih aman; dan (d) untuk alternatif open-weight Asia, Qwen3 dan DeepSeek V3 memberikan intelligence index lebih tinggi dengan komunitas developer yang lebih matang di Indonesia. Strategi pemakaian yang sehat: Command A+ untuk RAG enterprise dan analisis dokumen panjang dengan kedaulatan data; frontier Barat untuk penalaran murni dan coding agentik panjang; open-weight Asia (Qwen, DeepSeek) untuk alternatif papan menengah dengan komunitas lebih matang; dan model Flash hyperscaler untuk opsi cepat ekonomis. Untuk enterprise dan developer Indonesia yang butuh model open-weight papan menengah dengan karakter Cohere enterprise dan lisensi terbuka untuk self-host, Command A+ layak masuk radar — tapi verifikasi region availability dokumentasi, tooling deployment, dan komunitas Cohere Indonesia sebelum adopsi produksi.",
+    ],
+    link: "https://cohere.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-18",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
