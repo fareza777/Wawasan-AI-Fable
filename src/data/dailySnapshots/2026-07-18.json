@@ -1,17 +1,25 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "18 Juli 2026",
-  "period": {
-    "date": "2026-07-18",
-    "label": "18 Juli 2026",
-    "path": "/repo/daily/2026/07/18"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-18T00:08:56.661Z",
+  "fetchedAt": "2026-07-18T04:26:01.153Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "tokio-rs/topcoat",
+      "owner": "tokio-rs",
+      "repo": "topcoat",
+      "description": "A batteries-included framework for building web apps",
+      "githubUrl": "https://github.com/tokio-rs/topcoat",
+      "trendshiftUrl": "https://trendshift.io/repositories/85776",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-04-03T14:27:27Z"
+    },
+    {
+      "rank": 2,
       "fullName": "xai-org/grok-build",
       "owner": "xai-org",
       "repo": "grok-build",
@@ -26,35 +34,7 @@
       "dateCreated": "2026-07-14T20:04:23Z"
     },
     {
-      "rank": 2,
-      "fullName": "Fei-Away/Codex-Dream-Skin",
-      "owner": "Fei-Away",
-      "repo": "Codex-Dream-Skin",
-      "description": "Codex Dream Skin",
-      "githubUrl": "https://github.com/Fei-Away/Codex-Dream-Skin",
-      "trendshiftUrl": "https://trendshift.io/repositories/84043",
-      "language": "Shell",
-      "topics": [],
-      "dateCreated": "2026-07-15T12:34:51Z"
-    },
-    {
       "rank": 3,
-      "fullName": "Robbyant/lingbot-map",
-      "owner": "Robbyant",
-      "repo": "lingbot-map",
-      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
-      "githubUrl": "https://github.com/Robbyant/lingbot-map",
-      "trendshiftUrl": "https://trendshift.io/repositories/26049",
-      "language": "Python",
-      "topics": [
-        "Computer vision",
-        "3D generation",
-        "Data streaming"
-      ],
-      "dateCreated": "2026-04-15T17:59:48Z"
-    },
-    {
-      "rank": 4,
       "fullName": "bojieli/ai-agent-book",
       "owner": "bojieli",
       "repo": "ai-agent-book",
@@ -69,7 +49,35 @@
       "dateCreated": "2025-09-09T02:41:44Z"
     },
     {
+      "rank": 4,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
       "rank": 5,
+      "fullName": "tirth8205/code-review-graph",
+      "owner": "tirth8205",
+      "repo": "code-review-graph",
+      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+      "githubUrl": "https://github.com/tirth8205/code-review-graph",
+      "trendshiftUrl": "https://trendshift.io/repositories/23329",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-26T17:25:13Z"
+    },
+    {
+      "rank": 6,
       "fullName": "codecrafters-io/build-your-own-x",
       "owner": "codecrafters-io",
       "repo": "build-your-own-x",
@@ -83,48 +91,21 @@
       "dateCreated": "2018-05-09T12:03:18Z"
     },
     {
-      "rank": 6,
-      "fullName": "emilkowalski/skills",
-      "owner": "emilkowalski",
-      "repo": "skills",
-      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
-      "githubUrl": "https://github.com/emilkowalski/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/44614",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-16T13:52:31Z"
-    },
-    {
       "rank": 7,
-      "fullName": "alxndrTL/little-book-rl",
-      "owner": "alxndrTL",
-      "repo": "little-book-rl",
-      "description": "The Little Book of Reinforcement Learning",
-      "githubUrl": "https://github.com/alxndrTL/little-book-rl",
-      "trendshiftUrl": "https://trendshift.io/repositories/80697",
+      "fullName": "kvcache-ai/ktransformers",
+      "owner": "kvcache-ai",
+      "repo": "ktransformers",
+      "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations",
+      "githubUrl": "https://github.com/kvcache-ai/ktransformers",
+      "trendshiftUrl": "https://trendshift.io/repositories/14292",
       "language": "Python",
       "topics": [
-        "Programming examples"
+        "AI infrastructure"
       ],
-      "dateCreated": "2026-05-05T18:15:04Z"
+      "dateCreated": "2024-07-26T07:18:28Z"
     },
     {
       "rank": 8,
-      "fullName": "1c7/chinese-independent-developer",
-      "owner": "1c7",
-      "repo": "chinese-independent-developer",
-      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
-      "githubUrl": "https://github.com/1c7/chinese-independent-developer",
-      "trendshiftUrl": "https://trendshift.io/repositories/4388",
-      "language": "Python",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2017-09-21T11:08:23Z"
-    },
-    {
-      "rank": 9,
       "fullName": "Nutlope/hallmark",
       "owner": "Nutlope",
       "repo": "hallmark",
@@ -138,19 +119,31 @@
       "dateCreated": "2026-04-27T20:47:10Z"
     },
     {
-      "rank": 10,
-      "fullName": "Graphify-Labs/graphify",
-      "owner": "Graphify-Labs",
-      "repo": "graphify",
-      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
-      "githubUrl": "https://github.com/Graphify-Labs/graphify",
-      "trendshiftUrl": "https://trendshift.io/repositories/25296",
+      "rank": 9,
+      "fullName": "RyanCodrai/turbovec",
+      "owner": "RyanCodrai",
+      "repo": "turbovec",
+      "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
+      "githubUrl": "https://github.com/RyanCodrai/turbovec",
+      "trendshiftUrl": "https://trendshift.io/repositories/26144",
       "language": "Python",
       "topics": [
-        "AI agent",
-        "AI skills"
+        "RAG",
+        "Vector database"
       ],
-      "dateCreated": "2026-04-03T15:49:07Z"
+      "dateCreated": "2026-03-26T10:32:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "k1tbyte/Wand-Enhancer",
+      "owner": "k1tbyte",
+      "repo": "Wand-Enhancer",
+      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+      "githubUrl": "https://github.com/k1tbyte/Wand-Enhancer",
+      "trendshiftUrl": "https://trendshift.io/repositories/24694",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2024-11-17T20:02:10Z"
     }
   ]
 }
