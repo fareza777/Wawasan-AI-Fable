@@ -523,6 +523,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Mendukung 13 coding agent: Claude Code (direkomendasikan dengan Opus 4.7), Codex CLI, OpenCode, Copilot, Cursor, Windsurf, Gemini CLI, Cline, Roo Code, Continue, Amazon Q, Augment, dan Aider — workflow yang sama lintas tool pilihan developer.",
     ],
   },
+  "bojieli/ai-agent-book": {
+    description:
+      "Buku terbuka berbahasa Mandarin dari Li Bojie tentang AI Agent — seluruh 10 bab, PDF versi kompilasi, dan kode contoh per bab tersedia di repo ini untuk dipelajari langsung.",
+    highlights: [
+      "Buku lengkap 《深入理解 AI Agent：设计原理与工程实践》 yang dibuka source — mencakup fondasi Agent = LLM + konteks + tools, rekayasa konteks, memori/RAG, protokol MCP, coding agent, evaluasi, dan multi-agent.",
+      "Setiap bab dipasangkan dengan kode contoh yang sudah di-test dengan API LLM nyata (bukan pseudocode) — terutama bab 5, 8, 9, 10 punya demo end-to-end yang bisa dijalankan ulang untuk eksperimen.",
+      "Pendekatan 'harness engineering' jadi benang merah:核心竞争力 bukan model-nya, melainkan rekayasa di sekelilingnya (prompting, state, tool, memory) — cocok untuk engineer Indonesia yang ingin paham agen secara mendalam, bukan cuma pakai.",
+      "Lisensi terbuka dan markdown-rendered — bisa disusun ulang dengan pandoc/xelatex atau disadur ke bahasa lain; relevan untuk pelajar, dosen, dan tim engineering yang sedang membangun workflow agen di atas Claude Code atau Codex.",
+    ],
+  },
+  "tirth8205/code-review-graph": {
+    description:
+      "Code intelligence graph lokal-pertama untuk MCP dan CLI — bangun peta persisten dari codebase Anda agar coding agent AI hanya membaca bagian yang relevan, dengan reduksi konteks terukur di workflow review dan repo besar.",
+    highlights: [
+      "Mengatasi masalah klasik: AI coding agent sering membakar token karena membaca banyak file sekaligus saat review — code-review-graph mem-bangun knowledge graph struktural via Tree-sitter dan hanya menyajikan konteks yang relevan via MCP.",
+      "Pendekatan lokal-pertama: code graph dibangun dan disimpan di mesin Anda, tidak ada data code ke cloud — kunci untuk tim yang pakai AI coding agent tapi tetap ingin source code-nya stay di internal network.",
+      "Dilengkapi GitHub Action, CLI, dan benchmark terpublikasi untuk Code Review dan large-repo workflow — bukan cuma klaim, melainkan angka reduksi konteks yang bisa Anda reproduksi lewat dokumen REPRODUCING.md.",
+      "Plug ke hampir semua AI coding agent lewat standar MCP (Claude Code, Cursor, Cline, Copilot, dll) dan kompatibel dengan 20+ bahasa lewat Tree-sitter — relevan untuk perusahaan Indonesia yang mulai adopsi coding agent tapi kuatir soal governance dan biaya API.",
+    ],
+  },
+  "Robbyant/lingbot-map": {
+    description:
+      "Foundation model 3D feed-forward untuk rekonstruksi scene dari data streaming — 20 FPS pada 518×378 lebih dari 10.000 frame, dipercepat lewat paged KV cache dan geometric context transformer.",
+    highlights: [
+      "Pendekatan 'streaming 3D reconstruction' yang berbeda dari optimasi iteratif tradisional — arsitektur feed-forward dengan anchor context, pose-reference window, dan trajectory memory menyatukan grounding koordinat, sinyal geometri padat, dan koreksi drift jangka panjang dalam satu framework.",
+      "Performa state-of-the-art di beragam benchmark mengalahkan pendekatan streaming sekaligus iterative optimization-based, dengan klaim ~20 FPS pada 518×378 untuk sequence di atas 10.000 frame — krusial untuk robotika dan pemetaan real-time.",
+      "Ekosistem terbuka: bobot di Hugging Face dan ModelScope, paper di arXiv, plus project page untuk demo — Apache 2.0, sehingga tim riset dan startup bisa fine-tune untuk use case robotika/AR tanpa dependensi proprietary.",
+      "Wawasan AI melihat ini sebagai 'foundation model lapisan spasial' berikutnya setelah LLM — relevan untuk engineer yang riset embodied AI, autonomous driving, atau AR/VR, dan ingin tooling rekonstruksi 3D yang bukan cuma akademis melainkan praktis dan terbuka.",
+    ],
+  },
   "zhaoxuya520/reverse-skill": {
     description:
       "Skill router pack (PowerShell + multi-platform) yang mengubah AI coding agent jadi asisten reverse engineering, authorized pentest, dan CTF — mendukung Claude Code, Kiro, Cursor, Cline, Windsurf, dan Codex.",
