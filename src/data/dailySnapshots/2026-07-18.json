@@ -1,0 +1,156 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "18 Juli 2026",
+  "period": {
+    "date": "2026-07-18",
+    "label": "18 Juli 2026",
+    "path": "/repo/daily/2026/07/18"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-18T00:08:56.661Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "xai-org/grok-build",
+      "owner": "xai-org",
+      "repo": "grok-build",
+      "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+      "githubUrl": "https://github.com/xai-org/grok-build",
+      "trendshiftUrl": "https://trendshift.io/repositories/83820",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-07-14T20:04:23Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Fei-Away/Codex-Dream-Skin",
+      "owner": "Fei-Away",
+      "repo": "Codex-Dream-Skin",
+      "description": "Codex Dream Skin",
+      "githubUrl": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "trendshiftUrl": "https://trendshift.io/repositories/84043",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-07-15T12:34:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Robbyant/lingbot-map",
+      "owner": "Robbyant",
+      "repo": "lingbot-map",
+      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "githubUrl": "https://github.com/Robbyant/lingbot-map",
+      "trendshiftUrl": "https://trendshift.io/repositories/26049",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "3D generation",
+        "Data streaming"
+      ],
+      "dateCreated": "2026-04-15T17:59:48Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "codecrafters-io/build-your-own-x",
+      "owner": "codecrafters-io",
+      "repo": "build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "githubUrl": "https://github.com/codecrafters-io/build-your-own-x",
+      "trendshiftUrl": "https://trendshift.io/repositories/2841",
+      "language": "Markdown",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2018-05-09T12:03:18Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "emilkowalski/skills",
+      "owner": "emilkowalski",
+      "repo": "skills",
+      "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+      "githubUrl": "https://github.com/emilkowalski/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/44614",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-16T13:52:31Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "alxndrTL/little-book-rl",
+      "owner": "alxndrTL",
+      "repo": "little-book-rl",
+      "description": "The Little Book of Reinforcement Learning",
+      "githubUrl": "https://github.com/alxndrTL/little-book-rl",
+      "trendshiftUrl": "https://trendshift.io/repositories/80697",
+      "language": "Python",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2026-05-05T18:15:04Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "1c7/chinese-independent-developer",
+      "owner": "1c7",
+      "repo": "chinese-independent-developer",
+      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
+      "githubUrl": "https://github.com/1c7/chinese-independent-developer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4388",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2017-09-21T11:08:23Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Nutlope/hallmark",
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "githubUrl": "https://github.com/Nutlope/hallmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/33587",
+      "language": "CSS",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-27T20:47:10Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Graphify-Labs/graphify",
+      "owner": "Graphify-Labs",
+      "repo": "graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "githubUrl": "https://github.com/Graphify-Labs/graphify",
+      "trendshiftUrl": "https://trendshift.io/repositories/25296",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-03T15:49:07Z"
+    }
+  ]
+}

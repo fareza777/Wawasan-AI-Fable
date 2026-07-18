@@ -1714,6 +1714,47 @@ export const stacks: Review[] = [
     date: "2026-07-17",
     featured: false,
   },
+  {
+    slug: "lm-studio",
+    name: "LM Studio",
+    tagline: "GUI desktop untuk jalankan LLM lokal, ramah pemula",
+    tags: ["LM Studio", "Freemium", "Local LLM", "Desktop App"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 8.3 },
+    ],
+    summary:
+      "LM Studio adalah aplikasi desktop lintas platform yang memungkinkan siapa pun mengunduh, menjalankan, dan mengobrol dengan large language model secara lokal tanpa perintah terminal. Pada Juli 2026, tool ini sudah jadi titik masuk paling ramah untuk adopsi LLM on-device di kalangan developer, peneliti, dan kreator yang peduli privasi data atau keterbatasan kuota API.",
+    pros: [
+      "Instalasi satu klik untuk Windows, macOS, dan Linux tanpa setup Python, conda, atau driver CUDA manual",
+      "Discover dan unduh model dari Hugging Face langsung lewat UI, lengkap dengan filter quantization (Q4, Q5, Q8) dan kompatibilitas hardware",
+      "OpenAI-compatible local server built-in (lms server) memungkinkan integrasi dengan Cursor, Continue, atau aplikasi apa pun yang mendukung endpoint OpenAI",
+      "Mode chat dengan system prompt, temperature, context length, dan conversation history yang persist antar sesi",
+      "Mendukung hampir semua format model populer: GGUF, MLX (Apple Silicon), dan Safetensors via llama.cpp backend",
+    ],
+    cons: [
+      "Bukan tool agentic — LM Studio fokus ke inference dan chat, bukan orkestrasi multi-step atau tool use otomatis",
+      "Performa sangat bergantung hardware: butuh GPU VRAM 8GB+ untuk model 7B quantized; RAM-only mode lambat untuk model di atas 13B",
+      "Lisensi model yang diunduh tetap mengikuti aturan upstream (beberapa model komersial melarang penggunaan komersial) — LM Studio tidak menanggung lisensi ini",
+      "Update UI kadang breaking untuk pengguna yang mengandalkan workflow lama; beberapa advanced settings masih tersembunyi di menu developer",
+    ],
+    verdict:
+      "Standar de facto untuk siapa pun yang ingin menjalankan LLM lokal tanpa pusing terminal. Catatan utamanya: ini tool inference dan chat, bukan framework agentic — untuk orkestrasi multi-step, gabungkan dengan server built-in-nya atau pakai tool lain.",
+    body: [
+      "Sebelum LM Studio ada, menjalankan LLM secara lokal berarti install Python, pasang llama.cpp dari source, unduh model dari Hugging Face lewat CLI, dan tulis script Python untuk inference. Untuk developer berpengalaman itu biasa; untuk peneliti, jurnalis, atau profesional non-teknis yang butuh privasi data, itu hambatan yang terlalu tinggi. LM Studio, yang awalnya dirilis November 2023 oleh Jeremy Howard dan tim Answer.AI, meruntuhkan semua hambatan itu menjadi instalasi satu executable yang langsung bisa dipakai: klik dua kali, pilih model dari daftar, mulai mengobrol.",
+      "Pada Juli 2026, LM Studio sudah jadi titik masuk paling populer untuk LLM lokal. UI-nya menampilkan daftar model yang kompatibel dengan hardware pengguna (mis. hanya model quantization Q4 yang muat di laptop 8GB VRAM), lengkap dengan deskripsi, ukuran file, dan perkiraan kecepatan token per detik. Setelah model diunduh, mode chat langsung terbuka dengan parameter yang bisa diatur (temperature, top-p, context length, system prompt) tanpa perlu restart. Yang menarik bagi developer adalah fitur Local Server: tombol sekali klik menjalankan server OpenAI-compatible di port 1234, sehingga Cursor, Continue.dev, atau aplikasi apa pun yang mendukung endpoint OpenAI bisa langsung menggunakan model lokal sebagai drop-in replacement untuk GPT atau Claude. Ini memungkinkan workflow hybrid yang menarik — pakai model lokal untuk drafting atau klasifikasi data sensitif, lalu escalate ke API untuk reasoning berat.",
+      "Harga LM Studio gratis untuk penggunaan personal dan komersial — aplikasi desktop-nya proprietary tapi tidak berbayar, dan model yang diunduh mengikuti lisensi masing-masing (mayoritas model open-weight seperti Llama, Mistral, Qwen, dan DeepSeek bisa dipakai komersial; beberapa model seperti Llama 3.1 memiliki klausul tambahan untuk pengguna dengan 700 juta user aktif bulanan). Pendapatan datang dari LM Studio for Teams dan integrasi enterprise, plus opsional donasi. Untuk pengguna Indonesia, ini sangat menarik karena tiga alasan. Pertama, biaya nol untuk model open-weight lokal menghilangkan ketergantungan pada API dolar — sekali unduh model, biaya listrik saja. Kedua, bagi jurnalis investigasi, peneliti, atau profesional hukum yang menangani data klien sensitif, inference lokal menjamin data tidak pernah meninggalkan device — penting untuk compliance UU PDP. Ketiga, bagi developer di kota tier-2 dan tier-3 dengan koneksi internet terbatas, model lokal yang sudah ter-cache bisa dijalankan tanpa internet sama sekali setelah model terunduh.",
+      "Limitasi utama LM Studio adalah scope-nya: ini tool inference dan chat, bukan framework agentic. Tidak ada built-in tool use, function calling otomatis, atau orkestrasi multi-step yang menjadi ciri Claude Code atau Cursor Composer. Untuk alur kerja yang butuh agen yang bisa browsing web, menjalankan kode, atau memanggil API eksternal secara otonom, LM Studio adalah pondasi yang bagus (via local server) tapi bukan solusi lengkap. Kompetitor langsung antara lain Ollama (CLI-first, lebih cocok untuk developer, tanpa UI chat built-in), Jan (open source penuh, fokus privasi), dan GPT4All (lebih sederhana, model terbatas). Untuk eksperimen cepat dan adopsi LLM lokal di kalangan non-developer, LM Studio tetap yang paling halus pengalamannya; untuk production deployment atau orkestrasi agent, gabungkan dengan framework lain.",
+    ],
+    link: "https://lmstudio.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-18",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
