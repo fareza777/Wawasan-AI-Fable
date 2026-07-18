@@ -2399,9 +2399,57 @@ export const repos: Review[] = [
   link: "https://github.com/activepieces/activepieces",
   linkLabel: "Lihat di GitHub",
   date: "2026-07-18",
-  updatedAt: "2026-07-18",
   featured: false,
-},];
+},
+{
+  slug: "trustgraph",
+  name: "TrustGraph",
+  tagline: "Platform context engineering holonic untuk agent open-source yang explainable",
+  tags: ["AI Agent", "Context Engineering", "Knowledge Graph", "Open Source"],
+  score: 8.4,
+  scores: [
+    { label: "Kemudahan Setup", value: 7.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 8.0 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "TrustGraph adalah platform context engineering open-source yang memperlakukan konteks agent sebagai first-class object lewat context graph holonic. Berbeda dari RAG konvensional yang memotong dokumen menjadi chunk teks, TrustGraph mengorganisir entitas, relasi, dan evidence sebagai graph dengan standar semantic web (RDF, OWL, SKOS, SHACL) sehingga setiap jawaban agent membawa provenance yang bisa ditelusuri.",
+  highlights: [
+    "Pendekatan holonic context graph: konteks diperlakukan sebagai entitas modular yang bisa di-version, di-share, dan disusun ulang lintas proyek tanpa harus rebuild pipeline dari nol",
+    "Standar semantic web native (RDF, OWL, SKOS, SHACL) sehingga context graph bisa diintegrasikan dengan knowledge graph enterprise dan tooling ontology yang sudah ada",
+    "Graph-grounded retrieval yang menggabungkan symbolic graph structure dengan vector embeddings - lebih tahan terhadap halusinasi dibanding RAG chunk-based murni",
+    "Self-hostable penuh: tidak bergantung pada layanan pihak ketiga, mendukung OpenAI, Anthropic, atau model lokal seperti Qwen via vLLM lewat konektor bawaan",
+    "Inferensi LLM stack built-in di dalam platform: knowledge ingestion, structured storage, retrieval, agent orchestration, dan serving - semuanya dalam satu paket",
+    "Provenance end-to-end: setiap jawaban agent menyertakan jejak fakta yang mendukung, cocok untuk use case regulated seperti finansial, kesehatan, dan legal",
+    "Lisensi Apache-2.0, aktif dikembangkan dengan iterasi fitur mingguan dan komunitas Discord yang responsif untuk pertanyaan integrasi",
+  ],
+  pros: [
+    "Pendekatan context-as-graph jauh lebih mudah diaudit dibanding vector store murni - menjawab langsung kebutuhan explainability yang sering jadi blocker adopsi AI di enterprise Indonesia",
+    "Standar terbuka (RDF/OWL/SHACL) berarti investasi konteks bisa di-port ke platform lain dan tidak vendor lock-in, penting untuk institusi yang berpikir jangka panjang",
+    "Sovereign-first: bisa dijalankan sepenuhnya di infrastruktur lokal dengan model open-source, menjawab kebutuhan data sovereignty untuk sektor publik dan finansial Indonesia",
+  ],
+  cons: [
+    "Konsep holonic context graph dan ontology relatif baru bagi kebanyakan tim Indonesia - kurva belajar lebih curam dibanding tool RAG konvensional",
+    "Dokumentasi dan contoh use case spesifik Indonesia masih terbatas; komunitas global aktif tapi sebagian besar diskusi dalam bahasa Inggris",
+    "Untuk workload kecil atau prototipe cepat, setup ontology dan knowledge ingestion mungkin terasa overkill dibanding pendekatan vector store sederhana",
+  ],
+  verdict:
+    "TrustGraph adalah salah satu jawaban paling matang untuk masalah struktural yang sering membuat agent AI gagal di produksi: tidak cukup retrieve teks, konteks perlu diatur sebagai graph yang bisa ditelusuri. Sangat layak diperhatikan oleh tim enterprise, institusi riset, dan tim regulator Indonesia yang serius membangun agent dengan audit trail kuat di atas fondasi open source.",
+  body: [
+    "Hampir semua agent AI yang gagal di produksi punya akar masalah yang sama: konteks yang diperlakukan sebagai teks datar. RAG memotong dokumen menjadi chunk, vector store menyimpan embedding tanpa struktur relasi, dan ketika agent menjawab, kita tidak bisa menjelaskan dari mana fakta itu datang. TrustGraph memilih posisi yang berbeda - konteks diperlakukan sebagai graph yang terorganisir secara holonic, mengikuti standar semantic web (RDF, OWL, SKOS, SHACL) yang sudah matang di dunia knowledge management enterprise.",
+    "Secara arsitektur, TrustGraph menyediakan satu paket lengkap: knowledge ingestion, structured storage berbasis graph, retrieval yang menggabungkan symbolic query dengan vector similarity, agent orchestration, dan bahkan LLM inferencing stack built-in. Yang menarik, platform ini bisa berjalan sepenuhnya self-hosted dengan model open-source seperti Qwen lewat vLLM, atau menggunakan API komersial seperti OpenAI dan Anthropic jika tim memilih trade-off biaya. Bagi konteks Indonesia, kemampuan sovereign ini sangat relevan untuk sektor finansial, kesehatan, dan pemerintahan yang sering terkendala regulasi data.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah use case yang membutuhkan auditability tinggi. Misalnya agent customer service di industri fintech yang perlu menjelaskan dasar jawaban saat komplain; agent riset kedokteran yang perlu merujuk bukti medis terstruktur; atau agent legal yang perlu menelusuri yurisprudensi. TrustGraph menjawab ini lewat provenance end-to-end - setiap node fakta membawa evidence, dan setiap jawaban bisa di-trace balik ke sumber graph. Pendekatan seperti ini biasanya hanya tersedia di platform enterprise berbayar, dan TrustGraph membawanya ke ranah open-source.",
+    "Bukan berarti tanpa kompromi. Konsep holonic context graph, ontology, dan standar semantic web relatif berat untuk tim yang baru pertama kali membangun agent - lebih mudah memulai dengan vector store sederhana dan library RAG. Dokumentasi sudah cukup baik dan tim di balik TrustGraph aktif di Discord, namun contoh use case spesifik industri Indonesia masih terbatas. Untuk workload kecil atau eksperimen cepat, setup ontology mungkin terasa overkill. Namun untuk tim yang berniat membangun agent dengan umur panjang, transparansi, dan kemampuan diaudit - terutama di sektor yang teregulasi - TrustGraph adalah salah satu pondasi paling serius di ekosistem open-source saat ini.",
+  ],
+  link: "https://github.com/trustgraph-ai/trustgraph",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-19",
+  updatedAt: "2026-07-19",
+  featured: false,
+},
+];
 
 export function getRepo(slug: string) {
   return repos.find((r) => r.slug === slug);
