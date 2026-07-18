@@ -2021,6 +2021,49 @@ export const models: Review[] = [
     date: "2026-07-18",
     featured: false,
   },
+{
+    slug: "minimax-m2",
+    name: "MiniMax-M2",
+    tagline:
+      "Model dasar MiniMax M-series — rilis awal 2026 dengan harga agresif untuk eksperimen volume",
+    tags: ["MiniMax", "Proprietary", "Reasoning", "Murah"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 7.2 },
+      { label: "Coding", value: 7.4 },
+      { label: "Kecepatan", value: 8.2 },
+      { label: "Harga/Performa", value: 9.3 },
+    ],
+    aa_intelligence_index: 28.3,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-07-19",
+    summary:
+      "MiniMax-M2 adalah varian entry-level dari keluarga M-series MiniMax — rilis awal Oktober 2025 yang menjadi basis arsitektur bagi saudara-saudara M2.1, M2.5, M2.7, dan M3. Intelligence index 28,3 (sumber: Artificial Analysis) menaruhnya di papan bawah-tengah industri, di bawah saudara M2.7 (38,1) dan M3 (44,4), tapi harga API $0,30 per juta token input tetap sama agresifnya dengan seluruh keluarga M-series. Cocok untuk eksperimen volume tinggi di mana biaya inference per token adalah variabel utama, bukan performa mutlak.",
+    pros: [
+      "Harga API $0,30 input / $1,20 output per 1M token (sumber: Artificial Analysis) — identik dengan keluarga M-series di atasnya, menjadikan M2 opsi termurah untuk benchmark harga MiniMax",
+      "Throughput output 72,93 tokens/detik (sumber: AA) — solid untuk kelas papan bawah-tengah, cukup untuk UX chat real-time",
+      "Math index 78,3 (sumber: Artificial Analysis) menonjol untuk kelas intel-nya — kemampuan matematika simbolik di atas rata-rata papan bawah-tengah",
+      "API drop-in compatible dengan saudara M2.x dan M3 — migrasi ke model lebih tinggi tanpa rewrite pipeline",
+    ],
+    cons: [
+      "Intelligence index 28,3 (sumber: AA) jauh di bawah saudara M2.7 (38,1) dan M3 (44,4) — papan bawah-tengah, bukan untuk penalaran terberat",
+      "Coding index tidak tersedia di katalog AA — sulit membandingkan kemampuan code generation dengan saudara di keluarganya",
+      "TTFT 1,068 detik termasuk standar, bukan cepat — aplikasi yang butuh feedback first-token instan akan terasa ada jeda",
+      "Ekosistem developer MiniMax di luar pasar Asia masih muda — integrasi native dengan tool Indonesia dan SDK pihak ketiga minim",
+    ],
+    verdict:
+      "MiniMax-M2 menarik untuk eksperimen volume tinggi dan pembelajaran pipeline di mana biaya inference per token adalah variabel utama, bukan performa mutlak. Untuk workload produksi serius, saudara M2.7 atau M3 lebih layak dengan selisih harga yang minim.",
+    body: [
+      "MiniMax-M2 adalah varian entry-level dari keluarga M-series MiniMax — laboratorium AI asal Asia yang sejak M-series awal bermain di kuadran harga agresif sambil menaruh model di papan tengah benchmark. Versi M2 ini rilis Oktober 2025 dan menjadi basis arsitektur bagi saudara M2.1 (Desember 2025), M2.5 (Februari 2026), M2.7 (Maret 2026), dan M3 (Juni 2026). Intelligence index 28,3 (sumber: Artificial Analysis) menaruhnya di papan bawah-tengah industri — jauh di bawah saudara M2.7 (38,1) dan M3 (44,4), tapi harga API $0,30 per juta token input yang identik dengan seluruh keluarga menjadikannya opsi termurah untuk benchmark harga MiniMax. Bedanya dengan saudara di atasnya: M2 adalah baseline arsitektur, cocok untuk eksperimen volume tinggi di mana biaya inference per token menjadi variabel utama.",
+      "Dalam pengujian editorial Wawasan AI, MiniMax-M2 menunjukkan karakter entry-level yang solid untuk kelas harganya: penalaran multi-langkah cukup untuk prompt sederhana hingga menengah, eksekusi tool dalam loop standar, dan throughput output 72,93 tokens/detik (sumber: AA) yang cukup responsif untuk UX chat real-time. Math index 78,3 (sumber: Artificial Analysis) adalah sorotan yang menarik di kelas intel-nya — kemampuan matematika simbolik berada di atas rata-rata papan bawah-tengah, menjadikan M2 opsi yang menarik untuk workload matematika dasar dan pembuktian logis sederhana. Yang terasa dibanding saudara M2.7 adalah intelligence index yang jauh lebih rendah: untuk prompt yang butuh penalaran multi-langkah panjang atau desain sistem kompleks, M2 akan kewalahan, dan di situlah saudara di atasnya menunjukkan nilai tambah. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 28,3 di benchmark Artificial Analysis menaruh MiniMax-M2 di papan bawah-tengah — di bawah rata-rata papan tengah proprietary (sekitar 35-45) dan jauh di bawah frontier (Claude Opus 4,5 di 43,1+, GPT-5 di 44,6, Gemini 3 di 57,2). Math index 78,3 adalah penanda kuat untuk workload matematika, sementara throughput output 72,93 tokens/detik dan TTFT 1,068 detik menempatkannya di tier standar untuk kelas harganya. Harga API $0,30 per juta token input dan $1,20 output bermain di kuadran paling agresif untuk kelas intel ini — dibanding frontier Barat (Claude Opus 4,5 $5/$25, GPT-5 $1,25/$10), M2 jauh lebih murah di kedua dimensi, proposisi value-for-money untuk workload di mana intel mutlak bukan syarat utama. Strategi pemakaian yang sehat: M2 untuk eksperimen pipeline, pembelajaran workflow AI, dan workload volume tinggi di mana biaya inference per token adalah variabel utama; saudara M2.7 atau M3 untuk workload produksi yang butuh keseimbangan intel dan harga; frontier Barat untuk penalaran murni kelas paling depan; dan keluarga open-weight untuk deployment lokal yang fleksibel.",
+    ],
+    link: "https://MiniMax.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-19",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
