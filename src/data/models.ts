@@ -2064,6 +2064,51 @@ export const models: Review[] = [
     date: "2026-07-19",
     featured: false,
   },
+{
+    slug: "o1",
+    name: "o1",
+    tagline:
+      "Generasi pertama reasoning model OpenAI - pionir chain-of-thought yang membuka era penalaran eksplisit di industri LLM",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Riset"],
+    score: 7.2,
+    scores: [
+      { label: "Penalaran", value: 7.2 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 6.5 },
+      { label: "Harga/Performa", value: 5.8 },
+    ],
+    aa_intelligence_index: 23.4,
+    aa_coding_index: 39.7,
+    aa_price_input: 15,
+    aa_price_output: 60,
+    aa_synced_at: "2026-07-20",
+    summary:
+      "o1 adalah model pertama OpenAI yang secara eksplisit dirancang untuk penalaran chain-of-thought - dirilis dalam bentuk preview pada September 2024 dan versi penuh Desember 2024, o1 memperkenalkan paradigma baru di industri LLM: model yang 'berpikir keras' sebelum menjawab, dengan internal reasoning trace yang lebih panjang dibanding GPT-4o. Intelligence index 23,4 (sumber: Artificial Analysis) membuatnya tampak tertinggal dibanding frontier reasoning 2026 (Claude Opus 4.5, GPT-5, GLM-5.2, MiMo-V2.5-Pro di 43-58), tapi signifikansi historisnya - model yang mempopulerkan reasoning sebagai kategori produk terpisah - menjadikannya layak dicatat di arsip Wawasan AI sebagai tonggak transisi dari era LLM generik ke era penalaran eksplisit.",
+    pros: [
+      "Signifikansi historis besar - model pertama OpenAI yang memperkenalkan chain-of-thought sebagai fitur produk, membuka kategori reasoning model yang kemudian diisi o3, o3-pro, Claude Opus 4.5, GLM-5.2, dan frontier reasoning 2026 lainnya",
+      "Coding index 39,7 (sumber: Artificial Analysis) solid untuk standar 2024 - melampaui GPT-4o di software engineering multi-file dan menjadi baseline yang kemudian ditingkatkan o3",
+      "Tool calling agentik yang stabil untuk workflow multi-step standar - pipeline refactor dan code review berjalan dengan koherensi yang baik di pengujian",
+      "Throughput output 112,66 tokens/detik cukup untuk streaming UX setelah fase reasoning selesai - respons pertama lambat tapi output body lancar",
+    ],
+    cons: [
+      "Intelligence index 23,4 jauh di bawah frontier reasoning 2026 (Claude Opus 4.5 43,1, GPT-5 44,6, GLM-5.2 51,1) - untuk task penalaran terberat atau riset mendalam, o3/o3-pro atau frontier 2026 lebih layak dengan margin signifikan",
+      "TTFT 27,214 detik (sumber: Artificial Analysis) adalah kelemahan utama - fase reasoning yang panjang membuat first-token latency tidak praktis untuk antarmuka real-time interaktif",
+      "Harga API $15 input / $60 output per 1M token bermain di premium tier - 5x lebih mahal dari GLM-5.2 ($1,40/$4,40) dan 12x lebih mahal dari MiMo-V2.5-Pro ($0,40/$1,60), sulit dijustifikasi di 2026 kecuali untuk benchmark perbandingan historis",
+      "Sudah superseded di lineup OpenAI sendiri - o3 dan o3-pro (sudah masuk review Wawasan AI) memberikan intelligence index 50+ dengan harga lebih rendah dan arsitektur lebih efisien",
+    ],
+    verdict:
+      "o1 adalah artefak historis yang layak dicatat di arsip Wawasan AI sebagai model yang membuka era reasoning - tapi untuk pemakaian produksi di 2026, o3, o3-pro, atau frontier reasoning 2026 (GLM-5.2, Claude Opus 4.5, GPT-5) sudah menggesernya dengan margin yang jelas. Review ini lebih bernilai sebagai pengingat bahwa kategori reasoning model yang kita review hari-hari ini bermula dari eksperimen OpenAI ini pada 2024.",
+    body: [
+      "Pada September 2024, OpenAI merilis model preview bernama 'o1' - nama yang menandai dimulainya penomoran ulang lini model mereka, menggantikan seri GPT yang sudah jadi standar de facto industri sejak 2018. o1 dirancang dengan satu tujuan utama: penalaran chain-of-thought eksplisit. Tidak seperti GPT-4o yang menjawab langsung setelah memproses prompt, o1 'berpikir keras' dulu - menjalankan ribuan token internal reasoning sebelum menghasilkan output yang terlihat pengguna. Pendekatan ini terinspirasi dari teknik inference-time compute scaling yang mulai populer di riset AI 2024: model yang sama dilatih pada data yang sama, tapi dengan waktu inference yang lebih panjang, bisa mencapai akurasi lebih tinggi di task penalaran multi-langkah. Hasilnya, o1 mencapai lompatan signifikan di benchmark matematika (AIME), coding (Codeforces), dan sains (GPQA) dibanding GPT-4o - dengan trade-off latensi yang jauh lebih tinggi. Desember 2024, OpenAI merilis versi penuh o1, dan setahun kemudian pada 2025-2026, hampir setiap laboratorium besar mengikuti jejak: Claude Opus dengan extended thinking, Gemini dengan thinking mode, GLM dengan thinking modes selektif, dan MiMo dengan reasoning variants. o1 adalah benih dari kategori reasoning model yang sekarang mengisi papan atas benchmark industri.",
+      "Dalam pengujian editorial Wawasan AI, o1 menunjukkan karakter khas reasoning model generasi pertama: penalaran multi-langkah yang solid untuk standar 2024, eksekusi tool dalam agentic loop yang stabil, dan kemampuan coding yang menjadi baseline bagi generasi berikutnya. Intelligence index 23,4 (sumber: Artificial Analysis) - diukur pada benchmark yang kini sudah jadi standar industri - membuatnya tampak tertinggal dari frontier reasoning 2026 (Claude Opus 4.5 di 43,1, GPT-5 di 44,6, GLM-5.2 di 51,1, MiMo-V2.5-Pro di 53,8), tapi perlu diingat bahwa o1 adalah model yang meletakkan dasar benchmark-benchmark tersebut. Coding index 39,7 menempatkan o1 di kelas yang sama dengan GPT-4o dan sedikit di bawah frontier coding 2026 (Claude Opus 4.5 di 42,9, GPT-5 di 36,0, GLM-5.2 di 48+), cukup solid untuk software engineering multi-file standar dan code review. Yang paling terasa di pengujian adalah fase reasoning yang panjang - setiap prompt memicu 10-30 detik 'berpikir' sebelum first token muncul, dan ini bukan bug tapi fitur desain o1. Untuk pipeline yang butuh respons instan, latensi ini tidak praktis; tapi untuk workload di mana akurasi lebih penting dari kecepatan, pendekatan o1 adalah preseden yang masih relevan di 2026. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 23,4 di benchmark Artificial Analysis menaruh o1 di papan bawah-tengah reasoning model - jauh di bawah frontier reasoning 2026 yang bermain di 40-58, tapi signifikan di atas baseline LLM non-reasoning generasi sebelumnya. Coding index 39,7 menjadi nilai jual untuk standar 2024-2025, dan throughput output 112,66 tokens/detik setelah fase reasoning sebenarnya cukup responsif - masalahnya ada di TTFT 27,214 detik (sumber: Artificial Analysis) yang menjadi blocker untuk UX real-time interaktif. Harga API $15 per juta token input dan $60 output bermain di tier premium - 12x lebih mahal dari MiMo-V2.5-Pro di input dan 37x lebih mahal di output, 10x lebih mahal dari GLM-5.2 di input dan 14x di output. Di 2026, sulit dijustifikasi pemakaian o1 untuk produksi kecuali untuk re-evaluasi historis atau benchmark perbandingan - OpenAI sendiri sudah menyarankannya digantikan o3 dan o3-pro yang memberikan intelligence index lebih tinggi dengan harga lebih rendah dan arsitektur lebih efisien. Signifikansi o1 bukan di angka benchmark, tapi di posisi historisnya sebagai model yang memperkenalkan paradigma yang kini jadi standar industri.",
+      "Kelemahan yang teridentifikasi: intelligence index 23,4 di bawah semua frontier reasoning 2026 dengan margin 20-35 poin - untuk task penalaran terberat atau riset ilmiah mendalam, o1 bukan pilihan optimal. TTFT 27 detik adalah blocker untuk antarmuka real-time interaktif - antarmuka chat akan terasa 'macet' di awal setiap respons, sesuatu yang tidak praktis untuk UX konsumen. Harga API $15/$60 per 1M token bermain di tier premium dengan value proposition yang sulit dijustifikasi di 2026 ketika frontier reasoning lebih murah dan lebih cerdas. Sudah superseded di lineup OpenAI sendiri - o3 (sudah di review Wawasan AI) menawarkan intelligence index 50+ dengan harga lebih rendah dan arsitektur lebih efisien, dan o3-pro menambahkan penalaran lebih dalam lagi. Signifikansi o1 bukan di angka melainkan di posisi historis. Strategi pemakaian yang masuk akal: o1 untuk dokumentasi arsip dan benchmark perbandingan historis; o3 atau o3-pro untuk produksi reasoning di ekosistem OpenAI; Claude Opus 4.5, GPT-5, atau GLM-5.2 untuk frontier reasoning 2026; dan keluarga open-weight seperti Qwen3 atau DeepSeek untuk deployment lokal yang fleksibel.",
+    ],
+    link: "https://platform.openai.com/docs/models/o1",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-20",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
