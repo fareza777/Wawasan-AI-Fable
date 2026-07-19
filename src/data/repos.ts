@@ -2449,6 +2449,56 @@ export const repos: Review[] = [
   updatedAt: "2026-07-19",
   featured: false,
 },
+  {
+  slug: "paddleocr",
+  name: "PaddleOCR",
+  tagline: "Toolkit OCR ringan dari PaddlePaddle yang ubah PDF dan gambar jadi data terstruktur",
+  tags: ["OCR", "Document AI", "Python", "Open Source"],
+  score: 8.7,
+  scores: [
+    { label: "Kemudahan Setup", value: 9.0 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.5 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.0 },
+  ],
+  summary:
+    "PaddleOCR adalah toolkit OCR open-source dari tim PaddlePaddle yang mengubah dokumen PDF atau gambar apa pun menjadi data terstruktur siap pakai untuk pipeline AI. Lebih dari sekadar pembaca teks - PaddleOCR menjembatani dunia dokumen visual dengan model bahasa lewat layout analysis, table recognition, formula recognition, dan key information extraction untuk 100+ bahasa.",
+  highlights: [
+    "Dukungan 100+ bahasa termasuk Latin, CJK, Arab, Cyrillic, dan aksara Asia Tenggara - relevan untuk dokumen multibahasa khas UMKM dan korporasi Indonesia",
+    "PP-OCRv5 sebagai model default: pipeline ultra-ringan yang berjalan di CPU biasa, dengan akurasi setara model besar di banyak skenario umum",
+    "Document parsing end-to-end: layout analysis, table recognition, formula recognition, dan key information extraction dalam satu paket",
+    "PP-Structure untuk mengubah dokumen kompleks (laporan keuangan, invoice, kontrak) menjadi JSON terstruktur yang langsung bisa dimakan agent atau RAG pipeline",
+    "Ekosistem PP-series yang luas: deteksi, klasifikasi, recognition, dan layout saling terintegrasi lewat konfigurasi sederhana",
+    "Lisensi Apache-2.0, aktif dipelihara sejak 2020 dengan ritme rilis bulanan dan komunitas kontributor global yang besar",
+    "Bridge ke LLM: hasil OCR + struktur bisa langsung dipakai untuk chunking, retrieval, atau fine-tuning model kecil untuk domain spesifik",
+    "Mode deployment fleksibel - Python pip install, Docker, hingga integrasi lewat server inference PP-OCR",
+  ],
+  pros: [
+    "Akurasi tinggi di banyak skenario umum ( KTP, invoice, struk, dokumen tabular) dengan footprint model yang kecil - cocok untuk VPS dan mini PC",
+    "Dukungan bahasa sangat luas termasuk bahasa Indonesia, sehingga relevan langsung untuk use case lokal tanpa fine-tuning tambahan",
+    "Pipeline lengkap dari preprocessing sampai JSON terstruktur - menghemat waktu dibanding merangkai tool OCR, layout, dan table recognition terpisah",
+    "Dokumentasi multibahasa dan tutorial aktif membuat onboarding relatif cepat untuk tim yang baru pertama kali menyentuh OCR modern",
+  ],
+  cons: [
+    "Model default optimal untuk dokumen cetak dan scan bersih; untuk foto dokumen miring, blur, atau handwriting masih perlu tuning lebih lanjut",
+    "Dokumentasi dan contoh paling lengkap masih dalam bahasa Inggris dan Mandarin - diskusi komunitas spesifik bahasa Indonesia relatif terbatas",
+    "Ekstensi ke domain sangat spesifik (misalnya tanda tangan dokter atau formulir pajak lama) sering butuh training ulang dan biaya labeling sendiri",
+  ],
+  verdict:
+    "PaddleOCR adalah pilihan default yang sangat solid untuk siapa pun yang ingin mengubah dokumen visual menjadi data terstruktur tanpa biaya lisensi dan tanpa vendor lock-in. Wajib dipertimbangkan oleh tim AI di Indonesia yang sering berurusan dengan PDF, KTP, invoice, atau arsip dokumen fisik.",
+  body: [
+    "Dalam banyak proyek AI di Indonesia, tahap paling lambat bukan pelatihan model, melainkan konversi dokumen fisik atau PDF menjadi teks yang bisa diproses. Invoice, laporan keuangan, kontrak, KTP, formulir pajak, hingga arsip lama masih menjadi tumpukan data yang menunggu untuk dibaca mesin. PaddleOCR menjawab kebutuhan ini lewat satu toolkit yang sudah matang: pipeline OCR, layout analysis, table recognition, dan key information extraction berjalan dalam satu paket konsisten dari tim PaddlePaddle.",
+    "Secara teknis, PaddleOCR bukan sekadar library OCR tunggal. Ia adalah ekosistem PP-series yang saling melengkapi - PP-OCR untuk text detection dan recognition, PP-Structure untuk layout dan tabel, PP-Formula untuk persamaan matematika, hingga PP-ChatOCR yang menggabungkan hasil OCR dengan LLM untuk menjawab pertanyaan dari dokumen. Yang menarik, PP-OCRv5 sebagai model default sudah sangat akurat di dokumen cetak umum dengan footprint kecil - cukup berjalan di CPU laptop atau VPS murah, tanpa perlu GPU dedicated. Lisensi Apache-2.0 membuat seluruh stack bisa dipakai untuk kebutuhan komersial tanpa beban lisensi per-seat.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah alur dokumen bisnis Indonesia: tumpukan invoice PDF dari supplier, laporan bulanan bank, dan formulir pajak digital. PP-Structure mengubah halaman-halaman ini menjadi JSON terstruktur lengkap dengan posisi bounding box, klasifikasi tabel, dan teks per sel - siap dimasukkan ke vector store untuk Q&A agent, atau dipakai untuk otomasi entry data ke akuntansi. Pipeline Python-nya singkat, dokumentasi di GitHub dan situs resmi sudah cukup lengkap, dan integrasi dengan model bahasa populer relatif straightforward lewat adapter yang disediakan.",
+    "Bukan berarti tanpa kompromi. Untuk foto dokumen yang miring, blur, atau tulisan tangan, akurasi default masih perlu peningkatan lewat fine-tuning atau preprocessing tambahan. Diskusi komunitas paling aktif masih dalam bahasa Inggris dan Mandarin - referensi spesifik untuk kasus Indonesia, misalnya layout KTP baru atau layout formulir pajak versi 2024, masih terbatas dan perlu eksplorasi sendiri. Namun untuk 80% kasus dokumen bisnis pada umumnya, PaddleOCR sudah memberikan hasil yang sulit ditandingi oleh solusi gratis lain, dan pondasi open-source-nya membuatnya layak jadi pilihan default di stack AI dokumen tim Indonesia.",
+  ],
+  link: "https://github.com/PaddlePaddle/PaddleOCR",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-20",
+  updatedAt: "2026-07-20",
+  featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
