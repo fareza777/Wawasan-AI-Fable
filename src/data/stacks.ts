@@ -1755,6 +1755,46 @@ export const stacks: Review[] = [
     date: "2026-07-18",
     featured: false,
   },
+  {
+    slug: "flowise",
+    name: "Flowise",
+    tagline: "Kanvas visual untuk membangun agen AI dan alur kerja LLM",
+    tags: ["Flowise", "Open Source", "Agent Builder", "LLM Workflow"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.8 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 8.7 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Flowise mengubah perakitan agen AI, RAG, dan alur kerja LLM menjadi kanvas visual tanpa mengunci pengguna pada satu penyedia model. Versi 3.1.3 memadukan Assistant, Chatflow, dan Agentflow V2 dengan lebih dari 100 sumber data dan integrasi, dukungan MCP, evaluasi, serta pilihan self-host; hasilnya sangat efektif untuk prototipe dan aplikasi internal, meski deployment produksi tetap menuntut pekerjaan infrastruktur yang tidak bisa diselesaikan lewat drag-and-drop.",
+    pros: [
+      "Agentflow V2 mendukung percabangan, loop, state bersama, multi-agent, checkpoint, dan human-in-the-loop secara visual untuk workflow yang benar-benar multi-langkah",
+      "Agnostik terhadap model dan data: terhubung ke penyedia LLM populer, model lokal, vector database, document store, API, serta MCP client dan server",
+      "Core tersedia di GitHub dan dapat di-self-host lewat npm atau Docker, sehingga tim mengontrol data, kredensial, lokasi server, dan biaya operasional",
+      "Jalur dari prototipe ke aplikasi cukup lengkap: API, SDK JavaScript dan Python, CLI, widget chat tertanam, tracing, analitik, serta evaluasi tersedia dalam satu produk",
+    ],
+    cons: [
+      "Kanvas visual bisa menjadi sulit dibaca dan di-review saat flow membesar menjadi puluhan node, banyak cabang, dan ekspresi state yang saling bergantung",
+      "Self-host sederhana memang cepat, tetapi produksi skala besar membutuhkan PostgreSQL, queue worker, object storage, secret management, observability, backup, dan upgrade rutin",
+      "Fitur organisasi seperti workspace dan RBAC berada di paket Cloud atau Enterprise; sebagian kode enterprise memakai lisensi komersial, bukan Apache 2.0",
+      "Harga Cloud tidak ditampilkan secara transparan di halaman publik saat pengecekan editorial karena halaman pricing mengarah ke login, sementara biaya token model, database, server, dan tenaga DevOps tetap harus dihitung",
+    ],
+    verdict:
+      "Pilihan visual open-source paling lengkap untuk tim yang ingin membangun agen, RAG, dan workflow LLM tanpa memulai dari kode kosong. Flowise unggul untuk prototipe cepat dan aplikasi internal yang perlu self-host, tetapi LangGraph lebih tepat untuk kontrol berbasis kode dan n8n lebih kuat untuk otomasi bisnis dengan katalog integrasi non-AI yang luas.",
+    body: [
+      "Flowise memecahkan masalah yang muncul setelah sebuah demo chatbot melewati tahap beberapa prompt: tim harus menghubungkan model, dokumen, embedding, vector database, memory, tool, kontrol akses, dan endpoint aplikasi tanpa kehilangan kemampuan melihat alur secara utuh. Produk ini membagi pengalaman menjadi tiga builder. Assistant menjadi jalur paling sederhana untuk agen percakapan dengan instruksi, tool, dan knowledge base. Chatflow memberi kanvas lebih fleksibel untuk RAG, retriever, reranker, dan alur satu agen. Agentflow V2 menangani orkestrasi lebih serius dengan node mandiri untuk model, agent, tool, HTTP, condition, iteration, loop, dan human input. Pendekatan visual tersebut membuat product manager atau analis bisa ikut membaca desain, sementara developer tetap dapat menyisipkan kode dan ekspresi saat komponen bawaan tidak cukup. Dalam pengujian editorial Wawasan AI, kekuatan utamanya bukan klaim no-code, melainkan waktu yang dihemat saat mengubah ide agentic menjadi prototipe yang bisa dipanggil lewat API dan diuji bersama pengguna.",
+      "Pembaruan terpenting untuk 2025-2026 adalah kematangan Agentflow V2. Flow state membuat hasil dari satu node tersedia di cabang lain, conditional node memisahkan keputusan deterministik dari keputusan berbasis model, dan checkpoint memungkinkan proses berhenti menunggu persetujuan manusia lalu dilanjutkan dari posisi yang sama. Supervisor dapat membagi tugas ke beberapa worker agent, sedangkan MCP memungkinkan tool resmi seperti GitHub atau Jira disambungkan tanpa integrasi khusus per aplikasi. Flow juga bisa dipublikasikan melalui prediction API, SDK JavaScript atau Python, CLI, dan widget chat tertanam; tracing, execution log, analitik, dataset evaluasi, dan evaluator membantu tim melihat apakah perubahan prompt memperbaiki atau justru merusak hasil. Versi 3.1.3 dirilis pada 25 Juni 2026, sementara repositorinya menunjukkan sekitar 55 ribu bintang dan 25 ribu fork. Angka itu penting karena builder visual sangat bergantung pada pemeliharaan konektor: komunitas besar memperkecil risiko node model atau vector store tertinggal ketika API penyedia berubah.",
+      "Akses awalnya murah, tetapi struktur biayanya perlu dibaca dengan jujur. Flowise dapat dipasang dengan Node.js dan satu perintah npx, atau lewat Docker Compose; sebagian besar core berada di bawah Apache 2.0, sedangkan direktori enterprise dan fitur tertentu memakai lisensi komersial. Self-host tidak mengenakan biaya lisensi untuk core, tetapi pengguna tetap membayar model, embedding, vector database, penyimpanan, dan server. Instalasi lokal dengan SQLite cocok untuk eksperimen, bukan patokan produksi. Dokumentasi resmi menyarankan mode queue, PostgreSQL, penyimpanan S3, pengelolaan secret, dan untuk beban serius bahkan dua main server serta empat worker yang masing-masing mulai dari 4 vCPU dan 8 GB RAM. Artinya, prototipe bisa hidup di VPS kecil, tetapi sistem dengan traffic nyata memerlukan engineer yang mengurus scaling, backup, rotasi kredensial, dan pembaruan keamanan. Flowise Cloud menghilangkan sebagian beban tersebut, namun harga publik tidak dapat diverifikasi langsung saat ulasan ini ditulis karena halaman pricing mengarah ke layar login; tim sebaiknya memeriksa harga di dashboard dan menghitung total token sebelum membandingkannya dengan Langflow, Dify, atau layanan terkelola lain.",
+      "Untuk tim Indonesia, Flowise paling masuk akal pada tiga pola. Pertama, startup atau software house dapat membuat RAG untuk SOP, katalog produk, dokumen legal, atau layanan pelanggan dalam beberapa hari, lalu menanamkan widget ke situs atau memanggil API dari aplikasi yang sudah ada. Kedua, perusahaan yang terikat UU PDP dapat menjalankan core di infrastruktur sendiri, memilih region Jakarta atau Singapura dari penyedia cloud yang dipakai, dan menghubungkan model lokal melalui Ollama atau vLLM untuk data yang tidak boleh keluar; klaim privasi ini tetap bergantung pada konfigurasi model, logging, dan storage, bukan otomatis aman hanya karena Flowise di-self-host. Ketiga, kampus dan komunitas dapat mengajarkan konsep agent, RAG, state, serta approval manusia lewat diagram yang lebih mudah dipahami daripada ratusan baris Python. Trade-off-nya jelas: tim non-teknis tetap membutuhkan bantuan saat credential bocor, node gagal, database penuh, atau flow harus di-scale. Untuk workflow AI-first, Flowise lebih fokus daripada n8n; untuk ekosistem Python, Langflow terasa lebih natural; dan untuk sistem mission-critical yang harus diuji lewat kode serta code review ketat, LangGraph biasanya lebih dapat diprediksi. Mulailah dari satu flow dengan batas biaya dan evaluasi yang jelas, bukan langsung membangun jaringan multi-agent yang sulit diaudit.",
+    ],
+    link: "https://flowiseai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-19",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
