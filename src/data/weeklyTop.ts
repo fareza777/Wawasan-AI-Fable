@@ -1163,6 +1163,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                                                                                   "Stack modern (Next.js + TypeScript + Tailwind + Redis) plus endpoint publik `gitfut.com/<user>.png` untuk rendering cepat; kustomisasi negara lewat `?country=XX` — cocok untuk developer yang ingin bio GitHub-nya stand out tanpa setup tambahan.",
                                                                                                                 ],
                                                                                                               },
+                                                                                                              "Fei-Away/Codex-Dream-Skin": {
+                                                                                                                description:
+                                                                                                                  "Tool theming untuk Codex desktop (OpenAI) — suntik skin via local CDP tanpa utak-atik installer resmi, ganti background, simpan preset, dan restore ke tampilan default kapan pun.",
+                                                                                                                highlights: [
+                                                                                                                  "Pendekatan 'CDP injection' yang aman: Chrome DevTools Protocol diikat ke 127.0.0.1, tidak menyentuh .app/app.asar/WindowsApps — official binary dan code signing Codex tetap utuh, bukan modifikasi ilegal.",
+                                                                                                                  "Layer tema real (bukan wallpaper tempelan): sidebar, suggestion card, project selector, dan input box adalah native control Codex yang di-skin — fokus bergeser di halaman tugas, ambient tetap terjaga di beranda.",
+                                                                                                                  "Manajemen tema tersimpan lokal di ~/.codex/codex-dream-skin-studio/, plus tray icon di macOS menu bar dan Windows system tray untuk switch preset satu klik, impor background kustom, atau restore ke tampilan resmi.",
+                                                                                                                  "Cross-platform (Apple Silicon/Intel Mac + Windows 10/11) dengan skrip instalasi sekali jalan, prompt generator untuk bikin background 16:9 sendiri, dan delapan preset konsep sebagai titik awal — relevan untuk pengguna Codex harian yang ingin 'atmosfer' lebih personal tanpa risiko kehilangan update resmi.",
+                                                                                                                ],
+                                                                                                              },
                                                                                                             };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
