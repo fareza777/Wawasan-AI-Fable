@@ -2499,6 +2499,53 @@ export const repos: Review[] = [
   updatedAt: "2026-07-20",
   featured: false,
   },
+{
+  slug: "moneyprinterturbo",
+  name: "MoneyPrinterTurbo",
+  tagline: "Generator video pendek otomatis dari topik atau keyword, pakai LLM + FFmpeg",
+  tags: ["Video AI", "Content Creation", "Python", "Open Source"],
+  score: 8.5,
+  scores: [
+    { label: "Kemudahan Setup", value: 9.0 },
+    { label: "Fitur & Ekstensibilitas", value: 8.5 },
+    { label: "Komunitas & Momentum", value: 9.5 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Kesiapan Produksi", value: 7.5 },
+  ],
+  summary:
+    "MoneyPrinterTurbo adalah tool open-source yang mengubah satu topik atau kata kunci menjadi video pendek format vertikal siap posting ke TikTok, Reels, atau Shorts. Pipeline-nya menggabungkan LLM untuk menulis script, pencarian stok footage, text-to-speech multibahasa, subtitle otomatis, dan rendering via FFmpeg - semuanya dalam satu paket Python plus WebUI yang bisa dijalankan lokal.",
+  highlights: [
+    "Pipeline end-to-end otomatis: dari satu topik atau keyword, tool menghasilkan script, mencari footage stok, menyisipkan subtitle, dan merender video HD tanpa intervensi manual",
+    "WebUI modern berbasis FastAPI + Vue yang ramah pengguna non-teknis, plus REST API siap pakai untuk integrasi ke workflow otomasi atau pipeline MLOps",
+    "Dukungan multi-providers untuk LLM (OpenAI, Moonshot Kimi, DeepSeek, Azure, Ollama lokal) dan text-to-speech (Edge TTS default gratis, plus opsi premium) - fleksibel sesuai budget dan kebijakan data",
+    "Renderer FFmpeg-based dengan opsi codec, resolusi (vertical 1080x1920 standar Shorts/Reels, atau horizontal), bitrate, dan kualitas subtitle yang bisa diatur granular",
+    "Lisensi MIT, Python 3.11+, deployment Docker Compose resmi, plus binary release untuk Windows/macOS/Linux sehingga onboarding sangat cepat untuk tim konten Indonesia",
+    "Aktif dipelihara dengan rilis rutin, 98 ribu+ bintang dan 14 ribu+ fork di GitHub, menjadikannya salah satu proyek AI video paling mapan di komunitas open-source global",
+  ],
+  pros: [
+    "Menghilangkan bottleneck produksi short video untuk solo creator, tim marketing UMKM, atau agensi kecil yang ingin menguji banyak variasi konten tanpa biaya editor",
+    "Arsitektur multi-provider berarti tim bisa mulai dengan Edge TTS gratis dan Ollama lokal untuk privasi, lalu pindah ke API komersial ketika traffic naik - cocok untuk stage awal startup Indonesia yang ingin menjaga burn rate tetap rendah",
+    "Lisensi MIT dan track record rilis yang konsisten membuat tool ini aman diadopsi untuk jangka menengah tanpa khawatir proyek mati atau berubah jadi komersial tiba-tiba",
+  ],
+  cons: [
+    "Footage yang dipakai berbasis pencarian stok video - untuk brand yang butuh konsistensi visual atau shot produk sendiri, output default perlu diganti dengan pipeline asset kustom",
+    "Akurasi pencocokan footage dengan script sangat bergantung pada kualitas model bahasa yang dipakai; dengan LLM kecil, narasi bisa terasa generik dan footage terasa kurang nyambung",
+    "Komunitas diskusi teknis spesifik bahasa Indonesia relatif terbatas - troubleshooting umumnya dilakukan lewat issue GitHub berbahasa Inggris dan Mandarin",
+  ],
+  verdict:
+    "Salah satu titik masuk paling pragmatis ke dunia generative video short-form di ekosistem open-source. Sangat layak dicoba oleh creator solo, tim marketing UMKM, atau agensi kecil Indonesia yang ingin menguji banyak variasi konten AI tanpa langsung terikat platform komersial berbayar.",
+  body: [
+    "Dalam dua tahun terakhir, konten short-form berubah dari tren menjadi infrastruktur utama distribusi digital. TikTok, Instagram Reels, dan YouTube Shorts bukan lagi eksperimen, melainkan kanal akuisisi utama bagi UMKM, brand lokal, sampai kreator solo. Masalahnya, memproduksi video pendek 30-60 detik setiap hari bukan perkara kecil - butuh ide, script, footage, narasi, dan rendering. MoneyPrinterTurbo muncul sebagai jawaban open-source yang menyerang langsung bottleneck ini: dari satu topik atau kata kunci, tool menghasilkan script lewat LLM, mencari footage stok, menambahkan subtitle otomatis, dan merender video HD siap posting - semuanya dalam satu pipeline Python plus WebUI yang bisa dijalankan di laptop atau VPS kecil.",
+    "Secara arsitektur, MoneyPrinterTurbo bukan sekadar wrapper API. Ia adalah orkestrator yang menggabungkan empat dunia: large language model untuk script, layanan text-to-speech untuk narasi, bank footage (Pexels, Pixabay) untuk visual, dan FFmpeg untuk rendering akhir. Yang menarik, semua komponen ini bisa diganti - LLM bisa OpenAI, Moonshot Kimi, DeepSeek, atau Ollama lokal; TTS bisa Edge TTS gratis atau layanan premium; asset bisa diganti dengan footage internal. Fleksibilitas multi-provider ini penting untuk konteks Indonesia: tim bisa mulai dengan stack gratis untuk validasi ide, lalu migrasi ke API komersial ketika channel terbukti menghasilkan ROI, tanpa rewrite pipeline.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah tahap eksplorasi awal bagi UMKM atau kreator yang ingin menguji puluhan variasi topik per minggu. Misalnya tim marketing sebuah brand lokal ingin memproduksi 30 video pendek harian tentang tips finansial, recipe, atau promo - di luar kemampuan tim editing manusia, tapi ideal untuk eksperimen A/B. MoneyPrinterTurbo memungkinkan tim men-spawn variasi hook, gaya narasi, dan angle topik dalam hitungan jam, lalu menyaring mana yang performanya baik sebelum berinvestasi pada produksi premium. WebUI-nya yang berbasis FastAPI plus Vue terasa ringan dan cukup intuitif untuk pengguna non-teknis, dan REST API resmi memungkinkan pipeline di-trigger dari scheduler atau workflow n8n/Airflow yang sudah ada.",
+    "Bukan berarti tanpa kompromi. Footage default berbasis pencarian stok, sehingga brand dengan pedoman visual ketat - misalnya perusahaan F&B yang butuh close-up produk mereka sendiri - perlu menyiapkan pipeline asset pengganti. Akurasi pencocokan footage dengan script sangat tergantung pada kualitas LLM; dengan model kecil atau prompt ringkas, output bisa terasa generik dan footage terasa kurang nyambung, sehingga perlu iterasi prompt atau pemilihan model yang lebih kuat. Diskusi komunitas paling aktif masih berbahasa Inggris dan Mandarin, sehingga troubleshooting untuk konteks Indonesia kadang perlu menerjemahkan issue atau bertanya di komunitas lokal. Namun untuk titik masuk ke dunia generative video short-form di atas fondasi open-source, MoneyPrinterTurbo adalah salah satu pilihan paling pragmatis yang tersedia saat ini.",
+  ],
+  link: "https://github.com/harry0703/MoneyPrinterTurbo",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-21",
+  updatedAt: "2026-07-21",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
