@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-20T05:07:06.480Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "tirth8205/code-review-graph",
+      "owner": "tirth8205",
+      "repo": "code-review-graph",
+      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+      "githubUrl": "https://github.com/tirth8205/code-review-graph",
+      "trendshiftUrl": "https://trendshift.io/repositories/23329",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-26T17:25:13Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "schollz/croc",
+      "owner": "schollz",
+      "repo": "croc",
+      "description": "Easily and securely send things from one computer to another :crocodile: :package:",
+      "githubUrl": "https://github.com/schollz/croc",
+      "trendshiftUrl": "https://trendshift.io/repositories/2300",
+      "language": "Go",
+      "topics": [
+        "File management"
+      ],
+      "dateCreated": "2017-10-17T15:20:18Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/24667",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-03-18T18:38:02Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "KnockOutEZ/wigolo",
+      "owner": "KnockOutEZ",
+      "repo": "wigolo",
+      "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
+      "githubUrl": "https://github.com/KnockOutEZ/wigolo",
+      "trendshiftUrl": "https://trendshift.io/repositories/79424",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI infrastructure",
+        "MCP",
+        "Headless browser",
+        "Web scraping",
+        "Search"
+      ],
+      "dateCreated": "2026-04-12T15:04:11Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "palemoky/chinese-poetry-api",
+      "owner": "palemoky",
+      "repo": "chinese-poetry-api",
+      "description": "📜 诗泉：高性能中国古诗词 API 服务",
+      "githubUrl": "https://github.com/palemoky/chinese-poetry-api",
+      "trendshiftUrl": "https://trendshift.io/repositories/69501",
+      "language": "Go",
+      "topics": [],
+      "dateCreated": "2025-12-08T23:39:04Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Search"
+      ],
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "KKKKhazix/khazix-skills",
+      "owner": "KKKKhazix",
+      "repo": "khazix-skills",
+      "description": "数字生命卡兹克开源的 AI Skills 合集",
+      "githubUrl": "https://github.com/KKKKhazix/khazix-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/26738",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-06T07:37:02Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "1jehuang/jcode",
+      "owner": "1jehuang",
+      "repo": "jcode",
+      "description": "Coding Agent Harness",
+      "githubUrl": "https://github.com/1jehuang/jcode",
+      "trendshiftUrl": "https://trendshift.io/repositories/25042",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-01-05T09:43:36Z"
+    }
+  ]
+}
