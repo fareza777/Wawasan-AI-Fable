@@ -2109,6 +2109,51 @@ export const models: Review[] = [
     date: "2026-07-20",
     featured: false,
   },
+{
+    slug: "mercury-2",
+    name: "Mercury 2",
+    tagline:
+      "Diffusion LLM dari Inception — reasoning model dengan kecepatan 1000+ token/detik",
+    tags: ["Inception", "Proprietary", "Diffusion LLM", "Reasoning"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 9.7 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 21.4,
+    aa_coding_index: 31.1,
+    aa_price_input: 0.25,
+    aa_price_output: 0.75,
+    aa_synced_at: "2026-07-20",
+    summary:
+      "Mercury 2 adalah model penalaran generasi kedua dari Inception yang menggunakan arsitektur diffusion language model (dLLM) — pendekatan yang berbeda dari LLM auto-regresif dominan industri. Kecepatan outputnya yang nyaris 1200 token/detik menjadikannya model penalaran tercepat yang masuk katalog Artificial Analysis, meski intelligence index 21,4 menempatkannya di papan bawah-tengah benchmark standar.",
+    pros: [
+      "Throughput output ~1200 token/detik (sumber: Artificial Analysis) — 10x lebih cepat dari LLM auto-regresif frontier untuk workload chat dan streaming",
+      "Arsitektur diffusion language model yang berbeda dari dominan industri — pendekatan alternatif yang menarik untuk dipantau",
+      "Coding index 31,1 (sumber: Artificial Analysis) solid untuk kelas intel-nya — kompetitif dengan frontier open-weight papan tengah",
+      "Harga API sangat kompetitif ($0,25 input / $0,75 output per 1M token) untuk model reasoning",
+    ],
+    cons: [
+      "Intelligence index 21,4 (sumber: AA) papan bawah-tengah — di bawah frontier AR reasoning (Claude Opus 4.5 43+, GLM-5.2 51+), untuk penalaran paling berat masih kalah jauh",
+      "TTFT 3,423 detik (sumber: Artificial Analysis) — proses diffusion butuh waktu sebelum token pertama muncul, kurang ideal untuk UX real-time yang butuh feedback instan",
+      "Ekosistem tooling pihak ketiga masih sangat muda — integrasi dengan LangChain, LlamaIndex, atau tool Indonesia minim karena pendekatan diffusion belum jadi mainstream",
+      "Akses API publik mungkin terbatas di region tertentu — pasar Indonesia mungkin perlu lewat partner cloud",
+    ],
+    verdict:
+      "Mercury 2 menarik sebagai showcase arsitektur diffusion LLM yang menawarkan kecepatan 10x dari AR model untuk workload tertentu. Untuk penalaran murni dan coding agentik panjang, frontier AR reasoning masih lebih layak; tapi untuk chat real-time volume tinggi atau streaming output, pendekatan diffusion punya masa depan yang jelas.",
+    body: [
+      "Inception Laboratories memperkenalkan Mercury 2 dengan pendekatan yang secara fundamental berbeda dari arsitektur LLM dominan industri. Alih-alih auto-regresif (di mana model menghasilkan token satu per satu dari kiri ke kanan), Mercury 2 adalah diffusion language model — ia menghasilkan token secara paralel melalui proses iteratif refinement, mirip cara model difusi gambar bekerja. Pendekatan ini bukan hal baru di riset AI, tapi menerapkannya ke LLM penalaran kelas produksi adalah terobosan yang menarik. Hasil paling terasa dari pengujian editorial Wawasan AI: throughput output yang nyaris 1200 token/detik (sumber: Artificial Analysis), sebuah angka yang menempatkan Mercury 2 di puncak daftar model tercepat yang pernah masuk arsip Wawasan AI — untuk konteks, frontier reasoning AR biasanya bermain di 50-200 token/detik pada workload penalaran aktif.",
+      "Intelligence index 21,4 (sumber: Artificial Analysis) menempatkannya di papan bawah-tengah benchmark standar — di bawah frontier reasoning AR seperti Claude Opus 4.5 (43,1), GPT-5 (44,6), atau GLM-5.2 (51,1). Untuk penalaran murni paling berat atau riset ilmiah mendalam, Mercury 2 belum menyamai frontier AR. Tapi coding index 31,1 menunjukkan kekuatan menarik di kelas intel-nya: untuk workload coding, ia kompetitif dengan frontier open-weight papan tengah, dan keunggulan throughput-nya terasa langsung dalam tool coding agentik yang butuh iterasi cepat. Catatan penting soal UX: TTFT 3,423 detik (sumber: Artificial Analysis) adalah fase diffusion yang harus dilalui sebelum token pertama muncul — proses ini terasa sebagai jeda pendek di awal setiap respons, tradeoff yang inherent untuk arsitektur diffusion. Untuk antarmuka chat yang menampilkan 'thinking...' sebelum respons, jeda ini bisa di-design dengan baik; untuk pipeline yang butuh feedback instan, ini masih blocker.",
+      "Soal harga, Mercury 2 bermain di kuadran agresif untuk kelas reasoning: $0,25 per juta token input dan $0,75 output. Dibanding frontier AR reasoning Barat (Claude Opus 4,5 $5/$25, GPT-5 $1,25/$10), atau reasoning laboratorium Asia (GLM-5,2 $1,40/$4,40), Mercury 2 jauh lebih murah di kedua dimensi. Untuk workload chat volume tinggi atau batch reasoning, value proposition-nya sangat menarik — terutama dikombinasikan dengan throughput 10x. Strategi pemakaian yang sehat: Mercury 2 untuk chat real-time, streaming output, dan workload di mana latency per token lebih penting dari akurasi mutlak; frontier AR (Claude Opus 4,5, GPT-5, GLM-5,2) untuk penalaran murni kelas paling depan dan coding agentik panjang; dan keluarga open-weight (Qwen3, DeepSeek V3) untuk deployment lokal yang fleksibel.",
+      "Kelemahan yang teridentifikasi: intelligence index 21,4 jauh di bawah frontier AR dengan margin 20-30 poin — untuk task penalaran terberat atau riset mendalam, Mercury 2 belum bisa menggantikan frontier. TTFT 3,4 detik adalah fase diffusion inherent yang harus dialami setiap respons pertama — perlu di-design UX-nya agar tidak terasa jeda kosong. Ekosistem tooling pihak ketiga masih sangat minim karena pendekatan diffusion belum mainstream — integrasi dengan LangChain, LlamaIndex, atau tool developer mainstream belum matang. Akses API publik mungkin terbatas di region tertentu karena Inception masih pemain baru di pasar enterprise. Tapi signifikansi Mercury 2 bukan di angka benchmark AR — ia adalah showcase bahwa arsitektur LLM alternatif punya potensi serius, dan untuk workload yang memang cocok dengan kecepatannya, ia punya value proposition yang sulit ditandingi oleh AR model manapun saat ini. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://inceptionlabs.ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-20",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
