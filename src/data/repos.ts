@@ -2546,6 +2546,54 @@ export const repos: Review[] = [
   updatedAt: "2026-07-21",
   featured: false,
 },
+{
+  slug: "ragflow",
+  name: "RAGFlow",
+  tagline: "Mesin RAG open-source berbasis agentic retrieval untuk konteks LLM yang lebih akurat",
+  tags: ["RAG", "AI Agent", "Open Source", "Enterprise Search"],
+  score: 8.8,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.0 },
+    { label: "Fitur & Ekstensibilitas", value: 9.5 },
+    { label: "Komunitas & Momentum", value: 9.5 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "RAGFlow adalah mesin Retrieval-Augmented Generation open-source dari InfiniFlow yang menggabungkan RAG klasik dengan kemampuan agentic retrieval, agentic search, dan orkestrasi agent. Dengan lebih dari 85 ribu bintang di GitHub dan komunitas global yang aktif, RAGFlow diposisikan sebagai lapisan konteks enterprise untuk aplikasi LLM - cocok untuk tim yang butuh grounding data proprietary di atas fondasi self-hostable.",
+  highlights: [
+    "Arsitektur agentic retrieval yang menggabungkan RAG tradisional dengan kemampuan agent - bukan sekadar chunk-and-embed, tapi penalaran multi-langkah untuk menemukan konteks relevan dari dokumen kompleks",
+    "Pipeline ingest end-to-end yang menangani PDF, DOCX, scanned image, tabel, dan layout multi-kolom tanpa preprocessing manual yang menyebalkan",
+    "Mesin parsing dokumen berbasis OCR + layout analysis yang memahami struktur dokumen, sehingga chunking mengikuti semantik bukan sekadar text splitting naif",
+    "Berbagai mode retrieval: semantic search klasik, hybrid BM25 plus dense, plus agentic search yang menggabungkan planning tool use untuk menjawab query kompleks",
+    "Deployment Docker Compose resmi plus image Kubernetes, dengan opsi on-prem penuh - sangat relevan untuk industri Indonesia yang beroperasi di bawah regulasi data ketat",
+    "Integrasi ke lebih dari 10 LLM provider termasuk OpenAI, Anthropic, DeepSeek, Qwen, Ollama, dan model lokal - fleksibel mengikuti strategi biaya tim",
+    "Aktif dipelihara dengan rilis mingguan, lebih dari 85 ribu bintang dan 10 ribu fork di GitHub - salah satu proyek RAG open-source paling ramai di komunitas global",
+  ],
+  pros: [
+    "Menjawab kebutuhan nyata enterprise akan grounding LLM di atas knowledge base internal tanpa harus bergantung pada layanan komersial seperti llamaindex berbayar atau platform vektor proprietary",
+    "Pemahaman dokumen kaya - parsing PDF, tabel, dan layout majalah sangat membantu untuk tim Indonesia yang banyak mengelola dokumen berbahasa Indonesia dengan format campuran",
+    "Lisensi Apache-2.0 dan track record rilis yang konsisten menjadikan adopsi jangka menengah aman tanpa khawatir proyek ditinggal maintainer atau berubah lisensi mendadak",
+  ],
+  cons: [
+    "Setup awal untuk skala produksi masih memerlukan pemahaman tentang Docker, konfigurasi database, dan tuning model embedding - bukan tool point-and-click",
+    "Konsumsi resource relatif tinggi: GPU recommended untuk inference embedding dan reranker, sehingga perlu perencanaan kapasitas untuk tim yang hanya punya VPS CPU",
+    "Komunitas diskusi teknis spesifik bahasa Indonesia relatif terbatas; troubleshooting umum dilakukan lewat issue GitHub berbahasa Inggris dan Mandarin, sehingga onboarding lokal kadang perlu menerjemahkan manual",
+  ],
+  verdict:
+    "Salah satu mesin RAG open-source paling matang untuk tim yang ingin membangun aplikasi LLM enterprise di atas knowledge base proprietary. Layak dipertimbangkan serius oleh startup dan tim korporat Indonesia yang butuh grounding data tanpa mengikat ke platform komersial.",
+  body: [
+    "Salah satu pertanyaan paling jujur di era LLM adalah: bagaimana caranya model besar memberikan jawaban yang akurat tentang data internal perusahaan kita, tanpa harus fine-tune atau mengirim semua dokumen ke API pihak ketiga? Retrieval-Augmented Generation adalah jawaban standar industri - dan di antara banyak implementasi open-source yang bermunculan, RAGFlow dari InfiniFlow menonjol karena tidak berhenti di paradigma RAG klasik. Ia menambahkan lapisan agentic retrieval: agent yang bisa melakukan multi-hop reasoning, mencari, membaca ulang, dan menyusun ulang konteks sebelum menyerahkannya ke LLM untuk generasi akhir. Bagi tim yang mengelola knowledge base besar - kontrak hukum, manual teknis, laporan riset, atau arsip FAQ multibahasa - pendekatan ini terasa lebih manusiawi dibanding chunking naif yang sering gagal menjawab pertanyaan berlapis.",
+    "Yang paling terasa dalam pemakaian sehari-hari adalah pipeline ingest-nya. RAGFlow bisa menangani PDF, DOCX, hasil scan, tabel, dan bahkan layout multi-kolom dari majalah atau laporan riset - lalu melakukan OCR plus layout analysis untuk memahami struktur sebelum melakukan chunking. Artinya, ketika tim mengunggah ratusan dokumen PDF kontrak berbahasa Indonesia dengan format campuran narasi-tabel-footnote, sistem tidak sekadar memecah teks per paragraf; ia berusaha mempertahankan struktur tabel sebagai tabel, footnote sebagai catatan terpisah, dan heading sebagai metadata. Hasilnya, saat retrieval berjalan, konteks yang ditarik ke LLM lebih bersih dan lebih relevan dengan pertanyaan pengguna - yang biasanya berakhir pada jawaban lebih akurat dan lebih sedikit halusinasi.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah perusahaan dengan knowledge base besar yang selama ini tidak bisa di-ground-kan ke LLM karena format dokumennya terlalu kompleks. Contoh konkret: tim legal korporat ingin bertanya kepada LLM tentang klausul spesifik dalam ratusan kontrak lama - dengan RAGFlow, pertanyaan semacam \"apa kewajiban indemnity di kontrak dengan vendor X tahun 2023?\" bisa dijawab dengan menunjuk ke halaman spesifik dari PDF asli, lengkap dengan sitasi. Skenario lain: tim customer support perusahaan telekomunikasi ingin membangun bot yang bisa menjawab pertanyaan berdasarkan manual teknis produk yang sering di-update - pipeline ingest RAGFlow bisa dipakai ulang setiap kali manual baru keluar, tanpa harus melatih ulang model apa pun. Integrasi ke lebih dari 10 LLM provider memberi fleksibilitas untuk menjaga kerahasiaan data dengan Ollama lokal, atau migrasi ke API komersial saat traffic naik.",
+    "Bukan berarti tanpa kompromi. Setup awal untuk skala produksi tetap memerlukan pemahaman tentang Docker Compose, konfigurasi Elasticsearch atau Infinity sebagai vector store, dan tuning model embedding sesuai bahasa knowledge base. Konsumsi resource juga relatif tinggi: embedding model dan reranker yang berkualitas butuh GPU, sehingga tim yang hanya punya VPS CPU perlu menimbang antara self-host atau fallback ke inference API pihak ketiga. Komunitas diskusi teknis spesifik bahasa Indonesia masih terbatas - mayoritas thread aktif di GitHub berbahasa Inggris dan Mandarin, sehingga troubleshooting kadang perlu menerjemahkan issue atau bertanya ke komunitas AI lokal. Namun untuk titik masuk ke dunia RAG serius di atas fondasi open-source, RAGFlow adalah salah satu pilihan paling matang dan paling scalable yang tersedia saat ini.",
+  ],
+  link: "https://github.com/infiniflow/ragflow",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-22",
+  updatedAt: "2026-07-22",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
