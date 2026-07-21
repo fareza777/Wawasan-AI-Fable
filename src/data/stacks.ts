@@ -1795,6 +1795,45 @@ export const stacks: Review[] = [
     date: "2026-07-19",
     featured: false,
   },
+  {
+    slug: "codeium",
+    name: "Codeium",
+    tagline: "Autocomplete AI gratis yang mempercepat coding lintas IDE",
+    tags: ["Codeium", "Freemium", "Code Completion", "Multi-IDE"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.4 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 8.9 },
+    ],
+    summary:
+      "Codeium mengubah autocomplete kode menjadi asisten harian yang ringan, gratis untuk dicoba, dan tersedia di banyak IDE. Produk ini tidak seagentic Claude Code atau Cursor, tetapi sangat efektif untuk mempercepat boilerplate, melengkapi fungsi, dan menjelaskan file tanpa memaksa developer pindah editor.",
+    pros: [
+      "Tier gratis memberi autocomplete dan chat yang cukup untuk pemakaian rutin",
+      "Dukungan lintas IDE memudahkan tim dengan editor yang beragam",
+      "Saran kode cepat dan cukup akurat untuk boilerplate, test, serta dokumentasi",
+      "Dapat menjadi pintu masuk AI coding tanpa biaya langganan di awal",
+    ],
+    cons: [
+      "Kemampuan agen multi-langkah tidak sedalam Cursor, Claude Code, atau Codex",
+      "Rebranding ke Windsurf lalu Devin membuat positioning dan dokumentasi terasa berubah-ubah",
+      "Kualitas saran tetap bergantung pada konteks file dan framework yang terbuka",
+    ],
+    verdict:
+      "Pilihan hemat yang masuk akal untuk autocomplete lintas IDE, terutama bagi pelajar dan developer yang belum siap membayar langganan. Namun, jangan menganggapnya pengganti agen coding penuh; untuk refactor besar, tool yang bisa merencanakan dan menguji perubahan tetap lebih unggul.",
+    body: [
+      "Codeium mengambil jalur yang berbeda dari agen coding penuh. Alih-alih menyerahkan satu issue lalu menunggu banyak file berubah, tool ini hadir di aktivitas biasa: menebak baris berikutnya, membuat fungsi dari komentar, merangkum file, atau menjawab pertanyaan tentang potongan kode yang dibuka. Pola sederhana ini cocok untuk pekerjaan berulang. Saat menulis endpoint, serializer, test unit, atau konfigurasi CI, saran inline yang muncul dalam hitungan detik menghemat ketikan tanpa memaksa developer keluar dari editor. Dalam pengujian editorial Wawasan AI, nilainya paling terasa pada tugas kecil yang sering diulang, bukan permintaan arsitektur besar yang membutuhkan pemahaman repo menyeluruh.",
+      "Pengalaman pengguna menjadi kekuatan utamanya. Codeium tersedia melalui ekstensi untuk editor populer dan mempertahankan alur familiar: terima saran, ubah prompt ketika hasil kurang tepat, lalu lanjutkan coding. Chat dan pemahaman kode menambah konteks ketika autocomplete tidak cukup. Dibanding Copilot, Cursor, atau Windsurf, keunggulannya secara historis adalah akses gratis dan jangkauan editor luas. Kekurangannya jelas: kemampuan agentic masih terbatas. Ia bisa membantu menyusun perubahan, tetapi tidak selalu mampu memecah pekerjaan menjadi langkah aman, menjalankan test, membaca kegagalan, lalu mengulang sampai selesai. Untuk workflow multi-file yang rumit, developer tetap perlu memimpin langkah dan memeriksa setiap saran sebelum masuk ke branch utama.",
+      "Status brand perlu dicatat sebelum tim menjadikannya standar. Saat fact-check pada 21 Juli 2026, codeium.com mengarahkan pengguna ke Devin, sementara dokumentasi Windsurf juga mengarah ke ekosistem Devin Desktop. Ini mencerminkan perjalanan produk dari Codeium ke Windsurf dan kemudian integrasi dengan Cognition, bukan sekadar perubahan URL. Fitur dan akun lama mungkin punya jalur migrasi, tetapi pembeli baru sebaiknya membaca pricing dan dokumentasi terkini sebelum mengunci kebijakan internal. Halaman resmi saat dicek menampilkan paket Free dan paket berbayar mulai sekitar USD 20 per bulan. Dengan kurs bulat Rp16.000 per dolar, titik masuknya kira-kira Rp320.000 per bulan, belum termasuk pajak atau perubahan kuota penggunaan.",
+      "Untuk pengguna Indonesia, tier gratis membuat Codeium menarik di kampus, komunitas belajar, dan tim kecil yang ingin menguji AI coding tanpa kartu korporat. Developer bisa tetap memakai VS Code, JetBrains, atau editor lain yang dikuasai, lalu membandingkan penghematan waktu dengan biaya dan kebijakan data perusahaan. Untuk source code sensitif, jangan menyamakan paket gratis dengan jaminan privasi; baca aturan retensi data, matikan telemetry bila tersedia, dan pisahkan repo klien dari eksperimen pribadi. Gunakan Codeium sebagai lapisan produktivitas murah untuk pekerjaan rutin, tetapi siapkan Cursor, Claude Code, Codex, atau Cline ketika tugas membutuhkan perubahan lintas repo, eksekusi command, dan verifikasi otomatis.",
+    ],
+    link: "https://codeium.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-21",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
