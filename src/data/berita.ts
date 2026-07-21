@@ -2137,6 +2137,48 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "indonesia-masuk-lima-besar-pengguna-chatgpt-perpres-ai-dikebut",
+    title: "Indonesia Masuk Lima Besar Pengguna ChatGPT, Perpres AI Dikebut: Antara Ledakan Adopsi dan Regulasi yang Kejar-Kejaran",
+    excerpt:
+      "Indonesia tercatat sebagai salah satu dari lima negara pengguna ChatGPT terbesar di dunia, di saat yang sama pemerintah mempercepat penyusunan dua Perpres AI. Tulisan ini membaca keduanya secara jernih.",
+    category: "Analisis",
+    date: "2026-07-22",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ada dua berita dari minggu yang sama yang bila dibaca terpisah terasa biasa, tapi bila disandingkan menunjukkan sesuatu yang lebih besar. Yang pertama: Indonesia resmi tercatat sebagai salah satu dari lima negara dengan pengguna ChatGPT terbesar di dunia, mengalahkan banyak negara dengan populasi lebih kecil dan infrastruktur digital lebih mapan. Yang kedua: di saat yang sama, pemerintah lewat Kementerian Komunikasi dan Digital menyatakan sedang mempercepat finalisasi dua Peraturan Presiden tentang AI yang ditargetkan rampung pada 2026, dengan draf yang sudah masuk ke Sekretariat Negara.",
+          "Keduanya tampak seperti dua lajur yang tidak bertemu: satu tentang perilaku jutaan pengguna ponsel Indonesia yang penasaran atau bergantung pada asisten AI; yang lain tentang regulasi negara yang disiapkan untuk mengatur penggunaan teknologi itu. Tapi justru di titik temu keduanya ada pertanyaan yang tidak bisa dihindari: apa yang sebenarnya terjadi ketika ledakan adopsi di kalangan rakyat sudah terjadi lebih dulu, sementara negara masih menyelesaikan aturannya? Tulisan ini mencoba membaca peta situasi itu secara jernih, dengan mata terbuka pada peluang dan keterbukaannya pada risiko.",
+        ],
+      },
+      {
+        heading: "Apa arti posisi lima besar itu, sesungguhnya",
+        paragraphs: [
+          "Angka lima besar terdengar seperti pencapaian, dan memang begitu — tapi dengan catatan penting. Pertama, peringkat itu dihitung dari total percakapan atau query aktif, bukan dari penetrasi populasi. Artinya: dari setiap seribu orang Indonesia yang online, proporsi yang benar-benar memakai ChatGPT secara rutin bisa jadi lebih kecil dibanding negara lain yang peringkatnya lebih rendah. Yang kita ukur adalah total volume, bukan kebiasaan merata.",
+          "Kedua, ChatGPT bukan satu-satunya model AI yang dipakai orang Indonesia. Claude, Gemini, model lokal seperti Sahabat-AI, dan sederet aplikasi pihak ketiga yang membungkus berbagai model di baliknya juga dipakai jutaan orang. Angka lima besar lebih mencerminkan popularitas ChatGPT sebagai pintu masuk, bukan total adopsi AI secara keseluruhan. Membaca data secara harfiah bisa menyesatkan; membaca data sebagai sinyal tetap berguna.",
+          "Ketiga, dan ini yang paling penting dari sisi kebijakan: ledakan adopsi terjadi di luar pagar regulasi. Siapa pun yang punya nomor ponsel dan akses internet bisa mengunduh aplikasi, membayar dengan kartu kredit atau jalan pintas lain yang umum dipakai di Indonesia, lalu mulai mengobrol dengan AI tentang apa saja dalam hitungan menit. Tidak ada perizinan, tidak ada pendaftaran, tidak ada mekanisme negara untuk melihat apa yang dipakai dan untuk apa. Ledakan ini organik, dari bawah ke atas, dan sama sekali tidak mengikuti peta jalan yang biasanya dipakai pemerintah untuk teknologi sebesar ini.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya diatur dalam Perpres AI",
+        paragraphs: [
+          "Dua Perpres yang sedang dikebut punya orientasi yang berbeda tapi saling melengkapi. Yang pertama fokus pada peta jalan dan etika AI nasional — semacam dokumen strategis yang menjawab pertanyaan: Indonesia mau jadi apa di ekosistem AI global, dan nilai-nilai apa yang tidak bisa ditawar. Yang kedua lebih teknis: mengatur penggunaan AI berdasarkan tingkat risiko, mengikuti kerangka yang sekarang diadopsi banyak negara, dari klasifikasi rendah sampai tinggi, dengan kewajiban yang berbeda untuk setiap tingkat.",
+          "Pendekatan berbasis risiko masuk akal dan sudah teruji di Uni Eropa lewat AI Act. Untuk ASN dan instansi pemerintah, implikasinya langsung terasa: ada kategori penggunaan yang boleh, ada yang boleh dengan syarat, dan ada yang dilarang. Untuk sektor swasta, terutama yang menangani data pribadi atau beroperasi di infrastruktur kritis, peta risikonya juga jadi lebih jelas. Yang masih menjadi tanda tanya besar adalah eksekusi: siapa yang mengawasi, bagaimana mekanismenya, dan seberapa cepat responsif terhadap teknologi yang berubah jauh lebih cepat daripada siklus regulasi.",
+          "Waktu juga faktor yang krusial. Draf sudah masuk ke Setneg, tapi dari draf ke Perpres yang ditandatangani Presiden ada proses yang tidak bisa dipaksakan. Kementerian/lembaga lain yang terkait perlu memberi masukan, harmonisasi dengan aturan yang sudah ada harus dipastikan tidak tumpang tindih, dan yang paling sulit: menulis aturan untuk teknologi yang masih bergerak sangat cepat. Regulasi yang terlalu kaku akan usang sebelum diterbitkan; regulasi yang terlalu longgar tidak akan menjawab kegelisahan publik.",
+        ],
+      },
+      {
+        heading: "Tiga hal yang patut diperhatikan ke depan",
+        paragraphs: [
+          "Pertama, jangan samakan regulasi dengan kontrol. Perpres yang baik mengatur ruang main, bukan melarang keluar rumah. Indonesia butuh pemain AI lokal yang kuat, butuh talenta yang berani bereksperimen, dan butuh investor yang yakin bahwa negara serius tapi tidak berlebihan. Regulasi yang akhirnya menindas kreator dan UMKM lokal akan kontraproduktif, karena yang tumbuh subur justru akan jadi aplikasi impor, bukan buatan dalam negeri.",
+          "Kedua, perhatikan siapa yang paling kena dampak. Ledakan adopsi ChatGPT terjadi di kalangan pelajar, mahasiswa, pekerja muda, dan UMKM. Ketika aturan final keluar, pertanyaannya bukan hanya apakah aturan itu adil untuk korporasi besar, tapi apakah aturan itu realistis untuk pengguna rumahan dan usaha kecil. Kalau compliance cost-nya terlalu tinggi, hasilnya bukan AI dipakai secara bertanggung jawab, tapi AI dipakai sembunyi-sembunyi tanpa panduan.",
+          "Ketiga, dan ini yang paling membutuhkan kematangan bersama: ruang dialog antara pemerintah, industri, komunitas akademik, dan publik. Regulasi AI yang baik tidak lahir dari satu ruangan tertutup. Ia lahir dari percakapan yang banyak, yang jujur, dan yang tahan terhadap tekanan lobby dari segala arah. Indonesia sudah punya modal itu — komunitas AI lokal yang aktif, media teknologi yang semakin dewasa, dan Kementerian yang terbuka untuk mendengar. Yang tersisa adalah konsistensi untuk menjaga agar semua pihak tetap berada di meja yang sama sampai Perpres benar-benar lahir.",
+          "Pada akhirnya, posisi lima besar dan Perpres yang dikebut adalah dua sisi dari cerita yang sama: Indonesia tidak bisa mengabaikan AI lagi, dan AI tidak menunggu Indonesia siap. Pertanyaannya bukan apakah kita akan diatur atau tidak — pasti akan diatur — tapi apakah aturan itu akan terasa seperti pagar yang melindungi atau pagar yang mengekang. Jawabannya akan terbentuk dalam dua tahun ke depan, dan setiap pengguna ChatGPT hari ini, tanpa sadar, sudah ikut menentukan jawabannya lewat cara mereka menggunakan teknologi ini.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
