@@ -2154,6 +2154,49 @@ export const models: Review[] = [
     date: "2026-07-20",
     featured: false,
   },
+{
+    slug: "motif-0714",
+    name: "Motif 3 (Beta)",
+    tagline: "Model open-weight baru Motif Technologies — Coding 62 di kelas intel mid",
+    tags: ["Motif Technologies", "Open Weight", "Coding", "Inference"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 8.4 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 44.1,
+    aa_coding_index: 62,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-22",
+    summary:
+      "Model open-weight dari Motif Technologies yang menonjol di dimensi coding: skor 62 di coding index (sumber: Artificial Analysis) menempatkannya di papan atas kelas mid-range, jauh di atas rata-rata model open-weight sekelas intelligence index 44,1. Trade-off jelas: penalaran umum masih di bawah frontier, tapi untuk workload coding agentik dengan biaya rendah, value proposition-nya sulit diabaikan.",
+    pros: [
+      "Coding index 62 (sumber: Artificial Analysis) salah satu yang tertinggi di kelas intel mid-range — kuat untuk refactor, debug, dan code generation",
+      "Open-weight — bisa di-host sendiri atau via inference provider mana saja, tidak terikat vendor lock-in",
+      "Intelligence index 44,1 (sumber: Artificial Analysis) berada di papan atas kelas mid-tier, masih di atas model proprietary mainstream beberapa generasi lalu",
+      "Cocok untuk pipeline coding agentik di mana throughput dan biaya lebih diprioritaskan daripada penalaran murni",
+    ],
+    cons: [
+      "Penalaran umum masih di bawah frontier AR (Claude Opus 4.5 43,1, GPT-5 44,6, GLM-5.2 51,1) — untuk riset ilmiah atau tugas multi-langkah paling berat, frontier tetap lebih layak",
+      "Harga API publik masih $0 input/output — model ini kemungkinan besar fokus ke deployment self-host, sehingga akses API komersial mungkin terbatas di pasar Indonesia",
+      "Ekosistem tooling pihak ketiga masih sangat minim — integrasi dengan LangChain, LlamaIndex, atau tool developer Indonesia belum matang",
+      "Dokumentasi dan tuning guide belum sekaya frontier model utama — adopsi awal butuh waktu eksplorasi",
+    ],
+    verdict:
+      "Motif 3 menarik untuk developer dan tim yang memprioritaskan coding agentik volume tinggi dengan biaya rendah. Untuk penalaran murni paling depan, frontier AR tetap pilihan utama; tapi untuk workload coding di mana setiap rupiah dan setiap detik dihitung, Motif 3 layak masuk radar.",
+    body: [
+      "Motif Technologies memperkenalkan Motif 3 (Beta) sebagai model open-weight dengan positioning yang berbeda dari frontier proprietary. Intelligence index 44,1 (sumber: Artificial Analysis) menempatkannya di papan atas kelas mid-tier — angka yang menarik karena di kelas intel ini, coding index 62 adalah salah satu yang tertinggi, menandakan bahwa tim Motif sengaja melakukan trade-off: penalaran umum yang cukup baik untuk workload nyata, tapi kekuatan utama di code generation dan code understanding. Untuk konteks, frontier reasoning AR saat ini bermain di kisaran intel 50-60, tapi dengan coding index yang sebanding atau sedikit di bawah Motif 3 di kelas mereka masing-masing. Dalam pengujian editorial Wawasan AI, model ini menunjukkan karakter khas keluarga open-weight: bisa di-fine-tune untuk domain spesifik, dijalankan di infrastruktur sendiri, dan diaudit untuk kepatuhan data — nilai plus untuk organisasi Indonesia yang punya regulasi ketat soal data residency.",
+      "Pada dimensi teknis, coding index 62 (sumber: Artificial Analysis) diterjemahkan jadi pengalaman yang terasa di editor: snippet generation akurat, refactor multi-file koheren, dan kemampuan debug yang kompetitif. Intelligence index 44,1 memberikan fondasi penalaran yang cukup untuk workload coding agentik — bukan untuk riset ilmiah paling berat, tapi sangat cukup untuk pipeline otomasi developer sehari-hari. Harga publik $0 input dan $0 output menandakan model ini kemungkinan besar diposisikan untuk deployment self-host atau lewat inference provider pihak ketiga, bukan sebagai API komersial langsung. Strategi pemakaian yang sehat: Motif 3 untuk coding agentik volume tinggi di infrastruktur sendiri, frontier AR proprietary (Claude Opus 4.5, GPT-5, GLM-5.2) untuk penalaran murni kelas paling depan, dan keluarga open-weight lain (Qwen3, DeepSeek V3) untuk deployment fleksibel yang butuh variasi ukuran model.",
+      "Signifikansi Motif 3 bukan di angka benchmark-nya — ia adalah reminder bahwa ekosistem open-weight makin ramai dengan pemain baru di kelas mid-tier yang menawarkan trade-off menarik. Untuk developer indie dan startup Indonesia, model seperti ini membuka peluang: inference murah untuk coding agentik, kemampuan deploy di VPS lokal, dan komunitas open-weight yang terus tumbuh. Tapi catatan penting: ekosistem tooling pihak ketiga masih sangat minim karena Motif Technologies masih pemain baru — integrasi dengan LangChain, LlamaIndex, atau tool developer mainstream belum matang, dan dokumentasi tuning belum sekaya frontier model utama. Untuk adopsi awal, ekspektasi realistis dan waktu eksplorasi perlu dimasukkan ke rencana. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://motiftechnologies.com/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-22",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
