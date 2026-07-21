@@ -1,0 +1,155 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-21T04:47:39.606Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "lidge-jun/opencodex",
+      "owner": "lidge-jun",
+      "repo": "opencodex",
+      "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "githubUrl": "https://github.com/lidge-jun/opencodex",
+      "trendshiftUrl": "https://trendshift.io/repositories/85670",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "Proxy"
+      ],
+      "dateCreated": "2026-06-18T23:03:18Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "ruvnet/RuView",
+      "owner": "ruvnet",
+      "repo": "RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "githubUrl": "https://github.com/ruvnet/RuView",
+      "trendshiftUrl": "https://trendshift.io/repositories/22266",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2025-06-07T04:32:30Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "tirth8205/code-review-graph",
+      "owner": "tirth8205",
+      "repo": "code-review-graph",
+      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+      "githubUrl": "https://github.com/tirth8205/code-review-graph",
+      "trendshiftUrl": "https://trendshift.io/repositories/23329",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-26T17:25:13Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "earendil-works/pi",
+      "owner": "earendil-works",
+      "repo": "pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "githubUrl": "https://github.com/earendil-works/pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15471",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-09T14:03:50Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "baidu/Unlimited-OCR",
+      "owner": "baidu",
+      "repo": "Unlimited-OCR",
+      "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+      "githubUrl": "https://github.com/baidu/Unlimited-OCR",
+      "trendshiftUrl": "https://trendshift.io/repositories/62053",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "Document processing"
+      ],
+      "dateCreated": "2026-06-18T08:40:15Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "chenglou/freerange",
+      "owner": "chenglou",
+      "repo": "freerange",
+      "description": "Static @fit checks for ordinary TypeScript layout code",
+      "githubUrl": "https://github.com/chenglou/freerange",
+      "trendshiftUrl": "https://trendshift.io/repositories/88633",
+      "language": "TypeScript",
+      "topics": [
+        "Static analysis"
+      ],
+      "dateCreated": "2026-04-17T17:00:31Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
+      "trendshiftUrl": "https://trendshift.io/repositories/23589",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Proxy"
+      ],
+      "dateCreated": "2026-02-13T12:38:31Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "Claude Code skill to stop it from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    }
+  ]
+}
