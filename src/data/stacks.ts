@@ -1834,6 +1834,48 @@ export const stacks: Review[] = [
     date: "2026-07-21",
     featured: false,
   },
+
+  {
+    slug: "cartesia",
+    name: "Cartesia",
+    tagline: "Voice AI real-time dengan model SSM ultra-low latency",
+    tags: ["Cartesia", "Freemium", "Voice/Audio", "Real-Time"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.9 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 8.7 },
+    ],
+    summary:
+      "Cartesia adalah platform voice AI real-time yang menggunakan arsitektur State Space Model (SSM) untuk mencapai latensi di bawah 100 milidetik pada text-to-speech dan speech-to-text streaming. Produk andalannya Sonic-3.5 mendukung 40+ bahasa dengan kontrol emosional yang lebih halus dari synthesizer konvensional, menjadikannya pilihan menarik untuk voice agent customer service, dubbing multibahasa, dan aplikasi interaktif yang tidak bisa menunggu jawaban model lain.",
+    pros: [
+      "Latensi streaming di bawah 100 ms berkat arsitektur State Space Model (SSM) yang menggantikan transformer untuk sequence processing — pertama kali SSM dipakai di production TTS skala komersial",
+      "Sonic-3.5 mendukung 40+ bahasa dengan satu model, kontrol emosi (senang, sedih, berbisik, tertawa), voice cloning 10 detik, dan intonasi natural yang konsisten lintas kalimat panjang",
+      "Pricing per-menit transparan dan murah: $0.06 per menit streaming atau $0.014 per menit dengan phoneme yang disediakan Cartesia — jauh di bawah ElevenLabs untuk use case conversational",
+      "Ekosistem developer matang: SDK Python, Node, Ruby, dan REST API WebSocket untuk streaming, lengkap dengan Playground interaktif dan Voice Agent template untuk Twilio, LiveKit, dan Pipecat",
+      "Three-pillar product (Sonic TTS, Ink STT, Agents orchestration) memberi jalan dari synthesis sampai voice agent end-to-end dalam satu vendor",
+    ],
+    cons: [
+      "Voice cloning butuh rekaman referensi yang lebih panjang dari ElevenLabs (10+ detik minimum, ideal 30+ detik) — kurang cocok untuk one-shot prototype",
+      "Voice library preset lebih sedikit dari ElevenLabs (ratusan vs ribuan), terutama untuk karakter Indonesia dan dialek Asia Tenggara — pengguna lokal sering perlu cloning atau fine-tune",
+      "Belum ada aplikasi mobile native untuk creation atau preview — workflow berkarya harus lewat web Playground atau integrasi custom, kurang nyaman untuk content creator non-teknis",
+      "Dokumentasi dan tutorial bahasa Indonesia masih minim; sebagian besar sample kode dan panduan menggunakan bahasa Inggris dan use case pasar Amerika Utara",
+    ],
+    verdict:
+      "Pilihan tepat untuk developer dan tim yang membangun voice agent real-time atau aplikasi multibahasa yang latency-sensitive. Cartesia mengambil posisi ElevenLabs di use case conversational; untuk voice library preset dan one-shot creative generation, ElevenLabs masih lebih beragam.",
+    body: [
+      "Sebagian besar platform text-to-speech yang populer di 2025—mulai dari ElevenLabs sampai OpenAI TTS—masih mengandalkan arsitektur transformer yang dirancang untuk memahami konteks panjang dengan biaya komputasi yang sebanding. Untuk voice AI real-time, transformer punya kelemahan struktural: setiap token audio yang dihasilkan harus menunggu seluruh context window diproses ulang, sehingga latency first-byte membengkak ke 300-800 milidetik. Cartesia, yang didirikan Karan Goel dan tim dari Stanford AI Lab pada 2023, mengambil pendekatan berbeda: mereka menggunakan State Space Model (SSM)—arsitektur yang juga dipakai Mamba—untuk merepresentasikan sequence audio sebagai continuous state yang bisa di-stream tanpa menunggu seluruh context. Hasilnya adalah latensi 80-120 milidetik untuk first audio chunk, cukup cepat untuk voice agent yang merespons dalam satu napas. Bagi pengguna yang terbiasa latency 500+ ms dari platform lain, perbedaannya terasa seperti transisi dari chatbot teks ke percakapan telepon.",
+      "Sonic-3.5, produk TTS andalan Cartesia, diluncurkan pada awal 2026 dengan tiga kemampuan utama yang jarang ada bersamaan di satu platform. Pertama, multilingual dalam satu model: 40+ bahasa termasuk Inggris, Spanyol, Prancis, Mandarin, Jepang, Korea, Arab, dan Indonesia dapat dicampur dalam satu sesi tanpa pergantian model atau endpoint. Kedua, kontrol emosional: parameter eksplisit untuk happy, sad, whisper, dan laugh, plus kontrol intonasi dan kecepatan yang lebih halus dari synthesizer konvensional. Ketiga, voice cloning dari sampel 10-30 detik—durasi minimum lebih panjang dari ElevenLabs yang menerima 1-3 detik, tapi hasil cloning lebih konsisten pada kalimat panjang dan saat model di-deploy ke volume tinggi. Untuk speech-to-text, Ink melengkapi Sonic dengan transkripsi real-time yang share arsitektur SSM, sehingga pipeline voice-in/voice-out punya latency end-to-end yang konsisten. Voice Agents, pilar ketiga, adalah orchestration layer yang menggabungkan Sonic, Ink, dan LLM pihak ketiga (Claude, GPT, atau model self-host) menjadi voice agent siap pakai dengan integrasi Twilio, LiveKit, Pipecat, dan Daily.",
+      "Pricing Cartesia disusun per menit audio dengan tiga tier prepaid agents: $5/bulan untuk 1 agent concurrent (cukup untuk eksperimen pribadi), $49/bulan untuk 10 agent concurrent (cocok untuk startup dengan bot customer service volume rendah), dan $299/bulan untuk 60 agent concurrent (skala enterprise). Streaming Sonic dihargai $0.06 per menit audio yang dihasilkan, atau turun ke $0.014 per menit jika menggunakan phoneme yang sudah di-cache oleh Cartesia—jauh di bawah ElevenLabs Creator ($22/bulan untuk 100.000 karakter) atau PlayHT untuk use case conversational. Free tier tersedia dengan kredit gratis untuk signup, plus Playground web yang bisa dipakai tanpa registrasi untuk eksperimen singkat. Bagi pengguna Indonesia, implikasi harganya langsung terasa: bot customer service yang melayani 1000 menit percakapan per bulan di Cartesia memakan biaya sekitar $60 (sekitar Rp 960 ribu), sementara di platform yang men-charge per-character, biaya yang sama bisa 5-10x lebih tinggi. Pembelian via kartu kredit internasional menambah charge sekitar 3-5% dari bank, tapi karena basis harga lebih murah, total cost of ownership tetap lebih rendah untuk use case volume.",
+      "Limitasi Cartesia ada di area yang memang bukan fokus utamanya. Voice cloning membutuhkan sampel referensi 10+ detik (ideal 30+ detik) dengan kualitas rekaman yang konsisten—ini lebih tinggi dari ElevenLabs yang menerima 1-3 detik, sehingga workflow one-shot prototype lebih lambat. Voice library preset, di sisi lain, hanya ratusan suara bawaan—jauh di bawah ribuan preset ElevenLabs—dan untuk karakter Indonesia atau dialek Asia Tenggara tertentu (Jawa, Sunda, Minang), pengguna biasanya perlu cloning atau fine-tune. Tidak ada aplikasi mobile native untuk creation atau preview; workflow berkarya harus lewat web Playground atau integrasi custom, yang kurang nyaman untuk content creator non-teknis yang terbiasa UI seperti ElevenLabs atau LMNT. Dokumentasi dan tutorial bahasa Indonesia masih minim, sebagian besar sample kode dan panduan menggunakan bahasa Inggris dan use case pasar Amerika Utara—developer pemula mungkin perlu menggabungkan dengan tutorial eksternal atau bertanya di komunitas Discord Cartesia. Kompetitor langsung antara lain ElevenLabs (lebih kaya fitur creative, library lebih besar, latency lebih tinggi), LMNT (voice cloning cepat, fokus creator, kurang orchestration), dan OpenAI TTS (model multimodal GPT-4o, kualitas bagus tapi latency lebih tinggi). Untuk aplikasi interaktif yang sensitif latency, dubbing multibahasa skala besar, atau voice agent production, Cartesia di 2026 adalah pilihan paling matang di kategori real-time voice AI.",
+    ],
+    link: "https://cartesia.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-22",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
