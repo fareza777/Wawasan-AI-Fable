@@ -1,17 +1,28 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "22 Juli 2026",
-  "period": {
-    "date": "2026-07-22",
-    "label": "22 Juli 2026",
-    "path": "/repo/daily/2026/07/22"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-22T00:09:04.004Z",
+  "fetchedAt": "2026-07-22T04:47:25.984Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
+    },
+    {
+      "rank": 2,
       "fullName": "bojieli/ai-agent-book",
       "owner": "bojieli",
       "repo": "ai-agent-book",
@@ -26,7 +37,7 @@
       "dateCreated": "2025-09-09T02:41:44Z"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "fullName": "koala73/worldmonitor",
       "owner": "koala73",
       "repo": "worldmonitor",
@@ -42,7 +53,7 @@
       "dateCreated": "2026-01-08T17:26:06Z"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "fullName": "lidge-jun/opencodex",
       "owner": "lidge-jun",
       "repo": "opencodex",
@@ -57,79 +68,21 @@
       "dateCreated": "2026-06-18T23:03:18Z"
     },
     {
-      "rank": 4,
-      "fullName": "block/buzz",
-      "owner": "block",
-      "repo": "buzz",
-      "description": "A hive mind communication platform",
-      "githubUrl": "https://github.com/block/buzz",
-      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "rank": 5,
+      "fullName": "marcelroed/gigatoken",
+      "owner": "marcelroed",
+      "repo": "gigatoken",
+      "description": "Language model tokenization at GB/s",
+      "githubUrl": "https://github.com/marcelroed/gigatoken",
+      "trendshiftUrl": "https://trendshift.io/repositories/89380",
       "language": "Rust",
       "topics": [
-        "AI agent",
-        "Self-hosted"
+        "NLP"
       ],
-      "dateCreated": "2026-03-06T21:00:56Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "diegosouzapw/OmniRoute",
-      "owner": "diegosouzapw",
-      "repo": "OmniRoute",
-      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
-      "trendshiftUrl": "https://trendshift.io/repositories/23589",
-      "language": "TypeScript",
-      "topics": [
-        "AI infrastructure",
-        "Proxy"
-      ],
-      "dateCreated": "2026-02-13T12:38:31Z"
+      "dateCreated": "2025-11-10T02:52:34Z"
     },
     {
       "rank": 6,
-      "fullName": "ruvnet/RuView",
-      "owner": "ruvnet",
-      "repo": "RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "githubUrl": "https://github.com/ruvnet/RuView",
-      "trendshiftUrl": "https://trendshift.io/repositories/22266",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2025-06-07T04:32:30Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "tirth8205/code-review-graph",
-      "owner": "tirth8205",
-      "repo": "code-review-graph",
-      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
-      "githubUrl": "https://github.com/tirth8205/code-review-graph",
-      "trendshiftUrl": "https://trendshift.io/repositories/23329",
-      "language": "Python",
-      "topics": [
-        "AI coding assistant",
-        "MCP"
-      ],
-      "dateCreated": "2026-02-26T17:25:13Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "earendil-works/pi",
-      "owner": "earendil-works",
-      "repo": "pi",
-      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-      "githubUrl": "https://github.com/earendil-works/pi",
-      "trendshiftUrl": "https://trendshift.io/repositories/15471",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2025-08-09T14:03:50Z"
-    },
-    {
-      "rank": 9,
       "fullName": "stablyai/orca",
       "owner": "stablyai",
       "repo": "orca",
@@ -144,19 +97,60 @@
       "dateCreated": "2026-03-17T03:28:57Z"
     },
     {
-      "rank": 10,
-      "fullName": "rohitg00/ai-engineering-from-scratch",
-      "owner": "rohitg00",
-      "repo": "ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "trendshiftUrl": "https://trendshift.io/repositories/24667",
-      "language": "Python",
+      "rank": 7,
+      "fullName": "kungfu-systems/kungfu",
+      "owner": "kungfu-systems",
+      "repo": "kungfu",
+      "description": "Continuity for Agent Work",
+      "githubUrl": "https://github.com/kungfu-systems/kungfu",
+      "trendshiftUrl": "https://trendshift.io/repositories/89666",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2017-11-15T06:54:01Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "earthtojake/text-to-cad",
+      "owner": "earthtojake",
+      "repo": "text-to-cad",
+      "description": "A collection of agent skills for CAD, robotics and hardware design",
+      "githubUrl": "https://github.com/earthtojake/text-to-cad",
+      "trendshiftUrl": "https://trendshift.io/repositories/26559",
+      "language": "JavaScript",
       "topics": [
         "AI agent",
-        "Programming examples"
+        "3D generation"
       ],
-      "dateCreated": "2026-03-18T18:38:02Z"
+      "dateCreated": "2026-04-22T01:09:45Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "earendil-works/pi",
+      "owner": "earendil-works",
+      "repo": "pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "githubUrl": "https://github.com/earendil-works/pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15471",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-09T14:03:50Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "Claude Code skill to stop it from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
     }
   ]
 }
