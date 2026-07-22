@@ -2179,6 +2179,71 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+  slug: "cara-instal-ollama-di-vps-dengan-mudah-2026",
+  title: "Menjalankan LLM Sendiri di VPS: Dari Nol sampai Bisa Chat dalam Satu Sesi",
+  excerpt:
+    "Pasang Ollama di VPS murah, hubungkan dari laptop, dan mulai mengobrol dengan model bahasa besar tanpa ketergantungan API pihak ketiga.",
+  category: "Tutorial",
+  date: "2026-07-23",
+  readingTime: "8 menit",
+  body: [
+    {
+      paragraphs: [
+        "Ada satu kelas pengguna AI yang sering tidak masuk radar percakapan populer: mereka yang sudah muak dengan API berbayar, atau yang tidak ingin datanya melewati server pihak ketiga, atau yang sekadar ingin membuktikan bahwa teknologi ini bisa dijalankan sendiri di infrastruktur yang mereka kontrol. Untuk mereka, jawabannya adalah VPS murah dan Ollama. Kombinasi yang, di akhir 2026, sudah cukup matang untuk menjadi alternatif nyata.",
+        "Pertanyaan yang lebih penting bukan lagi apakah Ollama bisa jalan di VPS. Ia jelas bisa, dengan RAM 8 GB dan koneksi internet standar. Pertanyaannya adalah bagaimana cara pasang yang benar, model apa yang sesuai untuk spek VPS entry-level, dan bagaimana cara mengaksesnya dengan nyaman dari laptop atau HP tanpa menjadi sysadmin dadakan. Tulisan ini membahas semuanya dengan asumsi pembaca belum pernah menyentuh server Linux sebelumnya.",
+      ],
+    },
+    {
+      heading: "Sebelum mulai: apa yang perlu disiapkan",
+      paragraphs: [
+        "Pertama, VPS dengan sistem operasi Ubuntu 22.04 atau 24.04 LTS. Hampir semua provider lokal dan global menawarkannya mulai dari Rp 50-100 ribu per bulan untuk paket 4-8 GB RAM. Yang penting bukan mereknya, tapi pastikan ada akses root via SSH dan port 22 tidak diblokir. Kalau provider memberiakses via panel web dengan terminal built-in, itu juga cukup untuk langkah pertama.",
+        "Kedua, koneksi internet yang stabil di sisi laptop. Akses ke VPS lewat SSH atau HTTP tidak butuh bandwidth besar, tapi latensi yang terlalu tinggi akan membuat setiap ketikan terasa berat. Untuk produksi, pertimbangkan provider yang punya PoP di Singapura atau Tokyo agar jarak dari Indonesia tidak menambah waktu tunggu yang tidak perlu.",
+        "Ketiga, ekspektasi yang realistis tentang apa yang bisa dijalankan. VPS RAM 8 GB cukup untuk model 7B dalam format Q4. Itu sudah sangat berguna untuk percakapan, ringkasan dokumen, dan draf email — bukan untuk hal berat seperti code generation kompleks atau penalaran panjang. Untuk workload itu, VPS 16-32 GB atau naik ke server dengan GPU adalah langkah berikutnya.",
+      ],
+    },
+    {
+      heading: "Langkah-langkah instalasi",
+      paragraphs: [
+        "Setelah berhasil login ke VPS lewat SSH, langkah pertama adalah memperbarui sistem: 'sudo apt update && sudo apt upgrade -y'. Ini memakan waktu beberapa menit dan memastikan semua paket pada versi terbaru. Langkah kedua, install Ollama via skrip resmi: 'curl -fsSL https://ollama.com/install.sh | sh'. Skrip ini mendeteksi arsitektur CPU secara otomatis dan menempatkan biner Ollama di lokasi standar '/usr/local/bin/ollama'.",
+        "Setelah instalasi selesai, Ollama secara default membuat service systemd yang berjalan otomatis setiap VPS reboot. Untuk memastikan, jalankan 'sudo systemctl status ollama' dan lihat apakah statusnya 'active (running)'. Kalau belum, aktifkan manual dengan 'sudo systemctl enable --now ollama'. Pada titik ini, Ollama sudah siap menerima permintaan.",
+        "Langkah ketiga, unduh model pertama. Untuk VPS RAM 8 GB, rekomendasi kami adalah 'ollama pull llama3.1:8b' atau 'ollama pull qwen2.5:7b'. Ukuran unduhan sekitar 4-5 GB, jadi pastikan koneksi VPS cukup cepat dan siapkan waktu 10-30 menit tergantung bandwidth. Setelah selesai, coba dengan 'ollama run llama3.1:8b' dan mulai mengobrol langsung dari terminal SSH.",
+      ],
+    },
+    {
+      heading: "Agar bisa diakses dari luar VPS",
+      paragraphs: [
+        "Secara default, Ollama hanya mendengarkan koneksi dari localhost. Untuk mengakses dari laptop atau HP, ada dua pilihan. Pilihan pertama dan paling sederhana: biarkan Ollama di localhost, lalu gunakan tunneling SSH. Dari laptop, jalankan 'ssh -L 11434:localhost:11434 user@vps-anda'. Sekarang localhost:11434 di laptop adalah proxy ke Ollama di VPS. Aplikasi apa pun yang mendukung Ollama secara lokal — termasuk Antares, Open WebUI, atau skrip Python — akan langsung terhubung.",
+        "Pilihan kedua: buka port 11434 ke internet. Edit konfigurasi Ollama di '/etc/systemd/system/ollama.service' dan tambahkan environment 'OLLAMA_HOST=0.0.0.0:11434'. Setelah 'sudo systemctl daemon-reload && sudo systemctl restart ollama', server menerima koneksi dari mana saja. Tapi opsi ini mengharuskan kita mengaktifkan firewall dan menambah autentikasi, karena tanpa itu siapa pun yang menemukan IP VPS kita bisa memakai model kita secara gratis.",
+        "Untuk pemakaian pribadi dari jaringan rumah, tunneling SSH adalah pilihan paling aman dan paling praktis. Tidak perlu konfigurasi firewall tambahan, tidak perlu autentikasi tambahan, dan lalu lintas selalu terenkripsi lewat SSH. Untuk pemakaian tim kecil di kantor, pertimbangkan Tailscale atau WireGuard agar tetap aman tanpa membuka port ke internet publik.",
+      ],
+    },
+    {
+      heading: "Antarmuka yang ramah untuk pengguna non-teknis",
+      paragraphs: [
+        "Terminal SSH memang praktis untuk sysadmin, tapi tidak nyaman untuk pengguna yang hanya ingin mengobrol. Solusinya adalah Open WebUI, antarmuka web yang mirip ChatGPT dan bisa dipasang di VPS yang sama. Instalasi lewat Docker cukup satu baris: 'docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name open-webui ghcr.io/open-webui/open-webui:main'. Sekarang buka 'http://IP-VPS:3000' dari browser dan kita dapat chat interface lengkap dengan riwayat percakapan, unggah dokumen, dan pemilihan model.",
+        "Untuk pengguna HP, aplikasi Antares (open source dari komunitas AI lokal Indonesia) bisa langsung menambahkan endpoint Ollama kustom di pengaturan. Setelah titik, mengobrol dengan model lokal dari HP terasa seperti memakai ChatGPT, tapi semua pemrosesan terjadi di server kita sendiri. Latensi tergantung jarak ke VPS dan kecepatan jaringan, tapi untuk model 7B dan pertanyaan pendek, respons biasanya datang dalam 1-3 detik.",
+        "Yang menarik dari setup ini adalah kemandiriannya. Tidak ada tagihan per token, tidak ada kekhawatiran data percakapan bocor ke vendor, dan tidak ada perubahan kebijakan penggunaan yang bisa membuat workflow tiba-tiba lumpuh. Untuk bisnis kecil, freelancer, atau tim yang menangani data sensitif, kombinasi VPS + Ollama + Open WebUI adalah fondasi yang sangat solid untuk AI privat.",
+      ],
+    },
+    {
+      heading: "Pertanyaan yang sering muncul",
+      paragraphs: [
+        "Pertama, apakah VPS RAM 4 GB cukup? Untuk model 3-4B, jawabnya ya. Untuk model 7B, akan terasa berat karena sebagian besar model akan di-swap ke disk. Untuk pengalaman yang lancar, RAM 8 GB adalah titik awal yang masuk akal, dan 16 GB untuk model 13B ke atas.",
+        "Kedua, bagaimana dengan biaya listrik dan bandwidth? VPS adalah sumber daya bersama, jadi tidak ada biaya listrik tambahan di pihak kita. Bandwidth juga termasuk dalam paket VPS — tapi perlu diingat, menarik model dari Ollama library mengunduh 4-5 GB satu kali, dan itu biasanya tidak dihitung sebagai bandwidth tambahan. Lalu lintas inference per percakapan sangat kecil, jadi tidak perlu khawatir soal kuota.",
+        "Ketiga, apakah ini benar-benar gratis setelah VPS? Ya, setelah VPS dibayar, tidak ada biaya lisensi atau API. Total biaya bulanan adalah harga VPS saja, yang untuk kelas 8 GB RAM berkisar Rp 100-200 ribu per bulan. Bandingkan dengan ChatGPT Plus seharga US$20 per bulan atau API GPT-4 yang bisa puluhan dolar per hari untuk pemakaian aktif — untuk pemakaian pribadi, VPS + Ollama adalah pilihan yang jauh lebih hemat.",
+      ],
+    },
+    {
+      heading: "Penutup: ekosistem AI lokal yang makin dewasa",
+      paragraphs: [
+        "Tahun 2026 adalah tahun di mana AI lokal berhenti menjadi mainan hobi dan mulai menjadi infrastruktur yang serius. Ollama, Open WebUI, Antares, dan sederet proyek open-source lain sudah cukup matang untuk dipakai sehari-hari oleh pengguna rumahan, freelancer, UMKM, dan tim kecil. Tidak ada lagi alasan untuk menunggu sampai semuanya sempurna — yang ada hanyalah keputusan untuk mulai dari mana.",
+        "Untuk pembaca yang baru pertama kali menyentuh server Linux, jalur yang disarankan: mulai dari VPS RAM 8 GB termurah, pasang Ollama, unduh satu model 7B, dan gunakan tunneling SSH untuk mengaksesnya dari laptop. Begitu nyaman dengan satu model, naik ke Open WebUI untuk pengalaman chat yang lebih ramah. Begitu yakin dengan infrastruktur, eksplor model yang lebih besar atau tambah tool seperti n8n untuk otomasi.",
+        "Yang perlu diingat sambil belajar: setiap VPS adalah eksperimen kecil. Snapshot sebelum perubahan besar, dokumentasikan setiap langkah, dan jangan ragu untuk Spin ulang kalau ada yang rusak. Server Linux terlihat menakutkan di awal, tapi begitu kita melewatinya, ketergantungan pada layanan pihak ketiga akan terasa makin mahal — bukan dalam rupiah, tapi dalam kontrol dan ketenangan pikiran. Itu nilai sebenarnya dari menjalankan AI sendiri.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
