@@ -2197,6 +2197,48 @@ export const models: Review[] = [
     date: "2026-07-22",
     featured: false,
   },
+  {
+    slug: "jt-35b-flash",
+    name: "JT-35B-Flash",
+    tagline: "Model cepat dari China Mobile — telco raksasa serius di AI lokal",
+    tags: ["China Mobile", "Proprietary", "Inference", "Enterprise"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 6.5 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 28.4,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-23",
+    summary:
+      "Model bahasa besar dari China Mobile, operator telekomunikasi terbesar di dunia. Intelligence index 28,4 (sumber: Artificial Analysis) menempatkan JT-35B-Flash di kelas mid-tier, dan positioning-nya jelas: fokus pada inference cepat dan deployment enterprise untuk pasar domestik China. Bukan model yang mengejar frontier, tapi calon pemain infrastruktur yang patut dipantau.",
+    pros: [
+      "Didukung China Mobile — operator telekomunikasi dengan infrastruktur data center dan jaringan terbesar di China",
+      "Pricing tidak dipublikasikan untuk pasar umum ($0 di AA API) — indikasi model ini diposisikan untuk klien enterprise dan integrasi internal",
+      "Branding 'Flash' menandakan fokus pada inference latensi rendah untuk workload real-time",
+      "Relevan untuk konteks regional Asia — bisa jadi pilihan bagi korporasi multinasional yang beroperasi lintas China dan ASEAN",
+    ],
+    cons: [
+      "Intelligence index 28,4 (sumber: Artificial Analysis) jauh di bawah frontier AR (Claude Opus 4.5 43,1, GPT-5 44,6, GLM-5.2 51,1) — tidak suitable untuk penalaran berat",
+      "Akses publik terbatas — tidak tersedia lewat API komersial umum, sulit diuji independen dari luar China",
+      "Dokumentasi dan paper teknis sangat minim di luar kanal resmi China Mobile — sulit dievaluasi secara transparan",
+      "Coding index tidak tersedia di benchmark AA publik — perlu eksplorasi manual untuk menilai kemampuan agentik",
+    ],
+    verdict:
+      "JT-35B-Flash menarik sebagai sinyal strategi: operator telekomunikasi raksasa China serius masuk ke arena AI model. Untuk pemakaian di Indonesia saat ini, belum ada jalur akses publik yang jelas — pantau saja pergerakannya.",
+    body: [
+      "China Mobile memperkenalkan JT-35B-Flash sebagai bagian dari strategi AI mereka yang lebih luas — operator telekomunikasi dengan 900+ juta pelanggan dan infrastruktur data center sendiri punya keunggulan spesifik: akses ke data traffic, lokasi edge, dan kemampuan deployment pada skala yang tidak dimiliki startup AI murni. Intelligence index 28,4 (sumber: Artificial Analysis) menempatkannya di papan tengah kelas mid-tier, angka yang realistis untuk model yang belum lama masuk benchmark publik.",
+      "Dalam konteks industri AI global, kemunculan operator telekomunikasi sebagai pemain model adalah tren yang menarik. Mereka tidak mengejar frontier penalaran — mereka mengejar workload inference skala besar dengan biaya inference rendah, terutama untuk kasus use case enterprise mereka sendiri: customer service otomatis, analisis data internal, dan integrasi dengan layanan telekomunikasi. Strategi ini mirip dengan yang dilakukan pemain cloud hyperscaler: model AI sebagai layanan nilai tambah di atas infrastruktur yang sudah ada. (Sumber: Artificial Analysis.)",
+      "Untuk pembaca Indonesia, implikasi langsungnya belum terasa: akses publik ke JT-35B-Flash sangat terbatas di luar China, dan harga komersial tidak dipublikasikan. Tapi sebagai sinyal pasar, kemunculan model seperti ini adalah reminder bahwa arena AI global makin ramai — bukan hanya startup dan lab riset, tapi juga perusahaan infrastruktur besar. Pantau pergerakannya, dan siapkan strategi untuk kapan model dari pemain telco ini mulai tersedia untuk pasar regional Asia.",
+    ],
+    link: "https://www.chinamobileltd.com/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-23",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
