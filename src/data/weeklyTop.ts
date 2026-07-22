@@ -1233,7 +1233,38 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                                                                                       "Setup sekali jalan dengan `npx wigolo init --agents=claude-code,cursor` menulis konfigurasi MCP dan instruksi untuk tiap agent sekaligus, plus `npx wigolo doctor` untuk health check — public beta, AGPL-3.0, relevan untuk tim Indonesia yang ingin hemat biaya API search/fetch untuk agent mereka.",
                                                                                                                     ],
                                                                                                                   },
-                                                                                                                  };
+                                                                                                                  
+  "koala73/worldmonitor": {
+    description:
+      "Dashboard intelijen global real-time — agregasi 500+ feed berita dengan AI, pemantauan geopolitik, dan pelacakan infrastruktur dalam satu antarmuka situational awareness (68k+ bintang).",
+    highlights: [
+      "500+ feed berita terkurasi lintas 15 kategori yang di-sintesis jadi brief oleh AI — bukan timeline mentah, melainkan ringkasan korelasi lintas sumber yang bisa ditindaklanjuti analis.",
+      "Dual map engine: globe 3D (globe.gl) + WebGL flat map (deck.gl) dengan 56 layer tipe — pantau militer, ekonomi, bencana, dan sinyal eskalasi dari satu viewport.",
+      "Country Instability Index (CII) v8 untuk 31 negara Tier-1 plus finance radar 29 bursa, komoditas, dan kripto — angka bukan headline, melainkan skor stres server-authoritative untuk trading dan riset.",
+      "Bisa dijalankan lokal sepenuhnya lewat Ollama (no API key, no cloud) dan hadir sebagai desktop app native Tauri 2 untuk macOS/Windows/Linux — alternatif open-source dari dashboard intelijen komersial yang biasanya mahal.",
+    ],
+  },
+  "vnpy/vnpy": {
+    description:
+      "Framework Python open-source VeighNa untuk quantitative trading (43k+ bintang) — dibangun trader untuk trader, kini punya modul AI/ML khusus untuk strategi kuantitatif.",
+    highlights: [
+      "Platform quant trading terlengkap di komunitas Tionghoa dan kini go-international: multi-broker, multi-pasar (saham, futures, opsi, forex, crypto), backtest engine, dan live trading dalam satu framework Python.",
+      "Modul vnpy.alpha 4.0 yang rilis di hari jadi ke-10 VeighNa: dataset multi-faktor ML, fitur expression engine untuk rekayasa fitur cepat, dan pipeline end-to-end dari training sampai deployment strategi ke live trading.",
+      "Arsitektur modular yang extensibel lewat add-on resmi (risk management, portfolio optimization, data recorder, strategy template) — strategi ditulis sebagai kelas Python yang bisa diuji dan di-deploy konsisten.",
+      "Lisensi MIT dan komunitas aktif 10+ tahun di vnpy.com plus forum resmi — relevan untuk quant trader Indonesia yang ingin bangun infrastruktur trading sendiri tanpa langganan Bloomberg/QuantConnect.",
+    ],
+  },
+  "earthtojake/text-to-cad": {
+    description:
+      "Pustaka skill agen AI khusus CAD, robotika, dan hardware design — generate, inspect, dan export model 3D dari bahasa natural atau gambar, mendukung STEP, STL, 3MF, URDF, dan SDF.",
+    highlights: [
+      "Koleksi skill agen AI yang fokus ke engineering fisik: CAD modeling dari teks/gambar, viewer lokal browser untuk preview, sourcing part STEP off-the-shelf, DXF drawing, dan robot description URDF/SDF/SRDF.",
+      "Output real engineering format — STEP sebagai format utama plus STL, 3MF, GLB; bukan mesh hasil tebakan, melainkan file yang siap dimasukkan ke Fusion 360, FreeCAD, atau simulator robot (Gazebo, MuJoCo).",
+      "Workflow agentik yang bisa dipasang ke Claude Code atau coding agent lain — agent bisa generate bracket, gear housing, atau link robot dari prompt bahasa natural dan langsung export ke file CAD beneran.",
+      "Open source (MIT) dan bagian dari tren 'engineering AI agents' yang lagi naik — relevan untuk maker, insinyur hardware, dan robotics engineer yang ingin asisten AI-nya menghasilkan geometri siap fabrikasi.",
+    ],
+  },
+};
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
