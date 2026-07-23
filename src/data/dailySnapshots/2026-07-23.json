@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "23 Juli 2026",
+  "period": {
+    "date": "2026-07-23",
+    "label": "23 Juli 2026",
+    "path": "/repo/daily/2026/07/23"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-23T00:07:00.687Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "koala73/worldmonitor",
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "githubUrl": "https://github.com/koala73/worldmonitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/20793",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM",
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-08T17:26:06Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "lidge-jun/opencodex",
+      "owner": "lidge-jun",
+      "repo": "opencodex",
+      "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "githubUrl": "https://github.com/lidge-jun/opencodex",
+      "trendshiftUrl": "https://trendshift.io/repositories/85670",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "Proxy"
+      ],
+      "dateCreated": "2026-06-18T23:03:18Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "marcelroed/gigatoken",
+      "owner": "marcelroed",
+      "repo": "gigatoken",
+      "description": "Language model tokenization at GB/s",
+      "githubUrl": "https://github.com/marcelroed/gigatoken",
+      "trendshiftUrl": "https://trendshift.io/repositories/89380",
+      "language": "Rust",
+      "topics": [
+        "NLP"
+      ],
+      "dateCreated": "2025-11-10T02:52:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "earthtojake/text-to-cad",
+      "owner": "earthtojake",
+      "repo": "text-to-cad",
+      "description": "A collection of agent skills for CAD, robotics and hardware design",
+      "githubUrl": "https://github.com/earthtojake/text-to-cad",
+      "trendshiftUrl": "https://trendshift.io/repositories/26559",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "3D generation"
+      ],
+      "dateCreated": "2026-04-22T01:09:45Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "vnpy/vnpy",
+      "owner": "vnpy",
+      "repo": "vnpy",
+      "description": "基于Python的开源量化交易平台开发框架",
+      "githubUrl": "https://github.com/vnpy/vnpy",
+      "trendshiftUrl": "https://trendshift.io/repositories/11906",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2015-03-02T03:36:58Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "earendil-works/pi",
+      "owner": "earendil-works",
+      "repo": "pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "githubUrl": "https://github.com/earendil-works/pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15471",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-09T14:03:50Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "pireel/pireel",
+      "owner": "pireel",
+      "repo": "pireel",
+      "description": "Open-source, backend-free AI video editor for talking-head video — storyboarding, designed graphics, kinetic captions, themes and in-browser WebCodecs export. Drivable by any AI agent over MCP.",
+      "githubUrl": "https://github.com/pireel/pireel",
+      "trendshiftUrl": "https://trendshift.io/repositories/89802",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-07-20T09:34:24Z"
+    }
+  ]
+}

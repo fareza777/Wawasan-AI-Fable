@@ -1876,6 +1876,48 @@ export const stacks: Review[] = [
     date: "2026-07-22",
     featured: false,
   },
+{
+    slug: "bubble-ai",
+    name: "Bubble AI",
+    tagline: "No-code platform veteran yang sekarang punya AI page builder native",
+    tags: ["Bubble", "Freemium", "No-Code/Low-Code", "Web App"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Bubble sudah lebih dari satu dekade jadi platform no-code paling matang untuk aplikasi web interaktif; integrasi AI terbaru (AI Page Builder, AI Workflow, dan AI Text Generator) menambah lapisan generatif di atas visual editor yang sudah teruji. Untuk founder dan tim kecil yang ingin ship MVP tanpa hire engineer full-stack, Bubble AI 2026 adalah titik masuk paling realistis di pasar.",
+    pros: [
+      "Visual editor WYSIWYG paling matang di kategori no-code — drag-and-drop, responsive preview, dan conditional logic yang konsisten selama bertahun-tahun",
+      "AI Page Builder terbaru bisa generate layout dari prompt teks, mengurangi waktu scaffolding dari berjam-jam menjadi beberapa menit untuk halaman standar",
+      "Database built-in, user management, payment integration, dan API connector sudah tersedia tanpa setup tambahan — ekosistem plugin marketplace mendukung ribuan integrasi",
+      "Self-hostable workflow logic lewat backend workflows yang berjalan server-side, bukan cuma client-side script — penting untuk aplikasi production",
+      "Komunitas global aktif (forum, Bubble Studio YouTube, template marketplace) dan dokumentasi bahasa Inggris paling lengkap di kelasnya",
+    ],
+    cons: [
+      "Harga berbayar relatif tinggi untuk pasar Indonesia — paket Starter USD 32/bulan, Growth USD 129/bulan, dan tier enterprise di atas USD 500/bulan, total Rp 500 ribu sampai Rp 8 juta per bulan dengan kurs Rp 16 ribu per dolar",
+      "Kurva belajar Bubble tetap lebih tinggi dari Webflow, Wix, atau Squarespace — konsep workflow, database, dan conditional logic perlu waktu untuk dipahami",
+      "Vendor lock-in nyata: aplikasi yang dibangun di Bubble sulit dimigrasi keluar, jadi keputusan pakai Bubble perlu pertimbangan jangka panjang, bukan eksperimen singkat",
+      "Performa aplikasi skala besar dengan banyak record database bisa lambat tanpa optimasi arsitektur — bukan pilihan tepat untuk aplikasi dengan traffic e-commerce tier atas",
+      "Dokumentasi dan tutorial bahasa Indonesia masih minim; komunitas lokal biasanya belajar lewat forum berbahasa Inggris atau konten kreator independen",
+    ],
+    verdict:
+      "Pilihan solid untuk MVP dan aplikasi web interaktif tanpa engineer full-stack, terutama founder Indonesia yang ingin validasi ide bisnis dengan cepat; untuk traffic tinggi atau kebutuhan custom kompleks, perlu tim Bubble specialist atau transisi ke stack konvensional.",
+    body: [
+      "Bubble lahir pada 2012 sebagai salah satu pionir platform no-code untuk aplikasi web interaktif, dan selama lebih dari satu dekade ia konsisten membangun tiga hal yang jarang ada bersamaan di satu platform: visual editor WYSIWYG yang matang, database built-in relasional, dan backend workflows yang berjalan server-side. Visual editor-nya memungkinkan siapa pun dengan pemahaman logika bisnis dasar untuk men-drag komponen, mengatur conditional visibility, dan menyusun halaman responsif tanpa menulis HTML atau CSS. Database bawaan Bubble menyimpan record dengan tipe custom yang bisa direlasikan satu sama lain — fitur yang biasanya butuh Postgres + backend API + ORM di stack konvensional. Backend workflows memungkinkan scheduling, API call ke service eksternal, dan otomasi yang berjalan di server, bukan di browser — pembeda penting dari banyak platform no-code lain yang masih client-side only.",
+      "Integrasi AI di Bubble datang dalam tiga lapis yang relevan untuk pengguna 2026. Pertama, AI Page Builder adalah fitur terbaru (umum 2025-2026) yang menerima prompt teks seperti 'buat landing page untuk SaaS analytics dengan hero, fitur, testimonial, dan CTA' dan menghasilkan layout awal yang bisa langsung diedit. Untuk founder yang stuck di blank canvas, ini memotong waktu scaffolding dari 2-4 jam menjadi 5-10 menit. Kedua, AI Text Generator membantu mengisi konten placeholder di seluruh aplikasi dengan tone yang konsisten, berguna untuk aplikasi multi-halaman yang butuh copy di puluhan tempat. Ketiga, AI Workflow (atau AI Connector) menyederhanakan integrasi ke API eksternal dengan auto-mapping field, mengurangi kerja manual setup API call. Fitur-fitur ini tidak membuat Bubble menjadi platform AI-native seperti Cursor atau Bolt, tapi menambah lapisan generatif yang mempercepat iterasi di atas fondasi visual editor yang sudah kuat.",
+      "Pricing Bubble disusun per tier dengan unit kerja yang disebut workload units — semacam kredit komputasi yang membatasi jumlah eksekusi workflow dan API call per bulan. Free tier tersedia tanpa kartu kredit, cocok untuk eksperimen dan demo, dengan subdomain bubbleapps.io dan branding Bubble. Starter seharga USD 32 per bulan menghapus branding dan membuka custom domain, plus workload units yang lebih besar. Growth seharga USD 129 per bulan menambah kolaborasi tim, versi kontrol, dan workload units yang cukup untuk aplikasi production skala kecil-menengah. Enterprise tier di atas USD 500 per bulan menambah SLA, dedicated infrastructure, dan workload units tanpa batas praktis. Dengan kurs Rp 16 ribu per dolar, Starter jadi sekitar Rp 512 ribu per bulan, Growth sekitar Rp 2,06 juta per bulan, dan tier enterprise mulai Rp 8 juta per bulan — angka yang signifikan untuk founder Indonesia yang baru memulai, tapi kompetitif jika dibandingkan gaji engineer full-time.",
+      "Untuk pengguna Indonesia, kekuatan Bubble ada di kemampuannya menutup gap founder non-teknis yang punya ide bisnis tapi tidak bisa hire engineer. Kasus penggunaan yang realistis: MVP untuk investor pitch dalam 2-4 minggu, internal tools untuk otomasi proses bisnis UMKM, marketplace sederhana dengan payment gateway Midtrans atau Xendit, dan aplikasi membership atau course platform. Komunitas developer Bubble Indonesia ada di Telegram dan Discord, biasanya terdiri dari freelancer dan studio kecil yang berspesialisasi membangun aplikasi Bubble untuk klien. Trade-off utama yang perlu dipertimbangkan: vendor lock-in (aplikasi yang dibangun di Bubble sulit dimigrasi keluar tanpa rewrite besar), performa untuk traffic tinggi (tidak cocok untuk e-commerce tier atas atau aplikasi dengan ribuan concurrent user), dan kurva belajar yang tetap ada meskipun sudah ada AI Page Builder — konsep seperti database schema, workflow conditionals, dan expression masih perlu dipahami untuk hasil maksimal. Kompetitor langsung antara lain Webflow (fokus site, kurang interaktif), Softr (lebih murah, dibangun di atas Airtable, kurang powerful), FlutterFlow (mobile-first), dan Glide (mobile-first dari spreadsheet). Untuk founder Indonesia di 2026 yang serius dengan produk web interaktif tanpa tim engineer, Bubble AI adalah pilihan paling pragmatis.",
+    ],
+    link: "https://bubble.io/ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-23",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
