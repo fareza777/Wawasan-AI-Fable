@@ -1264,6 +1264,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Open source (MIT) dan bagian dari tren 'engineering AI agents' yang lagi naik — relevan untuk maker, insinyur hardware, dan robotics engineer yang ingin asisten AI-nya menghasilkan geometri siap fabrikasi.",
     ],
   },
+  "petergyang/no-ai-slop": {
+    description:
+      "Skill anti-AI-slop dari Peter Gyang untuk Claude Code, Codex, dan agen lain — mendeteksi 20+ pola tulisan generik dan menulis ulang draf dengan edit seminimal mungkin, plus laporan 'apa yang berubah'.",
+    highlights: [
+      "Pasang ke Claude Code, Codex, atau agen lain lewat perintah natural — setiap draf yang di-paste lewat /no-ai-slop otomatis dipindai untuk 20+ pola khas tulisan AI (binary contrasts, throat-clearing openers, faux-insight setups, importance puffery, synonym cycling, dan lain-lain).",
+      "Pendekatan 'minimum effective edit': skill ini tidak menulis ulang dari nol, melainkan memperbaiki kalimat yang teridentifikasi bermasalah dan melaporkan apa yang berubah — sehingga gaya personal penulis tidak hilang hanya karena ingin menghilangkan bau AI.",
+      "Mode deteksi terpisah lewat /no-ai-slop is this AI slop? — menghasilkan daftar pola yang ditemukan beserta kutipan per baris, berguna untuk audit sebelum submit atau publish tulisan panjang.",
+      "Dilengkapi eval.md yang berisi pass/fail check yang dijalankan skill terhadap edit-nya sendiri (self-evaluation) — bagian dari personal AI operating system kreatornya, relevan untuk penulis, jurnalis, dan content creator Indonesia yang ingin kualitas tulisan tetap terjaga di era AI.",
+    ],
+  },
+  "block/buzz": {
+    description:
+      "Workspace self-hostable dari Block (Rust) tempat manusia dan agen AI berbagi 'ruang' yang sama lewat Nostr relay — patch kode, review, dan workflow hidup berdampingan sebagai event log dengan tanda tangan kriptografis.",
+    highlights: [
+      "Arsitektur unik: Buzz adalah Nostr relay yang diperlakukan sebagai team workspace — setiap pesan, reaksi, patch, review, dan workflow step adalah event tertandatangani satu log, audit trail seragam apakah aktornya manusia atau agen.",
+      "Agen diperlakukan sebagai anggota tim sejati (bukan bot tempelan): punya keypair sendiri, keanggotaan channel sendiri, jejak audit sendiri — dibanding model 'permission flag', scoping lewat identitas sehingga serangan privilege escalation lebih kecil.",
+      "Fitur konkret yang membedakan: branch jadi ruang berisi patch + CI + review + keputusan merge, voice huddle antar agen dan manusia, canvas kolaboratif, plus orkestrasi agen di dalam channel yang sama.",
+      "Open source (Apache 2.0), ditulis Rust, self-hostable relay sehingga data tim tidak keluar ke cloud Block — relevan untuk founder dan tech lead Indonesia yang ingin workspace AI-augmented dengan privasi dan kontrol penuh.",
+    ],
+  },
 };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
