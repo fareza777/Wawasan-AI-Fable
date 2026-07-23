@@ -2239,6 +2239,49 @@ export const models: Review[] = [
     date: "2026-07-23",
     featured: false,
   },
+  {
+    slug: "inkling",
+    name: "Inkling",
+    tagline: "Open-weights debut Thinking Machines — fleksibel, bisa di-host sendiri",
+    tags: ["Thinking Machines", "Open Weight", "Inference", "Self-host"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 8.3 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 40.7,
+    aa_coding_index: 52.1,
+    aa_price_input: 1.87,
+    aa_price_output: 4.68,
+    aa_synced_at: "2026-07-24",
+    summary:
+      "Model open-weights pertama dari Thinking Machines, lab AI yang didirikan oleh Mira Murati setelah hengkang dari OpenAI. Intelligence index 40,7 dan coding index 52,1 (sumber: Artificial Analysis) menempatkannya di papan atas kelas menengah atas — dan yang menarik adalah arsitekturnya: dirancang agar bisa di-host sendiri dengan biaya inference jauh di bawah frontier proprietary.",
+    pros: [
+      "Open-weights — bisa di-download dan di-host sendiri, tanpa bergantung pada vendor",
+      "Coding index 52,1 (sumber: Artificial Analysis) di atas rata-rata industri untuk kelas menengah",
+      "Harga referensi API $1,87 per 1 juta token input dan $4,68 per 1 juta token output — kompetitif untuk kualitas yang ditawarkan",
+      "Didukung lab dengan rekam jejak kuat (tim ex-OpenAI) — rilis-riset arsitektur terbuka",
+    ],
+    cons: [
+      "Intelligence index 40,7 (sumber: Artificial Analysis) masih di bawah frontier AR (Claude Opus 4.5 43,1, GPT-5 44,6, Gemini 3 57,2) — bukan model penalaran kelas atas",
+      "Self-hosting butuh investasi infrastruktur GPU — TCO nyata tidak selalu lebih murah dari API frontier",
+      "Komunitas dan tooling pihak ketiga masih sangat baru — sedikit integrasi siap pakai dibanding model proprietary besar",
+      "Dokumentasi dan benchmark publik masih berkembang — perlu eksplorasi sendiri untuk menilai kekuatan penuh",
+    ],
+    verdict:
+      "Inkling menarik untuk tim yang mengutamakan kontrol data dan kustomisasi model. Untuk pemakaian sehari-hari di Indonesia, API-nya cukup kompetitif, tapi untuk penalaran berat frontier proprietary masih unggul.",
+    body: [
+      "Thinking Machines resmi merilis Inkling sebagai open-weights model pertama mereka — sebuah langkah yang sudah lama dinanti komunitas AI sejak lab ini didirikan tahun 2024. Intelligence index 40,7 dan coding index 52,1 (sumber: Artificial Analysis) menempatkan Inkling di papan atas kelas menengah: di atas model open-weight lain yang lebih kecil, tapi belum menyamai frontier proprietary seperti Claude Opus 4.5 atau GPT-5 untuk tugas penalaran terberat.",
+      "Yang membedakan Inkling dari rilis open-weight lain adalah arsitekturnya yang dirancang untuk deployment fleksibel. Banyak model open-weight mengorbankan biaya inference untuk menjaga bobot yang bisa di-download; Inkling mendekati kompromi yang lebih seimbang, dan pada benchmark AA kecepatan throughput 56,5 token per detik masih dalam kisaran yang sehat untuk workload batch maupun interaktif. (Sumber: Artificial Analysis.)",
+      "Untuk pembaca Indonesia, model ini relevan terutama bagi tim teknis yang ingin hosting sendiri karena alasan kepatuhan data, atau bagi developer yang bereksperimen dengan fine-tuning tanpa terikat kontrak vendor. Untuk pemakaian umum, API-nya yang dipatok $1,87 per 1 juta token input adalah angka yang sangat masuk akal dibanding frontier proprietary. Layak dicoba, terutama untuk workflow coding dan otomasi internal.",
+    ],
+    link: "https://thinkingmachines.ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-24",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
