@@ -2594,6 +2594,55 @@ export const repos: Review[] = [
   updatedAt: "2026-07-22",
   featured: false,
 },
+
+{
+  slug: "hello-agents",
+  name: "Hello-Agents",
+  tagline: "Buku tutorial terbuka berbahasa Mandarin untuk membangun agent AI dari nol",
+  tags: ["AI Agent", "Tutorial", "Open Source", "Edukasi"],
+  score: 8.6,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 9.0 },
+    { label: "Kesiapan Produksi", value: 7.5 },
+  ],
+  summary:
+    "Hello-Agents adalah buku tutorial terbuka dari komunitas Datawhale yang memandu pembaca membangun agent AI dari fondasi teori hingga implementasi nyata. Mencakup 16 bab dari konsep dasar LLM, paradigma ReAct dan Plan-and-Solve, framework AutoGen serta LangGraph, hingga kasus multi-agent untuk travel assistant dan cyber town.",
+  highlights: [
+    "Kurikulum 16 bab yang terstruktur dari konsep dasar LLM, sejarah agent, hingga kasus multi-agent kompleks seperti travel assistant dan cyber town - salah satu buku agent terlengkap di open-source",
+    "Membahas paradigma klasik agent secara hands-on: ReAct, Plan-and-Solve, Reflection - pembaca tidak hanya membaca teori tapi juga implementasi kode Python langkah demi langkah",
+    "Coverage framework populer seperti AutoGen, AgentScope, dan LangGraph dengan contoh kode nyata, sehingga pembaca bisa membandingkan pendekatan dan memilih yang sesuai kasus penggunaan",
+    "Topik lanjutan yang jarang dibahas di tutorial lain: context engineering, memory system, protokol MCP dan A2A, serta Agentic RL dari SFT hingga GRPO untuk training model agentik",
+    "Bab khusus tentang evaluasi agent, benchmark, dan persiapan wawancara kerja di bidang agent - sangat berguna bagi pelajar Indonesia yang ingin berkarier sebagai AI engineer",
+    "Akses baca online gratis lewat dua mirror (GitHub Pages internasional dan mirror domestik China), plus repo GitHub yang aktif menerima kontribusi komunitas",
+    "Lisensi terbuka dengan lebih dari 68 ribu bintang dan 8 ribu fork di GitHub, menjadikannya salah satu sumber belajar agent paling ramai di komunitas Asia Timur",
+  ],
+  pros: [
+    "Menyediakan kurikulum agent yang terstruktur dari nol hingga mahir, sangat berguna bagi pelajar dan engineer Indonesia yang ingin masuk ke bidang agentic AI tanpa harus mengikuti kursus berbayar",
+    "Pendekatan teori-plus-praktik yang seimbang - pembaca tidak hanya belajar apa itu ReAct atau Plan-and-Solve, tapi juga langsung mengimplementasikannya dalam kode Python yang bisa dijalankan",
+    "Coverage luas dari low-code (Coze, Dify, n8n) hingga framework kode (AutoGen, LangGraph), membantu pembaca memilih stack yang sesuai dengan kebutuhan tim dan kompleksitas proyek",
+  ],
+  cons: [
+    "Bahasa pengantar utama adalah Mandarin, sehingga pembaca yang tidak fasih perlu bergantung pada terjemahan otomatis atau menunggu kontribusi terjemahan Inggris yang belum merangkut semua bab",
+    "Lebih bersifat materi belajar daripada framework siap-pakai - tim yang ingin langsung deploy agent ke produksi perlu menulis kode sendiri atau mengintegrasikan komponen tambahan di luar cakupan buku",
+    "Topik lanjutan seperti Agentic RL dan fine-tuning model untuk agent memerlukan pemahaman mendalam tentang training LLM, sehingga bukan titik masuk yang cocok untuk pemula absolut di machine learning",
+  ],
+  verdict:
+    "Salah satu sumber belajar agent AI paling komprehensif di ekosistem open-source saat ini, terutama bagi pembaca yang nyaman dengan bahasa Mandarin atau menggunakan terjemahan. Sangat layak dijajaki oleh pelajar, dosen, dan engineer Indonesia yang ingin memahami agent dari fondasi hingga implementasi multi-agent.",
+  body: [
+    "Agent AI menjadi salah satu kata paling ramai di 2025 dan 2026. Setelah era large language model yang didominasi lomba melatih model lebih besar, fokus komunitas bergeser ke arah membangun aplikasi yang benar-benar bisa bertindak atas nama pengguna - memesan tiket, menelusuri database, menulis kode, hingga berkolaborasi dengan agent lain. Di tengah ledakan framework seperti LangGraph, AutoGen, dan CrewAI, muncul kebutuhan akan materi pembelajaran yang menyatukan teori, praktik, dan peta pilihan teknologi. Hello-Agents dari komunitas Datawhale menjawab kebutuhan itu dengan format buku tutorial terbuka yang sangat terstruktur: 16 bab yang mencakup konsep dasar LLM, sejarah agent dari simbolik hingga LLM-driven, hingga implementasi multi-agent untuk kasus kompleks seperti travel assistant dan cyber town.",
+    "Yang membuat Hello-Agents berbeda dari sekadar daftar tutorial di Medium atau YouTube adalah pendekatannya yang teori-plus-praktek secara seimbang. Setiap paradigma agent klasik - ReAct, Plan-and-Solve, Reflection - tidak hanya dijelaskan secara konseptual, tapi juga diimplementasikan dalam kode Python langkah demi langkah. Pembaca diajak menulis agent dari nol menggunakan API OpenAI native, lalu secara bertahap menggunakan framework populer seperti AutoGen, AgentScope, dan LangGraph untuk kasus yang lebih kompleks. Pendekatan ini membantu pembaca memahami trade-off: kapan cukup dengan loop ReAct sederhana, kapan butuh orkestrasi AutoGen, dan kapan LangGraph dengan state management eksplisit menjadi pilihan yang lebih tepat.",
+    "Dalam pengujian editorial Wawasan AI, kekuatan terbesar Hello-Agents terletak pada kurikulum yang membentang dari tingkat pemula hingga lanjut. Bab awal membahas Transformer, prompting, dan limitasi LLM yang menjadi fondasi penting sebelum masuk ke chapter agent. Bab pertengahan membahas framework mainstream dan cara membangun framework sendiri dari nol - sangat berguna bagi pembaca Indonesia yang ingin memahami apa yang terjadi di balik layar library yang mereka pakai. Bab akhir membahas topik yang jarang disentuh tutorial lain: context engineering, sistem memori, protokol komunikasi agent seperti MCP dan A2A, serta Agentic RL untuk training model agentik dari SFT hingga GRPO. Ada juga bab evaluasi agent dan persiapan wawancara kerja, yang sangat relevan bagi pelajar Indonesia yang mengejar karier di bidang AI.",
+    "Bukan berarti tanpa kompromi. Bahasa pengantar utama buku ini adalah Mandarin, dengan terjemahan Inggris yang masih belum merangkut seluruh bab terbaru. Pembaca Indonesia yang tidak fasih Mandarin perlu mengandalkan terjemahan otomatis untuk bagian yang belum di-translate, atau menunggu kontribusi komunitas. Selain itu, Hello-Agents adalah materi belajar, bukan framework siap-pakai - tim yang ingin langsung deploy agent ke produksi masih perlu menulis kode integrasi sendiri atau melengkapi dengan komponen di luar cakupan buku, seperti vector database, observability, dan deployment infrastructure. Topik lanjutan seperti Agentic RL juga memerlukan pemahaman mendalam tentang training LLM, sehingga bukan titik masuk yang cocok untuk pemula absolut di machine learning. Namun untuk siapa pun yang ingin memahami agent AI dari fondasi hingga implementasi multi-agent, Hello-Agents adalah salah satu sumber belajar paling komprehensif yang tersedia secara terbuka saat ini.",
+  ],
+  link: "https://github.com/datawhalechina/hello-agents",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-24",
+  updatedAt: "2026-07-24",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
