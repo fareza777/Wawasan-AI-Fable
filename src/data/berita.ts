@@ -2244,6 +2244,48 @@ export const berita: Artikel[] = [
     },
   ],
 },
+{
+  slug: "50-perusahaan-teknologi-indonesia-2025-naik-vs-tumbang",
+  title: "Peta 50+ Perusahaan Teknologi Indonesia 2025: Siapa Naik, Siapa Tumbang, dan Apa yang Bisa Dipelajari",
+  excerpt:
+    "Daftar panjang perusahaan teknologi Indonesia di 2025 memperlihatkan dua sisi yang berlawanan tajam: startup yang mendapat pendanaan miliaran rupiah, dan yang harus menutup pintunya. Pola di baliknya layak dibaca serius.",
+  category: "Analisis",
+  date: "2026-07-24",
+  readingTime: "8 menit",
+  body: [
+    {
+      paragraphs: [
+        "Setiap akhir tahun, daftar 'perusahaan teknologi paling berhasil' atau 'startup yang harus diperhatikan' selalu ramai dibagikan. Di Indonesia, dua ribu dua puluh lima adalah tahun yang kontras: di satu sisi ada perusahaan yang menutup pendanaan Seri B dan C dengan valuasi yang menanjak tajam, di sisi lain ada nama-nama yang dahulu sering muncul di headline harus mengakui bahwa mereka tidak bisa lanjut lagi. Bukan kekurangan di satu sisi saja, tapi dua jurang yang terbentuk di saat yang sama.",
+        "Editorial Wawasan AI mengikuti daftar panjang seperti ini bukan untuk mengoleksi nama, tapi untuk membaca apa yang sebenarnya sedang terjadi di ekosistem teknologi Indonesia. Karena di balik setiap logo yang naik, ada cerita tentang pasar yang berubah, model bisnis yang diuji, dan keputusan manajemen yang menentukan. Dan di balik setiap nama yang tumbang, ada pelajaran yang biasanya lebih berharga dari news-nya sendiri."
+      ],
+    },
+    {
+      heading: "Yang naik: kombinasi AI, fintech, dan enterprise SaaS",
+      paragraphs: [
+        "Pola yang paling jelas terlihat di daftar 2025: perusahaan yang berhasil mendapat pendanaan besar adalah yang sudah mengintegrasikan AI ke produk intinya — bukan sebagai fitur tambahan, tapi sebagai pembeda utama. Kategori fintech Indonesia masih menarik modal besar, tapi yang dapat pendanaan bukan pemain lama yang bertransformasi menjadi bank; mereka yang membangun tooling backend untuk lender lain, atau yang menyediakan infrastruktur pembayaran untuk merchant dan UMKM. Perusahaan enterprise SaaS di bidang HR, akunting, dan logistik juga naik kelas karena solusi mereka makin spesifik untuk pasar lokal, bukan terjemahan produk global.",
+        "Tiga sub-sektor yang menonjol menurut pengamatan editorial: pertama, AI infrastructure — termasuk yang menyediakan GPU on-demand untuk perusahaan lain, dan yang membangun model bahasa lokal Indonesia. Kedua, kesehatan digital — telemedis dan platform manajemen klinik yang sudah profitable di tier tertentu. Ketiga, logistik dan supply chain untuk e-commerce, dengan beberapa pemain yang berhasil monetize beyond last-mile delivery. Ketiganya punya ciri yang sama: pasar yang besar, model bisnis yang repeatable, dan tim yang paham bahwa fase pendanaan besar bukan tujuan akhir."
+      ],
+    },
+    {
+      heading: "Yang tumbang: pola umum di baliknya",
+      paragraphs: [
+        "Di sisi lain, ada nama-nama yang pada 2022 dan 2023 masih dianggap sebagai 'unicorn watch' harus mengumumkan restrukturisasi, akuisisi paksa, atau bahkan shutdown. Editor tidak akan menyebutkan nama spesifik di sini karena tujuan artikel ini bukan sensasionalisme, tapi membaca pola. Dari pengamatan editorial terhadap daftar-daftar yang dibagikan di akhir 2025, ada tiga pola yang berulang.",
+        "Pertama, burn rate berlebihan selama fase pertumbuhan. Banyak startup Indonesia 2020-2022 mengalami hiring boom dan marketing spend yang tidak sustainable, dengan asumsi pasar akan terus tumbuh 5-10x per tahun. Ketika reality-nya datar di 2024-2025, mereka harus memilih antara pivot cepat atau shutdown — sayangnya tidak banyak yang punya runway untuk pivot.",
+        "Kedua, model B2C yang terlalu cepat scaling. Beberapa pemain yang mencoba menjadi 'Gojek atau Tokopedia berikutnya' dengan modal ventura dan fokus akuisisi user sebelum model unit ekonominya terbukti. Ketika investor meminta profitabilitas, tim harus mengakui bahwa setiap transaksi masih subsidi. Yang selamat adalah mereka yang memang membangun untuk profitabilitas sejak awal, dan masih hidup sampai hari ini justru karena mereka tidak ikut-ikutan bakar duit.",
+        "Ketiga, ketergantungan berlebihan pada satu sumber revenue atau satu korporasi besar. Ketika klien utama memutus kontrak, atau aggregator besar mengubah kebijakannya, beberapa startup praktis kehilangan setengah revenue dalam sebulan. Ini risiko yang sering diabaikan di tengah euphoria pendanaan, dan yang terbukti paling fatal di 2025."
+      ],
+    },
+    {
+      heading: "Apa artinya untuk founder, investor, dan pekerja teknologi Indonesia",
+      paragraphs: [
+        "Untuk founder yang sedang membangun sekarang, paling penting bukan untuk masuk daftar 2026 — tapi untuk bertahan di daftar 2028. Pelajaran dari 2025 jelas: pasar modal tidak selamanya murah, ekspektasi investor berubah, dan model bisnis yang tidak sehat akan ditolak pada akhirnya. Founder yang menerapkan disiplin unit ekonomi sejak hari pertama akan menemukan bahwa pendanaan justru lebih mudah didapat di fase seperti ini, karena modal yang tersedia kini jauh lebih selektif.",
+        "Untuk investor lokal dan regional, daftar 2025 adalah pengingat bahwa pasar teknologi Indonesia bukan hanya soal konsumen B2C dengan akuisisi masif. Nilai terbesar di 2025 justru datang dari B2B infrastruktur, AI tooling, dan enterprise SaaS — kategori yang banyak dilupakan di euphoria 2020-2022. Mereka yang melihat ini lebih awal sekarang ada di posisi yang jauh lebih baik dibanding yang masih menunggu 'consumer comeback'.",
+        "Untuk pekerja teknologi Indonesia, terutama yang sedang mempertimbangkan pindah kerja atau bahkan pindah negara, daftar seperti ini mengingatkan satu hal yang sering dilupakan: pasar kerja teknologi Indonesia tidak redup, hanya berbeda. Banyak perusahaan yang sedang tumbuh butuh talenta teknis yang kuat, dan mereka bisa menawarkan jalur karir yang tidak lebih buruk dari startup yang sedang kolaps. Yang patut dihindari adalah mengejar valuasi tinggi di perusahaan yang burn rate-nya tidak sehat — karena yang menentukan karir panjang bukan logo di profil LinkedIn, tapi kemampuan yang dibangun di perusahaan yang benar-benar berkelanjutan.",
+        "Pada akhirnya, daftar 50 perusahaan teknologi Indonesia yang naik dan tumbang di 2025 bukan hanya soal siapa yang menang dan kalah. Ia adalah snapshot dari fase penting ekosistem teknologi Indonesia, fase di mana hard lessons dipelajari, dan di mana generasi berikutnya founder yang lebih bijak sedang tumbuh. Tugas kita yang mengikuti dari luar industri —baik sebagai pengguna, pekerja, investor kecil, atau sekadar pengamat —adalah membaca daftar seperti ini dengan mata terbuka, belajar dari kedua sisi, dan mendukung gerakan yang benar-benar membawa Indonesia maju, bukan hanya yang paling vokal di media."
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
