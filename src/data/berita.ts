@@ -2286,6 +2286,47 @@ export const berita: Artikel[] = [
     },
   ],
 },
+{
+  slug: "adopsi-melaju-ai-dituntut-menghasilkan-dampak-nyata",
+  title: "Adopsi AI Sudah Melaju di Korporasi Indonesia: Sekarang Pertanyaannya Bukan Lagi Bisa Pakai, Tapi Untuk Apa",
+  excerpt:
+    "Survei terbaru menunjukkan mayoritas korporasi besar Indonesia sudah mengadopsi AI dalam dua tahun terakhir — tapi yang menentukan di 2026 bukan siapa paling cepat bereksperimen, melainkan siapa yang bisa menunjukkan dampak pada lini bisnis.",
+  category: "Analisis",
+  date: "2026-07-25",
+  readingTime: "7 menit",
+  body: [
+    {
+      paragraphs: [
+        "Jika 2024 dan 2025 adalah tahun ketika pertanyaan utama eksekutif Indonesia soal AI adalah 'kapan kita mulai?', maka 2026 dengan tegas memindahkan pertanyaan itu ke tempat yang lebih merepotkan: 'dampak apa yang sudah terlihat?' Survei demi survei — dari konsultan global, kampus lokal, sampai asosiasi industri — menunjukkan angka adopsi AI di korporasi Indonesia terus naik, bahkan menembus kisaran 80-90 persen di sektor keuangan, telekomunikasi, dan manufaktur besar. Angka itu sendiri bukan hal baru: yang berubah adalah resonansi publiknya. Ketika sebagian besar kompetitor sudah mencoba, adopsi berhenti menjadi pembeda. Yang tersisa adalah pertanyaan yang jauh lebih tidak nyaman: dari sekian banyak yang sudah coba, siapa yang betul-betul merasakan hasilnya di revenue, efisiensi, atau kualitas layanan, dan siapa yang hanya menempel AI di atas proses lama supaya rapat direksi bisa menulis kata 'transformasi digital' di laporan tahunan.",
+        "Di titik itulah industrialisasi AI di Indonesia memasuki fase yang lebih jujur. Bukan fase yang lebih mudah — justru sebaliknya. Karena eksperimen kecil di satu tim, dengan vendor yang berbeda, dan metrik keberhasilan yang longgar, masih bisa lolos dari scrutiny internal selama skala percobaan masih kecil. Begitu AI diseret ke pembahasan target bisnis kuartal, hitungan unit cost, dan SLA operasional, yang terlihat sebagai keberhasilan di pilot project sering kali menyusut ketika harus direplikasi ke banyak lini atau dipertemukan dengan data produksi yang lebih kotor. Maka yang paling menentukan di 2026 bukan lagi kecepatan mengadopsi, melainkan kemampuan bertahan di fase 'penerjemahan' — saat tim AI harus bernegosiasi dengan bos lini, dengan vendor lama, dan dengan regulasi yang masih abu-abu.",
+      ],
+    },
+    {
+      heading: "Apa yang sebenarnya berubah dibanding dua tahun lalu",
+      paragraphs: [
+        "Dua tahun lalu, adopsi AI di korporasi Indonesia biasanya berarti tiga hal sekaligus: akses ke ChatGPT Enterprise atau Claude untuk tim tertentu, satu atau dua proof of concept yang dibantu vendor lokal, dan pembelian GPU atau akses API untuk tim data internal. Ketiganya sah sebagai permulaan, dan memang begitulah cara banyak perusahaan serius memulai. Yang berubah di 2026 adalah titik beratnya bergeser: chatbot internal dan ringkasan dokumen sudah menjadi default expectation, bukan lagi pembeda. Pembeda baru adalah AI yang tersambung ke proses inti — sistem inti perbankan, SAP di manufaktur, operasional marketplace, jaringan ritel, sampai alur verifikasi kepatuhan di sektor publik.",
+        "Pergeseran itu punya konsekuensi yang tidak kecil. AI yang menempel di permukaan relatif murah untuk diimplementasikan dan mudah di-roolback kalau hasilnya mengecewakan. AI yang masuk ke proses inti membawa tiga jenis risiko baru sekaligus: risiko kualitas model pada data produksi yang jauh lebih beragam dari data uji, risiko perubahan proses yang biasanya bertemu perlawanan dari unit yang merasa cara lamanya sudah cukup, dan risiko audit serta regulasi yang langsung bertanya 'siapa yang bertanggung jawab kalau model ini salah?' Ketiga risiko itu bukan alasan untuk mundur — justru yang menentukan kesiapan korporasi Indonesia memasuki 2026 adalah seberapa siap mereka mengelola ketiganya tanpa menggantungkan semuanya pada satu vendor atau satu tim spesialis.",
+      ],
+    },
+    {
+      heading: "Cerita di balik angka adopsi yang tinggi",
+      paragraphs: [
+        "Angka adopsi 80-90 persen di korporasi besar memang terdengar menggembirakan, tapi perlu dibaca dengan tenang. Survei seperti ini biasanya menanyakan 'apakah organisasi Anda sudah menggunakan AI dalam bentuk apa pun' — artinya, menggunakan ChatGPT untuk menulis memo direksi sudah terhitung sebagai adopsi. Itu bukan hitungan yang keliru, hanya definisi yang berbeda dari apa yang biasanya diasumsikan publik. Yang lebih bermakna bukan proporsi yang sudah coba, melainkan proporsi yang sudah productionised: sudah menggunakan AI di lebih dari satu unit bisnis, sudah mengaitkan dengan KPI, dan sudah mengalokasikan anggaran recurrent (bukan cuma dana eksperimen).",
+        "Di sinilah jurang antara korporasi besar dan UMKM kembali terlihat jelas. Korporasi besar punya modal untuk tidak langsung menilai satu eksperimen sebagai gagal: mereka bisa membiayai 5-10 eksperimen sekaligus, membunuh yang tidak jalan, dan mempertahankan yang berhasil. UMKM, sesuai laporan yang lebih sedikit dibicarakan, biasanya punya kesempatan berbeda: mereka sering memakai AI lewat SaaS yang sudah jadi (bukan melatih sendiri), dan dampaknya lebih sulit diukur karena keputusan adopsi biasanya dilakukan oleh pemilik usaha sendiri tanpa tim analitik. Cerita adopsi di 2026 bukanlah satu kurva — melainkan setidaknya dua, dengan ritme yang berbeda dan tantangan yang berbeda pula.",
+      ],
+    },
+    {
+      heading: "Apa yang patut diperhatikan dalam enam sampai dua belas bulan ke depan",
+      paragraphs: [
+        "Indikator paling sederhana untuk mengawasi apakah korporasi Indonesia benar-benar memasuki fase dampak, bukan lagi fase coba-coba: amati apakah dalam laporan kuartal mendatang korporasi besar menyebut angka spesifik yang terkait AI — misalnya biaya operasional yang turun X persen, processing time yang turun Y jam, atau tingkat deteksi fraud yang naik Z poin. Bukan klaim umum tentang 'transformasi digital', bukan foto bersama vendor, tapi angka yang bisa diverifikasi dan dibandingkan antar periode. Ketika korporasi mulai mengumumkan angka spesifik secara sukarela, itu pertanda bahwa AI sudah menjadi bagian dari diskusi bisnis reguler, bukan inisiatif khusus yang harus dipresentasikan di seminar.",
+        "Indikator kedua: perhatikan apakah muncul laporan dari asosiasi industri atau regulator yang membandingkan produktivitas antar pelaku di sektor yang sama — dengan data, bukan opini. Saat ini, pengukuran semacam ini masih minim di Indonesia, dan sebagian besar klaim 'dampak AI' masih berdasarkan cerita satu perusahaan. Tanpa data pembanding, sulit bagi direksi di perusahaan lain untuk menjustifikasi investasi yang tidak kecil. Regulasi yang akan datang (dalam bentuk Perpres atau bahkan RUU) kemungkinan akan menuntut pelaporan yang lebih serius, dan di situlah kemampuan mengukur dampak akan menjadi keharusan, bukan pilihan.",
+        "Indikator ketiga: amati apakah tim data dan AI di korporasi Indonesia berhenti tumbuh hanya sebagai 'penyedia layanan internal' dan mulai mengambil peran sebagai co-owner proses bisnis. Selama tim AI hanya menjadi orang yang diminta tolong oleh unit bisnis, sulit berharap dampak AI akan kelihatan di KPI. Ketika tim AI ikut menulis KPI, ikut mengevaluasi hasilnya, dan ikut bertanggung jawab kalau model salah, baru bisa diharapkan ada perbaikan proses yang bertahan — bukan hanya eksperimen yang bagus untuk laporan. Pergeseran ini adalah salah satu yang paling sulit, karena menyentuh struktur organisasi, kompensasi, dan akuntabilitas — bukan sekadar teknologi.",
+        "Indikator keempat: lihat apakah korporasi Indonesia yang sudah berhasil di fase dampak mulai menuliskan pembelajaran mereka — secara publik, dalam format yang bisa dipelajari, bukan slides presentasi yang berhenti di jargon. Indonesia kekurangan literatur praktik yang bisa ditiru oleh korporasi lain, dan hampir semua kasus yang berhasil masih tersimpan sebagai insider knowledge. Ketika tulisan praktik seperti ini mulai bermunculan dari korporasi, bukan dari vendor, itu adalah tanda bahwa komunitas AI korporasi Indonesia sudah cukup dewasa untuk saling belajar. Sampai itu terjadi, yang akan terus terdengar adalah cerita berdasarkan Common Crawl dan webinar global, bukan cerita lokal yang benar-benar bisa dicontoh.",
+        "Dalam pengujian editorial Wawasan AI, kabar adopsi AI yang sudah menyentuh 80-90 persen korporasi Indonesia sebaiknya dibaca sebagai permulaan, bukan sebagai tujuan. Indonesia memasuki fase yang lebih jujur di AI: fase di mana eksperimen tidak lagi cukup, fase di mana angka adopsi tidak lagi membanggakan diri, dan fase di mana setiap unit bisnis yang menggunakan AI akan ditanya 'dampaknya apa, pada siapa, dan diukur bagaimana.' Untuk korporasi, ini saat yang tidak nyaman tapi perlu. Untuk UMKM, ini saat yang justru membuka peluang, karena vendor SaaS AI untuk segmen UMKM kini makin serius dan makin affordable. Untuk regulator, ini saat yang menantang, karena yang harus diatur bukan lagi teknologi melainkan dampaknya. Dan untuk pembaca yang sehari-hari bekerja dengan atau di sekitar AI, ini saat yang menarik — karena untuk pertama kalinya kata 'adopsi' di Indonesia benar-benar harus diikuti dengan kata 'dampak', bukan hanya kata 'pelatihan' atau 'sosialisasi'.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
