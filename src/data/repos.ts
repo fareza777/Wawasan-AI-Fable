@@ -2643,6 +2643,55 @@ export const repos: Review[] = [
   updatedAt: "2026-07-24",
   featured: false,
 },
+{
+  slug: "anything-llm",
+  name: "AnythingLLM",
+  tagline: "Workstation AI all-in-one lokal-first dengan RAG, agent, dan multi-LLM dalam satu aplikasi desktop",
+  tags: ["RAG", "AI Agent", "Self-hosted", "Desktop App"],
+  score: 8.7,
+  scores: [
+    { label: "Kemudahan Setup", value: 9.0 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 8.5 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "AnythingLLM dari Mintplex Labs adalah workstation AI all-in-one yang menyatukan RAG, agent, dan multi-LLM provider dalam satu aplikasi desktop maupun Docker. Dilengkapi lebih dari 63 ribu bintang di GitHub, AnythingLLM memposisikan diri sebagai titik masuk paling praktis bagi individu, UMKM, maupun tim korporat yang ingin membangun asisten AI di atas data internal tanpa harus merangkai tool terpisah.",
+  highlights: [
+    "Antarmuka all-in-one yang menyatukan chatbot, RAG workspace, agent skill, dan browser automation dalam satu aplikasi desktop tanpa perlu merangkai tool terpisah",
+    "Dukungan multi-LLM provider yang sangat luas - OpenAI, Anthropic, Google, Azure, OpenRouter, Ollama lokal, LM Studio, hingga custom endpoint - tim bisa migrasi provider tanpa rewrite alur",
+    "Mesin vector database fleksibel bawaan dengan LanceDB default, plus opsi Chroma, Milvus, Qdrant, Weaviate, Pinecone, dan pgvector untuk skala produksi",
+    "Mode dual: aplikasi desktop Electron untuk pengguna non-teknis, plus Docker self-host untuk deployment server tim atau korporat",
+    "Sistem agent dan tool calling yang extensible lewat custom skill, API integration, dan browser-use automation untuk alur kerja yang melampaui Q&A sederhana",
+    "Lisensi MIT, aktif dipelihara dengan ritme rilis mingguan, dan basis pengguna global yang besar di komunitas no-code AI",
+    "Fitur import dokumen sangat luas: PDF, DOCX, TXT, website URL, channel YouTube, hingga sinkronisasi cloud storage seperti Google Drive - praktis untuk knowledge base individu",
+  ],
+  pros: [
+    "Menghilangkan kebutuhan merangkai banyak tool terpisah (LLM client, vector DB, loader dokumen, orchestration) menjadi satu aplikasi yang bisa dijalankan dalam hitungan menit",
+    "Pilihan deployment yang fleksibel - aplikasi desktop untuk pengguna rumahan, Docker Compose untuk server internal, atau managed cloud - sesuai kebutuhan tim Indonesia dari skala individu hingga korporat",
+    "Dukungan LLM lokal lewat Ollama dan LM Studio berarti data sensitif bisa diproses tanpa pernah meninggalkan mesin pengguna - penting untuk use case legal, kesehatan, atau keuangan",
+    "Komunitas global yang besar dan dokumentasi multibahasa membuat onboarding relatif cepat untuk pengguna baru di dunia RAG dan agent",
+  ],
+  cons: [
+    "Pengalaman pengguna terbaik menuntut sumber daya lokal yang cukup - embedding model, LLM, dan vector search tetap membutuhkan RAM dan storage yang tidak sedikit untuk knowledge base besar",
+    "Fitur agent dan browser-use relatif baru dan masih berkembang; untuk otomasi mission-critical perlu validasi mendalam sebelum dipakai pada alur produksi ketat",
+    "Konfigurasi tingkat lanjut (custom embedding, multi-workspace permissioning, integrasi SSO enterprise) memerlukan pemahaman teknis yang lumayan untuk pengguna non-developer",
+  ],
+  verdict:
+    "Salah satu titik masuk paling pragmatis ke dunia RAG dan agent AI berbasis self-host. Wajib dipertimbangkan oleh individu, UMKM, maupun tim korporat Indonesia yang ingin membangun asisten AI di atas data internal tanpa biaya lisensi dan tanpa vendor lock-in.",
+  body: [
+    "Dalam dua tahun terakhir, adopsi AI generatif di Indonesia bergerak cepat - dari eksperimen chatbot sederhana menjadi asisten internal yang membantu tim menulis, merangkum dokumen, menjawab pertanyaan pelanggan, hingga mengotomasi tugas operasional. Masalahnya, membangun asisten seperti ini dari nol biasanya menuntut perakitan banyak komponen terpisah: LLM client, vector database, loader dokumen, orchestration layer, dan antarmuka pengguna. AnythingLLM dari Mintplex Labs menjawab tantangan itu dengan menyatukan semuanya dalam satu aplikasi desktop sekaligus Docker yang bisa dijalankan dalam hitungan menit - cocok untuk individu, UMKM, maupun tim korporat yang ingin mulai dari solusi sederhana sebelum berinvestasi pada stack yang lebih kompleks.",
+    "Secara arsitektur, AnythingLLM bukan sekadar wrapper LLM. Ia adalah workstation AI dengan komponen utama yang bisa diganti-ganti: LLM provider dari OpenAI, Anthropic, Google, Azure, OpenRouter, hingga Ollama dan LM Studio lokal; vector database bawaan LanceDB plus opsi Chroma, Milvus, Qdrant, Weaviate, Pinecone, dan pgvector; serta loader dokumen yang menerima PDF, DOCX, TXT, URL web, transcript YouTube, hingga sinkronisasi Google Drive. Fleksibilitas ini penting untuk konteks Indonesia: pengguna rumahan bisa mulai dengan Ollama lokal gratis untuk menjaga privasi, sementara tim korporat bisa migrasi ke OpenAI atau Azure ketika traffic naik, tanpa harus menulis ulang pipeline.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah UMKM dan tim kecil yang ingin meng-ground-kan LLM di atas knowledge base internal tanpa harus mempekerjakan developer AI penuh waktu. Contoh konkret: sebuah klinik gigi ingin bertanya kepada LLM tentang prosedur dan jadwal dokter berdasarkan dokumen SOP yang selalu di-update - AnythingLLM memungkinkan staf non-teknis mengunggah PDF, mengatur workspace per topik, lalu langsung bertanya lewat antarmuka chat yang terasa familiar. Skenario lain: agen properti lokal ingin membangun asisten yang menjawab pertanyaan calon pembeli berdasarkan listing dan brosur - fitur URL loader dan YouTube transcript memungkinkan knowledge base diperluas otomatis tanpa input manual. Mode deployment ganda, aplikasi desktop untuk pengguna individu dan Docker untuk server tim, juga membuat transisi dari eksperimen ke produksi terasa mulus.",
+    "Bukan berarti tanpa kompromi. Pengalaman optimal menuntut sumber daya lokal yang cukup - embedding model, LLM, dan vector search tetap membutuhkan RAM 16 GB ke atas dan storage yang tidak sedikit untuk knowledge base besar. Fitur agent dan browser-use relatif baru dan masih berkembang, sehingga untuk otomasi mission-critical perlu validasi mendalam sebelum dipakai pada alur produksi ketat. Konfigurasi tingkat lanjut seperti permissioning multi-workspace, integrasi SSO enterprise, atau custom embedding pipeline juga memerlukan pemahaman teknis yang lumayan untuk pengguna non-developer. Namun untuk siapa pun yang ingin membangun asisten AI di atas data internal tanpa biaya lisensi dan tanpa vendor lock-in, AnythingLLM adalah salah satu titik masuk paling pragmatis yang tersedia di ekosistem open-source saat ini.",
+  ],
+  link: "https://github.com/Mintplex-Labs/anything-llm",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-25",
+  updatedAt: "2026-07-25",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
