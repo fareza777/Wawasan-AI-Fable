@@ -2282,6 +2282,49 @@ export const models: Review[] = [
     date: "2026-07-24",
     featured: false,
   },
+  {
+    slug: "glm-4-7-non-reasoning",
+    name: "GLM-4.7 (Non-reasoning)",
+    tagline:
+      "Varian non-reasoning GLM-4.7 dari Z AI — throughput ekstrem dengan harga kelas bawah",
+    tags: ["Z AI", "Proprietary", "Inferensi Cepat", "Volume Tinggi"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 9.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 26.6,
+    aa_price_input: 0.6,
+    aa_price_output: 2.2,
+    aa_synced_at: "2026-07-25",
+    summary:
+      "Varian non-reasoning dari keluarga GLM-4.7 Z AI (Zhipu), di-positioning sebagai model throughput-tinggi dengan harga agresif untuk workload inference volume besar. Intelligence index 26,6 (sumber: Artificial Analysis) menaruhnya di papan tengah ke bawah proprietary Asia, tapi trade-off-nya jelas: bukan untuk penalaran murni terberat, melainkan untuk pipeline responsivitas-tinggi yang mengukur user experience lewat latensi dan biaya per token, bukan skor benchmark absolut.",
+    pros: [
+      "Throughput output kelas atas — laporan pengguna menyebut kisaran 500 tps, salah satu yang tercepat di lineup proprietary",
+      "Harga API $0,60 per juta token input dan $2,20 output — jauh lebih murah dari frontier proprietary papan atas untuk workload volume tinggi",
+      "Varian non-reasoning dirancang untuk latency rendah — TTFT singkat karena tanpa langkah deliberasi tambahan, ideal untuk chat interaktif dan streaming UI",
+      "Bagian dari keluarga GLM yang sudah terbukti di Claude Code dan tool agentic — integrasi relatif mulus via endpoint Anthropic-compatible Z.ai",
+    ],
+    cons: [
+      "Intelligence index 26,6 (sumber: Artificial Analysis) jauh di bawah frontier AR (Claude Opus 4.5 43,1, GPT-5 44,6, GLM-5.2 51,1) — untuk penalaran murni terberat, math olimpiade, atau riset saintifik, model ini tertinggal signifikan",
+      "Coding index tidak tersedia di benchmark AA publik untuk varian ini — kualitas coding agregat perlu diuji sendiri per use case spesifik",
+      "Varian non-reasoning tidak dirancang untuk multi-step deliberation — task agentic panjang yang butuh penalaran berlapis akan lebih cocok di GLM-5 atau GLM-5.2 max",
+      "Akses lewat Z.ai atau BigModel.cn — perlu kartu pembayaran internasional dan kematangan ekosistem di pasar Indonesia masih terbatas dibanding frontier Barat",
+    ],
+    verdict:
+      "GLM-4.7 (Non-reasoning) menarik untuk pipeline inference volume-tinggi yang mengukur keberhasilan lewat latensi dan biaya per token, bukan skor benchmark absolut. Untuk penalaran murni kelas depan, GLM-5.2 max atau frontier Barat masih memimpin; tapi untuk chat interaktif, summarization batch, atau workload responsivitas-tinggi di mana setiap dolar dan setiap detik dihitung, model ini layak masuk radar.",
+    body: [
+      "Z AI (Zhipu) memperkenalkan GLM-4.7 (Non-reasoning) sebagai varian dalam keluarga GLM-4.7 yang di-positioning untuk jalur inferensi cepat — kebalikan dari saudara reasoning-nya yang fokus pada penalaran deliberatif. Intelligence index 26,6 (sumber: Artificial Analysis) menempatkannya di papan tengah ke bawah proprietary Asia, angka yang realistis untuk model yang sengaja tidak menambah langkah berpikir tambahan. Trade-off yang diambil sangat disengaja: untuk workload yang nilai utamanya adalah responsivitas dan biaya per token minimum, bukan akurasi penalaran murni, model ini punya value proposition sulit ditandingi di kelasnya. Bagi developer Indonesia yang menjalankan chatbot customer service, batch summarization, atau pipeline klasifikasi volume-tinggi, karakter ini sangat relevan.",
+      "Pada dimensi teknis, laporan pengguna dan benchmark independen menunjukkan throughput output di kisaran 500 tokens/detik untuk varian Non-reasoning — angka yang menempatkan GLM-4.7 di papan atas proprietary untuk kecepatan mentah. TTFT juga singkat karena tidak ada fase deliberasi yang menunda respons pertama. Harga API $0,60 per juta token input dan $2,20 output bermain di kuadran bawah proprietary Asia, jauh lebih murah dari GLM-5.2 max atau Claude Opus 4.5 untuk workload yang sensitif dolar. Yang paling terasa dalam eksplorasi editorial adalah kelancaran streaming output: untuk antarmuka chat dengan UI real-time, perbedaan antara model 50 tps dan 500 tps sangat kentara di pengalaman pengguna akhir. (Sumber: Artificial Analysis.)",
+      "Signifikansi GLM-4.7 (Non-reasoning) bukan di angka intelligence index-nya — melainkan sebagai reminder bahwa ekosistem proprietary Asia makin menawarkan opsi granular sesuai use case. Untuk konsumen yang hanya butuh penalaran murni kelas atas, GLM-5.2 max atau frontier Barat tetap pilihan utama. Untuk yang menjalankan workload volume-tinggi dengan sensitivitas dolar dan latensi, GLM-4.7 (Non-reasoning) adalah alternatif menarik di lineup Z.ai yang mengisi ceruk berbeda dari saudara reasoning-nya. Catatan penting: akses lewat Z.ai atau BigModel.cn perlu kartu pembayaran internasional, dan kematangan ekosistem developer di pasar Indonesia masih berkembang — integrasi native dengan tool lokal (payment gateway, ERP Indonesia) belum seluas frontier yang sudah mapan. Tapi untuk workload yang memang cocok dengan karakter throughput-tinggi dan harga agresif, value proposition-nya sulit diabaikan. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-25",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
