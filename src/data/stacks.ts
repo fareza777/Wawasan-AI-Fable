@@ -1918,6 +1918,47 @@ export const stacks: Review[] = [
     date: "2026-07-23",
     featured: false,
   },
+  {
+    slug: "skyvern",
+    name: "Skyvern",
+    tagline: "Browser automation agentic yang tidak bergantung selector HTML",
+    tags: ["Skyvern", "Open Source", "Agent Platform", "Browser Automation"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 8.0 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 8.7 },
+    ],
+    summary:
+      "Skyvern adalah browser automation yang menggunakan LLM dan computer vision untuk menjalankan workflow di sembarang situs web tanpa harus menulis selector XPath atau CSS yang rapuh. Pendekatan 'beri tahu apa yang harus dicapai, biarkan AI yang mencari caranya' ini menyelesaikan masalah klasik automation — script yang rusak tiap kali UI berubah sedikit saja. Untuk tim yang lelah memelihara Selenium suite atau tidak mau hire QA engineer dedicated, Skyvern masuk kategori yang patut dilirik serius di 2026.",
+    pros: [
+      "Tidak butuh selector XPath atau CSS — agen AI meniru cara manusia melihat halaman lewat computer vision dan pemahaman DOM",
+      "Open source Apache 2.0 dengan 22.600+ bintang di GitHub, self-hostable penuh tanpa biaya lisensi",
+      "Workflow dapat dijalankan lewat cloud (app.skyvern.com) atau deployment Docker lokal dengan biaya infrastructure saja",
+      "Cocok untuk use case form fill, login multi-step, scraping data terstruktur, dan otomasi back-office yang biasanya butuh RPA mahal",
+      "Dukungan LLM fleksibel — bisa pakai GPT-4o, Claude, atau model open source via Ollama untuk menekan biaya inference"
+    ],
+    cons: [
+      "Lebih lambat dari Selenium untuk skrip sederhana karena ada overhead inference LLM per aksi",
+      "Akurasi turun pada situs dengan CAPTCHA, anti-bot cloudflare advanced, atau layout yang sangat tidak konvensional",
+      "Kurva setup nontrivial untuk self-hosting — butuh pemahaman Docker, proxy, dan LLM API key management",
+      "Biaya inference LLM akumulatif untuk workflow panjang; estimasi kasar USD 0.10-0.50 per task kompleks tergantung model"
+    ],
+    verdict:
+      "Standar baru untuk browser automation ketika selector script tradisional sudah tidak bisa diandalkan; untuk volume tinggi di pasar Indonesia, kombinasi Skyvern cloud dan LLM lokal via Ollama adalah titik keseimbangan biaya dan keandalan terbaik.",
+    body: [
+      "Browser automation tradisional punya satu kelemahan klasik: script harus terus diperbaiki setiap kali UI berubah sedikit saja. Selector XPath yang ditulis hari ini bisa rusak minggu depan ketika designer menambahkan class CSS baru atau mengubah struktur tombol. Skyvern mengambil pendekatan berbeda secara fundamental: agen AI melihat halaman seperti manusia — lewat computer vision snapshot dan pemahaman konteks DOM — lalu memutuskan aksi apa yang harus dilakukan berdasarkan instruksi natural language. Hasilnya, ketika UI berubah, tidak ada script yang perlu diperbaiki; cukup jalankan ulang workflow yang sama dan agen akan menemukan cara baru untuk menyelesaikan tugas.",
+      "Secara teknis, Skyvern menerima tiga jenis input: URL target, task natural language (mis. 'login dengan email X dan password Y, lalu ambil nomor invoice dari dashboard'), dan optional data parameter. Agen kemudian menganalisa halaman, memutuskan aksi (klik, ketik, scroll, navigasi), menjalankan aksi, dan memvalidasi hasilnya. Library open source Apache 2.0-nya sudah mencapai 22.600+ bintang di GitHub dengan adoption yang konsisten dari tim RPA tradisional yang ingin bermigrasi ke stack AI-native. Penggunaan utamanya terbagi tiga: otomasi form fill dan submission (onboarding, KYC, klaim), data extraction dari situs tanpa API publik (scraping harga, scraping listing), dan workflow multi-step yang biasanya butuh RPA enterprise seperti UiPath atau Automation Anywhere.",
+      "Pricing Skyvern terdiri dari dua opsi. Opsi cloud (app.skyvern.com) menawarkan free tier untuk eksperimen dengan 50 task per bulan, lalu Pro seharga USD 49 per bulan untuk 5.000 task, dan Enterprise di atas USD 500 per bulan untuk deployment private dan SLA. Opsi self-host Apache 2.0 gratis dari sisi lisensi, tapi biaya infrastruktur inference LLM tetap ada — gunakan GPT-4o akan lebih akurat tapi mahal, sementara model open source via Ollama atau vLLM di server lokal akan menurunkan biaya drastis dengan trade-off akurasi. Dengan kurs Rp 16 ribu per dolar, Pro tier jadi sekitar Rp 784 ribu per bulan, angka yang masuk akal untuk startup Indonesia yang sudah menanggung biaya operasional RPA suite tradisional yang jauh lebih mahal.",
+      "Untuk pengguna Indonesia, kekuatan Skyvern ada di kemampuannya menggantikan Selenium suite yang memakan biaya maintenance tinggi dengan tool AI-native yang lebih adaptif terhadap perubahan UI. Kasus penggunaan yang realistis untuk founder dan tim kecil: otomasi input data ke e-commerce platform ketika integrasi API tidak tersedia, bulk submission ke portal government yang butuh login, scraper cerdas untuk intelligence pricing kompetitor, dan QA smoke test yang tidak harus 100% presisi tapi harus tahan terhadap redesign minor. Komunitas Skyvern Indonesia masih nascent — kebanyakan adopsi awal datang dari tim RPA engineer yang sudah familiar dengan Playwright dan ingin eksplorasi pendekatan AI-native. Trade-off utama yang perlu dipertimbangkan: latency (workflow Skyvern lebih lambat dari Selenium tradisional karena ada overhead LLM inference per aksi), ketergantungan pada kualitas model LLM (GPT-4o dan Claude lebih reliable dari model open source untuk situs web kompleks), dan kebutuhan akan fallback human-in-the-loop untuk task kritis dimana kegagalan tidak ditoleransi. Kompetitor langsung antara lain Anchor (browserbase acquired), MultiOn, dan Adept ACT (suspended) — Skyvern menonjol di kategori open source dengan deployment fleksibel dan ekosistem yang tumbuh stabil di GitHub."
+    ],
+    link: "https://www.skyvern.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-24",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

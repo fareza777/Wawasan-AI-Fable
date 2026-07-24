@@ -1,0 +1,151 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "24 Juli 2026",
+  "period": {
+    "date": "2026-07-24",
+    "label": "24 Juli 2026",
+    "path": "/repo/daily/2026/07/24"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-24T00:03:37.179Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "k1tbyte/Wand-Enhancer",
+      "owner": "k1tbyte",
+      "repo": "Wand-Enhancer",
+      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+      "githubUrl": "https://github.com/k1tbyte/Wand-Enhancer",
+      "trendshiftUrl": "https://trendshift.io/repositories/24694",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2024-11-17T20:02:10Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "petergyang/no-ai-slop",
+      "owner": "petergyang",
+      "repo": "no-ai-slop",
+      "description": "Removes 20+ patterns of AI slop from any piece of writing.",
+      "githubUrl": "https://github.com/petergyang/no-ai-slop",
+      "trendshiftUrl": "https://trendshift.io/repositories/90223",
+      "topics": [],
+      "dateCreated": "2026-07-07T05:05:58Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "MIgHTy-alIeN/MEV-Arbitrage-Bot",
+      "owner": "MIgHTy-alIeN",
+      "repo": "MEV-Arbitrage-Bot",
+      "description": "An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
+      "githubUrl": "https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot",
+      "trendshiftUrl": "https://trendshift.io/repositories/86144",
+      "language": "Solidity",
+      "topics": [
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-07-17T09:45:22Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "NousResearch/hermes-agent",
+      "owner": "NousResearch",
+      "repo": "hermes-agent",
+      "description": "The agent that grows with you",
+      "githubUrl": "https://github.com/NousResearch/hermes-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/22055",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2025-07-22T22:22:28Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "koala73/worldmonitor",
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "githubUrl": "https://github.com/koala73/worldmonitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/20793",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM",
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-08T17:26:06Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "elastic/kibana",
+      "owner": "elastic",
+      "repo": "kibana",
+      "description": "Your window into all of your data",
+      "githubUrl": "https://github.com/elastic/kibana",
+      "trendshiftUrl": "https://trendshift.io/repositories/2679",
+      "language": "TypeScript",
+      "topics": [
+        "Observability",
+        "Data visualization"
+      ],
+      "dateCreated": "2013-01-26T04:00:59Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "academicpages/academicpages.github.io",
+      "owner": "academicpages",
+      "repo": "academicpages.github.io",
+      "description": "Github Pages template based upon HTML and Markdown for personal, portfolio-based websites.",
+      "githubUrl": "https://github.com/academicpages/academicpages.github.io",
+      "trendshiftUrl": "https://trendshift.io/repositories/1758",
+      "language": "SCSS",
+      "topics": [],
+      "dateCreated": "2016-09-15T11:16:04Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
+      "trendshiftUrl": "https://trendshift.io/repositories/23589",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Proxy"
+      ],
+      "dateCreated": "2026-02-13T12:38:31Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "maillab/cloud-mail",
+      "owner": "maillab",
+      "repo": "cloud-mail",
+      "description": "A Cloudflare-based email service  | 基于 Cloudflare 的邮箱服务  | Cloudflare Email 邮箱 Mail",
+      "githubUrl": "https://github.com/maillab/cloud-mail",
+      "trendshiftUrl": "https://trendshift.io/repositories/20459",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2025-04-24T11:36:56Z"
+    }
+  ]
+}
