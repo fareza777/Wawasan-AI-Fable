@@ -1282,9 +1282,39 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Agen diperlakukan sebagai anggota tim sejati (bukan bot tempelan): punya keypair sendiri, keanggotaan channel sendiri, jejak audit sendiri — dibanding model 'permission flag', scoping lewat identitas sehingga serangan privilege escalation lebih kecil.",
       "Fitur konkret yang membedakan: branch jadi ruang berisi patch + CI + review + keputusan merge, voice huddle antar agen dan manusia, canvas kolaboratif, plus orkestrasi agen di dalam channel yang sama.",
       "Open source (Apache 2.0), ditulis Rust, self-hostable relay sehingga data tim tidak keluar ke cloud Block — relevan untuk founder dan tech lead Indonesia yang ingin workspace AI-augmented dengan privasi dan kontrol penuh.",
-    ],
-  },
-};
+          ],
+        },
+        "permissionlesstech/bitchat": {
+          description:
+            "Aplikasi chat peer-to-peer tanpa akun dari permissionless.tech — arsitektur ganda Bluetooth mesh (offline, 7-hop relay) plus Nostr lewat relay global, native iOS/macOS, public domain.",
+          highlights: [
+            "Arsitektur dual transport: Bluetooth mesh untuk chat offline tanpa internet (multi-hop sampai 7 hop, Noise Protocol E2EE) + Nostr lewat 290+ relay global untuk jangkauan dunia — agen routing otomatis pilih transport terbaik.",
+            "Tanpa akun, tanpa nomor telepon, tanpa identifier persisten — privasi jadi default, bukan fitur tambahan; emergency wipe tinggal triple-tap untuk hapus semua data instan.",
+            "Channel lokasi berbasis geohash (block, neighborhood, city, province, region) lewat Nostr, plus perintah IRC-style (/slap, /msg, /who) — familiar buat pengguna lama, berguna buat koordinasi komunitas lokal.",
+            "Native iOS/macOS (Swift), source code dirilis public domain, dipakai aktif untuk komunikasi darurat, protes, dan daerah bencana — relevan untuk jurnalis, aktivis, dan siapa saja yang butuh chat berfungsi saat internet down.",
+          ],
+        },
+        "Automattic/harper": {
+          description:
+            "Grammar checker offline & privacy-first dari Automattic (Rust) — lokal milidetik, 1/50 memory footprint LanguageTool, dan bisa load via WebAssembly di browser tanpa kirim teks ke server.",
+          highlights: [
+            "Alternatif Grammarly yang 'just right': grammar checker offline berbasis Rust yang berjalan dalam milidetik, footprint memori 1/50 dari LanguageTool (tidak butuh dataset n-gram 16GB), dan 100% lokal tanpa round-trip ke server.",
+            "Pendekatan privacy-first yang konkret: tidak satu pun teks yang ditulis user dikirim keluar dari mesin — menjawab kekhawatiran utama Grammarly yang dipakai LLM training dan telemetry Grammarly yang dianggap invasif.",
+            "Cakupan platform luas: CLI, LSP server untuk editor (harper-ls), integrasi Obsidian (plugin resmi), API WebAssembly (writewithharper.com) untuk embedding di web app, plus library JS harper.js — bukan hanya tool desktop.",
+            "Open source dari Automattic (pembuat WordPress.com) dengan binary release untuk macOS/Windows/Linux dan distribusi npm/cargo — relevan untuk penulis, jurnalis, dan developer Indonesia yang peduli privasi konten tapi tidak mau kompromi pada kualitas grammar.",
+          ],
+        },
+        "alibaba/open-code-review": {
+          description:
+            "Tool CLI code review AI resmi dari Alibaba (Go) — battle-tested di puluhan ribu developer dan jutaan defect, benchmark F1 lebih tinggi dari Claude Code dengan biaya token 1/9-nya.",
+          highlights: [
+            "Asal-usul internal resmi Alibaba yang dipakai puluhan ribu developer dan mendeteksi jutaan defect selama dua tahun — bukan eksperimen, melainkan tool yang sudah lulus validasi skala produksi Alibaba sebelum di-open-source-kan.",
+            "Arsitektur hybrid: pipeline deterministik untuk pola yang sudah jelas (NPE, thread-safety, XSS, SQL injection) + LLM agent dengan tool-use untuk review kontekstual — presisi tinggi, recall terukur, token cost 1/9 dari Claude Code untuk review setara.",
+            "Plug ke coding agent populer (Claude Code, Codex, Cursor) lewat badge resmi 'supported agent' di README, plus CLI Windows/macOS/Linux, output line-level comment, dan mode `ocr scan` untuk audit codebase tanpa diff.",
+            "Benchmark publik 50 repo + 200 PR + 10 bahasa divalidasi 80+ senior engineer (1.505 ground-truth issue) — tooling serius untuk tim engineering yang ingin code review otomatis berkualitas tinggi tanpa biaya API model besar.",
+          ],
+        },
+      };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
