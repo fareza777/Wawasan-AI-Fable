@@ -1,69 +1,113 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "24 Juli 2026",
-  "period": {
-    "date": "2026-07-24",
-    "label": "24 Juli 2026",
-    "path": "/repo/daily/2026/07/24"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-24T00:03:37.179Z",
+  "fetchedAt": "2026-07-24T04:48:54.917Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "k1tbyte/Wand-Enhancer",
-      "owner": "k1tbyte",
-      "repo": "Wand-Enhancer",
-      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
-      "githubUrl": "https://github.com/k1tbyte/Wand-Enhancer",
-      "trendshiftUrl": "https://trendshift.io/repositories/24694",
-      "language": "C#",
-      "topics": [],
-      "dateCreated": "2024-11-17T20:02:10Z"
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
     },
     {
       "rank": 2,
-      "fullName": "petergyang/no-ai-slop",
-      "owner": "petergyang",
-      "repo": "no-ai-slop",
-      "description": "Removes 20+ patterns of AI slop from any piece of writing.",
-      "githubUrl": "https://github.com/petergyang/no-ai-slop",
-      "trendshiftUrl": "https://trendshift.io/repositories/90223",
-      "topics": [],
-      "dateCreated": "2026-07-07T05:05:58Z"
+      "fullName": "alibaba/open-code-review",
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "description": "Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "githubUrl": "https://github.com/alibaba/open-code-review",
+      "trendshiftUrl": "https://trendshift.io/repositories/41087",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-18T02:16:36Z"
     },
     {
       "rank": 3,
-      "fullName": "MIgHTy-alIeN/MEV-Arbitrage-Bot",
-      "owner": "MIgHTy-alIeN",
-      "repo": "MEV-Arbitrage-Bot",
-      "description": "An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
-      "githubUrl": "https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot",
-      "trendshiftUrl": "https://trendshift.io/repositories/86144",
-      "language": "Solidity",
+      "fullName": "citrolabs/ego-lite",
+      "owner": "citrolabs",
+      "repo": "ego-lite",
+      "description": "The best browser for both you and your AI agents work in parallel.",
+      "githubUrl": "https://github.com/citrolabs/ego-lite",
+      "trendshiftUrl": "https://trendshift.io/repositories/42334",
+      "language": "JavaScript",
       "topics": [
-        "Crypto trading"
+        "AI agent"
       ],
-      "dateCreated": "2026-07-17T09:45:22Z"
+      "dateCreated": "2026-04-16T12:51:09Z"
     },
     {
       "rank": 4,
-      "fullName": "NousResearch/hermes-agent",
-      "owner": "NousResearch",
-      "repo": "hermes-agent",
-      "description": "The agent that grows with you",
-      "githubUrl": "https://github.com/NousResearch/hermes-agent",
-      "trendshiftUrl": "https://trendshift.io/repositories/22055",
-      "language": "Python",
+      "fullName": "Automattic/harper",
+      "owner": "Automattic",
+      "repo": "harper",
+      "description": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+      "githubUrl": "https://github.com/Automattic/harper",
+      "trendshiftUrl": "https://trendshift.io/repositories/12372",
+      "language": "Rust",
       "topics": [
-        "AI agent",
-        "AI skills"
+        "NLP"
       ],
-      "dateCreated": "2025-07-22T22:22:28Z"
+      "dateCreated": "2023-10-22T02:58:35Z"
     },
     {
       "rank": 5,
+      "fullName": "DavidHDev/canvas-ui",
+      "owner": "DavidHDev",
+      "repo": "canvas-ui",
+      "description": "A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
+      "githubUrl": "https://github.com/DavidHDev/canvas-ui",
+      "trendshiftUrl": "https://trendshift.io/repositories/90816",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-07-16T13:38:20Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "The open-source diagnostic for AI misalignment. 32 tests across fabrication, manipulation, deception, unpredictability, and opacity. Provider-agnostic. Runs against OpenAI, Anthropic, Bedrock, Azure, Gemini, and more. Letter grade in under 5 minutes, content-addressed manifest for bit-identical replay. Built by iMe.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "shiyu-coder/Kronos",
+      "owner": "shiyu-coder",
+      "repo": "Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "githubUrl": "https://github.com/shiyu-coder/Kronos",
+      "trendshiftUrl": "https://trendshift.io/repositories/15175",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2025-07-01T02:54:32Z"
+    },
+    {
+      "rank": 8,
       "fullName": "koala73/worldmonitor",
       "owner": "koala73",
       "repo": "worldmonitor",
@@ -79,73 +123,34 @@
       "dateCreated": "2026-01-08T17:26:06Z"
     },
     {
-      "rank": 6,
-      "fullName": "block/buzz",
-      "owner": "block",
-      "repo": "buzz",
-      "description": "A hive mind communication platform",
-      "githubUrl": "https://github.com/block/buzz",
-      "trendshiftUrl": "https://trendshift.io/repositories/61760",
-      "language": "Rust",
-      "topics": [
-        "AI agent",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-03-06T21:00:56Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "elastic/kibana",
-      "owner": "elastic",
-      "repo": "kibana",
-      "description": "Your window into all of your data",
-      "githubUrl": "https://github.com/elastic/kibana",
-      "trendshiftUrl": "https://trendshift.io/repositories/2679",
-      "language": "TypeScript",
-      "topics": [
-        "Observability",
-        "Data visualization"
-      ],
-      "dateCreated": "2013-01-26T04:00:59Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "academicpages/academicpages.github.io",
-      "owner": "academicpages",
-      "repo": "academicpages.github.io",
-      "description": "Github Pages template based upon HTML and Markdown for personal, portfolio-based websites.",
-      "githubUrl": "https://github.com/academicpages/academicpages.github.io",
-      "trendshiftUrl": "https://trendshift.io/repositories/1758",
-      "language": "SCSS",
-      "topics": [],
-      "dateCreated": "2016-09-15T11:16:04Z"
-    },
-    {
       "rank": 9,
-      "fullName": "diegosouzapw/OmniRoute",
-      "owner": "diegosouzapw",
-      "repo": "OmniRoute",
-      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
-      "trendshiftUrl": "https://trendshift.io/repositories/23589",
-      "language": "TypeScript",
+      "fullName": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "description": "macOS video editor built for AI",
+      "githubUrl": "https://github.com/palmier-io/palmier-pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/41342",
+      "language": "Swift",
       "topics": [
-        "AI infrastructure",
-        "Proxy"
+        "AI video generation",
+        "MCP",
+        "Video editing"
       ],
-      "dateCreated": "2026-02-13T12:38:31Z"
+      "dateCreated": "2026-04-07T04:15:51Z"
     },
     {
       "rank": 10,
-      "fullName": "maillab/cloud-mail",
-      "owner": "maillab",
-      "repo": "cloud-mail",
-      "description": "A Cloudflare-based email service  | 基于 Cloudflare 的邮箱服务  | Cloudflare Email 邮箱 Mail",
-      "githubUrl": "https://github.com/maillab/cloud-mail",
-      "trendshiftUrl": "https://trendshift.io/repositories/20459",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2025-04-24T11:36:56Z"
+      "fullName": "hoainho/img2threejs",
+      "owner": "hoainho",
+      "repo": "img2threejs",
+      "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+      "githubUrl": "https://github.com/hoainho/img2threejs",
+      "trendshiftUrl": "https://trendshift.io/repositories/83608",
+      "language": "Python",
+      "topics": [
+        "3D generation"
+      ],
+      "dateCreated": "2026-07-15T02:58:39Z"
     }
   ]
 }
