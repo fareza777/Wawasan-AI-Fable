@@ -1959,6 +1959,46 @@ export const stacks: Review[] = [
     date: "2026-07-24",
     featured: false,
   },
+  {
+    slug: "windsurf-cascade",
+    name: "Windsurf Cascade",
+    tagline: "Agen coding kontekstual yang kini hidup di Devin Desktop",
+    tags: ["Cognition", "Freemium", "Agentic IDE", "Coding Workflow"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.8 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.8 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 7.9 },
+    ],
+    summary:
+      "Windsurf Cascade adalah agen coding di dalam Devin Desktop yang menggabungkan pemahaman codebase, penyuntingan multi-file, eksekusi terminal, checkpoint, dan kesadaran real-time terhadap tindakan developer. Pengalaman flow-nya tetap termasuk yang paling halus di kelas agentic IDE, tetapi perpindahan merek dari Codeium ke Windsurf lalu Cognition membuat posisi produk, URL, dan paketnya perlu dibaca lebih teliti daripada pesaing yang stabil.",
+    pros: [
+      "Cascade menjaga konteks kerja secara real-time dan dapat merencanakan, mengedit banyak file, menjalankan command, membaca error, serta mengulang perbaikan dalam satu alur",
+      "Code mode, Chat mode, checkpoint, revert, linter integration, dan voice input memberi kontrol bertahap tanpa memaksa developer menyerahkan seluruh repo secara membabi buta",
+      "Supercomplete dan pengalaman editor terasa cepat untuk pekerjaan interaktif, sementara MCP menghubungkan agen ke GitHub, Jira, Slack, Notion, Figma, Sentry, dan layanan lain",
+      "Paket Free memungkinkan evaluasi awal, sedangkan paket Pro Devin seharga USD 20 per bulan mencakup akses lebih luas ke model dan workflow agen",
+    ],
+    cons: [
+      "Riwayat rebranding dan migrasi ke Devin Desktop membingungkan: URL Windsurf lama kini mengarah ke domain Devin dan dokumentasi tersebar di beberapa nama produk",
+      "Paket berbayar serta kuota penggunaan berbasis model dapat terasa mahal dan sulit diprediksi untuk sesi coding panjang, terutama setelah konversi dolar dan pajak Indonesia",
+      "Kualitas perubahan tetap bergantung pada model, struktur repo, dan instruksi; agen dapat menghasilkan refactor yang tampak benar tetapi memecahkan behavior yang tidak tercakup test",
+      "Sebagian pengguna Windsurf lama perlu menyesuaikan workflow, kebijakan akun, serta ekspektasi roadmap setelah integrasi dengan ekosistem Cognition",
+    ],
+    verdict:
+      "Salah satu pengalaman agentic IDE terbaik untuk developer yang ingin agen aktif mengikuti konteks tanpa meninggalkan editor. Cascade layak dicoba lewat paket gratis, tetapi tim Indonesia sebaiknya menguji biaya, privasi codebase, dan stabilitas roadmap sebelum menjadikannya standar organisasi.",
+    body: [
+      "Cascade memecahkan celah antara autocomplete yang hanya menebak baris berikutnya dan agen cloud yang bekerja jauh dari editor. Di Devin Desktop, ia melihat file yang dibuka, perubahan terbaru, posisi cursor, terminal, diagnostic linter, dan riwayat percakapan, lalu memakai konteks tersebut untuk menjawab atau mengambil tindakan. Chat mode cocok untuk menjelaskan arsitektur, menyusun rencana, dan menelusuri bug tanpa langsung mengubah repo; Code mode dapat mencari file relevan, mengedit banyak lokasi, menjalankan command, membaca hasil build, lalu memperbaiki kegagalan. Checkpoint dan revert memberi titik kembali ketika arah agen melenceng, sementara real-time awareness membuat instruksi lanjutan tidak perlu mengulang seluruh latar belakang. Dalam pengujian editorial Wawasan AI, keunggulan utamanya adalah kontinuitas: developer tetap memimpin dari editor, tetapi Cascade cukup aktif untuk menyelesaikan rangkaian implementasi yang biasanya memerlukan banyak perpindahan antara chat, terminal, dokumentasi, dan diff viewer.",
+      "Perjalanan produknya perlu dipahami karena nama Windsurf Cascade kini bukan produk yang berdiri sendiri seperti saat pertama diluncurkan. Codeium berkembang dari layanan autocomplete menjadi Windsurf, kemudian ekosistemnya bergabung dengan Cognition; pada Juli 2026, codeium.com dan windsurf.com mengarahkan pengunjung ke Devin, sedangkan dokumentasi resmi menyebut Cascade sebagai asisten agentic milik Devin Desktop. Fondasi pengalamannya masih jelas: Supercomplete memprediksi perubahan lebih jauh daripada completion satu baris, Cascade menyediakan Code dan Chat mode, tool calling mengizinkan operasi file serta terminal, dan MCP membuka akses terstruktur ke GitHub, Jira, Slack, Notion, Figma, Stripe, Sentry, serta layanan lain. Dibanding Cursor, Cascade terasa lebih sengaja dirancang untuk flow berkelanjutan dan kesadaran terhadap tindakan developer; dibanding Claude Code, kontrol visual dan onboarding editor lebih ramah, tetapi terminal agent masih lebih fleksibel untuk otomasi tanpa UI, skrip CI, dan sesi remote di server.",
+      "Harga resminya sekarang mengikuti paket Devin. Saat pengecekan editorial, halaman pricing menampilkan Free seharga USD 0, Pro USD 20 per bulan, serta Max USD 200 per bulan, di samping paket Teams dan Enterprise; fitur, model, dan batas pemakaian dapat berubah sehingga angka tersebut harus dikonfirmasi lagi sebelum pembelian organisasi. Dengan kurs acuan Rp16.000 per dolar, Pro setara sekitar Rp320.000 per bulan dan Max sekitar Rp3,2 juta per bulan, belum termasuk pajak, biaya kartu internasional, atau kuota tambahan. Nilai Pro cukup menarik bagi developer yang memakai agen setiap hari, tetapi biaya riil baru masuk akal jika tim mengukur waktu yang benar-benar dihemat pada implementasi, debugging, test, dan review. Paket gratis adalah jalur evaluasi terbaik: gunakan pada satu repo non-sensitif selama satu sprint, catat tingkat perubahan yang diterima tanpa koreksi, lalu bandingkan dengan Cursor, GitHub Copilot, Cline, atau Claude Code menggunakan task yang sama.",
+      "Untuk tim Indonesia, keputusan mengadopsi Cascade harus mencakup lebih dari kualitas demo. Startup dan software house akan mendapat manfaat saat engineer menangani codebase klien yang berbeda-beda karena pencarian konteks, edit multi-file, dan integrasi issue tracker mengurangi waktu orientasi. Namun, source code klien, secret, data pelanggan, dan log produksi perlu dilindungi lewat pengaturan exclusion, kebijakan retention yang sesuai, serta review kontrak untuk paket tim atau enterprise; jangan mengirim file .env hanya karena agen tersedia di editor. Koneksi internet juga menjadi bagian workflow, sehingga tim dengan akses tidak stabil sebaiknya mempertahankan test lokal, dokumentasi repo, dan jalur manual ketika layanan model terganggu. Praktik paling aman tetap sederhana: beri task dengan acceptance criteria jelas, minta agen menjalankan test, baca diff sebelum commit, dan gunakan branch terpisah. Cascade dapat mempercepat developer berpengalaman secara nyata, tetapi tidak menggantikan desain sistem, pemahaman domain, security review, atau tanggung jawab manusia atas kode yang masuk produksi.",
+    ],
+    link: "https://devin.ai/desktop",
+    linkLabel: "Coba Devin Desktop",
+    date: "2026-07-25",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
