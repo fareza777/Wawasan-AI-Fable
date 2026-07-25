@@ -1,0 +1,154 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-25T04:44:48.487Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "amap-cvlab/ABot-World",
+      "owner": "amap-cvlab",
+      "repo": "ABot-World",
+      "description": "Infinite Interactive World Rollout on Single Desktop GPU",
+      "githubUrl": "https://github.com/amap-cvlab/ABot-World",
+      "trendshiftUrl": "https://trendshift.io/repositories/78833",
+      "language": "Python",
+      "topics": [
+        "Computer vision"
+      ],
+      "dateCreated": "2026-04-16T08:47:03Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "The open-source diagnostic for AI misalignment. 32 tests across fabrication, manipulation, deception, unpredictability, and opacity. Provider-agnostic. Runs against OpenAI, Anthropic, Bedrock, Azure, Gemini, and more. Letter grade in under 5 minutes, content-addressed manifest for bit-identical replay. Built by iMe.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "permissionlesstech/bitchat",
+      "owner": "permissionlesstech",
+      "repo": "bitchat",
+      "description": "bluetooth mesh chat, IRC vibes",
+      "githubUrl": "https://github.com/permissionlesstech/bitchat",
+      "trendshiftUrl": "https://trendshift.io/repositories/15069",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2025-07-04T14:34:38Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "andrewyng/openworker",
+      "owner": "andrewyng",
+      "repo": "openworker",
+      "description": "",
+      "githubUrl": "https://github.com/andrewyng/openworker",
+      "trendshiftUrl": "https://trendshift.io/repositories/91434",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-07-20T01:52:32Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "citrolabs/ego-lite",
+      "owner": "citrolabs",
+      "repo": "ego-lite",
+      "description": "The best browser for both you and your AI agents work in parallel.",
+      "githubUrl": "https://github.com/citrolabs/ego-lite",
+      "trendshiftUrl": "https://trendshift.io/repositories/42334",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-16T12:51:09Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "tutti-os/tutti",
+      "owner": "tutti-os",
+      "repo": "tutti",
+      "description": "Where people and agents build in tune.",
+      "githubUrl": "https://github.com/tutti-os/tutti",
+      "trendshiftUrl": "https://trendshift.io/repositories/76475",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-06-12T12:29:05Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "visa/visa-vulnerability-agentic-harness",
+      "owner": "visa",
+      "repo": "visa-vulnerability-agentic-harness",
+      "description": "Visa Vulnerability Agentic Harness",
+      "githubUrl": "https://github.com/visa/visa-vulnerability-agentic-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/49779",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-06-05T00:26:33Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "slvDev/esp32-ai",
+      "owner": "slvDev",
+      "repo": "esp32-ai",
+      "description": "",
+      "githubUrl": "https://github.com/slvDev/esp32-ai",
+      "trendshiftUrl": "https://trendshift.io/repositories/91619",
+      "language": "Python",
+      "topics": [
+        "Local LLM",
+        "IoT"
+      ],
+      "dateCreated": "2026-07-23T14:53:51Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "marcelroed/gigatoken",
+      "owner": "marcelroed",
+      "repo": "gigatoken",
+      "description": "Language model tokenization at GB/s",
+      "githubUrl": "https://github.com/marcelroed/gigatoken",
+      "trendshiftUrl": "https://trendshift.io/repositories/89380",
+      "language": "Rust",
+      "topics": [
+        "NLP"
+      ],
+      "dateCreated": "2025-11-10T02:52:34Z"
+    }
+  ]
+}

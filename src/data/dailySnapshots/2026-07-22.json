@@ -1,0 +1,156 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-22T04:47:25.984Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "koala73/worldmonitor",
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "githubUrl": "https://github.com/koala73/worldmonitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/20793",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM",
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-08T17:26:06Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "lidge-jun/opencodex",
+      "owner": "lidge-jun",
+      "repo": "opencodex",
+      "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "githubUrl": "https://github.com/lidge-jun/opencodex",
+      "trendshiftUrl": "https://trendshift.io/repositories/85670",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "Proxy"
+      ],
+      "dateCreated": "2026-06-18T23:03:18Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "marcelroed/gigatoken",
+      "owner": "marcelroed",
+      "repo": "gigatoken",
+      "description": "Language model tokenization at GB/s",
+      "githubUrl": "https://github.com/marcelroed/gigatoken",
+      "trendshiftUrl": "https://trendshift.io/repositories/89380",
+      "language": "Rust",
+      "topics": [
+        "NLP"
+      ],
+      "dateCreated": "2025-11-10T02:52:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "kungfu-systems/kungfu",
+      "owner": "kungfu-systems",
+      "repo": "kungfu",
+      "description": "Continuity for Agent Work",
+      "githubUrl": "https://github.com/kungfu-systems/kungfu",
+      "trendshiftUrl": "https://trendshift.io/repositories/89666",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2017-11-15T06:54:01Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "earthtojake/text-to-cad",
+      "owner": "earthtojake",
+      "repo": "text-to-cad",
+      "description": "A collection of agent skills for CAD, robotics and hardware design",
+      "githubUrl": "https://github.com/earthtojake/text-to-cad",
+      "trendshiftUrl": "https://trendshift.io/repositories/26559",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "3D generation"
+      ],
+      "dateCreated": "2026-04-22T01:09:45Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "earendil-works/pi",
+      "owner": "earendil-works",
+      "repo": "pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "githubUrl": "https://github.com/earendil-works/pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15471",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-09T14:03:50Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "Claude Code skill to stop it from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    }
+  ]
+}

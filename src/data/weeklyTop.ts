@@ -523,6 +523,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Mendukung 13 coding agent: Claude Code (direkomendasikan dengan Opus 4.7), Codex CLI, OpenCode, Copilot, Cursor, Windsurf, Gemini CLI, Cline, Roo Code, Continue, Amazon Q, Augment, dan Aider — workflow yang sama lintas tool pilihan developer.",
     ],
   },
+  "bojieli/ai-agent-book": {
+    description:
+      "Buku terbuka berbahasa Mandarin dari Li Bojie tentang AI Agent — seluruh 10 bab, PDF versi kompilasi, dan kode contoh per bab tersedia di repo ini untuk dipelajari langsung.",
+    highlights: [
+      "Buku lengkap 《深入理解 AI Agent：设计原理与工程实践》 yang dibuka source — mencakup fondasi Agent = LLM + konteks + tools, rekayasa konteks, memori/RAG, protokol MCP, coding agent, evaluasi, dan multi-agent.",
+      "Setiap bab dipasangkan dengan kode contoh yang sudah di-test dengan API LLM nyata (bukan pseudocode) — terutama bab 5, 8, 9, 10 punya demo end-to-end yang bisa dijalankan ulang untuk eksperimen.",
+      "Pendekatan 'harness engineering' jadi benang merah:核心竞争力 bukan model-nya, melainkan rekayasa di sekelilingnya (prompting, state, tool, memory) — cocok untuk engineer Indonesia yang ingin paham agen secara mendalam, bukan cuma pakai.",
+      "Lisensi terbuka dan markdown-rendered — bisa disusun ulang dengan pandoc/xelatex atau disadur ke bahasa lain; relevan untuk pelajar, dosen, dan tim engineering yang sedang membangun workflow agen di atas Claude Code atau Codex.",
+    ],
+  },
+  "tirth8205/code-review-graph": {
+    description:
+      "Code intelligence graph lokal-pertama untuk MCP dan CLI — bangun peta persisten dari codebase Anda agar coding agent AI hanya membaca bagian yang relevan, dengan reduksi konteks terukur di workflow review dan repo besar.",
+    highlights: [
+      "Mengatasi masalah klasik: AI coding agent sering membakar token karena membaca banyak file sekaligus saat review — code-review-graph mem-bangun knowledge graph struktural via Tree-sitter dan hanya menyajikan konteks yang relevan via MCP.",
+      "Pendekatan lokal-pertama: code graph dibangun dan disimpan di mesin Anda, tidak ada data code ke cloud — kunci untuk tim yang pakai AI coding agent tapi tetap ingin source code-nya stay di internal network.",
+      "Dilengkapi GitHub Action, CLI, dan benchmark terpublikasi untuk Code Review dan large-repo workflow — bukan cuma klaim, melainkan angka reduksi konteks yang bisa Anda reproduksi lewat dokumen REPRODUCING.md.",
+      "Plug ke hampir semua AI coding agent lewat standar MCP (Claude Code, Cursor, Cline, Copilot, dll) dan kompatibel dengan 20+ bahasa lewat Tree-sitter — relevan untuk perusahaan Indonesia yang mulai adopsi coding agent tapi kuatir soal governance dan biaya API.",
+    ],
+  },
+  "Robbyant/lingbot-map": {
+    description:
+      "Foundation model 3D feed-forward untuk rekonstruksi scene dari data streaming — 20 FPS pada 518×378 lebih dari 10.000 frame, dipercepat lewat paged KV cache dan geometric context transformer.",
+    highlights: [
+      "Pendekatan 'streaming 3D reconstruction' yang berbeda dari optimasi iteratif tradisional — arsitektur feed-forward dengan anchor context, pose-reference window, dan trajectory memory menyatukan grounding koordinat, sinyal geometri padat, dan koreksi drift jangka panjang dalam satu framework.",
+      "Performa state-of-the-art di beragam benchmark mengalahkan pendekatan streaming sekaligus iterative optimization-based, dengan klaim ~20 FPS pada 518×378 untuk sequence di atas 10.000 frame — krusial untuk robotika dan pemetaan real-time.",
+      "Ekosistem terbuka: bobot di Hugging Face dan ModelScope, paper di arXiv, plus project page untuk demo — Apache 2.0, sehingga tim riset dan startup bisa fine-tune untuk use case robotika/AR tanpa dependensi proprietary.",
+      "Wawasan AI melihat ini sebagai 'foundation model lapisan spasial' berikutnya setelah LLM — relevan untuk engineer yang riset embodied AI, autonomous driving, atau AR/VR, dan ingin tooling rekonstruksi 3D yang bukan cuma akademis melainkan praktis dan terbuka.",
+    ],
+  },
   "zhaoxuya520/reverse-skill": {
     description:
       "Skill router pack (PowerShell + multi-platform) yang mengubah AI coding agent jadi asisten reverse engineering, authorized pentest, dan CTF — mendukung Claude Code, Kiro, Cursor, Cline, Windsurf, dan Codex.",
@@ -1074,16 +1104,217 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                       ],
                                                     },
                                                     "coreyhaines31/marketingskills": {
-                                                      description:
-                                                        "Kumpulan 45+ skill marketing siap pakai untuk Claude Code, Codex, dan Cursor — copywriting, CRO, SEO, ads, analytics, growth, dan pricing, dirangkai biar AI agent paham funnel end-to-end.",
-                                                      highlights: [
-                                                        "Marketplace 45+ skill marketing yang mengikuti standar Agent Skills — dipasang ke Claude Code, OpenAI Codex, Cursor, Windsurf, atau agen apa pun yang dukung agentskills.io.",
-                                                        "Struktur berlapis: skill `product-marketing` jadi fondasi (dibaca dulu semua skill lain), lalu dikelilingi 6 kluster — SEO & Content, CRO, Copy, Paid & Measurement, Growth & Retention, Sales & GTM — yang saling cross-reference.",
-                                                        "Cakupan yang jarang ditandingi: dari `signup`, `paywalls`, `cro`, `copywriting`, `cold-email`, `ab-testing`, `analytics`, `programmatic-seo`, sampai `pricing`, `churn-prevention`, dan `marketing-psychology` — hampir semua fungsi marketer teknikal ada.",
-                                                        "Dibuat oleh Corey Haines (Conversion Factory) untuk marketer teknis dan founder yang ingin AI coding agent-nya menulis landing page, audit onboarding, atau brainstorm growth loop dengan framework yang sama dengan konsultan senior.",
-                                                      ],
-                                                    },
-                                        };
+                                                        description:
+                                                          "Kumpulan 45+ skill marketing siap pakai untuk Claude Code, Codex, dan Cursor — copywriting, CRO, SEO, ads, analytics, growth, dan pricing, dirangkai biar AI agent paham funnel end-to-end.",
+                                                        highlights: [
+                                                          "Marketplace 45+ skill marketing yang mengikuti standar Agent Skills — dipasang ke Claude Code, OpenAI Codex, Cursor, Windsurf, atau agen apa pun yang dukung agentskills.io.",
+                                                          "Struktur berlapis: skill `product-marketing` jadi fondasi (dibaca dulu semua skill lain), lalu dikelilingi 6 kluster — SEO & Content, CRO, Copy, Paid & Measurement, Growth & Retention, Sales & GTM — yang saling cross-reference.",
+                                                          "Cakupan yang jarang ditandingi: dari `signup`, `paywalls`, `cro`, `copywriting`, `cold-email`, `ab-testing`, `analytics`, `programmatic-seo`, sampai `pricing`, `churn-prevention`, dan `marketing-psychology` — hampir semua fungsi marketer teknikal ada.",
+                                                          "Dibuat oleh Corey Haines (Conversion Factory) untuk marketer teknis dan founder yang ingin AI coding agent-nya menulis landing page, audit onboarding, atau brainstorm growth loop dengan framework yang sama dengan konsultan senior.",
+                                                        ],
+                                                      },
+                                                      "Shubhamsaboo/awesome-llm-apps": {
+                                                        description:
+                                                          "Kurasi 100+ aplikasi LLM siap pakai (agentik & RAG) dari Shubhamsaboo — setiap proyek hand-built, dites end-to-end, dan berlisensi Apache 2.0, lengkap dengan template yang bisa langsung dijalankan bersama Claude, GPT, Gemini, DeepSeek, Llama, atau Qwen.",
+                                                        highlights: [
+                                                          "Repositori kurasi berisi lebih dari 100 aplikasi AI agent dan Retrieval Augmented Generation (RAG) yang siap jalan — bukan daftar link mati, melainkan proyek hand-built yang dites end-to-end dan berlisensi Apache-2.0.",
+                                                          "Fokus menghilangkan jarak antara clone repositori dan URL publik: setiap app punya template runnable yang bisa langsung disambungkan ke Claude, OpenAI GPT, Gemini, DeepSeek, Llama, Qwen, atau model open-source lain lewat konfigurasi terpadu.",
+                                                          "Spektrum aplikasi luas: dari chatbot RAG sederhana, agent multi-step dengan tool-use, sampai workflow agentik kompleks (AI researcher, financial analyst, customer support) — berguna sebagai 'peta' use case nyata sebelum engineer membangun dari nol.",
+                                                          "121k+ bintang di GitHub menjadikannya salah satu referensi 'awesome list' paling aktif untuk komunitas pembangun aplikasi LLM — relevan untuk developer Indonesia yang ingin belajar agentik AI lewat kode jalan, bukan teori.",
+                                                        ],
+                                                      },
+                                                      "HenryNdubuaku/maths-cs-ai-compendium": {
+                                                        description:
+                                                          "Kurasi roadmap belajar terstruktur dari Henry Ndubuaku untuk menjadi 'cracked AI/ML Research Engineer' — matematika, ilmu komputer, dan AI/ML disusun progresif dari fondasi sampai frontier, lengkap dengan paper, lecture, dan resource publik.",
+                                                        highlights: [
+                                                          "Repositori 'cracked' yang merangkum roadmap lengkap untuk calon AI/ML Research Engineer: matematika (kalkulus, aljabar linear, probabilitas), ilmu komputer (algoritma, sistem, teori), dan AI/ML (deep learning, RL, LLM) disusun berurutan dari fondasi sampai frontier.",
+                                                          "Setiap topik dipasangkan dengan resource publik pilihan (paper, buku, lecture video, kursus) — bukan daftar link generik, melainkan kurasi yang mencerminkan jalur belajar yang benar-benar dipakai orang yang masuk lab riset top.",
+                                                          "Pendekatan 'belajar yang dalam' lewat proyek dan paper reading, bukan tutorial cepat — targetnya engineer yang serius transisi ke riset, bukan kursus kilat 'jadi AI engineer dalam 30 hari'.",
+                                                          "Dilengkapi daftar kemampuan 'must-know' (PyTorch, CUDA, distributed training, paper writing) plus panduan karir dan etika riset — relevan untuk mahasiswa dan profesional Indonesia yang ingin serius menapaki karier riset AI/ML.",
+                                                        ],
+                                                      },
+                                                      "HKUDS/DeepTutor": {
+                                                        description:
+                                                          "Tutor AI 'seumur hidup' yang dipersonalisasi dari lab HKU Data Science — bukan chatbot Q&A, melainkan agen yang menghafal konteks belajar, memori, dan materi/sumber Anda untuk menjelaskan konsep dengan cara Anda.",
+                                                        highlights: [
+                                                          "Proyek HKUDS (Hong Kong University Data Science) yang bertujuan jadi 'tutor pribadi sepanjang hayat' — sistem AI yang menyesuaikan cara menjelaskan, kedalaman, dan urutan materi dengan profil belajar spesifik tiap pengguna.",
+                                                          "Pipeline RAG end-to-end: mengindeks buku, paper, dan catatan Anda (PDF, DOCX, markdown), lalu memanggil AI agent untuk menjawab, merangkum, atau membuat soal berdasarkan sumber tersebut — bukan jawaban model dari memori internal.",
+                                                          "Antarmuka web Next.js 16 plus CLI 'agent-native' untuk automasi — ditambah modul 'partner' (diskusi socratic), 'guided learning' (latihan bertahap), dan 'deep research' (riset multi-langkah) dalam satu paket.",
+                                                          "Dikelola tim di balik LightRAG dan proyek agentik terkenal lain — track record kuat di ranah RAG dan personalisasi agen AI, relevan untuk pelajar/peneliti Indonesia yang belajar AI/ML secara mandiri.",
+                                                        ],
+                                                      },
+                                                      "xai-org/grok-build": {
+                                                                                                                description:
+                                                                                                                  "Agen coding TUI resmi dari xAI (SpaceXAI) — 'grok' CLI Rust yang memahami basis kode, edit file, jalankan perintah shell, dan orchestrate task panjang lewat terminal atau ACP di editor.",
+                                                                                                                highlights: [
+                                                                                                                  "Tool coding agent resmi xAI: ditulis Rust, dijalankan sebagai TUI full-screen dengan interaksi mouse, tetapi juga bisa dipakai headless untuk scripting/CI atau dipasang ke editor lewat Agent Client Protocol (ACP).",
+                                                                                                                  "Model-model Grok jadi otak: 'grok' CLI/TUI bukan model terpisah, melainkan harness Rust untuk model xAI yang menulis kode, membaca repo, dan mengeksekusi shell — fokus produktivitas coding agentik di terminal.",
+                                                                                                                  "Instalasi satu baris (curl+bash di Unix, irm+iex di PowerShell) plus biner rilis untuk macOS, Linux, Windows — tidak perlu setup Rust toolchain kecuali mau bangun dari sumber.",
+                                                                                                                  "Arsitektur extensible dengan registry tools, agent loop terpisah dari UI, dan integrasi editor lewat ACP — repositori publik disinkron periodik dari monorepo internal SpaceXAI, jadi fiturnya mengikuti kemampuan production Grok.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                              "Younesfdj/gitfut": {
+                                                                                                                description:
+                                                                                                                  "Generator 'kartu pemain' ala FIFA/FUT untuk profil GitHub — enam sinyal (pace, shooting, passing, dribbling, defending, physical) di-scout langsung dari GraphQL API jadi kartu PNG tinggal embed di README.",
+                                                                                                                highlights: [
+                                                                                                                  "Konsep 'player card ala World Cup/FUT untuk developer': masukkan username GitHub, dapat kartu PNG dengan skor 1–99 plus tier Bronze sampai Icon (90+) yang auto-update tiap commit, star, atau PR baru.",
+                                                                                                                  "Enam stat diambil langsung dari GitHub GraphQL API (bukan self-report): PAC=commits 1 tahun terakhir, SHO=bintang repo, PAS=PR+followers, DRI=diversitas bahasa, DEF=review+issue, PHY=kontribusi lifetime — tiap profil punya 'shape' unik.",
+                                                                                                                  "Embed sekali, kartu re-scout sendiri: `[![My GitFut card](https://gitfut.com/USERNAME.png)](https://gitfut.com/USERNAME)` langsung nyala di README, portfolio, atau bio — tanpa rebuild, tanpa maintenance.",
+                                                                                                                  "Stack modern (Next.js + TypeScript + Tailwind + Redis) plus endpoint publik `gitfut.com/<user>.png` untuk rendering cepat; kustomisasi negara lewat `?country=XX` — cocok untuk developer yang ingin bio GitHub-nya stand out tanpa setup tambahan.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                              "Fei-Away/Codex-Dream-Skin": {
+                                                                                                                description:
+                                                                                                                  "Tool theming untuk Codex desktop (OpenAI) — suntik skin via local CDP tanpa utak-atik installer resmi, ganti background, simpan preset, dan restore ke tampilan default kapan pun.",
+                                                                                                                highlights: [
+                                                                                                                  "Pendekatan 'CDP injection' yang aman: Chrome DevTools Protocol diikat ke 127.0.0.1, tidak menyentuh .app/app.asar/WindowsApps — official binary dan code signing Codex tetap utuh, bukan modifikasi ilegal.",
+                                                                                                                  "Layer tema real (bukan wallpaper tempelan): sidebar, suggestion card, project selector, dan input box adalah native control Codex yang di-skin — fokus bergeser di halaman tugas, ambient tetap terjaga di beranda.",
+                                                                                                                  "Manajemen tema tersimpan lokal di ~/.codex/codex-dream-skin-studio/, plus tray icon di macOS menu bar dan Windows system tray untuk switch preset satu klik, impor background kustom, atau restore ke tampilan resmi.",
+                                                                                                                  "Cross-platform (Apple Silicon/Intel Mac + Windows 10/11) dengan skrip instalasi sekali jalan, prompt generator untuk bikin background 16:9 sendiri, dan delapan preset konsep sebagai titik awal — relevan untuk pengguna Codex harian yang ingin 'atmosfer' lebih personal tanpa risiko kehilangan update resmi.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                              "stupside/castor": {
+                                                                                                                description:
+                                                                                                                  "Tool CLI (Go) yang casts video web ke Smart TV via DLNA/Chromecast — ekstrak stream dari halaman, transcode pakai ffmpeg, dan broadcast ke TV dalam kualitas asli langsung dari terminal.",
+                                                                                                                highlights: [
+                                                                                                                  "Smart TV biasanya menolak cast dari URL web arbitrary dan screen mirroring resolusi turun — Castor ambil stream aslinya lewat headless Chrome + CDP, lalu transcode pakai ffmpeg dan broadcast lewat DLNA/Chromecast full quality.",
+                                                                                                                  "Bisa menerima halaman web, URL stream langsung, atau IMDB/TMDB ID — ada TUI interaktif 'castor cast' yang browse judul dari sumber yang kamu konfigurasi sendiri, plus mode player untuk langsung kirim URL.",
+                                                                                                                  "Whisper.cpp di-bundle untuk auto-generate subtitle dan burn-in langsung ke video sebelum cast — fitur langka di tool casting gratis, berguna untuk nonton konten tanpa subtitle resmi atau translate on-the-fly.",
+                                                                                                                  "Distribusi via Homebrew cask (macOS), Docker image Linux dengan semua dependency (Chrome, ffmpeg, ffprobe) ter-bundle, plus build dari source untuk platform lain — butuh TV satu jaringan dan Chrome/ffmpeg di PATH.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                              "handy-computer/transcribe.cpp": {
+                                                                                                                description:
+                                                                                                                  "Library C/C++ speech-to-text inference berbasis ggml — jalankan 16 keluarga model ASR (Whisper, Parakeet, Canary, Voxtral, Granite, dll) lewat satu runtime dengan backend Metal, Vulkan, CUDA, dan CPU.",
+                                                                                                                highlights: [
+                                                                                                                  "Inference ASR yang model-agnostic lewat format GGUF di runtime ggml — 16 keluarga model STT termasuk Whisper (12 varian), Parakeet, Canary, Voxtral, Granite Speech, SenseVoice, FunASR, Moonshine, dan Nemotron, total 60+ varian yang sudah diverifikasi WER-nya.",
+                                                                                                                  "Backend GPU lengkap dengan Metal (Apple Silicon otomatis), Vulkan (Linux/Windows), dan CUDA (NVIDIA) — plus tinyBLAS Justine Tunney untuk akselerasi CPU ~10-15x di decoder, dengan fallback scalar path kalau OpenBLAS tidak tersedia.",
+                                                                                                                  "Mode streaming dan batch dalam satu library, cocok untuk aplikasi real-time (live caption, meeting note, voice agent) maupun offline transcription file panjang — bisa load model yang sama dengan cara berbeda lewat API yang sama.",
+                                                                                                                  "Semua bobot pre-built di-host di Hugging Face 'handy-computer' dengan quantization lengkap, sehingga deployment lokal tidak perlu convert dari source — relevan untuk developer yang butuh engine transcribe ringan, lintas platform, dan tidak mau lock-in ke satu vendor model.",
+                                                                                                                ],
+                                                                                                              },
+                                                                                                              "microsoft/Ontology-Playground": {
+                                                                                                                description:
+                                                                                                                  "Aplikasi web gratis open-source dari Microsoft untuk belajar ontology dan Microsoft Fabric IQ — eksplorasi katalog ontology siap pakai, desain sendiri secara visual, dan export RDF/XML langsung dari browser tanpa backend.",
+                                                                                                                highlights: [
+                                                                                                                  "Visual designer full-screen dengan live graph preview (Cytoscape.js) yang update tiap kamu tambah entity atau relationship — undo/redo 50 level, real-time validation, dan export RDF/XML atau JSON yang round-trip-tested.",
+                                                                                                                  "Katalog ontology kurasi lintas 6 domain (Retail, E-Commerce, Healthcare, Finance, Manufacturing, Education) yang siap di-load satu klik, plus 'One-Click Catalogue PR' yang otomatis fork repo, commit RDF, dan buka pull request lewat GitHub device flow.",
+                                                                                                                  "Ontology School dengan 9 course terstruktur — dari fundamentals RDF/OWL sampai hands-on lab 'IQ Lab: Retail Supply Chain' yang bangun 15-entity ontology step-by-step, plus presentation mode dan interactive quiz untuk tiap artikel.",
+                                                                                                                  "Zero backend, fully static site (React 19 + TypeScript 5) plus widget embeddable via satu <script> tag yang bisa di-pasang di web mana pun — relevan untuk data engineer, knowledge manager, atau developer Indonesia yang mulai eksplorasi semantic web dan Fabric IQ.",
+                                                                                                                    ],
+                                                                                                                  },
+                                                                                                                  "schollz/croc": {
+                                                                                                                    description:
+                                                                                                                      "Tool CLI lintas-platform untuk kirim file & folder antar komputer tanpa setup server — end-to-end encryption (PAKE), relay, dan jalan di Windows/Linux/Mac lewat satu binary.",
+                                                                                                                    highlights: [
+                                                                                                                      "Transfer file & folder antar dua komputer apa pun lewat satu perintah `croc send <file>` — yang menerima cukup ketik kode 6 karakter, tidak perlu install server, port-forwarding, atau konfigurasi jaringan.",
+                                                                                                                      "End-to-end encryption dengan PAKE (Password-Authenticated Key Exchange) sehingga relay yang jadi perantara tidak bisa baca isi file — IPv6-first dengan fallback IPv4, plus dukungan proxy seperti Tor untuk privasi tambahan.",
+                                                                                                                      "Cross-platform native (Windows/Linux/Mac) dengan instalasi satu baris (`curl https://getcroc.schollz.com | bash` atau `brew install croc`), resume transfer yang terganggu, multi-file, dan mode self-host relay kalau tidak mau pakai relay publik.",
+                                                                                                                      "36k+ bintang GitHub dan masih aktif dipelihara — favorit untuk developer yang malas setup Syncthing/Samba, sysadmin yang sering pindah file antar jump host, atau siapa saja yang perlu 'AirDrop versi internet' tanpa ribet VPN.",
+                                                                                                                    ],
+                                                                                                                  },
+                                                                                                                  "rohitg00/ai-engineering-from-scratch": {
+                                                                                                                    description:
+                                                                                                                      "Kurikulum terbuka 'AI Engineering from Scratch' — belajar, bangun, dan deploy proyek AI secara end-to-end lewat notebook, kode, dan panduan bertahap dari nol sampai siap dipakai orang lain.",
+                                                                                                                    highlights: [
+                                                                                                                      "Pendekatan 'learn it, build it, ship it for others' yang membedakan dari sekadar tutorial teori: tiap modul berisi notebook runnable, implementasi nyata, dan deployment ke publik sehingga portofolio langsung terbentuk.",
+                                                                                                                      "Cakupan bertahap dari prompt engineering, RAG, fine-tuning, sampai deployment LLM ke production — relevan untuk developer Indonesia yang ingin transisi ke role 'AI engineer' tanpa harus ambil program mahal.",
+                                                                                                                      "41k+ bintang GitHub menunjukkan resonansi kuat di komunitas, dengan update berkala mengikuti perkembangan model dan tooling terbaru (LLM agent, eval, observability).",
+                                                                                                                      "Lisensi terbuka dan struktur repo modular — bisa clone sebagian untuk eksperimen sendiri, atau jadikan referensi kurikulum pribadi saat belajar; cocok untuk mahasiswa, freelancer, dan tech lead yang butuh onramp terstruktur ke AI engineering.",
+                                                                                                                    ],
+                                                                                                                  },
+                                                                                                                  "KnockOutEZ/wigolo": {
+                                                                                                                    description:
+                                                                                                                      "Web intelligence lokal-pertama untuk AI agent — search, fetch, crawl, dan extract lewat MCP tanpa API key, tanpa cloud, dan tanpa tagihan per query ($0/query).",
+                                                                                                                    highlights: [
+                                                                                                                      "Satu permukaan terpadu untuk semua hal web bagi AI agent: search, fetch, crawl, extract, cache, find-similar, research, dan autonomous gather loops — dipasang ke Claude Code, Cursor, Codex, Gemini CLI, VS Code, Windsurf, Zed lewat satu `npx wigolo init`.",
+                                                                                                                      "Filosofi 'no API keys, no cloud, no metered bill': engine jalan di mesin kamu, semua data tersimpan di `~/.wigolo/`, dan zero biaya per query — alternatif lokal dari Tavily/Exa/Serper yang sering menambah biaya operasional coding agent.",
+                                                                                                                      "MCP server + REST + SDK sekaligus: bisa dipasang sebagai MCP server di coding agent, endpoint REST untuk self-hosted agent, atau embedded lewat SDK di aplikasi internal — fleksibel untuk workflow apa pun.",
+                                                                                                                      "Setup sekali jalan dengan `npx wigolo init --agents=claude-code,cursor` menulis konfigurasi MCP dan instruksi untuk tiap agent sekaligus, plus `npx wigolo doctor` untuk health check — public beta, AGPL-3.0, relevan untuk tim Indonesia yang ingin hemat biaya API search/fetch untuk agent mereka.",
+                                                                                                                    ],
+                                                                                                                  },
+                                                                                                                  
+  "koala73/worldmonitor": {
+    description:
+      "Dashboard intelijen global real-time — agregasi 500+ feed berita dengan AI, pemantauan geopolitik, dan pelacakan infrastruktur dalam satu antarmuka situational awareness (68k+ bintang).",
+    highlights: [
+      "500+ feed berita terkurasi lintas 15 kategori yang di-sintesis jadi brief oleh AI — bukan timeline mentah, melainkan ringkasan korelasi lintas sumber yang bisa ditindaklanjuti analis.",
+      "Dual map engine: globe 3D (globe.gl) + WebGL flat map (deck.gl) dengan 56 layer tipe — pantau militer, ekonomi, bencana, dan sinyal eskalasi dari satu viewport.",
+      "Country Instability Index (CII) v8 untuk 31 negara Tier-1 plus finance radar 29 bursa, komoditas, dan kripto — angka bukan headline, melainkan skor stres server-authoritative untuk trading dan riset.",
+      "Bisa dijalankan lokal sepenuhnya lewat Ollama (no API key, no cloud) dan hadir sebagai desktop app native Tauri 2 untuk macOS/Windows/Linux — alternatif open-source dari dashboard intelijen komersial yang biasanya mahal.",
+    ],
+  },
+  "vnpy/vnpy": {
+    description:
+      "Framework Python open-source VeighNa untuk quantitative trading (43k+ bintang) — dibangun trader untuk trader, kini punya modul AI/ML khusus untuk strategi kuantitatif.",
+    highlights: [
+      "Platform quant trading terlengkap di komunitas Tionghoa dan kini go-international: multi-broker, multi-pasar (saham, futures, opsi, forex, crypto), backtest engine, dan live trading dalam satu framework Python.",
+      "Modul vnpy.alpha 4.0 yang rilis di hari jadi ke-10 VeighNa: dataset multi-faktor ML, fitur expression engine untuk rekayasa fitur cepat, dan pipeline end-to-end dari training sampai deployment strategi ke live trading.",
+      "Arsitektur modular yang extensibel lewat add-on resmi (risk management, portfolio optimization, data recorder, strategy template) — strategi ditulis sebagai kelas Python yang bisa diuji dan di-deploy konsisten.",
+      "Lisensi MIT dan komunitas aktif 10+ tahun di vnpy.com plus forum resmi — relevan untuk quant trader Indonesia yang ingin bangun infrastruktur trading sendiri tanpa langganan Bloomberg/QuantConnect.",
+    ],
+  },
+  "earthtojake/text-to-cad": {
+    description:
+      "Pustaka skill agen AI khusus CAD, robotika, dan hardware design — generate, inspect, dan export model 3D dari bahasa natural atau gambar, mendukung STEP, STL, 3MF, URDF, dan SDF.",
+    highlights: [
+      "Koleksi skill agen AI yang fokus ke engineering fisik: CAD modeling dari teks/gambar, viewer lokal browser untuk preview, sourcing part STEP off-the-shelf, DXF drawing, dan robot description URDF/SDF/SRDF.",
+      "Output real engineering format — STEP sebagai format utama plus STL, 3MF, GLB; bukan mesh hasil tebakan, melainkan file yang siap dimasukkan ke Fusion 360, FreeCAD, atau simulator robot (Gazebo, MuJoCo).",
+      "Workflow agentik yang bisa dipasang ke Claude Code atau coding agent lain — agent bisa generate bracket, gear housing, atau link robot dari prompt bahasa natural dan langsung export ke file CAD beneran.",
+      "Open source (MIT) dan bagian dari tren 'engineering AI agents' yang lagi naik — relevan untuk maker, insinyur hardware, dan robotics engineer yang ingin asisten AI-nya menghasilkan geometri siap fabrikasi.",
+    ],
+  },
+  "petergyang/no-ai-slop": {
+    description:
+      "Skill anti-AI-slop dari Peter Gyang untuk Claude Code, Codex, dan agen lain — mendeteksi 20+ pola tulisan generik dan menulis ulang draf dengan edit seminimal mungkin, plus laporan 'apa yang berubah'.",
+    highlights: [
+      "Pasang ke Claude Code, Codex, atau agen lain lewat perintah natural — setiap draf yang di-paste lewat /no-ai-slop otomatis dipindai untuk 20+ pola khas tulisan AI (binary contrasts, throat-clearing openers, faux-insight setups, importance puffery, synonym cycling, dan lain-lain).",
+      "Pendekatan 'minimum effective edit': skill ini tidak menulis ulang dari nol, melainkan memperbaiki kalimat yang teridentifikasi bermasalah dan melaporkan apa yang berubah — sehingga gaya personal penulis tidak hilang hanya karena ingin menghilangkan bau AI.",
+      "Mode deteksi terpisah lewat /no-ai-slop is this AI slop? — menghasilkan daftar pola yang ditemukan beserta kutipan per baris, berguna untuk audit sebelum submit atau publish tulisan panjang.",
+      "Dilengkapi eval.md yang berisi pass/fail check yang dijalankan skill terhadap edit-nya sendiri (self-evaluation) — bagian dari personal AI operating system kreatornya, relevan untuk penulis, jurnalis, dan content creator Indonesia yang ingin kualitas tulisan tetap terjaga di era AI.",
+    ],
+  },
+  "block/buzz": {
+    description:
+      "Workspace self-hostable dari Block (Rust) tempat manusia dan agen AI berbagi 'ruang' yang sama lewat Nostr relay — patch kode, review, dan workflow hidup berdampingan sebagai event log dengan tanda tangan kriptografis.",
+    highlights: [
+      "Arsitektur unik: Buzz adalah Nostr relay yang diperlakukan sebagai team workspace — setiap pesan, reaksi, patch, review, dan workflow step adalah event tertandatangani satu log, audit trail seragam apakah aktornya manusia atau agen.",
+      "Agen diperlakukan sebagai anggota tim sejati (bukan bot tempelan): punya keypair sendiri, keanggotaan channel sendiri, jejak audit sendiri — dibanding model 'permission flag', scoping lewat identitas sehingga serangan privilege escalation lebih kecil.",
+      "Fitur konkret yang membedakan: branch jadi ruang berisi patch + CI + review + keputusan merge, voice huddle antar agen dan manusia, canvas kolaboratif, plus orkestrasi agen di dalam channel yang sama.",
+      "Open source (Apache 2.0), ditulis Rust, self-hostable relay sehingga data tim tidak keluar ke cloud Block — relevan untuk founder dan tech lead Indonesia yang ingin workspace AI-augmented dengan privasi dan kontrol penuh.",
+          ],
+        },
+        "permissionlesstech/bitchat": {
+          description:
+            "Aplikasi chat peer-to-peer tanpa akun dari permissionless.tech — arsitektur ganda Bluetooth mesh (offline, 7-hop relay) plus Nostr lewat relay global, native iOS/macOS, public domain.",
+          highlights: [
+            "Arsitektur dual transport: Bluetooth mesh untuk chat offline tanpa internet (multi-hop sampai 7 hop, Noise Protocol E2EE) + Nostr lewat 290+ relay global untuk jangkauan dunia — agen routing otomatis pilih transport terbaik.",
+            "Tanpa akun, tanpa nomor telepon, tanpa identifier persisten — privasi jadi default, bukan fitur tambahan; emergency wipe tinggal triple-tap untuk hapus semua data instan.",
+            "Channel lokasi berbasis geohash (block, neighborhood, city, province, region) lewat Nostr, plus perintah IRC-style (/slap, /msg, /who) — familiar buat pengguna lama, berguna buat koordinasi komunitas lokal.",
+            "Native iOS/macOS (Swift), source code dirilis public domain, dipakai aktif untuk komunikasi darurat, protes, dan daerah bencana — relevan untuk jurnalis, aktivis, dan siapa saja yang butuh chat berfungsi saat internet down.",
+          ],
+        },
+        "Automattic/harper": {
+          description:
+            "Grammar checker offline & privacy-first dari Automattic (Rust) — lokal milidetik, 1/50 memory footprint LanguageTool, dan bisa load via WebAssembly di browser tanpa kirim teks ke server.",
+          highlights: [
+            "Alternatif Grammarly yang 'just right': grammar checker offline berbasis Rust yang berjalan dalam milidetik, footprint memori 1/50 dari LanguageTool (tidak butuh dataset n-gram 16GB), dan 100% lokal tanpa round-trip ke server.",
+            "Pendekatan privacy-first yang konkret: tidak satu pun teks yang ditulis user dikirim keluar dari mesin — menjawab kekhawatiran utama Grammarly yang dipakai LLM training dan telemetry Grammarly yang dianggap invasif.",
+            "Cakupan platform luas: CLI, LSP server untuk editor (harper-ls), integrasi Obsidian (plugin resmi), API WebAssembly (writewithharper.com) untuk embedding di web app, plus library JS harper.js — bukan hanya tool desktop.",
+            "Open source dari Automattic (pembuat WordPress.com) dengan binary release untuk macOS/Windows/Linux dan distribusi npm/cargo — relevan untuk penulis, jurnalis, dan developer Indonesia yang peduli privasi konten tapi tidak mau kompromi pada kualitas grammar.",
+          ],
+        },
+        "alibaba/open-code-review": {
+          description:
+            "Tool CLI code review AI resmi dari Alibaba (Go) — battle-tested di puluhan ribu developer dan jutaan defect, benchmark F1 lebih tinggi dari Claude Code dengan biaya token 1/9-nya.",
+          highlights: [
+            "Asal-usul internal resmi Alibaba yang dipakai puluhan ribu developer dan mendeteksi jutaan defect selama dua tahun — bukan eksperimen, melainkan tool yang sudah lulus validasi skala produksi Alibaba sebelum di-open-source-kan.",
+            "Arsitektur hybrid: pipeline deterministik untuk pola yang sudah jelas (NPE, thread-safety, XSS, SQL injection) + LLM agent dengan tool-use untuk review kontekstual — presisi tinggi, recall terukur, token cost 1/9 dari Claude Code untuk review setara.",
+            "Plug ke coding agent populer (Claude Code, Codex, Cursor) lewat badge resmi 'supported agent' di README, plus CLI Windows/macOS/Linux, output line-level comment, dan mode `ocr scan` untuk audit codebase tanpa diff.",
+            "Benchmark publik 50 repo + 200 PR + 10 bahasa divalidasi 80+ senior engineer (1.505 ground-truth issue) — tooling serius untuk tim engineering yang ingin code review otomatis berkualitas tinggi tanpa biaya API model besar.",
+          ],
+        },
+      };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {

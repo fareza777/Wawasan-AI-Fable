@@ -1,0 +1,151 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-23T04:52:23.045Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "k1tbyte/Wand-Enhancer",
+      "owner": "k1tbyte",
+      "repo": "Wand-Enhancer",
+      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+      "githubUrl": "https://github.com/k1tbyte/Wand-Enhancer",
+      "trendshiftUrl": "https://trendshift.io/repositories/24694",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2024-11-17T20:02:10Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "petergyang/no-ai-slop",
+      "owner": "petergyang",
+      "repo": "no-ai-slop",
+      "description": "Removes 20+ patterns of AI slop from any piece of writing.",
+      "githubUrl": "https://github.com/petergyang/no-ai-slop",
+      "trendshiftUrl": "https://trendshift.io/repositories/90223",
+      "topics": [],
+      "dateCreated": "2026-07-07T05:05:58Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "MIgHTy-alIeN/MEV-Arbitrage-Bot",
+      "owner": "MIgHTy-alIeN",
+      "repo": "MEV-Arbitrage-Bot",
+      "description": "An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
+      "githubUrl": "https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot",
+      "trendshiftUrl": "https://trendshift.io/repositories/86144",
+      "language": "Solidity",
+      "topics": [
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-07-17T09:45:22Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "koala73/worldmonitor",
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "githubUrl": "https://github.com/koala73/worldmonitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/20793",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM",
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-08T17:26:06Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "google-gemini/gemini-cli",
+      "owner": "google-gemini",
+      "repo": "gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "githubUrl": "https://github.com/google-gemini/gemini-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/14376",
+      "language": "TypeScript",
+      "topics": [
+        "NLP",
+        "AI agent"
+      ],
+      "dateCreated": "2025-04-17T17:04:31Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "anomalyco/opencode",
+      "owner": "anomalyco",
+      "repo": "opencode",
+      "description": "The open source coding agent.",
+      "githubUrl": "https://github.com/anomalyco/opencode",
+      "trendshiftUrl": "https://trendshift.io/repositories/17001",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-04-30T20:08:00Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "iptv-org/iptv",
+      "owner": "iptv-org",
+      "repo": "iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "githubUrl": "https://github.com/iptv-org/iptv",
+      "trendshiftUrl": "https://trendshift.io/repositories/730",
+      "language": "TypeScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2018-11-14T22:00:57Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "NousResearch/hermes-agent",
+      "owner": "NousResearch",
+      "repo": "hermes-agent",
+      "description": "The agent that grows with you",
+      "githubUrl": "https://github.com/NousResearch/hermes-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/22055",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2025-07-22T22:22:28Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2026-01-10T06:43:20Z"
+    }
+  ]
+}

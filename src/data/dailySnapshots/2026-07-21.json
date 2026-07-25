@@ -1,0 +1,162 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "21 Juli 2026",
+  "period": {
+    "date": "2026-07-21",
+    "label": "21 Juli 2026",
+    "path": "/repo/daily/2026/07/21"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-21T20:11:50.982Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "tirth8205/code-review-graph",
+      "owner": "tirth8205",
+      "repo": "code-review-graph",
+      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+      "githubUrl": "https://github.com/tirth8205/code-review-graph",
+      "trendshiftUrl": "https://trendshift.io/repositories/23329",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2026-02-26T17:25:13Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "Claude Code skill to stop it from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "githubUrl": "https://github.com/diegosouzapw/OmniRoute",
+      "trendshiftUrl": "https://trendshift.io/repositories/23589",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Proxy"
+      ],
+      "dateCreated": "2026-02-13T12:38:31Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/24667",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-03-18T18:38:02Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "every-app/open-seo",
+      "owner": "every-app",
+      "repo": "open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
+      "githubUrl": "https://github.com/every-app/open-seo",
+      "trendshiftUrl": "https://trendshift.io/repositories/22289",
+      "language": "TypeScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-02-27T18:57:41Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "oblien/openship",
+      "owner": "oblien",
+      "repo": "openship",
+      "description": "Self-hosted deployment platform",
+      "githubUrl": "https://github.com/oblien/openship",
+      "trendshiftUrl": "https://trendshift.io/repositories/38817",
+      "language": "TypeScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-05T20:16:56Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "1jehuang/jcode",
+      "owner": "1jehuang",
+      "repo": "jcode",
+      "description": "Coding Agent Harness",
+      "githubUrl": "https://github.com/1jehuang/jcode",
+      "trendshiftUrl": "https://trendshift.io/repositories/25042",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-01-05T09:43:36Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "koala73/worldmonitor",
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "githubUrl": "https://github.com/koala73/worldmonitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/20793",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM",
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-08T17:26:06Z"
+    }
+  ]
+}
