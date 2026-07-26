@@ -1999,6 +1999,47 @@ export const stacks: Review[] = [
     date: "2026-07-25",
     featured: false,
   },
+  {
+    slug: "comet-browser",
+    name: "Comet Browser",
+    tagline: "Browser AI dari Perplexity yang merangkai riset, belanja, dan email jadi satu alur",
+    tags: ["Perplexity", "Freemium", "Browser", "AI Assistant"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.9 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Comet Browser adalah peramban Chromium dari Perplexity yang menempatkan asisten AI sebagai lapisan utama di atas setiap tab, bukan sebagai sidebar tambahan. Agen Comet dapat membuka tab, membaca halaman, mengeksekusi pencarian, mengisi formulir, berbelanja, menulis email, dan merangkum hasil, semuanya tanpa memaksa pengguna meninggalkan alur kerja di browser. Pengalaman ini terasa paling matang di pasaran untuk kategori AI browser, namun jalur distribusi lewat daftar tunggu, harga langganan dolar, dan ketergantungan pada akun Perplexity membuat posisi produknya lebih mirip akses awal berbayar daripada produk massal.",
+    pros: [
+      "Agen sidekick Comet membuka tab, membandingkan halaman, mengekstrak data, dan mengeksekusi tindakan seperti checkout, reservasi, atau pengiriman email dengan satu instruksi bahasa alami",
+      "Tab yang banyak terasa lebih mudah diatur karena setiap halaman dapat dirangkum, diterjemahkan, atau ditanyakan ulang lewat panel Comet tanpa berpindah konteks",
+      "Semua pencarian utama mengalir lewat mesin Perplexity dengan jawaban yang mencantumkan sumber, sehingga riset ringan tidak lagi terasa seperti menyalin dari daftar sepuluh blue link",
+      "Antarmuka Chromium membuat ekstensi, bookmark, dan kebiasaan browsing sehari-hari tetap berfungsi, sehingga perpindahan dari Chrome atau Edge relatif minim friksi",
+      "Penghargaan Editor's Choice dari PCMag pada akhir 2025 dan liputan positif dari WIRED, The Verge, dan Tom's Guide menandakan bahwa produk ini sudah melewati fase demo",
+    ],
+    cons: [
+      "Akses awal memerlukan daftar tunggu dan harga Comet Plus dilaporkan sekitar USD 5 per bulan dengan paket Max lebih tinggi, sehingga biaya real untuk pengguna Indonesia mengikuti kurs dolar dan kartu internasional",
+      "Agen yang dapat menjalankan tindakan di seluruh akun belanja, email, dan kalender menimbulkan pertanyaan privasi, retensi data, dan kontrol akses yang belum sepenuhnya transparan",
+      "Browser masih sangat bergantung pada satu perusahaan, sehingga granularitas kebijakan enterprise, audit log, dan kepatuhan lokal masih kalah dibanding produk kantor mapan",
+      "Sebagian workflow lanjutan hanya bekerja optimal saat akun Perplexity Pro atau Max aktif, sehingga free tier terasa lebih sebagai pintu perkenalan daripada pengganti Chrome sehari-hari",
+    ],
+    verdict:
+      "Comet kini menjadi benchmark AI browser untuk pengguna yang ingin agen ikut mengeksekusi, bukan sekadar merangkum. Layak dicoba oleh pekerja pengetahuan dan tim riset Indonesia, tetapi keputusan adopsi perlu menimbang daftar tunggu, biaya dolar, dan kebijakan privasi sebelum menjadikannya browser utama.",
+    body: [
+      "Comet memecahkan salah satu kelemahan terbesar era AI generatif: model hanya berhenti di jawaban tertulis, sementara sebagian besar pekerjaan nyata terjadi di dalam tab. Di Comet, bilah pencarian dan panel asisten adalah satu entitas yang sama; pengguna dapat mengetik pertanyaan natural, meminta perbandingan antar halaman, atau memberikan perintah seperti cari penerbangan termurah ke Tokyo akhir pekan ini, buka tiga opsi, lalu ringkas perbedaan bagasinya. Agen Comet akan membuka tab, membaca halaman, mengekstrak data, dan menampilkan ringkasan tanpa pengguna harus menyalin teks atau berpindah ke aplikasi lain. Pola yang sama bekerja untuk belanja, mengisi formulir, menulis email, dan mengelola kalender, sehingga banyak micro-task yang biasanya menuntut banyak klik dapat diselesaikan dalam satu instruksi. Dalam pengujian editorial Wawasan AI, kekuatan utamanya adalah kontinuitas: pengguna tetap berada di halaman yang sama, sementara agen bekerja sebagai rekan yang duduk di samping.",
+      "Fondasi teknis Comet tidak berangkat dari nol, dan itu justru nilai jualnya. Peramban ini dibangun di atas Chromium, sehingga ekstensi Chrome, bookmark, kata sandi yang tersimpan, dan tampilan tab pada dasarnya sama dengan yang sudah dipakai jutaan pengguna. Lapisan Perplexity ditambahkan di atas fondasi itu dengan model Sonar, akses ke hasil pencarian web, dan MCP untuk memanggil alat eksternal. Perplexity mengklaim lebih dari 600 query per detik pada puncaknya, dan integrasi Comet dengan ponsel Android serta iOS memungkinkan pengguna menyambung sesi dari desktop ke ponsel lewat akun yang sama. Penghargaan Editor's Choice PCMag di akhir 2025 dan ulasan positif WIRED, The Verge, dan Tom's Guide memperkuat kesan bahwa produk ini sudah cukup stabil untuk pengguna umum, bukan sekadar prototype media. Dibanding Arc Browser, Comet terasa lebih fokus ke AI dan kurang eksentrik di sisi UI; dibanding SigmaOS, ia lebih konservatif dan lebih mudah dipahami oleh pengguna Chrome lama.",
+      "Harga dan distribusi adalah sisi yang paling cepat berubah. Saat pengecekan editorial, halaman resmi Perplexity menjelaskan bahwa Comet sedang dalam tahap akses bertahap melalui daftar tunggu, dengan paket Comet Plus dilaporkan di kisaran USD 5 per bulan dan Max lebih tinggi untuk kapasitas agen yang lebih besar. Pengguna yang sudah berlangganan Perplexity Pro sekitar USD 20 per bulan atau Max USD 200 per bulan biasanya mendapat akses yang lebih cepat, sementara pengguna gratis dapat mencicipi fitur terbatas. Dengan kurs acuan sekitar Rp16.000 per dolar, Comet Plus setara kira-kira Rp80.000 per bulan, belum termasuk pajak, biaya kartu internasional, atau perbedaan kurs bank lokal. Angka itu masih masuk akal dibanding langganan SaaS produktivitas lain, tetapi bagi pelajar, freelancer, atau UMKM Indonesia yang terbiasa dengan Chrome gratis, lapisan biaya tambahan ini tidak selalu terasa ringan. Perlu juga dicatat bahwa harga ini tetap dalam perubahan dan dapat bergeser saat Comet keluar dari masa beta, sehingga konfirmasi terakhir sebelum berlangganan tetap wajib.",
+      "Untuk penonton Indonesia, Comet menarik pada dua sisi sekaligus. Di satu sisi, dosen, jurnalis, peneliti, dan tim riset yang sering berpindah antara banyak tab dapat menggunakan agen sebagai assisten analisis singkat; mencari perbedaan dua produk, merangkum sembilan laporan, menyusun draf email balasan, atau mengekstrak data dari halaman bahasa Inggris ke catatan lokal akan terasa lebih cepat. Di sisi lain, Comet membawa risiko yang nyata: agen yang dapat mengirim email, checkout, atau mengisi formulir berarti kredensial, cookie, dan rekaman aktivitas dapat tersimpan di server Perplexity untuk jangka waktu yang belum sepenuhnya jelas. Pengguna rumahan perlu memastikan akun email percobaan, kartu kredit dengan limit terbatas, dan mode Incognito dipakai untuk eksperimen awal. Korporasi dan konsultan yang menangani data klien sebaiknya menunggu rilis enterprise dengan kebijakan retensi, audit log, dan kendali admin yang lebih jelas. Comet adalah tonggak yang menarik untuk kategori AI browser, tetapi keputusan adopsinya tetap harus didahului eksperimen dua hingga empat minggu, bukan demo pabrikan.",
+    ],
+    link: "https://www.perplexity.ai/comet",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-26",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
