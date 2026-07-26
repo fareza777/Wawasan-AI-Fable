@@ -2692,6 +2692,55 @@ export const repos: Review[] = [
   updatedAt: "2026-07-25",
   featured: false,
 },
+{
+  slug: "mem0",
+  name: "Mem0",
+  tagline: "Lapisan memori universal untuk AI agent yang belajar lintas percakapan dan sesi",
+  tags: ["AI Agent", "Memory Layer", "Python", "Open Source"],
+  score: 8.8,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.5 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "Mem0 adalah lapisan memori universal open-source untuk AI agent yang menambahkan kemampuan mengingat konteks lintas percakapan, sesi, dan pengguna. Dipakai oleh lebih dari 61 ribu bintang di GitHub dan menjadi salah satu proyek memory layer paling aktif di komunitas agentik, Mem0 memposisikan diri sebagai infrastruktur standar untuk agent yang ingin personalisasi dan kontinuitas tanpa harus merangkai vector database sendiri.",
+  highlights: [
+    "Mesin memori terstruktur yang mengekstrak, menyimpan, dan mengambil fakta relevan dari percakapan - bukan sekadar menyisipkan seluruh history ke prompt LLM",
+    "Arsitektur self-hostable dengan vector database fleksibel: Qdrant, Chroma, pgvector, Elasticsearch, dan opsi managed untuk skala produksi",
+    "Dukungan multi-LLM provider untuk ekstraksi memori: OpenAI, Anthropic, Azure, Ollama lokal, plus opsi tanpa LLM lewat regex dan heuristic rule",
+    "Integrasi plug-and-play dengan framework agent populer seperti LangChain, CrewAI, AutoGen, dan Flowise - tim tidak perlu menulis adapter sendiri",
+    "Fitur scoping memori per user, per agent, dan per run yang granular - berguna untuk aplikasi multi-tenant atau personalisasi agent sesuai profil pengguna",
+    "API Python dan Node.js yang ringan, plus opsi deployment via Docker Compose dan Helm chart untuk kluster Kubernetes",
+    "Lisensi Apache-2.0, aktif dipelihara dengan ritme rilis mingguan dan kontribusi komunitas yang konsisten - aman diadopsi jangka menengah",
+  ],
+  pros: [
+    "Menjawab masalah klasik LLM yang lupa konteks antar sesi tanpa memaksa developer menulis vector store, embedding pipeline, dan retrieval logic sendiri",
+    "Pendekatan plugin-first dengan framework agent mainstream berarti tim yang sudah pakai LangChain atau CrewAI bisa menambahkan memori dalam hitungan jam, bukan minggu",
+    "Skema memori yang terstruktur mengurangi risiko halusinasi karena LLM memiliki grounding fakta yang konsisten lintas sesi, bukan prompt history yang membengkak",
+    "Opsi self-host penuh plus dukungan LLM lokal lewat Ollama membuat data percakapan sensitif bisa tetap di infrastruktur internal tim",
+  ],
+  cons: [
+    "Kualitas ekstraksi memori sangat bergantung pada LLM yang dipakai; dengan model kecil atau prompt seadanya, memori yang tersimpan bisa terlalu generik atau terlalu rapuh",
+    "Untuk workload dengan volume percakapan sangat tinggi, biaya inference LLM untuk ekstraksi memori bisa menjadi item biaya tersendiri yang perlu diperhitungkan",
+    "Komunitas diskusi teknis spesifik bahasa Indonesia masih terbatas; troubleshooting biasanya dilakukan lewat issue GitHub berbahasa Inggris",
+  ],
+  verdict:
+    "Salah satu lapisan memori paling matang untuk AI agent di ekosistem open-source. Layak dipertimbangkan serius oleh tim Indonesia yang membangun asisten personal, chatbot customer support, atau aplikasi agentik yang butuh kontinuitas konteks lintas percakapan tanpa vendor lock-in.",
+  body: [
+    "Salah satu keterbatasan paling terasa dari LLM modern adalah sifatnya yang stateless - setiap percakapan dimulai dari nol, setiap sesi lupa apa yang dibicarakan sesi sebelumnya. Untuk chatbot sederhana ini bukan masalah, tetapi untuk agent yang seharusnya mengenal penggunanya, mengikuti konteks proyek, atau melanjutkan pekerjaan lintas hari, kelupaan ini menjadi penghalang besar. Mem0 dari mem0.ai menjawab tantangan itu dengan lapisan memori universal open-source: komponen terstruktur yang secara otomatis mengekstrak, menyimpan, dan mengambil fakta relevan dari percakapan, lalu menyajikannya kembali ke LLM saat dibutuhkan. Pendekatan ini berbeda dari solusi naif seperti menyisipkan seluruh history ke prompt - yang cepat membengkak dan mahal - atau menulis vector store custom untuk setiap proyek - yang duplikatif dan rentan bug.",
+    "Yang membuat Mem0 menonjol adalah pendekatannya yang framework-agnostic. Library inti bisa dipasang dalam proyek Python atau Node.js, lalu dihubungkan ke vector database pilihan tim - Qdrant untuk performa real-time, Chroma untuk prototipe cepat, pgvector untuk konsolidasi dengan database Postgres yang sudah ada, atau Elasticsearch untuk workload pencarian skala besar. Di sisi LLM, Mem0 mendukung OpenAI, Anthropic, Azure, dan Ollama lokal untuk ekstraksi memori, plus opsi tanpa LLM lewat regex dan heuristic rule untuk skenario yang butuh privasi total atau biaya inference nol. Fleksibilitas ini penting untuk konteks Indonesia: tim yang membangun chatbot customer support untuk bank bisa memilih Ollama lokal agar data nasabah tidak pernah meninggalkan infrastruktur internal, sementara startup yang baru memvalidasi ide bisa mulai dengan OpenAI API dan migrasi ke self-host ketika traffic naik.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah aplikasi agentik yang butuh kontinuitas personal. Contoh konkret: chatbot coaching kesehatan yang harus mengingat riwayat diet, alergi, dan target pengguna dari percakapan minggu lalu; asisten legal internal yang mengikuti konteks kasus yang sama lintas banyak sesi konsultasi; atau agen riset akademik yang membangun knowledge graph pribadi dari diskusi harian tentang paper tertentu. Dengan Mem0, agent-agent ini tidak harus mengirim seluruh history ke LLM di setiap panggilan - mereka cukup mengambil fakta relevan yang sudah terstruktur, sehingga biaya inference turun dan jawaban menjadi lebih konsisten. Integrasi plug-and-play dengan framework seperti LangChain, CrewAI, AutoGen, dan Flowise juga membuat adopsi terasa ringan untuk tim yang sudah punya pondasi agent.",
+    "Bukan berarti tanpa kompromi. Kualitas ekstraksi memori sangat bergantung pada LLM yang dipakai; dengan model kecil atau prompt ringkas, memori yang tersimpan bisa terlalu generik dan kurang berguna untuk retrieval berikutnya. Untuk workload dengan volume percakapan sangat tinggi, biaya inference LLM untuk ekstraksi memori menjadi item biaya tersendiri yang perlu diperhitungkan dalam projection unit economics - tidak gratis, meskipun lebih murah dibanding menyisipkan seluruh history ke prompt. Komunitas diskusi teknis spesifik bahasa Indonesia relatif terbatas, sehingga troubleshooting kadang perlu bertanya di komunitas global atau menerjemahkan issue GitHub berbahasa Inggris. Namun untuk siapa pun yang ingin menambahkan memori jangka panjang ke agent AI tanpa harus membangun vector store dan pipeline embedding sendiri, Mem0 adalah salah satu titik masuk paling pragmatis dan paling matang di ekosistem open-source saat ini.",
+  ],
+  link: "https://github.com/mem0ai/mem0",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-27",
+  updatedAt: "2026-07-27",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
