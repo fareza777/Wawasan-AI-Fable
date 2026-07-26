@@ -1,17 +1,26 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "26 Juli 2026",
-  "period": {
-    "date": "2026-07-26",
-    "label": "26 Juli 2026",
-    "path": "/repo/daily/2026/07/26"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-26T00:05:25.498Z",
+  "fetchedAt": "2026-07-26T04:58:50.548Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "OpenMinis/OpenMinis",
+      "owner": "OpenMinis",
+      "repo": "OpenMinis",
+      "description": "OpenMinis — The AI Agent app across platforms. Open source coming soon.",
+      "githubUrl": "https://github.com/OpenMinis/OpenMinis",
+      "trendshiftUrl": "https://trendshift.io/repositories/50554",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-25T14:35:18Z"
+    },
+    {
+      "rank": 2,
       "fullName": "agentscope-ai/QwenPaw",
       "owner": "agentscope-ai",
       "repo": "QwenPaw",
@@ -29,34 +38,7 @@
       "dateCreated": "2026-02-24T03:42:56Z"
     },
     {
-      "rank": 2,
-      "fullName": "permissionlesstech/bitchat",
-      "owner": "permissionlesstech",
-      "repo": "bitchat",
-      "description": "bluetooth mesh chat, IRC vibes",
-      "githubUrl": "https://github.com/permissionlesstech/bitchat",
-      "trendshiftUrl": "https://trendshift.io/repositories/15069",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2025-07-04T14:34:38Z"
-    },
-    {
       "rank": 3,
-      "fullName": "block/buzz",
-      "owner": "block",
-      "repo": "buzz",
-      "description": "A hive mind communication platform",
-      "githubUrl": "https://github.com/block/buzz",
-      "trendshiftUrl": "https://trendshift.io/repositories/61760",
-      "language": "Rust",
-      "topics": [
-        "AI agent",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-03-06T21:00:56Z"
-    },
-    {
-      "rank": 4,
       "fullName": "andrewyng/openworker",
       "owner": "andrewyng",
       "repo": "openworker",
@@ -71,79 +53,64 @@
       "dateCreated": "2026-07-20T01:52:32Z"
     },
     {
+      "rank": 4,
+      "fullName": "floci-io/floci",
+      "owner": "floci-io",
+      "repo": "floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "githubUrl": "https://github.com/floci-io/floci",
+      "trendshiftUrl": "https://trendshift.io/repositories/25152",
+      "language": "Java",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-02-18T02:28:29Z"
+    },
+    {
       "rank": 5,
-      "fullName": "citrolabs/ego-lite",
-      "owner": "citrolabs",
-      "repo": "ego-lite",
-      "description": "The best browser for both you and your AI agents work in parallel.",
-      "githubUrl": "https://github.com/citrolabs/ego-lite",
-      "trendshiftUrl": "https://trendshift.io/repositories/42334",
-      "language": "JavaScript",
+      "fullName": "exoharness/exo",
+      "owner": "exoharness",
+      "repo": "exo",
+      "description": "",
+      "githubUrl": "https://github.com/exoharness/exo",
+      "trendshiftUrl": "https://trendshift.io/repositories/64498",
+      "language": "Rust",
       "topics": [
         "AI agent"
       ],
-      "dateCreated": "2026-04-16T12:51:09Z"
+      "dateCreated": "2026-05-20T06:21:50Z"
     },
     {
       "rank": 6,
-      "fullName": "CoreBunch/Instatic",
-      "owner": "CoreBunch",
-      "repo": "Instatic",
-      "description": "Instatic is a modern self-hosted visual CMS - get it running in 1 minute",
-      "githubUrl": "https://github.com/CoreBunch/Instatic",
-      "trendshiftUrl": "https://trendshift.io/repositories/66792",
-      "language": "TypeScript",
+      "fullName": "slvDev/esp32-ai",
+      "owner": "slvDev",
+      "repo": "esp32-ai",
+      "description": "",
+      "githubUrl": "https://github.com/slvDev/esp32-ai",
+      "trendshiftUrl": "https://trendshift.io/repositories/91619",
+      "language": "Python",
       "topics": [
-        "Self-hosted",
-        "Headless CMS"
+        "Local LLM",
+        "IoT"
       ],
-      "dateCreated": "2026-04-30T15:48:54Z"
+      "dateCreated": "2026-07-23T14:53:51Z"
     },
     {
       "rank": 7,
-      "fullName": "visa/visa-vulnerability-agentic-harness",
-      "owner": "visa",
-      "repo": "visa-vulnerability-agentic-harness",
-      "description": "Visa Vulnerability Agentic Harness",
-      "githubUrl": "https://github.com/visa/visa-vulnerability-agentic-harness",
-      "trendshiftUrl": "https://trendshift.io/repositories/49779",
-      "language": "Python",
+      "fullName": "nyblnet/bento",
+      "owner": "nyblnet",
+      "repo": "bento",
+      "description": "",
+      "githubUrl": "https://github.com/nyblnet/bento",
+      "trendshiftUrl": "https://trendshift.io/repositories/90379",
+      "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "Pentesting"
+        "Document processing"
       ],
-      "dateCreated": "2026-06-05T00:26:33Z"
+      "dateCreated": "2026-07-17T16:55:09Z"
     },
     {
       "rank": 8,
-      "fullName": "ifixai-ai/iFixAi",
-      "owner": "ifixai-ai",
-      "repo": "iFixAi",
-      "description": "The open-source diagnostic for AI misalignment. 32 tests across fabrication, manipulation, deception, unpredictability, and opacity. Provider-agnostic. Runs against OpenAI, Anthropic, Bedrock, Azure, Gemini, and more. Letter grade in under 5 minutes, content-addressed manifest for bit-identical replay. Built by iMe.",
-      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
-      "trendshiftUrl": "https://trendshift.io/repositories/29638",
-      "language": "Python",
-      "topics": [
-        "AI infrastructure"
-      ],
-      "dateCreated": "2026-04-27T13:02:34Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "marcelroed/gigatoken",
-      "owner": "marcelroed",
-      "repo": "gigatoken",
-      "description": "Language model tokenization at GB/s",
-      "githubUrl": "https://github.com/marcelroed/gigatoken",
-      "trendshiftUrl": "https://trendshift.io/repositories/89380",
-      "language": "Rust",
-      "topics": [
-        "NLP"
-      ],
-      "dateCreated": "2025-11-10T02:52:34Z"
-    },
-    {
-      "rank": 10,
       "fullName": "alibaba/open-code-review",
       "owner": "alibaba",
       "repo": "open-code-review",
@@ -156,6 +123,36 @@
         "AI coding assistant"
       ],
       "dateCreated": "2026-05-18T02:16:36Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "NanmiCoder/MediaCrawler",
+      "owner": "NanmiCoder",
+      "repo": "MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
+      "githubUrl": "https://github.com/NanmiCoder/MediaCrawler",
+      "trendshiftUrl": "https://trendshift.io/repositories/8291",
+      "language": "Python",
+      "topics": [
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2023-06-09T12:14:34Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "block/buzz",
+      "owner": "block",
+      "repo": "buzz",
+      "description": "A hive mind communication platform",
+      "githubUrl": "https://github.com/block/buzz",
+      "trendshiftUrl": "https://trendshift.io/repositories/61760",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-06T21:00:56Z"
     }
   ]
 }
