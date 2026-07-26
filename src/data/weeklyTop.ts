@@ -1312,9 +1312,39 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
             "Arsitektur hybrid: pipeline deterministik untuk pola yang sudah jelas (NPE, thread-safety, XSS, SQL injection) + LLM agent dengan tool-use untuk review kontekstual — presisi tinggi, recall terukur, token cost 1/9 dari Claude Code untuk review setara.",
             "Plug ke coding agent populer (Claude Code, Codex, Cursor) lewat badge resmi 'supported agent' di README, plus CLI Windows/macOS/Linux, output line-level comment, dan mode `ocr scan` untuk audit codebase tanpa diff.",
             "Benchmark publik 50 repo + 200 PR + 10 bahasa divalidasi 80+ senior engineer (1.505 ground-truth issue) — tooling serius untuk tim engineering yang ingin code review otomatis berkualitas tinggi tanpa biaya API model besar.",
-          ],
-        },
-      };
+                      ],
+                    },
+              "andrewyng/openworker": {
+                description:
+                  "AI coworker desktop open-source dari Andrew Ng yang menghantar 'pekerjaan selesai', bukan cuma chat — berjalan lokal, BYOK multi-provider (OpenAI, Anthropic, Google, Ollama), dan minta konfirmasi sebelum aksi destruktif.",
+                highlights: [
+                  "AI coworker lokal-first yang fokus pada deliverable — bukan chat panjang, melainkan dokumen rapi, balasan Slack dengan angka, kalender yang dirapikan, inbox yang sudah ditriage; agent pecah task jadi langkah kerja, eksekusi, lalu minta approval sebelum kirim email atau ubah jadwal.",
+                  "Pendekatan BYOK sejati: pakai API key OpenAI, Anthropic, Google, atau jalankan sepenuhnya lokal lewat Ollama — tanpa lock-in vendor dan tanpa data diam-diam keluar ke server Andrew Ng.",
+                  "Native desktop app untuk macOS (Apple Silicon, signed & notarized dengan auto-update) dan Windows 10/11, plus server agen Python lokal yang berjalan di balik GUI — bukan web app, melainkan 'rekan kerja' yang benar-benar tinggal di mesin kamu.",
+                  "Repositori dari Andrew Ng (6.4k+ bintang per Juni 2026) yang masih beta tapi sudah usable — relevan untuk profesional Indonesia yang mau asisten AI produktivitas tanpa serahkan workflow kantor ke cloud pihak ketiga.",
+                ],
+              },
+              "citrolabs/ego-lite": {
+                description:
+                  "Browser desktop native yang dirancang untuk manusia dan AI agent kerja paralel di tab yang sama — agent jalan di 'Spaces' terpisah, login kamu tidak terganggu, dan otomasi web selesai lebih cepat dengan token lebih hemat.",
+                highlights: [
+                  "Arsitektur dual-mode: tab kamu tetap milik kamu, sementara AI agent punya 'Spaces' terisolasi untuk eksekusi otomasi web — agent bisa klik, login, dan scrape tanpa mengganggu workflow yang lagi kamu jalankan.",
+                  "Login state dipakai bersama dengan aman lewat extension: kamu tidak perlu export-import cookie atau duet manual dengan agent — buka ego, login sekali, agent langsung bisa pakai session yang sama persis seperti browser biasa.",
+                  "Klaim lebih cepat dan lebih hemat token dari framework otomasi web tradisional (browser-use, agent-browser): tidak perlu headless Chrome terpisah, tidak perlu repot setup proxy, dan tidak ada friksi 'agent rebut tab manusia'.",
+                  "Native desktop app (Apple Silicon + Intel macOS, Electron-based) dengan distribusi DMG dan lisensi MIT — relevan untuk developer Indonesia yang pakai Claude Code atau Codex untuk otomasi web dan muak dengan hack session management.",
+                ],
+              },
+              "img2threejs/img2threejs": {
+                description:
+                  "Pipeline image-to-3D yang menulis ulang objek dari gambar referensi sebagai kode Three.js prosedural — bukan mesh extraction, melainkan rekonstruksi animasi-ready yang token-efficient dan quality-gated.",
+                highlights: [
+                  "Pendekatan 'reconstruction-by-code' yang berbeda dari photogrammetry atau unduhan art pack: objek di gambar di-rebuild pakai primitif, shader prosedural, dan generated geometry — outputnya file .ts yang readable, bukan mesh biner yang dipotong ukurannya.",
+                  "Quality-gated dengan animation-ready: setiap rekonstruksi melewati gate kualitas (kesamaan visual, kelengkapan geometri) sebelum dipublish — hasil di showcase (Glock-18, labu, senjata CS2) bisa langsung di-orbit, dianimasikan, dan diinspeksi source-nya.",
+                  "Token-efficient by design: agent AI bisa memakai pipeline ini untuk menghasilkan aset 3D tanpa membakar ribuan token pada mesh extraction atau model difusi — relevan untuk workflow game/film yang ingin integrasi langsung ke pipeline Three.js.",
+                  "Apache 2.0, runtime Python 3.10+ stdlib (tidak butuh dependency berat), plus showcase gallery GitHub Pages sebagai demo langsung di browser — jawaban untuk 'bagaimana cara cepat punya aset 3D prosedural dari referensi gambar'.",
+                ],
+              },
+                  };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
