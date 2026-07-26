@@ -2369,8 +2369,53 @@ export const models: Review[] = [
     date: "2026-07-26",
     featured: false,
   },
+  {
+    slug: "longcat-2-0",
+    name: "LongCat 2.0",
+    tagline:
+      "Model open-weight 135B MoE dari Meituan — coding solid, konteks 1M, lisensi MIT",
+    tags: ["Meituan", "Open Weight", "Coding", "Self-host"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 8.4 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 33.5,
+    aa_coding_index: 45.3,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-27",
+    summary:
+      "LongCat 2.0 adalah model open-weight 135B parameter (arsitektur MoE sparse) yang dirilis Meituan, induk platform lifestyle dan food delivery terbesar di China. Intelligence index 33,5 (sumber: Artificial Analysis) menaruhnya di papan tengah open-weight, tapi coding index 45,3 (sumber: Artificial Analysis) menempatkannya di papan atas untuk kategori open-weight — dan lisensi MIT dengan konteks 1M token membuat model ini menarik untuk deployment sendiri tanpa beban lisensi proprietary.",
+    pros: [
+      "Open-weight dengan lisensi MIT — boleh di-host sendiri, di-fine-tune, dan di-deploy secara komersial tanpa royalti",
+      "Coding index 45,3 (sumber: Artificial Analysis) — berada di papan atas untuk kategori open-weight, di atas banyak model proprietary mid-tier",
+      "Konteks 1M token — bisa menelan repository kode menengah-besar atau dokumen PDF panjang dalam satu sesi tanpa chunking",
+      "Arsitektur MoE 135B dengan aktivasi sparse — TCO inference lebih rendah dari model dense setara di kelas intel yang sama",
+    ],
+    cons: [
+      "Intelligence index 33,5 (sumber: Artificial Analysis) masih di bawah frontier proprietary (Claude Opus 4.5 43,1, GPT-5 44,6) — untuk penalaran murni terberat, model ini tertinggal signifikan",
+      "Brand awareness rendah di luar China — dokumentasi bahasa Inggris, tutorial, dan komunitas developer internasional masih sangat terbatas",
+      "Self-hosting butuh investasi infrastruktur GPU multi-node — 135B MoE tidak berjalan di satu GPU consumer, TCO nyata perlu dihitung cermat",
+      "Throughput output dan TTFT per inference sangat bergantung pada setup hardware — tidak ada jaminan konsistenitas performa antar deployment",
+    ],
+    verdict:
+      "LongCat 2.0 menarik untuk tim Indonesia yang mengutamakan kontrol data, kebebasan deployment, dan biaya inference jangka panjang yang stabil. Untuk penalaran murni kelas atas, frontier proprietary masih memimpin; tapi untuk workload coding dan pipeline pengetahuan internal yang bisa di-host sendiri dengan lisensi MIT, model ini layak masuk radar.",
+    body: [
+      "Meituan, perusahaan lifestyle dan food delivery terbesar di China, memperkenalkan LongCat 2.0 sebagai flagship open-weight yang menyasar ceruk berbeda dari frontier Barat: bukan mengejar skor intelligence absolut, melainkan menawarkan model MoE 135B parameter dengan lisensi MIT, konteks 1M token, dan kemampuan coding yang solid untuk deployment sendiri. Intelligence index 33,5 (sumber: Artificial Analysis) menunjukkan posisi yang realistis untuk kategori open-weight — di atas Gemma 3 dan Llama 4 varian kecil, tapi belum menyamai frontier proprietary seperti Claude Opus 4.5 atau GPT-5. Yang jauh lebih menarik adalah coding index 45,3 (sumber: Artificial Analysis): angka yang menempatkan LongCat 2.0 di papan atas open-weight untuk benchmark pemrograman, mendekati model proprietary mid-tier dan signifikan di atas rata-rata rilis open-weight serupa.",
+      "Pada dimensi teknis, model ini dirancang dengan arsitektur MoE sparse 135B parameter — artinya tidak semua parameter aktif di setiap inference, sehingga TCO inference lebih rendah dari model dense sekelas. Konteks 1M token membuka kemampuan untuk menelan sebuah repository kode menengah-besar atau dokumen PDF panjang dalam satu sesi tanpa chunking, sesuatu yang masih jarang di kelas open-weight. Lisensi MIT menjadi pembeda utama: tidak seperti Llama dengan ketentuan tambahan, atau Qwen dengan batasan regional tertentu, MIT memungkinkan deployment komersial, fine-tuning, dan distribusi ulang tanpa kewajiban atribusi khusus. (Sumber: Artificial Analysis.)",
+      "Signifikansi LongCat 2.0 bagi pembaca Indonesia bukan pada skor intelligence-nya — melainkan pada pilihan strategis yang diwakilinya: ekosistem open-weight makin punya alternatif serius untuk deployment sendiri dengan lisensi bersih. Untuk konsumen yang hanya peduli penalaran murni kelas atas, frontier Barat masih memimpin. Untuk tim engineering Indonesia yang membangun produk internal dengan sensitivitas data — chatbot internal, code assistant on-premise, atau pipeline RAG terhadap dokumen proprietary — model ini adalah opsi yang perlu diperhitungkan, terutama karena lisensi MIT menghilangkan banyak friksi legal yang biasanya muncul saat mengadopsi open-weight berlisensi ketat. Catatan penting: brand awareness di pasar global masih rendah, dokumentasi komunitas minim, dan self-hosting infrastruktur GPU multi-node bukan keputusan kecil. Tapi untuk skenario yang memang membutuhkan model open-weight kelas coding-solid dengan lisensi bersih, value proposition LongCat 2.0 sulit diabaikan. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://longcat.chat/platform",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-27",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
+
   return models.find((m) => m.slug === slug);
 }
