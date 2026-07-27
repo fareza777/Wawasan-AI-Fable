@@ -2417,6 +2417,54 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "strategi-mahasiswa-unm-tetap-relevan-di-era-ai-2026",
+    title: "Strategi Mahasiswa UNM agar Tetap Relevan di Tengah Gelombang Penggantian Pekerjaan oleh AI",
+    excerpt:
+      "Kalangan kampus digital bisnis tidak menunggu gelombang AI selesai — mereka mulai dari kemampuan teknis yang relevan, soft skill yang tak tergantikan, dan kebiasaan belajar yang tidak pernah berhenti.",
+    category: "Analisis",
+    date: "2026-07-28",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ada satu pernyataan yang diulang-ulang di hampir setiap seminar karier tahun 2026: AI akan menggantikan banyak pekerjaan, dan generasi muda yang tidak bersiap akan ketinggalan. Klaimnya tidak salah, tapi juga tidak lengkap. Yang lebih akurat adalah versi yang lebih spesifik — yang diucapkan seorang kepala kampus di Jakarta pada April lalu, dan yang sebenarnya berlaku untuk setiap mahasiswa di Indonesia, tidak peduli apa pun jurusannya. Versi itu kira-kira begini: AI sudah terjadi, dan mahasiswa tidak punya pilihan selain menjadi bagian dari perkembangannya, bukan sekadar pengguna pasif.",
+          "Tulisan ini mencoba membaca ulang pernyataan itu dengan mata kritis, bukan untuk mengulang slogan kampus, melainkan untuk mencari tahu apa yang sebenarnya harus dilakukan seorang mahasiswa Indonesia ketika pekerjaan yang dulu dianggap aman mulai bisa digantikan otomatisasi, dan ketika jurusannya sendiri mungkin tidak lagi menjadi jaminan kerja lima tahun lagi.",
+        ],
+      },
+      {
+        heading: "AI sudah masuk, pekerjaan repetitif mulai tergantikan",
+        paragraphs: [
+          "Data yang dihimpun berbagai laporan industri di awal 2026 menunjukkan arah yang sama: pekerjaan yang bersifat repetitif dan berbasis pola — entri data, rekapitulasi, penyusunan draf awal, hingga analisis dokumen dalam volume besar — sudah mulai diambil alih oleh otomatisasi, baik dalam bentuk pipeline AI generatif maupun agen yang bisa mengeksekusi langkah-langkah kerja. Yang terdampak paling cepat biasanya bukan level manajerial, melainkan level staf yang sehari-hari bekerja dengan dokumen dan spreadsheet dalam jumlah besar.",
+          "Untuk mahasiswa yang baru lulus, ini bukan kabar baik. Tapi berita dari sisi lain sama pentingnya: profesi yang sama sekali tidak ada lima tahun lalu — AI engineer, prompt designer, data analyst untuk produk digital, hingga digital strategist — kini menjadi posisi yang paling banyak dicari di banyak perusahaan. Pergeserannya bukan dari ada ke tidak ada pekerjaan, melainkan dari satu jenis pekerjaan ke jenis pekerjaan lain. Tantangannya ada di mana letak perpindahannya, dan siapa yang siap melompat.",
+        ],
+      },
+      {
+        heading: "Yang tidak bisa digantikan AI",
+        paragraphs: [
+          "Ada satu klaim yang muncul hampir di setiap presentasi AI dan sering terdengar klise, tapi sebenarnya punya isi yang lebih dalam dari yang tampak di permukaan: AI bisa menggantikan pekerjaan tertentu, tapi tidak bisa menggantikan kreativitas dan cara berpikir manusia. Klaim ini bukan slogan kosong, melainkan deskripsi yang lumayan akurat tentang keterbatasan model bahasa dan agen saat ini — mereka bekerja dengan pola, bukan dengan penilaian nilai.",
+          "Untuk mahasiswa, implikasinya langsung terasa. Soft skill seperti berpikir kritis, kemampuan menyusun argumen yang tidak sekadar meyakinkan di permukaan tapi juga tahan terhadap pertanyaan sulit, kreativitas yang berani keluar dari pola umum, dan kemampuan komunikasi yang manusiawi — semuanya adalah wilayah yang sampai sekarang masih menjadi keunggulan kompetitif manusia dibanding AI. Seorang lulusan yang hanya bisa mengikuti prosedur tanpa bisa menjelaskan kenapa prosedur itu ada, akan jauh lebih mudah digantikan dibanding lulusan yang bisa menjelaskan kenapa sebuah keputusan diambil dengan cara tertentu.",
+          "Di sinilah peran pendidikan tinggi seharusnya terlihat jelas: bukan melatih mahasiswa mengikuti algoritma, melainkan melatih mahasiswa untuk bertanya, mempertanyakan, dan membangun argumen. Jurusan yang berhasil menanamkan kemampuan itu — apa pun nama jurusannya — akan lulusannya tetap relevan. Jurusan yang hanya melatih mahasiswa untuk menghasilkan output dengan format tertentu tanpa kemampuan menjelaskan konteks di baliknya, akan mulai ditinggalkan pasar kerja dengan kecepatan yang mungkin belum disadari kampusnya sendiri.",
+        ],
+      },
+      {
+        heading: "Tiga kemampuan yang wajib dibangun sekarang",
+        paragraphs: [
+          "Pertama, kemampuan teknis yang relevan dengan dunia AI generatif. Tidak harus menjadi AI engineer yang memahami arsitektur transformer secara mendalam — itu pekerjaan yang terpisah dan butuh waktu panjang. Tapi minimal memahami cara kerja model bahasa, keterbatasannya, dan bagaimana menulis instruksi yang jelas untuk hasil yang berguna, adalah kemampuan yang relevan untuk hampir semua posisi. Untuk mahasiswa yang sama sekali tidak menyentuh dunia pemrograman, kemampuan ini tetap bisa dibangun lewat alat-alat no-code dan platform otomasi visual yang sudah matang dipakai di industri.",
+          "Kedua, kemampuan belajar sepanjang hayat. Dunia teknologi bergerak dengan kecepatan yang tidak bisa diikuti oleh kurikulum empat tahun. Mahasiswa yang lulus dengan pengetahuan yang dianggap mutakhir di semester pertama akan menemukan pengetahuannya sudah ketinggalan di tahun ketiga. Yang membedakan lulusan yang berhasil dari yang tidak, bukan seberapa banyak yang diketahuinya saat wisuda, melainkan seberapa cepat ia bisa mempelajari hal baru saat dibutuhkan. Ini kebiasaan yang dibangun sejak masih di bangku kuliah, bukan bakat bawaan.",
+          "Ketiga, kemampuan berkolaborasi dengan AI, bukan berlomba melawannya. Beberapa tahun terakhir muncul perasaan bahwa AI adalah pesaing, dan mereka yang piawai menggunakannya dianggap curang atau kurang mumpuni. Pandangan ini sudah mulai ketinggalan zaman. Di dunia kerja 2026, kemampuan menggabungkan keahlian manusia dengan alat AI secara efektif adalah salah satu kemampuan yang paling dicari. Seorang desainer yang piawai menggunakan AI untuk eksplorasi awal lalu memilih dengan mata kritis, akan lebih produktif dibanding desainer yang menolak AI sama sekali atau yang terlalu bergantung padanya tanpa pengawasan.",
+        ],
+      },
+      {
+        heading: "Catatan untuk mahasiswa Indonesia, bukan hanya untuk satu kampus",
+        paragraphs: [
+          "Sumber pernyataan yang menjadi pembuka tulisan ini adalah kepala Kampus Universitas Nusa Mandiri Jatiwaringin pada April 2026. Tapi argumen yang dia bawa tidak spesifik untuk satu kampus saja. Setiap perguruan tinggi di Indonesia hari ini menghadapi pertanyaan yang sama: apakah lulusannya disiapkan untuk dunia yang sudah otomatis, atau untuk dunia yang sudah lama ditinggal? Pertanyaan ini berlaku untuk kampus besar di Jakarta dengan akses ke sumber daya yang melimpah, dan juga untuk kampus di kota-kota kecil yang kadang harus bekerja lebih keras untuk hal yang sama.",
+          "Yang menarik dari cara kampus-kampus yang sudah mulai bergerak adalah mereka tidak menunggu regulasi untuk berubah. Mereka mulai dari yang bisa dilakukan — memperbarui kurikulum dengan masukan dari industri, memberi ruang eksperimen yang aman untuk kegagalan, dan menanamkan kebiasaan belajar yang tidak pernah berhenti. Ini pola yang bisa dicontoh oleh kampus lain, dan yang lebih penting lagi, pola yang bisa dicontoh oleh mahasiswa sendiri tanpa menunggu kampusnya berubah lebih dulu. Belajar sendiri lewat kursus daring, membangun proyek kecil yang bisa ditunjukkan, dan mengikuti perkembangan lewat bacaan yang berkualitas adalah tiga hal yang sepenuhnya bisa dimulai besok pagi.",
+          "Pada akhirnya, argumen yang paling kuat untuk tetap relevan di era AI bukan tentang jurusan, bukan tentang kampus, dan bukan tentang seberapa sering seseorang membuka ChatGPT. Argumen itu adalah tentang kemampuan untuk terus berubah ketika dunia berubah. Mahasiswa yang membangun kebiasaan itu sekarang, di kampus mana pun, akan menemukan dirinya tetap bernilai di lima tahun ke depan. Yang tidak, akan menemukan dirinya bersaing untuk pekerjaan yang sudah diambil alih oleh mesin — dan itu kompetisi yang tidak ada yang ingin dimasuki. Dalam pengujian editorial Wawasan AI, ini bukan prediksi yang pesimis, melainkan deskripsi yang jujur tentang apa yang sedang terjadi di depan mata kita semua.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
