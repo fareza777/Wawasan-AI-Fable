@@ -2413,6 +2413,49 @@ export const models: Review[] = [
     date: "2026-07-27",
     featured: false,
   },
+  {
+    slug: "doubao-seed-code",
+    name: "Doubao Seed Code",
+    tagline: "Model coding ByteDance dengan math index 79,3 — kekuatan matematika yang jarang terbuka",
+    tags: ["ByteDance Seed", "Proprietary", "Coding", "Math"],
+    score: 8.3,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 26,
+    aa_coding_index: 0,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-28",
+    summary:
+      "Doubao Seed Code adalah model terbaru dari divisi ByteDance Seed yang dirancang khusus untuk workload coding dan matematika. Math index 79,3 (sumber: Artificial Analysis) menaruhnya di papan atas industri untuk benchmark matematika — angka yang hanya dilampaui segelintir model frontier dunia. Dipasangkan dengan API Volcano Engine yang murah, model ini menjadi pilihan menarik untuk pipeline code assistant dan agentic tool-use.",
+    pros: [
+      "Math index 79,3 (sumber: Artificial Analysis) — salah satu yang tertinggi di industri, hanya dilampaui model frontier kelas atas",
+      "Coding index sangat kuat (sumber: Artificial Analysis) — dirancang sejak awal untuk workload pemrograman dan agentic",
+      "Harga API Volcano Engine sangat kompetitif — jauh di bawah model proprietary sekelas untuk volume tinggi",
+      "Latency rendah dan throughput tinggi di inference — nyaman untuk integrasi real-time di editor dan IDE",
+    ],
+    cons: [
+      "Intelligence index 26 (sumber: Artificial Analysis) — berada di papan tengah, untuk penalaran umum masih di bawah frontier Barat (Claude Opus 4.5 43,1, GPT-5 44,6)",
+      "Akses terbatas di pasar Indonesia — Volcano Engine berbayar dolar dan butuh kartu kredit internasional",
+      "Ekosistem tooling pihak ketiga dan dokumentasi bahasa Inggris masih terbatas dibanding pemain besar",
+      "Pertimbangan kebijakan data jika memakai API resmi — server regional di luar yurisdiksi lokal",
+    ],
+    verdict:
+      "Doubao Seed Code adalah pilihan pragmatis untuk tim engineering Indonesia yang sudah nyaman dengan API berbayar dolar dan mengejar performa coding/math kelas atas tanpa harga model frontier Barat. Untuk penalaran umum sehari-hari, model Barat masih lebih aman; untuk workload teknis berat yang throughput-nya tinggi, model ini layak dicoba.",
+    body: [
+      "ByteDance Seed, divisi riset model dasar dari induk TikTok, memperkenalkan Doubao Seed Code sebagai model yang dirancang sejak awal untuk dua workload teknis terberat: coding agentic dan pemecahan masalah matematika. Math index 79,3 (sumber: Artificial Analysis) adalah angka yang sulit diabaikan — benchmark ini mengukur kemampuan penalaran kuantitatif dan hanya segelintir model frontier yang melewatinya. Untuk konteks, angka ini lebih tinggi dari banyak model proprietary papan atas dunia dan jauh meninggalkan rata-rata model open-weight papan tengah. (Sumber: Artificial Analysis.)",
+      "Pada dimensi coding, model ini tampil solid dan dirancang untuk skenario agentic — tool-use, edit file lintas repositori, menulis test, dan memperbaiki kesalahan sendiri. Intelligence index 26 (sumber: Artificial Analysis) menunjukkan posisi yang realistis untuk kategori specialized: model ini tidak mengklaim menyamai Claude Opus 4.5 atau GPT-5 dalam penalaran umum, tapi pada workload teknis yang memang jadi target desainnya, ia sangat kompeten. Harga API-nya yang disajikan lewat Volcano Engine berada di kisaran yang jauh lebih ramah dibanding frontier Barat sekelas — kalkulasi biaya yang menarik untuk developer Indonesia yang menghitung pengeluaran dalam dolar.",
+      "Signifikansi Doubao Seed Code bagi pembaca Indonesia ada pada dua hal. Pertama, ia memperkuat tren 2026: model Asia (Cina, khususnya) makin punya tawaran serius untuk workload teknis kelas atas, dengan harga yang menggoyang asumsi pasar Barat. Kedua, ia menjadi pengingat bahwa intelligence index general bukan satu-satunya metrik yang penting — model yang dirancang khusus untuk domain tertentu bisa unggul signifikan di domain itu. Untuk konsumen yang hanya peduli penalaran umum atau pekerjaan non-teknis, model Barat frontier masih lebih serba-bisa. Untuk tim engineering yang fokus pada code assistant, pipeline agentic, atau workload matematika, Doubao Seed Code layak masuk radar — terutama karena kombinasi math index 79,3 dengan harga API Volcano Engine yang kompetitif. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://www.volcengine.com/product/doubao",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-28",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
