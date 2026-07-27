@@ -1,17 +1,65 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "27 Juli 2026",
-  "period": {
-    "date": "2026-07-27",
-    "label": "27 Juli 2026",
-    "path": "/repo/daily/2026/07/27"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-27T00:04:57.457Z",
+  "fetchedAt": "2026-07-27T05:12:30.827Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "vercel-labs/scriptc",
+      "owner": "vercel-labs",
+      "repo": "scriptc",
+      "description": "TypeScript-to-Native Compiler",
+      "githubUrl": "https://github.com/vercel-labs/scriptc",
+      "trendshiftUrl": "https://trendshift.io/repositories/92455",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-07-22T23:04:54Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "citrolabs/ego-lite",
+      "owner": "citrolabs",
+      "repo": "ego-lite",
+      "description": "The best browser for both you and your AI agents work in parallel.",
+      "githubUrl": "https://github.com/citrolabs/ego-lite",
+      "trendshiftUrl": "https://trendshift.io/repositories/42334",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-16T12:51:09Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "img2threejs/img2threejs",
+      "owner": "img2threejs",
+      "repo": "img2threejs",
+      "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+      "githubUrl": "https://github.com/img2threejs/img2threejs",
+      "trendshiftUrl": "https://trendshift.io/repositories/83608",
+      "language": "Python",
+      "topics": [
+        "3D generation"
+      ],
+      "dateCreated": "2026-07-15T02:58:39Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "permissionlesstech/bitchat",
+      "owner": "permissionlesstech",
+      "repo": "bitchat",
+      "description": "bluetooth mesh chat, IRC vibes",
+      "githubUrl": "https://github.com/permissionlesstech/bitchat",
+      "trendshiftUrl": "https://trendshift.io/repositories/15069",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2025-07-04T14:34:38Z"
+    },
+    {
+      "rank": 5,
       "fullName": "andrewyng/openworker",
       "owner": "andrewyng",
       "repo": "openworker",
@@ -26,50 +74,61 @@
       "dateCreated": "2026-07-20T01:52:32Z"
     },
     {
-      "rank": 2,
-      "fullName": "permissionlesstech/bitchat",
-      "owner": "permissionlesstech",
-      "repo": "bitchat",
-      "description": "bluetooth mesh chat, IRC vibes",
-      "githubUrl": "https://github.com/permissionlesstech/bitchat",
-      "trendshiftUrl": "https://trendshift.io/repositories/15069",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2025-07-04T14:34:38Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "agentscope-ai/QwenPaw",
-      "owner": "agentscope-ai",
-      "repo": "QwenPaw",
-      "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
-      "githubUrl": "https://github.com/agentscope-ai/QwenPaw",
-      "trendshiftUrl": "https://trendshift.io/repositories/25882",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI skills",
-        "Local LLM",
-        "Chatbot",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-02-24T03:42:56Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "OpenMinis/OpenMinis",
-      "owner": "OpenMinis",
-      "repo": "OpenMinis",
-      "description": "OpenMinis — The AI Agent app across platforms. Open source coming soon.",
-      "githubUrl": "https://github.com/OpenMinis/OpenMinis",
-      "trendshiftUrl": "https://trendshift.io/repositories/50554",
+      "rank": 6,
+      "fullName": "makecindy/cindy",
+      "owner": "makecindy",
+      "repo": "cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "githubUrl": "https://github.com/makecindy/cindy",
+      "trendshiftUrl": "https://trendshift.io/repositories/93771",
+      "language": "TypeScript",
       "topics": [
         "AI agent"
       ],
-      "dateCreated": "2026-04-25T14:35:18Z"
+      "dateCreated": "2026-07-22T17:49:34Z"
     },
     {
-      "rank": 5,
+      "rank": 7,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "liquidslr/system-design-notes",
+      "owner": "liquidslr",
+      "repo": "system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "githubUrl": "https://github.com/liquidslr/system-design-notes",
+      "trendshiftUrl": "https://trendshift.io/repositories/25235",
+      "topics": [],
+      "dateCreated": "2024-12-24T01:19:44Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "KKKKhazix/khazix-skills",
+      "owner": "KKKKhazix",
+      "repo": "khazix-skills",
+      "description": "数字生命卡兹克开源的 AI Skills 合集",
+      "githubUrl": "https://github.com/KKKKhazix/khazix-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/26738",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-06T07:37:02Z"
+    },
+    {
+      "rank": 10,
       "fullName": "alibaba/open-code-review",
       "owner": "alibaba",
       "repo": "open-code-review",
@@ -82,76 +141,6 @@
         "AI coding assistant"
       ],
       "dateCreated": "2026-05-18T02:16:36Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "citrolabs/ego-lite",
-      "owner": "citrolabs",
-      "repo": "ego-lite",
-      "description": "The best browser for both you and your AI agents work in parallel.",
-      "githubUrl": "https://github.com/citrolabs/ego-lite",
-      "trendshiftUrl": "https://trendshift.io/repositories/42334",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-04-16T12:51:09Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "img2threejs/img2threejs",
-      "owner": "img2threejs",
-      "repo": "img2threejs",
-      "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
-      "githubUrl": "https://github.com/img2threejs/img2threejs",
-      "trendshiftUrl": "https://trendshift.io/repositories/83608",
-      "language": "Python",
-      "topics": [
-        "3D generation"
-      ],
-      "dateCreated": "2026-07-15T02:58:39Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "CoreBunch/Instatic",
-      "owner": "CoreBunch",
-      "repo": "Instatic",
-      "description": "Instatic is a modern self-hosted visual CMS - get it running in 1 minute",
-      "githubUrl": "https://github.com/CoreBunch/Instatic",
-      "trendshiftUrl": "https://trendshift.io/repositories/66792",
-      "language": "TypeScript",
-      "topics": [
-        "Self-hosted",
-        "Headless CMS"
-      ],
-      "dateCreated": "2026-04-30T15:48:54Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "slvDev/esp32-ai",
-      "owner": "slvDev",
-      "repo": "esp32-ai",
-      "description": "",
-      "githubUrl": "https://github.com/slvDev/esp32-ai",
-      "trendshiftUrl": "https://trendshift.io/repositories/91619",
-      "language": "Python",
-      "topics": [
-        "Local LLM",
-        "IoT"
-      ],
-      "dateCreated": "2026-07-23T14:53:51Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "permissionlesstech/bitchat-android",
-      "owner": "permissionlesstech",
-      "repo": "bitchat-android",
-      "description": "bluetooth mesh chat, IRC vibes",
-      "githubUrl": "https://github.com/permissionlesstech/bitchat-android",
-      "trendshiftUrl": "https://trendshift.io/repositories/15109",
-      "language": "Kotlin",
-      "topics": [],
-      "dateCreated": "2025-07-08T18:36:23Z"
     }
   ]
 }
