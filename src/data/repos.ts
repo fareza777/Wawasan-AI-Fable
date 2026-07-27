@@ -2741,6 +2741,54 @@ export const repos: Review[] = [
   updatedAt: "2026-07-27",
   featured: false,
 },
+{
+  slug: "pathway-llm-app",
+  name: "Pathway LLM App",
+  tagline: "Template RAG dan pipeline AI siap-pakai yang tersinkronisasi dengan data realtime",
+  tags: ["RAG", "Pipeline Data", "Python", "Enterprise"],
+  score: 8.6,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 8.5 },
+    { label: "Dokumentasi", value: 9.0 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "Pathway LLM App adalah kumpulan template siap-pakai dari tim Pathway untuk membangun aplikasi RAG, pipeline AI, dan enterprise search yang tersinkronisasi langsung dengan sumber data realtime seperti Sharepoint, Google Drive, S3, Kafka, PostgreSQL, dan berbagai API data live. Diposisikan sebagai jembatan antara data streaming engine dan workload LLM, repositori ini menurunkan barrier masuk untuk tim yang ingin menerapkan AI generatif di atas data internal perusahaan tanpa harus merangkai ETL, vector store, dan retrieval logic dari nol.",
+  highlights: [
+    "Sekitar 30 template end-to-end untuk RAG, AI pipelines, dan enterprise search yang bisa dijalankan dengan satu perintah Docker - tanpa setup boilerplate panjang",
+    "Sinkronisasi native dengan sumber data realtime: Sharepoint, Google Drive, S3, Kafka, PostgreSQL, dan API publik - perubahan di sumber tercermin di indeks retrieval dalam hitungan detik",
+    "Arsitektur Pathway di bawahnya adalah data processing framework Rust-based yang memproses stream dan batch dengan satu API, sehingga pipeline AI tidak perlu ETL terpisah",
+    "Dukungan multi-source join - tim bisa menggabungkan pengetahuan dari PDF di Google Drive, tiket di PostgreSQL, dan event Kafka dalam satu indeks retrieval terpadu",
+    "Kompakbilitas dengan Docker dan docker-compose sehingga proof of concept bisa live dalam hitungan menit di laptop developer",
+    "Lisensi MIT dan aktif dipelihara oleh tim Pathway dengan kontribusi komunitas yang konsisten - rilis berkala dan issue tracker responsif",
+  ],
+  pros: [
+    "Menjawab salah satu titik gesekan terbesar adopsi RAG di enterprise - menyambungkan LLM ke data internal yang tersebar di banyak silo - dengan template yang siap dijalankan, bukan sekadar SDK kosong",
+    "Pendekatan streaming-first membuat pipeline AI selalu 'fresh by default'; tidak perlu scheduler cron atau batch job terpisah untuk menyegarkan indeks retrieval",
+    "Dokumentasi Pathway yang terstruktur dan template yang sudah mencakup banyak use case menurunkan learning curve untuk tim yang baru pertama kali men-deploy sistem RAG produksi",
+    "Lisensi MIT dan self-hostable penuh memberi kebebasan bagi organisasi dengan regulasi data ketat untuk menjaga seluruh data di infrastruktur internal",
+  ],
+  cons: [
+    "Karena ditulis sebagai Jupyter Notebook dengan komponen Python, tim yang.stack-nya sangat JavaScript-first mungkin perlu menambah lapisan adapter sendiri untuk integrasi aplikasi web mereka",
+    "Komunitas diskusi teknis khusus bahasa Indonesia masih terbatas; troubleshooting biasanya dilakukan lewat issue GitHub berbahasa Inggris atau forum Discord global",
+    "Bergantung pada ekosistem Pathway - kalau data processing framework inti kurang aktif dipelihara, repositori turunan ini juga bisa terdampak",
+  ],
+  verdict:
+    "Salah satu titik masuk paling pragmatis untuk tim Indonesia yang ingin menerapkan RAG dan AI pipeline di atas data internal tanpa membangun infrastruktur dari nol. Paling relevan untuk startup B2B dan tim enterprise yang data-nya tersebar di banyak silo realtime.",
+  body: [
+    "Membangun aplikasi AI generatif yang serius dengan data internal perusahaan selalu dimulai dari pertanyaan yang sama: bagaimana cara menyambungkan LLM ke data yang sudah ada di Sharepoint, database PostgreSQL, Kafka stream, dan S3 bucket sekaligus. Pathway LLM App dari tim Pathway menjawab pertanyaan itu dengan pendekatan template-first: sekitar 30 repositori contoh yang masing-masing menunjukkan satu use case RAG, pipeline AI, atau enterprise search secara end-to-end, dari indexasi dokumen PDF internal hingga chatbot dukungan pelanggan yang menyatu dengan knowledge base tiket. Tujuannya bukan menjadi SDK baru yang harus dipelajari, melainkan menjadi kumpulan resep siap masak yang bisa di-clone, dijalankan via Docker, dan disesuaikan dengan data organisasi masing-masing.",
+    "Yang membuat repositori ini menonjol adalah integrasi native-nya dengan sumber data realtime. Banyak framework RAG open-source mengasumsikan data sudah bersih dan terindeks di vector store, padahal di enterprise dunia-nyata data datang dari mana-mana dan terus berubah - dokumen baru diunggah ke Google Drive setiap jam, tiket baru masuk ke Jira, sensor IoT mengirim event ke Kafka. Pathway, sebagai data processing framework yang ditulis dengan Rust untuk performa tinggi, memproses stream dan batch dengan API terpadu; pipeline AI tidak perlu ETL terpisah atau scheduler yang menyegarkan indeks setiap malam. Perubahan di sumber data tercermin di indeks retrieval dalam hitungan detik, sehingga chatbot internal selalu menjawab berdasarkan versi terbaru knowledge base perusahaan.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat terlihat di organisasi dengan data terdistribusi: perusahaan B2B yang memiliki arsip PDF kontrak di Sharepoint, log operasional di S3, dan tabel CRM di PostgreSQL bisa menggabungkan semua itu dalam satu indeks retrieval terpadu lewat template Pathway LLM App. Tim tidak perlu menulis connector untuk setiap silo data, juga tidak perlu vector store terpisah karena Pathway mengelola embedding dan retrieval sebagai bagian dari pipeline streaming-nya. Docker-friendly setup berarti proof of concept bisa live di laptop developer dalam hitungan menit, lalu di-scale ke kluster Kubernetes ketika traffic naik. Dukungan terhadap Ollama lokal juga memberi opsi menarik untuk tim yang ingin menjaga kerahasiaan data melalui self-host penuh.",
+    "Bukan berarti tanpa kompromi. Karena repositori ini ditulis dalam Jupyter Notebook dengan komponen Python, tim yang stack-nya sangat JavaScript-first mungkin perlu menambah lapisan adapter atau API wrapper sendiri untuk diintegrasikan dengan aplikasi web mereka - atau menjalankan notebook di sisi backend Python dan mengekspos endpoint REST ke frontend TypeScript. Komunitas diskusi teknis khusus bahasa Indonesia masih terbatas, sehingga troubleshooting biasanya dilakukan lewat issue GitHub berbahasa Inggris atau forum Discord global. Ada juga ketergantungan pada ekosistem Pathway: kalau data processing framework inti kurang aktif dipelihara dalam dua-tiga tahun ke depan, repositori turunan ini juga bisa terdampak. Namun untuk siapa pun yang ingin menerapkan RAG dan pipeline AI di atas data realtime enterprise tanpa membangun infrastruktur dari nol, Pathway LLM App adalah salah satu titik masuk paling pragmatis di ekosistem open-source saat ini.",
+  ],
+  link: "https://github.com/pathwaycom/llm-app",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-28",
+  updatedAt: "2026-07-28",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
