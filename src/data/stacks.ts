@@ -2040,6 +2040,46 @@ export const stacks: Review[] = [
     date: "2026-07-26",
     featured: false,
   },
+{
+    slug: "tana",
+    name: "Tana",
+    tagline: "Platform meeting agentik yang bikin rapat berakhir dengan kerja selesai",
+    tags: ["Tana", "Freemium", "Agentic Meetings", "Knowledge Graph"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.7 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.3 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Tana bergeser dari outliner Supertags menjadi platform meeting agentik di mana agen AI ikut hadir dalam video call, mencatat keputusan, dan langsung mengeksekusi hasilnya. Integrasi MCP ke GitHub, Slack, Linear, Jira, HubSpot, Cursor, dan Claude Code membuatnya terasa seperti rekan kerja yang punya akses penuh ke tooling tim, bukan sekadar perekam rapat.",
+    pros: [
+      "Agen rapat bisa join video call botless, mencatat keputusan, membuat issue di Linear atau Jira, dan mengirim ringkasan ke Slack lewat satu instruksi bahasa alami",
+      "Setiap keputusan, dokumen, dan diskusi saling tersambung lewat knowledge graph internal, sehingga rapat berikutnya dimulai dengan konteks penuh, bukan halaman kosong",
+      "Dukungan multi-model LLM (Claude, Gemini, OpenAI) lewat abstraksi internal, sehingga tim tidak terkunci pada satu vendor model",
+      "Paket Free 0 dolar cocok untuk eksplorasi; Pro early bird 20 dolar per user per bulan dan Max 80 dolar per user per bulan sudah mencakup MCP dan integrasi penuh",
+      "SOC 2, GDPR, dan HIPAA (kedua compliance terakhir dalam rollout Q3 2026) memberi fondasi kepatuhan untuk tim legal, kesehatan, dan konsultan",
+    ],
+    cons: [
+      "Model harga berbasis dolar dengan paket Pro 20 dolar dan Max 80 dolar per user per bulan bisa terasa mahal bagi tim kecil Indonesia, apalagi setelah early bird berakhir",
+      "Agen yang punya akses ke meeting, kalender, dan tooling internal memerlukan kebijakan privasi, retensi data, dan kontrol admin yang belum sepenuhnya transparan untuk korporasi",
+      "Fungsi utama (botless agent) baru optimal jika tim sudah memakai Zoom, Teams, atau Google Meet — workflow rapat offline atau hybrid tanpa kalender digital tidak mendapat nilai penuh",
+    ],
+    verdict:
+      "Tana adalah pilihan menarik untuk tim yang ingin rapat berakhir dengan hasil konkret, bukan cuma notulensi. Layak dicoba pada paket Free, namun adopsi luas untuk korporasi Indonesia perlu menunggu kepastian kepatuhan dan kestabilan harga pasca early bird.",
+    body: [
+      "Pergeseran paling jelas di Tana pada paruh kedua 2026 adalah posisi produk: dari outliner Supertags yang legendaris di kalangan power user, Tana sekarang membingkai dirinya sebagai platform meeting agentik. Agen Tana bisa join video call lewat integrasi botless ke Zoom, Microsoft Teams, dan Google Meet, mendengarkan percakapan, mengekstrak keputusan, lalu menulis issue ke Linear atau Jira, mengirim pesan ke Slack, atau membuat draf kontrak di HubSpot tanpa pengguna mengangkat tangan. Pada saat yang sama, Outliner dengan Supertags masih hidup di outliner.tana.inc sebagai produk terpisah, sehingga pengguna lama tidak kehilangan fitur notenya. Hasilnya adalah produk yang mencoba menyatukan dua peran yang biasanya terpisah: ruang meeting dan ruang kerja.",
+      "Yang membuat Tana menonjol dibanding AI notetaker seperti Otter, Fireflies, atau Read.ai adalah eksekusi pasca rapat. Notetaker konvensional berhenti di transkrip dan ringkasan; Tana menambahkan lapisan agen yang bisa bertindak atas nama pengguna dengan akses MCP ke Github, Slack, Hubspot, Linear, Jira, Lovable, Google Calendar, Outlook, Claude Code, Codex, Gemini, Cursor, dan Google Workspace (Microsoft 365 dalam roadmap). Untuk product manager yang menerima hasil rapat desain, ini berarti issue bisa langsung terbentuk di backlog tanpa copy paste manual; untuk konsultan yang melayani beberapa klien, brief klien bisa tetap aktual tanpa harus mengingat kembali pembicaraan minggu lalu. Pengujian editorial Wawasan AI menemukan kekuatan utamanya di orkestrasi: setiap rapat menambah konteks ke knowledge graph internal, sehingga rapat berikutnya tidak pernah benar-benar dimulai dari nol.",
+      "Untuk konteks Indonesia, catatan utamanya tetap soal harga dan kepatuhan. Paket Free 0 dolar per bulan sudah mencakup 5 meeting per bulan dengan transkrip dan ringkasan AI, 1 kalender, dan 50 query AI — cukup untuk eksplorasi individu atau freelancer. Paket Pro early bird dibanderol 20 dolar per user per bulan dengan komitmen tahunan atau 30 dolar secara bulanan, dan paket Max early bird 80 dolar atau 120 dolar per user per bulan untuk kapasitas agen yang lebih besar. Dengan kurs acuan sekitar Rp16.000 per dolar, Pro setara kira-kira Rp320.000 per user per bulan tahunan, angka yang mulai terasa untuk startup kecil tetapi masih masuk akal dibanding sewa notetaker komersial plus waktu admin. SOC 2 sudah berlaku, sementara SOC 2 penuh, GDPR, dan HIPAA (dua terakhir) sedang dalam rollout Q3 2026, sehingga untuk industri yang menunggu kepatuhan penuh disarankan memantau pembaruan sebelum adopsi luas. Kebijakan data juga cukup jelas: data milik pengguna, bisa diekspor kapan saja, dan tidak dipakai untuk training model internal.",
+      "Untuk penonton Indonesia, Tana paling masuk untuk tiga profil pengguna. Pertama, tim product, engineering, dan growth yang rapatnya sering berakhir dengan daftar action item yang harus dipindah ke tracker — di sini Tana menggantikan kombinasi notetaker + asisten admin. Kedua, konsultan, agency, dan tim hukum yang menjaga banyak brief klien sekaligus; knowledge graph Tana mengurangi biaya konteks saat berpindah klien. Ketiga, pemimpin tim terdistribusi yang memimpin rapat lintas zona waktu dan sering kehilangan keputusan karena catatan tercecer di chat. Untuk penggunaan pribadi, freelancer, atau UMKM dengan rapat mingguan yang sederhana, paket Free dan Outliner sudah lebih dari cukup; untuk korporasi besar, eksperimen dua hingga empat minggu dengan paket Pro pada satu tim kecil akan memberi gambaran paling jujur tentang nilai yang bisa diklaim ke manajemen.",
+    ],
+    link: "https://tana.inc",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-27",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
