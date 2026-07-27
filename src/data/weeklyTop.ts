@@ -1342,9 +1342,39 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                   "Quality-gated dengan animation-ready: setiap rekonstruksi melewati gate kualitas (kesamaan visual, kelengkapan geometri) sebelum dipublish — hasil di showcase (Glock-18, labu, senjata CS2) bisa langsung di-orbit, dianimasikan, dan diinspeksi source-nya.",
                   "Token-efficient by design: agent AI bisa memakai pipeline ini untuk menghasilkan aset 3D tanpa membakar ribuan token pada mesh extraction atau model difusi — relevan untuk workflow game/film yang ingin integrasi langsung ke pipeline Three.js.",
                   "Apache 2.0, runtime Python 3.10+ stdlib (tidak butuh dependency berat), plus showcase gallery GitHub Pages sebagai demo langsung di browser — jawaban untuk 'bagaimana cara cepat punya aset 3D prosedural dari referensi gambar'.",
-                ],
-              },
-                  };
+                                  ],
+                                },
+                    "earendil-works/pi": {
+                      description:
+                        "Pi Agent Harness (78.9k+ bintang) — toolkit AI agent open-source yang menyatukan runtime multi-provider LLM, agent loop, TUI interaktif, dan coding agent CLI yang bisa self-extend lewat plugin.",
+                      highlights: [
+                        "Empat paket utama dalam satu monorepo: pi-ai (unified LLM API untuk OpenAI, Anthropic, Google), pi-agent-core (runtime + tool calling + state), pi-tui (TUI dengan differential rendering), dan pi-coding-agent (CLI coding agent interaktif).",
+                        "Coding agent yang 'self-extensible' lewat sistem package dan SKILL.md — agent bisa menambah kapabilitas sendiri dengan memuat modul dari npm registry, bukan hanya terbatas pada tool bawaan.",
+                        "Pendekatan keamanan yang pragmatis: tidak ada permission system bawaan (default = user's permission), tapi dokumentasi lengkap untuk containerization via Gondolin (micro-VM), Docker, atau OpenShell sandbox — cocok untuk engineer yang paham security boundary.",
+                        "Bagian dari tren 'extensible coding agent' di mana agent harness diperlakukan sebagai platform, bukan produk tertutup — relevan untuk developer Indonesia yang ingin workflow coding agent-nya sendiri bukan lock-in ke vendor tertentu.",
+                      ],
+                    },
+                    "lidge-jun/opencodex": {
+                      description:
+                        "Proxy lokal universal untuk Codex CLI/SDK, Claude Code, Claude Desktop, dan Grok Build — pakai Claude, Gemini, Grok, DeepSeek, atau model lokal di Codex tanpa nunggu dukungan resmi.",
+                      highlights: [
+                        "Satu proxy lokal yang menerjemahkan Responses API Codex ke provider mana pun (Anthropic, Google, xAI, DeepSeek, Kimi, GLM, Ollama, Groq, OpenRouter) — Codex CLI, App, SDK, dan Claude Code/Grok Build semuanya bisa pakai model non-bawaan lewat setup dua baris.",
+                        "Mendukung subagent lintas provider: Claude Desktop bisa jawab sebagai Opus lalu oper ke subagent GPT-5.6 Sol, Grok Build bisa pakai Kimi K3 di subagent — workflow hybrid tetap di UI native masing-masing.",
+                        "Manajemen pool akun ChatGPT/Codex bawaan: tambah banyak akun, dashboard auto-refresh quota 5h/mingguan/30d, dan session baru otomatis di-route ke akun usage paling rendah, sementara session lama tetap pinned ke akun asalnya agar tidak loncat akun di tengah task.",
+                        "Distribusi ringan (npm install -g @bitkyc08/opencodex, satu proxy di localhost:10100) dengan GUI dashboard, support macOS/Linux/Windows native tanpa WSL — relevan untuk developer multi-langganan yang ingin tool diversity sungguhan tanpa rewrite workflow.",
+                      ],
+                    },
+                    "marcelroed/gigatoken": {
+                      description:
+                        "Tokenizer Rust tercepat untuk LLM (3.6k+ bintang) — drop-in replacement HuggingFace Tokenizers dan tiktoken dengan klaim ~1.000x lebih cepat di throughput encoding GB/s.",
+                      highlights: [
+                        "Tokenizer Rust multi-threaded yang mencapai ~24 GB/s encoding di server 144-core — sekitar 1.000x lebih cepat dari HuggingFace Tokenizers dan ~700x lebih cepat dari tiktoken di benchmark GPT-2/Qwen3/DeepSeek V3.",
+                        "Mode kompatibilitas: `gt.Tokenizer(hf_tokenizer).as_hf()` dan `as_tiktoken()` jadi drop-in replacement — kode yang sudah ada dengan HuggingFace Tokenizers atau tiktoken cukup ganti satu baris import, output tetap identik dengan HF asli.",
+                        "Cakupan tokenizer luas: GPT-2/3/4, Llama 3/4, Qwen 2/3, DeepSeek V3/R1/V4, GLM 4/5, Gemma 1/3/4, Phi-4, ModernBERT, Kimi K2, Nemotron 3 — dukungan lintas model yang jarang ditandingi library tokenizer open-source.",
+                        "Instalasi satu baris (`pip install gigatoken`) plus binding Python — relevan untuk tim ML engineering Indonesia yang preprocessing dataset multi-GB untuk fine-tuning LLM dan sering terbakar bottleneck tokenizer.",
+                      ],
+                    },
+                                    };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
