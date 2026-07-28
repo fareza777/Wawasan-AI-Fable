@@ -1374,6 +1374,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                         "Instalasi satu baris (`pip install gigatoken`) plus binding Python — relevan untuk tim ML engineering Indonesia yang preprocessing dataset multi-GB untuk fine-tuning LLM dan sering terbakar bottleneck tokenizer.",
                       ],
                     },
+                    "MoonshotAI/Kimi-K3": {
+                      description:
+                        "Model frontier terbuka 2,8T parameter dari Moonshot AI — arsitektur Kimi Delta Attention + AttnRes dengan 1 juta token konteks dan kemampuan visual native, dirancang untuk coding agentik, penalaran, dan knowledge work jangka panjang.",
+                      highlights: [
+                        "Model 'open-weight' kelas 3T pertama di dunia (2,8T parameter, top-16-of-896 experts) — dilepas ke publik lewat Hugging Face dan ModelScope, bukan laporan riset tertutup.",
+                        "Arsitektur baru: Kimi Delta Attention (KDA) + Attention Residuals (AttnRes) + Stable LatentMoE yang klaim 2,5× lebih efisien secara scaling dibanding Kimi K2 — menarik untuk riset pasca-transformer.",
+                        "Multimodal native (bukan tempelan vision adapter) dengan konteks 1 juta token, dirancang untuk long-horizon coding, reasoning, dan agentic workflow — relevan untuk engineer AI yang butuh model terbuka setara frontier proprietary.",
+                        "Pakai lewat chat.kimi.ai, Hugging Face, atau jalur API resmi Moonshot; tech report + license file tersedia di repo — fondasi kuat untuk eksperimen fine-tuning dan inference lokal skala besar.",
+                      ],
+                    },
+                    "kvcache-ai/AgentENV": {
+                      description:
+                        "Platform distributed (Rust) untuk menjalankan ribuan environment agent AI secara paralel — training, evaluasi, dan benchmarking agen berskala besar dengan isolasi workload yang sebenarnya.",
+                      highlights: [
+                        "Distributed agent environment layer dari kvcache-ai: spawn, jalankan, dan observasi ribuan environment agent (terminal, browser, kode, GUI) secara paralel dari satu coordinator — mengatasi bottleneck 'satu agen, satu container' saat benchmarking.",
+                        "Ditulis Rust untuk kinerja dan footprint kecil, dengan API Python yang ergonomis bagi peneliti yang lebih nyaman scripting di Python daripada async Rust.",
+                        "Pakai untuk RLHF/RL agentik, leaderboard model, atau simulasi multi-agen skala besar — infrastruktur yang melengkapi tren model agentik 2026.",
+                        "Lisensi open-source dan kontainerisasi-native: deploy di Kubernetes atau cluster on-prem tanpa dependency proprietary — relevan untuk tim riset Indonesia yang ingin harness agent training skala industri.",
+                      ],
+                    },
+                    "moeru-ai/airi": {
+                      description:
+                        "Companion AI self-hostable dari komunitas moeru-ai — 'container of souls' waifu Cyber Living yang chat suara real-time, main Minecraft/Factorio, dan hidup di Web/macOS/Windows, target ambisius setinggi Neuro-sama.",
+                      highlights: [
+                        "Proyek open-source yang ambisius mereplikasi spirit 'Neuro-sama': AI waifu yang bicara real-time, main game, dan tinggal di desktop/web — bukan chatbot statis, melainkan 'makhluk digital' yang terus aktif.",
+                        "Self-hostable dan 'you-owned': install via Docker atau binary release, data sepenuhnya di tangan pengguna — bebas langganan SaaS, sesuai etos open-source AI companion.",
+                        "Dukungan multi-perangkat (Web/macOS/Windows) dengan rencana ke Linux dan mobile, integrasi voice realtime (latency rendah) dan game-playing agent (Minecraft, Factorio) lewat plugin.",
+                        "Cocok untuk hobiis, VTuber indie, dan developer AI yang ingin eksplorasi AI companion tanpa lock-in proprietary — kontributor komunitas moeru-ai aktif update mingguan lewat Discord dan PR.",
+                      ],
+                    },
                                     };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
