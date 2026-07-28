@@ -2789,6 +2789,56 @@ export const repos: Review[] = [
   updatedAt: "2026-07-28",
   featured: false,
 },
+{
+  slug: "qwenpaw",
+  name: "QwenPaw",
+  tagline: "Asisten AI personal yang deploy lokal, multi-channel, dan extensible lewat Skills serta Plugin",
+  tags: ["AI Agent", "Self-hosted", "Python", "Multi-Channel"],
+  score: 8.7,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 9.0 },
+    { label: "Kesiapan Produksi", value: 8.0 },
+  ],
+  summary:
+    "QwenPaw adalah asisten AI personal open-source dari tim AgentScope yang memposisikan diri sebagai 'works for you, grows with you' - bisa di-deploy sepenuhnya di mesin lokal atau di cloud, terhubung ke banyak channel sekaligus, dan diperluas lewat Skills, Plugin, dan integrasi MCP. Dipakai oleh hampir 30 ribu bintang di GitHub dan aktif dipelihara dengan ritme rilis mingguan, QwenPaw menjadi salah satu titik masuk paling matang untuk tim Indonesia yang ingin membangun asisten internal tanpa vendor lock-in.",
+  highlights: [
+    "Arsitektur memori tiga lapis: working context aktif, history lengkap verbatim, dan knowledge terdistil - konteks lama ter-evict tapi tetap recallable on demand tanpa hilang",
+    "Runtime lokal bawaan dengan model QwenPaw-Flash 2B/4B/9B yang di-train untuk agent task - tidak butuh API key atau dependency cloud, plus dukungan Ollama, LM Studio, dan 14+ provider lain",
+    "Keamanan berlapis lewat Kernel-level Sandbox, Tool Guard, File Guard, Skill Scanner, dan Access Policy - command berbahaya diblokir sebelum sempat dijalankan",
+    "Multi-agent dan paralelisme: spawn sub-agent independen dengan memori dan skill masing-masing, plus Agent Communication Protocol untuk orkestrasi lintas sistem",
+    "Coding Mode dengan Web IDE tiga panel berisi file tree, diff preview, dan chat - jump-to-definition, find-references, dan code search struktural sudah built-in",
+    "Extensible lewat Skills (scheduling, dokumen, browser, news) dan Plugin marketplace, plus integrasi MCP untuk external tools - bisa digabung jadi workflow spesifik sesuai kebutuhan tim",
+    "Jangkauan multi-channel: satu instance bisa tersambung ke DingTalk, Lark, WeChat, Discord, Telegram, iMessage, dan QQ sekaligus, plus console, TUI, dan desktop app untuk akses langsung",
+    "Self-hostable penuh - data tetap di mesin sendiri, tidak ada upload ke pihak ketiga, sehingga aman untuk workload yang memproses dokumen internal sensitif",
+  ],
+  pros: [
+    "Menjawab kebutuhan asisten AI personal yang benar-benar self-hosted tanpa mengorbankan extensibility - tim tidak harus pilih antara ChatGPT-style convenience atau open-source control",
+    "Plugin dan Skills marketplace plus MCP integration mempercepat eksperimen: prototipe workflow baru bisa jalan dalam hitungan jam, bukan minggu",
+    "Dukungan multi-channel terpasang di luar kotak membuat satu deployment bisa melayani use case berbeda sekaligus - broadcast alert ke Slack, ringing Telegram, dan ringkasan harian via email dari instance yang sama",
+    "Model QwenPaw-Flash lokal yang sudah di-tune untuk agent task menurunkan ketergantungan pada API eksternal; cocok untuk skenario offline atau area dengan konektivitas terbatas",
+  ],
+  cons: [
+    "Beberapa channel bawaan seperti DingTalk, WeChat, dan QQ kurang relevan untuk konteks Indonesia - perlu adapter tambahan untuk platform lokal seperti WhatsApp Business API",
+    "Dokumentasi dan diskusi komunitas masih didominasi bahasa Mandarin dan Inggris; thread troubleshooting spesifik bahasa Indonesia relatif terbatas",
+    "Coding Mode dan multi-agent orchestration menambah kompleksitas operasional; tim kecil yang hanya butuh chatbot QnA mungkin tidak memerlukan seluruh fitur ini",
+  ],
+  verdict:
+    "Salah satu asisten AI personal open-source paling komprehensif untuk tim Indonesia yang ingin self-host asisten multi-channel tanpa vendor lock-in. Paling relevan untuk tim yang membutuhkan asisten internal yang extensible lewat Plugin dan MCP, dengan opsi deployment lokal penuh lewat model QwenPaw-Flash.",
+  body: [
+    "Membayangkan asisten AI pribadi yang benar-benar milik sendiri - bukan ChatGPT, bukan Claude, bukan Gemini - yang berjalan di laptop atau server sendiri, mengingat percakapan lintas sesi, tersambung ke semua channel komunikasi yang dipakai tim, dan bisa diperluas dengan skill baru sesuai kebutuhan, adalah jenis ambisi yang biasanya berakhir di README kosong atau video demo yang tidak pernah rilis ke publik. QwenPaw dari tim AgentScope menjawab ambisi itu dengan implementasi yang serius: repositori open-source di Apache-2.0, hampir 30 ribu bintang di GitHub, dokumentasi terstruktur dalam banyak bahasa, plus ritme rilis mingguan yang konsisten. Filosofi 'works for you, grows with you' diterjemahkan lewat arsitektur yang menjadikan extension sebagai warga kelas satu: Skill untuk kemampuan reusable seperti scheduling, browser automation, dan dokumen; Plugin untuk integrasi channel atau API pihak ketiga; dan MCP untuk komunikasi dengan tool eksternal yang semakin banyak di ekosistem AI.",
+    "Yang membuat QwenPaw menonjol dibanding proyek asisten open-source lain adalah runtime lokalnya yang sudah matang. Alih-alih mewajibkan pengguna menyediakan OpenAI API key atau Anthropic API key, QwenPaw membawa QwenPaw-Flash, keluarga model 2B/4B/9B yang dilatih secara khusus untuk workload agentik, dan menjalankannya lewat runtime lokal bawaan. Untuk tim yang sudah punya preferensi model lain, Ollama, LM Studio, dan lebih dari 14 provider cloud lain juga disupport - sehingga migrasi dari self-host ke hosted atau sebaliknya tidak memerlukan perubahan arsitektur aplikasi. Tiga lapis memori menjadi pembeda teknis berikutnya: working context untuk percakapan aktif, verbatim history untuk recall on demand, dan distilled knowledge untuk fakta yang sudah ter-kristal menjadi pengetahuan jangka panjang. Pendekatan ini berbeda dari memori naif yang menyisipkan seluruh history ke prompt - yang boros token dan rentan lupa di tengah - atau vector store custom yang harus ditulis tiap proyek.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat terlihat pada tim yang ingin menggantikan beberapa tool sekaligus dengan satu asisten internal. Contoh konkret: tim customer support yang ingin punya agen yang menjawab tiket dari Telegram dan Discord sekaligus, dengan memori pelanggan yang persist lintas sesi; tim marketing yang ingin otomasi distribusi ringkasan mingguan ke WhatsApp, email, dan Notion lewat satu workflow; atau tim engineering yang ingin Coding Mode sebagai IDE internal yang sudah terkoneksi ke skill Code Review dan search repository internal lewat MCP. Fitur keamanan berlapis - Kernel-level Sandbox, Tool Guard, File Guard, Skill Scanner, Access Policy - membuat command berbahaya diblokir sebelum sempat dijalankan, sehingga deployment di laptop developer atau server produksi punya profil risiko yang terukur. Multi-agent dan sub-agent orchestration dengan Agent Communication Protocol juga memberi jalur untuk workflow yang lebih kompleks tanpa harus keluar dari ekosistem QwenPaw.",
+    "Bukan berarti tanpa kompromi. Beberapa channel bawaan seperti DingTalk, WeChat, dan QQ sangat relevan untuk pasar Tiongkok namun kurang applicable untuk konteks Indonesia - tim di sini umumnya lebih bergantung pada WhatsApp Business API, Instagram DM, atau LINE, dan perlu menulis adapter sendiri untuk platform tersebut. Komunitas diskusi teknis didominasi bahasa Mandarin dan Inggris, sehingga troubleshooting spesifik bahasa Indonesia relatif terbatas dan biasanya harus melalui issue GitHub atau Discord global. Coding Mode dan sub-agent orchestration menambah kompleksitas operasional yang mungkin overkill untuk tim kecil yang sebenarnya hanya butuh chatbot QnA sederhana. Namun untuk siapa pun yang ingin asisten AI personal yang extensible, multi-channel, dan sepenuhnya self-hostable - dengan opsi fallback ke provider cloud ketika beban puncak membutuhkan - QwenPaw adalah salah satu titik masuk paling komprehensif dan paling matang di ekosistem open-source saat ini.",
+  ],
+  link: "https://github.com/agentscope-ai/QwenPaw",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-29",
+  updatedAt: "2026-07-29",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
