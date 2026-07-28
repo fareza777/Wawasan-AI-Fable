@@ -2080,6 +2080,48 @@ export const stacks: Review[] = [
     date: "2026-07-27",
     featured: false,
   },
+{
+    slug: "synthesia",
+    name: "Synthesia",
+    tagline: "Platform avatar AI enterprise untuk video multibahasa 130+ bahasa",
+    tags: ["Synthesia", "Paid", "Video Gen", "Enterprise"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.7 },
+      { label: "Ekosistem & Integrasi", value: 8.6 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Synthesia adalah platform video avatar AI enterprise yang memimpin kategori ini sejak 2017: lebih dari 50.000 perusahaan, 160+ avatar, dan 1-Click Translation ke 80+ bahasa dengan lip-sync natural. Bukan tool untuk bikin video sinematik ala Sora atau Runway, melainkan tool untuk mengubah naskah pelatihan atau pengumuman korporasi menjadi video konsisten berskala besar tanpa studio, aktor, atau kamera.",
+    pros: [
+      "Konsistensi visual avatar sangat tinggi untuk video berdurasi singkat hingga menengah: gerak bibir, ekspresi, dan pencahayaan tetap stabil lintas ratusan video",
+      "1-Click Translation ke 80+ bahasa dengan voice cloning yang mempertahankan timbre pembicara asli, sehingga satu video bisa di-repurpose untuk audiens global tanpa rekaman ulang",
+      "Ekspressive Avatars terbaru bisa meniru gestur pembicara profesional (menunjuk, melambaikan tangan, mengangguk) sehingga video korporasi tidak lagi terasa kaku",
+      "API Synthesia menghasilkan 360 menit video per tahun pada paket Creator, dengan workflow approval dan webhook yang cukup matang untuk otomasi skala menengah",
+      "Kepatuhan enterprise kelas berat: SOC 2 Type II, ISO 42001, dan GDPR, ditambah brand kit, SCORM export untuk LMS, dan SAML/SSO pada paket enterprise"
+    ],
+    cons: [
+      "Bukan generator video sinematik: Synthesia tidak menyaingi Runway, Sora, atau Kling untuk adegan aksi, eksplorasi visual, atau shot sinematik panjang",
+      "Paket berbayar relatif tinggi untuk pasar Indonesia: Starter USD 29 per bulan (sekitar Rp 464 ribu) dan Creator USD 89 per bulan (sekitar Rp 1,4 juta), belum termasuk pajak dan biaya kartu internasional",
+      "Watermark Synthesia hanya hilang di paket Starter ke atas; free tier cocok untuk eksperimen, tetapi video produksi tetap butuh langganan",
+      "Personal Avatar butuh rekaman awal beberapa menit; bagi eksekutif atau dosen yang sibuk, menyiapkan materi rekaman pertama sering menjadi bottleneck adopsi",
+      "Kurva adopsi korporasi di Indonesia masih nascent: tidak ada partner lokal resmi, pelatihan berbayar, atau dukungan pelanggan dalam bahasa Indonesia"
+    ],
+    verdict:
+      "Standar de facto untuk video avatar enterprise dan e-learning multibahasa, dengan kepatuhan ISO 42001 dan SOC 2 yang tidak tertandingi oleh pesaing baru. Untuk pengguna Indonesia, layak dipertimbangkan untuk L&D, komunikasi internal, dan onboarding karyawan berskala besar, tetapi harga dolar dan ketiadaan dukungan lokal membuat adopsi di UMKM dan kreator individual perlu diperhitungkan matang.",
+    body: [
+      "Synthesia berdiri sejak 2017 dengan misi yang sejak awal berbeda dari generator video generatif: perusahaan ini tidak berusaha meniru sinema atau efek visual Hollywood, melainkan mengubah naskah teks menjadi video presenter yang konsisten, profesional, dan mudah diperbarui. Setelah hampir satu dekade, hasilnya adalah 50.000+ pelanggan enterprise, 160+ avatar siap pakai, 130+ bahasa, dan lebih dari 2.500 ulasan di G2 dengan skor rata-rata 4,7. Kasus penggunaan yang paling kuat adalah pelatihan dan komunikasi internal, area di mana konsistensi, kepatuhan, dan kemampuan memperbarui konten lebih penting daripada sinematik. Alih-alih menyewa studio, kru, dan aktor untuk setiap pembaruan modul, sebuah tim L&D bisa menulis naskah, memilih avatar, dan menekan tombol render untuk menghasilkan video yang siap di-embed ke LMS.",
+      "Secara teknis, fitur paling relevan di 2026 bukan hanya jumlah avatar, melainkan lapisan Ekspressive Avatars, 1-Click Translation, dan voice cloning. Ekspressive Avatars menambahkan gestur presenter profesional (menunjuk, melambaikan tangan, mengangguk) sehingga video korporasi tidak lagi terasa kaku; 1-Click Translation menerjemahkan satu video ke 80+ bahasa dengan mempertahankan timbre suara asli pembicara lewat voice cloning, lengkap dengan lip-sync natural; sementara API Synthesia memungkinkan integrasi ke pipeline otomasi enterprise, dengan alokasi 360 menit per tahun pada paket Creator. Standar kepatuhan juga kelas berat: SOC 2 Type II, ISO 42001 (kerangka tata kelola AI), dan GDPR, yang menjadikannya salah satu dari sedikit platform avatar AI yang siap dipakai di industri keuangan, kesehatan, dan pemerintahan. Untuk konteks Indonesia, kombinasi 1-Click Translation dengan bahasa Indonesia, Inggris, Mandarin, dan Jepang secara bawaan adalah pembeda yang langsung terasa untuk perusahaan multinasional.",
+      "Paket harga Synthesia disusun untuk menangkap spektrum pengguna yang berbeda. Free seharga USD 0 per bulan cocok untuk eksperimen dengan 9 avatar, 10 menit video per bulan, dan watermark Synthesia. Starter USD 29 per bulan (atau sekitar Rp 464 ribu dengan kurs acuan Rp 16.000 per dolar) menghapus watermark, membuka 125+ avatar, satu Personal Avatar, AI dubbing, dan 120 menit video per tahun. Creator USD 89 per bulan (sekitar Rp 1,4 juta) menambah API, 5 Personal Avatar, 360 menit video per tahun, dan analytics; paket ini adalah titik masuk realistis untuk tim L&D dan marketing yang sudah jalan. Enterprise bersifat custom, membuka 240+ avatar, Personal Avatar tanpa batas praktis, 1-Click Translation ke 80+ bahasa, SAML/SSO, SCORM export, dan SLA. Ada juga promosi musiman yang memberikan 15 menit dubbing gratis per hari hingga pertengahan Agustus 2026, berguna untuk eksplorasi sebelum berlangganan. Dengan struktur seperti ini, Synthesia memang bukan pilihan untuk kreator individual yang sesekali bikin video, melainkan alat produktivitas untuk organisasi yang memproduksi video rutin.",
+      "Untuk pengguna Indonesia, Synthesia paling masuk untuk tiga profil penggunaan. Pertama, tim L&D korporasi dan konsultan yang punya banyak modul pelatihan untuk karyawan atau klien, karena kombinasi 1-Click Translation, voice cloning, dan SCORM export langsung menjawab tantangan pembaruan konten multibahasa; module lama bisa di-refresh dalam hitungan jam, bukan minggu. Kedua, tim komunikasi internal dan humas perusahaan yang perlu mengumumkan kebijakan baru dengan cepat dan konsisten lintas cabang, terutama yang tersebar dari Sabang sampai Merauke dengan audiens multibahasa. Ketiga, agency dan tim marketing yang mengelola video untuk banyak klien dan butuh avatar berbeda tanpa harus menyewa aktor untuk setiap proyek. Kompetitor langsung yang perlu dipertimbangkan antara lain HeyGen (lebih agresif secara fitur real-time avatar, lebih lemah di kepatuhan), D-ID (lebih fokus ke personal avatar dari foto, kurang untuk enterprise), Colossyan (lebih ekonomis untuk tim kecil, lebih sedikit avatar), serta Runway atau Kling untuk video sinematik yang berbeda kategori sama sekali. Saran editorial untuk konteks Indonesia: mulai dari free tier untuk memahami alur dan kualitas avatar, libatkan legal dan tim privasi lebih awal untuk memastikan data naskah dan Personal Avatar sesuai kebijakan internal, dan lakukan uji coba paket Creator selama satu sprint sebelum memutuskan paket enterprise."
+    ],
+    link: "https://www.synthesia.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-28",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
