@@ -2456,6 +2456,51 @@ export const models: Review[] = [
     date: "2026-07-28",
     featured: false,
   },
+
+{
+    slug: "glm-4-7-flash",
+    name: "GLM-4.7-Flash (Reasoning)",
+    tagline: "Varian reasoning murah Z AI — penalaran dengan harga Flash, throughput tinggi",
+    tags: ["Z AI", "Proprietary", "Reasoning", "Murah"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 22.9,
+    aa_coding_index: 0,
+    aa_price_input: 0.07,
+    aa_price_output: 0.4,
+    aa_synced_at: "2026-07-29",
+    summary:
+      "Varian Flash reasoning dari keluarga GLM-4.7 Z AI (Zhipu) yang positioning-nya jelas: penalaran deliberatif dengan harga paling agresif di lineup proprietary Asia. Intelligence index 22,9 (sumber: Artificial Analysis) menaruhnya di papan tengah ke bawah, tapi harga $0,07 per juta token input dan $0,40 output adalah salah satu yang termurah untuk model yang menjalankan fase reasoning eksplisit. Pilihan rasional untuk workload agentic volume tinggi yang sensitif dolar.",
+    pros: [
+      "Harga API paling murah di lineup Z.ai — $0,07 input / $0,40 output per 1M token untuk model dengan fase reasoning",
+      "Throughput tinggi khas varian Flash Z.ai — pipeline inferensi di-tuning untuk responsivitas bukan benchmark absolut",
+      "Integrasi native dengan tool agentic lewat endpoint Anthropic-compatible (Z.ai) — workflow Claude Code tinggal ganti base URL",
+      "Trade-off harga vs kemampuan yang transparan: tahu di mana ia bermain, mudah diposisikan di arsitektur multi-model",
+    ],
+    cons: [
+      "Intelligence index 22,9 (sumber: Artificial Analysis) — di papan tengah ke bawah, untuk penalaran murni terberat masih di bawah GLM-5.2 max atau frontier Barat",
+      "Coding index tidak tersedia di benchmark AA (field null di response API) — kualitas coding agregat perlu diuji sendiri per use case",
+      "Brand awareness di Indonesia masih tipis — banyak developer belum familiar dengan lineup Z.ai vs OpenAI/Anthropic",
+      "Pertimbangan kebijakan data jika memakai API resmi — server regional di luar yurisdiksi lokal",
+    ],
+    verdict:
+      "GLM-4.7-Flash adalah pilihan pragmatis untuk pipeline agentic volume tinggi di mana biaya per inference adalah variabel utama. Untuk penalaran murni terberat atau UX real-time paling premium, GLM-5.2 max atau frontier Barat masih memimpin — tapi untuk summarization batch, klasifikasi, atau tool-use ringan di mana setiap dolar dihitung, model ini sulit dikalahkan.",
+    body: [
+      "Z AI (Zhipu) memperkaya lineup GLM-4.7 dengan varian Flash Reasoning — jawaban mereka untuk ceruk yang selama ini diisi DeepSeek dan Qwen: model reasoning dengan harga paling agresif. Intelligence index 22,9 (sumber: Artificial Analysis) menaruhnya di papan tengah ke bawah proprietary Asia, angka yang realistis untuk model yang sengaja menukar beberapa poin benchmark untuk menekan harga dan mempertahankan throughput varian Flash. Di lineup Z.ai sendiri, ia mengisi slot yang berbeda dari GLM-4.7 Non-reasoning (intelligence index 26,6, lebih tinggi tapi tanpa fase berpikir eksplisit) — Flash Reasoning adalah saudara deliberatifnya dengan harga paling rendah. (Sumber: Artificial Analysis.)",
+      "Pada dimensi ekonomi, GLM-4.7-Flash bermain di kuadran paling agresif untuk model reasoning proprietary: $0,07 per juta token input dan $0,40 output. Untuk konteks, ini 10-15x lebih murah dari GLM-5.2 max di kelas penalaran murni Z.ai, dan 50-100x lebih murah dari Claude Opus 4.5. Bagi developer Indonesia yang menghitung pengeluaran inference dalam dolar per juta token, selisih ini kumulatif dengan cepat pada workload volume tinggi. Throughput khas varian Flash Z.ai — di-tuning untuk pipeline inferensi yang mengukur keberhasilan lewat latensi dan biaya, bukan skor benchmark absolut — menjadikannya menarik untuk workload summarization batch, klasifikasi, atau routing agen ringan di mana fase reasoning dibutuhkan tapi tidak kritis.",
+      "Integrasi teknis adalah kekuatan yang sering terlewat dari lineup Z.ai: GLM-4.7-Flash bisa diakses lewat endpoint Anthropic-compatible di https://api.z.ai/api/anthropic, artinya workflow Claude Code yang sudah dibangun bisa langsung pakai model ini tanpa perubahan kode — cukup set ANTHROPIC_BASE_URL dan ANTHROPIC_AUTH_TOKEN. Untuk tim yang sudah mengandalkan Claude Code sebagai agen harian dan ingin menurunkan tagihan, ini jalur migrasi yang mulus. Coding index tidak tersedia di benchmark Artificial Analysis untuk varian ini (field null di response API), sehingga kualitas coding agregat perlu diuji sendiri per use case spesifik — meski untuk tool-use ringan dan refactor standar, performa khas keluarga GLM-4.7 sudah cukup solid. (Sumber: Artificial Analysis.)",
+      "Signifikansi GLM-4.7-Flash bagi pembaca Indonesia ada pada tiga hal. Pertama, ia memperkuat tren 2026: lineup proprietary Asia makin granular, dengan varian yang di-tuning untuk use case spesifik (reasoning murah, throughput tinggi, multimodal, atau penalaran murni) — bukan sekadar satu model flagship. Kedua, transparansi trade-off-nya — angka intelligence index yang jelas dan harga yang rendah membuat arsitektur multi-model jadi lebih mudah dirancang. Ketiga, akses lewat endpoint Anthropic-compatible menurunkan switching cost bagi tim yang sudah berinvestasi di workflow Claude Code atau tool agentic serupa. Strategi pemakaian yang masuk akal: GLM-4.7-Flash untuk batch reasoning dan tool-use volume tinggi di mana setiap dolar dihitung; GLM-5.2 max untuk sesi penalaran murni terberat; Claude Opus atau GPT-5 untuk UX premium yang paling kritis.",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-29",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
