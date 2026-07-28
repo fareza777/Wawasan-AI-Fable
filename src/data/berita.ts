@@ -2465,6 +2465,47 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+  slug: "wali-kota-sukabumi-evaluasi-peserta-pasca-pelatihan-ai-perkuat-transformasi-digi",
+  title: "Sukabumi Punya Sukasai: Kota Kecil yang Ingin Jadi Pusat Data AI-nya Sendiri",
+  excerpt:
+    "Sukasai, server AI yang disiapkan Wali Kota Sukabumi untuk 35 perangkat daerah, bukan sekadar proyek teknologi — ia adalah soal siapa yang memegang data kota.",
+  category: "Analisis",
+  date: "2026-07-29",
+  readingTime: "7 menit",
+  body: [
+    {
+      paragraphs: [
+        "Pada Rabu pagi di Ruang Utama Balai Kota Sukabumi, Wali Kota H. Ayep Zaki berdiri di depan tiga puluh dua ASN yang memegang sertifikat Pelatihan Artificial Intelligence. Sertifikat itu bukan akhir dari sebuah program, melainkan permulaan dari rencana yang jauh lebih besar: dalam dua tahun ke depan, Pemerintah Kota Sukabumi berjanji akan memiliki server dan sistem kecerdasan buatan sendiri yang mereka beri nama Sukasai, pusat pengelolaan data pemerintahan yang akan menyeduh data kependudukan, kelahiran, kematian, kehamilan, pengangguran, stunting, kemiskinan ekstrem, hingga data disabilitas dari seluruh perangkat daerah dalam satu dashboard real time.",
+        "Pada level permukaan, berita ini terlihat seperti peluncuran teknologi baru di sebuah kota administratif di Jawa Barat. Namun kalau dibaca lebih hati-hati, Sukasai adalah jawaban untuk sebuah pertanyaan yang lebih mendasar yang belum banyak diajukan di Indonesia: ketika data publik kita akhirnya menjadi bahan bakar model AI, siapa yang seharusnya memegang server itu? Dalam pengujian editorial Wawasan AI, Sukabumi adalah salah satu kota pertama yang secara eksplisit menjawab dengan tegas — pemerintah kota sendiri, di infrastruktur sendiri, dengan nama sendiri.",
+      ],
+    },
+    {
+      heading: "Mengapa Sukabumi memilih bangun, bukan menyewa",
+      paragraphs: [
+        "Argumen paling kuat untuk server AI milik sendiri di level kota bukan soal kecanggihan teknologi, melainkan soal kedaulatan data. Bayangkan sebuah dasbor yang memantau angka stunting dari seluruh kelurahan di Kota Sukabumi, diperbarui setiap malam berdasarkan data Posyandu dan rumah sakit. Kalau dasbor itu berjalan di server cloud milik perusahaan teknologi asing, maka setiap malam data kesehatan anak-anak di Sukabumi akan transit melalui server di negara lain. Bukan untuk alasan keamanan saja, melainkan untuk alasan yurisdiksi dan akuntabilitas publik, data ini seharusnya tidak perlu meninggalkan yurisdiksi kota.",
+        "Kedua, server milik sendiri memberi ruang untuk data yang lebih luas dari yang biasanya boleh masuk ke layanan AI publik. Layanan AI komersial umumnya menolak menerima dokumen yang memuat informasi identitas pribadi, data kepegawaian, atau catatan medis. Sementara itu, banyak kebijakan publik justru bergantung pada data-data itu. Sukasai, sebagai server internal, bisa menerima data identitas yang sangat granular selama tetap dipakai untuk kebutuhan internal — misalnya untuk mendeteksi pola kemiskinan ekstrem berdasarkan alamat dan komposisi keluarga, sesuatu yang tidak akan pernah bisa dilakukan oleh AI publik.",
+        "Ketiga, ada alasan politis yang tidak kalah penting. Wali Kota Sukabumi menyebut kebijakan efisiensi belanja pegawai yang akan datang, dan menyebutkan bahwa penguasaan AI akan menjadi kebutuhan dasar ASN. Dua kalimat ini, kalau digabung, bermakna bahwa ASN yang tidak memiliki kemampuan AI akan semakin tidak relevan di struktur anggaran yang lebih ketat. Sukasai adalah pernyataan kelembagaan bahwa kota ini tidak akan menjadi pengguna pasif dari AI milik orang lain, melainkan akan mengoperasikannya sendiri dengan ASN yang sudah terlatih.",
+      ],
+    },
+    {
+      heading: "Apa yang biasanya membuat proyek serupa gagal di daerah lain",
+      paragraphs: [
+        "Bukan berarti jalannya mulus. Ada tiga jebakan klasik yang biasanya menjebak proyek AI di level pemerintah daerah, dan Sukabumi masih harus menghadapinya satu per satu. Jebakan pertama adalah mismatch antara server dan SDM. Banyak daerah membeli perangkat server GPU dengan dana APBD, lalu mengoperasikannya dengan ASN yang tidak mengerti apa yang harus dilakukan dengan server itu. Hasilnya, server menjadi pajangan, dan enam bulan kemudian tidak ada yang berani menyentuhnya karena takut salah. Sukabumi sudah mengambil langkah antisipatif dengan melatih 32 ASN lebih dulu, tapi 32 ASN dari 35 perangkat daerah itu tetap angka yang kecil untuk menghidupi sistem seambisius Sukasai.",
+        "Jebakan kedua adalah data yang berantakan. Banyak pemerintah daerah di Indonesia sudah memiliki sistem informasi — aplikasi untuk kependudukan, aplikasi untuk perizinan, aplikasi untuk pencatatan kelahiran — namun sistem-sistem itu sering tidak saling bicara. Sukasai akan menggabungkan semuanya dalam satu dasbor, dan ketika hari pertama dasbor itu dinyalakan, kemungkinan besar banyak data yang tidak lengkap, tidak konsisten, atau bahkan tidak ada. Membangun pipeline data yang bersih dari nol adalah pekerjaan yang biasanya makan waktu satu sampai dua tahun penuh waktu, dan tidak selalu berhasil.",
+        "Jebakan ketiga adalah resistensi internal. Tidak semua ASN nyaman dengan sistem yang merekam kinerja mereka secara real time, terutama kalau sistem itu dipakai juga untuk menilai kinerja. Sukasai tidak akan langsung bermasalah kalau ia dipakai hanya untuk dasbor informasi publik — namun begitu ia dipakai untuk menilai kinerja perangkat daerah, maka resistensi akan naik dari dalam birokrasi sendiri. Sukabumi belum mengumumkan apakah Sukasai akan dipakai untuk penilaian kinerja, tapi pertanyaan ini akan muncul lebih cepat dari yang mereka perkirakan.",
+      ],
+    },
+    {
+      heading: "Pelajaran untuk 500 lebih kota dan kabupaten di Indonesia",
+      paragraphs: [
+        "Sukabumi bukan kota besar. APBD-nya jauh lebih kecil dibanding kota-kota metropolitan seperti Surabaya, Bandung, atau Makassar. Justru karena itulah, model Sukasai layak diperhatikan oleh ratusan kota dan kabupaten lain yang selama ini merasa tidak punya kapasitas untuk membangun infrastruktur AI sendiri. Biaya GPU kelas menengah yang dibutuhkan untuk server sederhana sudah jauh lebih terjangkau dibanding tiga tahun lalu, dan Ollama, LM Studio, atau VLLM memungkinkan model bahasa dijalankan di server tunggal tanpa harus berlangganan ke layanan cloud.",
+        "Untuk kota dan kabupaten yang ingin meniru Sukabumi, urutan yang disarankan cukup jelas: (1) latih dulu ASN dari berbagai perangkat daerah dengan kurikulum yang tidak hanya mengajarkan cara menulis prompt, melainkan juga cara kerja model bahasa, keterbatasannya, dan cara membaca output dengan mata kritis; (2) inventarisasi seluruh data publik yang sudah ada di pemerintah daerah, lalu petakan mana yang saling terkait; (3) bangun server dengan model lokal yang cukup besar untuk tugas ringkasan dan tanya jawab, lalu hubungkan ke dasbor internal; (4) batasi akses dengan kebijakan yang tegas soal data mana yang boleh keluar ke AI publik dan mana yang wajib tetap di dalam server sendiri.",
+        "Di tingkat nasional, pelajaran yang lebih besar dari Sukasai bukan tentang teknologinya, melainkan tentang keberanian untuk berpikir dalam horizon dua tahun. ASN yang hari ini dilatih untuk menulis prompt akan menjadi operator server AI dua tahun dari sekarang, dan itu bukan perubahan kecil. Perubahan ini membutuhkan rencana, anggaran, dan keberanian politik — tiga hal yang jarang muncul bersamaan di level kota. Sukabumi sudah menunjukkan ketiganya. Pertanyaan yang tersisa adalah apakah kota-kota lain di Indonesia akan meniru, atau hanya menonton dari pinggir. Dalam pengujian editorial Wawasan AI, Sukasai akan menjadi tolok ukur bagaimana Indonesia daerah berurusan dengan AI di dekade ini — bukan karena hasilnya yang spektakuler, melainkan karena keberaniannya untuk memulai dari posisi yang tidak istimewa sama sekali.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
