@@ -1,29 +1,131 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "28 Juli 2026",
-  "period": {
-    "date": "2026-07-28",
-    "label": "28 Juli 2026",
-    "path": "/repo/daily/2026/07/28"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-07-28T00:06:16.133Z",
+  "fetchedAt": "2026-07-28T04:43:09.147Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "permissionlesstech/bitchat",
-      "owner": "permissionlesstech",
-      "repo": "bitchat",
-      "description": "bluetooth mesh chat, IRC vibes",
-      "githubUrl": "https://github.com/permissionlesstech/bitchat",
-      "trendshiftUrl": "https://trendshift.io/repositories/15069",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2025-07-04T14:34:38Z"
+      "fullName": "MoonshotAI/Kimi-K3",
+      "owner": "MoonshotAI",
+      "repo": "Kimi-K3",
+      "description": "Open Frontier Intelligence",
+      "githubUrl": "https://github.com/MoonshotAI/Kimi-K3",
+      "trendshiftUrl": "https://trendshift.io/repositories/94660",
+      "topics": [
+        "Computer vision",
+        "NLP",
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-27T08:01:37Z"
     },
     {
       "rank": 2,
+      "fullName": "kvcache-ai/AgentENV",
+      "owner": "kvcache-ai",
+      "repo": "AgentENV",
+      "description": "AgentENV (AENV) is a distributed platform for running agent environments at scale.",
+      "githubUrl": "https://github.com/kvcache-ai/AgentENV",
+      "trendshiftUrl": "https://trendshift.io/repositories/94681",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-23T02:48:07Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "NanmiCoder/MediaCrawler",
+      "owner": "NanmiCoder",
+      "repo": "MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
+      "githubUrl": "https://github.com/NanmiCoder/MediaCrawler",
+      "trendshiftUrl": "https://trendshift.io/repositories/8291",
+      "language": "Python",
+      "topics": [
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2023-06-09T12:14:34Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "MoonshotAI/MoonEP",
+      "owner": "MoonshotAI",
+      "repo": "MoonEP",
+      "description": "MoonEP: A Perfectly Balanced Expert Parallelism Library via Dynamic Redundant Experts",
+      "githubUrl": "https://github.com/MoonshotAI/MoonEP",
+      "trendshiftUrl": "https://trendshift.io/repositories/94675",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-07-24T09:07:21Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "0xwilliamortiz/openclaude-improved",
+      "owner": "0xwilliamortiz",
+      "repo": "openclaude-improved",
+      "description": "runs anywhere. uses anything",
+      "githubUrl": "https://github.com/0xwilliamortiz/openclaude-improved",
+      "trendshiftUrl": "https://trendshift.io/repositories/94414",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-26T21:58:28Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "bradautomates/claude-video",
+      "owner": "bradautomates",
+      "repo": "claude-video",
+      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+      "githubUrl": "https://github.com/bradautomates/claude-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/30967",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "AI video generation",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-04-24T04:40:43Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "opengeos/GeoLibre",
+      "owner": "opengeos",
+      "repo": "GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data across desktop and web environments, with a responsive layout for mobile screens.",
+      "githubUrl": "https://github.com/opengeos/GeoLibre",
+      "trendshiftUrl": "https://trendshift.io/repositories/50561",
+      "language": "TypeScript",
+      "topics": [
+        "Cloud native",
+        "Data visualization"
+      ],
+      "dateCreated": "2026-05-27T19:34:31Z"
+    },
+    {
+      "rank": 9,
       "fullName": "andrewyng/openworker",
       "owner": "andrewyng",
       "repo": "openworker",
@@ -38,33 +140,7 @@
       "dateCreated": "2026-07-20T01:52:32Z"
     },
     {
-      "rank": 3,
-      "fullName": "vercel-labs/scriptc",
-      "owner": "vercel-labs",
-      "repo": "scriptc",
-      "description": "TypeScript-to-Native Compiler",
-      "githubUrl": "https://github.com/vercel-labs/scriptc",
-      "trendshiftUrl": "https://trendshift.io/repositories/92455",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-07-22T23:04:54Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "img2threejs/img2threejs",
-      "owner": "img2threejs",
-      "repo": "img2threejs",
-      "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
-      "githubUrl": "https://github.com/img2threejs/img2threejs",
-      "trendshiftUrl": "https://trendshift.io/repositories/83608",
-      "language": "Python",
-      "topics": [
-        "3D generation"
-      ],
-      "dateCreated": "2026-07-15T02:58:39Z"
-    },
-    {
-      "rank": 5,
+      "rank": 10,
       "fullName": "alibaba/open-code-review",
       "owner": "alibaba",
       "repo": "open-code-review",
@@ -77,76 +153,6 @@
         "AI coding assistant"
       ],
       "dateCreated": "2026-05-18T02:16:36Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "pbakaus/impeccable",
-      "owner": "pbakaus",
-      "repo": "impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "githubUrl": "https://github.com/pbakaus/impeccable",
-      "trendshiftUrl": "https://trendshift.io/repositories/22581",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2025-11-16T01:52:04Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "OpenMinis/OpenMinis",
-      "owner": "OpenMinis",
-      "repo": "OpenMinis",
-      "description": "OpenMinis — The AI Agent app across platforms. Open source coming soon.",
-      "githubUrl": "https://github.com/OpenMinis/OpenMinis",
-      "trendshiftUrl": "https://trendshift.io/repositories/50554",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-04-25T14:35:18Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "citrolabs/ego-lite",
-      "owner": "citrolabs",
-      "repo": "ego-lite",
-      "description": "The best browser for both you and your AI agents work in parallel.",
-      "githubUrl": "https://github.com/citrolabs/ego-lite",
-      "trendshiftUrl": "https://trendshift.io/repositories/42334",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-04-16T12:51:09Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "yorukot/superfile",
-      "owner": "yorukot",
-      "repo": "superfile",
-      "description": "Pretty fancy and modern terminal file manager",
-      "githubUrl": "https://github.com/yorukot/superfile",
-      "trendshiftUrl": "https://trendshift.io/repositories/10461",
-      "language": "Go",
-      "topics": [
-        "File management"
-      ],
-      "dateCreated": "2024-03-19T15:49:52Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "moeru-ai/airi",
-      "owner": "moeru-ai",
-      "repo": "airi",
-      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-      "githubUrl": "https://github.com/moeru-ai/airi",
-      "trendshiftUrl": "https://trendshift.io/repositories/14636",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "Digital human",
-        "Chatbot",
-        "Self-hosted"
-      ],
-      "dateCreated": "2024-12-01T16:33:36Z"
     }
   ]
 }
