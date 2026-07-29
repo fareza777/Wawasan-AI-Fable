@@ -2839,6 +2839,56 @@ export const repos: Review[] = [
   updatedAt: "2026-07-29",
   featured: false,
 },
+  {
+    slug: "a-stock-data",
+    name: "a-stock-data",
+    tagline: "Paket data pasar saham A-share China lengkap 44 endpoint, siap pakai sebagai skill Claude Code",
+    tags: ["AI Skill", "Claude Code", "Python", "Data Pasar"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "a-stock-data adalah paket skill AI terstruktur untuk Claude Code, Codex, dan OpenClaw yang merangkum 44 endpoint data pasar saham A-share China dari 15 sumber berbeda dalam satu file Markdown. Pendekatan zero-auth, tanpa API key, dengan fallback otomatis ke sumber cadangan ketika sumber utama dibatasi.",
+    highlights: [
+      "Arsitektur 10 lapis: data kuotasi, laporan riset, sinyal, aliran modal, berita, data fundamental, pengumuman, board limit, opsi ETF, dan sentimen investor - masing-masing dengan sumber berbeda dan strategi degradasi",
+      "44 endpoint API siap pakai: data K-line, F10 fundamental, laporan riset, kepemilikan saham, ekspektasi analis, daftar saham naik limit, ETF opsi T-quote, interaksi investor",
+      "Tanpa API key sama sekali (zero-auth): mootdx dan Tencent Finance tidak membatasi IP, sumber Dongcai sudah dibatasi dengan rate limit internal",
+      "Penurunan otomatis ke sumber cadangan resmi: SSE/SZSE/HKEX saat sumber Dongcai/Tonghuashun diblokir, dengan tabel referensi kecepatan di SKILL.md",
+      "Format skill standar agentskills.io: SKILL.md Markdown terstruktur + kode Python tertanam yang langsung bisa dieksekusi Claude Code",
+      "Kompatibel dengan Claude Code, Codex CLI, dan OpenClaw - satu file skill yang sama bisa diaktifkan di ketiga agen tanpa modifikasi",
+      "Pengaturan 3-langkah dalam 2 menit: buat direktori skill, unduh SKILL.md, pasang dependensi Python (mootdx, requests, pandas, stockstats)",
+      "Lisensi Apache-2.0, aktif dipelihara dengan catatan perubahan berkala (V3.5.1 terbaru menambah lapisan dana blok dan pemulihan sumber berita)",
+    ],
+    pros: [
+      "Menghilangkan friksi terbesar saat menghubungkan Claude Code dengan data pasar modal China - tidak perlu menghafal parameter API tiap sumber, semuanya sudah dibungkus",
+      "Pendekatan zero-auth menurunkan biaya operasional untuk eksperimen dan penggunaan pribadi; tidak perlu mendaftar akun atau mengelola API key",
+      "Strategi degradasi otomatis ke sumber resmi membuat pipeline AI lebih tahan terhadap perubahan upstream - pemblokiran tidak langsung memutuskan alur kerja",
+      "Format skill terstruktur sehingga sekali ditulis bisa dipakai ulang di Claude Code, Codex, dan OpenClaw tanpa penyesuaian besar",
+    ],
+    cons: [
+      "Fokus pada pasar saham A-share China - kegunaan langsung untuk pasar modal Indonesia (IDX), Amerika, atau crypto terbatas tanpa adapter tambahan",
+      "Beberapa endpoint mengandalkan sumber pihak ketiga yang bisa membatasi akses sewaktu-waktu meskipun sudah ada fallback",
+      "Dokumentasi dan diskusi komunitas dominan dalam bahasa Mandarin; pengguna yang tidak membaca Mandarin akan mengandalkan terjemahan otomatis",
+    ],
+    verdict:
+      "Referensi penting bagi siapa pun yang memakai Claude Code atau Codex untuk menganalisis pasar saham China. Bukan alat untuk trader saham Indonesia secara langsung, melainkan cetak biru yang solid untuk pola 'skill AI + data pasar' - pola yang bisa ditiru untuk IDX atau pasar lain.",
+    body: [
+      "Salah satu titik gesekan terbesar saat menghubungkan AI coding assistant ke data pasar modal adalah variasi API: satu sumber butuh API key, sumber lain butuh header Referer tertentu, sumber ketiga butuh tanda tangan kustom. a-stock-data menjawab itu dengan satu file SKILL.md yang sudah membungkus 15 sumber berbeda menjadi 44 endpoint terpadu, plus panduan degradasi saat salah satu sumber dibatasi. Hasilnya, meminta Claude Code untuk 'menarik data K-line 688017 dan ringkasan laporan riset terakhir' menjadi hal yang bisa langsung dipahami agen.",
+      "Yang membuat proyek ini menarik bagi kami bukan spesifikanya sebagai alat saham China, melainkan pendekatannya. Seluruh basis data disusun sebagai skill AI terstruktur sesuai standar agentskills.io: Markdown dengan kode Python tertanam, dokumentasi parameter eksplisit, dan tabel referensi silang antar endpoint. Pola yang sama bisa dengan jelas ditiru untuk data IDX, data crypto, atau data fundamental emiten Indonesia - biaya terbesar bukan kode API, melainkan konsolidasi dokumentasi dan strategi degradasi ke banyak sumber.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling kuat terlihat saat menggunakan paket ini sebagai referensi arsitektur. Mempelajari bagaimana SKILL.md disusun untuk 44 endpoint membantu kami menyusun playbook untuk tim AI di Indonesia yang ingin menghubungkan asisten mereka ke data internal perusahaan - terutama kombinasi tiga hal: instruksi Markdown terstruktur, kode Python yang bisa dieksekusi langsung, dan strategi fallback otomatis ke sumber cadangan resmi ketika sumber pihak ketiga membatasi akses.",
+      "Bukan berarti tanpa kompromi. Fokusnya adalah pasar saham A-share, sehingga kegunaan langsung untuk data IDX, saham AS, atau crypto terbatas - Anda perlu membangun adapter sendiri. Beberapa endpoint juga mengandalkan sumber pihak ketiga yang bisa sewaktu-waktu membatasi akses walau sudah ada fallback ke SSE/SZSE/HKEX. Diskusi komunitas didominasi Mandarin, jadi pengguna non-pembaca Mandarin akan sangat bergantung pada terjemahan otomatis. Namun sebagai studi kasus 'bagaimana seharusnya skill data AI disusun', a-stock-data adalah salah satu contoh paling rapi di GitHub - dan layak dipelajari siapa pun yang serius membangun asisten AI untuk domain data keuangan.",
+    ],
+    link: "https://github.com/simonlin1212/a-stock-data",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
