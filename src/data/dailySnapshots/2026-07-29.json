@@ -1,0 +1,164 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "29 Juli 2026",
+  "period": {
+    "date": "2026-07-29",
+    "label": "29 Juli 2026",
+    "path": "/repo/daily/2026/07/29"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-29T00:05:54.001Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "MoonshotAI/Kimi-K3",
+      "owner": "MoonshotAI",
+      "repo": "Kimi-K3",
+      "description": "Open Frontier Intelligence",
+      "githubUrl": "https://github.com/MoonshotAI/Kimi-K3",
+      "trendshiftUrl": "https://trendshift.io/repositories/94660",
+      "topics": [
+        "Computer vision",
+        "NLP",
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-27T08:01:37Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "bradautomates/claude-video",
+      "owner": "bradautomates",
+      "repo": "claude-video",
+      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+      "githubUrl": "https://github.com/bradautomates/claude-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/30967",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "AI video generation",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-04-24T04:40:43Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "kvcache-ai/AgentENV",
+      "owner": "kvcache-ai",
+      "repo": "AgentENV",
+      "description": "AgentENV (AENV) is a distributed platform for running agent environments at scale.",
+      "githubUrl": "https://github.com/kvcache-ai/AgentENV",
+      "trendshiftUrl": "https://trendshift.io/repositories/94681",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-23T02:48:07Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "moeru-ai/airi",
+      "owner": "moeru-ai",
+      "repo": "airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "githubUrl": "https://github.com/moeru-ai/airi",
+      "trendshiftUrl": "https://trendshift.io/repositories/14636",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Digital human",
+        "Chatbot",
+        "Self-hosted"
+      ],
+      "dateCreated": "2024-12-01T16:33:36Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "opengeos/GeoLibre",
+      "owner": "opengeos",
+      "repo": "GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data across desktop and web environments, with a responsive layout for mobile screens.",
+      "githubUrl": "https://github.com/opengeos/GeoLibre",
+      "trendshiftUrl": "https://trendshift.io/repositories/50561",
+      "language": "TypeScript",
+      "topics": [
+        "Cloud native",
+        "Data visualization"
+      ],
+      "dateCreated": "2026-05-27T19:34:31Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "NanmiCoder/MediaCrawler",
+      "owner": "NanmiCoder",
+      "repo": "MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
+      "githubUrl": "https://github.com/NanmiCoder/MediaCrawler",
+      "trendshiftUrl": "https://trendshift.io/repositories/8291",
+      "language": "Python",
+      "topics": [
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2023-06-09T12:14:34Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "virgiliojr94/book-to-skill",
+      "owner": "virgiliojr94",
+      "repo": "book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "githubUrl": "https://github.com/virgiliojr94/book-to-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/27038",
+      "language": "Python",
+      "topics": [
+        "AI skills",
+        "Document processing"
+      ],
+      "dateCreated": "2026-05-01T02:09:39Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "Claude Code skill to stop it from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "andrewyng/openworker",
+      "owner": "andrewyng",
+      "repo": "openworker",
+      "description": "",
+      "githubUrl": "https://github.com/andrewyng/openworker",
+      "trendshiftUrl": "https://trendshift.io/repositories/91434",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-07-20T01:52:32Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "mshumer/Claude-of-Duty",
+      "owner": "mshumer",
+      "repo": "Claude-of-Duty",
+      "description": "A Call of Duty-quality FPS in Three.js, built from a single prompt.",
+      "githubUrl": "https://github.com/mshumer/Claude-of-Duty",
+      "trendshiftUrl": "https://trendshift.io/repositories/93255",
+      "language": "JavaScript",
+      "topics": [
+        "Game development"
+      ],
+      "dateCreated": "2026-07-25T19:32:36Z"
+    }
+  ]
+}

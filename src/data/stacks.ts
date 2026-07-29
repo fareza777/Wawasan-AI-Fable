@@ -2122,6 +2122,47 @@ export const stacks: Review[] = [
     date: "2026-07-28",
     featured: false,
   },
+  {
+    slug: "recraft",
+    name: "Recraft",
+    tagline: "Generator gambar dan vektor AI untuk brand design dengan output vector native",
+    tags: ["Recraft", "Freemium", "Image Gen", "Design"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.0 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Recraft adalah generator gambar AI yang membedakan diri lewat output vektor native, kontrol style reference yang konsisten, dan fitur mockup otomatis. Di 2026, model V4.1 memimpin benchmark text-to-image untuk kasus penggunaan brand dan desain produk, dengan positioning yang berbeda dari Midjourney atau DALL-E: targetnya adalah desainer, tim pemasaran, dan seller e-commerce, bukan sekadar seniman atau kreator individual.",
+    pros: [
+      "Output vektor SVG native tanpa harus lewat konversi, sehingga logo, ikon, dan ilustrasi bisa langsung dipakai untuk branding, signage, dan apparel tanpa kehilangan detail",
+      "Style reference yang sangat konsisten lintas hasil: tim bisa mengunci gaya visual brand dan menghasilkan ratusan variasi dalam koherensi visual yang sama",
+      "Mockup otomatis menerapkan desain ke T-shirt, mug, poster, atau kemasan produk dalam satu klik, mempersingkat alur kerja antara Illustrator dan Photoshop",
+      "Recraft V4.1 memimpin benchmark Artificial Analysis untuk text-to-image per Juli 2026, dengan kualitas fotorealistik yang mendekati Midjourney V7 dan prompt adherence lebih baik untuk teks di dalam gambar",
+      "API resmi mendukung batch generation, image editing, vectorization, dan background removal, dengan dokumentasi yang cukup matang untuk integrasi ke pipeline agen"
+    ],
+    cons: [
+      "Paket free menghasilkan gambar yang dimiliki Recraft dan tampil publik di galeri komunitas, sehingga tidak bisa dipakai untuk portofolio profesional atau pekerjaan klien berbayar",
+      "Kredit bulanan terbatas: paket Free hanya 10 kredit per hari, Basic USD 12 per bulan (sekitar Rp 192 ribu) memberi 500 kredit, dan Pro USD 24 per bulan (sekitar Rp 384 ribu) 2.000 kredit, cukup ketat untuk tim yang sering iterasi",
+      "Top-up kredit hanya tersedia di paket Basic dan Pro, dan tidak pernah kadaluarsa, tetapi harga per kredit relatif lebih tinggi dibanding langganan bulanan",
+      "Kurva adopsi untuk desainer tradisional cukup tinggi karena kanvas Recraft menggabungkan elemen raster dan vektor dalam satu antarmuka yang perlu dipelajari"
+    ],
+    verdict:
+      "Recraft adalah pilihan utama untuk desainer, tim brand, dan seller e-commerce yang butuh output vektor native, mockup otomatis, dan konsistensi style lintas ratusan aset. Untuk pengguna Indonesia, paket Free cukup untuk eksplorasi awal, sementara Basic dan Pro paling masuk untuk freelancer dan tim kecil yang rutin menghasilkan aset visual untuk klien atau marketplace.",
+    body: [
+      "Recraft berdiri sejak 2022 dengan misi yang sejak awal berbeda dari generator gambar AI populer seperti Midjourney, DALL-E, atau Stable Diffusion: fokus pada output siap-pakai untuk desainer dan tim brand, bukan sekadar gambar artistik. Setelah empat tahun iterasi, hasilnya adalah platform yang menggabungkan text-to-image, vectorization, mockup generation, dan brand style reference dalam satu antarmuka, dengan model V4.1 yang memimpin benchmark Artificial Analysis untuk text-to-image di paruh kedua 2026. Lebih dari 4 juta pengguna terdaftar menggunakan Recraft untuk logo, ikon, ilustrasi editorial, aset UI, dan konten e-commerce, dengan positioning yang jelas sebagai alat produktivitas untuk desainer, bukan sebagai playground seni. Kasus penggunaan yang paling kuat adalah saat sebuah tim membutuhkan banyak aset visual dalam gaya yang konsisten: alih-alih copy-paste prompt puluhan kali dan berharap hasilnya mirip, desainer bisa mengunci satu style reference dan menghasilkan ratusan variasi dalam koherensi visual yang sama.",
+      "Secara teknis, pembeda utama Recraft dibanding kompetitor adalah kemampuan menghasilkan SVG vektor native yang bisa di-scalable tanpa batas, fitur yang tidak dimiliki Midjourney atau DALL-E. Seorang desainer bisa meminta logo mark, ikon set, atau ilustrasi, lalu langsung mengekspor sebagai SVG yang bisa dibuka di Illustrator atau Figma tanpa harus lewat konversi yang sering menghasilkan tepi patah atau kehilangan detail. Style reference memungkinkan pengguna mengunggah 5-10 gambar referensi, dan Recraft akan menghasilkan gambar baru yang konsisten dengan gaya referensi tersebut: palet warna, tekstur, komposisi, dan bahkan mood bisa dikunci dan diulang. Mockup generator menerapkan desain ke T-shirt, mug, tote bag, poster, atau kemasan produk dalam satu klik, menggantikan alur kerja Photoshop yang biasanya butuh beberapa menit per mockup. Recraft V4.1 juga menunjukkan peningkatan signifikan pada prompt adherence untuk teks di dalam gambar (misalnya signage atau poster dengan tipografi), area yang sebelumnya menjadi kelemahan utama generator gambar AI. API resmi mendukung batch generation, image editing, vectorization, rasterization, background removal, dan inpainting, dengan harga berbasis kredit yang transparan.",
+      "Paket harga Recraft disusun untuk menangkap spektrum pengguna dari kreator individual hingga tim korporasi. Free seharga USD 0 per bulan memberikan 10 kredit per hari dan akses ke Recraft V3 dan V4, dengan catatan penting: gambar yang dihasilkan di paket Free dimiliki Recraft, tampil publik di galeri komunitas, dan tidak boleh dipakai untuk keperluan komersial. Basic USD 12 per bulan (sekitar Rp 192 ribu dengan kurs acuan Rp 16.000 per dolar) membuka 500 kredit per bulan, komersial use, privat gallery, dan priority generation. Pro USD 24 per bulan (sekitar Rp 384 ribu) menambah 2.000 kredit per bulan, real-time collaboration, brand kit, dan kontrol akses tim. Enterprise bersifat custom dengan API limit yang lebih tinggi, SSO, dan SLA. Top-up kredit seharga USD 10 untuk 500 kredit (tidak pernah kadaluarsa) tersedia untuk Basic dan Pro, berguna untuk proyek dadakan yang melebihi kuota bulanan. Ada juga paket khusus untuk pendidikan dengan diskon signifikan, sehingga banyak sekolah desain dan kampus di Indonesia sudah mulai memasukkan Recraft ke kurikulum.",
+      "Untuk pengguna Indonesia, Recraft paling masuk untuk tiga profil penggunaan. Pertama, freelancer desainer grafis dan ilustrator yang melayani banyak klien dengan brief serupa: style reference memungkinkan mereka menentukan gaya visual sekali, lalu menghasilkan puluhan variasi dengan cepat, sehingga waktu pengerjaan turun signifikan dibanding alur kerja tradisional. Kedua, tim brand dan marketing korporasi yang butuh konsistensi visual lintas kampanye: brand kit Recraft menyimpan palet warna, font, logo reference, dan style guideline, sehingga anggota tim baru bisa langsung menghasilkan aset yang sesuai tanpa harus memahami sejarah brand selama berminggu-minggu. Ketiga, seller e-commerce di Tokopedia, Shopee, atau TikTok Shop yang membutuhkan banyak foto produk dan mockup dalam waktu singkat: mockup generator Recraft memungkinkan mereka membuat mockup T-shirt, mug, atau tote bag dalam hitungan detik, sehingga listing produk bisa lebih cepat di-publish. Kompetitor langsung yang perlu dipertimbangkan antara lain Midjourney V7 (lebih artistik, lebih lemah di output vektor), DALL-E 4 (lebih kuat di prompt adherence umum, tidak ada vektor native), Adobe Firefly (terintegrasi baik dengan ekosistem Adobe, lebih lemah di mockup dan brand reference), dan Stable Diffusion dengan ComfyUI (free dan open source, tapi butuh setup teknis tinggi). Saran editorial untuk konteks Indonesia: mulai dari paket Free untuk eksplorasi, upgrade ke Basic untuk freelancer yang mulai menghasilkan uang dari klien, dan pertimbangkan Pro untuk tim brand yang sudah jalan. Untuk output vektor, selalu cek hasil SVG di Illustrator sebelum ekspor akhir, karena kompleksitas path kadang perlu disederhanakan untuk produksi signage atau apparel."
+    ],
+    link: "https://www.recraft.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-29",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
