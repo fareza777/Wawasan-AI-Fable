@@ -2506,6 +2506,55 @@ export const berita: Artikel[] = [
     },
   ],
 },
+  {
+    slug: "adopsi-ai-meningkat-perusahaan-perlu-perkuat-kesiapan-sdm",
+    title: "Adopsi AI Meningkat Pesat, tapi Kesiapan SDM Masih Jadi PR",
+    excerpt:
+      "Survei demi survei menunjukkan perusahaan Indonesia makin gencar adopsi AI, sementara kesiapan sumber daya manusia masih jauh tertinggal. Inilah peta ketimpangan dan mengapa keduanya tidak bisa dipisahkan.",
+    category: "Analisis",
+    date: "2026-07-30",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ketika satu perusahaan setelah perusahaan lain di Indonesia mengumumkan inisiatif AI, narasi yang biasa muncul ke publik adalah soal teknologi: model apa yang dipakai, vendor mana yang dipilih, berapa investasi yang ditanam. Yang hampir tidak pernah menjadi headline adalah pertanyaan yang sebenarnya lebih menentukan keberhasilan inisiatif itu: siapa di dalam organisasi yang akan mengoperasikannya setiap hari, dan apakah orang itu sudah siap.",
+          "Pertanyaan ini bukan retoris. Banyak perusahaan di Indonesia — dari bank besar hingga startup, dari manufaktur hingga perusahaan keluarga multigenerasi — sudah memiliki akses ke API model bahasa, sudah berlangganan Copilot untuk tim engineering, sudah membeli lisensi untuk platform analisis berbasis AI. Namun ketika ditanya siapa yang akan mengeksekusi strategi AI perusahaan secara konkret, jawabannya seringkali tidak jelas: mungkin tim IT, mungkin divisi digital, mungkin konsultan, mungkin nanti setelah ada rapat berikutnya. Dalam pengujian editorial Wawasan AI, ketimpangan antara ketersediaan alat dan kesiapan SDM adalah salah satu faktor paling konsisten yang menentukan hasil dari proyek AI di korporasi Indonesia.",
+        ],
+      },
+      {
+        heading: "Mengapa alat lebih cepat datang daripada kesiapan SDM",
+        paragraphs: [
+          "Ada beberapa alasan struktural. Pertama, membeli akses ke model bahasa hari ini semudah membeli langganan cloud. Cukup dengan kartu kredit dan perjanjian korporat, dalam hitungan jam sebuah perusahaan sudah bisa mengarahkan API ke sistem internal mereka. Proses ini tidak memerlukan perubahan organisasi, tidak memerlukan rekrutmen baru, dan tidak memerlukan pelatihan — cukup tanda tangan direktur utama atau kepala divisi digital.",
+          "Kedua, keputusan teknologi diambil oleh level manajemen yang tidak selalu paham detail implementasinya. Banyak direksi yang mendengar presentasi dari vendor, tertarik pada transformasi digital, lalu menyetujui anggaran tanpa terlebih dahulu memetakan siapa di internal yang akan bertanggung jawab. Anggaran naik, tetapi jabatan yang memegang eksekusi tidak pernah dibuat, atau dibuat dengan catatan kecil yang tidak pernah sampai ke lini operasional.",
+          "Ketiga, AI generatif terasa mudah dipakai di permukaan. Siapa pun yang bisa mengetik di ChatGPT merasa dirinya sudah 'paham AI'. Ini menghasilkan ilusi kompetensi yang berbahaya: manajemen menengah dan staf yang sebenarnya hanya tahu bagaimana menulis prompt sederhana merasa bahwa mereka sudah siap untuk proyek AI skala perusahaan. Padahal, membangun pipeline AI yang serius — termasuk memilih model, mengintegrasikan ke data internal, memantau biaya, dan menjaga kepatuhan — adalah pekerjaan yang membutuhkan spesialisasi yang sama sekali berbeda.",
+        ],
+      },
+      {
+        heading: "Tiga peran yang hampir selalu kosong di perusahaan Indonesia",
+        paragraphs: [
+          "Pertama, ada peran AI engineer atau ML engineer. Ini adalah orang yang bisa mengintegrasikan model bahasa ke sistem internal perusahaan — menyambungkan API, menulis middleware, menangani rate limit, memastikan latensi sesuai SLA. Banyak perusahaan di Indonesia yang sudah memiliki API key, tetapi tidak memiliki orang yang bisa membangun sistem yang stabil di atas API itu. Ketika vendor menunjukkan demo yang lancar, manajemen puncak sering mengasumsikan bahwa membangun sistem produksi serupa juga akan secepat itu. Kenyataannya butuh waktu berbulan-bulan.",
+          "Kedua, ada peran prompt engineer atau AI workflow designer. Ini bukan pekerjaan glamor, tetapi salah satu yang paling menentukan apakah tim akan berhasil menggunakan AI untuk hal-hal praktis. Orang ini harus tahu bagaimana mengubah proses bisnis yang berulang menjadi prompt dan workflow yang andal, bagaimana membagi pekerjaan antara AI dan manusia, dan bagaimana mendeteksi ketika AI mulai menghasilkan output yang tidak konsisten.",
+          "Ketiga, dan mungkin yang paling jarang diangkat, adalah peran AI governance lead. Ini orang yang bertanggung jawab memastikan penggunaan AI di perusahaan sesuai regulasi, etika, dan kebijakan internal. Mereka menangani pertanyaan-pertanyaan seperti: data apa yang boleh dikirim ke layanan AI publik, output mana yang tidak boleh digunakan karena mengandung bias, bagaimana menangani insiden ketika AI menghasilkan sesuatu yang tidak seharusnya. Di Indonesia, peran ini biasanya masih digabungkan ke bagian compliance atau legal umum — yang sering tidak punya latar belakang teknis untuk memahami risiko spesifik AI.",
+        ],
+      },
+      {
+        heading: "Apa yang biasanya membuat inisiatif AI korporat gagal di Indonesia",
+        paragraphs: [
+          "Pola yang paling sering muncul: inisiatif AI yang dimulai dengan peluncuran produk besar, dirayakan dengan press release dan presentasi ke board, lalu pelan-pelan meredup dalam enam sampai dua belas bulan. Bukan karena teknologinya tidak bekerja — teknologinya sering bekerja dengan baik — melainkan karena tidak ada cukup orang di dalam organisasi yang bisa mempertahankan dan mengembangkannya. Setelah vendor selesai dengan fase implementasi, tidak ada tim internal yang merasa memiliki sistem itu.",
+          "Pola kedua: inisiatif AI yang dimonopoli satu orang yang kemudian pindah kerja. Ini lebih sering terjadi dari yang dibicarakan. Banyak inisiatif AI korporat di Indonesia yang ternyata bergantung pada satu orang kunci — biasanya anak muda yang belajar otodidak, yang kemudian direkrut kompetitor dengan gaji tiga sampai lima kali lipat. Setelah orang itu pergi, inisiatif mati perlahan karena tidak ada orang kedua yang benar-benar paham arsitekturnya.",
+          "Pola ketiga: inisiatif AI yang beroperasi di silo, terpisah dari proses bisnis utama. Tim AI atau tim digital membentuk pulau terpisah yang membuat proof of concept, namun tidak pernah berhasil mengintegrasikan ke workflow harian divisi operasional. Hasilnya, demo berjalan baik, presentasi berjalan baik, tetapi tidak ada divisi yang benar-benar mengubah cara kerjanya karena integrasi dengan proses bisnis dianggap terlalu merepotkan.",
+        ],
+      },
+      {
+        heading: "Urutan yang disarankan untuk perusahaan Indonesia",
+        paragraphs: [
+          "Urutan yang disarankan editorial, berdasarkan pengamatan terhadap inisiatif yang berhasil dan yang gagal, cukup jelas. Pertama, sebelum membeli lisensi atau API apa pun, identifikasi dulu satu atau dua proses bisnis yang akan diotomasi, dan pastikan proses itu memang berulang serta memiliki volume yang cukup tinggi. Kedua, rekrut atau latih minimal dua orang yang akan bertanggung jawab penuh terhadap inisiatif AI — bukan 'sampingan', melainkan pekerjaan utama mereka. Ketiga, mulai dari otomasi sederhana yang dampaknya mudah diukur, seperti ringkasan laporan atau klasifikasi tiket, baru kemudian naik ke hal yang lebih kompleks.",
+          "Keempat, buat kebijakan tertulis tentang data mana yang boleh dikirim ke layanan AI publik dan mana yang wajib tetap di dalam infrastruktur sendiri. Banyak perusahaan Indonesia yang melanggar regulasi sektoral tanpa sadar karena karyawan mereka terbiasa menempelkan data pelanggan ke ChatGPT untuk 'memudahkan pekerjaan'. Kelima, ukur hasilnya dalam metrik bisnis — waktu yang dihemat, biaya yang turun, kepuasan pelanggan yang naik — bukan dalam metrik teknologi yang sulit diterjemahkan ke bahasa manajemen.",
+          "Pelajaran yang lebih luas untuk Indonesia: adopsi AI yang berhasil bukan perlombaan siapa paling cepat berlangganan, melainkan siapa paling serius dalam membangun kapasitas internalnya. Perusahaan yang hari ini menginvestasikan uang untuk melatih puluhan stafnya — bahkan sebelum tahu persis proyek apa yang akan dijalankan — akan menjadi perusahaan yang dua tahun dari sekarang mampu mengeksekusi proyek AI yang sebenarnya, bukan hanya mendemonstrasikannya. Dalam pengujian editorial Wawasan AI, kesiapan SDM adalah variabel yang paling membedakan inisiatif AI yang berhasil dan yang hanya menjadi presentasi PowerPoint di rapat direksi.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
