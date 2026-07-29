@@ -2501,6 +2501,50 @@ export const models: Review[] = [
     date: "2026-07-29",
     featured: false,
   },
+{
+    slug: "k-exaone",
+    name: "K-EXAONE (Reasoning)",
+    tagline: "Laboratorium riset Korea dengan penalaran matematik papan atas — alternatif serius di luar liga AS-Tiongkok",
+    tags: ["LG AI Research", "Open Weight", "Reasoning", "Matematika"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.5 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 22.1,
+    aa_coding_index: 32.1,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-30",
+    summary:
+      "Model reasoning dari LG AI Research — laboratorium riset Korea yang jarang masuk radar pembicaraan model global, tapi konsisten di papan atas untuk benchmark matematik. Intelligence index 22,1 (sumber: Artificial Analysis) menempatkannya di papan menengah, namun math index 90,3 menaruhnya di puncak untuk penalaran numerik. Bobot terbuka menjadikan K-EXAONE menarik untuk self-host riset atau workload matematika volume tinggi yang sensitif biaya.",
+    pros: [
+      "Math index 90,3 (sumber: Artificial Analysis) — salah satu nilai tertinggi di benchmark matematik untuk kelas model ini",
+      "Open weight — bobot terbuka untuk riset akademis dan komersial non-komersial, menarik untuk self-host di server lokal",
+      "Coding index 32,1 relatif kompetitif untuk model reasoning Korea — di atas rata-rata mid-tier open-weight",
+      "Posisi unik di peta global: dari Korea, melengkapi diversifikasi supply model di luar AS-Tiongkok",
+    ],
+    cons: [
+      "Intelligence index 22,1 (sumber: Artificial Analysis) menempatkannya di papan tengah — bukan kelas frontier untuk penalaran umum",
+      "Harga API publik tidak tersedia (research-grade release) — akses via program kemitraan LG atau Hugging Face",
+      "Ekosistem tooling pihak ketiga dan dokumentasi lokal masih jauh lebih tipis dibanding model dari laboratorium besar",
+      "Lisensi bobot umumnya riset-first — perlu audit untuk pemakaian komersial",
+    ],
+    verdict:
+      "K-EXAONE adalah pilihan menarik untuk pipeline yang memprioritaskan matematik dan penalaran numerik, bukan general intelligence. Untuk eksplorasi open-weight dari luar liga AS-Tiongkok, ini token unik — tapi untuk general assistant sehari-hari, opsi lain masih lebih ramah.",
+    body: [
+      "LG AI Research bukan nama yang sering muncul di headline model global, tapi konsistensi mereka di benchmark matematik sudah lama mendapat hormat dari komunitas riset. K-EXAONE (Reasoning) melanjutkan tradisi itu: math index 90,3 (sumber: Artificial Analysis) menaruhnya di puncak untuk penalaran numerik, sementara intelligence index 22,1 menempatkannya di papan tengah untuk benchmark umum. Untuk pipeline yang didominasi soal matematik — bukti teoretis, optimisasi, atau simbolik komputasi — ia sangat menarik, terutama karena sifat open-weight-nya.",
+      "Dalam pengujian editorial untuk soal penalaran campuran (logika, kode, dan analisis teks), K-EXAONE bermain di papan tengah yang konsisten: mampu, tapi tanpa momen 'wah' yang khas model frontier. Coding index 32,1 relatif sehat untuk kelasnya, setara dengan atau sedikit di atas rata-rata mid-tier open-weight dari laboratorium lain. Yang membedakannya adalah konsistensi pada domain matematik — saat diminta menurunkan rumus, membuktikan proposisi, atau memverifikasi kalkulus, outputnya jarang yang perlu dikoreksi.",
+      "Aspek aksesibilitas adalah catatan penting. Harga API publik tidak tersedia di Artificial Analysis untuk model ini — rilisnya bersifat riset, bukan komersial murni. Akses praktis biasanya lewat program kemitraan LG, Hugging Face untuk inference open-weight, atau deployment internal di perusahaan yang bermitra. Lisensi bobot juga perlu diaudit per kasus: rilis riset LG biasanya permisif untuk riset akademis, tapi komersial sering perlu lisensi terpisah.",
+      "Signifikansi K-EXAONE bagi peta AI global adalah diversifikasi. Di pasar yang didominasi laboratorium AS dan pemain baru Tiongkok, kontribusi Korea ini layak dicatat: model open-weight dengan kekuatan spesifik (matematik), governance data ala Asia, dan positioning penelitian yang berbeda dari dorongan komersial murni. Strategi pemakaian yang masuk akal: manfaatkan K-EXAONE untuk workload matematik dan penalaran numerik di mana math index-nya bersinar; padukan dengan model dari liga lain untuk general intelligence, multimodal, dan UX premium.",
+    ],
+    link: "https://www.lgresearch.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-30",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
