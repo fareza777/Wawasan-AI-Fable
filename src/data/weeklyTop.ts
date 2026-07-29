@@ -1402,9 +1402,39 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                         "Self-hostable dan 'you-owned': install via Docker atau binary release, data sepenuhnya di tangan pengguna — bebas langganan SaaS, sesuai etos open-source AI companion.",
                         "Dukungan multi-perangkat (Web/macOS/Windows) dengan rencana ke Linux dan mobile, integrasi voice realtime (latency rendah) dan game-playing agent (Minecraft, Factorio) lewat plugin.",
                         "Cocok untuk hobiis, VTuber indie, dan developer AI yang ingin eksplorasi AI companion tanpa lock-in proprietary — kontributor komunitas moeru-ai aktif update mingguan lewat Discord dan PR.",
-                      ],
-                    },
-                                    };
+                        ],
+                        },
+                        "opengeos/GeoLibre": {
+                        description:
+                          "Platform GIS open-source ringan dan cloud-native (MIT, Tauri + React) untuk visualisasi, eksplorasi, dan analisis data geospasial — jalan di web, desktop, Android, dan Jupyter notebook dengan data privat sepenuhnya di lokal.",
+                        highlights: [
+                          "Aplikasi GIS yang sama persis berjalan di empat permukaan: web browser (zero install), desktop native (Tauri v2 di Windows/macOS/Linux), Android (Google Play), dan Jupyter notebook — codebase tunggal, maintainable.",
+                          "Stack modern: React + TypeScript + MapLibre GL JS + DuckDB-WASM Spatial + deck.gl — analisis spasial yang berat (filter, join, agregasi) jalan di engine lokal lewat DuckDB, tanpa upload data ke server.",
+                          "Kasus pakai nyata: 3D tiles, ekstraksi bangunan Manhattan dengan timeline slider konstruksi 1850–2025, peta planetary, basemap tilemill, dan visualisasi dataset besar (COG, ZARR, GeoParquet) — bukan demo, melainkan tooling produksi untuk analis.",
+                          "Distribusi matang dari opengeos (Qiusheng Wu, kontributor aktif geospatial Python): tersedia lewat PyPI, conda-forge, Microsoft Store, AUR, Flatpak, CodeSandbox, plus DOI Zenodo untuk sitasi akademis — pilihan menarik dibanding QGIS untuk workflow modern.",
+                        ],
+                        },
+                        "ayghri/i-have-adhd": {
+                        description:
+                          "Skill/plugin untuk Claude Code dan Codex yang memaksa agen coding berhenti 'mengubur jawaban' — output ringkas, action-first, langkah bernomor, tanpa basa-basi 'Hope this helps', cocok untuk workflow siapapun yang muak dengan AI yang terlalu ramah.",
+                        highlights: [
+                          "Skill berbasis 10 aturan ketat: lead dengan next action, langkah multi-step selalu bernomor, tutup dengan satu next step konkret, suppress tangent, restate state tiap turn, estimasi waktu spesifik (menit, bukan 'sebentar'), dan tanpa preamble/recap/closer.",
+                          "Plugin marketplace resmi untuk Claude Code dan Codex — `claude plugin marketplace add ayghri/i-have-adhd` lalu `claude plugin install i-have-adhd@i-have-adhd`; sekali pasang, gaya output berubah permanen sampai di-uninstall.",
+                          "Cara kerjanya: SKILL.md mendefinisikan rules, lalu agen AI merestrukturisasi output mengikuti rules tersebut — bukan model berbeda, melainkan output style yang bisa di-tune lewat fork dan edit SKILL.md sesuai kebutuhan tim.",
+                          "Cocok untuk developer dengan ADHD atau siapapun yang bosan baca jawaban AI bertele-tele; README menunjukkan contoh before/after yang dramatis — jawaban yang tadinya 1 paragraf panjang jadi 4 baris actionable dengan satu next step di akhir.",
+                        ],
+                        },
+                        "virgiliojr94/book-to-skill": {
+                        description:
+                          "Tool CLI yang mengubah PDF, EPUB, DOCX, MOBI, dan folder dokumen teknis apapun jadi skill agen AI terpadu — klaim 24-51× lebih hemat token dibanding dump buku utuh ke konteks, terukur di buku nyata.",
+                        highlights: [
+                          "Pipeline end-to-end: dari PDF/EPUB/DOCX/MD/HTML/RTF/MOBI, lewatkan ke skill generator → output skill siap dipakai di GitHub Copilot CLI, Amp, atau Claude Code dengan RAG terstruktur atas isi bukunya.",
+                          "Klaim 24–51× lebih hemat token dibanding pendekatan 'paste buku utuh' — diukur dengan methodology 'Discovery Loop Tax' yang reproducible (lihat PERFORMANCE.md), bukan angka marketing kosong.",
+                          "Output yang dihasilkan bersifat terstruktur: agent skill berisi referensi ke bagian spesifik buku, ringkasan bab, dan query handler — bukan coredump teks, melainkan knowledge base yang bisa di-query efektif tiap sesi coding agent.",
+                          "MIT-licensed, format Agent Skills standar (agentskills.io), plus dukungan multi-bahasa lewat README multi-bahasa — relevan untuk pelajar, researcher, dan tim engineering Indonesia yang ingin 'mengajari' coding agent pengetahuan dari buku panduan favorit mereka.",
+                        ],
+                        },
+                                      };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
