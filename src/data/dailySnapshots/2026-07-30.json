@@ -1,0 +1,163 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "30 Juli 2026",
+  "period": {
+    "date": "2026-07-30",
+    "label": "30 Juli 2026",
+    "path": "/repo/daily/2026/07/30"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-07-30T00:04:26.755Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "openai/codex-security",
+      "owner": "openai",
+      "repo": "codex-security",
+      "description": "SDKs and CLI for Codex Security",
+      "githubUrl": "https://github.com/openai/codex-security",
+      "trendshiftUrl": "https://trendshift.io/repositories/95947",
+      "language": "TypeScript",
+      "topics": [
+        "Static analysis"
+      ],
+      "dateCreated": "2026-07-13T22:00:13Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "MoonshotAI/Kimi-K3",
+      "owner": "MoonshotAI",
+      "repo": "Kimi-K3",
+      "description": "Open Frontier Intelligence",
+      "githubUrl": "https://github.com/MoonshotAI/Kimi-K3",
+      "trendshiftUrl": "https://trendshift.io/repositories/94660",
+      "topics": [
+        "Computer vision",
+        "NLP",
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-27T08:01:37Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "virgiliojr94/book-to-skill",
+      "owner": "virgiliojr94",
+      "repo": "book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "githubUrl": "https://github.com/virgiliojr94/book-to-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/27038",
+      "language": "Python",
+      "topics": [
+        "AI skills",
+        "Document processing"
+      ],
+      "dateCreated": "2026-05-01T02:09:39Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "pascalorg/editor",
+      "owner": "pascalorg",
+      "repo": "editor",
+      "description": "Create and share 3D architectural projects.",
+      "githubUrl": "https://github.com/pascalorg/editor",
+      "trendshiftUrl": "https://trendshift.io/repositories/23831",
+      "language": "TypeScript",
+      "topics": [
+        "3D generation"
+      ],
+      "dateCreated": "2025-10-16T19:35:06Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "paperswithbacktest/awesome-systematic-trading",
+      "owner": "paperswithbacktest",
+      "repo": "awesome-systematic-trading",
+      "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+      "githubUrl": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+      "trendshiftUrl": "https://trendshift.io/repositories/17231",
+      "language": "Python",
+      "topics": [
+        "Fintech",
+        "Crypto trading",
+        "Curated list"
+      ],
+      "dateCreated": "2022-02-05T20:48:52Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "kvcache-ai/AgentENV",
+      "owner": "kvcache-ai",
+      "repo": "AgentENV",
+      "description": "AgentENV (AENV) is a distributed platform for running agent environments at scale.",
+      "githubUrl": "https://github.com/kvcache-ai/AgentENV",
+      "trendshiftUrl": "https://trendshift.io/repositories/94681",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-23T02:48:07Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "affaan-m/ECC",
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "githubUrl": "https://github.com/affaan-m/ECC",
+      "trendshiftUrl": "https://trendshift.io/repositories/21488",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-01-18T00:51:51Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "huggingface/speech-to-speech",
+      "owner": "huggingface",
+      "repo": "speech-to-speech",
+      "description": "Build local voice agents with open-source models",
+      "githubUrl": "https://github.com/huggingface/speech-to-speech",
+      "trendshiftUrl": "https://trendshift.io/repositories/20645",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Audio processing"
+      ],
+      "dateCreated": "2024-08-07T15:32:09Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "opengeos/GeoLibre",
+      "owner": "opengeos",
+      "repo": "GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data across desktop and web environments, with a responsive layout for mobile screens.",
+      "githubUrl": "https://github.com/opengeos/GeoLibre",
+      "trendshiftUrl": "https://trendshift.io/repositories/50561",
+      "language": "TypeScript",
+      "topics": [
+        "Cloud native",
+        "Data visualization"
+      ],
+      "dateCreated": "2026-05-27T19:34:31Z"
+    }
+  ]
+}

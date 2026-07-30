@@ -2163,6 +2163,46 @@ export const stacks: Review[] = [
     date: "2026-07-29",
     featured: false,
   },
+  {
+    slug: "composio",
+    name: "Composio",
+    tagline: "Lapisan integrasi 1.000+ aplikasi untuk agen LLM produksi",
+    tags: ["Composio", "Open Source", "Agent Platform", "Integrations"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 9.0 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 9.3 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Composio adalah lapisan integrasi open source yang menghubungkan agen LLM ke lebih dari 1.000 aplikasi produksi (Gmail, Slack, GitHub, Salesforce, Notion, HubSpot, dan lain-lain) lewat OAuth terkelola, eksekusi paralel, dan sandbox eksekusi. Posisi unik di ekosistem: ia bukan agen, melainkan 'tangan' agen — infra yang menyelesaikan masalah paling menyebalkan di dunia agentic AI, yaitu bagaimana LLM bisa memanggil tool nyata dengan aman, dengan kredensial yang dikelola benar, dan tanpa harus menulis wrapper API satu per satu.",
+    pros: [
+      "Lebih dari 1.000 integrasi siap pakai lewat satu SDK Python atau TypeScript, menggantikan pekerjaan integrator yang biasanya butuh berminggu-minggu",
+      "OAuth flow terkelola penuh dengan token refresh, sehingga agen bisa bertindak atas nama pengguna di Gmail, Calendar, atau Salesforce tanpa menyimpan kredensial mentah",
+      "Eksekusi paralel dan sandboxed environment mencegah prompt injection yang mencoba memanggil tool sensitif lewat input user",
+      "Open source di Apache-2.0, sehingga tim bisa self-host untuk kepatuhan data atau menjalankan air-gapped di internal corporate",
+      "Kompatibel dengan framework agen populer: LangChain, LangGraph, CrewAI, LlamaIndex, OpenAI Assistants, Anthropic tool use, dan Google ADK"
+    ],
+    cons: [
+      "Konsep managed actions dan tool router punya learning curve; developer yang terbiasa pakai tool calling native OpenAI atau Anthropic harus membiasakan diri dengan abstraksi Composio",
+      "Paket gratis SaaS memiliki batas eksekusi bulanan yang ketat untuk production agent, sehingga tim yang serius biasanya langsung ke paket berbayar atau self-host",
+      "Bergantung pada API ketiga yang di-integrasikan: kalau Google atau Slack mengubah schema, ada jeda sampai Composio merilis patch wrapper, biasanya beberapa hari"
+    ],
+    verdict:
+      "Composio adalah standar de facto untuk tim yang membangun agen AI produksi di 2026 dan ingin fokus pada logika orkestrasi, bukan menulis wrapper API. Untuk pengguna Indonesia, kombinasi open source + self-host + cloud managed memberikan fleksibilitas yang jarang ditawarkan tool sekelasnya, dengan catatan harga cloud berbayar dalam dolar yang harus diperhitungkan sejak awal.",
+    body: [
+      "Composio muncul dari satu pertanyaan yang sejak 2024 menghambat adopsi agen AI di produksi: bagaimana caranya LLM memanggil ratusan tool nyata (Gmail, Slack, GitHub, Salesforce, Notion, HubSpot, Linear, Jira, dan seterusnya) dengan aman? Setiap tool punya OAuth flow sendiri, schema sendiri, edge case sendiri, dan dokumen yang tidak stabil. Menulis wrapper untuk semuanya di setiap proyek memakan waktu berminggu-minggu dan harus dipelihara ulang saat API berubah. Composio menjawab ini dengan menyediakan satu SDK yang membuka akses ke lebih dari 1.000 aplikasi, dengan OAuth terkelola, eksekusi paralel, sandbox, dan abstraksi tool router yang konsisten lintas provider. Hasilnya, developer yang sebelumnya menghabiskan 80 persen waktu untuk integrasi bisa langsung fokus pada logika agen: planning, memory, dan orkestrasi multi-step.",
+      "Secara teknis, Composio membedakan diri lewat tiga pilar. Pertama, managed OAuth: ketika sebuah agen perlu mengirim email atas nama pengguna, Composio menangani seluruh alur OAuth, refresh token, scope permission, dan revocation tanpa developer harus menyimpan kredensial di server mereka sendiri. Kedua, eksekusi paralel di environment terisolasi: setiap tool call berjalan di sandbox yang memisahkannya dari LLM context utama, sehingga prompt injection yang mencoba memaksa agen memanggil tool sensitif (misalnya 'kirim email ke attacker@x.com') bisa di-block lewat policy layer. Ketiga, tool router yang menyembunyikan kompleksitas perbedaan schema antar aplikasi: developer cukup menyebut 'kirim pesan ke channel X' dan Composio memilih apakah itu Slack, Discord, Teams, atau Mattermost lalu memanggil API yang sesuai dengan payload terstruktur. Pilar keempat, yang baru di 2026, adalah kompatibilitas luas dengan framework agen utama: LangChain, LangGraph, CrewAI, LlamaIndex, OpenAI Assistants API, Anthropic tool use, dan Google ADK semuanya didukung lewat adapter resmi.",
+      "Paket harga Composio disusun untuk menangkap spektrum dari hobi hingga enterprise. Open source di Apache-2.0, sehingga siapa pun bisa self-host server Composio di infrastruktur mereka sendiri (Docker Compose, Kubernetes, atau platform internal) untuk kepatuhan data atau air-gapped deployment. Paket SaaS Free memberi 5.000 eksekusi tool per bulan dan akses ke semua integrasi dengan batas concurrency rendah; Starter USD 29 per bulan (sekitar Rp 464 ribu dengan kurs acuan Rp 16.000 per dolar) meningkatkan ke 50.000 eksekusi, priority support, dan higher rate limit; Pro USD 99 per bulan (sekitar Rp 1,58 juta) untuk tim kecil dengan 250.000 eksekusi, SSO, dan audit log; Enterprise bersifat custom dengan SLA, dedicated infrastructure, dan kontrak kepatuhan (SOC 2, HIPAA, GDPR). Untuk self-host, biaya utama adalah server (USD 50-200 per bulan di cloud provider besar) plus engineering time untuk setup dan maintenance, biasanya lebih hemat pada skala di atas 100.000 eksekusi per bulan.",
+      "Untuk pengguna Indonesia, Composio paling masuk untuk tiga profil. Pertama, tim startup dan korporasi yang membangun agen AI internal (customer support, sales assistant, data pipeline automation) dan tidak ingin menulis wrapper API untuk setiap tool — Composio memotong waktu integrasi dari berminggu-minggu menjadi hitungan hari. Kedua, konsultan dan freelancer AI yang membangun agen untuk klien enterprise dengan requirement kepatuhan data ketat: self-host Apache-2.0 memungkinkan deployment di server lokal atau VPC klien tanpa mengirim data ke cloud Composio. Ketiga, komunitas developer dan riset akademik yang ingin bereksperimen dengan multi-agent orchestration tanpa biaya: paket Free cukup untuk eksplorasi awal, dan open source memungkinkan kontribusi wrapper integrasi lokal (mis. integrasi dengan platform e-commerce Indonesia seperti Tokopedia atau Shopee lewat API resmi mereka). Kompetitor langsung yang perlu dipertimbangkan: LangChain Tools (lebih ringan, kurang dari 100 integrasi, OAuth manual), Zapier AI Actions (UI-driven, bukan developer-first), Pipedream (workflow automation dengan AI, bukan agent-first), dan n8n dengan AI nodes (open source, tapi agent integration masih terbatas). Saran editorial: mulai dari paket Free untuk prototyping, lalu pilih antara Starter SaaS (untuk tim kecil yang ingin fokus ke logika) atau self-host (untuk tim yang perlu kepatuhan data dan sudah punya DevOps)."
+    ],
+    link: "https://composio.dev",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-30",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
