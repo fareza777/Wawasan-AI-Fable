@@ -2889,6 +2889,59 @@ export const repos: Review[] = [
     updatedAt: "2026-07-30",
     featured: false,
   },
+{
+  slug: "firecrawl-mcp-server",
+  name: "Firecrawl MCP Server",
+  tagline: "Jembatan web scraping & search resmi Firecrawl untuk AI agent lewat MCP",
+  tags: ["MCP", "Web Scraping", "AI Agent", "Open Source"],
+  score: 8.8,
+  scores: [
+    { label: "Kemudahan Setup", value: 9.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "Firecrawl MCP Server adalah implementasi resmi dari tim Firecrawl untuk protokol Model Context Protocol (MCP) - menjembatani kemampuan web scraping dan search mereka ke dalam AI agent seperti Cursor, Claude Desktop, Windsurf, dan klien MCP lainnya. Repo ini memberi tooling konteks web yang siap pakai untuk ribuan agent yang sudah support MCP, dengan mode hosted keyless untuk eksperimen cepat dan mode API key penuh untuk produksi.",
+  highlights: [
+    "Implementasi resmi Firecrawl untuk Model Context Protocol (MCP) - menjadi pilihan standar saat Anda butuh tool web scraping yang kompatibel dengan Cursor, Claude, Windsurf, dan Codex CLI",
+    "Tool lengkap: scrape (URL jadi markdown atau HTML terstruktur), search (pencarian web dengan ranking), crawl (traversal multi-page), map (sitemap discovery), extract (ekstraksi sesuai schema), agent (deep research otonom), dan interact (klik serta navigasi halaman dinamis)",
+    "Hosted MCP server tersedia di mcp.firecrawl.dev/v2/mcp - mode keyless free tier untuk scrape, search, dan interact tanpa API key; toolset lengkap dan rate limit lebih tinggi dengan API key",
+    "Search-only endpoint khusus di /v2/mcp-search mengekspos firecrawl_search dan 5 firecrawl_research_* sebagai tool read-only untuk use case yang butuh akses web tanpa efek samping",
+    "JavaScript rendering di balik layar - halaman berat sekalipun bisa di-scrape jadi markdown terstruktur untuk konteks AI, lengkap dengan JavaScript actions untuk mengontrol halaman dinamis",
+    "Otomatisasi bawaan: retries, rate limiting, dan batching untuk operasi volume tinggi dari agent",
+    "Dua mode deployment: cloud-hosted Firecrawl atau instance self-hosted sesuai paket open-source Firecrawl - memberi fleksibilitas untuk privasi penuh atau kenyamanan SaaS",
+    "Dukungan SSE (Server-Sent Events) untuk streaming ke agent secara real-time plus OAuth untuk autentikasi modern",
+    "Instalasi trivial lewat npx - tidak perlu kode program: env FIRECRAWL_API_KEY=xxx npx -y firecrawl-mcp langsung menambahkan 7+ tools ke klien MCP apapun",
+    "Konfigurasi resmi didokumentasikan untuk Cursor (v0.45.6 ke atas), Claude Desktop, Windsurf, Codex CLI, dan framework lain yang sudah mengadopsi MCP",
+  ],
+  pros: [
+    "Adopsi MCP yang konsisten - sekali pasang di klien MCP, semua tool web Firecrawl (scrape, search, crawl, extract, agent) langsung tersedia untuk agent",
+    "Mode keyless hosted menurunkan friksi untuk eksperimen pribadi tanpa perlu setup API key, OAuth, atau billing terlebih dulu",
+    "Dikelola langsung oleh tim Firecrawl - terjamin kompatibilitas dengan perubahan API inti dan penambahan tool baru",
+    "Ekosistem Firecrawl di belakangnya sudah matang (ratusan ribu pengguna, model crawling yang menangani JavaScript, AJAX, dan halaman kompleks)",
+  ],
+  cons: [
+    "Bergantung pada layanan Firecrawl - outages atau limit quota akan langsung berdampak ke agent Anda, kecuali Anda menjalankan instance self-hosted",
+    "Tool agent dan interact serta beberapa endpoint lain butuh API key - pengguna gratis terbatas pada scrape, search, dan interact dengan rate limit",
+    "Konsumsi kredit Firecrawl per pemanggilan - workflow riset mendalam dengan banyak crawl atau extract bisa naik tagihan cukup signifikan",
+    "Fokus pada web publik dan HTML terstruktur - tidak bisa menggantikan tool untuk sistem internal tanpa konektivitas internet, misalnya database internal perusahaan",
+  ],
+  verdict:
+    "Titik masuk paling masuk akal untuk siapa pun yang ingin memberikan kemampuan web ke AI agent lewat MCP. Kalau Anda sudah memakai Cursor, Claude Desktop, atau klien MCP lain, ini salah satu tool yang paling cepat memberi dampak - dari riset pasar, summarization halaman, sampai pipeline data ke knowledge base.",
+  body: [
+    "Firecrawl MCP Server menjawab salah satu kebutuhan paling konkret di ekosistem AI agent hari ini: kemampuan web scraping dan search yang andal, terstruktur, dan langsung tersedia lewat standar Model Context Protocol. Repo ini bukan wrapper tipis - ia membungkus seluruh mesin Firecrawl yang sudah teruji untuk menangani JavaScript rendering, AJAX, rate limiting, dan ekstraksi schema terstruktur, lalu mengeksposnya sebagai tool MCP yang bisa dipanggil agent mana pun.",
+    "Dalam pengujian editorial Wawasan AI, skenario paling kuat adalah workflow riset multi-langkah: agent menelusuri halaman hasil pencarian, memilih kandidat paling relevan, melakukan scrape ke markdown, mengekstrak data sesuai schema yang ditentukan, lalu menulis ringkasan terstruktur - semuanya dalam satu orkestrasi. Untuk tim di Indonesia yang rutin melakukan riset pasar, ringkasan regulasi, atau scraping data UMKM dari marketplace publik, kombinasi ini bisa menghemat waktu secara signifikan dibanding membangun pipeline dari nol.",
+    "Yang membuat server ini menonjol adalah Hosted MCP mode di mcp.firecrawl.dev/v2/mcp - Anda tidak perlu men-deploy apa pun untuk memulai. Untuk scrape, search, dan interact halaman web statis, mode keyless free tier sudah cukup. Begitu workflow-nya terbukti berguna, upgrade ke API key untuk membuka crawl, map, extract, dan deep research agent. Mode self-host tetap tersedia untuk organisasi yang butuh data tidak pernah meninggalkan infrastruktur sendiri - penting untuk kepatuhan regulasi dan perlindungan data sensitif di Indonesia.",
+    "Rekomendasi implementasi: pasang dulu lewat npx di Claude Desktop atau Cursor untuk eksplorasi cepat, lalu masukkan ke workflow produksi melalui API key dan self-hosted endpoint. Perhatikan kuota dan biaya per pemanggilan - workflow riset yang menelusuri banyak halaman bisa menumpuk tagihan dengan cepat. Untuk kasus enterprise atau data sensitif, deploy instance self-hosted Firecrawl dan arahkan MCP server ke sana. Ini salah satu repo paling praktis untuk kategori 'AI agent plus data web' di GitHub - layak menjadi default tool untuk semua workflow agent yang butuh konteks dari internet.",
+  ],
+  link: "https://github.com/firecrawl/firecrawl-mcp-server",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-07-31",
+  updatedAt: "2026-07-31",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
