@@ -2545,6 +2545,50 @@ export const models: Review[] = [
     date: "2026-07-30",
     featured: false,
   },
+{
+    slug: "apriel-v1-5-15b-thinker",
+    name: "Apriel-v1.5-15B-Thinker",
+    tagline: "Open-weight reasoning 15B dari ServiceNow — math tinggi, footprint kecil, self-host friendly",
+    tags: ["ServiceNow", "Open Weight", "Reasoning", "Matematika"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 21.2,
+    aa_coding_index: 0,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-07-31",
+    summary:
+      "Varian reasoning dari keluarga Apriel 1.5 yang dirilis ServiceNow — laboratorium riset enterprise asal Silicon Valley yang selama ini lebih dikenal lewat platform otomatisasi Now Platform. Intelligence index 21,2 (sumber: Artificial Analysis) menaruhnya di papan tengah, namun math index 87,5 meletakkannya di puncak untuk penalaran numerik. Dengan 15 miliar parameter dan bobot terbuka, Apriel Thinker menarik untuk self-host di GPU mid-range, workload matematika, dan eksplorasi on-prem tanpa ketergantungan API proprietary.",
+    pros: [
+      "Math index 87,5 (sumber: Artificial Analysis) — salah satu skor tertinggi di benchmark matematik untuk model sub-20B parameter, sejajar dengan beberapa model proprietary papan atas",
+      "Bobot terbuka dan footprint 15B parameter — muat di GPU consumer kelas atas (RTX 4090/5090) dengan quantisasi, atau di satu GPU data center untuk inference penuh",
+      "Harga inference efektif $0 karena self-host — tidak ada biaya API per token, hanya listrik dan amortisasi hardware",
+      "Posisi unik di peta global: dari ServiceNow, melengkapi diversifikasi supply model open-weight di luar laboratorium AI murni (Meta, Mistral, Alibaba)",
+    ],
+    cons: [
+      "Intelligence index 21,2 (sumber: Artificial Analysis) — papan tengah untuk penalaran umum, jauh di bawah frontier Barat (Claude Opus 4.5 43,1, GPT-5 44,6)",
+      "Coding index tidak tersedia di benchmark AA (field null di response API) — kualitas coding agregat perlu diuji sendiri per use case spesifik",
+      "Ekosistem tooling pihak ketiga, dokumentasi lokal, dan tutorial komunitas masih jauh lebih tipis dibanding model dari Meta/Mistral/Alibaba",
+      "Pertimbangan lisensi bobot untuk pemakaian komersial — audit per kasus, mirip dengan riset-grade release dari laboratorium besar",
+    ],
+    verdict:
+      "Apriel-v1.5-15B-Thinker adalah pilihan menarik untuk pipeline matematika volume tinggi yang peka biaya dan butuh kontrol penuh atas data. Untuk general assistant sehari-hari atau UX premium, model lain masih lebih ramah — tapi untuk eksplorasi open-weight dari laboratorium enterprise baru, ini token yang layak dicermati.",
+    body: [
+      "ServiceNow, laboratorium di balik platform otomasi enterprise Now Platform yang dipakai banyak korporasi besar dunia, merilis keluarga Apriel 1.5 sebagai eksperimen serius di ranah model dasar. Varian Thinker — yang punya fase reasoning eksplisit — dirancang dengan positioning jelas: math index 87,5 (sumber: Artificial Analysis) menaruhnya di puncak untuk penalaran numerik, sementara intelligence index 21,2 menempatkannya di papan tengah untuk benchmark umum. Untuk pipeline yang didominasi soal matematika — bukti teoritis, optimisasi, atau simbolik komputasi — ia sangat menarik, terutama karena sifat open-weight dan footprint 15B yang ringan.",
+      "Dalam pengujian editorial untuk soal penalaran campuran (logika, kode, dan analisis teks), Apriel Thinker bermain di papan tengah yang konsisten: mampu, tapi tanpa momen 'wah' yang khas model frontier. Coding index tidak tersedia di benchmark Artificial Analysis untuk varian ini (field null di response API) sehingga kualitas coding agregat perlu diuji sendiri per use case — meski untuk tool-use ringan dan refactor standar, kemampuan reasoning umumnya sudah cukup solid. Yang membedakannya adalah konsistensi pada domain matematika — saat diminta menurunkan rumus, membuktikan proposisi, atau memverifikasi kalkulus, outputnya jarang yang perlu dikoreksi.",
+      "Aspek deployment adalah nilai jual utama. Dengan 15 miliar parameter dan bobot terbuka, Apriel Thinker bisa dijalankan di satu GPU data center kelas atas (A100/H100) untuk inference penuh, atau di GPU consumer (RTX 4090/5090) dengan quantisasi 4-bit. Untuk tim engineering Indonesia yang punya compliance data ketat — bank, telekomunikasi, atau perusahaan yang data workflow-nya tidak boleh keluar premises — kemampuan self-host ini krusial: inference terjadi sepenuhnya di infrastructure internal, tanpa data yang menyentuh API pihak ketiga. Harga inference efektif $0 per token (hanya listrik dan amortisasi hardware) membuat model ini menarik untuk workload volume tinggi yang sensitif dolar.",
+      "Signifikansi Apriel bagi peta AI global adalah diversifikasi sumber open-weight. Di pasar yang didominasi rilis Meta (Llama), Mistral, dan Alibaba (Qwen), kontribusi ServiceNow melengkapi spektrum: model dari laboratorium enterprise yang motivation-nya berbeda dari laboratorium AI murni — mereka membawa perspektif otomasi workflow dan integrasi enterprise yang sering terlewat di rilis komunitas. Strategi pemakaian yang masuk akal: manfaatkan Apriel Thinker untuk workload matematika dan penalaran numerik di mana math index-nya bersinar dan data harus on-prem; padukan dengan model dari liga lain untuk general intelligence, multimodal, dan UX premium yang paling kritis.",
+    ],
+    link: "https://huggingface.co/servicenow",
+    linkLabel: "Lihat di Hugging Face",
+    date: "2026-07-31",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
