@@ -1425,14 +1425,44 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                         ],
                         },
                         "virgiliojr94/book-to-skill": {
-                        description:
-                          "Tool CLI yang mengubah PDF, EPUB, DOCX, MOBI, dan folder dokumen teknis apapun jadi skill agen AI terpadu — klaim 24-51× lebih hemat token dibanding dump buku utuh ke konteks, terukur di buku nyata.",
-                        highlights: [
-                          "Pipeline end-to-end: dari PDF/EPUB/DOCX/MD/HTML/RTF/MOBI, lewatkan ke skill generator → output skill siap dipakai di GitHub Copilot CLI, Amp, atau Claude Code dengan RAG terstruktur atas isi bukunya.",
-                          "Klaim 24–51× lebih hemat token dibanding pendekatan 'paste buku utuh' — diukur dengan methodology 'Discovery Loop Tax' yang reproducible (lihat PERFORMANCE.md), bukan angka marketing kosong.",
-                          "Output yang dihasilkan bersifat terstruktur: agent skill berisi referensi ke bagian spesifik buku, ringkasan bab, dan query handler — bukan coredump teks, melainkan knowledge base yang bisa di-query efektif tiap sesi coding agent.",
-                          "MIT-licensed, format Agent Skills standar (agentskills.io), plus dukungan multi-bahasa lewat README multi-bahasa — relevan untuk pelajar, researcher, dan tim engineering Indonesia yang ingin 'mengajari' coding agent pengetahuan dari buku panduan favorit mereka.",
-                        ],
+                          description:
+                            "Tool CLI yang mengubah PDF, EPUB, DOCX, MOBI, dan folder dokumen teknis apapun jadi skill agen AI terpadu — klaim 24-51× lebih hemat token dibanding dump buku utuh ke konteks, terukur di buku nyata.",
+                          highlights: [
+                            "Pipeline end-to-end: dari PDF/EPUB/DOCX/MD/HTML/RTF/MOBI, lewatkan ke skill generator → output skill siap dipakai di GitHub Copilot CLI, Amp, atau Claude Code dengan RAG terstruktur atas isi bukunya.",
+                            "Klaim 24–51× lebih hemat token dibanding pendekatan 'paste buku utuh' — diukur dengan methodology 'Discovery Loop Tax' yang reproducible (lihat PERFORMANCE.md), bukan angka marketing kosong.",
+                            "Output yang dihasilkan bersifat terstruktur: agent skill berisi referensi ke bagian spesifik buku, ringkasan bab, dan query handler — bukan coredump teks, melainkan knowledge base yang bisa di-query efektif tiap sesi coding agent.",
+                            "MIT-licensed, format Agent Skills standar (agentskills.io), plus dukungan multi-bahasa lewat README multi-bahasa — relevan untuk pelajar, researcher, dan tim engineering Indonesia yang ingin 'mengajari' coding agent pengetahuan dari buku panduan favorit mereka.",
+                          ],
+                        },
+                        "openai/codex-security": {
+                          description:
+                            "CLI dan TypeScript SDK resmi OpenAI untuk menemukan, memvalidasi, dan memperbaiki vulnerability keamanan di codebase — paket npm siap pakai untuk DevSecOps modern.",
+                          highlights: [
+                            "Tool keamanan resmi dari tim OpenAI Codex: CLI + TypeScript SDK yang menemukan, memvalidasi, dan (secara otomatis) memperbaiki kerentanan keamanan — bukan scanner pasif, melainkan fixer.",
+                            "Riset 2026 menunjukkan model Codex internal sudah mencapai 86,4% akurasi pada benchmark secure coding dan ~10× lebih hemat biaya dibanding reviewer manusia — bukti bahwa AI security scanning sudah masuk tahap produksi.",
+                            "Distribusi lewat npm `@openai/codex-security` sehingga gampang dipasang ke pipeline CI/CD: tambahkan satu langkah, codebase di-scan setiap pull request, dan PR otomatis berisi patch kalau ada temuan.",
+                            "Relevan untuk engineer Indonesia yang peduli supply-chain dan security posture, terutama startup fintech/healthtech yang ingin baseline AppSec tanpa hire dedicated security team.",
+                          ],
+                        },
+                        "huggingface/speech-to-speech": {
+                          description:
+                            "Framework open-source dari Hugging Face untuk membangun voice agent lokal — gabungkan STT, LLM, dan TTS dalam satu pipeline modular yang jalan di GPU sendiri.",
+                          highlights: [
+                            "Stack lengkap voice agent dari Hugging Face:Speech-to-Text → LLM → Text-to-Speech, semua modular dan bisa di-swap per komponen — Moshi, Kyutai, Llama, atau model proprietary campur sesuai kebutuhan.",
+                            "100% lokal-first: jalankan di GPU milik sendiri (termasuk Apple Silicon lewat MLX) tanpa kirim audio ke cloud — krusial untuk aplikasi dengan regulasi privasi ketat (healthcare, finance, internal corp).",
+                            "Dilengkapi Gradio demo UI yang siap pakai, example pipeline untuk conversational AI, dan dokumentasi untuk custom voice cloning — dari prototipe ke produksi relatif cepat.",
+                            "8.600+ bintang GitHub dan kontributor aktif dari tim Hugging Face audio — bagian dari tren 'on-device voice agent' 2026 yang menurunkan ketergantungan ke OpenAI Realtime API atau ElevenLabs.",
+                          ],
+                        },
+                        "affaan-m/ecc": {
+                          description:
+                            "Sistem optimasi performance untuk agent harness (Claude Code, Codex, OpenCode, Cursor) — paduan skill, instinct, memory, dan keamanan untuk workflow coding agentik yang lebih cepat dan terukur.",
+                          highlights: [
+                            "'Agent harness performance optimization system' dari Affaan: lapisan tipis di atas Claude Code, Codex, OpenCode, dan Cursor yang menyatukan skill, instinct (auto-rules), memory persisten, dan security scanning.",
+                            "Pendekatan 'research-first development': sebelum coding, agent dipaksa menelusuri codebase dan menulis research doc — menurunkan kejadian 'nambah fitur tapi break existing' yang sering menimpa agen yang terlalu cepat.",
+                            "235k+ bintang GitHub dan ekosistem plugin yang berkembang — bukan sekadar single-purpose tool, melainkan 'meta-harness' yang bisa dipasang ke setup coding agent yang sudah ada tanpa rewrite workflow.",
+                            "Cocok untuk tech lead dan founder yang pakai multiple coding agent paralel dan ingin standarisasi kualitas output: agent yang lebih disiplin, lebih hemat token, dan lebih aman saat menyentuh production code.",
+                          ],
                         },
                                       };
 
