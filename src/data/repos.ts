@@ -2942,6 +2942,55 @@ export const repos: Review[] = [
   updatedAt: "2026-07-31",
   featured: false,
 },
+  {
+    slug: "latitude-llm",
+    name: "Latitude LLM",
+    tagline: "Platform observasi LLM open-source yang bikin AI agent kamu bisa memperbaiki dirinya sendiri",
+    tags: ["AI Agent", "Observability", "TypeScript", "Open Source"],
+    score: 8.8,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Latitude adalah platform observasi dan evaluasi LLM open-source dari latitude-dev yang awalnya fokus pada prompt engineering kolaboratif, lalu berevolusi menjadi toolkit observasi agent yang lengkap: dari telemetry satu baris, pengelompokan otomatis untuk traces yang gagal, hingga dispatch ke Claude Code atau Cursor untuk menulis patch kecil yang sudah diverifikasi. Lebih dari 4,5 ribu bintang dan pembaruan rutin sejak 2024 menjadikannya salah satu infrastruktur observasi agent yang paling konsisten dikembangkan di 2026.",
+    highlights: [
+      "Telemetri satu baris lewat SDK TypeScript (@latitude-data/telemetry) atau Python (latitude-telemetry) yang otomatis menangkap trace multi-turn, tool call, dan seluruh execution path",
+      "Auto-grouping traces yang gagal menjadi signals terstruktur: status, ukuran, tren, dan ringkasan singkat sehingga tim bisa melihat apa yang rusak dan seberapa sering",
+      "Agent Dispatch: latitude mengirim konteks lengkap, sample trace, dan deep link ke coding agent (Claude Code, Cursor) yang menulis patch terkecil yang benar lalu membuka pull request",
+      "Verifikasi otomatis lewat regression datasets: setiap perbaikan di-replay terhadap trace yang sama, memastikan fixed failures tidak muncul kembali",
+      "MCP server bawaan + CLI resmi: semua fungsi UI juga tersedia dari coding agent lewat Model Context Protocol, menyatu dengan workflow developer",
+      "Provider-agnostic: dukungan resmi OpenAI, Anthropic, Bedrock, Vercel AI SDK, LangChain, plus OpenTelemetry passthrough untuk runtime apa pun",
+      "Self-host penuh via Docker Compose (single-host) atau Helm chart (Kubernetes cluster) atau one-click deploy ke Railway, dengan 20K credits gratis per bulan di hosted",
+      "MIT license, semua kode bisa diaudit, dan repositori aktif dengan lebih dari 100 open issues yang ditangani langsung oleh tim Latitude",
+    ],
+    pros: [
+      "Mengubah observasi LLM dari dasbor pasif menjadi loop self-healing: bukan hanya menampilkan error, tapi langsung memperbaiki via coding agent",
+      "Onboarding rendah hambatan: cukup install SDK dan tambahkan satu baris inisialisasi, trace langsung mengalir dengan provider apa pun",
+      "Open source dengan self-host option: cocok untuk organisasi Indonesia yang menangani data sensitif atau punya regulasi ketat soal perpindahan data",
+    ],
+    cons: [
+      "Default branch menggunakan 'development' sehingga kontribusi dan build perlu penyesuaian dibanding mainline cabang lazim",
+      "Beberapa fitur canggih (Agent Dispatch, verifikasi regresi) masih butuh model coding agent yang kuat andalan biaya API tambahan",
+      "Open issues yang cukup banyak (109+) menandakan akuisisi pengguna yang pesat, namun beberapa laporan komunitas menyebut ada backlog respons komunitas",
+    ],
+    verdict:
+      "Latitude bukan sekadar alat monitoring LLM lain - ini adalah evolusi observasi menjadi mekanisme umpan balik yang bisa menutup loop secara otomatis. Sangat relevan untuk tim yang sudah menjalankan LLM atau agent di production dan ingin tahu bukan hanya 'apa yang rusak', tapi juga 'bagaimana cara memperbaikinya'.",
+    body: [
+      "Selama dua tahun terakhir, ekosistem observasi LLM tumbuh dengan cepat, tapi kebanyakan masih berhenti di dasbor pasif: tampilkan trace, hitung token, cetak grafik p99. Latitude dari latitude-dev mengambil arah yang lebih pragmatis: begitu sebuah agent gagal, platform tidak hanya mengelompokkan pola kegagalannya, tapi juga mengirimkannya kembali ke coding agent - Claude Code atau Cursor - dengan konteks penuh, sample trace, dan instruksi untuk menulis patch terkecil yang benar. Pola ini menyatukan observasi dan perbaikan dalam satu loop, yang selama ini harus dilakukan manual oleh engineer on-call.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling terasa adalah loop perbaikan otomatis. Begitu agent mengalami error produksi yang berulang - misalnya tool call yang salah format pada prompt tertentu - Latitude mengelompokkannya sebagai signal, lalu Agent Dispatch memanggil coding agent dengan konteks yang diperlukan. Coding agent menulis patch, membuka pull request, dan tahap verify menjalan ulang trace asli untuk memastikan perbaikan tidak regressive. Untuk tim kecil yang tidak punya SRE khusus, loop seperti ini mempersingkat jarak antara deteksi dan perbaikan dari hitungan hari menjadi jam.",
+      "Arsitekturnya sengaja dibuat provider-agnostic. SDK TypeScript atau Python otomatis menginstrumen panggilan OpenAI, Anthropic, Bedrock, Vercel AI SDK, LangChain, dan runtime OTEL apa pun. Setelah diaktifkan, setiap sesi multi-turn, tool call, dan full execution path muncul sebagai trace yang bisa dicari, diberi tag, dan dianalisa lewat semantic search. UI dasbornya terasa modern - dengan filter berdasarkan perilaku, flagger, dan anotasi - dan semua fungsi yang sama tersedia lewat CLI atau MCP server bagi coding agent yang ingin mengintegrasikannya ke workflow sendiri.",
+      "Untuk konteks Indonesia, kombinasi self-host dan lisensi MIT Latitude sangat menarik. Banyak organisasi - terutama di sektor finansial, kesehatan, dan pemerintahan - yang tidak bisa mengirim trace ke layanan cloud asing. Mode self-host via Docker Compose untuk single-host atau Helm chart untuk cluster Kubernetes memungkinkan penerapan di dalam negeri tanpa kehilangan fitur observasi. Lisensi MIT memberi kebebasan untuk diaudit, dimodifikasi, dan disesuaikan dengan kebutuhan internal. Di sisi lain, tier gratis hosted (20K credits per bulan, retensi 30 hari, unlimited seats) menjadi titik masuk yang sangat murah untuk eksperimen awal. Secara keseluruhan, Latitude adalah salah satu kontribusi paling praktis untuk kategori 'AI agent yang bisa mengelola dirinya sendiri' - dan layak dijadikan default tool observasi bagi tim yang sudah menjalankan LLM di produksi.",
+    ],
+    link: "https://github.com/latitude-dev/latitude-llm",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-01",
+    updatedAt: "2026-08-01",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
