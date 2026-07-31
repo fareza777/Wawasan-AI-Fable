@@ -1464,6 +1464,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                             "Cocok untuk tech lead dan founder yang pakai multiple coding agent paralel dan ingin standarisasi kualitas output: agent yang lebih disiplin, lebih hemat token, dan lebih aman saat menyentuh production code.",
                           ],
                         },
+                        "h4ckf0r0day/obscura": {
+                          description:
+                            "Headless browser open-source (Rust, Apache 2.0) yang dirancang khusus untuk AI agent dan web scraping — ringan, anti-detect bawaan, dan drop-in replacement untuk Puppeteer/Playwright.",
+                          highlights: [
+                            "Engine headless browser dari Rust dengan V8 asli dan dukungan Chrome DevTools Protocol — dirancang dari awal untuk scraping dan automasi agentik, bukan turunan desktop Chrome.",
+                            "Beda dari Headless Chrome: footprint cuma ~30 MB RAM dan binary ~70 MB (vs 200+ MB dan 300+ MB), page load ~85 ms, dan fitur anti-detect built-in untuk menghindari blokir situs besar.",
+                            "Drop-in replacement Puppeteer/Playwright lewat CDP — kode automasi yang sudah ada tidak perlu di-rewrite, cukup ganti endpoint ke Obscura untuk footprint yang lebih kecil dan startup instan.",
+                            "Cocok untuk engineer AI agent yang butuh kemampuan browsing tanpa membengkakkan stack (Linux server, container, CI/CD) — engine open-source Apache 2.0 dengan program sponsor yang lestari.",
+                          ],
+                        },
                                       };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
