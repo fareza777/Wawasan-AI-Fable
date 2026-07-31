@@ -2203,6 +2203,47 @@ export const stacks: Review[] = [
     date: "2026-07-30",
     featured: false,
   },
+  {
+    slug: "roo-code",
+    name: "Roo Code",
+    tagline: "Fork Cline dengan mode multi-agent — kini berevolusi jadi platform cloud agent",
+    tags: ["Roo Code Inc", "Open Source", "IDE Plugin", "Multi-Agent"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "Roo Code bermula sebagai fork Cline untuk VS Code dengan empat mode khusus (Code, Architect, Ask, Debug) yang dapat digabung lewat Custom Modes. Setelah Mei 2026, Roo Code Inc menghentikan ekstensi IDE original dan memusatkan pengembangan pada platform cloud agent bernama Roomote — sorotan pindah dari 'plugin multi-mode di editor' menjadi 'agen cloud source-available yang bisa self-host dan membawa model sendiri'.",
+    pros: [
+      "Empat mode bawaan (Code, Architect, Ask, Debug) menutupi seluruh alur kerja coding — dari eksekusi harian sampai desain sistem — tanpa plugin tambahan",
+      "Custom Modes memungkinkan setiap tim mendefinisikan persona agen sendiri dengan instruksi, tool permission, dan model yang dibatasi",
+      "Open source di Apache-2.0 dengan dokumentasi multibahasa lengkap termasuk Bahasa Indonesia, sehingga tim developer lokal bisa membaca langsung tanpa barrier bahasa",
+      "Seluruh warisan ekosistem Cline (terminal command, browser automation, MCP server integration, checkpoint review per aksi) tetap tersedia di fork komunitas",
+      "Pivot ke Roomote menambahkan opsi deployment cloud-hosted single-tenant atau self-hosted, menjawab kebutuhan tim yang tidak mau data prompt-nya melewati multi-tenant SaaS"
+    ],
+    cons: [
+      "Pengalaman bergantung penuh pada model yang dipilih lewat BYOK — model lokal gratis performanya jauh di bawah frontier, dan model frontier membuat biaya per aksi bisa melonjak tanpa peringatan",
+      "Pivot perusahaan dari ekstensi IDE ke platform cloud membuat peta produk membingungkan bagi pengguna baru: istilah 'Roo Code' kini merujuk baik ke warisan IDE maupun platform Roomote yang lebih baru",
+      "Ekstensi VS Code original dihentikan pada 15 Mei 2026, sehingga pengguna lama yang mengandalkan update otomatis dari marketplace harus migrasi manual ke fork komunitas Zoo Code atau kembali ke Cline",
+      "Konsumsi token untuk mode Debug dan Architect sering lebih tinggi dibanding tool agentik single-mode karena reasoning loop panjang — perlu telemetry internal untuk optimasi biaya"
+    ],
+    verdict:
+      "Roo Code adalah eksperimen paling jujur di 2026 tentang bagaimana satu tool AI coding bisa bertransformasi dari plugin open-source menjadi platform cloud sambil mempertahankan DNA open-source-nya. Untuk pengguna Indonesia, kombinasi fleksibilitas mode + harga transparan BYOK + dokumentasi Bahasa Indonesia menjadikannya pilihan menarik, dengan catatan bahwa ekosistem IDE-nya kini hidup di fork komunitas dan pengembangan aktif pindah ke Roomote.",
+    body: [
+      "Roo Code lahir dari satu pertanyaan yang sejak 2024 membagi komunitas agentic coding: bagaimana kalau Cline — ekstensi VS Code open-source yang memelopori agentic coding lewat BYOK dan kontrol per-aksi — dibuat lebih terstruktur lewat pemisahan mode? Jawabannya adalah empat mode bawaan yang masing-masing punya persona, tool permission, dan system prompt berbeda. Code Mode adalah default untuk editing harian dan operasi file; Architect Mode untuk merancang sistem, menulis spesifikasi, dan merencanakan migrasi besar; Ask Mode untuk menjawab pertanyaan tentang codebase secara read-only tanpa perubahan; Debug Mode untuk menelusuri bug, menambahkan log, dan mengisolasi akar masalah. Yang membuat arsitektur ini menonjol dibanding tool agentik single-mode adalah Custom Modes: developer bisa menulis file Markdown sederhana yang mendefinisikan persona baru dengan instruksi spesifik, daftar tool yang diizinkan atau dilarang, dan model default yang digunakan. Hasilnya, satu instalasi Roo Code bisa berubah menjadi 'code reviewer', 'database migration specialist', atau 'test writer' tanpa plugin tambahan.",
+      "Secara teknis, Roo Code mewarisi seluruh kekuatan Cline — kemampuan membaca codebase besar, mengedit banyak file sekaligus, menjalankan perintah terminal dengan izin per-aksi, mengotomasi browser untuk verifikasi visual, dan terhubung ke MCP server untuk tool eksternal. Yang ditambahkan adalah lapisan mode di atas semua itu, membuat setiap interaksi lebih terarah dan lebih mudah di-audit. Misalnya, Architect Mode secara default menolak untuk langsung menulis kode dan hanya menghasilkan rencana yang dapat di-review sebelum dieksekusi, sedangkan Debug Mode dipaksa untuk selalu menambahkan logging pada titik-titik kritis dan menunda klaim 'sudah fix' sampai evidence konkret dikumpulkan. Pola 'pemisahan persona lewat prompt + tool restriction' ini adalah pendekatan yang kini mulai diadopsi tool agentic lain, tapi Roo Code sudah menerapkannya lebih dulu lewat Custom Modes yang sepenuhnya bisa dikustomisasi.",
+      "Dari sisi harga, Roo Code mengikuti pola BYOK murni: ekstensi IDE-nya gratis dan open-source, sementara biaya ditentukan oleh model apa yang dipasang lewat API key — OpenAI, Anthropic, Google, atau model lokal lewat Ollama. Untuk self-host Ollama dengan Qwen2.5-Coder 32B, biaya bulanan bisa nol rupiah di luar listrik lokal, meski dengan kompromi kualitas dibanding model frontier. Setelah Mei 2026, perusahaan memperkenalkan Roomote sebagai platform cloud agent: tim bisa menjalankan Roo Code di infrastruktur milik Roo Code Inc (cloud-hosted single-tenant, trial 7 hari gratis tanpa kartu kredit) atau self-host di server mereka sendiri dengan lisensi Fair Core yang otomatis konversi ke Apache-2.0 setelah dua tahun. Untuk pengguna individu dan tim kecil, ekstensi IDE fork komunitas seperti Zoo Code tetap gratis dan aktif; untuk tim enterprise yang perlu compliance, opsi Roomote self-hosted adalah jalur yang lebih sustainable tanpa ketergantungan pada IDE marketplace.",
+      "Untuk konteks Indonesia, Roo Code menarik karena tiga alasan. Pertama, dokumentasinya sudah diterjemahkan ke Bahasa Indonesia oleh komunitas — hambatan bahasa untuk adopsi tool agentik yang biasanya sangat teknis berkurang drastis. Kedua, kombinasi Roo Code + Ollama + model lokal seperti Qwen2.5-Coder atau DeepSeek-Coder memberikan jalur 'belajar agentic coding tanpa biaya' yang realistis, penting bagi pelajar, freelancer, dan developer di luar Jakarta yang ingin bereksperimen tanpa terbebani subscription bulanan. Ketiga, pivot ke Roomote dengan opsi self-host memberi korporasi Indonesia di sektor finance atau kesehatan jalur untuk mengadopsi agentic coding tanpa mengirim data prompt ke multi-tenant SaaS asing — kepatuhan terhadap regulasi lokal seperti UU PDP bisa dijaga lebih ketat. Kompetitor langsung yang perlu dipertimbangkan: Cline (original, masih aktif dan lebih simpel tanpa Custom Modes), Cursor (IDE komersial paling populer dengan UX lebih halus tapi biaya langganan tetap), Claude Code (lebih powerful untuk refactor besar tapi proprietary), Continue.dev (open-source lain dengan pendekatan lebih plugin-like), dan Windsurf (IDE agentic dari Codeium, posisi serupa Cursor). Saran editorial: mulai dari Roo Code IDE fork komunitas + Ollama untuk eksplorasi nol biaya, lalu pertimbangkan migrasi ke Roomote self-hosted kalau tim sudah matang dan perlu governance yang lebih ketat."
+    ],
+    link: "https://roomote.dev",
+    linkLabel: "Situs Resmi",
+    date: "2026-07-31",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
