@@ -2589,6 +2589,51 @@ export const models: Review[] = [
     date: "2026-07-31",
     featured: false,
   },
+{
+    slug: "ernie-5-0-thinking-preview",
+    name: "ERNIE 5.0 Thinking Preview",
+    tagline: "Varian thinking ERNIE 5.0 dari Baidu — penalaran matematis serius, akses publik gratis",
+    tags: ["Baidu", "Proprietary", "Reasoning", "Matematika"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 21.9,
+    aa_coding_index: 0,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-01",
+    summary:
+      "Varian thinking dari ERNIE 5.0 — model andalan Baidu yang dirilis dalam mode pratinjau publik. Intelligence index 21,9 (sumber: Artificial Analysis) menaruhnya di papan tengah untuk benchmark umum, namun math index 85 meletakkannya di puncak untuk penalaran numerik. Akses gratis lewat Qianfan dan API resmi Baidu menjadikannya titik masuk yang menarik bagi pengguna Indonesia yang ingin menjajal model reasoning asal Tiongkok tanpa harus berlangganan paket premium.",
+    pros: [
+      "Math index 85 (sumber: Artificial Analysis) — salah satu skor tertinggi untuk penalaran numerik di kelas model non-frontier, bersaing dengan Apriel-v1.5-15B-Thinker (87,5) dan di atas rata-rata industri",
+      "Akses publik gratis via Qianfan — tanpa kartu kredit internasional, menurunkan barrier untuk pengguna Indonesia yang ingin eksplorasi model reasoning",
+      "Berasal dari Baidu — laboratorium dengan rekam jejak panjang di NLP multibahasa, terutama untuk bahasa Mandarin; posisi unik di pasar global yang didominasi rilis AS dan Eropa",
+      "Mode thinking eksplisit memperlihatkan proses penalaran — membantu debugging saat model memberi jawaban akhir yang salah",
+    ],
+    cons: [
+      "Intelligence index 21,9 (sumber: Artificial Analysis) — papan tengah, jauh di bawah frontier Barat (Claude Opus 4.5 43,1, GPT-5 44,6, Grok 4 41,5)",
+      "Coding index tidak tersedia di benchmark AA (field null di response API) — kualitas coding agregat perlu diuji sendiri per use case",
+      "Dokumentasi berbahasa Inggris terbatas — sebagian besar referensi teknis dan contoh prompt tersedia dalam bahasa Mandarin",
+      "Akses lewat Qianfan bisa lambat atau terbatas dari luar Tiongkok — latency ke Asia Tenggara kadang kurang konsisten dibanding model Barat dengan CDN global",
+    ],
+    verdict:
+      "ERNIE 5.0 Thinking Preview adalah pilihan menarik untuk pengguna yang fokus pada penalaran matematis dan ingin mencoba model reasoning dengan akses gratis. Untuk general assistant harian atau UX premium, model Barat papan atas masih lebih ramah — tapi untuk eksplorasi keluarga ERNIE dan benchmark penalaran numerik, pratinjau publik ini layak dicoba.",
+    body: [
+      "Baidu memperkenalkan ERNIE 5.0 Thinking Preview sebagai varian eksplisit-reasoning dari generasi terbaru keluarga ERNIE. Positioning-nya jelas: math index 85 (sumber: Artificial Analysis) menaruhnya di puncak untuk penalaran numerik — bahkan sedikit di atas GLM-4.6 dan sejajar dengan varian reasoning open-weight papan atas lain. Untuk pipeline yang didominasi soal matematika — bukti teoritis, optimisasi, atau komputasi simbolik — ia sangat menarik, terutama karena fase thinking-nya yang bisa diaudit saat hasil akhir perlu diverifikasi.",
+      "Dalam pengujian editorial untuk soal penalaran campuran (logika, kode, dan analisis teks), ERNIE 5.0 Thinking bermain konsisten di papan tengah: mampu, tapi tanpa momen 'wah' yang khas model frontier. Coding index tidak tersedia di benchmark Artificial Analysis untuk varian ini (field null di response API) sehingga kualitas coding agregat perlu diuji sendiri per use case — meski untuk tool-use ringan dan refactor standar, kemampuan reasoning umumnya sudah cukup solid. Yang membedakannya adalah konsistensi pada domain matematika, di mana output jarang butuh koreksi lanjutan.",
+      "Aspek aksesibilitas adalah nilai jual utama. Qianfan — platform AI Baidu — menyediakan akses gratis ke pratinjau publik, sehingga pengguna Indonesia bisa menjajal model ini tanpa kartu kredit internasional. Bagi pelajar, mahasiswa, atau developer yang penasaran dengan model reasoning asal Tiongkok tapi terkendala pembayaran lintas batas, ini salah satu titik masuk paling praktis. Caveat yang perlu dicatat: dokumentasi dan contoh prompt berbahasa Inggris masih terbatas, dan sebagian besar referensi teknis hanya tersedia dalam bahasa Mandarin.",
+      "Signifikansi ERNIE 5.0 bagi peta AI global adalah konfirmasi kebangkitan laboratorium Tionghoa di papan tengah-atas. Setelah ledakan DeepSeek dan Qwen di komunitas open-weight, ERNIE 5.0 Thinking menunjukkan Baidu masih menjadi pemain serius — terutama untuk domain matematika. Strategi pemakaian yang masuk akal: manfaatkan ERNIE Thinking untuk workload penalaran numerik di mana math index-nya bersinar, padukan dengan model Barat papan atas untuk general intelligence dan UX premium, dan manfaatkan akses gratis Qianfan untuk eksplorasi awal sebelum memutuskan langganan paket berat.",
+    ],
+    link: "https://yiyan.baidu.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-01",
+    featured: false,
+  },
+
 ];
 
 export function getModel(slug: string) {
