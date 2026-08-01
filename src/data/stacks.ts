@@ -2244,6 +2244,47 @@ export const stacks: Review[] = [
     date: "2026-07-31",
     featured: false,
   },
+  {
+    slug: "notebooklm",
+    name: "NotebookLM",
+    tagline: "Notebook riset AI Google dengan sumber ter-grounding dan Audio Overview",
+    tags: ["Google", "Freemium", "Productivity", "Research"],
+    score: 8.7,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "NotebookLM bukan chatbot -- ini adalah notebook riset di mana AI hanya menjawab dari sumber yang kamu unggah. Audio Overview yang menghasilkan podcast percakapan dengan dua orang pembawa acara dari dokumen teks adalah fitur yang belum ada di tool lain, dan lapisan gratisnya cukup untuk pemakaian serius.",
+    pros: [
+      "Grounded ke sumber yang diunggah: tidak mengarang, semua klaim bisa dilacak ke paragraf spesifik",
+      "Audio Overview menghasilkan podcast natural dari dokumen teks -- fitur yang sangat sulit ditiru",
+      "Mendukung 50+ bahasa termasuk Bahasa Indonesia pada Audio Overview",
+      "Tier gratis sudah sangat fungsional: 100 notebook, 50 sumber per notebook, 3 Audio Overview per hari",
+      "Terintegrasi rapi dengan Google Drive, Docs, PDF, dan link web"
+    ],
+    cons: [
+      "Bukan agen eksekusi -- tidak bisa menulis ulang file, menjalankan kode, atau mengirim email",
+      "Model yang dipakai tidak transparan (tidak ada kontrol pilih model seperti Claude atau GPT)",
+      "Kualitas jawaban sangat bergantung pada kualitas sumber yang diunggah: garbage in, garbage out",
+      "Belum ada API publik untuk otomasi pipeline riset"
+    ],
+    verdict:
+      "Standar baru untuk riset dan sintesis dokumen. Untuk pelajar, jurnalis, dan peneliti Indonesia, kombinasi layer gratis + dukungan Bahasa Indonesia di Audio Overview adalah nilai yang hampir tidak tertandingi -- selama kamu paham bahwa ini bukan tool eksekusi.",
+    body: [
+      "NotebookLM membedakan diri dari hampir semua tool AI lain dengan satu keputusan arsitektur yang berani: model hanya menjawab dari sumber yang kamu unggah. Tidak ada pengetahuan umum, tidak ada halusinasi dari memori model -- setiap klaim yang muncul di jawaban, ringkasan, atau Audio Overview selalu bisa dilacak ke paragraf spesifik di salah satu sumber notebook. Bagi pengguna yang lelah mendapat fact yang salah dari chatbot, pendekatan ini adalah penawar: kamu tidak perlu lagi menandai disclaimer 'cek sendiri kebenarannya' karena tool ini secara teknis tidak bisa mengarang dari luar dokumen.",
+      "Fitur yang paling sering jadi pembicaraan adalah Audio Overview: kamu unggah 5-10 sumber teks, lalu dalam 2-4 menit NotebookLM menghasilkan podcast percakapan antara dua orang pembawa acara yang membahas isi dokumen dengan nada natural, jeda yang realistis, dan bahkan interjeksi informal. Kualitasnya cukup baik untuk dipakai sebagai materi belajar ulang di perjalanan atau briefing saat commuting. Sejak 2025, Audio Overview mendukung 50+ bahasa termasuk Bahasa Indonesia, jadi pengguna Indonesia bisa menghasilkan podcast Bahasa Indonesia dari sumber yang ditulis dalam bahasa apa pun. Video Overview, Mind Maps, dan Reports menambahkan mode konsumsi yang berbeda: visual, ringkas, atau terstruktur.",
+      "Harga adalah salah satu kekuatan utama NotebookLM. Layer gratis sudah sangat fungsional: 100 notebook, 50 sumber per notebook, 50 chat queries per hari, dan 3 Audio Overview per hari. Untuk pelajar dan peneliti, ini sudah lebih dari cukup. NotebookLM Plus seharga US$19,99 per bulan (atau bagian dari langganan Google One AI Premium, sekitar Rp320.000 per bulan untuk pasar Indonesia) meningkatkan kuota menjadi 5x dan menambahkan integrasi Workspace yang lebih dalam. Tidak ada tool sebanding yang menawarkan value-for-money seperti ini di tier gratis -- Claude Projects, ChatGPT, dan Perplexity Pro semuanya jauh lebih mahal untuk use case sintesis dokumen.",
+      "Untuk konteks Indonesia, NotebookLM menarik di empat skenario. Pertama, mahasiswa dan peneliti yang harus membaca banyak makalah atau jurnal: unggah 20 paper, minta ringkasan per-bab atau podcast Bahasa Indonesia, dan revise sambil di jalan. Kedua, jurnalis dan content creator yang sering riset topik baru: collect 30 link, minta NotebookLM cari pola, lalu gunakan sebagai outline artikel. Ketiga, profesional yang menghadapi banyak dokumen internal (laporan, transkrip rapat, proposal): upload Drive folder, tanya spesifik, dapat jawaban dengan sitasi. Keempat, pemula yang baru kenal AI dan takut halusinasi: NotebookLM adalah tool paling aman untuk belajar karena tidak mungkin 'mengarang' dari luar sumber. Kompetitor langsung: Perplexity (general Q&A, tidak source-grounded seketat NotebookLM), ChatGPT Projects (lebih fleksibel tapi kurang pol), Claude Projects (lebih powerful tapi mahal), Elicit (fokus akademis, kurang versatile). Saran editorial: coba NotebookLM untuk satu use case riset nyata dalam dua minggu -- kebanyakan pengguna Indonesia yang mencobanya untuk skripsi, laporan, atau briefing kerja tidak kembali ke workflow lama."
+    ],
+    link: "https://notebooklm.google.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-01",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
