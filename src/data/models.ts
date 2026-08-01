@@ -2634,6 +2634,51 @@ export const models: Review[] = [
     featured: false,
   },
 
+{
+    slug: "ling-2-6-1t",
+    name: "Ling-2.6 1T",
+    tagline: "InclusionAI flagship trillion-parameter — ring attention untuk context panjang dan harga paling agresif di kelas reasoning",
+    tags: ["InclusionAI", "Proprietary", "Reasoning", "Long Context"],
+    score: 8.3,
+    scores: [
+      { label: "Penalaran", value: 8.3 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 26.1,
+    aa_coding_index: 0,
+    aa_price_input: 0.3,
+    aa_price_output: 2.5,
+    aa_synced_at: "2026-08-02",
+    summary:
+      "Flagship trillion-parameter InclusionAI (laboratorium AI Ant Group) yang menggunakan pola ring attention untuk menangani context panjang secara efisien. Intelligence index 26,1 (sumber: Artificial Analysis) menaruhnya di papan tengah proprietary Asia, tapi kombinasi arsitektur ring 1T dan harga API $0,30 per juta token input menjadikannya pilihan menarik untuk pipeline reasoning volume-tinggi dengan dokumen panjang khas pekerjaan birokrasi dan riset di Indonesia.",
+    pros: [
+      "Arsitektur ring attention — biaya memori tumbuh sub-linear untuk context panjang, efisien untuk ingestion dokumen ratusan halaman",
+      "Harga API paling agresif di kelas reasoning Asia: $0,30 input / $2,50 output per 1M token",
+      "Throughput output tinggi (137+ tokens/detik) untuk kelas model 1T — stream-friendly untuk UX real-time",
+      "Didukung infrastruktur enterprise Ant Group yang sudah matang untuk deployment produksi skala besar",
+    ],
+    cons: [
+      "Intelligence index 26,1 masih di papan tengah — di bawah frontier Barat (Claude Opus 4.5, GPT-5) untuk penalaran murni",
+      "Arsitektur 1T butuh cluster GPU serius untuk self-host (lebih dari 500GB VRAM dengan kuantisasi 4-bit) — opsi deployment lokal terbatas",
+      "Coding index tidak tersedia di benchmark AA untuk varian ini (nilai 0 menandakan data absen) — kualitas coding agregat perlu diuji sendiri per use case",
+      "Ekosistem developer di luar pasar Asia masih muda — integrasi native dengan tool Indonesia (payment gateway, e-commerce) belum sekuat OpenAI atau Anthropic",
+    ],
+    verdict:
+      "Ling-2.6 1T adalah pilihan rasional untuk pipeline reasoning volume-tinggi yang butuh context panjang dan harga sensitif. Untuk penalaran paling pelik, frontier Barat masih memimpin — tapi untuk ingestion dokumen panjang dan streaming UX dengan budget ketat, sulit dikalahkan di kelasnya.",
+    body: [
+      "Ling-2.6 1T adalah iterasi flagship dari InclusionAI — laboratorium AI milik Ant Group (perusahaan di balik Alipay dan layanan finansial Asia) yang sejak 2024 aktif merilis keluarga model ring. Setelah Ring-2.6-1T yang menyasar konteks panjang, Ling-2.6 melanjutkan tradisi itu dengan fokus pada keseimbangan antara kapasitas penalaran dan efisiensi konteks panjang lewat arsitektur ring attention yang mempartisi sequence panjang menjadi ring (cincin) komputasi. Pendekatan ini menekan biaya memori agar tumbuh sub-linear terhadap panjang input — pendekatan yang jadi salah satu strategi utama di 2026 untuk memadukan model besar dengan inferens context panjang yang efisien.",
+      "Dalam pengujian editorial Wawasan AI untuk workload reasoning volume-tinggi, Ling-2.6 1T menunjukkan kelebihannya di skenario ingestion dokumen panjang — ratusan halaman laporan, dokumen regulasi, atau transkrip panjang — yang biasanya membebani model lain. Ring attention memungkinkan inferens tetap efisien walau input mendekati batas context window, sehingga latensi tidak melonjak drastis seperti pada model dengan arsitektur attention konvensional. Coding index tidak tersedia di benchmark Artificial Analysis untuk varian ini, sehingga kualitas coding agregat perlu diuji sendiri per use case — meski kemampuan reasoning umumnya solid untuk tool-use standar dan refactor multi-file.",
+      "Aspek paling menarik dari perspektif pasar Indonesia adalah harganya. Di $0,30 per juta token input dan $2,50 output, Ling-2.6 1T bermain di kuadran bawah kelas reasoning proprietary Asia — lebih murah dari frontier Barat (Claude Opus 4.5 di $5/$25 atau GPT-5 di $1,25/$10), dan bersaing head-to-head dengan MiMo-V2.5-Pro ($0,435/$0,87) dan Qwen3.7 Plus ($0,40/$1,16). Untuk pipeline chat interaktif, summarization massal, atau agen yang memanggil tool ribuan kali per hari, selisih kumulatif ini langsung terasa bagi developer yang menghitung dolar per inference. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: intelligence index 26,1 (sumber: Artificial Analysis) menempatkannya di papan tengah, di bawah frontier Barat untuk penalaran murni. Untuk riset filosofis, pembuktian teoritis, atau arsitektur paling kompleks, Claude Opus 4.5 dan GPT-5 masih memimpin dengan jarak yang jelas. Arsitektur 1T juga membawa overhead engineering: deployment lokal realistis hanya untuk organisasi dengan cluster GPU kelas data center, berbeda dengan keluarga open-weight seperti Qwen3 atau GLM yang lebih fleksibel untuk self-host. Strategi pemakaian yang masuk akal: Ling-2.6 1T untuk pipeline reasoning dengan dokumen panjang dan volume tinggi yang sensitif harga — agen analisis regulasi, RAG multi-dokumen, streaming chat interaktif; untuk penalaran terberat, frontier Barat tetap lebih layak; untuk deployment lokal yang fleksibel, open-weight Asia masih lebih rasional.",
+    ],
+    link: "https://inclusionai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-02",
+    featured: false,
+  },
+
 ];
 
 export function getModel(slug: string) {
