@@ -2991,6 +2991,55 @@ export const repos: Review[] = [
     updatedAt: "2026-08-01",
     featured: false,
   },
+  {
+    slug: "ataraxy-sem",
+    name: "Ataraxy sem",
+    tagline: "Version control semantic untuk coding agent berbasis entity-level diff",
+    tags: ["Developer Tools", "Coding Agent", "Rust", "Git"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.0 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Keksiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Ataraxy sem adalah semantic version control yang menambahkan lapisan entity-level di atas git: diff, blame, dan impact analysis dilakukan pada level fungsi, kelas, atau blok kode - bukan baris teks. Dipakai lewat CLI, MCP, dan GitHub Action, dan dirancang agar coding agent dapat menavigasi basis kode besar tanpa membanjiri context window dengan diff mentah.",
+    highlights: [
+      "Entity-level diff: perubahan dihitung pada level fungsi, kelas, atau blok kode, bukan baris teks",
+      "Entity-level blame: setiap entitas melacak penulis dan riwayatnya secara independen dari pergerakan baris",
+      "Impact analysis otomatis: ketahui entitas mana yang terpengaruh oleh sebuah perubahan sebelum merge",
+      "Parsing 28 bahasa via tree-sitter untuk cakupan multi-ekosistem",
+      "CLI `sem` untuk pemakaian lokal: indexing cepat, query simbol, dan diff ringkas",
+      "Integrasi MCP server agar coding agent (Claude Code, Cursor, dan lainnya) dapat membaca serta memodifikasi repositori secara terstruktur",
+      "GitHub Action otomatis menjalankan semantic diff di setiap pull request",
+      "Berbasis Rust dengan distribusi single static binary - mudah dipasang di CI",
+    ],
+    pros: [
+      "Mengubah PR review dari 'lihat baris merah-hijau' menjadi 'lihat fungsi yang berubah dan dampaknya'",
+      "Sangat membantu coding agent yang sebelumnya harus menelan diff panjang mentah",
+      "Parsing deterministik via tree-sitter - tidak bergantung pada model AI untuk analisis struktural",
+    ],
+    cons: [
+      "Repositori relatif muda (rilis awal 2026) - ekosistem plugin dan integrasi IDE masih berkembang",
+      "Performa indexing di monorepo sangat besar masih perlu tuning manual",
+      "Dokumentasi cenderung praktis, belum selengkap pemain mapan di kategori code intelligence",
+    ],
+    verdict:
+      "Tool wajib untuk tim yang mengandalkan coding agent di basis kode besar. Kalau diff tradisional adalah peta jalan, semantic diff dari sem adalah GPS yang memahami kode - dan itu membuat loop agent lebih murah, lebih aman, dan lebih cepat konvergen.",
+    body: [
+      "Selama dua tahun terakhir, coding agent menjadi semakin mahir menulis kode, tapi proses review dan verifikasi perubahan masih menjadi titik gesekan: diff tradisional berbasis baris tidak memberi tahu kita apakah sebuah fungsi berubah perilakunya, hanya bahwa beberapa baris ditambahkan atau dihapus. Ataraxy Labs, startup baru di San Francisco, mengambil pendekatan yang lebih struktural lewat tool bernama sem: sebuah semantic version control yang menghitung diff, blame, dan impact analysis pada level entitas kode - fungsi, metode, kelas, blok - menggunakan parser tree-sitter untuk 28 bahasa.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling terasa adalah pull request yang menyentuh satu helper di tengah logika bisnis. Diff tradisional bisa menampilkan 20 baris yang tersebar di banyak file; sem langsung merangkum: satu fungsi `calculate_risk_score` di `risk.py` berubah, dua test terkait terpengaruh, satu caller di modul pricing ikut menyentuh. Untuk coding agent yang menelan diff sebagai konteks sebelum menulis patch, ringkasan ini menghemat banyak token dan mengurangi risiko halusinasi atas perubahan yang sebenarnya tidak relevan.",
+      "Arsitekturnya sengaja dibuat deterministic: parsing dilakukan offline lewat tree-sitter, bukan oleh model bahasa, sehingga hasil semantic diff stabil dan reproducible. CLI-nya sederhana - `sem index`, `sem diff`, `sem blame`, `sem impact` - dan tersedia sebagai MCP server agar Claude Code, Cursor, atau agent lain bisa menanyakan repositori lewat protokol terstruktur. GitHub Action menjalankan semantic diff otomatis di setiap pull request, sehingga reviewer manusia dan agent mendapat ringkasan dampak yang konsisten sebelum approving perubahan.",
+      "Untuk konteks Indonesia, kombinasi open-source (Apache-2.0), distribusi single static binary, dan integrasi MCP menjadikannya alat yang relatif mudah dipasang di pipeline lokal atau server internal. Tim engineering yang mulai mengadopsi coding agent di repositori legacy berukuran ratusan ribu baris akan paling merasakan manfaat: review lebih cepat, agent loop lebih pendek, dan diff yang ditampilkan benar-benar informatif. Dengan 3.269 bintang dan adopsi awal yang terlihat di kalangan tim AI engineering, Ataraxy sem layak masuk radar sebagai tool code intelligence baru yang berpikir dalam entitas, bukan baris.",
+    ],
+    link: "https://github.com/Ataraxy-Labs/sem",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
