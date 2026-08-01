@@ -2596,6 +2596,49 @@ export const berita: Artikel[] = [
       },
     ],
   },
+
+{
+    slug: "ypia-desak-pemerintah-percepat-regulasi-ai-kai-2026-lahirkan-kesepakatan-yogyakarta",
+    title: "YPIA, KAI 2026, dan Kesepakatan Yogyakarta: Ketika Masyarakat Sipil Mulai Memaksa Batas Waktu",
+    excerpt:
+      "Forum Kongres AI Indonesia 2026 melahirkan Kesepakatan Yogyakarta, sementara YPIA menuntut pemerintah tidak menunda regulasi. Apa yang sebenarnya diminta — dan kenapa waktunya kini tidak bisa ditawar lagi.",
+    category: "Opini",
+    date: "2026-08-02",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Pada awal Juli 2026, dua peristiwa yang nyaris tidak masuk headline bisnis ternyata saling melengkapi. Di satu sisi, Kongres AI Indonesia 2026 — pertemuan tahunan yang mengumpulkan akademisi, praktisi, dan regulator — melahirkan dokumen yang disebut Kesepakatan Yogyakarta: semacam piagam bersama yang merangkum apa yang dianggap batas etis dan operasional dalam pengembangan AI di Indonesia. Di sisi lain, YPIA, sebuah organisasi masyarakat sipil yang fokus pada kebijakan AI, melontarkan tuntutan yang lebih keras: percepat regulasinya, atau yang lain akan menuliskannya untuk Anda.",
+          "Sekilas dua peristiwa itu terlihat seperti episode rutin dunia kebijakan. Namun kalau dibaca dalam konteks yang lebih panjang — Perpres Peta Jalan AI Nasional yang masih menunggu tanda tangan di Sekretariat Negara, wacana undang-undang AI yang masih berupa sinyal politik dari Baleg DPR, dan desakan pelaku industri agar aturan tidak membunuh inovasi — Kesepakatan Yogyakarta dan tekanan YPIA menunjukkan satu hal yang jarang diucapkan terang-terangan: consensus di kalangan non-pemerintah soal apa yang harus diatur sudah lebih maju dari consensus di kalangan pemerintah sendiri.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya ada di Kesepakatan Yogyakarta",
+        paragraphs: [
+          "Kesepakatan Yogyakarta tidak lahir di ruang hampa. Dokumen ini disusun lewat serangkaian diskusi panel di KAI 2026 yang melibatkan sekitar empat ratus peserta — dari universitas, komunitas AI terbuka, perusahaan rintisan, hingga perwakilan beberapa kementerian. Substansinya tidak radikal: ia pada dasarnya menerjemahkan konsensus global — yang paling jelas tergambar di EU AI Act dan OECD AI Principles — ke dalam konteks lokal Indonesia. Beberapa poin yang konsisten muncul di pembahasan: klasifikasi sistem AI berdasarkan tingkat risiko, kewajiban transparansi untuk sistem yang dipakai publik, perlindungan terhadap diskriminasi algoritmik, dan tata kelola internal yang jelas soal siapa mengawasi dan siapa yang berwenang memberi sanksi.",
+          "Yang membuat dokumen ini menarik justru bukan isinya, melainkan fakta bahwa ia lahir tanpa menunggu pemerintah. Akademisi dan komunitas teknis di Indonesia sudah cukup sering berdiskusi soal etika AI di forum-forum seperti ICAI atau seminar universitas, tapi biasanya rekomendasi yang muncul berhenti di makalah atau laporan riset. Kali ini, lewat Kesepakatan Yogyakarta, mereka sepakat untuk menandatangani sesuatu yang lebih operasional — semacam standar sukarela yang bisa diadopsi industri sambil menunggu aturan yang lebih mengikat keluar. Itu adalah bentuk tekanan yang berbeda dari petisi atau surat terbuka: sebuah dokumen rujukan yang siap dipakai regulator sebagai titik awal ketika mereka mulai menulis aturan.",
+          "Untuk konteks lokal: bagi UMKM teknologi dan startup yang selama ini resah karena ketidakpastian aturan, dokumen seperti ini bisa menjadi sandaran jangka pendek. Ia tidak menggantikan undang-undang, tetapi cukup untuk menunjukkan bahwa praktik tertentu — misalnya audit algoritma atau disclosure ketika produk AI dipakai di layanan pelanggan — sudah punya consensus di kalangan komunitas, sehingga pelanggan korporat dan investor bisa menuntut hal serupa.",
+        ],
+      },
+      {
+        heading: "Apa yang dituntut YPIA, dan kenapa waktunya kini penting",
+        paragraphs: [
+          "YPIA memilih nada yang berbeda. Alih-alih menunggu consensus, mereka menuntut: regulasi AI dalam bentuk yang mengikat harus keluar paling lambat akhir 2026. Argumennya sederhana tapi sulit dibantah: tanpa aturan yang jelas, perusahaan-perusahaan kecil dan menengah yang bermain bersih akan kalah bersaing dari pemain yang bermain sembarangan. Tidak ada insentif untuk patuh kalau pesaing bisa melanggar tanpa konsekuensi. Tanpa aturan, konsumen juga tidak punya pegangan ketika produk AI yang dipakai ternyata bias, keliru, atau bahkan melanggar privasi. Tanpa aturan, sektor publik — yang seharusnya menjadi contoh adopsi bertanggung jawab — justru menjadi yang paling rentan karena anggaran yang terbatas dan godaan untuk menggunakan AI apa adanya tanpa audit.",
+          "Yang membuat tuntutan ini lebih politis dari yang terlihat: YPIA bukan lagi satu-satunya suara. Belakangan, beberapa asosiasi industri yang tadinya minta pemerintah untuk tidak terburu-buru mulai berubah nada. Mereka melihat bahwa ketidakpastian aturan lebih mahal dari aturan yang imperfect. Investor yang akan menanam di startup AI Indonesia biasanya bertanya dulu soal risiko regulasi, dan jawaban 'belum ada aturannya' bukan jawaban yang meyakinkan. Akhirnya, posisi yang dulu netral — yaitu menunggu — mulai kehilangan pendukung. Yang tersisa adalah dua kubu: mereka yang ingin aturan keluar cepat dengan kualitas seadanya, dan mereka yang ingin aturan keluar pelan tapi lebih matang. YPIA jelas ada di kubu pertama.",
+          "Implikasi untuk ASN dan instansi pemerintah cukup langsung: kalau regulasi keluar di semester kedua 2026, instansi yang sudah mulai eksperimen dengan AI sejak 2024-2025 akan punya dasar hukum yang lebih kuat untuk melanjutkan inisiatifnya. Instansi yang masih ragu akan dipaksa memilih — ikut bergerak dengan risiko diawasi, atau tetap diam dengan risiko tertinggal. Tidak ada lagi pilihan untuk menunggu dengan tenang.",
+        ],
+      },
+      {
+        heading: "Apa yang sebaiknya dilakukan sambil menunggu aturan resmi",
+        paragraphs: [
+          "Ada tiga hal yang bisa dilakukan instansi, startup, dan individu sambil menunggu regulasi yang lebih tegas. Pertama, mulai terapkan praktik audit internal sederhana untuk sistem AI yang sudah dipakai — siapa yang melatihnya, data apa yang dipakai, output apa yang diawasi manusia, dan bagaimana jalur banding kalau ada keluhan. Tidak butuh auditor independen untuk mulai; cukup dokumentasi internal yang jujur. Kedua, jika bekerja di sektor yang menangani data pribadi atau keputusan yang memengaruhi hak warga — perekrutan, penilaian kredit, verifikasi bansos — pastikan ada lapisan manusia di akhir proses. Ini adalah standar yang kemungkinan besar akan masuk ke regulasi final, dan memulainya sekarang menghemat biaya retrofit di kemudian hari.",
+          "Ketiga, untuk industri dan komunitas: adopsi Kesepakatan Yogyakarta sebagai rujukan sukarela. Ini bukan aturan, tapi memberi sinyal bahwa Anda bermain serius. Dalam negosiasi dengan investor atau pelanggan korporat, dokumen seperti ini menjadi nilai tambah yang nyata. Untuk ASN di daerah yang sering bertanya 'kami boleh pakai AI untuk apa', Kesepakatan Yogyakarta bisa menjadi sandaran moral dan profesional sampai aturan resmi keluar. Yang paling penting dari semuanya: berhenti menunggu. Konsensus di luar pemerintah sudah lebih maju dari konsensus di dalam, dan sejarah teknologi menunjukkan bahwa biasanya yang menulis aturan adalah yang lebih siap, bukan yang lebih lambat.",
+          "Dalam pengujian editorial Wawasan AI, momen Kesepakatan Yogyakarta dan tekanan YPIA ini layak dibaca bukan sebagai episode kecil di kalender kebijakan, melainkan sebagai penanda bahwa masyarakat sipil Indonesia sudah mulai menagih. Pertanyaannya bukan lagi apakah Indonesia akan punya regulasi AI yang kuat, melainkan siapa yang akan menulisnya — pemerintah yang siap dengan naskah yang matang, atau publik yang akan turun tangan lewat jalur lain kalau jawabannya terlalu lama. Untuk sekali ini, tidak ada yang diuntungkan oleh penundaan.",
+        ],
+      },
+    ],
+  },
+
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
