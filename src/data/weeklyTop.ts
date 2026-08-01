@@ -1465,16 +1465,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                           ],
                         },
                         "h4ckf0r0day/obscura": {
-                          description:
-                            "Headless browser open-source (Rust, Apache 2.0) yang dirancang khusus untuk AI agent dan web scraping — ringan, anti-detect bawaan, dan drop-in replacement untuk Puppeteer/Playwright.",
-                          highlights: [
-                            "Engine headless browser dari Rust dengan V8 asli dan dukungan Chrome DevTools Protocol — dirancang dari awal untuk scraping dan automasi agentik, bukan turunan desktop Chrome.",
-                            "Beda dari Headless Chrome: footprint cuma ~30 MB RAM dan binary ~70 MB (vs 200+ MB dan 300+ MB), page load ~85 ms, dan fitur anti-detect built-in untuk menghindari blokir situs besar.",
-                            "Drop-in replacement Puppeteer/Playwright lewat CDP — kode automasi yang sudah ada tidak perlu di-rewrite, cukup ganti endpoint ke Obscura untuk footprint yang lebih kecil dan startup instan.",
-                            "Cocok untuk engineer AI agent yang butuh kemampuan browsing tanpa membengkakkan stack (Linux server, container, CI/CD) — engine open-source Apache 2.0 dengan program sponsor yang lestari.",
-                          ],
-                        },
-                                      };
+                            description:
+                              "Headless browser open-source (Rust, Apache 2.0) yang dirancang khusus untuk AI agent dan web scraping — ringan, anti-detect bawaan, dan drop-in replacement untuk Puppeteer/Playwright.",
+                            highlights: [
+                              "Engine headless browser dari Rust dengan V8 asli dan dukungan Chrome DevTools Protocol — dirancang dari awal untuk scraping dan automasi agentik, bukan turunan desktop Chrome.",
+                              "Beda dari Headless Chrome: footprint cuma ~30 MB RAM dan binary ~70 MB (vs 200+ MB dan 300+ MB), page load ~85 ms, dan fitur anti-detect built-in untuk menghindari blokir situs besar.",
+                              "Drop-in replacement Puppeteer/Playwright lewat CDP — kode automasi yang sudah ada tidak perlu di-rewrite, cukup ganti endpoint ke Obscura untuk footprint yang lebih kecil dan startup instan.",
+                              "Cocok untuk engineer AI agent yang butuh kemampuan browsing tanpa membengkakkan stack (Linux server, container, CI/CD) — engine open-source Apache 2.0 dengan program sponsor yang lestari.",
+                            ],
+                          },
+                          "yc-software/qm": {
+                            description:
+                              "Harness agen AI 'multiplayer' untuk kerja tim — workspace terisolasi per orang dan per ruangan, integrasi Slack, dan kolaborasi agent dengan manusia di channel yang sama.",
+                            highlights: [
+                              "Berbeda dari agen personal assistant pada umumnya: QM membagi workspace per orang dan per ruangan (Slack channel, project, group DM) dengan memory, file, keychain, izin, dan cron yang ter-scope sendiri.",
+                              "Agent loop-nya agnostik vendor — Pi, OpenCode, Codex, dan Claude Code semuanya bisa jadi 'otak' di belakang core yang sama, jadi organisasi tidak terkunci pada satu model atau harness.",
+                              "Sistem shared skill dengan grant per scope plus skill pack yang diimpor dari git repo — onboarding tim lewat skill terdistribusi rapi, bukan 'copy-paste SKILL.md' manual antar anggota.",
+                              "Dilengkapi web app builder internal, durable sandbox per scope yang login ke layanan eksternal tanpa bocor antar user, dan Postgres sebagai single source of truth untuk session/memory/queue — relevan untuk startup yang ingin agen AI jadi 'rekan tim', bukan bot tempelan.",
+                            ],
+                          },
+                          "codecrafters-io/build-your-own-x": {
+                            description:
+                              "Repositori legendaris 530k+ bintang berisi panduan langkah demi langkah membangun ulang teknologi populer dari nol — 3D renderer, Git, database, OS, Docker, LLM, dan puluhan lainnya.",
+                            highlights: [
+                              "Kompilasi tutorial 'recreate your favorite technologies from scratch' yang ditulis komunitas dengan disiplin Feynman: 'What I cannot create, I do not understand' — 28+ kategori dari BitTorrent, Docker, Neural Network, sampai Voxel Engine.",
+                              "Format konsisten: tiap proyek punya README penjelasan arsitektur singkat plus link ke tutorial bahasa tertentu (Python, C, Rust, Go, JavaScript, dll) — tinggal pilih stack favorit.",
+                              "Relevan untuk rekayasawan Indonesia yang ingin paham 'di balik layar' teknologi yang dipakai sehari-hari: membangun database dari nol mengajarkan indexing dan B-tree; membangun Git mengajarkan content-addressable storage; membangun LLM mengajarkan forward pass dan training loop.",
+                              "Sudah jadi referensi hampir setengah juta developer dan tetap di-update — salah satu 'awesome list' paling dihormati di GitHub yang evidence-nya banyak engineer level senior pernah selesai minimal satu tutorial di sini.",
+                            ],
+                          },
+                          "drumih/turbo-fieldfare": {
+                            description:
+                              "Runtime Swift + Metal khusus untuk menjalankan model Gemma 4 26B-A4B di Mac Apple Silicon RAM 8 GB — total footprint ~2 GB lewat streaming expert dari SSD.",
+                            highlights: [
+                              "Model spesifik, bukan wrapper MLX/llama.cpp: ditulis dari nol di Swift 6.2 + Metal 4 untuk Apple Silicon dengan teknik 'streaming expert MoE' — bagian dense 1,35 GB dan KV cache FP16 tetap di RAM, 21.504 expert di-stream dari SSD per token.",
+                              "Bisa jalan di MacBook RAM 8 GB (MacBook Air M1 sampai M4) tanpa swap menggila — lewat kombinasi OS page cache sebagai L2 gratis, prefill/decode split, dan I/O async yang sudah di-tune lewat 103 eksperimen terukur.",
+                              "Antarmuka ganda: native macOS app (TurboFieldfareMac) dengan UI untuk download dan chat, plus CLI untuk otomasi dan local OpenAI-compatible server di port tertentu — bisa langsung dipakai dari coding agent lewat endpoint standar.",
+                              "Kasus nyata untuk engineer dan riset Indonesia yang punya Mac Apple Silicon tapi RAM-nya pas-pasan: demo 'LLM frontier 26B di laptop pribadi tanpa GPU server' yang reproducible lewat repo ini — Apache 2.0, plus catatan optimasi journey yang transparan.",
+                            ],
+                          },
+                        };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
