@@ -153,6 +153,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Bagian dari 'agent skill economy' yang lagi naik — Meta-orchestrator untuk skill lain, cocok untuk tim yang ingin standardisasi workflow coding agent mereka.",
     ],
   },
+  "odysseus-dev/odysseus": {
+    description:
+      "Workspace AI self-hosted all-in-one — chat, agen, deep research, dokumen, email, catatan, kalender, dan workflow model lokal dalam satu Docker stack untuk menggantikan ChatGPT plus tool yang tercerai-berai.",
+    highlights: [
+      "Workspace AI self-hosted yang menggantikan 'ChatGPT + 10 tools terpisah' — chat, agen, deep research multi-langkah, editor dokumen, email IMAP/SMTP, catatan, tugas, dan kalender CalDAV dalam satu stack.",
+      "Dukungan model lokal dan API: jalankan lewat Ollama/vLLM/lainnya untuk privasi penuh, atau pakai Claude/GPT/OpenAI lewat API key; terintegrasi MCP, shell, file tools, skills, dan memory.",
+      "Dilengkapi Cookbook (rekomendasi model sesuai hardware), Deep Research agent (baca sumber lalu tulis laporan), Compare (blind side-by-side model testing), dan 2FA — bukan mainan, melainkan suite produktivitas.",
+      "Cocok untuk power user, developer, dan tim kecil yang ingin 'punya ChatGPT pribadi' di server sendiri tanpa langganan bulanan — lisensi AGPL-3.0, deploy via `docker compose up` di localhost:7000.",
+    ],
+  },
   "bannedbook/fanqiang": {
     description:
       "Kumpulan script dan panduan ilmu akses internet lintas batas (翻墙 — 'panjat tembok') — repositori Linux/Android/Windows/iOS/macOS untuk region dengan sensor internet ketat.",
@@ -211,6 +221,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Siklus kerja P-A-C-A (Plan-Act-Check-Adapt) dirancang khusus untuk tim campuran: BDD spec ditulis bareng AI, QA agent memverifikasi, dan board mencerminkan progres nyata antara manusia dan mesin.",
       "Sistem plugin berbasis WebAssembly (WASM) — tulis di Go, Rust, atau AssemblyScript, lalu pasang lewat marketplace internal tanpa sentuh core; cocok untuk studio dan agency yang butuh workflow custom.",
       "Dilengkapi MCP server resmi (@paca-ai/paca-mcp) sehingga Claude Desktop atau coding agent apapun bisa baca-tulis task, sprint, dan dokumen langsung dari workspace Paca lewat protokol standar.",
+    ],
+  },
+  "paperswithbacktest/awesome-systematic-trading": {
+    description:
+      "Daftar kurasi terlengkap untuk systematic/quantitative trading — 97 library backtesting, 40+ strategi institusional, dan 55 buku dari beginner sampai high-frequency, dirangkum untuk riset dan live trading.",
+    highlights: [
+      "Daftar kurasi 'awesome' terlengkap untuk trader kuantitatif: 97 library/package backtesting dan live trading (Zipline, Backtrader, QuantConnect, vnpy, Freqtrade, vectorbt, dll), 40+ strategi dari paper institusional, dan 55 buku.",
+      "Pembagian rapi per kategori: event-driven vs vector-based frameworks, crypto trading bots, indikator, optimizer, pricing, risk management, data sources, machine learning, time-series, sampai visualization.",
+      "Pendamping situs paperswithbacktest.com yang menyediakan implementasi Python dari strategi-strategi paper — bukan hanya daftar link, tapi ekosistem riset+implementasi.",
+      "Cocok untuk developer/engineer Indonesia yang ingin masuk quantitative trading, mahasiswa finanansial yang butuh titik mulai, dan praktisi retail yang serius mau bangun bot sendiri — bukan 'cara cepat kaya', melainkan fondasi teknikal yang serius.",
     ],
   },
   "microsoft/SkillOpt": {
