@@ -2679,6 +2679,48 @@ export const models: Review[] = [
     featured: false,
   },
 
+{
+    slug: "o4-mini",
+    name: "o4-mini (high)",
+    tagline: "Reasoning ringan OpenAI — math index papan atas dengan footprint API ekonomis",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Matematika"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.6 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 8.8 },
+    ],
+    aa_intelligence_index: 25.6,
+    aa_coding_index: 0,
+    aa_price_input: 1.1,
+    aa_price_output: 4.4,
+    aa_synced_at: "2026-08-03",
+    summary: "o4-mini (high) adalah varian reasoning efisiensi dari keluarga o-series OpenAI — dirancang untuk memberikan penalaran multi-langkah yang solid dengan biaya API yang jauh lebih rasional dari GPT-5 atau o3. Intelligence index 25,6 (sumber: Artificial Analysis) menaruhnya di papan tengah, namun math index 90,7 meletakkannya di puncak untuk penalaran numerik — sejajar dengan frontier papan atas untuk workload matematik. Harga API $1,10 per juta token input dan $4,40 output bermain di kelas mid-tier yang efisien, menjadikannya opsi menarik untuk pipeline reasoning volume-tinggi di mana setiap dolar inference dihitung.",
+    pros: [
+      "Math index 90,7 (sumber: Artificial Analysis) — salah satu skor tertinggi untuk penalaran numerik, sejajar dengan frontier reasoning papan atas",
+      "Harga API $1,10 input / $4,40 output per 1M token — jauh lebih rasional dari GPT-5 ($1,25/$10) atau Claude Opus 4.5 ($5/$25) untuk volume inference tinggi",
+      "Footprint inference yang lebih ringan dari o3 atau GPT-5 — latency dan throughput lebih ramah untuk aplikasi real-time",
+      "Akses penuh lewat OpenAI API dan ChatGPT tier Pro/Plus — integrasi dengan ekosistem OpenAI (Responses, function calling, structured outputs) yang paling matang di industri",
+    ],
+    cons: [
+      "Intelligence index 25,6 (sumber: Artificial Analysis) — papan tengah untuk penalaran umum, jauh di bawah frontier proprietary (Claude Opus 4.5 43,1, GPT-5 44,6)",
+      "Coding index tidak tersedia di benchmark AA (field null di response API) — kualitas coding agregat perlu diuji sendiri per use case spesifik",
+      "Ekosistem reasoning taraf lanjut masih dipegang o3 untuk workload yang butuh penalaran terdalam — o4-mini adalah trade-off antara kualitas dan biaya",
+      "Privasi data untuk pemakaian organisasi perlu dicermati — default data retention dan training opt-out policy OpenAI berbeda dari frontier proprietary lain",
+    ],
+    verdict: "o4-mini (high) adalah pilihan rasional untuk pipeline reasoning volume-tinggi di mana math index yang tinggi dan harga API yang efisien menjadi nilai jual utama. Untuk penalaran terberat atau riset terdalam, frontier papan atas (o3, Claude Opus 4.5) masih lebih layak — tapi untuk deployment harian di mana setiap dolar dihitung, sulit dikalahkan di kelasnya.",
+    body: [
+      "o4-mini (high) adalah varian reasoning efisiensi dari keluarga o-series OpenAI yang diperkenalkan awal 2025 — dirancang sebagai jembatan antara model kecil GPT-4o/mini dan reasoning flagship o3. Posisi OpenAI di pasar AI global memang unik: mereka menawarkan spektrum lengkap dari model mini yang murah, reasoning mid-tier seperti o4-mini, sampai reasoning flagship o3 dan generalis GPT-5. Untuk developer yang menjalankan pipeline reasoning volume-tinggi, o4-mini (high) menarik karena menawarkan math index 90,7 (sumber: Artificial Analysis) — skor yang menaruhnya sejajar dengan frontier reasoning papan atas untuk workload matematik, dengan footprint API dan harga yang jauh lebih efisien dari flagship.",
+      "Dalam pengujian editorial Wawasan AI, o4-mini (high) menunjukkan DNA keluarga reasoning OpenAI: penalaran multi-langkah yang cukup untuk task engineering standar, eksekusi tool dalam loop yang stabil, dan kekuatan menonjol di workload matematik dan penalaran numerik. Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, meski intelligence index 25,6 menempatkannya di papan tengah (bukan kelas frontier untuk penalaran umum). Yang paling terasa dibanding frontier proprietary lain adalah konsistensi di workload matematik: saat diminta menurunkan rumus, memecahkan sistem persamaan, atau memverifikasi algoritma numerik, output-nya jarang yang perlu dikoreksi. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 25,6 (sumber: Artificial Analysis) menaruh o4-mini (high) di papan tengah proprietary reasoning — di bawah GPT-5 (44,6), Claude Opus 4.5 (43,1), dan o3 (sekitar 40-an), tapi sejajar dengan model-model proprietary Asia papan tengah seperti Qwen3.5 397B A17B (33,7) atau MiMo-V2-Pro (40,3). Math index 90,7 adalah pembeda utama model ini — di atas frontier Barat untuk dimensi ini, dan sejajar dengan reasoning kelas atas seperti K-EXAONE (90,3) atau Apriel-v1.5-15B-Thinker (87,5). Throughput output dan TTFT tidak tersedia di response API AA untuk entry ini, jadi UX chat real-time perlu diuji sendiri per deployment. Harga API $1,10 per juta token input dan $4,40 output bermain di kelas mid-tier efisien — dibanding GPT-5 ($1,25/$10) atau Claude Opus 4.5 ($5/$25), o4-mini jauh lebih rasional di output, menjadikannya opsi menarik bagi developer yang menjalankan pipeline volume-tinggi di mana matematika menjadi workload utama.",
+      "Kelemahan yang teridentifikasi: intelligence index 25,6 masih di bawah frontier papan atas untuk penalaran umum — untuk riset mendalam atau penalaran multi-disiplin, GPT-5 dan Claude Opus 4.5 masih memimpin dengan jarak yang jelas. Coding index tidak tersedia di benchmark AA, jadi kualitas coding agregat perlu diuji sendiri per use case spesifik (jangan asumsikan setara dengan GPT-5 hanya karena namanya mirip). Juga, untuk workload reasoning terdalam — pembuktian teoretis, optimisasi kompleks, atau reasoning lintas-domain panjang — o3 masih lebih layak meski harganya lebih mahal. Strategi pemakaian yang masuk akal: o4-mini (high) untuk pipeline matematik dan reasoning volume-tinggi di mana math index 90,7 menjadi nilai jual utama, dan footprint inference yang efisien mendukung deployment real-time; untuk penalaran terberat atau riset terdalam, frontier papan atas (o3, Claude Opus 4.5) tetap lebih layak; untuk deployment on-prem atau self-host, keluarga open-weight masih lebih rasional.",
+    ],
+    link: "https://openai.com/o4-mini",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-03",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
