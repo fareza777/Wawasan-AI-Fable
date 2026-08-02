@@ -1524,6 +1524,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                               "Kasus nyata untuk engineer dan riset Indonesia yang punya Mac Apple Silicon tapi RAM-nya pas-pasan: demo 'LLM frontier 26B di laptop pribadi tanpa GPU server' yang reproducible lewat repo ini — Apache 2.0, plus catatan optimasi journey yang transparan.",
                             ],
                           },
+                          "firecrawl/pdf-inspector": {
+                            description:
+                              "Pustaka Rust dari tim Firecrawl untuk inspeksi, klasifikasi, dan ekstraksi teks PDF secara lokal di bawah 200 ms — deteksi otomatis PDF teks vs hasil scan supaya tidak buang biaya OCR untuk ~54% dokumen yang sebenarnya text-based.",
+                            highlights: [
+                              "Klasifikasi pintar dalam 10-50 ms dengan confidence score 0-1: membedakan TextBased, Scanned, ImageBased, atau Mixed lewat sampling content stream — pipeline downstream bisa skip OCR service kalau PDF sebenarnya text-based.",
+                              "Output Markdown yang terstruktur: heading H1-H4 (dari rasio font), list bernomor/berhuruf, code block (deteksi font monospace), tabel (rectangle + heuristik), bold/italic, URL otomatis, dan page break — bukan teks mentah yang harus di-post-process lagi.",
+                              "Binding lengkap untuk Python (PyPI), Node.js (npm), dan browser WebAssembly (WASM dengan CMap tertanam) — parser yang sama jalan di server, Node service, dan sisi klien tanpa round trip ke backend.",
+                              "Benchmark opendataloader-bench 2026 Juli: skor overall 0,875 dan reading order 0,915, tercepat 0,470 detik untuk 200 PDF di Apple M4 Pro — mengalahkan pymupdf4llm, markitdown, dan opendataloader pada dokumen yang sama. MIT-licensed dan dari tim Firecrawl, relevan untuk pipeline RAG Indonesia yang memproses PDF legal, akademik, atau laporan bisnis secara lokal.",
+                            ],
+                          },
+                          "lyogavin/airllm": {
+                            description:
+                              "Pustaka Python yang membuat inferensi LLM besar (70B, bahkan 405B) bisa jalan di GPU kelas konsumen 4-8 GB lewat layer-by-layer streaming — tanpa kuantisasi, tanpa pruning, dan tanpa distillation.",
+                            highlights: [
+                              "Trik 'layer-by-layer streaming': bobot model dipecah per layer dan di-move ke GPU satu per satu saat komputasi, lalu di-offload lagi — alhasil LLaMA-70B inference jalan di single 4 GB GPU, LLaMA-405B di 8 GB, dan DeepSeek-V3 671B di sekitar 12 GB.",
+                              "Bekerja tanpa kuantisasi (full precision) — jawaban model tetap sama akuratnya seperti inferensi normal, bukan model 'rusak' hasil kompresi agresif yang sering bikin output LLM loyo.",
+                              "Khusus MoE model (seperti DeepSeek-V3, Mixtral, Kimi K3 2.8T) jauh lebih hemat lagi: cukup stream satu expert pada satu waktu, sehingga Kimi K3 2.8T (model open-source terbesar per Juli 2026) berjalan di bawah 4 GB.",
+                              "Apache 2.0, install via pip install airllm, dan dipakai luas di komunitas AI/RAG Indonesia yang ingin host LLM besar di laptop atau VPS murah tanpa sewa GPU A100/H100 — cocok untuk prototyping, eksperimen, dan demo tanpa cloud bill yang mahal.",
+                            ],
+                          },
+                          "sherlock-project/sherlock": {
+                            description:
+                              "Tool OSINT Python legendaris (87k+ bintang) untuk melacak satu username di 400+ jejaring sosial sekaligus — pisahkan akun asli dari impostor dalam hitungan detik lewat baris perintah.",
+                            highlights: [
+                              "Pakai ratusan modul site-detector yang sudah di-maintain komunitas: Sherlock mencari username yang sama di Twitter/X, Instagram, GitHub, Reddit, TikTok, LinkedIn, Medium, dan ratusan platform lain dalam satu kali jalan.",
+                              "CLI yang ramah untuk pemula, tapi juga expose Python API untuk scripting: tinggal `sherlock user123` dapat tabel HTML/JSON yang langsung bisa di-pipe ke dashboard atau laporan forensik digital.",
+                              "Bisa dijalankan dari laptop investigasi tanpa install dependencies berat (hanya butuh Python 3 dan requests) — data username yang dicari tidak pernah dikirim ke server pusat, semuanya request langsung dari mesin user.",
+                              "Fondasi alat OSINT investigator, jurnalis, tim fraud, dan komunitas cybersecurity Indonesia — sering dipakai untuk due diligence rekrutmen, identifikasi akun penipu, dan investigasi jejak digital sebelum publish cerita. Aktif di-maintain dan open source (MIT), relevan untuk siapa saja yang serius soal intel sumber terbuka.",
+                            ],
+                          },
                         };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
