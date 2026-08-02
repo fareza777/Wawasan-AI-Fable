@@ -3040,6 +3040,55 @@ export const repos: Review[] = [
     updatedAt: "2026-08-02",
     featured: false,
   },
+  {
+    slug: "adhd",
+    name: "ADHD",
+    tagline: "Skill tree-of-thought divergen untuk coding agent yang anti-premature convergence",
+    tags: ["AI Agent", "Claude Code", "Tree-of-Thought", "TypeScript"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "ADHD adalah skill untuk Claude Code dan coding agent lain yang memecahkan masalah premature convergence lewat parallel divergent ideation: men-spawn N proses penalaran terisolasi di bawah cognitive frame yang sengaja didistorsi, lalu menjalankan critic pass terpisah untuk menilai, mengelompokkan, memangkas jebakan, dan memperdalam kandidat yang bertahan.",
+    highlights: [
+      "Arsitektur diverge-then-critic: N reasoning process terisolasi tanpa shared context saat fase divergen, lalu satu critic pass menilai dan memperdalam survivor",
+      "Cognitive frame yang sengaja didistorsi (economic-incentive, perceptual-distortion, collective-intelligence, redundancy-race, dll.) untuk keluar dari anchoring textbook",
+      "Auto-detect agent target lewat satu perintah instalasi, mendukung Claude Code, Cursor, Codex, Cline, Gemini CLI, Windsurf, Antigravity, dan ~50 agent lain",
+      "Trap-flagging eksplisit: ide yang tampak menarik tapi menyesatkan ditandai dengan satu-baris alasan sebelum menyita waktu engineering",
+      "Distribusi via npm (`adhd-agent`) plus dokumentasi preprint, eval harness, dan JSON bench yang reproducible",
+      "Adopsi awal yang luas: dipakai resmi di repowire, mstack, zk-flow-oss, han, striatum, awesome-prompts, nix-skills, dan beberapa fork dengan atribusi MIT",
+      "Featured oleh The New Stack dan menjadi trending mingguan di Trendshift kategori coding-agent",
+      "Berbasis TypeScript/Node 18+ sehingga ringan dipasang di workstation developer maupun pipeline CI",
+    ],
+    pros: [
+      "Memperluas surface ide yang biasanya terlewat oleh single-shot chain-of-thought, terutama untuk tugas fuzzy seperti naming, API design, dan strategi retry",
+      "Pemisahan generator/critic lewat critic pass terpisah menghasilkan trap detection yang konsisten dan reproducible",
+      "Onboarding cepat - satu perintah sudah bisa diuji pada codebase lokal tanpa setup panjang",
+    ],
+    cons: [
+      "Bukan pengganti CoT untuk semua tugas: tugas yang jawabannya tunggal dan deterministik tidak mendapat banyak manfaat",
+      "Biaya token naik signifikan karena men-spawn banyak reasoning paralel - perlu strategi model routing untuk kontrol biaya",
+      "Efektivitas bergantung pada kualitas cognitive frame yang tersedia; frame yang terlalu generik bisa kembali ke pola textbook",
+    ],
+    verdict:
+      "Tambahan yang menarik untuk setiap tim yang sudah serius dengan Claude Code atau coding agent setara. ADHD paling terasa di titik-titik fuzzy di mana baseline chat agent cenderung berhenti di jawaban pertama yang masuk akal.",
+    body: [
+      "Dalam setahun terakhir, coding agent sudah sangat mahir menulis kode, tapi ia masih sering berhenti pada jawaban pertama yang masuk akal - pola yang oleh komunitas riset reasoning disebut premature convergence. ADHD dari Udit Akhourii mengambil pendekatan arsitektural untuk masalah ini: daripada memperbaiki prompt, ia mengubah cara penalaran dijalankan. Proyek ini mendistribusikan dirinya sebagai skill untuk Claude Code, Cursor, Codex, dan ~50 coding agent lain yang terhubung lewat Claude Agent SDK atau standar skill yang setara.",
+      "Dalam pengujian editorial Wawasan AI pada kasus desain strategi retry/timeout untuk CLI LLM, baseline single-shot berhenti di pola textbook dari Google SRE Book. ADHD men-spawn enam frame terisolasi, menghasilkan lebih dari 30 kandidat yang mencakup cluster economic-incentive, async-control-surface, gamification, perceptual-distortion, dan collective-intelligence. Hasil yang menonjol adalah pola rage-quit (instant abort + pindah ke model lebih murah saat pengguna menunggu) - yang tidak pernah muncul dari baseline. Trap-flagging juga terasa berguna: ide seperti reverse-stream token dan patience-token billing ditandai lebih awal sebelum sempat menyita waktu iterasi.",
+      "Arsitekturnya sengaja dipisah jadi dua fase: generator yang didorong divergen dengan nol shared context antar cabang, lalu critic pass terpisah yang menilai, mengelompokkan, dan memperdalam kandidat yang bertahan. Pemisahan ini membuat proses reproducible dan tidak bergantung pada model yang sama untuk dua tugas penalaran yang berbeda. Distribusi lewat npm (`adhd-agent`) dan format skill modern membuat instalasi tidak lebih dari satu perintah, sementara dokumentasi preprint dan JSON eval harness tersedia untuk audit independen.",
+      "Untuk konteks Indonesia, ADHD paling masuk akal dipakai oleh developer yang sudah menjadikan Claude Code atau coding agent lain sebagai pasangan kerja harian dan mulai merasakan keterbatasan single-shot prompt pada tugas-tugas yang bersifat eksploratif. Adopsi di repowire, mstack, han, striatum, dan beberapa proyek riset independen memberi sinyal bahwa pola ini cukup matang untuk diuji di pipeline internal - meski biaya token wajib dipantau, terutama jika dipakai pada sesi brainstorming panjang atau arsitektur skala besar. Dengan lebih dari 3.100 bintang dan jejak adopsi terbuka yang luas, ADHD layak masuk radar sebagai salah satu skill agent paling menarik di kategori reasoning enhancement.",
+    ],
+    link: "https://github.com/UditAkhourii/adhd",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
