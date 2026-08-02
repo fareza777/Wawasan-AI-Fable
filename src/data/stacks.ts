@@ -2285,6 +2285,47 @@ export const stacks: Review[] = [
     date: "2026-08-01",
     featured: false,
   },
+  {
+    slug: "heygen",
+    name: "HeyGen",
+    tagline: "Generator video avatar AI untuk konten skala besar multibahasa",
+    tags: ["HeyGen", "Freemium", "Video Gen", "Avatar"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 7.5 },
+    ],
+    summary:
+      "HeyGen adalah pionir generator video avatar AI yang dipakai lebih dari 100.000 bisnis dunia untuk membuat video penjelasan, materi pelatihan, sampai iklan multibahasa dalam hitungan menit. Kelebihannya ada di orisinalitas avatar (foto atau rekaman singkat jadi avatar yang bisa membaca skrip dengan gerakan bibir natural), dukungan 175+ bahasa termasuk Bahasa Indonesia, dan pipeline API yang siap diintegrasikan ke workflow produksi. Untuk pengguna Indonesia yang perlu konten video berskala -- course online, marketing, pelatihan korporat -- HeyGen adalah titik masuk yang paling realistis antara biaya dan kualitas.",
+    pros: [
+      "Kualitas sinkronisasi bibir dan ekspresi wajah terbaik di kelasnya, sangat cocok untuk video explainer dan pelatihan",
+      "Dukungan 175+ bahasa dengan voice cloning termasuk Bahasa Indonesia, memungkinkan satu avatar berbicara dalam banyak bahasa",
+      "API matang dengan dokumentasi lengkap -- pipeline otomatis untuk batch video (mis. 100 variasi iklan) langsung dari spreadsheet",
+      "Avatar instan dari foto selfie (Instant Avatar) memangkas waktu produksi avatar kustom dari mingguan menjadi beberapa menit",
+      "Ekosistem enterprise solid: dipakai Salesforce, HubSpot, Shopify, dan UN untuk otomasi video marketing",
+    ],
+    cons: [
+      "Tier gratis sangat terbatas (1 video pendek, watermark mencolok) -- uji serius butuh langganan Creator",
+      "Harga Creator US$24/bulan dan Business US$72/bulan cukup mahal untuk kreator Indonesia, terutama untuk adopsi tim",
+      "Keterbatasan pada detail visual: gerakan tangan masih kaku, ekspresi mikro kurang, video panjang lebih dari 5 menit sering terlihat repetitif",
+      "Tidak ada opsi self-host atau open-weight model -- sepenuhnya proprietary dan terkunci di cloud HeyGen",
+    ],
+    verdict:
+      "Standar de facto untuk video avatar AI komersial. Untuk pengguna Indonesia yang butuh produksi video multibahasa berskala, kombinasi kualitas avatar dan kematangan API susah ditandingi -- selama budget bulanan Allow US$24-72 dan kamu menerima bahwa ini tool cloud proprietary, bukan alternatif open source.",
+    body: [
+      "HeyGen membedakan diri dari kompetitor seperti Synthesia, D-ID, dan Runway karena fokus murni pada avatar fotorealistik yang membaca skrip dengan sinkronisasi bibir natural. Pipeline-nya dimulai dari dua arah: pertama, kamu unggah rekaman 2 menit wajah seseorang (dengan izin) lalu Avatar Instan menghasilkan model avatar yang bisa dipakai dalam hitungan menit; kedua, kamu pilih dari 300+ avatar preset yang HeyGen lisensikan. Setelah avatar siap, tulis skrip dalam 175+ bahasa, pilih voice (atau clone milik kamu), dan dalam 3-5 menit HeyGen merender video 1-5 menit dengan ekspresi wajah, gerakan kepala, dan sinkronisasi bibir yang cukup halus untuk dipakai sebagai materi explainer profesional. Untuk pasar Indonesia, yang menarik adalah dukungan Bahasa Indonesia sudah cukup natural, terutama untuk voice preset -- jauh dari Google Translate robotic.",
+      "Fitur Video Translator memungkinkan kamu ambil video apapun (YouTube, rekaman Zoom, podcast) dan secara otomatis mendubbing ke bahasa lain dengan tetap mempertahankan suara asli atau menggantinya dengan voice clone. Untuk kreator Indonesia yang punya audiens ASEAN atau Eropa, ini adalah pengubah permainan: satu video YouTube Bahasa Indonesia bisa di-multiplicate menjadi versi Inggris, Mandarin, Thailand, Vietnam dengan biaya jauh di bawah produksi ulang. Untuk korporasi, fitur Brand Kit memungkinkan standardisasi font, warna, dan logo di seluruh video, dan Zapier/Make integration memungkinkan tim marketing membuat ratusan variasi iklan dari template spreadsheet. API HeyGen sangat matang: docs.heygen.com punya Quick Start 10 menit dan pricing API terpisah untuk embedded use case.",
+      "Harga adalah area paling divisive. Tier Free di HeyGen sangat fungsional untuk coba-coba (1 video dengan watermark, 1 avatar, 175 bahasa), tapi untuk produksi nyata kamu butuh Creator US$24/bulan (30 menit video, 1080p, no watermark, 1 personal avatar) atau Business US$72/bulan (90 menit, 4 avatar, prioritas render, brand kit). Buat pengguna Indonesia yang kurs dollar-nya volatile, US$24/bulan = Rp380.000/bulan = Rp4,5 juta/tahun -- tidak murah, tapi masuk akal untuk satu orang kreator atau konsultan yang aktif klien. Untuk korporasi, Enterprise custom pricing punya SSO, SCIM, dan dedicated CSM -- masuk kategori tool B2B serius. Salah satu saingan utama: Synthesia (lebih mahal, lebih kaku di Bahasa Indonesia), D-ID (lebih murah, kualitas avatar lebih rendah), Runway (lebih artistik, kurang corporate), dan open-source LivePortrait atau SadTalker (gratis tapi perlu setup GPU dan skill teknis).",
+      "Untuk konteks Indonesia, HeyGen menarik di empat skenario. Pertama, course creator dan edutech: bikin 50 video course Bahasa Indonesia dalam seminggu, masing-masing 3-5 menit, dengan avatar presenter yang konsisten. Kedua, agency marketing dan UMKM: buat 100 variasi iklan TikTok/Reels dalam 5 bahasa dari satu template, A/B test mana yang perform. Ketiga, korporasi: standarisasi video onboarding untuk karyawan baru di seluruh cabang, hindari biaya syuting ulang. Keempat, pemerintah daerah atau BUMN: buat video layanan publik multibahasa (Indonesia, Inggris, Mandarin untuk turis) tanpa harus syuting 3 kali. Kompetitor lokal Nakama AIC Video dan beberapa tool Indonesia lain masih jauh di belakang HeyGen dalam kualitas avatar dan kematangan API. Saran editorial: coba tier Free dulu untuk dua video internal, lalu kalau masuk use case produksi bulanan, ambil tahunan Creator (hemat ~20%) -- kebanyakan tim Indonesia yang rutin produksi video akan menemukan bahwa 1 jam waktu syuting yang saved per bulan sudah menutup subscription-nya.",
+    ],
+    link: "https://www.heygen.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-02",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
