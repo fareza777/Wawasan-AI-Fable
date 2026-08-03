@@ -3089,6 +3089,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-03",
     featured: false,
   },
+  {
+    slug: "ai-agent-book",
+    name: "AI Agent Book (Li Bojie)",
+    tagline: "Buku terbuka engineering AI Agent dengan kode per bab dan PDF siap cetak",
+    tags: ["AI Agent", "Buku", "Python", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 9.5 },
+      { label: "Kesiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "Repositori sumber untuk buku 'Memahami AI Agent secara Mendalam: Prinsip Desain dan Praktik Engineering' karya Li Bojie - salah satu buku engineering AI Agent paling komprehensif yang tersedia secara terbuka. Menyatukan naskah, PDF versi cetak, dan kode per bab dalam satu repositori Apache-2.0 yang bisa di-clone, dibaca, atau dijadikan referensi kurikulum internal.",
+    highlights: [
+      "Repositori tunggal untuk naskah, PDF siap cetak, dan kode per bab - tidak perlu pindah-pindah sumber",
+      "Topik inti: arsitektur agent, memori, context engineering, tool use, coding agent, dan multi-agent",
+      "Kode per bab tersedia sebagai folder terpisah yang bisa dijalankan independen untuk eksperimen",
+      "PDF versi cetak diterbitkan berkala lewat pipeline otomatis sehingga pembaca bisa memilih baca di layar atau unduh cetakan",
+      "Lisensi Apache-2.0 - bebas dipakai untuk pelatihan internal, fork, atau terjemahan, dengan atribusi",
+      "Lebih dari 30.000 bintang di GitHub menandakan posisi sebagai salah satu referensi engineering AI Agent paling banyak dikutip",
+      "Disertai contoh context engineering, prompt pattern, dan integrasi MCP yang bisa langsung di-port ke proyek produksi",
+      "Pendekatan buku yang utuh: tiap bab memadukan narasi desain, motivasi keputusan, dan implementasi - bukan kumpulan snippet terpisah",
+    ],
+    pros: [
+      "Referensi engineering yang jarang ada: buku panjang + kode + PDF dalam satu repositori terbuka",
+      "Cocok untuk tim yang ingin kurikulum internal tentang AI Agent tanpa harus merangkai materi dari banyak sumber",
+      "Lisensi Apache-2.0 memberi kebebasan untuk adaptasi, terjemahan, dan distribusi ulang di lingkungan internal perusahaan",
+      "Aktif diperbarui (pushedAt baru) sehingga contoh mengikuti tren rekayasa agent terkini",
+    ],
+    cons: [
+      "Naskah utama berbahasa Mandarin - pembaca Indonesia yang tidak fasih akan sangat terbantu oleh mesin penerjemah atau terjemahan komunitas",
+      "Bukan pustaka kode yang tinggal di-import: lebih tepat diperlakukan sebagai buku dengan lampiran kode daripada framework siap pakai",
+      "Tidak menyediakan Docker image atau installer satu perintah - ekspektasi setup mengikuti buku, bukan CLI tooling",
+    ],
+    verdict:
+      "Untuk siapa pun yang ingin memahami AI Agent dari sisi rekayasa secara mendalam, repositori ini adalah investasi waktu yang sangat layak. Ia tidak menggantikan framework - melainkan membekali pembaca dengan pola pikir untuk membangun framework sendiri.",
+    body: [
+      "Selama dua tahun terakhir, hampir semua referensi AI Agent yang beredar hadir dalam bentuk blog singkat, thread media sosial, atau repositori framework yang fokus pada API. Jauh lebih jarang kita menemukan buku engineering panjang yang membahas prinsip desain dan praktik implementasi secara utuh - terutama yang menyertakan kode per bab di repositori yang sama. Buku karya Li Bojie, seorang insinyur perangkat lunak berpengalaman, mengisi kekosongan itu dengan naskah, PDF versi cetak, dan kode per bab dalam satu repositori Apache-2.0 dengan lebih dari 30.000 bintang.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling terasa adalah saat kami menggunakan bab tentang context engineering dan memori sebagai rangkuman tim engineering yang baru mulai mengadopsi coding agent. Penjelasan di bab tersebut membedakan jenis memori, trade-off kompresi konteks, dan pola integrasi tool dengan cara yang biasanya tersebar di banyak slide workshop - di sini dipadukan menjadi satu narasi koheren. Kode per babnya juga langsung bisa dijalankan untuk memverifikasi klaim, bukan sekadar membaca deskripsi abstrak.",
+      "Arsitektur repositorinya sengaja dibuat sederhana: satu folder per bab berisi kode, README menjelaskan dependensi, dan PDF diterbitkan lewat pipeline otomatis sehingga pembaca tidak perlu membangun buku sendiri. Topik yang dibahas mengikuti kurikulum yang relevan dengan praktik 2026 - mulai dari arsitektur agent dasar, memori, context engineering, tool use, coding agent, hingga multi-agent. Lisensi Apache-2.0 memberi ruang untuk pelatihan internal, terjemahan, atau bahkan pencetakan ulang di lingkungan perusahaan.",
+      "Catatan untuk konteks Indonesia: nilai utama buku ini tidak hilang walaupun naskah utama berbahasa Mandarin - karena struktur bab dan kode bisa dipahami lewat terjemahan otomatis dengan hasil yang cukup akurat untuk diskusi tim. Untuk komunitas lokal yang ingin mengadakan internal tech talk atau bootcamp tentang AI Agent, repositori ini adalah titik awal yang lebih kuat daripada slide dari puluhan blog yang saling tumpang tindih. Di Wawasan AI, kami memasukkannya ke daftar referensi utama untuk tim engineering yang serius membangun agent di atas Claude, GPT, atau model lokal.",
+    ],
+    link: "https://github.com/bojieli/ai-agent-book",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
