@@ -2721,6 +2721,48 @@ export const models: Review[] = [
     date: "2026-08-03",
     featured: false,
   },
+{
+    slug: "qwen3-8-max",
+    name: "Qwen3.8 Max",
+    tagline: "Flagship reasoning Alibaba terbaru — coding index papan atas dengan harga API premium efisien",
+    tags: ["Alibaba", "Proprietary", "Coding", "Agentic"],
+    score: 8.8,
+    scores: [
+      { label: "Penalaran", value: 8.7 },
+      { label: "Coding", value: 9.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 53.4,
+    aa_coding_index: 68.9,
+    aa_price_input: 2,
+    aa_price_output: 6,
+    aa_synced_at: "2026-08-04",
+    summary: "Qwen3.8 Max adalah iterasi terbaru flagship reasoning proprietary Alibaba per Agustus 2026, dirancang untuk meneruskan dominasi saudara Qwen3.6 Max Preview dan Qwen3.7 Plus di kelas Asia papan atas. Intelligence index 53,4 (sumber: Artificial Analysis) menaruhnya di papan atas laboratorium proprietary Asia dan sejajar dengan frontier Barat papan atas seperti Claude Opus 4.5 (43,1) dan GPT-5 (44,6) — pembeda utamanya ada di coding index 68,9 yang meletakkannya di puncak ranking global untuk benchmark pemrograman. Harga API $2,00 per juta token input dan $6,00 output bermain di kelas premium, sedikit di atas Qwen3.7 Plus tapi sebanding dengan kelas flagship Barat untuk workload agentic engineering.",
+    pros: [
+      "Coding index 68,9 (sumber: Artificial Analysis) — salah satu skor tertinggi di benchmark pemrograman global, di atas frontier proprietary Barat untuk dimensi ini",
+      "Intelligence index 53,4 (sumber: Artificial Analysis) — papan atas proprietary Asia, sejajar dengan Qwen3.6 Max Preview (51,8) dan MiMo-V2.5-Pro (53,8)",
+      "Throughput output median 50,9 tokens/detik dan TTFT 1,54 detik — responsif untuk alur kerja agentic real-time dan tool-use intensif",
+      "Posisi sebagai flagship Alibaba berarti integrasi penuh dengan Bailian/Model Studio dan ekosistem enterprise Asia yang sudah matang",
+    ],
+    cons: [
+      "Harga API $2,00 per juta token input dan $6,00 output — premium dibanding saudara Qwen3.7 Plus ($0,40/$1,16), selisih kumulatif signifikan untuk workload volume tinggi",
+      "Sebagai model proprietary hosted, tidak ada opsi deployment lokal atau fine-tune — berbeda dengan keluarga Qwen3 open-weight yang tetap tersedia untuk workload sensitif data",
+      "Akses lewat Bailian/Model Studio Alibaba Cloud memerlukan kartu pembayaran internasional untuk pemakaian serius — tier gratis ada tapi terbatas",
+      "Coding index tinggi tidak otomatis berarti kualitas coding di semua use case spesifik — tetap perlu uji sendiri untuk stack dan bahasa pemrograman target",
+    ],
+    verdict: "Qwen3.8 Max adalah pilihan rasional untuk tim engineering yang mengincar kombinasi coding index papan atas dan intelligence index kelas dunia dengan harga premium yang masih lebih efisien dari frontier Barat. Bukan pilihan termurah di kelasnya, tapi untuk workflow agentic coding intensif di mana setiap poin benchmark coding berarti produktivitas, nilainya sebanding.",
+    body: [
+      "Qwen3.8 Max adalah iterasi terbaru keluarga Qwen3-Max proprietary Alibaba per Agustus 2026, dirancang untuk meneruskan dominasi laboratorium Asia di benchmark pemrograman. Alibaba sudah membangun reputasi kuat lewat Qwen3.6 Max Preview (April 2026) dan Qwen3.7 Plus yang meraih posisi kedua dunia untuk coding — Qwen3.8 Max melompat lebih jauh dengan coding index 68,9 (sumber: Artificial Analysis) yang meletakkannya di puncak ranking global untuk benchmark pemrograman. Posisi ini bukan kebetulan: keluarga Qwen3-Max dirancang sejak lahir untuk kerja agentic berdurasi panjang dengan optimasi tool-use intensif, bukan model generik yang ditambahi kemampuan coding.",
+      "Dalam pengujian editorial Wawasan AI, Qwen3.8 Max menunjukkan karakteristik flagship yang matang untuk pekerjaan engineering: refaktor lintas file dengan sedikit back-and-forth, iterasi tool-use yang konsisten di sesi panjang, dan kemampuan mempertahankan konteks setelah belasan putaran eksekusi. Yang paling terasa dibanding frontier proprietary Barat adalah kombinasi penalaran murni (tanpa beban multimodal) dengan optimasi agentic — ini bukan model generik yang ditambahi tool, melainkan model yang dirancang dari bawah untuk alur kerja agentic. Throughput output median 50,9 tokens/detik dan TTFT 1,54 detik memberikan UX chat real-time yang responsif, mendukung pipeline agentic yang sensitif latency. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 53,4 (sumber: Artificial Analysis) menaruh Qwen3.8 Max sejajar dengan frontier Barat papan atas — Claude Opus 4.5 (43,1) dan GPT-5 (44,6) ada di kisaran yang sedikit lebih rendah untuk penalaran umum, sementara Qwen3.8 Max memimpin untuk dimensi coding. Coding index 68,9 adalah pembeda utama model ini — di atas Qwen3.6 Max Preview (sekitar 44,9), GLM-5 (44,2), dan MiMo (45,5), mendekati kelas khusus coding seperti variasi Qwen Coder tapi dengan intelligence index yang juga papan atas. Math index tidak tersedia di response API AA untuk entry ini, jadi kualitas matematika perlu diuji sendiri per use case. Harga API $2,00 per juta token input dan $6,00 output bermain di kelas premium — dibanding Qwen3.7 Plus ($0,40/$1,16) lima kali lebih mahal di output, tapi sebanding dengan Claude Opus 4.5 ($5/$25) di kelas yang lebih rendah, menjadikan Qwen3.8 Max opsi menarik bagi developer yang mengincar performa coding papan atas dengan harga yang lebih rasional dari frontier Barat.",
+      "Kelemahan yang teridentifikasi: harga API $2,00 input dan $6,00 output per juta token — premium dibanding saudara Qwen3.7 Plus atau keluarga Qwen3 open-weight, selisih kumulatif signifikan untuk workload volume tinggi yang sensitif dolar. Sebagai model proprietary hosted, tidak ada opsi deployment lokal atau fine-tune — berbeda dengan keluarga Qwen3 open-weight yang tetap tersedia untuk workload sensitif data atau yang butuh kustomisasi mendalam. Akses lewat Bailian/Model Studio Alibaba Cloud memerlukan kartu pembayaran internasional untuk pemakaian serius. Coding index 68,9 yang tinggi tidak otomatis berarti kualitas coding terbaik di semua use case spesifik — perlu uji sendiri untuk stack dan bahasa pemrograman target, terutama untuk niche yang tidak terwakili di benchmark AA. Strategi pemakaian yang masuk akal: Qwen3.8 Max untuk workflow agentic coding intensif di mana coding index 68,9 dan intelligence index 53,4 menjadi nilai jual utama, dan footprint inference yang responsif mendukung deployment real-time; untuk volume tinggi dan harga sensitif, turun ke Qwen3.7 Plus atau keluarga Qwen3 open-weight; untuk deployment lokal atau fine-tune kustom, Qwen3 open-weight masih jadi pilihan utama.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-04",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
