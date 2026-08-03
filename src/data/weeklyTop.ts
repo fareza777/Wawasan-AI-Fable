@@ -1554,6 +1554,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                               "Fondasi alat OSINT investigator, jurnalis, tim fraud, dan komunitas cybersecurity Indonesia — sering dipakai untuk due diligence rekrutmen, identifikasi akun penipu, dan investigasi jejak digital sebelum publish cerita. Aktif di-maintain dan open source (MIT), relevan untuk siapa saja yang serius soal intel sumber terbuka.",
                             ],
                           },
+                          "trycompai/crm": {
+                            description:
+                              "CRM open-source 'agentic-first' di mana agen AI yang otonom adalah produknya — agen menjalankan riset, memperkaya data, menjadwalkan follow-up, dan menulis ke basis data, bukan sekadar formulir dengan chat box.",
+                            highlights: [
+                              "Filosofi terbalik dari CRM pada umumnya: agen adalah produknya, database cuma 'tempat catatan' — agen jalan di deployment-nya sendiri, menentukan apa yang harus dilihat, menghabiskan research budget, lalu berhenti sendiri saat budget habis.",
+                              "Work queue berbasis Postgres dengan klaim baris `FOR UPDATE SKIP LOCKED` — dua dispatcher kerja paralel tidak bentrok, dan run yang mati melepaskan row-nya secara otomatis saat lease kedaluwarsa, jadi tidak ada pekerjaan yang hilang.",
+                              "Aturan 'tidak ada yang ditebak tentang manusia': tidak ada confidence score untuk data orang, hanya evidence ledger yang menulis fakta kuat atau menyimpan sugesti untuk dikonfirmasi manusia — fakta percaya-diri yang salah dianggap lebih berbahaya dari field kosong.",
+                              "Stack modern yang konsisten: Eve (durable agent), NestJS + tRPC, Prisma + Postgres, Next.js + shadcn/ui, dan Vercel Sandbox dengan egress deny-all — relevan untuk founder/operator Indonesia yang ingin CRM yang 'bekerja sendiri' untuk sales pipeline, bukan CRM yang harus diisi manual tiap pagi.",
+                            ],
+                          },
+                          "s1dashu/animated-voiceover": {
+                            description:
+                              "Skill agen AI untuk membuat video penjelasan animasi yang siap tayang — dari topik mentah jadi skrip narasi, referensi visual, multi-shot prompt video, voice anchor, dan paket produksi lengkap lewat CLI.",
+                            highlights: [
+                              "Mengatasi tiga tantangan utama video pengetahuan animasi: menjelaskan ide kompleks dengan jelas, menerjemahkan konsep abstrak jadi adegan konkret (karakter, aksi, setting), dan menjaga konsistensi visual antar-clip AI yang biasanya 'drift' jadi terasa seperti film yang berbeda.",
+                              "Enam gaya visual bawaan (cinematic 3D, clay stop-motion, hand-drawn, dsb.) yang bukan template kosong — tiap gaya menentukan arah kreatif untuk desain karakter, material, warna, kamera, dan ritme animasi, dan bisa custom dengan deskripsi atau gambar referensi.",
+                              "Dirancang sebagai 'Agent Skill' (SKILL.md) yang dipasang ke Claude Code, Cursor, atau agen AI lain — bukan aplikasi mandiri, sehingga workflow generator video masuk ke pipeline coding agent yang sudah ada, lengkap dengan LibTV CLI untuk eksekusi batch.",
+                              "Siap untuk Seedance dan pipeline video generator lain, plus example-contoh di filosofi, psikologi, sejarah, dan ekonomi — relevan untuk kreator edukasi Indonesia, channel YouTube explainer, dan tim corporate training yang ingin skalakan konten video dengan agen AI.",
+                            ],
+                          },
+                          "QwenAudio/qwen-audio-agent": {
+                            description:
+                              "Runtime voice real-time dari Qwen agar agen AI tetap 'hadir' saat berpikir — full-duplex voice interaksi di foreground, tugas panjang berjalan paralel di background, hasil kembali ke percakapan yang sama.",
+                            highlights: [
+                              "Full-duplex real-time voice dengan natural interruption dan continuous multi-turn — agen tidak 'diam membeku' saat sedang menjalankan tool call panjang, user bisa bertanya progres atau membatalkan task kapan pun melalui jalur suara yang sama.",
+                              "Arsitektur tiga lapis (front voice, scheduling, background agent) di mana tugas diserahkan ke background agent lewat protokol ACP standar, dan hasilnya otomatis kembali ke percakapan yang sedang berlangsung — lebih dari sekadar voice chat, ini 'agen yang selalu hadir'.",
+                              "Backend agent bersifat pluggable via ACP: OpenCode, OpenClaw, Qoder, Kimi Code, Hermes, Codex, Claude Code, dsb. semuanya bisa jadi 'otak' di belakang runtime yang sama, plus dukungan speech-to-speech Hugging Face untuk full lokal.",
+                              "Disertakan WebUI, terminal TUI, dan 'floating ball' desktop khusus macOS, lengkap dengan persistent memory profil dan cross-session personalisasi — relevan untuk pengguna Indonesia yang ingin bangun voice agent lokal/multibahasa, dari asisten customer service sampai co-pilot suara untuk workflow coding.",
+                            ],
+                          },
                         };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
