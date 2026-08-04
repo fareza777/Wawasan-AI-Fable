@@ -2326,6 +2326,47 @@ export const stacks: Review[] = [
     date: "2026-08-02",
     featured: false,
   },
+  {
+    slug: "prefect-ai",
+    name: "Prefect + AI",
+    tagline: "Orkestrasi workflow Python tangguh untuk pipeline data dan agen AI",
+    tags: ["Prefect", "Open Source", "DevOps", "Workflow"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 8.3 },
+    ],
+    summary:
+      "Prefect mengubah fungsi Python biasa menjadi workflow produksi yang tahan gagal, bisa dijeda untuk persetujuan manusia, dan dapat menjalankan pipeline data maupun agen AI di infrastruktur pilihan tim. Kombinasi runtime open source, Prefect Cloud, integrasi durable execution untuk Pydantic AI, serta MCP read-only untuk diagnosis membuatnya lebih matang daripada sekadar framework agen, tetapi pengguna tetap harus membawa model dan merancang logika agennya sendiri.",
+    pros: [
+      "Workflow tetap berupa Python native, dengan retry, cache, state recovery, concurrency, dan cabang dinamis tanpa memaksa tim menulis DAG statis",
+      "Cocok untuk agen yang berjalan lama berkat pause atau suspend, input manusia bertipe, timeout, dan integrasi durable execution Pydantic AI",
+      "Apache-2.0 dan bisa self-host; eksekusi dapat tetap berada di server atau VPC sendiri sementara Prefect Cloud mengelola control plane",
+      "Ekosistem matang dengan 23.500+ bintang GitHub, work pool untuk Docker dan Kubernetes, integrasi cloud, serta MCP untuk Claude Code, Cursor, dan Codex CLI",
+      "Hobby Cloud gratis memberi dua pengguna, lima deployment, dan 500 menit Serverless per bulan untuk validasi awal"
+    ],
+    cons: [
+      "Prefect bukan model AI atau agen siap pakai; tim tetap harus memilih LLM, membangun prompt dan tool, serta mengelola biaya token sendiri",
+      "Lompatan harga Cloud tajam: Starter USD 100 per bulan dan Team USD 100 per pengguna per bulan cepat terasa mahal untuk startup Indonesia",
+      "Concurrency tingkat task mengharuskan fungsi dibungkus API Prefect; pada codebase kompleks, dekorator dan pola async dapat menyebar lebih jauh dari yang diperkirakan",
+      "Self-host menghapus biaya lisensi inti, tetapi memindahkan pekerjaan upgrade, database, observability, backup, dan keamanan ke tim internal"
+    ],
+    verdict:
+      "Pilihan kuat untuk tim Python yang membutuhkan lapisan eksekusi tahan gagal bagi pipeline data, ML, dan agen AI, terutama jika human-in-the-loop dan kendali infrastruktur penting. Bukan jalan pintas menuju agen otonom: nilai Prefect baru terasa setelah workflow, batas kegagalan, dan tanggung jawab operasional dirancang dengan disiplin.",
+    body: [
+      "Prefect lahir sebagai jawaban Python-native atas orkestrator DAG tradisional, lalu pada 2026 memperluas posisinya menjadi mesin eksekusi untuk data, ML, dan agen. Cara kerjanya tetap sederhana: tambahkan dekorator flow dan task pada fungsi Python, lalu Prefect mencatat state, menjadwalkan pekerjaan, mengulang task yang gagal, menyimpan hasil yang layak di-cache, dan memulihkan run tanpa menulis ulang aplikasi sebagai DSL. Runtime open source berlisensi Apache-2.0 sudah mengumpulkan lebih dari 23.500 bintang GitHub dan sekitar 12 juta unduhan bulanan menurut situs resmi; versi 3.8.1 terbit pada 30 Juli 2026, tanda bahwa proyek ini masih dirawat aktif. Akuisisi Dagster Labs yang diumumkan 13 Juli juga memberi konteks strategis baru: Dagster tetap fokus pada outcome dan aset data, Prefect pada eksekusi dinamis yang tahan gagal, sedangkan FastMCP menjadi lapisan akses untuk tool agen. Integrasi ketiganya masih sebuah arah produk, bukan alasan menganggap seluruh ekosistem sudah menyatu hari ini.",
+      "Use case nyatanya terlihat pada agen pemroses dokumen. Sebuah flow dapat mengambil ratusan berkas, membuat task dinamis untuk OCR dan ekstraksi, memanggil model berbeda sesuai tipe dokumen, memvalidasi schema, lalu berhenti ketika confidence rendah agar operator menyetujui hasil lewat input bertipe. Setelah persetujuan, run melanjutkan dari state sebelumnya alih-alih mengulang semua panggilan model yang mahal. Integrasi durable execution untuk Pydantic AI menambahkan retry dan timeout pada loop agen, sementara mekanisme pause atau suspend memberi jalur human-in-the-loop yang tidak terasa ditempel belakangan. Dibanding LangGraph, Prefect lebih kuat pada deployment, jadwal, work pool, observability, dan pekerjaan non-LLM; LangGraph lebih natural untuk state graph percakapan yang rapat. Temporal memberi durability yang lebih ketat untuk proses bisnis jangka panjang, tetapi menuntut model deterministik dan infrastruktur yang lebih khusus. Airflow masih unggul dalam keluasan operator dan tenaga kerja berpengalaman, namun DAG statis dan scheduler sentralnya lebih kaku untuk cabang yang baru diketahui saat runtime.",
+      "Lapisan AI Prefect juga berguna setelah workflow berjalan. Prefect MCP Server memberi Claude Code, Cursor, Codex CLI, dan klien MCP lain akses read-only untuk memeriksa deployment, flow run, task run, work pool, log, dan dokumentasi terbaru; perubahan tetap dilakukan melalui CLI atau SDK sehingga agen diagnosis tidak otomatis memperoleh hak tulis. Di Prefect Cloud, AI log summaries merangkum kegagalan seperti KeyError menjadi satu baris dan hanya aktif jika administrator menyalakan fitur Marvin AI. Eksekusi dapat berjalan lokal, di Docker, Kubernetes, AWS ECS, Azure Container Instances, Google Cloud Run, Modal, atau Coiled melalui worker dan work pool. Model hybrid ini menarik untuk data sensitif karena kode dan data bisa tetap di jaringan sendiri, tetapi log dan metadata run tetap masuk control plane Cloud bila tim memilih layanan terkelola. Trade-off terbesarnya adalah abstraksi: concurrency tingkat task membutuhkan fungsi terdekorasi dan API future Prefect, sehingga library yang awalnya Python biasa bisa makin terikat ke runtime saat fan-out, cancellation, dan retry mulai kompleks.",
+      "Untuk pengguna Indonesia, jalur masuk terbaik adalah open source self-host atau paket Hobby Cloud gratis: dua pengguna, satu workspace, lima deployment, 500 menit Prefect Serverless per bulan, serta retensi run tujuh hari. Kapasitas itu cukup untuk proof of concept agen internal atau pipeline data UMKM. Saat butuh compute sendiri dan webhook, Starter naik ke USD 100 per bulan, sekitar Rp1,6 juta dengan kurs acuan Rp16.000 per dolar; Team juga USD 100 per pengguna per bulan dan ditujukan untuk kolaborasi, service account, audit log, serta deployment lebih banyak. Harga tersebut belum mencakup komputasi sendiri maupun token OpenAI, Anthropic, atau model lain, jadi total biaya harus dihitung per workflow, bukan per lisensi saja. Self-host memang gratis secara lisensi, tetapi PostgreSQL, backup, upgrade, monitoring, dan on-call tetap punya ongkos nyata. Untuk startup Indonesia, mulai dari satu flow bernilai tinggi selama dua minggu, ukur penghematan retry manual dan waktu diagnosis, lalu naik paket hanya jika metriknya jelas. Untuk sektor keuangan, kesehatan, atau pemerintahan, jalankan worker di VPC lokal, audit isi log agar data pribadi tidak bocor, dan cocokkan arsitektur dengan kewajiban UU PDP sebelum mengaktifkan ringkasan log berbasis model pihak ketiga."
+    ],
+    link: "https://www.prefect.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-04",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
