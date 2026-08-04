@@ -1584,6 +1584,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                               "Disertakan WebUI, terminal TUI, dan 'floating ball' desktop khusus macOS, lengkap dengan persistent memory profil dan cross-session personalisasi — relevan untuk pengguna Indonesia yang ingin bangun voice agent lokal/multibahasa, dari asisten customer service sampai co-pilot suara untuk workflow coding.",
                             ],
                           },
+                          "TencentCloud/TencentDB-Agent-Memory": {
+                            description:
+                              "Memory layer resmi Tencent untuk agen AI — ubah percakapan, dokumen, dan kode jadi empat aset memory (Chat Memory, Skill, LLM-Wiki, Code-Graph) yang governed, shared, dan reusable lintas agen serta framework.",
+                            highlights: [
+                              "Empat 'memory asset' yang bisa dipakai ulang lintas agen: Chat Memory (riwayat percakapan), Skill (alur kerja yang sudah dipelajari), LLM-Wiki (pengetahuan terstruktur), dan Code-Graph (peta relasi kode) — bukan sekadar RAG vector store, melainkan hirarki memory yang punya semantik.",
+                              "Desain 'symbolic short-term + layered long-term': log tool yang berat dikompres jadi simbol Mermaid (hemat token), sementara memori jangka panjang disusun berlapis (persona, scene) bukan ditumpuk mentah-mentah di vector store.",
+                              "Klaim benchmark yang terukur: integrasi dengan OpenClaw menurunkan penggunaan token sampai 61% di WideSearch dan meningkatkan pass rate 51%, dengan akurasi PersonaMem naik dari 48% ke 76% — bukan jargon marketing, melainkan angka yang bisa diverifikasi ulang.",
+                              "MIT-licensed dan jalan di Node.js ≥ 22.16 dengan dukungan resmi OpenClaw ≥ 2026.3.13 dan Hermes Gateway — relevan untuk tim engineering Indonesia yang membangun agen produksi dan butuh memory layer enterprise-grade dari vendor yang serius (Tencent Cloud) tanpa lock-in.",
+                            ],
+                          },
+                          "esengine/DeepSeek-Reasonix": {
+                            description:
+                              "Coding agent CLI/TUI dari esengine yang di-bangun khusus untuk model DeepSeek — fokus pada stabilitas prefix cache supaya session panjang tetap murah dan bisa ditinggal jalan berhari-hari.",
+                            highlights: [
+                              "Coding agent DeepSeek-native: ditulis Go (rewrite dari versi TypeScript legacy) dengan TUI full-screen, mouse-friendly, tapi juga bisa headless untuk CI/CD atau dipasang ke editor lewat Agent Client Protocol (ACP).",
+                              "Optimasi 'prefix-cache stability' yang jadi pembeda: token cost tetap rendah sepanjang session panjang karena cache prefix dijaga tetap valid — klaim bisa ditinggal running berhari-hari tanpa tagihan API membengkak.",
+                              "Dilengkapi SEARCH/REPLACE mode yang mengajukan edit tanpa langsung menyentuh disk sampai user /apply — mengurangi 'AI ngutak-atik file sembarangan' dan bikin review alur perubahan jadi jauh lebih terkontrol.",
+                              "30k+ bintang GitHub dan masuk Top 2/3 oosmetrics untuk Agents, LLMs, dan CLI by velocity — alternatif menarik dari Claude Code atau Codex untuk pengguna yang lebih suka DeepSeek sebagai otak dan workflow terminal-centric.",
+                            ],
+                          },
                         };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
