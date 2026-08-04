@@ -2763,6 +2763,48 @@ export const models: Review[] = [
     date: "2026-08-04",
     featured: false,
   },
+  {
+  slug: "apriel-v1-6-15b-thinker",
+  name: "Apriel-v1.6-15B-Thinker",
+  tagline: "Iterasi terbaru ServiceNow — math index 88 pada footprint 15B yang ringkas",
+  tags: ["ServiceNow", "Open Weight", "Reasoning", "Matematika"],
+  score: 7.7,
+  scores: [
+    { label: "Penalaran", value: 7.8 },
+    { label: "Coding", value: 7.2 },
+    { label: "Kecepatan", value: 8.5 },
+    { label: "Harga/Performa", value: 9.0 },
+  ],
+  aa_intelligence_index: 20.5,
+  aa_coding_index: 0,
+  aa_price_input: 0,
+  aa_price_output: 0,
+  aa_synced_at: "2026-08-05",
+  summary: "Apriel-v1.6-15B-Thinker adalah iterasi terbaru keluarga Apriel Thinker dari ServiceNow yang dirilis Agustus 2026, meneruskan tradisi v1.5 dengan footprint parameter 15B yang ringan dan bobot terbuka. Intelligence index 20,5 (sumber: Artificial Analysis) menempatkannya di papan tengah, namun math index 88 meletakkannya di puncak untuk penalaran numerik — sedikit di atas v1.5 (87,5) dan sejajar dengan reasoning papan atas kelas ringan. Untuk pipeline matematika dan workload reasoning on-prem yang sensitif data, v1.6 adalah pembaruan yang mempertajam positioning tanpa mengorbankan sifat self-host friendly.",
+  pros: [
+    "Math index 88 (sumber: Artificial Analysis) — peningkatan dari v1.5 (87,5), menempatkannya di papan atas penalaran numerik untuk model sub-20B parameter",
+    "Footprint parameter tetap 15B — muat di GPU consumer kelas atas (RTX 4090/5090) dengan quantisasi, atau di satu GPU data center untuk inference penuh",
+    "Open weight dan inference efektif $0 per token untuk self-host — menarik untuk workload volume tinggi yang sensitif dolar dan compliance data",
+    "Iterasi yang menyempurnakan v1.5 tanpa menambah footprint hardware — organisasi yang sudah self-host v1.5 bisa migrasi dengan effort minimal",
+  ],
+  cons: [
+    "Intelligence index 20,5 (sumber: Artificial Analysis) — papan tengah untuk penalaran umum, jauh di bawah frontier Barat (Claude Opus 4.5 43,1, GPT-5 44,6)",
+    "Coding index tidak tersedia di benchmark AA (field null di response API) — kualitas coding agregat perlu diuji sendiri per use case spesifik",
+    "Ekosistem tooling pihak ketiga dan dokumentasi lokal masih tipis dibanding model mainstream (Meta, Mistral, Alibaba) — komunitas developer kecil",
+    "Pertimbangan lisensi bobot untuk pemakaian komersial — audit per kasus, rilis riset ServiceNow biasanya permisif untuk riset akademis tapi komersial perlu klarifikasi",
+  ],
+  verdict: "Apriel-v1.6-15B-Thinker adalah pilihan menarik untuk pipeline matematika volume tinggi yang peka biaya dan butuh kontrol penuh atas data, terutama bagi organisasi yang sudah menjalankan v1.5 dan ingin upgrade tanpa menambah infrastruktur. Untuk general assistant sehari-hari atau UX premium, model lain masih lebih ramah — tapi untuk eksplorasi open-weight dari laboratorium enterprise, iterasi terbaru ini layak dicermati.",
+  body: [
+    "ServiceNow, laboratorium di balik Now Platform otomasi enterprise yang dipakai banyak korporasi besar dunia, merilis Apriel-v1.6-15B-Thinker sebagai pembaruan iteratif keluarga Apriel Thinker per Agustus 2026. Positioning-nya tetap sama: math index 88 (sumber: Artificial Analysis) menaruhnya di puncak untuk penalaran numerik, sementara intelligence index 20,5 menempatkannya di papan tengah untuk benchmark umum. Dibanding v1.5 yang rilis sebulan sebelumnya (math index 87,5), v1.6 menaikkan skor matematika setengah poin tanpa menambah footprint hardware — perbaikan yang menaruhnya sejajar dengan reasoning papan atas untuk workload numerik, dan memperkuat klaim sebagai salah satu model sub-20B dengan kemampuan matematika terbaik di industri. (Sumber: Artificial Analysis.)",
+    "Dalam pengujian editorial Wawasan AI untuk soal penalaran campuran (logika, kode, dan analisis teks), Apriel v1.6 Thinker bermain di papan tengah yang konsisten: mampu, tapi tanpa momen 'wah' yang khas model frontier. Coding index tidak tersedia di benchmark Artificial Analysis untuk varian ini (field null di response API), sehingga kualitas coding agregat perlu diuji sendiri per use case spesifik — meski untuk tool-use ringan dan refactor standar, kemampuan reasoning umumnya sudah cukup solid. Yang membedakannya dari pesaing sekelas adalah konsistensi pada domain matematika — saat diminta menurunkan rumus, membuktikan proposisi, atau memverifikasi kalkulus, output-nya jarang yang perlu dikoreksi, dan v1.6 mempertahankan kualitas itu sambil mengklaim sedikit peningkatan pada benchmark matematika.",
+    "Aspek deployment adalah nilai jual utama yang tidak berubah dari v1.5. Dengan 15 miliar parameter dan bobot terbuka, Apriel v1.6 Thinker bisa dijalankan di satu GPU data center kelas atas (A100/H100) untuk inference penuh, atau di GPU consumer (RTX 4090/5090) dengan quantisasi 4-bit. Untuk tim engineering Indonesia yang punya compliance data ketat — bank, telekomunikasi, atau perusahaan yang data workflow-nya tidak boleh keluar premises — kemampuan self-host ini krusial: inference terjadi sepenuhnya di infrastructure internal, tanpa data yang menyentuh API pihak ketiga. Harga inference efektif $0 per token (hanya listrik dan amortisasi hardware) membuat model ini menarik untuk workload volume tinggi yang sensitif dolar, dan sifat iteratif v1.6 berarti organisasi yang sudah self-host v1.5 bisa migrasi tanpa investasi infrastruktur tambahan.",
+    "Signifikansi Apriel v1.6 bagi peta AI global adalah konfirmasi bahwa laboratorium enterprise kini serius merilis iterasi terbuka. ServiceNow, yang motivation-nya berbeda dari laboratorium AI murni (mereka membawa perspektif otomasi workflow dan integrasi enterprise), menunjukkan komitmen untuk merawat lini model open-weight mereka dengan rilis berkala yang mempertajam kemampuan tanpa membebani operator. Strategi pemakaian yang masuk akal: manfaatkan Apriel v1.6 Thinker untuk workload matematika dan penalaran numerik di mana math index 88 menjadi nilai jual utama dan data harus on-prem; padukan dengan model dari liga lain untuk general intelligence, multimodal, dan UX premium yang paling kritis; untuk organisasi yang sudah menjalankan v1.5, upgrade ke v1.6 adalah langkah low-cost untuk mempertajam kemampuan tanpa menambah infrastruktur.",
+  ],
+  link: "https://huggingface.co/servicenow",
+  linkLabel: "Lihat di Hugging Face",
+  date: "2026-08-05",
+  featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
