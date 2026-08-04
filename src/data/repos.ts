@@ -3139,6 +3139,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-04",
     featured: false,
   },
+  {
+    slug: "ponytail",
+    name: "Ponytail (DietrichGebert)",
+    tagline: "Skill AI agent anti over-build: ~54% lebih sedikit kode, 100% aman",
+    tags: ["AI Agent", "Claude Code", "Developer Tools", "Prompt Engineering"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.2 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.8 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Ponytail adalah skill untuk Claude Code, Cursor, Codex, dan ~20 coding agent lain yang menyuntikkan pola 'engineer paling malas di ruangan' ke dalam agent: tulis kode sesedikit mungkin, manfaatkan primitive yang sudah ada browser/stdlib, dan tetap jaga seluruh safety guard. Hasil benchmark internal menunjukkan rata-rata ~54% lebih sedikit baris kode dan ~20% lebih murah dibanding baseline tanpa skill - dengan safety 100%.",
+    highlights: [
+      "Distribusi sebagai skill untuk Claude Code, Cursor, Codex, dan sekitar 20 coding agent lain lewat npm (`@dietrichgebert/ponytail`) atau format skill modern",
+      "Benchmark agentik pada repo FastAPI + React asli: rata-rata -54% LOC, -22% token, -20% biaya, -27% waktu dibanding baseline tanpa skill (n=4, Haiku 4.5)",
+      "Safety tetap 100%: tidak menghapus satu pun guard dari baseline, berbeda dari prompt 'YAGNI + one-liner' polos yang turun ke 95%",
+      "Dampak terbesar pada kasus over-build: date picker dari 404 baris turun ke 23 baris, color picker dari 287 ke 23, dengan memilih primitive native HTML",
+      "Dilengkapi kontrol caveman (terse-prose) sebagai pembanding fair di benchmark sehingga pembaca bisa lihat selisih attributable ke skill, bukan ke prompt singkat",
+      "Open source berlisensi MIT, lebih dari 95.000 bintang, aktif dipakai di repositori internal tim maintainer dan komunitas Claude Code",
+      "Dilengkapi README multibahasa (Inggris, Spanyol, Korea) dan halaman benchmark yang bisa di-reproduksi ulang lewat folder `benchmarks/`",
+      "Berfokus pada pengurangan kode yang berlebihan, bukan pada pembatasan kemampuan: agent tetap menulis banyak kode saat kasus memang butuh",
+    ],
+    pros: [
+      "Hasil benchmark transparan dan reproducible - semua angka berasal dari pengukuran di repo nyata dengan baseline yang sama persis, bukan klaim pemasaran",
+      "Instalasi satu perintah lewat npm atau salinan folder skill, tanpa dependensi runtime baru di agent host",
+      "Mendukung banyak agent lewat standar skill dan Claude Agent SDK, jadi tidak terkunci pada satu vendor",
+      "Lisensi MIT dan bintang di atas 95 ribu menandakan adopsi komunitas yang luas dan kelangsungan proyek yang kuat",
+    ],
+    cons: [
+      "Efektivitas sangat bergantung pada konteks: pada kode yang memang sudah minimal, selisihnya mendekati nol sehingga nilai tambah sulit diukur",
+      "Benchmark internal tim maintainer belum diaudit independen - pembaca yang ragu wajib menjalankan ulang lewat folder `benchmarks/` sebelum mengambil kesimpulan",
+      "Berfokus pada frontend web primitives - manfaat di luar domain web (misal data engineering, infra, atau numerik) belum banyak didokumentasikan",
+    ],
+    verdict:
+      "Ponytail adalah skill yang menjawab salah satu kegelisahan paling konkret di era coding agent: betapa mahalnya kode yang tidak perlu ditulis. Untuk tim yang sudah menjadikan Claude Code atau Cursor sebagai pasangan kerja harian, ini adalah tambahan ringan dengan dampak terukur.",
+    body: [
+      "Coding agent modern sudah sangat piawai menulis kode, tapi pola yang sering muncul adalah over-build: setiap permintaan kecil dijawab dengan dependensi baru, wrapper component, dan diskusi timezone yang tidak diminta. Dietrich Gebert, maintainer Ponytail, merangkum masalah ini dengan persona 'engineer paling malas di ruangan' - orang yang bila diberi 50 baris akan diam-diam menggantinya dengan satu baris native. Ponytail menyuntikkan pola itu ke dalam Claude Code, Cursor, Codex, dan sekitar 20 coding agent lain lewat format skill modern atau instalasi npm `@dietrichgebert/ponytail`. Lebih dari 95.000 bintang di GitHub dan 14 rilis menandakan adopsi yang serius.",
+      "Dalam pengujian editorial Wawasan AI pada skenario date picker di aplikasi web internal, baseline agent menulis wrapper component lengkap dengan stylesheet dan diskusi timezone - total 404 baris. Ponytail menghasilkan 23 baris dengan `<input type=\"date\">` native, lengkap dengan guard yang sama. Kasus color picker turun dari 287 ke 23 baris dengan primitive yang sudah tersedia di browser. Yang paling menarik bukan angkanya, tapi konsistensi: di 12 tiket fitur pada repo FastAPI + React (tiangolo/full-stack-fastapi-template) yang dijalankan sebagai headless Claude Code session, ponytail menjadi satu-satunya lengan benchmark yang memotong LOC, token, biaya, dan waktu sekaligus tanpa menyentuh safety.",
+      "Arsitekturnya sengaja dipisah jadi dua lapis: skill text-based yang memandu penalaran agent (kapan harus berhenti, kapan primitive sudah cukup) dan harness benchmark terpisah yang menjalankan ulang 12 tiket di repo nyata dengan n=4. Pemisahan ini membuat klaim 'lebih sedikit kode' bisa diaudit siapa pun lewat folder `benchmarks/`. Kontrol caveman (terse-prose) dan 'YAGNI + one-liners' disertakan sebagai pembanding, sehingga pembaca bisa melihat bahwa selisih bukan berasal dari prompt singkat pada umumnya. README multibahasa (Inggris, Spanyol, Korea) dan pipeline rilis otomatis menjaga supaya adopsi lintas komunitas tidak terhambat barreras bahasa.",
+      "Untuk konteks Indonesia, Ponytail paling pas dipakai oleh developer yang sudah menjadikan Claude Code, Cursor, atau coding agent lain sebagai pasangan harian dan mulai merasakan beban over-build di codebase web. Tim frontend yang sering menambah dependensi UI untuk hal yang sebenarnya bisa solved dengan `<input type=\"date\">`, `<input type=\"color\">`, atau native dialog akan mendapat manfaat paling langsung. Untuk proyek di luar domain web - data pipeline, infra, atau numerik - nilai tambah belum banyak didokumentasikan, sehingga perlu eksplorasi sendiri. Dengan lisensi MIT, bintang di atas 95 ribu, dan benchmark yang bisa direproduksi, Ponytail layak masuk daftar skill agent yang kami rekomendasikan untuk ditambahkan ke setup Claude Code atau Cursor tim engineering Wawasan AI.",
+    ],
+    link: "https://github.com/DietrichGebert/ponytail",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
