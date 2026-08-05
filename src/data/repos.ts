@@ -3189,6 +3189,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-05",
     featured: false,
   },
+{
+    slug: "deepseek-reasonix",
+    name: "DeepSeek-Reasonix",
+    tagline: "Coding agent terminal DeepSeek-native yang dirancang untuk cache prefix stabil",
+    tags: ["AI Agent", "Coding Agent", "CLI", "DeepSeek"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "DeepSeek-Reasonix adalah coding agent open-source yang berjalan di terminal dan dirancang khusus untuk model DeepSeek: setiap lapis arsitekturnya - loop, tool, format edit - di-tweak agar prefix-cache tetap stabil lintas sesi panjang. Hasilnya, biaya token untuk sesi panjang bisa turun drastis dibanding pendekatan coding agent yang portabel ke banyak model.",
+    highlights: [
+      "Coding agent native DeepSeek: setiap layer - loop agent, tool calling, format SEARCH/REPLACE - di-tuning untuk byte-stable prefix-cache milik keluarga model DeepSeek",
+      "Empat pilar arsitektur (Pillar 1 cache-first loop) yang menjaga agar byte prefix tidak mudah bergeser saat percakapan panjang",
+      "Mode code: agent mengusulkan perubahan sebagai SEARCH/REPLACE, tidak ada yang ditulis ke disk sampai /apply dieksekusi - alur review eksplisit",
+      "Riwayat penggunaan riil (2026-05-01): 435 juta token input, cache hit 99,82%, total ~12 USD dibanding ~61 USD pada workload yang sama tanpa cache di model lain",
+      "Aktif dikembangkan di branch main-v2 (rewrite ke Go) untuk latensi rendah dan jejak memori lebih kecil, sementara lini TypeScript tetap di-maintenance untuk stabilitas",
+      "Dokumentasi multibahasa (Inggris, Mandarin, Jepang), panduan migrasi, dan halaman arsitektur yang menjelaskan setiap pilar",
+      "Instalasi satu perintah lewat npm (`npm install -g reasonix`), jalan di macOS, Linux, dan Windows (PowerShell, Git Bash, Windows Terminal)",
+      "Lisensi MIT dan lebih dari 31 ribu bintang menandakan posisi sebagai salah satu coding agent terminal paling populer di komunitas",
+    ],
+    pros: [
+      "Fokus tunggal pada DeepSeek membuat optimasi prefix-cache jauh lebih dalam dibanding coding agent yang berbagi backend dengan banyak model",
+      "Mode propose/apply yang eksplisit: tidak ada file yang berubah tanpa konfirmasi - lebih aman untuk codebase produksi",
+      "Instalasi dan onboarding sederhana - satu perintah npm, satu API key, langsung berjalan",
+      "Aktivitas pengembangan tinggi: branch Go rewrite, panduan migrasi, dan rilis rutin menunjukkan proyek masih hidup dan bereksperimen",
+    ],
+    cons: [
+      "Sengaja DeepSeek-only - pengguna yang ingin gonta-ganti model antara Claude, GPT, atau lokal akan menemukan dinding arsitektural",
+      "Baris TypeScript (branch main) sudah masuk maintenance mode - sebagian kecil dokumentasi dan contoh masih menunjuk ke versi lama",
+      "Ekstensi tool/plugin belum sebanyak coding agent multi-model - fokus tertutup pada alur core edit kode",
+    ],
+    verdict:
+      "Untuk developer yang sudah memilih DeepSeek sebagai model utama - terutama yang menjalankan sesi panjang - Reasonix adalah salah satu coding agent paling hemat biaya di kelasnya. Untuk yang masih ragu model, mulailah dari coding agent multi-model dulu.",
+    body: [
+      "Di antara banyak coding agent open-source yang muncul dalam setahun terakhir, Reasonix mengambil posisi yang menarik: bukan mencoba menjadi agent yang jalan di semua model, melainkan memilih satu vendor (DeepSeek) dan merancang seluruh arsitekturnya agar prefix-cache model keluarga itu tetap stabil lintas sesi panjang. Strategi ini bertolak belakang dengan pendekatan coding agent multi-model yang menerima performa cache sebagai trade-off portabilitas - dan hasilnya terlihat pada biaya operasional.",
+      "Dalam pengujian editorial Wawasan AI pada kasus refactor berulang di repositori TypeScript berukuran sedang, sesi panjang yang biasanya membengkak menjadi ratusan ribu token input masih mempertahankan tingkat cache hit tinggi berkat loop yang menjaga prefix tetap utuh. Pola propose/apply dengan format SEARCH/REPLACE juga terasa aman: agent tidak menulis apa pun ke disk sampai eksplisit dieksekusi, sehingga perubahan bisa di-review dulu sebelum diproses. Workflow ini cocok untuk tim yang skeptis terhadap coding agent yang langsung menulis file tanpa jejak.",
+      "Arsitekturnya dibagi menjadi empat pilar yang masing-masing punya peran menjaga cache: cara agent menyusun prompt sistem, cara tool result dikembalikan, cara format edit ditentukan, dan cara sesi direstart. Penjelasan tiap pilar ada di dokumentasi arsitektur dan bukan sekadar jargon pemasaran - ada mekanisme konkret di balik klaim 'cache-first'. Branch aktif sekarang adalah main-v2 (Go) yang mengejar latensi lebih rendah dan jejak memori lebih kecil, sementara cabang TypeScript tetap menerima perbaikan bug untuk pengguna yang sudah stabil di sana.",
+      "Untuk konteks Indonesia, Reasonix paling pas dipakai developer atau tim yang sudah berlangganan DeepSeek API dan menjalankan sesi coding panjang - misalnya saat refactor besar, eksplorasi codebase baru, atau implementasi fitur bertahap dengan banyak iterasi. Hematnya biaya token di sesi panjang akan terasa langsung pada billing bulanan. Untuk pengguna yang masih sering berpindah antara Claude, GPT, dan model lokal, dinding DeepSeek-only akan jadi penghalang besar - dan di situ lebih masuk akal memakai coding agent multi-model. Dengan lisensi MIT dan lebih dari 31 ribu bintang, Reasonix layak masuk radar siapa pun yang serius membangun workflow coding agent di atas DeepSeek.",
+    ],
+    link: "https://github.com/esengine/DeepSeek-Reasonix",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-06",
+    updatedAt: "2026-08-06",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
