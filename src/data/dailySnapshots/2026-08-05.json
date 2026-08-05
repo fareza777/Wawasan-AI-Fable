@@ -1,17 +1,27 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "5 Agustus 2026",
-  "period": {
-    "date": "2026-08-05",
-    "label": "5 Agustus 2026",
-    "path": "/repo/daily/2026/08/05"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-05T00:04:16.094Z",
+  "fetchedAt": "2026-08-05T04:43:49.198Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "firecrawl/anydoc",
+      "owner": "firecrawl",
+      "repo": "anydoc",
+      "description": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.",
+      "githubUrl": "https://github.com/firecrawl/anydoc",
+      "trendshiftUrl": "https://trendshift.io/repositories/103044",
+      "language": "Rust",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-03T16:36:14Z"
+    },
+    {
+      "rank": 2,
       "fullName": "TencentCloud/TencentDB-Agent-Memory",
       "owner": "TencentCloud",
       "repo": "TencentDB-Agent-Memory",
@@ -26,21 +36,48 @@
       "dateCreated": "2026-04-07T06:34:26Z"
     },
     {
-      "rank": 2,
-      "fullName": "lyogavin/airllm",
-      "owner": "lyogavin",
-      "repo": "airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
-      "githubUrl": "https://github.com/lyogavin/airllm",
-      "trendshiftUrl": "https://trendshift.io/repositories/18741",
-      "language": "Jupyter Notebook",
+      "rank": 3,
+      "fullName": "kirodotdev/KiroCrew",
+      "owner": "kirodotdev",
+      "repo": "KiroCrew",
+      "description": "",
+      "githubUrl": "https://github.com/kirodotdev/KiroCrew",
+      "trendshiftUrl": "https://trendshift.io/repositories/103032",
+      "language": "Python",
       "topics": [
-        "Local LLM"
+        "AI agent",
+        "Workflow automation"
       ],
-      "dateCreated": "2023-06-12T16:28:41Z"
+      "dateCreated": "2026-07-16T21:21:54Z"
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "fullName": "KKKKhazix/human-writing",
+      "owner": "KKKKhazix",
+      "repo": "human-writing",
+      "description": "活人感写作 1.0.0｜通用中文创作与改稿 Skill",
+      "githubUrl": "https://github.com/KKKKhazix/human-writing",
+      "trendshiftUrl": "https://trendshift.io/repositories/103441",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-08-05T01:19:41Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 6,
       "fullName": "trycompai/crm",
       "owner": "trycompai",
       "repo": "crm",
@@ -54,7 +91,19 @@
       "dateCreated": "2026-07-31T21:38:51Z"
     },
     {
-      "rank": 4,
+      "rank": 7,
+      "fullName": "pierrecomputer/pierre",
+      "owner": "pierrecomputer",
+      "repo": "pierre",
+      "description": "pierre’s open source code",
+      "githubUrl": "https://github.com/pierrecomputer/pierre",
+      "trendshiftUrl": "https://trendshift.io/repositories/26434",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2025-09-19T17:26:04Z"
+    },
+    {
+      "rank": 8,
       "fullName": "zhaoxuya520/reverse-skill",
       "owner": "zhaoxuya520",
       "repo": "reverse-skill",
@@ -70,85 +119,30 @@
       "dateCreated": "2026-05-13T14:37:57Z"
     },
     {
-      "rank": 5,
-      "fullName": "usestrix/strix",
-      "owner": "usestrix",
-      "repo": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "githubUrl": "https://github.com/usestrix/strix",
-      "trendshiftUrl": "https://trendshift.io/repositories/15362",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Pentesting"
-      ],
-      "dateCreated": "2025-08-05T21:28:30Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "boldsoftware/meat",
-      "owner": "boldsoftware",
-      "repo": "meat",
-      "description": "meat.dev",
-      "githubUrl": "https://github.com/boldsoftware/meat",
-      "trendshiftUrl": "https://trendshift.io/repositories/102048",
-      "language": "Go",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-07-01T17:48:49Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "firecrawl/pdf-inspector",
-      "owner": "firecrawl",
-      "repo": "pdf-inspector",
-      "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
-      "githubUrl": "https://github.com/firecrawl/pdf-inspector",
-      "trendshiftUrl": "https://trendshift.io/repositories/26016",
-      "language": "Rust",
-      "topics": [
-        "Document processing"
-      ],
-      "dateCreated": "2026-02-06T19:44:47Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "imsai-sh/zhuzhiliao",
-      "owner": "imsai-sh",
-      "repo": "zhuzhiliao",
-      "description": "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。",
-      "githubUrl": "https://github.com/imsai-sh/zhuzhiliao",
-      "trendshiftUrl": "https://trendshift.io/repositories/101515",
-      "language": "HTML",
-      "topics": [],
-      "dateCreated": "2026-08-01T17:20:54Z"
-    },
-    {
       "rank": 9,
-      "fullName": "esengine/DeepSeek-Reasonix",
-      "owner": "esengine",
-      "repo": "DeepSeek-Reasonix",
-      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
-      "githubUrl": "https://github.com/esengine/DeepSeek-Reasonix",
-      "trendshiftUrl": "https://trendshift.io/repositories/27020",
-      "language": "Go",
+      "fullName": "LiamGvchi/gc-minimal-zine-poster",
+      "owner": "LiamGvchi",
+      "repo": "gc-minimal-zine-poster",
+      "description": "Codex skill for generating quiet minimal zine-style editorial poster prompts and images.",
+      "githubUrl": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+      "trendshiftUrl": "https://trendshift.io/repositories/97479",
       "topics": [
-        "AI agent",
-        "AI coding assistant"
+        "AI image generation",
+        "AI skills"
       ],
-      "dateCreated": "2026-04-21T08:27:02Z"
+      "dateCreated": "2026-07-12T09:54:51Z"
     },
     {
       "rank": 10,
-      "fullName": "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer",
-      "owner": "xdash",
-      "repo": "FDE-the-Guidance-Book-of-Forward-Deployed-Engineer",
-      "description": "FDE（前沿部署工程师）从零入门指南（基于范冰《增长黑客》原书框架）",
-      "githubUrl": "https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer",
-      "trendshiftUrl": "https://trendshift.io/repositories/97449",
+      "fullName": "cloudflare/computer",
+      "owner": "cloudflare",
+      "repo": "computer",
+      "description": "Give your agent a @cloudflare/computer 👾",
+      "githubUrl": "https://github.com/cloudflare/computer",
+      "trendshiftUrl": "https://trendshift.io/repositories/101796",
+      "language": "TypeScript",
       "topics": [],
-      "dateCreated": "2026-07-30T05:39:38Z"
+      "dateCreated": "2026-06-05T10:38:15Z"
     }
   ]
 }
