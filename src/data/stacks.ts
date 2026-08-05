@@ -2367,6 +2367,47 @@ export const stacks: Review[] = [
     date: "2026-08-04",
     featured: false,
   },
+  {
+    slug: "arc-browser",
+    name: "Arc Browser",
+    tagline: "Browser produktivitas dengan Spaces, command bar, dan AI Boosts dari The Browser Company",
+    tags: ["The Browser Company", "Freemium", "Browser", "Productivity"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.0 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 9.0 },
+      { label: "Ekosistem & Integrasi", value: 8.3 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Arc adalah browser Chromium dari The Browser Company of New York yang sejak versi beta 2022 mengubah paradigma tab tradisional menjadi Spaces terorganisir, command bar omnibox yang bisa menjalankan JavaScript dan memanipulasi tab, plus integrasi AI lewat Boosts, Max, dan ChatGPT di sidebar. Versi 2026-nya memperkuat pivot ke AI lewat Dia, browser baru yang dirilis Juli 2025 dengan AI sebagai lapisan utama, sementara Arc sendiri masih menerima update fitur tetapi perusahaan sudah mengumumkan transisi komunitas ke Dia pada akhir 2026 - situasi yang membuat Arc tetap layak dipakai harian tetapi perlu dipertimbangkan untuk adopsi jangka panjang di korporasi.",
+    pros: [
+      "Spaces mengubah puluhan tab dari kekacauan menjadi workflow terstruktur: setiap proyek atau konteks punya space sendiri dengan tema, pinned tab, dan history yang terpisah - produktivitas naik signifikan untuk knowledge worker yang handle banyak proyek paralel",
+      "Command bar (Cmd+T) lebih dari omnibox: bisa buka tab, switch space, run JavaScript snippet, lookup, dan sekarang dengan AI integration bisa summarize, rewrite, atau generate konten tanpa tinggalkan halaman",
+      "Boosts memungkinkan custom CSS atau JavaScript di domain spesifik - blok elemen mengganggu di situs berita, auto-dismiss cookie banner, atau tambah panel info tanpa extension tambahan",
+      "Easel dan Notes bawaan memungkinkan catatan visual atau teks di side panel dengan drag and drop screenshot - alur research-to-note yang cepat tanpa harus pindah ke tool terpisah",
+      "Chromium di bawah Arc membuat semua extension Chrome dan Edge berfungsi penuh, jadi perpindahan dari Chrome hampir mulus tanpa kehilangan workflow yang sudah ada"
+    ],
+    cons: [
+      "The Browser Company mengumumkan pivot ke Dia sebagai produk utama per 2025-2026, Arc masih menerima update tetapi tidak ada jaminan jangka panjang - keputusan strategis ini mirip akhir dari editor media besar yang menghentikan produk",
+      "Hanya tersedia di macOS dan Windows (Arc untuk Linux tidak ada dan tidak direncanankan per pengumuman resmi), konsumen Linux tidak punya opsi selain Chromium atau Firefox",
+      "Konsumsi RAM lebih tinggi dari Chrome atau Safari karena setiap tab di-Render terpisah di proses berbeda untuk stabilitas, workstation dengan RAM 8 GB akan sering swap",
+      "Tidak ada sinkronisasi profil enterprise atau kontrol admin: tim IT tidak bisa push konfigurasi Spaces, Boosts, atau policy ke laptop karyawan - blocker untuk adopsi korporasi di atas 50 seat",
+      "Komunitas dan tutorial bahasa Indonesia masih sedikit, sebagian besar panduan dan diskusi ada di Discord resmi (berbahasa Inggris) atau subreddit r/ArcBrowser"
+    ],
+    verdict:
+      "Standar baru untuk browser produktivitas personal di 2024-2025 dan mempengaruhi desain browser lain (Edge, Zen, Brave), tapi pivot The Browser Company ke Dia pada 2026 membuat adopsi jangka panjang di korporasi perlu strategi fallback. Pilih Arc kalau kamu pengguna macOS/Windows yang mengelola banyak proyek paralel dan menghargai workflow organization di atas segalanya; pilih Chrome atau Edge kalau kamu butuh dukungan enterprise dan Linux.",
+    body: [
+      "Arc adalah browser Chromium dari The Browser Company of New York (TBC), startup yang didirikan Josh Miller (mantan komunikator Obama) dan Hector Mujica pada 2019, yang merilis beta publik pertamanya April 2022 untuk macOS dan setahun kemudian untuk Windows. Premis utamanya adalah tab adalah stres: terlalu banyak tab, tidak terstruktur, susah dicari kembali, jadi TBC merancang ulang hubungan pengguna dengan tab lewat konsep Spaces (set tab terorganisir per konteks seperti Kerja, Pribadi, Riset), Profiles (pengguna terpisah dengan sesi independen), dan Little Arc (command palette untuk switch di antara semuanya). Versi 2026-nya menambahkan integrasi AI lewat Boosts yang bisa dipanggil dengan prompt AI, Max sebagai AI assistant sidebar yang konteks-aware ke halaman aktif, dan integrasi native ChatGPT di sidebar kanan. Yang membedakannya dari Chrome atau Edge adalah perlakuan terhadap tab sebagai first-class object yang bisa dimanipulasi lewat command bar, alih-alih sekadar deretan ikon di atas.",
+      "Untuk workflow harian, ada empat fitur Arc yang paling sering disebut komunitas sebagai game changer. Pertama, Spaces sebagai pengganti folder bookmark tradisional: alih-alih menyimpan URL di folder yang jarang dibuka, Spaces adalah grup tab aktif yang bisa berisi pinned tab, tab biasa, dan history sendiri - berpindah dari Space Riset ke Space Klien terasa seperti ganti konteks kerja, bukan sekadar buka window baru. Kedua, command bar (Cmd+T di macOS, Ctrl+T di Windows) yang bukan hanya address bar tapi juga command palette: bisa buka tab, pindah space, menjalankan JavaScript snippet untuk manipulasi DOM, mencari di history, dan sekarang dengan AI integration bisa generate ringkasan halaman, terjemahkan, atau rewrite teks tanpa extension terpisah. Ketiga, Boosts yang memungkinkan custom CSS atau JavaScript untuk domain spesifik - blok elemen di situs berita, auto-dismiss cookie banner, atau tambah panel informasi tanpa harus install extension. Keempat, Easel (canvas visual untuk note dengan drag and drop screenshot) dan Notes (markdown note di side panel) yang menyatukan research-to-note tanpa harus pindah ke Notion atau Obsidian.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, pada akhir 2025 The Browser Company mengumumkan pivot strategi: Arc masih menerima update fitur dan bug fix, tapi produk utama masa depan adalah Dia, browser baru yang dirilis Juli 2025 dengan AI sebagai lapisan utama (bukan sidebar opsional). Untuk pengguna korporasi yang biasanya memperhitungkan roadmap 3-5 tahun, ketidakpastian ini adalah blocker serius - mirip situasi pengguna editor media besar yang menghentikan produk setelah akuisisi. Kedua, Arc hanya tersedia di macOS dan Windows; untuk pengguna Linux tidak ada versi native, alternatifnya adalah Chromium, Firefox, atau browser baru seperti Zen yang terinspirasi Arc. Ketiga, konsumsi RAM lebih tinggi dari Chrome atau Safari karena setiap tab di-render di proses terpisah untuk stabilitas - workstation dengan RAM 8 GB akan sering swap terutama dengan 20+ tab terbuka, padahal itu use case utama Arc. Keempat, tidak ada sinkronisasi profil enterprise, kontrol admin, atau SSO - tim IT tidak bisa push konfigurasi Spaces, policy Boosts, atau DLP ke laptop karyawan, jadi adopsi korporasi di atas 50 seat umumnya butuh Just-In-Time provisioning manual atau menggunakan browser standar untuk workload sensitif. Kelima, komunitas dan tutorial bahasa Indonesia masih terbatas; sebagian besar panduan ada di Discord resmi (berbahasa Inggris) atau subreddit r/ArcBrowser dengan mayoritas pengguna dari AS dan EU.",
+      "Untuk pengguna dan tim di Indonesia, Arc punya posisi menarik di beberapa segmen spesifik. Pertama, untuk freelancer, content creator, dan knowledge worker yang mengelola banyak proyek paralel (riset, klien, penulisan, operasional), Spaces mengubah kekacauan tab menjadi workflow terstruktur - produktivitas naik signifikan untuk pengguna yang sebelumnya overwhelmed dengan 50+ tab terbuka. Kedua, untuk pengguna macOS dan Windows dengan RAM 16 GB ke atas, pengalaman Arc di kelas ini sangat mulus dan command bar-nya terasa seperti super power yang sulit dilepas setelah dipakai. Ketiga, untuk pengguna Indonesia yang mengelola workflow riset multibahasa (baca sumber Inggris + tulis Bahasa Indonesia), AI sidebar Max yang konteks-aware sangat membantu untuk terjemahan instan, ringkasan paper, atau rewrite draft. Keempat, untuk pengguna yang mempertimbangkan transisi ke AI browser seperti Dia atau Comet, Arc adalah batu loncatan yang bagus karena workflow Spaces dan command bar-nya akan diteruskan ke generasi browser AI berikutnya. Standar harga: Arc gratis untuk di-download dan dipakai tanpa batas, Boosts dan Spaces adalah fitur bawaan, tidak ada subscription; pivot ke Dia kemungkinan akan memperkenalkan subscription untuk fitur AI premium, model bisnis ini masih dalam tahap penyesuaian per pengumuman The Browser Company. Untuk pengguna yang lebih mementingkan dukungan enterprise, Linux, atau komitmen roadmap jangka panjang, Chrome atau Edge tetap pilihan lebih aman; untuk pengguna yang menghargai workflow organization dan tidak keberatan dengan ketidakpastian pivot, Arc tetap salah satu browser paling berkarakter di pasaran per paruh kedua 2026."
+    ],
+    link: "https://arc.net",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-05",
+  },
 ];
 
 export function getStack(slug: string) {
