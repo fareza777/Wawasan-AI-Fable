@@ -2805,6 +2805,50 @@ export const models: Review[] = [
   date: "2026-08-05",
   featured: false,
   },
+  {
+    slug: "kimi-k3",
+    name: "Kimi K3 (max)",
+    tagline: "Flagship reasoning Moonshot — coding 76,2 dan intel 57,1, setara frontier papan atas",
+    tags: ["Moonshot AI", "Proprietary", "Reasoning", "Coding"],
+    score: 8.8,
+    scores: [
+      { label: "Penalaran", value: 9.0 },
+      { label: "Coding", value: 9.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 57.1,
+    aa_coding_index: 76.2,
+    aa_price_input: 3,
+    aa_price_output: 15,
+    aa_synced_at: "2026-08-06",
+    summary:
+      "Flagship reasoning terbaru Moonshot AI yang menaruh Kimi di papan atas dunia frontier. Intelligence index 57,1 (sumber: Artificial Analysis) sejajar dengan Gemini 3 (57,2) dan melampaui Claude Opus 4.5 (43,1) serta GPT-5 (44,6), sementara coding index 76,2 menjadi skor tertinggi di antara model yang sudah diulas Wawasan AI — di atas Qwen3.8 Max (68,9) dan GLM-5.2 (44,2). Lompatan dari K2 ke K3 bukan inkremental, melainkan repositioning: dari model open-weight murah ke pemain papan atas proprietary.",
+    pros: [
+      "Coding index 76,2 (sumber: Artificial Analysis) — skor tertinggi di antara model yang sudah diulas Wawasan AI, memimpin benchmark pemrograman global",
+      "Intelligence index 57,1 (sumber: Artificial Analysis) — sejajar dengan Gemini 3 (57,2), melampaui Claude Opus 4.5 (43,1) dan GPT-5 (44,6)",
+      "Reasoning kuat di frontier — dirancang sejak lahir untuk tool-use agentic dan kerja multi-langkah berdurasi panjang",
+      "Brand Moonshot AI sudah matang di Asia — dukungan API stabil dan integrasi ecosystem yang berkembang",
+    ],
+    cons: [
+      "Harga API $3,00 input dan $15,00 output per juta token — premium, tiga kali lebih mahal dari K2 ($0,585/$2,34) yang masih tersedia",
+      "Akses API Moonshot di Indonesia kadang kurang stabil dibanding frontier Barat — latency dan uptime perlu dipantau",
+      "TTFT 2,77 detik relatif lebih lambat dari frontier Barat (Claude Sonnet 4.5 sekitar 1,2 detik) — kurang ideal untuk chat real-time yang butuh respons instan",
+      "Math index tidak tersedia di benchmark AA untuk entry ini — kualitas matematika perlu diuji sendiri per use case",
+    ],
+    verdict:
+      "Kimi K3 menandai pergeseran penting di peta AI global: Moonshot AI bukan lagi pemain open-weight kelas dua, tapi contender serius di liga frontier. Untuk workload agentic coding intensif di mana coding index 76,2 menjadi pembeda utama, K3 layak dicoba sebelum memilih model Barat yang lebih mahal.",
+    body: [
+      "Kimi K3 adalah flagship reasoning terbaru Moonshot AI per Juli 2026, dirancang sebagai penerus keluarga K yang sejak K2 sudah terkenal sebagai kuda hitam open-weight. Bedanya, K3 bukan sekadar iterasi — reposisi total. Intelligence index 57,1 (sumber: Artificial Analysis) menaruhnya di papan atas dunia frontier, sejajar dengan Gemini 3 (57,2) dan melampaui Claude Opus 4.5 (43,1) serta GPT-5 (44,6). Coding index 76,2 menjadi skor tertinggi yang pernah dicatat Wawasan AI, melewati Qwen3.8 Max (68,9), GLM-5.2 (44,2), dan frontier Barat papan atas. Lompatan dari K2 (intel 26,3, coding 22,1) ke K3 bukan inkremental — lebih dari dua kali lipat intelligence index dan 3,4x coding index, mengubah positioning Moonshot AI secara fundamental. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI, Kimi K3 menunjukkan karakter flagship yang matang untuk pekerjaan agentic. Refaktor lintas file dengan sedikit back-and-forth, iterasi tool-use yang konsisten di sesi panjang, dan kemampuan mempertahankan konteks setelah belasan putaran eksekusi menjadi ciri khasnya. Yang paling terasa dibanding frontier Barat adalah kombinasi penalaran murni (tanpa beban multimodal) dengan optimasi agentic — ini bukan model generik yang ditambahi tool, melainkan model yang dirancang dari bawah untuk alur kerja agentic. Throughput output median 36,9 tokens/detik mendukung pipeline agentic real-time, meski TTFT 2,77 detik relatif lebih lambat dari frontier Barat yang sering di bawah 1,5 detik — untuk chat interaktif yang sensitif latency, ini bisa terasa. (Sumber: Artificial Analysis.)",
+      "Soal harga, K3 bermain di kelas premium: $3,00 per juta token input dan $15,00 output. Bandingkan dengan K2 yang masih tersedia di $0,585 input dan $2,34 output — K3 lima kali lebih mahal di input dan 6,4x lebih mahal di output. Premium ini sebanding dengan Claude Opus 4.5 ($5/$25) di kelas yang lebih rendah untuk intel, atau GPT-5 ($1,25/$10) yang lebih murah. Untuk developer Indonesia yang sensitif dolar, strategi yang masuk akal: manfaatkan K2 untuk eksperimen volume tinggi dan prototyping, K3 untuk workload agentic coding intensif di mana coding index 76,2 menjadi pembeda utama, dan frontier Barat untuk kasus yang butuh integrasi ecosystem paling matang atau SLA enterprise formal. Math index tidak tersedia di response API AA untuk entry ini, jadi kualitas matematika perlu diuji sendiri per use case spesifik — meski untuk tool-use coding, kombinasi intel 57,1 dan coding 76,2 sudah menjadi jaminan kuat.",
+      "Signifikansi K3 bagi peta AI Indonesia adalah konfirmasi bahwa laboratorium Asia kini serius bermain di liga frontier proprietary, bukan hanya di ceruk open-weight murah. Moonshot AI membangun reputasi sejak K2 sebagai pemain open-weight yang jago agentic, dan K3 menerjemahkan reputasi itu ke level proprietary papan atas. Akses API K3 tersedia lewat platform.kimi.com dan platform Moonshot langsung — untuk developer Indonesia, perlu verifikasi region availability dan payment method (kartu kredit internasional) sebelum adopsi produksi. Strategi pemakaian yang paling rasional: K3 sebagai pilihan utama untuk workload agentic coding yang sensitif terhadap coding index 76,2 dan intel 57,1; K2 tetap untuk volume tinggi dan eksperimen murah; frontier Barat untuk kasus yang butuh integrasi ecosystem atau SLA paling ketat.",
+    ],
+    link: "https://www.moonshot.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-06",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
