@@ -1595,16 +1595,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                             ],
                           },
                           "esengine/DeepSeek-Reasonix": {
-                            description:
-                              "Coding agent CLI/TUI dari esengine yang di-bangun khusus untuk model DeepSeek — fokus pada stabilitas prefix cache supaya session panjang tetap murah dan bisa ditinggal jalan berhari-hari.",
-                            highlights: [
-                              "Coding agent DeepSeek-native: ditulis Go (rewrite dari versi TypeScript legacy) dengan TUI full-screen, mouse-friendly, tapi juga bisa headless untuk CI/CD atau dipasang ke editor lewat Agent Client Protocol (ACP).",
-                              "Optimasi 'prefix-cache stability' yang jadi pembeda: token cost tetap rendah sepanjang session panjang karena cache prefix dijaga tetap valid — klaim bisa ditinggal running berhari-hari tanpa tagihan API membengkak.",
-                              "Dilengkapi SEARCH/REPLACE mode yang mengajukan edit tanpa langsung menyentuh disk sampai user /apply — mengurangi 'AI ngutak-atik file sembarangan' dan bikin review alur perubahan jadi jauh lebih terkontrol.",
-                              "30k+ bintang GitHub dan masuk Top 2/3 oosmetrics untuk Agents, LLMs, dan CLI by velocity — alternatif menarik dari Claude Code atau Codex untuk pengguna yang lebih suka DeepSeek sebagai otak dan workflow terminal-centric.",
-                            ],
-                          },
-                        };
+                              description:
+                                "Coding agent CLI/TUI dari esengine yang di-bangun khusus untuk model DeepSeek — fokus pada stabilitas prefix cache supaya session panjang tetap murah dan bisa ditinggal jalan berhari-hari.",
+                              highlights: [
+                                "Coding agent DeepSeek-native: ditulis Go (rewrite dari versi TypeScript legacy) dengan TUI full-screen, mouse-friendly, tapi juga bisa headless untuk CI/CD atau dipasang ke editor lewat Agent Client Protocol (ACP).",
+                                "Optimasi 'prefix-cache stability' yang jadi pembeda: token cost tetap rendah sepanjang session panjang karena cache prefix dijaga tetap valid — klaim bisa ditinggal running berhari-hari tanpa tagihan API membengkak.",
+                                "Dilengkapi SEARCH/REPLACE mode yang mengajukan edit tanpa langsung menyentuh disk sampai user /apply — mengurangi 'AI ngutak-atik file sembarangan' dan bikin review alur perubahan jadi jauh lebih terkontrol.",
+                                "30k+ bintang GitHub dan masuk Top 2/3 oosmetrics untuk Agents, LLMs, dan CLI by velocity — alternatif menarik dari Claude Code atau Codex untuk pengguna yang lebih suka DeepSeek sebagai otak dan workflow terminal-centric.",
+                              ],
+                            },
+                            "firecrawl/anydoc": {
+                              description:
+                                "Konverter dokumen Rust dari tim Firecrawl yang mengubah Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, dan PDF jadi Markdown bersih dalam milidetik — output konsisten, siap konsumsi LLM.",
+                              highlights: [
+                                "Engine Rust murni yang mengkonversi 8+ format dokumen (DOCX, PPTX, XLSX, ODT, RTF, EPUB, CSV, PDF) jadi GitHub-Flavored Markdown dalam single-digit milliseconds — konsisten output apapun format inputnya.",
+                                "Tiga binding resmi out-of-the-box: Node.js (`@firecrawl/anydoc`), Python (`firecrawl-anydoc`), dan WebAssembly untuk browser — pipeline RAG yang sama bisa jalan di server, service, dan sisi klien tanpa rewrite.",
+                                "Bisa dipasang sebagai Agent Skill lewat `npx skills add firecrawl/anydoc` — coding agent (Claude Code, Codex, Cursor, OpenCode) langsung tahu cara konversi dokumen apapun yang ditemukan saat riset atau eksplorasi codebase.",
+                                "Sudah battle-tested sebagai pondasi Firecrawl Parse yang dipakai ribuan pipeline AI; demo browser WASM tersedia untuk yang mau coba tanpa install — berlisensi MIT dan di-maintain langsung tim Firecrawl.",
+                              ],
+                            },
+                            "cloudflare/cloudflare-os": {
+                              description:
+                                "OS produktivitas AI open-source dari Cloudflare (Cloudflare OS) — agent chat dengan konteks perusahaan, sandbox pribadi untuk bikin 'gadget', dan framework keamanan Gatekeepers untuk adopsi AI yang aman di perusahaan.",
+                              highlights: [
+                                "Pendekatan 'OS' dua-lapis: lapisan pertama untuk AI workload di perusahaan (analog OS tradisional yang manage compute), lapisan kedua untuk perusahaan itu sendiri agar tim non-teknis bisa 'go nuts' dengan AI tanpa risiko security.",
+                                "Tiga pilar: agent chat UI yang sudah dipreload konteks perusahaan, sandbox pribadi per-user untuk bikin 'gadget' (micro-app yang dibuat AI agent), dan Gatekeepers framework untuk guardrail agent + gadget.",
+                                "Konsep 'gadget' yang berbeda dari SaaS: tiap slide deck atau app yang dibuat agen jalan di instance sandbox pribadi, bukan SaaS bersama — artinya bug security satu gadget tidak bisa bocor ke gadget orang lain, dan kode bisa bebas dimodifikasi sesuai kebutuhan tim.",
+                                "Quick start satu perintah via `pnpm run-local` di port 8787, deploy one-click ke akun Cloudflare sendiri via `os.cloudflare.app/deploy` — bukan produk jadi, melainkan template open-source yang didesain untuk dikustomisasi jadi 'Your Company OS' masing-masing.",
+                              ],
+                            },
+                            "ifixai-ai/iFixAi": {
+                              description:
+                                "Tool auditing independen untuk agen AI (iFixAi) yang menilai agen berdasarkan KPI bisnis dan struktur organisasi, bukan cuma metrik teknis — hasil keluar sebagai grade A–F dalam 120 detik lewat 32 inspection.",
+                              highlights: [
+                                "Berbeda dari eval/observability tool pada umumnya yang fokus ke token efficiency, latency, dan prompt injection — iFixAi menjawab pertanyaan mendasar: 'apakah agen benar-benar melakukan job-nya sesuai KPI bisnis?' lewat audit yang menggabungkan AI red-teaming dan operational assurance.",
+                                "32 inspection otomatis yang dijalankan dalam lima pilar inti, menghasilkan grade A–F plus scorecard Markdown/JSON — bukan sekadar pass/fail, melainkan diagnostik yang actionable untuk perbaikan iterasi berikutnya.",
+                                "Tiga cara pakai: CLI guided wizard (`ifixai setup` lalu `ifixai run`), CLI flag eksplisit untuk CI/CD, atau plugin/skill yang dipasang ke Claude Code/Codex sehingga agen menjalankan auditnya sendiri terhadap dirinya.",
+                                "Open source (Apache 2.0), mendukung multi-judge ensemble (self, vendor independen, atau beberapa penilai sekaligus), dan sudah dipakai untuk eval agen di berbagai industri — relevan untuk tech lead yang ingin audit real-world performance agen bukan cuma benchmark sintetis.",
+                              ],
+                            },
+                          };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
                                         export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
