@@ -1634,6 +1634,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                 "Open source (Apache 2.0), mendukung multi-judge ensemble (self, vendor independen, atau beberapa penilai sekaligus), dan sudah dipakai untuk eval agen di berbagai industri — relevan untuk tech lead yang ingin audit real-world performance agen bukan cuma benchmark sintetis.",
                               ],
                             },
+                            "PrimeIntellect-ai/prime-agent": {
+                              description:
+                                "Coding agent open-source dari Prime Intellect yang mengenalkan paradigma RLM (Recursive Language Model) — konteks diperlakukan sebagai variabel dalam REPL Python persisten, sub-agen dipanggil seperti fungsi, dan skill berbentuk paket Python yang bisa diimpor.",
+                              highlights: [
+                                "Paradigma RLM berbeda dari chat-loop tradisional: prompt dan tools adalah variabel dalam Python REPL persisten, jadi agen bisa stateful, retry, dan inspect eksekusi seperti programmer — bukan hanya 'kirim pesan, terima jawaban'.",
+                                "Sub-agen built-in lewat `rlm(...)` — agen bisa spawn anak agent untuk kerja paralel atau background, lalu hasilnya kembali sebagai nilai programatis, bukan harus polling UI.",
+                                "Skill bisa dieksekusi: skill adalah paket Python importable, dan agent punya skill creator bawaan yang bisa ubah workflow berulang jadi skill project/personal yang durable lintas sesi.",
+                                "Prime Intellect menulis 'Continual Harness' (paper 2605.09998) yang menyimpan supplemental prompt, memori, dan deskripsi skill sebagai state yang bisa di-refine lewat update kecil berbasis bukti lewat `/refine` — agen benar-benar 'belajar' dari pemakaian tanpa rewrite base system prompt.",
+                              ],
+                            },
+                            "unclecode/crawl4ai": {
+                              description:
+                                "Crawler & scraper web open-source (76k+ bintang) yang outputnya Markdown bersih siap konsumsi LLM — dirancang khusus untuk RAG, pipeline agen AI, dan ingestion data besar dengan kontrol penuh atas proses crawling.",
+                              highlights: [
+                                "Crawler LLM-friendly: setiap hasil crawl sudah dibersihkan dan distruktur jadi Markdown yang bisa langsung dimakan pipeline RAG atau agent AI tanpa preprocessing tambahan — 50k+ komunitas sudah adopsi sebagai standar.",
+                                "Headless browser under-the-hood (Chromium, Playwright) sehingga bisa render halaman modern (JavaScript-rendered, SPA, lazy-load) sambil mempertahankan kontrol penuh lewat konfigurasi CSS-selector, regex, atau strategi custom.",
+                                "Fitur scalable: deep crawling BFS/DFS, multi-page orchestration, ekstraksi terstruktur via LLM (schema-driven extraction), caching, proxy rotation, dan rate limiting — bukan sekadar scraper, melainkan pipeline data ingestion siap produksi.",
+                                "Apache-2.0, tersedia sebagai library Python (`pip install crawl4ai`), Docker container, atau Cloud API beta — cocok untuk developer Indonesia yang butuh feedstock RAG berkualitas tanpa locked-in ke layanan proprietary seperti Apify atau Diffbot.",
+                              ],
+                            },
+                            "denoland/celld": {
+                              description:
+                                "Daemon open-source dari tim Deno yang menjalankan Cloudflare Workers dan Durable Objects di mesin sendiri — setiap object adalah database SQLite sendiri yang direplikasi ke S3-compatible bucket, tanpa control plane atau konsensus.",
+                              highlights: [
+                                "Self-host Durable Objects: kalau Anda menyukai model DO Cloudflare tapi tidak mau lock-in ke platformnya, celld membawa arsitektur yang sama ke server/kontainer/Raspberry Pi Anda.",
+                                "Tidak perlu control plane: semua koordinasi terjadi lewat S3-compatible bucket (object-storage compare-and-swap), sehingga tidak ada membership protocol, failure detector, atau konsensus service — lebih sederhana dari sistem terdistribusi pada umumnya.",
+                                "Setiap object adalah SQLite kecil tersendiri yang shard-by-construction — bukan shared database dengan contention: blast-radius failure satu object terbatas pada object itu, idle cells hibernate sampai mendekati nol resource.",
+                                "Setiap node embed V8 dan eksekusi Wrangler bundle langsung — kompatibel dengan ekosistem Cloudflare Workers (TypeScript SDK, module Workers), dan instalasi satu perintah lewat installer resmi dengan provenance verifiable lewat GitHub attestation.",
+                              ],
+                            },
                           };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
