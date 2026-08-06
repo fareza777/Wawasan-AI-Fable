@@ -2849,9 +2849,54 @@ export const models: Review[] = [
     date: "2026-08-06",
     featured: false,
   },
+{
+    slug: "ling-3-0-flash",
+    name: "Ling-3.0 Flash",
+    tagline: "InclusionAI lightweight API — kecepatan tinggi, coding solid, harga sub-sen untuk inference volume-tinggi",
+    tags: ["InclusionAI", "Proprietary", "Coding", "Murah"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.7 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 9.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 38.3,
+    aa_coding_index: 50.6,
+    aa_price_input: 0.075,
+    aa_price_output: 0.22,
+    aa_synced_at: "2026-08-07",
+    summary:
+      "Varian ringan dari keluarga Ling InclusionAI (laboratorium AI Ant Group) yang menonjol di kuadran kecepatan dan harga — intelligence index 38,3 (sumber: Artificial Analysis) menaruhnya di papan tengah, tapi throughput output 328+ token/detik dan harga API $0,075 per juta token input menjadikannya pilihan menarik untuk pipeline coding agentic volume-tinggi dan chat interaktif latency-sensitif di pasar Indonesia.",
+    pros: [
+      "Throughput output 328+ tokens/detik (sumber: Artificial Analysis) — salah satu yang tercepat di kelas API proprietary Asia, ideal untuk streaming chat dan tool-use agentic real-time",
+      "Harga API paling agresif di kelas model coding-oriented: $0,075 input / $0,22 output per 1M token — di bawah DeepSeek V3 ($0,40/$2) dan MiMo-V2.5 ($0,435/$0,87)",
+      "Coding index 50,6 (sumber: Artificial Analysis) — solid untuk refactor multi-file, code review, dan bantuan IDE tanpa lompatan harga ke kelas reasoning flagship",
+      "TTFT 1,6 detik mendukung UX interaktif — jauh lebih responsif dari reasoning flagship yang sering 2-3 detik",
+    ],
+    cons: [
+      "Intelligence index 38,3 (sumber: Artificial Analysis) — papan tengah, di bawah frontier reasoning papan atas (Kimi K3 57,1, Claude Opus 4.5 43,1, GPT-5 44,6)",
+      "Math index tidak tersedia di response API AA — kualitas numerik perlu diuji sendiri per use case spesifik",
+      "Ekosistem developer di luar pasar Asia masih muda — integrasi native dengan tool Indonesia (payment gateway, e-commerce) belum sekuat OpenAI atau Anthropic",
+      "Bukan pilihan utama untuk penalaran terdalam (riset filosofis, pembuktian teoritis) — flagship reasoning masih memimpin dengan jarak jelas",
+    ],
+    verdict:
+      "Ling-3.0 Flash adalah pilihan rasional untuk pipeline coding agentic volume-tinggi dan chat interaktif yang sensitif latency serta harga. Untuk penalaran terberat, frontier papan atas masih memimpin — tapi untuk workload harian di mana setiap dolar dan milidetik dihitung, sulit dikalahkan di kelasnya.",
+    body: [
+      "Ling-3.0 Flash adalah varian ringan dari keluarga Ling InclusionAI — laboratorium AI milik Ant Group (perusahaan di balik Alipay dan layanan finansial Asia) yang sejak 2024 aktif merilis keluarga model ring dan lightweight. Setelah flagship trillion-parameter Ling-2.6 1T yang menyasar konteks panjang, Ling-3.0 Flash menyasar kuadran yang berbeda: kecepatan tinggi dan harga sub-sen untuk inference volume-tinggi. Pendekatan ini mencerminkan strategi umum laboratorium AI Asia di 2026 — menawarkan spectrum lengkap dari model ringan murah untuk chat harian sampai flagship reasoning untuk workload terdalam, dengan API seragam yang memudahkan orkestrasi pipeline multi-model.",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic volume-tinggi, Ling-3.0 Flash menunjukkan karakter yang dirancang untuk latensi rendah dan throughput tinggi. Throughput output median 328+ tokens/detik (sumber: Artificial Analysis) menjadi nilai jual utama — salah satu yang tercepat di kelas API proprietary Asia, mendekati kecepatan model kecil yang di-optimasi khusus untuk streaming UX. TTFT 1,6 detik mendukung interaksi real-time yang sensitif latency seperti IDE assistant, code review streaming, atau chat customer service. Coding index 50,6 (sumber: Artificial Analysis) menaruhnya di papan tengah-atas untuk kemampuan coding — solid untuk refactor multi-file, code review, dan bantuan IDE tanpa harus melompat ke kelas reasoning flagship yang jauh lebih mahal. Math index tidak tersedia di benchmark AA, sehingga kualitas numerik perlu diuji sendiri per use case spesifik. (Sumber: Artificial Analysis.)",
+      "Aspek paling menarik dari perspektif pasar Indonesia adalah harganya yang agresif. Di $0,075 per juta token input dan $0,22 output, Ling-3.0 Flash bermain di kuadran paling ekonomis kelas API proprietary Asia — sekitar 5x lebih murah dari DeepSeek V3.x ($0,40/$2) di input, dan jauh di bawah frontier Barat (Claude Opus 4.5 di $5/$25 atau GPT-5 di $1,25/$10). Untuk pipeline yang memanggil model ribuan kali per hari — chat agent customer service, code assistant IDE, summarization massal, atau RAG retrieval-augmented generation — selisih kumulatif ini langsung terasa bagi developer dan tim yang menghitung dolar per inference. Intelligence index 38,3 (sumber: Artificial Analysis) menempatkannya di papan tengah untuk penalaran umum, di bawah frontier reasoning papan atas (Kimi K3 57,1, Claude Opus 4.5 43,1, GPT-5 44,6) — tapi untuk workload harian di mana setiap dolar dan milidetik dihitung, kuadran kecepatan dan harga ini sulit dikalahkan. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: intelligence index 38,3 (sumber: Artificial Analysis) menempatkannya di papan tengah — untuk riset filosofis, pembuktian teoritis, atau arsitektur paling kompleks, frontier reasoning papan atas masih memimpin dengan jarak yang jelas. Ekosistem developer di luar pasar Asia masih muda, dengan integrasi native terhadap tool Indonesia (payment gateway lokal, e-commerce platform, sistem perbankan) belum sekuat OpenAI atau Anthropic. Akses API tersedia lewat platform.inclusionai.com dan mitra regional — untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional), dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: Ling-3.0 Flash untuk pipeline coding agentic volume-tinggi, chat interaktif latency-sensitif, dan summarization massal yang sensitif harga; flagship reasoning (Kimi K3, Claude Opus 4.5) untuk workload penalaran terdalam; open-weight Asia (Qwen3, GLM) untuk deployment lokal yang butuh kedaulatan data penuh.",
+    ],
+    link: "https://inclusionai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-07",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
 
   return models.find((m) => m.slug === slug);
 }
+
