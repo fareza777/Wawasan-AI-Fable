@@ -3239,6 +3239,57 @@ export const repos: Review[] = [
     updatedAt: "2026-08-06",
     featured: false,
   },
+{
+    slug: "obsidian-wiki",
+    name: "obsidian-wiki",
+    tagline: "Otak digital untuk AI agent: bangun basis pengetahuan lewat Obsidian vault",
+    tags: ["AI Agent", "Knowledge Base", "Python", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "obsidian-wiki adalah kerangka kerja (framework) Python yang membantu AI agent membangun dan merawat vault Obsidian sebagai 'otak digital' — tempat pengetahuan yang ditemukan agent disusun, dihubungkan, dan ditanyakan ulang lewat skill berbasis markdown. Pola ini terinspirasi dari catatan Andrej Karpathy tentang LLM Wiki: pengetahuan dikompilasi sekali, dijaga mutakhirnya, lalu dipakai lintas sesi tanpa harus menjalankan RAG atau mengulang prompt yang sama.",
+    highlights: [
+      "Lebih dari 3.100 bintang di GitHub dengan pertumbuhan stabil di 2026 — menarik perhatian komunitas agent coding yang mengelola basis pengetahuan jangka panjang",
+      "Berbasis skill markdown yang dibaca langsung oleh Claude Code, Cursor, Codex, Windsurf, Gemini CLI, dan belasan agent lain — tanpa runtime tambahan, tanpa API key vendor",
+      "Instalasi cepat lewat PyPI: `pip install obsidian-wiki` lalu `obsidian-wiki setup --vault ~/brain`, agent bisa langsung memakai skill `/wiki-ingest`, `/wiki-query`, `/wiki-narrate`",
+      "39 skill slash command mencakup ingest (folder, PDF, transkrip), kueri dengan kutipan `[[wikilink]]`, session mining, dan lint untuk tautan rusak serta halaman yatim",
+      "Mendukung banyak sumber: folder dokumen, hasil ekspor chat, transkrip rapat, URL, tangkapan layar — lalu mengubahnya menjadi halaman markdown yang saling terhubung",
+      "Manifest pelacakan sumber: ingest kedua hanya memproses delta, bukan mengulang seluruh vault — biaya kueri tetap murah walau pengetahuan membesar",
+      "Setiap klaim ditandai sebagai `extracted`, `^[inferred]`, atau `^[ambiguous]` sehingga pengguna bisa membedakan pengetahuan nyata dari tebakan agent",
+      "Output dapat diekspor ke `graph.json`, GraphML (Gephi/yEd), Neo4j Cypher, atau `graph.html` interaktif untuk visualisasi hubungan pengetahuan",
+      "Vault berupa folder markdown polos — bisa di-push ke repositori privat, dibuka di Obsidian, digrep, atau dihapus tanpa meninggalkan jejak data ke layanan pihak ketiga",
+      "Lisensi MIT — bebas dipakai untuk eksperimen pribadi, riset, maupun integrasi internal oleh tim atau perusahaan",
+    ],
+    pros: [
+      "Pola 'digital brain' yang berbeda dari RAG tradisional: pengetahuan disusun manusiawi dan ditinjau ulang, bukan hanya diambil dari embedding yang hilang konteksnya",
+      "Kompatibilitas agent yang luas lewat skill markdown sederhana — tidak bergantung pada protokol proprietary atau framework agent tunggal",
+      "Dokumentasi sangat terstruktur: halaman instalasi, referensi 39 skill, matriks kompatibilitas agent, dan arsitektur empat tahap ingest tersedia terpisah dan mudah dinavigasi",
+    ],
+    cons: [
+      "Masih relatif muda (rilis awal 2026) — kualitas deduplikasi dan cross-linking masih berkembang, vault besar bisa memerlukan tinjauan manual",
+      "Bergantung pada disiplin pemakaian: agent perlu diinstruksikan untuk menulis ulang dan merawat vault, sehingga hasilnya ditentukan sejauh mana skill dipakai konsisten",
+      "Bukan pengganti database pengetahuan tradisional untuk kasus yang butuh pencarian SQL atau integrasi langsung ke sistem internal perusahaan",
+    ],
+    verdict:
+      "obsidian-wiki adalah salah satu eksperimen paling menarik di ranah 'second brain' untuk AI agent: ia mengembalikan kepemilikan pengetahuan kepada pengguna dan agen, bukan ke layanan SaaS. Cocok untuk developer, peneliti, dan tim di Indonesia yang ingin pengetahuan dari sesi coding atau riset mereka bertahan lintas proyek tanpa bergantung pada platform pihak ketiga.",
+    body: [
+      "Kebanyakan developer dan peneliti yang memakai AI agent setiap hari merasakan satu masalah yang sama: pengetahuan yang ditemukan di satu sesi sering hilang ketika sesi berakhir. Claude Code atau Cursor bisa menghasilkan insight brilian di sore hari, tapi tiga bulan kemudian insight itu terkunci di log chat yang tidak mungkin dicari ulang. obsidian-wiki dari Ar9av mengambil pola yang diajukan Andrej Karpathy lewat catatan LLM Wiki: pengetahuan dikompilasi sekali menjadi markdown yang saling terhubung, lalu dijaga agar tetap mutakhir — bukan ditanyakan berulang ke model atau dijalankan ulang lewat pipeline RAG yang mahal tiap kali dibutuhkan.",
+      "Pendekatan teknisnya sederhana namun efektif. Setiap kemampuan dipaketkan sebagai skill markdown yang dibaca langsung oleh agent seperti Claude Code, Cursor, Codex, Windsurf, atau Gemini CLI — tanpa runtime tambahan, tanpa API key vendor, tanpa layanan backend. Pengguna cukup menjalankan `pip install obsidian-wiki`, mengarahkan vault, lalu memberi tahu agent untuk memakai skill `/wiki-ingest`, `/wiki-update`, `/wiki-query`, atau `/wiki-narrate`. Hasilnya adalah vault Obsidian berisi halaman-halaman yang saling ber-hyperlink, dengan setiap klaim ditandai jelas apakah ia hasil ekstraksi, inferensi, atau masih ambigu — sehingga pengguna tidak tertukar antara pengetahuan nyata dan tebakan model.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling menarik adalah manifest pelacakan sumber. Setiap ingest menuliskan apa yang sudah diproses, sehingga ingest berikutnya hanya memproses delta. Untuk pengguna di Indonesia yang menangani banyak dokumen riset, catatan rapat, atau transkrip interview, pola ini menjaga biaya kueri tetap rendah walau vault membesar dari puluhan menjadi ribuan halaman. Visualisasi graph view di Obsidian juga memberikan cara yang lebih intuitif untuk melihat hubungan antara pengetahuan — sesuatu yang biasanya hanya tersedia di tool mind-mapping berbayar.",
+      "Batasan yang perlu dipahami: obsidian-wiki masih kerangka kerja yang relatif muda. Kualitas deduplikasi dan cross-linking otomatis masih berkembang, dan vault besar mungkin memerlukan tinjauan manual berkala. Ia juga bukan pengganti database pengetahuan SQL atau platform kolaboratif enterprise — nilai utamanya adalah untuk developer, peneliti, penulis, dan tim kecil-menengah yang ingin pengetahuannya tetap bisa dicari dan dirujuk lintas waktu. Untuk konteks Indonesia, proyek ini sangat menarik bagi siapa saja yang sudah lama mengelola vault Obsidian untuk catatan pribadi dan ingin AI agent mereka benar-benar 'tahu' apa yang sudah ditulis tanpa harus mengulang dari nol setiap kali.",
+    ],
+    link: "https://github.com/Ar9av/obsidian-wiki",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-07",
+    updatedAt: "2026-08-07",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
