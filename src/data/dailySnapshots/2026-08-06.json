@@ -1,0 +1,154 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "6 Agustus 2026",
+  "period": {
+    "date": "2026-08-06",
+    "label": "6 Agustus 2026",
+    "path": "/repo/daily/2026/08/06"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-06T00:07:22.163Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "firecrawl/anydoc",
+      "owner": "firecrawl",
+      "repo": "anydoc",
+      "description": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.",
+      "githubUrl": "https://github.com/firecrawl/anydoc",
+      "trendshiftUrl": "https://trendshift.io/repositories/103044",
+      "language": "Rust",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-03T16:36:14Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "cloudflare/cloudflare-os",
+      "owner": "cloudflare",
+      "repo": "cloudflare-os",
+      "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+      "githubUrl": "https://github.com/cloudflare/cloudflare-os",
+      "trendshiftUrl": "https://trendshift.io/repositories/103883",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-15T22:22:53Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "cloudflare/computer",
+      "owner": "cloudflare",
+      "repo": "computer",
+      "description": "Give your agent a @cloudflare/computer 👾",
+      "githubUrl": "https://github.com/cloudflare/computer",
+      "trendshiftUrl": "https://trendshift.io/repositories/101796",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-06-05T10:38:15Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "trycompai/crm",
+      "owner": "trycompai",
+      "repo": "crm",
+      "description": "",
+      "githubUrl": "https://github.com/trycompai/crm",
+      "trendshiftUrl": "https://trendshift.io/repositories/99983",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-31T21:38:51Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "TencentCloud/TencentDB-Agent-Memory",
+      "owner": "TencentCloud",
+      "repo": "TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "githubUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "trendshiftUrl": "https://trendshift.io/repositories/29310",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI memory"
+      ],
+      "dateCreated": "2026-04-07T06:34:26Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "kirodotdev/KiroCrew",
+      "owner": "kirodotdev",
+      "repo": "KiroCrew",
+      "description": "",
+      "githubUrl": "https://github.com/kirodotdev/KiroCrew",
+      "trendshiftUrl": "https://trendshift.io/repositories/103032",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-07-16T21:21:54Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "makerspet/oomwoo",
+      "owner": "makerspet",
+      "repo": "oomwoo",
+      "description": "Open-source vacuum robot cleaner",
+      "githubUrl": "https://github.com/makerspet/oomwoo",
+      "trendshiftUrl": "https://trendshift.io/repositories/65598",
+      "language": "Mermaid",
+      "topics": [
+        "Robotics",
+        "Home automation"
+      ],
+      "dateCreated": "2026-06-10T06:03:33Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "esengine/DeepSeek-Reasonix",
+      "owner": "esengine",
+      "repo": "DeepSeek-Reasonix",
+      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "githubUrl": "https://github.com/esengine/DeepSeek-Reasonix",
+      "trendshiftUrl": "https://trendshift.io/repositories/27020",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-04-21T08:27:02Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "LiamGvchi/gc-minimal-zine-poster",
+      "owner": "LiamGvchi",
+      "repo": "gc-minimal-zine-poster",
+      "description": "Codex skill for generating quiet minimal zine-style editorial poster prompts and images.",
+      "githubUrl": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+      "trendshiftUrl": "https://trendshift.io/repositories/97479",
+      "topics": [
+        "AI image generation",
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-12T09:54:51Z"
+    }
+  ]
+}

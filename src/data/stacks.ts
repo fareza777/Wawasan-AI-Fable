@@ -2408,6 +2408,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-08-05",
   },
+  {
+    slug: "descript",
+    name: "Descript",
+    tagline: "Editor video berbasis transkrip dengan agen AI untuk memangkas revisi",
+    tags: ["Descript", "Freemium", "Video Gen", "Editor"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 8.7 },
+      { label: "Pengalaman Pengguna", value: 9.1 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Descript mengubah rekaman video dan podcast menjadi dokumen yang dapat diedit: hapus kalimat di transkrip, lalu bagian media terkait ikut terpotong. Underlord menambahkan agen penyunting untuk membersihkan jeda dan kata pengisi, memperbaiki suara, menyusun klip, serta menjalankan revisi massal dari instruksi bahasa alami. Hasilnya sangat efisien untuk konten percakapan, meski kontrol visual presisi dan biaya berbasis jam media serta kredit AI tetap perlu diperhitungkan.",
+    pros: [
+      "Penyuntingan berbasis transkrip memangkas kurva belajar untuk podcast, webinar, wawancara, dan video tutorial",
+      "Underlord dapat menjalankan revisi massal, membuat klip, menyusun tata letak, serta memberi saran penyuntingan dari satu prompt",
+      "Studio Sound, penghapus kata pengisi dan pengulangan, Eye Contact, captions, serta automatic multicam menyatukan banyak pekerjaan dalam satu aplikasi",
+      "Kolaborasi, komentar, screen recording, stok media, voice clone, API, dan MCP membuat alur dari rekam sampai publikasi lebih terpadu",
+      "Paket Free tanpa kartu kredit cukup untuk menguji cara kerja sebelum membayar langganan dolar"
+    ],
+    cons: [
+      "Penyuntingan berbasis teks paling cocok untuk konten percakapan; color grading, motion graphics, dan timeline kompleks tetap lebih leluasa di Premiere Pro atau DaVinci Resolve",
+      "Kuota memadukan jam media dan kredit AI, sehingga biaya proyek sulit diperkirakan ketika banyak memakai Studio Sound, Eye Contact, atau media generatif",
+      "Akurasi transkrip dan pemotongan kata perlu diperiksa ulang pada Bahasa Indonesia bercampur istilah Inggris, nama daerah, atau pembicara yang saling menyela",
+      "Semua paket utama bersifat cloud dan proprietary; tidak ada jalur self-host untuk organisasi yang wajib menjaga media mentah di infrastruktur sendiri"
+    ],
+    verdict:
+      "Descript adalah salah satu editor paling praktis untuk tim yang hidup dari wawancara, podcast, webinar, dan video penjelasan, terutama ketika revisi naskah lebih dominan daripada efek visual. Kecepatannya layak dibayar setelah volume produksi rutin, tetapi kreator Indonesia sebaiknya menguji satu proyek Bahasa Indonesia penuh dan menghitung konsumsi kredit sebelum memilih paket tahunan.",
+    body: [
+      "Descript menyelesaikan masalah yang sangat konkret: banyak kreator memahami kata dan cerita, tetapi tidak ingin menghabiskan waktu menggeser potongan kecil di timeline. Setelah sebuah rekaman diimpor atau direkam langsung, Descript membuat transkrip yang terhubung ke audio dan video. Menghapus kalimat, memindahkan paragraf, atau memangkas pengulangan di teks akan mengubah media sumber secara serempak. Pola ini sangat efektif untuk podcast, wawancara pelanggan, webinar, materi kursus, demo produk, dan video talking-head. Alih-alih mencari gelombang suara tempat pembicara mengucapkan kalimat yang salah, editor cukup membaca dokumen dan memperbaikinya seperti naskah. Screen recording, Rooms untuk rekaman jarak jauh, captions, komentar, dan publikasi berada dalam ruang kerja yang sama, sehingga perpindahan antara alat rekam, transkripsi, editor, dan aplikasi review berkurang. Namun konsep ini bukan pengganti universal untuk nonlinear editor tradisional. Ketika proyek membutuhkan color grading rinci, animasi keyframe, compositing berlapis, atau sinkronisasi musik yang sangat presisi, Premiere Pro, Final Cut Pro, dan DaVinci Resolve masih memberi kontrol yang lebih dalam.",
+      "Lapisan AI utamanya sekarang bernama Underlord, agen penyunting yang dapat membaca naskah, menonton video, menyarankan langkah, menerima umpan balik, dan menjalankan banyak revisi sekaligus. Dalam alur nyata, pengguna dapat meminta Underlord memendekkan webinar, memilih bagian yang paling menarik menjadi beberapa klip, menambahkan lower third, menyembunyikan jump cut dengan B-roll, atau merapikan semua jeda dan kata pengisi. Fitur pendukungnya mencakup Studio Sound untuk membersihkan audio, Remove Retakes, Remove Filler Words, Eye Contact, Green Screen, automatic multicam, regenerasi ucapan, voice clone, captions, terjemahan, stok media, serta pembuatan gambar dan video. Ini lebih agentic daripada tombol efek satu kali karena Underlord dapat memutuskan rangkaian tindakan dan menerima revisi lanjutan, tetapi tetap bukan pekerja otonom yang aman dilepas tanpa pemeriksaan. Potongan otomatis dapat membuang jeda yang sebenarnya penting, transkrip dapat keliru pada nama produk, dan klip yang dinilai menarik belum tentu sesuai karakter merek. Nilai tertingginya muncul sebagai penyunting awal yang cepat; keputusan editorial terakhir tetap harus berada pada manusia.",
+      "Harga Descript memakai dua meter sekaligus: jam media yang diproses dan kredit untuk fitur AI. Situs resminya pada Agustus 2026 menawarkan Free seharga USD 0 dengan 1 jam media dan 100 kredit AI per bulan, ekspor 720p tanpa watermark, serta penggunaan terbatas Underlord. Hobbyist berharga USD 16 per orang per bulan bila ditagih tahunan, atau USD 24 secara bulanan, dengan 10 jam media, 400 kredit, dan ekspor 1080p. Creator naik ke USD 24 tahunan atau USD 35 bulanan dengan 30 jam, 800 kredit, ekspor 4K, akses penuh Underlord, lebih dari 20 alat AI, stok media tanpa batas, dan opsi top-up. Business berada di USD 50 tahunan atau USD 65 bulanan dengan 40 jam dan 1.500 kredit per pengguna. Dengan kurs acuan Rp18.000 per dolar, tarif tahunan setara sekitar Rp288 ribu, Rp432 ribu, dan Rp900 ribu per pengguna per bulan. Angka itu kompetitif bila satu editor menghemat beberapa jam kerja, tetapi terasa berat bagi kreator yang hanya menerbitkan satu atau dua video pendek setiap bulan. Paket Free adalah uji kelayakan yang lebih masuk akal daripada langsung mengejar diskon tahunan.",
+      "Untuk pengguna Indonesia, pengujian paling penting bukan demo bahasa Inggris, melainkan satu episode nyata yang berisi Bahasa Indonesia, istilah Inggris, nama lokal, suara ruangan, dan dua pembicara yang kadang tumpang tindih. Periksa akurasi transkrip, titik potong di awal dan akhir kata, captions, serta berapa banyak kredit yang habis setelah Studio Sound dan pembuatan klip dijalankan. Descript unggul atas CapCut ketika konten digerakkan oleh percakapan panjang dan revisi naskah; CapCut lebih cepat untuk template video sosial dan efek siap pakai. OpusClip lebih sederhana untuk memecah video panjang menjadi klip vertikal, tetapi Descript memberi ruang lebih besar untuk menyunting narasi induknya. Riverside kuat pada rekaman jarak jauh, sedangkan Descript lebih lengkap pada tahap penyuntingan setelah rekaman. Tim agency atau corporate communication juga dapat memanfaatkan API dan MCP resmi untuk menghubungkan proses edit dengan asisten AI, walau izin akses serta media sensitif harus diaudit karena layanan ini tidak tersedia untuk self-host. Saran editorial: jalankan proyek pembanding selama dua minggu, catat waktu edit manual yang hilang, jumlah koreksi transkrip, dan kredit per output. Berlangganan hanya jika penghematan waktu mengalahkan biaya dolar dan pemeriksaan manusia tidak berubah menjadi pekerjaan baru."
+    ],
+    link: "https://www.descript.com",
+    linkLabel: "Coba Gratis",
+    date: "2026-08-06",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
