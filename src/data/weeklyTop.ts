@@ -1664,6 +1664,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                 "Setiap node embed V8 dan eksekusi Wrangler bundle langsung — kompatibel dengan ekosistem Cloudflare Workers (TypeScript SDK, module Workers), dan instalasi satu perintah lewat installer resmi dengan provenance verifiable lewat GitHub attestation.",
                               ],
                             },
+                            "goauthentik/authentik": {
+                              description:
+                                "Identity Provider open-source modern untuk SSO enterprise — mendukung SAML, OAuth2/OIDC, LDAP, dan RADIUS, dirancang untuk self-host dari lab kecil sampai cluster produksi besar.",
+                              highlights: [
+                                "Open-source IdP modern yang jadi alternatif langsung untuk Okta, Auth0, Entra ID, dan Ping Identity — 23k+ bintang, dipakai banyak tim untuk lepas dari vendor lock-in SSO.",
+                                "Mendukung protokol utama sekaligus: SAML 2.0, OAuth2, OpenID Connect, LDAP, dan RADIUS — plus proxy untuk aplikasi legacy yang tidak punya flow native, sehingga bisa jadi 'lem autentikasi' tunggal untuk seluruh stack.",
+                                "Deployment fleksibel: Docker Compose untuk setup kecil/test, Helm chart untuk Kubernetes production, plus template AWS CloudFormation dan DigitalOcean Marketplace one-click — jalan dari laptop sampai cluster ribuan user.",
+                                "Self-hostable penuh dengan UI admin lengkap, RBAC, MFA, dan flow kustom lewat property mappings — relevan untuk tim Indonesia yang perlu kontrol identitas internal tanpa ketergantungan vendor cloud identity asing.",
+                              ],
+                            },
+                            "huangruiteng/loopx": {
+                              description:
+                                "State kernel lokal-first untuk tim agen AI long-running — jaga objective, gate, todo, evidence, dan quota tetap stabil sementara Codex, Claude Code, atau runtime lain mengeksekusi bounded turn.",
+                              highlights: [
+                                "Loop engineering control plane untuk agen AI yang kerja berhari-hari atau berminggu-minggu — bukan runtime baru, melainkan lapisan state yang menjaga loop tetap bergerak saat runtime (Codex, Claude Code, Cursor, custom) ganti.",
+                                "Konsep durable state yang jelas: objective, gates, executable todos, evidence log, scope, dan quota-aware auto-wake — sehingga agen tahu kapan harus bertanya ke manusia, kapan boleh lanjut, dan apa yang sudah selesai.",
+                                "Provider-neutral dan loop-agnostic: tidak lock ke satu agen, melainkan jembatan antar-runtime lewat adapter — tim yang mix Codex dan Claude Code bisa pakai state kernel yang sama untuk konsistensi handoff.",
+                                "Local-first dan open (MIT): bukan SaaS yang mengirim data kerja ke cloud, melainkan state kernel yang jalan di mesin sendiri — cocok untuk workflow jangka panjang yang sensitif terhadap kebocoran konteks atau audit.",
+                              ],
+                            },
                           };
 
                                         // Helper: lookup dengan fallback ke template-generated highlights
