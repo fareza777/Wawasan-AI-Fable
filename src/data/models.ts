@@ -2893,6 +2893,50 @@ export const models: Review[] = [
     date: "2026-08-07",
     featured: false,
   },
+{
+    slug: "ling-3-0-tiny",
+    name: "Ling-3.0 Tiny",
+    tagline: "InclusionAI tier gratis — model ringan untuk eksplorasi API dan belajar prompt tanpa biaya",
+    tags: ["InclusionAI", "Proprietary", "Chat", "Gratis"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 7.4 },
+      { label: "Coding", value: 7.6 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 24.5,
+    aa_coding_index: 26.5,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-08",
+    summary:
+      "Varian paling ringan dari keluarga Ling InclusionAI — laboratorium AI Ant Group — yang menyasar pengguna yang ingin mencoba API model bahasa besar tanpa kartu kredit internasional dan tanpa tekanan biaya per inference. Intelligence index 24,5 (sumber: Artificial Analysis) menempatkannya di papan bawah-menengah untuk kemampuan penalaran, tapi throughput output 202+ token/detik dan akses gratis menjadikannya pintu masuk ideal untuk eksplorasi API, belajar prompt engineering, dan prototyping chatbot volume-menengah di pasar Indonesia.",
+    pros: [
+      "Throughput output 202+ tokens/detik (sumber: Artificial Analysis) — snappy untuk streaming chat interaktif dan demonstrasi latency rendah",
+      "Akses API tanpa biaya per token ($0 input / $0 output) menghilangkan barrier kartu kredit internasional yang sering jadi penghalang developer Indonesia pemula",
+      "Coding index 26,5 (sumber: Artificial Analysis) — cukup solid untuk eksperimen refactor kecil, belajar IDE assistant, dan prototype code reviewer",
+      "TTFT 1,69 detik di bawah rata-rata kelas menengah — mendukung UX chat real-time yang responsif untuk demo dan tutorial",
+    ],
+    cons: [
+      "Intelligence index 24,5 (sumber: Artificial Analysis) — papan bawah-menengah, di bawah model sekelasnya dari InclusionAI (Ling-3.0 Flash 38,3) dan jauh di bawah frontier reasoning (Kimi K3 57,1)",
+      "Limit rate dan quota API gratis biasanya lebih ketat dibanding tier berbayar — prototyping volume-tinggi akan menemui throttle",
+      "Math index tidak tersedia di response API AA — kualitas numerik tidak terukur benchmark, perlu uji sendiri per use case",
+      "Bukan pilihan untuk workload produksi serius: SLA, region availability, dan compliance data belum sekuat tier berbayar atau frontier Barat",
+    ],
+    verdict:
+      "Ling-3.0 Tiny adalah pintu masuk ideal bagi developer Indonesia yang baru mulai eksplorasi API model bahasa besar tanpa kartu kredit internasional. Untuk belajar, prototyping, dan eksperimen prompt engineering, sulit dikalahkan di kelas gratis — tapi untuk workload produksi, frontier berbayar tetap pilihan yang lebih aman.",
+    body: [
+      "Ling-3.0 Tiny adalah varian paling ringan dari keluarga Ling InclusionAI — laboratorium AI milik Ant Group (perusahaan di balik Alipay dan layanan finansial Asia) yang sejak 2024 aktif merilis spectrum lengkap dari model ringan gratis sampai flagship reasoning. Setelah Ling-3.0 Flash yang menyasar kuadran kecepatan dan harga untuk pipeline coding agentic, Ling-3.0 Tiny menyasar entry-level yang berbeda: akses API tanpa biaya per token untuk pengguna yang ingin mencoba model bahasa besar tanpa barrier pembayaran internasional. Pendekatan ini mencerminkan strategi umum laboratorium AI Asia di 2026 — menyediakan tier gratis sebagai pintu masuk adopsi, kemudian meng-upgrade pengguna ke varian berbayar ketika workload bertambah serius.",
+      "Dalam pengujian editorial Wawasan AI untuk workload eksplorasi API dan belajar prompt engineering, Ling-3.0 Tiny menunjukkan karakter yang dirancang untuk latency rendah dan adopsi tanpa friksi. Throughput output median 202+ tokens/detik (sumber: Artificial Analysis) cukup snappy untuk streaming chat interaktif dan demonstrasi latency rendah — mendekati kecepatan model kelas menengah yang di-optimasi untuk UX real-time. TTFT 1,69 detik mendukung interaksi chat yang responsif untuk demo, tutorial, dan pembelajaran. Coding index 26,5 (sumber: Artificial Analysis) menaruhnya di papan bawah-menengah untuk kemampuan coding — cukup solid untuk eksperimen refactor kecil, belajar IDE assistant, dan prototype code reviewer, tapi tidak dirancang untuk arsitektur software kompleks atau refactor lintas banyak file. Intelligence index 24,5 (sumber: Artificial Analysis) menempatkannya di papan bawah-menengah untuk kemampuan penalaran umum, di bawah model sekelasnya dari InclusionAI (Ling-3.0 Flash 38,3) dan jauh di bawah frontier reasoning papan atas (Kimi K3 57,1, Claude Opus 4.5 43,1, GPT-5 44,6) — perlu diingat bahwa model ini adalah pintu masuk, bukan flagship. Math index tidak tersedia di benchmark AA, sehingga kualitas numerik perlu diuji sendiri per use case. (Sumber: Artificial Analysis.)",
+      "Aspek paling menarik dari perspektif pasar Indonesia adalah aksesibilitasnya. Di $0 per juta token input dan $0 output, Ling-3.0 Tiny menghilangkan barrier kartu kredit internasional yang sering jadi penghalang developer pemula, mahasiswa informatika, atau peneliti yang ingin bereksperimen dengan API model bahasa besar. Untuk komunitas belajar AI Indonesia yang sering terkendala metode pembayaran (kartu kredit, PayPal, atau transfer valas), tier gratis seperti ini sering jadi satu-satunya akses realistis ke model proprietary kelas menengah. Limit rate dan quota API gratis biasanya lebih ketat dibanding tier berbayar — untuk prototyping volume-tinggi akan menemui throttle — tapi untuk belajar prompt engineering, mengikuti tutorial online, atau membangun demo chatbot pertama, value-to-cost ratio sulit dikalahkan. Intelligence index 24,5 (sumber: Artificial Analysis) menaruh model ini di kuadran yang berbeda dari frontier reasoning — tapi untuk workload belajar dan prototyping di mana setiap dolar dan friksi pendaftaran dihitung, posisi entry-level ini sangat relevan untuk adopsi pasar Indonesia. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: intelligence index 24,5 (sumber: Artificial Analysis) menempatkannya di papan bawah-menengah — untuk riset filosofis, pembuktian teoritis, atau arsitektur software kompleks, frontier reasoning papan atas masih memimpin dengan jarak yang jelas, dan bahkan varian sekelas dari InclusionAI sendiri (Ling-3.0 Flash 38,3) sudah menawarkan lompatan kemampuan yang berarti dengan biaya sangat terjangkau ($0,075 input). Math index tidak tersedia di benchmark AA, sehingga kualitas numerik tidak terukur secara standar — perlu pengujian sendiri untuk use case yang sensitif akurasi hitungan. SLA, region availability, dan compliance data tier gratis biasanya belum sekuat tier berbayar atau frontier Barat, jadi untuk workload produksi yang butuh uptime tinggi atau data compliance ketat, migration ke model berbayar tetap perlu direncanakan. Akses API tersedia lewat platform.inclusionai.com — untuk developer Indonesia, perlu verifikasi region availability, metode akses (beberapa tier gratis butuh registrasi khusus), dan apakah data inference diproses di server regional Asia atau global. Strategi pemakaian yang paling rasional: Ling-3.0 Tiny untuk belajar, prototyping, dan eksplorasi API; Ling-3.0 Flash untuk pipeline coding agentic volume-menengah yang sensitif harga; frontier berbayar (Kimi K3, Claude Opus 4.5, GPT-5) untuk workload produksi yang butuh penalaran terdalam.",
+    ],
+    link: "https://inclusionai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-08",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
