@@ -2449,6 +2449,47 @@ export const stacks: Review[] = [
     date: "2026-08-06",
     featured: false,
   },
+  {
+    slug: "glide-ai",
+    name: "Glide AI",
+    tagline: "Bangun aplikasi bisnis dari spreadsheet tanpa coding",
+    tags: ["Glide", "Freemium", "No-Code/Low-Code", "Business Apps"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 9.0 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Glide menjemput data tim dari Google Sheets, Excel, Airtable, maupun basis data SQL, lalu menyusunnya menjadi aplikasi web dan mobile yang siap pakai lewat antarmuka visual dan instruksi bahasa alami. Komponen AI Generatif, Glide AI Actions, dan asisten percakapan memungkinkan pengguna memanggil fungsi, mengisi formulir, atau merangkum baris tanpa menulis skrip. Hasilnya paling kuat untuk operasional internal, dasbor penjualan, inventaris, hingga direktori internal, namun tetap payah untuk logika rumit dan beban pemakaian tinggi.",
+    pros: [
+      "Onboarding paling landai di kelas no-code: tim yang sudah terbiasa Google Sheets bisa menghasilkan aplikasi dalam satu sore",
+      "Sumber data tetap di spreadsheet atau basis data yang sudah ada, jadi tidak perlu data warehouse baru",
+      "Glide AI Actions memungkinkan panggilan REST API, ringkasan, klasifikasi, dan penerjemahan lewat prompt bahasa alami",
+      "Penerbitan satu klik ke web, PWA, dan native iOS/Android tanpa mengelola App Store sendiri",
+      "Paket Starter gratis untuk eksplorasi, lalu peningkatan ke Maker, Team, Business, dan Enterprise sesuai jumlah editor"
+    ],
+    cons: [
+      "Logika bersarang, transaksi atom, atau kebutuhan audit mendalam masih lebih kuat di Supabase, Retool, atau kode kustom",
+      "Harga per editor pada paket tim menengah dapat melonjak ketika perusahaan dengan banyak pengguna internal daftarkan banyak akun",
+      "Tidak ada self-host; data dan runtime sepenuhnya dijalankan di infrastruktur Glide, isu untuk sektor keuangan atau pertahanan",
+      "Akurasi AI bergantung pada struktur data sumber; spreadsheet berantakan akan menghasilkan perilaku AI yang sama berantakan"
+    ],
+    verdict:
+      "Glide adalah pilihan pragmatis untuk UMKM dan tim operasional yang ingin berhenti menyusun formula Excel berlapis. Kekuatan terbesarnya adalah waktu dari ide ke aplikasi jadi, namun pembaca Indonesia perlu menimbang harga dolar per editor sebelum mendaftarkan seluruh tim.",
+    body: [
+      "Glide berdiri di atas tesis sederhana: banyak kebutuhan aplikasi internal perusahaan sebenarnya adalah bentuk spreadsheet yang lebih cantik. Sejak 2019 platform ini memungkinkan pengguna menyambungkan Google Sheets, Airtable, Excel, atau basis data SQL, lalu menyusunnya menjadi layar aplikasi melalui komponen visual dan logika kondisional. Tambahan AI Generatif pada 2024 dan Glide AI Actions pada 2025 membuat prosesnya semakin sedikit menyentuh ekspresi teknis. Cukup ketik 'buat tombol yang mengirim email ke manajer ketika status berubah menjadi Tertunda', dan asisten menyusun langkah yang relevan. Untuk kasus pemakaian seperti pelacakan inventaris, aplikasi kunjungan sales, dasbor proyek, hingga direktori karyawan, satu operator yang paham alur kerja bisa menghasilkan aplikasi dalam hitungan jam, bukan minggu.",
+      "Secara teknis, Glide membagi dirinya menjadi tiga lapisan. Pertama, data layer yang berbicara dengan sumber spreadsheet atau database eksternal; setiap perubahan di sumber akan tersinkron ke aplikasi secara otomatis. Kedua, design layer berupa kanvas visual tempat pengguna meletakkan komponen seperti tabel, formulir, kartu, kalender, dan grafik. Ketiga, logic layer yang kini semakin agentic lewat Glide AI Actions, memungkinkan panggilan REST API, ringkasan baris, klasifikasi email, atau penjadwalan ulang lewat prompt bahasa alami. Kombinasi ini membuat Glide terasa seperti 'canva untuk aplikasi internal', namun tetap ada batas yang harus dipahami. Logika transaksi atom, branching kompleks, atau kebutuhan RBAC granular masih lebih kuat di Retool, Appsmith, atau kode kustom di Supabase. AI-nya pun tidak menulis aplikasi utuh dari satu kalimat; ia mempercepat pekerjaan yang sudah jelas Strukturnya.",
+      "Paket harga Glide per Agustus 2026 membagi diri menjadi beberapa level. Starter gratis untuk eksplorasi dengan maksimal dua editor dan satu aplikasi, cukup untuk memvalidasi konsep. Maker diharga USD 25 per editor per bulan bila ditagih tahunan dengan aplikasi tidak terbatas, integrasi, dan fitur AI. Team naik ke USD 99 per editor per bulan dengan SSO, kontrol tim, dan kolaborasi yang lebih ketat. Business diharga USD 499 per editor per bulan dengan SLA, audit log, dan prioritas dukungan. Enterprise bersifat kustom. Dengan kurs acuan Rp18.000 per dolar, paket Maker setara sekitar Rp450 ribu per editor per bulan, sementara Tim menyentuh Rp1,8 juta per editor per bulan. Angka ini terasa wajar untuk konsultan atau agency kecil yang menjual aplikasi sebagai produk, tetapi berat bagi UMKM tradisional yang hanya perlu membuat inventaris sederhana. Diskon tahunan menjadi kunci; tagihan bulanan naik sekitar 20 persen.",
+      "Untuk pengguna Indonesia, dua skenario pemakaian paling realistis. Pertama, UMKM dan rintisan yang mengandalkan Google Sheets sebagai tulang punggung operasional, mulai dari kafe yang melacak stok bahan baku, klinik kecil yang mengelola jadwal dokter, hingga toko retail dengan multi-cabang. Glide memungkinkan mereka naik ke aplikasi native dan PWA tanpa rekrut developer, dengan data tetap di Sheets yang sudah familiar. Kedua, tim operasional di perusahaan menengah, seperti sales operation, logistik internal, atau kebutuhan dasbor proyek, yang sering terjebak antara spreadsheet yang berantakan dan software ERP yang terlalu mahal. Glide mengisi celah itu dengan cepat, meski untuk kebutuhan di atas 50 pengguna atau integrasi SAP/Oracle, software enterprise-grade tetap lebih tepat. Saran editorial: mulai dari paket Starter untuk memvalidasi kebutuhan, hitung berapa editor yang benar-benar akan menulis data, lalu baru naik paket tahunan. Untuk yang khawatir soal data residensi, perhatikan bahwa Glide dijalankan di AWS Amerika Serikat per dokumentasi publik; sektor keuangan dan pertahanan sebaiknya melakukan uji tuntas sebelum migrasi data sensitif."
+    ],
+    link: "https://www.glideapps.com",
+    linkLabel: "Coba Gratis",
+    date: "2026-08-07",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
