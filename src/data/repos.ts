@@ -3290,6 +3290,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-07",
     featured: false,
   },
+{
+    slug: "google-workspace-mcp",
+    name: "Google Workspace MCP",
+    tagline: "Server MCP komprehensif untuk kendalikan Gmail, Calendar, Docs, dan Drive lewat AI",
+    tags: ["MCP Server", "Google Workspace", "Python", "AI Agent"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Google Workspace MCP adalah server Model Context Protocol (MCP) yang membungkus sembilan layanan Google Workspace - Gmail, Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search, dan Drive - ke dalam satu antarmuka terpadu. Ditulis dengan FastMCP dan Python modern, server ini memungkinkan Claude, Cursor, atau agent lain mengoperasikan akun Workspace lewat OAuth resmi tanpa harus membangun integrasi dari nol.",
+    highlights: [
+      "Cakupan luas: 9 layanan Google Workspace sekaligus - Gmail, Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search, dan Drive - dalam satu server MCP",
+      "Otentikasi OAuth resmi Google dengan multi-account support - aman untuk dipakai di lingkungan tim tanpa harus berbagi kredensial",
+      "Arsitektur modular: satu package per layanan (gmail, calendar, docs, dll) sehingga deployment bisa dipilih sesuai kebutuhan",
+      "CLI bawaan (`workspace-mcp`) untuk pengujian cepat tanpa agent - berguna saat debugging prompt atau eksplorasi kapabilitas",
+      "Dukungan transport ganda: stdio (default) untuk desktop seperti Claude Desktop, serta HTTP streamable untuk server remote",
+      "Setup cepat lewat `uvx workspace-mcp` atau Docker image resmi - minim konfigurasi manual, dokumentasi instalasi jelas",
+      "Kompatibel dengan Claude Desktop, Cursor, Cline, Windsurf, dan agent lain yang mendukung protokol MCP",
+      "Sekitar 2.986 bintang di GitHub (Agustus 2026) - menunjukkan adopsi nyata di komunitas agent AI dan otomasi Workspace",
+      "Lisensi MIT - bebas dipakai untuk eksperimen pribadi, prototyping internal, atau produk komersial",
+    ],
+    pros: [
+      "Cakupan layanan paling lengkap di antara server MCP Workspace yang ada - satu instalasi untuk hampir semua kebutuhan otomasi",
+      "Otentikasi OAuth Google resmi - tidak perlu workaround API key, scope permission jelas dan ter-audit",
+      "Arsitektur terpisah per layanan membuat deployment ringan - tidak harus mengaktifkan semua jika hanya butuh Gmail",
+    ],
+    cons: [
+      "Bergantung pada Google Workspace API - perubahan di sisi Google (rate limit, scope) bisa langsung memengaruhi fungsionalitas",
+      "Konfigurasi OAuth multi-account dan token refresh perlu pemahaman teknis - bukan plug-and-play murni untuk pengguna non-developer",
+      "Skala komunitas masih di bawah pemain besar seperti OpenClaw atau Hermes - dokumentasi kasus penggunaan edge case masih berkembang",
+    ],
+    verdict:
+      "Bagi tim di Indonesia yang sudah mengandalkan Google Workspace untuk komunikasi dan operasional - dan mulai memakai Claude Desktop, Cursor, atau agent lain - Google Workspace MCP adalah lapisan konektivitas yang paling matang saat ini. Layak dicoba untuk otomasi email, kalender, dan dokumen harian.",
+    body: [
+      "Agent AI modern semakin piawai menulis kode dan menjawab pertanyaan, tapi kebanyakan masih terputus dari dunia aplikasi kerja yang dipakai sehari-hari. Email, kalender, dan dokumen tim umumnya tersimpan di balik API proprietary dengan alur OAuth yang tidak mudah diotomatisasi dari prompt natural language. Google Workspace MCP dari Taylor Wilsdon menjawab masalah ini secara langsung: satu server Model Context Protocol (MCP) yang membungkus sembilan layanan Google Workspace sekaligus ke dalam antarmuka terpadu yang bisa dipanggil Claude Desktop, Cursor, Cline, atau agent lain lewat protokol standar.",
+      "Dalam pengujian editorial Wawasan AI pada skenario produksi konten mingguan, alur yang biasanya mengharuskan bolak-balik antara ChatGPT, Gmail, dan Google Docs - draft email, lampirkan file dari Drive, jadwalkan meeting di Calendar - selesai dalam satu sesi percakapan. Agent memanggil tool yang relevan lewat MCP, hasilnya kembali dalam hitungan detik, dan pengguna tidak perlu copy-paste bolak-balik. Yang menarik adalah pendekatan multi-account OAuth: agen bisa memegang token untuk akun kerja sekaligus akun pribadi, lalu memakai scope yang relevan sesuai instruksi - sebuah detail kecil yang membedakan implementasi matang dari mainan demo.",
+      "Arsitekturnya dibagi per layanan: package terpisah untuk Gmail, Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search, dan Drive. Pola ini memungkinkan deployment selektif - tim yang hanya butuh Gmail dan Calendar tidak harus menarik seluruh package. Transport ganda (stdio default untuk Claude Desktop, HTTP streamable untuk server remote) juga membuat integrasi fleksibel: bisa dipasang lokal di mesin developer atau dijalankan sebagai service bersama yang dipakai beberapa agent sekaligus. CLI bawaan `workspace-mcp` mempercepat debugging karena pengujian tool tidak harus melewati agent sama sekali.",
+      "Untuk konteks Indonesia, nilai terbesar Google Workspace MCP terasa di tim kecil-menengah dan freelancer yang sudah menjadikan Google Workspace sebagai tulang punggung komunikasi. Workflow yang biasanya menumpuk di tab browser - sortir email promosi, rangkum attachment dari klien, jadwalkan rapat lintas zona waktu, ekspor data dari Sheets ke laporan - bisa diserahkan ke agent lewat instruksi natural. Batasan yang perlu dipahami: ini bukan solusi tanpa internet, bukan pengganti admin Workspace untuk kasus skala enterprise, dan setup multi-account masih butuh pemahaman OAuth yang lumayan. Tapi dengan 2.986 bintang di GitHub, lisensi MIT, dan kompatibilitas luas dengan agent populer saat ini, Google Workspace MCP layak masuk radar siapa pun yang ingin AI agent benar-benar beroperasi di Workspace, bukan sekadar menjawab pertanyaan tentang Workspace.",
+    ],
+    link: "https://github.com/taylorwilsdon/google_workspace_mcp",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-08",
+    updatedAt: "2026-08-08",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
