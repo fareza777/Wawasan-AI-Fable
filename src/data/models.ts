@@ -2937,6 +2937,50 @@ export const models: Review[] = [
     date: "2026-08-08",
     featured: false,
   },
+  {
+    slug: "grok-4-5",
+    name: "Grok 4.5 (high)",
+    tagline: "Flagship SpaceXAI — intel 55,8 dan coding 72,4 dengan akses real-time X tetap menjadi pembeda",
+    tags: ["SpaceXAI", "Proprietary", "Reasoning", "Real-time"],
+    score: 8.7,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 8.8 },
+      { label: "Kecepatan", value: 8.4 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 55.8,
+    aa_coding_index: 72.4,
+    aa_price_input: 2,
+    aa_price_output: 6,
+    aa_synced_at: "2026-08-09",
+    summary:
+      "Flagship SpaceXAI per Juli 2026 yang menaikan Grok ke papan atas dunia frontier — intelligence index 55,8 (sumber: Artificial Analysis) sejajar dengan frontier papan atas (Kimi K3 57,1, GPT-5 44,6, Claude Opus 4.5 43,1) dan coding index 72,4 menjadi skor tertinggi kedua setelah Kimi K3 (76,2) di antara model yang sudah diulas Wawasan AI. Bedanya dari frontier Barat: integrasi native dengan X (Twitter) memberi akses real-time ke percakapan publik yang tidak dimiliki model mana pun, sementara harga API $2/$6 per juta token bermain di kelas menengah premium — di bawah Claude Opus 4.5 ($5/$25) tapi di atas GPT-5 ($1,25/$10).",
+    pros: [
+      "Intelligence index 55,8 (sumber: Artificial Analysis) — papan atas dunia frontier, sejajar dengan Kimi K3 (57,1) dan melampaui Claude Opus 4.5 (43,1) serta GPT-5 (44,6)",
+      "Coding index 72,4 (sumber: Artificial Analysis) — skor tertinggi kedua setelah Kimi K3 (76,2) di antara model yang sudah diulas Wawasan AI, memimpin benchmark agentic coding",
+      "Akses real-time X (Twitter) — pembeda unik yang tidak dimiliki frontier Barat: bisa menjawab isu yang baru trending berjam-jam lalu dengan konteks segar, bukan pengetahuan beku dari cutoff data",
+      "Harga API $2 per juta token input dan $6 output — di tengah papan: jauh di bawah Claude Opus 4.5 ($5/$25), kompetitif dengan frontier premium, di atas GPT-5 ($1,25/$10)",
+    ],
+    cons: [
+      "TTFT 12,48 detik cukup tinggi untuk chat interaktif — di atas frontier Barat (Claude Sonnet 4.5 sekitar 1,2 detik) sehingga UX real-time kurang ideal dibanding streaming UI",
+      "Math index tidak tersedia di response API AA — kualitas numerik perlu diuji sendiri per use case spesifik",
+      "Akses data real-time X (Twitter) bisa mengembalikan konten kontroversial atau tidak terverifikasi — perlu prompt engineering ekstra untuk workload korporat atau akademik",
+      "Ekosistem developer di luar X masih muda — integrasi native dengan tool Indonesia (payment gateway, e-commerce) belum sekuat OpenAI atau Anthropic",
+    ],
+    verdict:
+      "Grok 4.5 (high) adalah pilihan menarik untuk developer Indonesia yang butuh penalaran frontier dengan harga lebih terjangkau dari Claude Opus 4.5, plus kemampuan real-time X yang tidak ada di model mana pun. Untuk workload coding agentic, coding index 72,4 menjadikannya salah satu pilihan utama — tapi TTFT 12,48 detik perlu diperhitungkan untuk UX chat interaktif.",
+    body: [
+      "Grok 4.5 (high) adalah flagship terbaru SpaceXAI per Juli 2026, penerus Grok 4 yang sejak 2024 menjadi model real-time dengan integrasi native ke X (Twitter). Bedanya, Grok 4.5 bukan sekadar iterasi numerik — reposisi total ke papan atas frontier. Intelligence index 55,8 (sumber: Artificial Analysis) menaruhnya di papan atas dunia frontier, sejajar dengan Kimi K3 (57,1) dan melampaui Claude Opus 4.5 (43,1) serta GPT-5 (44,6). Coding index 72,4 menjadi skor tertinggi kedua di antara model yang sudah diulas Wawasan AI — di bawah Kimi K3 (76,2) tapi di atas frontier Barat papan atas. Lompatan dari Grok 4 (intel 31,2, coding 32,8) ke Grok 4.5 (intel 55,8, coding 72,4) bukan inkremental — hampir dua kali lipat intelligence index dan 2,2x coding index, mengubah positioning SpaceXAI secara fundamental dari pemain ceruk jadi contender papan atas. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI, Grok 4.5 (high) menunjukkan karakter flagship yang matang untuk workload agentic. Pada benchmark teknis, GPQA 93,1% (sumber: Artificial Analysis) — salah satu skor tertinggi di antara model yang sudah diulas — menaruhnya sejajar dengan frontier papan atas untuk penalaran saintifik. HLE 42,7% (sumber: Artificial Analysis) dan TerminalBench v2.1 81,6% (sumber: Artificial Analysis) mengonfirmasi kapabilitas agentic yang konsisten — keduanya memerlukan kemampuan tool-use multi-langkah dan penalaran berlapis yang menjadi ciri khas frontier papan atas. Yang paling terasa dibanding frontier Barat adalah kombinasi penalaran murni (tanpa beban multimodal) dengan optimasi agentic — seperti Kimi K3, Grok 4.5 bukan model generik yang ditambahi tool, melainkan model yang dirancang dari bawah untuk alur kerja agentic. Throughput output median 49,8 tokens/detik cukup untuk pipeline agentic real-time, meski TTFT 12,48 detik relatif lebih lambat dari frontier Barat — untuk chat interaktif yang sensitif latency, ini bisa terasa. (Sumber: Artificial Analysis.)",
+      "Pembeda paling kuat Grok 4.5 dibanding frontier mana pun adalah akses real-time X (Twitter). Untuk pertanyaan tentang isu yang baru trending berjam-jam lalu — termasuk topik yang sedang viral di Indonesia seperti kebijakan pemerintah, kasus viral, atau peluncuran produk — Grok 4.5 bisa menjawab dengan konteks segar, bukan dari cutoff data latihan. Ini bukan fitur kosmetik — untuk riset opini publik, pemantauan sentimen media sosial, atau sekadar menjawab pertanyaan terkini, kapabilitas ini sulit ditiru frontier Barat yang cutoff datanya berbulan-bulan. Untuk developer Indonesia yang sering butuh jawaban tentang isu lokal yang baru ramai, ini modalitas yang nyata nilainya. Soal harga, Grok 4.5 bermain di kelas menengah premium: $2 per juta token input dan $6 output — di bawah Claude Opus 4.5 ($5/$25) dan Claude Sonnet 5, tapi di atas GPT-5 ($1,25/$10) dan Kimi K3 ($3/$15). Untuk pipeline yang butuh keseimbangan antara kapabilitas frontier dan harga kompetitif, posisi ini menarik. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: TTFT 12,48 detik relatif tinggi untuk chat interaktif — di atas frontier Barat yang sering di bawah 1,5 detik, sehingga UX chat real-time kurang ideal dibanding Claude atau GPT. Math index tidak tersedia di benchmark AA, jadi kualitas numerik perlu diuji sendiri per use case spesifik. Akses data real-time X (Twitter) bisa mengembalikan konten kontroversial, tidak terverifikasi, atau bias — untuk workload korporat, akademik, atau pemerintahan, perlu prompt engineering ekstra (instructions ISO, chain-of-thought verification, atau filter kata kunci) supaya output tidak mengembuskan risiko reputasi. Akses API tersedia lewat platform.x.ai (SpaceXAI) — untuk developer Indonesia, verifikasi region availability dan payment method (kartu kredit internasional) sebelum adopsi produksi. Strategi pemakaian yang paling rasional: Grok 4.5 untuk workload agentic coding yang sensitif terhadap coding index 72,4, riset opini publik real-time, dan pipeline yang butuh keseimbangan harga-kapabilitas; Kimi K3 (76,2) untuk coding agentic yang butuh skor coding tertinggi; Claude Opus 4.5 untuk workload yang butuh integrasi ecosystem Anthropic paling matang.",
+    ],
+    link: "https://x.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-09",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
