@@ -2826,6 +2826,56 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "rincian-inovasi-sandisk-di-fms-2026-dari-bics10-qlc-nand-hingga-ssd-enterprise",
+    title: "Sandisk di FMS 2026: Saat Penyimpanan Menjadi Urat Nadi Kedua AI",
+    excerpt:
+      "Peluncuran BiCS10 QLC NAND dan lini SSD enterprise Sandisk di FMS 2026 menandai bahwa memori, bukan cip komputasi, kini jadi titik kritis infrastruktur AI modern.",
+    category: "Analisis",
+    date: "2026-08-09",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau selama dua tahun terakhir narasi infrastruktur AI hampir selalu berputar di sekitar cip komputasi — GPU, akselerator, dan seberapa besar kluster yang bisa didirikan — maka Future of Memory and Storage 2026 (FMS 26) di Santa Clara bulan ini membalik prioritas itu. Sandisk memperkenalkan portofolio NAND terbaru yang dirancang bukan untuk konsumen umum, melainkan untuk menahan arus data yang dihasilkan oleh model agentic AI dan model bahasa dengan context window yang sangat panjang.",
+          "Pesan yang mereka bawa jelas: di titik ini, kemampuan menyimpan, memindahkan, dan mengakses data secara efisien sudah sama pentingnya dengan kemampuan komputasi itu sendiri. Bukan hiperbola pabrikan — ini adalah konfirmasi atas bottleneck yang sudah lama dirasakan oleh tim infrastruktur data center di seluruh dunia, termasuk di Indonesia yang sedang membangun kluster AI dan HPC-nya sendiri.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya dipamerkan Sandisk di FMS 2026",
+        paragraphs: [
+          "Fokus utama peluncuran Sandisk di FMS 2026 bukan satu produk tunggal, melainkan empat lapisan teknologi yang saling menopang. Lapisan pertama adalah BiCS10 QLC NAND — generasi kesepuluh dari teknologi 3D NAND mereka — dengan peningkatan densitas dan konsumsi daya per bit yang lebih efisien. QLC (Quad-Level Cell) menyimpan empat bit per sel, dan di BiCS10 generasi ini latensi serta endurance-nya diklaim mendekati TLC untuk beban kerja AI yang read-heavy.",
+          "Lapisan kedua adalah lini SSD enterprise kelas atas yang dirancang khusus untuk menahan beban data lake berkecepatan tinggi, penyimpanan model dasar (foundation models), dan KV cache untuk inference. KV cache adalah memori yang menyimpan key-value attention dari konteks yang sedang diproses model — dan konsumsi memorinya tumbuh linier dengan panjang context window. Untuk model dengan context window 1 juta token, KV cache per sesi bisa memakan puluhan gigabyte dan harus berada di storage yang responsif.",
+          "Lapisan ketiga adalah teknologi HBF (High Bandwidth Flash) — konsep arsitektur yang dibahas dalam panel kolaboratif bersama Google dan SK Hynix. HBF dirancang untuk menyatukan keunggulan bandwidth HBM dengan kapasitas dan biaya per bit yang lebih menguntungkan ala NAND. Kalau HBF berhasil masuk produksi massal dalam dua-tiga tahun ke depan, dia akan menjadi kandidat kuat untuk menggantikan sebagian peran HBM di inference accelerator — yang saat ini menjadi komponen paling mahal dan paling langka di lini GPU.",
+          "Lapisan keempat adalah optimasi untuk workload spesifik AI: Retrieval-Augmented Generation (RAG), vector store, dan pipeline agentic yang membaca-menulis dataset dalam jumlah masif secara bersamaan. Sandisk tidak hanya menjual media penyimpanan, tapi juga menyediakan profil firmware dan referensi desain yang disesuaikan dengan pola akses workload AI modern — pendekatan yang mulai umum di kalangan vendor storage enterprise.",
+        ],
+      },
+      {
+        heading: "Kenapa konteks panjang dan agen AI mengubah arsitektur storage",
+        paragraphs: [
+          "Untuk memahami kenapa peluncuran ini penting, kita perlu mundur sebentar ke cara kerja model bahasa modern. Model dengan context window panjang — ratusan ribu hingga jutaan token — menyimpan representasi internal dari seluruh percakapan atau dokumen yang sedang diproses. Representasi itu (KV cache) harus bisa diakses sangat cepat selama inference, dan harus dipindahkan dari satu perangkat ke perangkat lain saat inference dijalankan terdistribusi.",
+          "Implikasinya untuk storage: SSD yang dipakai untuk KV cache harus punya latensi rendah dan IOPS tinggi, bukan hanya kapasitas besar. SSD untuk dataset training harus punya throughput sekuensial tinggi dan harga per GB yang masuk akal. Dan SSD untuk vector store RAG harus bisa menangani pola akses acak dengan ukuran kecil yang sangat sering. Ketiga kebutuhan ini sebelumnya sering dianggap serupa, padahal sebenarnya sangat berbeda — dan vendor storage enterprise kini berlomba menyediakan SKU yang optimal untuk masing-masing.",
+          "Untuk agen AI yang otonom, tantangannya lebih besar lagi. Agen yang menjalankan riset mendalam, menyusun laporan, atau mengotomasi alur kerja bisnis akan membaca-menulis data dalam jumlah besar secara berulang sepanjang sesi yang bisa berlangsung berjam-jam. Itu berarti storage tidak hanya menangani satu query, tapi harus mempertahankan keadaan sesi yang konsisten, recoverable, dan tahan terhadap kegagalan perangkat. Pola penggunaan seperti ini belum pernah ada di skala sebesar ini sebelumnya.",
+        ],
+      },
+      {
+        heading: "Konteks Indonesia: data center, hyperscaler, dan komputasi lokal",
+        paragraphs: [
+          "Untuk Indonesia, peluncuran ini punya implikasi yang lebih dekat dari yang terlihat di permukaan. Pertama, untuk hyperscaler dan operator data center yang melayani pasar Asia Tenggara: kemampuan storage untuk workload AI akan menjadi pembeda kompetitif dalam dua tahun ke depan. Pelanggan enterprise yang mulai menjalankan model AI sensitif — misalnya di sektor keuangan, kesehatan, dan pemerintahan — akan menanyakan tidak hanya soal kapasitas, tapi juga soal arsitektur storage yang menopang workload spesifik mereka. Penyedia yang punya roadmap jelas untuk HBF dan SSD enterprise kelas AI akan lebih mudah menjawab pertanyaan itu.",
+          "Kedua, untuk komunitas yang menjalankan model lokal — komunitas open-source yang mengoperasikan Ollama, llama.cpp, dan framework inference lokal di server sendiri di Indonesia — berita tentang SSD enterprise yang lebih efisien datang di saat yang tepat. Pelajaran langsung yang bisa diambil: kalau saat ini kamu menjalankan model 70B di server dengan dua GPU dan storage NVMe standar, perhatikan profil workload inference kamu. Untuk penggunaan dengan context window panjang atau banyak sesi paralel, berpindah ke SSD dengan endurance dan IOPS lebih tinggi bisa memberikan perbaikan latency per token yang terukur — bukan sekadar marketing.",
+          "Ketiga, untuk startup dan integrator lokal yang menyediakan layanan AI untuk UMKM dan korporasi: arsitektur storage sering menjadi komponen yang paling diabaikan dalam proposal solusi AI. Klien cenderung fokus pada model mana yang dipakai dan berapa banyak GPU, tapi lupa bahwa storage adalah komponen yang paling sering gagal diam-diam. Memahami perbedaan antara TLC dan QLC, antara NVMe standar dan enterprise, dan antara SSD consumer dan data center, adalah pengetahuan yang akan membedakan integrator yang serius dari yang sekadar menempel label 'AI' di penawaran mereka.",
+        ],
+      },
+      {
+        heading: "Yang patut diperhatikan dalam satu-dua tahun ke depan",
+        paragraphs: [
+          "Ada empat hal yang akan menentukan apakah peluncuran Sandisk di FMS 2026 menjadi titik balik industri atau hanya satu siklus upgrade biasa. Pertama, perhatikan apakah HBF benar-benar bisa diproduksi massal dengan harga yang mendekati NAND tradisional. Sampai itu terjadi, HBF akan tetap menjadi konsep menarik yang hanya relevan untuk hyperscaler dengan budget besar. Kedua, perhatikan apakah endurance BiCS10 QLC generasi ini cukup untuk beban tulis intensif AI. Endurance selalu menjadi kelemahan historis QLC dibanding TLC, dan klaim mendekati TLC perlu dibuktikan di beban kerja nyata selama beberapa tahun.",
+          "Yang ketiga, perhatikan apakah vendor GPU dan inference accelerator akan mulai mengintegrasikan SSD langsung ke dalam arsitektur referensi mereka — mirip dengan bagaimana HBM saat ini disolder langsung ke GPU. Kalau itu terjadi, NAND SSD akan naik kelas dari komponen periferal menjadi bagian integral dari arsitektur komputasi. Yang keempat, dan paling relevan untuk Indonesia: perhatikan apakah akan muncul penyedia data center lokal yang menawarkan konfigurasi storage yang dioptimalkan untuk workload AI, dengan harga yang masuk akal untuk pasar ASEAN. Saat ini pilihan itu masih terbatas; kalau ekosistem lokal bisa menyediakan, itu akan menjadi katalisator bagi adopsi AI enterprise yang lebih serius di Indonesia.",
+          "Dalam pengujian editorial Wawasan AI, peluncuran Sandisk di FMS 2026 layak dibaca bukan sebagai acara peluncuran produk pabrikan memori, melainkan sebagai penanda bahwa industri AI sudah cukup matang untuk masuk ke fase optimasi mendalam di lapisan infrastruktur. Untuk profesional infrastruktur, arsitek solusi AI, dan siapapun yang bertanggung jawab atas keputusan teknologi di organisasi mereka, ini adalah pengingat bahwa cerita AI modern tidak hanya ditentukan oleh model mana yang dipakai, tapi juga oleh bagaimana data disimpan, dipindahkan, dan diakses pada setiap lapisan sistem. Seperti banyak infrastruktur teknologi sebelumnya, kemenangan di lapisan bawahlah yang sering menentukan apakah aplikasi di atasnya bisa bekerja dengan andal — dan FMS 2026 adalah pengingat bahwa kita sudah memasuki fase di mana lapisan bawah itu menjadi sangat, sangat penting.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
