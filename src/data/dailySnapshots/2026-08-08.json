@@ -1,28 +1,17 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "Hari ini",
-  "period": null,
+  "periodLabel": "8 Agustus 2026",
+  "period": {
+    "date": "2026-08-08",
+    "label": "8 Agustus 2026",
+    "path": "/repo/daily/2026/08/08"
+  },
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-08T03:09:50.889Z",
+  "fetchedAt": "2026-08-08T00:14:52.846Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "Paritok-official/paritok-4b-v1",
-      "owner": "Paritok-official",
-      "repo": "paritok-4b-v1",
-      "description": "The first open-source compression model trained specifically for coding agents. 4B, Apache 2.0.",
-      "githubUrl": "https://github.com/Paritok-official/paritok-4b-v1",
-      "trendshiftUrl": "https://trendshift.io/repositories/87852",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-07-15T10:23:15Z"
-    },
-    {
-      "rank": 2,
       "fullName": "PrimeIntellect-ai/prime-agent",
       "owner": "PrimeIntellect-ai",
       "repo": "prime-agent",
@@ -37,111 +26,135 @@
       "dateCreated": "2026-05-08T01:42:41Z"
     },
     {
-      "rank": 3,
-      "fullName": "aceberg/WatchYourLAN",
-      "owner": "aceberg",
-      "repo": "WatchYourLAN",
-      "description": "Lightweight network IP scanner written in Go. With notifications, history, export to Grafana",
-      "githubUrl": "https://github.com/aceberg/WatchYourLAN",
-      "trendshiftUrl": "https://trendshift.io/repositories/11642",
-      "language": "Go",
-      "topics": [
-        "Monitoring"
-      ],
-      "dateCreated": "2022-08-15T04:58:22Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "magicrew/doc7",
-      "owner": "magicrew",
-      "repo": "doc7",
-      "description": "Turn documents into AI-ready Markdown with visual understanding",
-      "githubUrl": "https://github.com/magicrew/doc7",
-      "trendshiftUrl": "https://trendshift.io/repositories/102709",
-      "language": "Go",
+      "rank": 2,
+      "fullName": "firecrawl/anydoc",
+      "owner": "firecrawl",
+      "repo": "anydoc",
+      "description": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.",
+      "githubUrl": "https://github.com/firecrawl/anydoc",
+      "trendshiftUrl": "https://trendshift.io/repositories/103044",
+      "language": "Rust",
       "topics": [
         "Document processing"
       ],
-      "dateCreated": "2026-08-02T14:03:55Z"
+      "dateCreated": "2026-08-03T16:36:14Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "githubUrl": "https://github.com/addyosmani/agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25200",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-15T20:20:26Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "TapXWorld/ChinaTextbook",
+      "owner": "TapXWorld",
+      "repo": "ChinaTextbook",
+      "description": "所有小初高、大学PDF教材。",
+      "githubUrl": "https://github.com/TapXWorld/ChinaTextbook",
+      "trendshiftUrl": "https://trendshift.io/repositories/13769",
+      "language": "Roff",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2020-01-05T04:11:06Z"
     },
     {
       "rank": 5,
-      "fullName": "huohua325/Memslides",
-      "owner": "huohua325",
-      "repo": "Memslides",
-      "description": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.",
-      "githubUrl": "https://github.com/huohua325/Memslides",
-      "trendshiftUrl": "https://trendshift.io/repositories/81080",
-      "language": "Python",
+      "fullName": "TencentCloud/TencentDB-Agent-Memory",
+      "owner": "TencentCloud",
+      "repo": "TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "githubUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "trendshiftUrl": "https://trendshift.io/repositories/29310",
+      "language": "TypeScript",
       "topics": [
         "AI agent",
         "AI memory"
       ],
-      "dateCreated": "2026-05-03T03:02:21Z"
+      "dateCreated": "2026-04-07T06:34:26Z"
     },
     {
       "rank": 6,
-      "fullName": "Fenng/Tech-Doc-Style-Chinese",
-      "owner": "Fenng",
-      "repo": "Tech-Doc-Style-Chinese",
-      "description": "Yet another reusable writing skill for Chinese technical documentation and product copy.",
-      "githubUrl": "https://github.com/Fenng/Tech-Doc-Style-Chinese",
-      "trendshiftUrl": "https://trendshift.io/repositories/105868",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-04-12T13:14:56Z"
+      "fullName": "ZzzLc0405/photo-abstract-editorial",
+      "owner": "ZzzLc0405",
+      "repo": "photo-abstract-editorial",
+      "description": "",
+      "githubUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial",
+      "trendshiftUrl": "https://trendshift.io/repositories/105215",
+      "topics": [
+        "AI image generation",
+        "Image editing"
+      ],
+      "dateCreated": "2026-08-04T09:35:31Z"
     },
     {
       "rank": 7,
-      "fullName": "magnitudedev/magnitude",
-      "owner": "magnitudedev",
-      "repo": "magnitude",
-      "description": "Releases for the Magnitude coding agent",
-      "githubUrl": "https://github.com/magnitudedev/magnitude",
-      "trendshiftUrl": "https://trendshift.io/repositories/79752",
+      "fullName": "cloudflare/cloudflare-os",
+      "owner": "cloudflare",
+      "repo": "cloudflare-os",
+      "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+      "githubUrl": "https://github.com/cloudflare/cloudflare-os",
+      "trendshiftUrl": "https://trendshift.io/repositories/103883",
+      "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "AI coding assistant"
+        "AI agent"
       ],
-      "dateCreated": "2026-06-12T09:06:26Z"
+      "dateCreated": "2026-04-15T22:22:53Z"
     },
     {
       "rank": 8,
-      "fullName": "opa334/Dopamine",
-      "owner": "opa334",
-      "repo": "Dopamine",
-      "description": "Dopamine is a semi-untethered jailbreak for iOS 15 and 16",
-      "githubUrl": "https://github.com/opa334/Dopamine",
-      "trendshiftUrl": "https://trendshift.io/repositories/7784",
-      "language": "C",
-      "topics": [],
-      "dateCreated": "2023-01-31T21:28:44Z"
+      "fullName": "MiniMax-AI/MiniMax-H3",
+      "owner": "MiniMax-AI",
+      "repo": "MiniMax-H3",
+      "description": "",
+      "githubUrl": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "trendshiftUrl": "https://trendshift.io/repositories/103885",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2026-07-30T08:41:09Z"
     },
     {
       "rank": 9,
-      "fullName": "xoreaxeaxeax/asm-hall-of-shame",
-      "owner": "xoreaxeaxeax",
-      "repo": "asm-hall-of-shame",
-      "description": "Racing to the bottom of CPU performance",
-      "githubUrl": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
-      "trendshiftUrl": "https://trendshift.io/repositories/106254",
-      "language": "C",
-      "topics": [],
-      "dateCreated": "2026-08-06T00:08:06Z"
+      "fullName": "goauthentik/authentik",
+      "owner": "goauthentik",
+      "repo": "authentik",
+      "description": "The authentication glue you need.",
+      "githubUrl": "https://github.com/goauthentik/authentik",
+      "trendshiftUrl": "https://trendshift.io/repositories/2905",
+      "language": "Python",
+      "topics": [
+        "Authentication",
+        "Self-hosted"
+      ],
+      "dateCreated": "2019-12-30T09:19:48Z"
     },
     {
       "rank": 10,
-      "fullName": "ronaldo-avalos/Maya",
-      "owner": "ronaldo-avalos",
-      "repo": "Maya",
-      "description": "🖥️ 📱 ▶️ Wrap your iPhone screen recordings in a beautiful device frame, add cinematic zoom moments, and export ready-to-share videos.",
-      "githubUrl": "https://github.com/ronaldo-avalos/Maya",
-      "trendshiftUrl": "https://trendshift.io/repositories/32056",
-      "language": "Swift",
+      "fullName": "huangruiteng/loopx",
+      "owner": "huangruiteng",
+      "repo": "loopx",
+      "description": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs.",
+      "githubUrl": "https://github.com/huangruiteng/loopx",
+      "trendshiftUrl": "https://trendshift.io/repositories/102379",
+      "language": "Python",
       "topics": [
-        "Video editing"
+        "AI agent",
+        "AI workflow"
       ],
-      "dateCreated": "2026-05-17T04:00:39Z"
+      "dateCreated": "2026-05-31T14:58:56Z"
     }
   ]
 }

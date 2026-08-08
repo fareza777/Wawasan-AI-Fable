@@ -1675,18 +1675,48 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                               ],
                             },
                             "huangruiteng/loopx": {
-                              description:
-                                "State kernel lokal-first untuk tim agen AI long-running — jaga objective, gate, todo, evidence, dan quota tetap stabil sementara Codex, Claude Code, atau runtime lain mengeksekusi bounded turn.",
-                              highlights: [
-                                "Loop engineering control plane untuk agen AI yang kerja berhari-hari atau berminggu-minggu — bukan runtime baru, melainkan lapisan state yang menjaga loop tetap bergerak saat runtime (Codex, Claude Code, Cursor, custom) ganti.",
-                                "Konsep durable state yang jelas: objective, gates, executable todos, evidence log, scope, dan quota-aware auto-wake — sehingga agen tahu kapan harus bertanya ke manusia, kapan boleh lanjut, dan apa yang sudah selesai.",
-                                "Provider-neutral dan loop-agnostic: tidak lock ke satu agen, melainkan jembatan antar-runtime lewat adapter — tim yang mix Codex dan Claude Code bisa pakai state kernel yang sama untuk konsistensi handoff.",
-                                "Local-first dan open (MIT): bukan SaaS yang mengirim data kerja ke cloud, melainkan state kernel yang jalan di mesin sendiri — cocok untuk workflow jangka panjang yang sensitif terhadap kebocoran konteks atau audit.",
-                              ],
-                            },
-                          };
+                                                          description:
+                                                            "State kernel lokal-first untuk tim agen AI long-running — jaga objective, gate, todo, evidence, dan quota tetap stabil sementara Codex, Claude Code, atau runtime lain mengeksekusi bounded turn.",
+                                                          highlights: [
+                                                            "Loop engineering control plane untuk agen AI yang kerja berhari-hari atau berminggu-minggu — bukan runtime baru, melainkan lapisan state yang menjaga loop tetap bergerak saat runtime (Codex, Claude Code, Cursor, custom) ganti.",
+                                                            "Konsep durable state yang jelas: objective, gates, executable todos, evidence log, scope, dan quota-aware auto-wake — sehingga agen tahu kapan harus bertanya ke manusia, kapan boleh lanjut, dan apa yang sudah selesai.",
+                                                            "Provider-neutral dan loop-agnostic: tidak lock ke satu agen, melainkan jembatan antar-runtime lewat adapter — tim yang mix Codex dan Claude Code bisa pakai state kernel yang sama untuk konsistensi handoff.",
+                                                            "Local-first dan open (MIT): bukan SaaS yang mengirim data kerja ke cloud, melainkan state kernel yang jalan di mesin sendiri — cocok untuk workflow jangka panjang yang sensitif terhadap kebocoran konteks atau audit.",
+                                                          ],
+                                                        },
+                                                                      "Significant-Gravitas/AutoGPT": {
+                                                                        description:
+                                                                          "Platform open-source legendaris (186k+ bintang) untuk membangun dan menjalankan agen AI otonom yang 'menyelesaikan pekerjaan', bukan cuma chat — definisi asli 'AutoGPT' yang dipakai jutaan developer sejak 2023.",
+                                                                        highlights: [
+                                                                          "Agen AI visioner yang jadi tonggak era 'LLM sebagai autonomous worker' — pakai GPT-4/Claude lewat tool chain untuk rencanakan, eksekusi, dan laporkan hasil tanpa supervisi manusia per langkah.",
+                                                                          "Sekarang berevolusi jadi platform lengkap dengan builder agent (tanpa kode), marketplace workflow siap pakai, dan 'AutoGPT Server' yang menjalankan banyak agen paralel di cloud atau self-host.",
+                                                                          "Misi mereka yang konsisten dari awal: 'AI agents that finish the work' — bukan demo mengagumkan, melainkan asisten yang benar-benar selesaikan tugas nyata (riset, coding, scraping, copywriting) lalu lapor balik.",
+                                                                          "186k+ bintang GitHub dan Discord besar menjadikannya salah satu proyek agentik AI paling dikenal di dunia — referensi wajib untuk siapa saja yang ingin paham sejarah dan arsitektur platform agen modern.",
+                                                                        ],
+                                                                      },
+                                                                      "openchamber/openchamber": {
+                                                                        description:
+                                                                          "Workspace open-source lintas-perangkat (desktop, browser, editor, mobile) untuk menjalankan, mengawasi, dan me-review pekerjaan coding agent — 'mission control' untuk Claude Code, Codex, dan OpenCode.",
+                                                                        highlights: [
+                                                                          "Bukan sekadar GUI chat: OpenChamber adalah workspace yang menyatukan eksekusi agen, review diff, dan persetujuan perubahan di desktop, browser PWA, editor VS Code, dan mobile — ganti perangkat, sesi tetap nyambung.",
+                                                                          "Fitur 'Session Goals' yang menjadi pembeda: agen diberi target, lalu terus kerja menutup loop sampai selesai, terblokir, atau mencapai limit — walau aplikasi ditutup, agent tetap jalan di cloud sampai target tercapai.",
+                                                                          "Multi-run sampai 5 model paralel (masing-masing di worktree sendiri) plus mode 'Fusion' yang gabungkan hasil terbaik — jawaban untuk 'model mana yang terbaik' lewat komparasi langsung, bukan asumsi.",
+                                                                          "Dilengkapi VS Code extension, PWA, dan iOS/Android client; open source (MIT) dengan Discord aktif — relevan untuk tech lead Indonesia yang supervise banyak coding agent dari mana saja tanpa terikat satu workstation.",
+                                                                        ],
+                                                                      },
+                                                                      "magicrew/doc7": {
+                                                                        description:
+                                                                          "CLI ringan (Go) untuk konversi dokumen apa pun — PDF, Office, scan, screenshot, chart, rumus — jadi Markdown siap konsumsi AI lewat model multimodal OpenAI-compatible lokal (LM Studio/Ollama), tanpa lock-in OCR service.",
+                                                                        highlights: [
+                                                                          "Pendekatan 'AI-ready Markdown' lewat model multimodal kamu sendiri: tidak ada dependensi OCR stack vendor, tidak ada layanan pihak ketiga — tinggal tunjuk endpoint LM Studio/Ollama lokal, doc7 yang ubah dokumen jadi Markdown terstruktur.",
+                                                                          "Kuat di dokumen yang biasanya jadi batu sandungan pipeline RAG: layout kompleks, tabel multi-halaman, rumus, chart, screenshot tulisan tangan, sampai diagram — output terstruktur yang bisa di-search, di-quote, dan di-reason oleh LLM.",
+                                                                          "Konsep 'docling done right' — CLI sederhana dengan `doc7 report.pdf` sebagai perintah utama, plus mode batch dan watcher folder untuk otomasi pipeline ingest; benchmark pada paper 'Attention Is All You Need' menunjukkan output berkualitas tinggi pada halaman raster-only tanpa text layer.",
+                                                                          "MIT-licensed, distribusi lintas-platform (Linux/macOS/Windows), relevan untuk engineer RAG Indonesia yang memproses dokumen akademis, legal, atau laporan PDF kompleks tanpa bayar Adobe Extract atau layanan cloud lain.",
+                                                                        ],
+                                                                      },
+                                                      };
 
-                                        // Helper: lookup dengan fallback ke template-generated highlights
-                                        export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
-                                          return WEEKLY_TOP[fullName];
-                                        }
+                            // Helper: lookup dengan fallback ke template-generated highlights
+                            export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
+                              return WEEKLY_TOP[fullName];
+                            }

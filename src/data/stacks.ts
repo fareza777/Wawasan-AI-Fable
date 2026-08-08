@@ -2490,6 +2490,47 @@ export const stacks: Review[] = [
     date: "2026-08-07",
     featured: false,
   },
+  {
+    slug: "factory-ai",
+    name: "Factory AI",
+    tagline: "Agen coding Droids yang otonom menangani tugas engineering end-to-end",
+    tags: ["Factory", "Freemium", "Agent Platform", "Enterprise"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.7 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 7.7 },
+    ],
+    summary:
+      "Factory AI menjual konsep 'Droids', agen otonom yang bisa dipasang di repositori, IDE, terminal, atau Slack untuk mengerjakan tiket, menulis kode, menarik PR, dan memperbaiki error CI. Pendekatan agent-native berbeda dari asisten one-shot: setiap Droids memiliki peran spesifik, memori proyek, dan akses ke toolchain lengkap. Paling kuat di tim engineering enterprise yang ingin mendelegasikan pekerjaan repetitif seperti refactor, migrasi, dan code review otomatis.",
+    pros: [
+      "Arsitektur Droids memungkinkan beberapa agen paralel dengan peran berbeda, bukan satu agen yang menebak konteks",
+      "Integrasi mendalam dengan GitHub, GitLab, Jira, Linear, Slack, dan IDE populer lewat MCP dan webhook",
+      "Code review otomatis dengan diff kontekstual yang bisa langsung dikomentari lewat Slack",
+      "Self-host tersedia untuk perusahaan dengan persyaratan kepatuhan data ketat",
+      "Tersedia paket gratis dengan batasan untuk eksplorasi individu"
+    ],
+    cons: [
+      "Harga enterprise tidak dipublikasikan, perlu kontak sales untuk organisasi besar",
+      "Setup awal di repositori besar memerlukan konfigurasi permission dan CI yang tidak trivial",
+      "Kurva belajar menulis 'mission brief' yang efektif untuk Droids masih cukup tinggi",
+      "Dokumentasi public lebih fokus ke marketing dibanding tutorial langkah demi langkah"
+    ],
+    verdict:
+      "Factory AI adalah pilihan menarik untuk tim engineering yang sudah siap menerima agen otonom sebagai anggota tim virtual. Standar implementasi Droids cukup matang untuk pengujian pilot, namun pengguna Indonesia perlu memperhitungkan kurs dolar dan kesiapan pipeline CI sebelum adopsi luas.",
+    body: [
+      "Factory AI berdiri di atas tesis bahwa asisten AI generik tidak cukup untuk pekerjaan engineering profesional. Sejak muncul sebagai startup San Francisco, mereka mengembangkan konsep Droids, agen otonom yang diberi peran spesifik seperti Code Reviewer, Refactor Specialist, atau Migration Engineer, lalu ditempatkan di repositori, IDE, terminal, atau bahkan Slack. Hasilnya bukan autocomplete atau chat one-shot, melainkan rekan kerja virtual yang bisa menerima tiket dari Jira, menarik branch, menulis implementasi, menjalankan tes, dan membuka pull request yang siap review manusia. Untuk tim yang sudah memiliki pipeline CI/CD matang, Droids langsung menyatu sebagai anggota tim yang bisa ditugaskan pekerjaan repetitif.",
+      "Secara teknis, Factory membedakan dirinya lewat tiga lapisan. Pertama, Droids adalah entitas persisten dengan memori proyek yang terus menumpuk, bukan sesi chat yang hilang setiap kali. Kedua, integrasi lewat Model Context Protocol (MCP), webhook, dan CLI membuat agen bisa membaca state repositori, membuka PR, menulis komentar, atau memicu pipeline eksternal. Ketiga, orkestrasi beberapa Droids secara paralel, misalnya satu agen menulis kode sementara yang lain menulis tes dan yang ketiga memperbarui dokumentasi, memberikan throughput yang tidak mungkin dicapai satu agen one-shot. Arsitektur ini menarik secara teori, namun dalam praktik pengguna perlu menulis mission brief yang jelas agar Droids tidak berputar-putar menyelesaikan masalah yang salah.",
+      "Paket harga Factory per Agustus 2026 membagi diri menjadi beberapa level. Free tersedia untuk eksplorasi individu dengan batasan jumlah eksekusi per bulan. Pro dihargai sekitar USD 20 per pengguna per bulan dengan eksekusi lebih banyak dan integrasi penuh. Enterprise bersifat kustom dengan dukungan self-host, kontrol akses granular, dan SLA khusus. Dengan kurs acuan Rp18.000 per dolar, paket Pro setara sekitar Rp360 ribu per pengguna per bulan, angka yang masuk untuk developer individu atau tim kecil. Namun untuk perusahaan dengan ratusan engineer, harga enterprise bisa menyentuh empat digit dolar per kursi per tahun, dan angka ini sering menjadi titik gesekan dengan procurement yang terbiasa dengan per-seat SaaS konvensional. Diskon tahunan dan negosiasi multi-tahun menjadi penting untuk menekan total biaya.",
+      "Untuk pengguna Indonesia, dua skenario pemakaian paling realistis. Pertama, startup teknologi dan scale-up yang memiliki pipeline CI/CD sudah berjalan, misalnya tim yang sudah memakai GitHub Actions, GitLab CI, atau Jenkins, dan ingin mendelegasikan pekerjaan repetitif seperti update dependensi, migrasi framework, atau penulisan tes unit. Droids sangat cocok di sini karena alur kerja sudah jelas dan PR bisa langsung di-review. Kedua, perusahaan konsultasi IT dan software house yang menangani banyak proyek paralel, di mana Code Reviewer Droids bisa menjadi asisten reviewer pertama sebelum kode sampai ke senior engineer. Saran editorial: mulai dari paket Free untuk membuktikan nilai pada satu repositori kecil, ukur berapa jam engineering yang benar-benar terhemat, lalu baru putuskan naik paket Pro atau menghubungi sales untuk Enterprise. Untuk industri keuangan, kesehatan, atau pemerintahan yang memiliki persyaratan residensi data, opsi self-host Factory patut dieksplorasi sejak awal percakapan, karena retrofitted ke on-premise setelah kontrak SaaS matang biasanya mahal dan melelahkan."
+    ],
+    link: "https://factory.ai/",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-08",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
