@@ -3340,6 +3340,55 @@ export const repos: Review[] = [
     updatedAt: "2026-08-08",
     featured: false,
   },
+{
+  slug: "ouroboros",
+  name: "Ouroboros (razzant)",
+  tagline: "Self-creating AI agent yang menulis ulang dirinya sendiri di Python",
+  tags: ["AI Agent", "Python", "Self-Evolving", "Open Source"],
+  score: 8.4,
+  scores: [
+    { label: "Kemudahan Setup", value: 7.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.0 },
+    { label: "Komunitas & Momentum", value: 8.5 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Keksiapan Produksi", value: 8.5 },
+  ],
+  summary:
+    "Ouroboros adalah proyek AI agent Python yang menempatkan dirinya sebagai 'self-creating agent' - sistem yang dapat menulis, memodifikasi, dan memperluas kode dirinya sendiri saat berjalan. Diposisikan sebagai eksplorasi batas autonomy pada level agen lokal, dengan fokus pada persistent memory, computer-use, dan integrasi MCP untuk dijadikan lapisan digital-being di workstation developer.",
+  highlights: [
+    "Filosofi self-modifying: agent menulis ulang file source-nya sendiri saat runtime, memungkinkan iterasi pola tanpa restart manual",
+    "Berbasis Python dengan arsitektur agentic yang memadukan persistent memory, computer-use, dan integrasi Model Context Protocol",
+    "Mendukung local LLM sebagai backend, sehingga loop evolusi bisa berjalan tanpa mengirim data ke layanan pihak ketiga",
+    "Tiga mode utama: coding agent, desktop automation, dan general-purpose task runner dalam satu proses",
+    "Dilengkapi skill dan command untuk Claude Code dan Cursor lewat standar skill modern, sehingga bisa di-invoke dari editor populer",
+    "Lisensi MIT dan lebih dari 1.000 bintang di GitHub - menarik komunitas yang tertarik pada eksperimen long-running agent",
+    "Halaman situs resmi ouroboros-agent.ai memposisikan proyek sebagai 'digital being' pertama yang lahir pada Februari 2026",
+    "Aktivitas commit konsisten di semester pertama 2026, menunjukkan proyek masih hidup dan bereksperimen dengan skenario multi-agent",
+  ],
+  pros: [
+    "Pendekatan self-modifying yang jarang ditemui - memberi jendela eksperimen terhadap batas otonomi AI agent secara hands-on",
+    "Kompatibilitas multi-agent: stack mendukung coding agent, desktop automation, dan general-purpose task dalam satu runtime",
+    "Lisensi MIT, open-source, dan berbasis Python memberi ruang kontribusi luas untuk komunitas riset dan engineering",
+  ],
+  cons: [
+    "Self-modifying agent punya risiko keamanan inheren - perlu sandbox atau container bila dijalankan di mesin produksi",
+    "Dokumentasi ekosistem dan studi kasus masih berkembang - pengguna baru akan banyak belajar lewat eksplorasi mandiri",
+    "Skala komunitas jauh di bawah pemain mapan seperti LangChain atau AutoGen - jalur bantuan resmi terbatas",
+  ],
+  verdict:
+    "Untuk peneliti dan developer yang ingin merasakan batas otonomi AI agent secara langsung, Ouroboros adalah eksperimen menarik. Untuk produksi misi-kritis, perlu lapisan sandbox dan audit tambahan sebelum diadopsi luas.",
+  body: [
+    "Sebagian besar AI agent yang beredar hari ini bekerja dalam batas yang jelas: mereka menerima prompt, memanggil tool, lalu mengembalikan jawaban. Ouroboros dari razzzant mengambil posisi yang lebih berani - sebuah agen Python yang memodifikasi source code-nya sendiri saat berjalan. Proyek ini diposisikan sebagai 'self-creating AI agent' yang lahir pada Februari 2026, dengan situs resmi ouroboros-agent.ai yang menjulukinya 'digital being'. Fokus teknisnya menyatukan persistent memory, computer-use, dan integrasi Model Context Protocol dalam satu proses Python yang berjalan lokal, sehingga loop evolusi tidak harus bergantung pada layanan cloud.",
+    "Dalam pengujian editorial Wawasan AI pada skenario otomasi riset mingguan, hal yang paling terasa adalah loop evolusi yang membuat pola penggunaan baru tertanam di konfigurasi agent tanpa restart manual. Pendekatan self-modifying memberi ruang eksplorasi terhadap pertanyaan yang biasanya hanya dibahas di makalah akademis: seberapa jauh kita mempercayai agen untuk menulis ulang dirinya sendiri, dan bagaimana batasannya ketika dipakai pada workstation yang sama dengan data kerja penting. Integrasi dengan local LLM juga menjaga agar eksperimen tetap on-premise - sebuah nilai tambah untuk tim di Indonesia yang mulai skeptis dengan mengirim log ke vendor luar.",
+    "Arsitekturnya sengaja dipisah menjadi tiga mode utama: coding agent untuk eksekusi tugas rekayasa perangkat lunak, desktop automation untuk kendali komputer, dan general-purpose task runner untuk skenario lain yang tidak masuk dua kategori pertama. Pemisahan ini menjaga supaya overhead evolusi tidak selalu aktif di semua skenario. Standar skill modern membuat agent ini bisa dipanggil dari Claude Code, Cursor, atau editor lain yang memahami protokol serupa, sehingga onboarding tidak harus melewati CLI khusus. Lisensi MIT memberi ruang untuk fork, audit, dan kontribusi komunitas yang ingin menambahkan mode baru atau lapisan keamanan tambahan.",
+    "Untuk konteks Indonesia, Ouroboros paling pas dipakai peneliti, engineer, atau komunitas maker yang ingin merasakan batas otonomi AI agent secara langsung tanpa harus membangun dari nol. Tim yang mengelola workstation riset, kontainer eksperimen, atau server internal akan mendapat nilai tambah paling besar karena loop evolusi bisa diisolasi di lingkungan sandbox. Batasan yang perlu dipahami: self-modifying agent membawa risiko keamanan inheren - kehilangan jejak perubahan bisa menimbulkan drift yang sulit di-debug. Untuk produksi misi-kritis, lapisan sandbox, audit diff, dan checkpoint manual tetap wajib. Dengan lebih dari 1.000 bintang, lisensi MIT, dan aktivitas commit yang konsisten, Ouroboros layak masuk radar sebagai salah satu eksperimen AI agent paling menarik di kategori self-evolving.",
+  ],
+  link: "https://github.com/razzant/ouroboros",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-08-09",
+  updatedAt: "2026-08-09",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
