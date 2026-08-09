@@ -2531,6 +2531,46 @@ export const stacks: Review[] = [
     date: "2026-08-08",
     featured: false,
   },
+{
+    slug: "frase",
+    name: "Frase",
+    tagline: "Platform SEO plus GEO untuk konten yang muncul di Google dan dikutip AI",
+    tags: ["Frase", "Paid", "Content Marketing", "SEO"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.3 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 7.9 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "Frase adalah platform konten yang awalnya dikenal sebagai Content Brief generator, lalu berevolusi menjadi content operating system dengan loop lengkap: riset SERP, kluster topik, draft dengan brand voice, optimasi SEO dan GEO, sampai hosting lewat FraseCMS. Pivot terbesar di 2025 adalah fokus Generative Engine Optimization, yaitu membuat konten tidak hanya ranking di Google tapi dikutip oleh ChatGPT, Google AI Overviews, Perplexity, Claude, dan Gemini lewat pelacakan visibilitas AI yang bisa dilihat per artikel. Untuk tim konten dan agency yang ingin satu workflow dari riset sampai publikasi, Frase menawarkan konsolidasi yang sebelumnya harus dirangkai dari beberapa alat terpisah.",
+    pros: [
+      "Loop riset, tulis, optimasi, publikasi dalam satu platform tanpa harus pindah antar aplikasi",
+      "Pelacakan visibilitas AI di ChatGPT, Google AI Overviews, Perplexity, Claude, dan Gemini menjadi pembeda utama dibanding tool SEO tradisional",
+      "Brand Voice belajar dari artikel existing sehingga draft tidak terasa generik",
+      "Topic Clusters memetakan peluang kata kunci di sekitar entitas bisnis, bukan hanya variasi long-tail",
+      "Integrasi publish native ke WordPress, Webflow, Sanity, dan Wix lewat FraseCMS",
+    ],
+    cons: [
+      "Harga paket Solo USD 49 per bulan month-to-month atau USD 39 yearly cukup tinggi untuk freelancer Indonesia",
+      "Batas 10 artikel per bulan di Solo terasa ketat untuk publisher yang menulis banyak konten",
+      "GEO Optimization masih indikator heuristik, bukan sinyal ranking langsung dari mesin AI",
+    ],
+    verdict:
+      "Frase adalah pilihan solid untuk tim konten dan agency yang serius main di SEO plus GEO di 2026. Untuk pengguna solo di Indonesia, paket Solo sudah masuk akal kalau konten adalah sumber penghasilan utama, namun ekspektasi ROI perlu diuji dari kuota 10 artikel dulu.",
+    body: [
+      "Frase berdiri di atas tesis bahwa workflow konten modern harus menjawab dua mesin sekaligus: Google tradisional dan mesin jawaban AI generatif. Sejak awal 2020-an Frase dikenal sebagai Content Brief generator yang membaca SERP, mengekstrak pertanyaan dari People Also Ask, dan menyusun outline artikel dalam hitungan menit. Evolusi 2024-2026 mengubahnya menjadi content operating system yang menjalankan loop penuh: Listen (pantau apa yang ditanyakan pengunjung), Create (riset SERP, kluster topik, AI agent draft dengan brand voice), Optimize (SEO score, GEO optimization, Site Audit), Publish (FraseCMS), sampai Monitor (AI Visibility di berbagai mesin AI). Pendekatan ini berbeda dari tool SEO tradisional yang berhenti di skor optimasi on-page, dan berbeda dari AI writer generik yang tidak punya koneksi ke data SERP real time.",
+      "Secara teknis, lima fitur menonjol menentukan positioning Frase di 2026. Pertama, SERP Research menarik 20-30 halaman ranking teratas dan merangkum kata kunci, pertanyaan, entitas, dan panjang konten yang umumnya ranking. Kedua, AI Visibility adalah metrik baru yang melacakan apakah artikel Anda dikutip atau dirujuk oleh ChatGPT, Google AI Overviews, Perplexity, Claude, dan Gemini, dengan skor terpisah per engine. Ketiga, GEO Optimization memberikan saran struktur dan markup agar mesin AI lebih mudah mengutip, mulai dari definisi ringkas di paragraf pembuka sampai daftar bullet dan FAQ. Keempat, Topic Clusters memetakan peluang kata kunci turunan dari satu pillar topik, membantu tim konten merencanakan kalender editorial dari data bukan firasat. Kelima, Frase Answers adalah widget percakapan gratis yang bisa dipasang di situs untuk menangkap pertanyaan pengunjung sekaligus melatih model dengan konten Anda.",
+      "Paket harga Frase per Agustus 2026 membagi diri menjadi empat tier utama. Free seharga USD 0 per bulan dengan Frase subdomain dan bandwidth 25GB untuk hosting via FraseCMS. Solo USD 39 per bulan billed yearly atau USD 49 month-to-month, dengan 1 seat, 1 domain, 10 artikel per bulan, dan 50 audit pages. Professional paling populer di USD 103 per bulan yearly atau USD 129 month-to-month, dengan 3 seats, 5 domain, 40 artikel, 250 audit pages, plus AI Visibility untuk ChatGPT dan Google AI, Content Guard untuk pantau decay 3 halaman, dan kalender konten. Scale naik ke 5 seats, 10 domain, 100 artikel, dan 1000 audit pages, plus AI Visibility untuk Perplexity, Claude, dan Gemini. Extra seat dijual USD 29 per bulan. Dengan kurs acuan Rp18.000 per dolar, paket Solo setara sekitar Rp700-880 ribu per bulan, angka yang signifikan untuk freelancer Indonesia. Bandingkan dengan Surfer SEO di sekitar USD 89 per bulan atau Semrush SEO Writing Assistant yang masuk paket Semrush Pro USD 139 per bulan, positioning Frase cukup kompetitif di tier entry namun lebih mahal dari tool AI writer murni seperti Jasper atau Copy.ai yang tidak punya SERP research.",
+      "Untuk pengguna Indonesia, dua skenario pemakaian paling realistis. Pertama, agency SEO dan content marketing yang mengelola banyak klien dan butuh konsolidasi workflow dalam satu platform. Frase sangat cocok di sini karena Topic Clusters, AI Visibility per domain, dan Frase Answers bisa dipakai untuk kebutuhan multi-klien, dan harga Scale USD 200-an per bulan masih masuk akal kalau dipakai untuk 5-10 klien. Kedua, in-house content team di startup atau korporasi yang ingin eksperimen dengan GEO tanpa harus build tooling sendiri. Skenario ketiga, lebih ambisius, publisher yang ingin monetisasi via FraseCMS dan Frase Answers karena hosting di Frase termasuk unlimited di semua tier berbayar. Saran editorial: manfaatkan 7 hari free trial untuk produksi 2-3 artikel pendek, ukur skor GEO dan AI Visibility, baru putuskan apakah Solo cukup atau perlu naik ke Professional. Untuk blogger atau freelancer dengan volume di bawah 10 artikel per bulan, paket Solo bisa jadi batas maksimal, dan Frase bersaing ketat dengan Writesonic, Surfer AI, atau ChatGPT Team dalam kategori harga ini.",
+    ],
+    link: "https://www.frase.io/",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-09",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

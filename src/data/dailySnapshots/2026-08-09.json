@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "9 Agustus 2026",
+  "period": {
+    "date": "2026-08-09",
+    "label": "9 Agustus 2026",
+    "path": "/repo/daily/2026/08/09"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-09T00:05:33.388Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "PrimeIntellect-ai/prime-agent",
+      "owner": "PrimeIntellect-ai",
+      "repo": "prime-agent",
+      "description": "Prime Agent is a self-improving RLM agent that can be used for coding workflows, or even long-running autonomous tasks.",
+      "githubUrl": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/104249",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-08T01:42:41Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "MiniMax-AI/MiniMax-H3",
+      "owner": "MiniMax-AI",
+      "repo": "MiniMax-H3",
+      "description": "",
+      "githubUrl": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "trendshiftUrl": "https://trendshift.io/repositories/103885",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2026-07-30T08:41:09Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "magnitudedev/magnitude",
+      "owner": "magnitudedev",
+      "repo": "magnitude",
+      "description": "Releases for the Magnitude coding agent",
+      "githubUrl": "https://github.com/magnitudedev/magnitude",
+      "trendshiftUrl": "https://trendshift.io/repositories/79752",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T09:06:26Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "rasbt/LLMs-from-scratch",
+      "owner": "rasbt",
+      "repo": "LLMs-from-scratch",
+      "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "githubUrl": "https://github.com/rasbt/LLMs-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/7329",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "NLP",
+        "Programming examples"
+      ],
+      "dateCreated": "2023-07-23T18:15:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "google/skills",
+      "owner": "google",
+      "repo": "skills",
+      "description": "Agent Skills for Google products and technologies",
+      "githubUrl": "https://github.com/google/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/28047",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-31T19:02:20Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "githubUrl": "https://github.com/addyosmani/agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25200",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-15T20:20:26Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "floci-io/floci",
+      "owner": "floci-io",
+      "repo": "floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "githubUrl": "https://github.com/floci-io/floci",
+      "trendshiftUrl": "https://trendshift.io/repositories/25152",
+      "language": "Java",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-02-18T02:28:29Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "goauthentik/authentik",
+      "owner": "goauthentik",
+      "repo": "authentik",
+      "description": "The authentication glue you need.",
+      "githubUrl": "https://github.com/goauthentik/authentik",
+      "trendshiftUrl": "https://trendshift.io/repositories/2905",
+      "language": "Python",
+      "topics": [
+        "Authentication",
+        "Self-hosted"
+      ],
+      "dateCreated": "2019-12-30T09:19:48Z"
+    }
+  ]
+}
