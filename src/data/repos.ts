@@ -3389,6 +3389,55 @@ export const repos: Review[] = [
   updatedAt: "2026-08-09",
   featured: false,
 },
+{
+  slug: "vibe-coding-prompt-template",
+  name: "Vibe Coding Prompt Template",
+  tagline: "Template prompt dan workflow untuk PRD, Tech Design, dan MVP dari AI IDE",
+  tags: ["AI Workflow", "Prompt Engineering", "Python", "Developer Tools"],
+  score: 8.3,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 8.5 },
+    { label: "Komunitas & Momentum", value: 8.5 },
+    { label: "Dokumentasi", value: 8.0 },
+    { label: "Keksiapan Produksi", value: 8.0 },
+  ],
+  summary:
+    "Vibe Coding Prompt Template (Vibeworkflow) adalah kumpulan template prompt dan alur kerja yang membantu developer mengubah ide mentah menjadi PRD, Tech Design, MVP, dan artefak engineering lainnya lewat AI IDE seperti Claude Code atau Cursor. Repo ini fokus pada hal yang sering dilupakan: struktur dokumen, urutan prompt, dan guardrail kualitas yang konsisten antar sesi.",
+  highlights: [
+    "Koleksi template siap pakai untuk PRD, Tech Design, MVP, dan dokumen engineering lainnya",
+    "Workflow terstruktur: dari ide mentah, brief, hingga spesifikasi siap implementasi",
+    "Terintegrasi dengan AI IDE populer: Claude Code, Cursor, Windsurf, dan editor lain yang menerima prompt system",
+    "Claude Code Skills (.claude/skills) dan Claude Skills siap pakai untuk dipasang ulang",
+    "Pendekatan beginner-friendly dengan dokumentasi bertahap yang mudah diikuti developer baru",
+    "Topik resmi mencakup prompt engineering, vibe coding, AI workflow, dan low-code MVP development",
+    "Lisensi MIT dan dapat di-fork untuk template internal tim atau perusahaan",
+    "Komunitas aktif lewat issues dan diskusi workflow prompt engineering modern",
+  ],
+  pros: [
+    "Template langsung pakai: hemat waktu untuk tim yang sering membuat PRD atau Tech Design",
+    "Standarisasi format dokumen antar anggota tim atau lintas proyek",
+    "Cocok untuk engineering manager, solo founder, atau developer Indonesia yang sering memakai vibe coding",
+  ],
+  cons: [
+    "Bergantung penuh pada kualitas model AI yang dipakai di IDE",
+    "Butuh penyesuaian untuk domain spesifik (fintech, healthtech, dll) yang punya regulasi ketat",
+    "Belum mencakup validasi output otomatis di luar pola dokumen",
+  ],
+  verdict:
+    "Pilihan pragmatis untuk developer dan tim yang ingin membawa vibe coding ke level lebih terstruktur. Bukan framework besar, tapi toolkit ringan yang langsung memotong waktu pengerjaan dokumen awal proyek.",
+  body: [
+    "Vibe Coding Prompt Template lahir dari kegelisahan yang sama yang dirasakan banyak developer Indonesia: vibe coding memang cepat, tapi tanpa template yang konsisten, setiap sesi menghasilkan dokumen dengan format berbeda dan sulit di-review. Repo ini mencoba menjawab dengan menyediakan kumpulan template siap pakai yang bisa langsung dipasang di Claude Code, Cursor, atau AI IDE lain - semuanya ber-LISENSI MIT dan open untuk fork sesuai kebutuhan internal tim.",
+    "Dalam pengujian editorial Wawasan AI, alur yang paling terasa bermanfaat adalah ketika kita meminta template untuk menghasilkan PRD dari brief satu paragraf: hasilnya kembali lengkap dengan section problem statement, goals, non-goals, user story, hingga metrik keberhasilan. Template Tech Design dan MVP mengikuti pola serupa dengan struktur yang bisa langsung dioper ke engineer atau stakeholder teknis lain. Pendekatan ini memotong waktu pengerjaan dokumen awal proyek dari hitungan jam menjadi hitungan menit.",
+    "Arsitektur repo sengaja dibuat ringan: tidak ada layanan backend, tidak ada runtime berat, tidak ada dependensi yang harus diinstal. Seluruh workflow berbasis file markdown dan instruksi prompt yang tinggal di-copy ke AI IDE. Claude Code Skills dan Claude Skills juga sudah disiapkan sehingga developer yang sudah memakai Claude Code bisa langsung menambahkan kemampuan baru lewat folder .claude/skills. Developer Indonesia yang terbiasa dengan Claude Code atau Cursor akan menemukan onboarding-nya sangat singkat.",
+    "Untuk konteks Indonesia, repo ini sangat relevan bagi startup stage awal, tim produk kecil, atau freelancer yang sering diminta klien untuk membuat dokumen teknis sebelum eksekusi. Dengan lebih dari 2.800 bintang di GitHub, lisensi MIT, dan topik yang sesuai dengan tren vibe coding 2026, Vibe Coding Prompt Template layak masuk radar sebagai salah satu toolkit pendukung workflow AI paling praktis untuk developer lokal. Batasan yang perlu dipahami: template hanya membantu struktur dan kualitas prompt - validasi terhadap regulasi spesifik industri tetap di tangan pengguna.",
+  ],
+  link: "https://github.com/KhazP/vibe-coding-prompt-template",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-08-10",
+  updatedAt: "2026-08-10",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
