@@ -2981,6 +2981,50 @@ export const models: Review[] = [
     date: "2026-08-09",
     featured: false,
   },
+{
+    slug: "deepseek-v4-flash",
+    name: "DeepSeek V4 Flash 0731",
+    tagline: "DeepSeek value king baru — coding 69,1 dan 108 token/detik dengan harga paling murah di kelas papan atas",
+    tags: ["DeepSeek", "Open Weight", "Reasoning", "Value"],
+    score: 8.8,
+    scores: [
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 8.7 },
+      { label: "Kecepatan", value: 8.6 },
+      { label: "Harga/Performa", value: 9.4 },
+    ],
+    aa_intelligence_index: 51.8,
+    aa_coding_index: 69.1,
+    aa_price_input: 0.14,
+    aa_price_output: 0.28,
+    aa_synced_at: "2026-08-10",
+    summary:
+      "Varian Flash terbaru DeepSeek yang dirilis 31 Juli 2026 — intelligence index 51,8 (sumber: Artificial Analysis) menembus papan atas dunia frontier, sejajar dengan Grok 4.5 (55,8) dan di atas Claude Opus 4.5 (43,1) serta GPT-5 (44,6). Bedanya, DeepSeek V4 Flash 0731 harganya $0,14 input dan $0,28 output per juta token — sekitar 14x lebih murah dari Claude Opus 4.5 ($5/$25) dan 3x lebih murah dari DeepSeek V3.x sendiri ($0,40/$2), sambil mempertahankan coding index 69,1 (sumber: Artificial Analysis) yang menjadi salah satu skor tertinggi di antara model yang sudah diulas Wawasan AI.",
+    pros: [
+      "Intelligence index 51,8 (sumber: Artificial Analysis) — menembus papan atas dunia frontier, sejajar dengan Grok 4.5 (55,8) dan melampaui Claude Opus 4.5 (43,1) serta GPT-5 (44,6)",
+      "Coding index 69,1 (sumber: Artificial Analysis) — skor tertinggi ketiga di antara model yang sudah diulas Wawasan AI, di bawah Kimi K3 (76,2) dan Grok 4.5 (72,4); memimpin benchmark agentic coding untuk kelas value-tier",
+      "Throughput output median 108,6 token/detik (sumber: Artificial Analysis) — salah satu yang tercepat di kelas papan atas, ideal untuk streaming UX real-time dan pipeline agentic volume-tinggi",
+      "Harga API paling agresif di kelas papan atas: $0,14 input / $0,28 output per 1M token — 3x lebih murah dari DeepSeek V3.x ($0,40/$2), 14x lebih murah dari Claude Opus 4.5 ($5/$25), menjadikan inference frontier feasible untuk workload volume-tinggi",
+    ],
+    cons: [
+      "Intelligence index 51,8 (sumber: Artificial Analysis) masih di bawah reasoning flagship papan atas (Kimi K3 57,1) — untuk penalaran terdalam (riset filosofis, pembuktian teoritis), gap beberapa poin masih terasa",
+      "Math index tidak tersedia di response API AA — kualitas numerik perlu diuji sendiri per use case spesifik, terutama untuk workload finansial atau saintifik",
+      "Akses API DeepSeek sempat mengalami lonjakan trafik dan rate-limit di rilis-rilis besar — untuk pipeline produksi volume-tinggi, perlu strategi fallback ke model value-tier alternatif",
+      "Ekosistem enterprise masih muda dibanding frontier Barat — integrasi native dengan tool korporat Indonesia (ERP lokal, payment gateway spesifik) belum sekuat OpenAI atau Anthropic",
+    ],
+    verdict:
+      "DeepSeek V4 Flash 0731 adalah pilihan rasional untuk developer Indonesia yang butuh kapabilitas papan atas tanpa harga papan atas. Untuk pipeline coding agentic, RAG volume-tinggi, dan chat interaktif yang sensitif latency serta harga, value-to-cost ratio sulit dikalahkan — 3x lebih murah dari DeepSeek V3.x sendiri sambil menembus intel 51,8.",
+    body: [
+      "DeepSeek V4 Flash 0731 adalah varian Flash terbaru keluarga V4 DeepSeek, dirilis 31 Juli 2026 sebagai penerus V3.x yang sejak awal 2025 mengubah kalkulasi biaya inference di pasar model bahasa besar. Varian Flash sengaja menyasar kuadran berbeda dari flagship reasoning — arsitektur yang di-optimasi untuk latency rendah dan throughput tinggi sambil mempertahankan kemampuan penalaran kelas papan atas. Intelligence index 51,8 (sumber: Artificial Analysis) menembus papan atas dunia frontier untuk pertama kalinya di lini value-tier DeepSeek, sejajar dengan Grok 4.5 (55,8) dan di atas Claude Opus 4.5 (43,1) serta GPT-5 (44,6). Coding index 69,1 (sumber: Artificial Analysis) menjadi skor tertinggi ketiga di antara model yang sudah diulas Wawasan AI, hanya di bawah Kimi K3 (76,2) dan Grok 4.5 (72,4) — memimpin benchmark agentic coding untuk kelas harga rendah. Lompatan dari DeepSeek V3.x (intel 39,2, coding 45,6) ke V4 Flash 0731 (intel 51,8, coding 69,1) merupakan reposisi fundamental — bukan sekadar iterasi, melainkan transisi lini V4 dari value-tier menjadi contender papan atas dengan harga yang tetap di value-tier. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic volume-tinggi, DeepSeek V4 Flash 0731 menunjukkan karakter yang dirancang untuk latensi rendah dan throughput tinggi. Throughput output median 108,6 token/detik (sumber: Artificial Analysis) menaruhnya di papan atas kecepatan untuk kelas API papan atas — bukan yang tercepat absolut (Ling-3.0 Flash memimpin dengan 328+ token/detik), tapi cukup snappy untuk streaming UX real-time dan pipeline agentic. TTFT 0,999 detik (sumber: Artificial Analysis) mendukung interaksi chat interaktif yang sensitif latency, mendekati kelas model kecil yang di-optimasi khusus untuk UX real-time. Coding index 69,1 (sumber: Artificial Analysis) menjadi nilai jual utama untuk workload refactor multi-file, code review, dan bantuan IDE agentic — solid untuk arsitektur software menengah-atas tanpa harus melompat ke kelas reasoning flagship yang jauh lebih mahal. Intelligence index 51,8 (sumber: Artificial Analysis) menaruhnya di papan atas untuk penalaran umum, di bawah reasoning flagship (Kimi K3 57,1) tapi sejajar dengan Grok 4.5 (55,8) dan di atas frontier Barat papan atas — untuk workload harian yang butuh keseimbangan antara kapabilitas dan harga, posisi ini sangat menarik. Math index tidak tersedia di benchmark AA, sehingga kualitas numerik perlu diuji sendiri per use case spesifik. (Sumber: Artificial Analysis.)",
+      "Aspek paling transformatif dari perspektif pasar Indonesia adalah harganya. Di $0,14 per juta token input dan $0,28 output, DeepSeek V4 Flash 0731 bukan sekadar sedikit lebih murah dari DeepSeek V3.x ($0,40/$2) — melainkan 3x lebih murah, sambil menembus intel 51,8 dan coding 69,1 yang sebelumnya hanya bisa dicapai oleh model dengan harga 5-25x lebih tinggi. Sebagai perbandingan: Claude Opus 4.5 dijual $5/$25 per juta token (35x lebih mahal di input), GPT-5 $1,25/$10 (9x lebih mahal di input), Kimi K3 (flagship value) $3/$15 (21x lebih mahal di input). Untuk pipeline yang memanggil model ribuan kali per hari — chat agent customer service, code assistant IDE, summarization massal, atau RAG retrieval-augmented generation — selisih kumulatif ini langsung terasa bagi developer dan tim Indonesia yang menghitung dolar per inference. Kombinasi intel 51,8 + coding 69,1 + 108 tps + $0,14/$0,28 menjadikan V4 Flash 0731 sebagai value king baru yang mengubah kalkulasi kapan harus memilih model mahal versus kapan model value-tier sudah cukup. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: intelligence index 51,8 (sumber: Artificial Analysis) masih di bawah reasoning flagship papan atas (Kimi K3 57,1) — untuk riset filosofis, pembuktian teoritis, atau workload penalaran terdalam yang butuh reasoning chain panjang, gap beberapa poin masih terasa, dan flagship reasoning (Kimi K3, Claude Opus 5 max) tetap memimpin. Math index tidak tersedia di benchmark AA, sehingga kualitas numerik tidak terukur standar — untuk workload finansial, akuntansi, atau saintifik yang sensitif akurasi hitungan, perlu pengujian sendiri sebelum adopsi produksi. Akses API DeepSeek sempat mengalami lonjakan trafik dan rate-limit di rilis-rilis besar — untuk pipeline produksi volume-tinggi yang butuh SLA ketat, perlu strategi fallback (misal ke Qwen 3 atau GLM) atau self-host V4 Flash 0731 yang open-weight. Ekosistem enterprise masih muda dibanding frontier Barat — integrasi native dengan tool korporat Indonesia (ERP lokal, payment gateway spesifik, sistem perbankan) belum sekuat OpenAI atau Anthropic. Akses API tersedia lewat platform.deepseek.com — untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional atau crypto yang diterima), dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: DeepSeek V4 Flash 0731 untuk pipeline coding agentic volume-tinggi, RAG retrieval-augmented generation, chat interaktif latency-sensitif, dan summarization massal; Kimi K3 atau Claude Opus 5 max untuk workload penalaran terdalam; DeepSeek V3.x untuk self-host atau workload yang butuh kedaulatan data penuh.",
+    ],
+    link: "https://www.deepseek.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-10",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
