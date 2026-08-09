@@ -1713,7 +1713,28 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                                           "Konsep 'docling done right' — CLI sederhana dengan `doc7 report.pdf` sebagai perintah utama, plus mode batch dan watcher folder untuk otomasi pipeline ingest; benchmark pada paper 'Attention Is All You Need' menunjukkan output berkualitas tinggi pada halaman raster-only tanpa text layer.",
                                                                           "MIT-licensed, distribusi lintas-platform (Linux/macOS/Windows), relevan untuk engineer RAG Indonesia yang memproses dokumen akademis, legal, atau laporan PDF kompleks tanpa bayar Adobe Extract atau layanan cloud lain.",
                                                                         ],
-                                                                      },
+                                                                      }
+                                                      ,
+                                                                    "pascalorg/editor": {
+                                                                      description:
+                                                                        "Editor 3D arsitektur open-source (19k+ bintang, MIT) berbasis React Three Fiber + WebGPU — bikin dan share proyek arsitektur 3D langsung di browser, plus CLI + MCP service untuk coding agent.",
+                                                                      highlights: [
+                                                                        "Editor 3D arsitektur yang berjalan di browser lewat React Three Fiber + WebGPU — pengguna bisa bikin dan share proyek bangunan 3D tanpa install software berat, lengkap dengan collision detection, lighting, dan material library.",
+                                                                        "Distribusi modern: `npx @pascal-app/cli editor` mulaiin editor dan authenticated MCP service di background lewat persistent local install (Node 22.13+) — folder proyek disimpan di ~/.pascal/data/pascal.db, port collision-free dipilih otomatis.",
+                                                                        "Arsitektur monorepo Turborepo dengan paket terpisah (core, viewer, editor, nodes) — npm-publishable, siap dipasang ke app Next.js manapun lewat `<Viewer>` + `loadPlugin(builtinPlugin)`, plus TypeScript SDK untuk integrasi custom.",
+                                                                        "Cocok untuk developer Indonesia yang ingin tooling arsitektur/real-estate visual ringan di web, atau buat tim AI yang butuh editor 3D yang sudah punya MCP surface — bukan sekadar viewer, melainkan authoring tool yang siap diotomasi agent.",
+                                                                      ],
+                                                                    },
+                                                                    "harry0703/MoneyPrinterTurbo": {
+                                                                      description:
+                                                                        "Tool open-source (100k+ bintang) yang mengubah satu topik atau kata kunci jadi video pendek vertikal siap posting ke TikTok/Reels/Shorts — pipeline lengkap LLM untuk script, stok footage, TTS multibahasa, subtitle otomatis, dan rendering FFmpeg.",
+                                                                      highlights: [
+                                                                        "Pipeline end-to-end otomatis dari keyword ke video HD: script ditulis LLM, footage dicocokkan dari stok library, subtitle dibakar, dan background music ditambahkan — tanpa intervensi manual di setiap tahap.",
+                                                                        "WebUI modern berbasis FastAPI + Vue yang ramah untuk pengguna non-teknis, plus REST API siap scripting untuk integrasi ke pipeline otomasi atau workflow MLOps content team.",
+                                                                        "Dukungan multi-provider LLM (OpenAI, Moonshot Kimi, DeepSeek, Azure, Ollama lokal) dan TTS (Edge TTS default gratis, plus opsi premium) — fleksibel sesuai budget dan kebijakan data, plus render FFmpeg yang bisa diatur codec/resolusi/bitrate granular.",
+                                                                        "MIT-licensed dengan binary release Windows/macOS/Linux dan Docker Compose resmi — 100k+ bintang dan 14k+ fork menjadikannya salah satu proyek AI video paling mapan untuk kreator Indonesia yang ingin otomasi Reels/Shorts harian.",
+                                                                      ],
+                                                                    }
                                                       };
 
                             // Helper: lookup dengan fallback ke template-generated highlights
