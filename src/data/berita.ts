@@ -2920,6 +2920,57 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "pemerintah-perkuat-tata-kelola-ai-untuk-cegah-disinformasi-dan-risiko-siber",
+    title: "Tata Kelola AI Indonesia 2026: Antara Janji Efisiensi dan Risiko Disinformasi yang Kian Nyata",
+    excerpt: "Komdigi dan PANRB mendorong tata kelola AI yang lebih tegas untuk membendung disinformasi dan risiko siber, tapi persoalannya bukan hanya regulasi melainkan kapasitas verifikasi di lapangan.",
+    category: "Opini",
+    date: "2026-08-11",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Dua tahun terakhir, percakapan soal AI di Indonesia lebih sering berputar pada sisi positifnya: efisiensi birokrasi, akselerasi UMKM, dan produktivitas ASN. Berita tentang bahaya disinformasi generatif, deepfake untuk penipuan, dan eksploitasi model bahasa berskala besar masih terdengar seperti wacana teoretis yang relevan untuk negara lain, bukan untuk Indonesia. Wacana itu perlahan bergeser. Kementerian Komunikasi dan Digital bersama Kementerian PANRB mendorong penguatan tata kelola AI dengan fokus spesifik pada mitigasi disinformasi dan risiko siber, mengakui bahwa teknologi ini sudah dipakai untuk mengancam ruang publik, dan bahwa tanpa kerangka kerja yang tegas, Indonesia akan jadi pasar yang menerima dampak tanpa punya alat untuk mengendalikannya.",
+          "Pesan ini tidak berdiri sendiri, tapi ia merupakan satu titik penting di dalam rantai yang sudah terbentuk lebih dulu: Peta Jalan AI Nasional, Surat Edaran Menteri Kominfo tentang etika AI, dan berbagai diskusi di DPR RI soal RUU Perlindungan Data Pribadi yang turunannya masih terus digodok. Yang membuat dorongan terbaru ini berbeda adalah penekanannya pada dua hal konkret yang selama ini sering luput dari pemberitaan: disinformasi generatif yang sudah beredar di platform lokal, dan serangan siber yang menggunakan model AI sebagai alat otomatisasi. Keduanya bukan ancaman hipotetis, dan keduanya memerlukan respons yang lebih cepat daripada kecepatan regulasi biasanya bergerak di Indonesia.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya diperkuat dalam tata kelola AI",
+        paragraphs: [
+          "Secara substansi, penguatan tata kelola AI di Indonesia menyentuh empat pilar yang saling tergantung. Pertama, lapisan regulasi yang lebih operasional, bukan hanya dokumen strategi yang berlapis retorika. Kedua, kapasitas verifikasi untuk mendeteksi konten sintetis yang beredar, dari deepfake audio sederhana sampai video generatif yang mulai sulit dibedakan dari rekaman asli. Ketiga, kerja sama antar-lembaga untuk menghubungkan sumber daya, mulai dari BSSN untuk keamanan siber, Komdigi untuk platform digital, hingga Polri untuk penanganan pidana jika konten masuk kategori penipuan. Keempat, transparansi untuk publik, agar masyarakat tidak hanya jadi konsumen teknologi tapi juga punya akses ke alat untuk mengenali risiko yang mereka hadapi sehari-hari.",
+          "Keempat pilar itu kelihatan sederhana di atas kertas, tapi di tingkat implementasi masing-masing berdiri sendiri sebagai proyek besar. Regulasi operasional butuh turunan teknis yang bisa dijalankan oleh Kominfo, Komdigi, dan OPD tanpa menunggu petunjuk lebih lanjut. Kapasitas verifikasi butuh infrastruktur forensik digital yang tidak murah dan tidak semua institusi punya. Kerja sama antar-lembaga butuh protokol pertukaran data yang saat ini masih sering terhambat oleh sekat birokrasi. Dan transparansi publik butuh literasi yang merata, yang merupakan pekerjaan bertahun-tahun. Salah satu pilar ini berjalan tanpa dukungan tiga pilar lainnya, hasilnya akan terasa seperti komite yang menghasilkan dokumen tanpa tindakan yang menyertainya.",
+        ],
+      },
+      {
+        heading: "Risiko disinformasi: antara teknis, sosial, dan regulasi",
+        paragraphs: [
+          "Disinformasi generatif punya tiga dimensi yang masing-masing perlu ditangani dengan pendekatan berbeda. Dimensi teknis adalah kemampuan menghasilkan teks, audio, dan video sintetis yang sulit dibedakan dari konten asli. Untuk dimensi ini, yang dibutuhkan adalah investasi di lembaga verifikasi, baik dalam bentuk kapasitas BSSN, alat forensik digital untuk jurnalis, maupun watermark yang bisa dipasang di platform untuk menandai konten asli. Dimensi sosial adalah kecepatan disinformasi menyebar lebih cepat daripada verifikasi, sehingga respons verifikasi harus lebih cepat daripada kecepatan viralnya. Untuk dimensi ini, yang dibutuhkan adalah protokol respons cepat yang sudah dilatih di tingkat redaksi media dan humas pemerintah, agar klarifikasi bisa tiba sebelum narasi palsu mengakar di percakapan publik. Dimensi regulasi adalah kemampuan menuntut akuntabilitas dari platform dan kreator konten, baik di dalam negeri maupun yang beroperasi lintas batas.",
+          "Untuk konteks Indonesia, dimensi sosial adalah yang paling menantang. Jaringan media lokal sudah sangat terlatih untuk verifikasi di era pra-AI, tapi volume konten yang harus diverifikasi meningkat tajam sementara jumlah jurnalis dan editor yang bisa melakukan verifikasi tidak bertambah dengan kecepatan yang sama. Beberapa redaksi sudah mulai menggunakan AI sebagai alat bantu verifikasi, tapi itu menimbulkan masalah baru: siapa yang memverifikasi kerja AI verifikasi. Tanpa protokol yang jelas, alat AI yang dipakai jurnalis bisa menjadi sumber disinformasi baru, misalnya ketika model terlalu percaya diri memberi verdict bahwa sebuah video asli padahal sebenarnya sintetis. Di sinilah peran tata kelola menjadi penting: menentukan standar yang bisa diikuti oleh semua pihak, dari redaksi besar sampai akun media sosial independen yang ingin tetap bertanggung jawab atas apa yang mereka sebarkan.",
+        ],
+      },
+      {
+        heading: "Risiko siber: model AI sebagai alat, bukan hanya target",
+        paragraphs: [
+          "Percakapan soal AI dan keamanan siber sering terjebak pada satu frame: AI sebagai target serangan. Itu memang ada, dari model yang dicuri sampai data training yang bocor, tapi frame yang lebih penting untuk Indonesia adalah AI sebagai alat serangan. Model bahasa yang dipakai untuk menulis email phishing dalam bahasa Indonesia dengan tata bahasa yang lebih natural, model suara yang dipakai untuk vishing dengan suara tiruan yang meyakinkan, model kode yang dipakai untuk menemukan celah keamanan di aplikasi secara otomatis. Semua ini adalah serangan yang skalanya meningkat tajam karena AI membuatnya murah untuk diluncurkan dan sulit dideteksi oleh sistem keamanan tradisional.",
+          "Respons terhadap risiko ini tidak bisa datang dari satu institusi saja. BSSN bisa menambah kapasitas monitoring, tapi tidak bisa menangani setiap laporan dari institusi kecil. Polri bisa menambah unit cybercrime, tapi volume laporan yang masuk sudah melebihi kapasitas respons. ASN dan pekerja profesional bisa dilatih untuk mengenali tanda-tanda phishing atau social engineering yang dibantu AI, tapi pelatihan tidak akan pernah mencapai semua orang yang rentan. Yang dibutuhkan adalah kombinasi: teknologi untuk filter otomatis di tingkat operator telekomunikasi, literasi untuk pengguna akhir, dan kapasitas respons insiden yang terdesentralisasi sampai ke tingkat kabupaten dan kota. Tanpa ketiga unsur ini, Indonesia akan terus bereaksi terhadap insiden yang sudah terjadi, bukan mencegah insiden yang bisa diprediksi.",
+        ],
+      },
+      {
+        heading: "Konteks Indonesia: antara dorongan pusat dan kesiapan daerah",
+        paragraphs: [
+          "Dorongan dari Komdigi dan PANRB ini patut dibaca sebagai pengakuan jujur bahwa kapasitas untuk menghadapi risiko AI tidak merata di Indonesia. Pulau Jawa dengan infrastruktur telekomunikasi dan sumber daya manusia yang lebih padat akan merespons lebih cepat, sementara Indonesia Timur dengan keterbatasan jaringan akan lebih bergantung pada kebijakan nasional yang tidak selalu menerjemahkan dengan baik ke kondisi lokal. Beberapa provinsi sudah mulai menyiapkan kapasitas, seperti yang terlihat di Jawa Tengah dengan inisiatif Diskominfo tingkat provinsi yang lebih operasional, tapi itu masih pengecualian daripada aturan.",
+          "Untuk lembaga pemerintah daerah, pelaku UMKM, jurnalis, dan pengguna individu, ada beberapa langkah praktis yang bisa diambil tanpa menunggu regulasi final. Pertama, biasakan untuk tidak langsung mempercayai pesan yang datang dari nomor atau akun yang tidak dikenal, terutama yang menggunakan rekaman suara atau video yang kelihatannya resmi. Kedua, untuk institusi kecil, manfaatkan alat verifikasi gratis yang sudah tersedia, walaupun hasilnya tidak pernah sempurna, setidaknya ada lapisan tambahan sebelum keputusan penting diambil. Ketiga, dorong pelatihan literasi AI untuk staf yang paling sering berinteraksi dengan publik, karena mereka yang pertama kali akan menerima dampak disinformasi dan social engineering. Tata kelola AI yang baik tidak dimulai dari regulasi yang megah, tapi dari kapasitas orang per orang untuk mengenali risiko dan merespons dengan tepat.",
+        ],
+      },
+      {
+        heading: "Yang patut diperhatikan dalam satu-dua tahun ke depan",
+        paragraphs: [
+          "Ada empat hal yang akan menentukan apakah dorongan tata kelola AI ini benar-benar mengubah kondisi di lapangan atau hanya menjadi dokumen tanpa implementasi. Pertama, apakah ada tenggat waktu yang jelas untuk turunan teknis regulasi, sehingga tidak menggantung di level pembahasan lintas kementerian selama bertahun-tahun. Kedua, apakah ada anggaran khusus yang dialokasikan untuk kapasitas verifikasi di BSSN, Polri, dan institusi pemerintah daerah, atau apakah semuanya masih akan bergantung pada proyek yang anggarannya harus bersaing dengan prioritas lain. Ketiga, apakah ada standar wajib untuk platform digital yang beroperasi di Indonesia, terutama terkait tanda air untuk konten sintetis dan protokol klarifikasi. Keempat, apakah ada forum publik yang rutin mengevaluasi apa yang berhasil dan apa yang tidak, dengan partisipasi media, akademisi, dan masyarakat sipil.",
+          "Dalam pengujian editorial Wawasan AI, dorongan pemerintah untuk memperkuat tata kelola AI dengan fokus disinformasi dan risiko siber layak dibaca sebagai pengakuan bahwa ancaman ini sudah nyata dan memerlukan respons yang lebih serius daripada wacana. Untuk ASN, pelaku UMKM, jurnalis, dan siapa saja yang bekerja di ruang publik digital, ini saat yang tepat untuk berhenti menganggap risiko AI sebagai masalah masa depan, dan mulai membangun kapasitas untuk menghadapi risiko yang sudah terjadi hari ini. Tata kelola AI yang baik tidak akan pernah menjadi solusi yang berdiri sendiri, tapi ketika didukung oleh kapasitas verifikasi, literasi publik, dan kerja sama antar-lembaga, ia bisa menjadi salah satu alat yang menjaga ruang publik Indonesia tetap menjadi tempat yang aman untuk berdiskusi dan bertransaksi.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
