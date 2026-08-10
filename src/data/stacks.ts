@@ -2571,6 +2571,46 @@ export const stacks: Review[] = [
     date: "2026-08-09",
     featured: false,
   },
+  {
+    slug: "tavily",
+    name: "Tavily",
+    tagline: "Search API khusus agen AI yang mengembalikan konteks siap pakai",
+    tags: ["Tavily", "Freemium", "Search/RAG", "Agent Search"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.8 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.7 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Tavily adalah search API yang dirancang khusus untuk dikonsumsi agen AI, bukan manusia. Alih-alih mengembalikan daftar sepuluh tautan biru seperti SERP API tradisional, Tavily mengembalikan potongan konten yang sudah dibersihkan, diberi peringkat relevansi, dan opsional dirangkum menjadi satu jawaban, sehingga siap langsung masuk ke context window tanpa perlu pipeline scraping sendiri. Lima endpoint utamanya yaitu Search, Extract, Crawl, Map, dan Research menutup hampir seluruh kebutuhan retrieval agen modern, dari pencarian satu kali sampai riset multi-langkah yang berjalan sendiri.",
+    pros: [
+      "Output langsung berupa konten bersih dan terpotong per chunk, bukan daftar tautan, sehingga menghemat satu lapisan scraping dan parsing yang biasanya paling rapuh di pipeline RAG",
+      "Lima endpoint dalam satu API key yaitu Search, Extract, Crawl, Map, dan Research, sehingga agen bisa naik dari pencarian sederhana ke riset multi-langkah tanpa ganti vendor",
+      "Ekosistem integrasi paling lebar di kelasnya, mulai dari LangChain, LlamaIndex, CrewAI, Vercel AI SDK, Pydantic AI, Agno, Mastra, sampai n8n, Zapier, Make, dan Dify untuk tim non-koding",
+      "Server MCP resmi plus mode keyless di SDK Python dan JavaScript, membuat proses coba-coba pertama bisa berjalan tanpa daftar akun dan tanpa kartu kredit",
+      "Tersedia lewat marketplace awan besar seperti Amazon Bedrock AgentCore, Microsoft Azure, IBM watsonx Orchestrate, Databricks, dan Snowflake untuk tim yang butuh jalur pengadaan resmi",
+    ],
+    cons: [
+      "Model kredit membuat biaya sulit diprediksi di awal, terutama endpoint Research yang satu permintaannya bisa menghabiskan 15 sampai 250 kredit tergantung kedalaman riset",
+      "Jatah gratis 1.000 kredit per bulan habis cepat begitu masuk produksi, karena satu pencarian advanced saja sudah memakan 2 kredit",
+      "Kualitas hasil untuk kueri berbahasa Indonesia dan sumber media lokal masih di bawah kueri berbahasa Inggris, sehingga sering perlu dibantu parameter country dan include_domains",
+    ],
+    verdict:
+      "Tavily adalah pilihan default yang paling masuk akal untuk tim yang membangun agen AI berbasis web di 2026, karena ia menghapus pekerjaan scraping yang paling melelahkan sekaligus memangkas token yang terbuang. Catatan utamanya untuk pengguna Indonesia adalah tagihan berbasis kredit dalam dolar yang perlu disimulasikan dulu dari jatah gratis sebelum dikunci ke paket bulanan.",
+    body: [
+      "Tavily berangkat dari satu keluhan yang dikenal semua orang yang pernah membangun agen AI dengan akses internet. Search API tradisional seperti SerpAPI, Serper, atau Brave Search dirancang untuk manusia yang akan mengklik tautan, sehingga yang dikembalikan adalah judul, URL, dan cuplikan dua baris. Agen tidak bisa mengklik. Akibatnya, setiap tim harus membangun lapisan tambahan sendiri untuk mengambil halaman, membuang iklan dan navigasi, mengubah HTML menjadi teks, memotongnya menjadi chunk, lalu menyaring bagian yang relevan sebelum dimasukkan ke prompt. Lapisan itu rapuh, mahal dari sisi token, dan hampir selalu rusak begitu situs sumber mengubah tata letak. Tavily memindahkan seluruh pekerjaan itu ke sisi server dan mengembalikan konten yang sudah bersih, sudah dipotong, dan sudah diberi skor relevansi terhadap kueri, dengan opsi include_answer untuk sekalian mendapat rangkuman satu paragraf.",
+      "Secara teknis, produknya terbagi menjadi lima endpoint yang saling melengkapi. Search adalah inti layanan, dengan dua tingkat kedalaman yaitu basic dan advanced, plus parameter yang cukup detail seperti topic untuk membedakan pencarian umum dan berita, time_range dan rentang tanggal untuk membatasi kesegaran, chunks_per_source untuk mengatur berapa potongan konten per sumber, serta include_domains dan exclude_domains untuk mengunci sumber tepercaya. Extract mengubah satu atau banyak URL menjadi teks markdown bersih. Map memetakan struktur sebuah situs, dan Crawl menggabungkan pemetaan dengan ekstraksi sehingga agen bisa menjelajah dokumentasi atau situs berita secara terarah lewat instruksi bahasa alami. Yang paling baru dan paling agentic adalah Research, sebuah endpoint riset otonom dengan dua mode yaitu mini dan pro, yang menjalankan sendiri siklus rencana, cari, baca, dan sintesis tanpa developer harus menulis loop orkestrasi. Semua ini dibungkus SDK Python dan JavaScript yang bisa dipanggil dalam tiga baris kode, plus server MCP resmi agar Claude, OpenCode, atau klien MCP lain bisa memakainya tanpa kode sama sekali.",
+      "Harga Tavily per Agustus 2026 memakai model kredit tunggal yang berlaku lintas endpoint. Paket Researcher gratis memberi 1.000 kredit per bulan tanpa kartu kredit, dan kredit direset setiap tanggal satu. Di atasnya ada Project seharga USD 30 per bulan untuk 4.000 kredit, Bootstrap USD 100 untuk 15.000 kredit, Startup USD 220 untuk 38.000 kredit, dan Growth USD 500 untuk 100.000 kredit, dengan harga per kredit turun dari USD 0,0075 menjadi USD 0,005 seiring naiknya paket. Skema pay as you go dipatok USD 0,008 per kredit tanpa komitmen bulanan. Konsumsinya sendiri cukup mudah dihitung: pencarian basic 1 kredit, pencarian advanced 2 kredit, ekstraksi setiap 5 URL sukses 1 kredit, pemetaan setiap 10 halaman 1 kredit, sementara Research bergerak dinamis antara 4 sampai 110 kredit untuk mode mini dan 15 sampai 250 kredit untuk mode pro. Dengan kurs acuan Rp18.000 per dolar, satu pencarian basic setara sekitar Rp144 dan paket Bootstrap sekitar Rp1,8 juta per bulan. Sebagai pembanding, Exa mematok USD 7 per 1.000 permintaan dengan kredit gratis USD 10 per bulan, sementara Serper memberi 2.500 kueri gratis dan memposisikan diri sebagai SERP API termurah. Perbedaannya bukan pada angka semata: Exa dan Serper mengembalikan hasil pencarian, Tavily mengembalikan konteks siap pakai, dan penghematan token di sisi model sering kali menutup selisih harga per permintaan.",
+      "Untuk pengguna Indonesia, ada tiga skenario yang paling realistis. Pertama, tim produk yang membangun asisten atau chatbot yang wajib menjawab dengan informasi terkini, misalnya perubahan aturan dari OJK dan Komdigi, harga komoditas, jadwal layanan, atau berita industri. Di sini parameter country dan include_domains menjadi penting untuk mengarahkan pencarian ke media dan situs resmi Indonesia, karena tanpa itu hasil untuk kueri berbahasa Indonesia cenderung didominasi sumber berbahasa Inggris. Kedua, tim riset pasar, konsultan, dan agensi yang butuh pemantauan kompetitor atau pemberitaan secara rutin: endpoint Research mode mini cukup untuk laporan harian dan biayanya masih terkendali kalau dijadwalkan, bukan dipanggil setiap ada permintaan pengguna. Ketiga, developer solo dan mahasiswa yang sedang belajar membangun agen, dengan catatan Tavily menyediakan akses gratis untuk pelajar di luar jatah 1.000 kredit bulanan. Saran editorialnya sederhana: pakai paket gratis untuk mengukur konsumsi nyata selama dua minggu, catat rasio pencarian basic dan advanced, hitung kredit per pengguna aktif, baru pilih paket. Jangan lupa membandingkan dengan opsi swakelola seperti SearxNG yang digabung dengan crawler sendiri. Biaya lisensinya nol, tetapi beban perawatan, blokir captcha, dan kebutuhan proxy dari IP Indonesia biasanya membuat total biaya kepemilikan tidak sehemat yang terlihat di awal, terutama untuk tim kecil yang waktu engineering-nya lebih mahal daripada tagihan API.",
+    ],
+    link: "https://tavily.com/",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-10",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

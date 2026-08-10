@@ -2876,6 +2876,50 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "tingkatkan-efisiensi-layanan-birokrasi-diskominfo-jateng-dorong-opd-maksimalkan-ai",
+    title: "Diskominfo Jateng Minta OPD Memaksimalkan AI: Sudah Saatnya Berhenti Berdebat, Mulai Bekerja",
+    excerpt: "Diskominfo Jateng meminta seluruh OPD memaksimalkan peran AI pada layanan publik. Pertanyaannya bukan lagi apakah birokrasi layak pakai AI, tapi bagaimana melakukannya tanpa menggandakan masalah yang sudah ada.",
+    category: "Opini",
+    date: "2026-08-10",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selama dua tahun terakhir, diskusi soal adopsi AI di birokrasi Indonesia lebih sering berputar pada narasi besar: Indonesia siap atau belum, regulasi cukup atau belum, dan apakah AI akan menggantikan pekerjaan ASN atau justru membuka ruang pekerjaan baru. Wacana itu penting, tapi ia jarang menyentuh pertanyaan yang lebih praktis dan lebih menjengkelkan: di tingkat Organisasi Perangkat Daerah yang sehari-hari mengurus layanan publik, langkah pertama yang harus diambil itu sebenarnya apa. Kabar terbaru dari Jawa Tengah, melalui Dinas Komunikasi dan Informatika provinsi, menambahkan satu butir konkret ke percakapan itu: seluruh OPD didorong memaksimalkan peran AI untuk meningkatkan efisiensi layanan birokrasi.",
+          "Pesan itu sederhana, tapi implikasinya tidak. Di balik kata memaksimalkan tersembunyi asumsi bahwa teknologi sudah tersedia, infrastruktur dasar sudah ada, dan yang kurang hanya kemauan dari sisi organisasi. Kenyataannya, lapangan birokrasi Indonesia jauh lebih berlapis dari asumsi itu. RPA sudah jalan di sebagian dinas, chatbot services sudah terpasang di portal layanan, dan analisis data digunakan untuk pemetaan bantuan sosial, namun adopsi itu tidak pernah terjadi secara merata. Beberapa OPD yang punya talenta digital akan jalan lebih cepat, sementara OPD yang tidak punya akan tertinggal lebih jauh. Pesan dari Diskominfo Jateng, kalau dibaca dengan hati-hati, sebenarnya adalah pengakuan jujur bahwa jurang itu ada, dan bahwa menutupnya butuh instruksi yang jelas dari atas.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya diminta dari setiap OPD",
+        paragraphs: [
+          "Secara substansi, permintaan dari Diskominfo Jateng kepada OPD mencakup empat hal yang saling tergantung. Pertama, identifikasi proses layanan yang menjadi bottleneck bagi masyarakat: permohonan yang butuh banyak langkah manual, antrean panjang, dan verifikasi berulang yang sebenarnya bisa diotomasi. Kedua, evaluasi AI tools yang sesuai untuk konteks layanan tersebut, dengan perhatian pada keamanan data dan kepatuhan terhadap regulasi perlindungan data pribadi. Ketiga, integrasi AI ke dalam workflow yang sudah ada, bukan menambah tool baru di atas sistem yang sudah bertumpuk. Keempat, capacity building untuk ASN yang mengelola sistem, agar mereka tidak hanya bisa menjalankan tapi juga memahami kapan AI harus berhenti dan intervensi manusia dibutuhkan.",
+          "Keempat hal itu tampak sederhana jika ditulis sebagai daftar, tapi di tingkat implementasi masing-masing adalah proyek yang berdiri sendiri. Identifikasi bottleneck butuh pemetaan alur layanan yang biasanya belum pernah dipetakan secara eksplisit. Evaluasi tool butuh akses ke lingkungan sandbox yang tidak semua OPD punya. Integrasi butuh API dan standar data yang tidak selalu seragam antar-sistem. Dan capacity building butuh pelatih internal yang mengerti domain layanan publik sekaligus literasi AI dasar. Salah satu keempat hal ini lemah, dan keseluruhan program akan terasa kosong hanya sebagai simbol adopsi.",
+        ],
+      },
+      {
+        heading: "Dua risiko yang sering tidak dibicarakan",
+        paragraphs: [
+          "Risiko pertama yang paling jelas adalah soal data. Layanan birokrasi Indonesia, khususnya di tingkat daerah, sering menangani data yang sangat sensitif: data kependudukan, data kesehatan, data bantuan sosial, dan data perizinan. Ketika AI dilatih atau dijalankan pada data seperti ini, pertanyaan tentang di mana data diproses, siapa yang punya akses ke model, dan bagaimana output-nya bisa dijelaskan kepada masyarakat, menjadi hal yang tidak bisa dijawab dengan slogan efisiensi. Regulasi Perlindungan Data Pribadi yang berlaku di Indonesia sekarang memang sudah memberi kerangka dasar, tapi implementasinya di tingkat daerah masih memerlukan banyak turunan teknis yang belum banyak OPD punya kapasitas untuk membuatnya sendiri.",
+          "Risiko kedua, yang lebih halus tapi tidak kalah serius, adalah soal ketergantungan organisasi pada vendor tertentu. Ketika satu OPD menerima bantuan AI dari satu vendor, lengkap dengan infrastruktur cloud, model, dan antarmuka, OPD tersebut secara perlahan kehilangan kemampuan untuk memahami dan mengendalikan sistem yang mereka operasikan. Vendor menjadi single point of failure, dan ketika kontrak berakhir atau vendor berganti strategi, OPD akan kembali ke titik nol. Di sinilah pentingnya konsep modern tech stack untuk pemerintah: memilih komponen yang interoperable, dokumentasi yang terbuka, dan kemampuan untuk pindah ke solusi lain tanpa harus memulai dari awal. Tanpa prinsip ini, efisiensi yang dijanjikan AI hanya menjadi efisiensi jangka pendek sebelum berubah menjadi ketergantungan jangka panjang.",
+        ],
+      },
+      {
+        heading: "Konteks Indonesia: antara pesan pusat dan kenyataan daerah",
+        paragraphs: [
+          "Pesan dari Diskominfo Jateng ini tidak berdiri sendiri. Secara nasional, dorongan untuk mengadopsi AI di birokrasi sebenarnya sudah menjadi bagian dari beberapa dokumen strategis: mulai dari Peta Jalan AI Nasional yang menekankan adopsi di sektor publik, hingga berbagai inisiatif di Kementerian PANRB untuk digitalisasi layanan. Yang membuat inisiatif di Jawa Tengah ini menarik adalah pendekatannya yang lebih ke grass-root dan lebih operasional daripada banyak dokumen nasional yang berbicara dalam bahasa strategic. Ketika Diskominfo provinsi secara eksplisit meminta setiap OPD untuk memetakan bottleneck mereka sendiri dan memilih tool yang sesuai, ada pengakuan implicit bahwa strategi nasional tidak akan bekerja tanpa terjemahan ke langkah-langkah yang bisa dijalankan oleh dinas pendidikan, dinas kesehatan, atau dinas perhubungan di tingkat kabupaten dan kota.",
+          "Untuk ASN yang bekerja di layanan publik sehari-hari, ada beberapa hal praktis yang bisa dilakukan tanpa menunggu instruksi lebih lanjut. Pertama, mulailah dari satu proses yang paling sering membuat masyarakat komplain, baik itu permohonan izin, akses informasi, atau verifikasi data. Kedua, libatkan staf yang paling tahu seluk-beluk proses itu, jangan hanya staf IT atau yang paling paham teknologi. Ketiga, tetapkan indikator yang jelas: berapa lama proses seharusnya, berapa lama proses itu sekarang, dan berapa banyak kesalahan yang terjadi. AI tidak akan memperbaiki proses yang tidak dipahami, dan metrik adalah cara paling jujur untuk mengukur apakah adopsi AI benar-benar memberikan dampak atau hanya menjadi lapisan teknologi tambahan yang tidak menyelesaikan masalah inti.",
+        ],
+      },
+      {
+        heading: "Yang patut diperhatikan dalam satu-dua tahun ke depan",
+        paragraphs: [
+          "Ada empat hal yang akan menentukan apakah pesan dari Diskominfo Jateng ini menjadi titik balik adopsi AI di birokrasi daerah atau hanya menjadi rilis pers yang dilupakan dalam satu bulan. Pertama, apakah ada panduan teknis yang cukup spesifik yang bisa diadopsi oleh OPD dengan berbagai tingkat kematangan digital. Kedua, apakah ada mekanisme berbagi pengetahuan antar-OPD, sehingga dinas yang sudah berhasil tidak harus mengulangi pembelajaran dari nol untuk dinas lain. Ketiga, apakah ada anggaran yang realistis untuk maintenance dan peningkatan, karena adopsi AI bukan proyek sekali jadi tapi komitmen operasional bertahun-tahun. Keempat, apakah ada forum evaluasi publik yang jujur tentang apa yang berhasil dan apa yang tidak, sehingga keberhasilan dan kegagalan tidak keduanya berakhir sebagai rilis pers tanpa tindak lanjut.",
+          "Dalam pengujian editorial Wawasan AI, dorongan Diskominfo Jateng untuk memaksimalkan peran AI di layanan birokrasi layak dibaca sebagai salah satu sinyal paling konkret di Indonesia bahwa adopsi AI di sektor publik sudah bergeser dari wacana ke instruksi. Untuk ASN, pemimpin daerah, dan siapa saja yang terlibat dalam transformasi layanan publik, ini saat yang tepat untuk berhenti berdebat tentang apakah AI pantas dipakai di birokrasi, dan mulai bekerja pada pertanyaan yang lebih membumi: di proses mana, dengan data apa, dengan pengawasan manusia yang bagaimana, dan dengan ekspektasi yang realistik seperti apa. AI di birokrasi tidak akan pernah menjadi solusi yang berdiri sendiri, tapi ketika diterapkan dengan hati-hati pada proses yang tepat, AI bisa menjadi alat yang membuat layanan publik bekerja seperti yang seharusnya sudah lama bekerja di Indonesia.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
