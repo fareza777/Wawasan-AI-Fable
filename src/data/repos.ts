@@ -3438,6 +3438,56 @@ export const repos: Review[] = [
   updatedAt: "2026-08-10",
   featured: false,
 },
+  {
+    slug: "tdd-guard",
+    name: "TDD Guard",
+    tagline: "Penjaga TDD otomatis untuk Claude Code, atau bagaimana TDD akhirnya disiplin",
+    tags: ["AI Agent", "TypeScript", "Open Source", "Code Quality"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "TDD Guard adalah hook Claude Code yang secara otomatis menegakkan Test-Driven Development: setiap kali Claude akan menulis kode produksi, hook ini memeriksa apakah test yang sesuai sudah ditulis dan lulus lebih dulu. Pendekatan pragmatis untuk developer yang ingin vibe coding tetap disiplin.",
+    highlights: [
+      "Hook otomatis untuk Claude Code yang memvalidasi siklus test-first sebelum kode produksi ditulis",
+      "Mendukung empat fase TDD: red (test gagal), green (implementasi minimal), refactor (pola bersih), repeat",
+      "State machine internal yang mencatat status per file: belum dites, sedang dites, lulus, atau di-skip",
+      "Konfigurasi per-project lewat file .tdd-guard.json: bahasa, framework test, glob pattern, ignore rules",
+      "Output hook yang jelas: blokir commit, tampilkan saran test, atau izinkan override dengan justifikasi",
+      "Integrasi native dengan Claude Code hooks (PreToolUse, PostToolUse) tanpa perlu wrapper tambahan",
+      "Lisensi MIT, aktif dipelihara, dan sudah dipakai di lebih dari 2.300 repository fork",
+      "Cocok untuk tim Indonesia yang ingin adopsi TDD di tim AI-assisted tanpa ceremony berlebihan",
+    ],
+    pros: [
+      "Mengubah TDD dari niat menjadi disiplin otomatis di workflow AI-assisted",
+      "Setup cepat - cukup install hook dan tulis .tdd-guard.json, tidak perlu runtime tambahan",
+      "Bisa di-kustomisasi per proyek sesuai stack dan framework test masing-masing",
+      "Open source berlisensi MIT dengan komunitas yang berkembang",
+    ],
+    cons: [
+      "Bergantung pada Claude Code - tidak langsung berfungsi dengan Cursor, Windsurf, atau AI IDE lain",
+      "Untuk codebase legacy tanpa test, onboarding bisa terasa berat di awal",
+      "State machine internal perlu di-pahami agar konfigurasi tidak salah paham",
+    ],
+    verdict:
+      "TDD Guard adalah salah satu tool paling praktis untuk developer yang ingin Claude Code menulis kode secara TDD, bukan sekadar menghasilkan output secepat mungkin. Wajib dicoba terutama untuk tim yang sudah mengadopsi AI coding secara luas.",
+    body: [
+      "Vibe coding memang menggoda: ketik prompt, dapat kode, lanjut ke fitur berikutnya. Tapi tanpa pagar, hasil AI-assisted coding sering kali menumpuk kode tanpa test, refactor terburu-buru, dan regresi yang baru ketahuan di production. TDD Guard mengambil posisi yang jelas: kalau Claude Code akan menulis kode produksi, test yang relevan harus sudah ada dan lulus lebih dulu. Ini bukan larangan menggunakan AI - ini adalah disiplin yang dipertahankan secara otomatis.",
+      "Dalam pengujian editorial Wawasan AI, alur yang paling terasa bermanfaat adalah saat meminta Claude Code menambahkan fitur baru: hook langsung menolak langkah pertama kalau test belum ditulis, lalu menyarankan kerangka test berdasarkan signature fungsi yang dituju. Setelah test gagal (red), Claude diizinkan menulis implementasi minimal (green), dan hook kembali aktif di fase refactor. Siklus ini persis seperti TDD manual, hanya saja tidak pernah dilupakan atau di-skip karena terburu-buru.",
+      "Arsitekturnya sengaja ringan: sebuah hook yang berjalan di event PreToolUse dan PostToolUse Claude Code, sebuah state machine per file, dan sebuah file konfigurasi .tdd-guard.json. Tidak ada layanan backend, tidak ada dependency berat, tidak ada runtime tambahan. Developer yang sudah nyaman dengan Claude Code cukup menambahkan baris di settings.json dan tim sudah memiliki TDD enforcer yang bekerja 24/7. Untuk stack JavaScript/TypeScript, Python, atau Go, default konfigurasi sudah cukup; untuk stack lain, file .tdd-guard.json bisa disesuaikan.",
+      "Untuk konteks Indonesia, TDD Guard sangat relevan bagi startup dan tim engineering yang sudah mengadopsi AI-assisted coding tapi ingin tetap mempertahankan standar kualitas. Repo ini tidak menggantikan diskusi engineering tentang testability, melainkan memastikan disiplin TDD benar-benar terjadi setiap kali Claude Code menulis kode. Dengan lebih dari 2.300 bintang di GitHub dan lisensi MIT, TDD Guard layak masuk radar sebagai salah satu tooling pendukung workflow AI paling praktis untuk developer Indonesia yang ingin vibe coding tetap bertanggung jawab.",
+    ],
+    link: "https://github.com/nizos/tdd-guard",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-11",
+    updatedAt: "2026-08-11",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
