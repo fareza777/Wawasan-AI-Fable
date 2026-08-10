@@ -3025,6 +3025,50 @@ export const models: Review[] = [
     date: "2026-08-10",
     featured: false,
   },
+  {
+    slug: "claude-opus-4-8",
+    name: "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
+    tagline: "Generasi terbaru Opus — intel 57,3 dan coding 74,3 menaruhnya di puncak papan atas dunia frontier",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Agent"],
+    score: 9.3,
+    scores: [
+      { label: "Penalaran", value: 9.2 },
+      { label: "Coding", value: 9.4 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 8.0 },
+    ],
+    aa_intelligence_index: 57.3,
+    aa_coding_index: 74.3,
+    aa_price_input: 5,
+    aa_price_output: 25,
+    aa_synced_at: "2026-08-11",
+    summary:
+      "Flagship terbaru Anthropic per Agustus 2026 yang membawa keluarga Opus ke papan atas dunia frontier. Intelligence index 57,3 (sumber: Artificial Analysis) menembus level yang sebelumnya hanya dicapai Kimi K3 (57,1) dan melampaui Grok 4.5 (55,8), Claude Opus 4.5 (43,1), serta GPT-5 (44,6). Coding index 74,3 (sumber: Artificial Analysis) menjadi skor tertinggi ketiga di antara model yang sudah diulas Wawasan AI — di bawah Kimi K3 (76,2) dan hampir menyamai Grok 4.5 (72,4), mengonfirmasi posisi Opus sebagai salah satu pemain utama di liga agentic coding. Lompatan dari Opus 4.5 (intel 43,1, coding 42,9) ke Opus 4.8 (intel 57,3, coding 74,3) bukan sekadar iterasi numerik, melainkan reposisi fundamental: dari model yang 'unggul di ceruk coding' menjadi model papan atas sejajar dengan frontier reasoning papan atas.",
+    pros: [
+      "Intelligence index 57,3 (sumber: Artificial Analysis) — puncak papan atas dunia frontier, sejajar dengan Kimi K3 (57,1) dan melampaui Grok 4.5 (55,8), Claude Opus 4.5 (43,1), serta GPT-5 (44,6)",
+      "Coding index 74,3 (sumber: Artificial Analysis) — skor tertinggi ketiga di antara model yang sudah diulas Wawasan AI, di bawah Kimi K3 (76,2) dan Grok 4.5 (72,4); memimpin benchmark agentic coding untuk kelas reasoning proprietary Barat",
+      "Adaptive Reasoning dengan mode Max Effort — sistem routing internal yang menentukan sendiri kedalaman penalaran per tugas, mirip GPT-5 tapi dengan optimasi agentic yang lebih dalam",
+      "Warisan ekosistem Claude Code yang matang — pipeline agentic panjang (refactor lintas file, riset multi-langkah, debugging kompleks) tetap menjadi pembeda dibanding frontier manapun",
+    ],
+    cons: [
+      "Harga API tetap premium: $5,00 input dan $25,00 output per juta token — sama dengan Claude Opus 4.5, bermain di kelas tertinggi bersama Claude Opus 5 max",
+      "Throughput output median tidak tersedia di response API AA untuk entry ini — kualitas latency perlu diuji sendiri per workload spesifik, terutama untuk chat interaktif yang sensitif TTFT",
+      "Math index tidak tersedia di benchmark AA — kualitas numerik perlu diuji sendiri per use case spesifik, terutama untuk workload finansial atau saintifik",
+      "Akses API butuh kartu kredit atau pembayaran internasional — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "Claude Opus 4.8 adalah evolusi natural Opus 4.5 yang menutup gap ke frontier papan atas sambil mempertahankan DNA andalannya: kemampuan agentic panjang, output koheren untuk sesi panjang, dan ekosistem Claude Code yang matang. Untuk workload agentic coding yang sensitif terhadap kombinasi intel 57,3 dan coding 74,3, Opus 4.8 layak dicoba sebelum melompat ke frontier Asia (Kimi K3) atau menunggu Claude Opus 5.",
+    body: [
+      "Claude Opus 4.8 adalah flagship terbaru Anthropic per Agustus 2026, dirancang sebagai penerus Claude Opus 4.5 yang sejak Juni 2026 menjadi standar de facto untuk workload coding agentic panjang. Bedanya, Opus 4.8 bukan sekadar iterasi numerik — reposisi total ke papan atas frontier. Intelligence index 57,3 (sumber: Artificial Analysis) menembus level yang sebelumnya hanya dicapai Kimi K3 (57,1), sejajar dengan frontier Asia papan atas dan melampaui Grok 4.5 (55,8), Claude Opus 4.5 (43,1), serta GPT-5 (44,6). Coding index 74,3 (sumber: Artificial Analysis) menjadi skor tertinggi ketiga di antara model yang sudah diulas Wawasan AI — di bawah Kimi K3 (76,2) dan hampir menyamai Grok 4.5 (72,4), mengonfirmasi posisi Opus sebagai salah satu pemain utama di liga agentic coding. Lompatan dari Opus 4.5 (intel 43,1, coding 42,9) ke Opus 4.8 (intel 57,3, coding 74,3) merupakan reposisi fundamental: bukan hanya 33% lebih tinggi di intelligence index, tapi 73% lebih tinggi di coding index — menjadikan Opus 4.8 salah satu model paling seimbang antara penalaran murni dan kapabilitas agentic. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic panjang, Claude Opus 4.8 menunjukkan karakter flagship yang mempertahankan DNA andalan keluarga Opus: kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang yang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten. Mode Adaptive Reasoning dengan Max Effort secara otomatis menentukan kedalaman penalaran per tugas — untuk pertanyaan sederhana ia menjawab ringkas, untuk tugas kompleks ia merencanakan, mengeksekusi, mengetes, lalu memperbaiki sendiri kesalahannya, mirip GPT-5 tapi dengan optimasi agentic yang lebih dalam. Yang paling terasa dibanding frontier Asia (Kimi K3, DeepSeek V4) adalah kematangan ekosistem Claude Code — integrasi IDE, pipeline CI/CD, dan tooling pendukung agentic yang sudah teruji di production oleh ribuan tim. Throughput output median tidak tersedia di response API AA untuk entry ini, sehingga kualitas latency perlu diuji sendiri per workload spesifik — sebagai referensi, Opus 4.5 sendiri bermain di kisaran menengah untuk TTFT, bukan yang tercepat tapi cukup snappy untuk UX interaktif. (Sumber: Artificial Analysis.)",
+      "Soal harga, Opus 4.8 bermain di kelas premium tertinggi: $5,00 per juta token input dan $25,00 output — identik dengan Claude Opus 4.5. Bandingkan dengan frontier papan atas lain: Kimi K3 $3/$15, Grok 4.5 $2/$6, GPT-5 $1,25/$10. Opus 4.8 tetap menjadi model Barat termahal di kelas papan atas — meski untuk workload agentic coding intensif di mana coding index 74,3 dan intel 57,3 menjadi pembeda utama, premium ini sebanding dengan kapabilitas yang diberikan. Untuk developer Indonesia yang sensitif dolar, strategi yang masuk akal: manfaatkan Claude Sonnet 4.5 atau DeepSeek V4 Flash 0731 untuk eksperimen volume tinggi dan prototyping, Opus 4.8 untuk workload agentic coding intensif yang sensitif terhadap kombinasi penalaran + coding tinggi, dan Kimi K3 untuk alternatif Asia di kelas harga lebih terjangkau. Math index tidak tersedia di benchmark AA untuk entry ini, jadi kualitas matematika perlu diuji sendiri per use case spesifik — meski untuk tool-use coding, kombinasi intel 57,3 dan coding 74,3 sudah menjadi jaminan kuat.",
+      "Signifikansi Opus 4.8 bagi peta AI global adalah konfirmasi bahwa laboratorium Barat akhirnya menutup gap ke frontier Asia di papan atas. Setelah Kimi K3 menembus intel 57,1 dan coding 76,2 pada Juni 2026, Grok 4.5 (intel 55,8, coding 72,4) pada Juli 2026, kini Anthropic merespons dengan Opus 4.8 (intel 57,3, coding 74,3) — sejajar dengan Kimi K3 di intel dan memimpin benchmark coding proprietary Barat. Kompetisi di papan atas dunia makin kompetitif: tidak ada lagi dominasi tunggal frontier Barat vs Asia, melainkan tiga atau empat lab yang bermain di liga yang sama. Untuk developer Indonesia, implikasinya langsung: pilihan untuk workload agentic papan atas kini lebih beragam, dan keputusan tidak lagi bergantung pada 'siapa yang paling depan' melainkan 'siapa yang paling sesuai dengan workload, ekosistem, dan budget'. Kelemahan yang teridentifikasi: harga premium yang sama dengan Opus 4.5 — tidak ada diskon untuk lompatan kapabilitas; throughput output median tidak tersedia di benchmark AA, jadi latency perlu diuji sendiri; math index tidak terukur standar. Akses API tersedia lewat platform.anthropic.com dan mitra regional — untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional), dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: Opus 4.8 untuk workload agentic coding intensif yang butuh kombinasi penalaran + coding tinggi, Claude Code pipeline panjang yang sudah matang, dan workload yang sensitif terhadap integrasi ecosystem Anthropic; Kimi K3 untuk coding agentic di kelas harga lebih terjangkau; Grok 4.5 untuk workload yang butuh akses real-time X; DeepSeek V4 Flash 0731 untuk volume tinggi di kelas harga value.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-11",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
