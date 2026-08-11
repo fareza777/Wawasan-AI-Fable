@@ -2971,6 +2971,52 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "7-profesi-baru-bergaji-tinggi-banyak-dicari-penghasilan-mulai-rp2-m",
+    title: "Tujuh Profesi AI Bergaji Tinggi: Peluang Nyata atau Sekadar Janji Pasar Kerja 2026?",
+    excerpt:
+      "Daftar tujuh profesi AI dengan gaji mulai dari Rp2 miliar per tahun ramai dibicarakan. Sebelum ikut berburu, ada baiknya kita cek siapa yang sebenarnya merekrut dan skill seperti apa yang mereka cari.",
+    category: "Analisis",
+    date: "2026-08-12",
+    readingTime: "8 menit",
+    body: [
+      {
+        paragraphs: [
+          "Belakangan ini linimasa media sosial dan kanal lowongan kerja di Indonesia diramaikan oleh daftar tujuh profesi baru di bidang AI yang diklaim memiliki gaji fantastis, mulai dari Rp2 miliar per tahun untuk posisi entry level senior hingga belasan miliar untuk kepala divisi. Angka-angka itu menarik, terutama di saat biaya hidup terus naik dan banyak pekerja kantoran merasa gajinya tidak lagi sebanding dengan kompleksitas pekerjaan. Respons yang muncul pun terpolarisasi: ada yang langsung mendaftar ke berbagai bootcamp dan kursus online, ada pula yang skeptis bahwa angka segitu mungkin di Indonesia, apalagi untuk fresh graduate.",
+          "Kalau kita mundur sebentar dari hype media sosial, pertanyaan yang lebih jujur sebenarnya sederhana: siapa yang benar-benar merekrut untuk posisi-posisi ini, skill seperti apa yang mereka bayar mahal, dan apakah pasar tenaga kerja Indonesia sudah cukup matang untuk menyerap permintaan itu. Artikel ini tidak bermaksud mendorong atau menggembosi euforia karier AI, melainkan mencoba membaca daftar itu dengan lebih jernih, sehingga pembaca yang sedang mempertimbangkan langkah kariernya punya dasar yang lebih kuat selain headline.",
+        ],
+      },
+      {
+        heading: "Tujuh profesi yang dimaksud dan apa yang sebenarnya mereka cari",
+        paragraphs: [
+          "Dari rangkuman yang beredar, tujuh profesi yang dimaksud biasanya mencakup AI/ML engineer, MLOps engineer, prompt engineer, AI product manager, AI ethics atau governance specialist, AI security specialist, dan AI data curator. Masing-masing punya corak pekerjaan yang berbeda, dan gaji yang dipasang untuk posisi yang sama bisa sangat bervariasi tergantung perusahaan, industri, dan pengalaman kandidat. Untuk AI/ML engineer di perusahaan teknologi besar di Jakarta, angka Rp2 miliar per tahun untuk level senior yang baru pindah dari posisi mid-level memang dalam jangkauan, terutama kalau kandidat membawa pengalaman khusus di bidang model generatif atau computer vision. Untuk posisi yang lebih baru seperti prompt engineer atau AI product manager, gaji biasanya lebih rendah di awal, tapi bisa naik signifikan ketika terbukti memberi dampak bisnis yang terukur.",
+          "Yang jarang ditonjolkan di daftar viral adalah bahwa perusahaan tidak hanya mencari orang yang bisa menulis kode atau merangkai prompt. Mereka mencari orang yang bisa menerjemahkan masalah bisnis menjadi solusi AI yang bisa diukur hasilnya. AI/ML engineer yang hanya bisa menjalankan notebook tanpa paham bagaimana model akan dipakai di lini produk, atau prompt engineer yang hanya bisa menghasilkan teks yang bagus tanpa memahami konteks operasional, biasanya tidak akan bertahan lama di posisi bergaji tinggi. Justru yang dicari adalah kombinasi kemampuan teknis dan pemahaman bisnis yang langka di pasar tenaga kerja Indonesia saat ini. Itulah kenapa angka Rp2 miliar itu ada, dan kenapa kebanyakan kandidat tidak akan langsung sampai ke sana hanya dengan sertifikat bootcamp.",
+        ],
+      },
+      {
+        heading: "Kenapa angka-angka ini muncul sekarang dan apa yang mendorong permintaannya",
+        paragraphs: [
+          "Ada tiga faktor yang membuat gaji posisi AI melonjak di Indonesia sepanjang 2025 dan 2026. Pertama, adopsi model generatif di industri finansial, telekomunikasi, dan e-commerce yang membutuhkan integrasi cepat ke dalam produk yang sudah berjalan. Kedua, meningkatnya regulasi dan tekanan publik soal etika serta keamanan AI yang memunculkan permintaan akan spesialis yang sebelumnya tidak ada di struktur organisasi. Ketiga, ketidakpastian pasar tenaga kerja global yang membuat perusahaan Indonesia yang sebelumnya bisa mengandalkan kandidat dari luar negeri kini harus membangun kapasitas internalnya sendiri, karena hiring dari pasar global menjadi lebih mahal dan lebih lambat.",
+          "Efek gabungannya adalah permintaan yang naik tajam di tengah suplai yang masih sangat terbatas. Universitas dan bootcamp baru mulai mengejar ketertinggalan, tapi butuh waktu dua sampai tiga tahun sebelum output mereka terasa di pasar kerja. Selama jendela itu terbuka, kandidat yang sudah memiliki kombinasi pengalaman teknis dan pemahaman domain akan terus memiliki posisi tawar yang kuat. Bagi yang baru masuk ke dunia kerja sekarang, jendela itu masih terbuka, tapi akan mengecil seiring suplai meningkat. Tidak ada yang tahu kapan jendela itu akan menutup, tapi menunggu terlalu lama sambil berharap passif biasanya bukan strategi yang bagus di pasar yang sedang bergerak secepat ini.",
+        ],
+      },
+      {
+        heading: "Konteks Indonesia: siapa yang benar-benar merekrut dan berapa yang benar-benar dibayar",
+        paragraphs: [
+          "Dari sisi permintaan, segmen yang paling aktif merekrut posisi AI bergaji tinggi di Indonesia adalah perbankan dan fintech besar, perusahaan telekomunikasi, e-commerce dan ride-hailing, serta startup teknologi yang sudah di tahap lanjut. Beberapa BUMN strategis juga mulai membentuk tim AI internal, biasanya dengan nama seperti pusat data dan analitik, walaupun gaji yang ditawarkan di sektor ini umumnya lebih rendah dari sektor swasta. Untuk industri kreatif, manufaktur, dan pertanian, permintaan masih terbatas dan biasanya berupa pilot project dengan satu atau dua posisi saja, belum menjadi permintaan yang konsisten.",
+          "Dari sisi gaji, jangkauan yang lebih realistis untuk pasar Indonesia adalah Rp400 juta sampai Rp1,2 miliar per tahun untuk posisi AI engineer berpengalaman di perusahaan besar di Jakarta, dan Rp1,5 sampai Rp3 miliar untuk kepala tim atau arsitek AI. Angka Rp2 miliar yang ramai dibicarakan adalah batas atas yang realistis untuk kandidat dengan rekam jejak kuat dan kemampuan yang sangat spesifik, bukan angka rata-rata yang bisa diharapkan oleh setiap orang yang baru lulus bootcamp. Ada beberapa posisi di startup tahap awal yang memasang angka lebih tinggi, tapi di sana gaji besar biasanya diimbangi dengan ekuitas yang nilainya tidak pasti, dan itu perlu diperhitungkan secara terpisah.",
+          "Untuk ASN dan pekerja profesional di luar Jakarta, ceritanya berbeda lagi. Peluang ada, tapi biasanya berupa pelatihan ulang atau penugasan khusus, bukan rekrutmen murni. Beberapa kementerian dan pemerintah daerah sudah mulai membentuk gugus tugas AI, tapi gaji untuk posisi ASN masih mengikuti skala yang berlaku, dan itu membuat jalur ASN kurang menarik bagi talenta yang punya opsi di sektor swasta. Sebaliknya, bagi ASN yang sudah berada di posisi strategis dan mendapat pelatihan AI yang serius, kombinasi stabilitas kerja dan kemampuan baru ini bisa menjadi leverage yang menarik, terutama untuk mendorong transformasi digital di instansinya masing-masing.",
+        ],
+      },
+      {
+        heading: "Apa yang patut diperhatikan sebelum memutuskan mengejar salah satu dari ketujuh profesi ini",
+        paragraphs: [
+          "Sebelum memutuskan mendaftar bootcamp atau mengambil pinjaman untuk pelatihan ulang, ada beberapa hal yang lebih pragmatis untuk dipertimbangkan. Pertama, periksa lowongan aktual dari perusahaan yang Anda minati, bukan hanya artikel viral. Kedua, identifikasi skill yang benar-benar diminta di lowongan itu dan bandingkan dengan kemampuan Anda saat ini, jangan hanya mengandalkan nama posisi yang sedang tren. Ketiga, pertimbangkan jalur masuk yang realistis: kalau Anda sudah lima tahun di bidang teknik data, jalur ke MLOps engineer atau AI engineer lebih pendek daripada jalur ke AI ethics specialist yang biasanya memerlukan latar belakang hukum atau kebijakan. Keempat, jangan mengabaikan kemampuan komunikasi dan pemahaman bisnis, karena itu yang sering membedakan kandidat yang cepat naik dengan yang stuck di level yang sama selama bertahun-tahun.",
+          "Dalam pengujian editorial Wawasan AI, daftar tujuh profesi AI bergaji tinggi layak dibaca sebagai penanda bahwa pasar kerja Indonesia sedang bertransisi, dan transisi itu memberi peluang nyata bagi mereka yang mau berinvestasi waktu untuk membangun skill yang relevan. Tapi daftar itu juga layak dibaca sebagai peringatan agar tidak semua orang berlomba ke jalur yang sama tanpa memahami bahwa pasar tenaga kerja, seperti pasar lainnya, akan menyesuaikan penawaran dan permintaan dengan caranya sendiri. Untuk yang sedang merencanakan langkah kariernya, informasi terbaik datang dari lowongan aktual, percakapan dengan orang yang sudah bekerja di posisi itu, dan eksperimen langsung dengan proyek-proyek kecil yang menunjukkan kemampuan yang relevan dengan posisi yang Anda incar. Itu cara paling jujur untuk menjawab apakah daftar tujuh profesi itu adalah peluang nyata bagi Anda, atau hanya headline yang kedengarannya menarik tanpa fondasi yang kuat.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
