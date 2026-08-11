@@ -1,0 +1,155 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "11 Agustus 2026",
+  "period": {
+    "date": "2026-08-11",
+    "label": "11 Agustus 2026",
+    "path": "/repo/daily/2026/08/11"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-11T00:06:45.299Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ailyProject/aily-blockly",
+      "owner": "ailyProject",
+      "repo": "aily-blockly",
+      "description": "AI IDE for hardware development, support Arduino, MicroPython, ESP32, STM32, RP2040, Nrf5x...",
+      "githubUrl": "https://github.com/ailyProject/aily-blockly",
+      "trendshiftUrl": "https://trendshift.io/repositories/21969",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "IoT"
+      ],
+      "dateCreated": "2024-11-21T10:32:26Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "MiniMax-AI/MiniMax-H3",
+      "owner": "MiniMax-AI",
+      "repo": "MiniMax-H3",
+      "description": "",
+      "githubUrl": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "trendshiftUrl": "https://trendshift.io/repositories/103885",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2026-07-30T08:41:09Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "topics": [
+        "Data visualization"
+      ],
+      "dateCreated": "2026-04-16T18:01:16Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "semantica-agi/semantica",
+      "owner": "semantica-agi",
+      "repo": "semantica",
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "githubUrl": "https://github.com/semantica-agi/semantica",
+      "trendshiftUrl": "https://trendshift.io/repositories/18986",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2025-06-25T10:41:00Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "PrimeIntellect-ai/prime-agent",
+      "owner": "PrimeIntellect-ai",
+      "repo": "prime-agent",
+      "description": "Prime Agent is a self-improving RLM agent that can be used for coding workflows, or even long-running autonomous tasks.",
+      "githubUrl": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/104249",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-08T01:42:41Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Comfy-Org/ComfyUI",
+      "owner": "Comfy-Org",
+      "repo": "ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "githubUrl": "https://github.com/Comfy-Org/ComfyUI",
+      "trendshiftUrl": "https://trendshift.io/repositories/17421",
+      "language": "Python",
+      "topics": [
+        "AI image generation",
+        "AI workflow"
+      ],
+      "dateCreated": "2023-01-17T03:15:56Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "QwenLM/Qwen-MM-Plugins",
+      "owner": "QwenLM",
+      "repo": "Qwen-MM-Plugins",
+      "description": "Make any agent harness multimodal-native.",
+      "githubUrl": "https://github.com/QwenLM/Qwen-MM-Plugins",
+      "trendshiftUrl": "https://trendshift.io/repositories/108440",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-07-29T09:14:34Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
+      "language": "Python",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2026-01-10T06:43:20Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "oil-oil/oil-motion",
+      "owner": "oil-oil",
+      "repo": "oil-motion",
+      "description": "Create smooth, responsive interactive web animations.",
+      "githubUrl": "https://github.com/oil-oil/oil-motion",
+      "trendshiftUrl": "https://trendshift.io/repositories/106527",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-07T12:36:33Z"
+    }
+  ]
+}

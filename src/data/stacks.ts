@@ -2611,6 +2611,47 @@ export const stacks: Review[] = [
     date: "2026-08-10",
     featured: false,
   },
+  {
+    slug: "mem-ai",
+    name: "Mem AI",
+    tagline: "Workspace catatan personal dengan AI agent yang mengingat konteksmu",
+    tags: ["Mem", "Freemium", "Productivity", "Notes"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "Mem AI adalah workspace catatan yang belajar dari apa yang kamu simpan -- bukan aplikasi notes tradisional yang memaksamu memilih folder, tag, atau struktur berjenjang. Setiap note yang masuk otomatis dikaitkan dengan note lain lewat Similar Mem, lalu Mem Agent bisa menjawab pertanyaan, membuat draf, dan memanggil rapat dari konteks yang sudah tersimpan berbulan-bulan. Untuk pengguna yang frustrasi dengan app note yang semakin terasa seperti kerja administrasi, Mem adalah pendekatan yang berbeda secara fundamental: catat dulu, biarkan AI yang merawat keterkaitan.",
+    pros: [
+      "Similar Mem otomatis menemukan note yang relevan dari waktu ke waktu, sehingga satu ide yang dicatat enam bulan lalu muncul kembali ketika kamu menulis sesuatu yang terkait hari ini",
+      "Push-to-Remember di Mac dan Windows menahan shortcut, menangkap pikiran lewat suara, dan mengirimnya langsung ke Mem Agent tanpa harus membuka app",
+      "Mem Agent di Proactive tier ($99/bulan) belajar apa yang penting dari apa yang kamu simpan, lalu memeriksa kembali lewat Heads Up ketika ada proyek yang butuh perhatian",
+      "Web Clipper dan Voice Mode menyatu dengan mulus: simpan halaman web dan rekaman rapat masuk ke workspace yang sama, dengan transkrip dan ringkasan siap pakai",
+      "Mem X dan API terbuka memungkinkan developer membangun integrasi ke pipeline otomatis, menjadikan Mem bukan sekadar app notes tetapi juga lapisan memori untuk agen lain"
+    ],
+    cons: [
+      "Mem Agent yang benar-benar cerdas hanya tersedia di Proactive tier $99/bulan -- jauh di atas budget kebanyakan pengguna Indonesia, setara Rp1,7 juta per bulan dengan kurs Rp17.000 per dolar",
+      "Free tier sangat terbatas: 25 catatan dan 25 pesan Agent per bulan, cukup untuk evaluasi awal tetapi tidak cukup untuk penggunaan nyata",
+      "Web app berbasis Electron dengan akselerasi GPU tertentu yang membuat pengalaman di laptop kelas bawah -- terutama yang tanpa GPU diskrit -- bisa terasa lambat pada workspace besar",
+      "Tidak ada opsi self-host atau export raw ke format terbuka Markdown yang aman -- data terkunci di cloud Mem, berbeda dengan Obsidian atau Logseq"
+    ],
+    verdict:
+      "Pendekatan yang menarik untuk orang yang lelah dengan struktur notes tradisional, dengan harga Free untuk coba-coba dan Pro $12/bulan yang masuk akal untuk produktivitas pribadi. Catatan utamanya untuk pengguna Indonesia: Mem Agent yang paling berguna ada di Proactive $99/bulan -- kalau budget kamu di bawah Rp500.000 per bulan, Workspace tier sudah memberikan nilai lebih dari Notion AI untuk catatan personal.",
+    body: [
+      "Mem AI datang dari asumsi yang berbeda dari kebanyakan app notes. Notion, Obsidian, dan Evernote memulai dari struktur -- folder, database, tag, atau graf -- lalu meminta pengguna memposisikan setiap catatan ke dalam struktur itu. Mem memulai dari catatan itu sendiri: tulis atau rekam apa pun, simpan, dan biarkan AI yang menemukan keterkaitan lewat fitur Similar Mem, koleksi otomatis, dan Mem Agent yang akhirnya dapat menjawab 'apa yang saya pikirkan tentang X tiga bulan lalu' dengan akurasi yang mengejutkan. Hasilnya adalah app notes yang terasa lebih seperti partner berpikir daripada sistem arsip, terutama untuk pengguna Indonesia yang sering menulis dalam Bahasa Indonesia campur Inggris atau Arab campur Latin -- Mem cukup toleran terhadap gaya penulisan informal dan jargon yang sering muncul di catatan rapat bisnis.",
+      "Fitur paling khas pada 2026 adalah Mem Agent, yang hanya datang dengan paket Proactive. Agent ini bukan sekadar chat yang memindai nota -- ia membaca koleksi, kalender, dan email yang terhubung, lalu membangun pemahaman tentang proyek apa yang sedang berjalan, siapa yang terlibat, dan apa yang perlu ditindaklanjuti. Heads Up menjadi proaktif: Agent memberi notifikasi pagi tentang rapat yang belum ditindaklanjuti, klien yang belum dibalas, atau proyek yang tidak gerak lebih dari dua minggu. Push-to-Remember, tersedia di Mac dan Windows, menahan shortcut global, membuka mikrofon, dan mengirim pesan suara langsung ke Agent -- kita dapat membuang ide yang muncul di tengah meeting tanpa harus membuka app atau kehilangan alur percakapan. Meeting mode otomatis join Google Meet atau Zoom, merekam, mentranskrip, lalu menghasilkan halaman ringkasan dengan action items dan link rekaman.",
+      "Harga per Agustus 2026 mengikuti tiga tingkat yang sederhana. Free memberi 25 catatan, 25 pesan Agent, dan 25 halaman PDF yang dapat dicerna per bulan -- cukup untuk dua minggu evaluasi. Mem Pro seharga USD 12 per bulan (sekitar Rp204.000 dengan kurs Rp17.000 per dolar) membuka catatan tanpa batas, 250 pesan Agent, pemahaman PDF tanpa batas, integrasi email, API access, dan Meeting Briefings. Mem Proactive seharga USD 99 per bulan (sekitar Rp1,68 juta) menambahkan Agent yang benar-benar proaktif dengan Heads Up, kalender penuh, dan prioritas dukungan. Bandingkan dengan Notion AI yang jadi bagian paket Business USD 20 per user per bulan dan Custom Agents USD 10 per 1.000 credits, atau ChatGPT Plus yang flat USD 20 per bulan untuk GPT-5 dengan memori yang jauh lebih pendek -- Mem Proactive lebih mahal dari keduanya, tapi pasokannya adalah personal AI dengan memori yang bertahan berbulan-bulan, bukan sesi percakapan.",
+      "Untuk konteks Indonesia, Mem paling realistis di empat skenario. Pertama, founder dan solopreneur yang menangani banyak proyek paralel -- klien A, klien B, produk internal -- dan lelah kehilangan konteks ketika pindah dari satu ke yang lain; Heads Up dan Similar Mem mengurangi waktu pengingat alokasi dari menit menjadi detik. Kedua, konsultan dan advisor yang menyiapkan briefing untuk rapat dari puluhan nota lawas; Q&A berdasarkan koleksi yang sudah bertahun-tahun menggantikan kerja riset manual. Ketiga, eksekutif dan manajer yang mencatat keputusan cepat di rapat dan butuh agen yang dapat menulis draf email tindak lanjut atau merangkum rapat bulan lalu. Keempat, content creator dan jurnalis yang riset dari banyak sumber -- web clipper, transkrip wawancara, dan note dari jurnal -- semuanya masuk ke workspace yang sama. Saran editorial: mulai dari Free untuk dua minggu, catat berapa kali Similar Mem benar-benar mengangkat nota lama yang relevan, lalu jika nilainya terasa, pindah ke Pro $12/bulan -- Proactive $99/bulan baru masuk akal kalau kamu benar-benar mempercayai AI untuk own konteks kerjamu, sesuatu yang kebanyakan orang Indonesia belum siap delegasikan pada harga segitu.",
+    ],
+    link: "https://mem.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-11",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
