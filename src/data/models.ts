@@ -3069,6 +3069,50 @@ export const models: Review[] = [
     date: "2026-08-11",
     featured: false,
   },
+  {
+    slug: "deepseek-v4-pro",
+    name: "DeepSeek V4 Pro (Reasoning, Max Effort)",
+    tagline: "Varian reasoning paling serius DeepSeek \u2014 coding 59,4 dan intel 45,3 dengan mode Max Effort",
+    tags: ["DeepSeek", "Open Weight", "Reasoning", "Agent"],
+    score: 8.6,
+    scores: [
+      { label: "Penalaran", value: 8.4 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 8.4 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 45.3,
+    aa_coding_index: 59.4,
+    aa_price_input: 0.435,
+    aa_price_output: 0.87,
+    aa_synced_at: "2026-08-12",
+    summary:
+      "Varian reasoning flagship keluarga V4 DeepSeek, dirilis 24 April 2026 dengan mode Max Effort sebagai pembeda utama dari V4 Flash 0731 \u2014 intelligence index 45,3 (sumber: Artificial Analysis) menembus papan atas dunia frontier dengan biaya inference yang relatif moderat, sementara coding index 59,4 (sumber: Artificial Analysis) menjadi salah satu skor tertinggi di antara model reasoning yang sudah diulas Wawasan AI. Bedanya dari V4 Flash 0731: V4 Pro diposisikan untuk workload penalaran terdalam \u2014 riset multi-langkah, agen penelitian otonom, code architect dengan chain-of-thought panjang \u2014 dengan trade-off harga yang lebih tinggi ($0,435 input / $0,87 output per 1M) demi kedalaman reasoning yang lebih kuat.",
+    pros: [
+      "Coding index 59,4 (sumber: Artificial Analysis) \u2014 salah satu skor tertinggi di antara model reasoning papan atas, di bawah Claude Opus 4.8 (74,3) dan Kimi K3 (76,2) tapi memimpin untuk kelas value-tier reasoning",
+      "Mode Max Effort mengaktifkan chain-of-thought panjang untuk workload penalaran terdalam \u2014 riset multi-langkah, agen penelitian otonom, code architect dengan rancangan berlapis",
+      "Harga inference moderat: $0,435 input dan $0,87 output per juta token \u2014 sekitar 9x lebih murah dari Claude Opus 4.8 ($5/$25) untuk intel yang sebanding, ideal untuk pipeline reasoning volume-tinggi",
+      "Throughput output 70,5 token/detik dengan TTFT 1,34 detik (sumber: Artificial Analysis) \u2014 cukup snappy untuk UX interaktif, meski bukan yang tercepat di kelas papan atas (V4 Flash 0731 memimpin 108 tps)",
+    ],
+    cons: [
+      "Intelligence index 45,3 (sumber: Artificial Analysis) di bawah frontier Asia papan atas (Kimi K3 57,1, Claude Opus 4.8 57,3) \u2014 untuk workload penalaran terdalam (riset filosofis, pembuktian teoritis), gap ke flagship Asia masih 12+ poin",
+      "Throughput 70,5 token/detik lebih lambat dari V4 Flash 0731 (108 tps) \u2014 untuk streaming chat real-time dan pipeline interaktif volume-tinggi, V4 Flash masih lebih cocok",
+      "Math index tidak tersedia di response API AA \u2014 kualitas numerik perlu diuji sendiri per use case spesifik, terutama untuk workload finansial atau saintifik",
+      "Akses API DeepSeek sempat mengalami lonjakan trafik dan rate-limit di rilis-rilis besar \u2014 untuk pipeline produksi volume-tinggi yang butuh SLA ketat, perlu strategi fallback ke V4 Flash 0731 atau Qwen3.8 Max",
+    ],
+    verdict:
+      "DeepSeek V4 Pro adalah jawaban DeepSeek untuk pasar reasoning value-tier papan atas \u2014 bukan yang punya intel tertinggi di liga ini, tapi kombinasi coding 59,4, mode Max Effort, dan harga $0,435/$0,87 menjadikannya pilihan rasional untuk developer Indonesia yang butuh penalaran serius tanpa harus membayar kelas Opus atau Kimi K3.",
+    body: [
+      "DeepSeek V4 Pro adalah varian reasoning flagship keluarga V4 DeepSeek yang dirilis 24 April 2026, diposisikan satu tingkat di atas V4 Flash 0731 (rilis 31 Juli 2026, intel 51,8) untuk kuadran workload yang berbeda. V4 Pro sengaja menyasar reasoning terdalam \u2014 chain-of-thought panjang, riset multi-langkah, arsitektur agent yang butuh penalaran berlapis \u2014 dengan mode Max Effort sebagai pembeda utama yang mengaktifkan kapasitas penalaran penuh per token yang dihasilkan. Intelligence index 45,3 (sumber: Artificial Analysis) menaruhnya di papan atas dunia frontier (di atas Claude Opus 4.5 dengan 43,1 dan sejajar dengan GPT-5 di 44,6), meski masih di bawah Kimi K3 (57,1) dan Claude Opus 4.8 (57,3). Yang menarik: coding index 59,4 (sumber: Artificial Analysis) menjadi salah satu skor tertinggi di antara model reasoning papan atas, di bawah Claude Opus 4.8 (74,3) dan Kimi K3 (76,2) tapi memimpin untuk kelas value-tier reasoning \u2014 menjadikan V4 Pro sekaligus model penalaran murni dan model coding yang serius.",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic coding dan riset multi-langkah, DeepSeek V4 Pro menunjukkan karakter flagship reasoning: setiap keputusan tool-use dan perancangan arsitektur software dipertimbangkan matang dengan chain-of-thought yang lebih panjang dibanding V4 Flash 0731. Throughput output median 70,48 token/detik (sumber: Artificial Analysis) mendukung UX interaktif tanpa jeda panjang \u2014 bukan yang tercepat di kelas papan atas (V4 Flash 0731 di 108,6 tps memimpin), tapi cukup snappy untuk streaming chat, debugging interaktif, dan pipeline riset. TTFT 1,34 detik (sumber: Artificial Analysis) lumayan untuk kelas reasoning, tidak secepat V4 Flash 0731 (0,999 detik) tapi dalam batas wajar untuk reasoning yang memang butuh waktu inisialisasi lebih. Coding index 59,4 (sumber: Artificial Analysis) menjadi bukti positioning V4 Pro di liga agentic coding papan atas: skor ini hanya berbeda tipis dari Claude Opus 4.7 (Non-reasoning, High Effort) dan Grok Build 0.1 0616, menaruhnya di papan atas untuk refactor multi-file, code review arsitektural, dan code planning kompleks. Math index tidak tersedia di benchmark AA untuk entry ini, sehingga kualitas numerik perlu diuji sendiri per use case spesifik.",
+      "Aspek harga paling menarik dari perspektif pasar Indonesia: V4 Pro dijual $0,435 per juta token input dan $0,87 output \u2014 sekitar 11x lebih murah dari Claude Opus 4.8 ($5/$25) untuk intel yang hanya 12 poin lebih rendah, dan sekitar 7x lebih murah dari Kimi K3 ($3/$15). Untuk developer Indonesia yang menghitung dolar per inference, proposisi value-nya jelas: bayar 1/10 dari harga flagship Barat, dapat 80% dari kapabilitas penalaran. Bandingkan dengan V4 Flash 0731 di $0,14/$0,28 \u2014 V4 Pro memang 3x lebih mahal di input dan output, tapi V4 Pro memberikan kedalaman reasoning yang V4 Flash tidak jangkau dengan mode non-Max-Effort. Strategi penggunaan yang masuk akal: V4 Pro untuk pipeline riset otonom, code architect berlapis, dan agen yang butuh penalaran multi-langkah; V4 Flash 0731 untuk chat interaktif volume-tinggi dan summarization massal; Claude Opus 4.8 atau Kimi K3 untuk penalaran terdalam yang butuh intel 57+ tanpa kompromi harga.",
+      "Kelemahan yang teridentifikasi: intelligence index 45,3 (sumber: Artificial Analysis) masih di bawah frontier Asia papan atas (Kimi K3 57,1, Claude Opus 4.8 57,3) \u2014 untuk riset filosofis, pembuktian teoritis, atau workload penalaran yang benar-benar terdalam, V4 Pro memberikan 80% kapabilitas dengan harga 10%, dan bagi banyak use case itulah yang paling rasional. Throughput 70,5 token/detik (sumber: Artificial Analysis) lebih lambat dari V4 Flash 0731 (108,6 tps) \u2014 untuk workload latency-sensitif, V4 Flash tetap pilihan lebih baik. Math index tidak tersedia di benchmark AA, sehingga kualitas numerik tidak terukur standar \u2014 untuk workload finansial, akuntansi, atau saintifik, perlu pengujian sendiri. Akses API DeepSeek tersedia lewat platform.deepseek.com dan mitra regional \u2014 untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional atau crypto), dan compliance data sebelum adopsi produksi. Strategi pemakaian paling rasional: DeepSeek V4 Pro untuk pipeline riset otonom dan code architect agent yang sensitif terhadap coding 59,4 dan mode Max Effort; DeepSeek V4 Flash 0731 untuk volume-tinggi dan streaming UX; Kimi K3 atau Claude Opus 4.8 untuk workload penalaran terdalam tanpa kompromi harga.",
+    ],
+    link: "https://www.deepseek.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-12",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
