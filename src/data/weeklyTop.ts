@@ -1734,7 +1734,27 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                                         "Dukungan multi-provider LLM (OpenAI, Moonshot Kimi, DeepSeek, Azure, Ollama lokal) dan TTS (Edge TTS default gratis, plus opsi premium) — fleksibel sesuai budget dan kebijakan data, plus render FFmpeg yang bisa diatur codec/resolusi/bitrate granular.",
                                                                         "MIT-licensed dengan binary release Windows/macOS/Linux dan Docker Compose resmi — 100k+ bintang dan 14k+ fork menjadikannya salah satu proyek AI video paling mapan untuk kreator Indonesia yang ingin otomasi Reels/Shorts harian.",
                                                                       ],
-                                                                    }
+                                                                    },
+                                                      "paperclipai/paperclip": {
+                                                        description:
+                                                          "Orkestrator open-source (Node.js + React, MIT, 77k+ bintang) untuk memimpin 'perusahaan' berisi tim agen AI — pasang goal bisnis, hire agen dari Claude Code/Codex/Cursor/OpenClaw/HTTP, lalu monitor kerja dan biaya dari satu dashboard.",
+                                                        highlights: [
+                                                          "Konsepnya tegas: 'kalau OpenClaw itu karyawan, Paperclip itu perusahaannya' — Node.js server + React UI yang orkestrasi banyak agen jadi satu tim dengan org chart, budget, governance, dan goal alignment, bukan sekadar task manager.",
+                                                          "Bring-your-own-agents: CEO, CTO, engineer, designer, marketer — siapa pun bisa di-hire dari Claude Code, Codex, Cursor, OpenClaw, Bash, atau HTTP webhook; campur provider LLM berbeda dalam satu workflow yang sama.",
+                                                          "Workflow 'manage goals, not pull requests': user definisikan tujuan bisnis (misal 'capai $1M MRR untuk app note-taking AI'), tim agen menyusun strategi, user approve, set budget, lalu monitor progres dari dashboard — fokus ke outcome, bukan ticket.",
+                                                          "MIT-licensed dan di-host sendiri (self-host), relevan untuk founder Indonesia atau tim kecil yang ingin 'punya AI workforce' dengan kontrol biaya dan audit penuh, tanpa lock-in SaaS proprietary yang menghitung per-seat per-agent.",
+                                                        ],
+                                                      },
+                                                      "antirez/h3.c": {
+                                                        description:
+                                                          "Engine inferensi C native (oleh Salvatore Sanfilippo, pencipta Redis) untuk model MiniMax-H3 di Apple Silicon — pakai Metal compute, prompt-to-video + audio, first/last-frame conditioning, dan Ref2VA references untuk image/video/audio.",
+                                                        highlights: [
+                                                          "Implementasi native MiniMax-H3 (Hailuo) di Apple Silicon lewat Metal — ditulis dalam C murni oleh antirez (legenda di balik Redis), dengan fokus pada performa dan efisiensi memori di M3 Max dan M5 Max lewat optimasi H3-specific yang incremental.",
+                                                          "Workflow 'Iris-style' interaktif: prompt → video pendek (default 22 frame @ 24fps), sesi menyimpan BF16 conditioning dan prepared DiT di memori sehingga pengulangan prompt dengan seed berbeda tidak perlu load ulang — iterasi cepat untuk motion designer.",
+                                                          "First/last-frame conditioning + Ref2VA multi-reference: bisa anchor frame pembuka/penutup (misal opening.png + ending.png), atau tambahkan gambar referensi berurutan sebagai `<Picture 1>`, `<Picture 2>` yang jadi konteks visual tanpa label nama file.",
+                                                          "CLI lengkap (--info, --profile, --show) plus fase timings, render output ke .mp4 lewat FFmpeg, dan target eksplisit Apple Silicon — bukan wrapper Python, melainkan engine native C yang menunjukkan inference video modern masih bisa ditulis 'low-level' tanpa kehilangan ergonomics.",
+                                                        ],
+                                                      }
                                                       };
 
                             // Helper: lookup dengan fallback ke template-generated highlights
