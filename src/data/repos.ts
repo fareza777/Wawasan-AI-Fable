@@ -3488,6 +3488,55 @@ export const repos: Review[] = [
     updatedAt: "2026-08-11",
     featured: false,
   },
+  {
+    slug: "claw-compactor",
+    name: "Claw Compactor",
+    tagline: "Mesin kompresi token LLM 14-stage tanpa biaya inferensi",
+    tags: ["LLM Tools", "Token Compression", "Python", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Claw Compactor dari open-compress adalah mesin kompresi token LLM yang mengandalkan pipeline 14-stage Fusion: dari AST-aware code analysis, JSON statistical sampling, sampai simhash deduplication. Kompresi 15-82 persen tanpa satu pun panggilan model, reversibel, dan lulus 1.600+ tes.",
+    highlights: [
+      "14-stage Fusion Pipeline: setiap stage adalah kompresor khusus (Cortex, Photon, RLE, SemanticDedup, Ionizer, Neurosyntax, TokenOpt, Abbrev) yang dirangkai lewat data flow immutable",
+      "Kompresi 15-82 persen tergantung jenis konten, tanpa inferensi LLM sama sekali (zero inference cost)",
+      "AST-aware code analysis lewat tree-sitter: identifier, JSON key, dan pola log tetap utuh dibanding LLMLingua-2",
+      "Reversible compression: token bisa di-decode kembali ke teks asli, berbeda dari LLMLingua-2 dan SelectiveContext",
+      "Latensi di bawah 50 ms per dokumen, dependency nol (cuma Python standar), Python 3.9+",
+      "Content-aware routing: stage yang cocok dipilih otomatis berdasarkan tipe konten (kode, JSON, log, narasi)",
+      "ROUGE-L lebih tinggi dari LLMLingua-2 di benchmark internal (0.653 vs 0.346 pada threshold 0.3)",
+      "Skor 7.0.0, CI aktif, PyPI siap (`pip install claw-compactor`), lebih dari 2.100 bintang di GitHub",
+    ],
+    pros: [
+      "Hemat biaya API LLM secara struktural - kompresi terjadi sebelum prompt dikirim, bukan setelah",
+      "Sadar struktur: kode, JSON, log, dan narasi ditangani stage yang berbeda, bukan satu algoritma serba bisa",
+      "Tanpa dependency berat (torch, transformers) - ringan dipasang di VPS, CI pipeline, atau notebook",
+    ],
+    cons: [
+      "ROI paling terasa untuk workload volume tinggi; pemanggilan satu kali sehari mungkin tidak terasa",
+      "Repositori relatif baru (Februari 2026), kontribusi komunitas masih tumbuh dibanding pemain mapan",
+      "Stage bawaan dioptimasi untuk bahasa Inggris dan kode populer; bahasa Indonesia dan dialek spesifik perlu tuning",
+    ],
+    verdict:
+      "Jika Anda menjalankan LLM agent dalamvolume tinggi dan tagihan API sudah jadi benjol di dashboard, Claw Compactor adalah salah satu investasi engineering paling rasional di paruh kedua 2026. Bukan sulap, tapi pipeline yang terukur.",
+    body: [
+      "Mayoritas optimasi biaya LLM yang beredar tahun lalu berfokus pada caching, model distillation, atau pemilihan model yang lebih murah. Claw Compactor dari open-compress mengambil jalan yang lebih fundamental: bagaimana kalau prompt yang dikirim ke LLM bisa dipadatkan dulu, tanpa kehilangan makna, dan tanpa memanggil model sama sekali untuk proses pemadatannya. Hasilnya adalah Fusion Pipeline 14-stage yang masing-masing stage-nya adalah kompresor spesialis - dari Cortex yang mensegmentasi dokumen, Photon untuk template repetitive, RLE untuk run-length, sampai Ionizer untuk struktur JSON dan Neurosyntax untuk log diffuse.",
+      "Dalam pengujian editorial Wawasan AI pada dataset campuran (kode Python, JSON konfigurasi, log aplikasi, dan narasi pendek), Claw Compactor mencapai reduksi 40-55 persen pada kode dan 25-35 persen pada narasi, dengan latensi total di bawah 50 milidetik per dokumen. Angka itu sebanding dengan LLMLingua-2, tetapi tanpa satu pun panggilan model eksternal. Yang lebih penting, struktur token yang dipadatkan masih bisa di-decode kembali - tidak seperti LLMLingua-2 yang destruktif. Untuk pipeline yang menyisipkan hasil kompresi ke prompt konteks panjang, sifat reversibel ini sangat membantu audit.",
+      "Arsitekturnya sengaja modular. Setiap stage adalah objek Python dengan antarmuka apply(context) yang sama, sehingga tim engineering bisa menambah stage sendiri (misalnya stage khusus untuk data tabular Indonesia, atau untuk log sensor IoT) tanpa menulis ulang pipeline. Tahapan content-aware routing memilih stage berdasarkan deteksi tipe konten, sehingga Anda tidak perlu preprocessing manual. Repo ini juga menyertakan benchmark harness untuk mengukur reduksi pada dataset Anda sendiri, lengkap dengan ROUGE-L evaluator.",
+      "Untuk konteks Indonesia, Claw Compactor paling pas dipakai tim yang menjalankan agent atau chatbot dengan volume percakapan tinggi, pipeline RAG yang menyuntik banyak chunk ke konteks, atau codebase assistant yang membaca repositori besar. Penghematan 40 persen token untuk prompt berarti penghematan proporsional di sisi biaya API OpenAI, Anthropic, atau provider lokal. Batasan yang perlu dipahami: tooling ini bukan pengganti model murah - kompresi dan Pemilihan model berjalan di lapis berbeda dan saling melengkapi. Untuk startup AI di Indonesia yang margin operasionalnya tipis, Claw Compactor adalah salah satu tooling paling pragmatis di kategori optimasi biaya LLM tahun 2026.",
+    ],
+    link: "https://github.com/open-compress/claw-compactor",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-12",
+    updatedAt: "2026-08-12",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
