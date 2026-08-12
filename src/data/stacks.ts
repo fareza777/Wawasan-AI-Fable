@@ -2652,6 +2652,47 @@ export const stacks: Review[] = [
     date: "2026-08-11",
     featured: false,
   },
+  {
+    slug: "leonardo-ai",
+    name: "Leonardo.AI",
+    tagline: "Platform image gen untuk game asset dan creative pro",
+    tags: ["Leonardo", "Freemium", "Image Gen", "Game Assets"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.7 },
+      { label: "Pengalaman Pengguna", value: 8.8 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Leonardo.AI adalah platform image generation yang berdiri sendiri dari pendekatan Midjourney atau DALL-E: ia menjual satu creative suite utuh -- generator gambar, video, dan 3D texture -- lengkap dengan model fine-tune pribadi, control layer, dan workflow iteratif yang dirancang untuk studio kecil dan freelancer, bukan konsumen kasual. Untuk pengguna yang mengelola banyak karakter, aset 3D, atau produk yang harus konsisten lintas frame, Leonardo adalah pilihan yang lebih pragmatis dari Midjourney, dengan API publik dan tier gratis yang murah hati",
+    pros: [
+      "Fine-tune model pribadi (Phoenix, Kino XL, dan custom) dengan 10-30 gambar referensi, menjaga konsistensi karakter, produk, atau gaya di banyak generasi berbeda",
+      "Control layer Canvas (inpainting, outpainting, region edit, sketch-to-image) menyatu dengan generator, menghilangkan kebutuhan lompat ke Photoshop untuk kebanyakan revisi",
+      "Tier gratis 150 token per hari cukup untuk evaluasi serius -- per Agustus 2026, tidak ada platform image gen bertenaga model proprietary yang memberi kuota serupa",
+      "API publik resmi dengan dokumentasi lengkap, plus webhook untuk integrasi ke pipeline e-commerce, dashboard agen, atau workflow otomatisasi lainnya",
+      "3D texture generation dari teks atau gambar (Alchemy 3D) berguna untuk studio game kecil dan desainer Blender yang dulu harus kerjakan manual"
+    ],
+    cons: [
+      "Kualitas artistik murni masih satu tingkat di bawah Midjourney v7 untuk gaya yang menuntut kehalusan sinematik atau fashion editorial",
+      "Sistem token membuat penghitungan biaya tidak transparan untuk pemula -- satu gambar 1024x1024 bisa makan 4-12 token tergantung model dan jumlah iterasi, sehingga rekening membengkak kalau eksperimen panjang",
+      "Antarmuka web semakin padat oleh fitur: editor Canvas, training studio, API console, dan motion -- pengguna baru butuh waktu untuk menemukan alur yang efisien",
+      "Kebijakan komersial pada tier gratis tetap abu-abu: untuk kerja klien atau revenue-generating, perlu Apollon atau Ultra untuk menjamin hak penggunaan komersial penuh"
+    ],
+    verdict:
+      "Pilihan pragmatis untuk studio kecil, freelancer, dan tim kreatif yang perlu konsistensi visual, kontrol model, dan API publik sekaligus. Standar untuk alur kerja image gen berulang pada 2026 -- catatan utamanya adalah kualitas artistik satu tingkat di bawah Midjourney dan sistem token yang tidak selalu intuitif.",
+    body: [
+      "Leonardo.AI tumbuh sebagai platform image gen yang fokus pada workflow kreatif berulang, bukan sekadar generator gambar satu-shot. Sejak pivot dari app konsumen umum ke platform profesional pada 2024, Leonardo membedakan diri lewat beberapa fitur yang sulit dicari di tempat lain pada paket gratis atau murah. Pertama, fine-tune model pribadi: pengguna dapat melatih Phoenix, Kino XL, atau model Leonardo lainnya dengan 10-30 gambar referensi dan satu tag, lalu memanggil model itu untuk hasil yang menjaga konsistensi karakter, produk, atau gaya di banyak generasi -- sesuatu yang biasanya memerlukan LoRA custom di Stable Diffusion, atau Omni Reference Midjourney pada langganan premium. Kedua, Canvas adalah editor yang menyatu dengan generator: inpainting, outpainting, region vary, dan sketch-to-image semuanya terjadi di tab yang sama, tanpa harus unduh ke Photoshop. Ketiga, API publik resmi dengan dokumentasi yang cukup lengkap, plus webhook untuk pipeline otomatis -- ini kunci untuk studio e-commerce, agensi, atau workflow content-generation yang perlu generate ratusan variasi produk dalam satu batch.",
+      "Pada 2026, tiga pembeda utama Leonardo dari Midjourney dan DALL-E adalah kombinasi ekosistem, kontrol, dan harga. Ekosistem: Leonardo adalah banyak hal sekaligus -- generator 2D, generator video (Motion, frame-to-frame), generator 3D texture (Alchemy 3D), editor Canvas, dan training studio. Pengguna yang dulu harus bayar tiga atau empat langganan terpisah (Midjourney + Runway + Sketchfab + LoRA training) bisa mengerucut ke Leonardo untuk sebagian besar workflow. Kontrol: parameter seperti Contrast, Stylize, dan model selector yang granulated memberi kreator kendali yang tidak ada di tool consumer-grade. Harga: tier gratis 150 token per hari (per Agustus 2026) adalah salah satu yang paling murah hati di pasar -- Midjourney tidak punya tier gratis, DALL-E 3 hanya tersedia lewat ChatGPT Plus USD 20 per bulan, dan Flux.1-dev lewat Replicate mengenakan biaya per-gambar. Bandingkan dengan Midjourney Standard USD 30 per bulan (~Rp 510 ribu) yang hanya menawarkan 15 jam Fast GPU tanpa 3D atau training, atau DALL-E 3 lewat ChatGPT Plus USD 20 per bulan (~Rp 340 ribu) yang tidak punya API publik resmi.",
+      "Tentu ada kompromi nyata. Kualitas artistik murni masih satu tingkat di bawah Midjourney v7 untuk gaya yang menuntut kehalusan sinematik, fashion editorial, atau fantasi hiper-realistis -- Midjourney pada dasarnya adalah model dengan fokus tunggal pada estetika, sedangkan Leonardo adalah platform multi-fungsi yang kualitasnya terdistribusi. Sistem token juga membuat penghitungan biaya tidak transparan untuk pemula: satu gambar 1024x1024 bisa makan 4-12 token tergantung model dan jumlah iterasi, sehingga eksperimen panjang bisa membengkak tagihan dengan cepat. Antarmuka web semakin padat oleh fitur, dan pemula sering butuh waktu untuk menemukan alur yang efisien. Lalu ada masalah kebijakan komersial: penggunaan komersial gratis tetap abu-abu untuk banyak pengguna, dan untuk klien atau revenue-generating, paket Apollon atau Ultra diperlukan untuk menjamin hak penuh.",
+      "Untuk konteks Indonesia, Leonardo sangat menarik di empat skenario. Pertama, studio game kecil dan indie developer di Jakarta, Bandung, dan Yogyakarta yang menghasilkan banyak aset 2D dan 3D -- 3D texture generation dan fine-tune model karakter bisa menghemat waktu produksi berminggu-minggu. Kedua, freelancer desain dan agensi kecil yang menawarkan jasa visual berulang (batch e-commerce, social media, iklan) -- API Leonardo memungkinkan pipeline otomatis yang sulit dibangun dengan Midjourney. Ketiga, content creator dan tim marketing yang menghasilkan banyak variasi visual untuk campaign A/B testing -- tier gratis 150 token per hari cukup untuk uji coba, dan paket Apprentice USD 12 per bulan (~Rp 204 ribu) cukup untuk produksi reguler. Keempat, pelajar dan mahasiswa di bidang desain, animasi, atau game development yang belajar image gen tanpa modal -- Leonardo tier gratis lebih ramah untuk eksplorasi dibanding Stable Diffusion yang butuh GPU diskrit. Saran editorial: mulai dari tier gratis dengan satu proyek eksplorasi, lalu bandingkan dengan Midjourney atau Stable Diffusion untuk gaya spesifik yang kamu incar -- Leonardo menang pada workflow berulang dan konsistensi, kalah tipis pada estetika murni.",
+    ],
+    link: "https://leonardo.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-12",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

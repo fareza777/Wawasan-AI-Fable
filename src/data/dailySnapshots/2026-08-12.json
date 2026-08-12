@@ -1,0 +1,159 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "12 Agustus 2026",
+  "period": {
+    "date": "2026-08-12",
+    "label": "12 Agustus 2026",
+    "path": "/repo/daily/2026/08/12"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-12T00:04:44.763Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "topics": [
+        "Data visualization"
+      ],
+      "dateCreated": "2026-04-16T18:01:16Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "antirez/h3.c",
+      "owner": "antirez",
+      "repo": "h3.c",
+      "description": "MiniMax H3 inference engine for Mac computers",
+      "githubUrl": "https://github.com/antirez/h3.c",
+      "trendshiftUrl": "https://trendshift.io/repositories/125522",
+      "language": "C",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2026-08-09T09:12:47Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "githubUrl": "https://github.com/msitarzewski/agency-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/22315",
+      "language": "Shell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-10-13T12:12:29Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "QwenLM/Qwen-MM-Plugins",
+      "owner": "QwenLM",
+      "repo": "Qwen-MM-Plugins",
+      "description": "Make any agent harness multimodal-native.",
+      "githubUrl": "https://github.com/QwenLM/Qwen-MM-Plugins",
+      "trendshiftUrl": "https://trendshift.io/repositories/108440",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-29T09:14:34Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "SMNETSTUDIO/WeChat-AI",
+      "owner": "SMNETSTUDIO",
+      "repo": "WeChat-AI",
+      "description": "",
+      "githubUrl": "https://github.com/SMNETSTUDIO/WeChat-AI",
+      "trendshiftUrl": "https://trendshift.io/repositories/116694",
+      "language": "TypeScript",
+      "topics": [
+        "Chatbot",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-08-10T09:06:43Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "HKUDS/DeepTutor",
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "githubUrl": "https://github.com/HKUDS/DeepTutor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17099",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "RAG"
+      ],
+      "dateCreated": "2025-12-28T15:35:54Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "liquidslr/system-design-notes",
+      "owner": "liquidslr",
+      "repo": "system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "githubUrl": "https://github.com/liquidslr/system-design-notes",
+      "trendshiftUrl": "https://trendshift.io/repositories/25235",
+      "topics": [],
+      "dateCreated": "2024-12-24T01:19:44Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "NanmiCoder/MediaCrawler",
+      "owner": "NanmiCoder",
+      "repo": "MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
+      "githubUrl": "https://github.com/NanmiCoder/MediaCrawler",
+      "trendshiftUrl": "https://trendshift.io/repositories/8291",
+      "language": "Python",
+      "topics": [
+        "Headless browser",
+        "Web scraping"
+      ],
+      "dateCreated": "2023-06-09T12:14:34Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "spinabot/brigade",
+      "owner": "spinabot",
+      "repo": "brigade",
+      "description": "Brigade — Your personal intelligence, built enterprise-grade",
+      "githubUrl": "https://github.com/spinabot/brigade",
+      "trendshiftUrl": "https://trendshift.io/repositories/118354",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-06-19T15:18:17Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "earendil-works/pi",
+      "owner": "earendil-works",
+      "repo": "pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "githubUrl": "https://github.com/earendil-works/pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15471",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-09T14:03:50Z"
+    }
+  ]
+}
