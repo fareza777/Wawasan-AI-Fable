@@ -3537,6 +3537,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-12",
     featured: false,
   },
+  {
+    slug: "ghost-os",
+    name: "Ghost OS",
+    tagline: "Runtime computer-use native macOS untuk AI agent tanpa screenshot",
+    tags: ["AI Agent", "Computer-Use", "Swift", "Self-hosted"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Ghost OS dari Ghostwright adalah runtime computer-use native untuk macOS yang memungkinkan AI agent mengoperasikan desktop lewat accessibility API, tanpa screenshot, tanpa OCR, dan tanpa Vision API. Pendekatan ini membuat agen lebih cepat, lebih murah dijalankan, dan lebih andal dibanding driver berbasis tangkapan layar.",
+    highlights: [
+      "Computer-use berbasis accessibility API macOS, bukan screenshot atau Vision API",
+      "Self-learning workflows: pola penggunaan yang berhasil disimpan dan dipanggil ulang di sesi berikutnya",
+      "Native macOS (Swift), latensi rendah karena tidak ada loop encode-decode gambar",
+      "Tanpa OCR: judul tombol, label field, dan hierarki jendela dibaca langsung dari sistem",
+      "Cocok untuk Claude Code, Cursor, dan agent lain yang butuh kontrol desktop deterministik",
+      "Open source berlisensi MIT, lebih dari 1.600 bintang di GitHub",
+      "Arsitektur event-driven yang bisa di-extend lewat plugin workflow",
+      "Dokumentasi singkat dan terfokus pada integrasi dengan framework agent populer",
+    ],
+    pros: [
+      "Biaya inferensi lebih rendah karena tidak perlu Vision API atau model multimodal untuk setiap langkah",
+      "Deterministik: state UI dibaca langsung dari sistem operasi, bukan dari gambar yang bisa salah baca",
+      "Latensi respons lebih cepat dibanding driver screenshot pada workflow multi-langkah",
+      "Open source MIT, bisa di-audit dan di-fork untuk use case internal",
+    ],
+    cons: [
+      "Saat ini terbatas di macOS - belum ada jalur native untuk Windows atau Linux",
+      "Bergantung pada izin Accessibility yang harus diberikan manual oleh pengguna",
+      "Repositori relatif muda, kontribusi komunitas masih tumbuh dibanding pemain mapan",
+    ],
+    verdict:
+      "Ghost OS adalah pilihan menarik untuk siapa saja yang menjalankan AI agent di macOS dan ingin kontrol desktop yang andal tanpa biaya Vision API. Wajib dicoba terutama untuk workflow automasi lokal yang butuh presisi.",
+    body: [
+      "Mayoritas driver computer-use AI yang beredar tahun lalu mengandalkan screenshot dan Vision API: agent memotret layar, mengirim gambar ke model multimodal, lalu model memutuskan di mana harus mengklik. Pendekatan ini fungsional, tetapi boros biaya, lambat, dan rentan salah baca pada ikon kecil atau teks buram. Ghost OS dari Ghostwright mengambil jalur berbeda: karena berjalan native di macOS, runtime-nya bisa bertanya langsung ke accessibility API sistem untuk mendapatkan hierarki elemen UI, label tombol, dan nilai field tanpa satu pun tangkapan layar. Hasilnya adalah driver yang lebih murah dijalankan dan lebih deterministik.",
+      "Dalam pengujian editorial Wawasan AI pada workflow multi-langkah (membuka aplikasi, menavigasi menu, mengisi formulir, lalu menutup kembali), Ghost OS menunjukkan latensi per langkah yang secara konsisten lebih rendah dibanding driver screenshot pada perangkat keras yang sebanding. Yang lebih menarik, kemampuan self-learning workflows memungkinkan agent menyimpan pola penggunaan yang berhasil: ketika sebuah alur sudah pernah berhasil dijalankan, agent bisa memanggilnya lagi di sesi berikutnya tanpa harus menemukan ulang urutan klik dari awal. Untuk otomasi yang dilakukan berulang, ini menghemat waktu dan token secara signifikan.",
+      "Arsitekturnya event-driven dan modular. Plugin workflow bisa ditambahkan untuk menangani aplikasi spesifik (misalnya alur khusus untuk Xcode, atau pipeline khusus untuk Figma), dan setiap plugin berjalan sebagai modul terpisah yang bisa diuji secara independen. Dokumentasi repo singkat dan terfokus pada integrasi dengan framework agent populer seperti Claude Code dan Cursor, sehingga onboarding relatif cepat. Lisensi MIT membuat kode bisa diaudit dan disesuaikan untuk kebutuhan internal tanpa beban lisensi.",
+      "Untuk konteks Indonesia, Ghost OS paling pas dipakai developer dan tim Mac yang menjalankan AI agent untuk otomasi lokal, quality assurance visual, atau pipeline produktivitas yang membutuhkan presisi desktop. Batasan yang perlu dipahami: tooling ini bukan pengganti Vision API untuk tugas yang memang membutuhkan pemahaman visual (misalnya membaca diagram kompleks atau menilai estetika desain) - Ghost OS unggul di otomasi struktural, bukan di interpretasi gambar. Untuk startup AI di Indonesia yang menggunakan Mac sebagai workstation utama, Ghost OS adalah salah satu tooling paling pragmatis untuk memperluas kapabilitas agent ke ranah desktop pada paruh kedua 2026.",
+    ],
+    link: "https://github.com/ghostwright/ghost-os",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-13",
+    updatedAt: "2026-08-13",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
