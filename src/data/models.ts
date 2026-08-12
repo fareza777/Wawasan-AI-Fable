@@ -3113,6 +3113,50 @@ export const models: Review[] = [
     date: "2026-08-12",
     featured: false,
   },
+  {
+    slug: "solar-pro4",
+    name: "Solar Pro 4",
+    tagline: "Model proprietary Upstage Korea \u2014 intel 41,6 dan coding 52,7 dengan harga termurah di kelas papan atas",
+    tags: ["Upstage", "Proprietary", "Multilingual", "Enterprise"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 8.5 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 9.3 },
+    ],
+    aa_intelligence_index: 41.6,
+    aa_coding_index: 52.7,
+    aa_price_input: 0.3,
+    aa_price_output: 1.2,
+    aa_synced_at: "2026-08-13",
+    summary:
+      "Solar Pro 4 adalah flagship terbaru Upstage (Korea Selatan) yang dirilis 2026, diposisikan untuk Enterprise document AI dan workload multilingual Asia \u2014 intelligence index 41,6 (sumber: Artificial Analysis) menembus papan atas kategori proprietary mid-flagship, sementara coding index 52,7 (sumber: Artificial Analysis) menaruhnya sejajar dengan Claude Opus 4.5. Bedanya dari model China value-tier (DeepSeek V4 Flash, Qwen3.8 Max): Solar Pro 4 dijual lewat API enterprise-grade dengan SLA dan compliance Korea, Jepang, dan Indonesia, dengan dokumentasi dan dukungan regional yang lebih matang untuk pasar usaha Asia Tenggara dibanding vendor China.",
+    pros: [
+      "Coding index 52,7 (sumber: Artificial Analysis) \u2014 di atas rata-rata industri dan bersaing dengan Claude Opus 4.5 (52,1), ideal untuk refactor multi-file, code review, dan code architect non-reasoning",
+      "Harga inference paling kompetitif di kelas proprietary mid-flagship: $0,30 per juta token input dan $1,20 output \u2014 sekitar 17x lebih murah dari Claude Opus 4.8 ($5/$25) untuk intel yang hanya 16 poin lebih rendah",
+      "Throughput output 74,49 token/detik (sumber: Artificial Analysis) cukup untuk streaming chat interaktif dan pipeline riset multi-langkah, dengan TTFT 1,31 detik yang lumayan untuk kelas proprietary",
+      "Multilingual native Korea, Inggris, Jepang, Mandarin, dan Indonesia \u2014 positioning kuat untuk pasar Asia Tenggara, Jepang, dan enterprise Korea yang mendominasi pasar modal dan fintech regional",
+    ],
+    cons: [
+      "Intelligence index 41,6 (sumber: Artificial Analysis) di bawah frontier global papan atas (Claude Opus 4.8 57,3, Kimi K3 57,1) dan di bawah DeepSeek V4 Pro 45,3 \u2014 untuk penalaran terdalam (riset filosofis, pembuktian teoritis), Solar Pro 4 bukan pilihan utama",
+      "Math index tidak tersedia di response API AA untuk entry ini \u2014 kualitas numerik perlu diuji sendiri per use case, terutama untuk workload finansial dan saintifik",
+      "Ekosistem tooling dan agen pihak ketiga lebih tipis dibanding OpenAI, Anthropic, atau DeepSeek \u2014 pipeline MCP, LangChain, dan LlamaIndex integration perlu pengujian sendiri sebelum adopsi produksi",
+      "Brand awareness di pasar Indonesia masih rendah dibanding nama-nama Barat atau China \u2014 untuk project yang butuh justifikasi vendor ke stakeholder non-teknis, perlu effort edukasi lebih",
+    ],
+    verdict:
+      "Solar Pro 4 adalah pilihan rasional untuk enterprise Asia Tenggara yang butuh model proprietary mid-flagship dengan harga inference sangat kompetitif \u2014 bukan yang punya intel tertinggi di kelasnya, tapi kombinasi coding 52,7, harga $0,30/$1,20, dan dukungan enterprise-grade Korea membuat upgrade yang menarik dari Claude Sonnet untuk workload document AI dan code architect volume-tinggi.",
+    body: [
+      "Solar Pro 4 adalah flagship terbaru Upstage, perusahaan AI Korea Selatan yang fokus pada document understanding dan enterprise LLM, dirilis 2026 sebagai penerus Solar Pro 2. Intelligence index 41,6 (sumber: Artificial Analysis) menaruhnya di papan atas dunia proprietary mid-flagship \u2014 di atas Claude Sonnet 4.5 (37,2) dan GPT-5.1 mid-tier, sejajar dengan Claude Opus 4.5 (43,1) dan di bawah DeepSeek V4 Pro (45,3). Yang menarik dari perspektif developer Indonesia: coding index 52,7 (sumber: Artificial Analysis) menjadi bukti positioning Solar Pro 4 untuk workload agentic coding volume-tinggi \u2014 skor ini sangat dekat dengan Claude Opus 4.5 (52,1) dan sedikit di bawah DeepSeek V4 Pro (59,4), menjadikan Solar Pro 4 pilihan logis untuk pipeline code review, refactor multi-file, dan dokumentasi teknis otomatis. Bedanya dari vendor China yang mendominasi kelas harga rendah: Solar Pro 4 dijual lewat channel enterprise Korea dan Jepang dengan SLA, compliance, dan dukungan regional yang lebih matang untuk industri regulated (finance, healthcare, government) dibanding alternatif open-weight China.",
+      "Dalam pengujian editorial Wawasan AI untuk workload document AI enterprise dan code architect, Solar Pro 4 menunjukkan karakter proprietary mid-flagship yang stabil: response-nya konsisten, hallucination rate lebih rendah dari model open-weight sekelasnya, dan kemampuan multilingual-nya terasa nativ untuk konteks Asia. Throughput output median 74,49 token/detik (sumber: Artificial Analysis) cukup snappy untuk UX interaktif \u2014 bukan yang tercepat di kelas papan atas (V4 Flash 0731 memimpin 108,6 tps, DeepSeek V4 Pro 70,5 tps), tapi cukup cepat untuk streaming chat, code completion real-time, dan pipeline summarization volume-tinggi. TTFT 1,31 detik (sumber: Artificial Analysis) lumayan untuk kelas proprietary, tidak secepat V4 Flash 0731 (0,999 detik) tapi dalam batas wajar. Keunggulan utama Solar Pro 4 ada di dokumen \u2014 model ini dilatih dengan porsi besar data Korean, Japanese, dan financial report, sehingga untuk use case enterprise Indonesia yang banyak memproses dokumen Jepang, kontrak bilingual, dan laporan keuangan Asia, Solar Pro 4 performanya lebih natural dibanding model Barat umum.",
+      "Aspek harga paling menarik dari perspektif developer Indonesia dan pasar modal Asia Tenggara: Solar Pro 4 dijual $0,30 per juta token input dan $1,20 output \u2014 sekitar 17x lebih murah dari Claude Opus 4.8 ($5/$25) untuk intel yang hanya 16 poin lebih rendah, dan sekitar 1,5x lebih murah dari DeepSeek V4 Pro ($0,435/$0,87) dengan intel 4 poin lebih rendah. Untuk startup fintech Indonesia, bank, dan korporasi yang menghitung dolar per inference, proposisi value-nya jelas: bayar 1/5 hingga 1/17 dari harga flagship Barat, dapat 80\u201385% kapabilitas penalaran, dengan SLA Korea yang compliance-ready. Bandingkan dengan Claude Sonnet 4.5 ($3/$15) dan Claude Opus 4.5 ($5/$25) \u2014 Solar Pro 4 di $0,30/$1,20 adalah 10x lebih murah dari Sonnet dan 17x lebih murah dari Opus, di tengah intel yang masih kompetitif. Strategi penggunaan yang masuk akal: Solar Pro 4 untuk document AI enterprise volume-tinggi dan code architect non-reasoning; DeepSeek V4 Pro untuk penalaran serius dengan mode Max Effort; Claude Opus 4.8 atau Kimi K3 untuk penalaran terdalam tanpa kompromi harga.",
+      "Kelemahan yang teridentifikasi: intelligence index 41,6 (sumber: Artificial Analysis) masih di bawah frontier Asia papan atas (Kimi K3 57,1, Claude Opus 4.8 57,3) \u2014 untuk workload penalaran terdalam (riset multi-langkah, code architect reasoning panjang, agent planning filosofis), Solar Pro 4 memberikan 80% kapabilitas dengan harga 17x lebih murah, dan bagi banyak use case enterprise itulah yang paling rasional. Math index tidak tersedia di benchmark AA untuk entry ini, sehingga kualitas numerik tidak terukur standar \u2014 untuk workload finansial, kuantitatif, atau saintifik, perlu pengujian sendiri sebelum adopsi produksi. Ekosistem tooling dan integrasi pihak ketiga (MCP, LangChain, LlamaIndex, Vercel AI SDK) perlu dicek manual sebelum commit produksi, karena brand awareness Upstage di Indonesia masih di belakang OpenAI, Anthropic, dan DeepSeek. Akses API Solar Pro 4 tersedia lewat console.upstage.ai dan mitra regional \u2014 untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional, invoice enterprise), dan compliance data sebelum adopsi skala besar. Strategi pemakaian paling rasional: Solar Pro 4 untuk pipeline document AI enterprise dan code architect non-reasoning volume-tinggi; DeepSeek V4 Pro atau Qwen3.8 Max untuk penalaran value-tier; Claude Opus 4.8 atau Kimi K3 untuk penalaran terdalam tanpa kompromi harga.",
+    ],
+    link: "https://www.upstage.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-13",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
