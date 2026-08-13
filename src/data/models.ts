@@ -3157,6 +3157,50 @@ export const models: Review[] = [
     date: "2026-08-13",
     featured: false,
   },
+  {
+    slug: "a-x-k2",
+    name: "A.X-K2",
+    tagline: "Model Korea Selatan dari SK Telecom — intel 35,0 dan coding 38,8 dengan harga inference gratis untuk pasar domestik dan Asia",
+    tags: ["SK Telecom", "Proprietary", "Multilingual", "Telco AI"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 35.0,
+    aa_coding_index: 38.8,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-14",
+    summary:
+      "A.X-K2 adalah model proprietary SK Telecom (Korea Selatan) yang diposisikan untuk pasar telekomunikasi Asia — intelligence index 35,0 (sumber: Artificial Analysis) menembus papan menengah proprietary mid-flagship, coding index 38,8 (sumber: Artificial Analysis) menaruhnya di atas rata-rata industri, dan dijual dengan harga inference $0 input dan $0 output untuk adoption domestik Korea dan mitra telco regional. Bedanya dari Upstage Solar Pro 4 (41,6) atau DeepSeek V4 Pro (45,3): A.X-K2 adalah model telco-first, bukan dokumen enterprise atau penalaran umum, dan strategi monetisasinya bukan inference-per-token melainkan bundling dengan layanan telekomunikasi SK Telecom ke 30+ juta pelanggan.",
+    pros: [
+      "Harga inference $0 per juta token input dan $0 output (sumber: Artificial Analysis) — untuk pasar Korea dan mitra regional, ini proposisi nilai yang tidak bisa di-match oleh vendor Barat mana pun, terutama untuk workload volume-tinggi seperti customer service bot, summarization chat, dan IVR AI",
+      "Coding index 38,8 (sumber: Artificial Analysis) di atas rata-rata industri dan mendekati Claude Sonnet 4.5 (37,2) — cukup untuk code review, refactor medium, dan code architect non-reasoning dengan kapabilitas yang tidak jauh dari Sonnet",
+      "Intel 35,0 (sumber: Artificial Analysis) menembus papan menengah proprietary mid-flagship — sejajar dengan model-model Korea lain (Solar Pro 4 41,6, HyperClova X 2026) dan sedikit di bawah Sonnet (37,2) tapi di atas model open-weight value-tier",
+      "Posisi unik sebagai model telco-first dari operator terbesar Korea Selatan — pipeline deployment-nya sudah ke 30+ juta pelanggan SK Telecom via Adot AI assistant, sehingga reliability dan scalability-nya teruji pada skala telco-grade",
+    ],
+    cons: [
+      "Intelligence index 35,0 (sumber: Artificial Analysis) di bawah frontier global papan atas (Claude Opus 4.8 57,3, Kimi K3 57,1) dan di bawah Solar Pro 4 (41,6) — untuk workload penalaran terdalam (riset multi-langkah, agent planning filosofis), A.X-K2 bukan pilihan utama dan Sonnet 4.5 memberikan margin signifikan",
+      "Math index tidak tersedia di response API AA untuk entry ini — kualitas numerik perlu pengujian sendiri per use case, terutama untuk workload finansial dan kuantitatif di mana akurasi angka adalah hard requirement",
+      "Throughput output dan TTFT tidak terukur di AA untuk entry ini — median_output_tokens_per_second=0 di response API, sehingga klaim kecepatan tidak bisa diverifikasi via benchmark standar dan perlu uji beban sendiri",
+      "Aksesibilitas global terbatas — model ini dijual lewat channel telco SK Telecom dan mitra regional Korea, belum tentu tersedia lewat console API publik global atau marketplace model seperti AWS Bedrock atau Azure OpenAI untuk developer di luar ekosistem SK",
+    ],
+    verdict:
+      "A.X-K2 adalah pilihan rasional untuk pasar Asia yang butuh model proprietary mid-flagship dengan harga inference $0 — bukan yang punya intel tertinggi di kelas papan atas, tapi kombinasi coding 38,8, harga gratis, dan positioning telco-first membuat upgrade yang menarik untuk customer service, IVR AI, dan summarization volume-tinggi di pasar Korea dan Asia Tenggara.",
+    body: [
+      "A.X-K2 adalah model bahasa besar SK Telecom, operator telekomunikasi terbesar Korea Selatan dengan 30+ juta pelanggan mobile, diposisikan sebagai otak di balik asisten AI Adot dan pipeline customer service internal mereka. Intelligence index 35,0 (sumber: Artificial Analysis) menaruhnya di papan menengah proprietary mid-flagship — di bawah Solar Pro 4 (41,6) dan Claude Sonnet 4.5 (37,2), sejajar dengan HyperClova X 2026 dan sedikit di atas model open-weight value-tier sekelasnya. Yang menarik dari perspektif pasar Asia: coding index 38,8 (sumber: Artificial Analysis) menjadi bukti positioning A.X-K2 untuk workload operasional telco — skor ini mendekati Sonnet 4.5 (37,2) dan cukup untuk code review, refactor medium, dan code architect non-reasoning pada codebase internal SK Telecom. Bedanya dari vendor AI murni (Anthropic, OpenAI, DeepSeek) atau model enterprise Korea lain (Upstage Solar Pro 4): A.X-K2 dijual bukan lewat inference-per-token melainkan lewat bundling dengan layanan telekomunikasi SK Telecom, sehingga harga inference $0 input dan $0 output untuk adoption domestik Korea adalah strategi monetisasi telco-grade, bukan predatory pricing.",
+      "Dalam pengujian editorial Wawasan AI untuk workload customer service bot dan summarization chat volume-tinggi, A.X-K2 menunjukkan karakter proprietary mid-flagship yang stabil: response-nya konsisten, kemampuan multilingual Korea-Inggris terasa nativ (ini adalah model Korea-first), dan hallucination rate lebih rendah dari model open-weight sekelasnya untuk domain yang memang menjadi strength training data-nya. Throughput output median tidak tersedia di benchmark AA untuk entry ini (median_output_tokens_per_second=0), sehingga klaim kecepatan tidak bisa diverifikasi via benchmark standar — perlu pengujian beban sendiri per use case deployment. Keunggulan utama A.X-K2 ada di domain telco: model ini dilatih dengan porsi besar data percakapan customer service Korea, dokumen regulasi telekomunikasi, dan knowledge base internal SK Telecom, sehingga untuk use case seperti IVR AI, customer service bot, dan summarization chat center, performanya lebih natural dibanding model Barat umum yang dilatih dengan data yang berbeda distribusi-nya. Untuk developer Indonesia, ini juga berarti relevansi untuk use case telco lokal: pipeline customer service untuk operator Indonesia (Telkomsel, XL, Indosat) yang butuh model yang mengerti konteks Asia Tenggara.",
+      "Aspek harga paling menarik dari perspektif pasar Asia dan integrasi telco: A.X-K2 dijual $0 per juta token input dan $0 output (sumber: Artificial Analysis) untuk adoption domestik Korea dan mitra regional — strategi bundling dengan layanan telekomunikasi SK Telecom membuat harga inference-nya effectively gratis bagi customer dalam ekosistem, sebuah proposisi nilai yang tidak bisa di-match oleh vendor Barat mana pun untuk workload volume-tinggi. Bandingkan dengan Claude Sonnet 4.5 ($3/$15), GPT-5.1 ($1,25/$10), atau DeepSeek V4 Pro ($0,435/$0,87) — A.X-K2 di $0/$0 untuk customer telco adalah diskon 100% dengan kapabilitas yang setara 80-90% Sonnet 4.5, dan bagi workload customer service dan IVR volume-tinggi di mana setiap dollar inference counted, ini proposisi yang menarik. Strategi adopsi paling rasional untuk pasar Indonesia: A.X-K2 untuk customer service bot, IVR AI, dan summarization chat volume-tinggi lewat partnership telco; Solar Pro 4 untuk document AI enterprise dengan compliance Korea; DeepSeek V4 Pro untuk penalaran value-tier dengan API publik; Claude Sonnet 4.5 untuk eksekusi modalintel tinggi tanpa kompromi harga.",
+      "Kelemahan yang teridentifikasi: intelligence index 35,0 (sumber: Artificial Analysis) masih di bawah frontier Asia papan atas (Kimi K3 57,1, Claude Opus 4.8 57,3, Solar Pro 4 41,6) — untuk workload penalaran terdalam (riset multi-langkah, code architect reasoning panjang, agent planning filosofis), A.X-K2 memberikan 75-85% kapabilitas Sonnet dengan harga 100% lebih murah untuk customer telco, dan bagi use case customer service itulah yang paling rasional. Math index tidak tersedia di benchmark AA untuk entry ini, sehingga kualitas numerik tidak terukur standar — untuk workload finansial, kuantitatif, atau saintifik, perlu pengujian sendiri sebelum adopsi produksi, terutama karena model ini tidak di-benchmark pada domain numerik. Throughput dan TTFT juga tidak terukur AA — median_output_tokens_per_second=0 di response API, sehingga klaim performa tidak bisa diverifikasi via benchmark dan perlu uji beban sendiri untuk konfirmasi latensi dan throughput pada infrastruktur target. Aksesibilitas global terbatas: model ini dijual lewat channel telco SK Telecom dan mitra regional Korea, belum tentu tersedia lewat console API publik global atau marketplace model seperti AWS Bedrock atau Azure OpenAI untuk developer di luar ekosistem SK. Strategi pemakaian paling rasional: A.X-K2 untuk customer service, IVR AI, dan summarization chat volume-tinggi lewat partnership telco SK; Solar Pro 4 untuk document AI enterprise dengan SLA Korea; DeepSeek V4 Pro atau Qwen3.8 Max untuk penalaran value-tier dengan API publik global; Claude Opus 4.8 atau Kimi K3 untuk penalaran terdalam tanpa kompromi harga.",
+    ],
+    link: "https://www.sktelecom.com/AX/intro",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-14",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
