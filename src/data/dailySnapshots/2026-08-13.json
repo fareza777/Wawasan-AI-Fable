@@ -1,0 +1,153 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-13T03:41:38.065Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "LaoFeng-mouse/flyingmouse-format",
+      "owner": "LaoFeng-mouse",
+      "repo": "flyingmouse-format",
+      "description": "飞鼠格式 FlyingMouse Format - Windows 万能文件格式转换工具（离线可用，内置 FFmpeg/LibreOffice/Poppler/Tesseract）。图片/文档/表格/PPT/PDF/音视频/WPS 格式互转 + OCR + 批量转换",
+      "githubUrl": "https://github.com/LaoFeng-mouse/flyingmouse-format",
+      "trendshiftUrl": "https://trendshift.io/repositories/118999",
+      "language": "JavaScript",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-06T03:59:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "topics": [
+        "Data visualization"
+      ],
+      "dateCreated": "2026-04-16T18:01:16Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "guillaumemeyer/watermarks-remover",
+      "owner": "guillaumemeyer",
+      "repo": "watermarks-remover",
+      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
+      "trendshiftUrl": "https://trendshift.io/repositories/139213",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-11T16:32:38Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "macro-inc/macro",
+      "owner": "macro-inc",
+      "repo": "macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "githubUrl": "https://github.com/macro-inc/macro",
+      "trendshiftUrl": "https://trendshift.io/repositories/43280",
+      "language": "Rust",
+      "topics": [
+        "AI memory",
+        "Self-hosted"
+      ],
+      "dateCreated": "2025-11-08T15:18:27Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "zerx-lab/FluxDown",
+      "owner": "zerx-lab",
+      "repo": "FluxDown",
+      "description": "Rust 驱动的多协议下载管理器，支持 HTTP/FTP/BitTorrent 磁力链接及 HLS/DASH 流媒体，智能多线程加速与浏览器无缝集成。精美界面，极致性能，永久免费，零广告。",
+      "githubUrl": "https://github.com/zerx-lab/FluxDown",
+      "trendshiftUrl": "https://trendshift.io/repositories/72681",
+      "language": "Rust",
+      "topics": [
+        "File management"
+      ],
+      "dateCreated": "2026-07-03T01:00:17Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "hugohe3/ppt-master",
+      "owner": "hugohe3",
+      "repo": "ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "githubUrl": "https://github.com/hugohe3/ppt-master",
+      "trendshiftUrl": "https://trendshift.io/repositories/25760",
+      "language": "Python",
+      "topics": [
+        "AI workflow",
+        "Document processing"
+      ],
+      "dateCreated": "2025-12-10T06:54:33Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "yaklang/hack-skills",
+      "owner": "yaklang",
+      "repo": "hack-skills",
+      "description": "Helping AI Agent become an awesome practical hacker!",
+      "githubUrl": "https://github.com/yaklang/hack-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/36842",
+      "language": "CSS",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-04-07T16:06:51Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "liangnjupt/VisTouch",
+      "owner": "liangnjupt",
+      "repo": "VisTouch",
+      "description": "A large-scale synchronized vision–touch–audio dataset of robotic sliding contact",
+      "githubUrl": "https://github.com/liangnjupt/VisTouch",
+      "trendshiftUrl": "https://trendshift.io/repositories/139022",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "Audio processing",
+        "Robotics"
+      ],
+      "dateCreated": "2026-07-31T01:03:06Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ZuodaoTech/everyone-can-use-english",
+      "owner": "ZuodaoTech",
+      "repo": "everyone-can-use-english",
+      "description": "人人都能用英语",
+      "githubUrl": "https://github.com/ZuodaoTech/everyone-can-use-english",
+      "trendshiftUrl": "https://trendshift.io/repositories/11001",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2019-03-15T16:33:53Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Hisn00w/ASu-skills",
+      "owner": "Hisn00w",
+      "repo": "ASu-skills",
+      "description": "简历包装",
+      "githubUrl": "https://github.com/Hisn00w/ASu-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/139058",
+      "topics": [
+        "Workflow automation",
+        "Resume building"
+      ],
+      "dateCreated": "2026-08-12T07:12:05Z"
+    }
+  ]
+}
