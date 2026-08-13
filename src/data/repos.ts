@@ -3587,6 +3587,55 @@ export const repos: Review[] = [
     updatedAt: "2026-08-13",
     featured: false,
   },
+{
+    slug: "llm-space",
+    name: "LLM Space",
+    tagline: "Desktop app native untuk prototyping, tracing, dan evaluasi agent AI",
+    tags: ["AI Agent", "Developer Tool", "TypeScript", "Self-hosted"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "LLM Space dari tim DeerFlow (ByteDance) adalah aplikasi desktop native untuk builder AI agent: tulis prompt dan tool, lihat setiap langkah harness secara real-time, replay kegagalan, dan ukur performa agent dalam satu workspace. Local-first dengan file dan API key yang tetap di mesin pengguna, serta mampu mengubah thread menjadi agent LangGraph yang siap dijalankan.",
+    highlights: [
+      "Enam alur kerja utama dalam satu aplikasi: Build prompt, Trace setiap model call dan tool run, Debug dengan replay, Evaluate performa, Manage thread sebagai file lokal, Generate proyek LangGraph dari percakapan",
+      "Sister project resmi DeerFlow dari ByteDance - dipakai internal untuk membangun dan men-debug setiap rilis DeerFlow sejak v4",
+      "Bun monorepo: packages/core (tipe domain, storage, generator), packages/runtime (model, tools, skills, MCP, plugins), apps/desktop (Electrobun shell + React UI)",
+      "Native desktop via Electrobun, dengan dua edisi macOS: Standard (WebView sistem, ~27 MB) dan Performance (engine rendering sendiri, ~130 MB) yang share data ~/.llm-space",
+      "File dan API key 100 persen di mesin lokal - telemetri anonim opsional dan bisa di-opt-out lewat TELEMETRY.md",
+      "Generate agent LangGraph dari thread apa pun: AI menulis prompt dan tool, lalu thread bisa langsung dijalankan sebagai agent LangGraph",
+      "Plugin system lewat atlas-plugin example - extension types lengkap dari build sampai runtime",
+      "Setup dari source: Bun install + mise run dev untuk development, CI pakai toolchain yang di-lock di mise.lock",
+    ],
+    pros: [
+      "Semua kebutuhan debug dan eval agent ada di satu aplikasi - tidak perlu lagi bolak-balik antara CLI, log, dan tool terpisah",
+      "Local-first dan open source MIT - data sensitif tidak pernah meninggalkan mesin pengguna",
+      "Jalur Generate ke LangGraph menurunkan barrier dari eksperimen prompt ke agent yang benar-benar berjalan",
+    ],
+    cons: [
+      "Saat ini rilis distribusi utama baru untuk macOS (DMG) - jalur Windows dan Linux masih mengandalkan build dari source",
+      "Bergantung pada toolchain Bun dan mise yang relatif baru - tim yang sudah heavily invested di Node.js klasik perlu adaptasi",
+      "Repositori masih berusia beberapa bulan - dokumentasi dan contoh kasus penggunaan akan terus berkembang",
+    ],
+    verdict:
+      "Pilihan pragmatis untuk developer yang serius membangun AI agent dan ingin satu workspace yang menggabungkan authoring, tracing, dan evaluasi tanpa harus bolak-balik ke banyak tool. Wajib dicoba terutama bagi pengguna DeerFlow atau builder yang ingin output siap jalan sebagai LangGraph.",
+    body: [
+      "Sebagian besar tooling AI agent yang beredar saat ini masih terpisah-pisah: prompt ditulis di editor, dijalankan lewat CLI, lalu debugging dilakukan dengan membaca log terminal satu per satu. LLM Space dari tim DeerFlow mengambil pendekatan berbeda - menyediakan aplikasi desktop native yang menyatukan authoring, tracing, debugging, evaluasi, dan orkestrasi file dalam satu workspace terpadu. Proyek ini merupakan sister project resmi DeerFlow dari ByteDance, dan dogfooding-nya bukan main-main: setiap rilis DeerFlow sejak v4 dibangun dan di-debug lewat LLM Space.",
+      "Dalam pengujian editorial Wawasan AI, alur yang paling terasa manfaatnya adalah Trace - melihat setiap model call dan tool run di dalam agent loop secara real-time. Saat ada langkah yang gagal, jalur Debug memungkinkan replay dari history dan step-through untuk menemukan di mana letak kesalahannya. Jalur Evaluate menambahkan dimensi kuantitatif yang biasanya absen dari eksperimen prompt: kita bisa mengukur apakah perubahan kecil di system prompt benar-benar meningkatkan performa agent, bukan sekadar terasa lebih konsisten.",
+      "Arsitekturnya sengaja monorepo dengan pemisahan tegas: packages/core untuk tipe domain dan storage, packages/runtime untuk model, tools, skills, MCP, dan plugins, serta apps/desktop sebagai shell Electrobun dengan UI React + Tailwind + shadcn/ui. Dua edisi macOS (Standard dan Performance) share direktori data ~/.llm-space, sehingga perpindahan antar edisi tidak memutus thread dan setelan. Yang paling menarik dari sisi engineering adalah jalur Generate: dari thread percakapan, AI dapat menulis prompt dan tool, lalu thread tersebut bisa langsung dijalankan sebagai agent LangGraph - menutup loop antara eksplorasi prompt dan deployment agent.",
+      "Untuk konteks Indonesia, LLM Space paling pas dipakai developer dan tim yang sudah menjalankan atau bereksperimen dengan AI agent - baik yang berbasis DeerFlow, LangGraph, maupun framework lain - dan ingin tooling internal yang bisa di-audit, di-host sendiri, dan tidak mengharuskan upload prompt atau data ke layanan SaaS. Batasan yang perlu dipahami: distribusi resmi masih fokus macOS, sehingga pengguna Windows dan Linux perlu build dari source dengan Bun. Lisensi MIT dan arsitektur plugin yang terbuka memberi ruang bagi kontributor lokal untuk menambah integrasi dengan model atau toolchain yang umum dipakai di Indonesia - menjadikannya salah satu tooling paling relevan untuk fase maturasi praktik AI agent di tanah air pada paruh kedua 2026.",
+    ],
+    link: "https://github.com/deer-flow/llm-space",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-14",
+    updatedAt: "2026-08-14",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
