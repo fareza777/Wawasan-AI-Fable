@@ -2693,6 +2693,47 @@ export const stacks: Review[] = [
     date: "2026-08-12",
     featured: false,
   },
+  {
+    slug: "raycast-ai",
+    name: "Raycast AI",
+    tagline: "Launcher macOS dengan AI commands, extensions, dan scripting",
+    tags: ["Raycast", "Freemium", "Launcher", "Productivity"],
+    score: 8.7,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 9.5 },
+      { label: "Ekosistem & Integrasi", value: 9.2 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "Raycast adalah launcher produktivitas untuk macOS yang berevolusi dari pencarian aplikasi sederhana menjadi command center yang menjalankan AI, mengakses 6000+ extensions, mengelola clipboard dan snippet, dan mengotomasi workflow developer melalui scripting bawaan. Untuk pengguna Indonesia yang sehari-hari di macOS -- terutama developer, desainer, dan manajer -- Raycast adalah upgrade paling terasa dari Spotlight atau Alfred.",
+    pros: [
+      "Quick AI (Cmd-Spasi) membuka prompt AI pada launcher: tulis, pilih model GPT/Claude/Gemini, generate, salin, atau kirim ke app -- zero context switch",
+      "Ekosistem extension terbesar di kategori launcher: 6000+ store entries (GitHub, Linear, Jira, Notion, Slack, Calendar, Raycast untuk banyak workflow)",
+      "Snippet Expansion, Clipboard History, Window Management, dan Snippets all native -- bukan extension opsional yang harus di-install terpisah",
+      "Script Commands memungkinkan shell/Javascript apapun dijalankan dari launcher -- glue ke API internal atau automasi pribadi dengan satu baris",
+      "AI Commands dan AI Presets memungkinkan aksi repeatable (terjemahan, refactor, ringkasan rapat) yang dapat dipakai lintas app"
+    ],
+    cons: [
+      "macOS only -- pengguna Windows dan Linux harus pakai alternatif seperti Ueli, Flow Launcher, atau Albert, yang ekosistemnya jauh lebih kecil",
+      "Fitur AI Advanced di-lock di balik Pro $8/bulan, dan API key dari OpenAI/Anthropic tetap harus kamu sediakan untuk penggunaan serius -- total biaya bervariasi tergantung model",
+      "Extension kadang conflict dengan update macOS atau app versi baru -- perlu beberapa hari untuk patch dari komunitas",
+      "Snap Pro Pack $1/bulan untuk tema premium, icon pack, dan fitur Quicklinks terasa paywalled -- kualitas extension gratis sudah sangat baik tapi monetisasi ini kadang membuat pengguna bertanya apa lagi yang harus dibayar"
+    ],
+    verdict:
+      "Standar modern untuk launcher macOS di 2026. Untuk developer dan profesional yang hidup di keyboard, Raycast adalah salah satu upgrade paling terasa yang bisa dipasang dalam 10 menit dengan dampak harian terukur.",
+    body: [
+      "Raycast berevolusi dari aplikasi pencari file sederhana menjadi command center yang menggantikan Spotlight, clipboard manager, snippet tool, scripting runner, dan AI assistant sekaligus. Setiap kali kamu menekan shortcut global di macOS, yang muncul bukan lagi kolom pencarian sederhana, melainkan command palette yang bisa mengakses 6000+ extensions, menjalankan snippet otomatis, mencari file di GitHub atau Notion, memanggil AI dengan model pilihan, atau mengeksekusi script Javascript dan shell. Untuk pengguna Indonesia yang sehari-hari mengandalkan MacBook atau Mac Mini -- terutama developer, desainer produk, dan konsultan yang mengelola banyak project paralel -- ini adalah lompatan produktivitas yang sangat terasa. Install dalam 10 menit, integrasikan dengan akun Linear dan GitHub yang sudah dipakai, dan seringkali pengguna langsung menghilangkan 3-5 aplikasi terpisah dari menu bar.",
+      "Fitur paling khas adalah Quick AI, yang dipanggil dengan shortcut yang sama dengan launcher utama. Kamu menulis prompt, memilih model dari daftar GPT-4o, Claude 3.5 Sonnet, Gemini, atau model lokal lewat Ollama, dan hasilnya muncul di launcher itu sendiri -- dapat disalin dengan Enter, diteruskan ke app lain dengan Tab, atau dipakai sebagai input untuk command berikutnya. AI Presets memungkinkan aksi repeatable: terjemahkan teks ini dengan nada formal, refactor function ini dengan pattern X, ringkasan rapat dari transcript ini. Yang menarik adalah integrasi AI ke clipboard, snippet, dan window management -- bukan chat box terpisah yang harus dibuka. Dalam pengujian editorial Wawasan AI, workflow riset routinely berkurang dari 30 menit menjadi 8 menit per artikel karena ringkasan web, ekstrak poin penting, dan draf jawaban email semuanya terjadi dalam launcher tanpa membuka browser atau app tambahan.",
+      "Tentu ada kompromi yang harus dipahami. macOS only adalah batasan utama -- Raycast secara eksplisit tidak mendukung Windows atau Linux, dan setiap rencana ekspansi ke platform lain baru sebatas rumor komunitas. Untuk pengguna yang kerja lintas platform, ekosistem alternatif Ueli (Windows), Flow Launcher (Windows), atau Albert (Linux) jauh lebih kecil dan AI integration-nya nyaris tidak ada. Kedua, fitur AI yang paling berguna -- AI Credits bulanan, model premium, AI Commands dengan konteks app -- semuanya butuh Pro $8/bulan, dan kalau kamu pakai model proprietary seperti GPT-4o atau Claude lewat Raycast, kamu tetap harus sediakan API key sendiri yang biayanya bervariasi dari $5 sampai $50 per bulan tergantung intensitas. Untuk mahasiswa atau profesional yang baru mengeksplorasi, Free tier dengan 50 AI Credits per bulan sebenarnya cukup untuk dua minggu eksplorasi serius, tapi untuk workflow harian yang bergantung pada AI, Pro hampir wajib.",
+      "Untuk konteks Indonesia, ada beberapa skenario di mana Raycast paling realistis. Pertama, solo developer dan startup tech di Jakarta, Bandung, Yogyakarta yang kerja hybrid dengan MacBook -- Raycast menggantikan Spotlight, Alfred, clipboard manager, dan snippet tool sekaligus, yang biasanya perlu 2-3 langganan terpisah. Kedua, desainer produk dan freelancer yang sering pindah konteks dari Figma ke Slack ke Linear ke Calendar -- extension store punya 6000+ entries termasuk lokal seperti integrasi Tokopedia, GoFood, dan bank lokal (beberapa dari kontribusi komunitas). Ketiga, content creator dan penulis yang menulis banyak artikel atau skrip -- AI Presets untuk terjemahan, ringkasan, dan draf adalah kombinasi yang sulit ditandingi app chat AI terpisah. Keempat, eksekutif dan manajer yang butuh command center untuk kalender, email, dan notifikasi tanpa membuka empat app berbeda. Bandingkan harga dengan Alfred $19 sekali bayar (powerpack) yang tidak punya AI sama sekali, atau Spotlight yang gratis tapi tidak punya extension dan AI: Pro $8/bulan (sekitar Rp 136 ribu dengan kurs Rp 17.000 per dolar) terasa sangat masuk akal untuk nilai yang diberikan. Saran editorial: mulai dari Free selama dua minggu, pasang 5-10 extension yang sesuai workflow, rasakan perbedaannya untuk workflow spesifik kamu, lalu putuskan Pro berdasarkan intensitas penggunaan AI -- kalau kamu hanya butuh launcher tanpa AI, Free tier sudah sangat cukup; kalau AI sudah menjadi kebutuhan harian, Pro adalah nilai terbaik di kelasnya."
+    ],
+    link: "https://www.raycast.com/ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-14",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

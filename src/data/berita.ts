@@ -3066,6 +3066,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+  slug: "bos-ingram-micro-indonesia-ungkap-tantangan-adopsi-ai",
+  title: "Adopsi AI Korporasi Indonesia: Bukan Soal Mau atau Tidak, Tapi Tahu Mulai dari Mana",
+  excerpt:
+    "Bos Ingram Micro Indonesia bicara soal adopsi AI yang terhenti di tataran pilot project. Mengapa korporasi lokal masih ragu investasi serius, dan apa hubungannya dengan talenta, data, dan trust.",
+  category: "Analisis",
+  date: "2026-08-13",
+  readingTime: "7 menit",
+  body: [
+    {
+      paragraphs: [
+        "Kalau kita mengikuti headline AI korporasi Indonesia selama dua tahun terakhir, kisahnya hampir selalu sama: sebuah perusahaan besar mengumumkan pilot project AI, memamerkan hasil yang terdengar spektakuler di konferensi pers, lalu... tidak banyak yang terjadi setelah itu. Ekosistem distributor besar seperti Ingram Micro Indonesia mengaku melihat pola ini berulang pada pelanggan mereka, mulai dari bank midsize, rumah sakit swasta, sampai perusahaan manufaktur yang beroperasi di lebih dari satu pulau. Percakapan tentang adopsi AI di level eksekutif sudah sangat ramai, tapi eksekusi di lapangan masih sering berhenti di presentasi PowerPoint.",
+        "Pertanyaan yang biasanya muncul setelah observasi seperti ini selalu sama: apakah korporasi Indonesia memang belum siap untuk AI, atau apakah ada yang salah dengan cara kita memahami kata 'siap' itu sendiri. Jawaban yang lebih jujur kemungkinan besar adalah keduanya. Ada struktur industri yang memang belum memprioritaskan transformasi digital sampai menyentuh level operasional, dan ada juga over-promising dari vendor yang membuat ekspektasi eksekutif tidak lagi sebanding dengan realitas yang akan mereka hadapi di enam bulan pertama implementasi. Artikel ini mencoba membaca dua sisi itu dengan hati-hati, supaya diskusi tentang AI korporasi di Indonesia tidak terjebak pada slogan 'siap atau tidak' yang terlalu menyederhanakan kenyataan.",
+      ],
+    },
+    {
+      heading: "Tiga hambatan yang paling sering disebut distributor besar",
+      paragraphs: [
+        "Dari banyak percakapan dengan pelanggan korporasi, ada tiga hambatan yang muncul berulang. Pertama, soal data. Banyak perusahaan menengah dan besar di Indonesia sebenarnya sudah punya data yang banyak, tapi data itu tersebar di sistem yang tidak saling bicara. ERP yang berbeda versi dengan CRM, spreadsheet operasional yang masih hidup di laptop staff senior, arsip kontrak dalam PDF yang tidak pernah diindeks. Sebelum model AI apa pun dilatih, data ini harus dibersihkan dan disatukan. Itu pekerjaan yang terdengar membosankan, tapi menghabiskan waktu berbulan-bulan dan biasanya lebih mahal dari implementasi AI itu sendiri.",
+        "Kedua, soal talenta. Banyak korporasi Indonesia yang sudah punya tim IT yang kuat, tapi sangat sedikit yang punya orang yang paham AI secara operasional, bukan sekadar presentasi. Data scientist senior dengan pengalaman lima tahun lebih di pasar lokal masih langka, dan biaya untuk merekrut mereka dari luar negeri sering tidak sebanding dengan budget proyek yang tersedia. Karena itu vendor biasanya menawarkan solusi turnkey, tapi solusi turnkey yang tidak di-maintain tim internal biasanya mati pelan-pelan dalam dua tahun pertama.",
+        "Ketiga, soal trust dari level manajemen menengah. Direksi sering kali sudah antusias setelah membaca laporan McKinsey atau mendengar presentasi dari vendor global. Tapi kepala divisi dan manajer lapangan yang akan mengeksekusi biasanya lebih skeptis, dan mereka punya alasan kuat untuk itu: mereka yang akan menanggung konsekuensi kalau sistem baru gagal, bukan direksi yang sudah mendapat fotonya di majalah bisnis. Gap antara antusiasme eksekutif dan keraguan manajer menengah inilah yang sering membuat pilot project molor dari enam bulan menjadi delapan belas bulan, dan pada akhirnya dianggap gagal walaupun secara teknis hasilnya tidak seburuk itu.",
+      ],
+    },
+    {
+      heading: "Mengapa banyak pilot project tidak pernah menjadi produksi",
+      paragraphs: [
+        "Ada jurang yang cukup besar antara berhasil di pilot project dan berhasil di produksi. Di pilot, dataset kecil, ekspektasi disesuaikan, dan tim teknis punya energi khusus karena ini proyek penting. Di produksi, data datang dalam volume dan variasi yang tidak pernah dijumpai di pilot, integrasi dengan sistem lama sering memunculkan bug yang tidak terduga, dan pengguna internal yang tidak dilibatkan dari awal mulai mengeluh karena workflow mereka berubah tanpa konsultasi.",
+        "Di sinilah banyak proyek AI korporasi di Indonesia kandas. Bukan karena teknologinya salah, tapi karena org chart dan proses internal tidak disiapkan untuk menerima output dari sistem baru. Vendor yang baik biasanya mengingatkan hal ini di awal, tapi tekanan komersial sering membuat mereka mengiyakan timeline yang tidak realistis, dan akhirnya proyek dianggap gagal padahal yang gagal adalah ekspektasi, bukan sistemnya.",
+        "Pola yang lebih sehat, dan yang mulai diadopsi beberapa perusahaan progresif, adalah memulai dari masalah bisnis yang jelas, bukan dari teknologi yang ingin dipakai. Misalnya, sebelum bicara chatbot layanan pelanggan, ukur dulu berapa rata-rata waktu respons saat ini, berapa kepuasan pelanggan, dan berapa biaya per tiket. Kalau chatbot benar-benar bisa meningkatkan metrik itu, baru investasikan. Kalau tidak, percuma melatih model dengan GPT-5 dan tetap tidak menyelesaikan masalah. Pendekatan seperti ini lebih lambat di awal, tapi secara historis lebih sering menghasilkan sistem yang benar-benar dipakai setelah enam bulan.",
+      ],
+    },
+    {
+      heading: "Peluang nyata untuk UMKM dan korporasi midsize",
+      paragraphs: [
+        "Selama wacana AI korporasi didominasi oleh perusahaan besar, ada kelompok yang justru punya peluang lebih jelas: UMKM dan korporasi midsize. UMKM biasanya tidak punya beban legacy system yang berat, dan volume data mereka cukup kecil untuk ditangani dengan model yang sudah jadi tanpa perlu melatih dari awal. Kalau seorang pemilik warung kelontong di Yogya bisa mengakses sistem inventaris yang memprediksi barang apa yang perlu di-restok berdasarkan pola belanja pelanggan, itu sudah merupakan transformasi yang nyata.",
+        "Korporasi midsize, khususnya yang beroperasi di sektor distribusi, manufaktur ringan, dan logistik, punya sedikit keuntungan yang tidak dimiliki UMKM dan perusahaan besar. Mereka cukup besar untuk punya anggaran teknologi yang serius, tapi cukup kecil untuk mengambil keputusan dengan cepat. Kalau leadership-nya terbuka, mereka bisa mengadopsi tool AI generik seperti asisten penulisan, summarizer meeting, dan tool analitik built-in dengan biaya yang jauh lebih rendah dari yang biasanya diasumsikan. Yang sering menjadi blocker bukan anggarannya, tapi kebiasaan rapat yang bisa tujuh jam sehari dan budaya kerja yang masih mengandalkan intuisi lebih dari data.",
+        "Untuk konteks yang lebih luas, penting untuk diingat bahwa adopsi AI bukan hanya soal membeli teknologi. Ini soal reorganisasi cara kerja, redefinisi peran, dan kesediaan untuk mengakui bahwa beberapa keputusan yang selama ini dianggap 'seni' sebenarnya bisa dibantu dengan data tanpa kehilangan nuansa. Korporasi Indonesia yang siap untuk AI bukan yang punya budget terbesar, tapi yang paling jujur tentang masalah internalnya dan paling konsisten mengeksekusi dalam skala kecil sebelum pindah ke skala besar.",
+      ],
+    },
+    {
+      heading: "Implikasi untuk pekerja dan profesional muda Indonesia",
+      paragraphs: [
+        "Untuk pekerja yang khawatir posisinya tergantikan AI, ada kabar baik dan kabar hati-hati. Kabar baiknya: korporasi Indonesia belum akan menggantikan massal staf back-office dengan AI dalam tiga tahun ke depan. Kecepatan adopsi di lapangan tidak secepat headline. Kabar hati-hatinya: pekerjaan yang sifatnya repetitif dan terdokumentasi dengan baik, seperti entri data, pembuatan laporan periodik, dan rekap rapat, memang akan berkurang volumenya. Bukan hilang sepenuhnya, tapi berkurang sampai cukup signifikan sehingga orang yang menempati posisi itu perlu belajar hal baru dalam dua tahun ke depan.",
+        "Untuk profesional muda yang baru lulus, implikasinya lebih spesifik. Skill yang paling dicari bukan kemampuan coding dari nol, tapi kemampuan merangkai tool AI yang sudah ada menjadi workflow yang menyelesaikan masalah bisnis konkret. Prompt engineering yang sophisticated, kemampuan mengevaluasi output model dengan mata kritis, dan pemahaman tentang kapan harus menggunakan AI versus kapan harus tidak, adalah kombinasi skill yang langka di pasar tenaga kerja Indonesia saat ini dan belum banyak diajarkan di kampus secara serius.",
+        "Pada akhirnya, adopsi AI korporasi Indonesia adalah cerita yang akan ditulis dalam satu dekade ke depan, bukan dalam satu tahun ke depan. Ada banyak inkonsistensi antara retorika eksekutif dan realitas eksekusi, ada gap antara apa yang dijanjikan vendor dan apa yang benar-benar bisa diimplementasikan, dan ada ketidakpastian tentang kapan trust internal akan benar-benar terbentuk. Dalam pengujian editorial Wawasan AI, perbincangan tentang AI korporasi Indonesia layak dibaca sebagai pengingat bahwa transformasi teknologi adalah maraton, bukan sprint, dan bahwa kesiapan bukan sesuatu yang bisa dipesan dari vendor lalu tiba di kantor dalam bentuk lisensi. Kesiapan adalah akumulasi dari keputusan-keputusan kecil selama bertahun-tahun, dan itu masih harus dibuktikan oleh banyak korporasi Indonesia yang mengaku sudah siap untuk AI.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
