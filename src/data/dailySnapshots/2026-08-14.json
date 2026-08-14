@@ -1,10 +1,14 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "Hari ini",
-  "period": null,
+  "periodLabel": "14 Agustus 2026",
+  "period": {
+    "date": "2026-08-14",
+    "label": "14 Agustus 2026",
+    "path": "/repo/daily/2026/08/14"
+  },
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-14T03:39:11.524Z",
+  "fetchedAt": "2026-08-14T00:06:10.598Z",
   "repos": [
     {
       "rank": 1,
@@ -15,87 +19,11 @@
       "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
       "trendshiftUrl": "https://trendshift.io/repositories/146135",
       "language": "TypeScript",
-      "topics": [
-        "AI agent"
-      ],
+      "topics": [],
       "dateCreated": "2026-08-13T11:56:32Z"
     },
     {
       "rank": 2,
-      "fullName": "cordiverse/cordis",
-      "owner": "cordiverse",
-      "repo": "cordis",
-      "description": "Meta-Framework of Spatiotemporal Composability",
-      "githubUrl": "https://github.com/cordiverse/cordis",
-      "trendshiftUrl": "https://trendshift.io/repositories/126607",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2022-05-17T18:52:57Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "titanwings/colleague-skill",
-      "owner": "titanwings",
-      "repo": "colleague-skill",
-      "description": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶",
-      "githubUrl": "https://github.com/titanwings/colleague-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/25959",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-30T05:22:23Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "xai-org/x-algorithm",
-      "owner": "xai-org",
-      "repo": "x-algorithm",
-      "description": "Algorithm powering the For You feed on X",
-      "githubUrl": "https://github.com/xai-org/x-algorithm",
-      "trendshiftUrl": "https://trendshift.io/repositories/18476",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-01-19T23:12:35Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "zhu1090093659/dsh-web-ui",
-      "owner": "zhu1090093659",
-      "repo": "dsh-web-ui",
-      "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
-      "githubUrl": "https://github.com/zhu1090093659/dsh-web-ui",
-      "trendshiftUrl": "https://trendshift.io/repositories/147981",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-12T05:15:20Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "ccch1mneyyy/dsh-TUI",
-      "owner": "ccch1mneyyy",
-      "repo": "dsh-TUI",
-      "description": "Claude Code 风格全屏交互终端插件：像素鲸鱼顶栏、流光大字、思考流式展开、双击 Esc 回滚、蓝白上下文进度条 + TPS 仪表",
-      "githubUrl": "https://github.com/ccch1mneyyy/dsh-TUI",
-      "trendshiftUrl": "https://trendshift.io/repositories/146168",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-13T12:49:31Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "cordiverse/paper",
-      "owner": "cordiverse",
-      "repo": "paper",
-      "description": "A Programming Paradigm for Spatiotemporal Composability",
-      "githubUrl": "https://github.com/cordiverse/paper",
-      "trendshiftUrl": "https://trendshift.io/repositories/146140",
-      "topics": [],
-      "dateCreated": "2026-08-13T09:53:33Z"
-    },
-    {
-      "rank": 8,
       "fullName": "cathrynlavery/diagram-design",
       "owner": "cathrynlavery",
       "repo": "diagram-design",
@@ -109,34 +37,118 @@
       "dateCreated": "2026-04-16T18:01:16Z"
     },
     {
-      "rank": 9,
-      "fullName": "whiteguo233/OpenBiliClaw",
-      "owner": "whiteguo233",
-      "repo": "OpenBiliClaw",
-      "description": "本地私有、开源的跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。 | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.",
-      "githubUrl": "https://github.com/whiteguo233/OpenBiliClaw",
-      "trendshiftUrl": "https://trendshift.io/repositories/41472",
+      "rank": 3,
+      "fullName": "guillaumemeyer/watermarks-remover",
+      "owner": "guillaumemeyer",
+      "repo": "watermarks-remover",
+      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
+      "trendshiftUrl": "https://trendshift.io/repositories/139213",
       "language": "Python",
       "topics": [
-        "AI agent",
-        "Web scraping",
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-11T16:32:38Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "LaoFeng-mouse/flyingmouse-format",
+      "owner": "LaoFeng-mouse",
+      "repo": "flyingmouse-format",
+      "description": "飞鼠格式 FlyingMouse Format - Windows 万能文件格式转换工具（离线可用，内置 FFmpeg/LibreOffice/Poppler/Tesseract）。图片/文档/表格/PPT/PDF/音视频/WPS 格式互转 + OCR + 批量转换",
+      "githubUrl": "https://github.com/LaoFeng-mouse/flyingmouse-format",
+      "trendshiftUrl": "https://trendshift.io/repositories/118999",
+      "language": "JavaScript",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-06T03:59:32Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "cordiverse/cordis",
+      "owner": "cordiverse",
+      "repo": "cordis",
+      "description": "Meta-Framework of Spatiotemporal Composability",
+      "githubUrl": "https://github.com/cordiverse/cordis",
+      "trendshiftUrl": "https://trendshift.io/repositories/126607",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2022-05-17T18:52:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "github/spec-kit",
+      "owner": "github",
+      "repo": "spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "githubUrl": "https://github.com/github/spec-kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/15463",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-21T22:54:31Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "hugohe3/ppt-master",
+      "owner": "hugohe3",
+      "repo": "ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "githubUrl": "https://github.com/hugohe3/ppt-master",
+      "trendshiftUrl": "https://trendshift.io/repositories/25760",
+      "language": "Python",
+      "topics": [
+        "AI workflow",
+        "Document processing"
+      ],
+      "dateCreated": "2025-12-10T06:54:33Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "macro-inc/macro",
+      "owner": "macro-inc",
+      "repo": "macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "githubUrl": "https://github.com/macro-inc/macro",
+      "trendshiftUrl": "https://trendshift.io/repositories/43280",
+      "language": "Rust",
+      "topics": [
+        "AI memory",
         "Self-hosted"
       ],
-      "dateCreated": "2026-03-07T13:46:10Z"
+      "dateCreated": "2025-11-08T15:18:27Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "cactus-compute/needle",
+      "owner": "cactus-compute",
+      "repo": "needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "githubUrl": "https://github.com/cactus-compute/needle",
+      "trendshiftUrl": "https://trendshift.io/repositories/28205",
+      "language": "Python",
+      "topics": [
+        "NLP",
+        "Local LLM"
+      ],
+      "dateCreated": "2026-02-24T04:50:47Z"
     },
     {
       "rank": 10,
-      "fullName": "AdamPlatin123/awesome-dsh-plugins",
-      "owner": "AdamPlatin123",
-      "repo": "awesome-dsh-plugins",
-      "description": "✨ Awesome DSH Plugins — DeepSeek Harness plugin directory with daily compatibility tracking ｜ DeepSeek Harness 插件生态目录与每日兼容性追踪",
-      "githubUrl": "https://github.com/AdamPlatin123/awesome-dsh-plugins",
-      "trendshiftUrl": "https://trendshift.io/repositories/147500",
-      "language": "Shell",
+      "fullName": "earendil-works/pi",
+      "owner": "earendil-works",
+      "repo": "pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "githubUrl": "https://github.com/earendil-works/pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15471",
+      "language": "TypeScript",
       "topics": [
-        "Curated list"
+        "AI agent",
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-08-04T21:46:54Z"
+      "dateCreated": "2025-08-09T14:03:50Z"
     }
   ]
 }
