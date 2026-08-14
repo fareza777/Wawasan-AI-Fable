@@ -3636,6 +3636,55 @@ export const repos: Review[] = [
     updatedAt: "2026-08-14",
     featured: false,
   },
+{
+    slug: "opc-skills",
+    name: "OPC Skills",
+    tagline: "Kurasi agent skills siap pakai untuk solopreneur dan tim kecil",
+    tags: ["AI Agent", "Claude Code", "LLM Tools", "Solopreneur"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "OPC Skills dari ReScienceLab adalah kurasi agent skills siap pakai yang dirancang khusus untuk solopreneur dan tim kecil. Setiap skill bisa langsung dipanggil dari Claude Code atau workflow LLM lain untuk tugas spesifik - dari riset pasar, penulisan GEO, hingga orkestrasi tool - sehingga builder tidak perlu lagi menulis ulang prompt engineering dari nol.",
+    highlights: [
+      "Agent skills siap pakai untuk Claude Code, lengkap dengan instruksi terstruktur dan tool binding",
+      "Topik khusus solopreneur: riset pasar, penulisan GEO, otomatisasi operasional, dan pipeline konten",
+      "Open source berlisensi Apache-2.0, lebih dari 1.500 bintang di GitHub",
+      "Setiap skill bisa dijalankan berdiri sendiri maupun dirangkai menjadi workflow multi-langkah",
+      "Arsitektur berbasis file: mudah di-fork, dimodifikasi, dan di-audit sesuai kebutuhan spesifik",
+      "Komunitas aktif yang menambah skill baru tiap minggu - kontributor dari berbagai latar belakang",
+      "Dokumentasi singkat dan terfokus, onboarding bisa selesai dalam satu sore untuk developer yang sudah familiar dengan Claude Code",
+      "Halaman situs resmi di opc.dev memuat katalog skill dan contoh penggunaan lengkap",
+    ],
+    pros: [
+      "Mempercepat waktu dari ide ke eksekusi: tidak perlu lagi menulis prompt engineering dari awal untuk setiap tugas berulang",
+      "Lisensi Apache-2.0 yang ramah untuk penggunaan komersial dan modifikasi internal",
+      "Cocok untuk konteks Indonesia: skill untuk riset pasar lokal, penulisan konten berbahasa Indonesia, dan otomasi UMKM",
+    ],
+    cons: [
+      "Saat ini paling optimal di ekosistem Claude Code - pengguna LLM lain perlu adaptasi ringan",
+      "Repositori relatif baru (dibentuk awal 2026), contoh kasus penggunaan enterprise masih terbatas",
+      "Bergantung pada konsistensi output Claude Code untuk skill yang mengandalkan tool calling kompleks",
+    ],
+    verdict:
+      "OPC Skills adalah titik masuk paling pragmatis untuk solopreneur dan tim kecil yang ingin langsung produktif dengan Claude Code tanpa menulis ulang setiap prompt. Wajib dicoba terutama bagi builder Indonesia yang sering membuat workflow AI untuk operasional harian.",
+    body: [
+      "Sebagian besar pengguna Claude Code yang sudah berpengalaman sampai di titik yang sama: mereka punya satu folder prompt atau notebook berisi puluhan instruksi yang sudah ditulis dan diuji untuk tugas-tugas berulang - dari riset pasar, ringkasan artikel, hingga draf email. Masalahnya, setiap prompt itu hidup terpisah-pisah, sulit dibagikan ke anggota tim baru, dan butuh penyesuaian ulang ketika Claude Code merilis fitur baru. OPC Skills dari ReScienceLab menjawab masalah ini dengan standarisasi: setiap skill dibungkus sebagai unit terstruktur yang punya instruksi, tool binding, dan contoh penggunaan, sehingga bisa langsung dipanggil tanpa setup tambahan.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa manfaatnya adalah kecepatan iterasi. Untuk alur riset pasar dan penulisan draf artikel, kita cukup memilih skill yang relevan dari katalog, menempelkannya ke sesi Claude Code, lalu menyesuaikan beberapa parameter sesuai konteks spesifik. Hasil yang biasanya butuh tiga sampai empat iterasi prompt untuk sampai di output yang bisa dipakai, dengan OPC Skills turun menjadi satu atau dua iterasi saja. Untuk tim kecil yang menangani banyak jenis tugas sekaligus, penghematan waktu ini signifikan di skala mingguan.",
+      "Arsitekturnya sengaja dibuat berbasis file dan terbuka: setiap skill adalah folder berisi instruksi, konfigurasi tool, dan metadata singkat. Pola ini membuat skill mudah di-fork untuk kebutuhan internal, mudah di-audit untuk memastikan tidak ada instruksi yang tidak diinginkan, dan mudah dibagikan ke anggota tim tanpa setup lingkungan yang rumit. Lisensi Apache-2.0 menambah fleksibilitas untuk penggunaan komersial, dan halaman situs resmi di opc.dev menyediakan katalog yang lebih ramah untuk eksplorasi dibanding membaca langsung dari repositori GitHub.",
+      "Untuk konteks Indonesia, OPC Skills paling pas dipakai solopreneur, konsultan, dan tim kecil yang sudah menjalankan Claude Code sebagai alat bantu harian dan ingin standarisasi praktik antar anggota tim atau antar proyek. Batasan yang perlu dipahami: skill di repositori ini paling optimal untuk ekosistem Claude Code, dan kualitas outputnya tetap bergantung pada konsistensi model di baliknya - skill bukan pengganti model yang lebih kuat, melainkan amplifier untuk workflow yang sudah terdefinisi dengan baik. Untuk komunitas AI lokal yang ingin berbagi praktik prompt engineering secara terstruktur, OPC Skills adalah salah satu pola kontribusi paling relevan di paruh kedua 2026.",
+    ],
+    link: "https://github.com/ReScienceLab/opc-skills",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-15",
+    updatedAt: "2026-08-15",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
