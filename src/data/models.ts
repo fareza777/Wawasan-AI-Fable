@@ -3201,6 +3201,50 @@ export const models: Review[] = [
     date: "2026-08-14",
     featured: false,
   },
+{
+    slug: "qwen3-8-2-4t-a95b",
+    name: "Qwen3.8 2.4T A95B",
+    tagline: "Flagship MoE Alibaba 2,4 triliun parameter — intel 57,7 dan coding 71,9 dengan footprint inference premium",
+    tags: ["Alibaba", "Proprietary", "MoE", "Reasoning"],
+    score: 9.0,
+    scores: [
+      { label: "Penalaran", value: 9.0 },
+      { label: "Coding", value: 9.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 57.7,
+    aa_coding_index: 71.9,
+    aa_price_input: 2,
+    aa_price_output: 6,
+    aa_synced_at: "2026-08-15",
+    summary:
+      "Qwen3.8 2.4T A95B adalah flagship MoE Alibaba per Agustus 2026 dengan total 2,4 triliun parameter (95B aktif per token) — arsitektur terbesar keluarga Qwen hingga saat ini. Intelligence index 57,7 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global, sejajar dengan frontier papan atas laboratorium Barat, dan coding index 71,9 (sumber: Artificial Analysis) adalah salah satu skor tertinggi di benchmark pemrograman. Harga API $2,00 per juta token input dan $6,00 output bermain di kelas premium, sebanding dengan frontier Barat kelas atas untuk workload agentic engineering volume tinggi.",
+    pros: [
+      "Intelligence index 57,7 (sumber: Artificial Analysis) — papan atas proprietary global, sejajar dengan frontier papan atas laboratorium Barat dan melampaui Qwen3.8 Max (53,4) sebesar 4,3 poin",
+      "Coding index 71,9 (sumber: Artificial Analysis) — salah satu skor tertinggi di benchmark pemrograman global, mendekati Claude Opus 5 (78,0) dan melampaui Qwen3.8 Max (68,9) sebesar 3,0 poin",
+      "Arsitektur MoE 2,4T total / 95B aktif memberikan kualitas flagship dengan biaya inference yang jauh lebih rendah dari dense model sekelas — sweet spot kapasitas dan efisiensi",
+      "Throughput output median 49,1 tokens/detik dan TTFT 1,79 detik — responsif untuk alur kerja agentic real-time dan tool-use intensif dengan footprint inference premium",
+    ],
+    cons: [
+      "Harga API $2,00 per juta token input dan $6,00 output — premium dibanding saudara Qwen3.7 Plus ($0,40/$1,16), selisih kumulatif signifikan untuk workload volume tinggi",
+      "Sebagai model proprietary hosted, tidak ada opsi deployment lokal atau fine-tune — berbeda dengan keluarga Qwen3 open-weight yang tetap tersedia untuk workload sensitif data",
+      "Footprint 2,4T parameter total membutuhkan infrastruktur inference besar di sisi vendor — latency dan ketersediaan bisa bervariasi tergantung region dan kapasitas Bailian/Model Studio",
+      "Coding index tinggi tidak otomatis berarti kualitas coding terbaik di semua use case spesifik — tetap perlu uji sendiri untuk stack dan bahasa pemrograman target",
+    ],
+    verdict:
+      "Qwen3.8 2.4T A95B adalah pilihan rasional untuk tim engineering yang mengincar kombinasi intel 57,7 dan coding 71,9 di kelas flagship MoE global dengan harga API yang lebih efisien dari frontier Barat papan atas. Bukan pilihan termurah di kelasnya, tapi untuk workload agentic coding intensif di mana setiap poin benchmark berarti produktivitas, arsitektur MoE 2,4T menawarkan nilai yang sulit ditandingi.",
+    body: [
+      "Qwen3.8 2.4T A95B adalah flagship arsitektur Mixture-of-Experts Alibaba per Agustus 2026, dirancang untuk meneruskan dominasi laboratorium Asia di benchmark pemrograman dan penalaran. Berbeda dari saudara Qwen3.8 Max yang arsitekturnya tidak di-publikasikan secara eksplisit, A95B adalah model MoE 2,4 triliun parameter total dengan 95 miliar parameter aktif per token — rasio aktivasi 4% yang memberikan kualitas flagship dengan biaya inference yang mendekati model dense 95B. Alibaba sudah membangun reputasi kuat lewat Qwen3.6 Max Preview, Qwen3.7 Plus, dan Qwen3.8 Max di papan atas proprietary Asia, dan A95B melompat lebih jauh dengan coding index 71,9 (sumber: Artificial Analysis) yang meletakkannya di puncak ranking global untuk benchmark pemrograman — mendekati Claude Opus 5 (78,0) dan di atas frontier proprietary papan atas Asia sekelasnya.",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic engineering volume tinggi, Qwen3.8 2.4T A95B menunjukkan karakter flagship MoE yang matang: penalaran murni yang konsisten di sesi panjang, kemampuan mempertahankan konteks setelah belasan putaran tool-use, dan kemampuan coding yang mendekati Opus 5 untuk refaktor lintas file. Yang paling terasa dibanding saudara Qwen3.8 Max adalah kemampuan penalaran umum yang lebih kuat — intel 57,7 versus 53,4 di Qwen3.8 Max adalah selisih 4,3 poin yang terasa di workload reasoning panjang dan agentic planning. Throughput output median 49,1 tokens/detik dan TTFT 1,79 detik memberikan UX chat real-time yang responsif, mendukung pipeline agentic yang sensitif latency. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 57,7 (sumber: Artificial Analysis) menaruh Qwen3.8 2.4T A95B sejajar dengan frontier papan atas laboratorium Barat — Claude Opus 5 (63,1), Claude Fable 5 (62,1), dan Kimi K3 (57,1) berada di kisaran yang sebanding, sementara A95B memimpin untuk kombinasi intel + coding di kelas proprietary Asia. Coding index 71,9 adalah pembeda utama model ini — di atas Qwen3.8 Max (68,9), GLM-5 (44,2), dan MiMo (45,5), mendekati kelas khusus coding frontier papan atas. Math index tidak tersedia di response API AA untuk entry ini, jadi kualitas matematika perlu diuji sendiri per use case. Harga API $2,00 per juta token input dan $6,00 output bermain di kelas premium — dibanding Claude Opus 5 ($5/$25) 2,5x lebih murah di input dan 4x lebih murah di output, menjadikan A95B opsi menarik bagi developer yang mengincar performa coding papan atas dengan footprint inference yang jauh lebih efisien.",
+      "Kelemahan yang teridentifikasi: harga API $2,00 input dan $6,00 output per juta token — premium dibanding saudara Qwen3.7 Plus atau keluarga Qwen3 open-weight, selisih kumulatif signifikan untuk workload volume tinggi yang sensitif dolar. Sebagai model proprietary hosted, tidak ada opsi deployment lokal atau fine-tune — berbeda dengan keluarga Qwen3 open-weight yang tetap tersedia untuk workload sensitif data atau yang butuh kustomisasi mendalam. Akses lewat Bailian/Model Studio Alibaba Cloud memerlukan kartu pembayaran internasional untuk pemakaian serius, dan kapasitas inference untuk model 2,4T MoE membutuhkan infrastruktur besar di sisi vendor — latency dan ketersediaan bisa bervariasi tergantung region. Coding index 71,9 yang tinggi tidak otomatis berarti kualitas coding terbaik di semua use case spesifik — perlu uji sendiri untuk stack dan bahasa pemrograman target. Strategi pemakaian yang masuk akal: Qwen3.8 2.4T A95B untuk workflow agentic coding intensif di mana coding index 71,9 dan intel 57,7 menjadi nilai jual utama, dan arsitektur MoE 2,4T memberikan efisiensi biaya yang tidak dimiliki model dense sekelas; untuk volume tinggi dan harga sensitif, turun ke Qwen3.7 Plus atau keluarga Qwen3 open-weight; untuk deployment lokal atau fine-tune kustom, Qwen3 open-weight masih jadi pilihan utama.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-15",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
