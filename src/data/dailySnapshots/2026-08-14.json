@@ -1,0 +1,142 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-14T03:39:11.524Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "cordiverse/cordis",
+      "owner": "cordiverse",
+      "repo": "cordis",
+      "description": "Meta-Framework of Spatiotemporal Composability",
+      "githubUrl": "https://github.com/cordiverse/cordis",
+      "trendshiftUrl": "https://trendshift.io/repositories/126607",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2022-05-17T18:52:57Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "titanwings/colleague-skill",
+      "owner": "titanwings",
+      "repo": "colleague-skill",
+      "description": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶",
+      "githubUrl": "https://github.com/titanwings/colleague-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/25959",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-30T05:22:23Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "xai-org/x-algorithm",
+      "owner": "xai-org",
+      "repo": "x-algorithm",
+      "description": "Algorithm powering the For You feed on X",
+      "githubUrl": "https://github.com/xai-org/x-algorithm",
+      "trendshiftUrl": "https://trendshift.io/repositories/18476",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-19T23:12:35Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "zhu1090093659/dsh-web-ui",
+      "owner": "zhu1090093659",
+      "repo": "dsh-web-ui",
+      "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
+      "githubUrl": "https://github.com/zhu1090093659/dsh-web-ui",
+      "trendshiftUrl": "https://trendshift.io/repositories/147981",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-12T05:15:20Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ccch1mneyyy/dsh-TUI",
+      "owner": "ccch1mneyyy",
+      "repo": "dsh-TUI",
+      "description": "Claude Code 风格全屏交互终端插件：像素鲸鱼顶栏、流光大字、思考流式展开、双击 Esc 回滚、蓝白上下文进度条 + TPS 仪表",
+      "githubUrl": "https://github.com/ccch1mneyyy/dsh-TUI",
+      "trendshiftUrl": "https://trendshift.io/repositories/146168",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-13T12:49:31Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "cordiverse/paper",
+      "owner": "cordiverse",
+      "repo": "paper",
+      "description": "A Programming Paradigm for Spatiotemporal Composability",
+      "githubUrl": "https://github.com/cordiverse/paper",
+      "trendshiftUrl": "https://trendshift.io/repositories/146140",
+      "topics": [],
+      "dateCreated": "2026-08-13T09:53:33Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "topics": [
+        "Data visualization"
+      ],
+      "dateCreated": "2026-04-16T18:01:16Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "whiteguo233/OpenBiliClaw",
+      "owner": "whiteguo233",
+      "repo": "OpenBiliClaw",
+      "description": "本地私有、开源的跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。 | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.",
+      "githubUrl": "https://github.com/whiteguo233/OpenBiliClaw",
+      "trendshiftUrl": "https://trendshift.io/repositories/41472",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-07T13:46:10Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "AdamPlatin123/awesome-dsh-plugins",
+      "owner": "AdamPlatin123",
+      "repo": "awesome-dsh-plugins",
+      "description": "✨ Awesome DSH Plugins — DeepSeek Harness plugin directory with daily compatibility tracking ｜ DeepSeek Harness 插件生态目录与每日兼容性追踪",
+      "githubUrl": "https://github.com/AdamPlatin123/awesome-dsh-plugins",
+      "trendshiftUrl": "https://trendshift.io/repositories/147500",
+      "language": "Shell",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-08-04T21:46:54Z"
+    }
+  ]
+}
