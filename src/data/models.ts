@@ -3245,6 +3245,50 @@ export const models: Review[] = [
     date: "2026-08-15",
     featured: false,
   },
+  {
+    slug: "kimi-k2-7-code",
+    name: "Kimi K2.7 Code",
+    tagline: "Spesialis coding Kimi Moonshot — coding index 60,8 di kelas API mid-range",
+    tags: ["Moonshot AI", "Proprietary", "Coding", "Murah"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 7.7 },
+      { label: "Coding", value: 8.7 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 43.0,
+    aa_coding_index: 60.8,
+    aa_price_input: 0.95,
+    aa_price_output: 4,
+    aa_synced_at: "2026-08-16",
+    summary:
+      "Varian khusus coding dari keluarga Kimi K2.7 Moonshot AI yang diposisikan sebagai pilihan ekonomis untuk pipeline coding agentic. Intelligence index 43,0 (sumber: Artificial Analysis) menaruhnya di papan tengah — di atas K2 lama (26,3) tapi di bawah Kimi K3 flagship (57,1). Coding index 60,8 menjadi nilai jual utama: mendekati Kimi K3 (76,2) untuk rasio coding-per-harga di kelas API mid-range, dan harga $0,95 per juta token input menjadikannya opsi rasional untuk developer Indonesia yang sensitif dolar.",
+    pros: [
+      "Coding index 60,8 (sumber: Artificial Analysis) — mendekati Kimi K3 (76,2) untuk kelas mid-range, meninggalkan K2 (22,1) jauh di belakang",
+      "Harga API $0,95 per juta token input dan $4,00 output — di bawah Kimi K3 ($3/$15) sekitar 3x lebih murah di input dan hampir 4x lebih murah di output",
+      "Intelligence index 43,0 (sumber: Artificial Analysis) — sejajar dengan Claude Opus 4.5 (43,1) dan GPT-5 (44,6) di papan tengah, meninggalkan gap besar dibanding K2 lama",
+      "Throughput output median 36,4 tokens/detik dan TTFT 1,3 detik — responsif untuk tool-use agentic real-time tanpa jeda panjang",
+    ],
+    cons: [
+      "Math index tidak tersedia di response API AA — kualitas numerik perlu diuji sendiri per use case spesifik",
+      "Varian khusus coding tapi bukan model 'coding murni' seperti Codex-style — pengujian tetap perlu untuk workflow bahasa pemrograman target",
+      "Akses API Moonshot di Indonesia kadang kurang stabil dibanding frontier Barat — latency dan uptime perlu dipantau untuk adopsi produksi",
+      "Intelligence index 43,0 masih di bawah Kimi K3 (57,1) dengan margin 14,1 poin — untuk penalaran murni di luar workload coding, K3 tetap memimpin",
+    ],
+    verdict:
+      "Kimi K2.7 Code adalah jawaban Moonshot AI untuk developer yang mencari spesialis coding API mid-range: coding index 60,8 di kelas harga $0,95/$4 yang sulit ditandingi oleh frontier Barat atau keluarga Kimi sendiri di tier lebih mahal. Untuk pipeline coding agentic volume-tinggi di mana setiap dolar dihitung, ini salah satu pilihan paling menarik di pasar API proprietary Asia 2026.",
+    body: [
+      "Kimi K2.7 Code adalah varian khusus coding dari keluarga K2.7 Moonshot AI yang dirilis Juni 2026 — mengisi slot yang sebelumnya kosong di lineup mereka: antara K2 open-weight yang murah tapi intel rendah (26,3), dan K3 flagship proprietary yang intel tinggi (57,1) tapi harga premium. Bedanya dengan K3, K2.7 Code bukan generalis reasoning melainkan model yang di-fine-tune khusus untuk workflow coding — intelligence index 43,0 (sumber: Artificial Analysis) lebih rendah 14 poin dari K3, tapi coding index 60,8 hanya 15 poin di bawah K3 (76,2), dan harga API-nya tiga kali lebih murah di input. Untuk developer yang menghitung setiap dolar inference, trade-off ini sangat menarik: turun 18% kemampuan coding dapat 67% penghematan biaya input dan hampir 75% di output. Diposisikan berdampingan dengan K2 yang masih tersedia, lineup Moonshot kini punya spectrum lengkap: K2 untuk eksperimen super-murah, K2.7 Code untuk pipeline coding volume-tinggi, K3 untuk workload agentic paling menuntut.",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic volume-tinggi, Kimi K2.7 Code menunjukkan karakter khas model yang di-tuning untuk coding: snippet generation akurat, refactor multi-file koheren, dan kemampuan mengikuti instruksi tool-use yang konsisten di sesi panjang. Yang paling terasa dibanding K2 lama adalah lompatan kemampuan — coding index 60,8 versus 22,1 di K2 adalah 2,75x peningkatan yang langsung terasa di editor. Throughput output median 36,4 tokens/detik mendukung UX chat real-time, dan TTFT 1,3 detik (sumber: Artificial Analysis) lebih responsif dari Kimi K3 (2,77 detik) — jeda respons pertama yang lebih pendek membuat interaksi IDE terasa lebih natural. Intelligence index 43,0 memberikan fondasi penalaran yang cukup untuk memahami instruksi kompleks dan mempertahankan konteks setelah belasan putaran tool-use, meski untuk riset ilmiah atau pembuktian teoritis, K3 flagship masih memimpin dengan jarak jelas. (Sumber: Artificial Analysis.)",
+      "Soal harga, K2.7 Code bermain di kelas mid-range yang strategis: $0,95 per juta token input dan $4,00 output. Bandingkan dengan Kimi K3 ($3/$15) yang 3,2x lebih mahal di input dan 3,75x di output, atau dengan frontier Barat seperti Claude Opus 4.5 ($5/$25) yang 5,3x lebih mahal di input dan 6,25x di output. Untuk pipeline yang memanggil model ribuan kali per hari — code assistant IDE, code review otomatis, summarisasi diff, atau refactor massal — selisih kumulatif ini langsung terasa bagi developer Indonesia yang menghitung dolar per inference. Coding index 60,8 di kelas harga ini sulit ditandingi: DeepSeek V3 Pro bermain di $0,40/$2 dengan coding index lebih rendah, Qwen3.7 Plus di $0,40/$1,16 dengan coding index di bawah K2.7 Code, dan frontier Barat semuanya bermain di harga 3-10x lebih mahal untuk rasio coding-per-harga yang sebanding atau lebih rendah. Math index tidak tersedia di response API AA untuk entry ini, jadi kualitas numerik perlu diuji sendiri per use case spesifik — meski untuk workload coding agentik, kombinasi intel 43,0 dan coding 60,8 sudah menjadi jaminan kuat.",
+      "Signifikansi K2.7 Code bagi peta AI Indonesia adalah konfirmasi bahwa Moonshot AI tidak hanya bermain di ceruk open-weight murah atau flagship reasoning mahal, tapi juga menawarkan opsi mid-range yang solid untuk pasar API coding yang sensitif harga. Ini melengkapi lineup mereka dan memberikan orkestrasi pipeline multi-model yang lebih fleksibel: K2 untuk eksperimen super-murah, K2.7 Code untuk pipeline coding volume-tinggi, K3 untuk workload agentic paling menuntut. Akses API tersedia lewat platform.moonshot.ai dan mitra regional — untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional), dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: K2.7 Code untuk pipeline coding agentic volume-tinggi yang sensitif terhadap rasio coding-per-harga; K3 untuk workload penalaran murni atau agentic coding paling intensif; K2 open-weight untuk deployment lokal atau eksperimen biaya rendah; frontier Barat untuk kasus yang butuh integrasi ecosystem atau SLA enterprise formal.",
+    ],
+    link: "https://www.moonshot.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-16",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
