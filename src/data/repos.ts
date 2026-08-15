@@ -3685,6 +3685,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-15",
     featured: false,
   },
+  {
+    slug: "cli-anything",
+    name: "CLI-Anything",
+    tagline: "Membuat semua software desktop siap dipanggil agent lewat CLI terstruktur",
+    tags: ["AI Agent", "CLI", "Python", "Open Source"],
+    score: 8.8,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "CLI-Anything dari HKUDS Data Intelligence Lab menjawab salah satu pertanyaan paling praktis di era agent: bagaimana caranya software desktop apapun - Blender, GIMP, LibreOffice, Zotero, Obsidian, Joplin, FreeCAD - bisa dipanggil oleh AI agent lewat antarmuka yang terstruktur, terdokumentasi sendiri, dan bisa diaudit. Proyek ini menyediakan generator harness 7 fase plus registry publik bernama CLI-Hub yang sekarang menaungi puluhan aplikasi.",
+    highlights: [
+      "Generator CLI 7 fase otomatis: dari analisis software target sampai SKILL.md siap agent",
+      "CLI-Hub registry terpusat dengan paket Python (pip install cli-anything-hub) untuk browse, install, update, dan uninstall",
+      "Lebih dari 18 aplikasi sudah punya harness resmi: Blender, GIMP, LibreOffice, Zotero, Obsidian, Joplin, FreeCAD, QGIS, Inkscape, Godot, Krita, Zoom, MuseScore, RenderDoc, dan lain-lain",
+      "Output JSON terstruktur plus mode manusia (-h) untuk debugging cepat",
+      "Plugin dan skill untuk banyak agent: Claude Code, OpenClaw, Nanobot, Codex, Cursor, Reasonix, Antigravity, dan Pi",
+      "2.461 unit dan E2E test lulus dengan cakupan pytest penuh lintas harness",
+      "Lisensi Apache-2.0 dan tech report di arXiv:2606.03854 untuk referensi akademis",
+      "Dukungan lintas platform termasuk Windows (cygpath guard) dan macOS, dengan CLI-Hub frontend terpisah untuk deck CLI-Anything dan CLI publik",
+    ],
+    pros: [
+      "Menjembatani dunia software desktop yang selama ini tertutup dengan ekosistem agent yang sedang tumbuh cepat",
+      "Paket CLI-Hub lewat pip membuat adopsi terasa seperti npm - satu perintah untuk install harness baru",
+      "Standar SKILL.md otomatis memastikan setiap CLI bisa ditemukan agent lewat ekosistem skills (ClawHub, SkillHub, npx skills)",
+      "Kontribusi terbuka lewat PR: siapa pun bisa menambahkan harness software baru setelah review",
+    ],
+    cons: [
+      "Bergantung pada software upstream yang dipasang di mesin - CLI-Anything hanya menyediakan lapisan CLI, bukan aplikasi desktopnya",
+      "Dokumentasi masih didominasi bahasa Inggris dengan beberapa terjemahan Mandarin dan Jepang - komunitas Indonesia perlu kontribusi lokal",
+      "Untuk software dengan API yang sangat terbatas atau antarmuka proprietary, kualitas harness bisa bervariasi dan perlu review manual",
+    ],
+    verdict:
+      "CLI-Anything adalah proyek yang paling pragmatis di ranah agent-native tooling tahun 2026: bukan framework riset, melainkan infrastruktur praktis yang langsung menghubungkan software desktop dunia nyata dengan agent AI. Sangat relevan untuk developer Indonesia yang sering mengotak-atik Blender, LibreOffice, atau Zotero lewat CLI.",
+    body: [
+      "Pertanyaan yang sering muncul di komunitas AI agent sepanjang 2025 dan 2026 adalah: bagaimana caranya agent seperti Claude Code, Codex, atau OpenClaw bisa mengoperasikan software desktop yang tidak punya API resmi? Selama ini, jawabannya berkisar pada wrapper ad-hoc yang ditulis sekali pakai, atau pada Computer Use yang mahal dan tidak deterministik. CLI-Anything dari HKUDS Data Intelligence Lab mengambil jalur yang lebih sistematis: menghasilkan harness CLI terstruktur untuk software apapun lewat generator 7 fase, lalu membagikan hasilnya lewat registry publik bernama CLI-Hub.",
+      "Dalam pengujian editorial Wawasan AI, alur paling praktis adalah lewat CLI-Hub: pasang pip install cli-anything-hub, jalankan cli-hub list untuk melihat puluhan harness yang sudah jadi, lalu cli-hub install nama-cli dan cli-hub launch untuk langsung mencoba. Untuk software desktop populer seperti Blender, GIMP, LibreOffice, Zotero, Obsidian, Joplin, FreeCAD, dan QGIS, harness-nya sudah stabil dengan ratusan hingga ribuan perintah yang terdokumentasi sendiri lewat --help. Output JSON terstruktur membuat agent bisa melakukan loop reasoning -> tool call -> observasi tanpa perlu parsing regex yang rapuh.",
+      "Yang membuat proyek ini menonjol adalah standarisasi di level protokol: setiap CLI yang dihasilkan otomatis menyertakan SKILL.md (Phase 6.5), sehingga bisa ditemukan agent lewat ekosistem skills yang sudah mapan seperti ClawHub, SkillHub, dan perintah npx skills add. Standar ini juga yang membuat kontribusi komunitas menjadi murah - developer yang ingin menambahkan harness untuk software favoritnya cukup mengikuti template dan membuka PR, dan begitu di-merge, harness langsung muncul di registry publik. Untuk konteks Indonesia, pola ini sangat cocok: banyak tim lokal sudah punya wrapper internal untuk Blender atau Zotero yang selama ini hidup terpisah-pisah, dan CLI-Anything memberikan standar untuk dibagikan ke komunitas lebih luas.",
+      "Keterbatasan yang perlu dipahami: CLI-Anything menyediakan lapisan CLI, bukan software desktopnya sendiri - kalau harness untuk Blender dipasang tapi Blender tidak ada di mesin, perintah tetap gagal. Selain itu, untuk software dengan API yang sangat terbatas atau antarmuka proprietary yang tidak stabil, kualitas harness bisa bervariasi dan perlu review manual sebelum dipakai di pipeline kritis. Namun untuk software desktop mainstream yang dipakai harian oleh tim kreatif, teknis, dan riset di Indonesia, CLI-Anything adalah salah satu proyek paling pragmatis yang muncul di paruh kedua 2026, dan layak masuk radar setiap developer yang serius soal agent-native workflow.",
+    ],
+    link: "https://github.com/HKUDS/CLI-Anything",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-16",
+    updatedAt: "2026-08-16",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
