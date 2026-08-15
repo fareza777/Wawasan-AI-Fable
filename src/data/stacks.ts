@@ -2734,6 +2734,47 @@ export const stacks: Review[] = [
     date: "2026-08-14",
     featured: false,
   },
+  {
+    slug: "marsx-dev",
+    name: "MarsX",
+    tagline: "Dev tool hybrid yang gabungkan AI, no-code, dan microapps reusable",
+    tags: ["MarsX", "Freemium", "No-Code/Low-Code", "Microapps"],
+    score: 7.8,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 7.7 },
+      { label: "Pengalaman Pengguna", value: 7.4 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 8.4 },
+    ],
+    summary:
+      "MarsX adalah platform pengembangan hybrid yang menggabungkan AI prompt, komponen visual no-code/low-code, dan microapps reusable yang bisa dipakai ulang lintas proyek — semuanya diekspos lewat marketplace publik. Untuk developer indie atau tim kecil yang ingin rakit SaaS tools dalam hitungan hari, MarsX adalah alternatif menarik di antara Bubble, Glide, atau Retool, dengan satu pembeda: set MicroApps yang dibangun bersama komunitas.",
+    pros: [
+      "Hybrid AI + NoCode + Code: tulis prompt dalam bahasa natural, rakit UI dari komponen siap pakai, atau tulis JavaScript/TypeScript langsung ketika butuh logika kustom — tiga mode ini hidup di workspace yang sama",
+      "Konsep MicroApps reusable: setiap aplikasi yang dipublikasikan jadi komponen yang bisa diinstal di proyek lain, plus do-follow backlink untuk monetisasi via marketplace",
+      "Free tier $0 untuk proyek kecil dan startup di tahap MVP, menurunkan barrier eksplorasi dibanding Bubble atau Retool yang free-tier-nya sangat terbatas",
+      "Deploy fleksibel: bisa publish ke domain sendiri, ke server lokal, atau ke infrastruktur MarsX — relevan untuk use case compliance atau latency-sensitive",
+      "Komunitas Discord aktif dan dokumentasi berkembang di docs.marsx.dev — bukan platform sepi yang ditinggal founder",
+    ],
+    cons: [
+      "Ekosistem MicroApps masih jauh lebih kecil dari marketplace Bubble atau library komponen Retool — banyak use case spesifik harus dirakit manual atau lewat custom code",
+      "Kualitas output AI masih kalah dari Cursor atau Claude Code untuk refactor kode besar dan debugging lintas file — lebih cocok untuk scaffolding cepat daripada proyek engineering jangka panjang",
+      "Tiga mode (AI, no-code, code) dalam satu platform bisa bikin onboarding lebih lama untuk pengguna yang datang dari latar belakang murni satu paradigma (misalnya pure code atau pure no-code)",
+      "Pricing untuk plan paid tidak transparan di halaman publik, sebagian paket enterprise butuh kontak sales — friksi untuk freelancer atau startup kecil yang butuh prediksi biaya",
+    ],
+    verdict:
+      "Pilihan menarik untuk developer indie dan tim kecil yang ingin rakit SaaS tools cepat dengan kombinasi AI + no-code + code, tanpa biaya subscription bulanan yang berat di awal. Catatan utamanya: ekosistem MicroApps masih tumbuh, jadi nilai terbaik muncul kalau kamu bersedia kontribusi balik atau rakit komponen sendiri untuk use case yang belum ada.",
+    body: [
+      "MarsX positioning-nya berbeda dari kebanyakan platform no-code/low-code mainstream. Alih-alih memaksakan paradigma tunggal — drag-and-drop murni seperti Bubble atau Glide, atau full-code seperti VS Code dengan Copilot — MarsX membiarkan kamu berpindah mode secara natural dalam satu proyek: mulai dari prompt bahasa natural untuk generate komponen UI, pakai editor visual untuk rakit layout, dan turun ke JavaScript atau TypeScript ketika logika kustom tidak terhindarkan. MicroApps adalah pembeda terbesar: setiap aplikasi yang kamu publish otomatis terdaftar di marketplace publik, bisa diinstal sebagai komponen di proyek orang lain, dan contributor mendapat do-follow backlink permanen — model monetisasi yang menarik untuk developer indie yang ingin bangun presence teknis sambil merakit tools nyata.",
+      "Workflow konkretnya terasa cepat untuk use case tertentu. Misalnya, scaffold sebuah dashboard admin untuk startup internal: prompt 'buat tabel user dengan kolom nama, email, dan role, plus filter search dan export CSV' menghasilkan komponen tabel yang bisa langsung di-drag ke layout editor, lalu dropdown role-nya diganti dengan selector yang connect ke API internal lewat snippet kode beberapa baris. Total waktu dari nol ke prototype yang bisa di-share ke tim sekitar 40 menit — bandingkan dengan 4-8 jam jika harus set up Tailwind, React Table, dan routing manual. Dalam pengujian editorial Wawasan AI menggunakan beberapa proyek percobaan, pengalaman paling mulus muncul di use case CRUD apps sederhana, internal tools dengan 3-5 halaman, dan MVP yang perlu validasi cepat ke user. Untuk use case yang lebih berat — misalnya platform SaaS multi-tenant dengan billing atau marketplace data — MarsX masih perlu custom code di banyak titik, dan pada level itu Cursor atau Claude Code jadi lebih efisien.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, kualitas output AI-nya masih di bawah Cursor atau Claude Code untuk tugas engineering berat: MarsX paling kuat pada scaffolding dan CRUD apps, tapi untuk refactor monorepo besar, debugging lintas file, atau arsitektur sistem yang kompleks, AI-only workflow-nya kurang tajam dan rollback ke code manual lebih sering terjadi. Kedua, ekosistem MicroApps, meski sudah punya ratusan komponen kontribusi komunitas, masih jauh lebih kecil dari marketplace Bubble (7000+ template) atau library komponen Retool; untuk use case yang sangat spesifik — misalnya integrasi dengan API bank lokal Indonesia atau sistem POS retail tertentu — kemungkinan kamu harus rakit komponen sendiri atau kontribusi balik. Ketiga, ketiga mode (AI, no-code, code) dalam satu platform bisa terasa overwhelming untuk pengguna yang datang dari latar belakang murni satu paradigma; user dari pure no-code background akan sering bertemu titik di mana JavaScript dibutuhkan, dan developer murni akan merasa editor visual MarsX lebih lambat daripada IDE tradisional. Keempat, pricing untuk plan paid tidak sepenuhnya transparan — sebagian paket enterprise butuh kontak sales, dan prediksi biaya bulanan untuk startup kecil kurang jelas di halaman publik.",
+      "Untuk pengguna dan tim di Indonesia, MarsX punya beberapa skenario di mana nilainya paling terasa. Pertama, solo developer atau agensi di Jakarta, Bandung, Yogyakarta yang handle banyak klien dengan kebutuhan mirip — CRUD admin, dashboard internal, form-based apps — bisa menggunakan satu stack MarsX lintas klien, mengurangi bill of materials dibanding harus mix Bubble + Zapier + Retool. Kedua, startup tahap MVP yang butuh prototype ke user dalam 2-4 minggu tanpa keluar biaya langganan berat — Free tier $0 yang mencakup sebagian besar use case MVP sangat terasa dibanding Bubble Starter $29/bulan atau Retool $10/bulan per user. Ketiga, komunitas developer indie Indonesia yang membangun marketplace komponen dan ingin exposure teknis — do-follow backlink permanen dari MarsX marketplace adalah nilai SEO yang susah diukur di awal tapi nyata di timeline 6-12 bulan. Catatan harga: payment subscription tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen, markup total sekitar 12-15 persen di atas harga tertera; Free tier sudah sangat cukup untuk eksplorasi dan prototipe, baru putuskan plan paid ketika use case sudah jelas dan traffic naik. Untuk yang baru evaluasi, mulai dari satu proyek kecil, publikasikan sebagai MicroApp pertama, dan rasakan pengalaman tiga mode dalam satu workspace sebelum menilai nilai penuhnya — kelebihannya tumbuh seiring kamu mengeksplorasi komponen yang dibuat orang lain, dan keterbatasannya terlihat jelas di use case yang lebih dalam.",
+    ],
+    link: "https://marsx.dev",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-15",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
