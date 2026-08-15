@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "15 Agustus 2026",
-  "period": {
-    "date": "2026-08-15",
-    "label": "15 Agustus 2026",
-    "path": "/repo/daily/2026/08/15"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-15T00:06:27.187Z",
+  "fetchedAt": "2026-08-15T02:33:34.931Z",
   "repos": [
     {
       "rank": 1,
@@ -26,84 +22,6 @@
     },
     {
       "rank": 2,
-      "fullName": "public-apis/public-apis",
-      "owner": "public-apis",
-      "repo": "public-apis",
-      "description": "A collective list of free APIs",
-      "githubUrl": "https://github.com/public-apis/public-apis",
-      "trendshiftUrl": "https://trendshift.io/repositories/1677",
-      "language": "Python",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2016-03-20T23:49:42Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "guillaumemeyer/watermarks-remover",
-      "owner": "guillaumemeyer",
-      "repo": "watermarks-remover",
-      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
-      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
-      "trendshiftUrl": "https://trendshift.io/repositories/139213",
-      "language": "Python",
-      "topics": [
-        "Document processing"
-      ],
-      "dateCreated": "2026-08-11T16:32:38Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "xai-org/x-algorithm",
-      "owner": "xai-org",
-      "repo": "x-algorithm",
-      "description": "Algorithm powering the For You feed on X",
-      "githubUrl": "https://github.com/xai-org/x-algorithm",
-      "trendshiftUrl": "https://trendshift.io/repositories/18476",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-01-19T23:12:35Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "cordiverse/cordis",
-      "owner": "cordiverse",
-      "repo": "cordis",
-      "description": "Meta-Framework of Spatiotemporal Composability",
-      "githubUrl": "https://github.com/cordiverse/cordis",
-      "trendshiftUrl": "https://trendshift.io/repositories/126607",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2022-05-17T18:52:57Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "zhu1090093659/dsh-web-ui",
-      "owner": "zhu1090093659",
-      "repo": "dsh-web-ui",
-      "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
-      "githubUrl": "https://github.com/zhu1090093659/dsh-web-ui",
-      "trendshiftUrl": "https://trendshift.io/repositories/147981",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-12T05:15:20Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "cathrynlavery/diagram-design",
-      "owner": "cathrynlavery",
-      "repo": "diagram-design",
-      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
-      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
-      "trendshiftUrl": "https://trendshift.io/repositories/26141",
-      "language": "HTML",
-      "topics": [
-        "Data visualization"
-      ],
-      "dateCreated": "2026-04-16T18:01:16Z"
-    },
-    {
-      "rank": 8,
       "fullName": "anywhere-labs/deepseek-harness-desktop",
       "owner": "anywhere-labs",
       "repo": "deepseek-harness-desktop",
@@ -117,21 +35,19 @@
       "dateCreated": "2026-08-13T16:30:50Z"
     },
     {
-      "rank": 9,
-      "fullName": "github/spec-kit",
-      "owner": "github",
-      "repo": "spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-      "githubUrl": "https://github.com/github/spec-kit",
-      "trendshiftUrl": "https://trendshift.io/repositories/15463",
-      "language": "Python",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2025-08-21T22:54:31Z"
+      "rank": 3,
+      "fullName": "xiaobright/dsh-anchored-standard",
+      "owner": "xiaobright",
+      "repo": "dsh-anchored-standard",
+      "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
+      "githubUrl": "https://github.com/xiaobright/dsh-anchored-standard",
+      "trendshiftUrl": "https://trendshift.io/repositories/156235",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-08-14T14:06:39Z"
     },
     {
-      "rank": 10,
+      "rank": 4,
       "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
       "owner": "awesome-dsh-plugin",
       "repo": "awesome-dsh-plugin",
@@ -142,6 +58,88 @@
         "Curated list"
       ],
       "dateCreated": "2026-08-13T13:55:31Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "guillaumemeyer/watermarks-remover",
+      "owner": "guillaumemeyer",
+      "repo": "watermarks-remover",
+      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
+      "trendshiftUrl": "https://trendshift.io/repositories/139213",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-11T16:32:38Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ZSvirt/zsvirt",
+      "owner": "ZSvirt",
+      "repo": "zsvirt",
+      "description": "Core IaaS engine and cloud infrastructure foundation of ZSvirt",
+      "githubUrl": "https://github.com/ZSvirt/zsvirt",
+      "trendshiftUrl": "https://trendshift.io/repositories/156451",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-08-14T06:47:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "gregorojstersek/resources-to-become-a-great-engineering-leader",
+      "owner": "gregorojstersek",
+      "repo": "resources-to-become-a-great-engineering-leader",
+      "description": "List of books, blogs, newsletters and people!",
+      "githubUrl": "https://github.com/gregorojstersek/resources-to-become-a-great-engineering-leader",
+      "trendshiftUrl": "https://trendshift.io/repositories/7114",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2024-01-16T09:59:06Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "pnoker/iot-dc3",
+      "owner": "pnoker",
+      "repo": "iot-dc3",
+      "description": "IoT DC3 is a fully open-source, distributed industrial IoT platform built on Spring Cloud and evolving for AI scenarios. It enables rapid IoT project development and connected-device management as a complete IoT system solution.",
+      "githubUrl": "https://github.com/pnoker/iot-dc3",
+      "trendshiftUrl": "https://trendshift.io/repositories/116569",
+      "language": "Java",
+      "topics": [
+        "Cloud native",
+        "IoT"
+      ],
+      "dateCreated": "2018-08-28T13:01:37Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "xai-org/x-algorithm",
+      "owner": "xai-org",
+      "repo": "x-algorithm",
+      "description": "Algorithm powering the For You feed on X",
+      "githubUrl": "https://github.com/xai-org/x-algorithm",
+      "trendshiftUrl": "https://trendshift.io/repositories/18476",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-19T23:12:35Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "pis10/TraceSurface",
+      "owner": "pis10",
+      "repo": "TraceSurface",
+      "description": "发现藏在前端代码里的 API，验证未授权访问风险 · 动态浏览器追踪 × JavaScript 静态分析",
+      "githubUrl": "https://github.com/pis10/TraceSurface",
+      "trendshiftUrl": "https://trendshift.io/repositories/148884",
+      "language": "Python",
+      "topics": [
+        "Headless browser",
+        "Pentesting",
+        "Static analysis"
+      ],
+      "dateCreated": "2026-08-07T01:56:16Z"
     }
   ]
 }
