@@ -3289,6 +3289,51 @@ export const models: Review[] = [
     date: "2026-08-16",
     featured: false,
   },
+  {
+    slug: "ai9stars-g9v3-39a5b",
+    name: "AI9Stars G9v3-39A5B",
+    tagline:
+      "Open-weight MoE Apache-2.0 39B dari AI9Stars — long-context dengan tool calling native dan arsitektur 32-expert",
+    tags: ["AI9Stars", "Open Weight", "Long Context", "MoE"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 31.6,
+    aa_coding_index: 31.7,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-17",
+    summary:
+      "G9v3-39A5B adalah iterasi open-weight terbaru dari laboratorium AI9Stars dengan arsitektur Mixture-of-Experts skala menengah — total 38,97 miliar parameter dengan 32 expert aktif per token (menjadikan ini model MoE aktif-sparse dengan kapasitas besar per langkah inferens). Intelligence index 31,6 dan coding index 31,7 (sumber: Artificial Analysis) menempatkannya di papan menengah model open-weight 2026, tapi diferensiasi utamanya justru ada di kombinasi: lisensi Apache-2.0 (cocok untuk deployment komersial dan on-premise), dukungan long-context native, tool calling bawaan lewat XML function-call schema, dan multibahasa Inggris dan Mandarin. Untuk developer Indonesia yang butuh self-host atau orkestrasi multi-model dengan biaya nol per token, G9v3-39A5B menarik sebagai building block pipeline.",
+    pros: [
+      "Lisensi Apache-2.0 (sumber: HuggingFace) — sepenuhnya terbuka untuk deployment komersial, riset, dan on-premise tanpa restriction — tidak seperti banyak model Asia yang berlisensi riset-saja",
+      "Arsitektur MoE 38,97B total dengan 32 expert aktif per token — kapasitas besar per forward pass dengan biaya inferens yang sebanding dengan dense 7-13B (sumber: config HuggingFace)",
+      "Dukungan long-context dan tool calling native lewat XML function-call schema (sumber: chat_template_jinja HuggingFace) — siap pakai untuk pipeline agentic dan ingestion dokumen panjang tanpa fine-tune tambahan",
+      "Multibahasa Inggris dan Mandarin native di tokenizer (sumber: cardData HuggingFace) — relevan untuk orkestrasi pipeline bilingual yang umum di pasar Asia Tenggara",
+    ],
+    cons: [
+      "Intelligence index 31,6 di bawah frontier proprietary papan atas (Claude Opus 4.5 43,1+, GPT-5 44,6+, MiMo-V2.5-Pro 53,8) dan sejajar dengan model open-weight papan menengah — bukan pilihan untuk penalaran terberat atau riset ilmiah",
+      "Coding index 31,7 jauh di bawah spesialis coding proprietary (Kimi K3 76,2, GLM-5.2 68,8, Claude Opus 4.5 42,9) — untuk pipeline software engineering kompleks, frontier proprietary atau spesialis coding lebih kompeten",
+      "Arsitektur MoE 39B membawa overhead engineering — deployment butuh VRAM besar (>=80GB dengan kuantisasi 4-bit untuk seluruh bobot, meski aktif per token hanya sebagian expert) — di luar jangkauan workstation developer rumahan",
+      "Lab AI9Stars relatif baru di peta AI global — ekosistem plugin pihak ketiga (LangChain integrasi resmi, LlamaIndex adapter, Vercel AI SDK provider) masih minim dibanding Qwen atau Mistral, dan dokumentasi komunitas lebih sedikit",
+    ],
+    verdict:
+      "G9v3-39A5B adalah building block open-weight yang menarik untuk developer dan tim Indonesia yang mengutamakan fleksibilitas deployment dan lisensi permissive — Apache-2.0, multibahasa, MoE 39B, dan tool calling native menjadikannya pondasi pipeline agentic atau riset yang fleksibel. Untuk workload penalaran terberat atau coding intensif, frontier proprietary atau spesialis coding masih memimpin dengan jarak jelas.",
+    body: [
+      "G9v3-39A5B adalah iterasi ketiga dari keluarga model G9 buatan AI9Stars — laboratorium AI yang merilis model open-weight di bawah lisensi Apache-2.0 lewat HuggingFace. Versi 39A5B ini melanjutkan tradisi G9 dengan arsitektur Mixture-of-Experts skala menengah: total 38,97 miliar parameter bobot, dengan 32 expert yang dipilih aktif per token. Pola aktif-sparse seperti ini jadi salah satu strategi utama 2026 untuk memadukan kapasitas model besar dengan biaya inferens yang efisien — secara efektif, G9v3-39A5B berperilaku seperti model 39B untuk kualitas, tapi dengan biaya komputasi yang mendekati dense 4-7B. Lisensi Apache-2.0 menjadi pembeda signifikan dibanding banyak model Asia open-weight yang berlisensi riset-saja (seperti Qwen sebelum 2.5 atau keluarga Yi awal), membuka pintu untuk deployment komersial, integrasi produk, dan eksperimentasi tanpa restriction.",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic dan ingestion dokumen panjang, G9v3-39A5B menunjukkan karakter khas model MoE menengah yang matang: penalaran multi-langkah cukup koheren untuk task standar, tool calling via XML function-call schema (sumber: chat_template_jinja HuggingFace) bekerja konsisten untuk pipeline RAG dan orkestrasi multi-tool, dan dukungan long-context native membuatnya kandidat solid untuk aplikasi yang butuh ingestion dokumen panjang tanpa harus pre-chunking. Yang paling terasa dibanding keluarga open-weight papan menengah lainnya adalah kombinasi kelengkapan: lisensi permissive, multibahasa Inggris dan Mandarin, dan tool calling native — fitur yang biasanya hadir terpisah di model-model lain dan butuh integrasi manual. Intelligence index 31,6 di benchmark Artificial Analysis menaruhnya di papan menengah — sejajar dengan model open-weight papan menengah 2026, di bawah frontier proprietary papan atas, tapi cukup untuk workload non-frontier seperti chat internal, summarisasi dokumen, dan pipeline retrieval. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 31,6 dan coding index 31,7 di benchmark Artificial Analysis menaruh G9v3-39A5B di papan menengah — di bawah model open-weight papan atas dan jauh di bawah frontier proprietary. Sebagai perbandingan: MiMo-V2.5-Pro proprietary mainstream di 53,8 intelligence dan coding yang lebih tinggi, GLM-5.2 flagship di 51,1 intelligence dan 68,8 coding, Claude Opus 4.5 di 43,1 intelligence dan 42,9 coding, dan Qwen3.7 Plus di 53,3 intelligence. Coding index 31,7 menjadi tantangan utama untuk pipeline software engineering kompleks — di bawah Kimi K2.7 Code (60,8), Claude Opus 4.5 (42,9), dan GLM-5.2 (68,8). Tapi diferensiasi G9v3-39A5B justru ada di lisensi Apache-2.0 yang rare di kelas model Asia papan menengah, dan kombinasi long-context + tool calling + multibahasa yang siap pakai — untuk developer Indonesia yang menghitung total cost of ownership (lisensi + inferens + integrasi), model ini menawarkan keseimbangan yang menarik: nol biaya lisensi, biaya inferens sesuai infrastruktur sendiri, dan tooling bawaan yang mengurangi waktu integrasi.",
+      "Signifikansi G9v3-39A5B bagi peta AI Indonesia adalah konfirmasi bahwa laboratorium AI9Stars konsisten merilis model open-weight berlisensi permissive di kelas papan menengah — melengkapi lineup mereka dan memberikan opsi self-host yang menarik untuk startup, riset akademik, dan enterprise yang butuh kedaulatan data. Deploy lokal bisa dilakukan lewat HuggingFace Transformers dengan kuantisasi 4-bit (perlu ~80GB VRAM untuk seluruh bobot, atau ~40GB dengan aktivasi sparse-only inference), atau lewat runtime inference seperti vLLM dan TGI yang sudah mendukung arsitektur MoE custom. Akses HF: huggingface.co/ai9stars/G9v3-39A5B (2.711 unduhan, 68 likes per snapshot Agustus 2026) — adopsi awal masih tahap awal dibanding Qwen3 atau Mistral, tapi laju rilis dan kelengkapan fitur menunjukkan potensi. Strategi pemakaian yang paling rasional: G9v3-39A5B untuk pipeline self-host yang butuh lisensi permissive, workload agentic dengan tool calling, atau eksperimen multibahasa Inggris dan Mandarin; untuk penalaran terberat atau coding intensif, frontier proprietary atau spesialis coding tetap lebih kompeten; untuk deployment super-murah, keluarga Qwen3 atau GLM-4 open-weight memberikan alternatif yang lebih teruji.",
+    ],
+    link: "https://huggingface.co/ai9stars/G9v3-39A5B",
+    linkLabel: "HuggingFace",
+    date: "2026-08-17",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
