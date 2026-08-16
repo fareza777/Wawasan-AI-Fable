@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "16 Agustus 2026",
-  "period": {
-    "date": "2026-08-16",
-    "label": "16 Agustus 2026",
-    "path": "/repo/daily/2026/08/16"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-16T00:03:50.679Z",
+  "fetchedAt": "2026-08-16T02:43:11.260Z",
   "repos": [
     {
       "rank": 1,
@@ -26,6 +22,45 @@
     },
     {
       "rank": 2,
+      "fullName": "ForkWrenGuide/AnyUnlock",
+      "owner": "ForkWrenGuide",
+      "repo": "AnyUnlock",
+      "description": "Open-source toolkit and diagnostic guides inspired by AnyUnlock capabilities. Focuses on iOS data recovery, passcode auditing, MDM architecture analysis, and Apple ID backup management for educational purposes and authorized security research.",
+      "githubUrl": "https://github.com/ForkWrenGuide/AnyUnlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/136367",
+      "topics": [],
+      "dateCreated": "2026-06-01T04:16:05Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "yjh051108/dsh-routing-suite",
+      "owner": "yjh051108",
+      "repo": "dsh-routing-suite",
+      "description": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23).",
+      "githubUrl": "https://github.com/yjh051108/dsh-routing-suite",
+      "trendshiftUrl": "https://trendshift.io/repositories/158070",
+      "language": "PowerShell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-14T21:20:55Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "vibeinging/deepseek-harness-desktop-app",
+      "owner": "vibeinging",
+      "repo": "deepseek-harness-desktop-app",
+      "description": "DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.",
+      "githubUrl": "https://github.com/vibeinging/deepseek-harness-desktop-app",
+      "trendshiftUrl": "https://trendshift.io/repositories/159313",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T10:41:33Z"
+    },
+    {
+      "rank": 5,
       "fullName": "anywhere-labs/deepseek-harness-desktop",
       "owner": "anywhere-labs",
       "repo": "deepseek-harness-desktop",
@@ -39,34 +74,44 @@
       "dateCreated": "2026-08-13T16:30:50Z"
     },
     {
-      "rank": 3,
-      "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
-      "owner": "awesome-dsh-plugin",
-      "repo": "awesome-dsh-plugin",
-      "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
-      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-      "trendshiftUrl": "https://trendshift.io/repositories/146178",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2026-08-13T13:55:31Z"
+      "rank": 6,
+      "fullName": "alexgreensh/attention-span",
+      "owner": "alexgreensh",
+      "repo": "attention-span",
+      "description": "Make your agents talk human. ADHD-friendly output styles for Claude Code. So you can pay attention, not tokens.",
+      "githubUrl": "https://github.com/alexgreensh/attention-span",
+      "trendshiftUrl": "https://trendshift.io/repositories/130788",
+      "topics": [],
+      "dateCreated": "2026-08-04T23:20:01Z"
     },
     {
-      "rank": 4,
-      "fullName": "xiaobright/dsh-anchored-standard",
-      "owner": "xiaobright",
-      "repo": "dsh-anchored-standard",
-      "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
-      "githubUrl": "https://github.com/xiaobright/dsh-anchored-standard",
-      "trendshiftUrl": "https://trendshift.io/repositories/156235",
+      "rank": 7,
+      "fullName": "SheberDavid/v4-flash-godmode-opencode-go",
+      "owner": "SheberDavid",
+      "repo": "v4-flash-godmode-opencode-go",
+      "description": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset",
+      "githubUrl": "https://github.com/SheberDavid/v4-flash-godmode-opencode-go",
+      "trendshiftUrl": "https://trendshift.io/repositories/157218",
       "language": "JavaScript",
       "topics": [
         "AI agent"
       ],
-      "dateCreated": "2026-08-14T14:06:39Z"
+      "dateCreated": "2026-08-15T06:10:13Z"
     },
     {
-      "rank": 5,
+      "rank": 8,
+      "fullName": "zouyuxuan122/Deepseek-Harness-EAC",
+      "owner": "zouyuxuan122",
+      "repo": "Deepseek-Harness-EAC",
+      "description": "DeepSeek Harness (dsh) Windows desktop client - bundled Node.js + dsh CLI, one-click launch, 10 built-in UI skins. EAC: Embracing All Creation 揽尽万象",
+      "githubUrl": "https://github.com/zouyuxuan122/Deepseek-Harness-EAC",
+      "trendshiftUrl": "https://trendshift.io/repositories/158075",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-08-14T16:29:54Z"
+    },
+    {
+      "rank": 9,
       "fullName": "xai-org/x-algorithm",
       "owner": "xai-org",
       "repo": "x-algorithm",
@@ -78,72 +123,17 @@
       "dateCreated": "2026-01-19T23:12:35Z"
     },
     {
-      "rank": 6,
-      "fullName": "public-apis/public-apis",
-      "owner": "public-apis",
-      "repo": "public-apis",
-      "description": "A collective list of free APIs",
-      "githubUrl": "https://github.com/public-apis/public-apis",
-      "trendshiftUrl": "https://trendshift.io/repositories/1677",
-      "language": "Python",
+      "rank": 10,
+      "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "owner": "awesome-dsh-plugin",
+      "repo": "awesome-dsh-plugin",
+      "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "trendshiftUrl": "https://trendshift.io/repositories/146178",
       "topics": [
         "Curated list"
       ],
-      "dateCreated": "2016-03-20T23:49:42Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "arvin341az-glitch/RVG",
-      "owner": "arvin341az-glitch",
-      "repo": "RVG",
-      "description": "Multi-protocol proxy management panel built with Python & FastAPI, deployable on Railway.",
-      "githubUrl": "https://github.com/arvin341az-glitch/RVG",
-      "trendshiftUrl": "https://trendshift.io/repositories/126170",
-      "language": "Python",
-      "topics": [
-        "Proxy"
-      ],
-      "dateCreated": "2026-06-12T11:49:06Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "zhu1090093659/dsh-web-ui",
-      "owner": "zhu1090093659",
-      "repo": "dsh-web-ui",
-      "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
-      "githubUrl": "https://github.com/zhu1090093659/dsh-web-ui",
-      "trendshiftUrl": "https://trendshift.io/repositories/147981",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-12T05:15:20Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "guillaumemeyer/watermarks-remover",
-      "owner": "guillaumemeyer",
-      "repo": "watermarks-remover",
-      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
-      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
-      "trendshiftUrl": "https://trendshift.io/repositories/139213",
-      "language": "Python",
-      "topics": [
-        "Document processing"
-      ],
-      "dateCreated": "2026-08-11T16:32:38Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "liustack/modlens",
-      "owner": "liustack",
-      "repo": "modlens",
-      "description": "CLI toolkit for AI agents — converts images into structured JSON evidence (OCR, layout, semantics), bridging the vision gap for text-only LLMs.",
-      "githubUrl": "https://github.com/liustack/modlens",
-      "trendshiftUrl": "https://trendshift.io/repositories/104781",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-02-22T07:12:00Z"
+      "dateCreated": "2026-08-13T13:55:31Z"
     }
   ]
 }
