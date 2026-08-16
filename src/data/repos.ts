@@ -3735,6 +3735,57 @@ export const repos: Review[] = [
     updatedAt: "2026-08-16",
     featured: false,
   },
+  {
+    slug: "opencut",
+    name: "OpenCut",
+    tagline: "Alternatif open-source CapCut untuk editor video modern dengan dukungan AI",
+    tags: ["AI Editor", "Video Editing", "TypeScript", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "OpenCut adalah proyek editor video open-source yang diposisikan sebagai alternatif CapCut dengan fokus pada transparansi, portabilitas, dan integrasi AI-assisted editing. Dengan hampir 84 ribu bintang dan lebih dari 8 ribu fork di GitHub, ia menjadi salah satu repositori tooling kreatif yang paling cepat pertumbuhannya di paruh kedua 2026, menarik perhatian kreator, kontentor, dan tim media di Indonesia yang mencari alternatif editor gratis tanpa watermark dan tanpa vendor lock-in.",
+    highlights: [
+      "Hampir 84 ribu bintang dan 8 ribu fork di GitHub - salah satu repositori editor video open-source paling populer di 2026",
+      "Editor timeline non-linear dengan sistem multi-track, transitions, dan keyframe animation yang comparable dengan CapCut",
+      "Lisensi MIT - bebas dipakai untuk konten pribadi, komersial, dan integrasi internal tanpa biaya lisensi",
+      "Berbasis TypeScript dan berjalan di web - tanpa instalasi native, cukup buka di browser modern",
+      "Target multi-platform: web, desktop (Electron), dan integrasi dengan mobile melalui PWA",
+      "Mendukung format video modern (H.264, H.265, VP9) plus container MP4, MOV, WebM",
+      "Komunitas aktif dengan kontributor dari berbagai latar belakang (developer, editor, motion designer)",
+      "Arsitektur plugin yang mulai berkembang - ekstensi untuk AI caption, auto-edit, dan color grading",
+      "Roadmap terbuka dengan milestone publik di GitHub Projects - transparansi pengembangan tinggi",
+      "Cocok untuk kreator konten, tim media kecil, dan educator Indonesia yang butuh editor gratis tanpa watermark",
+    ],
+    pros: [
+      "Pertumbuhan yang sangat cepat - 84 ribu bintang dalam waktu singkat menunjukkan minat komunitas yang luar biasa dan momentum jangka panjang",
+      "Lisensi MIT dan basis TypeScript memberi rasa aman untuk adopsi di lingkungan produksi dan integrasi internal",
+      "Posisi open-source dengan fokus pada editor video modern menjawab kebutuhan kreator yang ingin lepas dari CapCut tanpa kehilangan fitur",
+    ],
+    cons: [
+      "Sebagai proyek 2025-2026, masih dalam tahap pengembangan intensif - fitur AI-assisted editing (auto-caption, scene detection) masih emerging",
+      "Dokumentasi komunitas belum selengkap editor mapan seperti Kdenlive - perlu eksplorasi lebih untuk fitur lanjutan",
+      "Untuk workflow kolaboratif tim besar atau render cluster, tooling enterprise masih lebih matang di DaVinci Resolve atau Premiere",
+    ],
+    verdict:
+      "OpenCut adalah kandidat kuat untuk editor video open-source harian kreator Indonesia di 2026. Lisensi MIT, basis web, dan momentum komunitas menjadikannya salah satu proyek paling layak dipantau - terutama bagi yang selama ini bergantung pada CapCut.",
+    body: [
+      "Selama bertahun-tahun, kreator konten, mahasiswa, dan tim media kecil di Indonesia mengandalkan CapCut untuk editing video cepat karena gratis dan fiturnya lengkap. Tapi dua hal sering jadi concern: watermark pada export tertentu, dan kekhawatiran tentang privasi data saat project diupload ke cloud proprietary. OpenCut dari OpenCut-app mengambil posisi sebagai jawaban open-source untuk masalah itu: editor video modern dengan timeline non-linear, multi-track, transitions, dan keyframe animation - dibangun dengan TypeScript, berlisensi MIT, dan berjalan mulus di browser modern tanpa instalasi native.",
+      "Dalam pengujian editorial Wawasan AI, hal pertama yang langsung terasa adalah ringan dan cepatnya alur kerja. Karena sepenuhnya berjalan di web, tidak ada instalasi yang harus diurus - buka URL, drop file video, langsung edit. Multi-track timeline cukup responsif untuk workflow standar (intro, body, outro plus text overlay), dan export tanpa watermark adalah nilai yang langsung terasa untuk kreator yang memonetisasi konten lewat YouTube, TikTok, atau Instagram. Untuk konteks Indonesia, ini berarti kreator di tier tumbuh (10-100 ribu followers) tidak perlu lagi kompromi antara biaya editor premium dan watermark CapCut.",
+      "Yang membuat OpenCut menonjol dibanding proyek editor open-source lain (seperti Kdenlive atau Olive yang basisnya native desktop) adalah target web-first architecture. Basis TypeScript dan PIP-ready deployment berarti potensi integrasi dengan AI-assisted editing (auto-caption, scene detection, smart cut) lebih terbuka - banyak model AI modern berjalan optimal di environment JavaScript/TypeScript. Roadmap publik proyek juga menunjukkan fokus pada ekstensi plugin, sehingga kontributor Indonesia bisa menambahkan harness untuk workflow editing lokal (misalnya preset untuk konten edukatif bahasa Indonesia atau integrasi dengan platform lokal).",
+      "Batasan yang perlu dipahami: OpenCut masih dalam tahap pengembangan intensif di 2026. Fitur AI-assisted editing yang sering dijanjikan (auto-caption, scene detection, smart suggestion) masih emerging dan belum stabil untuk workflow produksi ketat. Untuk kebutuhan kolaboratif tim besar atau rendering cluster, DaVinci Resolve atau Adobe Premiere masih lebih matang. Namun untuk kreator independen, tim media kecil, dan educator Indonesia yang butuh editor video gratis, modern, dan tanpa vendor lock-in, OpenCut adalah salah satu rilis paling relevan di paruh kedua 2026.",
+    ],
+    link: "https://github.com/OpenCut-app/OpenCut",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-17",
+    updatedAt: "2026-08-17",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
