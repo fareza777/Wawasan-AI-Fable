@@ -1866,7 +1866,28 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                             },
 
-                                                                                                                                                                                                                            };
+                                                                                                                                                                                                                            
+  "holaboss-ai/holaOS": {
+    description:
+      "Workspace AI agent all-in-one dan local-first — jalankan Claude Code, Codex, atau holaOS agent secara paralel di satu desktop dengan shared memory, 100+ integrasi + MCP, dan model bawaan atau BYOK.",
+    highlights: [
+      "Arsitektur 'computer for you and your agent': Claude Code, Codex, dan holaOS agent sendiri bisa jalan side-by-side di workspace yang sama, saling berbagi memory, tools, skills, dan app — tidak perlu switch tab atau rebuild setup ketika pindah agen.",
+      "Shared memory yang bertahan lintas sesi dan lintas agen, disimpan lokal sebagai plain file yang bisa dibuka dan diedit langsung — buka app besok pagi, agen 'tahu' di mana Anda tinggalkan, apapun pilihan agen-nya.",
+      "100+ integrasi (Gmail, Slack, GitHub, Notion, Linear, browser, file, app) plus dukungan MCP server sebagai standar — sekali pasang, setiap agen yang Anda pakai di workspace langsung mempunyai kapabilitas yang sama.",
+      "Distribusi cross-platform (macOS Apple Silicon/Intel, Windows, Linux) lewat Electron + TypeScript, mendukung BYOK (OpenAI, Anthropic, Google) atau model bawaan holaOS — relevan untuk tim Indonesia yang ingin 'satu desktop untuk semua agen' tanpa lock-in satu vendor.",
+    ],
+  },
+  "internet-court/internet-court-skill": {
+    description:
+      "Skill 'trust layer' untuk commerce antar-agent — satukan ERC-8004 identity, ERC-7710 delegation, x402 payment, escrow, dan dispute resolution jadi satu skill terbuka, plus dukungan SKILL.md untuk Claude Code.",
+    highlights: [
+      "Menjawab pertanyaan 'siapa yang menyelesaikannya bila deal antar-agent gagal?': Internet Court menggabungkan enam lapis standar (discovery ERC-8004, negosiasi A2A, kontrak ERC-7710, payment x402/MPP, execution rail, dan dispute resolution) dalam satu master skill, bukan terpisah-pisah.",
+      "Pendekatan 'adjudication-first': saat dua agen deal, mereka sekaligus menyepakati 'siapa hakim' kalau terjadi sengketa (GenLayer, Kleros, UMA, atau protokol lain) — ditulis ke dalam contract-nya, bukan diputus belakangan.",
+      "Open skill komite 27 vendor (GenLayer, MetaMask, OKX, NEAR, Starknet, 0G Labs, ZKsync, Nansen, Kleros, Privy, BNB Chain, LI.FI, dan lain-lain) — bukan produk satu vendor, melainkan konsorsium yang setiap protokolnya di-vendor langsung dengan hash pin di skills-lock.json.",
+      "Plug langsung ke Claude Code (dan agen lain) sebagai SKILL.md: agent bisa struktur deal, hold funds lewat escrow, dan selesaikan sengketa lewat oracle yang sudah disepakati — relevan untuk tim Indonesia yang riset ekonomi agentik dan Web3 + AI yang sedang naik.",
+    ],
+  },
+};
 
                                                                                                                                             // Helper: lookup dengan fallback ke template-generated highlights
                                                                                                                                             export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
