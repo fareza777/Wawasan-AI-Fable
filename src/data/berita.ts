@@ -3228,6 +3228,71 @@ export const berita: Artikel[] = [
     },
   ],
 },
+{
+  slug: "kementerian-komunikasi-dan-digital-ri",
+  title:
+    "Satu Kementerian Jadi Tiga: Kenapa Struktur Tata Kelola AI Indonesia Mulai Disebarkan",
+  excerpt:
+    "Kemenkomdigi, Komdigi, dan Komdigi — ejaan dan struktur tiga kementerian yang lahir dari pembubaran Kominfo mengubah siapa bertanggung jawab atas AI di Indonesia.",
+  category: "Opini",
+  date: "2026-08-17",
+  readingTime: "8 menit",
+  body: [
+    {
+      paragraphs: [
+        "Sebelum akhir 2024, ada satu kementerian yang membayangi hampir seluruh percakapan tentang AI di Indonesia: Kominfo. Mulai dari kontroversi registrasi PSE sampai perumusan etika AI, nama Kominfo muncul di mana-mana. Sekarang, kalau kita Googling 'kementerian yang mengatur AI di Indonesia', jawabannya tidak lagi tunggal. Setidaknya ada tiga entitas yang sekarang berbagi tanggung jawab: Kementerian Komunikasi dan Digital (Kemenkomdigi) yang mewarisi sebagian besar portofolio digital, Badan Pengembangan Sumber Daya Manusia Komunikasi dan Digital (Badan PSDM Kumdigi) yang baru dibentuk di awal 2026, dan Direktorat Jenderal Aptika yang naik status menjadi salah satu penjaga gawang teknis adopsi AI untuk sektor publik. Belum lagi Kementerian Pendidikan yang kini punya Dirjen Pendidikan Tinggi untuk menyiapkan talenta, serta BSSN yang mengurus sisi keamanannya. Satu nama menjadi banyak — dan ini bukan sekadar masalah birokrasi internal, melainkan menentukan siapa yang harus dipanggil ketika ada insiden dan siapa yang harus didengarkan ketika ada peluang.",
+        "Sebagian orang akan melihat fragmentasi ini sebagai kemunduran — Kominfo dulu kontroversial tapi paling tidak jelas siapa yang memegang tongkat. Yang lain akan melihatnya sebagai distribusi tanggung jawab yang lebih sehat, sesuai dengan kompleksitas AI yang memang tidak bisa ditanggung satu kementerian sendirian. Dalam pengujian editorial Wawasan AI, kedua perspektif ini sama-sama perlu diuji, dan jawabannya kemungkinan besar tidak hitam-putih. Yang jelas, satu hal sudah pasti: memahami siapa yang kini memegang apa bukan lagi wacana akademis, tapi kebutuhan praktis untuk siapa pun yang bekerja di atau bersama sektor publik Indonesia.",
+      ],
+    },
+    {
+      heading:
+        "Sebenarnya siapa yang sekarang bertanggung jawab atas apa",
+      paragraphs: [
+        "Kalau diurut dari yang paling dekat dengan AI sebagai produk, Kemenkomdigi adalah poros utamanya. Lewat Direktorat Jenderal Aplikasi Informatika yang tetap dipertahankan, kementerian ini mengurus tata kelola platform digital, sertifikasi PSE, dan perumusan Peta Jalan AI Nasional yang hingga semester kedua 2026 masih menunggu tanda tangan Presiden. Posisi ini menempatkan Kemenkomdigi sebagai regulator — bukan operator — yang menentukan aturan main, bukan menjalankan sistemnya sendiri.",
+        "Lalu ada Badan PSDM Kumdigi, badan baru yang lahir melalui Perpres 38 Tahun 2025. Tugasnya lebih spesifik: menyiapkan talenta digital dan AI untuk Indonesia, termasuk program pelatihan ASN yang sempat digaungkan bersama Microsoft. Badan ini nomenklatur baru, tapi ruang lingkupnya sudah ada di dalam ekosistem Kominfo lama — yang berubah adalah penataan kelembagaan dan kejelasan garis komando.",
+        "Kementerian Pendidikan, lewat Dirjen Pendidikan Tinggi dan Dirjen Vokasi, sudah setahun terakhir mengelola inisiatif seperti program studi AI di 100 perguruan tinggi dan skema magang vokasi AI untuk UMKM. Tugas ini tidak diambil dari Kominfo, tapi dulu sering di-koordinasikan lintas kementerian secara ad hoc. Sekarang ada unit yang secara eksplisit bertanggung jawab — paling tidak secara administratif.",
+        "Terakhir, ada BSSN di bawah Kemenko Polhukam yang fokus pada cybersecurity — termasuk keamanan model AI, deteksi prompt injection, dan standardisasi untuk sistem yang dipakai di sektor publik. Posisi ini sering luput dari percakapan publik, tapi menentukan apakah adopsi AI di pemerintahan jadi aman atau jadi lubang keamanan baru. Singkatnya: kalau dulu satu Kominfo bisa ditunjuk ketika ada masalah, sekarang pertanyaan 'siapa yang harus dipanggil?' memiliki jawaban berbeda tergantung jenis masalahnya.",
+      ],
+    },
+    {
+      heading:
+        "Kenapa struktur baru ini membuat hidup praktisi lebih sulit",
+      paragraphs: [
+        "Bukan lebih sulit dalam artian buruk — lebih sulit dalam artian harus paham lebih banyak sebelum bertindak. Untuk startup AI yang ingin program pilot di instansi pemerintah, dulu cukup ingat satu nama di Kominfo. Sekarang perlu tahu apakah project-nya menyentuh regulasi platform (Kemenkomdigi/Aptika), pengembangan talenta (Badan PSDM Kumdigi), pendidikan (Kemendiktisaintek), atau keamanan (BSSN) — dan project yang serius biasanya menyentuh lebih dari satu.",
+        "Untuk ASN yang menerima tugas baru 'siapkan AI untuk dinas', tantangannya lebih administratif. Surat keputusan internal perlu menentukan siapa penanggung jawab, siapa penilai risiko, dan siapa yang menandatangani bila ada output sensitif. Kalau struktur ini tidak jelas di internal instansi, ASN yang berbeda-beda di dinas yang sama bisa berakhir menggunakan tool berbeda dengan standar berbeda — sebuah mimpi buruk untuk audit dan pembelajaran kolektif.",
+        "Untuk komunitas dan asosiasi industri yang ingin aspirasi mereka didengar, kanal-kanal partisipasi publik kini lebih banyak tapi juga lebih terfragmentasi. Konsultasi publik soal Peta Jalan AI sekarang melibatkan beberapa kementerian secara paralel, yang artinya konsultan yang sama mungkin harus mengulang presentasi di forum yang berbeda dengan peserta yang berbeda pula. Ini biaya tersembunyi yang jarang dihitung tapi cukup terasa di sisi komunitas.",
+        "Yang terakhir — dan ini sering baru terasa enam sampai dua belas bulan setelah kebijakan keluar — kooordinasi antarkementerian sering lebih lambat dibanding kecepatan pasar AI. EU AI Act butuh bertahun-tahun konsultasi, tapi konsultasi itu di satu pagar hukum tunggal. Indonesia sekarang punya jawaban yang lebih terdistribusi, dan kecepatan distribusi itu akan diuji di insiden pertama yang melibatkan lebih dari satu kementerian.",
+      ],
+    },
+    {
+      heading:
+        "Peluang yang justru terbuka dari fragmentasi ini",
+      paragraphs: [
+        "Kalau dipandang dari sisi positif, fragmentasi kelembagaan juga membuka peluang yang tidak akan pernah ada di era satu kementerian dominan. Pertama, dimasukkannya talenta digital dalam portofolio khusus lewat Badan PSDM Kumdigi berarti ada unit yang secara eksplisit berinvestasi pada manusia, bukan hanya pada regulasi. Program-program semacam pelatihan AI untuk guru dan ASN kini punya rumah yang jelas — bukan lagi sebagai workstream ad hoc di bawah Kominfo yang punya puluhan prioritas lain.",
+        "Kedua, Kemendiktisaintek memiliki legitimasi untuk mengambil keputusan jangka panjang di ranah pendidikan AI — seperti akreditasi program studi, kurikulum wajib AI untuk semua jurusan, dan skim pendanaan riset. Sebelumnya perubahan semacam ini sering terhambat karena Kominfo lebih fokus pada regulasi, bukan pada pengembangan kapasitas. Sekarang ada pihak yang fokus pada kapasitas, dan pihak yang fokus pada regulasi — pembagian tugas yang lebih sehat.",
+        "Ketiga, kehadiran BSSN sebagai pengawas keamanan AI di sektor publik memastikan bahwa isu-isu seperti adversarial attack pada model yang dipakai untuk verifikasi bansos atau scoring ASN tidak hilang di antara prioritas regulasi dan prioritas pendidikan. Keamanan adalah kategori yang sering diabaikan sampai insiden terjadi, dan sekarang punya penjaga yang organisasinya tidak perlu lagi berebut dengan prioritas komunikasi digital.",
+        "Terakhir, dan ini yang paling halus untuk dilihat: fragmentasi membuat ruang eksperimen di level daerah menjadi lebih beragam. Tidak semua kebijakan harus menunggu Kemenkomdigi pusat. Beberapa pemda bisa langsung berpartner dengan Kemendiktisaintek untuk universitas lokal, atau dengan Badan PSDM Kumdigi untuk program talenta daerah, tanpa harus menunggu regulasi pusat matang. Ini memberi speedboat untuk inovator daerah yang selama ini sering menunggu kapal besar berlayar.",
+      ],
+    },
+    {
+      heading:
+        "Yang harus diperhatikan praktisi enam sampai dua belas bulan ke depan",
+      paragraphs: [
+        "Ada empat hal yang layak dipantau. Pertama, apakah Peta Jalan AI Nasional akan keluar sebagai produk Kemenkomdigi saja atau akan dirumuskan sebagai produk bersama yang melibatkan Kemendiktisaintek dan Badan PSDM. Dokumen pertama bisa keluar lebih cepat, tapi dokumen kedua punya legitimasi yang lebih kuat di mata pemangku kepentingan non-pemerintah.",
+        "Kedua, apakah Badan PSDM Kumdigi akan menjadi penjabaran nyata dari program-program yang dulu hanya menjadi wacana, atau menjadi unit baru yang lebih fokus pada administrasi internal. Indikator termudah: cek berapa lama waktu antara peluncuran badan dengan program talenta yang benar-benar terbuka untuk umum dengan timeline jelas.",
+        "Ketiga, apakah BSSN akan merilis standar keamanan untuk sistem AI di sektor publik, dan apakah standar itu akan jadi referensi wajib atau hanya referensi sukarela. Standar wajib membuat implementasi lebih lambat, tapi juga membuat kemampuan audit lebih tinggi. Keempat, apakah regulator mulai mengklasifikasikan sistem AI berdasarkan tingkat risiko (high-risk versus limited-risk) — pola yang dipakai EU AI Act. Tanpa klasifikasi semacam ini, mustahil membuat aturan yang proporsional: satu regulasi yang sama untuk chatbot customer service dan untuk sistem verifikasi bansos jelas akan mengalami masalah kalibrasi yang sama yang sempat menghambat implementasi UU PDP di tahun-tahun awalnya.",
+      ],
+    },
+    {
+      heading: "Implikasi untuk siapa pun yang menyentuh sektor publik",
+      paragraphs: [
+        "Untuk vendor dan penyedia AI yang ingin masuk ke instansi pemerintah, implikasi praktisnya: jangan tawarkan solusi ke satu pintu, tawarkan ke pintu yang relevan dengan konteks instansi. Untuk dinas pendidikan, pintu yang relevan adalah Kemendiktisaintek. Untuk dinas sosial yang akan pakai AI untuk verifikasi bansos, pintu yang relevan adalah Kemenkomdigi plus BSSN. Pintu yang salah menghabiskan waktu berbulan-bulan dalam procurement yang tidak pernah sampai penandatanganan.",
+        "Untuk akademisi dan peneliti, ini justru peluang bagus — ada lebih banyak lembaga yang punya anggaran riset atau program kolaboratif, dan pemerintah cenderung membuka diri pada kolaborasi yang tidak terlihat 'berisiko politik'. Untuk komunitas terbuka seperti AI Merdeka dan Indos AI, era fragmentasi ini sebaiknya dibaca sebagai undangan: kekosongan di satu kementerian adalah peluang untuk hadir di yang lain.",
+        "Pada akhirnya, struktur baru ini akan menemukan bentuk operasionalnya dalam dua sampai tiga tahun ke depan — melalui trial and error, melalui insiden kecil yang menata ulang prioritas, dan melalui generasi pertama ASN yang akan lulus dari program pelatihan kolaborasi Microsoft dan mampu menavigasi struktur baru dengan lebih intuitif daripada kita hari ini. Sampai saat itu tiba, yang bisa dilakukan siapa pun yang terlibat adalah tetap mengikuti perkembangan di beberapa kementerian sekaligus, dan menahan diri untuk tidak menilai terlalu cepat. Tata kelola yang terdistribusi memang lebih sulit dibaca, tapi kalau dijalankan dengan baik, hasilnya akan jauh lebih tangguh daripada model satu-menara.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
