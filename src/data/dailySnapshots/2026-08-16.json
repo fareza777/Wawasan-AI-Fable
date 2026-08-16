@@ -1,0 +1,149 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "16 Agustus 2026",
+  "period": {
+    "date": "2026-08-16",
+    "label": "16 Agustus 2026",
+    "path": "/repo/daily/2026/08/16"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-16T00:03:50.679Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "anywhere-labs/deepseek-harness-desktop",
+      "owner": "anywhere-labs",
+      "repo": "deepseek-harness-desktop",
+      "description": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，支持 macOS 和 Windows，免配置、下载即用。",
+      "githubUrl": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/151481",
+      "language": "TypeScript",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-08-13T16:30:50Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "owner": "awesome-dsh-plugin",
+      "repo": "awesome-dsh-plugin",
+      "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "trendshiftUrl": "https://trendshift.io/repositories/146178",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-08-13T13:55:31Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "xiaobright/dsh-anchored-standard",
+      "owner": "xiaobright",
+      "repo": "dsh-anchored-standard",
+      "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
+      "githubUrl": "https://github.com/xiaobright/dsh-anchored-standard",
+      "trendshiftUrl": "https://trendshift.io/repositories/156235",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-14T14:06:39Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "xai-org/x-algorithm",
+      "owner": "xai-org",
+      "repo": "x-algorithm",
+      "description": "Algorithm powering the For You feed on X",
+      "githubUrl": "https://github.com/xai-org/x-algorithm",
+      "trendshiftUrl": "https://trendshift.io/repositories/18476",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-19T23:12:35Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "public-apis/public-apis",
+      "owner": "public-apis",
+      "repo": "public-apis",
+      "description": "A collective list of free APIs",
+      "githubUrl": "https://github.com/public-apis/public-apis",
+      "trendshiftUrl": "https://trendshift.io/repositories/1677",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2016-03-20T23:49:42Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "arvin341az-glitch/RVG",
+      "owner": "arvin341az-glitch",
+      "repo": "RVG",
+      "description": "Multi-protocol proxy management panel built with Python & FastAPI, deployable on Railway.",
+      "githubUrl": "https://github.com/arvin341az-glitch/RVG",
+      "trendshiftUrl": "https://trendshift.io/repositories/126170",
+      "language": "Python",
+      "topics": [
+        "Proxy"
+      ],
+      "dateCreated": "2026-06-12T11:49:06Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "zhu1090093659/dsh-web-ui",
+      "owner": "zhu1090093659",
+      "repo": "dsh-web-ui",
+      "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
+      "githubUrl": "https://github.com/zhu1090093659/dsh-web-ui",
+      "trendshiftUrl": "https://trendshift.io/repositories/147981",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-12T05:15:20Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "guillaumemeyer/watermarks-remover",
+      "owner": "guillaumemeyer",
+      "repo": "watermarks-remover",
+      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
+      "trendshiftUrl": "https://trendshift.io/repositories/139213",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-11T16:32:38Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "liustack/modlens",
+      "owner": "liustack",
+      "repo": "modlens",
+      "description": "CLI toolkit for AI agents — converts images into structured JSON evidence (OCR, layout, semantics), bridging the vision gap for text-only LLMs.",
+      "githubUrl": "https://github.com/liustack/modlens",
+      "trendshiftUrl": "https://trendshift.io/repositories/104781",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-22T07:12:00Z"
+    }
+  ]
+}

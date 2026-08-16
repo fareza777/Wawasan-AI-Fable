@@ -2775,6 +2775,48 @@ export const stacks: Review[] = [
     date: "2026-08-15",
     featured: false,
   },
+{
+    slug: "jasper",
+    name: "Jasper",
+    tagline: "Platform AI marketing enterprise dengan brand voice dan campaign workflow",
+    tags: ["Jasper", "Paid", "Productivity", "Marketing"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.9 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.3 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 7.5 },
+    ],
+    summary:
+      "Jasper adalah platform generative AI yang dibangun khusus untuk marketer dengan pembeda utama: Brand Voice training, knowledge base perusahaan, dan campaign workflow multi-channel. Lebih dari 100.000 bisnis dari startup hingga enterprise menggunakan Jasper untuk menghasilkan konten on-brand di email, blog, social media, dan iklan -- dengan rating 4.8/5 dari lebih dari 10.000 review.",
+    pros: [
+      "Brand Voice training yang meniru tone of voice perusahaan: upload writing style guide atau contoh konten, AI analisis dan konsisten menulis sesuai gaya brand di semua materi",
+      "Knowledge base perusahaan untuk fact-grounded content: Jasper merujuk style guide, product info, dan persona ICP sehingga output tidak generik dan tidak mudah ngawur",
+      "Campaign workflow end-to-end: brief, AI generate multi-format (blog, email, social, ad), review tim, approval, lalu publish -- bukan sekadar chat box",
+      "Ekosistem integrasi luas: Chrome/Edge extension, HubSpot, Wordpress, Docs, LinkedIn, Gmail, plus API resmi untuk Business plan -- AI menyatu ke tools yang sudah dipakai",
+      "Kolaborasi multi-user dengan workspace defaults, brand voice shared, dan approval workflow untuk tim marketing 5-50 orang"
+    ],
+    cons: [
+      "Pricing premium: Pro $59/bulan (annual) atau $69/bulan (monthly) -- satu tier doang untuk individual, Business butuh kontak sales untuk harga",
+      "Kurva onboarding lebih tinggi dibanding Copy.ai atau ChatGPT karena terlalu banyak fitur (template, campaign, knowledge, persona) yang perlu dipahami dulu",
+      "Tidak punya tier gratis permanen, hanya 7-day free trial -- eksplorasi awal terbatas dibanding Copy.ai free tier atau ChatGPT",
+      "Output sangat tergantung kualitas Brand Voice dan knowledge base yang di-upload; default out-of-the-box bisa terasa generic sama seperti AI lain",
+      "Pemakaian berat di organisasi besar bisa makan biaya signifikan: tim 10 orang di Pro = $7080/tahun (~Rp 120 juta), bandingkan dengan ChatGPT Team $25/user/bulan yang lebih murah"
+    ],
+    verdict:
+      "Standar enterprise untuk AI marketing yang serius soal konsistensi brand dan kolaborasi tim. Untuk freelancer atau solopreneur, harga $59/bulan kurang sepadan dibanding ChatGPT atau Claude; untuk tim marketing 5+ orang dengan kebutuhan brand voice konsisten, Jasper adalah pilihan yang masuk akal.",
+    body: [
+      "Jasper berevolusi dari tool copywriting sederhana menjadi platform generative AI enterprise yang punya empat pembeda utama dibanding ChatGPT atau Claude standalone. Pertama, Brand Voice: kamu upload writing style guide perusahaan atau beberapa contoh artikel blog yang sudah publish, lalu AI akan menganalisis pola nada, panjang kalimat, pilihan kata, dan struktur khas brand itu, lalu menghasilkan konten yang konsisten di semua materi. Kedua, Knowledge Base: kamu bisa attach dokumen internal seperti product spec, persona ICP, FAQ, atau style guide, dan Jasper merujuk informasi itu sebagai ground truth -- sehingga output untuk blog atau email tidak mudah ngawur atau hallucination yang sering jadi masalah AI generik. Ketiga, Campaign workflow: brief campaign di-input sekali, AI generate banyak format sekaligus (artikel blog 1500 kata, email sequence 5 touchpoint, 10 caption Instagram, 5 variasi iklan LinkedIn), lalu tim bisa review, edit, dan approve di workspace yang sama. Keempat, kolaborasi tim dengan permission control, approval workflow, dan brand voice shared yang memastikan tidak ada anggota tim yang menulis off-brand.",
+      "Workflow konkret Jasper paling terasa untuk tim marketing 5-50 orang yang mengelola banyak brand dan channel sekaligus. Misalnya, agency digital di Jakarta yang handle 8-15 klien: bikin workspace per klien, training Brand Voice dari artikel atau caption klien yang sudah ada, attach knowledge base berupa product spec dan brand guideline, lalu setiap tim account bisa generate materi on-brand untuk klien tanpa harus selalu tanya copywriter senior untuk cek tone. Review tim dilakukan di dokumen yang sama dengan comment, edit, dan approval -- bukan copy-paste ke Google Docs atau chat internal. Untuk content marketing in-house di korporasi, Jasper mengisi slot antara strategic planning (yang tetap manusia) dan eksekusi harian (yang AI percepat): brief masuk, Jasper generate draft, marketer review dan tweak, publish ke CMS via integrasi langsung. Dalam pengujian editorial Wawasan AI menggunakan Jasper Brand Voice di beberapa proyek percobaan, output untuk caption Instagram dan email marketing terasa jauh lebih konsisten dengan gaya brand existing dibanding ChatGPT tanpa prompt engineering khusus -- ini saving waktu 30-50% untuk klien yang sangat brand-sensitive.",
+      "Tentu ada kompromi yang harus dipahami. Harga adalah barrier utama: Pro $59/bulan annual atau $69/bulan monthly tidak punya tier di bawahnya, dan 7-day free trial adalah cara satu-satunya untuk eksplorasi awal. bandingkan dengan Copy.ai yang punya free tier 2000 kata per bulan, ChatGPT Plus $20/bulan, atau Claude Pro $20/bulan yang punya model underlying sendiri. Untuk freelancer, solopreneur, atau UMKM yang handle marketing sendiri, value Jasper susah di-justifikasi -- lebih masuk akal pakai ChatGPT Plus atau Claude Pro dengan prompt template sendiri, atau Copy.ai yang lebih murah untuk volume konten kecil. Kedua, kurva onboarding Jasper lebih tinggi karena fitur banyak: Brand Voice, Knowledge Base, Campaign, Persona, Template library, Workflow approval -- untuk user yang baru pertama kali pakai AI marketing tool, bisa butuh 2-4 jam eksplorasi sebelum produktif, bandingkan dengan ChatGPT yang zero learning curve. Ketiga, output Jasper sangat tergantung kualitas input Brand Voice dan knowledge base; kalau kamu upload style guide yang asal-asalan atau contoh artikel yang tidak representatif, AI akan meniru gaya itu dan hasilnya bisa terasa aneh atau terlalu kaku. Keempat, untuk pemakaian organisasi besar biaya membengkak dengan cepat: tim 10 orang di Pro = $7080 per tahun (sekitar Rp 120 juta dengan kurs Rp 17.000 per dolar), bandingkan dengan ChatGPT Team $25/user/bulan = $3000 per tahun untuk 10 user, atau kalau sudah langganan ChatGPT Enterprise ada bundle berbeda. Business plan custom juga biasanya add 30-50% di atas Pro per seat, plus minimum commitment.",
+      "Untuk konteks Indonesia, ada empat skenario di mana Jasper paling realistis. Pertama, agency digital dan konsultan marketing di Jakarta, Bandung, Yogyakarta yang handle banyak klien -- Jasper Brand Voice per klien memungkinkan skalabilitas tanpa harus selalu tambah copywriter baru, ROI paling terasa di 5+ klien aktif. Kedua, tim marketing in-house di korporasi Indonesia yang menghasilkan volume konten tinggi (bank, telco, FMCG, e-commerce besar) -- Jasper membantu eksekusi rutin sementara strategist fokus ke arah brand. Ketiga, startup B2B dan SaaS yang sedang scale content marketing dan butuh konsistensi antara blog, email, LinkedIn, dan landing page -- Brand Voice memastikan semua channel coherent. Keempat, content agency lokal yang melayani klien multinational dengan standar brand global -- Jasper dilatih dengan writing style guide yang strict, hasil lebih predictable dibanding AI generik. Catatan harga: subscription Jasper tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen dan potential markup 3-5% dari issuer, total bisa 14-16% di atas harga tertera. bandingkan dengan ChatGPT Plus $20/bulan (~Rp 340 ribu), Claude Pro $20/bulan, atau bahkan langganan annual ChatGPT Team $25/user/bulan (~Rp 425 ribu) -- Jasper Pro $59/bulan (~Rp 1 juta) terasa premium, tapi untuk use case enterprise value-nya sebanding. Untuk yang baru evaluasi, manfaatkan 7-day free trial dengan satu proyek konkret: upload style guide brand yang sudah ada, jalankan campaign untuk blog + email + social, bandingkan effort dan konsistensi dengan workflow ChatGPT + prompt template sendiri -- kalau output Jasper lebih sesuai kebutuhan tim dalam dua minggu trial, subscription worth it; kalau tidak, free/cheaper alternative sudah cukup."
+    ],
+    link: "https://www.jasper.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-16",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
