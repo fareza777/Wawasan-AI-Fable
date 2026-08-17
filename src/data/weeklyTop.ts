@@ -1878,16 +1878,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "internet-court/internet-court-skill": {
-    description:
-      "Skill 'trust layer' untuk commerce antar-agent — satukan ERC-8004 identity, ERC-7710 delegation, x402 payment, escrow, dan dispute resolution jadi satu skill terbuka, plus dukungan SKILL.md untuk Claude Code.",
-    highlights: [
-      "Menjawab pertanyaan 'siapa yang menyelesaikannya bila deal antar-agent gagal?': Internet Court menggabungkan enam lapis standar (discovery ERC-8004, negosiasi A2A, kontrak ERC-7710, payment x402/MPP, execution rail, dan dispute resolution) dalam satu master skill, bukan terpisah-pisah.",
-      "Pendekatan 'adjudication-first': saat dua agen deal, mereka sekaligus menyepakati 'siapa hakim' kalau terjadi sengketa (GenLayer, Kleros, UMA, atau protokol lain) — ditulis ke dalam contract-nya, bukan diputus belakangan.",
-      "Open skill komite 27 vendor (GenLayer, MetaMask, OKX, NEAR, Starknet, 0G Labs, ZKsync, Nansen, Kleros, Privy, BNB Chain, LI.FI, dan lain-lain) — bukan produk satu vendor, melainkan konsorsium yang setiap protokolnya di-vendor langsung dengan hash pin di skills-lock.json.",
-      "Plug langsung ke Claude Code (dan agen lain) sebagai SKILL.md: agent bisa struktur deal, hold funds lewat escrow, dan selesaikan sengketa lewat oracle yang sudah disepakati — relevan untuk tim Indonesia yang riset ekonomi agentik dan Web3 + AI yang sedang naik.",
-    ],
-  },
-};
+      description:
+        "Skill 'trust layer' untuk commerce antar-agent — satukan ERC-8004 identity, ERC-7710 delegation, x402 payment, escrow, dan dispute resolution jadi satu skill terbuka, plus dukungan SKILL.md untuk Claude Code.",
+      highlights: [
+        "Menjawab pertanyaan 'siapa yang menyelesaikannya bila deal antar-agent gagal?': Internet Court menggabungkan enam lapis standar (discovery ERC-8004, negosiasi A2A, kontrak ERC-7710, payment x402/MPP, execution rail, dan dispute resolution) dalam satu master skill, bukan terpisah-pisah.",
+        "Pendekatan 'adjudication-first': saat dua agen deal, mereka sekaligus menyepakati 'siapa hakim' kalau terjadi sengketa (GenLayer, Kleros, UMA, atau protokol lain) — ditulis ke dalam contract-nya, bukan diputus belakangan.",
+        "Open skill komite 27 vendor (GenLayer, MetaMask, OKX, NEAR, Starknet, 0G Labs, ZKsync, Nansen, Kleros, Privy, BNB Chain, LI.FI, dan lain-lain) — bukan produk satu vendor, melainkan konsorsium yang setiap protokolnya di-vendor langsung dengan hash pin di skills-lock.json.",
+        "Plug langsung ke Claude Code (dan agen lain) sebagai SKILL.md: agent bisa struktur deal, hold funds lewat escrow, dan selesaikan sengketa lewat oracle yang sudah disepakati — relevan untuk tim Indonesia yang riset ekonomi agentik dan Web3 + AI yang sedang naik.",
+      ],
+    },
+    "awesome-dsh-plugin/awesome-dsh-plugin": {
+      description:
+        "Daftar kurasi plugin resmi untuk DeepSeek Harness (dsh) — katalog 20+ kategori plugin (UI, model, tools, memory, voice, security) yang bisa dipasang lewat `dsh plugin add`, lengkap dengan marketplace dsh-market dan disclaimer keamanan.",
+      highlights: [
+        "Kurasi plugin resmi komunitas DeepSeek Harness yang terorganisir dalam 20+ kategori: UI Enhancement, Usage & Billing, Themes, Models & Providers, Memory, Tools, Browser & Web, Voice & Audio, Git & Code Review, Security & Permissions, Remote & Mobile — semua plugin memasang via `dsh plugin add` dengan manifest `dsh.bundle` yang seragam.",
+        "Submission gate jelas: setiap plugin diverifikasi dengan source code sebelum ditambahkan (jika deskripsi klaim '46 tools', reviewer akan menghitungnya) — bukan daftar kebetulan, melainkan kurasi yang ringan tapi konsisten untuk ribuan pengguna dsh.",
+        "Didukung dsh-market (plugin market resmi dengan UI searchable, satu klik install/upgrade, theme switching) dan dsh-find-plugin (cari plugin lewat chat) — bukan sekadar README, melainkan ekosistem plugin berlapis.",
+        "Lisensi badge `awesome.re` standar dengan kontributor komunitas multibahasa (EN/ZH/JA) — relevan untuk developer Indonesia yang sudah pakai DeepSeek Harness dan ingin menambah kapabilitas tanpa setup manual tiap plugin dari nol.",
+      ],
+    },
+    "liquidslr/system-design-notes": {
+      description:
+        "Catatan ringkas dari buku System Design Interview (Alex Xu) — setiap bab dibungkus jadi folder terpisah dengan ringkasan, diagram, dan link referensi untuk topik Rate Limiter, Consistent Hashing, KV Store, URL Shortener, Distributed Message Queue, dan seterusnya.",
+      highlights: [
+        "Repositori catatan open-source untuk buku legendaris 'System Design Interview - An Insider's Guide' karya Alex Xu — setiap bab jadi folder terstruktur dengan ringkasan dan link ke materi pelengkap, bukan dump mentah PDF.",
+        "Cakupan lengkap mengikuti outline buku asli: Scaling, Back-of-the-Envelope Estimation, Rate Limiter, Consistent Hashing, Key-Value Store, Unique ID Generator, URL Shortener, Web Crawler, Notification System, News Feed, Distributed Message Queue, Pub/Sub hingga Search, sampai Monitoring & Alerting.",
+        "Pendekatan 'catatan dari insinyur untuk insinyur' — fokus ke visualisasi (diagram ASCII), tabel trade-off, dan rangkuman keputusan yang biasa diinterview FAANG, cocok untuk referensi cepat saat mendesain atau mereview arsitektur.",
+        "12.000+ bintang GitHub menjadikannya pendamping praktis yang lebih mudah di-grep daripada membaca buku dari awal — relevan untuk software engineer Indonesia yang ingin refresh konsep system design sebelum interview atau saat merancang service baru.",
+      ],
+    },
+    "yjh051108/dsh-routing-suite": {
+      description:
+        "Suite plugin DeepSeek Harness yang menggabungkan injector runtime + router-standard preset — sekali install dapat tool dev_* (inject/reload/route self-heal) dan router berpikir task-aware (spec/react/mixed/weak) yang diukur di benchmark P1–P23.",
+      highlights: [
+        "Dua komponen dalam satu suite: dsh-super-injector (runtime toolkit dengan dev_* tools untuk injeksi, hot-reload, attach/detach, dan route self-heal) plus dsh-router-standard (preset router yang memilih persona berpikir sesuai tipe task) — bukan plugin terpisah, melainkan ekosistem kohesif.",
+        "Tiga mode routing task-aware: spec (plan-then-act), react (executor), mixed (trap-aware), weak (model self-classify) — ditambah close-distance injection (92-94% cache hit) yang menurunkan latensi dan konsumsi token tanpa mengorbankan kualitas.",
+        "Bundle di-publish sebagai preset 'Router Standard (experimental)' yang aktif setelah restart DSH — workflow install tiga langkah via PowerShell (`install.ps1`) atau manual copy ke `.dsh/.agent-presets/router-standard`, plus sub-modul yang independen di repo masing-masing.",
+        "Dilengkapi paper dan eksperimen P1-P23 yang reproducible (di folder `preset/docs/`), lisensi MIT, dan tool self-optimization (`dev_router_status`, `dev_router_mode`, `dev_mode_subagent`) untuk agen yang selalu menyesuaikan dirinya sendiri — relevan bagi power user DeepSeek Harness yang ingin hasil coding agent lebih disiplin dan terarah.",
+      ],
+    },
+  };
 
                                                                                                                                             // Helper: lookup dengan fallback ke template-generated highlights
                                                                                                                                             export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
