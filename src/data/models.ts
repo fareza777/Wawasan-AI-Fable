@@ -3334,6 +3334,50 @@ export const models: Review[] = [
     date: "2026-08-17",
     featured: false,
   },
+{
+    slug: "gpt-5-6-sol-high",
+    name: "GPT-5.6 Sol (high)",
+    tagline: "Varian Sol high-effort OpenAI — intel 57,3 dan coding 77,2 dengan API premium kelas flagship",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Multimodal"],
+    score: 8.9,
+    scores: [
+      { label: "Penalaran", value: 9.0 },
+      { label: "Coding", value: 9.3 },
+      { label: "Kecepatan", value: 8.3 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 57.3,
+    aa_coding_index: 77.2,
+    aa_price_input: 5,
+    aa_price_output: 30,
+    aa_synced_at: "2026-08-18",
+    summary:
+      "GPT-5.6 Sol (high) adalah varian high-effort reasoning OpenAI yang dirilis Juli 2026, diposisikan untuk workload agentic coding dan riset multi-langkah yang butuh penalaran konsisten di sesi panjang. Intelligence index 57,3 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global, sejajar dengan Claude Opus 5 (63,1) dan Kimi K3 (57,1), sementara coding index 77,2 (sumber: Artificial Analysis) mendekati Claude Opus 5 (78,0) dan menjadikannya salah satu skor tertinggi di benchmark pemrograman. Harga API $5,00 per juta token input dan $30,00 output bermain di kelas flagship premium, sebanding dengan frontier Barat papan atas untuk workload engineering volume tinggi.",
+    pros: [
+      "Intelligence index 57,3 (sumber: Artificial Analysis) — papan atas proprietary global, sejajar dengan Kimi K3 (57,1) dan Claude Sonnet 5 (55,3) untuk tier flagship reasoning",
+      "Coding index 77,2 (sumber: Artificial Analysis) — mendekati Claude Opus 5 (78,0) dan meninggalkan frontier proprietary papan atas lain di belakang, salah satu skor tertinggi di benchmark pemrograman",
+      "Throughput output median 65,9 tokens/detik dan TTFT 8,8 detik (sumber: Artificial Analysis) — throughput tinggi untuk alur kerja agentic engineering volume besar dengan fondasi penalaran kelas flagship",
+      "Skor terminal-bench-v2_1 87,3 dan tau2 83,3 (sumber: Artificial Analysis) — kuat untuk benchmark eksekusi tool-use multi-langkah dan orkestrasi agentic pipeline",
+    ],
+    cons: [
+      "Harga API $5,00 per juta token input dan $30,00 output — premium di kelas proprietary, selisih kumulatif signifikan dibanding frontier value-tier Asia seperti Kimi K2.7 Code ($0,95/$4,00) atau DeepSeek V4 Pro",
+      "TTFT 8,8 detik (sumber: Artificial Analysis) lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time — bukan pilihan optimal untuk UX interaktif yang butuh respons instan",
+      "Math index tidak tersedia di response API AA untuk entry ini (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski benchmark saintifik seperti GPQA 92,8% menunjukkan kemampuan penalaran tinggi",
+      "Varian high-effort berarti latency dan biaya per token lebih tinggi dari varian medium atau low pada keluarga Sol — perlu orkestrasi pipeline untuk padukan high-effort dan fast-effort sesuai kebutuhan use case",
+    ],
+    verdict:
+      "GPT-5.6 Sol (high) adalah pilihan rasional untuk tim engineering yang mengincar kombinasi intel 57,3 dan coding 77,2 di kelas flagship proprietary OpenAI dengan fondasi benchmark eksekusi tool-use yang kuat. Bukan pilihan termurah atau tercepat tanpa effort-routing, tapi untuk workload agentic coding dan penalaran terdalam di mana setiap poin benchmark berarti produktivitas, Sol high-effort menawarkan nilai yang sulit ditandingi di kelas harganya.",
+    body: [
+      "GPT-5.6 Sol (high) adalah varian high-effort reasoning dari keluarga GPT-5.6 Sol OpenAI yang dirilis 9 Juli 2026, diposisikan untuk workload agentic coding, riset multi-langkah, dan orkestrasi tool-use intensif. Berbeda dari varian medium atau low yang bermain di kelas harga lebih rendah dengan kemampuan penalaran lebih dangkal, Sol high-effort dirancang untuk mempertahankan konsistensi penalaran di sesi panjang dan workload reasoning terdalam. Intelligence index 57,3 (sumber: Artificial Analysis) menaruhnya di papan atas — sejajar dengan Kimi K3 (57,1), Claude Sonnet 5 (55,3), dan Claude Opus 4.7 (55,0) di tier flagship reasoning, meninggalkan frontier mid-tier seperti GLM-5.1 (41,0) di belakang dengan margin yang signifikan. Coding index 77,2 menjadi pembeda utama model ini — mendekati Claude Opus 5 (78,0) dan mendekati kelas khusus coding frontier papan atas, meninggalkan Sonnet 5 (71,5) dan Opus 4.7 (73,6) di belakang di benchmark pemrograman.",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic engineering volume tinggi, GPT-5.6 Sol (high) menunjukkan karakter khas model flagship reasoning yang di-tuning untuk konsistensi: penalaran murni yang terjaga di sesi panjang, kemampuan mempertahankan konteks setelah belasan putaran tool-use, dan kemampuan coding yang mendekati Opus 5 untuk refaktor lintas file dan code architect reasoning. Yang paling terasa dibanding varian medium atau low adalah kemampuan penalaran umum yang lebih kuat — bedanya terlihat di workload reasoning panjang, multi-hop agentic planning, dan riset saintifik yang butuh iterasi berpikir terdalam. Throughput output median 65,9 tokens/detik (sumber: Artificial Analysis) memberikan UX chat real-time yang responsif untuk workload agentic, meski TTFT 8,8 detik lebih lambat dari Sonnet 5 atau frontier papan atas lain — perlu orkestrasi pipeline untuk workload yang sensitif latency. Skor benchmark eksekusi tool-use menunjukkan kemampuan orkestrasi multi-langkah yang kuat: terminal-bench-v2_1 87,3 dan tau2 83,3 (sumber: Artificial Analysis), mendekati Opus 5 dan meninggalkan Sonnet 5 di belakang. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 57,3 (sumber: Artificial Analysis) menaruh GPT-5.6 Sol (high) di papan atas proprietary global, sejajar dengan frontier papan atas laboratorium Barat dan Asia — Claude Opus 5 (63,1), Claude Fable 5 (62,1), dan Kimi K3 (57,1) berada di kisaran sebanding, sementara Sol high-effort memimpin untuk kombinasi intel + coding di kelas flagship OpenAI. Coding index 77,2 (sumber: Artificial Analysis) adalah pembeda utama model ini — mendekati Claude Opus 5 (78,0), meninggalkan Sonnet 5 (71,5) dan Opus 4.7 (73,6) di belakang, mendekati kelas khusus coding frontier papan atas seperti Kimi K3 (76,2) dan Qwen3.8 2.4T A95B (71,9). Math index tidak tersedia di response API AA untuk entry ini, jadi kualitas matematika perlu diuji sendiri per use case spesifik — meski benchmark saintifik seperti GPQA 92,8% dan SciCode 56,9% (sumber: Artificial Analysis) menunjukkan kemampuan penalaran ilmiah yang kuat. Harga API $5,00 per juta token input dan $30,00 output bermain di kelas flagship premium — dibanding Claude Opus 5 ($5/$25) serupa di input tapi 20% lebih mahal di output, dan dibanding Kimi K3 ($3/$15) 67% lebih mahal di input dan 2x lebih mahal di output, menjadikan Sol high-effort opsi premium untuk workload yang mengincar performa puncak.",
+      "Kelemahan yang teridentifikasi: harga API $5,00 input dan $30,00 output per juta token — premium dibanding frontier value-tier Asia seperti Kimi K2.7 Code ($0,95/$4,00) atau DeepSeek V4 Pro ($0,435/$0,87), selisih kumulatif signifikan untuk workload volume tinggi yang sensitif dolar. TTFT 8,8 detik (sumber: Artificial Analysis) lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time — bukan pilihan optimal untuk UX interaktif yang butuh respons instan atau streaming UI yang sangat sensitif latency pertama. Math index tidak tersedia di benchmark AA untuk entry ini (null), jadi kualitas numerik tidak terukur standar — untuk workload finansial, kuantitatif, atau saintifik yang butuh jaminan numerik, perlu pengujian sendiri sebelum adopsi produksi, meski GPQA 92,8% dan SciCode 56,9% (sumber: Artificial Analysis) menjadi indikator kuat kemampuan penalaran ilmiah. Varian high-effort berarti latency dan biaya per token lebih tinggi dari varian medium atau low pada keluarga Sol — perlu orkestrasi pipeline untuk padukan high-effort untuk reasoning terdalam dan medium atau low untuk task ringan, sesuai arsitektur aplikasi. Sebagai model proprietary hosted, akses lewat OpenAI API dan platform Azure OpenAI memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: GPT-5.6 Sol (high) untuk workload agentic coding intensif, riset multi-langkah, dan penalaran terdalam di mana intel 57,3 dan coding 77,2 menjadi nilai jual utama, dengan orkestrasi effort-routing ke varian medium atau low untuk task ringan; Claude Opus 5 untuk workload yang butuh alternatif frontier non-OpenAI; Kimi K3 atau Qwen3.8 2.4T A95B untuk workload coding kelas flagship dengan footprint inference lebih efisien; frontier value-tier Asia untuk volume tinggi dan harga sensitif.",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-18",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
