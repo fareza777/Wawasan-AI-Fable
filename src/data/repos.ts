@@ -3786,6 +3786,60 @@ export const repos: Review[] = [
     updatedAt: "2026-08-17",
     featured: false,
   },
+  {
+    slug: "codewhale",
+    name: "CodeWhale",
+    tagline: "Coding agent harness Rust yang mendukung 30+ provider model, agent multi-role, dan konstitusi editor",
+    tags: ["AI Agent", "Coding Agent", "Rust", "Open Source"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "CodeWhale adalah coding agent harness open-source berbahasa Rust dari Hmbown yang menyajikan model apapun dari provider manapun di bawah satu runtime: DeepSeek, Claude, GPT, Kimi, GLM, hingga endpoint vLLM/SGLang/Ollama lokal. Fitur unggulannya adalah sistem fleet multi-role yang memungkinkan setiap peran agent (planner, builder, reviewer) memakai model berbeda dari vendor berbeda dalam satu pipeline.",
+    highlights: [
+      "Agent harness Rust lintas platform: Linux, macOS, Windows, Android (Termux), dengan binding npm, Cargo, Docker, Nix, dan Scoop",
+      "Mendukung 30+ provider model resmi: DeepSeek, Claude, GPT, Kimi, GLM, Grok, Qwen, OrcaRouter, plus endpoint vLLM/SGLang/Ollama lokal tanpa API key",
+      "Sistem fleet multi-role: tentukan provider, model, dan reasoning tier berbeda per peran dalam satu pipeline agent",
+      "Konstitusi editable (constitution.json) untuk mendokumentasikan aturan perilaku agent yang Anda ingin terapkan lintas sesi",
+      "Tiga mode kerja: Plan (read-only), Work (edit terukur), Operate (eksekusi perintah), plus postur izin Ask/Auto-Review/Full Access",
+      "Sandbox OS-native: Seatbelt di macOS, opt-in bubblewrap di Linux, plus write-holds dari konstitusi repo yang tidak bisa di-bypass",
+      "Ledger append-only untuk fleet resume: setiap langkah tercatat sehingga pipeline panjang bisa dilanjutkan tanpa kehilangan konteks",
+      "TUI interaktif dengan slash command (/model, /fleet, /undo, /restore) plus mode headless codewhale exec untuk CI/CD",
+      "Loopback-only web client (codewhale web) di 127.0.0.1 untuk kontrol via browser lokal",
+      "Bridge resmi ke DeepSeek Harness (dsh) lewat codewhale integrations dsh connect, serta ekstensi VS Code dengan Agent View read-only",
+    ],
+    pros: [
+      "Vendor-neutral secara arsitektur: tidak ada model atau provider yang diprioritaskan, sesuai semangat open models first",
+      "Lisensi MIT dan Rust native membuat binary ringan, startup cepat, dan footprint memori rendah dibanding harness Python",
+      "Konsep fleet + konstitusi memberi orkestrasi multi-role yang determination lebih tinggi dibanding single-agent loop",
+      "Migrasi dari deepseek-tui mulus lewat docs/REBRAND.md - config dan sesi lama langsung terbawa",
+      "README multibahasa termasuk Bahasa Indonesia, dokumentasi pemodelan dan hooks cukup mendalam",
+    ],
+    cons: [
+      "Kompleksitas fleet, konstitusi, dan postur izin bisa terasa berlebihan untuk pengguna yang hanya butuh one-shot edit",
+      "Dokumentasi tersebar di banyak file (docs/PROVIDERS, docs/FLEET, docs/CONFIGURATION, docs/AUTHORIZATION_ORDER) - onboarding butuh waktu",
+      "Ekstensi VS Code masih berstatus local-development preview, belum di marketplace",
+      "132 rilis dalam 7 bulan menunjukkan ritme perubahan tinggi - breaking change antar versi tetap mungkin",
+    ],
+    verdict:
+      "CodeWhale adalah salah satu coding agent harness paling ambisius di paruh kedua 2026: arsitektur Rust, dukungan multi-provider tanpa diskriminasi, dan model orkestrasi fleet yang jarang ada di proyek open-source lain. Pilihan tepat untuk developer Indonesia yang ingin kontrol penuh atas stack agent-nya.",
+    body: [
+      "Selama 2026, dunia coding agent ramai oleh dua kubu: harness yang mengunci pengguna pada satu provider model (Claude Code, Codex CLI), dan harness open-source yang mengklaim multi-provider tetapi menyembunyikan bias runtime terhadap satu model default. CodeWhale dari Hmbown mengambil posisi ketiga yang jarang terlihat: harness komunitas MIT berlisensi Rust dengan filosofi open models first, di mana tidak ada provider yang diprioritaskan - vendor netral secara arsitektur, bukan hanya secara narasi. Dimulai sebagai pengalaman native untuk DeepSeek (proyek pendahulunya bernama deepseek-tui), CodeWhale kini berkembang menjadi harness yang menerima 30+ provider termasuk DeepSeek, Claude, GPT, Kimi, GLM, Grok, Qwen, OrcaRouter, dan endpoint lokal vLLM/SGLang/Ollama lewat satu runtime yang sama.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling membedakan adalah sistem fleet multi-role. Alih-alih satu agent loop tunggal, CodeWhale memecah pekerjaan menjadi peran terpisah - planner, builder, reviewer - yang setiap perannya memiliki provider, model, dan reasoning tier sendiri. Konfigurasi ini disimpan sebagai file yaml/json yang bisa dibaca dan diedit langsung, sehingga Anda bisa menentukan misalnya: model GLM-4.6 Flash (murin dan cepat) sebagai planner, Claude Sonnet 4.5 (reasoning tinggi) sebagai builder, dan Kimi K2 Thinking sebagai reviewer - semua berjalan paralel dalam satu pipeline yang sama. Plus terdapat constitution.json di level repo yang mendokumentasikan aturan perilaku agent, termasuk write-holds yang bahkan tidak bisa di-bypass oleh Full Access - pendekatan keamanan berlapis yang jarang ditemui di coding agent lain.",
+      "Arsitekturnya terasa dirancang untuk produksi serius: TUI interaktif dengan slash-command /model, /fleet, /undo, /restore; mode headless codewhale exec untuk CI/CD; mode web loopback di 127.0.0.1 untuk kontrol via browser lokal; sandbox OS-native (Seatbelt di macOS, bubblewrap di Linux); ledger append-only untuk fleet resume tanpa kehilangan konteks. Binding distribusi juga lengkap - npm install -g codewhale untuk pengguna Node, cargo install untuk pengguna Rust, Docker image, Nix flake, Scoop, dan Termux untuk Android. Untuk konteks Indonesia, hal menarik adalah README multibahasa yang sudah mencakup Bahasa Indonesia (README.id.md) - sinyal positif untuk adopsi lokal. Ekosistem docs juga mendalam: docs/PROVIDERS.md, docs/FLEET.md, docs/CONFIGURATION.md, docs/AUTHORIZATION_ORDER.md, docs/HOOKS.md.",
+      "Batasan yang perlu dipahami: kompleksitas fleet, konstitusi, dan postur izin (Plan/Work/Operate serta Ask/Auto-Review/Full Access) bisa terasa berlebihan untuk pengguna yang hanya ingin one-shot edit pada file tunggal. Dokumentasi tersebar di banyak file sehingga onboarding bukan perkara 5 menit. Ekstensi VS Code masih berstatus local-development preview dan belum di-publish ke marketplace. Ritme rilis tinggi (132 rilis, 176 tag dalam 7 bulan) menjamin perbaikan cepat tetapi juga berarti breaking change antar minor version tetap mungkin. Namun untuk developer Indonesia yang ingin kontrol penuh atas stack coding agent-nya - bebas memilih provider per peran, menjalankan agent di mesin Rust yang ringan, dan menyimpan konstitusi perilaku sesuai praktik tim - CodeWhale adalah salah satu rilis paling relevan di paruh kedua 2026.",
+    ],
+    link: "https://github.com/Hmbown/CodeWhale",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-18",
+    updatedAt: "2026-08-18",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
