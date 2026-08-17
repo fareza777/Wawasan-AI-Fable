@@ -2817,6 +2817,47 @@ export const stacks: Review[] = [
     date: "2026-08-16",
     featured: false,
   },
+  {
+    slug: "pearai",
+    name: "PearAI",
+    tagline: "Fork VS Code open-source dengan router model otomatis dan subscription tunggal",
+    tags: ["PearAI", "Open Source", "IDE", "VS Code Fork"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.6 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "PearAI adalah fork VS Code berlisensi open-source yang membundel AI chat, inline edit, dan router model pintar di bawah satu subscription. Dipimpin tim kecil Y Combinator, didukung asisten seperti Roo Code dan Cline, dan menonjol karena pendekatan BYO-subscription yang menghindari vendor lock-in.",
+    pros: [
+      "PearAI Router memilih model coding terbaik mingguan dari beberapa vendor sekaligus, sehingga pengguna tidak perlu langganan banyak layanan",
+      "Fork VS Code asli: semua ekstensi, keybinding, dan tema yang sudah akrab tetap jalan tanpa migrasi",
+      "Open-source core dengan repo publik di GitHub untuk audit dan kontribusi",
+      "Bundel asisten agentic (Roo Code, Cline) yang mengerjakan tugas multi-file end-to-end",
+      "Free tier tersedia untuk eksplorasi awal sebelum memutuskan subscription"
+    ],
+    cons: [
+      "Subscription $15 per bulan lebih murah dari Cursor, tapi tetap berbasis dolar dan charge kartu kredit internasional",
+      "Beberapa fitur andalan (PearAI Creator, PearAI Login, PearAI Launch) masih berstatus coming soon",
+      "Komunitas dan basis pengguna lebih kecil dibanding Cursor atau VS Code + Copilot, sehingga tutorial bahasa Indonesia dan troubleshooting forum terbatas",
+      "PearAI Router yang otomatis memilih model kadang butuh override manual untuk task spesifik"
+    ],
+    verdict:
+      "Fork VS Code open-source yang paling ambisius untuk AI coding terpadu. Menarik untuk developer yang ingin menghindari langganan ganda dan lebih suka regex kontribusi langsung ke source code editor.",
+    body: [
+      "PearAI memulai debutnya sebagai salah satu fork VS Code yang paling vokal menyuarakan transparansi dan open-source di tengah maraknya editor AI proprietary. Alih-alih membangun machine learning stack sendiri, tim di balik PearAI memilih jalur berbeda: fork VS Code, layeri di atasnya dengan UI AI chat, inline edit, dan yang paling kontroversial, PearAI Router. Router ini secara otomatis mengarahkan setiap prompt ke model yang dianggap paling sesuai untuk task tersebut pada minggu itu, dengan indikator skor internal seperti 94.10 untuk PearAI Model versus 80.53 untuk GPT-4o, 80.43 untuk Meta Llama 3.1 405b, dan 76.74 untuk Claude 3 Opus. Pendekatan ini menarik bagi developer yang bosan membayar empat subscription berbeda hanya untuk mencoba model-model yang sedang naik daun.",
+      "Di balik editor, PearAI juga membundel asisten agentic yangpowered oleh Roo Code dan Cline, dua proyek open-source yang sudah terbukti untuk alur kerja multi-file. Aspek ini membuat PearAI lebih dari sekadar editor chat; PearAI Agent bisa mengerjakan fitur otomatis dan memperbaiki bug, sementara PearAI Creator (masih coming soon) berjanji membuat scaffold proyek baru mengikuti praktik terbaik teknologi terbaru. PearAI Login dan PearAI Launch juga dalam roadmap: yang pertama akan men-generate halaman login dengan best practices, yang kedua terintegrasi dengan Netlify untuk deploy satu klik. Untuk pengguna Indonesia, keberadaan asisten agentic ini berarti potensi mengerjakan tugas berulang, misalnya boilerplate API integration atau CRUD admin, secara signifikan lebih cepat.",
+      "Tentu ada kompromi yang harus dipahami. Pertama, meski core-nya open-source, PearAI tetap membutuhkan subscription $15 per bulan untuk akses penuh ke router dan beberapa model premium; ini lebih murah dari Cursor Pro $20 per bulan tapi tetap bukan free-tier yang sepenuhnya tanpa batas. Kedua, beberapa fitur yang paling menarik (PearAI Creator, PearAI Login, PearAI Launch) masih berstatus coming soon, sehingga nilai pragmatic untuk production saat ini banyak bertumpu pada integrasi Roo Code dan Cline yang sudah matang. Ketiga, basis pengguna yang lebih kecil dari Cursor atau Windsurf berarti tutorial bahasa Indonesia, troubleshooting forum, dan preset untuk stack lokal (misalnya integrasi dengan API bank BCA, BNI, atau QRIS) masih jarang, dan kamu akan sering mengandalkan dokumentasi Roo Code atau Cline yang lebih umum. Keempat, model router otomatis kadang perlu di-override manual untuk task yang sangat spesifik, dan konfigurasi ini kurang transparan dibanding workflow pilih model manual ala Cursor.",
+      "Untuk pengguna dan tim di Indonesia, ada empat skenario di mana PearAI paling realistis. Pertama, solo developer indie atau agensi kecil di Jakarta, Bandung, atau Yogyakarta yang ingin menekan biaya langganan AI (satu subscription $15 per bulan mencakup akses ke banyak model lewat router, dibanding harus langganan Cursor $20, ChatGPT Plus $20, Claude Pro $20 secara terpisah). Kedua, kontributor open-source yang ingin regex kontribusi langsung ke source code editor (repo trypear/pearai-master terbuka di GitHub dan menerima pull request, sesuatu yang mustahil di Cursor atau Windsurf). Ketiga, tim startup tahap awal yang baru build MVP dan butuh satu editor serbaguna untuk dipakai bersama (setup PearAI + Roo Code + Cline menutup alur dari scaffolding sampai agentic multi-file edit). Keempat, pengguna yang sudah comfortable dengan VS Code tapi belum mau lock-in ke Cursor (semua kebiasaan, keybinding, dan ekstensi tetap jalan, dan migrasi bisa dilakukan dengan dua klik). Catatan harga: subscription tetap dalam USD dengan charge kartu kredit internasional plus PPN 11 persen, total sekitar 12-15 persen di atas harga tertera; free tier sudah cukup untuk eksplorasi dan pengembangan ringan, dan keputusan berlangganan baru worth it setelah router terbukti menghemat waktu percobaan model manual. Untuk yang baru evaluasi, clone repo GitHub, build versi open-source, dan coba forkVSCode ini untuk satu proyek kecil sebelum menilai nilai penuhnya (kelebihannya tumbuh seiring kamu memanfaatkan router untuk eksplorasi model, dan keterbatasannya terlihat jelas di task yang butuh presisi model tertentu)."
+    ],
+    link: "https://trypear.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-17",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

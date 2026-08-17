@@ -1,0 +1,156 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "17 Agustus 2026",
+  "period": {
+    "date": "2026-08-17",
+    "label": "17 Agustus 2026",
+    "path": "/repo/daily/2026/08/17"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-17T00:05:21.260Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "anywhere-labs/deepseek-harness-desktop",
+      "owner": "anywhere-labs",
+      "repo": "deepseek-harness-desktop",
+      "description": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，支持 macOS 和 Windows，免配置、下载即用。",
+      "githubUrl": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/151481",
+      "language": "TypeScript",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-08-13T16:30:50Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "owner": "awesome-dsh-plugin",
+      "repo": "awesome-dsh-plugin",
+      "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "trendshiftUrl": "https://trendshift.io/repositories/146178",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-08-13T13:55:31Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "yjh051108/dsh-routing-suite",
+      "owner": "yjh051108",
+      "repo": "dsh-routing-suite",
+      "description": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23).",
+      "githubUrl": "https://github.com/yjh051108/dsh-routing-suite",
+      "trendshiftUrl": "https://trendshift.io/repositories/158070",
+      "language": "PowerShell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-14T21:20:55Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "public-apis/public-apis",
+      "owner": "public-apis",
+      "repo": "public-apis",
+      "description": "A collective list of free APIs",
+      "githubUrl": "https://github.com/public-apis/public-apis",
+      "trendshiftUrl": "https://trendshift.io/repositories/1677",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2016-03-20T23:49:42Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "amirappleidfd-stack/spider--panel",
+      "owner": "amirappleidfd-stack",
+      "repo": "spider--panel",
+      "description": "",
+      "githubUrl": "https://github.com/amirappleidfd-stack/spider--panel",
+      "trendshiftUrl": "https://trendshift.io/repositories/121048",
+      "language": "Python",
+      "topics": [
+        "Proxy",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-06T09:10:03Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "internet-court/internet-court-skill",
+      "owner": "internet-court",
+      "repo": "internet-court-skill",
+      "description": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
+      "githubUrl": "https://github.com/internet-court/internet-court-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/80417",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-16T13:20:01Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "trendshiftUrl": "https://trendshift.io/repositories/8731",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2024-03-11T02:57:34Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "xiaobright/dsh-anchored-standard",
+      "owner": "xiaobright",
+      "repo": "dsh-anchored-standard",
+      "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
+      "githubUrl": "https://github.com/xiaobright/dsh-anchored-standard",
+      "trendshiftUrl": "https://trendshift.io/repositories/156235",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-14T14:06:39Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "pathwaycom/arc-task-gen",
+      "owner": "pathwaycom",
+      "repo": "arc-task-gen",
+      "description": "Generates original ARC-AGI-1-style tasks distribution-matched to the public eval set.",
+      "githubUrl": "https://github.com/pathwaycom/arc-task-gen",
+      "trendshiftUrl": "https://trendshift.io/repositories/135464",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Synthetic data"
+      ],
+      "dateCreated": "2026-08-04T12:59:02Z"
+    }
+  ]
+}
