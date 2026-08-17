@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "17 Agustus 2026",
-  "period": {
-    "date": "2026-08-17",
-    "label": "17 Agustus 2026",
-    "path": "/repo/daily/2026/08/17"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-17T00:05:21.260Z",
+  "fetchedAt": "2026-08-17T02:42:30.445Z",
   "repos": [
     {
       "rank": 1,
@@ -53,6 +49,20 @@
     },
     {
       "rank": 4,
+      "fullName": "guillaumemeyer/watermarks-remover",
+      "owner": "guillaumemeyer",
+      "repo": "watermarks-remover",
+      "description": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+      "githubUrl": "https://github.com/guillaumemeyer/watermarks-remover",
+      "trendshiftUrl": "https://trendshift.io/repositories/139213",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-08-11T16:32:38Z"
+    },
+    {
+      "rank": 5,
       "fullName": "yjh051108/dsh-routing-suite",
       "owner": "yjh051108",
       "repo": "dsh-routing-suite",
@@ -66,7 +76,37 @@
       "dateCreated": "2026-08-14T21:20:55Z"
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "fullName": "Tiger3807861189/J-Space-Cognition-Suite-V3.6",
+      "owner": "Tiger3807861189",
+      "repo": "J-Space-Cognition-Suite-V3.6",
+      "description": "J-Space Cognition Suite V3.5Turbo - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research.",
+      "githubUrl": "https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.6",
+      "trendshiftUrl": "https://trendshift.io/repositories/160798",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-22T00:34:24Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "microsoft/data-formulator",
+      "owner": "microsoft",
+      "repo": "data-formulator",
+      "description": "🪄 Data Formulator is an interactive AI-powered data analysis system makes it easy to connect, explore and visualize data.",
+      "githubUrl": "https://github.com/microsoft/data-formulator",
+      "trendshiftUrl": "https://trendshift.io/repositories/12919",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Data visualization"
+      ],
+      "dateCreated": "2024-06-07T23:01:51Z"
+    },
+    {
+      "rank": 8,
       "fullName": "public-apis/public-apis",
       "owner": "public-apis",
       "repo": "public-apis",
@@ -80,37 +120,21 @@
       "dateCreated": "2016-03-20T23:49:42Z"
     },
     {
-      "rank": 6,
-      "fullName": "amirappleidfd-stack/spider--panel",
-      "owner": "amirappleidfd-stack",
-      "repo": "spider--panel",
-      "description": "",
-      "githubUrl": "https://github.com/amirappleidfd-stack/spider--panel",
-      "trendshiftUrl": "https://trendshift.io/repositories/121048",
-      "language": "Python",
-      "topics": [
-        "Proxy",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-07-06T09:10:03Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "internet-court/internet-court-skill",
-      "owner": "internet-court",
-      "repo": "internet-court-skill",
-      "description": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
-      "githubUrl": "https://github.com/internet-court/internet-court-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/80417",
+      "rank": 9,
+      "fullName": "nexu-io/open-design",
+      "owner": "nexu-io",
+      "repo": "open-design",
+      "description": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.",
+      "githubUrl": "https://github.com/nexu-io/open-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26691",
       "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "AI skills"
+        "AI agent"
       ],
-      "dateCreated": "2026-06-16T13:20:01Z"
+      "dateCreated": "2026-04-28T04:25:20Z"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "fullName": "harry0703/MoneyPrinterTurbo",
       "owner": "harry0703",
       "repo": "MoneyPrinterTurbo",
@@ -122,35 +146,6 @@
         "AI video generation"
       ],
       "dateCreated": "2024-03-11T02:57:34Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "xiaobright/dsh-anchored-standard",
-      "owner": "xiaobright",
-      "repo": "dsh-anchored-standard",
-      "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
-      "githubUrl": "https://github.com/xiaobright/dsh-anchored-standard",
-      "trendshiftUrl": "https://trendshift.io/repositories/156235",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-08-14T14:06:39Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "pathwaycom/arc-task-gen",
-      "owner": "pathwaycom",
-      "repo": "arc-task-gen",
-      "description": "Generates original ARC-AGI-1-style tasks distribution-matched to the public eval set.",
-      "githubUrl": "https://github.com/pathwaycom/arc-task-gen",
-      "trendshiftUrl": "https://trendshift.io/repositories/135464",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Synthetic data"
-      ],
-      "dateCreated": "2026-08-04T12:59:02Z"
     }
   ]
 }
