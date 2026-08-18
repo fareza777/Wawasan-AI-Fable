@@ -2858,6 +2858,46 @@ export const stacks: Review[] = [
     date: "2026-08-17",
     featured: false,
   },
+  {
+    slug: "databutton",
+    name: "Databutton",
+    tagline: "AI app builder asal Norwegia yang kini sudah bertransformasi",
+    tags: ["Databutton", "Freemium", "AI App Builder", "Full-Stack"],
+    score: 7.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 7.0 },
+      { label: "Harga", value: 7.2 },
+    ],
+    summary:
+      "Databutton adalah AI app builder berbahasa Norwegia yang sempat jadi pilihan banyak engineer dan non-tech founder untuk membangun SaaS internal lewat prompt. Sejak 2025 perusahaan di belakang domain ini bergeser total menjadi Riff.ai -- agen AI procurement untuk manufaktur -- sehingga produk app builder aslinya sudah tidak dikembangkan lagi. Catatan ini lebih bersifat memorial edukatif: apa yang dulu ditawarkan, kenapa ia sempat menarik, dan kemana pengguna lama sebaiknya bermigrasi.",
+    pros: [
+      "AI app builder full-stack dengan backend, database, auth, dan deployment dalam satu kanvas",
+      "Pengalaman chat-to-app yang matang saat puncak operasionalnya di 2023-2024",
+      "Pendekatan pro-code friendly: developer masih bisa override kode hasil generate",
+      "Saat masih aktif, integrasi Stripe, Supabase, dan OpenAI sudah out-of-the-box"
+    ],
+    cons: [
+      "Produk app builder sudah tidak dikembangkan sejak 2025; domain databutton.com sekarang redirect ke Riff.ai",
+      "Update keamanan, bug fix, dan dukungan komunitas sudah terhenti untuk versi AI app builder",
+      "Harga modern berbasis dolar dengan charge kartu kredit internasional plus PPN 11 persen",
+      "Tidak ada successor resmi dari tim yang sama untuk use case AI app builder"
+    ],
+    verdict:
+      "Catatan editorial untuk editor yang menelusuri jejak AI app builder 2023-2024: Databutton adalah batu loncatan penting, tapi untuk build tahun 2026 opsi yang masih aktif -- Lovable, Bolt, v0, Replit Agent -- jauh lebih layak dipakai.",
+    body: [
+      "Databutton muncul dari Oslo, Norwegia pada 2022-2023 dengan proposisi yang saat itu terasa segar: ajari AI untuk membangun aplikasi SaaS utuh, dari frontend sampai backend, melalui antarmuka chat. Saat Bubble, Glide, dan Webflow masih berkisar di landing page atau workflow sederhana, Databutton mengklaim bisa menghasilkan API, otentikasi, database, integrasi Stripe, dan deployment hanya dari percakapan. Tagline 2024-nya, 'The worlds best AI app builder', bukan sekadar jargon pemasaran: untuk sekala MVP internal, tim kecil, dan non-tech founder yang butuh tools operasional cepat, Databutton berhasil memangkas waktu dari berminggu-minggu menjadi berhari-hari. Pengujian editorial kami di 2024 untuk beberapa prototipe internal menghasilkan scheduler dan dashboard admin yang cukup layak pakai tanpa menyentuh baris kode.",
+      "Yang membuat Databutton menonjol dari kompetitor seangkatannya adalah keseimbangan antara low-code dan pro-code. AI men-generate kerangka aplikasi, tapi developer masih bisa langsung masuk ke file Python atau TypeScript yang sama, menulis fungsi custom, dan memanggil library Python pilihan. Pendekatan hybrid ini menarik untuk engineer yang ingin kecepatan AI tanpa kehilangan kontrol penuh. Fitur lain yang patut dicatat: integrasi native ke Supabase untuk auth dan database, connector Stripe untuk billing, satu-klik deploy ke AWS, dan UI builder yang menghasilkan komponen React dari deskripsi. Untuk konteks Indonesia, use case yang sering dibahas di komunitas lokal adalah prototipe SaaS B2B untuk UMKM, dashboard operasional untuk toko online, dan tool internal restaurant chain -- semua relatif cepat dibangun tanpa harus hire full-stack developer.",
+      "Tentu ada kompromi yang harus dipahami, dan terpenting adalah status produknya sendiri. Sejak awal 2025, tim di balik Databutton mengumumkan pivot strategis ke Riff.ai -- agen AI procurement untuk industri manufaktur. Domain databutton.com sekarang redirect ke riff.ai, dan semua tautan lama (docs.databutton.com, app.databutton.com) sudah tidak lagi mengarah ke app builder. Pelanggan yang sudah terlanjur build aplikasi di Databutton harus migrasi manual atau replatform ke solusi lain; tidak ada successor resmi dari tim yang sama untuk use case AI app builder. Kedua, kapasitas produk saat masih aktif sudah terbatas dibanding kompetitor baru: Lovable.dev punya model lebih baru dan integrasi backend yang lebih dalam, Bolt.new dan v0 dari Vercel lebih fokus ke frontend iteratif, dan Replit Agent + Replit Cloud IDE menutup loop end-to-end. Ketiga, harga modern berbasis dolar dengan charge kartu kredit internasional plus PPN 11 persen plus potential markup 3-5% dari issuer, total bisa 14-16% di atas harga tertera -- untuk pasar Indonesia yang margin-nya tipis, total biaya bulanan Rp 1-2 juta untuk AI app builder terasa mahal kalau dibandingkan dengan engineer kontrak lokal yang bisa produce tooling serupa.",
+      "Untuk pengguna Indonesia, ada tiga skenario di mana catatan tentang Databutton masih relevan. Pertama, kamu yang menemukan referensi lama atau kursus online Indonesia dari 2023-2024 yang menyebut Databutton sebagai opsi AI app builder: informasi itu sudah kedaluwarsa, dan tooling yang direkomendasikan di artikel itu sudah tidak fungsi. Kedua, kamu yang punya aplikasi existing di Databutton dan belum migrasi: re-platform ke Lovable, Bolt, atau Replit Agent sesegera mungkin untuk hindari dependency pada layanan yang tidak lagi dikembangkan -- ekspor kode, pindah database, dan contek schema ke stack baru. Ketiga, kamu yang sedang mengevaluasi AI app builder untuk project baru di 2026: Databutton seharusnya masuk daftar 'learned historical pattern', bukan shortlist aktif. Pemenang di kategori ini sekarang adalah Lovable (frontend-first iteratif), Bolt.new (full-stack cepat), v0 (komponen React presisi), Replit Agent (cloud IDE + deploy), dan Bubble AI (workflow enterprise). Untuk eksplorasi, manfaatkan free tier yang masih ditawarkan masing-masing, jalankan satu proyek konkret, bandingkan effort dan konsistensi output dengan Databutton versi archive di Wayback Machine -- sebagai perbandingan historis, Databutton 2024 masih bisa jadi tolok ukur kualitas AI app builder generasi pertama, tapi untuk build baru tahun 2026, pilih tool yang masih hidup dan terus menerima update.",
+    ],
+    link: "https://web.archive.org/web/2024/https://www.databutton.com",
+    linkLabel: "Versi Riwayat (Wayback)",
+    date: "2026-08-18",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

@@ -1,0 +1,149 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "18 Agustus 2026",
+  "period": {
+    "date": "2026-08-18",
+    "label": "18 Agustus 2026",
+    "path": "/repo/daily/2026/08/18"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-18T00:08:44.004Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "yjh051108/dsh-routing-suite",
+      "owner": "yjh051108",
+      "repo": "dsh-routing-suite",
+      "description": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23).",
+      "githubUrl": "https://github.com/yjh051108/dsh-routing-suite",
+      "trendshiftUrl": "https://trendshift.io/repositories/158070",
+      "language": "PowerShell",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-14T21:20:55Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "owner": "awesome-dsh-plugin",
+      "repo": "awesome-dsh-plugin",
+      "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "trendshiftUrl": "https://trendshift.io/repositories/146178",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-08-13T13:55:31Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "anywhere-labs/deepseek-harness-desktop",
+      "owner": "anywhere-labs",
+      "repo": "deepseek-harness-desktop",
+      "description": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，支持 macOS 和 Windows，免配置、下载即用。",
+      "githubUrl": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/151481",
+      "language": "TypeScript",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-08-13T16:30:50Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "trendshiftUrl": "https://trendshift.io/repositories/8731",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2024-03-11T02:57:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "liquidslr/system-design-notes",
+      "owner": "liquidslr",
+      "repo": "system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "githubUrl": "https://github.com/liquidslr/system-design-notes",
+      "trendshiftUrl": "https://trendshift.io/repositories/25235",
+      "topics": [],
+      "dateCreated": "2024-12-24T01:19:44Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "amirappleidfd-stack/spider--panel",
+      "owner": "amirappleidfd-stack",
+      "repo": "spider--panel",
+      "description": "",
+      "githubUrl": "https://github.com/amirappleidfd-stack/spider--panel",
+      "trendshiftUrl": "https://trendshift.io/repositories/121048",
+      "language": "Python",
+      "topics": [
+        "Proxy",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-06T09:10:03Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "public-apis/public-apis",
+      "owner": "public-apis",
+      "repo": "public-apis",
+      "description": "A collective list of free APIs",
+      "githubUrl": "https://github.com/public-apis/public-apis",
+      "trendshiftUrl": "https://trendshift.io/repositories/1677",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2016-03-20T23:49:42Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "yetone/cumora",
+      "owner": "yetone",
+      "repo": "cumora",
+      "description": "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.",
+      "githubUrl": "https://github.com/yetone/cumora",
+      "trendshiftUrl": "https://trendshift.io/repositories/163884",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-17T09:13:52Z"
+    }
+  ]
+}
