@@ -3378,6 +3378,50 @@ export const models: Review[] = [
     date: "2026-08-18",
     featured: false,
   },
+  {
+    slug: "claude-opus-5",
+    name: "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+    tagline: "Generasi Opus terbaru — intel 63,1 dan coding 78 memimpin papan atas dunia frontier",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Agent"],
+    score: 9.5,
+    scores: [
+      { label: "Penalaran", value: 9.4 },
+      { label: "Coding", value: 9.5 },
+      { label: "Kecepatan", value: 8.4 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 63.1,
+    aa_coding_index: 78,
+    aa_price_input: 5,
+    aa_price_output: 25,
+    aa_synced_at: "2026-08-19",
+    summary:
+      "Flagship terbaru Anthropic per Agustus 2026 yang memimpin papan atas dunia frontier. Intelligence index 63,1 (sumber: Artificial Analysis) menjadi skor tertinggi di antara seluruh model yang sudah diulas Wawasan AI — melampaui Claude Opus 4.8 (57,3), Claude Fable 5 (62,1), Kimi K3 (57,1), dan Grok 4.5 (55,8). Coding index 78 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, meninggalkan Sonnet 5 (71,5), Opus 4.7 (73,6), dan hampir menyamai Kimi K3 (76,2). Lompatan dari Opus 4.8 (intel 57,3, coding 74,3) ke Opus 5 (intel 63,1, coding 78) bukan sekadar iterasi, melainkan reposisi total: Opus 5 menjadi standar baru untuk workload agentic papan atas.",
+    pros: [
+      "Intelligence index 63,1 (sumber: Artificial Analysis) — skor tertinggi di antara seluruh model yang sudah diulas Wawasan AI, melampaui Claude Fable 5 (62,1), Opus 4.8 (57,3), Kimi K3 (57,1), dan Grok 4.5 (55,8)",
+      "Coding index 78 (sumber: Artificial Analysis) — memimpin benchmark pemrograman proprietary global, meninggalkan Sonnet 5 (71,5), Opus 4.7 (73,6), dan hampir menyamai Kimi K3 (76,2)",
+      "Skor terminal-bench-v2_1 89,1 dan GPQA 93,2% (sumber: Artificial Analysis) — puncak benchmark eksekusi tool-use multi-langkah dan penalaran saintifik untuk kelas proprietary Barat",
+      "Adaptive Reasoning dengan Max Effort — sistem routing internal yang menentukan sendiri kedalaman penalaran per tugas, untuk pertanyaan sederhana menjawab ringkas, untuk tugas kompleks merencanakan, mengeksekusi, mengetes, lalu memperbaiki sendiri kesalahannya",
+    ],
+    cons: [
+      "Harga API premium kelas tertinggi: $5,00 input dan $25,00 output per juta token — bermain di kelas tertinggi bersama Claude Opus 4.8 dan Opus 4.5, selisih kumulatif signifikan untuk workload volume tinggi",
+      "TTFT 31,9 detik (sumber: Artificial Analysis) lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time — bukan pilihan optimal untuk UX interaktif yang butuh respons instan",
+      "Math index tidak tersedia di benchmark AA (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski benchmark saintifik seperti GPQA 93,2% dan SciCode 55,7% menunjukkan kemampuan penalaran ilmiah kuat",
+      "Akses API butuh kartu kredit atau pembayaran internasional — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "Claude Opus 5 adalah standar baru untuk workload agentic papan atas — kombinasi intel 63,1 dan coding 78 menjadi sulit ditandingi di kelas proprietary manapun. Untuk workload agentic coding intensif, riset multi-langkah, atau penalaran terdalam di mana setiap poin benchmark berarti produktivitas, Opus 5 layak dicoba sebelum melompat ke alternatif frontier manapun.",
+    body: [
+      "Claude Opus 5 (Adaptive Reasoning, Max Effort) adalah flagship terbaru Anthropic per Agustus 2026, dirilis 24 Juli 2026 sebagai penerus Claude Opus 4.8 yang sejak Agustus 2026 memegang standar de facto workload agentic papan atas. Bedanya, Opus 5 bukan sekadar iterasi numerik melainkan reposisi total ke puncak papan atas dunia frontier. Intelligence index 63,1 (sumber: Artificial Analysis) menjadi skor tertinggi di antara seluruh model yang sudah diulas Wawasan AI — melampaui Claude Fable 5 (62,1), Claude Opus 4.8 (57,3), Kimi K3 (57,1), dan Grok 4.5 (55,8). Coding index 78 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, meninggalkan Sonnet 5 (71,5), Opus 4.7 (73,6), dan hampir menyamai Kimi K3 (76,2) untuk kelas khusus coding frontier papan atas. Lompatan dari Opus 4.8 (intel 57,3, coding 74,3) ke Opus 5 (intel 63,1, coding 78) merupakan reposisi fundamental: 10% lebih tinggi di intelligence index dan 5% lebih tinggi di coding index — menjadikan Opus 5 standar baru untuk workload agentic papan atas di kelas proprietary global. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic panjang, Claude Opus 5 menunjukkan karakter flagship yang melanjutkan DNA andalan keluarga Opus — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang yang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten. Mode Adaptive Reasoning dengan Max Effort secara otomatis menentukan kedalaman penalaran per tugas, mirip GPT-5 tapi dengan optimasi agentic yang lebih dalam. Yang paling terasa dibanding frontier papan atas lain (Kimi K3, Grok 4.5, DeepSeek V4 Pro) adalah kematangan ekosistem Claude Code — integrasi IDE, pipeline CI/CD, dan tooling pendukung agentic yang sudah teruji di production oleh ribuan tim engineering. Skor benchmark eksekusi tool-use menunjukkan kemampuan orkestrasi multi-langkah yang kuat: terminal-bench-v2_1 89,1 (sumber: Artificial Analysis) memimpin benchmark proprietary Barat dan mendekati kelas khusus coding frontier papan atas. Throughput output median 52,0 tokens/detik dan TTFT 31,9 detik (sumber: Artificial Analysis) — TTFT lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time, perlu orkestrasi pipeline untuk workload yang sensitif latency pertama. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 63,1 (sumber: Artificial Analysis) menaruh Opus 5 di puncak papan atas dunia frontier — melampaui Claude Fable 5 (62,1), Opus 4.8 (57,3), Kimi K3 (57,1), dan Grok 4.5 (55,8). Coding index 78 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, meninggalkan Sonnet 5 (71,5) dan Opus 4.7 (73,6) di belakang, hampir menyamai Kimi K3 (76,2) dan Qwen3.8 2.4T A95B (71,9) untuk kelas khusus coding frontier papan atas. Math index tidak tersedia di response API AA untuk entry ini (null), jadi kualitas numerik tidak terukur standar — meski GPQA 93,2% dan SciCode 55,7% (sumber: Artificial Analysis) menjadi indikator kuat kemampuan penalaran ilmiah dan saintifik. Harga API $5,00 per juta token input dan $25,00 output bermain di kelas flagship premium, identik dengan Claude Opus 4.8 dan Opus 4.5 — dibanding frontier papan atas lain: Kimi K3 ($3/$15) 67% lebih mahal di input dan 67% lebih mahal di output, Grok 4.5 ($2/$6) 150% lebih mahal di input dan 4x lebih mahal di output, menjadikan Opus 5 opsi premium untuk workload yang mengincar performa puncak.",
+      "Kelemahan yang teridentifikasi: harga API $5,00 input dan $25,00 output per juta token — premium dibanding frontier value-tier Asia seperti Kimi K2.7 Code ($0,95/$4,00) atau DeepSeek V4 Pro, selisih kumulatif signifikan untuk workload volume tinggi yang sensitif dolar. TTFT 31,9 detik (sumber: Artificial Analysis) lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time — bukan pilihan optimal untuk UX interaktif yang butuh respons instan atau streaming UI yang sangat sensitif latency pertama. Math index tidak tersedia di benchmark AA untuk entry ini (null), jadi kualitas numerik tidak terukur standar — untuk workload finansial, kuantitatif, atau saintifik yang butuh jaminan numerik, perlu pengujian sendiri sebelum adopsi produksi meski GPQA 93,2% dan SciCode 55,7% menjadi indikator kuat. Sebagai model proprietary hosted, akses lewat platform.anthropic.com dan mitra regional memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: Opus 5 untuk workload agentic coding intensif, riset multi-langkah, dan penalaran terdalam di mana kombinasi intel 63,1 dan coding 78 menjadi nilai jual utama, dengan Claude Code pipeline panjang yang sudah matang; Kimi K3 untuk coding agentic di kelas harga lebih terjangkau; Grok 4.5 untuk workload yang butuh akses real-time X; DeepSeek V4 Pro untuk volume tinggi di kelas harga value.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-19",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
