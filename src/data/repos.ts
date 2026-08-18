@@ -3840,6 +3840,60 @@ export const repos: Review[] = [
     updatedAt: "2026-08-18",
     featured: false,
   },
+  {
+    slug: "omlx",
+    name: "oMLX",
+    tagline: "Inference server LLM native Apple Silicon dengan KV cache SSD dan menu bar macOS",
+    tags: ["AI Inference", "Apple Silicon", "Python", "Open Source"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "oMLX dari jundot adalah inference server LLM lokal yang dioptimasi untuk Apple Silicon (M1/M2/M3/M4) dengan continuous batching dan KV cache dua tingkat - hot tier di RAM, cold tier di SSD dalam format safetensors. Aplikasi ini datang sebagai macOS app native SwiftUI yang dikelola dari menu bar, plus CLI Homebrew untuk integrasi terminal, dengan kompatibilitas penuh terhadap OpenAI dan Anthropic API di endpoint /v1 dan /v1/messages.",
+    highlights: [
+      "Inference server native Apple Silicon berbasis MLX dengan continuous batching lewat mlx-lm BatchGenerator, mendukung LLM, VLM, OCR model, embedding, dan reranker dalam satu proses",
+      "KV cache dua tingkat - block-based paged cache di RAM untuk hot tier, plus PagedSSDCacheManager di SSD (safetensors) untuk cold tier, dengan prefix sharing dan Copy-on-Write seperti vLLM",
+      "macOS menubar app native SwiftUI (bukan Electron) untuk start, stop, monitor server tanpa terminal - termasuk auto-update dan persistent stats lintas restart",
+      "Distribusi tiga jalur: dmg macOS app resmi (ships precompiled custom kernels), Homebrew tap (brew install jundot/omlx/omlx), dan source build via pip install -e .",
+      "Custom kernels native untuk GLM-5.2, MiniMax M3, dan Qwen3.5 yang memberi speedup signifikan - 30x lebih cepat pada fused DSA prefill GLM-5.2 (845 vs ~29 tok/s di M3 Ultra)",
+      "Drop-in compatibility dengan OpenAI Chat/Completions/Embeddings/Rerank API plus Anthropic Messages API di endpoint /v1, dengan streaming usage stats dan adaptive thinking",
+      "EnginePool multi-model: LRU eviction otomatis, manual load/unload, model pinning, per-model TTL, plus ProcessMemoryEnforcer dengan limit default system RAM - 8GB",
+      "Admin dashboard di /admin dengan dukungan 8 bahasa (English, Korea, Jepang, Cina, Perancis, Rusia, Spanyol, Brazil Portugis) - semua dependensi CDN di-vendor untuk operasi fully offline",
+      "Integrasi satu-klik ke OpenClaw, OpenCode, Codex, Hermes Agent, Copilot, dan Pi lewat admin panel - tanpa edit config manual",
+      "Experimental multi-Mac inference: split satu model antar Mac berbasis MLX pipeline ranks lewat Ring atau Thunderbolt RDMA/JACCL dengan shard planning yang byte-aware dan measured compute/link rebalancing",
+    ],
+    pros: [
+      "Penjembatan paling mulus antara MLX native performance dengan UX sehari-hari - tim yang punya Mac M-series tidak perlu setup CUDA, WSL, atau Docker untuk inference LLM serius",
+      "Tiered KV cache di SSD memecahkan masalah utama local LLM: model besar 70B+ sekarang praktis di Mac RAM 32-64GB karena cold blocks bisa spill ke SSD tanpa recompute",
+      "Ekosistem integrasi yang luas lewat admin dashboard membuat adopsi oleh tool agent populer terasa seamless - cukup klik, bukan edit config YAML",
+      "Apache-2.0 plus custom kernels yang sudah di-precompile di dmg resmi menurunkan friksi setup yang biasanya jadi penghalang utama adopsi local LLM di komunitas non-teknis",
+      "Open source dengan iterasi cepat (152+ rilis sejak Feb 2026) dan 19.354 bintang - momentum dan kesiapan produksi sama-sama kuat",
+    ],
+    cons: [
+      "Hanya mendukung Apple Silicon (M1/M2/M3/M4) - pengguna Linux, Windows, atau Intel Mac tidak bisa menjalankan oMLX, berbeda dari Ollama yang lebih lintas-platform",
+      "Untuk keluarga model yang memerlukan custom kernels (GLM-5.2, MiniMax M3, Qwen3.5), perlu Xcode lengkap di macOS karena Command Line Tools saja tidak menyediakan toolchain Metal - fallback tanpa kernel bisa 30x lebih lambat",
+      "Multi-Mac distributed inference masih experimental dengan capability-gated token-only output path dan requirement SSH/runtime verification yang ketat - belum untuk beban produksi kritis",
+      "Admin dashboard dan CLI mengasumsikan pengguna paham konsep MLX, KV cache, dan tool calling - onboarding untuk kreator non-teknis lebih sulit dibanding GUI app sekelas LM Studio",
+    ],
+    verdict:
+      "oMLX adalah inference server paling serius di Apple Silicon di paruh kedua 2026: kombinasi MLX native performance, tiered KV cache SSD, dan macOS menu bar app menjadikannya pilihan utama untuk developer Indonesia yang bekerja di Mac dan ingin menjalankan LLM lokal kelas 70B+ tanpa kompromi UX. Sangat relevan untuk freelancer, agency kecil, dan tim riset di Indonesia yang sudah invest di hardware Mac M-series.",
+    body: [
+      "Pertanyaan yang sering menghambat adopsi LLM lokal di Indonesia sepanjang 2025-2026 adalah: bagaimana caranya menjalankan model 70B+ secara praktis di Mac tanpa mengorbankan UX sehari-hari? Ollama memang mudah dipakai, tapi KV cache-nya terikat RAM sehingga model 70B quant 4-bit praktis butuh mesin dengan 64GB unified memory - di luar jangkauan banyak kreator dan freelancer. oMLX dari jundot menjawab masalah itu dengan pendekatan yang lebih sistematis: inference server berbasis MLX untuk Apple Silicon (M1/M2/M3/M4) dengan tiered KV cache - hot tier di RAM untuk blok yang sering diakses, cold tier di SSD dalam format safetensors untuk blok yang jarang dipakai. Saat cache panas penuh, blok dipindahkan ke SSD; pada request berikutnya dengan prefix yang cocok, blok di-restore dari disk tanpa recompute - bahkan setelah server restart. Pola ini diambil dari vLLM (paged cache dengan prefix sharing dan Copy-on-Write) dan diadaptasi untuk konsistensi model mental MLX.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah integrasi UX-nya. macOS app bawaan (dmg resmi, bukan CLI-only) hadir sebagai menu bar app native SwiftUI - buka dari Applications, server jalan di background, statistik persisten lintas restart, auto-update satu klik. Ada pula CLI Homebrew (brew install jundot/omlx/omlx) plus source build lewat pip install -e . untuk pengguna yang lebih teknis. Custom kernels untuk GLM-5.2, MiniMax M3, dan Qwen3.5 sudah di-precompile di dmg resmi, memberikan speedup signifikan - pada fused DSA prefill GLM-5.2 tercatat 845 vs ~29 tok/s di M3 Ultra, atau sekitar 30x lebih cepat dibanding fallback generic. Untuk konteks Indonesia, ini sangat relevan: banyak freelancer dan agency kecil sudah investasi di Mac M2/M3 dengan 32-64GB unified memory, dan oMLX memungkinkan mereka menjalankan model kelas 70B+ dengan UX yang tidak membuat mereka harus belajar teori KV cache dulu.",
+      "Arsitekturnya terasa dirancang untuk produksi, bukan sekadar demo. EnginePool multi-model mengelola LLM, VLM, OCR model (DeepSeek-OCR, DOTS-OCR, GLM-OCR), embedding (BERT, BGE-M3, ModernBERT), dan reranker dalam satu proses dengan LRU eviction, manual load/unload, model pinning, dan per-model TTL. ProcessMemoryEnforcer membatasi total memory ke system RAM - 8GB untuk mencegah OOM sistem. API kompatibilitas penuh dengan OpenAI (Chat/Completions/Embeddings/Rerank) plus Anthropic Messages API di endpoint /v1, dengan streaming usage stats, adaptive thinking, dan JSON schema validation. Tool calling auto-detection untuk 8 keluarga model utama (Llama, Qwen, DeepSeek, Qwen3.5 XML, Gemma, GLM, Mistral, Kimi K2, Longcat). Integrasi satu-klik ke OpenClaw, OpenCode, Codex, Hermes Agent, Copilot, dan Pi lewat admin dashboard di /admin. Admin dashboard sendiri mendukung 8 bahasa (Inggris, Korea, Jepang, Cina, Perancis, Rusia, Spanyol, Brazil Portugis) - meski Bahasa Indonesia belum masuk, dependensi CDN di-vendor untuk operasi fully offline. Untuk konteks Indonesia, hal ini masih relevan karena mayoritas developer lokal sudah comfortable dengan English UI di tooling teknis.",
+      "Batasan yang perlu dipahami. oMLX hanya jalan di Apple Silicon - pengguna Linux, Windows, atau Intel Mac tidak bisa memakainya, berbeda dari Ollama atau vLLM yang lebih lintas-platform. Untuk keluarga model yang memerlukan custom kernels (GLM-5.2, MiniMax M3, Qwen3.5), instalasi dari source membutuhkan Xcode lengkap (bukan sekadar Command Line Tools) karena toolchain Metal tidak ada di CLI Tools - ini menambah friksi setup yang signifikan bagi pengguna yang hanya ingin coba-coba. Multi-Mac distributed inference masih experimental dengan capability-gated token-only output path - menarik untuk eksplorasi, tapi belum untuk beban produksi kritis. Onboarding untuk pengguna non-teknis juga lebih tinggi dibanding LM Studio atau Ollama karena konsep MLX, KV cache dua tingkat, dan tool calling perlu dipahami dulu. Namun untuk developer Indonesia yang serius soal local LLM dan sudah invest di Mac M-series, oMLX adalah inference server paling matang di paruh kedua 2026 - dan kombinasi UX menu bar app plus tiered KV cache SSD menjadikannya pilihan default dibanding solusi yang ada.",
+    ],
+    link: "https://github.com/jundot/omlx",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-19",
+    updatedAt: "2026-08-19",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
