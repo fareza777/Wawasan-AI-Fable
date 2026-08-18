@@ -1915,9 +1915,39 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Tiga mode routing task-aware: spec (plan-then-act), react (executor), mixed (trap-aware), weak (model self-classify) — ditambah close-distance injection (92-94% cache hit) yang menurunkan latensi dan konsumsi token tanpa mengorbankan kualitas.",
         "Bundle di-publish sebagai preset 'Router Standard (experimental)' yang aktif setelah restart DSH — workflow install tiga langkah via PowerShell (`install.ps1`) atau manual copy ke `.dsh/.agent-presets/router-standard`, plus sub-modul yang independen di repo masing-masing.",
         "Dilengkapi paper dan eksperimen P1-P23 yang reproducible (di folder `preset/docs/`), lisensi MIT, dan tool self-optimization (`dev_router_status`, `dev_router_mode`, `dev_mode_subagent`) untuk agen yang selalu menyesuaikan dirinya sendiri — relevan bagi power user DeepSeek Harness yang ingin hasil coding agent lebih disiplin dan terarah.",
-      ],
-    },
-  };
+              ],
+            },
+            "yetone/cumora": {
+              description:
+                "Chat tim lintas platform di mana agen AI jadi 'first-class participant' — punya persona, memory, dan klaim kerja sendiri, sama seperti manusia di room chat, Kanban, dan kalender yang sama.",
+              highlights: [
+                "Slack-meets-Agents: agen bukan bot tempelan, melainkan anggota tim sejati yang punya persona, memory, dan klaim unit kerja nyata lewat atomic claim — koordinasi lewat seen-cursor freshness gate agar tidak saling menabrak.",
+                "Dua jalur 'otak': Cumora Cloud (managed pod + OpenAI Responses API multi-hop) atau BYOA (`npx cumora agent computer`) yang pakai Claude Code/Codex CLI kamu sendiri — server tidak pernah pegang provider key.",
+                "Stack modern: React 18 + Vite + TypeScript di frontend, Express + ws + Postgres/Redis di backend, dan Electron/iOS/Android (Capacitor) berbagi codebase yang sama — bukan wrapper, melainkan workspace multi-perangkat.",
+                "Semua panggilan LLM masuk satu `llm_calls` cost ledger, sehingga biaya tiap agen bisa diaudit — relevan untuk founder Indonesia yang ingin 'tim AI' di workspace yang sama dengan manusia, bukan di tab berbeda yang tercerai-berai.",
+              ],
+            },
+            "llm-as-a-verifier/llm-as-a-verifier": {
+              description:
+                "Framework verifier serbaguna yang kasih feedback granular ke agen apapun tanpa training ulang — skor pakai expectation logprob, SOTA di Terminal-Bench, SWE-Bench, MedAgentBench, dan RoboRewardBench.",
+              highlights: [
+                "Trik utama: granularity halus + expectation atas full logprob distribution + criteria decomposition — verifier menghasilkan skor yang bisa dipakai untuk test-time scaling, progress tracking, dan RL agent, bukan skor hitam-putih.",
+                "Klaim SOTA lintas domain: Terminal-Bench, SWE-Bench Verified, MedAgentBench, dan RoboRewardBench — single framework yang sama bisa nilai coding agent, robot agent, dan medical agent tanpa fine-tune per domain.",
+                "Prefix-cache optimization di 0.2.0 kurangi ~3,4× uncached input token di trajectory-heavy benchmark — bukan cuma akurasi, efisiensi token jadi titik jual, plus `deepseek-v4-flash` verifier backend dan token accounting lewat `llm_verifier.token_usage()`.",
+                "Pakai sebagai library Python (`pip install llm-verifier`) atau pasang plugin ke Claude Code lewat `TurboAgent` companion repo — relevan untuk engineer Indonesia yang riset RL agentik atau butuh harness evaluator universal lintas benchmark.",
+              ],
+            },
+            "santifer/career-ops": {
+              description:
+                "Sistem multi-agen untuk cari kerja — scan portal lowongan, nilai pakai rubrik A–F jadi skor 1.0–5.0, tailor CV per posisi, lalu track lamaran, semuanya lewat AI coding CLI lokal kamu.",
+              highlights: [
+                "Pendekatan terbalik: kalau perusahaan pakai AI untuk filter kandidat, career-ops kasih kandidat AI untuk memilih perusahaan — bukan scraper lowongan, melainkan 'co-pilot' yang mengevaluasi setiap listing dengan rubrik objektif.",
+                "Rubrik A–F (1.0–5.0) yang terstruktur dan transparan: agen kasih skor berdasarkan kriteria eksplisit, sehingga keputusan melamar punya jejak audit — bukan feeling subjektif 'kayaknya cocok'.",
+                "Jalankan 100% lokal di CLI kamu sendiri: Claude Code, OpenCode, Antigravity CLI, Codex, Qwen, Kimi, GitHub Copilot, Grok Build — multi-bahasa (README dalam 16 bahasa termasuk Indonesia-friendly), dukungan Node.js/Go/Playwright.",
+                "65k+ bintang GitHub dan masuk trending di Product Hunt, WIRED, dan Business Insider — relevan untuk job seeker tech Indonesia yang ingin otomasi screening + CV tailoring tanpa serahkan data lamaran ke SaaS proprietary.",
+              ],
+            },
+          };
 
                                                                                                                                             // Helper: lookup dengan fallback ke template-generated highlights
                                                                                                                                             export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
