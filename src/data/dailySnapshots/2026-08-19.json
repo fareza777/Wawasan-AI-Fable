@@ -1,28 +1,24 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "19 Agustus 2026",
-  "period": {
-    "date": "2026-08-19",
-    "label": "19 Agustus 2026",
-    "path": "/repo/daily/2026/08/19"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-19T00:07:55.033Z",
+  "fetchedAt": "2026-08-19T02:39:28.382Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "harry0703/MoneyPrinterTurbo",
-      "owner": "harry0703",
-      "repo": "MoneyPrinterTurbo",
-      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "trendshiftUrl": "https://trendshift.io/repositories/8731",
-      "language": "Python",
+      "fullName": "s1dashu/ip-as-logo-skill",
+      "owner": "s1dashu",
+      "repo": "ip-as-logo-skill",
+      "description": "A compact Codex skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.",
+      "githubUrl": "https://github.com/s1dashu/ip-as-logo-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/167704",
       "topics": [
-        "AI video generation"
+        "AI image generation",
+        "AI skills"
       ],
-      "dateCreated": "2024-03-11T02:57:34Z"
+      "dateCreated": "2026-08-18T13:59:23Z"
     },
     {
       "rank": 2,
@@ -40,121 +36,115 @@
     },
     {
       "rank": 3,
-      "fullName": "yetone/cumora",
-      "owner": "yetone",
-      "repo": "cumora",
-      "description": "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.",
-      "githubUrl": "https://github.com/yetone/cumora",
-      "trendshiftUrl": "https://trendshift.io/repositories/163884",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "Chatbot"
-      ],
-      "dateCreated": "2026-08-17T09:13:52Z"
+      "fullName": "geeklee/srt-whiteboard-animation",
+      "owner": "geeklee",
+      "repo": "srt-whiteboard-animation",
+      "description": "将 SRT 字幕做成暖米黄纸张底的流式笔迹白板手绘动画 skill：mask 分区遮罩编排 + stream 连续笔迹（ink→color）。",
+      "githubUrl": "https://github.com/geeklee/srt-whiteboard-animation",
+      "trendshiftUrl": "https://trendshift.io/repositories/128689",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-07-27T16:22:49Z"
     },
     {
       "rank": 4,
-      "fullName": "llm-as-a-verifier/llm-as-a-verifier",
-      "owner": "llm-as-a-verifier",
-      "repo": "llm-as-a-verifier",
-      "description": "LLM-as-a-Verifier is a general-purpose framework that provides fine-grained feedback for any agent without requiring additional training. It achieves SOTA performance across coding, robotics, and medical agentic benchmarks.",
-      "githubUrl": "https://github.com/llm-as-a-verifier/llm-as-a-verifier",
-      "trendshiftUrl": "https://trendshift.io/repositories/32884",
-      "language": "Python",
+      "fullName": "vercel-labs/fx",
+      "owner": "vercel-labs",
+      "repo": "fx",
+      "description": "Unix like coding agent",
+      "githubUrl": "https://github.com/vercel-labs/fx",
+      "trendshiftUrl": "https://trendshift.io/repositories/171267",
+      "language": "Zig",
       "topics": [
-        "AI agent"
+        "AI agent",
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-04-09T17:28:59Z"
+      "dateCreated": "2026-08-11T08:57:04Z"
     },
     {
       "rank": 5,
-      "fullName": "Tiger3807861189/J-Space-Cognition-Suite-V3.6",
-      "owner": "Tiger3807861189",
-      "repo": "J-Space-Cognition-Suite-V3.6",
-      "description": "J-Space Cognition Suite V3.5Turbo - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research.",
-      "githubUrl": "https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.6",
-      "trendshiftUrl": "https://trendshift.io/repositories/160798",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-07-22T00:34:24Z"
+      "fullName": "DenisSergeevitch/desktop-fly",
+      "owner": "DenisSergeevitch",
+      "repo": "desktop-fly",
+      "description": "A 3D fruit fly living on your macOS desktop, driven by a live spiking simulation of the real FlyWire connectome",
+      "githubUrl": "https://github.com/DenisSergeevitch/desktop-fly",
+      "trendshiftUrl": "https://trendshift.io/repositories/171141",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-08-18T17:29:17Z"
     },
     {
       "rank": 6,
-      "fullName": "ifixai-ai/iFixAi",
-      "owner": "ifixai-ai",
-      "repo": "iFixAi",
-      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
-      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
-      "trendshiftUrl": "https://trendshift.io/repositories/29638",
-      "language": "Python",
+      "fullName": "bowenliang123/dsh-context",
+      "owner": "bowenliang123",
+      "repo": "dsh-context",
+      "description": "A DeepSeek Harness plugin for  Context insight dashboard — showing what the model's context window is made of and how it evolves.",
+      "githubUrl": "https://github.com/bowenliang123/dsh-context",
+      "trendshiftUrl": "https://trendshift.io/repositories/156942",
+      "language": "TypeScript",
       "topics": [
-        "AI infrastructure"
+        "AI agent"
       ],
-      "dateCreated": "2026-04-27T13:02:34Z"
+      "dateCreated": "2026-08-14T08:23:28Z"
     },
     {
       "rank": 7,
-      "fullName": "mukul975/Anthropic-Cybersecurity-Skills",
-      "owner": "mukul975",
-      "repo": "Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-      "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/23422",
-      "language": "Python",
+      "fullName": "chuspeeism/dashi-ppt-skill",
+      "owner": "chuspeeism",
+      "repo": "dashi-ppt-skill",
+      "description": "",
+      "githubUrl": "https://github.com/chuspeeism/dashi-ppt-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/75716",
+      "language": "JavaScript",
       "topics": [
-        "AI agent",
         "AI skills"
       ],
-      "dateCreated": "2026-02-25T09:47:50Z"
+      "dateCreated": "2026-06-10T07:46:43Z"
     },
     {
       "rank": 8,
-      "fullName": "anywhere-labs/deepseek-harness-desktop",
-      "owner": "anywhere-labs",
-      "repo": "deepseek-harness-desktop",
-      "description": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，支持 macOS 和 Windows，免配置、下载即用。",
-      "githubUrl": "https://github.com/anywhere-labs/deepseek-harness-desktop",
-      "trendshiftUrl": "https://trendshift.io/repositories/151481",
-      "language": "TypeScript",
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "trendshiftUrl": "https://trendshift.io/repositories/8731",
+      "language": "Python",
       "topics": [
-        "Local LLM"
+        "AI video generation"
       ],
-      "dateCreated": "2026-08-13T16:30:50Z"
+      "dateCreated": "2024-03-11T02:57:34Z"
     },
     {
       "rank": 9,
-      "fullName": "santifer/career-ops",
-      "owner": "santifer",
-      "repo": "career-ops",
-      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
-      "githubUrl": "https://github.com/santifer/career-ops",
-      "trendshiftUrl": "https://trendshift.io/repositories/25195",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "Web scraping",
-        "Resume building"
-      ],
-      "dateCreated": "2026-04-04T18:21:18Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "usestrix/strix",
-      "owner": "usestrix",
-      "repo": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "githubUrl": "https://github.com/usestrix/strix",
-      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "fullName": "volcengine/OpenViking",
+      "owner": "volcengine",
+      "repo": "OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+      "githubUrl": "https://github.com/volcengine/OpenViking",
+      "trendshiftUrl": "https://trendshift.io/repositories/19668",
       "language": "Python",
       "topics": [
         "AI agent",
-        "Pentesting"
+        "AI memory",
+        "RAG"
       ],
-      "dateCreated": "2025-08-05T21:28:30Z"
+      "dateCreated": "2026-01-05T07:11:17Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "WenyuChiou/awesome-agentic-ai-zh",
+      "owner": "WenyuChiou",
+      "repo": "awesome-agentic-ai-zh",
+      "description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
+      "githubUrl": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+      "trendshiftUrl": "https://trendshift.io/repositories/27540",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Curated list"
+      ],
+      "dateCreated": "2026-05-04T22:18:51Z"
     }
   ]
 }
