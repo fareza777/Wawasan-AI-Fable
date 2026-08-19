@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "19 Agustus 2026",
+  "period": {
+    "date": "2026-08-19",
+    "label": "19 Agustus 2026",
+    "path": "/repo/daily/2026/08/19"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-19T00:07:55.033Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "trendshiftUrl": "https://trendshift.io/repositories/8731",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2024-03-11T02:57:34Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "yetone/cumora",
+      "owner": "yetone",
+      "repo": "cumora",
+      "description": "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.",
+      "githubUrl": "https://github.com/yetone/cumora",
+      "trendshiftUrl": "https://trendshift.io/repositories/163884",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Chatbot"
+      ],
+      "dateCreated": "2026-08-17T09:13:52Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "llm-as-a-verifier/llm-as-a-verifier",
+      "owner": "llm-as-a-verifier",
+      "repo": "llm-as-a-verifier",
+      "description": "LLM-as-a-Verifier is a general-purpose framework that provides fine-grained feedback for any agent without requiring additional training. It achieves SOTA performance across coding, robotics, and medical agentic benchmarks.",
+      "githubUrl": "https://github.com/llm-as-a-verifier/llm-as-a-verifier",
+      "trendshiftUrl": "https://trendshift.io/repositories/32884",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-09T17:28:59Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Tiger3807861189/J-Space-Cognition-Suite-V3.6",
+      "owner": "Tiger3807861189",
+      "repo": "J-Space-Cognition-Suite-V3.6",
+      "description": "J-Space Cognition Suite V3.5Turbo - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research.",
+      "githubUrl": "https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.6",
+      "trendshiftUrl": "https://trendshift.io/repositories/160798",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-22T00:34:24Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "mukul975/Anthropic-Cybersecurity-Skills",
+      "owner": "mukul975",
+      "repo": "Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/23422",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-25T09:47:50Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "anywhere-labs/deepseek-harness-desktop",
+      "owner": "anywhere-labs",
+      "repo": "deepseek-harness-desktop",
+      "description": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，支持 macOS 和 Windows，免配置、下载即用。",
+      "githubUrl": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/151481",
+      "language": "TypeScript",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-08-13T16:30:50Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "santifer/career-ops",
+      "owner": "santifer",
+      "repo": "career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "githubUrl": "https://github.com/santifer/career-ops",
+      "trendshiftUrl": "https://trendshift.io/repositories/25195",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Resume building"
+      ],
+      "dateCreated": "2026-04-04T18:21:18Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "githubUrl": "https://github.com/usestrix/strix",
+      "trendshiftUrl": "https://trendshift.io/repositories/15362",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-08-05T21:28:30Z"
+    }
+  ]
+}

@@ -3353,6 +3353,57 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "kekuatan-baru-asia-ramai-ramai-siap-gantikan-amerika",
+    title:
+      "Asia Memasuki Era LLM Sendiri: Kekuatan Baru yang Mulai Menggeser Amerika",
+    excerpt:
+      "Qwen dari Alibaba, DeepSeek dari Beijing, hingga model open-source asal India dan Korea muncul bersamaan di 2026. Bagi ekosistem AI Indonesia, ini bukan sekadar berita luar negeri — ini soal siapa yang menulis standar dunia berikutnya.",
+    category: "Analisis",
+    date: "2026-08-19",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selama tiga tahun terakhir, kalau ada orang menyebut 'model AI terbaik', hampir semua orang akan menyebut nama dari satu tempat: Amerika Serikat. GPT, Claude, Gemini — tiga dari lima model papan atas yang paling sering dipakai di Indonesia hari ini adalah produk laboratorium di California. Tetapi sejak awal 2026, peta itu mulai bergeser dengan kecepatan yang tidak terduga. Alibaba merilis keluarga Qwen3 dengan kemampuan penalaran yang mendekati model proprietary terkuat, tapi dengan lisensi open-source yang memungkinkan siapa pun menjalankan dan memodifikasinya. DeepSeek dari Beijing membuat gebrakan lewat arsitektur Mixture-of-Experts yang efisien, dan digunakan oleh startup di Lima, Lagos, dan juga Jakarta tanpa biaya lisensi. India lewat Sarvam dan Cohere For AI, Korea lewat Naver HyperClova, dan Jepang lewat Stockmark dan Rinna — semuanya merilis model dengan bobot terbuka di paruh pertama 2026. Bukan kebetulan, ini adalah konsolidasi dari setahun terakhir yang akhirnya bergerak bersamaan.",
+          "Yang berubah bukan hanya siapa yang melatih model, tapi siapa yang menentukan aturan mainnya. Lisensi open-source berarti komunitas, bukan perusahaan, yang memutuskan model mana yang akan dipakai, di-evaluasi, di-fine-tune, dan dimasukkan ke pipeline produksi. Dalam pengujian editorial Wawasan AI, ketika sebuah model dari Asia bisa diunduh, dijalankan di server sendiri, dan dimodifikasi tanpa meminta izin ke California, dinamika industri bergeser dari monopoli pengetahuan ke kompetisi eksekusi. Dan di situlah Asia, dengan basis insinyur yang besar dan infrastruktur cloud yang sudah matang, punya keunggulan yang mulai terasa.",
+        ],
+      },
+      {
+        heading:
+          "Kenapa konsolidasi ini terjadi sekarang, dan kenapa ini momennya",
+        paragraphs: [
+          "Ada tiga pengungkit yang membuat paruh pertama 2026 menjadi breakpoint. Pertama, ketersediaan data latih berbahasa non-Inggris yang akhirnya memasuki kualitas dan volume yang setara dengan dataset bahasa Inggris. Model Qwen dilatih dengan korpus Mandarin yang sangat besar, Sarvam dilatih dengan korpus India yang kaya akan bahasa dan dialek, dan HyperClova sudah bertahun-tahun mengkurasi corpus bahasa Korea. Begitu kualitas dataset tercapai, model dengan ukuran parameter sedang sudah bisa mengungguli model besar yang dilatih primarily untuk pasar bahasa Inggris.",
+          "Kedua, efisiensi arsitektur. DeepSeek memperkenalkan arsitektur MoE yang membuat inference 5 sampai 10 kali lebih murah per token dibanding model dense dengan ukuran setara. Ini bukan incremental improvement, melainkan kategori baru yang memungkinkan model besar dijalankan dengan biaya yang realistis untuk pasar negara berkembang. Biaya inference yang turun drastis membuat model Asia menarik bukan hanya untuk laboratorium, tapi juga untuk UMKM dan startup di Asia Tenggara.",
+          "Ketiga, dinamika geopolitik yang membuat banyak negara Asia ingin mengurangi ketergantungan pada satu ekosistem tertutup. ekspor chip ke China memang terbatas, tapi model open-source tidak dapat di-embargo. Justru itulah yang membuat open-source menjadi pilihan strategis: sekali model dengan bobot terbuka diterbitkan, ia tidak bisa dicabut, dan itu menjadi bentuk soft power yang halus.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk pengguna dan praktisi di Indonesia",
+        paragraphs: [
+          "Untuk pengguna individu, implikasinya langsung terasa dalam beberapa bulan ke depan. Kalau sebelumnya untuk merasakan model dengan kualitas setara GPT-4 seorang developer Indonesia harus berlangganan API yang dibayar dalam dolar AS dan melalui proses verifikasi yang kadang berbelit, sekarang ada alternatif dengan kualitas mendekati sama yang bisa dijalankan di server lokal atau diakses dengan harga sangat murah dari provider di kawasan Asia. Artinya lebih banyak eksperimen, lebih sedikit friksi, dan yang paling penting: pilihan yang tidak ditentukan oleh satu perusahaan di satu negara.",
+          "Untuk UMKM dan startup lokal, model-model Asia ini sering sudah dilatih dengan konteks lokal yang lebih relevan dibanding model Barat. Pemrosesan bahasa Indonesia formal dan informal, pemahaman nama tempat dan merek dagang lokal, dan format dokumen administrasi Indonesia — semuanya lebih natural di model yang sudah pernah melihatnya di fase pre-training. Dalam tes internal redaksi Wawasan AI menggunakan Qwen3 untuk merangkum dokumen notula rapat, akurasi untuk konteks Indonesia lebih baik dibanding model Barat sekelas.",
+          "Untuk talenta AI Indonesia sendiri, ini membuka lebih banyak peran yang relevan. Tidak cukup hanya menjadi pengguna API — sekarang ada permintaan untuk insinyur yang bisa fine-tune model open-source dengan data lokal, membangun evaluation harness berbahasa Indonesia, dan mengintegrasikan model ke pipeline on-premise untuk klien yang membutuhkan kedaulatan data. Peluang ini nyata, dan yang memanfaatkan akan menjadi generasi profesional baru yang berbeda dari sekadar pemakai AI.",
+        ],
+      },
+      {
+        heading: "Batasan yang perlu dipahami sebelum euphoria",
+        paragraphs: [
+          "Pertama, tidak semua yang open-source benar-benar gratis untuk dipakai secara komersial. Beberapa model Asia dirilis dengan lisensi yang masih melarang pemakaian di aplikasi komersial pada skala tertentu, atau memerlukan atribusi yang harus ditampilkan dengan cara spesifik. Sebelum mengadopsi model mana pun, baca lisensinya sampai habis, atau libatkan konsultan hukum yang paham lisensi AI.",
+          "Kedua, posisi model Asia yang kuat di benchmark bahasa Mandarin dan Hindi tidak otomatis berarti posisi yang sama kuat di bahasa Indonesia. Benchmark berbahasa Indonesia masih underdeveloped, dan kelihatannya model Barat maupun Asia punya kesenjangan kualitas yang signifikan untuk kasus penggunaan lokal. Investasi pada evaluation harness berbahasa Indonesia adalah kebutuhan yang mendesak, bukan pilihan.",
+          "Ketiga, konsolidasi kekuatan baru dari Asia belum tentu stabil. Model-model yang muncul pesat bisa juga hilang secepat itu kalau pendanaan riset habis atau prioritas geopolitik bergeser. Untuk beban produksi yang mission-critical, diversifikasi penyuplai dan kemampuan fallback ke beberapa model sekaligus adalah kebijakan yang prudent. Asia sedang naik, tapi bukan berarti Amerika selesai.",
+        ],
+      },
+      {
+        heading:
+          "Yang patut diperhatikan ke depan untuk ekosistem AI Indonesia",
+        paragraphs: [
+          "Ada empat hal yang akan menentukan apakah gelombang ini menjadi angin segar yang memberdayakan atau menjadi perpindahan ketergantungan dari satu negara ke negara lain. Pertama, apakah komunitas open-source di Indonesia akan mulai melatih model berbahasa Indonesia dengan bobot terbuka, atau hanya memakai model dari negara lain. Yang kedua kemungkinan besar akan terjadi, tapi yang pertama akan memberikan kedaulatan yang sesungguhnya. Kedua, apakah regulator Indonesia akan mendorong adopsi model open-source untuk kebutuhan sektor publik dengan kebijakan yang jelas, atau menganggap semua model sama dan menunggu vendor global datang menawarkan solusi. Ketiga, apakah talenta lokal akan muncul sebagai kontributor utama di repositori open-source model Asia, atau hanya sebagai pengguna di pinggiran. Keempat, apakah standar keamanan dan audit untuk model open-source akan dikembangkan di Asia, atau hanya mengikuti standar yang dibuat di Barat.",
+          "Dalam pengujian editorial Wawasan AI, kemunculan kekuatan AI baru dari Asia bukan sekadar cerita teknologi, melainkan pergeseran geopolitik yang membawa implikasi langsung untuk siapa yang mengendalikan alat, siapa yang bisa memodifikasi, dan siapa yang punya kedaulatan atas data dan model. Untuk ekosistem yang sedang bertumbuh di Indonesia, ini bukan pilihan antara Barat atau Timur, tapi kesempatan untuk menulis standar sendiri — dalam bahasa sendiri, untuk konteks sendiri. Dan kesempatan itu tidak akan terbuka dua kali.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);

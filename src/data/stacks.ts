@@ -2898,6 +2898,48 @@ export const stacks: Review[] = [
     date: "2026-08-18",
     featured: false,
   },
+  {
+    slug: "veed-ai",
+    name: "VEED AI",
+    tagline: "Editor video online dengan AI Avatar, subtitle otomatis, dan dub multibahasa",
+    tags: ["VEED", "Freemium", "Video Gen", "Editor"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 7.7 },
+    ],
+    summary:
+      "VEED AI adalah editor video berbasis browser yang sejak 2024-2025 berfokus pada Creators Toolkit AI: AI Avatar untuk talking head sintetis, subtitle auto-generate dengan translate ke 50+ bahasa, dubbing sinkron yang mempertahankan nada suara asli, text-to-video generator, dan integrasi stock footage. Bukan tool generative murni -- melainkan all-in-one workflow video yang menurunkan barrier entry kreator dan tim marketing non-teknis untuk produksi konten siap-publish.",
+    pros: [
+      "All-in-one workflow dalam satu kanvas: edit, AI Avatar, subtitle, dub, transkrip, dan export dalam satu aplikasi web tanpa install",
+      "AI Avatar dengan ratusan preset karakter multibahasa (termasuk beberapa karakter dengan kualitas lip-sync bahasa Indonesia) -- menurunkan ketergantungan pada kamera dan studio untuk konten talking head",
+      "Auto-subtitle dengan akurasi tinggi untuk bahasa Inggris, plus translate one-click ke 50+ bahasa yang mempercepat publikasi konten untuk audiens multi-region",
+      "Brand Kit, template siap-pakai untuk platform sosial (YouTube, TikTok, Instagram Reels), dan auto-resize yang sangat memangkas waktu editing repetitif",
+      "Free tier genuine (watermark, 1080p, 10 menit video) cukup untuk evaluasi serius sebelum commit ke subscription",
+    ],
+    cons: [
+      "Bukan generative video murni -- fitur generation (Text-to-Video, AI Image) masih kalah jauh dari Sora, Veo, atau Kling untuk clip panjang atau sinematik",
+      "Workflow berbasis browser membuat render 4K panjang tetap lebih lambat dibanding editor desktop seperti DaVinci Resolve atau Premiere Pro",
+      "Harga Lite $12 / Pro $24 (per user, billed tahunan) masih berbasis dolar sehingga untuk tim Indonesia terkena PPN 11 persen plus charge kartu kredit internasional",
+      "Konsistensi AI Avatar lintas beberapa shot kadang bergeser ekspresi atau pencahayaan -- perlu beberapa take untuk dapat hasil yang natural untuk konten brand",
+      "Beberapa fitur AI (premium avatars, dubbing preservasi nada, watermark removal) hanya tersedia di Pro dan Business, free tier terasa membatasi untuk production",
+    ],
+    verdict:
+      "Editor video AI paling praktis untuk kreator, marketer, dan tim yang butuh workflow end-to-end tanpa belajar empat aplikasi terpisah. Pilih VEED sebelum tool generative murni jika prioritasmu adalah kecepatan publish, subtitle multi-bahasa, dan AI Avatar -- bukan clip sinematik 4K.",
+    body: [
+      "VEED berawal dari editor video online sederhana asal London yang fokus pada transkripsi otomatis dan subtitle. Sejak 2023-2024, perusahaan di baliknya -- yang juga membangun platform serupa untuk brand besar -- memperluas proposisi menjadi Creators Toolkit AI: menggabungkan edit video tradisional, AI Avatar, subtitle auto-generate, dubbing multi-bahasa, dan generator text-to-video dalam satu kanvas web. Untuk kreator solo, content marketing, tim internal startup, dan learning & development korporasi, gabungan fitur ini menurunkan drastis barrier entry yang biasanya membuat produksi video terasa berat -- tidak perlu kamera, tidak perlu studio, tidak perlu software desktop, tidak perlu tiga tool terpisah untuk translate.",
+      "Dalam pengujian editorial, lima hal paling terasa bedanya dibanding editor tradisional dan tool generative berdiri sendiri. Pertama, AI Avatar adalah fitur pembeda terbesar: dari prompt teks atau preset karakter, VEED men-generate talking head dengan lip-sync multibahasa yang cukup natural untuk konten How-To, onboarding, atau update internal -- menghilangkan kebutuhan syuting terpisah untuk setiap versi bahasa. Kedua, auto-subtitle dengan akurasi sangat baik untuk bahasa Inggris (95% lebih pada audio bersih) plus translate one-click ke 50+ bahasa, mempercepat ekspansi konten untuk audiens regional dengan effort minimal. Ketiga, dubbing yang mempertahankan nada dan intonasi pembicara asli (bukan sekadar TTS yang menukar suara) berguna untuk konten yang butuh konsistensi suara pembawa. Keempat, Brand Kit, template platform-spesifik (YouTube, TikTok, LinkedIn, Instagram Reels), dan auto-resize ke format yang benar memangkas editing repetitif yang biasanya dikonsumsi 30-60 menit per video. Kelima, free tier yang genuine (1080p, 10 menit video, watermark VEED) cukup untuk evaluasi fitur-fitur premium sebelum ambil keputusan subscription.",
+      "Tentu ada kompromi substansial yang membuat VEED tidak menjadi pilihan tepat untuk semua kasus. Pertama, ia bukan generative video murni -- fitur Text-to-Video dan AI Image di VEED masih dalam tahap awal dan kalah jauh dari Sora 2, Veo 3.1, atau Kling 3.0 dalam hal durasi clip, resolusi, dan konsistensi visual; untuk konten sinematik atau clip panjang, lebih baik gunakan tool generative berdiri sendiri lalu edit hasilnya di VEED. Kedua, workflow berbasis browser membuat render 4K panjang atau video dengan banyak track tetap lebih lambat dibanding editor desktop seperti DaVinci Resolve atau Premiere Pro; untuk production video 30+ menit, desktop masih lebih efisien. Ketiga, konsistensi AI Avatar lintas beberapa shot kadang bergeser ekspresi wajah atau pencahayaan, terutama pada angle profile atau gerakan kepala cepat, sehingga perlu beberapa take untuk dapat hasil yang natural untuk konten brand profesional. Keempat, sebagian besar fitur AI premium (Avatar tanpa watermark, dubbing preservasi nada, auto-subtitle tanpa limit, stock footage premium) hanya tersedia di paket Pro $24 sebulan dan Business $59 per user -- free tier terasa membatasi untuk production nyata.",
+      "Untuk pengguna dan tim di Indonesia, implikasi VEED menarik di beberapa sisi. Harga Lite $12 sebulan (sekitar Rp 190 ribu dengan kurs standar) dan Pro $24 per user (sekitar Rp 380 ribu) menempatkan VEED di kelas menengah untuk kreator solo dan tim kecil, dengan value yang sulit ditandingi untuk fitur yang ditawarkan. Yang paling relevan untuk pasar Indonesia: AI Avatar dengan beberapa karakter yang punya lip-sync bahasa Indonesia, plus auto-subtitle dan translate ke bahasa Indonesia, membuka pintu untuk konten edukatif, tutorial, dan penjelasan produk dalam bahasa Indonesia tanpa harus syuting dan edit terpisah untuk setiap versi. Untuk kreator konten, social media manager, dan tim marketing di Jakarta, Bandung, dan Yogyakarta yang perlu output cepat untuk Instagram Reels, TikTok, dan YouTube Shorts, Pro $24 sebulan biasanya lebih dari cukup untuk produksi bulanan 30-50 video. Untuk pemula yang baru mulai konten video, free tier cukup untuk eksplorasi dan build workflow sebelum upgrade. Satu catatan penting untuk konteks Indonesia: pembayaran subscription luar negeri masih kena PPN 11 persen dan charge kartu kredit internasional dengan markup 3-5 persen dari issuer, total markup 14-16 persen di atas harga tertera; beberapa kreator lokal memilih top-up via platform payment aggregator yang kadang lebih murah tapi menambah dependency. Untuk agency yang punya 10+ editor dan butuh kolaborator bersamaan, paket Business $59 per user terasa mahal dibanding alternatif seperti Descript atau Kapwing yang lebih kolaboratif. VEED bukan tool generative video tercanggih, bukan juga editor desktop paling powerful -- tapi di 2026 ia adalah titik masuk paling realistis untuk siapa pun yang butuh workflow video AI end-to-end dalam browser, tanpa harus install empat software terpisah atau belajar kurva Adobe Premiere.",
+    ],
+    link: "https://www.veed.io",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-19",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
