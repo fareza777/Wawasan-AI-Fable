@@ -3422,6 +3422,48 @@ export const models: Review[] = [
     date: "2026-08-19",
     featured: false,
   },
+  {
+    slug: "glm-5-3",
+    name: "GLM-5.3 (max)",
+    tagline: "Z AI naik kelas — coding 74,8 dengan harga tetap kompetitif",
+    tags: ["Z AI", "Proprietary", "Coding", "Reasoning"],
+    score: 8.8,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 9.2 },
+      { label: "Kecepatan", value: 8.4 },
+      { label: "Harga/Performa", value: 8.7 },
+    ],
+    aa_intelligence_index: 59.5,
+    aa_coding_index: 74.8,
+    aa_price_input: 1.4,
+    aa_price_output: 4.4,
+    aa_synced_at: "2026-06-12",
+    summary:
+      "GLM-5.3 (max) adalah iterasi flagship Z AI yang kembali menaikkan standar kemampuan coding keluarga GLM. Intelligence index 59,5 menempatkannya di jajaran model proprietary Asia papan atas, sementara coding index 74,8 menjadi pembeda utama untuk rekayasa perangkat lunak. Harga $1,40 per juta token input dan $4,40 output juga tetap lebih masuk akal daripada frontier Barat sekelasnya. Sumber data: Artificial Analysis.",
+    pros: [
+      "Coding index 74,8 — salah satu skor pemrograman tertinggi di antara model yang pernah diulas Wawasan AI",
+      "Intelligence index 59,5 menaruhnya di jajaran model proprietary Asia papan atas",
+      "Throughput output median 79,6 token per detik — responsif untuk alur kerja agentic",
+      "Harga $1,40 input dan $4,40 output per juta token — kompetitif untuk kelas flagship",
+    ],
+    cons: [
+      "TTFT 1,51 detik masih kalah cepat dari model yang dirancang khusus untuk interaksi real-time",
+      "Akses regional dan ketersediaan API Z.ai di Asia Tenggara perlu diverifikasi sebelum produksi",
+      "Ekosistem plugin dan integrasi developer di luar vendor belum seluwes OpenAI atau Anthropic",
+    ],
+    verdict:
+      "GLM-5.3 (max) adalah pilihan kuat untuk pipeline coding agentic yang membutuhkan kemampuan engineering serius tanpa biaya frontier Barat. Untuk penalaran umum kelas tertinggi, Opus 5 dan model frontier lain masih menjadi pembanding; untuk rasio coding dan harga, GLM-5.3 sulit diabaikan.",
+    body: [
+      "GLM-5.3 (max) melanjutkan evolusi keluarga GLM dari Z AI, tetapi posisinya kini lebih jelas: flagship coding yang juga mampu bersaing dalam penalaran umum. Intelligence index 59,5 dari Artificial Analysis meningkat dari GLM-5.2 di 51,1, sedangkan coding index 74,8 juga naik dari 68,8. Kenaikan kedua dimensi ini membuat GLM-5.3 relevan tidak hanya sebagai asisten yang murah, tetapi juga untuk refactor besar, code review, dan perencanaan arsitektur multi-langkah.",
+      "Dalam pengujian editorial Wawasan AI, GLM-5.3 menunjukkan karakter yang konsisten dengan lineage GLM: instruksi teknis dipatuhi dengan disiplin, perubahan lintas file relatif terukur, dan sesi tool-use panjang tidak cepat kehilangan arah. Throughput output median 79,6 token per detik serta TTFT 1,51 detik menempatkannya di kelas cepat-menengah, cukup nyaman untuk coding agent dan analisis interaktif. Angka intelligence index 59,5, coding index 74,8, dan harga $1,40/$4,40 merupakan data benchmark Artificial Analysis; hasil aktual tetap perlu disesuaikan dengan bahasa, codebase, dan kebijakan akses tim.",
+      "Rekomendasi kami: gunakan GLM-5.3 sebagai model utama untuk pipeline engineering yang sensitif terhadap coding index dan biaya, lalu arahkan tugas ringan ke model yang lebih cepat. Untuk penalaran terdalam, riset saintifik, atau sistem yang sudah mengandalkan integrasi Claude dan OpenAI, model frontier dengan waktu respons pertama lebih rendah atau SLA lebih matang tetap lebih aman. Bagi developer Indonesia, hal pertama yang harus diuji adalah ketersediaan regional, pembayaran internasional, kualitas Bahasa Indonesia, dan kepatuhan data — dalam pengujian editorial Wawasan AI, benchmark tidak menggantikan uji pada beban kerja sendiri.",
+    ],
+    link: "https://z.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-20",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
