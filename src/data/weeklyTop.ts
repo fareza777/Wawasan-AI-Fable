@@ -1877,6 +1877,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Distribusi cross-platform (macOS Apple Silicon/Intel, Windows, Linux) lewat Electron + TypeScript, mendukung BYOK (OpenAI, Anthropic, Google) atau model bawaan holaOS — relevan untuk tim Indonesia yang ingin 'satu desktop untuk semua agen' tanpa lock-in satu vendor.",
     ],
   },
+  "chaitanyagiri/munder-difflin": {
+    description:
+      "Harness multi-agen yang membungkus coding CLI favoritmu (Claude Code, Codex, Grok, Kimi, Qwen, OpenCode, Copilot, dll) jadi 'kantor kloning' — satu agen induk merouting pekerjaan ke banyak agen yang jalan paralel di lantai kantor 2D yang divisualisasikan lewat avatar.",
+    highlights: [
+      "Bungkus 10+ coding CLI yang sudah kamu bayar (Claude Code, Antigravity/Gemini, OpenAI Codex, xAI Grok, Kimi Code, Qwen, OpenCode, Crush, pi.dev, GitHub Copilot) jadi tim yang saling pesan via mailbox dan koordinasikan lewat 'Michael' sebagai manajer — bukan tool baru, melainkan harness yang menempel ke investasi yang sudah ada.",
+      "Setiap agen dapat long-term memory sendiri plus mailbox untuk handoff — kloning-mu (Michael) yang routing pekerjaan antar agen, sementara kamu tetap jadi bos dari Michael, bukan menggantikanmu.",
+      "Visualisasi 'lantai kantor' pakai Electron + Pixi.js: avatar agen duduk di meja masing-masing, kerja kelihatan nyata, bukan cuma log di terminal — membantu memantau progres multi-agen tanpa harus scroll panjang.",
+      "BYOK-friendly + dukung LLM lokal (Claude, OpenAI, Anthropic, OpenRouter) dengan lisensi MIT — relevan untuk founder dan tim Indonesia yang sudah langganan banyak coding agent dan ingin satu 'ruang kerja' terpusat tanpa lock-in vendor.",
+    ],
+  },
+  "vercel-labs/fx": {
+    description:
+      "Coding agent CLI kecil dari Vercel Labs (Zig, binary 7.8 MiB) yang dirancang Unix-like — bukan TUI 'IDE di terminal', melainkan shell yang membungkus model AI untuk riset dan embedding ke sistem yang lebih besar.",
+    highlights: [
+      "Coding agent CLI eksperimental dari Vercel Labs yang ditulis Zig dengan binary cuma 7.8 MiB — bedanya dari Claude Code atau Codex: filosofi shell ala Unix, bukan 'IDE di terminal' yang berat.",
+      "Output yang terasa kayak shell asli: prompt, command, dan trace singkat — bukan TUI megah dengan panel berlapis yang menyulitkan scripting dan automasi.",
+      "Login via Vercel atau AI Gateway API key, model-agnostic (pakai provider apa pun yang lewat gateway), dengan command praktis: `fx`, `fx ask '<prompt>'`, `/trace` (diagnostic markdown ke clipboard), `/feedback` — workflow CLI yang ringan untuk headless scripting dan CI.",
+      "Open source (Apache-2.0) dan dirancang untuk 'embeddability' — targetnya bukan cuma dipakai akhir, melainkan jadi building block untuk sistem coding agentik yang lebih besar. Relevan untuk engineer Indonesia yang riset harness coding agent dan ingin titik awal yang sangat minimal.",
+    ],
+  },
+  "volcengine/OpenViking": {
+    description:
+      "Context database open-source dari ByteDance Volcengine (AGPLv3) yang menyatukan memori, RAG, dan skill agen AI di bawah satu filesystem virtual `viking://` — agen browse konteksnya sendiri pakai `ls` dan `tree`, bukan query ke vector store kotak hitam.",
+    highlights: [
+      "Arsitektur 'database untuk context engineering': memori, resource, dan skill agen disimpan sebagai satu filesystem virtual di bawah protokol `viking://` — agen navigasi konteks deterministik pakai `ls`/`tree`/`find`, bukan nebak dari kemiripan embedding.",
+      "Loading tiga lapis (L0 abstract, L1 overview, L2 detail) yang on-demand — token terpakai hanya sedalam yang task butuhkan, jadi prompt untuk agen besar tidak jebol hanya karena dokumen panjang.",
+      "Retrieval yang bisa di-debug: setiap query meninggalkan jejak direktori yang dikunjungi, sehingga saat hasil salah kamu tahu path mana yang memproduksinya — bukan 'cocok atau tidak' misterius dari vector DB.",
+      "Session commit otomatis mengekstrak preferensi user dan pengalaman agen jadi long-term memory — memori agen 'tumbuh' dari interaksi nyata. Lisensi AGPLv3, alternatif open-source untuk solusi memori proprietary; relevan untuk builder Indonesia yang ingin agen AI-nya punya ingatan persisten lintas sesi.",
+    ],
+  },
   "internet-court/internet-court-skill": {
       description:
         "Skill 'trust layer' untuk commerce antar-agent — satukan ERC-8004 identity, ERC-7710 delegation, x402 payment, escrow, dan dispute resolution jadi satu skill terbuka, plus dukungan SKILL.md untuk Claude Code.",
