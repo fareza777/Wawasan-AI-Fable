@@ -3893,7 +3893,59 @@ export const repos: Review[] = [
     date: "2026-08-19",
     updatedAt: "2026-08-19",
     featured: false,
-  },
+    },
+    {
+    slug: "volcengine-openviking",
+    name: "OpenViking",
+    tagline: "Basis data konteks self-evolving untuk AI agent dengan memori, RAG, dan skills terpadu",
+    tags: ["AI Agent", "Python", "Self-hosted", "Open Source"],
+    score: 8.7,
+    scores: [
+    { label: "Kemudahan Setup", value: 8.0 },
+    { label: "Fitur & Ekstensibilitas", value: 9.5 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Keksiapan Produksi", value: 8.5 },
+    ],
+    summary:
+    "OpenViking dari Volcengine adalah context database self-evolving untuk AI agent yang menyatukan memori agent, knowledge RAG, dan skill plugin dalam satu lapisan terstruktur - dirancang agar agen tidak hanya mengingat percakapan, tapi juga menyerap pengetahuan baru dan menjalankan aksi lewat interface yang konsisten.",
+    highlights: [
+    "Arsitektur context database self-evolving yang otomatis menyerap pengetahuan baru dari setiap interaksi agent - berbeda dari vector store pasif yang hanya menyimpan embedding",
+    "Tiga pilar terpadu: agent memory (long-term recall lintas sesi), knowledge RAG (retrieval dokumen terstruktur), dan skill plugin (aksi callable yang dipanggil agent lewat interface standar)",
+    "Sistem file kontekstual berbasis direktori virtual yang membuat loading resource ke context window agent terasa seperti navigasi file biasa - path-based seperti /context/agents/<nama>/memories",
+    "Plugin DSH (Data Source Handler) untuk ingest data dari berbagai sumber: file lokal, Notion, Slack, web pages - dengan semantic extraction otomatis jadi struktur terorganisir",
+    "API Python native dengan client resmi openviking-sdk - integrasi ke framework agent populer (LangGraph, Agno, Hermes) cukup 3-5 baris kode",
+    "Self-evolving layer: agent dapat menulis memori baru lewat tool call, dan database melakukan deduplication, summarization, dan indexing ulang secara otomatis",
+    "Open source AGPL-3.0 dengan 30.083 bintang dan 2.331 fork per Agustus 2026 - momentum kuat sebagai salah satu proyek context engineering paling trending",
+    "Deployment fleksibel: lokal via Docker, cloud self-hosted, atau managed service lewat volcengine - entry point ramah untuk berbagai skala adopsi",
+    ],
+    pros: [
+    "Mengganti tiga lapis teknologi terpisah (vector DB untuk RAG + memory store + skill registry) dengan satu context database terpadu - arsitektur lebih bersih dan latensi lebih rendah",
+    "Pendekatan self-evolving menjawab pain point utama agent AI di 2026: kemampuan menyerap dan mengorganisir pengetahuan baru dari interaksi, bukan hanya retrieve dari corpus statis",
+    "Path-based virtual filesystem bikin loading context ke LLM jauh lebih intuitif dibanding retrieval dengan query embedding - developer bisa reasoning tentang apa yang agent lihat",
+    "Momentum komunitas sangat kuat (30k+ bintang dalam ~7 bulan) dengan backing Volcengine sebagai salah satu cloud AI terbesar di Asia - sustainability proyek lebih terjamin",
+    "AGPL-3.0 cocok untuk penggunaan internal dan riset, dengan managed service tersedia untuk yang butuh SLA production tanpa setup sendiri",
+    ],
+    cons: [
+    "AGPL-3.0 bisa jadi blocker untuk integrasi ke produk proprietary - perusahaan yang butuh embedding ke aplikasi closed-source perlu evaluasi lisensi atau pakai managed service",
+    "Relatif baru (rilis publik awal 2026) - API dan best practice masih bergerak cepat, risiko perubahan breaking di update besar berikutnya",
+    "Bergantung pada kualitas LLM untuk fitur self-evolving (summarization, dedup) - kalau LLM yang dipakai kurang konsisten, kualitas memori agent bisa turun tanpa indikator jelas",
+    "Dokumentasi dan tutorial Bahasa Indonesia masih minim karena basis komunitas global - developer Indonesia perlu nyaman baca English-first content",
+    ],
+    verdict:
+    "OpenViking adalah salah satu proyek context engineering paling menarik di paruh kedua 2026 - arsitektur self-evolving database yang menyatukan memori, RAG, dan skill plugin menjawab kebutuhan agent modern yang sebelumnya harus disusun bertingkat. Sangat relevan untuk developer dan tim Indonesia yang sedang membangun agent production-grade dan ingin fondasi context layer yang tidak cepat usang.",
+    body: [
+    "Sepanjang 2025-2026, salah satu tantangan terbesar dalam membangun AI agent production-grade di Indonesia adalah fragmentasi lapisan konteks. Tim biasanya harus merangkai tiga teknologi terpisah: vector database untuk knowledge retrieval, memory store untuk long-term recall lintas sesi, dan skill registry untuk aksi callable. Setiap layer punya API, latensi, dan failure mode sendiri - debugging agent yang menggabungkan ketiganya sering jadi mimpi buruk operasional. OpenViking dari Volcengine mencoba menjawab masalah ini dengan pendekatan radikal: context database tunggal yang menyatukan ketiga pilar itu dalam satu model data terstruktur. Basis datanya bersifat self-evolving - bukan sekadar vector store pasif yang menunggu di-query, melainkan sistem yang aktif menyerap pengetahuan baru dari setiap interaksi agent, melakukan deduplication, summarization, dan indexing ulang secara otomatis. Dengan 30.083 bintang dan 2.331 fork hanya dalam tujuh bulan sejak rilis publik awal 2026, momentum komunitas menunjukkan bahwa pendekatan ini menyentuh pain point yang nyata.",
+    "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah kesederhanaan model mentalnya. OpenViking memproyeksikan context sebagai virtual filesystem dengan path-based access - misalnya /context/agents/<nama>/memories atau /context/knowledge/<topik>/docs. Developer bisa reasoning tentang apa yang agent lihat lewat path yang eksplisit, bukan query embedding yang opaque. Loading context ke LLM dilakukan lewat API navigation yang konsisten, seperti browsing direktori. Untuk konteks Indonesia, pola ini ramah untuk tim yang sudah familiar dengan struktur file di operasional sehari-hari. Tiga pilar intinya: agent memory (long-term recall lintas sesi), knowledge RAG (retrieval dokumen terstruktur), dan skill plugin (aksi callable lewat interface standar) - semuanya diakses lewat filesystem metaphor yang sama. Ini sangat menyederhanakan mental model dibanding tiga sistem terpisah yang harus disinkronkan manual.",
+    "Arsitekturnya terasa dirancang untuk production, bukan sekadar demo. Sistem plugin DSH (Data Source Handler) memungkinkan ingest data dari berbagai sumber: file lokal, Notion, Slack, web pages - dengan semantic extraction otomatis yang mengubah input mentah jadi struktur terorganisir di context database. API Python native lewat client resmi openviking-sdk membuat integrasi ke framework agent populer seperti LangGraph, Agno, dan Hermes hanya butuh 3-5 baris kode. Self-evolving layer memungkinkan agent menulis memori baru lewat tool call, dan database melakukan deduplication, summarization, serta indexing ulang tanpa intervensi manual. Plugin marketplace yang mulai diisi komunitas memberikan extensibility tanpa fork - developer bisa kontribusi skill handler untuk sumber data spesifik industri mereka. Untuk konteks Indonesia, potensi ini menarik karena banyak workflow internal perusahaan lokal punya sumber data proprietary yang belum ter-handle oleh plugin resmi - tim bisa kontribusi handler mereka sendiri.",
+    "Batasan yang perlu dipahami. Lisensi AGPL-3.0 bisa jadi blocker untuk integrasi ke produk proprietary - perusahaan yang butuh embedding ke aplikasi closed-source perlu evaluasi lisensi mendalam atau beralih ke managed service Volcengine. Proyek ini relatif baru dengan API dan best practice yang masih bergerak cepat - ada risiko perubahan breaking di update besar berikutnya, dan developer perlu siap refactor integrasi secara berkala. Fitur self-evolving bergantung pada kualitas LLM yang dipakai untuk summarization dan dedup - kalau model yang dipakai kurang konsisten, kualitas memori agent bisa turun tanpa indikator jelas, sehingga perlu monitoring aktif. Dokumentasi dan tutorial Bahasa Indonesia masih sangat minim karena basis komunitas global - developer Indonesia perlu nyaman baca English-first content dan kontribusi balik ke komunitas. Namun untuk tim di Indonesia yang sedang membangun agent production-grade dengan kebutuhan context layer yang serius, OpenViking menawarkan fondasi yang menggabungkan tiga teknologi krusial dalam satu paket terpadu - dan momentum komunitas 30k+ bintang dalam tujuh bulan menjadikannya salah satu proyek paling layak diliput di paruh kedua 2026.",
+    ],
+    link: "https://github.com/volcengine/OpenViking",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-20",
+    updatedAt: "2026-08-20",
+    featured: false,
+    },
 ];
 
 export function getRepo(slug: string) {
