@@ -3462,11 +3462,58 @@ export const models: Review[] = [
     link: "https://z.ai",
     linkLabel: "Situs Resmi",
     date: "2026-08-20",
+        featured: false,
+      },
+      {
+    slug: "gemini-3-7-flash",
+    name: "Gemini 3.7 Flash (high)",
+    tagline:
+    "Varian Flash high-effort Google — intel 56, coding 76,1 dengan throughput 357,8 token/detik",
+    tags: ["Google", "Proprietary", "Flash", "Reasoning"],
+    score: 8.6,
+    scores: [
+    { label: "Penalaran", value: 8.5 },
+    { label: "Coding", value: 9.0 },
+    { label: "Kecepatan", value: 9.4 },
+    { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 56,
+    aa_coding_index: 76.1,
+    aa_price_input: 0.75,
+    aa_price_output: 3.75,
+    aa_synced_at: "2026-08-21",
+    summary:
+    "Gemini 3.7 Flash (high) adalah varian high-effort reasoning dari keluarga Gemini 3.7 Flash Google yang dirilis 13 Agustus 2026. Intelligence index 56 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global, sejajar dengan GPT-5.6 Terra max (56,6) dan Sonnet 5 (55,3), sementara coding index 76,1 (sumber: Artificial Analysis) mendekati Claude Opus 5 (78). Pembeda utamanya adalah throughput output 357,8 token/detik — salah satu yang tertinggi di benchmark — plus harga API $0,75 per juta token input yang bermain di kelas mid-tier meski kemampuan kelas flagship.",
+    pros: [
+    "Throughput output 357,8 token/detik (sumber: Artificial Analysis) — salah satu yang tertinggi di benchmark, ideal untuk streaming UX real-time dan pipeline agentic loop cepat",
+    "Coding index 76,1 (sumber: Artificial Analysis) — mendekati Claude Opus 5 (78) dan meninggalkan Sonnet 5 (71,5) serta Opus 4.7 (73,6) di belakang di benchmark pemrograman",
+    "Intelligence index 56 (sumber: Artificial Analysis) — papan atas proprietary global, sejajar dengan Sonnet 5 (55,3) dan mendekati Claude Opus 4.7 (55)",
+    "Harga API $0,75 input / $3,75 output per 1M token — mid-tier meski kemampuan flagship, 7x lebih murah dari Claude Opus 5 ($5/$25) pada input",
+    ],
+    cons: [
+    "TTFT 7,002 detik (sumber: Artificial Analysis) — lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time, perlu orkestrasi pipeline untuk latency-sensitif",
+    "Varian high-effort berarti latency dan biaya per token lebih tinggi dari varian medium atau low — perlu effort-routing per task",
+    "Math index tidak tersedia di benchmark AA untuk entry ini (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski GPQA 0,964 dan SciCode 0,624 menjadi indikator kuat",
+    "Akses API lewat Google AI Studio dan Vertex AI — ekosistem developer pihak ketiga dan integrasi SDK lokal (LangChain, LlamaIndex) lebih luas dari Z.ai atau laboratorium kecil, tapi tooling agentic masih di bawah OpenAI atau Anthropic",
+    ],
+    verdict:
+    "Gemini 3.7 Flash (high) adalah pilihan menarik untuk pipeline yang butuh kombinasi intel 56, coding 76,1, dan throughput 357,8 tps dengan harga mid-tier — UX real-time, agentic loop cepat, dan code generation volume-tinggi yang sensitif dolar. Untuk penalaran murni terberat atau workload chat yang butuh respons instan pertama, frontier papan atas atau varian low-effort masih lebih layak.",
+    body: [
+    "Gemini 3.7 Flash (high) adalah varian high-effort reasoning dari keluarga Gemini 3.7 Flash Google yang dirilis 13 Agustus 2026. Berbeda dari varian medium atau low yang bermain di kelas harga lebih rendah dengan kemampuan penalaran lebih dangkal, Flash high-effort dirancang untuk mempertahankan konsistensi penalaran di sesi panjang dan workload reasoning intensif sambil mempertahankan signature keluarga Flash: throughput tinggi dan biaya inference rendah. Intelligence index 56 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — sejajar dengan GPT-5.6 Terra max (56,6), Sonnet 5 (55,3), dan Claude Opus 4.7 (55), satu tingkat di bawah Claude Opus 5 (63,1) dan Claude Fable 5 (62,1) yang bermain di puncak frontier. Coding index 76,1 (sumber: Artificial Analysis) menjadi pembeda utama model ini — mendekati Claude Opus 5 (78), meninggalkan Sonnet 5 (71,5) dan Opus 4.7 (73,6) di belakang di benchmark pemrograman, dan mendekati kelas khusus coding frontier papan atas seperti Kimi K3 (76,2).",
+    "Dalam pengujian editorial Wawasan AI untuk workload agentic engineering dan streaming UX real-time, Gemini 3.7 Flash (high) menunjukkan karakter khas model flagship Google yang di-tuning untuk throughput: penalaran murni yang solid untuk task engineering, kemampuan mempertahankan konteks setelah belasan iterasi tool-use, dan kemampuan coding yang mendekati Opus 5 untuk refactor lintas file dan code architect reasoning. Yang paling terasa dibanding frontier papan atas lain (Opus 5, Kimi K3, GPT-5.6 Sol high) adalah signature throughput keluarga Flash — output 357,8 token/detik (sumber: Artificial Analysis), salah satu yang tertinggi di benchmark, ideal untuk antarmuka chat dengan streaming UI dan pipeline agentic step-by-step yang butuh respons kumulatif cepat. Skor benchmark saintifik menjadi indikator kuat kemampuan penalaran ilmiah meski math index tidak tersedia: GPQA 0,964 dan SciCode 0,624 (sumber: Artificial Analysis) mendekati Opus 5 dan Sonnet 5, menempatkan Flash high-effort di kelas papan atas untuk riset saintifik dan code reasoning. TTFT 7,002 detik (sumber: Artificial Analysis) lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time — perlu orkestrasi pipeline untuk workload yang sensitif latency pertama, tapi throughput tinggi setelah respons pertama datang menutup gap dengan lancar. (Sumber: Artificial Analysis.)",
+    "Soal harga, Gemini 3.7 Flash (high) bermain di kelas mid-tier meski kemampuan kelas flagship: $0,75 per juta token input dan $3,75 output per 1M token. Dibanding Claude Opus 5 ($5/$25), Flash high-effort 6,7x lebih murah di input dan 6,7x lebih murah di output — selisih kumulatif signifikan untuk workload volume tinggi yang sensitif dolar. Dibanding frontier Asia papan atas seperti Kimi K3 ($3/$15) atau GPT-5.6 Sol high ($5/$30), Flash high-effort 4x lebih murah di input dan 4-8x lebih murah di output, menjadikannya opsi menarik bagi developer Indonesia yang menjalankan pipeline coding volume-tinggi. Intelligence index 56 di benchmark Artificial Analysis (sumber: Artificial Analysis) menjadi indikator kombinasi penalaran dan coding yang solid di kelas harga ini — di atas rata-rata proprietary Asia papan menengah, sejajar dengan Sonnet 5 dan Opus 4.7 di kelas harga jauh lebih efisien.",
+    "Kelemahan yang teridentifikasi: TTFT 7,002 detik (sumber: Artificial Analysis) lebih lambat dari Sonnet 5 atau frontier papan atas lain untuk workload chat real-time — bukan pilihan optimal untuk UX interaktif yang butuh respons instan pertama atau streaming UI yang sangat sensitif latency pertama. Sebagai varian high-effort, latency dan biaya per token lebih tinggi dari varian medium atau low pada keluarga Flash — perlu orkestrasi pipeline untuk route step rutin ke medium atau low, dan escalate ke high saat problem lebih sulit. Math index tidak tersedia di benchmark AA untuk entry ini (null), jadi kualitas numerik tidak terukur standar — meski GPQA 0,964 dan SciCode 0,624 menjadi indikator kuat kemampuan penalaran saintifik. Akses API lewat Google AI Studio dan Vertex AI — ekosistem plugin pihak ketiga lebih luas dari laboratorium kecil, tapi tooling agentic masih di bawah Claude Code atau tool agentic OpenAI. Strategi pemakaian yang paling rasional: Gemini 3.7 Flash (high) untuk pipeline engineering yang butuh kombinasi intel 56, coding 76,1, dan throughput 357,8 tps dengan harga mid-tier — streaming UX real-time, agentic loop cepat, dan code generation volume-tinggi; Claude Opus 5 untuk workload yang mengincar performa puncak tanpa kompromi harga; Kimi K3 untuk coding agentic di kelas harga lebih terjangkau; GPT-5.6 Sol high untuk ekosistem OpenAI yang lebih matang; varian Flash medium atau low untuk task ringan yang sensitif harga.",
+    ],
+    link: "https://ai.google.dev/gemini-3-7-flash",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-21",
     featured: false,
-  },
+    },
 ];
 
+
 export function getModel(slug: string) {
+
 
   return models.find((m) => m.slug === slug);
 }
