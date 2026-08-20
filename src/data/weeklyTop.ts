@@ -1977,6 +1977,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                 "65k+ bintang GitHub dan masuk trending di Product Hunt, WIRED, dan Business Insider — relevan untuk job seeker tech Indonesia yang ingin otomasi screening + CV tailoring tanpa serahkan data lamaran ke SaaS proprietary.",
               ],
             },
+  "AprilNEA/OpenLogi": {
+    description:
+      "Alternatif native, lokal-first dari Logitech Options+ yang ditulis Rust — remap tombol, atur DPI, dan SmartShift lewat protokol HID++ tanpa akun, tanpa telemetry, dan jalan mulus di macOS/Linux/Windows.",
+    highlights: [
+      "Tool native Rust + GPUI yang menggantikan Logitech Options+ secara lokal-first — tidak butuh akun, tidak kirim telemetry, dan configurasi satu file TOML saja yang tinggal di-sync antar-mesin lewat cara sendiri.",
+      "Dukungan lintas protokol: Logi Bolt, Unifying receiver, Bluetooth, dan koneksi wired — semua lewat HID++ untuk mouse, keyboard, dan webcam Logitech (UVC control seperti Litra brightness/color temperature).",
+      "Gestur per-tombol fisik dengan 'Actions Ring' delapan slot di cursor, plus per-application profile yang auto-switch saat fokus app pindah (macOS, Windows, dan Linux X11/XWayland) — fitur yang biasanya dikunci di balik Options+.",
+      "CLI nyata di samping GUI, bukan sekadar wrapper: cocok untuk sysadmin dan power user yang ingin scripting profil atau trigger lewat shortcut; open source dari AprilNEA dengan distribusi Linux .deb/AppImage, macOS .dmg, dan Windows .msi — relevan untuk developer Indonesia yang muak dengan Options+ yang makan resource dan butuh login.",
+    ],
+  },
+  "amadeusprotocol/node": {
+    description:
+      "Implementasi node (Rust) dari protokol Amadeus — blockchain permissionless Layer-1 kompatibel EVM/WASM, dibangun dengan Elixir untuk VM dan ekosistem tooling untuk smart contract AssemblyScript.",
+    highlights: [
+      "Node full client dari Amadeus Protocol — blockchain Layer-1 dengan konsensus PoW dan VM yang menggabungkan Ethereum-like execution (EVM) dengan WASM (AssemblyScript) untuk smart contract yang lebih fleksibel dari satu model saja.",
+      "Implementasi core dipakai Erlang/Elixir untuk VM (`ama`), sedangkan node ini (Rust) berbicara lewat protokol Amadeus over UDP tuned untuk 1Gbps — net.core tuning (rmem/wmem, udp_mem) disertakan untuk jaringan produksi.",
+      "Tooling end-to-end: REPL konsol untuk submit transfer, deploy contract (`Testnet.deploy counter.wasm`), invoke method (`increment`, `get`), plus sistem auto-update yang bisa berjalan sebagai systemd service di Linux.",
+      "Lisensi open-source dan testnet bisa dijalankan lokal lewat podman/docker (`./build.sh` + `./amadeusd`) — relevan untuk developer Indonesia yang ingin eksplorasi blockchain Layer-1 alternatif di luar Ethereum/Solana, terutama yang tertarik pada smart contract multi-bahasa (Solidity + AssemblyScript).",
+    ],
+  },
+  "s1dashu/ip-as-logo-skill": {
+    description:
+      "Skill agen AI yang menuntun model image-gen untuk menghasilkan IP mascot logo yang sangat sederhana, lucu, dan siap-pakai komersial — siluet tebal membulat, dua warna IP plus satu warna background solid, dan komposisi dominan di sudut bawah.",
+    highlights: [
+      "Skill berformat Agent Skills (agentskills.io) yang fokus ke 'simplest possible cute IP character' — bukan detailed illustration, melainkan logo yang tetap terbaca di 32×32 dengan 4–7 bentuk geometris besar dan dua warna IP plus satu warna background.",
+      "Workflow tiga arah + enam kandidat: agen mengajukan tiga arah desain (tiga IP subject berbeda, masing-masing diikat ke atribut produk), setelah disetujui generate 6 kandidat independen split lower-left/lower-right — A1/A2/B1/B2/C1/C2 — untuk menjaga variasi.",
+      "Kompatibel dengan banyak coding agent yang punya image-gen bawaan: Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, Replit Agent — bukan image generator, melainkan 'policy file' yang menuntun model mana pun menghasilkan IP mascot konsisten.",
+      "Lengkap dengan situs ipaslogo.com (Cloudflare R2 + Supabase) yang menawarkan logo siap-pakai gratis untuk komersial, plus SKILL.md yang bisa di-install via `npx skills@latest add s1dashu/ip-as-logo-skill` — relevan untuk founder dan tim brand Indonesia yang butuh mascot cepat tanpa harus hiring desainer.",
+    ],
+  },
           };
 
                                                                                                                                             // Helper: lookup dengan fallback ke template-generated highlights
