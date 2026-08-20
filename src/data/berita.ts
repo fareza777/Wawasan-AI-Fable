@@ -3461,6 +3461,53 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "memberdayakan-masa-depan-operasi-ti-otonom-infrastruktur-ibm-yang-siap-ai-diguna",
+    title: "Infrastruktur AI untuk Agen TI Otonom: Janji Besar yang Wajib Dibaca Ulang",
+    excerpt: "IBM mendorong infrastruktur AI yang diklaim siap dipakai agen otonom untuk operasi TI. Ada yang menarik, ada yang perlu diwaspadai, dan implikasinya untuk Indonesia lumayan spesifik.",
+    category: "Analisis",
+    date: "2026-08-21",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau dua tahun terakhir tema besarnya adalah 'punya model AI', tahun ini tema besarnya bergeser: 'siapa yang punya tempat model itu bekerja dan bertindak'. IBM, lewat materi terbaru mereka, mengangkat topik yang selama ini kurang dibicarakan secara terbuka: infrastruktur TI yang memang dirancang sejak awal untuk melayani agen otonom, bukan chatbot yang menjawab di jendela percakapan.",
+          "Arahnya penting karena mayoritas pembicaraan tentang AI agent di Indonesia masih di level permukaan: demo mengesankan, throughput kasus uji yang menurun, dan asumsi bahwa agen tinggal 'ditempel' ke sistem yang sudah ada. Kenyataannya, agen yang benar-benar menjalankan operasi TI — restart layanan, membaca log, memulihkan insiden, menutup tiket — butuh fondasi yang berbeda dari chatbot. Di situlah posisi IBM menarik untuk dicermati, dan di saat yang sama perlu dilihat secara kritis.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya ditawarkan IBM",
+        paragraphs: [
+          "Secara garis besar, pendekatan IBM adalah menyiapkan stack infrastruktur yang dirancang untuk beban kerja AI agentik: lapisan komputasi yang dapat mengalokasikan sumber daya secara dinamis sesuai kebutuhan agen, lapisan data yang bisa diakses dengan protokol standar (termasuk yang kompatibel dengan gaya Model Context Protocol), dan lapisan orkestrasi yang memungkinkan agen melihat, merencanakan, dan mengeksekusi multi-langkah tanpa harus bolak-balik menunggu manusia di setiap langkah.",
+          "Klaim kuncinya adalah kesiapan untuk operasi produksi, bukan riset. IBM menekankan bahwa infrastruktur mereka sudah dipakai di lingkungan enterprise besar — perbankan, telekomunikasi, manufaktur — untuk pekerjaan yang kalau salah bisa berdampak ke layanan pelanggan. klaim seperti ini selalu layak diragukan sampai ditinjau sendiri, dan di sinilah pembaca Indonesia perlu tenang: klaim vendor besar soal kesiapan produksi adalah klaim vendor besar, sementara kenyataan di lapangan biasanya lebih sering berkata lain di tahun pertama deployment.",
+        ],
+      },
+      {
+        heading: "Yang menarik untuk konteks Indonesia",
+        paragraphs: [
+          "Ada tiga hal yang menarik untuk situasi di Indonesia saat ini. Pertama, model infrastruktur hybrid yang ditawarkan IBM cocok dengan kondisi banyak organisasi kita: tidak semua bisa langsung ke cloud publik, tidak semua harus on-premise, dan kombinasi keduanya sering jadi satu-satunya cara memenuhi aturan data sektor publik sambil tetap memanfaatkan kemampuan AI modern.",
+          "Kedua, orkestrasi agen yang mengampu banyak sistem internal berpotensi mengurangi ketergantungan pada integrasi point-to-point yang selama ini menyulitkan digitalisasi di instansi pemerintah dan perusahaan menengah. Kalau sebuah agen bisa membaca log, membuka tiket, dan menjalankan skrip pemulihan lewat antarmuka yang seragam, biaya integrasi per kasus baru turun signifikan. Untuk UMKM dan startup, ini bisa berarti layanan IT yang sebelumnya hanya mampu dibeli perusahaan besar, menjadi layak disewa dengan porsi yang lebih masuk akal.",
+          "Ketiga, kehadiran pemain sebesar IBM di arena ini bisa mendorong harga turun lebih cepat. Selama ini infrastruktur AI agentik cenderung eksperimental dan mahal, dengan komponen proprietary dari berbagai vendor kecil. Masuknya pemain hyperscaler vendor besar biasanya menandakan pasar memasuki fase konsolidasi, dan itu kabar baik untuk Anggaran Belanja Modal yang harus dipertanggungjawabkan.",
+        ],
+      },
+      {
+        heading: "Yang perlu diwaspadai sebelum ikut hype",
+        paragraphs: [
+          "Pertama, istilah 'siap agen' sering dipakai longgar. Infrastruktur yang 'mendukung agen' dan infrastruktur yang 'dirancang untuk agen' adalah dua hal berbeda: yang pertama adalah tumpukan yang kebetulan bisa dipakai agen, yang kedua adalah tumpukan yang alat observabilitas, kontrol akses, dan audit-nya dibangun dengan asumsi bahwa keputusan diambil oleh sistem yang bukan manusia. Pembeli yang jeli akan menanyakan tiga hal sederhana: bagaimana saya tahu apa yang dilakukan agen, bagaimana saya menghentikannya kalau salah, dan bagaimana saya merekonstruksi kejadian setelah sesuatu berlangsung.",
+          "Kedua, lock-in adalah harga yang sering tidak diumumkan di depan. Kalau agen Anda hanya bisa berjalan di satu vendor, dan vendor mengubah harga, aturan, atau menghentikan produk tertentu, Anda tidak punya pilihan selain bermigrasi dengan biaya tinggi. Untuk instansi pemerintah dan perusahaan yang memegang data warga atau pelanggan, pertaruhan ini terlalu besar untuk dipasang tanpa arsitektur yang memungkinkan penggantian penyedia tanpa menulis ulang integrasi dari nol.",
+          "Ketiga, otonomi bukan tujuan akhir — akuntabilitas yang tujuan akhirnya. Agen yang bisa menutup tiket, mengirim email ke pelanggan, atau mengubah konfigurasi produksi tanpa konfirmasi manusia adalah agen yang salah satu hari akan melakukan kesalahan yang tidak bisa diputar balik. Infrastruktur yang baik bukan yang paling otonom, melainkan yang paling transparan dan paling mudah diawasi. Ini prinsip yang sering terbalik di pemasaran AI enterprise: vendor berlomba memamerkan kemampuan paling mengesankan, sementara pembeli yang berpengalaman justru menghargai tombol 'berhenti' yang paling besar dan paling mudah dijangkau.",
+        ],
+      },
+      {
+        heading: "Rekomendasi untuk tim dan instansi di Indonesia",
+        paragraphs: [
+          "Mulai dari yang kecil dan terukur: pilih satu proses TI yang berulang dan berisiko rendah — misalnya tiket kategori 'reset password' atau 'cek status layanan' — lalu bangun agen untuk itu dengan infrastruktur yang sudah Anda punya. Kalau berhasil, naikan satu level. Barulah setelah pola nyata terlihat, evaluasi penawaran IBM (atau vendor serupa lainnya) untuk melihat apakah migrasi ke stack mereka mempercepat atau justru menambah kompleksitas.",
+          "Jangan beli infrastruktur untuk agen yang belum Anda bangun. Banyak organisasi terjebak membeli platform dulu, lalu bingung menentukan kasus penggunaan, lalu akhirnya pemanfaatan yang tidak sebanding dengan biaya. Urutan yang lebih sehat: kasus penggunaan dulu, lalu agen, lalu infrastruktur. Pembelian infrastruktur yang baik adalah pembelian yang dimulai dari rasa sakit yang nyata, bukan dari presentasi vendor yang memukau.",
+          "Terakhir, libatkan tim operasi TI sejak hari pertama, bukan di akhir. Agen yang akan mengubah cara mereka bekerja harus mereka pahami, jika tidak adopsi akan mandek di rapat-rapat koordinasi dan tidak pernah masuk ke produksi. Infrastruktur sehebat apa pun tidak ada artinya kalau tim yang memakainya tidak merasa memiliki. Dalam pengujian editorial Wawasan AI, pola ini yang paling sering membedakan proyek agen TI yang bertahan dan yang hanya jadi demo singkat untuk satu musim.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
