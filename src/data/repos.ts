@@ -3946,6 +3946,60 @@ export const repos: Review[] = [
     updatedAt: "2026-08-20",
     featured: false,
     },
+    {
+    slug: "modular-modular",
+    name: "Modular Platform",
+    tagline: "Platform AI terpadu dengan MAX inference engine dan bahasa Mojo untuk deployment production",
+    tags: ["AI Inference", "Programming Language", "Python", "Open Source"],
+    score: 8.6,
+    scores: [
+    { label: "Kemudahan Setup", value: 8.0 },
+    { label: "Fitur & Ekstensibilitas", value: 9.5 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+    "Modular Platform dari Modular Inc adalah paket terpadu untuk pengembangan dan deployment AI yang menggabungkan MAX Framework sebagai inference engine berbasis graph Python dan Mojo sebagai bahasa pemrograman systems-level yang dirancang khusus untuk beban kerja AI - menyatukan tooling Python yang sudah dikenal developer dengan performa mendekati C++ lewat satu toolchain.",
+    highlights: [
+    "MAX Framework sebagai inference engine dengan Python-based graph pipelines - developer bisa mendefinisikan model sebagai graph Python idiomatik tanpa perlu boilerplate C++ atau CUDA boilerplate",
+    "Mojo language: superset Python yang kompilasi ke native code dengan type system statis, ownership semantics, dan zero-cost abstractions - posisi antara Python ergonomics dan C++ performance",
+    "MAX inference server dengan OpenAI-compatible endpoint (/max/python/max/serve) - drop-in replacement untuk workload yang sebelumnya bergantung pada endpoint proprietary",
+    "MAX accelerator library (/max/kernels) berisi kernel yang dioptimasi untuk CPU, GPU, dan accelerator khusus - pendekatan heterogen tanpa vendor lock-in framework",
+    "Apache-2.0 with LLVM Exceptions untuk kontribusi repo - lisensi terbuka yang menarik untuk adopsi enterprise dan kontribusi komunitas",
+    "27.848 bintang dan 2.997 fork di GitHub per Agustus 2026 - salah satu proyek AI infrastructure dengan pertumbuhan bintang paling konsisten sejak 2023",
+    "MAX model pipelines (/max/python/max/pipelines/architectures) mencakup arsitektur model populer yang siap pakai dan bisa dimodifikasi lewat Python",
+    "Quickstart terstruktur: max.modular.com/get-started untuk deployment model dan mojolang.org/docs/manual/quickstart untuk mulai menulis Mojo",
+    "MAX usage dilisensikan terpisah di bawah Modular Community License - perlu evaluasi untuk workload proprietary sebelum adopsi komersial",
+    "Backing perusahaan dengan pendanaan seri C yang signifikan dan adopsi early di enterprise - sustainability proyek jangka menengah hingga panjang lebih terjamin dibanding proyek hobi",
+    ],
+    pros: [
+    "Menyatukan dua kebutuhan yang biasanya terpisah: inference engine production-grade dengan bahasa pemrograman yang bisa di-extend - developer tidak perlu context-switch ke C++/CUDA untuk optimasi performa",
+    "Mojo menawarkan learning curve yang landai untuk developer Python karena syntax sangat dekat, sekaligus membuka pintu ke performa native tanpa meninggalkan ekosistem tooling yang sudah ada",
+    "MAX inference server yang OpenAI-compatible menurunkan migration cost dari proprietary endpoint ke self-hosted deployment - sangat relevan untuk tim Indonesia yang ingin kontrol biaya inferensi",
+    "Pendekatan open-core dengan MAX sebagai engine open dan Mojo sebagai Apache-2.0 memberi kepercayaan pada sustainability proyek di tengah tren konsolidasi AI infrastructure",
+    "Komunitas dan momentum kuat (27k+ bintang, ratusan kontributor, ratusan issue aktif per minggu) - ekosistem help dan jawaban pertanyaan sudah terbentuk",
+    ],
+    cons: [
+    "Mojo masih dalam tahap pengembangan aktif - bahasa dan compiler masih bergerak cepat dengan breaking change yang mungkin terjadi antar versi mayor, sehingga adopsi di production perlu strategi pin-version",
+    "MAX usage dilisensikan terpisah di bawah Modular Community License yang memiliki batasan penggunaan komersial tertentu - tim perlu membaca klausul lisensi sebelum adopsi di produk proprietary",
+    "Kurva belajar efektif lebih tinggi dibanding inference engine Python murni seperti vLLM atau Ollama karena konsep graph pipeline MAX dan type system Mojo perlu dipahami dulu",
+    "Dokumentasi dan tutorial Bahasa Indonesia masih sangat minim karena basis komunitas global - developer Indonesia perlu nyaman baca English-first content dan kontribusi balik ke komunitas",
+    ],
+    verdict:
+    "Modular Platform adalah salah satu proyek AI infrastructure paling ambisius di 2026 - menggabungkan inference engine open-source dengan bahasa pemrograman systems-level dalam satu paket terpadu menjadikannya pilihan menarik untuk tim yang ingin performa tinggi tanpa meninggalkan ekosistem Python. Sangat relevan untuk tim Indonesia yang membangun layanan AI dengan trafik serius dan ingin kontrol penuh atas stack inference tanpa bergantung proprietary API.",
+    body: [
+    "Sepanjang 2024-2026, tim yang membangun layanan AI di Indonesia menghadapi dilema yang sama: pilih inference engine Python murni seperti vLLM atau Ollama yang mudah dipakai tapi terbatas di optimasi low-level, atau pindah ke stack C++/CUDA yang performa tinggi tapi mahal dalam SDM engineering. Modular Platform dari Modular Inc mencoba menjawab dilema ini dengan pendekatan berbeda: satukan inference engine berbasis graph Python (MAX Framework) dengan bahasa pemrograman systems-level yang dirancang khusus untuk AI (Mojo). Hasilnya adalah toolchain di mana developer bisa mendefinisikan model sebagai Python graph idiomatik, lalu turun ke Mojo untuk komponen yang butuh optimasi native - tanpa harus maintain dua codebase terpisah atau recruit engineer CUDA. Dengan 27.848 bintang dan 2.997 fork sejak repo dipublikasikan April 2023, Modular konsisten menjadi salah satu proyek AI infrastructure dengan pertumbuhan paling stabil di GitHub.",
+    "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah koherensi arsitekturnya. MAX Framework punya tiga komponen utama: inference server (berbasis OpenAI-compatible endpoint yang drop-in compatible dengan klien yang sudah ada), model pipelines (graph Python untuk arsitektur model populer yang bisa dimodifikasi), dan accelerator library (kernel yang dioptimasi untuk CPU, GPU, dan accelerator heterogen). Mojo, di sisi lain, diposisikan sebagai Python superset dengan type system statis, ownership semantics, dan zero-cost abstractions - secara teori, developer Python bisa menulis kode Mojo dengan perubahan minimal dan mendapat performa mendekati C++. Untuk konteks Indonesia, ini menarik karena banyak tim lokal sudah comfortable dengan Python untuk prototyping, dan Mojo memungkinkan mereka optimize bottleneck performa tanpa harus recruit specialist C++. Quickstart untuk MAX tersedia di max.modular.com/get-started, dan untuk Mojo di mojolang.org/docs/manual/quickstart - keduanya terstruktur dengan baik dan bisa diselesaikan dalam hitungan jam untuk first inference.",
+    "Arsitekturnya terasa dirancang untuk produksi, bukan sekadar demo. MAX inference server dirancang OpenAI-compatible sehingga migrasi dari endpoint proprietary ke self-hosted cukup mengubah base URL - ini menurunkan switching cost secara signifikan dibanding inference engine yang protokolnya proprietary. Model pipelines MAX bisa di-compose lewat Python, accelerator library-nya memberi akses ke kernel yang dioptimasi untuk berbagai backend tanpa vendor lock-in. MAX accelerator library mencakup kernel untuk CPU modern, GPU NVIDIA dan AMD, serta Apple Silicon lewat MLX path - memberikan fleksibilitas deployment yang jarang dimiliki engine setara. Mojo compiler (di /KGEN) dan standard library (di /mojo/stdlib) terbuka untuk kontribusi komunitas, dengan Mojo compiler sendiri belum menerima kontribusi eksternal namun roadmap-nya menunjukkan pembukaan bertahap. Backing Modular Inc lewat pendanaan seri C yang signifikan memberi sustainability jangka menengah hingga panjang yang tidak selalu dimiliki proyek AI infrastructure open-source - mengurangi risiko proyek ditinggalkan tanpa pemeliharaan atau diubah lisensi secara sepihak.",
+    "Batasan yang perlu dipahami. Mojo masih dalam tahap pengembangan aktif dengan API dan sintaks yang masih bergerak - breaking change bisa terjadi antar versi mayor, sehingga strategi adopsi di production perlu pin-version yang disiplin dan rencana migrasi berkala. Lisensi MAX sendiri berada di bawah Modular Community License yang memiliki batasan penggunaan komersial - perusahaan yang akan embed MAX dalam produk proprietary perlu evaluasi klausul lisensi secara cermat atau negosiasi commercial license dengan Modular Inc (lisensi Apache-2.0 with LLVM Exceptions hanya untuk kontribusi repo itu sendiri, bukan untuk runtime usage). Kurva belajar efektif lebih tinggi dibanding vLLM atau Ollama karena developer perlu memahami graph pipeline MAX dan type system Mojo - meski lebih landai dibanding CUDA murni, tetap ada investment awal. Dokumentasi dan tutorial Bahasa Indonesia masih minim karena basis komunitas global - developer Indonesia perlu nyaman baca English-first content dan kontribusi balik ke komunitas. Namun untuk tim Indonesia yang serius soal AI infrastructure dan ingin tooling terpadu yang bisa di-extend tanpa vendor lock-in, Modular Platform adalah salah satu pilihan paling solid di paruh kedua 2026 - dan kombinasi MAX + Mojo dalam satu paket menjadikannya investasi tooling yang menarik untuk jangka menengah hingga panjang.",
+    ],
+    link: "https://github.com/modular/modular",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-21",
+    updatedAt: "2026-08-21",
+    featured: false,
+    },
 ];
 
 export function getRepo(slug: string) {
