@@ -2940,6 +2940,48 @@ export const stacks: Review[] = [
     date: "2026-08-19",
     featured: false,
   },
+  {
+    slug: "surfer-seo",
+    name: "Surfer SEO",
+    tagline: "Tool optimasi konten SEO berbasis NLP dan SERP analysis",
+    tags: ["Surfer", "Paid", "SEO", "Content Optimization"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Surfer SEO adalah platform optimasi konten yang mengubah workflow SEO dari tebak-tebakan keyword menjadi proses berbasis data: analisis SERP real-time, scoring konten terhadap NLP, struktur heading, dan saran internal link yang berbasis pada halaman yang benar-benar ranking di halaman satu Google. Tool standar untuk content team yang memprioritaskan efisiensi.",
+    pros: [
+      "SERP Analyzer memetakan 50-100 halaman ranking teratas dalam hitungan detik, memberikan baseline kompetitif yang sebenarnya untuk setiap target keyword",
+      "Content Editor dengan skor real-time (0-100) untuk NLP, struktur heading, dan keyword density -- visibilitas langsung seberapa siap artikel untuk ranking",
+      "Integrasi native yang kuat: WordPress, Google Docs, Jasper, Writesonic, dan Chrome Extension untuk scoring on-the-fly di mana pun kamu menulis",
+      "Audit halaman existing dengan rekomendasi konkret: tambah paragraf, ganti heading, tambah internal link, atau compress -- bukan laporan teoretis",
+      "Surfer AI (paket Scale ke atas) men-generate outline dan draft artikel dengan brand voice custom, menurunkan waktu produksi artikel SEO 40-60 persen",
+    ],
+    cons: [
+      "Harga masuk kelas premium: Essential $89 per bulan, Scale $129, Enterprise $249 -- di luar jangkauan bloger solo dan UMKM kecil di Indonesia",
+      "Skor NLP kadang terasa prescriptive -- menulis untuk skor bisa menghasilkan teks yang repetitif jika tidak diimbangi editorial judgement",
+      "Surfer AI generate konten English-first; output bahasa Indonesia masih perlu polishing manual karena template dipelajari dari korpus English",
+      "Tidak ada plan benar-benar gratis (cuma trial 7 hari); pesaing seperti Frase atau NeuronWriter punya entry tier lebih murah",
+      "Bergantung pada data SERP Google yang berubah-ubah; update algoritma besar bisa membuat rekomendasi lama jadi kurang relevan untuk sementara",
+    ],
+    verdict:
+      "Tool SEO content optimization dengan data SERP paling solid untuk target pasar berbahasa Inggris dan Indonesia; alasan utamanya adalah paket termurahnya yang sudah $89 per bulan, membuat nilai praktisnya baru terasa untuk content team yang produksi minimal 10-20 artikel per bulan.",
+    body: [
+      "Surfer SEO berasal dari Polandia (Slawek Czajkowski dan tim, 2017) dan sejak awal memposisikan diri sebagai tool yang menggantikan intuisi SEO dengan data: daripada menebak keyword density atau struktur heading yang ideal, Surfer menganalisis puluhan halaman ranking teratas untuk target keyword dan memberikan skor artikelmu terhadap rata-rata SERP. Workflow khasnya: riset keyword di Content Planner, pilih cluster dengan potensi traffic, buka Content Editor, tulis artikel dengan skor real-time yang naik setiap kali kamu menambah paragraf atau memperbaiki struktur heading. Setelah publish, Site Audit memonitor halaman existing dan merekomendasikan perubahan konkret.",
+      "Yang membuat Surfer menonjol dibanding tool SEO turun-temurun (Yoast, RankMath) atau bahkan tool NLP pesaing (MarketMuse, Frase) adalah kedalaman data SERP. SERF Analyzer membongkar apa yang membuat halaman ranking: bukan hanya panjang artikel, tapi distribusi subtopik, entitas yang disebut, format (list, table, paragraph), dan internal link yang digunakan. Content Editor yang update real-time dari data ini -- dengan panel di sisi kanan yang merekomendasikan kata, frasa, dan heading yang harus ada -- menjadikan Surfer terasa seperti co-pilot yang paham apa yang Google sukai, bukan sekadar checker yang menghitung keyword.",
+      "Kekuatan ketiga yang jarang dimiliki pesaing adalah ekosistem integrasi. Surfer connect langsung ke WordPress (publish tanpa copy-paste), Google Docs (tim konten bisa kolaborasi dengan panduan Surfer di sidebar), Jasper AI (generate lalu optimize), Zapier (ribuan workflow otomatis), dan Chrome Extension (score artikel yang sedang kamu baca di web manapun). Untuk content team yang sudah punya stack tertentu, integrasi ini menurunkan friksi adopsi secara signifikan -- bukan tool terpisah, tapi lapisan tambahan di workflow yang sudah ada. Surfer AI (di paket Scale dan ke atas) bahkan menggantikan generator artikel lain: dari outline ke draft 1.500 kata dengan brand voice dan fakta yang dicek terhadap SERP.",
+      "Untuk pengguna dan tim di Indonesia, Surfer menarik dengan beberapa catatan penting. Content Editor mendukung bahasa Indonesia -- tidak sempurna, tapi cukup untuk artikel target pasar Indonesia, terutama untuk topik e-commerce, fintech, dan travel yang SERP-nya banyak halaman berbahasa Indonesia. Fakta bahwa harga Essential $89 per bulan (sekitar Rp 1,4 juta) dan Scale $129 (sekitar Rp 2 jutaan) menempatkan Surfer di kelas premium; untuk bloger solo atau UMKM dengan budget < Rp 1 juta per bulan untuk tool, Frase atau NeuronWriter lebih masuk. Untuk content agency di Jakarta, Bandung, dan Yogyakarta yang handle 10-30 klien sekaligus dan produksi 50+ artikel per bulan, value-nya sangat terasa: konsistensi output naik, ranking lebih stabil, dan waktu riset turun signifikan. Catatan penting untuk editor Indonesia: skor NLP Surfer dilatih dari korpus English, jadi untuk bahasa Indonesia kamu perlu judgement editorial ekstra -- jangan mengejar skor 100 persen sampai teks terasa tidak natural atau repetitif. Bayar menggunakan kartu kredit masih kena PPN 11 persen dan charge international 3-5 persen, total markup 14-16 persen dari harga tertera. Surfer SEO bukan tool SEO termurah, bukan tool berbasis AI tercanggih, tapi untuk content team Indonesia yang serius dengan ranking Indonesia dan ASEAN, ini salah satu investasi tool dengan ROI paling terukur di 2026.",
+    ],
+    link: "https://surferseo.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-20",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
