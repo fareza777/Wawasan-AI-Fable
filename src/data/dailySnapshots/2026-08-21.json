@@ -1,28 +1,25 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "21 Agustus 2026",
-  "period": {
-    "date": "2026-08-21",
-    "label": "21 Agustus 2026",
-    "path": "/repo/daily/2026/08/21"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-21T00:03:32.106Z",
+  "fetchedAt": "2026-08-21T02:45:30.314Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "harry0703/MoneyPrinterTurbo",
-      "owner": "harry0703",
-      "repo": "MoneyPrinterTurbo",
-      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "trendshiftUrl": "https://trendshift.io/repositories/8731",
-      "language": "Python",
+      "fullName": "openai/codex",
+      "owner": "openai",
+      "repo": "codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "githubUrl": "https://github.com/openai/codex",
+      "trendshiftUrl": "https://trendshift.io/repositories/14330",
+      "language": "Rust",
       "topics": [
-        "AI video generation"
+        "AI agent",
+        "AI coding assistant"
       ],
-      "dateCreated": "2024-03-11T02:57:34Z"
+      "dateCreated": "2025-04-13T05:37:54Z"
     },
     {
       "rank": 2,
@@ -40,49 +37,6 @@
     },
     {
       "rank": 3,
-      "fullName": "CopilotKit/OpenBot",
-      "owner": "CopilotKit",
-      "repo": "OpenBot",
-      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-      "githubUrl": "https://github.com/CopilotKit/OpenBot",
-      "trendshiftUrl": "https://trendshift.io/repositories/175080",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "Headless browser"
-      ],
-      "dateCreated": "2026-08-17T00:44:59Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "AprilNEA/OpenLogi",
-      "owner": "AprilNEA",
-      "repo": "OpenLogi",
-      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "githubUrl": "https://github.com/AprilNEA/OpenLogi",
-      "trendshiftUrl": "https://trendshift.io/repositories/42303",
-      "language": "Rust",
-      "topics": [
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-05-24T10:10:36Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "s1dashu/ip-as-logo-skill",
-      "owner": "s1dashu",
-      "repo": "ip-as-logo-skill",
-      "description": "A compact Codex skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.",
-      "githubUrl": "https://github.com/s1dashu/ip-as-logo-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/167704",
-      "topics": [
-        "AI image generation",
-        "AI skills"
-      ],
-      "dateCreated": "2026-08-18T13:59:23Z"
-    },
-    {
-      "rank": 6,
       "fullName": "mahlernim/google-timeline-visualizer",
       "owner": "mahlernim",
       "repo": "google-timeline-visualizer",
@@ -96,23 +50,90 @@
       "dateCreated": "2025-12-16T06:49:16Z"
     },
     {
-      "rank": 7,
-      "fullName": "volcengine/OpenViking",
-      "owner": "volcengine",
-      "repo": "OpenViking",
-      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-      "githubUrl": "https://github.com/volcengine/OpenViking",
-      "trendshiftUrl": "https://trendshift.io/repositories/19668",
-      "language": "Python",
+      "rank": 4,
+      "fullName": "xmanrui/dsh-im",
+      "owner": "xmanrui",
+      "repo": "dsh-im",
+      "description": "通过扫码或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。 Connect IM bots to DeepSeek Harness via QR code or credentials (9 channels).",
+      "githubUrl": "https://github.com/xmanrui/dsh-im",
+      "trendshiftUrl": "https://trendshift.io/repositories/169119",
+      "language": "JavaScript",
       "topics": [
-        "AI agent",
-        "AI memory",
-        "RAG"
+        "Chatbot"
       ],
-      "dateCreated": "2026-01-05T07:11:17Z"
+      "dateCreated": "2026-08-14T20:40:06Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "gna1280072/LeePanel",
+      "owner": "gna1280072",
+      "repo": "LeePanel",
+      "description": "Linux VPS control panel free software open source",
+      "githubUrl": "https://github.com/gna1280072/LeePanel",
+      "trendshiftUrl": "https://trendshift.io/repositories/152514",
+      "language": "Rust",
+      "topics": [
+        "Self-hosted",
+        "File management"
+      ],
+      "dateCreated": "2026-07-05T07:33:06Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ripienaar/free-for-dev",
+      "owner": "ripienaar",
+      "repo": "free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "githubUrl": "https://github.com/ripienaar/free-for-dev",
+      "trendshiftUrl": "https://trendshift.io/repositories/1871",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2015-03-18T21:06:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "snflkd/fluent-korean",
+      "owner": "snflkd",
+      "repo": "fluent-korean",
+      "description": "Claude Code가 명확한 한국어를 구사하게 만드는 output-style 플러그인 | Claude Code output-style for clear, fluent Korean",
+      "githubUrl": "https://github.com/snflkd/fluent-korean",
+      "trendshiftUrl": "https://trendshift.io/repositories/173701",
+      "topics": [],
+      "dateCreated": "2026-07-10T12:49:00Z"
     },
     {
       "rank": 8,
+      "fullName": "Tencent/AI-Infra-Guard",
+      "owner": "Tencent",
+      "repo": "AI-Infra-Guard",
+      "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
+      "githubUrl": "https://github.com/Tencent/AI-Infra-Guard",
+      "trendshiftUrl": "https://trendshift.io/repositories/13637",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2024-12-25T06:39:30Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "AprilNEA/OpenLogi",
+      "owner": "AprilNEA",
+      "repo": "OpenLogi",
+      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+      "githubUrl": "https://github.com/AprilNEA/OpenLogi",
+      "trendshiftUrl": "https://trendshift.io/repositories/42303",
+      "language": "Rust",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-05-24T10:10:36Z"
+    },
+    {
+      "rank": 10,
       "fullName": "santifer/career-ops",
       "owner": "santifer",
       "repo": "career-ops",
@@ -126,32 +147,6 @@
         "Resume building"
       ],
       "dateCreated": "2026-04-04T18:21:18Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "zenbu-labs/terminal-code",
-      "owner": "zenbu-labs",
-      "repo": "terminal-code",
-      "description": "VS Code in the terminal",
-      "githubUrl": "https://github.com/zenbu-labs/terminal-code",
-      "trendshiftUrl": "https://trendshift.io/repositories/174980",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-08T05:35:40Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "mattpocock/skills",
-      "owner": "mattpocock",
-      "repo": "skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/21589",
-      "language": "Shell",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-03T11:15:53Z"
     }
   ]
 }
