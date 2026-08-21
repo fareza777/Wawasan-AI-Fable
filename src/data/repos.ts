@@ -3999,7 +3999,61 @@ export const repos: Review[] = [
     date: "2026-08-21",
     updatedAt: "2026-08-21",
     featured: false,
-    },
+  },
+  {
+    slug: "agent-substrate",
+    name: "Agent Substrate",
+    tagline: "Substrate Kubernetes-native untuk orkestrasi agent AI dengan state preservation lintas suspend-resume",
+    tags: ["AI Agent", "Kubernetes", "Go", "Open Source"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Agent Substrate dari agent-substrate adalah platform Kubernetes-native untuk menjalankan agent AI dengan model actor stateful: setiap agent dapat di-suspend, di-snapshot, di-restore, dan di-migrasi antar worker tanpa kehilangan state - mekanisme yang biasanya hanya dijumpai di serverless tier-1 atau sistem operasi mainframe, sekarang ditawarkan sebagai open-source di atas Kubernetes standar. Proyek ini dirancang framework-agnostic sehingga agent dari Claude Code, framework internal, atau custom runner apapun bisa dijalankan dengan overhead minimal lewat custom resource ActorTemplate dan WorkerPool.",
+    highlights: [
+      "Actor stateful dengan suspend-resumeSnapshot/restore berbasis checkpoint filesystem (gVisor runsc atau cloud-hypervisor micro-VM) yang menjaga state antar pod berbeda - state agent tidak hilang saat pod di-recreate atau worker pool di-scale down",
+      "Dynamic CRD routing lewat Kubernetes API Server - request masuk ke router atenet, lalu di-route berdasarkan hostname ke actor spesifik, sehingga setiap agent punya endpoint unik tanpa perlu Ingress atau Service per agent",
+      "Sandbox execution via gVisor (runsc) atau cloud-hypervisor micro-VM - agent berjalan di lingkungan terisolasi penuh dengan filesystem state yang tetap dipertahankan antar sesi, memungkinkan eksekusi kode arbitrer tanpa kompromi host",
+      "Oversubscription dengan Claude Code Multiplex demo - beberapa sesi Claude Code berjalan simultan di atas pool worker yang lebih kecil, memanfaatkan suspend-resume untuk time-slice antar agent sehingga utilisasi hardware naik signifikan",
+      "Request parking sebagai alternatif 503 - ketika worker pool penuh, router menahan (park) request di antrian hingga worker bebas, bukan langsung return 503 - pola yang menurunkan tail latency pada beban bursty tanpa harus over-provision worker",
+      "Autoscaled WorkerPool dengan HPA fed by prometheus-adapter - skala worker berdasarkan assigned-worker count aktual, bukan CPU/memory umum, sehingga tuning scaling policy bisa lebih akurat terhadap pola beban agent",
+      "Framework-agnostic via ActorTemplate CRD - setiap agent adalah image container atau binary biasa yang dijalankan di dalam sandbox, tidak ada lock-in ke runtime tertentu; demo resmi termasuk Claude Code, custom Go actor, dan shell runner",
+      "Multi-template WorkerPool sharing - dua ActorTemplate berbeda bisa share satu WorkerPool dalam satu namespace, menurunkan idle resource untuk mixed workload agent dalam satu cluster Kubernetes",
+      "Arsitektur terdistribusi: cmd/ateapi (control plane gRPC), cmd/atelet (DaemonSet node supervisor), cmd/atenet (networking controller dengan DNS + Envoy), cmd/atecontroller (reconciler untuk CRD), cmd/kubectl-ate (CLI) - pipeline terdistribusi yang mature",
+      "Apache-2.0 licensed dengan 1.577 bintang dan 262 fork di GitHub per Agustus 2026 - pendatang baru yang langsung menarik perhatian karena mengangkat konsep actor stateful yang sebelumnya jarang tersedia di stack open-source",
+    ],
+    pros: [
+      "Memecahkan masalah fundamental agent state persistence di Kubernetes - agent yang sebelumnya kehilangan state saat pod restart sekarang bisa di-suspend, di-snapshot, dan di-restore dengan overhead mendekati native",
+      "Request parking menurunkan kebutuhan over-provision worker pool saat beban bursty, menurunkan biaya infrastruktur untuk deployment agent yang trafiknya tidak merata sepanjang hari",
+      "Arsitektur framework-agnostic lewat ActorTemplate CRD memungkinkan integrasi dengan Claude Code, custom agent Go/Python, atau runtime apapun tanpa modifikasi substrate itu sendiri - sangat fleksibel untuk eksperimen multi-framework",
+      "Sandbox gVisor + micro-VM memberikan isolasi keamanan kuat untuk agent yang mengeksekusi kode arbitrer - relevan untuk skenario coding assistant atau tool agent yang perlu menjalankan script tidak tepercaya",
+      "Open-source dengan Apache-2.0 license, dokumentasi lengkap (arsitektur, API guide, threat model, roadmap), dan demo konkret - menurunkan friksi adopsi dibanding platform proprietary setara",
+    ],
+    cons: [
+      "Setup awal memerlukan cluster Kubernetes yang sudah berjalan plus GCP provisioning lewat tools/setup-gcp untuk GKE - kurva belajar lebih tinggi dibanding agent runtime single-binary seperti LangGraph atau CrewAI yang cukup pip install",
+      "Kebutuhan akan gVisor atau cloud-hypervisor menambah requirement kernel/driver di node worker - tidak semua managed Kubernetes (EKS, GKE Autopilot) mendukung gVisor out of the box, perlu verifikasi per environment",
+      "Proyek relatif muda (dibuat Mei 2026, ~3 bulan saat review ini) - meski arsitekturnya mature, ekosistem plugin, integrasi vendor, dan track record production masih perlu dibangun; adopsi early-adopter masih terbatas",
+      "Konsep actor, atespace, dan ActorTemplate punya model mental yang perlu waktu untuk dipahami - developer Kubernetes yang terbiasa dengan Deployment/StatefulSet perlu belajar lapisan abstraksi baru sebelum bisa memanfaatkan fitur penuh",
+    ],
+    verdict:
+      "Agent Substrate adalah salah satu proyek paling menarik di paruh kedua 2026 untuk tim yang serius soal orkestrasi agent AI di Kubernetes - kombinasi actor stateful dengan suspend-resume, sandboxing gVisor/micro-VM, dan request parking menurunkan banyak friksi operasional yang biasanya muncul di deployment agent skala produksi. Sangat relevan untuk tim Indonesia yang sudah invest di Kubernetes dan ingin menjalankan coding assistant atau workflow agent dengan state persistence nyata, bukan sekadar wrapper stateless di atas container biasa.",
+    body: [
+      "Sepanjang 2024-2026, orkestrasi agent AI di Kubernetes menghadapi keterbatasan yang jarang dibicarakan tapi sangat nyata: agent yang bersifat stateful - memiliki memori jangka panjang, sesi percakapan panjang, atau state eksekusi kode yang harus dipertahankan - tidak punya abstraction yang pas di atas Deployment atau StatefulSet tradisional. Pod restart berarti kehilangan state, worker pool scaling berarti agent idle harus dibangun ulang dari awal, dan sandbox execution biasanya mengorbankan state antar sesi. Agent Substrate dari agent-substrate menjawab keterbatasan itu dengan mengangkat kembali konsep actor stateful dari dunia Erlang/OTP dan mainframe, lalu menerjemahkannya ke primitive Kubernetes modern. Repo ini dibuat 13 Mei 2026 dan langsung menarik perhatian karena menunjukkan demo yang biasanya hanya dijumpai di platform proprietary: agent Claude Code yang tetap mempertahankan state file dan history setelah pod di-recreate, multi-agent multiplexing di atas pool worker yang lebih kecil dari jumlah agent, hingga request parking yang menurunkan 503 rate saat burst load.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah koherensi arsitekturnya. Ada tiga komponen utama yang menopang semuanya: cmd/ateapi sebagai control plane gRPC untuk daur hidup actor dan worker; cmd/atelet sebagai DaemonSet node yang mengawasi worker pod, mengoordinasikan snapshot, dan mengelola transfer state; cmd/atenet sebagai networking controller yang menyediakan DNS, Envoy routing, dan proxy sidecar. Di atasnya, ada cmd/atecontroller yang melakukan reconcile untuk custom resource WorkerPool dan ActorTemplate, plus cmd/kubectl-ate sebagai CLI untuk manajemen harian (kubectl ate create atespace, kubectl ate create actor). Untuk menjalankan demo cepat, repo menyediakan hack/create-kind-cluster.sh untuk cluster lokal, hack/install-ate-kind.sh untuk instalasi ate + valkey + rustfs, dan hack/install-ate-kind.sh --deploy-demo-counter untuk sample counter actor. Setelah kubectl port-forward ke atenet-router, kita bisa increment counter lewat HTTP request dengan Host header my-counter-1.demo.actors.resources.substrate.ate.dev - terlihat sepele, tapi di baliknya ada snapshot/restore penuh yang menjaga state counter antar pod berbeda.",
+      "Fitur yang paling relevan untuk beban agent produksi adalah suspend-resume berbasis snapshot filesystem. Agent yang berjalan di dalam sandbox gVisor (runsc) atau cloud-hypervisor micro-VM dapat di-checkpoint lalu di-restore di worker pod lain tanpa kehilangan state - pola ini diambil dari dunia CRIU dan adopsi live migration, lalu di-productize untuk Kubernetes. Implikasi langsungnya: Claude Code atau coding agent lain yang biasanya kehilangan state saat pod di-evict sekarang bisa di-suspend lalu di-resume di node yang berbeda, menurunkan friksi operasional secara signifikan. Sandbox execution via gVisor memberi isolasi kuat untuk eksekusi kode arbitrer - sangat relevan untuk tool agent yang menjalankan script tidak tepercaya atau workflow yang memodifikasi filesystem. Request parking adalah fitur lain yang sering tidak terlihat tapi menurunkan tail latency secara material: ketika worker pool penuh, router menahan (park) request masuk di antrian internal hingga worker bebas, bukan langsung return 503 seperti ingress tradisional. Untuk beban agent yang trafiknya bursty sepanjang hari - misalnya coding assistant yang aktif hanya saat jam kerja - pola ini menurunkan kebutuhan over-provision worker dan biaya infrastruktur terkait. Autoscaled WorkerPool dengan HPA fed by prometheus-adapter menambah dimensi lain: scaling policy berdasarkan assigned-worker count aktual, bukan CPU/memory generik, sehingga tuning bisa lebih akurat terhadap pola beban agent.",
+      "Batasan yang perlu dipahami. Setup awal memerlukan cluster Kubernetes yang sudah berjalan; untuk GKE, repo menyediakan tools/setup-gcp bootstrap yang men-provision GKE cluster, Redis (Valkey), GCS bucket, dan IAM bindings sekaligus - tetap saja, ini bukan tool single-binary yang bisa dijalankan di laptop dalam 5 menit. Kebutuhan akan gVisor atau cloud-hypervisor menambah requirement di node worker; EKS perlu AMI custom, GKE Autopilot tidak mendukung gVisor, dan banyak managed K8s membatasi akses ke /dev/kvm. Proyek relatif muda (3 bulan per Agustus 2026) sehingga meski arsitekturnya matang, ekosistem plugin, integrasi vendor (OpenTelemetry, service mesh), dan track record deployment multi-tahun masih Terbatas - adopsi early-adopter masih di komunitas kecil. Konsep actor, atespace, dan ActorTemplate juga butuh waktu untuk dipahami; developer Kubernetes yang sudah nyaman dengan Deployment akan perlu belajar lapisan abstraksi baru sebelum bisa memanfaatkan fitur penuh, terutama untuk kebutuhan multi-template WorkerPool sharing dan dynamic CRD routing. Namun untuk tim Indonesia yang sudah investasi di Kubernetes (banyak startup teknologi dan enterprise di Jakarta, Bandung, Surabaya yang operate K8s sendiri atau via GKE), Agent Substrate adalah salah satu proyek paling menarik di paruh kedua 2026 untuk orkestrasi coding assistant atau workflow agent dengan state persistence nyata - dan Apache-2.0 license menjadikannya investasi tooling yang sustainable jangka panjang.",
+    ],
+    link: "https://github.com/agent-substrate/substrate",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-22",
+    updatedAt: "2026-08-22",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
