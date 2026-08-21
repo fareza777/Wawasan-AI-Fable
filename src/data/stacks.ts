@@ -2982,6 +2982,46 @@ export const stacks: Review[] = [
     date: "2026-08-20",
     featured: false,
   },
+  {
+    slug: "opus-clip",
+    name: "OpusClip",
+    tagline: "AI repurposing video panjang jadi klip pendek viral otomatis",
+    tags: ["OpusClip", "Freemium", "Video Gen", "Short-Form"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 9.0 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 7.5 },
+    ],
+    summary:
+      "OpusClip mengubah video panjang (podcast, wawancara, webinar, VOD) menjadi klip pendek 30-90 detik yang siap posting di TikTok, YouTube Shorts, dan Instagram Reels. AI memilih momen paling menarik secara otomatis, menambahkan subtitle, dan mengekspor format vertikal 9:16 tanpa potongan manual.",
+    pros: [
+      "Deteksi momen viral otomatis berdasarkan speech content dan engagement cue",
+      "Auto-reframe landscape ke portrait 9:16 dengan face tracking solid",
+      "Subtitle animasi multi-bahasa, akurat untuk bahasa Inggris dan cukup baik untuk Indonesia",
+      "Export langsung ke TikTok, YouTube Shorts, dan Instagram dengan satu klik",
+      "Antarmuka sangat simpel — drag video, tunggu proses, unduh hasil",
+    ],
+    cons: [
+      "Paket gratis sangat terbatas (10 menit upload per bulan, watermark)",
+      "Pemrosesan video 30-60 menit bisa makan 15-30 menit tergantung antrian server",
+      "Akurasi deteksi momen turun signifikan untuk video berbahasa Indonesia penuh slang",
+    ],
+    verdict:
+      "Tool repurposing video paling praktis untuk kreator dan tim konten Indonesia di 2026; alasan utamanya adalah efisiensi waktu dari 1 video panjang menjadi 5-10 klip pendek yang siap posting, menggantikan pekerjaan editor pemula.",
+    body: [
+      "Pergeseran konsumsi video dari format landscape YouTube ke short-form portrait (TikTok, Shorts, Reels) sudah terjadi sejak 2022, tapi workflow mengkonversi video panjang menjadi klip pendek tetap menjadi bottleneck terbesar untuk kreator solo dan tim konten kecil. Editor harus rewatch video, identifikasi momen menarik, potong dengan presisi, reframe ke 9:16, tambahkan subtitle, dan ekspor dalam format berbeda untuk setiap platform — pekerjaan yang makan 2-3 jam per video panjang. OpusClip masuk sebagai solusi: unggah video 30-60 menit, AI memilih 5-10 momen paling berpotensi viral, melakukan reframe otomatis ke portrait, menghasilkan subtitle yang sudah di-style, dan mengekspor file siap posting.",
+      "Yang membuat OpusClip menonjol dibanding tool pemotong otomatis lain (mis. Riverside, Descript, atau bahkan fitur built-in CapCut) adalah kualitas deteksi momennya. AI tidak hanya memotong di jeda natural — ia menganalisis speech content untuk menemukan kalimat yang menarik, hook, dan payoff emosional, lalu memberikan skor kelayakan viral pada setiap klip kandidat. Format output standar 9:16 dengan face tracking yang menjaga subjek utama tetap di frame, plus template subtitle animasi (bukan subtitle statis) yang sudah mengikuti tren short-form 2026. Untuk kreator yang fokus ke podcast, wawancara, atau video webinar, hasil OpusClip sering kali sudah cukup publish tanpa edit tambahan.",
+      "Fitur tambahan yang jarang dimiliki tool pesaing adalah multi-platform export: sekali proses, OpusClip menghasilkan varian yang sudah di-tune untuk TikTok (rasio aspek, durasi 60-90 detik, hook di 3 detik pertama), YouTube Shorts (lebih pendek, 30-60 detik), dan Instagram Reels (lebih stylish, durasi 30 detik). AI Virality Score yang ditampilkan sebelum proses juga membantu kreator memutuskan apakah video mereka punya potensi sebelum invest waktu 30 menit untuk proses. Untuk tim marketing Indonesia yang produksi webinar mingguan atau podcast multi-bahasa, ini menggantikan workflow editor-entry-level yang biasanya di-outsource.",
+      "Untuk pengguna dan kreator Indonesia, catatan utamanya adalah akurasi subtitle dan pricing. Bahasa Indonesia didukung, tapi akurasi untuk slang Jakarta, bahasa daerah, atau istilah teknis turun dibanding bahasa Inggris — solusi pragmatis adalah review manual subtitle 30 detik sebelum publish. Pricing Pro $19 per bulan (sekitar Rp 300 ribu) dan Scale $41 per bulan (sekitar Rp 650 ribu) untuk 200 menit upload; paket gratis 10 menit/bulan dengan watermark cocok untuk eksperimen awal. Tidak ada add-on mata uang IDR atau invoice lokal — pembayaran via kartu kredit kena charge international 3-5 persen. Kekecewaan utama kreator Indonesia adalah OpusClip tidak punya fitur speech-to-text untuk bahasa daerah (Jawa, Sunda, Minang), yang membuat repurposing ceramah lokal kurang akurat. Untuk kreator yang videonya berbahasa Indonesia standar dan fokus ke audiens Indonesia, OpusClip adalah tool repurposing paling efisien di 2026; untuk yang videonya multilingual atau butuh kontrol manual penuh, Descript atau Adobe Premiere tetap lebih fleksibel meskipun lebih berat di learning curve.",
+    ],
+    link: "https://www.opus.pro",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-21",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

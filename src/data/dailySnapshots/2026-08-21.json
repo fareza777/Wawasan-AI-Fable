@@ -1,0 +1,157 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "21 Agustus 2026",
+  "period": {
+    "date": "2026-08-21",
+    "label": "21 Agustus 2026",
+    "path": "/repo/daily/2026/08/21"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-21T00:03:32.106Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "githubUrl": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "trendshiftUrl": "https://trendshift.io/repositories/8731",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2024-03-11T02:57:34Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "CopilotKit/OpenBot",
+      "owner": "CopilotKit",
+      "repo": "OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "githubUrl": "https://github.com/CopilotKit/OpenBot",
+      "trendshiftUrl": "https://trendshift.io/repositories/175080",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-08-17T00:44:59Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "AprilNEA/OpenLogi",
+      "owner": "AprilNEA",
+      "repo": "OpenLogi",
+      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+      "githubUrl": "https://github.com/AprilNEA/OpenLogi",
+      "trendshiftUrl": "https://trendshift.io/repositories/42303",
+      "language": "Rust",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-05-24T10:10:36Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "s1dashu/ip-as-logo-skill",
+      "owner": "s1dashu",
+      "repo": "ip-as-logo-skill",
+      "description": "A compact Codex skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.",
+      "githubUrl": "https://github.com/s1dashu/ip-as-logo-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/167704",
+      "topics": [
+        "AI image generation",
+        "AI skills"
+      ],
+      "dateCreated": "2026-08-18T13:59:23Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "mahlernim/google-timeline-visualizer",
+      "owner": "mahlernim",
+      "repo": "google-timeline-visualizer",
+      "description": "Visualize your year in travel using your Google Location History (Timeline) data",
+      "githubUrl": "https://github.com/mahlernim/google-timeline-visualizer",
+      "trendshiftUrl": "https://trendshift.io/repositories/174073",
+      "language": "Kotlin",
+      "topics": [
+        "Data visualization"
+      ],
+      "dateCreated": "2025-12-16T06:49:16Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "volcengine/OpenViking",
+      "owner": "volcengine",
+      "repo": "OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+      "githubUrl": "https://github.com/volcengine/OpenViking",
+      "trendshiftUrl": "https://trendshift.io/repositories/19668",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI memory",
+        "RAG"
+      ],
+      "dateCreated": "2026-01-05T07:11:17Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "santifer/career-ops",
+      "owner": "santifer",
+      "repo": "career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "githubUrl": "https://github.com/santifer/career-ops",
+      "trendshiftUrl": "https://trendshift.io/repositories/25195",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Resume building"
+      ],
+      "dateCreated": "2026-04-04T18:21:18Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "zenbu-labs/terminal-code",
+      "owner": "zenbu-labs",
+      "repo": "terminal-code",
+      "description": "VS Code in the terminal",
+      "githubUrl": "https://github.com/zenbu-labs/terminal-code",
+      "trendshiftUrl": "https://trendshift.io/repositories/174980",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-08T05:35:40Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    }
+  ]
+}
