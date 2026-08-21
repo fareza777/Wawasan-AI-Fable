@@ -1998,18 +1998,48 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     ],
   },
   "s1dashu/ip-as-logo-skill": {
-    description:
-      "Skill agen AI yang menuntun model image-gen untuk menghasilkan IP mascot logo yang sangat sederhana, lucu, dan siap-pakai komersial — siluet tebal membulat, dua warna IP plus satu warna background solid, dan komposisi dominan di sudut bawah.",
-    highlights: [
-      "Skill berformat Agent Skills (agentskills.io) yang fokus ke 'simplest possible cute IP character' — bukan detailed illustration, melainkan logo yang tetap terbaca di 32×32 dengan 4–7 bentuk geometris besar dan dua warna IP plus satu warna background.",
-      "Workflow tiga arah + enam kandidat: agen mengajukan tiga arah desain (tiga IP subject berbeda, masing-masing diikat ke atribut produk), setelah disetujui generate 6 kandidat independen split lower-left/lower-right — A1/A2/B1/B2/C1/C2 — untuk menjaga variasi.",
-      "Kompatibel dengan banyak coding agent yang punya image-gen bawaan: Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, Replit Agent — bukan image generator, melainkan 'policy file' yang menuntun model mana pun menghasilkan IP mascot konsisten.",
-      "Lengkap dengan situs ipaslogo.com (Cloudflare R2 + Supabase) yang menawarkan logo siap-pakai gratis untuk komersial, plus SKILL.md yang bisa di-install via `npx skills@latest add s1dashu/ip-as-logo-skill` — relevan untuk founder dan tim brand Indonesia yang butuh mascot cepat tanpa harus hiring desainer.",
-    ],
-  },
-          };
+      description:
+        "Skill agen AI yang menuntun model image-gen untuk menghasilkan IP mascot logo yang sangat sederhana, lucu, dan siap-pakai komersial — siluet tebal membulat, dua warna IP plus satu warna background solid, dan komposisi dominan di sudut bawah.",
+      highlights: [
+        "Skill berformat Agent Skills (agentskills.io) yang fokus ke 'simplest possible cute IP character' — bukan detailed illustration, melainkan logo yang tetap terbaca di 32×32 dengan 4–7 bentuk geometris besar dan dua warna IP plus satu warna background.",
+        "Workflow tiga arah + enam kandidat: agen mengajukan tiga arah desain (tiga IP subject berbeda, masing-masing diikat ke atribut produk), setelah disetujui generate 6 kandidat independen split lower-left/lower-right — A1/A2/B1/B2/C1/C2 — untuk menjaga variasi.",
+        "Kompatibel dengan banyak coding agent yang punya image-gen bawaan: Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, Replit Agent — bukan image generator, melainkan 'policy file' yang menuntun model mana pun menghasilkan IP mascot konsisten.",
+        "Lengkap dengan situs ipaslogo.com (Cloudflare R2 + Supabase) yang menawarkan logo siap-pakai gratis untuk komersial, plus SKILL.md yang bisa di-install via `npx skills@latest add s1dashu/ip-as-logo-skill` — relevan untuk founder dan tim brand Indonesia yang butuh mascot cepat tanpa harus hiring desainer.",
+      ],
+    },
+    "openai/codex": {
+      description:
+        "CLI coding agent resmi OpenAI yang berjalan lokal di terminal — multimodal (baca screenshot & diagram), bisa kerja non-interaktif lewat flag untuk otomasi CI/headless, dan jadi pondasi Codex IDE extension.",
+      highlights: [
+        "Coding agent resmi OpenAI versi CLI yang berjalan lokal di terminal — bukan web wrapper, melainkan binary native (Rust + Node) yang kamu install sekali di Mac/Linux/Windows lewat `curl chatgpt.com/codex/install.sh | sh`.",
+        "Multimodal: agen bisa 'melihat' screenshot, diagram, dan mock UI lewat lampiran gambar — bukan hanya teks, sehingga alur kerja UI iteration (kasih mockup → minta implement) jadi natural.",
+        "Headless mode lewat flag (`codex exec 'refactor foo.ts'`) untuk automation CI/CD, plus approval policy & sandbox yang bisa dikonfigurasi per-project lewat `config.toml`; sama produktivitasnya dengan Codex IDE extension tapi tanpa batas UI.",
+        "Repositori canonical untuk Codex CLI, IDE, dan Web — README menjelaskan ketiga pengalaman (CLI / IDE / Web) dan installer sudah multi-platform, relevan untuk developer Indonesia yang ingin self-host loop coding agent OpenAI di workstation lokal tanpa langganan ChatGPT Pro.",
+      ],
+    },
+    "Wei-Shaw/sub2api": {
+      description:
+        "Gateway API self-hosted (Go + Vue + Postgres + Redis) untuk distribusi kuota subscription LLM ke banyak akun sekaligus — frontend mirip OpenAI/Anthropic resmi, jadi plug-and-play ke Codex, Claude Code, dan tool coding lain.",
+      highlights: [
+        "API gateway self-hosted yang ditulis Go (backend) + Vue 3 (dashboard) + Postgres + Redis — salah satu tumpukan paling rapi di kategori 'subscription sharing' karena fokusnya bukan proxy asal, melainkan platform multi-user dengan billing, statistik, dan monitoring lengkap.",
+        "Kompatibel dengan protocol OpenAI & Anthropic lewat satu endpoint — Claude Code, Codex, Cline, dan tool coding lain tinggal tukar base URL tanpa patch; README menjelaskan mapping endpoint dan token format per upstream.",
+        "Brought-in fitur enterprise di versi self-host: redacted logs untuk privasi, weight-based routing ke banyak akun upstream (anti-ban satu akun), dashboard Vue lengkap dengan i18n (Inggris/中文/日本語).",
+        "Repo ini memang eksplisit bilang melanggar ToS Anthropic/OpenAI — pakai hanya untuk eksperimen, bukan komersial — tapi secara engineering menarik dipelajari sebagai contoh gateway AI kelas produksi; relevan untuk engineer Indonesia yang riset 'multi-tenant LLM proxy' atau butuh distribusi quota ke tim dengan kontrol biaya.",
+      ],
+    },
+    "canopy-network/canopy": {
+      description:
+        "Implementasi resmi Go dari protokol Canopy Network — blockchain Layer-1 rekursif (chain bootstrap chain lain jadi independen) yang RPC-nya kompatibel Ethereum (MetaMask plug-in lewat `/v1/eth`).",
+      highlights: [
+        "Node full client resmi (Go 1.21+) untuk Canopy Network, blockchain Layer-1 dengan arsitektur 'recursive' — chain dapat me-bootstrap chain lain jadi independen, sehingga membentuk 'web of utility dan security' yang saling menopang, bukan sekadar sharding biasa.",
+        "Ethereum-RPC kompatibel lewat endpoint `/v1/eth` — MetaMask, Etherscan, dan tool Ethereum lain bisa plug-in langsung tanpa modifikasi, karena Canopy expose native transfer lewat interface yang familiar.",
+        "Stack lengkap di repo: RPC spec, FSM specification, protocol docs, plus panduan `docker compose` untuk alphanet lokal — engineer bisa clone, `make build`, dan jalankan node + faucet + explorer di laptop untuk eksplorasi tanpa stake.",
+        "Lisensi MIT dan tim Canopy secara eksplisit menarik untuk komunitas, termasuk developer Indonesia yang ingin eksplorasi Layer-1 alternatif di luar Ethereum/Solana — terutama untuk use case launchpad multi-chain (chain baru bisa 'naik' ke chain Canopy sebagai distribusi likuiditas awal).",
+      ],
+    },
+    };
 
-                                                                                                                                            // Helper: lookup dengan fallback ke template-generated highlights
-                                                                                                                                            export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
-                                                                                                                                              return WEEKLY_TOP[fullName];
-                                                                                                                                            }
+  // Helper: lookup dengan fallback ke template-generated highlights
+  export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
+    return WEEKLY_TOP[fullName];
+  }
