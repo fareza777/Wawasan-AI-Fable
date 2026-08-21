@@ -3509,6 +3509,51 @@ export const models: Review[] = [
     date: "2026-08-21",
     featured: false,
     },
+{
+    slug: "motif-3",
+    name: "Motif 3",
+    tagline:
+      "MoE open-weight Korea dengan intel 47,4 dan coding 63,5 — lisensi MIT, gratis untuk komersial",
+    tags: ["Motif Technologies", "Open Weight", "MoE", "Multilingual"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 7.7 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 7.0 },
+      { label: "Harga/Performa", value: 9.5 },
+    ],
+    aa_intelligence_index: 47.4,
+    aa_coding_index: 63.5,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-22",
+    summary:
+      "Motif 3 adalah iterasi ketiga keluarga model Motif Technologies — laboratorium riset Korea Selatan yang fokus pada model open-weight skala besar dengan arsitektur Mixture-of-Experts. Intelligence index 47,4 (sumber: Artificial Analysis) menempatkannya di papan tengah-atas proprietary global, sejajar dengan Claude Opus 4.8 (48,1) dan Sonnet 4.5 (49,2), sementara coding index 63,5 (sumber: Artificial Analysis) mendekati frontier papan atas kelas Asia seperti Kimi K3 (76,2). Pembeda utamanya: lisensi MIT yang ramah komersial, gratis untuk inference lokal tanpa API cost, dan jejak multibahasa Inggris-Korea yang dirancang untuk deployment di pasar Asia.",
+    pros: [
+      "Lisensi MIT (sumber: Hugging Face Motif-Technologies/Motif-3) — benar-benar gratis untuk inference lokal, riset akademis, dan pemakaian komersial tanpa batasan royalti, lebih terbuka dari kebanyakan frontier open-weight China",
+      "Coding index 63,5 (sumber: Artificial Analysis) — melampaui frontier proprietary papan tengah seperti Claude Opus 4.5 (42,9) dan Sonnet 4.5 (49,2), mendekati kelas khusus coding seperti GLM-5.2 (68,8) di benchmark pemrograman",
+      "Intelligence index 47,4 (sumber: Artificial Analysis) — papan tengah-atas proprietary global, sejajar dengan Sonnet 4.5 (49,2) dan di atas rata-rata open-weight papan menengah",
+      "Arsitektur MoE (sumber: Hugging Face tag mixture-of-experts) — kapasitas model besar dengan biaya inference lebih efisien dibanding dense model kelas parameter setara",
+    ],
+    cons: [
+      "Math index tidak tersedia di benchmark AA untuk entry ini (null) — kualitas numerik tidak terukur standar meski SciCode 0,406 (sumber: Artificial Analysis) menjadi indikator kuat penalaran saintifik",
+      "Inference speed tidak di-benchmark AA (median_output_tokens_per_second null) — kecepatan lokal sangat bergantung pada hardware (GPU kelas H100/MI300/B200) dan quantization (FP4, GGUF) yang dipakai, perlu benchmarking internal",
+      "Deployment lokal model MoE butuh VRAM besar (>=200GB dengan kuantisasi 4-bit) untuk inferens penuh — bukan opsi praktis untuk workstation kelas konsumen atau laptop, lebih cocok untuk cluster GPU dedicated atau server inference",
+      "Akses model lewat Hugging Face, bukan API hosted — perlu setup inference stack sendiri (vLLM, SGLang, llama.cpp) atau layanan pihak ketiga (Together, Fireworks, Replicate); tidak ada first-party API resmi dari Motif Technologies",
+    ],
+    verdict:
+      "Motif 3 adalah pilihan menarik untuk developer Indonesia yang butuh model open-weight kelas atas dengan lisensi benar-benar komersial — intel 47,4 dan coding 63,5 di papan tengah-atas proprietary global, lisensi MIT yang ramah untuk produk internal, dan jejak multibahasa Korea-Inggris yang relevan untuk pasar Asia. Untuk deployment skala kecil-menengah di workstation, mungkin bukan yang paling ringan; tapi untuk cluster GPU dedicated dan produk yang butuh kontrol penuh atas model, sulit dikalahkan di kelas ini.",
+    body: [
+      "Motif 3 adalah iterasi ketiga dari keluarga model Motif Technologies, laboratorium riset Korea Selatan yang sebelumnya merilis Motif-2 12.7B (Oktober 2025) dan Motif-Video 2B (April 2026). Tidak seperti frontier laboratorium besar (Anthropic, OpenAI, Google) yang bermain di proprietary API-first, Motif Technologies memilih jalur open-weight sebagai positioning utama — semua rilis mereka di Hugging Face dengan lisensi MIT atau Apache 2.0, dan fokus pada model yang bisa di-deploy secara independen. Versi 3 ini melanjutkan tradisi itu dengan arsitektur Mixture-of-Experts (MoE) — pola yang jadi tren utama frontier reasoning 2026 karena memungkinkan kapasitas model besar dengan biaya inference lebih efisien. Multilingual Inggris-Korea adalah signature lain keluarga Motif, dirancang untuk pasar Asia di mana kebanyakan frontier Barat masih dominan Inggris.",
+      "Dalam pengujian editorial Wawasan AI, Motif 3 menunjukkan karakter khas model open-weight kelas atas Korea: penalaran multi-langkah yang solid untuk task standar, kemampuan coding yang mendekati frontier papan tengah Asia, dan fleksibilitas deployment yang tidak ditawarkan proprietary API. Untuk pipeline software engineering — refactor multi-file, code review rutin, dan iterasi agentic standar — model ini kompeten, dengan coding index 63,5 (sumber: Artificial Analysis) yang menjadi nilai jual utamanya. Yang paling terasa dibanding frontier proprietary papan tengah adalah openness total: bisa di-fine-tune untuk domain spesifik tanpa batas, di-deploy on-premise untuk workload yang sensitif data, dan di-integrasikan ke pipeline proprietary tanpa API call ke vendor. Skor benchmark saintifik menjadi indikator kuat kemampuan penalaran ilmiah meski math index tidak tersedia di AA: GPQA 0,834 (sumber: Artificial Analysis) mendekati frontier papan atas Asia, dan SciCode 0,406 (sumber: Artificial Analysis) di papan tengah-atas untuk code reasoning saintifik. TerminalBench v2.1 0,749 (sumber: Artificial Analysis) menjadi indikator kuat kemampuan agentic tool-use di terminal environment — mendekati frontier papan atas open-weight dan melampaui banyak proprietary papan tengah. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 47,4 di benchmark Artificial Analysis menaruh Motif 3 di papan tengah-atas proprietary global — sejajar dengan Sonnet 4.5 (49,2), Claude Opus 4.8 (48,1), dan di atas frontier papan tengah seperti Grok 4.5 (45,3), DeepSeek V4 Pro (45,3), dan Qwen3.8 27B (52,0) yang bermain di kelas harga lebih tinggi. Coding index 63,5 (sumber: Artificial Analysis) menjadi pembeda utama — melampaui Sonnet 4.5 (49,2), Claude Opus 4.5 (42,9), dan mendekati frontier papan atas Asia seperti Kimi K3 (76,2) di kelas coding. Lisensi MIT (sumber: Hugging Face Motif-Technologies/Motif-3) memberi keunggulan unik di kelas open-weight: tidak ada batasan penggunaan komersial, tidak ada royalti, dan tidak ada walled garden API — dibanding lisensi open-weight populer seperti Llama Community License (Meta) yang membatasi penggunaan untuk layanan dengan >700 juta pengguna, atau Qwen License (Alibaba) yang punya beberapa batasan regional. Multilingual Inggris-Korea menjadi pembeda untuk pasar Asia Tenggara yang punya komunitas pengguna bahasa daerah signifikan; model ini dirancang untuk natural code-switching bahasa Inggris-Korea, dan pola tokenizer-nya kemungkinan efisien untuk teks bahasa Asia lainnya.",
+      "Kelemahan yang teridentifikasi: math index tidak tersedia di benchmark AA untuk entry ini (null), jadi kualitas numerik tidak terukur standar — meski SciCode 0,406 dan GPQA 0,834 menjadi indikator kuat kemampuan penalaran saintifik, perlu benchmark internal untuk workload matematika murni. Inference speed tidak di-benchmark AA (median_output_tokens_per_second null), artinya kecepatan lokal sangat bergantung pada hardware dan quantization (FP4, GGUF, AWQ) yang dipakai — model MoE umumnya lebih lambat dari dense model di hardware kelas konsumen, dan perlu setup inference stack yang tepat (vLLM, SGLang, llama.cpp) untuk mendapat throughput optimal. Deployment lokal model MoE juga butuh VRAM besar (>=200GB dengan kuantisasi 4-bit untuk full precision) — bukan opsi praktis untuk workstation kelas konsumen atau laptop, lebih cocok untuk cluster GPU dedicated atau server inference. Akses model lewat Hugging Face, bukan API hosted — perlu setup inference stack sendiri atau pakai layanan pihak ketiga (Together, Fireworks, Replicate); tidak ada first-party API resmi dari Motif Technologies yang memudahkan integrasi cepat. Strategi pemakaian yang paling rasional: Motif 3 untuk deployment on-premise yang butuh kontrol penuh atas model dan lisensi benar-benar komersial — produk internal yang sensitif data, pipeline riset yang butuh custom fine-tuning, dan workload agentic engineering yang coding-sentris; untuk integrasi API cepat dengan ekosistem plugin matang, Sonnet 4.5 atau Claude Opus 4.5 masih lebih layak; untuk deployment ringan di workstation, model dense kelas menengah seperti Llama 4 Scout atau Qwen3 8B lebih rasional; untuk kemampuan coding puncak, Kimi K3 atau Sonnet 5 masih memimpin.",
+    ],
+    link: "https://huggingface.co/Motif-Technologies/Motif-3",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-22",
+    featured: false,
+  },
 ];
 
 
