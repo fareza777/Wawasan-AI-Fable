@@ -4054,6 +4054,60 @@ export const repos: Review[] = [
     updatedAt: "2026-08-22",
     featured: false,
   },
+  {
+    slug: "openai-codex",
+    name: "OpenAI Codex CLI",
+    tagline: "Coding agent ringan dari OpenAI yang berjalan langsung di terminal, ditulis dalam Rust",
+    tags: ["AI Agent", "Coding Assistant", "Rust", "CLI"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Keksiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Codex CLI adalah coding agent ringan dari OpenAI yang berjalan langsung di terminal — ditulis dalam Rust untuk performa dan jejak memori minimal, dengan fokus pada eksekusi tugas coding terstruktur lewat perintah teks natural. Diposisikan sebagai pendamping Claude Code dan Gemini CLI di arena CLI coding agent, repo ini menjadi salah satu titik masuk paling cepat bagi developer Indonesia yang ingin bereksperimen tanpa instalasi IDE plugin.",
+    highlights: [
+      "Coding agent terminal-first dengan antarmuka REPL interaktif: pengguna mengetik instruksi bahasa natural, agent merencanakan, mengeksekusi, dan menampilkan diff sebelum perubahan diterapkan",
+      "TUI ringan berbasis Rust — startup cepat, jejak memori kecil, distribusi binary statis untuk macOS, Linux, dan Windows tanpa runtime tambahan",
+      "Model OpenAI sebagai backend default dengan dukungan multi-provider melalui konfigurasi; mendukung GPT-5, GPT-4.1, dan model reasoning sesuai kebutuhan tugas",
+      "Mode non-interaktif (`codex exec`) untuk otomasi CI/CD dan pipeline scripting — hasil deterministik, exit code jelas, dan log audit yang bisa diparse",
+      "Approval mode configurable: full-auto untuk trusted environment, workspace-write untuk pekerjaan terbatas direktori, atau default read-only prompt per aksi",
+      "Manajemen sesi dan riwayat percakapan: agent mengingat konteks dalam satu sesi, dan sesi bisa di-resume lewat flag `--resume`",
+      "Integrasi native dengan Git: agent memahami status repo, branch aktif, dan file yang dimodifikasi sebelum menyarankan perubahan",
+      "Apache-2.0 licensed dengan 113 ribu bintang dan 17 ribu fork di GitHub per Agustus 2026 — adopsi sangat tinggi untuk kategori CLI coding agent",
+      "Tool calling untuk baca/tulis file, eksekusi shell command, dan pengujian perubahan — agent dapat menulis kode, menjalankan test, lalu memperbaiki iterasi berikutnya",
+      "Distribusi lewat Homebrew, npm, dan installer langsung — menurunkan friksi adopsi untuk developer di macOS, Linux, dan Windows",
+    ],
+    pros: [
+      "Performa Rust terasa di startup time dan konsumsi memori — dibanding CLI agent berbasis Node.js, perbedaan ini langsung terasa di laptop development kelas menengah",
+      "Repositori dipelihara langsung oleh tim OpenAI, sehingga kompatibilitas dengan model frontier (GPT-5, GPT-4.1 reasoning) selalu menjadi yang pertama",
+      "Mode non-interaktif `codex exec` membuka pintu otomasi CI: pipeline pengujian, migrasi kode, atau batch refactor bisa dijalankan lewat shell script dengan overhead minim",
+      "Antarmuka terminal-first terasa natural untuk developer yang sudah terbiasa dengan git, ripgrep, dan alat baris perintah — tidak perlu meninggalkan workflow harian",
+      "Approval mode berlapis memberikan kontrol granular: proyek open-source bisa pakai full-auto, sedangkan kode proprietary bisa pakai read-only prompt per aksi",
+    ],
+    cons: [
+      "Backend default adalah API OpenAI — tidak ada opsi native untuk model lokal atau provider alternatif tanpa konfigurasi tambahan; untuk konteks Indonesia dengan biaya API dolar, ini pertimbangan biaya serius",
+      "Dibandingkan Claude Code, ekosistem plugin dan integrasi editor (VS Code, JetBrains) masih terbatas — penggunaan penuh tetap di dalam terminal",
+      "Riwayat percakapan dan memori tidak bertahan antar sesi secara otomatis (perlu `--resume` manual atau flag sesi eksplisit) — alur kerja multi-hari butuh disiplin tambahan",
+      "Tidak ada mode sub-agent atau orkestrasi multi-task bawaan seperti pada DeerFlow atau LangGraph — untuk workflow riset atau paralelisme, Codex CLI bukan pilihan yang tepat",
+    ],
+    verdict:
+      "Codex CLI adalah titik masuk paling solid untuk developer yang ingin coding agent berkemampuan GPT frontier langsung di terminal, dengan performa Rust yang terasa. Sangat relevan untuk engineer Indonesia yang sudah nyaman di CLI dan ingin mengintegrasikan kemampuan model frontier ke workflow harian tanpa plugin IDE — dengan catatan biaya API OpenAI dan absennya mode paralel yang membatasi untuk workflow riset atau refactor multi-repo.",
+    body: [
+      "Codex CLI menempati ceruk yang sangat spesifik di pasar coding agent: terminal-first, Rust-native, dan dipelihara langsung oleh OpenAI. Sejak awal 2026, repo ini konsisten menjadi salah satu trending mingguan di GitHub — dan per Agustus 2026, telah melampaui 113 ribu bintang dengan 17 ribu fork, menandakan adopsi yang solid di komunitas developer. Bandingannya jelas: Claude Code sebagai incumbent dengan integrasi IDE matang, Gemini CLI sebagai alternatif Google, dan Codex CLI sebagai pilihan OpenAI yang mengunggulkan performa runtime dan startup time. Untuk developer Indonesia yang sudah terbiasa dengan command line, repositori ini adalah salah satu cara paling ringkas untuk mulai bereksperimen dengan kemampuan coding model frontier.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah betapa cepatnya CLI ini hidup. Dibanding CLI agent berbasis Node.js, perbedaan pada cold-start terasa material — prompt pertama muncul dalam hitungan ratus milidetik, bukan beberapa detik. Untuk developer yang sering berpindah konteks (script kecil di sini, migrasi kode di sana, batch rename di tempat lain), responsiveness seperti ini mengubah kebiasaan kerja. TUI-nya minim namun fungsional: area prompt, area riwayat, dan panel diff untuk preview perubahan sebelum diterapkan. Workflow standar yang berulang — baca file, ubah, uji, commit — bisa selesai dalam satu sesi tanpa harus bolak-balik ke editor eksternal.",
+      "Aspek yang paling menarik untuk produksi adalah mode `codex exec`. Mode non-interaktif ini mengubah Codex CLI dari alat pribadi menjadi komponen pipeline: cukup `codex exec 'refactor module X supaya kompatibel dengan Python 3.12'` dalam shell script atau GitHub Action, agent bekerja di salinan kerja, menampilkan diff, dan exit dengan kode 0 bila sukses. Pola ini memungkinkan otomasi migrasi kode, audit dependency, atau batch refactor lintas puluhan repositori dengan overhead minim. Approval mode yang configurable (full-auto, workspace-write, default read-only) memberi kontrol yang dibutuhkan untuk skenario sensitif — tim yang menjaga kerahasiaan repositori tidak perlu khawatir agent akan menulis ke luar direktori yang diizinkan. Integrasi native dengan Git menambah lapisan keamanan: agent memahami status repo dan hanya menyentuh file yang relevan.",
+      "Batasan yang perlu diperhitungkan. Backend default adalah API OpenAI, dan tidak ada opsi native untuk model lokal atau provider alternatif tanpa konfigurasi tambahan; untuk developer Indonesia yang sensitif terhadap biaya API dolar, ini pertimbangan serius — strategi yang masuk akal adalah membatasi Codex CLI untuk kasus bernilai tinggi dan menggunakan model lokal untuk otomasi sehari-hari. Ekosistem plugin dan integrasi editor masih terbatas dibanding Claude Code; penggunaan penuh tetap di dalam terminal, dan developer yang lebih nyaman dengan IDE plugin mungkin menemukan workflow ini kurang ergonomis. Memori antar sesi tidak otomatis — perlu disiplin untuk `--resume` atau flag sesi eksplisit saat melanjutkan pekerjaan lintas hari. Tidak ada mode sub-agent paralel bawaan, sehingga untuk workflow riset atau refactor multi-repo yang membutuhkan paralelisme, tools seperti DeerFlow atau CrewAI tetap jadi pilihan. Walau dengan segala keterbatasan itu, kombinasi performa, fokus, dan backing resmi OpenAI menjadikan repo ini investasi tooling yang sangat layak untuk engineer di paruh kedua 2026.",
+    ],
+    link: "https://github.com/openai/codex",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-23",
+    updatedAt: "2026-08-23",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
