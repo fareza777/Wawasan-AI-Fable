@@ -1,0 +1,130 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-22T02:35:57.621Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "tonenewttrowel/iptv-lab",
+      "owner": "tonenewttrowel",
+      "repo": "iptv-lab",
+      "description": "IPTV Lab",
+      "githubUrl": "https://github.com/tonenewttrowel/iptv-lab",
+      "trendshiftUrl": "https://trendshift.io/repositories/168610",
+      "topics": [],
+      "dateCreated": "2026-08-06T01:12:17Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Northryocitadel/ps4-jailbreak-zen",
+      "owner": "Northryocitadel",
+      "repo": "ps4-jailbreak-zen",
+      "description": "Ps4 Jailbreak Zen",
+      "githubUrl": "https://github.com/Northryocitadel/ps4-jailbreak-zen",
+      "trendshiftUrl": "https://trendshift.io/repositories/169897",
+      "topics": [],
+      "dateCreated": "2026-08-06T01:29:58Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Quantumrasnips/netflix-nova",
+      "owner": "Quantumrasnips",
+      "repo": "netflix-nova",
+      "description": "Netflix Nova",
+      "githubUrl": "https://github.com/Quantumrasnips/netflix-nova",
+      "trendshiftUrl": "https://trendshift.io/repositories/174507",
+      "topics": [],
+      "dateCreated": "2026-08-06T02:51:57Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "NaturalRaikageAxe/4k-video-downloader-ultimate",
+      "owner": "NaturalRaikageAxe",
+      "repo": "4k-video-downloader-ultimate",
+      "description": "4K Video Downloader Ultimate",
+      "githubUrl": "https://github.com/NaturalRaikageAxe/4k-video-downloader-ultimate",
+      "trendshiftUrl": "https://trendshift.io/repositories/168228",
+      "topics": [],
+      "dateCreated": "2026-08-06T00:42:52Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Glazepicapture/advanced-systemcare-forge",
+      "owner": "Glazepicapture",
+      "repo": "advanced-systemcare-forge",
+      "description": "Advanced Systemcare Forge",
+      "githubUrl": "https://github.com/Glazepicapture/advanced-systemcare-forge",
+      "trendshiftUrl": "https://trendshift.io/repositories/174071",
+      "topics": [],
+      "dateCreated": "2026-08-06T00:43:16Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "DimArmorerRank/tiktok-downloader-works",
+      "owner": "DimArmorerRank",
+      "repo": "tiktok-downloader-works",
+      "description": "Tiktok Downloader Works",
+      "githubUrl": "https://github.com/DimArmorerRank/tiktok-downloader-works",
+      "trendshiftUrl": "https://trendshift.io/repositories/174517",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-08-06T03:11:33Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Gigaforshovel/photo-enhancer-boost",
+      "owner": "Gigaforshovel",
+      "repo": "photo-enhancer-boost",
+      "description": "Photo Enhancer Boost",
+      "githubUrl": "https://github.com/Gigaforshovel/photo-enhancer-boost",
+      "trendshiftUrl": "https://trendshift.io/repositories/174351",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-08-06T02:57:35Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Maroonaldemodulator/real-debrid-flow",
+      "owner": "Maroonaldemodulator",
+      "repo": "real-debrid-flow",
+      "description": "Real Debrid Flow",
+      "githubUrl": "https://github.com/Maroonaldemodulator/real-debrid-flow",
+      "trendshiftUrl": "https://trendshift.io/repositories/171947",
+      "topics": [],
+      "dateCreated": "2026-08-06T01:31:14Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "FlashML-org/FreeToken",
+      "owner": "FlashML-org",
+      "repo": "FreeToken",
+      "description": "",
+      "githubUrl": "https://github.com/FlashML-org/FreeToken",
+      "trendshiftUrl": "https://trendshift.io/repositories/171646",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure",
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-20T20:44:11Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "spikesocialmagnify/sony-vegas-pro-nexus",
+      "owner": "spikesocialmagnify",
+      "repo": "sony-vegas-pro-nexus",
+      "description": "Sony Vegas Pro Nexus",
+      "githubUrl": "https://github.com/spikesocialmagnify/sony-vegas-pro-nexus",
+      "trendshiftUrl": "https://trendshift.io/repositories/174426",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-08-06T03:04:39Z"
+    }
+  ]
+}
