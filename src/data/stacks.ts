@@ -3022,6 +3022,46 @@ export const stacks: Review[] = [
     date: "2026-08-21",
     featured: false,
   },
+  {
+    slug: "ideogram",
+    name: "Ideogram",
+    tagline: "Image generator dengan typography handal dan teks di gambar yang konsisten",
+    tags: ["Ideogram", "Freemium", "Image Gen", "Typography"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.0 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 8.0 },
+    ],
+    summary:
+      "Ideogram adalah generator gambar AI asal Kanada yang konsisten menjadi pilihan utama untuk membuat poster, banner, dan konten visual yang memuat teks di dalam gambar. Model Versi 3.0 mereka (rilis awal 2026) membawa peningkatan akurasi teks Latin dan CJK sekaligus mempertahankan gaya artistik yang sudah jadi signature sejak 2024.",
+    pros: [
+      "Rendering teks di dalam gambar paling akurat di kelasnya - Typography 2.0 mengurangi typo dan karakter acak di poster, logo, dan quote graphic",
+      "Style preset yang kaya (cinematic, illustration, 3D, anime, sketch) tanpa harus menulis prompt engineering panjang",
+      "Antarmuka web dan mobile yang simpel, cocok untuk pengguna non-teknis yang butuh hasil dalam hitungan detik",
+      "Dukungan prompt multibahasa termasuk bahasa Indonesia, hasil visual mengikuti konteks lokal dengan cukup baik",
+      "Magic Prompt (auto-enhance) dan inpainting built-in untuk edit bagian gambar tanpa keluar dari workflow",
+    ],
+    cons: [
+      "Kemampuan agentic dan kontrol multi-step masih terbatas dibanding workflow profesional ComfyUI atau Diffusers",
+      "Paket gratis dibatasi jadi sekitar 10 gambar per hari dengan watermark; paket Pro $8/bulan (sekitar Rp 130 ribu) untuk kuota serius",
+      "Untuk foto realistis gaya portrait manusia, hasilnya masih kalah natural dibanding Midjourney v7 atau Flux Pro",
+    ],
+    verdict:
+      "Tool image generator paling praktis untuk kebutuhan visual berbahasa Indonesia di 2026; alasan utamanya adalah kemampuan render teks di gambar yang tidak lagi jadi titik kegagalan, menggantikan workaround Photoshop dan Canva untuk poster, banner, dan quote graphic harian.",
+    body: [
+      "Sejak text-to-image mainstream di 2022, satu kelemahan kronis hampir semua generator gambar adalah rendering teks di dalam gambar. Model cenderung menghasilkan huruf yang salah eja, karakter fiktif, atau layout yang amburadul - masalah yang membuat output AI tidak bisa langsung dipakai untuk poster bisnis, banner promo, atau konten media sosial yang butuh headline jelas. Ideogram, startup asal Toronto yang didirikan eks-MDN Google Brain, mengambil positioning berbeda dari awal: mereka menyebut diri text-to-image yang 'reliable for text' dan setiap rilis model baru selalu menempelkan benchmark akurasi rendering teks sebagai metrik utama. Versi 3.0 di awal 2026 membawa Typography 2.0, yang menurunkan typo rate untuk teks Latin dan menambah dukungan CJK (Mandarin, Jepang, Korea) yang sebelumnya jadi titik lemah. Untuk kreator Indonesia yang sering membuat konten dengan headline bahasa Indonesia dicampur istilah Inggris atau singkatan brand, output Ideogram sudah bisa dipakai langsung tanpa harus menambahkan teks manual di Canva atau Photoshop setelahnya.",
+      "Di luar typography, kekuatan Ideogram ada di style preset dan orkestrasi prompt. Pengguna tidak perlu menulis prompt engineering panjang ala Stable Diffusion - memilih satu style preset (cinematic, illustration, 3D render, anime, watercolor, atau sketch) plus satu kalimat deskripsi sudah cukup menghasilkan empat varian gambar yang bisa dipilih. Magic Prompt (auto-enhance) membantu pengguna awam yang bingung menulis deskripsi; hasilnya tidak selalu sesuai bayangan, tapi cukup untuk eksplorasi awal. Untuk edit lanjutan, Ideogram menyediakan inpainting (klik area, ketik deskripsi baru) dan outpainting (perluas canvas) langsung di web, tanpa harus install tool terpisah. Workflow ini pas dengan ritme kreator solo dan tim marketing kecil yang butuh banyak varian visual dalam sehari tanpa harus setup ComfyUI atau LoRA custom.",
+      "Untuk konteks produksi dan Indonesia, catatan utamanya adalah kualitas portrait realistis dan pricing. Ideogram Versi 3.0 sudah lebih baik dari generasi 1.5/2.0 untuk foto manusia, tapi untuk iklan yang butuh model fashion atau beauty close-up, Midjourney v7 dan Flux Pro masih lebih natural di kulit, mata, dan rambut - Ideogram masih cenderung 'smoother' dan agak plasticky. Pricing mengikuti model freemium: paket gratis memberi sekitar 10 generasi per hari dengan watermark kecil, paket Plus $8/bulan (sekitar Rp 130 ribu) untuk 400 generasi bulanan dengan kualitas standar, paket Pro $20/bulan (sekitar Rp 320 ribu) untuk 1.000 generasi plus akses model terbaru, dan paket Scale $48/bulan (sekitar Rp 770 ribu) untuk penggunaan tim. Ada API untuk integrasi ke workflow internal, yang menarik untuk startup Indonesia yang mau embedding Ideogram ke aplikasi kreatif mereka - harga API sekitar $0.08 per gambar, jauh lebih murah dari OpenAI DALL-E 3 untuk volume produksi.",
+      "Untuk pengguna dan kreator Indonesia, nilai tambah Ideogram dibanding alternatif lokal (mis. Bing Image Creator yang pakai DALL-E 3, atau Canva Magic Media) adalah kombinasi akurasi teks, style preset yang kaya, dan harga API yang masuk akal untuk embedding. Bahasa Indonesia didukung di prompt - model merespons deskripsi seperti 'poster promo diskon 50% untuk kedai kopi di Jakarta dengan gaya vintage' dengan output yang relevan konteks lokal, bukan generic Western. Kekecewaan utama untuk pengguna serius adalah tidak ada kontrol parameter teknis seperti CFG scale, sampler, atau seed - yang jadi pilihan mereka yang lebih ke workflow profesional. Untuk kreator konten, tim marketing UMKM, dan developer aplikasi Indonesia yang butuh generator gambar handal dengan teks jelas dan harga predictable, Ideogram adalah pilihan paling pragmatis di 2026; untuk studio kreatif besar yang butuh kontrol penuh dan kualitas hyper-realistic, kombinasi Midjourney + Photoshop masih jadi standar yang tidak tergoyahkan.",
+    ],
+    link: "https://ideogram.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-22",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
