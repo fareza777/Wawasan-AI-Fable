@@ -2017,6 +2017,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Repositori canonical untuk Codex CLI, IDE, dan Web — README menjelaskan ketiga pengalaman (CLI / IDE / Web) dan installer sudah multi-platform, relevan untuk developer Indonesia yang ingin self-host loop coding agent OpenAI di workstation lokal tanpa langganan ChatGPT Pro.",
       ],
     },
+    "Alishahryar1/free-claude-code": {
+      description:
+        "Proxy ToS-friendly yang menyatukan 49 provider gratis + 1,3 miliar token gratis per bulan di balik satu catalog model — jalankan Claude Code, Codex, Pi, OpenCode, Cline, Hermes, dan 3 coding agent lain tanpa kunci akun utama ke model berbayar.",
+      highlights: [
+        "Menyatukan 49 provider ToS-friendly (free, paid, subscription, lokal) di balik satu model catalog yang bisa ditelusuri lewat UI — Claude Code, Codex, Pi, OpenCode, Cline, Hermes, DeepSeek Harness, Grok Build, Muse Code tetap pakai workflow masing-masing.",
+        "Auto-fallback lintas provider yang transparan: ketika model A kehabisan retry, FCC otomatis pindah ke model berikutnya yang kamu konfigurasikan tanpa harus restart turn — coding agent tidak mati di tengah refactor panjang.",
+        "Penghemat token terminal sampai 90% lewat filter RTK dan optimasi internal (quota probe, prefix detection, title suggestion, filepath resolution) — biaya API coding agent turun signifikan tanpa mengorbankan akurasi.",
+        "Multi-permukaan native launcher (terminal, desktop, IDE, Discord, Telegram) plus voice note lewat Whisper lokal atau NVIDIA NIM — relevan untuk developer Indonesia yang ingin akses frontier model lewat jalur yang patuh ToS tanpa langganan berulang.",
+      ],
+    },
+    "basecamp/omarchy": {
+      description:
+        "Distro Linux 'opinionated' dari Basecamp (pencipta Ruby on Rails & HEY) — preset instalasi yang langsung jadi workstation produktif dengan Hyprland, tiling WM modern, dan tooling developer tanpa setup manual.",
+      highlights: [
+        "Distro Linux 'modern dan berpendirian' (Beautiful, Modern & Opinionated Linux) dari Basecamp — bukan sekadar distro ringan, melainkan preset workstation lengkap yang fokus pada hyprland tiling window manager dan alur kerja keyboard-centric.",
+        "Sekali install dapat seluruh stack pengembangan dan kreasi yang sudah dikonfigurasi: window manager, terminal, font, tema, key binding, dan paket produktivitas — melewati ritual setup Linux dari nol yang biasanya makan waktu berhari-hari.",
+        "Didesain oleh tim Basecamp yang juga membangun Ruby on Rails dan HEY — pilihan paket dan konfigurasinya mencerminkan apa yang dipakai engineer internal mereka untuk kerja sehari-hari, bukan try-catch distro generik.",
+        "Sumber terbuka dengan fokus pada 'langsung pakai' untuk developer dan kreator — relevan untuk pengguna Indonesia yang muak dengan ritual pasca-instalasi Ubuntu/Fedora dan ingin Linux yang siap pakai untuk coding, menulis, dan browsing dengan estetika modern.",
+      ],
+    },
+    "Leonxlnx/unlazy": {
+      description:
+        "Skill 'anti kemalasan' untuk AI coding agent — tulis acceptance ledger dulu, jalankan reviewed checks, dan rerifikasi hasil sebelum lapor, berdasarkan riset 2025-2026 soal model laziness dan premature completion.",
+      highlights: [
+        "Skill Agent Skills universal (Claude Code, Codex CLI, 9+ agent lewat `npx skills add`) yang fokus pada 'completion discipline': agen wajib menulis acceptance ledger (GATES.md) sebelum eksekusi, sehingga outcome bisa diaudit tanpa nebak.",
+        "Metode 'Depth Tree' sebagai tulang punggung: task dipecah N lapis dengan budget waktu yang dikalikan per leaf — melawan pola premature completion di mana agen cepat menyerah karena task dianggap 'cukupan'.",
+        "Verifikasi runnable lewat gate-check CLI (Node 16, tanpa dependency runtime): setiap `CHECK:` di GATES.md adalah shell command yang bisa dieksekusi ulang atau di-status-kan non-eksekusi lewat flag --status.",
+        "Grounded di riset 2025-2026 tentang model laziness dan underthinking — bukan tip motivasional, melainkan pola teknis yang bisa dipasang sekali dan langsung kurangi output prematur pada long-horizon task coding.",
+      ],
+    },
     "Wei-Shaw/sub2api": {
       description:
         "Gateway API self-hosted (Go + Vue + Postgres + Redis) untuk distribusi kuota subscription LLM ke banyak akun sekaligus — frontend mirip OpenAI/Anthropic resmi, jadi plug-and-play ke Codex, Claude Code, dan tool coding lain.",
