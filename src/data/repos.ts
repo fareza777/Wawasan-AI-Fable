@@ -4108,6 +4108,61 @@ export const repos: Review[] = [
     updatedAt: "2026-08-23",
     featured: false,
   },
+  {
+    slug: "awesome-gpt-image-2",
+    name: "Awesome GPT-Image-2",
+    tagline: "Perpustakaan prompt industrial-grade untuk GPT-Image-2 dengan 470+ kasus reverse-engineered dan 20+ template siap pakai",
+    tags: ["AI Image", "Prompt Engineering", "JavaScript", "Open Source"],
+    score: 8.2,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Keksiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "Awesome GPT-Image-2 dari freestylefly adalah perpustakaan prompt industrial-grade khusus untuk model GPT-Image-2 OpenAI, mencakup 470+ kasus yang di-reverse-engineer dari produksi nyata, 20+ template siap pakai lintas industri, dan seperangkat Skills yang dapat digunakan ulang. Diposisikan sebagai 'Prompt as Code' dengan fokus pada konsistensi output untuk kebutuhan konten visual bisnis - mulai dari e-commerce, marketing, hingga UI/UX - repo ini menjadi salah satu sumber daya paling kaya untuk praktisi Indonesia yang ingin membangun pipeline generasi gambar AI yang reproducible.",
+    highlights: [
+      "Perpustakaan prompt industrial-grade dengan 470+ kasus yang di-reverse-engineer dari produksi nyata - setiap kasus menyertakan input, output, dan analisis kenapa prompt bekerja",
+      "20+ template siap pakai lintas industri (e-commerce, marketing, UI/UX, fashion, F&B) yang bisa langsung dipakai atau dimodifikasi sesuai kebutuhan merek",
+      "Filosofi 'Prompt as Code': setiap prompt diperlakukan seperti kode - di-version, di-review, dan diuji dalam pipeline CI untuk konsistensi output",
+      "Skills terpisah sebagai unit komposisi yang bisa digabung: lighting, kamera, material, gaya artistik - memungkinkan perakitan prompt kompleks dari blok-blok kecil",
+      "Dokumentasi bilingual dengan contoh visual side-by-side untuk setiap kasus - membantu adopsi oleh tim non-teknis seperti desainer atau content strategist",
+      "Aktif diperbarui mengikuti perubahan kemampuan GPT-Image-2: commit terbaru Agustus 2026 menunjukkan tracking terhadap update model dan eksplorasi kemampuan baru",
+      "MIT licensed dengan 12.640 bintang dan 1.423 fork di GitHub per Agustus 2026 - pertumbuhan cepat untuk kategori prompt engineering spesifik model",
+      "Topik repositori mencakup ai-image-generation, prompt-engineering, dan workflow-automation - penanda fokus niche yang jelas untuk komunitas",
+      "Integrasi dengan tool populer: format prompt bisa diekspor ke DALL-E API, plugin ChatGPT, atau pipeline Midjourney sebagai referensi visual",
+      "Homepage demo di gpt-image2.canghe.ai menampilkan katalog kasus interaktif dengan filter industri dan gaya - memudahkan eksplorasi sebelum download",
+    ],
+    pros: [
+      "Konsentrasi 470+ kasus dalam satu repositori menghilangkan kebutuhan riset prompt dari nol - tim bisa langsung mulai dari kasus yang sudah terbukti bekerja dan memodifikasinya",
+      "Pendekatan 'Prompt as Code' yang treat prompt seperti kode (version control, review, testing) sangat cocok untuk tim Indonesia yang sudah mengadopsi praktik DevOps dan ingin membawa rigor yang sama ke pipeline AI visual",
+      "Format Skills sebagai unit komposisi memungkinkan perakitan prompt baru dari blok yang sudah teruji - menurunkan eksperimen trial-and-error yang biasanya mahal untuk API image generation",
+      "Lisensi MIT memungkinkan adopsi komersial bebas - relevan untuk studio desain atau agensi di Indonesia yang ingin membangun layanan GPT-Image-2 tanpa friction lisensi",
+      "Pertumbuhan bintang yang cepat (12.640 dalam ~4 bulan sejak dibuat April 2026) menandakan validasi komunitas terhadap pendekatan kurasi prompt spesifik-model dibanding general prompt collection",
+    ],
+    cons: [
+      "Kurasi spesifik untuk GPT-Image-2 bukan model lain - meski filosofinya bisa ditransfer, perpustakaan ini tidak ideal untuk tim yang menggunakan beberapa model image generation seperti Midjourney, Stable Diffusion, dan Flux secara bersamaan",
+      "Sebagian besar dokumentasi berbahasa Mandarin - menyulitkan adopsi langsung oleh praktisi Indonesia yang tidak familiar dengan bahasa tersebut, meski prompt itu sendiri biasanya bersifat visual",
+      "Belum ada CLI atau SDK resmi untuk integrasi pipeline - penggunaan masih berbasis copy-paste manual atau parsing file Markdown, kurang ergonomis untuk otomasi skala besar",
+      "Kurangnya formal evaluation harness: tidak ada sistem otomatis untuk mengukur konsistensi output atau A/B testing prompt - tim production perlu membangun tooling evaluasi sendiri di atas repositori ini",
+      "Bergantung pada ketersediaan GPT-Image-2 API - jika OpenAI mengubah harga, akses, atau kemampuan model, seluruh repositori perlu re-kurasi ulang karena kasus yang ada sudah ter-optimasi untuk karakteristik model saat ini",
+    ],
+    verdict:
+      "Awesome GPT-Image-2 adalah salah satu sumber daya paling kaya untuk praktisi GPT-Image-2 di paruh kedua 2026 - kombinasi kurasi 470+ kasus industrial, 20+ template lintas industri, dan filosofi Prompt as Code menjadikannya titik awal yang sangat kuat untuk tim Indonesia yang ingin membangun pipeline generasi gambar AI yang reproducible. Sangat relevan untuk studio desain, agensi konten, dan tim e-commerce yang ingin memanfaatkan GPT-Image-2 secara serius - dengan catatan bahwa repositori ini sangat terikat pada GPT-Image-2 dan dokumentasi Mandarin yang membutuhkan adaptasi untuk konteks lokal.",
+    body: [
+      "Sepanjang 2025-2026, kemampuan GPT-Image-2 OpenAI menarik perhatian serius dari komunitas kreator dan bisnis: model ini bukan hanya menghasilkan gambar dengan kualitas fotorealistik, tetapi juga menunjukkan ketaatan yang tinggi terhadap instruksi prompt yang kompleks - komposisi multi-objek, teks dalam gambar, dan gaya artistik spesifik dapat dicapai dengan prompt yang relatif pendek. Tantangan yang langsung muncul adalah: bagaimana menulis prompt yang konsisten dan reproducible untuk kebutuhan produksi? Awesome GPT-Image-2 dari freestylefly menjawab tantangan itu dengan pendekatan kurasi yang berbeda dari prompt collection biasanya: alih-alih kompilasi prompt generik, repositori ini mengumpulkan kasus-kasus spesifik yang di-reverse-engineer dari produksi nyata, lengkap dengan input, output, dan analisis kenapa prompt tersebut bekerja. Per Agustus 2026, repositori ini telah mencapai 12.640 bintang dan 1.423 fork di GitHub - angka yang sangat tinggi untuk kategori prompt engineering spesifik model, menandakan validasi komunitas terhadap pendekatannya.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah kekayaan variasi kasus. Perpustakaan mencakup prompt untuk e-commerce (product shot dengan pencahayaan studio), marketing (banner dengan copy overlay), UI/UX (mockup aplikasi dengan layout realistis), fashion (editorial dengan model beragam), hingga F&B (food photography dengan pencahayaan hangat). Setiap kasus menyertakan prompt lengkap, parameter teknis (resolusi, aspek rasio, seed), dan deskripsi output yang diharapkan - informasi yang biasanya hilang dari prompt collection generik. Homepage demo di gpt-image2.canghe.ai menampilkan katalog interaktif dengan filter industri dan gaya, memudahkan eksplorasi sebelum memutuskan untuk mengadopsi kasus tertentu. Untuk praktisi Indonesia di industri kreatif, format ini sangat pragmatis: mereka bisa melihat hasil visual dulu, lalu memutuskan apakah prompt tersebut worth diadaptasi untuk kebutuhan klien lokal.",
+      "Aspek yang paling menarik untuk produksi adalah filosofi 'Prompt as Code'. Pendekatan ini memperlakukan prompt seperti kode: disimpan dalam Markdown atau JSON, di-version lewat Git, di-review lewat pull request, dan bisa diuji dalam pipeline CI untuk konsistensi output. Pola ini menarik karena memungkinkan tim AI visual untuk mengadopsi praktik yang sudah mature di software engineering - code review untuk prompt mencegah regresi ketika satu anggota tim memodifikasi prompt yang sudah terbukti bekerja. Skills sebagai unit komposisi juga merupakan keputusan arsitektur yang cerdas: alih-alih satu prompt panjang yang sulit di-debug, prompt dipecah menjadi blok-blok kecil (lighting, kamera, material, gaya) yang bisa digabung dan diuji independen. Untuk tim Indonesia yang sudah mengadopsi DevOps dan ingin membawa rigor yang sama ke pipeline AI visual, pola ini terasa natural. Lisensi MIT juga memungkinkan adopsi komersial bebas - relevan untuk studio desain atau agensi yang ingin membangun layanan GPT-Image-2 berlisensi proprietary di atas kurasi repositori ini.",
+      "Batasan yang perlu dipahami. Pertama, kurasi sangat spesifik untuk GPT-Image-2 - filosofinya bisa ditransfer ke model lain, tetapi perpustakaan kasus, template, dan Skills di sini tidak langsung applicable untuk Midjourney, Stable Diffusion, atau Flux; tim yang menggunakan beberapa model image generation perlu mempertahankan beberapa repositori kurasi terpisah. Kedua, sebagian dokumentasi berbahasa Mandarin, yang bisa menjadi friksi bagi praktisi Indonesia yang tidak familiar - meski prompt itu sendiri biasanya bersifat visual dan dapat dipahami dengan melihat output contoh. Ketiga, belum ada CLI atau SDK resmi - penggunaan masih berbasis copy-paste atau parsing Markdown manual, kurang ergonomis untuk otomasi pipeline skala besar; tim production perlu membangun tooling integrasi sendiri. Keempat, tidak ada formal evaluation harness untuk konsistensi output atau A/B testing prompt - tim perlu membangun tooling evaluasi sendiri. Terakhir, ketergantungan pada GPT-Image-2 API membuat repositori rentan terhadap perubahan harga atau kemampuan model. Walau dengan segala keterbatasan itu, kombinasi kurasi industrial-grade, filosofi Prompt as Code, dan momentum komunitas menjadikan Awesome GPT-Image-2 investasi tooling yang sangat layak untuk praktisi GPT-Image-2 di paruh kedua 2026, terutama untuk studio desain, agensi konten, dan tim e-commerce di Indonesia yang ingin membangun pipeline generasi gambar AI yang reproducible dan dapat di-scale.",
+    ],
+    link: "https://github.com/freestylefly/awesome-gpt-image-2",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-24",
+    updatedAt: "2026-08-24",
+    featured: false,
+  }
 ];
 
 export function getRepo(slug: string) {
