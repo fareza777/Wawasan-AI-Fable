@@ -3062,6 +3062,47 @@ export const stacks: Review[] = [
     date: "2026-08-22",
     featured: false,
   },
+  {
+    slug: "openhands",
+    name: "OpenHands",
+    tagline: "Agen software engineering open-source yang menjalankan repo end-to-end",
+    tags: ["All Hands AI", "Open Source", "Agent Platform", "Coding Agent"],
+    score: 8.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 9.0 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 7.5 },
+      { label: "Ekosistem & Integrasi", value: 8.8 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "OpenHands (dulu bernama OpenDevin) adalah agen software engineering open-source berlisensi MIT yang mengerjakan alur kerja developer secara utuh: membaca repo, menulis kode, menjalankan perintah terminal, membuka browser, lalu mengirim pull request. Rilis 1.15.0 pada 21 Agustus 2026 memindahkan pusat gravitasi produk ke Agent Canvas, control plane self-hosted yang bisa mengorkestrasi bukan hanya agen OpenHands tapi juga Claude Code, Codex, dan Gemini lewat protokol ACP.",
+    pros: [
+      "Lisensi MIT penuh dan model-agnostic - jalan dengan Claude, GPT, Gemini, DeepSeek, Qwen, sampai model lokal lewat Ollama tanpa vendor lock-in",
+      "Agent Canvas di versi 1.15 mengorkestrasi agen pihak ketiga (Claude Code, Codex, Gemini) lewat protokol ACP dari satu dashboard self-hosted",
+      "Eksekusi agentic sungguhan: terminal, editor file, browser, dan integrasi Git di dalam sandbox Docker, bukan sekadar autocomplete",
+      "Automations berbasis jadwal dan webhook yang tersambung ke Slack, GitHub, Linear, Jira, dan Notion untuk pekerjaan rutin tanpa prompt manual",
+      "Bisa dijalankan gratis di laptop, VPS, atau Mac Mini; paket SaaS Individual juga gratis dengan opsi bawa kunci API sendiri",
+    ],
+    cons: [
+      "Setup butuh Docker dan pemahaman dasar container - jauh lebih berat dibanding memasang ekstensi VS Code seperti Copilot atau Cline",
+      "Biaya token tetap keluar dari kantong sendiri dalam dolar; agen yang bekerja lama di repo besar mudah menghabiskan 2-5 dolar per tugas",
+      "Kualitas hasil sangat bergantung pada model yang dipasang - dengan model kelas murah, tingkat keberhasilan tugas kompleks turun tajam",
+      "Paket SaaS gratis dibatasi 10 percakapan per hari, dan fitur tim seperti SSO serta RBAC hanya tersedia di paket Enterprise",
+    ],
+    verdict:
+      "Agen coding open-source paling lengkap yang bisa dijalankan sendiri di 2026; alasan utamanya adalah kombinasi lisensi MIT, kebebasan memilih model, dan kontrol data penuh - tapi catatan utamanya adalah biaya token dalam dolar dan setup Docker yang belum ramah untuk pemula.",
+    body: [
+      "OpenHands lahir Maret 2024 sebagai OpenDevin, proyek komunitas yang mencoba mereplikasi demo Devin dari Cognition secara terbuka. Dua tahun kemudian posisinya berubah total: proyek ini kini salah satu repositori agen AI terbesar di GitHub dengan sekitar 84.800 bintang, 11.000 fork, dan lebih dari 500 kontributor, di bawah lisensi MIT yang benar-benar permisif. Yang membedakannya dari asisten coding pada umumnya adalah cakupan kerjanya. Copilot dan Tabnine menyelesaikan baris kode; Cline dan Cursor mengedit file di dalam editor. OpenHands mendapat sandbox berisi shell, file system, browser, dan kredensial Git, lalu diminta menyelesaikan tugas berlevel isu - misalnya 'perbaiki bug pada endpoint pembayaran, tambah unit test, lalu buka pull request' - dan ia menjalankan seluruh rantai langkah itu sendiri, termasuk menjalankan test dan membaca pesan error untuk memperbaiki kesalahannya.",
+      "Perubahan terbesar di 2026 adalah Agent Canvas, yang dirilis bertahap dan jadi antarmuka utama sejak seri 1.1x. Konsepnya bukan lagi 'satu chat, satu agen', tapi ruang kendali developer yang berjalan di mesin sendiri dan menyambung ke beberapa agent backend sekaligus: lokal di laptop, container Docker, VM di kantor, atau infrastruktur OpenHands Cloud. Instalasinya sederhana untuk ukuran tool sekelas ini - satu perintah npm install -g @openhands/agent-canvas atau image Docker resmi - dan sejak versi 1.15 tersedia panel provider LLM, drawer commit terpadu, serta katalog automations yang bisa dipasang sekali klik. Dukungan Agent-Client Protocol (ACP) membuatnya bisa menjalankan Claude Code, Codex, dan Gemini di dalam kanvas yang sama, sehingga tim yang sudah membayar langganan agen lain tidak perlu memilih salah satu. Lapisan automations melengkapi itu: agen bisa dijadwalkan atau dipicu webhook untuk memecah isu GitHub menjadi tugas, meringkas review mingguan ke Slack, atau merapikan dependensi tanpa ada orang yang mengetik prompt.",
+      "Soal kualitas, OpenHands konsisten muncul di papan atas SWE-bench Verified sejak scaffold CodeAct-nya, dan tim All Hands AI juga merilis OpenHands LM 32B, model open-weight yang mencatat tingkat penyelesaian 37,2 persen di SWE-bench Verified dan 41,7 persen di SWE-bench Lite - angka yang tinggi untuk model sekecil itu, meski masih kalah dari model frontier berbayar. Kesimpulan praktisnya jelas: hasil OpenHands adalah cerminan model yang dipasang, dan sifat model-agnostic itu justru kekuatan utamanya. Struktur harganya pun ramah. Versi open source gratis tanpa batas fitur inti, paket SaaS Individual gratis dengan batas 10 percakapan per hari plus opsi memakai provider LLM OpenHands tanpa markup, dan paket Enterprise dengan harga custom untuk deployment di VPC sendiri lengkap dengan SAML/SSO, RBAC multi-user, serta SDK untuk basis kode besar. Yang perlu diingat, gratis di sini berarti perangkat lunaknya - token LLM tetap dibayar terpisah.",
+      "Untuk pengembang dan perusahaan Indonesia, tiga hal paling relevan. Pertama, kontrol data: karena bisa self-host penuh di VPS lokal seperti Biznet atau IDCloudHost, atau di server kantor, kode tidak perlu keluar ke SaaS pihak ketiga - argumen penting untuk fintech dan institusi yang terikat aturan OJK maupun kewajiban residensi data. Kedua, biaya: karena kunci API dibawa sendiri, tim bisa menekan pengeluaran dengan memasang DeepSeek, Qwen, atau GLM yang harganya jauh di bawah Claude dan GPT kelas atas; anggaran 20-30 dolar per bulan (sekitar Rp 320 ribu sampai Rp 480 ribu) sudah cukup untuk pemakaian harian satu developer dengan model hemat, sementara memakai model frontier untuk tugas berat bisa melewati 100 dolar per bulan. Ketiga, hambatannya: syarat Docker dan RAM minimal 8-16 GB membuat laptop kelas menengah yang umum di kantor Indonesia terasa berat, dan tidak ada penagihan dalam rupiah maupun invoice lokal untuk paket berbayar. Bagi tim yang punya satu developer paham container dan mau memangkas ketergantungan pada langganan asing, OpenHands adalah pilihan paling masuk akal di 2026; bagi yang ingin langsung produktif tanpa mengurus infrastruktur, Cursor atau Claude Code tetap jalan yang lebih pendek meski dengan kendali yang lebih sedikit.",
+    ],
+    link: "https://www.openhands.dev",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-23",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
