@@ -1,58 +1,73 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "24 Agustus 2026",
-  "period": {
-    "date": "2026-08-24",
-    "label": "24 Agustus 2026",
-    "path": "/repo/daily/2026/08/24"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-24T00:03:35.715Z",
+  "fetchedAt": "2026-08-24T02:46:36.046Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "vorssaint/vorssaint-utils",
-      "owner": "vorssaint",
-      "repo": "vorssaint-utils",
-      "description": "Free and open-source macOS menu bar toolkit.",
-      "githubUrl": "https://github.com/vorssaint/vorssaint-utils",
-      "trendshiftUrl": "https://trendshift.io/repositories/53716",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-06-12T15:25:43Z"
+      "fullName": "ZJU-REAL/HugAgentOS",
+      "owner": "ZJU-REAL",
+      "repo": "HugAgentOS",
+      "description": "HugAgentOS: The Self-Evolving AgentOS for Ontology-Grounded Trustworthy Reasoning",
+      "githubUrl": "https://github.com/ZJU-REAL/HugAgentOS",
+      "trendshiftUrl": "https://trendshift.io/repositories/120570",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "RAG",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-19T08:41:07Z"
     },
     {
       "rank": 2,
-      "fullName": "arvids-unavailable/openGym",
-      "owner": "arvids-unavailable",
-      "repo": "openGym",
-      "description": "https://github.com/DuarteSantos8/openGym",
-      "githubUrl": "https://github.com/arvids-unavailable/openGym",
-      "trendshiftUrl": "https://trendshift.io/repositories/175829",
+      "fullName": "freestylefly/awesome-gpt-image-2",
+      "owner": "freestylefly",
+      "repo": "awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "trendshiftUrl": "https://trendshift.io/repositories/28623",
       "language": "JavaScript",
       "topics": [
-        "Self-hosted"
+        "AI image generation",
+        "Curated list"
       ],
-      "dateCreated": "2026-08-03T18:16:58Z"
+      "dateCreated": "2026-04-25T09:19:13Z"
     },
     {
       "rank": 3,
-      "fullName": "FlashML-org/FreeToken",
-      "owner": "FlashML-org",
-      "repo": "FreeToken",
-      "description": "",
-      "githubUrl": "https://github.com/FlashML-org/FreeToken",
-      "trendshiftUrl": "https://trendshift.io/repositories/171646",
-      "language": "Python",
+      "fullName": "wafer-ai/gpu-perf-engineering-resources",
+      "owner": "wafer-ai",
+      "repo": "gpu-perf-engineering-resources",
+      "description": "A curriculum for learning about gpu performance engineering, from scratch to what the frontier AI labs do",
+      "githubUrl": "https://github.com/wafer-ai/gpu-perf-engineering-resources",
+      "trendshiftUrl": "https://trendshift.io/repositories/28399",
       "topics": [
-        "AI infrastructure",
-        "Local LLM"
+        "AI infrastructure"
       ],
-      "dateCreated": "2026-07-20T20:44:11Z"
+      "dateCreated": "2026-01-12T00:47:24Z"
     },
     {
       "rank": 4,
+      "fullName": "pixlcore/xyops",
+      "owner": "pixlcore",
+      "repo": "xyops",
+      "description": "A complete workflow automation and server monitoring system.",
+      "githubUrl": "https://github.com/pixlcore/xyops",
+      "trendshiftUrl": "https://trendshift.io/repositories/17651",
+      "language": "JavaScript",
+      "topics": [
+        "Workflow automation",
+        "Self-hosted",
+        "Monitoring"
+      ],
+      "dateCreated": "2025-12-29T16:57:27Z"
+    },
+    {
+      "rank": 5,
       "fullName": "openai/codex",
       "owner": "openai",
       "repo": "codex",
@@ -67,86 +82,75 @@
       "dateCreated": "2025-04-13T05:37:54Z"
     },
     {
-      "rank": 5,
-      "fullName": "MengTo/threeui",
-      "owner": "MengTo",
-      "repo": "threeui",
-      "description": "Open-source ThreeUI Community catalog with live interactive components and complete Community source.",
-      "githubUrl": "https://github.com/MengTo/threeui",
-      "trendshiftUrl": "https://trendshift.io/repositories/176071",
-      "language": "HTML",
-      "topics": [
-        "Design system",
-        "UI components"
-      ],
-      "dateCreated": "2026-08-21T11:56:39Z"
-    },
-    {
       "rank": 6,
-      "fullName": "Alishahryar1/free-claude-code",
-      "owner": "Alishahryar1",
-      "repo": "free-claude-code",
-      "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
-      "githubUrl": "https://github.com/Alishahryar1/free-claude-code",
-      "trendshiftUrl": "https://trendshift.io/repositories/22971",
-      "language": "Python",
+      "fullName": "arvids-unavailable/openGym",
+      "owner": "arvids-unavailable",
+      "repo": "openGym",
+      "description": "https://github.com/DuarteSantos8/openGym",
+      "githubUrl": "https://github.com/arvids-unavailable/openGym",
+      "trendshiftUrl": "https://trendshift.io/repositories/175829",
+      "language": "JavaScript",
       "topics": [
-        "AI coding assistant",
-        "Local LLM",
-        "Proxy"
+        "Self-hosted"
       ],
-      "dateCreated": "2026-01-28T19:02:30Z"
+      "dateCreated": "2026-08-03T18:16:58Z"
     },
     {
       "rank": 7,
-      "fullName": "fayazara/Screendrop",
-      "owner": "fayazara",
-      "repo": "Screendrop",
-      "description": "A beautiful screenshot + screen recording + Loom alternative - all native, self hostable and free.",
-      "githubUrl": "https://github.com/fayazara/Screendrop",
-      "trendshiftUrl": "https://trendshift.io/repositories/40376",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-04-26T18:23:31Z"
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
     },
     {
       "rank": 8,
-      "fullName": "Leonxlnx/unlazy",
-      "owner": "Leonxlnx",
-      "repo": "unlazy",
-      "description": "Anti-laziness skill for AI agents. Core: the Depth Tree method, which splits a task N layers deep and gives every leaf the full time budget of the whole task, so effort multiplies with depth. Grounded in 2025-2026 research on model laziness, underthinking and premature completion.",
-      "githubUrl": "https://github.com/Leonxlnx/unlazy",
-      "trendshiftUrl": "https://trendshift.io/repositories/176099",
+      "fullName": "vorssaint/vorssaint-utils",
+      "owner": "vorssaint",
+      "repo": "vorssaint-utils",
+      "description": "Free and open-source macOS menu bar toolkit.",
+      "githubUrl": "https://github.com/vorssaint/vorssaint-utils",
+      "trendshiftUrl": "https://trendshift.io/repositories/53716",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-06-12T15:25:43Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "GamePhanes/GamePhanes",
+      "owner": "GamePhanes",
+      "repo": "GamePhanes",
+      "description": "An open-source game coding agent environment and benchmark for Godot.",
+      "githubUrl": "https://github.com/GamePhanes/GamePhanes",
+      "trendshiftUrl": "https://trendshift.io/repositories/176153",
       "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "Game development"
+      ],
+      "dateCreated": "2026-08-21T02:57:42Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "inkboard/system-atlas",
+      "owner": "inkboard",
+      "repo": "system-atlas",
+      "description": "An agent skill that turns an architecture discussion into an explorable isometric atlas: one data file, an interactive map and a generated SYSTEM.md",
+      "githubUrl": "https://github.com/inkboard/system-atlas",
+      "trendshiftUrl": "https://trendshift.io/repositories/179619",
+      "language": "HTML",
       "topics": [
         "AI agent",
         "AI skills"
       ],
-      "dateCreated": "2026-08-09T23:39:12Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "basecamp/omarchy",
-      "owner": "basecamp",
-      "repo": "omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "githubUrl": "https://github.com/basecamp/omarchy",
-      "trendshiftUrl": "https://trendshift.io/repositories/14918",
-      "language": "Shell",
-      "topics": [],
-      "dateCreated": "2025-06-01T07:26:22Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "duty1g/x64dbg-mcp-server",
-      "owner": "duty1g",
-      "repo": "x64dbg-mcp-server",
-      "description": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros",
-      "githubUrl": "https://github.com/duty1g/x64dbg-mcp-server",
-      "trendshiftUrl": "https://trendshift.io/repositories/176409",
-      "language": "Zig",
-      "topics": [],
-      "dateCreated": "2026-08-22T14:28:41Z"
+      "dateCreated": "2026-08-20T15:36:48Z"
     }
   ]
 }
