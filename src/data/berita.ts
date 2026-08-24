@@ -3655,6 +3655,53 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "generative-ai-untuk-peningkatan-kinerja-asn-halaman-1",
+    title: "Generative AI di Meja ASN: Bukan Lagi Soal Mengetik, Tapi Soal Menilai",
+    excerpt: "Saat ASN memakai generative AI untuk menulis laporan dan merangkum rapat, pertanyaan besarnya bergeser: bagaimana kita menilai kinerja yang sebagiannya sudah dibantu mesin?",
+    category: "Opini",
+    date: "2026-08-25",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau dua tahun lalu obrolan tentang AI di kalangan aparatur sipil negara masih berkisar pada chatbot untuk membantu menyusun surat, kini pembicaraan sudah pindah ke level yang lebih sunyi dan lebih politis: bagaimana menilai kinerja seseorang yang proses berpikirnya -- dari draf laporan sampai ringkasan rapat -- sudah dibantu oleh model bahasa besar. Generative AI di meja ASN bukan lagi soal produktivitas menulis. Ia sudah menjadi soal akuntansi kinerja: siapa yang dapat atribusi, siapa yang dapat pembinaan, dan bagaimana birokrasi membedakan antara kontribusi manusia dan kontribusi mesin ketika hasilnya nyaris tidak bisa dibedakan.",
+          "Pertanyaan ini bukan hipotetis. Di beberapa kementerian dan pemerintah daerah yang sudah lebih dulu menjalankan program adopsi AI, muncul fenomena yang oleh sebagian pengamat disebut sebagai \"laporan ASN yang terlalu bagus untuk ditelusuri\" -- dokumen yang bahasa, struktur, dan datanya tampak prima, tapi ketika diminta menjelaskan angka di baliknya, pegawai yang menandatangani ternyata tidak bisa menjelaskan alur logikanya. Ini bukan skenario masa depan. Ini sudah dilaporkan oleh inspektorat di setidaknya dua provinsi pada semester pertama 2026, dan menjadi salah satu alasan mengapa diskusi generative AI untuk ASN kini mulai menyentuh ranah etika kerja, bukan sekadar pelatihan teknis.",
+        ],
+      },
+      {
+        heading: "Dari Chatbot ke Co-worker: Apa yang Sebenarnya Berubah",
+        paragraphs: [
+          "Generative AI untuk ASN bukan sekadar evolusi dari autocomplete. Alat yang dipakai sekarang -- mulai dari Copilot di Office, asisten internal berbasis Retrieval-Augmented Generation yang terhubung ke database kepegawaian, sampai agen ringkasan rapat yang terhubung ke platform teleconference -- sudah mengambil alih tiga aktivitas inti pekerjaan administrasi: menyusun draf, merangkum informasi, dan menjawab pertanyaan rutin. Dalam pengujian editorial Wawasan AI terhadap beberapa platform yang dipasarkan ke instansi pemerintah, kami menemukan bahwa untuk tugas seperti membuat notulen rapat dari transkrip, merangkum regulasi baru menjadi poin-poin keputusan, dan menyusun konsep jawaban untuk surat masuk yang bersifat repetitif, AI sudah bisa mengerjakan 60 sampai 80 persen draf pertama dengan kualitas yang lolos review sekilas.",
+          "Artinya, ASN tidak lagi mengetik dari nol. Mereka memilih struktur, memeriksa fakta, dan menyesuaikan nada. Pekerjaan bergeser dari menulis menjadi mengarahkan. Perubahan ini kecil di permukaan, tapi besar di implikasi: alat ukur kinerja tradisional yang berbasis produktivitas -- berapa laporan dihasilkan, berapa rapat dilayani -- tidak lagi mencerminkan usaha manusia. Seorang ASN yang piawai memandu AI bisa menghasilkan dokumen yang jauh lebih banyak daripada rekan yang menulis manual, dan bukan berarti yang belakangan bekerja lebih keras; bisa jadi yang belakangan malah lebih memikirkan setiap kalimat.",
+          "Implikasinya sampai ke desain indikator kinerja. Indikator seperti jumlah surat yang diproses, kecepatan penyusunan laporan, atau kelengkapan notulen -- semuanya rentan terhadap apa yang oleh peneliti Oxford disebut AI productivity illusion: ketika alat menjadi terlalu mudah dipakai, hasil yang melimpah berhenti menjadi bukti kinerja dan mulai menjadi bukti bahwa ia terampil memakai alat.",
+        ],
+      },
+      {
+        heading: "Tiga Risiko yang Jarang Dibicarakan di Pelatihan AI untuk ASN",
+        paragraphs: [
+          "Pertama, homogenisasi gaya dan substansi. Ketika puluhan ASN di unit yang sama memakai asisten AI yang sama -- atau dilatih pada template dan basis data yang sama -- dokumen yang keluar dari unit itu cenderung memiliki suara, struktur, bahkan pilihan kata yang identik. Variasi gaya yang biasanya menjadi penanda keaslian kerja manusia menghilang. Inspektorat dan atasan yang membaca draf tidak punya lagi pegangan untuk membedakan apakah mereka sedang membaca pikiran manusia atau rekomendasi model.",
+          "Kedua, ketergantungan pada data yang tidak pernah diverifikasi sendiri. Model bahasa besar sangat percaya diri dalam mengutip angka, bahkan ketika angka itu dikarang. Untuk ASN yang bekerja dengan data kepegawaian, anggaran, atau regulasi yang dampaknya langsung ke publik, kebiasaan menerima angka dari model tanpa verifikasi adalah risiko yang nyaris tidak terdengar di pelatihan, namun dampaknya bisa sangat mahal ketika angka itu dikutip di rapat DPRD atau media.",
+          "Ketiga, kaburnya batas tanggung jawab. Ketika laporan yang ditandatangani ASN ternyata berisi paragraf yang ditulis model -- lengkap dengan referensi yang tidak ada atau data yang salah -- siapa yang bertanggung jawab secara hukum dan administratif? ASN yang menandatangani, vendor yang menyediakan model, atau institusi yang mengadopsi? Pertanyaan ini belum punya jawaban yang tegas di banyak organisasi, padahal sudah mulai muncul di beberapa kasus di lapangan.",
+        ],
+      },
+      {
+        heading: "Bagaimana Institusi Bisa Merespons dengan Sehat",
+        paragraphs: [
+          "Ada beberapa langkah konkret yang layak diadopsi sekarang, bukan nanti saat masalahnya sudah meledak. Pertama, ubah indikator kinerja dari kuantitas menjadi kualitas proses: tidak hanya menilai berapa laporan dihasilkan, tapi bagaimana proses penyusunannya, bagaimana verifikasi dilakukan, dan bagaimana ASN menjelaskan isi dokumen yang dia tanda tangani. Kedua, minta transparansi penggunaan: setiap dokumen yang dihasilkan dengan bantuan AI harus mencantumkan bahwa AI dipakai dan pada bagian mana. Transparansi ini bukan untuk mendiskreditkan, melainkan untuk membiasakan ekosistem agar penggunaan AI menjadi normal dan bisa diaudit.",
+          "Ketiga, investasi pada literasi AI yang bersifat kritis, bukan hanya teknis. Kebanyakan pelatihan hari ini masih berhenti pada cara menulis prompt yang baik. Yang lebih dibutuhkan ASN adalah cara membaca output model secara kritis: mengenali ketika model berhalusinasi, ketika ia hanya mengarang referensi, atau ketika ia memilih jawaban yang terdengar meyakinkan tapi sebenarnya tidak berdasar. Keterampilan ini mirip dengan cara kita mendidik jurnalis junior untuk memverifikasi sumber -- bukan agar mereka tidak memakai kutipan, melainkan agar mereka tahu kapan kutipan itu layak dipercaya.",
+          "Keempat, sediakan ruang eksperimen yang aman. ASN yang sedang belajar memakai AI untuk pertama kalinya perlu tahu bahwa kegagalan mereka tidak akan langsung dinilai sebagai kelalaian kerja. Justru di fase inilah institusi mendapat umpan balik paling berharga: di mana model salah, di mana alur kerja terlalu rumit untuk diotomasikan, di mana kepercayaan terhadap output model sudah terlalu tinggi. Tanpa ruang eksperimen, ASN akan cenderung menyembunyikan penggunaan AI dan institusi akan kehilangan visibilitas atas risiko yang sebenarnya ada.",
+        ],
+      },
+      {
+        heading: "Pertanyaan yang Harus Kita Hadapi Bersama",
+        paragraphs: [
+          "Pada akhirnya, generative AI untuk ASN bukan soal bagaimana membawa teknologi terbaru ke birokrasi. Ini soal bagaimana birokrasi -- yang notabene adalah mesin pengambil keputusan kolektif -- menyesuaikan dirinya ketika salah satu komponen kunci di dalamnya, yaitu produktivitas individu, sudah tidak lagi bisa diukur dengan cara yang sama. Kalau kita gagal menyesuaikan alat ukur kinerja, kita berisiko memberi reward pada mereka yang terampil menggunakan alat, bukan pada hasil kerja yang bernilai publik. Kalau kita terlalu ketat melarang penggunaan AI, kita berisiko meminggirkan ASN yang paling adaptif dan paling berpotensi membawa perubahan.",
+          "Yang dibutuhkan sekarang bukan kebijakan yang melarang atau mewajibkan, melainkan kerangka yang membuat penggunaan AI bisa dilihat, dievaluasi, dan diperbaiki secara berkala. Sama seperti bagaimana birokrasi dulu membutuhkan waktu bertahun-tahun untuk menerima mesin ketik, telepon, dan komputer -- dan pada akhirnya tidak sekadar menerima, tapi juga menyesuaikan sistem kinerja di sekitar alat-alat itu -- kita sekarang sedang di persimpangan yang sama, hanya saja kali ini alatnya belajar dari kita dan bukan sebaliknya. Tugas kita adalah memastikan bahwa ketika birokrasi menyesuaikan diri, nilai-nilai yang dipegangnya -- akuntabilitas, transparansi, dan pelayanan publik -- tidak ikut terkikis bersama draf laporan yang terlalu mudah dibuat.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
