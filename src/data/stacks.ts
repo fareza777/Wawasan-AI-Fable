@@ -3103,6 +3103,52 @@ export const stacks: Review[] = [
     date: "2026-08-23",
     featured: false,
   },
+  {
+    slug: "lmnt",
+    name: "LMNT",
+    tagline: "Voice cloning cepat dan murah untuk kreator konten",
+    tags: [
+      "LMNT",
+      "Freemium",
+      "Voice/Audio",
+      "Cloning",
+    ],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 6.5 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "LMNT adalah layanan text-to-speech dan voice cloning dari ex-Google Brain tim yang menonjol di dua hal: latensi rendah untuk aplikasi real-time dan harga yang agresif untuk kloning suara berkualitas tinggi. Model andalannya, Speech 2.6, mendukung streaming, multi-bahasa, dan kloning instan dari klip audio pendek, menjadikannya favorit untuk kreator konten, aplikasi edukasi, dan chatbot suara.",
+    pros: [
+      "Streaming TTS dengan latensi di bawah 300 ms - cocok untuk agen suara real-time, dubbing langsung, dan interaksi telepon",
+      "Voice cloning dari sampel audio 10-30 detik sudah menghasilkan suara yang meyakinkan, hasil signifikan lebih cepat daripada pendekatan yang butuh 3-5 menit sampel",
+      "Harga kloning suara paling agresif di kelasnya - sekitar 0,06 dolar per menit untuk suara kustom, sekitar sepertiga dari ElevenLabs Creator tier",
+      "Dukungan multi-bahasa yang solid termasuk Bahasa Indonesia di beberapa voice preset, dengan kualitas yang mendekati native speaker pada kalimat sederhana",
+      "SDK Python dan Node resmi, plus WebSocket streaming endpoint untuk integrasi real-time ke aplikasi mobile dan web",
+    ],
+    cons: [
+      "Kloning suara premium masih kalah natural dari ElevenLabs Voice Design pada ekspresi emosional dan kontrol emphasis",
+      "Tidak ada generator musik atau efek suara - fokus murni TTS dan cloning, berbeda dengan Suno atau Udio",
+      "Kontrol prosodi (kecepatan, pitch, jeda) masih terbatas di API dasar; fitur emphasis per-token baru tersedia di paket Scale",
+      "Paket gratis cuma 20.000 karakter per bulan - cepat habis untuk kreator yang bikin konten berdurasi panjang",
+    ],
+    verdict:
+      "Pilihan solid untuk developer yang butuh voice cloning real-time dengan harga masuk akal; alasan utamanya adalah kombinasi latensi rendah dan harga cloning yang agresif - tapi catatan utamanya adalah kontrol emosional yang belum sedetail ElevenLabs untuk produksi narasi panjang.",
+    body: [
+      "LMNT lahir dari tim yang sebelumnya membangun teknologi speech di Google Brain, dan berdiri sebagai perusahaan independen sejak 2023 dengan misi spesifik: membuat text-to-speech berkualitas tinggi yang murah dan cepat. Di tengah pasar yang didominasi ElevenLabs di segmen premium dan berbagai proyek open-source di segmen bawah, LMNT mengambil jalur tengah dengan model Speech 2.6 yang dirancang untuk latensi rendah. Klaim mereka - latensi streaming di bawah 300 milidetik untuk first audio byte - relevan untuk use case yang tidak bisa ditoleransi delay panjang, seperti agen suara customer service, narasi video langsung, dan asisten telepon otomatis. Kliping audio 10-30 detik sudah cukup untuk cloning instan; hasilnya bukan setajam yang didapat dari rekaman 5-10 menit, tapi untuk aplikasi real-time tradeoff itu masuk akal.",
+      "Di 2026 LMNT memperluas penawaran lewat tiga lapis: API standar untuk integrasi TTS ke aplikasi, fitur cloning suara kustom dengan harga pay-per-minute, dan paket Scale untuk perusahaan yang butuh kontrol prosodi lebih granular plus SLA. Harga adalah pembeda terbesar: cloning suara kustom dibanderol sekitar 0,06 dolar per menit - setara sekitar Rp 960 per menit - sementara paket Creator ElevenLabs membebankan sekitar 0,18 dolar per menit untuk kapasitas serupa. Paket gratis 20.000 karakter per bulan cukup untuk eksperimen dan prototipe, tapi kreator yang bikin video berdurasi 10 menit akan menghabiskan jatah itu dalam 1-2 video saja. SDK resmi tersedia untuk Python, Node, dan Ruby, dan endpoint WebSocket streaming memungkinkan pipeline real-time ke aplikasi mobile tanpa buffering yang mengganggu. Ada juga integrasi Zapier dan Make untuk workflow non-developer, meski tidak selengkap ElevenLabs yang sudah matang di kanal no-code.",
+      "Untuk kreator dan developer Indonesia, tiga hal yang perlu diperhatikan. Pertama, dukungan Bahasa Indonesia sudah ada di beberapa voice preset sejak pembaruan awal 2025, dan akurasinya cukup untuk narasi formal - tapi untuk konten kasual atau ekspresi emosional yang kaya, hasilnya masih terdengar agak kaku dibanding suara manusia asli; pitch dan intonasi mengikuti pola English yang agak kentara. Kedua, model pembayaran dolar plus invoice luar negeri masih menjadi hambatan - tidak ada billing dalam rupiah, tidak ada paket korporasi lokal, dan transaksi melewati payment processor internasional yang kadang memicu review fraud di kartu debit lokal. Ketiga, latensi rendah dan harga cloning yang agresif membuat LMNT menarik untuk use case spesifik: voice agent customer service dalam bahasa Indonesia, dubbing otomatis untuk kursus online, dan audiobook pendek - di mana biaya ElevenLabs terasa mahal tapi kualitas Tacotron/Coqui TTS open-source belum cukup. Bagi kreator yang fokus ke volume tinggi dengan budget ketat, LMNT adalah pilihan yang lebih rasional; untuk produksi premium dengan satu voice talent yang jadi brand, ElevenLabs masih worth the premium.",
+      "Secara keseluruhan, LMNT adalah pilihan pragmatis untuk 2026. Bukan yang paling natural, bukan yang paling murah, tapi kombinasi latensi rendah dan harga cloning yang agresif menempatkannya di ceruk spesifik yang tidak mudah digeser pesaing. Workflow yang cocok adalah pipeline di mana TTS dipanggil puluhan kali per sesi - misalnya generator video AI yang butuh narasi per scene, atau voice agent yang merespons banyak query per jam. Untuk kreator solo yang bikin 1-2 video YouTube per minggu, paket Creator ElevenLabs tetap lebih hemat biaya total karena sudah termasuk voice library yang lebih luas. Untuk developer yang membangun produk dengan komponen suara, terutama di pasar Asia Tenggara di mana harga sangat sensitif, LMNT adalah kandidat default yang sulit diabaikan di 2026 - dengan catatan bahwa kontrol emosional belum selevel pesaing premiumnya.",
+    ],
+    link: "https://lmnt.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-24",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
