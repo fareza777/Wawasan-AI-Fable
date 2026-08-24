@@ -2067,7 +2067,37 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
         "Lisensi MIT dan tim Canopy secara eksplisit menarik untuk komunitas, termasuk developer Indonesia yang ingin eksplorasi Layer-1 alternatif di luar Ethereum/Solana — terutama untuk use case launchpad multi-chain (chain baru bisa 'naik' ke chain Canopy sebagai distribusi likuiditas awal).",
       ],
     },
-    };
+    "vorssaintapp/vorssaint-utils": {
+      description:
+        "Toolkit menu bar gratis dan open-source untuk macOS (Apple Silicon, GPL-3.0) — satu ikon menubar menggantikan belasan utilitas bayar: volume mixer per-app, switcher jendela dengan thumbnail, monitor sistem, clipboard history, dan layout window ala PowerToys.",
+      highlights: [
+        "Volume mixer per-aplikasi (atur tiap app ke output berbeda), auto-paste plain text, microphone picker, dan music-app blocker — semuanya dari satu ikon menubar tanpa install audio driver.",
+        "App switcher ala ⌘Tab tapi dengan thumbnail live untuk semua window (termasuk minimized), plus window layout snap ke setengah/tiga/enam/corner/center dan Dock preview dengan judul yang jelas.",
+        "System monitor yang lebih dalam dari Activity Monitor: CPU/GPU/memory history dengan battery health, cycle count, power draw, fan speed RPM, plus alerting untuk CPU load, suhu, dan battery rendah.",
+        "Clipboard history lokal, text snippets dengan trigger, clean URL (strip tracking param), smooth scrolling mouse ala trackpad, focus-follows-mouse, dan command bar fuzzy search — 100% on-device, GPL-3.0+.",
+      ],
+    },
+    "arvids-unavailable/openGym": {
+      description:
+        "Pelacak gym & bodyweight self-hosted (React 19 PWA, AGPL-3.0) yang benar-benar milik kamu — passkey login, sinkronisasi lintas device, 1.324 latihan dengan demo animasi, dan progresi otomatis (linear, Greyskull LP, double progression) lewat `docker compose up`.",
+      highlights: [
+        "Aplikasi web installable yang jalan di HP dan laptop lewat passkey (Face ID/Touch ID) tanpa password — data workout dan body weight tinggal di server kamu sendiri, bukan di SaaS berbayar.",
+        "Library 1.324 latihan dengan GIF animasi dan instruksi multi-bahasa (EN/DE/ES/FR/IT/PT/PL/TR/RU/ZH/KO/HI), plus filter equipment supaya library hanya menampilkan gerakan yang bisa kamu lakukan.",
+        "Progresi otomatis yang serius: linear progression, Greyskull LP (AMRAP top set + double jumps + 10% deload), double progression, estimated 1RM, supersets, timed exercises (plank, hang), dan per-side reps untuk unilateral.",
+        "Import dari FitNotes/Strong/Hevy/Apple Health, export JSON satu klik, activity heatmap ala GitHub, muscle map front-and-back, plus APK Android standalone — telemetry none, AGPL-3.0.",
+      ],
+    },
+    "FlashML-org/FreeToken": {
+      description:
+        "Engine serving MoE edge-native (Python, Apache 2.0) yang menjalankan model frontier 290B+ (DeepSeek-V4-Flash, Qwen3.6-35B-A3B, GLM-5.2) di PC gaming consumer dengan bandwidth-adaptive CPU-GPU co-execution dan semantic-aware KV cache.",
+      highlights: [
+        "Bukan sekadar 'model lokal': engine serving yang perlakukan GPU + CPU + RAM + interconnect sebagai satu platform inference elastis — klaim jalankan model MoE 290B+ di hardware gaming consumer dengan kecepatan interaktif.",
+        "Inovasi bandwidth-adaptive (q* policy), double-buffered prefill streaming, global LRU expert cache, dan semantic anchor checkpoint untuk KV cache — konteks agentik (tool call, thinking block) tidak di-recompute.",
+        "Manajemen memori elastis: VRAM di-reallocate runtime antara expert cache dan KV memory tanpa restart engine — dukungan MXFP4/NVFP4/FP8/BF16 plus API Anthropic/OpenAI-compatible untuk plug langsung ke Codex/Claude Code/OpenCode.",
+        "Native support NVIDIA RTX 30/40/50 series, plus desktop app GUI di flashml.ai untuk Windows dan Linux — alternatif dari LM Studio/llama.cpp untuk workload MoE agentik kelas berat.",
+      ],
+    },
+  };
 
   // Helper: lookup dengan fallback ke template-generated highlights
   export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
