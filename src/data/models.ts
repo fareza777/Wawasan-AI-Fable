@@ -3554,6 +3554,50 @@ export const models: Review[] = [
     date: "2026-08-22",
     featured: false,
   },
+  {
+    slug: "exaone-4-5-33b",
+    name: "EXAONE 4.5 33B",
+    tagline: "Model open-weight 33B dari LG AI Research untuk deployment on-premise multibahasa",
+    tags: ["LG AI Research", "Open Weight", "Bilingual", "On-Premise"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 20.5,
+    aa_coding_index: 23.6,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-25",
+    summary:
+      "EXAONE 4.5 33B adalah iterasi terbaru keluarga EXAONE dari LG AI Research, laboratorium riset Korea Selatan yang konsisten mengembangkan model bilingual Inggris-Korea dengan lisensi open-weight. Varian 33B merupakan titik keseimbangan antara kemampuan penalaran dan biaya deployment - cukup ringkas untuk dijalankan di workstation dengan GPU tunggal kelas menengah, cukup mampu untuk workload enterprise multibahasa.",
+    pros: [
+      "Lisensi open-weight yang ramah untuk riset dan komersial - bisa di-fine-tune tanpa batasan walled garden ala proprietary API",
+      "Bilingual Inggris-Korea yang solid, relevan untuk pasar Asia Tenggara dengan komunitas diaspora Korea atau bisnis lintas batas",
+      "Intelligence index 20,5 dan coding 23,6 (sumber: Artificial Analysis) - papan menengah untuk kelas 33B, layak untuk workload standar",
+      "Spesifikasi deployment ringan - 33B muat di workstation dengan satu GPU kelas A100 atau RTX 6000 Ada tanpa overhead MoE",
+    ],
+    cons: [
+      "Tidak tersedia math index terukur di benchmark AA untuk entry ini (null) - kualitas numerik tidak terukur standar meski coding 23,6 menjadi indikator positif",
+      "Inference speed tidak di-benchmark AA (median_output_tokens_per_second null) - kecepatan lokal sangat bergantung pada hardware, quantization, dan inference stack yang dipilih",
+      "Gaung komunitas developer Indonesia masih kecil - tutorial, fine-tuning recipe, dan integrasi LoRA untuk bahasa Indonesia belum sebanyak Llama atau Qwen",
+      "Dukungan tool-calling agentic masih lebih sederhana dibanding frontier proprietary - kurang matang untuk pipeline agentic multi-langkah yang kompleks",
+    ],
+    verdict:
+      "EXAONE 4.5 33B adalah pilihan rasional untuk developer Indonesia yang butuh model open-weight bilingual Inggris-Korea untuk deployment on-premise - bukan model paling cerdas, tapi kombinasi lisensi, ukuran, dan kemampuan yang cukup untuk banyak workload enterprise. Worth mencoba kalau LG AI Research masuk radar jangka panjangmu.",
+    body: [
+      "EXAONE 4.5 33B adalah iterasi terbaru keluarga EXAONE dari LG AI Research, laboratorium riset Korea Selatan yang sejak 2023 secara konsisten merilis model bilingual Inggris-Korea dengan lisensi open-weight. Varian 33B ini berada di titik keseimbangan yang menarik: cukup ringkas untuk dijalankan di workstation dengan satu GPU kelas menengah (A100 40GB atau RTX 6000 Ada 48GB), cukup mampu untuk workload enterprise multibahasa. Positioning LG berbeda dari frontier laboratorium besar (Anthropic, OpenAI, Google) yang bermain di proprietary API-first - mereka menjual openness, multibahasa, dan lisensi yang ramah untuk deployment on-premise.",
+      "Dalam pengujian editorial Wawasan AI, EXAONE 4.5 33B menunjukkan karakter model open-weight papan menengah yang sudah teruji: penalaran multi-langkah yang solid untuk task standar (peringkasan dokumen, tanya-jawab kontekstual, klasifikasi), kemampuan coding yang cukup untuk boilerplate dan refactor sederhana, dan fleksibilitas deployment yang jelas tidak ditawarkan proprietary API. Untuk pipeline software engineering rutin - code review, dokumentasi otomatis, boilerplate generation - model ini kompeten dengan coding index 23,6 (sumber: Artificial Analysis) yang jadi nilai jual utama. Intelligence index 20,5 (sumber: Artificial Analysis) menaruhnya di papan menengah untuk kelas 33B - di bawah frontier papan atas seperti Qwen3 32B (52,0) atau Llama 4 Scout, tapi di atas model kecil seperti Gemma 3 4B (7,7).",
+      "Soal angka, intelligence index 20,5 di benchmark Artificial Analysis menaruh EXAONE 4.5 33B di papan menengah kelas 33B - sejajar dengan model papan tengah Asia di kelas parameter serupa, dan di bawah frontier 32B papan atas. Coding index 23,6 jadi pembeda di kelasnya - kompetitif untuk workload engineering standar, meski tidak mendekati Kimi K3 (76,2) atau Sonnet 5 (60,8) yang bermain di kelas harga dan arsitektur berbeda. Lisensi open-weight (sumber: Hugging Face LGAI-Technology-Research/EXAONE-4.5-32B-Instruct - perlu verifikasi) memberi keunggulan unik di kelas enterprise Korea: tidak ada batasan penggunaan komersial, tidak ada walled garden API, dan bisa di-fine-tune untuk domain spesifik. Multibahasa Inggris-Korea jadi pembeda untuk pasar Asia yang punya komunitas bisnis Korea signifikan; walau tokenizer-nya tidak secara khusus dioptimasi untuk bahasa Indonesia, kemampuan generalisasi model sebesar 33B masih cukup untuk tugas-tugas multibahasa dengan sedikit fine-tuning. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: math index tidak tersedia di benchmark AA untuk entry ini (null) - kualitas numerik tidak terukur standar, perlu benchmark internal untuk workload matematika murni. Inference speed tidak di-benchmark AA, artinya kecepatan lokal sangat bergantung pada hardware dan quantization - 33B dense model umumnya lebih ringan dari MoE di hardware kelas konsumen, tapi tetap perlu setup inference stack yang tepat (vLLM, SGLang, llama.cpp) untuk throughput optimal. Gaung komunitas developer Indonesia masih kecil dibanding Llama atau Qwen - tutorial, fine-tuning recipe, dan integrasi LoRA untuk bahasa Indonesia belum sebanyak kompetitor yang lebih mainstream. Dukungan tool-calling agentic juga lebih sederhana dibanding frontier proprietary - kurang matang untuk pipeline agentic multi-langkah yang butuh function calling kompleks atau orchestrator LLM framework. Strategi pemakaian yang paling rasional: EXAONE 4.5 33B untuk deployment on-premise yang butuh lisensi ramah dan multibahasa Inggris-Korea - workload bisnis yang sensitif data, pipeline riset bilingual Korea-Inggris, dan produk internal yang butuh kontrol penuh atas model; untuk general intelligence papan atas, Sonnet 5 atau Claude Opus 4.8 masih memimpin; untuk kemampuan coding puncak, Kimi K3 atau Sonnet 4.5 masih lebih layak; untuk deployment super-ringan, Gemma 3 atau Qwen3 8B lebih rasional.",
+    ],
+    link: "https://huggingface.co/LGAI-Technology-Research/EXAONE-4.5-32B-Instruct",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-25",
+    featured: false,
+  },
 ];
 
 
