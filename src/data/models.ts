@@ -3598,6 +3598,51 @@ export const models: Review[] = [
     date: "2026-08-25",
     featured: false,
   },
+  {
+    slug: "claude-sonnet-5",
+    name: "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+    tagline:
+      "Sonnet kelas flagship dengan intel 55,3 dan coding 71,5 — sweet spot harga dan kapabilitas",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Agent"],
+    score: 9.0,
+    scores: [
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 8.8 },
+      { label: "Kecepatan", value: 8.4 },
+      { label: "Harga/Performa", value: 8.7 },
+    ],
+    aa_intelligence_index: 55.3,
+    aa_coding_index: 71.5,
+    aa_price_input: 2,
+    aa_price_output: 10,
+    aa_synced_at: "2026-08-26",
+    summary:
+      "Claude Sonnet 5 (Adaptive Reasoning, Max Effort) adalah generasi terbaru lini Sonnet dari Anthropic yang dirilis 30 Juni 2026, diposisikan di sweet spot antara Opus 5 yang harganya premium dan Haiku yang bermain di kelas ringan. Intelligence index 55,3 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — sejajar dengan Gemini 3.7 Flash high (56) dan Claude Opus 4.7 (55) — sementara coding index 71,5 (sumber: Artificial Analysis) mendekati Opus 4.7 (73,6) dan meninggalkan Sonnet 4.5 (49,2) di belakang. Bedanya dari Opus 5 di intel 63,1 dan coding 78 hanya 8 poin di intelligence dan 6,5 poin di coding, tapi harga API $2 input / $10 output per juta token adalah 2,5x lebih murah dari Opus 5 ($5/$25).",
+    pros: [
+      "Intelligence index 55,3 (sumber: Artificial Analysis) — papan atas proprietary global, sejajar dengan Claude Opus 4.7 (55), Gemini 3.7 Flash high (56), dan Sonnet 4.5 (49,2)",
+      "Coding index 71,5 (sumber: Artificial Analysis) — mendekati Opus 4.7 (73,6) dan meninggalkan Sonnet 4.5 (49,2) jauh di belakang di benchmark pemrograman",
+      "Harga API $2 input dan $10 output per juta token — 2,5x lebih murah dari Claude Opus 5 ($5/$25) untuk kapabilitas yang hanya selisih 8 poin di intelligence index, sweet spot untuk workload volume-tinggi yang butuh kualitas Opus tanpa budget Opus",
+      "Adaptive Reasoning dengan Max Effort — sistem routing internal yang otomatis menentukan kedalaman penalaran per tugas, sama dengan Opus 5 tapi dengan harga lebih ramah",
+    ],
+    cons: [
+      "TTFT 117,6 detik (sumber: Artificial Analysis) — jauh lebih lambat dari Sonnet 4.5 atau frontier papan atas lain untuk workload chat real-time, mode Max Effort benar-benar mikir dulu sebelum jawab",
+      "Math index tidak tersedia di benchmark AA untuk entry ini (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski GPQA 91,1% dan SciCode 53,6% menjadi indikator kuat kemampuan saintifik",
+      "Margin intel 7,8 poin di bawah Opus 5 (63,1) dan coding 6,5 poin di bawah Opus 5 (78) — untuk workload yang butuh penalaran terdalam mutlak atau coding puncak, Opus 5 masih lebih layak walau premium",
+      "Akses API lewat platform.anthropic.com dan mitra regional Anthropic — untuk developer Indonesia, perlu verifikasi region availability dan metode pembayaran internasional sebelum adopsi produksi",
+    ],
+    verdict:
+      "Claude Sonnet 5 adalah sweet spot di lineup Anthropic 2026 — kombinasi intel 55,3, coding 71,5, dan harga 2,5x lebih murah dari Opus 5 menjadikannya pilihan paling rasional untuk pipeline agentik dan engineering volume-tinggi yang tidak butuh performa puncak mutlak. Untuk workload yang sensitif dolar tapi tetap butuh kualitas Sonnet, Sonnet 5 adalah upgrade default dari Sonnet 4.5 atau Sonnet 4.6.",
+    body: [
+      "Claude Sonnet 5 (Adaptive Reasoning, Max Effort) adalah generasi terbaru lini Sonnet dari Anthropic, dirilis 30 Juni 2026 sebagai penerus Sonnet 4.5 (rilis awal 2026) yang sebelumnya menjadi tulang punggung workload agentic volume-tinggi Anthropic. Sonnet selalu diposisikan satu tingkat di bawah Opus, dan Sonnet 5 melanjutkan tradisi itu dengan sweet spot harga-kapabilitas yang jelas — bukan yang paling cerdas, bukan yang paling murah, tapi yang paling rasional untuk banyak use case. Intelligence index 55,3 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — sejajar dengan Claude Opus 4.7 (55), Gemini 3.7 Flash high (56), dan Sonnet 4.5 (49,2), meninggalkan Sonnet 4.6 dan frontier papan tengah lain di belakang. Coding index 71,5 (sumber: Artificial Analysis) menjadi pembeda Sonnet 5 untuk workload engineering — mendekati Claude Opus 4.7 (73,6), meninggalkan Sonnet 4.5 (49,2) di belakang, dan mendekati kelas khusus coding frontier papan atas. Bedanya dari Opus 5 di intel 63,1 dan coding 78 hanya 8 poin di intelligence dan 6,5 poin di coding, tapi harga API $2 input / $10 output per juta token adalah 2,5x lebih murah dari Opus 5 ($5/$25). (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic engineering dan pipeline coding volume-tinggi, Sonnet 5 menunjukkan karakter khas lini Sonnet yang sudah teruji: kemampuan mengikuti instruksi teknis yang disiplin, perubahan lintas file yang terukur, dan sesi tool-use panjang yang tidak cepat kehilangan arah. Adaptive Reasoning dengan Max Effort secara otomatis menentukan kedalaman penalaran per tugas — sama dengan Opus 5 tapi dengan biaya inference lebih ramah, ideal untuk workload yang butuh penalaran serius tapi berjalan ribuan iterasi per hari. Skor benchmark eksekusi tool-use Sonnet 5 solid: terminal-bench-v2_1 80,5% (sumber: Artificial Analysis) mendekati frontier papan atas proprietary dan meninggalkan Sonnet 4.5 di belakang, menjadi indikator kuat kemampuan orkestrasi multi-langkah di terminal environment. Untuk pipeline software engineering — refactor multi-file, code review rutin, dokumentasi otomatis, dan iterasi agentic standar — Sonnet 5 kompetensi-nya setara dengan Opus 4.7 atau Sonnet 4.5 dengan margin efisiensi biaya yang signifikan. Throughput output median 83,4 tokens/detik (sumber: Artificial Analysis) cukup responsif untuk UX chat interaktif, meski TTFT 117,6 detik (sumber: Artificial Analysis) jauh lebih lambat dari Sonnet 4.5 atau frontier papan atas lain untuk workload yang butuh respons instan pertama — perlu orkestrasi pipeline atau gunakan Sonnet 5 untuk workload asinkron dan workload agentik yang bisa terima latency tinggi. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 55,3 (sumber: Artificial Analysis) menaruh Sonnet 5 di papan atas proprietary global — sejajar dengan Claude Opus 4.7 (55), Gemini 3.7 Flash high (56), dan Sonnet 4.5 (49,2). Coding index 71,5 (sumber: Artificial Analysis) mendekati Opus 4.7 (73,6) dan meninggalkan Sonnet 4.5 (49,2) jauh di belakang di benchmark pemrograman, mendekati kelas khusus coding frontier papan atas seperti Kimi K3 (76,2). Math index tidak tersedia di response API AA untuk entry ini (null), jadi kualitas numerik tidak terukur standar — meski GPQA 91,1% dan SciCode 53,6% (sumber: Artificial Analysis) menjadi indikator kuat kemampuan penalaran ilmiah dan saintifik, mendekati Opus 4.7 dan Sonnet 4.5. Harga API $2 input dan $10 output per juta token bermain di kelas flagship mid-tier — dibanding Claude Opus 5 ($5/$25), Sonnet 5 2,5x lebih murah di input dan 2,5x lebih murah di output dengan kapabilitas yang hanya selisih 8 poin di intelligence index; dibanding Sonnet 4.5 ($3/$15), Sonnet 5 1,5x lebih murah di input dan 1,5x lebih murah di output dengan intel 6,1 poin lebih tinggi dan coding 22,3 poin lebih tinggi, menjadikan Sonnet 5 upgrade default yang rasional dari Sonnet 4.5 atau Sonnet 4.6 untuk pengguna Anthropic.",
+      "Kelemahan yang teridentifikasi: TTFT 117,6 detik (sumber: Artificial Analysis) jauh lebih lambat dari Sonnet 4.5 atau frontier papan atas lain untuk workload chat real-time — mode Max Effort benar-benar berpikir dulu sebelum menjawab, ideal untuk workload asinkron atau pipeline agentik yang bisa terima latency tinggi, tapi bukan pilihan untuk UX interaktif yang butuh respons instan pertama atau streaming UI yang sangat sensitif latency pertama. Math index tidak tersedia di benchmark AA (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski GPQA 91,1% dan SciCode 53,6% menjadi indikator kuat kemampuan penalaran saintifik. Margin intel 7,8 poin di bawah Opus 5 (63,1) dan coding 6,5 poin di bawah Opus 5 (78) — untuk workload yang butuh penalaran terdalam mutlak (riset multi-langkah, code architect reasoning panjang, agent planning filosofis) atau coding puncak yang sensitif terhadap setiap poin benchmark, Opus 5 masih memimpin dengan premium harga yang signifikan. Sebagai model proprietary hosted, akses lewat platform.anthropic.com dan mitra regional Anthropic memerlukan payment method internasional untuk pemakaian serius, dan perlu verifikasi region availability untuk pasar Indonesia. Strategi pemakaian yang paling rasional: Sonnet 5 untuk pipeline agentic engineering volume-tinggi, code review rutin, dan iterasi agentic standar di mana kombinasi intel 55,3, coding 71,5, dan harga 2,5x lebih murah dari Opus 5 menjadi nilai jual utama; Opus 5 untuk workload yang mengincar performa puncak tanpa kompromi harga; Sonnet 4.5 atau Sonnet 4.6 untuk workload yang lebih ringan dan sensitif harga; Gemini 3.7 Flash high untuk streaming UX real-time yang butuh throughput tertinggi; Kimi K3 untuk coding agentic di kelas harga lebih terjangkau.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-26",
+    featured: false,
+  },
 ];
 
 
