@@ -2088,16 +2088,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       ],
     },
     "FlashML-org/FreeToken": {
-      description:
-        "Engine serving MoE edge-native (Python, Apache 2.0) yang menjalankan model frontier 290B+ (DeepSeek-V4-Flash, Qwen3.6-35B-A3B, GLM-5.2) di PC gaming consumer dengan bandwidth-adaptive CPU-GPU co-execution dan semantic-aware KV cache.",
-      highlights: [
-        "Bukan sekadar 'model lokal': engine serving yang perlakukan GPU + CPU + RAM + interconnect sebagai satu platform inference elastis — klaim jalankan model MoE 290B+ di hardware gaming consumer dengan kecepatan interaktif.",
-        "Inovasi bandwidth-adaptive (q* policy), double-buffered prefill streaming, global LRU expert cache, dan semantic anchor checkpoint untuk KV cache — konteks agentik (tool call, thinking block) tidak di-recompute.",
-        "Manajemen memori elastis: VRAM di-reallocate runtime antara expert cache dan KV memory tanpa restart engine — dukungan MXFP4/NVFP4/FP8/BF16 plus API Anthropic/OpenAI-compatible untuk plug langsung ke Codex/Claude Code/OpenCode.",
-        "Native support NVIDIA RTX 30/40/50 series, plus desktop app GUI di flashml.ai untuk Windows dan Linux — alternatif dari LM Studio/llama.cpp untuk workload MoE agentik kelas berat.",
-      ],
-    },
-  };
+          description:
+            "Engine serving MoE edge-native (Python, Apache 2.0) yang menjalankan model frontier 290B+ (DeepSeek-V4-Flash, Qwen3.6-35B-A3B, GLM-5.2) di PC gaming consumer dengan bandwidth-adaptive CPU-GPU co-execution dan semantic-aware KV cache.",
+          highlights: [
+            "Bukan sekadar 'model lokal': engine serving yang perlakukan GPU + CPU + RAM + interconnect sebagai satu platform inference elastis — klaim jalankan model MoE 290B+ di hardware gaming consumer dengan kecepatan interaktif.",
+            "Inovasi bandwidth-adaptive (q* policy), double-buffered prefill streaming, global LRU expert cache, dan semantic anchor checkpoint untuk KV cache — konteks agentik (tool call, thinking block) tidak di-recompute.",
+            "Manajemen memori elastis: VRAM di-reallocate runtime antara expert cache dan KV memory tanpa restart engine — dukungan MXFP4/NVFP4/FP8/BF16 plus API Anthropic/OpenAI-compatible untuk plug langsung ke Codex/Claude Code/OpenCode.",
+            "Native support NVIDIA RTX 30/40/50 series, plus desktop app GUI di flashml.ai untuk Windows dan Linux — alternatif dari LM Studio/llama.cpp untuk workload MoE agentik kelas berat.",
+          ],
+        },
+        "AgriciDaniel/claude-obsidian": {
+          description:
+            "Sistem 'second brain' lokal-pertama untuk Obsidian + Claude Code — tangkap sumber apa pun, Claude baca, tautkan, dan simpan ke knowledge graph Markdown biasa yang tetap kamu miliki, mengikuti pola LLM Wiki Karpathy.",
+          highlights: [
+            "Loop pengetahuan berulang yang matures: retain source → ground setiap klaim lewat ledger sumber + klaim (authority, freshness, confidence) → hubungkan lewat linked notes, Maps of Content, dan Canvas Obsidian → pakai ulang lewat retrieval & maintenance — bukan catatan AI yang berhenti di 'simpan teks'.",
+            "Vault tetap folder Markdown biasa: bukan plugin cache proprietary atau database cloud yang mengunci data — Claude Code + 15 skill plugin mengelola inbox, source-cited answer, dan visual mapping tanpa kamu kehilangan ownership file.",
+            "Agent Skills compliant (agentskills.io) plus plugin resmi untuk Claude Code, plus dokumentasi install untuk Windows/WSL — engineering-grade knowledge system yang langsung jalan di setup lokal engineer Indonesia.",
+            "Pattern dari Karpathy's LLM Wiki yang diindustrialisasi: setiap klaim penting punya bukti yang bisa di-inspect, ditambah workflow research/retrieval/maintenance eksplisit — relevan untuk peneliti, jurnalis, dan power user yang ingin AI bukan hanya 'merangkum', melainkan 'mengelola' pengetahuan mereka.",
+          ],
+        },
+        "tt-a1i/archify": {
+          description:
+            "Skill agen AI yang ubah deskripsi sistem atau codebase jadi peta arsitektur interaktif yang verifiable — HTML self-contained dengan motion, dark/light themes, dan delta Before/After untuk review arsitektur sebelum merge.",
+          highlights: [
+            "Lima jenis diagram (arsitektur, workflow, sequence, data-flow, lifecycle) dalam satu skill agentik yang kompatibel dengan Raven, Cursor, Claude Code, Codex CLI, dan OpenCode — lewat perintah `npx skills add tt-a1i/archify -g` sekali pasang.",
+            "Mode 'review arsitektur sebelum merge' yang jarang ada di tool diagram: bandingkan dua snapshot validasi sebagai Before / Delta / After dengan fakta eksplisit (added, removed, changed, moved, rerouted) — keputusan merge berbasis bukti, bukan vibe.",
+            "Output deterministic & verifiable: typed JSON IR plus self-contained HTML yang bisa di-share, plus export PNG, SVG, WebM, dan share card 1200×630 — setiap node bisa di-trace ke sumber revision-verified, tanpa halusinasi topologi.",
+            "Paket resmi dsh-plugin untuk DeepSeek Harness dan sponsorship dari APINEBULA + EverMind Raven — fondasi tooling untuk tech lead yang ingin dokumentasi arsitektur 'terbuka, bisa di-share, dan bisa diaudit' tanpa harus pakai Lucidchart atau Figma.",
+          ],
+        },
+        "freestylefly/awesome-gpt-image-2": {
+          description:
+            "Pustaka prompt industrial-grade khusus model GPT-Image-2 OpenAI — 532+ kasus yang di-reverse-engineer dari produksi, 20+ template industri, plus提炼出的 skill agentik yang terus di-update.",
+          highlights: [
+            "Pendekatan 'Prompt as Code': setiap kasus image generation dibungkus jadi template terstruktur (style, layout, lighting, subject, negative) yang bisa langsung dipakai atau dimodifikasi — bukan daftar prompt paragraf panjang yang harus di-parse manual.",
+            "Cakupan 532+ kasus dari reverse-engineer produksi nyata: editorial, e-commerce, iklan, poster, UI mockup, dsb. — berguna untuk desainer dan marketer yang ingin hasil GPT-Image-2 konsisten lintas brief tanpa harus trial-error sendiri.",
+            "Dilengkapi situs web visual (gpt-image2.canghe.ai) dengan preview besar, filter per style/skenario, dan tombol copy full prompt — bukan cuma repo, melainkan product experience untuk eksplorasi prompt library.",
+            "Plugin resmi untuk DeepSeek Harness (`dsh-plugin`) dan提炼 'skill' agentik yang bisa dipasang ke coding agent — workflow image generation jadi bisa diotomasi lewat pipeline, bukan satu per satu di chat UI.",
+          ],
+        },
+      };
 
   // Helper: lookup dengan fallback ke template-generated highlights
   export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
