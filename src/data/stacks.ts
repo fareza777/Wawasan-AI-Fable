@@ -3149,6 +3149,52 @@ export const stacks: Review[] = [
     date: "2026-08-24",
     featured: false,
   },
+  {
+    slug: "writer",
+    name: "Writer.com",
+    tagline: "Platform AI enterprise untuk tim konten dengan governance dan compliance",
+    tags: [
+      "Writer",
+      "Paid",
+      "Productivity",
+      "Enterprise",
+    ],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 6.5 },
+    ],
+    summary:
+      "Writer (sering ditulis Writer.com) adalah platform AI enterprise yang fokus ke governance, compliance, dan konsistensi brand voice untuk tim konten dan operasional. Berbeda dari chatbot AI generik, Writer menyediakan model proprietary-nya sendiri (Palmyra), Knowledge Graph untuk grounding ke data internal perusahaan, dan tooling admin untuk kontrol akses, audit log, dan style guide terpusat - menjadikannya pilihan utama untuk korporasi besar dan tim regulasi tinggi seperti keuangan, kesehatan, dan hukum.",
+    pros: [
+      "Knowledge Graph meng-ground AI ke data internal perusahaan (PDF, wiki, database) sehingga output bisa cite sumber spesifik, bukan halusinasi umum",
+      "Style guide dan brand voice enforcement terpusat di admin panel - sekali setujui aturan, semua tim produksi konten ikut tanpa review manual",
+      "Model proprietary Palmyra dilatih untuk use case enterprise (summarization, transformation, classification) dengan keamanan data yang compliant SOC 2 Type II dan HIPAA",
+      "Audit log lengkap untuk setiap prompt dan output - penting untuk industri yang diatur regulator (bank, asuransi, farmasi)",
+      "Support teknis dedicated dan customer success manager di paket Enterprise, berbeda dari tool self-serve yang mengandalkan forum komunitas",
+    ],
+    cons: [
+      "Harga enterprise-level: paket Team mulai dari 39 dolar per user per bulan (sekitar Rp 620 ribu), paket Enterprise custom dan tidak di-publish - jauh di atas Jasper atau Copy.ai",
+      "Bukan untuk kreator solo atau SMB - minimum user count dan kontrak tahunan membuat Writer sulit dijangkau tim kecil",
+      "Onboarding awal butuh investasi waktu untuk setup Knowledge Graph dan style guide - hari pertama belum langsung produktif",
+      "Model proprietary (Palmyra) tidak bisa di-swap ke GPT atau Claude via API - vendor lock-in ke Writer adalah konsekuensi langsung dari arsitektur enterprise-nya",
+    ],
+    verdict:
+      "Pilihan utama untuk korporasi yang butuh AI dengan governance serius dan compliance siap-audit; alasan utamanya adalah kontrol admin dan grounding data internal - tapi catatan utamanya adalah harga dan kompleksitas setup yang overkill untuk tim kecil atau kreator solo.",
+    body: [
+      "Writer dibangun dengan positioning yang sangat berbeda dari tool AI generik seperti ChatGPT atau Claude.ai: fokusnya bukan ke consumer atau kreator individual, tapi ke perusahaan besar yang perlu kontrol ketat atas bagaimana AI dipakai di organisasi. Pendekatan mereka adalah full-stack - mereka melatih model sendiri (keluarga Palmyra, dengan varian Palmyra X5 untuk reasoning dan Palmyra X4 untuk instruction following), membangun Knowledge Graph untuk grounding ke data proprietary, dan menyediakan admin console untuk style guide, permission, dan audit log. Hasilnya adalah platform yang jauh lebih cocok untuk tim compliance tinggi daripada untuk blogger atau content marketer solo.",
+      "Use case Writer paling kuat ada di industri yang setiap output-nya bisa kena audit regulator: tim legal yang membuat contract summary, tim klinis yang merangkum jurnal penelitian, tim finansial yang membuat memo riset dari data internal, dan tim marketing enterprise yang harus jaga konsistensi brand voice lintas 50 negara. Fitur Knowledge Graph memungkinkan AI menjawab pertanyaan spesifik seperti 'apa risk profile produk X di segmen Y?' dengan men-sitasi dokumen internal, bukan mengarang jawaban. Style guide enforcement di admin panel - misalnya kalimat aktif wajib, jargon tertentu dilarang, terminology harus konsisten - langsung berlaku untuk semua user, menggantikan workflow review manual yang biasanya menelan 30-50 persen waktu tim konten besar.",
+      "Untuk konteks Indonesia, Writer menarik untuk segmen korporasi besar dan BUMN yang beroperasi di sektor keuangan, telekomunikasi, dan FMCG - semua industri dengan kebutuhan dokumentasi formal tinggi. Beberapa bank besar dan perusahaan telko di Indonesia sudah menggunakan platform serupa untuk otomasi report dan memo internal, dan Writer adalah salah satu kandidat yang masuk short-list mereka. Namun, ada tiga catatan penting. Pertama, harga enterprise dalam dolar plus kontrak minimum tahunan menjadi barrier untuk startup dan UMKM lokal - tidak ada paket gratis dan tidak ada opsi self-serve, berbeda dengan Jasper atau Notion AI yang bisa dicoba gratis. Kedua, Knowledge Graph Writer paling optimal dengan data terstruktur dalam bahasa Inggris; untuk korpus bahasa Indonesia yang banyak, hasilnya masih perlu review manusia karena pemahaman model terhadap konteks lokal belum selevel bahasa Inggris. Ketiga, support teknis Writer berpusat di San Francisco dengan jam kerja Amerika - untuk tim Indonesia yang butuh respons cepat di waktu kerja WIB, time zone gap 12-15 jam bisa terasa lambat kecuali pakai paket Enterprise premium.",
+      "Di 2026 Writer sudah berekspansi dari tool writing assistance ke platform agentic work yang lebih luas: AI Actions untuk workflow multi-step (mis. baca email, klasifikasi, draft balasan, kirim ke approval queue), AI Studio untuk tim non-developer bangun aplikasi internal berbasis AI, dan integrasi ke Slack, Salesforce, dan Microsoft 365 yang lebih dalam. Mereka juga baru meluncurkan Writer Apps - containerized deployment untuk data on-premise - sebagai jawaban untuk industri yang tidak boleh kirim data ke cloud publik. Bagi korporasi Indonesia yang beroperasi di industri regulasi ketat, kombinasi compliance posture + kemampuan agentic membuat Writer jadi pertimbangan serius; bagi startup dan tim kecil, Writer adalah overkill - Jasper, Copy.ai, atau bahkan Notion AI sudah cukup. Posisi Writer di pasar Indonesia kemungkinan besar akan tetap di segmen enterprise besar di 2026, dengan growth tergantung seberapa agresif mereka tambah partner lokal dan support bahasa Indonesia di Knowledge Graph.",
+    ],
+    link: "https://writer.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-25",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
