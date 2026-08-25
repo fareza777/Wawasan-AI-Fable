@@ -1,58 +1,36 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "25 Agustus 2026",
-  "period": {
-    "date": "2026-08-25",
-    "label": "25 Agustus 2026",
-    "path": "/repo/daily/2026/08/25"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-25T00:02:57.082Z",
+  "fetchedAt": "2026-08-25T02:39:38.507Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "freestylefly/awesome-gpt-image-2",
-      "owner": "freestylefly",
-      "repo": "awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "trendshiftUrl": "https://trendshift.io/repositories/28623",
-      "language": "JavaScript",
-      "topics": [
-        "AI image generation",
-        "Curated list"
-      ],
-      "dateCreated": "2026-04-25T09:19:13Z"
+      "fullName": "bilawalsidhu/gods-eye-view",
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "description": "God's Eye View v1 public open-source release placeholder",
+      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
+      "trendshiftUrl": "https://trendshift.io/repositories/62154",
+      "topics": [],
+      "dateCreated": "2026-06-22T23:37:22Z"
     },
     {
       "rank": 2,
-      "fullName": "vorssaint/vorssaint-utils",
-      "owner": "vorssaint",
-      "repo": "vorssaint-utils",
-      "description": "Free and open-source macOS menu bar toolkit.",
-      "githubUrl": "https://github.com/vorssaint/vorssaint-utils",
-      "trendshiftUrl": "https://trendshift.io/repositories/53716",
-      "language": "Swift",
+      "fullName": "b-nnett/grok-bot-0.18-reconstructed",
+      "owner": "b-nnett",
+      "repo": "grok-bot-0.18-reconstructed",
+      "description": "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS",
+      "githubUrl": "https://github.com/b-nnett/grok-bot-0.18-reconstructed",
+      "trendshiftUrl": "https://trendshift.io/repositories/179805",
+      "language": "TypeScript",
       "topics": [],
-      "dateCreated": "2026-06-12T15:25:43Z"
+      "dateCreated": "2026-08-23T20:53:01Z"
     },
     {
       "rank": 3,
-      "fullName": "arvids-unavailable/openGym",
-      "owner": "arvids-unavailable",
-      "repo": "openGym",
-      "description": "https://github.com/DuarteSantos8/openGym",
-      "githubUrl": "https://github.com/arvids-unavailable/openGym",
-      "trendshiftUrl": "https://trendshift.io/repositories/175829",
-      "language": "JavaScript",
-      "topics": [
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-08-03T18:16:58Z"
-    },
-    {
-      "rank": 4,
       "fullName": "FlashML-org/FreeToken",
       "owner": "FlashML-org",
       "repo": "FreeToken",
@@ -67,19 +45,78 @@
       "dateCreated": "2026-07-20T20:44:11Z"
     },
     {
+      "rank": 4,
+      "fullName": "ApodexAI/FrontierAgent",
+      "owner": "ApodexAI",
+      "repo": "FrontierAgent",
+      "description": "🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.",
+      "githubUrl": "https://github.com/ApodexAI/FrontierAgent",
+      "trendshiftUrl": "https://trendshift.io/repositories/182526",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-08-22T05:07:35Z"
+    },
+    {
       "rank": 5,
-      "fullName": "b-nnett/grok-bot-0.18-reconstructed",
-      "owner": "b-nnett",
-      "repo": "grok-bot-0.18-reconstructed",
-      "description": "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS",
-      "githubUrl": "https://github.com/b-nnett/grok-bot-0.18-reconstructed",
-      "trendshiftUrl": "https://trendshift.io/repositories/179805",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-23T20:53:01Z"
+      "fullName": "freestylefly/awesome-gpt-image-2",
+      "owner": "freestylefly",
+      "repo": "awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "trendshiftUrl": "https://trendshift.io/repositories/28623",
+      "language": "JavaScript",
+      "topics": [
+        "AI image generation",
+        "Curated list"
+      ],
+      "dateCreated": "2026-04-25T09:19:13Z"
     },
     {
       "rank": 6,
+      "fullName": "feigeCode/navop",
+      "owner": "feigeCode",
+      "repo": "navop",
+      "description": "A native, all-in-one workspace for databases, SSH, SFTP, terminals, remote desktop, monitoring, and AI.",
+      "githubUrl": "https://github.com/feigeCode/navop",
+      "trendshiftUrl": "https://trendshift.io/repositories/107465",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-10T06:01:54Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "repo": "dramaclaw",
+      "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
+      "githubUrl": "https://github.com/dramaclaw/dramaclaw",
+      "trendshiftUrl": "https://trendshift.io/repositories/71581",
+      "language": "TypeScript",
+      "topics": [
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-27T04:34:30Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    },
+    {
+      "rank": 9,
       "fullName": "Alishahryar1/free-claude-code",
       "owner": "Alishahryar1",
       "repo": "free-claude-code",
@@ -93,52 +130,6 @@
         "Proxy"
       ],
       "dateCreated": "2026-01-28T19:02:30Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "openai/codex",
-      "owner": "openai",
-      "repo": "codex",
-      "description": "Lightweight coding agent that runs in your terminal",
-      "githubUrl": "https://github.com/openai/codex",
-      "trendshiftUrl": "https://trendshift.io/repositories/14330",
-      "language": "Rust",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2025-04-13T05:37:54Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "MadsLorentzen/ai-job-search",
-      "owner": "MadsLorentzen",
-      "repo": "ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
-      "trendshiftUrl": "https://trendshift.io/repositories/43622",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI workflow",
-        "Workflow automation",
-        "Resume building"
-      ],
-      "dateCreated": "2026-03-18T14:33:04Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "deepseek-ai/deepseek-harness",
-      "owner": "deepseek-ai",
-      "repo": "deepseek-harness",
-      "description": "",
-      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
-      "trendshiftUrl": "https://trendshift.io/repositories/146135",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-08-13T11:56:32Z"
     },
     {
       "rank": 10,
