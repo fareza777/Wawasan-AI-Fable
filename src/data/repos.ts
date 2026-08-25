@@ -4162,7 +4162,62 @@ export const repos: Review[] = [
     date: "2026-08-24",
     updatedAt: "2026-08-24",
     featured: false,
-  }
+  },
+  {
+    slug: "llama-index",
+    name: "LlamaIndex",
+    tagline: "Framework data agent Python untuk membangun aplikasi LLM di atas knowledge base privat dengan ingest, indexing, dan query terstruktur",
+    tags: ["AI Agent", "Python", "RAG", "Framework"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "LlamaIndex dari run-llama adalah framework Python untuk membangun aplikasi LLM di atas data privat - mulai dari dokumen internal, basis data SQL, API eksternal, hingga stream real-time - lewat pipeline ingest, indexing, dan query yang terstruktur. Diposisikan sebagai salah satu pionir Retrieval-Augmented Generation (RAG) di ekosistem Python, repo ini konsisten menjadi titik masuk utama bagi developer yang ingin menghubungkan model bahasa dengan knowledge base spesifik domain tanpa harus membangun ulang seluruh plumbing retrieval dari nol.",
+    highlights: [
+      "Pipeline ingest multi-format yang luas: pembaca bawaan untuk PDF, DOCX, HTML, Markdown, JSON, Notion, Slack, Google Docs, hingga database SQL dan API REST - menurunkan friksi onboarding data heterogen secara signifikan",
+      "Struktur data inti: Document, Node, dan Index - abstraksi yang membuat chunking, embedding, dan retrieval bisa di-compose lewat API Python idiomatik tanpa harus memahami detail vektor store internal",
+      "Beragam strategi indexing: Vector Store Index, Summary Index, Keyword Table Index, Knowledge Graph Index, hingga Sub-Question Query Engine - memungkinkan pemilihan struktur retrieval yang sesuai dengan karakteristik data dan pertanyaan",
+      "Integrasi vector store yang sangat luas: Chroma, Weaviate, Pinecone, Qdrant, Milvus, LanceDB, FAISS, pgvector, Redis, dan banyak lagi - ganti backend tanpa rewrite kode aplikasi",
+      "Query engine dengan fitur lengkap: retrieval biasa, multi-document synthesis, sub-question decomposition, recursive retrieval, dan agentic query lewat ReAct - memungkinkan eksperimen dari RAG sederhana hingga agent kompleks dengan API konsisten",
+      "LlamaHub registry berisi ratusan loader, transformer, vector store, dan agent tool yang bisa di-install terpisah - arsitektur plugin yang extensible lewat Python Package Index standar",
+      "Dukungan LLM multi-provider: OpenAI, Anthropic, Hugging Face, Ollama, llama.cpp, Bedrock, Azure OpenAI, Vertex AI - model lokal dan proprietary bisa diganti lewat satu konfigurasi",
+      "Document Agent dan Workflow API modern (2025-2026) membawa pola event-driven yang lebih cocok untuk pipeline produksi - stateful workflow dengan handler dan step yang deterministic",
+      "Lisensi MIT dengan 51.869 bintang dan 8.021 fork di GitHub per Agustus 2026 - salah satu proyek AI Python dengan komunitas dan kontribusi terbesar, aktif diperbarui mengikuti perubahan lanskap LLM",
+      "Dokumentasi dan cookbook yang sangat kaya di developers.llamaindex.ai - ratusan notebook Jupyter dan tutorial end-to-end yang bisa langsung dijalankan, menurunkan learning curve untuk developer baru",
+    ],
+    pros: [
+      "Abstraksi Document-Node-Index menyederhanakan eksperimen RAG - developer bisa berpindah dari vector index ke graph index atau summary index tanpa rewrite pipeline, menurunkan biaya eksplorasi arsitektur",
+      "Integrasi vector store dan LLM provider yang sangat luas memungkinkan adopsi bertahap - mulai dari Chroma lokal + OpenAI API di laptop, lalu migrasi ke Pinecone atau Qdrant di produksi tanpa perubahan kode aplikasi",
+      "Komunitas dan momentum yang sangat kuat (51.869 bintang, 8.021 fork, kontribusi ratusan kontributor per bulan) - jawaban untuk hampir setiap pertanyaan sudah tersedia di GitHub Issues, Discord, atau forum resmi",
+      "Document Agent dan Workflow API modern membawa fondasi yang lebih stabil untuk aplikasi produksi - dibanding pendekatan RAG ad-hoc, struktur event-driven LlamaIndex memberi determinisme dan observability yang dibutuhkan untuk deployment serius",
+      "Cookbook dan dokumentasi yang kaya (ratusan notebook, tutorial end-to-end) menurunkan friksi onboarding - developer Indonesia yang belajar secara autodidak bisa langsung menjalankan pipeline RAG pertama dalam hitungan jam",
+    ],
+    cons: [
+      "API historis LlamaIndex sering berubah antar versi mayor - migrasi dari versi lama ke Workflow API 2025+ butuh penyesuaian kode yang tidak trivial, sehingga strategi pin-version perlu disiplin dan eksplorasi contoh terbaru wajib",
+      "Konsep yang banyak (Loader, Transformer, Index, Retriever, Query Engine, Router, Agent, Workflow) bisa overwhelming untuk pemula - learning curve efektif lebih tinggi dibanding alternatif minimal seperti Haystack atau bahkan LangChain core",
+      "Untuk kasus sederhana (misalnya tanya jawab satu dokumen PDF), LlamaIndex bisa terasa overkill dibanding prompt langsung ke LLM - developer perlu evaluasi apakah kompleksitas framework sepadan dengan skala masalah",
+      "Beberapa loader dan integrasi LlamaHub maintained komunitas punya kualitas tidak merata - untuk data source bisnis spesifik, perlu audit stabilitas dan pemeliharaan loader sebelum diandalkan untuk produksi",
+      "Dokumentasi dan tutorial Bahasa Indonesia masih minim - developer Indonesia perlu nyaman baca English-first content dan kontribusi balik ke komunitas, terutama untuk edge case di industri lokal",
+    ],
+    verdict:
+      "LlamaIndex adalah salah satu framework paling matang dan paling aktif di ekosistem AI Python di paruh kedua 2026 - kombinasi abstraksi Document-Node-Index, integrasi vector store dan LLM provider yang luas, serta komunitas 51.869 bintang menjadikannya pilihan default bagi developer yang ingin menghubungkan model bahasa dengan knowledge base privat. Sangat relevan untuk tim Indonesia yang membangun aplikasi AI di atas dokumen internal, basis data perusahaan, atau arsip knowledge apapun - dengan catatan bahwa kurva belajar efektif tidak sesederhana yang dijanjikan marketing, dan migrasi antar versi mayor perlu strategi yang hati-hati.",
+    body: [
+      "Sepanjang 2023-2026, Retrieval-Augmented Generation berevolusi dari teknik niche menjadi salah satu pola aplikasi LLM yang paling banyak diadopsi: menyuntikkan pengetahuan spesifik domain ke model lewat potongan dokumen yang diambil secara retrieval sebelum model menghasilkan jawaban. LlamaIndex dari run-llama adalah salah satu pionir dan tetap menjadi framework paling konsisten di jalur ini. Dimulai November 2022 sebagai repo kecil untuk eksperimen indexing dokumen, LlamaIndex tumbuh menjadi salah satu proyek AI Python dengan komunitas terbesar di GitHub - per Agustus 2026, repo ini telah melampaui 51.869 bintang dan 8.021 fork, dengan ratusan kontributor aktif per bulan dan ekosistem LlamaHub yang berisi ratusan loader, transformer, vector store, dan tool terpisah. Untuk developer Indonesia yang baru masuk ke dunia RAG atau sudah memiliki aplikasi LLM yang ingin di-extend dengan knowledge base privat, LlamaIndex adalah salah satu titik masuk paling aman dan paling teruji.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah kekayaan abstraksi yang ditawarkan tanpa mengorbankan fleksibilitas. Inti framework adalah tiga struktur data: Document sebagai representasi data mentah (PDF, halaman web, baris database), Node sebagai unit chunking yang lebih kecil dan bisa di-embed, dan Index sebagai struktur retrieval (vector, summary, keyword, graph) yang dibangun di atas Node. Query Engine kemudian menerima pertanyaan natural, memutuskan index mana yang akan diambil, lalu memanggil LLM untuk sintesis jawaban. Pola ini bukan hal baru - yang membuat LlamaIndex menonjol adalah konsistensi API: berpindah dari Vector Store Index ke Knowledge Graph Index biasanya hanya membutuhkan pergantian konstruktor, bukan rewrite pipeline. Untuk eksperimen awal, developer cukup pip install llama-index llama-index-llms-openai llama-index-embeddings-openai, jalankan notebook dari cookbook di developers.llamaindex.ai, dan dalam hitungan jam sudah punya pipeline RAG pertama yang bertanya jawab ke koleksi PDF lokal - hambatan masuk yang sangat landai untuk standar aplikasi AI.",
+      "Aspek yang paling menarik untuk produksi adalah ekosistem integrasi dan evolusi ke Document Agent + Workflow. Vector store yang didukung mencakup Chroma, Weaviate, Pinecone, Qdrant, Milvus, LanceDB, FAISS, pgvector, Redis, dan banyak lagi - memungkinkan transisi dari Chroma lokal di laptop ke Pinecone atau Qdrant di produksi tanpa perubahan kode aplikasi. LLM provider juga sangat beragam: OpenAI, Anthropic, Hugging Face, Ollama, llama.cpp, Bedrock, Azure OpenAI, Vertex AI - model lokal untuk data sensitif dan proprietary API untuk skala besar bisa dipakai bergantian lewat satu konfigurasi. Sejak 2025, LlamaIndex memperkenalkan Document Agent dan Workflow API yang membawa fondasi event-driven dengan stateful handler - berbeda dari pendekatan function-calling ad-hoc, struktur ini memberi determinisme, observability, dan kemampuan error recovery yang jauh lebih cocok untuk deployment produksi dengan SLA serius. Untuk tim Indonesia yang membangun aplikasi AI enterprise - misalnya QA internal yang menanyakan regulasi, search dokumen legal, atau knowledge management untuk korporasi besar - kemampuan ini menurunkan risiko operasional secara signifikan dibanding menyusun pipeline RAG sendiri dari awal.",
+      "Batasan yang perlu dipahami. Pertama, API LlamaIndex cukup sering berubah antar versi mayor: migrasi dari ServiceContext lama ke Settings baru di 2024, atau ke Workflow API di 2025, butuh penyesuaian kode yang tidak trivial - strategi pin-version dan eksplorasi contoh terbaru wajib untuk aplikasi yang akan dipelihara jangka panjang. Kedua, konsep yang ditawarkan sangat banyak (Loader, Transformer, Index, Retriever, Query Engine, Router, Agent, Workflow) - untuk developer yang baru pertama kali menyentuh RAG, kurva belajar efektif lebih tinggi dibanding framework minimal seperti Haystack atau bahkan LangChain core; perlu investasi waktu untuk memahami kapan harus pakai index mana. Ketiga, untuk kasus sangat sederhana (tanya jawab satu PDF pendek), LlamaIndex terasa overkill dibanding prompt langsung ke LLM atau bahkan menggunakan GPTs OpenAI - perlu evaluasi apakah kompleksitas framework sepadan dengan skala masalah. Keempat, kualitas loader di LlamaHub maintained komunitas tidak merata - untuk data source bisnis spesifik (misalnya format laporan internal Indonesia yang unik), perlu audit stabilitas loader sebelum diandalkan. Terakhir, dokumentasi dan cookbook berbahasa Inggris masih dominan - developer Indonesia perlu nyaman baca English-first content dan kontribusi balik ke komunitas untuk menutup gap tersebut. Walau dengan segala keterbatasan itu, kombinasi kematangan, kekayaan ekosistem, dan momentum komunitas menjadikan LlamaIndex investasi tooling yang sangat layak untuk tim Indonesia yang serius membangun aplikasi AI di atas knowledge base privat di paruh kedua 2026 - dan arsitektur Document Agent + Workflow menjadikannya fondasi yang sustainable untuk evolusi ke pola agentic yang lebih kompleks.",
+    ],
+    link: "https://github.com/run-llama/llama_index",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-26",
+    updatedAt: "2026-08-26",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
