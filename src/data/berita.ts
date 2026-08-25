@@ -3702,6 +3702,53 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "menko-pmk-pratikno-birokrasi-harus-siap-hadapi-tantangan-disrupsi-teknologi-dan",
+    title: "Menko PMK Pratikno dan Pesan Tenang soal AI di Birokrasi: Adaptasi, Bukan Kepanikan",
+    excerpt:
+      "Pernyataan Menko PMK Pratikno bahwa birokrasi harus siap hadapi disrupsi teknologi dan AI bukan retorika kosong -- ia menandai pergeseran cara pejabat tinggi melihat perubahan.",
+    category: "Opini",
+    date: "2026-08-26",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ada nada berbeda ketika pejabat tinggi bicara soal AI. Bukan nada futuristik yang menjual mimpi, juga bukan nada defensif yang menyalahkan teknologi. Ketika Menko PMK Pratikno menyampaikan bahwa birokrasi harus menghadapi tantangan disrupsi teknologi dan AI, yang terdengar adalah permintaan agar negara mengubah cara kerjanya -- bukan agar negara menolak atau merayakan teknologi itu sendiri. Permintaan yang terlihat sederhana, tapi dalam konteks birokrasi Indonesia, ia termasuk yang paling berat untuk dipenuhi.",
+          "Kalimat itu mudah diucapkan di podium. Menyusun sistem yang benar-benar siap adalah pekerjaan bertahun-tahun. Tapi di situlah nilai sesungguhnya: ketika pejabat tingkat tertinggi sudah mengakui arah perubahannya, yang tersisa bagi instansi di bawahnya bukan lagi berdebat apakah perubahan akan datang, melainkan bagaimana menyiapkan diri tanpa membuat kekeliruan yang lebih besar.",
+        ],
+      },
+      {
+        heading: "Mengapa nada adaptasi lebih jujur daripada nada revolusi",
+        paragraphs: [
+          "Ada dua cara pejabat bicara soal AI. Cara pertama: nada revolusi yang menjual kecepatan -- 'kami akan menjadi yang tercepat di kawasan', 'kami akan adopsi dalam satu tahun'. Cara ini populer dipresentasikan, tapi jarang terdengar di dalam instansi yang mencoba mengeksekusinya. Cara kedua: nada adaptasi yang menjual kesiapan bertahap -- 'kami akan memastikan SDM siap', 'kami akan menyusun aturan main yang jelas', 'kami akan belajar dari implementasi yang sudah ada'. Cara kedua lebih pelan di podium, tapi lebih jujur di lapangan.",
+          "Pesan Menko PMK jelas masuk kategori kedua. Ia tidak menjanjikan adopsi masif dalam semalam, juga tidak melarang penggunaan. Ia menyodorkan kenyataan bahwa disrupsi sudah di depan mata dan birokrasi punya pilihan: menyesuaikan diri secara terstruktur atau dijejali perubahan tanpa persiapan. Pilihan pertama mahal di awal tapi mencegah kerugian yang lebih besar di belakang. Pilihan kedua terlihat murah di anggaran tahun pertama dan sangat mahal di tahun-tahun berikutnya.",
+          "Buat ASN yang sehari-hari bersentuhan dengan layanan publik, perbedaan dua nada ini bukan retorika. Yang pertama berakhir pada program pilot yang dipaksa jadi permanen sebelum evaluasi matang. Yang kedua menghasilkan ruang eksperimen yang jujur, dengan waktu belajar yang realistis -- sesuatu yang sangat langka di birokrasi kita.",
+        ],
+      },
+      {
+        heading: "Tiga pekerjaan rumah yang tidak bisa ditunda",
+        paragraphs: [
+          "Pertama, literasi ASN secara kritis, bukan sekadar pelatihan menulis prompt. Selama ini banyak pelatihan AI di instansi berhenti pada 'cara pakai ChatGPT untuk membuat laporan'. Yang lebih dibutuhkan adalah kemampuan membaca output model secara kritis: mengenali ketika model berhalusinasi, ketika referensi dikarang, ketika bahasa terdengar meyakinkan tapi tidak berdasar. ASN yang hanya dilatih menulis prompt akan menghasilkan dokumen yang permukaannya rapi dan isinya rapuh. ASN yang dilatih membaca output secara kritis akan menghasilkan dokumen yang bertahan saat diuji kebenarannya.",
+          "Kedua, aturan main yang jelas soal data. Disrupsi AI tidak akan berhenti karena instansi belum siap. Justru di masa transisi inilah risiko kebocoran data paling tinggi: ASN yang belum tahu batasannya menggunakan AI publik untuk dokumen yang seharusnya tidak keluar dari ruangan kerja. Tanpa aturan main yang tertulis, yang turun ke lapangan adalah ketidakpastian -- dan ketidakpastian biasanya berakhir pada dua hal: ASN berhenti memakai AI sama sekali, atau ASN memakai AI sembarangan karena tidak ada yang melarang. Keduanya bukan hasil yang kita mau.",
+          "Ketiga, ruang eksperimen yang tidak menghukum kegagalan. ASN yang mencoba sesuatu yang baru perlu tahu bahwa hasilnya yang tidak sempurna tidak akan langsung dianggap kelalaian kerja. Tanpa ruang ini, ASN cenderung menunggu perintah -- dan menunggu adalah gaya birokrasi yang justru membuat disrupsi AI terasa makin menakutkan. Ruang eksperimen bukan berarti menghapus akuntabilitas; ia berarti memisahkan antara kesalahan karena malas dan kesalahan karena sedang belajar. Keduanya memang terlihat sama dari luar, tapi konsekuensinya sangat berbeda.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk instansi di luar Jakarta",
+        paragraphs: [
+          "Pesan dari Menko PMK tidak hanya berlaku untuk kementerian di pusat. Pemerintah daerah, universitas, rumah sakit daerah, dan kantor layanan publik di tingkat kota dan kabupaten menghadapi tekanan yang sama -- justru dengan sumber daya yang lebih tipis. Tidak ada yang berharap mereka semua membangun tim AI internal dalam setahun. Yang lebih masuk akal adalah memulai dari tiga hal: pahami di mana AI benar-benar mempercepat pekerjaan yang membosankan (bukan yang penting), tetapkan batasan data yang jelas sejak hari pertama, dan libatkan ASN senior sebagai penjaga kualitas, bukan hanya sebagai penonton.",
+          "Ada satu hal yang biasanya tidak diucapkan secara terbuka tapi berlaku di mana-mana: birokrasi bukan lambat karena orang-orangnya malas, melainkan lambat karena sistemnya memang dibangun untuk lambat. Perubahan yang dibawa AI akan menekan titik itu. Pertanyaannya bukan apakah birokrasi akan ikut berubah -- ia akan -- tapi apakah perubahan itu akan dikendalikan oleh birokrasi atau justru sebaliknya. Pernyataan Menko PMK adalah pengakuan bahwa pilihan itu sengaja harus diambil oleh birokrasi sendiri, bukan didiamkan jatuh dari luar.",
+        ],
+      },
+      {
+        heading: "Catatan penutup: adaptasi bukan berarti semua berubah sekaligus",
+        paragraphs: [
+          "Adaptasi yang dimaksud pejabat setingkat Menko PMK bukan adopsi masif serentak di seluruh instansi. Adaptasi adalah kemampuan berubah secara terstruktur: tahu mana yang harus diubah duluan, mana yang boleh menunggu, dan mana yang memang tidak perlu disentuh. Tiga hal paling realistis untuk instansi mana pun hari ini: (1) perluas literasi AI yang bersifat kritis ke seluruh ASN, (2) buat aturan main tertulis tentang data apa yang boleh diproses AI dan data apa yang tidak, (3) sediakan satu tim kecil atau bahkan satu orang yang punya waktu eksplisit untuk eksperimen dan berbagi pelajaran ke tim lain. Tidak perlu tim besar, tidak perlu anggaran jumbo -- hanya konsistensi dan keberanian untuk mencoba sambil terus belajar.",
+          "Disrupsi teknologi dan AI sudah di depan mata. Pernyataan Menko PMK Pratikno adalah pengingat bahwa kesiapan bukan soal siapa paling cepat, melainkan siapa paling terstruktur. Dan di situlah birokrasi Indonesia punya peluang yang jarang diungkap: kemampuan mengubah sistem secara bertahap sudah ada -- yang sering kurang adalah keberanian untuk memulai. Mulai dari yang paling sederhana, ukur hasilnya, perluas yang terbukti berhasil. Cara lama memang tidak seksi, tapi ia satu-satunya yang terbukti tidak membuat kita menyesal lima tahun dari sekarang.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
