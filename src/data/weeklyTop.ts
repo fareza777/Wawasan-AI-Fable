@@ -2127,6 +2127,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
             "Plugin resmi untuk DeepSeek Harness (`dsh-plugin`) dan提炼 'skill' agentik yang bisa dipasang ke coding agent — workflow image generation jadi bisa diotomasi lewat pipeline, bukan satu per satu di chat UI.",
           ],
         },
+        "JetBrains/go-modern-guidelines": {
+          description:
+            "Pedoman resmi JetBrains untuk AI coding agent supaya menulis Go modern — agent belajar pakai `max(a,b)`, `slices.Contains`, `cmp.Or`, `errors.AsType[T]`, dan idiom Go 1.21–1.27 yang jarang muncul di training data model.",
+          highlights: [
+            "Solusi JetBrains untuk masalah 'AI agents generate outdated Go': training data model lagging di belakang rilis terbaru, plus frequency bias yang bikin for-i klasik lebih sering muncul daripada `for i := range n`.",
+            "Mendeteksi versi Go lewat `go.mod` lalu pakai fitur bahasa dan stdlib yang tersedia di versi itu — relevan untuk repo yang masih di Go 1.21 maupun yang sudah migrasi ke Go 1.27.",
+            "CLI kecil yang di-install via `go install` ke cache lokal (tidak pernah menyentuh proyek) dan target Go 1.25+ dengan auto toolchain switching — tersedia untuk Junie, Claude Code, Codex, Cursor, dan skills.sh.",
+            "Disejajarkan dengan arah tim Go (`modernize` analyzer) — guideline jadi 'prevention' sebelum `go fix` dijalankan: kode baru langsung ditulis idiom modern, refactor besar-besaran terhindari.",
+          ],
+        },
+        "34306/vphone-aio": {
+          description:
+            "Script shell satu-baris untuk menjalankan vphone (virtual iPhone iOS 26.1 jailbroken) di Mac — boot lewat VNC di `vnc://127.0.0.1:5901`, bootstrap sudah terpasang, berguna untuk riset dan eksperimen security iOS tanpa perangkat fisik.",
+          highlights: [
+            "AIO script yang merangkai unduh, re-assembly split archive (aa–ag), ekstrak, dan boot vphone-cli dalam satu alur — tanpa harus compile atau konfigurasi manual step demi step.",
+            "vphone sudah pre-jailbroken dengan full bootstrap terpasang (iOS 26.1) — peneliti keamanan dan reverse engineer bisa langsung eksperimen tweak, sideload, dan forensic tanpa beli iPhone dev khusus.",
+            "Butuh SIP disabled + `amfi_get_out_of_my_way=1`, storage kosong 128GB+, dan `brew install git-lfs wget zstd libimobiledevice`; hubungan langsung ke proyek hulu Lakr233/vphone-cli dengan tambahan orkestrasi.",
+            "Berguna untuk QA aplikasi iOS yang butuh env jailbreak (test tweak, akses file system, manipulasi plist) — workflow Mac-centric lewat RealVNC atau Screen Sharing di port 5901.",
+          ],
+        },
       };
 
   // Helper: lookup dengan fallback ke template-generated highlights
