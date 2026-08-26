@@ -3195,6 +3195,47 @@ export const stacks: Review[] = [
     date: "2026-08-25",
     featured: false,
   },
+{
+    slug: "exa-ai",
+    name: "Exa AI",
+    tagline: "Search API neural-first untuk AI agents — embeddings di atas crawler",
+    tags: ["Exa", "Freemium", "Search/RAG", "Neural Search"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Exa membangun search engine dari nol untuk mesin, bukan untuk manusia: hasil pencariannya adalah embeddings, konten terstruktur, dan ringkasan yang siap dikunyah LLM. Pendekatan neural-first ini menjadikannya tulang punggung riset untuk AI agent modern — terutama untuk use case deep research, lead generation otomatis, dan RAG yang butuh sumber web segar.",
+    pros: [
+      "Neural search murni (embeddings-based) — hasil lebih sesuai konteks daripada keyword match klasik dari Google SERP",
+      "Endpoint /research menjalankan loop multi-step (cari → baca → sintesis → cite) yang menghemat 60-70 persen token dibanding prompt manual",
+      "Pemahaman query bahasa alami yang baik termasuk kalimat panjang dan intent implisit",
+      "API stabil dengan SDK Python, Node, dan Rust; dokumentasi salah satu yang paling rapi di kategori search API",
+      "Free tier 1.000 pencarian per bulan tanpa kartu kredit — cukup untuk eksperimen dan prototipe",
+    ],
+    cons: [
+      "Bukan Google: Exa tidak meniru SERP. Untuk query operasional (mis. 'jam buka kopi dekat sini'), hasilnya masih di bawah Google",
+      "Harga PAYGO di paket Pro bisa melonjak di workload riset mendalam; cost per 1.000 permintaan lebih mahal dari Serper atau Tavily untuk volume tinggi",
+      "Latensi rata-rata 800-1.500 ms per panggilan — tidak ideal untuk chat real-time tanpa caching lokal",
+      "Tidak ada SDK resmi untuk Java atau Go; komunitas wrapper ada tapi belum mature",
+    ],
+    verdict:
+      "Search API yang paling cocok untuk stack AI agent serius di 2026; alasan utamanya adalah kualitas embeddings-nya yang sulit ditiru SERP scraper. Tapi untuk use case volume tinggi atau latensi rendah, kombinasi Tavily + Serper lebih ekonomis — Exa adalah pilihan premium, bukan default universal.",
+    body: [
+      "Exa lahir dari pengamatan sederhana: kalau kamu meminta LLM menjawab pertanyaan faktual terbaru, search engine Google tidak dirancang untuk mesin — dirancang untuk manusia di belakang browser. Hasil SERP penuh boilerplate, iklan, dan markup yang harus di-bersihkan sebelum masuk konteks LLM. Exa memilih jalur sebaliknya: mereka melatih crawler dan indeks mereka sendiri dengan embeddings sebagai representasi utama, lalu mengekspos API yang mengembalikan list URL plus konten terstruktur plus (di endpoint terbaru) jawaban singkat yang sudah diekstrak. Untuk AI agent yang butuh menelusuri web dan mensintesis jawaban, ini menghilangkan 2-3 lapis preprocessing yang biasanya mengisi pipeline RAG.",
+      "Di 2026 fitur pembeda Exa adalah endpoint /research yang menjalankan loop riset multi-step otomatis: dari satu pertanyaan bahasa alami, Exa memecahnya jadi sub-pertanyaan, mencari di indeks neural-nya, membaca halaman kandidat, lalu mensintesis jawaban dengan sitasi. Penggunaan praktisnya menghemat token besar dibanding prompt manual seperti 'cari 10 URL lalu rangkum', yang biasanya menelan 8-12 ribu token per siklus. Buat developer Indonesia yang membuat AI agent untuk riset pasar atau kurasi konten, ini adalah salah satu cara paling langsung untuk menambah kapabilitas 'riset sendiri' ke produk tanpa bangun crawler sendiri.",
+      "Untuk konteks Indonesia, ada tiga hal yang perlu diperhatikan. Pertama, kapabilitas multibahasa Exa sudah mencakup Bahasa Indonesia sejak 2024, dan akurasinya cukup untuk query formal dan jurnalistik — tapi untuk konten kasual atau slang yang banyak di media sosial, hasilnya masih perlu sampling manual. Kedua, paket Starter gratis 1.000 pencarian per bulan benar-benar gratis tanpa kartu kredit: ini cukup untuk eksperimen serius, dan IDR-Rupiah tidak menjadi barrier karena Exa tidak menagih sampai kamu upgrade ke Pro. Ketiga, untuk production agent yang menangani ribuan pencarian per hari, harga per 1.000 permintaan sekitar USD 7 di paket PAYGO (sekitar Rp 100-115 ribu) jadi pertimbangan serius; di volume itu, kombinasi Tavily (konteks siap pakai) plus Serper (SERP termurah) biasanya 30-50 persen lebih ekonomis.",
+      "Secara keseluruhan, Exa adalah search API yang paling masuk akal untuk AI agent yang fokus ke kualitas jawaban, bukan kuantitas query. Ia tidak menggantikan Google untuk pencarian manusia, dan tidak menggantikan Tavily untuk use case 'konteks jadi-jadian' yang simpel. Tapi untuk AI agent yang butuh menelusuri, membaca, dan mensintesis dengan grounding kuat, Exa adalah standar baru di 2026 — terutama karena free tier-nya memungkinkan adopsi tanpa gesekan pembayaran di komunitas global, termasuk Indonesia.",
+    ],
+    link: "https://exa.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-26",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
