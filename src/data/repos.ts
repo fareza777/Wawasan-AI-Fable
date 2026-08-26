@@ -4218,6 +4218,62 @@ export const repos: Review[] = [
     updatedAt: "2026-08-26",
     featured: false,
   },
+  {
+    slug: "claude-plugins-official",
+    name: "Claude Code Plugins Directory",
+    tagline: "Direktori plugin resmi Anthropic untuk Claude Code: 39 plugin internal plus marketplace plugin pihak ketiga dengan standar kualitas ketat",
+    tags: ["AI Agent", "Claude Code", "Plugin", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Claude Code Plugins Directory dari anthropics adalah direktori plugin resmi yang dikurasi langsung oleh tim Anthropic untuk Claude Code - memuat 39 plugin internal (LSP untuk 9 bahasa, code review, security, commit commands, MCP server development, hingga feature-dev workflow) plus registry plugin pihak ketiga yang harus lolos standar kualitas sebelum dipublikasikan. Diposisikan sebagai pasar plugin resmi untuk Claude Code dengan disiplin marketplace yang jarang ada di ekosistem AI assistant lain.",
+    highlights: [
+      "39 plugin internal siap pakai di direktori /plugins: mencakup LSP untuk TypeScript, Python, Go, C#, Java, Kotlin, PHP, Lua, dan C++ (clangd) - mengaktifkan code intelligence native di Claude Code untuk 9 bahasa pemrograman",
+      "Plugin developer-tools: code-review, pr-review-toolkit, code-simplifier, code-modernization, feature-dev, dan commit-commands - workflow lengkap untuk siklus pengembangan perangkat lunak modern",
+      "Plugin keamanan khusus: claude-security dengan hookify membantu developer membangun guardrail otomatis untuk operasi agentik di Claude Code",
+      "Plugin khusus developer MCP: mcp-server-dev dan mcp-tunnels - mempercepat pembuatan Model Context Protocol server untuk integrasi tool eksternal",
+      "Plugin pengalaman belajar: learning-output-style dan explanatory-output-style - mengubah gaya respons Claude Code menjadi edukatif dan kontekstual",
+      "Plugin setup dan manajemen: claude-code-setup, claude-md-management, dan project-artifact - membantu tim menstandarkan konfigurasi Claude Code lintas anggota tim",
+      "Struktur plugin terstandarisasi: .claude-plugin/plugin.json (metadata), .mcp.json (server config), commands/, agents/, skills/, dan README.md - kontrak yang konsisten memudahkan audit dan otomasi",
+      "Marketplace eksternal di /external_plugins: plugin pihak ketiga dari partner dan komunitas yang harus lolos tinjauan kualitas dan keamanan sebelum dipublikasikan - filter kurasi yang menurunkan risiko supply chain",
+      "Mekanisme rename plugin yang aman: field 'name' immutable, perubahan label pakai displayName, dan map 'renames' di marketplace.json untuk migrasi otomatis install lama ke slug baru - migrasi tanpa memutus pengguna",
+      "Skema Skill-bundle plugin dengan strict:false - memungkinkan plugin mendeklarasikan SKILL.md langsung dari sub-folder repositori lain lewat source git-subdir + path, memperluas jangkauan kurasi tanpa duplikasi repo",
+      "Lisensi Apache-2.0 dengan 34.327 bintang dan 3.884 fork di GitHub per Agustus 2026 - salah satu repositori paling aktif di ekosistem AI coding assistant dengan ritme commit harian dan kontribusi dari banyak engineer Anthropic",
+    ],
+    pros: [
+      "Standar kualitas dan keamanan yang jelas untuk plugin pihak ketiga - berbeda dari registry open-total, marketplace ini menurunkan risiko supply chain attack yang umum di ekosistem AI assistant",
+      "Cakupan plugin internal yang sangat luas mencakup hampir seluruh alur kerja developer - dari LSP multi-bahasa, code review, commit, hingga MCP server development, semuanya dengan instalasi satu perintah",
+      "Dokumentasi resmi di code.claude.com/docs/en/plugins menjelaskan struktur, kontrak, dan praktik kontribusi plugin dengan contoh plugin reference yang bisa langsung di-fork",
+      "Skema marketplace.json yang eksplisit plus mekanisme rename map memungkinkan evolusi plugin tanpa memutus install pengguna existing - penting untuk adopsi enterprise",
+      "Aktivitas commit dan issue tracker yang sangat tinggi (push harian, 30+ isu terbuka aktif) menandakan pemeliharaan aktif dan iterasi cepat terhadap umpan balik komunitas",
+    ],
+    cons: [
+      "Terikat erat dengan Claude Code - plugin di sini hanya berguna jika pengguna sudah menjadi pengguna aktif Claude Code, sehingga nilai tambah berkurang untuk tim yang memakai AI assistant lain",
+      "Kurva belajar konfigurasi Claude Code Marketplace (marketplace.json, plugin.json, source git-subdir) relatif tinggi untuk developer yang baru pertama kali membuat plugin - perlu investasi waktu untuk memahami kontrak",
+      "Kontribusi plugin eksternal mensyaratkan proses approval melalui formulir submission - gerbang yang meningkatkan kualitas tapi bisa terasa lambat untuk iterasi cepat komunitas",
+      "Sebagian plugin internal masih bergantung pada MCP server yang harus dijalankan terpisah (Node.js, Docker) - overhead setup tambahan di luar Claude Code CLI utama",
+      "Tidak ada telemetry atau insight publik tentang plugin mana yang paling banyak di-install - developer plugin pihak ketiga tidak punya signal adopsi yang jelas untuk memprioritaskan pemeliharaan",
+    ],
+    verdict:
+      "Claude Code Plugins Directory adalah contoh implementasi marketplace plugin yang terdisiplin di ekosistem AI assistant per paruh kedua 2026 - kombinasi 39 plugin internal berkualitas tinggi, standar ketat untuk plugin pihak ketiga, dan skema marketplace yang eksplisit menjadikannya fondasi penting untuk adopsi Claude Code di tim profesional. Sangat relevan untuk developer Indonesia yang sudah menjadi pengguna Claude Code dan ingin memperluas kemampuannya secara kurasi - dengan catatan bahwa nilainya paling terasa di ekosistem Claude Code, dan kontribusi plugin pihak ketiga mensyaratkan proses approval yang disiplin.",
+    body: [
+      "Sepanjang 2025-2026, Claude Code berevolusi dari CLI tunggal menjadi platform extensible dengan konsep plugin terstruktur - dan Claude Code Plugins Directory dari anthropics adalah direktori resmi yang mengonsolidasikan semua plugin internal plus marketplace pihak ketiga di satu tempat. Repositori ini dipublikasikan November 2025 sebagai rumah resmi plugin-plugin yang dikembangkan langsung oleh tim Anthropic, dan per Agustus 2026 telah melampaui 34.327 bintang serta 3.884 fork di GitHub - angka yang sangat tinggi untuk kategori direktori plugin AI assistant, menandakan validasi komunitas terhadap pendekatannya. Dibanding pendekatan ekstensi tradisional yang sering kali longgar (pasang script di folder dotfiles), Claude Code Plugins Directory membawa disiplin marketplace dengan kontrak plugin.json, MCP server config terpisah, dan proses approval untuk kontribusi pihak ketiga - pola yang lebih mirip extension store IDE modern daripada daftar plugin GitHub.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah kekayaan plugin internal yang langsung relevan dengan alur kerja developer harian. Direktori /plugins memuat 39 plugin yang mencakup hampir seluruh spektrum pengembangan perangkat lunak: integrasi LSP untuk 9 bahasa (TypeScript via pyright, Python via pyright-lsp, Go via gopls-lsp, C# via csharp-lsp, Java via jdtls-lsp, Kotlin via kotlin-lsp, PHP via php-lsp, Lua via lua-lsp, dan C++ via clangd-lsp), plugin code review (code-review dan pr-review-toolkit), commit commands untuk otomasi pesan commit, plugin keamanan (claude-security dan hookify), plugin feature-dev untuk workflow pengembangan terstruktur, hingga plugin pembelajaran (learning-output-style dan explanatory-output-style). Instalasi satu plugin dilakukan lewat /plugin install {plugin-name}@claude-plugins-official di dalam Claude Code CLI - tanpa clone manual, tanpa konfigurasi path, dan tanpa restart sesi. Untuk developer Indonesia yang sehari-hari bekerja dengan TypeScript dan Python di stack startup, menambahkan pyright-lsp + code-review + commit-commands langsung memberikan code intelligence setara IDE lengkap di terminal agentik.",
+      "Aspek yang paling menarik untuk produksi adalah struktur plugin terstandarisasi dan mekanisme evolusi yang aman. Setiap plugin mengikuti kontrak yang sama: .claude-plugin/plugin.json untuk metadata wajib (nama, deskripsi, versi, author), .mcp.json opsional untuk konfigurasi Model Context Protocol server, folder commands/ untuk slash command, agents/ untuk definisi subagent, skills/ untuk kemampuan tambahan, dan README.md untuk dokumentasi. Kontrak yang konsisten ini memungkinkan audit otomatis dan tooling pihak ketiga - hal yang sulit dicapai di ekosistem plugin ad-hoc. Skema marketplace.json juga membawa mekanisme rename yang aman: field 'name' bersifat immutable, perubahan label dilakukan lewat displayName, dan bila rename benar-benar tak terhindarkan, map 'renames' di marketplace.json memungkinkan migrasi otomatis install lama ke slug baru pada sinkronisasi berikutnya - pendekatan yang mencegah breakage instalasi pengguna enterprise. Untuk tim Indonesia yang mengelola konfigurasi Claude Code lintas anggota tim, kemampuan ini menurunkan friksi standarisasi secara signifikan.",
+      "Batasan yang perlu dipahami. Pertama, seluruh nilai direktori ini sangat terikat dengan Claude Code - jika tim tidak menggunakan Claude Code sebagai AI assistant utama, plugin-plugin di sini tidak membawa nilai tambah langsung; ini adalah ekstensi untuk platform tertentu, bukan tool standalone. Kedua, kurva belajar untuk membuat plugin baru relatif tinggi: developer perlu memahami kontrak plugin.json, struktur commands/agents/skills/, dan konfigurasi marketplace.json sebelum kontribusi pertama bisa di-publish - invest waktu yang tidak kecil untuk pemula. Ketiga, kontribusi plugin eksternal melalui /external_plugins mensyaratkan proses approval lewat formulir submission resmi - gerbang yang meningkatkan kualitas dan keamanan tapi bisa terasa lambat untuk iterasi cepat komunitas atau eksperimen plugin pribadi. Keempat, sebagian plugin internal masih bergantung pada MCP server yang harus dijalankan terpisah - setup Node.js, Docker, atau Python environment tambahan di luar Claude Code CLI utama, yang menambah overhead deployment. Terakhir, tidak ada telemetry publik tentang plugin mana yang paling banyak di-install, sehingga developer plugin pihak ketiga tidak punya signal adopsi yang jelas untuk memprioritaskan pemeliharaan. Walau dengan segala keterbatasan itu, kombinasi standar kualitas yang ketat, cakupan plugin internal yang luas, dan mekanisme evolusi yang aman menjadikan Claude Code Plugins Directory fondasi penting untuk adopsi Claude Code di tim profesional di paruh kedua 2026 - dan relevansinya akan terus meningkat seiring Claude Code semakin menjadi pilihan AI assistant untuk developer Indonesia yang mengutamakan keamanan supply chain dan kualitas plugin di atas ekstensi longgar.",
+    ],
+    link: "https://github.com/anthropics/claude-plugins-official",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-27",
+    updatedAt: "2026-08-27",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
