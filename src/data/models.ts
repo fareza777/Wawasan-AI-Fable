@@ -3643,6 +3643,50 @@ export const models: Review[] = [
     date: "2026-08-26",
     featured: false,
   },
+  {
+    slug: "grok-4-6-medium",
+    name: "Grok 4.6 (medium)",
+    tagline:
+      "Frontier SpaceXAI Mei 2026 — intel 59,0 dengan harga mid-tier dan akses real-time bawaan",
+    tags: ["SpaceXAI", "Proprietary", "Reasoning", "Mid-Tier"],
+    score: 8.5,
+    scores: [
+      { label: "Penalaran", value: 8.8 },
+      { label: "Coding", value: 8.7 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 59,
+    aa_coding_index: 74.4,
+    aa_price_input: 2,
+    aa_price_output: 6,
+    aa_synced_at: "2026-08-27",
+    summary:
+      "Grok 4.6 (medium) adalah iterasi frontier SpaceXAI (xAI) yang dirilis Mei 2026, diposisikan sebagai varian penalaran mid-tier dari keluarga Grok 4.6 — intelligence index 59,0 (sumber: Artificial Analysis) menembus papan atas proprietary global dan sejajar dengan frontier papan atas Asia, sementara coding index 74,4 menaruhnya di atas Sonnet 5 dan mendekati GLM-5.3. Bedanya dari Grok 4.5 dan Grok 4 keluarga sebelumnya: model ini dirancang sejak lahir untuk reasoning configurability dan akses real-time ke data X (Twitter) — diferensiasi unik di kelasnya.",
+    pros: [
+      "Intelligence index 59,0 (sumber: Artificial Analysis) — papan atas proprietary global, sejajar dengan frontier Asia papan atas (Qwen3.7 Plus, MiMo-V2.5-Pro)",
+      "Coding index 74,4 — melampaui Sonnet 5 dan mendekati GLM-5.3 di kelas papan atas",
+      "Harga API $2 input / $6 output per 1M token — kompetitif untuk tier intel-nya, sekitar separuh dari Sonnet 5",
+      "Akses real-time bawaan ke X (Twitter) — diferensiasi unik untuk workload yang butuh sinyal pasar, opini publik, dan tren terkini",
+    ],
+    cons: [
+      "TTFT 21,0 detik (sumber: Artificial Analysis) — lambat untuk chat interaktif, UX streaming akan terasa jeda panjang",
+      "Throughput 61,2 token/detik — di bawah frontier papan atas yang capai 100+ token/detik",
+      "Akses API lewat xAI / X platform — perlu kartu pembayaran internasional dan regional access masih terbatas di Asia Tenggara",
+      "Ekosistem developer pihak ketiga dan integrasi SDK lokal masih tipis dibanding OpenAI atau Anthropic",
+    ],
+    verdict:
+      "Grok 4.6 (medium) adalah pilihan menarik untuk tim yang butuh penalaran papan atas dengan harga mid-tier dan diferensiasi real-time X bawaan. Untuk chat interaktif real-time, TTFT 21 detik adalah kompromi yang perlu diperhitungkan; untuk workload batch, riset multi-langkah, atau pipeline agentik yang butuh sinyal real-time, proposisi nilainya sulit di-match frontier lain.",
+    body: [
+      "Grok 4.6 (medium) melompat dari garis keluarga Grok yang sebelumnya sudah terkenal sebagai model dengan akses real-time ke X (Twitter) — diferensiasi yang sejak Grok 1 belum pernah digarap serius oleh frontier manapun. SpaceXAI (xAI) merilis model ini pada Mei 2026 dengan positioning spesifik: varian mid-tier dari keluarga Grok 4.6 yang dipertahankan agar harga inference tetap agresif tanpa mengorbankan intelligence index papan atas. Intelligence index 59,0 di benchmark Artificial Analysis menembus papan atas proprietary global — sejajar dengan Claude Opus 4.8 (57,3) dan mendekati Kimi K3 (57,1), tapi dijual dengan harga yang lebih kompetitif dari keduanya.",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint xAI API, Grok 4.6 (medium) menunjukkan karakter khas laboratorium yang fokus pada reasoning configurability: penalaran multi-langkah yang solid, tool-use agentik yang stabil di sesi panjang, dan kemampuan coding yang menonjol di kelas harganya. Untuk workload riset multi-langkah, code review besar, dan pipeline agentik yang butuh penalaran terdalam, model ini sangat kompeten — coding index 74,4 di benchmark Artificial Analysis adalah salah satu yang tertinggi di kelas mid-tier, melampaui Sonnet 5 dan mendekati GLM-5.3 di papan atas. Yang paling terasa di pengujian adalah kombinasi penalaran murni dengan akses real-time X: untuk prompt yang butuh sinyal pasar, opini publik, atau tren terkini, Grok 4.6 punya keunggulan bawaan yang tidak bisa di-replikasi oleh frontier Barat lain. (Sumber: Artificial Analysis.)",
+      "Soal angka: intelligence index 59,0 di benchmark Artificial Analysis menaruh Grok 4.6 (medium) di papan atas proprietary global — sejajar dengan Claude Opus 4.8 dan satu tingkat di bawah Claude Opus 5 (62,5). Coding index 74,4 adalah pembeda utama model ini — melampaui Sonnet 5 dan Sonnet 4.6, mendekati GLM-5.3 di kelas papan atas, dan di atas rata-rata industri untuk dimensi coding agregat. Throughput output 61,2 token/detik dan TTFT 21,0 detik menempatkannya di tier lambat — bukan pilihan optimal untuk antarmuka chat interaktif dengan streaming UI, tapi cukup responsif untuk alur kerja agentik step-by-step dan pipeline batch.",
+      "Kelemahan yang teridentifikasi: TTFT 21,0 detik (sumber: Artificial Analysis) adalah kompromi yang perlu diperhitungkan untuk use case real-time — Sonnet 5 di TTFT 8,8 detik atau Sonnet 4.6 di tier yang lebih cepat akan terasa lebih snappy di antarmuka chat. Throughput 61,2 token/detik juga di bawah frontier papan atas yang capai 100+ token/detik. Harga API $2 per juta token input dan $6 output bermain di kelas mid-tier — kompetitif untuk tier intel-nya, sekitar separuh harga Sonnet 5 ($3/$15) dengan intel yang sebanding. Akses API lewat xAI / X platform perlu kartu pembayaran internasional dan regional availability masih terbatas di beberapa negara Asia Tenggara. Strategi pemakaian yang masuk akal: Grok 4.6 (medium) untuk workload yang butuh kombinasi penalaran papan atas dan akses real-time X — riset pasar, monitoring opini publik, pipeline agentik yang butuh sinyal terkini; untuk chat interaktif murni, Sonnet 5 atau Claude Opus lebih optimal; untuk deployment lokal fleksibel, varian open-weight dari laboratorium lain masih lebih relevan.",
+    ],
+    link: "https://x.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-27",
+  },
 ];
 
 
