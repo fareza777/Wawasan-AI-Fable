@@ -1,28 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "26 Agustus 2026",
-  "period": {
-    "date": "2026-08-26",
-    "label": "26 Agustus 2026",
-    "path": "/repo/daily/2026/08/26"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-26T00:04:25.355Z",
+  "fetchedAt": "2026-08-26T02:48:37.506Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "bilawalsidhu/gods-eye-view",
-      "owner": "bilawalsidhu",
-      "repo": "gods-eye-view",
-      "description": "God's Eye View v1 public open-source release placeholder",
-      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
-      "trendshiftUrl": "https://trendshift.io/repositories/62154",
-      "topics": [],
-      "dateCreated": "2026-06-22T23:37:22Z"
-    },
-    {
-      "rank": 2,
       "fullName": "freestylefly/awesome-gpt-image-2",
       "owner": "freestylefly",
       "repo": "awesome-gpt-image-2",
@@ -37,22 +22,91 @@
       "dateCreated": "2026-04-25T09:19:13Z"
     },
     {
-      "rank": 3,
-      "fullName": "FlashML-org/FreeToken",
-      "owner": "FlashML-org",
-      "repo": "FreeToken",
-      "description": "",
-      "githubUrl": "https://github.com/FlashML-org/FreeToken",
-      "trendshiftUrl": "https://trendshift.io/repositories/171646",
-      "language": "Python",
+      "rank": 2,
+      "fullName": "JetBrains/go-modern-guidelines",
+      "owner": "JetBrains",
+      "repo": "go-modern-guidelines",
+      "description": "Help AI coding agents write modern Go",
+      "githubUrl": "https://github.com/JetBrains/go-modern-guidelines",
+      "trendshiftUrl": "https://trendshift.io/repositories/141742",
+      "language": "Go",
       "topics": [
-        "AI infrastructure",
-        "Local LLM"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-07-20T20:44:11Z"
+      "dateCreated": "2025-11-24T12:46:31Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "bilawalsidhu/gods-eye-view",
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "description": "God's Eye View v1 public open-source release placeholder",
+      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
+      "trendshiftUrl": "https://trendshift.io/repositories/62154",
+      "topics": [],
+      "dateCreated": "2026-06-22T23:37:22Z"
     },
     {
       "rank": 4,
+      "fullName": "andrewyng/openworker",
+      "owner": "andrewyng",
+      "repo": "openworker",
+      "description": "",
+      "githubUrl": "https://github.com/andrewyng/openworker",
+      "trendshiftUrl": "https://trendshift.io/repositories/91434",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-07-20T01:52:32Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "OpenCut-app/OpenCut",
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "description": "The open-source CapCut alternative",
+      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
+      "trendshiftUrl": "https://trendshift.io/repositories/19761",
+      "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2025-06-22T08:02:17Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-12T00:52:37Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/24667",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-03-18T18:38:02Z"
+    },
+    {
+      "rank": 8,
       "fullName": "MadsLorentzen/ai-job-search",
       "owner": "MadsLorentzen",
       "repo": "ai-job-search",
@@ -69,74 +123,18 @@
       "dateCreated": "2026-03-18T14:33:04Z"
     },
     {
-      "rank": 5,
-      "fullName": "arvids-unavailable/openGym",
-      "owner": "arvids-unavailable",
-      "repo": "openGym",
-      "description": "https://github.com/DuarteSantos8/openGym",
-      "githubUrl": "https://github.com/arvids-unavailable/openGym",
-      "trendshiftUrl": "https://trendshift.io/repositories/175829",
-      "language": "JavaScript",
-      "topics": [
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-08-03T18:16:58Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "b-nnett/grok-bot-0.18-reconstructed",
-      "owner": "b-nnett",
-      "repo": "grok-bot-0.18-reconstructed",
-      "description": "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS",
-      "githubUrl": "https://github.com/b-nnett/grok-bot-0.18-reconstructed",
-      "trendshiftUrl": "https://trendshift.io/repositories/179805",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-08-23T20:53:01Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "tt-a1i/archify",
-      "owner": "tt-a1i",
-      "repo": "archify",
-      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-      "githubUrl": "https://github.com/tt-a1i/archify",
-      "trendshiftUrl": "https://trendshift.io/repositories/31352",
-      "language": "HTML",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-04-15T05:27:37Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-06-12T00:52:37Z"
-    },
-    {
       "rank": 9,
-      "fullName": "AgriciDaniel/claude-obsidian",
-      "owner": "AgriciDaniel",
-      "repo": "claude-obsidian",
-      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
-      "githubUrl": "https://github.com/AgriciDaniel/claude-obsidian",
-      "trendshiftUrl": "https://trendshift.io/repositories/25836",
-      "language": "Python",
+      "fullName": "themartiano/try-omarchy",
+      "owner": "themartiano",
+      "repo": "try-omarchy",
+      "description": "Try Omarchy on Apple Silicon without any setup.",
+      "githubUrl": "https://github.com/themartiano/try-omarchy",
+      "trendshiftUrl": "https://trendshift.io/repositories/186078",
+      "language": "Shell",
       "topics": [
-        "AI agent"
+        "Emulator"
       ],
-      "dateCreated": "2026-04-07T08:59:37Z"
+      "dateCreated": "2026-08-23T21:55:30Z"
     },
     {
       "rank": 10,
