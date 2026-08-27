@@ -3236,6 +3236,47 @@ export const stacks: Review[] = [
     date: "2026-08-26",
     featured: false,
   },
+  {
+    slug: "fabric-ai",
+    name: "Fabric",
+    tagline: "Workspace AI yang mengingat semua file, catatan, dan rapat kamu",
+    tags: ["Fabric", "Freemium", "Productivity", "Knowledge Base"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 6.9 },
+    ],
+    summary:
+      "Fabric menjual satu janji yang jarang ditepati kategori catatan digital: AI yang benar-benar tahu isi kepala kamu, bukan chatbot generik yang harus disuapi konteks tiap kali dibuka. Semua file, catatan, transkrip rapat, dan hasil integrasi masuk ke satu kanvas tak terbatas, lalu agen bernama dengan jadwal sendiri mengerjakan riset dan ringkasan sementara kamu tidur. Eksekusinya rapi, tapi paket gratisnya paling ketat di kelasnya.",
+    pros: [
+      "Memori workspace yang benar-benar terpakai: AI membaca catatan, file, dan transkrip rapat lama tanpa perlu kamu tempel ulang konteks di setiap percakapan",
+      "Agen terjadwal dengan identitas terpisah, masing-masing punya nama, kepribadian, dan alamat email sendiri; kirim email ke agen, dia balas atau kerjakan risetnya",
+      "Lebih dari 50 integrasi resmi termasuk Slack, Notion-alternatif, Google Calendar, HubSpot, Asana, ClickUp, Airtable, Shopify, sampai Xero dan QuickBooks",
+      "Kanvas tak terbatas plus editor minimalis dan perekam rapat otomatis di satu produk, jadi tidak perlu langganan Miro, Notion, dan Otter terpisah",
+      "Publikasi ruang kerja jadi portal klien berpassword lengkap dengan analitik tautan, cukup kirim satu link tanpa minta klien bikin akun",
+    ],
+    cons: [
+      "Paket gratis hanya 250 MB penyimpanan, 150 item, dan tanpa pencarian AI maupun integrasi, jadi lebih terasa demo ketimbang tier yang bisa dipakai harian",
+      "Lompatan harga curam: dari Plus 10 dolar per bulan langsung ke Pro 24 dolar dan Max 68 dolar per bulan, sementara batas kredit AI baru longgar di tier atas",
+      "Nama Fabric bertabrakan dengan Microsoft Fabric dan Fabric mod loader Minecraft, sehingga hasil pencarian dan dokumentasi komunitasnya sulit ditemukan",
+      "Belum ada opsi self-host maupun pemrosesan lokal, padahal produk ini justru meminta kamu menaruh seluruh arsip kerja di server mereka",
+    ],
+    verdict:
+      "Fabric adalah salah satu percobaan paling matang untuk membuat second brain yang benar-benar berpikir, dan buat solopreneur atau agensi kecil nilainya nyata. Tapi dalam pengujian editorial Wawasan AI, catatan utamanya adalah paket gratis yang terlalu sempit untuk dievaluasi serius, sehingga kamu praktis harus membayar dulu sebelum tahu Fabric cocok atau tidak dengan cara kerjamu.",
+    body: [
+      "Fabric masuk ke pasar yang sudah sesak: Notion, Obsidian, Evernote, dan puluhan aplikasi catatan lain sudah menempelkan fitur AI ke produk mereka. Bedanya, mayoritas pemain lama menempatkan AI sebagai tombol tambahan di sisi kanan layar, sementara Fabric membangun produknya dari asumsi terbalik, yaitu penyimpanan hanyalah efek samping dan yang utama adalah memori yang bisa dipakai mesin. Setiap file yang diunggah, catatan yang ditulis, dan rapat yang direkam otomatis masuk ke indeks yang bisa dicari berdasarkan makna, bukan hanya nama berkas atau tag manual.",
+      "Fitur yang paling membedakan Fabric di 2026 adalah agen persisten. Kamu membuat agen, memberi nama dan kepribadian, lalu memasang jadwal seperti pantau harga kompetitor tiap Senin pagi atau rangkum semua panggilan penjualan minggu ini. Setiap agen mendapat alamat email sendiri, jadi kamu bisa meneruskan lampiran atau pertanyaan lewat email biasa dan agen akan menjawab, menyimpan, atau meneruskan hasil risetnya. Pola ini menutup jurang lama antara aplikasi catatan dan otomasi kerja, dan membuat Fabric lebih dekat ke asisten operasional ketimbang lemari arsip pintar.",
+      "Untuk pengguna Indonesia, ada tiga catatan penting. Pertama, paket gratis hanya memberi 250 MB penyimpanan dan 150 item tanpa pencarian AI, jadi jangan berharap bisa memindahkan arsip kerja setahun ke sana untuk uji coba. Kedua, harga berbasis dolar terasa nyata di sini: Plus 10 dolar per bulan setara sekitar Rp 160 ribu, Pro 24 dolar sekitar Rp 385 ribu, dan paket Team 20 dolar per pengguna per bulan berarti sekitar Rp 320 ribu per orang, angka yang berat untuk tim konten atau agensi kecil beranggota lima sampai sepuluh orang. Ketiga, belum ada opsi self-host, sehingga konsultan yang menangani dokumen klien sensitif perlu mengecek kebijakan datanya sebelum memindahkan seluruh arsip.",
+      "Kesimpulannya, Fabric paling masuk akal untuk pekerja mandiri dan tim kecil yang bekerja dengan banyak konteks tersebar, seperti agensi kreatif, konsultan, atau peneliti yang bolak-balik antara dokumen, rapat, dan riset web. Kalau kebutuhanmu sekadar mencatat dan berbagi dokumen, Notion atau Obsidian dengan plugin AI jauh lebih murah. Tapi kalau waktu terbesarmu habis untuk mencari kembali sesuatu yang pernah kamu simpan, atau menjelaskan ulang konteks yang sama ke chatbot setiap hari, Fabric menawarkan tebusan yang layak dicoba dengan catatan biaya bulanan dalam dolar tadi.",
+    ],
+    link: "https://fabric.so",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-27",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
