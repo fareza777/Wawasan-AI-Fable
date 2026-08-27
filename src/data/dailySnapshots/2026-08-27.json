@@ -1,32 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "27 Agustus 2026",
-  "period": {
-    "date": "2026-08-27",
-    "label": "27 Agustus 2026",
-    "path": "/repo/daily/2026/08/27"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-27T00:07:54.491Z",
+  "fetchedAt": "2026-08-27T11:51:01.214Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "freestylefly/awesome-gpt-image-2",
-      "owner": "freestylefly",
-      "repo": "awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "trendshiftUrl": "https://trendshift.io/repositories/28623",
-      "language": "JavaScript",
-      "topics": [
-        "AI image generation",
-        "Curated list"
-      ],
-      "dateCreated": "2026-04-25T09:19:13Z"
-    },
-    {
-      "rank": 2,
       "fullName": "tt-a1i/archify",
       "owner": "tt-a1i",
       "repo": "archify",
@@ -41,50 +22,85 @@
       "dateCreated": "2026-04-15T05:27:37Z"
     },
     {
+      "rank": 2,
+      "fullName": "Webeoidentify/Honeypot-Detector",
+      "owner": "Webeoidentify",
+      "repo": "Honeypot-Detector",
+      "description": "",
+      "githubUrl": "https://github.com/Webeoidentify/Honeypot-Detector",
+      "trendshiftUrl": "https://trendshift.io/repositories/187588",
+      "language": "TypeScript",
+      "topics": [
+        "Pentesting"
+      ],
+      "dateCreated": "2026-03-31T14:48:38Z"
+    },
+    {
       "rank": 3,
-      "fullName": "bilawalsidhu/gods-eye-view",
-      "owner": "bilawalsidhu",
-      "repo": "gods-eye-view",
-      "description": "God's Eye View v1 public open-source release placeholder",
-      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
-      "trendshiftUrl": "https://trendshift.io/repositories/62154",
+      "fullName": "tailscale/tailcat",
+      "owner": "tailscale",
+      "repo": "tailcat",
+      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "githubUrl": "https://github.com/tailscale/tailcat",
+      "trendshiftUrl": "https://trendshift.io/repositories/188818",
+      "language": "Go",
       "topics": [],
-      "dateCreated": "2026-06-22T23:37:22Z"
+      "dateCreated": "2024-10-29T17:21:12Z"
     },
     {
       "rank": 4,
-      "fullName": "MadsLorentzen/ai-job-search",
-      "owner": "MadsLorentzen",
-      "repo": "ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
-      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "fullName": "SenteLabsAI/OpenExecutive",
+      "owner": "SenteLabsAI",
+      "repo": "OpenExecutive",
+      "description": "AI-powered virtual executive team — a single coherent executive persona backed by 8 specialist Claude agents (FastAPI + Next.js).",
+      "githubUrl": "https://github.com/SenteLabsAI/OpenExecutive",
+      "trendshiftUrl": "https://trendshift.io/repositories/188971",
       "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI workflow",
-        "Workflow automation",
-        "Resume building"
-      ],
-      "dateCreated": "2026-03-18T14:33:04Z"
+      "topics": [],
+      "dateCreated": "2026-06-11T21:41:54Z"
     },
     {
       "rank": 5,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
+      "fullName": "34306/vphone-aio",
+      "owner": "34306",
+      "repo": "vphone-aio",
+      "description": "1 script run the vphone",
+      "githubUrl": "https://github.com/34306/vphone-aio",
+      "trendshiftUrl": "https://trendshift.io/repositories/22509",
+      "language": "Shell",
       "topics": [
-        "AI agent",
-        "AI coding assistant"
+        "Emulator"
       ],
-      "dateCreated": "2026-06-12T00:52:37Z"
+      "dateCreated": "2026-02-28T10:20:47Z"
     },
     {
       "rank": 6,
+      "fullName": "garychowcmu/daizhigev20",
+      "owner": "garychowcmu",
+      "repo": "daizhigev20",
+      "description": "殆知阁古代文献",
+      "githubUrl": "https://github.com/garychowcmu/daizhigev20",
+      "trendshiftUrl": "https://trendshift.io/repositories/47843",
+      "topics": [],
+      "dateCreated": "2018-11-26T20:32:45Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "freestylefly/awesome-gpt-image-2",
+      "owner": "freestylefly",
+      "repo": "awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "trendshiftUrl": "https://trendshift.io/repositories/28623",
+      "language": "JavaScript",
+      "topics": [
+        "AI image generation",
+        "Curated list"
+      ],
+      "dateCreated": "2026-04-25T09:19:13Z"
+    },
+    {
+      "rank": 8,
       "fullName": "calesthio/OpenMontage",
       "owner": "calesthio",
       "repo": "OpenMontage",
@@ -100,61 +116,33 @@
       "dateCreated": "2026-03-29T15:23:22Z"
     },
     {
-      "rank": 7,
-      "fullName": "OpenCut-app/OpenCut",
-      "owner": "OpenCut-app",
-      "repo": "OpenCut",
-      "description": "The open-source CapCut alternative",
-      "githubUrl": "https://github.com/OpenCut-app/OpenCut",
-      "trendshiftUrl": "https://trendshift.io/repositories/19761",
-      "language": "TypeScript",
-      "topics": [
-        "Video editing"
-      ],
-      "dateCreated": "2025-06-22T08:02:17Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "AgriciDaniel/claude-obsidian",
-      "owner": "AgriciDaniel",
-      "repo": "claude-obsidian",
-      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
-      "githubUrl": "https://github.com/AgriciDaniel/claude-obsidian",
-      "trendshiftUrl": "https://trendshift.io/repositories/25836",
+      "rank": 9,
+      "fullName": "browser-use/browser-use",
+      "owner": "browser-use",
+      "repo": "browser-use",
+      "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "githubUrl": "https://github.com/browser-use/browser-use",
+      "trendshiftUrl": "https://trendshift.io/repositories/12931",
       "language": "Python",
       "topics": [
         "AI agent"
       ],
-      "dateCreated": "2026-04-07T08:59:37Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "andrewyng/openworker",
-      "owner": "andrewyng",
-      "repo": "openworker",
-      "description": "",
-      "githubUrl": "https://github.com/andrewyng/openworker",
-      "trendshiftUrl": "https://trendshift.io/repositories/91434",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-07-20T01:52:32Z"
+      "dateCreated": "2024-10-31T16:00:56Z"
     },
     {
       "rank": 10,
-      "fullName": "34306/vphone-aio",
-      "owner": "34306",
-      "repo": "vphone-aio",
-      "description": "1 script run the vphone",
-      "githubUrl": "https://github.com/34306/vphone-aio",
-      "trendshiftUrl": "https://trendshift.io/repositories/22509",
-      "language": "Shell",
+      "fullName": "DietrichGebert/ponytail",
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "githubUrl": "https://github.com/DietrichGebert/ponytail",
+      "trendshiftUrl": "https://trendshift.io/repositories/50668",
+      "language": "JavaScript",
       "topics": [
-        "Emulator"
+        "AI agent",
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-02-28T10:20:47Z"
+      "dateCreated": "2026-06-12T00:52:37Z"
     }
   ]
 }
