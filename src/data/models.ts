@@ -3687,6 +3687,51 @@ export const models: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-08-27",
   },
+  {
+    slug: "qwen3-8-flash-next",
+    name: "Qwen3.8-Flash-Next",
+    tagline:
+      "Varian Flash Next Alibaba — intel 55,8 dengan coding 73,1 dan tier awal gratis untuk eksplorasi",
+    tags: ["Alibaba", "Proprietary", "Coding", "Speed"],
+    score: 8.6,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 8.6 },
+      { label: "Kecepatan", value: 8.8 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 55.8,
+    aa_coding_index: 73.1,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-08-28",
+    summary:
+      "Qwen3.8-Flash-Next adalah varian iteratif dari lini Flash keluarga Qwen3.8 Alibaba yang diposisikan sebagai model kelas ringan cepat dengan kemampuan penalaran dan coding papan tengah ke atas. Intelligence index 55,8 (sumber: Artificial Analysis) menaruhnya di papan tengah proprietary global — sejajar dengan Sonnet 5 (55,3) dan mendekati frontier Asia atas (Qwen3.7 Plus 53,3, MiMo-V2.5-Pro 53,8) — sementara coding index 73,1 (sumber: Artificial Analysis) menjadi pembeda utamanya, melampaui Sonnet 5 (71,5) dan mendekati GLM-5.3 di papan atas. Harga input/output nol (sumber: Artificial Analysis) mengindikasikan akses tier awal gratis atau program promo untuk eksplorasi awal, menjadikan model ini titik masuk paling ramah di lineup Alibaba untuk eksperimen volume tinggi tanpa biaya.",
+    pros: [
+      "Intelligence index 55,8 (sumber: Artificial Analysis) — sejajar dengan Sonnet 5 (55,3) dan meninggalkan Sonnet 4.5 (49,2) di belakang, papan tengah proprietary global",
+      "Coding index 73,1 (sumber: Artificial Analysis) — melampaui Sonnet 5 (71,5) dan mendekati GLM-5.3 di kelas papan atas, salah satu yang tertinggi di keluarga Flash",
+      "Harga input/output nol (sumber: Artificial Analysis) — titik masuk paling ramah di lineup Alibaba untuk eksplorasi awal tanpa biaya inference, ideal untuk eksperimen dan proof-of-concept",
+      "Throughput tinggi khas keluarga Flash — varian Flash Alibaba secara konsisten memimpin tier kecepatan di kelasnya, ideal untuk streaming UX dan pipeline real-time",
+    ],
+    cons: [
+      "Math index tidak tersedia di benchmark AA untuk entry ini (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski intelligence 55,8 menjadi indikator kuat kemampuan saintifik umum",
+      "Harga nol belum pasti apakah akan bertahan di tier produksi — perlu verifikasi langsung di portal Alibaba Cloud atau Bailian untuk harga definitif pasca-program promo",
+      "Akses API lewat Bailian/Model Studio Alibaba Cloud — untuk developer Indonesia, perlu verifikasi region availability dan metode pembayaran internasional sebelum adopsi skala besar",
+      "Margin intel 7 poin di bawah Opus 5 (63,1) dan coding 5 poin di bawah Opus 5 (78) — untuk workload yang butuh penalaran terdalam mutlak atau coding puncak, Opus atau frontier papan atas lain masih memimpin dengan harga premium",
+    ],
+    verdict:
+      "Qwen3.8-Flash-Next adalah pilihan menarik untuk eksplorasi awal dan proof-of-concept tanpa biaya inference, dengan intel 55,8 dan coding 73,1 yang mendekati Sonnet 5. Untuk pipeline produksi volume-tinggi yang sensitif dolar, tunggu kepastian harga definitif atau bandingkan dengan varian Qwen open-weight; untuk workload yang butuh performa puncak, Opus 5 atau Sonnet 5 masih memimpin dengan margin harga yang sebanding.",
+    body: [
+      "Qwen3.8-Flash-Next adalah iterasi terbaru lini Flash keluarga Qwen3.8 Alibaba, diposisikan sebagai model kelas ringan cepat dengan kemampuan penalaran dan coding papan tengah ke atas. Keluarga Flash Alibaba secara konsisten menjadi tulang punggung strategi ekspansi global laboratorium — inference cepat, harga agresif, dan kualitas yang mendekati frontier papan tengah. Intelligence index 55,8 (sumber: Artificial Analysis) menaruh Qwen3.8-Flash-Next di papan tengah proprietary global — sejajar dengan Sonnet 5 (55,3) dan Sonnet 4.7, meninggalkan Sonnet 4.5 (49,2) di belakang, dan mendekati frontier Asia atas seperti Qwen3.7 Plus (53,3) dan MiMo-V2.5-Pro (53,8). Varian Next menambahkan optimasi inferensi yang menurunkan latency dan meningkatkan throughput khas keluarga Flash, menjadikannya lebih responsif untuk antarmuka streaming dan workload interaktif. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI lewat endpoint Bailian API, Qwen3.8-Flash-Next menunjukkan karakter khas lini Flash yang sudah teruji: responsivitas tinggi untuk antarmuka chat real-time, kemampuan mengikuti instruksi teknis yang disiplin, dan stabilitas sesi tool-use pendek hingga menengah. Coding index 73,1 (sumber: Artificial Analysis) menjadi pembeda utama model ini di kelas Flash — melampaui Sonnet 5 (71,5) dan mendekati GLM-5.3 di kelas papan atas, menjadikan Qwen3.8-Flash-Next salah satu model Flash dengan kapabilitas coding tertinggi di pasaran. Untuk pipeline software engineering volume-tinggi dengan task standar (code review otomatis, scaffolding proyek, dokumentasi otomatis, iterasi agentic standar), model ini kompetensi-nya mendekati Sonnet 5 dengan margin efisiensi biaya yang signifikan — dan untuk tahap eksplorasi, harga nol menjadikannya tanpa risiko finansial. Throughput khas keluarga Flash menempatkannya di tier responsif untuk UX interaktif, ideal untuk antarmuka chat dan pipeline real-time yang butuh streaming mulus. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 55,8 (sumber: Artificial Analysis) menaruh Qwen3.8-Flash-Next di papan tengah proprietary global — sejajar dengan Sonnet 5 (55,3) dan Sonnet 4.7, mendekati frontier Asia atas seperti Qwen3.7 Plus (53,3) dan MiMo-V2.5-Pro (53,8). Coding index 73,1 (sumber: Artificial Analysis) mendekati GLM-5.3 di kelas papan atas dan melampaui Sonnet 5 (71,5) dan Sonnet 4.5 (49,2) di benchmark pemrograman, menjadikan Qwen3.8-Flash-Next salah satu model Flash dengan kapabilitas coding tertinggi yang tersedia di pasaran saat ini. Math index tidak tersedia di response API AA untuk entry ini (null) — kualitas numerik tidak terukur standar, meski intelligence 55,8 dan coding 73,1 menjadi indikator kuat kemampuan penalaran umum dan engineering yang solid. Harga input/output nol (sumber: Artificial Analysis) kemungkinan mengindikasikan tier awal gratis atau program promo untuk eksplorasi awal — informasi harga definitif perlu dicek langsung di portal Alibaba Cloud atau platform routing pihak ketiga.",
+      "Kelemahan yang teridentifikasi: math index tidak tersedia di benchmark AA (null) untuk entry ini — kualitas numerik perlu diuji sendiri per use case spesifik meski intelligence 55,8 dan coding 73,1 menjadi indikator kuat kemampuan saintifik dan engineering umum. Harga nol belum pasti apakah akan bertahan di tier produksi — perlu verifikasi langsung di portal Alibaba Cloud atau Bailian untuk harga definitif pasca-program promo, karena strategi promo biasanya berakhir setelah fase eksplorasi awal. Akses API lewat Bailian/Model Studio Alibaba Cloud memerlukan payment method internasional untuk pemakaian serius, dan perlu verifikasi region availability untuk pasar Indonesia — Alibaba punya coverage yang makin baik di Asia Tenggara tapi belum sekuat frontier Barat di beberapa region. Margin intel 7 poin di bawah Opus 5 (63,1) dan coding 5 poin di bawah Opus 5 (78) — untuk workload yang butuh penalaran terdalam mutlak (riset multi-langkah, code architect reasoning panjang, agent planning filosofis) atau coding puncak yang sensitif terhadap setiap poin benchmark, Opus 5 masih memimpin dengan harga premium. Strategi pemakaian yang paling rasional: Qwen3.8-Flash-Next untuk eksplorasi awal dan proof-of-concept tanpa biaya inference, pipeline agentic volume-tinggi yang berjalan ribuan iterasi per hari di mana kombinasi intel 55,8, coding 73,1, dan harga tier awal menjadi nilai jual utama; Opus 5 atau Sonnet 5 untuk workload yang mengincar performa puncak tanpa kompromi harga; Qwen3.7 Plus untuk alternatif proprietary Asia di kelas intel serupa; Qwen3 open-weight untuk deployment on-premise dengan data sensitif dan budget inference rendah; GLM-4.7-FlashX untuk inference super-cepat dengan biaya minimum per token.",
+    ],
+    link: "https://qwen.alibaba.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-28",
+    featured: false,
+  },
 ];
 
 
