@@ -3749,6 +3749,45 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "trump-rahasiakan-kerangka-keamanan-ai-ini-dampaknya",
+    title: "Ketika Kerangka Keamanan AI Diberi Status Rahasia: Apa yang Hilang dari Mata Publik",
+    excerpt:
+      "Keputusan pemerintah AS membatasi akses publik terhadap dokumen keamanan AI menimbulkan pertanyaan serius bagi regulator, akademisi, dan komunitas AI di seluruh dunia -- termasuk Indonesia.",
+    category: "Berita",
+    date: "2026-08-28",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ada momen ketika sebuah kebijakan tidak diumumkan secara besar-besaran, melainkan perlahan-lahan menghilang dari dokumen publik. Itulah yang terjadi dalam beberapa bulan terakhir di Washington: dokumen-dokumen teknis yang sebelumnya menjadi rujukan bersama tentang cara mengevaluasi dan mengaudit sistem AI berisiko tinggi -- model yang dipakai untuk keputusan kredit, rekrutmen, layanan kesehatan, hingga penyaringan konten -- diklasifikasikan kembali sehingga hanya tersedia untuk segelintir pembaca internal. Perubahan ini tidak datang dengan konferensi pers; ia datang sebagai pembaruan catatan kaki di halaman web birokrasi.",
+          "Bagi komunitas AI global, dan terutama bagi negara-negara yang sedang membangun regulasi AI mereka sendiri, keputusan ini punya efek yang lebih luas dari sekadar transparansi satu negara. Selama dekade terakhir, dokumen-dokumen tersebut adalah bahan bakar bersama: dipakai oleh regulator di Brussel, Tokyo, Singapura, dan Brasil untuk menyusun aturan main AI mereka. Ketika aksesnya menyempit, bukan hanya satu pemerintah yang kehilangan visibilitas -- seluruh rantai pengetahuan yang sudah dibangun di atas dokumen itu ikut terdampak.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya berubah",
+        paragraphs: [
+          "Yang berubah bukan kebijakannya secara substansi, melainkan visibilitasnya. Dokumen yang sebelumnya bisa diunduh oleh siapa saja -- laporan risiko, metode evaluasi red-team, kategori model yang dianggap berisiko tinggi -- kini diberi label yang membatasi distribusi: hanya untuk lembaga federal, hanya untuk kontraktor tertentu, atau hanya untuk yang punya clearance. Untuk dunia riset dan industri di luar lingkaran tersebut, hasilnya praktis sama: dokumen itu tidak bisa dirujuk lagi.",
+          "Yang membuat langkah ini terasa berbeda adalah sifat risiko AI yang tidak mengenal batas negara. Model yang dievaluasi di California dipakai di Jakarta. Sistem rekrutmen yang dikembangkan di satu negara dipakai untuk menyaring pelamar kerja di negara lain. Ketika kerangka evaluasinya tidak bisa dilihat publik, perusahaan dan regulator di negara pengguna kehilangan alat untuk menuntut transparansi -- bukan karena tidak ada aturannya, melainkan karena mereka tidak tahu persis seperti apa aturan itu.",
+        ],
+      },
+      {
+        heading: "Mengapa ini penting untuk Indonesia",
+        paragraphs: [
+          "Indonesia bukan pengguna langsung dari dokumen AS tersebut, tetapi ekosistem AI Indonesia sudah lama belajar dari praktik terbaik global. Ketika Komnas Perlindungan Data Pribadi, OJK, atau Bank Indonesia merumuskan pedoman AI untuk sektor keuangan dan kesehatan, mereka biasanya merujuk dokumen publik seperti NIST AI Risk Management Framework, ISO/IEC 42001, atau laporan red-team dari laboratorium AI besar. Beberapa di antara rujukan itu kini tidak bisa diakses dengan mudah.",
+          "Akibatnya tidak langsung terasa hari ini, tetapi dalam dua sampai tiga tahun akan kelihatan. Lembaga riset lokal yang biasa menerjemahkan dan mengadaptasi dokumen tersebut untuk konteks Indonesia akan mendapat pekerjaan tambahan: mereka harus membangun pemahaman dari nol, tanpa bisa berdiri di atas bahu sumber yang dulu terbuka. Lebih penting lagi, ketika produk AI global -- terutama model bahasa besar yang dipakai untuk layanan publik -- tidak lagi diaudit berdasarkan kerangka yang bisa dilihat publik, pengguna di Indonesia praktis menerima sistem yang dipercaya hanya oleh vendor dan regulator asal. Itu bukan posisi tawar yang baik untuk negara dengan 270 juta pengguna internet.",
+          "Kabar baiknya, ada inisiatif yang bisa diambil. Pertama, Indonesia bisa berinvestasi lebih serius pada kapasitas evaluasi AI lokal -- laboratorium yang mampu menguji model-model besar secara independen terhadap kategori risiko yang relevan dengan konteks Indonesia, mulai dari bias gender dalam rekrutmen sampai kesalahan diagnosis kesehatan. Kedua, diplomasi AI bilateral bisa diarahkan untuk memastikan bahwa negara-negara mitra punya akses ke versi non-rahasia dari dokumen-dokumen tersebut, setidaknya cukup untuk membangun kapasitas regulasi sendiri. Ketiga, standar regional ASEAN yang sedang dirumuskan bisa diisi dengan kategori risiko yang tidak bergantung pada satu sumber manapun.",
+        ],
+      },
+      {
+        heading: "Catatan penutup: transparansi bukan pilihan, melainkan kebutuhan struktural",
+        paragraphs: [
+          "Pada akhirnya, keputusan untuk membatasi akses publik terhadap kerangka keamanan AI akan diuji bukan di pengadilan, melainkan di seberapa besar kepercayaan publik terhadap sistem AI yang dipakai sehari-hari. Kepercayaan itu tidak dibangun oleh klaim vendor tentang keamanan produknya -- ia dibangun oleh kemampuan pihak ketiga untuk memverifikasi klaim tersebut secara independen. Ketika kemampuan itu terkikis di satu negara, ia perlahan merembes ke negara lain yang bergantung pada dokumen yang sama.",
+          "Untuk komunitas AI Indonesia, ini bukan saatnya menunggu. Saatnya mulai membangun kapasitas audit dan evaluasi sendiri, dengan standar yang terbuka untuk publik. Tidak harus besar di awal -- cukup cukup dimulai dari beberapa institusi yang bersedia meluangkan waktu dan keahlian untuk menguji model-model yang dipakai di layanan publik. Hasilnya tidak harus heboh; yang penting adalah ada jejak tertulis yang bisa dirujuk bersama. Dalam jangka panjang, jejak itulah yang akan membedakan ekosistem AI yang matang dan yang hanya menjadi pengguna pasif.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
