@@ -4274,6 +4274,58 @@ export const repos: Review[] = [
     updatedAt: "2026-08-27",
     featured: false,
   },
+{
+    slug: "gods-eye-view",
+    name: "God's Eye View",
+    tagline: "Simulator satelit mata-mata di browser dengan globe 3D dan data OSINT live",
+    tags: ["Geospatial", "3D Visualization", "JavaScript", "Open Source"],
+    score: 8.2,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Keksiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "God's Eye View dari bilawalsidhu adalah simulator satelit mata-mata yang berjalan langsung di browser: globe 3D fotorealistik berbasis CesiumJS dengan lapisan data OSINT live untuk pelacakan penerbangan, citra satelit, dan intelijen geospasial. Bukan mainan - proyek ini menarik lebih dari 7.500 bintang di GitHub dengan fokus pada transparansi data publik untuk jurnalis, peneliti, dan komunitas open-source intelligence.",
+    highlights: [
+      "Globe 3D fotorealistik di browser lewat CesiumJS - streaming tile imagery, terrain heightmap, dan entity layer dengan WebGL acceleration tanpa install native",
+      "Pelacakan penerbangan live dari ADS-B Exchange dan OpenSky Network - lebih dari 150.000 aircraft muncul sebagai ikon bergerak di globe secara real-time",
+      "Lapisan citra satelit harian dari Sentinel-2, Landsat, dan MODIS - bisa membandingkan citra resolusi menengah suatu lokasi antar waktu untuk deteksi perubahan lingkungan",
+      "Visualisasi data OSINT: gempa USGS live, konflik ACLED, hotspot NASA FIRMS untuk kebakaran hutan, hingga polusi udara OpenAQ dalam satu kanvas",
+      "Filter temporal untuk satellite imagery - lihat perubahan permukaan bendungan, pelabuhan, atau konsentrasi militer pada tanggal tertentu",
+      "Lapisan data komunitas yang bisa ditambah: feed Twitter/X geolocated, laporan crowdsourced, dan import GeoJSON custom untuk analisis spesifik",
+      "Open-source penuh di bawah lisensi NOASSERTION - codebase JavaScript dengan Next.js frontend, Express backend, dan worker queue untuk data ingestion",
+      "Demo publik di maptheworld.ai memungkinkan pengguna mencoba tanpa install - onboarding yang menurunkan friksi untuk jurnalis dan peneliti",
+      "Mendukung photogrammetry pipeline: contributor bisa upload drone footage untuk di-rekonstruksi jadi 3D mesh dan ditambahkan ke globe komunitas",
+    ],
+    pros: [
+      "Akses ke data geospatial live yang biasanya tersebar di banyak portal - satu antarmuka menyatukan ADS-B, Sentinel-2, USGS, dan OSINT feed dalam globe yang koheren",
+      "Onboarding rendah lewat demo publik maptheworld.ai - jurnalis, mahasiswa, atau peneliti bisa langsung eksplorasi tanpa setup server",
+      "Visualisasi yang kuat untuk narasi berbasis lokasi: perubahan lingkungan, konsentrasi militer, atau dinamika lalu lintas udara jadi mudah diceritakan lewat tangkapan layar globe",
+      "Momentum komunitas tinggi dengan lebih dari 7.500 bintang dan 1.750 fork - menarik kontributor dari latar belakang GIS, intelijen, dan jurnalisme data",
+    ],
+    cons: [
+      "Lisensi NOASSERTION - status hukum yang kurang jelas untuk kontribusi proprietary atau redistribusi oleh institusi besar, perlu klarifikasi sebelum adopsi korporat",
+      "Bergantung pada feed eksternal (ADS-B Exchange, Sentinel Hub, OpenAQ) - bila salah satu API berubah atau rate-limited, lapisan tertentu bisa kosong tanpa fallback lokal",
+      "Dokumentasi instalasi self-host masih tipis - developer yang ingin menjalankan instance pribadi akan lebih banyak belajar dari kode dan konfigurasi lingkungan yang ada",
+      "Konsumsi bandwidth tinggi untuk tile imagery dan entity layer - perlu CDN atau VPS yang cukup besar untuk menyajikan globe ke banyak pengguna bersamaan",
+    ],
+    verdict:
+      "God's Eye View adalah titik masuk yang menarik ke dunia intelijen geospasial open-source - sangat relevan untuk jurnalis, peneliti, dan komunitas OSINT di Indonesia yang sering mengangkat isu perubahan lahan, dinamika maritim, atau bencana alam. Bukan platform produksi enterprise, tapi alat eksplorasi dan storytelling yang sulit ditandingi untuk skala komunitas.",
+    body: [
+      "Selama beberapa tahun terakhir, ekosistem geospatial intelligence mengalami demokratisasi yang cepat: data yang dulu hanya diakses analis intelijen atau perusahaan satelit komersial sekarang tersedia lewat API publik. God's Eye View dari bilawalsidhu menangkap tren ini dengan pendekatan yang elegan - sebuah simulator satelit mata-mata yang berjalan di browser, dengan globe 3D fotorealistik berbasis CesiumJS sebagai kanvas utamanya. Proyek ini mencatatkan lebih dari 7.500 bintang di GitHub hanya dalam dua bulan sejak peluncurannya pada Juni 2026, menandakan resonansi kuat dengan komunitas yang haus akan visualisasi data spasial yang mudah diakses. Berbeda dari platform komersial seperti Planet Labs atau Maxar yang menjual citra satelit resolusi tinggi dengan harga enterprise, God's Eye View memilih jalan open-source dengan menggabungkan feed publik yang sudah ada menjadi satu antarmuka koheren.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling mengesankan adalah betapa naturalnya pelacakan penerbangan live bekerja di globe - lebih dari 150.000 aircraft dari ADS-B Exchange dan OpenSky Network muncul sebagai ikon bergerak di atas permukaan 3D yang streaming tile imagery dari Cesium Ion. Untuk konteks Indonesia, ini membuka kemungkinan narasi yang sebelumnya sulit dibuat: dinamika lalu lintas udara di sekitar Selat Malaka, konsentrasi penerbangan di sekitar Jakarta pada jam sibuk, atau bahkan rute kargo militer yang sering luput dari pantauan media. Citra satelit harian dari Sentinel-2 dan Landsat memungkinkan perbandingan temporal - peneliti lingkungan bisa menunjukkan perubahan tutupan hutan di Kalimantan atau Papua tanpa harus mengolah data mentah dari Copernicus Browser sendiri.",
+      "Arsitekturnya relatif konvensional tapi solid: Next.js untuk frontend dengan WebGL rendering, Express untuk backend yang mengatur data ingestion dari feed eksternal, dan worker queue untuk memproses tile imagery agar tidak membebani thread utama. Filter temporal adalah fitur yang sangat berguna untuk storytelling - pengguna bisa memutar mundur globe ke tanggal tertentu dan melihat seperti apa permukaan bumi saat itu, lengkap dengan aircraft, hotspot, dan data OSINT lainnya. Lapisan photogrammetry yang memungkinkan contributor meng-upload drone footage untuk di-rekonstruksi jadi 3D mesh menambah dimensi partisipatif: komunitas lokal bisa menambahkan model 3D kuil, jembatan, atau landmark yang belum tersedia di tile imagery default.",
+      "Untuk konteks Indonesia, God's Eye View paling bernilai sebagai alat eksplorasi dan storytelling untuk jurnalis data, peneliti lingkungan, dan komunitas OSINT. Isu-isu seperti deforestasi, dinamika maritim Nusantara, konsentrasi militer di Laut Cina Selatan, atau distribusi hotspot kebakaran hutan saat musim kemarau bisa diceritakan dengan cara yang jauh lebih menarik dibanding peta statis tradisional. Batasan yang perlu dipahami: lisensi NOASSERTION membuat status hukum kontribusi proprietary atau redistribusi oleh institusi besar belum jelas - perlu klarifikasi sebelum dipakai di korporat. Bergantung pada feed eksternal yang bisa berubah kapan saja - bila ADS-B Exchange memperketat akses atau Sentinel Hub mengubah kebijakan penggunaan, lapisan tertentu bisa kosong tanpa fallback lokal. Walau dengan segala keterbatasan itu, kombinasi globe 3D fotorealistik, data live yang kaya, dan ambisi open-source menjadikan God's Eye View salah satu eksperimen geospatial intelligence paling menarik di paruh kedua 2026 - layak dicoba oleh siapa pun yang ingin memahami bagaimana data publik bisa diubah jadi narasi visual yang kuat.",
+    ],
+    link: "https://github.com/bilawalsidhu/gods-eye-view",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-28",
+    updatedAt: "2026-08-28",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
