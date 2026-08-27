@@ -2138,16 +2138,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
           ],
         },
         "34306/vphone-aio": {
-          description:
-            "Script shell satu-baris untuk menjalankan vphone (virtual iPhone iOS 26.1 jailbroken) di Mac — boot lewat VNC di `vnc://127.0.0.1:5901`, bootstrap sudah terpasang, berguna untuk riset dan eksperimen security iOS tanpa perangkat fisik.",
-          highlights: [
-            "AIO script yang merangkai unduh, re-assembly split archive (aa–ag), ekstrak, dan boot vphone-cli dalam satu alur — tanpa harus compile atau konfigurasi manual step demi step.",
-            "vphone sudah pre-jailbroken dengan full bootstrap terpasang (iOS 26.1) — peneliti keamanan dan reverse engineer bisa langsung eksperimen tweak, sideload, dan forensic tanpa beli iPhone dev khusus.",
-            "Butuh SIP disabled + `amfi_get_out_of_my_way=1`, storage kosong 128GB+, dan `brew install git-lfs wget zstd libimobiledevice`; hubungan langsung ke proyek hulu Lakr233/vphone-cli dengan tambahan orkestrasi.",
-            "Berguna untuk QA aplikasi iOS yang butuh env jailbreak (test tweak, akses file system, manipulasi plist) — workflow Mac-centric lewat RealVNC atau Screen Sharing di port 5901.",
-          ],
-        },
-      };
+                  description:
+                    "Script shell satu-baris untuk menjalankan vphone (virtual iPhone iOS 26.1 jailbroken) di Mac — boot lewat VNC di `vnc://127.0.0.1:5901`, bootstrap sudah terpasang, berguna untuk riset dan eksperimen security iOS tanpa perangkat fisik.",
+                  highlights: [
+                    "AIO script yang merangkai unduh, re-assembly split archive (aa–ag), ekstrak, dan boot vphone-cli dalam satu alur — tanpa harus compile atau konfigurasi manual step demi step.",
+                    "vphone sudah pre-jailbroken dengan full bootstrap terpasang (iOS 26.1) — peneliti keamanan dan reverse engineer bisa langsung eksperimen tweak, sideload, dan forensic tanpa beli iPhone dev khusus.",
+                    "Butuh SIP disabled + `amfi_get_out_of_my_way=1`, storage kosong 128GB+, dan `brew install git-lfs wget zstd libimobiledevice`; hubungan langsung ke proyek hulu Lakr233/vphone-cli dengan tambahan orkestrasi.",
+                    "Berguna untuk QA aplikasi iOS yang butuh env jailbreak (test tweak, akses file system, manipulasi plist) — workflow Mac-centric lewat RealVNC atau Screen Sharing di port 5901.",
+                  ],
+                },
+                "bilawalsidhu/gods-eye-view": {
+                  description:
+                    "Simulator satelit mata-mata yang berjalan di browser dengan globe 3D fotorealistis — pesawat live, kapal, satelit, gempa, dan kamera publik dilapis di atas bumi nyata, dikontrol pakai suara lewat agen AI realtime.",
+                  highlights: [
+                    "OSINT dalam satu globe: feed publik ADS-B (penerbangan), AIS (kapal), TLE (satelit/ISS), seismograf USGS, kamera publik, dan traffic live — semua di-render real-time di WebGL via Cesium, tanpa data klasifikasi, semuanya di browser.",
+                    "Pengalaman visual yang terasa seperti kokpit satelit: cockpit view mengikuti flight, HUD militer, deteksi bounding-box, sensor look (NVG, FLIR, Noir, Snow), scene director untuk cinematic tour, dan share link yang menyandikan kamera, style, dan target jadi URL.",
+                    "Voice whiteboard lewat agen AI realtime: ucapkan anotasi di atas globe — polygon batas, marks, rute — bukan cuma navigasi, melainkan menulis langsung ke peta dengan perintah suara.",
+                    "Proyek di balik seri YouTube 'God's Eye View' (5 juta+ views) yang viral — sekarang di-open-source per Agustus 2026 dengan 7.4k+ bintang dan 12 topik geospatial; satu-satunya entry cost adalah Google Maps API key (1.000 sesi gratis per bulan).",
+                  ],
+                },
+              };
 
   // Helper: lookup dengan fallback ke template-generated highlights
   export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
