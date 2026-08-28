@@ -1,0 +1,151 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-08-28T13:14:15.195Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "HEJustinSun/my-girlfriend-jingtian-latex",
+      "owner": "HEJustinSun",
+      "repo": "my-girlfriend-jingtian-latex",
+      "description": "",
+      "githubUrl": "https://github.com/HEJustinSun/my-girlfriend-jingtian-latex",
+      "trendshiftUrl": "https://trendshift.io/repositories/189135",
+      "language": "TeX",
+      "topics": [],
+      "dateCreated": "2026-08-27T11:28:44Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "tt-a1i/archify",
+      "owner": "tt-a1i",
+      "repo": "archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "githubUrl": "https://github.com/tt-a1i/archify",
+      "trendshiftUrl": "https://trendshift.io/repositories/31352",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-15T05:27:37Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "bilawalsidhu/gods-eye-view",
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "description": "God's Eye View v1 public open-source release placeholder",
+      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
+      "trendshiftUrl": "https://trendshift.io/repositories/62154",
+      "topics": [],
+      "dateCreated": "2026-06-22T23:37:22Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "ManacleMelodyKnife/gpu-cpu-miner-crypto-silent",
+      "owner": "ManacleMelodyKnife",
+      "repo": "gpu-cpu-miner-crypto-silent",
+      "description": "GPU/CPU Crypto Miner Download 2026 build. Free setup tool available. Features optimized hash rate tracking, fully automated silent mode execution, and safe background deployment. Latest updated version.",
+      "githubUrl": "https://github.com/ManacleMelodyKnife/gpu-cpu-miner-crypto-silent",
+      "trendshiftUrl": "https://trendshift.io/repositories/190389",
+      "topics": [
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-03-31T14:49:16Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "sapientinc/PRAXIST",
+      "owner": "sapientinc",
+      "repo": "PRAXIST",
+      "description": "Autonomous research system for measurable, computer-executable research.",
+      "githubUrl": "https://github.com/sapientinc/PRAXIST",
+      "trendshiftUrl": "https://trendshift.io/repositories/191537",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-27T14:20:58Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "openJiuwen-ai/jiuwenswarm",
+      "owner": "openJiuwen-ai",
+      "repo": "jiuwenswarm",
+      "description": "JiuwenSwarm is an intelligent AI Agent built on openJiuwen. It extends the powerful capabilities of large language models directly to your fingertips through various communication apps you use daily.",
+      "githubUrl": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "trendshiftUrl": "https://trendshift.io/repositories/119917",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-03-05T06:28:11Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "pollen-robotics/microduck",
+      "owner": "pollen-robotics",
+      "repo": "microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "githubUrl": "https://github.com/pollen-robotics/microduck",
+      "trendshiftUrl": "https://trendshift.io/repositories/189165",
+      "language": "Rust",
+      "topics": [
+        "Robotics"
+      ],
+      "dateCreated": "2026-07-29T07:52:16Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "K-Dense-AI/scientific-agent-skills",
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25649",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-19T20:54:15Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "calmrocks/ai-engineer-notebooks",
+      "owner": "calmrocks",
+      "repo": "ai-engineer-notebooks",
+      "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set — model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scratch, tool design, guardrails, MCP, Skills), fine-tuning vs LoRA, prompt-injection/security, LLMOps, and customer craft. Runs on the free Groq API.",
+      "githubUrl": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "trendshiftUrl": "https://trendshift.io/repositories/191482",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "AI agent",
+        "RAG",
+        "MCP",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-08-11T23:17:17Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "workweave/router",
+      "owner": "workweave",
+      "repo": "router",
+      "description": "Model router for agentic systems. Routes every prompt to the right model in <50ms. Cut costs 40-70% with just an endpoint change.",
+      "githubUrl": "https://github.com/workweave/router",
+      "trendshiftUrl": "https://trendshift.io/repositories/34732",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI infrastructure",
+        "Proxy"
+      ],
+      "dateCreated": "2026-04-27T17:56:27Z"
+    }
+  ]
+}
