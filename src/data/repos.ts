@@ -4326,6 +4326,58 @@ export const repos: Review[] = [
     updatedAt: "2026-08-28",
     featured: false,
   },
+  {
+    slug: "scrapegraph-ai",
+    name: "ScrapeGraphAI",
+    tagline: "Scraper web berbasis LLM dengan satu kalimat prompt jadi data terstruktur",
+    tags: ["Web Scraping", "Python", "LLM", "Open Source"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Keksiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "ScrapeGraphAI dari tim ScrapeGraphAI mengambil pendekatan berbeda dari scraper konvensional: daripada menulis selector XPath atau CSS untuk setiap situs, cukup nyatakan field apa yang ingin diekstrak dalam bahasa alami dan biarkan LLM yang menerjemahkannya jadi pipeline scraping. Per Agustus 2026 repositori ini sudah melampaui 30 ribu bintang dan 2.980 fork, menjadikannya salah satu library Python paling populer di kategori web scraping berbasis AI.",
+    highlights: [
+      "Arsitektur 'You Only Scrape Once': tentukan field yang ingin diekstrak dalam satu kalimat, library yang menangani seluruh pipeline mulai dari fetching hingga parsing terstruktur",
+      "Mendukung dokumen lokal (XML, HTML, JSON, Markdown) selain halaman web - satu API konsisten untuk sumber data heterogen",
+      "Multi-provider LLM: OpenAI, Anthropic, Gemini, Groq, Ollama (lokal), dan Azure OpenAI dalam satu konfigurasi terpadu",
+      "Ekosistem integrasi yang luas: SDK Python dan Node.js, framework LangChain, LlamaIndex, CrewAI, Agno (Phidata), CamelAI, hingga low-code Pipedream, Bubble, Zapier, n8n, dan Dify",
+      "MCP server resmi di Smithery untuk dipakai dalam Claude Desktop, Cursor, dan klien MCP lainnya tanpa setup tambahan",
+      "SmartScraper (satu halaman), SmartCrawler (telusuri seluruh situs), dan LocalScraper (dokumen lokal) sebagai tiga mode utama yang menutupi 90 persen kebutuhan ekstraksi data",
+      "Output terstruktur dalam format JSON atau Markdown yang siap dimasukkan ke pipeline RAG atau analisis berikutnya tanpa post-processing manual",
+      "Lisensi MIT murni dengan dokumentasi multibahasa (Inggris, Mandarin, Jepang, Korea, Rusia, Turki, Jerman, Spanyol, Prancis, Portugis, Italia) yang menurunkan friksi adopsi global",
+      "Aktif dipelihara dengan rilis v2.2.2 per Agustus 2026, roadmap publik, dan Discord komunitas untuk dukungan teknis",
+      "Dukungan terhadap model lokal via Ollama memungkinkan scraping pipeline berjalan sepenuhnya privat tanpa mengirim data ke API eksternal",
+    ],
+    pros: [
+      "Konsep 'scrape pakai kalimat' menurunkan barrier entry secara drastis - developer junior bisa menjalankan pipeline scraping kompleks tanpa belajar XPath atau BeautifulSoup terlebih dahulu",
+      "Fleksibilitas multi-provider LLM memungkinkan trade-off biaya versus privasi: gunakan GPT-4o untuk akurasi tinggi, atau Ollama lokal untuk data sensitif yang tidak boleh keluar",
+      "Ekosistem integrasi yang sangat luas - bekerja dengan baik di dalam workflow LangChain, agent CrewAI/Agno, maupun otomasi no-code Zapier dan n8n yang umum dipakai tim operasional",
+    ],
+    cons: [
+      "Biaya LLM per halaman bisa signifikan untuk crawling skala besar - scraping 10 ribu halaman dengan GPT-4o bisa menghabiskan puluhan dolar, sehingga Ollama lokal atau caching menjadi kebutuhan praktis",
+      "Akurasi ekstraksi bergantung penuh pada kualitas LLM yang dipakai - prompt ambigu atau model kecil lokal kadang menghasilkan field yang tidak konsisten, terutama untuk halaman dengan layout yang sangat bervariasi",
+      "Render JavaScript masih terbatas dibanding scraper browser-native seperti Playwright - situs dengan proteksi Cloudflare berat atau konten yang dimuat via React hydration mungkin perlu kombinasi dengan tools lain",
+      "Dokumentasi teknis mendalam tentang error handling dan rate limiting masih relatif tipis - developer yang menjalankan volume tinggi perlu belajar dari kode sumber dan eksperimen langsung",
+    ],
+    verdict:
+      "ScrapeGraphAI adalah titik masuk paling pragmatis ke dunia AI-assisted web scraping di paruh kedua 2026 - ideal untuk developer Indonesia yang ingin membangun pipeline RAG, intelijen riset, atau otomasi pengumpulan data tanpa harus menulis satu baris selector. Bukan solusi murah untuk volume miliaran halaman, tapi untuk ratusan hingga puluhan ribu halaman per hari dengan akurasi tinggi, kombinasi kemudahan prompt dan multi-provider LLM menjadikannya sulit ditandingi.",
+    body: [
+      "Selama bertahun-tahun, web scraping adalah pekerjaan yang repetitive dan rapuh: developer harus menulis selector XPath atau CSS untuk setiap situs, lalu memperbaiki ketika struktur HTML berubah. ScrapeGraphAI dari tim ScrapeGraphAI mengubah paradigma itu dengan pendekatan berbasis graf dan LLM - daripada memberi tahu komputer cara mengekstrak data, pengguna cukup menyatakan field apa yang ingin diambil dalam bahasa alami, dan library yang menerjemahkan permintaan itu menjadi pipeline scraping yang utuh. Per Agustus 2026, repositori ini sudah melampaui 30.024 bintang dan 2.982 fork di GitHub, angka yang sangat tinggi untuk kategori Python scraping library dan menunjukkan resonansi kuat dengan developer yang lelah menulis selector manual. Lisensi MIT murni membuatnya aman dipakai di proyek komersial, dan keberadaan di daftar 14 ribu repository populer di Trendshift.io mengkonfirmasi bahwa proyek ini sedang dalam momentum adopsi yang nyata, bukan sekadar euforia sesaat.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah kecepatan prototyping pipeline scraping untuk kasus nyata. Untuk skenario pengumpulan data UMKM dari direktori lokal, marketplace, atau portal berita Indonesia, cukup dengan prompt seperti 'ambil nama usaha, alamat, nomor telepon, dan kategori dari halaman direktori ini' - library yang menangani fetching, parsing, dan normalisasi output menjadi JSON terstruktur. Hasilnya bisa langsung dimasukkan ke database, prompt RAG, atau diteruskan ke agent untuk analisis lanjutan. Bagi developer Indonesia yang sering mengerjakan proyek intelijen bisnis, riset pasar, atau verifikasi data dengan sumber yang tidak memiliki API resmi, kemampuan ini menghemat waktu berhari-hari dibanding pendekatan manual. Integrasi dengan framework agent populer seperti LangChain, LlamaIndex, CrewAI, dan Agno (Phidata) membuat ScrapeGraphAI sangat cocok disisipkan sebagai tool dalam workflow agentik yang lebih besar.",
+      "Arsitekturnya terdiri dari tiga mode utama yang menutupi hampir seluruh spektrum kebutuhan ekstraksi: SmartScraper untuk satu halaman dengan prompt terstruktur, SmartCrawler untuk menelusuri tautan internal sebuah situs dengan logika mengikuti halaman, dan LocalScraper untuk dokumen XML, HTML, JSON, atau Markdown yang sudah tersedia secara lokal - ketiganya berbagi API yang konsisten sehingga developer tidak perlu mempelajari konvensi berbeda. Fleksibilitas multi-provider LLM adalah keunggulan strategis: untuk data sensitif (misalnya informasi pasien, transaksi internal, atau riset kompetitif) bisa dijalankan dengan Ollama lokal tanpa mengirim data ke server eksternal, sementara untuk akurasi maksimum bisa dipakai GPT-4o atau Claude dengan biaya per halaman yang transparan. Ekosistem integrasi juga sangat luas - selain SDK Python dan Node.js resmi, tersedia plugin untuk Zapier, n8n, Pipedream, Bubble, dan Dify yang umum dipakai tim operasional non-engineering, plus MCP server di Smithery untuk dipakai langsung dari Claude Desktop atau Cursor.",
+      "Untuk konteks Indonesia, ScrapeGraphAI paling bernilai sebagai fondasi pipeline data untuk startup B2B, agensi riset pasar, tim intelijen bisnis, dan konsultan yang sering membutuhkan data dari sumber yang tidak memiliki API resmi - direktori UMKM, portal berita daerah, marketplace, atau website pemerintah daerah. Batasan yang perlu dipahami: biaya LLM per halaman bisa signifikan untuk crawling skala besar, sehingga Ollama lokal atau caching menjadi kebutuhan praktis untuk volume di atas ribuan halaman per hari. Akurasi juga bergantung pada kualitas LLM yang dipakai - prompt ambigu atau model kecil lokal kadang menghasilkan field yang tidak konsisten untuk layout halaman yang sangat bervariasi, sehingga validasi output tetap diperlukan untuk kasus bisnis yang membutuhkan akurasi tinggi. Render JavaScript juga masih terbatas dibanding Playwright atau browser-use untuk situs dengan proteksi Cloudflare berat. Walau dengan segala keterbatasan itu, kombinasi 'scrape pakai kalimat', multi-provider LLM, dan ekosistem integrasi yang luas menjadikan ScrapeGraphAI salah satu library paling pragmatis untuk AI-assisted data extraction di paruh kedua 2026 - sangat direkomendasikan untuk developer Indonesia yang ingin fokus pada nilai bisnis daripada berkutat pada selector CSS yang rapuh.",
+    ],
+    link: "https://github.com/ScrapeGraphAI/Scrapegraph-ai",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-29",
+    updatedAt: "2026-08-29",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {

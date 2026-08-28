@@ -3277,6 +3277,47 @@ export const stacks: Review[] = [
     date: "2026-08-27",
     featured: false,
   },
+  {
+    slug: "trae",
+    name: "Trae",
+    tagline: "IDE gratis dari ByteDance dengan model frontier lengkap",
+    tags: ["ByteDance", "Freemium", "IDE", "Agentic Coding"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 9.5 },
+    ],
+    summary:
+      "Trae adalah IDE AI-first dari ByteDance yang menawarkan paket gratis paling dermawan di kelasnya: akses ke Claude, Gemini, GPT-4.1, dan DeepSeek tanpa biaya, lengkap dengan mode agent dan memori proyek. Fork VS Code jadi migrasinya nyaris gratis, dan Lite 3 dolar per bulan sudah cukup untuk sebagian besar developer Indonesia.",
+    pros: [
+      "Paket gratis benar-benar berguna: akses Claude, Gemini 2.5 Pro, GPT-4.1, GPT-4o, dan DeepSeek tanpa kartu kredit",
+      "Fork VS Code jadi ekstensi, keybinding, dan tema langsung jalan tanpa setup ulang",
+      "Mode agent yang bisa membaca repo, menulis banyak file, dan menjalankan perintah seperti CLI agent modern",
+      "Tersedia juga TraeWork, asisten kerja terpisah untuk dokumen, spreadsheet, dan riset non-coding",
+      "Lite 3 dolar per bulan setara sekitar Rp 48 ribu, lebih murah dari secangkir kopi, sudah dapat kuota lebih longgar",
+    ],
+    cons: [
+      "Kuota gratis dan Lite cukup untuk eksplorasi, tapi untuk pekerjaan harian serius tetap butuh Pro atau di atasnya",
+      "Beberapa ekstensi VS Code populer masih perlu dicek kompatibilitasnya, dan dokumentasi komunitasnya masih lebih tipis dari Cursor",
+      "Brand ByteDance kadang membuat developer di luar Asia ragu, walaupun Trae berdiri sendiri secara produk",
+      "Belum ada komunitas tutorial bahasa Indonesia sebesar Cursor atau Claude Code, sehingga onboarding sedikit lebih manual",
+    ],
+    verdict:
+      "Pilihan rasional buat developer Indonesia yang ingin IDE AI premium tanpa langganan bulanan mahal. Dalam pengujian editorial Wawasan AI, catatan utamanya adalah paket gratisnya cukup untuk dicoba serius, tapi untuk pemakaian produksi cepat atau multi-repo, tetap perlu naik ke Pro 10 dolar per bulan atau setara sekitar Rp 160 ribu.",
+    body: [
+      "Di pasar IDE AI yang awalnya dikuasai Cursor, Trae dari ByteDance adalah kejutan 2025: paket gratis yang benar-benar berguna, bukan trial 7 hari dengan watermark. Begitu install Trae dari trae.ai, pengguna langsung dapat kredit mingguan untuk mengakses Claude Sonnet, Gemini 2.5 Pro, GPT-4.1, dan DeepSeek V3 dari satu editor. Tidak perlu kartu kredit untuk mulai, tidak perlu berlangganan bulanan untuk merasakan mode agent yang bisa membaca repo, menulis banyak file, dan menjalankan perintah terminal.",
+      "Karena Trae adalah fork VS Code, perpindahan dari editor lain hampir gratis. Ekstensi, tema, keybinding, dan snippet tetap jalan seperti biasa, sementara kemampuan AI-nya muncul di dua tempat: inline completion yang menebak niat edit seperti Cursor, dan mode agent di sidebar yang menerima instruksi bahasa alami. Bedanya dengan CLI agent murni adalah Trae memvisualisasikan setiap perubahan file sebelum commit, jadi developer bisa review patch besar lebih nyaman daripada menerima dump diff di terminal.",
+      "Untuk pengguna Indonesia, ada tiga hal yang membuat Trae menarik. Pertama, harga Lite 3 dolar per bulan atau sekitar Rp 48 ribu setara secangkir kopi di kafe kekinian, angka yang masuk untuk sebagian besar freelancer dan karyawan tech. Kedua, paket Pro 10 dolar per bulan atau sekitar Rp 160 ribu sudah termasuk uji coba 7 hari gratis, jadi tidak ada risiko mencoba tanpa bisa batalkan. Ketiga, Tim 22 dolar per pengguna per bulan atau sekitar Rp 350 ribu lebih murah dari Cursor Business untuk tim kecil yang ingin fitur kolaboratif dan kontrol admin.",
+      "Kesimpulannya, Trae adalah pilihan rasional kalau kamu tidak mau terikat pada satu vendor model AI dan ingin kebebasan berpindah dari Claude ke GPT ke Gemini tanpa ganti editor. Paket gratisnya cukup untuk belajar dan eksplorasi, Lite cukup untuk pemakaian ringan, dan Pro cukup untuk produksi harian. Kalau kebutuhanmu adalah IDE yang stabil, multi-model, dan murah, Trae kini layak masuk shortlist kamu; kalau kamu sudah investasi berat di ekosistem Cursor atau VS Code Copilot, pindah ke Trae baru masuk akal kalau Lite atau Pro terbukti lebih hemat di akhir bulan.",
+    ],
+    link: "https://www.trae.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-28",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

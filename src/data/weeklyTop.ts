@@ -2157,6 +2157,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                     "Proyek di balik seri YouTube 'God's Eye View' (5 juta+ views) yang viral — sekarang di-open-source per Agustus 2026 dengan 7.4k+ bintang dan 12 topik geospatial; satu-satunya entry cost adalah Google Maps API key (1.000 sesi gratis per bulan).",
                   ],
                 },
+                "b-nnett/grok-bot-0.18-reconstructed": {
+                  description:
+                    "Rekonstruksi source-oriented tidak resmi dari Grok Bot 0.18.0 macOS — TypeScript readable untuk batas modul Electron, host, coordinator, local-execution, dan renderer, plus toolchain deterministik untuk merakit ulang jadi aplikasi macOS yang jalan.",
+                  highlights: [
+                    "Rekonstruksi tidak resmi tapi source-oriented dari Grok Bot 0.18.0 macOS: TypeScript readable yang merangkum ulang batas modul Electron, host, coordinator, local-execution, protocol, dan renderer, lengkap toolchain deterministik untuk kompilasi balik ke .app.",
+                    "Empat eksperimen praktis di atas rekonstruksi: inference router untuk Cursor, Claude Code, Codex, dan OpenRouter; plugin/MCP tools lintas provider; local usage tracking; dan opsional Docker sandbox lokal pengganti remote box.",
+                    "Pendekatan hybrid: runtime dikompilasi ulang dari folder `source/`, renderer shipped yang asli tetap dipakai sebagai UI baseline dengan patch minimal — installer macOS arm64 dan Windows x64 disimpan via Git LFS dan SHA-256 identity verified saat bootstrap.",
+                    "Bukan proyek resmi Anysphere: ini alat hacking dan riset untuk memahami struktur desktop app Grok Bot, dengan catatan eksplisit nama modul mungkin berbeda dari sumber asli — relevan untuk engineer Indonesia yang tertarik reverse engineering dan rekayasa kontrol-plane aplikasi desktop modern.",
+                  ],
+                },
+                "vorssaint/vorssaint-utils": {
+                  description:
+                    "Toolkit menu bar macOS gratis dan open-source (GPL-3.0, Apple Silicon) — menyatukan volume mixer per-aplikasi, system monitor, app switcher dengan thumbnail, window snapping, Dock preview, clipboard history, dan banyak utilitas lain di balik satu ikon menubar.",
+                  highlights: [
+                    "'Satu ikon menu bar menggantikan belasan aplikasi Mac berbayar': volume mixer per-app, system monitor (CPU/GPU/memori/suhu/battery), app switcher dengan thumbnail, window snapping, Dock preview, clipboard history, text snippets, file shelf, dan uninstaller — tanpa akun, telemetry, atau langganan.",
+                    "Arsitektur modular: halaman Features di Settings memungkinkan pasang dan uninstal fitur utuh — yang dilepas hilang total dari app dan tidak membebani CPU/RAM/energi, sementara pengaturannya tersimpan supaya pasang ulang tinggal restore.",
+                    "Pendekatan 'install only what you use': tiga bundle sekali klik (Essentials, Windows, Battery & Quiet) plus visual picker per fitur, hanya minta permission sesuai pilihan, dan tiap fitur mengenakan 'honest energy badge' yang menunjukkan konsumsi sumber dayanya.",
+                    "macOS 14+ Apple Silicon, GPL-3.0+, multi-bahasa (lebih dari selusin), terang/gelap independen dari sistem, dan export/import settings untuk migrasi ke Mac baru — relevan untuk pengguna Indonesia yang ingin Mac utility lengkap tanpa bayar lisensi tahunan.",
+                  ],
+                },
               };
 
   // Helper: lookup dengan fallback ke template-generated highlights
