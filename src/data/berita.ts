@@ -3788,6 +3788,52 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "perusahaan-ri-mau-adopsi-ai-wamen-stella-ingatkan-ini",
+    title: "Perusahaan RI Mau Adopsi AI: Wamen Stella Ingatkan yang Sering Terlewat",
+    excerpt:
+      "Wakil Menteri Komunikasi dan Digital Stella Christie memperingatkan bahwa adopsi AI di perusahaan Indonesia sering melupakan fondasi dasar. Berikut catatan editorialnya.",
+    category: "Analisis",
+    date: "2026-08-29",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau kita membaca berita adopsi AI di Indonesia dalam enam bulan terakhir, narasinya nyaris seragam: perusahaan besar gencar mengumumkan pilot project, universitas membuka program AI, dan pemerintah daerah berlomba punya chatbot layanan publik. Ada kesan bahwa Indonesia sudah berada di garis depan revolusi AI. Wakil Menteri Komunikasi dan Digital Stella Christie punya catatan yang lebih jernih tentang hal itu -- dan peringatan yang layak didengar oleh siapa saja yang sedang merencanakan transformasi AI di organisasinya.",
+          "Dalam berbagai kesempatan sejak awal 2026, Stella konsisten mengangkat satu isu yang tidak seksi di headline: fondasi. Bukan model AI apa yang dipakai, bukan berapa miliar rupiah anggarannya, melainkan apakah data perusahaan sudah bersih, apakah proses bisnis sudah terdokumentasi, dan apakah ada orang yang benar-benar paham apa yang dimasukkan ke sistem AI. Tanpa fondasi itu, adopsi AI bukan transformasi digital -- melainkan lapisan cat baru di atas tembok yang rapuh.",
+        ],
+      },
+      {
+        heading: "Tiga peringatan yang paling sering terlewat",
+        paragraphs: [
+          "Pertama, soal data. Banyak perusahaan Indonesia -- terutama UMKM dan institusi pemerintah -- memiliki data dalam jumlah besar, tetapi dalam kondisi yang berantakan: format tidak konsisten, duplikat di mana-mana, tidak ada metadata, dan sensitifitasnya tidak terpetakan. Ketika data dimasukkan ke model AI, hasilnya tidak akan lebih baik dari data yang dimasukkan. Justru sebaliknya: AI akan mempercepat produksi kesimpulan yang salah, dengan keyakinan yang tampak profesional.",
+          "Kedua, soal proses. AI tidak bisa memperbaiki proses yang tidak jelas. Jika alur kerja di organisasi masih mengandalkan kebiasaan per-orang, pengetahuan tacit yang tidak pernah ditulis, atau rapat-rapat yang tidak memiliki catatan keputusan, maka AI hanya akan menjadi lapisan tambahan yang menutupi kebingungan. Peta proses yang sederhana -- siapa mengerjakan apa, dengan input apa, output apa, dan eskalasi ke mana -- adalah prasyarat yang jauh lebih penting daripada memilih model bahasa besar terbaru.",
+          "Ketiga, soal kapasitas manusia. Stella berulang kali menekankan bahwa adopsi AI bukan soal menggantikan pekerja, melainkan soal memindahkan pekerja ke pekerjaan yang bernilai lebih tinggi. Itu mengandaikan adanya pelatihan yang serius -- bukan sekadar workshop tiga jam tentang prompt engineering, melainkan program berkelanjutan yang memungkinkan karyawan benar-benar berubah peran. Tanpa itu, AI akan menjadi beban tambahan: karyawan disuruh menghasilkan lebih banyak output dengan alat yang tidak mereka kuasai.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk UMKM dan startup Indonesia",
+        paragraphs: [
+          "Pesan Stella sebenarnya membawa kabar baik untuk pelaku usaha kecil. Karena yang ditekankan adalah fondasi, bukan teknologi, UMKM yang masih punya data rapi di spreadsheet sederhana dan proses yang berjalan konsisten justru punya keunggulan yang tidak terlihat. Mereka tidak perlu menjadi perusahaan teknologi besar untuk mengadopsi AI dengan cara yang benar. Yang mereka butuhkan adalah: mendokumentasikan proses, membersihkan data, dan memilih satu-dua titik di mana AI benar-benar menambah nilai -- misalnya menyusun draft balasan pelanggan, merangkum laporan mingguan, atau menghasilkan deskripsi produk.",
+          "Untuk startup, pesannya sedikit berbeda tetapi tidak kurang pentingnya. Startup sering kali terlalu cepat melompat ke solusi AI generatif tanpa memikirkan apakah masalahnya memang butuh generative AI atau cukup dengan aturan sederhana. Hasil yang bagus bukan dari model yang paling mahal, melainkan dari model yang paling tepat untuk masalah yang jelas. Memilih dengan cermat sejak awal akan menghemat biaya, waktu, dan reputasi di kemudian hari.",
+        ],
+      },
+      {
+        heading: "Implikasi untuk regulator dan sektor publik",
+        paragraphs: [
+          "Stella bicara bukan hanya sebagai pengamat, melainkan juga sebagai pembuat kebijakan. Implikasi dari peringatan dia terhadap regulator dan instansi publik cukup besar: sebelum mendorong AI di layanan publik, pemerintah perlu memastikan fondasi yang dia sebutkan sudah ada di setiap instansi. Itu artinya audit data internal, standardisasi proses, dan program peningkatan kapasitas pegawai yang jauh lebih ambisius daripada yang ada sekarang.",
+          "Ada peluang yang jarang dibicarakan: jika Indonesia berhasil membangun fondasi AI yang baik di level instansi publik, itu akan menjadi contoh yang bisa diacu oleh negara lain di ASEAN. Selama ini, contoh yang dirujuk biasanya datang dari Singapura atau Korea Selatan. Tidak ada alasan struktural mengapa Indonesia tidak bisa menjadi rujukan juga -- justru karena pasar domestik dan keragaman kasus yang besar, kalau fondasinya kuat, pelajaran dari Indonesia akan sangat relevan untuk negara berkembang lainnya.",
+        ],
+      },
+      {
+        heading: "Catatan penutup: kecepatan bukan ukuran adopsi",
+        paragraphs: [
+          "Pelajaran paling penting dari peringatan Stella adalah soal ukuran yang kita pakai untuk menilai adopsi AI. Kalau ukurannya kecepatan -- siapa duluan mengumumkan, siapa duluan launching, siapa dulian viral -- maka kita akan berlomba di permukaan. Kalau ukurannya kesiapan -- siapa yang punya data bersih, proses terdokumentasi, dan tim yang terlatih -- maka kita akan berlomba di kedalaman. Indonesia masih punya waktu untuk memilih kedalaman. Seperti yang diingatkan Stella, kesempatan itu tidak selalu datang dua kali.",
+          "Untuk komunitas AI Indonesia yang membaca ini, langkah yang paling konkret mungkin bukan membeli lisensi baru atau mengikuti tren model terbaru. Langkah yang paling konkret adalah duduk bersama tim, memetakan satu proses yang akan kita otomatisasi dengan AI, membersihkan data yang akan dipakai, dan memastikan ada satu orang yang paham benar apa yang dimasukkan dan keluar dari sistem itu. Kecil, terlokalisasi, dan terukur. Itulah fondasi yang dimaksud Stella Christie ketika dia memperingatkan bahwa adopsi AI bukan lomba kecepatan.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
