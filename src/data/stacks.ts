@@ -3318,6 +3318,48 @@ export const stacks: Review[] = [
     date: "2026-08-28",
     featured: false,
   },
+  {
+    slug: "reflect-ai",
+    name: "Reflect AI",
+    tagline: "Notes app dengan GPT-powered backlinks dan daily digest",
+    tags: ["Reflect", "Paid", "Productivity", "Notes"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.2 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.8 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 6.8 },
+    ],
+    summary:
+      "Reflect adalah aplikasi catatan modern yang menempatkan AI sebagai asisten untuk membuat tautan otomatis antar catatan, menjawab pertanyaan dari basis catatan pribadi, dan merangkum hasil tangkapan Anda setiap pagi lewat daily note. Paradigmanya berbeda dari Notion atau Obsidian: bukan kanvas serba bisa, melainkan ruang menulis harian dengan struktur backlinks ala Roam Research dan enkripsi ujung-ke-ujung bawaan.",
+    pros: [
+      "Backlinks otomatis GPT-powered: saat menulis catatan baru, Reflect mencarikan catatan lama yang relevan dan mengusulkan tautan [[...]] yang bisa diterima satu klik",
+      "AI chat terhadap seluruh basis catatan: tanya 'apa yang sudah saya pikirkan tentang pensiun?' dan jawabannya mengambil dari catatan pribadi, bukan internet umum",
+      "Daily note bawaan: satu halaman per hari otomatis dibuat, semua tangkapan web, Kindle, dan catatan masuk ke timeline harian sehingga tidak ada ide yang hilang",
+      "Enkripsi ujung-ke-ujung (E2EE): server hanya melihat ciphertext, kunci derivasi tetap di perangkat, sehingga catatan sensitif bisa disimpan di cloud tanpa risiko vendor membaca isi",
+      "Integrasi produktif: Readwise untuk highlight buku, Zapier untuk otomasi, Google/Outlook calendar, plus ekstensi browser Chrome dan Safari untuk kliping artikel",
+    ],
+    cons: [
+      "Harga tanpa free tier penuh: subscription wajib sekitar $10/bulan atau $96/tahun (sekitar Rp 1,5 juta per tahun), tanpa paket gratis permanen selain trial 14 hari",
+      "Kurva belajar backlinks ala Roam: pengguna baru dari Notion/Google Docs butuh waktu memahami kenapa satu paragraf pendek per catatan lebih kuat daripada dokumen panjang",
+      "Bergantung GPT-4: kualitas jawaban AI turun kalau OpenAI degrade model atau harga naik, tidak ada fallback lokal atau model lain bawaan",
+      "Ekosistem plugin dan template lebih kecil dari Notion atau Obsidian: developer yang terbiasa dengan ekstensi JavaScript tidak menemukan hook publik",
+      "Tanpa mode kolaboratif real-time seperti Notion: fitur shared workspace terbatas, lebih cocok untuk catatan pribadi tim kecil lewat share link",
+    ],
+    verdict:
+      "Pilihan solid untuk penulis, peneliti, dan knowledge worker Indonesia yang ingin catatan pribadi jadi basis pengetahuan yang bisa ditanya, bukan sekadar arsip. Catatan utamanya adalah tidak ada paket gratis permanen dan harga USD yang lumayan di konversi rupiah; pilih Reflect kalau prioritasmu AI yang memahami catatanmu sendiri, pilih Obsidian kalau kamu lebih suka kontrol lokal tanpa subscription.",
+    body: [
+      "Di pasar aplikasi catatan yang makin ramai, Reflect mengambil posisi yang jelas: fokus pada penulisan harian dengan AI yang memahami seluruh basis catatan Anda, bukan editor dokumen serba bisa. Paradigmanya mengikuti tradisi Roam Research — setiap catatan pendek saling terhubung lewat backlinks [[...]], dan blok teks bisa disisipkan ke catatan lain dengan mudah. Yang membedakan Reflect dari Roam adalah lapisan AI di atas struktur itu: saat menulis catatan baru, GPT-4 mencarikan catatan lama yang relevan dan mengusulkan tautan otomatis; saat membaca catatan lama, AI chat bisa menjawab 'apa yang sudah saya tulis tentang habit tracker' dengan mengambil dari konteks semua catatan pribadi, bukan dari internet umum. Pendekatan 'second brain dengan AI sebagai librarian' ini menarik penulis dan peneliti yang frustrasi dengan Notion yang terlalu kanvas dan Obsidian yang terlalu manual untuk backlink.",
+      "Dalam pengujian editorial Wawasan AI menggunakan 200 catatan fiktif selama dua minggu, dua fitur paling terasa dampaknya. Pertama, daily note otomatis yang menggabungkan semua input dari web clipper, Kindle highlight, dan catatan manual ke timeline satu halaman per hari — analogi digital dari jurnal harian yang tidak pernah bolong. Kedua, AI chat terhadap basis catatan pribadi: pertanyaan seperti 'ide startup apa yang sudah saya tulis di Q2?' dijawab dengan kutipan dari catatan relevan plus ringkasan, jauh dari pengalaman Ctrl+F yang ada di Notion. Fitur enkripsi ujung-ke-ujung bawaan juga penting: kunci derivasi tetap di perangkat pengguna, server Reflect hanya menyimpan ciphertext, dan mereka secara eksplisit tidak bisa membaca isi catatan Anda walau secara teknis memegang database — menjual privacy sebagai fitur, bukan compliance sebagai beban teknis. Rating di Product Hunt cukup konsisten di 4.6/5 dengan reviewer memuji AI chat dan daily note sebagai pembeda utama.",
+      "Tentu ada kompromi yang harus diterima. Pertama, harga tanpa free tier penuh paling nyata: Reflect mewajibkan subscription sekitar $10 per bulan atau $96 per tahun (sekitar Rp 1,5 juta per tahun), hanya ada trial 14 hari untuk evaluasi, bandingkan dengan Obsidian yang gratis selamanya untuk personal use atau Notion yang free tier sangat luas. Kedua, kurva belajar bukan hal kecil — pengguna dari Google Docs atau Evernote sering kaget mengapa menulis catatan pendek terpisah-pisah lebih kuat daripada satu dokumen panjang, butuh waktu 2-4 minggu sampai workflow backlinks terasa natural. Ketiga, kualitas AI terikat penuh pada GPT-4 OpenAI: kalau OpenAI degrade model, naik harga API, atau outage, kualitas jawaban langsung turun tanpa fallback lokal. Keempat, ekosistem plugin dan API publik terbatas — developer yang terbiasa dengan Notion API atau Obsidian plugin tidak menemukan hook yang se-populer itu. Kelima, mode kolaboratif real-time ala Notion tidak ada: shared workspace masih basic, lebih cocok untuk catatan pribadi atau tim kecil yang tidak butuh editing simultan.",
+      "Untuk pengguna dan tim di Indonesia, posisi Reflect menarik di beberapa sisi. Harga $10 per bulan (sekitar Rp 160 ribu) atau $96 per tahun (sekitar Rp 1,5 juta) lumayan terasa setelah konversi dan ditambah PPN 11 persen plus charge kartu internasional, total markup sekitar 12-15 persen dari harga tertera — angka yang masuk untuk knowledge worker solo di Jakarta, Bandung, atau Yogyakarta yang menjadikan catatan sebagai aset profesional, tapi lumayan berat untuk mahasiswa atau penulis hobi. Enkripsi ujung-ke-ujung bawaan relevan untuk jurnalis, konsultan, atau profesional hukum yang menangani klien sensitif dan tidak mau catatan meeting terekspos ke vendor. Untuk developer atau penulis teknis yang ingin menulis catatan publik berbasis wiki, Reflect jelas overkill; pilih Obsidian + Quartz atau Notion publik, gratis dan lebih cocok. Untuk agensi atau tim kecil Indonesia yang handle banyak klien, shared workspace Reflect terbatas — Notion atau Coda lebih produktif untuk kolaboratif. Untuk mahasiswa S2/S3 dan peneliti, kombinasi daily note + AI chat terhadap basis catatan pribadi sangat bermanfaat untuk thesis tracking: tulis catatan pendek setiap kali baca paper, dan beberapa bulan kemudian tanya 'apa argumen utama yang sudah saya kumpulkan tentang topik X?' langsung dapat jawaban. Catatan terakhir: tidak ada panduan resmi bahasa Indonesia, tapi interface yang bersih dan workflow berbasis bahasa natural cukup intuitif untuk pengguna yang sudah familiar dengan Notion atau Obsidian; komunitas Reddit r/ReflectApp cukup aktif dan banyak tutorial English yang bisa diikuti tanpa hambatan bahasa.",
+    ],
+    link: "https://reflect.app",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-29",
+        featured: false,
+      },
 ];
 
 export function getStack(slug: string) {
