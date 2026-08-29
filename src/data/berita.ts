@@ -3834,6 +3834,51 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "joget-agent-lab-platform-no-code-bangun-ai-agent-bisnis",
+    title: "Joget Agent Lab: Platform Open-Source yang Menjanjikan AI Agent untuk Bisnis Tanpa Harus Coding",
+    excerpt:
+      "Joget memperkenalkan Agent Lab, program visual untuk membangun AI agent otonom tanpa kode. Peluang dan pertanyaannya untuk UMKM dan instansi Indonesia.",
+    category: "Analisis",
+    date: "2026-08-30",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selama dua tahun terakhir, wacana tentang AI agent di Indonesia lebih sering berhenti di slide presentasi dan pilot project yang tidak pernah jalan. Agen otonom yang katanya bisa memesan tiket, memproses klaim, atau menjawab pertanyaan pelanggan selalu terdengar menjanjikan, sampai pertanyaannya tiba: siapa yang akan membangunnya, dengan keahlian apa, dan di atas infrastruktur mana. Joget, platform aplikasi open-source yang sudah dipakai di lebih dari seratus negara, mencoba menjawab pertanyaan itu dengan cara yang berbeda -- dengan mengklaim bahwa membangun AI agent tidak harus menjadi pekerjaan programmer.",
+          "Pada Agustus 2026, Joget memperkenalkan Agent Lab, sebuah program visual yang membungkus kemampuan AI agent di dalam alur kerja bisnis. Klaimnya sederhana: staf yang memahami proses bisa merakit agen sendiri, mengujinya, dan melepasnya ke produksi -- semuanya lewat antarmuka drag-and-drop yang sama yang selama ini dipakai untuk membuat formulir dan workflow. Untuk pasar seperti Indonesia, di mana talenta teknis mahal dan tersebar di kota besar, janji itu punya daya tarik yang tidak kecil.",
+        ],
+      },
+      {
+        heading: "Apa sebenarnya yang ditawarkan Agent Lab",
+        paragraphs: [
+          "Agent Lab bukan generator agen sekali klik, melainkan kanvas untuk merakit perilaku agen dari komponen-komponen yang sudah disiapkan: pemicu (trigger), alat (tool), kebijakan (policy), dan jalur eskalasi ke manusia. Alih-alih menulis kode Python untuk menyambung model bahasa besar ke API internal, pengguna menyusun blok visual yang menunjukkan apa yang harus dilakukan agen ketika menerima perintah tertentu, data apa yang boleh diakses, dan kapan agen harus berhenti dan meminta persetujuan manusia.",
+          "Yang menarik adalah pendekatannya yang tidak menggantikan alur kerja yang sudah ada, melainkan menyisipkan agen ke dalam alur itu. Dalam banyak proyek AI agent di Indonesia, kegagalan terjadi karena agen dipaksakan ke proses yang sebenarnya tidak jelas. Agent Lab, setidaknya dari dokumentasinya, mendorong pengguna untuk memetakan proses dulu -- siapa mengerjakan apa, dengan input apa, output apa -- baru kemudian memutuskan di titik mana agen bisa mengambil alih sebagian pekerjaan itu. Itu selaras dengan peringatan yang sering diangkat oleh regulator dan pengamat lokal: fondasi proses lebih menentukan daripada pilihan model.",
+        ],
+      },
+      {
+        heading: "Mengapa ini relevan untuk UMKM dan instansi Indonesia",
+        paragraphs: [
+          "UMKM di Indonesia jarang punya staf teknis untuk membangun agen dari nol. Yang mereka punya adalah pemilik usaha yang memahami proses -- cara menerima pesanan, mengecek stok, membalas chat pelanggan, dan menagih. Kalau agen visual benar-benar bisa dipakai oleh orang seperti itu, maka otomatisasi yang selama ini hanya dinikmati perusahaan besar menjadi mungkin untuk skala yang lebih kecil.",
+          "Untuk instansi pemerintah, daya tariknya sedikit berbeda. Banyak dinas dan badan layanan publik sudah menggunakan Joget untuk aplikasi internal -- formulir izin, alur pengajuan, dashboard operasional. Menambahkan agen ke dalam aplikasi yang sama berarti kemampuan AI tidak hidup di produk terpisah yang harus diintegrasikan, melainkan menjadi bagian dari sistem yang sudah dikenal. Itu mengurangi biaya pelatihan, memperpendek waktu adopsi, dan yang paling penting -- tidak menambah permukaan serangan baru pada data warga. Asalkan akses agen dibatasi ke data yang memang relevan dengan tugasnya, risikonya bisa dikontrol dengan kebijakan yang sama yang sudah dipakai untuk aplikasi Joget lainnya.",
+        ],
+      },
+      {
+        heading: "Pertanyaan yang harus dijawab sebelum mengadopsi",
+        paragraphs: [
+          "Tiga pertanyaan harus dijawab sebelum UMKM atau instansi benar-benar mengadopsi Agent Lab. Pertama, soal data latih dan konteks: agen yang dibangun lewat kanvas visual tetap memerlukan akses ke data yang bersih dan terdokumentasi. Jika data acak, agen tidak akan bekerja lebih baik dari manusia yang menginputnya. Kedua, soal audit: setiap keputusan yang diambil agen -- terutama yang mempengaruhi layanan publik atau transaksi pelanggan -- harus bisa ditelusuri. Visual kanvas membantu, tetapi jejak audit dalam bentuk log yang bisa dibaca auditor tetap wajib. Ketiga, soal eskalasi: agen yang tidak tahu kapan harus menyerah adalah agen yang akan menimbulkan masalah. Parameter eskalasi ke manusia harus jelas sejak hari pertama, bukan ditambahkan setelah insiden pertama.",
+          "Pertanyaan keempat, yang lebih politis dari teknis: siapa yang menanggung risiko ketika agen salah? Untuk UMKM, jawabannya biasanya pemilik usaha sendiri. Untuk instansi pemerintah, jawabannya jauh lebih rumit, karena menyangkut layanan warga dan berpotensi keputusan yang tidak bisa diurungkan. Sebelum adopsi meluas, perlu ada pedoman yang jelas tentang tanggung jawab operator platform, pengguna, dan regulator atas keputusan yang diambil agen. Tanpa itu, adopsi akan tertahan di pilot project yang tidak berani disentuh oleh bagian hukum dan kepatuhan.",
+        ],
+      },
+      {
+        heading: "Catatan penutup: janji visual bukan pengganti tata kelola",
+        paragraphs: [
+          "Agent Lab adalah salah satu bukti bahwa pasar AI agent sedang bergerak dari dunia riset ke dunia aplikasi bisnis. Itu kabar baik -- adopsi AI agent akan melebar, dan talenta non-teknis akan punya peran yang lebih besar dalam membangunnya. Kabar yang lebih-hatinya adalah: alat visual tidak otomatis menyelesaikan masalah tata kelola yang sudah ada. UMKM yang tidak punya data rapi tetap akan gagal, instansi yang tidak punya proses jelas tetap akan bingung, dan regulator yang tidak siap tetap akan tertinggal.",
+          "Untuk komunitas AI Indonesia, yang perlu dilakukan bukan menunggu sampai platform seperti ini sempurna, melainkan mulai sekarang -- mencoba pada satu proses kecil, mengukur hasilnya, dan menuliskan pelajaran apa yang tidak bisa ditebak dari presentasi vendor. Kalau dilakukan dengan benar, Agent Lab bisa menjadi salah satu pintu masuk yang paling ramah untuk membawa AI agent ke lapisan usaha dan layanan yang selama ini tidak tersentuh. Kalau dilakukan tanpa disiplin tata kelola yang memadai, ia hanya akan menjadi demo lain yang berakhir di lemari arsip.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
