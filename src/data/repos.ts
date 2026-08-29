@@ -4378,6 +4378,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-29",
     featured: false,
   },
+{
+    slug: "addyosmani-agent-skills",
+    name: "Addy Osmani's Agent Skills",
+    tagline: "Paket skill engineering siap-pakai untuk AI coding agent dari Addy Osmani",
+    tags: ["AI Agent", "Developer Tools", "JavaScript", "Open Source"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Agent Skills dari Addy Osmani (Google engineering leader yang dikenal lewat buku Learning JavaScript Design Patterns) adalah paket skill engineering yang bisa dipasang ke hampir semua AI coding agent populer - Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, Antigravity, dan 70+ klien lain. Per akhir Agustus 2026 repositori ini sudah melampaui 90 ribu bintang dan 9.700 fork, menjadikannya salah satu skill library paling cepat adopsi di komunitas AI coding.",
+    highlights: [
+      "Satu paket skill untuk 70+ AI coding agent lewat CLI terpusat `npx skills add addyosmani/agent-skills`, dengan marketplace plugin native untuk Claude Code, Cursor, Codex, Antigravity, dan Gemini CLI",
+      "25 lifecycle skill yang mencakup seluruh alur kerja Define, Plan, Build, Verify, Review, Ship - dari spec-driven-development, constraint-driven-development, planning-and-task-breakdown, incremental-implementation, test-driven-development, sampai ship",
+      "9 slash command yang memetakan fase pengembangan ke skill yang relevan: /spec, /plan, /build, /test, /constraints, /review, /webperf, /code-simplify, /ship",
+      "Mode `/build auto` yang menjalankan plan dan implementasi sekaligus setelah approve tunggal, sambil tetap menjalankan test per task dan pause saat ada failure",
+      "Skill dirancang sebagai plain Markdown (SKILL.md) - bekerja dengan agent apa pun yang menerima system prompt atau instruction file, tanpa dependency runtime",
+      "Test pyramid 80/15/5 yang dikodekan ke skill TDD, plus anti-rationalization tables untuk mencegah agent melewati quality gate demi warna hijau",
+      "Meta-skill `using-agent-skills` yang memetakan permintaan masuk ke skill workflow yang tepat dan mendefinisikan shared operating rules",
+      "Lisensi MIT murni dengan adoption guide terpisah untuk greenfield project dan incremental rollout di codebase established",
+      "Aktif dipelihara dengan 479 watcher, 122 open issue, dan iterasi mingguan oleh Addy Osmani bersama kontributor inti komunitas AI coding",
+    ],
+    pros: [
+      "Cross-agent compatibility yang sangat luas - satu paket skill yang sama bisa dipasang ke Claude Code, Cursor, Codex, dan Copilot tanpa modifikasi, menurunkan friksi onboarding tim engineering yang memakai campuran beberapa tool",
+      "Filosofi 'spec sebelum kode' yang dikodekan ke skill constraint dan spec-driven-development membantu mencegah agent lompat ke implementasi tanpa pemahaman requirement, masalah klasik AI coding agent",
+      "Mode `/build auto` memungkinkan prototyping cepat dari spec ke implementasi tanpa harus approve per task, sementara tetap menjaga disiplin test-driven - pola yang sangat membantu solo developer atau tim kecil",
+    ],
+    cons: [
+      "Per-skill `npx` install hanya menyalin folder `skills/<name>/` tanpa `references/` bersama, sehingga skill yang bergantung pada shared checklist menjadi tidak lengkap - issue #361 yang masih open per Agustus 2026",
+      "Bergantung pada kualitas prompt Claude/GPT-4/Gemini untuk mengeksekusi skill - model kecil lokal kadang melewatkan verification gate atau mengikuti anti-rationalization table secara longgar",
+      "Dokumentasi setup per agent tersebar di banyak file docs/<agent>-setup.md yang harus dibaca terpisah, sehingga waktu onboarding pertama kali bisa 30-60 menit untuk pilih integrasi yang tepat",
+    ],
+    verdict:
+      "Agent Skills adalah paket skill paling pragmatis dan terlengkap di paruh kedua 2026 untuk developer Indonesia yang serius mengadopsi AI coding agent di workflow harian - bukan sekadar demo keren, tapi toolkit yang sudah battle-tested oleh puluhan ribu tim engineering. Sangat direkomendasikan untuk dipasang minimal di Claude Code atau Cursor sebagai fondasi, dengan catatan bahwa model LLM yang dipakai tetap faktor penentu kualitas output.",
+    body: [
+      "Sepanjang 2026, salah satu pertanyaan paling sering dari developer Indonesia yang mulai mengadopsi AI coding agent adalah: 'skill atau instruksi mana yang harus saya pakai supaya agent ini benar-benar menghasilkan kode yang layak, bukan sekadar cepat?' Addy Osmani, engineering leader Google yang dikenal lewat buku Learning JavaScript Design Patterns dan kontribusinya ke Chrome, menjawab pertanyaan itu lewat Agent Skills - sebuah repositori yang mengkodekan workflow, quality gate, dan best practice yang biasa dipakai engineer senior ke dalam format yang bisa dibaca dan dijalankan AI agent. Per akhir Agustus 2026, repositori ini sudah melampaui 90.677 bintang dan 9.707 fork di GitHub, angka yang untuk kategori skill library sangat tinggi dan menunjukkan resonansi kuat dengan komunitas AI coding. Kunci adopsinya adalah kompatibilitas luas lewat CLI `npx skills add` dan marketplace plugin native untuk 70+ klien, sehingga developer tidak terkunci pada satu tool.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa adalah dampak skill spec-driven-development dan constraint-driven-development terhadap disiplin agent. Untuk skenario membangun endpoint API baru dari permintaan singkat 'buat endpoint POST /orders dengan validasi dan audit log', agent Claude Code yang sebelumnya langsung loncat ke kode sekarang berhenti dulu, menulis PRD mini yang mencakup tujuan, struktur, code style, testing, dan boundary, lalu menanyakan confirmation point - alur yang secara substansial mengurangi rework dibanding prompt polos. Mode `/build auto` juga terbukti andal untuk prototyping dari spec jadi implementasi dalam satu pass, dengan catatan bahwa agent tetap pause di task berisiko tinggi atau saat test gagal - pola yang sangat membantu solo developer Indonesia yang harus bergerak cepat.",
+      "Arsitekturnya terdiri dari 25 skill yang dipetakan ke 6 fase lifecycle: Define (interview-me, idea-refine, spec-driven-development, constraint-driven-development), Plan (planning-and-task-breakdown), Build (incremental-implementation, test-driven-development), Verify, Review, dan Ship. Setiap skill adalah file SKILL.md berisi langkah, verification gate, dan anti-rationalization tables - format plain Markdown yang bekerja dengan agent apa pun yang menerima system prompt. CLI `npx skills add addyosmani/agent-skills` adalah entry point utama, dengan marketplace plugin untuk Claude Code (`/plugin install agent-skills@addy-agent-skills`), Cursor, Codex, Antigravity, Gemini CLI, dan Windsurf. Untuk developer yang memakai campuran Claude Code untuk prototyping dan Cursor untuk editing visual, kemampuan memasang paket skill yang sama ke kedua tool adalah nilai praktis yang jarang ditawarkan skill library lain.",
+      "Untuk konteks Indonesia, Agent Skills paling relevan untuk tiga profil: pertama, solo developer atau freelancer yang menggunakan Claude Code atau Cursor harian dan ingin menaikkan kualitas output tanpa harus menulis system prompt sendiri; kedua, tim engineering startup yang baru mengadopsi AI coding agent dan butuh baseline workflow yang sudah teruji; ketiga, agensi pengembangan software yang melatih junior developer - skill constraint-driven-development dan code-review-and-quality membantu menanamkan quality bar sejak hari pertama. Batasan yang perlu dipahami: per-skill `npx` install belum menyertakan folder `references/` bersama (issue #361 yang masih open), sehingga untuk skill yang bergantung pada shared checklist disarankan clone penuh atau integrasi marketplace. Kualitas eksekusi tetap bergantung pada model LLM yang dipakai - GPT-5 atau Claude Sonnet 4.5 mengeksekusi skill dengan disiplin tinggi, sementara model lokal kecil kadang melompati verification gate. Dengan mengingat dua catatan itu, Agent Skills adalah investasi onboarding yang sangat cost-effective untuk setiap tim Indonesia yang serius dengan AI-assisted software development di paruh kedua 2026.",
+    ],
+    link: "https://github.com/addyosmani/agent-skills",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-30",
+    updatedAt: "2026-08-30",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
