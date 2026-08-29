@@ -1,17 +1,41 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "29 Agustus 2026",
-  "period": {
-    "date": "2026-08-29",
-    "label": "29 Agustus 2026",
-    "path": "/repo/daily/2026/08/29"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-08-29T00:04:36.686Z",
+  "fetchedAt": "2026-08-29T08:09:54.316Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "sapientinc/PRAXIST",
+      "owner": "sapientinc",
+      "repo": "PRAXIST",
+      "description": "Autonomous research system for measurable, computer-executable research.",
+      "githubUrl": "https://github.com/sapientinc/PRAXIST",
+      "trendshiftUrl": "https://trendshift.io/repositories/191537",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-27T14:20:58Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "openJiuwen-ai/jiuwenswarm",
+      "owner": "openJiuwen-ai",
+      "repo": "jiuwenswarm",
+      "description": "JiuwenSwarm is an intelligent AI Agent built on openJiuwen. It extends the powerful capabilities of large language models directly to your fingertips through various communication apps you use daily.",
+      "githubUrl": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "trendshiftUrl": "https://trendshift.io/repositories/119917",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-03-05T06:28:11Z"
+    },
+    {
+      "rank": 3,
       "fullName": "tt-a1i/archify",
       "owner": "tt-a1i",
       "repo": "archify",
@@ -26,30 +50,21 @@
       "dateCreated": "2026-04-15T05:27:37Z"
     },
     {
-      "rank": 2,
-      "fullName": "HEJustinSun/my-girlfriend-jingtian-latex",
-      "owner": "HEJustinSun",
-      "repo": "my-girlfriend-jingtian-latex",
-      "description": "",
-      "githubUrl": "https://github.com/HEJustinSun/my-girlfriend-jingtian-latex",
-      "trendshiftUrl": "https://trendshift.io/repositories/189135",
-      "language": "TeX",
-      "topics": [],
-      "dateCreated": "2026-08-27T11:28:44Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "bilawalsidhu/gods-eye-view",
-      "owner": "bilawalsidhu",
-      "repo": "gods-eye-view",
-      "description": "God's Eye View v1 public open-source release placeholder",
-      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
-      "trendshiftUrl": "https://trendshift.io/repositories/62154",
-      "topics": [],
-      "dateCreated": "2026-06-22T23:37:22Z"
-    },
-    {
       "rank": 4,
+      "fullName": "Lakr233/vphone-cli",
+      "owner": "Lakr233",
+      "repo": "vphone-cli",
+      "description": "",
+      "githubUrl": "https://github.com/Lakr233/vphone-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/22311",
+      "language": "Swift",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-02-26T11:29:08Z"
+    },
+    {
+      "rank": 5,
       "fullName": "ManacleMelodyKnife/gpu-cpu-miner-crypto-silent",
       "owner": "ManacleMelodyKnife",
       "repo": "gpu-cpu-miner-crypto-silent",
@@ -62,7 +77,7 @@
       "dateCreated": "2026-03-31T14:49:16Z"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "fullName": "K-Dense-AI/scientific-agent-skills",
       "owner": "K-Dense-AI",
       "repo": "scientific-agent-skills",
@@ -77,74 +92,67 @@
       "dateCreated": "2025-10-19T20:54:15Z"
     },
     {
-      "rank": 6,
-      "fullName": "sapientinc/PRAXIST",
-      "owner": "sapientinc",
-      "repo": "PRAXIST",
-      "description": "Autonomous research system for measurable, computer-executable research.",
-      "githubUrl": "https://github.com/sapientinc/PRAXIST",
-      "trendshiftUrl": "https://trendshift.io/repositories/191537",
-      "language": "Python",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-08-27T14:20:58Z"
-    },
-    {
       "rank": 7,
-      "fullName": "SenteLabsAI/OpenExecutive",
-      "owner": "SenteLabsAI",
-      "repo": "OpenExecutive",
-      "description": "AI-powered virtual executive team — a single coherent executive persona backed by 8 specialist Claude agents (FastAPI + Next.js).",
-      "githubUrl": "https://github.com/SenteLabsAI/OpenExecutive",
-      "trendshiftUrl": "https://trendshift.io/repositories/188971",
-      "language": "Python",
+      "fullName": "XiaoDuoYa/codex-with-chatgpt",
+      "owner": "XiaoDuoYa",
+      "repo": "codex-with-chatgpt",
+      "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "githubUrl": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "trendshiftUrl": "https://trendshift.io/repositories/193878",
+      "language": "TypeScript",
       "topics": [
-        "AI agent"
+        "AI agent",
+        "AI workflow",
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-06-11T21:41:54Z"
+      "dateCreated": "2026-08-28T12:57:24Z"
     },
     {
       "rank": 8,
-      "fullName": "pollen-robotics/microduck",
-      "owner": "pollen-robotics",
-      "repo": "microduck",
-      "description": "A Tiny biped duck robot 🦆",
-      "githubUrl": "https://github.com/pollen-robotics/microduck",
-      "trendshiftUrl": "https://trendshift.io/repositories/189165",
-      "language": "Rust",
+      "fullName": "hezo-ai/hezo",
+      "owner": "hezo-ai",
+      "repo": "hezo",
+      "description": "Your own AI workforce. Built to ship.",
+      "githubUrl": "https://github.com/hezo-ai/hezo",
+      "trendshiftUrl": "https://trendshift.io/repositories/88816",
+      "language": "TypeScript",
       "topics": [
-        "Robotics"
+        "AI agent",
+        "Workflow automation",
+        "Self-hosted"
       ],
-      "dateCreated": "2026-07-29T07:52:16Z"
+      "dateCreated": "2026-03-30T04:11:26Z"
     },
     {
       "rank": 9,
-      "fullName": "calesthio/OpenMontage",
-      "owner": "calesthio",
-      "repo": "OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-      "githubUrl": "https://github.com/calesthio/OpenMontage",
-      "trendshiftUrl": "https://trendshift.io/repositories/24682",
-      "language": "Python",
+      "fullName": "diffusionstudio/editor",
+      "owner": "diffusionstudio",
+      "repo": "editor",
+      "description": "The open-source video editor built for your coding agents",
+      "githubUrl": "https://github.com/diffusionstudio/editor",
+      "trendshiftUrl": "https://trendshift.io/repositories/128150",
+      "language": "TypeScript",
       "topics": [
         "AI agent",
         "AI video generation",
-        "Workflow automation"
+        "Video editing"
       ],
-      "dateCreated": "2026-03-29T15:23:22Z"
+      "dateCreated": "2026-07-07T07:22:20Z"
     },
     {
       "rank": 10,
-      "fullName": "tailscale/tailcat",
-      "owner": "tailscale",
-      "repo": "tailcat",
-      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
-      "githubUrl": "https://github.com/tailscale/tailcat",
-      "trendshiftUrl": "https://trendshift.io/repositories/188818",
-      "language": "Go",
-      "topics": [],
-      "dateCreated": "2024-10-29T17:21:12Z"
+      "fullName": "Nanako0129/sepia",
+      "owner": "Nanako0129",
+      "repo": "sepia",
+      "description": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+      "githubUrl": "https://github.com/Nanako0129/sepia",
+      "trendshiftUrl": "https://trendshift.io/repositories/193472",
+      "language": "Shell",
+      "topics": [
+        "NLP",
+        "AI skills"
+      ],
+      "dateCreated": "2026-08-28T05:56:49Z"
     }
   ]
 }
