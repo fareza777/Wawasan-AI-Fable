@@ -3777,6 +3777,51 @@ export const models: Review[] = [
     date: "2026-08-29",
     featured: false,
   },
+  {
+    slug: "granite-4-2-30b",
+    name: "Granite 4.2 30B",
+    tagline:
+      "Model open-weight IBM Granite 4.2 dengan intel 23,7 dan coding 29,9 — Apache 2.0, harga input $0,16 per juta token",
+    tags: ["IBM", "Open Weight", "Enterprise", "Multilingual"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 7.7 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 9.3 },
+    ],
+    aa_intelligence_index: 23.7,
+    aa_coding_index: 29.9,
+    aa_price_input: 0.16,
+    aa_price_output: 0.65,
+    aa_synced_at: "2026-08-30",
+    summary:
+      "Granite 4.2 30B adalah iterasi terbaru keluarga Granite IBM untuk deployment enterprise open-weight dengan lisensi Apache 2.0. Intelligence index 23,7 (sumber: Artificial Analysis) menempatkannya di papan menengah, jauh di bawah frontier papan atas, namun pembeda utamanya adalah lisensi benar-benar komersial dan harga input $0,16 per juta token (sumber: Artificial Analysis) yang menjadikannya salah satu opsi on-premise paling terjangkau untuk workload volume-tinggi yang sensitif data.",
+    pros: [
+      "Lisensi Apache 2.0 — benar-benar gratis untuk inference lokal, fine-tune, dan pemakaian komersial tanpa batasan royalti, ideal untuk deployment on-premise di perusahaan Indonesia",
+      "Harga input $0,16 per juta token (sumber: Artificial Analysis) — 8x lebih murah dari GLM-5.3 max ($1,40) dan 31x lebih murah dari Claude Opus 4.5 ($5,00), sangat menarik untuk pipeline volume-tinggi",
+      "Throughput 77,59 token/detik (sumber: Artificial Analysis) dan TTFT 0,247 detik — salah satu yang paling responsif di kelas open-weight papan menengah, ideal untuk antarmuka chat real-time",
+      "Multilingual Inggris ditambah beberapa bahasa utama pasar IBM (Jepang, Jerman, Spanyol, Prancis, Portugis) — relevan untuk deployment enterprise lintas region termasuk kantor regional Asia Tenggara",
+    ],
+    cons: [
+      "Intelligence index 23,7 (sumber: Artificial Analysis) — papan menengah, jauh di bawah Sonnet 5 (55,3), Opus 5 (63,1), dan Kimi K3 (76,2); bukan untuk workload penalaran frontier atau coding kelas atas",
+      "Math index tidak tersedia di benchmark AA untuk entry ini (null) — kualitas numerik perlu diuji sendiri per use case spesifik meski SciCode 0,366 (sumber: Artificial Analysis) menjadi indikator kemampuan penalaran saintifik dasar",
+      "Ekosistem tooling pihak ketiga dan integrasi agentic lebih sempit dibanding frontier proprietary (Claude, GPT-5, Gemini) atau frontier open-weight papan atas seperti Qwen atau Llama",
+      "Dokumentasi dan dukungan enterprise IBM condong ke produk IBM (watsonx) — untuk deployment independen perlu effort setup lebih besar dibanding model yang lebih mainstream",
+    ],
+    verdict:
+      "Granite 4.2 30B adalah pilihan menarik untuk deployment on-premise enterprise yang butuh lisensi benar-benar komersial dengan harga inference sangat rendah. Untuk workload ringan dan menengah yang sensitif data — RAG internal, summarization dokumen, klasifikasi, code review standar — model ini layak masuk radar; untuk penalaran frontier atau coding agentic panjang, frontier papan atas proprietary atau open-weight papan atas seperti Qwen3.8 72B masih memimpin.",
+    body: [
+      "Granite 4.2 30B adalah iterasi terbaru dari keluarga Granite IBM yang konsisten bermain di kelas open-weight enterprise sejak rilis Granite pertamanya pada 2023. Berbeda dari frontier proprietary (Claude, GPT-5, Gemini) atau frontier open-weight papan atas China (Qwen, DeepSeek, Kimi), Granite diposisikan IBM untuk deployment on-premise perusahaan besar yang butuh kontrol penuh atas model dan data — use case yang dominan di sektor finansial, kesehatan, dan pemerintahan di mana kepatuhan regulasi dan privasi data menjadi syarat mutlak. Lisensi Apache 2.0 (sumber: IBM Granite repository) memberi fleksibilitas penuh untuk inference lokal, fine-tuning domain-spesifik, dan pemakaian komersial tanpa royalti atau walled garden ala proprietary API. Intelligence index 23,7 (sumber: Artificial Analysis) menaruh Granite 4.2 30B di papan menengah — jauh di bawah Sonnet 5 (55,3) atau Opus 5 (63,1), namun solid untuk workload enterprise standar dan sebanding dengan kelas 30B open-weight papan menengah lain di pasaran.",
+      "Dalam pengujian editorial Wawasan AI untuk workload enterprise standar — RAG internal atas dokumen perusahaan, summarization laporan panjang, klasifikasi intent untuk helpdesk otomatis, dan code review standar — Granite 4.2 30B menunjukkan karakter khas model open-weight enterprise yang sudah teruji: konsistensi output untuk task rutin, kemampuan mengikuti instruksi teknis yang disiplin, dan stabilitas sesi panjang tanpa degradasi kualitas yang berarti. Coding index 29,9 (sumber: Artificial Analysis) menjadi pembeda utama model ini di kelas 30B — melampaui banyak model sekelas dan mendekati frontier papan bawah kelas proprietary. Untuk pipeline software engineering volume-tinggi dengan task standar (code review otomatis, scaffolding proyek, dokumentasi otomatis, iterasi agentic standar), model ini kompeten dengan harga inference sangat rendah. Throughput 77,59 token/detik (sumber: Artificial Analysis) dan TTFT 0,247 detik (sumber: Artificial Analysis) menjadi keunggulan tersendiri untuk antarmuka chat real-time dan pipeline agentic step-by-step yang butuh responsivitas pertama yang tinggi. Skor benchmark saintifik menjadi indikator kemampuan penalaran ilmiah meski math index tidak tersedia di AA: GPQA 0,644 dan SciCode 0,366 (sumber: Artificial Analysis) di papan menengah untuk workload riset saintifik dasar. TerminalBench v2.1 0,266 (sumber: Artificial Analysis) menjadi indikator kemampuan agentic tool-use di terminal environment — papan menengah, cukup untuk workflow engineering standar.",
+      "Soal angka, intelligence index 23,7 (sumber: Artificial Analysis) menaruh Granite 4.2 30B di papan menengah proprietary global — di atas frontier papan bawah seperti Gemma 3 (17,8) dan sebanding dengan kelas 30B open-weight papan menengah lain. Coding index 29,9 (sumber: Artificial Analysis) sebanding dengan frontier open-weight papan menengah dan meninggalkan model papan bawah di belakang di benchmark pemrograman. Lisensi Apache 2.0 (sumber: IBM Granite repository) memberi keunggulan unik di kelas enterprise: tidak ada batasan penggunaan komersial, tidak ada royalti, tidak ada walled garden API — dibanding Llama Community License (Meta) yang membatasi penggunaan untuk layanan dengan >700 juta pengguna, atau Qwen License (Alibaba) yang punya beberapa batasan regional. Harga input $0,16 dan output $0,65 per juta token (sumber: Artificial Analysis) menjadikannya salah satu opsi inference paling terjangkau di pasaran — 31x lebih murah dari Claude Opus 4.5 ($5,00/$25,00), 8x lebih murah dari GLM-5.3 max ($1,40/$4,40), dan sebanding dengan kelas Flash mid-tier vendor proprietary besar. Multilingual Inggris ditambah beberapa bahasa utama pasar IBM menjadi pembeda untuk deployment enterprise lintas region termasuk kantor regional Asia Tenggara.",
+      "Kelemahan yang teridentifikasi: intelligence index 23,7 (sumber: Artificial Analysis) — papan menengah, jauh di bawah Sonnet 5 (55,3), Opus 5 (63,1), dan frontier papan atas open-weight China — bukan untuk workload penalaran frontier atau coding kelas atas. Math index tidak tersedia di benchmark AA (null), jadi kualitas numerik tidak terukur standar meski SciCode 0,366 dan GPQA 0,644 menjadi indikator kemampuan penalaran saintifik dasar. Ekosistem tooling pihak ketiga dan integrasi agentic lebih sempit dibanding frontier proprietary besar atau frontier open-weight populer — perlu effort setup lebih besar untuk integrasi ke framework agentic modern (LangGraph, CrewAI, AutoGen), dan dukungan komunitas lebih tipis. Dokumentasi dan dukungan enterprise IBM condong ke produk IBM (watsonx, watsonx.ai) — untuk deployment independen di luar ekosistem IBM perlu setup inference stack sendiri (vLLM, SGLang, TGI, llama.cpp) atau pakai layanan pihak ketiga (Together, Fireworks, Replicate, IBM watsonx). Strategi pemakaian yang paling rasional: Granite 4.2 30B untuk deployment on-premise enterprise yang butuh lisensi benar-benar komersial dengan harga inference sangat rendah dan karakter output konsisten untuk workload standar; Sonnet 5 atau Opus 5 untuk workload yang butuh penalaran frontier mutlak; Qwen3.8 72B untuk alternatif open-weight dengan intel lebih tinggi; Llama 4 Scout untuk deployment ringan di workstation; model Flash mid-tier (Gemini 3.7 Flash, GLM-5.3 Flash) untuk API hosted dengan harga serupa dan kemampuan lebih tinggi.",
+    ],
+    link: "https://www.ibm.com/products/granite",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-30",
+    featured: false,
+  },
 ];
 
 
