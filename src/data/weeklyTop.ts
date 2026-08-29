@@ -83,6 +83,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Bisa dipasang ke Claude Code atau agen AI lain — bermanfaat untuk developer yang ingin workflow coding-nya distandardkan.",
     ],
   },
+  "mahlernim/google-timeline-visualizer": {
+    description:
+      "Visualizer Google Timeline (Kotlin) yang mengubah data lokasi Google Maps jadi video perjalanan animasi — 100% lokal di HP, tidak ada upload data ke server.",
+    highlights: [
+      "Mengambil file Timeline.json dari Google Maps / Settings Android, lalu merender peta animasi pergerakan setahun ke belakang jadi video MP4 — kontrol penuh atas rentang tanggal, unit jarak, dan gerakan kamera.",
+      "Dua mode: Android APK native (Kotlin, 2.900+ bintang) untuk yang ingin app berdiri sendiri, atau Progressive Web App via Safari iPhone yang jalan 100% di perangkat tanpa upload Timeline.json ke server mana pun.",
+      "Privasi sebagai fitur utama: tidak ada backend, tidak ada tracking, semua proses parsing dan rendering terjadi lokal — penting untuk data lokasi yang sensitif dipakai keluarga, traveler, atau siapa pun yang ingin rekap tahun perjalanan tanpa khawatir jejak digital.",
+      "Open source (MIT) dengan screenshots, panduan multi-bahasa (Korea, Jepang), dan workflow unduh APK langsung dari repo — relevan untuk kreator konten travel, jurnalis data, atau pengguna yang ingin bikin konten 'year in review' ala Spotify Wrapped versi lokasi.",
+    ],
+  },
+  "modular/modular": {
+    description:
+      "Platform AI terpadu dari Modular (29k+ bintang) yang menggabungkan MAX inference engine dan bahasa Mojo — alternatif terbuka untuk stack CUDA + Python yang scalable dari laptop sampai data center.",
+    highlights: [
+      "Repositori monorepo resmi Modular Platform: MAX Framework (inference engine berkinerja tinggi) + Mojo (bahasa pemrograman systems-level dengan ergonomis Python) dalam satu source of truth yang terbuka.",
+      "MAX inference server expose endpoint OpenAI-compatible, Mojo compiler/KGEN tersedia untuk kontribusi, plus MAX kernels dan pipelines Python yang bisa dijalankan untuk serve model LLM tanpa Python interpreter overhead.",
+      "Pendekatan 'unified AI platform': bukan отдельный фреймворк, melainkan satu stack yang sama dari prototyping (Mojo + MAX pipelines) sampai deployment (MAX serve di hardware apapun) — klaim performa kompetitif dengan CUDA-native stack.",
+      "Open source komponen utama (Mojo stdlib, MAX kernels, MAX serve, MAX pipelines) — relevan untuk engineer ML yang ingin turun level ke hardware-aware optimization tanpa harus keluar dari ekosistem Python-like, dan riset AI systems yang peduli akan portabilitas di luar NVIDIA.",
+    ],
+  },
   "headroomlabs-ai/headroom": {
     description:
       "Kompresor output tool, log, dan chunk RAG sebelum sampai ke LLM — hemat 60-95% token dengan jawaban tetap sama.",
