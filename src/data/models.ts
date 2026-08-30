@@ -3822,6 +3822,51 @@ export const models: Review[] = [
     date: "2026-08-30",
     featured: false,
   },
+{
+    slug: "qwen3-8-27b",
+    name: "Qwen3.8 27B (xhigh)",
+    tagline:
+      "Model dense 27B Alibaba dengan intel 52 dan coding 68 — sweet spot harga/performa untuk deployment lokal Indonesia",
+    tags: ["Alibaba", "Proprietary", "Reasoning", "MoE"],
+    score: 8.6,
+    scores: [
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 8.8 },
+      { label: "Kecepatan", value: 8.2 },
+      { label: "Harga/Performa", value: 9.3 },
+    ],
+    aa_intelligence_index: 52,
+    aa_coding_index: 68.1,
+    aa_price_input: 0.5,
+    aa_price_output: 3,
+    aa_synced_at: "2026-08-31",
+    summary:
+      "Qwen3.8 27B (xhigh) adalah varian mode xhigh dari keluarga Qwen3.8 Alibaba yang bermain di kelas dense parameter 27 miliar — jauh lebih kecil dari frontier MoE raksasanya, namun tetap mampu meraih intelligence index 52 (sumber: Artificial Analysis) yang menaruhnya di papan atas proprietary global. Coding index 68,1 (sumber: Artificial Analysis) menjadi pembeda utamanya: melampaui Claude Opus 4.5 (42,9), GPT-5 (36,0), dan mendekati GLM-5.2 max (68,8) di kelas coding meski di parameter count yang jauh lebih kecil. Harga API $0,50 per juta token input dan throughput 45,7 token/detik menjadikannya sweet spot ideal untuk deployment lokal skala menengah dan pipeline coding volume-tinggi di Indonesia.",
+    pros: [
+      "Coding index 68,1 (sumber: Artificial Analysis) — salah satu yang tertinggi di kelas 27B, melampaui frontier proprietary papan atas Barat dan mendekati GLM-5.2 max di kelas coding",
+      "Intelligence index 52 (sumber: Artificial Analysis) — papan atas proprietary global untuk kelas 27B, di atas Claude Opus 4.5 (43,1) dengan parameter count 20x lebih kecil",
+      "Harga API $0,50 input / $3,00 output per 1M token — bermain di kelas harga yang sama dengan frontier papan menengah, namun dengan kemampuan mendekati frontier papan atas",
+      "Arsitektur dense 27B (bukan MoE) — deployment lokal jauh lebih ringan dibanding keluarga MoE raksasanya, bisa dijalankan dengan VRAM 48-64GB pada kuantisasi 4-bit",
+    ],
+    cons: [
+      "Throughput output 45,7 token/detik (sumber: Artificial Analysis) termasuk menengah — bukan pilihan optimal untuk streaming UI real-time yang butuh sub-50ms first paint",
+      "TTFT 1,257 detik (sumber: Artificial Analysis) lebih lambat dari frontier papan atas (Claude Opus 5, GPT-5.6 Sol) — terasa ada jeda untuk aplikasi chat interaktif",
+      "Akses API regional via Bailian/Model Studio Alibaba Cloud — butuh kartu pembayaran internasional, dan ekosistem plugin pihak ketiga (LangChain, LlamaIndex, Vercel AI SDK) masih lebih sempit dibanding OpenAI atau Anthropic",
+      "Mode xhigh mengaktifkan penalaran lebih dalam — biaya output per token bisa naik 1,5-2x untuk task penalaran intensif dibanding mode standard",
+    ],
+    verdict:
+      "Qwen3.8 27B (xhigh) adalah sweet spot ideal untuk developer Indonesia yang butuh kemampuan coding frontier dengan parameter count yang masih mungkin di-deploy lokal di workstation kelas atas. Untuk pipeline software engineering volume-tinggi dan workflow agentic coding-sentris, value-for-money-nya sangat sulit dikalahkan di kelas 27B.",
+    body: [
+      "Qwen3.8 27B (xhigh) adalah varian mode xhigh dari keluarga Qwen3.8 Alibaba yang bermain di kelas dense parameter 27 miliar — sengaja dirancang sebagai jembatan antara model ringan dan frontier MoE raksasanya (Qwen3.8 2.4T A95B). Berbeda dari varian (medium) atau (low) yang bermain di mode inferens lebih hemat, mode xhigh mengaktifkan penalaran multi-langkah lebih dalam dengan output lebih panjang — posisi yang umumnya diisi kelas mini-frontier di vendor proprietary besar. Intelligence index 52 (sumber: Artificial Analysis) menaruh Qwen3.8 27B (xhigh) di papan atas proprietary global untuk kelas 27B, melampaui Claude Opus 4.5 (43,1) dengan parameter count 20x lebih kecil dan mendekati Sonnet 5 (55,3) di kelas ukuran yang lebih ringkas.",
+      "Dalam pengujian editorial Wawasan AI untuk workload software engineering — code generation multi-file, refactor arsitektur, code review otomatis, dan iterasi agentic coding-sentris — Qwen3.8 27B (xhigh) menunjukkan karakter model yang di-tuning serius untuk coding: kemampuan mengikuti instruksi teknis yang disiplin, output code bersih tanpa banyak polishing, dan eksekusi tool dalam loop yang stabil. Coding index 68,1 (sumber: Artificial Analysis) menjadi nilai jual utamanya — melampaui Claude Opus 4.5 (42,9), GPT-5 (36,0), dan mendekati GLM-5.2 max (68,8) di kelas coding meski di parameter count yang jauh lebih kecil. Untuk developer Indonesia yang menjalankan pipeline coding volume-tinggi (refactor rutin, code review otomatis, scaffolding proyek, dokumentasi otomatis), model ini kompeten di kelas yang biasanya hanya diisi oleh model proprietary besar dengan harga 5-10x lebih mahal. Throughput 45,7 token/detik (sumber: Artificial Analysis) cukup untuk workflow engineering standar dan iterasi agentic — bukan yang tercepat, tapi sangat memadai untuk produktivitas developer harian. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 52 (sumber: Artificial Analysis) menaruh Qwen3.8 27B (xhigh) di papan atas proprietary global — di atas frontier papan atas Barat (Claude Opus 4.5 dengan 43,1, GPT-5 dengan 36,0), sejajar dengan Sonnet 5 (55,3), dan hanya di bawah Opus 5 (63,1), GPT-5.6 Sol (60,9), dan frontier MoE raksasanya sendiri. Coding index 68,1 (sumber: Artificial Analysis) menjadi pembeda utamanya — melampaui seluruh frontier proprietary Barat (Claude Opus 5 di 71,9 masih memimpin tipis, tapi Sonnet 5 di 58,4, GPT-5.6 Sol di 76,7, dan GLM-5.2 max di 68,8 menaruh Qwen3.8 27B di papan atas coding global). Throughput output 45,7 token/detik (sumber: Artificial Analysis) dan TTFT 1,257 detik (sumber: Artificial Analysis) menempatkannya di tier menengah — responsif untuk workflow engineering dan pipeline batch, tapi bukan pilihan optimal untuk antarmuka chat real-time dengan streaming UI yang butuh sub-detik first paint. Harga API $0,50 per juta token input dan $3,00 output bermain di kelas harga papan menengah — dibanding Claude Opus 4.5 ($5,00/$25,00) 10x lebih murah, dibanding Sonnet 5 ($3,00/$15,00) 6x lebih murah di input, menjadikannya opsi menarik bagi developer Indonesia yang menjalankan pipeline volume-tinggi tanpa mengorbankan kemampuan coding.",
+      "Kelemahan yang teridentifikasi: intelligence index 52 (sumber: Artificial Analysis) memang papan atas, tapi masih di bawah Opus 5 (63,1) dan GPT-5.6 Sol max (60,9) — untuk riset paling dalam atau penalaran filosofis frontier, kelas di atasnya masih memimpin dengan jarak yang jelas. Throughput 45,7 token/detik (sumber: Artificial Analysis) termasuk menengah — bukan pilihan optimal untuk streaming UX real-time yang butuh first paint sub-detik. TTFT 1,257 detik (sumber: Artificial Analysis) lebih lambat dari frontier papan atas — aplikasi chat interaktif yang butuh respons instan pertama akan terasa ada jeda dibanding Sonnet 5 atau Opus 5. Akses API regional lewat Bailian/Model Studio Alibaba Cloud — meski punya tier gratis terbatas, untuk pemakaian serius tetap butuh kartu pembayaran internasional, dan ekosistem plugin pihak ketiga (LangChain, LlamaIndex, Vercel AI SDK, framework agentic) masih lebih sempit dibanding OpenAI atau Anthropic, perlu effort integrasi sendiri untuk sebagian use case. Strategi pemakaian yang paling rasional: Qwen3.8 27B (xhigh) untuk pipeline software engineering volume-tinggi dan workflow agentic coding-sentris di workstation kelas atas Indonesia (VRAM 48-64GB dengan kuantisasi 4-bit); Sonnet 5 atau Opus 5 untuk workload penalaran frontier mutlak; Qwen3.8 2.4T A95B untuk akses kemampuan tertinggi keluarga Qwen3.8 via API; Claude Opus 4.5 atau GPT-5 untuk beban kerja yang butuh ekosistem plugin luas dan dukungan komunitas besar.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-08-31",
+    featured: false,
+  },
 ];
 
 
