@@ -2197,6 +2197,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                     "macOS 14+ Apple Silicon, GPL-3.0+, multi-bahasa (lebih dari selusin), terang/gelap independen dari sistem, dan export/import settings untuk migrasi ke Mac baru — relevan untuk pengguna Indonesia yang ingin Mac utility lengkap tanpa bayar lisensi tahunan.",
                   ],
                 },
+                "K-Dense-AI/scientific-agent-skills": {
+                  description:
+                    "Pustaka 163 skill sains siap pakai (MIT) yang mengubah coding agent biasa jadi 'AI Scientist' — genomik, kimia komputasi, proteomik, drug discovery, sampai akses 100+ database ilmiah publik, dipakai 190.000+ peneliti.",
+                  highlights: [
+                    "Dulu bernama Claude Scientific Skills, sekarang mengikuti standar terbuka Agent Skills — jalan di Cursor, Claude Code, Codex, Pi, dan Google Antigravity, plus bisa dimuat sekaligus sebagai satu paket Agent Plugins (`plugin.json` + `skills/`).",
+                    "Cakupannya bukan mainan: bioinformatika & genomik, cheminformatics & drug discovery, proteomik/mass spec, riset klinis dan PK/PD, medical imaging & digital pathology, materials science, fisika-astronomi, geospatial, sampai otomasi laboratorium (Opentrons, Benchling, LatchBio, protocols.io).",
+                    "Satu skill database-lookup memberi akses deterministik dan provenance-rich ke 78 database publik (PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov, USPTO, FRED), ditambah 70+ skill paket Python yang version-aware (RDKit, Scanpy, PyTorch Lightning, pymatgen, Qiskit) — agen tidak menebak API, tapi mengikuti dokumentasi yang sudah divalidasi.",
+                    "Disiplin engineering-nya ketat: setiap skill punya SKILL.md, contoh kode, dan test suite wajib untuk skill yang membawa `scripts/`, plus CI security scan — relevan untuk dosen, mahasiswa S2/S3, dan tim R&D Indonesia yang ingin AI membantu analisis data riset tanpa mengorbankan traceability sitasi.",
+                  ],
+                },
+                "omacom/omarchy": {
+                  description:
+                    "Distro Linux opinionated dari DHH (pencipta Ruby on Rails) yang kini bernaung di Omacom Foundation — sekali install langsung dapat desktop Hyprland siap kerja, diposisikan sebagai 'OS malleable untuk era agen AI'.",
+                  highlights: [
+                    "Basis Arch dengan Hyprland tiling window manager yang sudah dikonfigurasi penuh: tema, font, keybinding, terminal, dan paket developer — melewati ritual setup Linux berhari-hari yang biasanya menghalangi orang pindah dari macOS atau Windows.",
+                    "Repo ini adalah rumah baru Omarchy setelah pindah dari organisasi `basecamp` ke `omacom`, seiring peluncuran Omacom Foundation dengan pendanaan $10 juta — sinyal bahwa proyek ini bukan eksperimen sampingan, melainkan punya struktur dan dana untuk jangka panjang.",
+                    "Positioning barunya eksplisit: 'the malleable OS for the age of agents' — setiap tweak dan konfigurasi dirancang supaya bisa diminta ke agen AI, bukan diutak-atik manual lewat dotfile yang berserakan.",
+                    "Ekosistemnya sudah lengkap: ISO installer resmi, manual Omarchy 3, sistem plugin, halaman security, dan komunitas Discord + meetup — MIT, 35 ribu+ bintang, dan relevan untuk developer Indonesia yang ingin Linux estetis dan produktif tanpa merakit sendiri dari nol.",
+                  ],
+                },
               };
 
   // Helper: lookup dengan fallback ke template-generated highlights
