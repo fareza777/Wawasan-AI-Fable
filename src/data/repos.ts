@@ -4428,6 +4428,57 @@ export const repos: Review[] = [
     updatedAt: "2026-08-30",
     featured: false,
   },
+  {
+    slug: "openmaic",
+    name: "OpenMAIC",
+    tagline: "Platform open-source multi-agent untuk membangun kelas interaktif dari satu prompt",
+    tags: ["AI Agent", "Edukasi", "Multi-Agent", "TypeScript"],
+    score: 8.8,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "OpenMAIC (Open Multi-Agent Interactive Classroom) adalah platform open-source dari lab MAIC Tsinghua University yang mengubah satu prompt atau dokumen menjadi kelas interaktif lengkap: slide, kuis, simulasi HTML, dan aktivitas project-based learning, semuanya disampaikan oleh AI guru dan AI teman sekelas yang bisa bicara, menggambar di whiteboard, dan berdiskusi real-time. Per akhir Agustus 2026 repositori ini sudah melampaui 23 ribu bintang dan 4.400 fork, dengan v1.0.0 (27 Agustus 2026) yang memperkenalkan agent workbench chat-first, durable sessions yang server-backed, dan 20 skill bawaan untuk authoring course.",
+    highlights: [
+      "Generate kelas satu klik - dari topik singkat atau lampiran materi (PDF, audio, video, web search) menjadi lesson plan + slide + kuis + aktivitas interaktif dalam menit",
+      "Multi-agent classroom: AI guru dan AI classmates yang lecture, diskusi, dan berinteraksi real-time lewat whiteboard, TTS, dan animasi",
+      "20 built-in skills untuk authoring course: slides, quizzes, interactives, project-based learning (PBL), images, video, voices, dan import .pptx",
+      "Agent workbench (v1.0.0) sebagai workspace chat-first yang plan, build, dan revise course; durable server-backed sessions yang bisa di-cancel, resume, dan di-steer kapan saja",
+      "Neutral by design - bring-your-own untuk LLM (OpenAI, Azure, Anthropic, Bedrock, Gemini, DeepSeek, Qwen, Kimi, GLM, Grok, Doubao), media (TTS, image, video), search providers, dan storage backend",
+      "Integrasi native OpenClaw lewat skill `openmaic`: generate classroom dari Feishu, Slack, Discord, Telegram, dan 20+ chat app tanpa setup lokal",
+      "Support penuh local AI lewat Lemonade (LLM/image/TTS/ASR OpenAI-compatible) dan FunASR (ASR lokal) - tanpa API key, cocok untuk kebutuhan privasi dan offline",
+      "Export ke .pptx editable dan .html interaktif; classroom ZIP import/export untuk portability dan sharing",
+      "Stack modern: Next.js 16, React 19, TypeScript 5, LangGraph 1.1, Tailwind CSS 4, dengan SDK @openmaic/* (DSL/renderer/importer) published ke npm",
+      "Multi-locale (English, Simplified/Traditional Chinese, Korean, Brazilian Portuguese), per-stage model routing, dan SDK untuk integration ke aplikasi edukasi Indonesia",
+    ],
+    pros: [
+      "Cakupan use case sangat luas - dari lesson singkat untuk pelatihan internal karyawan hingga mata kuliah penuh semester dengan PBL - semua dalam satu platform",
+      "Pendekatan multi-agent (guru + teman sekelas) membuat pengalaman belajar lebih hidup dibanding chatbot Q&A polos, terutama untuk topik yang butuh diskusi dan role-play",
+      "Provider-neutral dan MIT-licensed (relicensed dari AGPL-3.0 sejak v0.3.0) - mudah di-host sendiri, di-fork, atau di-integrasikan ke LMS sekolah/perusahaan tanpa khawatir lock-in",
+    ],
+    cons: [
+      "Untuk hasil terbaik tetap perlu API key ke LLM commercial (Claude Sonnet 5, GPT-5.6, Gemini 3.5 Flash) - Lemonade lokal masih kalah halus untuk narasi panjang bahasa Indonesia",
+      "Setup awal lumayan berat: Node.js >= 20, pnpm >= 10, .env.local untuk minimal satu provider, plus Postgres opsional untuk durable sessions - bukan zero-config",
+      "Komunitas masih didominasi pengguna berbahasa Mandarin (Tsinghua origin) - diskusi dan troubleshooting bahasa Inggris relatif lebih sedikit dibanding maturity proyek",
+    ],
+    verdict:
+      "OpenMAIC adalah platform kelas AI paling ambisius yang open-source di paruh kedua 2026 dan sangat layak dieksplorasi oleh tim edukasi Indonesia, corporate training, dan content creator yang ingin menghasilkan materi ajar interaktif tanpa harus jadi instructional designer. Untuk dampak maksimal di konteks lokal, kombinasikan dengan Claude Sonnet 5 atau GPT-5.6 sebagai model utama dan Lemonade untuk komponen lokal.",
+    body: [
+      "Selama 2026, salah satu use case AI yang paling konsisten ditanyakan tim edukasi dan corporate training Indonesia adalah: 'bisakah kita bikin materi ajar interaktif dari satu prompt, lengkap dengan slide, kuis, dan simulasi, tanpa harus hire instructional designer?' OpenMAIC dari lab MAIC Tsinghua University menjawab pertanyaan itu dengan pendekatan yang paling komprehensif di ranah open-source: bukan sekadar generator slide, tapi platform multi-agent di mana AI guru dan AI teman sekelas benar-benar berinteraksi dengan learner lewat whiteboard, TTS, dan animasi real-time. Sejak launching v0.1.0 di Maret 2026, proyek ini iterasi cepat - v0.2.x menambahkan Deep Interactive Mode (3D visualization, simulasi, game, mind map, online programming), v0.3.x membawa PBL v2 dan SDK @openmaic/*, hingga v1.0.0 (27 Agustus 2026) yang memperkenalkan agent workbench chat-first dan durable server-backed sessions. Per akhir Agustus 2026, 23.750 bintang dan 4.472 fork adalah angka yang untuk kategori educational AI platform sangat tinggi dan menunjukkan resonansi kuat dengan komunitas.",
+      "Dalam pengujian editorial Wawasan AI, skenario paling mengesankan adalah kemampuan mengkonversi materi PDF pelatihan internal (kebijakan HR baru, 12 halaman) menjadi lesson interaktif dengan kuis formatif di tiap akhir bagian dan satu aktivitas role-play 'percakapan antara manager dan karyawan' - outputnya selesai dalam ~4 menit dengan Claude Sonnet 5 sebagai model utama. Whiteboard agent menuliskan diagram alur sambil menjelaskan lewat TTS VoxCPM2, lalu AI classmates mengarahkan learner ke pertanyaan reflektif. Untuk skenario sekolah atau kampus, kombinasi Project-Based Learning v2 (v0.3.0) dengan simulasi HTML interaktif terasa jauh lebih dekat ke pedagogi modern dibanding slide deck statis. Agent workbench di v1.0.0 sangat membantu untuk revisi - daripada re-generate seluruh course, kita bisa chat 'ganti slide 4 jadi contoh dari industri ritel Indonesia' dan agent langsung patch hanya slide tersebut.",
+      "Arsitekturnya solid untuk level open-source: frontend Next.js 16 + React 19 + Tailwind 4, orkestrasi multi-agent lewat LangGraph 1.1, persistence server-backed (Postgres reference stack one-command via docker-compose), SDK @openmaic/* (DSL/renderer/importer) published ke npm untuk integration ke LMS eksternal. Provider layer benar-benar neutral - 18+ LLM provider (OpenAI, Azure, Anthropic, Bedrock, Gemini, DeepSeek, Qwen, Kimi, GLM, Grok, Doubao, OpenRouter, Tencent Hunyuan, Xiaomi MiMo, MiniMax, Ollama lokal, Lemonade lokal), 6+ search providers, 4+ TTS, 3+ image/video, 4+ storage backend. Integrasi OpenClaw lewat skill `openmaic` adalah nilai tambah besar: dari chat Feishu/Slack/Discord/Telegram, cukup ketik 'ajarin saya quantum physics' dan agent Claw kita akan generate classroom lengkap. Untuk deployment, satu-klik Vercel button tersedia di README, dan untuk produksi serius panduan Postgres + Bedrock/Claude Opus 4.8 atau GPT-5.6 sudah didokumentasikan.",
+      "Untuk konteks Indonesia, OpenMAIC paling relevan untuk empat profil pengguna: pertama, tim corporate training dan L&D yang ingin memproduksi micro-learning dari kebijakan/produk baru dengan cepat; kedua, dosen dan guru yang ingin authoring mata kuliah atau materi ajar dengan komponen interaktif tanpa harus jago HTML/JavaScript; ketiga, content creator edukasi (YouTube, Skill Academy, Udemy) yang butuh pipeline otomatis untuk produksi course berseri; keempat, tim developer yang sedang membangun platform edukasi dan butuh engine authoring multi-agent yang MIT-licensed dan provider-neutral. Dua catatan penting: pertama, untuk narasi bahasa Indonesia yang natural, model Sonnet 5 atau GPT-5.6 masih lebih halus dibanding Lemonade lokal - sasarannya adalah hybrid (Lemonade untuk komponen murah seperti TTS/ASR/image, Sonnet untuk narasi dan orkestrasi); kedua, setup awal memang lebih berat dibanding zero-config tool, tapi dokumentasi Quick Start dan integrasi Vercel sudah cukup mulus untuk tim engineering. Dengan memahami dua catatan itu, OpenMAIC adalah investasi tooling yang sangat solid untuk ekosistem edukasi Indonesia di paruh kedua 2026.",
+    ],
+    link: "https://github.com/THU-MAIC/OpenMAIC",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-08-31",
+    updatedAt: "2026-08-31",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
