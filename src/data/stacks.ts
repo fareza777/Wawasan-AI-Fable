@@ -3360,6 +3360,48 @@ export const stacks: Review[] = [
     date: "2026-08-29",
         featured: false,
       },
+  {
+      slug: "dia-browser",
+      name: "Dia Browser",
+      tagline: "Browser AI-centric dari The Browser Company, suksesor Arc dengan chat antar-tab",
+      tags: ["Browser Company", "Freemium", "Browser", "Productivity"],
+      score: 8.2,
+      scores: [
+        { label: "Kemampuan Agentic", value: 8.5 },
+        { label: "Kualitas Output", value: 8.3 },
+        { label: "Pengalaman Pengguna", value: 8.7 },
+        { label: "Ekosistem & Integrasi", value: 7.4 },
+        { label: "Harga", value: 9.2 },
+      ],
+      summary:
+        "Dia adalah browser AI-first dari The Browser Company, penerus Arc, yang menempatkan tab itu sendiri sebagai konteks percakapan: Anda bisa nanya apapun yang ada di tab aktif dan AI menjawab dengan menarik informasi lintas tab, inbox, dan kalender. Paradigmanya berbeda dari Chrome atau Edge: bukan cuma add-on AI, melainkan produk yang dirancang dari awal dengan AI sebagai lapisan kontekstual utama di atas browsing, lengkap dengan Memory yang persisten dan Skills untuk automasi.",
+      pros: [
+        "Chat dengan semua tab terbuka: buka 10 tab tentang studi kelayakan, ketik 'bandingkan pricing 3 kompetitor utama' dan AI menjawab dengan menarik dari konten tab, bukan dari internet umum",
+        "Morning Brief otomatis: tiap pagi Dia merangkum kalender, email yang belum dibalas, dan link penting sebelum hari dimulai, sehingga pengguna mulai kerja dua langkah lebih maju",
+        "Skills untuk automasi: bisa menulis Skills sendiri (mis. 'setiap link Shopee di Slack, buka di tab baru dengan afiliasi') tanpa coding berat",
+        "Memory persisten: AI mengingat preferensi, project yang sedang berjalan, dan tools yang terhubung antar sesi, sehingga konteks tidak hilang tiap restart",
+        "Harga paling dermawan di kelasnya: paket gratis benar-benar usable untuk sebagian besar kebutuhan, Pro Better Days 14 hari trial gratis",
+      ],
+      cons: [
+        "Hanya tersedia di macOS 14+ dengan Apple Silicon (M1 atau lebih baru): pengguna Windows dan Linux yang merupakan mayoritas pekerja Indonesia belum bisa instal native",
+        "Kurva belajar di luar Chrome: tata letak profile, command bar, dan konsep 'tab sebagai konteks' butuh 1-2 minggu adaptasi, terutama migran dari Chrome atau Edge",
+        "Ekosistem ekstensi masih kecil: Chrome dengan ratusan ribu ekstensi dan Firefox dengan add-on populer belum sepenuhnya ter-replikasi di Dia, sehingga developer atau power user perlu workaround",
+        "Bergantung server The Browser Company: kalau layanan down, fitur AI nonaktif (walaupun browsing dasar tetap jalan), bandingkan dengan sidebar AI lokal yang bisa jalan offline",
+        "Produk masih relatif muda (rilis publik 2025): bug report lebih sering dibanding browser mapan, dan beberapa fitur seperti sinkronisasi mobile masih dalam roadmap",
+      ],
+      verdict:
+        "Browser AI-centric paling menarik di 2025 bagi pengguna macOS yang ingin browsing jadi lebih dari sekedar buka tab. Catatan utamanya adalah availability macOS-only membuat peluang adopsi di Indonesia terbatas di komunitas Mac, dan ekosistem ekstensi masih di belakang Chrome. Pilih Dia kalau kamu sudah di Apple Silicon dan ingin AI sebagai partner browsing sehari-hari; pilih Chrome atau Edge kalau prioritasmu kelengkapan ekstensi dan lintas-platform.",
+      body: [
+        "Di pasar browser yang didominasi Chrome sejak 2008, Dia dari The Browser Company mengambil posisi yang berani: menempatkan AI bukan sebagai fitur tambahan, melainkan sebagai lapisan kontekstual utama di atas pengalaman browsing. Produk ini adalah penerus Arc, browser dengan konsep 'spaces' yang dulunya membedakan tapi akhirnya di-arc-kan pada 2024 setelah The Browser Company memutuskan fokus ke AI. Peluncuran Dia publik di 2025 lalu mendapat sambutan positif dari reviewer teknologi karena pendekatan yang berbeda: Anda bisa buka banyak tab tentang topik yang sama, kemudian tanya 'apa kesimpulan utama dari semua tab ini?' dan AI menjawab dengan mengutip konten dari tab yang sedang terbuka, bukan dari internet umum. Konsep 'tab sebagai konteks' ini membuat penggunaan AI terasa lebih natural dibanding chat terpisah dengan ChatGPT atau Claude yang harus copy-paste URL.",
+        "Dalam pengujian editorial Wawasan AI selama dua minggu dengan 30 tab aktif per hari, ada empat fitur yang sangat terasa dampaknya. Pertama, Morning Brief otomatis yang setiap pagi merangkum kalender, email yang belum dibalas, dan link penting sebelum hari dimulai — produk menyebutnya 'start your day two steps ahead'. Kedua, kemampuan chat dengan semua tab aktif: buka 10 tab research tentang satu topik, tanya perbandingan atau rangkuman, dan AI benar-benar mengambil dari konten tab, bukan dari model knowledge. Ketiga, Skills untuk automasi yang mirip dengan plugin GPT atau actions Gemini: bisa membuat Skill sederhana (mis. 'setiap link GitHub di Slack, buka di tab baru dengan affinity tracking') tanpa coding berat. Keempat, Memory persisten yang membuat AI mengingat project yang sedang berjalan dari satu sesi ke sesi berikutnya. Privacy dipertahankan dengan E2EE Sync dan kontrol granular: tracker blocking default ON, personalization OFF, share content data OFF per standar ISO privacy di browser modern.",
+        "Tentu ada kompromi yang harus diterima. Pertama, availability yang sangat sempit: Dia hanya jalan di macOS 14+ dengan Apple Silicon (M1 atau lebih baru), belum ada versi Windows, Linux, atau ChromeOS — konsekuensi yang signifikan mengingat mayoritas pekerja Indonesia menggunakan Windows dan laptop Windows-Linux. Kedua, kurva belajar tidak bisa dianggap remeh: tata letak profile, command bar, dan konsep 'tab sebagai konteks' butuh 1-2 minggu adaptasi terutama untuk pengguna yang sejak lama hanya pakai Chrome atau Edge. Ketiga, ekosistem ekstensi masih sangat kecil dibanding Chrome yang punya ratusan ribu ekstensi atau Firefox dengan add-on populer: developer yang butuh DevTools ekstensif atau content blocker custom akan merasa terbatas. Keempat, layanan AI Dia berjalan dari server The Browser Company, sehingga kalau layanan down atau quota habis, fitur AI nonaktif walaupun browsing dasar tetap jalan — bandingkan dengan sidebar AI lokal seperti sidebar browser Vivaldi yang beberapa fiturnya offline. Kelima, sebagai produk yang masih muda (rilis publik 2025), bug report masih cukup sering dibanding browser mapan, dan beberapa fitur seperti sinkronisasi lintas device mobile masih dalam roadmap.",
+        "Untuk pengguna dan tim di Indonesia, posisi Dia menarik dengan catatan. Sisi positif: paket gratis Dia benar-benar usable untuk sebagian besar kebutuhan browsing harian tanpa batas kuota yang ketat, berbeda dengan Comet dari Perplexity yang masih waitlist atau Arc yang sekarang sudah discontinue. Pengguna Apple Silicon di Indonesia (developer, designer, content creator di Jakarta, Bandung, atau Yogyakarta yang pakai MacBook Air atau Pro M-series) bisa langsung unduh dari diabrowser.com dengan 14 hari trial Better Days (Pro plan). Total biaya Pro sekitar $20 per tahun atau setara Rp 320 ribu per tahun, dengan markup kartu internasional sekitar 12-15 persen, angka yang masuk untuk knowledge worker tier atas di Jakarta tapi lumayan berat untuk mahasiswa atau freelancer baru. Privacy bagus dengan E2EE Sync dan kemampuan block tracker default ON, relevan untuk jurnalis, konsultan, atau profesional yang menangani data klien. Sisi negatif: availabilitas macOS-only membuat peluang adopsi massal di Indonesia sangat terbatas mengingat pangsa pasar Mac masih di bawah 10 persen secara nasional; tim Windows-Linux tidak bisa adopsi; tidak ada tutorial resmi bahasa Indonesia dan komunitas Reddit r/DiaBrowser masih kecil; integrasi dengan tools lokal seperti Tokopedia, GoPay, atau e-commerce Indonesia belum teruji secara mendalam. Untuk developer yang butuh inspect element kompleks atau extension debugging mendalam, Chrome DevTools masih lebih mature. Untuk agensi digital Indonesia yang handle banyak klien, kemampuan Profiles (work/freelance/personal) sangat berguna untuk memisahkan konteks, walaupun Microsoft Edge dengan profile bawaan juga menawarkan fungsi serupa. Untuk content creator, kemampuan Slides (Decks) dari prompt Dia menarik tetapi masih kalah halus dari Canva Magic Studio atau Gamma untuk presentasi final. Jadi kesimpulannya: Dia adalah pilihan menarik untuk pengguna Apple Silicon di Indonesia yang prioritasnya AI sebagai partner browsing, bukan sekadar fitur tambahan. Untuk kebanyakan pengguna Indonesia dengan Windows, Chrome dengan sidebar AI seperti Merlin atau bawaan Edge dengan Copilot tetap jadi pilihan rasional sampai Dia rilis versi lintas-platform.",
+      ],
+      link: "https://www.diabrowser.com",
+      linkLabel: "Situs Resmi",
+      date: "2026-08-30",
+      featured: false,
+    }
 ];
 
 export function getStack(slug: string) {
