@@ -2217,6 +2217,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                     "Ekosistemnya sudah lengkap: ISO installer resmi, manual Omarchy 3, sistem plugin, halaman security, dan komunitas Discord + meetup — MIT, 35 ribu+ bintang, dan relevan untuk developer Indonesia yang ingin Linux estetis dan produktif tanpa merakit sendiri dari nol.",
                   ],
                 },
+                "THU-MAIC/OpenMAIC": {
+                  description:
+                    "Platform open-source dari Tsinghua University MAIC (23k+ bintang, MIT) yang ubah satu topik jadi kelas interaktif multi-agen lengkap dengan slide, kuis, simulasi, dan AI guru yang bicara lewat whiteboard.",
+                  highlights: [
+                    "One-click lesson generation: kasih topik atau lampirkan materi (PDF, audio, video), agen OpenMAIC langsung membangun kelas lengkap dengan AI 'guru' dan AI 'teman sekelas' yang bisa ngomong, gambar di whiteboard, dan berdiskusi real-time.",
+                    "Agent workbench (rilis v1.0.0, 27 Agustus 2026) sebagai ruang kerja chat-first: agent merencanakan kurikulum, membangun setiap halaman, dan merevisi berdasarkan umpan balik pengguna; sesi disimpan server-side sehingga tahan restart dan bisa di-steer kapan pun.",
+                    "20+ skill bawaan mencakup slides, quiz, simulasi HTML interaktif, Project-Based Learning, image, video, voices (VoxCPM2 TTS + voice cloning), sampai import .pptx — di atas Next.js 16, React 19, TypeScript, LangGraph 1.1, dan Tailwind v4.",
+                    "Provider-neutral dan self-hostable: hubungkan model apa pun (OpenAI, Anthropic, Azure, Bedrock, Atlas Cloud, Ollama, GLM, Kimi, Qwen, MiniMax) plus storage backend Postgres untuk kontrol penuh — relevan untuk dosen, pengajar, dan tim edukasi Indonesia yang ingin kelas AI berkualitas tanpa ketergantungan SaaS tertentu.",
+                  ],
+                },
+                "openJiuwen-ai/jiuwenswarm": {
+                  description:
+                    "Agen AI 'on-call butler' open-source dari openJiuwen (Apache-2.0, Huawei) yang bawa kemampuan LLM ke chat apps sehari-hari lewat integrasi Feishu, Xiaoyi, Web, dan channel lain.",
+                  highlights: [
+                    "Konsep 'AI butler yang standby': sekali start, JiuwenClaw menerima instruksi lewat Feishu, Xiaoyi (asisten Huawei phone), web, dan channel lain — bukan chatbot yang harus dibuka manual, melainkan agen yang proaktif mengeksekusi task terjadwal lewat heartbeat scheduler.",
+                    "Mendukung ekosistem model mainstream termasuk Huawei Cloud MaaS, OpenAI, Anthropic, dan Ollama lokal — plus integrasi native ke platform Xiaoyi sehingga user Huawei bisa invoke JiuwenClaw langsung dari asisten bawaan HP.",
+                    "Skill system yang 'autonomous evolution': kalau user tidak puas atau ada error, agen otomatis menyempurnakan skill berdasarkan feedback; bukan prompt statis, melainkan workflow yang belajar dari pemakaian nyata lintas sesi.",
+                    "Self-hostable dengan data sovereignty penuh (Apache-2.0) — relevan untuk tim dan profesional Indonesia yang butuh asisten AI pribadi yang aktif di channel komunikasi sehari-hari, tapi tetap data dan workflow-nya berada di server sendiri.",
+                  ],
+                },
+                "martin-olivier/airgorah": {
+                  description:
+                    "Tool auditing keamanan WiFi open-source berbasis Rust + GTK4 — membungkus aircrack-ng jadi GUI yang ramah pemula untuk capture handshake, identifikasi client, dan crack password AP yang Anda miliki sendiri.",
+                  highlights: [
+                    "GUI modern untuk aircrack-ng: capture nearby WiFi traffic, temukan client yang terhubung ke access point, lakukan deauthentication attack, capture WPA handshake, dan crack password AP — semua dari antarmuka visual, bukan command line yang intimidating.",
+                    "Ditulis Rust dengan GTK4 untuk bagian GUI dan Linux sebagai platform utama (X11 + Wayland); operasi privileged dijalankan lewat polkit agent kecil (`airgorah-agent`) yang hanya meminta autentikasi sekali, bukan setiap kali tombol diklik.",
+                    "Distribusi multi-channel: crates.io untuk install via cargo, AUR package untuk Arch, plus wiki instalasi terperinci — 2.5k+ bintang dan aktif di-maintain sebagai salah satu wrapper aircrack-ng yang paling rapi di Linux.",
+                    "Lisensi MIT dengan disclaimer eksplisit 'untuk jaringan milik sendiri' — relevan untuk sysadmin, network engineer, dan tim security Indonesia yang ingin tooling pentest WiFi yang ergonomis dan reproducible di workstation Linux tanpa setup manual yang panjang.",
+                  ],
+                },
               };
 
   // Helper: lookup dengan fallback ke template-generated highlights
