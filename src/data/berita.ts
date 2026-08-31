@@ -3928,6 +3928,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "regulasi-ai-harus-mencakup-pelindungan-hak-cipta-dan-ruang-inovasi",
+    title: "Regulasi AI yang Kuat Bukan Sekadar Aturan Etika: Hak Cipta dan Ruang Inovasi Harus Seimbang",
+    excerpt:
+      "Dua Perpres AI Indonesia akan keluar tahun ini. Pertanyaannya bukan cuma soal etika dan keamanan, tapi juga seberapa besar regulasi melindungi pencipta asli dan memberi ruang bagi inovasi lokal.",
+    category: "Opini",
+    date: "2026-09-01",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau kita membaca wacana regulasi AI di Indonesia dalam setahun terakhir, hampir semua diskusi berputar di tiga kata yang sama: etika, keamanan, dan perlindungan data. Wamenkomdigi Nezar Patria menyebut Baleg DPR bahkan mengusulkan regulasi AI dalam bentuk undang-undang, lebih tinggi dari Perpres yang selama ini digodok Komdigi. Wacana itu penting, tapi ada satu dimensi yang sering luput dibicarakan di ruang publik: bagaimana aturan main AI berinteraksi dengan hak pencipta asli, dan seberapa besar ruang yang tersisa untuk inovasi lokal. Tanpa menjawab dua hal itu, regulasi secermat apa pun akan pincang -- melindungi warga dari penyalahgunaan, tetapi mematikan ekosistem yang seharusnya dilindungi juga.",
+          "Pertarungan antara pencipta konten, pemilik data, dan pelatih model AI bukan hal baru di dunia. Kasus New York Times versus OpenAI, Getty Images versus Stability AI, hingga gugatan penulis dan kreator di Jepang, Korea, hingga Eropa sudah lebih dulu menunjukkan bahwa pelatihan model generatif tanpa kerangka lisensi yang jelas akan berakhir di pengadilan. Indonesia, dengan kekayaan konten lokal yang melimpah dan talenta kreatif yang bertumbuh, punya peluang untuk tidak mengulangi kekacauan itu -- asal regulasi yang disiapkan benar-benar memikirkan posisi pencipta, bukan hanya posisi pengguna dan vendor.",
+        ],
+      },
+      {
+        heading: "Mengapa perlindungan hak cipta tidak bisa ditunda lagi",
+        paragraphs: [
+          "Selama dua tahun terakhir, banyak karya Indonesia -- tulisan blog, artikel jurnalistik, lukisan, ilustrasi, kode sumber -- sudah dipakai untuk melatih model bahasa besar dan model gambar tanpa persetujuan eksplisit. Ketika model itu dipakai untuk menghasilkan konten komersial yang meniru gaya, struktur, atau bahkan potongan karya asli, pencipta tidak mendapat bagian apa pun. Dalam skala kecil ini mungkin tidak terasa. Dalam skala industri, ini menjadi pengalihan nilai yang sistematis dari pencipta ke operator model.",
+          "Tantangan bagi regulator Indonesia adalah bahwa model bahasa besar yang dipakai di pasar lokal sebagian besar dilatih di luar negeri dengan korpus global. Memaksa mereka membuka data latih adalah pekerjaan yang mustahil -- bukan karena tidak transparan, tapi karena banyak yang memang tidak menyimpan jejak granular per-dokumen. Yang lebih realistis adalah membangun kerangka opt-out yang jelas, sistem lisensi kolektif, dan kewajiban attributed output ketika model menghasilkan karya yang menyerupai input tertentu. Uni Eropa sudah mulai dengan kewajiban ringkasan data latih di AI Act. Jepang dan Taiwan sedang merumuskan mekanisme serupa. Indonesia tidak perlu menjadi yang pertama, tapi juga tidak boleh menjadi yang terakhir.",
+          "Untuk industri kreatif lokal, taruhannya tidak kecil. Pelanggan yang terbiasa memakai model generatif untuk menghasilkan gambar, musik, atau teks akan perlahan berhenti memesan dari desainer, ilustrator, atau penulis freelance. Tanpa aturan yang membatasi substitusi total dan melindungi karya orisinal, generasi baru kreator Indonesia akan kehilangan insentif untuk berkarya. Regulasi yang hanya memikirkan keamanan tanpa memikirkan insentif pencipta akan menyelamatkan konsumen dari penyalahgunaan, sekaligus mematikan satu pilar ekonomi kreatif yang justru sedang didorong pemerintah.",
+        ],
+      },
+      {
+        heading: "Ruang inovasi: bagaimana regulasi bisa mendorong, bukan mematikan",
+        paragraphs: [
+          "Di sisi lain, ada kekhawatiran yang sama legitimnya dari komunitas developer dan startup lokal: regulasi yang terlalu kaku bisa membuat Indonesia tidak kompetitif. Contoh yang sering dikutip adalah EU AI Act yang dituduh terlalu preskriptif -- startup kecil harus mengeluarkan biaya kepatuhan yang tidak proporsional, sementara vendor besar punya tim hukum untuk menyerap biaya itu. Kalau Indonesia meniru pendekatan itu tanpa penyesuaian, hasilnya bisa diprediksi: startup lokal mati sebelum tumbuh, sementara pemain global tetap masuk karena punya sumber daya untuk patuh.",
+          "Kunci dari regulasi yang sehat adalah graded risk approach -- kewajiban yang lebih ketat untuk aplikasi berisiko tinggi (kesehatan, keuangan, keputusan yudisial, rekrutmen), dan kewajiban yang lebih ringan untuk aplikasi berisiko rendah (chatbot layanan pelanggan, generator gambar untuk hobi, alat produktivitas internal). Jepang dan Singapura sudah menjalankan pendekatan ini dengan cukup berhasil. Indonesia, lewat Peta Jalan AI Nasional yang akan keluar tahun ini, punya kesempatan emas untuk mengadopsi pola yang sama -- dan yang lebih penting, menulisnya dengan bahasa yang bisa dipahami oleh engineer lokal, bukan hanya oleh pengacara korporat.",
+          "Ada satu hal yang sering terlewat: ruang inovasi tidak otomatis tercipta karena regulasi longgar. Ia tercipta ketika ada akses terhadap data, komputasi, dan talenta. Regulasi yang melarang ekstraksi data berlebihan tanpa menawarkan alternatif yang legal akan membuat startup lokal stuck: tidak boleh mengambil data dari internet, tidak ada akses ke dataset publik yang terstruktur, dan tidak punya kapasitas untuk membuat dataset sendiri. Maka selain regulasi etika, pemerintah juga perlu berinvestasi pada data publik (public data commons), sandbox regulasi, dan program pendanaan untuk dataset bahasa Indonesia yang bersih dan terdokumentasi. Tanpa itu, regulasi hanya menjadi pagar tinggi yang dijaga oleh mereka yang punya modal.",
+        ],
+      },
+      {
+        heading: "Tiga hal yang harus ada di regulasi final",
+        paragraphs: [
+          "Pertama, mekanisme lisensi kolektif yang dikelola oleh organisasi pencipta lokal. Ini bukan hal baru -- dunia musik dan jurnalisme sudah menjalankannya. Untuk AI, mekanisme serupa bisa dipakai untuk melatih model dengan korpus yang sah, sambil memastikan pencipta mendapat kompensasi yang terukur. Singapura sudah memulai diskusi serupa lewat IPOS. Indonesia punya peluang untuk tidak sekadar meniru, tapi merancang mekanisme yang sesuai dengan struktur industri kreatifnya.",
+          "Kedua, sandbox untuk aplikasi berisiko tinggi. Sebelum sebuah model dipakai untuk diagnosis medis, penilaian kredit, atau seleksi ASN, regulator perlu memiliki ruang uji yang tidak mematikan inovasi tapi cukup ketat untuk mencegah dampak buruk. Inggris menjalankan AI Growth Zones dengan pola sandbox ini. Indonesia bisa memulai dari skala yang lebih kecil -- misalnya sandbox untuk AI di telemedicine atau di layanan pensiun -- dan belajar dari sana sebelum memperluas.",
+          "Ketiga, kewajiban transparansi yang realistis. Vendor model tidak harus membuka seluruh data latih, tapi setidaknya harus mengungkapkan ringkasan kategori data, proporsi data sintetis versus data asli, dan mekanisme evaluasi bias. Kewajiban ini harus proporsional: startup yang melatih model kecil untuk niche pasar tidak boleh diperlakukan sama dengan vendor hyperscale. Kalau tidak, kita akan mendapati regulasi yang secara teori melindungi publik, tapi dalam praktiknya hanya bisa dipatuhi oleh segelintir pemain besar.",
+        ],
+      },
+      {
+        heading: "Catatan penutup: regulasi yang baik adalah yang dibaca orang",
+        paragraphs: [
+          "Pada akhirnya, regulasi AI Indonesia akan diukur bukan dari berapa lama dokumennya, berapa banyak pasal yang ada, atau seberapa sering dikutip dalam rapat kabinet. Ukuran yang lebih jujur adalah: apakah desainer lepas di Yogya tahu apa yang boleh dan tidak boleh dilakukan ketika klien meminta gambar dari model AI; apakah developer startup di Bandung tahu bahwa melatih model dari data scraping tanpa izin adalah pelanggaran; apakah rumah sakit di Manado yang ingin memakai AI untuk triage pasien tahu jalur hukumnya.",
+          "Dalam pengujian editorial Wawasan AI terhadap teks-teks regulasi teknologi sebelumnya -- mulai dari PP 71/2019 tentang Penyelenggaraan Sistem Elektronik hingga UU PDP -- yang sering menjadi masalah bukanlah substansinya, melainkan bahwa ia tidak pernah diterjemahkan ke dalam bahasa yang bisa dipakai oleh mereka yang menjadi subjek aturan. Untuk AI, kegagalan itu akan berlipat ganda karena teknologinya sendiri sudah lebih rumit dari e-commerce atau pun perlindungan data biasa. Maka selain regulasi yang kuat, yang dibutuhkan adalah tenaga penyuluh, panduan praktis gratis, dan hotline yang bisa dihubungi UMKM serta instansi kecil ketika mereka ragu.",
+          "Dua Perpres AI yang ditargetkan keluar tahun ini adalah langkah awal yang tidak kecil. Tapi jangan berhenti di situ. Hak cipta dan ruang inovasi adalah dua hal yang harus ditulis di halaman yang sama, bukan di dokumen terpisah yang berjalan sendiri-sendiri. Indonesia punya kesempatan untuk menjadi salah satu negara berkembang pertama yang menulis regulasi AI dengan keseimbangan itu. Peluang ini tidak datang dua kali -- sama seperti peringatan yang sering kita dengar dari pengamat teknologi lokal: kecepatan tanpa arah hanya menghasilkan kebisingan.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
