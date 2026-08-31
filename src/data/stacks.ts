@@ -3401,7 +3401,49 @@ export const stacks: Review[] = [
       linkLabel: "Situs Resmi",
       date: "2026-08-30",
       featured: false,
-    }
+    },
+    {
+      slug: "bardeen-ai",
+      name: "Bardeen AI",
+      tagline: "Automation browser tanpa code, scrape + integrasi dari webpage",
+      tags: ["Bardeen", "Freemium", "Workflow Automation", "Scraping"],
+      score: 8.2,
+      scores: [
+        { label: "Kemampuan Agentic", value: 8.4 },
+        { label: "Kualitas Output", value: 8.1 },
+        { label: "Pengalaman Pengguna", value: 8.5 },
+        { label: "Ekosistem & Integrasi", value: 8.6 },
+        { label: "Harga", value: 7.4 },
+      ],
+      summary:
+        "Bardeen adalah automation platform yang hidup di dalam Chrome: daripada menarik kabel API antar SaaS seperti Zapier, ia membuka halaman web di background, klik tombol, scrape field, dan membawa data ke spreadsheet, CRM, atau Notion. Paradigmanya paling cocok untuk sales dan ops yang berkelahi dengan data yang terjebak di dashboard tanpa API publik, dan paket gratisnya cukup untuk eksplorasi serius sebelum memutuskan apakah layak naik ke Pro.",
+      pros: [
+        "Scraper visual tanpa kode: arahkan kursor ke field, Bardeen men-generate selector CSS yang stabil, dan data bisa di-loop ke 100+ halaman tanpa menulis XPath",
+        "Ekstensi Chrome-first: jalan di tab yang sama dengan workflow harian, tidak perlu meninggalkan Notion atau LinkedIn Sales Navigator untuk menjalankan automation",
+        "Integrasi native ke 100+ SaaS populer: Google Sheets, Notion, HubSpot, Airtable, Slack, ClickUp, dan CRM Indonesia seperti DealPOS atau accurate.id lewat webhook",
+        "AI-powered Magic Box: ketik 'ambil email semua attendees webinar berikutnya di Google Calendar ke Notion' dan Bardeen men-generate automation multi-step secara otomatis",
+        "Paket gratis 100 credits/bulan: cukup untuk satu atau dua automation rutin mingguan tanpa kartu kredit, berguna untuk freelancer dan UMKM yang baru memulai",
+      ],
+      cons: [
+        "Browser-bound: automation hanya jalan saat Chrome aktif, kurang cocok untuk backend yang harus trigger 24/7 dari server seperti n8n atau Zapier server-side",
+        "Credits-based pricing: paket Pro $139/bulan (sekitar Rp 2,2 juta) terasa mahal untuk tim kecil Indonesia, apalagi kalau automation sering looping ke banyak halaman",
+        "Bergantung pada struktur DOM website target: kalau LinkedIn atau Tokopedia ganti class CSS, scraper bisa break dan perlu di-reconfigure manual",
+        "Onboarding Magic Box masih kurang jelas: pengguna baru sering bingung bedanya Magic Box dengan template library, dan template community-nya lebih kecil dari Zapier",
+        "Tidak ada self-host resmi: berbeda dengan n8n atau n8n cloud, Bardeen murni SaaS, sehingga data lewat server mereka dan compliance ISO 27001 mereka yang jadi acuan",
+      ],
+      verdict:
+        "Pilihan tepat untuk sales ops, growth, dan admin Indonesia yang sering copy-paste data dari satu web ke spreadsheet atau CRM. Catatan utamanya adalah pricing credits yang lumayan di konversi rupiah dan ketergantungan pada struktur DOM website target; pilih Bardeen kalau prioritasmu automation yang manusiawi dari browser, pilih n8n kalau kamu perlu pipeline server-side 24/7.",
+      body: [
+        "Di pasar automation no-code yang didominasi Zapier dengan 6000+ app dan Make dengan graph builder-nya, Bardeen mengambil pendekatan berbeda: daripada jadi middleware yang menarik kabel API antar SaaS, ia menjadi extension Chrome yang membuka tab di background, klik tombol, scrape field, dan menulis hasilnya ke Google Sheets, Notion, atau CRM. Paradigmanya terdengar sederhana, tapi mengisi gap yang tidak pernah tertutupi Zapier atau Make: data yang terjebak di dashboard tanpa API publik, atau aplikasi internal yang hanya punya antarmuka web tanpa webhook. Untuk sales ops yang harus scrape prospek dari LinkedIn Sales Navigator ke HubSpot, atau admin ecommerce yang harus mengambil SKU dari marketplace competitor setiap pagi, Bardeen mengubah pekerjaan 30 menit menjadi 30 detik plus setup awal 15 menit.",
+        "Fitur yang membedakan Bardeen dari kompetitor adalah Scraper visual dan Magic Box. Scraper visual bekerja seperti point-and-click: arahkan kursor ke field nama di LinkedIn profile, klik, dan Bardeen men-generate CSS selector yang stabil, lalu meng-extract field itu ke baris spreadsheet. Untuk batch, masukkan URL list 100 profile, dan Bardeen me-loop pagination, klik, scrape, dan menulis ke Google Sheets dalam waktu sekitar 5 menit. Magic Box adalah AI prompt-to-automation: ketik 'ambil email semua attendees Google Calendar event besok, kirim ke Slack channel #sales-ops', dan Bardeen men-generate automation multi-step lengkap dengan trigger, action, dan integrasi. Magic Box belum se-polished Zapier Natural Language Actions, tapi cukup impresif untuk mempercepat prototyping dari jam menjadi menit.",
+        "Untuk pengguna Indonesia, ada tiga hal yang membuat Bardeen menarik. Pertama, paket gratis 100 credits per bulan: cukup untuk 100 aksi scrape atau 10 automation sederhana, berguna untuk freelancer dan UMKM yang baru mulai otomatisasi tanpa keluar uang. Kedua, paket Pro $139 per bulan atau sekitar Rp 2,2 juta per bulan setelah konversi plus PPN dan charge kartu internasional, lumayan terasa untuk startup kecil, tapi masuk untuk tim sales 5-10 orang yang menggantikan pekerjaan admin 1 FTE. Ketiga, integrasi ke 100+ SaaS populer cukup luas, dan untuk SaaS Indonesia yang tidak punya connector resmi, webhook generik dan HTTP request bisa menjembatani ke DealPOS, accurate.id, atau CRM lokal lain.",
+        "Kesimpulannya, Bardeen adalah pilihan rasional kalau kamu sering copy-paste data dari satu website ke spreadsheet atau CRM, atau kalau tim sales-mu butuh enrichment prospek dari LinkedIn tanpa API resmi. Paket gratisnya cukup untuk eksplorasi, Pro cukup untuk tim sales 5-10 orang, dan enterprise tier cocok untuk korporasi yang butuh SOC 2 compliance dan dedicated success manager. Kalau kebutuhanmu adalah pipeline server-side yang trigger dari database event atau jalan 24/7 dari cron, Bardeen jelas bukan pilihan — n8n self-host atau Make lebih cocok. Kalau kamu tim yang sudah investasi berat di Zapier dengan 50 zap aktif, migrasi ke Bardeen baru masuk akal kalau scraper visual adalah use case yang dominan. Dan catatan akhir: selalu verifikasi ToS website target sebelum scrape dalam volume tinggi — LinkedIn dan Tokopedia punya rate limit ketat, dan scraper yang terlalu agresif bisa kena blokir IP atau akun.",
+      ],
+      link: "https://www.bardeen.ai",
+      linkLabel: "Situs Resmi",
+      date: "2026-08-31",
+      featured: false,
+    },
 ];
 
 export function getStack(slug: string) {
