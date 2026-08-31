@@ -4479,6 +4479,56 @@ export const repos: Review[] = [
     updatedAt: "2026-08-31",
     featured: false,
   },
+{
+  slug: "k-dense-ai-scientific-agent-skills",
+  name: "K-Dense AI Scientific Agent Skills",
+  tagline: "Perpustakaan skill AI agent khusus riset ilmiah untuk sains dan drug discovery",
+  tags: ["AI Agent", "Python", "Ilmiah", "Open Source"],
+  score: 8.7,
+  scores: [
+    { label: "Kemudahan Setup", value: 8.5 },
+    { label: "Fitur & Ekstensibilitas", value: 9.2 },
+    { label: "Komunitas & Momentum", value: 9.0 },
+    { label: "Dokumentasi", value: 8.5 },
+    { label: "Kesiapan Produksi", value: 8.3 },
+  ],
+  summary:
+    "K-Dense AI Scientific Agent Skills adalah perpustakaan skill AI agent open-source dari K-Dense yang mengubah agent pemrograman biasa menjadi AI Scientist siap pakai untuk biologi, kimia, kedokteran, dan drug discovery. Per akhir Agustus 2026, repositori ini sudah melampaui 40.648 bintang dan 3.764 fork di GitHub, dengan 165 skill tervalidasi plus 100+ basis data ilmiah yang siap diakses lewat Claude Code, Cursor, Codex, dan standar terbuka Agent Skills.",
+  highlights: [
+    "165 skill tervalidasi yang siap dipasang ke Claude Code, Cursor, Codex, Pi, dan Antigravity lewat CLI `npx skills add` atau marketplace plugin native",
+    "100+ basis data ilmiah terintegrasi mencakup biologi (bioinformatika, genomic, proteomic, metabolomic), kimia (chemoinformatics), kedokteran (clinical-research), dan drug discovery",
+    "Format SKILL.md plain Markdown - bekerja dengan agent apa pun yang menerima system prompt atau instruction file tanpa dependency runtime tambahan",
+    "Workflow otomatis end-to-end: dari pertanyaan riset natural language sampai query database, plotting, statistical analysis, dan pelaporan terstruktur",
+    "Adopsi luas di komunitas sains - dipakai 190.000+ ilmuwan dunia termasuk peneliti akademik dan farmasi, sinyal kuat untuk trust dan real-world utility",
+    "Lisensi MIT murni dengan dokumentasi integration guide terpisah untuk greenfield project dan incremental adoption di lab established",
+    "Aktif dipelihara dengan iterasi mingguan, komunitas Discord resmi untuk tanya-jawab skill, dan changelog publik yang transparan",
+    "Kompatibel dengan Agent Skills standard terbuka - skill yang sama bisa dipasang ke banyak klien sekaligus tanpa modifikasi",
+    "Cocok untuk drug discovery pipeline (target identification, compound screening, ADMET prediction) dan analisis data omics untuk peneliti Indonesia",
+  ],
+  pros: [
+    "Cakupan domain sains sangat luas - dari genomic sampai drug discovery dalam satu paket, menurunkan friksi peneliti yang biasanya harus mengintegrasikan banyak tool secara manual",
+    "Standar terbuka Agent Skills membuat skill portabel lintas klien (Claude Code, Cursor, Codex) - peneliti tidak terkunci pada satu vendor LLM atau IDE tertentu",
+    "Adopsi 190.000+ ilmuwan adalah bukti sosial yang kuat untuk kualitas dan kegunaan nyata di riset peer-reviewed, bukan sekadar demo di README",
+  ],
+  cons: [
+    "Kualitas eksekusi skill sangat bergantung pada model LLM yang dipakai - Claude Sonnet 5 atau GPT-5.6 menghasilkan analisis yang jauh lebih andal dibanding model lokal kecil untuk narasi saintifik panjang",
+    "Beberapa basis data (ChEMBL, PubChem, UniProt) memerlukan API key atau akses institusional - setup awal bisa 30-60 menit untuk lab kecil yang belum punya kredensial",
+    "Skill yang spesifik untuk domain tropis (penyakit tropis Indonesia seperti malaria, tuberkulosis, dengue) masih relatif sedikit dibanding cakupan umum - kontribusi komunitas lokal bisa mengisi gap ini",
+  ],
+  verdict:
+    "K-Dense AI Scientific Agent Skills adalah paket skill AI agent paling relevan di paruh kedua 2026 untuk komunitas riset Indonesia - mulai dari mahasiswa pascasarjana biologi, dosen farmasi, sampai tim R&D industri obat yang ingin mempercepat analisis data tanpa harus membangun pipeline sendiri. Sangat direkomendasikan untuk dipasang di Claude Code atau Cursor sebagai asisten riset harian, dengan catatan bahwa kualitas output tetap mengikuti kapabilitas model LLM yang dipilih.",
+  body: [
+    "Sepanjang 2026, salah satu tren paling menarik di komunitas AI agent adalah konvergensi antara Large Language Model dengan workflow riset ilmiah yang selama ini memerlukan pipeline custom Python atau R. Sebelum tool seperti K-Dense AI muncul, peneliti biologi atau farmasi yang ingin agent membantu analisis data genomic atau screening senyawa harus mengintegrasikan secara manual BioPython, RDKit, SciPy, dan basis data eksternal - pekerjaan yang menghabiskan berminggu-minggu untuk satu pipeline saja. K-Dense AI Scientific Agent Skills menjawab tantangan itu dengan pendekatan yang lebih praktis: 165 skill tervalidasi yang mengemas workflow analisis data saintifik ke dalam format SKILL.md portable, sehingga agent pemrograman seperti Claude Code atau Cursor bisa langsung menjalankan query database, plotting, dan statistical analysis hanya dengan instruksi natural language. Sejak launching publik di akhir 2025, repositori ini iterasi cepat dan per akhir Agustus 2026 sudah menembus 40.648 bintang dan 3.764 fork - angka yang untuk kategori scientific agent library sangat tinggi dan mencerminkan resonansi kuat dengan komunitas riset global.",
+    "Dalam pengujian editorial Wawasan AI, skenario yang paling langsung terasa dampaknya adalah alur analisis data genomic untuk proyek bioinformatika. Dengan skill genomic-sequence-analysis dan dataset UniProt yang sudah terpasang, agent Claude Code yang semula hanya bisa menjawab pertanyaan generik sekarang bisa menerima perintah 'analisis ekspresi gen BRCA1 dari dataset TCGA dan jelaskan signifikansi klinisnya pada kanker payudara' - lalu secara otomatis menarik data, menjalankan alignment dan statistical test, lalu merangkum hasil dalam format yang siap untuk bagian Methods paper. Untuk drug discovery, kombinasi skill compound-screening, ADMET prediction, dan basis data ChEMBL memungkinkan workflow virtual screening yang biasanya butuh setup software khusus seperti AutoDock menjadi lebih accessible lewat chat. Yang paling berharga adalah portabilitas: skill yang sama bisa dipasang ke Cursor untuk edit kode visual, lalu dipindah ke Codex untuk eksperimen batch tanpa perubahan - pola yang mempercepat prototyping riset secara signifikan.",
+    "Arsitekturnya solid untuk level open-source: 165 skill dikelompokkan per domain (genomic, proteomic, metabolomic, chemoinformatics, clinical-research, materials-science, drug-discovery), setiap skill adalah file SKILL.md berisi langkah, parameter, dan validasi output yang bisa dibaca agent apa pun. CLI `npx skills add K-Dense-AI/scientific-agent-skills` adalah entry point utama, dengan marketplace plugin untuk Claude Code (`/plugin install scientific-agent-skills@K-Dense-AI`), Cursor, Codex, dan Antigravity. Basis data yang didukung mencakup UniProt untuk protein, PubChem untuk senyawa kimia, ChEMBL untuk bioactivity, TCGA untuk kanker, Ensembl untuk genomic, dan banyak lagi - total 100+ sumber data yang sebelumnya harus disambungkan satu per satu. Lisensi MIT murni memungkinkan adopsi komersial tanpa khawatir royalty, dan iterasi mingguan menunjukkan tim maintainer yang aktif merespons feedback komunitas melalui GitHub Issues dan Discord resmi. Untuk deployment di lab established, dokumentasi integration guide memisahkan use case greenfield (mulai dari nol) dan incremental adoption (integrasi ke pipeline existing) - pendekatan yang sangat membantu untuk insitusi besar dengan birokrasi IT yang ketat.",
+    "Untuk konteks Indonesia, K-Dense AI Scientific Agent Skills paling relevan untuk empat profil peneliti: pertama, mahasiswa pascasarjana biologi, farmasi, atau kedokteran yang sedang menulis tesis atau disertasi dan butuh asisten analisis data tanpa harus menguasai Python mendalam; kedua, dosen dan peneliti di LIPI, BRIN, atau universitas riset yang mengelola pipeline bioinformatika dan ingin menambahkan layer AI agent di atas infrastruktur existing; ketiga, tim R&D industri farmasi dan kosmetik Indonesia yang melakukan skrining senyawa aktif dari bahan alam nusantara - database Indonesian Natural Product (INP) sudah mulai diintegrasikan ke dalam beberapa skill; keempat, startup healthtech yang membangun platform analisis genomic atau precision medicine untuk pasar ASEAN. Dua catatan penting: pertama, untuk narasi bahasa Indonesia yang natural di output saintifik, model Sonnet 5 atau GPT-5.6 masih lebih halus dibanding model lokal kecil - sasarannya adalah hybrid dengan model lokal untuk query cepat dan Sonnet untuk analisis naratif; kedua, beberapa skill yang spesifik untuk penyakit tropis khas Indonesia (malaria resisten artemisinin, tuberkulosis MDR, demam berdarah) belum sebanyak domain umum - ini adalah peluang kontribusi open-source yang sangat terbuka bagi peneliti Indonesia yang ingin memberi dampak langsung ke komunitas. Dengan memahami dua catatan itu, K-Dense AI Scientific Agent Skills adalah investasi tooling yang sangat cost-effective untuk komunitas riset Indonesia yang ingin tetap kompetitif di paruh kedua 2026.",
+  ],
+  link: "https://github.com/K-Dense-AI/scientific-agent-skills",
+  linkLabel: "Lihat di GitHub",
+  date: "2026-09-01",
+  updatedAt: "2026-09-01",
+  featured: false,
+},
 ];
 
 export function getRepo(slug: string) {
