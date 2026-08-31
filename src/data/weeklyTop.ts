@@ -2238,16 +2238,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                   ],
                 },
                 "martin-olivier/airgorah": {
-                  description:
-                    "Tool auditing keamanan WiFi open-source berbasis Rust + GTK4 — membungkus aircrack-ng jadi GUI yang ramah pemula untuk capture handshake, identifikasi client, dan crack password AP yang Anda miliki sendiri.",
-                  highlights: [
-                    "GUI modern untuk aircrack-ng: capture nearby WiFi traffic, temukan client yang terhubung ke access point, lakukan deauthentication attack, capture WPA handshake, dan crack password AP — semua dari antarmuka visual, bukan command line yang intimidating.",
-                    "Ditulis Rust dengan GTK4 untuk bagian GUI dan Linux sebagai platform utama (X11 + Wayland); operasi privileged dijalankan lewat polkit agent kecil (`airgorah-agent`) yang hanya meminta autentikasi sekali, bukan setiap kali tombol diklik.",
-                    "Distribusi multi-channel: crates.io untuk install via cargo, AUR package untuk Arch, plus wiki instalasi terperinci — 2.5k+ bintang dan aktif di-maintain sebagai salah satu wrapper aircrack-ng yang paling rapi di Linux.",
-                    "Lisensi MIT dengan disclaimer eksplisit 'untuk jaringan milik sendiri' — relevan untuk sysadmin, network engineer, dan tim security Indonesia yang ingin tooling pentest WiFi yang ergonomis dan reproducible di workstation Linux tanpa setup manual yang panjang.",
-                  ],
-                },
-              };
+                                  description:
+                                    "Tool auditing keamanan WiFi open-source berbasis Rust + GTK4 — membungkus aircrack-ng jadi GUI yang ramah pemula untuk capture handshake, identifikasi client, dan crack password AP yang Anda miliki sendiri.",
+                                  highlights: [
+                                    "GUI modern untuk aircrack-ng: capture nearby WiFi traffic, temukan client yang terhubung ke access point, lakukan deauthentication attack, capture WPA handshake, dan crack password AP — semua dari antarmuka visual, bukan command line yang intimidating.",
+                                    "Ditulis Rust dengan GTK4 untuk bagian GUI dan Linux sebagai platform utama (X11 + Wayland); operasi privileged dijalankan lewat polkit agent kecil (`airgorah-agent`) yang hanya meminta autentikasi sekali, bukan setiap kali tombol diklik.",
+                                    "Distribusi multi-channel: crates.io untuk install via cargo, AUR package untuk Arch, plus wiki instalasi terperinci — 2.5k+ bintang dan aktif di-maintain sebagai salah satu wrapper aircrack-ng yang paling rapi di Linux.",
+                                    "Lisensi MIT dengan disclaimer eksplisit 'untuk jaringan milik sendiri' — relevan untuk sysadmin, network engineer, dan tim security Indonesia yang ingin tooling pentest WiFi yang ergonomis dan reproducible di workstation Linux tanpa setup manual yang panjang.",
+                                  ],
+                                },
+                                "iv-org/invidious": {
+                                  description:
+                                    "Front-end open-source alternatif untuk YouTube (AGPLv3) yang ringan, tanpa iklan, tanpa tracking, dan tanpa akun Google — aktif dipelihara 5+ tahun dengan 23k+ bintang di GitHub.",
+                                  highlights: [
+                                    "Front-end privat untuk YouTube: nonton, cari, dan subscribe channel tanpa akun Google, tanpa iklan, tanpa tracking pixel — alternatif resmi untuk user yang muak dengan ekosistem YouTube tracking.",
+                                    "Tersedia sebagai instances publik yang bisa langsung dipakai lewat browser, atau self-host di server sendiri (Docker image, distroless, multi-arch) — pakai API publik Invidious, bukan scraping YouTube yang fragile.",
+                                    "Bukan sekadar wrapper: punya fitur tambahan yang YouTube tidak punya — subscriptions via RSS, audio-only mode, sponsorblock integrasi, download video/audio dalam banyak format, playlist handling yang lebih fleksibel.",
+                                    "Open source (AGPLv3), ditulis Crystal dengan fokus performa — 23k+ bintang dan komunitas aktif (hosted.weblate.org untuk terjemahan multi-bahasa) menjadikannya standar de-facto untuk YouTube-privat di kalangan power user.",
+                                  ],
+                                },
+                                "miuuyy/codex-chatgpt-web": {
+                                  description:
+                                    "Bridge open-source yang menjembatani ChatGPT Web (termasuk akun Pro) jadi 'model native' di Codex CLI — pakai reasoning tier Instant/Medium/High/Pro langsung dari subscription, tanpa API key atau biaya token tambahan.",
+                                  highlights: [
+                                    "Mengubah akun ChatGPT Web (Go/Free/Plus/Pro) menjadi 'native model' di Codex CLI — pick dari model picker Codex, jalanin agentic loop, MCP, dan streaming seperti model lokal, tanpa tambah tagihan API.",
+                                    "Akun yang expose reasoning selector (Plus/Pro) dapat tier 'Instant', 'Medium', 'High', 'Extra High', dan 'Pro' — workflow yang biasanya Rp 1-3 juta/bulan via API bisa ditekan ke biaya langganan flat.",
+                                    "Cross-platform native binary (macOS arm64+x64, Windows x64, Linux x64) — sekali download `codex-chatgpt-web`, langsung terpasang sebagai adapter; agentic workflow Codex lengkap termasuk tool-use dan image input.",
+                                    "Pendekatan yang relevan di tengah tren 'langganan > API': buat developer yang sudah punya ChatGPT Pro dan ingin model frontier dipakai untuk coding agentik tanpa harus isi ulang API key OpenAI atau kartu kredit tambahan.",
+                                  ],
+                                },
+                              };
 
   // Helper: lookup dengan fallback ke template-generated highlights
   export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
