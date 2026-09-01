@@ -3912,6 +3912,50 @@ export const models: Review[] = [
     date: "2026-09-01",
     featured: false,
   },
+  {
+    slug: "claude-opus-5-xhigh",
+    name: "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+    tagline: "Anthropic rilis mode Xhigh Effort — penalaran terdalam di keluarga Opus 5",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Agent"],
+    score: 9.4,
+    scores: [
+      { label: "Penalaran", value: 9.3 },
+      { label: "Coding", value: 9.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 62.5,
+    aa_coding_index: 77,
+    aa_price_input: 5,
+    aa_price_output: 25,
+    aa_synced_at: "2026-09-02",
+    summary:
+      "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) adalah varian penalaran terdalam kedua dari keluarga Claude Opus 5 Anthropic, diposisikan di antara Max Effort (intel 63,1) dan High Effort (intel 61,5). Intelligence index 62,5 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — di atas Claude Fable 5 (62,1), Opus 4.8 (57,3), Kimi K3 (57,1), dan Sonnet 5 (55,3). Coding index 77 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 1 poin di bawah Opus 5 Max (78) dan sejajar dengan frontier papan atas Asia. Varian Xhigh menjadi sweet spot untuk workload riset multi-langkah dan agentic coding yang butuh penalaran ekstra tanpa latensi Max Effort. Sumber data: Artificial Analysis.",
+    pros: [
+      "Intelligence index 62,5 (sumber: Artificial Analysis) — papan atas proprietary global, hanya 0,6 poin di bawah Opus 5 Max (63,1) dan sejajar dengan Claude Fable 5 (62,1)",
+      "Coding index 77 (sumber: Artificial Analysis) — memimpin benchmark pemrograman proprietary global, hanya 1 poin di bawah Opus 5 Max (78) dan sejajar dengan frontier coding papan atas",
+      "Skor terminal-bench-v2_1 dan GPQA mendekati Max Effort — eksekusi tool-use multi-langkah dan penalaran saintifik di kelas tertinggi proprietary Barat",
+      "Adaptive Reasoning dengan mode Xhigh — penalaran terdalam kedua di keluarga Opus 5, trade-off performa-latensi yang lebih rasional dibanding Max Effort untuk workload campuran",
+    ],
+    cons: [
+      "Harga API premium: $5,00 input dan $25,00 output per juta token — bermain di kelas tertinggi bersama Opus 5 Max dan Opus 5 High, selisih kumulatif signifikan untuk workload volume tinggi",
+      "Throughput output 47,8 token/detik (sumber: Artificial Analysis) sedikit di bawah Opus 5 Max (52,0) — bukan pilihan optimal untuk streaming UI real-time yang butuh first paint sub-detik",
+      "TTFT 24,7 detik (sumber: Artificial Analysis) lebih lambat dari High Effort (11,3 detik) — antarmuka chat interaktif akan terasa ada jeda, perlu orkestrasi pipeline untuk workload yang sensitif latency pertama",
+      "Akses API butuh kartu kredit atau pembayaran internasional — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "Claude Opus 5 (Xhigh Effort) adalah titik keseimbangan terbaik untuk workload riset dan agentic coding yang butuh penalaran ekstra — kombinasi intel 62,5 dan coding 77 yang hanya 0,6 dan 1 poin di bawah Max Effort, tanpa komitmen latensi penuh Max Effort. Untuk workload yang ingin di atas High Effort tanpa harus menunggu TTFT 31,9 detik Max Effort, Xhigh Effort adalah opsi yang paling rasional.",
+    body: [
+      "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) adalah varian penalaran terdalam kedua dari keluarga Claude Opus 5 Anthropic, diposisikan secara strategis di antara Max Effort (intel 63,1, TTFT 31,9 detik) dan High Effort (intel 61,5, TTFT 11,3 detik). Varian Xhigh mengisi celah yang sebelumnya tidak tertutup di keluarga Opus 5: workload yang merasa High Effort kurang dalam tapi tidak butuh TTFT selambat Max Effort. Intelligence index 62,5 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — hanya 0,6 poin di bawah Opus 5 Max (63,1) dan sejajar dengan Claude Fable 5 (62,1), meninggalkan Opus 4.8 (57,3), Kimi K3 (57,1), dan Sonnet 5 (55,3) di belakang. Coding index 77 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 1 poin di bawah Opus 5 Max (78) dan sejajar dengan frontier coding papan atas — menjadikan Xhigh Effort salah satu model dengan kombinasi intel + coding tertinggi di kelas proprietary Barat. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic coding dan riset multi-langkah yang butuh penalaran ekstra, Claude Opus 5 (Xhigh Effort) menunjukkan karakter yang konsisten dengan DNA keluarga Opus — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang yang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten. Mode Adaptive Reasoning dengan Xhigh Effort secara otomatis menentukan kedalaman penalaran per tugas — untuk pertanyaan sederhana menjawab ringkas, untuk tugas kompleks merencanakan, mengeksekusi, mengetes, lalu memperbaiki sendiri kesalahannya. Yang paling terasa dibanding High Effort adalah kualitas penalaran yang lebih dalam untuk workload reasoning chain panjang, sementara dibanding Max Effort adalah TTFT 24,7 detik (sumber: Artificial Analysis) yang lebih ramah untuk antarmuka chat interaktif — 7 detik lebih cepat dari Max Effort (31,9 detik). Skor benchmark eksekusi tool-use mendekati Max Effort, menjadikan Xhigh Effort opsi yang menarik untuk pipeline agentic panjang yang sensitif keseimbangan performa-latensi. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 62,5 (sumber: Artificial Analysis) menaruh Xhigh Effort di papan atas proprietary global — di atas Claude Fable 5 (62,1), Opus 4.8 (57,3), Kimi K3 (57,1), dan Sonnet 5 (55,3), hanya di bawah Opus 5 Max (63,1) dan Opus 5 Xhigh dari keluarga yang sama. Coding index 77 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 1 poin di bawah Opus 5 Max (78), meninggalkan Sonnet 5 (71,5) dan Opus 4.7 (73,6) di belakang, hampir menyamai Kimi K3 (76,2) untuk kelas khusus coding frontier papan atas. Throughput output 47,8 token/detik (sumber: Artificial Analysis) sedikit di bawah Opus 5 Max (52,0) tapi tetap di tier menengah — bukan pilihan optimal untuk streaming UI real-time yang butuh sub-detik first paint. TTFT 24,7 detik (sumber: Artificial Analysis) menjadi pembeda utama dibanding Max Effort (31,9 detik) — 23% lebih cepat, menjadikan Xhigh Effort opsi yang lebih ramah untuk workload chat interaktif dan pipeline yang sensitif responsivitas pertama. Harga API $5,00 per juta token input dan $25,00 output sama dengan Opus 5 Max dan High Effort — premium dibanding frontier value-tier Asia seperti Kimi K3 ($3/$15) atau DeepSeek V4 Pro, tapi sepadan dengan kelas kemampuan yang ditawarkan.",
+      "Kelemahan yang teridentifikasi: harga API $5,00 input dan $25,00 output per juta token (sumber: Artificial Analysis) — premium dibanding frontier value-tier Asia, selisih kumulatif signifikan untuk workload volume tinggi yang sensitif dolar; untuk workload coding volume-tinggi, Kimi K3 ($3/$15) atau DeepSeek V4 Pro menawarkan value lebih baik di kelas coding papan atas. Throughput 47,8 token/detik (sumber: Artificial Analysis) termasuk menengah — bukan pilihan optimal untuk streaming UX real-time yang butuh first paint sub-detik. TTFT 24,7 detik (sumber: Artificial Analysis) lebih lambat dari High Effort (11,3 detik) — aplikasi chat interaktif yang butuh respons instan pertama akan terasa ada jeda dibanding High Effort atau Sonnet 5, meski masih lebih cepat dari Max Effort (31,9 detik). Math index tidak tersedia di benchmark AA (null) untuk entry ini, jadi kualitas numerik tidak terukur standar — meski GPQA dan SciCode menjadi indikator kuat kemampuan penalaran ilmiah, untuk workload finansial atau saintifik yang sensitif akurasi hitungan perlu pengujian sendiri sebelum adopsi produksi. Akses API lewat platform.anthropic.com dan mitra regional memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: Claude Opus 5 (Xhigh Effort) untuk workload riset multi-langkah dan agentic coding yang butuh penalaran ekstra tanpa latensi penuh Max Effort, pipeline analisis saintifik, dan orkestrasi multi-langkah pada kelas proprietary papan atas; Opus 5 Max untuk workload penalaran terdalam mutlak; High Effort untuk workload yang sensitif TTFT; Sonnet 5 untuk workload agentic volume-tinggi di kelas harga sama; Kimi K3 atau DeepSeek V4 Pro untuk pipeline coding value-tier di kelas harga lebih terjangkau.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-02",
+    featured: false,
+  },
 ];
 
 
