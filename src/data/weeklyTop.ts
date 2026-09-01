@@ -2267,6 +2267,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                     "Pendekatan yang relevan di tengah tren 'langganan > API': buat developer yang sudah punya ChatGPT Pro dan ingin model frontier dipakai untuk coding agentik tanpa harus isi ulang API key OpenAI atau kartu kredit tambahan.",
                                   ],
                                 },
+                                "pacifio/atlas": {
+                                  description:
+                                    "Source control khusus untuk AI coding agent — jalankan banyak agen (Claude Code, Codex, OpenCode, Kilo) di worktree paralel, lacak perubahannya, dan query hasil dari satu tempat lewat UI Rust self-hosted.",
+                                  highlights: [
+                                    "Paradigma 'multi-agent, one repo': jalankan Claude Code, Codex, OpenCode, dan Kilo bersamaan di worktree git paralel lewat MCP client terpadu — setiap agen punya ruang kerja terisolasi tanpa konflik perubahan.",
+                                    "Source control ala Git untuk agent: bukan cuma log commit, melainkan tracking perubahan spesifik tiap agen yang bisa di-query lewat UI, sehingga review tidak lagi membaca diff satu per satu dari terminal berbeda.",
+                                    "Self-hosted Rust + Tauri dengan integrasi GitOps otomatis: setiap task agent punya branch, commit, dan PR sendiri; merge bisa dilakukan lewat approval gate, bukan auto-merge yang berisiko.",
+                                    "Relevan untuk tim Indonesia yang pakai beberapa coding agent bersamaan dan ingin satu 'mission control' lokal yang menggantikan dashboard web vendor — data repo dan histori agent tetap di mesin sendiri tanpa lock-in cloud.",
+                                  ],
+                                },
+                                "debpalash/VoiceStudio": {
+                                  description:
+                                    "Alternatif ElevenLabs yang 100% lokal (Python + Tauri) — voice cloning, voice design, video dubbing, dikte, transkripsi, dan audiobook dalam 646 bahasa tanpa kirim audio ke cloud.",
+                                  highlights: [
+                                    "Voice cloning + voice design + dubbing dalam satu app desktop: rekam atau upload sampel, hasilkan suara kustom, lalu pakai untuk TTS multibahasa atau sulih suara video — semuanya diproses lokal lewat CUDA, MLX (Apple Silicon), atau HuggingFace model.",
+                                    "Workflow lengkap: dari dictation (push-to-talk), transcription (STT multi-bahasa), sampai audiobook generation dan translate — bukan TTS tunggal, melainkan suite audio production yang biasanya harus beli ElevenLabs + Whisper + tool tambahan.",
+                                    "Antarmuka Tauri yang ringan lintas platform (Windows/macOS/Linux) dengan fokus 'local-first' — tidak ada upload audio ke server, sesuai untuk jurnalis, kreator, dan tim legal Indonesia yang memproses rekaman sensitif.",
+                                    "13,6k+ bintang dan pertumbuhan cepat sebagai 'ElevenLabs open-source': kombinasi omnivoice-studio, voice cloning, dan multi-language support menjawab kebutuhan user yang bosan bayar subscription API bulanan.",
+                                  ],
+                                },
+                                "jingyaogong/minimind": {
+                                  description:
+                                    "Kurikulum 'train LLM from scratch' yang ringan dan cepat — latih model 64M parameter dari nol dalam ~2 jam di GPU konsumen, lengkap dengan code, dataset mini, dan pipeline training hingga inference.",
+                                  highlights: [
+                                    "Pendekatan 'mini but complete': mulai dari tokenizer, pretraining (56GB dataset), supervised finetuning, LoRA, sampai DPO — semuanya dalam satu pipeline Python yang jalan di satu GPU 3090/4090 tanpa cluster.",
+                                    "Klaim durasi training ~2 jam untuk model 64M: cocok untuk mahasiswa, dosen, dan developer Indonesia yang ingin paham 'LLM itu sebenarnya apa' lewat eksperimen nyata, bukan teori atau slide.",
+                                    "Output siap pakai: bobot model, inference script, dan mini WebUI tersedia — siapa pun bisa finetune varian sendiri (chat, code, atau multibahasa) lalu langsung tes lewat UI minimal yang disertakan.",
+                                    "Komunitas 56,9k+ bintang menjadikannya salah satu repo edukasi LLM paling populer di GitHub — referensi wajib untuk kursus, tutorial YouTube, dan bootcamp AI yang ingin demo training LLM yang reproducible.",
+                                  ],
+                                },
                               };
 
   // Helper: lookup dengan fallback ke template-generated highlights
