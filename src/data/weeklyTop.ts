@@ -2297,7 +2297,37 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                     "Komunitas 56,9k+ bintang menjadikannya salah satu repo edukasi LLM paling populer di GitHub — referensi wajib untuk kursus, tutorial YouTube, dan bootcamp AI yang ingin demo training LLM yang reproducible.",
                                   ],
                                 },
-                              };
+                                                                "Gitlawb/openclaude": {
+                                                                  description:
+                                                                    "Coding-agent CLI open-source berlisensi MIT sebagai alternatif transparan untuk asisten coding proprietary — dukung banyak backend (OpenAI, Gemini, GitHub Models, Codex OAuth, Ollama, Atomic Chat) dalam satu workflow terminal-first yang konsisten.",
+                                                                  highlights: [
+                                                                    "Satu CLI, banyak backend lewat API OpenAI-compatible, Gemini, GitHub Models, Codex OAuth, Codex, Ollama, Atomic Chat — tidak terkunci vendor tertentu, tinggal pindah provider lewat config.",
+                                                                    "Workflow terminal-first: prompt, tools, agents, MCP, slash commands, dan streaming output dalam satu antarmuka CLI yang konsisten — tidak perlu adaptasi ulang saat ganti provider.",
+                                                                    "Dukungan Model Context Protocol (MCP) untuk memperluas kemampuan dengan tool eksternal, plus sistem sub-agent yang memecah tugas coding besar jadi unit lebih kecil dan paralel.",
+                                                                    "Setup guide terpisah per provider plus mode source build untuk kontributor — relevan untuk developer Indonesia yang mau self-host atau kontribusi ke agen coding MIT-licensed, bukan sekadar konsumen proprietary CLI.",
+                                                                  ],
+                                                                },
+                                                                "getagentseal/codeburn": {
+                                                                  description:
+                                                                    "Tool gratis dan lokal untuk melacak penggunaan token serta biaya AI coding di 37 tools/agent (Claude Code, Cursor, Codex, Gemini, dll.) — dipecah per model, project, dan task lewat TUI, web dashboard, atau desktop app.",
+                                                                  highlights: [
+                                                                    "Observabilitas untuk spending AI coding: lacak token usage dan cost di 37 agent/tool termasuk Claude Code, Cursor, Codex, Gemini, dan JetBrains AI — lewat CLI `npx codeburn`, dashboard web lokal, atau desktop app cross-platform.",
+                                                                    "Pemecahan biaya yang biasanya tidak terlihat di billing: per model, per project, per task — berhenti menebak-nebak 'token mana yang mahal' karena CodeBurn membaca langsung log proxy/auth masing-masing provider.",
+                                                                    "Free, open-source, dan sepenuhnya lokal — tidak ada telemetry ke vendor, data biaya dan token tetap di mesin developer sendiri, sesuai untuk tim Indonesia yang sensitif soal pengeluaran AI.",
+                                                                    "Dilengkapi menubar app (macOS/Windows/Linux) plus integrasi web dashboard via `npx codeburn web` — workflow monitoring yang ergonomis untuk dipakai harian tanpa harus buka browser tiap kali.",
+                                                                  ],
+                                                                },
+                                                                "Imbad0202/academic-research-skills": {
+                                                                  description:
+                                                                    "Suite lengkap skill Claude Code untuk alur riset akademik — dari perencanaan, literature review, drafting, peer review, sampai revisi akhir, dengan 'integrity gate' yang menolak fabrication di tiap tahap.",
+                                                                  highlights: [
+                                                                    "Pipeline 5-tahap untuk Claude Code: research → write → review → revise → finalize — dipasang sebagai plugin marketplace (`/plugin install academic-research-skills`) dan dipakai lewat perintah seperti `/ars-plan`.",
+                                                                    "Dirancang human-in-the-loop, bukan full automation: AI mengerjakan grunt work (cari referensi, format sitasi, cek konsistensi logika) sementara penulis fokus pada pertanyaan, metode, dan interpretasi — berbeda dari 'AI humanizer' yang sekadar menyamarkan pemakaian AI.",
+                                                                    "Integrity gate (Stage 2.5 & 4.5) menjalankan checklist 7-mode termasuk deteksi fabricated references dan anchorless citation — jawaban langsung dari makalah Zhao et al. yang mengaudit 146,932 sitasi halusinasi di arXiv 2025.",
+                                                                    "Cocok untuk mahasiswa S2/S3, dosen, dan peneliti Indonesia yang pakai Claude Code untuk menulis paper, tesis, atau laporan — sudah dirujuk oleh paper Nature (Lu et al., 2026) sebagai salah satu tool akademis berbasis agent.",
+                                                                  ],
+                                                                },
+                                                              };
 
   // Helper: lookup dengan fallback ke template-generated highlights
   export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
