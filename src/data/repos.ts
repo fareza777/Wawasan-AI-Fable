@@ -4529,6 +4529,55 @@ export const repos: Review[] = [
   updatedAt: "2026-09-01",
   featured: false,
 },
+  {
+    slug: "rtk",
+    name: "RTK (Rust Token Killer)",
+    tagline: "Proxy CLI yang memangkas 60-90% token output shell untuk agen AI coding",
+    tags: ["Developer Tools", "CLI", "Rust", "AI Coding"],
+    score: 8.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "RTK adalah CLI proxy berbasis Rust yang menyisipkan dirinya di antara agen AI coding dan shell. Output `git status`, `cargo test`, `npm test`, `pytest`, hingga `docker ps` difilter dan dipadatkan sebelum sampai ke konteks model — hasilnya, konsumsi token input turun signifikan tanpa mengubah alur kerja sehari-hari.",
+    highlights: [
+      "Filter otomatis untuk 100+ perintah umum: git, cargo, npm, pytest, ruff, docker, ls, cat, grep, dan banyak lagi",
+      "Kompaksi output yang mempertahankan struktur: tree dengan jumlah file, status git ringkas, log test yang hanya menampilkan kegagalan",
+      "Single binary Rust tanpa dependensi runtime — overhead di bawah 10ms per perintah",
+      "Plugin hook untuk Claude Code, Gemini CLI, OpenAI Codex, Cursor, Windsurf, Cline, Kimi, dan Hermes",
+      "Estimasi penghematan 60-90% token output shell; tersedia dashboard `rtk gain` untuk monitoring",
+      "Distribusi mudah lewat Homebrew, installer shell satu baris, dan binary pre-built untuk macOS, Linux, Windows",
+      "Lisensi Apache-2.0 dengan komunitas aktif dan rilis mingguan",
+      "Berbahasa Inggris, Prancis, Mandarin, Jepang, Korea, Spanyol, dan Portugis",
+    ],
+    pros: [
+      "Cara paling pragmatis menurunkan biaya API untuk pengguna Claude Code, Codex, atau agen coding berat shell lainnya",
+      "Zero-config untuk agen populer; satu kali `rtk init -g` lalu semuanya otomatis",
+      "Bekerja lintas platform tanpa ketergantungan runtime, cocok untuk tim dengan stack campuran",
+    ],
+    cons: [
+      "Hanya mencakup perintah shell — tidak menyentuh tool Read/Grep/Glob bawaan agen tertentu",
+      "Perkembangan cepat, format output kompak kadang berubah antar rilis kecil",
+      "Nama bentrok dengan crate Rust `rtk` (Rust Type Kit) di crates.io, perlu instalasi lewat Git untuk menghindari salah unduh",
+    ],
+    verdict:
+      "Tool wajib coba bagi siapa pun yang membayar tagihan API untuk agen AI coding. Hematannya nyata, setup-nya hitungan menit, dan tidak mengganggu workflow sama sekali.",
+    body: [
+      "Di tengah ledakan adopsi agen AI coding seperti Claude Code dan Codex, satu masalah operasional pelan-pelan naik ke permukaan: biaya token. Sebagian besar token input berasal dari output shell yang berantakan — full diff git, log test bertele-tele, dump container, dan daftar direktori yang sebenarnya tidak perlu dikirim ke model. RTK mengambil pendekatan yang elegan: menyisipkan proxy di antara shell dan agen, lalu memadatkan output sebelum sampai ke konteks model.",
+      "Cara pakainya sangat ringan. Instal satu binary, jalankan `rtk init -g` untuk mengaitkannya dengan agen yang dipakai (Claude Code, Codex, Cursor, dan lain-lain), lalu mulai bekerja seperti biasa. `git status` yang biasanya membuang ratusan baris berubah jadi ringkasan, `cargo test` hanya menampilkan kasus yang gagal, `grep` memotong baris panjang dan mengelompokkan kecocokan per file. Semua itu terjadi di bawah 10ms per perintah.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling menarik bukan headline 60-90% penghematan, melainkan konsistensinya. Untuk proyek dengan CI lokal dan iterasi cepat, selisih token input antar sesi coding panjang bisa mencapai puluhan persen dari total prompt — dan itu langsung terasa di tagihan API. Yang menarik, agen tidak kehilangan konteks penting: struktur file, nama fungsi, dan pesan error tetap utuh, hanya bagian repetitif dan boilerplate yang dibuang.",
+      "Catatan penerapan untuk tim di Indonesia: RTK sangat cocok untuk skenario pelatihan model internal, anotasi dataset, atau workflow riset yang menjalankan banyak perintah shell dalam satu sesi. Untuk startup yang efisiensi biaya menjadi pembeda, tool kecil seperti ini sering mengembalikan nilai paling besar dibanding investasi optimasi prompt. Pastikan juga untuk menambah `~/.local/bin` ke PATH, dan waspadai bentrokan nama dengan crate `rtk` lain di ekosistem Rust saat instalasi manual lewat cargo.",
+    ],
+    link: "https://github.com/rtk-ai/rtk",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-03",
+    updatedAt: "2026-09-03",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
