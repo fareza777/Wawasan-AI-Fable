@@ -1,64 +1,116 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "2 September 2026",
-  "period": {
-    "date": "2026-09-02",
-    "label": "2 September 2026",
-    "path": "/repo/daily/2026/09/02"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-02T00:04:05.026Z",
+  "fetchedAt": "2026-09-02T06:13:51.956Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "THU-MAIC/OpenMAIC",
-      "owner": "THU-MAIC",
-      "repo": "OpenMAIC",
-      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
-      "githubUrl": "https://github.com/THU-MAIC/OpenMAIC",
-      "trendshiftUrl": "https://trendshift.io/repositories/23518",
-      "language": "TypeScript",
+      "fullName": "elder-plinius/CL4R1T4S",
+      "owner": "elder-plinius",
+      "repo": "CL4R1T4S",
+      "description": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+      "githubUrl": "https://github.com/elder-plinius/CL4R1T4S",
+      "trendshiftUrl": "https://trendshift.io/repositories/22834",
       "topics": [
-        "AI agent"
+        "Curated list"
       ],
-      "dateCreated": "2026-03-11T10:13:16Z"
+      "dateCreated": "2025-03-04T20:03:16Z"
     },
     {
       "rank": 2,
-      "fullName": "debpalash/VoiceStudio",
-      "owner": "debpalash",
-      "repo": "VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "githubUrl": "https://github.com/debpalash/VoiceStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/28176",
-      "language": "Python",
+      "fullName": "larashero3-dotcom/lieflat-charts",
+      "owner": "larashero3-dotcom",
+      "repo": "lieflat-charts",
+      "description": "面向 AI Agents 的单色数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表",
+      "githubUrl": "https://github.com/larashero3-dotcom/lieflat-charts",
+      "trendshiftUrl": "https://trendshift.io/repositories/99237",
+      "language": "HTML",
       "topics": [
-        "AI voice",
-        "Text to speech",
-        "Audio processing",
-        "Self-hosted"
+        "Data visualization"
       ],
-      "dateCreated": "2026-04-09T21:40:26Z"
+      "dateCreated": "2026-07-16T11:17:49Z"
     },
     {
       "rank": 3,
-      "fullName": "pacifio/atlas",
-      "owner": "pacifio",
-      "repo": "atlas",
-      "description": "Source control for agents",
-      "githubUrl": "https://github.com/pacifio/atlas",
-      "trendshiftUrl": "https://trendshift.io/repositories/56020",
-      "language": "Rust",
+      "fullName": "Gitlawb/openclaude",
+      "owner": "Gitlawb",
+      "repo": "openclaude",
+      "description": "runs anywhere. uses anything",
+      "githubUrl": "https://github.com/Gitlawb/openclaude",
+      "trendshiftUrl": "https://trendshift.io/repositories/25807",
+      "language": "TypeScript",
       "topics": [
         "AI agent",
-        "AI workflow",
-        "AI coding assistant"
+        "AI coding assistant",
+        "Local LLM"
       ],
-      "dateCreated": "2026-05-14T16:48:52Z"
+      "dateCreated": "2026-04-01T03:15:49Z"
     },
     {
       "rank": 4,
+      "fullName": "averygan/reclip",
+      "owner": "averygan",
+      "repo": "reclip",
+      "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI.",
+      "githubUrl": "https://github.com/averygan/reclip",
+      "trendshiftUrl": "https://trendshift.io/repositories/24676",
+      "language": "HTML",
+      "topics": [
+        "Web scraping",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-31T04:29:13Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "VoltAgent/awesome-design-md",
+      "owner": "VoltAgent",
+      "repo": "awesome-design-md",
+      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "githubUrl": "https://github.com/VoltAgent/awesome-design-md",
+      "trendshiftUrl": "https://trendshift.io/repositories/25016",
+      "topics": [
+        "AI coding assistant",
+        "Design system",
+        "Curated list"
+      ],
+      "dateCreated": "2026-03-31T16:37:01Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Player-YN/PawWork_ZhuaZhua",
+      "owner": "Player-YN",
+      "repo": "PawWork_ZhuaZhua",
+      "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+      "githubUrl": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+      "trendshiftUrl": "https://trendshift.io/repositories/203597",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-28T10:56:56Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Imbad0202/academic-research-skills",
+      "owner": "Imbad0202",
+      "repo": "academic-research-skills",
+      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "githubUrl": "https://github.com/Imbad0202/academic-research-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/24187",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-02-26T06:31:01Z"
+    },
+    {
+      "rank": 8,
       "fullName": "jingyaogong/minimind",
       "owner": "jingyaogong",
       "repo": "minimind",
@@ -72,91 +124,31 @@
       "dateCreated": "2024-07-27T04:34:12Z"
     },
     {
-      "rank": 5,
-      "fullName": "tt-a1i/archify",
-      "owner": "tt-a1i",
-      "repo": "archify",
-      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-      "githubUrl": "https://github.com/tt-a1i/archify",
-      "trendshiftUrl": "https://trendshift.io/repositories/31352",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-04-15T05:27:37Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "pollen-robotics/microduck",
-      "owner": "pollen-robotics",
-      "repo": "microduck",
-      "description": "A Tiny biped duck robot 🦆",
-      "githubUrl": "https://github.com/pollen-robotics/microduck",
-      "trendshiftUrl": "https://trendshift.io/repositories/189165",
-      "language": "Rust",
-      "topics": [
-        "Robotics"
-      ],
-      "dateCreated": "2026-07-29T07:52:16Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "LiquidGiraffe8/Metatrader-5-Plus-Edge",
-      "owner": "LiquidGiraffe8",
-      "repo": "Metatrader-5-Plus-Edge",
-      "description": "",
-      "githubUrl": "https://github.com/LiquidGiraffe8/Metatrader-5-Plus-Edge",
-      "trendshiftUrl": "https://trendshift.io/repositories/153823",
-      "topics": [
-        "Fintech"
-      ],
-      "dateCreated": "2026-06-01T02:23:04Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "crmne/fastpotify",
-      "owner": "crmne",
-      "repo": "fastpotify",
-      "description": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.",
-      "githubUrl": "https://github.com/crmne/fastpotify",
-      "trendshiftUrl": "https://trendshift.io/repositories/193303",
-      "language": "Rust",
-      "topics": [
-        "Audio processing"
-      ],
-      "dateCreated": "2026-08-27T12:46:32Z"
-    },
-    {
       "rank": 9,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
+      "fullName": "getagentseal/codeburn",
+      "owner": "getagentseal",
+      "repo": "codeburn",
+      "description": "Free, local tool to track AI coding token usage and cost across 37 tools and agents (Claude Code, Cursor, Codex, Gemini and more), by model, project, and task. npx codeburn",
+      "githubUrl": "https://github.com/getagentseal/codeburn",
+      "trendshiftUrl": "https://trendshift.io/repositories/26229",
+      "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "AI coding assistant"
+        "AI coding assistant",
+        "Observability"
       ],
-      "dateCreated": "2026-06-12T00:52:37Z"
+      "dateCreated": "2026-04-13T22:11:53Z"
     },
     {
       "rank": 10,
-      "fullName": "h4ckf0r0day/obscura",
-      "owner": "h4ckf0r0day",
-      "repo": "obscura",
-      "description": "The headless browser for AI agents and web scraping",
-      "githubUrl": "https://github.com/h4ckf0r0day/obscura",
-      "trendshiftUrl": "https://trendshift.io/repositories/25837",
-      "language": "Rust",
-      "topics": [
-        "AI agent",
-        "Headless browser",
-        "Web scraping"
-      ],
-      "dateCreated": "2026-04-13T10:31:41Z"
+      "fullName": "2akouwu/codex-cli-portable-setup-kit",
+      "owner": "2akouwu",
+      "repo": "codex-cli-portable-setup-kit",
+      "description": "Autonomous Systems & Security Toolkit for OpenAI Codex CLI. Deterministic binary analysis, decoupled pipeline, and zero-friction execution.",
+      "githubUrl": "https://github.com/2akouwu/codex-cli-portable-setup-kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/203774",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-08-31T01:02:18Z"
     }
   ]
 }
