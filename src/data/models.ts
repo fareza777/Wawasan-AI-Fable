@@ -3956,6 +3956,51 @@ export const models: Review[] = [
     date: "2026-09-02",
     featured: false,
   },
+  {
+    slug: "claude-fable-5-1-medium",
+    name: "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+    tagline:
+      "Varian Medium Effort Claude Fable 5.1 — intel 60,5 dan coding 77,1 dengan harga $10/$50 per juta token",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Agent"],
+    score: 9.1,
+    scores: [
+      { label: "Penalaran", value: 8.8 },
+      { label: "Coding", value: 9.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 60.5,
+    aa_coding_index: 77.1,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-03",
+    summary:
+      "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback) adalah varian mode Medium Effort dari keluarga Claude Fable 5.1 Anthropic, diposisikan sebagai default fallback ketika Claude Opus 5 Adaptive Reasoning perlu route request ke model yang lebih hemat. Intelligence index 60,5 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — hanya 2,6 poin di bawah Opus 5 Max Effort (63,1), sejajar dengan Claude Opus 5 Xhigh Effort (62,5), dan meninggalkan Sonnet 5 (55,3) serta Claude Opus 4.8 (57,3) di belakang. Coding index 77,1 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 0,9 poin di bawah Opus 5 Max (78), sejajar dengan Opus 5 Xhigh (77), dan melampaui Sonnet 5 (71,5) dengan jarak signifikan. Harga API $10,00 input dan $50,00 output per juta token menjadikannya model dengan kelas kemampuan frontier namun banderol di atas Opus 5, sebuah posisi niche yang menarik untuk workload spesifik yang butuh perilaku fallback terukur.",
+    pros: [
+      "Intelligence index 60,5 (sumber: Artificial Analysis) — papan atas proprietary global, sejajar dengan Opus 5 Xhigh (62,5) dan meninggalkan Sonnet 5 (55,3), Opus 4.8 (57,3) di belakang",
+      "Coding index 77,1 (sumber: Artificial Analysis) — memimpin benchmark pemrograman proprietary global, hanya 0,9 poin di bawah Opus 5 Max (78) dan sejajar dengan Opus 5 Xhigh (77)",
+      "Mode Medium Effort Adaptive Reasoning — default fallback otomatis dari sistem routing Opus 5 ketika perlu hemat sumber daya, memberi prediktabilitas biaya untuk workload campuran",
+      "Skor terminal-bench-v2_1 dan GPQA mendekati Opus 5 Max — eksekusi tool-use multi-langkah dan penalaran saintifik di kelas tertinggi proprietary Barat",
+    ],
+    cons: [
+      "Harga API lebih tinggi dari Opus 5 — $10,00 input dan $50,00 output per juta token, premium dibanding Opus 5 ($5/$25), Sonnet 5 ($3/$15), dan frontier Asia value-tier seperti Kimi K3",
+      "Throughput output 46,72 token/detik (sumber: Artificial Analysis) termasuk menengah, sedikit di bawah Opus 5 Max (52,0) dan Xhigh (47,8) — bukan pilihan optimal untuk streaming UI real-time",
+      "TTFT 5,084 detik (sumber: Artificial Analysis) sebenarnya responsif dan mendekati Opus 5 High Effort (11,3 detik di kelas di atasnya), tapi posisinya sebagai fallback membuat pemakai awam bingung membedakan dari Opus 5",
+      "Akses API butuh kartu kredit atau pembayaran internasional — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi pada workload mission-critical",
+    ],
+    verdict:
+      "Claude Fable 5.1 (Medium Effort, Default Fallback) adalah varian niche keluarga Anthropic yang bermain di kelas kemampuan Opus 5 dengan harga lebih tinggi dan perilaku fallback yang terukur. Posisi ini menarik bagi tim yang ingin konsisten di keluarga Claude tanpa mengorbankan kualitas pada rute fallback, tapi bagi kebanyakan kasus, Opus 5 atau Sonnet 5 tetap jadi pilihan rasional di kelas harganya sendiri.",
+    body: [
+      "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback) adalah varian Medium Effort dari keluarga Claude Fable 5.1 Anthropic, dilepas 1 September 2026 sebagai salah satu sub-brand yang melengkapi keluarga Adaptive Reasoning generasi terbaru. Fable sendiri adalah lini eksperimental Anthropic yang bermain di sisi kemampuan tinggi dengan karakter penggunaan sumber daya lebih besar — beda dari Sonnet yang bermain di keseimbangan, atau Haiku yang bermain di kelas ringan. Intelligence index 60,5 (sumber: Artificial Analysis) menaruh Fable 5.1 Medium Effort di papan atas proprietary global — hanya 2,6 poin di bawah Opus 5 Max Effort (63,1), sejajar dengan Opus 5 Xhigh Effort (62,5), dan meninggalkan Sonnet 5 (55,3), Claude Opus 4.8 (57,3), Kimi K3 (57,1) di belakang. Coding index 77,1 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 0,9 poin di bawah Opus 5 Max (78) dan sejajar dengan Opus 5 Xhigh (77) — melampaui Sonnet 5 (71,5) dengan selisih 5,6 poin yang signifikan. Posisi label Default Fallback berarti model ini adalah tujuan rute ketika sistem Adaptive Reasoning perlu menurunkan kompleksitas tanpa keluar dari keluarga flagship. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic coding dan penalaran multi-langkah, Claude Fable 5.1 (Medium Effort) menunjukkan karakter yang konsisten dengan DNA keluarga Claude Opus 5 — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang yang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten. Yang paling terasa dibanding Sonnet 5 adalah kualitas penalaran yang lebih dalam untuk workload reasoning chain panjang, sementara dibanding Opus 5 Max Effort adalah TTFT 5,084 detik (sumber: Artificial Analysis) yang lebih responsif — menjadikan Medium Effort titik keseimbangan yang menarik antara kemampuan dan latensi. Skor benchmark eksekusi tool-use seperti terminal-bench-v2_1 88,0 dan GPQA 88,6% (sumber: Artificial Analysis) menunjukkannya di kelas tertinggi keluarga Anthropic, meninggalkan Sonnet 5 (76,8 dan 82,1%) dengan jarak yang jelas. Mode Adaptive Reasoning dengan Medium Effort secara otomatis menentukan kedalaman penalaran per tugas, mirip varian Effort lainnya tapi dengan optimasi sumber daya yang lebih agresif — hemat output token tanpa mengorbankan kapabilitas reasoning inti. Sebagai Default Fallback, perilaku ini memberikan rute degradasi yang mulus ketika Opus 5 Max atau Xhigh sudah menangani request sulit. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 60,5 (sumber: Artificial Analysis) menaruh Fable 5.1 Medium Effort di papan atas proprietary global — hanya 2,6 poin di bawah Opus 5 Max (63,1) dan sejajar dengan Opus 5 Xhigh (62,5), meninggalkan Sonnet 5 (55,3), Opus 4.8 (57,3), Kimi K3 (57,1), dan Claude Fable 5 (62,1) varian tertinggi di papan tengah. Coding index 77,1 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 0,9 poin di bawah Opus 5 Max (78) dan sejajar dengan Opus 5 Xhigh (77), meninggalkan Sonnet 5 (71,5), Opus 4.7 (73,6), dan Opus 4.8 (74,3) di belakang di kelas coding frontier. Throughput output 46,72 token/detik (sumber: Artificial Analysis) sedikit di bawah Opus 5 Max (52,0) dan Opus 5 Xhigh (47,8), tapi tetap di tier menengah yang cukup untuk workflow engineering dan pipeline batch — bukan pilihan optimal untuk streaming UI real-time yang butuh sub-detik first paint. TTFT 5,084 detik (sumber: Artificial Analysis) menjadi pembeda utama dibanding Max Effort (31,9 detik) dan Xhigh Effort (24,7 detik) — 6x lebih cepat dari Max Effort, menjadikan Medium Effort opsi yang ramah untuk workload chat interaktif dan pipeline yang sensitif responsivitas pertama. Harga API $10,00 per juta token input dan $50,00 output bermain di kelas tertinggi Anthropic, dua kali lipat input Opus 5 ($5,00) dan Sonnet 5 ($3,00) — sebuah posisi niche yang perlu justifikasi workload spesifik.",
+      "Kelemahan yang teridentifikasi: harga API $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) — bermain di kelas tertinggi Anthropic, 2x input Opus 5 ($5,00) dan 3,3x Sonnet 5 ($3,00), premium signifikan untuk workload volume tinggi yang sensitif dolar; untuk kebanyakan kasus, Opus 5 atau Sonnet 5 menawarkan rasio harga/performa lebih baik di kelas kemampuan yang hampir sama. Throughput 46,72 token/detik (sumber: Artificial Analysis) termasuk menengah, sedikit di bawah Opus 5 Max (52,0) dan Xhigh (47,8) — untuk streaming UX real-time yang butuh first paint sub-detik, Sonnet 5 atau frontier value-tier lain lebih cocok. Posisi Default Fallback bisa membingungkan bagi developer yang tidak familiar dengan arsitektur routing Adaptive Reasoning — risikonya, pemakaian Fable 5.1 Medium Effort secara eksplisit terlihat seperti keputusan sadar, padahal bisa jadi ini hanya rute degradasi otomatis dari Opus 5. Math index tidak tersedia di benchmark AA (null) untuk entry ini, jadi kualitas numerik tidak terukur standar — meski GPQA 88,6% dan SciCode 55,3% (sumber: Artificial Analysis) menjadi indikator kuat kemampuan penalaran ilmiah, untuk workload finansial atau saintifik yang sensitif akurasi hitungan perlu pengujian sendiri sebelum adopsi produksi. Akses API lewat platform.anthropic.com dan mitra regional memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: Claude Fable 5.1 (Medium Effort, Default Fallback) untuk workload yang secara eksplisit butuh perilaku fallback terukur di keluarga Claude flagship, atau pipeline yang ingin konsisten menggunakan rute Medium Effort tanpa lompat ke Sonnet; Opus 5 Max untuk workload penalaran terdalam mutlak; Opus 5 Xhigh atau High untuk keseimbangan performa-latensi; Sonnet 5 untuk workload agentic volume-tinggi di kelas harga sama dengan Opus 5; Claude 4.5 Sonnet atau Haiku untuk deployment ringan.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-03",
+    featured: false,
+  },
 ];
 
 
