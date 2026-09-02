@@ -3444,6 +3444,47 @@ export const stacks: Review[] = [
       date: "2026-08-31",
       featured: false,
     },
+    {
+      slug: "dagster-ai",
+      name: "Dagster + AI",
+      tagline: "Data orchestration dengan AI-assisted pipeline generation",
+      tags: ["Dagster", "Open Source", "DevOps", "Data Pipeline"],
+      score: 8.4,
+      scores: [
+        { label: "Kemampuan Agentic", value: 8.6 },
+        { label: "Kualitas Output", value: 8.5 },
+        { label: "Pengalaman Pengguna", value: 7.9 },
+        { label: "Ekosistem & Integrasi", value: 8.7 },
+        { label: "Harga", value: 8.3 },
+      ],
+      summary:
+        "Dagster adalah orkestrasi data open-source yang diposisikan sebagai pondasi pipeline machine learning dan ETL modern: setiap asset adalah first-class entity dengan lineage, observability, dan software-defined assets yang bisa dites secara lokal sebelum dipromosikan ke production. Dengan Dagster+ AI assistant dan integrasi native ke model bahasa besar, platform ini memungkinkan engineer menulis pipeline dari prompt bahasa alami, sementara tim data Indonesia bisa self-host di Kubernetes atau VPS tanpa bayar lisensi per node.",
+      pros: [
+        "Software-defined assets yang first-class: setiap tabel, model ML, atau file parquet diperlakukan sebagai asset dengan dependency graph eksplisit, sehingga lineage dari raw data sampai dashboard BI bisa ditelusuri mundur saat debugging",
+        "Dagster+ AI assistant: ketik prompt bahasa alami seperti 'ambil data penjualan harian dari PostgreSQL lalu training model regresi linear dan simpan prediksi ke BigQuery', dan assistant men-generate kode Python pipeline lengkap dengan sensor dan schedule",
+        "Local development yang solid: pipeline bisa dijalankan dan dites di laptop dengan satu perintah sebelum dipromosikan ke production, berbeda dengan Airflow yang terkenal berat untuk iterasi cepat",
+        "Integrasi native ke ekosistem AI modern: ada adapter resmi untuk dbt, Pandas, Polars, PySpark, Hugging Face, Great Expectations, dan MCP-compatible agent runtime, sehingga cocok untuk pipeline yang menggabungkan ETL klasik dengan model generatif",
+        "Open-core dengan self-host penuh: Dagster OSS berlisensi Apache 2.0, komunitas aktif di GitHub dengan 12 ribu bintang, dan Docker image resmi memudahkan tim Indonesia untuk deploy di VPS IDCloudHost atau Biznet Gio tanpa lock-in vendor",
+      ],
+      cons: [
+        "Learning curve relatif tinggi untuk engineer yang baru pertama kali bergelut dengan orkestrasi data: konsep asset, op, resource, dan sensor memerlukan waktu adaptasi, terutama jika latar belakangnya murni data analyst tanpa pengalaman software engineering",
+        "Dagster+ AI assistant dan fitur governance premium hanya tersedia di tier cloud berbayar mulai $50 per bulan, sementara self-host komunitas tidak punya fitur AI assistant out-of-the-box",
+        "Dokumentasi resmi masih condong ke use case Silicon Valley: contoh pipeline umumnya mengasumsikan infrastruktur AWS atau GCP, sehingga tim yang menjalankan di on-premise atau VPS lokal harus menulis adapter sendiri",
+        "Komunitas Indonesia masih kecil: berbeda dengan Airflow yang sudah banyak tutorial bahasa Indonesia di YouTube dan blog, materi Dagster dalam bahasa Indonesia masih terbatas dan umumnya berupa terjemahan dokumentasi resmi",
+      ],
+      verdict:
+        "Pilihan rasional untuk platform engineering dan tim data Indonesia yang sudah mengelola pipeline ETL atau ML skala menengah ke atas dan membutuhkan lineage eksplisit. Catatan utamanya adalah kurva belajar yang lumayan dan ketergantungan pada tier cloud untuk fitur AI assistant; pilih Dagster kalau kamu butuh pondasi orkestrasi yang serius, pilih Airflow kalau kamu hanya perlu scheduler sederhana untuk batch job.",
+      body: [
+        "Dagster lahir dari kebutuhan yang tidak sepenuhnya tertutupi Apache Airflow: orkestrasi pipeline data modern yang bukan sekadar menjadwalkan task, tapi memperlakukan setiap dataset, model, dan file sebagai software-defined asset dengan dependency graph yang bisa dites, diinspeksi, dan direproduksi secara lokal. Pendekatan ini membuat debugging pipeline yang gagal jauh lebih cepat: daripada menebak task mana yang error, engineer bisa langsung melihat asset mana yang stale dan dependensi upstream-nya yang mana. Untuk startup dan korporasi Indonesia yang menjalankan pipeline machine learning atau ETL di atas campuran PostgreSQL, BigQuery, dan object storage S3-compatible seperti IDCloudHost Object Storage, lineage eksplisit seperti ini menghemat waktu troubleshooting yang biasanya habis untuk menggali log scheduler.",
+        "Inovasi yang membuat Dagster relevan untuk era AI agent adalah integrasi native ke model bahasa besar dan asisten AI di Dagster+. AI assistant di Dagster+ Cloud menerima prompt bahasa alami dan men-generate kode pipeline lengkap dengan sensor, schedule, dan integrasi sumber data: engineer cukup menuliskan kebutuhan bisnis dalam kalimat, dan asisten menerjemahkannya ke Python op dan asset definition. Integrasi ke Hugging Face, PyTorch, dan Polars juga sudah built-in, sehingga pipeline machine learning dari ingest sampai deployment model ke endpoint bisa ditulis dalam satu repositori. Untuk tim data Indonesia yang sering menulis pipeline yang menggabungkan transformasi data klasik dengan pemanggilan model generatif, kemampuan ini menghilangkan friksi perpindahan konteks antara tim data dan tim AI.",
+        "Untuk pengguna Indonesia, tiga hal membuat Dagster menarik. Pertama, lisensi open-source Apache 2.0 memungkinkan self-host tanpa batasan node atau volume data: Docker image resmi tersedia, dan komunitas aktif di GitHub dengan sekitar 12 ribu bintang dan rilis minor setiap dua minggu. Kedua, paket Dagster+ Cloud untuk AI assistant dan governance enterprise dimulai dari sekitar $50 per bulan per organisasi, yang setelah dikonversi ke rupiah sekitar Rp 800 ribu per bulan plus PPN dan biaya kartu internasional, lumayan untuk startup kecil tapi masuk untuk tim data yang sudah menghindari biaya lisensi per node. Ketiga, ada beberapa praktisi data Indonesia yang sudah membagikan pengalaman deploy Dagster di Kubernetes lokal lewat blog teknis dan presentasi meetup Data Science Indonesia, meski jumlahnya masih jauh di bawah komunitas Airflow atau dbt.",
+        "Kesimpulannya, Dagster adalah pondasi orkestrasi data yang cocok untuk tim yang sudah mengelola pipeline skala menengah ke atas dan ingin lineage eksplisit, testing lokal yang solid, dan kemampuan AI-assisted generation. Paket open-source cukup untuk production di VPS atau Kubernetes internal, sementara Dagster+ Cloud cocok untuk tim yang butuh AI assistant, audit log, dan SSO tanpa memusingkan operasional cluster. Kalau kamu baru mulai dari pipeline sederhana dan hanya butuh scheduler harian untuk beberapa job SQL, Airflow atau Prefect tetap lebih ringan untuk dipelajari. Kalau tim kamu sudah mengelola 20 lebih pipeline yang saling bergantung dan ingin menambahkan model generatif ke dalamnya, Dagster memberikan fondasi yang lebih eksplisit dan lebih terukur.",
+      ],
+      link: "https://dagster.io",
+      linkLabel: "Situs Resmi",
+      date: "2026-09-02",
+      featured: false,
+    },
 ];
 
 export function getStack(slug: string) {
