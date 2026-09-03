@@ -4075,6 +4075,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "ascend-2026-webinar-explores-the-role-of-ai-in-academic-writing-and-research",
+    title: "AI di Ruang Akademik: Webinar ASCEND 2026 dan Pertanyaan yang Tidak Bisa Ditunda",
+    excerpt:
+      "Webinar ASCEND 2026 mengangkat peran AI dalam penulisan ilmiah. Pertanyaan yang lebih mendesak bukan 'boleh dipakai atau tidak', melainkan bagaimana menggunakannya tanpa mengorbankan integritas akademik.",
+    category: "Analisis",
+    date: "2026-09-04",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Webinar ASCEND 2026 yang digelar pekan lalu memilih topik yang sukar dihindari lagi di kampus-kampus Indonesia: bagaimana AI seharusnya masuk ke dalam penulisan akademik dan riset. Topik ini bukan hal baru di seminar internasional, tapi waktunya di Indonesia sudah berbeda. Dosen senior yang dua tahun lalu melarang mahasiswa menyentuh ChatGPT, kini banyak yang diam-diam memakainya untuk mempercepat telaah literatur. Yang berubah bukan teknologi, melainkan kenyataan bahwa teknologi itu sudah hadir di setiap browser.",
+          "Diskusi di webinar semacam ASCEND menarik justru karena biasanya tidak memberi jawaban tunggal. Yang muncul adalah peta posisi: ada yang menganggap AI sebagai alat bantu draft awal, ada yang menjadikannya partner brainstorming, ada juga yang tegas menolak di luar pemakaian untuk bahasa. Ketiga posisi itu ada benarnya di konteks yang berbeda. Tugas institusi pendidikan dan peneliti Indonesia adalah memutuskan posisi mana yang paling jujur untuk bidang ilmunya masing-masing.",
+        ],
+      },
+      {
+        heading: "Yang sebenarnya berubah: bukan menulis, melainkan membaca",
+        paragraphs: [
+          "Salah satu titik yang paling sering muncul dalam diskusi semacam ini: penggunaan AI yang paling berdampak bukan pada tahap menulis, melainkan membaca dan menelaah. Mencari pola antar-paper, merangkum argumen utama dari 30 jurnal dalam satu jam, menerjemahkan bahasa teknis yang sebelumnya menjadi penghalang -- itu jenis pekerjaan yang sebelumnya makan waktu berhari-hari, dan kini bisa dilakukan dalam satu sesi kerja.",
+          "Untuk peneliti Indonesia yang sering berhadapan dengan literatur berbahasa Inggris dalam jumlah besar dan waktu yang terbatas, ini bukan peningkatan kecil. Tapi di sinilah catatan integritas pertama muncul: ringkasan AI adalah titik awal, bukan kesimpulan. Selalu kembali ke paper aslinya. Selalu verifikasi kutipan. Klaim yang tidak bisa dilacak ke sumber primer tidak boleh masuk ke manuskrip.",
+          "Untuk mahasiswa, pelajaran yang lebih penting lagi: jangan pernah menggunakan AI untuk melewati proses membaca. Justru karena ringkasan bisa dibuat cepat, kemampuan membaca kritis menjadi makin berharga. Bedanya sarjana yang paham dan yang tidak paham bukan di kecepatan dapat ringkasan, melainkan di kemampuan mengevaluasi ringkasan itu.",
+        ],
+      },
+      {
+        heading: "Tiga risiko yang harus dijaga sejak awal",
+        paragraphs: [
+          "Pertama, halusinasi kutipan. AI masih bisa mengarang judul jurnal, nama penulis, atau DOI yang tidak ada. Kasus sudah beberapa kali dilaporkan di jurnal bereputasi. Satu langkah sederhana yang harus jadi kebiasaan: setiap kutipan yang muncul dari AI harus dicari ulang di Google Scholar atau database primer sebelum ditulis ke daftar pustaka. Tidak ada jalan pintas untuk langkah ini.",
+          "Kedua, kemerosotan gaya tulis sendiri. Risiko yang jarang dibicarakan di forum resmi tapi nyata di ruang kelas: mahasiswa yang terlalu bergantung pada AI untuk menulis sering kehilangan kemampuan menyusun argumen panjang. Mereka bisa menghasilkan paragraf yang terdengar akademis, tapi ketika diminta menjelaskan idenya tanpa bantuan, gagap. Ini bukan soal kemampuan teknis, melainkan kemampuan berpikir -- dan kemampuan berpikir tidak bisa di-outsource.",
+          "Ketiga, plagiarisme struktural. Beberapa kampus sudah menambahkan detektor AI ke plagiarism checker. Tapi masalah yang lebih halus dari terdeteksi atau tidak adalah: apakah manuskrip yang dihasilkan benar-benar mencerminkan pemikiran penulisnya. Standar integritas akademik bukan hanya soal tidak ada kata-kata yang disalin, tapi juga soal ada atau tidaknya pikiran orisinal di sana.",
+        ],
+      },
+      {
+        heading: "Implikasi untuk jurnal nasional dan reviewer Indonesia",
+        paragraphs: [
+          "Komunitas jurnal ilmiah Indonesia sedang di persimpangan yang belum punya panduan baku. Beberapa jurnal besar seperti jurnal terindeks Scopus sudah mulai memperbarui author guideline tentang deklarasi pemakaian AI. Jurnal nasional di bawah Kemenristek dan Dikti masih bervariasi -- ada yang tegas melarang, ada yang membolehkan untuk bahasa saja, ada yang belum memutuskan.",
+          "Yang patut didorong: pedoman yang proporsional dan eksplisit. Larangan total tidak realistis dan akan mendorong pemakaian sembunyi-sembunyi. Pembiaran total juga bukan jawaban karena bisa mengikis mutu manuskrip. Jalan tengah yang sehat: deklarasi wajib di bagian metode atau acknowledgment, pembatasan pada jenis pemakaian tertentu (literature review, bahasa, format), dan larangan pada pemakaian yang menggantikan penalaran inti.",
+          "Untuk reviewer, tantangannya tidak kalah berat. Reviewer yang tidak menggunakan AI akan kewalahan memproses naskah yang penulisnya pasti sudah memakainya. Reviewer yang terlalu bergantung pada AI bisa kehilangan intuisi akademik yang menjadi inti pekerjaannya. Formasi yang sehat: reviewer boleh menggunakan AI untuk hal-hal administratif (cek format, rangkum poin, identifikasi inkonsistensi), tapi keputusan substantif -- apakah argumen ini valid, apakah novelty cukup, apakah ada kecurangan -- tetap harus jadi keputusan manusia.",
+        ],
+      },
+      {
+        heading: "Mulai dari percakapan jujur di tingkat program studi",
+        paragraphs: [
+          "Tidak ada satu webinar atau satu pedoman yang akan menyelesaikan semua pertanyaan ini. Yang lebih realistis adalah memulai percakapan jujur di tingkat yang paling dekat dengan praktik: program studi, laboratorium, kelompok riset. Tanyakan ke mahasiswa: di tahap mana kamu merasa paling terbantu, dan di tahap mana kamu merasa paling berisiko? Tanyakan ke dosen: apa yang kamu siap tanggung jawab dari pemakaian AI di kelasmu? Tanyakan ke reviewer jurnal: di mana kamu percaya AI mempercepat pekerjaanmu, dan di mana kamu tidak mau melepaskan kendali?",
+          "Webinar ASCEND 2026 dan seminar serupa layak diapresiasi karena berani mengangkat topik ini. Tapi nilai sebenarnya dari diskusi semacam ini muncul setelahnya -- di kelas, di laboratorium, di ruang sidang, di meja reviewer. Di situlah integritas akademik diuji, bukan di slide presentasi. Dalam pengujian editorial Wawasan AI terhadap liputan teknologi semacam ini sebelumnya, yang sering menentukan apakah AI benar-benar membantu atau justru merusak bukan fitur alatnya, melainkan kebiasaan orang-orang yang memakainya.",
+          "Untuk komunitas akademik Indonesia, momen ini adalah kesempatan yang baik untuk menulis aturan main sendiri -- yang sesuai dengan konteks lokal, yang dihormati karena dibuat bersama, dan yang cukup fleksibel untuk bertahan tiga sampai lima tahun ke depan. Aturan yang terlalu kaku akan cepat usang; aturan yang terlalu longgar akan cepat disalahgunakan. Yang dibutuhkan adalah yang pas di tengah, dan yang disepakati bersama.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
