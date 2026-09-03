@@ -4022,6 +4022,59 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "tencent-hy4-preview-open-source-ai-produktivitas-untuk-konteks-lokal",
+    title: "Tencent Hy4 Preview: Model 770B dari Hunyuan yang Mulai Mengklaim Slot Produktivitas Dunia",
+    excerpt:
+      "Tencent merilis Hy4 preview dengan 770B parameter dan jendela konteks lebih dari satu juta token. Implikasinya untuk pekerja, UMKM, dan tim teknis di Indonesia yang mulai menimbang model on-prem.",
+    category: "Analisis",
+    date: "2026-09-03",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Pada akhir Agustus 2026, diam-diam Tencent menambah satu lagi nama besar di papan atas model bahasa open-source. Hy4 preview -- model keluarga baru dari lini Hunyuan -- diumumkan dengan 770 miliar parameter total, 49 miliar di antaranya aktif pada satu waktu lewat arsitektur mixture-of-experts, dan jendela konteks yang diklaim melebihi satu juta token. Angka-angka ini bukan klaim ringan; di kelasnya, hanya sedikit model yang berani menaruh tiga angka besar sekaligus dalam satu rilis. Tencent bukan pemain kecil, tapi nama Hy4 belum sepopuler keluarga GPT, Claude, atau Llama -- dan rilis ini adalah cara Tencent mengubah ingatan kolektif tersebut.",
+          "Yang menarik dari Hy4 preview bukan ukuran semata, melainkan klaim produk yang menyertainya. Tencent menyatakan bahwa Hy4 dibangun bukan untuk memimpin leaderboard umum, melainkan untuk tugas produktivitas nyata: menulis dan men-debug kode panjang, merangkum dan menyusun dokumen kantor, dan membantu pekerjaan riset saintifik. Klaim itu diuji oleh Tencent lewat evaluasi internal buta yang melibatkan 163 ahli dan 203 tugas rekayasa; hasilnya, Hy4 mendapat skor rata-rata 2,99 dari 4 -- sedikit di atas GLM-5.3 (2,92) dan Kimi K3 (2,94). Untuk pasar Indonesia, angka-angka seperti ini lebih bermakna dibanding skor benchmark yang sering dikutip di media.",
+        ],
+      },
+      {
+        heading: "Apa yang sebenarnya ditawarkan model sebesar 770B",
+        paragraphs: [
+          "Ukuran parameter 770B bukan angka yang berdiri sendiri. Dalam arsitektur mixture-of-experts modern, sebagian besar parameter tidak diaktifkan untuk satu permintaan -- yang aktif hanya 49B. Implikasi praktisnya: model bisa dilatih dengan pengetahuan yang sangat luas tanpa biaya inferensi yang sebanding dengan model dense 770B. Bagi pengguna di Indonesia, ini artinya performa mendekati model kelas atas, dengan jejak hardware dan biaya API yang lebih masuk akal dibanding model dense setara.",
+          "Jendela konteks lebih dari satu juta token memungkinkan Hy4 memproses dokumen panjang dalam satu putaran -- laporan audit tahunan, kontrak puluhan halaman, repositori kode berskala besar, atau kumpulan riset yang harus dibaca bersamaan. Untuk pekerjaan di kantor hukum, tim merger dan akuisisi, konsultan pajak, atau analis riset yang bekerja dengan banyak dokumen, kemampuan ini bukan kenyamanan -- melainkan kemampuan baru yang sebelumnya tidak ada. Pertanyaannya kemudian: apakah model sebesar ini masih layak dijalankan di infrastruktur sendiri, atau hanya praktis lewat API?",
+        ],
+      },
+      {
+        heading: "Harga dan distribusi yang relevan untuk konteks lokal",
+        paragraphs: [
+          "Tencent menetapkan harga API untuk Hy4 preview pada 0,834 dollar AS per juta token input, 2,501 dollar AS per juta token output, dan 0,042 dollar AS per juta token untuk cache hit. Angka ini bukan yang termurah di kelas model flagship, tapi bukan juga yang paling mahal; yang membuatnya menarik adalah ketersediaan bebas biaya selama dua minggu lewat WorkBuddy dan CodeBuddy, dan akses gratis Hy3 yang diperpanjang hingga 30 September 2026. Untuk pengguna Indonesia yang sensitif terhadap harga, periode coba gratis seperti ini adalah cara paling murah untuk mengukur apakah model sebesar ini benar-benar lebih berguna dari model yang sudah dipakai.",
+          "Distribusi menjadi titik kritis lain. Hy4 preview tersedia sebagai model open-source dengan bobot yang bisa diunduh, dan dapat diakses secara global lewat WorkBuddy, CodeBuddy, Yuanbao, ima, dan platform lainnya. Koneksi API tersedia lewat Tencent Cloud TokenHub dan OpenRouter. Kombinasi ini penting karena dua hal. Pertama, bagi tim teknis di Indonesia yang mempertimbangkan pemasangan on-premise atau di cloud lokal, ketersediaan bobot model berarti mereka bisa menjalankan Hy4 tanpa mengirim data keluar dari yurisdiksi sendiri -- syarat yang tidak bisa ditawar untuk sebagian besar proyek yang melibatkan data warga, data keuangan, atau rahasia dagang. Kedua, ketersediaan di OpenRouter berarti Hy4 bisa dijajal lewat workflow yang sama yang sudah dipakai banyak integrator di Indonesia untuk model lain, tanpa perlu integrasi ulang.",
+        ],
+      },
+      {
+        heading: "Peningkatan throughput dan klaim swa-optimasi yang patut dicermati",
+        paragraphs: [
+          "Salah satu bagian yang paling sering dikutip dari pengumuman Hy4 adalah klaim bahwa model ini secara otonom menganalisis bottleneck sistem inferensinya sendiri dan melakukan beberapa putaran optimasi pada area seperti operator fusion dan komunikasi antar-GPU. Hasilnya, Tencent melaporkan peningkatan throughput end-to-end sebesar 31,8 persen dibanding baseline, dengan peningkatan yang konsisten di panjang konteks dan tingkat konkurensi yang berbeda. Klaim seperti ini lazim muncul di brosur vendor, dan selalu layak dicermati -- angka 31,8 persen tidak berdiri sendiri tanpa baseline yang jelas dan beban kerja yang dipakai untuk mengujinya.",
+          "Yang lebih substansial adalah klaim bahwa Hy4 untuk pertama kalinya berpartisipasi dalam optimasi otomatis atas metode pelatihan, strategi data, kerangka evaluasi, dan operator tingkat rendah. Dengan kata lain, model mengusulkan pendekatan, menjalankan eksperimen, mengiterasi berdasarkan hasilnya, dan memasukkan kode, log, serta umpan balik ke putaran eksplorasi berikutnya -- loop yang Tencent sebut sebagai tahap awal dari recursive self-improvement. Istilah ini sering digunakan secara longgar di industri AI; yang patut diperhatikan adalah apakah loop tersebut benar-benar menghasilkan peningkatan terukur di luar presentasi pemasaran. Untuk pengguna Indonesia, implikasinya praktis: kalau loop ini bekerja, model yang dipakai hari ini akan lebih baik dari versi yang sama enam bulan ke depan -- dan itu mengubah kalkulasi adopsi dari proyek modal menjadi investasi yang terus menghargai.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk pekerja, UMKM, dan tim teknis Indonesia",
+        paragraphs: [
+          "Untuk pekerja pengetahuan di Indonesia, Hy4 preview menawarkan sesuatu yang sebelumnya langka: model open-source kelas atas dengan konteks panjang dan harga API yang tidak melarang eksplorasi. Penulis, analis, konsultan, dan staf profesional yang sebelumnya harus memilih antara model murah dengan konteks pendek atau model kelas atas dengan konteks panjang tapi mahal, sekarang punya opsi ketiga yang tidak mengorbankan dimensi penting dari pekerjaan mereka.",
+          "Untuk UMKM dan startup, pertimbangan lebih halus. Tidak banyak usaha kecil yang akan menjalankan model 770B di server sendiri -- kebutuhan GPU dan memori untuk inference model sebesar ini masih di luar jangkauan sebagian besar usaha. Tapi lewat API dengan cache hit 0,042 dollar per juta token, biaya eksperimen bisa ditekan: percobaan singkat untuk menilai kualitas, penyusunan prompt untuk workflow internal, atau perbandingan head-to-head dengan model yang sudah dipakai. Yang paling berharga adalah mengetahui -- lewat uji coba gratis dua minggu -- apakah peningkatan performa benar-benar terasa pada workload spesifik mereka, atau hanya di headline benchmark.",
+          "Untuk tim teknis yang mempertimbangkan pemasangan on-premise di bank, BUMN, atau instansi pemerintah, ketersediaan bobot Hy4 adalah kabar baik -- tapi bukan keputusan otomatis. Model 770B dengan 49B aktif masih memerlukan infrastruktur yang tidak kecil; dibutuhkan strategi kuantisasi, pilihan hardware yang cermat, dan rencana fallback ke model yang lebih kecil saat beban puncak. Yang berubah dengan rilis ini adalah pilihan: Hy4 kini menjadi salah satu model yang masuk dalam daftar pertimbangan, bukan nama yang harus dilacak dari rilis ke rilis.",
+        ],
+      },
+      {
+        heading: "Catatan penutup: angka besar bukan jaminan adopsi",
+        paragraphs: [
+          "Hy4 preview adalah rilis yang serius dari pemain yang serius, dan layak dicoba oleh siapa saja yang selama ini menunggu model open-source dengan konteks panjang dan harga masuk akal. Tapi angka besar bukan jaminan adopsi. Klaim self-improvement, optimasi throughput, dan skor evaluasi buta akan teruji hanya ketika model dipakai pada workload nyata -- bukan pada benchmark sintetis. Dalam pengujian editorial Wawasan AI terhadap pengumuman model sebesar ini sebelumnya, yang sering menentukan adalah jawaban atas tiga pertanyaan: apakah model ini benar-benar lebih murah per tugas yang selesai, apakah model ini cukup andal untuk diserahkan ke pengguna akhir, dan apakah model ini bisa diintegrasikan tanpa mengorbankan kendali atas data. Ketiganya adalah pertanyaan yang tidak bisa dijawab dari rilis pers -- hanya dari pemakaian.",
+          "Untuk komunitas AI Indonesia, rilis Hy4 preview adalah alasan yang baik untuk memperluas eksperimen. Coba lewat OpenRouter untuk workflow yang sudah ada, bandingkan head-to-head dengan model yang dipakai saat ini pada satu proyek nyata, dan perhatikan apakah perbaikan yang dijanjikan benar-benar terasa di tempat yang penting: kecepatan iterasi, kualitas draft, dan biaya per tugas. Hasil dari eksperimen itulah yang akan membentuk keputusan adopsi -- bukan angka 770B atau 1.000.000 token yang menghiasi headline.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
