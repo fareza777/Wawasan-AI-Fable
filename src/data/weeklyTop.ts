@@ -2327,6 +2327,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                                     "Cocok untuk mahasiswa S2/S3, dosen, dan peneliti Indonesia yang pakai Claude Code untuk menulis paper, tesis, atau laporan — sudah dirujuk oleh paper Nature (Lu et al., 2026) sebagai salah satu tool akademis berbasis agent.",
                                                                   ],
                                                                 },
+  "larashero3-dotcom/lieflat-charts": {
+    description:
+      "Skill visualisasi data untuk AI agent (Claude Code, Codex, moxt) yang mengubah data jadi grafik HTML interaktif bergaya editorial — tiga gaya visual (Lupi naratif, Glance cepat, Basics sederhana) plus 12 template laporan siap terbit.",
+    highlights: [
+      "Format SKILL.md standar yang bisa dipasang ke Claude Code, Codex, dan agen lain yang kompatibel — agen tinggal panggil skill ini, lalu data CSV/JSON/output database langsung berubah jadi grafik HTML siap pakai.",
+      "Tiga gaya visual yang sudah dipikirkan: Lupi untuk narasi panjang (annual report, paper, long-form), Glance untuk dashboard cepat (weekly report, KPI), dan Basics untuk struktur sederhana — agen otomatis pilih sesuai konteks.",
+      "Sistem warna konsisten (Mono hitam-putih plus 3 aksen: biru celadon, hijau pucuk, merah editorial) yang menjaga koherensi visual satu laporan utuh, dengan opsi custom palette ketika pengguna memberikan brand color.",
+      "Mendukung 12 template laporan berbahasa Mandarin/Inggris (tahunan, bulanan, whitepaper, brief) yang siap dipublikasikan langsung dari HTML — relevan untuk tim konten, konsultan, dan jurnalis data Indonesia yang rutin bikin laporan visual.",
+    ],
+  },
+  "deeplethe/utopia": {
+    description:
+      "World model enterprise pertama yang open-source (Rust + Postgres) — knowledge graph bitemporal yang merekam kapan fakta benar di dunia dan kapan sistem mengetahuinya, dengan ontology workbench, agentic RAG, dan deployment fully air-gapped.",
+    highlights: [
+      "Paradigma 'bitemporal knowledge graph': setiap fakta membawa dua timeline (kapan ia benar di dunia, kapan sistem mencatatnya) — koreksi tidak menimpa, melainkan menutup versi lama dan menautkan versi baru, sehingga audit trail untuk compliance selalu utuh.",
+      "Knowledge graph + vector store + full-text search dalam satu binary Rust dan satu Postgres (pgvector) — full-text lewat Tantivy, vektor lewat pgvector, fusion RRF, dan inference stack apa pun yang OpenAI-compatible (DeepSeek, Qwen, GLM, Ollama, vLLM).",
+      "Agent harness bawaan yang mencari dokumen, menjelajah graf (entitas per tanggal, atau 'apa yang berubah bulan ini'), dan querying mounted database lewat tool MCP read-only — workflow agentik untuk knowledge base enterprise yang siap dijalankan air-gapped.",
+      "Lima ontology pack bawaan (schema.org, W3C Org, PROV-O, FOAF, IOF Core) untuk cold-start knowledge base industri — relevan untuk bank, BUMN, konsultan hukum, atau tim riset Indonesia yang perlu fondasi data internal self-hosted, bukan langganan vendor world-model proprietary.",
+    ],
+  },
+  "blader/humanizer": {
+    description:
+      "Skill agent (Markdown, 41k+ bintang) yang menulis ulang teks agar tidak terasa 'AI-generated' — berbasis 35 pola dari Wikipedia 'Signs of AI writing', dengan voice-matching opsional dan mode 'show your work' untuk transparency.",
+    highlights: [
+      "Berdasarkan 35 pola 'Signs of AI writing' dari WikiProject AI Cleanup Wikipedia — pola yang sama dipakai editor Wikipedia untuk mendeteksi tulisan AI, dikodekan jadi aturan rewrite yang bisa dipasang ke skill agent apa pun yang support SKILL.md.",
+      "Workflow dua-pass: pass pertama menulis ulang tanpa mengunci struktur asli, pass kedua cek ulang terhadap 35 pola dan klaim sumber — lalu tampilkan 'show your work' (versi rewrite + kritik sisa yang masih berbau AI) sebelum hasil akhir.",
+      "Fakta tidak ditambah atau diubah: nama, angka, tanggal, kutipan, dan sitasi harus berasal dari sumber — untuk tulisan personal, Humanizer menjaga gaya penulis; untuk prosa teknis/referensi, tetap netral; kalau dikasih writing sample, voice mengikuti sample tersebut.",
+      "Format Markdown murni yang langsung dipakai Claude Code, Codex, atau agen lain — relevan untuk editor, jurnalis, penulis, dan tim konten Indonesia yang rutin memoles draft AI agar lulus detector dan tetap terasa manusia.",
+    ],
+  },
                                                               };
 
   // Helper: lookup dengan fallback ke template-generated highlights
