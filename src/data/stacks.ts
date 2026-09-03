@@ -3485,6 +3485,48 @@ export const stacks: Review[] = [
       date: "2026-09-02",
       featured: false,
     },
+  {
+    slug: "melty",
+    name: "Conductor (Melty)",
+    tagline: "Orkestrasi paralel Claude Code, Codex, dan Cursor di macOS dengan workspace terisolasi",
+    tags: ["Melty Labs", "Proprietary", "Agent Orchestration", "Parallel Coding"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.7 },
+      { label: "Kualitas Output", value: 8.4 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 6.8 },
+    ],
+    summary:
+      "Conductor (sebelumnya Melty) adalah aplikasi macOS dari Y Combinator Summer 2024 yang menjalankan banyak agen coding seperti Claude Code, Codex, dan Cursor secara paralel di workspace terisolasi, masing-masing dengan git worktree, branch, dan environment sendiri. Paradigmanya mengisi gap yang tidak tertutupi CLI tunggal: developer yang harus menjalankan lima refactor bersamaan tidak lagi harus membuka lima terminal dan berpindah konteks secara manual; Conductor membuka semuanya dalam satu antarmuka, memperlihatkan progres masing-masing, lalu menggabungkan hasil yang sudah lewat review ke branch utama.",
+    pros: [
+      "Multi-agent paralel dengan workspace terisolasi: setiap tugas mendapat git worktree, branch, dan run environment sendiri, sehingga lima refactor bersamaan tidak saling mengunci file atau dependensi",
+      "Integrasi first-party ke Claude Code, Codex, Cursor, dan OpenCode lewat Conductor Cloud, sehingga developer tidak perlu menulis glue code antar agen",
+      "UI kolaboratif yang memperlihatkan progres tiap agen real-time: panel Changes, log terminal, dan diff file bisa dipantau paralel tanpa harus menutup salah satu sesi",
+      "Conductor MCP terbaru memungkinkan otomasi lewat protokol MCP standar, sehingga agen dari luar bisa memanggil Conductor lewat API resmi tanpa scripting custom",
+      "Auto port forwarding di rilis 0.83.0: aplikasi web hasil generasi agen otomatis ke-expose ke localhost developer, sehingga preview tidak perlu setup tunnel manual",
+    ],
+    cons: [
+      "Hanya tersedia di macOS (Apple Silicon sangat direkomendasikan): pengguna Windows dan Linux, yang merupakan mayoritas pekerja teknis Indonesia, sama sekali belum bisa instal native",
+      "Harga subscription lumayan di konversi rupiah: tier Pro sekitar $20 per bulan atau lebih dari Rp 300 ribu per bulan setelah PPN dan biaya kartu internasional, belum termasuk kredit tambahan untuk Conductor Cloud",
+      "Bergantung pada model upstream: kualitas output akhir tetap dibatasi kemampuan Claude Code, Codex, atau Cursor yang dijalankan di dalamnya, sehingga Conductor bukan magic multiplier melainkan lapisan orkestrasi di atas tool yang sudah ada",
+      "Ekosistem plugin masih kecil dibanding Cursor atau VS Code: extension ecosystem dari komunitas belum terbentuk besar karena platform-nya masih baru dan vendor-locked ke empat agen first-party",
+      "Closed-source proprietary: tidak ada opsi self-host seperti pada LangGraph atau CrewAI, sehingga perusahaan dengan regulasi data ketat tidak bisa menjalankan Conductor di internal cluster mereka sendiri",
+    ],
+    verdict:
+      "Pilihan menarik untuk developer macOS Indonesia yang sudah nyaman dengan Claude Code atau Cursor dan ingin melipatgandakan throughput tanpa menyewa lebih banyak engineer. Catatan utamanya adalah eksklusivitas macOS, harga subscription yang lumayan di konversi rupiah, dan ketergantungan pada model upstream; pilih Conductor kalau kamu tim kecil yang butuh paralelisme, jalankan agen langsung di terminal kalau kamu prioritas kontrol penuh atau biaya nol.",
+    body: [
+      "Di pasar coding agent yang didominasi Claude Code, Codex, dan Cursor sebagai CLI atau IDE tunggal, Conductor mengambil pendekatan yang berbeda: alih-alih menjadi satu agen tambahan, ia menjadi aplikasi macOS yang menjalankan banyak agen sekaligus di workspace terisolasi. Bayangkan membuka lima task berbeda di lima branch git worktree, masing-masing dengan copy repository, environment, dan port sendiri, lalu membiarkan lima agen coding mengerjakannya secara paralel sembari kamu memantau progres semuanya dari satu antarmuka. Paradigmanya terdengar mirip paralelisme biasa, tapi mengisi gap yang nyata: developer solo atau tim kecil yang harus migrasi codebase, menulis tes, dan memperbarui dependensi secara bersamaan biasanya harus bolak-balik antara lima jendela terminal, kehilangan konteks setiap kali berpindah. Conductor membungkus semua itu sebagai satu pengalaman aplikasi dengan panel kolaboratif, log real-time, dan alur review-pull-merge yang sudah tertanam di UI.",
+      "Fitur yang membuat Conductor menonjol dibanding ekstensi multi-agent lain seperti Aider dengan chat-nya atau Cursor dengan background agent-nya adalah isolasi workspace dan first-party integration. Conductor Cloud menjalankan Claude Code, Codex, Cursor, dan OpenCode di backend tanpa developer harus setup masing-masing CLI secara manual: cukup pilih agen dari dropdown, tulis prompt, dan workspace ter-spinup otomatis dengan branch git, environment terisolasi, dan port sendiri. Rilis 0.83.0 menambahkan auto port forwarding, sehingga preview aplikasi web yang di-generate agen otomatis muncul di localhost tanpa setup tunnel. Conductor MCP yang rilis Agustus lalu membuka orkestrasi ke protokol MCP standar, sehingga agen lain di luar Conductor bisa memanggil workflow Conductor lewat API resmi, bukan lewat scripting custom. Untuk developer yang sudah investasi di salah satu dari empat agen first-party, Conductor menutup friksi 'saya mau menjalankan semuanya sekaligus tanpa menyusun infrastruktur sendiri'.",
+      "Untuk pengguna Indonesia, ada tiga hal yang membuat Conductor menarik sekaligus membatasi. Menariknya, Conductor menyelesaikan pain point developer Indonesia yang sering mengelola beberapa task paralel untuk klien berbeda dari satu workstation: freelance developer Jakarta atau Bandung yang harus mengirimkan tiga landing page bersamaan tidak perlu tiga terminal, cukup satu Conductor dengan tiga workspace. Batasi, pertama, eksklusivitas macOS menutup mayoritas pasar: Windows dan Linux, yang merupakan sekitar 70 persen workstation developer Indonesia menurut survei Stack Overflow 2024, sama sekali tidak bisa instal Conductor native. Kedua, harga Pro $20 per bulan atau sekitar Rp 320 ribu per bulan setelah konversi plus PPN dan charge kartu internasional, lumayan untuk freelancer, tapi cukup berat untuk developer yang baru mulai dan biasanya lebih memilih CLI gratis. Ketiga, Conductor adalah lapisan orkestrasi, bukan model baru: kualitas coding tetap bergantung pada Claude Code atau Cursor di belakangnya, sehingga upgrade ke Conductor tidak otomatis melipatgandakan kualitas kode melainkan melipatgandakan throughput jumlah task.",
+      "Kesimpulannya, Conductor adalah orkestrator paralel yang masuk akal untuk developer macOS yang sudah menggunakan Claude Code, Cursor, atau Codex dan ingin mengerjakan banyak task coding sekaligus dari satu aplikasi. Paket gratis cocok untuk eksplorasi, Pro $20 per bulan masuk untuk freelancer aktif, dan tier enterprise tersedia untuk tim yang butuh SSO dan dedicated support. Kalau kamu developer Windows atau Linux, Conductor jelas bukan pilihan — langsung jalankan Claude Code di beberapa terminal atau pakai Aider untuk chat pair-programming di editor kamu. Kalau kamu tim kecil 2-5 engineer yang sering mengirimkan lima task bersamaan untuk klien berbeda, Conductor memberikan leverage yang tidak mudah ditiru dengan CLI tunggal. Dan catatan akhir: Conductor bukan pengganti kemampuan coding melainkan pengganda jumlah task paralel, jadi pastikan prompt engineering dan review code kamu sudah kuat dulu sebelum menambah lapis orkestrasi, karena output Conductor hanya sebaik agen yang menjalankannya.",
+    ],
+    link: "https://www.conductor.build",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-03",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
