@@ -1,0 +1,150 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-03T06:15:43.933Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "deeplethe/utopia",
+      "owner": "deeplethe",
+      "repo": "utopia",
+      "description": "Local-first, agent-assisted document-to-ontology workbench",
+      "githubUrl": "https://github.com/deeplethe/utopia",
+      "trendshiftUrl": "https://trendshift.io/repositories/159739",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "Document processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-08-07T19:33:17Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "arcboxlabs/arcbox",
+      "owner": "arcboxlabs",
+      "repo": "arcbox",
+      "description": "Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <200ms boot. Local first, OCI compatible, pure Rust.",
+      "githubUrl": "https://github.com/arcboxlabs/arcbox",
+      "trendshiftUrl": "https://trendshift.io/repositories/88219",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-04T14:46:50Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "anthropics/commerce-agents",
+      "owner": "anthropics",
+      "repo": "commerce-agents",
+      "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
+      "githubUrl": "https://github.com/anthropics/commerce-agents",
+      "trendshiftUrl": "https://trendshift.io/repositories/207554",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "E-commerce",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-09-01T12:30:12Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "zvec-ai/zvec-grep",
+      "owner": "zvec-ai",
+      "repo": "zvec-grep",
+      "description": "Local-first search across your workspace, built for humans and AI agents.",
+      "githubUrl": "https://github.com/zvec-ai/zvec-grep",
+      "trendshiftUrl": "https://trendshift.io/repositories/200612",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Search"
+      ],
+      "dateCreated": "2026-07-10T02:58:07Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "google-research/timesfm",
+      "owner": "google-research",
+      "repo": "timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "githubUrl": "https://github.com/google-research/timesfm",
+      "trendshiftUrl": "https://trendshift.io/repositories/10050",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2024-04-29T21:26:26Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-04-09T21:40:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "slayercycledesign59/vidu-ai-core",
+      "owner": "slayercycledesign59",
+      "repo": "vidu-ai-core",
+      "description": "Vidu Ai Core",
+      "githubUrl": "https://github.com/slayercycledesign59/vidu-ai-core",
+      "trendshiftUrl": "https://trendshift.io/repositories/183084",
+      "topics": [
+        "AI workflow"
+      ],
+      "dateCreated": "2026-08-06T01:48:41Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "SideSorcererHammer/wifi-password-viewer-ultimate",
+      "owner": "SideSorcererHammer",
+      "repo": "wifi-password-viewer-ultimate",
+      "description": "Wifi Password Viewer Ultimate",
+      "githubUrl": "https://github.com/SideSorcererHammer/wifi-password-viewer-ultimate",
+      "trendshiftUrl": "https://trendshift.io/repositories/184159",
+      "topics": [],
+      "dateCreated": "2026-08-06T03:19:23Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Terafitzsing/freepik-ai-lab",
+      "owner": "Terafitzsing",
+      "repo": "freepik-ai-lab",
+      "description": "Freepik Ai Lab",
+      "githubUrl": "https://github.com/Terafitzsing/freepik-ai-lab",
+      "trendshiftUrl": "https://trendshift.io/repositories/184127",
+      "topics": [
+        "AI workflow"
+      ],
+      "dateCreated": "2026-08-06T01:02:54Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "SurgeBowRetreat/invideo-ai-nexus",
+      "owner": "SurgeBowRetreat",
+      "repo": "invideo-ai-nexus",
+      "description": "Invideo Ai Nexus",
+      "githubUrl": "https://github.com/SurgeBowRetreat/invideo-ai-nexus",
+      "trendshiftUrl": "https://trendshift.io/repositories/185869",
+      "topics": [
+        "AI image generation",
+        "AI video generation"
+      ],
+      "dateCreated": "2026-08-06T01:11:25Z"
+    }
+  ]
+}
