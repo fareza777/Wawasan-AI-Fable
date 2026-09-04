@@ -3527,6 +3527,47 @@ export const stacks: Review[] = [
     date: "2026-09-03",
     featured: false,
   },
+{
+    slug: "elevenlabs-conversational",
+    name: "ElevenLabs Conversational AI",
+    tagline: "Agen suara real-time untuk customer service dan asisten multimodal",
+    tags: ["ElevenLabs", "Freemium", "Voice/Audio", "Conversational"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 8.3 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "ElevenLabs Conversational AI adalah platform voice agent end-to-end yang menggabungkan speech-to-text, large language model, dan text-to-speech dalam satu pipeline latensi rendah untuk customer service dan asisten multimodal. Dalam pengujian editorial Wawasan AI, ini adalah tool yang menghilangkan friksi terbesar voice agent DIY: menulis orchestrator, mengelola turn-taking, dan menyambungkan tiga API menjadi satu pengalaman yang konsisten di telepon maupun web widget.",
+    pros: [
+      "Kualitas suara ElevenLabs yang konsisten di industri: latency di bawah 500 ms untuk model Flash dan Pinewood sudah cukup untuk percakapan natural tanpa jeda yang terasa robotic",
+      "Pipeline end-to-end dalam satu platform: STT, LLM orchestration, dan TTS sudah terintegrasi, sehingga developer tidak perlu menulis glue code atau mengelola dua API terpisah",
+      "Dukungan multibahasa yang kuat di pasar Asia Tenggara: Bahasa Indonesia dan puluhan bahasa lain sudah ada sebagai built-in voice, memudahkan deployment untuk pasar lokal",
+      "Turn-taking otomatis dan interruption handling yang matang: agen tahu kapan harus diam, kapan mendengarkan, dan kapan pengguna memotong kalimat",
+      "Deployment fleksibel: telepon PSTN, web widget embed, WhatsApp, dan Twilio Voice — semua lewat satu konfigurasi agen yang sama",
+    ],
+    cons: [
+      "Harga per menit masih mahal di konversi rupiah: tier gratis 10.000 menit per tahun cepat habis untuk produksi nyata, dan Creator $22 per bulan plus biaya per menit tambahan bisa membengkak untuk call center volume tinggi",
+      "Latency perception tetap lebih tinggi dibanding chat: voice agent di telepon selalu punya delay yang customer sensitif, dan tuning latency butuh eksperimen parameter model",
+      "Kontrol terhadap pengetahuan agen terbatas dibanding RAG custom: knowledge base integration cukup luas tapi tidak se-flexibel platform seperti Voiceflow atau Cognigy",
+      "Closed-source proprietary dengan model proprietary: pengguna tidak bisa fine-tune suara atau self-host seperti pada open-source seperti Piper atau Coqui, jadi perusahaan dengan regulasi data ketat harus bernegosiasi lewat enterprise plan",
+    ],
+    verdict:
+      "Pilihan menarik untuk bisnis Indonesia yang butuh voice agent profesional dalam Bahasa Indonesia tanpa harus membangun pipeline sendiri. Catatan utamanya adalah harga per menit yang lumayan di konversi rupiah dan ketergantungan pada vendor proprietary; pilih ElevenLabs kalau kamu prioritas kualitas suara terbaik di pasar, dan pakai platform DIY kalau kamu butuh kontrol penuh atas data atau latensi super ketat.",
+    body: [
+      "Di tengah ledakan voice agent yang dimulai setelah Whisper dan GPT-4o Realtime, ElevenLabs Conversational AI mengambil pendekatan yang berbeda dari yang lain: alih-alih menyediakan API terpisah untuk STT, LLM, dan TTS, mereka menggabungkan ketiganya menjadi satu pipeline low-latency yang sudah turn-taking ready dan interruption aware. Bayangkan satu agen di telepon yang mampu menjawab FAQ pelanggan dalam Bahasa Indonesia, mendengarkan jawaban, lalu merespons dengan suara natural yang konsisten, semua tanpa developer harus menulis orchestrator atau mengelola turn-taking sendiri. Paradigmanya mengisi gap yang nyata di pasar: membangun voice agent dari nol butuh berminggu-minggu integrasi, sementara ElevenLabs menurunkan barrier itu menjadi hitungan jam untuk prototype dan hari untuk deployment produksi.",
+      "Yang membuat ElevenLabs menonjol dibanding DIY stack seperti LiveKit + OpenAI Realtime adalah kualitas suara yang konsisten dan tur multibahasa yang serius. Model Flash v2.5 dan Pinewood memberi latency di bawah 500 ms dalam kondisi ideal, cukup untuk percakapan natural tanpa jeda yang terasa robotic; suara multilingual yang dihasilkan bukan terjemahan robotic melainkan natural prosody di masing-masing bahasa. Dukungan Bahasa Indonesia sudah built-in di beberapa pilihan suara, dan pemahaman kode-mixed Indonesia-Inggris yang umum di pasar urban membuat agen tidak terdengar kaku saat pengguna mencampur bahasa. Fitur seperti turn-taking otomatis, interruption handling, dan emotion-aware response menutup friksi terbesar voice agent DIY: mengelola kapan harus diam, kapan harus merespons, dan bagaimana merespons secara natural.",
+      "Untuk pengguna Indonesia, ada tiga hal yang membuat ElevenLabs menarik sekaligus membatasi. Menariknya, ElevenLabs mengisi gap nyata di pasar lokal: banyak bisnis dari startup fintech sampai UKM retail sudah memakai voice agent untuk customer service, dan kekhawatiran terbesar mereka adalah kualitas suara Bahasa Indonesia yang sering terdengar robotic di solusi TTS lawas seperti Google TTS atau AWS Polly. ElevenLabs menyelesaikan itu di skenario telepon dan widget, dengan harga yang kompetitif dibanding stack DIY yang harus menyewa tiga vendor sekaligus. Batasi, pertama, harga per menit di tier Creator sekitar $0.08 per menit atau sekitar Rp 1.300 per menit, yang bisa membengkak untuk call center volume tinggi — sebuah UKM di Jakarta yang menerima 5.000 telepon sebulan akan menghabiskan $400 atau sekitar Rp 6,5 juta per bulan, lumayan untuk sebagian bisnis. Kedua, sifat proprietary membatasi kontrol: enterprise dengan regulasi ketat di sektor finansial atau kesehatan tidak bisa self-host atau fine-tune suara, sehingga negosiasi lewat enterprise plan menjadi keharusan. Ketiga, latency masih jadi metric yang perlu tuning: voice agent di telepon selalu punya delay, dan pelanggan Indonesia yang sudah biasa dengan interaksi manusia mengharapkan respons dalam satu detik, parameter model perlu disesuaikan untuk setiap kasus penggunaan.",
+      "Kesimpulannya, ElevenLabs Conversational AI adalah voice agent paling lengkap untuk bisnis Indonesia yang butuh kualitas suara natural dalam Bahasa Indonesia tanpa harus membangun pipeline sendiri. Paket gratis cocok untuk eksperimen dan prototype dengan 10.000 menit per tahun, Creator $22 per bulan masuk untuk UKM yang volume teleponnya rendah sampai menengah, dan tier enterprise tersedia untuk bisnis besar yang butuh SLA dedicated dan negosiasi data compliance. Kalau kamu prioritas kualitas suara terbaik di pasar dan tidak keberatan proprietary, ElevenLabs adalah pilihan default. Kalau kamu butuh kontrol penuh atas data, latensi super ketat, atau anggaran per menit yang sangat rendah, lebih baik pakai stack DIY dengan LiveKit dan open-source model seperti Piper atau Coqui. Dan catatan akhir: voice agent hanyalah salah satu tooling customer service — pastikan knowledge base dan SOP agen kamu sudah kuat dulu sebelum menambahkan lapisan voice, karena output ElevenLabs hanya setajam data yang kamu berikan ke knowledge base.",
+    ],
+    link: "https://elevenlabs.io/conversational-ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-04",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
