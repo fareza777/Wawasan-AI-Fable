@@ -4046,8 +4046,50 @@ export const models: Review[] = [
     date: "2026-09-04",
     featured: false,
   },
+{
+    slug: "claude-fable-5",
+    name: "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+    tagline: "Varian Fable 5 Max Effort — fallback Opus 4.8 dengan kemampuan puncak keluarga Adaptive Reasoning",
+    tags: ["Anthropic", "Proprietary", "Adaptive Reasoning", "Fallback"],
+    score: 9.3,
+    scores: [
+      { label: "Penalaran", value: 9.4 },
+      { label: "Coding", value: 9.3 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.0 },
+    ],
+    aa_intelligence_index: 62.1,
+    aa_coding_index: 76.5,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-05",
+    summary:
+      "Varian Max Effort dari keluarga Claude Fable 5 Anthropic yang dirancang sebagai fallback otomatis dari Claude Opus 4.8 Adaptive Reasoning — mempertahankan kemampuan papan atas dengan perilaku routing terukur. Intelligence index 62,1 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global, sejajar dengan Opus 5 Xhigh dan di bawah Opus 5 Max Effort, menjadikannya rute degradasi tepercaya untuk workload agentic panjang.",
+    pros: [
+      "Intelligence index 62,1 (sumber: Artificial Analysis) papan atas proprietary global — sejajar dengan Claude Opus 5 Xhigh (62,5) dan di atas Sonnet 5 (55,3) serta Opus 4.8 (57,3)",
+      "Coding index 76,5 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global — hanya 1,5 poin di bawah Opus 5 Max (78) dan sejajar dengan Opus 5 High Effort (76,5)",
+      "Peran Default Fallback Opus 4.8 memberikan rute degradasi terukur di keluarga Claude flagship, ideal untuk pipeline yang butuh konsistensi keluarga",
+      "Mode Adaptive Reasoning Max Effort secara otomatis mengaktifkan penalaran paling dalam tanpa setup manual dari developer",
+    ],
+    cons: [
+      "Harga API premium tertinggi di keluarga Anthropic: $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) — dua kali input Opus 5 ($5,00) dan Sonnet 5 ($3,00), selisih signifikan untuk workload volume tinggi",
+      "Posisi Default Fallback membingungkan developer yang tidak familiar dengan arsitektur routing Adaptive Reasoning — pemakaian eksplisit terdengar seperti keputusan sadar padahal bisa jadi hanya degradasi otomatis",
+      "Math index tidak tersedia di benchmark AA (null) untuk entry ini, jadi kualitas numerik tidak terukur standar — untuk workload finansial atau saintifik yang sensitif akurasi hitungan perlu pengujian sendiri",
+      "Akses API lewat platform.anthropic.com dan mitra regional memerlukan payment method internasional, butuh verifikasi region availability untuk developer Indonesia",
+    ],
+    verdict:
+      "Claude Fable 5 (Max Effort, Opus 4.8 Fallback) adalah rute degradasi tepercaya di keluarga Claude flagship — pilihan rasional untuk pipeline yang secara eksplisit butuh perilaku fallback terukur dengan kemampuan setara Opus 5 Xhigh. Bagi kebanyakan kasus, Opus 5 Max atau Sonnet 5 tetap jadi opsi di kelas harga lebih ramah.",
+    body: [
+      "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) adalah varian Max Effort dari keluarga Claude Fable 5 Anthropic, dirancang sebagai tujuan fallback otomatis ketika Claude Opus 4.8 Adaptive Reasoning perlu menurunkan beban sambil mempertahankan kualitas papan atas. Intelligence index 62,1 (sumber: Artificial Analysis) menaruhnya di papan atas proprietary global — sejajar dengan Claude Opus 5 Xhigh Effort (62,5), di atas Sonnet 5 (55,3) dan Claude Opus 4.8 (57,3), hanya di bawah Opus 5 Max Effort (63,1). Coding index 76,5 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 1,5 poin di bawah Opus 5 Max Effort (78) dan sejajar dengan Opus 5 High Effort (76,5) — meninggalkan Sonnet 5 (71,5) dan Opus 4.7 (73,6) dengan jarak signifikan. Lompatan intel + coding di kelas sama dengan Opus 5 Xhigh menjadikan Fable 5 Max Effort sebagai rute degradasi yang minim trade-off dari Opus 4.8 untuk workload agentic. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload agentic coding dan penalaran multi-langkah, Claude Fable 5 (Max Effort) menunjukkan karakter yang konsisten dengan DNA keluarga Claude Opus 5 — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang yang tetap koheren di belalan ronde iterasi, dan keandalan tool-use yang konsisten di kelas tertinggi proprietary Barat. Yang paling terasa dibanding Sonnet 5 adalah kualitas penalaran yang lebih dalam untuk workload reasoning chain panjang dengan banyak sub-tugas, sementara coding 76,5 menghasilkan output code yang bersih untuk task agentic panjang — refactor arsitektur multi-file, code generation lintas bahasa, dan pipeline yang butuh banyak tool-call berurutan. Mode Adaptive Reasoning Max Effort secara otomatis menentukan kedalaman penalaran per tugas dengan optimasi sumber daya yang agresif — hemat output token tanpa mengorbankan kapabilitas reasoning inti. Sebagai Default Fallback Opus 4.8, perilaku ini memberikan rute degradasi yang mulus ketika request kompleks tidak cukup ditangani Sonnet 5 atau Opus 4.8 mode standar. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 62,1 (sumber: Artificial Analysis) menaruh Fable 5 Max Effort di papan atas proprietary global — sejajar dengan Opus 5 Xhigh (62,5), meninggalkan Sonnet 5 (55,3), Opus 4.8 (57,3), Kimi K3 (57,1), dan Claude Opus 4.7 (55) di belakang, hanya di bawah Opus 5 Max (63,1). Coding index 76,5 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 1,5 poin di bawah Opus 5 Max (78) dan sejajar dengan Opus 5 High (76,5), melampaui Sonnet 5 (71,5) dengan selisih 5 poin yang signifikan. TTFT dan throughput output bervariasi per deployment mode — untuk chat interaktif real-time, Sonnet 5 atau frontier value-tier lain memberikan responsivitas lebih baik. Harga API $10,00 per juta token input dan $50,00 output bermain di kelas tertinggi Anthropic, dua kali input Opus 5 dan Sonnet 5 — sebuah posisi niche yang butuh justifikasi workload spesifik, terutama ketika Sonnet 5 atau Opus 5 Max mampu menangani mayoritas workload rutin dengan rasio harga/performa lebih baik di kelas kemampuan yang sudah dekat.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-05",
+    featured: false,
+  },
 ];
-
 
 export function getModel(slug: string) {
 
