@@ -1,49 +1,83 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "4 September 2026",
-  "period": {
-    "date": "2026-09-04",
-    "label": "4 September 2026",
-    "path": "/repo/daily/2026/09/04"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-04T00:06:18.794Z",
+  "fetchedAt": "2026-09-04T06:27:47.479Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "debpalash/VoiceStudio",
-      "owner": "debpalash",
-      "repo": "VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "githubUrl": "https://github.com/debpalash/VoiceStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/28176",
-      "language": "Python",
-      "topics": [
-        "AI voice",
-        "Text to speech",
-        "Audio processing",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-04-09T21:40:26Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "zvec-ai/zvec-grep",
-      "owner": "zvec-ai",
-      "repo": "zvec-grep",
-      "description": "Local-first search across your workspace, built for humans and AI agents.",
-      "githubUrl": "https://github.com/zvec-ai/zvec-grep",
-      "trendshiftUrl": "https://trendshift.io/repositories/200612",
+      "fullName": "humanlayer/skills",
+      "owner": "humanlayer",
+      "repo": "skills",
+      "description": "",
+      "githubUrl": "https://github.com/humanlayer/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/116089",
       "language": "TypeScript",
       "topics": [
         "AI agent",
-        "Search"
+        "AI skills"
       ],
-      "dateCreated": "2026-07-10T02:58:07Z"
+      "dateCreated": "2026-03-18T03:23:23Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "lnkiai/m3e-canvas",
+      "owner": "lnkiai",
+      "repo": "m3e-canvas",
+      "description": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
+      "githubUrl": "https://github.com/lnkiai/m3e-canvas",
+      "trendshiftUrl": "https://trendshift.io/repositories/208608",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-02T04:36:34Z"
     },
     {
       "rank": 3,
+      "fullName": "jakubkrehel/skills",
+      "owner": "jakubkrehel",
+      "repo": "skills",
+      "description": "A collection of agent skills that help with various parts of building a great interface. From animation and UI polish to accessibility and product writing.",
+      "githubUrl": "https://github.com/jakubkrehel/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/97437",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-10T08:58:36Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "larashero3-dotcom/writing-dna-skill",
+      "owner": "larashero3-dotcom",
+      "repo": "writing-dna-skill",
+      "description": "写作蒸馏器.skill｜蒸馏复刻任意写作风格的 agent skill | Writing DNA Distiller - distill and recreate any writing style as an agent skill",
+      "githubUrl": "https://github.com/larashero3-dotcom/writing-dna-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/182463",
+      "topics": [
+        "NLP",
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-27T14:43:12Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "bannedbook/fanqiang",
+      "owner": "bannedbook",
+      "repo": "fanqiang",
+      "description": "翻墙-科学上网",
+      "githubUrl": "https://github.com/bannedbook/fanqiang",
+      "trendshiftUrl": "https://trendshift.io/repositories/9012",
+      "language": "Kotlin",
+      "topics": [
+        "Proxy"
+      ],
+      "dateCreated": "2015-01-14T00:34:25Z"
+    },
+    {
+      "rank": 6,
       "fullName": "deeplethe/utopia",
       "owner": "deeplethe",
       "repo": "utopia",
@@ -60,23 +94,7 @@
       "dateCreated": "2026-08-07T19:33:17Z"
     },
     {
-      "rank": 4,
-      "fullName": "anthropics/commerce-agents",
-      "owner": "anthropics",
-      "repo": "commerce-agents",
-      "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
-      "githubUrl": "https://github.com/anthropics/commerce-agents",
-      "trendshiftUrl": "https://trendshift.io/repositories/207554",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "E-commerce",
-        "Programming examples"
-      ],
-      "dateCreated": "2026-09-01T12:30:12Z"
-    },
-    {
-      "rank": 5,
+      "rank": 7,
       "fullName": "blader/humanizer",
       "owner": "blader",
       "repo": "humanizer",
@@ -91,72 +109,48 @@
       "dateCreated": "2026-01-18T05:30:15Z"
     },
     {
-      "rank": 6,
-      "fullName": "google-research/timesfm",
-      "owner": "google-research",
-      "repo": "timesfm",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "githubUrl": "https://github.com/google-research/timesfm",
-      "trendshiftUrl": "https://trendshift.io/repositories/10050",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2024-04-29T21:26:26Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "humanlayer/skills",
-      "owner": "humanlayer",
-      "repo": "skills",
-      "description": "",
-      "githubUrl": "https://github.com/humanlayer/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/116089",
+      "rank": 8,
+      "fullName": "zvec-ai/zvec-grep",
+      "owner": "zvec-ai",
+      "repo": "zvec-grep",
+      "description": "Local-first search across your workspace, built for humans and AI agents.",
+      "githubUrl": "https://github.com/zvec-ai/zvec-grep",
+      "trendshiftUrl": "https://trendshift.io/repositories/200612",
       "language": "TypeScript",
       "topics": [
         "AI agent",
-        "AI skills"
+        "Search"
       ],
-      "dateCreated": "2026-03-18T03:23:23Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "fmtlib/fmt",
-      "owner": "fmtlib",
-      "repo": "fmt",
-      "description": "A modern formatting library",
-      "githubUrl": "https://github.com/fmtlib/fmt",
-      "trendshiftUrl": "https://trendshift.io/repositories/532",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2012-12-07T16:26:46Z"
+      "dateCreated": "2026-07-10T02:58:07Z"
     },
     {
       "rank": 9,
-      "fullName": "clshortfuse/renodx",
-      "owner": "clshortfuse",
-      "repo": "renodx",
-      "description": "Renovation Engine for DirectX Games",
-      "githubUrl": "https://github.com/clshortfuse/renodx",
-      "trendshiftUrl": "https://trendshift.io/repositories/39418",
-      "language": "HLSL",
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
       "topics": [
-        "Game development"
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
       ],
-      "dateCreated": "2024-02-05T15:39:11Z"
+      "dateCreated": "2026-04-09T21:40:26Z"
     },
     {
       "rank": 10,
-      "fullName": "DietrichGebert/ponytail",
-      "owner": "DietrichGebert",
-      "repo": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "githubUrl": "https://github.com/DietrichGebert/ponytail",
-      "trendshiftUrl": "https://trendshift.io/repositories/50668",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-06-12T00:52:37Z"
+      "fullName": "arcboxlabs/arcbox",
+      "owner": "arcboxlabs",
+      "repo": "arcbox",
+      "description": "Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <200ms boot. Local first, OCI compatible, pure Rust.",
+      "githubUrl": "https://github.com/arcboxlabs/arcbox",
+      "trendshiftUrl": "https://trendshift.io/repositories/88219",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-04T14:46:50Z"
     }
   ]
 }
