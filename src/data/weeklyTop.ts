@@ -2357,6 +2357,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Format Markdown murni yang langsung dipakai Claude Code, Codex, atau agen lain — relevan untuk editor, jurnalis, penulis, dan tim konten Indonesia yang rutin memoles draft AI agar lulus detector dan tetap terasa manusia.",
     ],
   },
+  "lnkiai/m3e-canvas": {
+    description:
+      "Editor visual berbasis browser (Next.js 16 + React 19) untuk sketsa layar Material 3 Expressive dan konversi jadi prompt 'vibe-coding' yang siap copy-paste ke Claude Code, Codex, Gemini CLI, atau Cursor.",
+    highlights: [
+      "Drag-and-drop 30+ komponen Material 3 Expressive (button, FAB, chips, app bar, navigation rail, dialog, text field, snackbar, dll.) lengkap dengan shape-morphing loading indicator dan progress wavy yang diport dari material-components-android.",
+      "Sketsa multi-layar dengan navigasi tap/swipe, transisi dari empat sisi, dan toggle phone 412×892 ↔ desktop 1280×800 di layar yang sama — bisa tautkan layar, atur z-order lewat panel layers, dan grouping multi-part untuk layout kompleks.",
+      "Theme editor empat sumbu Material 3 (Color/Shape/Type/Motion) dengan tujuh preset warna atau seed color jadi skema utuh, light/dark, tiga level kontras, dan dynamic color yang match wallpaper HP — output prompt bisa EN/JP/CN.",
+      "Semua state tersimpan di localStorage (no backend, no tracking), export prompt atau PNG, plus AI helper opsional (OpenAI/Claude/Gemini/DeepSeek) yang menulis behavior note — kunci langsung dipakai dari browser ke provider tanpa server perantara.",
+    ],
+  },
+  "sgl-project/sglang": {
+    description:
+      "Framework serving LLM open-source dari LMSYS (35k+ bintang) yang menopang lebih dari 400.000 GPU worldwide — RadixAttention, speculative decoding, dan disaggregation prefill/decode bikin inference throughput tinggi untuk model dari satu GPU sampai klaster besar.",
+    highlights: [
+      "Engine serving high-performance dari tim LMSYS (UC Berkeley): RadixAttention untuk prefix caching, zero-overhead CPU scheduler, prefill-decode disaggregation, speculative decoding (DFlash, Spec V2), continuous batching, paged attention, dan multi-LoRA batching.",
+      "Cakupan model paling luas di kelasnya: Llama, Qwen, DeepSeek, Kimi, GLM, GPT, Gemma, Mistral, sampai diffusion model (WAN, Qwen-Image) — kompatibel hampir semua Hugging Face model dan expose endpoint OpenAI-compatible.",
+      "Hardware-agnostic: NVIDIA (GB200/B300/H100/A100/5090), AMD MI355/MI300, Google TPU (SGLang-Jax), Intel Xeon CPU, Ascend NPU — krusial untuk tim Indonesia yang infrastruktur-nya campuran, tidak perlu lock-in satu vendor.",
+      "Backend rollout untuk RL post-training frontier: dipakai AReaL, Miles, slime, Tunix, verl — pemenang a16z Open Source AI Grant 2025; relevan untuk engineer ML yang ingin serving inference production-grade atau fondasi RL training tanpa vendor lock-in.",
+    ],
+  },
+  "Farama-Foundation/Gymnasium-Robotics": {
+    description:
+      "Koleksi environment robotika standar industri dari Farama Foundation (Python + MuJoCo) untuk reinforcement learning — Fetch, Shadow Hand, MaMuJoCo, Adroit, Franka Kitchen, dan Maze D4RL, semuanya mengikuti API Gymnasium.",
+    highlights: [
+      "Standar de facto RL robotika: lingkungan Fetch (7-DoF arm), Shadow Dexterous Hand 24-DoF dengan 92 touch sensor, MaMuJoCo multi-agent, Adroit Arm, Franka Kitchen multitask, dan Maze D4RL — semua pakai API Gymnasium (GoalEnv dengan observation/desired_goal/achieved_goal).",
+      "Ditenagai MuJoCo physics engine dari DeepMind dengan python binding resmi (bukan mujoco-py legacy) — simulasi kontak rigid body, joint friction, dan tactile sensor yang akurat untuk melatih policy manipulation dan locomotion.",
+      "Dukungan Hindsight Experience Replay (HER) lewat API multi-goal: reward/terminated/truncated functions bisa di-recompute dengan goal substitusi — krusial untuk riset RL sparse-reward yang jadi titik lemah method classic.",
+      "Didukung Farama Foundation (keluarga Gymnasium, PettingZoo, Minari) dengan dokumentasi robotics.farama.org dan Discord aktif — relevan untuk mahasiswa S2 dan riset startup robotika Indonesia yang butuh benchmark RL manipulatif tanpa harus tulis environment dari nol.",
+    ],
+  },
                                                               };
 
   // Helper: lookup dengan fallback ke template-generated highlights
