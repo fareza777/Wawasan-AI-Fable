@@ -4578,6 +4578,55 @@ export const repos: Review[] = [
     updatedAt: "2026-09-03",
     featured: false,
   },
+  {
+    slug: "mattpocock-skills",
+    name: "Matt Pocock Skills",
+    tagline: "Kurasi skill AI agent praktis dari engineer TypeScript educator Matt Pocock",
+    tags: ["AI Agent", "Skills", "Kurasi", "TypeScript"],
+    score: 8.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "Repositori kurasi yang mengumpulkan skill AI agent praktis yang dipakai Matt Pocock untuk engineering sehari-hari. Berisi prompt, konfigurasi agent, dan workflow nyata yang sudah teruji pada proyek profesional, dirancang untuk di-drop langsung ke Claude Code, Cursor, atau agen coding lain tanpa setup tambahan.",
+    highlights: [
+      "Kurasi personal langsung dari direktori .agents Matt Pocock, engineer educator di balik Total TypeScript dengan audiens global",
+      "Format SKILL.md portable yang kompatibel dengan Claude Code, Cursor, Codex, dan agen AI coding populer",
+      "Dokumentasi per skill dalam bahasa Inggris yang jelas, dengan konteks kapan skill relevan dan kapan harus dihindari",
+      "Cakupan luas dari workflow coding TypeScript, code review, debugging, hingga arsitektur software dan komunikasi teknis",
+      "Lisensi MIT murni sehingga bebas dipakai untuk proyek komersial, internal, maupun open-source",
+      "250.000+ bintang GitHub per September 2026 menunjukkan adopsi masif dari komunitas developer global",
+      "Iterasi aktif dengan commit mingguan, merespons feedback komunitas melalui Issues dan diskusi publik",
+      "Dilengkapi landing page aihero.dev/skills untuk eksplorasi visual sebelum instalasi",
+    ],
+    pros: [
+      "Kurasi dari satu engineer berpengalaman lebih trustworthy dibanding kurasi agregator - setiap skill sudah teruji di proyek nyata",
+      "Format terbuka SKILL.md membuat skill portabel lintas agen - tidak terkunci pada satu vendor atau platform",
+      "Lisensi MIT memungkinkan adopsi di startup, tim enterprise, maupun proyek individu tanpa beban lisensi",
+    ],
+    cons: [
+      "Repositori ini kurasi personal dengan gaya Matt Pocock - beberapa skill mungkin tidak langsung cocok untuk konteks tim Indonesia atau domain spesifik seperti fintech lokal",
+      "Bergantung pada kualitas output model LLM yang menjalankan skill - model lokal kecil akan menghasilkan eksekusi yang jauh kurang andal dibanding Claude Sonnet atau GPT-5",
+      "Repositori relatif muda (awal 2026) sehingga beberapa skill mungkin masih iterasi cepat dan berubah struktur antar rilis",
+    ],
+    verdict:
+      "Matt Pocock Skills adalah titik masuk paling praktis untuk developer Indonesia yang ingin langsung merasakan produktivitas AI agent tanpa harus membangun skill sendiri dari nol. Sangat direkomendasikan untuk dipasang di Claude Code atau Cursor sebagai starting point, dengan catatan bahwa skill terbaik adalah yang Anda modifikasi sesuai workflow tim sendiri.",
+    body: [
+      "Matt Pocock adalah nama yang sudah sangat dikenal di komunitas TypeScript global lewat platform edukasi Total TypeScript. Selama bertahun-tahun dia membangun reputasi sebagai educator yang menjelaskan konsep-konsep advanced TypeScript dengan cara yang langsung applicable di production code - dan sejak ledakan AI agent di 2025, dia mulai membagikan workflow AI agent yang dia pakai sehari-hari lewat direktori .agents di mesinnya. Repositori mattpocock/skills adalah rilis publik dari direktori tersebut: kumpulan skill teruji yang siap di-drop ke Claude Code, Cursor, Codex, atau agen coding lain, ditulis dengan standar dokumentasi yang sama seperti materi pelajarannya. Sejak dipublikasikan di awal 2026, adopsi meledak - menembus 250.000 bintang dan 21.000 fork per September 2026, angka yang mencerminkan betapa banyak developer mencari starting point yang trustworthy di tengah lautan repositori AI agent yang belum teruji.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah kelengkapan dokumentasi per skill. Berbeda dari banyak repositori skill yang memberikan prompt singkat tanpa konteks kapan harus dipakai, setiap skill di sini disertai dengan skenario penggunaan, anti-pattern yang harus dihindari, dan catatan iterasi. Misalnya skill code-review tidak hanya berisi prompt 'review kode ini' tetapi instruksi spesifik tentang prioritas (correctness > readability > performance), style guide yang dipakai (TypeScript strict mode, no any kecuali escape hatch), dan cara memberi feedback yang actionable. Untuk tim yang baru mengadopsi AI agent, struktur seperti ini menghemat waktu onboarding berminggu-minggu karena engineer tidak perlu lagi reverse-engineer kapan skill relevan.",
+      "Arsitektur skill-nya solid: setiap skill adalah file SKILL.md mandiri berisi tujuan, langkah eksekusi, parameter yang bisa dikustomisasi, dan contoh output. Format ini kompatibel dengan ekosistem SKILL.md yang mulai menjadi standar de facto di Claude Code, Cursor, dan Codex - sehingga tim yang sudah familiar dengan satu platform bisa langsung migrasi ke platform lain tanpa menulis ulang konfigurasi. CLI instalasi melalui plugin marketplace atau copy-paste langsung ke direktori .agents/ lokal keduanya didukung, dan homepage aihero.dev/skills memberikan eksplorasi visual sebelum instalasi. Lisensi MIT murni menghilangkan friksi legal untuk adopsi di startup dan korporasi, dan iterasi mingguan menunjukkan maintainer aktif yang merespons issue dalam hitungan hari.",
+      "Untuk konteks Indonesia, mattpocock/skills paling relevan untuk empat profil developer: pertama, tech lead dan senior engineer di startup yang ingin standardisasi workflow AI agent di seluruh tim tanpa harus menulis skill sendiri dari nol; kedua, software engineer individual yang ingin productivity boost di Claude Code atau Cursor dengan kurasi yang sudah teruji; ketiga, tim edukasi dan bootcamp yang ingin mengajarkan best practice AI agent lewat contoh nyata dari engineer berpengalaman; keempat, content creator teknis yang ingin belajar cara menyusun skill prompt yang efektif. Dua catatan penting: pertama, beberapa skill menggunakan idiom bahasa Inggris dan konvensi TypeScript yang mungkin perlu adaptasi untuk tim yang lebih banyak kerja dengan bahasa pemrograman lain seperti Python atau Go - meskipun struktur SKILL.md portabel, gaya penulisan promptnya tetap TypeScript-centric; kedua, untuk output bahasa Indonesia yang natural, model Claude Sonnet atau GPT-5 tetap menghasilkan eksekusi yang jauh lebih halus dibanding model lokal kecil, sehingga investasi di API frontier model tetap worthwhile. Dengan memahami dua catatan itu, mattpocock/skills adalah investasi tooling yang sangat cost-effective untuk developer Indonesia yang ingin tetap kompetitif di paruh kedua 2026.",
+    ],
+    link: "https://github.com/mattpocock/skills",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-05",
+    updatedAt: "2026-09-05",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
