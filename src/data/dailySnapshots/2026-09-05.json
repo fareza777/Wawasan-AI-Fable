@@ -1,31 +1,67 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "5 September 2026",
-  "period": {
-    "date": "2026-09-05",
-    "label": "5 September 2026",
-    "path": "/repo/daily/2026/09/05"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-05T00:06:21.998Z",
+  "fetchedAt": "2026-09-05T06:09:09.758Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "sgl-project/sglang",
-      "owner": "sgl-project",
-      "repo": "sglang",
-      "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
-      "githubUrl": "https://github.com/sgl-project/sglang",
-      "trendshiftUrl": "https://trendshift.io/repositories/7068",
+      "fullName": "Farama-Foundation/Shimmy",
+      "owner": "Farama-Foundation",
+      "repo": "Shimmy",
+      "description": "PettingZoo and Gymnasium bindings for popular reinforcement learning environments outside of Farama",
+      "githubUrl": "https://github.com/Farama-Foundation/Shimmy",
+      "trendshiftUrl": "https://trendshift.io/repositories/189804",
       "language": "Python",
-      "topics": [
-        "AI infrastructure"
-      ],
-      "dateCreated": "2024-01-08T04:15:52Z"
+      "topics": [],
+      "dateCreated": "2022-10-06T21:24:05Z"
     },
     {
       "rank": 2,
+      "fullName": "Farama-Foundation/MPE2",
+      "owner": "Farama-Foundation",
+      "repo": "MPE2",
+      "description": "A set of communication oriented environments",
+      "githubUrl": "https://github.com/Farama-Foundation/MPE2",
+      "trendshiftUrl": "https://trendshift.io/repositories/168329",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2023-05-01T15:30:09Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Farama-Foundation/MAgent2",
+      "owner": "Farama-Foundation",
+      "repo": "MAgent2",
+      "description": "An engine for high performance multi-agent environments with very large numbers of agents, along with a set of reference environments",
+      "githubUrl": "https://github.com/Farama-Foundation/MAgent2",
+      "trendshiftUrl": "https://trendshift.io/repositories/110941",
+      "language": "C++",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2022-09-05T16:29:27Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "EvoMap/AutoResearch",
+      "owner": "EvoMap",
+      "repo": "AutoResearch",
+      "description": "AI/ML research agents from idea to paper-ready evidence. An EvoMap open-source project.",
+      "githubUrl": "https://github.com/EvoMap/AutoResearch",
+      "trendshiftUrl": "https://trendshift.io/repositories/202902",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-08-15T07:48:42Z"
+    },
+    {
+      "rank": 5,
       "fullName": "lnkiai/m3e-canvas",
       "owner": "lnkiai",
       "repo": "m3e-canvas",
@@ -37,69 +73,34 @@
       "dateCreated": "2026-09-02T04:36:34Z"
     },
     {
-      "rank": 3,
-      "fullName": "debpalash/VoiceStudio",
-      "owner": "debpalash",
-      "repo": "VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "githubUrl": "https://github.com/debpalash/VoiceStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "rank": 6,
+      "fullName": "tigerless-labs/autoharness",
+      "owner": "tigerless-labs",
+      "repo": "autoharness",
+      "description": "A self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
+      "githubUrl": "https://github.com/tigerless-labs/autoharness",
+      "trendshiftUrl": "https://trendshift.io/repositories/68941",
       "language": "Python",
       "topics": [
-        "AI voice",
-        "Text to speech",
-        "Audio processing",
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-04-09T21:40:26Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "affaan-m/ECC",
-      "owner": "affaan-m",
-      "repo": "ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "githubUrl": "https://github.com/affaan-m/ECC",
-      "trendshiftUrl": "https://trendshift.io/repositories/21488",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
         "AI coding assistant",
         "AI skills"
       ],
-      "dateCreated": "2026-01-18T00:51:51Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "blader/humanizer",
-      "owner": "blader",
-      "repo": "humanizer",
-      "description": "Agent skill that removes signs of AI-generated writing from text",
-      "githubUrl": "https://github.com/blader/humanizer",
-      "trendshiftUrl": "https://trendshift.io/repositories/21585",
-      "language": "Python",
-      "topics": [
-        "NLP",
-        "AI skills"
-      ],
-      "dateCreated": "2026-01-18T05:30:15Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "mattpocock/skills",
-      "owner": "mattpocock",
-      "repo": "skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/21589",
-      "language": "Shell",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-03T11:15:53Z"
+      "dateCreated": "2026-06-09T21:05:42Z"
     },
     {
       "rank": 7,
+      "fullName": "anthropics/fermats-last-theorem",
+      "owner": "anthropics",
+      "repo": "fermats-last-theorem",
+      "description": "",
+      "githubUrl": "https://github.com/anthropics/fermats-last-theorem",
+      "trendshiftUrl": "https://trendshift.io/repositories/213190",
+      "language": "Lean",
+      "topics": [],
+      "dateCreated": "2026-09-04T14:21:04Z"
+    },
+    {
+      "rank": 8,
       "fullName": "DietrichGebert/ponytail",
       "owner": "DietrichGebert",
       "repo": "ponytail",
@@ -114,47 +115,30 @@
       "dateCreated": "2026-06-12T00:52:37Z"
     },
     {
-      "rank": 8,
-      "fullName": "humanlayer/skills",
-      "owner": "humanlayer",
-      "repo": "skills",
-      "description": "",
-      "githubUrl": "https://github.com/humanlayer/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/116089",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-18T03:23:23Z"
-    },
-    {
       "rank": 9,
-      "fullName": "jakubkrehel/skills",
-      "owner": "jakubkrehel",
-      "repo": "skills",
-      "description": "A collection of agent skills that help with various parts of building a great interface. From animation and UI polish to accessibility and product writing.",
-      "githubUrl": "https://github.com/jakubkrehel/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/97437",
+      "fullName": "magnitudedev/magnitude",
+      "owner": "magnitudedev",
+      "repo": "magnitude",
+      "description": "Releases for the Magnitude coding agent",
+      "githubUrl": "https://github.com/magnitudedev/magnitude",
+      "trendshiftUrl": "https://trendshift.io/repositories/79752",
       "topics": [
         "AI agent",
-        "AI skills"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-07-10T08:58:36Z"
+      "dateCreated": "2026-06-12T09:06:26Z"
     },
     {
       "rank": 10,
-      "fullName": "bannedbook/fanqiang",
-      "owner": "bannedbook",
-      "repo": "fanqiang",
-      "description": "翻墙-科学上网",
-      "githubUrl": "https://github.com/bannedbook/fanqiang",
-      "trendshiftUrl": "https://trendshift.io/repositories/9012",
-      "language": "Kotlin",
-      "topics": [
-        "Proxy"
-      ],
-      "dateCreated": "2015-01-14T00:34:25Z"
+      "fullName": "sonicloudco/recorder",
+      "owner": "sonicloudco",
+      "repo": "recorder",
+      "description": "Recorder Sdk",
+      "githubUrl": "https://github.com/sonicloudco/recorder",
+      "trendshiftUrl": "https://trendshift.io/repositories/208417",
+      "language": "Objective-C",
+      "topics": [],
+      "dateCreated": "2026-09-02T03:32:02Z"
     }
   ]
 }
