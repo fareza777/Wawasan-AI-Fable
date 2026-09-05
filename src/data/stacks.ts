@@ -3568,6 +3568,47 @@ export const stacks: Review[] = [
     date: "2026-09-04",
     featured: false,
   },
+  {
+    slug: "luma-dream-machine",
+    name: "Luma Dream Machine",
+    tagline: "Generator video AI Luma dengan raymarch dan camera motion dari teks atau gambar",
+    tags: ["Luma AI", "Freemium", "Video Gen", "Cinematic"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 8.7 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 8.3 },
+    ],
+    summary:
+      "Luma Dream Machine adalah generator video AI dari Luma AI yang mengubah teks atau gambar menjadi klip video pendek dengan gerakan kamera sinematik dan konsistensi objek yang solid untuk kategori generator open-to-public. Dalam pengujian editorial Wawasan AI, ini adalah tool yang menurunkan barrier produksi video AI dari level riset menjadi hitungan menit: cukup tulis prompt atau unggah frame awal, dan klip 5 detik dengan kamera dolly, pan, atau orbit keluar dengan koherensi fisika yang jarang dicapai oleh generator video pesaing.",
+    pros: [
+      "Kualitas visual dan koherensi gerak di atas rata-rata untuk kategori open: konsistensi subjek antar-frame cukup baik, jarang ada morphing wajah atau perubahan bentuk tubuh yang kentara di durasi 4-5 detik",
+      "Motion cinematik bawaan tanpa perlu tulis prompt kompleks: raymarch, orbit, dolly, dan crane shot muncul natural dari deskripsi adegan sederhana",
+      "Antarmuka web yang bersih dan onboarding cepat: pengguna baru bisa menghasilkan klip pertama dalam waktu kurang dari dua menit tanpa harus belajar prompt engineering khusus",
+      "Harga Freemium yang murah hati untuk penggunaan pribadi: tier gratis memberi 30 generations per bulan, dan Standard $9.6 per bulan sudah cukup untuk skenario kreator konten dengan produksi rutin",
+      "Ekosistem API yang berkembang: Ray2, Ray Flash, dan Phoenix Image tersedia lewat Dream Machine API, memungkinkan integrasi ke pipeline pasca-produksi dan automasi konten",
+    ],
+    cons: [
+      "Durasi klip pendek di tier gratis: hanya 5 detik per generation, dan perpanjangan sampai 9 detik butuh paket Standard atau di atasnya",
+      "Konsistensi narasi panjang masih lemah: untuk cerita multi-shot atau transisi scene yang berkelanjutan, pengguna tetap harus menyambung klip secara manual di editor",
+      "Kontrol sinematik spesifik terbatas dibanding Runway: keyword seperti focal length atau aperture tidak selalu dihormati model, dan prompt kompleks bisa diabaikan sebagian",
+      "Watermark pada hasil export tier gratis: menghapus watermark butuh langganan bulanan, menurunkan nilai untuk konten komersial tanpa watermark",
+    ],
+    verdict:
+      "Pilihan menarik untuk kreator Indonesia yang butuh generator video AI open-to-public dengan kualitas visual solid dan harga masuk akal. Catatan utamanya adalah durasi klip yang masih pendek di tier gratis dan kontrol sinematik yang tidak sepresisi Runway Gen-4; pilih Luma Dream Machine kalau kamu prioritas koherensi gerak dan antarmuka yang ramah untuk konten sosial, dan pakai Runway atau Sora kalau kamu butuh durasi panjang atau kontrol kamera tingkat film.",
+    body: [
+      "Di antara generator video AI yang boleh diakses publik pada paruh kedua 2025 dan awal 2026, Luma Dream Machine mengambil pendekatan yang berbeda dari pesaing seperti Runway atau Kling: alih-alih fokus ke kontrol parameter teknis atau durasi panjang, mereka memprioritaskan koherensi gerak dan estetika sinematik dalam durasi pendek. Bayangkan seorang kreator konten di Jakarta yang ingin membuat teaser produk skincare berdurasi 5 detik: cukup unggah foto produk dan tulis prompt 'slow orbit, soft light, cosmetic bottle rotating on marble surface', dan dalam waktu kurang dari dua menit klip tersebut keluar dengan gerakan kamera yang natural dan pencahayaan yang konsisten dengan foto input. Paradigmanya mengisi gap yang nyata di pasar: banyak generator video AI menghasilkan klip dengan subjek yang berubah bentuk atau latar belakang yang morphing, dan Luma menonjol karena menjaga konsistensi bentuk di seluruh frame.",
+      "Yang membuat Luma Dream Machine menonjol dibanding pesaing adalah kombinasi model Ray2 dan pipeline rendering yang dioptimalkan untuk gerakan kamera. Ray2 adalah model transformer video dengan kemampuan memahami fisika dasar seperti gravitasi, inersia, dan perspektif, sehingga gerakan orbit atau dolly terasa natural tanpa jitter yang sering muncul di generator lain. Antarmuka web-nya sangat ramah untuk pengguna non-teknis: cukup tulis prompt dalam bahasa natural, pilih rasio aspek, dan klik generate, tanpa harus memahami parameter seperti CFG scale atau seed number. Pipeline ini juga menyertakan Ray Flash, varian model yang lebih cepat untuk iterasi prompt, dan Phoenix, model image generator yang terintegrasi untuk kasus start-from-image. Bagi pengguna Indonesia yang baru masuk ke video AI, on-ramp ini jauh lebih halus dibanding Runway yang masih mengandalkan parameter teknis atau Kling yang butuh koneksi internet stabil ke server Asia.",
+      "Untuk pengguna Indonesia, ada tiga hal yang membuat Luma menarik sekaligus membatasi. Menariknya, Luma mengisi gap yang nyata di pasar kreator konten lokal: banyak content creator dan UMKM di Indonesia yang membutuhkan video pendek untuk Instagram Reels, TikTok, dan YouTube Shorts, dan generator video AI dengan kualitas solid plus harga masuk akal adalah nilai yang sulit dicari. Tier gratis 30 generations per bulan cukup untuk eksperimen dan prototyping, dan Standard $9.6 per bulan atau sekitar Rp 156 ribu sudah mencakup 120 generations per bulan dengan klip 9 detik dan tanpa watermark, angka yang kompetitif dibanding kreator lokal yang harus menyewa motion designer. Batasi, pertama, durasi klip masih pendek: 5 detik di tier gratis dan 9 detik di Standard, sehingga untuk konten narasi panjang atau transisi multi-shot yang berkelanjutan, kreator tetap harus menyambung klip secara manual di editor. Kedua, kontrol sinematik spesifik tidak sepresisi Runway: prompt seperti '85mm lens, f/1.4, shallow depth of field' tidak selalu dihormati model, dan untuk produksi yang butuh konsistensi gaya visual ketat, post-processing di After Effects atau DaVinci tetap diperlukan. Ketiga, server inference Luma berlokasi di Amerika Serikat, sehingga latensi dari Indonesia bisa 5-10 detik lebih tinggi dibanding dari San Francisco, dan biaya bandwidth tambahan untuk iterasi prompt banyak kadang membuat workflow terasa lambat di jam sibuk.",
+      "Kesimpulannya, Luma Dream Machine adalah generator video AI open-to-public dengan kualitas visual solid dan antarmuka ramah untuk kreator Indonesia yang baru masuk ke video AI atau yang prioritasnya konten sosial berdurasi pendek. Tier gratis cocok untuk eksperimen, Standard $9.6 per bulan masuk untuk kreator dengan produksi rutin, dan paket Pro dengan API access tersedia untuk studio kecil yang butuh integrasi ke pipeline pasca-produksi. Kalau kamu prioritas koherensi gerak dan kemudahan on-ramp, Luma Dream Machine adalah pilihan default di kelasnya. Kalau kamu butuh durasi panjang di atas 10 detik, kontrol kamera tingkat film, atau integrasi native ke workflow pasca-produksi enterprise, lebih baik pakai Runway Gen-4 atau Sora 2. Dan catatan akhir: video AI tetap memerlukan sentuhan pasca-produksi untuk color grading, sound design, dan transisi, jadi generator ini paling baik dipakai sebagai salah satu layer dalam pipeline konten, bukan sebagai pengganti motion designer sepenuhnya.",
+    ],
+    link: "https://lumalabs.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-05",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
