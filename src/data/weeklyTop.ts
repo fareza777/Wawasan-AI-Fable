@@ -2387,7 +2387,37 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Didukung Farama Foundation (keluarga Gymnasium, PettingZoo, Minari) dengan dokumentasi robotics.farama.org dan Discord aktif — relevan untuk mahasiswa S2 dan riset startup robotika Indonesia yang butuh benchmark RL manipulatif tanpa harus tulis environment dari nol.",
     ],
   },
-                                                              };
+  "affaan-m/ECC": {
+    description:
+      "Sistem 'operating system' untuk agent harness AI (Claude Code, Codex, Opencode, Cursor) — 249k+ bintang, MIT, dengan skill berlapis, instink otomatis, memori, keamanan, dan workflow riset-first untuk membawa agen coding ke level produksi.",
+    highlights: [
+      "Bukan sekadar kumpulan prompt: ECC menambah lapisan skill, instink (heuristik otomatis), memori jangka panjang, dan modul keamanan di atas Claude Code, Codex, Opencode, dan Cursor — empat agent harness AI yang paling banyak dipakai sehari-hari.",
+      "Pendekatan 'research-first development': agen dipaksa riset dulu (web/GitHub/docs) sebelum eksekusi, sehingga output lebih ter-grounded, lebih sedikit halusinasi, dan lebih jarang menebak API yang sebenarnya sudah deprecated.",
+      "Distribusi resmi lewat `npx ecc-universal setup`, GitHub App `ecc-tools`, plugin marketplace `ecc@ecc`, dan npm packages `ecc-universal` + `ecc-agentshield` — README tegas memperingatkan untuk tidak install dari mirror pihak ketiga yang tidak diaudit.",
+      "249k+ bintang di GitHub dalam waktu singkat dan adopsi besar dari komunitas yang sebelumnya frustrasi dengan agen coding yang sering lupa konteks; MIT-licensed, multi-bahasa (12 terjemahan lokalisasi), dan extensible lewat hook + MCP standar ekosistem AI 2026.",
+    ],
+  },
+  "magnitudedev/magnitude": {
+    description:
+      "Inference server open-source (Apache 2.0) yang jalankan model AI lokal terbaik untuk hardware kamu, lalu colok ke agent coding yang sudah dipakai — Pi, OpenCode, Hermes, Claude Code, Codex, atau Cline, tanpa API key atau langganan.",
+    highlights: [
+      "Satu perintah `npx @magnitudedev/cli setup` (atau lewat agent) langsung memprofil hardware (chip, RAM, bandwidth), lalu merekomendasikan model lokal yang paling cocok lengkap estimasi tok/s — bukan menebak seperti setup Ollama manual.",
+      "Plug ke hampir semua coding agent lewat konfigurasi harness: Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, dan Cline — atau pakai built-in harness-nya; mendukung macOS, Linux, dan Windows via WSL.",
+      "Inference yang di-tune end-to-end untuk workload agentik: speculative decoding, concurrency, models loaded on-demand lalu unload saat idle atau RAM menipis — bukan server pasif, melainkan runtime yang adaptif terhadap hardware.",
+      "Apache 2.0 dan 100% offline: model, prompt, dan file tidak pernah meninggalkan mesin — relevan untuk developer yang peduli privasi source code, atau yang ingin berhemat dari tagihan API coding agent untuk task sehari-hari.",
+    ],
+  },
+  "tigerless-labs/autoharness": {
+    description:
+      "Layer skill self-learning untuk Claude Code (MIT, Python) — belajar dari sesi nyata, menggabungkan skill serupa (bukan sekadar numpuk), memperbaruinya saat dipakai, dan memangkas yang sudah tidak terpakai, tanpa daemon atau benchmark terpisah.",
+    highlights: [
+      "Skill-nya dipelajari dari sesi Claude Code yang sedang berjalan (bukan dataset terpisah): setiap episode kerja didistilasi jadi skill lewat background pass, atau manual via `/learn` setelah kamu memecahkan masalah.",
+      "Reflektor membandingkan skill baru dengan yang sudah ada dan 'melipat' (fold) skill dengan skenario sama jadi satu — sehingga layer tidak membengkak dengan near-duplicate, dan tercatat skill mana yang absorbsi yang mana.",
+      "Validasi in-use, bukan benchmark: skill tetap hidup kalau dipakai di turn berikutnya (loads over requests yang tersedia), tanpa oracle di active path dan tanpa token yang dihabiskan untuk eval khusus — fokus pada bukti pemakaian nyata.",
+      "Sketsa dampak dari blog HAL (swyx): 'same model, different harness' — 42% → 78% di CORE-Bench. autoharness hanya menyentuh skill yang ia tulis sendiri, sehingga skill manual kamu atau skill dari plugin lain sama sekali tidak diubah.",
+    ],
+  },
+};
 
   // Helper: lookup dengan fallback ke template-generated highlights
   export function getWeeklyTopEntry(fullName: string): WeeklyTopEntry | undefined {
