@@ -4089,6 +4089,50 @@ export const models: Review[] = [
     date: "2026-09-05",
     featured: false,
   },
+  {
+    slug: "gpt-6-astra-high",
+    name: "GPT-6 Astra (high)",
+    tagline: "Flagship Astra OpenAI — frontier coding dengan harga premium",
+    tags: ["OpenAI", "Proprietary", "Coding", "Agent"],
+    score: 8.9,
+    scores: [
+      { label: "Penalaran", value: 8.9 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 53.4,
+    aa_coding_index: 77.1,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-06",
+    summary:
+      "GPT-6 Astra (high) adalah varian Astra dari keluarga GPT-6 OpenAI, dirancang untuk workload coding agentic dan penalaran multi-langkah di kelas proprietary tertinggi. Coding index 77,1 (sumber: Artificial Analysis) menaruh model ini di papan atas benchmark pemrograman global — sejajar dengan frontier high-end lainnya. Harga API $10,00 per juta token input dan $50,00 output menempatkannya di kelas premium OpenAI, dua kali input Sonnet 5 atau Claude Sonnet 5 — sebuah posisi niche yang butuh justifikasi workload spesifik di mana coding agentik adalah kebutuhan utama.",
+    pros: [
+      "Coding index 77,1 memimpin benchmark pemrograman proprietary — sejajar dengan Claude Opus 5 Max Effort",
+      "Throughput output solid (median 57,8 tokens/sec) untuk kelas frontier — cukup untuk pipeline agentic multi-langkah",
+      "Ekosistem OpenAI mature — integrasi native dengan Responses API, Assistants, dan tooling agentic",
+      "Konsistensi gaya dan kemampuan tool-use yang teruji di kelas proprietary untuk workload produksi",
+    ],
+    cons: [
+      "Intelligence index 53,4 di bawah frontier tertinggi (Claude Opus 5 Max 63,1; GPT-5 60+) — bukan model penalaran paling tajam",
+      "Harga premium $10/$50 per 1M token — 2x Sonnet 5, kurang menarik untuk workload volume tinggi",
+      "TTFT 21 detik cukup tinggi untuk chat interaktif real-time — kurang responsif dibanding Sonnet atau Haiku",
+      "Tidak ada diferensiasi jelas vs GPT-5 atau Claude Opus 5 di benchmark selain coding — value-prop sempit",
+    ],
+    verdict:
+      "GPT-6 Astra (high) adalah pilihan masuk akal untuk pipeline coding agentic yang menempatkan kemampuan pemrograman sebagai prioritas utama di ekosistem OpenAI. Untuk penalaran murni atau workload sensitif harga, Sonnet 5, Claude Opus 5 Max, atau DeepSeek V3 memberikan nilai lebih baik di kelas biaya yang sama atau lebih rendah.",
+    body: [
+      "GPT-6 Astra (high) adalah varian high-effort dari keluarga GPT-6 Astra OpenAI — dirancang untuk workload di mana coding agentic adalah kebutuhan utama. Coding index 77,1 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global — sejajar dengan Claude Opus 5 Max Effort (78) dan meninggalkan Sonnet 5 (71,5) dengan jarak signifikan. Intelligence index 53,4 menaruhnya di papan atas proprietary, meski belum menyentuh level frontier tertinggi seperti Claude Opus 5 Max (63,1) atau GPT-5 (60+). Posisi ini menjadikan Astra (high) sebagai pilihan rasional untuk pipeline agentik yang secara eksplisit mengoptimalkan kualitas output kode dibanding latensi atau harga.",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic dan iterasi multi-langkah, GPT-6 Astra (high) menunjukkan karakter yang konsisten dengan DNA keluarga GPT OpenAI — kemampuan tool-use yang teruji di ekosistem Responses API dan Assistants, output code yang bersih untuk task refactor multi-file, dan pipeline yang membutuhkan banyak tool-call berurutan. Yang paling terasa dibanding model kelas bawah adalah kualitas output untuk workload panjang — round-trip iterasi yang tetap koheren, kemampuan mempertahankan konteks lintas puluhan file, dan perilaku fallback yang dapat diprediksi ketika tool gagal. Throughput 57,8 tokens/sec cukup untuk workload batch agentic; TTFT 21 detik agak tinggi untuk chat real-time tetapi masih dalam batas toleransi untuk pipeline asynchronous.",
+      "Soal angka, intelligence index 53,4 (sumber: Artificial Analysis) menaruh GPT-6 Astra (high) di papan atas proprietary — sejajar dengan Claude Opus 4.7 (55), di atas Sonnet 5 (55,3) untuk coding, dan di bawah frontier kelas Opus 5 Max (63,1). Coding index 77,1 memimpin benchmark proprietary, hanya 0,9 poin di bawah Claude Opus 5 Max (78) dan meninggalkan Sonnet 5 (71,5) dengan selisih 5,6 poin. Harga API $10,00 per juta token input dan $50,00 output bermain di kelas tertinggi OpenAI — dua kali input Sonnet 5, tiga kali input GPT-5 standar. Bagi developer Indonesia yang menghitung dolar, ini adalah posisi premium yang butuh justifikasi workload spesifik: coding agentic harian untuk pipeline produksi yang memiliki volume cukup untuk menyerap biaya, atau workload regulasi di mana konsistensi output OpenAI adalah kebutuhan compliance. Untuk kebanyakan kasus, Sonnet 5, Claude Opus 5 Max, atau DeepSeek V3 memberikan rasio harga/performa lebih baik. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: GPT-6 Astra (high) tidak menunjukkan diferensiasi mencolok dari GPT-5 atau Claude Opus 5 di benchmark umum selain coding — value propositionnya sempit dan bergantung pada preferensi ekosistem. TTFT 21 detik cukup tinggi untuk chat interaktif real-time, sehingga kurang cocok untuk assistant pelanggan atau aplikasi UX yang butuh responsivitas instan. Juga, untuk workload penalaran murni di mana coding bukan kebutuhan utama, Sonnet 5 atau Claude Opus 5 memberikan nilai lebih baik di kelas biaya lebih rendah. Strategi pemakaian yang masuk akal: Astra (high) untuk coding agentic volume tinggi di ekosistem OpenAI; Sonnet 5 atau Haiku untuk chat real-time; Claude Opus 5 Max untuk penalaran paling berat; DeepSeek atau Qwen untuk workload sensitif harga.",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-06",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
