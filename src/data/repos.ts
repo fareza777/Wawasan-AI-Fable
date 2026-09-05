@@ -4627,6 +4627,55 @@ export const repos: Review[] = [
     updatedAt: "2026-09-05",
     featured: false,
   },
+{
+    slug: "anthropics-skills",
+    name: "Anthropic Skills",
+    tagline: "Repositori resmi Anthropic untuk paket skill Agent Skills siap pakai lintas platform.",
+    tags: ["AI Agent", "Skills", "Kurasi Resmi", "Python"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 9.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Repositori publik resmi Anthropic yang menjadi sumber otoritatif untuk Agent Skills: paket instruksi modular berisi prompt, alur kerja, dan best practice yang dapat dipasang di Claude Code, Claude.ai, dan agen AI lain yang mendukung format SKILL.md. Berisi skill untuk coding, dokumentasi, komunikasi profesional, hingga workflow enterprise seperti analisis data dan pembuatan presentasi.",
+    highlights: [
+      "Repositori publik resmi dari Anthropic, organisasi di balik Claude - menjamin kompatibilitas dan prioritas pengembangan jangka panjang",
+      "Format SKILL.md terbuka yang portabel lintas platform - dapat dipasang di Claude Code, Claude.ai, Cursor, dan agen lain yang mengadopsi standar Skills",
+      "Lebih dari 16 skill siap pakai mencakup workflow coding (frontend, backend, testing), komunikasi profesional, dokumentasi teknis, hingga presentasi bisnis",
+      "Dokumen SPEC.md dan reference.md menjelaskan arsitektur Skills secara end-to-end - berguna bagi developer yang ingin membuat skill mereka sendiri",
+      "Lisensi sumber terbuka memungkinkan fork dan adaptasi untuk kebutuhan internal tim atau komersial",
+      "174.517 bintang dan 20.669 fork per September 2026, tertinggi di antara semua repositori Agent Skills publik",
+      "Iterasi aktif dengan commit mingguan, merefleksikan prioritas tinggi Anthropic terhadap standarisasi format skill",
+      "Termasuk skill spesifik seperti doc-coauthoring, webapp-testing, dan pptx yang langsung applicable untuk workflow profesional",
+    ],
+    pros: [
+      "Sumber otoritatif langsung dari pembuat model Claude - skill yang tersedia selalu sinkron dengan kemampuan dan API model terbaru",
+      "Standar SKILL.md terbuka memberikan kebebasan bagi developer untuk membuat skill sendiri dan memastikan portabilitas lintas platform",
+      "Cakupan skill yang luas dari kebutuhan teknis (coding, testing) hingga profesional (dokumentasi, presentasi) - cocok untuk berbagai profil pengguna",
+    ],
+    cons: [
+      "Tidak memiliki LICENSE formal di repositori publik - status legal untuk adopsi komersial memerlukan klarifikasi lebih lanjut dari Anthropic",
+      "Repositori relatif baru (September 2025) sehingga beberapa skill masih iterasi cepat dan struktur dapat berubah antar rilis",
+      "Fokus ekosistem Claude membuat beberapa workflow lebih optimal ketika dijalankan dengan model Anthropic - pengguna model lain mungkin perlu adaptasi",
+    ],
+    verdict:
+      "anthropics/skills adalah titik masuk paling otoritatif untuk developer Indonesia yang ingin membangun workflow AI agent di atas Claude. Sangat direkomendasikan untuk eksplorasi awal sebelum membuat skill sendiri, dengan catatan bahwa adopsi komersial sebaiknya menunggu klarifikasi lisensi resmi dari Anthropic.",
+    body: [
+      "Repositori anthropics/skills adalah jawaban Anthropic untuk standarisasi Agent Skills yang selama 2025-2026 muncul sebagai pola dominan di komunitas AI agent. Berbeda dari repositori kurasi personal seperti mattpocock/skills atau addyosmani/agent-skills, repositori ini dipublikasikan langsung oleh Anthropic sebagai bagian dari inisiatif Claude Skills yang diumumkan bersamaan dengan Claude 4.5. Format intinya adalah SKILL.md - file Markdown berisi YAML frontmatter (nama, deskripsi, kapan skill relevan) dan body Markdown berisi instruksi langkah demi langkah untuk agen. Format ini mulai menjadi standar de facto di ekosistem Claude Code dan sekarang diadopsi oleh platform lain termasuk Cursor dan IDE berbasis VS Code fork. Sejak dipublikasikan September 2025, repositori menembus 174.517 bintang dan 20.669 fork per September 2026 - angka yang menempatkan anthropics/skills sebagai repositori Agent Skills publik dengan adopsi tertinggi, melampaui repositori kurasi personal yang lebih dulu populer.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling terasa adalah kualitas dokumentasi di setiap skill. Berbeda dari repositori prompt engineering generik yang memberikan instruksi singkat tanpa konteks, setiap skill di sini disertai dengan skenario penggunaan spesifik, daftar situasi ketika skill sebaiknya dihindari, dan catatan iterasi yang menjelaskan keputusan desain. Misalnya skill doc-coauthoring tidak hanya berisi prompt 'bantu saya menulis dokumentasi' tetapi instruksi terstruktur tentang discovery (klarifikasi audiens dan scope), information gathering (kumpulkan sumber), dan drafting (tulis draft bertahap dengan validasi). Untuk tim yang baru mengadopsi workflow AI agent, struktur seperti ini menghemat waktu berhari-hari karena engineer tidak perlu lagi reverse-engineer kapan skill relevan atau bagaimana cara mengoptimalkannya.",
+      "Arsitektur skill-nya solid dan terdokumentasi baik: setiap skill adalah file SKILL.md mandiri berisi tujuan, langkah eksekusi, parameter yang dapat dikustomisasi, dan contoh output. Repositori juga menyertakan SPEC.md yang menjelaskan format secara formal - berguna bagi developer atau vendor yang ingin membangun ekosistem di sekitar standar ini. Contoh skill yang langsung applicable antara lain skill untuk code review dengan prioritas correctness-readability-performance, skill untuk membuat presentasi PowerPoint (pptx), skill untuk testing webapp (webapp-testing), dan skill untuk komunikasi profesional. CLI pemasangan melalui plugin marketplace atau copy langsung ke folder ~/.claude/skills/ keduanya didukung, dan Anthropic secara eksplisit mendorong kontribusi komunitas lewat panduan di CONTRIBUTING.md.",
+      "Untuk konteks Indonesia, anthropics/skills paling relevan untuk empat profil pengguna: pertama, software engineer dan tech lead di startup yang ingin standardisasi workflow AI coding di seluruh tim dengan skill yang sudah teruji oleh tim Anthropic; kedua, technical writer dan product manager yang ingin bantuan AI untuk dokumentasi teknis atau komunikasi profesional lewat skill doc-coauthoring atau comms; ketiga, data analyst dan business analyst yang memerlukan skill khusus seperti analisis data atau pembuatan slide bisnis; keempat, developer platform atau ISV yang ingin membangun tooling di atas standar SKILL.md untuk pasar Indonesia. Dua catatan penting: pertama, repositori ini belum memiliki LICENSE file formal, sehingga adopsi untuk produk komersial sebaiknya menunggu klarifikasi dari Anthropic atau konsultasi dengan legal tim - sampai klarifikasi tersebut, skill sebaiknya digunakan untuk kebutuhan internal dan eksplorasi; kedua, karena fokus ekosistem Claude, beberapa skill paling optimal ketika dijalankan dengan model Claude Sonnet 4.5 atau Opus 4.5 - pengguna model dari vendor lain mungkin perlu adaptasi prompt untuk hasil yang sebanding. Dengan memahami dua catatan itu, anthropics/skills adalah titik masuk paling otoritatif untuk mengadopsi standar Agent Skills di paruh kedua 2026, dan perkembangan repositori ini layak dipantau sebagai indikator arah resmi Anthropic untuk AI agent workflow.",
+    ],
+    link: "https://github.com/anthropics/skills",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-06",
+    updatedAt: "2026-09-06",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
