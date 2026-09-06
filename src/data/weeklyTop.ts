@@ -2417,6 +2417,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Sketsa dampak dari blog HAL (swyx): 'same model, different harness' — 42% → 78% di CORE-Bench. autoharness hanya menyentuh skill yang ia tulis sendiri, sehingga skill manual kamu atau skill dari plugin lain sama sekali tidak diubah.",
     ],
   },
+  "Novals83/5min-btc-polymarket": {
+    description:
+      "Skill OpenClaw open-source untuk trading BTC 5-minute Up/Down di Polymarket — pakai strategi momentum ke close (entry ~2 menit jelang expiry), dengan risk control, sizing 50% alokasi, dan micro-hedge opsional saat skew ekstrem.",
+    highlights: [
+      "Strategi momentum-to-close yang eksplisit: masuk pasar BTC 5 menit di sekitar ~2 menit sebelum expiry, hanya setelah harga BTC sudah bergerak $70-$100 di interval aktif — bukan reversal, melainkan 'ikut arah' yang sudah terbentuk.",
+      "Manajemen risiko tertanam di skill: sizing default ~50% alokasi trading (bisa diatur per profil risiko), plus micro-hedge opsional $1-$2 di sisi berlawanan saat skew crowd 95/5 untuk mengurangi tail risk.",
+      "Didesain sebagai skill OpenClaw (bukan bot berdiri sendiri) — SKILL.md, config/, scripts/, examples/ semuanya terpisah sehingga trader bisa colok ke workflow Polymarket stack yang sudah ada tanpa duplikasi logic.",
+      "Cocok untuk trader Indonesia yang sudah eksperimen di Polymarket dan ingin bot momentum BTC jangka pendek yang auditable (kode Python terbuka, risk parameter terlihat di config) tanpa percaya sinyal proprietary.",
+    ],
+  },
+  "experientiallabs/experiential": {
+    description:
+      "Gateway & router open-source untuk workflow agen AI (Python, OpenAI-compatible) — hubungkan model hosted, BYOK, dan lokal lewat satu API, atur siapa boleh pakai model apa dan berapa biayanya, lalu ubah traffic produksi jadi router/model yang dioptimasi otomatis.",
+    highlights: [
+      "Satu API OpenAI-compatible untuk semua provider: hosted, BYOK (bawa kunci sendiri), maupun model lokal — sehingga workflow agen AI tidak perlu ditulis ulang saat ganti model atau pindah dari cloud ke on-prem.",
+      "Kontrol akses & budget granular: bisa diatur per identitas (user/agen) model mana yang boleh dipakai, untuk use case apa, dan batas spending-nya — relevan untuk tim yang bagi-bagi akses LLM tanpa kehilangan visibilitas biaya.",
+      "Loop optimasi otomatis dari traffic produksi: pola pemakaian nyata dianalisis jadi router custom yang menyeimbangkan kualitas, kecepatan, dan biaya — sehingga model routing membaik seiring waktu berdasarkan data Anda sendiri, bukan benchmark umum.",
+      "Setup wizard cepat (`pip install experiential` lalu `exp`) menghasilkan satu gateway key yang langsung bisa dipakai ke endpoint `http://127.0.0.1:8000/v1/chat/completions` — praktis untuk developer Indonesia yang mau stack multi-model terkontrol tanpa re-bangun infrastruktur.",
+    ],
+  },
+  "wpzzz/blocked-sites-in-south-korea": {
+    description:
+      "Tool Python untuk scraping & ekstraksi data dari halaman web secara otomatis — kumpulan skrip dan utilitas web scraping yang ringan, cocok untuk riset, agregasi konten, dan pipeline data skala kecil.",
+    highlights: [
+      "Fokus pada ekstraksi data dari halaman web: ambil, parse, dan olah konten HTML jadi data terstruktur tanpa setup framework besar — langsung pakai untuk riset SEO, monitoring harga, atau agregasi berita.",
+      "Stack utama Python dengan dependensi minimal — mudah dijalankan di VPS murah, server rumah, atau notebook lokal; cocok untuk freelancer dan tim kecil Indonesia yang butuh scraping tanpa biaya SaaS.",
+      "Berbeda dari framework scraping besar (Scrapy, Playwright) yang overkill untuk satu-dua situs: repo ini condong ke skrip langsung pakai untuk target spesifik, dengan struktur yang mudah disesuaikan.",
+      "Berguna sebagai batu loncatan untuk proyek data pribadi — misalnya memantau perubahan harga tiket pesawat, kompilasi lowongan kerja, atau arsip otomatis dari situs favorit tanpa API resmi.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
