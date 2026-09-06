@@ -3608,7 +3608,46 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-09-05",
     featured: false,
-  },
+      },
+    {
+      slug: "fireflies-2026",
+      name: "Fireflies 2026",
+      tagline: "AI notetaker meeting dengan sentiment analysis dan CRM sync yang lebih dalam",
+      tags: ["Fireflies.ai", "Freemium", "Productivity", "Meeting Notes"],
+      score: 8.0,
+      scores: [
+        { label: "Kemampuan Agentic", value: 7.2 },
+        { label: "Kualitas Output", value: 8.6 },
+        { label: "Pengalaman Pengguna", value: 8.4 },
+        { label: "Ekosistem & Integrasi", value: 8.9 },
+        { label: "Harga", value: 7.8 },
+      ],
+      summary:
+        "Fireflies.ai adalah AI notetaker yang bergabung otomatis ke rapat Zoom, Google Meet, Microsoft Teams, dan Webex, lalu mentranskrip, meringkas, dan menyinkronkan hasilnya ke CRM. Versi 2026 membawa sentiment analysis per-pembicara dan AskFred sebagai asisten query lintas rekaman, dua fitur yang mengubahnya dari pencatat pasif menjadi peserta rapat yang bisa kamu tanya.",
+      pros: [
+        "Integrasi meeting bot paling luas di kelasnya: otomatis join Zoom, Google Meet, Teams, dan Webex tanpa plugin tambahan, plus Chrome extension untuk meeting offline",
+        "100+ bahasa didukung untuk transkripsi dan peringkasan, termasuk Bahasa Indonesia dengan akurasi yang cukup untuk rapat bisnis standar",
+        "AskFred memungkinkan tanya natural language lintas seluruh arsip rekaman, mis. 'apa blocker yang muncul di rapat sprint minggu lalu'",
+        "Sinkronisasi native ke Salesforce, HubSpot, Notion, Slack, Zapier, dan 50+ aplikasi lain, menutup loop rapat-ke-aksi tanpa copy-paste manual",
+      ],
+      cons: [
+        "Tidak hadir bot di rapat bisa membuat peserta awas ada rekaman, masalah consent yang nyata di pasar EU dan beberapa korporasi Indonesia",
+        "Harga Business $19 per seat per bulan lumayan mahal untuk tim kecil; tier gratis dibatasi 800 menit storage dan 3 ringkasan AI",
+        "Akurasi transkripsi turun signifikan di lingkungan multibahasa atau saat peserta pakai aksen daerah berat, perlu editing manual",
+      ],
+      verdict:
+        "Standar industri untuk AI meeting notetaker Freemium dengan ekosistem integrasi terlengkap. Catatan utamanya adalah isu transparansi bot dan harga Business yang mulai mahal untuk tim kecil.",
+      body: [
+        "Di antara tool AI meeting notes yang beredar di 2026, Fireflies.ai mengambil posisi yang berbeda dari Otter, Read AI, atau Sembly: alih-alih fokus ke transkripsi satu platform meeting atau fitur coaching individu, Fireflies memilih menjadi aggregator yang bekerja di mana pun rapat berlangsung, lalu menyambungkannya ke seluruh workflow bisnis lewat integrasi CRM dan kolaborasi. Paradigmanya menutup gap nyata di pasar: banyak rapat berakhir dengan catatan yang tidak pernah ditindaklanjuti, dan Fireflies berusaha memastikan setiap keputusan, blocker, dan action item mengalir otomatis ke tempat di mana tim benar-benar bekerja. Bot Fred akan join ke meeting yang kamu undang secara eksplisit, merekam audio, mentranskrip dengan model yang di-fine-tune untuk 100+ bahasa, lalu menghasilkan ringkasan terstruktur dengan timestamp.",
+        "Yang membuat Fireflies menonjol dibanding pesaing adalah kedalaman ekosistem integrasi. Di CRM, sinkronisasi ke Salesforce, HubSpot, dan Pipedrive bisa otomatis menempelkan transcript ke contact record atau deal yang relevan. Di kolaborasi, integrasi ke Slack, Notion, Asana, Monday, dan Trello memungkinkan catatan rapat dibagikan ke channel atau task board yang tepat. Versi 2026 menambahkan dua peningkatan signifikan: pertama, sentiment analysis per-pembicara, yang menandai apakah ucapan tiap peserta bernada positif, netral, atau negatif — fitur berguna bagi sales manager yang ingin membaca dinamika rapat coaching atau customer success team yang ingin track kepuasan akun. Kedua, AskFred, asisten AI yang bisa kamu tanya dalam bahasa natural tentang isi seluruh arsip rekaman, misalnya 'apa blocker teknis yang paling sering muncul di sprint review dua bulan terakhir' atau 'siapa yang biasanya menjanjikan delivery di kuartal ini tapi tidak menepati'.",
+        "Untuk pengguna Indonesia, ada tiga hal yang membuat Fireflies menarik sekaligus membatasi. Menariknya, dukungan Bahasa Indonesia dalam transkripsi sudah cukup solid untuk rapat bisnis formal dengan presentasi bergaya Jakarta atau Bandung, dan integrasi ke tools kolaborasi populer di startup dan korporasi Indonesia — Slack, Notion, Google Meet, dan Zoom — menutup loop rapat-ke-aksi tanpa perlu copy-paste manual. Tier gratis dengan 800 menit storage per seat cukup untuk freelancer atau tim kecil yang meetingnya tidak terlalu intens, dan Pro $10 per seat per bulan atau sekitar Rp 162 ribu sudah membuka transcription unlimited, Smart Search, dan integrasi CRM dasar. Batasi, pertama, ada isu transparansi bot: di beberapa korporasi Indonesia dan di pasar Uni Eropa, bot yang join meeting tanpa disclosure eksplisit bisa dianggap masalah compliance, dan Fireflies mengharuskan penyelenggara mengundang bot secara manual untuk mengurangi risiko ini. Kedua, harga Business $19 per seat per bulan atau sekitar Rp 308 ribu per seat mulai mahal untuk tim kecil Indonesia, apalagi untuk tim dengan 10-20 orang di mana total bisa mencapai Rp 3-6 juta per bulan. Ketiga, akurasi transkripsi turun di lingkungan multibahasa rapat yang sering terjadi di kantor Jakarta atau Surabaya dengan campuran Bahasa Indonesia, English, dan campuran kode, dan pengguna tetap harus review manual untuk kutipan penting sebelum di-share ke klien atau atasan.",
+        "Kesimpulannya, Fireflies.ai 2026 adalah AI meeting notetaker Freemium dengan ekosistem integrasi paling luas di kelasnya dan AskFred yang berguna untuk tim yang sering bertanya 'apa yang sebenarnya kita putuskan bulan lalu'. Tier gratis cukup untuk eksperimen, Pro $10 per seat per bulan masuk untuk knowledge worker individu, dan Business $19 per seat per bulan layak untuk tim sales atau customer success yang perlu sinkronisasi CRM native. Kalau kamu prioritas integrasi meeting-ke-CRM yang paling dalam, Fireflies adalah default di kelasnya. Kalau kamu butuh AI meeting coach dengan analitik pribadi yang lebih kaya seperti Read AI, atau sales coaching spesifik seperti Gong atau Chorus, lebih baik pakai tool yang lebih fokus pada use case tersebut. Dan catatan akhir: AI notetaker adalah alat bantu, bukan pengganti kehadiran dan catatan manusia untuk rapat-rapat keputusan penting, jadi pakai Fireflies sebagai salah satu layer produktivitas tim, bukan sebagai pengganti kebiasaan dokumentasi yang sudah ada.",
+      ],
+      link: "https://fireflies.ai",
+      linkLabel: "Situs Resmi",
+      date: "2026-09-06",
+      featured: false,
+    },
 ];
 
 export function getStack(slug: string) {
