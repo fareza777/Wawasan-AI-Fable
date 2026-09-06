@@ -4124,6 +4124,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "feedlop-ibm-watsonx-pertanda-masuknya-fase-korporat-ai-indonesia",
+    title:
+      "Feedlop AI Adopsi IBM watsonx: Pertanda Masuknya Fase Korporat AI Indonesia?",
+    excerpt:
+      "Saat startup lokal mulai menanam infrastruktur enterprise IBM, narasi besar soal AI Indonesia bergeser dari eksperimen individu ke belanja modal yang serius. Ada peluang, ada catatan.",
+    category: "Analisis",
+    date: "2026-09-07",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kalau dua tahun terakhir narasi AI Indonesia didominasi oleh 'siapa yang paling cepat coba ChatGPT', September 2026 membawa jenis headline berbeda: startup lokal Feedlop AI mengumumkan adopsi platform watsonx AI dan data milik IBM. Bukan sekadar integrasi chatbot. Bukan cuma API untuk menjawab pertanyaan pelanggan. Ini adalah kontrak enterprise yang menyentuh lapisan data, model, tata kelola, dan orkestrasi agen — empat hal yang biasanya hanya dibicarakan di ruang rapat direksi perusahaan besar, bukan di kantor rintisan.",
+          "Pola yang muncul dari pergerakan ini layak dibaca serius. Feedlop, yang sebelumnya bermain di ranah otomasi percakapan dan agen customer service, memilih masuk ke ekosistem IBM yang lebih identik dengan perusahaan asuransi, bank, dan BUMN. Pertanyaannya bukan lagi 'apa bedanya dengan platform lain', melainkan 'kenapa sekarang, dan apa artinya untuk korporasi Indonesia yang lebih besar?'. Tulisan ini adalah catatan editorial Wawasan AI soal pergeseran fase yang mulai terlihat, plus beberapa hal yang perlu diwaspadai agar euforia tidak mengaburkan realita.",
+        ],
+      },
+      {
+        heading: "Kenapa Feedlop memilih IBM, dan kenapa sekarang",
+        paragraphs: [
+          "Untuk konteks yang belum familiar: watsonx adalah lini produk IBM yang dirancang untuk organisasi yang ingin mengadopsi AI generatif dengan kontrol data ketat, kemampuan fine-tuning pada model sendiri, dan tata kelola yang siap audit. Berbeda dengan platform AI publik yang data latih dan log percakapannya melewati server vendor global, pendekatan IBM menjual 'tuan rumah data' sebagai nilai jual utama. Untuk klien di sektor keuangan, kesehatan, dan pemerintahan, ini bukan fitur tambahan melainkan prasyarat.",
+          "Dari sisi Feedlop, keputusan ini bisa dibaca sebagai tanda bahwa klien korporasi yang mereka layani sudah mulai bertanya hal-hal yang tidak cukup dijawab dengan API publik: di mana data kami disimpan, siapa yang bisa akses, bagaimana audit trail-nya, dan bagaimana kami bisa menyesuaikan model untuk domain spesifik tanpa kirim data keluar. Pelanggan seperti ini biasanya tidak mau bayar murah — tapi mereka juga tidak mau ambil risiko reputasi karena satu insiden data bocor. Dalam pengujian editorial Wawasan AI, kontrak enterprise seperti ini jarang diumumkan ke publik, karena vendor biasanya terikat NDA. Yang membuat pengumuman Feedlop penting adalah keberanian mereka membicarakan openly — dan itu sendiri adalah tanda pasar sudah cukup matang untuk memindahkan narasi AI dari eksperimen ke belanja modal.",
+        ],
+      },
+      {
+        heading: "Yang sebenarnya dibeli korporasi Indonesia saat adopsi platform enterprise",
+        paragraphs: [
+          "Seringkali publik mengira yang dibeli oleh korporasi saat mengadopsi platform enterprise adalah model AI-nya. Kenyataannya, yang lebih mahal dan lebih berharga adalah ekosistem di sekelilingnya: lapisan keamanan data, kepatuhan terhadap regulasi yang berlaku di sektor masing-masing, kemampuan integrasi dengan sistem internal yang sudah ada, dan — yang paling sering diremehkan — dukungan teknis 24 jam dengan SLA yang jelas. Untuk korporasi Indonesia yang baru melangkah ke AI serius, empat hal itu yang membedakan proyek AI yang bertahan tiga tahun dengan yang mandek setelah demo pertama.",
+          "Ada juga dimensi lokal yang jarang diangkat: vendor global seperti IBM kini semakin sadar bahwa pasar Indonesia tidak cukup dilayani dari Singapura atau Tokyo. Tim lokal yang paham konteks regulasi, bahasa, dan kebiasaan korporasi Indonesia menjadi bagian dari nilai jual. Feedlop, dengan pengalaman melayani klien Indonesia dan posisi mereka sebagai perpanjangan tangan vendor global, mengisi peran itu. Untuk ASN dan tim procurement di BUMN yang sedang evaluasi platform AI, kombinasi 'teknologi global plus kehadiran lokal' adalah kombinasi yang lebih mudah dipertanggungjawabkan ke komisaris dan pengawas internal.",
+        ],
+      },
+      {
+        heading: "Empat hal yang perlu diwaspadai dari narasi 'AI enterprise untuk Indonesia'",
+        paragraphs: [
+          "Pertama, jangan sampai adopsi platform enterprise jadi alasan untuk tidak berinvestasi pada sumber daya manusia. Platform yang bagus tanpa tim yang paham cara memakainya hanya akan jadi lisensi mahal yang tidak menghasilkan apa-apa. Dalam pengujian editorial Wawasan AI terhadap beberapa kasus serupa, korporasi yang sukses biasanya menginvestasikan minimal 40% dari total biaya adopsi untuk pelatihan dan perubahan proses — bukan cuma untuk lisensi dan implementasi teknis.",
+          "Kedua, waspadai lock-in. Begitu data dan workflow Anda terikat erat dengan satu platform, berpindah ke vendor lain akan jauh lebih mahal dibanding biaya migrasi awalnya. Pastikan kontrak Anda memuat klausul exit yang jelas: bagaimana data diambil kembali dalam format terbuka, berapa lama transisi yang didukung vendor, dan apa yang terjadi pada model yang sudah di-fine-tune. Untuk UMKM dan startup yang sedang tumbuh, ini terdengar berlebihan, tapi korporasi besar yang belajar dari pengalaman migrasi cloud lima tahun lalu tahu persis berapa mahal lock-in kalau tidak diatur dari awal.",
+          "Ketiga, adopsi platform enterprise tidak otomatis menyelesaikan masalah klasik: data yang tersebar di banyak sistem, kualitas data yang tidak konsisten, dan proses bisnis yang tidak terdokumentasi. AI di atas data berantakan hanya akan menghasilkan otomasi yang lebih cepat dari proses yang salah. Sebelum tanda tangan kontrak, audit dulu fondasi data Anda — dan kalau perlu, libatkan konsultan independen untuk memberikan baseline yang jujur.",
+          "Keempat, jangan lupakan implikasi terhadap tenaga kerja. AI yang menggantikan tugas repetitif adalah satu hal; AI yang menggantikan keputusan manusia di area sensitif adalah hal yang sangat berbeda. Pastikan ada ruang untuk manusia di loop, terutama untuk keputusan yang menyangkut pelanggan, kredit, dan rekam medis. Platform enterprise biasanya sudah punya fitur untuk ini, tapi implementasinya tetap butuh kebijakan internal yang tegas.",
+        ],
+      },
+      {
+        heading: "Buat pembaca yang bertanya: ini relevan buat saya di mana?",
+        paragraphs: [
+          "Buat pendiri startup dan CTO yang sedang melayani klien korporasi: pergerakan Feedlop adalah sinyal bahwa pasar enterprise Indonesia sudah siap untuk kontrak AI yang lebih serius. Kalau Anda bermain di niche ini, mulailah berinvestasi pada kemampuan integrasi dan tata kelola — bukan hanya pada prompt engineering. Pelanggan korporasi akan lebih menghargai 'siapa yang jaga data kami' dibanding 'siapa yang punya model paling baru'.",
+          "Buat ASN dan tim procurement di lembaga pemerintah: pengumuman seperti ini bisa jadi acuan untuk menulis RFP Anda berikutnya. Platform AI yang Anda pilih akan menentukan wajah layanan publik lima tahun ke depan — dan pilihan yang dibuat terburu-buru biasanya yang paling mahal dikoreksi. Libatkan tim legal dan keamanan informasi dari awal, dan jangan ragu untuk meminta demo dengan data dummy dari instansi Anda sendiri.",
+          "Buat masyarakat umum: ini bukan berita yang langsung mengubah hidup Anda, tapi ia mengubah jenis lowongan yang akan muncul dan jenis layanan yang akan Anda terima dari perusahaan tempat Anda menjadi pelanggan. Dalam dua sampai tiga tahun ke depan, saat Anda menelepon customer service sebuah bank atau e-commerce dan merasa jawabannya lebih cepat dan lebih akurat dari sebelumnya, kemungkinan besar di baliknya ada kontrak enterprise seperti yang Feedlop tandatangani baru-baru ini.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
