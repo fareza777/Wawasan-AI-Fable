@@ -4172,16 +4172,58 @@ export const models: Review[] = [
       "Soal angka, intelligence index 51,7 (sumber: Artificial Analysis) menaruh Fable 5.1 High Effort di papan tengah-atas proprietary — di bawah Opus 5 Max (63,1) dan Opus 5 Xhigh (62,5), sejajar Sonnet 5 (55,3) di kelas intel, dan berada di kisaran frontier value-tier Asia untuk kelas coding. Coding index 79,1 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, melampaui Opus 5 Max (78) dengan selisih tipis 1,1 poin, Opus 5 Xhigh (77) dengan selisih 2,1 poin, dan Sonnet 5 (71,5) dengan selisih 7,6 poin — menjadikan High Effort opsi coding papan atas yang setara atau melampaui keluarga Opus 5 sendiri. Throughput output 49,804 token/detik (sumber: Artificial Analysis) sedikit di bawah Opus 5 Max (52,0) dan Opus 5 Xhigh (47,8) — tetap di tier tinggi yang cukup untuk workflow engineering dan pipeline batch, mendekati Sonnet 5 (55+). TTFT 11,92 detik (sumber: Artificial Analysis) menjadi pembeda utama dibanding Max Effort (142,2 detik) — 12x lebih cepat, dan sebanding dengan Sonnet 5 di kelas harga lebih rendah — menjadikan High Effort titik keseimbangan ideal. Harga API $10,00 per juta token input dan $50,00 output bermain di kelas tertinggi Anthropic, sama dengan varian Fable 5.1 lain — 2x input Opus 5 ($5,00) dan 3,3x Sonnet 5 ($3,00). Bagi developer Indonesia yang menghitung dolar, ini posisi premium yang butuh justifikasi workload spesifik: coding agentic papan atas dengan TTFT ramah untuk antarmuka interaktif. (Sumber: Artificial Analysis.)",
       "Kelemahan yang teridentifikasi: harga API $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) — bermain di kelas tertinggi Anthropic, 2x input Opus 5 ($5,00) dan 3,3x Sonnet 5 ($3,00), premium signifikan untuk workload volume tinggi yang sensitif dolar; untuk kebanyakan kasus, Opus 5 Max Effort atau Sonnet 5 menawarkan rasio harga/performa lebih baik di kelas kemampuan yang hampir sama untuk use case umum. Intelligence index 51,7 (sumber: Artificial Analysis) di bawah Opus 5 Max (63,1) dengan selisih 11,4 poin — untuk workload penalaran murni atau riset saintifik yang butuh kedalaman penalaran maksimal, Opus 5 Max Effort atau Xhigh Effort tetap lebih tajam. Math index tidak tersedia di benchmark AA (null) untuk entry ini, jadi kualitas numerik tidak terukur standar — meski coding 79,1 dan intel 51,7 menjadi indikator kuat kemampuan penalaran, untuk workload finansial atau saintifik yang sensitif akurasi hitungan perlu pengujian sendiri sebelum adopsi produksi. Akses API lewat platform.anthropic.com dan mitra regional memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: Claude Fable 5.1 (High Effort, Default Fallback) untuk workload agentic coding papan atas dengan keseimbangan kemampuan-responsivitas, pipeline chat interaktif yang butuh TTFT ramah tanpa kehilangan kemampuan coding frontier; Opus 5 Max Effort untuk workload penalaran terdalam mutlak tanpa peduli latensi; Opus 5 Xhigh atau Sonnet 5 untuk workload agentic di kelas harga lebih terjangkau; Kimi K3 atau DeepSeek V4 Pro untuk pipeline coding value-tier.",
     ],
-    link: "https://www.anthropic.com",
+link: "https://www.anthropic.com",
     linkLabel: "Situs Resmi",
     date: "2026-09-07",
+    featured: false,
+  },
+  {
+    slug: "gpt-6-astra-xhigh",
+    name: "GPT-6 Astra (xhigh)",
+    tagline:
+      "Lompatan generasi GPT-6 dengan routing penalaran adaptif dan coding papan atas",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Agent"],
+    score: 9.1,
+    scores: [
+      { label: "Penalaran", value: 8.9 },
+      { label: "Coding", value: 9.4 },
+      { label: "Kecepatan", value: 8.3 },
+      { label: "Harga/Performa", value: 7.8 },
+    ],
+    aa_intelligence_index: 54.3,
+    aa_coding_index: 75.9,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-08",
+    summary:
+      "Generasi GPT-6 dari OpenAI yang menaruh coding sebagai pilar utama, dengan intelligence index 54,3 (sumber: Artificial Analysis) dan coding index 75,9 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary di keluarga OpenAI. Routing penalaran adaptif generasi baru menentukan sendiri kedalaman berpikir per tugas, sementara throughput 57,461 token/detik menjadikannya opsi paling kencang di kelas flagship OpenAI untuk workload batch modern.",
+    pros: [
+      "Coding index 75,9 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI, melampaui GPT-5 (36,0) dengan selisih signifikan dan sejajar kelas frontier proprietary global",
+      "Intelligence index 54,3 (sumber: Artificial Analysis) menaruh GPT-6 Astra di papan tengah-atas proprietary global, sejajar Sonnet 5 (55,3) dan di atas GPT-5 (44,6) dengan selisih 9,7 poin",
+      "Throughput output 57,461 token/detik (sumber: Artificial Analysis) menjadi salah satu yang tertinggi di kelas flagship proprietary — ideal untuk pipeline batch, code generation skala besar, dan workload agentic throughput-tinggi",
+      "Routing penalaran adaptif generasi baru otomatis menentukan kedalaman berpikir per tugas, mirip GPT-5 tapi dengan optimasi sumber daya yang lebih matang untuk workload coding panjang",
+    ],
+    cons: [
+      "Harga API premium $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) — 8x input GPT-5 ($1,25) dan 5x output GPT-5 ($10,00), signifikan untuk workload volume tinggi yang sensitif dolar",
+      "TTFT 68,458 detik (sumber: Artificial Analysis) cukup tinggi — kurang ramah untuk antarmuka chat interaktif dibanding model kelas menengah atau Sonnet 5 di tier lebih responsif",
+      "Intelligence index 54,3 (sumber: Artificial Analysis) di bawah Opus 5 Max Effort (63,1) dan Opus 5 Xhigh (62,5) dengan selisih 8-9 poin — untuk workload penalaran murni terdalam, keluarga Claude Opus 5 masih lebih tajam",
+      "Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "GPT-6 Astra (xhigh) adalah opsi default untuk pipeline coding kelas flagship OpenAI generasi terbaru — coding 75,9 memimpin benchmark proprietary OpenAI dengan throughput 57,461 token/detik yang kencang. Pilihan rasional untuk workload coding agentic dan pipeline batch modern di ekosistem OpenAI; untuk penalaran terdalam mutlak, Opus 5 Max Effort tetap opsi default di kelas harga premium.",
+    body: [
+      "GPT-6 Astra (xhigh) adalah flagship generasi GPT-6 OpenAI yang diposisikan di kelas coding-agentic papan atas, melengkapi lini GPT-6 yang bermain di sisi kemampuan dan throughput paling tinggi di keluarga OpenAI. Intelligence index 54,3 (sumber: Artificial Analysis) menaruh Astra di papan tengah-atas proprietary global — di bawah Opus 5 Max Effort (63,1) dengan selisih 8,8 poin dan Opus 5 Xhigh (62,5) dengan selisih 8,2 poin, sejajar Sonnet 5 (55,3) di kelas intel, dan di atas frontier value-tier Asia untuk kelas coding. Coding index 75,9 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI generasi terbaru, melampaui GPT-5 (36,0) dengan selisih signifikan 39,9 poin dan sejajar Opus 5 Max (78) dengan selisih tipis 2,1 poin — menjadikan Astra opsi coding papan atas yang memimpin keluarga OpenAI. Posisi label xhigh menunjukkan mode penalaran ekstra-dalam pada routing adaptif generasi baru, bermain di kelas tertinggi GPT-6 untuk workload dengan kebutuhan penalaran coding ekstra. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic dan pipeline batch modern, GPT-6 Astra (xhigh) menunjukkan karakter flagship OpenAI generasi terbaru — kemampuan 'dilepas' mengerjakan tugas coding multi-langkah dengan konsistensi tinggi, output panjang yang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten di kelas tertinggi keluarga OpenAI. Yang paling terasa dibanding GPT-5 adalah lompatan coding index dari 36,0 ke 75,9 (sumber: Artificial Analysis) — peningkatan signifikan yang menjadikan Astra opsi coding papan atas yang sebelumnya hanya bisa dicapai keluarga Claude Opus 5. Throughput 57,461 token/detik (sumber: Artificial Analysis) menjadi pembeda utama dibanding Opus 5 Max (52,0) — 10% lebih kencang, ideal untuk pipeline code generation skala besar dan workload batch throughput-tinggi. Mode xhigh pada routing penalaran adaptif generasi baru secara otomatis menentukan kedalaman penalaran per tugas, mirip varian GPT-5 tapi dengan optimasi sumber daya yang lebih matang. Untuk pipeline agentic coding yang butuh kombinasi kemampuan dan throughput, Astra adalah opsi paling rasional di keluarga OpenAI. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 54,3 (sumber: Artificial Analysis) menaruh Astra di papan tengah-atas proprietary — di bawah Opus 5 Max (63,1) dan Opus 5 Xhigh (62,5), sejajar Sonnet 5 (55,3) di kelas intel, dan berada di kisaran frontier value-tier Asia untuk kelas coding. Coding index 75,9 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI, melampaui GPT-5 (36,0) dengan selisih signifikan 39,9 poin, dan sejajar Opus 5 Max (78) dengan selisih tipis 2,1 poin — menjadikan Astra opsi coding papan atas yang memimpin keluarga OpenAI. Throughput output 57,461 token/detik (sumber: Artificial Analysis) sedikit di atas Opus 5 Max (52,0) dan Opus 5 Xhigh (47,8) — di tier tertinggi proprietary global, cukup untuk workflow engineering dan pipeline batch modern dengan margin throughput. TTFT 68,458 detik (sumber: Artificial Analysis) cukup tinggi — kurang ramah dibanding Sonnet 5 untuk antarmuka chat interaktif, tapi wajar untuk workload coding panjang yang memang butuh waktu penalaran. Harga API $10,00 per juta token input dan $50,00 output bermain di kelas tertinggi proprietary, 8x input GPT-5 ($1,25) dan 5x output GPT-5 ($10,00). Bagi developer Indonesia yang menghitung dolar, ini posisi premium yang butuh justifikasi workload spesifik: coding agentic papan atas dengan throughput tinggi. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: harga API $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) — bermain di kelas tertinggi proprietary, 8x input GPT-5 ($1,25) dan 5x output GPT-5 ($10,00), premium signifikan untuk workload volume tinggi yang sensitif dolar; untuk kebanyakan kasus, GPT-5 atau Sonnet 5 menawarkan rasio harga/performa lebih baik di kelas kemampuan yang hampir sama untuk use case umum. TTFT 68,458 detik (sumber: Artificial Analysis) cukup tinggi — kurang ramah untuk antarmuka chat interaktif dibanding model kelas menengah atau Sonnet 5 di tier lebih responsif; untuk workload interaktif, GPT-5 atau Claude Sonnet 5 lebih sesuai. Intelligence index 54,3 (sumber: Artificial Analysis) di bawah Opus 5 Max (63,1) dengan selisih 8,8 poin — untuk workload penalaran murni atau riset saintifik yang butuh kedalaman penalaran maksimal, Opus 5 Max Effort atau Xhigh tetap lebih tajam. Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: GPT-6 Astra (xhigh) untuk workload coding agentic papan atas dan pipeline batch throughput-tinggi di ekosistem OpenAI; GPT-5 untuk workload volume tinggi yang sensitif harga; Sonnet 5 atau Opus 5 untuk antarmuka interaktif dan penalaran terdalam mutlak; Kimi K3 atau DeepSeek V4 Pro untuk pipeline coding value-tier.",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-08",
     featured: false,
   },
 ];
 
 export function getModel(slug: string) {
-
-
   return models.find((m) => m.slug === slug);
 }
-
