@@ -1,0 +1,157 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "7 September 2026",
+  "period": {
+    "date": "2026-09-07",
+    "label": "7 September 2026",
+    "path": "/repo/daily/2026/09/07"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-07T00:02:55.080Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "wpzzz/blocked-sites-in-south-korea",
+      "owner": "wpzzz",
+      "repo": "blocked-sites-in-south-korea",
+      "description": "",
+      "githubUrl": "https://github.com/wpzzz/blocked-sites-in-south-korea",
+      "trendshiftUrl": "https://trendshift.io/repositories/28730",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2022-01-06T04:50:45Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "affaan-m/ECC",
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "githubUrl": "https://github.com/affaan-m/ECC",
+      "trendshiftUrl": "https://trendshift.io/repositories/21488",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-01-18T00:51:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "experientiallabs/experiential",
+      "owner": "experientiallabs",
+      "repo": "experiential",
+      "description": "World-model-as-a-harness for simulating AI agent environments",
+      "githubUrl": "https://github.com/experientiallabs/experiential",
+      "trendshiftUrl": "https://trendshift.io/repositories/69130",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-24T22:40:57Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "ashemag/human-atlas",
+      "owner": "ashemag",
+      "repo": "human-atlas",
+      "description": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.",
+      "githubUrl": "https://github.com/ashemag/human-atlas",
+      "trendshiftUrl": "https://trendshift.io/repositories/215818",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-05T00:24:43Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Rion-Wu-tech/wechat-intelligence-hub",
+      "owner": "Rion-Wu-tech",
+      "repo": "wechat-intelligence-hub",
+      "description": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking.",
+      "githubUrl": "https://github.com/Rion-Wu-tech/wechat-intelligence-hub",
+      "trendshiftUrl": "https://trendshift.io/repositories/213572",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-09-04T15:00:53Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "openJiuwen-ai/jiuwenswarm",
+      "owner": "openJiuwen-ai",
+      "repo": "jiuwenswarm",
+      "description": "JiuwenSwarm is an intelligent AI Agent built on openJiuwen. It extends the powerful capabilities of large language models directly to your fingertips through various communication apps you use daily.",
+      "githubUrl": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "trendshiftUrl": "https://trendshift.io/repositories/119917",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-03-05T06:28:11Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "EvoMap/AutoResearch",
+      "owner": "EvoMap",
+      "repo": "AutoResearch",
+      "description": "AI/ML research agents from idea to paper-ready evidence. An EvoMap open-source project.",
+      "githubUrl": "https://github.com/EvoMap/AutoResearch",
+      "trendshiftUrl": "https://trendshift.io/repositories/202902",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-08-15T07:48:42Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "sebbbi/NoGraphicsAPI",
+      "owner": "sebbbi",
+      "repo": "NoGraphicsAPI",
+      "description": "Minimal graphics API. Built on top of latest Vulkan extensions. As close as possibly to my \"No Graphics API\" blog post and the SIGGRAPH talk.",
+      "githubUrl": "https://github.com/sebbbi/NoGraphicsAPI",
+      "trendshiftUrl": "https://trendshift.io/repositories/215527",
+      "language": "C++",
+      "topics": [
+        "Programming examples"
+      ],
+      "dateCreated": "2026-08-31T14:14:12Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "mayukh4/linux-android",
+      "owner": "mayukh4",
+      "repo": "linux-android",
+      "description": "Turn an old Android phone into a GPU-accelerated Linux desktop (XFCE4 / KDE Plasma / LXQt / MATE) or a Home Assistant smart home server — using Termux. No root, no PC, no cloud.",
+      "githubUrl": "https://github.com/mayukh4/linux-android",
+      "trendshiftUrl": "https://trendshift.io/repositories/25653",
+      "language": "Shell",
+      "topics": [
+        "Home automation"
+      ],
+      "dateCreated": "2026-03-01T20:26:26Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Novals83/5min-btc-polymarket",
+      "owner": "Novals83",
+      "repo": "5min-btc-polymarket",
+      "description": "OpenClaw skill for BTC 5-minute Polymarket momentum trading with configurable risk controls and optional hedge logic.",
+      "githubUrl": "https://github.com/Novals83/5min-btc-polymarket",
+      "trendshiftUrl": "https://trendshift.io/repositories/61193",
+      "language": "Python",
+      "topics": [
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-04-11T10:44:56Z"
+    }
+  ]
+}
