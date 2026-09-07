@@ -2447,6 +2447,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Berguna sebagai batu loncatan untuk proyek data pribadi — misalnya memantau perubahan harga tiket pesawat, kompilasi lowongan kerja, atau arsip otomatis dari situs favorit tanpa API resmi.",
     ],
   },
+  "microsoft/markitdown": {
+    description:
+      "Tool resmi Microsoft (Python) yang mengubah PDF, Office, gambar, audio, dan HTML jadi Markdown terstruktur — dirancang untuk konsumsi LLM dengan token lebih hemat dari format biner.",
+    highlights: [
+      "Konverter ringan dari Python resmi tim Microsoft yang mengubah PDF, PowerPoint, Word, Excel, gambar (dengan OCR), audio (dengan transkrip), HTML, CSV/JSON/XML, ZIP, dan URL YouTube jadi Markdown terstruktur.",
+      "Filosofi 'Markdown for LLMs': outputnya mempertahankan heading, list, tabel, dan link — bukan teks mentah; lebih token-efficient dari PDF biner dan 'dimengerti native' oleh GPT, Claude, Gemini karena mereka sudah dilatih di atas Markdown.",
+      "Instalasi satu baris `pip install 'markitdown[all]'` plus CLI `markitdown path-to-file.pdf > document.md` atau API Python — plug-in MCP server juga tersedia sehingga bisa langsung dipakai dari Claude Code, Codex, atau Cursor untuk ingest dokumen ke workflow agentik.",
+      "Sekitar 180 ribu bintang GitHub dan jadi standar de-facto untuk pipeline RAG yang butuh ingest dokumen bisnis (kontrak, laporan, slide) — relevan untuk tim Indonesia yang sering harus memasukkan PDF peraturan, laporan keuangan, atau paper riset ke basis pengetahuan AI.",
+    ],
+  },
+  "heygen-com/hyperframes": {
+    description:
+      "Framework open-source dari HeyGen yang ubah HTML, CSS, dan animasi seekable jadi video MP4 deterministik — plus 20 skill siap pasang ke Claude Code, Cursor, Codex, dan Gemini CLI untuk bikin video dari instruksi natural language.",
+    highlights: [
+      "Tagline 'Write HTML. Render video. Built for agents.' — pipeline deterministik yang render HTML/CSS/media jadi MP4 lewat CLI atau API, sehingga hasil video reproducible dan bukan bergantung pada layanan cloud proprietary.",
+      "20 skill agent-ready terstruktur dengan router `/hyperframes`: agent pilih workflow (video, deck, composition port), lalu otomatis install domain skill yang relevan — bekerja di Claude Code, Cursor, Codex, Gemini CLI, dan agen yang dukung standar skills.sh.",
+      "Loop produksi lengkap yang diajar ke agen: plan video → tulis HTML valid → wire animasi seekable → tambahkan media → lint → preview → render — bukan render buta, melainkan preview dulu sebelum final, sehingga revisi murah.",
+      "Open source Apache 2.0 dari HeyGen (pemain besar AI video generator) — relevan untuk content creator, marketer, dan tim Indonesia yang mau pipeline video AI yang bisa dijalankan lokal dengan kontrol penuh, bukan tergantung quota API SaaS.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
