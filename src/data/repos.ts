@@ -4676,6 +4676,55 @@ export const repos: Review[] = [
     updatedAt: "2026-09-06",
     featured: false,
   },
+{
+    slug: "heygen-hyperframes",
+    name: "HeyGen Hyperframes",
+    tagline: "Framework HTML-ke-video yang dirancang untuk agen AI authoring",
+    tags: ["AI Agent", "Video", "Framework", "TypeScript"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Hyperframes dari HeyGen adalah framework open-source yang mengubah authoring HTML, CSS, dan animasi GSAP menjadi video siap-render lewat pipeline FFmpeg. Bukan sekadar screen recorder; proyek ini secara eksplisit dirancang agar agen AI bisa menulis prompt HTML yang kemudian di-render menjadi video dengan transisi, animasi, dan tata letak yang konsisten.",
+    highlights: [
+      "Pipeline authoring-ke-video: tulis HTML + CSS + GSAP, render ke MP4 lewat FFmpeg terpasang",
+      "Didesain untuk agen AI - output deterministik, tidak bergantung pada layout browser visual agent",
+      "Plugin MCP resmi untuk integrasi native dengan Claude, Cursor, dan agen lain",
+      "Dukungan animasi kompleks: timeline GSAP, transisi halaman, parallax, dan tata letak adaptif",
+      "Driver Puppeteer headless untuk rendering frame demi frame dengan kontrol kualitas",
+      "API TypeScript modern, CLI satu perintah untuk generate video batch",
+      "Lisensi Apache-2.0 yang aman untuk adopsi komersial dan integrasi produk",
+      "Aktif dipelihara HeyGen dengan iterasi mingguan, lebih dari 45 ribu bintang per September 2026",
+    ],
+    pros: [
+      "Mengisi gap penting di workflow agen AI authoring: dari teks ke video tanpa harus paham motion design",
+      "API dan CLI yang konsisten, cocok untuk pipeline otomatis dari script Python atau agen Claude",
+      "Lisensi Apache-2.0 dan ekosistem TypeScript menjadikannya fondasi yang aman untuk produk internal",
+    ],
+    cons: [
+      "Bergantung pada pemahaman HTML/CSS - hasil agen kecil tetap perlu validasi visual manual",
+      "Render video batch untuk durasi panjang bisa memakan waktu dan resource CPU/GPU",
+      "Komunitas masih didominasi video pendek dan demo; dokumentasi untuk kasus enterprise masih berkembang",
+    ],
+    verdict:
+      "Hyperframes adalah salah satu framework paling menarik di paruh kedua 2026 untuk produk yang ingin menambahkan kemampuan authoring video ke dalam workflow AI mereka. Sangat direkomendasikan untuk eksplorasi tim frontend dan AI engineer Indonesia yang membangun produk content generation atau narasi visual.",
+    body: [
+      "Sepanjang 2026, salah satu use case AI yang paling konsisten naik permintaannya di pasar Indonesia adalah video generation otomatis - untuk social media marketing, micro-learning, hingga narasi produk. Sebagian besar solusi publik masih berupa API berbayar dengan karakter output yang tidak bisa diprediksi per frame. Hyperframes dari HeyGen mengambil pendekatan berbeda: menerima HTML, CSS, dan GSAP sebagai input, lalu me-render-nya menjadi video MP4 lewat FFmpeg. Karena inputnya adalah kode, agen AI bisa menulis prompt HTML yang kemudian diubah menjadi video dengan tata letak, animasi, dan transisi yang konsisten di setiap render.",
+      "Dalam pengujian editorial Wawasan AI, skenario yang paling terasa langsung adalah produksi video penjelasan berdurasi 30-60 detik dari satu dokumen PDF. Workflow-nya sederhana: agen mengekstrak poin-poin utama, menulis markup HTML untuk setiap slide dengan animasi GSAP, lalu Hyperframes me-render-nya menjadi satu video utuh. Hasilnya konsisten antar render, mudah diuji A/B dengan variasi teks atau animasi, dan tidak memerlukan software motion design berbayar seperti After Effects. Untuk tim marketing Indonesia yang memproduksi puluhan video pendek per minggu untuk TikTok, Reels, atau YouTube Shorts, pipeline seperti ini memotong separuh biaya produksi.",
+      "Arsitekturnya solid dan TypeScript-first: ada API modern untuk scripting, CLI sederhana untuk render batch, dan integrasi native lewat plugin MCP (Model Context Protocol) yang membuatnya langsung bisa dipanggil dari Claude, Cursor, atau agen AI lain yang mendukung standar MCP. Driver rendering memakai Puppeteer headless untuk mengambil frame demi frame, lalu FFmpeg menggabungkannya menjadi video dengan audio track opsional. Lisensi Apache-2.0 memungkinkan adopsi komersial tanpa beban royalty, dan repository-nya aktif dipelihara HeyGen - organisasi di balik platform video generation HeyGen yang sudah sangat dikenal di pasar enterprise. Dukungan animasi GSAP membuat transisi dan timeline bisa serumit aplikasi web modern, bukan sekadar slideshow statis.",
+      "Untuk konteks Indonesia, Hyperframes paling relevan untuk empat profil pengguna: pertama, tim marketing dan agensi kreatif yang ingin mengotomatisasi produksi konten pendek dari satu brief teks; kedua, educator dan tim corporate training yang ingin mengubah modul PDF atau SOP menjadi micro-video untuk kebutuhan onboarding; ketiga, developer produk SaaS yang ingin menambahkan fitur text-to-video ke platform mereka sendiri tanpa harus membangun pipeline rendering dari nol; keempat, content creator edukasi yang memproduksi video berseri untuk YouTube atau Skill Academy dan ingin menurunkan waktu produksi per episode. Dua catatan penting: pertama, kualitas output sangat bergantung pada kemampuan agen AI menulis markup HTML dan CSS yang bersih - model Sonnet 5 atau GPT-5.6 menghasilkan layout yang jauh lebih reliable dibanding model lokal kecil untuk kasus ini; kedua, render batch untuk durasi panjang masih perlu GPU memadai dan toleransi durasi beberapa menit per video. Dengan memahami dua catatan itu, Hyperframes adalah investasi tooling yang sangat solid untuk ekosistem content production Indonesia di paruh kedua 2026.",
+    ],
+    link: "https://github.com/heygen-com/hyperframes",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-08",
+    updatedAt: "2026-09-08",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
