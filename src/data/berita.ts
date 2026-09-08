@@ -4218,6 +4218,47 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "memulai-era-ai-government-halaman-all",
+    title: "Memulai Era AI Government: Bukan Sekadar Chatbot di Laman All Pemerintah",
+    excerpt:
+      "Ketika instansi Indonesia berlomba memasang AI di halaman utama mereka, pertanyaannya bukan apakah harus adopsi — melainkan adopsi yang bagaimana yang benar-benar berguna untuk warga.",
+    category: "Opini",
+    date: "2026-09-09",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Beberapa tahun terakhir istilah AI government bergulir dari rapat-rapat koordinasi sampai ke headline media. Instansi pusat dan daerah berlomba menampilkan asisten virtual di halaman utama portal mereka — dari chatbot umum sampai yang diklaim paham regulasi spesifik. Beberapa bekerja dengan cukup baik. Banyak yang lain berhenti di percakapan basa-basi yang tidak pernah menyelesaikan apa-apa. Pertanyaan yang lebih jujur untuk diajukan di fase ini bukan siapa yang duluan adopsi AI, melainkan adopsi yang bagaimana yang benar-benar berguna untuk warga yang mengetuk halaman itu.",
+          "Tulisan ini bukan untuk meragukan niat instansi yang mulai bereksperimen. Justru niat itulah modal awal yang paling berharga. Tapi niat tanpa arah yang jelas hanya menghasilkan dashboard yang penuh tombol yang tidak ditekan siapa-siapa. Memasuki era AI government secara benar membutuhkan tiga hal yang sering hilang dari narasi besar: kejelasan kasus penggunaan, pemahaman tentang keterbatasan model, dan keberanian untuk mengatakan belum pada fitur yang tidak siap dipakai.",
+        ],
+      },
+      {
+        heading: "Kasus penggunaan dulu, teknologi kemudian",
+        paragraphs: [
+          "Kegagalan paling umum yang editor Wawasan AI lihat pada inisiatif AI pemerintah di Indonesia adalah urutan yang terbalik: teknologi dibeli, lalu instansi sibuk mencari masalah yang cocok untuk itu. Pola yang lebih sehat — dan yang sudah terbukti di banyak instansi yang berhasil — adalah kebalikannya: mulai dari keluhan warga yang paling sering masuk, baru tanya teknologi mana yang bisa menjawabnya dengan biaya yang masuk akal.",
+          "Contoh sederhana: kalau 60 persen pertanyaan ke call center instansi adalah soal jam buka, alamat, dan syarat dokumen, sebuah knowledge base yang dirangkai dengan AI akan langsung terasa bedanya. Warga tidak perlu antre, instansi tidak perlu menambah agen layanan baru, dan jawabannya konsisten. Kasus penggunaan ini kecil, tapi tepat — dan ia bisa dirayakan sebelum melompat ke kasus yang lebih ambisius.",
+          "Sebaliknya, kalau instansi membeli platform AI besar tanpa dulu memetakan apa yang sebenarnya ditanyakan warga, hasilnya hampir selalu predictable: chatbot yang dijawab dengan template, KPI yang terlihat jalan di dashboard tapi tidak menyentuh pengalaman warga. Teknologi tidak pernah berbohong, tapi ia juga tidak pernah memaksa kita jujur soal prioritas.",
+        ],
+      },
+      {
+        heading: "Pahami keterbatasan model, jangan jual lebih dari yang ia bisa",
+        paragraphs: [
+          "Model bahasa besar saat ini sudah sangat mampu — tapi tetap punya batas yang perlu dipahami siapa pun yang men-deploy-nya untuk publik. Ia bisa mengarang jawaban yang terdengar meyakinkan padahal salah. Ia bisa gagal memahami konteks spesifik yang hanya ada di regulasi lokal. Ia bisa terdengar ramah di situasi yang seharusnya tegas, dan terdengar dingin di situasi yang seharusnya empatik. Memasang AI tanpa menyadari batas-batas itu sama saja mengundang masalah yang tidak perlu.",
+          "Untuk instansi pemerintah, batasannya jadi lebih penting lagi. Saat AI menjawab dengan informasi yang salah tentang prosedur perizinan, warga yang memercayainya bisa kehilangan waktu dan uang. Saat AI salah memahami konteks dokumen resmi, instansi bisa menanggung konsekuensi hukum. Karena itu, prinsip dasarnya harus jelas: AI boleh menjadi garda depan, tapi manusia tetap penanggung jawab. Setiap jawaban yang menyangkut hak warga, keputusan administratif, atau dokumen hukum harus punya jalur eskalasi ke petugas manusia yang jelas dan mudah dijangkau.",
+          "Ini bukan kelemahan AI — ini kenyataan bahwa ia adalah alat, bukan pengganti. Alat yang dipakai tanpa panduan penggunaan tidak akan bekerja dengan baik, dan panduan penggunaan untuk AI generatif masih terus ditulis oleh komunitas global. Instansi yang bijak akan membiarkan AI tumbuh bersama panduan penggunaan itu, bukan memaksanya tampil sempurna di hari pertama.",
+        ],
+      },
+      {
+        heading: "Yang harus dijaga saat memulai",
+        paragraphs: [
+          "Tiga hal yang editor Wawasan AI anggap wajib untuk instansi yang baru memulai. Pertama, data warga tidak pernah menjadi bahan percobaan publik. Kalau instansi ingin melatih atau menyesuaikan model dengan data percakapan, pastikan ada kerangka hukum dan etika yang jelas, plus opsi untuk data tidak ikut training. Kedua, transparansi. Warga berhak tahu bahwa mereka sedang berbicara dengan AI, dan ke mana harus mengadu kalau jawabannya keliru. Ketiga, audit berkala. AI model berubah, basis pengetahuan berubah, dan jawaban yang benar bulan lalu belum tentu benar bulan ini. Anggaran untuk audit harus masuk di perencanaan awal, jangan ditambahkan belakangan.",
+          "Era AI government di Indonesia sedang dibuka. Peluangnya nyata: pelayanan yang lebih cepat, akses yang lebih merata, dan beban administrasi yang lebih ringan untuk petugas yang selama ini overwhelmed. Tapi peluang itu hanya jadi nyata kalau diisi dengan kerja yang jujur — bukan sekadar konferensi pers yang menghasilkan foto bersama tanpa dampak lanjutan. Instansi yang berani memulai dari yang kecil, mengaku batasannya, dan mengukur hasilnya dengan sabar akan menjadi contoh. Yang sekadar mengikuti tren tanpa kerangka akan cepat menjadi contoh peringatan yang lebih sering dikenang.",
+          "Buat warga yang hari ini mengetuk halaman all pemerintah dan disambut chatbot: berikan feedback, baik yang baik maupun yang buruk. Feedback itulah yang membantu instansi memperbaiki sistemnya, dan ia adalah bentuk partisipasi paling murah yang bisa kita berikan di fase awal ini. Buat instansi yang baru merencanakan adopsi: mulailah dari masalah nyata warga, pasang AI sebagai alat, bukan sebagai solusi akhir — dan siapkan panduan penggunaan yang terus Anda tulis seiring waktu.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
