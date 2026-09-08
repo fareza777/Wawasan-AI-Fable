@@ -1,43 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "8 September 2026",
-  "period": {
-    "date": "2026-09-08",
-    "label": "8 September 2026",
-    "path": "/repo/daily/2026/09/08"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-08T00:02:48.582Z",
+  "fetchedAt": "2026-09-08T06:20:30.347Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "pallets/flask",
-      "owner": "pallets",
-      "repo": "flask",
-      "description": "The Python micro framework for building web applications.",
-      "githubUrl": "https://github.com/pallets/flask",
-      "trendshiftUrl": "https://trendshift.io/repositories/2207",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2010-04-06T11:11:59Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "microsoft/markitdown",
-      "owner": "microsoft",
-      "repo": "markitdown",
-      "description": "Python tool for converting files and office documents to Markdown.",
-      "githubUrl": "https://github.com/microsoft/markitdown",
-      "trendshiftUrl": "https://trendshift.io/repositories/12961",
-      "language": "Python",
-      "topics": [
-        "Document processing"
-      ],
-      "dateCreated": "2024-11-13T19:56:40Z"
-    },
-    {
-      "rank": 3,
       "fullName": "heygen-com/hyperframes",
       "owner": "heygen-com",
       "repo": "hyperframes",
@@ -52,36 +22,50 @@
       "dateCreated": "2026-03-10T01:51:06Z"
     },
     {
-      "rank": 4,
-      "fullName": "Rion-Wu-tech/wechat-intelligence-hub",
-      "owner": "Rion-Wu-tech",
-      "repo": "wechat-intelligence-hub",
-      "description": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking.",
-      "githubUrl": "https://github.com/Rion-Wu-tech/wechat-intelligence-hub",
-      "trendshiftUrl": "https://trendshift.io/repositories/213572",
-      "language": "Python",
+      "rank": 2,
+      "fullName": "Tencent/teamai-cli",
+      "owner": "Tencent",
+      "repo": "teamai-cli",
+      "description": "The team harness for AI agents",
+      "githubUrl": "https://github.com/Tencent/teamai-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/123184",
+      "language": "TypeScript",
       "topics": [
         "AI agent",
-        "Self-hosted"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-09-04T15:00:53Z"
+      "dateCreated": "2026-04-27T09:42:49Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "hoochanlon/fq-book",
+      "owner": "hoochanlon",
+      "repo": "fq-book",
+      "description": "📖《这本书能让你连接互联网》 详细阐述代理、隧道、VPN运作过程，并对GFW策略如：地址端口封锁、服务器缓存投毒、数字验证攻击、SSL连接阻断做相关的原理说明",
+      "githubUrl": "https://github.com/hoochanlon/fq-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/158034",
+      "language": "Shell",
+      "topics": [
+        "Proxy"
+      ],
+      "dateCreated": "2018-05-26T09:57:13Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "microsoft/markitdown",
+      "owner": "microsoft",
+      "repo": "markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "githubUrl": "https://github.com/microsoft/markitdown",
+      "trendshiftUrl": "https://trendshift.io/repositories/12961",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2024-11-13T19:56:40Z"
     },
     {
       "rank": 5,
-      "fullName": "webadderallorg/Recordly",
-      "owner": "webadderallorg",
-      "repo": "Recordly",
-      "description": "Create polished demo videos without editing skills. Mac/Windows/Linux",
-      "githubUrl": "https://github.com/webadderallorg/Recordly",
-      "trendshiftUrl": "https://trendshift.io/repositories/26460",
-      "language": "TypeScript",
-      "topics": [
-        "Video editing"
-      ],
-      "dateCreated": "2026-03-12T23:38:32Z"
-    },
-    {
-      "rank": 6,
       "fullName": "microsoft/tgrep",
       "owner": "microsoft",
       "repo": "tgrep",
@@ -95,63 +79,72 @@
       "dateCreated": "2026-04-03T15:50:37Z"
     },
     {
-      "rank": 7,
-      "fullName": "headroomlabs-ai/headroom",
-      "owner": "headroomlabs-ai",
-      "repo": "headroom",
-      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "githubUrl": "https://github.com/headroomlabs-ai/headroom",
-      "trendshiftUrl": "https://trendshift.io/repositories/20881",
-      "language": "Python",
+      "rank": 6,
+      "fullName": "webadderallorg/Recordly",
+      "owner": "webadderallorg",
+      "repo": "Recordly",
+      "description": "Create polished demo videos without editing skills. Mac/Windows/Linux",
+      "githubUrl": "https://github.com/webadderallorg/Recordly",
+      "trendshiftUrl": "https://trendshift.io/repositories/26460",
+      "language": "TypeScript",
       "topics": [
-        "AI agent",
-        "AI infrastructure"
+        "Video editing"
       ],
-      "dateCreated": "2026-01-07T19:58:51Z"
+      "dateCreated": "2026-03-12T23:38:32Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "doldecomp/melee",
+      "owner": "doldecomp",
+      "repo": "melee",
+      "description": "A decompilation of Super Smash Bros Melee brought to you by a bunch of clever folks.",
+      "githubUrl": "https://github.com/doldecomp/melee",
+      "trendshiftUrl": "https://trendshift.io/repositories/112791",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2020-06-30T23:27:55Z"
     },
     {
       "rank": 8,
-      "fullName": "affaan-m/ECC",
-      "owner": "affaan-m",
-      "repo": "ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "githubUrl": "https://github.com/affaan-m/ECC",
-      "trendshiftUrl": "https://trendshift.io/repositories/21488",
-      "language": "JavaScript",
+      "fullName": "vastsa/PI-Desktop",
+      "owner": "vastsa",
+      "repo": "PI-Desktop",
+      "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
+      "githubUrl": "https://github.com/vastsa/PI-Desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/178787",
+      "language": "TypeScript",
       "topics": [
         "AI agent",
-        "AI coding assistant",
-        "AI skills"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-01-18T00:51:51Z"
+      "dateCreated": "2023-03-22T14:23:39Z"
     },
     {
       "rank": 9,
-      "fullName": "ashemag/human-atlas",
-      "owner": "ashemag",
-      "repo": "human-atlas",
-      "description": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.",
-      "githubUrl": "https://github.com/ashemag/human-atlas",
-      "trendshiftUrl": "https://trendshift.io/repositories/215818",
-      "language": "TypeScript",
+      "fullName": "jo-inc/camofox-browser",
+      "owner": "jo-inc",
+      "repo": "camofox-browser",
+      "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
+      "githubUrl": "https://github.com/jo-inc/camofox-browser",
+      "trendshiftUrl": "https://trendshift.io/repositories/22534",
+      "language": "JavaScript",
       "topics": [
-        "Data visualization"
+        "AI agent",
+        "Headless browser"
       ],
-      "dateCreated": "2026-09-05T00:24:43Z"
+      "dateCreated": "2026-01-26T07:31:13Z"
     },
     {
       "rank": 10,
-      "fullName": "experientiallabs/experiential",
-      "owner": "experientiallabs",
-      "repo": "experiential",
-      "description": "World-model-as-a-harness for simulating AI agent environments",
-      "githubUrl": "https://github.com/experientiallabs/experiential",
-      "trendshiftUrl": "https://trendshift.io/repositories/69130",
-      "language": "Python",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-06-24T22:40:57Z"
+      "fullName": "MoonTechLab/LunaTV",
+      "owner": "MoonTechLab",
+      "repo": "LunaTV",
+      "description": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源",
+      "githubUrl": "https://github.com/MoonTechLab/LunaTV",
+      "trendshiftUrl": "https://trendshift.io/repositories/101092",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2025-08-12T13:59:33Z"
     }
   ]
 }
