@@ -4725,6 +4725,55 @@ export const repos: Review[] = [
     updatedAt: "2026-09-08",
     featured: false,
   },
+  {
+    slug: "i-have-adhd",
+    name: "I Have ADHD",
+    tagline: "Skill Claude Code yang memaksa agen berhenti mengubur jawabannya",
+    tags: ["AI Agent", "Claude Code", "Developer Tools", "Produktivitas"],
+    score: 8.5,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.0 },
+      { label: "Komunitas & Momentum", value: 9.0 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "I Have ADHD adalah paket skill untuk Claude Code yang mengubah gaya respons agen dari verbose menjadi langsung ke jawaban. Dipasang sebagai plugin, ia menyuntikkan instruksi sistem tambahan agar agen berhenti memberikan preamble panjang, disclaimer berulang, dan ringkasan akhir yang tidak diminta — pola yang sangat membantu pengguna dengan keterbatasan perhatian atau siapapun yang lelah dengan output bloated dari model AI modern.",
+    highlights: [
+      "Plugin Claude Code resmi: dipasang lewat marketplace skill atau disalin ke folder ~/.claude/skills/",
+      "Mengubah gaya output agen: jawaban lebih singkat, tanpa preamble, tanpa ringkasan akhir otomatis",
+      "Mengurangi verbosity model secara signifikan tanpa mengorbankan akurasi pada tugas teknis",
+      "Format SKILL.md standar — portabel ke agen lain yang mengadopsi standar Agentskills",
+      "Mudah di-fork dan di-variasikan: pengguna bisa menyesuaikan tingkat ringkasan per workflow",
+      "Cocok untuk pengguna dengan keterbatasan perhatian, neurodivergen, atau siapa pun yang bekerja dengan banyak chat paralel",
+      "29.916 bintang dan 1.838 fork per September 2026, tertinggi di antara plugin Claude Code niche productivity",
+      "Aktif dipelihara dengan iterasi mingguan dan kontribusi komunitas pada prompt serta skenario penggunaan",
+    ],
+    pros: [
+      "Menjawab masalah nyata yang dialami banyak pengguna Claude Code: output terlalu panjang dan bertele-tele",
+      "Setup sekali pakai, dampak langsung terasa pada setiap interaksi agen berikutnya",
+      "Lisensi MIT yang aman untuk fork internal tim, modifikasi sesuai workflow, atau distribusi ulang",
+    ],
+    cons: [
+      "Bergantung pada perilaku model — model kecil lokal mungkin kurang kooperatif dibanding Claude Sonnet atau Opus",
+      "Beberapa kasus teknis (penjelasan panjang kode, debugging mendalam) justru memerlukan output verbos",
+      "Repositori niche dan relatif baru, dokumentasi contoh penggunaan masih berkembang dan sebagian besar lewat diskusi komunitas",
+    ],
+    verdict:
+      "I Have ADHD adalah plugin wajib untuk pengguna Claude Code yang lelah dengan jawaban bloated. Bukan tool produktivitas besar — tapi perbedaannya langsung terasa setiap kali chat dibuka. Direkomendasikan untuk dicoba siapa pun yang bekerja dengan Claude Code lebih dari satu jam per hari.",
+    body: [
+      "Sepanjang 2026, salah satu keluhan paling konsisten dari pengguna AI agent adalah verbosity berlebihan: model menjawab dengan paragraf pengantar, disclaimer berulang, dan ringkasan akhir yang tidak diminta — terutama pada tugas yang sebenarnya bisa dijawab dalam dua baris. I Have ADHD dari ayghri menjawab keluhan itu dengan cara sederhana dan elegan: sebuah skill Claude Code yang ketika dipasang, menyuntikkan instruksi sistem tambahan agar agen mengubah pola outputnya. Hasilnya terasa pada interaksi pertama: agen langsung ke jawaban, tidak bertele-tele, dan tidak menambahkan kalimat penutup yang tidak diminta.",
+      "Dalam pengujian editorial Wawasan AI, plugin ini paling terasa dampaknya pada tiga skenario. Pertama, sesi coding cepat di mana developer hanya butuh satu baris kode atau satu nama fungsi — agen berhenti menulis paragraf empat kalimat untuk menjelaskan sesuatu yang sudah jelas. Kedua, sesi tanya jawab singkat seperti konversi satuan, definisi istilah, atau validasi sintaks — agen langsung memberikan jawaban tanpa basa-basi. Ketiga, kerja paralel dengan banyak chat di jendela berbeda — ketika masing-masing agen memotong preamble dan ringkasan, switching antar konteks jadi jauh lebih ringan. Untuk pengguna dengan keterbatasan perhatian atau yang bekerja di lingkungan berisik, plugin seperti ini memberi dampak terukur pada produktivitas.",
+      "Secara teknis, I Have ADHD adalah paket SKILL.md standar yang mengikuti format Agentskills — sama dengan anthropics/skills dan repositori skill kurasi personal yang muncul di paruh pertama 2026. Format ini membuatnya portabel: selain Claude Code, plugin ini bisa dipasang di Claude.ai, Cursor, atau agen lain yang mengadopsi standar SKILL.md. Kode utamanya adalah Markdown berisi instruksi sistem yang menginstruksikan agen untuk menjawab secara ringkas, tanpa preamble, tanpa ringkasan akhir, dan langsung ke inti pertanyaan. Lisensi MIT memungkinkan fork internal tim dan variasi sesuai workflow — misalnya versi ringkas untuk chat singkat, versi sedang untuk dokumentasi, dan versi lengkap yang hanya aktif ketika agen diminta menjelaskan secara mendalam.",
+      "Untuk konteks Indonesia, I Have ADHD paling relevan untuk empat profil pengguna: pertama, developer yang menggunakan Claude Code sebagai pasangan coding harian dan lelah dengan jawaban empat paragraf untuk pertanyaan satu baris; kedua, content creator dan jurnalis yang bekerja dengan banyak chat paralel dan membutuhkan akses cepat ke jawaban tanpa harus scroll preamble; ketiga, pengguna neurodivergen atau siapa pun dengan keterbatasan perhatian yang menjadikan verbosity AI sebagai barrier produktivitas; keempat, tim support dan customer service yang menggunakan agen untuk menjawab pertanyaan klien dan memerlukan output yang langsung ke poin. Dua catatan penting: pertama, dampak plugin paling terasa pada Claude Sonnet dan Opus; pengguna model lokal kecil mungkin mendapat efek lebih lemah karena model kecil cenderung kurang mengikuti instruksi format output; kedua, ada kasus teknis tertentu — misalnya penjelasan arsitektur kompleks atau debugging mendalam — di mana verbosity justru diinginkan, sehingga beberapa pengguna mempertahankan dua profil Claude Code: satu dengan plugin aktif untuk chat harian, satu tanpa plugin untuk tugas mendalam. Dengan memahami dua catatan itu, I Have ADHD adalah investasi tooling kecil dengan dampak produktivitas terukur, dan layak dipasang sebagai plugin default untuk setiap pengguna Claude Code di paruh kedua 2026.",
+    ],
+    link: "https://github.com/ayghri/i-have-adhd",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-09",
+    updatedAt: "2026-09-09",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
