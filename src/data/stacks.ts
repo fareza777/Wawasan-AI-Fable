@@ -3688,6 +3688,47 @@ export const stacks: Review[] = [
     date: "2026-09-07",
     featured: false,
   },
+  {
+    slug: "huggingface-agents",
+    name: "HuggingFace Agents",
+    tagline: "Lapisan orkestrasi agent di atas 1,8 juta model open source Hugging Face",
+    tags: ["HuggingFace", "Freemium", "Agent Framework", "Open Source"],
+    score: 8.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.8 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 9.5 },
+      { label: "Harga", value: 8.7 },
+    ],
+    summary:
+      "HuggingFace Agents adalah framework open source dari Hugging Face yang membungkus model bahasa, tool eksternal, dan memori ke dalam satu agen yang bisa dijalankan lokal atau lewat Inference API. Dipakai lewat library smolagents (Python) atau transformers Agents, ekosistemnya mengikat 1,8 juta model di Hub ke alur penalaran multi-langkah, lengkap dengan Code Agent yang menulis Python untuk bertindak dan tool calling ke lebih dari 100 integrasi resmi.",
+    pros: [
+      "Akses ke 1,8 juta model open source lewat Hub, termasuk Llama, Qwen, DeepSeek, Mistral, Gemma, dan Phi, sehingga tidak terkunci ke satu vendor",
+      "Smolagents sebagai runtime yang ringan dan 100% open source (Apache-2.0) mendukung Code Agent yang menulis Python untuk bertindak, lebih deterministik dibanding JSON tool calling",
+      "Inference API bawaan Hugging Face dengan tier gratis yang ramah untuk prototyping, lalu PRO $9 per bulan (sekitar Rp 144 ribu) untuk produksi skala kecil-menengah",
+      "Integrasi native ke Gradio untuk UI chat agen dalam hitungan menit, plus Spaces untuk deployment publik gratis lewat infrastruktur Hugging Face",
+      "Kompatibel dengan tool ekosistem standar: DuckDuckGo, Wikipedia push, image generation lewat Stable Diffusion, dan custom tool Python apa pun yang return string atau image",
+    ],
+    cons: [
+      "Kualitas output akhir sangat bergantung pada model upstream yang dipilih: model kecil 7B di Hugging Face Agents jauh lebih lemah dari GPT-4 atau Claude untuk penalaran multi-langkah yang panjang",
+      "Dokumentasi Agents masih terpecah antara transformers Agents (legacy) dan smolagents (rekomendasi baru), sehingga developer yang baru masuk sering bingung memilih entry point",
+      "Inference API memiliki rate limit ketat di tier gratis, dan Dedicated Endpoints untuk self-host model besar mulai dari $5 per jam atau sekitar Rp 80 ribu per jam yang lumayan untuk eksperimen panjang",
+      "Ekosistem tool bawaan lebih sempit dibanding LangChain atau Composio, sehingga untuk tool enterprise yang kompleks developer tetap harus menulis wrapper custom",
+    ],
+    verdict:
+      "Pintu masuk paling jujur untuk membangun agen AI di atas model open source, dengan smolagents sebagai runtime modern yang ringan dan Hugging Face Hub sebagai katalog model terbesar di dunia. Catatan utamanya adalah kualitas sangat bergantung pada model yang kamu pilih dan dokumentasi yang masih transisi antara transformers Agents dan smolagents.",
+    body: [
+      "Di lanskap agent framework yang didominasi LangChain, LangGraph, CrewAI, dan AutoGen dari sisi open source, Hugging Face Agents mengambil posisi yang berbeda: ia bukan sekadar framework, tapi lapisan tipis di atas Hub yang menjadi rumah 1,8 juta model open source dan 250 ribu dataset publik. Paradigmanya adalah demokratisasi: siapa pun yang punya akun Hugging Face gratis bisa memuat Llama 3.3 70B, Mistral Small, atau DeepSeek V3 lewat Inference API, lalu membungkus model itu ke dalam agen yang bisa memanggil tool, menulis kode, dan menjalankan workflow multi-langkah. Smolagents sebagai runtime modern (rilis stabil 2025) menyederhanakan API dibanding transformers Agents legacy: satu import, satu inisialisasi, dan agen sudah bisa loop penalaran-act-observe sampai batas langkah yang ditentukan.",
+      "Yang membuat Hugging Face Agents menonjol dibanding framework agen lain adalah dua hal: katalog model dan integrasi Code Agent. Pertama, tidak ada framework lain yang menawarkan akses built-in ke 1,8 juta model lewat satu baris kode; LangChain butuh konfigurasi provider manual per model, sementara Hugging Face Agents tinggal menyebut nama repo di Hub dan Inference API yang menangani otentikasi, routing, dan caching. Kedua, smolagents memperkenalkan Code Agent yang menulis Python untuk bertindak, bukan JSON tool calling yang rentan terhadap format error; pendekatan ini mengikuti paper ChemCrow dan Voyager yang menunjukkan penalaran berbasis kode lebih robust untuk task ilmiah dan engineering. Tool bawaan mencakup web search lewat DuckDuckGo, Wikipedia push, image generation lewat Stable Diffusion, speech-to-text lewat Whisper, dan custom tool Python apa pun yang return string atau image, ditambah integrasi native ke Gradio untuk UI chat dalam hitungan menit dan Spaces untuk deployment publik gratis.",
+      "Paket harga disusun untuk spektrum dari hobi hingga produksi. Semua kode smolagents dan transformers Agents adalah open source Apache-2.0, sehingga siapa pun bisa self-host runtime agen di infrastruktur mereka sendiri (laptop, VPS, atau cluster Kubernetes) tanpa biaya lisensi. Inference API punya tier gratis yang ramah untuk eksperimen: beberapa ribu request per hari untuk model kecil-menengah, cukup untuk prototyping agen sederhana. Untuk produksi ada PRO $9 per bulan atau sekitar Rp 144 ribu yang meningkatkan rate limit dan prioritas; Enterprise Hub untuk Dedicated Endpoints yang bisa self-host model besar (Llama 70B, DeepSeek 70B+) mulai dari $5 per jam atau sekitar Rp 80 ribu per jam, biasanya lebih hemat pada skala di atas 100 ribu request per bulan. Alternatif lain adalah inference provider lewat Hugging Face Hub: Replicate, Together AI, dan Fireworks semua menawarkan Llama, Qwen, dan DeepSeek dengan harga kompetitif $0,20-$0,90 per sejuta token input.",
+      "Untuk pengguna Indonesia, Hugging Face Agents paling masuk untuk tiga profil. Pertama, developer Indonesia yang ingin membangun agen tanpa ketergantungan pada API proprietary: smolagents + Llama 3.3 70B lewat Inference API menghasilkan agen yang kuat dengan biaya sekitar Rp 1.000 per 1.000 token input atau Rp 3.000 per 1.000 token output, jauh lebih murah dari GPT-4 atau Claude untuk workload volume tinggi. Kedua, mahasiswa dan peneliti di kampus Indonesia yang punya keterbatasan dana langganan API proprietary: Hugging Face Pro Education gratis untuk mahasiswa dan peneliti, dan Inference API tier gratis cukup untuk eksperimen skripsi atau tesis dengan model 7B-13B. Ketiga, tim startup AI Indonesia yang ingin self-host model di VPS lokal: Dedicated Endpoints + smolagents memungkinkan deployment agen di server Jakarta atau Singapore dengan latensi rendah ke pengguna Indonesia. Kompetitor langsung yang perlu dipertimbangkan: LangChain (lebih matang tapi vendor-neutral), LangGraph untuk workflow stateful (lebih cocok untuk agen kompleks), CrewAI untuk multi-agent orchestration, dan AutoGen dari Microsoft untuk riset akademis. Saran editorial: mulai dengan smolagents dan Llama 3.3 8B lewat Inference API gratis untuk proof of concept, lalu upgrade ke model 70B dan Dedicated Endpoints saat beban produksi naik.",
+    ],
+    link: "https://huggingface.co/docs/hub/en/agents",
+    linkLabel: "Dokumentasi",
+    date: "2026-09-08",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
