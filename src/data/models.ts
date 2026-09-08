@@ -4222,6 +4222,51 @@ link: "https://www.anthropic.com",
     date: "2026-09-08",
     featured: false,
   },
+{
+    slug: "gpt-6-astra-low",
+    name: "GPT-6 Astra (low)",
+    tagline:
+      "Tier hemat energi GPT-6 Astra untuk pipeline volume tinggi",
+    tags: ["OpenAI", "Proprietary", "Coding", "High Volume"],
+    score: 8.4,
+    scores: [
+      { label: "Penalaran", value: 7.9 },
+      { label: "Coding", value: 8.6 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 8.7 },
+    ],
+    aa_intelligence_index: 46.0,
+    aa_coding_index: 75.7,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-09",
+    summary:
+      "Varian hemat energi dari lini GPT-6 Astra OpenAI yang menurunkan kedalaman penalaran demi biaya komputasi lebih rendah, dengan intelligence index 46,0 (sumber: Artificial Analysis) dan coding index 75,7 (sumber: Artificial Analysis) yang tetap memimpin benchmark pemrograman proprietary keluarga OpenAI. Throughput 53,614 token/detik cocok untuk pipeline batch dan workload volume tinggi di ekosistem developer yang sudah terikat pada tool OpenAI.",
+    pros: [
+      "Coding index 75,7 (sumber: Artificial Analysis) mempertahankan leadership benchmark pemrograman proprietary OpenAI di kelas hemat energi, hanya 0,2 poin di bawah varian xhigh (75,9)",
+      "Intelligence index 46,0 (sumber: Artificial Analysis) menaruh Astra (low) di papan tengah proprietary global — sejajar Sonnet 4.5 dan sedikit di atas frontier value-tier Asia pada kelas kemampuan yang sama",
+      "Throughput output 53,614 token/detik (sumber: Artificial Analysis) cukup kencang untuk pipeline batch dan code generation skala besar, hanya 7% di bawah varian xhigh (57,461)",
+      "Posisi 'low' pada routing penalaran adaptif GPT-6 menekan biaya inferensi untuk workload volume tinggi tanpa kehilangan capability coding papan atas di keluarga OpenAI",
+    ],
+    cons: [
+      "TTFT 2,118 detik (sumber: Artificial Analysis) cukup panjang untuk antarmuka chat interaktif — kurang responsif dibanding Sonnet 4.5 atau GPT-5 pada workload yang butuh jawaban cepat",
+      "Label 'low' menunjukkan penalaran dangkal — untuk riset multi-langkah atau planning agentic panjang, varian xhigh atau Max Effort lebih sesuai",
+      "Harga API premium $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) sama dengan varian xhigh — selisih efisiensi datang dari optimasi routing, bukan tarif publik yang lebih murah",
+      "Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "GPT-6 Astra (low) adalah opsi paling rasional di keluarga GPT-6 untuk pipeline coding volume tinggi yang sensitif biaya inferensi — coding 75,7 tetap memimpin benchmark proprietary dengan throughput 53,614 token/detik. Pilih varian ini kalau muatan kerja kamu coding-agentic berulang dan throughput lebih penting dari penalaran terdalam; untuk riset atau planning panjang, varian xhigh atau Claude Opus 5 Max Effort tetap lebih tajam.",
+    body: [
+      "GPT-6 Astra (low) adalah varian hemat energi dari lini GPT-6 Astra OpenAI yang menurunkan kedalaman penalaran pada routing adaptif generasi baru, demi biaya inferensi yang lebih efisien untuk workload volume tinggi. Intelligence index 46,0 (sumber: Artificial Analysis) menaruh Astra (low) di papan tengah proprietary global — di bawah Opus 5 Max Effort (63,1) dengan selisih 17,1 poin dan Opus 5 Xhigh (62,5) dengan selisih 16,5 poin untuk workload penalaran murni, sejajar Sonnet 5 di kelas intel dan di atas frontier value-tier Asia pada kelas kemampuan yang sama. Coding index 75,7 (sumber: Artificial Analysis) mempertahankan leadership benchmark pemrograman proprietary OpenAI untuk kelas hemat energi, hanya 0,2 poin di bawah varian xhigh (75,9) dan sejajar Opus 5 Max (78) dengan selisih tipis 2,3 poin — menjadikan Astra (low) opsi coding papan atas yang efisien untuk pipeline volume tinggi. Posisi label low menunjukkan penalaran yang lebih dangkal dibanding varian xhigh, bermain di kelas menengah GPT-6 untuk workload yang tidak butuh kedalaman berpikir maksimal. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding volume tinggi dan pipeline batch, GPT-6 Astra (low) menunjukkan karakter khas mode hemat energi — fokus pada eksekusi coding berulang dengan konsistensi output yang tinggi di banyak ronde iterasi, throughput yang stabil, dan tool-use yang andal di kelas tertinggi keluarga OpenAI. Yang paling terasa dibanding varian xhigh adalah trade-off intel vs biaya: intelligence index turun dari 54,3 ke 46,0 (sumber: Artificial Analysis), penurunan 8,3 poin yang cukup terasa untuk workload penalaran murni tapi hamper tak relevan untuk coding-agentic standar. Throughput 53,614 token/detik (sumber: Artificial Analysis) hanya 7% di bawah varian xhigh, cukup untuk pipeline code generation skala besar dengan biaya inferensi yang lebih rendah. Mode low pada routing penalaran adaptif GPT-6 secara otomatis memutuskan rute dangkal per tugas, mirip varian GPT-5 dengan optimasi sumber daya yang lebih matang untuk volume tinggi. Untuk pipeline coding berulang yang butuh kombinasi kemampuan dan biaya inferensi, Astra (low) adalah opsi paling rasional di keluarga GPT-6. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 46,0 (sumber: Artificial Analysis) menaruh Astra (low) di papan tengah-atas proprietary — sejajar Sonnet 5 di kelas intel, di atas frontier value-tier Asia pada kelas kemampuan yang sama, dan jauh di bawah Opus 5 Max Effort (63,1) untuk workload penalaran murni. Coding index 75,7 (sumber: Artificial Analysis) memimpin benchmark proprietary OpenAI untuk kelas hemat energi, sejajar Opus 5 Max (78) dengan selisih tipis 2,3 poin. Throughput output 53,614 token/detik (sumber: Artificial Analysis) termasuk tier tertinggi proprietary global, cukup untuk workflow engineering volume tinggi dengan margin throughput yang sehat. TTFT 2,118 detik (sumber: Artificial Analysis) cukup panjang — kurang responsif dibanding Sonnet 4.5 atau GPT-5 untuk antarmuka chat interaktif, tapi wajar untuk workload batch yang memang butuh waktu awal pemrosesan. Harga API $10,00 per juta token input dan $50,00 output sama dengan varian xhigh (sumber: Artificial Analysis) — efisiensi biaya Astra (low) berasal dari optimasi routing, bukan tarif publik yang lebih murah. Bagi developer Indonesia yang menghitung dolar, ini posisi premium yang menawarkan capability coding papan atas keluarga OpenAI dengan ongkos inferensi yang lebih terkontrol untuk workload volume tinggi. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: TTFT 2,118 detik (sumber: Artificial Analysis) cukup panjang untuk antarmuka chat interaktif — kurang responsif dibanding Sonnet 4.5 atau GPT-5 pada workload yang butuh jawaban cepat, sehingga Astra (low) bukan pilihan tepat untuk customer-facing realtime. Label low menunjukkan penalaran dangkal — untuk riset multi-langkah, planning agentic panjang, atau sintesis saintifik, varian xhigh atau Max Effort lebih sesuai; trade-off capability vs biaya harus dipertimbangkan matang per use case. Harga API $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) sama dengan varian xhigh — selisih efisiensi datang dari optimasi routing penalaran, bukan diskon publik, sehingga untuk workload sensitif dolar yang kasusnya banyak, model value-tier Asia seperti Kimi K3 atau DeepSeek V4 Pro tetap opsi lebih murah. Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: GPT-6 Astra (low) untuk pipeline coding volume tinggi yang sensitif biaya inferensi di ekosistem OpenAI; varian xhigh untuk coding-agentic papan atas; Sonnet 5 atau Opus 5 untuk antarmuka interaktif dan penalaran terdalam; Kimi K3 atau DeepSeek V4 Pro untuk workload coding value-tier. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-09",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
