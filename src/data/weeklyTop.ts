@@ -2467,6 +2467,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Open source Apache 2.0 dari HeyGen (pemain besar AI video generator) — relevan untuk content creator, marketer, dan tim Indonesia yang mau pipeline video AI yang bisa dijalankan lokal dengan kontrol penuh, bukan tergantung quota API SaaS.",
     ],
   },
+  "microsoft/tgrep": {
+    description:
+      "Alat 'grep' super cepat dari Microsoft (Rust) dengan trigram index + arsitektur client/server — pencarian regex di monorepo ratusan ribu file selesai dalam ratusan milidetik, terintegrasi ke GitHub Copilot CLI.",
+    highlights: [
+      "Ripgrep harus scan seluruh isi file tiap query (O(total bytes)); tgrep pre-build trigram index sekali, lalu hanya menyentuh file yang berpotensi cocok — hingga 52x lebih cepat dari ripgrep pada repo 388 ribu file seperti gecko-dev.",
+      "Arsitektur client/server: `tgrep index .` untuk bangun index, `tgrep serve .` untuk hidupkan server yang auto-watch perubahan file, dan `tgrep \"pattern\" .` yang auto-connect ke server — sekali start, search instan selamanya.",
+      "Sudah terintegrasi resmi ke GitHub Copilot CLI untuk mempercepat `grep` lintas repo besar — relevan langsung untuk developer yang pakai coding agent di monorepo dan muak menunggu hasil pencarian yang puluhan detik.",
+      "Server watching otomatis untuk perubahan file, plus AGENTS.md yang menjelaskan cara optimal memanggilnya dari AI coding agent — open source Microsoft, lisensi MIT, ditulis Rust untuk footprint kecil dan binary tunggal.",
+    ],
+  },
+  "Tencent/teamai-cli": {
+    description:
+      "CLI dari Tencent untuk menyatukan skill, rule, MCP, dan knowledge tim lintas coding agent — Claude Code, Codex, CodeBuddy, WorkBuddy, OpenCode, Cursor, dan lainnya pakai resource yang sama lewat satu repo shared.",
+    highlights: [
+      "Konsep 'AI native team': satu repo Git tim menyimpan skill, rules, MCP server, dan knowledge — semua anggota tim (dan AI agent mereka) pakai resource yang sama, tidak ada drift konfigurasi antara developer satu dengan lainnya.",
+      "Cross-platform AI agent: bekerja dengan Claude Code, Codex, CodeBuddy, WorkBuddy, OpenCode, Cursor, dan agen lain — fokus Tencent pada ekosistem coding agent Asia, tapi extensible ke tool Barat lewat standar skill/MCP.",
+      "Workflow CLI yang simpel: `teamai init <repo-url>` untuk project-scope (default, simpan di direktori proyek) atau `--scope user` (global di ~/), plus marketplace `teamai-hub` dengan template production-ready siap pakai.",
+      "Open source (MIT) dari Tencent dan aktif menerima kontribusi via PR — relevan untuk tim engineering Indonesia yang ingin standarisasi workflow coding agent antar anggota tanpa harus copy-paste SKILL.md atau konfigurasi MCP satu per satu.",
+    ],
+  },
+  "Albert-Weasker/niubigeo": {
+    description:
+      "Tool open-source (Apache 2.0) untuk GEO — mengukur apakah produk Anda direkomendasikan oleh AI, siapa pesaing yang muncul di jawaban, dan sumber apa yang dikutip model saat menjawab query tentang domain Anda.",
+    highlights: [
+      "Menjawab pertanyaan 'When people ask AI for tools, does your product make it into the answer?' — masukkan domain, dapat laporan bagaimana model berbeda mendeskripsikan brand, pesaing apa yang muncul, dan kata kunci apa yang diasosiasikan model.",
+      "Pendekatan 'evidence-first': buka setiap hasil untuk melihat jawaban asli model dan citation yang dikembalikan, plus pantau perubahan dari pengujian berulang — bukan dashboard marketing, melainkan audit trail yang bisa diverifikasi.",
+      "Cocok untuk marketing/product team yang khawatir tentang 'AI invisibility' — terutama setelah launch produk baru, ketika visibilitas di jawaban ChatGPT/Claude/Gemini menentukan apakah user menemukan produk Anda atau kompetitor.",
+      "Self-hostable via Docker, open source (Apache 2.0), dan sudah punya 20 contoh kasus nyata di README — relevan untuk startup Indonesia yang mengandalkan AI assistant sebagai channel discovery dan ingin audit independen atas 'GEO footprint' mereka.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
