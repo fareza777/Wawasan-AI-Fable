@@ -3729,6 +3729,46 @@ export const stacks: Review[] = [
     date: "2026-09-08",
     featured: false,
   },
+  {
+    slug: "bolt-new-pro",
+    name: "Bolt.new Pro",
+    tagline: "Tier berbayar Bolt.new dengan 26 juta token AI per bulan dan deploy Netlify bawaan",
+    tags: ["StackBlitz", "Freemium", "No-Code/Low-Code", "Full-Stack Dev"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.9 },
+      { label: "Ekosistem & Integrasi", value: 8.4 },
+      { label: "Harga", value: 7.7 },
+    ],
+    summary:
+      "Bolt.new Pro adalah lapisan berbayar dari Bolt.new yang menambah kuota token besar, akses ke model frontier seperti Claude Sonnet dan GPT-5, serta fitur produksi seperti domain kustom dan deploy Netlify satu klik. Untuk developer Indonesia yang sering kehabisan token di tier gratis, Pro adalah upgrade paling relevan — terutama bagi yang membangun MVP SaaS atau prototipe klien dengan iterasi panjang.",
+    pros: [
+      "Kuota 10 juta token di plan Pro $20/bulan (sekitar Rp 320 ribu) dan 26 juta token di Pro $50/bulan (sekitar Rp 800 ribu), cukup untuk pembangunan aplikasi menengah dalam satu sesi",
+      "Akses ke Claude Sonnet dan GPT-5 sebagai model default, dengan opsi switching model untuk balancing biaya dan kualitas penalaran",
+      "Deploy bawaan ke Netlify dengan domain kustom gratis, tanpa perlu setup CI/CD manual atau infrastruktur tambahan",
+      "Ekspor kode bersih ke repository GitHub pribadi, sehingga hasil kerja tidak terkunci di platform Bolt — bisa dilanjutkan di Cursor atau VS Code lokal",
+      "Tetap mempertahankan WebContainers StackBlitz sebagai runtime, artinya iterasi dan preview aplikasi tetap berjalan penuh di browser tanpa membebani laptop",
+    ],
+    cons: [
+      "Token tetap berbasis pemakaian, jadi aplikasi besar dengan banyak file dan dependensi tetap butuh beberapa siklus top-up bulanan untuk iterasi panjang",
+      "Pemakaian model frontier seperti Claude Sonnet dan GPT-5 memakan kuota lebih cepat dibanding model kecil, sehingga eksperimen murni lebih cocok tetap di tier gratis",
+      "Belum ada kolaborasi tim real-time di Pro per-seat — fitur team masih dalam tahap awal dan sering lebih mahal dibanding competitor seperti v0 Teams atau Replit Teams",
+    ],
+    verdict:
+      "Standar baru untuk paid-tier AI app builder di 2026: harga jelas, model frontier built-in, dan output bisa diekspor bersih ke GitHub. Catatan utamanya adalah kuota token yang tetap berbasis pemakaian dan harga per seat tim yang masih bisa ditekan oleh kompetitor seperti Replit Core atau v0 Teams.",
+    body: [
+      "Bolt.new Pro menjawab satu pertanyaan yang paling sering muncul di tier gratis Bolt: 'bagaimana kalau mau bikin aplikasi yang lebih serius tanpa harus terus menunggu reset token harian?'. Jawabannya adalah paket $20 per bulan yang menambahkan 10 juta token AI, atau paket $50 per bulan dengan 26 juta token, lengkap dengan akses ke model frontier Anthropic Claude Sonnet 4.5 dan OpenAI GPT-5 sebagai otak utama. Untuk konteks Indonesia, harga $20 per bulan di kurs September 2026 sekitar Rp 320 ribu — di kelas yang sama dengan langganan ChatGPT Plus atau Claude Pro, tapi dengan manfaat yang berbeda: bukan chat, melainkan pembangunan aplikasi full-stack yang berjalan di browser.",
+      "Yang membuat Pro menonjol dibanding tier gratis adalah keleluasaan produksi. Pertama, deploy ke Netlify dan domain kustom menjadi fitur bawaan, sehingga aplikasi yang sudah selesai bisa langsung dipublikasikan dengan satu klik tanpa setup CI/CD atau pipeline manual — krusial untuk founder Indonesia yang ingin menunjukkan MVP ke calon investor atau klien dalam hitungan jam, bukan hari. Kedua, ekspor kode ke repository GitHub pribadi sekarang menjadi opsi default di Pro, sehingga hasil kerja tidak terkunci di platform; developer yang ingin pindah ke Cursor, Claude Code, atau VS Code lokal bisa clone repo dan melanjutkan dengan tool lain. Ketiga, integrasi database Supabase dan Neon tetap menjadi backbone, dan di Pro limit database menjadi lebih longgar untuk aplikasi multi-user sederhana.",
+      "Secara pengalaman pengguna, Pro mempertahankan DNA WebContainers yang membuat tim StackBlitz terkenal: semuanya jalan di browser, tanpa instalasi Node.js, tanpa download dependensi, dan preview aplikasi muncul dalam hitungan detik setelah prompt diubah. Pengalaman ini signifikan untuk konteks Indonesia di mana banyak developer muda menggunakan laptop spek menengah, Chromebook, atau bahkan komputer pinjam di warnet — yang penting adalah browser modern dan koneksi internet stabil. Tambahan kecil yang berdampak adalah opsi untuk menambahkan kredit token di tengah bulan tanpa harus upgrade plan, berguna untuk sprint panjang atau hackathon dadakan.",
+      "Untuk pengguna Indonesia, profil paling ideal untuk Bolt.new Pro adalah: pertama, founder startup yang ingin membangun MVP SaaS dalam 2-4 minggu tanpa sewa developer full-time dan ingin menunjukkan produk jadi ke calon klien; kedua, agency kecil dan freelancer yang menerima proyek landing page, dashboard internal, atau aplikasi CRUD untuk klien korporasi dan butuh iterasi cepat dengan biaya per proyek yang terkontrol; ketiga, dosen dan mahasiswa yang membuat prototipe tugas akhir atau demo penelitian dan butuh kredit AI yang lebih besar dari tier gratis. Kompetitor langsung: v0 dari Vercel (lebih fokus ke UI React, harga mirip), Replit Core (lebih general-purpose, ada runtime bahasa lengkap tapi pengalaman AI builder-nya lebih mentah), dan Lovable (konsultan UI SaaS, lebih cocok untuk non-developer). Saran editorial: mulai dengan plan $20 untuk validasi ide, upgrade ke $50 hanya kalau sudah ada 2-3 proyek paralel yang aktif — token rollover tidak akumulasi ke bulan berikutnya, jadi perencanaan sprint tetap penting.",
+    ],
+    link: "https://bolt.new/pricing",
+    linkLabel: "Halaman Pricing",
+    date: "2026-09-09",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

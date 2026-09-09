@@ -1,0 +1,157 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "9 September 2026",
+  "period": {
+    "date": "2026-09-09",
+    "label": "9 September 2026",
+    "path": "/repo/daily/2026/09/09"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-09T00:06:59.166Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "repo": "hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "githubUrl": "https://github.com/heygen-com/hyperframes",
+      "trendshiftUrl": "https://trendshift.io/repositories/26131",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI video generation"
+      ],
+      "dateCreated": "2026-03-10T01:51:06Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Albert-Weasker/niubigeo",
+      "owner": "Albert-Weasker",
+      "repo": "niubigeo",
+      "description": "Open-source AI brand visibility and competitor reports",
+      "githubUrl": "https://github.com/Albert-Weasker/niubigeo",
+      "trendshiftUrl": "https://trendshift.io/repositories/212064",
+      "language": "TypeScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-09-03T15:55:54Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "microsoft/markitdown",
+      "owner": "microsoft",
+      "repo": "markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "githubUrl": "https://github.com/microsoft/markitdown",
+      "trendshiftUrl": "https://trendshift.io/repositories/12961",
+      "language": "Python",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2024-11-13T19:56:40Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "webadderallorg/Recordly",
+      "owner": "webadderallorg",
+      "repo": "Recordly",
+      "description": "Create polished demo videos without editing skills. Mac/Windows/Linux",
+      "githubUrl": "https://github.com/webadderallorg/Recordly",
+      "trendshiftUrl": "https://trendshift.io/repositories/26460",
+      "language": "TypeScript",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-03-12T23:38:32Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "microsoft/tgrep",
+      "owner": "microsoft",
+      "repo": "tgrep",
+      "description": "Trigram-indexed grep with a client/server architecture for fast regex search in large codebases locally",
+      "githubUrl": "https://github.com/microsoft/tgrep",
+      "trendshiftUrl": "https://trendshift.io/repositories/178467",
+      "language": "Rust",
+      "topics": [
+        "Search"
+      ],
+      "dateCreated": "2026-04-03T15:50:37Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Tencent/teamai-cli",
+      "owner": "Tencent",
+      "repo": "teamai-cli",
+      "description": "The team harness for AI agents",
+      "githubUrl": "https://github.com/Tencent/teamai-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/123184",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-04-27T09:42:49Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "jo-inc/camofox-browser",
+      "owner": "jo-inc",
+      "repo": "camofox-browser",
+      "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
+      "githubUrl": "https://github.com/jo-inc/camofox-browser",
+      "trendshiftUrl": "https://trendshift.io/repositories/22534",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-01-26T07:31:13Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "hoochanlon/fq-book",
+      "owner": "hoochanlon",
+      "repo": "fq-book",
+      "description": "📖《这本书能让你连接互联网》 详细阐述代理、隧道、VPN运作过程，并对GFW策略如：地址端口封锁、服务器缓存投毒、数字验证攻击、SSL连接阻断做相关的原理说明",
+      "githubUrl": "https://github.com/hoochanlon/fq-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/158034",
+      "language": "Shell",
+      "topics": [
+        "Proxy"
+      ],
+      "dateCreated": "2018-05-26T09:57:13Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "topics": [
+        "Data visualization"
+      ],
+      "dateCreated": "2026-04-16T18:01:16Z"
+    }
+  ]
+}
