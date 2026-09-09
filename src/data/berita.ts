@@ -4259,6 +4259,51 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "kemenpan-rb-percepat-transformasi-digital-asn-guna-hadapi-disrupsi-ai",
+    title: "KemenPAN-RB Percepat Transformasi Digital ASN: 6,7 Juta Pegawai, Tapi yang Berubah Bukan Jumlahnya",
+    excerpt:
+      "Menteri Rini Widyantini menegaskan 6,7 juta ASN harus bertransformasi menghadapi disrupsi AI — pertanyaan sebenarnya bukan berapa banyak yang sudah pakai AI, tapi kompetensi apa yang sedang dibangun.",
+    category: "Opini",
+    date: "2026-09-10",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Wacana transformasi digital ASN di Indonesia biasanya berhenti di angka: berapa kementerian yang sudah punya portal layanan, berapa chatbot yang sudah aktif, berapa persen instansi yang dibilang 'sudah digital'. Pidato Menteri PANRB Rini Widyantini di Sumedang beberapa waktu lalu memilih titik hitung yang lebih jujur: dari 6,7 juta aparatur sipil negara yang tercatat, yang berubah bukan populasinya, melainkan kompetensi yang diminta darinya di era AI.",
+          "Ada perbedaan penting antara instansi yang memasang AI sebagai simbol modernisasi dan yang memakainya untuk benar-benar mengubah cara kerja. Yang pertama membeli platform, menempelkan logo AI di slide presentasi, lalu kembali ke cara lama. Yang kedua memulai dari pertanyaan yang lebih kecil: pekerjaan rutin apa yang paling banyak menyita waktu ASN hari ini, dan dari situ, alat apa yang paling pas untuk membantu. Pidato Menteri Rini setidaknya menunjukkan bahwa instansi pusat sudah mulai bertanya dengan urutan yang benar.",
+        ],
+      },
+      {
+        heading: "Kompetensi, bukan jumlah tombol aplikasi",
+        paragraphs: [
+          "Ada godaan yang sulit dihindari ketika bicara transformasi digital birokrasi: fokus ke alat, bukan orang. Sensus internal yang sering dikutip adalah berapa ASN yang sudah punya akun Tanda Tangan Elektronik, berapa yang sudah familiar dengan sistem SSCN, berapa yang pernah mengikuti pelatihan teknis tertentu. Semua angka itu penting, tapi tidak satu pun yang menjawab pertanyaan inti: ASN yang sudah selesai pelatihan itu, apakah benar-benar memakai ilmunya saat kembali ke meja kerja?",
+          "Kompetensi yang relevan di era AI ternyata tidak banyak berubah dari kompetensi yang selalu relevan di birokrasi: kemampuan membaca konteks, kemampuan menyusun argumen, kemampuan mengomunikasikan keputusan yang tidak populer, dan keberanian untuk mengeskalasi masalah yang melampaui wewenang. Yang berubah adalah alat untuk bekerja. ASN yang dulu menghabiskan tiga hari untuk merangkum dokumen 200 halaman kini bisa mengerjakannya dalam hitungan jam, lalu menggunakan waktu yang tersisa untuk hal yang benar-benar membutuhkan penalaran manusia. Seperti dicatat BKN dalam program pelatihan kepemimpinan digitalnya untuk 145 ribu ASN, transformasi bukan soal menambah perangkat, tapi soal memastikan manusia tahu apa yang harus dilakukan dengan hasil dari perangkat itu.",
+        ],
+      },
+      {
+        heading: "Generasi Y dominan — modal yang tidak boleh disia-siakan",
+        paragraphs: [
+          "Data Badan Kepegawaian Negara per Mei 2026 menunjukkan komposisi ASN didominasi Generasi Y sebesar 54 persen atau 3,7 juta orang, disusul Generasi X 35 persen atau 2,3 juta orang, dan Generasi Z 10 persen atau 650.118 orang. Angka ini sering dikutip untuk dua narasi yang berlawanan: yang satu menyebutkannya sebagai bukti birokrasi kita sudah 'cukup modern' dan tinggal menunggu waktu; yang satu lagi khawatir dominasi Gen Y justru menjadi hambatan karena mereka sudah terlalu senior untuk berubah.",
+          "Pandangan kedua tidak berdasar. Justru Generasi Y — yang tumbuh bersama adopsi internet massal, melihat lahirnya e-commerce, dan kini menjadi manajer menengah di hampir semua instansi — adalah generasi yang paling adaptif terhadap perubahan teknologi. Mereka tidak selalu jadi yang paling antusias, tapi mereka adalah generasi yang paling berpengalaman mengelola transisi. Tantangan sebenarnya adalah menyusun program transformasi yang menghargai pengalaman mereka sembari membuka ruang bagi Gen Z yang sudah melek AI generatif. Skema mentorship terbalik — Gen Z mengajari Gen Y soal tool baru, Gen Y mengajari Gen Z soal birokrasi — adalah pola murah yang hampir tidak pernah dipakai di instansi kita.",
+        ],
+      },
+      {
+        heading: "Kampus sebagai bagian dari ekosistem, bukan sekadar penyelengara pelatihan",
+        paragraphs: [
+          "Menteri Rini juga menyinggung kolaborasi dengan perguruan tinggi sebagai bagian dari strategi. Kalimat itu penting, tapi sering disalahartikan sebagai ajakan untuk mengadakan seminar dan workshop rutin yang tidak berbekas. Kolaborasi yang berguna antara kampus dan birokrasi adalah yang lebih struktural: kurikulum yang memang dirancang untuk mencetak talenta siap kerja di instansi publik, magang yang tidak hanya menjadi seremoni akhir semester, dan riset terapan yang menjawab masalah birokrasi nyata — bukan riset yang berakhir di jurnal internasional dan tidak pernah dibaca oleh pembuat kebijakan.",
+          "Beberapa kampus sudah mulai ke arah itu, tapi mayoritas masih berjarak dari kebutuhan instansi. Ketika kampus mau turun tangan menyusun ulang kurikulum pelatihan ASN dengan memasukkan modul AI generatif yang spesifik untuk pekerjaan administratif — cara menyusun draft telaah regulasi, cara merangkum laporan dengan bantuan model bahasa, cara memverifikasi output AI sebelum dipakai sebagai dokumen resmi — saat itulah kolaborasi menjadi nyata. Bukan setahun sekali dalam bentuk MoU yang langsung berdebu di lemari.",
+        ],
+      },
+      {
+        heading: "Yang harus dijaga supaya tidak jadi slogan",
+        paragraphs: [
+          "Ada tiga hal yang editor Wawasan AI anggap wajib dijaga agar transformasi digital ASN ini tidak berhenti jadi slogan. Pertama, indikator keberhasilannya harus terukur pada hasil layanan, bukan jumlah pelatihan. Berapa jam rata-rata pelayanan yang sebelumnya butuh tiga hari dan kini selesai dalam satu hari; berapa persen dokumen yang sebelumnya salah format dan kini konsisten — itu yang seharusnya masuk ke laporan tahunan, bukan jumlah sertifikat yang dibagikan.",
+          "Kedua, tetap jujur tentang keterbatasan AI. Menteri sendiri sudah menegaskan bahwa AI mempercepat, bukan menggantikan. Kalimat itu perlu diterjemahkan ke aturan main yang jelas: hasil AI yang menyangkut keputusan administratif atau menyangkut hak warga harus tetap melalui verifikasi manusia yang namanya tercatat. Ketiga, libatkan ASN yang paling muda dan paling dekat dengan tool baru dalam setiap perumusan kebijakan. Mereka bukan sekadar objek pelatihan, mereka adalah orang yang paling tahu di mana hambatan nyata berada. Kalau transformasi digital ASN di Indonesia benar-benar ingin berjalan, suara merekalah yang paling sering absen dari meja perumusan kebijakan, dan justru paling dibutuhkan di situ.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
