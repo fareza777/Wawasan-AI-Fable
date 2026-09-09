@@ -4267,6 +4267,51 @@ link: "https://www.anthropic.com",
     date: "2026-09-09",
     featured: false,
   },
+{
+    slug: "gpt-6-astra-non-reasoning",
+    name: "GPT-6 Astra (Non-reasoning)",
+    tagline:
+      "Mode tanpa penalaran GPT-6 Astra untuk latency minimum",
+    tags: ["OpenAI", "Proprietary", "Coding", "Low Latency"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 7.4 },
+      { label: "Coding", value: 8.5 },
+      { label: "Kecepatan", value: 9.1 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 45.2,
+    aa_coding_index: 76.2,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-10",
+    summary:
+      "Varian tanpa penalaran GPT-6 Astra OpenAI untuk workload latency-sensitive, intelligence index 45,2 (sumber: Artificial Analysis) dengan coding index 76,2 (sumber: Artificial Analysis) yang memimpin benchmark pemrograman proprietary keluarga OpenAI. Harga API $10,00 per juta token input dan $50,00 output sama dengan varian lain di keluarga ini.",
+    pros: [
+      "Coding index 76,2 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI untuk mode tanpa penalaran, sejajar dengan varian xhigh (75,9) dan low (75,7)",
+      "Throughput output tinggi karena tidak ada overhead penalaran, ideal untuk workload completion prediksi teks sederhana dan transformasi kode ringan",
+      "TTFT lebih rendah dibanding varian penalaran karena tidak perlu menunggu proses berpikir sebelum output pertama",
+      "Cocok untuk pipeline autocomplete IDE, response streaming, dan workload yang butuh respons cepat tanpa kedalaman penalaran",
+    ],
+    cons: [
+      "Intelligence index 45,2 (sumber: Artificial Analysis) di bawah varian xhigh (54,3) dengan selisih 9,1 poin dan setara dengan low (46,0) untuk workload riset atau planning panjang, kurang sesuai",
+      "Tanpa penalaran berarti tidak bisa menangani task multi-langkah yang butuh chain-of-thought internal, sehingga kemampuan agentic-nya lebih dangkal",
+      "Harga API premium $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) sama dengan varian lain, untuk workload sederhana, value-tier Asia menawarkan harga jauh lebih rendah",
+      "Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "GPT-6 Astra (Non-reasoning) adalah opsi di keluarga GPT-6 untuk workload yang mengutamakan respons cepat tanpa kedalaman penalaran, coding 76,2 memimpin benchmark proprietary dengan TTFT minimum. Pilih varian ini untuk autocomplete IDE atau completion streaming; untuk riset atau coding agentic papan atas, varian xhigh atau Claude Opus 5 lebih sesuai.",
+    body: [
+      "GPT-6 Astra (Non-reasoning) adalah varian tanpa penalaran dari lini GPT-6 Astra OpenAI, diposisikan untuk workload latency-sensitive yang tidak butuh kedalaman berpikir internal. Intelligence index 45,2 (sumber: Artificial Analysis) menaruh Astra (Non-reasoning) di papan tengah proprietary global, setara dengan varian low (46,0) dan di bawah xhigh (54,3) dengan selisih 9,1 poin untuk workload penalaran murni. Coding index 76,2 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI untuk mode tanpa penalaran, melampaui varian xhigh (75,9) dan low (75,7), dan sejajar dengan Opus 5 Max (78) dengan selisih tipis 1,8 poin. Posisi label Non-reasoning menunjukkan tidak ada proses berpikir internal sebelum output pertama, bermain di kelas tercepat GPT-6 untuk workload completion dan transformasi sederhana. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload latency-sensitive dan pipeline completion, GPT-6 Astra (Non-reasoning) menunjukkan karakter khas mode tanpa penalaran, output langsung muncul tanpa jeda berpikir internal, ideal untuk skenario autocomplete IDE, response streaming, dan transformasi kode ringan yang tidak butuh penalaran multi-langkah. Yang paling terasa dibanding varian penalaran adalah trade-off intel vs latency: intelligence index 45,2 (sumber: Artificial Analysis) setara dengan varian low, tapi tanpa overhead penalaran internal membuat TTFT lebih rendah dan throughput output lebih tinggi untuk workload sederhana. Coding index 76,2 (sumber: Artificial Analysis) memimpin benchmark proprietary OpenAI, menjadikan Astra (Non-reasoning) opsi coding papan atas untuk pipeline completion cepat di ekosistem OpenAI. Untuk workload customer-facing realtime atau pipeline autocomplete yang sensitif latency, Astra (Non-reasoning) adalah opsi paling rasional di keluarga GPT-6. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 45,2 (sumber: Artificial Analysis) menaruh Astra (Non-reasoning) di papan tengah-atas proprietary, setara Sonnet 5 dan di bawah Opus 5 Max Effort (63,1) dengan selisih 17,9 poin untuk workload penalaran murni. Coding index 76,2 (sumber: Artificial Analysis) memimpin benchmark proprietary OpenAI untuk mode tanpa penalaran, melampaui varian xhigh (75,9) dan low (75,7). Throughput output lebih tinggi karena tidak ada overhead penalaran internal, ideal untuk workload completion sederhana dengan margin throughput yang sehat. TTFT lebih rendah dibanding varian penalaran karena tidak perlu menunggu proses berpikir sebelum output pertama, menjadikan Astra (Non-reasoning) opsi paling responsif di keluarga GPT-6. Harga API $10,00 per juta token input dan $50,00 output sama dengan varian lain (sumber: Artificial Analysis), sehingga value proposition Astra (Non-reasoning) bukan dari sisi harga melainkan dari latency minimum. Bagi developer Indonesia yang menghitung dolar, ini posisi premium yang menawarkan capability coding papan atas keluarga OpenAI dengan responsivitas terbaik untuk workload completion sederhana. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: intelligence index 45,2 (sumber: Artificial Analysis) di bawah varian xhigh (54,3) dengan selisih 9,1 poin, sehingga untuk workload riset multi-langkah atau planning agentic panjang, varian xhigh atau Max Effort tetap lebih sesuai; trade-off capability vs latency harus dipertimbangkan matang per use case. Tanpa penalaran berarti tidak bisa menangani task multi-langkah yang butuh chain-of-thought internal, sehingga kemampuan agentic-nya lebih dangkal dibanding varian penalaran di keluarga ini. Harga API premium $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) sama dengan varian lain di keluarga ini, dan untuk workload sederhana tanpa kebutuhan proprietary OpenAI spesifik, model value-tier Asia seperti Kimi K3 atau DeepSeek V4 Pro menawarkan harga jauh lebih rendah. Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius. Strategi pemakaian yang paling rasional: GPT-6 Astra (Non-reasoning) untuk pipeline autocomplete IDE dan workload completion streaming di ekosistem OpenAI; varian xhigh untuk coding-agentic papan atas; Sonnet 5 atau Opus 5 untuk antarmuka interaktif dan penalaran terdalam; Kimi K3 atau DeepSeek V4 Pro untuk workload coding value-tier. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-10",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
