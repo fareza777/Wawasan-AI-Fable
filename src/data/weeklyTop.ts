@@ -2497,6 +2497,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Self-hostable via Docker, open source (Apache 2.0), dan sudah punya 20 contoh kasus nyata di README — relevan untuk startup Indonesia yang mengandalkan AI assistant sebagai channel discovery dan ingin audit independen atas 'GEO footprint' mereka.",
     ],
   },
+  "XiaoDuoYa/codex-with-chatgpt": {
+    description:
+      "Pasangkan ChatGPT Plus/Pro (web subscription) sebagai 'otak perencanaan' Codex lewat jembatan MCP read-only OAuth — hemat kuota API Codex untuk planning dan review, repositori tetap di lokal.",
+    highlights: [
+      "Arsitektur 'ChatGPT berpikir, Codex bekerja': ChatGPT web subscription (yang sering nganggur) dipakai untuk planning & review, sementara Codex CLI mengeksekusi — tanpa API key tambahan, tanpa reverse proxy, hanya lewat OAuth + MCP bridge.",
+      "Repositori tidak pernah di-upload ke cloud: ChatGPT membaca lewat koneksi MCP read-only yang dilindungi OAuth, hanya baris kode yang benar-benar dibutuhkan untuk task saat itu — privacy-first untuk codebase sensitif.",
+      "Bedanya dari openai/codex-plugin-cc (yang menyisipkan Codex ke Claude Code): di sini ChatGPT Plus/Pro diposisikan sebagai 'second brain' untuk Codex itu sendiri — memisahkan 'thinking' (berbayar flat) dari 'execution' (token API) sehingga biaya alur agentik bisa turun drastis.",
+      "TypeScript open source dengan topik lengkap (ai-agents, chatgpt, codex, mcp, oauth) dan 3.7k+ bintang — relevan untuk developer Indonesia yang sudah langganan ChatGPT Plus/Pro dan ingin paket subscription-nya benar-benar dipakai untuk coding agent sehari-hari.",
+    ],
+  },
+  "openai/NavierStokesAndEuler": {
+    description:
+      "Bukti formal Lean 4 resmi dari OpenAI untuk hasil 'finite-time blowup' persamaan Navier-Stokes dan Euler — menutup salah satu jalur menuju hadiah Millennium Prize Clay Mathematics Institute.",
+    highlights: [
+      "Formalisasi Lean 4 dari makalah OpenAI 'Finite time blowup for Navier-Stokes' dan '... for the Euler equation' — buktinya machine-checked, bukan esai atau preprint yang belum ditinjau.",
+      "Menunjukkan alternatif (C) dan (D) pada problem statement resmi Clay untuk Navier-Stokes existence & smoothness: solusi smooth dengan energi kinetik terbatas tidak ada, baik di seluruh ruang ℝ³ maupun torus periodik ℝ³/ℤ³ untuk viskositas positif tertentu.",
+      "Untuk Euler, dibuktikan adanya initial velocity smooth compact-support divergence-free di mana solusi tak terkompresi (C¹ norm tak hingga) dalam waktu berhingga — salah satu batu loncatan matematika fluida klasik yang sudah lama terbuka.",
+      "Bukan demo kecil: 1.500+ bintang dalam hitungan hari dan berada di repositori resmi OpenAI — relevan untuk matematikawan, peneliti formal methods, dan siapa saja yang ingin 'membaca' bukti Clay Prize dengan Lean, bukan dengan keyakinan.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
