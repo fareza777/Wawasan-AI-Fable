@@ -1,14 +1,10 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "9 September 2026",
-  "period": {
-    "date": "2026-09-09",
-    "label": "9 September 2026",
-    "path": "/repo/daily/2026/09/09"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-09T00:06:59.166Z",
+  "fetchedAt": "2026-09-09T06:27:41.487Z",
   "repos": [
     {
       "rank": 1,
@@ -26,121 +22,29 @@
     },
     {
       "rank": 2,
-      "fullName": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "repo": "hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
-      "githubUrl": "https://github.com/heygen-com/hyperframes",
-      "trendshiftUrl": "https://trendshift.io/repositories/26131",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI video generation"
-      ],
-      "dateCreated": "2026-03-10T01:51:06Z"
+      "fullName": "openai/NavierStokesAndEuler",
+      "owner": "openai",
+      "repo": "NavierStokesAndEuler",
+      "description": "Lean certificates accompanying Navier-Stokes and Euler results",
+      "githubUrl": "https://github.com/openai/NavierStokesAndEuler",
+      "trendshiftUrl": "https://trendshift.io/repositories/222660",
+      "language": "Lean",
+      "topics": [],
+      "dateCreated": "2026-09-08T10:53:38Z"
     },
     {
       "rank": 3,
-      "fullName": "Albert-Weasker/niubigeo",
-      "owner": "Albert-Weasker",
-      "repo": "niubigeo",
-      "description": "Open-source AI brand visibility and competitor reports",
-      "githubUrl": "https://github.com/Albert-Weasker/niubigeo",
-      "trendshiftUrl": "https://trendshift.io/repositories/212064",
-      "language": "TypeScript",
-      "topics": [
-        "Self-hosted"
-      ],
-      "dateCreated": "2026-09-03T15:55:54Z"
+      "fullName": "liquidslr/system-design-notes",
+      "owner": "liquidslr",
+      "repo": "system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "githubUrl": "https://github.com/liquidslr/system-design-notes",
+      "trendshiftUrl": "https://trendshift.io/repositories/25235",
+      "topics": [],
+      "dateCreated": "2024-12-24T01:19:44Z"
     },
     {
       "rank": 4,
-      "fullName": "microsoft/markitdown",
-      "owner": "microsoft",
-      "repo": "markitdown",
-      "description": "Python tool for converting files and office documents to Markdown.",
-      "githubUrl": "https://github.com/microsoft/markitdown",
-      "trendshiftUrl": "https://trendshift.io/repositories/12961",
-      "language": "Python",
-      "topics": [
-        "Document processing"
-      ],
-      "dateCreated": "2024-11-13T19:56:40Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "webadderallorg/Recordly",
-      "owner": "webadderallorg",
-      "repo": "Recordly",
-      "description": "Create polished demo videos without editing skills. Mac/Windows/Linux",
-      "githubUrl": "https://github.com/webadderallorg/Recordly",
-      "trendshiftUrl": "https://trendshift.io/repositories/26460",
-      "language": "TypeScript",
-      "topics": [
-        "Video editing"
-      ],
-      "dateCreated": "2026-03-12T23:38:32Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "microsoft/tgrep",
-      "owner": "microsoft",
-      "repo": "tgrep",
-      "description": "Trigram-indexed grep with a client/server architecture for fast regex search in large codebases locally",
-      "githubUrl": "https://github.com/microsoft/tgrep",
-      "trendshiftUrl": "https://trendshift.io/repositories/178467",
-      "language": "Rust",
-      "topics": [
-        "Search"
-      ],
-      "dateCreated": "2026-04-03T15:50:37Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "Tencent/teamai-cli",
-      "owner": "Tencent",
-      "repo": "teamai-cli",
-      "description": "The team harness for AI agents",
-      "githubUrl": "https://github.com/Tencent/teamai-cli",
-      "trendshiftUrl": "https://trendshift.io/repositories/123184",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-04-27T09:42:49Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "jo-inc/camofox-browser",
-      "owner": "jo-inc",
-      "repo": "camofox-browser",
-      "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
-      "githubUrl": "https://github.com/jo-inc/camofox-browser",
-      "trendshiftUrl": "https://trendshift.io/repositories/22534",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "Headless browser"
-      ],
-      "dateCreated": "2026-01-26T07:31:13Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "hoochanlon/fq-book",
-      "owner": "hoochanlon",
-      "repo": "fq-book",
-      "description": "📖《这本书能让你连接互联网》 详细阐述代理、隧道、VPN运作过程，并对GFW策略如：地址端口封锁、服务器缓存投毒、数字验证攻击、SSL连接阻断做相关的原理说明",
-      "githubUrl": "https://github.com/hoochanlon/fq-book",
-      "trendshiftUrl": "https://trendshift.io/repositories/158034",
-      "language": "Shell",
-      "topics": [
-        "Proxy"
-      ],
-      "dateCreated": "2018-05-26T09:57:13Z"
-    },
-    {
-      "rank": 10,
       "fullName": "cathrynlavery/diagram-design",
       "owner": "cathrynlavery",
       "repo": "diagram-design",
@@ -152,6 +56,91 @@
         "Data visualization"
       ],
       "dateCreated": "2026-04-16T18:01:16Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "jonnyoo/glance",
+      "owner": "jonnyoo",
+      "repo": "glance",
+      "description": "",
+      "githubUrl": "https://github.com/jonnyoo/glance",
+      "trendshiftUrl": "https://trendshift.io/repositories/222719",
+      "language": "Swift",
+      "topics": [
+        "Computer vision"
+      ],
+      "dateCreated": "2026-07-21T19:30:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "XiaoDuoYa/codex-with-chatgpt",
+      "owner": "XiaoDuoYa",
+      "repo": "codex-with-chatgpt",
+      "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "githubUrl": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "trendshiftUrl": "https://trendshift.io/repositories/193878",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-08-28T12:57:24Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "openai/plugins",
+      "owner": "openai",
+      "repo": "plugins",
+      "description": "OpenAI Plugins",
+      "githubUrl": "https://github.com/openai/plugins",
+      "trendshiftUrl": "https://trendshift.io/repositories/27064",
+      "language": "JavaScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-03-04T21:52:32Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "bilawalsidhu/gods-eye-view",
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "description": "God's Eye View v1 public open-source release placeholder",
+      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
+      "trendshiftUrl": "https://trendshift.io/repositories/62154",
+      "topics": [],
+      "dateCreated": "2026-06-22T23:37:22Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "AI-FanGe/Microduck-build-tutorial",
+      "owner": "AI-FanGe",
+      "repo": "Microduck-build-tutorial",
+      "description": "A practical hardware and software setup for a compact RL-powered biped robot.",
+      "githubUrl": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "trendshiftUrl": "https://trendshift.io/repositories/220851",
+      "language": "Python",
+      "topics": [
+        "Robotics"
+      ],
+      "dateCreated": "2026-09-04T17:18:43Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "EvoMap/AutoResearch",
+      "owner": "EvoMap",
+      "repo": "AutoResearch",
+      "description": "AI/ML research agents from idea to paper-ready evidence. An EvoMap open-source project.",
+      "githubUrl": "https://github.com/EvoMap/AutoResearch",
+      "trendshiftUrl": "https://trendshift.io/repositories/202902",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-08-15T07:48:42Z"
     }
   ]
 }
