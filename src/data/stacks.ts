@@ -3769,6 +3769,47 @@ export const stacks: Review[] = [
     date: "2026-09-09",
     featured: false,
   },
+  {
+    slug: "play-ht-3",
+    name: "PlayHT 3.0",
+    tagline: "Platform voice AI end-to-end dengan voice cloning 10 detik dan conversational agent latensi rendah",
+    tags: ["PlayHT", "Freemium", "Voice/Audio", "Voice Clone"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 8.8 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.6 },
+      { label: "Harga", value: 7.9 },
+    ],
+    summary:
+      "PlayHT 3.0 adalah platform voice AI yang menggabungkan text-to-speech ultra-naturalistis, voice cloning dari sampel 10 detik, dan conversational agent siap pakai dalam satu paket terpadu. Rebrand dari Play.ht ke PlayAI pada 2026 membawa fokus baru ke voice agent enterprise, tapi inti produk—sintesis suara berkualitas studio—tetap menjadi pembeda utama di pasar.",
+    pros: [
+      "Voice cloning dari sampel 10 detik menghasilkan suara yang konsisten lintas kalimat panjang, cocok untuk brand voice permanen dan audiobook narasi panjang",
+      "PlayDialog 3.0 mendukung conversational agent multi-speaker dengan latensi di bawah 500 milidetik, menjadikannya pesaing serius ElevenLabs untuk use case voice bot",
+      "Library lebih dari 800 suara preset dalam 140+ bahasa termasuk Indonesia, Jawa, dan Sunda—salah satu koleksi terlengkap untuk pasar Asia Tenggara",
+      "API mature dengan SDK Python, Node, dan REST streaming yang terdokumentasi baik, plus integrasi resmi ke Twilio, LiveKit, dan Stream",
+      "Halaman Playground gratis tanpa signup memungkinkan eksplorasi model dan suara sebelum memutuskan berlangganan",
+    ],
+    cons: [
+      "Harga per karakter pada tier Creator ($22 per 100 ribu karakter) relatif mahal untuk use case volume tinggi—lebih hemat di ElevenLabs Pro atau Cartesia untuk bot customer service",
+      "Kualitas cloning sensitif terhadap kualitas sampel rekaman: noise, musik latar, atau artefak kompresi akan terbawa ke hasil akhir",
+      "Latency PlayDialog lebih tinggi dari Cartesia Sonic untuk use case real-time voice agent yang sangat sensitif delay (target sub-300 ms)",
+      "Dokumentasi bahasa Indonesia masih terbatas, dan dukungan pelanggan untuk zona waktu Asia Tenggara cenderung lebih lambat dibanding platform asal Amerika Serikat",
+    ],
+    verdict:
+      "Pilihan solid untuk content creator, podcaster, dan tim yang mengutamakan koleksi suara preset dan voice cloning cepat. Untuk voice agent real-time dengan volume tinggi, Cartesia tetap lebih murah per menit; untuk library suara kreatif, ElevenLabs masih lebih kaya.",
+    body: [
+      "PlayHT berdiri di garda depan revolusi voice AI sejak 2020, dan PlayHT 3.0—rilis stabil pada awal 2026—menandai kematangan mereka sebagai platform end-to-end. Tiga pilar produk saling melengkapi: pertama, PlayAI text-to-speech dengan model Play 3.0 Mini yang menyintesis suara dari 800+ preset dan 140+ bahasa; kedua, voice cloning instan yang hanya butuh sampel 10-30 detik untuk menghasilkan voiceprint permanen; ketiga, PlayDialog 3.0 sebagai layer conversational agent yang menggabungkan TTS, LLM eksternal (Claude, GPT, atau model self-host), dan telephony integration dalam satu workflow. Rebrand ke PlayAI pada paruh pertama 2026 menandakan ambisi mereka masuk ke pasar enterprise voice agent, bersaing langsung dengan ElevenLabs Conversational AI, Vapi, dan Retell AI di segmen customer service automation.",
+      "Dalam pengujian editorial, hal yang paling langsung terasa dari PlayHT 3.0 adalah kualitas koleksi suara presetnya. Untuk pasar Asia Tenggara, library sudah mencakup variasi Indonesia formal (Jakarta, Manado), Jawa, Sunda, Minang, hingga Tagalog dan Vietnam—ini menjadi nilai jual signifikan dibanding ElevenLabs yang representation bahasa-bahasa lokal ini masih tipis. Voice cloning dari sampel 10 detik cukup untuk menghasilkan voiceprint yang konsisten pada kalimat panjang dan narasi multi-bab, asalkan sampel rekaman bersih dari noise dan musik latar; untuk podcaster atau audiobook creator yang punya ratusan episode backlog, ini berarti bisa melatih voice brand dalam hitungan menit, bukan jam. PlayDialog 3.0, di sisi lain, adalah layer conversational agent yang memungkinkan deployment voice bot ke Twilio atau LiveKit dengan integrasi LLM eksternal; latensi end-to-end berkisar 400-700 milidetik, lebih tinggi dari Cartesia Sonic (80-120 ms) tapi sebanding dengan ElevenLabs Conversational AI.",
+      "Paket harga disusun per karakter untuk TTS dan per menit untuk conversational. TTS Creator seharga $22 per bulan untuk 100 ribu karakter (sekitar Rp 350 ribu) cocok untuk content creator dengan produksi 5-10 video pendek per bulan; TTS Unlimited seharga $99 per bulan (Rp 1,6 juta) memberikan karakter tak terbatas untuk studio produksi aktif. Untuk conversational agent, PlayDialog Agent dihargai $0,06 per menit percakapan—setara dengan Cartesia Sonic untuk use case volume, tapi dengan kualitas suara preset yang lebih kaya. Free tier tersedia dengan kredit karakter terbatas dan akses ke Playground tanpa signup, cukup untuk eksplorasi awal sebelum berlangganan. Ada juga paket Enterprise dengan harga custom yang menambahkan SSO, dedicated support, dan SLA uptime.",
+      "Untuk pengguna Indonesia, profil paling ideal untuk PlayHT 3.0 adalah: pertama, content creator dan podcaster yang butuh voice cloning permanen untuk brand voice mereka dan ingin library preset bahasa Indonesia yang kaya tanpa harus cloning manual; kedua, agency periklanan dan production house yang menerima proyek voice-over multibahasa untuk klien regional Asia Tenggara; ketiga, startup yang membangun voice agent customer service dan memilih PlayDialog dibanding ElevenLabs karena pertimbangan harga per menit atau variasi suara. Catatan penting: untuk use case di mana latensi sub-300 milidetik adalah syarat mutlak (misalnya voice bot interaktif di call center volume tinggi), Cartesia tetap pilihan lebih efisien; untuk proyek narasi dan audiobook dengan kreativitas karakter suara yang tinggi, ElevenLabs masih memimpin dalam hal library dan kontrol emosional. Kompetitor langsung yang perlu dipertimbangkan: ElevenLabs (lebih kaya fitur creative, library lebih besar, latency lebih tinggi), Cartesia (latency terbaik, harga lebih murah untuk agent, library lebih sempit), LMNT (voice cloning cepat, fokus creator, kurang orchestration), dan Vapi (fokus murni voice agent dengan integrasi telephony lengkap). Saran editorial: mulai dari Playground gratis untuk eksplorasi model dan suara, lalu upgrade ke Creator $22 jika produksi sudah stabil di 2-3 konten per bulan—rollover karakter tidak akumulasi ke bulan berikutnya, jadi perencanaan produksi tetap penting.",
+    ],
+    link: "https://play.ht",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-10",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
