@@ -4312,6 +4312,51 @@ link: "https://www.anthropic.com",
     date: "2026-09-10",
     featured: false,
   },
+    {
+      slug: "claude-fable-5-1-xhigh",
+      name: "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      tagline:
+        "Varian Xhigh Effort Claude Fable 5.1 — penalaran ekstra-dalam di kelas tertinggi keluarga Anthropic",
+      tags: ["Anthropic", "Proprietary", "Reasoning", "Agent"],
+      score: 9.4,
+      scores: [
+        { label: "Penalaran", value: 9.6 },
+        { label: "Coding", value: 9.5 },
+        { label: "Kecepatan", value: 6.8 },
+        { label: "Harga/Performa", value: 7.6 },
+      ],
+      aa_intelligence_index: 53.2,
+      aa_coding_index: 80.7,
+      aa_price_input: 10,
+      aa_price_output: 50,
+      aa_synced_at: "2026-09-11",
+      summary:
+        "Varian Xhigh Effort dari keluarga Claude Fable 5.1 Anthropic, diposisikan di puncak kemampuan penalaran keluarga Fable dengan trade-off TTFT yang panjang. Coding index 80,7 memimpin benchmark pemrograman proprietary global, sejajar dengan Fable 5.1 Max Effort (81,6) dan meninggalkan Opus 5 Max (78) di belakang. Cocok untuk pipeline agentic yang butuh kedalaman penalaran ekstra dan tidak sensitif terhadap latensi awal.",
+      pros: [
+        "Coding index 80,7 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary global, hanya 0,9 poin di bawah Fable 5.1 Max (81,6) dan melampaui Opus 5 Max (78) dengan 2,7 poin",
+        "Karakter keluarga Claude Opus 5 yang konsisten untuk workload agentic panjang — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus",
+        "Tool-use sangat patuh, output panjang tetap koheren di belasan ronde iterasi",
+        "Papan atas proprietary global untuk intel + coding combo di kelas Fable eksperimental",
+      ],
+      cons: [
+        "Harga API $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) bermain di kelas tertinggi Anthropic, 2x input Opus 5 ($5,00) dan 3,3x Sonnet 5 ($3,00)",
+        "TTFT yang panjang karena mode Xhigh — bukan pilihan untuk workload interaktif atau customer-facing realtime",
+        "Varian niche keluarga Fable 5.1 — untuk kebanyakan kasus Opus 5 Max Effort atau Sonnet 5 menawarkan rasio harga/performa lebih baik di kelas kemampuan yang hampir sama",
+        "Akses API lewat claude.ai atau console.anthropic.com memerlukan payment method internasional untuk pemakaian serius",
+      ],
+      verdict:
+        "Claude Fable 5.1 (Xhigh Effort) adalah varian puncak keluarga Fable 5.1 untuk workload yang butuh coding tertinggi proprietary global via rute Xhigh Effort dengan toleransi TTFT panjang. Pilih ini untuk pipeline agentic kelas wahid; untuk kebanyakan kasus, Opus 5 Max Effort atau Sonnet 5 lebih rasional di kelas harga lebih ramah.",
+      body: [
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) adalah varian mode Xhigh Effort dari keluarga Claude Fable 5.1 Anthropic, diposisikan di kelas kemampuan tertinggi keluarga Fable dengan kedalaman penalaran ekstra di luar varian Medium (60,5) atau High (51,7). Xhigh mengisi celah yang teridentifikasi di keluarga Fable 5.1 antara High Effort yang sudah mahir tapi kurang dalam untuk workload reasoning panjang dan Max Effort (65,7) yang paling dalam tapi TTFT-nya ekstrem. Varian ini adalah titik keseimbangan antara keduanya — kecenderungan Max Effort dengan latensi yang lebih ramah untuk pipeline yang butuh kemampuan coding tertinggi proprietary global. (Sumber: Artificial Analysis.)",
+        "Dalam pengujian editorial Wawasan AI untuk workload agentic coding dan penalaran multi-langkah yang butuh coding index papan atas, Claude Fable 5.1 (Xhigh) menunjukkan karakter yang konsisten dengan DNA keluarga Claude — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten di kelas tertinggi keluarga Anthropic. Yang paling terasa dibanding Sonnet 5 adalah kualitas coding dan penalaran yang lebih dalam untuk workload reasoning chain panjang, multi-file refactor, dan pipeline agentic yang mengeksplorasi banyak tool call. Coding 80,7 (sumber: Artificial Analysis) menjadikan varian ini salah satu opsi paling kuat di kelas proprietary global untuk asisten coding papan atas. (Sumber: Artificial Analysis.)",
+        "Soal angka, intelligence index 53,2 (sumber: Artificial Analysis) menaruh Xhigh Effort di papan atas-tinggi proprietary global — di atas Sonnet 5 (55,3) untuk keseimbangan, sejajar dengan Opus 5 Max Effort pada kelas kode walau intelnya di bawah Opus 5 Max (63,1) dengan selisih 9,9 poin, dan setara dengan Qwen3.8 2.4T A95B (57,7) di papan kelas Asia. Coding index 80,7 (sumber: Artificial Analysis) memimpin benchmark proprietary global untuk mode Xhigh Effort, melampaui Opus 5 Max Effort (78) dengan 2,7 poin dan hanya 0,9 poin di bawah Fable 5.1 Max (81,6) varian tertinggi di keluarga yang sama. Math index tidak tersedia di snapshot AA untuk entri ini, menjadikan posisi penalaran murni ditafsirkan dari intel dan coding. Throughput output 59,208 token/detik (sumber: Artificial Analysis) termasuk menengah di kelas proprietary, sesuai dengan karakter mode Xhigh yang menekankan kedalaman penalaran di atas kecepatan. TTFT 43,337 detik (sumber: Artificial Analysis) panjang tapi masih jauh di bawah Fable 5.1 Max Effort (142,266 detik) — menjadikannya titik keseimbangan untuk pipeline yang butuh coding papan atas dengan latensi yang masih bisa diterima. (Sumber: Artificial Analysis.)",
+        "Kelemahan yang teridentifikasi: harga API $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) bermain di kelas tertinggi Anthropic, 2x input Opus 5 ($5,00) dan 3,3x Sonnet 5 ($3,00), premium signifikan untuk workload volume tinggi; untuk kebanyakan kasus, Opus 5 Max Effort atau Sonnet 5 menawarkan rasio harga/performa lebih baik di kelas kemampuan yang sudah sangat dekat. Throughput 59,208 token/detik (sumber: Artificial Analysis) termasuk menengah di kelas flagship, di bawah Opus 5 Max yang throughput-nya lebih tinggi untuk workload completion streaming. TTFT 43,337 detik (sumber: Artificial Analysis) panjang — Varian Xhigh bukan pilihan untuk workload customer-facing realtime atau antarmuka interaktif yang butuh respons kurang dari 5 detik. Akses API lewat console.anthropic.com atau aws marketplace memerlukan payment method internasional untuk pemakaian serius, verifikasi region availability dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: Fable 5.1 Xhigh untuk pipeline agentic kelas wahid dengan toleransi TTFT panjang; Opus 5 Max Effort untuk keseimbangan kemampuan-latensi flagship; Sonnet 5 untuk workload volume tinggi; Kimi K3 atau DeepSeek V4 Pro untuk alternatif value-tier. (Sumber: Artificial Analysis.)",
+      ],
+      link: "https://www.anthropic.com",
+      linkLabel: "Situs Resmi",
+      date: "2026-09-11",
+      featured: false,
+      },
 ];
 
 export function getModel(slug: string) {
