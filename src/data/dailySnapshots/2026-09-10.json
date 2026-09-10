@@ -1,0 +1,145 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-10T06:26:03.495Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "crestcoursechateau/Acrobat-Pro-Software",
+      "owner": "crestcoursechateau",
+      "repo": "Acrobat-Pro-Software",
+      "description": "",
+      "githubUrl": "https://github.com/crestcoursechateau/Acrobat-Pro-Software",
+      "trendshiftUrl": "https://trendshift.io/repositories/187809",
+      "topics": [],
+      "dateCreated": "2026-06-01T05:44:28Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "google/artemis",
+      "owner": "google",
+      "repo": "artemis",
+      "description": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs for debugging and analysis, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. On the AndroidWorld benchmark, ARTEMIS achieves a success rate of over 99%.",
+      "githubUrl": "https://github.com/google/artemis",
+      "trendshiftUrl": "https://trendshift.io/repositories/177876",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-08-13T17:59:37Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "realchendahuang/feedsieve",
+      "owner": "realchendahuang",
+      "repo": "feedsieve",
+      "description": "X 赛博清洁工：高置信垃圾账号黄框标注，一键原生拉黑，全端同步消失。Open-source X (Twitter) spam blocker for Chrome.",
+      "githubUrl": "https://github.com/realchendahuang/feedsieve",
+      "trendshiftUrl": "https://trendshift.io/repositories/215926",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-25T12:12:36Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "k2-fsa/OmniVoice",
+      "owner": "k2-fsa",
+      "repo": "OmniVoice",
+      "description": "High-Quality Voice Cloning TTS for 600+ Languages",
+      "githubUrl": "https://github.com/k2-fsa/OmniVoice",
+      "trendshiftUrl": "https://trendshift.io/repositories/25103",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech"
+      ],
+      "dateCreated": "2026-03-31T12:00:45Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "sdli1995/dlssg_for_sm86",
+      "owner": "sdli1995",
+      "repo": "dlssg_for_sm86",
+      "description": "Here is a dlssg for RTX30 Series GPU",
+      "githubUrl": "https://github.com/sdli1995/dlssg_for_sm86",
+      "trendshiftUrl": "https://trendshift.io/repositories/220428",
+      "topics": [],
+      "dateCreated": "2026-09-07T16:16:48Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Edge0-AI/Edge0",
+      "owner": "Edge0-AI",
+      "repo": "Edge0",
+      "description": "",
+      "githubUrl": "https://github.com/Edge0-AI/Edge0",
+      "trendshiftUrl": "https://trendshift.io/repositories/225605",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-08T13:41:47Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "teng-lin/weread-omni",
+      "owner": "teng-lin",
+      "repo": "weread-omni",
+      "description": "Everything the official WeRead (微信读书) Agent Skill does — plus public accounts, book imports, WeRead AI, and write access to your highlights and shelf. One canonical surface of 40 operations through an agent skill, TypeScript SDK, and CLI.",
+      "githubUrl": "https://github.com/teng-lin/weread-omni",
+      "trendshiftUrl": "https://trendshift.io/repositories/223490",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-03T17:29:54Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Tencent/teamai-cli",
+      "owner": "Tencent",
+      "repo": "teamai-cli",
+      "description": "The team harness for AI agents",
+      "githubUrl": "https://github.com/Tencent/teamai-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/123184",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-04-27T09:42:49Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "TauricResearch/TradingAgents",
+      "owner": "TauricResearch",
+      "repo": "TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "githubUrl": "https://github.com/TauricResearch/TradingAgents",
+      "trendshiftUrl": "https://trendshift.io/repositories/16192",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Fintech"
+      ],
+      "dateCreated": "2024-12-28T03:31:08Z"
+    }
+  ]
+}

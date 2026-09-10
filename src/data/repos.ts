@@ -4769,13 +4769,63 @@ export const repos: Review[] = [
       "Untuk konteks Indonesia, I Have ADHD paling relevan untuk empat profil pengguna: pertama, developer yang menggunakan Claude Code sebagai pasangan coding harian dan lelah dengan jawaban empat paragraf untuk pertanyaan satu baris; kedua, content creator dan jurnalis yang bekerja dengan banyak chat paralel dan membutuhkan akses cepat ke jawaban tanpa harus scroll preamble; ketiga, pengguna neurodivergen atau siapa pun dengan keterbatasan perhatian yang menjadikan verbosity AI sebagai barrier produktivitas; keempat, tim support dan customer service yang menggunakan agen untuk menjawab pertanyaan klien dan memerlukan output yang langsung ke poin. Dua catatan penting: pertama, dampak plugin paling terasa pada Claude Sonnet dan Opus; pengguna model lokal kecil mungkin mendapat efek lebih lemah karena model kecil cenderung kurang mengikuti instruksi format output; kedua, ada kasus teknis tertentu — misalnya penjelasan arsitektur kompleks atau debugging mendalam — di mana verbosity justru diinginkan, sehingga beberapa pengguna mempertahankan dua profil Claude Code: satu dengan plugin aktif untuk chat harian, satu tanpa plugin untuk tugas mendalam. Dengan memahami dua catatan itu, I Have ADHD adalah investasi tooling kecil dengan dampak produktivitas terukur, dan layak dipasang sebagai plugin default untuk setiap pengguna Claude Code di paruh kedua 2026.",
     ],
     link: "https://github.com/ayghri/i-have-adhd",
-    linkLabel: "Lihat di GitHub",
-    date: "2026-09-09",
-    updatedAt: "2026-09-09",
-    featured: false,
-  },
-];
+      linkLabel: "Lihat di GitHub",
+      date: "2026-09-09",
+      updatedAt: "2026-09-09",
+      featured: false,
+    },
+    {
+      slug: "ptero",
+      name: "Ptero",
+      tagline: "Chat AI multi-model gratis dengan privasi lokal browser dan integrasi WordPress plugin",
+      tags: ["AI Chat", "Multi-Model", "Self-hosted", "Open Source"],
+      score: 8.4,
+      scores: [
+        { label: "Kemudahan Setup", value: 9.2 },
+        { label: "Fitur & Ekstensibilitas", value: 8.5 },
+        { label: "Komunitas & Momentum", value: 8.7 },
+        { label: "Dokumentasi", value: 8.3 },
+        { label: "Kesiapan Produksi", value: 7.6 },
+      ],
+      summary:
+        "Ptero adalah platform chat AI multi-model gratis dan open-source yang menggabungkan akses ke DeepSeek V4, Llama 3.3, Qwen, MiniMax, dan Mistral dalam satu antarmuka bersih tanpa signup. Diluncurkan Agustus 2026 dan sudah menembus 1.002 bintang GitHub di usia 23 hari, Ptero menonjol lewat pendekatan privacy-first: semua percakapan disimpan lokal di browser, dan proyek non-komersial dengan plugin WordPress resmi untuk embedding ke situs Indonesia.",
+      highlights: [
+        "Akses multi-model dalam satu antarmuka - DeepSeek V4, Llama 3.3, Qwen, MiniMax, Mistral, dengan switching satu klik lewat dropdown",
+        "Privacy-first dengan semua riwayat percakapan disimpan lokal di browser - tidak ada chat history tersimpan di server",
+        "Sepenuhnya gratis untuk semua model tanpa signup, tanpa paid tier - proyek non-profit dengan akses setara untuk semua pengguna",
+        "Workspace berbasis proyek untuk mengelompokkan percakapan per topik atau klien - rapi untuk pengguna yang menangani banyak konteks sekaligus",
+        "Media library bawaan untuk upload file sebagai konteks tambahan ke chat - melampaui text-only prompt standar",
+        "Plugin WordPress resmi yang siap di-install dengan shortcode `[mlp_ai_chat]` untuk embedding ke situs WordPress apa pun",
+        "Lisensi Apache-2.0 dengan kode yang bisa diinspeksi, fork, dan self-host sepenuhnya",
+        "Stack ringan berbasis JavaScript untuk frontend dan PHP untuk backend WordPress integration - hosting murah di shared hosting",
+        "Cocok untuk pelajar, developer, kreator, dan UMKM Indonesia yang butuh akses multi-model AI tanpa harus berlangganan empat layanan berbeda",
+      ],
+      pros: [
+        "Cara paling murah di 2026 untuk mengakses empat model AI besar sekaligus - pelajar dan UMKM Indonesia bisa pakai DeepSeek V4 dan Llama 3.3 tanpa bayar API key",
+        "Pendekatan privacy-first dengan local storage adalah nilai jual kuat untuk profesional hukum, kesehatan, atau jurnalis yang menangani data sensitif",
+        "Plugin WordPress menurunkan barrier embedding chat AI ke situs Indonesia - tim support, kursus online, atau landing page UMKM bisa punya asisten AI dalam satu jam",
+      ],
+      cons: [
+        "Proyek sangat muda (launching Agustus 2026, 23 hari saat review ini ditulis) - risiko volatilitas tinggi, dependensi model provider bisa berubah sewaktu-waktu tanpa kontrak SLA",
+        "Ketergantungan pada model API pihak ketiga - kalau DeepSeek atau Qwen mengubah harga atau akses, value proposition langsung berubah",
+        "Dokumentasi masih berkembang, komunitas Discord masih kecil, dan belum ada benchmark independen untuk mengukur kualitas output antar model dalam setup Ptero",
+      ],
+      verdict:
+        "Ptero adalah bukti bahwa pasar chat AI gratis di 2026 sudah cukup matang untuk produk independen non-komersial. Untuk pengguna Indonesia yang ingin eksplorasi multi-model AI tanpa berlangganan empat layanan sekaligus, terutama yang sudah punya situs WordPress dan butuh embedding chat AI, Ptero layak dicoba sambil memantau kematangan proyek.",
+      body: [
+        "Sepanjang paruh kedua 2026, kategori chat AI gratis sudah ramai dengan pemain seperti Perplexity, You.com, dan HuggingChat, tapi hampir semuanya menerapkan trade-off yang sama: gratis dengan limit ketat, atau model tunggal untuk semua pengguna. Ptero mengambil arah yang berbeda: mengemas akses ke empat sampai lima model besar - DeepSeek V4, Llama 3.3, Qwen, MiniMax, Mistral - dalam satu antarmuka, dengan switching satu klik lewat dropdown, dan tanpa signup, tanpa paid tier, tanpa batasan prompt. Pendekatannya menarik karena menurunkan friksi eksplorasi: pengguna yang penasaran mana model paling cocok untuk copywriting, coding, atau analisis dokumen tidak perlu lagi membuat empat akun berbeda dan mengelola empat API key. Peluncuran publik pada Agustus 2026 langsung mendapat resonansi - di hari ke-23, repositori sudah melampaui 1.002 bintang GitHub, angka yang untuk proyek non-profit multi-model AI wrapper sangat impresif dan menunjukkan bahwa ada permintaan nyata untuk produk di kategori ini.",
+        "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa dari Ptero adalah konsistensi pendekatannya: bukan sekadar aggregator, tapi platform chat lengkap dengan workspace berbasis proyek, media library untuk upload file sebagai konteks tambahan, dan yang paling penting - local storage untuk riwayat percakapan. Privacy-first bukan jargon pemasaran di sini, semua chat benar-benar hanya ada di localStorage browser, sehingga developer yang menangani kode proprietary atau konsultan yang berdiskusi dengan klien tentang dokumen sensitif tidak perlu khawatir data mereka tersimpan di server pihak ketiga. Skenario yang paling cocok adalah eksplorasi cepat: bandingkan respons DeepSeek V4 versus Llama 3.3 untuk prompt copywriting yang sama, lalu bandingkan lagi dengan Qwen untuk respons bahasa Indonesia - semuanya dalam satu window chat yang sama, tanpa harus menyalin paste prompt ke empat tab berbeda. Untuk UMKM atau kreator yang budget API-nya terbatas, kemampuan ini sangat membantu karena mereka bisa menemukan model paling efisien sebelum berlangganan langsung ke provider.",
+        "Arsitekturnya ringan dan pragmatis: frontend JavaScript murni dengan antarmuka bersih, backend PHP hanya untuk integrasi WordPress lewat REST API, dan tidak ada database server-side untuk chat history. Plugin WordPress resmi yang tersedia di GitHub memungkinkan embedding ke situs apa pun lewat shortcode `[mlp_ai_chat]` - landing page UMKM, blog kursus online, atau portal berita lokal bisa punya asisten chat AI multibahasa dalam hitungan jam, bukan minggu. Lisensi Apache-2.0 memungkinkan fork dan modifikasi, dan model bisnis non-profit menjelaskan tidak adanya paid tier: Ptero bukan produk komersial, melainkan utilitas publik. Untuk deployment, karena frontend statis dan tidak butuh server backend, hosting di Vercel, Netlify, atau bahkan GitHub Pages langsung jalan tanpa konfigurasi - menurunkan total cost of ownership ke hampir nol untuk eksperimen awal.",
+        "Untuk konteks Indonesia, Ptero paling relevan untuk empat profil pengguna. Pertama, pelajar dan mahasiswa yang butuh akses multi-model AI untuk tugas riset, makalah, atau eksplorasi ide tanpa harus membuat akun di empat layanan berbeda dan mengelola empat API key. Kedua, UMKM dan kreator konten yang budget langganan AI-nya terbatas, sehingga bisa eksplorasi model mana yang paling cocok untuk copywriting, customer service, atau ide bisnis sebelum berinvestasi di API key langsung ke provider. Ketiga, jurnalis, konsultan, atau profesional yang menangani data sensitif dan menghargai local storage - pembicaraan tentang kasus klien atau draft artikel investigasi tidak tersimpan di server pihak ketiga. Keempat, pemilik situs WordPress di Indonesia - dari blog pribadi sampai portal berita lokal - yang ingin menambahkan asisten chat AI multibahasa ke situs mereka lewat plugin resmi tanpa harus berlangganan layanan chatbot berbayar. Dua catatan penting: pertama, Ptero masih sangat muda dan bisa berubah arah sewaktu-waktu karena proyek ini non-profit dengan tim kecil - pengguna yang akan menjadikan ini alat kerja utama perlu punya backup plan atau kemampuan self-host fork pribadi; kedua, kualitas output tetap mengikuti kapabilitas model provider, jadi kalau DeepSeek V4 menurunkan kualitas atau Qwen mengubah pricing, value proposition langsung berubah - eksplorasi multi-model yang menjadi nilai jual utama Ptero adalah pedang bermata dua. Dengan memahami dua catatan itu, Ptero adalah utilitas eksplorasi AI yang menarik untuk paruh kedua 2026, terutama bagi pengguna Indonesia yang mengutamakan privasi, biaya rendah, dan fleksibilitas model di atas brand besar.",
+      ],
+      link: "https://github.com/aminkheddache-dotcom/Ptero",
+      linkLabel: "Lihat di GitHub",
+      date: "2026-09-10",
+      updatedAt: "2026-09-10",
+      featured: false,
+    },
+    ];
 
-export function getRepo(slug: string) {
+    export function getRepo(slug: string) {
   return repos.find((r) => r.slug === slug);
 }

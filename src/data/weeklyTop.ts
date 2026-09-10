@@ -2517,6 +2517,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Bukan demo kecil: 1.500+ bintang dalam hitungan hari dan berada di repositori resmi OpenAI — relevan untuk matematikawan, peneliti formal methods, dan siapa saja yang ingin 'membaca' bukti Clay Prize dengan Lean, bukan dengan keyakinan.",
     ],
   },
+  "webadderallorg/Recordly": {
+    description:
+      "Screen recorder open-source (AGPL-3.0) untuk Mac/Windows/Linux yang otomatis tambahkan zoom, cursor polish, dan styled frame — bikin video demo produk walkthrough dalam menit tanpa skill motion design.",
+    highlights: [
+      "Desktop app open-source (AGPL-3.0) dengan native capture helper: ScreenCaptureKit di macOS, Windows Graphics Capture (WGC) + WASAPI audio di Windows, dan Electron capture di Linux — start cepat dan stabil lintas platform.",
+      "Auto-zoom, smooth cursor, dan styled frame sudah built-in — bukan raw screen recorder; satu klik langsung dapat video demo dengan emphasis motion, wallpaper/gradient/blur background, dan webcam bubble overlay yang reactive ke zoom.",
+      "Timeline editor drag-and-drop untuk trim, speed region, anotasi, audio ekstra, dan crop-aware edit — simpan project sebagai file `.recordly` yang bisa dibuka lagi untuk iterasi, plus marketplace extension komunitas untuk device frame, sound effect, dan render hook.",
+      "Cocok untuk founder, technical writer, dan tim Indonesia yang sering bikin demo produk, walkthrough SaaS, atau tutorial — alternatif gratis untuk Loom/Descript yang tidak mengirim footage ke motion designer eksternal, melainkan edit motion langsung di aplikasi yang sama.",
+    ],
+  },
+  "jo-inc/camofox-browser": {
+    description:
+      "Server REST headless browser stealth berbasis Camoufox (Firefox fork dengan fingerprint spoofing di level C++) — bypass Cloudflare dan bot detection untuk AI agent, drop-in replacement Puppeteer/Playwright.",
+    highlights: [
+      "Anti-detection di level C++ (bukan plugin JavaScript): Camoufox patch Firefox langsung di implementasi untuk spoof `navigator.hardwareConcurrency`, WebGL renderer, AudioContext, screen geometry, dan WebRTC — agen AI tidak ditandai sebagai bot oleh Cloudflare, Google, dan bot detection mayoritas.",
+      "API REST yang dirancang untuk agent (bukan manusia): accessibility snapshot ~90% lebih kecil dari HTML mentah, stable element refs `e1`/`e2`/`e3` untuk klik reliable, plus search macros `@google_search`, `@youtube_search`, `@amazon_search`, `@reddit_subreddit` untuk 14+ situs umum.",
+      "Footprint idle hanya ~40 MB lewat lazy browser launch + auto-shutdown — dirancang jalan berdampingan dengan stack lain di Raspberry Pi, VPS $5, atau shared infra tanpa makan semua RAM; deploy via Docker, Fly.io, atau Railway.",
+      "Dilengkapi YouTube transcript extraction (yt-dlp, tanpa API key), proxy + GeoIP routing, structured extract via JSON Schema, session tracing Playwright, dan OpenAPI docs otomatis — plugin resmi untuk OpenClaw, alternatif drop-in untuk Puppeteer/Playwright di workflow AI agentik.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
