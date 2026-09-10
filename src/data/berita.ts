@@ -4304,6 +4304,56 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+    slug: "telkom-buka-magang-khusus-ai-dan-b2b-solutions-pendaftaran-tutup-8-februari",
+    title: "Telkom Buka Magang AI dan B2B Solutions: Pelanggaran atau Peluang Nyata untuk Talenta Muda Indonesia?",
+    excerpt:
+      "Pendaftaran ditutup 8 Februari untuk program magang Telkom yang fokus ke AI, B2B Solutions, hingga telekomunikasi. Peluang nyata — atau jebakan magang murah yang hanya menguntungkan perusahaan?",
+    category: "Analisis",
+    date: "2026-09-11",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Magang berbayar di perusahaan BUMN besar sudah lama menjadi rebutan mahasiswa TI dan fresh graduate Indonesia. Tapi ketika Telkom membuka cohort magang khusus untuk Artificial Intelligence, B2B Solutions, dan teknologi telekomunikasi inti dengan batas pendaftaran 8 Februari 2026, sorotan publik tidak lagi sekadar tentang 'dapat kerja setelah lulus'. Yang dipertanyakan adalah: apakah program seperti ini benar-benar mencetak talenta AI lokal yang siap kerja, atau hanya jadi corong seleksi awal yang murah bagi Telkom sendiri?",
+          "Pertanyaan itu wajar, karena pengalaman empiris mahasiswa Indonesia dengan program magang korporat selama ini beragam. Ada yang mendapat mentor serius dan proyek nyata; ada pula yang lebih banyak mendapat tugas administratif, copy-pipe laporan, dan absensi panjang tanpa portofolio yang bisa dibawa pulang. Bedanya, untuk posisi teknis seperti AI engineer dan B2B solutions architect, materi magang tidak bisa disamarkan — hasilnya terlihat di kode, di model, dan di deployment. Karena itulah program Telkom ini menarik untuk dibedah, bukan sekadar diumumkan.",
+        ],
+      },
+      {
+        heading: "Kenapa posisi AI di Telkom beda dari program magang generik",
+        paragraphs: [
+          "Posisi AI engineer magang di BUMN pada umumnya punya satu kelemahan struktural: pesertanya ditempatkan di unit TI umum untuk mengurus tiket helpdesk atau migrasi data, dan jarang menyentuh proyek AI yang benar-benar berjalan. Telkom di sini tampak mencoba jalur berbeda dengan menuliskan unit spesifik — B2B Solutions, Data Analytics, Digital Business — sehingga peserta tidak akan berakhir di meja yang jauh dari materi yang mereka lamar.",
+          "Kalau dijalankan dengan serius, peserta magang akan berurusan dengan dataset pelanggan korporat Telkom, integrasi API ke produk BigBox dan Antares, dan pipeline model yang melayani segmen enterprise. Itu jenis paparan yang tidak bisa didapat dari bootcamp manapun, karena data dan infrastrukturnya tidak dibuka ke publik. Untuk mahasiswa yang sedang menulis skripsi tentang NLP bahasa Indonesia atau rekomendasi produk, pengalaman tiga-enam bulan di sini nilainya bisa setara dengan satu tahun belajar mandiri.",
+          "Tapi perlu diingat bahwa B2B Solutions Telkom juga melayani klien enterprise yang sensitif terhadap kerahasiaan. Artinya tidak semua peserta magang akan mendapat akses ke proyek yang sama — sebagian besar akan mendapat versi dataset yang sudah dianonimkan atau skop tugas yang lebih sempit. Itulah batas-batas yang harus diterima pelamar sejak awal, bukan komplain di tengah jalan.",
+        ],
+      },
+      {
+        heading: "Apa yang harus disiapkan pelamar supaya tidak jadi magang numpang absen",
+        paragraphs: [
+          "Pertama, pahami bahwa lowongan ini tetaplah lowongan, bukan beasiswa. Artinya pelamar diseleksi seperti karyawan — CV, portofolio, dan wawancara. Kirimkan tautan GitHub berisi proyek AI yang pernah kamu selesaikan: model klasifikasi, chatbot sederhana, eksperimen RAG, atau kontribusi ke repositori open source. Tanpa bukti itu, CV dengan kalimat 'saya tertarik dengan AI' akan kalah dari CV dengan tautan repo dan deskripsi singkat tentang apa yang dibangun.",
+          "Kedua, pelajari dulu ekosistem Telkom. Antares adalah platform IoT, BigBox adalah layanan data dan AI, sementara Leap adalah platform digital untuk UMKM. Mengetahui posisi masing-masing produk — dan salah satunya bisa kamu jelaskan dalam dua menit saat wawancara — sudah cukup untuk membedakan kamu dari kandidat yang hanya menghafal jargon. Lebih baik lagi kalau kamu pernah mencoba API publik salah satu produk itu dan bisa menunjukkan eksperimen kecil yang pernah kamu lakukan.",
+          "Ketiga, jangan remehkan magang yang lokasinya jauh dari kota besar atau yang kompensasinya terasa standar. Justru di situlah nilai magang sering paling besar: kamu mendapat jam terbang panjang dengan produk nyata, bukan sprint dua minggu yang berakhir di presentasi internal. Untuk fresh graduate Indonesia yang belum punya jejaring industri, itu modal yang jauh lebih berharga daripada selisih beberapa ratus ribu rupiah per bulan.",
+        ],
+      },
+      {
+        heading: "Risiko yang harus diwaspadai, dan cara mengatasinya",
+        paragraphs: [
+          "Risiko terbesar magang di korporat besar adalah Placement: kamu melamar posisi AI, tapi ditempatkan di unit yang tidak relevan. Untuk program Telkom ini, risikonya lebih kecil karena unit sudah ditulis eksplisit, tapi tetap bisa terjadi kalau rekrutmen internal memprioritaskan kebutuhan operasional di atas preferensi kandidat. Mitigasinya: konfirmasi unit penempatan sebelum tanda tangan kontrak, dan minta kejelasan apakah proyek selama enam bulan akan benar-benar terkait AI atau hanya label.",
+          "Risiko kedua adalah magang yang terlalu administratif. Tanda-tandanya: minggu pertama sudah diberi laptop dengan tugas rekapitulasi spreadsheet, tidak ada mentor yang ditunjuk, dan tidak ada akses ke repositori internal. Kalau ini terjadi di bulan pertama, angkat bicara secara sopan. Minta proyek kecil yang bisa kamu kerjakan secara mandiri dan presentasikan ke supervisor di akhir minggu kedua. Magang yang tidak menghasilkan portofolio adalah waktu yang terbuang — untuk perusahaan maupun untukmu.",
+          "Risiko ketiga adalah kompensasi yang tidak sebanding dengan kota penempatan. Jakarta dan Bandung sudah jadi kota mahal; kalau magangmu ditempatkan di sana dengan uang saku di bawah standar, hitung dulu apakah kamu punya tabungan yang cukup untuk enam bulan. Kalau tidak, pertimbangkan alternatif: program magang remote dari startup AI lokal yang sedang naik daun, atau fellowship riset di kampus yang bermitra dengan laboratorium AI internasional. Peluang itu ada, tapi jarang muncul di pencarian lowongan formal.",
+        ],
+      },
+      {
+        heading: "Yang harus dijaga supaya program seperti ini benar-benar berdampak",
+        paragraphs: [
+          "Ada tiga hal yang editor Wawasan AI anggap wajib dijaga agar cohort magang AI Telkom ini tidak berakhir jadi berita singkat yang dilupakan enam bulan kemudian. Pertama, Telkom perlu mempublikasikan jumlah peserta yang benar-benar ditempatkan di unit AI versus yang dialihkan ke unit lain. Angka itu adalah tolok ukur paling jujur dari keseriusan program, lebih jujur daripada press release yang memuji program 'pertama di Indonesia'.",
+          "Kedua, hasil kerja peserta harus dipamerkan — dengan nama mereka, bukan hanya logo perusahaan. Ini bukan sekadar formalitas: portofolio publik peserta magang adalah aset reputasi Telkom sekaligus referensi bagi perekrut lain. Kalau alumni cohort ini bisa menulis di LinkedIn bahwa mereka mengimplementasikan pipeline RAG untuk layanan pelanggan korporat Telkom, itu iklan gratis yang jauh lebih efektif dari lowongan media.",
+          "Ketiga, perlu jalur konversi yang jelas. Magang yang berakhir tanpa kemungkinan Diperpanjang menjadi kontrak penuh atau kontrak project-based adalah magang yang membuang-buang waktu untuk semua pihak. Untuk talenta AI yang sedang langka di pasar kerja Indonesia, jalur konversi bukan cuma soal gaji — ini soal memastikan bahwa investasi waktu enam bulan benar-benar menghasilkan karier, bukan hanya sertifikat.",
+          "Bagi pelamar, pesannya sederhana: manfaatkan peluang ini dengan persiapan yang serius, dan jangan biarkan dirimu menjadi peserta magang yang hanya absen. Peluang besar datang dengan ekspektasi besar — dan hanya mereka yang siap yang akan mendapat nilai lebih dari sekadar pengalaman CV.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
