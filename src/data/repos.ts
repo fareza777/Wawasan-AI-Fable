@@ -4824,6 +4824,55 @@ export const repos: Review[] = [
       updatedAt: "2026-09-10",
       featured: false,
     },
+    {
+      slug: "linkedin-skills",
+      name: "LinkedIn Skills",
+      tagline: "11 Claude/Codex skill untuk menulis, kurasi, dan menjaga ritme LinkedIn dari terminal",
+      tags: ["AI Agent", "Content Workflow", "Python", "Open Source"],
+      score: 8.2,
+      scores: [
+        { label: "Kemudahan Setup", value: 8.5 },
+        { label: "Fitur & Ekstensibilitas", value: 8.4 },
+        { label: "Komunitas & Momentum", value: 8.0 },
+        { label: "Dokumentasi", value: 8.2 },
+        { label: "Kesiapan Produksi", value: 7.8 },
+      ],
+      summary:
+        "LinkedIn Skills dari sergebulaev adalah paket 11 skill siap-pakai untuk Claude Code dan Codex yang membantu menulis post LinkedIn yang lebih manusiawi, merangkai komentar yang menarik perhatian, menganalisis feed, dan menjaga ritme publikasi mingguan langsung dari terminal. Dengan 1.716 bintang GitHub dan lisensi MIT, proyek ini menyasar praktisi marketing, kreator B2B, dan konsultan personal branding yang sudah mengadopsi CLI agent dan ingin pipeline konten LinkedIn yang bisa di-version, di-fork, dan disesuaikan per brand tanpa langganan SaaS tambahan.",
+      highlights: [
+        "11 skill terpisah untuk Claude Code dan Codex yang bisa dipasang per kemampuan: tulis post, komentar, analisis feed, dan ritme publikasi",
+        "Pendekatan content engineering oleh tim Creative Content Crafts dengan fokus pada 'human-sounding' output, bukan template boilerplate",
+        "Berjalan langsung dari terminal lewat Claude Code atau Codex CLI, sehingga alur kerja tetap reproducible dan bisa di-script",
+        "Analisis feed otomatis untuk mendeteksi post yang mendapat traksi, topik yang sedang naik, dan jam publikasi yang cocok untuk audiens",
+        "Bisa di-fork dan dikustomisasi per brand voice - tim marketing B2B bisa menyimpan versi template internal tanpa khawatir bocor ke layanan pihak ketiga",
+        "Mendukung pipeline publishing cadence mingguan lewat perintah terjadwal yang memanggil skill pada waktu tertentu",
+        "Lisensi MIT membuka peluang kontribusi terbuka dan adopsi komersial tanpa royalti ke author",
+        "Stack murni Python yang ringan, tidak butuh database atau backend service untuk kebanyakan skill di dalam paket",
+      ],
+      pros: [
+        "Cara praktis untuk kreator dan marketer Indonesia yang sudah pakai Claude Code atau Codex CLI tapi belum punya workflow konten LinkedIn yang konsisten - langsung dapat 11 skill siap pakai",
+        "Lisensi MIT dan arsitektur modular memungkinkan tim internal perusahaan untuk mem-fork dan menyesuaikan skill dengan brand voice perusahaan tanpa biaya lisensi",
+        "Pendekatan content engineering yang menekankan 'human-sounding' lebih selaras dengan kebutuhan profesional LinkedIn Indonesia dibanding generator boilerplate generik",
+      ],
+      cons: [
+        "Bergantung penuh pada API Claude Code atau Codex - kalau salah satu provider mengubah harga, model, atau akses, seluruh pipeline konten ikut terdampak",
+        "Kualitas output akhir tetap mengikuti kapabilitas model LLM di belakangnya, sehingga skill ini lebih berperan sebagai 'prompt engineering toolkit' daripada jaminan kualitas copywriting",
+        "Komunitas relatif masih kecil dibanding tool SaaS LinkedIn scheduler berbayar, sehingga jumlah tutorial Bahasa Indonesia, contoh prompt, dan adapter niche (misal real estate, legal, health) masih terbatas",
+      ],
+      verdict:
+        "LinkedIn Skills adalah utilitas pragmatis untuk pengguna Claude Code dan Codex yang ingin workflow konten LinkedIn yang repeatable, di-fork, dan tidak bergantung pada SaaS scheduler berbayar. Untuk kreator dan marketer Indonesia yang sudah nyaman dengan CLI agent, paket ini layak dipasang sambil terus menyesuaikan skill dengan brand voice masing-masing.",
+      body: [
+        "Sepanjang 2026, gelombang adopsi CLI agent coding seperti Claude Code dan Codex sudah merambah ke luar ranah developer - praktisi marketing, kreator konten, dan konsultan personal branding ikut memanfaatkan kemampuan model-model tersebut untuk drafting, analisis, dan otomasi repetitif. LinkedIn Skills dari sergebulaev mengambil ceruk yang belum banyak digarap: pipeline konten LinkedIn yang berjalan langsung dari terminal lewat 11 skill siap-pakai, mulai dari menulis post yang lebih manusiawi, menyusun komentar yang menarik perhatian, menganalisis umpan balik dari feed, sampai menjaga ritme publikasi mingguan lewat perintah terjadwal. Proyek ini sudah melampaui 1.716 bintang GitHub pada usia sekitar lima bulan, angka yang untuk paket skill spesifik platform cukup impresif dan menandakan ada permintaan nyata untuk workflow LinkedIn yang bisa di-version, di-fork, dan disesuaikan per brand tanpa langganan SaaS tambahan seperti Taplio, Supergrow, atau Buffer AI.",
+        "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa dari LinkedIn Skills adalah konsistensi pendekatannya: bukan sekadar kumpulan prompt, melainkan content engineering toolkit dengan disiplin instalasi, konfigurasi, dan pemeliharaan yang jelas. Setiap skill bisa dipasang terpisah sesuai kebutuhan - tim yang hanya butuh generator post tinggal mengaktifkan skill writing, sementara kreator yang fokus pada engagement feed bisa mengaktifkan skill comment dan analysis. Pendekatan modular ini sangat membantu praktisi Indonesia yang biasanya membagi waktu antara client work dan personal brand: skill bisa diaktifkan per konteks, prompt dapat disimpan per industri (real estate, legal, kesehatan, B2B SaaS), dan alur kerja tetap reproducible lewat shell history. Untuk konsultan atau freelancer yang sering berganti positioning, kemampuan me-repurpose prompt lewat skill yang sama tetapi dengan konfigurasi berbeda adalah nilai praktis yang jarang ditemukan di tool SaaS LinkedIn scheduler.",
+        "Arsitekturnya ringan dan pragmatis: paket Python murni yang dipasang lewat manajer paket standar untuk Claude Code dan Codex, tidak butuh database atau backend service untuk kebanyakan fungsi, dan masing-masing skill berdiri sendiri sehingga kegagalan satu skill tidak menjatuhkan seluruh pipeline. Lisensi MIT membuka peluang kontribusi terbuka dan adopsi komersial tanpa royalti ke author, sementara branding Creative Content Crafts di belakang proyek ini menunjukkan ada pihak yang serius mengembangkannya sebagai produk content engineering, bukan sekadar eksperimen akhir pekan. Untuk deployment, karena skill ini berjalan lokal di workstation kreator lewat CLI, tidak ada data percakapan atau draft post yang tersimpan di server pihak ketiga - nilai privasi yang relevan untuk konsultan yang menangani materi NDA atau marketing internal perusahaan yang sensitif terhadap kebocoran strategi. Instalasi tipikal cukup beberapa menit untuk kreator yang sudah terbiasa dengan Claude Code, dan dokumentasi repositori sudah cukup lengkap untuk menjelaskan tiap skill beserta parameter konfigurasinya.",
+        "Untuk konteks Indonesia, LinkedIn Skills paling relevan untuk empat profil pengguna. Pertama, kreator konten dan personal brander yang sudah mengadopsi Claude Code atau Codex CLI dan ingin workflow konten LinkedIn yang konsisten tanpa harus menyalin prompt dari Notion setiap kali. Kedua, marketer B2B dan konsultan agency yang sering menulis thought leadership untuk klien dan butuh template skill yang bisa di-fork per industri tanpa harus langganan Taplio atau Supergrow. Ketiga, tim internal perusahaan yang ingin pipeline konten LinkedIn resmi perusahaan dengan brand voice yang bisa diatur lewat konfigurasi prompt, bukan lewat training ulang model atau fine-tune yang mahal. Keempat, penulis profesional dan jurnalis yang ingin menjaga ritme mingguan di LinkedIn tanpa kehilangan orisinalitas lewat template generik - skill comment dan feed analysis bisa membantu mereka menemukan topik yang sedang naik di kalangan audiens Indonesia. Dua catatan penting: pertama, kualitas output akhir tetap mengikuti kapabilitas model Claude atau GPT di belakangnya, sehingga skill ini lebih berperan sebagai 'prompt engineering toolkit' daripada jaminan kualitas copywriting - hasilnya perlu diedit manusia; kedua, komunitas relatif masih kecil dibanding tool SaaS berbayar, sehingga jumlah tutorial Bahasa Indonesia, contoh prompt, dan adapter niche masih terbatas - kreator yang akan menjadikan ini workflow utama perlu berinvestasi waktu untuk membangun koleksi prompt pribadi. Dengan memahami dua catatan itu, LinkedIn Skills adalah utilitas pragmatis untuk paruh kedua 2026, terutama bagi pengguna Indonesia yang sudah nyaman dengan CLI agent dan mengutamakan kontrol, biaya rendah, dan fleksibilitas kustomisasi di atas janji otomatisasi SaaS.",
+      ],
+      link: "https://github.com/sergebulaev/linkedin-skills",
+      linkLabel: "Lihat di GitHub",
+      date: "2026-09-11",
+      updatedAt: "2026-09-11",
+      featured: false,
+    },
     ];
 
     export function getRepo(slug: string) {
