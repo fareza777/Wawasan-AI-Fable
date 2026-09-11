@@ -4357,6 +4357,50 @@ link: "https://www.anthropic.com",
       date: "2026-09-11",
       featured: false,
       },
+  {
+    slug: "gpt-6-astra-medium",
+    name: "GPT-6 Astra (medium)",
+    tagline:
+      "Varian medium GPT-6 Astra untuk keseimbangan kemampuan dan efisiensi",
+    tags: ["OpenAI", "Proprietary", "Coding", "Balanced"],
+    score: 8.5,
+    scores: [
+      { label: "Penalaran", value: 8.1 },
+      { label: "Coding", value: 8.7 },
+      { label: "Kecepatan", value: 8.7 },
+      { label: "Harga/Performa", value: 8.0 },
+    ],
+    aa_intelligence_index: 49.7,
+    aa_coding_index: 76.7,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-12",
+    summary:
+      "Varian medium dari lini GPT-6 Astra OpenAI, diposisikan sebagai titik keseimbangan antara varian low dan high di keluarga flagship generasi baru. Intelligence index 49,7 (sumber: Artificial Analysis) dan coding index 76,7 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI, dengan TTFT 6,58 detik menjadikannya opsi paling responsif di lini GPT-6 Astra untuk workload interaktif dan pipeline agentic yang butuh latensi minimum.",
+    pros: [
+      "Coding index 76,7 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI, melampaui varian low (75,7) dan xhigh (75,9) untuk kelas flagship Astra",
+      "TTFT 6,58 detik (sumber: Artificial Analysis) menjadikan Astra (medium) opsi paling responsif di keluarga GPT-6 Astra, ideal untuk workload interaktif dan pipeline completion latency-sensitive",
+      "Intelligence index 49,7 (sumber: Artificial Analysis) menawarkan keseimbangan antara varian low (46,0) dan high, dengan overhead penalaran moderat untuk workload penalaran multi-langkah",
+      "Throughput output 50,696 token/detik (sumber: Artificial Analysis) termasuk menengah di kelas flagship proprietary, cukup untuk pipeline code generation dan workload batch modern",
+    ],
+    cons: [
+      "Intelligence index 49,7 (sumber: Artificial Analysis) di bawah varian high dan xhigh di keluarga Astra untuk workload penalaran murni terdalam, selisih beberapa poin di kelas kelas penalaran ekstra-dalam",
+      "Harga API premium $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) sama dengan varian Astra lain, premium signifikan untuk workload volume tinggi yang sensitif dolar",
+      "Posisi 'medium' di antara low dan high menjadikan value proposition kurang jelas — untuk workload sederhana, low lebih murah; untuk kemampuan tertinggi, high/xhigh lebih sesuai",
+    ],
+    verdict:
+      "GPT-6 Astra (medium) adalah titik keseimbangan paling rasional di keluarga GPT-6 Astra untuk workload yang butuh kombinasi coding papan atas proprietary OpenAI dengan responsivitas baik dan overhead penalaran moderat. Pilih ini untuk pipeline agentic dan workload interaktif; untuk kemampuan tertinggi gunakan xhigh, untuk efisiensi maksimal gunakan low.",
+    body: [
+      "GPT-6 Astra (medium) adalah varian tingkat medium dari lini GPT-6 Astra OpenAI, diposisikan sebagai titik keseimbangan antara varian low dan high di keluarga flagship generasi baru. Intelligence index 49,7 (sumber: Artificial Analysis) menaruh Astra (medium) di papan tengah proprietary global, di atas varian low (46,0) dengan selisih 3,7 poin dan di bawah varian high/xhigh untuk kelas kemampuan tertinggi keluarga Astra. Coding index 76,7 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI untuk keluarga Astra, melampaui varian low (75,7) dengan selisih tipis dan sejajar dengan varian xhigh (75,9). Posisi label medium menunjukkan mode penalaran moderat yang bermain di kelas keseimbangan Astra — overhead penalaran lebih rendah dibanding high/xhigh tapi kemampuan coding tetap papan atas proprietary. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic dan pipeline interaktif yang butuh keseimbangan kemampuan-responsivitas, GPT-6 Astra (medium) menunjukkan karakter khas varian medium keluarga flagship — kombinasi coding index papan atas dengan TTFT rendah yang ideal untuk skenario realtime, completion streaming, dan pipeline agentic yang sensitif latensi. Yang paling terasa dibanding varian xhigh adalah TTFT 6,58 detik (sumber: Artificial Analysis) yang jauh lebih rendah dari 68,458 detik pada xhigh, menjadikan Astra (medium) opsi paling rasional untuk workload interaktif atau customer-facing chat completion. Coding 76,7 (sumber: Artificial Analysis) memimpin benchmark proprietary OpenAI untuk kelas medium, sejajar dengan Opus 5 Max (78) untuk kemampuan coding. Untuk workload agentic moderat yang butuh kemampuan coding papan atas dengan latensi minimum, Astra (medium) adalah titik keseimbangan paling rasional di keluarga OpenAI. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 49,7 (sumber: Artificial Analysis) menaruh Astra (medium) di papan tengah-atas proprietary, sejajar Sonnet 5 (55,3) di kelas intel dan di atas frontier value-tier Asia untuk kelas coding proprietari global. Coding index 76,7 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary OpenAI untuk keluarga Astra, melampaui varian low (75,7) dengan selisih tipis dan sejajar dengan varian xhigh (75,9). Throughput output 50,696 token/detik (sumber: Artificial Analysis) termasuk menengah di kelas flagship proprietary, cukup untuk pipeline code generation skala menengah dan workload batch modern. TTFT 6,58 detik (sumber: Artificial Analysis) menjadikan Astra (medium) opsi paling responsif di keluarga GPT-6 Astra, ideal untuk antarmuka chat interaktif dan pipeline completion latency-sensitive. Harga API $10,00 per juta token input dan $50,00 output sama dengan varian lain (sumber: Artificial Analysis), sehingga value proposition Astra (medium) bukan dari sisi harga melainkan dari keseimbangan kemampuan-responsivitas. Bagi developer Indonesia yang menghitung dolar, ini posisi premium yang menawarkan capability coding papan atas keluarga OpenAI dengan responsivitas terbaik di lini Astra. (Sumber: Artificial Analysis.)",
+      "Kelemahan yang teridentifikasi: intelligence index 49,7 (sumber: Artificial Analysis) di bawah varian high dan xhigh untuk workload penalaran murni terdalam, selisih beberapa poin di kelas penalaran ekstra-dalam; untuk workload reasoning multi-langkah panjang, high atau xhigh tetap lebih sesuai. Harga API premium $10,00 input dan $50,00 output per juta token (sumber: Artificial Analysis) sama dengan varian Astra lain, premium signifikan untuk workload volume tinggi yang sensitif dolar; untuk kebanyakan kasus, low menawarkan rasio harga/performa lebih baik di kelas kemampuan yang sudah dekat untuk workload sederhana. Posisi 'medium' di antara low dan high menjadikan value proposition kurang jelas — untuk workload sederhana gunakan low (lebih murah), untuk kemampuan tertinggi gunakan high/xhigh. Akses API lewat platform.openai.com memerlukan payment method internasional untuk pemakaian serius, verifikasi region availability dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: GPT-6 Astra (medium) untuk pipeline agentic dan workload interaktif di ekosistem OpenAI; Astra (xhigh) untuk kemampuan coding tertinggi; Astra (low) untuk workload volume tinggi yang sensitif harga; Sonnet 5 atau Opus 5 untuk antarmuka interaktif dan penalaran terdalam; Kimi K3 atau DeepSeek V4 Pro untuk alternatif value-tier. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-12",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
