@@ -1,17 +1,115 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "11 September 2026",
-  "period": {
-    "date": "2026-09-11",
-    "label": "11 September 2026",
-    "path": "/repo/daily/2026/09/11"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-11T00:03:33.190Z",
+  "fetchedAt": "2026-09-11T06:28:35.682Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "ghoulformpray/Monero-Miner",
+      "owner": "ghoulformpray",
+      "repo": "Monero-Miner",
+      "description": "",
+      "githubUrl": "https://github.com/ghoulformpray/Monero-Miner",
+      "trendshiftUrl": "https://trendshift.io/repositories/227276",
+      "topics": [
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-06-14T02:24:02Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "watermitecreate/Optimizer-For-Windows",
+      "owner": "watermitecreate",
+      "repo": "Optimizer-For-Windows",
+      "description": "",
+      "githubUrl": "https://github.com/watermitecreate/Optimizer-For-Windows",
+      "trendshiftUrl": "https://trendshift.io/repositories/227252",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:23:09Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "VelocityNodeCompute/Universal-Trading-Bot",
+      "owner": "VelocityNodeCompute",
+      "repo": "Universal-Trading-Bot",
+      "description": "",
+      "githubUrl": "https://github.com/VelocityNodeCompute/Universal-Trading-Bot",
+      "trendshiftUrl": "https://trendshift.io/repositories/227172",
+      "topics": [
+        "Fintech",
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-06-14T02:23:22Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Embertuready/Total-Commander",
+      "owner": "Embertuready",
+      "repo": "Total-Commander",
+      "description": "",
+      "githubUrl": "https://github.com/Embertuready/Total-Commander",
+      "trendshiftUrl": "https://trendshift.io/repositories/227089",
+      "topics": [
+        "File management"
+      ],
+      "dateCreated": "2026-06-14T02:22:58Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "ZeptoFollowerRhythm/Seed-Phrase-Generator-and-Checker",
+      "owner": "ZeptoFollowerRhythm",
+      "repo": "Seed-Phrase-Generator-and-Checker",
+      "description": "",
+      "githubUrl": "https://github.com/ZeptoFollowerRhythm/Seed-Phrase-Generator-and-Checker",
+      "trendshiftUrl": "https://trendshift.io/repositories/226415",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:23:55Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "NVlabs/SoL-Pi",
+      "owner": "NVlabs",
+      "repo": "SoL-Pi",
+      "description": "",
+      "githubUrl": "https://github.com/NVlabs/SoL-Pi",
+      "trendshiftUrl": "https://trendshift.io/repositories/228077",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-09-02T14:48:47Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "OnyxConductorSnips/Discord-Raid-Tools",
+      "owner": "OnyxConductorSnips",
+      "repo": "Discord-Raid-Tools",
+      "description": "Advanced Discord Server Automation Framework & Webhook Management Tool. Designed for security auditing, stress testing, and high-performance server administration.",
+      "githubUrl": "https://github.com/OnyxConductorSnips/Discord-Raid-Tools",
+      "trendshiftUrl": "https://trendshift.io/repositories/222150",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:16:54Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "github/spec-kit",
+      "owner": "github",
+      "repo": "spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "githubUrl": "https://github.com/github/spec-kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/15463",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-08-21T22:54:31Z"
+    },
+    {
+      "rank": 9,
       "fullName": "ayghri/i-have-adhd",
       "owner": "ayghri",
       "repo": "i-have-adhd",
@@ -25,18 +123,7 @@
       "dateCreated": "2026-05-13T20:42:06Z"
     },
     {
-      "rank": 2,
-      "fullName": "bilawalsidhu/gods-eye-view",
-      "owner": "bilawalsidhu",
-      "repo": "gods-eye-view",
-      "description": "God's Eye View v1 public open-source release placeholder",
-      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
-      "trendshiftUrl": "https://trendshift.io/repositories/62154",
-      "topics": [],
-      "dateCreated": "2026-06-22T23:37:22Z"
-    },
-    {
-      "rank": 3,
+      "rank": 10,
       "fullName": "crestcoursechateau/Acrobat-Pro-Software",
       "owner": "crestcoursechateau",
       "repo": "Acrobat-Pro-Software",
@@ -45,98 +132,6 @@
       "trendshiftUrl": "https://trendshift.io/repositories/187809",
       "topics": [],
       "dateCreated": "2026-06-01T05:44:28Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "k2-fsa/OmniVoice",
-      "owner": "k2-fsa",
-      "repo": "OmniVoice",
-      "description": "High-Quality Voice Cloning TTS for 600+ Languages",
-      "githubUrl": "https://github.com/k2-fsa/OmniVoice",
-      "trendshiftUrl": "https://trendshift.io/repositories/25103",
-      "language": "Python",
-      "topics": [
-        "AI voice",
-        "Text to speech"
-      ],
-      "dateCreated": "2026-03-31T12:00:45Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "OnyxConductorSnips/Discord-Raid-Tools",
-      "owner": "OnyxConductorSnips",
-      "repo": "Discord-Raid-Tools",
-      "description": "Advanced Discord Server Automation Framework & Webhook Management Tool. Designed for security auditing, stress testing, and high-performance server administration.",
-      "githubUrl": "https://github.com/OnyxConductorSnips/Discord-Raid-Tools",
-      "trendshiftUrl": "https://trendshift.io/repositories/222150",
-      "topics": [],
-      "dateCreated": "2026-06-14T02:16:54Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "google/artemis",
-      "owner": "google",
-      "repo": "artemis",
-      "description": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs for debugging and analysis, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. On the AndroidWorld benchmark, ARTEMIS achieves a success rate of over 99%.",
-      "githubUrl": "https://github.com/google/artemis",
-      "trendshiftUrl": "https://trendshift.io/repositories/177876",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI workflow",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-08-13T17:59:37Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "sdli1995/dlssg_for_sm86",
-      "owner": "sdli1995",
-      "repo": "dlssg_for_sm86",
-      "description": "Here is a dlssg for RTX30 Series GPU",
-      "githubUrl": "https://github.com/sdli1995/dlssg_for_sm86",
-      "trendshiftUrl": "https://trendshift.io/repositories/220428",
-      "topics": [],
-      "dateCreated": "2026-09-07T16:16:48Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "Tencent/teamai-cli",
-      "owner": "Tencent",
-      "repo": "teamai-cli",
-      "description": "The team harness for AI agents",
-      "githubUrl": "https://github.com/Tencent/teamai-cli",
-      "trendshiftUrl": "https://trendshift.io/repositories/123184",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-04-27T09:42:49Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "Edge0-AI/Edge0",
-      "owner": "Edge0-AI",
-      "repo": "Edge0",
-      "description": "",
-      "githubUrl": "https://github.com/Edge0-AI/Edge0",
-      "trendshiftUrl": "https://trendshift.io/repositories/225605",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-09-08T13:41:47Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "pallets/flask",
-      "owner": "pallets",
-      "repo": "flask",
-      "description": "The Python micro framework for building web applications.",
-      "githubUrl": "https://github.com/pallets/flask",
-      "trendshiftUrl": "https://trendshift.io/repositories/2207",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2010-04-06T11:11:59Z"
     }
   ]
 }
