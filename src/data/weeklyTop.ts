@@ -2537,6 +2537,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Dilengkapi YouTube transcript extraction (yt-dlp, tanpa API key), proxy + GeoIP routing, structured extract via JSON Schema, session tracing Playwright, dan OpenAPI docs otomatis — plugin resmi untuk OpenClaw, alternatif drop-in untuk Puppeteer/Playwright di workflow AI agentik.",
     ],
   },
+  "google/artemis": {
+    description:
+      "Tool otomasi Android resmi dari tim Google Pixel Test Engineering — ubah instruksi natural language jadi aksi di HP sungguhan, capai 99%+ di benchmark AndroidWorld dan langsung nyambung ke Claude Code atau Codex lewat MCP.",
+    highlights: [
+      "Cross-app automation di Android pakai natural language: dari prompt singkat, agen men-drive device asli lewat ADB dan mengeksekusi workflow multi-langkah (misal atur rute Google Maps lalu putar lagu YouTube) dalam 3–5 detik per step.",
+      "Server MCP native yang dipasang otomatis ke Antigravity, Claude Code, Codex, Cursor, Windsurf, dan VS Code — agen IDE bisa kontrol device Android, ambil Logcat, screenshot, dan laporan terstruktur tanpa setup manual.",
+      "Multimodal targeting: pakai element index kalau tersedia, fallback ke koordinat dan visual locating untuk UI kustom; plus observe-and-act loop reaktif dengan deteksi blockage yang mengembalikan aksi ke operator untuk recovery.",
+      "Dibuat tim Pixel-Test-Engineering (PTE) Fusion Google, Apache 2.0, 99%+ di AndroidWorld benchmark (100+ task multi-langkah) — relevan untuk QA engineer Indonesia yang ingin AI agent menjalankan regression test di device riil, atau developer yang mau eksplorasi agentic flow lewat Android tanpa bikin harness sendiri.",
+    ],
+  },
+  "NVlabs/SoL-Pi": {
+    description:
+      "Extension NVIDIA Labs untuk Pi coding agent — empat mekanisme efisiensi (Action Fusion, ObservationPack, Evidence-Preserving Reducer, Online Context Compact) hasil auto-research yang menurunkan token traffic tanpa mengurangi kerja agen.",
+    highlights: [
+      "Berasal dari riset auto-research NVIDIA Labs tentang 'sebelum scale agent loop, buat harness-nya lebih efisien dulu' — empat mekanisme opt-in yang masing-masing menjawab satu bottleneck: tool turn berulang, replay observasi, log panjang, dan context penuh.",
+      "Action Fusion menggabungkan edit dengan validation command dalam satu tool call; ObservationPack mengubah teks panjang jadi handle stabil dengan paged recall tepat; Evidence-Preserving Reducer memampatkan log hanya jika kutipan cocok dengan arsip sumber.",
+      "Online Context Compact menandai langkah plan selesai sebagai kandidat kompaksi native Pi dengan cek window pressure — setelah kompaksi sukses, Pi lanjut di turn baru, sehingga loop panjang tidak stuck karena context window.",
+      "MIT-licensed, dipasang di atas Pi tanpa patch atau vendor (pakai public extension API), setiap mekanisme disabled-by-default dan preservasi bukti asli — relevan untuk engineer Indonesia yang pakai coding agent harian dan ingin token cost turun tanpa kehilangan jejak debugging.",
+    ],
+  },
+  "nashsu/llm_wiki": {
+    description:
+      "Aplikasi desktop cross-platform yang ubah dokumen (PDF, Office, EPUB, web clip) jadi knowledge base terstruktur dan saling terhubung — bukan RAG sekali jawab, melainkan wiki persisten yang LLM bangun dan rawat secara incremental.",
+    highlights: [
+      "Pola 'LLM Wiki' dari Karpathy diimplementasi jadi aplikasi utuh: two-step chain-of-thought ingest dengan source traceability dan incremental cache — knowledge dikompilasi sekali dan dijaga tetap update, bukan diturunkan ulang tiap query.",
+      "Knowledge graph 4-sinyal (relevance langsung, source overlap, Adamic-Adar, type affinity) plus Louvain community detection untuk menemukan cluster pengetahuan otomatis, plus Graph Insights yang menyorot koneksi tak terduga dan knowledge gap.",
+      "Server HTTP lokal di 127.0.0.1:19828 plus bundled MCP server untuk hybrid search, file read, graph traversal, dan source rescan — skill `npx skills add` pasang ke Claude Code atau Codex dalam satu perintah, agen bisa baca wiki saat coding.",
+      "Multi-format ingest (PDF, Office, EPUB, gambar, web clip), caption vision LLM untuk gambar, Deep Research dengan Tavily/SerpAPI, Rust backend chat agent dengan tool-use, dan Chrome Web Clipper — relevan untuk peneliti, jurnalis, dan power user Indonesia yang ingin 'second brain' lokal-first tanpa lock-in SaaS.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
