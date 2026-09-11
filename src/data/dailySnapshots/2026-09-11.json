@@ -1,0 +1,142 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "11 September 2026",
+  "period": {
+    "date": "2026-09-11",
+    "label": "11 September 2026",
+    "path": "/repo/daily/2026/09/11"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-11T00:03:33.190Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ayghri/i-have-adhd",
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "githubUrl": "https://github.com/ayghri/i-have-adhd",
+      "trendshiftUrl": "https://trendshift.io/repositories/30905",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-13T20:42:06Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "bilawalsidhu/gods-eye-view",
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "description": "God's Eye View v1 public open-source release placeholder",
+      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
+      "trendshiftUrl": "https://trendshift.io/repositories/62154",
+      "topics": [],
+      "dateCreated": "2026-06-22T23:37:22Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "crestcoursechateau/Acrobat-Pro-Software",
+      "owner": "crestcoursechateau",
+      "repo": "Acrobat-Pro-Software",
+      "description": "",
+      "githubUrl": "https://github.com/crestcoursechateau/Acrobat-Pro-Software",
+      "trendshiftUrl": "https://trendshift.io/repositories/187809",
+      "topics": [],
+      "dateCreated": "2026-06-01T05:44:28Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "k2-fsa/OmniVoice",
+      "owner": "k2-fsa",
+      "repo": "OmniVoice",
+      "description": "High-Quality Voice Cloning TTS for 600+ Languages",
+      "githubUrl": "https://github.com/k2-fsa/OmniVoice",
+      "trendshiftUrl": "https://trendshift.io/repositories/25103",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech"
+      ],
+      "dateCreated": "2026-03-31T12:00:45Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "OnyxConductorSnips/Discord-Raid-Tools",
+      "owner": "OnyxConductorSnips",
+      "repo": "Discord-Raid-Tools",
+      "description": "Advanced Discord Server Automation Framework & Webhook Management Tool. Designed for security auditing, stress testing, and high-performance server administration.",
+      "githubUrl": "https://github.com/OnyxConductorSnips/Discord-Raid-Tools",
+      "trendshiftUrl": "https://trendshift.io/repositories/222150",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:16:54Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "google/artemis",
+      "owner": "google",
+      "repo": "artemis",
+      "description": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs for debugging and analysis, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. On the AndroidWorld benchmark, ARTEMIS achieves a success rate of over 99%.",
+      "githubUrl": "https://github.com/google/artemis",
+      "trendshiftUrl": "https://trendshift.io/repositories/177876",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-08-13T17:59:37Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "sdli1995/dlssg_for_sm86",
+      "owner": "sdli1995",
+      "repo": "dlssg_for_sm86",
+      "description": "Here is a dlssg for RTX30 Series GPU",
+      "githubUrl": "https://github.com/sdli1995/dlssg_for_sm86",
+      "trendshiftUrl": "https://trendshift.io/repositories/220428",
+      "topics": [],
+      "dateCreated": "2026-09-07T16:16:48Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Tencent/teamai-cli",
+      "owner": "Tencent",
+      "repo": "teamai-cli",
+      "description": "The team harness for AI agents",
+      "githubUrl": "https://github.com/Tencent/teamai-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/123184",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-04-27T09:42:49Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Edge0-AI/Edge0",
+      "owner": "Edge0-AI",
+      "repo": "Edge0",
+      "description": "",
+      "githubUrl": "https://github.com/Edge0-AI/Edge0",
+      "trendshiftUrl": "https://trendshift.io/repositories/225605",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-08T13:41:47Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "pallets/flask",
+      "owner": "pallets",
+      "repo": "flask",
+      "description": "The Python micro framework for building web applications.",
+      "githubUrl": "https://github.com/pallets/flask",
+      "trendshiftUrl": "https://trendshift.io/repositories/2207",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2010-04-06T11:11:59Z"
+    }
+  ]
+}

@@ -3810,6 +3810,47 @@ export const stacks: Review[] = [
     date: "2026-09-10",
     featured: false,
   },
+{
+    slug: "zapier-central",
+    name: "Zapier Central",
+    tagline: "AI agent dari Zapier yang bisa panggil 7000+ app tanpa setup workflow manual",
+    tags: ["Zapier", "Freemium", "Workflow Automation", "Integration"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.7 },
+      { label: "Ekosistem & Integrasi", value: 9.5 },
+      { label: "Harga", value: 6.9 },
+    ],
+    summary:
+      "Zapier Central adalah evolusi Zapier dari platform otomatisasi tradisional menjadi AI agent yang bisa memanggil 7000+ aplikasi lewat bahasa natural tanpa membuat workflow step-by-step. Alih-alih merangkai trigger dan action secara manual, kamu mendeskripsikan apa yang ingin dicapai, dan agen menyusun orchestration ke seluruh ekosistem aplikasi yang sudah terhubung. Untuk bisnis kecil dan UMKM Indonesia yang sudah terlanjur terikat pada banyak SaaS, ini adalah shortcut nyata untuk otomasi tanpa harus hire integration developer.",
+    pros: [
+      "Akses langsung ke 7000+ aplikasi yang sudah menjadi standar Zapier, termasuk Google Workspace, Slack, Notion, WhatsApp Business via Twilio, Xendit, dan Midtrans untuk pasar Indonesia",
+      "Setup agent cukup lewat chat bahasa natural tanpa diagram workflow—cukup jelaskan 'kalau email masuk label 'klien', buat draft balasan di Gmail dan tambahkan baris ke spreadsheet'",
+      "Integrasi ActionsGPT sebagai layer AI bawaan, plus dukungan BYOK untuk GPT-4o, Claude Sonnet, dan model lain lewat Zapier AI hub",
+      "Behavior bisa di-tuning lewat plain instructions ('selalu konfirmasi sebelum kirim email keluar') sehingga lebih aman untuk proses bisnis sensitif",
+      "Dapat dijalankan lewat web, desktop, dan API, plus hooks ke Slack/Teams sebagai interface percakapan tim",
+    ],
+    cons: [
+      "Pricing berbasis task units berubah-ubah dan sulit diprediksi—satu eksekusi agent dengan banyak step bisa menghabiskan puluhan unit, sehingga tagihan bulan bisa melonjak tanpa peringatan",
+      "Latensi rata-rata 8-15 detik per eksekusi multi-step karena setiap step memanggil API eksternal, sehingga kurang cocok untuk use case real-time yang butuh respons sub-detik",
+      "Debugging agent yang gagal di tengah jalan masih minim telemetri—kalau step ke-7 dari 10 error, kamu harus baca raw log untuk tahu apa yang sebenarnya terjadi",
+      "Tidak ada self-host atau on-premise deployment, sehingga data sensitive harus lewat Zapier cloud yang berbasis di Amerika—relevan untuk industri finansial dan kesehatan dengan regulasi ketat",
+    ],
+    verdict:
+      "Shortcut nyata untuk bisnis yang sudah terlanjur investasi di banyak SaaS dan ingin otomasi tanpa tambah developer. Standar ekosistemnya tidak tertandingi, tapi catatan utamanya adalah pricing task units yang sulit diprediksi dan ketergantungan penuh pada cloud Zapier.",
+    body: [
+      "Zapier sudah menjadi standar de facto untuk integrasi aplikasi sejak 2011, dan Zapier Central adalah langkah evolusi terbesar mereka dari platform workflow visual menjadi AI agent native. Alih-alih kamu menyusun trigger, action, dan filter di editor grafikal, kamu menulis instruksi bahasa natural—misalnya 'tolong monitor email masuk dengan subjek 'invoice', ekstrak nominal dan nomor invoice, lalu tambahkan baris ke Google Sheet 'Pembelian Q4', dan kalau nominal di atas 10 juta rupiah, buat draft Slack message di channel #finance'. Agen kemudian menerjemahkan instruksi itu menjadi urutan langkah yang memanggil API yang relevan. Hasilnya adalah otomasi yang sebelumnya butuh satu hari untuk dirangkai di editor Zapier tradisional, kini cukup ditulis dalam dua kalimat.",
+      "Kekuatan terbesar Zapier Central jelas di ekosistem: 7000+ aplikasi yang sudah ter-integrasi adalah aset yang butuh bertahun-tahun untuk dibangun ulang dari nol oleh kompetitor manapun. Untuk konteks Indonesia, ini mencakup Xendit dan Midtrans untuk payment gateway, Tokopedia dan Shopee seller center untuk e-commerce, Telegram dan WhatsApp Business untuk messaging, sampai accurate.id dan Jurnal untuk akuntansi. Dalam pengujian editorial, hal yang paling terasa berbeda dibanding pesaing seperti Make.com atau n8n adalah kecepatan time-to-value: untuk use case yang sudah umum (sinkronisasi CRM ke spreadsheet, auto-reply email, lead routing), Zapier Central bisa jalan dalam 10-15 menit tanpa setup API key manual. Dukungan BYOK ke GPT-4o, Claude Sonnet 4.5, dan Gemini juga menjadi nilai jual—kamu tidak terjebak pada satu vendor model, dan bisa swap tergantung biaya atau kualitas per use case.",
+      "Paket harga adalah bagian yang paling perlu diperhitungkan. Zapier Central tersedia gratis dengan 300 task units per bulan dan satu agent aktif—cukup untuk eksplorasi dan automasi ringan. Paket Professional seharga $19.99 per bulan (sekitar Rp 320 ribu) menambahkan 2.000 task units dan akses ke lebih banyak agent, sedangkan Team $49 per bulan (Rp 800 ribu) untuk kolaborasi dan task units lebih besar. Paket Enterprise dengan harga custom menambahkan SSO, dedicated support, dan SLA uptime. Tapi perlu dicatat bahwa satu eksekusi agent multi-step bisa menghabiskan 5-15 task units tergantung jumlah panggilan API, sehingga bill bisa melonjak jika satu agent dipakai intensif sepanjang hari. Tidak ada self-host option sama sekali—seluruh data dan eksekusi lewat Zapier cloud di Amerika Serikat.",
+      "Untuk pengguna dan bisnis di Indonesia, profil paling ideal untuk Zapier Central adalah: pertama, UMKM dan startup yang sudah pakai 3-5 SaaS sekaligus (Google Workspace, Notion, Slack, Xendit, WhatsApp Business) dan ingin satukan workflow tanpa hire developer atau integration engineer; kedua, tim marketing dan sales operation yang sering menjalankan campaign multi-channel dan butuh orkestrasi otomatis antar tools; ketiga, konsultan dan agency kecil yang melayani banyak klien dan ingin setup automasi klien dalam hitungan jam, bukan hari. Catatan penting: untuk workflow yang sangat mission-critical atau menangani data sangat sensitif (rekening bank, rekam medis), perlu pertimbangan serius karena data lewat cloud Amerika; untuk otomasi internal bisnis skala menengah, posisi Zapier Central sulit disaingi. Kompetitor langsung yang perlu dipertimbangkan: Make.com (visual editor lebih advanced, harga lebih transparan, ekosistem lebih sempit di 1.500 app), n8n (open source, self-host option, lebih teknis), Workato (enterprise-grade, harga jauh lebih tinggi, fokus korporasi besar), dan Lindy (AI agent lebih fokus, ekosistem lebih kecil). Saran editorial: mulai dari tier gratis untuk eksplorasi 2-3 use case, monitor konsumsi task units di bulan pertama, baru upgrade ke Professional $19.99 ketika pola penggunaan sudah jelas—dan selalu pasang alert di Zapier dashboard untuk mencegah tagihan tak terduga.",
+    ],
+    link: "https://zapier.com/central",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-11",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
