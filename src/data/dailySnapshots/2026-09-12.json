@@ -1,31 +1,114 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "12 September 2026",
-  "period": {
-    "date": "2026-09-12",
-    "label": "12 September 2026",
-    "path": "/repo/daily/2026/09/12"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-12T00:18:49.351Z",
+  "fetchedAt": "2026-09-12T06:14:49.394Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "ayghri/i-have-adhd",
-      "owner": "ayghri",
-      "repo": "i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "githubUrl": "https://github.com/ayghri/i-have-adhd",
-      "trendshiftUrl": "https://trendshift.io/repositories/30905",
-      "language": "Python",
+      "fullName": "covetradesmanrivet/Acrobat-Reader-Pro",
+      "owner": "covetradesmanrivet",
+      "repo": "Acrobat-Reader-Pro",
+      "description": "",
+      "githubUrl": "https://github.com/covetradesmanrivet/Acrobat-Reader-Pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/230085",
       "topics": [
-        "AI skills"
+        "Document processing"
       ],
-      "dateCreated": "2026-05-13T20:42:06Z"
+      "dateCreated": "2026-06-14T02:27:07Z"
     },
     {
       "rank": 2,
+      "fullName": "postlayerrespect26/FPS-Booster-for-Wiindows",
+      "owner": "postlayerrespect26",
+      "repo": "FPS-Booster-for-Wiindows",
+      "description": "",
+      "githubUrl": "https://github.com/postlayerrespect26/FPS-Booster-for-Wiindows",
+      "trendshiftUrl": "https://trendshift.io/repositories/230076",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:24:37Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "ScalarLinkAxe/Optimizer-Toolkit",
+      "owner": "ScalarLinkAxe",
+      "repo": "Optimizer-Toolkit",
+      "description": "",
+      "githubUrl": "https://github.com/ScalarLinkAxe/Optimizer-Toolkit",
+      "trendshiftUrl": "https://trendshift.io/repositories/229916",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-06-14T02:27:00Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bluecockatooshrink/AutoCad-setup",
+      "owner": "bluecockatooshrink",
+      "repo": "AutoCad-setup",
+      "description": "",
+      "githubUrl": "https://github.com/bluecockatooshrink/AutoCad-setup",
+      "trendshiftUrl": "https://trendshift.io/repositories/229952",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:27:23Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "pitelephantdawn/KMS-Pico-for-Win",
+      "owner": "pitelephantdawn",
+      "repo": "KMS-Pico-for-Win",
+      "description": "",
+      "githubUrl": "https://github.com/pitelephantdawn/KMS-Pico-for-Win",
+      "trendshiftUrl": "https://trendshift.io/repositories/229591",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-06-14T02:28:47Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "jiji262/douyin-downloader",
+      "owner": "jiji262",
+      "repo": "douyin-downloader",
+      "description": "A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐(原声)。",
+      "githubUrl": "https://github.com/jiji262/douyin-downloader",
+      "trendshiftUrl": "https://trendshift.io/repositories/13156",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2023-05-25T08:10:38Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "TealElderPlait/Cinema-4D",
+      "owner": "TealElderPlait",
+      "repo": "Cinema-4D",
+      "description": "",
+      "githubUrl": "https://github.com/TealElderPlait/Cinema-4D",
+      "trendshiftUrl": "https://trendshift.io/repositories/228820",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:28:51Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tonhowtf/omniget",
+      "owner": "tonhowtf",
+      "repo": "omniget",
+      "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
+      "githubUrl": "https://github.com/tonhowtf/omniget",
+      "trendshiftUrl": "https://trendshift.io/repositories/25924",
+      "language": "Rust",
+      "topics": [
+        "Web scraping",
+        "File management"
+      ],
+      "dateCreated": "2026-02-11T22:44:56Z"
+    },
+    {
+      "rank": 9,
       "fullName": "ghoulformpray/Monero-Miner",
       "owner": "ghoulformpray",
       "repo": "Monero-Miner",
@@ -38,110 +121,19 @@
       "dateCreated": "2026-06-14T02:24:02Z"
     },
     {
-      "rank": 3,
-      "fullName": "Embertuready/Total-Commander",
-      "owner": "Embertuready",
-      "repo": "Total-Commander",
-      "description": "",
-      "githubUrl": "https://github.com/Embertuready/Total-Commander",
-      "trendshiftUrl": "https://trendshift.io/repositories/227089",
-      "topics": [
-        "File management"
-      ],
-      "dateCreated": "2026-06-14T02:22:58Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "bilawalsidhu/gods-eye-view",
-      "owner": "bilawalsidhu",
-      "repo": "gods-eye-view",
-      "description": "God's Eye View v1 public open-source release placeholder",
-      "githubUrl": "https://github.com/bilawalsidhu/gods-eye-view",
-      "trendshiftUrl": "https://trendshift.io/repositories/62154",
-      "topics": [],
-      "dateCreated": "2026-06-22T23:37:22Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "google/artemis",
-      "owner": "google",
-      "repo": "artemis",
-      "description": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs for debugging and analysis, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. On the AndroidWorld benchmark, ARTEMIS achieves a success rate of over 99%.",
-      "githubUrl": "https://github.com/google/artemis",
-      "trendshiftUrl": "https://trendshift.io/repositories/177876",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI workflow",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-08-13T17:59:37Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "github/spec-kit",
-      "owner": "github",
-      "repo": "spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-      "githubUrl": "https://github.com/github/spec-kit",
-      "trendshiftUrl": "https://trendshift.io/repositories/15463",
-      "language": "Python",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2025-08-21T22:54:31Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "NVlabs/SoL-Pi",
-      "owner": "NVlabs",
-      "repo": "SoL-Pi",
-      "description": "",
-      "githubUrl": "https://github.com/NVlabs/SoL-Pi",
-      "trendshiftUrl": "https://trendshift.io/repositories/228077",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI workflow"
-      ],
-      "dateCreated": "2026-09-02T14:48:47Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "OnyxConductorSnips/Discord-Raid-Tools",
-      "owner": "OnyxConductorSnips",
-      "repo": "Discord-Raid-Tools",
-      "description": "Advanced Discord Server Automation Framework & Webhook Management Tool. Designed for security auditing, stress testing, and high-performance server administration.",
-      "githubUrl": "https://github.com/OnyxConductorSnips/Discord-Raid-Tools",
-      "trendshiftUrl": "https://trendshift.io/repositories/222150",
-      "topics": [],
-      "dateCreated": "2026-06-14T02:16:54Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "nashsu/llm_wiki",
-      "owner": "nashsu",
-      "repo": "llm_wiki",
-      "description": "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。",
-      "githubUrl": "https://github.com/nashsu/llm_wiki",
-      "trendshiftUrl": "https://trendshift.io/repositories/26125",
-      "language": "TypeScript",
-      "topics": [
-        "RAG",
-        "Document processing"
-      ],
-      "dateCreated": "2026-04-08T11:24:01Z"
-    },
-    {
       "rank": 10,
-      "fullName": "watermitecreate/Optimizer-For-Windows",
-      "owner": "watermitecreate",
-      "repo": "Optimizer-For-Windows",
-      "description": "",
-      "githubUrl": "https://github.com/watermitecreate/Optimizer-For-Windows",
-      "trendshiftUrl": "https://trendshift.io/repositories/227252",
-      "topics": [],
-      "dateCreated": "2026-06-14T02:23:09Z"
+      "fullName": "agentrhq/webcmd",
+      "owner": "agentrhq",
+      "repo": "webcmd",
+      "description": "The Browser Infra that learns and cuts token spend by upto 90%",
+      "githubUrl": "https://github.com/agentrhq/webcmd",
+      "trendshiftUrl": "https://trendshift.io/repositories/90188",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-07-02T11:49:31Z"
     }
   ]
 }
