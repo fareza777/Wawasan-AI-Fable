@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-12T06:14:49.394Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "covetradesmanrivet/Acrobat-Reader-Pro",
+      "owner": "covetradesmanrivet",
+      "repo": "Acrobat-Reader-Pro",
+      "description": "",
+      "githubUrl": "https://github.com/covetradesmanrivet/Acrobat-Reader-Pro",
+      "trendshiftUrl": "https://trendshift.io/repositories/230085",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-06-14T02:27:07Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "postlayerrespect26/FPS-Booster-for-Wiindows",
+      "owner": "postlayerrespect26",
+      "repo": "FPS-Booster-for-Wiindows",
+      "description": "",
+      "githubUrl": "https://github.com/postlayerrespect26/FPS-Booster-for-Wiindows",
+      "trendshiftUrl": "https://trendshift.io/repositories/230076",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:24:37Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "ScalarLinkAxe/Optimizer-Toolkit",
+      "owner": "ScalarLinkAxe",
+      "repo": "Optimizer-Toolkit",
+      "description": "",
+      "githubUrl": "https://github.com/ScalarLinkAxe/Optimizer-Toolkit",
+      "trendshiftUrl": "https://trendshift.io/repositories/229916",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-06-14T02:27:00Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bluecockatooshrink/AutoCad-setup",
+      "owner": "bluecockatooshrink",
+      "repo": "AutoCad-setup",
+      "description": "",
+      "githubUrl": "https://github.com/bluecockatooshrink/AutoCad-setup",
+      "trendshiftUrl": "https://trendshift.io/repositories/229952",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:27:23Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "pitelephantdawn/KMS-Pico-for-Win",
+      "owner": "pitelephantdawn",
+      "repo": "KMS-Pico-for-Win",
+      "description": "",
+      "githubUrl": "https://github.com/pitelephantdawn/KMS-Pico-for-Win",
+      "trendshiftUrl": "https://trendshift.io/repositories/229591",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-06-14T02:28:47Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "jiji262/douyin-downloader",
+      "owner": "jiji262",
+      "repo": "douyin-downloader",
+      "description": "A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐(原声)。",
+      "githubUrl": "https://github.com/jiji262/douyin-downloader",
+      "trendshiftUrl": "https://trendshift.io/repositories/13156",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2023-05-25T08:10:38Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "TealElderPlait/Cinema-4D",
+      "owner": "TealElderPlait",
+      "repo": "Cinema-4D",
+      "description": "",
+      "githubUrl": "https://github.com/TealElderPlait/Cinema-4D",
+      "trendshiftUrl": "https://trendshift.io/repositories/228820",
+      "topics": [],
+      "dateCreated": "2026-06-14T02:28:51Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tonhowtf/omniget",
+      "owner": "tonhowtf",
+      "repo": "omniget",
+      "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
+      "githubUrl": "https://github.com/tonhowtf/omniget",
+      "trendshiftUrl": "https://trendshift.io/repositories/25924",
+      "language": "Rust",
+      "topics": [
+        "Web scraping",
+        "File management"
+      ],
+      "dateCreated": "2026-02-11T22:44:56Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ghoulformpray/Monero-Miner",
+      "owner": "ghoulformpray",
+      "repo": "Monero-Miner",
+      "description": "",
+      "githubUrl": "https://github.com/ghoulformpray/Monero-Miner",
+      "trendshiftUrl": "https://trendshift.io/repositories/227276",
+      "topics": [
+        "Crypto trading"
+      ],
+      "dateCreated": "2026-06-14T02:24:02Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "agentrhq/webcmd",
+      "owner": "agentrhq",
+      "repo": "webcmd",
+      "description": "The Browser Infra that learns and cuts token spend by upto 90%",
+      "githubUrl": "https://github.com/agentrhq/webcmd",
+      "trendshiftUrl": "https://trendshift.io/repositories/90188",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-07-02T11:49:31Z"
+    }
+  ]
+}
