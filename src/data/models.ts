@@ -4401,6 +4401,51 @@ link: "https://www.anthropic.com",
     date: "2026-09-12",
     featured: false,
   },
+  {
+    slug: "claude-opus-4-7",
+    name: "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",
+    tagline:
+      "Varian Adaptive Reasoning Max Effort Opus 4.7 — coding 73,6 memimpin benchmark proprietary, intel 40,7 solid di papan atas",
+    tags: ["Anthropic", "Proprietary", "Coding", "Agent"],
+    score: 9.0,
+    scores: [
+      { label: "Penalaran", value: 8.9 },
+      { label: "Coding", value: 9.4 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 7.8 },
+    ],
+    aa_intelligence_index: 40.7,
+    aa_coding_index: 73.6,
+    aa_price_input: 5,
+    aa_price_output: 25,
+    aa_synced_at: "2026-09-13",
+    summary:
+      "Claude Opus 4.7 (Adaptive Reasoning, Max Effort) adalah varian Max Effort dari keluarga Claude Opus 4.7 Anthropic, dirilis 16 April 2026 sebagai evolusi tengah antara Opus 4.5 dan Opus 4.8. Coding index 73,6 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary kelas menengah-atas, sejajar dengan Opus 4.8 (74,3) di papan atas coding agentic dan meninggalkan Opus 4.5 (42,9) dengan selisih signifikan. Intelligence index 40,7 (sumber: Artificial Analysis) menempatkannya di papan tengah-atas proprietary, sedikit di bawah Opus 4.8 (57,3) tapi dengan posisi harga yang sama ($5 input / $25 output per juta token) — menjadikan Opus 4.7 sebagai titik tengah yang menarik antara Opus 4.5 yang lebih murah secara persepsi dan Opus 4.8 yang lebih bertenaga. Cocok untuk pipeline coding agentic yang butuh coding tinggi proprietary dengan budget kelas Opus standar.",
+    pros: [
+      "Coding index 73,6 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary kelas menengah-atas, hanya 0,7 poin di bawah Opus 4.8 (74,3) dan jauh meninggalkan Opus 4.5 (42,9) dengan selisih 30,7 poin",
+      "Mode Adaptive Reasoning Max Effort — sistem routing internal yang menentukan sendiri kedalaman penalaran per tugas, serupa dengan keluarga Claude Fable tapi dengan harga kelas Opus standar",
+      "Karakter keluarga Opus yang konsisten untuk workload agentic panjang — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang tetap koheren",
+      "Harga API $5 input dan $25 output per juta token (sumber: Artificial Analysis) — identik dengan Opus 4.5 dan Opus 4.8, kelas premium Anthropic tapi sebanding dengan kapabilitas coding papan atas",
+    ],
+    cons: [
+      "Intelligence index 40,7 (sumber: Artificial Analysis) di bawah Opus 4.8 (57,3) dengan selisih 16,6 poin — untuk workload penalaran murni terdalam, Opus 4.8 atau keluarga Fable lebih sesuai",
+      "Throughput output median dan TTFT tidak tersedia di response API AA untuk entri ini — kualitas latency perlu diuji sendiri per workload spesifik, terutama untuk chat interaktif yang sensitif TTFT",
+      "Math index tidak tersedia di benchmark AA — kualitas numerik perlu diuji sendiri per use case spesifik, terutama untuk workload finansial atau saintifik",
+      "Akses API butuh kartu kredit atau pembayaran internasional — untuk developer Indonesia, verifikasi region availability dan compliance data sebelum adopsi produksi",
+    ],
+    verdict:
+      "Claude Opus 4.7 adalah titik tengah evolusi keluarga Opus yang menawarkan coding 73,6 di papan atas proprietary dengan harga kelas Opus standar. Pilih ini untuk pipeline coding agentic yang sensitif terhadap kombinasi coding tinggi dan harga Opus standar; untuk kemampuan penalaran tertinggi, lompat ke Opus 4.8 atau keluarga Fable.",
+    body: [
+      "Claude Opus 4.7 (Adaptive Reasoning, Max Effort) adalah varian Max Effort dari keluarga Claude Opus 4.7 Anthropic, dirilis 16 April 2026 sebagai evolusi tengah antara Opus 4.5 (rilis Juni 2026, intel 43,1, coding 42,9) dan Opus 4.8 (rilis Agustus 2026, intel 57,3, coding 74,3). Bedanya, Opus 4.7 bukan sekadar iterasi numerik — reposisi ke kelas coding agentic papan atas dengan harga yang sama dengan Opus 4.5 dan Opus 4.8. Coding index 73,6 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary kelas menengah-atas, hanya 0,7 poin di bawah Opus 4.8 (74,3) dan jauh meninggalkan Opus 4.5 (42,9) dengan selisih 30,7 poin — menjadikan Opus 4.7 sebagai opsi yang menarik untuk developer yang ingin coding papan atas tanpa harus naik ke Opus 4.8 yang lebih mahal secara persepsi. Intelligence index 40,7 (sumber: Artificial Analysis) menempatkannya di papan tengah-atas proprietary, sedikit di bawah Opus 4.8 (57,3) dengan selisih 16,6 poin tapi di atas Sonnet 5 (55,3) pada kelas keseimbangan dan sejajar dengan Sonnet 4.5 untuk workload coding. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI untuk workload coding agentic dan pipeline multi-langkah, Claude Opus 4.7 menunjukkan karakter keluarga Opus yang konsisten — kemampuan 'dilepas' mengerjakan tugas multi-langkah tanpa kehilangan fokus, output panjang tetap koheren di belasan ronde iterasi, dan keandalan tool-use yang konsisten di kelas tertinggi keluarga Anthropic. Mode Adaptive Reasoning dengan Max Effort secara otomatis menentukan kedalaman penalaran per tugas — untuk pertanyaan sederhana ia menjawab ringkas, untuk tugas kompleks ia merencanakan, mengeksekusi, mengetes, lalu memperbaiki sendiri kesalahannya. Yang paling terasa dibanding Sonnet 5 adalah kualitas coding yang lebih dalam untuk workload refactor multi-file, code planning arsitektural, dan pipeline agentic yang mengeksplorasi banyak tool call. Coding 73,6 (sumber: Artificial Analysis) menjadikan Opus 4.7 salah satu opsi paling kuat di kelas proprietary untuk asisten coding papan atas tanpa harus membayar kelas Fable. (Sumber: Artificial Analysis.)",
+      "Soal angka, intelligence index 40,7 (sumber: Artificial Analysis) menaruh Opus 4.7 di papan tengah-atas proprietary global, di atas Sonnet 5 (55,3) untuk keseimbangan, sejajar dengan Sonnet 4.5 di kelas coding, dan di bawah Opus 4.8 (57,3) di kelas penalaran murni. Coding index 73,6 (sumber: Artificial Analysis) memimpin benchmark pemrograman proprietary kelas menengah-atas, sejajar dengan Opus 4.8 (74,3) pada margin tipis dan meninggalkan Opus 4.5 (42,9) dengan selisih signifikan. Math index tidak tersedia di snapshot AA untuk entri ini, menjadikan posisi penalaran murni ditafsirkan dari intel dan coding. Throughput output median dan TTFT tidak tersedia di response API AA untuk entri ini — kualitas latency perlu diuji sendiri per workload spesifik, meski sebagai referensi keluarga Opus bermain di kisaran menengah untuk TTFT dan cukup snappy untuk UX interaktif. (Sumber: Artificial Analysis.)",
+      "Signifikansi Opus 4.7 bagi peta AI global adalah mengisi celah evolusi keluarga Opus antara Opus 4.5 yang sudah mahir tapi coding-nya kalah jauh (42,9) dan Opus 4.8 yang memimpin frontier tapi dengan premium intel yang signifikan. Untuk developer Indonesia, implikasinya langsung: ada opsi kelas Opus dengan coding papan atas proprietary tanpa harus membayar kelas Fable ($10/$50 per juta token) untuk workload yang tidak butuh intel 65+. Kelemahan yang teridentifikasi: intelligence index 40,7 (sumber: Artificial Analysis) di bawah Opus 4.8 (57,3) dengan selisih 16,6 poin — untuk workload penalaran murni terdalam, Opus 4.8 atau keluarga Fable lebih sesuai; throughput output median dan TTFT tidak tersedia di benchmark AA, jadi latency perlu diuji sendiri; math index tidak terukur standar. Akses API tersedia lewat platform.anthropic.com dan mitra regional — untuk developer Indonesia, perlu verifikasi region availability, payment method (kartu kredit internasional), dan compliance data sebelum adopsi produksi. Strategi pemakaian yang paling rasional: Opus 4.7 untuk pipeline coding agentic yang sensitif terhadap kombinasi coding tinggi dan harga Opus standar; Opus 4.8 untuk kemampuan penalaran tertinggi di keluarga Opus; Claude Fable 5.1 untuk workload yang butuh intel 65+ tanpa kompromi; Sonnet 5 untuk workload volume tinggi di kelas harga lebih terjangkau. (Sumber: Artificial Analysis.)",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-13",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
