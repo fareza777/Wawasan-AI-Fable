@@ -4873,6 +4873,55 @@ export const repos: Review[] = [
       updatedAt: "2026-09-11",
       featured: false,
     },
+    {
+      slug: "superpowers",
+      name: "Superpowers",
+      tagline: "Framework metodologi + skill komposabel untuk coding agent CLI",
+      tags: ["AI Agent", "Developer Tool", "Open Source", "Skills Library"],
+      score: 9.1,
+      scores: [
+        { label: "Kemudahan Setup", value: 9.0 },
+        { label: "Fitur & Ekstensibilitas", value: 9.4 },
+        { label: "Komunitas & Momentum", value: 9.2 },
+        { label: "Dokumentasi", value: 9.0 },
+        { label: "Kesiapan Produksi", value: 8.8 },
+      ],
+      summary:
+        "Superpowers dari obra adalah paket lengkap berisi metodologi pengembangan software dan library skill komposabel yang ditenagai oleh coding agent CLI seperti Claude Code, Codex, Cursor, Gemini CLI, dan Hermes Agent. Alih-alih menulis kode langsung, agen memakai skill seperti brainstorming specification, red/green TDD, subagent-driven-development, dan code review terstruktur untuk menghasilkan output yang lebih disiplin. Dengan lebih dari 285.000 bintang GitHub, Superpowers menyasar developer dan tim engineering yang sudah mengadopsi CLI agent dan ingin standar mutu yang konsisten lintas harness tanpa menulis aturan dari nol.",
+      highlights: [
+        "Framework metodologi software development yang dikemas sebagai skill komposabel, sehingga tiap kemampuan (brainstorm spec, TDD, code review, subagent dispatch) bisa dipasang terpisah sesuai konteks",
+        "Mendukung 14 harness populer sekaligus: Claude Code, Codex App & CLI, Cursor, Devin CLI, Factory Droid, Gemini CLI, GitHub Copilot CLI, Grok Build CLI, Kimi Code, OpenCode, Pi, Antigravity, Hermes Agent",
+        "Distribusi lewat marketplace resmi Anthropic untuk Claude Code plus marketplace primer untuk harness lain, sehingga instalasi cukup satu perintah dan update otomatis lewat manajer plugin",
+        "Pendekatan subagent-driven-development membagi eksekusi ke sub-agen yang saling me-review, sehingga agen bisa berjalan otonom beberapa jam tanpa menyimpang dari rencana awal",
+        "Fokus pada red/green TDD, YAGNI, dan DRY sebagai default - spec dan implementation plan dihasilkan otomatis sebelum kode ditulis, menurunkan risiko refactor besar di tengah jalan",
+        "Lisensi open source dan branding Primate Radiant di belakangnya menunjukkan ada tim komersial yang serius memelihara proyek ini, sekaligus terbuka untuk kontribusi komunitas",
+        "Dokumentasi README yang menjelaskan alur kerja dari spec sampai code review dalam satu halaman, sehingga onboarding developer baru ke CLI agent bisa selesai dalam satu sore",
+        "Cocok untuk tim Indonesia yang sudah memakai CLI agent tapi belum punya standar internal - Superpowers memberikan template yang bisa langsung diadopsi tanpa biaya langganan",
+      ],
+      pros: [
+        "Cara cepat untuk developer dan tim engineering Indonesia yang sudah mengadopsi CLI agent (Claude Code, Codex, Cursor) tapi belum punya standar mutu engineering yang konsisten lintas harness - Superpowers langsung memberikan spec, plan, dan code review dalam satu paket",
+        "Berjalan di 14 harness populer sekaligus, sehingga organisasi yang sudah berinvestasi di beberapa CLI agent sekaligus tidak perlu melatih ulang tim ketika berpindah vendor - skill yang sama tetap berlaku",
+        "Lisensi open source plus maintenance oleh Primate Radiant menunjukkan proyek ini bukan eksperimen akhir pekan - dukungan komersial resmi tersedia untuk enterprise yang membutuhkan SLA",
+      ],
+      cons: [
+        "Bergantung pada kualitas harness CLI agent di belakangnya - jika provider seperti Anthropic atau OpenAI mengubah API, harga, atau akses, perilaku Superpowers ikut terdampak karena ia adalah lapisan di atas, bukan runtime sendiri",
+        "Beragamnya harness yang didukung membuat troubleshooting kadang sulit ketika bug muncul - pengguna perlu memastikan skill-nya kompatibel dengan versi harness spesifik, terutama untuk harness yang masih berkembang seperti Hermes Agent atau OpenCode",
+        "Komunitas diskusi kebanyakan berbahasa Inggris dan berada di Discord/Slack primer - dokumentasi Bahasa Indonesia, tutorial niche industri (fintech, healthtech, edutech), dan adapter workflow untuk tim Indonesia masih terbatas",
+      ],
+      verdict:
+        "Superpowers adalah lapisan metodologi yang menjawab kegelisahan paling umum pengguna CLI agent di 2026: bagaimana caranya agar output agent konsisten, ter-review, dan tidak liar. Untuk developer dan tim engineering Indonesia yang sudah nyaman dengan CLI agent, paket ini layak dipasang sebagai standar internal, sambil terus menyesuaikan konfigurasi skill dengan gaya kerja tim masing-masing.",
+      body: [
+        "Tahun 2026 menjadi titik di mana CLI agent coding - Claude Code, Codex, Cursor, Gemini CLI - sudah bukan lagi eksperimen melainkan alat kerja harian bagi banyak developer dan tim engineering. Namun semakin sering agen dipakai, semakin jelas juga bahwa output agent sangat bergantung pada prompt awal, konvensi tim, dan kualitas review: tanpa disiplin yang konsisten, agent bisa menulis kode yang jalan di permukaan tapi rapuh saat menghadapi edge case, atau terjebak pada pola yang berulang lintas proyek. Superpowers dari obra mengambil posisi yang belum banyak digarap proyek open source lain: menyediakan lapisan metodologi pengembangan software yang dikemas sebagai skill komposabel, sehingga setiap kemampuan - mulai dari brainstorming specification, red/green TDD, subagent-driven-development, sampai code review terstruktur - bisa dipasang dan dilepas sesuai konteks proyek. Proyek ini sudah melampaui 285.000 bintang GitHub pada usia kurang dari dua tahun, angka yang untuk paket skill agent spesifik cukup fenomenal dan mencerminkan permintaan nyata akan standar mutu lintas harness CLI.",
+        "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa dari Superpowers adalah perubahan urutan kerja yang dibawanya. Alih-alih langsung menulis kode, agen yang memakai Superpowers akan mundur selangkah dan menanyakan apa yang sebenarnya ingin dicapai - sebuah sesi brainstorming singkat yang memunculkan specification, lalu menampilkan spec tersebut dalam potongan pendek yang bisa dibaca dan disetujui per bagian. Setelah design disetujui, agen menyusun implementation plan yang cukup jelas untuk diikuti oleh engineer junior yang antusias tapi belum punya taste dan judgement; penekanan pada red/green TDD, YAGNI, dan DRY membuat setiap langkah punya test sebagai gerbang kualitas. Begitu user mengatakan 'go', agen meluncurkan proses subagent-driven-development, di mana sub-agen mengeksekusi tiap task, saling me-review hasil kerja, dan bergerak maju. Pola ini sangat membantu developer Indonesia yang sering bergantian konteks antara client work dan produk internal: spec dapat disimpan per proyek, plan dapat di-fork, dan eksekusi tetap reproducible lewat riwayat CLI.",
+        "Arsitekturnya ringan dan pragmatis. Superpowers bukan runtime baru - ia adalah lapisan instruksi dan skill yang hidup di atas harness yang sudah ada, mulai dari Claude Code lewat marketplace Anthropic resmi, Codex App & CLI lewat marketplace OpenAI, Cursor, Devin CLI, Factory Droid, Gemini CLI, GitHub Copilot CLI, Grok Build CLI, Kimi Code, OpenCode, Pi, Antigravity, sampai Hermes Agent. Distribusi lewat marketplace membuat instalasi cukup satu perintah plugin, update otomatis lewat manajer plugin, dan tidak butuh database atau backend service tambahan. Untuk deployment, semua eksekusi terjadi di workstation developer lewat CLI - tidak ada data percakapan atau source code yang dikirim ke server Superpowers, nilai privasi yang relevan untuk perusahaan Indonesia yang menangani materi proprietary atau kode klien di bawah NDA. Dukungan komersial resmi dari Primate Radiant tersedia untuk enterprise yang membutuhkan SLA, sementara lisensi open source memastikan komunitas tetap bisa berkontribusi dan melakukan fork untuk workflow khusus.",
+        "Untuk konteks Indonesia, Superpowers paling relevan untuk empat profil pengguna. Pertama, developer solo dan tech lead yang sudah mengadopsi Claude Code atau Codex tapi lelah melihat output agent yang tidak konsisten antar proyek - Superpowers memberikan spec, plan, dan review otomatis sebagai standar yang bisa langsung dipakai. Kedua, tim engineering startup dan korporasi yang ingin standar mutu internal tanpa harus menyusun playbook dari nol - Superpowers dapat di-fork untuk konvensi spesifik perusahaan dan tetap kompatibel dengan harness yang sudah dipakai. Ketiga, konsultan dan software house yang melayani banyak klien dengan stack berbeda - karena Superpowers berjalan di 14 harness, transisi antar klien tidak lagi berarti melatih ulang tim pada tool baru. Keempat, edukasi dan bootcamp coding yang mengajarkan praktik engineering modern lewat CLI agent - dokumentasi Superpowers cukup jelas untuk dijadikan bahan ajar dalam satu sore workshop. Dua catatan penting: pertama, kualitas Superpowers tetap ditentukan oleh kualitas harness yang menjalankannya - jika Claude Code atau Codex sendiri berubah perilakunya, Superpowers ikut terdampak karena ia adalah lapisan di atas, bukan runtime mandiri; kedua, komunitas diskusi masih terpusat di kanal primer berbahasa Inggris, sehingga jumlah tutorial Bahasa Indonesia, adapter niche industri (fintech, healthtech, edutech), dan contoh workflow untuk startup lokal masih terbatas. Dengan memahami dua catatan itu, Superpowers adalah utilitas pragmatis untuk paruh kedua 2026, terutama bagi developer dan tim engineering Indonesia yang sudah nyaman dengan CLI agent dan mengutamakan standar mutu yang konsisten lintas harness, di atas janji kecepatan yang sering tidak teruji saat proyek membesar.",
+      ],
+      link: "https://github.com/obra/superpowers",
+      linkLabel: "Lihat di GitHub",
+      date: "2026-09-12",
+      updatedAt: "2026-09-12",
+      featured: false,
+    },
     ];
 
     export function getRepo(slug: string) {

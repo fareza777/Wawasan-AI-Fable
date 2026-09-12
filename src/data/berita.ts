@@ -4354,6 +4354,55 @@ export const berita: Artikel[] = [
       },
     ],
   },
+{
+  slug: "bkn-tegaskan-disiplin-dan-netralitas-asn-lewat-sbt-dan-idis",
+  title: "SBT dan iDIS: Alat BKN untuk Mengawasi Disiplin ASN di Era Politik yang Tidak Pernah Sepi",
+  excerpt:
+    "BKN menegaskan disiplin dan netralitas ASN lewat dua sistem utama: SBT untuk Berita Acara dan iDIS untuk catatan pelanggaran individu. Inilah cara kerjanya, mengapa era digital membuat aturannya berubah, dan apa yang perlu dijaga ASN.",
+  category: "Tutorial",
+  date: "2026-09-12",
+  readingTime: "7 menit",
+  body: [
+    {
+      paragraphs: [
+        "Kalau kita googling 'ASN netral' di Indonesia, hasilnya selalu ramai di tahun-tahun politik. Dari ASN yang terlibat kampanye pilkada, sampai PNS yang kedapatan posting di media sosial di hari tenang, akhir setiap siklus pemilu selalu menghadirkan daftar panjang pelanggaran netralitas. Tapi peran Badan Kepegawaian Negara (BKN) tidak berhenti pada respons ramai-ramai: lewat dua sistem bernama SBT dan iDIS, lembaga ini sedang membangun infrastruktur agar disiplin ASN bisa dilacak, ditinjau, dan ditindaklanjuti secara konsisten — bukan hanya ketika ada pelanggaran yang masuk media. Untuk ASN Indonesia, memahami dua sistem ini bukan soal kepatuhan administratif belaka, melainkan soal bagaimana catatan disiplin individu mengikuti mereka sepanjang karier.",
+        "RRI.co.id pada 31 Juli 2026 memberitakan pernyataan resmi BKN yang kembali menegaskan pentingnya disiplin dan netralitas ASN, dengan dua pilar implementasi utama: SBT (Sistem Berita Acara) untuk pencatatan keputusan administratif, dan iDIS (Indonesia Discipline Information System) untuk rekapitulasi catatan pelanggaran individu ASN secara nasional. Yang menarik bukan pengumumannya — karena hampir tiap tahun BKN mengeluarkan pesan serupa — melainkan semakin terintegrasinya dua sistem ini dengan data kepegawaian nasional dan proses rotasi-promsi. Dalam pengujian editorial Wawasan AI, perkembangan ini layak dibaca bukan sebagai agenda birokrasi biasa, melainkan sebagai ujian seberapa jauh transformasi digital birokrasi Indonesia sudah benar-benar menyentuh hal paling sensitif: catatan tentang perilaku aparatnya sendiri.",
+      ],
+    },
+    {
+      heading: "Apa sebenarnya SBT dan iDIS, dan kenapa keduanya sering keliru dianggap satu",
+      paragraphs: [
+        "SBT (Sistem Berita Acara) adalah sistem yang digunakan oleh unit kepegawaian instansi untuk merekam berita acara keputusan administratif — mulai dari penjatuhan hukuman disiplin, penerbitan nota pertimbangan, sampai berita acara verifikasi pelanggaran. Setiap berita acara punya nomor registrasi yang terhubung dengan data PNS di BKN, sehingga keputusan tingkat instansi tidak lagi berdiri sendiri. Sebelum ada SBT, berita acara sering hanya tersimpan di lemari arsip instansi dalam bentuk fisik dan PDF, dan sulit dilacak ketika ASN pindah tugas atau naik jabatan. Dengan SBT, klaim tentang 'tidak pernah ada catatan' jadi bisa diverifikasi silang dengan data pusat.",
+        "iDIS (Indonesia Discipline Information System) adalah sistem yang lebih fokus: ia merekam profil disiplin ASN secara nasional, lengkap dengan kategori pelanggaran (ringan, sedang, berat), tanggal keputusan, status penyelesaian, dan instansi penjatuh. Bagi ASN yang sedang mengikuti seleksi jabatan atau pendidikan kedinasan, data di iDIS menentukan apakah mereka bisa lanjut atau otomatis difilter karena ada catatan berat yang belum selesai. Yang membedakan iDIS dari sistem serupa di masa lalu adalah kemampuan untuk melakukan pencarian lintas-instansi: misalnya, ASN yang pernah divonis pelanggaran di daerah lama lalu pindah ke daerah baru tidak lagi bisa menyamarkan riwayatnya karena data terpusat di BKN.",
+        "Kesalahan yang sering muncul di percakapan publik adalah menganggap SBT dan iDIS sebagai sistem yang sama. Faktanya, SBT adalah alat input di tingkat instansi — setiap unit kepegawaian mengisinya setiap kali ada keputusan administratif. iDIS adalah konsolidator di tingkat BKN: ia menerima data dari SBT dan sumber lain, lalu menyajikannya sebagai profil disiplin nasional per ASN. Tanpa SBT yang aktif di instansi, data iDIS akan kosong. Tanpa iDIS, catatan di SBT tidak pernah menjadi informasi yang bisa dipakai untuk kebutuhan lintas-instansi.",
+      ],
+    },
+    {
+      heading: "Yang berubah ketika disiplin direkam secara digital",
+      paragraphs: [
+        "Perubahan paling terasa dari digitalisasi catatan disiplin ini bukan pada sisi ASN yang kebetulan melanggar — melainkan pada mayoritas ASN yang tidak melanggar. Selama ini, nama baik ASN bersih tidak pernah terekam secara positif. Yang tercatat hanya pelanggaran; yang tidak melanggar akan terlihat 'netral' karena tidak ada data. Tapi setelah SBT-iDIS terkonsolidasi, absence of catatan juga menjadi data. Artinya semakin lama seseorang ASN berkarier tanpa pelanggaran yang masuk sistem, profilnya secara administratif menjadi semakin kuat ketika melamar jabatan atau promosi. Inilah yang oleh BKN diharapkan menjadi insentif pasif: ASN yang menjaga perilakunya selama bertahun-tahun akan memiliki jejak digital yang positif.",
+        "Perubahan kedua adalah kemampuan audit yang sebelumnya tidak mungkin. Inspektorat atau tim internal BKN kini bisa menjalankan query nasional untuk menjawab pertanyaan seperti: berapa ASN yang dijatuhi hukuman ringan pada tahun berjalan, di instansi mana konsentrasinya, dan apakah ada pola hubungan dengan jenis jabatan. Sebelum digitalisasi, audit semacam ini memerlukan permintaan data satu per satu ke puluhan ribu instansi, dengan kualitas data yang sangat bervariasi. Sekarang, satu kali akses ke iDIS bisa memberi gambaran nasional yang cukup lengkap dalam hitungan menit.",
+        "Perubahan ketiga, dan ini yang sering luput: data disiplin yang terpusat turut menjadi dasar bagi kebijakan pendidikan dan pengembangan karier ASN. Program-program seperti pelatihan kepemimpinan, fast-track untuk calon pejabat, dan beasiswa tugas belajar mulai menerapkan filter otomatis berdasarkan profil disiplin iDIS. Artinya keputusan pengembangan karier ASN tidak lagi semata-mata berdasarkan senioritas atau rekomendasi atasan, tapi juga riwayat pelanggaran yang bisa diverifikasi. Beberapa pengamat birokrasi menganggap ini sebagai pergeseran paling signifikan dari meritokrasi berbasis kertas ke meritokrasi berbasis data, meskipun implementasinya masih diuji di lapangan.",
+      ],
+    },
+    {
+      heading: "Risiko yang perlu diwaspadai agar sistem ini tidak jadi alat tekan",
+      paragraphs: [
+        "Pertama, ada risiko over-catatan. Ketika setiap pertimbangan kinerja harus masuk SBT, ada godaan bagi instansi untuk mencatat hal-hal yang seharusnya administratif biasa sebagai 'berita acara'. Jika tidak ada standardisasi, ASN yang aktif dan sering membuat keputusan administratif justru bisa terlihat 'banyak catatan' dibanding ASN yang pasif. BKN perlu secara eksplisit membedakan mana yang bersifat pelanggaran dan mana yang hanya catatan prosedur, supaya iDIS tidak menjadi sistem yang menghukum ASN yang rajin bekerja.",
+        "Kedua, ada risiko false positive — ASN yang tercemar oleh data yang salah. Sistem apapun yang menyimpan rekor nasional menghadapi masalah data hygiene: bagaimana memperbaiki catatan jika sejak awal salah ketik, keliru instansi, atau salah identitas. iDIS harus memiliki mekanisme koreksi yang cepat dan tidak membebani ASN yang datanya keliru. Tanpa koreksi cepat, satu salah entri bisa merugikan karier ASN yang sebenarnya bersih selama bertahun-tahun.",
+        "Ketiga, ada risiko politisasi. Di tahun politik, tekanan untuk mencatat pelanggaran ASN yang berseberangan dengan penguasa akan meningkat. SBT harus dijaga agar tetap menjadi alat yang dipakai berdasarkan bukti pelanggaran administratif, bukan sebagai senjata untuk membungkam perbedaan pendapat ASN di media sosial atau forum publik. Ini bukan isu teknologi melainkan isu governance: sistem secanggih apapun tetap hanya seadil kebijakan yang menentukan kapan ia dipakai.",
+      ],
+    },
+    {
+      heading: "Yang harus dilakukan ASN supaya SBT-iDIS bekerja untuk mereka",
+      paragraphs: [
+        "Untuk ASN, tiga langkah praktis layak dilakukan sekarang, bukan menunggu ada masalah. Pertama, cek data Anda di sistem informasi kepegawaian instansi. Pastikan nama, NIP, dan jabatan yang tercatat konsisten dengan data di BKN, karena ketidakcocokan kecil pun akan merepotkan saat pemutakhiran data iDIS berikutnya. Jika ada perbedaan, laporkan ke bagian kepegawaian instansi untuk koreksi sebelum data masuk portal publik BKN.",
+        "Kedua, biasakan menyimpan bukti administratif yang relevan. Ketika Anda dianggap melanggar — entah karena aduan publik, kesalahpahaman prosedur, atau fitnah — berita acara pemeriksaan klarifikasi, surat pembelaan, dan keputusan instansi yang memutuskan tidak ada pelanggaran perlu Anda simpan salinannya, bukan hanya menitipkan ke Bagian Kepegawaian. Catatan administratif yang baik akan menjadi dokumen pembelaan penting jika ada revisi data di kemudian hari. Ketiga, manfaatkan hak jawab secara tertulis. Dalam UU ASN dan peraturan turunanannya, ASN berhak mengajukan keberatan administratif jika catatan disiplin menurut mereka tidak tepat. Gunakan hak ini secara tertulis dengan bahasa yang rapi, simpan bukti pengiriman, dan jika perlu minta nomor registrasi keberatan. Mekanisme keberatan yang terdokumentasi akan jauh lebih efektif daripada klarifikasi lisan yang tidak pernah masuk sistem.",
+        "Terakhir, perlu diingat bahwa sistem hanya bekerja sebatas yang dipakai secara konsisten. SBT dan iDIS adalah alat, bukan kebijakan. Alat secanggih apapun tidak akan menghasilkan ASN yang lebih disiplin kalau instansi tidak menggunakannya dengan niat baik, dan sistem seadil apapun akan menghasilkan ASN yang tertekan kalau dipakai untuk membungkam. Untuk kita yang berada di luar instansi, memantau perkembangan dua sistem ini adalah salah satu cara termudah untuk melihat apakah transformasi digital birokrasi Indonesia benar-benar akan menyentuh hal-hal yang selama ini hanya menjadi wacana. Catatan disiplin ASN adalah area di mana janji tentang meritokrasi akan paling cepat terlihat hasilnya — atau paling cepat ditemukan palsunya. SBT dan iDIS sekarang sudah tersedia, pertanyaannya tinggal bagaimana kita memastikan penggunaannya seiring dengan harapan tersebut, bukan sebaliknya.",
+      ],
+    },
+  ],
+},
 ];
 export function getArtikel(slug: string) {
   return berita.find((b) => b.slug === slug);
