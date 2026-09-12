@@ -3851,6 +3851,48 @@ export const stacks: Review[] = [
     date: "2026-09-11",
     featured: false,
   },
+  {
+    slug: "modal-2026",
+    name: "Modal 2026",
+    tagline: "Serverless GPU on-demand yang bikin deploy model AI semanis nulis fungsi Python",
+    tags: ["Modal", "Freemium", "Serverless GPU", "AI Infrastructure"],
+    score: 8.7,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.5 },
+      { label: "Kualitas Output", value: 8.7 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 8.9 },
+      { label: "Harga", value: 8.3 },
+    ],
+    summary:
+      "Modal adalah platform serverless GPU yang menghilangkan semua friksi operasional infrastruktur AI: cukup dekorasi fungsi Python dengan @app.function(), dan kode langsung berjalan di cloud pada GPU yang sesuai. Tidak perlu Dockerfile, tidak perlu setup Kubernetes, tidak perlu atur autoscaling--cukup bayar per detik komputasi yang dipakai. Untuk tim ML dan developer Indonesia yang sering terjebak di antrian GPU lokal atau tagihan AWS membengkak, Modal adalah shortcut nyata dari prototype ke production.",
+    pros: [
+      "DX terbaik di kelasnya: deploy inference, training, scheduler, dan web endpoint dari satu file Python dengan dekorator--cukup push kode, container spin up dalam hitungan detik",
+      "Pilihan GPU terlengkap: dari T4 murah sampai B200/H200/B300 terbaru, plus transparansi harga per detik untuk CPU core, memory, dan storage",
+      "Free compute $30/bulan untuk tier Starter memungkinkan eksplorasi tanpa kartu kredit untuk prototipe model AI kecil sampai menengah",
+      "Sandbox untuk menjalankan kode arbitrary di cloud, scheduler/cron jobs native, dan web endpoint dengan auth built-in--fitur yang di provider lain butuh setup manual",
+      "Cold start cepat (~1-3 detik), dokumentasi Pythonic dan contoh nyata ML/LLM workflows yang bisa di-copy paste, plus CLI dan library yang konsisten",
+    ],
+    cons: [
+      "Tidak ada self-host atau on-premise deployment, sehingga data dan model lewat cloud Modal (AWS, GCP, Azure di belakang layar)--relevan untuk industri dengan regulasi data ketat",
+      "Vendor lock-in ringan: API dan dekorator Modal tidak portable ke AWS Lambda atau GCP Cloud Run tanpa rewrite--bukan deal-breaker tapi perlu diperhitungkan",
+      "Ekosistem plugin lebih sempit dibanding AWS SageMaker atau Azure ML, sehingga integrasi enterprise (MLflow tracking production-grade, Airflow orchestration) butuh setup manual",
+      "Pricing per-detik transparan tapi tagihan bisa melonjak tanpa peringatan kalau ada loop tak sengaja atau job yang gagal berhenti--perlu aktifkan budget alert di dashboard",
+      "Dukungan bahasa Indonesia masih terbatas; komunitas dan tutorial utama berbahasa Inggris, sehingga learning curve lebih tinggi untuk developer yang tidak nyaman dengan dokumentasi teknis Inggris",
+    ],
+    verdict:
+      "Standar baru untuk serverless GPU di 2026: menghilangkan semua overhead infrastruktur AI tanpa mengorbankan fleksibilitas. Catatan utamanya adalah tidak ada self-host dan vendor lock-in ringan, tapi bagi kebanyakan tim ML itu trade-off yang sangat layak.",
+    body: [
+      "Pergeseran dari 'setup infrastruktur dulu baru bisa train model' ke 'tulis fungsi Python lalu jalan di GPU' adalah lompatan yang sudah lama ditunggu komunitas ML, dan Modal adalah implementasi paling matang dari visi itu. Alur kerjanya langsung terasa berbeda: kamu menulis fungsi Python biasa, menambahkan dekorator @app.function(gpu='H100', image=modal.Image.debian_slim().pip_install(...)), lalu menjalankan modal deploy dari CLI. Tidak ada Dockerfile yang harus ditulis, tidak ada Kubernetes YAML, tidak ada setup autoscaling--Modal menangani spin-up container di cloud, mounting image yang sudah di-cache, dan mematikan instance ketika tidak dipakai. Untuk tugas AI inference, training, atau scheduler/cron job, ini memotong waktu dari ide ke production dari hitungan hari menjadi hitungan menit.",
+      "Daya tarik terbesar Modal dibanding AWS SageMaker atau Azure ML ada di developer experience. CLI-nya intuitif (modal run, modal deploy, modal serve), library Python-nya rapi (sandbox, Image, Function, Stub), dan dashboard-nya memuat log real-time, metrics, dan secret management yang cukup untuk kebanyakan use case. Pilihan GPU-nya juga paling lengkap: dari T4 murah ($0.000164 per detik) untuk inference ringan, L4 ($0.000222) untuk image generation, A100-40GB ($0.000583) untuk training skala menengah, sampai H100 ($0.001097), H200 ($0.001261), dan B200/B300 ($0.0017-$0.0019 per detik) untuk workload frontier. Sandbox API juga unik--kamu bisa menjalankan kode arbitrary di cloud lewat REST API, berguna untuk eksekusi script user-generated yang aman. Untuk konteks developer Indonesia, catatan positifnya: tidak perlu kartu kredit untuk tier Starter ($0/bulan + $30 free compute), dan harga per-detik transparan sehingga bisa dihitung ulang sebelum deploy. Dokumentasi Pythonic dan contoh nyata ML workflows (text-to-image, LLM fine-tuning, batch inference) bisa di-copy paste langsung.",
+      "Paket harga Modal cukup kompetitif untuk penggunaan normal. Tier Starter gratis dengan $30/bulan free compute, 3 workspace seats, 100 containers concurrent, dan 10 GPU concurrency--cukup untuk eksplorasi, prototipe, dan project sampingan. Tier Team seharga $250/bulan (sekitar Rp 4 juta dengan kurs Rp 16.000 per dolar) menambahkan $100/bulan free compute, unlimited seats, RBAC, dan region selection. Tier Enterprise custom dengan volume discount, dedicated support, dan SLA uptime. Semua tier membayar per-detik komputasi di luar free compute: CPU $0.0000131 per core per detik, memory $0.00000222 per GiB per detik, GPU sesuai tabel di atas, dan volume storage $0.09 per GiB per bulan (1 TiB free). Untuk startup AI di Indonesia yang sering stuck di antrian GPU shared atau tagihan AWS yang tidak transparan, model pricing Modal sangat membantu--kamu hanya bayar saat kode benar-benar jalan, tanpa idle cost untuk VM yang nyala 24/7. Tidak ada self-host option sama sekali, jadi data dan model lewat cloud Modal (data center AWS, GCP, Azure di belakang layar).",
+      "Untuk pengguna dan tim di Indonesia, profil paling ideal untuk Modal adalah: pertama, ML engineer dan data scientist yang ingin prototipe model LLM, image generation, atau speech recognition tanpa setup infrastruktur--cukup tulis kode Python dan deploy; kedua, startup AI tahap awal yang perlu GPU on-demand untuk training atau inference tanpa kontrak AWS satu tahun; ketiga, tim backend engineer yang butuh menjalankan batch jobs (scraping, batch inference, scheduled tasks) di GPU tanpa maintain server; keempat, freelancer dan konsultan yang melayani banyak klien dan perlu deploy demo AI dalam hitungan jam, bukan hari. Catatan penting: untuk use case dengan data sangat sensitif (rekening, rekam medis, data pemerintah), perlu pertimbangan serius karena data lewat cloud Modal; untuk workflow AI generik, posisi Modal sulit disaingi. Kompetitor langsung yang perlu dipertimbangkan: AWS SageMaker (lebih enterprise, lebih mahal, lebih kompleks), Replicate (hosted inference API tanpa setup, tapi harga per-prediksi lebih mahal untuk volume tinggi), RunPod (VM-based lebih murah tapi setup manual), Together AI (AI-focused, ekosistem lebih sempit), dan Hugging Face Inference Endpoints (cocok untuk model HF, ekosistem lebih sempit). Saran editorial: mulai dari tier Starter gratis, deploy 2-3 prototipe model untuk benchmarking, monitor konsumsi di bulan pertama, baru pertimbangkan upgrade ke Team $250 ketika workload sudah stabil--dan selalu pasang budget alert supaya tidak ada tagihan tak terduga.",
+    ],
+    link: "https://modal.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-12",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
