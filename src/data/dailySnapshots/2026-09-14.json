@@ -1,0 +1,159 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-14T06:48:57.152Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "pacifio/atlas",
+      "owner": "pacifio",
+      "repo": "atlas",
+      "description": "Source control for agents",
+      "githubUrl": "https://github.com/pacifio/atlas",
+      "trendshiftUrl": "https://trendshift.io/repositories/56020",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-14T16:48:52Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "ever-co/ever-gauzy",
+      "owner": "ever-co",
+      "repo": "ever-gauzy",
+      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
+      "githubUrl": "https://github.com/ever-co/ever-gauzy",
+      "trendshiftUrl": "https://trendshift.io/repositories/1775",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2019-06-02T09:47:13Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "NationalSecurityAgency/ghidra",
+      "owner": "NationalSecurityAgency",
+      "repo": "ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
+      "trendshiftUrl": "https://trendshift.io/repositories/1740",
+      "language": "Java",
+      "topics": [
+        "Static analysis"
+      ],
+      "dateCreated": "2019-03-01T03:27:48Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "JustVugg/colibri",
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "githubUrl": "https://github.com/JustVugg/colibri",
+      "trendshiftUrl": "https://trendshift.io/repositories/73945",
+      "language": "C",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-07-01T12:27:49Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "alibaba/open-code-review",
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "githubUrl": "https://github.com/alibaba/open-code-review",
+      "trendshiftUrl": "https://trendshift.io/repositories/41087",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-18T02:16:36Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-04-09T21:40:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "tonhowtf/omniget",
+      "owner": "tonhowtf",
+      "repo": "omniget",
+      "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
+      "githubUrl": "https://github.com/tonhowtf/omniget",
+      "trendshiftUrl": "https://trendshift.io/repositories/25924",
+      "language": "Rust",
+      "topics": [
+        "Web scraping",
+        "File management"
+      ],
+      "dateCreated": "2026-02-11T22:44:56Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Nicolepcx/ai-agents-the-definitive-guide",
+      "owner": "Nicolepcx",
+      "repo": "ai-agents-the-definitive-guide",
+      "description": "Repo for AI Agents The Definitive Guide",
+      "githubUrl": "https://github.com/Nicolepcx/ai-agents-the-definitive-guide",
+      "trendshiftUrl": "https://trendshift.io/repositories/23054",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-08-22T14:53:40Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "bojieli/ai-agent-book",
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "githubUrl": "https://github.com/bojieli/ai-agent-book",
+      "trendshiftUrl": "https://trendshift.io/repositories/83370",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2025-09-09T02:41:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage",
+      "trendshiftUrl": "https://trendshift.io/repositories/24682",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-29T15:23:22Z"
+    }
+  ]
+}
