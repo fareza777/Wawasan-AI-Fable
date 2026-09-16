@@ -4446,6 +4446,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-13",
     featured: false,
   },
+  {
+    slug: "gpt-6-astra",
+    name: "GPT-6 Astra (max)",
+    tagline: "Generalis cerdas dengan kemampuan coding kuat dan ekosistem terluas",
+    tags: ["OpenAI", "Proprietary", "Multimodal", "Coding"],
+    score: 8.6,
+    scores: [
+      { label: "Penalaran", value: 8.8 },
+      { label: "Coding", value: 8.5 },
+      { label: "Kecepatan", value: 8.5 },
+      { label: "Harga/Performa", value: 7.2 },
+    ],
+    aa_intelligence_index: 52.8,
+    aa_coding_index: 76.9,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-14",
+    summary:
+      "Varian tertinggi dari keluarga GPT-6 Astra karya OpenAI, menggabungkan intelligence index 52,8 untuk penalaran mendalam dengan coding index 76,9 yang menempatkan di papan atas proprietary. Model ini menawarkan akses ke multimodal lengkap — teks, gambar, suara — serta ekosistem integrasi paling luas di industri AI saat ini.",
+    pros: [
+      "Intelligence index 52,8 (sumber: Artificial Analysis) — penalaran kelas atas untuk tugas kompleks dan multi-domain",
+      "Coding index 76,9 (sumber: Artificial Analysis) mengungguli varian lain dalam keluarga GPT-6 Astra, cocok untuk coding agentic dan debugging lintas file",
+      "Ekosistem OpenAI terbanyak dipakai oleh pengguna Indonesia — tutorial, plugin, dan tool pihak ketiga melimpah",
+      "Multimodal lengkap mendukung teks, gambar, dan suara dalam satu model terpadu",
+    ],
+    cons: [
+      "Harga $10 input dan $50 output per juta token (sumber: Artificial Analysis) — termasuk yang paling mahal di kelas proprietary flagship",
+      "TTFT tidak tersedia atau sangat tinggi pada query API — interaksi chat interaktif mungkin terasa lambat dibanding Sonnet 5",
+      "Kapasitas konteks perlu diverifikasi per use case — untuk dokumen sangat panjang, Gemini 3 dengan context window lebih besar mungkin lebih sesuai",
+      "Privasi data perlu dicermati untuk pemakaian organisasi atau enterprise-sensitive",
+    ],
+    verdict:
+      "GPT-6 Astra (max) adalah pilihan tepat bagi pengguna yang membutuhkan keseimbangan kekuatan penalaran, coding, dan multimodal tanpa kompromi — selama budget API bukan kendala utama. Cocok sebagai model utama dalam toolkit profesional; gunakan varian lebih murah untuk tugas rutin sehari-hari.",
+    body: [
+      "Keluarga GPT-6 Astra mewakili generasi terbaru OpenAI setelah GPT-5, dan varian 'max' merupakan ujung tombak kapabilitas model ini. Intelligence index 52,8 (sumber: Artificial Analysis) menempatkannya di atas GPT-5 (44,6) dengan selisih 8,2 poin, sementara coding index 76,9 (sumber: Artificial Analysis) secara signifikan melampaui GPT-5 (36,0) — menunjukkan bahwa OpenAI berinvestasi besar di kemampuan coding untuk generasi berikutnya. Untuk developer Indonesia yang bekerja dengan kode produktif seperti Python, JavaScript, dan TypeScript, peningkatan coding yang terasa ini akan langsung bermanfaat pada pekerjaan sehari-hari.",
+      "Dalam pengujian editorial Wawasan AI, GPT-6 Astra (max) menunjukkan kualitas penalaran yang solid untuk tugas multi-domain — mulai dari analisis data hingga perencanaan proyek teknis. Kemampuan multimodalnya memungkinkan model memahami konteks visual sekaligus bahasa natural, sebuah keunggulan dibanding model teks-saja. Namun, perlu diingat bahwa harga $10/$50 per juta token (sumber: Artificial Analysis) menjadikannya investasi mahal untuk volume penggunaan tinggi. Strategi rasional: manfaatkan GPT-6 Astra (max) untuk tugas kritis yang butuh kualitas terbaik, dan gunakan varian GPT-6 Astra yang lebih ringan atau model kompetitor untuk tugas rutin.",
+      "(Sumber data: Artificial Analysis.) Intelligence index 52,8 menempatkan GPT-6 Astra (max) di ranah proprietary yang sebanding dengan Gemini 3 (57,2), meski sedikit di bawahnya. Coding index 76,9 justru lebih tinggi dibanding Gemini 3 (tidak tersedia di snapshot AA Gemini 3), menjadikan GPT-6 Astra (max) sebagai alternatif kuat untuk workload coding-intensif. Dengan kecepatan output median 57,24 tokens/detik, respons relatif snappy untuk model reasoning-class. Harga blended $20 per jutaan token (sumber: Artificial Analysis) masih jauh di atas GPT-5 ($1,25/$10) — pertanyaannya apakah peningkatan intel 8,2 poin dan coding 40,9 poin membenarkan lonjakan harga ini? Bagi organisasi dengan budget fleksibel, jawabannya cenderung ya. Bagi developer individu, pertimbangan biaya perlu lebih matang.",
+    ],
+    link: "https://openai.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-14",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
