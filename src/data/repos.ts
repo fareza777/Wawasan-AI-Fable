@@ -4921,9 +4921,61 @@ export const repos: Review[] = [
       date: "2026-09-12",
       updatedAt: "2026-09-12",
       featured: false,
+      },
+      {
+        slug: "spec-kit",
+        name: "Spec Kit",
+        tagline: "Toolkit GitHub untuk Spec-Driven Development bersama AI coding agent",
+        tags: ["Spec-Driven Development", "AI Agent", "Developer Tool", "Open Source"],
+        score: 8.8,
+        scores: [
+          { label: "Kemudahan Setup", value: 8.5 },
+          { label: "Fitur & Ekstensibilitas", value: 9.2 },
+          { label: "Komunitas & Momentum", value: 9.0 },
+          { label: "Dokumentasi", value: 9.5 },
+          { label: "Kesiapan Produksi", value: 8.3 },
+        ],
+        summary:
+          "Spec Kit dari GitHub adalah toolkit open-source yang memperkenalkan Spec-Driven Development — proses terstruktur di mana requirement, rencana teknis, dan implementasi ditulis sebagai dokumen spesifikasi sebelum kode mulai ditulis. Toolkit ini dirancang khusus untuk dipakai bersama AI coding agent seperti GitHub Copilot CLI, Claude Code, atau Cursor, dan menyediakan tiga skenario utama: membangun fitur baru, memperbaiki bug, dan mengevaluasi ide bisnis.",
+        highlights: [
+          "Tiga proses independen dalam satu toolkit: Spec-Driven Development (inti), Bug Fixing (ekstensi opsional), dan Idea Assessment (ekstensi opsional)",
+          "SDD alur enam langkah: constitution → specify → plan → tasks → implement → converge, dengan konvergensi diulang sampai agent melaporkan hasil converged",
+          "Bug fixing terstruktur assess → fix → test: diagnosis terpisah dari perbaikan, verifikasi eksplisit di output `.specify/bugs/<slug>/`, verdict verified/partial/failed",
+          "Idea assessment intake → research → define → shape → decide: gather evidence sebelum komitmen investasi, keputusan go / needs-clarification / kill berbasis dokumentasi Markdown",
+          "Extension system modular: instalasi extension opsional lewat `specify extension add bug` atau `specify extension add assess`, tidak mengganggu SDD inti",
+          "Integrasi multi-agent: bekerja dengan GitHub Copilot CLI (default), Claude Code, Cursor, Gemini CLI, OpenCode, dan agent lainnya via slash commands `/speckit-*` di chat agent",
+          "Instalasi ultra-ringan lewat uv tool install hanya butuh Python 3.11+, tanpa virtual environment kompleks atau konfigurasi backend tambahan",
+          "Artefak hidup di `.specify/`: semua spec, plan, tasks, dan laporan bug disimpan sebagai Markdown yang bisa di-version control dan direview manusia",
+          "Lisensi MIT dengan homepage docs di GitHub Pages — komunitas dan organisasi bisa fork, adaptasi, dan gunakan secara komersial tanpa batasan",
+          "Dokumentasi sangat lengkap: CLI reference, filosofi SDD, walkthrough video, project history, dan panduan customisasi menjadi salah satu resource terbaik di kategori developer tool",
+        ],
+        pros: [
+          "Memaksa kejelasan requirement sebelum masuk ke implikasi teknis — pola yang terlalu sering diabaikan oleh developer yang terburu-buru menulis kode, dan justru sering jadi penyebab refactor besar di tengah jalan",
+          "Tiga skenario (SDD, bug fixing, idea assessment) berdiri sendiri tanpa dependency — tim bisa pakai bagian yang relevan saja tanpa menginstal seluruh toolkit",
+          "Asli GitHub bukan indie project — credibility-nya jauh lebih tinggi dibanding framework serupa dari startup atau individu, karena ia mewakili cara perusahaan platform terbesar mendefinisikan standar pengembangan software berskala ribuan engineer",
+          "Dokumentasi terbaik di kelasnya — ada CLI reference, filosofi lengkap, video overview, tutorial step-by-step, sehingga onboarding developer baru bisa selesai dalam hitungan jam, bukan hari",
+        ],
+        cons: [
+          "Masih bergantung pada kualitas model LLM di balik agent yang memproses spec — jika Copilot, Claude, atau Gemini memiliki bias dalam memahami kebutuhan bisnis, spec yang dihasilkan bisa mengarahkan implementasi ke arah yang salah sejak awal",
+          "Ekosistem extension dan preset komunitas masih relatif baru dibandingkan Superpowers atau framework skill yang sudah ada lebih dari dua tahun, sehingga template industri Indonesia (fintech, healthtech, e-commerce) belum tersedia luas",
+          "Workflow SDD dengan enam tahap bisa terasa berat untuk proyek prototipe kecil — solo developer yang ingin bangun MVP dalam sehari mungkin merasa constraint specification menghambat eksperimen cepat",
+        ],
+        verdict:
+          "Spec Kit membawa pendekatan yang seharusnya sudah menjadi praktik standar: tulis apa dan mengapa sebelum menentukan bagaimana. Bagi developer dan tim engineering Indonesia yang mulai menggunakan AI coding agent secara intensif — terutama Copilot CLI dan Claude Code — toolkit ini layak dipasang untuk membuat kerja sama dengan agen lebih terarah dan berkualitas.",
+        body: [
+          "GitHub mengeluarkan Spec Kit sebagai jawaban terhadap masalah yang semakin terasa di era AI coding agent: ketika developer bisa menghasilkan kode berapapun perintah, seringkali mereka lupa bahwa kode yang baik dimulai dari kejelasan requirement, bukan dari kemampuan sintaks yang hebat. Toolkit ini memperkenalkan Spec-Driven Development — metodologi di mana setiap perubahan feature wajib melalui serangkaian artefak terdokumentasi: constitution (prinsip kualitas), specification (apa yang dibangun dan kenapa), technical plan (bagaimana strukturnya), task breakdown (pecahan aksi), implementasi (penulisan kode), dan konvergensi (verifikasi). Semua artefak ini hidup sebagai file Markdown di bawah direktori .specify/, bisa di-version-control bersama source code, dan dibaca ulang kapan pun diperlukan. Dengan 137.000+ bintang GitHub dalam waktu relatif singkat, Spec Kit menunjukkan adanya permintaan nyata akan struktur yang selama ini kosong di ekosistem developer tool open-source.",
+          "Dalam pengujian editorial Wawasan AI, hal yang paling langsung terasa dari Spec Kit adalah disiplin proses yang dibawanya. Alih-alih melempar instruksi ke agent dan berharap hasilnya bagus, pengguna diajak mendefinisikan scope, tujuan, dan batasan terlebih dahulu melalui command seperti /speckit-specify. Dari situ, agent membantu menyusun specification yang cukup detail untuk ditinjau, kemudian menerjemahkannya ke implementation plan yang bisa diikuti engineer junior yang antusias tapi belum punya taste dan judgement — sebuah analogi yang relevan bagi banyak tim Indonesia yang sedang bertransformasi digital dan kekurangan senior developer yang membimbing junior. Proses implementasi diulang sampai converge — agent melaporkan bahwa spec telah dipenuhi — sehingga developer tidak perlu menebak apakah kode yang dihasilkan sesuai dengan requirement yang sudah disepakati. Untuk bug fixing, pendekatan yang sama diterapkan: diagnostik dipisahkan dari perbaikan, dan verifikasi dilakukan secara eksplisit dengan report markdown yang bisa direview. Pola assesse-fix-test ini mengurangi risiko agent menerapkan patch yang terlihat benar tapi tidak menyentuh akar masalah.",
+          "Dari sisi arsitektur, Spec Kit sengaja ringan. Tidak ada database, tidak ada API server, tidak perlu Docker compose — cukup Python 3.11+, uv package manager, dan satu perintah terminal. Instalasi lewat uv tool install specify-cli menyelesaikan setup dalam hitungan detik, dan inisialisasi project lewat specify init my-project --integration copilot men-generate skeleton proyek plus integrasi agent yang siap digunakan. Extension system memungkinkan penambahan modul bug fixing dan idea assessment setelah SDD inti terpasang, tanpa mengubah workflow yang sudah berjalan. Artefak spesifik (spec, plan, tasks, bug reports, assessments) tinggal di .specify/ folder dan bisa direkonsiliasi dengan git history — fitur yang penting bagi tim Indonesia yang membutuhkan audit trail perkembangan proyek untuk compliance atau knowledge transfer. Lisensi MIT memberikan kebebasan penuh untuk fork dan adaptasi, sementara homepage documentation yang lengkap menjadikannya salah satu developer tool paling mudah dinavigasi.",
+          "Untuk konteks Indonesia, Spec Kit paling relevan untuk empat profil pengguna. Pertama, solo developer dan tech lead yang sudah mencoba AI coding agent dan frustrasi melihat output yang kadang brilliance tapi kadang hallucination — Spec Kit memberi kerangka kerja untuk memastikan agent fokus pada problem yang benar sebelum mengeksekusi solusi. Kedua, tim engineering startup dan korporasi yang ingin standar mutu development tanpa harus membeli SaaS mahal — Spec Kit open-source, bisa self-host, artefaknya tinggal di repo internal perusahaan, dan metodologinya tidak bergantung pada vendor tertentu. Ketiga, konsultan dan software house yang menangani klien ber-stack berbeda-beda — karena spec-driven development bersifat universal lintas bahasa pemrograman dan framework, konsultan bisa reusespec structure dari satu proyek untuk klien lain, hanya menyesuaikan content per domain bisnis. Keempat, edukasi bootcamp dan workshop coding yang ingin mengajarkan praktik modern tentang pentingnya menulis spec sebelum coding — ada video overview dan walkthrough yang cukup jelas untuk dijadikan materi ajar. Dua catatan penting: pertama, quality of spec tetap mengikuti quality model LLM di balik agent — Spec Kit adalah enabler bukan guarantor; kedua, komunitas extension dan community preset masih berkembang, sehingga jumlah adapter industri lokal (e-commerce, fintech, edutech, logistics) belum sebanyak yang dibutuhkan. Dengan dua catatan ini, Spec Kit merupakan toolkit pragmatis untuk paruh kedua 2026, khususnya bagi developer Indonesia yang ingin meningkatkan disiplin development alongside adoption AI coding agent.",
+        ],
+        link: "https://github.com/github/spec-kit",
+        linkLabel: "Lihat di GitHub",
+        date: "2026-09-17",
+        updatedAt: "2026-09-17",
+        featured: false,
     },
-    ];
+];
 
-    export function getRepo(slug: string) {
+export function getRepo(slug: string) {
   return repos.find((r) => r.slug === slug);
 }
