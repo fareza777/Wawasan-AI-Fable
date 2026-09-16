@@ -2567,6 +2567,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Multi-format ingest (PDF, Office, EPUB, gambar, web clip), caption vision LLM untuk gambar, Deep Research dengan Tavily/SerpAPI, Rust backend chat agent dengan tool-use, dan Chrome Web Clipper — relevan untuk peneliti, jurnalis, dan power user Indonesia yang ingin 'second brain' lokal-first tanpa lock-in SaaS.",
     ],
   },
+  "tonhowtf/omniget": {
+    description:
+      "App desktop gratis open-source (Rust + Tauri) untuk Windows/macOS/Linux — paste link ke 1.800+ situs (Udemy, YouTube, TikTok, Instagram, X, Reddit, Telegram), unduh semua, lalu transkrip, konversi, dan baca hasil di satu tempat.",
+    highlights: [
+      "Toolbox lengkap 150+ alat dalam 25 kategori: downloader video, audio, kursus online, torrent magnet, subtitle extractor, Whisper transcription (TTS/STT), epub/PDF reader, spaced-repetition flashcard, music player, sampai tools CTF dan PDF repair — bukan sekadar downloader, tapi 'all-in-one media toolkit'.",
+      "Powered yt-dlp engine dengan GUI Tauri yang mulus: paste URL, klik, tunggu — tidak perlu terminal atau command-line experience; proses download tampil real-time dengan progress bar dan notifikasi, cocok untuk pengguna awam yang sering butuh download konten spesifik.",
+      "Memasukkan MCP server resmi sehingga agen AI (Claude Code, Codex) bisa trigger download melalui prompt natural language — misalnya minta agen mengunduh materi kursus untuk dipelajari, hasilnya langsung tersimpan di folder lokal yang bisa dibaca agen.",
+      "GPL-3.0, total downloads GitHub menunjukkan popularitas tinggi, komunitas aktif lewat Discord dan Weblate untuk terjemahan multi-bahasa (termasuk Bahasa Indonesia) — solusi alternatif tanpa biaya subscription atau iklan untuk mengarsipkan konten edukasi dan media favorit.",
+    ],
+  },
+  "agentrhq/webcmd": {
+    description:
+      "Infrastruktur browser self-learning untuk AI agent — belajar pola navigasi website, simpan sebagai memory lokal, dan turunkan biaya token agen hingga 90% karena agen tidak lagi 'menemukan kembali' setiap kali browsing.",
+    highlights: [
+      "Layer memory otonom yang belajar saat agen menggunakan website: sitemap, state halaman, elemen interaktif, API internal, bahkan pitfall yang sudah dicoba — bukan skrip kaku, melainkan 'ingatan kontekstual' yang makin baik seiring waktu.",
+      "Dua mode kerja: live browser control saat belum familiar dengan situs, lalu auto-transisi ke sitemap memory saat situs dikenal — workflow seperti manusia yang belajar berulang kali mengunjungi situs yang sama tanpa mulai dari nol.",
+      "Pasang sebagai skill untuk Claude Code, Codex, OpenClaw, Gemini CLI, dan 10+ platform lainnya lewat `webcmd skills add` — desainnya mengikuti standar Agent Skills universal sehingga bisa dipakai lintas harness tanpa konfigurasi tambahan.",
+      "TypeScript open source (Apache 2.0) via NPM (`@agentrhq/webcmd`), relevan untuk developer dan tim yang lelah membayar token mahal karena coding agent harus selalu mengeksplorasi website baru dari awal pada setiap task.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
