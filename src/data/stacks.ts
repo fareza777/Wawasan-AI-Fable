@@ -3893,6 +3893,46 @@ export const stacks: Review[] = [
     date: "2026-09-12",
     featured: false,
   },
+  {
+    slug: "pika-2",
+    name: "Pika 2.0",
+    tagline: "Generator video Pika Labs dengan kontrol scene dan konsistensi karakter",
+    tags: ["Pika Labs", "Freemium", "Video Gen", "Social Content"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 7.2 },
+    ],
+    summary:
+      "Pika 2.0 membawa pendekatan 'scene ingredient' ke generasi video AI — pengguna merakit shot dari bagian-bagian terkontrol alih-alih mengandalkan satu prompt panjang. Dengan fitur kontrol karakter antar-shot dan efek audio-reactive, Pika menargetkan kreator yang butuh output konsisten untuk konten sosial dan narasi pendek, meski kualitas frame-rate tinggi dan biaya kredit masih jadi pertimbangan.",
+    pros: [
+      "Scene ingredient memungkinkan perancangan shot per shot dengan kontrol kamera, lighting, dan komposisi yang lebih presisi daripada text-to-video murni",
+      "Konsistensi karakter lintas shot cukup baik untuk project naratif pendek; karakter yang di-upload sebagai referensi tetap dikenali hingga beberapa frame berbeda",
+      "Audio-reactive generation menghasilkan gerakan visual yang sinkron dengan beat musik, sangat berguna untuk konten TikTok, Reels, dan YouTube Shorts",
+      "Antarmuka web langsung bisa dipakai tanpa instalasi; ekspor 720p/1080p langsung download, tidak perlu render lokal",
+    ],
+    cons: [
+      "Durasi per shot terbatas (biasanya 3-5 detik); video panjang butuh stitching manual atau tool tambahan, belum ada mode cinematic otomatis",
+      "Harga per-kredit cepat habis untuk resolusi 1080p; tier gratis hanya memberi kredit terbatas sehingga produksi rutin terasa mahal",
+      "Masih kesulitan menjaga physics realistik di gerakan kompleks seperti interaksi objek, crowd scene, atau dialog dua karakter",
+      "Komunitas plugin dan integrasi API lebih sempit dibanding Descript atau Runway, sehingga workflow editorial lanjutan masih perlu tool terpisah",
+    ],
+    verdict:
+      "Pika 2.0 adalah langkah nyata dari generative video one-prompt menuju produksi terstruktur, cocok untuk kreator yang ingin konsistensi karakter dan kecepatan produksi sosial media. Catatan utamanya: durasi per-shot pendek dan harga kredit membuat tool ini paling masuk akal untuk project pendek ber-volume sedang, bukan untuk film atau konten panjang.",
+    body: [
+      "Pika 2.0 mengubah cara pengguna membuat video dari 'ketik semua deskripsi sekaligus' menjadi rakitan komponen yang disebut scene ingredient. Alih-alih menuliskan prompt panjang yang mencoba mendeskripsikan seluruh adegan, pengguna memilih elemen-elemen individual — subjek, latar, sudut kamera, pencahayaan, gerakan — lalu menyusunnya menjadi sequence shot demi shot. Pendekatan ini terdengar teknis, tapi dampaknya nyata: kontrol framing lebih presisi, perubahan pada satu parameter tidak mengganggu unsur lain, dan hasil akhir jauh lebih konsisten secara visual. Untuk platform seperti TikTok, Instagram Reels, dan YouTube Shorts yang mengutamakan ritme visual dan hook kuat di tiga detik pertama, pola ini sesuai karena creator bisa merancang setiap shot punya tujuan spesifik — bukan berharap prompt monolitik menghasilkan apa yang diinginkan.",
+      "Fitur standout lain adalah konsistensi karakter antar-shot dan audio-reactive generation. Pada versi sebelumnya, karakter yang digenerate berbeda di setiap shot — mata berubah, pakaian bergeser, proporsi tubuh tidak stabil. Di 2.0, referensi gambar wajah atau outfit bisa diunggah dan direferensikan di beberapa shot berikutnya, memberikan ilusi continuity yang selama ini sulit dicapai oleh generative video. Audio-reactive generation memetakan beat musik ke gerakan visual, sehingga transisi, zoom, dan efek mengikuti irama soundtrack secara otomatis. Ini sangat membantu kreator konten musik dan dance yang sebelumnya harus menyunting manualmente untuk sinkronisasi, namun juga berarti tool ini dirancang untuk tipe konten tertentu dan tidak universal untuk semua genre video.",
+      "Paket harga Pika disusun berdasarkan kredit yang digunakan per generate. Tier Gratis menyediakan sejumlah kredit bulanan terbatas (cukup untuk beberapa proyek pendek) dengan watermark dan resolusi maksimal 720p. Paket Pro sekitar USD 8-10 per bulan meningkatkan kuota kredit, menghilangkan watermark, membuka akses ke model terbaru, dan memungkinkan ekspor 1080p. Untuk skala produksi yang lebih besar, ada paket Scale dengan lebih banyak credits per bulan dan prioritas rendering. Dengan kurs acuan Rp 16.000 per dolar, tier Pro setara sekitar Rp 128 ribu hingga Rp 160 ribu per bulan — angka yang wajar untuk profesional konten yang sudah berpanitia produksi video rutin, tapi terasa berat untuk creator pemula yang baru menerbitkan sekali sebulan. Pola konsumsi kredit Pika juga berbeda dengan subscription model tradisional: kamu membayar untuk setiap kali generate berhasil, bukan akses penuh tanpa batas.",
+      "Untuk kreator dan tim produksi di Indonesia, Pika 2.0 paling relevan dalam empat skenario. Pertama, content agency yang memproduksi video iklan pendek untuk e-commerce marketplace seperti Tokopedia atau Shopee, di mana konsistensi brand character penting dan durasi 10-30 detik sudah cukup. Kedua, YouTuber edukatif yang ingin visual pendukung untuk narasi tanpa sewa animator atau shoot footage tambahan — generate B-roll dari konsep teks lebih cepat daripada mencari stock footage premium. Ketiga, komunitas game indie dan fan-art yang ingin buat trailer pendek karakter mereka; audio-reactive feature sangat cocok untuk showcase gameplay atau fan animation. Keempat, tim marketing internal perusahaan yang perlu mockup video campaign cepat sebelum produksi resmi. Kompetitor yang perlu dipertimbangkan: Runway Gen-3 (lebih matang, ekosistem lebih luas, tapi harga lebih tinggi), Luma Dream Machine (cepat dan murah untuk eksperimen, tapi kurang kontrol scene-level), Kling (kualitas visual tinggi, tapi akses dan pricing kurang transparan untuk pengguna internasional). Saran editorial: mulai dari tier Gratis, test satu seri 5 shot dengan karakter referensi yang sama, hitung berapa kredit habis, baru pertimbankan upgrade jika volume produksi rutin melebihi kuotanya.",
+    ],
+    link: "https://pika.art",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-17",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
