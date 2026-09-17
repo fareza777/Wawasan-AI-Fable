@@ -1,48 +1,13 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "17 September 2026",
-  "period": {
-    "date": "2026-09-17",
-    "label": "17 September 2026",
-    "path": "/repo/daily/2026/09/17"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-17T00:06:48.489Z",
+  "fetchedAt": "2026-09-17T06:29:11.382Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "hypit-ai/hypit",
-      "owner": "hypit-ai",
-      "repo": "hypit",
-      "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-      "githubUrl": "https://github.com/hypit-ai/hypit",
-      "trendshiftUrl": "https://trendshift.io/repositories/229030",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI video generation",
-        "Video editing"
-      ],
-      "dateCreated": "2026-07-29T18:49:19Z"
-    },
-    {
-      "rank": 2,
-      "fullName": "alibaba/open-code-review",
-      "owner": "alibaba",
-      "repo": "open-code-review",
-      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "githubUrl": "https://github.com/alibaba/open-code-review",
-      "trendshiftUrl": "https://trendshift.io/repositories/41087",
-      "language": "Go",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-05-18T02:16:36Z"
-    },
-    {
-      "rank": 3,
       "fullName": "cloudflare/security-audit-skill",
       "owner": "cloudflare",
       "repo": "security-audit-skill",
@@ -58,7 +23,97 @@
       "dateCreated": "2026-06-18T14:08:44Z"
     },
     {
+      "rank": 2,
+      "fullName": "sapientinc/PRAXIST",
+      "owner": "sapientinc",
+      "repo": "PRAXIST",
+      "description": "Autonomous research system for measurable, computer-executable research.",
+      "githubUrl": "https://github.com/sapientinc/PRAXIST",
+      "trendshiftUrl": "https://trendshift.io/repositories/191537",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-27T14:20:58Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "latent-spaces/brag",
+      "owner": "latent-spaces",
+      "repo": "brag",
+      "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
+      "githubUrl": "https://github.com/latent-spaces/brag",
+      "trendshiftUrl": "https://trendshift.io/repositories/56942",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2026-06-16T19:36:36Z"
+    },
+    {
       "rank": 4,
+      "fullName": "hypit-ai/hypit",
+      "owner": "hypit-ai",
+      "repo": "hypit",
+      "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+      "githubUrl": "https://github.com/hypit-ai/hypit",
+      "trendshiftUrl": "https://trendshift.io/repositories/229030",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Video editing"
+      ],
+      "dateCreated": "2026-07-29T18:49:19Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "alibaba/open-code-review",
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "githubUrl": "https://github.com/alibaba/open-code-review",
+      "trendshiftUrl": "https://trendshift.io/repositories/41087",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-18T02:16:36Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Tencent/BrowserSkill",
+      "owner": "Tencent",
+      "repo": "BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "githubUrl": "https://github.com/Tencent/BrowserSkill",
+      "trendshiftUrl": "https://trendshift.io/repositories/79254",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T07:24:40Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "deeplethe/utopia",
+      "owner": "deeplethe",
+      "repo": "utopia",
+      "description": "Local-first, agent-assisted document-to-ontology workbench",
+      "githubUrl": "https://github.com/deeplethe/utopia",
+      "trendshiftUrl": "https://trendshift.io/repositories/159739",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "Document processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-08-07T19:33:17Z"
+    },
+    {
+      "rank": 8,
       "fullName": "eternity4719/HowToLiveBetter",
       "owner": "eternity4719",
       "repo": "HowToLiveBetter",
@@ -72,7 +127,7 @@
       "dateCreated": "2026-09-07T01:53:36Z"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "fullName": "Tencent/WeKnora",
       "owner": "Tencent",
       "repo": "WeKnora",
@@ -87,21 +142,7 @@
       "dateCreated": "2025-07-22T08:01:23Z"
     },
     {
-      "rank": 6,
-      "fullName": "NationalSecurityAgency/ghidra",
-      "owner": "NationalSecurityAgency",
-      "repo": "ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
-      "trendshiftUrl": "https://trendshift.io/repositories/1740",
-      "language": "Java",
-      "topics": [
-        "Static analysis"
-      ],
-      "dateCreated": "2019-03-01T03:27:48Z"
-    },
-    {
-      "rank": 7,
+      "rank": 10,
       "fullName": "ai-sucks-butt/ai-sucks-butt",
       "owner": "ai-sucks-butt",
       "repo": "ai-sucks-butt",
@@ -112,48 +153,6 @@
         "Curated list"
       ],
       "dateCreated": "2026-09-14T04:02:58Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "arnegiacomo/fugleramme",
-      "owner": "arnegiacomo",
-      "repo": "fugleramme",
-      "description": "E-ink bird frame for Raspberry Pi - real-time bird detection by audio using BirdNET-Go",
-      "githubUrl": "https://github.com/arnegiacomo/fugleramme",
-      "trendshiftUrl": "https://trendshift.io/repositories/204367",
-      "language": "Python",
-      "topics": [
-        "Audio processing"
-      ],
-      "dateCreated": "2026-07-08T19:01:49Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "alphaXiv/OpenResearch",
-      "owner": "alphaXiv",
-      "repo": "OpenResearch",
-      "description": "",
-      "githubUrl": "https://github.com/alphaXiv/OpenResearch",
-      "trendshiftUrl": "https://trendshift.io/repositories/89363",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-06-07T01:51:39Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "Tencent/BrowserSkill",
-      "owner": "Tencent",
-      "repo": "BrowserSkill",
-      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
-      "githubUrl": "https://github.com/Tencent/BrowserSkill",
-      "trendshiftUrl": "https://trendshift.io/repositories/79254",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-06-22T07:24:40Z"
     }
   ]
 }
