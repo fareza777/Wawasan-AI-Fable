@@ -4974,6 +4974,58 @@ export const repos: Review[] = [
         updatedAt: "2026-09-17",
         featured: false,
     },
+    {
+      slug: "open-code-review",
+      name: "OpenCodeReview",
+      tagline: "Code review AI dari Alibaba dengan presisi tinggi dan konsumsi token minimal",
+      tags: ["Code Review", "AI Agent", "CLI Tool", "Go"],
+      score: 8.8,
+      scores: [
+        { label: "Kemudahan Setup", value: 8.0 },
+        { label: "Fitur & Ekstensibilitas", value: 9.0 },
+        { label: "Komunitas & Momentum", value: 9.2 },
+        { label: "Dokumentasi", value: 8.5 },
+        { label: "Kesiapan Produksi", value: 8.5 },
+      ],
+      summary:
+        "OpenCodeReview dari Alibaba Group adalah tool CLI code review bertenaga AI yang lahir dari asisten internal perusahaan untuk puluhan ribu developer — dalam dua tahun melayani jutaan bug kode teridentifikasi sebelum di-incubate menjadi proyek open-source. Berbeda dari skill code review generik pada Claude Code atau Codex yang murni language-driven, OpenCodeReview memadukan deterministic engineering hard-constraint dengan agent dynamic decision-making, menghasilkan review line-level yang lebih presisi dengan konsumsi token sepersembilan dari agent umum.",
+      highlights: [
+        "Arsitektur hybrid deterministik dan agent: langkah kritis ditangani engine logika (bukan LLM) untuk menjamin konsistensi review",
+        "Smart file bundling mengelompokkan file terkait ke unit review tunggal dengan konteks terisolasi — strategi divide-and-conquer yang stabil di changeset besar",
+        "Fine-grained rule matching berbasis template engine mengunci fokus model per karakteristik file, menghilangkan noise informasi dari sumbernya",
+        "External positioning & reflection module secara sistematis meningkatkan akurasi penempatan baris dan konten komentar AI",
+        "Benchmark AACR-Bench: 50 repositori populer, 200 Pull Request nyata, 10 bahasa pemrograman — cross-validated 80+ engineer senior (1.505 ground-truth issues)",
+        "Konsumsi token ~1/9 dari agent general-purpose seperti Claude Code untuk kualitas review setara — F1 lebih tinggi, precision jauh melampaui",
+        "OCR scan mode untuk scanning seluruh file tanpa diff — berguna audit codebase asing atau direktori tanpa perubahan terdokumentasi",
+        "Integrasi multi-agent: Claude Code, Codex, Cursor, Kimi Code; distribusi via npm (@alibaba-group/open-code-review) atau API endpoint",
+        "Mendukung Windows, macOS, dan Linux — deployment fleksibel di workstation developer Indonesia",
+        "Lisensi Apache-2.0 dengan homepage resmi https://open-codereview.ai dan dokumentasi lengkap via DeepWiki",
+      ],
+      pros: [
+        "Token efficiency luar biasa (~1/9 dari agent umum) — sangat relevan bagi tim Indonesia yang menghitung setiap dollar API key",
+        "Presisi tinggi dengan fewer false alarms — recall sengaja dikorbankan demi quality-over-quantity yang lebih aman untuk production code",
+        "Battle-tested di skala industri Alibaba selama dua tahun — bukan prototype komunitas, tapi tool internal yang sudah melewati validasi rigor",
+        "Deterministic layer memberikan predictable behavior yang tidak dimiliki solution language-driven murni — cocok untuk tim yang butuh audit trail review konsisten",
+      ],
+      cons: [
+        "Belum mendukung integrasi semua coding agent populer — fokus utama masih Claude Code, Codex, Cursor, dan Kimi Code",
+        "Cakupan terbatas hanya code review, bukan full development lifecycle — tetap perlu tools terpisah untuk linting, testing, dan security analysis",
+        "Dependencies pada kualitas model LLM di balik konfigurasi endpoint — jika provider mengubah harga atau akses, efisiensi token bisa berubah drastis",
+      ],
+      verdict:
+        "Wajib dievaluasi oleh tim engineering Indonesia yang memprioritaskan presisi atas volume deteksi. Jika Anda lelah dengan false positive dari agent general-purpose dan butuh review line-level yang reliable untuk CI/CD pipeline, OpenCodeReview menawarkan trade-off arsitektur yang sudah terbukti di skala industri.",
+      body: [
+        "Di antara ratusan repo open-source AI yang bermunculan setiap tahun, jarang ada tool yang benar-benar lahir dari kebutuhan produksi internal raksasa teknologi lalu di-incubate menjadi community project setelah melalui validasi berskala masif. OpenCodeReview dari Alibaba Group adalah salah satunya: asisten code review AI internal perusahaan yang dalam dua tahun terakhir melayani puluhan ribu developer dan mengidentifikasi jutaan defect kode, kini tersedia sebagai CLI tool open-source. Anyone dapat mengonfigurasi model endpoint favorit dan mulai melakukan review langsung. Dengan 34.500+ bintang GitHub sejak peluncuran Mei 2026, repo ini menunjukkan adanya permintaan nyata akan pendekatan code review yang berbeda dari sekadar melempar diff ke agent chat dan berharap hasilnya memadai.",
+        "Dalam pengujian editorial Wawasan AI, hal yang paling menonjol dari OpenCodeReview adalah arsitektur hybrid-nya. Beda dengan skill code review generik pada Claude Code atau Codex yang mengandalkan prompt natural-language sepenuhnya dan rentan terhadap position drift (nomor baris tidak sesuai lokasi kode sebenarnya), incomplete coverage (agent melewatkan file karena changeset terlalu besar), serta fluktuasi kualitas akibat variasi kecil di prompt, OpenCodeReview membagi tanggung jawab secara eksplisit: deterministic engineering menangani langkah-langkah yang tidak boleh gagal (file selection, smart bundling, rule matching), sementara agent AI menangani pengambilan keputusan dinamis (konteks retrieval, analisis semantik kode). Hasilnya? Precision yang jauh lebih tinggi dengan ~1/9 konsumsi token dibanding agent umum, meskipun Recall sengaja dikompromikan — sebuah trade-off yang disengaja dan direfleksikan jelas dalam benchmark AACR-Bench mereka.",
+        "Yang menarik dari benchmark OpenCodeReview adalah metodologinya: 50 repositori populer, 200 real Pull Request, 10 programming languages, cross-validated oleh 80+ senior engineer dengan 1.505 annotated ground-truth issues. Data ini dipublikasikan di Hugging Face sebagai dataset AACR-Bench, sehingga reviewer independen bisa memverifikasi claim-nya sendiri. Dalam skenario praktik sehari-hari di Indonesia — khususnya startup fintech, platform e-commerce, atau software house enterprise yang harus mempertahankan standar tinggi di tengah tekanan release schedule — kemampuan OpenCodeReview untuk memberikan review konsisten tanpa false alarm berlebihan adalah nilai praktis yang langka. Fitur OCR scan-nya juga worth dicatat: ketika diminta untuk mengaudit codebase asing atau direktori yang tidak punya git diff, tool ini mampu melakukan full-file scan dengan hasil yang cukup terstruktur.",
+        "Untuk konteks Indonesia, OpenCodeReview paling relevan untuk tiga profil pengguna. Pertama, tim engineering enterprise dan perusahaan yang menggunakan CI/CD pipeline dan ingin otomasi code review yang presisi tanpa biaya overhead besar — OpenCodeReview bisa di-integrasikan sebagai stage dalam pipeline, menjalankan deterministic-engineering + AI review otomatis setiap PR masuk. Kedua, software house dan konsultan IT yang menangani banyak klien dengan repositori berbeda-beda — karena deterministik layer-nya, kualitas review tetap konsisten terlepas dari stack teknologi klien, tidak bergantung pada 'taste' spesifik model AI. Ketiga, developer solo dan tech lead yang ingin standar review profesional tanpa bergantung pada peer review manual yang sering tertunda — OpenCodeReview memberikan feedback line-level dalam hitungan menit, bukan jam. Dua catatan penting: pertama, recall yang lebih rendah berarti beberapa issue mungkin lolos tanpa terdeteksi — ini trade-off yang disengaja, bukan bug, jadi tim tetap perlu human review sebagai lapisan tambahan; kedua, OpenCodeReview hanya mencakup code review saja, tidak menggantikan tools testing, linting, atau security audit — gunakan sebagai bagian dari toolchain komprehensif, bukan silver bullet. Dengan memahami dua catatan itu, OpenCodeReview layak jadi evaluasi prioritas bagi tim Indonesia yang serius soal kualitas kode di era AI coding agent.",
+      ],
+      link: "https://github.com/alibaba/open-code-review",
+      linkLabel: "Lihat di GitHub",
+      date: "2026-09-18",
+      updatedAt: "2026-09-18",
+      featured: false,
+    },
 ];
 
 export function getRepo(slug: string) {
