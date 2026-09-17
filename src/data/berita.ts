@@ -4516,6 +4516,52 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "deepseek-merilis-41-flash-flash-748-miliar-parameter-yang-kini-bisa-melihat",
+    title:
+      "DeepSeek 4.1 Flash: Ketika Model Murah Tak Hanya Bicara, Tapi Juga Bisa Melihat",
+    excerpt:
+      "Rilis terbaru DeepSeek menghadirkan kemampuan melihat ke dalam keluarga model 748 miliar parameter yang sudah dikenal hemat biaya — apa artinya untuk ekosistem AI Indonesia?",
+    category: "Analisis",
+    date: "2026-09-17",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Dua tahun sejak kehadiran DeepSeek-V3 yang mengejutkan banyak pihak dengan kualitas di atas rata-rata dan biaya inference yang jauh lebih rendah, DeepSeek kembali meluncurkan produk baru kali ini bernama 4.1 Flash — versi baru dari keluarga Flash yang sekarang juga mampu memproses input visual selain teks murni. Model berbasis 748 miliar parameter dengan arsitektur MoE (Mixture of Experts) ini menggenapkan satu siklus pengembangan yang dimulai dari penalaran kuat, menuju kecepatan inferensi tinggi, hingga akhirnya menambahkan 'mata' berupa multimodal vision.",
+          "Untuk yang mengikuti perkembangan DeepSeek sejak awal, ini bukan lompatan tak terduga — tapi konfirmasi bahwa strategi mereka konsisten: bangun model besar berkualitas tinggi, buka bobotnya secara open-weight, dan biarkan pasar global yang menilai melalui benchmark. Yang berubah sekarang bukan lagi soal 'apakah mereka bisa', melainkan 'berapa banyak organisasi yang siap menanggung beban menjalankan model seukuran itu'.",
+        ],
+      },
+      {
+        heading: "Apa sebenarnya yang hadir kali ini?",
+        paragraphs: [
+          "Inti dari DeepSeek 4.1 Flash adalah gabungan dua capability yang sebelumnya terpisah. Di satu sisi, foundation-nya tetap berasal dari keluarga Flash — arsitektur MoE dengan sekitar 748 miliar parameter total tapi hanya sebagian kecil yang aktif per-token, menghasilkan throughput inferensi yang relatif cepat dibanding model dense seukurannya. Di sisi lain, kemampuan vision yang ditambahkan berarti model ini sekarang bisa menerima gambar sebagai input: diagram teknis, screenshot aplikasi, foto dokumen, atau bahkan video frame-by-frame tergantung konfigurasi yang dipilih pengembang.",
+          "Kombinasi ini penting karena dunia nyata jarang hanya berisi teks. Seorang developer Indonesia yang menggunakan agent coding untuk membantu debugging tidak hanya mengirim prompt teks — ia juga butuh menunjukkan error log, screenshot console, atau diagram arsitektur yang sedang dikerjakan. Multimodal bukan feature tambahan yang bagus untuk dimiliki; ini kebutuhan fundamental kalau mau dipakai di workflow nyata, bukan hanya di demo.",
+        ],
+      },
+      {
+        heading: "Kenapa 748 miliar parameter masih layak dipertimbangkan",
+        paragraphs: [
+          "Angka 748 miliar terdengar besar, tapi konteksnya krusial. Karena arsitektur MoE, jumlah parameter yang aktif saat inference jauh lebih kecil — berkisar beberapa puluh miliar saja. Ini bedanya mendasar dengan model dense yang benar-benar melibatkan semua parameternya setiap kali menjawab pertanyaan. Bedah seperti ini menjadi semakin relevan ketika bicara tentang skala deploy di Indonesia: infra cloud lokal belum seragam seperti Silicon Valley, dan banyak organisasi memilih self-hosted demi isu compliance data.",
+          "Yang jadi pertanyaan sebenarnya bukan apakah model ini bisa berjalan di spek yang ada hari ini, tapi apakah infrastruktur yang kita bangun sekarang cukup fleksibel untuk upgrade di enam sampai dua belas bulan ke depan. Pengalaman di sektor BUMN dan fintech menunjukkan bahwa investasi pada GPU cluster yang scalable hari ini jauh lebih bernilai daripada menunggu spesifikasi ideal tercapai — karena yang ideal selalu bergeser.",
+        ],
+      },
+      {
+        heading: "Implikasi untuk komunitas developer Indonesia",
+        paragraphs: [
+          "Pertama, biaya akses turun lagi. Dengan model yang open-weight dan biaya inferensi yang rendah, developer yang biasa bergantung ke API berbayar punya alternatif lebih murah — terutama kalau mereka bisa deploy sendiri di infrastructure yang sudah ada. Bagi startup Indonesia yang sedang membangun produk berbasis AI, margin yang biasanya terkikis oleh biaya LLM API bisa direstrukturisasi ulang sepenuhnya.",
+          "Kedua, bar kompetensi naik. Kalau dulu chatbot sederhana sudah dianggap canggih, kini standar yang muncul di percakapan profesional adalah sistem yang bisa memahami konteks visual — membaca formulir, mengenali diagram alur kerja, atau menganalisis dashboard langsung dari tampilan layar. Ini mendorong komunitas lokal untuk belajar teknik yang lebih advance: RAG yang diperkaya multimodal, multi-agent vision pipeline, dan fine-tuning pada domain spesifik.",
+          "Ketiga, kompetisi antar-pengguna model lokal makin ketat. Bukan cuma soal siapa punya model terbaik di leaderboard, tapi siapa yang paling efisien dalam allocation resource — menentukan kapan harus pakai model besar, kapan model kecil, dan kapan tool non-AI sudah cukup. Ketenaran nama besar bukan jaminan efisiensi operasional.",
+        ],
+      },
+      {
+        heading: "Penutup: pelan-pelan tapi arah jelas",
+        paragraphs: [
+          "DeepSeek telah membuktikan tiga kali berturut-turut bahwa mereka bisa memproduksi model frontier-quality sambil menjaga harga inferensi yang bisa ditebus oleh organisasi menengah. Rilis kali ini melanjutkan narasi yang sama — bukan headline spektakuler, tapi akumulasi steady dari capability yang semakin matang. Untuk ekosistem Indonesia, pelajaran utamanya bukan sekadar 'model mana yang terbaik', melainkan cara membangun infrastruktur yang adaptif agar tidak tertinggal begitu standards bergeser lagi.",
+        ],
+      },
+    ],
+  },
 ];
 export function getArtikel(slug: string) {
   return berita.find((a) => a.slug === slug);
