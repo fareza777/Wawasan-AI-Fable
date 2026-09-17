@@ -2587,6 +2587,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "TypeScript open source (Apache 2.0) via NPM (`@agentrhq/webcmd`), relevan untuk developer dan tim yang lelah membayar token mahal karena coding agent harus selalu mengeksplorasi website baru dari awal pada setiap task.",
     ],
   },
+  "Tencent/WeKnora": {
+    description:
+      "Platform pengetahuan open-source dari Tencent — ubah dokumen mentah jadi sistem RAG yang bisa dikueri, agen reasoning otonom, dan wiki otomatis yang terus terjaga sendiri — semua dalam stack self-hosted.",
+    highlights: [
+      "Dokumen dari 12+ sumber (Feishu wiki/Drive, GitLab, Notion, Yuque, DingTalk Docs, RSS, web embed, dan lainnya) di-ingest secara multipel menjadi knowledge base yang bisa dicari, di-query, dan di-reason oleh LLM — bukan sekumpulan PDF statis.",
+      "ReAct Agent dengan orchestrasi mandiri: routing retrieval + MCP tools + sandbox Docker/E2B/Cube + web search untuk tugas multi-langkah kompleks, plus cross-session long-term memory yang mengingat siapa Anda dan apa yang sering ditanyakan.",
+      "Wiki Mode revolusioner: agen merumuskan ulang dokumen mentah jadi basis pengetahuan markdown yang saling terhubung dengan knowledge graph interaktif — plus editing chunk per chunk dengan revision history dan one-click rollback.",
+      "Enterprise-ready: multi-workspace RBAC 4-tier, scoped API keys dengan principal model, 20+ integrasi LLM via LiteLLM, Langfuse observability, dan dashboard task-queue worker-pool governance — cocok untuk tim Indonesia yang butuh RAG infrastructure sendiri tanpa SaaS berbayar.",
+    ],
+  },
+  "hypit-ai/hypit": {
+    description:
+      "Framework AI agent untuk membuat dan mengkloning video — drop satu video viral, dapat seluruh workflow lengkap (footage, B-roll, efek, teks) dalam satu perintah yang bisa dijalankan oleh Claude Code atau Codex.",
+    highlights: [
+      "SVML (Simple Video Markup Language): bahasa declarative yang menulis video lewat text, bukan timeline editing manual — anchor ke kata, bukan detik, jadi editing tetap konsisten meski timing berubah. Agen hanya perlu menulis markup, Hypit yang handle rendering.",
+      "Drop-in video clone workflow: unggah satu referensi, agen melakukan face swap, lip sync, ganti voiceover/B-roll, dan compile 100 variasi sekaligus dalam satu perintah — sesuai tagline \u20181 command, 100 variants, 100M views\u2019.",
+      "Template library siap pakai untuk berbagai format konten (shorts, reels, TikTok, YouTube) ditambah kemampuan buat template custom — bukan cuma clone, tapi juga generate dari deskripsi natural language saja tanpa referensi sama sekali.",
+      "Open source (Apache-2.0), TypeScript/Pnpm-based, Node 22.15+, dan dipasang via `npx skills add` ke Claude Code atau Codex — generated video juga bisa di-render tanpa calling external model service, cukup compile caption dan motion graphics ke output akhir.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
