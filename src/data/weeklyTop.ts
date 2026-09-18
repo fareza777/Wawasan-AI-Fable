@@ -2607,6 +2607,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Open source (Apache-2.0), TypeScript/Pnpm-based, Node 22.15+, dan dipasang via `npx skills add` ke Claude Code atau Codex — generated video juga bisa di-render tanpa calling external model service, cukup compile caption dan motion graphics ke output akhir.",
     ],
   },
+  "cloudflare/security-audit-skill": {
+    description:
+      "Skill keamanan coding agent dari Cloudflare — ubah Claude Code atau agen coding jadi auditor multi-fase yang melakukan reconnaissance, coverage-led hunting, candidate validation, hingga terbitkan laporan temuan terverifikasi secara independen.",
+    highlights: [
+      "Enam fase audit berurutan dan saling-divalidasi: reconnaissance arsitektur → hunting berbasis coverage ledger → candidate validation oleh verifier independen → structured output findings → record verification kedua → target-neutral reporting — bukan satu skrip statik melainkan orchestrator yang mempekerjakan beberapa agen paralel untuk setiap fase.",
+      "Warisan dari 'Build your own vulnerability harness' milik Cloudflare — skill ini adalah seed dari sistem fleet-wide discovery bug yang dipakai internal; di-open-source agar komunitas bisa meniru metodologi industri sebelum ada competitor yang mengadopsi praktik serupa.",
+      "Dukungan lintas domain attack classes lengkap: web protocol & auth, memory safety & binary, supply chain & release, cloud & deployment, RPC/messaging, data isolation, client-side DOM injection, sampai AI/LLM prompt injection — hampir semua permukaan serangan modern tercover dalam satu skill package.",
+      "Install lewat Skills CLI standar (`npx skills add`) dan menghasilkan output terstruktur `findings.json` yang bisa dipakai downstream (CI alert, dashboard, report auto-push) — cocok untuk tim engineering Indonesia yang ingin 'security audit otomatis' sebagai langkah pertama sebelum hiring dedicated penetration tester.",
+    ],
+  },
+  "bendlang/bend": {
+    description:
+      "Bahasa pemrograman baru dari Brendan Barnwell yang mencegah bug buatan AI lewat mathematical proof — tulis hukum aplikasi, kompilasi berjalan cepat di CPU dan GPU, dan kode yang melanggar hukum tidak akan pernah berhasil dikompilasi.",
+    highlights: [
+      "Konsep 'LAWS.bend': deklarasikan aturan aplikasi dalam bahasa manusia ('sum balance harus nol', 'player tidak bisa menembus dinding solid'), lalu kompiler Bend menjamin secara matematis bahwa hukum itu tidak pernah dilanggar — AI coding agent bisa edit sesuka hati, tetapi jika membuat bug yang melanggar law, kompiler menolak build dan meminta retry.",
+      "Performa konkurensi ekstrem tanpa thread locking: split tugas dan Bend menyebarkan panggilan ke seluruh core tersedia secara otonom, tanpa programmer perlu menulis synchronization code — targetnya setara C di single-core dan lebih cepat CUDA di ribuan core, karena seluruh bahasa berjalan di GPU dengan unified memory.",
+      "Built-in proof checker yang jauh lebih cepat dari proof assistant tradisional (Isabelle, Agda, Lean, Rocq): file yang biasanya butuh menit diverifikasi selesai dalam kurang dari satu detik, menjadikan pembuktian matematika praktis untuk iterasi harian AI coding workflow, bukan hanya alat akademis.",
+      "21k+ bintang GitHub dalam waktu singkat sejak diluncurkan — menarik perhatian komunitas karena menjawab pain point nyata engineer: AI sering generate kode yang tampak benar tapi punya bug subtlety; dengan LAWS.bend, bug tersebut diblokir sebelum sempat merge, bukan setelah developer menghabiskan waktu debug.",
+    ],
+  },
+  "Tencent/BrowserSkill": {
+    description:
+      "CLI + extension dari Tencent yang menghubungkan Claude Code, Codex, Cursor, dan 8+ coding agent ke browser kamu yang sudah login — agen bisa pakai tab terbuka tanpa mengganggu workflowmu, lengkap dengan human-in-the-loop saat CAPTCHA muncul.",
+    highlights: [
+      "Reuse session login asli: agen bekerja dengan akun yang sudah terdaftar (Gmail, banking, e-commerce) tanpa perlu test account terpisah — cukup buka tab di browser sendiri, klik install skill di agent, dan agen mendapat akses ke situs yang sedang aktif tanpa re-authentication ulang.",
+      "Browser task dijalankan di jendela Agent Window terpisah sehingga kamu tetap bisa browsing normal — agen tidak merebut fokus, tidak menutup tab-mu, dan otomatis mengembalikan tab ke kondisi semula setelah tugas selesai; human-in-the-loop menangani CAPTCHA, dialog konfirmasi, atau verifikasi dua faktor.",
+      "Cross-platform native (macOS Apple Silicon/Intel, Linux x64/ARM64, Windows x64) dengan dukungan Chrome dan Microsoft Edge, plus CLI `bsk` universal yang bisa dipanggil oleh setiap agent yang punya shell access — tidak terkunci ke provider tertentu, kerja sama Claude Code, OpenClaw, Gemini CLI, atau custom agent script.",
+      "Fitur tambahan seperti full-page screenshot via `bsk screenshot --session <id> --full-page`, remote connection mode untuk server headless, dan sandboxed agent setup — relevan untuk developer Indonesia yang butuh otomasi web-based workflow (screen scraping, form filling, monitoring dashboard) tanpa headless browser yang mudah terdeteksi bot detection.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
