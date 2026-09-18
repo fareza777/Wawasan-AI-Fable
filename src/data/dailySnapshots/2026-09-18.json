@@ -1,0 +1,156 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "18 September 2026",
+  "period": {
+    "date": "2026-09-18",
+    "label": "18 September 2026",
+    "path": "/repo/daily/2026/09/18"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-18T00:03:56.062Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/64056",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI skills",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-06-18T14:08:44Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "alibaba/open-code-review",
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "githubUrl": "https://github.com/alibaba/open-code-review",
+      "trendshiftUrl": "https://trendshift.io/repositories/41087",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-18T02:16:36Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "hypit-ai/hypit",
+      "owner": "hypit-ai",
+      "repo": "hypit",
+      "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+      "githubUrl": "https://github.com/hypit-ai/hypit",
+      "trendshiftUrl": "https://trendshift.io/repositories/229030",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Video editing"
+      ],
+      "dateCreated": "2026-07-29T18:49:19Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "browser-use/jev-ultrafast",
+      "owner": "browser-use",
+      "repo": "jev-ultrafast",
+      "description": "",
+      "githubUrl": "https://github.com/browser-use/jev-ultrafast",
+      "trendshiftUrl": "https://trendshift.io/repositories/242003",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-16T21:30:12Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "latent-spaces/brag",
+      "owner": "latent-spaces",
+      "repo": "brag",
+      "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
+      "githubUrl": "https://github.com/latent-spaces/brag",
+      "trendshiftUrl": "https://trendshift.io/repositories/56942",
+      "language": "Python",
+      "topics": [
+        "AI video generation"
+      ],
+      "dateCreated": "2026-06-16T19:36:36Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Tencent/BrowserSkill",
+      "owner": "Tencent",
+      "repo": "BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "githubUrl": "https://github.com/Tencent/BrowserSkill",
+      "trendshiftUrl": "https://trendshift.io/repositories/79254",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-22T07:24:40Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "miuuyy/codex-chatgpt-web",
+      "owner": "miuuyy",
+      "repo": "codex-chatgpt-web",
+      "description": "Use ChatGPT Pro as a native model in the Codex app — with context, compaction, streaming, images, and optional MCP tools.",
+      "githubUrl": "https://github.com/miuuyy/codex-chatgpt-web",
+      "trendshiftUrl": "https://trendshift.io/repositories/94553",
+      "language": "TypeScript",
+      "topics": [
+        "Chatbot"
+      ],
+      "dateCreated": "2026-07-26T13:04:44Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "TheoLeeCJ/openjev",
+      "owner": "TheoLeeCJ",
+      "repo": "openjev",
+      "description": "Can we run something like Jev on a 3090 at home?",
+      "githubUrl": "https://github.com/TheoLeeCJ/openjev",
+      "trendshiftUrl": "https://trendshift.io/repositories/241523",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-16T03:51:21Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Tencent/WeKnora",
+      "owner": "Tencent",
+      "repo": "WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "githubUrl": "https://github.com/Tencent/WeKnora",
+      "trendshiftUrl": "https://trendshift.io/repositories/15289",
+      "language": "Go",
+      "topics": [
+        "RAG",
+        "Document processing"
+      ],
+      "dateCreated": "2025-07-22T08:01:23Z"
+    }
+  ]
+}

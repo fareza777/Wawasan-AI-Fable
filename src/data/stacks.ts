@@ -3933,6 +3933,47 @@ export const stacks: Review[] = [
     date: "2026-09-17",
     featured: false,
   },
+  {
+    slug: "phind-2026",
+    name: "Phind 2026",
+    tagline: "Mesin pencari AI khusus developer dengan kode sebagai bahasa pertama dan konteks realtime",
+    tags: ["Phind", "Freemium", "Search/RAG", "Developer"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.3 },
+      { label: "Ekosistem & Integrasi", value: 7.5 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "Phind 2026 adalah mesin pencari AI yang dirancang sejak awal untuk developer, bukan hasil adaptasi dari engine pencarian umum. Dengan model yang dilatih pada repository open source dan dokumentasi teknis, Phind memahami konteks coding secara literal — bisa membaca error traceback, menjelaskan pola arsitektur, dan menghubungkan Stack Overflow, GitHub issues, dan blog post ke dalam satu respons koheren. Paket freemiumnya cukup generous untuk dipakai sehari-hari tanpa biaya.",
+    pros: [
+      "Model khusus code memberikan jawaban teknis yang jauh lebih akurat dibanding chatbot umum untuk query seperti error handling, library selection, atau debug log analysis",
+      "RAG atas pengetahuan pribadi memungkinkan indexing dokumen internal, API doc, atau repo private sehingga jawaban relevan dengan konteks proyek spesifik",
+      "Integrasi via VS Code extension, JetBrains plugin, GitHub Copilot Chat, dan CLI tool membuat developer tidak perlu pindah browser untuk mencari solusi saat coding",
+      "Free tier sangat geners: 100 query/hari tanpa kartu kredit, jauh lebih murah kompetitor jika dihitung per penggunaan rutin developer solo atau small team",
+      "Antarmuka minimalis tanpa distaksi UI yang berlebihan: fokus pada query, source citation, dan code snippet — cocok untuk developer yang ingin cepat dapat jawaban lalu kembali ke editor",
+    ],
+    cons: [
+      "Tidak memiliki kemampuan agentic deep-work seperti Claude Code atau Codex: Phind menjawab pertanyaan tetapi tidak menjalankan tugas editing file, commit, atau run test secara langsung",
+      "Ketergantungan pada model third-party berarti kualitas berubah saat provider mengganti backbone — user tidak bisa swap model sendiri atau fine-tune di versi publik",
+      "Konsistensi uptime masih jadi concern: deployment di Vercel pernah tidak tersedia beberapa kali, menunjukkan infrastruktur yang belum se-mature competitor besar seperti Perplexity",
+      "Komunitas dan ekosistem plugin masih kecil: tidak ada marketplace extension atau template library seperti yang sudah terbentuk di Cursor atau Windsurf",
+    ],
+    verdict:
+      "Pilihan search AI terbaik untuk developer yang butuh jawaban cepat dan terverifikasi ke sumber asli. Gratis untuk pemakaian harian, tapi catatan utamanya adalah ia tetap berupa search engine — pilih Phind untuk research cepat dan debugging bantuan, bukan untuk tugas coding end-to-end yang memerlukan agen mampu execute perubahan.",
+    body: [
+      "Perubahan terbesar dari era 'Google dulu, baru copas jawaban ke Stack Overflow' ke 'tanya ke AI yang langsung jawab dengan referensi' terasa nyata saat kamu bekerja dengan error log yang panjang dan butuh diagnosis cepat. Di workflow tradisional, developer membuka Chrome, mengetik pesan error, filter antara Stack Overflow, Reddit, forum resmi framework, dan blog post personal — semuanya dalam tab terpisah. Proses ini memakan waktu dan menguras attention. Phind 2026 menghilangkan friksi itu dengan cara fundamental berbeda: alih-alih menggunakan crawler dan index biasa, ia memakai model yang dilatih secara eksplisit pada source code, dokumentasi teknis, dan diskusi developer, sehingga ketika kamu paste error traceback atau deskripsi bug, mesin tidak hanya mencari kata kunci matching tetapi benar-benar memahami struktur error, baris error yang dimaksud, dan solusi yang mungkin relevan berdasarkan repository lain yang pernah mengalami hal serupa.",
+      "Fitur standout yang membedakan Phind dari competitor terdekat seperti Perplexity AI adalah kedalaman pemahaman kode dan kontrol atas konteks. Model Phind yang specialized memberi tingkat akurasi signifikan lebih tinggi saat queried tentang syntax spesifik, library version incompatibility, atau migration path antar framework. Misalnya, query tentang cara upgrade Django dari versi 4 ke 5 dijawab dengan daftar breaking change yang verified, bukan generalisasi. Fitur RAG (Retrieval-Augmented Generation) memungkinkan developer menambahkan dokumen proyek sendiri — API documentation internal, README, atau bahkan folder penuh repo clone — dan Phind akan menjawab berdasarkan konteks tersebut alongside web sources, menciptakan hybrid search yang menggabungkan pengetahuan publik dan proprietary. Untuk tim yang mengelola multi-repo, setiap workspace bisa maintain index terpisah sehingga hasil search tetap terisolasi dan relevan per project.",
+      "Untuk pengguna Indonesia, Phind 2026 menawarkan beberapa poin nilai yang unik. Pertama, free tier yang benar-benar usable: 100 query per hari tanpa kartu kredit, cukup untuk sebagian besar developer solo atau small team yang pakai AI assistant untuk membantu debugging, research library baru, atau penjelasan konsep. Di tengah pasar yang dipenuhi AI tools berbayar ($20-$100/bulan), opsi gratis yang berkualitas ini langka. Kedua, Phind membantu menutup gap akses informasi teknis berbahasa Inggris: developer Indonesia yang nyaman dengan teknologi tapi kurang percaya diri membaca dokumentasi resmi bisa bertanya dalam campuran Indo-Inggris dan Phind biasanya merespons dengan penjelasan dalam Bahasa Indonesia sambil menyertakan sumber asli dalam bahasa Inggris. Ketiga, dengan biaya operasional nol untuk free tier, Phind menjadi pintu masuk natural untuk developer baru yang ingin eksplorasi apakah AI-powered coding assistant worth investing — setelah terbiasa, banyak yang lanjut pakai tools berbayar seperti Cursor atau Claude Code untuk kebutuhan yang lebih dalam. Keempat, untuk freelance developer dan konsultan IT yang melayani banyak klien, kemampuan Phind untuk cepat meriset tech stack baru atau troubleshooting error unfamiliar bisa mengurangi waktu riset dari 30 menit ke 5 menit per task.",
+      "Kesimpulannya, Phind 2026 adalah mesin pencari AI yang paling dekat dengan mindset seorang developer yang membutuhkan jawaban cepat, terverifikasi, dan kontekstual — bukan chatbot yang bisa diajak ngobrol panjang lebar. Ia tidak dimaksudkan untuk menggantikan Claude Code, Cursor, atau tools agentic coding lainnya karena ia tidak mengeksekusi perubahan kode, run build, atau manage pull request. Tapi untuk fase sebelum eksekusi — riset library, diagnosis error, comparison feature, atau penjelasan konsep — Phind menempati posisi yang sulit disaingi oleh search engine konvensional maupun LLM chat. Untuk developer Indonesia yang butuh partner riset teknis tanpa biaya bulanan tambahan, paket gratis Phind sudah sangat cukup sebagai daily driver sementara budget dialokasikan ke tools berbayar untuk fitur yang lebih spesifik dan deep-work oriented.",
+    ],
+    link: "https://phind.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-18",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
