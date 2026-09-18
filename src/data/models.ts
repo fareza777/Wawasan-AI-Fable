@@ -4532,6 +4532,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-18",
     featured: false,
   },
+  {
+    slug: "agnes-2-5-pro-beta",
+    name: "Agnes 2.5 Pro Beta",
+    tagline: "Model utilitas praktis \u2014 cerdas untuk coding, hemat biaya untuk harian",
+    tags: ["Sapiens AI", "Proprietary", "Coding Assistant", "Budget API"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 6.5 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 35.2,
+    aa_coding_index: 62.3,
+    aa_price_input: 0.1,
+    aa_price_output: 0.3,
+    aa_synced_at: "2026-09-19",
+    summary:
+      "Model utilitas dari Sapiens AI yang memosisikan diri di segmen menengah: bukan model frontier yang mengejar intelligence tertinggi, tapi dirancang sebagai asisten kerja sehari-hari dengan fokus kuat pada coding dan harga yang sangat kompetitif. Intelligence index 35,2 (sumber: Artificial Analysis) menempatkan Agnes 2.5 Pro Beta di bawah rata-rata benchmark global, namun coding index 62,3 cukup solid untuk tugas programming standar.",
+    pros: [
+      "Harganya sangat bersahabat: $0,10 input dan $0,30 output per juta token \u2014 jauh di bawah model proprietary kelas atas yang mencapai $5/$25",
+      "Coding index 62,3 menonjol dibanding intelligence index 35,2 \u2014 lebih unggul untuk tugas pemrograman daripada penalaran umum",
+      "Cocok sebagai asisten coding rutin tanpa perlu budget besar, ideal untuk developer atau startup dengan keterbatasan biaya",
+      "Akses melalui API langsung dengan harga transparan tanpa tier berjenjang",
+    ],
+    cons: [
+      "Intelligence index 35,2 di bawah rata-rata industri \u2014 kemampuan reasoning terbatas untuk tugas multi-langkah kompleks",
+      "Tidak ada data kecepatan (median output tokens/detik = 0), jadi performa waktu respons belum terukur reliable",
+      "Komunitas dan ekosistem pendukung masih sangat kecil dibanding OpenAI, Anthropic, atau Google",
+      "Status beta berarti fitur bisa berubah \u2014 stabilitas produksi perlu diverifikasi ulang secara berkala",
+    ],
+    verdict:
+      "Agnes 2.5 Pro Beta layak dipertimbangkan jika prioritas utama adalah efisiensi biaya untuk asisten coding tanpa mengorbankan kualitas yang terlalu jauh di bawah standar. Untuk workload serius yang memerlukan reasoning tingkat tinggi atau integrasi ekosistem luas, tetap rekomendasikan GPT-5 atau Claude Opus.",
+    body: [
+      "Agnes 2.5 Pro Beta hadir sebagai representasi kategori baru dalam lanskap model AI: utilitas-focused rather than frontier-chasing. Dari Sapiens AI \u2014 sebuah pengembang yang tidak termasuk dalam daftar top-five seperti OpenAI atau Anthropic \u2014 model ini memilih strategi positioning yang jelas bukan bersaing di papan atas intelligence, melainkan mengejar keseimbangan antara capability yang memadai dan harga yang masuk akal. Nama '2.5' mengindikasikan versi iterative (bukan lompatan arsitektural), sementara 'Pro Beta' memberi sinyal bahwa produknya sudah siap di-production namun masih menerima umpan balik untuk penyempurnaan lebih lanjut. (Sumber data: Artificial Analysis.)",
+      "Data dari Artificial Analysis menunjukkan profil unik Agnes 2.5 Pro Beta: intelligence index 35,2 berada di kisaran bawah-moderat dibandingkan peers (GPT-5 di 44,6, Gemini 3 di 57,2), namun coding index 62,3 relatif lebih tinggi, memberikan gap kompetensi yang menarik. Artinya, model ini sebenarnya lebih kompeten saat diminta membantu menulis, merevisi, atau debugging kode dibandingkan saat ditanya pertanyaan analitis terbuka. Dengan harga $0,10 per juta token input dan $0,30 per juta token output, blended cost sekitar $0,15 \u2014 hampir 33 kali lebih murah daripada Claude Opus ($5/$25) dan 83 kali lebih murah daripada beberapa model premium lain. (Sumber: Artificial Analysis.)",
+      "(Sumber data: Artificial Analysis.) Kesimpulan editorial kami: Agnes 2.5 Pro Beta adalah pilihan rasional untuk developer Indonesia yang mengutamakan cost-efficiency dan memiliki workload coding-heavy dengan requirement reasoning level sedang. Untuk penggunaan production-scale atau kebutuhan agentic yang memerlukan trust tinggi terhadap reasoning, pertimbangkan upgrade ke model kelas atas. Namun kalau anggaran menjadi faktor pembatas dan task utamanya seputar coding assistance, review ini menyimpulkan bahwa Agnes memberikan nilai yang sepadan \u2014 mungkin bukan yang terbaik di kelasnya, tapi paling worth-it untuk dompet Anda.",
+    ],
+    link: "https://www.artificialanalysis.ai/",
+    linkLabel: "Artificial Analysis",
+    date: "2026-09-19",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
