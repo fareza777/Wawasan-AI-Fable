@@ -5082,6 +5082,62 @@ export const repos: Review[] = [
         updatedAt: "2026-09-19",
         featured: false,
       },
+      {
+        slug: "kiro-crew",
+        name: "Kiro Crew",
+        tagline: "Workspace pengembangan yang berjalan terus dan belajar dari setiap sesi sebelumnya",
+        tags: ["AI Agent", "Developer Tool", "Python", "Self-hosted"],
+        score: 8.8,
+        scores: [
+          { label: "Kemudahan Setup", value: 8.5 },
+          { label: "Fitur & Ekstensibilitas", value: 9.2 },
+          { label: "Komunitas & Momentum", value: 8.8 },
+          { label: "Dokumentasi", value: 8.5 },
+          { label: "Kesiapan Produksi", value: 8.3 },
+        ],
+        summary:
+          "Kiro Crew dari kirodotdev menawarkan sesuatu yang jarang ditemukan di ranah AI agent open-source: workspace yang benar-benar bertahan antar sesi. Bukan sekadar asisten yang bisa dihubungi lewat berbagai kanal komunikasi, Kiro Crew menjalankan proses secara kontinu di perangkat milik pengguna -- mencatat pembelajaran dari setiap koreksi, mengubah pola berulang menjadi skill yang dapat dipakai ulang, dan mengerjakan tugas jangka panjang tanpa harus tetap monitor. Dengan lebih dari 4.000 bintang GitHub sejak peluncuran awal 2026 dan lisensi Apache 2.0, proyek ini menyasar developer solo hingga tim engineering kecil yang ingin otomasi berkelanjutan tanpa bergantung pada cloud SaaS.",
+        highlights: [
+          "Persistent sessions -- konteks, memori, jadwal, dan checkpoint tugas bertahan setelah Gateway restart atau koneksi terputus",
+          "Self-learning bawaan -- koreksi dan kegagalan tugas diubah menjadi pelajaran yang mengubah perilaku agent di sesi berikutnya",
+          "Self-evolving skills -- pola kerja berulang disintesis otomatis menjadi skill yang dapat direvisi langsung lewat dashboard",
+          "Gateway terpusat sebagai control plane untuk routing pesan, manajemen sesi, memori, penjadwalan, approval, dan keamanan",
+          "Multi-surface: desktop app, web dashboard, CLI (kirocrew chat/run/cron/spawn), serta kanal Slack, Discord, Telegram, Teams, Webex, WhatsApp, WeChat, Feishu, dan iMessage",
+          "Long-running autonomous tasks dengan checkpoint resume -- beri instruksi dan biarkan agen merencanakan, mengeksekusi, memvalidasi, dan melanjutkan dari titik gagal",
+          "Subagent delegation -- spawn isolated subagent untuk pekerjaan paralel dan kumpulkan hasilnya ke parent conversation",
+          "MCP server extensibility dan markdown-based skill system tanpa mengubah core runtime",
+          "Semantic memory dengan in-process embeddings -- download model embedding saat start pertama, searchable langsung dari dashboard",
+          "Security defense-in-depth: interactive approvals per session, OS-level sandboxing (Linux/macOS via namespace), credential redaction, deny rules catalog, audit trail, dan governance profiles",
+          "Deployment fleksibel: desktop app (macOS/Windows/Linux native), Docker container, atau instalasi service di remote Linux host via systemd/launchd",
+          "Tiga release channel (Stable, Insider, Nightly) dengan auto-update per channel, signed manifest, dan SLSA provenance attestation",
+          "Lisensi Apache 2.0 -- aman untuk adopsi komersial, fork tim internal, atau enterprise self-host tanpa royalti",
+        ],
+        pros: [
+          "Arsitektur persistent workspace menjawab masalah nyata developer yang sering kehilangan progres agent saat menutup aplikasi -- konteks tidak hilang, tugas tidak mati, jadwal tidak berhenti",
+          "Self-learning dan self-evolving bukan feature tambahan tapi fondasi arsitektur -- setiap koreksi disimpan sebagai durable lesson yang mempengaruhi behavior agent di masa depan",
+          "Pilihan surface kerja sangat lengkap -- dari desktop app paling sederhana sampai webhook reactive, memungkinkan developer memilih cara berinteraksi sesuai konteks momen",
+          "Security layers solid untuk sebuah AI agent tool: interactive approvals, OS sandboxing, credential stripping, dan deny rules catalog tersedia out-of-the-box, bukan setelah dikonfigurasi manual",
+        ],
+        cons: [
+          "Desktop app berbasis Electron dan backend Python berarti konsumsi RAM cukup tinggi dibanding solusi ringan -- VPS budget Rp 50.000/bulan mungkin perlu upgrade minimal ke Rp 150.000/bulan untuk pengalaman optimal",
+          "Model layer dibungkus lewat kiro-cli sebagai required dependency -- pengguna tidak bisa langsung swap ke Claude, GPT, atau model lokal lain tanpa konfigurasi tambahan melalui provider ACP",
+          "Komponen masih relatif baru (peluncuran awal 2026) -- jumlah tutorial Bahasa Indonesia, community-driven apps, dan dokumentasi niche untuk ekosistem Indonesia masih berkembang",
+          "OS sandboxing tidak tersedia di Windows dalam mode strict, sehingga Windows user mengandalkan opt-in yang belum setingkat perlindungan dengan Linux/macOS",
+        ],
+        verdict:
+          "Salah satu pendekatan paling menarik di kategori AI dev workspace 2026: bukan hanya soal apa yang bisa dikerjakan oleh agent, tapi bagaimana agent itu mempertahankan memori, belajar dari kesalahan, dan terus bekerja meski penggunanya sedang offline. Bagi developer Indonesia yang lelah mematikan dan menghidupkan ulang sesi agent tiap kali berganti laptop atau refresh browser, Kiro Crew menawarkan jawaban yang sudah ada -- tinggal install dan biarkan kerja jalan sendiri.",
+        body: [
+          "Di dunia AI agent, hampir semua tools yang populer menawarkan satu hal yang sama: interaksi chat berbasis sesi yang berakhir ketika kamu menutup tab atau keluar dari aplikasi. OpenClaw menghubungkan agent ke WhatsApp dan Telegram dengan persistensi terbatas. Hermes Agent menyimpan memori dan skill antar sesi tapi tetap memerlukan inisiasi aktif dari pengguna. DeerFlow adalah super agent harness yang powerful untuk deep research tapi tidak dirancang untuk beroperasi autonomously di background. Kiro Crew dari kirodotdev mengambil pendekatan berbeda dengan menjawab pertanyaan mendasar: mengapa agent harus berhenti bekerja hanya karena jendela chat ditutup? Hasilnya adalah workspace pengembangan yang menjalankan proses secara kontinu -- bukan service awan yang harus disewakan, melainkan binary dan service yang berjalan di perangkat yang kamu miliki sendiri, baik Mac, PC dengan Windows, maupun Linux server di rumah. Proyek ini sudah melampaui 4.000 bintang GitHub sejak peluncuran awal 2026 dan menggunakan lisensi Apache 2.0, angka pertumbuhan yang impresif untuk kategori agent workspace yang relatif baru di ecosystem open-source.",
+          "Dalam pengujian editorial Wawasan AI, fitur yang memberikan dampak paling terasa sejak instalasi pertama adalah kemampuan persistent sessions dikombinasikan dengan self-learning. Tanpa Kiro Crew, workflow typikal developer memakai AI agent terlihat seperti ini: buka terminal, mulai sesi chat, kerjakan migration script, tutup terminal, besok buka lagi dan harus mulai ulang dari nol karena context window kosong. Dengan Kiro Crew, sesi tidak pernah benar-benar tertutup. Gateway menjaga seluruh state termasuk memory, project context, history summaries, dan checkpoint tugas yang sedang berjalan. Ketika kamu kembali hari berikutnya, agent sudah tahu konteks kerjamu -- bahkan catatan koreksi yang kamu berikan tiga hari lalu mengenai langkah deployment tersimpan sebagai durable lesson yang dipromote ke sesi selanjutnya. Yang membedakan Kiro Crew dari solution yang hanya menyimpan transcript percakapan adalah mekanisme self-evolving: pola kerja yang kamu ulangi berulang kali -- misalnya langkah-langkah deploy ke staging environment atau prosedur code review tertentu -- bisa diubah menjadi reusable skill yang dipasang otomatis, bukan sekedar replay dari prompt manual.",
+          "Dari perspektif arsitektur, Kiro Crew memiliki lapisan yang bersih. Layer pertama adalah Gateway -- proses long-running yang bertugas routing pesan dari semua surface yang terhubung (desktop app, web dashboard, CLI, Slack thread, Discord DM, Telegram bot, dan sembilan permukaan lainnya), mengelola session lifecycle, inject memory dan skills, mulai scheduled work, koordinasikan subagents, broker approvals, enforce security policy, dan expose activity di web dashboard. Layer kedua adalah agent sessions -- masing-masing conversation, scheduled job, task run, atau subagent mapped ke isolated session dengan konteks terisolasi, powered oleh ACP runtime yang bisa dedicate per-session atau multiplexed. Layer ketiga adalah model integration -- kiro-cli menangani koneksi ke LLM provider dan mengikuti konfigurasi account yang sudah terdaftar. Yang unik dari arsitektur ini adalah pemisahan jelas antara dimana agent bekerja (host device -- local machine atau remote server) dan dimana kamu berinteraksi (surface -- desktop, web, atau messaging). Kamu bisa punya Gateway berjalan di VPS Linux 24/7, sementara desktop app di MacBookmu hanya menjadi client yang connect via SSH tunnel tanpa perlu clone repository atau konfigurasi apapun. Semantic memory diimplementasikan sebagai in-process embedding engine yang download model saat first-start, sehingga tidak perlu VectorDB external -- semua indexed queries berjalan lokal di gateway instance yang sama.",
+          "Untuk konteks Indonesia, Kiro Crew paling relevan untuk empat profil pengguna. Pertama, indie developer dan freelancer yang bekerja di proyek jangka panjang (beberapa minggu hingga bulan) dan frustasi dengan kehilangan progres agent saat pergantian device atau refresh browser -- Kiro Crew menyimpan seluruh state di perangkat, jadi pindah dari laptop lama ke baru hanya require copy folder ~/.kiro/crew. Kedua, tim engineering startup dan software house yang butuh otomasi berkelanjutan (monitoring CI pipeline, generate daily report, automated testing) tanpa harus build dan maintain cron job scripts terpisah -- Kiro Crew menyediakan native scheduler dengan notification delivery ke surface mana pun. Ketiga, researcher dan akademisi yang menjalankan eksperimen computational intensive dan butuh checkpoint resume capability -- jika proses tiba-tiba crash karena error dependency atau timeout, Kiro Crew bisa melanjutkan dari checkpoint terakhir. Keempat, small dev shop yang ingin offer always-on AI assistant ke klien mereka tanpa biaya SaaS bulanan -- Kiro Crew bisa di-deploy di VPS terjangkau dan diakses via web dashboard dari mana saja. Dua catatan penting: pertama, karena agent memiliki akses penuh ke filesystem dan shell, jangan pernah mengizinkan execution tanpa interactive approval -- gunakan mode strict sandboxing di Linux/macOS dan review deny rules catalogue sebelum deploy production. Kedua, kualitas output tetap bergantung pada model LLM di balik kiro-cli -- Kiro Crew menyediakan framework kerja, bukan magic model. Dengan memahami dua catatan ini, Kiro Crew layak jadi top-of-list evaluation bagi siapa pun yang serius membangun persistent AI-powered development workflow di 2026.",
+        ],
+        link: "https://github.com/kirodotdev/KiroCrew",
+        linkLabel: "Lihat di GitHub",
+        date: "2026-09-20",
+        updatedAt: "2026-09-20",
+        featured: false,
+      },
 ];
 
 export function getRepo(slug: string) {
