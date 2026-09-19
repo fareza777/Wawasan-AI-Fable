@@ -1,17 +1,85 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "19 September 2026",
-  "period": {
-    "date": "2026-09-19",
-    "label": "19 September 2026",
-    "path": "/repo/daily/2026/09/19"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-19T00:02:26.169Z",
+  "fetchedAt": "2026-09-19T06:22:06.262Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "robbietilton/Compositor",
+      "owner": "robbietilton",
+      "repo": "Compositor",
+      "description": "The Photoshop alternative for Mac",
+      "githubUrl": "https://github.com/robbietilton/Compositor",
+      "trendshiftUrl": "https://trendshift.io/repositories/246426",
+      "language": "Swift",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-16T20:35:54Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "deeplethe/utopia",
+      "owner": "deeplethe",
+      "repo": "utopia",
+      "description": "Local-first, agent-assisted document-to-ontology workbench",
+      "githubUrl": "https://github.com/deeplethe/utopia",
+      "trendshiftUrl": "https://trendshift.io/repositories/159739",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "Document processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-08-07T19:33:17Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "trycua/cua",
+      "owner": "trycua",
+      "repo": "cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "githubUrl": "https://github.com/trycua/cua",
+      "trendshiftUrl": "https://trendshift.io/repositories/13685",
+      "language": "HTML",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2025-01-31T15:02:49Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "arcboxlabs/arcbox",
+      "owner": "arcboxlabs",
+      "repo": "arcbox",
+      "description": "Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <200ms boot. Local first, OCI compatible, pure Rust.",
+      "githubUrl": "https://github.com/arcboxlabs/arcbox",
+      "trendshiftUrl": "https://trendshift.io/repositories/88219",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-04T14:46:50Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "sapientinc/PRAXIST",
+      "owner": "sapientinc",
+      "repo": "PRAXIST",
+      "description": "Autonomous research system for measurable, computer-executable research.",
+      "githubUrl": "https://github.com/sapientinc/PRAXIST",
+      "trendshiftUrl": "https://trendshift.io/repositories/191537",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-27T14:20:58Z"
+    },
+    {
+      "rank": 6,
       "fullName": "browser-use/jev-ultrafast",
       "owner": "browser-use",
       "repo": "jev-ultrafast",
@@ -26,7 +94,7 @@
       "dateCreated": "2026-09-16T21:30:12Z"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "fullName": "cloudflare/security-audit-skill",
       "owner": "cloudflare",
       "repo": "security-audit-skill",
@@ -42,21 +110,7 @@
       "dateCreated": "2026-06-18T14:08:44Z"
     },
     {
-      "rank": 3,
-      "fullName": "eternity4719/HowToLiveBetter",
-      "owner": "eternity4719",
-      "repo": "HowToLiveBetter",
-      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
-      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
-      "trendshiftUrl": "https://trendshift.io/repositories/222292",
-      "language": "HTML",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2026-09-07T01:53:36Z"
-    },
-    {
-      "rank": 4,
+      "rank": 8,
       "fullName": "tamaratran/fast-jev-compaction",
       "owner": "tamaratran",
       "repo": "fast-jev-compaction",
@@ -68,87 +122,33 @@
       "dateCreated": "2026-09-17T05:57:20Z"
     },
     {
-      "rank": 5,
-      "fullName": "latent-spaces/brag",
-      "owner": "latent-spaces",
-      "repo": "brag",
-      "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
-      "githubUrl": "https://github.com/latent-spaces/brag",
-      "trendshiftUrl": "https://trendshift.io/repositories/56942",
-      "language": "Python",
+      "rank": 9,
+      "fullName": "crivion/laranode",
+      "owner": "crivion",
+      "repo": "laranode",
+      "description": "Easily manage your VPS/dedicated machine with Laranode (a cPanel/Plesk alternative)",
+      "githubUrl": "https://github.com/crivion/laranode",
+      "trendshiftUrl": "https://trendshift.io/repositories/78503",
+      "language": "JavaScript",
       "topics": [
-        "AI video generation"
-      ],
-      "dateCreated": "2026-06-16T19:36:36Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "bendlang/bend",
-      "owner": "bendlang",
-      "repo": "bend",
-      "description": "A massively parallel, high-level programming language",
-      "githubUrl": "https://github.com/bendlang/bend",
-      "trendshiftUrl": "https://trendshift.io/repositories/10220",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2023-08-29T20:44:32Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "Tencent/BrowserSkill",
-      "owner": "Tencent",
-      "repo": "BrowserSkill",
-      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
-      "githubUrl": "https://github.com/Tencent/BrowserSkill",
-      "trendshiftUrl": "https://trendshift.io/repositories/79254",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-06-22T07:24:40Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "wide-trace/open-higgsfield",
-      "owner": "wide-trace",
-      "repo": "open-higgsfield",
-      "description": "A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery.",
-      "githubUrl": "https://github.com/wide-trace/open-higgsfield",
-      "trendshiftUrl": "https://trendshift.io/repositories/188320",
-      "language": "TypeScript",
-      "topics": [
-        "AI image generation",
-        "AI video generation",
         "Self-hosted"
       ],
-      "dateCreated": "2026-08-26T06:09:58Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "Open-Dev-Society/OpenStock",
-      "owner": "Open-Dev-Society",
-      "repo": "OpenStock",
-      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
-      "githubUrl": "https://github.com/Open-Dev-Society/OpenStock",
-      "trendshiftUrl": "https://trendshift.io/repositories/15728",
-      "language": "TypeScript",
-      "topics": [
-        "Authentication",
-        "Fintech"
-      ],
-      "dateCreated": "2025-09-28T18:16:32Z"
+      "dateCreated": "2025-01-31T12:03:48Z"
     },
     {
       "rank": 10,
-      "fullName": "TheoLeeCJ/SemIf",
-      "owner": "TheoLeeCJ",
-      "repo": "SemIf",
-      "description": "Can we run something like Jev on a 3090 at home?",
-      "githubUrl": "https://github.com/TheoLeeCJ/SemIf",
-      "trendshiftUrl": "https://trendshift.io/repositories/241523",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-09-16T03:51:21Z"
+      "fullName": "MiniMax-AI/minimax-code",
+      "owner": "MiniMax-AI",
+      "repo": "minimax-code",
+      "description": "An open-source coding agent for your terminal, powered by MiniMax.",
+      "githubUrl": "https://github.com/MiniMax-AI/minimax-code",
+      "trendshiftUrl": "https://trendshift.io/repositories/244823",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-06-01T12:39:40Z"
     }
   ]
 }
