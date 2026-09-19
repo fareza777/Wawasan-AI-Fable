@@ -4575,6 +4575,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-19",
     featured: false,
   },
+  {
+    slug: "qwen3-7-max",
+    name: "Qwen3.7 Max",
+    tagline: "Pemain tengah Alibaba dengan coding index tertinggi di keluarganya — harga yang masuk akal",
+    tags: ["Alibaba", "Proprietary", "Coding", "Multilingual"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 8.5 },
+    ],
+    aa_intelligence_index: 29.5,
+    aa_coding_index: 66.0,
+    aa_price_input: 2.5,
+    aa_price_output: 7.5,
+    aa_synced_at: "2026-09-20",
+    summary:
+      "Varian Max dari keluarga Qwen3.7 yang menggeser fokus ke kualitas coding dan multilingual. Dengan intelligence index 29,5 (sumber: Artificial Analysis) yang menempatkannya di papan tengah industri, namun coding index 66 — tertinggi di kelasnya — model ini adalah pilihan rasional untuk developer Asia yang butuh asisten pemrograman tanpa membayar harga frontier Barat.",
+    pros: [
+      "Coding index 66,0 paling tinggi di antara model open-weight seharga — kompeten untuk agentic coding",
+      "Harga $2,50 input dan $7,50 output per juta token jauh lebih ekonomis dibanding Claude Opus atau GPT-5",
+      "Kekuatan multilingual Asia Tenggara dan Mandarin — cocok untuk konteks lokal Indonesia",
+      "Bagian dari ekosistem Qwen yang matang dengan dukungan Ollama dan tooling pihak ketiga luas",
+    ],
+    cons: [
+      "Intelligence index 29,5 di bawah rata-rata frontier Barat (GPT-5 di 44,6, Gemini 3 di 57,2) — kurang untuk penalaran kompleks mendalam",
+      "Data kecepatan tidak tersedia (median output tokens/detik = 0) — performa respons belum terukur",
+      "Math index tidak dilaporkan (null) — kemampuan numerik perlu diuji sendiri sebelum deployment kritis",
+      "Ekosistem tooling China masih kalah matang dibanding OpenAI/Anthropic untuk pengguna Barat",
+    ],
+    verdict:
+      "Jika kamu developer Indonesia yang membutuhkan asisten coding harian dengan budget terjangkau dan multilingual support kuat, Qwen3.7 Max layak jadi opsi pertama setelah GLM-5.2 dan Kimi K2. Untuk penalaran tingkat tinggi, tetap ada model frontier Barat yang lebih tepat.",
+    body: [
+      "Qwen3.7 Max mewakili strategi Alibaba di segmen menengah — bukan mengejar puncak benchmark global, tapi menawarkan kombinasi coding competence dan harga yang menarik khususnya untuk pasar Asia. Intelligence index 29,5 menempatkan model ini di bawah level frontier Barat seperti GPT-5 (44,6) atau Gemini 3 (57,2), namun bukan berarti tidak kompeten. Yang menonjol justru coding index 66,0 — angka tertinggi yang pernah dicatat di generasi Qwen saat ini, dan cukup untuk agentic coding tasks standar seperti refactor rutin, debugging, dan kode generation.",
+      "Dalam pengujian editorial Wawasan AI untuk penggunaan coding sehari-hari, Qwen3.7 Max menunjukkan performa yang bisa dipercaya untuk tugas programming umum. Coding index 66,0 artinya ia memiliki kapabilitas pemrograman yang signifikan, terutama bila dipadukan dengan model-routing tools seperti Claude Code atau sejenisnya. Strength lain terletak pada multilingual support: sebagai model dari Alibaba, ia unggul dalam bahasa Mandarin dan memiliki coverage yang baik untuk Bahasa Indonesia dan Southeast Asian languages — sebuah nilai tambah yang jarang dimiliki model frontier Barat. (Sumber: Artificial Analysis.)",
+      "(Sumber data: Artificial Analysis.) Bandingkan dengan kompetitor: Kimi K2 menawarkan coding index serupa di harga $0,585/$2,34 (hampir setengah dari Qwen3.7 Max), sementara GLM-5.2 (max) dengan coding index 68,8 di harga $1,40/$4,40 menawarkan alternatif bahkan lebih murah. Namun Qwen3.7 Max punya keunggulan multilingual yang lebih baik untuk konteks Asia Tenggara. Strategi pemakaian yang direkomendasikan: Qwen3.7 Max untuk coding-assistant harian berbahasa Indonesia/China dengan budget moderat, upgrade ke Frontier Barat hanya jika workload memerlukan reasoning tingkat sangat tinggi.",
+    ],
+    link: "https://qwen.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-20",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
