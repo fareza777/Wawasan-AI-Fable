@@ -3974,6 +3974,46 @@ export const stacks: Review[] = [
     date: "2026-09-18",
     featured: false,
   },
+  {
+    slug: "claude-code-sdk",
+    name: "Claude Code SDK",
+    tagline: "Embedding Claude Code ke aplikasi dan CI sebagai library, bukan hanya terminal",
+    tags: ["Anthropic", "CLI", "Open Source", "Dev Automation"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 9.0 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 7.5 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 8.0 },
+    ],
+    summary:
+      "Claude Code SDK (Agent SDK) mengubah cara tim menggunakan agen coding: dari interaksi manual di terminal menjadi integrasi programatik yang bisa dijepit langsung ke CI pipeline, aplikasi internal, atau arsitektur microservice. Anthropic merilis library ini agar kekuatan Claude Code tersedia bukan cuma melalui antarmuka chat tapi juga melalui kode — memungkinkan automasi kompleks yang sebelumnya butuh banyak tool terpisah untuk dikerjakan dalam satu alur.",
+    pros: [
+      "Membawa seluruh kemampuan agentic Claude Code ke luar terminal — CI, aplikasi, serverless function, atau arsitektur berbasis agent",
+      "Full feature parity: custom tools, skills, hooks, subagents, MCP, streaming output, dan file checkpointing semuanya tersedia via SDK",
+      "Tersedia di TypeScript dan Python dengan dokumentasi terstruktur lengkap dan contoh nyata langsung bisa dijalankan",
+      "Biaya transparan via cost tracking built-in, jadi kamu tahu persis berapa token yang dipakai per eksekusi agent",
+      "Open-source dan terintegrasi native dengan ekosistem MCP yang semakin matang untuk menghubungkan tools eksternal",
+    ],
+    cons: [
+      "Kurva pembelajaran cukup curam bagi developer yang baru kenal konsep agentic workflow dan permission model SDK",
+      "Tidak ada self-host option: eksekusi tetap lewat API Anthropic, sehingga data processing mengikuti policy cloud mereka",
+      "Dokumentasi masih terus berevolusi — beberapa fitur seperti subagents dan tool search belum stabil untuk production-critical",
+      "Relatively young compared to established CI/integration frameworks; limited community patterns dan best practices",
+    ],
+    verdict:
+      "Bagi tim yang ingin membawa standar agentic coding tertinggi langsung ke infrastruktur mereka, Claude Code SDK adalah pilihan paling matang saat ini. Catatan utamanya: ia baru dan menuntut investasi waktu untuk memahami pola-pola dasarnya, sehingga lebih cocok untuk team yang sudah familiar dengan Claude Code daripada developer yang mulai dari nol.",
+    body: [
+      "Pergeseran dari 'chat-based AI assistant' ke 'embedded AI agent' adalah langkah natural berikutnya setelah Claude Code membuktikan bahwa agen coding bisa mengerjakan tugas kompleks secara mandiri. Claude Code SDK (yang juga dikenal sebagai Anthropic Agent SDK) adalah jawaban resmi Anthropic untuk kebutuhan itu: bukan sekadar API wrapper, tapi library lengkap yang mengekspos seluruh engine agentic Claude Code sehingga developer bisa mengintegrasikannya ke dalam CI pipeline, aplikasi web, atau bahkan arsitektur microservice. Ini berbeda jauh dari pendekatan tradisional di mana AI coding tool cuma dipanggil lewat command line sebelum commit — sekarang prosesnya terjadi secara otomatis, tanpa perlu developer membuka terminal sama sekali.",
+      "Fitur standout SDK ini mencakup hampir semua kemampuan yang membuat Claude Code populer: custom tools untuk memberi agen akses ke sistem spesifik perusahaan, skills sebagai konteks reusable, hooks untuk intercept perubahan sebelum diterapkan, subagents untuk parallelisasi tugas kompleks, plus dukungan penuh ke MCP untuk menghubungkan tools eksternal. Yang membedakan SDK dari produk Claude Code biasa adalah kontrol granular atas permission model, session persistence ke storage eksternal, streaming output untuk progress real-time, dan cost tracking built-in — setiap eksekusi agent bisa dilacak kontribusinya terhadap budget bulanan. Dalam praktiknya, tim engineering bisa menempatkan 'agen coding otonom' di tengah CI pipeline yang melakukan code review otomatis, fix lint error, update dependensi, dan run test suite sambil menunggu PR reviewer approve — semuanya tanpa intervensi manusia sampai hasil akhir ready.",
+      "Untuk developer dan tim di Indonesia, Claude Code SDK membuka pintu menarik meski dengan catatan penting. Pertama, bagi freelance developer dan konsultan IT yang sering handle multiple project dengan deadline ketat, kemampuan embedding Claude Code ke tools personal atau internal bisa menghemat 30-50% waktu untuk task repetitif seperti scaffolding boilerplate, migrasi database, atau penulisan test suite. Kedua, startup teknologi Indonesia yang sedang scale-up dan butuh automasi quality assurance di CI bisa memanfaatkan SDK untuk menjaga standar kode tanpa hire QA engineer tambahan — meskipun tetap perlu human review di tahap final karena tidak ada system yang sempurna ketiga, biaya operasional SDK dihitung berdasarkan pemakaian API Claude, yang berarti tetap bergantung pada dolar AS dan fluktuasi kurs. Saran editorial: bagi tim kecil Indonesia yang ingin mencoba, mulailah dari setup lokal di development machine dulu untuk familiarisasi, baru migrasi ke CI ketika pola penggunaan sudah jelas dan ROI per jam terhitung positif. Keempat, komunitas developer Indonesia yang sudah aktif pakai Claude Code secara manual (via terminal/IDE) akan mengalami transisi relatively smooth karena SDK memanfaatkan knowledge dan skill yang sudah ada — tinggal belajar aspek programatik tambahan.",
+    ],
+    link: "https://code.claude.com/docs/en/agent-sdk/overview",
+    linkLabel: "Dokumentasi",
+    date: "2026-09-19",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
