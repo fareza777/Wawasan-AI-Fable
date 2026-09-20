@@ -4618,6 +4618,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-20",
     featured: false,
   },
+  {
+    slug: "claude-fable-5-1-low",
+    name: "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+    tagline: "Penalaran adaptif dengan efisiensi — fokus pada kualitas jawaban, bukan kecepatan mentah",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Development"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 8.5 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 8.0 },
+    ],
+    aa_intelligence_index: 46.8,
+    aa_coding_index: 75.2,
+    aa_price_input: 10,
+    aa_price_output: 50,
+    aa_synced_at: "2026-09-21",
+    summary:
+      "Varian Low-Effort dari keluarga Claude Fable 5.1 yang menyeimbangkan kualitas penalaran dan efisiensi biaya. Dengan intelligence index 46,8 (sumber: Artificial Analysis) selevel dengan Claude Opus 4.5 di benchmark industri, namun coding index 75,2 yang jauh lebih tinggi — menjadikannya pilihan menarik untuk developer yang butuh asisten coding cerdas tanpa membayar harga premium varian reasoning terberat.",
+    pros: [
+      "Intelligence index 46,8 setara frontier Barat — kompeten untuk penalaran teknis dan debugging rumit",
+      "Coding index 75,2 sangat tinggi — jauh di atas rata-rata model proprietary seharga $10/$50 per juta token",
+      "Pola adaptive reasoning menghasilkan respons kontekstual — tidak selalu berpikir keras, cukup di mana perlu",
+      "Ekosistem Anthropic terpercaya dengan API stabil dan dokumentasi lengkap",
+    ],
+    cons: [
+      "Median output 50 tok/detik masih moderat — tidak secepat model distilled murah seperti DeepSeek atau Qwen",
+      "Pertama-token ~4,3 detik terasa lambat untuk workflow interaktif yang butuh feedback cepat",
+      "Harga $50/M output tetap premium — sama dengan Claude Opus, bukan nilai budget terbaik",
+      "Math index tidak tersedia — kemampuan numerik belum terverifikasi di benchmark AAA",
+    ],
+    verdict:
+      "Claude Fable 5.1 Low-effort cocok untuk developer Indonesia yang butuh asisten coding berkualitas tinggi dengan budget moderat. Jika kamu sudah memakai Sonnet untuk tugas harian dan sesekali butuh thinking lebih dalam, ini jembatan yang ideal sebelum beralih ke Opus untuk kasus-kasus spesifik.",
+    body: [
+      "Claude Fable 5.1 Low-Effort mewakili pendekatan Anthropic terhadap model reasoning yang hemat biaya: bukannya mengejar indeks tertinggi di semua dimensi, ia memilih fokus pada penalaran adaptif dengan efisiensi sumber daya. Intelligence index 46,8 menempatkan model ini sejajar dengan Claude Opus 4.5 (43,1) di peringkat industri, sementara coding index 75,2 melonjakkan kualitas pemrogramannya secara signifikan dibandingkan Opus yang hanya 42,9. Kombinasi angka-angka ini menunjukkan model yang sengaja dioptimalkan untuk developer — cerdas untuk coding, tapi tidak membengkak harganya.",
+      "Dalam pengujian editorial Wawasan AI, varian ini menunjukkan performa yang konsisten untuk task development sehari-hari: generate kode dari deskripsi natural, refactor skrip Python sederhana, debug error log, dan menulis dokumentasi teknis. Keunggulan utamanya terletak pada pola adaptive reasoning — ia bisa dialihkan ke mode Low Effort untuk jawaban cepat pada pertanyaan straightforward, lalu otomatis naik ke level reasoning yang lebih dalam saat mendeteksi kompleksitas. Ini berbeda dari pendekatan satu-ukuran-untuk-semua yang dipakai model frontier konvensional. (Sumber: Artificial Analysis.)",
+      "(Sumber data: Artificial Analysis.) Bandingkan dengan alternatif: untuk coding-assistant harian, Kimi K2 di harga $0,585/$2,34 menawarkan coding competence comparable dengan fraksi biaya; GLM-5.2 (max) di $1,40/$4,40 juga kompetitif dengan coding index 68,8. Namun Claude Fable 5.1 Low-effort punya keunggulan kualitas output yang lebih halus dan ekosistem Anthropic yang lebih matang. Strategi pemakaian yang direkomendasikan: gunakan sebagai primary assistant untuk project-level coding task, fallback ke model lebih murah untuk batch processing volume besar, dan pertimbangkan Opus 4.5 hanya untuk agentic loops yang benar-benar kompleks.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-21",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
