@@ -4014,6 +4014,47 @@ export const stacks: Review[] = [
     date: "2026-09-19",
     featured: false,
   },
+  {
+    slug: "elevenlabs-agents",
+    name: "ElevenLabs Agents",
+    tagline: "Platform deploy dan kelola voice agent dengan knowledge base terintegrasi",
+    tags: ["ElevenLabs", "Freemium", "Voice/Audio", "Agent Orchestration"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.7 },
+      { label: "Kualitas Output", value: 8.8 },
+      { label: "Pengalaman Pengguna", value: 8.4 },
+      { label: "Ekosistem & Integrasi", value: 8.3 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "ElevenLabs Agents adalah platform yang memungkinkan developer dan bisnis deploy agen suara otonom yang punya knowledge base, bisa integrasi tools eksternal, dan mengelola multi-step conversations tanpa perlu menulis glue code — semua dalam satu dashboard visual atau REST API.",
+    pros: [
+      "Knowledge base built-in: upload dokumen atau URL, agen langsung paham konteks bisnismu tanpa setup RAG terpisah",
+      "Subagent orchestration: satu agen induk bisa delegasikan tugas ke subagen spesialis — cocok untuk alur customer service yang butuh fallback dari FAQ ke operator manusia",
+      "Latensi di bawah 500 ms dengan model Pinewood: cukup natural untuk percakapan telepon nyata tanpa jeda kaku",
+      "Integrasi tool eksternal via MCP dan webhook: agen bisa query database, check kalender, atau trigger action di sistem pihak ketiga",
+      "Monitoring dan analytics bawaan: setiap sesi tercatat dengan transcript, sentimen, dan resolution rate — bukan black box",
+    ],
+    cons: [
+      "Tidak se-fleksibel stack DIY seperti LiveKit + OpenAI: kalau kamu butuh kontrol penuh atas turn-taking logic atau model LLM yang dipakai, TwelveLabs Agents memaksakan proprietary stack mereka",
+      "Biaya per menit masih jadi hambatan utama untuk production volume tinggi: tier gratis cuma 10.000 menit per tahun, dan setelah itu harga per menit mulai dari sekitar $0.08",
+      "Dokumentasi developer masih fokus ke tutorial cepat daripada best practice produksi: fitur advanced seperti conditional routing antar subagen kurang terdokumentasi secara mendalam",
+      "Bahasa Indonesia belum masuk daftar bahasa yang mendapat dukungan first-class; pemahaman kode-mixed Indo-Inggris masih kalah dibanding English-native workflows",
+    ],
+    verdict:
+      "Pilihan paling realistis untuk bisnis Indonesia yang ingin voice agent siap-deploy tanpa tim engineering besar. Catatan utamanya: kalau volume panggilan di atas 5.000 per bulan, hitung dulu biaya per menit terhadap budget sebelum committed — dan pastikan SOP pengetahuan agen kamu sudah rapi sebelum mengandalkan output otomasi.",
+    body: [
+      "ElevenLabs Agents mengambil pendekatan berbeda dari yang ditawarkan ElevenLabs Conversational AI: bukannya menyediakan satu voice agent monolitik yang menangani semua skenario, platform ini memberi builder yang memungkinkan kamu merangkai agen berbasis knowledge dan tool-integration yang bisa bekerja multi-step. Dari sisi teknis, kamu upload knowledge base (file PDF, halaman web, atau konten dari CRM), tentukan personality dan tone suara, lalu biarkan agen menangani percakapan — dia tahu kapan harus menjawab langsung berdasarkan knowledge base, kapan perlu bertanya klarifikasi lebih dalam, dan kapan harus escalade ke handler lain melalui webhook.",
+      "Yang membedakan ElevenLabs Agents dari kompetitor seperti Vapi.ai, Retell AI, atau PlayDialog adalah kedalaman ekosistem suara yang mereka miliki. Voice cloning instan, library 1.000+ preset suara, dan dukungan 70+ bahasa berarti kamu tidak perlu cari vendor TTS tambahan. Fitur subagent orchestration juga cukup canggih: satu agen induk bisa delegasikan task spesifik ke subagen yang punya knowledge base berbeda — misalnya agen induk menangani general inquiry tentang produk, lalu delegate pertanyaan billing ke subagen finance yang punya access ke knowledge base policy refund. Untuk UMKM Indonesia yang baru mau otomatisasi layanan pelanggan tapi tidak punya engineer full-time untuk build custom bot, ini adalah sweet spot antara kemudahan no-code dan kemampuan agentic yang serius.",
+      "Untuk pengguna Indonesia, tiga hal penting yang perlu dipertimbangkan sebelum commit. Pertama, ekonomi biaya: tier Creator $22/bulan (sekitar Rp 360.000) masuk akal untuk volume rendah, tapi sekali pakai mulai lewat tier gratis, kamu akan face biaya per menit. Sebuah call center kecil di Surabaya yang handle 3.000-5.000 panggilan sebulan akan spend sekitar $240-$400/bulan (Rp 3,9-$6,5 juta) hanya untuk biaya usage — ini jauh lebih murah daripada hire CS agent full-time, tapi masih signifikan bagi UKM. Kedua, kualitas Bahasa Indonesia: meskipun ElevenLabs mendukung Bahasa Indonesia di beberapa model TTS, knowledge base dan agent behavior optimization masih jauh lebih matang untuk English. Kalau kamu bikin agent untuk pasar Indonesia yang dominan bilingual, siapkan script dan knowledge base dalam kedua bahasa agar hasil percakapan tetap natural. Ketiga, lock-in risk: karena seluruh stack — STT, LLM, TTS — berjalan di infrastruktur ElevenLabs proprietary, migrasi keluar membutuhkan effort re-engineering yang tidak trivial; buat bisnis yang menganggap data compliance sebagai isu kritis (bank, rumah sakit), negosiasi enterprise plan untuk data residency adalah keharusan bukan pilihan.",
+      "Kesimpulannya, ElevenLabs Agents adalah jembatan terbaik untuk bisnis Indonesia yang ingin masuk ke era voice agent tanpa membangun tim AI engineering dari nol. Mulai dari paket gratis untuk prototype, upgrade Creator kalau volume naik, dan evaluasi ROI per jam CS yang dihemat sebelum commit ke scale plan. Jika prioritas kamu adalah speed-to-market dan kualitas suara di atas kontrol total, ElevenLabs Agents adalah jawaban. Tapi ingat: sebaik apapun agen ElevenLabs, quality of input menentukan quality of output — invest waktu di knowledge base dan SOP sebelum mengaktifkan agen di jalur produksi.",
+    ],
+    link: "https://elevenlabs.io/agents",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-20",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
