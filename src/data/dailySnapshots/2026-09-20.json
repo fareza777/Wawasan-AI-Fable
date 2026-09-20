@@ -1,17 +1,27 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "20 September 2026",
-  "period": {
-    "date": "2026-09-20",
-    "label": "20 September 2026",
-    "path": "/repo/daily/2026/09/20"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-20T00:04:19.000Z",
+  "fetchedAt": "2026-09-20T06:45:05.955Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "NandhaKishorM/laya",
+      "owner": "NandhaKishorM",
+      "repo": "laya",
+      "description": "",
+      "githubUrl": "https://github.com/NandhaKishorM/laya",
+      "trendshiftUrl": "https://trendshift.io/repositories/244591",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-18T04:46:33Z"
+    },
+    {
+      "rank": 2,
       "fullName": "browser-use/jev-ultrafast",
       "owner": "browser-use",
       "repo": "jev-ultrafast",
@@ -26,7 +36,7 @@
       "dateCreated": "2026-09-16T21:30:12Z"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "fullName": "robbietilton/Compositor",
       "owner": "robbietilton",
       "repo": "Compositor",
@@ -40,52 +50,70 @@
       "dateCreated": "2026-09-16T20:35:54Z"
     },
     {
-      "rank": 3,
-      "fullName": "cloudflare/security-audit-skill",
-      "owner": "cloudflare",
-      "repo": "security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/64056",
-      "language": "JavaScript",
-      "topics": [
-        "AI agent",
-        "AI skills",
-        "Pentesting"
-      ],
-      "dateCreated": "2026-06-18T14:08:44Z"
-    },
-    {
       "rank": 4,
-      "fullName": "trycua/cua",
-      "owner": "trycua",
-      "repo": "cua",
-      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
-      "githubUrl": "https://github.com/trycua/cua",
-      "trendshiftUrl": "https://trendshift.io/repositories/13685",
-      "language": "HTML",
+      "fullName": "ruanyf/weekly",
+      "owner": "ruanyf",
+      "repo": "weekly",
+      "description": "科技爱好者周刊，每周五发布",
+      "githubUrl": "https://github.com/ruanyf/weekly",
+      "trendshiftUrl": "https://trendshift.io/repositories/6132",
       "topics": [
-        "AI agent",
-        "AI infrastructure"
+        "Curated list"
       ],
-      "dateCreated": "2025-01-31T15:02:49Z"
+      "dateCreated": "2018-10-13T12:36:07Z"
     },
     {
       "rank": 5,
-      "fullName": "NandhaKishorM/laya",
-      "owner": "NandhaKishorM",
-      "repo": "laya",
-      "description": "",
-      "githubUrl": "https://github.com/NandhaKishorM/laya",
-      "trendshiftUrl": "https://trendshift.io/repositories/244591",
-      "language": "Python",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-09-18T04:46:33Z"
+      "fullName": "vladelaina/BongoCat",
+      "owner": "vladelaina",
+      "repo": "BongoCat",
+      "description": "🩷 💘C × SDL3 × OpenGL, stir it up, mash it together! Bong~ Bongocat!!! Don't be shy, join here🧸: https://discord.gg/vf8jqnattk",
+      "githubUrl": "https://github.com/vladelaina/BongoCat",
+      "trendshiftUrl": "https://trendshift.io/repositories/208618",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-08-22T21:06:36Z"
     },
     {
       "rank": 6,
+      "fullName": "bespokelabsai/nimble",
+      "owner": "bespokelabsai",
+      "repo": "nimble",
+      "description": "Local typed decisions, contrastive data curation, and model evaluation.",
+      "githubUrl": "https://github.com/bespokelabsai/nimble",
+      "trendshiftUrl": "https://trendshift.io/repositories/247294",
+      "language": "Python",
+      "topics": [
+        "Synthetic data"
+      ],
+      "dateCreated": "2026-09-18T09:07:48Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "ZuodaoTech/everyone-can-use-english",
+      "owner": "ZuodaoTech",
+      "repo": "everyone-can-use-english",
+      "description": "人人都能用英语",
+      "githubUrl": "https://github.com/ZuodaoTech/everyone-can-use-english",
+      "trendshiftUrl": "https://trendshift.io/repositories/11001",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2019-03-15T16:33:53Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "arcboxlabs/arcbox",
+      "owner": "arcboxlabs",
+      "repo": "arcbox",
+      "description": "Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <200ms boot. Local first, OCI compatible, pure Rust.",
+      "githubUrl": "https://github.com/arcboxlabs/arcbox",
+      "trendshiftUrl": "https://trendshift.io/repositories/88219",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-01-04T14:46:50Z"
+    },
+    {
+      "rank": 9,
       "fullName": "deeplethe/utopia",
       "owner": "deeplethe",
       "repo": "utopia",
@@ -102,59 +130,16 @@
       "dateCreated": "2026-08-07T19:33:17Z"
     },
     {
-      "rank": 7,
-      "fullName": "tamaratran/fast-jev-compaction",
-      "owner": "tamaratran",
-      "repo": "fast-jev-compaction",
-      "description": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.",
-      "githubUrl": "https://github.com/tamaratran/fast-jev-compaction",
-      "trendshiftUrl": "https://trendshift.io/repositories/244477",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-09-17T05:57:20Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "feder-cr/invisible_playwright",
-      "owner": "feder-cr",
-      "repo": "invisible_playwright",
-      "description": "Free antidetect browser stealth for Playwright: undetected headless Firefox fingerprint. Python scraping, recaptcha and bot detection bypass. Open source",
-      "githubUrl": "https://github.com/feder-cr/invisible_playwright",
-      "trendshiftUrl": "https://trendshift.io/repositories/30884",
-      "language": "Python",
-      "topics": [
-        "Headless browser"
-      ],
-      "dateCreated": "2026-05-13T05:04:33Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "latent-spaces/brag",
-      "owner": "latent-spaces",
-      "repo": "brag",
-      "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
-      "githubUrl": "https://github.com/latent-spaces/brag",
-      "trendshiftUrl": "https://trendshift.io/repositories/56942",
-      "language": "Python",
-      "topics": [
-        "AI video generation"
-      ],
-      "dateCreated": "2026-06-16T19:36:36Z"
-    },
-    {
       "rank": 10,
-      "fullName": "mcncarl/jianying-headless",
-      "owner": "mcncarl",
-      "repo": "jianying-headless",
-      "description": "Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent Skill.",
-      "githubUrl": "https://github.com/mcncarl/jianying-headless",
-      "trendshiftUrl": "https://trendshift.io/repositories/244357",
+      "fullName": "TianyuCodings/NanoJev",
+      "owner": "TianyuCodings",
+      "repo": "NanoJev",
+      "description": "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline.",
+      "githubUrl": "https://github.com/TianyuCodings/NanoJev",
+      "trendshiftUrl": "https://trendshift.io/repositories/244603",
       "language": "Python",
-      "topics": [
-        "AI video generation",
-        "Video editing"
-      ],
-      "dateCreated": "2026-09-15T11:51:15Z"
+      "topics": [],
+      "dateCreated": "2026-09-17T16:08:30Z"
     }
   ]
 }
