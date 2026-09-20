@@ -2687,6 +2687,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Kembali trending minggu ini berkat kebangkitan minat terhadap reverse engineering pasca peningkatan ancaman supply chain — GitHub repo yang sudah berusia bertahun-tahun ini mendulang ulang momentum signifikan di kalangan engineer keamanan Asia Tenggara.",
     ],
   },
+  "FailproofAI/failproofai": {
+    description:
+      "Infrastruktur observabilitas dan enforce untuk 12+ agen coding AI — tangkap setiap runtime, terapkan 39 kebijakan bawaan, dan blokir tool call berbahaya sebelum dieksekusi, semua berjalan lokal tanpa latency.",
+    highlights: [
+      "Hook ke 12 agent harness (Claude Code, Codex, Hermes, OpenClaw, Gemini CLI, dll.) — satu API kebijakan dan session history yang sama untuk semua agen, bukan setup terpisah per tool.",
+      "39 built-in policies yang mendeteksi loop tak terhingga, tindakan berbahaya, kebocoran secret/API key, dan privilege escalation — bukan sekadar logging, tapi actual blocking sebelum kerusakan terjadi.",
+      "Lisensi MIT + Commons Clause dengan supply chain aman (tervalidasi osv-scanner) — relevan untuk tim Indonesia yang pakai banyak coding agent paralel dan perlu layer keamanan di atas agentic workflow.",
+      "Zero-latency enforcement karena berjalan lokal: tidak ada request ke cloud, tidak ada polling external server, cocok untuk developer yang peduli privasi kode sekaligus butuh safety net saat agen melakukan tool call otomatis.",
+    ],
+  },
+  "NandhaKishorM/laya": {
+    description:
+      "Mesin keputusan multilingual non-autoregresif dari ConvAI Innovations — evaluasi pertanyaan berformat dalam 33 ms per query dengan satu forward pass saja, tanpa text generation sehingga nol risiko halusinasi.",
+    highlights: [
+      "Model System 1 berkecepatan tinggi: 33 ms untuk satu pertanyaan, 7,2 ms jika batch, diukur pada T4 — jauh lebih cepat dari LLM generatif biasa untuk task decision-making terstruktur seperti routing email, scoring ticket, atau validasi JSON.",
+      "Tiga checkpoint siap pakai: English (ModernBERT-large 421M), Multilingual 100+ bahasa (mmBERT-base 322M, 2x lebih cepat), dan Typed Decisions (untuk workflow bertipe stateful) — router bawaan otomatis pilih checkpoint optimal per request dalam sub-milidetik.",
+      "Dilatih dengan RLCD (Reinforcement Learning with Strictly Proper Scoring Rules): akurasi ditingkatkan lewat reward langsung berdasarkan kualitas prediksi, bukan fine-tuning umum — kalibrasi probabilitas sangat presisi sehingga aplikasi bisa mengandalkan confidence score.",
+      "Stack Python sederhana (`pip install laya`) dengan integrasi Colab langsung, Hugging Face model hub, dan demo interaktif — relevan untuk engineer Indonesia yang bangun sistem triage otomatis, auto-routing support ticket, atau classification pipeline yang butuh keputusan cepat di bawah 50ms per kasus.",
+    ],
+  },
+  "Open-Dev-Society/OpenStock": {
+    description:
+      "Platform pasar terbuka untuk pelacakan harga saham real-time, alert kustom, dan insight perusahaan — alternatif gratis untuk platform berbayar seperti Yahoo Finance Pro, dibangun Next.js + TypeScript dengan lisensi AGPL-3.0.",
+    highlights: [
+      "Dashboard market yang lengkap: tracking harga saham real-time, personalized alert berbasis threshold, visualisasi chart interaktif, dan detail perusahaan (financial metrics, news feed) — semua tanpa biaya langganan bulanan yang dikenakan platform proprietary.",
+      "Tech stack modern (Next.js, TypeScript, Tailwind CSS, shadcn/ui, Radix UI) dengan integrasi TradingView dan Finnhub sebagai sumber data pasar — deploy via Docker di VPS pribadi atau hosting apa pun, cocok untuk developer Indonesia yang ingin punya 'Yahoo Finance' sendiri tanpa dependency ke layanan cloud.",
+      "Sistem notifikasi built-in lewat email (Nodemailer) dan mungkin push notification — bukan sekadar dashboard statis, tapi aktif melaporkan perubahan harga atau breakout patterns sesuai preferensi user, menghemat waktu monitoring manual.",
+      "Lisensi AGPL-3.0 dari Open Dev Society: jika kamu memodifikasi atau men-deploy ulang kode ini (termasuk sebagai web service), kamu wajib merilis source code kembali — komunitas terbuka yang mendorong kolaborasi dan transparansi penuh.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
