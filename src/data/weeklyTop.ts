@@ -2657,6 +2657,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Fitur tambahan seperti full-page screenshot via `bsk screenshot --session <id> --full-page`, remote connection mode untuk server headless, dan sandboxed agent setup — relevan untuk developer Indonesia yang butuh otomasi web-based workflow (screen scraping, form filling, monitoring dashboard) tanpa headless browser yang mudah terdeteksi bot detection.",
     ],
   },
+  "eternity4719/HowToLiveBetter": {
+    description:
+      "Panduan hidup berbasis bukti ilmiah — 552 rekomendasi praktis mencakup umur panjang, kesehatan, keuangan, hukum, hubungan, hingga darurat, masing-masing dituliskan dengan biaya, dampak, tingkat bukti, dan tautan ke paper asli — tersedia sebagai buku daring interaktif atau PDF/EPUB untuk baca offline.",
+    highlights: [
+      "Membuat 552 saran kehidupan di 32 kategori — dari 'jangan mati lebih awal', 'jangan membuang energi', 'cara menyimpan uang agar tidak habis kena bunga', sampai 'apa yang harus dilakukan saat orang terdekat meninggal' — semuanya dikurasi berdasarkan jurnal peer-reviewed dan dokumen resmi pemerintah.",
+      "Bukan daftar tugas kaku melainkan menu yang diurutkan berdasarkan rasio cost-to-benefit tertinggi: ambil satu dua saran yang realistis lalu abaikan sisanya, karena penulisnya sendiri mengakui belum berhasil menerapkan kebanyakan dari mereka.",
+      "Tersedia dalam beberapa format — website pencarian online dengan filter keyword + chapter + tingkat bukti, PDF cetak berhalaman dua ratus, EPUB untuk Kindle atau e-reader, bahkan file HTML tunggal yang bisa dikirim lewat WhatsApp dan dibuka langsung tanpa server — satu repository, banyak cara akses.",
+      "Relevan untuk siapa saja yang lelah menerima nasihat kehidupan berupa konten viral tanpa sumber jelas — tiap entri menyertakan level bukti (A/B/C), angka riil tentang dampaknya, dan rujukan paper asli yang diverifikasi di direktori docs terpisah.",
+    ],
+  },
+  "latent-spaces/brag": {
+    description:
+      "Skill agen AI satu-komando untuk mengubah proyek yang baru saja kamu selesaikan menjadi video peluncuran pendek siap dibagikan — lengkap dengan musik, animasi, dan copy promosi, semua diproses oleh Hyperframes dari HeyGen.",
+    highlights: [
+      "Satu perintah `/brag` di dalam folder proyek mana pun — coding agent seperti Claude Code, Codex, Cursor, Gemini CLI, atau opencode akan menganalisis kode, menulis storyboard produk, lalu menghasilkan video `brag.mp4` beserta ringkasan share copy dan brief komposisi.",
+      "Terintegrasi standar Skill Discovery universal: tambahkan lewat `npx skills add https://github.com/latent-spaces/brag --skill brag` untuk kompatibilitas lintas platform, tanpa perlu konfigurasi manual — symlink otomatis menempatkan skill di setiap direktori yang didukung.",
+      "Mode suara opsional aktif lewat `/brag --voice` yang memanggil Kokoro TTS melalui Hyperframes — default-nya tanpa voiceover supaya proses cepat dan hemat biaya, cocok untuk demo internal yang ingin fokus pada visual bukan narasi.",
+      "Cocok untuk indie maker, founder startup, dan developer yang perlu showcase kerja cepat tanpa desain grafis — satu command, output jadi, share-ready, tanpa install tool editing atau belajar After Effects.",
+    ],
+  },
+  "NationalSecurityAgency/ghidra": {
+    description:
+      "Framework reverse engineering source terbuka versi militer AS yang dikembangkan oleh NSA — disassembler, decompiler, debugger, dan toolkit analisis biner gratis dan lintas platform untuk membedah malware, audit keamanan, atau riset arsitektur prosesor.",
+    highlights: [
+      "Decompiler C-like classik dari NSA: buka firmware, binary proprieteri, atau PE/ELF/Linux, lalu dapatkan kembali pseudocode C yang terbaca — kemampuan yang biasanya hanya ada di tools berlisensi jutaan dolar seperti IDA Pro.",
+      "Fitur lengkap dalam satu paket: SLEIGH compiler untuk bahasa mesin custom, scripting Java/Python/Ghidra Script, kolaborasi multi-user via server Ghidra, serta coverage analysis dan fungsi duplicate detection — relevan untuk malware analyst, security researcher, dan digital forensics practitioner Indonesia.",
+      "Open source penuh (Apache 2.0) dengan dukungan Windows, macOS, dan Linux — tidak pernah kehilangan akses lisensi saat perusahaan berhenti bayar langganan, dan komunitas global terus mengadopsi script, plugin, serta tutorial bahasa lokal.",
+      "Kembali trending minggu ini berkat kebangkitan minat terhadap reverse engineering pasca peningkatan ancaman supply chain — GitHub repo yang sudah berusia bertahun-tahun ini mendulang ulang momentum signifikan di kalangan engineer keamanan Asia Tenggara.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
