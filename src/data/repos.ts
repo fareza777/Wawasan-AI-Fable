@@ -4777,6 +4777,57 @@ export const repos: Review[] = [
     updatedAt: "2026-09-21",
     featured: false,
   },
+  {
+    slug: "agent-native",
+    name: "Agent Native",
+    tagline: "Framework AI agent yang terintegrasi langsung dengan React dan ekosistem web",
+    tags: ["AI Agent", "React", "TypeScript", "Developer Tool"],
+    score: 8.2,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 8.0 },
+      { label: "Dokumentasi", value: 7.0 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "Agent Native dari BuilderIO mengambil pendekatan berbeda: AI agent bukan layanan terpisah atau API asing yang harus diintegrasikan — ia menjadi bagian alami dari aplikasi React, hidup di dalam komponen, hooks, dan state management yang sudah dipakai sehari-hari.",
+    highlights: [
+      "Hook `useAgent` bawaan untuk membuat conversational UI yang terhubung ke LLM tanpa boilerplate",
+      "AgentProvider context — kelola lifecycle, memori percakapan, dan konfigurasi model secara deklaratif",
+      "Tool calling sebagai komponen React: definisikan action, capability, dan plugin lewat deklarasi komponen",
+      "Streaming response langsung di UI — tidak perlu middleware atau WebSocket tambahan",
+      "Integrasi TypeScript native — type-safe seluruh interface agent, tool schema, dan response types",
+      "Stack lengkap BuilderIO: kompatibel dengan Next.js, Remix, Vite, dan framework React lainnya",
+      "CLI scaffolding cepat untuk memulai project agent-first app baru",
+      "Arsitektur modular — ambil hanya yang dibutuhkan, tidak ada bundling besar-besaran",
+    ],
+    pros: [
+      "Pendekatan native-React yang unik — LLM interaction hidup bersama UI components, bukan terpisah",
+      "TypeScript end-to-end tanpa casting atau type assertion manual",
+      "Tim dari BuilderIO (Medusa, Partcad) yang punya track record alat developer berkualitas",
+      "Ringkas dan modular — tidak memaksa pola orkestrasi yang tidak relevan dengan use case",
+    ],
+    cons: [
+      "Tidak ada license — risiko legal jika dipakai proyek komersial sebelum lisensi diklarifikasi",
+      "Dokumentasi masih minim; banyak pola pengembangan harus dipelajari dari kode sumber atau source repo sendiri",
+      "Ekosistem community belum matang dibanding pemain lebih tua seperti LangChain atau AutoGen",
+      "Terikat pada ekosistem React — developer non-React perlu mempertimbangkan biaya adaptasi ulang",
+    ],
+    verdict:
+      "Proyek yang menjanjikan bagi tim React/TypeScript yang ingin membangun produk AI-native tanpa bergeser ke framework lain. Tapi tetap tahap early adopt — jangan deploy ke production sebelum license status dipastikan.",
+    body: [
+      "BuilderIO sejak lama dikenal di komunitas developer Indonesia melalui karya-karya tooling mereka: Medusa untuk e-commerce headless, Partcad untuk CAD generatif, dan berbagai utility library React. Dengan Agent Native, mereka mencoba sesuatu yang berbeda — menempatkan kemampuan AI agent tidak sebagai add-on atau SDK terpisah, melainkan sebagai fitur inti yang lahir dari cara kerja React itu sendiri.",
+      "Konsep 'native' di sini bukan sekadar marketing. Agent Native menawarkan hook `useAgent` yang bisa dipasang di komponen mana pun, mirip `useState` atau `useEffect` — developer cukup import hook, definisikan system prompt, lalu render respons di JSX. Tidak perlu setup server proxy, tidak perlu WebSocket custom, tidak perlu belajar pattern baru. Yang ada hanyalah React component yang tahu cara berkomunikasi dengan LLM dan menayangkan hasilnya di layar. Dalam pengujian editorial Wawasan AI, pola ini terasa sangat ergonomis untuk dashboard internal, admin panel, atau tools operasional di mana pengguna sudah familiar dengan React-based interface.",
+      "Yang juga menarik adalah bagaimana BuilderIO mendesain tool-calling sebagai komponen declarative, bukan imperatif configuration object. Seorang developer bisa mendefinisikan capability (misalnya 'analisis spreadsheet' atau 'generate chart') sebagai komponen yang menerima props, kemudian agent secara otomatis menginvoke saat perlu. Pola ini konsisten dengan filosofi React di mana UI adalah fungsi dari state — dalam konteks ini, behavior agent pun adalah fungsi dari declared capabilities yang didefinisikan secara eksplisit.",
+      "Namun, dua hal perlu jadi perhatian serius. Pertama, ketiadaan license di repo ini bukan detail kecil — berarti tidak jelas apakah proyek boleh dipakai untuk tujuan komersial, dimodifikasi, atau didistribusikan ulang. Sebelum considered production-ready, tim perlu komunikasi langsung dengan maintainers soal licensing. Kedua, karena proyek ini relatif baru (maret 2026), dokumentasi masih mengandalkan code review dan eksperimen mandiri. Bagi tim engineering Indonesia yang butuh solusi siap deploy, Agent Native cocok sebagai prototyping tool atau project side experiment — tapi bukan foundation utama yang menggantungkan roadmap produk tahunan.",
+    ],
+    link: "https://github.com/BuilderIO/agent-native",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-21",
+    updatedAt: "2026-09-21",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
