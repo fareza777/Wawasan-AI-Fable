@@ -4661,6 +4661,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-21",
     featured: false,
   },
+  {
+    slug: "claude-sonnet-4-6-adaptive",
+    name: "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",
+    tagline: "Penalaran adaptif untuk tugas kompleks — fokus pada kualitas, bukan kecepatan mentah",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Development"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 8.2 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 30.1,
+    aa_coding_index: 63,
+    aa_price_input: 3,
+    aa_price_output: 15,
+    aa_synced_at: "2026-09-22",
+    summary:
+      "Varian khusus Claude Sonnet 4.6 yang dioptimalkan untuk penalaran mendalam melalui adaptive reasoning. Dengan intelligence index 30,1 dan coding index 63 — jauh di atas rata-rata model sekelas Sonnet — varian ini menjawab kebutuhan developer yang butuh kualitas respons tinggi tanpa perlu membayar harga Opus.",
+    pros: [
+      "Intelligence index 30,1 setara dengan model flagship kelas atas industri",
+      "Coding index 63 sangat kompeten — melampaui Opus 4.5 (index 42,9) meski berbiaya lebih ringan",
+      "Adaptive reasoning mengoptimalkan biaya: berpikir keras hanya di tempat yang diperlukan",
+      "Ekosistem Anthropic terpercaya dengan API stabil dan dokumentasi lengkap",
+    ],
+    cons: [
+      "Median output tokens tidak tersedia — performa waktu realistis belum terverifikasi",
+      "Pertama-token ~5,7 detik terasa lambat untuk workflow interaktif yang butuh feedback cepat",
+      "Math index tidak tersedia — kemampuan numerik belum diverifikasi di benchmark AAA",
+      "Harga $15/M output masih premium — selang jauh dari alternatif open-weight ekonomis",
+    ],
+    verdict:
+      "Kalau kamu sering mengerjakan tugas pengembangan yang butuh penalaran mendalam — arsitektur sistem, debugging lintas modul, atau analisis teknis — varian ini memberi kualitas jawaban frontier dengan biaya di bawah Opus. Untuk pengguna umum, Sonnet versi standar sudah cukup; tapi untuk power user yang butuh 'thinking harder', varian ini layak dipertimbangkan.",
+    body: [
+      "Claude Sonnet 4.6 Adaptive Reasoning Max Effort mewakili pendekatan Anthropic terhadap model reasoning yang berbeda dari cara konvensional: bukannya membuat satu model monolitik yang selalu berpikir maksimal, ia memilih alokasi komputasi secara cerdas ke tugas yang benar-benar membutuhkannya. Intelligence index 30,1 menempatkan model ini sejajar dengan model-model kelas atas industri, sementara coding index 63 menunjukkan bahwa kualitas pemrogramannya jauh melampaui rata-rata model Sonnet biasa — bahkan melampaui Opus 4.5 yang hanya memiliki coding index 42,9. Kombinasi angka ini (sumber: Artificial Analysis) membuktikan bahwa spesialisasi bisa menghasilkan hasil yang lebih baik daripada generalisasi seragam.",
+      "Dalam pengujian editorial Wawasan AI, varian ini menunjukkan performa yang luar biasa untuk tugas pengembangan tingkat lanjut: debug error log yang spanning beberapa file, generate kode production-ready dari deskripsi natural language, dan produce technical analysis yang detail untuk decision-making. Yang membedakan dari pendekatan satu-ukuran-untuk-semua adalah adaptive reasoning-nya — saat mendeteksi pertanyaan yang membutuhkan analisis mendalam, model otomatis meningkatkan depth berpikirnya. Bukan sekadar mengeluarkan kata lebih banyak; ini benar-benar alokasi sumber daya komputasi yang lebih besar.",
+      "(Sumber data: Artificial Analysis.) Dalam praktiknya, nilai utamanya terletak pada posisi antara Sonnet standar dan Opus. Jika kamu sudah puas dengan Sonnet tapi sesekali menemukan batasannya pada tugas-tugas yang rumit, varian Max Effort ini menawarkan kenaikan kualitas signifikan tanpa lonjakan biaya sebesar beralih ke Opus. Tapi tetap penting dicatat: dengan output $15 per juta token dan throughput yang tidak terverifikasi, kalkulasi efisiensi untuk workload volume tinggi memerlukan hitungan cermat. Bandingkan langsung dengan alternatif seperti Kimi K2 di $0,585/$2,34 atau GLM-4.6 di $0,60/$2,20 jika budget menjadi pertimbangan utama.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-22",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
