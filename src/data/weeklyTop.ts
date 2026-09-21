@@ -2697,6 +2697,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Zero-latency enforcement karena berjalan lokal: tidak ada request ke cloud, tidak ada polling external server, cocok untuk developer yang peduli privasi kode sekaligus butuh safety net saat agen melakukan tool call otomatis.",
     ],
   },
+  "zai-org/ZCode": {
+    description:
+      "Workstation coding AI dari Z.ai yang menyatukan desktop app, browser interface, dan terminal agent — ekosistem lengkap dengan agent runtime, layanan backend, dan UI terpadu untuk alur kerja coding yang fleksibel lintas platform.",
+    highlights: [
+      "Tiga permukaan sekaligus: Electron desktop app untuk pengguna lokal, web interface via browser, dan terminal TUI `zcode` — semuanya berbagi satu agent runtime, jadi konteks tidak hilang saat pindah perangkat.",
+      "Arsitektur monorepo terpisah: klien (desktop/web), backend service (default di port 3030), shared UI components, serta Agent CLI + runtime — memungkinkan developer memahami seluruh stack atau hanya mengkonsumsinya sebagai produk jadi.",
+      "Multi-agent dan extensible: agent runtime mendukung perencanaan task berlapis, tool-use loop, dan ekstensi via skill system — cocok untuk developer yang ingin coding agent yang 'pahaman' bukan cuma generate kode tapi juga menjalankan alur engineering.",
+      "Support remote development via SSH/WSL dengan upload resource lewat SFTP tanpa akses CDN publik — berguna untuk tim enterprise Indonesia yang perlu coding agent di lingkungan restricted network atau proyek berbasis server jarak jauh.",
+    ],
+  },
+  "jaredpalmer/kev": {
+    description:
+      "Keluarga model keputusan kecil (0,8B–9B parameter) berbasis Qwen3.5 — alternatif self-hostable dari Jev yang kompatibel dengan API TypeSafe System One, bisa dilatih sendiri atau pakai bobot jadi di MacBook hingga 32 GB RAM.",
+    highlights: [
+      "Tiga ukuran tersedia: 0,8B (ringan), 4B (sweet spot), dan 9B (presisi tertinggi) — semua dibangun di atas arsitektur Jev (non-autoregressive decision model) yang menjawab ya/tidak, pilihan ganda, dan rating skalar dalam satu request bersamaan.",
+      "API TypeSafe System One-compatible: arahkan Python SDK TypeSafe ke server Kev kamu langsung jalan — tidak perlu rewrite integrasi jika sudah punya kode yang menulis untuk System One, tinggal ganti base URL ke localhost.",
+      "Jalan lokal penuh: CUDA NVIDIA, ROCm AMD, dan Apple Silicon — model 4B dan 9B muat di MacBook 32 GB dengan bf16, inferensi real-time di mesin konsumen tanpa cloud API atau biaya token bulanan.",
+      "Full-stack open-source: training code, eval datasets, dan weights di Hugging Face — bukan hanya model jadi, tapi panduan pelatihan lengkap agar engineer Indonesia bisa fine-tune Kev untuk domain spesifik (mis. klasifikasi tiket support, routing laporan keuangan).",
+    ],
+  },
+  "dexmal/dexbotic": {
+    description:
+      "Toolbox pengembangan VLA (Vision-Language-Action) open-source dari Dexmal Labs — framework terpadu untuk pretraining, fine-tuning, inference, dan evaluasi model robotika embodied intelligence di PyTorch.",
+    highlights: [
+      "Platform all-in-one untuk VLA research: mendukung algoritma terkini (π0, CogACT, OFT, MemVLA, DM0, Pi0.5, GR00TN1) dalam satu codebase — reproduce hasil paper, fine-tune sendiri, atau inference model pratrained dalam setup yang seragam.",
+      "Foundation models pratrained berkualitas tinggi: banyak model utama punya checkpoint dioptimasi langsung di repo, plus dukungan LoRA/SFT untuk domain adaptation ke task manipulasi robotik spesifik (LIBERO benchmark, dll).",
+      "Cloud-to-local flexible: latih di Alibaba Cloud / Volcano Engine dengan FSDP2 distributed training, atau jalankan inference lokal di consumer GPU — unified API v1 konsisten di kedua environment, satu script deploy ke mana saja.",
+      "Multi-robot compatible: script deployment untuk UR5, Franka, ALOHA, Unitree G1 SONIC, DOS-W1, SO-101 — format data latihan terstandarisasi, jadi transisi antar robot tidak perlu refactor pipeline dari nol.",
+    ],
+  },
   "NandhaKishorM/laya": {
     description:
       "Mesin keputusan multilingual non-autoregresif dari ConvAI Innovations — evaluasi pertanyaan berformat dalam 33 ms per query dengan satu forward pass saja, tanpa text generation sehingga nol risiko halusinasi.",
