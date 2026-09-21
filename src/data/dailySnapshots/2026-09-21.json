@@ -1,0 +1,159 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "21 September 2026",
+  "period": {
+    "date": "2026-09-21",
+    "label": "21 September 2026",
+    "path": "/repo/daily/2026/09/21"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-21T00:05:36.242Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "NandhaKishorM/laya",
+      "owner": "NandhaKishorM",
+      "repo": "laya",
+      "description": "",
+      "githubUrl": "https://github.com/NandhaKishorM/laya",
+      "trendshiftUrl": "https://trendshift.io/repositories/244591",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-18T04:46:33Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "browser-use/jev-ultrafast",
+      "owner": "browser-use",
+      "repo": "jev-ultrafast",
+      "description": "",
+      "githubUrl": "https://github.com/browser-use/jev-ultrafast",
+      "trendshiftUrl": "https://trendshift.io/repositories/242003",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-09-16T21:30:12Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "mizorewww/laya-mlx",
+      "owner": "mizorewww",
+      "repo": "laya-mlx",
+      "description": "Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.",
+      "githubUrl": "https://github.com/mizorewww/laya-mlx",
+      "trendshiftUrl": "https://trendshift.io/repositories/248935",
+      "language": "Python",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-09-19T13:50:26Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "robbietilton/Compositor",
+      "owner": "robbietilton",
+      "repo": "Compositor",
+      "description": "The Photoshop alternative for Mac",
+      "githubUrl": "https://github.com/robbietilton/Compositor",
+      "trendshiftUrl": "https://trendshift.io/repositories/246426",
+      "language": "Swift",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-16T20:35:54Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "FailproofAI/failproofai",
+      "owner": "FailproofAI",
+      "repo": "failproofai",
+      "description": "Runtime failure resolution for coding agents. Hooks into Claude Code and Codex. Catches loops, dangerous actions, and secret leaks before they become incidents. Zero latency. Runs locally.",
+      "githubUrl": "https://github.com/FailproofAI/failproofai",
+      "trendshiftUrl": "https://trendshift.io/repositories/69722",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-04-06T01:56:39Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "google/ax",
+      "owner": "google",
+      "repo": "ax",
+      "description": "An open source distributed agent runtime",
+      "githubUrl": "https://github.com/google/ax",
+      "trendshiftUrl": "https://trendshift.io/repositories/34611",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-03-30T17:55:01Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Open-Dev-Society/OpenStock",
+      "owner": "Open-Dev-Society",
+      "repo": "OpenStock",
+      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+      "githubUrl": "https://github.com/Open-Dev-Society/OpenStock",
+      "trendshiftUrl": "https://trendshift.io/repositories/15728",
+      "language": "TypeScript",
+      "topics": [
+        "Authentication",
+        "Fintech"
+      ],
+      "dateCreated": "2025-09-28T18:16:32Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "bespokelabsai/nimble",
+      "owner": "bespokelabsai",
+      "repo": "nimble",
+      "description": "Local typed decisions, contrastive data curation, and model evaluation.",
+      "githubUrl": "https://github.com/bespokelabsai/nimble",
+      "trendshiftUrl": "https://trendshift.io/repositories/247294",
+      "language": "Python",
+      "topics": [
+        "Synthetic data"
+      ],
+      "dateCreated": "2026-09-18T09:07:48Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "trycua/cua",
+      "owner": "trycua",
+      "repo": "cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "githubUrl": "https://github.com/trycua/cua",
+      "trendshiftUrl": "https://trendshift.io/repositories/13685",
+      "language": "HTML",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2025-01-31T15:02:49Z"
+    }
+  ]
+}

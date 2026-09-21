@@ -4055,6 +4055,46 @@ export const stacks: Review[] = [
     date: "2026-09-20",
     featured: false,
   },
+  {
+    slug: "hex-2026",
+    name: "Hex",
+    tagline: "Workspace analitik data kolaboratif dengan kemampuan AI bawaan untuk notebook dan aplikasi",
+    tags: ["Hex", "Freemium", "Data Analytics", "Collaborative Notebook"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 6.5 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Hex adalah workspace analitik data yang memungkinkan tim menganalisis data menggunakan Python, SQL, atau campuran keduanya dalam notebook kolaboratif yang terintegrasi AI. Fitur unggulan 2026 termasuk App Builder untuk mengubah notebook menjadi aplikasi yang bisa dibagikan, dukungan multi-model LLM, dan governance tingkat enterprise — semua di platform berbasis cloud tanpa perlu setup infrastruktur sendiri.",
+    pros: [
+      "Real-time collaboration yang benar-benar terasa — multiple editor mengedit satu notebook sekaligus tanpa konflik, komentar langsung di cell, dan sharing link instan ke stakeholder non-teknis",
+      "AI assistant terintegrasi: generate kode Python dari prompt bahasa natural, konversi query SQL interaktif, auto-explanation cell mana pun — sangat membantu eksplorasi dataset baru",
+      "App Builder: ubah notebook analisis apa pun menjadi dashboard atau webapp interaktif yang bisa embed ke Slack, Notion, atau intranet perusahaan — tanpa coding tambahan",
+      "Integrasi database luas: Postgres, MySQL, Snowflake, BigQuery, Redshift, ClickHouse, dan REST API — hubungkan data sumber dari berbagai sistem tanpa ETL terpisah",
+    ],
+    cons: [
+      "Biaya per-editor masih jadi hambatan untuk tim besar: tier Professional sekitar Rp 140.000/editor/bulan, Team mulai Rp 500.000+, mudah tembus Rp beberapa juta per bulan saat scale-up",
+      "Tidak ada opsi self-hosted — seluruh komputasi berjalan di cloud Hex, sehingga isu data residency penting bagi perusahaan Indonesia yang punya regulasi ketat soal penyimpanan data",
+      "Free tier Community punya batas resource compute yang cukup restriktif untuk proyek serius — cukup untuk belajar dan eksperimen tapi bukan untuk production workload",
+      "Kurva pembelajaran moderate: developer backend yang belum familiar dengan konsep analytics notebook butuh waktu adaptasi untuk paham workflow Hex secara efektif",
+    ],
+    verdict:
+      "Pilihan terbaik untuk tim data Indonesia yang ingin kolaborasi tanpa setup infrastruktur rumit dan budget terbatas untuk tooling. Catatan utamanya: hitung biaya per-editor sebelum scale, pastikan compliance data jika bekerja dengan informasi sensitif, dan manfaatkan Community tier gratis sebagai proof-of-concept sebelum upgrade.",
+    body: [
+      "Dalam lanskap tools analitik data yang semakin padat — mulai dari Jupyter Notebook klasik, Google Colab gratisan, hingga Databricks Workspaces berorientasi enterprise — Hex menempati niche unik sebagai platform yang dirancang khusus untuk 'make everyone a data person'. Konsepnya sederhana tapi powerful: seorang analyst bisa menulis SQL untuk query database, melanjutkan ke Python untuk clean dan transformasi, lalu visualisasi hasilnya dalam chart interaktif — semua dalam satu dokumen yang bisa diedit bersamaan oleh anggota tim lain. Yang membedakan dari Jupyter tradisional adalah pengalaman collaborasinya yang built-in native, bukan addon yang dipasang terpisah.",
+      "Update 2026 membawa beberapa fitur strategis yang memperkuat posisi Hex. App Builder kini memungkinkan siapa saja — bahkan non-engineer — mengubah notebook analisis yang sudah ada menjadi aplikasi web interaktif dengan form input, dropdown filter, dan layout yang bisa dikustomisasi. Ini berarti insight dari analisis tidak hanya hidup di Slack message atau email attachment tapi bisa menjadi produk data yang diakses kapan saja. Ditambah lagi, dukungan multi-model LLM (OpenAI GPT, Anthropic Claude, Google Gemini) memberi fleksibilitas untuk pilih model paling cocok per use case, dan integrasi Git (GitHub dan GitLab) membuat version control menjadi second nature bukan afterthought. Governance layer untuk tim mencakup SSO, audit logs, row-level access control, dan centralized billing — semuanya diperlukan untuk regulated industry seperti fintech dan healthcare.",
+      "Untuk pengguna Indonesia, tiga hal krusial yang perlu dipertimbangkan. Pertama, Community tier gratis itu benar-benar usable — tidak ada watermarks, tidak ada batasan query yang terlalu ketat, cukup untuk student, freelancer, atau small startup yang ingin build skill data analytics tanpa biaya. Kedua, untuk tim yang sudah established, biaya Professional tier sekitar Rp 140.000/editor/bulan masuk akal kalau tiap editor produktif menghasilkan minimal beberapa insight actionable per minggu. Tapi hati-hati dengan Team tier: sekali kamu onboard lebih dari 5 editor, budget bulanan bisa naik signifikan. Ketiga, karena Hex beroperasi murni di cloud, perusahaan Indonesia yang harus mematuhi regulasi seperti OJK untuk sektor keuangan atau Kemenkes untuk health data perlu verifikasi apakah data processing memenuhi kewajiban localization — ini biasanya ditangani lewat negotiation enterprise plan yang menyediakan data residency options.",
+      "Kesimpulannya, Hex 2026 adalah workspace analitik data yang berhasil menyatukan kekuatan notebook interaktif, kolaborasi real-time, dan generasi otomatis berbasis AI dalam satu platform yang accessible. Bagi individu yang baru memulai career di data science, Community tier gratis adalah tempat start yang sempurna. Untuk tim yang sudah mature dengan data workflow, Professional atau Team tier memberi nilai tinggi dari fitur App Builder dan governance yang matang. Yang tidak boleh dilupakan: meskipun powerful, Hex bukan replacement untuk pipeline ETL atau infrastructure monitoring tool — ia fokus pada layer interaktif analisis dan sharing insight. Pilih Hex ketika prioritas kamu adalah speed-to-insight, kolaborasi lintas fungsi, dan kemudahan distribusi hasil analisis ke seluruh organisasi.",
+    ],
+    link: "https://hex.tech",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-21",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
