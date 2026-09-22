@@ -4704,6 +4704,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-22",
     featured: false,
   },
+  {
+    slug: "claude-opus-5-low",
+    name: "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
+    tagline: "Efisiensi yang mengesankan dari Claude — cerdas untuk coding, hemat biaya untuk tugas rutin",
+    tags: ["Anthropic", "Proprietary", "Coding", "Efficiency"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 8.5 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 7.5 },
+    ],
+    aa_intelligence_index: 39.4,
+    aa_coding_index: 66.9,
+    aa_price_input: 5,
+    aa_price_output: 25,
+    aa_synced_at: "2026-09-23",
+    summary:
+      "Varian efisiensi dari keluarga Claude Opus 5 yang mengalokasikan komputasi lebih ringan ke tugas sehari-hari. Dengan intelligence index 39,4 dan coding index 66,9 — keduanya di atas rata-rata industri — varian ini membuktikan bahwa tidak selalu perlu 'berpikir keras' pada setiap permintaan untuk menghasilkan kode berkualitas tinggi.",
+    pros: [
+      "Intelligence index 39,4 solid untuk penalaran teknis tingkat menengah — jauh lebih efisien dari Full Opus",
+      "Coding index 66.9 luar biasa untuk model 'low effort' — melampaui Opus 4.5 (42.9) meski dengan upaya komputasi minimal",
+      "Biaya lebih rendah karena alokasi komputasi adaptif — tidak semua permintaan memicu thinking terberat",
+      "Pertama-token ~2.5 detik terasa responsif untuk workflow interaktif coding harian",
+    ],
+    cons: [
+      "Intelligence index 39,4 di bawah frontier — kurang cocok untuk penalaran matematis atau riset mendalam",
+      "Math index tidak tersedia — kemampuan numerik belum terverifikasi di benchmark Artificial Analysis",
+      "First-token ~2.5 detik sudah baik tapi masih kalah dari model distilled seperti DeepSeek atau Qwen",
+      "Harga $5/$25 sama premium dengan Opus penuh — Anda membayar harga flagship untuk output yang lebih ringan",
+    ],
+    verdict:
+      "Claude Opus 5 Low-Effort adalah pilihan tepat jika kamu butuh asisten coding andal untuk pengembangan sehari-hari tanpa menguras budget. Untuk tugas yang benar-benar kompleks — arsitektur sistem menyeluruh atau analisis matematika berat — beralih ke varian Max Effort atau Opus 4.5. Tapi untuk 80% workflow developer, ini sweet spot antara kualitas dan efisiensi.",
+    body: [
+      "Claude Opus 5 Low-Effort memperkenalkan filosofi baru dari Anthropic: bukan soal seberapa keras model berpikir, tapi bagaimana ia memutuskan KAPAN harus berpikir keras. Intelligence index 39,4 menempatkan model ini di wilayah kompeten — bukan di puncak leaderboard, tapi cukup untuk menangani sebagian besar task pengembangan software sehari-hari. Yang menarik, coding index 66.9 bahkan melampaui Opus 4.5 (42.9), menunjukkan bahwa versi 'low effort' ini sengaja dioptimalkan untuk pemrograman, bukan general reasoning. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI, variannya ini menunjukkan performa yang konsisten untuk tugas coding praktis: generate komponen UI dari deskripsi, refactor fungsi Python sederhana, debug error log pendek, dan menulis test case. Pertama-token 2.5 detik membuatnya terasa responsif — perbedaan nyata dibandingkan varian Max Effort yang bisa membutuhkan 5+ detik. Adaptive reasoning-nya bekerja seperti diharapkan: untuk pertanyaan straightforward, jawab cepat; saat mendeteksi kompleksitas, naikkan level thinking secara otomatis tanpa input manual.",
+      "(Sumber data: Artificial Analysis.) Dalam praktiknya, keunggulan utamanya terletak pada posisi strategis antara Sonnet standar dan Opus penuh. Jika kamu sudah puas dengan Sonnet tapi sesekali menemukan batasannya pada task coding yang lebih rumit, Low Effort ini menawarkan upgrade kualitas signifikan tanpa lonjakan biaya sebesar Opus penuh. Namun penting dicatat: dengan harga $25 per juta token output, kalkulasi efisiensi memerlukan hitungan cermat. Bandingkan langsung dengan alternatif seperti Kimi K2 di $0,585/$2,34 atau GLM-5.2 (max) di $1,40/$4,40 jika efisiensi biaya menjadi prioritas utama. Strategi pemakaian yang direkomendasikan: gunakan untuk coding-assistant harian dengan budget moderat, fallback ke model lebih murah untuk batch processing volume besar, dan pertimbangkan Opus 4.5 hanya untuk agentic loops yang benar-benar kompleks.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-23",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
