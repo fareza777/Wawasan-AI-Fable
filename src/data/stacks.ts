@@ -4095,6 +4095,50 @@ export const stacks: Review[] = [
     date: "2026-09-21",
     featured: false,
   },
+  {
+    slug: "v0-pro",
+    name: "v0 Pro (by Vercel)",
+    tagline: "Generator UI dari Vercel dengan kuota lebih besar dan fitur tim untuk produksi nyata",
+    tags: [
+      "Vercel",
+      "Freemium",
+      "No-Code/Low-Code",
+      "UI Builder",
+    ],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.6 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.8 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "Upgrade berbayar dari v0 yang memberi developer Indonesia akses ke generasi UI tanpa batas lebih tinggi, prioritas antrean, dan kemampuan kolaborasi tim — solusi tepat bagi yang sudah jatuh cinta dengan kualitas visual v0 tapi butuh volume produksi yang tidak bisa dijangkau tier gratis.",
+    pros: [
+      "Kualitas visual tetap sekelas terbaik — React + Tailwind + shadcn/ui idiomatis sama seperti v0 gratis, bahkan lebih konsisten pada iterasi kedua dan ketiga",
+      "Kuota generasi dan kredit jauh lebih melimpah: tidak perlu menghitung setiap prompt lagi, cocok untuk sprint desain atau rapid prototyping berkelanjutan",
+      "Fitur kolaborasi tim: shared component library, history versioning, dan deployment langsung ke project Vercel bersama, sangat berguna untuk tim startup kecil dan agensi web",
+      "Integrasi native ke ekosistem Vercel — sekali generate, deploy ke production tinggal klik, termasuk preview URL otomatis untuk review klien",
+    ],
+    cons: [
+      "Biaya berlangganan masih dalam dolar AS dan cukup menggaungkan untuk freelancer solo-practitioner di Indonesia yang terbiasa budget Rp 300-500 ribu per bulan",
+      "Masih terkunci ketat di stack React/Next.js/Tailwind — tidak ada keluar dari ekosistem Vercel dan JavaScript",
+      "Untuk aplikasi full-stack dengan logika bisnis kompleks, v0 Pro tetap bukan jawaban utama; ia pelengkap frontend, bukan pengganti backend engineer",
+    ],
+    verdict:
+      "Bagi tim yang sudah menggunakan v0 gratis dan merasa tersenggat batas kredit, Pro adalah upgrade logis. Untuk solo developer di Indonesia yang baru memulai, tetap manfaatkan tier gratis sampai benar-benar terbukti butuh volume lebih tinggi sebelum komitmen budget bulanan.",
+    body: [
+      "v0 Pro lahir dari sebuah obsesi yang mungkin familiar bagi siapa pun yang pernah mencoba generator UI: kualitasnya bagus, tapi takunya cepat habis. Tier gratis v0 memberi segenggam generasi per bulan — cukup untuk proof-of-concept atau satu halaman landing page yang rapi — lalu kamu dihentikan. Pro menghilangkan jeda tersebut dengan memberikan kuota yang jauh lebih generous, prioritas antrean generasi, dan akses ke fitur yang dulu hanya tersedia di lingkungan enterprise. Intinya: kamu tetap mendapat kode React + Tailwind + shadcn/ui dengan selera desain yang sama, tapi sekarang bisa dikerjakan secara berkelanjutan, bukan cuma sesekali.",
+      "Perbedaan paling terasa antara versi gratis dan Pro bukan di kualitas output — kualitas visualnya identik karena AI model yang dipakai sama — tapi di pengalaman produksinya. Dengan Pro, kamu bisa menjalankan beberapa generasi sekaligus tanpa mengantri, membandingkan hasil A/B variant dalam waktu yang sama, dan menyimpan seluruh riwayat interaksi sebagai komponen yang bisa direuse. Fitur shared component library juga mengubah cara kerja tim: seorang desainer bisa membuat button dan card components di satu workspace, lalu seluruh anggota tim mengaksesnya tanpa harus regenerate dari nol. Ini mirip konsep design system manual yang akhirnya diotomasi sebagian — dan hasilnya cukup reliable untuk dipakai di project klien nyata, bukan sekadar internal mockup.",
+      "Yang membedakan v0 Pro dari kompetitor di kelas serupa (seperti Galileo AI atau Lovable) adalah kedalaman integrasinya dengan ekosistem Vercel. Setelah generate UI, kamu bisa deploy langsung ke Vercel dengan satu klik, mendapatkan preview URL instan untuk dikolaborasikan dengan tim klien, dan mengintegrasikan component yang sudah jadi ke repo Next.js yang sudah ada via Git. Tidak perlu export zip, copy-paste file, atau setup build environment baru. Bagi developer Indonesia yang sudah nyaman dengan workflow Vercel — yang semakin populer di komunitas indie hacker dan startup lokal karena free tier hosting-nya — transisi ini seamless. Tapi batasan stack tetap ada: kalau proyekmu memerlukan framework selain React (Svelte, Vue, Angular), v0 Pro sama saja dengan v0 gratis — tidak bisa membantu. Dan untuk bagian backend, database schema, atau API routing, kamu tetap butuh engineer atau CLI agent lain.",
+      "Untuk konteks Indonesia, nilai ekonomi v0 Pro perlu dihitung berdasarkan penggunaan aktual. Freelancer web yang mengerjakan 4-6 project klien per bulan akan merasa biaya Pro tercover dari penghematan waktu desain yang biasanya 1-2 hari menjadi 3-4 jam. Startup early-stage dengan 2-3 developer juga mendapat manfaat besar dari fitur kolaborasi dan deployment langsung, mempercepat time-to-market dari minggu ke hitungan hari. Namun, untuk praktisor tunggal yang belum terbukti butuh volume tinggi, tier gratis sudah cukup untuk merasakan potensi tool ini sebelum committing budget bulanan dalam dolar. Perhatikan pula bahwa billing Vercel menggunakan USD, jadi ada fluktuasi kurs dan potensi PPN 11 persen di atas harga tertera — buat yang sensitif terhadap biaya recurring, mulai dari free tier, ukur kebutuhan sebenarnya, baru upgrade saat volumenya benar-benar demand.",
+    ],
+    link: "https://v0.dev",
+    linkLabel: "Coba Gratis",
+    date: "2026-09-22",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

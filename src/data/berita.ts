@@ -4719,6 +4719,7 @@ export const berita: Artikel[] = [
     ],
   },
 ];
+
 export function getArtikel(slug: string) {
   return berita.find((a) => a.slug === slug);
 }
