@@ -853,6 +853,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
           "Bonus: MCP server dengan 29 tools, A2A protocol untuk agent-to-agent, proxy 3-level (bypass geo-restriction), dashboard observability dengan p50/p95/p99 telemetry — ditulis 100% TypeScript dengan 4.690+ automated test, jalan di Web/Desktop/Android/PWA.",
         ],
       },
+      "google/ax": {
+        description:
+          "Orchestrator agentic deklaratif dari Google untuk menjalankan beban kerja agen AI otonom dalam skala besar — klaim bisa handle miliaran task per cluster dengan isolasi sandbox, kontrol jaringan, dan orkestrasi yang mirip Kubernetes namun khusus untuk agen AI.",
+        highlights: [
+          "Pendekatan deklaratif ala Kubernetes: tulis task sebagai manifest YAML (`task.yaml`) yang mendefinisikan workspace (repositori Git, tujuan agen), lalu jalankan `ax apply` — AX menangani provisioning sandbox, wiring dependency, dan monitoring secara otomatis.",
+          "Isolasi dan pengaman bawaan: tiap agen berjalan di sandbox dengan batas CPU/memori, network fence (Gateway) yang hanya mengizinkan host spesifik, dan model credentials yang dibaca dari secret — mencegah agen 'berlari liar' dan membakar token API tanpa kendali.",
+          "Fitur operasional praktis: `ax suspend` / `ax resume` untuk pause dan lanjut agen yang idle, `ax ssh` untuk shell masuk ke sandbox dan lihat apa sedang dikerjakan agen secara real-time — berguna saat debug agen yang stuck atau berjalan tidak sesuai ekspektasi.",
+          "Ditenagai Agent Substrate untuk sandboxing dan dibangun dalam Go untuk throughput tinggi; target audiensnya tim ML/engineering yang perlu deploy ribuan agen paralel di Kubernetes集群 dengan management pattern yang sudah familiar.",
+        ],
+      },
       "google/copybara": {
         description:
           "Tool resmi Google untuk menyinkronkan dan mentransformasi kode antar repository (private ↔ public) — stateless, commit message sebagai state, dan dipakai internal untuk menjaga source of truth sambil tetap menerima kontribusi publik.",
