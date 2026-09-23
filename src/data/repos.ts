@@ -4828,6 +4828,59 @@ export const repos: Review[] = [
     updatedAt: "2026-09-21",
     featured: false,
   },
+  {
+    slug: "google-ax",
+    name: "AX (Google)",
+    tagline: "Kubernetes untuk AI agent — orkestrasi tugas otonom skala cluster dari Google",
+    tags: ["AI Agent", "Orkestrasi", "Go", "Kubernetes"],
+    score: 8.1,
+    scores: [
+      { label: "Kemudahan Setup", value: 6.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.5 },
+      { label: "Komunitas & Momentum", value: 7.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "AX adalah runtime orkestrasi agentic open-source dari Google yang mendeklarasikan tugas agent sebagai workload Kubernetes. Bukan framework conversational agent — AX dirancang untuk menjalankan jutaan tugas agent otonom di dalam cluster dengan sandboxing ketat, jaringan terfence, dan pengelolaan state lintas sesi.",
+    highlights: [
+      "Task API deklaratif melalui YAML manifest (`apiVersion: ax.io/v1alpha1`) — definisikan tujuan, workspace, dan konfigurasi debug layaknya Kubernetes pod",
+      "Workspace pre-wiring otomatis: Git repo, MCP server, dan skill package dimuat sebelum agent berjalan sehingga setiap task start dalam kondisi warm",
+      "Gateway network fencing — lock outbound traffic ke host allowlist eksplisit; agent tidak bisa mengakses resource di luar daftar yang diizinkan",
+      "Sandboxed execution lewat Agent Substrate dengan CPU/memory limits per-task; isolasi penuh antar agent workloads di satu cluster",
+      "Model abstraction dengan credential management via Kubernetes secret — platform LLM selection terpisah dari agent logic",
+      "`ax ssh` untuk shell interaktif ke sandbox agent yang sedang berjalan — debug langsung lihat apa yang dilakukan agent tanpa log parsing",
+      "`ax suspend` / `ax resume` — checkpoint state agent dan pause, lalu lanjutkan persis dari titik terakhir ketika resource tersedia kembali",
+      "CLI bergaya kubectl (`apply`, `get`, `describe`, `watch`, `delete`) — developer Kubernetes sudah familiar dengan pola ini",
+      "Multi-cluster support melalui `kubectx` — switch antara staging dan production cluster tanpa rekonfigurasi",
+      "Lisensi Apache 2.0 — bebas untuk adopsi komersial, fork, atau enterprise deployment tanpa restriasi lisensi",
+    ],
+    pros: [
+      "Paradigma baru yang tepat: treat agent sebagai workload type baru, bukan microservice maupun batch job",
+      "Debugging capability unik lewat `ax ssh` — bisa melihat proses agent berjalan secara real-time di sandbox",
+      "Network fencing dan resource limits memberikan keamanan operasional yang jarang ditemukan di tool sejenis",
+      "Apache 2.0 license dan desain deklaratif YAML memudahkan integrasi CI/CD pipeline perusahaan Indonesia",
+    ],
+    cons: [
+      "Memerlukan Kubernetes cluster penuh sebagai prerequisites — terlalu berat untuk penggunaan individual atau prototyping cepat",
+      "Masih di tahap alpha aktif dengan breaking changes yang diantisipasi — jangan andalkan untuk production critical path",
+      "Tidak ada CLI lokal mode atau Docker-only option; harus ada kubectl reachability ke cluster control plane",
+      "Agent Substrate sebagai dependency inti berarti Anda juga perlu mengelola substrate infrastructure di cluster yang sama",
+    ],
+    verdict:
+      "AX menunjukkan visi Google tentang masa depan orchestration AI agent: declarative, sandboxed, dan scale-out ke cluster. Menarik sebagai bahan evaluasi infrastruktur, tapi belum waktunya deploy di production — terutama bagi tim Indonesia yang masih belajar membedakan kapan butuh orkestrasi cluster-level versus single-node agent.",
+    body: [
+      "Di dunia AI agent yang terus berkembang, sebagian besar tools berfokus pada cara membuat sebuah agent pintar: memilih model, bagaimana mendefinisikan tools, atau pattern prompting untuk reasoning. Google dengan AX mengambil pendekatan yang jauh lebih ambisius — bukan bagaimana membuat satu agent yang baik, tapi bagaimana mengorkestrasi ratusan hingga jutaan agent otonom secara bersamaan di dalam cluster dengan kontrol penuh atas isolation, network, compute resource, dan lifecycle management.",
+      "Konsep inti AX adalah treat agent sebagai workload type baru. Berbeda dari microservice yang stateless dan run-to-completion batch jobs, agent accumulate state across sessions, membutuhkan isolated execution environment, bisa consume biaya API secara tak terkendali jika tidak dipantau, dan seringkali perlu access ke external tools serta model APIs. AX menjawab semua kebutuhan ini dengan empat primitive deklaratif yang mengejutkan simple: Task (sandboxed execution), Workspace (pre-wired environment), Gateway (network fence), dan Model (LLM configuration dengan k8s secret management). Semua diekspresikan sebagai YAML manifests mirip Kubernetes resource spec.",
+      "Dalam konteks Indonesia, AX menarik untuk dua profil pengguna. Pertama, tim enterprise dan perusahaan teknologi yang membangun platform AI agent-based service — misalnya fintech yang ingin multiple fraud detection agents berjalan paralel di cluster, atau e-commerce yang mengorkestrasi pricing optimization agents dengan workspace dan resource isolation. Kedua, tim research dan university lab yang menjalankan experiment agent-scale evaluation dimana mereka perlu membandingkan performa ratusan agent runs di environment yang konsisten. Yang kedua kasus ini justru lebih relevan karena banyak university di Indonesia sudah mulai melakukan research pada agentic AI, dan AX menyediakan infrastructure layer yang memungkinkan reproduksi hasil riset dengan konsistensi tinggi.",
+      "Ada dua catatan kritis sebelum mempertimbangkan AX. Pertama, proyek ini masih aktif mengembangkan core concepts dan protocols — major breaking changes masih akan datang sebelum stable release. Artinya, arsitektur saat ini belum final dan migration cost bisa signifikan ketika versi stabil tiba. Kedua, prerequisites sangat berat: perlu Kubernetes cluster, ko build tool, container registry yang accessible dari cluster, dan Agent Substrate Control API running in-cluster. Bagi tim engineering Indonesia yang belum memiliki maturity level Kubernetes produksi, overhead ini mungkin berlebihan. Namun AX tetap worth watching sebagai indikator arah industri: kalau benar-benar scalable seperti claim 'billions of tasks per cluster', alat ini bisa menjadi standar baru untuk agent operations sama seperti Kubernetes menjadi standar untuk container operations.",
+    ],
+    link: "https://github.com/google/ax",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-24",
+    updatedAt: "2026-09-24",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
