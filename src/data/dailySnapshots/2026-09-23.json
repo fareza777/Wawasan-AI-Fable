@@ -1,28 +1,25 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "23 September 2026",
-  "period": {
-    "date": "2026-09-23",
-    "label": "23 September 2026",
-    "path": "/repo/daily/2026/09/23"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-23T00:02:55.350Z",
+  "fetchedAt": "2026-09-23T06:25:02.839Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "NandhaKishorM/laya",
-      "owner": "NandhaKishorM",
-      "repo": "laya",
-      "description": "",
-      "githubUrl": "https://github.com/NandhaKishorM/laya",
-      "trendshiftUrl": "https://trendshift.io/repositories/244591",
-      "language": "Python",
+      "fullName": "farion1231/cc-switch",
+      "owner": "farion1231",
+      "repo": "cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
+      "githubUrl": "https://github.com/farion1231/cc-switch",
+      "trendshiftUrl": "https://trendshift.io/repositories/15372",
+      "language": "Rust",
       "topics": [
-        "AI agent"
+        "AI coding assistant",
+        "MCP"
       ],
-      "dateCreated": "2026-09-18T04:46:33Z"
+      "dateCreated": "2025-08-04T14:16:16Z"
     },
     {
       "rank": 2,
@@ -38,90 +35,6 @@
     },
     {
       "rank": 3,
-      "fullName": "jaredpalmer/kev",
-      "owner": "jaredpalmer",
-      "repo": "kev",
-      "description": "tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook",
-      "githubUrl": "https://github.com/jaredpalmer/kev",
-      "trendshiftUrl": "https://trendshift.io/repositories/246657",
-      "language": "Python",
-      "topics": [
-        "Local LLM"
-      ],
-      "dateCreated": "2026-09-17T20:49:39Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "mizorewww/laya-mlx",
-      "owner": "mizorewww",
-      "repo": "laya-mlx",
-      "description": "Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.",
-      "githubUrl": "https://github.com/mizorewww/laya-mlx",
-      "trendshiftUrl": "https://trendshift.io/repositories/248935",
-      "language": "Python",
-      "topics": [
-        "Local LLM"
-      ],
-      "dateCreated": "2026-09-19T13:50:26Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "Mak5er/AirCard",
-      "owner": "Mak5er",
-      "repo": "AirCard",
-      "description": "Apple Wallet Card Skinner for iOS 18+ (No Jailbreak Required)",
-      "githubUrl": "https://github.com/Mak5er/AirCard",
-      "trendshiftUrl": "https://trendshift.io/repositories/242641",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-09-16T22:20:15Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "google/ax",
-      "owner": "google",
-      "repo": "ax",
-      "description": "Google's open agentic orchestrator",
-      "githubUrl": "https://github.com/google/ax",
-      "trendshiftUrl": "https://trendshift.io/repositories/34611",
-      "language": "Go",
-      "topics": [
-        "AI agent",
-        "AI workflow"
-      ],
-      "dateCreated": "2026-03-30T17:55:01Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "ChenLiu-1996/figures4papers",
-      "owner": "ChenLiu-1996",
-      "repo": "figures4papers",
-      "description": "My Python scripts to make high-quality figures for publications in top AI conferences and journals.",
-      "githubUrl": "https://github.com/ChenLiu-1996/figures4papers",
-      "trendshiftUrl": "https://trendshift.io/repositories/179970",
-      "language": "Python",
-      "topics": [
-        "Data visualization"
-      ],
-      "dateCreated": "2025-04-29T02:37:54Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "browser-use/jev-ultrafast",
-      "owner": "browser-use",
-      "repo": "jev-ultrafast",
-      "description": "",
-      "githubUrl": "https://github.com/browser-use/jev-ultrafast",
-      "trendshiftUrl": "https://trendshift.io/repositories/242003",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Headless browser"
-      ],
-      "dateCreated": "2026-09-16T21:30:12Z"
-    },
-    {
-      "rank": 9,
       "fullName": "dream-num/univer",
       "owner": "dream-num",
       "repo": "univer",
@@ -135,19 +48,105 @@
       "dateCreated": "2022-09-29T12:09:14Z"
     },
     {
-      "rank": 10,
-      "fullName": "vectorize-io/hindsight",
-      "owner": "vectorize-io",
-      "repo": "hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "githubUrl": "https://github.com/vectorize-io/hindsight",
-      "trendshiftUrl": "https://trendshift.io/repositories/15603",
+      "rank": 4,
+      "fullName": "NandhaKishorM/laya",
+      "owner": "NandhaKishorM",
+      "repo": "laya",
+      "description": "",
+      "githubUrl": "https://github.com/NandhaKishorM/laya",
+      "trendshiftUrl": "https://trendshift.io/repositories/244591",
       "language": "Python",
       "topics": [
-        "AI agent",
-        "AI memory"
+        "AI agent"
       ],
-      "dateCreated": "2025-10-30T11:49:48Z"
+      "dateCreated": "2026-09-18T04:46:33Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "CopilotKit/openmuse",
+      "owner": "CopilotKit",
+      "repo": "openmuse",
+      "description": "A personal agent with a browser, terminal, files, and work that keeps going built with CopilotKit and AG-UI.",
+      "githubUrl": "https://github.com/CopilotKit/openmuse",
+      "trendshiftUrl": "https://trendshift.io/repositories/254992",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-09-15T16:05:44Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "shengjidaguai-china/goutoujunshi",
+      "owner": "shengjidaguai-china",
+      "repo": "goutoujunshi",
+      "description": "一个先接住情绪、再分析关系并给出可执行策略的 Codex 恋爱军师，内置心理、法律、社会、人文、哲学、婚姻家庭与性学知识库，支持多元关系。",
+      "githubUrl": "https://github.com/shengjidaguai-china/goutoujunshi",
+      "trendshiftUrl": "https://trendshift.io/repositories/98557",
+      "language": "Python",
+      "topics": [
+        "Chatbot"
+      ],
+      "dateCreated": "2026-07-20T14:58:48Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "jaredpalmer/kev",
+      "owner": "jaredpalmer",
+      "repo": "kev",
+      "description": "tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook",
+      "githubUrl": "https://github.com/jaredpalmer/kev",
+      "trendshiftUrl": "https://trendshift.io/repositories/246657",
+      "language": "Python",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-09-17T20:49:39Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "hypit-ai/hypit",
+      "owner": "hypit-ai",
+      "repo": "hypit",
+      "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+      "githubUrl": "https://github.com/hypit-ai/hypit",
+      "trendshiftUrl": "https://trendshift.io/repositories/229030",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI video generation",
+        "Video editing"
+      ],
+      "dateCreated": "2026-07-29T18:49:19Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ai-evals-course/evals-skills",
+      "owner": "ai-evals-course",
+      "repo": "evals-skills",
+      "description": "Skills for building LLM evals. Starts with interactive error discovery: build a review app, sample diverse traces, and organize human annotations into failure modes.",
+      "githubUrl": "https://github.com/ai-evals-course/evals-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/162163",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-23T22:23:15Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "deepopen-com/deepopen",
+      "owner": "deepopen-com",
+      "repo": "deepopen",
+      "description": "非自回归System 1决策引擎，专为结构化类型决策场景设计  DeepOpen Multilingual, non-autoregressive System 1 decision engine.",
+      "githubUrl": "https://github.com/deepopen-com/deepopen",
+      "trendshiftUrl": "https://trendshift.io/repositories/253721",
+      "language": "Python",
+      "topics": [
+        "NLP"
+      ],
+      "dateCreated": "2026-09-21T02:12:24Z"
     }
   ]
 }
