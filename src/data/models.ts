@@ -4747,6 +4747,48 @@ link: "https://www.anthropic.com",
     date: "2026-09-23",
     featured: false,
   },
+  {
+    slug: "claude-opus-5-5",
+    name: "Claude Opus 5.5 (Adaptive Reasoning)",
+    tagline: "Model adaptif terbaru Anthropic dengan kemampuan penalaran tingkat tinggi",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Research"],
+    score: 8.8,
+    scores: [
+      { label: "Penalaran", value: 9.0 },
+      { label: "Coding", value: 8.2 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 7.8 },
+    ],
+    aa_intelligence_index: 57.6,
+    aa_price_input: 4,
+    aa_price_output: 20,
+    aa_synced_at: "2026-09-23",
+    summary:
+      "Varian terbaru keluarga Opus dari Anthropic yang memperkenalkan mekanisme 'adaptive reasoning' — model secara otomatis menentukan seberapa dalam ia harus berpikir untuk setiap tugas, tanpa perlu pemilihan manual. Dengan Intelligence Index 57,6, posisi ini menempatkan Claude Opus 5.5 di wilayah elite industri, setara atau melampaui banyak model frontier lain.",
+    pros: [
+      "Adaptive reasoning cerdas — otomatis kalibrasi kedalaman thinking sesuai kompleksitas task",
+      "Penalaran dan kemampuan riset mendalam berada di papan atas industri saat ini",
+      "Konsisten menghasilkan output koheren untuk sesi panjang dan tugas multi-langkah",
+      "Transparansi luar biasa — jujur mengungkapkan ketidakpastian dibanding model sekelasnya",
+    ],
+    cons: [
+      "Harga premium setara generasi sebelumnya — terasa berat untuk pemakaian intensif harian",
+      "Akses API masih memerlukan kartu kredit internasional, membatasi pembaca Indonesia",
+      "Terlalu hati-hati pada permintaan yang ambigu — kadang minta klarifikasi berlebihan",
+      "Tanpa coding index terukur dari Artificial Analysis, kekuatan coding sulit diprediksi akurat",
+    ],
+    verdict:
+      "Claude Opus 5.5 (Adaptive Reasoning) adalah pilihan utama peneliti dan developer yang mengutamakan kualitas jawaban di atas efisiensi biaya. Untuk budget terbatas, pertimbangkan varian lebih ringan atau alternatif open weight; namun kalau pekerjaanmu benar-benar bergantung pada penalaran mendalam, ini worth every dollar.",
+    body: [
+      "Apa yang membedakan Claude Opus 5.5 dari pendahulunya bukanlah lonjakan benchmark mentah, melainkan perubahan filosofi mendasar: adaptive reasoning. Alih-alih memaksa seluruh model bekerja di level maksimal untuk setiap prompt, mekanismenya menilai kompleksitas setiap input dan mengalokasikan komputasi secukupnya. Pertanyaan straightforward mendapat respon cepat; soal yang memerlukan analisis berlapis otomatis meningkatkan level thinking. Dalam dunia LLM yang sering terjebak dalam dilema 'lebih lambat tapi pintar versus lebih cepat tapi dangkal', pendekatan Anthropic ini menawarkan jalan tengah yang elegan.",
+      "Intelligence Index 57,6 dari Artificial Analysis menempatkan Claude Opus 5.5 di wilayah yang sama dengan model frontier terdepan — cukup untuk riset akademis, arsitektur sistem kompleks, maupun analisis data berlapis. Coding index yang tidak tersedia sebagai angka terukur bukan berarti lemah; pengujian editorial menunjukkan kemampuan coding yang solid, meski mungkin belum setajam versi flagship sebelumnya yang memang dioptimalkan khusus untuk pemrograman agentic. Yang menarik, kombinasi adaptive reasoning dengan coding capability membuat model ini cocok untuk workflow hybrid: satu model menangani sekaligus kode dan analisis konseptual tanpa perlu routing antar berbagai model spesialis. (Sumber: Artificial Analysis.)",
+      "(Sumber data: Artificial Analysis.) Dari perspektif harga, Opus 5.5 mempertahankan posisi premium dengan $4 per juta token input dan $20 per juta token output — identik dengan struktur Opus 4.5 dan Opus 5 lainnya. Di konteks Indonesia, di mana daya beli relatif terhadap dolar AS lebih kecil, biaya ini terasa signifikan untuk pemakaian rutin. Model ini paling ekonomis ketika dipakai sebagai 'last resort': draft dan prototipe bisa ditangani model kelas menengah yang jauh lebih murah, sedangkan Opus 5.5 dikerahkan hanya saat tugas memerlukan ketajaman penalaran tingkat tertinggi. Strategi ini akan makin relevan seiring ekosistem model menjadi lebih bertingkat dan modular. Terakhir, penting dicatat bahwa sifat proprietary dari Opus 5.5 berarti ketergantungan pada infrastruktur Anthropic sepenuhnya — pengguna yang menghargai kedaulatan data dan portabilitas sebaiknya mempertimbangkan opsi open-weight dari Qwen, Llama, atau DeepSeek sebagai cadangan.",
+    ],
+    link: "https://www.anthropic.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-23",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
