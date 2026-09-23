@@ -2757,6 +2757,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Lisensi AGPL-3.0 dari Open Dev Society: jika kamu memodifikasi atau men-deploy ulang kode ini (termasuk sebagai web service), kamu wajib merilis source code kembali — komunitas terbuka yang mendorong kolaborasi dan transparansi penuh.",
     ],
   },
+  "vectorize-io/hindsight": {
+    description:
+      "Sistem memori jangka panjang untuk agen AI dari Vectorize — belajar dari pengalaman masa lalu dan meningkatkan performa secara bertahap, bukan sekadar mengingat percakapan seperti RAG biasa.",
+    highlights: [
+      "Hindsight dirancang khusus untuk agen yang perlu belajar dari waktu ke waktu — bukan hanya menyimpan chat history, melainkan mengekstrak insight, pola, dan mental model yang bisa digunakan di task berikutnya.",
+      "Dibangun oleh tim Vectorize (infrastruktur data), mencapai SOTA di benchmark LongMemEval — akurasi memorinya diverifikasi oleh Virginia Tech dan Washington Post sebagai independen terstandar.",
+      "Dukungan penuh untuk Claude Code dan Cursor lewat skill docs (`npx skills add ... hindsight-docs`), plus MCP server dan integrasi SDK Python/Node — plug ke workflow coding agent tanpa rewrite kode.",
+      "Deploy lokal via Docker atau pakai Hindsight Cloud; data tetap privat kalau self-hosted — relevan untuk enterprise Fortune 500 yang butuh memori agen aman di infrastruktur sendiri.",
+    ],
+  },
+  "hydra-db/hydradb": {
+    description:
+      "Database grafik berkecepatan tinggi dari Rust yang menyimpan data langsung di object storage (S3) — query OpenCypher kompatibel Neo4j dengan pemisahan storage dan compute yang scalable.",
+    highlights: [
+      "Arsitektur disaggregated: object storage (S3) jadi sumber kebenaran durabilitas, sementara data node melayani query dan indexer membangun traversal index secara terpisah — bisa discala tanpa memindahkan data fisik.",
+      "Kompatibel dengan driver Neo4j via Bolt 5.x dan punya HTTPS API native — aplikasi yang sudah kenal Cypher bisa langsung terhubung, plus GraphBLAS traversal untuk analitik graph kompleks.",
+      "Tulis dalam Rust: cache lokal di SSD/NVMe tiap node, snapshot-consistent queries via SlateDB, dan writer handoff aman via CAS leases — performa tinggi tanpa compromise konsistensi.",
+      "AGPL-3.0 licensed, production-ready untuk kasus use case graph-scale besar — relevan untuk team Indonesia yang butuh alternatif Neo4j cloud lebih hemat biaya tanpa kehilangan fitur query standar industri.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
