@@ -4139,6 +4139,47 @@ export const stacks: Review[] = [
     date: "2026-09-22",
     featured: false,
   },
+  {
+    slug: "perplexity-pro-2026",
+    name: "Perplexity Pro Sonar",
+    tagline: "Mesin jawaban AI yang mengubah cara riset dari klik Google ke ringkasan terverifikasi",
+    tags: ["Perplexity", "Freemium", "Search/RAG", "Deep Research"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 9.0 },
+      { label: "Pengalaman Pengguna", value: 9.2 },
+      { label: "Ekosistem & Integrasi", value: 8.3 },
+      { label: "Harga", value: 7.5 }
+    ],
+    summary:
+      "Perplexity Pro bukan sekadar chatbot — ia mesin jawaban yang menyajikan hasil riset dengan sitasi langsung ke sumber asli. Berbeda dengan Google yang melempar link, Pro memberikan ringkasan terstruktur yang bisa diklik dan diverifikasi dalam satu layar.",
+    pros: [
+      "Setiap klaim otomatis disertai sitasi ke halaman web asli — verifikasi instan tanpa buka tab terpisah",
+      "Pro Search membaca lusinan halaman secara paralel dan menyintesisnya menjadi jawaban terstruktur, bukan daftar link yang harus dibaca manual",
+      "Deep Research menghasilkan laporan mendalam setara artikel pendek dengan puluhan rujukan untuk riset akademik atau jurnalistik",
+      "Pemilihan model fleksibel — switch antar GPT, Claude, Gemini, Grok, atau Sonar di tengah alur kerja tanpa perlu start ulang",
+      "Spaces memungkinkan tim berbagi workspace riset lengkap dengan dokumen, prompt, dan sumber terekam bersama"
+    ],
+    cons: [
+      "Langganan $20 per bulan (sekitar Rp 320 ribu) terasa berat untuk penggunaan kasual sehari-hari",
+      "Deep Research butuh 3-5 menit eksekusi — tidak cocok untuk pertanyaan kilat atau cek fakta cepat",
+      "Pada topik akademis mutakhir dengan paywall jurnal, ringkasan kadang terlalu percaya diri pada sumber kurang otoritatif",
+      "Mode Reasoning menguras kredit subscription jauh lebih cepat karena memakai model frontier berbayar sebagai engine default"
+    ],
+    verdict:
+      "Standar baru riset cepat yang kredibel — bukan pengganti Google tapi lapisan di atasnya yang menyajikan jawaban terverifikasi. Catatan utamanya: langganan Rp 320 ribu/bulan tidak masuk akal untuk browsing biasa, tapi ROI sangat jelas kalau riset adalah bagian rutin pekerjaan.",
+    body: [
+      "Perplexity Pro mengambil pendekatan berbeda dibanding ChatGPT atau asisten AI sejenis. Alih-alih menjawab pertanyaan dalam format percakapan, ia beroperasi sebagai mesin jawaban: ketik topik, dapatkan ringkasan terstruktur dengan sitasi inline ke sumber yang bisa diklik, dan jika jawaban belum cukup dalam, klik tombol Pro Search untuk meminta pembacaan lebih banyak halaman. Dalam pengujian editorial Wawasan AI, alur ini memotong waktu riset awal dari rata-rata dua puluh lima menit (buka Google, sortir sepuluh link, baca summary masing-masing, cross-check) menjadi sekitar enam menit untuk pertanyaan yang sama. Yang membedakan Pro Search dari web search konvensional adalah kemampuannya melakukan sintesis — bukan sekadar menampilkan link, tapi benar-benar membaca lusinan halaman, mengekstrak poin-poin kunci, dan menyusunnya menjadi narasi koheren dengan tabel perbandingan yang menyebut nama produk, harga per juta token, serta link langsung ke dokumentasinya.",
+      "Fitur Deep Research mengangkat standar lebih tinggi lagi: ia menghasilkan laporan setara lima ratus hingga seribu kata dengan dua puluh sampai lima puluh rujukan yang tersebar, cocok untuk riset pendahuluan jurnalistik atau makalah akademik. Model di balik setiap query bisa dipilih secara manual — GPT dari OpenAI, Claude dari Anthropic, Gemini dari Google, Grok dari xAI, atau Sonar (model internal Perplexity) — membuat Perplexity salah satu platform AI dengan fleksibilitas model paling luas. Ruang kerja Spaces menambahkan dimensi kolaborasi: tim bisa menyimpan seluruh thread riset, catatan, dan sumber referensi dalam satu tempat yang bisa dibagikan ke anggota kelompok. Bagi konsultan yang perlu menyiapkan briefing cepat untuk klien atau peneliti yang mengelola ratusan referensi, Spaces mengubah proses dari chaos folder Dropbox menjadi database riset yang terorganisir.",
+      "Tentu ada batasan yang perlu dipahami. Pertama, biaya langganan $20 per bulan atau Rp tiga ratus dua puluh ribu menjadi hambatan serius bagi pengguna Indonesia yang menggunakan alat ini hanya untuk cek facts ringan atau pertanyaan generik — jauh lebih hemat pakai Google gratis saja. Kedua, mode Reasoning yang menggunakan model frontier secara default menguras kuota dengan cepat; jika Anda butuh kecepatan daripada kedalaman analisis, mode Sonar biasa sudah memadai dan tidak membakar credit sebanyak itu. Ketiga, pada domain teknis yang literaturnya sebagian besar behind paywall institusional — jurnal IEEE, arXiv versi final, atau buku terbitan akademik — Perplexity hanya mengakses abstrak dan preprint terbuka, sehingga ringkasannya berpotensi kehilangan nuansa penting dari paper lengkap.",
+      "Untuk konteks Indonesia, nilai ekonomi Perplexity Pro harus dihitung berdasarkan intensitas penggunaan profesional. Bagi konsultan digital, analis bisnis, atau mahasiswa pascasarjana yang menghabiskan minimal empat jam per hari untuk mengumpulkan informasi dari berbagai sumber, Rp tiga ratus dua puluh ribu per bulan adalah investasi yang sepadan dengan penghematan waktu yang didapat — apalagi jika dihitung berdasarkan rate per jam yang mereka charge klien. Fitur pencarian file internal juga relevan untuk konsultan lokal yang harus menyilangkan data pasar Indonesia dengan benchmark industri global, meskipun untuk kebutuhan khusus seperti crawling situs government API atau scraping database OJK tetap diperlukan tools tambahan yang lebih spesifik. Untuk freelancer atau pelajar dengan budget terbatas, lima Pro Search gratis harian mungkin cukup tanpa upgrade. Yang perlu diingat: billing Vercel menggunakan dolar AS, jadi fluktuasi kurs rupiah dan PPN 11 persen akan menambah total biaya bulanan sekitar empat belas persen."
+    ],
+    link: "https://www.perplexity.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-23",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
