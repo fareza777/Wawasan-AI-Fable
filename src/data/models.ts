@@ -4789,6 +4789,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-23",
     featured: false,
   },
+  {
+    slug: "k2-horizon-375b-a23b",
+    name: "K2 Horizon 375B A23B",
+    tagline: "Spesialis coding open-weight dari lembaga riset dengan harga nol rupiah",
+    tags: ["Institute of Foundation Models", "Open Weight", "Coding", "Akademik"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 9.0 },
+      { label: "Kecepatan", value: 7.0 },
+      { label: "Harga/Performa", value: 10 },
+    ],
+    aa_intelligence_index: 30.5,
+    aa_coding_index: 61.5,
+    aa_price_input: 0,
+    aa_price_output: 0,
+    aa_synced_at: "2026-09-26",
+    summary:
+      "Model MoE raksasa 375 miliar parameter dari Institute of Foundation Models yang menunjukkan kesenjangan kemampuan sangat mencolok: index penalaran 30,5 di bawah rata-rata industri tapi index coding 61,5 yang menggesek frontier proprietary. Dengan bobot terbuka dan tanpa biaya API, ini adalah pilihan rasional bagi developer yang prioritaskan coding-quality di atas general-purpose reasoning.",
+    pros: [
+      "Index coding 61,5 luar biasa untuk open-weight — melampaui GPT-5 (36,0) dan GLM-4.6 (30,2)",
+      "Zero-cost API atau self-host via bobot terbuka — tanpa batasan pembayaran internasional",
+      "Arsitektur MoE efisien — performa coding tinggi tanpa beban komputasi monolitik penuh",
+      "Ideal untuk workflow coding harian, debugging, refactor, dan agentic task teknis",
+    ],
+    cons: [
+      "Intelligence index 30,5 jauh di bawah model frontier — kurang cocok untuk riset matematika atau analisis umum",
+      "No math index tersedia — kemampuan numerik tidak terverifikasi di benchmark Artificial Analysis",
+      "Kecepatan throughput tidak terverifikasi — angka nol berarti belum ada benchmark token/detik yang terekam",
+      "Tidak ada situs resmi teridentifikasi sebagai proyek akademik non-komersial",
+    ],
+    verdict:
+      "Kalau kamu developer yang menilai AI dari kemampuan coding murni dan mengutamakan efisiensi biaya, K2 Horizon layak jadi opsi pertama. Tapi jangan harapkan general-purpose reasoning selevel Claude atau Gemini — ini alat spesialis, bukan all-rounder.",
+    body: [
+      "K2 Horizon 375B A23B dari Institute of Foundation Models menawarkan profil kemampuan yang jarang terlihat: jurang melebar antara skor umum dan skor coding. Intelligence index 30,5 menempatkan model ini di wilayah 'kompeten namun bukan frontier' — jauh di bawah Claude Opus 4.5 (43,1), GPT-5 (44,6), dan Gemini 3 (57,2). Namun di sisi coding, angka 61,5 bukan main-main: ia melampaui hampir seluruh model proprietary dalam daftar Wawasan AI, termasuk Opus 4.5 yang hanya punya coding index 42,9. (Sumber: Artificial Analysis.) Kesimpulannya, ini adalah model yang secara deliberate dioptimalkan untuk pemrograman, bukan general assistant.",
+      "Dalam konteks Indonesia, faktor paling menarik dari K2 Horizon adalah soal aksesibilitas. Dengan harga input $0 dan output $0 — yang berarti either gratis melalui API komunitas atau self-host lewat bobot terbuka — model ini menghilangkan hambatan pembayaran internasional yang sering menghalangi developer Indonesia mengakses model frontier berbayar. Jika kamu bisa menjalankan ini via Ollama, vLLM, atau platform inference lokal lainnya, kamu mendapat kualitas coding kelas frontier dengan biaya nol rupiah per penggunaan. Tidak ada langganan, tidak ada kartu kredit, tidak ada kuota terbatas.",
+      "(Sumber data: Artificial Analysis.) Trade-off yang perlu disadari jelas ada di domain penalaran umum: intelligence index 30,5 konsisten dengan model yang ahli di area spesifik tetapi tidak dirancang untuk tugas lintas-disiplin seperti riset akademis, analisis hukum, atau matematika tingkat lanjut. Strategi pemakaian editorial terbaik: gunakan K2 Horizon sebagai asisten coding primer untuk tugas-tugas seperti refaktor kode, debug error log, generate test case, dan menulis komponen software. Untuk tugas penalaran umum — menulis artikel, merangkum dokumen kebijakan, atau menganalisis isu publik — model lain seperti Gemini 3 atau Qwen tetap lebih tepat. Terakhir, fakta bahwa ini proyek akademik non-komersial dari Institute of Foundation Models memberikan jaminan tersendiri soal stabilitas lisensi jangka panjang — berbeda dari model startup yang bisa berubah arah bisnis kapan saja.",
+    ],
+    link: "https://www.foundation-models.org",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-26",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
