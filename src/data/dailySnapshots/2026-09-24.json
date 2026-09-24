@@ -1,0 +1,157 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "24 September 2026",
+  "period": {
+    "date": "2026-09-24",
+    "label": "24 September 2026",
+    "path": "/repo/daily/2026/09/24"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-24T00:03:23.585Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "NandhaKishorM/laya",
+      "owner": "NandhaKishorM",
+      "repo": "laya",
+      "description": "",
+      "githubUrl": "https://github.com/NandhaKishorM/laya",
+      "trendshiftUrl": "https://trendshift.io/repositories/244591",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-18T04:46:33Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "jaredpalmer/kev",
+      "owner": "jaredpalmer",
+      "repo": "kev",
+      "description": "tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook",
+      "githubUrl": "https://github.com/jaredpalmer/kev",
+      "trendshiftUrl": "https://trendshift.io/repositories/246657",
+      "language": "Python",
+      "topics": [
+        "Local LLM"
+      ],
+      "dateCreated": "2026-09-17T20:49:39Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "farion1231/cc-switch",
+      "owner": "farion1231",
+      "repo": "cc-switch",
+      "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
+      "githubUrl": "https://github.com/farion1231/cc-switch",
+      "trendshiftUrl": "https://trendshift.io/repositories/15372",
+      "language": "Rust",
+      "topics": [
+        "AI coding assistant",
+        "MCP"
+      ],
+      "dateCreated": "2025-08-04T14:16:16Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "vectorize-io/hindsight",
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "githubUrl": "https://github.com/vectorize-io/hindsight",
+      "trendshiftUrl": "https://trendshift.io/repositories/15603",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI memory"
+      ],
+      "dateCreated": "2025-10-30T11:49:48Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "jev-chat/jev-chat-jarvis",
+      "owner": "jev-chat",
+      "repo": "jev-chat-jarvis",
+      "description": "",
+      "githubUrl": "https://github.com/jev-chat/jev-chat-jarvis",
+      "trendshiftUrl": "https://trendshift.io/repositories/251374",
+      "language": "Kotlin",
+      "topics": [],
+      "dateCreated": "2026-09-21T11:12:53Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "hydra-db/hydradb",
+      "owner": "hydra-db",
+      "repo": "hydradb",
+      "description": "HydraDB - fast graph database on object storage",
+      "githubUrl": "https://github.com/hydra-db/hydradb",
+      "trendshiftUrl": "https://trendshift.io/repositories/154069",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-03T05:34:15Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Nasiko-Labs/nasiko",
+      "owner": "Nasiko-Labs",
+      "repo": "nasiko",
+      "description": "Developer Control Plane for your AI Agents",
+      "githubUrl": "https://github.com/Nasiko-Labs/nasiko",
+      "trendshiftUrl": "https://trendshift.io/repositories/55165",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Observability"
+      ],
+      "dateCreated": "2026-02-12T10:45:29Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "rocketride-org/rocketride-server",
+      "owner": "rocketride-org",
+      "repo": "rocketride-server",
+      "description": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
+      "githubUrl": "https://github.com/rocketride-org/rocketride-server",
+      "trendshiftUrl": "https://trendshift.io/repositories/37651",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-02-11T17:02:53Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "CopilotKit/openmuse",
+      "owner": "CopilotKit",
+      "repo": "openmuse",
+      "description": "A personal agent with a browser, terminal, files, and work that keeps going built with CopilotKit and AG-UI.",
+      "githubUrl": "https://github.com/CopilotKit/openmuse",
+      "trendshiftUrl": "https://trendshift.io/repositories/254992",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-09-15T16:05:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2022-09-29T12:09:14Z"
+    }
+  ]
+}

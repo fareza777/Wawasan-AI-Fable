@@ -4180,6 +4180,46 @@ export const stacks: Review[] = [
     date: "2026-09-23",
     featured: false,
   },
+  {
+    slug: "devin-2",
+    name: "Devin 2.0",
+    tagline: "Software engineer AI otonom dari Cognition Labs yang menyelesaikan tugas engineering lengkap",
+    tags: ["Cognition Labs", "Paid", "Agent Platform", "Software Engineering"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 9.0 },
+      { label: "Kualitas Output", value: 8.3 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 8.5 },
+      { label: "Harga", value: 6.5 },
+    ],
+    summary:
+      "Devin 2.0 adalah salah satu dari segelintir tool AI yang dirancang sebagai software engineer otonom — bukan asisten coding di terminal atau editor, tapi agen yang diberi tujuan tinggi dan diharapkan menjalankannya sendiri dari perencanaan sampai deployment. Dibawa oleh Cognition Labs dengan fokus enterprise, ia menawarkan alur kerja yang berbeda dari Claude Code maupun Cursor.",
+    pros: [
+      "Otonomi penuh dalam menyelesaikan tugas end-to-end tanpa perlu intervensi bertahap",
+      "Integrasi native ke GitHub untuk clone repo, commit perubahan, dan buat pull request secara otomatis",
+      "Interface web-based dengan workspace visual — cocok bagi yang tidak nyaman dengan workflow CLI",
+      "Arsitektur modern yang bisa beradaptasi pada berbagai stack proyek dari React sampai API backend",
+    ],
+    cons: [
+      "Biaya berlangganan sangat premium, jauh melampaui kemampuan budget startup kecil Indonesia",
+      "Tidak ada opsi BYOK atau self-host — seluruh eksekusi bergantung cloud proprietary",
+      "Masih memerlukan banyak penuntunan manual pada proyek kompleks multi-repo",
+      "Komunitas dan dokumentasi terbuka masih lebih tipis dibanding pesaing open-source",
+    ],
+    verdict:
+      "Devin 2.0 mewakili visi paling ambisius tentang 'developer AI' — agen yang benar-benar bekerja sendiri. Namun harga dan ketergantungan cloud-nya membuatnya lebih relevan bagi tim enterprise daripada developer solo di Indonesia. Untuk penggunaan pribadi, Claude Code atau Cursor tetap memberikan nilai ekonomis yang jauh lebih baik.",
+    body: [
+      "Devin 2.0 lahir dari visi yang cukup radikal: alih-alih membuat AI yang membantu programmer menulis kode, Cognition Labs membangun AI yang dianggap setara seorang software engineer. Dalam praktiknya, ini berarti Devin bisa menerima sebuah requirement tingkat tinggi — misalnya 'membuat aplikasi TODO dengan autentikasi pengguna dan deploy ke Vercel' — lalu mengerjakannya sendiri mulai dari membuat repository, menulis kode, menjalankan test, mengatasi error, sampai menyerahkan hasilnya melalui pull request. Tidak ada proses step-by-step yang perlu kamu supervisi secara ketat seperti saat menggunakan pair programming tools lainnya.",
+      "Yang membedakan Devin dari pesaing utamanya adalah pendekatan otonomi versus kolaborasi. Claude Code dirancang untuk bekerja bersama kamu di terminal — kamu memberi instruksi, dia kerjakan, kamu review, dia iterasi. Cursor beroperasi di IDE, memberikan suggestion yang kamu terima atau tolak. Devin justru mencoba melakukan semuanya sendiri: browsing documentation, mengeksekusi command line, menulis dan memperbaiki kode, bahkan bisa merestart proses yang stuck. Jika berhasil, ini menghemat waktu secara dramatis. Jika gagal, kamu perlu mendeteksi kegagalan relatif awal dan mulai kembali mengarahkan secara manual.",
+      "Untuk konteks Indonesia, tantangan terbesar Devin 2.0 jelas terletak pada biaya. Produk ini diposisikan untuk tim engineering enterprise dengan anggaran besar — jauh di luar jangkauan freelancer, startup tahap awal, atau developer individual yang umum ditemui di komunitas teknologi Indonesia. Bandingkan dengan Claude Code ($20/bulan), Cursor (tier gratis tersedia), atau Aider (BYOK dengan biaya token murah), Devin tidak menawarkan alternatif yang dapat diakses oleh sebagian besar pasar lokal. Ditambah lagi, tidak ada pilihan self-host atau bring-your-own-key, artinya seluruh komputasi berjalan di server Cognition Labs yang berarti data kode kamu berada di infrastruktur pihak ketiga tanpa opsi untuk menjaga kedaulatan data secara mandiri.",
+      "Meskipun begitu, ada beberapa aspek yang membuat Devin layak dicoba setidaknya untuk proof-of-concept. Interface web-based-nya relatif mudah diakses tanpa setup lingkungan development yang rumit — cukup buka browser dan mulai. Integration native ke GitHub memungkinkan Devin langsung bekerja pada repo yang sudah ada, membuat commit dengan pesan yang koheren, dan membuka pull request yang siap review. Ini berguna terutama bagi tim distributed yang membutuhkan otomasi untuk tugas-tugas rutin seperti pembaruan dependensi, migrasi library, atau scaffolding fitur baru. Untuk individu di Indonesia yang tertarik merasakan pengalaman agentic coding tanpa komitmen budget besar, rekomendasi editorial tetap: mulai dari Claude Code atau OpenAI Codex yang tersedia melalui langganan ChatGPT, rasakan dulu apakah pola kerja otonom sesuai dengan gaya kerjamu sebelum mempertimbangkan solusi enterprise.",
+    ],
+    link: "https://devin.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-24",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
