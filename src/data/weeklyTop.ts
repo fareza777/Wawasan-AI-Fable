@@ -2767,6 +2767,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Deploy lokal via Docker atau pakai Hindsight Cloud; data tetap privat kalau self-hosted — relevan untuk enterprise Fortune 500 yang butuh memori agen aman di infrastruktur sendiri.",
     ],
   },
+  "dream-num/univer": {
+    description:
+      "Office harness untuk agen AI — spreadsheets, dokumen, presentasi, canvas, tabel relasional, dan PDF dalam satu runtime terpadu yang memungkinkan coding agent memanipulasi berkas office layaknya dokumen asli.",
+    highlights: [
+      "Runtime komprehensif yang menggabungkan lima format dokumen kunci (spreadsheet, doc, slide, canvas, relational table, PDF) ke satu sistem terintegrasi — agen AI bisa membaca, menulis, dan memodifikasi semua format ini lewat satu interface tanpa perlu library terpisah.",
+      "Dirancang khusus untuk agen AI sebagai 'office worker' virtual: agent bisa generate laporan spreadsheet, menyusun presentasi, mengedit dokumen teks, dan mengekspor PDF — bukan tool editing manual, melainkan platform agentic untuk otomasi produktivitas kantor.",
+      "Stack modern dengan TypeScript dan arsitektur modular yang mendukung extensibility — cocok untuk developer Indonesia yang ingin bangun workflow otomatisasi dokumen berbasis AI tanpa bergantung ke Google Workspace atau Microsoft 365 API.",
+      "Open source dan self-hostable — data dokumen tidak keluar ke cloud vendor besar, menjawab kebutuhan perusahaan Indonesia yang menangani dokumen sensitif namun ingin otomasi cerdas lewat AI agent.",
+    ],
+  },
   "hydra-db/hydradb": {
     description:
       "Database grafik berkecepatan tinggi dari Rust yang menyimpan data langsung di object storage (S3) — query OpenCypher kompatibel Neo4j dengan pemisahan storage dan compute yang scalable.",
