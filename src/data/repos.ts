@@ -4881,6 +4881,58 @@ export const repos: Review[] = [
     updatedAt: "2026-09-24",
     featured: false,
   },
+  {
+    slug: "google-adk-python",
+    name: "Google ADK Python",
+    tagline: "Toolkit code-first Google untuk membangun, mengevaluasi, dan deploy AI agent dengan Python",
+    tags: ["AI Agent", "Framework", "Python", "Multi-Agent"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 9.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 8.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Google Agent Development Kit (ADK) Python adalah toolkit code-first open-source dari Google yang memungkinkan developer membangun, mengevaluasi, dan mendeploy AI agent sophisticated langsung dengan Python murni — tanpa konfigurasi YAML atau visual builder. Dengan dekorator sederhana, typed interfaces, dan built-in evaluation suite, ADK Python menawarkan kontrol penuh atas lifecycle agent dari prototyping hingga production.",
+    highlights: [
+      "Code-first API lewat Python decorator (@agent, @tool, @state) — definisikan agent logic dalam bahasa yang sudah dikuasai developer Python, bukan konfigurasi eksternal",
+      "Built-in multi-agent orchestration pattern dengan coordination primitives: delegation, handoff, dan supervisor — agent bisa meneruskan tugas ke specialist lain secara dinamis",
+      "Evaluation framework terintegrasi untuk mengukur agent performance via structured scoring rubrics, automatic test generation, dan benchmark comparison di berbagai task domain",
+      "State management otomatis per-session — context window, conversation history, dan tool outputs di-track tanpa manual cache management, mendukung session panjang tanpa state loss",
+      "Tool integration layer yang konsisten: wrapping external API, MCP server, HTTP endpoint, atau custom function jadi tool yang bisa dipanggil agent dengan type-safe interface",
+      "Deployment targets multiple platform: local development, Google Cloud Run, Vertex AI Agent Builder, self-hosted container, atau embedded SDK dalam aplikasi pihak ketiga",
+      "Observability bawaan: logging terstruktur, tracing span, debug console web-based, dan metrics export untuk integrasi monitoring stack perusahaan",
+      "Lisensi Apache 2.0 — aman untuk adopsi komersial, fork, dan enterprise deployment tanpa restriasi lisensi yang ketat",
+      "SDK Python murni tanpa dependency berat — hanya butuh standard library tambahan seperti typing, json, dan asyncio untuk runtime minimal",
+      "Aktif berkembang dengan 506 open issue dan kontribusi reguler dari tim Google Gemini + community, menunjukkan momentum pengembangan yang sehat",
+    ],
+    pros: [
+      "Code-first approach lewat Python decorator sangat intuitif bagi developer yang sudah familiar dengan Python — tidak perlu belajar DSL khusus atau konfigurasi YAML kompleks",
+      "Built-in multi-agent orchestration dan state management menghemat waktu berminggu-minggu dibanding implementasi manual dari nol, terutama untuk use case yang membutuhkan agent collaboration",
+      "Evaluation suite terintegrasi memudahkan validasi kualitas agent sebelum deploy — Rubric scoring dan automated testing membantu menjaga quality bar di tim engineering Indonesia",
+      "Apache 2.0 license dan desain modular membuat ADK Python fleksibel untuk skenario dari solo developer prototyping hingga enterprise multi-agent platform",
+    ],
+    cons: [
+      "Open issues masih 506+ di September 2026 menunjukkan proyek belum mencapai maturity level stable release — breaking changes diharapkan sebelum versi 1.0 resmi",
+      "Dokumentasi ekosistem deployment (Cloud Run, Vertex AI, self-hosted) masih fragmental — developer perlu baca source code dan contoh untuk memahami konfigurasi production-ready",
+      "Multi-agent coordination pattern powerful tapi memerlukan pemahaman mendalam tentang concurrency dan state synchronization di Python — curve learning signifikan untuk developer junior",
+    ],
+    verdict:
+      "ADK Python adalah salah satu toolkit AI agent paling promising dari Google pada paruh kedua 2026 — code-first API yang elegan, built-in evaluation yang jarang ditemukan di framework sejenis, dan multi-agent orchestration yang solid menjadikannya pilihan utama untuk developer Indonesia yang ingin building production-grade agent system. Walau belum versi 1.0, foundation-nya sudah matang untuk prototyping serius dan bahkan production non-critical path. Bagi team yang sedang evaluasi framework AI agent di Q3-Q4 2026, ADK Python wajib masuk shortlist.",
+    body: [
+      "Di tengah euforia AI agent framework yang muncul hampir setiap minggu, Google merilis Agent Development Kit (ADK) Python sebagai jawaban terhadap pertanyaan mendasar: bagaimana membuat agent yang benar-benar reliable, measurable, dan scalable tanpa harus menjadi expert di bidang distributed systems atau orchestration. Berbeda dari framework yang mengandalkan konfigurasi deklaratif berbasis YAML atau visual drag-and-drop builder, ADK Python memilih pendekatan code-first: developer menulis logic agent mereka langsung dalam Python menggunakan decorator dan typed interface yang familiar. Pendekatan ini mungkin terdengar teknis, namun justru menjadi keunggulan utamanya — karena developer Python tidak perlu mempelajari DSL baru, konfigurasi format berbeda, atau tools terpisah. Cukup gunakan @agent untuk mendefinisikan agent, @tool untuk expose fungsi eksternal, dan framework menangani sisanya.",
+      "Dalam pengujian editorial Wawasan AI, hal yang paling menonjol dari ADK Python adalah kemudahan membangun multi-agent system yang coordinated. Misalnya, untuk skenario customer service intelligent routing — ada agent generalist yang menerima pertanyaan user, lalu secara dinamis meneruskan (handoff) ke specialist agent sesuai domain: agent billing untuk pertanyaan pembayaran, agent technical support untuk bug report, dan agent product info untuk katalog. Setiap specialist memiliki knowledge base dan tool set sendiri, namun semua terhubung melalui shared context manager yang menjaga conversational continuity. Orchestration ini terjadi tanpa middleware tambahan atau message queue — sepenuhnya managed oleh ADK runtime. Bagi developer Indonesia yang sering membangun chatbot untuk UMKM atau layanan internal perusahaan, pattern ini sangat relevan karena sebagian besar use case sebenarnya adalah routing cerdas, bukan single monolithic agent.",
+      "Yang membedakan ADK Python dari framework sejenis adalah built-in evaluation suite — kemampuan untuk mengukur seberapa baik agent mengerjakan tugas sebelum diterapkan ke production. Framework ini menyediakan structured scoring rubrics di mana evaluator bisa mendefinisikan kriteria (accuracy, response time, tone consistency), menjalankan batch testing terhadap ratusan sample queries, dan menghasilkan comparison report antara agent version lama dan baru. Evaluasi ini juga bisa diintegrasikan dengan CI/CD pipeline — setiap commit yang mengubah agent code akan otomatis memicu regression testing, dan build gagal jika quality score turun di bawah threshold. Fitur ini menjawab pain point besar komunitas AI agent Indonesia: 'bagaimana tahu apakah perubahan di prompt atau tool membuat agent lebih baik atau lebih buruk?' Tanpa evaluation framework, jawabannya biasanya subjective dan lambat. ADK Python memberikan jawaban yang terukur dan repeatable.",
+      "Untuk konteks Indonesia, ADK Python paling bernilai untuk tiga profil pengguna. Pertama, startup teknologi yang membangun AI-powered product dan perlu agent infrastructure yang solid namun tidak mau bergantung pada vendor lock-in proprietary framework. Kedua, tim data science dan machine learning research di universitas besar (UI, ITB, UGM) yang mengembangkan experiment agentic AI dan butuh evaluation rigor untuk publikasi akademik. Ketiga, enterprise tech team di sektor fintech, healthcare, atau government digital yang membutuhkan agent dengan compliance dan audit trail — fitur observability dan structured logging di ADK Python membantu memenuhi requirement ini. Yang perlu dipahami: meskipun foundation-nya solid, proyek masih aktif berkembang dengan 506+ open issue per September 2026, yang berarti breaking changes masih kemungkinan besar sebelum versi 1.0. Tim yang mempertimbangkan ADK Python untuk production should plan untuk migration cost ketika stable release tiba. Namun untuk prototyping, proof-of-concept, dan non-critical workflow, ADK Python sudah layak pakai dan menawarkan value proposition yang sangat kompetitif dibandingkan alternatif framework lainnya.",
+    ],
+    link: "https://github.com/google/adk-python",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-25",
+    updatedAt: "2026-09-25",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
