@@ -2787,6 +2787,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "AGPL-3.0 licensed, production-ready untuk kasus use case graph-scale besar — relevan untuk team Indonesia yang butuh alternatif Neo4j cloud lebih hemat biaya tanpa kehilangan fitur query standar industri.",
     ],
   },
+  "iAmCorey/Wake": {
+    description:
+      "Aplikasi desktop native (Rust + GPUI) yang menyatukan semua sesi coding agent di satu mesin — browse, cari teks penuh, dan lanjutkan percakapan dari mana saja, tanpa upload data ke cloud.",
+    highlights: [
+      "Mengumpulkan riwayat semua coding agent (Claude Code, Codex, Gemini CLI, OpenCode, Cursor, Hermes Agent, dan 20+ lainnya) ke satu jendela terpadu — mengatasi masalah klasik developer yang punya riwayat terfragmentasi di ~/.claude, ~/.codex, dan puluhan direktori berbeda.",
+      "Pencarian teks penuh (FTS5 SQLite trigram) yang menangani teks CJK, kode, dan substring sama baik — ⌘K/Ctrl+K langsung lompat ke pesan yang cocok di transcript lengkap.",
+      "One-click resume yang membuka ulang sesi di terminal kamu pada project directory asli; plus remote hosts support via SSH untuk mirror sesi dari machine lain — jadi tidak perlu bolak-balik antar mesin atau menyalin perintah resume secara manual.",
+      "Dilengkapi bundled MCP server read-only (`wake-mcp`) sehingga Claude Code, Codex, atau agent baru bisa langsung search seluruh history dan baca transcript halaman per halaman — agent baru bisa mengambil alih tempat agent sebelumnya berhenti.",
+    ],
+  },
+  "arcboxlabs/arcbox": {
+    description:
+      "Runtime container dan VM open-source dari Rust yang jadi alternatif Docker Desktop + OrbStack — jalankan container, sandbox AI agent, Linux VM, bahkan macOS guest dalam satu runtime cepat (<200ms boot).",
+    highlights: [
+      "VMM (Virtual Machine Monitor) buatan sendiri ditulis 100% Rust — VirtIO devices, filesystem sharing, network datapath semuanya homemade. Bukan wrapper, melainkan implementasi virtualisasi dari nol yang setara performa dengan Docker Desktop tapi terbuka.",
+      "Empat tier workload dalam satu daemon: containers (drop-in Docker engine), sandboxes microVM untuk AI agent/kode berbahaya (abctl claude, abctl sandbox), full VM Linux (abctl machine), hingga macOS guest (abctl macos). Sandbox boot <200ms — ideal untuk run AI agent di lingkungan terisolasi.",
+      "Drop-in Kubernetes native via `abctl k8s`, kompatibel OCI, dan memiliki ArcBox Platform untuk fleet scaling dari lokal ke cloud — bangun against local sandbox, scale ke banyak node tanpa ubah code.",
+      "Local-first dan self-hostable dengan lisensi MIT/Apache-2.0 — data tidak pernah keluar dari mesin sendiri, sangat relevan untuk developer Indonesia yang butuh environment development/containerization aman tanpa bergantung ke cloud provider pihak ketiga.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
