@@ -4933,6 +4933,56 @@ export const repos: Review[] = [
     updatedAt: "2026-09-25",
     featured: false,
   },
+  {
+    slug: "crawl4ai",
+    name: "Crawl4AI",
+    tagline: "Ubah situs web apa pun menjadi Markdown bersih yang siap dikonsumsi LLM dan agent AI",
+    tags: ["Web Scraping", "RAG", "Python", "LLM"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Crawl4AI adalah crawler dan scraper open-source yang dirancang khusus untuk LLM dan agen AI — mengubah halaman web apa pun menjadi Markdown terstruktur yang langsung bisa dipakai sebagai konteks model. Dengan dukungan scraping sisi klien (JavaScript-rendered pages via Playwright) dan opsi cloud hosting, proyek ini menjembatani kesenjangan antara data mentah di internet dan format yang dipahami mesin.",
+    highlights: [
+      "Transformasi halaman web ke Markdown terstruktur — chunking otomatis, heading preservation, metadata extraction",
+      "Playwright-powered rendering: scrape halaman yang sepenuhnya JS-rendered tanpa perlu reverse-engineer API tersembunyi",
+      "MCP Server bawaan: agent AI bisa memanggil Crawl4AI langsung lewat Model Context Protocol tanpa middleware",
+      "Opsi cloud hosting (Crawl4AI Cloud) dengan satu API key — bagi yang tidak ingin mengelola infrastruktur",
+      "Self-hosted via Docker atau pip — kontrol penuh atas data, proxy, dan jadwal crawling",
+      "Pipeline RAG end-to-end: curl → parse → chunk → embed → index, cukup satu baris command",
+      "Rate limiting cerdas, retry otomatis, dan smart cache untuk scraping berkelanjutan tanpa IP banned",
+      "Output bisa diekspor sebagai Markdown, JSON terstruktur, atau tabel CSV — fleksibel untuk berbagai downstream",
+    ],
+    pros: [
+      "Format output sudah 'LLM-ready' — tidak perlu preprocessing tambahan sebelum masuk RAG pipeline",
+      "Dukungan scraping sisi klien membuat halaman modern (SPA, infinite scroll) bisa di-parse utuh",
+      "MCP integration memungkinkan agensi AI langsung menggunakan sebagai tool pencarian",
+      "Komunitas sangat aktif — bintang tumbuh cepat dari nol hingga puluhan ribu dalam waktu singkat",
+    ],
+    cons: [
+      "Halaman dengan CAPTCHA atau proteksi bot keras akan memerlukan konfigurasi proxy dan headful browser manual",
+      "Cloud version menambah ketergantungan pada layanan pihak ketiga — menggerus prinsip self-hosted",
+      "Setup lokal butuh memori cukup besar karena Playwright berjalan sebagai worker thread terpisah",
+    ],
+    verdict:
+      "Bagi siapa pun yang membangun RAG system atau agen AI yang perlu mengambil informasi dari web secara rutin, Crawl4AI adalah salah satu alat paling bernilai di 2026 — menghemat berminggu-minggu kerja parsing manual dan langsung menghasilkan output yang bisa diproses oleh model. Untuk tim Indonesia yang mengandalkan data web untuk riset pasar atau monitoring kompetitor, ini investasi yang langsung terasa.",
+    body: [
+      "Dunia AI saat ini menghadapi masalah klasik: model membutuhkan data kontekstual untuk menjawab pertanyaan dengan akurat, sementara sebagian besar informasi berharga masih tersembunyi di balik struktur HTML yang berantakan, JavaScript-heavy, dan dirancang untuk mata manusia. Crawl4AI muncul sebagai jembatan. Proyek ini tidak sekadar melakukan scraping — ia memahami halaman web dan mentransformasinya menjadi Markdown yang bersih, terstruktur, dan siap langsung dimakan oleh LLM tanpa preprocessing tambahan.",
+      "Dalam pengujian editorial Wawasan AI, kekuatan utama Crawl4AI terlihat jelas ketika menangani halaman-halaman kompleks seperti portal berita dengan infinite scroll, dokumentasi teknis yang memanfaatkan client-side rendering, atau e-commerce dengan harga dinamis. Berbeda dari scraper berbasis HTTP request biasa yang hanya menangkap skeleton HTML awal, Crawl4AI memanfaatkan Playwright untuk merender halaman sepenuhnya — termasuk mengeksekusi JavaScript dan menunggu konten ter-load. Hasilnya adalah representasi digital yang jauh lebih setia daripada apa yang bisa ditangkap curl biasa.",
+      "Yang menjadikan Crawl4AI unik dibanding tools serupa (scrapy, beautifulsoup, atau layanan scraping komersial) adalah orientasinya yang spesifik ke kebutuhan AI. Outputnya bukan sekadar HTML mentah yang dibersihkan — tapi dokumen terstruktur dengan hierarchy heading preserved, link annotation, metadata ekstraksi, dan chunking yang mempertimbangkan boundary paragraf. Ini berarti setelah crawling selesai, data tersebut bisa langsung di-ingest ke vector database untuk RAG, atau dikirim ke agent framework sebagai context window. Integrasi MCP Server bawaannya juga membuka kemungkinan baru: agent bisa meminta 'tulis ringkasan dari URL ini' dan Crawl4AI langsung menjadi sumber informasinya, tanpa perantara ETL pipeline.",
+      "Untuk konteks Indonesia, aplikasi praktisnya beragam. Tim riset pasar bisa memantau harga produk pesaing secara berkala dan mengubah halaman e-commerce menjadi dataset terstruktur. Organisasi pemerintah bisa mengumpulkan dan mendokumensikan regulasi dari berbagai kementerian dalam format yang konsisten. Startup edtech bisa mengumpulkan materi pembelajaran dari web lalu men-pipeline-kan ke sistem tutoring mereka. Yang perlu diperhatikan: karena crawler ini menjalankan browser sungguhan, resource consumption-nya lebih tinggi dibanding request-based scraper — VPS dengan minimal 2 GB RAM disarankan. Namun bagi use case yang membutuhkan akurasi rendering tinggi, biaya itu sepadan dengan kualitas output yang dihasilkan.",
+    ],
+    link: "https://github.com/unclecode/crawl4ai",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-26",
+    updatedAt: "2026-09-26",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
