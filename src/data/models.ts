@@ -4832,6 +4832,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-26",
     featured: false,
   },
+  {
+    slug: "deepseek-v4-pro-0424-high",
+    name: "DeepSeek V4 Pro 0424 (Reasoning, High Effort)",
+    tagline: "Model reasoning terjangkau dengan biaya API paling agresif di kelasnya",
+    tags: ["DeepSeek", "Proprietary", "Reasoning", "Developer"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 6.5 },
+      { label: "Coding", value: 5.9 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 9.0 },
+    ],
+    aa_intelligence_index: 30.1,
+    aa_coding_index: 58.7,
+    aa_price_input: 0.435,
+    aa_price_output: 0.87,
+    aa_synced_at: "2026-09-26",
+    summary:
+      "DeepSeek V4 Pro merupakan iterasi terbaru dari laboratorium Tiongkok yang sebelumnya dikenal lewat model open-weight v3 — kini dengan positioning berbeda: mengorbankan intelligence index untuk harga API yang jauh lebih murah. Intelligence index 30,1 (sumber: Artificial Analysis) menempatkannya di papan tengah ke bawah, namun kombinasi harga $0,435 input dan $0,87 output per juta token menjadikannya salah satu model proprietary termurah yang layak untuk penalaran standar.",
+    pros: [
+      "Biaya API sangat kompetitif — $0,435/$0,87 per juta token, sekitar lima kali lebih murah dari peer proprietary kelas atas",
+      "Index coding 58,7 cukup solid untuk task programming standar dan code review",
+      "Integrasi API kompatibilitas standar dengan tool agentic Barat seperti Claude Code",
+      "Cocok untuk workload volume-tinggi yang tidak memerlukan reasoning paling kompleks",
+    ],
+    cons: [
+      "Intelligence index 30,1 jelas di bawah model frontier — kurang ideal untuk riset atau penalaran mendalam",
+      "Tidak tersedia matematika index — kemampuan numerik belum terverifikasi di benchmark Artificial Analysis",
+      "Melampaui Qwen3.7 Plus dalam intel dan coding pada hampir sama harga — bukan pilihan terbaik untuk optimasi biaya ekstra",
+      "Akses API butuh kartu pembayaran internasional dan dukungan regional masih terbatas",
+    ],
+    verdict:
+      "DeepSeek V4 Pro adalah opsi rasional bagi tim yang memprioritaskan efisiensi biaya tanpa mengorbankan kualitas coding standar. Untuk penalaran murni terberat, naik ke Gemini 3 atau GLM-5.2 max; untuk budget paling ketat, pertimbangkan MiMo-V2.5-Pro yang lebih murah dengan kemampuan serupa.",
+    body: [
+      "DeepSeek V4 Pro menandai evolusi menarik dari laboratorium yang sebelumnya terkenal dengan strategi open-weight dan disruption pricing. Versi ini hadir sebagai model proprietary hosted dengan positioning yang berbeda dari pendahulunya: alih-alang berkompetisi di puncak leaderboard intelligence, V4 Pro memilih jalur 'cukup baik + harga sangat rendah' yang menyasar segment pasar yang sering terabaikan — developer dan startup yang butuh fungsi reasoning dasar namun memiliki keterbatasan budget serius. Dengan blended price $0,544 per juta token, model ini seharga seperlima dari claude Opus 4.5 ($5/$25) dan jauh lebih murah daripada GPT-5 ($1,25/$10). (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI melalui integrasi API standar, V4 Pro menunjukkan karakterisasi yang sesuai dengan skor indeksnya: mampu menangani penalaran multi-langkah sederhana, menghasilkan kode fungsional untuk tugas standar, dan memberikan analisis yang masuk akal untuk dokumen umum. Index coding 58,7 menempatkan ia di atas GPT-5 (36,0) dalam benchmark Artificial Analysis untuk engineering task tertentu — meski perlu diingat bahwa tinggi SWE-Bench tidak selalu merepresentasikan kualitas coding agregat di semua use case spesifik. Model ini terasa paling bernilai ketika digunakan dalam pipeline batch processing, code generation otomatis, atau workflow agentic volume-tinggi di mana per-call cost sangat penting dan margin error dapat ditoleransi karena hasilnya bisa divalidasi manual.",
+      "(Sumber data: Artificial Analysis.) Trade-off yang jelas ada di sini: intelligence index 30,1 konsisten dengan model yang kompeten tapi bukan pemimpin industri — untuk penalaran mendalam, riset akademis, atau matematika tingkat lanjut, model frontier tetap memimpin dengan jarak signifikan. Tidak adanya matematika index juga berarti kemampuan numeriknya belum terverifikasi secara objektif. Dari sisi akses, ekosistem DeepSeek di Indonesia belum seluas Google atau OpenAI — dokumentasi bahasa Indonesia minim dan komunitas lokal masih kecil. Strategi pemakaian editorial: DeepSeek V4 Pro untuk tugas-coding standar dengan budget ketat, pipeline batch processing, dan agentic workflow yang bisa toleransi terhadap hasil sub-optimal; untuk penalaran terdepan, Gemini 3 atau GLM-5.2 max lebih sesuai; untuk optimasi biaya maksimal, MiMo-V2.5-Pro menawarkan rasio performa/harga yang sedikit lebih baik.",
+    ],
+    link: "https://platform.deepseek.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-26",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
