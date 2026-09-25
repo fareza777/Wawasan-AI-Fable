@@ -1,0 +1,155 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-25T06:26:45.137Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "Human-Agent-Society/reef",
+      "owner": "Human-Agent-Society",
+      "repo": "reef",
+      "description": "Continual learning infra for self-improving agents",
+      "githubUrl": "https://github.com/Human-Agent-Society/reef",
+      "trendshiftUrl": "https://trendshift.io/repositories/204783",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-08-31T01:39:18Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "spinabot/brigade",
+      "owner": "spinabot",
+      "repo": "brigade",
+      "description": "Brigade — Your personal intelligence, built enterprise-grade",
+      "githubUrl": "https://github.com/spinabot/brigade",
+      "trendshiftUrl": "https://trendshift.io/repositories/118354",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-06-19T15:18:17Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "tobi/disktree",
+      "owner": "tobi",
+      "repo": "disktree",
+      "description": "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.",
+      "githubUrl": "https://github.com/tobi/disktree",
+      "trendshiftUrl": "https://trendshift.io/repositories/259926",
+      "language": "Rust",
+      "topics": [
+        "File management"
+      ],
+      "dateCreated": "2026-09-24T20:56:29Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "devdotfast/whiteboard",
+      "owner": "devdotfast",
+      "repo": "whiteboard",
+      "description": "Save time reviewing ai code",
+      "githubUrl": "https://github.com/devdotfast/whiteboard",
+      "trendshiftUrl": "https://trendshift.io/repositories/192509",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-08-18T15:06:04Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "paperclipai/paperclip",
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "githubUrl": "https://github.com/paperclipai/paperclip",
+      "trendshiftUrl": "https://trendshift.io/repositories/22502",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-02T15:01:51Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2022-09-29T12:09:14Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "trailofbits/coop",
+      "owner": "trailofbits",
+      "repo": "coop",
+      "description": "Isolated VM environment for running Claude Code and Codex",
+      "githubUrl": "https://github.com/trailofbits/coop",
+      "trendshiftUrl": "https://trendshift.io/repositories/217986",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-04-02T10:56:32Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/24667",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-03-18T18:38:02Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "vectorize-io/hindsight",
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "githubUrl": "https://github.com/vectorize-io/hindsight",
+      "trendshiftUrl": "https://trendshift.io/repositories/15603",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI memory"
+      ],
+      "dateCreated": "2025-10-30T11:49:48Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "allenpeng0705/EnvoyMesh",
+      "owner": "allenpeng0705",
+      "repo": "EnvoyMesh",
+      "description": "Decentralized P2P mesh for autonomous AI agents — self-sovereign identity, peer-to-peer chat, and on-device AI that negotiates tasks on your behalf. No central server.",
+      "githubUrl": "https://github.com/allenpeng0705/EnvoyMesh",
+      "trendshiftUrl": "https://trendshift.io/repositories/196780",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-26T04:19:04Z"
+    }
+  ]
+}
