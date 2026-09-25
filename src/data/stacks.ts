@@ -4220,6 +4220,46 @@ export const stacks: Review[] = [
     date: "2026-09-24",
     featured: false,
   },
+  {
+    slug: "you-com-ari",
+    name: "You.com ARI",
+    tagline: "Mesin riset AI yang menggabungkan pencarian web dan RAG ke dalam alur kerja terstruktur",
+    tags: ["You.com", "Freemium", "Search/RAG", "Research Agent"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 8.3 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "ARI (AI Research Interface) dari You.com bukan sekadar mesin pencari biasa — ia merancang alur riset end-to-end mulai dari perumusan pertanyaan, pengambilan sumber terverifikasi, hingga kompilasi temuan jadi laporan terstruktur. Dengan kemampuan integrasi custom data source via RAG, ARI menjembatani jurang antara pencarian web terbuka dan analisis berbasis dokumentasi internal.",
+    pros: [
+      "Alur riset terotomatisasi: dari query awal sampai draft laporan dengan sitasi yang bisa dilacak ke sumber aslinya",
+      "Custom data source integration via RAG: arahkan ke dokumen internal atau knowledge base perusahaan untuk hasil yang grounded pada data spesifik",
+      "Output berbentuk artikel terstruktur dengan bagian executive summary, analisis mendalam, dan referensi — siap langsung dipakai untuk briefing atau presentasi",
+      "Tier gratis tersedia dengan jatah pemakaian harian yang cukup untuk evaluasi serius sebelum membeli Pro plan",
+    ],
+    cons: [
+      "Harga $19/bulan untuk Pro terasa mahal bagi freelancer Indonesia bila dibandingkan ChatGPT Plus $20 yang menawarkan lebih banyak capability secara holistic",
+      "Otonomi riset masih perlu supervisi — tidak sepenuh Claude Code atau Devin yang benar-benar bisa jalan sendiri tanpa intervensi",
+      "Ketergantungan internet penuh: berbeda dengan solusi lokal berbasis model open-source yang bisa jalan offline setelah download",
+      "Komunitas dan ekosistem plugin jauh lebih kecil dibanding Open Source alternatives seperti LangChain + LlamaIndex yang bisa di-custom sepenuhnya",
+    ],
+    verdict:
+      "Pilihan solid untuk profesional yang butuh riset berkualitas tinggi tanpa harus bangun pipeline RAG sendiri, tapi catatan utamanya adalah harga yang menantang budget developer solo Indonesia. Untuk tim enterprise yang butuh grounded research output, ARI memberikan nilai; untuk individu, tier gratisnya cukup untuk eksplorasi.",
+    body: [
+      "You.com sudah lama dikenal sebagai alternatif mesin pencari yang mengintegrasikan AI ke dalam hasil pencarian. Tapi ARI (AI Research Interface) merepresentasikan lompatan yang lebih signifikan: dari sekadar menampilkan serangkaian link dengan snippet AI-generated, menjadi asisten riset yang menyusun alur kerja lengkap dari pertanyaan awal hingga laporan terstruktur. Dalam praktiknya, pengguna bisa memberikan topik riset yang ingin dieksplorasi — misalnya 'trend adoption AI agent di Asia Tenggara Q2 2026' — dan ARI akan menghasilkan draf artikel dengan executive summary, sub-topik teranalisis, sitasi ke sumber yang terverifikasi, dan bagian rekomendasi.",
+      "Yang membedakan ARI dari kompetitor search-AI terdekat seperti Perplexity AI atau Google SGE (Search Generative Experience) adalah dua hal: first, depth of synthesis. ARI tidak hanya merangkum hasil pencarian — ia melakukan multi-hop reasoning dengan melintasi beberapa sumber sekaligus, menghubungkan fakta dari berbagai domain, dan menghasilkan insight yang tidak ada di satu halaman mana pun. Kedua, custom data source integration via RAG. Kamu bisa menambahkan basis pengetahuan pribadi atau korporat — berupa dokumen PDF, halaman website internal, atau bahkan database terkoneksi — dan ARI akan mengkombinasikan informasi dari sumber publik dengan knowledge base internal ini. Ini sangat berguna untuk konteks bisnis: researcher yang perlu membandingkan tren industri publik dengan data penjualan internal bisa mendapatkan gambaran yang lebih holistik tanpa manual cross-reference.",
+      "Namun komprominya nyata. Pertama, otonomi ARI belum setara dengan agentic coding tools seperti Claude Code atau Devin — alat ini dirancang untuk assistance, bukan autonomous execution. Kamu tetap perlu mengarahkan arah riset, mengevaluasi kualitas sumber yang dipilih, dan melakukan iterasi pada output. Kedua, ketergantungan internet adalah faktor krusial bagi pengguna Indonesia: semua komputasi berjalan di cloud You.com, sehingga koneksi lambat atau gangguan internet berarti workflow riset terhenti total. Berbeda dengan stack open-source seperti LangChain + LlamaIndex + local LLM yang bisa berjalan sepenuhnya offline setelah setup awal. Ketiga, harga $19/bulan (sekitar Rp 300 ribuan per bulan) memang kompetitif bila dibandingkan enterprise-grade research platform, namun bagi freelancer atau mahasiswa Indonesia yang biasa menggunakan ChatGPT Plus $20/bulan — yang mencakup GPT-4o, image generation, voice mode, DAN mode, dan akses API dasar — biaya tambahan untuk ARI terasa sebagai luxury rather than necessity kecuali use case riset berat sudah terbukti konsisten.",
+      "Untuk ekosistem Indonesia, posisi You.com ARI menarik di segmen tertentu. Perusahaan konsultan, lembaga riset, dan media yang membutuhkan output analitis berkualitas tinggi bisa memanfaatkan ARI untuk mempercepat drafting laporan bulanan atau competitive intelligence briefings. Kemampuan custom data source via RAG juga membuat ARI relevan untuk tim compliance yang perlu mencocokkan regulasi baru terhadap policy internal secara sistematis — meskipun untuk use case yang sangat spesifik, membangun pipeline RAG custom mungkin tetap pilihan yang lebih tepat karena control penuh atas data sensitivity. Komunitas tech Indonesia masih sangat jarang membahas ARI secara spesifik; sebagian besar diskusi seputar AI-powered search berfokus pada Perplexity dan fitur generatif Google. Untuk yang baru mau coba, tier gratis You.com memberikan jatah pemakaian harian yang seharusnya cukup untuk beberapa sesi riset evaluatif — gunakan itu untuk mengukur apakah output ARI benar-benar menghemat waktu riset kamu sebelum upgrade ke Pro plan. Catatan pembayaran: semua langganan dalam USD dengan charge kartu internasional plus PPN 11 persen, markup total sekitar 12-15 persen.",
+    ],
+    link: "https://you.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-25",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
