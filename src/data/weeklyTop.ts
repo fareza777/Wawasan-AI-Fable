@@ -2457,6 +2457,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Sketsa dampak dari blog HAL (swyx): 'same model, different harness' — 42% → 78% di CORE-Bench. autoharness hanya menyentuh skill yang ia tulis sendiri, sehingga skill manual kamu atau skill dari plugin lain sama sekali tidak diubah.",
     ],
   },
+  "tigerless-labs/cost-xray": {
+    description:
+      "Proxy Python MIT yang menangkap laluan API Claude Code dan Codex — pecah biaya per tool, MCP server, cache hit ratio, dan thinking tokens di tiap turn, biar kamu tahu token API benar-benar terbakar ke mana.",
+    highlights: [
+      "Jalan sebagai mitmproxy addon: satu proses hot-path hanya mencatat bytes mentah (request/response JSONL append-only), sementara tokenizer berjalan di background thread terpisah tanpa mengganggu relay — sehingga tidak ada GIL steal atau latency tambahan di loop agen.",
+      "Classify setiap turn menjadi bucket terstruktur: tool call mana yang paling boros token, MCP server berapa ratus ribu token terpakai, cache read vs rewrote ratio, plus breakdown thinking tokens di respons Claude yang sering jadi 'ghost cost'.",
+      "Rollup otomatis per project dan model: lihat total tagihan sesi ini, cache hit rate keseluruhan, dan top-5 most-expensive tools dari dashboard derived.jsonl yang bisa dire-analyze ulang kapan saja tanpa perlu capture ulang.",
+      "Provider-neutral architecture — masing-masing agen punya adapter module sendiri (anthropic.py untuk Claude Code, openai.py untuk Codex) tanpa shared code, jadi tambah provider baru cukup satu file saja; harga dari LiteLLM pricing map yang daily-cache.",
+    ],
+  },
+  "dataelement/dsh-desktop": {
+    description:
+      "Desktop app Electron untuk DeepSeek Harness — mulai dan hentikan instance secara native, pilih workspace dengan directory picker sistem, kelola preset agen portabel, plus lanjutkan sesi dari HP lewat pairing token.",
+    highlights: [
+      "Paket pengalaman Harness lokal menjadi aplikasi desktop penuh: mulai runtime secara otomatis, buka workspace pakai directory picker native, simpan profiles, plugins, sessions, dan model settings di luar direktori instalasi agar upgrade tidak menghapus data pengguna.",
+      "Import dan export preset Agen lengkap sebagai paket .dshpreset yang portable — bagikan konfigurasi workflow timmu ke teman atau rekan kerja, plus cek konflik dan peringatan trust sebelum instalasi plugin pihak ketiga.",
+      "Mode PPT bawaan: ubah materi sumber jadi deck PowerPoint editable melalui catalog 16 template dan 192 layout, output .pptX langsung bisa diedit di PowerPoint atau Google Slides tanpa langkah tambahan.",
+      "Safe Mode non-destruktif yang memblokir plugin pihak ketiga saat startup bermasalah, pairing HP lewat LAN atau Cloudflare tunnel untuk lanjutkan sesi remote, dan auto-update check — distribusi macOS signed/notarized serta Windows NSIS installer, MIT License.",
+    ],
+  },
   "Novals83/5min-btc-polymarket": {
     description:
       "Skill OpenClaw open-source untuk trading BTC 5-minute Up/Down di Polymarket — pakai strategi momentum ke close (entry ~2 menit jelang expiry), dengan risk control, sizing 50% alokasi, dan micro-hedge opsional saat skew ekstrem.",
