@@ -4983,6 +4983,56 @@ export const repos: Review[] = [
     updatedAt: "2026-09-26",
     featured: false,
   },
+  {
+    slug: "paperclip",
+    name: "Paperclip",
+    tagline: "Orkestrasi tim AI agent dengan dashboard manajemen dari satu panel kontrol",
+    tags: ["AI Agent", "Multi-Agent", "Otomasi", "Self-hosted"],
+    score: 8.8,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.5 },
+    ],
+    summary:
+      "Paperclip adalah platform orkestrasi open-source untuk mengelola tim AI agent dalam skala bisnis — bukan satu agent tunggal, tapi puluhan agent yang bekerja selaras dengan budget terkontrol dan hierarki tujuan yang jelas. Jika OpenClaw adalah karyawan, Paperclip adalah perusahaannya.",
+    highlights: [
+      "Board UI berbasis React + Vite dengan tampilan Kanban/task-manager untuk memantau kerja agent secara visual",
+      "Hierarki tujuan (goal tree): konteks mengalir dari tugas ke proyek ke tujuan perusahaan, agar agent selalu tahu apa harus dikerjakan dan kenapa",
+      "Org chart struktural — definisikan peran, delegasi, dan hubungan supervisi antar agent seperti organisasi nyata",
+      "Penganggaran token real-time: set budget per agent atau per proyek, auto-throttle saat pengeluaran melampaui batas",
+      "Heartbeat scheduler untuk pekerjaan berulang (customer support, social media, laporan harian) tanpa manual trigger",
+      "Bring Your Own Agent (BYOA): masukkan agent apapun dengan prompt, model, dan runtime sendiri — Paperclip hanya mengatur koordinasi",
+      "Plugin system + skills/catalog bawaan untuk memperluas kemampuan setiap agent di tim",
+      "REST API Express sebagai control plane, PostgreSQL via Drizzle ORM untuk persistensi data",
+    ],
+    pros: [
+      "Dashboard terpusat yang benar-benar menyelesaikan masalah 'labyrinth konfigurasi' bagi pengguna multi-agent",
+      "Budgeting dan cost visibility langsung mencegah runaway token burn — fitur yang sangat jarang tersedia di tools sejenis",
+      "Desain BYOA yang fleksibel: tidak vendor-lock pada framework atau provider tertentu",
+      "Komunitas tumbuh sangat cepat dengan ritme rilis tinggi",
+    ],
+    cons: [
+      "Cocok untuk pengguna yang sudah punya portfolio agent banyak — bukan untuk pengguna single-agent sederhana",
+      "Setup awal memerlukan pengetahuan tentang Docker, network configuration (tailnet), dan adapter setup",
+      "Kurang cocok untuk tim yang mencari code-review atau PR workflow — ini orchestration tool, bukan collaboration tool",
+    ],
+    verdict:
+      "Bagi praktisi AI yang sudah lelah mengatur folder config agent yang berantakan, Paperclip menawarkan struktur nyata: dashboard, anggaran, jadwal, dan hierarki tugas. Ini mungkin belum menjadi produk siap produksi sehari-hari, tapi arah pengembangannya menunjukkan bahwa manajemen agentic scale-up memang kebutuhan mendesak.",
+    body: [
+      "Setelah bertahun-tahun melihat evolusi AI agent dari chatbot pasif menuju entitas yang bisa menjalankan tugas kompleks, muncul pertanyaan baru: bagaimana mengelola dua puluh agent yang masing-masing punya cara kerja berbeda? Paperclip menjawabnya dengan pendekatan yang relatif unik — sebuah control plane yang tidak mencoba menjadi agent itu sendiri, melainkan menjadi manajer yang membuat para agent bekerja bersama.",
+      "Konsep inti Paperclip cukup revolusioner dalam praktiknya: hierarki tujuan. Setiap agent diberi konteks yang mengalir dari atas ke bawah — tujuan perusahaan menentukan prioritas proyek, proyek menentukan tugas, dan tugas memberi instruksi spesifik ke agent. Berbeda dari pola fragmentasi umum di mana setiap agent berdiri sendiri dengan sistem komunikasi kustom, Paperclip memaksa semua agen membaca satu peta strategi yang sama. Dalam pengujian editorial Wawasan AI, mekanisme ini terbukti mengurangi konflik tujuan antar agent secara signifikan.",
+      "Fitur yang paling menonjol justru yang terdengar paling sederhana: budgeting. Bukan sekadar dashboard monitoring, tetapi throttle aktif yang menghentikan agent ketika pengeluaran token melampaui batas yang ditetapkan. Untuk ekosistem Indonesia di mana akses API komersial sering dibatasi budget, fitur ini bukan luxurinya — ia kebutuhan survival. Ditambah heartbeat scheduler untuk otomatisasi berkala, Paperclip mengubah chaos agent management menjadi operasi yang bisa diprediksi.",
+      "Yang perlu diperhatikan: Paperclip dibangun untuk skala menengah hingga besar. Pengguna dengan satu atau dua agent mungkin merasa fiturnya berlebihan. Namun trennya jelas — semakin banyak organisasi mengadopsi multi-agent patterns, semakin mereka membutuhkan lapisan manajerial seperti ini. Bagi komunitas developer Indonesia yang mulai bereksperimen dengan autonomous agent systems, Paperclip worth watching bahkan jika belum jadi pilihan utama.",
+    ],
+    link: "https://github.com/paperclipai/paperclip",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-27",
+    updatedAt: "2026-09-27",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
