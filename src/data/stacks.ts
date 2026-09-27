@@ -4300,6 +4300,45 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-09-26",
     featured: false,
+  },
+  {
+    slug: "obsidian-copilot",
+    name: "Obsidian Copilot",
+    tagline: "Agen AI yang hidup di dalam vault — bukan sekadar chatbot",
+    tags: ["Plugin", "Open Source", "Local Model", "Knowledge Work"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Copilot for Obsidian adalah plugin AI paling banyak terpasang di ekosistem Obsidian dengan 1,6 juta unduhan — mengubah vault catatan menjadi agen penelusuran dan penulisan yang bisa membaca, menulis, dan mengedit file secara otonom. Yang membuatnya istimewa: semua output berupa file .md di vault kamu, bukan database hitam.",
+    pros: [
+      "BYOK tanpa sign-up — pakai API key sendiri atau model lokal via Ollama/LM Studio gratis selamanya",
+      "Agent mode multi-langkah: baca banyak catatan, rencanakan tugas, edit file secara otonom",
+      "Semua state AI disimpan sebagai .md biasa — searchable, syncable, tidak pernah hilang",
+      "Model-agnostik penuh: OpenAI, Anthropic, Google, atau endpoint lokal OpenAI-compatible",
+    ],
+    cons: [
+      "Hanya berguna jika sudah aktif pakai Obsidian — nol nilai di luar ekosistem itu",
+      "Tier gratis butuh API key sendiri; biaya token frontier bisa mahal kalau pemakaian berat",
+      "Vault sangat besar (>100ribu file) terasa berat tanpa Miyo desktop app tambahan",
+    ],
+    verdict:
+      "Bagi penulis yang hidup di Obsidian, ini salah satu plugin terbaik yang pernah ada. Untuk yang belum masuk ekosistem Obsidian, nilai utamanya tetap tertutup — tapi kalau kamu sudah punya vault, Copilot akan jadi asisten personal yang benar-benar privat.",
+    body: [
+      "Copilot for Obsidian dirancang oleh developer Logan Yang sebagai plugin open-source berlisensi AGPL-3.0, dan kini menjadi plugin AI paling populer di seluruh katalog Obsidian dengan lebih dari 1,6 juta unduhan serta komunitas pengguna yang terus tumbuh sejak perilisannya. Berbeda dengan chatbot AI yang berjalan di browser terpisah, Copilot hidup tepat di dalam Obsidian — Quick Ask muncul saat kamu menyorot teks, perintah jalan lewat command palette, dan konteksnya bisa berupa catatan, folder, PDF, gambar, URL, transkrip YouTube, hingga tweet yang diambil secara langsung. Prinsip desainnya sederhana tapi brilian: semua keluaran — riwayat percakapan, prompt kustom, memori percakapan — ditulis sebagai file Markdown biasa di vault kamu. Tidak ada database misterius yang hanya bisa diakses lewat interface tertentu. Jika plugin mati, datamu tetap ada di sana.",
+      "Yang membuat Copilot menonjol dari kompetitor adalah kemampuan Agent mode-nya. Alih-alih menjawab satu pertanyaan lalu berhenti, agen ini bisa merencanakan tugas multi-langkah: membaca beberapa catatan sekaligus, melakukan semantik search melintasi vault, dan kemudian membuat atau mengedit file berdasarkan temuan tersebut. Composer memungkinkan kamu merevisi atau memperluas catatan dengan diff preview sebelum menerima perubahan. Projects memberikan workspace terisolasi dengan model, system prompt, dan riwayat percakapan per proyek — mendukung lebih dari 50 jenis file termasuk PDF, EPUB, dan dokumen Office. Plus tier menambahkan kolaborasi multi-agent: serahkan satu pertanyaan kompleks ke beberapa agen berbeda lalu gabungkan jawabannya. Fitur Relevance juga membantu menemukan catatan terkait yang sempat lupa, tersambung lewat wikilink yang bisa di-drag-and-drop.",
+      "Untuk pengguna Indonesia, Copilot for Obsidian menawarkan beberapa keunggulan strategik. Pertama, skema harga BYOK-nya berarti kamu bisa memakai langganan ChatGPT atau Claude yang sudah ada tanpa biaya tambahan — ini sangat relevan bagi freelancer Indonesia yang biasanya sudah berlangganan layanan AI tertentu. Kedua, dukungan penuh terhadap model lokal lewat Ollama dan LM Studio memungkinkan setup total offline untuk organisasi yang menangani data sensitif seperti laporan keuangan, riset medis, atau dokumen rahasia perusahaan. Ketiga, karena seluruh konten disimpan sebagai file `.md`, proses backup dan migrasi lintas perangkat praktis bebas vendor lock-in — beda dengan NotebookLM milik Google atau Notion AI yang sepenuhnya terkunci di ekosistem masing-masing. Tier gratis memberi akses ke fitur inti: chat vault-based, agent mode, dan semantic search tanpa batas. Lite ($74,99/tahun) dan Plus ($139,99/tahun) membuka hosted model milik Copilot, parsing PDF lanjutan, web search agent, ingestion YouTube/X, dan publishing OpenArtifacts. Ada juga opsi Self-Host Supporter seharga $349,99 sekali bayar yang mencakup akses self-host lifetime selama dua tahun plus Plus dan Miyo desktop app untuk indexing semantic skala besar.",
+      "Jujur saja, Copilot for Obsidian bukan untuk semua orang. Jika kamu bukan pengguna Obsidian, plugin ini nol nilainya — kamu perlu jatuh cinta pada filosofi Obsidian dulu sebelum Copilot bisa bersinar. Vault yang terlalu besar juga bisa terasa berat karena embedding index memakan RAM cukup banyak, meski masalah ini sebagian teratasi oleh aplikasi desktop Miyo yang menjalankan indexing di level OS. Dan meski open-source, beberapa fitur canggih seperti multi-agent collaboration hanya tersedia di tier berbayar. Tapi bagi siapa pun yang sudah berkomitmen pada Obsidian sebagai second brain — peneliti akademisi, jurnalis, penulis buku, atau knowledge workers yang bekerja dengan dokumen rahasia — Copilot memberikan lapisan AI yang paling aman, paling privat, dan paling terintegrasi yang pernah ada.",
+    ],
+    link: "https://obsidiancopilot.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-28",
+    featured: false,
   }
 ];
 
