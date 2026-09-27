@@ -2827,6 +2827,26 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Local-first dan self-hostable dengan lisensi MIT/Apache-2.0 — data tidak pernah keluar dari mesin sendiri, sangat relevan untuk developer Indonesia yang butuh environment development/containerization aman tanpa bergantung ke cloud provider pihak ketiga.",
     ],
   },
+  "rocketride-org/rocketride-server": {
+    description:
+      "Engine alur kerja AI open-source dari Rust — satu visual canvas di VS Code untuk build pipeline yang mengorbit 50+ node (15+ provider LLM, 9 vector DB, OCR, NER), dieksekusi runtime C++ multithreaded lokal tanpa vendor lock-in.",
+    highlights: [
+      "Pipeline builder 'developer-native': definisikan workflow AI sebagai JSON portabel, rancang secara visual di canvas VS Code, lalu eksekusi via runtime C++ multithreaded — tidak perlu bolak-balik antar tool untuk compose, debug, dan deploy.",
+      "Dukungan ekosistem luas: 15+ provider LLM (Claude, GPT, Gemini, DeepSeek, dll), 9 vector database (Milvus, Qdrant, Weaviate, dll), plus node OCR, NER, PII anonymization, chunking strategies, embedding, dan lebih — semua Python-extensible kalau butuh custom logic.",
+      "Multi-agent built-in: native CrewAI dan LangChain support agar bisa chain agen, bagikan memory lintas pipeline run, dan manaj multi-step reasoning tanpa setup infrastruktur terpisah — cocok untuk workflow yang butuh reasoning bertingkat.",
+      "SDK lengkap (TypeScript, Python, MCP Server) + Docker deployment: integrasikan pipeline ke aplikasi native, expose sebagai callable tools untuk AI assistant, atau deploy self-hosted via Docker — nol ketergantungan pada cloud provider tertentu.",
+    ],
+  },
+  "spinabot/brigade": {
+    description:
+      "Ekosistem agen AI lokal-pertama yang hidup di satu direktori `~/.brigade/` — spawn agen terisolasi dengan org chart, memori bersama Tideline, cron scheduler, kanal pesan WhatsApp & Telegram, 1.000+ connector app, dan MCP server dalam satu instalasi.",
+    highlights: [
+      "Arsitektur 'real crew': bukan satu chatbot melainkan banyak agen dengan persona, workspace, dan kredensial masing-masing, dihubungkan oleh organizational chart yang govern siapa bicara dengan siapa — mirip struktur tim beneran, bukan monolit.",
+      "Tideline memory jangka panjang yang bersifat provenance-aware: apa yang satu agen pelajari, semua agen lain bisa pakai; delegasi antar agen mulus dengan model switch mid-task tanpa kehilangan konteks — fondasi penting untuk kolaborasi agentik berkelanjutan.",
+      "Connectivity luar biasa lewat Composio (Gmail, Slack, GitHub, Notion, Calendar, Linear, 1.000+ app) plus channel messaging WhatsApp, Telegram, Discord, iMessage, BlueBubbles, jam tangan Apple Watch, Meta smart glasses, dan Quest — reach keluar dari terminal tanpa harus rebuild connectors.",
+      "Bring any model (Claude, GPT, Gemini, Llama, Ollama lokal), privileged actions tunggu approval user, API key disimpan lokal mode `0600`, zero telemetry, jalankan di Raspberry Pi atau server — self-hosted Convex optional saat mau database shared.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
