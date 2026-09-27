@@ -1,0 +1,152 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-27T06:55:38.131Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "vectorize-io/hindsight",
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "githubUrl": "https://github.com/vectorize-io/hindsight",
+      "trendshiftUrl": "https://trendshift.io/repositories/15603",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI memory"
+      ],
+      "dateCreated": "2025-10-30T11:49:48Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "rocketride-org/rocketride-server",
+      "owner": "rocketride-org",
+      "repo": "rocketride-server",
+      "description": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
+      "githubUrl": "https://github.com/rocketride-org/rocketride-server",
+      "trendshiftUrl": "https://trendshift.io/repositories/37651",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-02-11T17:02:53Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "hydra-db/hydradb",
+      "owner": "hydra-db",
+      "repo": "hydradb",
+      "description": "HydraDB - fast graph database on object storage",
+      "githubUrl": "https://github.com/hydra-db/hydradb",
+      "trendshiftUrl": "https://trendshift.io/repositories/154069",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-03T05:34:15Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-04-09T21:40:26Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "dream-num/univer-workspace",
+      "owner": "dream-num",
+      "repo": "univer-workspace",
+      "description": "An open-source Office workspace where people and AI agents create, collaborate, and review together.",
+      "githubUrl": "https://github.com/dream-num/univer-workspace",
+      "trendshiftUrl": "https://trendshift.io/repositories/252715",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-14T09:24:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "juspay/hyperswitch",
+      "owner": "juspay",
+      "repo": "hyperswitch",
+      "description": "Open source, composable payments platform | PCI compliant | SaaS and Self-host options | Enables connectivity to multiple payment, payout, fraud, vault and tokenization providers | Uplifts authorization with intelligent routing and revenue recovery | Reduce payment processing costs with cost observability | Reduces payment ops with reconciliation",
+      "githubUrl": "https://github.com/juspay/hyperswitch",
+      "trendshiftUrl": "https://trendshift.io/repositories/985",
+      "language": "Rust",
+      "topics": [
+        "Fintech"
+      ],
+      "dateCreated": "2022-10-17T11:18:28Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "reladraw/reladraw",
+      "owner": "reladraw",
+      "repo": "reladraw",
+      "description": "",
+      "githubUrl": "https://github.com/reladraw/reladraw",
+      "trendshiftUrl": "https://trendshift.io/repositories/263856",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-07T20:01:24Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Human-Agent-Society/reef",
+      "owner": "Human-Agent-Society",
+      "repo": "reef",
+      "description": "Continual learning infra for self-improving agents",
+      "githubUrl": "https://github.com/Human-Agent-Society/reef",
+      "trendshiftUrl": "https://trendshift.io/repositories/204783",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-08-31T01:39:18Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "paperclipai/paperclip",
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "githubUrl": "https://github.com/paperclipai/paperclip",
+      "trendshiftUrl": "https://trendshift.io/repositories/22502",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-02T15:01:51Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2022-09-29T12:09:14Z"
+    }
+  ]
+}
