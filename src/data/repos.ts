@@ -5033,6 +5033,56 @@ export const repos: Review[] = [
     updatedAt: "2026-09-27",
     featured: false,
   },
+  {
+    slug: "hindsight",
+    name: "Hindsight",
+    tagline: "Memori agent AI yang belajar dari pengalaman — bukan sekadar simpan dan recall",
+    tags: ["AI Agent", "Memori AI", "Python", "Self-hosted"],
+    score: 8.7,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.5 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Hindsight dari Vectorize menawarkan solusi untuk masalah yang hampir selalu menghantui agent AI setelah beberapa sesi berjalan: memori yang lupa konteks lama atau menumpuk noise tanpa seleksi. Bukan sekadar cache — ia mengekstrak insight, mempelajari pola pengguna, dan mengoptimalkan retrieval secara bertahap.",
+    highlights: [
+      "Auto-extract insights dari percakapan agent — tidak hanya menyimpan riwayat, tapi mengekstrak fakta dan preferensi yang bisa dipakai di sesi mendatang",
+      "Hybrid retrieval: dense vector + semantic metadata filtering untuk akurasi recall tinggi pada memori jangka panjang",
+      "Incremental learning: skema memori berevolusi seiring waktu, mengurangi noise dan menjaga relevansi insight",
+      "Embedding-based storage dengan chunking otomatis — dokumen panjang atau dialog kompleks dipotong dan di-index secara granular",
+      "REST API dan SDK Python untuk integrasi ke LangChain, LlamaIndex, CrewAI, atau framework agent lainnya",
+      "Multi-agent support: satu instance Hindsight bisa melayani banyak agent yang perlu berbagi knowledge base",
+      "Self-hosted via Docker atau cloud — data memori tetap berada di infrastruktur sendiri, tidak dikirim ke third-party",
+      "Dashboard observability untuk memantau kesehatan memori, jumlah chunk aktif, dan performa retrieval",
+    ],
+    pros: [
+      "Memori agent benar-benar 'belajar' — semakin dipakai semakin relevan, bukan cuma menyimpan log mentah",
+      "Integrasi mudah lewat REST API dan SDK Python, cocok untuk ekosistem AI agent Indonesia yang heterogen",
+      "Self-hosted penuh — privasi data terjaga, sesuai kebutuhan organisasi di Indonesia",
+      "Momentum komunitas sangat tinggi: 37k+ bintang dalam beberapa bulan sejak rilis",
+    ],
+    cons: [
+      "Butuh pemahaman tentang vector embedding dan retrieval tuning untuk hasil optimal",
+      "Konsumsi storage bisa besar jika memori disimpan dengan granularity sangat detail",
+      "Dokumentasi masih berkembang seiring kecepatan pertumbuhan proyek",
+    ],
+    verdict:
+      "Masalah memori agent sering diabaikan sampai jadi masalah nyata — dan saat sudah jadi, sulit diperbaiki tanpa mengubah arsitektur. Hindsight hadir tepat di titik itu sebagai layer memori cerdas yang self-improving. Untuk siapa pun yang sudah memakai agent secara intensif dan ingin konsistensi antar-sesi, ini salah satu investasi infrastruktur yang paling masuk akal di 2026.",
+    body: [
+      "Salah satu tantangan paling umum dalam pengembangan AI agent adalah masalah memori: agent bisa melupakan konteks penting dari sesi sebelumnya, atau worse lagi — menyimpan terlalu banyak informasi irrelevant sehingga retrieval menjadi lambat dan tidak akurat. Hindsight menjawab masalah ini dengan pendekatan yang agak berbeda dari solution lain di pasaran. Alih-alih hanya menyimpan semua obrolan dalam vector database dan berharap sistem pencarian bekerja, Hindsight mengekstrak insight aktual dari setiap interaksi dan membangun representasi memori yang terus disempurnakan.",
+      "Dalam pengujian editorial Wawasan AI, perbedaan paling terasa ada pada kualitas recall. Dengan hybrid retrieval yang menggabungkan dense vector search dan semantic metadata filtering, Hindsight mampu menemukan insight yang relevan meskipun konteksnya tidak persis sama dengan query. Fitur incremental learning-nya juga menarik: semakin agent menggunakan memori yang tersimpan di Hindsight, semakin baik sistem dalam memprioritaskan insight yang penting dan menyaring yang kurang relevan.",
+      "Arsitektur self-hosted melalui Docker adalah keunggulan signifikan, terutama untuk organisasi di Indonesia yang memiliki kekhawatiran soal kedaulatan data. Seluruh memori agent — yang mungkin mencakup detail proyek internal, preferensi pengguna, atau keputusan bisnis — tetap berada di server sendiri. REST API dan SDK Python yang tersedia memudahkan integrasi ke stack yang sudah ada, entah itu langchain, crewai, atau framework kustom.",
+      "Catatan penting: Hindsight bukan magic bullet. Memerlukan tuning embedding model dan parameter retrieval agar hasilnya optimal. Konsumsi storage juga perlu dipantau, karena granularitas tinggi menghasilkan volume data yang signifikan. Namun bagi praktisi AI yang serius membangun agent system yang harus konsisten lintas sesi, Hindsight menawarkan solusi yang cukup matang untuk mulai diadopsi hari ini — didukung momentum komunitas yang tak terbantahkan.",
+    ],
+    link: "https://github.com/vectorize-io/hindsight",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-28",
+    updatedAt: "2026-09-28",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
