@@ -1,17 +1,65 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "28 September 2026",
-  "period": {
-    "date": "2026-09-28",
-    "label": "28 September 2026",
-    "path": "/repo/daily/2026/09/28"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-28T00:02:28.666Z",
+  "fetchedAt": "2026-09-28T07:23:34.787Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "cdyforever/how-to-live-better",
+      "owner": "cdyforever",
+      "repo": "how-to-live-better",
+      "description": "《高性价比人生指南》全书 528 条的在线单页阅读版：手机可读、可搜索、零依赖、支持离线",
+      "githubUrl": "https://github.com/cdyforever/how-to-live-better",
+      "trendshiftUrl": "https://trendshift.io/repositories/249699",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-09-18T14:35:08Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "dream-num/univer-workspace",
+      "owner": "dream-num",
+      "repo": "univer-workspace",
+      "description": "An open-source Office workspace where people and AI agents create, collaborate, and review together.",
+      "githubUrl": "https://github.com/dream-num/univer-workspace",
+      "trendshiftUrl": "https://trendshift.io/repositories/252715",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-14T09:24:34Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 5,
       "fullName": "vectorize-io/hindsight",
       "owner": "vectorize-io",
       "repo": "hindsight",
@@ -26,35 +74,51 @@
       "dateCreated": "2025-10-30T11:49:48Z"
     },
     {
-      "rank": 2,
-      "fullName": "rocketride-org/rocketride-server",
-      "owner": "rocketride-org",
-      "repo": "rocketride-server",
-      "description": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
-      "githubUrl": "https://github.com/rocketride-org/rocketride-server",
-      "trendshiftUrl": "https://trendshift.io/repositories/37651",
+      "rank": 6,
+      "fullName": "paperclipai/paperclip",
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "githubUrl": "https://github.com/paperclipai/paperclip",
+      "trendshiftUrl": "https://trendshift.io/repositories/22502",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-02T15:01:51Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2022-09-29T12:09:14Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/24667",
       "language": "Python",
       "topics": [
         "AI agent",
-        "AI workflow",
-        "Workflow automation"
+        "Programming examples"
       ],
-      "dateCreated": "2026-02-11T17:02:53Z"
+      "dateCreated": "2026-03-18T18:38:02Z"
     },
     {
-      "rank": 3,
-      "fullName": "hydra-db/hydradb",
-      "owner": "hydra-db",
-      "repo": "hydradb",
-      "description": "HydraDB - fast graph database on object storage",
-      "githubUrl": "https://github.com/hydra-db/hydradb",
-      "trendshiftUrl": "https://trendshift.io/repositories/154069",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-07-03T05:34:15Z"
-    },
-    {
-      "rank": 4,
+      "rank": 9,
       "fullName": "debpalash/VoiceStudio",
       "owner": "debpalash",
       "repo": "VoiceStudio",
@@ -71,34 +135,7 @@
       "dateCreated": "2026-04-09T21:40:26Z"
     },
     {
-      "rank": 5,
-      "fullName": "paperclipai/paperclip",
-      "owner": "paperclipai",
-      "repo": "paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "githubUrl": "https://github.com/paperclipai/paperclip",
-      "trendshiftUrl": "https://trendshift.io/repositories/22502",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-03-02T15:01:51Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "cdyforever/how-to-live-better",
-      "owner": "cdyforever",
-      "repo": "how-to-live-better",
-      "description": "《高性价比人生指南》全书 528 条的在线单页阅读版：手机可读、可搜索、零依赖、支持离线",
-      "githubUrl": "https://github.com/cdyforever/how-to-live-better",
-      "trendshiftUrl": "https://trendshift.io/repositories/249699",
-      "language": "HTML",
-      "topics": [],
-      "dateCreated": "2026-09-18T14:35:08Z"
-    },
-    {
-      "rank": 7,
+      "rank": 10,
       "fullName": "mexicat/pdoom-video",
       "owner": "mexicat",
       "repo": "pdoom-video",
@@ -108,46 +145,6 @@
       "language": "TypeScript",
       "topics": [],
       "dateCreated": "2026-09-24T21:33:53Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "eternity4719/HowToLiveBetter",
-      "owner": "eternity4719",
-      "repo": "HowToLiveBetter",
-      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
-      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
-      "trendshiftUrl": "https://trendshift.io/repositories/222292",
-      "language": "HTML",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2026-09-07T01:53:36Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "juspay/hyperswitch",
-      "owner": "juspay",
-      "repo": "hyperswitch",
-      "description": "Open source, composable payments platform | PCI compliant | SaaS and Self-host options | Enables connectivity to multiple payment, payout, fraud, vault and tokenization providers | Uplifts authorization with intelligent routing and revenue recovery | Reduce payment processing costs with cost observability | Reduces payment ops with reconciliation",
-      "githubUrl": "https://github.com/juspay/hyperswitch",
-      "trendshiftUrl": "https://trendshift.io/repositories/985",
-      "language": "Rust",
-      "topics": [
-        "Fintech"
-      ],
-      "dateCreated": "2022-10-17T11:18:28Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "newliver666/apk-reverse",
-      "owner": "newliver666",
-      "repo": "apk-reverse",
-      "description": "Suitable for Android APK reverse engineering analysis",
-      "githubUrl": "https://github.com/newliver666/apk-reverse",
-      "trendshiftUrl": "https://trendshift.io/repositories/249993",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-09-19T13:12:54Z"
     }
   ]
 }
