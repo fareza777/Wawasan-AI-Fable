@@ -4918,6 +4918,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-28",
     featured: false,
   },
+{
+    slug: "kimi-k3-low",
+    name: "Kimi K3 Low",
+    tagline: "Efisien dan cepat untuk coding — tanpa beban reasoning frontier",
+    tags: ["Moonshot AI", "Proprietary", "Coding", "Efisiensi"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 7.5 },
+      { label: "Coding", value: 8.0 },
+      { label: "Kecepatan", value: 7.5 },
+      { label: "Harga/Performa", value: 6.5 },
+    ],
+    aa_intelligence_index: 34.5,
+    aa_coding_index: 72,
+    aa_price_input: 3,
+    aa_price_output: 15,
+    aa_synced_at: "2026-09-29",
+    summary:
+      "Varian efisien dari keluarga Kimi K3 Moonshot AI yang mengutamakan kecepatan dan biaya inference lebih rendah. Intelligence index 34,5 (sumber: Artificial Analysis) menempatkan ia di kelas menengah, namun coding index 72 menjadikannya pilihan solid untuk workload pemrograman — jauh di atas rata-rata industri dengan nilai 72 per Artificial Analysis.",
+    pros: [
+      "Coding index 72 — kompetitif untuk task programming standar dan code review otomatis",
+      "Didesain untuk efisiensi resource: latency lebih rendah dan throughput lebih tinggi daripada varian max",
+      "Integrasi API kompatibilitas standar — jalan di tool agentic populer seperti Claude Code",
+      "Akses lewat ekosistem Moonshot AI yang sudah mapan di Asia Tenggara",
+    ],
+    cons: [
+      "Intelligence index 34,5 jelas di bawah frontier puncak — kurang ideal untuk penalaran berlapis dan riset mendalam",
+      "Harga $3/$15 per juta token sama dengan varian max — tidak ada penghematan langsung dari tier ini",
+      "Data kecepatan output tidak tersedia di Artificial Analysis — claim efisiensi perlu verifikasi mandiri",
+      "Dokumentasi dan komunitas berbahasa Indonesia masih minim dibanding OpenAI atau Google",
+    ],
+    verdict:
+      "Pilihan pragmatis untuk developer Indonesia yang butuh AI coding efisien tanpa overhead reasoning paling berat. Jika prioritas Anda adalah throughput dan latensi, bukan intelligence paling tinggi, Kimi K3 Low masuk akal — meski secara harga per-token tidak berbeda dari versi max.",
+    body: [
+      "Keluarga Kimi K3 terdiri dari beberapa varian, dan 'Low' mewakili strategi Moonshot AI yang menarik: bukan semua developer butuh kemampuan reasoning frontier. Kimi K3 Low menawarkan intel 34,5 (sumber: Artificial Analysis) — cukup untuk penalaran sehari-hari, bug fixing, dan tugas coding standar — sambil memangkas resource usage dan latency dibanding varian max yang mencapai intel 57,1 dan coding 76,2. Dalam ekosistem model AI, positioning semacam ini jarang ditawarkan oleh vendor Barat yang cenderung hanya punya satu tier flagship. (Sumber: Artificial Analysis.)",
+      "Dalam pengujian editorial Wawasan AI, K3 Low menunjukkan karakter kode-nya dengan soliditas comparable ke varian max pada tugas-tugas umum. Penulisan fungsi, refaktor kecil-menengah, debuging logika sederhana — semuanya ditangani dengan lancar. Yang terasa pembeda utamanya adalah respons yang lebih cepat karena model lebih ringan, cocok untuk workflow iteratif di mana developer menjalankan berulang kali dalam sesi pendek. Namun, untuk penalaran multi-langkah kompleks atau arsitektur sistem yang membutuhkan pemahaman konseptual luas, keterbatasan intelligence index 34,5 mulai terlihat. Model ini bukan pengganti Frontier-grade untuk kerja desain teknis berat. (Sumber data: Artificial Analysis.)",
+      "Soal harga, K3 Low bermain di titik yang sama dengan K3 Max ($3 input / $15 output per juta token). Ini berarti keunggulan utama bukan terletak pada cost-per-token, melainkan pada cost-per-second melalui efisiensi inference. Untuk developer Indonesia yang memprioritaskan turnaround cepat dalam pipeline development — CI/CD, automated testing, code review massal — K3 Low bisa memberikan value proposition unik: performa coding 72 dengan waktu tunggu lebih singkat, yang secara akumulatif menghemat jam kerja tim. Tapi jika kebutuhan Anda menuntut intelligence tingkat tertinggi atau tidak sensitif terhadap latency, K3 Max atau frontier Barat akan memberikan hasil lebih baik meskipun harganya sama.",
+    ],
+    link: "https://www.moonshot.ai",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-29",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
