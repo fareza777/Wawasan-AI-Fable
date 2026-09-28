@@ -5083,6 +5083,60 @@ export const repos: Review[] = [
     updatedAt: "2026-09-28",
     featured: false,
   },
+
+  {
+    slug: "voicestudio",
+    name: "VoiceStudio",
+    tagline: "Alternatif open-source ElevenLabs untuk voice cloning dan TTS di 646 bahasa",
+    tags: ["Text-to-Speech", "Voice AI", "Python", "Self-hosted"],
+    score: 8.3,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 9.0 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 7.5 },
+      { label: "Kesiapan Produksi", value: 7.5 },
+    ],
+    summary:
+      "VoiceStudio dari debpalash adalah alternatif open-source yang berani mengklaim menjadi pengganti lokal ElevenLabs — voice cloning, desain suara, dubbing video, transkripsi, dan pembuatan audiobook dalam 646 bahasa, semuanya bisa dijalankan sepenuhnya secara offline. Dalam waktu singkat ia menembus 43 ribu bintang GitHub, menjadikannya salah satu repo AI terbesar yang muncul di 2026.",
+    highlights: [
+      "16 model TTS dari komunitas, termasuk Omnivox-Stitch 2 Ultra untuk kualitas near-production",
+      "Voice cloning dari sampel audio pendek — reproduksi identitas suara tanpa fine-tuning ekstensif",
+      "Video dubbing dengan lip-sync otomatis menggunakan Wav2Lip, plus terjemahan lintas 100 bahasa",
+      "Transkripsi dan text-to-speech real-time lewat streaming pipeline",
+      "TTS multi-bahasa dengan dukungan code-switching natural (campuran beberapa bahasa dalam output)",
+      "Audio design: modifikasi pitch, speed, timbre, dan efek kustom pada waveform mentah",
+      "Model tersedia di Hugging Face Hub — download langsung atau inference via API",
+      "Desktop app berbasis Tauri untuk macOS, Windows, Linux (ringan dibanding solusi Electron)",
+      "CLI + API untuk integrasi otomasi dan pipeline produksi",
+      "Lisensi AGPL-3.0 — gratis, terbuka, dan cocok untuk riset maupun deployment internal",
+    ],
+    pros: [
+      "Momentum adopsi luar biasa — 43k+ bintang sejak April 2026 dalam waktu sangat singkat",
+      "Jangkauan bahasa paling luas di kelasnya (646 bahasa), termasuk bahasa daerah Indonesia",
+      "Bisa berjalan fully-local tanpa ketergantungan API pihak ketiga",
+      "Ekosistem model komunitas yang terus berkembang lewat Hugging Face",
+    ],
+    cons: [
+      "Produk sangat baru — kematangan fitur belum setanding ElevenLabs yang sudah bertahun-tahun berkecimpung",
+      "Kualitas voice cloning bergantung tinggi pada kualitas sampel input; hasil buruk jika audio sumber noisy",
+      "Video dubbing masih tahap awal — akurasi lip-sync tidak selalu presisi di semua kondisi lighting",
+      "Dokumentasi terfragmentasi antara docs website, Hugging Face, dan diskusi GitHub",
+    ],
+    verdict:
+      "Salah satu lonjakan popularitas paling signifikan di dunia AI voice tahun ini. Bagi yang butuh solusi TTS lokal untuk proyek kreatif — podcast, konten media, audiobook — VoiceStudio layak dicoba sekarang. Untuk produksi komersial ketat, pantangi perkembangannya beberapa bulan ke depan sebelum jadi pilihan utama.",
+    body: [
+      "VoiceStudio muncul relatif baru di ranah AI voice — April 2026 — tetapi kecepatannya menanjak di tangga trending GitHub tak terbantahkan. Dengan lebih dari 43 ribu bintang dan lima ribu fork dalam kurang dari enam bulan, proyek ini bukan lagi eksperimen sampingan melainkan salah satu upaya serius terbaik untuk mendemokratisasikan voice generation yang sebelumnya didominasi layanan komersial seperti ElevenLabs. Yang membuatnya menarik adalah klaim ambisiusnya: seluruh pipeline voice cloning, TTS, dubbing, dan transkripsi bisa berjalan secara lokal, tanpa mengirim data suara siapa pun ke server cloud asing.",
+      "Dalam pengujian editorial Wawasan AI, VoiceStudio menunjukkan kekuatan di area tertentu sambil meninggalkan celah yang perlu dipantau. Kualitas voice cloning-nya mengesankan ketika sampel audio sumber bersih — replikasi identitas suara dasar cukup akurat untuk kebutuhan konten media kecil hingga menengah. Fitur video dubbing dengan lip-sync bawaan adalah keunggulan unik yang belum banyak ditawarkan kompetitor open-source, meski hasilnya tetap bergantung pada kondisi pencahayaan subjek dan sudut kamera. Model Omnivox-Stitch 2 Ultra memberikan hasil TTS yang masuk akal untuk penggunaan sehari-hari.",
+      "Relevansi VoiceStudio untuk konteks Indonesia cukup spesifik. Dengan dukungan 646 bahasa, ia mencakup hampir seluruh bahasa daerah di Nusantara — Jawa, Sunda, Batak, hingga Papua — yang jarang mendapat perhatian dari platform komersial. Jika ada organisasi media lokal atau creator independen yang ingin membuat konten multibahasa tanpa biaya langganan per token, VoiceStudio membuka pintu yang sebelumnya tertutup. Ditambah kemampuan self-hosted berarti data suara kru atau narasumber tetap di infrastruktur sendiri, penting untuk produksi yang menangani materi sensitif.",
+      "Catatan realistis: VoiceStudio sangat muda. Fitur production-scale seperti batch processing besar dan monitoring kualitas output konsisten masih dalam perjalanan. Lisensi AGPL-3.0 juga memerlukan pertimbangan khusus untuk pemakaian komersial — pastikan tim legal Anda memahami implikasinya sebelum deploy di lingkungan bisnis. Untuk riset, prototipe, dan proyek non-komersial, VoiceStudio sudah lebih dari siap dipakai hari ini.",
+    ],
+    link: "https://github.com/debpalash/VoiceStudio",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-09-29",
+    updatedAt: "2026-09-29",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
