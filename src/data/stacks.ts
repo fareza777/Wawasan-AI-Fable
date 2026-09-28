@@ -4339,7 +4339,47 @@ export const stacks: Review[] = [
     linkLabel: "Situs Resmi",
     date: "2026-09-28",
     featured: false,
-  }
+  },
+  {
+    slug: "runway-gen4",
+    name: "Runway Gen-4",
+    tagline: "Generator video AI dengan kontrol kamera sinematik dan konsistensi dunia",
+    tags: ["Runway", "Freemium", "Video Gen", "Creative Pro"],
+    score: 8.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 8.8 },
+      { label: "Pengalaman Pengguna", value: 8.5 },
+      { label: "Ekosistem & Integrasi", value: 8.3 },
+      { label: "Harga", value: 7.5 },
+    ],
+    summary:
+      "Runway Gen-4 bukan sekadar 'prompt jadi video' — ia studio produksi lengkap yang menggabungkan text-to-video, image-to-video, dan editing pasca-produksi dalam satu workspace. Yang menjadikannya tool paling directable di kelasnya adalah sistem referensi karakter, kontrol kamera presisi, dan konsistensi lintas shot yang belum pernah ada sebelumnya.",
+    pros: [
+      "Konsistensi karakter lintas shot — upload satu reference image, karakter tetap sama di angle dan pencahayaan berbeda",
+      "Motion Brush dan 50+ preset kamera memberi kontrol sinematografi tingkat direktur",
+      "Aleph editing memungkinkan in-video edit: hapus objek, ganti background, tambahkan elemen lewat text prompt",
+      "Gen-4 Turbo ~60 detik per render, ideal untuk iterasi cepat konsep sebelum re-run kualitas penuh",
+    ],
+    cons: [
+      "Maks 10 detik per generasi — untuk konten lebih panjang harus chain banyak klip manual",
+      "Tanpa audio built-in; soundtrack dan lip-sync butuh tools terpisah atau fitur tambahan berbayar",
+      "Biaya kredit per detik jauh di atas kompetitor seperti Kling atau Pika untuk output setara",
+      "Finger/hand artifacts masih sering muncul dan teks dalam scene unreliable di semua model AI video",
+    ],
+    verdict:
+      "Standar industri untuk AI video yang bisa diarahkan profesional, tapi biaya operasionalnya tinggi — masuk akal kalau kamu bikin video komersial rutin, kurang efisien kalau cuma eksperimen sesekali.",
+    body: [
+      "Runway Gen-4 dirilis akhir Maret 2025 sebagai penerus Gen-3 Alpha, tapi lompatannya terasa seperti pergantian generasi — bukan minor version bump. Klaim utamanya yang mengubah permainan: world consistency. Untuk pertama kalinya, kamu bisa generate karakter di satu shot dan dapatkan karakter yang sama persis di shot berbeda dengan pencahayaan, lokasi, dan sudut kamera berbeda. Tanpa fine-tuning. Ini memecah masalah yang selama ini membuat AI video frustrasi untuk kerja naratif: setiap klip selalu terlihat seperti orang berbeda.",
+      "Yang membedakan Gen-4 dari kebanyakan tool sekelasnya adalah tiga lapis kemampuan. Pertama, References system — upload foto karakter atau objek, dan Gen-4 menjadikannya anchor visual melintasi generasi terpisah. Tidak sekadar style transfer; model mempertahankan fitur wajah spesifik, potongan baju, dan properti objek bahkan ketika subjek berpindah dari taman bersinar matahari ke gudang gelap. Kedua, enhanced motion coherence — kain bergerak dengan gravitasi, benda yang bergerak melambat secara natural, tidak berhenti mendadak. Ketiga, camera control terparameterisasi: bukannya mengandalkan text prompt untuk deskripsi gerakan kamera, pengguna bisa specify pan, tilt, zoom, dolly, truck, orbit, crane secara eksplisit dengan parameter speed, direction, dan intensity. Ditambah 50+ preset kamera bawaan, ini membuat Gen-4 menjadi tool generation video paling presisi di pasar.",
+      "Lapis editing di sekitar Gen-4 juga matang. Aleph memungkinkan prompt-based in-video editing — hapus objek, ganti background, tambah elemen lewat text tanpa perlu software NLE tradisional. Inpainting generatif, green screen AI, frame interpolation, dan color grading sudah dilevel pro. Act-Two (dulu Act-One) menangkap performa dari webcam lalu transfer ke karakter AI untuk animasi facial yang believable. Multi-shot video support sequence naratif hingga 16 detik dengan temporal attention layers agar tidak flicker. Semua fitur ini hidup di workspace browser yang sama, sehingga Alur kerjanya jadi: generate → extend → edit → upscale → composite tanpa pindah app.",
+      "Untuk pengguna dan kreator Indonesia, ada dua catatan penting. Pertama, ekonomi kredit Gen-4 berarti biaya per detik generasi cukup tinggi dibanding Kling atau Pika. Paket Standard di Rp 195 ribu/bulan (billed annual $144) hanya memberi 625 credit bulanan, yang kira-kira cukup untuk 52 detik video Gen-4 standar atau 125 detik Gen-4 Turbo. Bagi freelancer konten yang produksi video harian, itu habis cepat dan harus top-up. Kedua, karena seluruh platform berjalan di browser dengan prosesing GPU di cloud Amerika, latency 150-200ms dari Indonesia bisa terasa signifikan saat iteration loop — generate, tunggu hasil, tweak prompt, re-generate. Koneksi internet stabil menjadi prerequistite mutlak. Alternatif lokal seperti MakePlay.ai hadir dengan harga lebih terjangkau, tapi kualitas output dan kedalaman tool-nya belum menyentuh standar Gen-4. Jika budget memungkinkan dan kebutuhan produksinya serius — produk launch video, iklan digital, konten YouTube berkala — investasi di Gen-4 sepadan dengan nilai kreatif yang dihasilkan. Kalau cuma eksperimen, pakai Turbo mode untuk menghemat kredit sambil mencari result yang diinginkan.",
+    ],
+    link: "https://runwayml.com",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-28",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
