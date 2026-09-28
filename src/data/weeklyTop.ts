@@ -2827,6 +2827,16 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Local-first dan self-hostable dengan lisensi MIT/Apache-2.0 — data tidak pernah keluar dari mesin sendiri, sangat relevan untuk developer Indonesia yang butuh environment development/containerization aman tanpa bergantung ke cloud provider pihak ketiga.",
     ],
   },
+  "juspay/hyperswitch": {
+    description:
+      "Platform pembayaran open-source (Rust) dari Juspay yang menghubungkan ke 120+ payment processor — smart routing, vaulting PCI-compliant, dan revenue recovery dalam satu API. 'Linux for Payments' dengan 42K+ bintang.",
+    highlights: [
+      "Modular payments orchestration: integrasikan sekali ke Hyperswitch, lalu pilih sendiri module mana yang dipakai — intelligent routing per transaksi, vault untuk kartu/kredensial PCI-DSS, retry cerdas untuk revenue recovery, cost observability dashboard untuk audit biaya PSP.",
+      "Tulisan seluruhnya di Rust: performa tinggi, memory-safe, dan bisa self-host via Docker compose atau deploy ke Kubernetes — cocok untuk startup Indonesia yang ingin scale payments infrastructure tanpa bergantung ke Stripe/Checkout.com tunggal.",
+      "Control Center berbasis ReScript + TypeScript memberi UI visual untuk konfigurasi connector, routing rules, analytics, dan API keys — non-engineer ops tim juga bisa kelola payments logic tanpa harus tulis code.",
+      "Apache-2.0 dan didukung tim Juspay yang memproses 300M daily transactions untuk 500+ enterprise — bukan proyek komunitas kosong, melainkan tool production-grade yang sudah teruji di skala miliaran dolar TPV.",
+    ],
+  },
   "rocketride-org/rocketride-server": {
     description:
       "Engine alur kerja AI open-source dari Rust — satu visual canvas di VS Code untuk build pipeline yang mengorbit 50+ node (15+ provider LLM, 9 vector DB, OCR, NER), dieksekusi runtime C++ multithreaded lokal tanpa vendor lock-in.",
