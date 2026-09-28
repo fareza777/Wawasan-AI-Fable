@@ -4890,6 +4890,71 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "buzz-apa-yang-sebenarnya-dilakukan-workspace-ai-agent-milik-jack-dorsey",
+    title: "Buzz: Ketika Manusia dan AI Agent Berbagi Ruang Kerja dengan Satu Kunci Kriptografi",
+    excerpt:
+      "Dari tweet viral yang mengklaim perusahaan dikelola 100% oleh AI — ini fakta sebenarnya tentang workspace kolaborasi manusia dan agen milik Block.",
+    category: "Analisis",
+    date: "2026-09-29",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Akhir pekan lalu, satu thread di X mencuat lagi sebagai berita besar: Jack Dorsey disebut baru saja merilis kerangka kerja yang mengelola seluruh perusahaan dengan pekerjaan 100% diserahkan ke AI agent, dan proyek itu sudah meraih 29.000 bintang di GitHub. Screenshot yang menyertai klaim itu memicu gelombang artikel ulang dari berbagai sumber berita teknologi. Cerita yang disampaikan terdengar seperti fiksi ilmiah — tapi kenyataannya jauh lebih kompleks dan justru lebih menarik daripada headline yang beredar.",
+          "Repository yang ditautkan dalam thread itu memang nyata, namanya `block/buzz`, dan benar milik Block, perusahaan yang didirikan oleh Jack Dorsey — pendiri Twitter sekaligus CEO Block (bukan SpaceX, bukan Tesla, dua nama yang sering tertukar dalam narasi tech viral). Tapi tiga klaim inti dalam postingan viral itu tidak lolos pengecekan sumber primer. Yang pertama paling sederhana: versi publik Buzz sudah tersedia sejak 21 Juli 2026, bukan hari ini. Thread yang bermunculan dua bulan kemudian seolah-olah memperkenalkan sesuatu yang baru.",
+        ],
+      },
+      {
+        heading: "Apa Buzz, sebenarnya?",
+        paragraphs: [
+          "Buzz adalah workspace open-source yang menggabungkan hal-hal yang biasanya tersebar di banyak tool berbeda — kanal obrolan, pesan langsung, berbagi suara, arsip file, penyimpanan kode, dan otomatisasi workflow. Yang mirip Slack ditambah GitHub dalam satu aplikasi, dan bukan hal baru kalau kamu mengikuti sejarah integrasi produktivitas korporat selama sepuluh tahun terakhir.",
+          "Yang baru terletak di lapisan identitas. Setiap partisipan, baik manusia maupun AI agent, memiliki pasangan kunci kriptografi secp256k1 masing-masing — kurva eliptik yang sama yang dipakai Bitcoin. AI agent tidak masuk dengan akun layanan bersama seperti bot di Slack saat ini. Mereka punya kunci pribadi, plus tanda tangan sekunder yang menghubungkan mereka dengan karyawan manusia yang mengotorisasi aksi tertentu.",
+          "Artinya ketika sebuah agent menggabungkan pull request atau mengirim pesan penting, catatan yang dihasilkan bertanda tangan dan menunjukkan dua hal: siapa agent yang bertindak, dan — yang lebih penting — siapa manusia yang memberinya izin melakukan itu. Ini perbedaan antara log biasa dengan tanda tangan di atas kontrak.",
+        ],
+      },
+      {
+        heading: "Mengapa Dorsey ingin memangkas ketergantungan pada Slack dan GitHub?",
+        paragraphs: [
+          "Alasan teknisnya tersembunyi di cara bot bekerja di produk yang sudah mapan. Integrasi Slack berjalan di atas token sesi yang mengautentikasi aplikasi secara keseluruhan, bukan aksi individual. Bot GitHub menulis commit dengan akun mesin yang tidak pernah, dalam log manapun, menyebut orang mana yang memicu aksi itu. Dalam kedua kasus, jejak audit tidak bisa melacak balik hingga manusia yang bertanggung jawab.",
+          "Dorsey mendeskripsikan Buzz di X sebagai sistem yang \"model-agnostic, decentralized, self-sovereign and open source\". Secara eksplisit ia menyebut Block membangunnya untuk mengurangi ketergantungan pada Slack dan GitHub — dua tool yang memakan biaya ratusan juta dolar per tahun untuk perusahaan seukuran Block, dan yang tidak menyediakan mekanisme audit krusial yang dibutuhkan tim keamanan internal mereka.",
+          "Spesifikasi isolasi antar organisasi yang menopang sistem izin di Buzz sudah diformalkan dalam TLA+, bahasa formal untuk mendeskripsikan sistem konkuren, dan diverifikasi dengan tool Tamarin yang biasa dipakai untuk membuktikan protokol kriptografi. Ini bukan sekadar detail teknis: ini bagian yang membuat janji Block tentang otorisasi yang bisa dibaca dan ditelusuri kembali menjadi kenyataan yang bisa dibuktikan, bukan hanya marketing.",
+        ],
+      },
+      {
+        heading: "Nostr sebagai tulang punggung, Goose sebagai salah satu klien",
+        paragraphs: [
+          "Protokol yang menopang Buzz adalah Nostr — singkatan dari Notes and Other Stuff Transmitted by Relays — standar terbuka yang lahir untuk jejaring sosial terdesentralisasi. Setiap aksi di Buzz menjadi event JSON dengan lima field tetap: hash identifikasi, kunci publik pembuatnya, jenis event, metadata, dan tanda tangan Schnorr. Bahkan patch kode, hasil test otomatis, dan keputusan merge tersimpan sebagai event Nostr bertanda tangan.",
+          "Buzz juga mendukung beberapa client AI agent melalui protokol standar bernama Agent Client Protocol (ACP). Saat ini Goose, OpenAI Codex, dan Anthropic Claude Code bisa terhubung ke workspace yang sama tanpa perlu integrasi khusus untuk masing-masing. Goose sendiri adalah proyek Block sebelumnya — dirilis Januari 2025 sebagai framework untuk membangun agent yang membaca kode dan menulis file — dan menyelesaikan masalah yang berbeda dari Buzz.",
+          "Goose memberi agent kemampuan untuk mengerjakan sesuatu, seperti membuka terminal dan menjalankan perintah. Buzz memberinya tempat untuk berada bersama agen lain, manusia, dan mesin, dengan identitas yang bisa diverifikasi. Keduanya dirancang untuk saling melengkapi, bukan bersaing.",
+        ],
+      },
+      {
+        heading: "Mengklarifikasi tweet viral: apa yang tidak terjadi",
+        paragraphs: [
+          "Tweet yang membuat Buzz ramai kembali membicarakan sejumlah kesalahan faktual. Pertama, jumlah star GitHub yang disebut 29.000 di postingan viral ternyata sudah terlampaui — data terverifikasi lewat API pada 28 September 2026 menunjukkan angka 35.150 bintang, bahkan sebelum thread itu ditulis.",
+          "Kedua, dan ini yang paling krusial: tidak ada perusahaan yang menyerahkan pengelolaan 100% ke AI agent. Buzz melakukan hal sebaliknya — setiap aksi agent dikaitkan dengan otorisasi manusia, bukannya dilepas tanpa pengawasan. Sistem kriptografi yang dibangun justru ada untuk memastikan tidak ada agent yang bergerak tanpa jejak yang bisa dilacak kembali ke orang yang memberi izin.",
+          "Ketiga, Buzz bukan pengganti Slack dan GitHub untuk kebanyakan perusahaan — setidaknya belum. Ini proyek beta yang lahir untuk menyelesaikan masalah spesifik Block, dibuka ke publik agar kode bisa dipakai ulang oleh pihak lain, tapi ekosistem integrasi yang dibangun Slack dan GitHub selama lebih dari satu dekade masih jauh ahead. Lompatan dari repository open-source ke penggantian tool enterprise butuh waktu, kematangan, dan kemungkinan besar perbaikan besar-besaran pada penanganan error saat agent berbuat salah.",
+        ],
+      },
+      {
+        heading: "Apa artinya untuk Indonesia?",
+        paragraphs: [
+          "Bagi tim teknologi Indonesia, Buzz menarik bukan karena ia menjanjikan revolusi total, melainkan karena ia menyoroti masalah nyata yang semakin relevan: bagaimana memastikan accountability ketika AI agent mulai bekerja di alur produksi perusahaan. Adopsi agent dalam alur kerja industri meningkat signifikan antara pertengahan 2026 — dari sekitar 4,3 persen menjadi 25 persen menurut data PYMNTS — dan dalam konteks itulah tool seperti Buzz mencoba memberi keteraturan pada masalah yang sudah terbukti risikonya: agent yang bertindak tanpa kejelasan siapa yang memotorinya.",
+          "Untuk organisasi Indonesia — termasuk sektor publik, startup, dan UMKM yang mulai bereksperimen dengan otomasi — pelajaran dari Buzz cukup praktis: jangan adopsi tool sebelum paham mekanisme auditable-nya. Kalau agent coding kamu menulis commit, siapa yang bertanggung jawab? Kalau chatbot customer service kamu menjawab pertanyaan pelanggan, apakah jejak interaksinya tercatat dan bisa dilacak? Buzz menawarkan satu pendekatan, dan pendekatan lainnya mungkin datang dari vendor lain — yang penting, mekanismenya harus transparan.",
+          "Yang jelas, Buzz tidak mengubah status quo overnight. Ia proyek beta dengan prasyarat teknis yang lumayan — butuh Docker, Rust 1.88 ke atas, Node 24, dan pnpm — sehingga belum siap diadopsi tim kecil yang baru memulai perjalanan agen AI-nya. Tapi bagi developer Indonesia yang ingin memahami arah kolaborasi manusia-agen di era post-API, Buzz layak jadi bahan studi kasus: bukti bahwa identitas kriptografi bisa jadi fondasi kerja sama yang lebih aman, bukan gimmick pemasaran.",
+        ],
+      },
+      {
+        heading: "Penutup: facts over virality",
+        paragraphs: [
+          "Buzz itu nyata, milik Block, dan sudah hadir sejak Juli 2026. Tidak mengelola perusahaan 100% dengan AI, tidak menggantikan Slack atau GitHub untuk semua orang, dan bukan peluncuran baru. Yang membuatnya menarik adalah pendekatan terhadap accountability yang jarang terlihat di ekosistem AI: setiap agent punya identitas kriptografi yang menghubungkan aksinya dengan manusia yang memberinya otorisasi, di atas protokol terbuka yang tidak dimiliki siapa pun.",
+          "Terkadang berita terbaik adalah yang tidak viral — yang tidak menjual hype, tapi menawarkan solusi yang bisa dipahami, diverifikasi, dan dicoba secara mandiri. Dalam dunia AI yang penuh klaim spektakuler, karya yang tenang dan auditable seperti ini mungkin justru yang paling bernilai.",
+          "Catatan editorial: artikel ini disusun berdasarkan laporan dari Pasquale Pillitteri, verifikasi data melalui GitHub API pada 28 September 2026, dokumentasi resmi repository block/buzz, pernyataan publik Jack Dorsey mengenai Buzz, serta analisis editorial terhadap tren kolaborasi manusia-AI agent di lingkungan perusahaan. Detail fitur dan kemampuan bersifat dinamis — selalu cek repository resmi untuk informasi terbaru. Tidak semua claim mewakili review independent formal — ini catatan editorial Wawasan AI yang didasarkan pada data publik yang tersedia hingga tanggal publikasi.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
