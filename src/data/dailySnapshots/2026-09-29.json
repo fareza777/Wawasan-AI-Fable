@@ -1,17 +1,65 @@
 {
   "cadence": "daily",
   "title": "Live trending GitHub repositories — daily momentum ranking",
-  "periodLabel": "29 September 2026",
-  "period": {
-    "date": "2026-09-29",
-    "label": "29 September 2026",
-    "path": "/repo/daily/2026/09/29"
-  },
+  "periodLabel": "Hari ini",
+  "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-09-29T00:03:42.487Z",
+  "fetchedAt": "2026-09-29T07:19:46.788Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "KKKKhazix/AIHOT",
+      "owner": "KKKKhazix",
+      "repo": "AIHOT",
+      "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
+      "githubUrl": "https://github.com/KKKKhazix/AIHOT",
+      "trendshiftUrl": "https://trendshift.io/repositories/268236",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-28T23:40:05Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "firelex/jeff",
+      "owner": "firelex",
+      "repo": "jeff",
+      "description": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification",
+      "githubUrl": "https://github.com/firelex/jeff",
+      "trendshiftUrl": "https://trendshift.io/repositories/268033",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-28T16:18:39Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "byoungd/up",
+      "owner": "byoungd",
+      "repo": "up",
+      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
+      "githubUrl": "https://github.com/byoungd/up",
+      "trendshiftUrl": "https://trendshift.io/repositories/7097",
+      "language": "JavaScript",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2017-05-30T07:18:52Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "NVIDIA/OpenShell",
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "githubUrl": "https://github.com/NVIDIA/OpenShell",
+      "trendshiftUrl": "https://trendshift.io/repositories/23555",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-24T22:52:22Z"
+    },
+    {
+      "rank": 5,
       "fullName": "debpalash/VoiceStudio",
       "owner": "debpalash",
       "repo": "VoiceStudio",
@@ -28,7 +76,22 @@
       "dateCreated": "2026-04-09T21:40:26Z"
     },
     {
-      "rank": 2,
+      "rank": 6,
+      "fullName": "VectifyAI/PageIndex",
+      "owner": "VectifyAI",
+      "repo": "PageIndex",
+      "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "githubUrl": "https://github.com/VectifyAI/PageIndex",
+      "trendshiftUrl": "https://trendshift.io/repositories/14736",
+      "language": "Python",
+      "topics": [
+        "RAG",
+        "Document processing"
+      ],
+      "dateCreated": "2025-04-01T10:53:54Z"
+    },
+    {
+      "rank": 7,
       "fullName": "eternity4719/HowToLiveBetter",
       "owner": "eternity4719",
       "repo": "HowToLiveBetter",
@@ -42,37 +105,7 @@
       "dateCreated": "2026-09-07T01:53:36Z"
     },
     {
-      "rank": 3,
-      "fullName": "vectorize-io/hindsight",
-      "owner": "vectorize-io",
-      "repo": "hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "githubUrl": "https://github.com/vectorize-io/hindsight",
-      "trendshiftUrl": "https://trendshift.io/repositories/15603",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI memory"
-      ],
-      "dateCreated": "2025-10-30T11:49:48Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "paperclipai/paperclip",
-      "owner": "paperclipai",
-      "repo": "paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "githubUrl": "https://github.com/paperclipai/paperclip",
-      "trendshiftUrl": "https://trendshift.io/repositories/22502",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-03-02T15:01:51Z"
-    },
-    {
-      "rank": 5,
+      "rank": 8,
       "fullName": "cdyforever/how-to-live-better",
       "owner": "cdyforever",
       "repo": "how-to-live-better",
@@ -84,77 +117,30 @@
       "dateCreated": "2026-09-18T14:35:08Z"
     },
     {
-      "rank": 6,
-      "fullName": "rohitg00/ai-engineering-from-scratch",
-      "owner": "rohitg00",
-      "repo": "ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "trendshiftUrl": "https://trendshift.io/repositories/24667",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Programming examples"
-      ],
-      "dateCreated": "2026-03-18T18:38:02Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "mvschwarz/openrig",
-      "owner": "mvschwarz",
-      "repo": "openrig",
-      "description": "Multi-agent harness that runs Claude Code and  Codex together as one system",
-      "githubUrl": "https://github.com/mvschwarz/openrig",
-      "trendshiftUrl": "https://trendshift.io/repositories/141565",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-04-01T06:22:40Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "rocketride-org/rocketride-server",
-      "owner": "rocketride-org",
-      "repo": "rocketride-server",
-      "description": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
-      "githubUrl": "https://github.com/rocketride-org/rocketride-server",
-      "trendshiftUrl": "https://trendshift.io/repositories/37651",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "AI workflow",
-        "Workflow automation"
-      ],
-      "dateCreated": "2026-02-11T17:02:53Z"
-    },
-    {
       "rank": 9,
-      "fullName": "mexicat/pdoom-video",
-      "owner": "mexicat",
-      "repo": "pdoom-video",
-      "description": "Code-rendered music video for \"I'm Upping My P(doom)\"",
-      "githubUrl": "https://github.com/mexicat/pdoom-video",
-      "trendshiftUrl": "https://trendshift.io/repositories/263740",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-09-24T21:33:53Z"
+      "fullName": "vbskycn/iptv",
+      "owner": "vbskycn",
+      "repo": "iptv",
+      "description": "iptv最新可用直播源,支持iptv4/iptv6双栈访问。直播电视系统，这里有折腾好的，直接下载用吧。直播电视app电视手机全部兼容。",
+      "githubUrl": "https://github.com/vbskycn/iptv",
+      "trendshiftUrl": "https://trendshift.io/repositories/118670",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2021-03-02T05:44:48Z"
     },
     {
       "rank": 10,
-      "fullName": "stablyai/orca",
-      "owner": "stablyai",
-      "repo": "orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "githubUrl": "https://github.com/stablyai/orca",
-      "trendshiftUrl": "https://trendshift.io/repositories/26256",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-03-17T03:28:57Z"
+      "fullName": "shihabal3amri/DiPlay",
+      "owner": "shihabal3amri",
+      "repo": "DiPlay",
+      "description": "Independent CarPlay receiver for compatible Android head units. Wired and wireless public preview.",
+      "githubUrl": "https://github.com/shihabal3amri/DiPlay",
+      "trendshiftUrl": "https://trendshift.io/repositories/267022",
+      "language": "Kotlin",
+      "topics": [],
+      "dateCreated": "2026-09-24T15:36:38Z"
     }
   ]
 }
