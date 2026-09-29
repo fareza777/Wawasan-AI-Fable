@@ -4380,6 +4380,46 @@ export const stacks: Review[] = [
     date: "2026-09-28",
     featured: false,
   },
+  {
+    slug: "aider-architect",
+    name: "Aider Architect mode",
+    tagline: "Memisahkan tahap rencana dan eksekusi untuk kodebase berskala besar",
+    tags: ["Aider", "Open Source", "CLI", "Refactor"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 8.5 },
+      { label: "Pengalaman Pengguna", value: 7.5 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "Aider Architect mode menerapkan prinsip dua otak — satu model berfikir sebagai arsitek yang merancang perubahan, dan model lain bertugas menerjemahkan rancangan itu ke dalam instruksi edit file konkret. Pendekatan ini sangat bermanfaat terutama ketika bekerja dengan model reasoning yang pintar merencanakan tapi kurang lihai menyusun format diff.",
+    pros: [
+      "Pisahkan langkah perencanaan dari eksekusi — ideal untuk refactor lintas puluhan file",
+      "Model reasoning seperti OpenAI o1/o3 jadi jauh lebih efektif saat dipakai sebagai arsitek",
+      "Format edit khusus editor-diff dan editor-whole mengurangi error yang umum di kode mode biasa",
+      "Masih open-source Apache 2.0; bayar hanya token API sesuai kebutuhan, tanpa langganan tambahan",
+    ],
+    cons: [
+      "Dua panggilan API berarti biaya dan latensi sekitar dua kali lipat dari mode standar",
+      "Untuk tugas sederhana atau satu file, overhead arsitek malah bikin proses tidak efisien",
+      "Kurva belajar lebih curam — perlu paham kapan pakai arsitek dan kapan cukup kode mode",
+      "Tidak ada UI grafis; sepenuhnya berbasis terminal yang bisa intimidatif bagi pemula",
+    ],
+    verdict:
+      "Solusi elegan untuk masalah yang spesifik: ketika refaktor besar butuh perencanaan teliti, architect mode memberikan struktur yang jelas. Tapi jangan lupa bahwa setiap langkah arsitek memakan token ganda — gunakan hanya saat proyek benar-benar layak.",
+    body: [
+      "Sebelum adanya Claude Code atau Devin yang mengklaim diri sebagai agen coding penuh, Aider sudah hadir dengan pendekatan yang lebih grounded: bukan melepaskan bot yang mengerjakan segalanya sendiri, tapi menjadi partner yang bekerja berdampingan langsung di terminal. Fitur paling unik dari Aider sejak awal adalah integrasi git-nya yang membuat setiap perubahan tercatat rapi sebagai commit terpisah, sesuatu yang tool modern lainnya masih terhitung ketinggalan. Tapi kehadiran fitur Architect mode membawa Aider ke level strategi baru yang menarik.",
+      "Konsep di balik architect mode sebenarnya sederhana. Saat kamu dalam mode ini, Aider mengirim permintaan pertamamu ke satu model yang berperan sebagai arsitek — ia membaca kode yang ada, memahami konteks, dan mengusulkan rencana perubahan secara rinci. Langkah kedua, proposal arsitek kemudian diteruskan ke model editor yang bertugas mengubah rencana itu menjadi instruksi edit file yang konkret dan bisa dieksekusi. Dua langkah ini berjalan berturut-turut: pertama pikirkan, lalu tulis kodenya. Ini berbeda keras dari kode mode standar di mana model harus melakukan keduanya sekaligus dalam satu respons, sering kali mengorbankan kedalaman analisis demi kecepatan.",
+      "Keuntungan terbesar architect mode muncul dengan model reasoning seperti keluarga o1 dan o3 dari OpenAI. Model-model ini sangat unggul dalam berpikir logis dan merancang solusi kompleks, tapi ketika diminta langsung mengedit file, mereka sering kelewatan detail kecil atau salah format blok REPLACE yang diperlukan oleh Aider. Dengan architect mode, kemampuan reasoning-nya digunakan semaksimal mungkin di tahap perencanaan, sementara model editor — yang bisa berupa GPT-4o, Claude Sonnet, bahkan model lokal via Ollama — fokus pada tugas spesifik yang memang dikuasainya: menghasilkan edit file yang akurat. Hasilnya? Edit yang lebih konsisten, risiko korupsi kode yang berkurang signifikan, dan alur kerja yang terasa lebih dapat diprediksi meskipun memakan waktu lebih lama per turn.",
+      "Bagi pengembang Indonesia, ada dua hal worth noting. Pertama, ekonomi biayanya tetap transparan dan prediktif. Karena Aider tidak mengenakan biaya tambahan apa pun — kamu cuma bayar token ke penyedia model masing-masing — menambahkan architect mode berarti menduplikasi penggunaan API dua kali lipat. Sebagai patokan, developer solo yang pakai Aider bersama Anthropic Claude Sonnet biasanya menghabiskan $5-$15 per hari untuk pemakaian normal, dan dengan architect mode itu bisa naik ke $10-$30 untuk tugas berat. Kedua, jika kamu punya akses GPU lokal, opsi self-host via Ollama memungkinkan architect mode berjalan 100% offline tanpa biaya API sama sekali. Ini penting banget buat yang kerjanya menangani data sensitif atau berada di infrastruktur dengan bandwidth terbatas. Bagi freelancer dan tim startup di Indonesia yang ingin kontrol penuh atas biaya sambil tetap mendapatkan kualitas edit tinggi, architect mode adalah upgrade strategis — selama kamu siap membayar harga kembarannya dalam bentuk token.",
+    ],
+    link: "https://aider.chat",
+    linkLabel: "Situs Resmi",
+    date: "2026-09-29",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

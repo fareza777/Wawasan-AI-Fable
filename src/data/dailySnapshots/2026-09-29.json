@@ -1,0 +1,160 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "29 September 2026",
+  "period": {
+    "date": "2026-09-29",
+    "label": "29 September 2026",
+    "path": "/repo/daily/2026/09/29"
+  },
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-29T00:03:42.487Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "topics": [
+        "AI voice",
+        "Text to speech",
+        "Audio processing",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-04-09T21:40:26Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "vectorize-io/hindsight",
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "githubUrl": "https://github.com/vectorize-io/hindsight",
+      "trendshiftUrl": "https://trendshift.io/repositories/15603",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI memory"
+      ],
+      "dateCreated": "2025-10-30T11:49:48Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "paperclipai/paperclip",
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "githubUrl": "https://github.com/paperclipai/paperclip",
+      "trendshiftUrl": "https://trendshift.io/repositories/22502",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-03-02T15:01:51Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "cdyforever/how-to-live-better",
+      "owner": "cdyforever",
+      "repo": "how-to-live-better",
+      "description": "《高性价比人生指南》全书 528 条的在线单页阅读版：手机可读、可搜索、零依赖、支持离线",
+      "githubUrl": "https://github.com/cdyforever/how-to-live-better",
+      "trendshiftUrl": "https://trendshift.io/repositories/249699",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-09-18T14:35:08Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "githubUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "trendshiftUrl": "https://trendshift.io/repositories/24667",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Programming examples"
+      ],
+      "dateCreated": "2026-03-18T18:38:02Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "mvschwarz/openrig",
+      "owner": "mvschwarz",
+      "repo": "openrig",
+      "description": "Multi-agent harness that runs Claude Code and  Codex together as one system",
+      "githubUrl": "https://github.com/mvschwarz/openrig",
+      "trendshiftUrl": "https://trendshift.io/repositories/141565",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-04-01T06:22:40Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "rocketride-org/rocketride-server",
+      "owner": "rocketride-org",
+      "repo": "rocketride-server",
+      "description": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
+      "githubUrl": "https://github.com/rocketride-org/rocketride-server",
+      "trendshiftUrl": "https://trendshift.io/repositories/37651",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI workflow",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-02-11T17:02:53Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "mexicat/pdoom-video",
+      "owner": "mexicat",
+      "repo": "pdoom-video",
+      "description": "Code-rendered music video for \"I'm Upping My P(doom)\"",
+      "githubUrl": "https://github.com/mexicat/pdoom-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/263740",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-24T21:33:53Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    }
+  ]
+}
