@@ -1,0 +1,147 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-09-30T07:09:59.754Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "t8y2/dbx",
+      "owner": "t8y2",
+      "repo": "dbx",
+      "description": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+      "githubUrl": "https://github.com/t8y2/dbx",
+      "trendshiftUrl": "https://trendshift.io/repositories/26775",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-04-29T03:00:36Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "yetone/magpie",
+      "owner": "yetone",
+      "repo": "magpie",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "githubUrl": "https://github.com/yetone/magpie",
+      "trendshiftUrl": "https://trendshift.io/repositories/257963",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-09-23T16:22:35Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "averygan/reclip",
+      "owner": "averygan",
+      "repo": "reclip",
+      "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI.",
+      "githubUrl": "https://github.com/averygan/reclip",
+      "trendshiftUrl": "https://trendshift.io/repositories/24676",
+      "language": "HTML",
+      "topics": [
+        "Web scraping",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-03-31T04:29:13Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "KKKKhazix/AIHOT",
+      "owner": "KKKKhazix",
+      "repo": "AIHOT",
+      "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
+      "githubUrl": "https://github.com/KKKKhazix/AIHOT",
+      "trendshiftUrl": "https://trendshift.io/repositories/268236",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-28T23:40:05Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ninjahawk/livenerf",
+      "owner": "ninjahawk",
+      "repo": "livenerf",
+      "description": "Benchmark for tracking model capability after release.",
+      "githubUrl": "https://github.com/ninjahawk/livenerf",
+      "trendshiftUrl": "https://trendshift.io/repositories/255393",
+      "language": "Python",
+      "topics": [
+        "Monitoring"
+      ],
+      "dateCreated": "2026-09-22T21:59:26Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "NVIDIA/OpenShell",
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "githubUrl": "https://github.com/NVIDIA/OpenShell",
+      "trendshiftUrl": "https://trendshift.io/repositories/23555",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-24T22:52:22Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tile-ai/tilelang",
+      "owner": "tile-ai",
+      "repo": "tilelang",
+      "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
+      "githubUrl": "https://github.com/tile-ai/tilelang",
+      "trendshiftUrl": "https://trendshift.io/repositories/15037",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2024-10-03T09:25:45Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "pablostanley/yoinks",
+      "owner": "pablostanley",
+      "repo": "yoinks",
+      "description": "yoink any video from your terminal. no shady ads.",
+      "githubUrl": "https://github.com/pablostanley/yoinks",
+      "trendshiftUrl": "https://trendshift.io/repositories/106003",
+      "language": "TypeScript",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2026-07-16T07:06:09Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "VectifyAI/PageIndex",
+      "owner": "VectifyAI",
+      "repo": "PageIndex",
+      "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "githubUrl": "https://github.com/VectifyAI/PageIndex",
+      "trendshiftUrl": "https://trendshift.io/repositories/14736",
+      "language": "Python",
+      "topics": [
+        "RAG",
+        "Document processing"
+      ],
+      "dateCreated": "2025-04-01T10:53:54Z"
+    }
+  ]
+}
