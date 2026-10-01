@@ -1,0 +1,151 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-01T07:34:52.365Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "Louis-CFM/coucou",
+      "owner": "Louis-CFM",
+      "repo": "coucou",
+      "description": "A tiny friend that lives in your MacBook's notch and keeps an eye on your Claude Code sessions.",
+      "githubUrl": "https://github.com/Louis-CFM/coucou",
+      "trendshiftUrl": "https://trendshift.io/repositories/269258",
+      "language": "Swift",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-27T21:54:12Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Taichu-AI/ZDTaichu5.0-9B",
+      "owner": "Taichu-AI",
+      "repo": "ZDTaichu5.0-9B",
+      "description": "",
+      "githubUrl": "https://github.com/Taichu-AI/ZDTaichu5.0-9B",
+      "trendshiftUrl": "https://trendshift.io/repositories/237774",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-04T03:06:00Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Majorclujerk/Server-Raider",
+      "owner": "Majorclujerk",
+      "repo": "Server-Raider",
+      "description": "",
+      "githubUrl": "https://github.com/Majorclujerk/Server-Raider",
+      "trendshiftUrl": "https://trendshift.io/repositories/272265",
+      "topics": [],
+      "dateCreated": "2026-09-21T03:00:30Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "NVIDIA/OpenShell",
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "githubUrl": "https://github.com/NVIDIA/OpenShell",
+      "trendshiftUrl": "https://trendshift.io/repositories/23555",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-24T22:52:22Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "rehan-remade/universal-modder",
+      "owner": "rehan-remade",
+      "repo": "universal-modder",
+      "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+      "githubUrl": "https://github.com/rehan-remade/universal-modder",
+      "trendshiftUrl": "https://trendshift.io/repositories/272004",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI coding assistant",
+        "Game development"
+      ],
+      "dateCreated": "2026-09-30T05:00:35Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "edenfunf/reelmimic",
+      "owner": "edenfunf",
+      "repo": "reelmimic",
+      "description": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+      "githubUrl": "https://github.com/edenfunf/reelmimic",
+      "trendshiftUrl": "https://trendshift.io/repositories/271143",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI video generation"
+      ],
+      "dateCreated": "2026-09-28T19:14:59Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "edgcpp/compiler",
+      "owner": "edgcpp",
+      "repo": "compiler",
+      "description": "",
+      "githubUrl": "https://github.com/edgcpp/compiler",
+      "trendshiftUrl": "https://trendshift.io/repositories/272912",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-09-22T14:46:27Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Search"
+      ],
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "monid-ai/monid",
+      "owner": "monid-ai",
+      "repo": "monid",
+      "description": "",
+      "githubUrl": "https://github.com/monid-ai/monid",
+      "trendshiftUrl": "https://trendshift.io/repositories/241546",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-26T03:45:18Z"
+    }
+  ]
+}
