@@ -1,0 +1,148 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-02T07:21:58.998Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "lexmount/moli",
+      "owner": "lexmount",
+      "repo": "moli",
+      "description": "Best browser for AI Agent, written in pure Rust",
+      "githubUrl": "https://github.com/lexmount/moli",
+      "trendshiftUrl": "https://trendshift.io/repositories/128243",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-08-10T13:20:30Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "tester-army/e2e",
+      "owner": "tester-army",
+      "repo": "e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "githubUrl": "https://github.com/tester-army/e2e",
+      "trendshiftUrl": "https://trendshift.io/repositories/274762",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-22T09:29:04Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "deepopen-com/deepopen",
+      "owner": "deepopen-com",
+      "repo": "deepopen",
+      "description": "非自回归System 1决策引擎，专为结构化类型决策场景设计  DeepOpen Multilingual, non-autoregressive System 1 decision engine.",
+      "githubUrl": "https://github.com/deepopen-com/deepopen",
+      "trendshiftUrl": "https://trendshift.io/repositories/253721",
+      "language": "Python",
+      "topics": [
+        "NLP"
+      ],
+      "dateCreated": "2026-09-21T02:12:24Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "tigerless-labs/autoharness",
+      "owner": "tigerless-labs",
+      "repo": "autoharness",
+      "description": "A self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
+      "githubUrl": "https://github.com/tigerless-labs/autoharness",
+      "trendshiftUrl": "https://trendshift.io/repositories/68941",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-09T21:05:42Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Taichu-AI/ZDTaichu5.0-9B",
+      "owner": "Taichu-AI",
+      "repo": "ZDTaichu5.0-9B",
+      "description": "",
+      "githubUrl": "https://github.com/Taichu-AI/ZDTaichu5.0-9B",
+      "trendshiftUrl": "https://trendshift.io/repositories/237774",
+      "language": "Python",
+      "topics": [
+        "Computer vision",
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-04T03:06:00Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Toothbentweezers/xvsilhuu",
+      "owner": "Toothbentweezers",
+      "repo": "xvsilhuu",
+      "description": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting.",
+      "githubUrl": "https://github.com/Toothbentweezers/xvsilhuu",
+      "trendshiftUrl": "https://trendshift.io/repositories/254107",
+      "topics": [],
+      "dateCreated": "2026-08-23T01:33:30Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "imputnet/cobalt",
+      "owner": "imputnet",
+      "repo": "cobalt",
+      "description": "best way to save what you love",
+      "githubUrl": "https://github.com/imputnet/cobalt",
+      "trendshiftUrl": "https://trendshift.io/repositories/10359",
+      "language": "Svelte",
+      "topics": [],
+      "dateCreated": "2022-07-08T18:12:55Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "CopilotKit/OpenDots",
+      "owner": "CopilotKit",
+      "repo": "OpenDots",
+      "description": "Your always-on AI coworkers that move between text, calls, and Slack.",
+      "githubUrl": "https://github.com/CopilotKit/OpenDots",
+      "trendshiftUrl": "https://trendshift.io/repositories/275323",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-29T17:13:58Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "nanaism/yomiyasu",
+      "owner": "nanaism",
+      "repo": "yomiyasu",
+      "description": "AI生成された文章の不自然さを取り除き、人間にとって自然な日本語へ書き直すためのAgent Skill",
+      "githubUrl": "https://github.com/nanaism/yomiyasu",
+      "trendshiftUrl": "https://trendshift.io/repositories/273372",
+      "language": "Python",
+      "topics": [
+        "NLP",
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-09-30T11:49:32Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ThinkWatchProject/ThinkWatch-Lite",
+      "owner": "ThinkWatchProject",
+      "repo": "ThinkWatch-Lite",
+      "description": "Local gateway for Claude Code, Codex and other AI clients on macOS, Windows and Linux: switch upstreams without touching clients, keep API keys from relays, cut off malicious tool calls, trace every request.",
+      "githubUrl": "https://github.com/ThinkWatchProject/ThinkWatch-Lite",
+      "trendshiftUrl": "https://trendshift.io/repositories/271756",
+      "language": "TypeScript",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-09-12T13:48:15Z"
+    }
+  ]
+}
