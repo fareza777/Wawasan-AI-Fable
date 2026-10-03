@@ -1,0 +1,147 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-03T06:54:48.769Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "lexmount/moli",
+      "owner": "lexmount",
+      "repo": "moli",
+      "description": "Best browser for AI Agent, written in pure Rust",
+      "githubUrl": "https://github.com/lexmount/moli",
+      "trendshiftUrl": "https://trendshift.io/repositories/128243",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-08-10T13:20:30Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "experientiallabs/experiential",
+      "owner": "experientiallabs",
+      "repo": "experiential",
+      "description": "World-model-as-a-harness for simulating AI agent environments",
+      "githubUrl": "https://github.com/experientiallabs/experiential",
+      "trendshiftUrl": "https://trendshift.io/repositories/69130",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-06-24T22:40:57Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Web scraping",
+        "Search"
+      ],
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Niko1221/Strata",
+      "owner": "Niko1221",
+      "repo": "Strata",
+      "description": "Qwen3.8-Flash-Next (125B MoE) on a 12-24 GB NVIDIA GPU + 64 GB RAM: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+      "githubUrl": "https://github.com/Niko1221/Strata",
+      "trendshiftUrl": "https://trendshift.io/repositories/259708",
+      "language": "C++",
+      "topics": [
+        "Local LLM",
+        "Chatbot"
+      ],
+      "dateCreated": "2026-09-24T16:40:20Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "facebookincubator/muse-gadget-sdk",
+      "owner": "facebookincubator",
+      "repo": "muse-gadget-sdk",
+      "description": "Open source SDK to build Muse gadgets",
+      "githubUrl": "https://github.com/facebookincubator/muse-gadget-sdk",
+      "trendshiftUrl": "https://trendshift.io/repositories/277492",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-02T18:21:23Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "LAMDA-NeSy/Research-Starter-Kit",
+      "owner": "LAMDA-NeSy",
+      "repo": "Research-Starter-Kit",
+      "description": "从0开始，掌握做科研、写论文的基本流程。",
+      "githubUrl": "https://github.com/LAMDA-NeSy/Research-Starter-Kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/201983",
+      "topics": [],
+      "dateCreated": "2026-08-29T06:04:35Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Edge0-AI/Edge0",
+      "owner": "Edge0-AI",
+      "repo": "Edge0",
+      "description": "",
+      "githubUrl": "https://github.com/Edge0-AI/Edge0",
+      "trendshiftUrl": "https://trendshift.io/repositories/225605",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-08T13:41:47Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "danyuchn/asd-ste100-skill",
+      "owner": "danyuchn",
+      "repo": "asd-ste100-skill",
+      "description": "ASD-STE100 Simplified Technical English rules, repurposed as a Claude Code skill for rewriting ambiguous agent-facing English.",
+      "githubUrl": "https://github.com/danyuchn/asd-ste100-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/103505",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-20T15:10:41Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "CopilotKit/OpenDots",
+      "owner": "CopilotKit",
+      "repo": "OpenDots",
+      "description": "Your always-on AI coworkers that move between text, calls, and Slack.",
+      "githubUrl": "https://github.com/CopilotKit/OpenDots",
+      "trendshiftUrl": "https://trendshift.io/repositories/275323",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-09-29T17:13:58Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    }
+  ]
+}
