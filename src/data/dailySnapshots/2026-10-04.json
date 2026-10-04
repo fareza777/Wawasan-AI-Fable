@@ -1,0 +1,147 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-04T07:16:21.927Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "neilsonnn/image-blaster",
+      "owner": "neilsonnn",
+      "repo": "image-blaster",
+      "description": "An image-to-world skillset for Claude.",
+      "githubUrl": "https://github.com/neilsonnn/image-blaster",
+      "trendshiftUrl": "https://trendshift.io/repositories/29881",
+      "language": "TypeScript",
+      "topics": [
+        "3D generation"
+      ],
+      "dateCreated": "2026-04-21T02:24:55Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "QingYunA/answer-me-with-html",
+      "owner": "QingYunA",
+      "repo": "answer-me-with-html",
+      "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+      "githubUrl": "https://github.com/QingYunA/answer-me-with-html",
+      "trendshiftUrl": "https://trendshift.io/repositories/278180",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent",
+        "AI skills"
+      ],
+      "dateCreated": "2026-10-02T09:57:40Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "LAMDA-NeSy/Research-Starter-Kit",
+      "owner": "LAMDA-NeSy",
+      "repo": "Research-Starter-Kit",
+      "description": "从0开始，掌握做科研、写论文的基本流程。",
+      "githubUrl": "https://github.com/LAMDA-NeSy/Research-Starter-Kit",
+      "trendshiftUrl": "https://trendshift.io/repositories/201983",
+      "topics": [],
+      "dateCreated": "2026-08-29T06:04:35Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "lexmount/moli",
+      "owner": "lexmount",
+      "repo": "moli",
+      "description": "Best browser for AI Agent, written in pure Rust",
+      "githubUrl": "https://github.com/lexmount/moli",
+      "trendshiftUrl": "https://trendshift.io/repositories/128243",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-08-10T13:20:30Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "CopilotKit/OpenDots",
+      "owner": "CopilotKit",
+      "repo": "OpenDots",
+      "description": "Your always-on AI coworkers that move between text, calls, and Slack.",
+      "githubUrl": "https://github.com/CopilotKit/OpenDots",
+      "trendshiftUrl": "https://trendshift.io/repositories/275323",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI workflow"
+      ],
+      "dateCreated": "2026-09-29T17:13:58Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Predidit/Kazumi",
+      "owner": "Predidit",
+      "repo": "Kazumi",
+      "description": "基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕，支持实时超分辨率。",
+      "githubUrl": "https://github.com/Predidit/Kazumi",
+      "trendshiftUrl": "https://trendshift.io/repositories/11432",
+      "language": "Dart",
+      "topics": [],
+      "dateCreated": "2024-05-09T01:56:22Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "zerx-lab/FluxDown",
+      "owner": "zerx-lab",
+      "repo": "FluxDown",
+      "description": "Rust 驱动的多协议下载管理器，支持 HTTP/FTP/BitTorrent 磁力链接及 HLS/DASH 流媒体，智能多线程加速与浏览器无缝集成。精美界面，极致性能，永久免费，零广告。",
+      "githubUrl": "https://github.com/zerx-lab/FluxDown",
+      "trendshiftUrl": "https://trendshift.io/repositories/72681",
+      "language": "Rust",
+      "topics": [
+        "File management"
+      ],
+      "dateCreated": "2026-07-03T01:00:17Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "pbakaus/impeccable",
+      "owner": "pbakaus",
+      "repo": "impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "githubUrl": "https://github.com/pbakaus/impeccable",
+      "trendshiftUrl": "https://trendshift.io/repositories/22581",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2025-11-16T01:52:04Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Niko1221/Strata",
+      "owner": "Niko1221",
+      "repo": "Strata",
+      "description": "Qwen3.8-Flash-Next (125B MoE) on a 12-24 GB NVIDIA GPU + 64 GB RAM: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+      "githubUrl": "https://github.com/Niko1221/Strata",
+      "trendshiftUrl": "https://trendshift.io/repositories/259708",
+      "language": "C++",
+      "topics": [
+        "Local LLM",
+        "Chatbot"
+      ],
+      "dateCreated": "2026-09-24T16:40:20Z"
+    }
+  ]
+}
