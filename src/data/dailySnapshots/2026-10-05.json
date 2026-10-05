@@ -1,0 +1,147 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-05T07:29:53.434Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents: one CLI and MCP server to inspect any app, understand it fully down to the binary level.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "neilsonnn/image-blaster",
+      "owner": "neilsonnn",
+      "repo": "image-blaster",
+      "description": "An image-to-world skillset for Claude.",
+      "githubUrl": "https://github.com/neilsonnn/image-blaster",
+      "trendshiftUrl": "https://trendshift.io/repositories/29881",
+      "language": "TypeScript",
+      "topics": [
+        "3D generation"
+      ],
+      "dateCreated": "2026-04-21T02:24:55Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "omlahore/RemoveMacAI",
+      "owner": "omlahore",
+      "repo": "RemoveMacAI",
+      "description": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible.",
+      "githubUrl": "https://github.com/omlahore/RemoveMacAI",
+      "trendshiftUrl": "https://trendshift.io/repositories/275773",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-09-29T11:02:39Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "kargulstudio/sales-crm",
+      "owner": "kargulstudio",
+      "repo": "sales-crm",
+      "description": "",
+      "githubUrl": "https://github.com/kargulstudio/sales-crm",
+      "trendshiftUrl": "https://trendshift.io/repositories/281061",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-04T10:55:58Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Niko1221/Strata",
+      "owner": "Niko1221",
+      "repo": "Strata",
+      "description": "Qwen3.8-Flash-Next (125B MoE) on a 12-24 GB NVIDIA GPU + 64 GB RAM: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+      "githubUrl": "https://github.com/Niko1221/Strata",
+      "trendshiftUrl": "https://trendshift.io/repositories/259708",
+      "language": "C++",
+      "topics": [
+        "Local LLM",
+        "Chatbot"
+      ],
+      "dateCreated": "2026-09-24T16:40:20Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "deepseek-ai/DeepGEMM",
+      "owner": "deepseek-ai",
+      "repo": "DeepGEMM",
+      "description": "DeepGEMM: clean and efficient BLAS kernel library on GPU",
+      "githubUrl": "https://github.com/deepseek-ai/DeepGEMM",
+      "trendshiftUrl": "https://trendshift.io/repositories/14321",
+      "language": "Cuda",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "dateCreated": "2025-02-13T09:09:21Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "lexmount/moli",
+      "owner": "lexmount",
+      "repo": "moli",
+      "description": "Best browser for AI Agent, written in pure Rust",
+      "githubUrl": "https://github.com/lexmount/moli",
+      "trendshiftUrl": "https://trendshift.io/repositories/128243",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Headless browser"
+      ],
+      "dateCreated": "2026-08-10T13:20:30Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "DuarteSantos8/openGym",
+      "owner": "DuarteSantos8",
+      "repo": "openGym",
+      "description": "",
+      "githubUrl": "https://github.com/DuarteSantos8/openGym",
+      "trendshiftUrl": "https://trendshift.io/repositories/88268",
+      "language": "JavaScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-18T20:41:24Z"
+    }
+  ]
+}
