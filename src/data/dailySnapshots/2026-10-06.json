@@ -1,0 +1,146 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-06T07:56:30.710Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents: one CLI and MCP server to inspect any app, understand it fully down to the binary level.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "odysseus-dev/odysseus",
+      "owner": "odysseus-dev",
+      "repo": "odysseus",
+      "description": "Self-hosted AI workspace.",
+      "githubUrl": "https://github.com/odysseus-dev/odysseus",
+      "trendshiftUrl": "https://trendshift.io/repositories/43167",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-05-31T14:05:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "lexmount/moli",
+      "owner": "lexmount",
+      "repo": "moli",
+      "description": "Best browser for AI Agent, written in pure Rust",
+      "githubUrl": "https://github.com/lexmount/moli",
+      "trendshiftUrl": "https://trendshift.io/repositories/128243",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Browser automation"
+      ],
+      "dateCreated": "2026-08-10T13:20:30Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "nealbridges/VulnHunter",
+      "owner": "nealbridges",
+      "repo": "VulnHunter",
+      "description": "Agentic AI security scanner that hunts exploitable vulnerabilities like an adversary, proves them with executable PoCs, and fixes them test-first. A maintained fork of Capital One's VulnHunter, rebuilt for any agent harness.",
+      "githubUrl": "https://github.com/nealbridges/VulnHunter",
+      "trendshiftUrl": "https://trendshift.io/repositories/284173",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-09-22T23:22:00Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "DuarteSantos8/openGym",
+      "owner": "DuarteSantos8",
+      "repo": "openGym",
+      "description": "",
+      "githubUrl": "https://github.com/DuarteSantos8/openGym",
+      "trendshiftUrl": "https://trendshift.io/repositories/88268",
+      "language": "JavaScript",
+      "topics": [
+        "Self-hosted"
+      ],
+      "dateCreated": "2026-07-18T20:41:24Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "waligoraamodio288-rgb/hongguo-desktop-releases",
+      "owner": "waligoraamodio288-rgb",
+      "repo": "hongguo-desktop-releases",
+      "description": "红果短剧电脑版（非官方）｜Windows 10/11 免费桌面播放器，无需安卓模拟器；提供安装包、使用说明和问题反馈",
+      "githubUrl": "https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases",
+      "trendshiftUrl": "https://trendshift.io/repositories/260751",
+      "topics": [],
+      "dateCreated": "2026-09-14T02:03:16Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "omlahore/RemoveMacAI",
+      "owner": "omlahore",
+      "repo": "RemoveMacAI",
+      "description": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible.",
+      "githubUrl": "https://github.com/omlahore/RemoveMacAI",
+      "trendshiftUrl": "https://trendshift.io/repositories/275773",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-09-29T11:02:39Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tinyhumansai/openhuman",
+      "owner": "tinyhumansai",
+      "repo": "openhuman",
+      "description": "OpenHuman is the fastest, cheapest, most efficient open-source agent harness. Written in Rust",
+      "githubUrl": "https://github.com/tinyhumansai/openhuman",
+      "trendshiftUrl": "https://trendshift.io/repositories/23680",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI memory",
+        "Digital human"
+      ],
+      "dateCreated": "2026-02-18T20:01:27Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "elder-plinius/V3SP3R",
+      "owner": "elder-plinius",
+      "repo": "V3SP3R",
+      "description": "AI Flipper control",
+      "githubUrl": "https://github.com/elder-plinius/V3SP3R",
+      "trendshiftUrl": "https://trendshift.io/repositories/24485",
+      "language": "Java",
+      "topics": [
+        "AI agent",
+        "Embedded"
+      ],
+      "dateCreated": "2026-03-07T01:12:04Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "AgentMemoryRepo/agentmemoryrepo",
+      "owner": "AgentMemoryRepo",
+      "repo": "agentmemoryrepo",
+      "description": "Spec for Agent Memory Repo",
+      "githubUrl": "https://github.com/AgentMemoryRepo/agentmemoryrepo",
+      "trendshiftUrl": "https://trendshift.io/repositories/283908",
+      "topics": [],
+      "dateCreated": "2026-10-04T22:10:48Z"
+    }
+  ]
+}
