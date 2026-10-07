@@ -138,6 +138,42 @@ h1, h2, h3, .font-display {
   opacity: 1;
 }
 
+@keyframes cover-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes cover-dash {
+  to { stroke-dashoffset: -84; }
+}
+
+@keyframes cover-spin {
+  to { transform: rotate(360deg); }
+}
+
+.cover-bob,
+.cover-bob-late,
+.cover-dash,
+.cover-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.cover-bob { animation: cover-bob 4.2s ease-in-out infinite; }
+.cover-bob-late { animation: cover-bob 5s ease-in-out infinite; animation-delay: -1.8s; }
+.cover-dash {
+  stroke-dasharray: 7 6;
+  animation: cover-dash 7s linear infinite;
+}
+.cover-spin { animation: cover-spin 16s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cover-bob,
+  .cover-bob-late,
+  .cover-dash,
+  .cover-spin { animation: none; }
+}
+
 /* ===== Section band (homepage alternating blocks) ===== */
 .section-muted {
   background-color: rgba(17, 23, 41, 0.35);

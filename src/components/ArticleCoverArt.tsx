@@ -203,13 +203,123 @@ const covers: Record<string, { gradient: string; elements: ReactNode }> = {
   },
 };
 
+const palettes = [
+  ["#0f172a", "#155e75", "#22d3ee"],
+  ["#1e1b4b", "#4c1d95", "#c084fc"],
+  ["#14532d", "#0f172a", "#34d399"],
+  ["#431407", "#7c2d12", "#fbbf24"],
+  ["#172554", "#1e3a8a", "#818cf8"],
+  ["#3b0764", "#831843", "#f472b6"],
+  ["#1c1917", "#134e4a", "#2dd4bf"],
+  ["#1e293b", "#7f1d1d", "#fb7185"],
+];
+
+function hashSlug(slug: string) {
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) h = (h * 33 + slug.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+function generatedGradient(slug: string) {
+  const [a, b, c] = palettes[hashSlug(slug) % palettes.length];
+  return `linear-gradient(135deg,${a} 0%,${b} 52%,${c} 100%)`;
+}
+
+function generatedElements(slug: string) {
+  const h = hashSlug(slug);
+  const accent = palettes[h % palettes.length][2];
+  const scene = h % 4;
+  const label = slug.split("-")[0]?.slice(0, 12) ?? "ai";
+
+  if (scene === 0) {
+    const nodes = [0, 1, 2, 3, 4].map((i) => ({
+      cx: 70 + ((h >> (i * 3)) % 90) + i * 62,
+      cy: 42 + ((h >> (i + 2)) % 78),
+      r: 8 + (i % 3) * 4,
+    }));
+    return (
+      <>
+        {nodes.slice(0, -1).map((n, i) => (
+          <line
+            key={i}
+            x1={n.cx}
+            y1={n.cy}
+            x2={nodes[i + 1].cx}
+            y2={nodes[i + 1].cy}
+            stroke={accent}
+            strokeWidth="2"
+            className="cover-dash"
+            opacity="0.7"
+          />
+        ))}
+        {nodes.map((n, i) => (
+          <circle key={i} cx={n.cx} cy={n.cy} r={n.r} fill={accent} opacity={0.35 + (i % 3) * 0.2} className={i % 2 ? "cover-bob-late" : "cover-bob"} />
+        ))}
+      </>
+    );
+  }
+
+  if (scene === 1) {
+    return (
+      <>
+        {[0, 1, 2].map((i) => (
+          <g key={i} className={i === 1 ? "cover-bob-late" : "cover-bob"}>
+            <rect x={70 + i * 28} y={36 + i * 16} width="150" height="78" rx="12" fill="rgba(15,23,42,0.45)" stroke={accent} strokeOpacity={0.35 + i * 0.25} />
+            <rect x={86 + i * 28} y={52 + i * 16} width={90 - i * 12} height="8" rx="3" fill={accent} opacity="0.8" />
+            <rect x={86 + i * 28} y={68 + i * 16} width="70" height="6" rx="3" fill="#fff" opacity="0.25" />
+            <rect x={86 + i * 28} y={82 + i * 16} width="52" height="6" rx="3" fill="#fff" opacity="0.15" />
+          </g>
+        ))}
+        <circle cx="390" cy="78" r="28" fill="none" stroke={accent} strokeWidth="3" className="cover-spin" />
+        <path d="M378 78 l8 8 16-18" fill="none" stroke={accent} strokeWidth="3" />
+      </>
+    );
+  }
+
+  if (scene === 2) {
+    return (
+      <>
+        <path d="M40 118 C120 40, 200 140, 280 70 S400 30, 460 90" fill="none" stroke={accent} strokeWidth="3" className="cover-dash" />
+        {[40, 150, 280, 400].map((x, i) => (
+          <circle key={x} cx={x} cy={110 - i * 16} r={7 + (i % 2) * 4} fill={accent} className={i % 2 ? "cover-bob-late" : "cover-bob"} />
+        ))}
+        <text x="300" y="132" fill="#e2e8f0" fontSize="13" fontFamily="system-ui,sans-serif" opacity="0.8">
+          {label}
+        </text>
+      </>
+    );
+  }
+
+  return (
+    <>
+      {[0, 1, 2, 3].map((i) => (
+        <rect
+          key={i}
+          x={58 + (i % 2) * 150}
+          y={34 + Math.floor(i / 2) * 62}
+          width="128"
+          height="48"
+          rx="10"
+          fill="rgba(255,255,255,0.06)"
+          stroke={accent}
+          strokeOpacity="0.55"
+        />
+      ))}
+      <text x="74" y="64" fill={accent} fontSize="12" fontWeight="700" fontFamily="system-ui,sans-serif">{label}</text>
+      <text x="224" y="64" fill="#e2e8f0" fontSize="12" fontFamily="system-ui,sans-serif">wawasan</text>
+      <text x="74" y="126" fill="#cbd5e1" fontSize="12" fontFamily="system-ui,sans-serif">analisis</text>
+      <text x="224" y="126" fill={accent} fontSize="12" fontFamily="system-ui,sans-serif">2026</text>
+    </>
+  );
+}
+
 export function getCoverGradient(slug: string) {
-  return covers[slug]?.gradient ?? "linear-gradient(135deg,#1e293b,#334155)";
+  return covers[slug]?.gradient ?? generatedGradient(slug);
 }
 
 export default function ArticleCoverArt({ slug }: { slug: string }) {
   const cover = covers[slug];
-  if (!cover) return null;
+  const elements = cover?.elements ?? generatedElements(slug);
 
   return (
     <svg
@@ -222,7 +332,11 @@ export default function ArticleCoverArt({ slug }: { slug: string }) {
         <path d="M24 0 L0 0 0 24" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="1" />
       </pattern>
       <rect width="480" height="160" fill={`url(#grid-${slug})`} />
-      {cover.elements}
+      {elements}
+      <g opacity="0.5">
+        <circle className="cover-bob" cx="430" cy="26" r="22" fill="#fff" opacity="0.12" />
+        <circle className="cover-bob-late" cx="36" cy="136" r="16" fill="#fff" opacity="0.1" />
+      </g>
     </svg>
   );
 }
