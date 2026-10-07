@@ -229,7 +229,6 @@ function generatedElements(slug: string) {
   const h = hashSlug(slug);
   const accent = palettes[h % palettes.length][2];
   const scene = h % 4;
-  const label = slug.split("-")[0]?.slice(0, 12) ?? "ai";
 
   if (scene === 0) {
     const nodes = [0, 1, 2, 3, 4].map((i) => ({
@@ -281,11 +280,8 @@ function generatedElements(slug: string) {
       <>
         <path d="M40 118 C120 40, 200 140, 280 70 S400 30, 460 90" fill="none" stroke={accent} strokeWidth="3" className="cover-dash" />
         {[40, 150, 280, 400].map((x, i) => (
-          <circle key={x} cx={x} cy={110 - i * 16} r={7 + (i % 2) * 4} fill={accent} className={i % 2 ? "cover-bob-late" : "cover-bob"} />
+          <circle key={x} cx={x} cy={96 - i * 14} r={7 + (i % 2) * 4} fill={accent} className={i % 2 ? "cover-bob-late" : "cover-bob"} />
         ))}
-        <text x="300" y="132" fill="#e2e8f0" fontSize="13" fontFamily="system-ui,sans-serif" opacity="0.8">
-          {label}
-        </text>
       </>
     );
   }
@@ -293,22 +289,21 @@ function generatedElements(slug: string) {
   return (
     <>
       {[0, 1, 2, 3].map((i) => (
-        <rect
-          key={i}
-          x={58 + (i % 2) * 150}
-          y={34 + Math.floor(i / 2) * 62}
-          width="128"
-          height="48"
-          rx="10"
-          fill="rgba(255,255,255,0.06)"
-          stroke={accent}
-          strokeOpacity="0.55"
-        />
+        <g key={i}>
+          <rect
+            x={58 + (i % 2) * 150}
+            y={28 + Math.floor(i / 2) * 52}
+            width="128"
+            height="42"
+            rx="10"
+            fill="rgba(255,255,255,0.06)"
+            stroke={accent}
+            strokeOpacity="0.55"
+          />
+          <rect x={72 + (i % 2) * 150} y={42 + Math.floor(i / 2) * 52} width={70 - i * 8} height="6" rx="3" fill={accent} opacity="0.75" />
+          <rect x={72 + (i % 2) * 150} y={54 + Math.floor(i / 2) * 52} width="40" height="5" rx="2" fill="#fff" opacity="0.2" />
+        </g>
       ))}
-      <text x="74" y="64" fill={accent} fontSize="12" fontWeight="700" fontFamily="system-ui,sans-serif">{label}</text>
-      <text x="224" y="64" fill="#e2e8f0" fontSize="12" fontFamily="system-ui,sans-serif">wawasan</text>
-      <text x="74" y="126" fill="#cbd5e1" fontSize="12" fontFamily="system-ui,sans-serif">analisis</text>
-      <text x="224" y="126" fill={accent} fontSize="12" fontFamily="system-ui,sans-serif">2026</text>
     </>
   );
 }
