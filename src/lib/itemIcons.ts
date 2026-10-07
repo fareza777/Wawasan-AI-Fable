@@ -38,6 +38,9 @@ const SLUG_ICONS: Record<string, string> = {
   "glm-4-6": "https://www.google.com/s2/favicons?domain=z.ai&sz=128",
   mistral: "https://cdn.simpleicons.org/mistral",
   "gemma-3": "https://cdn.simpleicons.org/google",
+  "openai-math": "https://github.com/openai.png",
+  "mistral-large-4": "https://cdn.simpleicons.org/mistral",
+  "claude-knowledge-work-plugins": "https://github.com/anthropics.png",
 };
 
 function githubOrgIcon(link: string): string | null {

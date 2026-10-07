@@ -1,0 +1,148 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-07T07:01:24.830Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "openai/math",
+      "owner": "openai",
+      "repo": "math",
+      "description": "",
+      "githubUrl": "https://github.com/openai/math",
+      "trendshiftUrl": "https://trendshift.io/repositories/286672",
+      "language": "Lean",
+      "topics": [],
+      "dateCreated": "2026-10-06T21:47:02Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "tigerless-labs/autoharness",
+      "owner": "tigerless-labs",
+      "repo": "autoharness",
+      "description": "Autoharness — a self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
+      "githubUrl": "https://github.com/tigerless-labs/autoharness",
+      "trendshiftUrl": "https://trendshift.io/repositories/68941",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-09T21:05:42Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents: one CLI and MCP server to inspect any app, understand it fully down to the binary level.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "robbietilton/Compositor",
+      "owner": "robbietilton",
+      "repo": "Compositor",
+      "description": "The Photoshop alternative for Mac",
+      "githubUrl": "https://github.com/robbietilton/Compositor",
+      "trendshiftUrl": "https://trendshift.io/repositories/246426",
+      "language": "Swift",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-16T20:35:54Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "githubUrl": "https://github.com/storytold/artcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/19042",
+      "language": "Rust",
+      "topics": [
+        "AI image generation",
+        "AI video generation",
+        "Image editing"
+      ],
+      "dateCreated": "2022-03-31T23:19:12Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "storytold/filmcraft",
+      "owner": "storytold",
+      "repo": "filmcraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/filmcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/275797",
+      "language": "Rust",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-09-30T13:41:20Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "joshuaswarren/omarchy-apple-dev",
+      "owner": "joshuaswarren",
+      "repo": "omarchy-apple-dev",
+      "description": "Build and deploy iOS SwiftUI apps from Omarchy Linux on Apple Silicon, no Xcode required",
+      "githubUrl": "https://github.com/joshuaswarren/omarchy-apple-dev",
+      "trendshiftUrl": "https://trendshift.io/repositories/226388",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-09-09T22:13:26Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "anthropics/knowledge-work-plugins",
+      "owner": "anthropics",
+      "repo": "knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "githubUrl": "https://github.com/anthropics/knowledge-work-plugins",
+      "trendshiftUrl": "https://trendshift.io/repositories/23105",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-01-23T20:11:54Z"
+    }
+  ]
+}

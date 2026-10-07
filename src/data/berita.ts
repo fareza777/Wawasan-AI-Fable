@@ -4955,6 +4955,51 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "indonesia-bidik-jadi-hub-ai-regional-bukan-sekadar-pasar",
+    title: "Pemerintah Bidik Indonesia Jadi Hub AI Regional, Bukan Sekadar Pasar",
+    excerpt:
+      "Di forum investasi AS-Indonesia, Wamen Komdigi menyebut kapasitas pusat data 580 MW plus 1,3 GW dalam antrean, dan peta jalan AI 2026-2029 yang melibatkan lebih dari 30 kementerian.",
+    category: "Analisis",
+    date: "2026-10-07",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Pada 7 Oktober 2026 Katadata melaporkan pernyataan Wakil Menteri Komunikasi dan Digital Nezar Patria di 14th US-Indonesia Investment Summit di Jakarta Selatan, Selasa 6 Oktober. Isinya bukan pengumuman produk baru, melainkan posisi yang lebih besar: Indonesia ingin berhenti menjadi pasar digital yang besar, lalu menjadi basis produksi, inovasi, dan investasi di Asia Tenggara, termasuk sebagai hub AI regional.",
+          "Kalimat yang dikutip Katadata cukup langsung. Nezar mengatakan Indonesia siap beralih dari pasar digital besar menjadi basis produksi, inovasi, dan investasi digital utama di Asia Tenggara, dan siap bekerja sama dengan perusahaan Amerika yang ingin membangun di sini untuk pasar Indonesia, ASEAN, dan Asia-Pasifik yang lebih luas.",
+        ],
+      },
+      {
+        heading: "Angka yang disebut: 580 MW, lalu 1,3 GW",
+        paragraphs: [
+          "Bagian yang paling bisa dicek dari pidato itu adalah infrastruktur. Menurut laporan yang sama, Nezar menyebut kapasitas pusat data yang sudah ada sekitar 580 megawatt, ditambah 1,3 gigawatt yang masih berada dalam antrean investasi. Angka pertama adalah daya yang sudah berdiri. Angka kedua adalah rencana, dan rencana pusat data sering molor karena listrik, lahan, dan izin.",
+          "Dua komitmen perusahaan yang disebut dalam laporan itu juga berbeda umurnya. Microsoft mengumumkan investasi 1,7 miliar dolar AS untuk cloud dan AI di Indonesia, dengan potensi dampak ekonomi 2,5 miliar dolar AS dan sekitar 60.000 lapangan kerja hingga 2028. AWS disebut telah menginvestasikan 5 miliar dolar AS sejak 2021, dengan komitmen yang berlanjut hingga 2036. Keduanya adalah investasi cloud dan AI yang sudah masuk narasi publik, bukan cek yang dicairkan kemarin.",
+        ],
+      },
+      {
+        heading: "Peta jalan 2026-2029 dan lima prioritas",
+        paragraphs: [
+          "Di sisi kebijakan, pemerintah disebut sedang menyusun peta jalan AI nasional 2026-2029 bersama lebih dari 30 kementerian dan lembaga. Lima prioritasnya: kesehatan, pendidikan talenta digital, reformasi birokrasi, kota pintar, dan ketahanan pangan. Kolaborasi yang dibuka ke perusahaan Amerika Serikat mencakup riset AI, penerapan yang bertanggung jawab, solusi bahasa dan konteks lokal, infrastruktur, keamanan siber, dan pengembangan talenta.",
+          "Daftar itu penting karena ia mengakui bahwa model umum tidak otomatis paham bahasa dan urusan lokal. Solusi konteks lokal disebut sejajar dengan infrastruktur dan keamanan, bukan sebagai lampiran. Bagi tim yang membangun produk berbahasa Indonesia, itu adalah undangan kebijakan, bukan jaminan anggaran.",
+        ],
+      },
+      {
+        heading: "Apa yang belum berubah setelah pidato",
+        paragraphs: [
+          "Pidato investasi tidak sama dengan kapasitas yang bisa disewa bulan depan. 580 MW yang sudah ada tetap harus dibagi dengan beban cloud konvensional, bukan seluruhnya untuk pelatihan model. 1,3 GW dalam antrean masih harus melewati listrik, pendingin, dan pelanggan yang benar-benar menandatangani kontrak. Peta jalan yang melibatkan 30 lembaga juga berarti banyak pintu; koordinasi sebanyak itu bisa menghasilkan dokumen bersama, atau menghasilkan lima versi prioritas.",
+          "Untuk startup dan tim AI di Indonesia, bagian yang langsung berguna bukan slogan hub, melainkan tiga celah yang disebut eksplisit: bahasa dan konteks lokal, talenta, dan penerapan di lima sektor prioritas. Tim yang sudah punya produk di kesehatan, pangan, atau layanan publik punya alasan lebih konkret untuk mengikuti draf peta jalan itu daripada tim yang hanya menunggu pusat data selesai.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pernyataan 6 Oktober meletakkan Indonesia sebagai tempat membangun, bukan hanya tempat berlangganan. Apakah itu terjadi tergantung pada listrik untuk gigawatt yang masih dalam antrean, pada peta jalan 2026-2029 yang benar-benar terbit, dan pada apakah kerja sama dengan perusahaan Amerika ikut meninggalkan kapasitas untuk produk lokal.",
+          "Catatan editorial: artikel ini disusun dari laporan Katadata oleh Desy Setyowati, 7 Oktober 2026, tentang pernyataan Nezar Patria di 14th US-Indonesia Investment Summit. Angka kapasitas, investasi Microsoft, dan investasi AWS dikutip dari laporan itu, bukan dari audit mandiri Wawasan AI. Kebijakan dan antrean investasi bisa berubah; cek naskah resmi kementerian untuk versi yang berlaku.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

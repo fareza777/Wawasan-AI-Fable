@@ -2857,6 +2857,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Bring any model (Claude, GPT, Gemini, Llama, Ollama lokal), privileged actions tunggu approval user, API key disimpan lokal mode `0600`, zero telemetry, jalankan di Raspberry Pi atau server — self-hosted Convex optional saat mau database shared.",
     ],
   },
+  "openai/math": {
+    description:
+      "Katalog naskah matematika dari model internal OpenAI: 722 manuskrip dalam 372 keluarga, sebagian sudah diformalkan di Lean, dan OpenAI sendiri mengingatkan bahwa hasil yang belum diformalkan bisa masih keliru.",
+    highlights: [
+      "Arsip riset, bukan aplikasi: PDF, sumber, dan bukti Lean untuk hasil yang dihasilkan model internal yang belum dirilis ke publik.",
+      "722 manuskrip dikelompokkan jadi 372 keluarga menurut disiplin, dengan peta di CONTENTS.md dan ringkasan penalaran untuk sepuluh keluarga.",
+      "Sebagian besar hasil memakai prosedur yang sama, rata-rata sekitar tiga jam komputasi berpikir per hasil, dari kira-kira 4.000 soal yang diajukan.",
+      "Lisensi Apache-2.0. Koreksi akan disimpan sebagai versi baru tanpa menghapus rilis sebelumnya, jadi kutipan bisa menunjuk ke naskah yang dicek pada tanggal tertentu.",
+    ],
+  },
+  "storytold/photocraft": {
+    description:
+      "PhotoCraft adalah implementasi ulang Photoshop yang ditulis bersih di Rust: lapisan, topeng, lapisan penyesuaian, teks, vektor, kuas, dan berkas PSD, dalam aplikasi native yang masih berstatus alpha awal.",
+    highlights: [
+      "Aplikasi sunting gambar native, bukan bungkus Electron: kompositor GPU lewat wgpu untuk Metal, Vulkan, DX12, dan WebGPU, dengan target macOS, Windows, Linux, FreeBSD, dan web.",
+      "Berkas PSD berlapis bisa dibuka, diubah, dan disimpan. README menyebut penyimpanan ulang mempertahankan render 307 dari 309 berkas uji psd-tools.",
+      "Setiap aksi berupa perintah, jadi mesin yang sama bisa dijalankan dari antarmuka, CLI, kanal JSON, atau server MCP.",
+      "Lisensi MIT atau Apache-2.0, status alpha awal, sekitar 10 ribu bintang sejak repo dibuat 30 September 2026. Unduhan aplikasi ada di getartcraft.com.",
+    ],
+  },
+  "anthropics/knowledge-work-plugins": {
+    description:
+      "Sebelas plugin peran kerja dari Anthropic untuk Claude Cowork dan Claude Code: skill, konektor, dan slash command untuk penjualan, dukungan, produk, hukum, keuangan, data, dan riset.",
+    highlights: [
+      "Setiap plugin mengemas skill, konektor MCP, slash command, dan sub-agen untuk satu fungsi kerja, lalu bisa disesuaikan dengan istilah dan proses perusahaan.",
+      "Pasang dari claude.com/plugins di Cowork, atau di Claude Code lewat marketplace anthropics/knowledge-work-plugins.",
+      "Konektor mencakup alat yang sudah umum di tim: Slack, Notion, Jira, Linear, HubSpot, Microsoft 365, Snowflake, BigQuery, dan lainnya, sesuai plugin.",
+      "Apache-2.0 dan sekitar 26 ribu bintang. Plugin tidak menggantikan langganan alat yang disambungkan; ia hanya memberi Claude cara memakai alat itu.",
+    ],
+  },
+  "morluto/rea": {
+    description:
+      "REA adalah satu MCP dan CLI supaya agen memeriksa aplikasi sampai ke biner, di mesin sendiri, lalu melampirkan bukti dan batas dari tiap kesimpulan.",
+    highlights: [
+      "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
+      "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
+      "Lisensi MIT, ditulis TypeScript, sekitar 10,6 ribu bintang. Agen yang didukung termasuk Claude Code, Codex, Cursor, Gemini CLI, Windsurf, dan Copilot CLI.",
+      "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
+    ],
+  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights

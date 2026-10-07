@@ -4961,6 +4961,49 @@ link: "https://www.anthropic.com",
     date: "2026-09-29",
     featured: false,
   },
+  {
+    slug: "mistral-large-4",
+    name: "Mistral Large 4 Preview",
+    tagline: "Preview 1 triliun parameter dari Eropa: di atas rata-rata harga sekelasnya, belum di puncak indeks",
+    tags: ["Mistral", "Proprietary", "Multimodal", "Reasoning"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 7.4 },
+      { label: "Coding", value: 7.2 },
+      { label: "Kecepatan", value: 8.0 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 38,
+    aa_price_input: 1.36,
+    aa_price_output: 4.18,
+    aa_synced_at: "2026-10-07",
+    summary:
+      "Mistral Large 4 Preview, yang dijuluki Le Chonk, dirilis 6 Oktober 2026 sebagai preview API. Artificial Analysis memberi intelligence index 38 (peringkat 64 dari 225 di kelasnya). Bobotnya belum dibuka; Mistral menjanjikan rilis bobot pada akhir Oktober.",
+    pros: [
+      "Intelligence index 38, di atas median 26 untuk model reasoning di kisaran harga yang sama (sumber: Artificial Analysis)",
+      "Cepat untuk kelasnya: 116,1 token per detik dan waktu ke token pertama 1,46 detik di API Mistral",
+      "Harga $1,36 input dan $4,18 output per juta token, dengan diskon cache 90 persen",
+      "Mistral berencana merilis bobot pada akhir Oktober 2026, setelah preview yang sekarang masih proprietary",
+    ],
+    cons: [
+      "Indeks 38 menempatkannya di papan tengah, bukan di puncak yang dipegang Claude Opus 5.5",
+      "Sangat verbose: evaluasi indeks menghasilkan 200 juta token keluaran, median kelasnya 81 juta",
+      "Angka coding, siber, dan hukum yang beredar sebagian besar klaim Mistral, belum angka indeks coding terpisah dari Artificial Analysis",
+      "Selama preview, bobot belum bisa dijalankan sendiri; akses lewat API Mistral",
+    ],
+    verdict:
+      "Pilihan yang masuk akal kalau kamu butuh model Eropa yang cepat dan tidak semahal frontier, lalu bersedia menunggu bobotnya. Untuk tugas yang menuntut indeks intelijen tertinggi, model puncak Artificial Analysis masih di depan.",
+    body: [
+      "Mistral membuka preview publik Mistral Large 4 pada 6 Oktober 2026. Di pengumuman resminya model ini dijuluki Le Chonk: model multimodal yang dilatih dari nol, 1 triliun parameter dengan 49 miliar parameter aktif, di 3.800 GPU NVIDIA Grace Blackwell di pusat data Mistral di Eropa. Preview API sudah bisa dicoba di Mistral Studio. Bobotnya, menurut Mistral, akan dirilis akhir bulan ini. Sampai saat itu Artificial Analysis tetap menandainya sebagai model proprietary. Halaman model mereka mencatat jendela konteks sekitar 524 ribu token, masukan teks dan gambar, keluaran teks, dan mode reasoning.",
+      "(Sumber data: Artificial Analysis, diakses 7 Oktober 2026.) Intelligence index-nya 38 pada indeks versi 4.3.2, peringkat 64 dari 225 model di kelas perbandingan, di atas median 26. Kecepatan keluaran 116,1 token per detik, waktu ke token pertama 1,46 detik. Harga API Mistral $1,36 per juta token masukan dan $4,18 per juta token keluaran, dengan biaya rata-rata $1,13 per tugas indeks. Cache hit didiskon 90 persen. Angka-angka itu yang dipakai editorial sebagai patokan independen. Yang tidak ikut dipasang sebagai indeks coding terpisah: halaman Artificial Analysis yang dicek hari ini tidak menampilkan coding index tersendiri untuk preview ini.",
+      "Klaim tambahan datang dari Mistral sendiri dan perlu dibaca sebagai klaim vendor. Mereka menyebut 61,7 persen pada DeepSWE v1.1, 28,3 persen pada Terminal-Bench 4, indeks coding agent gabungan 49,8 persen, 59,9 persen pada AutomationBench, serta posisi di antara lima besar Artificial Analysis Cyber Index dengan 82 persen pada satu tes reproduksi-lalu-tambal kerentanan dan 93 persen pada Cybench. Pada grounding visual Dense 200 mereka menyebut 42 persen, sedikit di atas GPT-6 Astra yang mereka catat 41 persen. Pada Lakera B3 mereka menyebut ketahanan 93,3 persen. Data latih disebut mencakup lebih dari 160 bahasa, termasuk seluruh bahasa resmi Uni Eropa. Pelatihan lanjutan dengan reinforcement learning, menurut Mistral, masih berjalan di atas putaran pendanaan Seri D sebesar 3 miliar euro.",
+      "Untuk pengembang di Indonesia, preview ini menarik karena harganya jauh di bawah flagship Anthropic, kecepatannya enak untuk iterasi, dan janji bobot akhir bulan membuka jalan self-host bagi tim yang tidak ingin selamanya lewat API. Batasnya sama jelas. Indeks 38 bukan kelas Opus 5.5. Verbosity yang tinggi bisa membesarkan tagihan pada tugas agen yang panjang. Selama bobot belum rilis, kedaulatan yang dijanjikan masih berupa roadmap, bukan file yang bisa diunduh hari ini. Pakai preview untuk pekerjaan pengetahuan, dokumen, dan agen yang toleran terhadap jawaban panjang; simpan tugas yang butuh puncak indeks untuk model yang memang memimpin papan.",
+    ],
+    link: "https://mistral.ai/news/mistral-large-4",
+    linkLabel: "Situs Resmi",
+    date: "2026-10-07",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

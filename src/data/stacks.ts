@@ -4380,6 +4380,46 @@ export const stacks: Review[] = [
     date: "2026-09-29",
     featured: false,
   },
+  {
+    slug: "claude-knowledge-work-plugins",
+    name: "Claude Knowledge Work Plugins",
+    tagline: "Sebelas plugin peran kerja untuk Claude Cowork dan Claude Code",
+    tags: ["Anthropic", "Open Source", "Plugin", "Knowledge Work"],
+    score: 8.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.3 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 7.6 },
+    ],
+    summary:
+      "Anthropic membuka 11 plugin peran — dari penjualan sampai riset hayati — supaya Claude Cowork dan Claude Code bekerja dengan alat, perintah, dan istilah tim, bukan sebagai chatbot kosong. Repo-nya Apache-2.0 dan sudah melewati 26 ribu bintang.",
+    pros: [
+      "Sebelas paket peran siap pakai: produktivitas, sales, dukungan pelanggan, produk, pemasaran, legal, keuangan, data, pencarian perusahaan, riset hayati, dan pengelolaan plugin",
+      "Struktur yang sama di setiap plugin: skill, konektor MCP, slash command, dan sub-agen",
+      "Bisa dipasang di Cowork lewat claude.com/plugins atau di Claude Code lewat marketplace plugin",
+      "Apache-2.0, jadi tim boleh menyalin dan menyesuaikan plugin untuk proses internal",
+    ],
+    cons: [
+      "Tidak berdiri sendiri: kualitasnya mengikuti model Claude dan konektor yang benar-benar terhubung",
+      "Banyak konektor (HubSpot, Snowflake, Linear, Microsoft 365) mengandaikan langganan SaaS yang tidak semua tim di Indonesia punya",
+      "Plugin bio-research menyentuh alat riset praklinis; pemakaian di luar lisensi sumber data tetap tanggung jawab pengguna",
+      "Kustomisasi perusahaan butuh orang yang mau merawat istilah, template, dan izin alat",
+    ],
+    verdict:
+      "Titik mulai yang bagus kalau tim sudah memakai Claude dan ingin agennya mengikuti peran kerja, bukan prompt yang disalin-tempel. Nilainya baru terasa setelah konektor dan bahasa internal tim diisi, bukan pada hari plugin diinstal.",
+    body: [
+      "Knowledge Work Plugins adalah repositori terbuka Anthropic untuk orang yang pekerjaannya bukan menulis kode seharian: menjual, menutup buku, meninjau kontrak, menyusun spesifikasi, atau mencari dokumen yang tercecer di lima alat. README-nya menyatakan plugin ini dibuat untuk Claude Cowork dan juga jalan di Claude Code. Idenya sederhana. Cowork sudah bisa diberi tujuan lalu mengembalikan pekerjaan yang selesai. Plugin menambahkan cara tim mengerjakan hal itu: alat mana yang ditarik, alur mana yang kritis, dan slash command apa yang muncul. Per 7 Oktober 2026 repo anthropics/knowledge-work-plugins berlisensi Apache-2.0, dibuat 23 Januari 2026, dan punya sekitar 26.667 bintang.",
+      "Isi paketnya sebelas plugin. Produktivitas mengurus tugas dan kalender lewat Slack, Notion, Asana, Linear, Jira, Monday, ClickUp, dan Microsoft 365. Sales menyiapkan riset prospek, pipeline, dan battlecard. Customer support memilah tiket dan mengubah isu yang selesai jadi artikel basis pengetahuan. Product management menulis spesifikasi dan membaca riset pengguna. Marketing menjaga suara merek dan laporan kanal. Legal meninjau kontrak dan NDA. Finance menyiapkan jurnal, rekonsiliasi, dan dukungan audit lewat Snowflake, Databricks, atau BigQuery. Data menulis SQL dan dasbor. Enterprise search mencari lintas email, chat, dan wiki. Bio-research menghubungkan literatur dan basis data praklinis seperti PubMed, bioRxiv, ChEMBL, dan ClinicalTrials.gov. Plugin kesebelas dipakai untuk membuat atau mengubah plugin lain.",
+      "Pemasangannya tidak membutuhkan layanan baru. Di Cowork, plugin diambil dari claude.com/plugins. Di Claude Code, marketplace ditambahkan dengan `claude plugin marketplace add anthropics/knowledge-work-plugins`, lalu misalnya `claude plugin install sales@knowledge-work-plugins`. Setelah terpasang, skill menyala saat relevan dan slash command seperti `/sales:call-prep` atau `/data:write-query` tersedia di sesi. Setiap plugin punya bentuk yang sama: `.claude-plugin/plugin.json` sebagai manifes, `.mcp.json` untuk sambungan alat, folder `commands` untuk perintah yang dipanggil eksplisit, dan folder `skills` untuk pengetahuan domain yang dipakai Claude sendiri. Anthropic menulis bahwa kekuatan sebenarnya muncul ketika paket itu disesuaikan dengan istilah dan proses perusahaan.",
+      "Buat tim di Jakarta atau kota lain yang sudah membayar Claude, ini cara yang lebih rapi daripada menaruh prompt peran di catatan bersama. Lisensi Apache-2.0 mengizinkan salinan internal, jadi SOP berbahasa Indonesia bisa masuk ke skill tanpa menunggu Anthropic menerjemahkannya. Batas praktisnya ada di konektor. Plugin penjualan tidak berguna kalau CRM-nya tidak tersambung, dan plugin keuangan tidak menggantikan kendali akses gudang data. Plugin riset hayati juga hanya seberguna lisensi basis data yang tim memang punya. Anggap repo ini sebagai kerangka peran, lalu isi kerangka itu dengan alat yang benar-benar dipakai sehari-hari.",
+    ],
+    link: "https://github.com/anthropics/knowledge-work-plugins",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-07",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

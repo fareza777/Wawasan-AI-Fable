@@ -5137,6 +5137,54 @@ export const repos: Review[] = [
     updatedAt: "2026-09-29",
     featured: false,
   },
+  {
+    slug: "openai-math",
+    name: "OpenAI Math",
+    tagline: "Katalog naskah matematika dari model internal OpenAI, sebagian sudah diformalkan di Lean",
+    tags: ["Riset AI", "Matematika", "Lean", "Open Source"],
+    score: 8.1,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.5 },
+      { label: "Fitur & Ekstensibilitas", value: 8.0 },
+      { label: "Komunitas & Momentum", value: 9.2 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 6.8 },
+    ],
+    summary:
+      "openai/math adalah katalog publik naskah matematika yang dihasilkan model internal OpenAI: 722 manuskrip dalam 372 keluarga, sebagian disertai bukti Lean. Ini arsip riset, bukan aplikasi, dan OpenAI sendiri menulis bahwa hasil yang belum diformalkan bisa masih bermasalah.",
+    highlights: [
+      "722 manuskrip dalam 372 keluarga, dikelompokkan menurut disiplin matematika, plus peta isi di CONTENTS.md",
+      "Pustaka Lean dan katalog formalisasi untuk naskah yang sudah punya bukti terverifikasi; tidak semua naskah punya formalisasi",
+      "Ringkasan penalaran yang dipotong untuk sepuluh keluarga, dari korelasi fungsi multiplikatif sampai sistem Vlasov-Maxwell relativistik",
+      "Lisensi Apache-2.0; riwayat rilis publik akan dipertahankan, koreksi dicatat sebagai versi baru",
+      "Sekitar 5.000 bintang GitHub sehari setelah repositori dibuat pada 6 Oktober 2026",
+    ],
+    pros: [
+      "Jarang ada lab frontier yang menaruh artefak bukti, bukan hanya skor benchmark, ke repo publik",
+      "Lean memberi jalur verifikasi yang bisa dicek mesin, terpisah dari klaim prosa",
+      "Lisensi Apache-2.0 memudahkan peneliti mengutip, memperbaiki, dan membangun di atas naskah",
+      "Momentum komunitas langsung tinggi untuk repo yang baru berumur satu hari",
+    ],
+    cons: [
+      "OpenAI menyatakan sebagian hasil yang belum diformalkan bisa mengandung kesalahan",
+      "Model yang menghasilkan naskah belum dirilis; prosedur utamanya tidak bisa diulang pihak luar",
+      "Dua pengecualian prosedur (wilayah bebas-nol zeta Riemann dan konjektur Hodge untuk varietas abelian CM) plus suntingan manusia pada tulisan zeta membuat katalog ini tidak seragam",
+      "Bukan alat yang langsung dipakai tim produk; nilainya ada di riset dan verifikasi",
+    ],
+    verdict:
+      "Arsip yang layak diikuti kalau kamu peduli bukti, bukan skor. Baca peta keluarga dan bukti Lean-nya, dan perlakukan naskah yang belum diformalkan sebagai draf yang masih bisa keliru.",
+    body: [
+      "Pada 6 Oktober 2026 OpenAI membuka repositori openai/math: kumpulan manuskrip matematika dan artefak bukti yang dihasilkan model internal yang belum dirilis. README-nya menjelaskan bahwa evaluasi riset terbuka diperluas setelah benchmark matematika yang sudah ada jenuh, dan sebagian keluaran membangun hasil yang lebih dulu dihasilkan model yang sama. Sehari kemudian repo itu duduk di peringkat pertama tren harian Trendshift, dengan sekitar 5.030 bintang dan 457 fork. Bahasa utamanya Lean. Lisensinya Apache-2.0.",
+      "Skala katalognya konkret. Saat rilis, ada 722 manuskrip dalam 372 keluarga. Satu keluarga bisa berisi hasil utama, argumen pendamping, konsekuensi, atau bukti alternatif, lalu dikelompokkan menurut disiplin. Pembaca diarahkan ke overview.pdf untuk gambaran keluarga, CONTENTS.md sebagai peta naskah, folder preprints untuk PDF dan sumber, serta lean/README.md dan lean/formalization.yaml untuk bukti yang sudah diformalkan. OpenAI juga merilis ringkasan penalaran yang dipotong untuk sepuluh keluarga, di antaranya eksponen irasionalitas pi, konjektur Mahler, kekerasan NP pada ambang semidefinit dasar, dan rumus Mezard-Parisi untuk spin glass encer.",
+      "Cara hasil itu diperoleh dijelaskan cukup terus-terang, dan justru karena itu batasnya terlihat. Sebagian besar hasil memakai prosedur yang sama pada model internal yang belum dirilis. Rata-rata tiap hasil memakai sekitar tiga jam komputasi berpikir setara ChatGPT Pro. Sepanjang evaluasi, model diberi kira-kira 4.000 soal; yang lolos ke katalog adalah yang dikumpulkan jadi keluarga dan dianggap cukup signifikan. Ada pengecualian: pekerjaan pada wilayah bebas-nol fungsi zeta Riemann, bukti konjektur Hodge untuk varietas abelian CM, dan tulisan wilayah Re(s) > 11/12 yang disunting manusia agar lebih mudah dibaca. OpenAI menulis bahwa tidak semua hasil punya formalisasi Lean, dan hasil yang belum diformalkan bisa bermasalah. Mereka berjanji memperbaiki isu semacam itu dengan cepat dan menyimpan versi lama saat ada koreksi.",
+      "Bagi pembaca di Indonesia, repo ini bukan alat harian untuk coding agent. Nilainya lain: ini contoh bagaimana klaim riset model bisa diletakkan di tempat yang bisa dikutip dan, untuk sebagian naskah, dicek dengan Lean. Dosen, mahasiswa pascasarjana, dan komunitas pembuktian formal bisa memakai katalog itu sebagai bahan bacaan, asal tidak memperlakukan setiap PDF sebagai teorema yang sudah selesai. Kalau sebuah naskah belum punya bukti Lean, anggap ia draf. Kutipan resmi ada di blok BibTeX di direktori masing-masing manuskrip.",
+    ],
+    link: "https://github.com/openai/math",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-07",
+    updatedAt: "2026-10-07",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
