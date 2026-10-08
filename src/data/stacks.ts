@@ -4420,6 +4420,46 @@ export const stacks: Review[] = [
     date: "2026-10-07",
     featured: false,
   },
+  {
+    slug: "docker-agent",
+    name: "Docker Agent",
+    tagline: "Agen AI dari berkas YAML, dijalankan sebagai plugin docker agent",
+    tags: ["Docker", "Open Source", "Agen", "MCP"],
+    score: 8.1,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 7.2 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 8.7 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "Docker Agent, repo docker/docker-agent, menyusun agen lewat YAML lalu menjalankannya sebagai plugin CLI. Pada 8 Oktober 2026 ia duduk di peringkat lima tren harian, dengan 3.747 bintang dan lisensi Apache-2.0.",
+    pros: [
+      "Berkas YAML bisa masuk git, ditinjau, dan dibagikan lewat registry OCI, bukan hanya tersimpan di riwayat obrolan",
+      "README menyebut penyedia OpenAI, Anthropic, Gemini, Bedrock, Mistral, xAI, plus Docker Model Runner untuk model lokal",
+      "Alat MCP lokal, remote, atau berbasis kontainer, dengan RAG BM25, embedding, hibrida, dan reranking",
+      "Docker Desktop 4.63 ke atas sudah membawa plugin-nya, menurut README. Lisensi Apache-2.0",
+    ],
+    cons: [
+      "Kualitas jawaban mengikuti model yang kamu pasang. Plugin ini tidak menambah kecerdasan sendiri",
+      "Tetap butuh kunci API penyedia, atau model lokal lewat Docker Model Runner. Biaya token tidak hilang",
+      "README menyatakan ada telemetri pemakaian anonim. Tim yang melarang telemetri harus membaca halaman itu sebelum memasang",
+      "Multi-agen yang saling mendelegasikan tugas memperbesar jumlah panggilan model. Tagihan naik bersama jumlah agen, bukan bersama jumlah bintang",
+    ],
+    verdict:
+      "Masuk akal bagi tim yang sudah hidup di Docker dan ingin definisi agennya bisa di-review seperti berkas Compose. Nilai alat ini ada di bungkusnya — YAML, MCP, dan registry — bukan di model yang kebetulan kamu tulis di baris model.",
+    body: [
+      "Docker Agent adalah plugin CLI dari Docker Engineering. README-nya, dicek 8 Oktober 2026, mendeskripsikan cara membuat, menjalankan, dan membagikan agen dengan konfigurasi YAML, kumpulan alat, dan orkestrasi banyak agen. Perintahnya `docker agent`. Repo docker/docker-agent dibuat 1 September 2025, ditulis Go, berlisensi Apache-2.0. API GitHub pada 8 Oktober mencatat 3.747 bintang dan 485 fork. Hari yang sama, Trendshift menaruhnya di peringkat lima tren harian. Dokumentasi lengkap ada di docker.github.io/docker-agent.",
+      "Isi yang dijanjikan README cukup konkret. Satu berkas YAML menetapkan agen, model, instruksi, dan toolset. Contoh di README memakai model openai/gpt-5-mini dan toolset MCP docker:duckduckgo, lalu dijalankan dengan `docker agent run agent.yaml`. Agen bisa saling mendelegasikan tugas. Penyedia yang disebut: OpenAI, Anthropic, Gemini, AWS Bedrock, Mistral, xAI, dan Docker Model Runner. RAG-nya bisa BM25, embedding, pencarian hibrida, dan reranking. Agen yang sudah jadi bisa di-push ke registry OCI dan ditarik di mesin lain dengan `docker agent run myorg/agent:tag`. Ada juga `docker agent new` untuk membuat konfigurasi secara interaktif, plus modus TUI, CLI, dan MCP.",
+      "Pemasangan yang ditulis README punya tiga pintu. Di Docker Desktop 4.63 atau lebih baru, plugin CLI sudah ada; pengguna cukup menjalankan `docker agent`. Lewat Homebrew, paketnya docker-agent. Lewat biner, unduh dari rilis GitHub lalu tautkan ke ~/.docker/cli-plugins/docker-agent. Minimal satu kunci API perlu disetel, kecuali model dijalankan lokal lewat Docker Model Runner. README juga menulis bahwa proyek mengumpulkan data pemakaian anonim dan menautkan halaman telemetri. Wawasan AI tidak menjalankan agen ini hari ini; uraian di atas mengikuti README dan metadata GitHub.",
+      "Untuk tim di Indonesia yang sudah memakai Docker di laptop atau server, ini jalur yang lebih mudah diaudit daripada prompt yang menumpuk di catatan pribadi. Berkas YAML bisa lewat pull request. Model lokal lewat Docker Model Runner adalah pilihan bila berkas klien tidak boleh keluar mesin. Batasnya tetap di dua tempat. Pertama, plugin tidak membuat model murah menjadi model yang lebih pintar; baris model di YAML itulah yang menentukan jawaban. Kedua, setiap agen tambahan adalah panggilan tambahan. Apache-2.0 membuat kodenya longgar dipakai, tetapi tagihan token dan kebijakan telemetri tetap harus dibaca sebelum alat ini masuk ke mesin yang memegang data pelanggan.",
+    ],
+    link: "https://github.com/docker/docker-agent",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-08",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

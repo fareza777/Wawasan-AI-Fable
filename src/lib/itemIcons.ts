@@ -41,6 +41,9 @@ const SLUG_ICONS: Record<string, string> = {
   "openai-math": "https://github.com/openai.png",
   "mistral-large-4": "https://cdn.simpleicons.org/mistral",
   "claude-knowledge-work-plugins": "https://github.com/anthropics.png",
+  photocraft: "https://github.com/storytold.png",
+  "docker-agent": "https://github.com/docker.png",
+  "ling-3-1-flash": "https://www.google.com/s2/favicons?domain=artificialanalysis.ai&sz=128",
 };
 
 function githubOrgIcon(link: string): string | null {

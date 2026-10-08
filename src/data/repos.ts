@@ -5185,6 +5185,54 @@ export const repos: Review[] = [
     updatedAt: "2026-10-07",
     featured: false,
   },
+  {
+    slug: "photocraft",
+    name: "PhotoCraft",
+    tagline: "Implementasi ulang Photoshop dalam Rust, masih alpha, dengan PSD dan jalur perintah untuk agen",
+    tags: ["Rust", "Open Source", "Desain", "MCP"],
+    score: 7.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.4 },
+      { label: "Fitur & Ekstensibilitas", value: 8.2 },
+      { label: "Komunitas & Momentum", value: 9.1 },
+      { label: "Dokumentasi", value: 7.6 },
+      { label: "Kesiapan Produksi", value: 5.8 },
+    ],
+    summary:
+      "PhotoCraft duduk di puncak tren harian 8 Oktober 2026: aplikasi sunting gambar native yang ditulis ulang dari nol dalam Rust, masih berstatus alpha awal, dengan berkas PSD dan setiap aksi yang bisa dipanggil agen lewat MCP.",
+    highlights: [
+      "Lapisan, topeng, gaya lapisan, teks, vektor, kuas, dan lapisan penyesuaian dalam aplikasi native, bukan bungkus Electron",
+      "Kompositor GPU lewat wgpu untuk Metal, Vulkan, DX12, dan WebGPU; target README: macOS, Windows, Linux, FreeBSD, dan web",
+      "README mengklaim penyimpanan ulang PSD mempertahankan render 307 dari 309 berkas uji psd-tools",
+      "Setiap aksi berupa perintah, jadi mesin yang sama bisa dijalankan dari antarmuka, CLI, kanal JSON, atau server MCP",
+      "API GitHub pada 8 Oktober 2026: 17.729 bintang dan 2.331 fork. Repo dibuat 30 September 2026",
+    ],
+    pros: [
+      "Momentum nyata: dari repo yang dibuat 30 September menjadi 17.729 bintang pada 8 Oktober, menurut API GitHub",
+      "Klaim PSD berlapis adalah bagian yang paling berguna bagi orang yang sudah punya arsip Photoshop",
+      "Jalur MCP membuat suntingan bisa masuk alur agen tanpa menyalin piksel lewat obrolan",
+      "Aplikasi disebut berjalan offline. Berkas klien tidak harus naik ke layanan sunting awan",
+    ],
+    cons: [
+      "Lencana README masih bertuliskan early alpha. Ini bukan pengganti produksi yang sudah selesai",
+      "Angka 307 dari 309 berkas uji adalah klaim README, bukan pengukuran ulang Wawasan AI",
+      "Lencana lisensi menulis MIT atau Apache-2.0, sementara API GitHub pada 8 Oktober menandai Apache-2.0. Cek berkas lisensi sebelum memakai kode di produk",
+      "Posisi clean-room terhadap Photoshop adalah klaim penulis repo, bukan putusan hukum",
+    ],
+    verdict:
+      "Layak diunduh kalau kamu ingin melihat seberapa jauh editor PSD native bisa pergi dalam seminggu, atau ingin mengemudikan suntingan dari agen. Jangan pindahkan pekerjaan klien ke sini sebelum satu berkas PSD-mu sendiri selamat dibuka, diubah, dan disimpan ulang.",
+    body: [
+      "Pada 8 Oktober 2026 PhotoCraft berada di peringkat pertama tren harian Trendshift. README-nya mendeskripsikan proyek ini sebagai implementasi ulang bersih Adobe Photoshop, ditulis seluruhnya dalam Rust: lapisan, topeng, lapisan penyesuaian, gaya lapisan, teks, vektor, kuas, dan berkas PSD sungguhan, dalam aplikasi native yang disebut offline. Lencana di README memasang status early alpha, platform macOS, Windows, Linux, FreeBSD, dan web, serta lisensi MIT atau Apache-2.0. API GitHub yang dicek hari yang sama mencatat 17.729 bintang, 2.331 fork, bahasa Rust, dan lisensi SPDX Apache-2.0. Repo dibuat 30 September 2026. Halaman unduhannya ada di getartcraft.com/apps/photocraft.",
+      "Bagian yang paling bisa dicek dari README, tanpa menjalankan aplikasinya, adalah bentuk arsitekturnya. Kompositor GPU memakai wgpu untuk Metal, Vulkan, DX12, dan WebGPU, dengan ubin copy-on-write dan filter multithreaded. README juga menulis bahwa setiap aksi adalah perintah, sehingga mesin yang sama bisa dikemudikan dari antarmuka, CLI, kanal JSON, atau server MCP. Untuk berkas, klaimnya spesifik: membuka, mengubah, dan menyimpan dokumen Photoshop berlapis, dan penyimpanan ulang mempertahankan render 307 dari 309 berkas uji psd-tools. Angka itu adalah klaim proyek. Wawasan AI tidak mengulang uji tersebut hari ini.",
+      "Bagi studio dan pekerja lepas di Indonesia, dua hal itu yang relevan, bukan jumlah bintangnya. Pertama, berkas PSD lama masih menjadi arsip klien. Editor yang bisa membuka lapisan, bukan hanya meratakan gambar, adalah syarat minimum sebelum ada yang serius mencoba pindah. Kedua, jalur offline berarti berkas kampanye atau foto klien tidak harus diunggah ke layanan sunting berlangganan. Harga langganan desain dalam rupiah sering menjadi alasan orang mencari alternatif; PhotoCraft tidak memasang harga aplikasi di README karena lencananya menjanjikan perangkat lunak terbuka. Yang belum dijawab README adalah apakah alpha ini selamat dipakai pada berkas yang tidak boleh rusak.",
+      "Cara memakai yang masuk akal minggu ini: unduh dari getartcraft.com, buka satu PSD salinan, ubah satu lapisan penyesuaian, simpan, lalu buka lagi di alat yang sudah kamu percayai. Kalau lapisan dan tampilannya utuh, baru pertimbangkan jalur MCP untuk tugas berulang. Kalau tidak, biarkan ia di papan tren. Alpha yang naik 17 ribu bintang dalam delapan hari tetap alpha. Posisi clean-room terhadap perangkat lunak Adobe juga tetap klaim penulis, dan tim yang akan menyematkan kode ini di produk sendiri perlu membaca berkas lisensi, karena lencana ganda MIT atau Apache-2.0 dan tanda API yang hanya menyebut Apache-2.0 tidak sama persis.",
+    ],
+    link: "https://github.com/storytold/photocraft",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-08",
+    updatedAt: "2026-10-08",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {

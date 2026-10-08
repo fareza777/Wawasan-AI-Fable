@@ -2874,7 +2874,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Aplikasi sunting gambar native, bukan bungkus Electron: kompositor GPU lewat wgpu untuk Metal, Vulkan, DX12, dan WebGPU, dengan target macOS, Windows, Linux, FreeBSD, dan web.",
       "Berkas PSD berlapis bisa dibuka, diubah, dan disimpan. README menyebut penyimpanan ulang mempertahankan render 307 dari 309 berkas uji psd-tools.",
       "Setiap aksi berupa perintah, jadi mesin yang sama bisa dijalankan dari antarmuka, CLI, kanal JSON, atau server MCP.",
-      "Lisensi MIT atau Apache-2.0, status alpha awal, sekitar 10 ribu bintang sejak repo dibuat 30 September 2026. Unduhan aplikasi ada di getartcraft.com.",
+      "Lencana README: MIT atau Apache-2.0, status alpha awal. API GitHub pada 8 Oktober 2026 mencatat 17.729 bintang dan menandai lisensi Apache-2.0. Unduhan ada di getartcraft.com.",
     ],
   },
   "anthropics/knowledge-work-plugins": {
@@ -2895,6 +2895,76 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
       "Lisensi MIT, ditulis TypeScript, sekitar 10,6 ribu bintang. Agen yang didukung termasuk Claude Code, Codex, Cursor, Gemini CLI, Windsurf, dan Copilot CLI.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
+    ],
+  },
+  "storytold/artcraft": {
+    description:
+      "ArtCraft adalah IDE untuk membuat gambar dan video AI secara interaktif: adegan disusun di 2D atau 3D, lalu model dipilih terpisah. Kodenya dibagikan, tetapi lisensinya masih draf fair source, bukan lisensi terbuka standar.",
+    highlights: [
+      "README menyebut komposisi 2D, penataan adegan 3D, penempatan aktor virtual di lokasi yang sama, gambar menjadi mesh 3D, dan pose karakter sebelum generasi.",
+      "Ditulis Rust. Repo dibuat 31 Maret 2022. API GitHub pada 8 Oktober 2026 mencatat 4.901 bintang dan 636 fork. Unduhan ada di getartcraft.com.",
+      "LICENSE.md berjudul ArtCraft License (WIP) dan memperingatkan bahwa teksnya belum lisensi hukum yang selesai: gratis dipakai dan boleh diubah untuk keperluan pribadi, tetapi tidak boleh dijual sebagai perangkat lunak sendiri atau dipakai membangun produk gambar dan video AI yang bersaing.",
+      "Teks lisensi yang sama melarang pemakaian nama, logo, dan tokoh maskot ArtCraft untuk promosi bisnis pihak lain.",
+    ],
+  },
+  "docker/docker-agent": {
+    description:
+      "Docker Agent adalah plugin CLI untuk menyusun dan menjalankan agen AI dari berkas YAML: banyak agen, alat MCP, dan beberapa penyedia model, lalu bisa dibungkus sebagai image OCI.",
+    highlights: [
+      "Dijalankan sebagai `docker agent`. README menyatakan plugin ini sudah terpasang di Docker Desktop 4.63 ke atas; jalur lain adalah Homebrew atau biner rilis GitHub.",
+      "Penyedia yang disebut README: OpenAI, Anthropic, Gemini, AWS Bedrock, Mistral, xAI, dan Docker Model Runner untuk model lokal. Alat bisa berupa MCP lokal, remote, atau berbasis Docker.",
+      "RAG yang disebut: BM25, embedding, pencarian hibrida, dan reranking. Agen bisa di-push ke registry OCI lalu dijalankan dengan `docker agent run myorg/agent:tag`.",
+      "Lisensi Apache-2.0, ditulis Go. API GitHub pada 8 Oktober 2026: 3.747 bintang dan 485 fork. README menyatakan ada telemetri pemakaian anonim.",
+    ],
+  },
+  "threerocks/hand-drawn-styles": {
+    description:
+      "hand-drawn-styles adalah resep prompt gambar tangan untuk agen seperti Claude Code, Cursor, dan Codex. Agen mengisi gaya yang sudah ditulis, lalu mengeluarkan prompt; gambarnya tetap dikerjakan model gambar terpisah.",
+    highlights: [
+      "README menyebut 18 gaya bernomor plus varian 3.1, jadi 19 resep. Deskripsi singkat di halaman GitHub masih menyebut 5 gaya; daftar yang lebih baru ada di README.",
+      "Keluaran bawaan adalah prompt, bukan gambar. README menyebut model gambar sebagai langkah terpisah, misalnya gpt-image, Jimeng, atau Midjourney.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 8 Oktober 2026: 1.501 bintang dan 166 fork. Repo dibuat 28 Juni 2026.",
+      "Salah satu gaya dilabel penulisnya sebagai gaya Ghibli. Meniru rupa studio yang masih aktif untuk karya komersial bisa menyangkut merek; itu risiko pemakai, bukan izin dari repo.",
+    ],
+  },
+  "boykopovar/AnyPS5": {
+    description:
+      "AnyPS5 diklaim memport executable PS5 menjadi program native Linux dan Windows, tanpa emulator. README menempatkannya untuk interoperabilitas dan preservasi, dan menyerahkan soal legalitas biner kepada pengguna.",
+    highlights: [
+      "README menjelaskan relinker ke format native sistem target plus implementasi pustaka sistem untuk dynamic linking, tanpa proses emulator terpisah.",
+      "Shader dikompilasi ulang ke SPIR-V. README menyebut hasil itu lolos Spirv-Tools bila proyek dibangun dengan opsi tersebut.",
+      "Kontroler lewat SDL; papan ketik dan mouse lewat berkas konfigurasi. Daftar game yang diuji ada di docs/user/COMPATIBILITY.md. Klaim status README: Dreaming Sarah berjalan 60 fps pada GTX 1050 Ti dan i5-7500.",
+      "Lisensi GPL-2.0 saja. API GitHub pada 8 Oktober 2026: 10.761 bintang dan 814 fork. Proyek menulis bahwa ia tidak menyertakan firmware, kunci, atau pustaka proprietary.",
+    ],
+  },
+  "storytold/lightcraft": {
+    description:
+      "LightCraft adalah implementasi ulang Lightroom dalam Rust: sunting foto non-destruktif, pipeline warna 32-bit, dan jalur MCP supaya agen bisa mengemudikan aplikasi yang sama.",
+    highlights: [
+      "README: setiap penyesuaian tidak mengubah berkas asli. Pipeline yang disebut scene-referred, wide-gamut, dan 32-bit float, dengan panel cahaya, warna, efek, masking, preset, dan pustaka foto.",
+      "Native di macOS, Windows, dan Linux, plus peramban lewat WebAssembly. Lencana README menyebut MCP-ready serta lisensi MIT atau Apache-2.0.",
+      "API GitHub pada 8 Oktober 2026 menandai lisensi Apache-2.0, 3.168 bintang, dan 930 fork. Repo dibuat 30 September 2026. Unduhan: getartcraft.com/apps/lightcraft.",
+      "Lencana status README berbunyi young and moving fast. Anggap ini alat yang masih bergerak, bukan pengganti katalog Lightroom yang sudah lama dipakai produksi.",
+    ],
+  },
+  "NotProtonNot/NotProton": {
+    description:
+      "NotProton mencoba menghidupkan Steam Play di klien Steam macOS dengan sebagian komponen Proton dan CrossOver. Penulisnya menulis bahwa dokumentasinya masih tipis.",
+    highlights: [
+      "README: fungsi Steam Play ada di klien macOS tetapi tidak aktif. Alat ini menyalakannya dan memport sebagian komponen Proton Valve ke macOS.",
+      "Ditujukan untuk klien Steam build 1788652215 atau 1790121765, plus CrossOver Preview 20261006 atau 2026082. Build Rosetta yang disarankan; build FEX disebut masih awal.",
+      "Lisensi GPL-3.0, ditulis Swift. API GitHub pada 8 Oktober 2026: 264 bintang dan 21 fork. Repo dibuat 23 September 2026.",
+      "Penulis meminta pembaca melihat NOTICE untuk lisensi, dan menulis bahwa dokumentasi belum lengkap karena rilisnya telat dari rencana.",
+    ],
+  },
+  "storytold/printcraft": {
+    description:
+      "Repo storytold/printcraft memuat PdfCraft, implementasi ulang Acrobat dalam Rust untuk membaca, menyusun, menggabung, memecah, dan mengamankan PDF secara offline.",
+    highlights: [
+      "README menamai aplikasinya PdfCraft, menautkan unduhan ke getartcraft.com/apps/pdfcraft, dan juga menunjuk github.com/storytold/pdfcraft.",
+      "Janji README: tanpa akun, tanpa telemetri, tanpa cloud, dan tetap jalan offline. Platform yang disebut: macOS, Windows, Linux, FreeBSD, dan web.",
+      "Penyimpanan disebut append-only supaya byte asli tidak diutak-atik, dengan penulisan atomic. Daftar bagian README mencakup komentar, formulir, lapisan, dan lampiran.",
+      "Lencana README: MIT atau Apache-2.0. API GitHub pada 8 Oktober 2026 untuk repo ini: 2.469 bintang, 839 fork, lisensi tercatat Apache-2.0. Nama dan logo ArtCraft di docs/brand disebut merek dagang dan tidak ikut terbuka.",
     ],
   },
 };

@@ -5004,6 +5004,49 @@ link: "https://www.anthropic.com",
     date: "2026-10-07",
     featured: false,
   },
+  {
+    slug: "ling-3-1-flash",
+    name: "Ling 3.1 Flash",
+    tagline: "Model teks InclusionAI: indeks 41, cepat di kelas harganya, masih proprietary",
+    tags: ["InclusionAI", "Proprietary", "Reasoning", "API"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 8.8 },
+      { label: "Harga/Performa", value: 8.3 },
+    ],
+    aa_intelligence_index: 41,
+    aa_price_input: 0.3,
+    aa_price_output: 0.9,
+    aa_synced_at: "2026-10-08",
+    summary:
+      "Artificial Analysis, dicek 8 Oktober 2026, memberi Ling 3.1 Flash intelligence index 41 dan menandainya proprietary. Di kelas harganya ia peringkat 5 dari 182, dengan keluaran 211,4 token per detik pada API InclusionAI.",
+    pros: [
+      "Intelligence index 41, di atas median 13 untuk model reasoning di kisaran harga yang sama (sumber: Artificial Analysis)",
+      "Cepat di kelasnya: 211,4 token per detik dan waktu ke token pertama 1,79 detik pada API InclusionAI",
+      "Harga API InclusionAI $0,30 masukan dan $0,90 keluaran per juta token, diskon cache 80 persen, biaya rata-rata $0,99 per tugas indeks",
+      "Vercel AI Gateway mencatat 560 miliar parameter total dan 25 miliar aktif per token, serta masa gratis sampai 13 Oktober 2026",
+    ],
+    cons: [
+      "Artificial Analysis menandainya proprietary. Bobot tidak tersedia untuk dijalankan sendiri",
+      "Sangat verbose: evaluasi indeks menghasilkan 220 juta token keluaran, median kelasnya 100 juta",
+      "Halaman Artificial Analysis yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Hanya teks. AA menulis model ini tidak menerima gambar. Jendela konteks juga tidak seragam: AA mencatat 1 juta token, Vercel AI Gateway mencatat 262 ribu token",
+    ],
+    verdict:
+      "Pilihan yang masuk akal untuk pekerjaan teks yang butuh jawaban cepat di bawah satu dolar per juta token keluaran, selama tagihan verbosity-nya diawasi. Untuk tugas gambar, atau untuk menjalankan model di server sendiri, ini bukan paketnya.",
+    body: [
+      "Ling 3.1 Flash adalah model reasoning dari InclusionAI. Halaman Artificial Analysis, dibaca 8 Oktober 2026, menandai rilis 1 Oktober 2026, status proprietary, masukan teks, keluaran teks, dan jendela konteks 1,0 juta token. FAQ di halaman yang sama menyebut 560 miliar parameter. Catatan Vercel AI Gateway yang terbit 30 September 2026 memakai angka yang lebih rinci: 560 miliar parameter total dan 25 miliar aktif per token, jendela 262 ribu token di gateway, dan pemakaian gratis sampai 13 Oktober 2026. Dua sumber itu tidak bertentangan pada ukuran kasar modelnya, tetapi berbeda pada jendela konteks yang benar-benar terbuka di tiap jalur. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, diakses 8 Oktober 2026.) Intelligence index-nya 41 pada indeks versi 4.3.2. Di kelas perbandingan — model reasoning pada kisaran harga yang sama — AA menaruhnya di peringkat 5 dari 182, di atas median 13. Itu peringkat kelas, bukan peringkat keseluruhan papan. Kecepatan keluaran 211,4 token per detik pada API InclusionAI, median kelasnya 110,9. Waktu ke token pertama 1,79 detik, median kelasnya 2,17 detik. Harga API InclusionAI $0,30 per juta token masukan dan $0,90 per juta token keluaran. Kartu biaya menyebut diskon cache 80 persen dan $0,99 per tugas indeks. FAQ AA juga menyebut tarif campuran $0,19 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran. Median harga masukan di kelasnya $0,25, jadi masukan model ini sedikit di atas median; harga keluaran $0,90 berada di median kelas.",
+      "Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding. Yang tercatat soal kelakuan jawaban adalah verbosity: saat indeks dijalankan, model menghasilkan 220 juta token keluaran, dibanding median 100 juta di kelasnya. Jawaban panjang bisa berguna pada penalaran berlapis, dan sekaligus membesarkan tagihan pada tugas agen yang berulang. AA juga menulis bahwa model ini tidak memproses gambar. Klaim vendor di luar dua sumber di atas — termasuk janji bobot terbuka yang beredar di ringkasan pihak ketiga — tidak dipakai di sini, karena halaman AA pada 8 Oktober masih menandai bobot sebagai tidak tersedia.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dipakai minggu ini adalah harga di bawah satu dolar per juta token keluaran, kecepatan di atas median kelasnya, dan masa gratis Vercel yang catatannya berlaku sampai 13 Oktober. Masa gratis itu promosi gateway, bukan harga permanen. Karena bobot belum publik menurut AA, tim yang membutuhkan model di mesin sendiri belum bisa pindah dari API. Karena masukan hanya teks, alur yang butuh gambar tetap harus di model lain. Dan karena keluaran indeksnya panjang, kuota yang kelihatan murah per token bisa membengkak per tugas. Pakai untuk draf teks, rangkuman, dan agen yang toleran terhadap jawaban panjang; ukur satu tugas nyata sebelum mengunci pipeline produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/ling-3-1-flash",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-08",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

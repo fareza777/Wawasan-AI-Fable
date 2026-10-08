@@ -5000,6 +5000,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "pusat-data-ai-tidak-boleh-ganggu-air-dan-energi",
+    title: "Menkomdigi: Pusat Data AI Boleh Dibangun, Asal Air dan Listrik Warga Tidak Terganggu",
+    excerpt:
+      "Meutya Hafid menolak ide memperlambat AI, lalu mensyaratkan safety by design dan lokasi pusat data yang tidak mengambil air serta energi layanan publik. CNBC melaporkan proyek BDx di Jatiluhur dihentikan sementara karena izin belum lengkap.",
+    category: "Analisis",
+    date: "2026-10-08",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kamis 8 Oktober 2026, dua laporan mengangkat keterangan pers yang sama di Kantor Kementerian Komunikasi dan Digital, Jakarta, Rabu 7 Oktober. ANTARA Mataram pukul 05.10 WIB menulis posisi Menkomdigi Meutya Hafid terhadap gagasan memperlambat pengembangan AI. CNBC Indonesia pukul 06.45 WIB, ditulis Novina Putri Bestari, mengangkat syarat lain dari pertemuan itu: pusat data AI tidak boleh mengganggu air dan energi warga, dengan proyek BDx di Jatiluhur sebagai kasus yang sudah terhenti sementara.",
+          "ANTARA News sendiri sudah menurunkan kutipan air dan energi pada Rabu 7 Oktober pukul 23.42 WIB, pewarta Farhan Arda Nugraha. Jadi berita Kamis pagi bukan pengumuman baru, melainkan dua sisi dari satu konferensi pers: jangan memperlambat teknologinya, dan jangan menaruh gedung komputasinya di tempat yang mengambil kebutuhan dasar.",
+        ],
+      },
+      {
+        heading: "Air, energi, dan titik yang harus dipilih",
+        paragraphs: [
+          "Kutipan yang dipakai ANTARA lengkapnya begini. Meutya mengatakan Indonesia punya kebutuhan kemampuan komputasi yang memerlukan pusat data, tetapi pada saat yang sama harus melihat kecukupan energi. Energi tidak boleh terganggu untuk hal lain, terutama layanan publik, dan kebutuhan air juga tidak boleh terganggu. CNBC mencatat kalimat yang sejalan dari pertemuan yang sama, plus penutup yang lebih pendek: ekonomi kreatif digital tetap tumbuh, tetapi air dan energi tetap terjaga.",
+          "Cara menyeimbangkannya, menurut ANTARA, adalah koordinasi lintas sektor sebelum izin pembangunan terbit. Contoh yang disebut Meutya dari sisi Komdigi: hitung kebutuhan komputasi, hitung pengguna internet, lalu cari titik yang konektivitasnya baik. Kutipannya soal lokasi sama konkretnya: ada atau tidak air di situ, cukup atau tidak energinya, dan baik atau tidak sinyalnya. Ia juga memakai kata buffer. Indonesia tidak boleh dibanjiri pusat data, lokasi harus dipilih, pembangunan harus sesuai kebutuhan, dan kelebihannya punya trade-off.",
+        ],
+      },
+      {
+        heading: "Jatiluhur berhenti, Nongsa dikeluhkan",
+        paragraphs: [
+          "CNBC menaruh pernyataan itu di samping kasus yang sudah berjalan. Proyek pusat data AI milik BDx di Jatiluhur, tulis CNBC, dihentikan sementara oleh pemerintah provinsi Jawa Barat karena izin pembangunan belum tersedia, termasuk Analisis Mengenai Dampak Lingkungan dan Persetujuan Bangunan Gedung. Artikel itu tidak mencantumkan nilai investasi, nama pejabat daerah, atau tanggal penghentian. Yang tertulis adalah alasan izin.",
+          "CNBC juga menulis bahwa pusat data di Batam ditengarai menjadi penyebab masalah air di permukiman Nongsa, dan air di wilayah itu dikeluhkan mati selama berbulan-bulan. Kata ditengarai penting: ini laporan tentang dugaan dan keluhan, bukan temuan audit yang dikutip CNBC. Artikel yang sama menambah bahwa di Amerika Serikat dan Eropa sejumlah proyek dikritik dan ditolak karena air dan listrik, tanpa menyebut nama proyek. Meutya, masih menurut CNBC, tidak menutup pintu pembangunan. Ekonomi kreatif digital Indonesia tumbuh cepat, jadi pusat data masih bisa dipertimbangkan, asal lokasinya tidak mengganggu kebutuhan air, energi, dan masyarakat di sekitarnya.",
+        ],
+      },
+      {
+        heading: "Bukan perlambatan, melainkan safety by design",
+        paragraphs: [
+          "Di laporan terpisah Kamis pagi, ANTARA Mataram mengutip posisi Meutya terhadap seruan memperlambat AI. Ia mengatakan Indonesia amat setuju bukan dengan perlambatan AI, melainkan dengan safety by design yang lebih hati-hati, dan itu pasti memakan waktu. Ia menilai laju perkembangan AI saat ini terlalu cepat, dan mengatakan teknologi secanggih itu tidak boleh berjalan tanpa mitigasi yang cukup. Kalimat penutupnya: Indonesia termasuk negara yang mendorong agar inovasi AI dilakukan lebih hati-hati dan dengan safety by design.",
+          "ANTARA menulis bahwa sejumlah pemimpin perusahaan teknologi global menyuarakan perlambatan karena risiko yang dinilai meningkat, tanpa menyebut nama. Penjelasan ANTARA tentang risiko itu bersifat umum: penyalahgunaan untuk senjata siber otomatis, disinformasi dalam skala besar, dan kekhawatiran soal keselarasan tujuan sistem yang sangat canggih. Itu konteks yang disusun redaksi, bukan daftar ancaman yang dibacakan Meutya dalam kutipan langsung. Yang bisa dilekatkan pada menteri adalah tiga hal: tidak mendorong perlambatan, menuntut waktu untuk mitigasi, dan memakai istilah safety by design.",
+        ],
+      },
+      {
+        heading: "Apa yang berubah untuk tim di Indonesia",
+        paragraphs: [
+          "Bagi tim yang sedang membangun produk AI, pidato ini tidak menambah kuota GPU dan tidak mencabutnya. Yang bertambah adalah kriteria lokasi. Pusat data yang tidak bisa menunjukkan air, listrik, dan izin — AMDAL dan PBG disebut eksplisit oleh CNBC dalam kasus Jatiluhur — bisa berhenti di tingkat provinsi meskipun narasi nasionalnya masih membuka investasi. Keluhan Nongsa, sekalipun masih berupa dugaan di laporan CNBC, menunjukkan bahwa debat ini sudah sampai ke air rumah tangga, bukan hanya ke slide investasi.",
+          "Safety by design yang disebut Meutya juga belum menjadi pasal yang bisa dikutip. Tidak ada draf, nomor pasal, atau tanggal terbit di dua laporan 8 Oktober itu. Yang ada adalah arah: inovasi boleh lanjut, asal mitigasinya tidak dilewati. Tim yang menjual otomasi ke layanan publik — air, listrik, administrasi — punya alasan praktis untuk mendokumentasikan apa yang terjadi bila modelnya salah, karena menteri yang mengurus sektor digital baru saja mengatakan layanan publik tidak boleh dikorbankan demi komputasi.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Kamis pagi ini pemerintah pusat berkata dua kalimat sekaligus. AI tidak perlu diperlambat, dan gedung yang menjalankannya tidak boleh mengambil air serta listrik yang masih dipakai warga. Proyek BDx di Jatiluhur, menurut CNBC, sudah menjadi contoh proyek yang berhenti sementara karena izin belum ada. Apakah proyek berikutnya lolos akan bergantung pada koordinasi izin yang Meutya minta, bukan pada slogan hub.",
+          "Catatan editorial: artikel ini disusun dari laporan ANTARA News, 7 Oktober 2026 pukul 23.42 WIB, oleh Farhan Arda Nugraha; laporan ANTARA Mataram, 8 Oktober 2026 pukul 05.10 WIB, pewarta yang sama; dan laporan CNBC Indonesia, 8 Oktober 2026 pukul 06.45 WIB, oleh Novina Putri Bestari. Kutipan Meutya Hafid diambil dari laporan-laporan itu, bukan dari transkrip mandiri. Status izin BDx, dugaan air di Nongsa, dan draf kebijakan safety by design bisa berubah; cek naskah kementerian dan pemerintah provinsi untuk versi yang berlaku.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
