@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-08T02:06:14.267Z",
+  "fetchedAt": "2026-10-08T07:51:09.377Z",
   "repos": [
     {
       "rank": 1,
@@ -29,27 +29,20 @@
       "githubUrl": "https://github.com/morluto/rea",
       "trendshiftUrl": "https://trendshift.io/repositories/82054",
       "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "MCP"
-      ],
+      "topics": [],
       "dateCreated": "2026-04-14T00:51:32Z"
     },
     {
       "rank": 3,
-      "fullName": "storytold/artcraft",
-      "owner": "storytold",
-      "repo": "artcraft",
-      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-      "githubUrl": "https://github.com/storytold/artcraft",
-      "trendshiftUrl": "https://trendshift.io/repositories/19042",
-      "language": "Rust",
-      "topics": [
-        "AI image generation",
-        "AI video generation",
-        "Image editing"
-      ],
-      "dateCreated": "2022-03-31T23:19:12Z"
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
     },
     {
       "rank": 4,
@@ -65,47 +58,74 @@
     },
     {
       "rank": 5,
-      "fullName": "docker/docker-agent",
-      "owner": "docker",
-      "repo": "docker-agent",
-      "description": "AI Agent Builder and Runtime by Docker Engineering",
-      "githubUrl": "https://github.com/docker/docker-agent",
-      "trendshiftUrl": "https://trendshift.io/repositories/22549",
-      "language": "Go",
+      "fullName": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "githubUrl": "https://github.com/storytold/artcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/19042",
+      "language": "Rust",
       "topics": [
-        "AI agent",
-        "MCP"
+        "AI image generation",
+        "AI video generation",
+        "Image editing"
       ],
-      "dateCreated": "2025-09-01T12:14:45Z"
+      "dateCreated": "2022-03-31T23:19:12Z"
     },
     {
       "rank": 6,
-      "fullName": "threerocks/hand-drawn-styles",
-      "owner": "threerocks",
-      "repo": "hand-drawn-styles",
-      "description": "Claude Code skill：把内容套进内置手绘画风配方,产出可直接复制的生图提示词。内置儿童涂色/极简线条/蜡笔童涂/吉卜力/小豆人涂鸦 5 种已验证画风。",
-      "githubUrl": "https://github.com/threerocks/hand-drawn-styles",
-      "trendshiftUrl": "https://trendshift.io/repositories/167277",
-      "language": "Python",
-      "topics": [
-        "AI image generation"
-      ],
-      "dateCreated": "2026-06-28T15:35:13Z"
+      "fullName": "shader-effects-inc/shaders",
+      "owner": "shader-effects-inc",
+      "repo": "shaders",
+      "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
+      "githubUrl": "https://github.com/shader-effects-inc/shaders",
+      "trendshiftUrl": "https://trendshift.io/repositories/286985",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-29T16:36:26Z"
     },
     {
       "rank": 7,
-      "fullName": "boykopovar/AnyPS5",
-      "owner": "boykopovar",
-      "repo": "AnyPS5",
-      "description": "Convert PS5 executables to run natively on Linux and Windows",
-      "githubUrl": "https://github.com/boykopovar/AnyPS5",
-      "trendshiftUrl": "https://trendshift.io/repositories/240094",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2026-08-03T21:30:25Z"
+      "fullName": "robbietilton/Compositor",
+      "owner": "robbietilton",
+      "repo": "Compositor",
+      "description": "The Photoshop alternative for Mac",
+      "githubUrl": "https://github.com/robbietilton/Compositor",
+      "trendshiftUrl": "https://trendshift.io/repositories/246426",
+      "language": "Swift",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-16T20:35:54Z"
     },
     {
       "rank": 8,
+      "fullName": "storytold/pdfcraft",
+      "owner": "storytold",
+      "repo": "pdfcraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/pdfcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/275798",
+      "language": "Rust",
+      "topics": [
+        "Document processing"
+      ],
+      "dateCreated": "2026-09-30T13:39:37Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "eternity4719/HowToLiveBetter",
+      "owner": "eternity4719",
+      "repo": "HowToLiveBetter",
+      "description": "354 条循证建议，覆盖长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter",
+      "trendshiftUrl": "https://trendshift.io/repositories/222292",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-09-07T01:53:36Z"
+    },
+    {
+      "rank": 10,
       "fullName": "storytold/lightcraft",
       "owner": "storytold",
       "repo": "lightcraft",
@@ -117,32 +137,6 @@
         "Image editing"
       ],
       "dateCreated": "2026-09-30T14:09:27Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "NotProtonNot/NotProton",
-      "owner": "NotProtonNot",
-      "repo": "NotProton",
-      "description": "Steam Play for macOS",
-      "githubUrl": "https://github.com/NotProtonNot/NotProton",
-      "trendshiftUrl": "https://trendshift.io/repositories/258013",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-09-23T01:55:23Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "storytold/printcraft",
-      "owner": "storytold",
-      "repo": "printcraft",
-      "description": "",
-      "githubUrl": "https://github.com/storytold/printcraft",
-      "trendshiftUrl": "https://trendshift.io/repositories/275798",
-      "language": "Rust",
-      "topics": [
-        "Document processing"
-      ],
-      "dateCreated": "2026-09-30T13:39:37Z"
     }
   ]
 }
