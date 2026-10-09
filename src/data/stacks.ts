@@ -4460,6 +4460,46 @@ export const stacks: Review[] = [
     date: "2026-10-08",
     featured: false,
   },
+  {
+    slug: "agent-memory",
+    name: "agent-memory",
+    tagline: "Memori jangka panjang agen berupa Markdown, dengan indeks lokal yang bisa dibangun ulang",
+    tags: ["Open Source", "Agen", "Memori", "CLI"],
+    score: 7.9,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 7.4 },
+      { label: "Pengalaman Pengguna", value: 7.5 },
+      { label: "Ekosistem & Integrasi", value: 8.1 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "agent-memory, repo tigerless-labs/agent-memory, menyimpan ingatan agen sebagai berkas Markdown dan menaruh indeks SQLite di sampingnya sebagai tembolok. Pada 9 Oktober 2026 ia duduk di peringkat delapan tren harian, dengan 2.782 bintang dan lisensi MIT.",
+    pros: [
+      "Sumber kebenarannya berkas yang bisa di-grep dan dimasukkan git. README menulis `rm -rf .index/ && mem rebuild` tidak menghapus pengetahuan",
+      "Recall mengembalikan jalur, ringkasan satu baris, dan skor. Isi penuh dibuka hanya saat tugasnya membutuhkan",
+      "Claude Code, Codex CLI, dan Muse Code disebut berbagi satu store. Ada juga server MCP `mem-mcp`",
+      "Lencana README: tanpa kunci API di dalam pustaka, Python 3.12+, versi 0.1.0. Lisensi MIT",
+    ],
+    cons: [
+      "Belum ada rilis PyPI. Pemasangan yang ditulis README adalah clone, lalu `uv sync --all-packages`",
+      "Pustaka tidak membawa klien LLM, tetapi distilasi meminjam CLI agen tuan rumah. Token model itu tetap ditagih",
+      "Angka LongMemEval di README adalah uji penulis pada tumpukan yang dibatasi, dan README sendiri mengatakan angka mutlaknya tidak sebanding dengan skor LongMemEval yang terbit",
+      "Wawasan AI tidak menjalankan `mem doctor` hari ini. Status READY yang dijanjikan setup masih klaim README",
+    ],
+    verdict:
+      "Masuk akal bagi orang yang sudah memakai Claude Code atau Codex dan ingin ingatan antar-sesi tetap berupa folder. Nilai alat ini ada di berkas yang bisa diaudit, dan tagihan model tuan rumah tidak hilang hanya karena pustakanya tidak meminta kunci.",
+    body: [
+      "agent-memory adalah runtime memori dari tigerless-labs. README yang dicek 9 Oktober 2026 mendeskripsikan satu store Markdown yang dipakai bersama Claude Code, Codex CLI, Muse Code, dan program lain yang bisa menjalankan perintah shell. Indeks SQLite di sebelah berkas itu disebut tembolok yang boleh dihapus. API GitHub hari yang sama mencatat 2.782 bintang, 142 fork, bahasa Python, lisensi MIT, dan 20 isu terbuka. Repo dibuat 1 September 2026. Trendshift menaruhnya di peringkat delapan tren harian. Lencana README memasang versi 0.1.0, Python 3.12 atau lebih baru, dan ketergantungan tanpa kunci API. Rilis PyPI disebut belum ada, jadi pemasangan dimulai dari `git clone`, lalu `uv sync --all-packages`.",
+      "Bentuk yang dijanjikan README cukup konkret. `mem recall` mengembalikan daftar L0: ringkasan satu baris, jalur, jangkar, dan skor, delapan entri secara bawaan. `mem read` membuka abstrak, kerangka, atau berkas penuh. `mem context` menggabungkan keduanya. Tiga jalur baca disebut: suntikan `MEMORY.md` di awal sesi, BM25 lewat indeks FTS5 dengan plugin vektor yang digabung RRF bila dipasang, dan direktori biasa lewat `ls` serta `grep`. Penulisan dipicu di batas percakapan. Jejak lengkap disalin lebih dulu. Pass tidur boleh menambah dan memperbarui; penghapusan hanya sampai sebagai usulan yang dikonfirmasi pengguna. `mem record`, `mem correct`, `mem supersede`, `mem merge`, dan `mem delete` disebut sebagai operasi manual. Store bawaan ada di `~/agent-memory-store`, dan bisa dipindah lewat `AGENT_MEMORY_STORE`.",
+      "Pemasangan ke agen yang ditulis README: `mem setup --host claude-code`, `mem setup --host codex`, atau `mem setup --host muse-code --provider openrouter`. Perintah yang berhasil disebut berakhir dengan `status: READY`. Setup ulang disebut aman dan tidak menduplikasi hook yang dikelolanya. `--mcp` menambahkan server stdio `agent-memory`. README juga menulis bahwa Codex tetap memakai batas persetujuan MCP-nya, dan store di luar workspace Codex membutuhkan akar yang boleh ditulis atau `--add-dir`. Bagian uji di README mengukur LongMemEval-S pada tumpukan terbatas, 120 episode, dengan `claude -p` memakai Haiku 4.5 sebagai tuan rumah dan satu juri Sonnet 5. Angka yang dicetak: agent-memory 127 dari 240 atau 52,9 persen, MemCore 86 dari 240 atau 35,8 persen, dan tanpa memori 7 dari 120 atau 5,8 persen. README sendiri menulis bahwa angka mutlak itu tidak sebanding dengan skor LongMemEval yang sudah terbit, karena tumpukannya dibatasi 12 sesi per episode, dan perbandingan sistem-ke-sistem mengubah tulis sekaligus baca. Wawasan AI tidak mengulang uji tersebut.",
+      "Untuk pengembang di Indonesia yang sudah membayar Claude atau Codex, ini jalur memori yang bisa di-backup seperti folder proyek. Berkasnya tetap di mesin sendiri, dan pustakanya tidak menambah kunci API baru. Biaya yang tersisa ada di model tuan rumah, karena README menulis penilaian dipinjam dari CLI agen itu. Versi 0.1.0 dan ketiadaan paket PyPI berarti pemasangan masih lewat checkout. Sebelum mengunci workflow tim, jalankan `mem init`, tulis satu memori, hapus `.index`, lalu `mem rebuild`, persis contoh di README. Kalau berkasnya kembali, baru sambungkan hook. Kalau tidak, biarkan ia di papan tren.",
+    ],
+    link: "https://github.com/tigerless-labs/agent-memory",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-09",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

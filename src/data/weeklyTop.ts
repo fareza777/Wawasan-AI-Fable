@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript, sekitar 10,6 ribu bintang. Agen yang didukung termasuk Claude Code, Codex, Cursor, Gemini CLI, Windsurf, dan Copilot CLI.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 9 Oktober 2026: 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -2965,6 +2965,56 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Janji README: tanpa akun, tanpa telemetri, tanpa cloud, dan tetap jalan offline. Platform yang disebut: macOS, Windows, Linux, FreeBSD, dan web.",
       "Penyimpanan disebut append-only supaya byte asli tidak diutak-atik, dengan penulisan atomic. Daftar bagian README mencakup komentar, formulir, lapisan, dan lampiran.",
       "Lencana README: MIT atau Apache-2.0. API GitHub pada 8 Oktober 2026 untuk repo ini: 2.469 bintang, 839 fork, lisensi tercatat Apache-2.0. Nama dan logo ArtCraft di docs/brand disebut merek dagang dan tidak ikut terbuka.",
+    ],
+  },
+  "wuyoscar/AISafetyHot-Hub": {
+    description:
+      "AI Safety HOT Hub adalah arsip publik dan petunjuk MCP untuk menanyai ringkasan berita serta daftar makalah keamanan AI. Teks pilihan di repo berlisensi CC BY-NC 4.0; artikel asli tetap milik penerbitnya.",
+    highlights: [
+      "README menautkan MCP publik di https://aisafetyhot.com/api/mcp, tanpa login. Contoh perintahnya untuk Codex dan Claude Code, plus klien lain lewat Streamable HTTP.",
+      "Alat yang disebut README: daftar terbaru, pencarian, topik, satu konten, papan peristiwa, satu kisah, dan laporan harian, mingguan, atau bulanan.",
+      "Lencana README: laporan harian terbit pukul 08.00 waktu Beijing. Cuplikan di README yang dibaca 9 Oktober 2026 bertanggal 2026-10-09 dan menyebut 12 dinamika.",
+      "Berkas LICENSE: teks pilihan harian, ulasan makalah, dan indeks memakai CC BY-NC 4.0, dengan atribusi AI Safety HOT. API GitHub pada 9 Oktober 2026: 631 bintang, 5 fork, SPDX NOASSERTION, dibuat 1 Oktober 2026.",
+    ],
+  },
+  "kamubaba-i/KAMUCL": {
+    description:
+      "KAMUCL adalah peluncur Minecraft Java berbasis Electron. README membatasi unduhan yang sudah diterima ke Windows x64 dan macOS ARM64, dengan lisensi MIT yang hanya meliputi kontribusi asli proyek.",
+    highlights: [
+      "README: Electron 44.3.0, Vue, dan Three.js. Instance terpisah, pemasangan Vanilla, Fabric, Forge, NeoForge, dan Quilt, plus akun Microsoft, offline, dan Yggdrasil.",
+      "Sumber daya bisa dicari dari Modrinth dan CurseForge. Ada lemari kulit, diagnostik, dan jalur sambung langsung yang penjelasannya ada di docs/features/friend-direct-connect.md.",
+      "Mac yang disebut README: macOS 13 atau lebih baru, Apple Silicon, tanda tangan ad-hoc, belum notarized. Windows disebut belum memakai sertifikat penanda tangan komersial, jadi SmartScreen bisa memperingatkan penerbit yang tidak dikenal.",
+      "LICENSE membatasi MIT pada kontribusi asli KAMUCL dan menunjuk THIRD_PARTY_NOTICES.md untuk kode pihak ketiga. API GitHub pada 9 Oktober 2026: 217 bintang, 15 fork, SPDX NOASSERTION. Repo dibuat 6 September 2026.",
+    ],
+  },
+  "robbietilton/Compositor": {
+    description:
+      "Compositor adalah editor gambar gratis untuk Mac yang disusun mengikuti alur compositing Photoshop: lapisan, topeng, seleksi, dan berkas PSD, dengan folder proyek yang bisa ditulis agen.",
+    highlights: [
+      "README mensyaratkan macOS 26.0 atau lebih baru pada Mac Apple Silicon. Unduhan disebut lewat robbietilton.com/compositor, GitHub Releases, atau `brew install --cask robbietilton-compositor`.",
+      "Impor yang disebut: JPEG, PNG, HEIC, TIFF, SVG, RAW, serta PSD dan PSB 8-bit RGB. README menulis CMYK tidak didukung. Folder, topeng, mode campuran, dan teks horizontal sederhana tetap bisa disunting; vektor lain dan teks vertikal menjadi piksel.",
+      "Agen dan skrip bisa menulis proyek `.comp`: folder lapisan PNG plus manifes, dan proyek yang sedang terbuka diperbarui saat berkas itu ditulis. Panduannya di docs/writing-comp-files.md.",
+      "Lisensi MIT, ditulis Swift. API GitHub pada 9 Oktober 2026: 13.387 bintang dan 1.217 fork. Repo dibuat 16 September 2026. README juga menyebut pembaruan otomatis yang ditandatangani dan dinotariskan.",
+    ],
+  },
+  "tigerless-labs/agent-memory": {
+    description:
+      "agent-memory menyimpan memori jangka panjang agen sebagai berkas Markdown, dengan indeks lokal yang boleh dihapus dan dibangun ulang. Pustaka ini tidak meminta kunci API.",
+    highlights: [
+      "README: Claude Code, Codex CLI, dan Muse Code berbagi satu store. Perintah `mem recall` mengembalikan jalur berkas. Isi penuh dibuka lewat `mem read`, sesuai kedalaman yang diminta.",
+      "Tiga jalur baca yang disebut: suntikan MEMORY.md, BM25 lewat FTS5 dengan plugin vektor opsional, dan direktori biasa yang bisa dibaca `ls` serta `grep`.",
+      "Pass tidur boleh menambah dan memperbarui. Penghapusan, menurut README, hanya sampai sebagai usulan yang dikonfirmasi. `rm -rf .index/ && mem rebuild` diklaim tidak menghapus pengetahuan karena berkas Markdown yang menjadi sumber.",
+      "Lencana README: versi 0.1.0, Python 3.12+, belum ada rilis PyPI. Lisensi MIT. API GitHub pada 9 Oktober 2026: 2.782 bintang dan 142 fork. Repo dibuat 1 September 2026.",
+    ],
+  },
+  "yi1108/printfilm": {
+    description:
+      "PRINTFILM adalah platform untuk membuat video pendek dan drama AI: naskah menjadi storyboard, gambar, video, lalu berkas jadi. README menaruh suara di dalam keluaran video Seedance.",
+    highlights: [
+      "Dua jalur produk di README: drama dengan aset peran, adegan, dan properti yang dipakai ulang, serta video pendek dengan lebih dari 20 templat gaya. Mode `full` menggabungkan gambar, video, dan komposit; `image_text` berhenti di gambar diam.",
+      "Tumpukan yang disebut: Python 3.12, FastAPI, PostgreSQL, Redis, React 19, dan FFmpeg. Docker Compose menarik citra publik. Antarmuka pengguna di localhost:8080, admin di 8081, API di 8000.",
+      "Teks, gambar, dan video pada edisi sumber terbuka diarahkan ke TokenFree New API. README menulis tanpa kunci hanya `ARK_MOCK=true`, cukup untuk melihat antarmuka. Penagihan opsional dan disebut mati secara bawaan.",
+      "Lisensi MIT, versi README 0.2.0. API GitHub pada 9 Oktober 2026: 4.826 bintang dan 571 fork. Repo dibuat 10 September 2026. Situs yang ditautkan: printfilm.com.",
     ],
   },
 };

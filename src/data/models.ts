@@ -5047,6 +5047,49 @@ link: "https://www.anthropic.com",
     date: "2026-10-08",
     featured: false,
   },
+  {
+    slug: "claude-haiku-5-5",
+    name: "Claude Haiku 5.5 (Max)",
+    tagline: "Indeks 43 di kelas harganya, keluaran cepat, jawaban pertama pada upaya Max masih lama",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "API"],
+    score: 7.9,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.2 },
+      { label: "Kecepatan", value: 7.2 },
+      { label: "Harga/Performa", value: 8.6 },
+    ],
+    aa_intelligence_index: 43,
+    aa_price_input: 0.1,
+    aa_price_output: 0.5,
+    aa_synced_at: "2026-10-09",
+    summary:
+      "Artificial Analysis, dicek 9 Oktober 2026, memberi Claude Haiku 5.5 (Max) intelligence index 43 dan menandainya proprietary. Di kelas harganya ia peringkat 2 dari 182, dengan keluaran 240,6 token per detik pada API Anthropic.",
+    pros: [
+      "Intelligence index 43, di atas median 13 untuk model di kisaran harga yang sama (sumber: Artificial Analysis)",
+      "Keluaran 240,6 token per detik, di atas median kelas 109,6, peringkat kecepatan 9 dari 182 pada API Anthropic",
+      "Harga yang dipasang AA: $0,10 masukan dan $0,50 keluaran per juta token, diskon cache 90 persen, biaya rata-rata $0,21 per tugas indeks",
+      "Anthropic, 7 Oktober 2026: untuk prompt sampai 100.000 token harga itu 90 persen lebih rendah dari Haiku 4.5, dan sekitar 90 persen permintaan Haiku sebelumnya jatuh di keranjang itu",
+    ],
+    cons: [
+      "FAQ Artificial Analysis menyebut waktu ke token pertama 266,73 detik pada varian Max. Judul latensi di halaman yang sama menyebut angka itu waktu ke token jawaban pertama dan sudah memasukkan waktu berpikir. Median kelasnya 2,16 detik",
+      "Sangat verbose: evaluasi indeks menghasilkan 440 juta token keluaran, median kelasnya 100 juta",
+      "Halaman Artificial Analysis yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Di atas 100.000 token, tabel harga Anthropic naik menjadi $0,50 masukan dan $2,50 keluaran per juta token. Bobot tidak tersedia",
+    ],
+    verdict:
+      "Masuk akal untuk tugas pendek berulang yang prompt-nya di bawah 100.000 token, selama upaya Max tidak dipakai pada jalur yang harus menjawab dalam beberapa detik. Untuk agen coding yang panjang, harga tier kedua dan verbosity-nya perlu diukur dulu pada satu pekerjaan nyata.",
+    body: [
+      "Claude Haiku 5.5 diumumkan Anthropic pada 7 Oktober 2026 sebagai model kecil termurah dan, menurut mereka, tercepat yang pernah mereka rilis. Halaman Artificial Analysis untuk varian Max, dibaca 9 Oktober 2026, menandai rilis tanggal yang sama, status proprietary, masukan teks dan gambar, keluaran teks, jendela konteks 1,0 juta token, dan mode reasoning. FAQ di halaman itu menulis Anthropic tidak membuka jumlah parameter. Identifier API yang dipasang Anthropic adalah `claude-haiku-5-5`. Dokumentasi platform yang dicek bersamaan mencatat keluaran maksimum 128 ribu token dan knowledge cutoff Juni 2026. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, diakses 9 Oktober 2026.) Intelligence index-nya 43 pada indeks versi 4.3.2. FAQ halaman itu menaruhnya di atas median 13 untuk model reasoning pada kisaran harga yang sama, dan kartu kelasnya menulis peringkat 2 dari 182. Itu peringkat kelas, bukan peringkat keseluruhan papan. Kecepatan keluaran 240,6 token per detik pada API Anthropic, median kelasnya 109,6, peringkat kecepatan 9 dari 182. Harga yang dipasang kartu AA $0,10 per juta token masukan dan $0,50 per juta token keluaran, dengan diskon cache 90 persen. Median harga masukan di kelasnya $0,25 dan median keluaran $0,90. Biaya rata-rata per tugas indeks $0,21. FAQ juga menyebut tarif campuran $0,08 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Dua angka di halaman itu perlu dibaca bersama, karena keduanya mudah tertukar dengan kata cepat. Keluaran 240,6 token per detik mengukur token setelah potongan pertama tiba. FAQ menulis waktu ke token pertama 266,73 detik, sementara judul bagian latensi menyebut metrik itu waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Median kelas untuk angka itu 2,16 detik. Verbosity-nya juga tinggi: saat indeks dijalankan, model menghasilkan 440 juta token keluaran, median kelasnya 100 juta, peringkat verbosity 63 dari 182. Upaya Max adalah varian yang AA pakai untuk indeks 43. Anthropic menulis Haiku 5.5 adalah Haiku pertama dengan pengaturan effort, dan catatan kaki pengumuman mereka mengatakan model ini yang tercepat pada kecepatan standar tiap model, sementara mode cepat Opus masih lebih kencang.",
+      "Harga resmi ada di tabel pengumuman 7 Oktober, dan tabel itu punya dua kolom. Sampai 100.000 token: cache read $0,01, cache write $0,125, masukan $0,10, keluaran $0,50. Di atas 100.000 token: $0,05, $0,625, $0,50, dan $2,50. Anthropic menulis Haiku 5.5 berharga 90 persen lebih rendah dari Haiku 4.5 pada permintaan sampai 100.000 token dan 50 persen lebih rendah di atas batas itu, lalu memperkirakan biaya rata-rata sekitar 75 persen lebih rendah karena sekitar 90 persen permintaan Haiku 4.5 jatuh di keranjang pertama. Catatan yang sama mengatakan tokenizer baru memakai sedikit lebih banyak token per tugas. Klaim benchmark di pengumuman, yang perlu dibaca sebagai angka vendor, meliputi OSWorld 2.1 subset offline 72,4 persen, Humanity's Last Exam 45,9 persen tanpa alat dan 57,4 persen dengan alat, serta Terminal-Bench 4.0 39,2 persen. Untuk pengembang di Indonesia, kombinasi yang bisa dicoba minggu ini adalah harga dasar di bawah satu dolar per juta token keluaran pada prompt pendek, lalu ukur waktu sampai jawaban pertama pada tingkat effort yang benar-benar dipakai. Prompt panjang jatuh ke tarif kedua. Jawaban indeks yang panjang bisa membesarkan tagihan pada agen yang berulang. Karena bobot tidak tersedia, jalur self-host belum ada.",
+    ],
+    link: "https://artificialanalysis.ai/models/claude-haiku-5-5",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-09",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

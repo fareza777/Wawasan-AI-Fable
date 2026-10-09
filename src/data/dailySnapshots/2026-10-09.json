@@ -1,0 +1,151 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-09T02:02:22.568Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "wuyoscar/AISafetyHot-Hub",
+      "owner": "wuyoscar",
+      "repo": "AISafetyHot-Hub",
+      "description": "每天的 AI 安全精选和论文清单（md / bib / json），附 Agent 接入说明 · AI Safety HOT",
+      "githubUrl": "https://github.com/wuyoscar/AISafetyHot-Hub",
+      "trendshiftUrl": "https://trendshift.io/repositories/281028",
+      "language": "TeX",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-10-01T11:33:59Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "kamubaba-i/KAMUCL",
+      "owner": "kamubaba-i",
+      "repo": "KAMUCL",
+      "description": "MC启动器",
+      "githubUrl": "https://github.com/kamubaba-i/KAMUCL",
+      "trendshiftUrl": "https://trendshift.io/repositories/286068",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-06T16:10:15Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "robbietilton/Compositor",
+      "owner": "robbietilton",
+      "repo": "Compositor",
+      "description": "The Photoshop alternative for Mac",
+      "githubUrl": "https://github.com/robbietilton/Compositor",
+      "trendshiftUrl": "https://trendshift.io/repositories/246426",
+      "language": "Swift",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-16T20:35:54Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "githubUrl": "https://github.com/storytold/artcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/19042",
+      "language": "Rust",
+      "topics": [
+        "AI image generation",
+        "AI video generation",
+        "Image editing"
+      ],
+      "dateCreated": "2022-03-31T23:19:12Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "tigerless-labs/agent-memory",
+      "owner": "tigerless-labs",
+      "repo": "agent-memory",
+      "description": "",
+      "githubUrl": "https://github.com/tigerless-labs/agent-memory",
+      "trendshiftUrl": "https://trendshift.io/repositories/214454",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "AI memory"
+      ],
+      "dateCreated": "2026-09-01T21:52:29Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "tigerless-labs/autoharness",
+      "owner": "tigerless-labs",
+      "repo": "autoharness",
+      "description": "Autoharness — a self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
+      "githubUrl": "https://github.com/tigerless-labs/autoharness",
+      "trendshiftUrl": "https://trendshift.io/repositories/68941",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant",
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-09T21:05:42Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "yi1108/printfilm",
+      "owner": "yi1108",
+      "repo": "printfilm",
+      "description": "PRINTFILM：AI 科普视频与漫剧创作平台",
+      "githubUrl": "https://github.com/yi1108/printfilm",
+      "trendshiftUrl": "https://trendshift.io/repositories/227054",
+      "language": "Python",
+      "topics": [
+        "Voice agent",
+        "AI image generation",
+        "AI video generation",
+        "Workflow automation"
+      ],
+      "dateCreated": "2026-09-10T02:08:47Z"
+    }
+  ]
+}

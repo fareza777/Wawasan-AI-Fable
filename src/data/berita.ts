@@ -5052,6 +5052,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "gemini-gratis-hanya-flash-lite-mulai-9-oktober",
+    title: "Akun Gemini Gratis Tinggal Flash-Lite, Mulai 9 Oktober",
+    excerpt:
+      "Halaman bantuan Google menyatakan perubahan akses model di aplikasi Gemini untuk akun pribadi tanpa langganan mulai berlaku 9 Oktober. Setelah berlaku, baris tanpa paket hanya mencantumkan Flash-Lite.",
+    category: "Analisis",
+    date: "2026-10-09",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Jumat 9 Oktober 2026 adalah tanggal yang ditulis Google sendiri untuk awal perubahan akses model di aplikasi Gemini. Halaman bantuan Gemini Apps, dibaca hari ini, menyatakan perubahan ketersediaan model untuk pemakaian dengan akun pribadi mulai Oktober 2026. Kalimat waktunya lebih sempit dari sekadar bulan ini: perubahan mulai berlaku untuk pengguna tanpa langganan AI pada 9 Oktober. Pengguna AI Plus, masih menurut halaman yang sama, seharusnya menerima email yang menjelaskan kapan perubahan itu berlaku untuk akun mereka.",
+          "IDN Times sudah menurunkan laporan pada 8 Oktober pukul 13.02 WIB, judulnya tentang pembatasan model canggih di Gemini gratis mulai 9 Oktober. Laporan itu berguna sebagai tulisan berbahasa Indonesia yang mengedarkan tabel yang sama. Tanggal berlaku untuk paket berbayar di laporan itu tidak sama dengan kalimat di halaman bantuan, dan bagian itu perlu dipisah sebelum dipakai sebagai jadwal.",
+        ],
+      },
+      {
+        heading: "Tabel yang terpasang setelah perubahan berlaku",
+        paragraphs: [
+          "Halaman bantuan menaruh tabel di bawah kalimat model availability after these changes take effect. Wawasan AI membaca tanda centang pada gambar di tabel itu. Baris tanpa paket: Flash-Lite tercantum, Flash kosong, Pro kosong. Baris AI Plus: Flash-Lite dan Flash tercantum, Pro kosong. Baris AI Pro dan AI Ultra: Flash-Lite, Flash, dan Pro sama-sama tercantum.",
+          "Jadi akun pribadi tanpa langganan, setelah perubahan pada akun itu berlaku, memilih dari satu keluarga model. Flash dan Pro tetap ada di tabel, tetapi hanya pada baris berbayar. AI Plus mempertahankan Flash di samping Flash-Lite. Pro, pada tabel ini, duduk di AI Pro dan AI Ultra.",
+        ],
+      },
+      {
+        heading: "9 Oktober untuk akun gratis, email untuk AI Plus",
+        paragraphs: [
+          "Kalimat waktu di halaman bantuan hanya menempel pada satu kelompok: pengguna tanpa langganan AI, mulai 9 Oktober. Untuk AI Plus, Google menulis bahwa pelanggan seharusnya menerima email tentang kapan perubahan berlaku bagi mereka. Tabelnya menjelaskan keadaan setelah perubahan itu sampai di akun yang bersangkutan. Halaman ini tidak menulis bahwa setiap akun AI Plus berpindah pada 9 Oktober.",
+          "IDN Times, pada laporan 8 Oktober, menulis bahwa pelanggan AI Plus juga kehilangan Pro mulai 9 Oktober, sambil tetap mendapat Flash-Lite dan Flash. Bagian Flash-Lite dan Flash itu selaras dengan tabel. Tanggal 9 Oktober untuk paket Plus tidak muncul di kalimat waktu halaman bantuan yang dicek hari ini. Laporan yang sama juga mencetak harga dolar dan konversi rupiah untuk AI Plus serta AI Pro. Halaman bantuan yang dicek hari ini tidak memuat angka harga, jadi editorial tidak mengulang konversi itu.",
+        ],
+      },
+      {
+        heading: "Tingkat upaya, dan batas yang sudah lebih dulu ada",
+        paragraphs: [
+          "Di bawah tabel, halaman bantuan menulis bahwa tiap model yang tersedia juga punya tingkat upaya rendah, menengah, dan tinggi. Upaya yang lebih tinggi menambah kemampuan menyelesaikan tugas dan membuat jawaban lebih tuntas, dan sekaligus memakai lebih banyak jatah.",
+          "Bagian batas pemakaian di halaman yang sama duduk di bawah judul previous changes. Google menulis batas itu mulai 17 Mei 2026 untuk pengguna di atas 18 tahun, lalu untuk pengguna di bawah 18 tahun pada 24 Juli 2026. Gemini berpindah ke batas berbasis komputasi yang disegarkan setiap lima jam sampai jatah mingguan tercapai. Perhitungannya memasukkan kerumitan prompt, fitur yang dipakai, dan panjang obrolan. Tabel batas di bagian itu: tanpa paket memakai batas standar, AI Plus dua kali batas standar, AI Pro empat kali, dan AI Ultra lima kali atau dua puluh kali lebih tinggi dari AI Pro tergantung langganan. Bagian ini menjelaskan jatah yang sudah berjalan. Tabel model yang mulai 9 Oktober ada di bagian atas halaman yang sama.",
+        ],
+      },
+      {
+        heading: "Apa yang berubah untuk pemakai di Indonesia",
+        paragraphs: [
+          "Halaman bantuan tidak menuliskan pengecualian negara. Yang ditulis adalah aplikasi Gemini saat dipakai dengan akun pribadi. Akun pribadi tanpa langganan yang membuka Gemini dari Indonesia masuk baris tanpa paket, kecuali ada pemberitahuan regional yang tidak terpasang di halaman ini. Setelah perubahan sampai di akun itu, pemilih modelnya tinggal Flash-Lite. Pekerjaan yang selama ini diserahkan ke Flash atau Pro dari akun gratis perlu pindah ke paket yang masih mencantumkan model itu, atau pindah ke alat lain.",
+          "Halaman yang sama tidak membahas lisensi Workspace. Tim kantor yang masuk lewat akun organisasi tidak bisa memakai tabel ini sebagai jadwal mereka. Pelanggan AI Plus juga belum punya satu tanggal publik di halaman bantuan: email yang dijanjikan Google itulah yang menyebut kapan Pro hilang dari akun mereka. Harga dalam rupiah tetap harus dibaca di halaman langganan akun masing-masing, karena bantuan yang dicek hari ini tidak memasang tarif.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 9 Oktober, perubahan yang sudah bertanggal adalah akun pribadi tanpa langganan. Setelah perubahan berlaku, tabel Google hanya menyisakan Flash-Lite di baris itu. AI Plus menunggu email. AI Pro dan AI Ultra, pada tabel yang sama, tetap melihat ketiga model.",
+          "Catatan editorial: artikel ini disusun dari halaman bantuan Gemini Apps, Changes to Gemini model access and limits, yang dibaca 9 Oktober 2026, dan dari laporan IDN Times pada 8 Oktober 2026 pukul 13.02 WIB. Tanda centang dibaca dari tabel di halaman bantuan. Harga, jadwal Workspace, dan email pelanggan Plus bisa berbeda menurut akun; cek halaman bantuan dan kotak masuk langganan untuk versi yang berlaku pada akunmu.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

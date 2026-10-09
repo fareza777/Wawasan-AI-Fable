@@ -5233,6 +5233,53 @@ export const repos: Review[] = [
     updatedAt: "2026-10-08",
     featured: false,
   },
+  {
+    slug: "rea",
+    name: "REA",
+    tagline: "Satu MCP dan CLI supaya agen memeriksa aplikasi sampai ke biner, di mesin sendiri",
+    tags: ["MCP", "Open Source", "Agen", "TypeScript"],
+    score: 8.2,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.0 },
+      { label: "Fitur & Ekstensibilitas", value: 8.6 },
+      { label: "Komunitas & Momentum", value: 9.1 },
+      { label: "Dokumentasi", value: 8.2 },
+      { label: "Kesiapan Produksi", value: 7.0 },
+    ],
+    summary:
+      "REA duduk di peringkat pertama tren harian 9 Oktober 2026. Ia mendaftarkan satu server MCP dan CLI supaya agen memeriksa biner, aplikasi JavaScript, assembly .NET, dan situs di mesin sendiri, lalu mengembalikan bukti beserta batas tiap temuan.",
+    highlights: [
+      "Pemasangan yang ditulis README: `npx rea-agents setup`, dengan Node.js 22.x mulai 22.19, 24.x mulai 24.11, atau 26 ke atas",
+      "Analisis statis JavaScript dan .NET membaca berkas yang diberikan. Analisis native memakai Hopper, Ghidra, atau IDA yang sudah ada; setup bisa menawarkan pemasangan Hopper",
+      "Tabel README juga mencakup ELF offline, bytecode EVM, tangkapan jaringan HAR, APK Android, firmware, dan perilaku proses",
+      "API GitHub pada 9 Oktober 2026: 27.420 bintang, 3.130 fork, lisensi MIT, bahasa TypeScript. Repo dibuat 14 April 2026. Situsnya rea.tools",
+    ],
+    pros: [
+      "Analisis disebut berjalan lokal, jadi biner dan kode yang diperiksa tidak harus diunggah ke layanan pihak ketiga",
+      "Temuan dikembalikan bersama bukti dan batasnya, lalu CLI memakai alur yang sama dengan MCP",
+      "Satu pemasangan mencakup beberapa agen. README menyebut Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build",
+      "Momentumnya konkret: 27.420 bintang pada 9 Oktober 2026 menurut API GitHub, dan hari itu Trendshift menaruhnya di peringkat satu",
+    ],
+    cons: [
+      "Memeriksa perangkat lunak pihak ketiga tetap bergantung pada lisensi produk itu dan hukum di tempat kamu menjalankannya",
+      "Analisis native tidak berdiri sendiri. Hopper, Ghidra, atau IDA harus ada, kecuali untuk JavaScript statis",
+      "README menulis proyek ini berubah cepat dan meminta pembaruan lewat `rea update` atau `npx rea-agents@latest setup`",
+      "Angka pada studi kasus, termasuk 3.205 kasus x86 pada DX-Ball, adalah klaim README. Wawasan AI tidak mengulang uji itu hari ini",
+    ],
+    verdict:
+      "Layak dipasang kalau kamu ingin agen menjelaskan aplikasi yang memang berhak kamu pelajari, dengan bukti yang bisa dibuka lagi. Jangan mengarahkannya ke produk orang lain hanya karena sebuah fitur terlihat menarik.",
+    body: [
+      "Pada 9 Oktober 2026 REA berada di peringkat pertama tren harian Trendshift. README-nya mendeskripsikan satu MCP untuk memeriksa biner, aplikasi, dan perilaku runtime. Kalimat pembukanya: lihat fitur yang kamu suka, pahami cara kerjanya sampai ke tingkat biner. Perintah yang dipasang di bagian atas adalah `npx rea-agents setup`. API GitHub yang dicek hari yang sama mencatat 27.420 bintang, 3.130 fork, 62 isu terbuka, bahasa TypeScript, lisensi MIT, dan halaman rumah rea.tools. Repo dibuat 14 April 2026. Push terakhir yang tercatat API jatuh pada 9 Oktober 2026.",
+      "Yang bisa dicek dari README, tanpa menjalankan alatnya, adalah bentuk pemeriksaannya. Setup mendaftarkan server MCP dan instruksi alur, dengan cadangan konfigurasi yang sudah ada. Agen yang disebut di bagian pemasangan: Claude Code, Codex, Cursor, Gemini CLI, Grok Build, dan agen lain di dokumen instalasi. Analisis berjalan lokal. JavaScript statis tidak membutuhkan Hopper atau Ghidra. Analisis native bisa memakai instalasi Hopper, Ghidra, atau IDA yang sudah ada, dan setup dapat menawarkan pemasangan Hopper setelah disetujui. Tabel target di README mencakup biner native, tata letak ELF offline, bytecode EVM, catatan crash Linux, aplikasi JavaScript dan Electron, situs lewat peramban keluarga Chrome, tangkapan HAR, assembly .NET, APK Android lewat JADX, firmware, paket sumber daya, dan perilaku proses. Pemeriksaan statis membaca berkas yang diberikan. Tangkapan runtime menjalankan target dengan izin pengguna.",
+      "Syarat runtime yang ditulis README juga konkret. Node.js 22.x mulai 22.19, 24.x mulai 24.11, atau 26 ke atas, plus npm. CLI bisa dipasang global lewat `npm install --global rea-agents`. Contoh perintah JavaScript di README memakai `npx -y rea-agents@latest analyze-javascript-application` pada direktori aplikasi yang diekstrak. Untuk biner besar, variabel `REA_GHIDRA_STARTUP_TIMEOUT_MS` disebut sebagai cara menaikkan batas waktu mulai Ghidra. Tiga studi kasus ditautkan: perhitungan pan suara DX-Ball, jembatan papan klip Notion, dan perhitungan peluru TH04. Pada DX-Ball, README menulis rekonstruksi lolos 3.205 kasus x86 asli dan mereproduksi 63 byte fungsi yang dikompilasi. Itu klaim proyek, ditautkan ke studi kasus di rea.tools, dan Wawasan AI tidak mengulangnya.",
+      "Bagi pengembang di Indonesia, bagian yang langsung berguna adalah bukti yang menempel pada temuan, plus fakta bahwa pemeriksaan berjalan di mesin sendiri. Tim yang memelihara aplikasi internal, berkas Electron yang kode sumbernya hilang, atau pustaka yang lisensinya mengizinkan pemeriksaan, punya alasan praktis untuk mencoba MCP ini sebelum menyalin perilaku dari ingatan. Batasnya sama praktis. README mengundang pembaca meniru fitur dari aplikasi yang mereka lihat. Undangannya itu tidak mengubah lisensi aplikasi tersebut. Pakai REA pada sistem yang memang berhak kamu pelajari. Mulai dari satu aplikasi JavaScript milikmu sendiri, baca bukti yang dikembalikan, dan baru pertimbangkan penyedia native kalau berkasnya memang biner. Angka bintang 27.420 tidak membuat pemeriksaan perangkat lunak orang lain menjadi izin.",
+    ],
+    link: "https://github.com/morluto/rea",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-09",
+    updatedAt: "2026-10-09",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
