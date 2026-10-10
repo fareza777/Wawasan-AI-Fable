@@ -47,6 +47,9 @@ const SLUG_ICONS: Record<string, string> = {
   rea: "https://github.com/morluto.png",
   "agent-memory": "https://github.com/tigerless-labs.png",
   "claude-haiku-5-5": "https://cdn.simpleicons.org/anthropic",
+  xtool: "https://github.com/xtool-org.png",
+  "mattpocock-skills": "https://github.com/mattpocock.png",
+  "gemini-4-argon": "https://cdn.simpleicons.org/google",
 };
 
 function githubOrgIcon(link: string): string | null {

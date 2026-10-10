@@ -5104,6 +5104,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "indosat-intelligence-suite-300-model",
+    title: "Indosat dan F5 Membuka Intelligence Suite, Satu Pintu untuk 300-an Model",
+    excerpt:
+      "Siaran pers Indosat pada 9 Oktober menempatkan lebih dari 300 model, termasuk Sahabat-AI, di satu platform dengan tiga skema bayar. Target awalnya 50 bisnis, dengan harga promosi sepanjang tahun.",
+    category: "Analisis",
+    date: "2026-10-10",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Singapura, 9 Oktober 2026, adalah tanggal yang ditulis Indosat Ooredoo Hutchison di siaran persnya sendiri. Perseroan, berkode ISAT, dan F5, berkode FFIV, mengumumkan Indosat Intelligence Suite. Kalimat pembukanya menaruh Asia Tenggara pada perpindahan dari eksperimen ke penerapan, lalu menawarkan satu lapisan tata kelola supaya perusahaan tidak membangun sendiri setiap lapis infrastruktur AI.",
+          "Suara.com menurunkan laporan pada 10 Oktober pukul 07.54 WIB. Intinya sama dengan siaran pers: lebih dari 300 model dalam satu layanan, diumumkan di Singapura pada 9 Oktober, dan ditujukan bagi perusahaan yang tidak ingin merakit infrastruktur dari nol. Angka yang dipakai di bawah ini mengikuti teks siaran pers Indosat berbahasa Indonesia yang dibaca 10 Oktober, kecuali saat sebuah kalimat hanya muncul di laporan detik.",
+        ],
+      },
+      {
+        heading: "Yang tertulis di siaran pers",
+        paragraphs: [
+          "Studi yang dikutip siaran pers adalah laporan 2026 oleh McKinsey, Singapore Economic Development Board, dan Tech in Asia. Angkanya: 81 persen perusahaan di enam pasar Asia Tenggara sudah beralih dari eksperimen ke uji coba atau perluasan skala. Siaran pers tidak merinci enam pasar itu satu per satu.",
+          "Platformnya menyatukan lebih dari 300 model terbuka dan tertutup dalam satu antarmuka. Nama yang disebut: Sahabat-AI, model yang di-host Indosat, dan model global yang terhubung. Permintaan diarahkan menurut biaya, kualitas, dan latensi. Token diubah menjadi kredit yang bisa dialokasikan ke model, aplikasi, dan tim. Untuk organisasi yang mensyaratkan lokasi data, Sahabat-AI dan tier yang di-host Indosat disebut bisa memproses beban kerja di negara tempat organisasi beroperasi, dan kebijakan bisa menentukan beban kerja mana yang boleh pergi ke model global.",
+        ],
+      },
+      {
+        heading: "Tiga cara bayar, target lima puluh organisasi",
+        paragraphs: [
+          "Tiga skema yang ditulis siaran pers: Pay as You Go, Unified Enterprise Credit, dan Dedicated Capacity. Kalimat penjelasnya memetakan skema itu dari pengembang dan bisnis yang sedang tumbuh sampai perusahaan besar, instansi pemerintah, dan organisasi di sektor teregulasi. Tidak ada tarif rupiah atau dolar di bagian ini.",
+          "Saat diluncurkan, platform ditargetkan menjangkau 50 bisnis dan organisasi. Akses awal memakai harga promosi yang tersedia sepanjang tahun. Siaran pers tidak menyebut nama 50 organisasi itu dan tidak mencetak besaran diskonnya. Alamat yang diberikan mulai hari pengumuman: intelligencesuite-ai.ioh.co.id, untuk katalog model, informasi harga, dokumentasi, dan permintaan akses.",
+        ],
+      },
+      {
+        heading: "Bagian F5, dan kalimat yang hanya ada di detik",
+        paragraphs: [
+          "François Locoh-Donou, Chairman, President, dan CEO F5, dikutip soal satu lapisan tata kelola di antara aplikasi perusahaan dan infrastruktur AI. Bagian keamanan menyebut F5 BIG-IP Next for Kubernetes untuk isolasi tenant dan perlindungan kontainer, penyeimbang beban yang memperhitungkan GPU untuk latensi termasuk waktu ke token pertama dan throughput, serta kapabilitas F5 AI Security terhadap ancaman yang siaran pers sebut OWASP Top 10 LLM, kebocoran data, dan ancaman AI lain. Chad Whalen, Chief Revenue Officer F5, dikutip soal perusahaan yang masih kesulitan pindah dari uji coba ke produksi karena harus menyeimbangkan kecepatan, kedaulatan, tata kelola, dan kepastian biaya.",
+          "detikInet pada 9 Oktober pukul 11.45 WIB melaporkan acara di JW Marriott Hotel Singapore South Beach dan mengutip Vikram Sinha di luar paragraf siaran pers yang dibaca hari ini. Dua angka yang hanya muncul di laporan itu: dampak tahunan 100 juta dolar AS yang disebutnya sudah dipresentasikan ke dewan dari penerapan AI di Indosat, serta gambaran 2028 berupa 5.000 karyawan dan 25.000 agen AI, dari perusahaan yang ia sebut kini memiliki 4.000 karyawan. Siaran pers Indosat yang dicek 10 Oktober tidak memuat kedua angka itu, jadi editorial menandainya sebagai kutipan acara menurut detik, bukan sebagai lampiran siaran pers.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dicek dari Indonesia",
+        paragraphs: [
+          "Bagian yang langsung menyangkut tim di sini adalah Sahabat-AI dan tier hosting Indosat untuk beban kerja yang harus tinggal di negara organisasi, plus kebijakan yang memisahkan beban kerja mana yang boleh ke model global. Itu janji siaran pers, belum hasil uji Wawasan AI. Katalog dan harga duduk di situs yang diumumkan, dan harga promosi disebut berlaku sepanjang tahun tanpa tabel di dalam siaran pers.",
+          "Target 50 organisasi pada peluncuran juga berarti ini belum pintu yang sudah terbuka untuk setiap usaha kecil. Pay as You Go disebut untuk pengembang dan bisnis yang sedang tumbuh, tetapi aksesnya lewat permintaan, bukan lewat akun yang langsung hidup. Tim yang butuh kepastian lokasi data sebaiknya membaca tier hosting di katalog, lalu membandingkannya dengan kebijakan yang benar-benar terpasang di akun, karena kalimat 'di negara tempat organisasi beroperasi' masih harus dicek per kontrak.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 10 Oktober, yang sudah bertanggal publik adalah kemitraan 9 Oktober: lebih dari 300 model, tiga skema bayar, target 50 organisasi, dan harga promosi sepanjang tahun. Angka 81 persen adalah kutipan studi yang siaran pers pasang, bukan sensus editorial.",
+          "Catatan editorial: artikel ini disusun dari siaran pers Indosat berbahasa Indonesia, Indosat dan F5 Luncurkan Indosat Intelligence Suite, bertanggal 9 Oktober 2026, dari laporan Suara.com pada 10 Oktober 2026 pukul 07.54 WIB, dan dari laporan detikInet pada 9 Oktober 2026 pukul 11.45 WIB untuk kutipan acara yang tidak ada di teks siaran pers. Harga, daftar model, dan syarat residensi data bisa berubah di katalog; cek intelligencesuite-ai.ioh.co.id untuk versi yang berlaku.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

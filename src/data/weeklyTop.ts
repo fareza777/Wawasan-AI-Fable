@@ -75,12 +75,12 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
   },
   "mattpocock/skills": {
     description:
-      "Kumpulan skill engineering TypeScript/AI dari direktori .claude Matt Pocock — teruji harian untuk coding agent, bukan teori.",
+      "mattpocock/skills adalah skill harian Matt Pocock untuk agen coding: berkas kecil yang bisa diubah, dipasang sebagai plugin yang memperbarui diri atau sebagai salinan yang disunting manual. README meminta satu jalur per agen.",
     highlights: [
-      "Kumpulan skill yang diambil langsung dari direktori .claude Matt Pocock — engineer TypeScript/AI yang dikenal di komunitas.",
-      "Skill engineering praktis yang sudah teruji harian oleh Matt sendiri untuk coding agent-nya — bukan teori, melainkan hasil pemakaian nyata.",
-      "Fokus pada alur TypeScript dan AI tooling — debugging, refactoring, dokumentasi, dan workflow spesifik komunitas JS/TS.",
-      "Bisa dipasang ke Claude Code atau agen AI lain — bermanfaat untuk developer yang ingin workflow coding-nya distandardkan.",
+      "Dua jalur di README: plugin yang memperbarui diri, atau skills.sh yang menyalin berkas ke proyek dan diperbarui manual. Memasang keduanya disebut menggandakan setiap skill.",
+      "Perintah plugin yang ditulis README mencakup Claude Code, Codex, dan GitHub Copilot. Gemini CLI dipasang manual dari folder engineering dan productivity. Agen lain lewat `npx skills@latest add mattpocock/skills`.",
+      "Setup sekali per repo lewat `/setup-matt-pocock-skills`: pelacak isu, label triase, dan tempat menyimpan dokumen. README menaruh `/grill-me` dan `/grill-with-docs` sebagai skill yang ia pakai sebelum mengubah kode.",
+      "Lisensi MIT, bahasa utama Shell. API GitHub pada 10 Oktober 2026: 282.801 bintang, 23.694 fork, 161 isu terbuka. Repo dibuat 3 Februari 2026, push terakhir 9 Oktober 2026. Situsnya aihero.dev/skills. README menyebut buletin sekitar 60.000 pembaca; itu angka penulis, bukan pengukuran Wawasan AI.",
     ],
   },
   "mahlernim/google-timeline-visualizer": {
@@ -2449,12 +2449,12 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
   },
   "tigerless-labs/autoharness": {
     description:
-      "Layer skill self-learning untuk Claude Code (MIT, Python) — belajar dari sesi nyata, menggabungkan skill serupa (bukan sekadar numpuk), memperbaruinya saat dipakai, dan memangkas yang sudah tidak terpakai, tanpa daemon atau benchmark terpisah.",
+      "AutoHarness adalah plugin Claude Code yang menyuling skill dari sesi yang sedang dikerjakan, menggabungkan yang sejenis, dan memangkas yang tidak terpakai. Ia hanya menyentuh skill yang ia tulis sendiri.",
     highlights: [
-      "Skill-nya dipelajari dari sesi Claude Code yang sedang berjalan (bukan dataset terpisah): setiap episode kerja didistilasi jadi skill lewat background pass, atau manual via `/learn` setelah kamu memecahkan masalah.",
-      "Reflektor membandingkan skill baru dengan yang sudah ada dan 'melipat' (fold) skill dengan skenario sama jadi satu — sehingga layer tidak membengkak dengan near-duplicate, dan tercatat skill mana yang absorbsi yang mana.",
-      "Validasi in-use, bukan benchmark: skill tetap hidup kalau dipakai di turn berikutnya (loads over requests yang tersedia), tanpa oracle di active path dan tanpa token yang dihabiskan untuk eval khusus — fokus pada bukti pemakaian nyata.",
-      "Sketsa dampak dari blog HAL (swyx): 'same model, different harness' — 42% → 78% di CORE-Bench. autoharness hanya menyentuh skill yang ia tulis sendiri, sehingga skill manual kamu atau skill dari plugin lain sama sekali tidak diubah.",
+      "Pemasangan yang ditulis README, diketik di kotak Claude Code: `/plugin marketplace add tigerless-labs/autoharness`, lalu `/plugin install autoharness@autoharness`, kemudian `/reload-plugins`. Berkas skill mendarat di `.claude/skills/`.",
+      "plugin.json yang dibaca 10 Oktober 2026: versi 0.5.3, lisensi MIT. Lencana README mensyaratkan Python 3.11 atau lebih baru sebagai `python3` di PATH, dan platform Linux serta macOS. Hook disebut mati bila Python yang ketemu lebih tua.",
+      "`/learn` menyuling sesi yang sedang terbuka. README menulis penghapusan dan penggabungan hanya berlaku pada skill yang plugin ini hasilkan.",
+      "API GitHub pada 10 Oktober 2026: 10.896 bintang, 607 fork, 81 isu terbuka, bahasa Python. Repo dibuat 9 Juni 2026, push terakhir 9 Oktober 2026. Angka CORE-Bench di README tidak diulang di sini karena halaman itu menautkannya ke makalah harness lain, bukan ke uji yang Wawasan AI jalankan.",
     ],
   },
   "tigerless-labs/cost-xray": {
@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 9 Oktober 2026: 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 10 Oktober 2026: 47.744 bintang dan 7.834 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3015,6 +3015,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Tumpukan yang disebut: Python 3.12, FastAPI, PostgreSQL, Redis, React 19, dan FFmpeg. Docker Compose menarik citra publik. Antarmuka pengguna di localhost:8080, admin di 8081, API di 8000.",
       "Teks, gambar, dan video pada edisi sumber terbuka diarahkan ke TokenFree New API. README menulis tanpa kunci hanya `ARK_MOCK=true`, cukup untuk melihat antarmuka. Penagihan opsional dan disebut mati secara bawaan.",
       "Lisensi MIT, versi README 0.2.0. API GitHub pada 9 Oktober 2026: 4.826 bintang dan 571 fork. Repo dibuat 10 September 2026. Situs yang ditautkan: printfilm.com.",
+    ],
+  },
+  "MemorySquidBlade/svlhyvjj": {
+    description:
+      "svlhyvjj adalah repositori kecil yang README-nya memasarkan akses ChatGPT gratis, utilitas bypass, dan pustaka prompt jailbreak, lalu meminta pembaca menjalankan skrip jarak jauh dari PowerShell administrator. Ini bukan alat yang diulas untuk dipasang.",
+    highlights: [
+      "API GitHub pada 10 Oktober 2026: 532 bintang, 0 fork, tidak ada bahasa yang terdeteksi, tidak ada lisensi SPDX, ukuran repositori 9 KB. Dibuat 29 Agustus 2026. Push terakhir 14 September 2026.",
+      "Topik yang terpasang di repo mencakup jailbreak dan jailbreaking, plus serangkaian label ChatGPT. Trendshift menaruhnya di peringkat dua tren harian 10 Oktober.",
+      "README menjanjikan metode akses gratis, utilitas bypass, dan pustaka prompt jailbreak, lalu menaruh perintah yang mengunduh skrip dari luar dan menjalankannya. Wawasan AI tidak menyalin perintah itu dan tidak menguji isinya.",
+      "Jangan menjalankannya. Repositori sebesar ini dengan pemasang jarak jauh tidak bisa diaudit dari berkas yang terlihat di halaman GitHub.",
+    ],
+  },
+  "xtool-org/xtool": {
+    description:
+      "xtool menyusun, menandatangani, dan memasang aplikasi iOS dari paket SwiftPM di Linux, WSL, dan macOS. Deskripsi repositori juga menyebut Windows. Ini pengganti sebagian alur Xcode, bukan emulator iPhone.",
+    highlights: [
+      "README: membangun paket SwiftPM menjadi aplikasi iOS, menandatangani dan memasangnya, serta berbicara dengan Apple Developer Services. Subperintah yang tercetak di bantuan: setup, auth, sdk, new, dev, ds, devices, install, uninstall, dan launch.",
+      "Pustaka XKit bisa dipasang sebagai dependensi SwiftPM. Cuplikan README memakai `.upToNextMinor(from: \"1.2.0\")`. Rilis GitHub terbaru yang dicek 10 Oktober 2026 adalah 1.21.0, terbit 5 Oktober 2026.",
+      "Catatan rilis 1.21.0: target penyebaran untuk host Darwin menjadi macOS 14.0 dan iOS 17.0. Catatan yang sama menulis toolchain yang kompatibel dengan Swift 6 tetap mensyaratkan macOS 14.5 atau lebih baru.",
+      "Lisensi MIT, ditulis Swift. API GitHub pada 10 Oktober 2026: 5.742 bintang, 168 fork, 69 isu terbuka. Repo dibuat 17 November 2024, push terakhir 6 Oktober 2026. Situsnya xtool.sh. README menautkan panduan pasang Linux/Windows dan macOS; halaman panduan itu tidak termuat saat dicek hari ini.",
+    ],
+  },
+  "totec448-spec/chat-on-steroids": {
+    description:
+      "Chat On Steroids adalah workspace lokal supaya obrolan ChatGPT bisa membaca berkas, menjalankan terminal, dan memecah tugas ke pekerja, lewat MCP. README menulis ia tidak dimaksudkan untuk melewati batas pemakaian.",
+    highlights: [
+      "Unduhan yang ditautkan README: pemasang Windows x64, DMG macOS Apple silicon, dan paket deb Linux x64, plus halaman semua rilis. Aplikasi ini disebut beta independen.",
+      "README: pekerja, Goal, Loop, serta Compact dan Resume mengatur pekerjaan yang belum selesai. Kalimat yang sama menulis fitur itu tidak menambah kuota atau akses model, dan tidak boleh dipakai menghindari batas laju.",
+      "Pemakaian tetap mengikuti batas akun ChatGPT. README menautkan ketentuan OpenAI dan menulis ChatGPT Work serta Codex berbagi batas pemakaian.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 10 Oktober 2026: 4.339 bintang, 575 fork, 22 isu terbuka. Repo dibuat 22 Agustus 2026, push terakhir 9 Oktober 2026.",
+    ],
+  },
+  "mu-zi-lee/magpie-our-free-model": {
+    description:
+      "magpie-our-free-model adalah plugin pihak ketiga yang menyambungkan Magpie ke proyek Our Free Model. README menulis ini bukan rilis resmi penulis aslinya, dan kanal akun tetap mengikuti aturan proyek hulu serta penyedia model.",
+    highlights: [
+      "README: adaptasi Magpie dari Ebony-Vinyl/dsh-our-free-model, versi 0.8.0, nama paket magpie-our-free-model. Yang diklaim baru: antarmuka penyedia Magpie, pengelolaan layanan otomatis, pintu manajemen peramban, dan uji kompatibilitas.",
+      "Pemasangan yang ditulis README: clone, lalu `magpie plugin add` pada folder itu, atau unduh ZIP dan tambahkan dari halaman plugin. Direktori pasang disebut harus tetap di tempat yang sama.",
+      "Konsol jarak jauh disebut tanpa akun Cloudflare. README menulis tautan `/open/` berlaku sepuluh menit dan sekali pakai, serta kanal jarak jauh paling lama 30 menit. Login kanal model tetap ada di luar janji itu.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub pada 10 Oktober 2026: 72 bintang dan 3 fork. Repo dibuat 9 Oktober 2026, push terakhir hari yang sama. Wawasan AI tidak memasang plugin ini dan tidak memeriksa apakah kanal gratisnya sesuai ketentuan penyedia.",
     ],
   },
 };

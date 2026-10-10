@@ -5280,6 +5280,53 @@ export const repos: Review[] = [
     updatedAt: "2026-10-09",
     featured: false,
   },
+  {
+    slug: "xtool",
+    name: "xtool",
+    tagline: "Menyusun dan memasang aplikasi iOS dari SwiftPM di luar alur Xcode penuh",
+    tags: ["Swift", "Open Source", "iOS", "CLI"],
+    score: 7.6,
+    scores: [
+      { label: "Kemudahan Setup", value: 6.8 },
+      { label: "Fitur & Ekstensibilitas", value: 8.2 },
+      { label: "Komunitas & Momentum", value: 7.6 },
+      { label: "Dokumentasi", value: 7.2 },
+      { label: "Kesiapan Produksi", value: 7.2 },
+    ],
+    summary:
+      "xtool duduk di peringkat empat tren harian 10 Oktober 2026. Ia membangun paket SwiftPM menjadi aplikasi iOS, menandatanganinya, dan memasangnya dari Linux, WSL, atau macOS. Rilis terakhir yang dicek hari ini adalah 1.21.0.",
+    highlights: [
+      "Subperintah README: setup, auth, sdk, new, dev, ds, devices, install, uninstall, dan launch",
+      "XKit bisa dipakai sebagai pustaka SwiftPM. Cuplikan README masih mencontohkan `.upToNextMinor(from: \"1.2.0\")`",
+      "Rilis 1.21.0, 5 Oktober 2026: target penyebaran host Darwin menjadi macOS 14.0 dan iOS 17.0. Catatan rilis menulis toolchain Swift 6 tetap butuh macOS 14.5 atau lebih baru",
+      "API GitHub pada 10 Oktober 2026: 5.742 bintang, 168 fork, 69 isu terbuka, lisensi MIT, bahasa Swift. Repo dibuat 17 November 2024",
+    ],
+    pros: [
+      "Alur iOS yang biasa terkunci di Xcode bisa dimulai dari Linux atau WSL, menurut README",
+      "Perintahnya terpisah: proyek baru, bangun dan jalankan, akun pengembang, SDK Darwin, lalu pasang ke perangkat",
+      "Lisensi MIT dan pustaka XKit membuka jalan bagi aplikasi lain yang ingin berbicara ke layanan pengembang Apple",
+      "Rilis 1.21.0 terbit 5 Oktober 2026, lima hari sebelum snapshot hari ini, jadi proyeknya masih bergerak",
+    ],
+    cons: [
+      "Ini bukan Xcode lengkap. README membatasi janji pada membangun, menandatangani, memasang, dan layanan pengembang",
+      "Catatan rilis 1.21.0 menaikkan target host Darwin. Mesin macOS yang lebih tua dari syarat toolchain Swift 6 tidak ikut naik",
+      "Cuplikan dependensi di README masih menulis 1.2.0, sementara tag terbaru adalah 1.21.0. Pembaca perlu membandingkan keduanya",
+      "Halaman panduan pasang di xtool.sh tidak termuat saat dicek 10 Oktober 2026, jadi langkah unduh tidak diverifikasi di luar README",
+    ],
+    verdict:
+      "Layak dicoba bagi yang sudah menulis Swift dan ingin membangun aplikasi iOS dari mesin Linux atau WSL. Akun pengembang Apple dan SDK Darwin tetap bagian dari pekerjaan; xtool tidak menghapus keduanya.",
+    body: [
+      "Pada 10 Oktober 2026 xtool berada di peringkat empat tren harian Trendshift. Deskripsi repositori xtool-org/xtool berbunyi pengganti Xcode lintas platform: membangun dan menyebarkan aplikasi iOS dengan SwiftPM di Linux, Windows, dan macOS. Ringkasan README lebih sempit: Linux, WSL, dan macOS, dengan standar terbuka, bukan salinan penuh Xcode. Tiga centang di README: membangun paket SwiftPM menjadi aplikasi iOS, menandatangani dan memasang aplikasi itu, serta berinteraksi dengan Apple Developer Services secara terprogram. API GitHub yang dicek hari yang sama mencatat 5.742 bintang, 168 fork, 69 isu terbuka, bahasa Swift, lisensi MIT, dan halaman rumah xtool.sh. Repo dibuat 17 November 2024. Push terakhir yang tercatat API jatuh pada 6 Oktober 2026.",
+      "Bantuan CLI yang dicetak README membagi perintah jadi tiga kelompok. Konfigurasi: setup, auth, dan sdk. Pengembangan: new, dev, dan ds. Perangkat: devices, install, uninstall, dan launch. Ada juga pustaka. README menunjukkan XKit sebagai dependensi SwiftPM, dengan cuplikan `.upToNextMinor(from: \"1.2.0\")`. Tag rilis yang dikembalikan API pada 10 Oktober berpuncak di 1.21.0, terbit 5 Oktober 2026, jadi angka pada cuplikan itu lebih tua daripada rilis yang sedang ditandai. Catatan 1.21.0 menulis perubahan yang memutus untuk host Darwin: target penyebaran xtool menjadi macOS 14.0 dan iOS 17.0. Kalimat berikutnya mengatakan hal itu seharusnya tidak mengganggu pengguna CLI, karena toolchain yang kompatibel dengan Swift 6 sudah mensyaratkan macOS 14.5 atau lebih baru, tetapi relevan bagi pemakai pustaka XKit dan XToolSupport. Wawasan AI tidak membangun aplikasi dengan xtool hari ini.",
+      "README menautkan dua panduan pasang, Linux/Windows dan macOS, plus tutorial aplikasi pertama. Halaman panduan Linux yang dibuka 10 Oktober tidak mengembalikan langkahnya; situs menampilkan pesan bahwa halaman itu butuh JavaScript, lalu kesalahan yang tidak dijelaskan. Karena itu uraian ini berhenti pada perintah yang tercetak di README dan pada catatan rilis, bukan pada daftar paket sistem yang belum terbaca. Deskripsi GitHub menyebut Windows, sementara ikhtisar README menulis Linux/WSL/macOS dan menautkan halaman yang judulnya memasang Linux/Windows. Kedua kalimat itu dibiarkan berdampingan sampai panduannya bisa dibaca.",
+      "Bagi pengembang di Indonesia yang mesin utamanya Windows atau Linux, bagian yang berguna adalah kemungkinan menyusun aplikasi iOS tanpa duduk seharian di Xcode. Batasnya sama konkret. Menandatangani aplikasi dan berbicara ke Apple Developer Services tetap membutuhkan akun serta SDK Darwin yang alat ini kelola, bukan menghapus gerbang Apple. Catatan rilis 1.20.0, terbit 21 September 2026, sudah meminta pemasangan ulang Darwin SDK di Linux. Anggap xtool sebagai CLI yang bergerak cepat di sekitar Swift 6, lalu cocokkan versi toolchain dengan catatan rilis sebelum mengunci alur tim. Lima ribu bintang tidak menggantikan uji pasang di satu perangkat yang memang kamu miliki.",
+    ],
+    link: "https://github.com/xtool-org/xtool",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-10",
+    updatedAt: "2026-10-10",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {

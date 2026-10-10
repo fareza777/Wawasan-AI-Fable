@@ -5090,6 +5090,49 @@ link: "https://www.anthropic.com",
     date: "2026-10-09",
     featured: false,
   },
+  {
+    slug: "gemini-4-argon",
+    name: "Gemini 4 Argon (High)",
+    tagline: "Indeks 53 dan peringkat intelijen 8 dari 227, kecepatan keluaran belum dipasang",
+    tags: ["Google", "Proprietary", "Reasoning", "API"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 7.2 },
+      { label: "Kecepatan", value: 6.4 },
+      { label: "Harga/Performa", value: 7.6 },
+    ],
+    aa_intelligence_index: 53,
+    aa_price_input: 2,
+    aa_price_output: 10,
+    aa_synced_at: "2026-10-10",
+    summary:
+      "Artificial Analysis, dicek 10 Oktober 2026, memberi Gemini 4 Argon (High) intelligence index 53 dan menandainya proprietary. Kartu intelijen menulis peringkat 8 dari 227. Kartu kecepatan menulis token keluaran per detik sebagai N/A.",
+    pros: [
+      "Intelligence index 53, di atas median 26 untuk model reasoning pada kisaran harga yang sama (sumber: Artificial Analysis)",
+      "Harga yang dipasang AA dari API Google: $2 masukan dan $10 keluaran per juta token, diskon cache 95 persen, biaya rata-rata $1,99 per tugas indeks",
+      "Masukan teks dan gambar, keluaran teks, jendela konteks 1 juta token, mode reasoning",
+      "FAQ halaman itu menulis tarif campuran $1,47 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran",
+    ],
+    cons: [
+      "Kartu kecepatan pada 10 Oktober menulis N/A untuk token keluaran per detik, jadi klaim cepat tidak bisa dipasang dari halaman ini",
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Verbosity: evaluasi indeks menghasilkan 110 juta token keluaran, median yang disebut FAQ 82 juta, peringkat verbosity 76 dari 227",
+      "Proprietary. FAQ menulis Google tidak membuka jumlah parameter, jadi tidak ada jalur bobot untuk server sendiri",
+    ],
+    verdict:
+      "Masuk akal untuk pekerjaan teks dan gambar yang memang butuh indeks di papan atas, selama tagihan diukur per tugas dan bukan dari harga per token saja. Selama kartu kecepatan masih N/A, jangan mengunci jalur yang harus menjawab dalam waktu tertentu.",
+    body: [
+      "Gemini 4 Argon (High) adalah varian reasoning dari Google yang halamannya di Artificial Analysis dibaca 10 Oktober 2026. Kartu di bagian atas menandai model proprietary, rilis September 2026, dan FAQ memperinci tanggal rilis 30 September 2026. Spesifikasi yang terpasang: masukan teks dan gambar, keluaran teks, jendela konteks 1,0 juta token, dan reasoning menyala. FAQ menulis Google tidak membuka jumlah parameter. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, diakses 10 Oktober 2026.) Intelligence index-nya 53 pada indeks versi 4.3.2. Kartu intelijen menulis peringkat 8 dari 227. Bagian kelas di halaman yang sama mengatakan ada 227 model di kelas perbandingan itu, dan FAQ menaruh skor 53 di atas median 26 untuk model reasoning pada kisaran harga yang sama. Itu peringkat pada kartu halaman ini, bukan urutan yang dihitung ulang editorial. Harga dari API Google yang dipasang kartu: $2 per juta token masukan dan $10 per juta token keluaran, diskon cache 95 persen. Biaya rata-rata per tugas indeks $1,99. Peringkat biaya pada kartu yang sama: 81 dari 227. FAQ menyebut tarif campuran $1,47 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis median harga masukan $2 dan median keluaran $10. Ringkasan perbandingan di halaman itu menyebut kedua harga itu moderately priced pada median tersebut. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Kecepatan tidak bisa diisi dari halaman ini. Kartu kecepatan menulis N/A pada token keluaran per detik dan menandai satuan kecepatannya tidak diketahui. Tidak ada waktu ke token pertama yang tercetak di bagian yang dibaca. Yang tercatat soal kelakuan jawaban adalah verbosity: saat indeks dijalankan, model menghasilkan 110 juta token keluaran. FAQ menyebut angka itu agak di atas median 82 juta, dan kartu verbosity menulis peringkat 76 dari 227. Jawaban yang lebih panjang dari median kelas bisa berguna pada penalaran, dan sekaligus menambah token yang ditagih per tugas. Indeks 4.3.2, menurut keterangan di halaman, memuat sepuluh evaluasi, termasuk Terminal-Bench 4.0 dan SciCode. Nilai tiap evaluasi itu tidak dipasang sebagai angka terpisah di bagian yang terbuka hari ini.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 53, harga masukan dan keluaran yang halaman AA taruh pada median kelasnya, serta biaya $1,99 per tugas indeks. Biaya per tugas itu sudah memasukkan verbosity, jadi harga $10 per juta token keluaran bukan tagihan akhir. Karena kecepatan tidak diumumkan di kartu 10 Oktober, agen yang harus membalas sebelum pengguna pindah tab belum punya angka pembanding dari sumber ini. Karena bobot tidak tersedia, tim yang membutuhkan model di mesin sendiri belum bisa pindah dari API Google. Pakai untuk draf, dokumen, dan pertanyaan bergambar yang memang membutuhkan indeks ini, lalu ukur satu tugas nyata sebelum mengganti model yang sudah jalan di produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/gemini-4-argon",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-10",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

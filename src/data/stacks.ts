@@ -4500,6 +4500,46 @@ export const stacks: Review[] = [
     date: "2026-10-09",
     featured: false,
   },
+  {
+    slug: "mattpocock-skills",
+    name: "Matt Pocock Skills",
+    tagline: "Skill teknik kecil untuk agen coding, dipasang sekali lalu dijalankan sebagai perintah",
+    tags: ["Open Source", "Agen", "Skill", "CLI"],
+    score: 8.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 7.6 },
+      { label: "Pengalaman Pengguna", value: 8.2 },
+      { label: "Ekosistem & Integrasi", value: 9.0 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "mattpocock/skills duduk di peringkat delapan tren harian 10 Oktober 2026. README-nya mengemas kebiasaan teknik Matt Pocock menjadi skill yang dipasang ke Claude Code, Codex, Copilot, Gemini CLI, atau agen lain, dengan lisensi MIT.",
+    pros: [
+      "Skill-nya kecil dan disebut boleh diubah. README membedakan plugin yang memperbarui diri dari salinan skills.sh yang disunting manual",
+      "Perintah pasang yang ditulis README sudah mencakup Claude Code, Codex, GitHub Copilot, Gemini CLI, plus Cursor dan beberapa agen lain lewat npx",
+      "Setup sekali per repo menanyakan pelacak isu, label triase, dan folder dokumen, lalu `/triage` memakai label itu",
+      "Lisensi MIT. API GitHub pada 10 Oktober 2026 mencatat 282.801 bintang dan 23.694 fork",
+    ],
+    cons: [
+      "README menulis memasang plugin dan salinan skills.sh sekaligus menggandakan setiap skill. Satu agen harus memilih satu jalur",
+      "Kualitas jawaban tetap mengikuti model di belakang agen. Skill ini tidak menaikkan indeks model",
+      "Gemini CLI, menurut README, tidak memperbarui diri. Kedua perintah pasang harus dijalankan ulang",
+      "Wawasan AI tidak menjalankan `/grill-with-docs` hari ini. Penghematan token yang disebut README masih klaim penulis",
+    ],
+    verdict:
+      "Masuk akal bagi yang sudah memakai Claude Code, Codex, atau Copilot dan ingin agennya bertanya sebelum mengubah kode. Pasang satu jalur, jalankan setup sekali di repo sungguhan, lalu lihat apakah perintah grill-nya mengurangi pekerjaan ulang.",
+    body: [
+      "Skills for Real Engineers adalah repositori Matt Pocock di mattpocock/skills. README yang dicek 10 Oktober 2026 mendeskripsikan skill yang ia pakai untuk pekerjaan teknik, dan membedakannya dari kerangka yang mengambil alih seluruh proses. Kalimatnya: skill ini kecil, mudah disesuaikan, bisa disusun, dan bekerja dengan model apa pun. API GitHub hari yang sama mencatat 282.801 bintang, 23.694 fork, 161 isu terbuka, bahasa Shell, dan lisensi MIT. Repo dibuat 3 Februari 2026. Push terakhir 9 Oktober 2026. Halaman rumah yang terpasang di API adalah aihero.dev/skills. Trendshift menaruh repo ini di peringkat delapan tren harian. README juga menulis buletinnya diikuti sekitar 60.000 pengembang. Angka buletin itu klaim penulis.",
+      "Pemasangan yang ditulis README punya aturan yang mudah dilewatkan. Plugin memperbarui diri. skills.sh menyalin berkas yang bisa disunting, dan pembaruan dilakukan tangan. Memasang keduanya pada agen yang sama disebut memberi setiap skill dua kali, jadi README meminta satu jalur per agen. Claude Code memakai `claude plugin install mattpocock-skills@claude-plugins-official`. Codex menambah marketplace mattpocock/skills lalu memasang mattpocock-skills@mattpocock. Copilot punya perintah marketplace yang setara, plus satu suntingan `~/.copilot/settings.json`, dan di VS Code ada perintah pasang dari sumber yang README tulis diperbarui harian. Gemini CLI dipasang manual dari skills/engineering dan skills/productivity, lalu kedua perintah diulang saat ada pembaruan. Agen lain, termasuk Cursor, memakai `npx skills@latest add mattpocock/skills`. Setelah berkasnya ada, `/setup-matt-pocock-skills` dijalankan sekali per repo dan menanyakan pelacak isu, label triase, serta tempat menyimpan dokumen.",
+      "Isi folder yang dibaca dari API isi repo pada 10 Oktober, bukan dari hitungan di README: engineering berisi 20 skill, di antaranya tdd, triage, implement, code-review, dan setup-matt-pocock-skills. Productivity berisi 7, termasuk grill-me. Misc berisi 4. In-progress berisi 7. Folder deprecated ada dan kosong. README menaruh dua kegagalan yang ingin ia perbaiki. Agen mengerjakan hal yang tidak diminta, lalu jawabannya adalah sesi grill lewat `/grill-me` atau `/grill-with-docs`. Agen terlalu panjang karena tidak punya bahasa bersama proyek, lalu grill-with-docs disebut ikut menyusun glosarium dan catatan keputusan. Klaim bahwa bahasa bersama itu mengurangi token berpikir tetap klaim README. Wawasan AI tidak mengukur selisih tokennya.",
+      "Untuk pengembang di Indonesia yang sudah membayar satu agen coding, repo ini adalah lapisan kebiasaan, bukan model baru. Lisensi MIT membuat skill boleh disalin ke dalam repo kantor dan ditulis ulang dalam istilah tim. Batasnya ada di jalur pasang dan di model. Dua jalur pada agen yang sama menggandakan perintah. Gemini CLI tidak ikut memperbarui diri. Dan skill grill yang rapi tidak membuat model murah menjawab seperti model yang indeksnya lebih tinggi. Pasang satu jalur di satu repositori, jalankan setup, lalu pakai grill sebelum perubahan yang biasanya diulang. Kalau perintahnya tidak mengubah cara tim meninjau diff, bintang di halaman GitHub tidak menolong.",
+    ],
+    link: "https://github.com/mattpocock/skills",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-10",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

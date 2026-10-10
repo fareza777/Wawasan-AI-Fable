@@ -1,0 +1,138 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-10T02:04:50.403Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "MemorySquidBlade/svlhyvjj",
+      "owner": "MemorySquidBlade",
+      "repo": "svlhyvjj",
+      "description": "",
+      "githubUrl": "https://github.com/MemorySquidBlade/svlhyvjj",
+      "trendshiftUrl": "https://trendshift.io/repositories/236057",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-08-29T03:55:27Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "xtool-org/xtool",
+      "owner": "xtool-org",
+      "repo": "xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "githubUrl": "https://github.com/xtool-org/xtool",
+      "trendshiftUrl": "https://trendshift.io/repositories/33512",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2024-11-17T08:18:44Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "githubUrl": "https://github.com/storytold/artcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/19042",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2022-03-31T23:19:12Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "totec448-spec/chat-on-steroids",
+      "owner": "totec448-spec",
+      "repo": "chat-on-steroids",
+      "description": "Local Windows coding and computer-use bridge for ChatGPT over MCP, limited to folders and capabilities you approve.",
+      "githubUrl": "https://github.com/totec448-spec/chat-on-steroids",
+      "trendshiftUrl": "https://trendshift.io/repositories/178191",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "MCP"
+      ],
+      "dateCreated": "2026-08-22T14:16:24Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "tigerless-labs/autoharness",
+      "owner": "tigerless-labs",
+      "repo": "autoharness",
+      "description": "Autoharness — a self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
+      "githubUrl": "https://github.com/tigerless-labs/autoharness",
+      "trendshiftUrl": "https://trendshift.io/repositories/68941",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-06-09T21:05:42Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "mu-zi-lee/magpie-our-free-model",
+      "owner": "mu-zi-lee",
+      "repo": "magpie-our-free-model",
+      "description": "",
+      "githubUrl": "https://github.com/mu-zi-lee/magpie-our-free-model",
+      "trendshiftUrl": "https://trendshift.io/repositories/294438",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-09T17:18:24Z"
+    }
+  ]
+}
