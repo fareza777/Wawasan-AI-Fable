@@ -5156,6 +5156,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "cambridge-minta-guru-ikut-susun-kebijakan-ai-sekolah",
+    title: "Republika: Cambridge Minta Guru Ikut Menyusun Kebijakan AI di Sekolah",
+    excerpt:
+      "Laporan Republika pada 11 Oktober mengangkat rekomendasi Cambridge agar guru dan murid dilibatkan dalam perangkat AI generatif. Halaman berita Cambridge English yang dibaca hari ini tidak menyebut Indonesia.",
+    category: "Analisis",
+    date: "2026-10-11",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Ahad 11 Oktober 2026 pukul 07.17 WIB, Republika menurunkan laporan Gilang Akbar Prambadi tentang rekomendasi Cambridge University Press & Assessment. Kalimat pembukanya menaruh pemerintah Indonesia sebagai pihak yang diminta memperkuat peran guru dalam penyusunan kebijakan penggunaan kecerdasan buatan di sekolah, dan menambah investasi pelatihan profesional guru secara berkelanjutan.",
+          "Laporan itu menunjuk dokumen berjudul Shaping AI Policy and Practice in English Language Teaching. Delapan prinsip yang Republika ringkas selaras dengan daftar di halaman berita Cambridge English. Halaman Cambridge yang dibaca 11 Oktober bertanggal 01/10/2026 dan tidak menulis kata Indonesia. Karena itu nama negara pada anjuran hari ini mengikuti Republika, bukan halaman global yang terbuka di situs Cambridge English.",
+        ],
+      },
+      {
+        heading: "Delapan prinsip di halaman Cambridge",
+        paragraphs: [
+          "Halaman Cambridge English menulis delapan prinsip untuk memakai AI di sekolah. Guru dan murid dilibatkan dalam tata kelola, termasuk keputusan penerapan dan evaluasi, supaya kebijakan berpijak pada ruang kelas. Pelatihan guru bersifat berkelanjutan: menilai alat secara kritis, menyesuaikannya dengan tujuan belajar, dan mengajari murid pemakaian yang bertanggung jawab. Literasi AI kritis masuk kurikulum, bukan lampiran. Murid belajar menanyai keluaran, mengenali bias dan ketidakakuratan, memakai AI generatif sebagai penopang belajar, dan tahu kapan tidak memakainya.",
+          "Prinsip keempat meminta kurikulum dan penilaian mengakui bukti proses, kemampuan memakai umpan balik, refleksi murid, dan berpikir mandiri, di samping produk akhir. Prinsip kelima menaruh hasil yang berpusat pada manusia: berpikir kritis, komunikasi, otonomi, kecerdasan emosional, dan tanggung jawab sosial. Prinsip keenam memasang privasi data, akses sesuai usia, inklusivitas, kepenulisan yang bertanggung jawab, transparansi, dan akuntabilitas. Prinsip ketujuh menempatkan guru sebagai pengambil keputusan dalam pemilihan alat, pemakaian di kelas, evaluasi, dan perbaikan, bukan hanya pelaksana teknologi yang dipilih pihak lain. Prinsip kedelapan meminta kebijakan menangani keragaman bahasa, konteks lokal, aksesibilitas, dan sekolah yang sumber dayanya terbatas, supaya AI generatif tidak memperlebar ketimpangan yang sudah ada.",
+        ],
+      },
+      {
+        heading: "Yang Republika kutip, dan yang tidak ada di halaman global",
+        paragraphs: [
+          "Republika menulis bahwa guru dan peserta didik perlu dilibatkan dari perancangan, pengadaan, penerapan, sampai evaluasi. Kalimat itu ada di halaman Cambridge, dalam bentuk yang sama: design, procurement, implementation, and evaluation. Republika juga mengutip kekhawatiran utama pendidik, yaitu menyiapkan siswa agar mampu memakai AI secara bertanggung jawab dan menilai keluarannya secara kritis. Halaman Cambridge menaruh itu sebagai kekhawatiran nomor satu guru: membantu siswa menjadi siap menghadapi AI, menanyai akurasi, dan tidak memakai AI sebagai jalan pintas.",
+          "Dr. Evelina Galaczi, Director of Research, English, di Cambridge University Press & Assessment, dikutip Republika dalam ringkasan bahasa Indonesia: kebijakan pendidikan belum mengimbangi laju teknologi, sehingga guru sering membangun sendiri pemahaman praktis tentang pemakaian yang bertanggung jawab. Naskah Inggris di halaman Cambridge yang dibaca hari ini berbunyi bahwa pembuatan kebijakan sering tidak mengimbangi perubahan teknologi, tetapi guru harus beradaptasi, dan hal itu menimbulkan jurang pengetahuan serta pendekatan yang tidak konsisten. Kalimat berikutnya di halaman yang sama: menjadi tanggung jawab yang tenang bagi para guru untuk menyusun pengetahuan praktis tentang seperti apa integrasi AI yang bertanggung jawab. Halaman itu tidak menyisipkan frasa in Indonesia pada kutipan tersebut.",
+        ],
+      },
+      {
+        heading: "Jakarta Post sudah lebih dulu menaruh Indonesia",
+        paragraphs: [
+          "The Jakarta Post punya artikel berjudul Indonesian teachers need a say in school AI policies, Cambridge says. Dateline yang terlihat di halaman itu Jumat 9 Oktober 2026, sementara stempel terbit yang ikut tercetak berbunyi 6 Oktober 2026, dengan tanda waktu 2026-10-06 pukul 17.45 WIB. Artikel itu menulis bahwa siaran pers terbit pada 1 Oktober, sesuai tanggal 01/10/2026 di halaman Cambridge English.",
+          "Yang berbeda dari halaman global: Jakarta Post menaruh policymakers in Indonesia pada kalimat anjuran, dan pada satu kutipan Galaczi menyisipkan teachers in Indonesia and worldwide. Halaman Cambridge English yang dibaca 11 Oktober memakai teachers tanpa negara. Editorial tidak menyamakan kedua kalimat itu. Anjuran yang menyebut Indonesia ada di Republika hari ini dan di Jakarta Post pekan ini. Naskah global yang terbuka di cambridgeenglish.org tidak memuat nama negara itu pada bagian yang dibaca.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dipakai sekolah di Indonesia",
+        paragraphs: [
+          "Delapan prinsip itu tidak menjadi surat edaran Kemendikdasmen pada 11 Oktober. Tidak ada nomor peraturan, tanggal berlaku, atau daftar sekolah percontohan di laporan Republika. Yang bisa dibawa ke rapat guru adalah daftar pemeriksaannya: siapa yang memilih alat, apakah murid diajari menanyai jawaban, apakah penilaian masih hanya melihat produk akhir, dan apakah data murid serta akses yang sesuai usia sudah disebut sebelum alatnya dipasang.",
+          "Prinsip kedelapan yang menyebut bahasa, konteks lokal, dan sekolah dengan sumber daya terbatas adalah bagian yang paling dekat dengan kelas di Indonesia, dan bagian itu ada di halaman Cambridge maupun di ringkasan Republika. Laporan Cambridge yang dikutip kedua media itu bertolak dari pengajar bahasa Inggris yang sudah lebih dulu memakai AI generatif, plus riset Cambridge sebelumnya. Halaman Cambridge menautkan tiga makalah 2024 sebagai dasar rekomendasi. Republika tidak mengulang judul makalah itu. Sampel negara dan jumlah guru tidak tercetak di halaman berita Cambridge yang dibaca hari ini, jadi editorial tidak memasang angka responden.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada Minggu pagi ini, teks baru yang berbahasa Indonesia adalah laporan Republika pukul 07.17 WIB. Isinya mengarahkan delapan prinsip Cambridge ke pemerintah dan guru di Indonesia. Prinsip-prinsip itu sendiri sudah tertulis di halaman Cambridge English bertanggal 1 Oktober 2026, dan versi yang menyebut Indonesia sudah tayang di Jakarta Post dengan stempel 6 Oktober serta dateline 9 Oktober.",
+          "Catatan editorial: artikel ini disusun dari laporan Republika, 11 Oktober 2026 pukul 07.17 WIB, redaktur Gilang Akbar Prambadi; dari halaman Cambridge English, Policymakers must give teachers a stronger voice on AI policy in schools, yang dibaca 11 Oktober 2026 dan bertanggal 01/10/2026; serta dari halaman The Jakarta Post, Indonesian teachers need a say in school AI policies, Cambridge says, yang dibaca hari yang sama. Delapan prinsip dikutip dari halaman Cambridge. Penyebutan Indonesia mengikuti Republika dan Jakarta Post, karena halaman Cambridge English yang dibaca tidak memuatnya. Kebijakan sekolah dan draf regulasi bisa berbeda dari rekomendasi ini; cek naskah kementerian untuk aturan yang berlaku.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

@@ -50,6 +50,9 @@ const SLUG_ICONS: Record<string, string> = {
   xtool: "https://github.com/xtool-org.png",
   "mattpocock-skills": "https://github.com/mattpocock.png",
   "gemini-4-argon": "https://cdn.simpleicons.org/google",
+  "deepseek-bot": "https://github.com/FeiZhuLulu.png",
+  "agent-chrome-relay": "https://github.com/aindeev.png",
+  "grok-4-7": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
 };
 
 function githubOrgIcon(link: string): string | null {

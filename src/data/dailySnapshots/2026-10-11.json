@@ -1,0 +1,133 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-11T02:05:11.495Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "FeiZhuLulu/DeepSeek-Bot",
+      "owner": "FeiZhuLulu",
+      "repo": "DeepSeek-Bot",
+      "description": "Bot based on DeepSeek Harness",
+      "githubUrl": "https://github.com/FeiZhuLulu/DeepSeek-Bot",
+      "trendshiftUrl": "https://trendshift.io/repositories/288625",
+      "topics": [],
+      "dateCreated": "2026-10-07T15:37:36Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "aindeev/agent-chrome-relay",
+      "owner": "aindeev",
+      "repo": "agent-chrome-relay",
+      "description": "Let your AI agents use your Chrome, signed in as you, in background tabs. By Alexey Indeev · blog: read.aindeev.com · X: @AlexeyIndeev",
+      "githubUrl": "https://github.com/aindeev/agent-chrome-relay",
+      "trendshiftUrl": "https://trendshift.io/repositories/295093",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-10T07:38:27Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "githubUrl": "https://github.com/storytold/artcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/19042",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2022-03-31T23:19:12Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Jakubantalik/transitions.dev",
+      "owner": "Jakubantalik",
+      "repo": "transitions.dev",
+      "description": "UI montion AI agent, a library of 43+ crafted transitions, a skill that fits your workflow.",
+      "githubUrl": "https://github.com/Jakubantalik/transitions.dev",
+      "trendshiftUrl": "https://trendshift.io/repositories/40659",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-04-21T21:01:08Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "storytold/craft-launcher",
+      "owner": "storytold",
+      "repo": "craft-launcher",
+      "description": "The Craft App Launcher",
+      "githubUrl": "https://github.com/storytold/craft-launcher",
+      "trendshiftUrl": "https://trendshift.io/repositories/295779",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-09T23:21:59Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "hugohe3/ppt-master",
+      "owner": "hugohe3",
+      "repo": "ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "githubUrl": "https://github.com/hugohe3/ppt-master",
+      "trendshiftUrl": "https://trendshift.io/repositories/25760",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-12-10T06:54:33Z"
+    }
+  ]
+}

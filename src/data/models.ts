@@ -5133,6 +5133,49 @@ link: "https://www.anthropic.com",
     date: "2026-10-10",
     featured: false,
   },
+  {
+    slug: "grok-4-7",
+    name: "Grok 4.7 (Xhigh)",
+    tagline: "Indeks 46 dan peringkat intelijen 29 dari 227, keluaran di bawah median kelasnya",
+    tags: ["SpaceXAI", "Proprietary", "Reasoning", "API"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 6.2 },
+      { label: "Harga/Performa", value: 7.4 },
+    ],
+    aa_intelligence_index: 46,
+    aa_price_input: 2,
+    aa_price_output: 6,
+    aa_synced_at: "2026-10-11",
+    summary:
+      "Artificial Analysis, dicek 11 Oktober 2026, memberi Grok 4.7 (Xhigh) intelligence index 46 dan menandainya proprietary. Kartu intelijen menulis peringkat 29 dari 227. Keluaran 74,2 token per detik, di bawah median 79,0 pada API SpaceXAI.",
+    pros: [
+      "Intelligence index 46, di atas median 26 untuk model reasoning pada kisaran harga yang sama (sumber: Artificial Analysis)",
+      "Harga yang dipasang AA dari API SpaceXAI: $2 masukan dan $6 keluaran per juta token, diskon cache 75 persen, biaya rata-rata $3,74 per tugas indeks",
+      "Masukan teks dan gambar, keluaran teks, jendela konteks 500 ribu token, mode reasoning",
+      "FAQ halaman itu menulis tarif campuran $1,35 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran",
+    ],
+    cons: [
+      "Keluaran 74,2 token per detik, di bawah median kelas 79,0. Kartu kecepatan menulis peringkat 105 dari 227",
+      "FAQ menyebut waktu ke token pertama 98,05 detik pada API SpaceXAI. Median kelas yang ditulis FAQ untuk angka itu 3,80 detik. Judul bagian latensi di halaman yang sama menyebut metrik itu waktu ke token jawaban pertama dan sudah memasukkan waktu berpikir",
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Verbosity: evaluasi indeks menghasilkan 240 juta token keluaran, median yang disebut ringkasan 82 juta, peringkat verbosity 110 dari 227. FAQ menulis SpaceXAI tidak membuka jumlah parameter",
+    ],
+    verdict:
+      "Masuk akal untuk pekerjaan teks dan gambar yang memang butuh indeks di atas median kelas harganya, selama tugasnya tidak harus membalas dalam beberapa detik. Waktu sampai jawaban pertama yang FAQ pasang di 98,05 detik adalah batas yang perlu diukur pada satu pekerjaan nyata sebelum mengganti model yang sudah jalan.",
+    body: [
+      "Grok 4.7 (Xhigh) adalah varian reasoning dari SpaceXAI yang halamannya di Artificial Analysis dibaca 11 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 21 September 2026 dan menulis pembuatnya SpaceXAI. Spesifikasi yang terpasang: masukan teks dan gambar, keluaran teks, jendela konteks 500 ribu token, dan reasoning menyala. FAQ menulis SpaceXAI tidak membuka jumlah parameter. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, diakses 11 Oktober 2026.) Intelligence index-nya 46 pada indeks versi 4.3.2. Kartu intelijen menulis peringkat 29 dari 227. FAQ menaruh skor 46 di atas median 26 untuk model reasoning pada kisaran harga yang sama. Itu peringkat pada kartu halaman ini, bukan urutan yang dihitung ulang editorial. Harga dari API SpaceXAI yang dipasang kartu: $2 per juta token masukan dan $6 per juta token keluaran, diskon cache 75 persen. Biaya rata-rata per tugas indeks $3,74. Peringkat biaya pada kartu yang sama: 100 dari 227. Ringkasan perbandingan menyebut harga masukan moderately priced pada median $2 dan harga keluaran moderately priced pada median $10. FAQ menyebut tarif campuran $1,35 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 3 penyedia API. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Kecepatan dan waktu sampai jawaban pertama perlu dibaca bersama. Kartu kecepatan menulis 74,2 token keluaran per detik dan peringkat 105 dari 227. FAQ menulis 74,2 token per detik pada API SpaceXAI, di bawah median 79,0. Ringkasan perbandingan memakai 74 token per detik dan rata-rata 79. Editorial memakai 74,2 dari kartu dan FAQ. FAQ juga menulis waktu ke token pertama 98,05 detik, median kelas 3,80 detik. Judul bagian latensi di halaman yang sama berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Verbosity: saat indeks dijalankan, model menghasilkan 240 juta token keluaran. Ringkasan menyebut itu sangat verbose dibanding median 82 juta, dan kartu verbosity menulis peringkat 110 dari 227. Jawaban panjang menambah token yang ditagih per tugas. Indeks 4.3.2, menurut keterangan di halaman, memuat sepuluh evaluasi, termasuk Terminal-Bench 4.0 dan SciCode. Nilai tiap evaluasi itu tidak dipasang sebagai angka terpisah di bagian yang terbuka hari ini.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 46, harga keluaran $6 yang halaman AA taruh di bawah median kelas $10, dan biaya $3,74 per tugas indeks. Biaya per tugas itu sudah memasukkan verbosity, jadi harga per token bukan tagihan akhir. Karena FAQ memasang 98,05 detik sampai token pertama pada varian Xhigh, agen yang harus membalas sebelum pengguna pindah tab belum punya alasan dari halaman ini untuk pindah. Karena bobot tidak tersedia, tim yang membutuhkan model di mesin sendiri belum bisa pindah dari API. Pakai untuk draf dan pertanyaan bergambar yang memang membutuhkan indeks ini, lalu ukur satu tugas nyata pada tingkat upaya yang benar-benar dipakai sebelum mengganti model produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/grok-4-7",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-11",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

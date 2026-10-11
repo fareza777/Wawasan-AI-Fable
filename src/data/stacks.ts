@@ -4540,6 +4540,46 @@ export const stacks: Review[] = [
     date: "2026-10-10",
     featured: false,
   },
+  {
+    slug: "agent-chrome-relay",
+    name: "Chrome Relay",
+    tagline: "Agen coding memakai Chrome yang sudah login di Mac, lewat tab yang tidak mengambil fokus",
+    tags: ["Open Source", "Agen", "Peramban", "macOS"],
+    score: 7.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 6.8 },
+      { label: "Pengalaman Pengguna", value: 7.0 },
+      { label: "Ekosistem & Integrasi", value: 7.2 },
+      { label: "Harga", value: 8.6 },
+    ],
+    summary:
+      "Chrome Relay, repo aindeev/agent-chrome-relay, duduk di peringkat empat tren harian 11 Oktober 2026. README-nya menyambungkan Claude Code, Codex, Cursor, atau Paseo ke Chrome harian di Mac, dengan sesi yang sudah login, lewat tab latar.",
+    pros: [
+      "README menulis tidak ada port remote debugging, jadi Chrome tidak menanyakan izin debug jarak jauh. Yang muncul adalah pemberitahuan bahwa Chrome Relay mulai men-debug peramban",
+      "Sandi, kunci sandi, dan layar dua langkah disebut menghentikan lompatan login. Agen mendapat tanda bahwa pengguna harus masuk sendiri",
+      "Jejak audit mencatat siapa yang tersambung, halaman, klik, dan tangkapan. Teks ketikan disebut disimpan hanya sebagai jumlah karakter",
+      "Lisensi MIT. API GitHub pada 11 Oktober 2026: 146 bintang dan 2 fork. Tidak menambah kunci API model",
+    ],
+    cons: [
+      "README membatasi pemasangan pada macOS. Laptop Windows yang umum di banyak kantor Indonesia tidak masuk syarat itu",
+      "Ekstensi harus dimuat manual pada tiap profil Chrome. Tidak ada rilis GitHub saat API dicek 11 Oktober",
+      "README sendiri menulis rahasia di `~/.chrome-relay/token` bukan batas terhadap program berbahaya yang sudah berjalan sebagai pengguna",
+      "Klaim sekitar 0,15 detik per perintah adalah kalimat README. Wawasan AI tidak mengukur latensinya",
+    ],
+    verdict:
+      "Masuk akal di Mac pribadi yang agennya memang perlu membuka situs yang sudah login, asal jejak auditnya dibaca dan profil Chrome-nya bukan profil kerja yang memegang admin. Jangan memasangnya di mesin bersama.",
+    body: [
+      "Chrome Relay dibuat Alexey Indeev. README yang dicek 11 Oktober 2026 mendeskripsikan cara agen coding memakai Chrome sehari-hari, dengan login yang sudah ada, dari baris perintah, di tab latar. Kalimatnya: tidak ada yang mengambil fokus, tidak ada dialog, dan sekitar 0,15 detik per perintah. Angka waktu itu klaim README. API GitHub hari yang sama mencatat 146 bintang, 2 fork, tidak ada isu terbuka, bahasa JavaScript, lisensi MIT, dan halaman rumah agent-chrome-relay.aindeev.com. Repo dibuat 10 Oktober 2026. Push terakhir 11 Oktober 2026 pukul 01.09 UTC. Daftar rilis GitHub yang diminta hari ini kosong. Trendshift menaruhnya di peringkat empat.",
+      "Bentuk yang tertulis di README cukup konkret. CLI `agent-browser` berbicara ke relay di 127.0.0.1:9333, relay berbicara ke ekstensi, dan ekstensi memakai `chrome.debugger` pada tab agen. Tab dibuka tidak aktif di grup tab Agents yang diciutkan. Syarat yang disebut: macOS, Google Chrome, Node.js 20 atau lebih baru, dan paket `agent-browser`. Perintah `bin/chrome-relay setup` disebut menyiapkan rahasia, layanan latar, identitas, perintah di PATH, dan skill Claude Code. Ekstensi tidak dipasang sendiri. Pada tiap profil, pengguna membuka `chrome://extensions`, menyalakan developer mode, lalu memuat folder `extension`. Dua pemeriksaan pada tiap sambungan agen: rahasia Mac di `~/.chrome-relay/token` dengan mode 600, dan proses yang berasal dari Claude Code, Codex, Cursor, atau Paseo. README menulis sambungan yang membawa header Origin dari halaman web ditolak, dan hanya ekstensi dari checkout ini yang boleh tersambung sebagai ekstensi.",
+      "Bagian login dan audit yang paling perlu dibaca sebelum memasang. Agen disebut tidak mengetik kredensial. Kalau akun Google yang tepat sudah masuk, ekstensi mengklik akun itu serta Continue atau Allow. Sandi, kunci sandi, layar dua langkah, atau akun yang keluar disebut menghentikan lompatan, lalu agen mendapat pesan `SIGN-IN NEEDED`. Akun per situs diatur di `~/.chrome-relay/identities.json`. Setiap tindakan agen dicatat di `~/.chrome-relay/audit/` sebagai JSONL harian. README menulis teks yang diketik disimpan hanya sebagai jumlah karakter, dan URL kehilangan query. Tab agen yang diam 30 menit ditutup. Kalimat batasnya eksplisit: ini menahan alat lokal lain, halaman web, dan kecelakaan, tetapi bukan batas terhadap malware yang sudah berjalan sebagai pengguna, karena program itu bisa membaca rahasia dan memalsukan penanda proses. Wawasan AI tidak menjalankan setup hari ini.",
+      "Untuk pengembang di Indonesia, batas sistem operasinya lebih dulu daripada batas fiturnya. README tidak menulis Windows atau Linux. Tim yang mesin utamanya Windows tidak punya jalur pasang di dokumen ini. Yang punya Mac pribadi dan sudah memakai Claude Code, Codex, atau Cursor mendapat cara membuka dasbor yang sesinya sudah hidup, tanpa menyalin kata sandi ke obrolan. Harga alatnya MIT dan tidak menambah kunci model, tetapi tagihan agen dan isi akun Chrome tetap ada. Pasang pada satu profil Chrome yang tidak memegang admin perusahaan, jalankan `chrome-relay doctor` seperti yang README sarankan, lalu baca satu berkas audit setelah tugas pertama. Kalau berkas itu mencatat klik yang tidak kamu minta, cabut ekstensi sebelum melanjutkan. Seratus empat puluh enam bintang tidak mengubah kalimat README tentang malware yang sudah ada di mesin.",
+    ],
+    link: "https://github.com/aindeev/agent-chrome-relay",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-11",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

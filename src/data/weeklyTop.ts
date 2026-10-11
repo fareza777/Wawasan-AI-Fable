@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 10 Oktober 2026: 47.744 bintang dan 7.834 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 11 Oktober 2026: 74.009 bintang dan 15.655 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3055,6 +3055,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Pemasangan yang ditulis README: clone, lalu `magpie plugin add` pada folder itu, atau unduh ZIP dan tambahkan dari halaman plugin. Direktori pasang disebut harus tetap di tempat yang sama.",
       "Konsol jarak jauh disebut tanpa akun Cloudflare. README menulis tautan `/open/` berlaku sepuluh menit dan sekali pakai, serta kanal jarak jauh paling lama 30 menit. Login kanal model tetap ada di luar janji itu.",
       "Lisensi MIT, ditulis JavaScript. API GitHub pada 10 Oktober 2026: 72 bintang dan 3 fork. Repo dibuat 9 Oktober 2026, push terakhir hari yang sama. Wawasan AI tidak memasang plugin ini dan tidak memeriksa apakah kanal gratisnya sesuai ketentuan penyedia.",
+    ],
+  },
+  "FeiZhuLulu/DeepSeek-Bot": {
+    description:
+      "DS Bot adalah plugin komunitas untuk DeepSeek Harness: bot yang ingat pekerjaan sebelumnya, bot utama yang mengatur yang lain, dan obrolan grup. README menulis ini bukan produk resmi DeepSeek.",
+    highlights: [
+      "Pemasangan desktop yang ditulis README: di DSH pilih Plugins, lalu tambah paket `ds-bot`. Versi web memakai `npx @deepseek-ai/dsh@0.2.1-alpha.1` dan membutuhkan Node.js 22.19 atau lebih baru serta pnpm.",
+      "Bot pertama yang sudah ada bernama Chief. README menulis obrolan grup lebih mahal karena beberapa bot bisa ikut menjawab, dan admin grup yang menjawab lebih dulu.",
+      "Data disebut tinggal di komputer sendiri, di folder `bot/` dan `sessions/` pada rumah DSH (`~/.dsh` secara bawaan). Mencopot plugin disebut tidak menghapus data itu.",
+      "Lisensi Apache-2.0, ditulis JavaScript, versi paket 0.1.0. API GitHub pada 11 Oktober 2026: 258 bintang, 16 fork, 3 isu terbuka. Repo dibuat 7 Oktober 2026. Rilis v0.1.0 terbit 10 Oktober 2026. Lencana README masih bertuliskan v0.1 preview.",
+    ],
+  },
+  "aindeev/agent-chrome-relay": {
+    description:
+      "Chrome Relay menyambungkan agen coding ke Chrome yang sudah login di Mac, lewat tab latar. README membatasi ini pada mesin yang pemiliknya memasang sendiri, dan menulis bahwa rahasia lokal bukan batas terhadap program berbahaya yang sudah berjalan sebagai pengguna.",
+    highlights: [
+      "Yang disebut README: macOS, Google Chrome, Node.js 20 atau lebih baru, dan CLI `agent-browser`. Relay lokal di 127.0.0.1:9333. Ekstensi dimuat manual dari folder `extension` pada tiap profil Chrome.",
+      "Agen yang diperiksa README: Claude Code, Codex, Cursor, dan Paseo, lewat penanda proses. Sambungan yang membawa header Origin dari halaman web ditolak.",
+      "Jejak audit di `~/.chrome-relay/audit/`. README menulis teks yang diketik disimpan hanya sebagai jumlah karakter, dan URL kehilangan query. Tab agen yang diam 30 menit ditutup.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub pada 11 Oktober 2026: 146 bintang, 2 fork, tidak ada isu terbuka. Repo dibuat 10 Oktober 2026, push terakhir 11 Oktober 2026. Tidak ada rilis GitHub saat dicek. Situsnya agent-chrome-relay.aindeev.com.",
+    ],
+  },
+  "Jakubantalik/transitions.dev": {
+    description:
+      "transitions.dev adalah kumpulan transisi CSS yang bisa disalin, dipasang lewat CLI, atau dipakai sebagai skill agen. Hitungan di README, di deskripsi GitHub, dan di folder skill tidak sama.",
+    highlights: [
+      "CLI yang ditulis README: `npx transitions-dev add` untuk transisi gratis, dan login perangkat untuk yang berlabel Pro. Skill agen dipasang dengan `npx skills add Jakubantalik/transitions.dev`.",
+      "Bagian Files di README masih menulis delapan belas transisi di `index.html`. Daftar berkas `skills/transitions-dev` yang dibaca dari API pada 11 Oktober 2026 berisi 35 berkas bernomor, dari `01-card-resize.md` sampai `35-donut-chart.md`, plus `SKILL.md`, `_root.css`, dan `LICENSE.txt`.",
+      "Deskripsi repositori menulis 43+ transisi. Tiga angka itu dibiarkan berdampingan. Wawasan AI tidak menghitung kartu di situs transitions.dev hari ini.",
+      "API GitHub pada 11 Oktober 2026: 4.690 bintang, 194 fork, 8 isu terbuka, bahasa HTML, SPDX NOASSERTION. Repo dibuat 21 April 2026, push terakhir 10 Oktober 2026. LICENSE membebaskan pemakaian di proyek sendiri dan melarang menyebar ulang pustaka transisi sebagai produk pesaing. Perkakas CLI disebut MIT.",
+    ],
+  },
+  "storytold/craft-launcher": {
+    description:
+      "ArtCraft Launcher memasang, memperbarui, dan membuka aplikasi Craft App Suite dari satu jendela native. README menandainya early alpha, dan unduhan dicek dengan SHA-256 sebelum dipasang.",
+    highlights: [
+      "Judul README menyebut dua belas aplikasi: PhotoCraft, LightCraft, FilmCraft, DesignCraft, VectorCraft, PdfCraft, EffectCraft, WordCraft, DeckCraft, GridCraft, CADCraft, dan SoundCraft. Pemasangan mengikuti paket rilis resmi tiap aplikasi.",
+      "Platform yang disebut: macOS, Windows, Linux, FreeBSD, dan web. Antarmuka dalam bahasa Inggris, Rusia, atau Tionghoa Sederhana. Tidak ada bahasa Indonesia di bagian itu.",
+      "Lencana README: MIT atau Apache-2.0, status early alpha, 100 persen Rust. API GitHub pada 11 Oktober 2026 menandai lisensi Apache-2.0, 525 bintang, 176 fork, dan 70 isu terbuka. Repo dibuat 9 Oktober 2026. Rilis terbaru v0.2.0 terbit 10 Oktober 2026.",
+      "Membangun dari sumber disebut membutuhkan Rust stabil 1.90 atau lebih baru. README menulis aplikasi yang sedang berjalan tidak diganti saat pembaruan.",
     ],
   },
 };

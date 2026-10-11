@@ -5327,6 +5327,53 @@ export const repos: Review[] = [
     updatedAt: "2026-10-10",
     featured: false,
   },
+  {
+    slug: "deepseek-bot",
+    name: "DS Bot",
+    tagline: "Plugin komunitas yang menaruh beberapa bot di dalam DeepSeek Harness, masih pratinjau 0.1",
+    tags: ["Agen", "Open Source", "JavaScript", "DeepSeek"],
+    score: 7.2,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.4 },
+      { label: "Fitur & Ekstensibilitas", value: 7.8 },
+      { label: "Komunitas & Momentum", value: 7.2 },
+      { label: "Dokumentasi", value: 7.6 },
+      { label: "Kesiapan Produksi", value: 5.8 },
+    ],
+    summary:
+      "DS Bot duduk di peringkat tiga tren harian 11 Oktober 2026. Ia menambah bot berumur panjang, bot utama, dan obrolan grup ke DeepSeek Harness. README menandainya sebagai proyek komunitas, bukan produk resmi DeepSeek, dan rilis yang dicek hari ini adalah 0.1.0.",
+    highlights: [
+      "Paket npm yang ditulis README bernama `ds-bot`. Desktop dipasang dari menu Plugins. Versi web memakai DSH 0.2.1-alpha.1, Node.js 22.19 atau lebih baru, dan pnpm",
+      "Bot pertama yang sudah ada disebut Chief. Obrolan grup punya admin yang menjawab lebih dulu, dan bot lain bisa dipanggil dengan sebutan",
+      "Data disebut tinggal di `~/.dsh`, folder `bot/` dan `sessions/`. Mencopot plugin disebut tidak menghapus folder itu",
+      "API GitHub pada 11 Oktober 2026: 258 bintang, 16 fork, 3 isu terbuka, lisensi Apache-2.0, bahasa JavaScript. Rilis v0.1.0 terbit 10 Oktober 2026",
+    ],
+    pros: [
+      "README memisahkan proyek ini dari DeepSeek: bukan afiliasi, bukan sponsor, dan nama DeepSeek hanya disebut sebagai alat yang dipasangi plugin",
+      "Pemakaian token bisa dilihat per waktu, per bot, dan per model di Settings, menurut README",
+      "Memori bot dikelola dari halaman detail atau lewat percakapan, dan data disebut tetap di komputer sendiri",
+      "Lisensi Apache-2.0. Rilis 0.1.0 terbit sehari sebelum snapshot ini",
+    ],
+    cons: [
+      "Lencana README masih v0.1 preview, dan DSH yang dicontohkan masih 0.2.1-alpha.1",
+      "Obrolan grup disebut lebih mahal karena beberapa bot bisa ikut bekerja. Kuota model tetap milik pengguna",
+      "Bot, menurut disclaimer README, membaca dan menulis berkas serta menjalankan perintah saat diminta. Itu akses yang perlu diawasi",
+      "258 bintang pada 11 Oktober adalah hitungan API, bukan ukuran tim yang sudah memakainya di produksi. Wawasan AI tidak memasang plugin ini hari ini",
+    ],
+    verdict:
+      "Layak dicoba di mesin sendiri kalau DSH sudah terpasang dan kamu ingin beberapa bot berbagi satu obrolan. Jangan mengunci pekerjaan klien di versi 0.1, dan jangan mengira ini saluran resmi DeepSeek.",
+    body: [
+      "Pada 11 Oktober 2026 FeiZhuLulu/DeepSeek-Bot berada di peringkat tiga tren harian Trendshift. Deskripsi repositori yang dikembalikan API berbunyi tim bot berumur panjang untuk DeepSeek Harness, dengan bot utama, pesan antar-bot, dan obrolan grup. README berbahasa Inggris menamai produknya DS Bot dan menaruh lencana versi v0.1 preview, DSH 0.2.1-alpha.1, serta lisensi Apache-2.0. API GitHub yang dicek hari yang sama mencatat 258 bintang, 16 fork, 3 isu terbuka, bahasa JavaScript, dan tidak ada halaman rumah. Repo dibuat 7 Oktober 2026. Push terakhir 10 Oktober 2026. Rilis v0.1.0 terbit 10 Oktober 2026 pukul 15.45 UTC, dengan judul DS Bot 0.1.0. Berkas `ds-bot/package.json` di cabang main menulis nama `ds-bot`, versi 0.1.0, dan lisensi Apache-2.0.",
+      "Yang bisa dicek dari README, tanpa menjalankan pluginnya, adalah pintu pasang dan bentuk kerjanya. Desktop DSH untuk Windows dan macOS: Plugins, Add plugin, lalu nama paket `ds-bot`. README juga menulis cermin registri untuk daratan Tiongkok, atau berkas `ds-bot-0.1.0.tgz` dari rilis, atau alamat Git yang menunjuk tag v0.1.0. Versi web menambah Linux dan membutuhkan Node.js 22.19 atau lebih baru serta pnpm. Perintah yang dicetak memakai `npx @deepseek-ai/dsh@0.2.1-alpha.1`. Bot memakai model yang sudah dipasang di DSH. README menyarankan satu model untuk satu bot dalam waktu lama. Bot utama yang sudah ada saat pertama kali dibuka bernama Chief, dan README menulis bot itu yang mengatur bot lain serta obrolan grup. Di grup, admin menjawab secara bawaan dan memanggil bot lain. Pengguna juga bisa menyebut satu bot supaya bot itu yang menjawab. Halaman pemakaian disebut memecah token menurut waktu, bot, dan model.",
+      "Dua batas tertulis di bagian akhir README. Pertama, data tinggal di komputer sendiri, di `bot/` dan `sessions/` pada folder rumah DSH, bawaan `~/.dsh`. Mencopot plugin tidak menghapus data itu. Kedua, disclaimer menulis DS Bot adalah proyek komunitas yang independen, bukan produk resmi DeepSeek, dan tidak berafiliasi, didukung, atau disponsori DeepSeek. Nama DeepSeek dan DeepSeek Harness disebut merek pemiliknya. Kalimat yang sama mengingatkan bahwa bot memakai kuota model pengguna, serta membaca, menulis berkas, dan menjalankan perintah saat diminta. Wawasan AI tidak memasang DSH dan tidak menjalankan Chief hari ini.",
+      "Bagi pengembang di Indonesia yang sudah mencoba DeepSeek Harness, bagian yang berguna adalah memori dan obrolan grup yang tetap di mesin sendiri, plus halaman yang menunjukkan token per bot. Bagian yang belum boleh dilewati adalah statusnya. DSH yang dicontohkan masih alpha, pluginnya masih 0.1, dan obrolan grup disebut jelas lebih mahal. Angka 258 bintang tidak membuat Chief menjadi saluran dukungan DeepSeek. Pasang di satu profil DSH yang tidak memegang berkas klien, bicara pada Chief, lalu baca folder `~/.dsh` sebelum mengizinkan bot menulis ke proyek sungguhan. Kalau kuota modelnya habis lebih cepat daripada satu bot, itu sesuai peringatan README tentang grup, bukan kejutan.",
+    ],
+    link: "https://github.com/FeiZhuLulu/DeepSeek-Bot",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-11",
+    updatedAt: "2026-10-11",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
