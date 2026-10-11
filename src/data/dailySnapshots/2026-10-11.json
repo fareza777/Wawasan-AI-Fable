@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-11T02:05:11.495Z",
+  "fetchedAt": "2026-10-11T07:40:12.482Z",
   "repos": [
     {
       "rank": 1,
@@ -34,6 +34,20 @@
     },
     {
       "rank": 3,
+      "fullName": "Ebony-Vinyl/dsh-our-free-model",
+      "owner": "Ebony-Vinyl",
+      "repo": "dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, Muse Spark 1.3 and MiMo V2.6 among them. Completely free, with no usage cap.",
+      "githubUrl": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "trendshiftUrl": "https://trendshift.io/repositories/261203",
+      "language": "JavaScript",
+      "topics": [
+        "LLM gateway"
+      ],
+      "dateCreated": "2026-09-24T16:17:19Z"
+    },
+    {
+      "rank": 4,
       "fullName": "FeiZhuLulu/DeepSeek-Bot",
       "owner": "FeiZhuLulu",
       "repo": "DeepSeek-Bot",
@@ -44,31 +58,31 @@
       "dateCreated": "2026-10-07T15:37:36Z"
     },
     {
-      "rank": 4,
-      "fullName": "aindeev/agent-chrome-relay",
-      "owner": "aindeev",
-      "repo": "agent-chrome-relay",
-      "description": "Let your AI agents use your Chrome, signed in as you, in background tabs. By Alexey Indeev · blog: read.aindeev.com · X: @AlexeyIndeev",
-      "githubUrl": "https://github.com/aindeev/agent-chrome-relay",
-      "trendshiftUrl": "https://trendshift.io/repositories/295093",
+      "rank": 5,
+      "fullName": "wheresryan22/anatomy",
+      "owner": "wheresryan22",
+      "repo": "anatomy",
+      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
+      "githubUrl": "https://github.com/wheresryan22/anatomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/296609",
       "language": "JavaScript",
       "topics": [],
-      "dateCreated": "2026-10-10T07:38:27Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "boykopovar/AnyPS5",
-      "owner": "boykopovar",
-      "repo": "AnyPS5",
-      "description": "Convert PS5 executables to run natively on Linux and Windows",
-      "githubUrl": "https://github.com/boykopovar/AnyPS5",
-      "trendshiftUrl": "https://trendshift.io/repositories/240094",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2026-08-03T21:30:25Z"
+      "dateCreated": "2026-10-08T10:12:49Z"
     },
     {
       "rank": 6,
+      "fullName": "hugohe3/ppt-master",
+      "owner": "hugohe3",
+      "repo": "ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "githubUrl": "https://github.com/hugohe3/ppt-master",
+      "trendshiftUrl": "https://trendshift.io/repositories/25760",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-12-10T06:54:33Z"
+    },
+    {
+      "rank": 7,
       "fullName": "storytold/artcraft",
       "owner": "storytold",
       "repo": "artcraft",
@@ -80,19 +94,31 @@
       "dateCreated": "2022-03-31T23:19:12Z"
     },
     {
-      "rank": 7,
-      "fullName": "Jakubantalik/transitions.dev",
-      "owner": "Jakubantalik",
-      "repo": "transitions.dev",
-      "description": "UI montion AI agent, a library of 43+ crafted transitions, a skill that fits your workflow.",
-      "githubUrl": "https://github.com/Jakubantalik/transitions.dev",
-      "trendshiftUrl": "https://trendshift.io/repositories/40659",
-      "language": "HTML",
+      "rank": 8,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Convert PS5 executables to run natively on Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
       "topics": [],
-      "dateCreated": "2026-04-21T21:01:08Z"
+      "dateCreated": "2026-08-03T21:30:25Z"
     },
     {
-      "rank": 8,
+      "rank": 9,
+      "fullName": "t4t5/omdrop-owl",
+      "owner": "t4t5",
+      "repo": "omdrop-owl",
+      "description": "airdrop for non-apple devices",
+      "githubUrl": "https://github.com/t4t5/omdrop-owl",
+      "trendshiftUrl": "https://trendshift.io/repositories/292529",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-10-08T06:38:33Z"
+    },
+    {
+      "rank": 10,
       "fullName": "mattpocock/skills",
       "owner": "mattpocock",
       "repo": "skills",
@@ -104,30 +130,6 @@
         "AI skills"
       ],
       "dateCreated": "2026-02-03T11:15:53Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "storytold/craft-launcher",
-      "owner": "storytold",
-      "repo": "craft-launcher",
-      "description": "The Craft App Launcher",
-      "githubUrl": "https://github.com/storytold/craft-launcher",
-      "trendshiftUrl": "https://trendshift.io/repositories/295779",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-09T23:21:59Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "hugohe3/ppt-master",
-      "owner": "hugohe3",
-      "repo": "ppt-master",
-      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
-      "githubUrl": "https://github.com/hugohe3/ppt-master",
-      "trendshiftUrl": "https://trendshift.io/repositories/25760",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2025-12-10T06:54:33Z"
     }
   ]
 }
