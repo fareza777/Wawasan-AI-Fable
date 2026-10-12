@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-12T02:04:18.113Z",
+  "fetchedAt": "2026-10-12T07:48:33.438Z",
   "repos": [
     {
       "rank": 1,
@@ -20,44 +20,6 @@
     },
     {
       "rank": 2,
-      "fullName": "liseami/CCBaga",
-      "owner": "liseami",
-      "repo": "CCBaga",
-      "description": "",
-      "githubUrl": "https://github.com/liseami/CCBaga",
-      "trendshiftUrl": "https://trendshift.io/repositories/298806",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-11T03:47:06Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "storytold/photocraft",
-      "owner": "storytold",
-      "repo": "photocraft",
-      "description": "",
-      "githubUrl": "https://github.com/storytold/photocraft",
-      "trendshiftUrl": "https://trendshift.io/repositories/278138",
-      "language": "Rust",
-      "topics": [
-        "Image editing"
-      ],
-      "dateCreated": "2026-09-30T13:37:48Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "wheresryan22/anatomy",
-      "owner": "wheresryan22",
-      "repo": "anatomy",
-      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
-      "githubUrl": "https://github.com/wheresryan22/anatomy",
-      "trendshiftUrl": "https://trendshift.io/repositories/296609",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2026-10-08T10:12:49Z"
-    },
-    {
-      "rank": 5,
       "fullName": "storytold/wordcraft",
       "owner": "storytold",
       "repo": "wordcraft",
@@ -69,19 +31,31 @@
       "dateCreated": "2026-10-07T08:34:24Z"
     },
     {
-      "rank": 6,
-      "fullName": "richhardvano/SlotDrift",
-      "owner": "richhardvano",
-      "repo": "SlotDrift",
-      "description": "Slot continuity and fork analysis for captured Solana slot records - gaps, skips, duplicate slots and orphaned branches, with an independent Rust engine.",
-      "githubUrl": "https://github.com/richhardvano/SlotDrift",
-      "trendshiftUrl": "https://trendshift.io/repositories/265179",
-      "language": "Python",
+      "rank": 3,
+      "fullName": "wheresryan22/anatomy",
+      "owner": "wheresryan22",
+      "repo": "anatomy",
+      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
+      "githubUrl": "https://github.com/wheresryan22/anatomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/296609",
+      "language": "JavaScript",
       "topics": [],
-      "dateCreated": "2025-12-31T13:24:31Z"
+      "dateCreated": "2026-10-08T10:12:49Z"
     },
     {
-      "rank": 7,
+      "rank": 4,
+      "fullName": "liseami/CCBaga",
+      "owner": "liseami",
+      "repo": "CCBaga",
+      "description": "",
+      "githubUrl": "https://github.com/liseami/CCBaga",
+      "trendshiftUrl": "https://trendshift.io/repositories/298806",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-11T03:47:06Z"
+    },
+    {
+      "rank": 5,
       "fullName": "Ebony-Vinyl/dsh-our-free-model",
       "owner": "Ebony-Vinyl",
       "repo": "dsh-our-free-model",
@@ -95,19 +69,7 @@
       "dateCreated": "2026-09-24T16:17:19Z"
     },
     {
-      "rank": 8,
-      "fullName": "StoopwenpueNq/QuorumForge",
-      "owner": "StoopwenpueNq",
-      "repo": "QuorumForge",
-      "description": "Multi-agent evidence adjudication engine - normalize claims, weigh support and contradiction, and render deterministic verdicts, with a Rust engine and a TypeScript viewer.",
-      "githubUrl": "https://github.com/StoopwenpueNq/QuorumForge",
-      "trendshiftUrl": "https://trendshift.io/repositories/272328",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-03-19T01:53:50Z"
-    },
-    {
-      "rank": 9,
+      "rank": 6,
       "fullName": "ARahim3/DigUp",
       "owner": "ARahim3",
       "repo": "DigUp",
@@ -119,7 +81,36 @@
       "dateCreated": "2026-10-08T20:37:51Z"
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "yetone/magpie",
+      "owner": "yetone",
+      "repo": "magpie",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "githubUrl": "https://github.com/yetone/magpie",
+      "trendshiftUrl": "https://trendshift.io/repositories/257963",
+      "language": "Go",
+      "topics": [
+        "AI coding assistant",
+        "LLM gateway"
+      ],
+      "dateCreated": "2026-09-23T16:22:35Z"
+    },
+    {
+      "rank": 9,
       "fullName": "storytold/artcraft",
       "owner": "storytold",
       "repo": "artcraft",
@@ -129,6 +120,18 @@
       "language": "Rust",
       "topics": [],
       "dateCreated": "2022-03-31T23:19:12Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "githubUrl": "https://github.com/cathrynlavery/diagram-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26141",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-04-16T18:01:16Z"
     }
   ]
 }
