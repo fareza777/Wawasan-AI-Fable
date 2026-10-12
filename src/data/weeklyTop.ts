@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 11 Oktober 2026: 74.009 bintang dan 15.655 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 12 Oktober 2026: 108.042 bintang dan 23.912 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3095,6 +3095,76 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Platform yang disebut: macOS, Windows, Linux, FreeBSD, dan web. Antarmuka dalam bahasa Inggris, Rusia, atau Tionghoa Sederhana. Tidak ada bahasa Indonesia di bagian itu.",
       "Lencana README: MIT atau Apache-2.0, status early alpha, 100 persen Rust. API GitHub pada 11 Oktober 2026 menandai lisensi Apache-2.0, 525 bintang, 176 fork, dan 70 isu terbuka. Repo dibuat 9 Oktober 2026. Rilis terbaru v0.2.0 terbit 10 Oktober 2026.",
       "Membangun dari sumber disebut membutuhkan Rust stabil 1.90 atau lebih baru. README menulis aplikasi yang sedang berjalan tidak diganti saat pembaruan.",
+    ],
+  },
+  "liseami/CCBaga": {
+    description:
+      "CCBaga adalah dua aplikasi desktop, A dan B, yang README jajarkan untuk membersihkan data Claude lokal, memutar sidik peramban pendamping, dan menyetel wilayah mesin. Ini bukan pembersih umum: bagian jaringannya meminta alamat VPS dan keluar SOCKS5 residensial.",
+    highlights: [
+      "Platform yang ditulis README: macOS 12 atau lebih baru pada Apple Silicon, dan Linux x86_64 dengan GTK 3 serta WebKitGTK 4.1. Windows, Mac Intel, dan Linux ARM64 disebut tidak didukung.",
+      "CCBaga-A mengurus pembersihan, pengaturan sistem, tugas SSH, dan pemeriksaan. CCBaga-B adalah peramban pendamping dengan profil terpisah. README menulis versi resmi hanya diterbitkan pemilik repo, liseami.",
+      "Memutar sidik peramban dan melewatkan lalu lintas lewat keluar residensial adalah pengaturan yang README taruh di halaman yang sama dengan pembersihan cache. Wawasan AI tidak memasang DMG-nya dan tidak mengulang langkah VPS-nya.",
+      "Lisensi MIT, ditulis Rust dan Tauri. API GitHub pada 12 Oktober 2026: 386 bintang, 33 fork, 1 isu terbuka. Repo dibuat 11 Oktober 2026. Rilis v0.2.9 terbit 11 Oktober 2026; v0.2.8 dan v0.2.7 pada hari yang sama masih berlabel prarilis.",
+    ],
+  },
+  "wheresryan22/anatomy": {
+    description:
+      "Anatomy adalah skill agen yang mengubah ide teknis menjadi gambar isometrik interaktif. README menulis ia berjalan di Claude Code, OpenCode, dan Codex, tanpa kunci API dan tanpa dependensi npm.",
+    highlights: [
+      "Perintah pasang yang dicetak README: `npx skills add wheresryan22/anatomy`. Claude Code dan OpenCode memakai `/anatomy`. Codex memakai `$anatomy`. Syaratnya Node.js 20.10 atau lebih baru.",
+      "Yang dijanjikan README: kartu bergambar dengan bagian kecil yang bisa digerakkan, SVG, dan shader WebGL bila diminta. Angka pada gambar disebut berasal dari model kecil yang sama dengan yang menggerakkan bagiannya.",
+      "Situs yang terpasang di API: skills.wheresryan.sh/anatomy. Wawasan AI tidak menjalankan skill ini hari ini, jadi galeri di README tetap contoh penulis.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub pada 12 Oktober 2026: 3.472 bintang, 272 fork, 1 isu terbuka. Repo dibuat 8 Oktober 2026. Rilis v1.0.0 terbit 10 Oktober 2026.",
+    ],
+  },
+  "storytold/wordcraft": {
+    description:
+      "WordCraft adalah pengolah kata Rust dari tim ArtCraft yang mengaku menulis ulang alur Microsoft Word secara clean-room: pita, gaya, tabel, lacak perubahan, rujukan, dan gabungan surat, plus baca-tulis .docx.",
+    highlights: [
+      "README menulis aplikasi native untuk macOS, Windows, Linux, dan BSD, serta peramban lewat WebAssembly. Lencana yang sama menaruh agen lewat MCP dan CLI.",
+      "Cuplikan layar disebut dihasilkan oleh harness uji antarmukanya sendiri. Halaman unduhan yang ditautkan README ada di getartcraft.com/apps/wordcraft.",
+      "Lencana README berbunyi MIT atau Apache-2.0. API GitHub pada 12 Oktober 2026 mengembalikan SPDX Apache-2.0. Dua penanda itu dibiarkan berdampingan.",
+      "API yang sama: 6.082 bintang, 1.755 fork, 296 isu terbuka, bahasa Rust. Repo dibuat 7 Oktober 2026, push terakhir 12 Oktober 2026. Wawasan AI tidak membuka berkas .docx dengan WordCraft hari ini.",
+    ],
+  },
+  "richhardvano/SlotDrift": {
+    description:
+      "SlotDrift membaca ekspor JSONL catatan slot Solana yang sudah ditangkap, lalu melaporkan slot yang hilang, cabang yatim, dan slot yang diperebutkan dua blok. README menandainya luring dan deterministik.",
+    highlights: [
+      "README menulis satu laluan tanpa dependensi di luar pustaka standar, plus mesin Rust terpisah. Ia tidak menyambung ke jaringan untuk mengambil slot baru.",
+      "Masukannya berkas yang sudah ada. Temuan yang disebut: slot hilang, blok di luar rantai kanonik, dua blok pada satu slot, tautan induk yang tidak mungkin, dan pemimpin yang sering melewati giliran.",
+      "Push terakhir di API GitHub jatuh pada 26 September 2026, jadi kemunculannya di tren 12 Oktober tidak sama dengan rilis baru hari ini.",
+      "Lisensi MIT, bahasa Python. API GitHub pada 12 Oktober 2026: 172 bintang, 29 fork, 2 isu terbuka. Repo dibuat 31 Desember 2025. Wawasan AI tidak menjalankan berkas contohnya.",
+    ],
+  },
+  "Ebony-Vinyl/dsh-our-free-model": {
+    description:
+      "Plugin ini mengaku memasang model frontier ke DeepSeek Harness tanpa akun dan tanpa kunci API. README menaruh DeepSeek V4.1 Flash dan Kimi K3 sebagai contoh, sementara deskripsi di snapshot Trendshift hari ini masih menyebut Muse Spark 1.3 dan MiMo V2.6.",
+    highlights: [
+      "README berbahasa Mandarin dan Inggris menulis sumber jalur gratisnya: gerbang Zen OpenCode dan gerbang publik Kilo, disebut tersambung langsung. Ketersediaan, masih menurut README, diukur dari keluar jaringan mesin pemakai.",
+      "Lencana README: beta, tanpa dependensi, tanpa langkah bangun, dan kernel dsh 0.1.5 sampai 0.1.7-rc.2. Klaim tanpa batas kuota adalah kalimat README, bukan uji Wawasan AI.",
+      "Deskripsi repositori di API GitHub pada 12 Oktober menyebut DeepSeek V4.1 Flash dan Kimi K3. Berkas snapshot Trendshift yang diambil pagi yang sama masih menyalin kalimat Muse Spark 1.3 dan MiMo V2.6. Dua teks itu tidak disamakan.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub: 9.113 bintang, 181 fork, 126 isu terbuka. Repo dibuat 24 September 2026. Rilis v2.1.0 terbit 11 Oktober 2026. Push terakhir 11 Oktober 2026.",
+    ],
+  },
+  "StoopwenpueNq/QuorumForge": {
+    description:
+      "QuorumForge mengaku menilai transkrip dewan agen yang sudah selesai: klaim dinormalkan, lalu keluar di satu dari empat pita, konsensus, terbelah, diperebutkan, atau tidak tertopang. README menulis ia tidak menjalankan agen.",
+    highlights: [
+      "README: inti Rust hanya pustaka standar, toolchain 1.74 atau lebih baru, dan penampil TypeScript yang membaca JSON `quorumforge.report.v1`. Berkas bukti yang sama disebut selalu menghasilkan putusan yang sama.",
+      "Empat pita yang dicetak README: consensus, split, contested, dan unsupported. Urutannya tetap: normalkan, timbang, lalu putuskan.",
+      "Kolom homepage di API GitHub pada 12 Oktober menunjuk ke github.com/walidbosso/Android_Java_Projects, bukan ke dokumen QuorumForge. Tiga rilis, v3.5.0, v4.4.0, dan v5.4.0, tercatat terbit dalam hitungan detik pada 29 September 2026.",
+      "Lisensi MIT. API yang sama: 189 bintang, 24 fork, 2 isu terbuka, bahasa Rust. Repo dibuat 19 Maret 2026, push terakhir 29 September 2026. Wawasan AI tidak membangun binernya.",
+    ],
+  },
+  "ARahim3/DigUp": {
+    description:
+      "DigUp mencari isi berkas di Mac dengan EmbeddingGemma 2, di mesin sendiri: foto, PDF, rekaman, video, dan kode bila pencarian kode dinyalakan. README membatasi ini pada Apple Silicon dan macOS 14 atau lebih baru.",
+    highlights: [
+      "README menulis indeks tidak meninggalkan Mac. Jaringan disebut dipakai untuk mengunduh model sekali dan memeriksa pembaruan sekali sehari, dan pemeriksaan itu bisa dimatikan.",
+      "Model yang disebut: EmbeddingGemma 2, Apache 2.0, 740 juta parameter, dirilis Google DeepMind pada Oktober 2026 menurut README. Unduhan model yang ditulis README berukuran 865 MB. Pencarian memakai vektor 768 dimensi lewat llama.cpp di GPU.",
+      "Pencarian kode mati sampai dinyalakan, lalu kueri dimulai dengan `code:`. README menulis folder tersembunyi seperti `~/.ssh`, sertifikat, dan berkas yang menyerupai kunci dilewati.",
+      "Lisensi MIT, ditulis Swift. API GitHub pada 12 Oktober 2026: 1.091 bintang, 76 fork, 22 isu terbuka. Repo dibuat 8 Oktober 2026. Rilis v0.6.0 terbit 9 Oktober 2026. Ulasan alat hari ini memakai README yang sama.",
     ],
   },
 };

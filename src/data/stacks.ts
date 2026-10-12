@@ -4580,6 +4580,46 @@ export const stacks: Review[] = [
     date: "2026-10-11",
     featured: false,
   },
+  {
+    slug: "digup",
+    name: "DigUp",
+    tagline: "Pencari isi berkas di Mac, modelnya diunduh sekali, indeksnya tinggal di mesin",
+    tags: ["Open Source", "Pencarian", "macOS", "Lokal"],
+    score: 7.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 6.4 },
+      { label: "Kualitas Output", value: 7.6 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 6.6 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "DigUp duduk di peringkat sembilan tren harian 12 Oktober 2026. README-nya mencari foto, PDF, rekaman, video, dan kode di Mac lewat EmbeddingGemma 2, dengan indeks yang disebut tidak meninggalkan mesin.",
+    pros: [
+      "README menulis tidak ada akun dan tidak ada telemetri. Jaringan dipakai untuk mengunduh model sekali dan, kalau tidak dimatikan, memeriksa pembaruan sekali sehari",
+      "Pencarian disebut menggabungkan arti dan kata persis, jadi nomor faktur tidak hanya mengandalkan vektor",
+      "Kode tidak ikut terindeks sampai pencarian kode dinyalakan, dan README menulis kunci, sertifikat, serta folder seperti `~/.ssh` dilewati",
+      "Lisensi MIT. API GitHub pada 12 Oktober 2026: 1.091 bintang dan 76 fork. Rilis v0.6.0 terbit 9 Oktober 2026",
+    ],
+    cons: [
+      "README membatasi pemakaian pada Mac Apple Silicon dengan macOS 14 atau lebih baru. Mesin Windows yang umum di banyak kantor tidak masuk syarat itu",
+      "Unduhan model yang ditulis README berukuran 865 MB. Wawasan AI tidak mengunduhnya hari ini",
+      "Angka 740 juta parameter, Apache 2.0, dan lebih dari 100 bahasa adalah kalimat README tentang EmbeddingGemma 2, bukan kartu model yang diukur ulang di sini",
+      "Membangun dari sumber disebut membutuhkan Xcode 26. Itu syarat README, belum diuji di mesin editorial",
+    ],
+    verdict:
+      "Masuk akal di Mac pribadi yang folder unduhan dan rekamannya sudah berantakan, asal folder yang diindeks memang folder yang boleh dibaca alat lokal. Jangan menyalakan pencarian kode pada repo yang memegang rahasia klien sebelum membaca daftar lewatan di README.",
+    body: [
+      "DigUp dibuat di repositori ARahim3/DigUp. README yang dicek 12 Oktober 2026 mendeskripsikan pencarian berkas di Mac berdasarkan isinya, memakai EmbeddingGemma 2 dari Google DeepMind. Kalimat README tentang model itu: multimoda, lebih dari 100 bahasa, lisensi Apache 2.0, 740 juta parameter, dan dirilis Oktober 2026. API GitHub hari yang sama mencatat 1.091 bintang, 76 fork, 22 isu terbuka, bahasa Swift, dan lisensi MIT. Repo dibuat 8 Oktober 2026. Push terakhir 10 Oktober 2026. Rilis v0.6.0 terbit 9 Oktober 2026. Trendshift menaruhnya di peringkat sembilan. Wawasan AI tidak memasang DMG dan tidak menjalankan pencarian.",
+      "Batas mesinnya tertulis di bagian pasang. Apple Silicon, macOS 14 atau lebih baru, dan README menambah bahwa uji mereka memakai macOS 26. Ada dua jalan yang disebut: seret dari DMG rilis, atau `brew install --cask arahim3/tap/digup`. Pintasan bawaan ⇧⌘Space membuka panel dari aplikasi lain. Video dan rekaman disebut terbuka di saat yang cocok. PDF disebut menandai kata di Preview. Hasil kode disebut terbuka di editor pada barisnya, dengan Zed, VS Code, Cursor, Xcode, Sublime Text, dan JetBrains ada di daftar README.",
+      "Yang paling perlu dibaca sebelum mengindeks folder kantor ada di bagian privasi dan jenis berkas. README menulis tidak ada yang diindeks meninggalkan Mac, DigUp tidak mengubah atau mengunggah berkas, dan hanya folder yang dipilih yang dibaca. PDF panjang mengambil 30 halaman dulu, sisanya belakangan, sampai 5.000 halaman per berkas. Audio dipotong jendela 30 detik yang tumpang-tindih. Video mengambil bingkai plus jalur suaranya. Di luar folder kode yang dinyalakan, kode tidak dibaca. Di dalam proyek kode, README menulis yang dibaca di luar mode kode hanyalah tangkapan layar. Folder tersembunyi, bundel aplikasi, cache, berkas yang menyerupai kunci, dan yang diabaikan git disebut dilewati. Indeks disebut satu berkas SQLite berisi vektor 768 dimensi dari build 8-bit ggml lewat llama.cpp di GPU, ditambah indeks kata. Bagian kode README memberi contoh waktu: sekitar 20 detik untuk aplikasi kecil, sekitar 20 menit dan 130 MB indeks untuk seluruh llama.cpp. Angka waktu itu klaim README.",
+      "Untuk pengembang di Indonesia, batas sistem operasinya datang lebih dulu. README tidak menulis Windows atau Linux. Yang punya Mac Apple Silicon mendapat pencari lokal yang tidak menambah kunci model, dengan catatan unduhan 865 MB sekali dan tagihan listrik indeks pertama. Klaim seratus bahasa lebih, termasuk contoh README bahwa kueri Inggris dapat menemukan catatan Bengali atau Arab, tetap klaim README sampai diuji pada arsip sendiri. Pencarian bahasa Indonesia tidak disebut sebagai uji terpisah di bagian yang dibaca. Nyalakan dulu pada satu folder unduhan yang tidak berisi kontrak klien, lihat apakah hasilnya membuka halaman yang dimaksud, baru tambah folder berikutnya. Seribu bintang tidak mengubah kalimat README bahwa alat ini hanya untuk Mac.",
+    ],
+    link: "https://github.com/ARahim3/DigUp",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-12",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

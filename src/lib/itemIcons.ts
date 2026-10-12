@@ -53,6 +53,8 @@ const SLUG_ICONS: Record<string, string> = {
   "deepseek-bot": "https://github.com/FeiZhuLulu.png",
   "agent-chrome-relay": "https://github.com/aindeev.png",
   "grok-4-7": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+  digup: "https://github.com/ARahim3.png",
+  "mimo-v2-6-pro": "https://www.google.com/s2/favicons?domain=mimo.xiaomi.com&sz=128",
 };
 
 function githubOrgIcon(link: string): string | null {

@@ -5208,6 +5208,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "yusril-akurasi-model-tidak-memberi-kewenangan",
+    title: "Jakarta Satu: Yusril, Akurasi Model Tidak Memberi Kewenangan",
+    excerpt:
+      "Dua laporan Jakarta Satu pada 12 Oktober mengutip pidato Yusril yang diunggah ke YouTube pada 11 Oktober. Siaran Kemenko dan ANTARA menaruh konferensi yang sama di Surakarta pada 8 Oktober, tanpa kalimat akurasi itu.",
+    category: "Analisis",
+    date: "2026-10-12",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Senin 12 Oktober 2026, Jakarta Satu menurunkan dua laporan berurutan. Pukul 06.55, judulnya menaruh Yusril Ihza Mahendra pada kalimat bahwa kecerdasan buatan tidak memberi kewenangan dan manusia tetap bertanggung jawab. Pukul 06.59, laporan kedua menghitung lima persoalan konstitusional bila AI dipakai dalam kekuasaan publik. Keduanya menulis bahwa pidato itu diunggah di kanal YouTube Yusril pada Ahad 11 Oktober, dari Konferensi Internasional Demokrasi dalam Ketahanan Nasional 2026 di Universitas Sebelas Maret.",
+          "Tanggal konferensinya sudah lebih dulu tercetak di tempat lain. Siaran Kemenko Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan bertanda 8 Oktober 2026, dateline Surakarta, judulnya menaruh logika konstitusi di atas logika mesin. ANTARA Jawa Barat menurunkan laporan yang sama pada Kamis 8 Oktober pukul 23.43 WIB, dengan keterangan foto bahwa Yusril berada di konferensi itu di Surakarta pada 8 Oktober. Jadi teks yang baru pada Senin pagi ini adalah laporan Jakarta Satu, bukan tanggal baru untuk konferensinya.",
+        ],
+      },
+      {
+        heading: "Yang sudah tertulis pada 8 Oktober",
+        paragraphs: [
+          "Siaran Kemenko menulis bahwa Yusril menyampaikan pidato di 6th International Conference on Democracy and National Resilience, disingkat 6th ICDNR 2026. Kalimat yang dikutip langsung di situ: logika konstitusi harus berada di atas logika mesin, dan efisiensi teknologi tidak dengan sendirinya memberi legitimasi pada setiap keputusan publik. Kalimat kedua yang juga langsung: setiap keputusan hukum tetap membutuhkan tanggung jawab manusia, data dan teknologi boleh membantu, tetapi keadilan tidak dapat semata-mata ditentukan oleh angka dan algoritma.",
+          "Badan siaran yang sama menaruh AI di administrasi publik, arus informasi digital termasuk konten manipulatif dan propaganda politik, serta penegakan hukum. Pada bagian terakhir, teknologi disebut boleh membantu administrasi dan analisis bukti, tanpa menghilangkan pendekatan humanistik. Wakil Rektor UNS, Prof. Irwan Trinugroho, dikutip soal ruang akademik konferensi itu dan soal 50 tahun UNS sejak 1976. Akademisi UNS Gayatri Dyah Suprobowati dikutip soal pertemuan lintas negara. ANTARA Jawa Barat mengulang kerangka itu, dan pada satu kutipan menulis bahwa pernyataan Yusril dikonfirmasi di Jakarta. Keterangan fotonya tetap menaruh dia di Surakarta pada Kamis.",
+        ],
+      },
+      {
+        heading: "Kalimat yang hanya ada di Jakarta Satu",
+        paragraphs: [
+          "Laporan pukul 06.55 mengutip Yusril: persoalan pokok tata kelola AI bukan memberi hukum kepada mesin, melainkan memastikan manusia dan lembaga yang memakai mesin tetap berada di bawah hukum. Laporan itu menyebut tugasnya konstitusionalisasi kekuasaan algoritmik, yaitu menaruh pemakaian AI di bawah legalitas, hak asasi manusia, akuntabilitas, dan pengawasan demokratis. Yusril, masih menurut laporan itu, mengatakan AI belum diakui sebagai subjek hukum dalam hukum positif Indonesia. Rantai tanggung jawab, kutipnya, harus sampai ke orang atau badan hukum yang merancang, menyediakan, memilih, mengoperasikan, dan terutama memakai keluaran sistem sebagai dasar bertindak.",
+          "Kalimat yang paling rapat ada di laporan yang sama: betapa akurat sebuah model, akurasi tidak memberi hak untuk memerintah, karena kewenangan lahir dari hukum. Ilustrasi yang dilaporkan: seseorang ditolak layanan karena dinilai berisiko tinggi, atau migran diperiksa lebih lanjut karena pola yang model anggap mencurigakan, dan negara tidak boleh menjawab hanya dengan karena sistem menentukan seperti itu. Laporan itu juga mengingatkan kuliah umum Yusril di Fakultas Hukum Universitas Padjadjaran pada 27 Agustus 2025, bahwa di balik setiap algoritma ada manusia yang bertanggung jawab. Siaran Kemenko 8 Oktober yang dibaca hari ini tidak memuat kalimat akurasi, tidak memuat status subjek hukum, dan tidak memuat tanggal kuliah Unpad itu.",
+        ],
+      },
+      {
+        heading: "Lima soal, dari laporan pukul 06.59",
+        paragraphs: [
+          "Empat menit kemudian Jakarta Satu merinci lima persoalan yang disebutnya perlu terus diuji bila AI masuk kekuasaan publik. Pertama, kewenangan dan tanggung jawab: keputusan bisa tetap ditandatangani manusia, tetapi penilaiannya sudah berpindah ke mesin. Laporan itu menulis bahwa Yusril merujuk Undang-Undang Nomor 30 Tahun 2014 tentang Administrasi Pemerintahan, khususnya Pasal 8, yang mensyaratkan keputusan dibuat pejabat berwenang. Editorial tidak membuka naskah undang-undang hari ini, jadi nomor pasal itu tetap kutipan laporan, bukan hasil cek pasal.",
+          "Kedua, keadilan prosedural. Warga, menurut laporan, tidak perlu memahami ribuan baris kode, tetapi harus tahu apakah AI dipakai, faktor apa yang memengaruhi, siapa yang bertanggung jawab, dan ke mana keberatan diajukan. Ketiga, kesetaraan: data historis dapat membawa bias lama, dan variabel yang tampak netral dapat menjadi proksi identitas. Keempat, privasi dan batas pengawasan. Laporan menulis bahwa Yusril merujuk putusan Mahkamah Konstitusi tentang perlindungan data pribadi, tanpa mencetak nomor putusannya, lalu mengulang istilah negara panoptikon dari kuliah Unpad. Kutipan yang dilaporkan: tidak setiap hal yang secara teknis mungkin dilakukan dengan sendirinya sah dilakukan oleh negara. Kelima, integritas ruang informasi. AI generatif disebut menurunkan biaya produksi teks, gambar, suara, dan video, sekaligus biaya pemalsuan. Laporan itu menulis bahwa penanganan manipulasi digital tidak boleh menjadi alasan membatasi kritik yang sah, dan yang disebut lebih tepat adalah kewajiban proporsional soal asal-usul serta pelabelan konten sintetis, tanggung jawab atas peniruan yang merugikan, dan koreksi yang cepat.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Tidak ada nomor rancangan peraturan, tanggal berlaku, atau daftar instansi percontohan di keempat teks yang dibaca hari ini. Yang bertambah pada 12 Oktober adalah cara Jakarta Satu memotong pidato yang diunggah 11 Oktober: akurasi bukan kewenangan, dan lima soal konstitusional disebut satu per satu. Siaran 8 Oktober sudah memasang kalimat yang lebih pendek, bahwa efisiensi tidak memberi legitimasi dan keadilan tidak ditentukan algoritma. Tim yang menjual skor risiko ke layanan publik, atau yang menaruh model di balik penolakan layanan, berhadapan dengan kedua lapisan itu sekaligus.",
+          "Wawasan AI tidak menonton unggahan YouTube yang Jakarta Satu sebut sebagai sumber kutipan 11 Oktober. Karena itu kalimat akurasi dan lima soal tetap dilekatkan pada laporan 12 Oktober, bukan pada transkrip yang editorial pegang sendiri. Siaran Kemenko dan ANTARA cukup untuk menetapkan bahwa pidato di Surakarta terjadi pada 8 Oktober dan bahwa dua kutipan langsung di atas memang ada di teks resmi hari itu. Bagian yang belum bisa disamakan adalah segala kalimat yang hanya hidup di Jakarta Satu.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada Senin pagi ini, teks baru berbahasa Indonesia tentang pidato itu adalah dua laporan Jakarta Satu pukul 06.55 dan 06.59. Konferensinya sendiri, menurut Kemenko dan ANTARA, sudah berlangsung di Surakarta pada 8 Oktober. Yang tidak muncul di siaran 8 Oktober, dan muncul di laporan Senin, adalah kalimat bahwa akurasi model tidak memberi hak untuk memerintah.",
+          "Catatan editorial: artikel ini disusun dari siaran Kemenko Kumham Imipas, Menko Yusril Tekankan Logika Konstitusi Harus Tetap di Atas Logika Mesin dalam Tata Kelola AI, bertanda 8 Oktober 2026; dari laporan ANTARA Jawa Barat, 8 Oktober 2026 pukul 23.43 WIB; serta dari dua laporan Jakarta Satu pada 12 Oktober 2026 pukul 06.55 dan 06.59. Kutipan Yusril diambil dari laporan-laporan itu. Nomor Pasal 8 dan putusan Mahkamah Konstitusi tidak dicek ke naskahnya. Unggahan YouTube tidak ditranskrip mandiri. Cek kanal kementerian dan rekaman konferensi untuk versi yang berlaku.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

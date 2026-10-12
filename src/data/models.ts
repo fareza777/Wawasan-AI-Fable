@@ -5176,6 +5176,49 @@ link: "https://www.anthropic.com",
     date: "2026-10-11",
     featured: false,
   },
+  {
+    slug: "mimo-v2-6-pro",
+    name: "MiMo-V2.6-Pro",
+    tagline: "Indeks 46, bobot terbuka MIT, keluaran di bawah median kelas ukurannya",
+    tags: ["Xiaomi", "Open Weights", "Reasoning", "API"],
+    score: 7.6,
+    scores: [
+      { label: "Penalaran", value: 8.0 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 6.2 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 46,
+    aa_price_input: 0.435,
+    aa_price_output: 0.87,
+    aa_synced_at: "2026-10-12",
+    summary:
+      "Artificial Analysis, dicek 12 Oktober 2026, memberi MiMo-V2.6-Pro intelligence index 46 dan menandainya open weights. Kartu kecepatan menulis 48,9 token per detik, peringkat 57 dari 117, pada kelas bobot terbuka berukuran besar.",
+    pros: [
+      "Intelligence index 46, di atas median 18 untuk model bobot terbuka berukuran serupa (sumber: Artificial Analysis)",
+      "Kartu biaya: $0,435 masukan dan $0,87 keluaran per juta token, diskon cache 99 persen, $0,13 per tugas indeks, peringkat biaya 15 dari 117",
+      "Spesifikasi halaman: masukan teks, gambar, ucapan, dan video; keluaran teks; konteks 1 juta token; 1,0 triliun parameter total dan 42 miliar aktif; lisensi MIT",
+      "FAQ menulis tarif campuran $0,18 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, lewat API Xiaomi",
+    ],
+    cons: [
+      "Keluaran 48,9 token per detik, di bawah median FAQ 65,9. Kartu kecepatan menulis peringkat 57 dari 117",
+      "FAQ menyebut waktu ke token pertama 3,51 detik pada API Xiaomi, median kelas 1,87 detik. Judul bagian latensi di halaman yang sama menyebut metrik tampilannya waktu ke token jawaban pertama dan sudah memasukkan waktu berpikir",
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Median harga di ringkasan perbandingan dan di FAQ tidak sama. Verbosity 140 juta token disebut agak di atas median, sementara median yang dicetak juga 140 juta",
+    ],
+    verdict:
+      "Masuk akal untuk tim yang ingin bobot MIT di kelas indeks 46 dan tagihan per tugas yang kartu AA taruh di $0,13, selama jalur itu tidak harus membalas lebih cepat dari median kelasnya. Ukur satu pekerjaan nyata, karena dua bagian halaman yang sama tidak memakai median harga yang sama.",
+    body: [
+      "MiMo-V2.6-Pro adalah model reasoning dari Xiaomi yang halamannya di Artificial Analysis dibaca 12 Oktober 2026. Kartu di bagian atas menandai bobot terbuka dan rilis September 2026. FAQ memperinci tanggal rilis 21 September 2026. Spesifikasi yang terpasang: masukan teks, gambar, ucapan, dan video; keluaran teks; jendela konteks 1,0 juta token; reasoning menyala. FAQ menulis 1,0 triliun parameter total dan 42 miliar aktif, serta menandainya Mixture of Experts. Lisensi yang dipasang halaman itu MIT, dan bobot disebut tersedia di Hugging Face. FAQ menulis model ini tersedia lewat 5 penyedia API. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, diakses 12 Oktober 2026.) Intelligence index-nya 46 pada indeks versi 4.3.2. FAQ menaruh skor 46 di atas median 18 untuk model bobot terbuka berukuran serupa. Kartu intelijen tidak mencetak peringkat n dari 117, jadi editorial tidak mengarang peringkat itu. Kelas pembanding yang dijelaskan halaman: model bobot terbuka berukuran besar, di atas 150 miliar parameter, dan halaman itu menulis ada 117 model di kelas tersebut. Harga pada kartu biaya: $0,435 per juta token masukan dan $0,87 per juta token keluaran, diskon cache 99 persen, biaya rata-rata $0,13 per tugas indeks, peringkat biaya 15 dari 117. FAQ membulatkan masukan menjadi $0,43 dan menulis tarif campuran $0,18 per juta token pada rasio 7:2:1. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Dua blok teks di halaman itu tidak saling mengunci pada median. Ringkasan perbandingan menyebut masukan $0,43 agak mahal terhadap median $0,30, dan keluaran $0,87 berharga sedang terhadap median $1,15. FAQ pada halaman yang sama menyebut masukan $0,43 lebih baik dari rata-rata terhadap median $0,47, dan keluaran $0,87 sangat kompetitif terhadap median $1,94. Editorial mengutip keduanya dan tidak memilih median yang mana yang berlaku. Kecepatan lebih rapat: kartu menulis 48,9 token per detik dan peringkat 57 dari 117. FAQ menulis 48,9 token per detik pada API Xiaomi, di bawah median 65,9. Ringkasan membulatkan menjadi 49 token per detik terhadap rata-rata 66. FAQ juga menulis waktu ke token pertama 3,51 detik, median 1,87 detik. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Verbosity: kartu menulis 140 juta token keluaran dan peringkat 24 dari 117. Ringkasan dan FAQ sama-sama menyebut 140 juta terhadap median 140 juta, lalu tetap menyebutnya agak verbose atau agak di atas rata-rata. Angka dan kata sifat itu dibiarkan seperti tercetak.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 46, bobot MIT, dan biaya $0,13 per tugas indeks pada kartu 12 Oktober. Biaya per tugas itu sudah memasukkan cara AA menimbang token, jadi harga per token bukan tagihan akhir. Karena keluaran duduk di bawah median kelas ukurannya, agen yang harus mengisi layar dengan cepat belum punya alasan kecepatan dari halaman ini. Karena bobot disebut tersedia, tim yang ingin menjalankan sendiri punya jalur yang tidak ada pada model proprietary yang diulas pekan ini, asal mesinnya muat untuk 1,0 triliun parameter dengan 42 miliar aktif. Masukan ucapan dan video ada di spesifikasi halaman, dan itu bukan angka kualitas yang diukur editorial. Pakai untuk draf dan pekerjaan multimoda yang muat di anggaran $0,13 per tugas indeks, lalu bandingkan satu keluaran dengan model yang sudah jalan sebelum mengganti produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/mimo-v2-6-pro",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-12",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
