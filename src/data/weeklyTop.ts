@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 12 Oktober 2026: 108.042 bintang dan 23.912 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 13 Oktober 2026: 161.206 bintang dan 37.716 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3165,6 +3165,66 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Model yang disebut: EmbeddingGemma 2, Apache 2.0, 740 juta parameter, dirilis Google DeepMind pada Oktober 2026 menurut README. Unduhan model yang ditulis README berukuran 865 MB. Pencarian memakai vektor 768 dimensi lewat llama.cpp di GPU.",
       "Pencarian kode mati sampai dinyalakan, lalu kueri dimulai dengan `code:`. README menulis folder tersembunyi seperti `~/.ssh`, sertifikat, dan berkas yang menyerupai kunci dilewati.",
       "Lisensi MIT, ditulis Swift. API GitHub pada 12 Oktober 2026: 1.091 bintang, 76 fork, 22 isu terbuka. Repo dibuat 8 Oktober 2026. Rilis v0.6.0 terbit 9 Oktober 2026. Ulasan alat hari ini memakai README yang sama.",
+    ],
+  },
+  "sendrepute/sendrepute-campaigns": {
+    description:
+      "SendRepute Campaigns membagikan runtime yang sudah dikompilasi untuk kampanye dan audiens di server sendiri, bukan kode sumber monorepo. API GitHub tidak mengembalikan lisensi SPDX.",
+    highlights: [
+      "README menulis pengiriman berjalan dari server pemakai ke SMTP yang ia pasang sendiri, bukan lewat proksi SMTP pusat. Aktivasi memakai kunci API SendRepute. Kalimat yang sama menulis tidak ada deposit untuk aktivasi, dan pengelolaan lokal gratis. AI yang di-host disebut opsional dan butuh persetujuan harga.",
+      "Berkas README.id.md ada di daftar bahasa. Wawasan AI tidak membandingkan terjemahannya dengan naskah Inggris hari ini, dan tidak menjalankan setup.sh.",
+      "API GitHub pada 13 Oktober 2026: 562 bintang, 54 fork, tidak ada isu terbuka, bahasa Shell, ukuran repositori 332.833 KB. Dibuat 25 September 2026. Push terakhir 4 Oktober 2026. Rilis v0.1.44 terbit hari yang sama.",
+      "Halaman rumah di API menunjuk ke demo di sendrepute.com/campaigns. README menulis demo itu tidak mengirim pesan sungguhan.",
+    ],
+  },
+  "onehumanbeing/esp32-iphone-agent": {
+    description:
+      "ESP32 iPhone Agent mengaku menggerakkan iPhone sungguhan lewat cermin AirPlay dan papan ESP32-S3 yang masuk sebagai tetikus USB. README menulis tidak perlu akun pengembang, Xcode, atau jailbreak.",
+    highlights: [
+      "Mata yang disebut README adalah cermin AirPlay ke UxPlay di komputer. Tangan adalah papan ESP32-S3 di port USB ponsel, dengan AssistiveTouch menyalakan penunjuk. Otaknya model visi yang kompatibel dengan API OpenAI, di awan atau di mesin sendiri.",
+      "Tabel README membatasi komputer pada macOS atau Linux. Harga sekitar $7 adalah kalimat README tentang papan Seeed Studio XIAO ESP32S3, bukan harga yang dicek toko hari ini.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 13 Oktober 2026: 704 bintang, 86 fork, tidak ada isu terbuka. Repo dibuat 11 Oktober 2026, push terakhir 12 Oktober 2026. Daftar rilis GitHub kosong.",
+      "Wawasan AI tidak mem-flash papan dan tidak menyalin blok README yang meminta nama Wi-Fi serta kunci API ke agen coding.",
+    ],
+  },
+  "Lertaro/Lertaro": {
+    description:
+      "Lertaro adalah peluncur pencarian berkas untuk Windows yang membaca jurnal USN dan $MFT, lalu mengaku tanpa telemetri. README memperingatkan agar unduhan hanya diambil dari repo, situs, dan rilis resmi.",
+    highlights: [
+      "README: .NET 10 dan WPF, alternatif terbuka untuk Listary dan Everything. Ada pemasang serta paket portabel untuk x64 dan ARM64. Membangun dari sumber disebut butuh Windows 10 atau 11 dan SDK .NET 10.",
+      "Tiga proses yang disebut README: layanan latar, antarmuka WPF, dan pembantu hook. Kalimat privasinya: seratus persen lokal, tanpa telemetri. Wawasan AI tidak memasang pemasangnya.",
+      "Lisensi MIT, ditulis C#. API GitHub pada 13 Oktober 2026: 955 bintang, 46 fork, 13 isu terbuka. Repo dibuat 6 Agustus 2026, push terakhir 12 Oktober 2026. Situsnya lertaro.github.io.",
+      "API rilis mengembalikan v5.9.3 pada 11 Oktober 2026 pukul 12.51 UTC dan v5.9.2 pada 11 Oktober 2026 pukul 12.52 UTC. Dua cap waktu itu dibiarkan seperti tercatat. Ulasan alat hari ini memakai README yang sama.",
+    ],
+  },
+  "vxcontrol/pentagi": {
+    description:
+      "PentAGI adalah sistem multi-agen yang README deskripsikan untuk uji penetrasi otonom di server sendiri. README menulis pemakaiannya untuk pengujian yang diizinkan. Wawasan AI tidak memasangnya dan tidak mengulang daftar alat atau langkah pemasangannya.",
+    highlights: [
+      "Kalimat pembuka README menaruh pekerjaan di sandbox Docker dan menyerahkan laporan kepada pemakai. Audiens yang disebut: insinyur keamanan, penguji penetrasi, peneliti, dan tim merah, pada infrastruktur mereka sendiri.",
+      "Pengembang yang disebut README adalah VXControl di Dubai. Situs di API: pentagi.com. Rilis v2.2.0 terbit 5 Oktober 2026.",
+      "Lisensi MIT, ditulis Go. API GitHub pada 13 Oktober 2026: 27.036 bintang, 3.840 fork, 20 isu terbuka. Repo dibuat 6 Januari 2025, push terakhir 9 Oktober 2026.",
+      "Tidak ada perintah pasang, nama alat uji, atau target di narasi ini. Mengarahkan sistem seperti ini ke mesin yang tidak kamu miliki atau tidak kamu izinkan adalah akses tanpa hak.",
+    ],
+  },
+  "lgse/strata": {
+    description:
+      "Strata adalah pengelola berkas Linux yang mengutamakan papan ketik: kolom, ikon, dan daftar, dengan pratinjau berkas. README menaruh Arch Linux dan Omarchy sebagai lingkungan utama.",
+    highlights: [
+      "README mensyaratkan glibc 2.39 atau lebih baru pada biner yang beredar. Integrasi yang disebut meliputi portal pemilih berkas, berbagi jaringan, dan, di Omarchy, membuka volume terenkripsi.",
+      "Pemasang yang ditulis README memeriksa digest SHA-256 dan provenance GitHub Actions sebelum memasang rilis stabil. Wawasan AI tidak menjalankan skrip itu.",
+      "Lisensi MIT, ditulis Rust. API GitHub pada 13 Oktober 2026: 741 bintang, 74 fork, 64 isu terbuka. Repo dibuat 28 Agustus 2026, push terakhir 13 Oktober 2026. Situsnya stratafiles.io.",
+      "Rilis v1.0.0 terbit 12 Oktober 2026 pukul 20.15 UTC. Tiga entri yang API kembalikan di bawahnya pada 11 dan 12 Oktober, rc.2, rc.1, dan nightly, masih berlabel prarilis.",
+    ],
+  },
+  "FelipePrado0/gow3_pc": {
+    description:
+      "gow3_pc mengaku menjalankan God of War III Remastered di Windows lewat kode x86-64 asli ditambah inti grafis Vulkan. README menulis berkas gim tidak ikut, dan proyek ini tidak berafiliasi dengan Sony.",
+    highlights: [
+      "README: pemakai membawa dump sendiri. Yang diuji disebut CUSA01623 dan CUSA01715, versi 01.00 dan 01.02. God of War disebut merek Sony Interactive Entertainment.",
+      "Angka kelancaran di README adalah mesin uji penulis: Radeon RX 6700 XT, Ryzen 5 5600X, 32 GB, rata-rata 144 bingkai per detik di 1080p pada rentang 55 sampai 240, dan rata-rata 108 di 4K dengan FSR 1. Wawasan AI tidak menjalankan gimnya.",
+      "API GitHub pada 13 Oktober 2026 menandai lisensi GPL-2.0. README menulis GNU GPL v2 atau yang lebih baru. Dua penanda itu dibiarkan berdampingan. Bintang 869, fork 39, 54 isu terbuka, bahasa C++. Repo dibuat 8 Oktober 2026.",
+      "Rilis windows-v2.1.7 terbit 13 Oktober 2026 pukul 00.47 UTC. Tiga unggahan uji pada hari yang sama masih prarilis. Linux disebut AppImage eksperimental.",
     ],
   },
 };

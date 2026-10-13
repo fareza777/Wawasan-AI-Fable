@@ -5219,6 +5219,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-12",
     featured: false,
   },
+  {
+    slug: "solar-mini-4",
+    name: "Solar Mini 4",
+    tagline: "Indeks 24 di kelas harganya, murah per tugas, keluaran di bawah median",
+    tags: ["Upstage", "Proprietary", "Reasoning", "API"],
+    score: 7.2,
+    scores: [
+      { label: "Penalaran", value: 7.2 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 6.4 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 24,
+    aa_price_input: 0.1,
+    aa_price_output: 0.4,
+    aa_synced_at: "2026-10-13",
+    summary:
+      "Artificial Analysis, dicek 13 Oktober 2026, memberi Solar Mini 4 intelligence index 24 dan menandainya proprietary. Kartu intelijen menulis peringkat 34 dari 175. Keluaran 75,6 token per detik pada API Upstage, di bawah median FAQ 107,1.",
+    pros: [
+      "Intelligence index 24, di atas median 13 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis)",
+      "Kartu biaya: $0,10 masukan dan $0,40 keluaran per juta token, diskon cache 90 persen, $0,37 per tugas indeks",
+      "FAQ menulis tarif campuran $0,07 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, lewat API Upstage",
+      "Spesifikasi halaman: masukan teks, keluaran teks, konteks 1 juta token, reasoning menyala, pemutus pengetahuan 1 Februari 2026",
+    ],
+    cons: [
+      "Keluaran 75,6 token per detik, di bawah median FAQ 107,1. Kartu kecepatan menulis peringkat 95 dari 147, sementara teks kelas di halaman yang sama menyebut 175 model",
+      "FAQ menyebut waktu ke token pertama 1,82 detik pada API Upstage, median 1,79 detik. Judul bagian latensi menyebut metrik tampilannya waktu ke token jawaban pertama dan sudah memasukkan waktu berpikir",
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Verbosity 370 juta token, median yang disebut FAQ 95 juta. Kartu verbosity menulis peringkat 58 dari 60. FAQ menulis bobot tidak tersedia dan jumlah parameter 35 miliar",
+    ],
+    verdict:
+      "Masuk akal untuk draf teks yang muat di harga di bawah satu dolar per juta token keluaran, selama tugasnya tidak harus mengisi layar lebih cepat dari median kelasnya. Ukur satu pekerjaan nyata, karena penyebut peringkat di kartu tidak sama dan beberapa grafik masih bertuliskan tidak ada API publik.",
+    body: [
+      "Solar Mini 4 adalah model reasoning dari Upstage yang halamannya di Artificial Analysis dibaca 13 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 22 September 2026 dan menulis pembuatnya Upstage. Spesifikasi yang terpasang: masukan teks, keluaran teks, jendela konteks 1,0 juta token, reasoning menyala, dan pemutus pengetahuan 1 Februari 2026. FAQ menulis pemutus pengetahuan Februari 2026, tanpa mengulang tanggal 1 Februari. FAQ juga menulis 35 miliar parameter dan menandainya proprietary, tersedia lewat 1 penyedia API. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, diakses 13 Oktober 2026.) Intelligence index-nya 24 pada indeks versi 4.3.2. Kartu intelijen menulis peringkat 34 dari 175. FAQ menaruh skor 24 di atas median 13 untuk model pada kisaran harga yang sama. Teks kelas di halaman itu mengatakan ada 175 model di kelas pembanding, yaitu model proprietary yang dibandingkan dengan model proprietary dan bobot terbuka pada kisaran harga yang sama. Caption beberapa grafik di halaman yang sama bertuliskan 28 dari 699 model. Editorial memakai 34 dari 175 untuk peringkat kartu, dan tidak menyamakan caption 28 dari 699 dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,10 per juta token masukan dan $0,40 per juta token keluaran, diskon cache 90 persen, biaya rata-rata $0,37 per tugas indeks, peringkat biaya 50 dari 58. FAQ menulis masukan sangat kompetitif terhadap median $0,25 dan keluaran sangat kompetitif terhadap median $0,87, lalu tarif campuran $0,07 per juta token pada rasio 7:2:1. Ringkasan perbandingan memakai median masukan $0,25 dan median keluaran $0,87 yang sama. Penyebut biaya 58 tidak sama dengan 175 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya tiga tulisan. Kartu menulis 75,6 token per detik dan peringkat 95 dari 147. FAQ menulis 75,6 token per detik pada API Upstage, di bawah median 107,1. Ringkasan membulatkan menjadi 76 token per detik terhadap rata-rata 107. FAQ juga menulis waktu ke token pertama 1,82 detik, median 1,79 detik. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Verbosity: kartu menulis 370 juta token keluaran dan peringkat 58 dari 60. Ringkasan dan FAQ sama-sama menaruh 370 juta terhadap median 95 juta. Beberapa grafik di halaman itu masih bertuliskan tidak ada API yang tersedia untuk publik, sementara FAQ menulis model ini tersedia lewat satu penyedia. Dua kalimat itu tidak disatukan.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 24, harga keluaran $0,40, dan biaya $0,37 per tugas indeks pada kartu 13 Oktober. Biaya per tugas itu sudah memasukkan verbosity, jadi harga per token bukan tagihan akhir. Karena keluaran duduk di bawah median kelas harganya, agen yang harus membalas sebelum pengguna pindah tab belum punya alasan kecepatan dari halaman ini. Karena FAQ menandai bobot tidak tersedia, jalur mesin sendiri belum ada. Masukan gambar juga tidak ada di spesifikasi yang dibaca. Pakai untuk draf teks yang memang muat di anggaran ini, lalu bandingkan satu keluaran dengan model yang sudah jalan sebelum mengganti produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/solar-mini4",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-13",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

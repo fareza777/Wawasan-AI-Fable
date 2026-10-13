@@ -1,0 +1,135 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-13T02:09:17.468Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "sendrepute/sendrepute-campaigns",
+      "owner": "sendrepute",
+      "repo": "sendrepute-campaigns",
+      "description": "Self-hosted SendRepute Campaigns compiled runtime distribution",
+      "githubUrl": "https://github.com/sendrepute/sendrepute-campaigns",
+      "trendshiftUrl": "https://trendshift.io/repositories/283537",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-09-25T04:33:49Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "onehumanbeing/esp32-iphone-agent",
+      "owner": "onehumanbeing",
+      "repo": "esp32-iphone-agent",
+      "description": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No developer account, no Xcode, no jailbreak.",
+      "githubUrl": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "trendshiftUrl": "https://trendshift.io/repositories/299457",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-11T19:10:25Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Lertaro/Lertaro",
+      "owner": "Lertaro",
+      "repo": "Lertaro",
+      "description": "A modern, high-performance local file search and productivity tool for Windows. A sleek, customizable alternative to Everything and Listary built with C# WPF and NT Services, featuring instant NTFS MFT parsing, real-time USN monitoring, and plugin support.",
+      "githubUrl": "https://github.com/Lertaro/Lertaro",
+      "trendshiftUrl": "https://trendshift.io/repositories/134945",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-08-06T05:00:57Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "vxcontrol/pentagi",
+      "owner": "vxcontrol",
+      "repo": "pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "githubUrl": "https://github.com/vxcontrol/pentagi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15161",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-01-06T22:22:48Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "githubUrl": "https://github.com/storytold/artcraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/19042",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2022-03-31T23:19:12Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "lgse/strata",
+      "owner": "lgse",
+      "repo": "strata",
+      "description": "A fast, keyboard-first file manager for Linux",
+      "githubUrl": "https://github.com/lgse/strata",
+      "trendshiftUrl": "https://trendshift.io/repositories/198291",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-08-28T22:41:07Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "wheresryan22/anatomy",
+      "owner": "wheresryan22",
+      "repo": "anatomy",
+      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
+      "githubUrl": "https://github.com/wheresryan22/anatomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/296609",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-08T10:12:49Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "FelipePrado0/gow3_pc",
+      "owner": "FelipePrado0",
+      "repo": "gow3_pc",
+      "description": "God of War III Remastered (PS4) running natively on Windows 10/11: the game's own x86-64 code, graphics through Vulkan, launcher with community patches (1440p, 4K, 120 FPS). Alpha.",
+      "githubUrl": "https://github.com/FelipePrado0/gow3_pc",
+      "trendshiftUrl": "https://trendshift.io/repositories/299469",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-10-08T01:55:21Z"
+    }
+  ]
+}

@@ -5260,6 +5260,65 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "ahy-92-juta-pekerjaan-dan-sinyal-desa",
+    title: "Kompas: AHY Mengutip 92 Juta Pekerjaan Hilang pada 2030",
+    excerpt:
+      "Laporan Kompas pada 13 Oktober mengangkat pidato AHY di Digital Infrastructure Summit. Angka 170 juta dan 92 juta ada di siaran pers Forum Ekonomi Dunia pada Januari 2025, dengan penggerak yang lebih luas daripada AI.",
+    category: "Analisis",
+    date: "2026-10-13",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selasa 13 Oktober 2026 pukul 07.55 WIB, Kompas.com menurunkan laporan Suhaiela Bahfein, disunting Hilda B Alexander, dari kanal properti. Judulnya menaruh Agus Harimurti Yudhoyono pada dampak kecerdasan buatan: 92 juta pekerjaan bakal hilang pada 2030. Tubuh laporan menulis pidato itu disampaikan di Digital Infrastructure Summit 2026 di Jakarta, Senin 12 Oktober.",
+          "Angka yang sama sudah tayang sehari sebelumnya. Bisnis.com menurunkan laporan Reyhan Fernanda Fajarihza, disunting Leo Dwi Jatmiko, pada Senin 12 Oktober pukul 17.54 WIB. Investortrust menurunkan laporan Rizqi Putra Satria, disunting Fajar Widhiyanto, pada Senin pukul 17.01 WIB. ANTARA menurunkan laporan terpisah pada Senin pukul 15.52 WIB. Laporan ANTARA yang dibaca hari ini tidak memuat 92 juta atau 170 juta.",
+        ],
+      },
+      {
+        heading: "Yang Kompas cetak pada Selasa pagi",
+        paragraphs: [
+          "Kompas menulis bahwa AHY mengingatkan perubahan dunia kerja seiring kecerdasan buatan. Berdasarkan proyeksi World Economic Forum 2025, laporan itu menyebut 92 juta pekerjaan diperkirakan hilang pada 2030, dan pada periode yang sama 170 juta pekerjaan baru diproyeksikan muncul. Kutipan langsung yang dicetak: tahun 2030 itu kurang lebih 170 juta diproyeksikan akan hadir pekerjaan baru, sedangkan sebaliknya 92 juta ini akan hilang dari kehidupan sehari-hari kita.",
+          "Kalimat berikutnya di laporan yang sama meminta orang masuk ke pekerjaan baru, jangan menjadi korban pekerjaan yang hilang dan tidak lagi diperlukan. AHY, masih menurut Kompas, menekankan peningkatan dan pembaruan keterampilan. Kutipannya: kalau tidak tertinggal, usang pekerjaannya, usang keterampilannya, usang, maka harus diperbaharui, di-upgrade agar tidak ketinggalan. Bagian lain menyebut peluang di industri, pertanian, logistik, dan pelayanan publik. Untuk pertanian, teknologi disebut bisa membantu memperkirakan cuaca, mengelola lahan, dan menaikkan produktivitas. Untuk UMKM, pemasaran, jangkauan pasar, dan keputusan bisnis. Penutupnya meminta kolaborasi pemerintah, dunia usaha, akademisi, dan masyarakat.",
+        ],
+      },
+      {
+        heading: "Angka yang hanya hidup di Bisnis dan Investortrust",
+        paragraphs: [
+          "Bisnis menulis 170 juta pekerjaan baru dapat hadir karena keberadaan AI, sementara 92 juta berpotensi hilang. Kata karena keberadaan AI itu ada di parafrasa Bisnis, bukan di kutipan langsung yang laporan itu cetak. Bisnis juga menulis satu dari empat pekerja di dunia telah terekspos penggunaan AI, 59 persen pekerjaan memerlukan pelatihan ulang dan peningkatan kemampuan, serta sekitar 2,4 miliar penduduk dunia telah menjadi pengguna aktif AI. Di Indonesia, laporan itu menulis 82 persen masyarakat merupakan pengguna aktif internet. Kutipan infrastruktur di Bisnis dekat dengan kalimat ANTARA: dukungan infrastruktur di seluruh wilayah supaya ekonomi digital tumbuh berbarengan.",
+          "Investortrust menaruh kutipan langsung yang tidak ada di tubuh Kompas yang dibaca hari ini: lebih dari 3.500 desa masih black spot atau tidak memiliki sinyal yang kuat. Laporan yang sama menulis hampir 82 persen masyarakat pengguna aktif internet, Indonesia sebagai ekonomi digital terbesar di Asia Tenggara dengan nilai 100 miliar dolar AS, dan peringkat kesiapan teknologi terdepan di posisi ke-76. Pusat data disebut butuh hitungan energi dan air bersih. Empat fondasi yang dikutip: konektivitas, komputasi, konteks, dan kompetensi. Keputusan strategis disebut tetap domain manusia. Pendapatan nasional bruto per kapita disebut 5.120 dolar AS, dan ambang negara berpendapatan tinggi disebut sekurang-kurangnya 14.000 dolar AS. Editorial tidak membuka dataset Bank Dunia, BPS, atau indeks kesiapan teknologi hari ini, jadi angka-angka itu tetap kutipan Investortrust.",
+        ],
+      },
+      {
+        heading: "Siaran pers Forum Ekonomi Dunia, dan yang tidak diulang media",
+        paragraphs: [
+          "Siaran pers World Economic Forum di Jenewa, 8 Januari 2025, untuk Future of Jobs Report 2025 menulis 170 juta peran baru dan 92 juta yang tergusur sampai 2030, dengan tambahan bersih 78 juta pekerjaan. Penggerak yang disebut siaran pers: kemajuan teknologi, pergeseran demografi, ketegangan geoekonomi, dan tekanan ekonomi. Hijau, pada bullet di halaman yang sama, ikut disebut bersama teknologi, ekonomi, dan demografi. Siaran pers tidak menulis bahwa 92 juta itu hilang karena kecerdasan buatan saja.",
+          "Kalimat 59 di siaran pers juga berbeda bentuknya. Jika tenaga kerja dunia diwakili 100 orang, 59 diproyeksikan membutuhkan reskilling atau upskilling pada 2030, dan 11 di antaranya kecil kemungkinannya menerima pelatihan itu. Bisnis menulis 59 persen pekerjaan. Investortrust menulis 59 persen tenaga kerja. Kompas yang dibaca hari ini tidak mencetak 59. Tambahan bersih 78 juta ada di siaran pers dan tidak muncul di keempat laporan Indonesia yang dibaca.",
+        ],
+      },
+      {
+        heading: "Yang ANTARA tulis, dan yang tidak",
+        paragraphs: [
+          "ANTARA pada 12 Oktober pukul 15.52 WIB mengutip AHY bahwa ekonomi digital, termasuk ekosistem digital, perlu tumbuh berbarengan di berbagai wilayah. Kalimat lanjutannya memperingatkan kesenjangan: yang menguasai teknologi, termasuk kecerdasan buatan, mendapat peluang, dan yang tertinggal berada di belakang. Pemerintah disebut tidak cukup sendiri. Kerja sama pemerintah dan badan usaha, termasuk public private partnership, disebut salah satu jalan pendanaan. Industri gim disebut sudah membuka lapangan kerja. Penyelenggara yang disebut: Biru Muda Project. Pewarta Suharsana Aji Sasra J C, editor Zaenal Abidin.",
+          "Laporan ANTARA itu cukup untuk menetapkan bahwa pidato di summit terjadi pada Senin dan bahwa kecerdasan buatan disebut di dalam peringatan kesenjangan. Ia tidak cukup untuk menetapkan 92 juta, 3.500 desa, atau 59 persen. Keterangan foto ANTARA menaruh AHY di Digital Infrastructure Summit 2026 di Jakarta pada 12 Oktober. Foto yang Bisnis pasang pada laporan pukul 17.54 berasal dari keterangan pers lain, di Stasiun Tanah Abang pada 22 April 2026. Satu keterangan foto Investortrust mencetak tanggal 12/10/2206. Tahun itu dibiarkan sebagai salah ketik yang tercetak, bukan sebagai tanggal acara.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Selasa pagi, teks baru berbahasa Indonesia tentang pidato itu adalah laporan Kompas pukul 07.55. Isinya mengarahkan 170 juta dan 92 juta ke antisipasi kecerdasan buatan. Siaran pers Januari 2025 memasang dua angka itu pada gabungan penggerak, lalu menambahkan 78 juta bersih yang belum diulang Kompas, Bisnis, maupun Investortrust. Tim yang menyusun materi internal sebaiknya mengutip kedua lapisan itu, bukan hanya judul yang menaruh AI sebagai satu-satunya sebab.",
+          "Bagian yang langsung menyangkut desa dan pusat data ada di Investortrust, bukan di tubuh Kompas: black spot sinyal, serta peringatan bahwa pusat data yang tidak dihitung bisa menabrak lingkungan dan air bersih. ANTARA tidak memuat dua kalimat itu. Tidak ada nomor peraturan, tanggal berlaku, atau daftar desa di keempat teks. Caption Kompas di atas tubuh artikel mencetak kalimat lebih dari 3.500 desa masih menghadapi keterbatasan sinyal, tanpa kutipan langsung yang Investortrust pasang.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 13 Oktober, yang baru di Kompas adalah susunan Selasa pagi: 92 juta hilang, 170 juta baru, dan ajakan memperbarui keterampilan, dari pidato Senin di Jakarta. Angka pekerjaan itu sudah ada di siaran pers Forum Ekonomi Dunia pada 8 Januari 2025. Yang tidak ada di siaran pers, dan ada di parafrasa Bisnis, adalah frasa karena keberadaan AI pada 170 juta pekerjaan baru.",
+          "Catatan editorial: artikel ini disusun dari laporan Kompas.com, 13 Oktober 2026 pukul 07.55 WIB, penulis Suhaiela Bahfein dan editor Hilda B Alexander; dari Bisnis.com, 12 Oktober 2026 pukul 17.54 WIB; dari investortrust.id, 12 Oktober 2026 pukul 17.01 WIB; dari ANTARA, 12 Oktober 2026 pukul 15.52 WIB; serta dari siaran pers World Economic Forum, Future of Jobs Report 2025, bertanggal 8 Januari 2025. Angka 78 juta bersih dan kalimat 59 dari 100 orang diambil dari siaran pers itu. Angka desa, dolar, peringkat, dan pengguna internet yang hanya tercetak di satu media tetap dilekatkan pada media itu. Dataset di balik angka-angka tersebut tidak dibuka ulang hari ini.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

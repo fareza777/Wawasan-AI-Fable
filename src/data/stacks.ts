@@ -4620,6 +4620,46 @@ export const stacks: Review[] = [
     date: "2026-10-12",
     featured: false,
   },
+  {
+    slug: "lertaro",
+    name: "Lertaro",
+    tagline: "Pencari berkas Windows lewat jurnal USN, dengan peringatan unduh hanya dari sumber resmi",
+    tags: ["Open Source", "Pencarian", "Windows", "Lokal"],
+    score: 7.7,
+    scores: [
+      { label: "Kemampuan Agentic", value: 6.2 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 7.4 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "Lertaro duduk di peringkat empat tren harian 13 Oktober 2026. README-nya memasang peluncur pencarian Windows di atas .NET 10, membaca jurnal USN dan $MFT, dan menulis bahwa pemakaiannya lokal tanpa telemetri.",
+    pros: [
+      "README menulis tidak ada telemetri dan indeks tinggal di mesin. Unduhan yang dicantumkan mencakup pemasang serta paket portabel untuk x64 dan ARM64",
+      "Bilah disebut bisa menempel ke dialog Open dan Save serta ke File Explorer, Total Commander, Directory Opus, dan OneCommander",
+      "SDK plugin .NET 10 disebut kompatibel dengan plugin komunitas Flow Launcher",
+      "Lisensi MIT. API GitHub pada 13 Oktober 2026: 955 bintang dan 46 fork",
+    ],
+    cons: [
+      "README membatasi produk ini pada Windows. Mesin yang sehari-hari memakai macOS atau Linux tidak masuk unduhan yang dicetak",
+      "Layanan latar berjalan sebagai SYSTEM, menurut README. Wawasan AI tidak memasang pemasangnya dan tidak menguji batas proses itu",
+      "API rilis mengembalikan v5.9.2 satu menit lebih lambat dari v5.9.3 pada hari yang sama. Halaman README tidak menjelaskan rilis mana yang harus dipakai",
+      "Kotak peringatan README meminta unduhan hanya dari repositori, situs, dan GitHub Releases resmi. Salinan di tempat lain tidak diaudit di sini",
+    ],
+    verdict:
+      "Masuk akal di PC Windows pribadi yang pencarian bawaannya terasa lambat, asal pemasang diambil dari rilis resmi dan layanan latarnya memang kamu yang menyalakan. Jangan mengindeks folder klien di komputer bersama sebelum membaca kalimat isolasi proses di README.",
+    body: [
+      "Lertaro adalah peluncur pencarian dari repositori Lertaro/Lertaro. README yang dicek 13 Oktober 2026 mendeskripsikan alat Windows yang ringan, memakai .NET 10 dan WPF, sebagai alternatif terbuka untuk Listary dan Everything. Indeks disebut membaca USN Change Journal serta $MFT pada NTFS dan ReFS, dengan pemantauan FAT32 dan exFAT serta tembolok berbagi jaringan. API GitHub hari yang sama mencatat 955 bintang, 46 fork, 13 isu terbuka, bahasa C#, dan lisensi MIT. Repo dibuat 6 Agustus 2026. Push terakhir 12 Oktober 2026. Halaman rumah yang terpasang di API adalah lertaro.github.io. Trendshift menaruhnya di peringkat empat. Wawasan AI tidak memasang exe dan tidak menjalankan pencarian.",
+      "Unduhan yang ditulis README ada dua arsitektur. x64 mendapat Lertaro-Setup.exe, yang disebut mendukung layanan latar, dan Lertaro-Portable.zip. ARM64 mendapat pemasang dan paket portabel tersendiri untuk Snapdragon dan Windows on ARM. Membangun dari sumber disebut membutuhkan Windows 10 atau 11, SDK .NET 10, Visual Studio 2022 atau Rider, plus Inno Setup 7 bila pemasang ikut dibangun. Kotak peringatan di atas README meminta unduhan hanya dari repositori resmi, situs, dan GitHub Releases. Bagian donasi mencantumkan alamat USDT. Alamat itu tidak disalin ke ulasan ini.",
+      "Bagian yang paling perlu dibaca sebelum memasang di komputer kantor adalah isolasi proses dan privasi. README menulis tiga proses: layanan latar Lertaro.Service yang berjalan sebagai SYSTEM, antarmuka Lertaro.App, dan pembantu hook lewat Lertaro.Service --hook. Kalimatnya: seratus persen lokal, tanpa telemetri. Pencarian disebut bergaya fzf, dengan alias pinyin untuk karakter non-ASCII. Tiga jendela: popup, jendela utama, dan bilah yang menempel ke dialog berkas serta beberapa pengelola berkas. Ctrl+O disebut membuka menu tindakan. Alt+P disebut membuka pratinjau QuickLook. Peta treemap disebut memakai indeks yang sudah ada, tanpa memindai ulang disk. SDK plugin disebut memakai kontrak C# .NET 10 dan menjembatani plugin Flow Launcher. Semua itu klaim README.",
+      "API rilis pada 13 Oktober mengembalikan v5.9.3 pada 11 Oktober 2026 pukul 12.51 UTC dan v5.9.2 pada 11 Oktober 2026 pukul 12.52 UTC, keduanya bukan prarilis. Urutan nomor dan urutan waktu tidak searah. Editorial tidak memilih yang mana yang terpasang lewat tautan latest. Untuk pengembang di Indonesia, batas yang berguna adalah kebalikannya dari DigUp kemarin: ini alat Windows, bukan Mac. Harganya MIT dan tidak menambah kunci model. Biaya yang tersisa adalah layanan SYSTEM di mesin sendiri dan kepercayaan pada berkas unduhan. Ambil pemasang dari halaman rilis resmi, pasang dulu pada satu akun yang tidak memegang data klien, lalu lihat apakah berkas yang dicari muncul tanpa menunggu indeks Windows. Sembilan ratus lima puluh lima bintang tidak mengubah kalimat README bahwa salinan dari sumber yang tidak dikenal tidak boleh dijalankan.",
+    ],
+    link: "https://github.com/Lertaro/Lertaro",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-13",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
