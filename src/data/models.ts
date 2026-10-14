@@ -5263,6 +5263,48 @@ link: "https://www.anthropic.com",
     date: "2026-10-13",
     featured: false,
   },
+  {
+    slug: "muse-wonder-full",
+    name: "Muse Wonder Full",
+    tagline: "Indeks 56 di kartu, tanpa harga dan tanpa kecepatan di halaman yang sama",
+    tags: ["Meta", "Proprietary", "Reasoning", "Multimodal"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 7.2 },
+      { label: "Kecepatan", value: 5.0 },
+      { label: "Harga/Performa", value: 5.2 },
+    ],
+    aa_intelligence_index: 56,
+    aa_synced_at: "2026-10-14",
+    summary:
+      "Artificial Analysis, dicek 14 Oktober 2026, memberi Muse Wonder Full (Max) intelligence index 56 dan menandainya proprietary. Kartu intelijen menulis peringkat 4 dari 690. Harga dan token per detik di halaman itu N/A.",
+    pros: [
+      "Intelligence index 56, di atas median 12 yang FAQ sebut untuk model lain (sumber: Artificial Analysis, 14 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 4 dari 690, dengan 4 dari 4 satuan untuk intelijen",
+      "Spesifikasi halaman: masukan teks, gambar, ucapan, dan video; keluaran teks; konteks 1 juta token; reasoning menyala",
+      "Artikel Artificial Analysis 12 Oktober menulis skor 56 pada upaya penalaran maksimum, naik 8 poin dari Muse Spark 1.3 (max) yang disebut 48",
+    ],
+    cons: [
+      "Kartu kecepatan menulis N/A token per detik. Kartu biaya menulis masukan dan keluaran kosong, serta N/A untuk biaya per tugas indeks",
+      "FAQ menulis bobot tidak tersedia dan Meta tidak mengungkap jumlah parameter",
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah. Artikel 12 Oktober memakai Coding Agents Index, angka yang berbeda",
+      "Penyebut peringkat tidak sama. Kartu intelijen menulis 4 dari 690, bagian kelas menulis 700 model, dan beberapa grafik menulis 27 dari 700",
+    ],
+    verdict:
+      "Indeks 56 layak dicatat, tetapi halaman 14 Oktober tidak memberi harga, kecepatan, atau API publik untuk varian ini. Jangan menempelkan tarif Muse Wonder yang ada di artikel 12 Oktober ke Muse Wonder Full.",
+    body: [
+      "Muse Wonder Full (Max) adalah model reasoning dari Meta yang halamannya di Artificial Analysis dibaca 14 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis Oktober 2026. FAQ memperinci tanggal rilis 12 Oktober 2026 dan menulis pembuatnya Meta. Spesifikasi yang terpasang: masukan teks, gambar, ucapan, dan video; keluaran teks; jendela konteks 1 juta token, dengan catatan tabel sekitar 1.500 halaman A4; reasoning menyala. FAQ menulis model ini proprietary, bobot tidak tersedia untuk umum, dan Meta tidak mengungkap ukuran atau jumlah parameter. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 14 Oktober 2026.) Intelligence index-nya 56. Kartu intelijen menulis peringkat 4 dari 690 dan 4 dari 4 satuan. FAQ menaruh skor 56 jauh di atas rata-rata model lain, median 12. Ringkasan perbandingan memakai median 12 yang sama untuk model yang sebanding. Grafik di halaman itu menulis Artificial Analysis Intelligence Index v4.3.2 dan caption 27 dari 700 model, plus kalimat tidak ada API yang tersedia untuk publik. Teks kelas di halaman yang sama mengatakan ada 700 model di kelas pembanding. Editorial memakai 4 dari 690 untuk peringkat kartu, dan tidak menyamakan caption 27 dari 700 atau angka 700 di teks kelas dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga dan kecepatan di halaman 14 Oktober kosong. Kartu kecepatan menulis N/A token per detik dan satuan tidak diketahui dari 4. Kartu biaya menulis masukan dan keluaran tanpa angka, N/A untuk biaya per tugas indeks, dan satuan tidak diketahui dari 4. Grafik kecepatan, biaya, dan jendela konteks yang dibaca ikut bertuliskan tidak ada API publik. Verbosity punya angka: kartu menulis 140 juta token keluaran dari intelligence index, peringkat 142 dari 205, dan 3 dari 4 satuan. Ringkasan menyebut 140 juta agak verbose terhadap median 88 juta. FAQ menyebut 140 juta agak lebih tinggi dari rata-rata terhadap median 88 juta yang sama. Dua kata sifat itu dibiarkan seperti tercetak.",
+      "Artikel Artificial Analysis pada 12 Oktober 2026, Muse Wonder and Muse Wonder Full, menulis skor indeks v4.3 sebesar 56 untuk Full dan 52 untuk Muse Wonder, pada upaya penalaran maksimum. Artikel itu menulis Full naik 8 poin dari Muse Spark 1.3 (max) di 48. Token keluaran yang disebut di situ sekitar 54 ribu per tugas indeks, turun sekitar 10 persen dari 60 ribu pada Spark. Angka 54 ribu per tugas itu tidak sama satuannya dengan 140 juta token keluaran di kartu 14 Oktober. Editorial mengutip keduanya dan tidak menyatukannya. Artikel yang sama menulis Full tidak dihargai per token, jadi tidak ada biaya per tugas, sementara Muse Wonder disebut $4 masukan, $0,20 cache, dan $20 keluaran per juta token, dengan biaya $4,52 per tugas indeks. Tarif itu tidak dipindahkan ke Full. Artikel juga menulis Coding Agents Index 68 untuk Full di Muse Code, sejajar dengan Claude Code memakai Sonnet 5.5 (max) di 68, di atas Opus 5.5 (max) di 66, Muse Wonder di 63, dan Muse Code dengan Spark 1.3 (max) di 54. Angka coding itu tinggal di artikel 12 Oktober. Ketersediaan yang ditulis artikel: Wonder di API pihak pertama Meta dan di Muse Code, Full hanya untuk pengguna Muse Code. Halaman model pada 14 Oktober tidak mengulang kalimat Muse Code itu. Ia menulis tidak ada API publik.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 56 dan ketiadaan harga di kartu 14 Oktober. Karena biaya per tugas tidak tercetak, indeks itu belum bisa diubah menjadi tagihan. Karena kecepatan N/A, agen yang harus mengisi layar belum punya angka detik dari halaman ini. Karena FAQ menandai bobot tidak tersedia, jalur mesin sendiri belum ada. Masukan ucapan di halaman 14 Oktober dan kata audio di artikel 12 Oktober dibiarkan sebagai dua pilihan kata, bukan sebagai uji kualitas. Pakai kartu ini untuk mencatat bahwa Meta punya varian indeks 56 yang halamannya belum membuka API publik, lalu tunggu penyedia dan harga sebelum mengganti produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/muse-wonder-full",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-14",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

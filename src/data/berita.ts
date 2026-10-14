@@ -5319,6 +5319,51 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "maxstream-rahasia-pernikahan-sudah-tayang-7-oktober",
+    title: "IndoTelko Pukul 06.39: Rahasia Pernikahan Sudah Tayang Sejak 7 Oktober",
+    excerpt:
+      "Dua laporan pada 14 Oktober mengulang siaran Telkomsel yang bertanggal 13 Oktober. Film 56 menit dengan 51 adegan itu disebut tayang di MAXStream sejak 7 Oktober. IndoTelko tidak menulis film pertama.",
+    category: "Analisis",
+    date: "2026-10-14",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Rabu 14 Oktober 2026, dua teks berbahasa Indonesia mengulang pengumuman MAXStream TV tentang film Rahasia Pernikahan. BeritaNasional menurunkan laporan Imantoko Kurniadi pada pukul 00.04 WIB. IndoTelko menurunkan laporan bertanda 06.39:00, dengan inisial (mas) di akhir. Keduanya menulis film itu sudah tayang sejak 7 Oktober 2026.",
+          "Naskah yang lebih dulu ada di situs Telkomsel. Halaman tentang kami, bagian berita, bertanggal 13 Oktober 2026 dan berdateline Jakarta pada hari yang sama. Jadi yang baru pada Rabu pagi ini adalah dua laporan, bukan tanggal tayang dan bukan tanggal siaran pers.",
+        ],
+      },
+      {
+        heading: "Yang IndoTelko cetak pada pukul 06.39",
+        paragraphs: [
+          "IndoTelko menulis MAXStream TV, platform video dari Telkomsel, memperkenalkan film Rahasia Pernikahan yang memadukan kecerdasan buatan dengan kreativitas manusia. Genre yang dicetak: drama thriller psikologis. Durasi 56 menit, 51 adegan, dikerjakan dua bulan, sutradara Agung Wicaksono. AI disebut dipakai untuk eksplorasi visual, pengembangan karakter dan lingkungan cerita, penyusunan storyboard, dan visualisasi adegan. Kurasi, evaluasi, dan pengawasan tim produksi disebut tetap ada.",
+          "Kutipan Kemas M. Fadhli, VP Digital Lifestyle Telkomsel, di laporan itu mulai dari kalimat eksplorasi. Isinya: eksplorasi lewat Rahasia Pernikahan menunjukkan teknologi dapat mendukung proses kreatif, dengan kreativitas dan penilaian manusia tetap menjadi fondasi utama. Kalimat lanjutannya, masih di tubuh IndoTelko, mengatakan MAXStream TV akan terus menghadirkan pilihan hiburan yang relevan. Laporan itu tidak mencetak frasa film pertama, tidak mencetak semangat Melayani Sepenuh Hati, dan tidak mencetak pembuka kutipan bahwa pemanfaatan teknologi tidak semata-mata tentang mengadopsi inovasi baru.",
+        ],
+      },
+      {
+        heading: "Yang sudah tertulis tengah malam, dan di siaran 13 Oktober",
+        paragraphs: [
+          "BeritaNasional pada pukul 00.04 WIB sudah menulis dua hal yang IndoTelko tidak ulang. Pertama, film ini menjadi produksi film pertama MAXStream TV yang mengeksplorasi AI dalam pengembangan konten hiburan digital. Kedua, kutipan Kemas dimulai dari kalimat bagi kami, pemanfaatan teknologi tidak semata-mata tentang mengadopsi inovasi baru, tetapi tentang nilai yang lebih besar bagi pelanggan. Laporan yang sama memparafrase bahwa inovasi itu sejalan dengan semangat Melayani Sepenuh Hati. Durasi 56 menit, 51 adegan, dua bulan, dan sutradara Agung Wicaksono ada di tubuhnya. Penulis dan editor yang tercetak sama-sama Imantoko Kurniadi. Keterangan foto menulis Foto/doc. Tsel.",
+          "Siaran Telkomsel pada 13 Oktober menaruh film pertama di dua tempat: ringkasan di atas tubuh, dan kalimat Jakarta yang menyebut film pertama MAXStream TV yang memadukan AI dengan sentuhan tim produksi. Durasi dan jumlah adegan digabung dalam satu kalimat: film berdurasi 56 menit dengan 51 adegan. Kutipan Kemas di siaran itu lebih panjang dari IndoTelko. Di dalamnya ada pembuka tentang nilai bagi pelanggan, kalimat eksplorasi yang IndoTelko kutip, dan semangat Melayani Sepenuh Hati di dalam tanda kutip, bukan sebagai parafrase. Siaran itu juga menulis penulisan naskah, arah kreatif, penyuntingan, quality control, dan persetujuan akhir tetap di tangan tim produksi. Tidak ada angka penonton, harga langganan, atau nama model di ketiga teks.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Rabu pagi, teks baru adalah susunan BeritaNasional dan IndoTelko, bukan pengumuman tayang perdana. Filmnya, menurut ketiga sumber, sudah bisa ditonton sejak 7 Oktober. Siaran resminya bertanggal 13 Oktober. Tim yang mengutip film pertama perlu menempelkan frasa itu pada BeritaNasional dan siaran Telkomsel. IndoTelko pukul 06.39 yang dibaca hari ini tidak memakainya.",
+          "Yang ketiga sumber samakan adalah batas peran AI yang mereka cetak: eksplorasi visual, karakter, lingkungan, storyboard, dan visualisasi adegan, dengan keputusan akhir tetap pada tim produksi. Tidak ada daftar alat, tidak ada nama vendor model, dan tidak ada klaim bahwa seluruh gambar dihasilkan tanpa syuting. Wawasan AI tidak menonton filmnya hari ini, jadi kualitas gambar dan porsi AI di layar tidak diukur dari laporan.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 14 Oktober, yang baru di IndoTelko adalah laporan pukul 06.39 tentang film yang siaran Telkomsel sudah tulis pada 13 Oktober dan yang BeritaNasional sudah turunkan pada pukul 00.04 WIB. Tayangnya, menurut ketiganya, mulai 7 Oktober. Yang tidak ada di IndoTelko, dan ada di dua teks yang lain, adalah kalimat film pertama.",
+          "Catatan editorial: artikel ini disusun dari laporan IndoTelko, 14 Oktober 2026 pukul 06.39:00, bertanda (mas); dari laporan BeritaNasional, 14 Oktober 2026 pukul 00.04 WIB, penulis dan editor Imantoko Kurniadi; serta dari siaran Telkomsel, MAXStream TV Padukan AI dan Sentuhan Kreatif Manusia dalam Film Rahasia Pernikahan, bertanggal 13 Oktober 2026. Kutipan Kemas diambil dari ketiga teks itu. Filmnya tidak ditonton ulang. Halaman toko dan jumlah penonton tidak dibuka.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

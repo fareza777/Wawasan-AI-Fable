@@ -1,0 +1,137 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-14T02:05:18.519Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Saffsanity/sill",
+      "owner": "Saffsanity",
+      "repo": "sill",
+      "description": "Any window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys. Free, open source, no servers.",
+      "githubUrl": "https://github.com/Saffsanity/sill",
+      "trendshiftUrl": "https://trendshift.io/repositories/298776",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-09-22T08:06:15Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Luyi365/awesome-embedded",
+      "owner": "Luyi365",
+      "repo": "awesome-embedded",
+      "description": "嵌入式开源库速查表，快速定位所需功能。300+ libraries for embedded dev, modularly organized, covering the common ground.",
+      "githubUrl": "https://github.com/Luyi365/awesome-embedded",
+      "trendshiftUrl": "https://trendshift.io/repositories/141967",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2025-12-19T09:44:52Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "HeyPuter/everything",
+      "owner": "HeyPuter",
+      "repo": "everything",
+      "description": "We're rebuilding and open-sourcing the world’s software from scratch. MIT-licensed.",
+      "githubUrl": "https://github.com/HeyPuter/everything",
+      "trendshiftUrl": "https://trendshift.io/repositories/304148",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-13T16:18:22Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "threerocks/sweety-handdraw-video",
+      "owner": "threerocks",
+      "repo": "sweety-handdraw-video",
+      "description": "从主题或文章制作完整手绘讲解视频：按部位描线、逐字书写、VoiceStudio 配音、五项内置制作依赖。",
+      "githubUrl": "https://github.com/threerocks/sweety-handdraw-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/303415",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-12T12:16:18Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Ebony-Vinyl/dsh-our-free-model",
+      "owner": "Ebony-Vinyl",
+      "repo": "dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, Muse Spark 1.3 and MiMo V2.6 among them. Completely free, with no usage cap.",
+      "githubUrl": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "trendshiftUrl": "https://trendshift.io/repositories/261203",
+      "language": "JavaScript",
+      "topics": [
+        "LLM gateway"
+      ],
+      "dateCreated": "2026-09-24T16:17:19Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "topics": [
+        "Text to speech"
+      ],
+      "dateCreated": "2026-04-09T21:40:26Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "ARahim3/DigUp",
+      "owner": "ARahim3",
+      "repo": "DigUp",
+      "description": "Search your Mac by what's in your files: photos, PDFs, recordings, videos and code. On-device, built on Google DeepMind's EmbeddingGemma 2.",
+      "githubUrl": "https://github.com/ARahim3/DigUp",
+      "trendshiftUrl": "https://trendshift.io/repositories/295333",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-10-08T20:37:51Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "yeyuxin777/baoyan-agent-benchmark",
+      "owner": "yeyuxin777",
+      "repo": "baoyan-agent-benchmark",
+      "description": "Sprix AI at 屿智同行 × 保研岛 — an open-source benchmark for AI agents in Baoyan advising and application planning.",
+      "githubUrl": "https://github.com/yeyuxin777/baoyan-agent-benchmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/303799",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-12T09:15:11Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "storytold/photocraft",
+      "owner": "storytold",
+      "repo": "photocraft",
+      "description": "",
+      "githubUrl": "https://github.com/storytold/photocraft",
+      "trendshiftUrl": "https://trendshift.io/repositories/278138",
+      "language": "Rust",
+      "topics": [
+        "Image editing"
+      ],
+      "dateCreated": "2026-09-30T13:37:48Z"
+    }
+  ]
+}

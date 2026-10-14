@@ -57,6 +57,8 @@ const SLUG_ICONS: Record<string, string> = {
   "mimo-v2-6-pro": "https://www.google.com/s2/favicons?domain=mimo.xiaomi.com&sz=128",
   lertaro: "https://github.com/Lertaro.png",
   "solar-mini-4": "https://www.google.com/s2/favicons?domain=upstage.ai&sz=128",
+  sill: "https://github.com/Saffsanity.png",
+  "muse-wonder-full": "https://cdn.simpleicons.org/meta",
 };
 
 function githubOrgIcon(link: string): string | null {

@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 13 Oktober 2026: 161.206 bintang dan 37.716 fork. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 14 Oktober 2026: 209.871 bintang, 51.427 fork, dan 495 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.4.0 terbit 11 Oktober 2026. Push terakhir 14 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3225,6 +3225,56 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Angka kelancaran di README adalah mesin uji penulis: Radeon RX 6700 XT, Ryzen 5 5600X, 32 GB, rata-rata 144 bingkai per detik di 1080p pada rentang 55 sampai 240, dan rata-rata 108 di 4K dengan FSR 1. Wawasan AI tidak menjalankan gimnya.",
       "API GitHub pada 13 Oktober 2026 menandai lisensi GPL-2.0. README menulis GNU GPL v2 atau yang lebih baru. Dua penanda itu dibiarkan berdampingan. Bintang 869, fork 39, 54 isu terbuka, bahasa C++. Repo dibuat 8 Oktober 2026.",
       "Rilis windows-v2.1.7 terbit 13 Oktober 2026 pukul 00.47 UTC. Tiga unggahan uji pada hari yang sama masih prarilis. Linux disebut AppImage eksperimental.",
+    ],
+  },
+  "Saffsanity/sill": {
+    description:
+      "Sill menampilkan satu jendela Mac, atau seluruh desktop, di iPhone atau iPad, lalu mengembalikan sentuhan, tetikus, papan ketik, dan Apple Pencil. README menulis tidak ada akun dan tidak ada server di antaranya.",
+    highlights: [
+      "Syarat README: Mac Apple Silicon dengan macOS 14 atau lebih baru, serta iPhone atau iPad pada iOS 17 atau iPadOS 17 atau lebih baru. Gambar disebut dikodekan HEVC dan dikirim lewat TLS 1.3. Koneksi yang ditulis: jaringan yang sama, kabel USB, Wi-Fi langsung yang mati secara bawaan, atau VPN sendiri seperti Tailscale.",
+      "Aplikasi Mac disebut unduhan gratis yang dinotariskan dari getsill.app. Aplikasi iPhone dan iPad disebut gratis di App Store, dengan tautan README ke id 6816359860. Wawasan AI tidak memasang keduanya dan tidak membuka halaman toko.",
+      "Lisensi Apache-2.0, ditulis Swift. API GitHub pada 14 Oktober 2026: 152 bintang, 6 fork, 26 isu terbuka. Repo dibuat 22 September 2026, push terakhir 14 Oktober 2026. Rilis v0.5.1 terbit 9 Oktober 2026.",
+      "README menulis bahwa menjalankan host dari baris perintah tanpa penyandingan membuka pintu tanpa penyandian, dan meminta itu hanya saat mengembangkan. Ulasan alat hari ini memakai README yang sama.",
+    ],
+  },
+  "Luyi365/awesome-embedded": {
+    description:
+      "Awesome Embedded adalah daftar pustaka tertanam yang dikelompokkan menurut fungsi, dari tombol dan berkas sampai bus dan mesin skrip. Deskripsi GitHub menulis 300+ pustaka. Wawasan AI tidak menghitung ulang setiap entri.",
+    highlights: [
+      "README berbahasa Mandarin, dengan tautan ke README.en.md. Bagian pembuka membedakan daftar ini dari awesome list biasa: sebagian entri punya catatan cara pakai, dan catatan itu disebut masih perlu ditulis ulang.",
+      "Tiga kelompok yang README tetapkan: satu fungsi, banyak fungsi, dan lainnya. Yang terakhir untuk adaptasi chip dan mesin. Daftar terkait di bagian ekstra menaut ke EmbedSummary, Awesome-Embedded lain, registri komponen ESP, dan awesome-cpp.",
+      "API GitHub pada 14 Oktober 2026: 195 bintang, 15 fork, tidak ada isu terbuka, lisensi CC0-1.0, dan tidak ada bahasa utama. Repo dibuat 19 Desember 2025, push terakhir 12 Oktober 2026. Tidak ada rilis.",
+      "Kolom homepage di API menunjuk ke github.com/Luyi365/Awesome-Embedded, huruf besar di nama repositori. Snapshot Trendshift hari ini memakai huruf kecil. GitHub memperlakukan keduanya sebagai satu repo.",
+    ],
+  },
+  "HeyPuter/everything": {
+    description:
+      "Everything adalah monorepo yang mengaku membangun ulang perangkat lunak dunia dari nol, berlisensi MIT. README menaruh lembar sebar, dokumen, rapat, dan catur sebagai aplikasi terpisah di bawah puter.com.",
+    highlights: [
+      "Kalimat pembuka README: dari Office sampai Slack dan dari Photoshop sampai AutoCAD, proyek ini membuat alternatif bebas dan terbuka. Perintah awal yang dicetak menyalin repo, lalu `npm install` dan `npm run dev` di dalam `src/[app-name]`.",
+      "Catatan di atas tabel: nama aplikasi adalah teks, sedangkan logo dan tangkapan layar adalah gambar. Tautan Notes di tabel yang dibaca masih bertuliskan URL demo belum tersedia. Sudoku di tabel yang sama memakai http, bukan https.",
+      "Lisensi MIT, dengan kalimat bahwa pustaka pihak ketiga boleh punya lisensi sendiri. API GitHub pada 14 Oktober 2026: 197 bintang, 30 fork, 4 isu terbuka, bahasa JavaScript, ukuran 419.112 KB. Repo dibuat 13 Oktober 2026, push terakhir 14 Oktober 2026. Tidak ada rilis dan tidak ada homepage di API.",
+      "Wawasan AI tidak menjalankan `npm install` di dalam monorepo ini dan tidak membuka setiap demo puter.com.",
+    ],
+  },
+  "threerocks/sweety-handdraw-video": {
+    description:
+      "Sweety Handdraw Video mengubah tema, artikel, atau cerita menjadi video gambar tangan bersuara. README menulis agen mengurus naskah dan gambar, sementara garis, tulisan, dan ekspor dijalankan lokal.",
+    highlights: [
+      "README menandai v1.2 sebagai versi yang disegel dan v1.2.3 pada 13 Oktober 2026 sebagai tambalan terbaru. API rilis menaruh v1.2.3, v1.2.2, v1.2.1, dan v1.2 pada 13 Oktober, plus v1.0.0 pada 12 Oktober.",
+      "Alur lengkap yang disebut sudah diuji: Mac Apple Silicon plus Codex. Windows dan agen lain disebut belum selesai diuji untuk seluruh alur. VoxCPM2 lokal disebut bukan jalur Windows atau NVIDIA. VoiceStudio yang kompatibel disebut layanan HTTP di mesin sendiri, bawaan `127.0.0.1:3900`.",
+      "Lima dependensi disebut disemat sebagai cuplikan, bukan dipasang terpisah. Angka README untuk v1.2.3: 59 regresi lulus, 1.215 berkas dependensi dicek, dan 21 pratinjau gaya. Itu catatan penulis, bukan uji Wawasan AI.",
+      "Lisensi MIT untuk kode utama. API GitHub pada 14 Oktober 2026: 246 bintang, 57 fork, tidak ada isu terbuka, bahasa JavaScript. Repo dibuat 12 Oktober 2026, push terakhir 13 Oktober 2026. Wawasan AI tidak merender video.",
+    ],
+  },
+  "yeyuxin777/baoyan-agent-benchmark": {
+    description:
+      "Baoyan Agent Benchmark menilai konfigurasi agen untuk nasihat penerimaan pascasarjana. README Inggris menulis 70 tugas berbahasa Mandarin. Deskripsi GitHub dan ucapan terima kasih menaruh ini pada 保研, lewat 屿智同行 dan 保研岛.",
+    highlights: [
+      "README: 70 tugas, 23 kasus, dan 83 tahap jawaban. Tabel hasil menaruh delapan konfigurasi, semuanya 70/70 selesai, dengan skor rata-rata 79,08 untuk Codex plus GPT Sol 6.1 sampai 55,55 untuk Antigravity plus Gemini 3.1 Pro. Kalimat yang sama menulis anggaran dan versi masukan tidak seragam.",
+      "Label kesulitan yang disebut disetujui pemilik: 14 mudah, 34 sedang, dan 22 sukar. README menulis itu bukan tinjauan ganda yang independen. Kode berlisensi MIT. Bahan tugas dan rubrik disebut CC BY 4.0.",
+      "Jalur otomatis yang ditulis README membutuhkan macOS Seatbelt dan Python 3.10 atau lebih baru. Pratinjau batch disebut tidak memanggil model sampai `--execute` ditambahkan. Wawasan AI tidak menjalankan benchmark.",
+      "API GitHub pada 14 Oktober 2026: 203 bintang, tidak ada fork, tidak ada isu terbuka, bahasa Python, lisensi MIT. Repo dibuat 12 Oktober 2026, push terakhir 13 Oktober 2026. Tidak ada rilis dan tidak ada homepage. Dataset yang ditautkan README ada di Hugging Face, yuxin7778/baoyan-agent-benchmark.",
     ],
   },
 };

@@ -4660,6 +4660,46 @@ export const stacks: Review[] = [
     date: "2026-10-13",
     featured: false,
   },
+  {
+    slug: "sill",
+    name: "Sill",
+    tagline: "Jendela Mac di iPhone atau iPad, tanpa akun dan tanpa server perantara",
+    tags: ["Open Source", "macOS", "iOS", "Jarak jauh"],
+    score: 7.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 5.8 },
+      { label: "Kualitas Output", value: 7.6 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 6.4 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "Sill duduk di peringkat dua tren harian 14 Oktober 2026. README-nya menampilkan jendela Mac di iPhone atau iPad lewat HEVC dan TLS 1.3, dan menulis tidak ada akun serta tidak ada server di antaranya.",
+    pros: [
+      "README menulis tidak ada akun dan tidak ada server. Gambar disebut dikirim langsung, dan bingkai yang tertinggal dibuang supaya gambar tetap mutakhir",
+      "Koneksi yang dicetak: jaringan yang sama, kabel USB, Wi-Fi langsung, atau VPN sendiri. Wi-Fi langsung dan akses jarak jauh disebut mati secara bawaan",
+      "Aplikasi Mac disebut unduhan gratis yang dinotariskan. Aplikasi iPhone dan iPad disebut gratis di App Store",
+      "Lisensi Apache-2.0. API GitHub pada 14 Oktober 2026: 152 bintang dan 6 fork. Rilis v0.5.1 terbit 9 Oktober 2026",
+    ],
+    cons: [
+      "README membatasi Mac pada Apple Silicon dan macOS 14 atau lebih baru, serta ponsel pada iOS 17 atau iPadOS 17 atau lebih baru. PC Windows tidak masuk syarat itu",
+      "Izin yang diminta README di Mac: perekaman layar dan aksesibilitas, plus jaringan lokal pada macOS 15 atau lebih baru. Wawasan AI tidak menguji batas izin itu",
+      "README menulis host baris perintah tanpa penyandingan membuka pintu tanpa penyandian. Kalimat yang sama meminta mode itu hanya saat mengembangkan",
+      "Angka id App Store 6816359860 adalah tautan README. Halaman tokonya tidak dibuka hari ini",
+    ],
+    verdict:
+      "Masuk akal bagi yang sudah punya Mac Apple Silicon dan iPad di jaringan sendiri, asal perekaman layar hanya menyala saat perangkat yang dipasangkan memang sedang menonton. Jangan menjalankan host tanpa penyandingan di jaringan kantor.",
+    body: [
+      "Sill dibuat di repositori Saffsanity/sill. README yang dicek 14 Oktober 2026 mendeskripsikan aplikasi yang menampilkan satu jendela Mac, atau seluruh desktop, di iPhone atau iPad. Sentuhan, gulir, papan ketik, dan Apple Pencil disebut kembali ke Mac sebagai kejadian tetikus dan papan ketik. API GitHub hari yang sama mencatat 152 bintang, 6 fork, 26 isu terbuka, bahasa Swift, dan lisensi Apache-2.0. Repo dibuat 22 September 2026. Push terakhir 14 Oktober 2026. Halaman rumah di API adalah getsill.app. Rilis v0.5.1 terbit 9 Oktober 2026. Trendshift menaruhnya di peringkat dua. Wawasan AI tidak memasang aplikasi Mac dan tidak memasang aplikasi dari App Store.",
+      "Syarat yang ditulis README datang lebih dulu daripada daftar gerakan. Mac Apple Silicon, macOS 14 atau lebih baru, iPhone atau iPad pada iOS 17 atau iPadOS 17 atau lebih baru. Di Mac, Sill disebut meminta perekaman layar untuk menampilkan jendela dan aksesibilitas untuk mengklik, menggulir, mengetik, serta memindahkan jendela. Pada macOS 15 atau lebih baru, jaringan lokal juga disebut perlu diizinkan. Di iPhone atau iPad, jaringan lokal disebut untuk menemukan Mac, dan kamera disebut hanya bila kode pemasangan dipindai. Kode itu disebut 12 digit dan bisa diketik. Lewat kabel USB, README menulis perangkat memasangkan diri sendiri.",
+      "Jalur gambar dan jalur jauh yang paling perlu dibaca ada di bagian cara kerja. Sill for Mac disebut tinggal di bilah menu, menangkap dengan ScreenCaptureKit, dan mengkodekan HEVC lewat VideoToolbox. Tidak ada yang ditangkap saat tidak ada perangkat tersambung, menurut README. Gambar pergi lewat TLS 1.3. Bila penyandi atau tautan tertinggal, bingkai dibuang, bukan diantre. Perangkat di dekat disebut menemukan Mac lewat Bonjour. Wi-Fi langsung, yang README samakan dengan cara AirDrop, mati secara bawaan. Akses jarak jauh juga mati secara bawaan, lalu memakai VPN sendiri atau porta yang diteruskan. iPhone Duo disebut mengikuti engsel. Menu aplikasi disebut sampai ke iPad, lewat bilah menu iPadOS 26 atau lebih baru, atau lewat tombol Menus. Semua itu klaim README.",
+      "Untuk pengembang di Indonesia, batas sistem operasinya sama jenisnya dengan DigUp dua hari lalu: ini pasangan Mac dan iPhone atau iPad, bukan alat Windows. Harganya, menurut README, gratis di kedua ujung dan tidak menambah kunci model. Biaya yang tersisa adalah izin perekaman layar di mesin sendiri dan kepercayaan bahwa hanya perangkat yang dipasangkan yang memegang kunci. README juga menulis bahwa `swift run` tanpa `--pairing` membuka pintu rumah tanpa penyandingan dan tanpa penyandian, dan meminta perintah itu hanya saat mengembangkan. Jangan menyalakan mode itu di jaringan yang dipakai bersama. Seratus lima puluh dua bintang tidak mengubah kalimat README bahwa aplikasi toko tidak menekan pintu yang terbuka itu.",
+    ],
+    link: "https://github.com/Saffsanity/sill",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-14",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
