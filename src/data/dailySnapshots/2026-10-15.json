@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-15T02:04:38.497Z",
+  "fetchedAt": "2026-10-15T06:15:26.573Z",
   "repos": [
     {
       "rank": 1,
@@ -44,20 +44,6 @@
     },
     {
       "rank": 4,
-      "fullName": "yakuikai/tokentab",
-      "owner": "yakuikai",
-      "repo": "tokentab",
-      "description": "Local-first CLI and web dashboard that reads Claude Code, Codex and Gemini CLI session logs and shows token usage and cost by model, project, day and activity. No account, no API key, nothing leaves your machine",
-      "githubUrl": "https://github.com/yakuikai/tokentab",
-      "trendshiftUrl": "https://trendshift.io/repositories/280659",
-      "language": "Python",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-09-21T18:07:22Z"
-    },
-    {
-      "rank": 5,
       "fullName": "vxcontrol/pentagi",
       "owner": "vxcontrol",
       "repo": "pentagi",
@@ -72,59 +58,35 @@
       "dateCreated": "2025-01-06T22:22:48Z"
     },
     {
-      "rank": 6,
-      "fullName": "ifixai-ai/iFixAi",
-      "owner": "ifixai-ai",
-      "repo": "iFixAi",
-      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
-      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
-      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "rank": 5,
+      "fullName": "yakuikai/tokentab",
+      "owner": "yakuikai",
+      "repo": "tokentab",
+      "description": "Local-first CLI and web dashboard that reads Claude Code, Codex and Gemini CLI session logs and shows token usage and cost by model, project, day and activity. No account, no API key, nothing leaves your machine",
+      "githubUrl": "https://github.com/yakuikai/tokentab",
+      "trendshiftUrl": "https://trendshift.io/repositories/280659",
       "language": "Python",
       "topics": [
-        "LLM evaluation"
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-04-27T13:02:34Z"
+      "dateCreated": "2026-09-21T18:07:22Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "K-Dense-AI/scientific-agent-skills",
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25649",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-19T20:54:15Z"
     },
     {
       "rank": 7,
-      "fullName": "xtool-org/xtool",
-      "owner": "xtool-org",
-      "repo": "xtool",
-      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
-      "githubUrl": "https://github.com/xtool-org/xtool",
-      "trendshiftUrl": "https://trendshift.io/repositories/33512",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2024-11-17T08:18:44Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "debpalash/VoiceStudio",
-      "owner": "debpalash",
-      "repo": "VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "githubUrl": "https://github.com/debpalash/VoiceStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/28176",
-      "language": "Python",
-      "topics": [
-        "Text to speech"
-      ],
-      "dateCreated": "2026-04-09T21:40:26Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "NationalSecurityAgency/ghidra",
-      "owner": "NationalSecurityAgency",
-      "repo": "ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
-      "trendshiftUrl": "https://trendshift.io/repositories/1740",
-      "language": "Java",
-      "topics": [],
-      "dateCreated": "2019-03-01T03:27:48Z"
-    },
-    {
-      "rank": 10,
       "fullName": "T-Auto/dsh-ops",
       "owner": "T-Auto",
       "repo": "dsh-ops",
@@ -134,6 +96,42 @@
       "language": "JavaScript",
       "topics": [],
       "dateCreated": "2026-10-08T07:09:25Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "jhaizhou-ops/d2r-mobile",
+      "owner": "jhaizhou-ops",
+      "repo": "d2r-mobile",
+      "description": "Open-source iOS compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone and iPad — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS 兼容层",
+      "githubUrl": "https://github.com/jhaizhou-ops/d2r-mobile",
+      "trendshiftUrl": "https://trendshift.io/repositories/299740",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-12T08:41:19Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "deeplethe/solid-glass",
+      "owner": "deeplethe",
+      "repo": "solid-glass",
+      "description": "A theme for shadcn/ui: thick, smoky panes with the weight of a solid surface and the clarity of glass.",
+      "githubUrl": "https://github.com/deeplethe/solid-glass",
+      "trendshiftUrl": "https://trendshift.io/repositories/301208",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-12T09:19:02Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "HKUDS/CLI-Anything",
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "githubUrl": "https://github.com/HKUDS/CLI-Anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-03-08T13:52:57Z"
     }
   ]
 }
