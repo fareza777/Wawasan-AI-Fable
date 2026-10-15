@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-15T02:04:38.497Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "wheresryan22/anatomy",
+      "owner": "wheresryan22",
+      "repo": "anatomy",
+      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
+      "githubUrl": "https://github.com/wheresryan22/anatomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/296609",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-08T10:12:49Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Caho1/open-claude-ui",
+      "owner": "Caho1",
+      "repo": "open-claude-ui",
+      "description": "基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。纯手写 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。",
+      "githubUrl": "https://github.com/Caho1/open-claude-ui",
+      "trendshiftUrl": "https://trendshift.io/repositories/305744",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-14T14:05:05Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "yakuikai/tokentab",
+      "owner": "yakuikai",
+      "repo": "tokentab",
+      "description": "Local-first CLI and web dashboard that reads Claude Code, Codex and Gemini CLI session logs and shows token usage and cost by model, project, day and activity. No account, no API key, nothing leaves your machine",
+      "githubUrl": "https://github.com/yakuikai/tokentab",
+      "trendshiftUrl": "https://trendshift.io/repositories/280659",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-09-21T18:07:22Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "vxcontrol/pentagi",
+      "owner": "vxcontrol",
+      "repo": "pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "githubUrl": "https://github.com/vxcontrol/pentagi",
+      "trendshiftUrl": "https://trendshift.io/repositories/15161",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2025-01-06T22:22:48Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "xtool-org/xtool",
+      "owner": "xtool-org",
+      "repo": "xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "githubUrl": "https://github.com/xtool-org/xtool",
+      "trendshiftUrl": "https://trendshift.io/repositories/33512",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2024-11-17T08:18:44Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "githubUrl": "https://github.com/debpalash/VoiceStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "language": "Python",
+      "topics": [
+        "Text to speech"
+      ],
+      "dateCreated": "2026-04-09T21:40:26Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "NationalSecurityAgency/ghidra",
+      "owner": "NationalSecurityAgency",
+      "repo": "ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
+      "trendshiftUrl": "https://trendshift.io/repositories/1740",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2019-03-01T03:27:48Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "T-Auto/dsh-ops",
+      "owner": "T-Auto",
+      "repo": "dsh-ops",
+      "description": "Bash, PowerShell 7, and Rust-based tools for dsh on Windows to cut token usage. / 为windows的dsh提供bash、powershell7及rust的高性能tools来减少token消耗",
+      "githubUrl": "https://github.com/T-Auto/dsh-ops",
+      "trendshiftUrl": "https://trendshift.io/repositories/296103",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-08T07:09:25Z"
+    }
+  ]
+}

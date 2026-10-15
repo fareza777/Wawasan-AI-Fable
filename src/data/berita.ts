@@ -5364,6 +5364,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "landy-ai-asean-kempalan-tanpa-kantor-indonesia",
+    title: "Kempalan Pukul 00.21: Landy AI di ASEAN, Tanpa Kantor Indonesia",
+    excerpt:
+      "Laporan Kempalan pada 15 Oktober mengulang kawat yang ANTARA turunkan 14 Oktober pukul 22.24 dan yang Xinhua stempel 14 Oktober pukul 12.18. Bahasa Melayu ada. Kantor di Indonesia tidak disebut.",
+    category: "Analisis",
+    date: "2026-10-15",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kamis 15 Oktober 2026 pukul 00.21 WIB, Kempalan menurunkan laporan berdateline Surabaya, pewarta Kempalan Online, judulnya AI Tiongkok Mulai Mengakar di ASEAN. Tubuhnya membuka dengan pertanyaan apakah bluberi bisa tumbuh di lahan saya, lalu memperkenalkan Landy AI, model bahasa besar pertanian dari JJR Science & Technology Group di Guangxi.",
+          "Teks yang sama sudah tayang lebih dulu di dua tempat. ANTARA menurunkan AI Tiongkok mulai mengakar di ASEAN, dari budidaya hingga kesehatan, pada Rabu 14 Oktober 2026 pukul 22.24 WIB, dateline Nanning, pewarta Xinhua, editor Maria Rosari Dwi Putri. Halaman Xinhua berbahasa Inggris, Economic Watch: From crop planting to dental health: China's AI taking root in ASEAN, membawa stempel 2026-10-14 12:18:00, dateline Nanning, 14 Oktober, editor huaxia. Stempel Xinhua itu tidak menulis zona waktu. Jadi yang baru pada Kamis dini hari adalah laporan Kempalan, bukan tanggal kawatnya.",
+        ],
+      },
+      {
+        heading: "Yang Kempalan cetak, dan yang ANTARA sudah buang",
+        paragraphs: [
+          "Kalimat pembuka Kempalan mengikuti Xinhua: pertanyaan bluberi, lalu lebih dari sejuta petani di seluruh Tiongkok dan ASEAN. ANTARA yang dibaca hari ini tidak memuat pertanyaan bluberi. Ia mulai dari bagi banyak petani, menanam jenis tanaman baru adalah peluang, tetapi lahan yang belum teruji menakutkan, lalu langsung ke Landy AI dan angka sejuta petani yang sama. Keterangan foto robot kopi di pusat kerja sama AI Tiongkok-ASEAN di Nanning pada 12 Oktober 2026, kredit Xinhua/Lu Peng, ada di ANTARA. Teks Kempalan yang dibaca tidak memuat keterangan foto itu, dan tidak mencetak kredit Xinhua di tubuh atau di baris pewarta.",
+          "Angka yang ketiga teks samakan untuk pusat di Nanning: didirikan tahun lalu, saat perdagangan bilateral Tiongkok-ASEAN melewati 1 triliun dolar AS untuk pertama kalinya; lebih dari 1.000 skenario; 279 dibuka untuk pengembang; kantor di Vietnam, Laos, dan Malaysia; lebih dari 30 proyek lintas batas; aliansi 55 perusahaan. JJR disebut berdiri 2008 dan mulai mengembangkan Landy AI pada 2024. Enam bahasa yang dicetak: Mandarin, Inggris, Laos, Thailand, Khmer, dan Melayu. Xinhua menulis Chinese pada daftar Landy, lalu Mandarin pada platform wicara. Kedua teks Indonesia memakai Mandarin untuk keduanya.",
+        ],
+      },
+      {
+        heading: "Rupiah dan hektare yang hanya hidup di teks Indonesia",
+        paragraphs: [
+          "Di kalimat 1 triliun dolar, ANTARA dan Kempalan menyisipkan tanda kurung 1 dolar AS sama dengan Rp17.930. Halaman Xinhua yang dibaca tidak memuat kurs itu. Editorial tidak membuka kurs Bank Indonesia hari ini, jadi Rp17.930 tetap sisipan dua teks Indonesia, bukan angka kawat.",
+          "Konversi luas juga tidak seragam. Untuk 4.000 mu kebun pisang di Pakse, Laos, Xinhua menulis about 267 hectares, dan kedua teks Indonesia menulis sekitar 267 hektare. Untuk lebih dari 2 juta mu lahan di Tiongkok dan negara ASEAN, Xinhua berhenti di mu. ANTARA dan Kempalan menambah sekitar 133.333 hektare. Guangxi disebut menghasilkan hampir sepertujuh buah Tiongkok pada 2025 di ketiga teks, tanpa tabel produksi yang editorial buka ulang.",
+        ],
+      },
+      {
+        heading: "Jabatan yang Xinhua tulis, dan yang terjemahan lunakkan",
+        paragraphs: [
+          "Pada bagian gigi, Xinhua menyebut Kuang Hai deputy Party secretary of the hospital di Fakultas Stomatologi Universitas Kedokteran Guangxi. ANTARA dan Kempalan sama-sama menulis salah satu pimpinan di rumah sakit tersebut. Kalimat soal penerjemahan waktu nyata antara Mandarin dan lebih dari 10 bahasa Asia Tenggara, fokus istilah kedokteran gigi, ada di ketiganya. Platform wicara disebut sudah melayani lebih dari 2.000 kunjungan, termasuk daerah pegunungan Guangxi, dan selain Mandarin juga mendukung bahasa Laos. Ketiga teks tidak menaruh bahasa Indonesia di daftar itu.",
+          "Chen Xiujuan, direktur pusat manajemen JJR, dikutip soal usia pengguna 20 sampai 60 tahun dan harapan pemangkasan biaya tenaga kerja lebih dari 20 persen pada solusi yang diterapkan di lebih dari 2 juta mu. Lin Zhongda dikutip soal pisang, buah naga, dan durian. Di Malaysia, RunDo dari Runjian disebut memantau hampir 300 megawatt tenaga surya di hampir 3.000 lokasi, dengan kenaikan efisiensi pemeliharaan lebih dari 30 persen dan pemangkasan biaya tenaga kerja lebih dari 20 persen, menurut data perusahaan itu. Pabrik token di Nanning disebut mampu sampai 200 miliar token per jam. Huang Haijiang dikutip mengemas daya komputasi seperti listrik atau air. Semua kalimat itu ada di ketiga teks, dan tetap klaim yang mereka cetak.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Kamis dini hari, teks baru berbahasa Indonesia adalah susunan Kempalan pukul 00.21. Isinya mengembalikan pertanyaan bluberi yang ANTARA pukul 22.24 tidak bawa, dan tetap memasang kurs rupiah serta hektare pada 2 juta mu yang halaman Xinhua tidak cetak. Kantor yang disebut tetap Vietnam, Laos, dan Malaysia. Lokasi proyek yang disebut tetap Kampong Chhnang, Pakse, dan tapak surya di Malaysia. Indonesia muncul sebagai bagian dari kata ASEAN, bukan sebagai kantor atau kebun.",
+          "Bahasa yang paling dekat dengan pembaca di sini adalah Melayu, pada daftar enam bahasa Landy. Bahasa Indonesia tidak disebut. Tidak ada harga langganan, nama model dasar di balik Landy, atau nomor pedoman Dewan Negara. Kalimat pedoman pekan lalu, inisiatif AI Plus, dan 296 perusahaan AI di pameran bulan lalu dengan kenaikan 48 persen, ada di ketiga teks tanpa judul dokumen atau tanggal pameran. Tim yang menyusun materi kawasan sebaiknya menempelkan kurs dan hektare 2 juta mu pada ANTARA serta Kempalan, dan menempelkan jabatan deputy Party secretary pada Xinhua.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 15 Oktober, yang baru di Kempalan adalah laporan pukul 00.21 tentang kawat yang Xinhua stempel 14 Oktober pukul 12.18 dan yang ANTARA turunkan pukul 22.24 WIB. Yang tidak ada di Xinhua, dan ada di dua teks Indonesia, adalah Rp17.930 serta sekitar 133.333 hektare. Yang tidak ada di ketiganya adalah kantor atau proyek yang disebutkan berada di Indonesia.",
+          "Catatan editorial: artikel ini disusun dari laporan Kempalan, 15 Oktober 2026 pukul 00.21 WIB, pewarta Kempalan Online; dari laporan ANTARA, 14 Oktober 2026 pukul 22.24 WIB, pewarta Xinhua dan editor Maria Rosari Dwi Putri; serta dari halaman Xinhua, Economic Watch: From crop planting to dental health: China's AI taking root in ASEAN, stempel 2026-10-14 12:18:00. Angka pusat, bahasa, dan proyek dikutip dari ketiga teks itu. Kurs Bank Indonesia, tabel produksi buah, dan naskah pedoman Dewan Negara tidak dibuka. Zona waktu pada stempel Xinhua tidak tertulis di halaman yang dibaca.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

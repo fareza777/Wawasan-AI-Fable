@@ -5305,6 +5305,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-14",
     featured: false,
   },
+  {
+    slug: "gpt-6-luna",
+    name: "GPT-6 Luna (Max)",
+    tagline: "Indeks 38 di kelas harganya, murah per tugas, lambat sampai jawaban pertama",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "API"],
+    score: 7.3,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 6.6 },
+      { label: "Kecepatan", value: 6.0 },
+      { label: "Harga/Performa", value: 8.4 },
+    ],
+    aa_intelligence_index: 38,
+    aa_price_input: 0.1,
+    aa_price_output: 0.5,
+    aa_synced_at: "2026-10-15",
+    summary:
+      "Artificial Analysis, dicek 15 Oktober 2026, memberi GPT-6 Luna (Max) intelligence index 38 dan menandainya proprietary. Kartu intelijen menulis peringkat 8 dari 176. Keluaran 116,3 token per detik pada API OpenAI, sementara FAQ menaruh waktu ke token pertama di 110,41 detik.",
+    pros: [
+      "Intelligence index 38, di atas median 13 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 15 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 8 dari 176, dengan 4 dari 4 satuan untuk intelijen",
+      "Kartu biaya: $0,10 masukan dan $0,50 keluaran per juta token, diskon cache 90 persen, $0,07 per tugas indeks, peringkat biaya 28 dari 62",
+      "Spesifikasi halaman: masukan teks dan gambar, keluaran teks, konteks 1 juta token, reasoning menyala",
+    ],
+    cons: [
+      "FAQ menyebut waktu ke token pertama 110,41 detik pada API OpenAI, median kelas 1,85 detik. Judul bagian latensi menyebut metrik tampilannya waktu ke token jawaban pertama dan sudah memasukkan waktu berpikir",
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Verbosity 140 juta token, median yang disebut ringkasan dan FAQ 94 juta. Kartu verbosity menulis peringkat 43 dari 64",
+      "FAQ menulis bobot tidak tersedia dan OpenAI tidak membuka jumlah parameter. Beberapa grafik di halaman yang sama masih bertuliskan tidak ada API publik",
+    ],
+    verdict:
+      "Masuk akal untuk draf teks dan gambar yang muat di $0,07 per tugas indeks, selama tugasnya tidak harus mulai menjawab dalam beberapa detik. Ukur satu pekerjaan nyata, karena penyebut peringkat di kartu tidak sama dan FAQ memakai kata sangat kompetitif di tempat ringkasan memakai kompetitif.",
+    body: [
+      "GPT-6 Luna (Max) adalah model reasoning dari OpenAI yang halamannya di Artificial Analysis dibaca 15 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 22 September 2026 dan menulis pembuatnya OpenAI. Spesifikasi yang terpasang: masukan teks dan gambar, keluaran teks, jendela konteks 1,0 juta token, dan reasoning menyala. FAQ menulis OpenAI tidak membuka jumlah parameter. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 15 Oktober 2026.) Intelligence index-nya 38 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 8 dari 176 dan 4 dari 4 satuan. FAQ menaruh skor 38 jauh di atas rata-rata model pada kisaran harga yang sama, median 13. Ringkasan perbandingan memakai median 13 yang sama. Teks kelas di halaman itu mengatakan ada 176 model di kelas pembanding, yaitu model proprietary yang dibandingkan dengan model proprietary dan bobot terbuka pada kisaran harga yang sama, dengan rasio campuran 3:1 untuk masukan dan keluaran, pada pita di bawah $0,15 per juta token. Caption beberapa grafik menulis 27 dari 700 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai 8 dari 176 untuk peringkat kartu, dan tidak menyamakan caption 27 dari 700 dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,10 per juta token masukan dan $0,50 per juta token keluaran, diskon cache 90 persen, biaya rata-rata $0,07 per tugas indeks, peringkat biaya 28 dari 62, dan 2 dari 4 satuan. Ringkasan menyebut kedua harga itu berharga kompetitif, masukan terhadap median $0,25 dan keluaran terhadap median $0,87. FAQ pada halaman yang sama memakai median itu, lalu menulis sangat kompetitif untuk keduanya. Editorial mengutip kedua kata sifat dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $0,08 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, lewat API OpenAI, serta menulis model ini tersedia lewat 8 penyedia. Penyebut biaya 62 tidak sama dengan 176 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya tiga tulisan yang berdekatan, dan satu angka latensi yang tidak dekat dengan mediannya. Kartu menulis 116,3 token per detik, peringkat 63 dari 148, dan 3 dari 4 satuan. FAQ menulis 116,3 token per detik pada API OpenAI, di atas median 108,4. Ringkasan membulatkan menjadi 116 token per detik terhadap rata-rata 108. FAQ juga menulis waktu ke token pertama 110,41 detik, median 1,85 detik, dan menyebutnya di ujung yang lebih tinggi. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Verbosity: kartu menulis 140 juta token keluaran dan peringkat 43 dari 64. Ringkasan menyebut 140 juta agak verbose terhadap median 94 juta. FAQ menyebut 140 juta agak lebih tinggi dari rata-rata terhadap median 94 juta yang sama. Grafik yang dibaca ikut bertuliskan tidak ada API publik, sementara FAQ menulis delapan penyedia. Dua kalimat itu tidak disatukan.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 38, harga keluaran $0,50, dan biaya $0,07 per tugas indeks pada kartu 15 Oktober. Biaya per tugas itu sudah memasukkan verbosity, jadi harga per token bukan tagihan akhir. Karena FAQ memasang 110,41 detik sampai token pertama pada varian Max, agen yang harus membalas sebelum pengguna pindah tab belum punya alasan latensi dari halaman ini, meskipun token per detik duduk di atas median kelas harganya. Karena bobot tidak tersedia, jalur mesin sendiri belum ada. Masukan ucapan dan video tidak ada di spesifikasi yang dibaca. Pakai untuk draf teks dan pertanyaan bergambar yang memang muat di anggaran ini, lalu ukur satu tugas pada tingkat upaya Max sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/gpt-6-luna",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-15",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

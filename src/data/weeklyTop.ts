@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 14 Oktober 2026: 209.871 bintang, 51.427 fork, dan 495 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.4.0 terbit 11 Oktober 2026. Push terakhir 14 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 15 Oktober 2026: 244.193 bintang, 60.998 fork, dan 810 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.5.0 terbit 14 Oktober 2026. Push terakhir 15 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3275,6 +3275,36 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Label kesulitan yang disebut disetujui pemilik: 14 mudah, 34 sedang, dan 22 sukar. README menulis itu bukan tinjauan ganda yang independen. Kode berlisensi MIT. Bahan tugas dan rubrik disebut CC BY 4.0.",
       "Jalur otomatis yang ditulis README membutuhkan macOS Seatbelt dan Python 3.10 atau lebih baru. Pratinjau batch disebut tidak memanggil model sampai `--execute` ditambahkan. Wawasan AI tidak menjalankan benchmark.",
       "API GitHub pada 14 Oktober 2026: 203 bintang, tidak ada fork, tidak ada isu terbuka, bahasa Python, lisensi MIT. Repo dibuat 12 Oktober 2026, push terakhir 13 Oktober 2026. Tidak ada rilis dan tidak ada homepage. Dataset yang ditautkan README ada di Hugging Face, yuxin7778/baoyan-agent-benchmark.",
+    ],
+  },
+  "Caho1/open-claude-ui": {
+    description:
+      "open-claude-ui mengaku menyusun ulang antarmuka desktop Claude sebagai komponen React, dari pembongkaran yang README sandarkan ke REA. README menulis proyek ini tidak mengedarkan fon atau rekaman milik pihak lain. Wawasan AI tidak menyalin buku panduan balik-rekayasanya.",
+    highlights: [
+      "README berbahasa Mandarin, dengan tautan ke README-en.md yang tidak dibandingkan baris demi baris hari ini. Klaim yang dicetak: 30 modul kode, 11 atom dan 19 modul arsitektur, plus buku panduan yang disebut lebih dari 3.000 baris. Wawasan AI tidak menghitung berkas dan tidak membuka naskah panduan itu.",
+      "Lencana README menaruh React 18, TypeScript 5.5, Tailwind CSS 3.4, dan Framer Motion 11. Kotak hak cipta menulis tidak ada fon .ttf atau rekaman .mp3 milik pihak ketiga yang diedarkan, dan suara disebut disintesis lewat Web Audio. Editorial tidak menguji klaim bersih-ruang itu terhadap aplikasi Claude.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 15 Oktober 2026: 207 bintang, 59 fork, tidak ada isu terbuka. Repo dibuat 14 Oktober 2026, push terakhir 15 Oktober 2026. Tidak ada rilis dan tidak ada homepage. Ukuran repositori 735 KB.",
+      "Deskripsi GitHub dan README sama-sama menaruh REA sebagai alat pembongkarannya. Narasi ini berhenti di klaim itu. Konstanta, cuplikan CSS, dan langkah balik-rekayasa yang README cetak tidak disalin ke situs ini.",
+    ],
+  },
+  "yakuikai/tokentab": {
+    description:
+      "tokentab menjumlahkan token dan biaya dari log sesi yang sudah ada di disk: Claude Code, Codex, dan Gemini CLI, plus slot Cursor yang README tandai belum selesai. README menulis tidak ada akun, tidak ada kunci, dan tidak ada yang keluar dari mesin.",
+    highlights: [
+      "Deskripsi GitHub dan snapshot Trendshift hari ini menyebut tiga alat. README menambah Cursor sebagai slot yang sudah disambungkan tetapi belum selesai. Dua teks itu dibiarkan berdampingan.",
+      "Harga disebut tabel tangan di `tokentab/pricing/prices.py`, dolar per juta token, tanpa permintaan jaringan. README menulis nama yang tidak cocok tampil $0.00, dan itu berarti belum ada baris, bukan gratis. Klasifikasi kegiatan disebut tebakan deterministik dari alat yang dipakai dan kalimat pertama, tanpa panggilan model.",
+      "Dasbor web yang ditulis README membuka localhost:4747, memakai server HTTP pustaka standar, dan tidak menarik fon dari CDN. Satu contoh perintah di README tercetak `python cli.pyb`. Perintah lain di halaman yang sama memakai `python cli.py` atau `tokentab`.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 15 Oktober 2026: 1.095 bintang, 119 fork, tidak ada isu terbuka. Repo dibuat 21 September 2026, push terakhir 11 Oktober 2026. Tidak ada rilis dan tidak ada homepage. Ulasan alat hari ini memakai README yang sama.",
+    ],
+  },
+  "T-Auto/dsh-ops": {
+    description:
+      "dsh-ops adalah plugin Windows untuk DeepSeek Harness yang mengaku memotong token lewat bash dan PowerShell tersendiri plus alat berkas Rust. README menulis 0.3.0 hanya untuk Windows x64. API GitHub tidak mengembalikan lisensi SPDX.",
+    highlights: [
+      "README: host yang dituju adalah DSH 0.2.0-rc.2. Bash 5.3.15 dan PowerShell 7.6.6 disebut ikut dalam paket, tanpa mengubah terminal bawaan sistem, PATH, atau nama alat shell yang sudah ada. PTC disebut mati sampai dinyalakan.",
+      "Empat komponen yang dicetak: shell dan berkas menyala pada pemasangan pertama, latar dan PTC mati. Angka 97 persen dan 65 persen adalah tolok ukur pemakaian sendiri di README, bukan pengukuran Wawasan AI.",
+      "Teks lisensi README: MIT dan Apache-2.0, dengan FastCtx yang di-vendor di Apache-2.0, plus muatan Windows yang disebut membawa izin Git for Windows dan PowerShell. API GitHub pada 15 Oktober 2026 mengembalikan SPDX NOASSERTION. Dua penanda itu dibiarkan berdampingan.",
+      "API yang sama: 1.640 bintang, 28 fork, 42 isu terbuka, bahasa JavaScript. Repo dibuat 8 Oktober 2026, push terakhir 14 Oktober 2026. Rilis v0.3.0 terbit 14 Oktober 2026. Tidak ada homepage. Wawasan AI tidak memasang plugin ini.",
     ],
   },
 };

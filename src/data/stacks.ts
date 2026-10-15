@@ -4700,6 +4700,46 @@ export const stacks: Review[] = [
     date: "2026-10-14",
     featured: false,
   },
+  {
+    slug: "tokentab",
+    name: "tokentab",
+    tagline: "Jumlah token dan biaya dari log yang sudah ada di disk, tanpa akun",
+    tags: ["Open Source", "Biaya", "CLI", "Lokal"],
+    score: 7.5,
+    scores: [
+      { label: "Kemampuan Agentic", value: 5.6 },
+      { label: "Kualitas Output", value: 7.6 },
+      { label: "Pengalaman Pengguna", value: 7.6 },
+      { label: "Ekosistem & Integrasi", value: 7.2 },
+      { label: "Harga", value: 9.2 },
+    ],
+    summary:
+      "tokentab duduk di peringkat empat tren harian 15 Oktober 2026. README-nya menjumlahkan token dan biaya dari log Claude Code, Codex, dan Gemini CLI yang sudah tersimpan di mesin, dan menulis tidak ada yang keluar dari komputer.",
+    pros: [
+      "README menulis tidak ada akun dan tidak ada kunci API. Dasbor disebut terikat ke localhost dan tidak menarik fon dari CDN",
+      "Token disebut diambil dari hitungan yang alat itu sendiri catat. README menulis bagian cache Gemini dikeluarkan dulu supaya tidak ditagih dua kali",
+      "Berjalan di mesin yang sudah punya Python, tanpa syarat Mac atau Windows yang membatasi alat pencari dua hari terakhir",
+      "Lisensi MIT. API GitHub pada 15 Oktober 2026: 1.095 bintang dan 119 fork",
+    ],
+    cons: [
+      "Slot Cursor di README ditandai belum selesai. Deskripsi GitHub dan snapshot Trendshift hari ini tidak menyebut Cursor sama sekali",
+      "Harga adalah tabel tangan. README menulis model yang tidak cocok tampil $0.00, dan angka itu berarti barisnya belum ada",
+      "Satu contoh di README tercetak `python cli.pyb`. Perintah lain di halaman yang sama memakai `python cli.py` atau `tokentab`",
+      "Klasifikasi kegiatan disebut tebakan dari alat dan kalimat pertama, bukan label yang pengguna isi. Wawasan AI tidak menjalankan perhitungannya",
+    ],
+    verdict:
+      "Masuk akal di laptop yang tagihan Claude Code atau Codex-nya sudah terasa, asal tabel harga dibaca sebelum angka dolar itu dipakai untuk laporan. Jangan menganggap $0.00 sebagai model gratis.",
+    body: [
+      "tokentab dibuat di repositori yakuikai/tokentab. README yang dicek 15 Oktober 2026 mendeskripsikan penjumlah token dan biaya dari log sesi yang alat coding sudah tulis ke disk. API GitHub hari yang sama mencatat 1.095 bintang, 119 fork, tidak ada isu terbuka, bahasa Python, dan lisensi MIT. Repo dibuat 21 September 2026. Push terakhir 11 Oktober 2026. Tidak ada rilis GitHub dan tidak ada homepage. Trendshift menaruhnya di peringkat empat. Kemunculan di daftar hari ini tidak sama dengan rilis baru. Wawasan AI tidak memasang paketnya dan tidak membuka log sesi.",
+      "Alat yang README sebut paham dari kotak: Claude Code di `~/.claude/projects/**/*.jsonl`, Codex di `~/.codex/sessions/**/rollout-*.jsonl`, dan Gemini CLI di `~/.gemini/tmp/**/session-*.json`. Cursor ada di tabel yang sama dengan catatan stub. Deskripsi repositori di API, dan kalimat snapshot Trendshift pagi ini, berhenti di Claude Code, Codex, dan Gemini CLI. README menulis alat yang tidak terpasang dilewati. Perintah yang dicetak meliputi tujuh hari terakhir, hari ini, bulan berjalan, satu penyedia, satu proyek, JSON, dan dasbor lewat `python cli.py -web`. Dasbor disebut membuka localhost:4747, membaca disk pada tiap permintaan, dan memakai server HTTP pustaka standar. Dependensi pihak ketiga yang disebut hanya rich. Di tengah daftar perintah, satu baris tercetak `python cli.pyb --from`. Baris itu tidak sama dengan nama perintah di bagian lain README.",
+      "Bagian angka yang paling perlu dibaca ada di cara harga dihitung. Token disebut datang dari log, bukan tebakan, dengan catatan cache: Claude memisah baca dan tulis cache, Gemini memasukkan bagian cache ke masukan, dan tokentab disebut menarik token cache itu keluar sebelum menghitung harga. Harga sendiri disebut tabel tangan di `tokentab/pricing/prices.py`, dalam dolar per juta token, sengaja tanpa jaringan. Pencocokan disebut samar, dengan contoh nama bertanggal yang tetap menemukan baris modelnya. Kalimat README: kalau sebuah model tampil $0.00, namanya tidak cocok, dan CLI disebut mengatakannya, bukan menghitungnya sebagai gratis. Kegiatan seperti coding atau debugging disebut tebakan deterministik dari alat yang dipakai dan kalimat pertama sesi, tanpa panggilan model. README meminta angka itu diperlakukan sebagai petunjuk.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah penjumlah lokal untuk log yang memang sudah ada, tanpa kunci tambahan dan tanpa batas sistem operasi yang README cetak. Yang tidak berguna sebagai laporan kantor adalah dolar dari tabel yang README sendiri sebut bisa ketinggalan, dan label kegiatan yang tidak diisi manusia. Log yang dibaca adalah log sesi di mesin sendiri. README menulis prosesnya tidak mengunggah apa pun. Wawasan AI tidak mengaudit parsernya, jadi kalimat lokal itu tetap klaim README. Pasang dulu pada satu akun pribadi, bandingkan satu hari dengan tagihan penyedia yang benar-benar sampai, lalu baru pecaya rentang yang lebih panjang. Seribu sembilan puluh lima bintang tidak mengubah baris `cli.pyb` yang tercetak di README, dan tidak mengubah $0.00 menjadi gratis.",
+    ],
+    link: "https://github.com/yakuikai/tokentab",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-15",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

@@ -59,6 +59,8 @@ const SLUG_ICONS: Record<string, string> = {
   "solar-mini-4": "https://www.google.com/s2/favicons?domain=upstage.ai&sz=128",
   sill: "https://github.com/Saffsanity.png",
   "muse-wonder-full": "https://cdn.simpleicons.org/meta",
+  tokentab: "https://github.com/yakuikai.png",
+  "gpt-6-luna": "https://cdn.simpleicons.org/openai",
 };
 
 function githubOrgIcon(link: string): string | null {
