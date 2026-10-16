@@ -4740,6 +4740,46 @@ export const stacks: Review[] = [
     date: "2026-10-15",
     featured: false,
   },
+  {
+    slug: "openbitfun",
+    name: "OpenBitFun",
+    tagline: "Ruang kerja agen desktop, dengan relay yang harus dipasang sendiri",
+    tags: ["Open Source", "Agen", "Desktop", "Rust"],
+    score: 7.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.8 },
+      { label: "Kualitas Output", value: 7.2 },
+      { label: "Pengalaman Pengguna", value: 7.4 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 8.2 },
+    ],
+    summary:
+      "OpenBitFun duduk di peringkat dua tren harian 16 Oktober 2026. README-nya memasangkan runtime agen Rust dengan aplikasi desktop Windows, macOS, dan Linux, dan menulis sinkronisasi akun lewat relay yang pengguna pasang sendiri.",
+    pros: [
+      "Empat mode harness tertulis di README: Minimal, Standard, Ultimate, dan Creative. Mini App disebut bisa dipasang ulang atau diambil dari marketplace",
+      "Platform yang lencana README cetak: Windows, macOS, dan Linux. Kode inti disebut MIT",
+      "API GitHub pada 16 Oktober 2026: 2.536 bintang dan 260 fork. Rilis v1.0.6 terbit 15 Oktober 2026",
+      "README menulis sesi yang bertahan, pemulihan interupsi, dan pemampatan konteks. Wawasan AI tidak mengukur klaim itu",
+    ],
+    cons: [
+      "Judul README masih bertuliskan 1.0.0, sementara tag rilis terbaru adalah v1.0.6. README menulis 1.0.0 tidak kompatibel datanya dengan rilis 0.2.x",
+      "Login dan sinkronisasi antarperangkat disebut lewat relay yang dipasang sendiri, bukan layanan bawaan yang sudah hidup",
+      "Angka DeepSWE v1.1 di README adalah tolok ukur penulis: 64,6 persen dan 56,6 persen. Wawasan AI tidak mengulang pengujian itu",
+      "Rilis mobile-v1.0.0 pada 10 Oktober ditandai prarilis. Wawasan AI tidak memasang desktop dan tidak memasang ponsel",
+    ],
+    verdict:
+      "Masuk akal untuk dicoba di satu mesin pribadi bila model yang dipakai memang sudah punya kunci, asal data 0.2.x tidak langsung dibuka di 1.0. Jangan menganggap angka DeepSWE di README sebagai hasil uji situs ini.",
+    body: [
+      "OpenBitFun dibuat di repositori GCWing/OpenBitFun. README yang dicek 16 Oktober 2026 mendeskripsikan ruang kerja agen yang bisa disesuaikan, dengan runtime Rust dan aplikasi desktop. API GitHub hari yang sama mencatat 2.536 bintang, 260 fork, 109 isu terbuka, bahasa Rust, dan lisensi MIT. Repo dibuat 2 Februari 2026. Push terakhir 16 Oktober 2026. Homepage di API adalah openbitfun.com. Rilis v1.0.6 terbit 15 Oktober 2026. Trendshift menaruhnya di peringkat dua. Wawasan AI tidak memasang paket desktop dan tidak menjalankan dari sumber.",
+      "Bagian yang paling perlu dibaca sebelum memasang adalah catatan migrasi. README menulis OpenBitFun 1.0.0 tidak kompatibel datanya dengan rilis lama 0.2.x, dan menunjuk alat migrasi untuk rilis stabil 0.2.17 sampai 0.2.19. Judul bagian yang sama masih bertuliskan 1.0.0, sementara API rilis menaruh v1.0.6 pada 15 Oktober, data-migrator-v0.1.2 pada 10 Oktober, dan mobile-v1.0.0 yang ditandai prarilis pada 10 Oktober. Empat mode yang tabel README cetak: Minimal untuk kerja singkat, Standard untuk tugas beberapa langkah, Ultimate untuk memecah kerja ke beberapa agen, dan Creative untuk Mini App serta perubahan antarmuka. Marketplace Mini App dan skin ditautkan ke market.openbitfun.com. Wawasan AI tidak membuka toko itu.",
+      "Kontrol jarak jauh yang README tulis tidak sama dengan akun awan yang sudah jadi. Detail di halaman yang sama menyebut SSH ke host jauh, jump host, atau kontainer. Login, sinkronisasi, dan kontrol antarperangkat pada akun yang sama disebut lewat relay yang pengguna pasang. Aplikasi desktop dan CLI disebut berbagi inti eksekusi. Ponsel dan bot pesan disebut jalan lain untuk mengendalikan tugas. Jam tangan dan kacamata masih di kalimat yang README tandai sedang dibangun. Angka yang tidak boleh dipindah menjadi hasil editorial ada di DeepSWE v1.1: GLM-5.3-Flash 64,6 persen lulus dengan median waktu 42,9 menit, dan DeepSeek-V4-Flash 56,6 persen dengan median 19,6 menit. Itu kalimat README.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah aplikasi desktop lintas sistem operasi dengan kode inti MIT, tanpa syarat Apple Silicon yang membatasi dua alat pencari pekan ini. Biaya model tetap di luar lisensi itu, karena README meminta model dikonfigurasi dulu. Yang tidak berguna sebagai laporan kantor adalah persentase DeepSWE dan janji sesi panjang yang belum diukur di sini. Pasang dulu pada satu akun pribadi, jangan buka data 0.2.x sebelum alat migrasi yang README sebut benar-benar dipakai, dan jangan menyalakan relay di jaringan bersama sebelum dokumen remote-nya dibaca. Dua ribu lima ratus tiga puluh enam bintang tidak mengubah jarak antara judul 1.0.0 di README dan tag v1.0.6 di API.",
+    ],
+    link: "https://github.com/GCWing/OpenBitFun",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-16",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

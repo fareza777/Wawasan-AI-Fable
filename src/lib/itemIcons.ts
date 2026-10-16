@@ -61,6 +61,8 @@ const SLUG_ICONS: Record<string, string> = {
   "muse-wonder-full": "https://cdn.simpleicons.org/meta",
   tokentab: "https://github.com/yakuikai.png",
   "gpt-6-luna": "https://cdn.simpleicons.org/openai",
+  openbitfun: "https://github.com/GCWing.png",
+  "nemotron-3-5-super-vl": "https://cdn.simpleicons.org/nvidia",
 };
 
 function githubOrgIcon(link: string): string | null {

@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 15 Oktober 2026: 244.193 bintang, 60.998 fork, dan 810 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.5.0 terbit 14 Oktober 2026. Push terakhir 15 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 16 Oktober 2026: 271.904 bintang, 68.338 fork, dan 991 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.5.0 terbit 14 Oktober 2026. Push terakhir 16 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3305,6 +3305,86 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Empat komponen yang dicetak: shell dan berkas menyala pada pemasangan pertama, latar dan PTC mati. Angka 97 persen dan 65 persen adalah tolok ukur pemakaian sendiri di README, bukan pengukuran Wawasan AI.",
       "Teks lisensi README: MIT dan Apache-2.0, dengan FastCtx yang di-vendor di Apache-2.0, plus muatan Windows yang disebut membawa izin Git for Windows dan PowerShell. API GitHub pada 15 Oktober 2026 mengembalikan SPDX NOASSERTION. Dua penanda itu dibiarkan berdampingan.",
       "API yang sama: 1.640 bintang, 28 fork, 42 isu terbuka, bahasa JavaScript. Repo dibuat 8 Oktober 2026, push terakhir 14 Oktober 2026. Rilis v0.3.0 terbit 14 Oktober 2026. Tidak ada homepage. Wawasan AI tidak memasang plugin ini.",
+    ],
+  },
+  "GCWing/OpenBitFun": {
+    description:
+      "OpenBitFun adalah ruang kerja agen dengan runtime Rust dan aplikasi desktop. README menulis empat mode harness, lalu kontrol lintas perangkat lewat relay yang dipasang sendiri. Kode inti berlisensi MIT.",
+    highlights: [
+      "Empat mode yang dicetak README: Minimal, Standard, Ultimate, dan Creative. Mini App disebut pasangan antarmuka dan percakapan agen. Marketplace yang ditautkan ada di market.openbitfun.com.",
+      "Judul bagian README masih bertuliskan OpenBitFun 1.0.0. API rilis menaruh v1.0.6 pada 15 Oktober 2026, plus data-migrator-v0.1.2 pada 10 Oktober dan mobile-v1.0.0 yang ditandai prarilis pada hari yang sama. README menulis 1.0.0 tidak kompatibel datanya dengan 0.2.x, dan alat migrasi yang disebut mencakup rilis stabil 0.2.17 sampai 0.2.19.",
+      "Angka DeepSWE v1.1 di README: GLM-5.3-Flash 64,6 persen lulus dengan median 42,9 menit, DeepSeek-V4-Flash 56,6 persen dengan median 19,6 menit. Itu catatan penulis. Wawasan AI tidak menjalankan evaluasi itu.",
+      "API GitHub pada 16 Oktober 2026: 2.536 bintang, 260 fork, 109 isu terbuka, bahasa Rust, lisensi MIT. Repo dibuat 2 Februari 2026, push terakhir 16 Oktober 2026. Homepage openbitfun.com. README menulis kode inti MIT dan dependensi pihak ketiga tetap pada lisensinya sendiri. Ulasan alat hari ini memakai README yang sama.",
+    ],
+  },
+  "perplexityai/SPACE": {
+    description:
+      "SPACE adalah platform sandbox Perplexity untuk menjalankan kode agen di microVM Firecracker. README menulis aplikasi pemakai yang memutuskan perintah, sementara SPACE mengurus siklus hidup sandbox dan aliran keluarannya.",
+    highlights: [
+      "README: template menjadi sandbox dengan VM dan sistem berkas yang bisa ditulis. Perubahan siklus hidup disebut asinkron, lewat operation ID yang di-poll. Keluaran perintah memakai koneksi data-plane dan token lampiran per sesi.",
+      "Dokumentasi yang ditautkan mencakup pemasangan lokal di klaster Kind, pembungkus kompatibilitas E2B, kolam hangat, dan cuplikan dasar. Panduan arsitektur disebut menjelaskan jalan tanpa Kubernetes. Wawasan AI tidak memasang klaster.",
+      "API GitHub pada 16 Oktober 2026: 487 bintang, 34 fork, 87 isu terbuka, bahasa Rust, lisensi Apache-2.0. Repo dibuat 1 Oktober 2026, push terakhir 16 Oktober 2026. Tidak ada rilis GitHub dan tidak ada homepage di API. Dokumen yang README tautkan ada di space.docs.perplexity.ai.",
+      "README menulis mdBook 0.4.52 untuk membangun panduan lokal, plus Git dan Python 3.11 atau lebih baru. Bidang skema yang ditandai incubating disebut di luar kontrak yang didukung.",
+    ],
+  },
+  "Thysrael/Horizon": {
+    description:
+      "Horizon menyusun briefing berita harian dari sumber yang pengguna pilih. README menulis keluaran bahasa Inggris dan Mandarin, dengan profil yang memisahkan berita, tulisan teknik, dan bahan kreator.",
+    highlights: [
+      "Sumber yang disebut README: RSS, Hacker News, Reddit, Telegram, X, GitHub, dan berita keuangan. Tiga profil contoh: tech-news, tech-blog, dan ai-creator. Profil disebut aturan editorial yang bisa diubah tanpa menyentuh Python.",
+      "Pengiriman yang disebut: Markdown, GitHub Pages, email, dan webhook. Tangkapan layar README menambah Feishu dan WeChat. Keterangan diagram arsitektur menulis Markdown, Pages, email, WeChat, dan webhook.",
+      "Pemasangan yang dicetak memakai uv atau pip, plus Docker. Ekstra twitter disebut membutuhkan peramban Playwright yang Dockerfile saat ini tidak pasang. Wawasan AI tidak menjalankan wizard horizon-wizard.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 16 Oktober 2026: 9.959 bintang, 1.537 fork, 1 isu terbuka. Repo dibuat 20 Februari 2026, push terakhir 16 Oktober 2026. Tidak ada rilis GitHub. Homepage di API adalah horizon1123.top.",
+    ],
+  },
+  "anthropics/claude-plugins-official": {
+    description:
+      "claude-plugins-official adalah direktori plugin Claude Code yang dikelola Anthropic. README memisahkan plugin internal di /plugins dan plugin pihak ketiga di /external_plugins, lalu memperingatkan bahwa isi MCP di dalam plugin tidak diverifikasi Anthropic.",
+    highlights: [
+      "Perintah pasang yang dicetak README: `/plugin install {plugin-name}@claude-plugins-official`, atau lewat `/plugin` lalu Discover. Nama plugin disebut slug yang tidak boleh diganti setelah terbit. README menulis peta `renames` bila pemindahan nama tidak terhindarkan.",
+      "API isi repositori pada 16 Oktober 2026 mengembalikan 40 direktori di /plugins dan 14 direktori di /external_plugins. Itu hitungan entri direktori, bukan uji bahwa masing-masing terpasang.",
+      "API repositori pada hari yang sama: 39.174 bintang, 4.332 fork, 1.136 isu terbuka, bahasa Python, lisensi Apache-2.0. Repo dibuat 20 November 2025, push terakhir 16 Oktober 2026. Homepage code.claude.com/docs/en/plugins. Tidak ada rilis GitHub.",
+      "README menulis lisensi tiap plugin ada di tautannya sendiri. Peringatan di atas halaman: Anthropic tidak mengendalikan server MCP, berkas, atau perangkat lunak yang ikut dalam plugin. Wawasan AI tidak memasang plugin dari direktori ini hari ini.",
+    ],
+  },
+  "michael-denyer/pstack-claude": {
+    description:
+      "pstack-claude memindahkan skill stack pstack ke Claude Code, Codex, Copilot, Pi, dan harness lain. README menulis ini mengikuti upstream Lauren Tan di cursor/plugins, plus cabang kebijakan yang didaftar di tools/forks.json.",
+    highlights: [
+      "README: tidak ada server dan tidak ada telemetri. Skrip disebut berjalan lokal. Yang skill minta agen baca, termasuk transkrip sesi, pergi ke penyedia model. Alat PR memakai login GitHub CLI.",
+      "Rilis API yang terbaru, v0.9.86, terbit 15 Oktober 2026. v0.9.85 terbit pada hari yang sama, lebih dulu. README menulis uji Copilot CLI pada versi 1.0.87 sampai 1.0.92, dan pada 1.0.92 sesi `copilot -p` disebut tidak mendaftar skill plugin.",
+      "Lisensi MIT untuk port ini, dengan kredit pstack asli © 2026 Lauren Tan dan berkas cursor-team-kit serta thermos © 2026 Cursor. API GitHub pada 16 Oktober 2026: 2.394 bintang, 226 fork, 4 isu terbuka, bahasa JavaScript. Repo dibuat 26 Mei 2026, push terakhir 15 Oktober 2026. Tidak ada homepage.",
+      "Wawasan AI tidak memasang plugin ini. Perintah pasang yang README cetak untuk Claude Code, Codex, Pi, dan Copilot tidak dijalankan.",
+    ],
+  },
+  "rootSunc/CNEquity": {
+    description:
+      "CNEquity menyusun data pasar Tiongkok ke danau Parquet di mesin sendiri. README menulis 55 dataset terdaftar, tanpa akun dan tanpa token, lalu menyambungkannya ke klien MCP.",
+    highlights: [
+      "README: 55 dataset, 47 curated dan 8 derived, lapisan L0 sampai L9. Menit, tick, serta futures dan opsi disebut mati secara bawaan. Deskripsi GitHub menulis 55 dataset yang diperbarui harian. Dua kalimat itu dibiarkan berdampingan.",
+      "Syarat yang dicetak: Python 3.10 atau lebih baru, di macOS, Linux, atau Windows. Lencana README menaut ke pypi.org/project/cnequity/. Halaman PyPI itu tidak dibuka hari ini. Rilis GitHub v0.16.0 terbit 7 Oktober 2026.",
+      "API GitHub pada 16 Oktober 2026: 413 bintang, 62 fork, 7 isu terbuka, bahasa Python, lisensi Apache-2.0. Repo dibuat 28 Juni 2026, push terakhir 8 Oktober 2026. Homepage rootsunc.github.io/CNEquity.",
+      "Wawasan AI tidak mengunduh data pasar dan tidak memasang paketnya. Contoh pertanyaan saham di README tetap contoh penulis.",
+    ],
+  },
+  "xerj-org/xerj": {
+    description:
+      "XERJ mengindeks folder supaya agen mengambil cuplikan, bukan seluruh berkas. Deskripsi GitHub menulis 40 kali lebih hemat token daripada grep. Tabel studi di README menulis 2,7 kali lebih sedikit token keluaran daripada grep. Dua angka itu tidak disatukan.",
+    highlights: [
+      "Tabel README, yang disebut pengukuran penulis: dari ingatan 260.916 token keluaran dan 11 dari 16 selesai; agen yang memakai grep 26.477 token dan 16 dari 16; XERJ 9.982 token dan 16 dari 16. Kalimat yang sama menulis laporan lapangan sekitar 5 kali. Lencana README menulis 2,7 kali lebih sedikit token. Deskripsi GitHub menulis 40 kali. Wawasan AI tidak mengulang studi itu.",
+      "README memperingatkan bendera `--insecure` mematikan TLS dan autentikasi kunci, sehingga pemanggil yang menjangkau porta menjadi superuser yang bisa membaca dan menghapus setiap indeks. Pemasang satu baris dari situs juga tercetak di README. Wawasan AI tidak menjalankan pemasang jarak jauh itu.",
+      "API rilis: tiga tag terbaru pada 15 Oktober 2026 ditandai prarilis. Rilis terbaru yang tidak ditandai prarilis di antara 20 tag yang diambil adalah v1.0.0-rc.95 pada 12 Oktober 2026.",
+      "API GitHub pada 16 Oktober 2026: 5.728 bintang, 310 fork, 54 isu terbuka, bahasa Rust, lisensi Apache-2.0. Repo dibuat 30 Juni 2026, push terakhir 15 Oktober 2026. Homepage xerj.org.",
+    ],
+  },
+  "chenglou/handwired": {
+    description:
+      "Handwired mengubah program JavaScript biasa menjadi jaringan saraf yang README sebut eksak dan tetap bisa diturunkan, tanpa pelatihan. Bobotnya ditulis tangan dari percabangan dan loop.",
+    highlights: [
+      "README: if, loop, dan state diubah menjadi perkalian matriks plus ReLU atas bilangan pecahan. Kedua cabang disebut tetap dihitung, lalu satu nilai memilih hasilnya. Jalur yang disebut: JavaScript atau WebGPU.",
+      "Demo yang ditautkan ada di chenglou.me/handwired/. Kalimat README tentang pencarian JSON dalam hitungan milidetik pada 100 ribu dokumen adalah contoh penulis. Wawasan AI tidak menjalankan demo.",
+      "Perintah lokal yang dicetak: `bun install` lalu `bun start`. Folder lab disebut eksperimen lama.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 16 Oktober 2026: 1.091 bintang, 80 fork, 1 isu terbuka. Repo dibuat 15 Oktober 2026, push terakhir 15 Oktober 2026. Tidak ada rilis GitHub. Homepage chenglou.me/handwired/.",
     ],
   },
 };

@@ -5349,6 +5349,51 @@ link: "https://www.anthropic.com",
     date: "2026-10-15",
     featured: false,
   },
+  {
+    slug: "nemotron-3-5-super-vl",
+    name: "Nemotron 3.5 Super VL",
+    tagline: "Indeks 26 di kelas bobot terbuka seukurannya, cepat per detik, tanpa coding index",
+    tags: ["NVIDIA", "Open Weights", "Reasoning", "Vision"],
+    score: 7.2,
+    scores: [
+      { label: "Penalaran", value: 7.0 },
+      { label: "Coding", value: 6.2 },
+      { label: "Kecepatan", value: 8.2 },
+      { label: "Harga/Performa", value: 7.4 },
+    ],
+    aa_intelligence_index: 26,
+    aa_price_input: 0.25,
+    aa_price_output: 0.65,
+    aa_synced_at: "2026-10-16",
+    summary:
+      "Artificial Analysis, dicek 16 Oktober 2026, memberi Nemotron 3.5 Super VL intelligence index 26 dan menandainya bobot terbuka. Kartu intelijen menulis peringkat 1 dari 67. Keluaran 175,5 token per detik, sementara ringkasan di halaman yang sama membulatkan menjadi 176.",
+    pros: [
+      "Intelligence index 26, di atas median 8 untuk bobot terbuka ukuran serupa (sumber: Artificial Analysis, 16 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 1 dari 67, dengan 4 dari 4 satuan untuk intelijen",
+      "Kartu kecepatan: 175,5 token per detik, peringkat 6 dari 27, dan 4 dari 4 satuan. FAQ menaruh median kelas di 92,8",
+      "Spesifikasi halaman: 120 miliar parameter total, 12 miliar aktif, konteks 1 juta token, lisensi OpenMDW-1.1, reasoning menyala",
+    ],
+    cons: [
+      "Halaman yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Beberapa grafik menulis tidak ada API publik, sementara FAQ menulis model ini tersedia lewat 5 penyedia",
+      "Ringkasan menyebut harga moderately priced. FAQ pada median yang sama menulis better than average",
+      "Blog NVIDIA pada 15 Oktober menulis 5 kali lebih cepat. Halaman Artificial Analysis yang dibaca 16 Oktober tidak mencetak angka 5 kali itu",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai bobot terbuka 120 miliar dengan indeks 26 dan harga median penyedia $0,25 serta $0,65, selama tugasnya muat di masukan teks dan gambar yang halaman Artificial Analysis cetak. Jangan menempelkan klaim 5 kali dari blog NVIDIA ke kartu kecepatan.",
+    body: [
+      "Nemotron 3.5 Super VL adalah model reasoning dari NVIDIA yang halamannya di Artificial Analysis dibaca 16 Oktober 2026. Kartu di bagian atas menandai bobot terbuka dan rilis Oktober 2026. FAQ memperinci tanggal rilis 15 Oktober 2026 dan menulis pembuatnya NVIDIA. Spesifikasi yang terpasang: masukan teks dan gambar, keluaran teks, jendela konteks 1,0 juta token, reasoning menyala, 120 miliar parameter total, 12 miliar aktif, dan lisensi OpenMDW-1.1. FAQ menulis lisensi itu mengizinkan pemakaian komersial dan bobot bisa diunduh. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 16 Oktober 2026.) Intelligence index-nya 26 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 1 dari 67 dan 4 dari 4 satuan. FAQ menaruh skor 26 jauh di atas rata-rata bobot terbuka ukuran serupa, median 8. Ringkasan perbandingan memakai median 8 yang sama dan menyebut model ini amongst the leading models untuk kelas itu. Teks kelas di halaman itu mengatakan ada 67 model di kelas pembanding, yaitu bobot terbuka yang dibandingkan dengan bobot terbuka pada kelas ukuran yang sama. Parameter 120 miliar masuk pita medium 40 sampai 150 miliar pada keterangan kelas itu. Caption beberapa grafik menulis 26 dari 703 model, plus kalimat tidak ada API yang tersedia untuk publik. Catatan perubahan Artificial Analysis pada 15 Oktober menulis Nemotron 3.5 Super VL kini model bobot terbuka Amerika Serikat terdepan, dengan skor 26. Editorial memakai 1 dari 67 untuk peringkat kartu, dan tidak menyamakan caption 26 dari 703 atau kalimat terdepan di catatan perubahan dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,25 per juta token masukan dan $0,65 per juta token keluaran, diskon cache 76 persen, biaya rata-rata $0,30 per tugas indeks, peringkat biaya 4 dari 8, dan 2 dari 4 satuan. Ringkasan menyebut kedua harga itu moderately priced, masukan terhadap median $0,30 dan keluaran terhadap median $0,81. FAQ memakai median itu, lalu menulis better than average untuk keduanya, dan menulis angka itu median di antara penyedia. Editorial mengutip kedua kata sifat dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $0,16 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 5 penyedia. Penyebut biaya 8 tidak sama dengan 67 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya dua tulisan yang berdekatan, dan satu klaim blog yang tidak dekat. Kartu menulis 175,5 token per detik, peringkat 6 dari 27, dan 4 dari 4 satuan. FAQ menulis 175,5 token per detik sebagai median antarpenyedia, di atas median 92,8. Ringkasan membulatkan menjadi 176 token per detik dan menaruh angka 93 di dalam kurung, tanpa kata median pada kalimat itu. FAQ juga menulis waktu ke token pertama 0,74 detik, median 1,77 detik, dan menyebutnya very competitive. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Editorial tidak menyamakan 0,74 detik di FAQ dengan judul bagian itu menjadi satu metrik yang sudah dicek ulang. Verbosity: kartu menulis 170 juta token keluaran, peringkat 9 dari 13, dan 3 dari 4 satuan. Ringkasan menyebut 170 juta somewhat verbose terhadap median 100 juta. FAQ menyebut 170 juta somewhat higher than average terhadap median 100 juta yang sama.",
+      "Blog NVIDIA pada 15 Oktober 2026, ditulis Kari Briski, menyebut Super VL model terbuka 120 miliar parameter dan menaruh Bolt 74B-A9B tersedia sekarang serta Bolt E4B pada 23 Oktober. Blog itu menulis Super VL 5 kali lebih cepat daripada yang berikutnya, dan sampai 5 kali throughput lebih cepat di papan Artificial Analysis. Halaman model yang dibaca 16 Oktober tidak mencetak kelipatan 5 itu. Blog yang sama menulis pelatihan sekitar 26 triliun token, lalu pascapelatihan sekitar 3,8 juta sampel. Kartu model NVIDIA NIM untuk rilis NVFP4, dibaca hari ini, menulis masukan teks, gambar, dan video serta keluaran teks, 512 pakar terarah per lapisan MoE, dan lisensi OpenMDW-1.1. Halaman Artificial Analysis berhenti di masukan teks dan gambar. Editorial tidak memindahkan video dari kartu NIM ke spesifikasi Artificial Analysis, dan tidak memindahkan kelipatan 5 dari blog ke kartu 175,5 token per detik.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 26, 12 miliar parameter aktif, dan biaya $0,30 per tugas indeks pada kartu 16 Oktober. Karena FAQ menulis bobot tersedia, jalur mesin sendiri disebut ada, tetapi halaman ini tidak mencetak kebutuhan memori. Karena grafik masih bertuliskan tidak ada API publik sementara FAQ menulis lima penyedia, tagihan baru bisa dihitung setelah penyedia yang dipakai dipilih. Masukan video ada di kartu NIM untuk build NVFP4, tidak di spesifikasi Artificial Analysis yang dibaca. Pakai kartu ini untuk membandingkan bobot terbuka di kelas ukurannya, lalu pisahkan klaim kecepatan blog dari 175,5 token per detik sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/nemotron-3-5-super-vl",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-16",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

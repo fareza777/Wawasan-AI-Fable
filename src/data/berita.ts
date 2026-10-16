@@ -5416,6 +5416,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-t3-arsip-digital-tanpa-garis-finish",
+    title: "ANTARA Pukul 08.17: Prinsip T3, Tanpa Kalimat Garis Finish",
+    excerpt:
+      "Kawat ANTARA pada Jumat 16 Oktober pukul 08.17 WIB mengulang acara kearsipan Kamis. Radar BIONS pada 15 Oktober masih menyimpan kutipan garis finish yang kawat Jumat tidak bawa.",
+    category: "Analisis",
+    date: "2026-10-16",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Jumat 16 Oktober 2026 pukul 08.17 WIB, ANTARA menurunkan Menkomdigi: Prinsip T3 fondasi penting dalam pengarsipan digital. Pewartanya Livia Kristianti, editornya Natisha Andarningtyas. Dateline yang tercetak tertulis Jakart, tanpa huruf a. Tubuhnya membuka dengan Meutya Hafid, Menteri Komunikasi dan Digital, yang menyebut prinsip T3, terhubung, tumbuh, dan terjaga, sebagai fondasi pengarsipan digital.",
+          "Acara yang kawat itu sandarkan sudah berlangsung Kamis. Kalimat ANTARA menaruh Penyerahan Hasil Pengawasan Kearsipan Internal di Lingkungan Kementerian Komdigi, tema Empowering the Future: Arsip Terhubung, Kinerja Tumbuh, Integritas Terjaga, di Jakarta pada Kamis (15/10). Kutipan Meutya di tubuh yang sama disebut keterangan di Jakarta yang dikonfirmasi, Jumat. Jadi yang baru pada Jumat pagi adalah kawat ANTARA, bukan tanggal acaranya.",
+        ],
+      },
+      {
+        heading: "Yang kawat Jumat cetak",
+        paragraphs: [
+          "Kutipan pencatatan di ANTARA berbunyi: pencatatan yang akurat harus menjadi kebiasaan dalam setiap proses kerja, bagi kami pencatatan menjadi nomor satu, data harus akurat, tidak boleh salah menyampaikan. Definisi Terhubung yang dikutip: data dan arsip terintegrasi serta dimanfaatkan lintas unit kerja. Paragraf Tumbuh, yang tidak diberi tanda kutip di tubuh itu, menulis rekam jejak program, hasil evaluasi, dan dokumentasi pelaksanaan kebijakan sebagai pijakan. Dari prinsip Terjaga, Meutya disebut menekankan keamanan, keutuhan, kerahasiaan, dan keberlanjutan arsip. Kalimat berikutnya menulis pemusnahan arsip berdasarkan klasifikasi, retensi, dan prosedur yang berlaku.",
+          "Bagian kecerdasan artifisial ada di dua kalimat reporter, lalu satu kutipan. Reporter menulis pengarsipan digital dengan prinsip T3 dirasa tepat serta relevan di tengah inovasi AI yang masuk ke layanan publik, dan pengelolaan data disebut krusial agar AI tidak hanya memakai data untuk inovasi, tetapi juga memberi solusi yang tepat. Kutipan Meutya yang menutup bagian itu: kemampuan mengelola, memelihara, menghubungkan, dan mengolah data menjadi salah satu fondasi penting dalam perkembangan teknologi digital. Tidak ada nama model, anggaran, atau nomor aturan di tubuh kawat.",
+        ],
+      },
+      {
+        heading: "Yang Radar BIONS sudah tulis pada 15 Oktober",
+        paragraphs: [
+          "Radar BIONS menurunkan Meutya Hafid Dorong Kearsipan Digital untuk Perkuat Tata Kelola Pemerintahan, bertanda Sai San, October 15, 2026, dengan baris RBN || Jakarta. Acara yang disebut sama, dengan tambahan Jakarta Pusat dan tanggal lengkap Kamis (15/10/2026). Teks itu memuat kutipan yang kawat Jumat tidak bawa: pengarsipan sering dianggap proses yang berada paling ujung, padahal sebagaimana dalam lomba lari, yang paling penting adalah bagaimana kita mencapai garis finish.",
+          "Kutipan pencatatan di Radar lebih panjang satu kata di depan. Ia dimulai dengan karena pencatatan yang akurat harus menjadi kebiasaan, lalu menyambung ke bagi kami dan data harus akurat. ANTARA memulai dari pencatatan yang akurat, tanpa karena. Prinsip T3 di Radar diringkas dalam satu paragraf, tanpa kalimat pemusnahan arsip. Bagian AI di Radar dua kalimat, tanpa frasa dirasa tepat serta relevan dan tanpa kalimat solusi yang tepat. Kalimat mengelola, memelihara, menghubungkan, dan mengolah data di Radar tidak berada di dalam tanda kutip. Harapan penutup Radar berhenti di pencapaian kinerja. ANTARA menambah yang berdampak nyata bagi pelayanan publik.",
+        ],
+      },
+      {
+        heading: "Ambon pukul 8.35, dan halaman kementerian yang tidak terbaca",
+        paragraphs: [
+          "ANTARA Ambon menurunkan judul yang sama pada Jumat 16 Oktober 2026 pukul 8.35 WIB. Tubuh yang kembali dari halaman itu mengikuti kawat nasional, termasuk ejaan Jakart, konfirmasi Jumat, definisi T3, dan paragraf AI. Baris pewarta Livia Kristianti dan editor Natisha Andarningtyas tidak muncul pada teks Ambon yang terbaca. Nama lain tidak dicetak di tubuh itu.",
+          "Halaman siaran pers Komdigi berjudul Jadi Fondasi Kinerja, Meutya Hafid Terapkan Prinsip T3 dalam Pengarsipan Digital tidak mengembalikan tubuh berita pada pembacaan hari ini. Karena naskah kementerian tidak terbuka, editorial tidak membandingkan kalimat garis finish atau definisi T3 dengan siaran pers. Yang bisa dibandingkan tetap Radar BIONS pada 15 Oktober dan dua halaman ANTARA pada 16 Oktober.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Jumat pagi, teks baru adalah kawat ANTARA pukul 08.17 dan ulangannya di Ambon pukul 8.35. Isinya menaruh AI sebagai alasan kearsipan digital tetap relevan, tanpa menyebut produk, vendor, atau anggaran. Tim yang mengutip garis finish perlu menempelkan kalimat itu pada Radar BIONS 15 Oktober. Kawat Jumat yang dibaca hari ini tidak memakainya.",
+          "Yang kedua sumber samakan adalah arah T3: arsip terhubung lintas unit, tumbuh sebagai bahan belajar organisasi, dan terjaga pada keamanan serta kerahasiaan. Yang hanya ANTARA jabarkan adalah pemusnahan menurut klasifikasi, retensi, dan prosedur. Tidak ada daftar sistem kearsipan, tidak ada nama model yang masuk layanan publik, dan tidak ada klaim bahwa evaluasi internal sudah selesai diukur. Wawasan AI tidak menghadiri acara Kamis, jadi kualitas arsip di Kemkomdigi tidak diukur dari dua teks ini.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 16 Oktober, yang baru di ANTARA adalah kawat pukul 08.17 tentang acara yang Radar BIONS sudah tulis pada 15 Oktober dan yang kalimat ANTARA sendiri taruh pada Kamis (15/10). Yang tidak ada di kawat Jumat, dan ada di Radar, adalah kutipan garis finish. Yang tidak ada di keduanya adalah nama model dan angka anggaran.",
+          "Catatan editorial: artikel ini disusun dari laporan ANTARA, 16 Oktober 2026 pukul 08.17 WIB, pewarta Livia Kristianti dan editor Natisha Andarningtyas; dari halaman ANTARA Ambon, 16 Oktober 2026 pukul 8.35 WIB; serta dari laporan Radar BIONS, bertanda Sai San, October 15, 2026. Halaman siaran pers Komdigi tidak mengembalikan tubuh berita pada pembacaan hari ini, jadi tidak dikutip. Acara Kamis tidak dihadiri. Ejaan Jakart dibiarkan seperti tercetak di kedua halaman ANTARA.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

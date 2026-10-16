@@ -1,0 +1,137 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-16T02:02:13.999Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "GCWing/OpenBitFun",
+      "owner": "GCWing",
+      "repo": "OpenBitFun",
+      "description": "OpenBitFun combines a high-performance agent runtime written in Rust with a polished desktop application. It pairs the depth of a Code Agent with open, general-purpose capabilities for work beyond software development.",
+      "githubUrl": "https://github.com/GCWing/OpenBitFun",
+      "trendshiftUrl": "https://trendshift.io/repositories/44672",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-02-02T09:52:10Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "perplexityai/SPACE",
+      "owner": "perplexityai",
+      "repo": "SPACE",
+      "description": "Sandboxed Platform for Agentic Code Execution: pluggable-runtime sandboxes for running agent and user code in isolation.",
+      "githubUrl": "https://github.com/perplexityai/SPACE",
+      "trendshiftUrl": "https://trendshift.io/repositories/307406",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-01T18:43:46Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Thysrael/Horizon",
+      "owner": "Thysrael",
+      "repo": "Horizon",
+      "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+      "githubUrl": "https://github.com/Thysrael/Horizon",
+      "trendshiftUrl": "https://trendshift.io/repositories/22864",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-02-20T08:22:45Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "anthropics/claude-plugins-official",
+      "owner": "anthropics",
+      "repo": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "githubUrl": "https://github.com/anthropics/claude-plugins-official",
+      "trendshiftUrl": "https://trendshift.io/repositories/19474",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2025-11-20T18:36:20Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "wheresryan22/anatomy",
+      "owner": "wheresryan22",
+      "repo": "anatomy",
+      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
+      "githubUrl": "https://github.com/wheresryan22/anatomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/296609",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-08T10:12:49Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "michael-denyer/pstack-claude",
+      "owner": "michael-denyer",
+      "repo": "pstack-claude",
+      "description": "Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses.",
+      "githubUrl": "https://github.com/michael-denyer/pstack-claude",
+      "trendshiftUrl": "https://trendshift.io/repositories/188206",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-05-26T13:26:00Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "rootSunc/CNEquity",
+      "owner": "rootSunc",
+      "repo": "CNEquity",
+      "description": "中国 A 股数据基础设施。55个日更数据集：股票行情、基本面、期货数据、资金面、公告事件、指数行业、宏观与风险。行级溯源、PIT 语义、复权与历史成分内置，MCP 原生。自托管，零注册、零 API Token",
+      "githubUrl": "https://github.com/rootSunc/CNEquity",
+      "trendshiftUrl": "https://trendshift.io/repositories/94491",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-06-28T14:21:03Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "xerj-org/xerj",
+      "owner": "xerj-org",
+      "repo": "xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "githubUrl": "https://github.com/xerj-org/xerj",
+      "trendshiftUrl": "https://trendshift.io/repositories/116361",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-06-30T04:32:45Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "chenglou/handwired",
+      "owner": "chenglou",
+      "repo": "handwired",
+      "description": "Turn your regular JavaScript code into a neural net.",
+      "githubUrl": "https://github.com/chenglou/handwired",
+      "trendshiftUrl": "https://trendshift.io/repositories/305908",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-15T02:15:09Z"
+    }
+  ]
+}
