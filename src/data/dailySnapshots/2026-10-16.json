@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-16T02:02:13.999Z",
+  "fetchedAt": "2026-10-16T06:11:36.248Z",
   "repos": [
     {
       "rank": 1,
@@ -20,6 +20,34 @@
     },
     {
       "rank": 2,
+      "fullName": "anthropics/claude-plugins-official",
+      "owner": "anthropics",
+      "repo": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "githubUrl": "https://github.com/anthropics/claude-plugins-official",
+      "trendshiftUrl": "https://trendshift.io/repositories/19474",
+      "language": "Python",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2025-11-20T18:36:20Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "perplexityai/SPACE",
+      "owner": "perplexityai",
+      "repo": "SPACE",
+      "description": "Sandboxed Platform for Agentic Code Execution: pluggable-runtime sandboxes for running agent and user code in isolation.",
+      "githubUrl": "https://github.com/perplexityai/SPACE",
+      "trendshiftUrl": "https://trendshift.io/repositories/307406",
+      "language": "Rust",
+      "topics": [
+        "Agent sandbox"
+      ],
+      "dateCreated": "2026-10-01T18:43:46Z"
+    },
+    {
+      "rank": 4,
       "fullName": "GCWing/OpenBitFun",
       "owner": "GCWing",
       "repo": "OpenBitFun",
@@ -34,19 +62,19 @@
       "dateCreated": "2026-02-02T09:52:10Z"
     },
     {
-      "rank": 3,
-      "fullName": "perplexityai/SPACE",
-      "owner": "perplexityai",
-      "repo": "SPACE",
-      "description": "Sandboxed Platform for Agentic Code Execution: pluggable-runtime sandboxes for running agent and user code in isolation.",
-      "githubUrl": "https://github.com/perplexityai/SPACE",
-      "trendshiftUrl": "https://trendshift.io/repositories/307406",
-      "language": "Rust",
+      "rank": 5,
+      "fullName": "Saffsanity/sill",
+      "owner": "Saffsanity",
+      "repo": "sill",
+      "description": "Any window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys. Free, open source, no servers.",
+      "githubUrl": "https://github.com/Saffsanity/sill",
+      "trendshiftUrl": "https://trendshift.io/repositories/298776",
+      "language": "Swift",
       "topics": [],
-      "dateCreated": "2026-10-01T18:43:46Z"
+      "dateCreated": "2026-09-22T08:06:15Z"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "fullName": "Thysrael/Horizon",
       "owner": "Thysrael",
       "repo": "Horizon",
@@ -56,32 +84,6 @@
       "language": "Python",
       "topics": [],
       "dateCreated": "2026-02-20T08:22:45Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "anthropics/claude-plugins-official",
-      "owner": "anthropics",
-      "repo": "claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "githubUrl": "https://github.com/anthropics/claude-plugins-official",
-      "trendshiftUrl": "https://trendshift.io/repositories/19474",
-      "language": "Python",
-      "topics": [
-        "Curated list"
-      ],
-      "dateCreated": "2025-11-20T18:36:20Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "wheresryan22/anatomy",
-      "owner": "wheresryan22",
-      "repo": "anatomy",
-      "description": "A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a real machine. It makes SVG with optional WebGL shaders and 3D, for docs, articles and landing pages.",
-      "githubUrl": "https://github.com/wheresryan22/anatomy",
-      "trendshiftUrl": "https://trendshift.io/repositories/296609",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2026-10-08T10:12:49Z"
     },
     {
       "rank": 7,
@@ -99,18 +101,6 @@
     },
     {
       "rank": 8,
-      "fullName": "rootSunc/CNEquity",
-      "owner": "rootSunc",
-      "repo": "CNEquity",
-      "description": "中国 A 股数据基础设施。55个日更数据集：股票行情、基本面、期货数据、资金面、公告事件、指数行业、宏观与风险。行级溯源、PIT 语义、复权与历史成分内置，MCP 原生。自托管，零注册、零 API Token",
-      "githubUrl": "https://github.com/rootSunc/CNEquity",
-      "trendshiftUrl": "https://trendshift.io/repositories/94491",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-06-28T14:21:03Z"
-    },
-    {
-      "rank": 9,
       "fullName": "xerj-org/xerj",
       "owner": "xerj-org",
       "repo": "xerj",
@@ -122,16 +112,30 @@
       "dateCreated": "2026-06-30T04:32:45Z"
     },
     {
-      "rank": 10,
-      "fullName": "chenglou/handwired",
-      "owner": "chenglou",
-      "repo": "handwired",
-      "description": "Turn your regular JavaScript code into a neural net.",
-      "githubUrl": "https://github.com/chenglou/handwired",
-      "trendshiftUrl": "https://trendshift.io/repositories/305908",
-      "language": "TypeScript",
+      "rank": 9,
+      "fullName": "feder-cr/open_scion",
+      "owner": "feder-cr",
+      "repo": "open_scion",
+      "description": "Open-source version of Scion: version control built for coding agents.",
+      "githubUrl": "https://github.com/feder-cr/open_scion",
+      "trendshiftUrl": "https://trendshift.io/repositories/306530",
+      "language": "Go",
       "topics": [],
-      "dateCreated": "2026-10-15T02:15:09Z"
+      "dateCreated": "2026-10-15T13:12:02Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "K-Dense-AI/scientific-agent-skills",
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25649",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-19T20:54:15Z"
     }
   ]
 }
