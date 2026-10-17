@@ -5394,6 +5394,52 @@ link: "https://www.anthropic.com",
     date: "2026-10-16",
     featured: false,
   },
+  {
+    slug: "reflection-beam",
+    name: "Beam 1.0",
+    tagline: "Indeks 30 di kelas bobot terbuka besar, cepat per detik, tanpa coding index di kartu",
+    tags: ["Reflection", "Open Weights", "Reasoning", "API"],
+    score: 7.3,
+    scores: [
+      { label: "Penalaran", value: 7.2 },
+      { label: "Coding", value: 6.0 },
+      { label: "Kecepatan", value: 8.6 },
+      { label: "Harga/Performa", value: 6.6 },
+    ],
+    aa_intelligence_index: 30,
+    aa_price_input: 0.7,
+    aa_price_output: 2.1,
+    aa_synced_at: "2026-10-17",
+    summary:
+      "Artificial Analysis, dicek 17 Oktober 2026, memberi Beam 1.0 intelligence index 30 dan menandainya bobot terbuka. Kartu intelijen menulis peringkat 19 dari 120. Keluaran 227,9 token per detik, sementara ringkasan di halaman yang sama membulatkan menjadi 228.",
+    pros: [
+      "Intelligence index 30, di atas median 19 untuk bobot terbuka ukuran serupa (sumber: Artificial Analysis, 17 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 19 dari 120, dengan 4 dari 4 satuan untuk intelijen",
+      "Kartu kecepatan: 227,9 token per detik, peringkat 2 dari 77, dan 4 dari 4 satuan. FAQ menaruh median kelas di 68,2",
+      "Spesifikasi halaman: 501 miliar parameter total, 23 miliar aktif, konteks 1 juta token, lisensi Apache 2.0, reasoning menyala",
+    ],
+    cons: [
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah. Artikel 16 Oktober memakai Coding Agent Index, angka yang berbeda",
+      "Kartu biaya menulis $0,70 masukan dan $2,10 keluaran. Ringkasan menyebut keduanya somewhat expensive terhadap median $0,43 dan $1,68",
+      "Beberapa grafik menulis tidak ada API publik, sementara FAQ menulis model ini tersedia lewat 4 penyedia",
+      "Blog Reflection pada 16 Oktober menulis lebih dari 40 mitra. Halaman Artificial Analysis yang dibaca 17 Oktober tidak mencetak angka 40 itu",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai bobot terbuka 501 miliar dengan indeks 30 dan keluaran 227,9 token per detik, selama tugasnya muat di masukan teks yang halaman Artificial Analysis cetak. Jangan menempelkan Coding Agent Index 28 dari artikel 16 Oktober ke kolom coding index.",
+    body: [
+      "Beam 1.0 adalah model reasoning dari Reflection yang halamannya di Artificial Analysis dibaca 17 Oktober 2026. Kartu di bagian atas menandai bobot terbuka dan rilis Oktober 2026. FAQ memperinci tanggal rilis 16 Oktober 2026 dan menulis pembuatnya Reflection. Spesifikasi yang terpasang: masukan teks, keluaran teks, jendela konteks 1,0 juta token, reasoning menyala, 501 miliar parameter total, 23 miliar aktif, dan lisensi Apache 2.0. FAQ menulis lisensi itu mengizinkan pemakaian komersial, model ini Mixture of Experts, dan bobot bisa diunduh. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 17 Oktober 2026.) Intelligence index-nya 30 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 19 dari 120 dan 4 dari 4 satuan. FAQ menaruh skor 30 jauh di atas rata-rata bobot terbuka ukuran serupa, median 19. Ringkasan perbandingan memakai median 19 yang sama dan menyebut model ini amongst the leading models untuk kelas itu. Teks kelas di halaman itu mengatakan ada 121 model di kelas pembanding, yaitu bobot terbuka yang dibandingkan dengan bobot terbuka pada kelas ukuran yang sama. Parameter 501 miliar masuk pita large, di atas 150 miliar, pada keterangan kelas itu. Caption beberapa grafik menulis 27 dari 704 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai 19 dari 120 untuk peringkat kartu, dan tidak menyamakan caption 27 dari 704 atau angka 121 di teks kelas dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,70 per juta token masukan dan $2,10 per juta token keluaran, diskon cache 84 persen, biaya rata-rata $0,57 per tugas indeks, peringkat biaya 29 dari 42, dan 3 dari 4 satuan. Ringkasan menyebut kedua harga itu somewhat expensive, masukan terhadap median $0,43 dan keluaran terhadap median $1,68. FAQ memakai median itu, lalu menulis somewhat higher than average untuk keduanya, dan menulis angka itu median di antara penyedia. Editorial mengutip kedua frasa dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $0,43 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 4 penyedia. Penyebut biaya 42 tidak sama dengan 120 model yang kartu intelijen sebut, dan tidak sama dengan 121 yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya dua tulisan yang berdekatan. Kartu menulis 227,9 token per detik, peringkat 2 dari 77, dan 4 dari 4 satuan. FAQ menulis 227,9 token per detik sebagai median antarpenyedia, di atas median 68,2. Ringkasan membulatkan menjadi 228 token per detik dan menaruh angka 68 di dalam kurung, tanpa kata median pada kalimat itu. FAQ juga menulis waktu ke token pertama 1,33 detik, median 1,71 detik, dan menyebutnya better than average. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 1,33 detik di FAQ dengan judul bagian itu menjadi satu metrik yang sudah dicek ulang. Verbosity: kartu menulis 79 juta token keluaran, peringkat 10 dari 46, dan 1 dari 4 satuan. Ringkasan menyebut 79 juta very concise terhadap median 130 juta. FAQ menyebut 79 juta very competitive terhadap median 130 juta yang sama.",
+      "Artikel Artificial Analysis pada 16 Oktober 2026, Reflection has released Beam, menulis skor 30 dan peringkat kedua di antara bobot terbuka Amerika Serikat, di belakang Muse Spark Open di 39 dan di depan Nemotron 3.5 Super VL di 26. Artikel yang sama menulis di luar Tiongkok hanya Muse Spark Open dan K2 Horizon di 31 yang lebih tinggi, lalu Beam peringkat kesepuluh di antara semua bobot terbuka. Token yang disebut di situ sekitar 26 ribu keluaran per tugas indeks, dengan sekitar 19 ribu untuk penalaran dan 7 ribu untuk jawaban. Angka 26 ribu per tugas itu tidak sama satuannya dengan 79 juta token keluaran di kartu 17 Oktober. Editorial mengutip keduanya dan tidak menyatukannya. Artikel juga menulis Coding Agent Index 28 saat Beam dijalankan di Mirror, harness CLI Reflection. Angka itu tinggal di artikel. Halaman model pada 17 Oktober tidak mengulang kalimat Mirror itu.",
+      "Blog Reflection pada 16 Oktober 2026, Beam is now available, menulis bobot di Hugging Face berlisensi Apache 2.0, 501 miliar total, 23 miliar aktif, serta format BF16, FP8, dan NVFP4. Blog itu menulis ekosistem lebih dari 40 mitra, dan daftar peluncuran yang mencakup Amazon Web Services, Google Cloud, OpenRouter, Ollama, dan Vercel, di antara nama lain. FAQ Artificial Analysis menulis 4 penyedia. Dua hitungan itu tidak disatukan. Blog yang sama menulis API pihak pertama di platform.reflection.ai gratis untuk mulai, lewat beta publik. Grafik halaman model masih bertuliskan tidak ada API publik. Blog Hugging Face pada 16 Oktober, yang ditulis ben burtenshaw dan Pedro Cuenca, menambah 52 lapisan, 256 pakar per lapisan MoE, 8 yang diarahkan per token, dan berkas BF16 sekitar 1 TB. Halaman Artificial Analysis tidak mencetak tiga angka arsitektur itu. Editorial tidak memindahkan 1 TB ke spesifikasi kartu, dan tidak memindahkan Coding Agent Index 28 ke kolom coding.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 30, 23 miliar parameter aktif, dan biaya $0,57 per tugas indeks pada kartu 17 Oktober. Karena FAQ menulis bobot tersedia, jalur mesin sendiri disebut ada, tetapi halaman Artificial Analysis tidak mencetak kebutuhan memori. Karena grafik masih bertuliskan tidak ada API publik sementara FAQ menulis empat penyedia dan blog menulis lebih dari 40 mitra, tagihan baru bisa dihitung setelah penyedia yang dipakai dipilih. Masukan gambar tidak ada di spesifikasi yang dibaca. Pakai kartu ini untuk membandingkan bobot terbuka di kelas ukurannya, lalu pisahkan 227,9 token per detik dari klaim mitra di blog sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/reflection-beam",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-17",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

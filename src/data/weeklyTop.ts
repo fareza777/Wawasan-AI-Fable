@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 16 Oktober 2026: 271.904 bintang, 68.338 fork, dan 991 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.5.0 terbit 14 Oktober 2026. Push terakhir 16 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 17 Oktober 2026: 291.812 bintang, 73.478 fork, dan 1.148 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.5.0 terbit 14 Oktober 2026. Push terakhir 17 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3385,6 +3385,66 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Demo yang ditautkan ada di chenglou.me/handwired/. Kalimat README tentang pencarian JSON dalam hitungan milidetik pada 100 ribu dokumen adalah contoh penulis. Wawasan AI tidak menjalankan demo.",
       "Perintah lokal yang dicetak: `bun install` lalu `bun start`. Folder lab disebut eksperimen lama.",
       "Lisensi MIT, ditulis TypeScript. API GitHub pada 16 Oktober 2026: 1.091 bintang, 80 fork, 1 isu terbuka. Repo dibuat 15 Oktober 2026, push terakhir 15 Oktober 2026. Tidak ada rilis GitHub. Homepage chenglou.me/handwired/.",
+    ],
+  },
+  "lucannez64/darling-lol": {
+    description:
+      "darling-lol adalah kumpulan tambalan Darling untuk mencoba klien macOS League of Legends di Linux x86-64. README menulis ini cuplikan pengembangan, bukan peluncur jadi, dan penulisnya memperingatkan larangan permanen. Wawasan AI tidak membangun runtime dan tidak menyalin langkah pemasangannya.",
+    highlights: [
+      "Kotak pengumuman README: proyek ini bisa membuat akun dilarang permanen, jangan curang, jangan main peringkat, jangan pakai akun utama, dan larangan tetap mungkin. Penulis menulis tidak bertanggung jawab atas peluncuran di lingkungan yang diubah. Bagian yang sama menyapa Riot dan meminta klien yang jalan di Linux.",
+      "README: berkas gim, pemasang Riot, token, dan biner hasil kompilasi tidak ikut. Gim dipasang lewat antarmuka Riot sendiri. Proyek disebut tidak berafiliasi dengan Riot Games. Perkakas integrasi asli berlisensi GPL-3.0. Tambalan tetap pada lisensi berkas yang dituju. Komponen Darling hulu tetap pada lisensinya.",
+      "Angka kelancaran di README adalah mesin uji penulis, Ryzen 5 5500 dan RX 6600. Satu kalimat menulis rata-rata ARAM sekitar 118 sampai 135 bingkai per detik. Kalimat lain menulis rata-rata naik dari 84 ke 135. Dua rentang itu tidak disatukan. Wawasan AI tidak menjalankan gimnya.",
+      "API GitHub pada 17 Oktober 2026: 199 bintang, 17 fork, 16 isu terbuka, bahasa C, lisensi GPL-3.0. Repo dibuat 12 Oktober 2026, push terakhir 16 Oktober 2026. Tidak ada rilis dan tidak ada homepage.",
+    ],
+  },
+  "anujasid/mcp-for-blender-pro": {
+    description:
+      "mcp-for-blender-pro adalah tambahan Blender yang mengobrol dengan adegan dan membuka server MCP. README membatasi bundel rilis pada Windows x64 dan Blender 4.2 atau lebih baru. Ulasan alat hari ini memakai README yang sama.",
+    highlights: [
+      "README menulis 21 alat adegan. Tabel di halaman yang sama memuat inspeksi, pembuatan objek, suntingan, tangkapan layar, pencarian aset, dan ekspor. Hitung baris tabel itu 21. Aset yang disebut: Poly Haven, Sketchfab, dan Poly Pizza.",
+      "Penyedia yang dicetak: OpenAI, Anthropic Claude, Google Gemini, OpenRouter, OpenCode Zen, Ollama, dan API kustom. Menu yang disebut: Inggris, Jerman, Prancis, Spanyol, dan Mandarin. Bahasa Indonesia tidak ada di daftar itu.",
+      "Rantai tim yang ditulis README: manajer memecah tugas, pekerja mengubah adegan, peninjau menyetujui atau mengembalikan. Tugas disebut berurutan. Tinjauan yang gagal dua kali menghentikan alur. Persetujuan operasi ada di obrolan bawaan. README menulis pemeriksaan Python bukan kotak pasir keamanan.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 17 Oktober 2026: 280 bintang, tidak ada fork, tidak ada isu terbuka. Repo dibuat 15 Oktober 2026, push terakhir 16 Oktober 2026. Rilis v1.0.0 terbit 15 Oktober 2026. Asetnya mcp-for-blender-pro.zip berukuran 113.964.604 byte dan tercatat 259 unduhan. Tidak ada homepage di API. Wawasan AI tidak memasang zip itu.",
+    ],
+  },
+  "Tencent-Hunyuan/Hy-Memory": {
+    description:
+      "Hy-Memory adalah SDK memori untuk agen, dengan tiga adegan yang README sebut Chat, Working, dan Coding, plus aplikasi MemHub yang menyatukan jejak dari aplikasi yang pengguna izinkan. Lencana README menulis Apache-2.0. API GitHub mengembalikan SPDX NOASSERTION.",
+    highlights: [
+      "README: Chat memakai hierarki jangka panjang, Working memakai fakta dan pengalaman yang bisa dipakai ulang, Coding memakai rantai diff versi. MemHub disebut desktop dan CLI yang lokal dulu, untuk riwayat percakapan dan jejak kode dari Claude Code, Cursor, Codex, OpenCode, dan Qwen Code.",
+      "Perintah yang dicetak memasang hy-memory==2.0.2 dari PyPI. API rilis GitHub menaruh v1.0.2 pada 16 Oktober 2026 pukul 18.49 UTC dan v1.0.0 pada hari yang sama pukul 08.44 UTC. Nomor paket dan nomor tag tidak disamakan. Halaman PyPI tidak dibuka hari ini.",
+      "Model yang ditautkan README: Hy-Memory-30B-A3B di Hugging Face, plus laporan arXiv 2610.22196. Makalah lain yang disebut: EMNLP 2026, arXiv 2606.09483, dan naskah CMB yang disebut dikirim ke ICLR 2027. Wawasan AI tidak mengunduh bobot dan tidak membuka naskah.",
+      "API GitHub pada 17 Oktober 2026: 379 bintang, 33 fork, 6 isu terbuka, bahasa Python, lisensi SPDX NOASSERTION. Repo dibuat 15 Oktober 2026, push terakhir 16 Oktober 2026. Tidak ada homepage di API. Situs yang README tautkan adalah memory.hunyuan.tencent.com. Deskripsi snapshot Trendshift hari ini kosong.",
+    ],
+  },
+  "hmjz100/LinkSwift": {
+    description:
+      "LinkSwift adalah userscript yang README tulis untuk mengambil alamat unduh dari layanan awan Tiongkok. Deskripsi GitHub menulis delapan layanan. Kalimat pengantar README menulis sembilan, dengan tambahan 光鸭云盘. Wawasan AI tidak memasang skripnya.",
+    highlights: [
+      "README menulis tautan yang diambil berasal dari API publik penyedia, dan proyek ini tidak menjanjikan pembongkaran batas kecepatan. Kalimat yang sama meminta promosi pihak ketiga yang memakai frasa percepat unduh atau pecah batas kecepatan jangan dianggap sikap proyek.",
+      "Versi resmi yang README cetak v1.1.3. Versi uji yang dicetak v1.1.4, dengan baris catatan 9 September 2026. API rilis terbaru adalah v1.1.3 pada 18 Februari 2026. Push terakhir 10 September 2026.",
+      "Halaman yang sama menautkan skrip pendamping yang namanya memakai frasa versi anggota muda untuk beberapa layanan awan. Tautan itu tidak dibuka. Alamat pemasang userscript tidak disalin ke narasi ini.",
+      "Lisensi AGPL-3.0, ditulis JavaScript. API GitHub pada 17 Oktober 2026: 23.756 bintang, 1.440 fork, 38 isu terbuka. Repo dibuat 10 Agustus 2022. Homepage di API menunjuk ke berkas .user.js di cabang main.",
+    ],
+  },
+  "rohit267/net-merge": {
+    description:
+      "net-merge membagi koneksi baru ke beberapa adapter sekaligus. README menulis Windows, macOS, dan Linux, tanpa akun dan tanpa VPN. Kalimat snapshot Trendshift hari ini berhenti di Windows.",
+    highlights: [
+      "README: satu koneksi tetap di satu tautan, jadi satu berkas dari satu koneksi tidak menjadi lebih cepat. Yang disebut cocok adalah unduhan yang membuka banyak koneksi. Yang disebut tidak cocok adalah satu koneksi tunggal.",
+      "Angka kecepatan di README adalah uji penulis: Wi-Fi ditambah tether USB Android dan hotspot iPhone, sembilan unduhan, 232 sampai 303 Mbit/s, sementara tautan tercepat sendirian sekitar 121 Mbit/s. Keterangan gambar menulis sekitar 326 Mbit/s di Mac. Wawasan AI tidak mengukur ulang.",
+      "Aplikasi disebut belum ditandatangani. Windows disebut bisa menampilkan peringatan. macOS disebut butuh penghapusan karantina bila sistem menolak membuka berkas. Perintah SOCKS yang dicetak membuka 127.0.0.1:1080. Wawasan AI tidak menjalankan biner.",
+      "Lisensi MIT, ditulis Go. API GitHub pada 17 Oktober 2026: 131 bintang, 5 fork, tidak ada isu terbuka. Repo dibuat 12 Oktober 2026, push terakhir 16 Oktober 2026. Rilis v0.2.0 terbit 16 Oktober 2026. Homepage di API kosong. Deskripsi API mencakup Windows, Linux, dan Mac.",
+    ],
+  },
+  "LumaryLabsLLC/muxin": {
+    description:
+      "Muxin adalah satu aplikasi untuk mesin yang pengguna miliki, plus sesi agen di mesin itu. README menulis Claude Code, Codex, OpenCode, Gemini CLI, Amp, Pi, atau shell, dengan server MCP. Nama sebelumnya Muxen, sebelum 0.5.1.",
+    highlights: [
+      "Yang disebut README: sesi agen yang tetap hidup setelah jendela ditutup, layar Linux, salin berkas antar mesin, kotak masuk GitHub, dan runner yang dipasang sendiri. Mesin dijangkau dulu lewat ssh sistem, lalu agen kecil Muxin, langsung atau lewat Tailscale.",
+      "Unduhan yang dicetak: macOS 12 atau lebih baru, ditandatangani dan dinotariskan. Linux mensyaratkan glibc 2.35 atau lebih baru. Pemasang Windows 11 disebut belum ditandatangani. Homebrew yang dicetak memakai cask lumarylabsllc/tap/muxin.",
+      "API rilis pada 17 Oktober mengembalikan lima tag pada 16 Oktober 2026, semuanya bukan prarilis: v0.5.6 pukul 20.03 UTC, lalu v0.5.5, v0.5.4, v0.5.3, dan v0.5.2 pada hari yang sama. README menulis pembaruan dari Muxen menyimpan pengaturan, dan perintah muxen tetap jalan.",
+      "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 17 Oktober 2026: 40 bintang, 12 fork, 3 isu terbuka. Repo dibuat 8 Oktober 2026, push terakhir 16 Oktober 2026. Homepage muxin.dev. Wawasan AI tidak memasang aplikasi dan tidak membuka sesi agen.",
     ],
   },
 };

@@ -5468,6 +5468,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "kompas-0611-gibran-santri-tanpa-angka-dua-puluh-ribu",
+    title: "Kompas Pukul 06.11: Santri Belajar AI, Tanpa Angka 20.000",
+    excerpt:
+      "Halaman Inggris Kompas pada 17 Oktober pukul 06.11 mengulang kunjungan Jumat di Pasuruan. Tiga nama santri mengikuti teks Setneg. Angka lebih dari 20.000 santri tetap di halaman wapresri.go.id.",
+    category: "Analisis",
+    date: "2026-10-17",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Sabtu 17 Oktober 2026, halaman go.kompas.com mencetak Gibran: Learning AI Truly Trains Critical Thinking, bertanda October 17, 2026, 06.11 AM, Tim Redaksi. Dateline yang tercetak JAKARTA. Tubuhnya membuka dengan Wakil Presiden Gibran Rakabuming yang meninjau Pondok Pesantren Darullughah Wadda’wah (PP Dalwa) di Pasuruan, Jawa Timur, pada Jumat (16/10/2026).",
+          "Halaman itu tidak menulis zona waktu di samping 06.11 AM. Acara yang disandarkan sudah berlangsung Jumat. Jadi yang baru pada Sabtu pagi adalah teks Inggris Kompas, bukan tanggal kunjungan.",
+        ],
+      },
+      {
+        heading: "Yang halaman 06.11 cetak",
+        paragraphs: [
+          "Kompas menulis as quoted from a press release, tanpa menamai kantor yang menerbitkannya. Kalimat bahasa Inggris yang tercetak: Studying AI and robotics doesn't mean you have to become a programmer, but rather it trains critical thinking, computational thinking, and fosters a problem-solving mindset. Kalimat tantangan zaman yang tercetak: In the future, we want these students to also be able to respond to the challenges of the times. We must keep pace, and not fall behind compared to other countries. Kalimat produktivitas yang tercetak: Make technology a tool to create innovations and increase productivity.",
+          "Bagian etika di Kompas memuat sift through information, recognize hoaxes, protect personal data, dan don't use it to harm others, lalu pemakaian yang bertanggung jawab while upholding religious and social community values. Saat meninjau pelatihan, Gibran disebut berinteraksi dengan santri yang memaparkan percobaan, termasuk a facial recognition application for attendance tracking. Kutipan yang tercetak: You just learned about coding and AI for 3-4 days, right? Tiga santri yang disebut ditanya: Reyhan, Aditya, and Muhammad Syarief Altaff, dan ketiganya disebut this was their first exposure to AI. Reyhan disebut a 3rd-year high school student, dengan kutipan 4 days of lessons on robotics. Keterangan foto menulis Sekretariat Wakil Presiden RI. Tidak ada angka santri, nama masjid, atau nama model di halaman itu.",
+        ],
+      },
+      {
+        heading: "Yang Setneg dan ANTARA sudah tulis pada Jumat",
+        paragraphs: [
+          "Sekretariat Negara menurunkan Perkuat Kemandirian Santri di Era Digital, Wapres Tinjau Pelatihan AI dan Robotik di Pasuruan, bertanda Jumat, 16 Oktober 2026. Ejaan yang tercetak berfikir dan programmer. Kalimat produktivitas di situ berbunyi jadikan teknologi sebagai alat bantu untuk ciptakan inovasi dan meningkatkan produktivitas. Tiga nama santri sama dengan Kompas. Reyhan disebut siswa SMA kelas 3. Penutup tubuh bertanda (BPMI Setwapres). Halaman itu tidak memuat lebih dari 20.000 santri.",
+          "ANTARA menurunkan Gibran ingin santri jadi pengembang AI, bukan sekadar pengguna, pada Jumat 16 Oktober 2026 pukul 15.54 WIB. Pewartanya Aditya Ramadhan, editornya Edy Sujatmiko. Nama yang dipakai Gibran Rakabuming Raka. Ejaan yang tercetak programer, lalu AI/robotic dan problem solving di dalam tanda kutip tunggal. Kutipan etika berhenti pada jangan gunakan untuk merugikan orang lain, tanpa kalimat nilai agama yang Setneg dan Kompas bawa. Nama Aditya dan Muhammad Syarief Altaff tidak ada. Yang disebut hanya Reyhan, santri kelas XII SMA, dengan empat hari. Kalimat 3 sampai 4 hari tidak ada di kawat itu. Keterangan foto menulis ANTARA/HO-BPMI Setwapres/am. Kalimat produktivitas Setneg juga tidak ada.",
+        ],
+      },
+      {
+        heading: "Angka 20.000 yang hanya hidup di wapresri.go.id",
+        paragraphs: [
+          "Halaman Wakil Presiden, Silaturahmi Dengan Para Kiai PP Dalwa Pasuruan, bertanda 16/10/2026 dan berdateline Pasuruan, 16 Oktober 2026. Biro yang tercetak: Biro Pers, Media, dan Informasi, Sekretariat Wakil Presiden. Di situ ada lebih dari 20.000 santri PP Dalwa. Ejaan yang tercetak Artificial Intelligance. Kutipan yang tidak ada di Kompas, Setneg, maupun ANTARA: Alhamdulillah pelatihan AI dan robotic bagi para santri bisa terlaksana berkat dukungan Kyai dan Bu Nyai. Halaman yang sama menulis salat Jumat di Masjid Baitul Ghoffar dan ziarah ke makam Al-Habib Hasan bin Ahmad Baharun. Yang menyambut disebut Abuya Al Habib Zain Hasan Baharun.",
+          "Kutipan doa di halaman itu menaruh nama Presiden Prabowo Subianto. Tiga teks yang lain tidak memuat kalimat doa itu, tidak memuat 20.000, dan tidak memuat nama masjid. Kompas pukul 06.11 juga tidak memuat typo Intelligance.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Sabtu pagi, teks baru adalah halaman Inggris Kompas pukul 06.11. Isinya mengikuti rangkaian Setneg lebih dekat daripada kawat ANTARA pukul 15.54: tiga nama santri, rentang 3 sampai 4 hari, kalimat produktivitas, dan kalimat nilai agama. Ejaan berfikir tidak ikut pindah. Kompas memakai programmer, sama dengan Setneg, bukan programer seperti ANTARA.",
+          "Tim yang mengutip lebih dari 20.000 santri perlu menempelkan angka itu pada halaman wapresri.go.id. Kompas, Setneg, dan ANTARA yang dibaca hari ini tidak memakainya. Tidak ada nama kurikulum, nama model, atau daftar alat di keempat teks. Wawasan AI tidak menghadiri kunjungan Jumat, jadi aplikasi pengenalan wajah tidak diuji dari laporan.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 17 Oktober, yang baru di Kompas adalah halaman pukul 06.11 tentang kunjungan yang Setneg, ANTARA, dan wapresri.go.id sudah tulis pada 16 Oktober. Yang tidak ada di halaman Sabtu, dan ada di wapresri.go.id, adalah lebih dari 20.000 santri. Yang tidak ada di ANTARA, dan ada di Setneg serta Kompas, adalah dua nama santri selain Reyhan.",
+          "Catatan editorial: artikel ini disusun dari halaman Kompas, go.kompas.com, tercetak October 17, 2026, 06.11 AM, Tim Redaksi; dari halaman Sekretariat Negara, Jumat, 16 Oktober 2026; dari laporan ANTARA, 16 Oktober 2026 pukul 15.54 WIB, pewarta Aditya Ramadhan dan editor Edy Sujatmiko; serta dari halaman wapresri.go.id, 16/10/2026. Zona waktu pada stempel 06.11 AM tidak tertulis di halaman Kompas yang dibaca. Kunjungan Jumat tidak dihadiri. Ejaan Intelligance, programer, dan berfikir dibiarkan seperti tercetak di halaman masing-masing.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

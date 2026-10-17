@@ -4780,6 +4780,46 @@ export const stacks: Review[] = [
     date: "2026-10-16",
     featured: false,
   },
+  {
+    slug: "mcp-for-blender-pro",
+    name: "mcp-for-blender-pro",
+    tagline: "Obrolan adegan di Blender, bundel rilisnya Windows x64",
+    tags: ["Open Source", "Blender", "MCP", "Windows"],
+    score: 7.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 6.8 },
+      { label: "Pengalaman Pengguna", value: 7.4 },
+      { label: "Ekosistem & Integrasi", value: 7.2 },
+      { label: "Harga", value: 8.4 },
+    ],
+    summary:
+      "mcp-for-blender-pro duduk di peringkat tiga tren harian 17 Oktober 2026. README-nya memasang obrolan dan server MCP di Blender 4.2 atau lebih baru, dan lencana unduhnya hanya menulis Windows x64.",
+    pros: [
+      "README menulis 21 alat adegan. Hitung nama di tabel halaman yang sama juga 21, dari inspeksi sampai impor aset",
+      "Penyedia yang dicetak mencakup OpenAI, Claude, Gemini, OpenRouter, Ollama, dan API kustom. Obrolan bawaan disebut bisa menyetujui, membatalkan, dan mengembalikan langkah",
+      "Lisensi MIT. API GitHub pada 17 Oktober 2026: 280 bintang dan tidak ada fork. Rilis v1.0.0 terbit 15 Oktober 2026",
+      "Aset rilis mcp-for-blender-pro.zip berukuran 113.964.604 byte menurut API, dengan 259 unduhan pada pembacaan yang sama",
+    ],
+    cons: [
+      "Lencana README membatasi unduhan pada Windows x64. Mac dan Linux tidak masuk kalimat bundel itu",
+      "Menu yang disebut: Inggris, Jerman, Prancis, Spanyol, dan Mandarin. Bahasa Indonesia tidak ada di daftar",
+      "README menulis pemeriksaan Python bukan kotak pasir keamanan. Klien MCP luar mengatur sendiri kebijakan persetujuannya",
+      "Wawasan AI tidak memasang zip dan tidak membuka adegan Blender",
+    ],
+    verdict:
+      "Masuk akal untuk dicoba di satu PC Windows yang sudah punya Blender 4.2 dan kunci model sendiri, asal persetujuan operasi menyala sebelum agen menyentuh berkas klien. Jangan menganggap 280 bintang sebagai uji kualitas adegan.",
+    body: [
+      "mcp-for-blender-pro dibuat di repositori anujasid/mcp-for-blender-pro. README yang dicek 17 Oktober 2026 mendeskripsikan asisten yang memeriksa adegan, membangun objek, mengubah material, mencari aset, dan menjalankan alur beberapa langkah, dengan jendela Studio dan server MCP. API GitHub hari yang sama mencatat 280 bintang, tidak ada fork, tidak ada isu terbuka, bahasa Python, dan lisensi MIT. Repo dibuat 15 Oktober 2026. Push terakhir 16 Oktober 2026. Tidak ada homepage. Rilis v1.0.0 terbit 15 Oktober 2026 pukul 23.25 UTC, dengan aset mcp-for-blender-pro.zip sebesar 113.964.604 byte dan 259 unduhan. Trendshift menaruhnya di peringkat tiga. Wawasan AI tidak memasang zip dan tidak menjalankan Blender.",
+      "Syarat yang ditulis README datang lebih dulu daripada daftar prompt. Bundel rilis menargetkan Windows x64 dengan Blender 4.2 atau lebih baru. Pemasangan yang dicetak lewat Edit, Preferences, Get Extensions, Install from Disk, lalu panel 3D Viewport, N, MCP Pro. Blender disebut tetap terbuka saat Studio atau klien luar dipakai. Penyedia yang tabel sambungan cetak: OpenAI, Anthropic Claude, Google Gemini, OpenRouter, OpenCode Zen, Ollama, dan API kustom. Protokol kustom yang disebut: OpenAI Chat Completions, Anthropic Messages, dan Ollama. README meminta model yang bisa memanggil alat. Model yang bisa membaca gambar disebut bisa menafsir tangkapan viewport. Menu utama yang disebut: Inggris, Jerman, Prancis, Spanyol, dan Mandarin.",
+      "Bagian agen yang paling perlu dibaca ada di rantai tim. Asisten tunggal untuk ubahan langsung. Rantai tim memecah peran: manajer menyusun tugas dan kriteria, pekerja menjalankan operasi adegan, peninjau menyetujui atau mengembalikan temuan. Tugas disebut berjalan berurutan. Tugas yang tersumbat mendapat satu percobaan koreksi. Tinjauan gagal yang kedua menghentikan alur. Obrolan bawaan disebut mendukung persetujuan operasi, pembatalan setelah langkah yang sedang berjalan, dan langkah undo bernama. Kalimat README: pemeriksaan alat Python membantu menangkap operasi yang tidak diizinkan, dan itu bukan kotak pasir keamanan. Kredensial disebut tersimpan di pengaturan pengguna. Riwayat obrolan disebut hanya untuk sesi yang sedang berjalan. Studio disebut berjalan lokal. Semua itu klaim README.",
+      "Untuk pengembang di Indonesia, batas sistem operasinya sama jenisnya dengan Lertaro pekan lalu: bundel yang README cetak adalah Windows, bukan Mac. Harganya MIT, tetapi kunci model tetap di luar lisensi itu. Bahasa antarmuka yang dicetak tidak memuat bahasa Indonesia. Aset Poly Haven, Sketchfab, dan Poly Pizza disebut membutuhkan kunci layanan bila penyedia itu memintanya, dan lisensi aset tetap pada asetnya. Pasang dulu pada satu akun pribadi yang tidak memegang berkas klien, nyalakan persetujuan sebelum ada perubahan adegan, lalu lihat apakah undo yang README sebut benar-benar mengembalikan langkah itu. Dua ratus delapan puluh bintang tidak mengubah kalimat README bahwa pemeriksaan Python bukan kotak pasir.",
+    ],
+    link: "https://github.com/anujasid/mcp-for-blender-pro",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-17",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
