@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-17T02:01:43.722Z",
+  "fetchedAt": "2026-10-17T05:56:59.993Z",
   "repos": [
     {
       "rank": 1,
@@ -20,39 +20,42 @@
     },
     {
       "rank": 2,
-      "fullName": "lucannez64/darling-lol",
-      "owner": "lucannez64",
-      "repo": "darling-lol",
-      "description": "Experimental Darling runtime patches and tools for testing the macOS League client on Linux",
-      "githubUrl": "https://github.com/lucannez64/darling-lol",
-      "trendshiftUrl": "https://trendshift.io/repositories/308048",
-      "language": "C",
-      "topics": [],
-      "dateCreated": "2026-10-12T18:15:56Z"
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Job search"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
     },
     {
       "rank": 3,
-      "fullName": "anujasid/mcp-for-blender-pro",
-      "owner": "anujasid",
-      "repo": "mcp-for-blender-pro",
-      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, model selection, multi-agent workflows. Works with OpenAI, Claude, Gemini, Ollama and OpenCode. Blender AI automation, bpy scripting, 3D modeling, geometry nodes and MCP integration.",
-      "githubUrl": "https://github.com/anujasid/mcp-for-blender-pro",
-      "trendshiftUrl": "https://trendshift.io/repositories/308178",
-      "language": "Python",
+      "fullName": "hmjz100/LinkSwift",
+      "owner": "hmjz100",
+      "repo": "LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "githubUrl": "https://github.com/hmjz100/LinkSwift",
+      "trendshiftUrl": "https://trendshift.io/repositories/13630",
+      "language": "JavaScript",
       "topics": [],
-      "dateCreated": "2026-10-15T22:30:47Z"
+      "dateCreated": "2022-08-10T11:59:44Z"
     },
     {
       "rank": 4,
-      "fullName": "Tencent-Hunyuan/Hy-Memory",
-      "owner": "Tencent-Hunyuan",
-      "repo": "Hy-Memory",
-      "description": "",
-      "githubUrl": "https://github.com/Tencent-Hunyuan/Hy-Memory",
-      "trendshiftUrl": "https://trendshift.io/repositories/307744",
-      "language": "Python",
+      "fullName": "rohit267/net-merge",
+      "owner": "rohit267",
+      "repo": "net-merge",
+      "description": "Use all your network adapters at once on Windows: per-connection load balancing over Wi-Fi, Ethernet and phone/USB tethers (TUN + Wintun)",
+      "githubUrl": "https://github.com/rohit267/net-merge",
+      "trendshiftUrl": "https://trendshift.io/repositories/301802",
+      "language": "Go",
       "topics": [],
-      "dateCreated": "2026-10-15T13:06:56Z"
+      "dateCreated": "2026-10-12T19:28:45Z"
     },
     {
       "rank": 5,
@@ -70,68 +73,70 @@
     },
     {
       "rank": 6,
-      "fullName": "MadsLorentzen/ai-job-search",
-      "owner": "MadsLorentzen",
-      "repo": "ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
-      "trendshiftUrl": "https://trendshift.io/repositories/43622",
-      "language": "Python",
-      "topics": [
-        "AI agent",
-        "Job search"
-      ],
-      "dateCreated": "2026-03-18T14:33:04Z"
+      "fullName": "withmarbleapp/os-taxonomy",
+      "owner": "withmarbleapp",
+      "repo": "os-taxonomy",
+      "description": "",
+      "githubUrl": "https://github.com/withmarbleapp/os-taxonomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/76834",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-07-08T09:27:48Z"
     },
     {
       "rank": 7,
-      "fullName": "debpalash/VoiceStudio",
-      "owner": "debpalash",
-      "repo": "VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "githubUrl": "https://github.com/debpalash/VoiceStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/28176",
+      "fullName": "Tencent-Hunyuan/Hy-Memory",
+      "owner": "Tencent-Hunyuan",
+      "repo": "Hy-Memory",
+      "description": "",
+      "githubUrl": "https://github.com/Tencent-Hunyuan/Hy-Memory",
+      "trendshiftUrl": "https://trendshift.io/repositories/307744",
       "language": "Python",
       "topics": [
-        "Text to speech"
+        "AI memory"
       ],
-      "dateCreated": "2026-04-09T21:40:26Z"
+      "dateCreated": "2026-10-15T13:06:56Z"
     },
     {
       "rank": 8,
-      "fullName": "hmjz100/LinkSwift",
-      "owner": "hmjz100",
-      "repo": "LinkSwift",
-      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
-      "githubUrl": "https://github.com/hmjz100/LinkSwift",
-      "trendshiftUrl": "https://trendshift.io/repositories/13630",
+      "fullName": "Ebony-Vinyl/dsh-our-free-model",
+      "owner": "Ebony-Vinyl",
+      "repo": "dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "githubUrl": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "trendshiftUrl": "https://trendshift.io/repositories/261203",
       "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2022-08-10T11:59:44Z"
+      "topics": [
+        "LLM gateway"
+      ],
+      "dateCreated": "2026-09-24T16:17:19Z"
     },
     {
       "rank": 9,
-      "fullName": "rohit267/net-merge",
-      "owner": "rohit267",
-      "repo": "net-merge",
-      "description": "Use all your network adapters at once on Windows: per-connection load balancing over Wi-Fi, Ethernet and phone/USB tethers (TUN + Wintun)",
-      "githubUrl": "https://github.com/rohit267/net-merge",
-      "trendshiftUrl": "https://trendshift.io/repositories/301802",
-      "language": "Go",
-      "topics": [],
-      "dateCreated": "2026-10-12T19:28:45Z"
+      "fullName": "GCWing/OpenBitFun",
+      "owner": "GCWing",
+      "repo": "OpenBitFun",
+      "description": "OpenBitFun combines a high-performance agent runtime written in Rust with a polished desktop application. It pairs the depth of a Code Agent with open, general-purpose capabilities for work beyond software development.",
+      "githubUrl": "https://github.com/GCWing/OpenBitFun",
+      "trendshiftUrl": "https://trendshift.io/repositories/44672",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-02-02T09:52:10Z"
     },
     {
       "rank": 10,
-      "fullName": "LumaryLabsLLC/muxin",
-      "owner": "LumaryLabsLLC",
-      "repo": "muxin",
-      "description": "All your machines, one app. For you and your AI agents: agent sessions, desktops, files, logs and GitHub across your Macs, Linux and Windows machines, with an MCP server.",
-      "githubUrl": "https://github.com/LumaryLabsLLC/muxin",
-      "trendshiftUrl": "https://trendshift.io/repositories/309010",
-      "language": "Rust",
+      "fullName": "lucannez64/darling-lol",
+      "owner": "lucannez64",
+      "repo": "darling-lol",
+      "description": "Experimental Darling runtime patches and tools for testing the macOS League client on Linux",
+      "githubUrl": "https://github.com/lucannez64/darling-lol",
+      "trendshiftUrl": "https://trendshift.io/repositories/308048",
+      "language": "C",
       "topics": [],
-      "dateCreated": "2026-10-08T17:47:55Z"
+      "dateCreated": "2026-10-12T18:15:56Z"
     }
   ]
 }
