@@ -1,0 +1,138 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-19T06:36:28.174Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "google-research/harness2",
+      "owner": "google-research",
+      "repo": "harness2",
+      "description": "",
+      "githubUrl": "https://github.com/google-research/harness2",
+      "trendshiftUrl": "https://trendshift.io/repositories/307358",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-10-06T21:48:11Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Gathin23/tv-vibehack",
+      "owner": "Gathin23",
+      "repo": "tv-vibehack",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/tv-vibehack",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "KnifeLemon/Filee",
+      "owner": "KnifeLemon",
+      "repo": "Filee",
+      "description": "Free, open-source file converter. Convert 180+ formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
+      "githubUrl": "https://github.com/KnifeLemon/Filee",
+      "trendshiftUrl": "https://trendshift.io/repositories/276987",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-09-29T20:05:15Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Job search"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ly05010419/MacNativeGames",
+      "owner": "ly05010419",
+      "repo": "MacNativeGames",
+      "description": "",
+      "githubUrl": "https://github.com/ly05010419/MacNativeGames",
+      "trendshiftUrl": "https://trendshift.io/repositories/310285",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-17T19:52:00Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "PC2005-cloud/dsh-pet",
+      "owner": "PC2005-cloud",
+      "repo": "dsh-pet",
+      "description": "DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+      "githubUrl": "https://github.com/PC2005-cloud/dsh-pet",
+      "trendshiftUrl": "https://trendshift.io/repositories/162819",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-08-14T00:38:45Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "kuafuai/andee",
+      "owner": "kuafuai",
+      "repo": "andee",
+      "description": "An agent that moves into your Android phone and becomes its soul — not an assistant, not a tool. Any app, no integrations, on-device, one APK.",
+      "githubUrl": "https://github.com/kuafuai/andee",
+      "trendshiftUrl": "https://trendshift.io/repositories/304932",
+      "language": "Kotlin",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-17T13:20:59Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "alchaincyf/huashu-motion",
+      "owner": "alchaincyf",
+      "repo": "huashu-motion",
+      "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+      "githubUrl": "https://github.com/alchaincyf/huashu-motion",
+      "trendshiftUrl": "https://trendshift.io/repositories/310284",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-18T12:19:27Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "MaryCache/imozuru",
+      "owner": "MaryCache",
+      "repo": "imozuru",
+      "description": "知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル",
+      "githubUrl": "https://github.com/MaryCache/imozuru",
+      "trendshiftUrl": "https://trendshift.io/repositories/307101",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-13T05:56:21Z"
+    }
+  ]
+}
