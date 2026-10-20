@@ -1,0 +1,141 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-20T06:22:49.291Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "repo": "cleanyourtv",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "YuJunZhiXue/dsh-purge",
+      "owner": "YuJunZhiXue",
+      "repo": "dsh-purge",
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+      "githubUrl": "https://github.com/YuJunZhiXue/dsh-purge",
+      "trendshiftUrl": "https://trendshift.io/repositories/182834",
+      "language": "JavaScript",
+      "topics": [
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-08-19T07:41:12Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "openclaw/openclaw",
+      "owner": "openclaw",
+      "repo": "openclaw",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "githubUrl": "https://github.com/openclaw/openclaw",
+      "trendshiftUrl": "https://trendshift.io/repositories/19374",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2025-11-24T10:16:47Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "kksimp/Mac.apk",
+      "owner": "kksimp",
+      "repo": "Mac.apk",
+      "description": "Mac.apk: Run Android apps natively on Apple Silicon Macs",
+      "githubUrl": "https://github.com/kksimp/Mac.apk",
+      "trendshiftUrl": "https://trendshift.io/repositories/277003",
+      "topics": [],
+      "dateCreated": "2026-05-19T04:32:35Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "google-research/harness2",
+      "owner": "google-research",
+      "repo": "harness2",
+      "description": "",
+      "githubUrl": "https://github.com/google-research/harness2",
+      "trendshiftUrl": "https://trendshift.io/repositories/307358",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-10-06T21:48:11Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "githubUrl": "https://github.com/MadsLorentzen/ai-job-search",
+      "trendshiftUrl": "https://trendshift.io/repositories/43622",
+      "language": "Python",
+      "topics": [
+        "AI agent",
+        "Job search"
+      ],
+      "dateCreated": "2026-03-18T14:33:04Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "kuafuai/andee",
+      "owner": "kuafuai",
+      "repo": "andee",
+      "description": "An agent that moves into your Android phone and becomes its soul — not an assistant, not a tool. Any app, no integrations, on-device, one APK.",
+      "githubUrl": "https://github.com/kuafuai/andee",
+      "trendshiftUrl": "https://trendshift.io/repositories/304932",
+      "language": "Kotlin",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-17T13:20:59Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ly05010419/MacNativeGames",
+      "owner": "ly05010419",
+      "repo": "MacNativeGames",
+      "description": "",
+      "githubUrl": "https://github.com/ly05010419/MacNativeGames",
+      "trendshiftUrl": "https://trendshift.io/repositories/310285",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-17T19:52:00Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "xiaoyang111222/cn-math-taxonomy",
+      "owner": "xiaoyang111222",
+      "repo": "cn-math-taxonomy",
+      "description": "初中数学知识图谱（课标映射）+ 自适应诊断工具 + 1407 道题库",
+      "githubUrl": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+      "trendshiftUrl": "https://trendshift.io/repositories/310564",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-18T09:04:43Z"
+    }
+  ]
+}
