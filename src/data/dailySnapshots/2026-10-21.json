@@ -1,0 +1,145 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-21T06:22:41.965Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "deepseek-ai/DeepInfer",
+      "owner": "deepseek-ai",
+      "repo": "DeepInfer",
+      "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+      "githubUrl": "https://github.com/deepseek-ai/DeepInfer",
+      "trendshiftUrl": "https://trendshift.io/repositories/312526",
+      "language": "Python",
+      "topics": [
+        "LLM inference"
+      ],
+      "dateCreated": "2026-10-16T07:47:23Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "repo": "cleanyourtv",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "pengchujin/aerial-tv",
+      "owner": "pengchujin",
+      "repo": "aerial-tv",
+      "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+      "githubUrl": "https://github.com/pengchujin/aerial-tv",
+      "trendshiftUrl": "https://trendshift.io/repositories/312629",
+      "language": "Kotlin",
+      "topics": [],
+      "dateCreated": "2026-10-20T09:13:06Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bowenliang123/dsh-context",
+      "owner": "bowenliang123",
+      "repo": "dsh-context",
+      "description": "The best DeepSeek Harness plugin for context insight and management, with context dashboard / browser / sidebar and context command, for context statistics, composition, breakdown, evolution details, understanding how the context is made of, and how it evolves. 一站式 DeepSeek Harness 上下文可视化插件，Context 面板及浏览器和侧边栏与 Context 命令，透视上下文组成、演进、压缩、剪枝等事件与动作。",
+      "githubUrl": "https://github.com/bowenliang123/dsh-context",
+      "trendshiftUrl": "https://trendshift.io/repositories/156942",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-08-14T08:23:28Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/64056",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-18T14:08:44Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "ultraworkers/claw-code",
+      "owner": "ultraworkers",
+      "repo": "claw-code",
+      "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
+      "githubUrl": "https://github.com/ultraworkers/claw-code",
+      "trendshiftUrl": "https://trendshift.io/repositories/24872",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-31T08:58:08Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "mmparko/dsh-purge",
+      "owner": "mmparko",
+      "repo": "dsh-purge",
+      "description": "DeepSeek Harness 破甲 (mirror of YuJunZhiXue/dsh-purge) — 上游即将删库，此为本仓库全量镜像：含全部分支/73 个 tag/完整提交历史。原作者署名与二开要求见 README 署名章节。",
+      "githubUrl": "https://github.com/mmparko/dsh-purge",
+      "trendshiftUrl": "https://trendshift.io/repositories/313773",
+      "language": "JavaScript",
+      "topics": [
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-10-13T05:14:47Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "kuafuai/andee",
+      "owner": "kuafuai",
+      "repo": "andee",
+      "description": "An agent that moves into your Android phone and becomes its soul — not an assistant, not a tool. Any app, no integrations, on-device, one APK.",
+      "githubUrl": "https://github.com/kuafuai/andee",
+      "trendshiftUrl": "https://trendshift.io/repositories/304932",
+      "language": "Kotlin",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-09-17T13:20:59Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "oxc-project/tsrs",
+      "owner": "oxc-project",
+      "repo": "tsrs",
+      "description": "Rust port of the TypeScript 7 type checker",
+      "githubUrl": "https://github.com/oxc-project/tsrs",
+      "trendshiftUrl": "https://trendshift.io/repositories/274867",
+      "language": "Rust",
+      "topics": [
+        "Static analysis"
+      ],
+      "dateCreated": "2026-10-01T15:14:18Z"
+    }
+  ]
+}
