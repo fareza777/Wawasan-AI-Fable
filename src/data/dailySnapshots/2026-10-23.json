@@ -1,0 +1,136 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-23T06:21:08.181Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "peach-mitao/peach",
+      "owner": "peach-mitao",
+      "repo": "peach",
+      "description": "Peach 蜜桃：单用户、本地优先的个人媒体系统 · Single-user, local-first personal media system",
+      "githubUrl": "https://github.com/peach-mitao/peach",
+      "trendshiftUrl": "https://trendshift.io/repositories/309486",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-08-19T19:48:30Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "seedds/nxnative",
+      "owner": "seedds",
+      "repo": "nxnative",
+      "description": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)",
+      "githubUrl": "https://github.com/seedds/nxnative",
+      "trendshiftUrl": "https://trendshift.io/repositories/309689",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-13T05:20:14Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "repo": "cleanyourtv",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "EthanArbuckle/fairplay-decrypt",
+      "owner": "EthanArbuckle",
+      "repo": "fairplay-decrypt",
+      "description": "Offline FairPlay App Store IPA decryption with independent key derivation",
+      "githubUrl": "https://github.com/EthanArbuckle/fairplay-decrypt",
+      "trendshiftUrl": "https://trendshift.io/repositories/314026",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-19T10:07:58Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "luongnv89/claude-howto",
+      "owner": "luongnv89",
+      "repo": "claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "githubUrl": "https://github.com/luongnv89/claude-howto",
+      "trendshiftUrl": "https://trendshift.io/repositories/24227",
+      "language": "Python",
+      "topics": [
+        "Learning resources"
+      ],
+      "dateCreated": "2025-11-07T22:59:34Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Revivedx/SavageWindRecomp",
+      "owner": "Revivedx",
+      "repo": "SavageWindRecomp",
+      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.8.2) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
+      "githubUrl": "https://github.com/Revivedx/SavageWindRecomp",
+      "trendshiftUrl": "https://trendshift.io/repositories/315703",
+      "language": "C",
+      "topics": [
+        "Game"
+      ],
+      "dateCreated": "2026-10-16T17:34:55Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/64056",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-18T14:08:44Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "oosexgang/hackios-xnu-kernel",
+      "owner": "oosexgang",
+      "repo": "hackios-xnu-kernel",
+      "description": "",
+      "githubUrl": "https://github.com/oosexgang/hackios-xnu-kernel",
+      "trendshiftUrl": "https://trendshift.io/repositories/315427",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-22T06:20:11Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "fastapi/fastapi",
+      "owner": "fastapi",
+      "repo": "fastapi",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "githubUrl": "https://github.com/fastapi/fastapi",
+      "trendshiftUrl": "https://trendshift.io/repositories/12991",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2018-12-08T08:21:47Z"
+    }
+  ]
+}
