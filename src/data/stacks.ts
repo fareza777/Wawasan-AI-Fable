@@ -4820,6 +4820,46 @@ export const stacks: Review[] = [
     date: "2026-10-17",
     featured: false,
   },
+  {
+    slug: "humanlayer",
+    name: "HumanLayer",
+    tagline: "Agen coding di mesin sendiri, disetir dari satu antarmuka",
+    tags: ["Open Source", "Agen", "Desktop", "TypeScript"],
+    score: 7.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 7.0 },
+      { label: "Pengalaman Pengguna", value: 7.4 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 7.8 },
+    ],
+    summary:
+      "HumanLayer duduk di peringkat satu tren harian 24 Oktober 2026. README-nya menjalankan Claude Code, Codex, OpenCode, dan Pi di mesin sendiri, lalu menyatukan tugas serta tinjauan di aplikasi desktop dan web. Panduan self-host disebut masih disusun.",
+    pros: [
+      "README menulis build dari sumber tidak mengirim apa pun bila Sentry, PostHog, dan identitas WorkOS tidak diisi",
+      "Plugin yang disebut menyalin sesi Claude Code, OpenCode, dan Pi ke HumanLayer, jadi harness yang sudah terpasang tidak harus diganti dulu",
+      "Lisensi Apache-2.0. API GitHub pada 24 Oktober 2026: 11.934 bintang dan 969 fork",
+      "Homepage yang terpasang di API adalah humanlayer.dev/code",
+    ],
+    cons: [
+      "README menulis panduan menjalankan sendiri masih dalam pengerjaan. HumanLayer Cloud disebut yang menjalankan kode ini hari ini",
+      "Tiga rilis teratas yang API kembalikan adalah nightly Februari 2026 untuk DMG darwin-arm64. Wawasan AI tidak memasangnya",
+      "Membangun aplikasi native disebut membutuhkan Rust, di samping Bun dan Docker",
+      "Beberapa folder yang di-vendor tetap pada lisensi MIT menurut README. Wawasan AI tidak membuka NOTICE baris demi baris",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai tempat menyetir beberapa agen coding dari satu antarmuka, asal yang dipasang adalah build yang env telemetrinya memang kosong. Jangan menganggap 11.934 bintang sebagai uji bahwa self-host sudah selesai.",
+    body: [
+      "HumanLayer dibuat di repositori humanlayer/humanlayer. README yang dicek 24 Oktober 2026 mendeskripsikan agen coding yang berjalan di mesin pengguna, dengan tugas, sesi, rencana, dan tinjauan yang tersinkron antara aplikasi desktop, aplikasi web, dan daemon di tiap host. API GitHub hari yang sama mencatat 11.934 bintang, 969 fork, 54 isu terbuka, bahasa TypeScript, dan lisensi Apache-2.0. Repo dibuat 5 Agustus 2024. Push terakhir 23 Oktober 2026. Homepage di API adalah humanlayer.dev/code. Trendshift menaruhnya di peringkat satu. Wawasan AI tidak menjalankan bun install dan tidak membuka devstack.",
+      "Daftar aplikasi di README panjang, dan yang paling perlu dibaca sebelum mengira ini alat lokal semata adalah kalimat self-host. HumanLayer Cloud disebut menjalankan kode ini. Panduan menjalankannya sendiri disebut masih disusun. Build dari sumber disebut tidak mengirim apa pun ke mereka bila Sentry, PostHog, dan WorkOS client ID tidak diisi, karena ketiganya datang dari env. Syarat yang dicetak: Bun dan Docker. Aplikasi native di apps/riptide-native juga disebut membutuhkan Rust. Ada shell Electron dan shell Tauri untuk desktop macOS.",
+      "Integrasi yang README sebut tidak menambah model baru. Plugin menyalin sesi Claude Code, OpenCode, dan Pi ke HumanLayer. Ada juga skill bawaan dan skill Research-Plan-Implement, plus CLI Linear. Sinkronisasi klien disebut lewat Electric, dengan proksi autentikasi di depannya. Pekerjaan AWS Lambda yang disebut meliputi migrator, updater, pembersih daemon basi, dan pemeliharaan basis data. Semua itu nama di README, bukan layanan yang editorial nyalakan.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah kode Apache-2.0 untuk menyatukan sesi agen yang memang sudah berlangganan, tanpa kunci model baru di dalam README. Yang belum berguna sebagai jalur kantor adalah self-host yang README sendiri tandai belum selesai, dan nightly darwin-arm64 dari Februari yang API taruh di atas daftar rilis. Tiga tag teratas yang dikembalikan pada 24 Oktober semuanya prarilis. Pasang dulu hanya bila env telemetri dibaca, dan jangan menganggap daemon di host kantor otomatis tinggal di mesin itu sebelum panduan self-host yang disebut masih disusun benar-benar terbit. Sebelas ribu bintang tidak mengubah kalimat itu.",
+    ],
+    link: "https://github.com/humanlayer/humanlayer",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-24",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 17 Oktober 2026: 291.812 bintang, 73.478 fork, dan 1.148 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.5.0 terbit 14 Oktober 2026. Push terakhir 17 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 24 Oktober 2026: 373.430 bintang, 93.402 fork, dan 1.495 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.7.0 terbit 18 Oktober 2026. Push terakhir 24 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3445,6 +3445,66 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Unduhan yang dicetak: macOS 12 atau lebih baru, ditandatangani dan dinotariskan. Linux mensyaratkan glibc 2.35 atau lebih baru. Pemasang Windows 11 disebut belum ditandatangani. Homebrew yang dicetak memakai cask lumarylabsllc/tap/muxin.",
       "API rilis pada 17 Oktober mengembalikan lima tag pada 16 Oktober 2026, semuanya bukan prarilis: v0.5.6 pukul 20.03 UTC, lalu v0.5.5, v0.5.4, v0.5.3, dan v0.5.2 pada hari yang sama. README menulis pembaruan dari Muxen menyimpan pengaturan, dan perintah muxen tetap jalan.",
       "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 17 Oktober 2026: 40 bintang, 12 fork, 3 isu terbuka. Repo dibuat 8 Oktober 2026, push terakhir 16 Oktober 2026. Homepage muxin.dev. Wawasan AI tidak memasang aplikasi dan tidak membuka sesi agen.",
+    ],
+  },
+  "humanlayer/humanlayer": {
+    description:
+      "HumanLayer menjalankan agen coding di mesin sendiri, lalu menyatukan tugas, sesi, rencana, dan tinjauan di aplikasi desktop serta web. README menulis Claude Code, Codex, OpenCode, dan Pi. Panduan self-host disebut masih disusun.",
+    highlights: [
+      "Repo ini monorepo Turborepo yang memakai Bun. Yang disebut README: antarmuka Riptide, daemon di tiap host, CLI yang ikut mengirim daemon, serta plugin yang menyalin sesi Claude Code, OpenCode, dan Pi ke HumanLayer.",
+      "Membangun dari sumber disebut membutuhkan Bun dan Docker. Aplikasi native juga disebut membutuhkan Rust. README menulis build dari sumber tidak mengirim apa pun bila Sentry, PostHog, dan WorkOS tidak diisi di env.",
+      "Lisensi Apache-2.0, dengan catatan beberapa folder yang di-vendor tetap MIT. API GitHub pada 24 Oktober 2026: 11.934 bintang, 969 fork, 54 isu terbuka, bahasa TypeScript. Repo dibuat 5 Agustus 2024, push terakhir 23 Oktober 2026. Homepage humanlayer.dev/code.",
+      "Tiga rilis teratas yang API kembalikan hari ini semuanya prarilis nightly Februari 2026, untuk DMG darwin-arm64. Wawasan AI tidak memasang nightly dan tidak menjalankan devstack. Ulasan alat hari ini memakai README yang sama.",
+    ],
+  },
+  "GortexAI/franco": {
+    description:
+      "Franco adalah agen penjualan keluar yang berjalan di mesin sendiri, memakai langganan Claude Code atau Codex yang sudah ada. README menulis setiap surel ditinjau dulu, kecuali autopilot dinyalakan.",
+    highlights: [
+      "Tiga mode yang README cetak: generated mencari usaha lalu menyusun urutan, templates mengirim naskah yang sudah disetujui kata per kata, dan raad menaruh akun di corong yang paling sempit menurut pengamatan yang bersumber.",
+      "Kampanye baru disebut mulai di pratinjau. README menulis tidak ada tagihan API model terpisah: panggilan model lewat Claude Pro atau Max, atau runtime Codex yang diisolasi bila pengguna memilih paket ChatGPT.",
+      "Syarat yang dicetak: Python 3.11 atau lebih baru, lalu kotak surat. Google Workspace disebut disarankan. Dasbor yang ditulis membuka localhost:5555. Wawasan AI tidak memasang paket dan tidak mengirim surel.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 24 Oktober 2026: 200 bintang, 45 fork, 5 isu terbuka. Repo dibuat 15 Oktober 2026, push terakhir 23 Oktober 2026. Homepage gortex.ai. Rilis v0.5.1 terbit 17 Oktober 2026. Aset franco-0.5.1-py3-none-any.whl berukuran 515.421 byte dan tercatat 1 unduhan.",
+    ],
+  },
+  "peach-mitao/peach": {
+    description:
+      "Peach adalah sistem media pribadi untuk satu pengguna, lokal dulu. Lencana README menandai 18+ dan menulis repositori tidak berisi media. Wawasan AI tidak menyalin langkah unduh awan atau skrip situs.",
+    highlights: [
+      "README berbahasa Mandarin, dengan tautan README.en.md yang tidak dibandingkan baris demi baris hari ini. Yang disebut: disk lokal dan drive yang sudah terpasang jadi satu koleksi, pemutar dengan subtitle, dan pengaturan yang tersimpan di mesin.",
+      "Sakelar diagnostik disebut tercentang secara bawaan dan bisa dimatikan. Kalimat yang sama menulis dua jenis kejadian teknis pergi ke Sentry, tanpa unggah log lengkap otomatis.",
+      "Lencana lisensi menulis AGPL-3.0-or-later. API GitHub pada 24 Oktober 2026 mengembalikan AGPL-3.0, 8.643 bintang, 1.043 fork, 52 isu terbuka, bahasa Python. Repo dibuat 19 Agustus 2026, push terakhir 23 Oktober 2026. Homepage peach.video.",
+      "Rilis teratas yang API kembalikan, v0.46.1 pada 18 Oktober 2026, ditandai prarilis. Aset Peach-0.46.1-windows-x64-setup.exe berukuran 120.151.040 byte dan tercatat 13.276 unduhan. README menulis pemasang Windows x64 dan paket uji macOS. Wawasan AI tidak memasang keduanya.",
+    ],
+  },
+  "Gathin23/cleanyourtv": {
+    description:
+      "CleanYourTV mengaku merapikan layar utama Android TV atau Google TV. Deskripsi GitHub menulis lewat Wi-Fi. Kalimat snapshot Trendshift hari ini menulis lewat ADB. Banner README menulis tanpa kabel. Tiga kalimat itu tidak disatukan.",
+    highlights: [
+      "README membuka dengan jembatan debug yang sama dengan ponsel Android, lalu menyalakan debugging dan mengizinkan komputer sekali. Teks alternatif banner menulis tanpa root, tanpa kabel, dan tidak ada yang dicopot. Wawasan AI tidak menyalin perintahnya.",
+      "Teks alternatif kartu pers di README menulis 260 model TV, 77 merek, 25 bahasa, dan peluncur 477 KB. Itu teks pada gambar, bukan hitungan ulang editorial. Daftar perangkat di README panjang. Editorial tidak menghitung barisnya.",
+      "Bagian Licence README menulis MIT, dan fon Outfit disebut SIL Open Font License. API GitHub pada 24 Oktober 2026 mengembalikan SPDX NOASSERTION. Berkas LICENSE yang dibaca hari ini berjudul MIT License, hak cipta 2026 Gathin. Dua penanda API dan berkas itu dibiarkan berdampingan.",
+      "API yang sama: 28.100 bintang, 3.165 fork, 144 isu terbuka, bahasa Java. Repo dibuat 17 Oktober 2026, push terakhir 24 Oktober 2026. Homepage cleanyour.tv. Rilis v2.7.0 terbit 23 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Wawasan AI tidak memasang peluncur.",
+    ],
+  },
+  "xevrion/hatchzip": {
+    description:
+      "HatchZip mengekstrak arsip besar di tempat, dengan klaim arsip menyusut saat berkas keluar sehingga ruang yang dibutuhkan mendekati ukuran hasil. README menulis ZIP, 7z, tar, dan arsip terpisah.",
+    highlights: [
+      "Tabel README adalah uji penulis pada Fedora 43, Intel Core i7-14700HX, dan disk tmpfs 220 MiB. Satu baris menulis 7z satu blok solid ditolak sebelum disentuh. Wawasan AI tidak mengulang pengukuran itu.",
+      "README menulis pemasang Windows belum ditandatangani, dan peringatan sistem bisa muncul. API rilis v0.1.2 pada 23 Oktober 2026 mencatat HatchZip-x64-setup.exe sebesar 9.334.217 byte dan 2.210 unduhan.",
+      "Lisensi di README: Apache-2.0 atau MIT, pilihan pemakai. API GitHub pada 24 Oktober 2026 mengembalikan Apache-2.0. Dua penanda itu dibiarkan berdampingan.",
+      "API yang sama: 1.027 bintang, 20 fork, 10 isu terbuka, bahasa Rust. Repo dibuat 21 Oktober 2026, push terakhir 23 Oktober 2026. Homepage xevrion.github.io/hatchzip/. Rilis v0.1.2 bukan prarilis. Wawasan AI tidak mengekstrak arsip dengan alat ini.",
+    ],
+  },
+  "SnailSploit/Claude-Red": {
+    description:
+      "Claude-Red adalah kumpulan skill ofensif untuk sistem skill Claude. Lencana README menulis 78 skill dan 23 kategori. Wawasan AI tidak menyalin berkas SKILL.md dan tidak menyalin perintah pasangnya.",
+    highlights: [
+      "README menulis pemakaian untuk uji merah yang diizinkan, triase bug bounty, riset, CTF, dan latihan operator. Mengarahkan skill seperti ini ke sistem yang tidak kamu miliki atau tidak kamu izinkan adalah akses tanpa hak.",
+      "Bagian kategori di README memuat daftar permukaan serangan. Daftar itu tidak disalin ke situs ini. Indeks skill juga tidak disalin.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 24 Oktober 2026: 8.521 bintang, 1.103 fork, 29 isu terbuka. Repo dibuat 4 Maret 2026, push terakhir 12 Oktober 2026. Tidak ada homepage di API.",
+      "Rilis v0.3.0 terbit 30 Agustus 2026 dan tidak membawa aset. Rilis bertag Snail pada 8 Maret 2026 juga tidak membawa aset. Wawasan AI tidak memasang skill dari repositori ini.",
     ],
   },
 };

@@ -65,6 +65,8 @@ const SLUG_ICONS: Record<string, string> = {
   "nemotron-3-5-super-vl": "https://cdn.simpleicons.org/nvidia",
   "mcp-for-blender-pro": "https://github.com/anujasid.png",
   "reflection-beam": "https://www.google.com/s2/favicons?domain=reflection.ai&sz=128",
+  humanlayer: "https://github.com/humanlayer.png",
+  "kimi-k3-1-pro": "https://www.google.com/s2/favicons?domain=kimi.com&sz=128",
 };
 
 function githubOrgIcon(link: string): string | null {

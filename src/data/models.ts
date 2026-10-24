@@ -5440,6 +5440,51 @@ link: "https://www.anthropic.com",
     date: "2026-10-17",
     featured: false,
   },
+  {
+    slug: "kimi-k3-1-pro",
+    name: "Kimi K3.1 Pro",
+    tagline: "Indeks 55 dan peringkat kartu 4 dari 215, keluaran di bawah median kelas harganya",
+    tags: ["Kimi", "Proprietary", "Reasoning", "API"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 6.4 },
+      { label: "Harga/Performa", value: 7.4 },
+    ],
+    aa_intelligence_index: 55,
+    aa_price_input: 2,
+    aa_price_output: 10,
+    aa_synced_at: "2026-10-24",
+    summary:
+      "Artificial Analysis, dicek 24 Oktober 2026, memberi Kimi K3.1 Pro intelligence index 55 dan menandainya proprietary. Kartu intelijen menulis peringkat 4 dari 215. Keluaran 80,7 token per detik pada API Kimi, di bawah median FAQ 82,3.",
+    pros: [
+      "Intelligence index 55, di atas median 27 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 24 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 4 dari 215, dengan 4 dari 4 satuan untuk intelijen",
+      "Kartu biaya: $2 masukan dan $10 keluaran per juta token, diskon cache 90 persen, $2,11 per tugas indeks, peringkat biaya 85 dari 113",
+      "Spesifikasi halaman: masukan teks dan gambar, keluaran teks, konteks 1 juta token, reasoning menyala, 2,8 triliun parameter",
+    ],
+    cons: [
+      "Keluaran 80,7 token per detik, di bawah median FAQ 82,3. Kartu kecepatan menulis peringkat 98 dari 186",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah. Artikel 23 Oktober memakai Terminal-Bench 4.0, angka yang berbeda",
+      "FAQ menulis bobot tidak tersedia untuk umum. Artikel 23 Oktober menulis bobot belum terbit dan akan memimpin kelas terbuka setelah terbit",
+      "Ringkasan menyebut harga moderately priced. FAQ pada median yang sama menulis better than average",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 55 dengan biaya $2,11 per tugas indeks pada kartu 24 Oktober, selama tugasnya muat di masukan teks dan gambar. Jangan menempelkan Terminal-Bench 67 persen dari artikel 23 Oktober ke kolom coding index, dan jangan menganggap bobotnya sudah bisa diunduh.",
+    body: [
+      "Kimi K3.1 Pro adalah model reasoning dari Kimi yang halamannya di Artificial Analysis dibaca 24 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis Oktober 2026. FAQ memperinci tanggal rilis 23 Oktober 2026 dan menulis pembuatnya Kimi. Spesifikasi yang terpasang: masukan teks dan gambar, keluaran teks, jendela konteks 1,0 juta token, dan reasoning menyala. FAQ menulis 2,8 triliun parameter dan menandainya proprietary, bobot tidak tersedia untuk umum. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 24 Oktober 2026.) Intelligence index-nya 55 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 4 dari 215 dan 4 dari 4 satuan. FAQ menaruh skor 55 jauh di atas rata-rata model pada kisaran harga yang sama, median 27. Ringkasan perbandingan memakai median 27 yang sama dan menyebut model ini amongst the leading models untuk kelas itu. Teks kelas di halaman itu mengatakan ada 217 model di kelas pembanding, yaitu model proprietary yang dibandingkan dengan model proprietary dan bobot terbuka pada kisaran harga yang sama, pada pita di atas $1 per juta token. Caption beberapa grafik menulis 27 dari 709 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai 4 dari 215 untuk peringkat kartu, dan tidak menyamakan caption 27 dari 709 atau angka 217 di teks kelas dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $2,00 per juta token masukan dan $10,00 per juta token keluaran, diskon cache 90 persen, biaya rata-rata $2,11 per tugas indeks, peringkat biaya 85 dari 113, dan 3 dari 4 satuan. Ringkasan menyebut kedua harga itu moderately priced, masukan terhadap median $2,00 dan keluaran terhadap median $10,00. FAQ memakai median itu, lalu menulis better than average untuk keduanya. Editorial mengutip kedua kata sifat dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $1,54 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, lewat API Kimi, serta menulis model ini tersedia lewat 2 penyedia. Penyebut biaya 113 tidak sama dengan 215 model yang kartu intelijen sebut, dan tidak sama dengan 217 yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya dua tulisan yang berdekatan. Kartu menulis 80,7 token per detik, peringkat 98 dari 186, dan 2 dari 4 satuan. FAQ menulis 80,7 token per detik pada API Kimi, di bawah median 82,3. Ringkasan membulatkan menjadi 81 token per detik terhadap rata-rata 82. FAQ juga menulis waktu ke token pertama 2,97 detik, median 3,61 detik, dan menyebutnya better than average. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 2,97 detik di FAQ dengan judul bagian itu menjadi satu metrik yang sudah dicek ulang. Verbosity: kartu menulis 150 juta token keluaran, peringkat 92 dari 116, dan 4 dari 4 satuan. Ringkasan menyebut 150 juta very verbose terhadap median 87 juta. FAQ menyebut 150 juta at the higher end terhadap median 87 juta yang sama.",
+      "Artikel Artificial Analysis pada 23 Oktober 2026, Kimi K3.1 Pro launches at 4th on the Intelligence Index, menulis skor 55, naik 11 poin dari Kimi K3 yang disebut 44 pada upaya maksimum. Artikel itu menulis Terminal-Bench 4.0 di 67 persen, naik dari 13 persen, di depan Claude Sonnet 5.5 yang disebut 64 persen. GDPval-AA disebut 1.846 Elo, naik 312 dari Kimi K3, di belakang Claude Opus 5.5 di 1.866 dan Muse Wonder Full di 1.857. AutomationBench-AA disebut naik dari 58 persen ke 73 persen. Humanity's Last Exam dari 47 persen ke 52 persen, CritPt dari 23 persen ke 25 persen, SciCode dari 59 persen ke 61 persen. AA-Omniscience Index dari 20 ke 30, dengan tingkat halusinasi turun dari 53 persen ke 44 persen dan akurasi naik dari 48 persen ke 51 persen. Biaya per tugas di artikel disebut kira-kira setara Kimi K3 pada $1,98, dengan 55 ribu token keluaran per tugas indeks, 14 persen lebih banyak dari 48 ribu. Kartu 24 Oktober menulis $2,11 per tugas dan 150 juta token keluaran. Dua satuan biaya dan token itu tidak disatukan. Artikel juga menulis 2,8 triliun parameter total dan 104 miliar aktif, masukan teks dan gambar, konteks 1 juta, serta harga $2, $10, dan $0,20 per juta token untuk masukan, keluaran, dan cache hit, 33 persen lebih rendah dari Kimi K3. FAQ halaman model menulis 2,8 triliun parameter dan tidak mencetak 104 miliar aktif. Editorial tidak memindahkan 104 miliar ke baris FAQ.",
+      "Artikel yang sama menulis bobot belum diterbitkan, dan setelah terbit model ini akan menjadi bobot terbuka dengan skor tertinggi, sehingga selisih ke model proprietary terdepan menyempit dari 12 poin menjadi 3. Halaman model pada 24 Oktober menandai proprietary dan menulis bobot tidak tersedia untuk umum. Dua kalimat itu tidak disatukan menjadi status unduh hari ini. Grafik halaman model masih bertuliskan tidak ada API publik, sementara FAQ menulis dua penyedia. Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 55 dan biaya $2,11 per tugas indeks pada kartu 24 Oktober. Karena keluaran duduk di bawah median kelas harganya, agen yang harus mengisi layar lebih cepat dari median itu belum punya alasan kecepatan dari halaman ini. Karena FAQ menandai bobot tidak tersedia, jalur mesin sendiri belum ada pada pembacaan hari ini, meskipun artikel 23 Oktober menjanjikan rilis bobot. Pakai kartu ini untuk membandingkan indeks dan tagihan, lalu pisahkan $1,98 di artikel dari $2,11 di kartu sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/kimi-k3-1-pro",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-24",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

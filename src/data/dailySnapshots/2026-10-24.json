@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-24T02:02:28.773Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "humanlayer/humanlayer",
+      "owner": "humanlayer",
+      "repo": "humanlayer",
+      "description": "The best way to get AI coding agents to solve hard problems in complex codebases.",
+      "githubUrl": "https://github.com/humanlayer/humanlayer",
+      "trendshiftUrl": "https://trendshift.io/repositories/14712",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2024-08-05T21:26:44Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "GortexAI/franco",
+      "owner": "GortexAI",
+      "repo": "franco",
+      "description": "Franco: an outbound sales agent that runs on your Claude Code or Codex subscription",
+      "githubUrl": "https://github.com/GortexAI/franco",
+      "trendshiftUrl": "https://trendshift.io/repositories/312396",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-15T18:41:56Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "peach-mitao/peach",
+      "owner": "peach-mitao",
+      "repo": "peach",
+      "description": "Peach 蜜桃：单用户、本地优先的个人媒体系统 · Single-user, local-first personal media system",
+      "githubUrl": "https://github.com/peach-mitao/peach",
+      "trendshiftUrl": "https://trendshift.io/repositories/309486",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-08-19T19:48:30Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "experientiallabs/experiential",
+      "owner": "experientiallabs",
+      "repo": "experiential",
+      "description": "Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1000+ marketplace models. It learns from your traffic to cut costs, recommend better models, and train a specialized model you own.",
+      "githubUrl": "https://github.com/experientiallabs/experiential",
+      "trendshiftUrl": "https://trendshift.io/repositories/69130",
+      "language": "Python",
+      "topics": [
+        "LLM gateway"
+      ],
+      "dateCreated": "2026-06-24T22:40:57Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "repo": "cleanyourtv",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "xevrion/hatchzip",
+      "owner": "xevrion",
+      "repo": "hatchzip",
+      "description": "Extract huge archives in place: the archive shrinks as your files hatch, so you only need room for the output. ZIP, 7z, tar, split archives.",
+      "githubUrl": "https://github.com/xevrion/hatchzip",
+      "trendshiftUrl": "https://trendshift.io/repositories/316745",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-21T17:29:28Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "SnailSploit/Claude-Red",
+      "owner": "SnailSploit",
+      "repo": "Claude-Red",
+      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+      "githubUrl": "https://github.com/SnailSploit/Claude-Red",
+      "trendshiftUrl": "https://trendshift.io/repositories/40579",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-04T05:52:35Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/64056",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-18T14:08:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    }
+  ]
+}

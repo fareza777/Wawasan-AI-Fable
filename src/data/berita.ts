@@ -5520,6 +5520,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-1741-meta-ai-bukan-pernyataan-resmi",
+    title: "ANTARA Pukul 17.41: Jawaban Meta AI Bukan Pernyataan Resmi",
+    excerpt:
+      "Kawat ANTARA pada Jumat 23 Oktober pukul 17.41 WIB menaruh klarifikasi ke Meta dan kalimat bahwa chatbot bukan bukti instruksi. Halaman Inggris kantor yang sama bertanda 21.55 GMT+7. Medcom pada Kamis tidak memuat Meta AI.",
+    category: "Analisis",
+    date: "2026-10-24",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Jumat 23 Oktober 2026 pukul 17.41 WIB, ANTARA menurunkan Kemkomdigi minta transparansi AI & algoritma lindungi hak publik. Pewartanya Livia Kristianti, editornya Mahmudah. Waktu baca yang tercetak 5 menit. Dateline Jakarta. Tubuhnya membuka dengan permintaan Kementerian Komunikasi dan Digital kepada penyelenggara sistem elektronik yang mengelola platform digital agar menaikkan transparansi pemakaian kecerdasan artifisial dan pengelolaan algoritma.",
+          "Halaman Inggris ANTARA, Indonesia urges platforms to disclose AI, algorithm practices, bertanda October 23, 2026 21:55 GMT+700. Keterangan foto kedua halaman sama-sama menulis ANTARA/Pexels/ThisIsEngineering. Jadi yang dibandingkan pada Sabtu pagi ini adalah dua stempel waktu untuk kawat yang isinya berdekatan, plus laporan Medcom pada Kamis yang sudah menaruh peta jalan dan etika AI tanpa menyebut Meta.",
+        ],
+      },
+      {
+        heading: "Yang kawat 17.41 cetak",
+        paragraphs: [
+          "Kutipan Mediodecci Lustarini, Sekretaris Direktorat Jenderal Pengawasan Ruang Digital Kemkomdigi, berbunyi: AI dapat membantu masyarakat mencari dan memahami informasi, tetapi jawabannya tidak selalu benar. Kalimat lanjutannya meminta informasi penting diperiksa lewat sumber yang kredibel, terutama bila menyangkut kebijakan pemerintah atau tuduhan terhadap pihak tertentu. Keterangan itu disebut diterima di Jakarta, Jumat.",
+          "Bagian yang hanya utuh di halaman Indonesia: prinsip moderasi bukan pada akunnya, melainkan pada konten yang disebarkan. Akun otomatis disebut tidak serta-merta pelanggaran. Penilaian disebut harus pada substansi, pola penyalahgunaan, dan bukti. Kutipan kritik: kritik terhadap pemerintah merupakan bagian dari kebebasan berpendapat dan tidak boleh diperlakukan sebagai pelanggaran hanya karena berbeda pandangan. Untuk karhutla, kawat menulis Kemkomdigi tidak pernah meminta platform menurunkan atau membatasi konten itu, lalu mengutip bahwa informasi karhutla dari masyarakat penting sebagai masukan penanganan di lapangan.",
+        ],
+      },
+      {
+        heading: "Meta AI, dan yang halaman Inggris tidak bawa",
+        paragraphs: [
+          "Kawat 17.41 menulis Kemkomdigi meminta klarifikasi kepada Meta atas jawaban AI generatif Meta AI yang dikaitkan dengan dugaan pembatasan konten karhutla. Kalimat Mediodecci yang tercetak: jawaban chatbot AI tidak dapat langsung dianggap sebagai pernyataan resmi perusahaan, apalagi dijadikan bukti adanya instruksi pemerintah tanpa dokumen atau konfirmasi yang dapat diverifikasi. Paragraf berikutnya menamai fenomena itu halusinasi AI, yaitu informasi yang terdengar meyakinkan meskipun tidak didukung fakta. Ajakan yang dicetak: trust but verify, periksa sumber, bandingkan informasi, dan jangan langsung menyebarkan jawaban AI yang belum terkonfirmasi.",
+          "Halaman Inggris memuat klarifikasi ke Meta, kalimat chatbot bukan pernyataan resmi, dan frasa trust but verify. Ia tidak memuat nama halusinasi AI. Ia tidak memuat kutipan prinsip moderasi pada konten, bukan akun. Ia tidak memuat kutipan bahwa informasi karhutla sangat penting sebagai masukan lapangan. Ia juga tidak memuat Alfons Tanujaya. Di halaman Indonesia, Alfons disebut pakar keamanan siber. Kutipannya: dugaan penggunaan bot untuk membentuk opini harus diperiksa secara objektif, dan arah dukungan suatu akun tidak cukup untuk membuktikan manipulasi. Gaya tulisan rapi, bahasa seragam, atau unggahan yang sering disebut belum cukup untuk memastikan akun dijalankan AI. Kalimat penutupnya: justru harusnya pemerintah terbuka terhadap kritik dan diberikan informasi.",
+        ],
+      },
+      {
+        heading: "Peta jalan yang Medcom sudah tulis pada Kamis",
+        paragraphs: [
+          "Medcom.id menurunkan Peta Jalan AI Nasional Segera Disahkan, Pemerintah Siapkan Aturan Etika Kecerdasan Buatan pada Kamis 22 Oktober 2026 pukul 17.27, penulis Annisa ayu artanti, kredit foto dan penutup Wisa Irena Br Sitepu. Yang dikutip Teuku Riefky Harsya, Menteri Ekonomi Kreatif: Komdigi sudah menyusun hingga menunggu pengesahan peta jalan AI nasional, termasuk etika AI. Laporan itu menulis kedua dokumen rampung dan sedang menjalani pengesahan. Tidak ada Meta, tidak ada karhutla, dan tidak ada nomor surat edaran.",
+          "Kawat Jumat menaruh lapisan yang berbeda. Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial disebut sudah mengingatkan pengembang di Indonesia pada transparansi, keamanan, kredibilitas, akuntabilitas, dan pelindungan hak pengguna. Kalimat berikutnya menulis pemerintah menyiapkan penguatan lewat rancangan Peraturan Presiden tentang Etika AI dan Peta Jalan AI Nasional 2026–2029. Halaman Inggris mengulang surat edaran nomor 9 tahun 2023 dan rancangan perpres serta peta jalan 2026–2029. Editorial tidak membuka naskah surat edaran dan tidak membuka draf perpres. Frasa menunggu pengesahan di Medcom dan frasa menyiapkan penguatan di ANTARA tidak disamakan.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Sabtu pagi, teks yang paling rapat tentang Meta AI adalah kawat ANTARA pukul 17.41, bukan ringkasan Inggris pukul 21.55 dan bukan laporan Medcom Kamis. Tim yang mengutip chatbot bukan pernyataan resmi perlu menempelkan kalimat itu pada kedua halaman ANTARA. Tim yang mengutip halusinasi AI, prinsip moderasi pada konten, atau Alfons perlu menempelkannya pada halaman Indonesia. Halaman Inggris yang dibaca hari ini tidak memakainya.",
+          "Yang kedua halaman ANTARA samakan adalah arah transparansi: pelabelan konten buatan AI, alasan moderasi atau pembatasan, serta pengaduan dan banding. Tidak ada nama model di luar Meta AI, tidak ada tanggal klarifikasi Meta dibalas, dan tidak ada nomor draf perpres. Wawasan AI tidak membuka percakapan Meta AI yang kawat sandarkan, jadi jawaban yang ramai itu tidak dikutip dari layar obrolan.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 24 Oktober, yang dibaca ulang adalah kawat Jumat 23 Oktober pukul 17.41 WIB dan halaman Inggris kantor yang sama bertanda 21.55 GMT+7. Selisih stempel itu dibiarkan seperti tercetak. Yang tidak ada di halaman Inggris, dan ada di kawat Indonesia, adalah Alfons serta kata halusinasi. Yang tidak ada di Medcom 22 Oktober, dan ada di kawat Jumat, adalah Meta AI.",
+          "Catatan editorial: artikel ini disusun dari laporan ANTARA, 23 Oktober 2026 pukul 17.41 WIB, pewarta Livia Kristianti dan editor Mahmudah; dari halaman ANTARA bahasa Inggris, October 23, 2026 21:55 GMT+700; serta dari laporan Medcom.id, 22 Oktober 2026 pukul 17.27, penulis Annisa ayu artanti. Surat Edaran Nomor 9 Tahun 2023 dan draf Peraturan Presiden tidak dibuka. Percakapan Meta AI tidak disalin dari produknya.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
