@@ -4,34 +4,24 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-24T02:02:28.773Z",
+  "fetchedAt": "2026-10-24T06:16:34.128Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "humanlayer/humanlayer",
-      "owner": "humanlayer",
-      "repo": "humanlayer",
-      "description": "The best way to get AI coding agents to solve hard problems in complex codebases.",
-      "githubUrl": "https://github.com/humanlayer/humanlayer",
-      "trendshiftUrl": "https://trendshift.io/repositories/14712",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2024-08-05T21:26:44Z"
+      "fullName": "openJiuwen-ai/jiuwenswarm",
+      "owner": "openJiuwen-ai",
+      "repo": "jiuwenswarm",
+      "description": "JiuwenSwarm is an intelligent AI Agent built on openJiuwen. It extends the powerful capabilities of large language models directly to your fingertips through various communication apps you use daily.",
+      "githubUrl": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "trendshiftUrl": "https://trendshift.io/repositories/119917",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-03-05T06:28:11Z"
     },
     {
       "rank": 2,
-      "fullName": "GortexAI/franco",
-      "owner": "GortexAI",
-      "repo": "franco",
-      "description": "Franco: an outbound sales agent that runs on your Claude Code or Codex subscription",
-      "githubUrl": "https://github.com/GortexAI/franco",
-      "trendshiftUrl": "https://trendshift.io/repositories/312396",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-10-15T18:41:56Z"
-    },
-    {
-      "rank": 3,
       "fullName": "peach-mitao/peach",
       "owner": "peach-mitao",
       "repo": "peach",
@@ -43,7 +33,31 @@
       "dateCreated": "2026-08-19T19:48:30Z"
     },
     {
+      "rank": 3,
+      "fullName": "humanlayer/humanlayer",
+      "owner": "humanlayer",
+      "repo": "humanlayer",
+      "description": "The best way to get AI coding agents to solve hard problems in complex codebases.",
+      "githubUrl": "https://github.com/humanlayer/humanlayer",
+      "trendshiftUrl": "https://trendshift.io/repositories/14712",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2024-08-05T21:26:44Z"
+    },
+    {
       "rank": 4,
+      "fullName": "GortexAI/franco",
+      "owner": "GortexAI",
+      "repo": "franco",
+      "description": "Franco: an outbound sales agent that runs on your Claude Code or Codex subscription",
+      "githubUrl": "https://github.com/GortexAI/franco",
+      "trendshiftUrl": "https://trendshift.io/repositories/312396",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-15T18:41:56Z"
+    },
+    {
+      "rank": 5,
       "fullName": "experientiallabs/experiential",
       "owner": "experientiallabs",
       "repo": "experiential",
@@ -57,19 +71,19 @@
       "dateCreated": "2026-06-24T22:40:57Z"
     },
     {
-      "rank": 5,
-      "fullName": "Gathin23/cleanyourtv",
-      "owner": "Gathin23",
-      "repo": "cleanyourtv",
-      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
-      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
-      "trendshiftUrl": "https://trendshift.io/repositories/310225",
-      "language": "Java",
+      "rank": 6,
+      "fullName": "Zagitta/gpu-unlock",
+      "owner": "Zagitta",
+      "repo": "gpu-unlock",
+      "description": "",
+      "githubUrl": "https://github.com/Zagitta/gpu-unlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/314044",
+      "language": "C",
       "topics": [],
-      "dateCreated": "2026-10-17T08:12:35Z"
+      "dateCreated": "2026-10-18T01:28:31Z"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "fullName": "xevrion/hatchzip",
       "owner": "xevrion",
       "repo": "hatchzip",
@@ -81,7 +95,31 @@
       "dateCreated": "2026-10-21T17:29:28Z"
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "fullName": "anthropics/sandbox-runtime",
+      "owner": "anthropics",
+      "repo": "sandbox-runtime",
+      "description": "A lightweight sandboxing tool for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container.",
+      "githubUrl": "https://github.com/anthropics/sandbox-runtime",
+      "trendshiftUrl": "https://trendshift.io/repositories/35675",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2025-10-20T02:52:10Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "repo": "cleanyourtv",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 10,
       "fullName": "morluto/rea",
       "owner": "morluto",
       "repo": "rea",
@@ -91,49 +129,6 @@
       "language": "TypeScript",
       "topics": [],
       "dateCreated": "2026-04-14T00:51:32Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "SnailSploit/Claude-Red",
-      "owner": "SnailSploit",
-      "repo": "Claude-Red",
-      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
-      "githubUrl": "https://github.com/SnailSploit/Claude-Red",
-      "trendshiftUrl": "https://trendshift.io/repositories/40579",
-      "language": "Python",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-04T05:52:35Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "cloudflare/security-audit-skill",
-      "owner": "cloudflare",
-      "repo": "security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/64056",
-      "language": "JavaScript",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-06-18T14:08:44Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "stablyai/orca",
-      "owner": "stablyai",
-      "repo": "orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "githubUrl": "https://github.com/stablyai/orca",
-      "trendshiftUrl": "https://trendshift.io/repositories/26256",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-03-17T03:28:57Z"
     }
   ]
 }
