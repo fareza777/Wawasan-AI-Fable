@@ -3577,16 +3577,6 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak menjalankan pemasang sumber dan tidak merekam layar.",
     ],
   },
-  "cloudflare/security-audit-skill": {
-    description:
-      "security-audit-skill adalah skill agen coding untuk audit keamanan beberapa fase, dengan temuan yang disebut terverifikasi dan bisa dibaca mesin. Wawasan AI tidak menyalin berkas kelas serangan dan tidak menyalin perintah pasang.",
-    highlights: [
-      "README menulis enam fase, dari pengintaian sampai laporan netral. Putusan yang disebut: confirmed, needs_validation, dan rejected. Blog Cloudflare yang ditautkan tidak dibuka baris demi baris hari ini.",
-      "Mengarahkan skill audit ke sistem yang tidak kamu miliki atau tidak kamu izinkan adalah akses tanpa hak. Daftar berkas ATTACK-CLASSES.md dan sejenisnya tidak disalin.",
-      "Lisensi MIT, ditulis JavaScript. API GitHub pada 25 Oktober 2026: 44.675 bintang, 2.771 fork, 86 isu terbuka. Repo dibuat 18 Juni 2026, push terakhir 14 September 2026. Tidak ada rilis. Homepage di API string kosong.",
-      "Deskripsi API sama dengan snapshot Trendshift. Wawasan AI tidak menjalankan npx skills add.",
-    ],
-  },
 };
 
   // Helper: lookup dengan fallback ke template-generated highlights
