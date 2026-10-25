@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-25T02:02:10.440Z",
+  "fetchedAt": "2026-10-25T06:35:17.100Z",
   "repos": [
     {
       "rank": 1,
@@ -20,6 +20,18 @@
     },
     {
       "rank": 2,
+      "fullName": "Zagitta/gpu-unlock",
+      "owner": "Zagitta",
+      "repo": "gpu-unlock",
+      "description": "",
+      "githubUrl": "https://github.com/Zagitta/gpu-unlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/314044",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-18T01:28:31Z"
+    },
+    {
+      "rank": 3,
       "fullName": "elayadesign/ai-design-skills",
       "owner": "elayadesign",
       "repo": "ai-design-skills",
@@ -32,19 +44,47 @@
       "dateCreated": "2026-07-29T06:43:16Z"
     },
     {
-      "rank": 3,
-      "fullName": "Zagitta/gpu-unlock",
-      "owner": "Zagitta",
-      "repo": "gpu-unlock",
-      "description": "",
-      "githubUrl": "https://github.com/Zagitta/gpu-unlock",
-      "trendshiftUrl": "https://trendshift.io/repositories/314044",
-      "language": "C",
+      "rank": 4,
+      "fullName": "deepopen-com/deepopen",
+      "owner": "deepopen-com",
+      "repo": "deepopen",
+      "description": "非自回归System 1决策引擎，专为结构化类型决策场景设计  DeepOpen Multilingual, non-autoregressive System 1 decision engine.",
+      "githubUrl": "https://github.com/deepopen-com/deepopen",
+      "trendshiftUrl": "https://trendshift.io/repositories/253721",
+      "language": "Python",
       "topics": [],
-      "dateCreated": "2026-10-18T01:28:31Z"
+      "dateCreated": "2026-09-21T02:12:24Z"
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "fullName": "sgl-project/sglang",
+      "owner": "sgl-project",
+      "repo": "sglang",
+      "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+      "githubUrl": "https://github.com/sgl-project/sglang",
+      "trendshiftUrl": "https://trendshift.io/repositories/7068",
+      "language": "Python",
+      "topics": [
+        "LLM inference"
+      ],
+      "dateCreated": "2024-01-08T04:15:52Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Nutlope/hallmark",
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "githubUrl": "https://github.com/Nutlope/hallmark",
+      "trendshiftUrl": "https://trendshift.io/repositories/33587",
+      "language": "CSS",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-27T20:47:10Z"
+    },
+    {
+      "rank": 7,
       "fullName": "seedds/nxnative",
       "owner": "seedds",
       "repo": "nxnative",
@@ -56,7 +96,7 @@
       "dateCreated": "2026-10-13T05:20:14Z"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "fullName": "ludovic111/horizon",
       "owner": "ludovic111",
       "repo": "horizon",
@@ -70,55 +110,7 @@
       "dateCreated": "2026-10-03T17:08:48Z"
     },
     {
-      "rank": 6,
-      "fullName": "punitarani/fli",
-      "owner": "punitarani",
-      "repo": "fli",
-      "description": "Google Flights MCP, CLI and Python Library",
-      "githubUrl": "https://github.com/punitarani/fli",
-      "trendshiftUrl": "https://trendshift.io/repositories/24361",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2025-01-06T05:20:05Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "microsoft/skill-recorder",
-      "owner": "microsoft",
-      "repo": "skill-recorder",
-      "description": "Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.",
-      "githubUrl": "https://github.com/microsoft/skill-recorder",
-      "trendshiftUrl": "https://trendshift.io/repositories/98783",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-07-29T18:16:14Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "morluto/rea",
-      "owner": "morluto",
-      "repo": "rea",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "githubUrl": "https://github.com/morluto/rea",
-      "trendshiftUrl": "https://trendshift.io/repositories/82054",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-04-14T00:51:32Z"
-    },
-    {
       "rank": 9,
-      "fullName": "Gathin23/cleanyourtv",
-      "owner": "Gathin23",
-      "repo": "cleanyourtv",
-      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
-      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
-      "trendshiftUrl": "https://trendshift.io/repositories/310225",
-      "language": "Java",
-      "topics": [],
-      "dateCreated": "2026-10-17T08:12:35Z"
-    },
-    {
-      "rank": 10,
       "fullName": "cloudflare/security-audit-skill",
       "owner": "cloudflare",
       "repo": "security-audit-skill",
@@ -130,6 +122,21 @@
         "AI skills"
       ],
       "dateCreated": "2026-06-18T14:08:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "google-gemini/gemini-cli",
+      "owner": "google-gemini",
+      "repo": "gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "githubUrl": "https://github.com/google-gemini/gemini-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/14376",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-04-17T17:04:31Z"
     }
   ]
 }
