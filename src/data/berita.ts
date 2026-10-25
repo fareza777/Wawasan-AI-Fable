@@ -5572,6 +5572,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-2102-kondisi-global-bukan-konsensus",
+    title: "ANTARA Pukul 21.02: Kondisi Global, Bukan Konsensus",
+    excerpt:
+      "Kawat ANTARA pada Jumat 23 Oktober pukul 21.02 WIB menaruh pertemuan Meutya Hafid dan Anthony Stephen Burke. Siaran Komdigi bertanda 19.00 menulis Tony Burke dan konsensus global. Typo 11penggunaan hanya di kawat.",
+    category: "Analisis",
+    date: "2026-10-25",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Jumat 23 Oktober 2026 pukul 21.02 WIB, ANTARA menurunkan RI-Australia satukan langkah jaga keamanan anak di ruang digital. Pewartanya Livia Kristianti, editornya Maria Rosari Dwi Putri. Waktu baca yang tercetak 2 menit. Dateline Jakarta. Tubuhnya membuka dengan Menteri Komunikasi dan Digital Meutya Hafid bersama Menteri Dalam Negeri Australia Anthony Stephen Burke, dalam pertemuan bilateral, menyepakati bahwa Indonesia dan Australia bersepakat memperkuat upaya melindungi anak di ruang digital.",
+          "Portal Kementerian Komunikasi dan Digital, Indonesia dan Australia Satukan Langkah Lindungi Anak dari Risiko Digital, bertanda Jumat, 23 Oktober 2026 - 19:00, kategori Siaran Pers. Jadi yang dibandingkan pada Minggu pagi ini adalah dua stempel untuk pertemuan yang sama: siaran 19.00 dan kawat 21.02, plus ejaan nama menteri Australia yang tidak sama.",
+        ],
+      },
+      {
+        heading: "Yang kawat 21.02 cetak",
+        paragraphs: [
+          "Kutipan pembuka Meutya di ANTARA: Indonesia dan Australia tidak perlu menunggu terbentuknya kondisi global untuk mengambil langkah bersama. Kedua negara dapat memanfaatkan regulasi dan pengalaman masing-masing untuk membangun kerja sama bilateral dan regional yang konkret. Spasi sebelum koma di dalam tanda kutip dibiarkan seperti tercetak.",
+          "PP yang disebut: Peraturan Pemerintah Nomor 17 Tahun 2025 tentang Tata Kelola Penyelenggaraan Sistem Elektronik dalam Pelindungan Anak, disingkat PP TUNAS. Kalimat Australia di kawat: telah menerapkan aturan batas usia minimum 11penggunaan media sosial. Angka 11 menempel pada kata penggunaan, tanpa spasi. Tidak ada tahun aturan Australia. Keterangan foto menulis The Ritz-Carlton Jakarta Kuningan, Jakarta Selatan, dan ANTARA/HO-Kementerian Komunikasi dan Digital. Jabatan Burke di keterangan foto: Menteri Dalam Negeri, Imigrasi dan Kewarganegaraan, Keamanan Siber, dan Seni Australia, H.E. Anthony Stephen Burke.",
+        ],
+      },
+      {
+        heading: "Yang siaran 19.00 samakan, dan yang tidak",
+        paragraphs: [
+          "Siaran Komdigi menulis Menteri Australia Tony Burke, bukan Anthony Stephen Burke. Kutipan pembuka memakai terbentuknya konsensus global, bukan kondisi global. PP TUNAS sama nomor dan judulnya. Kalimat Australia di situ: telah menerapkan aturan batas usia minimum penggunaan media sosial, tanpa angka 11 dan tanpa gabungan 11penggunaan.",
+          "Bagian AI di siaran: Indonesia tengah menyiapkan peta jalan AI nasional, pedoman etika, serta rancangan Peraturan Presiden tentang AI. Kerja sama juga diusulkan mencakup dialog ketahanan keamanan siber dan pengembangan talenta digital. Kalimat penutup Meutya sama arahnya: ukuran keberhasilan adalah kepatuhan platform terhadap regulasi dan perlindungan yang benar-benar dirasakan anak serta keluarga.",
+        ],
+      },
+      {
+        heading: "Tata kelola AI yang kawat rumuskan lebih panjang",
+        paragraphs: [
+          "ANTARA menulis pertemuan juga membahas dialog ketahanan keamanan siber, pengembangan talenta digital, serta penyusunan tata kelola AI. Kalimat berikutnya: Pemerintah Indonesia saat ini tengah menyusun peta jalan AI nasional, pedoman etika, serta menyusun rancangan Peraturan Presiden tentang kecerdasan artifisial. Pemerintah berharap pembahasan berlanjut melalui pembentukan kelompok kerja bersama. Siaran 19.00 menulis kelompok kerja kedua negara, tanpa kata bersama pada frasa itu.",
+          "Tidak ada nama model, tidak ada nomor draf perpres, dan tidak ada tanggal kelompok kerja dibentuk. Editorial tidak membuka naskah PP 17/2025 dan tidak membuka draf perpres. Frasa pelopor di paragraf pembuka siaran Komdigi tidak ada di tubuh kawat 21.02 yang dibaca.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Minggu pagi, teks yang paling rapat tentang hotel dan jabatan Burke adalah kawat ANTARA pukul 21.02, bukan siaran 19.00. Tim yang mengutip konsensus global perlu menempelkannya pada portal Komdigi. Tim yang mengutip kondisi global atau 11penggunaan perlu menempelkannya pada kawat. Siaran yang dibaca hari ini tidak memuat gabungan 11penggunaan.",
+          "Yang kedua teks samakan adalah PP TUNAS, arah kerja sama tanpa menunggu rumusan global, dan ukuran keberhasilan pada kepatuhan platform. Nama Tony Burke dan Anthony Stephen Burke tidak disatukan. Wawasan AI tidak menghadiri pertemuan di Kuningan, jadi daftar hadir di luar dua nama menteri tidak ditambah dari laporan.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 25 Oktober, yang dibaca ulang adalah siaran Komdigi Jumat 23 Oktober pukul 19.00 dan kawat ANTARA pukul 21.02 WIB. Selisih stempel itu dibiarkan seperti tercetak. Yang tidak ada di siaran, dan ada di kawat, adalah 11penggunaan serta nama hotel. Yang tidak ada di kawat tubuh, dan ada di siaran, adalah kata pelopor pada pembuka dan nama Tony Burke.",
+          "Catatan editorial: artikel ini disusun dari laporan ANTARA, 23 Oktober 2026 pukul 21.02 WIB, pewarta Livia Kristianti dan editor Maria Rosari Dwi Putri; serta dari halaman portal.komdigi.go.id, Jumat, 23 Oktober 2026 - 19:00, kategori Siaran Pers. Naskah PP Nomor 17 Tahun 2025 dan draf Peraturan Presiden tidak dibuka. Ejaan 11penggunaan dibiarkan seperti tercetak di kawat.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

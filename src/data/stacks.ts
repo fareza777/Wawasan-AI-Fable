@@ -4860,6 +4860,46 @@ export const stacks: Review[] = [
     date: "2026-10-24",
     featured: false,
   },
+  {
+    slug: "skill-recorder",
+    name: "Skill Recorder",
+    tagline: "Rekam sekali di layar, lalu Copilot menyusun skill agen",
+    tags: ["Open Source", "Agen", "Desktop", "Microsoft"],
+    score: 7.2,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.4 },
+      { label: "Kualitas Output", value: 6.8 },
+      { label: "Pengalaman Pengguna", value: 7.2 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 7.0 },
+    ],
+    summary:
+      "Skill Recorder duduk di peringkat tujuh tren harian 25 Oktober 2026. README-nya merekam sesi kerja di layar, lalu memakai GitHub Copilot CLI untuk menyusun niat dan langkah menjadi Skill atau Automation. Tiga rilis teratas di API tidak membawa aset.",
+    pros: [
+      "README menulis rekaman berjalan lokal. Copilot CLI disebut ikut dalam aplikasi. Sasaran utama macOS, dengan Windows 11 x64 dan ARM64",
+      "Dari satu rekaman, keluaran yang disebut: SKILL.md yang dijalankan on demand, atau Automation pada jadwal atau pemicu",
+      "Lisensi MIT. API GitHub pada 25 Oktober 2026: 4.706 bintang dan 514 fork",
+      "Rilis v0.7.0 terbit 21 September 2026 dan bukan prarilis",
+    ],
+    cons: [
+      "Tiga rilis teratas yang API kembalikan tidak membawa aset. README meminta perintah Commit-pinned di halaman rilis, bukan zip sumber",
+      "Diperlukan akun GitHub dengan akses Copilot. Tanpa itu, alur analisis yang README cetak tidak lengkap",
+      "Pemasangan pertama disebut bisa memakan beberapa menit karena runtime Node diunduh dan dibangun di mesin",
+      "Wawasan AI tidak menjalankan pemasang dan tidak merekam layar",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai cara mengubah satu sesi kerja menjadi prosedur agen, asal akun Copilot sudah ada dan perintah pasang diambil dari halaman rilis, bukan dari templat. Jangan menganggap 4.706 bintang sebagai uji bahwa Automation sudah aman di berkas kantor.",
+    body: [
+      "Skill Recorder dibuat di repositori microsoft/skill-recorder. README yang dicek 25 Oktober 2026 mendeskripsikan aplikasi desktop yang merekam klik, perpindahan jendela, halaman, keluaran terminal opsional, dan narasi suara bila dihidupkan, lalu memakai GitHub Copilot CLI untuk menyusun satu niat plus daftar langkah. API GitHub hari yang sama mencatat 4.706 bintang, 514 fork, 45 isu terbuka, bahasa TypeScript, dan lisensi MIT. Repo dibuat 29 Juli 2026. Push terakhir 24 Oktober 2026. Homepage di API string kosong. Trendshift menaruhnya di peringkat tujuh. Wawasan AI tidak menjalankan pemasang sumber dan tidak membuka sesi rekaman.",
+      "Yang paling perlu dibaca sebelum mengira ini unduhan biner adalah kalimat rilis sumber. Satu perintah di halaman rilis terbaru disebut mengunduh runtime Node yang dipin, membangun commit rilis di mesin, dan menambah aplikasi Skill Recorder (Source). Tidak ada pemasangan global. Diperlukan akun GitHub dengan akses Copilot. Copilot CLI disebut ikut dalam aplikasi. README memperingatkan menyalin perintah Commit-pinned utuh, bukan templat yang masih berisi placeholder commit 40 karakter, dan bukan tautan Source code zip.",
+      "Alur yang README cetak: rekam, kendalikan bilah selalu di atas, analisis, lalu buat Skill atau Automation. Review SKILL.md disebut pratinjau baca-saja, termasuk frontmatter, sebelum pasang atau ekspor. Menyiapkan pratinjau disebut tidak menulis berkas skill. README menulis Review memberi visibilitas, bukan jaminan keamanan. Keduanya disebut lebih memilih alat asli agen, seperti gh CLI atau web_fetch, daripada mengulang klik antarmuka. Semua itu klaim README.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah jalur MIT untuk mengubah satu prosedur berulang menjadi berkas skill, tanpa lisensi alat baru di README, selama Copilot sudah berlangganan. Yang belum berguna sebagai jalur kantor tanpa Copilot adalah analisis yang README sandarkan pada CLI itu. Tiga tag teratas tanpa aset berarti yang dipasang bukan berkas rilis yang API unggah. Rekam dulu hanya pada akun dan berkas yang memang boleh dilihat agen, lalu baca pratinjau SKILL.md sebelum Add. Empat ribu tujuh ratus bintang tidak mengubah kalimat bahwa Review bukan jaminan keamanan.",
+    ],
+    link: "https://github.com/microsoft/skill-recorder",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-25",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

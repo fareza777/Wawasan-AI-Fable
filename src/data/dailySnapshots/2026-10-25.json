@@ -1,0 +1,135 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-25T02:02:10.440Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "JustAResearcher/gpu-unlock-ada",
+      "owner": "JustAResearcher",
+      "repo": "gpu-unlock-ada",
+      "description": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
+      "githubUrl": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "trendshiftUrl": "https://trendshift.io/repositories/318875",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-23T21:00:53Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "elayadesign/ai-design-skills",
+      "owner": "elayadesign",
+      "repo": "ai-design-skills",
+      "description": "",
+      "githubUrl": "https://github.com/elayadesign/ai-design-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/304496",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-29T06:43:16Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Zagitta/gpu-unlock",
+      "owner": "Zagitta",
+      "repo": "gpu-unlock",
+      "description": "",
+      "githubUrl": "https://github.com/Zagitta/gpu-unlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/314044",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-18T01:28:31Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "seedds/nxnative",
+      "owner": "seedds",
+      "repo": "nxnative",
+      "description": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)",
+      "githubUrl": "https://github.com/seedds/nxnative",
+      "trendshiftUrl": "https://trendshift.io/repositories/309689",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-13T05:20:14Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "ludovic111/horizon",
+      "owner": "ludovic111",
+      "repo": "horizon",
+      "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
+      "githubUrl": "https://github.com/ludovic111/horizon",
+      "trendshiftUrl": "https://trendshift.io/repositories/307677",
+      "language": "Rust",
+      "topics": [
+        "Game"
+      ],
+      "dateCreated": "2026-10-03T17:08:48Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "punitarani/fli",
+      "owner": "punitarani",
+      "repo": "fli",
+      "description": "Google Flights MCP, CLI and Python Library",
+      "githubUrl": "https://github.com/punitarani/fli",
+      "trendshiftUrl": "https://trendshift.io/repositories/24361",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-01-06T05:20:05Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "microsoft/skill-recorder",
+      "owner": "microsoft",
+      "repo": "skill-recorder",
+      "description": "Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.",
+      "githubUrl": "https://github.com/microsoft/skill-recorder",
+      "trendshiftUrl": "https://trendshift.io/repositories/98783",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-07-29T18:16:14Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "githubUrl": "https://github.com/morluto/rea",
+      "trendshiftUrl": "https://trendshift.io/repositories/82054",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-04-14T00:51:32Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "repo": "cleanyourtv",
+      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
+      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
+      "trendshiftUrl": "https://trendshift.io/repositories/310225",
+      "language": "Java",
+      "topics": [],
+      "dateCreated": "2026-10-17T08:12:35Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/64056",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-18T14:08:44Z"
+    }
+  ]
+}

@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 24 Oktober 2026: 373.430 bintang, 93.402 fork, dan 1.495 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.7.0 terbit 18 Oktober 2026. Push terakhir 24 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 25 Oktober 2026: 378.997 bintang, 94.703 fork, dan 1.141 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.7.0 terbit 18 Oktober 2026. Push terakhir 25 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3484,7 +3484,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README membuka dengan jembatan debug yang sama dengan ponsel Android, lalu menyalakan debugging dan mengizinkan komputer sekali. Teks alternatif banner menulis tanpa root, tanpa kabel, dan tidak ada yang dicopot. Wawasan AI tidak menyalin perintahnya.",
       "Teks alternatif kartu pers di README menulis 260 model TV, 77 merek, 25 bahasa, dan peluncur 477 KB. Itu teks pada gambar, bukan hitungan ulang editorial. Daftar perangkat di README panjang. Editorial tidak menghitung barisnya.",
       "Bagian Licence README menulis MIT, dan fon Outfit disebut SIL Open Font License. API GitHub pada 24 Oktober 2026 mengembalikan SPDX NOASSERTION. Berkas LICENSE yang dibaca hari ini berjudul MIT License, hak cipta 2026 Gathin. Dua penanda API dan berkas itu dibiarkan berdampingan.",
-      "API yang sama: 28.100 bintang, 3.165 fork, 144 isu terbuka, bahasa Java. Repo dibuat 17 Oktober 2026, push terakhir 24 Oktober 2026. Homepage cleanyour.tv. Rilis v2.7.0 terbit 23 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Wawasan AI tidak memasang peluncur.",
+      "API yang sama pada 25 Oktober 2026: 31.924 bintang, 3.714 fork, 204 isu terbuka, bahasa Java. Repo dibuat 17 Oktober 2026, push terakhir 24 Oktober 2026. Homepage cleanyour.tv. Rilis v2.7.0 terbit 23 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Wawasan AI tidak memasang peluncur.",
     ],
   },
   "xevrion/hatchzip": {
@@ -3505,6 +3505,86 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Bagian kategori di README memuat daftar permukaan serangan. Daftar itu tidak disalin ke situs ini. Indeks skill juga tidak disalin.",
       "Lisensi MIT, ditulis Python. API GitHub pada 24 Oktober 2026: 8.521 bintang, 1.103 fork, 29 isu terbuka. Repo dibuat 4 Maret 2026, push terakhir 12 Oktober 2026. Tidak ada homepage di API.",
       "Rilis v0.3.0 terbit 30 Agustus 2026 dan tidak membawa aset. Rilis bertag Snail pada 8 Maret 2026 juga tidak membawa aset. Wawasan AI tidak memasang skill dari repositori ini.",
+    ],
+  },
+  "JustAResearcher/gpu-unlock-ada": {
+    description:
+      "gpu-unlock-ada adalah fork modul kernel Linux yang README-nya mengaku menaikkan laju tensor pada RTX 4090 dan, secara eksperimen, RTX 4070 Ti SUPER. Angka TF/s di README adalah uji penulis, bukan uji Wawasan AI. Perintah pasang tidak disalin.",
+    highlights: [
+      "README menulis modul ini mengintegrasikan muatan yang disebut dari TOTORONG/AD103_win_unlocker ke kerangka Zagitta/gpu-unlock. Mengubah firmware atau modul kernel kartu yang tidak kamu miliki, atau di luar syarat garansi dan lisensi pengemudi, adalah akses tanpa hak.",
+      "Tabel README menulis FP16 ke FP32 165,6 menjadi 331,6 TF/s dan BF16 ke FP32 165,5 menjadi 330,6 TF/s pada satu jalur RTX 4090. Uji terpisah pada satu RTX 4070 Ti SUPER menulis FP16/FP32 95,0 menjadi 189,9 TF/s. Wawasan AI tidak mengulang pengukuran itu.",
+      "Lisensi API GitHub: GPL-2.0. API pada 25 Oktober 2026: 864 bintang, 103 fork, 7 isu terbuka, bahasa C. Repo dibuat 23 Oktober 2026, push terakhir 24 Oktober 2026. Homepage di API kosong.",
+      "Rilis v1.1.1 terbit 24 Oktober 2026. Aset yang API catat termasuk gpu-unlock-1.1.1.tar.xz sebesar 119.952 byte dengan 91 unduhan, plus arsip bukti. Wawasan AI tidak memasang modul kernel dan tidak mem-flash firmware.",
+    ],
+  },
+  "elayadesign/ai-design-skills": {
+    description:
+      "ai-design-skills adalah kumpulan folder skill desain untuk agen coding. README menamai Claude Code, Cursor, Codex, Windsurf, dan alat yang membaca berkas aturan markdown. Tabel skill yang tercetak hari ini hanya satu baris.",
+    highlights: [
+      "Satu skill yang tabel README cetak: landing-page-design. Tautan redesign-skill disebut repo terpisah. Wawasan AI tidak menyalin berkas SKILL.md.",
+      "Bagian pasang README memuat perintah clone dan salin folder. Perintah itu tidak diulang di sini. Claude.ai disebut lewat unggah SKILL.md ke Project.",
+      "Lisensi MIT. API GitHub pada 25 Oktober 2026: 3.156 bintang, 222 fork, 1 isu terbuka. Bahasa di API kosong. Repo dibuat 29 Juli 2026, push terakhir 29 Juli 2026. Tidak ada rilis. Homepage di API kosong.",
+      "API languages mengembalikan objek kosong pada pembacaan yang sama. Wawasan AI tidak memasang skill ke editor.",
+    ],
+  },
+  "Zagitta/gpu-unlock": {
+    description:
+      "gpu-unlock adalah modul kernel Linux yang README-nya mengaku menggandakan laju isu FP/BF16 pada kartu Nvidia 3000 tertentu sebelum pengemudi stok menempel. Perintah make install dan suntingan grub tidak disalin.",
+    highlights: [
+      "README menulis ini bukan aplikasi UEFI dan bukan pengemudi NVIDIA yang ditambal. Mengubah kartu, firmware, atau pengemudi yang tidak kamu miliki, atau di luar syarat garansi, adalah akses tanpa hak.",
+      "Tabel GEMM 3090 Ti di README, lima sampel median, menulis FP16 87,46 menjadi 118,39 TFLOPS. API lisensi tingkat repo kosong. Folder licenses berisi GPL-2.0.txt, CMP40HX-MIT.txt, dan NVIDIA-MIT.txt. Dua penanda itu tidak disatukan.",
+      "API GitHub pada 25 Oktober 2026: 3.105 bintang, 343 fork, 54 isu terbuka, bahasa C. Repo dibuat 18 Oktober 2026, push terakhir 24 Oktober 2026. Tidak ada rilis. Homepage di API string kosong.",
+      "Tidak ada aset rilis. Wawasan AI tidak membangun modul dan tidak mengubah baris perintah kernel.",
+    ],
+  },
+  "seedds/nxnative": {
+    description:
+      "nxnative mengaku menjalankan gim Nintendo Switch milik pengguna di iPhone, iPad, dan Mac, dengan NSP jadi IPA yang tidak ditandatangani. README menulis bukan emulator dan bukan afiliasi Nintendo. Kunci dan berkas gim tidak ada di repo.",
+    highlights: [
+      "README meminta NSP milik sendiri dan prod.keys. Wawasan AI tidak menyalin skrip sideload, tidak menyalin daftar kunci, dan tidak menyalin langkah ekstraksi.",
+      "Syarat yang dicetak: iOS atau iPadOS 26 atau lebih baru, iPhone 15 Pro atau lebih baru, atau iPad M1 atau lebih baru, karena tekstur BC. Nama gim di tabel README panjang. Editorial tidak menghitung barisnya.",
+      "Lisensi MIT, ditulis C. API GitHub pada 25 Oktober 2026: 2.995 bintang, 555 fork, 40 isu terbuka. Repo dibuat 13 Oktober 2026, push terakhir 25 Oktober 2026. Tidak ada rilis. Homepage di API kosong.",
+      "Deskripsi Trendshift menulis iPhone, iPad, dan Mac. Kalimat pembuka README yang dibaca hari ini berhenti di iPhone dan iPad. Dua cakupan itu tidak disatukan. Wawasan AI tidak membangun IPA.",
+    ],
+  },
+  "ludovic111/horizon": {
+    description:
+      "Horizon adalah penulisan ulang Minecraft Java Edition 26.3 di Rust, dicek terhadap vanilla dengan 281 harness diferensial menurut README. Peluncur memakai salinan Minecraft milik pengguna. Bukan produk Mojang atau Microsoft.",
+    highlights: [
+      "README menulis tidak ada kode, aset, atau data Minecraft di repo. Syarat yang dicetak: Java Edition 26.3 yang sudah dimainkan sekali, JDK Java 25 untuk persiapan sekali, Vulkan di Linux dan Windows, atau Mac Apple Silicon.",
+      "horizon-ctl disebut CLI JSON, dan horizon-ctl mcp disebut server MCP. Masuk akun Microsoft belum ada, jadi server yang memeriksa akun tidak bisa diikuti menurut README.",
+      "Lisensi MIT, ditulis Rust. API GitHub pada 25 Oktober 2026: 1.195 bintang, 83 fork, 216 isu terbuka. Repo dibuat 3 Oktober 2026, push terakhir 25 Oktober 2026. Homepage playhorizon.dev.",
+      "Rilis v0.2.50 terbit 24 Oktober 2026 pukul 23.38 UTC. Aset horizon-windows-x64.zip berukuran 27.337.385 byte dengan 487 unduhan pada pembacaan yang sama. Wawasan AI tidak memasang peluncur.",
+    ],
+  },
+  "punitarani/fli": {
+    description:
+      "Fli adalah pustaka Python, CLI, dan server MCP untuk data Google Flights. README menulis akses API lewat rekayasa balik, bukan scraping HTML. Wawasan AI tidak menjalankan klien terhadap layanan Google.",
+    highlights: [
+      "Dua alat MCP yang tabel README cetak: search_flights dan search_dates. Parameter currency, language, dan country disebut mengalir ke curr, hl, dan gl. Perintah pasang tidak diulang di sini.",
+      "Contoh konfigurasi Claude Desktop di README memakai jalur /Users/<user>/.local/bin/fli-mcp. Itu contoh macOS di README, bukan uji di mesin editorial.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 25 Oktober 2026: 3.399 bintang, 413 fork, 22 isu terbuka. Repo dibuat 6 Januari 2025, push terakhir 20 September 2026. Homepage deepwiki.com/punitarani/fli.",
+      "Tiga rilis teratas yang API kembalikan bertag fli-js-v0.0.4 sampai v0.0.2 pada 24 Mei 2026, tanpa aset. Wawasan AI tidak memasang paket flights.",
+    ],
+  },
+  "microsoft/skill-recorder": {
+    description:
+      "Skill Recorder merekam sesi kerja di layar, lalu memakai GitHub Copilot CLI untuk menyusun niat dan langkah berurutan menjadi Skill atau Automation. README menulis rilis sumber, bukan unduhan biner di tiga tag teratas.",
+    highlights: [
+      "Sasaran utama yang dicetak: macOS. Windows 11 x64 dan ARM64 disebut didukung. Diperlukan akun GitHub dengan akses Copilot. Tidak ada pemasangan global menurut README.",
+      "Tiga rilis teratas API pada 25 Oktober 2026: v0.7.0 pada 21 September, lalu v0.6.2 dan v0.6.1 pada 16 September, semuanya tanpa aset. README meminta perintah Commit-pinned di halaman rilis terbaru, bukan templat di dokumen teknis.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 25 Oktober 2026: 4.706 bintang, 514 fork, 45 isu terbuka. Repo dibuat 29 Juli 2026, push terakhir 24 Oktober 2026. Homepage di API string kosong.",
+      "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak menjalankan pemasang sumber dan tidak merekam layar.",
+    ],
+  },
+  "cloudflare/security-audit-skill": {
+    description:
+      "security-audit-skill adalah skill agen coding untuk audit keamanan beberapa fase, dengan temuan yang disebut terverifikasi dan bisa dibaca mesin. Wawasan AI tidak menyalin berkas kelas serangan dan tidak menyalin perintah pasang.",
+    highlights: [
+      "README menulis enam fase, dari pengintaian sampai laporan netral. Putusan yang disebut: confirmed, needs_validation, dan rejected. Blog Cloudflare yang ditautkan tidak dibuka baris demi baris hari ini.",
+      "Mengarahkan skill audit ke sistem yang tidak kamu miliki atau tidak kamu izinkan adalah akses tanpa hak. Daftar berkas ATTACK-CLASSES.md dan sejenisnya tidak disalin.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub pada 25 Oktober 2026: 44.675 bintang, 2.771 fork, 86 isu terbuka. Repo dibuat 18 Juni 2026, push terakhir 14 September 2026. Tidak ada rilis. Homepage di API string kosong.",
+      "Deskripsi API sama dengan snapshot Trendshift. Wawasan AI tidak menjalankan npx skills add.",
     ],
   },
 };

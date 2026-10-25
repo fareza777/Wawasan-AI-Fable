@@ -5485,6 +5485,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-24",
     featured: false,
   },
+  {
+    slug: "minimax-m3-1-flash",
+    name: "MiniMax-M3.1-Flash",
+    tagline: "Indeks 43, $0,22 per tugas, cepat di bawah median kelas harganya",
+    tags: ["MiniMax", "Proprietary", "Reasoning", "API"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 7.8 },
+      { label: "Coding", value: 6.2 },
+      { label: "Kecepatan", value: 6.6 },
+      { label: "Harga/Performa", value: 8.2 },
+    ],
+    aa_intelligence_index: 43,
+    aa_price_input: 0.15,
+    aa_price_output: 0.6,
+    aa_synced_at: "2026-10-25",
+    summary:
+      "Artificial Analysis, dicek 25 Oktober 2026, memberi MiniMax-M3.1-Flash intelligence index 43 dan menandainya proprietary. Kartu intelijen menulis peringkat 5 dari 173. Keluaran 95,6 token per detik pada API MiniMax, di bawah median FAQ 111,3.",
+    pros: [
+      "Intelligence index 43, di atas median 13 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 25 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 5 dari 173, dengan 4 dari 4 satuan untuk intelijen",
+      "Kartu biaya: $0,15 masukan dan $0,60 keluaran per juta token, diskon cache 90 persen, $0,22 per tugas indeks, peringkat biaya 49 dari 66",
+      "Spesifikasi halaman: masukan teks dan gambar, keluaran teks, konteks 1 juta token, reasoning menyala",
+    ],
+    cons: [
+      "Keluaran 95,6 token per detik, di bawah median FAQ 111,3. Kartu kecepatan menulis peringkat 89 dari 151",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "FAQ menulis bobot tidak tersedia untuk umum dan MiniMax tidak mengungkapkan jumlah parameter",
+      "Ringkasan menyebut masukan competitively priced dan keluaran moderately priced. FAQ pada median yang sama menulis very competitive dan better than average",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 43 dengan biaya $0,22 per tugas indeks pada kartu 25 Oktober, selama tugasnya muat di masukan teks dan gambar. Jangan menempelkan 96 token per detik di ringkasan ke kolom 95,6, dan jangan menganggap bobotnya sudah bisa diunduh.",
+    body: [
+      "MiniMax-M3.1-Flash adalah model reasoning dari MiniMax yang halamannya di Artificial Analysis dibaca 25 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis Oktober 2026. FAQ memperinci tanggal rilis 19 Oktober 2026 dan menulis pembuatnya MiniMax. Spesifikasi yang terpasang: masukan teks dan gambar, keluaran teks, jendela konteks 1,0 juta token, dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 25 Oktober 2026.) Intelligence index-nya 43 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 5 dari 173 dan 4 dari 4 satuan. FAQ menaruh skor 43 jauh di atas rata-rata model pada kisaran harga yang sama, median 13. Ringkasan perbandingan memakai median 13 yang sama dan menyebut model ini amongst the leading models untuk kelas itu. Teks kelas di halaman itu mengatakan ada 173 model di kelas pembanding, yaitu model proprietary yang dibandingkan dengan model proprietary dan bobot terbuka pada kisaran harga yang sama. Caption beberapa grafik menulis 27 dari 709 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai 5 dari 173 untuk peringkat kartu, dan tidak menyamakan caption 27 dari 709 dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,15 per juta token masukan dan $0,60 per juta token keluaran, diskon cache 90 persen, biaya rata-rata $0,22 per tugas indeks, peringkat biaya 49 dari 66, dan 3 dari 4 satuan. Ringkasan menyebut masukan competitively priced terhadap median $0,24 dan keluaran moderately priced terhadap median $0,80. FAQ memakai median itu, lalu menulis very competitive untuk masukan dan better than average untuk keluaran, serta menulis angka itu berdasarkan API MiniMax. Editorial mengutip kedua set kata sifat dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $0,10 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 13 penyedia. Penyebut biaya 66 tidak sama dengan 173 model yang kartu intelijen sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya dua tulisan yang berdekatan. Kartu menulis 95,6 token per detik, peringkat 89 dari 151, dan 2 dari 4 satuan. FAQ menulis 95,6 token per detik pada API MiniMax, di bawah median 111,3. Ringkasan membulatkan menjadi 96 token per detik terhadap rata-rata 111. FAQ juga menulis waktu ke token pertama 1,32 detik, median 1,72 detik, dan menyebutnya better than average. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 1,32 detik di FAQ dengan judul bagian itu menjadi satu metrik yang sudah dicek ulang. Verbosity: kartu menulis 180 juta token keluaran, peringkat 54 dari 69, dan 4 dari 4 satuan. Ringkasan menyebut 180 juta very verbose terhadap median 100 juta. FAQ menyebut 180 juta at the higher end terhadap median 100 juta yang sama.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 43 dan biaya $0,22 per tugas indeks pada kartu 25 Oktober. Karena keluaran duduk di bawah median kelas harganya, agen yang harus mengisi layar lebih cepat dari median itu belum punya alasan kecepatan dari halaman ini. Karena FAQ menandai bobot tidak tersedia, jalur mesin sendiri belum ada pada pembacaan hari ini. Grafik halaman model masih bertuliskan tidak ada API publik, sementara FAQ menulis 13 penyedia. Pakai kartu ini untuk membandingkan indeks dan tagihan, lalu pisahkan 96 di ringkasan dari 95,6 di kartu sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/minimax-m3-1-flash",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-25",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
