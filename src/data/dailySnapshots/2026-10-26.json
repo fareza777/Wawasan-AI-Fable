@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-26T02:00:37.899Z",
+  "fetchedAt": "2026-10-26T06:45:28.290Z",
   "repos": [
     {
       "rank": 1,
@@ -20,6 +20,19 @@
     },
     {
       "rank": 2,
+      "fullName": "elayadesign/ai-design-skills",
+      "owner": "elayadesign",
+      "repo": "ai-design-skills",
+      "description": "",
+      "githubUrl": "https://github.com/elayadesign/ai-design-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/304496",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-29T06:43:16Z"
+    },
+    {
+      "rank": 3,
       "fullName": "Nutlope/hallmark",
       "owner": "Nutlope",
       "repo": "hallmark",
@@ -33,7 +46,7 @@
       "dateCreated": "2026-04-27T20:47:10Z"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "fullName": "Zagitta/gpu-unlock",
       "owner": "Zagitta",
       "repo": "gpu-unlock",
@@ -45,32 +58,7 @@
       "dateCreated": "2026-10-18T01:28:31Z"
     },
     {
-      "rank": 4,
-      "fullName": "Gathin23/cleanyourtv",
-      "owner": "Gathin23",
-      "repo": "cleanyourtv",
-      "description": "Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
-      "githubUrl": "https://github.com/Gathin23/cleanyourtv",
-      "trendshiftUrl": "https://trendshift.io/repositories/310225",
-      "language": "Java",
-      "topics": [],
-      "dateCreated": "2026-10-17T08:12:35Z"
-    },
-    {
       "rank": 5,
-      "fullName": "elayadesign/ai-design-skills",
-      "owner": "elayadesign",
-      "repo": "ai-design-skills",
-      "description": "",
-      "githubUrl": "https://github.com/elayadesign/ai-design-skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/304496",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-07-29T06:43:16Z"
-    },
-    {
-      "rank": 6,
       "fullName": "rddmwmddr/android-ad-cleaner",
       "owner": "rddmwmddr",
       "repo": "android-ad-cleaner",
@@ -80,6 +68,18 @@
       "language": "Python",
       "topics": [],
       "dateCreated": "2026-10-24T05:35:47Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "JustAResearcher/gpu-unlock-ada",
+      "owner": "JustAResearcher",
+      "repo": "gpu-unlock-ada",
+      "description": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
+      "githubUrl": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "trendshiftUrl": "https://trendshift.io/repositories/318875",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-23T21:00:53Z"
     },
     {
       "rank": 7,
@@ -97,30 +97,6 @@
     },
     {
       "rank": 8,
-      "fullName": "morluto/rea",
-      "owner": "morluto",
-      "repo": "rea",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "githubUrl": "https://github.com/morluto/rea",
-      "trendshiftUrl": "https://trendshift.io/repositories/82054",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-04-14T00:51:32Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "apple/security-pcc",
-      "owner": "apple",
-      "repo": "security-pcc",
-      "description": "Private Cloud Compute (PCC)",
-      "githubUrl": "https://github.com/apple/security-pcc",
-      "trendshiftUrl": "https://trendshift.io/repositories/318999",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2024-10-24T17:02:49Z"
-    },
-    {
-      "rank": 10,
       "fullName": "AgriciDaniel/claude-seo",
       "owner": "AgriciDaniel",
       "repo": "claude-seo",
@@ -130,6 +106,32 @@
       "language": "Python",
       "topics": [],
       "dateCreated": "2026-02-07T08:17:38Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "makecindy/cindy",
+      "owner": "makecindy",
+      "repo": "cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "githubUrl": "https://github.com/makecindy/cindy",
+      "trendshiftUrl": "https://trendshift.io/repositories/93771",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-07-22T17:49:34Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "lyramakesmusic/neuron-explorer",
+      "owner": "lyramakesmusic",
+      "repo": "neuron-explorer",
+      "description": "Steering-first neuron explorer for Qwen3.5-4B: push every MLP neuron, keep every rollout, browse the results",
+      "githubUrl": "https://github.com/lyramakesmusic/neuron-explorer",
+      "trendshiftUrl": "https://trendshift.io/repositories/319815",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-21T04:09:05Z"
     }
   ]
 }
