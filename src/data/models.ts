@@ -5529,6 +5529,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-25",
     featured: false,
   },
+  {
+    slug: "gemini-3-8-flash-high",
+    name: "Gemini 3.8 Flash (High)",
+    tagline: "Indeks 41, $1,24 per tugas, cepat di atas median, TTFT 27,26 detik",
+    tags: ["Google", "Proprietary", "Reasoning", "API"],
+    score: 7.5,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 7.8 },
+      { label: "Harga/Performa", value: 7.6 },
+    ],
+    aa_intelligence_index: 41,
+    aa_price_input: 0.75,
+    aa_price_output: 3.75,
+    aa_synced_at: "2026-10-26",
+    summary:
+      "Artificial Analysis, dicek 26 Oktober 2026, memberi Gemini 3.8 Flash (High) intelligence index 41 dan menandainya proprietary. Kartu intelijen menulis peringkat 52 dari 215. Keluaran 136,9 token per detik pada API Google, di atas median FAQ 82,3.",
+    pros: [
+      "Intelligence index 41, di atas median 27 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 26 Oktober 2026)",
+      "Kartu intelijen menulis peringkat 52 dari 215, dengan 4 dari 4 satuan untuk intelijen",
+      "Kartu biaya: $0,75 masukan dan $3,75 keluaran per juta token, diskon cache 90 persen, $1,24 per tugas indeks, peringkat biaya 63 dari 113",
+      "Spesifikasi halaman: masukan teks, gambar, ucapan, dan video; keluaran teks; konteks 1 juta token; reasoning menyala",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 27,26 detik, median 3,90 detik, at the higher end",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "FAQ menulis bobot tidak tersedia untuk umum dan Google tidak mengungkapkan jumlah parameter",
+      "Ringkasan menyebut masukan dan keluaran competitively priced. FAQ pada median yang sama menulis very competitive",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 41 dengan biaya $1,24 per tugas indeks pada kartu 26 Oktober, selama tugasnya muat di masukan teks, gambar, ucapan, atau video. Jangan menempelkan 137 token per detik di ringkasan ke kolom 136,9, dan jangan menganggap TTFT 27,26 detik sudah setara model flash yang menjawab di bawah empat detik.",
+    body: [
+      "Gemini 3.8 Flash (High) adalah model reasoning dari Google yang halamannya di Artificial Analysis dibaca 26 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 2 September 2026 dan menulis pembuatnya Google. Spesifikasi yang terpasang: masukan teks, gambar, ucapan, dan video; keluaran teks; jendela konteks 1,0 juta token; dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 26 Oktober 2026.) Intelligence index-nya 41 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 52 dari 215 dan 4 dari 4 satuan. FAQ menaruh skor 41 jauh di atas rata-rata model pada kisaran harga yang sama, median 27. Ringkasan perbandingan memakai median 27 yang sama dan menyebut model ini amongst the leading models untuk kelas itu. Teks kelas di halaman itu mengatakan ada 217 model di kelas pembanding. Caption beberapa grafik menulis 27 dari 709 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai 52 dari 215 untuk peringkat kartu, dan tidak menyamakan caption 27 dari 709 atau angka 217 di teks kelas dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,75 per juta token masukan dan $3,75 per juta token keluaran, diskon cache 90 persen, biaya rata-rata $1,24 per tugas indeks, peringkat biaya 63 dari 113, dan 3 dari 4 satuan. Ringkasan menyebut kedua harga itu competitively priced, masukan terhadap median $2,00 dan keluaran terhadap median $10,00. FAQ memakai median itu, lalu menulis very competitive untuk keduanya, serta menulis angka itu berdasarkan API Google. Editorial mengutip kedua set kata sifat dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $0,58 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 4 penyedia. Penyebut biaya 113 tidak sama dengan 215 model yang kartu intelijen sebut, dan tidak sama dengan 217 yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya dua tulisan yang berdekatan. Kartu menulis 136,9 token per detik, peringkat 33 dari 186, dan 4 dari 4 satuan. FAQ menulis 136,9 token per detik pada API Google, di atas median 82,3. Ringkasan membulatkan menjadi 137 token per detik terhadap rata-rata 82, dan menyebutnya notably fast. FAQ juga menulis waktu ke token pertama 27,26 detik, median 3,90 detik, dan menyebutnya at the higher end. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 27,26 detik di FAQ dengan judul bagian itu menjadi satu metrik yang sudah dicek ulang. Verbosity: kartu menulis 170 juta token keluaran, peringkat 100 dari 116, dan 4 dari 4 satuan. Ringkasan menyebut 170 juta very verbose terhadap median 87 juta. FAQ menyebut 170 juta at the higher end terhadap median 87 juta yang sama.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 41, keluaran di atas median kelas harganya, dan biaya $1,24 per tugas indeks pada kartu 26 Oktober. Karena TTFT duduk jauh di atas median, agen yang harus menjawab di bawah empat detik belum punya alasan latensi dari halaman ini. Karena FAQ menandai bobot tidak tersedia, jalur mesin sendiri belum ada pada pembacaan hari ini. Grafik halaman model masih bertuliskan tidak ada API publik, sementara FAQ menulis 4 penyedia. Pakai kartu ini untuk membandingkan indeks dan tagihan, lalu pisahkan 137 di ringkasan dari 136,9 di kartu sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/gemini-3-8-flash",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-26",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

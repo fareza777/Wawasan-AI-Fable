@@ -4900,6 +4900,46 @@ export const stacks: Review[] = [
     date: "2026-10-25",
     featured: false,
   },
+  {
+    slug: "thinkrail",
+    name: "ThinkRail",
+    tagline: "IDE agen JetBrains di sekitar pi, rilisnya masih nightly",
+    tags: ["Open Source", "IDE", "Agen", "JetBrains"],
+    score: 7.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.6 },
+      { label: "Kualitas Output", value: 7.0 },
+      { label: "Pengalaman Pengguna", value: 7.2 },
+      { label: "Ekosistem & Integrasi", value: 7.6 },
+      { label: "Harga", value: 7.4 },
+    ],
+    summary:
+      "ThinkRail duduk di peringkat tujuh tren harian 26 Oktober 2026. README-nya membungkus agen coding pi dengan editor, git worktree, dan SPEC.md. Tiga rilis teratas yang API kembalikan adalah prarilis nightly.",
+    pros: [
+      "README menulis tidak ada akun ThinkRail sendiri. Masuk disebut lewat JetBrains AI atau kredensial penyedia pi",
+      "Analitik disebut terikat ID pemasangan acak, tanpa prompt, kode, atau kredensial",
+      "Lisensi Apache-2.0. API GitHub pada 26 Oktober 2026: 1.812 bintang dan 105 fork",
+      "Homepage yang terpasang di API adalah thinkrail.ai",
+    ],
+    cons: [
+      "Tiga rilis teratas yang API kembalikan bertag v0.3.0-nightly.6 sampai nightly.4, semuanya prarilis",
+      "README menulis tidak ada build desktop Intel untuk macOS. Artefak Linux disebut tidak ditandatangani",
+      "DMG yang ditandatangani dan dinotarisasi disebut membutuhkan saluran layanan JetBrains. Paket lama bisa masih ditahan Gatekeeper",
+      "Wawasan AI tidak memasang nightly dan tidak membuka sesi pi",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai IDE inkubator yang menyatukan worktree dan agen pi, asal yang dipasang bukan nightly pertama yang kebetulan di puncak API. Jangan menganggap 1.812 bintang sebagai uji bahwa saluran stable sudah terbit.",
+    body: [
+      "ThinkRail dibuat di repositori JetBrains/thinkrail. README yang dicek 26 Oktober 2026 mendeskripsikan antarmuka di sekitar paket npm @earendil-works/pi-coding-agent, dengan workspace terpisah sebagai git worktree, berkas SPEC.md, dan skill agen yang dibaca di tempat. API GitHub hari yang sama mencatat 1.812 bintang, 105 fork, 203 isu terbuka, bahasa TypeScript, dan lisensi Apache-2.0. Repo dibuat 8 Juli 2026. Push terakhir 26 Oktober 2026. Homepage di API adalah thinkrail.ai. Trendshift menaruhnya di peringkat tujuh. Lencana README menulis proyek inkubator JetBrains. Wawasan AI tidak menjalankan bun install dan tidak membuka thinkrail.",
+      "Yang paling perlu dibaca sebelum mengira ini IDE stabil adalah daftar rilis. Tiga tag teratas yang API kembalikan pada 26 Oktober adalah v0.3.0-nightly.6 pada 25 Oktober, lalu nightly.5 dan nightly.4, semuanya prarilis. Aset thinkrail-desktop-darwin-arm64.dmg pada nightly.6 berukuran 66.703.083 byte dengan 27 unduhan. README memisahkan pemasang desktop dan CLI, menulis SHA256SUMS di halaman rilis, dan menulis macOS Intel tidak punya build Electrobun. Linux x64 dan ARM64 disebut tidak ditandatangani. Windows CLI dan pemasang desktop disebut ditandatangani JetBrains. Perintah unduh lewat pipa skrip tidak diulang di sini.",
+      "Alur yang README cetak: beberapa sesi pi per workspace, rencana bersama, komentar tinjauan, MCP dari mcp.json milik pi, dan perpanjangan yang bisa dimatikan di Settings. ThinkRail disebut tidak merakit prompt di belakang pengguna. Analitik: peluncuran, pembuatan obrolan, pengiriman pesan, dan sambungan penyedia, terikat ID pemasangan acak. Laporan galat disebut tanpa pesan galat, jalur berkas, atau isi proyek. Sakelar Share additional usage data disebut ditawarkan saat peluncuran pertama.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah kode Apache-2.0 untuk menyetir pi dari IDE yang punya worktree, tanpa akun produk baru di README, selama kredensial penyedia sudah ada. Yang belum berguna sebagai jalur kantor adalah nightly 0.3.0 dan Linux yang tidak ditandatangani. Pasang dulu hanya setelah saluran stable atau nightly yang dipilih dibaca di SHA256SUMS, dan jangan menganggap 203 isu terbuka sebagai daftar fitur yang sudah selesai. Seribu delapan ratus bintang tidak mengubah kalimat inkubator di lencana.",
+    ],
+    link: "https://github.com/JetBrains/thinkrail",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-26",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

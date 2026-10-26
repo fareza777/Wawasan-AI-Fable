@@ -69,6 +69,8 @@ const SLUG_ICONS: Record<string, string> = {
   "kimi-k3-1-pro": "https://www.google.com/s2/favicons?domain=kimi.com&sz=128",
   "skill-recorder": "https://github.com/microsoft.png",
   "minimax-m3-1-flash": "https://www.google.com/s2/favicons?domain=minimax.io&sz=128",
+  thinkrail: "https://github.com/JetBrains.png",
+  "gemini-3-8-flash-high": "https://cdn.simpleicons.org/google",
 };
 
 function githubOrgIcon(link: string): string | null {

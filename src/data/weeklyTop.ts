@@ -1125,12 +1125,12 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                         },
                         "Nutlope/hallmark": {
                           description:
-                            "Design skill anti-AI-slop dari Together AI untuk Claude Code, Cursor, dan Codex — kasih coding agent 20 tema, 57 slop-test gate, dan 4 verb agar UI yang di-generate punya karakter, bukan template default.",
+                            "Hallmark adalah skill desain dari Together AI yang README-nya menolak tampilan buatan AI. Katalog yang dicetak hari ini 48 tema. Perintah pasang tidak disalin.",
                           highlights: [
-                            "Skill dari tim Together AI yang menolak output 'AI banget': agent pilih makrostruktur berdasarkan brief, pilih satu dari 20 tema, lalu jalankan 57 slop-test gate plus self-critique sebelum emit — hasilnya dua halaman untuk brief berbeda tidak terasa warna-swap dari template yang sama.",
-                            "Empat verb praktis: default (bangun UI baru), `hallmark audit` (skor kode existing tanpa edit), `hallmark redesign` (buang struktur, rebuild dengan fingerprint baru), dan `hallmark study` (ekstrak DNA desain dari URL/screenshot, tolak pixel-clone dan template berbayar).",
-                            "Mode 'Custom' untuk brief yang tidak masuk katalog: agent bikin palette, tipografi, dan layout tailor-made — aturan slop-test sama, tapi tanpa template di belakang, sehingga setiap output punya sidik jari desain sendiri.",
-                            "Open source dan kompatibel Claude Code, Cursor, Codex — relevan untuk founder, designer, atau siapa saja yang muak lihat output AI agent terasa generik dan ingin workflow desain dengan 'taste' yang konsisten.",
+                            "README menamai Claude Code, Codex, Cursor, dan OpenCode. Gerbang Floor, Reflex, dan Finish disebut terpisah. Mode Custom disebut membuang tema. Wawasan AI tidak menjalankan sloplint.",
+                            "Perintah redesign dan audit disebut menjaga isi dan kabel halaman. Pustaka foto disebut 755 foto berlisensi terbuka di Wikimedia, tanpa berkas gambar di repo. Setiap foto disebut tetap pada lisensinya sendiri.",
+                            "Lisensi MIT, ditulis CSS. API GitHub pada 26 Oktober 2026: 33.916 bintang, 1.771 fork, 58 isu terbuka. Repo dibuat 27 April 2026, push terakhir 22 Oktober 2026. Homepage usehallmark.com. Tidak ada rilis.",
+                            "Angka 20 tema di narasi lama tidak dipakai lagi. README yang dibaca hari ini menulis forty-eight themes.",
                                                       ],
                                                     },
                                                     "1c7/chinese-independent-developer": {
@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 25 Oktober 2026: 378.997 bintang, 94.703 fork, dan 1.141 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.7.0 terbit 18 Oktober 2026. Push terakhir 25 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 26 Oktober 2026: 384.986 bintang, 96.392 fork, dan 1.092 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.8.0 terbit 25 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Push terakhir 25 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3484,7 +3484,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README membuka dengan jembatan debug yang sama dengan ponsel Android, lalu menyalakan debugging dan mengizinkan komputer sekali. Teks alternatif banner menulis tanpa root, tanpa kabel, dan tidak ada yang dicopot. Wawasan AI tidak menyalin perintahnya.",
       "Teks alternatif kartu pers di README menulis 260 model TV, 77 merek, 25 bahasa, dan peluncur 477 KB. Itu teks pada gambar, bukan hitungan ulang editorial. Daftar perangkat di README panjang. Editorial tidak menghitung barisnya.",
       "Bagian Licence README menulis MIT, dan fon Outfit disebut SIL Open Font License. API GitHub pada 24 Oktober 2026 mengembalikan SPDX NOASSERTION. Berkas LICENSE yang dibaca hari ini berjudul MIT License, hak cipta 2026 Gathin. Dua penanda API dan berkas itu dibiarkan berdampingan.",
-      "API yang sama pada 25 Oktober 2026: 31.924 bintang, 3.714 fork, 204 isu terbuka, bahasa Java. Repo dibuat 17 Oktober 2026, push terakhir 24 Oktober 2026. Homepage cleanyour.tv. Rilis v2.7.0 terbit 23 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Wawasan AI tidak memasang peluncur.",
+      "API yang sama pada 26 Oktober 2026: 35.381 bintang, 4.209 fork, 239 isu terbuka, bahasa Java. Repo dibuat 17 Oktober 2026, push terakhir 25 Oktober 2026. Homepage cleanyour.tv. Deskripsi API hari ini menulis Wi-Fi. Snapshot Trendshift hari ini menulis ADB. Rilis v3.0.0 terbit 25 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Wawasan AI tidak memasang peluncur.",
     ],
   },
   "xevrion/hatchzip": {
@@ -3575,6 +3575,56 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Tiga rilis teratas API pada 25 Oktober 2026: v0.7.0 pada 21 September, lalu v0.6.2 dan v0.6.1 pada 16 September, semuanya tanpa aset. README meminta perintah Commit-pinned di halaman rilis terbaru, bukan templat di dokumen teknis.",
       "Lisensi MIT, ditulis TypeScript. API GitHub pada 25 Oktober 2026: 4.706 bintang, 514 fork, 45 isu terbuka. Repo dibuat 29 Juli 2026, push terakhir 24 Oktober 2026. Homepage di API string kosong.",
       "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak menjalankan pemasang sumber dan tidak merekam layar.",
+    ],
+  },
+  "designfuchen/word-atlas": {
+    description:
+      "Word Atlas, atau 词光, adalah aplikasi web untuk 7.298 kata IELTS dengan ilustrasi, audio Inggris dan Amerika, serta jadwal FSRS. README menulis tanpa akun. Dataset disebut CC BY 4.0. API lisensi repo NOASSERTION.",
+    highlights: [
+      "Lencana README menulis kode MIT dan konten CC BY 4.0. Berkas LICENSE yang dibaca hari ini berjudul MIT License, hak cipta 2026 Word Atlas contributors. Dua penanda API dan berkas itu dibiarkan berdampingan.",
+      "Tabel README: 7.298 kata, 7.298 ilustrasi, 14.596 contoh, 22.905 rekaman. Suara kata disebut ElevenLabs. Penulis menulis isi tidak disunting manusia satu per satu, dan ini bukan daftar resmi IELTS.",
+      "API GitHub pada 26 Oktober 2026: 638 bintang, 169 fork, 2 isu terbuka, bahasa TypeScript. Repo dibuat 25 Oktober 2026, push terakhir 25 Oktober 2026. Homepage 0xlei.tech/words/. Tidak ada rilis.",
+      "Perintah npm tidak diulang di sini. Wawasan AI tidak menjalankan server lokal dan tidak menghitung ulang berkas di data/.",
+    ],
+  },
+  "rddmwmddr/android-ad-cleaner": {
+    description:
+      "android-ad-cleaner mengaku mematikan iklan, hot search, dan push pemasaran pada ponsel Android merek tertentu tanpa root. README menulis ADB, bukan HarmonyOS lewat HDC. Perintah pasang dan skrip mesin tidak disalin.",
+    highlights: [
+      "Mengubah pengaturan, paket, atau layanan di perangkat yang tidak kamu miliki, atau di luar izin pemilik, adalah akses tanpa hak. README menulis cadangan sebelum mengubah, dan hasil mengikuti ponsel pengguna.",
+      "Rilis v0.2.3 terbit 25 Oktober 2026. Aset yang API catat termasuk AndroidAdCleaner-0.2.3-windows-portable.zip sebesar 44.808.244 byte dengan 937 unduhan, plus pemasang Windows 30.116.342 byte dengan 864 unduhan, pada pembacaan 26 Oktober.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 26 Oktober 2026: 865 bintang, 68 fork, 25 isu terbuka. Repo dibuat 24 Oktober 2026, push terakhir 25 Oktober 2026. Homepage di API kosong. README menautkan rddmwmddr.github.io/android-ad-cleaner/.",
+      "Catatan README 26 Oktober menulis sumber di cabang belum masuk paket 0.2.3. Wawasan AI tidak menghubungkan ponsel dan tidak menjalankan klien.",
+    ],
+  },
+  "JetBrains/thinkrail": {
+    description:
+      "ThinkRail adalah IDE agen dari JetBrains di sekitar agen coding pi, dengan workspace git worktree. README menulis proyek inkubator. Tiga rilis teratas yang API kembalikan adalah nightly.",
+    highlights: [
+      "README menulis desktop native atau CLI yang membuka aplikasi di peramban. Tidak ada akun ThinkRail sendiri. Masuk disebut lewat JetBrains AI atau kredensial penyedia pi.",
+      "Analitik disebut memakai ID pemasangan acak. Prompt, kode, dan kredensial disebut tidak ikut. DMG macOS Intel tidak ada. Linux disebut tidak ditandatangani.",
+      "Lisensi Apache-2.0, ditulis TypeScript. API GitHub pada 26 Oktober 2026: 1.812 bintang, 105 fork, 203 isu terbuka. Repo dibuat 8 Juli 2026, push terakhir 26 Oktober 2026. Homepage thinkrail.ai.",
+      "Tag v0.3.0-nightly.6 terbit 25 Oktober 2026 dan prarilis. Aset thinkrail-desktop-darwin-arm64.dmg berukuran 66.703.083 byte dengan 27 unduhan pada pembacaan yang sama. Wawasan AI tidak memasang nightly.",
+    ],
+  },
+  "apple/security-pcc": {
+    description:
+      "security-pcc adalah kode sumber yang README-nya menyertai Panduan Keamanan Private Cloud Compute Apple, untuk verifikasi mandiri, bukan produk yang dijalankan sebagai layanan.",
+    highlights: [
+      "Berkas LICENSE berjudul PRIVATE CLOUD COMPUTE SOURCE CODE INTERNAL USE LICENSE AGREEMENT, Apple Inc., EA1937, 10/02/2024. Lisensi terbatas 90 hari, satu komputer bermerek Apple, tanpa redistribusi. API SPDX NOASSERTION.",
+      "README menulis kontribusi untuk riset keamanan. Pelaporan isu keamanan diarahkan ke halaman dukungan Apple, bukan ke daftar fitur produk.",
+      "API GitHub pada 26 Oktober 2026: 1.187 bintang, 127 fork, 0 isu terbuka, bahasa Swift. Repo dibuat 24 Oktober 2024, push terakhir 23 Oktober 2026. Homepage security.apple.com/documentation/private-cloud-compute/. Tidak ada rilis.",
+      "Wawasan AI tidak mengompilasi komponen PCC dan tidak mengklaim audit keamanan dari pembacaan README.",
+    ],
+  },
+  "AgriciDaniel/claude-seo": {
+    description:
+      "Claude SEO adalah plugin SEO untuk Claude Code. README menulis 26 sub-skill dan 19 agen. Tiga rilis teratas di API tidak membawa aset.",
+    highlights: [
+      "Syarat yang dicetak: Claude Code 1.0.33 atau lebih baru, Python 3.11 sampai 3.14. FAQ menulis halaman dan data audit dikirim ke Claude seperti pekerjaan Claude Code lain.",
+      "Tabel harga di README memakai angka pasar khas untuk perbandingan, dengan catatan angka pembaca bisa berbeda. Editorial tidak memakai tabel itu sebagai tarif Indonesia.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 26 Oktober 2026: 20.959 bintang, 2.959 fork, 52 isu terbuka. Repo dibuat 7 Februari 2026, push terakhir 22 Oktober 2026. Homepage API: skool.com/ai-marketing-hub-pro.",
+      "Rilis v2.5.0 terbit 22 Oktober 2026, tanpa aset. Perintah plugin tidak diulang di sini. Wawasan AI tidak menjalankan /seo audit.",
     ],
   },
 };

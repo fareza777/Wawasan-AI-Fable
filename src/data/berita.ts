@@ -5624,6 +5624,58 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "detik-0615-karhutla-tanpa-peta-jalan",
+    title: "detikInet Pukul 06.15: Karhutla, Tanpa Peta Jalan",
+    excerpt:
+      "Halaman detikInet pada Senin 26 Oktober pukul 06.15 WIB mengulang klarifikasi Komdigi soal Meta AI dan karhutla. Alfons ada. Surat Edaran 9/2023 dan peta jalan 2026–2029 tidak ikut.",
+    category: "Analisis",
+    date: "2026-10-26",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Senin 26 Oktober 2026 pukul 06.15 WIB, detikInet menurunkan Komdigi Minta Platform Buka-bukaan soal Konten Karhutla yang Dibatasi. Penulis Agus Tri Haryanto. Dateline Jakarta. Foto yang tercetak Rifkianto Nugroho/detikFoto. Tubuhnya membuka dengan desakan Kementerian Komunikasi dan Digital agar platform lebih transparan dalam mengelola algoritma, memoderasi konten, hingga menggunakan kecerdasan artifisial.",
+          "Yang dibandingkan pada Senin pagi ini adalah halaman detik yang baru terbit, kawat ANTARA Jumat 23 Oktober pukul 17.41 WIB, dan laporan kumparanTEKNO Minggu 25 Oktober pukul 10.45 WIB. Acara atau keterangan yang disandarkan tetap Jumat. Jadi yang baru adalah teks detik, bukan tanggal klarifikasi.",
+        ],
+      },
+      {
+        heading: "Yang halaman 06.15 cetak",
+        paragraphs: [
+          "Kutipan Mediodecci Lustarini, Sekretaris Direktorat Jenderal Pengawasan Ruang Digital Kemkomdigi, sama arahnya dengan kawat Jumat: prinsip moderasi bukan pada akunnya, melainkan pada konten yang disebarkan. Kutipan kritik: kritik terhadap pemerintah merupakan bagian dari kebebasan berpendapat dan tidak boleh diperlakukan sebagai pelanggaran hanya karena berbeda pandangan. Informasi karhutla dari masyarakat disebut sangat penting sebagai masukan lapangan. Kemkomdigi disebut tidak pernah meminta platform menurunkan atau membatasi konten mengenai karhutla.",
+          "Bagian Meta AI: Komdigi telah meminta klarifikasi kepada Meta. Jawaban chatbot disebut tidak bisa langsung dianggap pernyataan resmi perusahaan, dan tidak cukup untuk membuktikan instruksi pemerintah tanpa dokumen atau konfirmasi. Fenomena yang dinamai: halusinasi AI. Ajakan yang tercetak: trust but verify. Nama model di luar Meta AI tidak ada.",
+        ],
+      },
+      {
+        heading: "Alfons, dan yang kumparan Minggu sudah bawa",
+        paragraphs: [
+          "detik menulis Alfons Tanujaya, pakar keamanan siber. Kutipan yang tercetak: dugaan penggunaan bot untuk membentuk opini harus diperiksa secara objektif. Arah dukungan suatu akun tidak cukup untuk membuktikan adanya manipulasi. Kalimat penutupnya: Justru harusnya pemerintah terbuka terhadap kritik dan diberikan informasi. Malah harusnya berterima kasih. Gaya tulisan rapi, bahasa seragam, atau frekuensi unggahan yang tinggi disebut belum cukup untuk memastikan akun dijalankan AI.",
+          "kumparanTEKNO, Komdigi Klarifikasi ke Meta soal Konten Karhutla: Jawaban AI Tak Selalu Benar, 25 Oktober 2026 pukul 10.45 WIB, waktu baca 3 menit. Foto logo Komdigi: Muhammad Fikrie/kumparan. Foto Meta: Carlos Barria/Reuters. Keterangan pers disebut di situs Komdigi, Jumat (23/10). Bagian Rencana Pemerintah Atur Etika AI di kumparan menamai Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial, plus rancangan Peraturan Presiden tentang Etika AI dan Peta Jalan AI Nasional 2026–2029. Halaman detik yang dibaca hari ini tidak memuat nomor surat edaran dan tidak memuat peta jalan.",
+        ],
+      },
+      {
+        heading: "Yang kawat 17.41 sudah tulis pada Jumat",
+        paragraphs: [
+          "ANTARA, Kemkomdigi minta transparansi AI & algoritma lindungi hak publik, 23 Oktober 2026 pukul 17.41 WIB, pewarta Livia Kristianti, editor Mahmudah, waktu baca 5 menit. Halaman itu sudah menaruh Meta AI, halusinasi AI, Alfons, SE 9/2023, dan rancangan perpres serta peta jalan 2026–2029. Editorial 24 Oktober di situs ini sudah membandingkannya dengan halaman Inggris ANTARA pukul 21.55 GMT+7.",
+          "Yang detik tambahkan pada Senin adalah stempel 06.15 dan foto karhutla di Kuala Kapuas pada tautan gambar, plus kalimat Malah harusnya berterima kasih yang kawat Jumat yang dibaca ulang tidak memakai pada kutipan Alfons di artikel 24 Oktober. Yang detik tidak bawa, dan kumparan serta ANTARA bawa, adalah nomor surat edaran dan tahun peta jalan.",
+        ],
+      },
+      {
+        heading: "Apa yang bisa dibawa tim di Indonesia",
+        paragraphs: [
+          "Pada Senin pagi, teks baru adalah detikInet pukul 06.15. Isinya mengikuti rangkaian kawat Jumat untuk Meta, karhutla, dan prinsip moderasi pada konten. Tim yang mengutip SE 9/2023 atau Peta Jalan AI Nasional 2026–2029 perlu menempelkannya pada ANTARA 17.41 atau kumparan 10.45. Halaman detik yang dibaca hari ini tidak memakainya.",
+          "Tidak ada tanggal Meta membalas klarifikasi, tidak ada cuplikan percakapan Meta AI, dan tidak ada nama model lain. Wawasan AI tidak membuka situs Komdigi yang kumparan sandarkan, jadi naskah siaran kementerian tidak dikutip dari portal. Percakapan Meta AI tidak disalin dari produknya.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 26 Oktober, yang baru di detikInet adalah halaman pukul 06.15 tentang keterangan yang ANTARA sudah tulis pada 23 Oktober dan yang kumparan tulis pada 25 Oktober. Yang tidak ada di detik, dan ada di kumparan serta ANTARA, adalah surat edaran 2023 dan peta jalan 2026–2029. Yang ada di detik dan kumparan, dan yang artikel 24 Oktober sudah catat dari kawat Indonesia, adalah Alfons.",
+          "Catatan editorial: artikel ini disusun dari halaman detikInet, Senin 26 Oktober 2026 pukul 06.15 WIB, penulis Agus Tri Haryanto; dari laporan kumparanTEKNO, 25 Oktober 2026 pukul 10.45 WIB; serta dari laporan ANTARA, 23 Oktober 2026 pukul 17.41 WIB, pewarta Livia Kristianti dan editor Mahmudah. Surat Edaran Nomor 9 Tahun 2023 dan draf Peraturan Presiden tidak dibuka. Percakapan Meta AI tidak disalin dari produknya.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
