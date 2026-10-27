@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-27T02:00:39.870Z",
+  "fetchedAt": "2026-10-27T06:39:08.174Z",
   "repos": [
     {
       "rank": 1,
@@ -20,6 +20,44 @@
     },
     {
       "rank": 2,
+      "fullName": "alchaincyf/huashu-design",
+      "owner": "alchaincyf",
+      "repo": "huashu-design",
+      "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
+      "githubUrl": "https://github.com/alchaincyf/huashu-design",
+      "trendshiftUrl": "https://trendshift.io/repositories/26308",
+      "language": "HTML",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-04-19T14:42:06Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "rddmwmddr/android-ad-cleaner",
+      "owner": "rddmwmddr",
+      "repo": "android-ad-cleaner",
+      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "githubUrl": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "trendshiftUrl": "https://trendshift.io/repositories/318388",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-24T05:35:47Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "HKUDS/DeepTutor",
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "githubUrl": "https://github.com/HKUDS/DeepTutor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17099",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-12-28T15:35:54Z"
+    },
+    {
+      "rank": 5,
       "fullName": "Nutlope/hallmark",
       "owner": "Nutlope",
       "repo": "hallmark",
@@ -33,19 +71,7 @@
       "dateCreated": "2026-04-27T20:47:10Z"
     },
     {
-      "rank": 3,
-      "fullName": "current/deadcell-framework",
-      "owner": "current",
-      "repo": "deadcell-framework",
-      "description": "rebuilt imgui render framework with a focus on ui",
-      "githubUrl": "https://github.com/current/deadcell-framework",
-      "trendshiftUrl": "https://trendshift.io/repositories/318637",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2023-12-01T23:46:04Z"
-    },
-    {
-      "rank": 4,
+      "rank": 6,
       "fullName": "KnifeLemon/Filee",
       "owner": "KnifeLemon",
       "repo": "Filee",
@@ -57,19 +83,19 @@
       "dateCreated": "2026-09-29T20:05:15Z"
     },
     {
-      "rank": 5,
-      "fullName": "HKUDS/DeepTutor",
-      "owner": "HKUDS",
-      "repo": "DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-      "githubUrl": "https://github.com/HKUDS/DeepTutor",
-      "trendshiftUrl": "https://trendshift.io/repositories/17099",
-      "language": "Python",
+      "rank": 7,
+      "fullName": "indexable-inc/blaze",
+      "owner": "indexable-inc",
+      "repo": "blaze",
+      "description": "Rust compiler daemon on rust-analyzer: fast incremental cargo builds and live edits to running programs. Try: nix run github:indexable-inc/ra-jit",
+      "githubUrl": "https://github.com/indexable-inc/blaze",
+      "trendshiftUrl": "https://trendshift.io/repositories/312802",
+      "language": "Rust",
       "topics": [],
-      "dateCreated": "2025-12-28T15:35:54Z"
+      "dateCreated": "2026-10-19T23:31:09Z"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "fullName": "seedds/nxnative",
       "owner": "seedds",
       "repo": "nxnative",
@@ -81,31 +107,19 @@
       "dateCreated": "2026-10-13T05:20:14Z"
     },
     {
-      "rank": 7,
-      "fullName": "morluto/rea",
-      "owner": "morluto",
-      "repo": "rea",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "githubUrl": "https://github.com/morluto/rea",
-      "trendshiftUrl": "https://trendshift.io/repositories/82054",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-04-14T00:51:32Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "ZiChuanLan/agent-purge",
-      "owner": "ZiChuanLan",
-      "repo": "agent-purge",
-      "description": "One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode, grok, omp, hermes, pi, zcode - with a local web console.",
-      "githubUrl": "https://github.com/ZiChuanLan/agent-purge",
-      "trendshiftUrl": "https://trendshift.io/repositories/321425",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2026-10-25T06:06:02Z"
-    },
-    {
       "rank": 9,
+      "fullName": "Panniantong/Agent-Reach",
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "githubUrl": "https://github.com/Panniantong/Agent-Reach",
+      "trendshiftUrl": "https://trendshift.io/repositories/24387",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-02-24T02:10:24Z"
+    },
+    {
+      "rank": 10,
       "fullName": "TauricResearch/TradingAgents",
       "owner": "TauricResearch",
       "repo": "TradingAgents",
@@ -117,20 +131,6 @@
         "AI agent"
       ],
       "dateCreated": "2024-12-28T03:31:08Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "pbakaus/impeccable",
-      "owner": "pbakaus",
-      "repo": "impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "githubUrl": "https://github.com/pbakaus/impeccable",
-      "trendshiftUrl": "https://trendshift.io/repositories/22581",
-      "language": "Rust",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2025-11-16T01:52:04Z"
     }
   ]
 }
