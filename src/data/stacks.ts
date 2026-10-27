@@ -4940,6 +4940,46 @@ export const stacks: Review[] = [
     date: "2026-10-26",
     featured: false,
   },
+  {
+    slug: "impeccable",
+    name: "Impeccable",
+    tagline: "Skill desain frontend, 24 perintah, detektor tanpa LLM",
+    tags: ["Open Source", "Desain", "Skill", "Frontend"],
+    score: 7.8,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 7.6 },
+      { label: "Ekosistem & Integrasi", value: 7.9 },
+      { label: "Harga", value: 8.2 },
+    ],
+    summary:
+      "Impeccable duduk di peringkat sepuluh tren harian 27 Oktober 2026. README-nya menulis satu skill, 24 perintah slash, 62 aturan detektor deterministik, dan mode live di browser. Tiga rilis teratas pada 26 Oktober memisahkan skill, engine, dan CLI.",
+    pros: [
+      "README menulis /impeccable init menulis PRODUCT.md agar perintah berikutnya punya konteks produk, bukan hanya gaya visual",
+      "CLI dan ekstensi browser menjalankan 62 aturan detektor tanpa LLM dan tanpa kunci API menurut README",
+      "Lisensi Apache-2.0. API GitHub pada 27 Oktober 2026: 89.276 bintang dan 5.313 fork",
+      "Homepage yang README tautkan adalah impeccable.style",
+    ],
+    cons: [
+      "README menulis turunan dari skill frontend-design Anthropic. Hasil tetap bergantung pada model agen yang dipakai",
+      "Tiga tag teratas bertanggal 26 Oktober 2026, semuanya di atas 4.8.0. cli-v4.8.0 tidak membawa aset di API",
+      "Engine membawa biner per platform. Wawasan AI tidak memverifikasi tanda tangan universal.zip.sig.json",
+      "Perintah npx impeccable install tidak diulang di sini. Wawasan AI tidak menjalankan /impeccable audit",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai skill desain yang memisahkan aturan deterministik dari kritik LLM, asal PRODUCT.md diisi sebelum polish atau audit. Jangan menganggap 89 ribu bintang sebagai bukti UI production sudah lolos a11y di proyekmu.",
+    body: [
+      "Impeccable dibuat di repositori pbakaus/impeccable. README yang dicek 27 Oktober 2026 menulis panduan desain untuk agen coding frontend: satu skill, 24 perintah, iterasi browser live, dan 62 aturan detektor deterministik. README juga menulis asal-usul dari skill frontend-design Anthropic dan menamai pola AI slop yang ingin dihindari, seperti font Inter serba ada dan gradien ungu ke biru. API GitHub hari yang sama mencatat 89.276 bintang, 5.313 fork, 45 isu terbuka, bahasa Rust, dan lisensi Apache-2.0. Repo dibuat 16 November 2025. Push terakhir 27 Oktober 2026. Homepage di API string kosong. README menaut impeccable.style. Trendshift menaruhnya di peringkat sepuluh. Wawasan AI tidak menjalankan npx impeccable install dan tidak membuka mode live.",
+      "Yang paling perlu dibaca sebelum mengira ini hanya markdown statis adalah pemisahan perintah. README mencetak /impeccable init untuk konteks produk di PRODUCT.md, lalu audit untuk a11y dan responsif, critique untuk UX, polish untuk keselarasan design system, dan live untuk iterasi elemen di browser. README menulis 62 aturan detektor dijalankan CLI dan ekstensi tanpa LLM. Pin perintah disebut membuat shortcut seperti /audit. Semua itu klaim README, bukan hasil uji editorial pada satu codebase.",
+      "Daftar rilis yang API kembalikan pada 27 Oktober dimulai dari skill-v4.8.0 pada 26 Oktober pukul 23.41 UTC, dengan aset universal.zip berukuran 18.116.588 byte dan 701 unduhan, plus universal.zip.sig.json berukuran 348 byte dan 687 unduhan. Tag berikutnya engine-v0.1.18 pada 26 Oktober pukul 20.26 UTC membawa biner darwin-arm64, darwin-x64, linux-arm64, linux-x64, dan windows-x64.exe, masing-masing dengan berkas sha256. cli-v4.8.0 pada 26 Oktober pukul 23.41 UTC tidak membawa aset. Editorial tidak memasang biner engine dan tidak memverifikasi tanda tangan.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah Apache-2.0 untuk menambah vocabulary desain ke Claude Code, Cursor, atau Codex tanpa lisensi skill baru, selama tim sudah punya alur review UI. Yang belum berguna sebagai jaminan kantor adalah mengganti design review manusia hanya dengan /impeccable audit tanpa membaca temuan. Pasang dulu hanya pada repo yang memang boleh diubah agen, isi PRODUCT.md sebelum polish, lalu pisahkan output detektor deterministik dari saran critique yang masih LLM. Delapan puluh sembilan ribu bintang tidak mengubah kalimat bahwa skill ini tetap mengandalkan model di belakang harness.",
+    ],
+    link: "https://github.com/pbakaus/impeccable",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-27",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

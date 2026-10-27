@@ -5676,6 +5676,53 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "detik-0745-gates-tanpa-fda-ai",
+    title: "detikInet Pukul 07.45: Gates, Tanpa FDA untuk AI",
+    excerpt:
+      "Halaman detikInet pada Selasa 27 Oktober pukul 07.45 WIB mengutip Bill Gates soal membiarkan perusahaan AI mengatur keamanannya sendiri. FDA, penerbangan, dan sabuk pengaman jadi perbandingan. Dario Amodei, Sam Altman, dan Elon Musk disebut sejalan.",
+    category: "Analisis",
+    date: "2026-10-27",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selasa 27 Oktober 2026 pukul 07.45 WIB, detikInet menurunkan Bill Gates Bilang Manusia Sedang Melakukan Hal Paling Berbahaya dengan AI. Penulis Aisyah Kamaliah. Dateline Jakarta. Foto yang tercetak Getty Images/Thierry Chesnot.",
+          "Yang dibandingkan pada Selasa pagi ini adalah halaman detik yang baru terbit dan rangkaian editorial kemarin soal transparansi platform di Indonesia. Acuannya untuk Gates adalah wawancara dengan kolumnis Ezra Klein di The New York Times, bukan pernyataan Kemkomdigi. Jadi yang baru adalah teks detik, bukan tanggal wawancara Klein.",
+        ],
+      },
+      {
+        heading: "Yang halaman 07.45 cetak",
+        paragraphs: [
+          "Analogi pembuka: membiarkan perusahaan kecerdasan buatan menetapkan aturan keamanannya sendiri ibarat meminta remaja menentukan jam tidurnya. Kutipan Gates yang tercetak: Ini adalah hal paling berbahaya yang pernah didekati oleh manusia.",
+          "Gates mempertanyakan mengapa perusahaan AI boleh merilis teknologi canggih tanpa langkah pengamanan. Perbandingan yang dicetak: di bidang medis ada FDA, di penerbangan ada dewan keselamatan, di mobil ada kewajiban sabuk pengaman. Kalimat lanjutan menanyakan apakah manusia hanya akan mengandalkan hukum pertanggungjawaban, dengan contoh distribusi opioid yang ditunggu gugatannya.",
+          "Gates menulis masyarakat biasanya menerapkan keselamatan sebelum ada korban, bukan hanya gugatan setelah kerusakan. Memercayakan industri AI mengawasi dirinya sendiri disebut benar-benar gila.",
+        ],
+      },
+      {
+        heading: "Siapa lagi yang detik sebut",
+        paragraphs: [
+          "Bagian penutup tubuh menulis isu perlambatan dan regulasi AI sedang ramai. Dario Amodei, CEO dan pendiri Anthropic, disebut memulai seruan setelah kekhawatiran sistem AI otonom berkembang terlalu cepat.",
+          "Sam Altman, CEO OpenAI, dan Elon Musk dari xAI juga disebut sejalan. Musk disebut telah lama memperingatkan bahaya perkembangan AI yang tidak terkendali. Sumber tambahan yang tercetak: Benzinga. Halaman detik tidak memuat kutipan langsung Amodei, Altman, atau Musk, hanya arah sejalan.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pada Senin, detikInet dan sumber lain sudah mengulang Kemkomdigi soal transparansi algoritma, Meta AI, dan karhutla. Halaman 07.45 hari ini tidak menyebut Kemkomdigi, Meta, atau karhutla. Itu dua jalur berita: pengawasan platform di Jakarta versus analogi Gates soal badan pengawas sebelum peluncuran.",
+          "Untuk tim kebijakan di Indonesia, Gates menambah argumen bahwa self-regulation industri saja tidak cukup. Artikel ini tidak menyatakan Indonesia sudah punya setara FDA untuk model. Rancangan peraturan presiden AI yang ANTARA dan portal Komdigi sebut minggu ini tidak dibuka ulang di halaman 07.45.",
+          "Untuk tim produk, halaman detik tidak menulis langkah teknis apa yang Gates minta. Yang bisa dibawa ke rapat internal hanya kerangka: pengaman sebelum rilis, bukan hanya gugatan setelah insiden.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 27 Oktober, yang baru di detikInet adalah halaman pukul 07.45 tentang Gates, Klein, dan perbandingan FDA. Yang tidak ada di halaman itu, dan ada di editorial kemarin, adalah klarifikasi Kemkomdigi soal platform dan Meta AI.",
+          "Catatan editorial: artikel ini disusun dari halaman detikInet, Selasa 27 Oktober 2026 pukul 07.45 WIB, penulis Aisyah Kamaliah. Wawancara Ezra Klein dengan Bill Gates di The New York Times tidak dibuka langsung. Kutipan Amodei, Altman, dan Musk hanya lewat paragraf detik yang merujuk Benzinga. Rancangan peraturan presiden AI Indonesia tidak dibuka.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

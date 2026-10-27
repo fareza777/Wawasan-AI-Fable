@@ -1129,7 +1129,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                           highlights: [
                             "README menamai Claude Code, Codex, Cursor, dan OpenCode. Gerbang Floor, Reflex, dan Finish disebut terpisah. Mode Custom disebut membuang tema. Wawasan AI tidak menjalankan sloplint.",
                             "Perintah redesign dan audit disebut menjaga isi dan kabel halaman. Pustaka foto disebut 755 foto berlisensi terbuka di Wikimedia, tanpa berkas gambar di repo. Setiap foto disebut tetap pada lisensinya sendiri.",
-                            "Lisensi MIT, ditulis CSS. API GitHub pada 26 Oktober 2026: 33.916 bintang, 1.771 fork, 58 isu terbuka. Repo dibuat 27 April 2026, push terakhir 22 Oktober 2026. Homepage usehallmark.com. Tidak ada rilis.",
+                            "Lisensi MIT, ditulis CSS. API GitHub pada 27 Oktober 2026: 36.487 bintang, 1.771 fork, 62 isu terbuka. Repo dibuat 27 April 2026, push terakhir 22 Oktober 2026. Homepage usehallmark.com. Tidak ada rilis.",
                             "Angka 20 tema di narasi lama tidak dipakai lagi. README yang dibaca hari ini menulis forty-eight themes.",
                                                       ],
                                                     },
@@ -2893,7 +2893,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 26 Oktober 2026: 384.986 bintang, 96.392 fork, dan 1.092 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.8.0 terbit 25 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Push terakhir 25 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 27 Oktober 2026: 391.966 bintang, 98.217 fork, dan 1.131 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.8.0 terbit 25 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Push terakhir 27 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3422,9 +3422,9 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "LinkSwift adalah userscript yang README tulis untuk mengambil alamat unduh dari layanan awan Tiongkok. Deskripsi GitHub menulis delapan layanan. Kalimat pengantar README menulis sembilan, dengan tambahan 光鸭云盘. Wawasan AI tidak memasang skripnya.",
     highlights: [
       "README menulis tautan yang diambil berasal dari API publik penyedia, dan proyek ini tidak menjanjikan pembongkaran batas kecepatan. Kalimat yang sama meminta promosi pihak ketiga yang memakai frasa percepat unduh atau pecah batas kecepatan jangan dianggap sikap proyek.",
-      "Versi resmi yang README cetak v1.1.3. Versi uji yang dicetak v1.1.4, dengan baris catatan 9 September 2026. API rilis terbaru adalah v1.1.3 pada 18 Februari 2026. Push terakhir 10 September 2026.",
+      "Versi resmi yang README cetak v1.1.3. Versi uji yang dicetak v1.1.4, dengan baris catatan 9 September 2026. API rilis terbaru adalah v1.1.3 pada 18 Februari 2026. Aset v1.1.3.user.js berukuran 584.293 byte dengan 315.975 unduhan pada pembacaan 27 Oktober.",
       "Halaman yang sama menautkan skrip pendamping yang namanya memakai frasa versi anggota muda untuk beberapa layanan awan. Tautan itu tidak dibuka. Alamat pemasang userscript tidak disalin ke narasi ini.",
-      "Lisensi AGPL-3.0, ditulis JavaScript. API GitHub pada 17 Oktober 2026: 23.756 bintang, 1.440 fork, 38 isu terbuka. Repo dibuat 10 Agustus 2022. Homepage di API menunjuk ke berkas .user.js di cabang main.",
+      "Lisensi AGPL-3.0, ditulis JavaScript. API GitHub pada 27 Oktober 2026: 30.478 bintang, 2.092 fork, 49 isu terbuka. Repo dibuat 10 Agustus 2022, push terakhir 23 Oktober 2026. Homepage di API kosong. Trendshift menaruhnya di peringkat satu.",
     ],
   },
   "rohit267/net-merge": {
@@ -3543,7 +3543,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README meminta NSP milik sendiri dan prod.keys. Wawasan AI tidak menyalin skrip sideload, tidak menyalin daftar kunci, dan tidak menyalin langkah ekstraksi.",
       "Syarat yang dicetak: iOS atau iPadOS 26 atau lebih baru, iPhone 15 Pro atau lebih baru, atau iPad M1 atau lebih baru, karena tekstur BC. Nama gim di tabel README panjang. Editorial tidak menghitung barisnya.",
-      "Lisensi MIT, ditulis C. API GitHub pada 25 Oktober 2026: 2.995 bintang, 555 fork, 40 isu terbuka. Repo dibuat 13 Oktober 2026, push terakhir 25 Oktober 2026. Tidak ada rilis. Homepage di API kosong.",
+      "Lisensi MIT, ditulis Objective-C. API GitHub pada 27 Oktober 2026: 6.232 bintang, 555 fork, 147 isu terbuka. Repo dibuat 13 Oktober 2026, push terakhir 27 Oktober 2026. Tidak ada rilis. Homepage di API kosong.",
       "Deskripsi Trendshift menulis iPhone, iPad, dan Mac. Kalimat pembuka README yang dibaca hari ini berhenti di iPhone dan iPad. Dua cakupan itu tidak disatukan. Wawasan AI tidak membangun IPA.",
     ],
   },
@@ -3625,6 +3625,56 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Tabel harga di README memakai angka pasar khas untuk perbandingan, dengan catatan angka pembaca bisa berbeda. Editorial tidak memakai tabel itu sebagai tarif Indonesia.",
       "Lisensi MIT, ditulis Python. API GitHub pada 26 Oktober 2026: 20.959 bintang, 2.959 fork, 52 isu terbuka. Repo dibuat 7 Februari 2026, push terakhir 22 Oktober 2026. Homepage API: skool.com/ai-marketing-hub-pro.",
       "Rilis v2.5.0 terbit 22 Oktober 2026, tanpa aset. Perintah plugin tidak diulang di sini. Wawasan AI tidak menjalankan /seo audit.",
+    ],
+  },
+  "current/deadcell-framework": {
+    description:
+      "deadcell-framework adalah fondasi Dear ImGui yang disematkan untuk menu deadcell. README menulis revisi 1.89.5-wip dan renderer DX11. Bukan kerangka UI umum untuk aplikasi web atau agen.",
+    highlights: [
+      "README menjelaskan mode immediate: tidak ada pohon widget antar frame. Setiap frame memanggil NewFrame, widget, lalu Render ke buffer vertex yang backend dorong ke GPU.",
+      "Pohon disematkan, bukan submodule, supaya revisi kompilasi tidak berubah tanpa sengaja. README menulis perbaikan upstream di-cherry-pick, bukan tarik otomatis.",
+      "Lisensi MIT, ditulis C++. API GitHub pada 27 Oktober 2026: 216 bintang, 15 fork, 1 isu terbuka. Repo dibuat 1 Desember 2023, push terakhir 23 Oktober 2026. Tidak ada rilis. Homepage di API kosong.",
+      "Wawasan AI tidak membangun menu game dan tidak membuka imgui_demo.cpp. Trendshift menaruhnya di peringkat tiga.",
+    ],
+  },
+  "KnifeLemon/Filee": {
+    description:
+      "Filee adalah konverter berkas sumber terbuka yang README tulis untuk 255 format, bekerja offline dengan drag and drop. Situs filee.sh. Wawasan AI tidak mengunduh biner rilis.",
+    highlights: [
+      "README menulis tanpa unggah ke server dan tanpa Office terpasang untuk banyak format, termasuk PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-book, dan arsip.",
+      "Rilis v2.1.0 terbit 24 Oktober 2026 pukul 23.30 UTC, setelah v2.0.0 pada 21 Oktober dan v1.12.0 pada 19 Oktober. Perintah pasang tidak diulang di sini.",
+      "Lisensi MIT, ditulis C#. API GitHub pada 27 Oktober 2026: 13.388 bintang, 858 fork, 103 isu terbuka. Repo dibuat 29 September 2026, push terakhir 27 Oktober 2026. Homepage di API kosong. README menaut filee.sh.",
+      "Lencana README menulis Windows 10 dan 11, Linux x64 dan ARM64, serta macOS preview. Wawasan AI tidak menjalankan konversi sampel.",
+    ],
+  },
+  "ZiChuanLan/agent-purge": {
+    description:
+      "agent-purge adalah satu berkas persona yang bisa disuntik ke banyak harness coding agent, dengan konsol web lokal dan mode replace, strict, append, atau off. README menulis Node 20 atau lebih baru dan tanpa dependensi.",
+    highlights: [
+      "README menamai codex, claude, opencode, grok, omp, hermes, pi, dan zcode. Tiga jalur yang dicetak: install ke konfigurasi harness, shim di PATH, dan slash /purge on|off|status di sesi.",
+      "Data default di ~/.agent-purge/, dengan state.json dan folder personas/. README menulis versi 0.1.x yang menyimpan data di paket dipindah otomatis saat pertama jalan. Perintah npm global tidak disalin.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub pada 27 Oktober 2026: 349 bintang, 329 fork, 0 isu terbuka. Repo dibuat 25 Oktober 2026, push terakhir 26 Oktober 2026. Tidak ada rilis. Homepage di API kosong.",
+      "Mengganti system prompt pihak ketiga tanpa izin pemilik akun bisa melanggar kebijakan layanan. Wawasan AI tidak menjalankan konsol web dan tidak memasang shim.",
+    ],
+  },
+  "TauricResearch/TradingAgents": {
+    description:
+      "TradingAgents adalah kerangka multi-agen LLM untuk trading finansial dari Tauric Research. Deskripsi GitHub menulis beberapa peran analis yang berdiskusi sebelum keputusan. Bukan saran investasi.",
+    highlights: [
+      "README dan deskripsi repo menekankan orkestrasi agen, bukan eksekusi broker langsung. Ulasan repo mendalam di situs ini sudah membahas batas riset versus produksi.",
+      "Lisensi Apache-2.0, ditulis Python. API GitHub pada 27 Oktober 2026: 116.193 bintang, 22.291 fork, 154 isu terbuka. Repo dibuat 28 Desember 2024, push terakhir 16 Oktober 2026. Homepage di API kosong.",
+      "Trendshift menaruhnya di peringkat sembilan dengan topik AI agent. Wawasan AI tidak menjalankan simulasi pasar dan tidak membuka kunci API broker.",
+      "Untuk pembaca Indonesia, nilai utamanya adalah contoh deliberasi multi-agen pada domain berisiko tinggi, bukan sinyal beli atau jual.",
+    ],
+  },
+  "pbakaus/impeccable": {
+    description:
+      "Impeccable adalah bahasa desain dan skill untuk agen coding frontend. README menulis 24 perintah, 62 aturan detektor deterministik, dan iterasi browser. Wawasan AI tidak menjalankan npx impeccable install.",
+    highlights: [
+      "README menulis turunan dari skill frontend-design Anthropic, dengan /impeccable init yang menulis PRODUCT.md dan perintah audit, polish, critique, distill, serta live untuk varian di browser.",
+      "Tiga tag teratas pada 27 Oktober: skill-v4.8.0 dan cli-v4.8.0 pada 26 Oktober pukul 23.41 UTC, serta engine-v0.1.18 pada 26 Oktober pukul 20.26 UTC. Aset universal.zip pada skill-v4.8.0 berukuran 18.116.588 byte dengan 701 unduhan.",
+      "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 27 Oktober 2026: 89.276 bintang, 5.313 fork, 45 isu terbuka. Repo dibuat 16 November 2025, push terakhir 27 Oktober 2026. Homepage di API kosong. README menaut impeccable.style.",
+      "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak membuka ekstensi browser dan tidak menjalankan 62 aturan detektor.",
     ],
   },
 };

@@ -71,6 +71,8 @@ const SLUG_ICONS: Record<string, string> = {
   "minimax-m3-1-flash": "https://www.google.com/s2/favicons?domain=minimax.io&sz=128",
   thinkrail: "https://github.com/JetBrains.png",
   "gemini-3-8-flash-high": "https://cdn.simpleicons.org/google",
+  impeccable: "https://github.com/pbakaus.png",
+  "claude-opus-5-5-max-fallback": "https://cdn.simpleicons.org/anthropic",
 };
 
 function githubOrgIcon(link: string): string | null {

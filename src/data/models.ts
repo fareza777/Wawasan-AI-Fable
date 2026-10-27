@@ -5573,6 +5573,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-26",
     featured: false,
   },
+  {
+    slug: "claude-opus-5-5-max-fallback",
+    name: "Claude Opus 5.5 (Max, Default Fallback)",
+    tagline: "Indeks 58, $5,98 per tugas, cepat di atas median, TTFT 712,32 d",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "API"],
+    score: 8.0,
+    scores: [
+      { label: "Penalaran", value: 9.2 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 7.4 },
+      { label: "Harga/Performa", value: 6.2 },
+    ],
+    aa_intelligence_index: 58,
+    aa_price_input: 4,
+    aa_price_output: 20,
+    aa_synced_at: "2026-10-27",
+    summary:
+      "Artificial Analysis, dicek 27 Oktober 2026, memberi Claude Opus 5.5 (Max, Default Fallback) intelligence index 58 dan menandainya proprietary. Kartu intelijen menulis 4 dari 4 satuan. Keluaran 98,2 token per detik pada API Anthropic, di atas median FAQ 87,0.",
+    pros: [
+      "Intelligence index 58, di atas median 28 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 27 Oktober 2026)",
+      "Kartu intelijen menulis 4 dari 4 satuan untuk intelijen",
+      "Kartu biaya: $4,00 masukan dan $20,00 keluaran per juta token, diskon cache 95 persen, $5,98 per tugas indeks, peringkat biaya 119 dari 121",
+      "Spesifikasi halaman: masukan teks dan gambar; keluaran teks; konteks 1 juta token; reasoning menyala",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 712,32 detik, median 3,89 detik, at the higher end",
+      "Ringkasan menyebut masukan somewhat higher dan keluaran at the higher end. FAQ pada median yang sama menulis somewhat higher dan at the higher end",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "FAQ menulis bobot tidak tersedia untuk umum dan Anthropic tidak mengungkapkan jumlah parameter",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 58 dengan biaya $5,98 per tugas indeks pada kartu 27 Oktober, selama tugasnya muat di masukan teks atau gambar. Jangan menempelkan 98 token per detik di ringkasan ke kolom 98,2, dan jangan menganggap TTFT 712,32 detik cocok untuk chat interaktif.",
+    body: [
+      "Claude Opus 5.5 (Max, Default Fallback) adalah model reasoning dari Anthropic yang halamannya di Artificial Analysis dibaca 27 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 22 September 2026 dan menulis pembuatnya Anthropic. Spesifikasi yang terpasang: masukan teks dan gambar; keluaran teks; jendela konteks 1,0 juta token; dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 27 Oktober 2026.) Intelligence index-nya 58 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis 4 dari 4 satuan. FAQ menaruh skor 58 jauh di atas rata-rata model pada kisaran harga yang sama, median 28. Ringkasan perbandingan memakai median 28 yang sama dan menyebut model ini amongst the leading models untuk kelas itu. Teks kelas di halaman itu mengatakan ada 223 model di kelas pembanding. Caption beberapa grafik menulis 27 dari 715 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai 4 dari 4 satuan untuk kartu intelijen, dan tidak menyamakan caption 27 dari 715 atau angka 223 di teks kelas dengan satuan itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $4,00 per juta token masukan dan $20,00 per juta token keluaran, diskon cache 95 persen, biaya rata-rata $5,98 per tugas indeks, peringkat biaya 119 dari 121, dan 4 dari 4 satuan. Ringkasan menyebut masukan somewhat higher terhadap median $2,00 dan keluaran at the higher end terhadap median $10,00. FAQ memakai median itu, lalu menulis somewhat higher untuk masukan dan at the higher end untuk keluaran, serta menulis angka itu berdasarkan API Anthropic. Editorial mengutip kedua set kata sifat dan tidak memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $2,94 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 9 penyedia. Penyebut biaya 121 tidak sama dengan 223 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan punya dua tulisan yang berdekatan. Kartu menulis 98,2 token per detik, peringkat 75 dari 192, dan 3 dari 4 satuan. FAQ menulis 98,2 token per detik pada API Anthropic, di atas median 87,0. Ringkasan membulatkan menjadi 98 token per detik terhadap rata-rata 87, dan menyebutnya faster than average. FAQ juga menulis waktu ke token pertama 712,32 detik, median 3,89 detik, dan menyebutnya at the higher end. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 712,32 detik di FAQ dengan judul bagian itu menjadi satu metrik yang sudah dicek ulang. Verbosity: kartu menulis 260 juta token keluaran, peringkat 120 dari 122, dan 4 dari 4 satuan. Ringkasan menyebut 260 juta very verbose terhadap median 81 juta. FAQ menyebut 260 juta at the higher end terhadap median 81 juta yang sama.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 58 dan biaya $5,98 per tugas indeks pada kartu 27 Oktober. Karena TTFT duduk jauh di atas median, agen yang harus menjawab di bawah empat detik belum punya alasan latensi dari halaman ini. Karena keluaran verbose dan harga keluaran at the higher end, tugas agen panjang bisa membesarkan tagihan lebih cepat dari model kelas menengah. Karena FAQ menandai bobot tidak tersedia, jalur mesin sendiri belum ada pada pembacaan hari ini. Grafik halaman model masih bertuliskan tidak ada API publik, sementara FAQ menulis 9 penyedia. Pakai kartu ini untuk membandingkan indeks dan tagihan, lalu pisahkan 98 di ringkasan dari 98,2 di kartu sebelum mengganti model yang sudah jalan.",
+    ],
+    link: "https://artificialanalysis.ai/models/claude-opus-5-5",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-27",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
