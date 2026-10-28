@@ -5617,6 +5617,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-27",
     featured: false,
   },
+  {
+    slug: "qwen3-8-27b-xhigh-open",
+    name: "Qwen3.8 27B (Xhigh, Open Weights)",
+    tagline: "Indeks 34, $1,15 per tugas, 41,1 t/s, TTFT 3,89 d, Apache 2.0",
+    tags: ["Alibaba", "Open Weights", "Reasoning", "27B"],
+    score: 7.4,
+    scores: [
+      { label: "Penalaran", value: 7.6 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 5.8 },
+      { label: "Harga/Performa", value: 7.2 },
+    ],
+    aa_intelligence_index: 34,
+    aa_price_input: 0.5,
+    aa_price_output: 3,
+    aa_synced_at: "2026-10-28",
+    summary:
+      "Artificial Analysis, dicek 28 Oktober 2026, memberi Qwen3.8 27B (Xhigh) intelligence index 34 dan menandainya open weights Apache 2.0 dengan 27B parameter. Kartu intelijen menulis peringkat 1 dari 141 dalam kelas ukuran open weights. Keluaran 41,1 token per detik pada API Alibaba, di bawah median FAQ 81,6.",
+    pros: [
+      "Intelligence index 34, di atas median 8 untuk open weights seukuran serupa (sumber: Artificial Analysis, 28 Oktober 2026)",
+      "Kartu intelijen menulis 4 dari 4 satuan dan peringkat 1 dari 141 dalam kelas pembanding halaman",
+      "Kartu biaya: $0,50 masukan dan $3,00 keluaran per juta token, diskon cache 80 persen, $1,15 per tugas indeks, peringkat biaya 19 dari 22",
+      "Spesifikasi halaman: masukan teks, gambar, dan video; keluaran teks; konteks 256 ribu token; bobot di Hugging Face; lisensi Apache 2.0",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 3,89 detik, median 1,18 detik, at the higher end",
+      "Ringkasan menyebut notably slow pada 41 token per detik terhadap median 82. Kartu menulis 41,1 token per detik, peringkat 56 dari 63, 1 dari 4 satuan kecepatan",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Ringkasan menyebut input dan output expensive terhadap median kelas open weights $0,12 dan $0,30",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 34 dengan bobot terbuka 27B, selama tim menerima keluaran lambat dan verbose. Jangan menempelkan 41 di ringkasan ke kolom 41,1, dan jangan menganggap TTFT 3,89 detik cocok untuk chat yang harus membalas di bawah dua detik.",
+    body: [
+      "Qwen3.8 27B (Xhigh) adalah varian reasoning open weights dari Alibaba yang halamannya di Artificial Analysis dibaca 28 Oktober 2026. Kartu di bagian atas menandai open weights model dan rilis Agustus 2026. FAQ memperinci tanggal rilis 14 Agustus 2026 dan menulis pembuatnya Alibaba. Spesifikasi yang terpasang: masukan teks, gambar, dan video; keluaran teks; jendela konteks 256 ribu token pada kartu; reasoning menyala; 27 miliar parameter; lisensi Apache 2.0; bobot di Hugging Face. FAQ menulis konteks 260 ribu token. Editorial memakai 256 ribu dari kartu dan tidak menyamakan angka FAQ tanpa verifikasi ulang. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 28 Oktober 2026.) Intelligence index-nya 34 pada indeks versi 4.3.2 yang keterangan grafik sebut. Kartu intelijen menulis peringkat 1 dari 141 dan 4 dari 4 satuan dalam kelas open weights seukuran serupa. FAQ menaruh skor 34 jauh di atas median 8 untuk model open weights seukuran serupa. Ringkasan perbandingan memakai median 8 yang sama dan menyebut model ini amongst the leading models untuk kelas itu, tetapi juga particularly expensive dan notably slow. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $0,50 per juta token masukan dan $3,00 per juta token keluaran, diskon cache 80 persen, biaya rata-rata $1,15 per tugas indeks, peringkat biaya 19 dari 22, dan 4 dari 4 satuan. Ringkasan menyebut masukan expensive terhadap median $0,12 dan keluaran expensive terhadap median $0,30. FAQ memakai median itu, lalu menulis at the higher end untuk keduanya, serta menulis angka itu berdasarkan API Alibaba. FAQ juga menulis tarif campuran $0,47 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 12 penyedia. Penyebut biaya 22 tidak sama dengan 141 model yang kartu intelijen sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan dan verbosity perlu dibaca bersama. Kartu menulis 41,1 token per detik, peringkat 56 dari 63, dan 1 dari 4 satuan. FAQ menulis 41,1 token per detik pada API Alibaba, di bawah median 81,6. Ringkasan membulatkan menjadi 41 token per detik terhadap median 82, dan menyebutnya notably slow. FAQ juga menulis waktu ke token pertama 3,89 detik, median 1,18 detik, dan menyebutnya at the higher end. Verbosity: kartu menulis 200 juta token keluaran, peringkat 25 dari 27, dan 4 dari 4 satuan. Ringkasan menyebut 200 juta very verbose terhadap median 82 juta. FAQ menyebut 200 juta at the higher end terhadap median 82 juta yang sama.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah bobot Apache 2.0 27B untuk mesin sendiri, dengan indeks 34 pada kartu 28 Oktober. Karena keluaran lambat dan verbose, pipeline batch lebih masuk akal daripada antarmuka chat real-time. Karena harga API di atas median kelas open weights, hitung tagihan per tugas $1,15 sebelum mengganti model lokal yang sudah jalan. Grafik halaman masih bertuliskan tidak ada API publik pada beberapa caption, sementara FAQ menulis 12 penyedia. Pakai kartu ini untuk membandingkan indeks dan biaya per tugas, lalu pisahkan 41 di ringkasan dari 41,1 di kartu sebelum deploy produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/qwen3-8-27b",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-28",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

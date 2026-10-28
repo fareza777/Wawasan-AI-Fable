@@ -1,0 +1,135 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-28T02:04:09.909Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "anhao/ai-pose-gallery-zh",
+      "owner": "anhao",
+      "repo": "ai-pose-gallery-zh",
+      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "githubUrl": "https://github.com/anhao/ai-pose-gallery-zh",
+      "trendshiftUrl": "https://trendshift.io/repositories/321871",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-27T12:24:37Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Orkas-AI/Orkas",
+      "owner": "Orkas-AI",
+      "repo": "Orkas",
+      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "githubUrl": "https://github.com/Orkas-AI/Orkas",
+      "trendshiftUrl": "https://trendshift.io/repositories/36597",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-29T12:19:08Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "unclebob/ub-mode",
+      "owner": "unclebob",
+      "repo": "ub-mode",
+      "description": "",
+      "githubUrl": "https://github.com/unclebob/ub-mode",
+      "trendshiftUrl": "https://trendshift.io/repositories/320616",
+      "topics": [],
+      "dateCreated": "2026-10-25T16:04:09Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "LNPANDY/NX2Apple",
+      "owner": "LNPANDY",
+      "repo": "NX2Apple",
+      "description": "nxnative + RomFS archive: pack a Switch RomFS into ~100 files so large games can be installed on iOS",
+      "githubUrl": "https://github.com/LNPANDY/NX2Apple",
+      "trendshiftUrl": "https://trendshift.io/repositories/315087",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-20T18:16:07Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "rddmwmddr/android-ad-cleaner",
+      "owner": "rddmwmddr",
+      "repo": "android-ad-cleaner",
+      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "githubUrl": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "trendshiftUrl": "https://trendshift.io/repositories/318388",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-24T05:35:47Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "HKUDS/DeepTutor",
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "githubUrl": "https://github.com/HKUDS/DeepTutor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17099",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-12-28T15:35:54Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "elayadesign/ai-design-skills",
+      "owner": "elayadesign",
+      "repo": "ai-design-skills",
+      "description": "",
+      "githubUrl": "https://github.com/elayadesign/ai-design-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/304496",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-07-29T06:43:16Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "CopilotKit/OpenDuet",
+      "owner": "CopilotKit",
+      "repo": "OpenDuet",
+      "description": "An Open Source template for a proactive AI agent that gets your work done and keeps you in the loop.",
+      "githubUrl": "https://github.com/CopilotKit/OpenDuet",
+      "trendshiftUrl": "https://trendshift.io/repositories/321847",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-10-21T19:43:59Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "KnifeLemon/Filee",
+      "owner": "KnifeLemon",
+      "repo": "Filee",
+      "description": "Free, open-source file converter. Convert 255 formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
+      "githubUrl": "https://github.com/KnifeLemon/Filee",
+      "trendshiftUrl": "https://trendshift.io/repositories/276987",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-09-29T20:05:15Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "togg53192-cmd/jailbreaks",
+      "owner": "togg53192-cmd",
+      "repo": "jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "githubUrl": "https://github.com/togg53192-cmd/jailbreaks",
+      "trendshiftUrl": "https://trendshift.io/repositories/207462",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-06-18T18:21:25Z"
+    }
+  ]
+}

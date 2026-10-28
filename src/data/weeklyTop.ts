@@ -1191,6 +1191,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                           "Pipeline RAG end-to-end: mengindeks buku, paper, dan catatan Anda (PDF, DOCX, markdown), lalu memanggil AI agent untuk menjawab, merangkum, atau membuat soal berdasarkan sumber tersebut — bukan jawaban model dari memori internal.",
                                                           "Antarmuka web Next.js 16 plus CLI 'agent-native' untuk automasi — ditambah modul 'partner' (diskusi socratic), 'guided learning' (latihan bertahap), dan 'deep research' (riset multi-langkah) dalam satu paket.",
                                                           "Dikelola tim di balik LightRAG dan proyek agentik terkenal lain — track record kuat di ranah RAG dan personalisasi agen AI, relevan untuk pelajar/peneliti Indonesia yang belajar AI/ML secara mandiri.",
+                                                          "API GitHub pada 28 Oktober 2026: 46.030 bintang, 5.769 fork, 218 isu terbuka, bahasa Python, lisensi Apache-2.0. Push terakhir 27 Oktober 2026. Homepage arxiv.org/abs/2604.26962. Trendshift menaruhnya di peringkat enam.",
                                                         ],
                                                       },
                                                       "xai-org/grok-build": {
@@ -3523,8 +3524,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Satu skill yang tabel README cetak: landing-page-design. Tautan redesign-skill disebut repo terpisah. Wawasan AI tidak menyalin berkas SKILL.md.",
       "Bagian pasang README memuat perintah clone dan salin folder. Perintah itu tidak diulang di sini. Claude.ai disebut lewat unggah SKILL.md ke Project.",
-      "Lisensi MIT. API GitHub pada 25 Oktober 2026: 3.156 bintang, 222 fork, 1 isu terbuka. Bahasa di API kosong. Repo dibuat 29 Juli 2026, push terakhir 29 Juli 2026. Tidak ada rilis. Homepage di API kosong.",
-      "API languages mengembalikan objek kosong pada pembacaan yang sama. Wawasan AI tidak memasang skill ke editor.",
+      "Lisensi MIT. API GitHub pada 28 Oktober 2026: 9.489 bintang, 679 fork, 5 isu terbuka. Bahasa di API null. Repo dibuat 29 Juli 2026, push terakhir 27 Oktober 2026. Tidak ada rilis. Homepage di API kosong.",
+      "API languages mengembalikan null pada pembacaan yang sama. Wawasan AI tidak memasang skill ke editor.",
     ],
   },
   "Zagitta/gpu-unlock": {
@@ -3592,9 +3593,9 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "android-ad-cleaner mengaku mematikan iklan, hot search, dan push pemasaran pada ponsel Android merek tertentu tanpa root. README menulis ADB, bukan HarmonyOS lewat HDC. Perintah pasang dan skrip mesin tidak disalin.",
     highlights: [
       "Mengubah pengaturan, paket, atau layanan di perangkat yang tidak kamu miliki, atau di luar izin pemilik, adalah akses tanpa hak. README menulis cadangan sebelum mengubah, dan hasil mengikuti ponsel pengguna.",
-      "Rilis v0.2.3 terbit 25 Oktober 2026. Aset yang API catat termasuk AndroidAdCleaner-0.2.3-windows-portable.zip sebesar 44.808.244 byte dengan 937 unduhan, plus pemasang Windows 30.116.342 byte dengan 864 unduhan, pada pembacaan 26 Oktober.",
-      "Lisensi MIT, ditulis Python. API GitHub pada 26 Oktober 2026: 865 bintang, 68 fork, 25 isu terbuka. Repo dibuat 24 Oktober 2026, push terakhir 25 Oktober 2026. Homepage di API kosong. README menautkan rddmwmddr.github.io/android-ad-cleaner/.",
-      "Catatan README 26 Oktober menulis sumber di cabang belum masuk paket 0.2.3. Wawasan AI tidak menghubungkan ponsel dan tidak menjalankan klien.",
+      "Rilis v0.2.5 terbit 27 Oktober 2026. Aset yang API catat termasuk AndroidAdCleaner-0.2.5-windows-portable.zip 44.840.908 byte dengan 2.512 unduhan, windows-setup.exe 30.133.900 byte dengan 1.961 unduhan, mac-arm64.dmg 35.071.352 byte dengan 412 unduhan, pada pembacaan 28 Oktober.",
+      "Lisensi MIT, ditulis Python. API GitHub pada 28 Oktober 2026: 3.403 bintang, 289 fork, 188 isu terbuka. Repo dibuat 24 Oktober 2026, push terakhir 27 Oktober 2026. Homepage di API kosong.",
+      "Wawasan AI tidak menghubungkan ponsel dan tidak menjalankan klien.",
     ],
   },
   "JetBrains/thinkrail": {
@@ -3642,8 +3643,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Filee adalah konverter berkas sumber terbuka yang README tulis untuk 255 format, bekerja offline dengan drag and drop. Situs filee.sh. Wawasan AI tidak mengunduh biner rilis.",
     highlights: [
       "README menulis tanpa unggah ke server dan tanpa Office terpasang untuk banyak format, termasuk PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-book, dan arsip.",
-      "Rilis v2.1.0 terbit 24 Oktober 2026 pukul 23.30 UTC, setelah v2.0.0 pada 21 Oktober dan v1.12.0 pada 19 Oktober. Perintah pasang tidak diulang di sini.",
-      "Lisensi MIT, ditulis C#. API GitHub pada 27 Oktober 2026: 13.388 bintang, 858 fork, 103 isu terbuka. Repo dibuat 29 September 2026, push terakhir 27 Oktober 2026. Homepage di API kosong. README menaut filee.sh.",
+      "Rilis v2.1.0 terbit 24 Oktober 2026 pukul 23.30 UTC. Aset Filee-2.1.0-win-Setup.exe 132.620.128 byte dengan 55.766 unduhan dan win-Portable.zip 157.369.965 byte dengan 12.770 unduhan pada pembacaan 28 Oktober. Perintah pasang tidak diulang di sini.",
+      "Lisensi MIT, ditulis C#. API GitHub pada 28 Oktober 2026: 14.895 bintang, 956 fork, 105 isu terbuka. Repo dibuat 29 September 2026, push terakhir 28 Oktober 2026. Homepage filee.sh.",
       "Lencana README menulis Windows 10 dan 11, Linux x64 dan ARM64, serta macOS preview. Wawasan AI tidak menjalankan konversi sampel.",
     ],
   },
@@ -3675,6 +3676,66 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Tiga tag teratas pada 27 Oktober: skill-v4.8.0 dan cli-v4.8.0 pada 26 Oktober pukul 23.41 UTC, serta engine-v0.1.18 pada 26 Oktober pukul 20.26 UTC. Aset universal.zip pada skill-v4.8.0 berukuran 18.116.588 byte dengan 701 unduhan.",
       "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 27 Oktober 2026: 89.276 bintang, 5.313 fork, 45 isu terbuka. Repo dibuat 16 November 2025, push terakhir 27 Oktober 2026. Homepage di API kosong. README menaut impeccable.style.",
       "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak membuka ekstensi browser dan tidak menjalankan 62 aturan detektor.",
+    ],
+  },
+  "anhao/ai-pose-gallery-zh": {
+    description:
+      "ai-pose-gallery-zh adalah galeri statis referensi pose tubuh untuk AI painting dan 3D. README menulis 288 grup, 1.439 gambar, dan terjemahan metadata dari data Jepang. Wawasan AI tidak mengunduh arsip 659,5 MB.",
+    highlights: [
+      "README menulis mirror penuh: 1.439 thumbnail JPG 300×400 dan 1.439 PNG 900×1200, total 2.878 berkas. Demo di ai-pose-gallery.anhao.app. Lisensi berkas LICENSE MIT, hak cipta 2026 Anhao. API lisensi repo NOASSERTION.",
+      "Frontend tanpa dependensi npm: filter kategori, mode grup atau per gambar, lightbox dengan unduh PNG. Perintah deploy tidak disalin. SEO menulis judul AI 姿势参考库｜288 组人体姿势 · 1439 张多角度参考图.",
+      "API GitHub pada 28 Oktober 2026: 531 bintang, 139 fork, 0 isu terbuka, bahasa HTML. Repo dibuat 27 Oktober 2026, push terakhir 27 Oktober 2026. Homepage ai-pose-gallery.anhao.app. Tidak ada rilis.",
+      "Trendshift menaruhnya di peringkat satu. Untuk kreator Indonesia, nilainya adalah referensi pose siap pakai lokal, bukan generator gambar baru.",
+    ],
+  },
+  "Orkas-AI/Orkas": {
+    description:
+      "Orkas adalah aplikasi desktop tim agen AI sumber terbuka. README menulis Commander, 16 agen spesialis bawaan, plus sesi Claude Code, Codex, OpenCode, OpenClaw, dan Hermes-Agent. Wawasan AI tidak mengunduh DMG atau EXE rilis.",
+    highlights: [
+      "README menulis MIT, local-first, macOS dan Windows. Unduhan di orkas.ai. Paket aplikasi menulis 500 kredit model bawaan tanpa kunci API. Proyek, to-do, auto-advance, dan otomasi terjadwal disebut di README. Perintah pasang tidak disalin.",
+      "Rilis v2026.10.27 terbit 27 Oktober 2026. Aset yang API catat: Orkas.Setup.1.9.5.exe 402.069.448 byte dengan 11 unduhan, Orkas-1.9.5.dmg 512.618.547 byte dengan 4 unduhan, Orkas-1.9.5-arm64.dmg 470.404.434 byte dengan 3 unduhan, pada pembacaan 28 Oktober.",
+      "API GitHub pada 28 Oktober 2026: 2.358 bintang, 114 fork, 1 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 28 Oktober 2026. Homepage orkas.ai. README menulis shared projects dan cloud sync hanya di aplikasi paket, bukan build sumber terbuka.",
+      "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
+    ],
+  },
+  "unclebob/ub-mode": {
+    description:
+      "ub-mode adalah skill agen yang README tulis untuk disiplin rekayasa perangkat lunak: TDD, CRAP di bawah 10, duplikasi di bawah 0,8, dan mutasi testing. Berdasarkan poteto-mode yang disederhanakan. Perintah /ub-mode tidak disalin.",
+    highlights: [
+      "README memecah alur menjadi Make it Work, Make it Right, dan Practice. Alat pendamping yang disebut: crapper, dryer, mutator, uml-viewer di repo unclebob terpisah. Instalasi: salin SKILL.md ke folder skills agen.",
+      "API lisensi tingkat repo null pada pembacaan 28 Oktober. Tidak ada rilis. Deskripsi Trendshift kosong.",
+      "API GitHub pada 28 Oktober 2026: 2.408 bintang, 111 fork, 3 isu terbuka. Bahasa di API null. Repo dibuat 25 Oktober 2026, push terakhir 25 Oktober 2026. Homepage di API kosong.",
+      "Wawasan AI tidak menjalankan crapper, dryer, atau mutator pada sampel kode.",
+    ],
+  },
+  "LNPANDY/NX2Apple": {
+    description:
+      "NX2Apple adalah fork komunitas nxnative dengan GUI macOS untuk membangun gim Switch milik pengguna menjadi IPA dan arsip RomFS terpecah untuk iOS. README menulis bukan emulator resmi Nintendo. Kunci dan dump tidak ada di repo.",
+    highlights: [
+      "README menulis fork mengikuti upstream nxnative otomatis. GUI memilih target This Mac atau iPhone/iPad. Mengubah firmware, kunci, atau berkas gim yang bukan milikmu adalah akses tanpa hak.",
+      "API lisensi NOASSERTION, ditulis Python menurut API meski README menekankan aplikasi macOS. API GitHub pada 28 Oktober 2026: 924 bintang, 115 fork, 26 isu terbuka. Repo dibuat 20 Oktober 2026, push terakhir 27 Oktober 2026.",
+      "README menulis RomFS besar dipecah menjadi sekitar 100 berkas agar muat di iOS 16 GB. Skrip sideload dan prod.keys tidak disalin. Wawasan AI tidak membangun IPA.",
+      "Trendshift menaruhnya di peringkat empat. Editorial tidak memverifikasi daftar gim di badges games.json.",
+    ],
+  },
+  "CopilotKit/OpenDuet": {
+    description:
+      "OpenDuet adalah template agen proaktif sumber terbuka dari CopilotKit. README menulis early development, self-host, dan membutuhkan proyek CopilotKit Intelligence gratis untuk thread dan memori. Wawasan AI tidak membuka onboarding.",
+    highlights: [
+      "README menulis morning brief, pekerjaan di komputer terpisah, dan konfirmasi sebelum kirim, bayar, tanda tangan, atau hapus. Password dimasukkan pengguna ke kotak tersembunyi, bukan ke percakapan agen.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 28 Oktober 2026: 533 bintang, 75 fork, 3 isu terbuka. Repo dibuat 21 Oktober 2026, push terakhir 27 Oktober 2026. Homepage copilotkit.ai/openduet. Tidak ada rilis di API.",
+      "README menulis dibangun di atas OpenBot. Badge status early development. Perintah quick start tidak diulang di sini.",
+      "Trendshift menaruhnya di peringkat delapan dengan topik AI agent. Wawasan AI tidak menghubungkan Gmail atau Slack.",
+    ],
+  },
+  "togg53192-cmd/jailbreaks": {
+    description:
+      "jailbreaks adalah daftar kurasi prompt sistem, persona, kebijakan workspace, dan AGENTS.md untuk banyak model. README menulis 31 prompt menarget 25+ model. Bukan panduan bypass kebijakan vendor.",
+    highlights: [
+      "README menulis setiap berkas lengkap dan siap tempel. Cakupan mencakup model stealth gratis OpenCode Zen, open-weight, dan frontier tertutup. Ollama Modelfile disebut.",
+      "API lisensi null. API GitHub pada 28 Oktober 2026: 5.637 bintang, 834 fork, 14 isu terbuka. Bahasa di API null. Repo dibuat 18 Juni 2026, push terakhir 25 Oktober 2026. Tidak ada rilis.",
+      "Menggunakan prompt pihak ketiga untuk melanggar ToS layanan adalah risiko akun pengguna. Wawasan AI tidak menempelkan prompt ke sesi produksi.",
+      "Trendshift menaruhnya di peringkat sepuluh dengan topik Curated list.",
     ],
   },
 };

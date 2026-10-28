@@ -4980,6 +4980,46 @@ export const stacks: Review[] = [
     date: "2026-10-27",
     featured: false,
   },
+  {
+    slug: "orkas",
+    name: "Orkas",
+    tagline: "Tim agen desktop, Commander, 16 spesialis, kredit model bawaan",
+    tags: ["Open Source", "Multi-Agent", "Desktop", "MIT"],
+    score: 7.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.2 },
+      { label: "Kualitas Output", value: 7.4 },
+      { label: "Pengalaman Pengguna", value: 7.5 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 7.2 },
+    ],
+    summary:
+      "Orkas duduk di peringkat dua tren harian 28 Oktober 2026. README-nya menulis aplikasi MIT local-first dengan Commander, 16 agen bawaan, sesi Claude Code, Codex, OpenCode, OpenClaw, dan Hermes-Agent, plus 500 kredit model tanpa kunci API di unduhan paket.",
+    pros: [
+      "README menulis proyek menyimpan goal, rules, memory, dan berkas sehingga percakapan lanjut tanpa briefing ulang",
+      "To-do, auto-advance, dan otomasi terjadwal disebut untuk pekerjaan berulang di mesin lokal",
+      "Lisensi MIT. API GitHub pada 28 Oktober 2026: 2.358 bintang dan 114 fork",
+      "Rilis v2026.10.27 membawa Orkas.Setup.1.9.5.exe dan DMG 1.9.5 menurut API",
+    ],
+    cons: [
+      "README menulis shared projects, cloud sync, dan publikasi web app hanya di aplikasi paket, bukan build sumber terbuka",
+      "Konektor Gmail, Slack, Shopify, dan Stripe membutuhkan izin; README menulis konfirmasi sebelum kirim atau hapus",
+      "Biner rilis berukuran ratusan megabyte. Wawasan AI tidak memverifikasi tanda tangan DMG atau EXE",
+      "Voice input di build sumber memakai Orkas API Key dan kredit Orkas menurut README",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai command center multi-agen di desktop, asal tim membaca perbedaan build sumber dan aplikasi unduhan sebelum mengandalkan shared project. Jangan menganggap 2.358 bintang sebagai bukti semua konektor sudah diuji di lingkungan Indonesia.",
+    body: [
+      "Orkas dibuat di repositori Orkas-AI/Orkas. README yang dicek 28 Oktober 2026 menulis tim agen AI open source di desktop: Commander memecah goal menjadi to-do, memanggil 16 agen spesialis bawaan, dan menjalankan sesi Claude Code, Codex, OpenCode, OpenClaw, serta Hermes-Agent di sisi yang sama. README juga menulis data tetap di komputer pengguna, unduhan gratis macOS dan Windows di orkas.ai, serta 500 kredit untuk model bawaan tanpa kunci API di paket aplikasi. API GitHub hari yang sama mencatat 2.358 bintang, 114 fork, 1 isu terbuka, bahasa JavaScript, dan lisensi MIT. Repo dibuat 29 April 2026. Push terakhir 28 Oktober 2026. Homepage orkas.ai. Trendshift menaruhnya di peringkat dua. Wawasan AI tidak mengunduh Orkas-1.9.5.dmg atau Setup.exe.",
+      "Yang perlu dibaca sebelum mengira ini sekadar chat multi-tab adalah lapisan proyek. README mencetak projects dengan goal dan rules, to-do untuk orang dan agen, auto-advance yang mengambil item berikutnya, serta scheduled automations hourly, daily, weekly, atau monthly. Tabel 16 agen memuat DeepResearcher, SeoGeoAgent, ContentWriter, PptMaker, VideoStudio, ProductDeveloper, OfficeWorker, dan lima agen e-commerce. Itu klaim README, bukan hasil uji editorial pada satu workflow Indonesia.",
+      "Daftar rilis API pada 28 Oktober dimulai dari v2026.10.27 pada 27 Oktober pukul 15.37 UTC, dengan Orkas.Setup.1.9.5.exe berukuran 402.069.448 byte dan 11 unduhan, Orkas-1.9.5.dmg 512.618.547 byte dan 4 unduhan, Orkas-1.9.5-arm64.dmg 470.404.434 byte dan 3 unduhan. Tag v2026.10.17 dan v2026.10.1 juga membawa aset serupa dengan unduhan lebih tinggi pada tag lama. Editorial tidak memasang biner dan tidak membuka marketplace agen di orkas.ai.",
+      "Untuk pengguna di Indonesia, yang berguna minggu ini adalah MIT untuk mengeksplorasi orkestrasi multi-agen di workstation sendiri, plus jalur memakai CLI agent yang sudah ada tanpa membuang konfigurasi Claude Code atau OpenClaw. Yang belum berguna sebagai janji kantor adalah mengganti review hukum atau kepatuhan data hanya dengan agen riset README. Pasang dulu hanya setelah membedakan build sumber dari unduhan paket, lalu batasi konektor produksi sampai alur konfirmasi sebelum kirim benar-benar diuji. Dua ribu tiga ratus bintang tidak mengubah catatan README bahwa cloud sync belum ada di open source build.",
+    ],
+    link: "https://github.com/Orkas-AI/Orkas",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-28",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

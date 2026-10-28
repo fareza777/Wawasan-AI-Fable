@@ -5723,6 +5723,54 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-2207-adminduk-tiga-isu",
+    title: "Paraf DIM RUU Adminduk: Komdigi Tekankan Interoperabilitas, PDP, dan Hak Akses",
+    excerpt:
+      "ANTARA menulis Selasa 27 Oktober pukul 22.07 WIB. Wamenkomdigi Nezar Patria menyoroti integrasi data, pelindungan data pribadi, dan klasifikasi data kependudukan sebagai dasar hak akses. Acara paraf di Kementerian Dalam Negeri.",
+    category: "Analisis",
+    date: "2026-10-28",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selasa 27 Oktober 2026 pukul 22.07 WIB, ANTARA menurunkan Kemkomdigi soroti akses dan keamanan data warga dalam RUU Adminduk. Pewarta Maria Rosari Dwi Putri. Editor Siti Zulaikha. Foto yang tercetak HO Komdigi/Pey HS menampilkan Wakil Menteri Komunikasi dan Digital Nezar Patria dalam Paraf Daftar Inventarisasi Masalah RUU Adminduk di Kantor Kementerian Dalam Negeri, Jakarta Pusat.",
+          "Yang dibandingkan pada Rabu pagi ini adalah halaman ANTARA yang baru terbit dan rangkaian editorial kemarin soal Gates, FDA, dan transparansi platform. Acuannya untuk Nezar adalah paraf DIM di Kemendagri, bukan pengumuman model AI baru. Jadi yang baru adalah teks ANTARA pukul 22.07, bukan tanggal acara paraf yang tetap Selasa.",
+        ],
+      },
+      {
+        heading: "Tiga isu yang ANTARA cetak",
+        paragraphs: [
+          "Kutipan pembuka Nezar: rancangan undang-undang ini akan memperkuat perangkat regulasi kita memasuki dunia digital dan akan memperkuat lanskap digital Indonesia yang aman, sehat, dan berdampak.",
+          "Tiga isu krusial yang disebut: integrasi data antarsistem, pelindungan data pribadi, dan kejelasan hak akses. ANTARA menulis ketiganya menentukan bagaimana data kependudukan dipakai lintas instansi tanpa mengaburkan kewenangan pengelolaan dan hak penduduk atas data pribadinya.",
+          "Pada interoperabilitas, Nezar mengapresiasi DIM menempatkan integrasi data dalam kerangka yang selaras dengan Undang-Undang Satu Data Indonesia. Kutipan yang tercetak: keselarasan ini perlu dijaga hingga bisa dilaksanakan sesuai dengan undang-undang lain, dalam hal ini Satu Data Indonesia.",
+        ],
+      },
+      {
+        heading: "Penyelarasan PDP dan klasifikasi",
+        paragraphs: [
+          "ANTARA menulis penyelarasan RUU Adminduk dengan Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, terutama pembatasan tujuan pemanfaatan data.",
+          "Tiga hal yang Nezar sebut masih perlu ditegaskan: minimalisasi data, pengecualian korporasi dalam frasa setiap orang, serta larangan meminta salinan dokumen kependudukan. Halaman tidak membuka teks pasal DIM.",
+          "Penutup kutipan Nezar: tingkat klasifikasi data kependudukan perlu dipertegas agar selaras dengan tata kelola data lintas peraturan perundang-undangan. Masukan Komdigi disebut tercermin sebagai salah satu dasar pemberian hak akses.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pada Selasa pagi, detikInet menulis Gates dan analogi FDA. Halaman ANTARA 22.07 tidak menyebut Gates. Ini jalur regulasi data kependudukan, bukan debat self-regulation AI global.",
+          "JawaPos menurunkan liputan serupa Rabu 28 Oktober pukul 04.39 WIB dengan judul RUU Adminduk Dibahas, Komdigi Tekankan Pelindungan Data Pribadi dan Hak Akses. Editorial memakai ANTARA sebagai sumber utama dan JawaPos sebagai konfirmasi penerbitan hari Rabu, tanpa membuka teks DIM.",
+          "Untuk tim yang memasang agen AI di atas data administrasi, halaman ANTARA tidak menulis larangan teknis spesifik terhadap LLM. Yang bisa dibawa ke rapat internal adalah tripel interoperabilitas, PDP, dan klasifikasi sebelum integrasi NIK lintas sistem.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 28 Oktober, yang baru di ANTARA adalah halaman pukul 22.07 tentang paraf DIM dan tiga isu Komdigi. Yang tidak ada di halaman itu, dan ada di editorial kemarin, adalah kutipan Gates soal FDA.",
+          "Catatan editorial: artikel ini disusun dari ANTARA, Selasa 27 Oktober 2026 pukul 22.07 WIB, pewarta Maria Rosari Dwi Putri. JawaPos 28 Oktober 2026 pukul 04.39 WIB dibaca untuk konteks penerbitan Rabu. Teks RUU Adminduk dan DIM tidak dibuka langsung.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

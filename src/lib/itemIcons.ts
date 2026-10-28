@@ -73,6 +73,13 @@ const SLUG_ICONS: Record<string, string> = {
   "gemini-3-8-flash-high": "https://cdn.simpleicons.org/google",
   impeccable: "https://github.com/pbakaus.png",
   "claude-opus-5-5-max-fallback": "https://cdn.simpleicons.org/anthropic",
+  orkas: "https://github.com/Orkas-AI.png",
+  openduet: "https://github.com/CopilotKit.png",
+  "ub-mode": "https://github.com/unclebob.png",
+  "ai-pose-gallery-zh": "https://github.com/anhao.png",
+  nx2apple: "https://github.com/LNPANDY.png",
+  jailbreaks: "https://github.com/togg53192-cmd.png",
+  "qwen3-8-27b-xhigh-open": "https://www.google.com/s2/favicons?domain=qwen.ai&sz=128",
 };
 
 function githubOrgIcon(link: string): string | null {
