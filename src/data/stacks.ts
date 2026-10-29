@@ -5020,6 +5020,46 @@ export const stacks: Review[] = [
     date: "2026-10-28",
     featured: false,
   },
+  {
+    slug: "geo-doctor",
+    name: "GEO Doctor",
+    tagline: "Skill GEO: cek rekomendasi AI, tulis konten, ukur ulang",
+    tags: ["Open Source", "AI Skills", "GEO", "MIT"],
+    score: 7.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 7.5 },
+      { label: "Kualitas Output", value: 7.2 },
+      { label: "Pengalaman Pengguna", value: 7.3 },
+      { label: "Ekosistem & Integrasi", value: 7.0 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "GEO Doctor duduk di peringkat empat tren harian 29 Oktober 2026. README menulis skill MIT tanpa server: diagnosa kenapa asisten AI merekomendasikan pesaing, bantu tulis konten yang AI kutip, lalu bandingkan tingkat rekomendasi sebelum dan sesudah.",
+    pros: [
+      "README menulis cakupan model Tiongkok dan global, dari Doubao dan DeepSeek sampai ChatGPT, Claude, Perplexity, dan Gemini",
+      "Instalasi satu kalimat ke agen yang mendukung skill; WorkBuddy Windows disebut sudah teruji pada 14 Oktober 2026",
+      "Lisensi MIT. API GitHub pada 29 Oktober 2026: 80 bintang dan 57 fork",
+      "Handbook dan badge verifikasi materi 14 Oktober 2026 di docs/handbook.md menurut README",
+    ],
+    cons: [
+      "README menulis Doubao App belum bisa pasang skill; sampling tetap manual ke chatbot yang tidak mendukung skill",
+      "Wawasan AI tidak menjalankan workflow GEO penuh dan tidak memverifikasi klaim rekomendasi di produk pihak ketiga",
+      "80 bintang kecil dibanding repo tren lain; metode GEO masih bergantung pada kualitas fakta yang pengguna berikan",
+      "Perintah pasang panjang tidak disalin; tim harus membaca docs/install.md sendiri",
+    ],
+    verdict:
+      "Masuk akal untuk UMKM dan tim marketing Indonesia yang sudah punya agen coding, asal sampling ke chatbot produksi dilakukan manual dan fakta produk diverifikasi manusia. Jangan mengganti audit legal atau klaim iklan hanya dengan skor rekomendasi dari skill.",
+    body: [
+      "GEO Doctor dibuat di repositori Fangx-AI/geo-doctor. README yang dicek 29 Oktober 2026 menulis GEO 医生: skill untuk generative engine optimization. Alur yang dicetak: temukan celah rekomendasi, batch tulis dan terbitkan konten berbasis fakta nyata, lalu ukur ulang tingkat rekomendasi. README menulis gratis, open source, tanpa server, instal satu kalimat, dan bilingual. API GitHub hari yang sama mencatat 80 bintang, 57 fork, 0 isu terbuka, bahasa JavaScript, dan lisensi MIT. Repo dibuat 14 Oktober 2026. Push terakhir 26 Oktober 2026. Trendshift menaruhnya di peringkat empat. Wawasan AI tidak menjalankan sampling ke Doubao atau ChatGPT produksi.",
+      "Yang perlu dibaca sebelum mengira ini SaaS GEO adalah model distribusi skill. README menulis pasang lewat satu kalimat yang menaut folder skills/geo-doctor; agen yang disebut mencakup Claude Code, Codex, Kimi Code, dan WorkBuddy. Doubao dan DeepSeek disebut sebagai objek optimasi, bukan tempat pasang skill. Catatan README: aplikasi chat Doubao belum bisa pasang skill pada uji 14 Oktober 2026. WorkBuddy Windows disebut sudah teruji. Itu batas platform, bukan hasil uji editorial Wawasan AI hari ini.",
+      "README menampilkan demo GIF dengan produk fiktif dan angka contoh. Handbook menaut docs/handbook.md dengan badge verifikasi materi 2026-10-14. CI badge test.yml aktif menurut README. Tidak ada rilis di API GitHub pada pembacaan 29 Oktober. Editorial tidak membuka action.yml atau cli/ untuk hitungan fitur.",
+      "Untuk pembaca Indonesia, yang berguna minggu ini adalah MIT skill yang bisa dipasang ke agen coding yang sudah dipakai tim, tanpa biaya lisensi skill baru, selama tim siap sampling manual ke chatbot lokal yang tidak mendukung plugin. Yang belum berguna sebagai jaminan ranking adalah mengganti strategi konten manusia hanya dengan output batch skill tanpa review. Pasang dulu pada repo marketing non-rahasia, isi fakta produk sendiri, lalu dokumentasikan metode sampling sebelum mengandalkan angka rekomendasi ke klien.",
+    ],
+    link: "https://github.com/Fangx-AI/geo-doctor",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-29",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

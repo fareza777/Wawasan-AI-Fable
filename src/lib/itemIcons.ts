@@ -80,6 +80,8 @@ const SLUG_ICONS: Record<string, string> = {
   nx2apple: "https://github.com/LNPANDY.png",
   jailbreaks: "https://github.com/togg53192-cmd.png",
   "qwen3-8-27b-xhigh-open": "https://www.google.com/s2/favicons?domain=qwen.ai&sz=128",
+  "geo-doctor": "https://github.com/Fangx-AI.png",
+  "claude-sonnet-5-5-max-fallback": "https://cdn.simpleicons.org/anthropic",
 };
 
 function githubOrgIcon(link: string): string | null {

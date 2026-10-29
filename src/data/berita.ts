@@ -5771,6 +5771,62 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-0804-usabc-meutya-terhubung-tumbuh-terjaga",
+    title: "ANTARA Pukul 08.04: Meutya Dorong Investasi AS plus Tata Kelola AI",
+    excerpt:
+      "ANTARA Gorontalo Kamis 29 Oktober pukul 08.04 WIB melaporkan audiensi US-ASEAN Business Council dengan Menkomdigi Meutya Hafid. Tiga prinsip Terhubung, Tumbuh, dan Terjaga, plus sekitar 280 juta penduduk dan peta jalan AI nasional.",
+    category: "Analisis",
+    date: "2026-10-29",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Kamis 29 Oktober 2026 pukul 08.04 WIB, ANTARA News Gorontalo menurunkan Menkomdigi dorong investasi digital AS beri manfaat bagi Indonesia. Foto yang tercetak HO Kementerian Komunikasi dan Digital menampilkan Menkomdigi Meutya Hafid menerima audiensi US-ASEAN Business Council di Kantor Kemkomdigi, Jakarta Pusat, Rabu 28 Oktober 2026.",
+          "Yang dibandingkan pada Kamis pagi ini adalah halaman ANTARA yang baru terbit dan rangkaian editorial kemarin soal paraf DIM RUU Adminduk. Acuannya untuk Meutya adalah pertemuan Rabu dengan delegasi USABC, bukan pengumuman model AI baru. Jadi yang baru adalah teks ANTARA pukul 08.04, bukan tanggal acara yang tetap Rabu.",
+        ],
+      },
+      {
+        heading: "Yang halaman 08.04 cetak",
+        paragraphs: [
+          "Meutya mendorong perusahaan teknologi Amerika Serikat memperluas investasi yang memberi manfaat bagi masyarakat Indonesia: peluang ekonomi, peningkatan keterampilan tenaga kerja, dan pemanfaatan teknologi untuk memperbaiki layanan publik.",
+          "Kutipan yang tercetak: Pembangunan digital tidak cukup hanya menghubungkan masyarakat dengan internet. Konektivitas harus membuka peluang pertumbuhan ekonomi, meningkatkan kualitas sumber daya manusia, dan memperbaiki pelayanan publik.",
+          "Indonesia disebut butuh investasi infrastruktur digital sekaligus kolaborasi transfer pengetahuan, pengembangan talenta, dan akses inovasi yang lebih merata, termasuk masyarakat di wilayah perdesaan.",
+        ],
+      },
+      {
+        heading: "Terhubung, Tumbuh, Terjaga, dan AI",
+        paragraphs: [
+          "Meutya menulis arah transformasi digital bertumpu pada tiga prinsip: Terhubung, Tumbuh, dan Terjaga. Ketiganya disebut landasan agar perluasan konektivitas diikuti produktivitas sekaligus pelindungan pemanfaatan teknologi.",
+          "Pengembangan kecerdasan artifisial disebut perhatian utama. Meutya menegaskan Indonesia terbuka terhadap inovasi dan investasi AI dengan mengedepankan keamanan, pelindungan anak, dan pelindungan data pribadi.",
+          "Kutipan panjang yang tercetak: Indonesia perlu terus mengembangkan AI dan memanfaatkan peluang yang ditawarkannya. Namun, dengan jumlah penduduk sekitar 280 juta jiwa, kita juga harus memastikan adanya aturan dan mekanisme perlindungan yang memadai agar teknologi ini dapat digunakan secara aman dan bertanggung jawab.",
+        ],
+      },
+      {
+        heading: "Regulasi prediktif dan Brian McFeeters",
+        paragraphs: [
+          "Dalam penyusunan kebijakan digital, termasuk peta jalan AI nasional, Kemkomdigi disebut membuka dialog dengan pelaku industri. Kutipan Meutya: Kami ingin memastikan regulasi yang disiapkan dapat dipahami dan diprediksi oleh para pemangku kepentingan, bukan menjadi kejutan bagi industri.",
+          "CEO US-ASEAN Business Council Brian McFeeters disebut menekankan kemitraan pemerintah dan swasta di tengah perkembangan AI yang sangat cepat. Kutipan yang tercetak: Dibandingkan dengan bidang lain yang menjadi perhatian kami, isu digital merupakan bidang yang sangat membutuhkan kemitraan pemerintah dan sektor swasta. Kemitraan ini menjadi sangat penting karena perkembangan AI berlangsung dari minggu ke minggu.",
+          "Brian juga disebut menyoroti kontribusi perusahaan AS di Indonesia lewat investasi, transfer pengetahuan, pendidikan, pengembangan keahlian, dan program tanggung jawab sosial. USABC disebut menyiapkan laporan dokumentasi kontribusi tersebut.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pada Rabu, ANTARA pukul 22.07 menulis paraf DIM RUU Adminduk dan tiga isu data kependudukan. Halaman Gorontalo 08.04 hari ini tidak membuka teks RUU Adminduk. Itu jalur investasi digital AS versus regulasi data administrasi.",
+          "Di Jakarta, 29 Oktober juga memuat konferensi industri data dan AI di Pullman Thamrin menurut situs penyelenggara pihak ketiga. Editorial hari ini tidak membuka agenda resmi Kemkomdigi untuk acara itu; acuannya tetap kawat ANTARA 08.04.",
+          "Untuk tim produk, halaman ANTARA tidak menulis daftar vendor AI AS yang wajib dipakai. Yang bisa dibawa ke rapat internal adalah tripel Terhubung-Tumbuh-Terjaga plus pelindungan anak dan PDP sebelum integrasi model ke layanan publik.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 29 Oktober, yang baru di ANTARA Gorontalo adalah halaman pukul 08.04 tentang USABC, Meutya, dan tata kelola AI. Yang tidak ada di halaman itu, dan ada di editorial kemarin, adalah kutipan Nezar Patria soal paraf DIM.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News Gorontalo, Kamis 29 Oktober 2026 pukul 08.04 WIB. Acara audiensi di Kantor Kemkomdigi disebut Rabu 28 Oktober 2026. Laporan USABC lengkap tidak dibuka. Situs konferensi data dan AI di Thamrin tidak dibuka untuk kutipan agenda resmi.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

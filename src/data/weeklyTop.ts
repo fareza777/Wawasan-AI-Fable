@@ -135,12 +135,12 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
   },
   "Leonxlnx/taste-skill": {
     description:
-      "Skill prompt engineering untuk menyaring output AI yang generik dan steril — bikin hasil AI punya karakter dan tidak terasa template.",
+      "taste-skill memberi agen coding arah desain, gambar referensi, dan cek browser supaya halaman tidak terasa generik. README menaut tasteskill.dev dan TasteCode di tastecode.dev. Wawasan AI tidak memasang skill ke Cursor.",
     highlights: [
-      "Skill untuk agen AI yang berfungsi sebagai 'penyaring rasa' — mencegah AI menghasilkan output yang membosankan dan generik.",
-      "Masalah yang diselesaikan: output AI sering terlalu 'aman' dan steril; taste-skill menambahkan filter untuk membuat output lebih hidup, punya karakter, dan tidak terasa seperti template.",
-      "Berguna untuk content creator, copywriter, atau siapa saja yang hasil AI-nya terasa 'AI banget' — solusi praktis tanpa fine-tuning model.",
-      "Pendekatan berbasis prompt engineering — ringan, cepat dipasang, tidak butuh GPU atau model tambahan.",
+      "README menulis skill untuk art direction, reference images, dan browser check alih-alih halaman AI slop. Sponsor interfaces.dev dan reactbits.dev disebut di README.",
+      "Rilis v2.1.5 terbit 24 Oktober 2026 pukul 23.44 UTC menurut API GitHub. Tag lebih lama v2.1.4 pada 23 Oktober.",
+      "Lisensi MIT, ditulis JavaScript. API GitHub pada 29 Oktober 2026: 104.547 bintang, 7.072 fork, 512 isu terbuka. Repo dibuat 19 Februari 2026, push terakhir 28 Oktober 2026. Homepage tasteskill.dev.",
+      "Trendshift menaruhnya di peringkat tujuh dengan topik AI skills. Ulasan alat hari ini memakai README yang sama.",
     ],
   },
   "kenn-io/agentsview": {
@@ -1191,7 +1191,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
                                                           "Pipeline RAG end-to-end: mengindeks buku, paper, dan catatan Anda (PDF, DOCX, markdown), lalu memanggil AI agent untuk menjawab, merangkum, atau membuat soal berdasarkan sumber tersebut — bukan jawaban model dari memori internal.",
                                                           "Antarmuka web Next.js 16 plus CLI 'agent-native' untuk automasi — ditambah modul 'partner' (diskusi socratic), 'guided learning' (latihan bertahap), dan 'deep research' (riset multi-langkah) dalam satu paket.",
                                                           "Dikelola tim di balik LightRAG dan proyek agentik terkenal lain — track record kuat di ranah RAG dan personalisasi agen AI, relevan untuk pelajar/peneliti Indonesia yang belajar AI/ML secara mandiri.",
-                                                          "API GitHub pada 28 Oktober 2026: 46.030 bintang, 5.769 fork, 218 isu terbuka, bahasa Python, lisensi Apache-2.0. Push terakhir 27 Oktober 2026. Homepage arxiv.org/abs/2604.26962. Trendshift menaruhnya di peringkat enam.",
+                                                          "API GitHub pada 29 Oktober 2026: 48.109 bintang, 5.965 fork, 218 isu terbuka, bahasa Python, lisensi Apache-2.0. Push terakhir 28 Oktober 2026. Homepage arxiv.org/abs/2604.26962. Trendshift menaruhnya di peringkat lima.",
                                                         ],
                                                       },
                                                       "xai-org/grok-build": {
@@ -2894,7 +2894,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Menghubungkan agen ke pemeriksaan biner native, aplikasi JavaScript dan Electron, assembly .NET, dan situs, lewat `npx rea-agents setup`.",
       "Analisis berjalan lokal. Mesin native opsional: instalasi Hopper atau Ghidra yang sudah ada; analisis JavaScript statis tidak membutuhkan keduanya.",
-      "Lisensi MIT, ditulis TypeScript. API GitHub pada 27 Oktober 2026: 391.966 bintang, 98.217 fork, dan 1.131 isu terbuka. Ulasan repo tertanggal 9 Oktober masih memakai hitungan hari itu, 27.420 bintang dan 3.130 fork. Rilis rea-agents-6.8.0 terbit 25 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Push terakhir 27 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
+      "Lisensi MIT, ditulis TypeScript. API GitHub pada 29 Oktober 2026: 402.892 bintang, 101.012 fork, dan 1.131 isu terbuka. Rilis rea-agents-6.8.0 terbit 25 Oktober 2026 dan tidak membawa aset pada pembacaan yang sama. Push terakhir 29 Oktober 2026. README menyebut pemasangan untuk Claude Code, Codex, Cursor, Gemini CLI, dan Grok Build, plus agen lain di dokumen instalasi.",
       "Memeriksa perangkat lunak pihak ketiga punya batas hukum yang bergantung pada lisensi dan yurisdiksi. Pakai untuk sistem yang memang berhak kamu pelajari.",
     ],
   },
@@ -3425,7 +3425,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README menulis tautan yang diambil berasal dari API publik penyedia, dan proyek ini tidak menjanjikan pembongkaran batas kecepatan. Kalimat yang sama meminta promosi pihak ketiga yang memakai frasa percepat unduh atau pecah batas kecepatan jangan dianggap sikap proyek.",
       "Versi resmi yang README cetak v1.1.3. Versi uji yang dicetak v1.1.4, dengan baris catatan 9 September 2026. API rilis terbaru adalah v1.1.3 pada 18 Februari 2026. Aset v1.1.3.user.js berukuran 584.293 byte dengan 315.975 unduhan pada pembacaan 27 Oktober.",
       "Halaman yang sama menautkan skrip pendamping yang namanya memakai frasa versi anggota muda untuk beberapa layanan awan. Tautan itu tidak dibuka. Alamat pemasang userscript tidak disalin ke narasi ini.",
-      "Lisensi AGPL-3.0, ditulis JavaScript. API GitHub pada 27 Oktober 2026: 30.478 bintang, 2.092 fork, 49 isu terbuka. Repo dibuat 10 Agustus 2022, push terakhir 23 Oktober 2026. Homepage di API kosong. Trendshift menaruhnya di peringkat satu.",
+      "Lisensi AGPL-3.0, ditulis JavaScript. API GitHub pada 29 Oktober 2026: 34.897 bintang, 2.475 fork, 49 isu terbuka. Repo dibuat 10 Agustus 2022, push terakhir 27 Oktober 2026. Homepage di API kosong. Trendshift menaruhnya di peringkat satu.",
     ],
   },
   "rohit267/net-merge": {
@@ -3674,8 +3674,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis turunan dari skill frontend-design Anthropic, dengan /impeccable init yang menulis PRODUCT.md dan perintah audit, polish, critique, distill, serta live untuk varian di browser.",
       "Tiga tag teratas pada 27 Oktober: skill-v4.8.0 dan cli-v4.8.0 pada 26 Oktober pukul 23.41 UTC, serta engine-v0.1.18 pada 26 Oktober pukul 20.26 UTC. Aset universal.zip pada skill-v4.8.0 berukuran 18.116.588 byte dengan 701 unduhan.",
-      "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 27 Oktober 2026: 89.276 bintang, 5.313 fork, 45 isu terbuka. Repo dibuat 16 November 2025, push terakhir 27 Oktober 2026. Homepage di API kosong. README menaut impeccable.style.",
-      "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak membuka ekstensi browser dan tidak menjalankan 62 aturan detektor.",
+      "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 29 Oktober 2026: 92.822 bintang, 5.484 fork, 45 isu terbuka. Repo dibuat 16 November 2025, push terakhir 28 Oktober 2026. Homepage di API kosong. README menaut impeccable.style.",
+      "Ulasan alat kemarin memakai README yang sama. Wawasan AI tidak membuka ekstensi browser dan tidak menjalankan 62 aturan detektor.",
     ],
   },
   "anhao/ai-pose-gallery-zh": {
@@ -3694,8 +3694,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis MIT, local-first, macOS dan Windows. Unduhan di orkas.ai. Paket aplikasi menulis 500 kredit model bawaan tanpa kunci API. Proyek, to-do, auto-advance, dan otomasi terjadwal disebut di README. Perintah pasang tidak disalin.",
       "Rilis v2026.10.27 terbit 27 Oktober 2026. Aset yang API catat: Orkas.Setup.1.9.5.exe 402.069.448 byte dengan 11 unduhan, Orkas-1.9.5.dmg 512.618.547 byte dengan 4 unduhan, Orkas-1.9.5-arm64.dmg 470.404.434 byte dengan 3 unduhan, pada pembacaan 28 Oktober.",
-      "API GitHub pada 28 Oktober 2026: 2.358 bintang, 114 fork, 1 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 28 Oktober 2026. Homepage orkas.ai. README menulis shared projects dan cloud sync hanya di aplikasi paket, bukan build sumber terbuka.",
-      "Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
+      "API GitHub pada 29 Oktober 2026: 2.950 bintang, 170 fork, 1 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 29 Oktober 2026. Homepage orkas.ai. README menulis shared projects dan cloud sync hanya di aplikasi paket, bukan build sumber terbuka.",
+      "Ulasan alat kemarin memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
     ],
   },
   "unclebob/ub-mode": {
@@ -3736,6 +3736,46 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "API lisensi null. API GitHub pada 28 Oktober 2026: 5.637 bintang, 834 fork, 14 isu terbuka. Bahasa di API null. Repo dibuat 18 Juni 2026, push terakhir 25 Oktober 2026. Tidak ada rilis.",
       "Menggunakan prompt pihak ketiga untuk melanggar ToS layanan adalah risiko akun pengguna. Wawasan AI tidak menempelkan prompt ke sesi produksi.",
       "Trendshift menaruhnya di peringkat sepuluh dengan topik Curated list.",
+    ],
+  },
+  "elder-plinius/L1B3RT4S": {
+    description:
+      "L1B3RT4S mengkurasi prompt sistem dari elder-plinius untuk banyak model frontier. README menulis JAILBREAKS FOR ALL FLAGSHIP AI MODELS dan menaut BASI Discord. Bukan panduan bypass kebijakan vendor.",
+    highlights: [
+      "Repo saudara CL4R1T4S dan T3MP3ST dari penulis yang sama sudah punya narasi di situs ini. L1B3RT4S masuk tren dengan topik Curated list.",
+      "Lisensi AGPL-3.0. API GitHub pada 29 Oktober 2026: 22.288 bintang, 2.707 fork, 76 isu terbuka. Repo dibuat 8 April 2024, push terakhir 28 Oktober 2026. Tidak ada rilis di API.",
+      "Menggunakan prompt pihak ketiga untuk melanggar ToS layanan adalah risiko akun pengguna. Wawasan AI tidak menempelkan prompt ke sesi produksi.",
+      "Trendshift menaruhnya di peringkat dua. Deskripsi API memakai teks README yang sengaja provokatif; editorial tidak menyalin prompt.",
+    ],
+  },
+  "Fangx-AI/geo-doctor": {
+    description:
+      "GEO 医生 adalah skill GEO sumber terbuka: cek kenapa ChatGPT, Claude, DeepSeek, atau Doubao tidak merekomendasikan produkmu, lalu bantu tulis konten yang AI mau kutip. README menulis tanpa server dan instal satu kalimat ke agen coding.",
+    highlights: [
+      "README menulis alur temukan celah, batch tulis dan terbitkan, lalu bandingkan tingkat rekomendasi sebelum dan sesudah. Doubao dan DeepSeek disebut objek optimasi; Claude Code, Codex, Kimi Code, dan WorkBuddy disebut tempat pasang skill.",
+      "README menulis Doubao App belum bisa pasang skill pada uji 14 Oktober 2026. WorkBuddy Windows disebut sudah teruji. Lisensi MIT.",
+      "API GitHub pada 29 Oktober 2026: 80 bintang, 57 fork, 0 isu terbuka, bahasa JavaScript. Repo dibuat 14 Oktober 2026, push terakhir 26 Oktober 2026. Tidak ada rilis.",
+      "Trendshift menaruhnya di peringkat empat. Ulasan alat hari ini memakai README yang sama. Wawasan AI tidak menjalankan sampling ke chatbot produksi.",
+    ],
+  },
+  "milind-soni/OpenMausBot": {
+    description:
+      "OpenMausBot adalah aplikasi chat Electron yang README tulis sebagai alternatif Grok Bot sumber terbuka: banyak bot agen Claude atau Codex lokal, masing-masing punya model, VM, dan aplikasi terhubung. Wawasan AI tidak mengunduh DMG.",
+    highlights: [
+      "README menulis bring-your-own-agent, local-first, dan tidak afiliasi xAI, Meta, OpenAI, atau Manus. Powered by boat.dev. React 19, TypeScript strict, Electron untuk macOS, Windows, dan Ubuntu.",
+      "Rilis v0.1.131 terbit 28 Oktober 2026 pukul 22.20 UTC menurut API. Aset macOS dan Windows ditandatangani menurut README; Ubuntu .deb dan AppImage beta disebut.",
+      "Lisensi Apache-2.0. API GitHub pada 29 Oktober 2026: 6.697 bintang, 1.043 fork, 512 isu terbuka. Repo dibuat 11 Agustus 2026, push terakhir 29 Oktober 2026. Homepage openmausbot.com.",
+      "Trendshift menaruhnya di peringkat delapan dengan topik AI agent. Wawasan AI tidak menjalankan bot produksi dan tidak menghubungkan aplikasi pihak ketiga.",
+    ],
+  },
+  "zeabur-oss/zeabur": {
+    description:
+      "Zeabur adalah PaaS self-hosted di Kubernetes sendiri: proyek, layanan, diagnosis plain language, tanpa database bawaan. README menulis pre-alpha 0.1.1 dan jangan arahkan ke cluster yang tidak boleh rusak.",
+    highlights: [
+      "README menulis tiga jalur: installer satu server K3s atau RKE2, Helm di cluster ada, atau zeaburctl ui dengan kubeconfig lokal. Dokumentasi di oss.zeabur.com/docs/zeabur/ dalam Inggris, 繁體中文, dan 简体中文.",
+      "Rilis v0.1.1 terbit 28 Oktober 2026 pukul 17.05 UTC. Repo dibuat 24 Oktober 2026, push terakhir 28 Oktober 2026.",
+      "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 29 Oktober 2026: 255 bintang, 29 fork, 0 isu terbuka.",
+      "Trendshift menaruhnya di peringkat sembilan. Wawasan AI tidak memasang Helm chart ke cluster produksi.",
     ],
   },
 };

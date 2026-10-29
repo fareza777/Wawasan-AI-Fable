@@ -5661,6 +5661,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-28",
     featured: false,
   },
+  {
+    slug: "claude-sonnet-5-5-max-fallback",
+    name: "Claude Sonnet 5.5 (Max, Default Fallback)",
+    tagline: "Indeks 54, $10,02 per tugas, 136,8 t/s, TTFT 448,12 d",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Multimodal"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 8.4 },
+      { label: "Coding", value: 7.8 },
+      { label: "Kecepatan", value: 7.6 },
+      { label: "Harga/Performa", value: 6.8 },
+    ],
+    aa_intelligence_index: 54,
+    aa_price_input: 2,
+    aa_price_output: 10,
+    aa_synced_at: "2026-10-29",
+    summary:
+      "Artificial Analysis, dicek 29 Oktober 2026, memberi Claude Sonnet 5.5 (Max, Default Fallback) intelligence index 54 dan menandainya proprietary. Kartu intelijen menulis 4 dari 4 satuan dan peringkat 8 dari 52. Keluaran 136,8 token per detik pada API Anthropic, di atas median FAQ 86,2.",
+    pros: [
+      "Intelligence index 54, well above median 42 untuk kelas harga serupa (sumber: Artificial Analysis, 29 Oktober 2026)",
+      "Kartu biaya: $2,00 masukan dan $10,00 keluaran per juta token, diskon cache 95 persen, $10,02 per tugas indeks, peringkat biaya 47 dari 51",
+      "Spesifikasi halaman: masukan teks dan gambar, keluaran teks, konteks 1,0 juta token, reasoning menyala",
+      "Ringkasan perbandingan menyebut notably fast pada 137 token per detik terhadap rata-rata 86",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 448,12 detik, median 3,72 detik, at the higher end",
+      "Verbosity: kartu menulis 340 juta token keluaran, peringkat 51 dari 51, 4 dari 4 satuan",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Biaya $10,02 per tugas indeks di atas banyak model kelas menengah; verbosity membesarkan tagihan",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 54 dengan kecepatan keluaran tinggi, selama tugasnya muat di teks atau gambar dan tim menerima biaya per tugas $10,02. Jangan menempelkan 137 di ringkasan ke kolom 136,8, dan jangan menganggap TTFT 448,12 detik cocok untuk chat interaktif.",
+    body: [
+      "Claude Sonnet 5.5 (Max, Default Fallback) adalah varian reasoning dari Anthropic yang halamannya di Artificial Analysis dibaca 29 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 28 September 2026 dan menulis pembuatnya Anthropic. Spesifikasi yang terpasang: masukan teks dan gambar; keluaran teks; jendela konteks 1,0 juta token; dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 29 Oktober 2026.) Intelligence index-nya 54 pada indeks versi 5.0 yang keterangan grafik sebut. Kartu intelijen menulis 8 dari 52 dan 4 dari 4 satuan. FAQ menaruh skor 54 well above median 42 untuk model seharga serupa. Ringkasan perbandingan memakai median 42 yang sama dan menyebut model ini amongst the leading models untuk kelas itu, tetapi juga very verbose. Teks kelas di halaman itu mengatakan ada 223 model di kelas pembanding. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $2,00 per juta token masukan dan $10,00 per juta token keluaran, diskon cache 95 persen, biaya rata-rata $10,02 per tugas indeks, peringkat biaya 47 dari 51, dan 4 dari 4 satuan. Ringkasan menyebut masukan moderately priced terhadap median $2,00 dan keluaran moderately priced terhadap median $10,00. FAQ memakai median itu, serta menulis angka itu berdasarkan API Anthropic. FAQ juga menulis tarif campuran $1,47 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 9 penyedia. Penyebut biaya 51 tidak sama dengan 223 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan dan latensi perlu dibaca bersama. Kartu menulis 136,8 token per detik, peringkat 38 dari 193, dan 4 dari 4 satuan. FAQ menulis 136,8 token per detik pada API Anthropic, di atas median 86,2. Ringkasan membulatkan menjadi 137 token per detik terhadap rata-rata 86, dan menyebutnya notably fast. FAQ juga menulis waktu ke token pertama 448,12 detik, median 3,72 detik, dan menyebutnya at the higher end. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. Editorial tidak menyamakan 448,12 detik di FAQ dengan chat real-time tanpa verifikasi ulang. Verbosity: kartu menulis 340 juta token keluaran, peringkat 51 dari 51, dan 4 dari 4 satuan. Ringkasan menyebut 340 juta very verbose terhadap median 64 juta. FAQ menyebut 340 juta at the higher end terhadap median 64 juta yang sama.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 54 dan kecepatan keluaran tinggi pada kartu 29 Oktober, dengan biaya per tugas $10,02 yang sudah memasukkan verbosity. Karena TTFT duduk jauh di atas median, agen yang harus membalas di bawah empat detik belum punya alasan latensi dari halaman ini. Karena keluaran sangat verbose, pipeline batch atau review manusia lebih masuk akal daripada chat publik tanpa batas token. Karena bobot tidak tersedia, jalur mesin sendiri belum ada pada pembacaan hari ini. Pakai kartu ini untuk membandingkan indeks dan tagihan, lalu pisahkan 137 di ringkasan dari 136,8 di kartu sebelum mengganti model produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/claude-sonnet-5-5",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-29",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
