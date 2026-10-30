@@ -1,0 +1,138 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-30T07:36:07.852Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ccch1mneyyy/dsh-go",
+      "owner": "ccch1mneyyy",
+      "repo": "dsh-go",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。Android · Unofficial.",
+      "githubUrl": "https://github.com/ccch1mneyyy/dsh-go",
+      "trendshiftUrl": "https://trendshift.io/repositories/319451",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-10-25T08:09:52Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Orkas-AI/Orkas",
+      "owner": "Orkas-AI",
+      "repo": "Orkas",
+      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "githubUrl": "https://github.com/Orkas-AI/Orkas",
+      "trendshiftUrl": "https://trendshift.io/repositories/36597",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-29T12:19:08Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "HeyPuter/everything",
+      "owner": "HeyPuter",
+      "repo": "everything",
+      "description": "We're rebuilding and open-sourcing the world’s software from scratch.",
+      "githubUrl": "https://github.com/HeyPuter/everything",
+      "trendshiftUrl": "https://trendshift.io/repositories/304148",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-13T16:18:22Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Donchitos/Claude-Code-Game-Studios",
+      "owner": "Donchitos",
+      "repo": "Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "githubUrl": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "trendshiftUrl": "https://trendshift.io/repositories/23762",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-12T05:21:38Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "qybaihe/bla",
+      "owner": "qybaihe",
+      "repo": "bla",
+      "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+      "githubUrl": "https://github.com/qybaihe/bla",
+      "trendshiftUrl": "https://trendshift.io/repositories/323569",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-25T05:25:45Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "HKUDS/DeepTutor",
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "githubUrl": "https://github.com/HKUDS/DeepTutor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17099",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-12-28T15:35:54Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "l0ng-ai/openidea",
+      "owner": "l0ng-ai",
+      "repo": "openidea",
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+      "githubUrl": "https://github.com/l0ng-ai/openidea",
+      "trendshiftUrl": "https://trendshift.io/repositories/316988",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-21T12:23:14Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Tencent-Hunyuan/Hy-Memory",
+      "owner": "Tencent-Hunyuan",
+      "repo": "Hy-Memory",
+      "description": "",
+      "githubUrl": "https://github.com/Tencent-Hunyuan/Hy-Memory",
+      "trendshiftUrl": "https://trendshift.io/repositories/307744",
+      "language": "Python",
+      "topics": [
+        "AI memory"
+      ],
+      "dateCreated": "2026-10-15T13:06:56Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "togg53192-cmd/jailbreaks",
+      "owner": "togg53192-cmd",
+      "repo": "jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "githubUrl": "https://github.com/togg53192-cmd/jailbreaks",
+      "trendshiftUrl": "https://trendshift.io/repositories/207462",
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2026-06-18T18:21:25Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "InukaAsith/TwinDesk",
+      "owner": "InukaAsith",
+      "repo": "TwinDesk",
+      "description": "All your computers and your phone, working as one desk. Screens, apps, files, clipboard, calls, texts, notifications, mouse and keyboard, shared between Mac, Windows, Linux and Android. Free and open source. No account, no cloud, and now no shared network needed.",
+      "githubUrl": "https://github.com/InukaAsith/TwinDesk",
+      "trendshiftUrl": "https://trendshift.io/repositories/310587",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-14T01:19:02Z"
+    }
+  ]
+}
