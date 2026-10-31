@@ -5060,6 +5060,46 @@ export const stacks: Review[] = [
     date: "2026-10-29",
     featured: false,
   },
+  {
+    slug: "agent-desktop",
+    name: "Agent Desktop",
+    tagline: "Computer use lewat accessibility tree, bukan piksel",
+    tags: ["Open Source", "Computer Use", "CLI", "Vercel Labs"],
+    score: 8.0,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 7.8 },
+      { label: "Pengalaman Pengguna", value: 7.6 },
+      { label: "Ekosistem & Integrasi", value: 8.2 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "Agent Desktop duduk di peringkat satu tren harian 31 Oktober 2026. README menulis CLI Rust plus pustaka C: snapshot JSON dengan ref, klik type scroll lewat API aksesibilitas, tanpa pixel matching.",
+    pros: [
+      "README menulis 56 perintah operasional, envelope JSON satu per perintah, skill desktop dan platform lewat agent-desktop skills get",
+      "Pasang npm install -g agent-desktop; rilis v1.0.2 membawa arsip per platform x64 dan ARM64 menurut API",
+      "Lisensi Apache-2.0. API GitHub pada 31 Oktober 2026: 2.078 bintang dan 140 fork",
+      "Loop observe-act-verify tetap di agen; refs STALE_REF memaksa snapshot ulang, mengurangi klik buta",
+    ],
+    cons: [
+      "macOS butuh izin Accessibility; Linux butuh at-spi2-core. Homebrew dan Scoop resmi belum ada di katalog default menurut README",
+      "Snapshot clipboard screenshot bisa berisi data sensitif; README melarang unggah ke log publik",
+      "Helper JEV opsional mengirim deskripsi layar ke model provider terpisah dari CLI native",
+      "Wawasan AI tidak menjalankan agent-desktop permissions --guide dan tidak mengklik aplikasi produksi",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai lapisan computer use yang lebih stabil daripada koordinat piksel, asal tim membaca peringatan privasi dan izin OS sebelum agentic AI menyentuh desktop ASN atau perbankan.",
+    body: [
+      "Agent Desktop dibuat di repositori vercel-labs/agent-desktop. README yang dicek 31 Oktober 2026 mendeskripsikan computer use untuk agen AI: membaca dan mengoperasikan aplikasi desktop lewat pohon aksesibilitas OS. API GitHub hari yang sama mencatat 2.078 bintang, 140 fork, 18 isu terbuka, bahasa Rust, dan lisensi Apache-2.0. Repo dibuat 19 Februari 2026. Push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat satu. Wawasan AI tidak menjalankan npm install global dan tidak membuka snapshot Finder produksi.",
+      "Yang paling perlu dibaca sebelum mengira ini layanan cloud adalah arsitektur lokal. README mencetak snapshot --app Finder -i, click @snapshot_id:ref, lalu snapshot lagi untuk verifikasi. Refs ditolak jika bare @e8. macOS memakai command host privat per namespace snapshot; host keluar setelah 15 menit idle. TMPDIR harus dimiliki pengguna dengan mode 0700. Headless default: ref actions lewat API aksesibilitas tanpa memindahkan pointer kecuali flag --headed.",
+      "Rilis API dimulai dari v1.0.2. Aset agent-desktop-v1.0.2-aarch64-apple-darwin.tar.gz berukuran 2.181.954 byte dengan 12 unduhan; agent-desktop-v1.0.2-x86_64-unknown-linux-gnu.tar.gz 3.359.127 byte dengan 11 unduhan, pada pembacaan 31 Oktober. README menulis npx skills add https://github.com/vercel-labs/agent-desktop --skill agent-desktop untuk harness. Envelope error membawa code disposition suggestion; retry hanya bila error.disposition.retry safe menurut docs/json-output.md.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah Apache-2.0 untuk menempel computer use ke Claude Code, Codex, atau OpenClaw tanpa vendor lock-in Vercel cloud, selama mesin punya izin aksesibilitas. Yang belum berguna sebagai jalur kantor tanpa review hukum adalah agentic AI yang mengotorisasi transfer uang atau mengisi formulir warga tanpa human in the loop, terutama setelah ANTARA 30 Oktober menulis risiko fatal pada agentic AI perbankan. Pasang dulu hanya pada VM uji, redact snapshot sebelum log, lalu pisahkan CLI native dari helper JEV yang mengirim layar ke model pihak ketiga. Dua ribu bintang tidak mengubah kalimat privasi di README.",
+    ],
+    link: "https://github.com/vercel-labs/agent-desktop",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-10-31",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

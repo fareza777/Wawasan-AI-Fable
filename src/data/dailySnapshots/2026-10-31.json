@@ -1,0 +1,140 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-10-31T02:01:26.181Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "vercel-labs/agent-desktop",
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "description": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
+      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/111178",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-19T18:00:49Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "wangzan101/Mika",
+      "owner": "wangzan101",
+      "repo": "Mika",
+      "description": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "githubUrl": "https://github.com/wangzan101/Mika",
+      "trendshiftUrl": "https://trendshift.io/repositories/326940",
+      "language": "Kotlin",
+      "topics": [],
+      "dateCreated": "2026-10-29T14:34:07Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "chris124567/cfsolve",
+      "owner": "chris124567",
+      "repo": "cfsolve",
+      "description": "Cloudflare turnstile and challenge page solver in Rust (full reverse, request based)",
+      "githubUrl": "https://github.com/chris124567/cfsolve",
+      "trendshiftUrl": "https://trendshift.io/repositories/324194",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-26T02:31:21Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "heydamir/unslop",
+      "owner": "heydamir",
+      "repo": "unslop",
+      "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+      "githubUrl": "https://github.com/heydamir/unslop",
+      "trendshiftUrl": "https://trendshift.io/repositories/327085",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-29T15:41:21Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Orkas-AI/Orkas",
+      "owner": "Orkas-AI",
+      "repo": "Orkas",
+      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "githubUrl": "https://github.com/Orkas-AI/Orkas",
+      "trendshiftUrl": "https://trendshift.io/repositories/36597",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-29T12:19:08Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Djihads80/Eglantine",
+      "owner": "Djihads80",
+      "repo": "Eglantine",
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "githubUrl": "https://github.com/Djihads80/Eglantine",
+      "trendshiftUrl": "https://trendshift.io/repositories/326438",
+      "language": "C++",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-10-29T00:25:18Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "valentderah/totk-pc-recomp",
+      "owner": "valentderah",
+      "repo": "totk-pc-recomp",
+      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a Vulkan renderer. Game files not included.",
+      "githubUrl": "https://github.com/valentderah/totk-pc-recomp",
+      "trendshiftUrl": "https://trendshift.io/repositories/326608",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-29T12:32:46Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "microsoft/TokenEconomizer",
+      "owner": "microsoft",
+      "repo": "TokenEconomizer",
+      "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+      "githubUrl": "https://github.com/microsoft/TokenEconomizer",
+      "trendshiftUrl": "https://trendshift.io/repositories/315380",
+      "language": "Python",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-10-13T04:16:50Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ifixai-ai/iFixAi",
+      "owner": "ifixai-ai",
+      "repo": "iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "githubUrl": "https://github.com/ifixai-ai/iFixAi",
+      "trendshiftUrl": "https://trendshift.io/repositories/29638",
+      "language": "Python",
+      "topics": [
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-04-27T13:02:34Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ramenvr/autopilot",
+      "owner": "ramenvr",
+      "repo": "autopilot",
+      "description": "Playtest any game.",
+      "githubUrl": "https://github.com/ramenvr/autopilot",
+      "trendshiftUrl": "https://trendshift.io/repositories/328154",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-30T03:47:28Z"
+    }
+  ]
+}

@@ -82,6 +82,8 @@ const SLUG_ICONS: Record<string, string> = {
   "qwen3-8-27b-xhigh-open": "https://www.google.com/s2/favicons?domain=qwen.ai&sz=128",
   "geo-doctor": "https://github.com/Fangx-AI.png",
   "claude-sonnet-5-5-max-fallback": "https://cdn.simpleicons.org/anthropic",
+  "agent-desktop": "https://github.com/vercel-labs.png",
+  "gemini-4-carbon-high": "https://cdn.simpleicons.org/google",
 };
 
 function githubOrgIcon(link: string): string | null {

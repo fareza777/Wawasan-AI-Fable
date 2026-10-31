@@ -5827,6 +5827,62 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-2344-nezar-mitigasi-risiko-ai",
+    title: "ANTARA Pukul 23.44: Nezar Tekankan Mitigasi Risiko Agentic AI",
+    excerpt:
+      "ANTARA Jumat 30 Oktober pukul 23.44 WIB melaporkan Wamenkomdigi Nezar Patria soal risiko AI di keuangan dan kesehatan, UU PDP 27/2022, serta Peta Jalan Nasional AI dan Etika AI.",
+    category: "Analisis",
+    date: "2026-10-30",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Jumat 30 Oktober 2026 pukul 23.44 WIB, ANTARA News menurunkan Nezar ingatkan pentingnya mitigasi risiko pemanfaatan AI. Foto yang tercetak HO Kemkomdigi menampilkan Wakil Menteri Komunikasi dan Digital Nezar Patria dalam sesi wawancara media di Kantor Kemkomdigi, Jakarta Pusat, Selasa 27 Oktober 2026.",
+          "Yang dibandingkan pada Jumat malam ini adalah halaman ANTARA yang baru terbit dan rangkaian editorial Kamis soal audiensi US-ASEAN Business Council dengan Menkomdigi Meutya Hafid. Acuannya untuk Nezar adalah keterangan pers di Jakarta, Jumat, bukan pengumuman repo agent-desktop yang memimpin Trendshift Sabtu pagi. Jadi yang baru adalah teks ANTARA pukul 23.44, bukan tanggal foto Selasa.",
+        ],
+      },
+      {
+        heading: "Keuangan: agentic AI dan eksekusi otomatis",
+        paragraphs: [
+          "Nezar menyampaikan pemanfaatan AI mestinya tidak hanya berorientasi pada inovasi dan efisiensi, tetapi juga memperhitungkan risiko ketika AI mengambil peran dalam pengambilan keputusan.",
+          "Kutipan yang tercetak untuk perbankan: Di sektor layanan keuangan, misalnya perbankan, penggunaan AI, apalagi agentic AI, ketika kita memberikan otoritas kepadanya untuk melakukan tindakan dan pengambilan keputusan, apabila terjadi kesalahan, maka akan menjadi fatal.",
+          "Kutipan lanjutan: Uang bisa hilang atau bahkan menimbulkan kekacauan yang bersifat sistemik akibat kesalahan eksekusi.",
+        ],
+      },
+      {
+        heading: "Kesehatan, PDP, dan regulasi pendukung",
+        paragraphs: [
+          "Nezar menulis penggunaan AI untuk mendiagnosis penyakit dan membantu pengambilan keputusan, baik oleh dokter maupun oleh agen AI dalam layanan medis, juga memiliki risiko tinggi. Di bidang kesehatan, yang dipertaruhkan adalah nyawa manusia.",
+          "Risiko kesehatan juga mencakup keamanan data pribadi pasien. Nezar menegaskan Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi sebagai instrumen penting menjaga ekosistem AI nasional.",
+          "Kutipan yang tercetak: Kita sudah punya seperangkat regulasi yang menjaga ekosistem AI meski tidak berhubungan langsung dengannya, seperti Undang-Undang ITE dan Undang-Undang Perlindungan Data Pribadi. Ini penting sekali karena kalau bicara soal AI kan makanannya data.",
+        ],
+      },
+      {
+        heading: "Peta jalan, etika, dan keseimbangan regulasi",
+        paragraphs: [
+          "Pemerintah menyiapkan peraturan mengenai Peta Jalan Nasional AI dan Etika AI guna mengarahkan pengembangan teknologi dan memastikan pemanfaatan AI memperhatikan etika dan pelindungan masyarakat.",
+          "Nezar menyatakan pemerintah perlu mencermati perkembangan teknologi secara menyeluruh: Kita harus memetakan dulu perkembangan secara menyeluruh supaya tidak terlalu berat dalam regulasi.",
+          "Kutipan penutup: Yang kita butuhkan sekarang adalah mendorong inovasi, tetapi pada saat yang sama risiko-risiko yang muncul dari adopsi teknologi AI di setiap sektor juga harus diperhatikan.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pada Jumat pagi, ANTARA pukul 11.13 menulis Nezar soal pelatihan AI di Indonesia Timur lewat BBLSDM Makassar. Halaman 23.44 malam ini tidak membuka agenda balai itu; acuannya tetap mitigasi risiko keuangan dan kesehatan.",
+          "Di GitHub trending, agent-desktop Vercel Labs dan Mika Android agent naik momentum Sabtu 31 Oktober. Editorial hari ini tidak menyamakan kutipan Nezar soal agentic AI dengan README tool computer use; keduanya topik berbeda: kebijakan versus repo tren.",
+          "Untuk tim fintech atau healthtech, yang bisa dibawa ke rapat internal adalah kalimat fatal pada eksekusi agentic AI plus UU PDP sebelum memberi otoritas transaksi atau diagnosis penuh otomatis.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 30 Oktober, yang baru di ANTARA adalah halaman pukul 23.44 tentang mitigasi risiko Nezar Patria. Yang tidak ada di halaman itu, dan ada di editorial Kamis, adalah kutipan Meutya soal Terhubung Tumbuh Terjaga dan USABC.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Jumat 30 Oktober 2026 pukul 23.44 WIB, pewarta Farhan Arda Nugraha. CNBC Indonesia 30 Oktober 2026 pukul 16.29 WIB dibaca untuk konteks Said Mirza Pahlevi soal Perpres Etika AI; kutipan CNBC tidak disalin karena acuannya tetap kawat ANTARA 23.44.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

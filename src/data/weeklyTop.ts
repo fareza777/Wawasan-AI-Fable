@@ -3254,8 +3254,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "Kalimat pembuka README: dari Office sampai Slack dan dari Photoshop sampai AutoCAD, proyek ini membuat alternatif bebas dan terbuka. Perintah awal yang dicetak menyalin repo, lalu `npm install` dan `npm run dev` di dalam `src/[app-name]`.",
       "Catatan di atas tabel: nama aplikasi adalah teks, sedangkan logo dan tangkapan layar adalah gambar. Tautan Notes di tabel yang dibaca masih bertuliskan URL demo belum tersedia. Sudoku di tabel yang sama memakai http, bukan https.",
-      "Lisensi MIT, dengan kalimat bahwa pustaka pihak ketiga boleh punya lisensi sendiri. API GitHub pada 14 Oktober 2026: 197 bintang, 30 fork, 4 isu terbuka, bahasa JavaScript, ukuran 419.112 KB. Repo dibuat 13 Oktober 2026, push terakhir 14 Oktober 2026. Tidak ada rilis dan tidak ada homepage di API.",
-      "Wawasan AI tidak menjalankan `npm install` di dalam monorepo ini dan tidak membuka setiap demo puter.com.",
+      "Lisensi MIT, dengan kalimat bahwa pustaka pihak ketiga boleh punya lisensi sendiri. API GitHub pada 31 Oktober 2026: 5.959 bintang, 647 fork, 61 isu terbuka, bahasa JavaScript. Repo dibuat 13 Oktober 2026, push terakhir 30 Oktober 2026. Tidak ada rilis dan tidak ada homepage di API.",
+      "Trendshift menaruhnya di peringkat tiga pada snapshot 30 Oktober 2026. Wawasan AI tidak menjalankan npm install di dalam monorepo ini dan tidak membuka setiap demo puter.com.",
     ],
   },
   "threerocks/sweety-handdraw-video": {
@@ -3694,8 +3694,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis MIT, local-first, macOS dan Windows. Unduhan di orkas.ai. Paket aplikasi menulis 500 kredit model bawaan tanpa kunci API. Proyek, to-do, auto-advance, dan otomasi terjadwal disebut di README. Perintah pasang tidak disalin.",
       "Rilis v2026.10.27 terbit 27 Oktober 2026. Aset yang API catat: Orkas.Setup.1.9.5.exe 402.069.448 byte dengan 11 unduhan, Orkas-1.9.5.dmg 512.618.547 byte dengan 4 unduhan, Orkas-1.9.5-arm64.dmg 470.404.434 byte dengan 3 unduhan, pada pembacaan 28 Oktober.",
-      "API GitHub pada 29 Oktober 2026: 2.950 bintang, 170 fork, 1 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 29 Oktober 2026. Homepage orkas.ai. README menulis shared projects dan cloud sync hanya di aplikasi paket, bukan build sumber terbuka.",
-      "Ulasan alat kemarin memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
+      "API GitHub pada 31 Oktober 2026: 5.082 bintang, 297 fork, 7 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 31 Oktober 2026. Homepage orkas.ai. README menulis shared projects dan cloud sync hanya di aplikasi paket, bukan build sumber terbuka.",
+      "Ulasan alat 28 Oktober memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
     ],
   },
   "unclebob/ub-mode": {
@@ -3776,6 +3776,86 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Rilis v0.1.1 terbit 28 Oktober 2026 pukul 17.05 UTC. Repo dibuat 24 Oktober 2026, push terakhir 28 Oktober 2026.",
       "Lisensi Apache-2.0, ditulis Rust. API GitHub pada 29 Oktober 2026: 255 bintang, 29 fork, 0 isu terbuka.",
       "Trendshift menaruhnya di peringkat sembilan. Wawasan AI tidak memasang Helm chart ke cluster produksi.",
+    ],
+  },
+  "vercel-labs/agent-desktop": {
+    description:
+      "agent-desktop dari Vercel Labs adalah CLI dan pustaka C untuk computer use lewat pohon aksesibilitas OS, bukan tebakan piksel. README menulis snapshot JSON dengan ref stabil, loop observe-act-verify tetap di agen pemanggil.",
+    highlights: [
+      "README menulis 60 nama perintah, 56 operasional, macOS Windows Linux, pasang lewat npm global agent-desktop, plus arsip native di rilis GitHub v1.0.2.",
+      "Refs terikat snapshot_id; bare @e8 ditolak INVALID_ARGS. STALE_REF dan AMBIGUOUS_TARGET meminta snapshot baru. macOS butuh izin Accessibility lewat agent-desktop permissions --guide.",
+      "README memperingatkan snapshot, clipboard, screenshot, dan output debug bisa berisi konten desktop pribadi. Helper JEV opsional terpisah dari CLI native.",
+      "API GitHub pada 31 Oktober 2026: 2.078 bintang, 140 fork, 18 isu terbuka, bahasa Rust, lisensi Apache-2.0. Repo dibuat 19 Februari 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat satu. Wawasan AI tidak menjalankan click pada aplikasi kantor.",
+    ],
+  },
+  "wangzan101/Mika": {
+    description:
+      "Mika adalah agen AI on-device untuk Android yang README tulis beroperasi di layar latar tersembunyi sementara pengguna tetap memakai ponsel. Apache-2.0, Android 13+, sandbox arm64.",
+    highlights: [
+      "README menulis pasang APK dari rilis terbaru, wizard 设置手机操作 untuk wireless debugging, dan tab model untuk API key atau login ChatGPT. Panduan install-with-agent.md untuk asisten di komputer via USB.",
+      "Badge README: Android 13+, sandbox arm64. Lisensi Apache-2.0. Homepage string kosong di API; unduhan lewat GitHub Releases.",
+      "API GitHub pada 31 Oktober 2026: 1.424 bintang, 232 fork, 18 isu terbuka, bahasa Kotlin. Repo dibuat 29 Oktober 2026, push terakhir 30 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat dua. Wawasan AI tidak memasang APK dan tidak menghubungkan akun ChatGPT produksi.",
+    ],
+  },
+  "heydamir/unslop": {
+    description:
+      "unslop adalah skill Claude yang README tulis mengubah UI vibecoded menjadi antarmuka berdesain: audit slop, arah visual, lalu pass spacing warna copy typography layout.",
+    highlights: [
+      "README menulis CC-BY-4.0, salin folder skills/unslop ke ~/.claude/skills/ atau .claude/skills/ proyek. Perintah /unslop dengan dashboard, hero URL, atau landing page.",
+      "Alur audit lalu direction sebelum edit. Story video persegi di bawah 10 detik butuh Playwright dan ffmpeg menurut README.",
+      "API GitHub pada 31 Oktober 2026: 1.350 bintang, 61 fork, 3 isu terbuka, bahasa JavaScript. Repo dibuat 29 Oktober 2026, push terakhir 29 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat empat. Wawasan AI tidak menjalankan /unslop pada produksi.",
+    ],
+  },
+  "microsoft/TokenEconomizer": {
+    description:
+      "TokenEconomizer adalah kerangka Python Microsoft Research dan UC Berkeley untuk menekan biaya agen coding lewat micro-skills, tool pruning, dan failure-loop intervention, tanpa mengubah agen itu sendiri.",
+    highlights: [
+      "README menulis pengukuran SWE-Bench: mean cost 18,4–30,9 persen lebih rendah pada lima kombinasi agen-model, lebih murah di 30 dari 30 sel repo × kombinasi, Pass@1 naik di 4 dari 5.",
+      "Tiga mekanisme: micro-skills dari sesi berulang, tool pruning lewat setelan agen, loop guard saat failure berulang. Agen yang disebut: Claude Code, Codex, GitHub Copilot CLI, Pi.",
+      "Lisensi Apache-2.0, Python 3.10+, arXiv 2610.22732, halaman tokeneconomizer.github.io.",
+      "API GitHub pada 31 Oktober 2026: 2.059 bintang, 119 fork, 4 isu terbuka. Repo dibuat 13 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat delapan. Wawasan AI tidak menjalankan pipeline SWE-Bench penuh.",
+    ],
+  },
+  "ccch1mneyyy/dsh-go": {
+    description:
+      "dsh-go membungkus DeepSeek Harness untuk Android lokal plus kontrol komputer jarak jauh menurut deskripsi Trendshift. README repo menulis unofficial, AGPL-3.0, Dart.",
+    highlights: [
+      "Deskripsi snapshot Trendshift hari ini: DeepSeek Harness di saku, Android on-device, bisa mengendalikan PC. Deskripsi API GitHub memakai teks README bilingual.",
+      "API GitHub pada 31 Oktober 2026: 2.568 bintang, 106 fork, 132 isu terbuka, bahasa Dart, lisensi AGPL-3.0. Repo dibuat 25 Oktober 2026, push terakhir 30 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat satu pada snapshot 30 Oktober; hari ini agent-desktop memimpin. Wawasan AI tidak memasang APK dan tidak membuka sesi harness.",
+      "132 isu terbuka di API bukan daftar fitur yang sudah selesai; editorial tidak menghitung thread per topik.",
+    ],
+  },
+  "qybaihe/bla": {
+    description:
+      "BLA (Blind LLM Agents) mengklaim perisai adversarial untuk binary, Electron, JS bundle, Python, dan WebAssembly melawan agen reverse-engineering seperti REA. Poison, Exhaust, Hallucinate menurut README.",
+    highlights: [
+      "Deskripsi Trendshift dan API memakai emoji perisai dan singkatan BLA. Lisensi MIT, TypeScript.",
+      "API GitHub pada 31 Oktober 2026: 1.427 bintang, 194 fork, 1 isu terbuka. Repo dibuat 25 Oktober 2026, push terakhir 30 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat lima pada snapshot 30 Oktober. Wawasan AI tidak menjalankan REA atau BLA pada binary produksi.",
+      "Memasang teknik poison pada artefak yang didistribusikan ke pengguna lain menimbung risiko hukum dan etika; README bukan nasihat legal.",
+    ],
+  },
+  "l0ng-ai/openidea": {
+    description:
+      "openidea adalah IDE native Rust dengan keymap gaya IntelliJ IDEA: editor, insight, debugger, Git, terminal, database, HTTP client, 60+ bahasa menurut README.",
+    highlights: [
+      "Apache-2.0, TypeScript di API meski README menekankan aplikasi native Rust. Homepage string kosong.",
+      "API GitHub pada 31 Oktober 2026: 1.674 bintang, 154 fork, 86 isu terbuka. Repo dibuat 21 Oktober 2026, push terakhir 31 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat tujuh pada snapshot 30 Oktober. Wawasan AI tidak membangun binary openidea.",
+      "86 isu terbuka menandai proyek muda; bukan bukti fitur JetBrains penuh sudah paritas.",
+    ],
+  },
+  "ramenvr/autopilot": {
+    description:
+      "autopilot menulis deskripsi singkat Playtest any game. Python, Apache-2.0, repo baru 30 Oktober 2026.",
+    highlights: [
+      "API GitHub pada 31 Oktober 2026: 130 bintang, 6 fork, 1 isu terbuka. Repo dibuat 30 Oktober 2026, push terakhir 30 Oktober 2026.",
+      "Tidak ada rilis di API. README tidak dibuka untuk daftar game atau harness agen.",
+      "Trendshift menaruhnya di peringkat sepuluh. Wawasan AI tidak menjalankan playtest otomatis.",
+      "130 bintang kecil; editorial mencatat momentum, bukan validasi QA.",
     ],
   },
 };

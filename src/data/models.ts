@@ -5705,6 +5705,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-29",
     featured: false,
   },
+  {
+    slug: "gemini-4-carbon-high",
+    name: "Gemini 4 Carbon (High)",
+    tagline: "Indeks 59, $7,76 per tugas, cepat di atas median, TTFT 118,58 d",
+    tags: ["Google", "Proprietary", "Reasoning", "Multimodal"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 9.0 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 7.4 },
+      { label: "Harga/Performa", value: 6.0 },
+    ],
+    aa_intelligence_index: 59,
+    aa_price_input: 4,
+    aa_price_output: 20,
+    aa_synced_at: "2026-10-31",
+    summary:
+      "Artificial Analysis, dicek 31 Oktober 2026, memberi Gemini 4 Carbon (High) intelligence index 59 dan menandainya proprietary. Kartu intelijen menulis #1 dari 58. Keluaran 84,6 token per detik pada API Google, di atas median FAQ 80,5.",
+    pros: [
+      "Intelligence index 59, well above median 37 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 31 Oktober 2026)",
+      "Kartu intelijen menulis 4 dari 4 satuan dan peringkat #1 dari 58 pada halaman model",
+      "Kartu biaya: $4,00 masukan dan $20,00 keluaran per juta token, diskon cache 95 persen, $7,76 per tugas indeks, peringkat biaya 51 dari 57",
+      "Spesifikasi halaman: masukan teks, gambar, ucapan, dan video; keluaran teks; konteks 1 juta token; reasoning menyala",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 118,58 detik, median 3,71 detik, at the higher end",
+      "Ringkasan menyebut masukan somewhat expensive dan keluaran expensive. FAQ pada median yang sama menulis somewhat higher dan at the higher end",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Artikel AA 28 Oktober menulis rollout ke pengguna terpilih; belum sama dengan API publik luas",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 59 puncak Intelligence Index v5 pada kartu 31 Oktober, selama tugasnya muat di multimodal dan tim menerima biaya $7,76 per tugas serta TTFT jauh di atas median. Jangan menempelkan 85 token per detik di ringkasan ke kolom 84,6, dan jangan menganggap ketersediaan sudah setara Gemini flash biasa.",
+    body: [
+      "Gemini 4 Carbon (High) adalah model reasoning dari Google yang halamannya di Artificial Analysis dibaca 31 Oktober 2026. Kartu di bagian atas menandai model proprietary dan rilis Oktober 2026. FAQ memperinci tanggal rilis 28 Oktober 2026 dan menulis pembuatnya Google. Spesifikasi yang terpasang: masukan teks, gambar, ucapan, dan video; keluaran teks; jendela konteks 1,0 juta token; dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 31 Oktober 2026.) Intelligence index-nya 59 pada indeks versi 5.0 yang keterangan grafik sebut. Kartu intelijen menulis #1 dari 58 dan 4 dari 4 satuan. FAQ menaruh skor 59 well above median 37 untuk model seharga serupa. Ringkasan perbandingan memakai median 37 yang sama dan menyebut model ini amongst the leading models, tetapi also somewhat expensive when comparing to other models of similar price, faster than average, however very verbose. Teks kelas di halaman itu mengatakan ada 228 model di kelas pembanding proprietary di kisaran harga di atas $1 per juta token. Caption beberapa grafik menulis 28 dari 719 model, plus kalimat tidak ada API yang tersedia untuk publik. Editorial memakai #1 dari 58 untuk kartu intelijen, dan tidak menyamakan caption 28 dari 719 dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $4,00 per juta token masukan dan $20,00 per juta token keluaran, diskon cache 95 persen, biaya rata-rata $7,76 per tugas indeks, peringkat biaya 51 dari 57, dan 4 dari 4 satuan. Ringkasan menyebut masukan expensive terhadap median $2,00 dan keluaran expensive terhadap median $10,00. FAQ memakai median itu, lalu menulis somewhat higher untuk masukan dan at the higher end untuk keluaran, serta menulis angka itu berdasarkan API Google. Editorial mengutip expensive di ringkasan dan somewhat higher di FAQ tanpa memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $2,94 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 1 penyedia. Penyebut biaya 57 tidak sama dengan 228 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan dan latensi perlu dibaca bersama. Kartu menulis 84,6 token per detik, peringkat 94 dari 196, dan 3 dari 4 satuan. FAQ menulis 84,6 token per detik pada API Google, di atas median 80,5. Ringkasan membulatkan menjadi 85 token per detik terhadap rata-rata 81, dan menyebutnya faster than average. FAQ juga menulis waktu ke token pertama 118,58 detik, median 3,71 detik, dan menyebutnya at the higher end. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 118,58 detik di FAQ dengan chat interaktif tanpa verifikasi ulang. Verbosity: kartu menulis 200 juta token keluaran, peringkat 55 dari 57, dan 4 dari 4 satuan. Ringkasan menyebut 200 juta very verbose terhadap median 70 juta. FAQ menyebut 200 juta at the higher end terhadap median 70 juta yang sama.",
+      "Artikel Artificial Analysis pada 28 Oktober 2026, Gemini 4 Carbon is the new #1 on the Intelligence Index v5, menulis skor 59, Carbon #1 di empat dari sembilan evaluasi indeks, dan di belakang hanya Claude Opus 5.5 pada Coding Agent Index. Artikel itu menulis rollout ke pengguna terpilih dan belum publik luas, plus diskon peluncuran 50 persen tanpa tanggal akhir pasti; grafik AA memakai harga standar. Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 59 pada kartu 31 Oktober dengan biaya per tugas $7,76. Karena TTFT duduk jauh di atas median, agen yang harus membalas di bawah empat detik belum punya alasan latensi dari halaman ini. Karena verbosity tinggi dan harga keluaran at the higher end, pipeline batch lebih masuk akal daripada chat publik tanpa batas token. Pakai kartu ini untuk membandingkan indeks v5 dan tagihan, lalu pisahkan klaim rollout terpilih di artikel dari satu penyedia di FAQ sebelum mengganti model produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/gemini-4-carbon",
+    linkLabel: "Artificial Analysis",
+    date: "2026-10-31",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
