@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-10-31T02:01:26.181Z",
+  "fetchedAt": "2026-10-31T07:22:31.506Z",
   "repos": [
     {
       "rank": 1,
@@ -29,23 +29,13 @@
       "githubUrl": "https://github.com/wangzan101/Mika",
       "trendshiftUrl": "https://trendshift.io/repositories/326940",
       "language": "Kotlin",
-      "topics": [],
+      "topics": [
+        "AI agent"
+      ],
       "dateCreated": "2026-10-29T14:34:07Z"
     },
     {
       "rank": 3,
-      "fullName": "chris124567/cfsolve",
-      "owner": "chris124567",
-      "repo": "cfsolve",
-      "description": "Cloudflare turnstile and challenge page solver in Rust (full reverse, request based)",
-      "githubUrl": "https://github.com/chris124567/cfsolve",
-      "trendshiftUrl": "https://trendshift.io/repositories/324194",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-26T02:31:21Z"
-    },
-    {
-      "rank": 4,
       "fullName": "heydamir/unslop",
       "owner": "heydamir",
       "repo": "unslop",
@@ -55,6 +45,18 @@
       "language": "JavaScript",
       "topics": [],
       "dateCreated": "2026-10-29T15:41:21Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "valentderah/totk-pc-recomp",
+      "owner": "valentderah",
+      "repo": "totk-pc-recomp",
+      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a Vulkan renderer. Game files not included.",
+      "githubUrl": "https://github.com/valentderah/totk-pc-recomp",
+      "trendshiftUrl": "https://trendshift.io/repositories/326608",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-29T12:32:46Z"
     },
     {
       "rank": 5,
@@ -72,46 +74,6 @@
     },
     {
       "rank": 6,
-      "fullName": "Djihads80/Eglantine",
-      "owner": "Djihads80",
-      "repo": "Eglantine",
-      "description": "VERY experimental Nintendo Switch 2 emulator",
-      "githubUrl": "https://github.com/Djihads80/Eglantine",
-      "trendshiftUrl": "https://trendshift.io/repositories/326438",
-      "language": "C++",
-      "topics": [
-        "Emulator"
-      ],
-      "dateCreated": "2026-10-29T00:25:18Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "valentderah/totk-pc-recomp",
-      "owner": "valentderah",
-      "repo": "totk-pc-recomp",
-      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a Vulkan renderer. Game files not included.",
-      "githubUrl": "https://github.com/valentderah/totk-pc-recomp",
-      "trendshiftUrl": "https://trendshift.io/repositories/326608",
-      "language": "C",
-      "topics": [],
-      "dateCreated": "2026-10-29T12:32:46Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "microsoft/TokenEconomizer",
-      "owner": "microsoft",
-      "repo": "TokenEconomizer",
-      "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
-      "githubUrl": "https://github.com/microsoft/TokenEconomizer",
-      "trendshiftUrl": "https://trendshift.io/repositories/315380",
-      "language": "Python",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-10-13T04:16:50Z"
-    },
-    {
-      "rank": 9,
       "fullName": "ifixai-ai/iFixAi",
       "owner": "ifixai-ai",
       "repo": "iFixAi",
@@ -125,16 +87,58 @@
       "dateCreated": "2026-04-27T13:02:34Z"
     },
     {
-      "rank": 10,
-      "fullName": "ramenvr/autopilot",
-      "owner": "ramenvr",
-      "repo": "autopilot",
-      "description": "Playtest any game.",
-      "githubUrl": "https://github.com/ramenvr/autopilot",
-      "trendshiftUrl": "https://trendshift.io/repositories/328154",
+      "rank": 7,
+      "fullName": "microsoft/TokenEconomizer",
+      "owner": "microsoft",
+      "repo": "TokenEconomizer",
+      "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+      "githubUrl": "https://github.com/microsoft/TokenEconomizer",
+      "trendshiftUrl": "https://trendshift.io/repositories/315380",
       "language": "Python",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-10-13T04:16:50Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "thedotmack/claude-mem",
+      "owner": "thedotmack",
+      "repo": "claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "githubUrl": "https://github.com/thedotmack/claude-mem",
+      "trendshiftUrl": "https://trendshift.io/repositories/15496",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "AI memory"
+      ],
+      "dateCreated": "2025-08-31T20:50:03Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "paipiange/nvzhuang",
+      "owner": "paipiange",
+      "repo": "nvzhuang",
+      "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+      "githubUrl": "https://github.com/paipiange/nvzhuang",
+      "trendshiftUrl": "https://trendshift.io/repositories/326857",
+      "language": "Go",
       "topics": [],
-      "dateCreated": "2026-10-30T03:47:28Z"
+      "dateCreated": "2026-10-29T06:08:00Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ccch1mneyyy/dsh-Go",
+      "owner": "ccch1mneyyy",
+      "repo": "dsh-Go",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。Android · Unofficial.",
+      "githubUrl": "https://github.com/ccch1mneyyy/dsh-Go",
+      "trendshiftUrl": "https://trendshift.io/repositories/319451",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-10-25T08:09:52Z"
     }
   ]
 }
