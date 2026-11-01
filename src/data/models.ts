@@ -5749,6 +5749,50 @@ link: "https://www.anthropic.com",
     date: "2026-10-31",
     featured: false,
   },
+  {
+    slug: "claude-opus-5-5-xhigh-fallback",
+    name: "Claude Opus 5.5 (Xhigh, Default Fallback)",
+    tagline: "Indeks 57, $6,05 per tugas, cepat di atas median, TTFT 127,23 d",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Multimodal"],
+    score: 8.3,
+    scores: [
+      { label: "Penalaran", value: 9.0 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 7.6 },
+      { label: "Harga/Performa", value: 6.4 },
+    ],
+    aa_intelligence_index: 57,
+    aa_price_input: 4,
+    aa_price_output: 20,
+    aa_synced_at: "2026-11-01",
+    summary:
+      "Artificial Analysis, dicek 1 November 2026, memberi Claude Opus 5.5 (Xhigh, Default Fallback) intelligence index 57 dan menandainya proprietary. Kartu intelijen menulis #3 dari 58. Keluaran 85,4 token per detik pada API Anthropic, di atas median FAQ 80,5.",
+    pros: [
+      "Intelligence index 57, well above median 37 untuk model pada kisaran harga yang sama (sumber: Artificial Analysis, 1 November 2026)",
+      "Kartu intelijen menulis 4 dari 4 satuan dan peringkat #3 dari 58 pada halaman model",
+      "Kartu biaya: $4,00 masukan dan $20,00 keluaran per juta token, diskon cache 95 persen, $6,05 per tugas indeks, peringkat biaya 43 dari 57",
+      "Spesifikasi halaman: masukan teks dan gambar; keluaran teks; konteks 1 juta token; reasoning menyala",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 127,23 detik, median 3,71 detik, at the higher end",
+      "Ringkasan menyebut masukan expensive dan keluaran expensive. FAQ pada median yang sama menulis somewhat higher dan at the higher end",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "FAQ menulis model tersedia lewat 1 penyedia; grafik halaman masih bertuliskan No publicly available API",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai indeks 57 di puncak kelompok proprietary mahal pada kartu 1 November, selama tugasnya muat di multimodal dan tim menerima biaya $6,05 per tugas serta TTFT jauh di atas median. Jangan menempelkan 85 token per detik di ringkasan ke kolom 85,4.",
+    body: [
+      "Claude Opus 5.5 (Xhigh, Default Fallback) adalah model reasoning dari Anthropic yang halamannya di Artificial Analysis dibaca 1 November 2026. Kartu di bagian atas menandai model proprietary dan rilis September 2026. FAQ memperinci tanggal rilis 22 September 2026 dan menulis pembuatnya Anthropic. Spesifikasi yang terpasang: masukan teks dan gambar; keluaran teks; jendela konteks 1,0 juta token; dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 1 November 2026.) Intelligence index-nya 57 pada indeks versi 5.0 yang keterangan grafik sebut. Kartu intelijen menulis #3 dari 58 dan 4 dari 4 satuan. FAQ menaruh skor 57 well above median 37 untuk model seharga serupa. Ringkasan perbandingan memakai median 37 yang sama dan menyebut model ini amongst the leading models, but somewhat expensive when comparing to other models of similar price, faster than average, however somewhat verbose. Teks kelas di halaman itu mengatakan ada 228 model di kelas pembanding proprietary di kisaran harga di atas $1 per juta token. Caption beberapa grafik menulis 29 dari 719 model, plus kalimat No publicly available API. Editorial memakai #3 dari 58 untuk kartu intelijen, dan tidak menyamakan caption 29 dari 719 dengan peringkat itu. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $4,00 per juta token masukan dan $20,00 per juta token keluaran, diskon cache 95 persen, biaya rata-rata $6,05 per tugas indeks, peringkat biaya 43 dari 57, dan 3 dari 4 satuan. Ringkasan menyebut masukan expensive terhadap median $2,00 dan keluaran expensive terhadap median $10,00. FAQ memakai median itu, lalu menulis somewhat higher untuk masukan dan at the higher end untuk keluaran, serta menulis angka itu berdasarkan API Anthropic. Editorial mengutip expensive di ringkasan dan somewhat higher di FAQ tanpa memilih yang mana yang berlaku. FAQ juga menulis tarif campuran $2,94 per juta token pada rasio 7:2:1 untuk cache hit, masukan, dan keluaran, serta menulis model ini tersedia lewat 1 penyedia. Penyebut biaya 57 tidak sama dengan 228 model yang teks kelas sebut. Angka itu dibiarkan seperti tercetak di kartu.",
+      "Kecepatan dan latensi perlu dibaca bersama. Kartu menulis 85,4 token per detik, peringkat 92 dari 196, dan 3 dari 4 satuan. FAQ menulis 85,4 token per detik pada API Anthropic, di atas median 80,5. Ringkasan membulatkan menjadi 85 token per detik terhadap rata-rata 81, dan menyebutnya faster than average. FAQ juga menulis waktu ke token pertama 127,23 detik, median 3,71 detik, dan menyebutnya at the higher end. Judul bagian latensi berbunyi waktu ke token jawaban pertama dan keterangannya mengatakan angka itu sudah memasukkan waktu berpikir. FAQ memakai frasa time to first token. Editorial tidak menyamakan 127,23 detik di FAQ dengan chat interaktif tanpa verifikasi ulang. Verbosity: kartu menulis 100 juta token keluaran, peringkat 37 dari 57, dan 3 dari 4 satuan. Ringkasan menyebut 100 juta somewhat verbose terhadap median 70 juta. FAQ menyebut 100 juta somewhat higher terhadap median 70 juta yang sama.",
+      "Untuk pengembang di Indonesia, kombinasi yang bisa dibaca minggu ini adalah indeks 57 dengan biaya per tugas $6,05 pada kartu 1 November, di bawah varian max fallback $10,04 yang sudah diulas sebelumnya untuk indeks 58. Karena TTFT duduk jauh di atas median, agen yang harus membalas di bawah empat detik belum punya alasan latensi dari halaman ini. Karena verbosity somewhat higher, pipeline batch lebih masuk akal daripada chat publik tanpa batas token. Pakai kartu ini untuk membandingkan indeks v5 dan tagihan, lalu pisahkan 85 di ringkasan dari 85,4 di kartu sebelum mengganti model produksi.",
+    ],
+    link: "https://artificialanalysis.ai/models/claude-opus-5-5-xhigh",
+    linkLabel: "Artificial Analysis",
+    date: "2026-11-01",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {

@@ -5883,6 +5883,70 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-1956-dedy-regulasi-ai-investasi",
+    title: "ANTARA Pukul 19.56: Dedy Permadi Ingatkan Regulasi AI Jangan Hambat Investasi",
+    excerpt:
+      "ANTARA Sabtu 31 Oktober pukul 19.56 WIB melaporkan akademisi UGM Dedy Permadi soal keseimbangan Perpres AI, RAM UNESCO, lokalisasi data, dan MoU AI Indonesia–Korea Selatan.",
+    category: "Analisis",
+    date: "2026-11-01",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Sabtu 31 Oktober 2026 pukul 19.56 WIB, ANTARA News menurunkan Akademisi ingatkan regulasi AI jangan sampai hambat investasi. Foto yang tercetak menampilkan Dedy Permadi (kiri) dalam lokakarya Indonesian Next Generation Journalist Network on Korea yang diselenggarakan Foreign Policy Community of Indonesia dan Korea Foundation di Jakarta, Jumat 30 Oktober 2026.",
+          "Yang dibandingkan pada Minggu pagi ini adalah halaman ANTARA yang baru terbit dan rangkaian editorial Jumat malam soal mitigasi risiko agentic AI Nezar Patria pukul 23.44. Acuannya untuk Dedy adalah lokakarya FPCI–Korea Foundation, bukan repo dsh-superagent-prototype DeepSeek yang memimpin Trendshift 1 November. Jadi yang baru adalah teks ANTARA pukul 19.56, bukan tanggal acara yang tetap Jumat.",
+        ],
+      },
+      {
+        heading: "Ketat berlebihan dan kepastian regulasi",
+        paragraphs: [
+          "Dedy Permadi mengingatkan pemerintah agar regulasi kecerdasan artifisial tidak menghambat masuknya investasi asing, termasuk dari Korea Selatan yang memperkuat kerja sama AI dengan Indonesia.",
+          "Sektor ekonomi, termasuk perdagangan, energi dan mineral, serta investasi berpotensi terdampak apabila regulasi AI diterapkan terlalu ketat.",
+          "Kutipan yang tercetak: Ketika regulasi terlalu berlebihan, calon investor tentu akan mempertimbangkan kepatuhan terhadap aturan tersebut. Karena itu, kejelasan dan kepastian regulasi menjadi hal yang sangat penting.",
+        ],
+      },
+      {
+        heading: "RAM UNESCO dan sektor lapangan",
+        paragraphs: [
+          "Penyusunan tata kelola AI perlu didasarkan pada penilaian kesiapan Indonesia mengadopsi teknologi. Pemerintah perlu memahami tantangan dan peluang penerapan AI di berbagai sektor sebelum merumuskan aturan.",
+          "Dedy menjelaskan Readiness Assessment Methodology (RAM) UNESCO dapat menjadi salah satu acuan dua rancangan Perpres etika AI dan peta jalan AI, tetapi penilaian itu perlu dilanjutkan kajian spesifik per sektor seperti kesehatan, pendidikan, kebudayaan, dan pertanian.",
+          "Kutipan yang tercetak: Tanpa penilaian kritis terhadap kondisi saat ini, kita tidak bisa merumuskan regulasi yang ideal. Kita perlu memahami kondisi, tantangan, dan peluang di lapangan pada berbagai sektor.",
+        ],
+      },
+      {
+        heading: "Lokalisasi data, UU ITE, dan UU PDP",
+        paragraphs: [
+          "Dedy mencontohkan kebijakan lokalisasi data atau kewajiban menyimpan seluruh data di dalam wilayah Indonesia. Kebijakan tersebut dapat mempengaruhi iklim investasi industri pusat data karena investor mempertimbangkan ketentuan penyimpanan data sebelum menentukan lokasi.",
+          "Sambil menunggu regulasi khusus AI disahkan, pemerintah dapat memanfaatkan aturan yang sudah berlaku: UU ITE untuk konten AI yang melanggar hukum dan UU PDP untuk penyalahgunaan data pribadi.",
+          "Kutipan yang tercetak: Regulasi dibutuhkan ketika betul-betul menjawab hasil asesmen. Sambil menunggu regulasi yang belum disahkan, kita bisa menggunakan regulasi yang sudah ada untuk mengatur AI.",
+        ],
+      },
+      {
+        heading: "Perpres, Nezar, dan MoU Korea Selatan",
+        paragraphs: [
+          "Pemerintah menyiapkan regulasi nasional AI dalam bentuk Perpres. Wakil Menteri Komunikasi dan Digital Nezar Patria mengatakan Perpres dipilih karena proses penyusunannya dinilai lebih cepat dibanding undang-undang, sehingga dapat merespons perkembangan teknologi AI yang berlangsung pesat.",
+          "Nezar menyampaikan pemerintah belum memprioritaskan penyusunan undang-undang khusus AI karena masih memantau perkembangan teknologi global.",
+          "Indonesia dan Korea Selatan menyepakati dua kerja sama AI dan teknologi digital pada 1 April 2026 di Seoul: MoU pemanfaatan AI untuk kesehatan dasar dan pembangunan manusia, serta kerja sama strategis digital Kemkomdigi dengan Kementerian Sains dan Teknologi Informasi dan Komunikasi Korea. Komite bersama memantau pelaksanaan; kesepakatan digital berlaku lima tahun menurut halaman ANTARA.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pada Sabtu pagi, ANTARA pukul 07.18 menulis Meutya Hafid soal peran anak muda menentukan arah AI. Halaman 19.56 malam ini tidak membuka Indonesia Youth Summit; acuannya tetap lokakarya jurnalis muda dan investasi.",
+          "Di GitHub trending 1 November, dsh-superagent-prototype DeepSeek dan ai-engineering-hub naik momentum. Editorial hari ini tidak menyamakan kutipan Dedy soal lokalisasi data dengan README prototipe agen; keduanya topik berbeda: kebijakan versus repo tren.",
+          "Untuk tim yang menunggu Perpres, yang bisa dibawa ke rapat internal adalah pasangan kejelasan regulasi plus asesmen sektor sebelum aturan detail, bukan asumsi investasi Korea otomatis jadi izin deploy model apa pun.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 31 Oktober, yang baru di ANTARA adalah halaman pukul 19.56 tentang Dedy Permadi, investasi, dan MoU RI–Korea. Yang tidak ada di halaman itu, dan ada di editorial Jumat malam, adalah kutipan Nezar soal risiko fatal agentic AI perbankan.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Sabtu 31 Oktober 2026 pukul 19.56 WIB, pewarta Shofi Ayudiana. Lokakarya FPCI–Korea Foundation disebut Jumat 30 Oktober 2026. Artikel ANTARA 19.04 soal puskesmas tidak dibuka untuk kutipan tambahan; acuannya tetap kawat 19.56.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

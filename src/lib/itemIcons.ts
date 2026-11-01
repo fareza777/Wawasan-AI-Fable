@@ -84,6 +84,8 @@ const SLUG_ICONS: Record<string, string> = {
   "claude-sonnet-5-5-max-fallback": "https://cdn.simpleicons.org/anthropic",
   "agent-desktop": "https://github.com/vercel-labs.png",
   "gemini-4-carbon-high": "https://cdn.simpleicons.org/google",
+  "dsh-superagent-prototype": "https://github.com/deepseek-ai.png",
+  "claude-opus-5-5-xhigh-fallback": "https://cdn.simpleicons.org/anthropic",
 };
 
 function githubOrgIcon(link: string): string | null {

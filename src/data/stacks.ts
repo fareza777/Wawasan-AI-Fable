@@ -5100,6 +5100,46 @@ export const stacks: Review[] = [
     date: "2026-10-31",
     featured: false,
   },
+  {
+    slug: "dsh-superagent-prototype",
+    name: "DSH Superagent (Prototype)",
+    tagline: "Agen proaktif satu repo GitHub untuk DeepSeek Harness",
+    tags: ["Open Source", "Agentic Coding", "DeepSeek", "Research"],
+    score: 7.8,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.4 },
+      { label: "Kualitas Output", value: 7.6 },
+      { label: "Pengalaman Pengguna", value: 7.2 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 8.5 },
+    ],
+    summary:
+      "Prototipe riset DeepSeek di peringkat satu tren 1 November 2026. README menulis agen proaktif satu repo lewat Harness, panel web, dan SETUP.md yang dijalankan bersama coding agent, bukan produk resmi.",
+    pros: [
+      "README menulis work item, sesi agen terpisah, jawab di thread asal termasuk pull request, plus panel untuk item yang butuh manusia",
+      "Filosofi docs/000-philosophy.md: minim perhatian operator, maksimum nilai; bertindak hanya saat diminta atau rule tim mengizinkan",
+      "MIT, TypeScript, package.json 0.1.0, Node ^22.19 atau >=24, dsh ^0.2.1-alpha.2. pnpm check menjalankan typecheck, tes, dan build",
+      "API GitHub 1 November 2026: 2.730 bintang, 241 fork, 0 isu terbuka. Sumber GitHub dan Feishu opsional menurut README",
+    ],
+    cons: [
+      "Banner README: research prototype, not an official DeepSeek product; may contain bugs; review before production",
+      "Tidak ada rilis di API GitHub pada pembacaan 1 November; repo dibuat 31 Oktober 2026",
+      "SETUP butuh Node, pnpm, git, tmux, Python, gh CLI, dan DSH dengan provider model terpisah",
+      "Wawasan AI tidak menjalankan SETUP.md dan tidak membuka panel web produksi",
+    ],
+    verdict:
+      "Masuk akal untuk tim engineering Indonesia yang sudah memakai DeepSeek Harness dan ingin eksperimen orkestrasi agen repo tunggal, asal banner prototipe dibaca literal dan deploy hanya di sandbox GitHub.",
+    body: [
+      "dsh-superagent-prototype dibuat di repositori deepseek-ai/dsh-superagent-prototype. README yang dicek 1 November 2026 membuka dengan peringatan research prototype for reference only, not an official DeepSeek product, plus catatan sebagian engineering dilakukan coding agents. API GitHub hari yang sama mencatat 2.730 bintang, 241 fork, 0 isu terbuka, bahasa TypeScript, dan lisensi MIT. Repo dibuat 31 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat satu. Tidak ada rilis di API. Wawasan AI tidak menjalankan pnpm check di mesin editorial.",
+      "Yang perlu dibaca sebelum mengira ini SaaS cloud adalah bundel Harness lokal. README menulis proactive coding agent for one GitHub repository, listens to GitHub and optionally Feishu, opens work item, works in its own agent session and directory, answers in the original conversation for example with a pull request. SETUP.md dirancang untuk coding agent operator: satu pertanyaan per pesan, rencana penuh sekali, eksekusi setelah konfirmasi, rahasia tidak di chat.",
+      "package.json versi 0.1.0 menulis engines node ^22.19.0 || >=24.0.0 dan dsh ^0.2.1-alpha.2. Dokumen bernomor 000–008 menjelaskan domain model, otorisasi, eksekusi, prompt, panel, deployment, arsitektur, dan cookbook menambah Source. README menaut artikel Exploring Super-agent Design dan menulis beberapa desain artikel belum diimplementasi di prototipe.",
+      "Untuk pengembang di Indonesia, yang berguna minggu ini adalah MIT bundle open source untuk eksperimen agen tim kecil yang sudah punya GitHub plus Harness, selama Feishu dan GitHub permission dibatasi repo non-rahasia. Yang belum berguna sebagai jalur kantor tanpa review adalah agentic AI yang merge pull request otomatis ke main produksi, terutama setelah editorial Jumat menulis risiko fatal pada eksekusi agentic AI di keuangan. Pasang dulu hanya di repo sandbox, baca docs/002-authorization.md, lalu pisahkan akun GitHub agen dari akun manusia sebelum panel web dibuka ke internet.",
+    ],
+    link: "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-11-01",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

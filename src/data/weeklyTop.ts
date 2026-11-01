@@ -3694,7 +3694,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis MIT, local-first, macOS dan Windows. Unduhan di orkas.ai. Paket aplikasi menulis 500 kredit model bawaan tanpa kunci API. Proyek, to-do, auto-advance, dan otomasi terjadwal disebut di README. Perintah pasang tidak disalin.",
       "Rilis v2026.10.27 terbit 27 Oktober 2026. Aset yang API catat: Orkas.Setup.1.9.5.exe 402.069.448 byte dengan 11 unduhan, Orkas-1.9.5.dmg 512.618.547 byte dengan 4 unduhan, Orkas-1.9.5-arm64.dmg 470.404.434 byte dengan 3 unduhan, pada pembacaan 28 Oktober.",
-      "API GitHub pada 31 Oktober 2026: 5.082 bintang, 297 fork, 7 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 31 Oktober 2026. Homepage orkas.ai. README menulis shared projects dan cloud sync hanya di aplikasi paket, bukan build sumber terbuka.",
+      "API GitHub pada 1 November 2026: 6.339 bintang, 384 fork, 7 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 1 November 2026. Homepage orkas.ai. Trendshift menaruhnya di peringkat tiga.",
       "Ulasan alat 28 Oktober memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
     ],
   },
@@ -3785,7 +3785,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README menulis 60 nama perintah, 56 operasional, macOS Windows Linux, pasang lewat npm global agent-desktop, plus arsip native di rilis GitHub v1.0.2.",
       "Refs terikat snapshot_id; bare @e8 ditolak INVALID_ARGS. STALE_REF dan AMBIGUOUS_TARGET meminta snapshot baru. macOS butuh izin Accessibility lewat agent-desktop permissions --guide.",
       "README memperingatkan snapshot, clipboard, screenshot, dan output debug bisa berisi konten desktop pribadi. Helper JEV opsional terpisah dari CLI native.",
-      "API GitHub pada 31 Oktober 2026: 2.078 bintang, 140 fork, 18 isu terbuka, bahasa Rust, lisensi Apache-2.0. Repo dibuat 19 Februari 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat satu. Wawasan AI tidak menjalankan click pada aplikasi kantor.",
+      "API GitHub pada 1 November 2026: 4.402 bintang, 316 fork, 52 isu terbuka, bahasa Rust, lisensi Apache-2.0. Push terakhir 1 November 2026. Trendshift menaruhnya di peringkat lima; ulasan alat 31 Oktober memakai angka bintang lebih rendah. Wawasan AI tidak menjalankan click pada aplikasi kantor.",
     ],
   },
   "wangzan101/Mika": {
@@ -3804,8 +3804,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis CC-BY-4.0, salin folder skills/unslop ke ~/.claude/skills/ atau .claude/skills/ proyek. Perintah /unslop dengan dashboard, hero URL, atau landing page.",
       "Alur audit lalu direction sebelum edit. Story video persegi di bawah 10 detik butuh Playwright dan ffmpeg menurut README.",
-      "API GitHub pada 31 Oktober 2026: 1.350 bintang, 61 fork, 3 isu terbuka, bahasa JavaScript. Repo dibuat 29 Oktober 2026, push terakhir 29 Oktober 2026.",
-      "Trendshift menaruhnya di peringkat empat. Wawasan AI tidak menjalankan /unslop pada produksi.",
+      "API GitHub pada 1 November 2026: 3.555 bintang, 175 fork, 1 isu terbuka, bahasa JavaScript. Repo dibuat 29 Oktober 2026, push terakhir 1 November 2026.",
+      "Trendshift menaruhnya di peringkat delapan. Wawasan AI tidak menjalankan /unslop pada produksi.",
     ],
   },
   "microsoft/TokenEconomizer": {
@@ -3856,6 +3856,76 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "Tidak ada rilis di API. README tidak dibuka untuk daftar game atau harness agen.",
       "Trendshift menaruhnya di peringkat sepuluh. Wawasan AI tidak menjalankan playtest otomatis.",
       "130 bintang kecil; editorial mencatat momentum, bukan validasi QA.",
+    ],
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+    description:
+      "dsh-superagent-prototype adalah prototipe riset DeepSeek untuk agen coding proaktif satu repo GitHub, dibungkus DeepSeek Harness. README menulis bukan produk resmi, hasil kerja tim plus coding agent, dan perlu review sebelum dipakai produksi.",
+    highlights: [
+      "README menulis mendengarkan GitHub dan opsional Feishu, membuka work item, sesi agen terpisah, jawab di percakapan asal misalnya lewat pull request, plus panel web untuk item yang butuh manusia.",
+      "Filosofi docs/000-philosophy.md: ambil sedikit perhatian manusia, beri sebanyak mungkin nilai; bertindak hanya saat diminta atau rule tim mengizinkan. SETUP.md dirancang dijalankan bersama coding agent, bukan checklist manual panjang.",
+      "package.json versi 0.1.0, MIT, Node ^22.19 atau >=24, dsh ^0.2.1-alpha.2. pnpm check menjalankan typecheck, tes, dan build menurut README.",
+      "API GitHub pada 1 November 2026: 2.730 bintang, 241 fork, 0 isu terbuka, bahasa TypeScript. Repo dibuat 31 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat satu. Tidak ada rilis di API. Wawasan AI tidak menjalankan SETUP.md ke repo produksi.",
+    ],
+  },
+  "patchy631/ai-engineering-hub": {
+    description:
+      "ai-engineering-hub mengkurasi tutorial mendalam LLM, RAG, dan aplikasi agen AI nyata dalam Jupyter Notebook. README API menulis in-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+    highlights: [
+      "Topik API mencakup agents, ai, llms. Lisensi MIT. Repo dibuat 21 Oktober 2024, push terakhir 30 Oktober 2026.",
+      "API GitHub pada 1 November 2026: 39.245 bintang, 6.407 fork, 131 isu terbuka. Trendshift menaruhnya di peringkat dua.",
+      "131 isu terbuka menandai komunitas besar, bukan daftar fitur siap pakai. Wawasan AI tidak menjalankan setiap notebook.",
+      "Untuk pembaca Indonesia, nilainya sebagai kurikulum open source belajar engineering AI, bukan produk SaaS tunggal.",
+    ],
+  },
+  "pingdotgg/t3code": {
+    description:
+      "T3 Code adalah agent harness control surface: aplikasi mobile iOS dan Android, web app, dan desktop Electron untuk mengendalikan agen coding yang sudah jalan di mesin lokal.",
+    highlights: [
+      "README menulis bekerja dengan langganan Claude Code, Codex, Cursor, Grok Build, OpenCode, dan Google Antigravity jika sudah terpasang di komputer. Proyek open source; peringatan fork jika arah produk berubah.",
+      "Pasang lewat curl install.sh atau npx t3@latest. t3 service install untuk layanan latar, t3 update untuk rilis baru menurut README.",
+      "API GitHub pada 1 November 2026: 35.685 bintang, 8.792 fork, 4.053 isu terbuka, bahasa TypeScript, lisensi MIT. Push terakhir 1 November 2026. Trendshift menaruhnya di peringkat empat.",
+      "4.053 isu terbuka di API bukan hitungan ulang editorial. Wawasan AI tidak memasang t3 service dan tidak membuka app mobile produksi.",
+    ],
+  },
+  "google/elephant-goldfish-model": {
+    description:
+      "Elephant-Goldfish Model (EGM) adalah plugin open source Google: Elephant menahan konteks proyek dan menyusun spesifikasi, Goldfish meninjau draft tanpa riwayat percakapan sebelum kode ditulis.",
+    highlights: [
+      "README menulis ribuan engineer Google memakai EGM. Pasang lewat marketplace Claude Code, Codex, Antigravity CLI, plus panduan harness lain di docs/harnesses.md.",
+      "Tagline situs egm.dev: Design with an elephant. Review with a goldfish. Cocok saat fitur butuh keputusan desain; bug kecil tetap workflow coding biasa menurut README.",
+      "API GitHub pada 1 November 2026: 7.840 bintang, 463 fork, 62 isu terbuka, bahasa Python, lisensi Apache-2.0. Repo dibuat 13 September 2026, push terakhir 30 Oktober 2026. Trendshift menaruhnya di peringkat enam.",
+      "Wawasan AI tidak menjalankan plugin EGM pada monorepo produksi.",
+    ],
+  },
+  "thedotmack/claude-mem": {
+    description:
+      "claude-mem menyimpan konteks lintas sesi untuk agen coding: merekam aktivitas sesi, mengompres dengan AI, lalu menyuntikkan konteks relevan ke sesi berikutnya.",
+    highlights: [
+      "Deskripsi API dan Trendshift menulis dukungan Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode, dan lainnya.",
+      "API GitHub pada 1 November 2026: 107.934 bintang, 9.475 fork, 158 isu terbuka, bahasa TypeScript, lisensi Apache-2.0. Push terakhir 1 November 2026.",
+      "Trendshift menaruhnya di peringkat tujuh. Wawasan AI tidak memasang plugin memori ke mesin editorial.",
+      "107 ribu bintang menandai adopsi luas; editorial tidak menyamakan angka itu dengan audit keamanan data sesi.",
+    ],
+  },
+  "yetone/alma-relay": {
+    description:
+      "alma-relay adalah relay self-hosted untuk Alma Remote Access: kendalikan Alma desktop dari ponsel lewat Docker atau Cloudflare Workers menurut deskripsi API.",
+    highlights: [
+      "Repo dibuat 31 Oktober 2026, push terakhir 31 Oktober 2026. Lisensi MIT, bahasa JavaScript.",
+      "API GitHub pada 1 November 2026: 157 bintang, 11 fork, 1 isu terbuka. Trendshift menaruhnya di peringkat sembilan.",
+      "Tidak ada rilis di API pada pembacaan 1 November. Wawasan AI tidak menerapkan relay ke infrastruktur produksi.",
+      "157 bintang kecil; momentum Trendshift lebih besar dari validasi keamanan remote access.",
+    ],
+  },
+  "haydenschmitty/floorplan": {
+    description:
+      "Floorplan meminta Claude atau Codex membaca codebase lalu menggambar peta interaktif berbahasa Inggris sederhana: bagian, berkas, dan permintaan web plus hubungan antar mereka.",
+    highlights: [
+      "README versi 0.6.0, MIT, Node 18+, zero dependencies, badge CI test.yml. Demo Brewline di haydenschmitty.github.io/floorplan-demo tanpa instal.",
+      "API GitHub pada 1 November 2026: 887 bintang, 62 fork, 11 isu terbuka, bahasa JavaScript. Repo dibuat 27 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat sepuluh.",
+      "Wawasan AI tidak menjalankan plugin Floorplan pada repo situs ini.",
+      "Berguna saat tim kehilangan gambaran alur checkout atau dependensi lintas repo setelah banyak bantuan AI.",
     ],
   },
 };
