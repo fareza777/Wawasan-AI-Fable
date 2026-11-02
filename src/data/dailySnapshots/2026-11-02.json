@@ -4,22 +4,10 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-02T02:05:03.010Z",
+  "fetchedAt": "2026-11-02T07:59:52.319Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "storytold/craft-anything",
-      "owner": "storytold",
-      "repo": "craft-anything",
-      "description": "Craft Anything: understand how any software works, and craft your own.",
-      "githubUrl": "https://github.com/storytold/craft-anything",
-      "trendshiftUrl": "https://trendshift.io/repositories/331267",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-31T14:50:00Z"
-    },
-    {
-      "rank": 2,
       "fullName": "deepseek-ai/dsh-superagent-prototype",
       "owner": "deepseek-ai",
       "repo": "dsh-superagent-prototype",
@@ -34,33 +22,33 @@
       "dateCreated": "2026-10-31T09:32:46Z"
     },
     {
+      "rank": 2,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
       "rank": 3,
-      "fullName": "cutetailbud/ff-ruyijs",
-      "owner": "cutetailbud",
-      "repo": "ff-ruyijs",
-      "description": "Run any site JavaScript from Python with the real Firefox engine. Headless SpiderMonkey + Necko for automation and scraping.",
-      "githubUrl": "https://github.com/cutetailbud/ff-ruyijs",
-      "trendshiftUrl": "https://trendshift.io/repositories/325142",
-      "language": "C++",
+      "fullName": "modelflare-ai/AnyModelBot",
+      "owner": "modelflare-ai",
+      "repo": "AnyModelBot",
+      "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "githubUrl": "https://github.com/modelflare-ai/AnyModelBot",
+      "trendshiftUrl": "https://trendshift.io/repositories/331536",
+      "language": "TypeScript",
       "topics": [
-        "Browser automation"
+        "AI agent"
       ],
-      "dateCreated": "2026-10-28T11:31:41Z"
+      "dateCreated": "2026-10-27T08:51:18Z"
     },
     {
       "rank": 4,
-      "fullName": "ivankovic/omnidiff",
-      "owner": "ivankovic",
-      "repo": "omnidiff",
-      "description": "Fast, robust, accurate diffing",
-      "githubUrl": "https://github.com/ivankovic/omnidiff",
-      "trendshiftUrl": "https://trendshift.io/repositories/264649",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2025-10-17T11:25:02Z"
-    },
-    {
-      "rank": 5,
       "fullName": "l0ng-ai/openidea",
       "owner": "l0ng-ai",
       "repo": "openidea",
@@ -70,6 +58,20 @@
       "language": "TypeScript",
       "topics": [],
       "dateCreated": "2026-10-21T12:23:14Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "wangzan101/Mika",
+      "owner": "wangzan101",
+      "repo": "Mika",
+      "description": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "githubUrl": "https://github.com/wangzan101/Mika",
+      "trendshiftUrl": "https://trendshift.io/repositories/326940",
+      "language": "Kotlin",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-10-29T14:34:07Z"
     },
     {
       "rank": 6,
@@ -87,15 +89,15 @@
     },
     {
       "rank": 7,
-      "fullName": "modelflare-ai/AnyModelBot",
-      "owner": "modelflare-ai",
-      "repo": "AnyModelBot",
-      "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
-      "githubUrl": "https://github.com/modelflare-ai/AnyModelBot",
-      "trendshiftUrl": "https://trendshift.io/repositories/331536",
-      "language": "TypeScript",
+      "fullName": "caru-ini/stack-diagram",
+      "owner": "caru-ini",
+      "repo": "stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "githubUrl": "https://github.com/caru-ini/stack-diagram",
+      "trendshiftUrl": "https://trendshift.io/repositories/331355",
+      "language": "Python",
       "topics": [],
-      "dateCreated": "2026-10-27T08:51:18Z"
+      "dateCreated": "2026-11-01T05:35:12Z"
     },
     {
       "rank": 8,
@@ -114,29 +116,31 @@
     },
     {
       "rank": 9,
-      "fullName": "Orkas-AI/Orkas",
-      "owner": "Orkas-AI",
-      "repo": "Orkas",
-      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
-      "githubUrl": "https://github.com/Orkas-AI/Orkas",
-      "trendshiftUrl": "https://trendshift.io/repositories/36597",
-      "language": "JavaScript",
+      "fullName": "deeplethe/sandstorm",
+      "owner": "deeplethe",
+      "repo": "sandstorm",
+      "description": "Run thousands of AI agent sandboxes on the cheapest machines.",
+      "githubUrl": "https://github.com/deeplethe/sandstorm",
+      "trendshiftUrl": "https://trendshift.io/repositories/28565",
+      "language": "Rust",
       "topics": [
-        "AI agent"
+        "Agent sandbox"
       ],
-      "dateCreated": "2026-04-29T12:19:08Z"
+      "dateCreated": "2026-05-11T17:42:24Z"
     },
     {
       "rank": 10,
-      "fullName": "caru-ini/stack-diagram",
-      "owner": "caru-ini",
-      "repo": "stack-diagram",
-      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
-      "githubUrl": "https://github.com/caru-ini/stack-diagram",
-      "trendshiftUrl": "https://trendshift.io/repositories/331355",
+      "fullName": "public-apis/public-apis",
+      "owner": "public-apis",
+      "repo": "public-apis",
+      "description": "A collective list of free APIs",
+      "githubUrl": "https://github.com/public-apis/public-apis",
+      "trendshiftUrl": "https://trendshift.io/repositories/1677",
       "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-11-01T05:35:12Z"
+      "topics": [
+        "Curated list"
+      ],
+      "dateCreated": "2016-03-20T23:49:42Z"
     }
   ]
 }
