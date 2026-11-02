@@ -5947,6 +5947,62 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-0746-anis-literasi-ai-siswa",
+    title: "ANTARA Pukul 07.46: Anis Kurniawan Ingatkan AI Ancam Otentisitas Karya Siswa",
+    excerpt:
+      "ANTARA Senin 2 November pukul 07.46 WIB melaporkan Anis Kurniawan soal indikasi AI pada sekitar 90 persen naskah lomba menulis siswa, seminar literasi Makassar, dan empat langkah menjaga jiwa dalam aksara.",
+    category: "Analisis",
+    date: "2026-11-02",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Senin 2 November 2026 pukul 07.46 WIB, ANTARA News Sulawesi Tenggara menurunkan AI ancam daya kritis dan otentisitas karya siswa. Foto yang tercetak menampilkan agen AI WorkBuddy dari Tencent Global Digital Ecosystem Summit 2026 di Shenzhen, Kamis 29 Oktober 2026.",
+          "Yang dibandingkan pada Senin pagi ini adalah halaman ANTARA pukul 19.56 Sabtu tentang Dedy Permadi dan investasi AI, bukan repo craft-anything yang memimpin Trendshift 2 November. Acuannya untuk Anis adalah Seminar Literasi Menjaga Jiwa dalam Aksara di Makassar, bukan prototipe agen GitHub.",
+        ],
+      },
+      {
+        heading: "Penjurian lomba dan indikasi AI",
+        paragraphs: [
+          "Anis Kurniawan, akademisi sekaligus penulis asal Sulawesi Selatan, mengingatkan generasi muda agar tidak tergantung pada kecerdasan buatan yang berpotensi menggerus kejernihan berpikir, kreativitas, dan otentisitas karya tulis siswa.",
+          "Kutipan yang tercetak: Hal itu dari pengalaman saya ketika menjadi juri lomba penulisan novel dan cerita pendek tingkat siswa yang diikuti 40 peserta. Dari pengamatan selama proses penjurian, ada indikasi kuat penggunaan AI pada sekitar 90 persen naskah.",
+          "Anis juga menegaskan: Kita akan kehilangan otentitas, kita kehilangan kejernihan.",
+        ],
+      },
+      {
+        heading: "Jurnalistik, pendidikan, dan pola naskah",
+        paragraphs: [
+          "Saat menjadi pemateri seminar literasi, Anis menyebut penggunaan AI berlebihan memengaruhi jurnalistik dan pendidikan. Di jurnalistik, teknologi mendorong produksi konten massal demi kecepatan dan monetisasi.",
+          "Di pendidikan, kemudahan AI membuat siswa bergantung pada jawaban instan sehingga tradisi membaca, diskusi kritis, dan berpikir mandiri berisiko melemah.",
+          "Kegiatan diikuti 108 guru dan 370 siswa SMA se-Kota Makassar. Anis membedah perubahan ekosistem kepenulisan sejak ChatGPT dan Claude, dengan kecenderungan naskah berpola seragam, kalimat normatif, dan pesan moral kaku.",
+        ],
+      },
+      {
+        heading: "Algoritma, guru, dan empat langkah",
+        paragraphs: [
+          "Anis menyoroti algoritma platform digital yang mengunci pembaca dalam lingkaran selera sama lewat collaborative filtering dan content-based filtering, sehingga karya kompleks lebih jarang ditemukan.",
+          "Ia menawarkan empat langkah: mempertahankan kebiasaan membaca buku cetak, menulis organik, memakai AI sebagai alat bantu bukan pengganti kreativitas, serta menjaga dialog dan diskusi kritis.",
+          "Kutipan penutup yang tercetak: Guru-guru Bahasa Indonesia harus menjadi agensi untuk ekosistem bacaan berkualitas. Baca yang menantang, tulis yang bermakna. Gunakan AI sebagai alat bantu, bukan pengganti kreasi.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pada Minggu, ANTARA juga menulis Kemenekraf soal media digital dan AI, serta Kemhan soal perang kognitif. Halaman 07.46 hari ini fokus pada otentisitas tulis siswa, bukan ketahanan digital militer.",
+          "Di GitHub trending 2 November, craft-anything dan dsh-superagent-prototype naik momentum sebagai alat bangun software. Editorial hari ini tidak menyamakan kutipan Anis soal lomba menulis dengan banner early alpha Craft Anything; keduanya topik berbeda: literasi sekolah versus reverse engineering produk.",
+          "Untuk sekolah yang sudah memakai AI, yang bisa dibawa ke rapat internal adalah kebijakan transparansi penggunaan plus penilaian proses menulis, bukan larangan mutlak tanpa alternatif draft organik.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 2 November, yang baru di ANTARA adalah halaman pukul 07.46 tentang Anis Kurniawan, indikasi AI di naskah siswa, dan seminar literasi Makassar. Yang tidak ada di halaman itu, dan ada di editorial Sabtu, adalah kutipan Dedy Permadi soal regulasi dan investasi.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News Sulawesi Tenggara, Senin 2 November 2026 pukul 07.46 WIB, pewerta Suriani Mappong. Acara seminar disebut Minggu di Makassar menurut teks ANTARA.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

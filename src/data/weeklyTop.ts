@@ -3694,7 +3694,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis MIT, local-first, macOS dan Windows. Unduhan di orkas.ai. Paket aplikasi menulis 500 kredit model bawaan tanpa kunci API. Proyek, to-do, auto-advance, dan otomasi terjadwal disebut di README. Perintah pasang tidak disalin.",
       "Rilis v2026.10.27 terbit 27 Oktober 2026. Aset yang API catat: Orkas.Setup.1.9.5.exe 402.069.448 byte dengan 11 unduhan, Orkas-1.9.5.dmg 512.618.547 byte dengan 4 unduhan, Orkas-1.9.5-arm64.dmg 470.404.434 byte dengan 3 unduhan, pada pembacaan 28 Oktober.",
-      "API GitHub pada 1 November 2026: 6.339 bintang, 384 fork, 7 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 1 November 2026. Homepage orkas.ai. Trendshift menaruhnya di peringkat tiga.",
+      "API GitHub pada 2 November 2026: 7.377 bintang, 474 fork, 9 isu terbuka, bahasa JavaScript. Repo dibuat 29 April 2026, push terakhir 2 November 2026. Homepage orkas.ai. Trendshift menaruhnya di peringkat sembilan.",
       "Ulasan alat 28 Oktober memakai README yang sama. Wawasan AI tidak menghubungkan Gmail, Slack, atau Shopify.",
     ],
   },
@@ -3843,8 +3843,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "openidea adalah IDE native Rust dengan keymap gaya IntelliJ IDEA: editor, insight, debugger, Git, terminal, database, HTTP client, 60+ bahasa menurut README.",
     highlights: [
       "Apache-2.0, TypeScript di API meski README menekankan aplikasi native Rust. Homepage string kosong.",
-      "API GitHub pada 31 Oktober 2026: 1.674 bintang, 154 fork, 86 isu terbuka. Repo dibuat 21 Oktober 2026, push terakhir 31 Oktober 2026.",
-      "Trendshift menaruhnya di peringkat tujuh pada snapshot 30 Oktober. Wawasan AI tidak membangun binary openidea.",
+      "API GitHub pada 2 November 2026: 3.648 bintang, 298 fork, 127 isu terbuka. Repo dibuat 21 Oktober 2026, push terakhir 2 November 2026.",
+      "Trendshift menaruhnya di peringkat lima pada snapshot 2 November. Wawasan AI tidak membangun binary openidea.",
       "86 isu terbuka menandai proyek muda; bukan bukti fitur JetBrains penuh sudah paritas.",
     ],
   },
@@ -3865,7 +3865,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README menulis mendengarkan GitHub dan opsional Feishu, membuka work item, sesi agen terpisah, jawab di percakapan asal misalnya lewat pull request, plus panel web untuk item yang butuh manusia.",
       "Filosofi docs/000-philosophy.md: ambil sedikit perhatian manusia, beri sebanyak mungkin nilai; bertindak hanya saat diminta atau rule tim mengizinkan. SETUP.md dirancang dijalankan bersama coding agent, bukan checklist manual panjang.",
       "package.json versi 0.1.0, MIT, Node ^22.19 atau >=24, dsh ^0.2.1-alpha.2. pnpm check menjalankan typecheck, tes, dan build menurut README.",
-      "API GitHub pada 1 November 2026: 2.730 bintang, 241 fork, 0 isu terbuka, bahasa TypeScript. Repo dibuat 31 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat satu. Tidak ada rilis di API. Wawasan AI tidak menjalankan SETUP.md ke repo produksi.",
+      "API GitHub pada 2 November 2026: 7.940 bintang, 803 fork, 0 isu terbuka, bahasa TypeScript. Repo dibuat 31 Oktober 2026, push terakhir 2 November 2026. Trendshift menaruhnya di peringkat dua setelah craft-anything. Tidak ada rilis di API. Wawasan AI tidak menjalankan SETUP.md ke repo produksi.",
     ],
   },
   "patchy631/ai-engineering-hub": {
@@ -3884,7 +3884,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis bekerja dengan langganan Claude Code, Codex, Cursor, Grok Build, OpenCode, dan Google Antigravity jika sudah terpasang di komputer. Proyek open source; peringatan fork jika arah produk berubah.",
       "Pasang lewat curl install.sh atau npx t3@latest. t3 service install untuk layanan latar, t3 update untuk rilis baru menurut README.",
-      "API GitHub pada 1 November 2026: 35.685 bintang, 8.792 fork, 4.053 isu terbuka, bahasa TypeScript, lisensi MIT. Push terakhir 1 November 2026. Trendshift menaruhnya di peringkat empat.",
+      "API GitHub pada 2 November 2026: 38.186 bintang, 8.926 fork, 3.935 isu terbuka, bahasa TypeScript, lisensi MIT. Push terakhir 2 November 2026. Trendshift menaruhnya di peringkat enam.",
       "4.053 isu terbuka di API bukan hitungan ulang editorial. Wawasan AI tidak memasang t3 service dan tidak membuka app mobile produksi.",
     ],
   },
@@ -3903,8 +3903,8 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "claude-mem menyimpan konteks lintas sesi untuk agen coding: merekam aktivitas sesi, mengompres dengan AI, lalu menyuntikkan konteks relevan ke sesi berikutnya.",
     highlights: [
       "Deskripsi API dan Trendshift menulis dukungan Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode, dan lainnya.",
-      "API GitHub pada 1 November 2026: 107.934 bintang, 9.475 fork, 158 isu terbuka, bahasa TypeScript, lisensi Apache-2.0. Push terakhir 1 November 2026.",
-      "Trendshift menaruhnya di peringkat tujuh. Wawasan AI tidak memasang plugin memori ke mesin editorial.",
+      "API GitHub pada 2 November 2026: 109.381 bintang, 9.570 fork, 176 isu terbuka, bahasa TypeScript, lisensi Apache-2.0. Push terakhir 2 November 2026.",
+      "Trendshift menaruhnya di peringkat delapan. Wawasan AI tidak memasang plugin memori ke mesin editorial.",
       "107 ribu bintang menandai adopsi luas; editorial tidak menyamakan angka itu dengan audit keamanan data sesi.",
     ],
   },
@@ -3926,6 +3926,56 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "API GitHub pada 1 November 2026: 887 bintang, 62 fork, 11 isu terbuka, bahasa JavaScript. Repo dibuat 27 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat sepuluh.",
       "Wawasan AI tidak menjalankan plugin Floorplan pada repo situs ini.",
       "Berguna saat tim kehilangan gambaran alur checkout atau dependensi lintas repo setelah banyak bantuan AI.",
+    ],
+  },
+  "storytold/craft-anything": {
+    description:
+      "Craft Anything dari tim ArtCraft: aplikasi Rust early alpha untuk mempelajari situs, app, atau game lalu membangun versi sendiri lewat alur Study → Build → Check → Refine, dengan clean room default dan agen Claude Code lokal.",
+    highlights: [
+      "README menulis early alpha: desktop Simple/Advanced, CLI, MCP, 314 tool reverse-engineering, clean room default (Deep mode opsional), dan builder Claude Code yang memakai binary claude lokal tanpa akun lewat Craft Anything.",
+      "Rilis terbaru API GitHub v0.2.0 (Craft Anything v0.2.0) diterbitkan 1 November 2026. Lisensi MIT atau Apache-2.0 pilihan pengguna. Rust 1.97+, badge status early alpha.",
+      "API GitHub pada 2 November 2026: 1.225 bintang, 197 fork, 62 isu terbuka. Repo dibuat 31 Oktober 2026, push terakhir 2 November 2026. Trendshift menaruhnya di peringkat satu.",
+      "Banner Responsible use: hanya software yang boleh diperiksa; tidak bypass DRM atau anti-cheat. Wawasan AI tidak membangun binary Craft Anything dan tidak menjalankan rebuild produksi.",
+    ],
+  },
+  "cutetailbud/ff-ruyijs": {
+    description:
+      "ff-ruyijs menjalankan JavaScript situs nyata dari Python memakai mesin Firefox headless (SpiderMonkey + Necko) untuk otomasi dan scraping yang butuh engine asli, bukan browser tiruan.",
+    highlights: [
+      "Deskripsi API: Run any site JavaScript from Python with the real Firefox engine. Headless SpiderMonkey + Necko for automation and scraping.",
+      "AGPL-3.0, C++, topik Browser automation. API GitHub pada 2 November 2026: 497 bintang, 255 fork, 3 isu terbuka. Repo dibuat 28 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat tiga pada snapshot 2 November. Wawasan AI tidak menjalankan harness Firefox headless di mesin editorial.",
+      "AGPL membatasi distribusi derivative; tim produk perlu review legal sebelum embed di SaaS.",
+    ],
+  },
+  "ivankovic/omnidiff": {
+    description:
+      "omnidiff adalah library diff Rust yang menekankan kecepatan, robustness, dan akurasi untuk membandingkan teks atau struktur data — alternatif ringan untuk workflow review kode dan merge.",
+    highlights: [
+      "Deskripsi singkat API: Fast, robust, accurate diffing. Bahasa Rust.",
+      "API GitHub pada 2 November 2026: 367 bintang, 6 fork, 9 isu terbuka. Repo dibuat 17 Oktober 2025, jadi momentum Trendshift bukan bukti maturity produk.",
+      "Trendshift menaruhnya di peringkat empat. Wawasan AI tidak menjalankan benchmark diff terhadap repo situs ini.",
+      "Berguna bagi engineer Rust atau pipeline CI yang butuh diff deterministik tanpa memanggil LLM.",
+    ],
+  },
+  "modelflare-ai/AnyModelBot": {
+    description:
+      "AnyModelBot mengklaim alternatif open-source local-first ke Grok Bot, OpenAI dots, dan Claude Duet: bot AI multi-model lewat satu kunci Modelflare, di app, WeChat, atau Feishu.",
+    highlights: [
+      "Deskripsi API menulis GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM, 70+ model, pay per use, memori, background task, dan kontrol komputer.",
+      "MIT, TypeScript. API GitHub pada 2 November 2026: 496 bintang, 4 fork, 0 isu terbuka. Repo dibuat 27 Oktober 2026, push terakhir 1 November 2026.",
+      "Trendshift menaruhnya di peringkat tujuh. Wawasan AI tidak memasang bot WeChat/Feishu produksi.",
+      "Pay per use plus kontrol komputer menimbung risiko keamanan; README bukan audit keamanan.",
+    ],
+  },
+  "caru-ini/stack-diagram": {
+    description:
+      "stack-diagram adalah skill agentic: kalimat deskripsi stack → diagram arsitektur dengan logo resmi (Next.js, Vercel, Neon, Clerk, Stripe, dll.).",
+    highlights: [
+      "README: npx skills add caru-ini/stack-diagram; dukung Claude Code, Codex, Cursor, dan agent skills lain. Rilis zip untuk Claude apps.",
+      "MIT, Python. API GitHub pada 2 November 2026: 420 bintang, 16 fork, 0 isu terbuka. Repo dibuat 1 November 2026.",
+      "Trendshift menaruhnya di peringkat sepuluh. Wawasan AI tidak menjalankan skill pada monorepo produksi.",
+      "Berguna untuk tim Indonesia yang butuh diagram onboarding cepat setelah stack AI-assisted berubah tiap sprint.",
     ],
   },
 };

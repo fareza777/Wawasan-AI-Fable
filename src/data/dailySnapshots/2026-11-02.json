@@ -1,0 +1,142 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-02T02:05:03.010Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "deepseek-ai/dsh-superagent-prototype",
+      "owner": "deepseek-ai",
+      "repo": "dsh-superagent-prototype",
+      "description": "Towards a More Autonomous Agent System",
+      "githubUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "trendshiftUrl": "https://trendshift.io/repositories/328842",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-10-31T09:32:46Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "cutetailbud/ff-ruyijs",
+      "owner": "cutetailbud",
+      "repo": "ff-ruyijs",
+      "description": "Run any site JavaScript from Python with the real Firefox engine. Headless SpiderMonkey + Necko for automation and scraping.",
+      "githubUrl": "https://github.com/cutetailbud/ff-ruyijs",
+      "trendshiftUrl": "https://trendshift.io/repositories/325142",
+      "language": "C++",
+      "topics": [
+        "Browser automation"
+      ],
+      "dateCreated": "2026-10-28T11:31:41Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "ivankovic/omnidiff",
+      "owner": "ivankovic",
+      "repo": "omnidiff",
+      "description": "Fast, robust, accurate diffing",
+      "githubUrl": "https://github.com/ivankovic/omnidiff",
+      "trendshiftUrl": "https://trendshift.io/repositories/264649",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2025-10-17T11:25:02Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "l0ng-ai/openidea",
+      "owner": "l0ng-ai",
+      "repo": "openidea",
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+      "githubUrl": "https://github.com/l0ng-ai/openidea",
+      "trendshiftUrl": "https://trendshift.io/repositories/316988",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-21T12:23:14Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "pingdotgg/t3code",
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "description": "",
+      "githubUrl": "https://github.com/pingdotgg/t3code",
+      "trendshiftUrl": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-02-08T23:46:22Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "modelflare-ai/AnyModelBot",
+      "owner": "modelflare-ai",
+      "repo": "AnyModelBot",
+      "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "githubUrl": "https://github.com/modelflare-ai/AnyModelBot",
+      "trendshiftUrl": "https://trendshift.io/repositories/331536",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-27T08:51:18Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "thedotmack/claude-mem",
+      "owner": "thedotmack",
+      "repo": "claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "githubUrl": "https://github.com/thedotmack/claude-mem",
+      "trendshiftUrl": "https://trendshift.io/repositories/15496",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant",
+        "AI memory"
+      ],
+      "dateCreated": "2025-08-31T20:50:03Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Orkas-AI/Orkas",
+      "owner": "Orkas-AI",
+      "repo": "Orkas",
+      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "githubUrl": "https://github.com/Orkas-AI/Orkas",
+      "trendshiftUrl": "https://trendshift.io/repositories/36597",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-29T12:19:08Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "caru-ini/stack-diagram",
+      "owner": "caru-ini",
+      "repo": "stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "githubUrl": "https://github.com/caru-ini/stack-diagram",
+      "trendshiftUrl": "https://trendshift.io/repositories/331355",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-01T05:35:12Z"
+    }
+  ]
+}

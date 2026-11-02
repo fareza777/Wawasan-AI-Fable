@@ -86,6 +86,8 @@ const SLUG_ICONS: Record<string, string> = {
   "gemini-4-carbon-high": "https://cdn.simpleicons.org/google",
   "dsh-superagent-prototype": "https://github.com/deepseek-ai.png",
   "claude-opus-5-5-xhigh-fallback": "https://cdn.simpleicons.org/anthropic",
+  "craft-anything": "https://github.com/storytold.png",
+  "claude-opus-5-5-high-fallback": "https://cdn.simpleicons.org/anthropic",
 };
 
 function githubOrgIcon(link: string): string | null {

@@ -5140,6 +5140,46 @@ export const stacks: Review[] = [
     date: "2026-11-01",
     featured: false,
   },
+  {
+    slug: "craft-anything",
+    name: "Craft Anything",
+    tagline: "Pelajari software apa pun, bangun versi sendiri — early alpha ArtCraft",
+    tags: ["Open Source", "Reverse Engineering", "Agentic Coding", "Desktop"],
+    score: 7.6,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.0 },
+      { label: "Kualitas Output", value: 7.2 },
+      { label: "Pengalaman Pengguna", value: 7.0 },
+      { label: "Ekosistem & Integrasi", value: 7.8 },
+      { label: "Harga", value: 8.8 },
+    ],
+    summary:
+      "Aplikasi Rust peringkat satu tren 2 November 2026. README menulis early alpha, alur Study → Build → Check → Refine, clean room default, 314 tool inspeksi, dan builder Claude Code lokal — bukan cloud resmi ArtCraft.",
+    pros: [
+      "README menulis desktop Simple/Advanced, CLI craft-anything-cli, MCP, Deep mode opsional, dan evidence ledger core_evidence_browse",
+      "MIT atau Apache-2.0 pilihan pengguna; rilis GitHub v0.2.0 1 November 2026; Rust 1.97+",
+      "API GitHub 2 November 2026: 1.225 bintang, 197 fork, 62 isu terbuka. Trendshift peringkat satu",
+      "Responsible use eksplisit: tidak bypass DRM, login, atau anti-cheat; rebuild hanya software yang boleh diperiksa",
+    ],
+    cons: [
+      "Banner README: early alpha — sebagian fitur partial; API key builder belum live; behavior check app/game belum penuh",
+      "Butuh coding agent lokal (Claude Code didukung dulu); Codex adapter belum diverifikasi di instal nyata",
+      "314 tool dan Ghidra Deep mode menaikkan permukaan serangan jika Deep dipakai sembarang",
+      "Wawasan AI tidak menjalankan cargo run atau rebuild target produksi",
+    ],
+    verdict:
+      "Masuk akal untuk maker Indonesia yang sudah punya Claude Code dan ingin eksperimen clean-room rebuild di sandbox, asal banner alpha dan responsible use dibaca literal — bukan jalur kantor tanpa review legal.",
+    body: [
+      "craft-anything hidup di repositori storytold/craft-anything dari komunitas ArtCraft. README yang dicek 2 November 2026 membuka dengan Craft Anything: understand how any software works, and craft your own, plus badge Status early alpha. API GitHub hari yang sama mencatat 1.225 bintang, 197 fork, 62 isu terbuka, bahasa Rust, lisensi Apache-2.0 di API (README menulis MIT atau Apache-2.0). Repo dibuat 31 Oktober 2026, push terakhir 2 November 2026. Rilis terbaru v0.2.0 diterbitkan 1 November 2026. Trendshift menaruhnya di peringkat satu. Wawasan AI tidak membangun binary dari source.",
+      "Alur inti empat langkah: Study inspect original, Build coding agent project, Check compare dengan original, Ready play atau refine. Clean room default menolak tool yang terlihat inside target kecuali Deep mode; Deep mode memakai built-in engine plus Ghidra bila terpasang. Builder memakai Claude Code lewat binary claude lokal; README menulis Craft Anything never sees or handles your account.",
+      "Untuk agentic workflow, setiap tool juga CLI subcommand dan MCP tool — craft-anything-cli rebuild, setup, doctor. Hasil rebuild disimpan sebagai evidence records dengan confidence dan coverage. docs/STATUS.md dan docs/tool-status.md memisahkan what works today versus partial.",
+      "Untuk pembaca Indonesia, nilai eksperimentalnya adalah belajar reverse engineering bertanggung jawab di mesin sendiri tanpa SaaS ArtCraft, selama target hanya software yang boleh diperiksa dan rebuild tidak menyentuh DRM atau layanan pihak ketiga. Jangan samakan momentum GitHub dengan izin hukum meniru produk komersial; banner responsible use bukan nasihat legal.",
+    ],
+    link: "https://github.com/storytold/craft-anything",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-11-02",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {
