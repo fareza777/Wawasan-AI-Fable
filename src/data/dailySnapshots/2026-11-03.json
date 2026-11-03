@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-03T02:03:36.848Z",
+  "fetchedAt": "2026-11-03T08:22:48.526Z",
   "repos": [
     {
       "rank": 1,
@@ -20,20 +20,6 @@
     },
     {
       "rank": 2,
-      "fullName": "vercel-labs/agent-desktop",
-      "owner": "vercel-labs",
-      "repo": "agent-desktop",
-      "description": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
-      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
-      "trendshiftUrl": "https://trendshift.io/repositories/111178",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-02-19T18:00:49Z"
-    },
-    {
-      "rank": 3,
       "fullName": "JiaFeiMiao-K-Cat/DiscImageStudio",
       "owner": "JiaFeiMiao-K-Cat",
       "repo": "DiscImageStudio",
@@ -45,35 +31,19 @@
       "dateCreated": "2026-08-23T03:40:14Z"
     },
     {
-      "rank": 4,
-      "fullName": "D4Vinci/Scrapling",
-      "owner": "D4Vinci",
-      "repo": "Scrapling",
-      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-      "githubUrl": "https://github.com/D4Vinci/Scrapling",
-      "trendshiftUrl": "https://trendshift.io/repositories/14244",
+      "rank": 3,
+      "fullName": "BryceYuuu/RUN",
+      "owner": "BryceYuuu",
+      "repo": "RUN",
+      "description": "RUN · 润：海外移居手册（欧洲 36 国 · 110 条路线 · 主要移民地区）",
+      "githubUrl": "https://github.com/BryceYuuu/RUN",
+      "trendshiftUrl": "https://trendshift.io/repositories/326925",
       "language": "Python",
-      "topics": [
-        "Web scraping"
-      ],
-      "dateCreated": "2024-10-13T20:29:53Z"
+      "topics": [],
+      "dateCreated": "2026-10-29T11:28:43Z"
     },
     {
-      "rank": 5,
-      "fullName": "pingdotgg/t3code",
-      "owner": "pingdotgg",
-      "repo": "t3code",
-      "description": "",
-      "githubUrl": "https://github.com/pingdotgg/t3code",
-      "trendshiftUrl": "https://trendshift.io/repositories/22711",
-      "language": "TypeScript",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-02-08T23:46:22Z"
-    },
-    {
-      "rank": 6,
+      "rank": 4,
       "fullName": "deepseek-ai/dsh-superagent-prototype",
       "owner": "deepseek-ai",
       "repo": "dsh-superagent-prototype",
@@ -88,43 +58,72 @@
       "dateCreated": "2026-10-31T09:32:46Z"
     },
     {
+      "rank": 5,
+      "fullName": "vercel-labs/agent-desktop",
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "description": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
+      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/111178",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-19T18:00:49Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "modelflare-ai/AnyModelBot",
+      "owner": "modelflare-ai",
+      "repo": "AnyModelBot",
+      "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "githubUrl": "https://github.com/modelflare-ai/AnyModelBot",
+      "trendshiftUrl": "https://trendshift.io/repositories/331536",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-10-27T08:51:18Z"
+    },
+    {
       "rank": 7,
-      "fullName": "RikiyaT/lm_understand-logs",
-      "owner": "RikiyaT",
-      "repo": "lm_understand-logs",
-      "description": "Complete logs of the experiments in the blog post 'LLMs can understand and write neural network weights'",
-      "githubUrl": "https://github.com/RikiyaT/lm_understand-logs",
-      "trendshiftUrl": "https://trendshift.io/repositories/333870",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-10-29T04:17:30Z"
+      "fullName": "Orkas-AI/Orkas",
+      "owner": "Orkas-AI",
+      "repo": "Orkas",
+      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "githubUrl": "https://github.com/Orkas-AI/Orkas",
+      "trendshiftUrl": "https://trendshift.io/repositories/36597",
+      "language": "JavaScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-04-29T12:19:08Z"
     },
     {
       "rank": 8,
-      "fullName": "mille-okws/pestinha",
-      "owner": "mille-okws",
-      "repo": "pestinha",
-      "description": "Pestinha é um pet virtual de desktop para Windows, com rede neural pulsada, emoções e personalidade que evolui com o usuário. Ele aprende com carinho e consequências, faz travessuras, brinca, trabalha e reage ao ambiente. Tudo funciona localmente, sem depender da nuvem.",
-      "githubUrl": "https://github.com/mille-okws/pestinha",
-      "trendshiftUrl": "https://trendshift.io/repositories/333550",
+      "fullName": "D4Vinci/Scrapling",
+      "owner": "D4Vinci",
+      "repo": "Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "githubUrl": "https://github.com/D4Vinci/Scrapling",
+      "trendshiftUrl": "https://trendshift.io/repositories/14244",
       "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-11-01T19:26:16Z"
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2024-10-13T20:29:53Z"
     },
     {
       "rank": 9,
-      "fullName": "datawhalechina/agentic-rl-lab",
-      "owner": "datawhalechina",
-      "repo": "agentic-rl-lab",
-      "description": "Reproducing and studying RL algorithms for LLM agents, including GRPO, GSPO, DAPO, OPD, Search-R1, ReTool, ALFWorld and beyond.",
-      "githubUrl": "https://github.com/datawhalechina/agentic-rl-lab",
-      "trendshiftUrl": "https://trendshift.io/repositories/120663",
+      "fullName": "NVIDIA/auto-ontology",
+      "owner": "NVIDIA",
+      "repo": "auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "githubUrl": "https://github.com/NVIDIA/auto-ontology",
+      "trendshiftUrl": "https://trendshift.io/repositories/315432",
       "language": "Python",
-      "topics": [
-        "Learning resources",
-        "LLM training"
-      ],
-      "dateCreated": "2026-07-06T08:14:15Z"
+      "topics": [],
+      "dateCreated": "2026-04-27T21:45:56Z"
     },
     {
       "rank": 10,
