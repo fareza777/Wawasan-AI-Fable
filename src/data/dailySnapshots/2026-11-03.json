@@ -1,0 +1,144 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-03T02:03:36.848Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "vercel-labs/agent-desktop",
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "description": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
+      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/111178",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-19T18:00:49Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "owner": "JiaFeiMiao-K-Cat",
+      "repo": "DiscImageStudio",
+      "description": "",
+      "githubUrl": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/332271",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-08-23T03:40:14Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "D4Vinci/Scrapling",
+      "owner": "D4Vinci",
+      "repo": "Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "githubUrl": "https://github.com/D4Vinci/Scrapling",
+      "trendshiftUrl": "https://trendshift.io/repositories/14244",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2024-10-13T20:29:53Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "pingdotgg/t3code",
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "description": "",
+      "githubUrl": "https://github.com/pingdotgg/t3code",
+      "trendshiftUrl": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-02-08T23:46:22Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "deepseek-ai/dsh-superagent-prototype",
+      "owner": "deepseek-ai",
+      "repo": "dsh-superagent-prototype",
+      "description": "Towards a More Autonomous Agent System",
+      "githubUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "trendshiftUrl": "https://trendshift.io/repositories/328842",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-10-31T09:32:46Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "RikiyaT/lm_understand-logs",
+      "owner": "RikiyaT",
+      "repo": "lm_understand-logs",
+      "description": "Complete logs of the experiments in the blog post 'LLMs can understand and write neural network weights'",
+      "githubUrl": "https://github.com/RikiyaT/lm_understand-logs",
+      "trendshiftUrl": "https://trendshift.io/repositories/333870",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-29T04:17:30Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "mille-okws/pestinha",
+      "owner": "mille-okws",
+      "repo": "pestinha",
+      "description": "Pestinha é um pet virtual de desktop para Windows, com rede neural pulsada, emoções e personalidade que evolui com o usuário. Ele aprende com carinho e consequências, faz travessuras, brinca, trabalha e reage ao ambiente. Tudo funciona localmente, sem depender da nuvem.",
+      "githubUrl": "https://github.com/mille-okws/pestinha",
+      "trendshiftUrl": "https://trendshift.io/repositories/333550",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-01T19:26:16Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "datawhalechina/agentic-rl-lab",
+      "owner": "datawhalechina",
+      "repo": "agentic-rl-lab",
+      "description": "Reproducing and studying RL algorithms for LLM agents, including GRPO, GSPO, DAPO, OPD, Search-R1, ReTool, ALFWorld and beyond.",
+      "githubUrl": "https://github.com/datawhalechina/agentic-rl-lab",
+      "trendshiftUrl": "https://trendshift.io/repositories/120663",
+      "language": "Python",
+      "topics": [
+        "Learning resources",
+        "LLM training"
+      ],
+      "dateCreated": "2026-07-06T08:14:15Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "deepseek-ai/deepseek-harness",
+      "owner": "deepseek-ai",
+      "repo": "deepseek-harness",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "trendshiftUrl": "https://trendshift.io/repositories/146135",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-13T11:56:32Z"
+    }
+  ]
+}

@@ -5180,6 +5180,46 @@ export const stacks: Review[] = [
     date: "2026-11-02",
     featured: false,
   },
+  {
+    slug: "scrapling",
+    name: "Scrapling",
+    tagline: "Scraping Python dari satu halaman sampai spider — plus MCP untuk agen",
+    tags: ["Open Source", "Web Scraping", "Python", "MCP"],
+    score: 8.4,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 8.2 },
+      { label: "Pengalaman Pengguna", value: 8.0 },
+      { label: "Ekosistem & Integrasi", value: 8.8 },
+      { label: "Harga", value: 9.0 },
+    ],
+    summary:
+      "Scrapling duduk di peringkat empat tren harian 3 November 2026. README menulis framework Python yang menggabungkan HTTP cepat, browser stealth, parsing adaptif, spider concurrent, ekspor JSON/CSV, MCP server, dan Agent Skill — bukan sekadar wrapper requests.",
+    pros: [
+      "README menulis fetch static, render JavaScript, Cloudflare Turnstile handling, pause/resume crawl, proxy rotation, AutoThrottle, dan clean Markdown output",
+      "BSD-3-Clause; badge MCP, Agent Skill, OpenClaw Skill; dokumentasi scrapling.readthedocs.io dan Docker pyd4vinci/scrapling",
+      "API GitHub 3 November 2026: 92.970 bintang, 9.787 fork, 9 isu terbuka, bahasa Python. Rilis terbaru v0.5 diterbitkan 17 Oktober 2026",
+      "Trendshift peringkat empat; cocok untuk pipeline RAG dan agen yang butuh data web terstruktur tanpa SaaS scraping",
+    ],
+    cons: [
+      "Scraping massal tetap bergantung robots.txt, ToS situs, dan hukum data Indonesia — README bukan nasihat legal",
+      "Browser stealth dan bypass Cloudflare menaikkan beban CPU/RAM; tim kecil perlu ukur biaya infra sendiri",
+      "92 ribu bintang menandai adopsi luas, bukan jaminan setiap situs target boleh di-crawl",
+      "Wawasan AI tidak menjalankan spider produksi ke domain pihak ketiga dari mesin editorial",
+    ],
+    verdict:
+      "Masuk akal untuk engineer Indonesia yang membangun RAG atau agen riset dan ingin satu library Python plus MCP, asal compliance situs diverifikasi legal dan crawl di-throttle sebelum production.",
+    body: [
+      "Scrapling hidup di repositori D4Vinci/Scrapling. README yang dicek 3 November 2026 membuka dengan Effortless Web Scraping for the Modern Web dan menaut selection methods, fetchers, spiders, proxy blocking, CLI, dan MCP. API GitHub hari yang sama mencatat 92.970 bintang, 9.787 fork, 9 isu terbuka, bahasa Python, lisensi BSD-3-Clause. Repo dibuat 13 Oktober 2024, push terakhir 2 November 2026. Rilis API terbaru tag v0.5 diterbitkan 17 Oktober 2026. Trendshift menaruhnya di peringkat empat. Wawasan AI tidak menjalankan crawl skala penuh ke situs berbayar.",
+      "Alur yang README garis bawahi: satu halaman lewat HTTP atau browser stealth, parsing dengan CSS/XPath/adaptive tracking, naik ke spider concurrent dengan retry dan ekspor JSON/JSONL/CSV/XML. Bagian AI menulis MCP server agar agen browse dan extract, plus Agent Skill dan entri OpenClaw di clawhub.ai/D4Vinci/scrapling-official. Itu membedakan Scrapling dari script requests sekali pakai yang sering dipasang agen coding tanpa observabilitas.",
+      "Untuk agentic workflow Indonesia, nilai praktis minggu ini adalah mengganti rantai fragmen (curl, BeautifulSoup, Playwright terpisah) dengan satu dependency yang sudah punya CLI dan MCP — selama data yang diambil bukan data pribadi warga tanpa dasar hukum. Jangan samakan badge Discord 1360786381042880532 dengan audit keamanan data.",
+      "Di snapshot 3 November, Scrapling berdampingan dengan craft-anything peringkat satu yang juga menyentuh reverse engineering produk digital. Keduanya tool berbeda: Scrapling mengumpulkan web publik; Craft Anything mempelajari binary. Editorial hari ini tidak menyamakan keduanya dengan kebijakan hak cipta gim yang ANTARA laporkan Senin siang; compliance tetap tanggung jawab tim sebelum spider dijadwalkan cron.",
+    ],
+    link: "https://github.com/D4Vinci/Scrapling",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-11-03",
+    featured: false,
+  },
 ];
 
 export function getStack(slug: string) {

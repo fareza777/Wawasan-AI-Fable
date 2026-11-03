@@ -6003,6 +6003,63 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-1727-nezar-universitas-peta-ai-nasional",
+    title: "ANTARA Pukul 17.27: Nezar Patria Ajak Perguruan Tinggi Tentukan Arah AI Nasional",
+    excerpt:
+      "ANTARA Senin 2 November pukul 17.27 WIB melaporkan Nezar Patria di seminar Aceh dalam Peta AI Nasional: adaptasi bukan lomba model terbesar, empat pilar ekosistem, reskilling, dan MoU UIN Ar-Raniry–Indosat.",
+    category: "Analisis",
+    date: "2026-11-02",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Senin 2 November 2026 pukul 17.27 WIB, ANTARA News menurunkan judul Wamen Komdigi ajak perguruan tinggi jadi penentu arah pengembangan AI. Foto arsip menampilkan Wakil Menteri Komunikasi dan Digital Nezar Patria saat Konvensi Humas Indonesia 2026 di Solo, Sabtu 17 Oktober 2026.",
+          "Yang dibandingkan pada Senin sore ini adalah halaman ANTARA pukul 07.46 tentang Anis Kurniawan dan otentisitas naskah siswa, bukan repo craft-anything yang memimpin Trendshift 3 November. Acuannya untuk Nezar adalah seminar terbuka Aceh dalam Peta AI Nasional: Infrastruktur, Talenta, dan Ekosistem di Auditorium Prof Ali Hasymi UIN Ar-Raniry Banda Aceh.",
+        ],
+      },
+      {
+        heading: "Perguruan tinggi dan perlombaan adaptasi",
+        paragraphs: [
+          "Nezar Patria mengajak perguruan tinggi tanah air, khususnya di Aceh, mengambil peran strategis sebagai penentu arah ekosistem kecerdasan buatan.",
+          "Kutipan yang tercetak: Perguruan tinggi memiliki posisi penting dalam menyiapkan talenta digital, mengembangkan riset, serta mendorong pemanfaatan teknologi AI untuk menjawab kebutuhan masyarakat.",
+          "Menurut Nezar, Indonesia memiliki peluang bersaing tanpa harus menciptakan model AI terbesar, melainkan lewat adopsi untuk layanan publik dan pertumbuhan ekonomi.",
+        ],
+      },
+      {
+        heading: "Frontier AI, GPU, dan empat pilar",
+        paragraphs: [
+          "Nezar menjelaskan peta persaingan AI global bergeser: kompetisi frontier model butuh investasi besar, GPU masif, dan energi tinggi — tantangan bagi negara berkembang.",
+          "Indonesia tidak harus memulai dari jalur yang sama; keunggulan bisa dibangun lewat kecepatan adopsi untuk pelayanan publik dan penyelesaian persoalan masyarakat.",
+          "Kutipan yang tercetak: Di perlombaan adaptasi, kita tidak start dari belakang. Kemenangan ditentukan oleh siapa yang paling berani memakai AI untuk pelayanan publik yang lebih manusiawi dan ekonomi yang lebih personal.",
+          "Empat aspek yang disebut: akses teknologi dan kedaulatan digital, transformasi tata kelola pemerintahan, penguatan rantai nilai industri, serta kesiapan SDM menghadapi otomatisasi. Nezar juga menekankan akses AI berkualitas tanpa ketergantungan satu vendor, plus reskilling dan upskilling.",
+        ],
+      },
+      {
+        heading: "Kampus, industri, dan literasi",
+        paragraphs: [
+          "UIN Ar-Raniry dan PT Indosat Ooredoo Hutchison menandatangani nota kesepahaman pendidikan, penelitian, pengabdian, dan peningkatan SDM.",
+          "Rektor Prof Dr Mujiburrahman mengatakan kolaborasi pemerintah, perguruan tinggi, dan industri penting menghadapi transformasi digital; mahasiswa perlu adaptasi teknologi, berpikir kritis, serta etika AI.",
+          "Head of Circle Sumatra Indosat Agus Sulistio menulis AI bukan lagi teknologi masa depan melainkan mengubah cara belajar, bekerja, berbisnis, dan berinovasi — konektivitas harus didukung talenta kompeten.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Pagi hari yang sama, ANTARA Makassar melaporkan Unhas memperkuat literasi AI lewat pelatihan Gemini Academic 2026. Sore hari, Nezar membingkai peran universitas di tingkat kebijakan nasional dan Aceh.",
+          "Di GitHub trending 3 November, agent-desktop Vercel Labs dan Scrapling naik bersama craft-anything. Editorial hari ini tidak menyamakan MoU kampus dengan banner early alpha tool reverse engineering; keduanya isu berbeda: talenta dan tata kelola versus eksperimen produk.",
+          "Untuk fakultas yang sudah memakai agen coding, empat pilar Nezar bisa masuk rapat kurikulum: etika, kedaulatan data, dan upskilling dosen sebelum mahasiswa diarahkan ke tool frontier tanpa pedoman.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada 2 November, yang baru di ANTARA sore adalah halaman pukul 17.27 tentang Nezar Patria, seminar UIN Ar-Raniry, dan nota kesepahaman Indosat. Yang sudah ada pagi hari, dan tetap relevan, adalah kutipan Anis soal indikasi AI di naskah lomba siswa.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Senin 2 November 2026 pukul 17.27 WIB. Seminar bertajuk Aceh dalam Peta AI Nasional di Darussalam, Banda Aceh, menurut teks ANTARA.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

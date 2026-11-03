@@ -3785,7 +3785,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README menulis 60 nama perintah, 56 operasional, macOS Windows Linux, pasang lewat npm global agent-desktop, plus arsip native di rilis GitHub v1.0.2.",
       "Refs terikat snapshot_id; bare @e8 ditolak INVALID_ARGS. STALE_REF dan AMBIGUOUS_TARGET meminta snapshot baru. macOS butuh izin Accessibility lewat agent-desktop permissions --guide.",
       "README memperingatkan snapshot, clipboard, screenshot, dan output debug bisa berisi konten desktop pribadi. Helper JEV opsional terpisah dari CLI native.",
-      "API GitHub pada 1 November 2026: 4.402 bintang, 316 fork, 52 isu terbuka, bahasa Rust, lisensi Apache-2.0. Push terakhir 1 November 2026. Trendshift menaruhnya di peringkat lima; ulasan alat 31 Oktober memakai angka bintang lebih rendah. Wawasan AI tidak menjalankan click pada aplikasi kantor.",
+      "API GitHub pada 3 November 2026: 9.918 bintang, 664 fork, 125 isu terbuka, bahasa Rust, lisensi Apache-2.0. Push terakhir 3 November 2026. Trendshift menaruhnya di peringkat dua setelah craft-anything. Wawasan AI tidak menjalankan click pada aplikasi kantor.",
     ],
   },
   "wangzan101/Mika": {
@@ -3865,7 +3865,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "README menulis mendengarkan GitHub dan opsional Feishu, membuka work item, sesi agen terpisah, jawab di percakapan asal misalnya lewat pull request, plus panel web untuk item yang butuh manusia.",
       "Filosofi docs/000-philosophy.md: ambil sedikit perhatian manusia, beri sebanyak mungkin nilai; bertindak hanya saat diminta atau rule tim mengizinkan. SETUP.md dirancang dijalankan bersama coding agent, bukan checklist manual panjang.",
       "package.json versi 0.1.0, MIT, Node ^22.19 atau >=24, dsh ^0.2.1-alpha.2. pnpm check menjalankan typecheck, tes, dan build menurut README.",
-      "API GitHub pada 2 November 2026: 7.940 bintang, 803 fork, 0 isu terbuka, bahasa TypeScript. Repo dibuat 31 Oktober 2026, push terakhir 2 November 2026. Trendshift menaruhnya di peringkat dua setelah craft-anything. Tidak ada rilis di API. Wawasan AI tidak menjalankan SETUP.md ke repo produksi.",
+      "API GitHub pada 3 November 2026: 13.438 bintang, 1.407 fork, 0 isu terbuka, bahasa TypeScript. Repo dibuat 31 Oktober 2026, push terakhir 31 Oktober 2026. Trendshift menaruhnya di peringkat enam. Tidak ada rilis di API. Wawasan AI tidak menjalankan SETUP.md ke repo produksi.",
     ],
   },
   "patchy631/ai-engineering-hub": {
@@ -3884,7 +3884,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis bekerja dengan langganan Claude Code, Codex, Cursor, Grok Build, OpenCode, dan Google Antigravity jika sudah terpasang di komputer. Proyek open source; peringatan fork jika arah produk berubah.",
       "Pasang lewat curl install.sh atau npx t3@latest. t3 service install untuk layanan latar, t3 update untuk rilis baru menurut README.",
-      "API GitHub pada 2 November 2026: 38.186 bintang, 8.926 fork, 3.935 isu terbuka, bahasa TypeScript, lisensi MIT. Push terakhir 2 November 2026. Trendshift menaruhnya di peringkat enam.",
+      "API GitHub pada 3 November 2026: 42.072 bintang, 9.109 fork, 4.421 isu terbuka, bahasa TypeScript, lisensi MIT. Push terakhir 3 November 2026. Trendshift menaruhnya di peringkat lima.",
       "4.053 isu terbuka di API bukan hitungan ulang editorial. Wawasan AI tidak memasang t3 service dan tidak membuka app mobile produksi.",
     ],
   },
@@ -3934,7 +3934,7 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
     highlights: [
       "README menulis early alpha: desktop Simple/Advanced, CLI, MCP, 314 tool reverse-engineering, clean room default (Deep mode opsional), dan builder Claude Code yang memakai binary claude lokal tanpa akun lewat Craft Anything.",
       "Rilis terbaru API GitHub v0.2.0 (Craft Anything v0.2.0) diterbitkan 1 November 2026. Lisensi MIT atau Apache-2.0 pilihan pengguna. Rust 1.97+, badge status early alpha.",
-      "API GitHub pada 2 November 2026: 1.225 bintang, 197 fork, 62 isu terbuka. Repo dibuat 31 Oktober 2026, push terakhir 2 November 2026. Trendshift menaruhnya di peringkat satu.",
+      "API GitHub pada 3 November 2026: 4.481 bintang, 732 fork, 135 isu terbuka. Repo dibuat 31 Oktober 2026, push terakhir 3 November 2026. Trendshift menaruhnya di peringkat satu.",
       "Banner Responsible use: hanya software yang boleh diperiksa; tidak bypass DRM atau anti-cheat. Wawasan AI tidak membangun binary Craft Anything dan tidak menjalankan rebuild produksi.",
     ],
   },
@@ -3976,6 +3976,56 @@ export const WEEKLY_TOP: Record<string, WeeklyTopEntry> = {
       "MIT, Python. API GitHub pada 2 November 2026: 420 bintang, 16 fork, 0 isu terbuka. Repo dibuat 1 November 2026.",
       "Trendshift menaruhnya di peringkat sepuluh. Wawasan AI tidak menjalankan skill pada monorepo produksi.",
       "Berguna untuk tim Indonesia yang butuh diagram onboarding cepat setelah stack AI-assisted berubah tiap sprint.",
+    ],
+  },
+  "JiaFeiMiao-K-Cat/DiscImageStudio": {
+    description:
+      "DiscImageStudio adalah alat C# .NET 10 untuk merancang gambar yang terlihat di permukaan CD, DVD, dan BD-R setelah dibakar — Windows desktop penuh, CLI eksperimental Linux dan macOS untuk mirror offline.",
+    highlights: [
+      "README (简体中文) menulis 全能的光盘盘面可见图像生成与刻录工具: desain plus burn agar pola terlihat di label fisik disc.",
+      "GPL-3.0-or-later, C#, badge .NET 10.0, platform Windows plus CLI eksperimental Linux/macOS. Deskripsi API GitHub kosong; README membawa teks panjang.",
+      "API GitHub pada 3 November 2026: 3.259 bintang, 99 fork, 22 isu terbuka. Repo dibuat 23 Agustus 2026, push terakhir 2 November 2026. Trendshift menaruhnya di peringkat tiga.",
+      "Wawasan AI tidak memburn disc produksi dan tidak memverifikasi hasil di drive optik fisik.",
+    ],
+  },
+  "D4Vinci/Scrapling": {
+    description:
+      "Scrapling adalah framework Python scraping yang README tulis menangani satu request sampai crawl skala penuh: HTTP cepat, browser stealth, parsing adaptif, spider concurrent, MCP server, dan Agent Skill untuk agen AI.",
+    highlights: [
+      "README menulis Effortless Web Scraping for the Modern Web; badge MCP, Agent Skill, OpenClaw Skill di clawhub.ai, Discord, dan docs scrapling.readthedocs.io.",
+      "BSD-3-Clause, Python. Rilis API terbaru v0.5 (Scrapling v0.5) diterbitkan 17 Oktober 2026. API GitHub pada 3 November 2026: 92.970 bintang, 9.787 fork, 9 isu terbuka.",
+      "Trendshift menaruhnya di peringkat empat pada snapshot 3 November. Wawasan AI tidak menjalankan crawl produksi ke situs pihak ketiga.",
+      "Berguna untuk tim RAG Indonesia yang butuh korpus web bersih tanpa SaaS scraping, asal robots.txt dan hukum data dipatuhi.",
+    ],
+  },
+  "RikiyaT/lm_understand-logs": {
+    description:
+      "lm_understand-logs menyimpan log eksperimen lengkap untuk artikel blog LLMs can understand and write neural network weights — bukan library produksi, melainkan artefak reproduksi riset.",
+    highlights: [
+      "Deskripsi API: Complete logs of the experiments in the blog post 'LLMs can understand and write neural network weights'.",
+      "Python, lisensi SPDX NOASSERTION di API. API GitHub pada 3 November 2026: 223 bintang, 25 fork, 1 isu terbuka. Repo dibuat 29 Oktober 2026.",
+      "Trendshift menaruhnya di peringkat tujuh. Wawasan AI tidak menjalankan ulang eksperimen menulis bobot jaringan.",
+      "Nilai editorial: transparansi log riset, bukan produk siap deploy untuk kantor.",
+    ],
+  },
+  "mille-okws/pestinha": {
+    description:
+      "Pestinha adalah pet virtual desktop Windows berbahasa Portugis: jaringan neural pulsada, emosi, personalitas yang belajar dari interaksi, semua lokal tanpa cloud menurut README.",
+    highlights: [
+      "Deskripsi API (Português): pet virtual Windows dengan rede neural pulsada, emoções, travessuras, trabalho, reage ao ambiente, tudo localmente sem nuvem.",
+      "GPL-3.0, Python. API GitHub pada 3 November 2026: 152 bintang, 46 fork, 1 isu terbuka. Repo dibuat 1 November 2026, push terakhir 2 November 2026.",
+      "Trendshift menaruhnya di peringkat delapan. Wawasan AI tidak memasang binary Windows produksi.",
+      "Momentum kecil; editorial mencatat fenomena desktop companion lokal, bukan rekomendasi enterprise.",
+    ],
+  },
+  "datawhalechina/agentic-rl-lab": {
+    description:
+      "agentic-rl-lab dari komunitas Datawhale China mereproduksi dan mempelajari algoritma RL untuk agen LLM: GRPO, GSPO, DAPO, OPD, Search-R1, ReTool, ALFWorld, dan lainnya menurut README.",
+    highlights: [
+      "Deskripsi API: Reproducing and studying RL algorithms for LLM agents, including GRPO, GSPO, DAPO, OPD, Search-R1, ReTool, ALFWorld and beyond.",
+      "Apache-2.0, Python, topik Learning resources dan LLM training. API GitHub pada 3 November 2026: 743 bintang, 49 fork, 2 isu terbuka. Push terakhir 2 November 2026.",
+      "Trendshift menaruhnya di peringkat sembilan. Wawasan AI tidak menjalankan seluruh notebook RL di GPU editorial.",
+      "Berguna bagi mahasiswa S2 Indonesia yang belajar agentic RL tanpa membayar kursus closed source.",
     ],
   },
 };

@@ -5837,6 +5837,50 @@ link: "https://www.anthropic.com",
     date: "2026-11-02",
     featured: false,
   },
+  {
+    slug: "claude-opus-5-5-medium-fallback",
+    name: "Claude Opus 5.5 (Medium, Default Fallback)",
+    tagline: "Indeks 48, $2,45 per tugas, verbosity ringkas, TTFT 22,38 d",
+    tags: ["Anthropic", "Proprietary", "Reasoning", "Multimodal"],
+    score: 7.8,
+    scores: [
+      { label: "Penalaran", value: 8.2 },
+      { label: "Coding", value: 6.4 },
+      { label: "Kecepatan", value: 6.8 },
+      { label: "Harga/Performa", value: 7.4 },
+    ],
+    aa_intelligence_index: 48,
+    aa_price_input: 4,
+    aa_price_output: 20,
+    aa_synced_at: "2026-11-03",
+    summary:
+      "Artificial Analysis, dicek 3 November 2026, memberi Claude Opus 5.5 (Medium, Default Fallback) intelligence index 48 dan menandainya proprietary. Kartu intelijen menulis #20 dari 60. Keluaran 79,4 token per detik pada API Anthropic, di bawah median FAQ 88,7.",
+    pros: [
+      "Intelligence index 48, above average terhadap median 38 untuk model seharga serupa (sumber: Artificial Analysis, 3 November 2026)",
+      "Kartu intelijen menulis 3 dari 4 satuan dan peringkat #20 dari 60 pada halaman model",
+      "Kartu biaya: $4,00 masukan dan $20,00 keluaran per juta token, diskon cache 95 persen, $2,45 per tugas indeks, peringkat biaya 29 dari 58, 2 dari 4 satuan",
+      "Verbosity fairly concise: 43 juta token keluaran indeks, median 71 juta; FAQ menulis better than average",
+    ],
+    cons: [
+      "FAQ menulis waktu ke token pertama 22,38 detik, median 4,24 detik, somewhat higher than average",
+      "FAQ menulis 79,4 token per detik, below average terhadap median 88,7 t/s",
+      "Halaman model yang dicek hari ini tidak menampilkan coding index terpisah",
+      "Ringkasan menyebut somewhat expensive untuk masukan dan keluaran; FAQ menulis somewhat higher dan at the higher end",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai varian Opus effort Medium dengan biaya per tugas $2,45 — di bawah High $3,46 dan Xhigh $6,05 yang diulas 1–2 November — selama tim menerima indeks 48 dan TTFT 22,38 detik. Jangan menempelkan 79 di ringkasan ke kolom 79,4.",
+    body: [
+      "Claude Opus 5.5 (Medium, Default Fallback) adalah varian reasoning dari Anthropic yang halamannya di Artificial Analysis dibaca 3 November 2026. FAQ memperinci tanggal rilis 22 September 2026 dan menulis pembuatnya Anthropic. Spesifikasi yang terpasang: masukan teks dan gambar; keluaran teks; jendela konteks 1,0 juta token; dan reasoning menyala. FAQ menulis proprietary, bobot tidak tersedia untuk umum, dan jumlah parameter tidak diungkapkan. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 3 November 2026.) Intelligence index-nya 48 pada indeks versi 5.0. Kartu intelijen menulis #20 dari 60 dan 3 dari 4 satuan. FAQ menaruh skor 48 above average terhadap median 38 untuk model seharga serupa. Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding.",
+      "Harga pada kartu biaya: $4,00 per juta token masukan dan $20,00 per juta token keluaran, diskon cache 95 persen, biaya rata-rata $2,45 per tugas indeks, peringkat biaya 29 dari 58, dan 2 dari 4 satuan. FAQ menulis masukan somewhat higher terhadap median $2,00 dan keluaran at the higher end terhadap median $10,00, berdasarkan API Anthropic. FAQ juga menulis tarif campuran $2,94 per juta token pada rasio 7:2:1 cache hit/masukan/keluaran, serta menulis model tersedia lewat 1 penyedia.",
+      "Kecepatan dan latensi perlu dibaca bersama. Kartu menulis 79,4 token per detik, peringkat 110 dari 195, dan 2 dari 4 satuan. FAQ menulis 79,4 token per detik, below average terhadap median 88,7 t/s. FAQ juga menulis waktu ke token pertama 22,38 detik, median 4,24 detik, somewhat higher than average. Verbosity: kartu menulis 43 juta token keluaran, peringkat 20 dari 58, 2 dari 4 satuan; FAQ menulis 43 juta better than average terhadap median 71 juta.",
+      "Untuk pengembang di Indonesia, varian Medium bisa dibaca sebagai trade-off eksplisit: indeks 48 di bawah High 52 dan Xhigh 57 yang sudah diulas minggu ini, tetapi biaya per tugas $2,45 lebih rendah dari keduanya dan verbosity lebih ringkas dari varian Max. Karena keluaran di bawah median kecepatan, batch review lebih masuk akal daripada chat publik respons cepat. Pakai kartu ini untuk membandingkan effort Medium versus High sebelum routing produksi Claude Opus 5.5.",
+    ],
+    link: "https://artificialanalysis.ai/models/claude-opus-5-5-medium",
+    linkLabel: "Artificial Analysis",
+    date: "2026-11-03",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
