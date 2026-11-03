@@ -5374,6 +5374,54 @@ export const repos: Review[] = [
     updatedAt: "2026-10-11",
     featured: false,
   },
+  {
+    slug: "disc-image-studio",
+    name: "Disc Image Studio",
+    tagline: "Mengubah satu gambar menjadi data yang patuh pada lapisan fisik CD, DVD, dan BD-R supaya polanya terlihat di permukaan piringan",
+    tags: ["Open Source", "C#", "Arsip Offline", "Media Optis"],
+    score: 7.4,
+    scores: [
+      { label: "Kemudahan Setup", value: 7.6 },
+      { label: "Fitur & Ekstensibilitas", value: 8.4 },
+      { label: "Komunitas & Momentum", value: 7.8 },
+      { label: "Dokumentasi", value: 8.6 },
+      { label: "Kesiapan Produksi", value: 6.2 },
+    ],
+    summary:
+      "Disc Image Studio duduk di peringkat tiga tren harian 3 November 2026. README yang dibaca pada hari yang sama menulis aplikasi Windows yang mengubah satu gambar menjadi data yang memenuhi batasan lapisan fisik CD, DVD, dan BD-R satu lapisan, sehingga permukaan piringan menampilkan pola yang terlihat mata. Ini bukan produk kecerdasan buatan: README tidak menyebut model bahasa, agen, atau layanan awan, dan justru menulis aplikasinya tidak terhubung ke jaringan, tidak mengunggah berkas, dan tidak mengumpulkan telemetri.",
+    highlights: [
+      "Tiga langkah yang README cetak: buat proyek CD, DVD, atau Blu-ray lalu tentukan lokasi keluaran; impor gambar dan atur lapisan serta modul tone untuk dithering, gamma, kecerahan, dan tingkat abu-abu; periksa proyeksinya, lalu ekspor ISO, RAW, atau WAV+CUE, atau memakai fitur bakar langsung",
+      "Rilis v1.3.6 terbit 2 November 2026: CLI offline untuk Linux dan macOS dalam paket x64 dan ARM64, antarmuka berbahasa Jepang, README berbahasa Jepang, dan pembacaan gambar lintas platform lewat StbImageSharp",
+      "API GitHub pada 3 November 2026 pukul 13.22 WIB: 3.662 bintang, 112 fork, bahasa C#, lisensi SPDX GPL-3.0, dan lima pengikut. Repo dibuat 23 Agustus 2026, push terakhir 2 November 2026",
+      "Standar yang dicantumkan README: ECMA-394 untuk CD-R, ECMA-267 dan ECMA-359 untuk DVD, ISO/IEC 30190:2021 untuk BD-R satu lapisan, dan ECMA-130 untuk bagian pengkodean CD",
+      "README sendiri menandai fitur bakar langsung dan CLI Linux/macOS sebagai eksperimen, dan meminta pemakainya hanya memakai media yang siap rusak",
+    ],
+    pros: [
+      "Aset DiscImageStudio-v1.3.6-win-x64.exe berukuran 175.802.490 byte dengan 1.531 unduhan pada pembacaan 3 November 2026, dan README menulis paket rilis sudah membawa runtime .NET sehingga tidak perlu memasang .NET terpisah",
+      "Lapisan dokumentasinya tidak tipis: tabel dokumentasi README menyebut sepuluh berkas di folder docs plus CHANGELOG, dan API folder docs pada hari yang sama menampilkan sebelas berkas .md serta dua subfolder",
+      "Gerbang mutu tertulis di README, bukan cuma janji: perintah selftest pada proyek DvdImageSolver dan uji arsitektur DiscImageStudio.ArchitectureTests yang disebut berjalan tanpa kerangka uji pihak ketiga",
+      "Unduhan per aset CLI — 193 untuk linux-x64, 70 untuk osx-arm64, 43 untuk linux-arm64, dan 31 untuk osx-x64 pada 3 November 2026 — membuat jalur lintas platform yang baru di v1.3.6 itu terlihat benar-benar dicoba, bukan hanya diumumkan",
+    ],
+    cons: [
+      "Hasil utamanya bergantung perangkat keras yang kian langka: perlu CD, DVD, atau BD recorder yang dikenali Windows dan piringan kosong, dan BD-R menuntut disk satu lapisan yang mendukung urutan tulis",
+      "README menulis interupsi, kehilangan daya, atau kecepatan generasi yang tidak memadai masih bisa membuat piringan tidak terpakai, dan BD-R urutan tulis tidak menyediakan pemetaan ulang area cadangan",
+      "Kontribusi masih sangat ramping untuk 3.662 bintang: API mencantumkan tiga nama dengan 31, 21, dan 3 kontribusi",
+      "Bagian yang paling menarik — pola yang terlihat di permukaan — tidak bisa diverifikasi tanpa membakar piringan. Angka kalibrasi 10^-6 menjadi 10^-14 adalah klaim proyek, dan Wawasan AI tidak mengukur ulangnya hari ini",
+    ],
+    verdict:
+      "Layak dipasang di komputer Windows yang masih punya drive optis dan tumpukan piringan yang boleh rusak, terutama kalau kamu butuh label terlihat mata sekaligus berkas di piringan yang sama. Jangan menjadikan hasil bakarnya satu-satunya salinan arsip, dan baca kewajiban sumber GPL-3.0-or-later sebelum menaruh kodenya di produk sendiri.",
+    body: [
+      "Pada 3 November 2026 Trendshift menempatkan JiaFeiMiao-K-Cat/DiscImageStudio di peringkat tiga tren harian, di bawah craft-anything di posisi satu dan agent-desktop Vercel Labs di posisi dua. API GitHub meninggalkan kolom deskripsi repositori ini kosong, jadi seluruh ringkasan berasal dari README yang tersedia dalam empat bahasa: Mandarin sederhana, Mandarin tradisional, Inggris, dan Jepang. API yang dibaca ulang pukul 13.22 WIB pada hari yang sama mencatat 3.662 bintang, 112 fork, bahasa C#, lisensi SPDX GPL-3.0, lima pengikut, dan 28 pada field open_issues_count; daftar pull request dengan state=open menampilkan lima berkas, jadi isu dan pull request duduk di kolom API yang sama. Repo dibuat 23 Agustus 2026 dan push terakhir 2 November 2026, sehari sebelum snapshot harian ini. Kartu tren mingguan di situs ini, yang disusun dari pembacaan pagi 3 November, memasang 3.259 bintang, 99 fork, dan 22 isu terbuka untuk repo yang sama. Keduanya adalah hasil baca API pada tanggal yang sama di jam yang berbeda, jadi editorial mengutip keduanya apa adanya dan tidak merata-ratakannya. API tidak menampilkan homepage maupun topics. Rilis yang terhitung API ada sembilan: tertua v1.0.26 terbit 12 September 2026 dan terbaru v1.3.6 terbit 2 November 2026, sehari sebelum snapshot.",
+      "Yang README klaimkan adalah pemetaan satu gambar ke batasan fisik lapisan optis, dan batasannya ditulis spesifik. CD menghasilkan trek audio CD-DA berupa WAV dengan header format plus berkas CUE pendamping, yang README sebut kompatibel dengan perangkat bakar seperti cdrecord dan ImgBurn, dengan opsi trek RAW; DVD menghasilkan ISO; BD-R dibatasi pada satu lapisan 25 GB dengan mode gambar saja dan berkas UDF 2.01. Skema abu-abu media disebut memakai dua tingkat hitam-putih, dengan pasangan 0D/AA untuk CD dan A5/92 di wilayah scrambled DVD. Ada preset parameter untuk beberapa merek piringan, program dithering terpisah yang mengolah gambar asli menjadi PNG dua tingkat 0/255, serta alur kalibrasi bantu yang menurut README menaikkan ketepatan parameter fisik permukaan piringan dari 10^-6 menjadi 10^-14 dibanding kalibrasi visual manual; bukti visualnya sepasang foto DVD Verbatim sebelum dan sesudah, dengan nama berkas tercetak P20261004-133519.jpg dan P20261004-135416.jpg. Folder yang ikut dibakar bisa ditempatkan di cincin dalam atau cincin luar, dan wilayah file ditandai kuning di pratinjau. Semua angka itu klaim proyek. Wawasan AI tidak memasang perangkat lunak ini, tidak punya drive optis di mesin editorial, dan tidak membakar satu piringan pun hari ini.",
+      "Bentuk aplikasinya dua pintu: diluncurkan tanpa argumen membuka antarmuka WPF, dengan argumen masuk ke satu baris perintah yang sama, dan README menulis CD, DVD, dan Blu-ray tersambung lewat antarmuka `IOpticalDiscModule` sehingga semuanya memakai katalog perintah serta kontrak tugas yang satu. Perintah CLI yang tercetak di tabelnya antara lain solve, encode, calibrate, simulate, selftest, cd-generate, cd-preview-warp, cd-preview-track, bd-generate, bd-info, bd-probe, dan bd-encode. Persyaratannya juga dicetak: Windows 10 versi 2004 ke atas atau Windows 11 untuk desktop, dan .NET 10 SDK untuk membangun dari sumber karena global.json mengunci 10.0.x. Rilis v1.3.6 menambah empat arsip CLI — linux-x64, linux-arm64, osx-x64, dan osx-arm64 — serta berkas SHA256SUMS.txt 541 byte; catatan rilis menulis aplikasi Windows tetap membaca gambar dengan WIC sementara CLI memakai StbImageSharp untuk membaca dan StbImageWriteSharp untuk menulis PNG, dengan algoritma penyandian permukaan piringan yang sama, plus antarmuka dan README berbahasa Jepang. Bagian License menulis GPL-3.0-or-later dan bagian Acknowledgments menulis implementasi interleaving CD dipindahkan lalu dimodifikasi dari proyek CDImage milik arduinocelentano, sehingga membagikan biner atau versi ubahan membawa kewajiban sumber yang menyertainya. Bagian privasi dan keamanan menulis proyek ini tidak memasang driver atau layanan, memakai IMAPI2 bawaan Windows untuk bakar langsung, menolak media bukan kosong, dan meminta laporan keamanan dikirim sebagai laporan privat GitHub, bukan sebagai isu terbuka.",
+      "Hubungannya dengan pembaca Indonesia bukan soal model. Yang menyentuh ASN pengelola arsip, perpustakaan daerah, unit teknologi kampus, atau UMKM yang menyimpan master foto dan video adalah satu sudut yang jarang dibicarakan waktu orang sibuk memakai agen AI: keluaran yang harus masih terbuka sepuluh tahun lagi tidak boleh bergantung pada satu akun awan, dan media optis tetap salah satu salinan luring yang bisa dipegang tangan. Disc Image Studio menawarkan penandaan piringan yang terlihat mata sekaligus berkas di piringan yang sama, dengan proyek, preset, dan berkas keluaran yang tersimpan di mesin sendiri. Yang tidak ditawarkannya adalah jaminan umur piringan — README sendiri menulis hasil yang terlihat bergantung pada piringan, perangkat bakar, firmware, dan strategi tulis, dan menyuruh memakai media yang siap rusak. Kalau kebijakan retensi institusimu menyebut media optis, jalur ujinya lurus: bakar satu piringan buang, baca kembali di komputer lain, lalu putuskan. Di snapshot 3 November, Disc Image Studio berdampingan dengan craft-anything di peringkat satu dan Scrapling di peringkat empat; ketiganya topik berbeda — arsip fisik, penelusuran cara kerja perangkat lunak, dan pengumpulan web — dan editorial hari ini tidak menyamakan ketiganya dengan Peta AI Nasional yang ANTARA laporkan dari seminar UIN Ar-Raniry pada Senin 2 November 2026 pukul 17.27 WIB.",
+    ],
+    link: "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-11-03",
+    updatedAt: "2026-11-03",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {
