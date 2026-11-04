@@ -5881,6 +5881,53 @@ link: "https://www.anthropic.com",
     date: "2026-11-03",
     featured: false,
   },
+  {
+    slug: "gpt-6-1-sol-max",
+    name: "GPT-6.1 Sol (Max)",
+    tagline: "Indeks 55, $1,27 per tugas, 75,1 t/s, TTFT tidak tercetak",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Multimodal"],
+    score: 8.2,
+    scores: [
+      { label: "Penalaran", value: 8.6 },
+      { label: "Coding", value: 7.2 },
+      { label: "Kecepatan", value: 6.6 },
+      { label: "Harga/Performa", value: 8.8 },
+    ],
+    aa_intelligence_index: 55,
+    aa_price_input: 2,
+    aa_price_output: 10,
+    aa_synced_at: "2026-11-04",
+    summary:
+      "Artificial Analysis, dicek 4 November 2026, memberi GPT-6.1 Sol (Max) intelligence index 55 dan menandainya proprietary. Kartu intelijen menulis #8 dari 62. Keluaran 75,1 token per detik terhadap median 82 yang dicetak teks pembanding, dan biaya $1,27 per tugas indeks pada peringkat 14 dari 61. Halaman ini tidak mencetak bagian tanya-jawab, jadi waktu ke token pertama tidak terbaca.",
+    pros: [
+      "Intelligence index 55, well above average terhadap median 38 untuk model pada pembanding yang sama (sumber: Artificial Analysis, 4 November 2026)",
+      "Kartu intelijen menulis 4 dari 4 satuan dan peringkat #8 dari 62 pada halaman model",
+      "Kartu biaya: $2,00 masukan dan $10,00 keluaran per juta token, diskon cache 95 persen, $1,27 per tugas indeks, peringkat biaya 14 dari 61, 1 dari 4 satuan",
+      "Peringkat biaya 14 dari 61 menaruhnya di atas hampir semua model dengan indeks lebih tinggi pada bagan yang sama: Claude Opus 5.5 (max with fallback) $10,04 dan Claude Fable 5.1 (max with fallback) $12,99",
+      "Spesifikasi halaman: masukan teks dan gambar; keluaran teks; konteks 1 juta token; reasoning menyala",
+    ],
+    cons: [
+      "Kartu kecepatan menulis 75,1 token per detik, peringkat 113 dari 196, dan hanya 2 dari 4 satuan — teks pembanding halaman menulis slower than average terhadap 82",
+      "Halaman model yang dibaca 4 November 2026 tidak menampilkan bagian tanya-jawab, jadi waktu ke token pertama tidak terbaca dan editorial tidak memasang angkanya",
+      "Halaman yang sama tidak menampilkan coding index terpisah, jadi editorial tidak memasang angka coding",
+      "Jumlah parameter tidak dicetak di halaman, dan spesifikasi hanya menulis halaman ini menampilkan versi reasoning dengan kemungkinan varian non-reasoning juga ada",
+      "Verbosity kartu: 64 juta token keluaran pada indeks, peringkat 28 dari 61, 2 dari 4 satuan",
+    ],
+    verdict:
+      "Masuk akal untuk dicatat sebagai titik masuk termurah ke sepuluh besar intelijen pada halaman 4 November: indeks 55 dengan $1,27 per tugas, di bawah seluruh model yang lebih pintar di bagan biaya. Karena kecepatannya di bawah median dan TTFT-nya tidak tercetak, kartu ini jangan dipakai untuk menyimpulkan pengalaman chat interaktif.",
+    body: [
+      "GPT-6.1 Sol (Max) adalah varian reasoning dari keluarga GPT-6.1 Sol buatan OpenAI yang halamannya di Artificial Analysis dibaca 4 November 2026. Baris identitas halaman menulis OpenAI, GPT-6.1 Sol, max, Proprietary model, dan Released September 2026. Spesifikasi yang terpasang: Reasoning Ya, dengan catatan halaman ini menampilkan versi reasoning model ini dan varian non-reasoning mungkin juga ada; masukan mendukung teks dan gambar; keluaran mendukung teks; jendela konteks 1M, yang halaman terjemahkan sebagai sekitar 1.500 halaman A4 ukuran 12 font Arial, dengan 230 model di kelas ini. Parameter tidak dicetak, dan tidak ada baris yang menuliskan jumlah parameter atau ketersediaan bobot, jadi editorial tidak mengarang keduanya. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 4 November 2026.) Intelligence index-nya 55 pada indeks versi 5.0.1. Kartu intelijen menulis #8 dari 62 dan 4 dari 4 satuan. Teks pembanding halaman menulis skor 55 placing it well above average among comparable models dengan median 38. Indeks versi 5.0.1 yang tercetak di halaman menggabungkan sembilan evaluasi: AA-Briefcase v1.1, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, AA-Omniscience v1.1, GDP.pdf, HLE-Diamond, CritPt v2 (Hard Subset), dan Terminal-Bench-Science 0.1 — jadi dua di antaranya adalah evaluasi berbasis terminal dan kode, tetapi halaman tidak menampilkan coding index sebagai angka terpisah. Di bagan intelijen yang sama, model ini berdampingan dengan Gemini 4 Carbon (high) di 60, Claude Opus 5.5 (max with fallback) di 59, GPT-6 Astra (max) di 57, Claude Fable 5.1 (max with fallback) di 49, dan Kimi K3.1 Pro di 46.",
+      "Harga pada kartu biaya: $2,00 per juta token masukan dan $10,00 per juta token keluaran, diskon cache 95 persen, biaya rata-rata $1,27 per tugas indeks, peringkat biaya 14 dari 61, dan 1 dari 4 satuan. Teks pembanding halaman menulis masukan moderately priced dengan median $2,00 dan keluaran moderately priced dengan median $10,00. Kartu juga menulis reasonably priced when comparing to other models of similar price. Yang membuat kartu ini layak dibaca dua kali adalah perbandingan biaya per tugas pada bagan halaman: MiMo-V2.6-Pro $0,26 dan DeepSeek V4.1 Flash 1017 (max) $0,60 lebih murah, lalu model ini di $1,27, sementara Kimi K3.1 Pro $3,68, GLM-5.3 (max) $5,01, GPT-6 Astra (max) $6,24, Muse Wonder (max) $6,95, Gemini 4 Carbon (high) $7,76, Grok 4.7 (xhigh) $7,77, Claude Opus 5.5 (max with fallback) $10,04, dan Claude Fable 5.1 (max with fallback) $12,99. Semua angka itu tampilan kartu dan bagan pada satu halaman yang sama, bukan hasil uji biaya Wawasan AI.",
+      "Kecepatan perlu dibaca bersama apa yang tidak tercetak. Kartu menulis 75,1 token per detik, peringkat 113 dari 196, dan 2 dari 4 satuan, sementara teks pembanding halaman menulis At 75 tokens per second, GPT-6.1 Sol (Max) is slower than average (82). Perbedaan 75,1 pada kartu dan 75 pada kalimat pembanding keduanya tercetak di halaman yang sama, jadi editorial mengutip keduanya apa adanya dan tidak merata-ratakannya. Di bagan kecepatan halaman yang sama model ini berada setelah Muse Wonder 172, DeepSeek V4.1 Flash 1017 (max) 165, Claude Opus 5.5 (max with fallback) 95, Gemini 4 Carbon (high) 88, GLM-5.3 (max) 86, dan Grok 4.7 (xhigh) 76, lalu di depan Claude Fable 5.1 (max with fallback) 70, GPT-6 Astra (max) 67, MiMo-V2.6-Pro 41, dan Kimi K3.1 Pro 31. Waktu ke token pertama tidak berhasil dibaca: halaman 4 November ini tidak menampilkan bagian tanya-jawab yang memuat angka itu, hanya judul-judul bagan latensi tanpa nilai per model, jadi kolom TTFT editorial dibiarkan kosong dan tidak diisi angka yang tampak masuk akal. Verbosity: kartu menulis 64M token keluaran dari Intelligence Index, peringkat 28 dari 61, 2 dari 4 satuan; teks pembanding menulis 64 juta cukup ringkas terhadap median 73 juta.",
+      "Untuk pengembang di Indonesia, kartu ini paling berguna sebagai pembanding harga-untuk-intelijen, bukan sebagai model tercepat. Indeks 55 dengan $1,27 per tugas berada di kelas yang sulit ditandingi model frontier lain pada bagan yang sama: selisih ke Claude Opus 5.5 (max with fallback) adalah indeks 59 versus 55, tetapi biayanya $10,04 versus $1,27 per tugas. Untuk beban kerja berbahasa Indonesia yang panjang — arsip peraturan, transkrip rapat, dokumen perencanaan — jendela konteks 1 juta token dan tarif $2,00 per juta token masukan lebih menentukan anggaran daripada selisih indeks, dan diskon cache 95 persen yang tercetak di kartu menjadi alasan kuat menaruh bagian depan prompt yang tidak berubah-ubah di luar bagian yang berubah. Karena kecepatannya di bawah median dan TTFT-nya tidak kami baca hari ini, jangan pakai kartu ini untuk memutuskan model chat publik yang butuh respons instan; batch, ringkasan dokumen, dan penelusuran agen bertahap lebih cocok. Uji sendiri kualitas Bahasa Indonesia dan ketersediaan akses dari wilayahmu sebelum membandingkan angka halaman dengan tagihan sungguhan.",
+    ],
+    link: "https://artificialanalysis.ai/models/gpt-6-1-sol",
+    linkLabel: "Artificial Analysis",
+    date: "2026-11-04",
+    featured: false,
+  },
+
 ];
 
 export function getModel(slug: string) {

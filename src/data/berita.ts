@@ -6060,6 +6060,65 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-2324-anthropic-rsi-laporan-keuangan",
+    title: "ANTARA Pukul 23.24: Anthropic Menyatakan Makin Dekat ke AI yang Membangun Dirinya Sendiri",
+    excerpt:
+      "ANTARA Selasa 3 November 2026 pukul 23.24 WIB melaporkan pernyataan Anthropic dalam laporan keuangan yang diajukan ke pemerintah AS: perusahaan makin dekat ke model AI yang membangun dirinya sendiri atau recursive self-improvement (RSI), disertai Kebijakan Skalabilitas Bertanggung Jawab, dua pernyataan baru di bagian Faktor Risiko, dan janji tetap melibatkan manusia dalam penelitian serta pengembangan.",
+    category: "Analisis",
+    date: "2026-11-03",
+    readingTime: "6 menit",
+    body: [
+      {
+        paragraphs: [
+          "Selasa 3 November 2026 pukul 23.24 WIB, ANTARA News menurunkan judul Anthropic makin dekat dengan AI mampu membangun dirinya sendiri, dengan keterangan waktu baca 3 menit yang tercetak di halaman. Foto yang mengiringi memakai keterangan Ilustrasi logo Anthropic. ANTARA/situs web Anthropic, dan halaman dibuka dengan lokasi Jakarta (ANTARA).",
+          "Yang dilaporkan bukan peluncuran produk. Kutipan pembuka yang tercetak: Perusahaan kecerdasan artifisial (AI), Anthropic, menyatakan perusahaannya makin dekat dengan model AI yang dapat membangun dirinya sendiri atau disebut dengan AI recursive self-improvement (RSI). Halaman yang sama menulis kabar ini terselip di laporan keuangan, dan menunjuk sumber beritanya: Mengutip TechCrunch, Senin (2/11) waktu setempat, kabar AI RSI itu ternyata terselip sebagai detail kecil dari laporan tersebut.",
+        ],
+      },
+      {
+        heading: "Persimpangan dan laporan keuangan",
+        paragraphs: [
+          "Halaman ANTARA menulis pendapatan perusahaan meningkat tetapi pengeluarannya juga ikut naik, dan di tengah laporan itulah pernyataan soal RSI muncul.",
+          "Kutipan yang tercetak: Dalam laporan itu, perusahaan yang dipimpin Dario Amodei itu menyebut bahwa mereka berada di persimpangan dalam penciptaan model AI yang mampu memperbaiki dirinya sendiri.",
+          "Halaman yang sama memberi dua bingkai yang berlawanan. Bagi yang pesimistis, kutipannya: fenomena RSI ini mewakili malapetaka yang tidak dapat dihindari. Bagi yang optimistis, RSI atau beberapa AI yang andal menguji dirinya sendiri untuk meningkatkan kinerja mewakili visi bahwa teknologi ini dapat menjadi alat produktivitas yang tak terbayangkan. Tulisannya lalu menutup titik itu dengan: Berkaca dari dua sudut pandang tersebut, Anthropic tampaknya menyakini bahwa RSI memang memiliki potensi keduanya.",
+        ],
+      },
+      {
+        heading: "Kebijakan Skalabilitas Bertanggung Jawab",
+        paragraphs: [
+          "Dalam dokumen laporan keuangan yang diajukan ke pemerintah AS, Anthropic menyatakan perusahaan memang menggunakan AI dalam penelitian dan pengembangannya, lalu memperingatkan risikonya.",
+          "Kutipan yang tercetak: Menggunakan AI untuk membantu membangun AI yang lebih mumpuni juga dapat menimbulkan risiko keselamatan yang cukup besar, terutama jika hal itu secara drastis mempercepat laju kemajuan. Ini adalah salah satu area yang tercakup dalam Kebijakan Skalabilitas Bertanggung Jawab kami, yang menetapkan rencana kami untuk memantau dan mengurangi risiko saat kami mendekati apa yang disebut 'peningkatan diri rekursif'.",
+          "Kutipan kedua yang tercetak di halaman yang sama: Kami tidak mengantisipasi dapat menggunakan Claude secara aman untuk merancang dan membangun generasi model mutakhir secara otonom tanpa pengawasan atau pemahaman manusia yang berarti, jika dan ketika hal itu secara teknis memungkinkan. Oleh karena itu, kami sedang mempertimbangkan pembaruan Kebijakan Skalabilitas Bertanggung Jawab kami untuk tetap mengendalikan pengembangan model mutakhir di Anthropic.",
+        ],
+      },
+      {
+        heading: "Ambang batas, faktor risiko, dan dua pernyataan",
+        paragraphs: [
+          "Halaman menulis istilah RSI populer di awal 2026 dan banyak yang menduga tren itu bakal terlupakan, namun belum sempat tahun berganti Anthropic sudah berada di persimpangan menuju RSI.",
+          "Kutipan yang tercetak: Pertama mereka telah menggunakan AI untuk mengembangkan model baru yang peningkatan kemampuannya tidak mereka sadari pada saat itu. Kedua, mereka mungkin segera memutuskan definisi RSI mereka sendiri.",
+          "Bagian yang menandai batas hari ini juga tercetak: Karena masih ada di titik persimpangan, Anthropic menyatakan dalam laporan tersebut bahwa belum ada modelnya yang melampaui ambang batas RSI. Mereka berjanji untuk tetap melibatkan manusia dalam proses R&D untuk masa mendatang.",
+          "Halaman tidak memasang angka pendapatan, jumlah pengguna, atau tanggal publikasi laporan tersebut; yang dicantumkan hanya bahwa dokumen itu diajukan ke pemerintah AS. Sisanya adalah pernyataan, bukan capaian terukur.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Yang bisa dibawa pulang dari halaman ini bukan ramalan singularity, melainkan bentuk pesannya: sebuah laboratorium menempatkan kalimat tentang kemampuannya membangun model berikutnya di bagian Faktor Risiko dokumen keuangan. Bagi ASN, dosen, dan pimpinan unit yang sedang menulis kebijakan penggunaan AI, itu contoh konkret bahwa tata kelola bisa lahir sebagai klausul dalam laporan resmi, bukan sebagai brosur fitur.",
+          "Di Trendshift 4 November 2026, craft-anything duduk di peringkat satu sebagai alat mempelajari cara kerja perangkat lunak, agent-desktop Vercel Labs di peringkat tiga sebagai computer use CLI untuk agen AI, dsh-superagent-prototype di peringkat empat dengan tagline Towards a More Autonomous Agent System, dan NVIDIA Auto Ontology di peringkat lima. ReelMimic di peringkat delapan memakai sampai enam agen yang saling mereviu hasil. Editorial hari ini tidak menyamakan peringkat tren GitHub dengan pernyataan Anthropic; keduanya topik berbeda: momentum repositori versus pengungkapan risiko sebuah laboratorium, dan halaman ANTARA tidak menyebut satu pun repo yang naik hari ini.",
+          "Ada satu baris di halaman yang sama yang perlu dicatat oleh situs yang membahas tool scraping. Bagian penutup konten ANTARA tercetak: Dilarang keras mengambil konten, melakukan crawling atau pengindeksan otomatis untuk AI di situs web ini tanpa izin tertulis dari Kantor Berita ANTARA. Review Scrapling pada 3 November menulis hal serupa soal kepatuhan situs target; halaman ini adalah contoh kasusnya, dan artikel berita ini disusun dari pembacaan satu halaman tersebut, bukan dari crawl massal.",
+          "Kutipan TechCrunch yang jadi bahan tulisan ANTARA terbit Senin 2 November waktu setempat, sementara halaman ini baru tayang Selasa malam WIB. Jeda itu sendiri layak dibaca: kebijakan yang diumumkan di dokumen resmi bisa melewati satu siklus berita lokal sebelum sampai ke pembaca Indonesia.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Pada Selasa malam itu, yang baru di ANTARA adalah pernyataan Anthropic soal persimpangan RSI, dua kalimat yang masuk ke bagian Faktor Risiko, dan janji melibatkan manusia dalam R&D. Yang tidak ada di halaman itu, dan ada di editorial 3 November di situs ini, adalah angka kalibrasi perangkat lunak pembakar piringan optis serta harga per juta token sebuah model Frontier.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Selasa 3 November 2026 pukul 23.24 WIB, dengan penerjemah Livia Kristianti dan editor Mahmudah sesuai yang tercetak di halaman. Sumber yang dirujuk tulisan itu adalah TechCrunch pada Senin 2 November 2026 waktu setempat, dan laporan keuangan Anthropic yang diajukan ke pemerintah AS; Wawasan AI tidak membaca laporan keuangan tersebut dan mengutip halaman ANTARA apa adanya, termasuk kalimat yang masih berada di dalam tanda kutip pembuka tanpa penutup pada teks aslinya.",
+        ],
+      },
+    ],
+  },
+
 ];
 
 export function getArtikel(slug: string) {

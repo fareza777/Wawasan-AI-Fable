@@ -5220,6 +5220,50 @@ export const stacks: Review[] = [
     date: "2026-11-03",
     featured: false,
   },
+  {
+    slug: "reelmimic",
+    name: "ReelMimic",
+    tagline: "Animasi 2D bergaya video referensi — enam agen berbagi kerja dan satu agen lain mereviu tiap shot",
+    tags: ["Open Source", "AI Video", "Multi-Agent", "Claude Code", "Codex"],
+    score: 7.3,
+    scores: [
+      { label: "Kemampuan Agentic", value: 8.6 },
+      { label: "Kualitas Output", value: 7.4 },
+      { label: "Pengalaman Pengguna", value: 7.8 },
+      { label: "Ekosistem & Integrasi", value: 7.0 },
+      { label: "Harga", value: 5.6 },
+    ],
+    summary:
+      "ReelMimic duduk di peringkat delapan tren harian Trendshift 4 November 2026. Deskripsi repositori yang dikembalikan API berbunyi Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you, dan README yang dibaca pada hari yang sama menegaskan seluruhnya berjalan di komputer sendiri dengan akun Claude Code atau Codex pemakai. Ini alat animasi 2D, bukan generator video fotorealistik: README menulis proyeknya membuat animasi, bukan rekaman orang sungguhan, dan menyebut batas waktu produksinya dalam hitungan jam.",
+    pros: [
+      "Pola multi-agenya tertulis jelas, bukan sekadar label: sampai enam agen mengerjakan bagian berbeda dari satu video, tiap shot yang selesai diserahkan ke agen baru untuk direviu supaya tidak ada yang menilai pekerjaannya sendiri, dan setiap perbaikan menuntut tangkapan layar sebelum dan sesudah yang diperiksa reviewer",
+      "Etika pembuatannya dicetak di Ground rules: ia mempelajari teknik dari referensi — pacing, framing, transisi, cara punchline jatuh — tetapi tidak memakai ulang footagenya, karakternya, logonya, atau asetnya; lirik hanya dari teks yang kamu berikan, dan tidak mengunduh lagu komersial",
+      "API GitHub pada 4 November 2026 pukul 07.03 WIB: 1.769 bintang, 54 fork, 49 pada field open_issues_count, bahasa JavaScript, lisensi MIT, 21 pengikut, topics mencakup ai-video, multi-agent, style-transfer, claude-code, dan codex. Repo dibuat 28 September 2026, push terakhir 3 November 2026",
+      "Pengguna bisa melihat apa yang sedang dikerjakan agen: apa yang dipikirkan, perintah yang dijalankan, frame yang dibuka, plus log lengkap — dan tab Production line menunjukkan posisi tiap karakter serta tiap bagian video bersama tangkapan layar hasil reviu",
+      "Menambah gaya tidak menuntut kode: README menulis satu berkas Markdown per gaya, dan ketika referensi tidak cocok dengan gaya yang dikenal ia memakai mesin terdekat lalu menulis proposal gaya baru",
+    ],
+    cons: [
+      "Catatan di kepala README menyatakan jumlah bintang dan fork di-reset ke nol pada 20 Oktober 2026 karena repositori sempat tidak sengaja dibuat privat, dan rinciannya ada di isu nomor 115 — jadi 1.769 bintang pada 4 November bukan hitungan penuh umur proyek",
+      "Biaya komputasi bukan biaya produk: README menulis seluruh kerja berjalan lewat akun Claude Code atau Codex pemakai dan ikut terpakai ke kuota akun itu; kalau menyentuh batas, pekerjaan berhenti dan bisa dilanjutkan, tetapi tidak ada angka dollar yang bisa dikutip dari README",
+      "Durasi produksi dicetak dalam rentang yang panjang: video 30 sampai 60 detik biasanya memakan 1 sampai 3,5 jam setelah rencana disetujui, dengan watercolor dan krayon paling lambat karena tiap frame dilukis dengan kuas",
+      "README menyebut pengujian terutama di Windows, sementara macOS dan Linux seharusnya jalan tetapi lebih sedikit diuji, dan tujuh mesin gambar yang tersedia masih muda pada lima di antaranya",
+      "Antarmuka hanya tiga bahasa — Mandarin tradisional, Inggris, dan Mandarin sederhana — tanpa Bahasa Indonesia, dan daftar opsi suara bawaan yang README cetak adalah suara Mandarin Taiwan serta ElevenLabs opsional",
+      "Belum ada jalur rilis yang bisa diverifikasi: endpoint rilis terbaru API mengembalikan 404 dan tidak ada rilis terhitung, jadi pemasangan mengikuti cabang main lewat install.sh atau install.bat",
+    ],
+    verdict:
+      "Masuk akal untuk kreator dan tim konten Indonesia yang sudah punya langganan Claude Code atau Codex dan ingin eksperimen animasi 2D bergaya referensi tertentu di mesin sendiri, dengan catatan kuota akun yang terpakai diukur lebih dulu dan ground rules hak cipta dibaca sebagai batas kerja, bukan formalitas. Jangan memakainya untuk iklan berjadwal ketat atau untuk meniru karya yang karakter dan musiknya masih dilindungi.",
+    body: [
+      "ReelMimic hidup di repositori edenfunf/reelmimic. API GitHub yang dibaca pukul 07.03 WIB pada 4 November 2026 mencatat 1.769 bintang, 54 fork, 49 pada field open_issues_count, bahasa JavaScript, lisensi MIT, 21 pengikut, ukuran repositori 43.645 kilobyte, dan cabang bawaan main; kolom homepage kosong. Repo dibuat 28 September 2026 dan push terakhir 3 November 2026 pukul 14.41 UTC, commit terakhirnya adalah penggabungan pull request nomor 127 dari cabang fix/composer-submit-shortcut dengan penulis commit bernama Eden. Endpoint rilis terbaru mengembalikan 404 dan daftar rilis API kosong, jadi tidak ada nomor versi atau berkas unduhan yang bisa dikutip. Yang perlu diketahui dari angka bintangnya: catatan di kepala README menyatakan secara eksplisit bahwa jumlah bintang dan fork di-reset ke nol pada 20 Oktober 2026 karena repositori sempat tidak sengaja dibuat privat, dan proyeknya masih aktif dipelihara, dengan detail di isu nomor 115. Kontributor yang dikembalikan API ada 14 nama, dengan 107 kontribusi untuk pemilik repositori, 8 untuk kontributor kedua, lalu satu atau dua kontribusi untuk sisanya. Trendshift menaruh proyek ini di peringkat delapan tren harian 4 November, dengan topic AI video generation. Wawasan AI tidak menjalankan install.sh, tidak membuka localhost 4318, dan tidak memproduksi satu klip pun hari ini.",
+      "Cara kerjanya yang README cetak dimulai dari satu video referensi — berkas, rekaman ponsel, atau tautan YouTube — lalu pemakai menjelaskan apa yang ingin dibuat. Tahap pertama membongkar referensinya: jumlah shot, panjang tiap shot, BPM, transisi, warna, pembingkaian, dan pergerakan kamera. Hasilnya bukan langsung produksi, melainkan rencana yang pemakai setujui lebih dulu, berisi storyboard, karakter, aset, dan beberapa style frame, dan bisa didiskusikan lewat obrolan di sebelah kanan sampai cocok. Setelah produksi berjalan, pekerjaan dipecah ke beberapa agen — sampai enam pada satu video — tiap shot yang selesai diserahkan ke agen baru untuk direviu sehingga tidak ada agen yang menilai pekerjaannya sendiri, dan setiap perbaikan datang dengan tangkapan layar sebelum dan sesudah yang diperiksa reviewer. Batasnya ikut dicetak di bagian Good to know: 2D saja dengan tujuh mesin gambar, yaitu vector dan motion graphics yang dibangun di atas HyperFrames, watercolor lukis tangan di atas painted-animation, buku cerita krayon, pixel art, stop-motion guntingan kertas, coretan papan putih, dan anime cel — lima yang lebih baru disebut masih muda dan lebih sedikit dipakai di dunia nyata dibanding dua pertama. Yang tidak dibuatnya adalah rekaman orang sungguhan.",
+      "Sisi agen dan sisi biayanya terkait, dan README tidak menutupinya. Syarat yang tercetak: Node.js 22.18 ke atas, Python 3.10 ke atas, FFmpeg, Chrome, serta Claude Code atau Codex CLI yang sudah login; pemasangannya git clone lalu install.sh, atau install.bat di Windows, kemudian start.sh dan buka localhost:4318, dengan pemeriksaan lingkungan yang bisa dijalankan ulang lewat npm run doctor. Claude Code disebut mengambil skill di repositori ini otomatis dan Codex membaca AGENTS.md, jadi tidak ada konfigurasi tambahan. Kunci API dan lokasi alat ditempatkan di berkas secrets.json di folder rumah, di luar repositori, termasuk YATING_KEY untuk suara Mandarin Taiwan, ELEVENLABS_API_KEY yang opsional, PIXABAY_KEY dan FREESOUND_KEY, serta BUILDERS dan MAX_AGENTS yang mengatur berapa agen bekerja pada satu video dan batas di seluruh proyek. Yang paling menentukan untuk dompet ada di satu kalimat: seluruh pekerjaan berjalan lewat akun Claude Code atau Codex milik pemakai dan dihitung ke pemakaian akun itu. Opsi posting ke media sosial lewat Upload-Post juga ditulis dengan batas jelas — ReelMimic tidak pernah memposting apa pun sendiri, tanpa flag send tidak ada yang keluar dari komputer, dan yang boleh diposting hanya proyek yang reviu terakhirnya lulus. Perlu dicatat: nilai sandbox bawaan Codex yang README cetak adalah danger-full-access, sama seperti Claude Code dengan Bash diizinkan, dan mode workspace-write disebut memblokir renderer Chrome.",
+      "Untuk pembaca Indonesia, posisi ReelMimic paling mudah dibaca sebagai studio kecil di laptop, bukan sebagai layanan. Yang relevan bagi UMKM yang ingin video produk bergaya tertentu, tim humas institusi yang butuh animasi pendek, atau mahasiswa komunikasi dan desain yang tidak punya lisensi After Effects adalah kombinasi tiga hal: satu video referensi cukup sebagai bahan analisis, rencana ditampilkan sebelum produksi sehingga bisa ditolak, dan hasilnya berupa animasi yang karakternya orisinal karena ia tidak memindahkan aset referensi. Yang harus diukur lebih dulu adalah kuota langganan coding agent, karena durasi 1 sampai 3,5 jam untuk video 30 sampai 60 detik berarti ratusan sampai ribuan panggilan model per klip dan semuanya lewat akun itu; README tidak memasang angka dollar, jadi editorial tidak menulis angkanya. Batas lain yang perlu diuji sendiri di laptop tanpa GPU diskrit adalah pilihan mesin gambarnya, karena watercolor dan krayon melukis tiap frame dengan kuas dan README menempatkan keduanya sebagai yang paling lambat. Dan karena tidak ada rilis resmi, versi yang kamu clone hari ini bukan versi yang akan kamu pakai bulan depan. Editor video yang butuh kepastian jadwal tetap lebih aman memakai pipeline yang bisa dirender ulang secara deterministik.",
+    ],
+    link: "https://github.com/edenfunf/reelmimic",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-11-04",
+    featured: false,
+  },
+
 ];
 
 export function getStack(slug: string) {
