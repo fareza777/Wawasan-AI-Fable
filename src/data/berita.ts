@@ -6066,7 +6066,7 @@ export const berita: Artikel[] = [
     excerpt:
       "ANTARA Selasa 3 November 2026 pukul 23.24 WIB melaporkan pernyataan Anthropic dalam laporan keuangan yang diajukan ke pemerintah AS: perusahaan makin dekat ke model AI yang membangun dirinya sendiri atau recursive self-improvement (RSI), disertai Kebijakan Skalabilitas Bertanggung Jawab, dua pernyataan baru di bagian Faktor Risiko, dan janji tetap melibatkan manusia dalam penelitian serta pengembangan.",
     category: "Analisis",
-    date: "2026-11-03",
+    date: "2026-11-04",
     readingTime: "6 menit",
     body: [
       {

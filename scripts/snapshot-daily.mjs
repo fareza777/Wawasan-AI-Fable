@@ -57,7 +57,8 @@ async function fetchDaily() {
   throw new Error("Daily ItemList not found");
 }
 
-const date = new Date().toISOString().slice(0, 10);
+// Tanggal jalan di WIB, bukan tanggal UTC: jalan sebelum 07.00 WIB else-nya tersimpan sebagai hari kemarin.
+const date = new Date(Date.now() + 7 * 3_600_000).toISOString().slice(0, 10);
 const data = await fetchDaily();
 await fs.mkdir(OUT_DIR, { recursive: true });
 const out = path.join(OUT_DIR, `${date}.json`);
