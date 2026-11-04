@@ -4,10 +4,46 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-04T00:00:18.124Z",
+  "fetchedAt": "2026-11-04T07:51:07.970Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "OpenSelena/omniget",
+      "owner": "OpenSelena",
+      "repo": "omniget",
+      "description": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte.",
+      "githubUrl": "https://github.com/OpenSelena/omniget",
+      "trendshiftUrl": "https://trendshift.io/repositories/271692",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-08T06:17:59Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Usagi-org/ai-goofish-monitor",
+      "owner": "Usagi-org",
+      "repo": "ai-goofish-monitor",
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "githubUrl": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/17190",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-07-16T08:13:41Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "KKKKhazix/agent-autoloop",
+      "owner": "KKKKhazix",
+      "repo": "agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "githubUrl": "https://github.com/KKKKhazix/agent-autoloop",
+      "trendshiftUrl": "https://trendshift.io/repositories/336058",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-03T08:02:11Z"
+    },
+    {
+      "rank": 4,
       "fullName": "storytold/craft-anything",
       "owner": "storytold",
       "repo": "craft-anything",
@@ -19,48 +55,21 @@
       "dateCreated": "2026-10-31T14:50:00Z"
     },
     {
-      "rank": 2,
-      "fullName": "JiaFeiMiao-K-Cat/DiscImageStudio",
-      "owner": "JiaFeiMiao-K-Cat",
-      "repo": "DiscImageStudio",
-      "description": "",
-      "githubUrl": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/332271",
-      "language": "C#",
-      "topics": [],
-      "dateCreated": "2026-08-23T03:40:14Z"
-    },
-    {
-      "rank": 3,
-      "fullName": "vercel-labs/agent-desktop",
-      "owner": "vercel-labs",
-      "repo": "agent-desktop",
-      "description": "Computer use CLI for AI agents",
-      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
-      "trendshiftUrl": "https://trendshift.io/repositories/111178",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-02-19T18:00:49Z"
-    },
-    {
-      "rank": 4,
-      "fullName": "deepseek-ai/dsh-superagent-prototype",
-      "owner": "deepseek-ai",
-      "repo": "dsh-superagent-prototype",
-      "description": "Towards a More Autonomous Agent System",
-      "githubUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-      "trendshiftUrl": "https://trendshift.io/repositories/328842",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent",
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-10-31T09:32:46Z"
-    },
-    {
       "rank": 5,
+      "fullName": "ccch1mneyyy/dsh-Go",
+      "owner": "ccch1mneyyy",
+      "repo": "dsh-Go",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "githubUrl": "https://github.com/ccch1mneyyy/dsh-Go",
+      "trendshiftUrl": "https://trendshift.io/repositories/319451",
+      "language": "Dart",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-10-25T08:09:52Z"
+    },
+    {
+      "rank": 6,
       "fullName": "NVIDIA/auto-ontology",
       "owner": "NVIDIA",
       "repo": "auto-ontology",
@@ -72,7 +81,31 @@
       "dateCreated": "2026-04-27T21:45:56Z"
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "fullName": "govijr/terminal-mac",
+      "owner": "govijr",
+      "repo": "terminal-mac",
+      "description": "",
+      "githubUrl": "https://github.com/govijr/terminal-mac",
+      "trendshiftUrl": "https://trendshift.io/repositories/335941",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-03T03:22:56Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "wquguru/cicada",
+      "owner": "wquguru",
+      "repo": "cicada",
+      "description": "知了 Cicada · 任意会议与直播的实时字幕、同声传译、AI 会议纪要（macOS）。Live subtitles, interpreting and meeting notes for any call or stream on your Mac.",
+      "githubUrl": "https://github.com/wquguru/cicada",
+      "trendshiftUrl": "https://trendshift.io/repositories/334299",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-01T05:41:23Z"
+    },
+    {
+      "rank": 9,
       "fullName": "D4Vinci/Scrapling",
       "owner": "D4Vinci",
       "repo": "Scrapling",
@@ -86,58 +119,16 @@
       "dateCreated": "2024-10-13T20:29:53Z"
     },
     {
-      "rank": 7,
-      "fullName": "BryceYuuu/RUN",
-      "owner": "BryceYuuu",
-      "repo": "RUN",
-      "description": "RUN · 润：海外移居手册（欧洲 36 国 · 110 条路线 · 主要移民地区）",
-      "githubUrl": "https://github.com/BryceYuuu/RUN",
-      "trendshiftUrl": "https://trendshift.io/repositories/326925",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-10-29T11:28:43Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "edenfunf/reelmimic",
-      "owner": "edenfunf",
-      "repo": "reelmimic",
-      "description": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
-      "githubUrl": "https://github.com/edenfunf/reelmimic",
-      "trendshiftUrl": "https://trendshift.io/repositories/271143",
-      "language": "JavaScript",
-      "topics": [
-        "AI video generation"
-      ],
-      "dateCreated": "2026-09-28T19:14:59Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "pingdotgg/t3code",
-      "owner": "pingdotgg",
-      "repo": "t3code",
-      "description": "",
-      "githubUrl": "https://github.com/pingdotgg/t3code",
-      "trendshiftUrl": "https://trendshift.io/repositories/22711",
-      "language": "TypeScript",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-02-08T23:46:22Z"
-    },
-    {
       "rank": 10,
-      "fullName": "github/spec-kit",
-      "owner": "github",
-      "repo": "spec-kit",
-      "description": "💫 Toolkit to help you get started with SDD or any other process!",
-      "githubUrl": "https://github.com/github/spec-kit",
-      "trendshiftUrl": "https://trendshift.io/repositories/15463",
-      "language": "Python",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2025-08-21T22:54:31Z"
+      "fullName": "tembo/voxl",
+      "owner": "tembo",
+      "repo": "voxl",
+      "description": "extremely fast web remote desktop streaming",
+      "githubUrl": "https://github.com/tembo/voxl",
+      "trendshiftUrl": "https://trendshift.io/repositories/335609",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-06-18T23:46:39Z"
     }
   ]
 }
