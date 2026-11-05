@@ -6119,6 +6119,63 @@ export const berita: Artikel[] = [
     ],
   },
 
+  {
+    slug: "antara-2043-rmit-pelecehan-gambar-ai",
+    title: "ANTARA Pukul 20.43: Studi RMIT Catat Satu dari 15 Orang Dewasa Alami Pelecehan Berbasis Gambar AI",
+    excerpt:
+      "ANTARA Rabu 4 November 2026 pukul 20.43 WIB menurunkan hasil studi yang dipimpin Universitas RMIT Australia: sekira satu dari 15 orang dewasa di Australia, Inggris, dan Amerika Serikat pernah mengalami pelecehan berbasis gambar hasil AI, dengan survei lebih dari 7.200 responden, temuan 87 persen penyintas melaporkan dampak, dan tuntutan tanggung jawab perusahaan teknologi dari penulis utamanya.",
+    category: "Analisis",
+    date: "2026-11-05",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Rabu 4 November 2026 pukul 20.43 WIB, ANTARA News menurunkan judul Studi: Satu dari 15 orang dewasa alami pelecehan berbasis gambar AI, dengan keterangan waktu baca 2 menit yang tercetak di halaman dan lokasi pembukaan Melbourne (ANTARA). Foto yang mengiringi memakai keterangan Lengan dan tangan humanoid berbasis kecerdasan buatan (AI) dipamerkan dalam Dubai AI Festival di Dubai, Uni Emirat Arab, Senin (26/10/2026). ANTARA/XINHUA/Wang Zecong.",
+          "Yang dilaporkan adalah hasil riset, bukan peluncuran produk atau kebijakan baru. Kutipan pembuka yang tercetak: Sekira satu dari 15 orang dewasa di Australia, Inggris, dan Amerika Serikat mengalami pelecehan berbasis gambar hasil kecerdasan buatan (AI), demikian studi yang dipimpin Universitas RMIT Australia.",
+        ],
+      },
+      {
+        heading: "Angka yang tercetak di halaman",
+        paragraphs: [
+          "Halaman menulis studinya digelar dengan menyurvei lebih dari 7.200 orang dewasa di tiga negara. Kutipan yang tercetak: Studi yang digelar dengan menyurvei lebih dari 7.200 orang dewasa di ketiga negara tersebut menemukan bahwa 7 persen responden pernah mengalami sedikitnya satu bentuk pelecehan semacam itu sejak berusia 18 tahun. Angkanya sedikit lebih tinggi di Australia, yakni 7,7 persen, menurut pernyataan yang dirilis Universitas RMIT pada Rabu.",
+          "Ada dua cara halaman yang sama menyebutkan besaran yang sama, dan keduanya kami tulis apa adanya. Judulnya menyebut satu dari 15 orang dewasa, sementara badan tulisannya mencetak 7 persen dan 7,7 persen untuk Australia; satu perlima belas secara aritmetika adalah sekitar 6,7 persen. Editorial tidak merata-ratakan keduanya dan tidak memilih salah satu, karena yang tercetak di judul dan yang tercetak di paragraf memang berbeda kalimatnya.",
+          "Kutipan lain yang tercetak soal distribusi korban: Studi tersebut menemukan bahwa laki-laki melaporkan pernah mengalami pelecehan itu dengan tingkat lebih dari dua kali lipat dibandingkan perempuan, yakni 10,2 persen berbanding 3,8 persen. Namun, perempuan melaporkan lebih banyak reaksi dan dampak negatif, termasuk rasa takut akan keselamatan mereka serta pengaruh pada kesehatan mental dan fisik.",
+        ],
+      },
+      {
+        heading: "Bentuk pelecehan dan dampaknya",
+        paragraphs: [
+          "Definisi yang dipakai studi dicetak dalam satu kalimat di badan berita. Kutipan yang tercetak: Pelecehan tersebut mencakup pembuatan atau pengubahan gambar intim menggunakan AI tanpa persetujuan, penyebaran gambar intim hasil AI tanpa persetujuan, atau ancaman untuk menyebarkan gambar tersebut, demikian temuan studi itu.",
+          "Untuk bagian dampak, halaman menulis: Hampir 87 persen korban/penyintas melaporkan sedikitnya satu dampak terhadap kehidupan mereka, termasuk pengaruh pada kesehatan dan kesejahteraan, hubungan antarpribadi, pekerjaan, atau keuangan.",
+          "Perlu dicatat apa yang tidak ada di halaman ini: tidak ada tabel rincian per negara selain angka Australia yang disebut terpisah, tidak ada uraian metode sampling, tidak ada rentang usia selain patokan sejak berusia 18 tahun, dan tidak ada angka untuk Indonesia atau negara Asia Tenggara lainnya. Tiga negara yang disebut adalah Australia, Inggris, dan Amerika Serikat.",
+        ],
+      },
+      {
+        heading: "Suara penulis studi dan jurnalnya",
+        paragraphs: [
+          "Halaman menyebut penulis utama dan pesan yang ia bawa. Kutipan yang tercetak: Penulis utama studi, Profesor Nicola Henry dari RMIT, mengatakan temuan tersebut mengungkap besarnya cakupan pelecehan itu di tengah masyarakat luas, bukan hanya menimpa selebritas dan tokoh publik.",
+          "Kutipan kedua yang tercetak di paragraf penutup berita: Penelitian yang dipublikasikan dalam International Journal of Human-Computer Interaction itu menyoroti perlunya perusahaan teknologi mengambil tanggung jawab lebih besar untuk mencegah pelecehan berbasis gambar yang dihasilkan AI sebelum terjadi, kata Henry.",
+          "Halaman menaruh tag Australia, Pelecehan AI, Gambar buatan AI, dan Gambar hasil AI, serta mencetak penerjemah Xinhua dan editor Gilang Galiartha di bawah badan tulisan.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Yang bisa dibawa pulang dari halaman ini adalah cara membaca angka kerugian: studi itu tidak berhenti di jumlah kejadian, tetapi memisahkan siapa yang melapor (laki-laki 10,2 persen berbanding perempuan 3,8 persen) dari siapa yang menanggung dampak lebih banyak (perempuan, termasuk rasa takut akan keselamatan). Bagi penyusun kebijakan perlindungan data dan unit pengelola pengaduan di Indonesia, pemisahan itu penting: tingkat pelaporan dan tingkat kebutuhan penanganan tidak selalu bergerak ke arah yang sama, dan survei yang hanya membaca angka pertama akan salah menentukan layanan.",
+          "Konteks lokal yang perlu jujur disebutkan: halaman ini tidak memuat angka Indonesia. Yang tersedia adalah tiga negara Anglo-Saxon, jadi memakai 7 persen sebagai dasar estimasi kerugian di dalam negeri adalah lompatan yang tidak didukung teks. Yang tetap bisa dipinjam adalah kerangkanya — definisi perbuatan (membuat atau mengubah tanpa persetujuan, menyebar, atau mengancam menyebar) dan klaim 87 persen penyintas melaporkan sedikitnya satu dampak pada kesehatan, hubungan, pekerjaan, atau keuangan.",
+          "Di Trendshift 5 November 2026, halaman tren GitHub justru penuh alat yang bekerja di sisi produksi gambar dan video: craft-anything di peringkat satu, NVIDIA Auto Ontology di peringkat dua, OmniGet di peringkat tiga yang README-nya mencetak kemampuan mengambil galeri gambar dari 250-an situs, Scrapling di peringkat empat, agent-autoloop di peringkat enam, dsh-Go di peringkat tujuh, dan DiscImageStudio di peringkat delapan. ReelMimic, yang rubrik Tools di situs ini ulas pada 4 November, berjalan di atas tujuh mesin gambar 2D. Editorial hari ini tidak menyamakan peringkat tren GitHub dengan temuan RMIT; keduanya topik berbeda — perangkat lunak pengumpul dan pembuat media versus survei tentang kekerasan berbasis gambar sintetis terhadap orang nyata — dan halaman ANTARA tidak menyebut satu pun repo yang naik hari ini.",
+          "Satu baris di bagian penutup konten halaman ini perlu dikutip ulang oleh situs yang membahas tool scraping, karena ia menyebut praktik yang kami lakukan: Dilarang keras mengambil konten, melakukan crawling atau pengindeksan otomatis untuk AI di situs web ini tanpa izin tertulis dari Kantor Berita ANTARA. Artikel ini disusun dari pembacaan satu halaman tersebut pada 5 November 2026, bukan dari pengindeksan massal Arsip ANTARA.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Bandingkan bentuk pesannya dengan editorial kemarin di situs ini. Pada Selasa 3 November 2026 pukul 23.24 WIB, ANTARA memberitakan pernyataan Anthropic di laporan keuangan yang diajukan ke pemerintah AS soal kemampuannya mendekati AI yang memperbaiki dirinya sendiri — pengungkapan risiko oleh pembuat model. Pada Rabu 4 November 2026 pukul 20.43 WIB, ANTARA memberitakan besaran kerugian yang terukur di pihak pengguna — pengukuran dampak oleh pihak luar. Dua-duanya kalimat tentang risiko AI, tetapi berasal dari posisi yang berbeda dan dengan bukti yang berbeda rupa.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Rabu 4 November 2026 pukul 20.43 WIB, dengan penerjemah Xinhua dan editor Gilang Galiartha sesuai yang tercetak di halaman, dan tanggal akses 5 November 2026. Berita itu sendiri merujuk pada studi pimpinan Universitas RMIT Australia yang dipublikasikan dalam International Journal of Human-Computer Interaction serta pada pernyataan yang dirilis RMIT pada Rabu; Wawasan AI tidak membaca naskah jurnalnya, tidak memverifikasi angka surveinya, dan mengutip halaman ANTARA apa adanya, termasuk perbedaan antara fraksi satu dari 15 di judul dan 7 persen di badan tulisan.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

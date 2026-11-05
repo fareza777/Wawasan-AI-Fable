@@ -1,0 +1,138 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-05T00:00:31.424Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "NVIDIA/auto-ontology",
+      "owner": "NVIDIA",
+      "repo": "auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "githubUrl": "https://github.com/NVIDIA/auto-ontology",
+      "trendshiftUrl": "https://trendshift.io/repositories/315432",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-04-27T21:45:56Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "OpenSelena/omniget",
+      "owner": "OpenSelena",
+      "repo": "omniget",
+      "description": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte.",
+      "githubUrl": "https://github.com/OpenSelena/omniget",
+      "trendshiftUrl": "https://trendshift.io/repositories/271692",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-08T06:17:59Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "D4Vinci/Scrapling",
+      "owner": "D4Vinci",
+      "repo": "Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "githubUrl": "https://github.com/D4Vinci/Scrapling",
+      "trendshiftUrl": "https://trendshift.io/repositories/14244",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2024-10-13T20:29:53Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "KKKKhazix/agent-autoloop",
+      "owner": "KKKKhazix",
+      "repo": "agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "githubUrl": "https://github.com/KKKKhazix/agent-autoloop",
+      "trendshiftUrl": "https://trendshift.io/repositories/336058",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-03T08:02:11Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "ccch1mneyyy/dsh-Go",
+      "owner": "ccch1mneyyy",
+      "repo": "dsh-Go",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "githubUrl": "https://github.com/ccch1mneyyy/dsh-Go",
+      "trendshiftUrl": "https://trendshift.io/repositories/319451",
+      "language": "Dart",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-10-25T08:09:52Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "owner": "JiaFeiMiao-K-Cat",
+      "repo": "DiscImageStudio",
+      "description": "",
+      "githubUrl": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "trendshiftUrl": "https://trendshift.io/repositories/332271",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-08-23T03:40:14Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "vercel-labs/agent-desktop",
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/111178",
+      "language": "Rust",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-02-19T18:00:49Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "govijr/terminal-mac",
+      "owner": "govijr",
+      "repo": "terminal-mac",
+      "description": "",
+      "githubUrl": "https://github.com/govijr/terminal-mac",
+      "trendshiftUrl": "https://trendshift.io/repositories/335941",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-03T03:22:56Z"
+    }
+  ]
+}

@@ -5928,6 +5928,53 @@ link: "https://www.anthropic.com",
     featured: false,
   },
 
+  {
+    slug: "gpt-6-1-terra-max",
+    name: "GPT-6.1 Terra (Max)",
+    tagline: "Indeks 51, $0,96 per tugas, 78 t/s, TTFT 152,60 detik",
+    tags: ["OpenAI", "Proprietary", "Reasoning", "Multimodal"],
+    score: 7.7,
+    scores: [
+      { label: "Penalaran", value: 7.9 },
+      { label: "Coding", value: 7.0 },
+      { label: "Kecepatan", value: 4.6 },
+      { label: "Harga/Performa", value: 9.2 },
+    ],
+    aa_intelligence_index: 51,
+    aa_price_input: 1,
+    aa_price_output: 5,
+    aa_synced_at: "2026-11-05",
+    summary:
+      "Artificial Analysis, dibaca 5 November 2026, memberi GPT-6.1 Terra (Max) intelligence index 51 dan menandainya proprietary. Kartu intelijen menulis #14 dari 66 dan 4 dari 4 satuan, sementara kartu biaya menulis $1,00 masukan dan $5,00 keluaran per juta token dengan $0,96 per tugas indeks pada peringkat 13 dari 65. Yang membuat kartu ini aneh untuk dibaca sebagai model harian adalah latensinya: waktu ke token pertama 152,60 detik terhadap median 13,46 detik yang halaman yang sama cetak. Bagian tanya-jawab tersedia di halaman ini, jadi angka TTFT terbaca — berbeda dari halaman GPT-6.1 Sol yang editorial baca kemarin.",
+    pros: [
+      "Intelligence index 51, teks pembanding halaman menulis placing it well above average among comparable models dengan median 36 (sumber: Artificial Analysis, halaman model, diakses 5 November 2026)",
+      "Kartu intelijen menulis peringkat #14 dari 66 dan 4 dari 4 satuan pada bagian Intelligence",
+      "Kartu biaya: $1,00 masukan dan $5,00 keluaran per juta token, diskon cache 95 persen, $0,96 per tugas indeks, peringkat biaya 13 dari 65, dan 1 dari 4 satuan — tarif campuran $0,73 per juta token pada rasio 7:2:1 cache hit/masukan/keluaran yang halaman cetak di bagian tanya-jawab",
+      "Spesifikasi halaman: Reasoning Ya, masukan teks dan gambar, keluaran teks, jendela konteks 1M yang halaman terjemahkan sebagai sekitar 1.500 halaman A4 ukuran 12 font Arial, dengan 230 model di kelas pembanding ini",
+      "Ringkasan pembanding halaman menempatkan model ini sebagai amongst the leading models in intelligence and well priced when comparing to other models of similar price, dan bagian tanya-jawab menulis model tersedia lewat 6 penyedia API",
+    ],
+    cons: [
+      "Waktu ke token pertama 152,60 detik terhadap median 13,46 detik — halaman menulis at the higher end compared to other models in a similar price tier, dan kartu kinerja menaruh bagian ini di peringkat 33 dari 62 dengan 3 dari 4 satuan",
+      "Kecepatan keluaran kartu hanya 78 token per detik, dan teks pembanding menulis slower than average per task dengan 12,7 menit per tugas indeks terhadap median 12,3 menit",
+      "Verbosity 99,4 juta token keluaran dari Intelligence Index terhadap median 69,6 juta yang halaman tulis sebagai somewhat verbose, peringkat 42 dari 65 dengan 3 dari 4 satuan",
+      "Bagan API Provider Benchmarks di halaman ini berulang kali mencetak baris No publicly available API, sementara bagian tanya-jawab halaman yang sama menjawab Yes, GPT-6.1 Terra (Max) is available via API through 6 providers — keduanya kami kutip apa adanya dan tidak kami pilih diam-diam",
+      "Halaman yang dibaca 5 November 2026 ini tidak menampilkan coding index sebagai angka terpisah, jadi editorial tidak memasang angka coding di kolom kartu",
+      "Jumlah parameter tidak diungkapkan: tanya-jawab menulis OpenAI belum merilis ukuran model atau jumlah parameter, dan bobot tidak tersedia untuk umum",
+    ],
+    verdict:
+      "Masuk akal dicatat sebagai titik harga terendah baru di belasan besar intelijen: indeks 51 dengan $0,96 per tugas indeks, di bawah GPT-6.1 Sol (Max) $1,27 yang editorial baca 4 November. Karena waktu ke token pertama 152,60 detik dan kecepatan keluar 78 token per detik, kartu ini jangan dipakai untuk menyimpulkan pengalaman chat interaktif — jadikan ia kandidat batch, ringkasan dokumen panjang, dan pekerjaan agen bertahap yang tidak menunggu manusia di ujung.",
+    body: [
+      "GPT-6.1 Terra (Max) adalah varian reasoning dengan effort maksimal dari keluarga GPT-6.1 Terra buatan OpenAI yang halamannya di Artificial Analysis dibaca 5 November 2026. Baris identitas halaman menulis OpenAI, GPT-6.1 Terra, max, Proprietary model, dan Released October 2026, sementara bagian tanya-jawab di halaman yang sama mencantumkan tanggal rilis yang lebih spesifik: GPT-6.1 Terra (Max) was released on October 26, 2026. Kedua bentuk tanggal itu tercetak di satu halaman, jadi editorial kutip keduanya. Spesifikasi yang terpasang: Reasoning Ya dengan catatan halaman ini menampilkan versi reasoning model ini dan varian non-reasoning mungkin juga ada; masukan mendukung teks dan gambar; keluaran mendukung teks; jendela konteks 1M dengan keterangan sekitar 1.500 halaman A4 ukuran 12 font Arial dan 230 model di kelas ini. Tanya-jawab menutup sisi kepemilikan dengan dua kalimat: No, GPT-6.1 Terra (Max) is proprietary, the model weights are not publicly available, dan OpenAI has not disclosed the model size or parameter count. Wawasan AI tidak menjalankan model ini sendiri hari ini.",
+      "(Sumber data: Artificial Analysis, halaman model, diakses 5 November 2026.) Intelligence index-nya 51. Kartu intelijen menulis #14 dari 66 dan 4 dari 4 satuan. Teks pembanding halaman menulis skor 51 placing it well above average among comparable models dengan median 36, dan bagian tanya-jawab mengulang angka yang sama dengan kalimat placing it well above average among other models in a similar price tier. Indeks versi 5.0.1 yang tercetak di halaman menggabungkan sembilan evaluasi: AA-Briefcase v1.1, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, AA-Omniscience v1.1, GDP.pdf, HLE-Diamond, CritPt v2 (Hard Subset), dan Terminal-Bench-Science 0.1 — jadi ada evaluasi kode dan terminal di dalamnya, tetapi halaman tidak menampilkan coding index sebagai angka terpisah, sehingga kolom coding kartu ini tetap kosong dan tidak editorial isi. Tanya-jawab hanya menyebut komposit itu secara umum: evaluates models across knowledge work, coding, science, and general knowledge.",
+      "Harga pada kartu biaya: $1,00 per juta token masukan dan $5,00 per juta token keluaran, diskon cache 95 persen, rata-rata $0,96 per tugas indeks, peringkat biaya 13 dari 65, dan 1 dari 4 satuan. Di sini halaman tidak satu suara dan keduanya kami tulis: teks pembanding di atas kartu menulis masukan competitively priced dengan median $2,00 serta keluaran moderately priced dengan median $10,00, sementara bagian tanya-jawab menulis masukan very competitive dengan median $2,00 dan keluaran better than average dengan median $10,00, keduanya atas nama based on OpenAI's API. Tanya-jawab juga mencetak tarif campuran $0,73 per juta token pada rasio 7:2:1 cache hit/masukan/keluaran dan menulis harga dapat berbeda per penyedia. Sebagai pembanding yang editorial baca sehari sebelumnya di halaman GPT-6.1 Sol (Max): indeks 55 dengan $2,00 masuk dan $10,00 keluar serta $1,27 per tugas indeks pada peringkat biaya 14 dari 61 — jadi Terra (Max) mencetak indeks 4 poin lebih rendah dengan biaya per tugas yang juga lebih rendah. Semua angka itu tampilan kartu dan halaman Artificial Analysis, bukan hasil uji tagihan Wawasan AI.",
+      "Kecepatan dan latensi adalah bagian yang membuat kartu ini perlu dibaca dua kali. Kartu kinerja menulis peringkat #33 dari 62, waktu ke token pertama 152,60s, keluaran 78 tok/s, dan 12,7 Time per Intelligence Index task (minutes) dengan 3 dari 4 satuan. Bagian tanya-jawab mengonversi angka yang sama menjadi kalimat: takes 12.7 minutes per Intelligence Index task (based on OpenAI's API), slower than average against median 12,3 minutes, dan has a time to first answer token of 152.60s (based on OpenAI's API), at the higher end compared to other models in a similar price tier dengan median 13,46 detik. Bedanya hampir sebelas kali median, dan halaman mendefinisikan metrik itu sebagai detik ke token jawaban pertama diterima dengan memperhitungkan waktu thinking model penalaran. Verbosity: kartu menulis 5,57 miliar token masukan, rasio keluar/masuk 1,785 persen, dan 99,4M token keluaran dari Intelligence Index pada peringkat 42 dari 65 dengan 3 dari 4 satuan, sementara teks pembanding menulis it generated 99.4M tokens, which is somewhat verbose in comparison to the median of 69.6M. Ringkasan halaman menutup bagian ini dengan slower than average per task and somewhat verbose. Tidak ada angka kecepatan desimal lain yang halaman cetak untuk model ini, jadi editorial hanya menuliskan 78.",
+      "Untuk pengembang di Indonesia, kartu ini paling berguna sebagai pertanyaan anggaran, bukan sebagai pertanyaan kualitas percakapan. Indeks 51 dengan $0,96 per tugas indeks menempatkannya di jalur yang sama dengan pola GPT-6.1 Sol (Max) yang editorial baca kemarin: keluarga Terra dan Sol menjual intelijen belasan besar dengan tarif masukan satu sampai dua dolar per juta token, jauh di bawah model dengan indeks sebanding yang dibanderol $4,00 ke atas. Untuk beban kerja berbahasa Indonesia yang panjang dan berulang — arsip peraturan, transkrip rapat, dokumen perencanaan, tinjauan kode bertahap — jendela konteks 1 juta token plus diskon cache 95 persen lebih menentukan tagihan daripada selisih empat poin indeks, dan menaruh bagian depan prompt yang tidak berubah di luar bagian yang berubah adalah cara paling langsung memanfaatkan angka cache itu. Yang perlu diuji sendiri sebelum keputusan apa pun: waktu ke token pertama 152,60 detik dan keluaran 78 token per detik berarti model ini tidak cocok untuk chat publik yang menunggu manusia, dan halaman ini tidak menampilkan coding index sebagai angka terpisah, jadi klaim pemrograman tidak bisa editorial simpulkan dari kartu ini. Uji juga mutu Bahasa Indonesia, ketersediaan akses dari wilayahmu, serta harga yang penyedia di wilayahmu benar-benar tagihkan, karena halaman menulis pricing may vary by provider sementara angka 152,60 detik dan 13,46 detik di atas adalah pengukuran Artificial Analysis pada API OpenAI.",
+    ],
+    link: "https://artificialanalysis.ai/models/gpt-6-1-terra",
+    linkLabel: "Artificial Analysis",
+    date: "2026-11-05",
+    featured: false,
+  },
 ];
 
 export function getModel(slug: string) {
