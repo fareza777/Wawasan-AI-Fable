@@ -4,22 +4,34 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-05T00:00:31.424Z",
+  "fetchedAt": "2026-11-05T08:17:20.665Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "storytold/craft-anything",
-      "owner": "storytold",
-      "repo": "craft-anything",
-      "description": "Craft Anything: understand how any software works, and craft your own.",
-      "githubUrl": "https://github.com/storytold/craft-anything",
-      "trendshiftUrl": "https://trendshift.io/repositories/331267",
-      "language": "Rust",
+      "fullName": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "owner": "worldonlyu",
+      "repo": "Google_AI_Pro_2Year_ZeroCost_Auto",
+      "description": "Google_AI_Pro_2Year_ZeroCost_Auto",
+      "githubUrl": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "trendshiftUrl": "https://trendshift.io/repositories/337790",
+      "language": "Python",
       "topics": [],
-      "dateCreated": "2026-10-31T14:50:00Z"
+      "dateCreated": "2026-11-04T14:54:56Z"
     },
     {
       "rank": 2,
+      "fullName": "JuneYaooo/rea-video",
+      "owner": "JuneYaooo",
+      "repo": "rea-video",
+      "description": "逆向一切视频：实拍口播、桌拍、AI 视频、3D、代码动效、混剪，逐镜拆出画面、花字、剪辑和声音是怎么做的，并给出复刻方案。Reverse-engineer any video, shot by shot.",
+      "githubUrl": "https://github.com/JuneYaooo/rea-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/334878",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-29T16:15:01Z"
+    },
+    {
+      "rank": 3,
       "fullName": "NVIDIA/auto-ontology",
       "owner": "NVIDIA",
       "repo": "auto-ontology",
@@ -31,7 +43,19 @@
       "dateCreated": "2026-04-27T21:45:56Z"
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
+      "rank": 5,
       "fullName": "OpenSelena/omniget",
       "owner": "OpenSelena",
       "repo": "omniget",
@@ -43,47 +67,33 @@
       "dateCreated": "2026-07-08T06:17:59Z"
     },
     {
-      "rank": 4,
-      "fullName": "D4Vinci/Scrapling",
-      "owner": "D4Vinci",
-      "repo": "Scrapling",
-      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-      "githubUrl": "https://github.com/D4Vinci/Scrapling",
-      "trendshiftUrl": "https://trendshift.io/repositories/14244",
-      "language": "Python",
-      "topics": [
-        "Web scraping"
-      ],
-      "dateCreated": "2024-10-13T20:29:53Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "mattpocock/skills",
-      "owner": "mattpocock",
-      "repo": "skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/21589",
-      "language": "Shell",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-02-03T11:15:53Z"
-    },
-    {
       "rank": 6,
-      "fullName": "KKKKhazix/agent-autoloop",
-      "owner": "KKKKhazix",
-      "repo": "agent-autoloop",
-      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-      "githubUrl": "https://github.com/KKKKhazix/agent-autoloop",
-      "trendshiftUrl": "https://trendshift.io/repositories/336058",
-      "language": "TypeScript",
+      "fullName": "s1dashu/quiet-md",
+      "owner": "s1dashu",
+      "repo": "quiet-md",
+      "description": "⚡ Blazing-fast native notes app for macOS & Windows. Rust + GPUI, local-first, compatible with Feishu/Lark DocxXML. 高性能本地笔记，兼容飞书文档格式。",
+      "githubUrl": "https://github.com/s1dashu/quiet-md",
+      "trendshiftUrl": "https://trendshift.io/repositories/336335",
+      "language": "Rust",
       "topics": [],
-      "dateCreated": "2026-11-03T08:02:11Z"
+      "dateCreated": "2026-11-01T14:22:53Z"
     },
     {
       "rank": 7,
+      "fullName": "zortos293/Lichii",
+      "owner": "zortos293",
+      "repo": "Lichii",
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "githubUrl": "https://github.com/zortos293/Lichii",
+      "trendshiftUrl": "https://trendshift.io/repositories/331569",
+      "language": "C++",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-10-31T14:17:26Z"
+    },
+    {
+      "rank": 8,
       "fullName": "ccch1mneyyy/dsh-Go",
       "owner": "ccch1mneyyy",
       "repo": "dsh-Go",
@@ -97,42 +107,30 @@
       "dateCreated": "2026-10-25T08:09:52Z"
     },
     {
-      "rank": 8,
-      "fullName": "JiaFeiMiao-K-Cat/DiscImageStudio",
-      "owner": "JiaFeiMiao-K-Cat",
-      "repo": "DiscImageStudio",
-      "description": "",
-      "githubUrl": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
-      "trendshiftUrl": "https://trendshift.io/repositories/332271",
-      "language": "C#",
-      "topics": [],
-      "dateCreated": "2026-08-23T03:40:14Z"
-    },
-    {
       "rank": 9,
-      "fullName": "vercel-labs/agent-desktop",
-      "owner": "vercel-labs",
-      "repo": "agent-desktop",
-      "description": "Computer use CLI for AI agents",
-      "githubUrl": "https://github.com/vercel-labs/agent-desktop",
-      "trendshiftUrl": "https://trendshift.io/repositories/111178",
-      "language": "Rust",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-02-19T18:00:49Z"
+      "fullName": "Minireel/HGhub",
+      "owner": "Minireel",
+      "repo": "HGhub",
+      "description": "YellowFruit third-party client",
+      "githubUrl": "https://github.com/Minireel/HGhub",
+      "trendshiftUrl": "https://trendshift.io/repositories/336197",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-03T14:04:27Z"
     },
     {
       "rank": 10,
-      "fullName": "govijr/terminal-mac",
-      "owner": "govijr",
-      "repo": "terminal-mac",
-      "description": "",
-      "githubUrl": "https://github.com/govijr/terminal-mac",
-      "trendshiftUrl": "https://trendshift.io/repositories/335941",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-11-03T03:22:56Z"
+      "fullName": "KKKKhazix/agent-autoloop",
+      "owner": "KKKKhazix",
+      "repo": "agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "githubUrl": "https://github.com/KKKKhazix/agent-autoloop",
+      "trendshiftUrl": "https://trendshift.io/repositories/336058",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-11-03T08:02:11Z"
     }
   ]
 }
