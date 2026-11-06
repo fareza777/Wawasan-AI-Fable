@@ -6176,6 +6176,62 @@ export const berita: Artikel[] = [
       },
     ],
   },
+
+  {
+    slug: "antara-0021-apple-watch-audio-intelligence",
+    title: "ANTARA Pukul 00.21: Apple Watch Mulai Uji Coba Beta Audio Intelligence Berbasis AI",
+    excerpt:
+      "ANTARA Jumat 6 November 2026 pukul 00.21 WIB menurunkan laporan dimulainya uji coba versi beta Audio Intelligence pada Apple Watch: empat fitur utama berbasis AI untuk Apple Watch Series 12 dan Ultra 4, penyaluran awal ke pengembang lewat pembaruan iOS 27.3, fitur Live Rewind 15 detik dan Siri Recaps, serta perangkat keras yang membatasinya — cip S11, mikrofon bawaan, Apple Intelligence, dan Private Cloud Compute.",
+    category: "Analisis",
+    date: "2026-11-06",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Jumat 6 November 2026 pukul 00.21 WIB, ANTARA News menurunkan judul Audio Intelligence berbasis AI pada Apple Watch mulai diuji coba, dengan lokasi pembukaan Jakarta (ANTARA) dan keterangan waktu baca 2 menit yang tercetak di halaman. Foto yang mengiringi memakai keterangan Ilustrasi tampilan Apple Watch Ultra 4. (Apple Newsroom), dan di bawah badan tulisan tercetak Pewarta Farhan Arda Nugraha dengan Editor Maryati, disertai tag Apple Watch, Audio Intelligence, dan jam tangan pintar.",
+          "Kutipan yang tercetak di kalimat pertama: Versi beta Audio Intelligence berbasis kecerdasan artifisial atau akal imitasi (AI) pada perangkat Apple Watch mulai diuji coba pada Selasa (3/11). Halaman ini melaporkan peluncuran terbatas pada sisi perangkat pakai, bukan kebijakan atau angka pasar: yang baru adalah tahap beta-nya, dan sumber yang halaman sebut adalah pemberitaan media teknologi luar negeri.",
+        ],
+      },
+      {
+        heading: "Jalur distribusinya dan empat fiturnya",
+        paragraphs: [
+          "Kutipan yang tercetak soal jalur distribusinya: Menurut siaran TechCrunch pada Rabu (4/11), Audio Intelligence berbasis AI pada tahap awal disediakan bagi pengembang melalui pembaruan sistem operasi iOS 27.3. Jadi halaman memisahkan tiga tanggal yang berbeda: Selasa (3/11) sebagai awal uji coba, Rabu (4/11) sebagai tanggal siaran TechCrunch yang jadi rujukannya, dan Jumat (6/11) sebagai waktu berita ini tayang di ANTARA.",
+          "Kutipan yang tercetak soal isinya: Teknologi ini mencakup empat fitur utama berbasis AI yang memungkinkan pengguna Apple Watch Series 12 mendeteksi suara, mengenali lagu, melihat kembali cuplikan percakapan, serta merangkum poin penting dari sebuah pembicaraan. Halaman lalu merinci satu per satu. Untuk fitur pertama: Fitur pengenalan suara dirancang untuk membantu pengguna dengan gangguan pendengaran mengidentifikasi suara penting seperti sirene, alarm, dan bel pintu dengan dukungan jam tangan pintar. Untuk yang kedua: Fitur pengenalan lagu memanfaatkan aplikasi Shazam milik Apple untuk mendeteksi musik yang sedang diputar di sekitar pengguna lalu menampilkan judul lagu serta nama artisnya.",
+          "Dua fitur berikutnya adalah yang paling menyentuh percakapan orang di sekitar pemakai. Kutipan yang tercetak: Selain itu, ada fitur Live Rewind yang memungkinkan pengguna Apple Watch Series 12 dan Ultra 4 meninjau kembali 15 detik terakhir isi percakapan dalam bentuk teks hanya dengan menekan dua kali tombol putar Digital Crown. Dan: Apple juga menghadirkan fitur Siri Recaps pada jam tangan pintarnya, memungkinkan pengguna untuk mendengarkan percakapan di sekitar dan merangkum poin-poin pentingnya secara otomatis.",
+        ],
+      },
+      {
+        heading: "Batas yang Apple tulis, dikutip apa adanya",
+        paragraphs: [
+          "Halaman tidak berhenti pada daftar kemampuan; ia mencetak tiga penyangkalan dalam satu kalimat. Kutipan yang tercetak: Namun, fitur ini tidak mengidentifikasi siapa yang berbicara, tidak menyimpan rekaman audio mentah, dan tidak menyediakan transkrip kata demi kata. Perhatikan bahwa ketiganya adalah pernyataan tentang apa yang tidak dilakukan fitur, dan halaman tidak memberi ukuran tambahan seperti lama retensi atau bentuk penyimpanan yang dipakai.",
+          "Kutipan kedua soal perlindungan isi percakapan: Apple menyatakan, Siri Recaps dirancang untuk tidak menyertakan informasi sensitif seperti nomor identitas, data keuangan dan kode autentikasi, informasi identitas pribadi tertentu, serta bahasa apapun yang menjurus pada tindakan menyakiti diri sendiri. Klausa atribusi di kalimat ini adalah pernyataan Apple yang dikutip halaman, bukan hasil pengujian pihak ketiga, dan halaman tidak menyebut metode verifikasi apa pun.",
+          "Yang tidak ada di halaman ini perlu disebut supaya tidak dibaca sebagai ringkasan yang lengkap: tidak ada angka jumlah pengembang yang menerima beta, tidak ada daftar negara tempat fitur ini tersedia, tidak ada tanggal vers stabil, tidak ada harga, tidak ada perbandingan dengan fitur serupa di jam tangan pesaing, dan tidak ada satu pun angka untuk Indonesia.",
+        ],
+      },
+      {
+        heading: "Perangkat yang membatasi siapa bisa memakainya",
+        paragraphs: [
+          "Kutipan yang tercetak di paragraf penutup berita: Fitur Audio Intelligence pada Apple Watch Series 12 dan Apple Watch Ultra 4 mengandalkan kombinasi perangkat keras, perangkat lunak, dan layanan Apple, termasuk cip S11, mikrofon bawaan, serta model Apple Intelligence dan Private Cloud Compute dari Apple. Kalimat ini menjelaskan dua hal sekaligus: fitur ini tidak turun ke model jam yang lebih lama, dan ia tidak murni berjalan di pergelangan tangan — ada jalur ke model Apple Intelligence dan ke Private Cloud Compute.",
+          "Sebagai catatan pembaca: halaman menyebut dua model perangkat yang didukung, yaitu Apple Watch Series 12 dan Apple Watch Ultra 4, menyebut satu kombinasi perangkat keras untuk Live Rewind, dan menyebut iOS 27.3 sebagai pembaruan yang menyalurkan beta ke pengembang. Nomor-nomor versi itu kami tulis persis seperti tercetak, dan editorial tidak memeriksa apakah pembaruan tersebut sudah tersedia di Indonesia karena halaman tidak menulisnya.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Yang bisa dibawa pulang dari halaman ini adalah bentuk keputusan yang sedang dinormalisasi: fitur yang nilainya datang dari mendengarkan lingkungan pengguna, dan keamanan yang dijanjikan lewat daftar hal yang tidak dilakukan. Bagi pembaca yang bekerja di ruang rapat — ASN, jurnalis, tenaga kesehatan, pengacara, atau manajer UMKM — tiga penyangkalan yang halaman cetak adalah titik masuk yang tepat untuk diskusi kebijakan internal: tidak mengenali siapa yang bicara, tidak menyimpan audio mentah, dan tidak menghasilkan transkrip kata per kata. Ketiganya menjawab kekhawatiran tertentu dan sekaligus meninggalkan kekhawatiran lain: sebuah ringkasan poin penting tetaplah catatan atas percakapan orang yang tidak selalu tahu mereka sedang dirangkum, dan halaman tidak membahas sisi persetujuan itu.",
+          "Sisi kedua yang lebih teknis dan justru relevan untuk instansi di sini adalah kalimat perangkat kerasnya. Kombinasi cip S11, mikrofon bawaan, Apple Intelligence, dan Private Cloud Compute berarti fitur ini tidak tersedia untuk perangkat lama dan tidak sepenuhnya terlokalisasi di perangkat. Bagi tim yang sedang menilai alat AI untuk pekerjaan yang datanya tidak boleh keluar, pola yang perlu dibaca dari pengumuman model apa pun — dari Apple sampai penyedia API yang rubrik ini pantau harian — adalah memisahkan tiga lapis: apa yang jalan di perangkat, apa yang naik ke layanan milik penyedia, dan apa yang dijanjikan tidak disimpan. Halaman ANTARA ini menyebut ketiganya sekilas; dokumen evaluasi internal harus menyebutnya satu per satu.",
+          "Di Trendshift 6 November 2026, halaman tren GitHub tidak sedang bicara soal perangkat pakai. Peringkat satu ditempati NVIDIA/auto-ontology, peringkat tiga storytold/craft-anything, peringkat empat Lichii yang rubrik Repositori di situs ini ulas hari ini, peringkat lima mattpocock/skills, peringkat sembilan cloudflare/security-audit-skill yang rubrik Tools ulas hari ini, dan peringkat sepuluh D4Vinci/Scrapling. Peringkat dua hari ini adalah repositori yang menjanjikan langganan premium gratis 24 bulan dengan meminta nomor kartu, CVC, dan daftar akun Google berisi kata sandi serta kunci 2FA, dan editorial menolaknya sebagai bahan rekomendasi. Editorial hari ini tidak menyamakan satu pun peringkat itu dengan laporan Apple Watch: yang pertama deretan repositori pengembang, yang kedua fitur pada jam tangan yang diumumkan lewat jalur pengembang. Satu hal yang connect keduanya secara jujur adalah temanya, bukan objeknya — kemampuan AI yang direbut masuk ke pekerjaan dan percakapan sehari-hari.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Bandingkan bentuk pesannya dengan dua editorial sebelumnya di situs ini dan satu berita lain yang halamannya kami baca hari ini. Pada Rabu 4 November 2026 pukul 20.43 WIB, ANTARA menurunkan hasil studi Universitas RMIT tentang berapa banyak orang yang sudah menjadi korban gambar hasil AI — kerugian yang sudah terjadi dan terukur. Pada Kamis 5 November 2026 pukul 22.53 WIB, ANTARA menulis bahwa Valve memperbarui aturan peluncuran gim di Steam setelah platform dibanjiri gim berkualitas rendah dan gim berbasis AI, mengutip angka seorang pengguna Reddit bahwa sekitar 49 persen gim yang rilis di Steam pada Oktober lalu mencantumkan penggunaan konten yang dihasilkan AI. Pada Jumat 6 November 2026 pukul 00.21 WIB, halaman ini mengumumkan kemampuan AI baru yang Apple batasi sendiri dengan daftar hal yang tidak ia lakukan. Tiga berita, tiga posisi berbeda: mengukur korban, membatasi membanjirnya produksi, dan menjanjikan batas pada alat yang baru dibagikan.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Jumat 6 November 2026 pukul 00.21 WIB, dengan pewarta Farhan Arda Nugraha dan editor Maryati sesuai yang tercetak di halaman, dan tanggal akses 6 November 2026. Berita itu sendiri merujuk pada siaran TechCrunch pada Rabu (4/11) dan pada pernyataan Apple yang dikutip halaman; Wawasan AI tidak membaca siaran TechCrunch-nya, tidak menginstal iOS 27.3, tidak memakai satu pun fitur Audio Intelligence, dan tidak memverifikasi klaim privasi Apple secara mandiri — halaman ANTARA dikutip apa adanya, termasuk ketiadaan angka Indonesia di dalamnya. Untuk bahan pembanding, halaman lain ANTARA yang kami baca pada 6 November 2026 adalah laporan Kamis 5 November 2026 pukul 22.53 WIB tentang pembaruan aturan peluncuran gim di Steam, dengan pewarta dan editor yang sama.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {

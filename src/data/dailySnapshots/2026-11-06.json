@@ -1,0 +1,140 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-06T00:00:49.047Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "NVIDIA/auto-ontology",
+      "owner": "NVIDIA",
+      "repo": "auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "githubUrl": "https://github.com/NVIDIA/auto-ontology",
+      "trendshiftUrl": "https://trendshift.io/repositories/315432",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-04-27T21:45:56Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "owner": "worldonlyu",
+      "repo": "Google_AI_Pro_2Year_ZeroCost_Auto",
+      "description": "Google_AI_Pro_2Year_ZeroCost_Auto",
+      "githubUrl": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "trendshiftUrl": "https://trendshift.io/repositories/337790",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-04T14:54:56Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "zortos293/Lichii",
+      "owner": "zortos293",
+      "repo": "Lichii",
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "githubUrl": "https://github.com/zortos293/Lichii",
+      "trendshiftUrl": "https://trendshift.io/repositories/331569",
+      "language": "C++",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-10-31T14:17:26Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/21589",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-03T11:15:53Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "JuneYaooo/rea-video",
+      "owner": "JuneYaooo",
+      "repo": "rea-video",
+      "description": "逆向一切视频：实拍口播、桌拍、AI 视频、3D、代码动效、混剪，逐镜拆出画面、花字、剪辑和声音是怎么做的，并给出复刻方案。Reverse-engineer any video, shot by shot.",
+      "githubUrl": "https://github.com/JuneYaooo/rea-video",
+      "trendshiftUrl": "https://trendshift.io/repositories/334878",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-29T16:15:01Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "ccch1mneyyy/dsh-Go",
+      "owner": "ccch1mneyyy",
+      "repo": "dsh-Go",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "githubUrl": "https://github.com/ccch1mneyyy/dsh-Go",
+      "trendshiftUrl": "https://trendshift.io/repositories/319451",
+      "language": "Dart",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-10-25T08:09:52Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "OpenSelena/omniget",
+      "owner": "OpenSelena",
+      "repo": "omniget",
+      "description": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte.",
+      "githubUrl": "https://github.com/OpenSelena/omniget",
+      "trendshiftUrl": "https://trendshift.io/repositories/271692",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-07-08T06:17:59Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/64056",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-06-18T14:08:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "D4Vinci/Scrapling",
+      "owner": "D4Vinci",
+      "repo": "Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "githubUrl": "https://github.com/D4Vinci/Scrapling",
+      "trendshiftUrl": "https://trendshift.io/repositories/14244",
+      "language": "Python",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2024-10-13T20:29:53Z"
+    }
+  ]
+}
