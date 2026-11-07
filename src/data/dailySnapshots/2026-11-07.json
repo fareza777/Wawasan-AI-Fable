@@ -4,45 +4,45 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-07T00:00:36.290Z",
+  "fetchedAt": "2026-11-07T07:37:59.564Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "anomalyco/rune",
-      "owner": "anomalyco",
-      "repo": "rune",
-      "description": "Rune: Native UI framework",
-      "githubUrl": "https://github.com/anomalyco/rune",
-      "trendshiftUrl": "https://trendshift.io/repositories/318363",
-      "language": "Rust",
+      "fullName": "JenkinWoo/sheeridVerify",
+      "owner": "JenkinWoo",
+      "repo": "sheeridVerify",
+      "description": "",
+      "githubUrl": "https://github.com/JenkinWoo/sheeridVerify",
+      "trendshiftUrl": "https://trendshift.io/repositories/341379",
+      "language": "JavaScript",
       "topics": [],
-      "dateCreated": "2026-10-22T05:51:40Z"
+      "dateCreated": "2026-11-06T09:28:09Z"
     },
     {
       "rank": 2,
-      "fullName": "sherlock-project/sherlock",
-      "owner": "sherlock-project",
-      "repo": "sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "githubUrl": "https://github.com/sherlock-project/sherlock",
-      "trendshiftUrl": "https://trendshift.io/repositories/3955",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2018-12-24T14:30:48Z"
+      "fullName": "sostenesfreitas/ocarina-recomp",
+      "owner": "sostenesfreitas",
+      "repo": "ocarina-recomp",
+      "description": "Ocarina of Time running natively on Windows, no emulator. Built on your PC from your own copy. No game files included.",
+      "githubUrl": "https://github.com/sostenesfreitas/ocarina-recomp",
+      "trendshiftUrl": "https://trendshift.io/repositories/341771",
+      "language": "C",
+      "topics": [
+        "Game"
+      ],
+      "dateCreated": "2026-11-06T22:24:03Z"
     },
     {
       "rank": 3,
-      "fullName": "zortos293/Lichii",
-      "owner": "zortos293",
-      "repo": "Lichii",
-      "description": "VERY experimental Nintendo Switch 2 emulator",
-      "githubUrl": "https://github.com/zortos293/Lichii",
-      "trendshiftUrl": "https://trendshift.io/repositories/331569",
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
       "language": "C++",
-      "topics": [
-        "Emulator"
-      ],
-      "dateCreated": "2026-10-31T14:17:26Z"
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
     },
     {
       "rank": 4,
@@ -60,79 +60,82 @@
     },
     {
       "rank": 5,
-      "fullName": "storytold/craft-anything",
-      "owner": "storytold",
-      "repo": "craft-anything",
-      "description": "Craft Anything: understand how any software works, and craft your own.",
-      "githubUrl": "https://github.com/storytold/craft-anything",
-      "trendshiftUrl": "https://trendshift.io/repositories/331267",
-      "language": "Rust",
+      "fullName": "sherlock-project/sherlock",
+      "owner": "sherlock-project",
+      "repo": "sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "githubUrl": "https://github.com/sherlock-project/sherlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/3955",
+      "language": "Python",
       "topics": [],
-      "dateCreated": "2026-10-31T14:50:00Z"
+      "dateCreated": "2018-12-24T14:30:48Z"
     },
     {
       "rank": 6,
-      "fullName": "cloudflare/security-audit-skill",
-      "owner": "cloudflare",
-      "repo": "security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "githubUrl": "https://github.com/cloudflare/security-audit-skill",
-      "trendshiftUrl": "https://trendshift.io/repositories/64056",
-      "language": "JavaScript",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-06-18T14:08:44Z"
+      "fullName": "voyager-so/vork",
+      "owner": "voyager-so",
+      "repo": "vork",
+      "description": "Headless 3D and VFX engine for agents. Research preview.",
+      "githubUrl": "https://github.com/voyager-so/vork",
+      "trendshiftUrl": "https://trendshift.io/repositories/341545",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-05T22:37:07Z"
     },
     {
       "rank": 7,
-      "fullName": "larashero3-dotcom/lieflat-less-ai-tone",
-      "owner": "larashero3-dotcom",
-      "repo": "lieflat-less-ai-tone",
-      "description": "一个基于 520 万字语料统计的去 AI 味 skill · An AI-tone removal skill grounded in a 5.2-million-character corpus study",
-      "githubUrl": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
-      "trendshiftUrl": "https://trendshift.io/repositories/176217",
-      "language": "Python",
+      "fullName": "EMI-Group/genesis",
+      "owner": "EMI-Group",
+      "repo": "genesis",
+      "description": "EvoX Genesis is an autonomous system for long-horizon software evolution that recursively builds, continues, and transforms complex software from high-level objectives.",
+      "githubUrl": "https://github.com/EMI-Group/genesis",
+      "trendshiftUrl": "https://trendshift.io/repositories/210019",
+      "language": "Elixir",
       "topics": [
-        "AI skills"
+        "AI agent",
+        "AI coding assistant"
       ],
-      "dateCreated": "2026-08-20T09:07:59Z"
+      "dateCreated": "2025-07-17T05:33:52Z"
     },
     {
       "rank": 8,
-      "fullName": "vAPI-Network/vapi-network",
-      "owner": "vAPI-Network",
-      "repo": "vapi-network",
-      "description": "Buyer-controlled client for x402 API payments in USDC on Base.",
-      "githubUrl": "https://github.com/vAPI-Network/vapi-network",
-      "trendshiftUrl": "https://trendshift.io/repositories/339612",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-10-02T13:05:19Z"
+      "fullName": "ppmpreetham/BUI",
+      "owner": "ppmpreetham",
+      "repo": "BUI",
+      "description": "Blender's GPU Accelerated UI, Decoupled from it's original codebase",
+      "githubUrl": "https://github.com/ppmpreetham/BUI",
+      "trendshiftUrl": "https://trendshift.io/repositories/340142",
+      "language": "C++",
+      "topics": [
+        "UI framework"
+      ],
+      "dateCreated": "2026-08-26T05:42:59Z"
     },
     {
       "rank": 9,
-      "fullName": "JuneYaooo/rea-video",
-      "owner": "JuneYaooo",
-      "repo": "rea-video",
-      "description": "逆向一切视频：实拍口播、桌拍、AI 视频、3D、代码动效、混剪，逐镜拆出画面、花字、剪辑和声音是怎么做的，并给出复刻方案。Reverse-engineer any video, shot by shot.",
-      "githubUrl": "https://github.com/JuneYaooo/rea-video",
-      "trendshiftUrl": "https://trendshift.io/repositories/334878",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2026-10-29T16:15:01Z"
+      "fullName": "vercel-labs/json-render",
+      "owner": "vercel-labs",
+      "repo": "json-render",
+      "description": "The Generative UI framework",
+      "githubUrl": "https://github.com/vercel-labs/json-render",
+      "trendshiftUrl": "https://trendshift.io/repositories/17904",
+      "language": "TypeScript",
+      "topics": [
+        "UI framework"
+      ],
+      "dateCreated": "2026-01-14T17:22:39Z"
     },
     {
       "rank": 10,
-      "fullName": "NVIDIA/auto-ontology",
-      "owner": "NVIDIA",
-      "repo": "auto-ontology",
-      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "githubUrl": "https://github.com/NVIDIA/auto-ontology",
-      "trendshiftUrl": "https://trendshift.io/repositories/315432",
-      "language": "Python",
+      "fullName": "Leviidev/Henge",
+      "owner": "Leviidev",
+      "repo": "Henge",
+      "description": "Emulate macOS on iOS and iPadOS",
+      "githubUrl": "https://github.com/Leviidev/Henge",
+      "trendshiftUrl": "https://trendshift.io/repositories/341719",
+      "language": "C",
       "topics": [],
-      "dateCreated": "2026-04-27T21:45:56Z"
+      "dateCreated": "2026-11-02T01:13:51Z"
     }
   ]
 }
