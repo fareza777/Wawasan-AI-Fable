@@ -1,0 +1,138 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-08T00:00:54.659Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "sherlock-project/sherlock",
+      "owner": "sherlock-project",
+      "repo": "sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "githubUrl": "https://github.com/sherlock-project/sherlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/3955",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2018-12-24T14:30:48Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "zortos293/Lichii",
+      "owner": "zortos293",
+      "repo": "Lichii",
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "githubUrl": "https://github.com/zortos293/Lichii",
+      "trendshiftUrl": "https://trendshift.io/repositories/331569",
+      "language": "C++",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-10-31T14:17:26Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Albert-Weasker/niubigeo",
+      "owner": "Albert-Weasker",
+      "repo": "niubigeo",
+      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
+      "githubUrl": "https://github.com/Albert-Weasker/niubigeo",
+      "trendshiftUrl": "https://trendshift.io/repositories/212064",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-09-03T15:55:54Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "milind-soni/OpenMausBot",
+      "owner": "milind-soni",
+      "repo": "OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "githubUrl": "https://github.com/milind-soni/OpenMausBot",
+      "trendshiftUrl": "https://trendshift.io/repositories/138660",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-08-11T18:58:55Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "JenkinWoo/sheeridVerify",
+      "owner": "JenkinWoo",
+      "repo": "sheeridVerify",
+      "description": "",
+      "githubUrl": "https://github.com/JenkinWoo/sheeridVerify",
+      "trendshiftUrl": "https://trendshift.io/repositories/341379",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-11-06T09:28:09Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "anomalyco/rune",
+      "owner": "anomalyco",
+      "repo": "rune",
+      "description": "Rune: Native UI framework",
+      "githubUrl": "https://github.com/anomalyco/rune",
+      "trendshiftUrl": "https://trendshift.io/repositories/318363",
+      "language": "Rust",
+      "topics": [
+        "UI framework"
+      ],
+      "dateCreated": "2026-10-22T05:51:40Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "repo": "craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "githubUrl": "https://github.com/storytold/craft-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/331267",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-31T14:50:00Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "LNPANDY/NX2Apple",
+      "owner": "LNPANDY",
+      "repo": "NX2Apple",
+      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+      "githubUrl": "https://github.com/LNPANDY/NX2Apple",
+      "trendshiftUrl": "https://trendshift.io/repositories/315087",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-10-20T18:16:07Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "sostenesfreitas/ocarina-recomp",
+      "owner": "sostenesfreitas",
+      "repo": "ocarina-recomp",
+      "description": "Ocarina of Time running natively on Windows, no emulator. Built on your PC from your own copy. No game files included.",
+      "githubUrl": "https://github.com/sostenesfreitas/ocarina-recomp",
+      "trendshiftUrl": "https://trendshift.io/repositories/341771",
+      "language": "C",
+      "topics": [
+        "Game"
+      ],
+      "dateCreated": "2026-11-06T22:24:03Z"
+    }
+  ]
+}
