@@ -4,7 +4,7 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-08T00:00:54.659Z",
+  "fetchedAt": "2026-11-08T07:46:53.971Z",
   "repos": [
     {
       "rank": 1,
@@ -20,6 +20,96 @@
     },
     {
       "rank": 2,
+      "fullName": "meta/astryx",
+      "owner": "meta",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/meta/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "sarpstar/cinecode",
+      "owner": "sarpstar",
+      "repo": "cinecode",
+      "description": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.",
+      "githubUrl": "https://github.com/sarpstar/cinecode",
+      "trendshiftUrl": "https://trendshift.io/repositories/340104",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-11-03T10:08:16Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Ebony-Vinyl/EAC-Desktop",
+      "owner": "Ebony-Vinyl",
+      "repo": "EAC-Desktop",
+      "description": "Embracing All Creation (Desktop) — Dedicated to the Harmonious Coexistence of Hundreds of DSH Plugins / 揽尽万象（桌面版） —— 致力于让数百个DSH插件和谐共存",
+      "githubUrl": "https://github.com/Ebony-Vinyl/EAC-Desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/158075",
+      "language": "JavaScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-08-14T16:29:54Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "CzJam/gjgjxweb",
+      "owner": "CzJam",
+      "repo": "gjgjxweb",
+      "description": "《搞机工具箱》Web移植版",
+      "githubUrl": "https://github.com/CzJam/gjgjxweb",
+      "trendshiftUrl": "https://trendshift.io/repositories/343132",
+      "language": "HTML",
+      "topics": [],
+      "dateCreated": "2026-11-03T02:00:54Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "Ebony-Vinyl/EAC-design-world",
+      "owner": "Ebony-Vinyl",
+      "repo": "EAC-design-world",
+      "description": "DeepSeek Harness 本地视频制作与设计插件：多轨剪辑、模板与设计体系、原生预览画布和真实文件导出",
+      "githubUrl": "https://github.com/Ebony-Vinyl/EAC-design-world",
+      "trendshiftUrl": "https://trendshift.io/repositories/319206",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-17T06:46:19Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Ebony-Vinyl/EAC-Pack",
+      "owner": "Ebony-Vinyl",
+      "repo": "EAC-Pack",
+      "description": "Embracing All Creation (Plugin Suite) — Dedicated to the Harmonious Coexistence of Hundreds of DSH Plugins / 揽尽万象（插件整合包） —— 致力于让数百个DSH插件和谐共存",
+      "githubUrl": "https://github.com/Ebony-Vinyl/EAC-Pack",
+      "trendshiftUrl": "https://trendshift.io/repositories/318964",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-01T05:41:33Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "qybaihe/bla",
+      "owner": "qybaihe",
+      "repo": "bla",
+      "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+      "githubUrl": "https://github.com/qybaihe/bla",
+      "trendshiftUrl": "https://trendshift.io/repositories/323569",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-25T05:25:45Z"
+    },
+    {
+      "rank": 9,
       "fullName": "zortos293/Lichii",
       "owner": "zortos293",
       "repo": "Lichii",
@@ -33,19 +123,7 @@
       "dateCreated": "2026-10-31T14:17:26Z"
     },
     {
-      "rank": 3,
-      "fullName": "Albert-Weasker/niubigeo",
-      "owner": "Albert-Weasker",
-      "repo": "niubigeo",
-      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
-      "githubUrl": "https://github.com/Albert-Weasker/niubigeo",
-      "trendshiftUrl": "https://trendshift.io/repositories/212064",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2026-09-03T15:55:54Z"
-    },
-    {
-      "rank": 4,
+      "rank": 10,
       "fullName": "NotRexed/Hookshot",
       "owner": "NotRexed",
       "repo": "Hookshot",
@@ -55,84 +133,6 @@
       "language": "C++",
       "topics": [],
       "dateCreated": "2026-11-05T12:18:58Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "milind-soni/OpenMausBot",
-      "owner": "milind-soni",
-      "repo": "OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "githubUrl": "https://github.com/milind-soni/OpenMausBot",
-      "trendshiftUrl": "https://trendshift.io/repositories/138660",
-      "language": "TypeScript",
-      "topics": [
-        "AI agent"
-      ],
-      "dateCreated": "2026-08-11T18:58:55Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "JenkinWoo/sheeridVerify",
-      "owner": "JenkinWoo",
-      "repo": "sheeridVerify",
-      "description": "",
-      "githubUrl": "https://github.com/JenkinWoo/sheeridVerify",
-      "trendshiftUrl": "https://trendshift.io/repositories/341379",
-      "language": "JavaScript",
-      "topics": [],
-      "dateCreated": "2026-11-06T09:28:09Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "anomalyco/rune",
-      "owner": "anomalyco",
-      "repo": "rune",
-      "description": "Rune: Native UI framework",
-      "githubUrl": "https://github.com/anomalyco/rune",
-      "trendshiftUrl": "https://trendshift.io/repositories/318363",
-      "language": "Rust",
-      "topics": [
-        "UI framework"
-      ],
-      "dateCreated": "2026-10-22T05:51:40Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "storytold/craft-anything",
-      "owner": "storytold",
-      "repo": "craft-anything",
-      "description": "Craft Anything: understand how any software works, and craft your own.",
-      "githubUrl": "https://github.com/storytold/craft-anything",
-      "trendshiftUrl": "https://trendshift.io/repositories/331267",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-31T14:50:00Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "LNPANDY/NX2Apple",
-      "owner": "LNPANDY",
-      "repo": "NX2Apple",
-      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
-      "githubUrl": "https://github.com/LNPANDY/NX2Apple",
-      "trendshiftUrl": "https://trendshift.io/repositories/315087",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-10-20T18:16:07Z"
-    },
-    {
-      "rank": 10,
-      "fullName": "sostenesfreitas/ocarina-recomp",
-      "owner": "sostenesfreitas",
-      "repo": "ocarina-recomp",
-      "description": "Ocarina of Time running natively on Windows, no emulator. Built on your PC from your own copy. No game files included.",
-      "githubUrl": "https://github.com/sostenesfreitas/ocarina-recomp",
-      "trendshiftUrl": "https://trendshift.io/repositories/341771",
-      "language": "C",
-      "topics": [
-        "Game"
-      ],
-      "dateCreated": "2026-11-06T22:24:03Z"
     }
   ]
 }
