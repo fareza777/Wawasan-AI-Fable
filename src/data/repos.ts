@@ -5686,6 +5686,61 @@ export const repos: Review[] = [
     updatedAt: "2026-11-08",
     featured: false,
   },
+  {
+    slug: "sherlock",
+    name: "Sherlock",
+    tagline: "Pencari akun media sosial berdasarkan nama pengguna di 400+ jaringan — alat OSINT klasik yang kini trending di GitHub",
+    tags: ["Open Source", "Python", "OSINT", "Cybersecurity", "CLI"],
+    score: 8.2,
+    scores: [
+      { label: "Kemudahan Setup", value: 8.5 },
+      { label: "Fitur & Ekstensibilitas", value: 7.5 },
+      { label: "Komunitas & Momentum", value: 9.5 },
+      { label: "Dokumentasi", value: 8.0 },
+      { label: "Kesiapan Produksi", value: 8.0 },
+    ],
+    summary:
+      "Sherlock duduk di peringkat satu tren harian Trendshift 9 November 2026, dengan 103.407 bintang dan 12.120 fork di GitHub. Ini bukan produk AI: ia adalah alat OSINT (Open Source Intelligence) yang mencari nama pengguna di lebih dari 400 jaringan sosial — Instagram, Twitter, TikTok, GitHub, dan ratusan lainnya — lalu mengembalikan tautan ke akun yang ditemukan. Proyek yang sudah berumur hampir delapan tahun ini kini trending kembali, kemungkinan karena relevansinya untuk investigasi digital dan verifikasi identitas.",
+    highlights: [
+      "Mencari nama pengguna di 400+ jaringan sosial: Instagram, Twitter/X, TikTok, GitHub, Facebook, LinkedIn, YouTube, Reddit, Pinterest, dan ratusan platform lainnya",
+      "Antarmuka CLI sederhana: `sherlock user123` untuk satu nama pengguna, atau `sherlock user1 user2 user3` untuk beberapa sekaligus",
+      "Output berupa berkas teks yang mencatat URL profil yang ditemukan, mudah diolah lebih lanjut atau diarsipkan",
+      "Instalasi fleksibel: pipx untuk Python, Docker untuk container, dnf untuk Fedora, dengan paket komunitas untuk Debian, Ubuntu, Homebrew, Kali, dan BlackArch",
+      "Peringatan dari README: paket untuk ParrotOS dan Ubuntu 24.04 sedang rusak, sebaiknya pakai pipx atau Docker",
+      "API GitHub pada 9 November 2026: 103.407 bintang, 12.120 fork, bahasa Python, lisensi MIT, 1.490 pengikut, dan 382 pada field open_issues_count yang pencarian API pecah menjadi 114 isu terbuka plus 268 pull request terbuka",
+      "Repositori dibuat 24 Desember 2018 dan push terakhir 8 November 2026 pukul 05.13 UTC, dengan rilis terbaru v0.16.2 terbit 8 September 2026",
+      "Topik yang API cetak: cli, cti, cybersecurity, forensics, hacktoberfest, information-gathering, infosec, linux, osint, pentesting, python, python3, reconnaissance, redteam, sherlock, tools",
+      "Komposisi bahasa: Python 81.543 byte, Dockerfile 1.768 byte, Shell 522 byte — proyek yang fokus dan tidak membengkak",
+      "Delapan kontributor teratas: sdushantha (882 kontribusi), hoadlck (467), ppfeister (417), TheYahya (144), Czechball (61), matheusfelipeog (30), cclauss (26), roopeshvs (21)",
+    ],
+    pros: [
+      "Cara pakainya sesederhana itu: satu perintah, daftar URL profil yang ditemukan, selesai — tidak perlu konfigurasi model, API key, atau infrastruktur",
+      "Cakupan 400+ jaringan sosial yang sangat luas, membuatnya berguna untuk investigasi jurnalistik, verifikasi identitas, atau riset keamanan",
+      "Komunitas sangat aktif dengan 103 ribu bintang dan ritme kontribusi yang konsisten sejak 2018; proyek ini bukan artefak yang ditinggalkan",
+      "Lisensi MIT dan arsitektur Python yang transparan membuatnya mudah diaudit, dimodifikasi, atau diintegrasikan ke pipeline investigasi internal",
+      "Output teks yang bisa diolah lebih lanjut: cocok untuk skrip otomasi yang perlu memverifikasi keberadaan akun di banyak platform",
+    ],
+    cons: [
+      "Bukan alat AI: ia hanya memeriksa apakah URL profil ada, bukan menganalisis konten atau perilaku akun — hasil positif palsu bisa terjadi jika platform mengubah struktur URL",
+      "Beberapa paket distribusi sedang rusak (ParrotOS, Ubuntu 24.04 menurut README), sehingga instalasi perlu lewat pipx atau Docker untuk keandalan",
+      "268 pull request terbuka menunjukkan backlog review yang cukup besar; fitur baru atau perbaikan bug kadang tertunda",
+      "Untuk investigasi serius, hasil Sherlock perlu diverifikasi manual — alat ini hanya menunjukkan keberadaan URL, bukan keaslian akun atau kepemilikannya",
+      "Tidak ada mode batch dari berkas atau integrasi database bawaan; untuk pencarian massal perlu skrip wrapper sendiri",
+    ],
+    verdict:
+      "Alat yang wajib ada di kotak peralatan investigator digital, jurnalis, atau tim keamanan yang perlu memverifikasi keberadaan identitas online. Bukan AI, bukan platform analitik — hanya pencari URL yang doing one thing well. Untuk kebutuhan OSINT dasar, Sherlock masih menjadi titik masuk paling pragmatis di 2026.",
+    body: [
+      "Pada 9 November 2026 Trendshift menempatkan sherlock-project/sherlock di peringkat satu tren harian, di atas repositori yang sudah muncul di snapshot sebelumnya. API GitHub yang dibaca pada hari yang sama mencatat 103.407 bintang, 12.120 fork, bahasa Python, lisensi MIT, 1.490 pengikut, dan 382 pada field open_issues_count; seperti biasa field itu menghitung isu dan pull request terbuka dalam satu kolom, dan pencarian API memecahnya menjadi 114 isu terbuka plus 268 pull request terbuka. Repositori dibuat 24 Desember 2018 pukul 00.00 UTC (tanggal tepat yang API kembalikan) dan push terakhir 8 November 2026 pukul 05.13 UTC, jadi umurnya hampir delapan tahun pada hari baca; ukuran yang API laporkan 19.101 kilobyte, cabang bawaannya master, kolom homepage berisi https://sherlockproject.xyz, has_discussions true, dan 16 topics yang API kembalikan. Rilis terbaru yang API kembalikan bernama v0.16.2, terbit 8 September 2026. Komposisi bahasa yang API kembalikan menempatkan Python pada 81.543 byte, diikuti Dockerfile 1.768 byte, dan Shell 522 byte. Delapan kontributor teratas adalah sdushantha dengan 882 kontribusi, hoadlck 467, ppfeister 417, TheYahya 144, Czechball 61, matheusfelipeog 30, cclauss 26, dan roopeshvs 21. Perlu dicatat sejak awal: ini bukan produk kecerdasan buatan, melainkan alat OSINT klasik yang mencari nama pengguna di ratusan jaringan sosial.",
+      "Yang proyek klaim tentang dirinya sendiri tertulis singkat di README. Deskripsi repositori di API berbunyi Hunt down social media accounts by username across social networks, dan README membuka dengan penjelasan bahwa Sherlock mencari nama pengguna di lebih dari 400 jaringan sosial. Cara pakainya satu baris: `sherlock user123` untuk satu nama, atau `sherlock user1 user2 user3` untuk beberapa sekaligus, dengan hasil berupa berkas teks yang mencatat URL profil yang ditemukan. Instalasi bisa lewat pipx (yang README rekomendasikan), Docker, dnf untuk Fedora, atau paket komunitas untuk Debian, Ubuntu, Homebrew, Kali, dan BlackArch — tetapi README juga mencetak peringatan: paket untuk ParrotOS dan Ubuntu 24.04 sedang rusak, sehingga jalur pipx atau Docker adalah yang paling aman. Bagian Usage README menunjukkan contoh output yang mencetak nama jaringan dan URL profil yang ditemukan, dengan opsi untuk menyimpan hasil ke berkas teks. Tidak ada klaim AI, tidak ada model bahasa, tidak ada analisis konten — hanya pencarian URL berdasarkan pola nama pengguna di platform yang didukung. Semua angka 400+ jaringan itu klaim proyek pada hari baca.",
+      "Bagian yang paling relevan untuk pembaca adalah mengapa alat sederhana ini masih trending setelah hampir delapan tahun. Jawabannya ada pada dua hal: cakupan yang sangat luas dan keandalan untuk tugas spesifik. Sherlock tidak mencoba menjadi platform analitik atau alat investigasi lengkap; ia hanya memeriksa apakah URL profil dengan nama pengguna tertentu ada di ratusan platform, lalu mengembalikan daftarnya. Untuk jurnalis yang memverifikasi identitas sumber, investigator yang menelusuri jejak digital, atau tim keamanan yang memeriksa apakah nama pengguna organisasi disalahgunakan di platform tertentu, pola ini sangat praktis. Output teks yang dihasilkan bisa langsung diolah skrip lain, diarsipkan, atau dibandingkan dengan pencarian berikutnya. Yang membuatnya berbeda dari alat scraping ad hoc adalah daftar 400+ jaringan yang terus dipelihara, dengan penanganan untuk platform yang mengubah struktur URL atau menambahkan proteksi anti-bot. Namun batasnya juga perlu dipahami: Sherlock hanya menunjukkan keberadaan URL, bukan keaslian akun atau kepemilikannya — hasil positif palsu bisa terjadi, dan verifikasi manual tetap diperlukan untuk investigasi serius.",
+      "Untuk pembaca Indonesia, repositori ini relevan dari sisi yang tidak menyentuh AI sama sekali. Bagi ASN di unit humas, hukum, atau keamanan informasi yang perlu memverifikasi apakah nama instansi atau nama pejabat disalahgunakan di platform sosial, Sherlock adalah alat pertama yang bisa dipakai tanpa biaya dan tanpa mengirim data ke layanan asing. Bagi jurnalis dan investigator digital, ia mempercepat tahap awal penelusuran identitas sebelum verifikasi manual yang lebih dalam. Bagi pelajar dan mahasiswa yang mempelajari OSINT atau keamanan siber, ia adalah contoh nyata bagaimana alat sederhana yang melakukan satu tugas dengan baik bisa bertahan bertahun-tahun dan tetap berguna. Bagi UMKM yang khawatir nama mereknya dipakai akun palsu, Sherlock memberi daftar awal platform yang perlu diperiksa. Yang harus diingat: alat ini hanya menunjukkan URL, bukan membuktikan kepemilikan atau niat jahat — verifikasi manual dan pemahaman hukum tentang privasi dan pencemaran nama baik tetap tanggung jawab pengguna. Di snapshot 9 November, Sherlock peringkat satu berdampingan dengan repositori lain yang sudah muncul di snapshot sebelumnya; editorial tidak menyamakan peringkat GitHub hari itu dengan laporan berita apa pun, karena alat pencari akun media sosial dan topik berita adalah dua hal yang berbeda.",
+    ],
+    link: "https://github.com/sherlock-project/sherlock",
+    linkLabel: "Lihat di GitHub",
+    date: "2026-11-09",
+    updatedAt: "2026-11-09",
+    featured: false,
+  },
 ];
 
 export function getRepo(slug: string) {

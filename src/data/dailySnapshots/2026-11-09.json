@@ -1,0 +1,141 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-09T00:00:48.757Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "sherlock-project/sherlock",
+      "owner": "sherlock-project",
+      "repo": "sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "githubUrl": "https://github.com/sherlock-project/sherlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/3955",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2018-12-24T14:30:48Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "meta/astryx",
+      "owner": "meta",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/meta/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "anomalyco/rune",
+      "owner": "anomalyco",
+      "repo": "rune",
+      "description": "Rune: Native UI framework",
+      "githubUrl": "https://github.com/anomalyco/rune",
+      "trendshiftUrl": "https://trendshift.io/repositories/318363",
+      "language": "Rust",
+      "topics": [
+        "UI framework"
+      ],
+      "dateCreated": "2026-10-22T05:51:40Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "qybaihe/bla",
+      "owner": "qybaihe",
+      "repo": "bla",
+      "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+      "githubUrl": "https://github.com/qybaihe/bla",
+      "trendshiftUrl": "https://trendshift.io/repositories/323569",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-25T05:25:45Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "repo": "misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-29T01:25:19Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "Minireel/HGhub",
+      "owner": "Minireel",
+      "repo": "HGhub",
+      "description": "YellowFruit third-party client",
+      "githubUrl": "https://github.com/Minireel/HGhub",
+      "trendshiftUrl": "https://trendshift.io/repositories/336197",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-03T14:04:27Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "zortos293/Lichii",
+      "owner": "zortos293",
+      "repo": "Lichii",
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "githubUrl": "https://github.com/zortos293/Lichii",
+      "trendshiftUrl": "https://trendshift.io/repositories/331569",
+      "language": "C++",
+      "topics": [
+        "Emulator"
+      ],
+      "dateCreated": "2026-10-31T14:17:26Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "sarpstar/cinecode",
+      "owner": "sarpstar",
+      "repo": "cinecode",
+      "description": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.",
+      "githubUrl": "https://github.com/sarpstar/cinecode",
+      "trendshiftUrl": "https://trendshift.io/repositories/340104",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-11-03T10:08:16Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "vercel-labs/agent-browser",
+      "owner": "vercel-labs",
+      "repo": "agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "githubUrl": "https://github.com/vercel-labs/agent-browser",
+      "trendshiftUrl": "https://trendshift.io/repositories/17866",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "Browser automation"
+      ],
+      "dateCreated": "2026-01-11T05:38:15Z"
+    }
+  ]
+}

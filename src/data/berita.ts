@@ -6357,6 +6357,70 @@ export const berita: Artikel[] = [
       },
     ],
   },
+  {
+    slug: "antara-1008-pajak-digital-spp-tdln",
+    title: "ANTARA Pukul 10.08: Pajak Digital Berlaku 9 November, Transfer Antarbank Tidak Terkena",
+    excerpt:
+      "ANTARA Rabu 4 November 2026 pukul 10.08 WIB menurunkan klarifikasi soal Pajak Digital SPP-TDLN: dasar hukum Perpres No. 68/2025 dan PMK No. 49/2026, jenis barang digital yang dipajaki PPN, transfer antarbank yang tidak terkena, dan enam kolektor yang ditunjuk.",
+    category: "Analisis",
+    date: "2026-11-09",
+    readingTime: "7 menit",
+    body: [
+      {
+        paragraphs: [
+          "Rabu 4 November 2026 pukul 10.08 WIB, ANTARA menurunkan judul Ramai isu pengenaan Pajak Digital, benarkah transfer ikut dipajaki?, dengan lokasi pembukaan Pekanbaru (ANTARA) yang tercetak di halaman. Badan tulisannya mencantumkan Pewarta Tri Rizki Mefianto dengan Editor Vienty Kumala.",
+          "Kutipan yang tercetak di kalimat pembuka: Halaman ini menjelaskan bahwa aturan yang ramai dibicarakan adalah Sistem Pemungutan Pajak atas Transaksi Digital Luar Negeri (SPP-TDLN), yang diatur dalam Perpres No. 68/2025 dan PMK No. 49/2026. Ini laporan tentang klarifikasi kebijakan pajak, bukan tentang produk AI atau repositori GitHub: yang dijual halaman ini adalah penjelasan tentang apa yang dipajaki dan apa yang tidak, di tengah kekhawatiran masyarakat bahwa transfer antarbank akan ikut dikenakan pajak.",
+        ],
+      },
+      {
+        heading: "Dasar hukum dan kapan mulai berlaku",
+        paragraphs: [
+          "Kutipan yang tercetak soal dasar hukumnya: Aturan ini diatur dalam Peraturan Presiden Nomor 68 Tahun 2025 dan Peraturan Menteri Keuangan Nomor 49 Tahun 2026. Halaman menyebut kedua peraturan itu sebagai payung hukum SPP-TDLN, tanpa merinci pasal atau ayat yang menjadi dasar pemungutan.",
+          "Kutipan yang tercetak soal waktu berlakunya: Sistem ini sebenarnya sudah berjalan sejak 25 September 2026, dan mulai dipungut secara resmi pada 9 November 2026. Jadi ada tiga waktu yang perlu dibedakan saat membacanya: 25 September 2026 sebagai awal berlakunya sistem, 9 November 2026 sebagai awal pemungutan resmi, dan Rabu 4 November 2026 pukul 10.08 WIB sebagai jam tayang berita ini — lima hari sebelum pemungutan mulai.",
+          "Yang tidak ada di halaman ini perlu disebut supaya tidak dibaca sebagai ringkasan yang lengkap: tidak ada salinan Perpres atau PMK yang dikutip, tidak ada nomor pasal yang dirinci, dan tidak ada penjelasan tentang sanksi bagi penjual digital luar negeri yang tidak memungut PPN.",
+        ],
+      },
+      {
+        heading: "Apa yang dipajaki dan apa yang tidak",
+        paragraphs: [
+          "Kutipan yang tercetak soal objek pajaknya: SPP-TDLN hanya memungut PPN atas barang dan jasa digital dari penjual luar negeri. Contoh yang halaman sebut adalah langganan aplikasi, layanan streaming, gim daring, perangkat lunak, dan penyimpanan awan. Semua contoh itu berasal dari penjual di luar negeri yang ditunjuk sebagai pemungut pajak.",
+          "Kutipan yang tercetak soal yang tidak dipajaki: Transfer antarbank regular tidak dikenakan pajak digital. Halaman menegaskan ini untuk meluruskan isu yang ramai di masyarakat. Yang dipajaki adalah transaksi digital dengan penjual luar negeri, bukan transfer uang antarbank yang selama ini dilakukan nasabah.",
+          "Perlu dicatat batasannya: halaman tidak menyebut berapa tarif PPN yang dipungut, tidak menyebut ambang batas nilai transaksi yang dikenakan pajak, dan tidak menyebut apakah barang digital dari penjual dalam negeri juga dikenakan pajak yang sama. Yang disebut hanya bahwa transfer antarbank tidak terkena — itu pun sebagai klarifikasi, bukan sebagai bagian dari aturan utama.",
+        ],
+      },
+      {
+        heading: "Enam kolektor dan 270 platform PMSE",
+        paragraphs: [
+          "Kutipan yang tercetak soal kolektor: Hingga saat ini, enam kolektor telah ditunjuk, terdiri dari lima bank dan satu fintech. Bank dan lembaga pembayaran hanya memungut setelah ada konfirmasi dari penjual digital luar negeri yang ditunjuk sebagai pemungut pajak. Halaman tidak menyebut nama satu pun dari enam kolektor tersebut.",
+          "Kutipan yang tercetak soal platform PMSE: Sejak 2020, sekitar 270 platform digital telah ditunjuk sebagai pemungut Pajak Pertambahan Nilai atas Perdagangan Melalui Sistem Elektronik (PMSE). Angka ini disebut halaman sebagai konteks bahwa pemungutan pajak atas platform digital bukan hal baru di Indonesia — sudah berjalan enam tahun sebelum SPP-TDLN dimulai.",
+          "Yang tidak ada di halaman ini perlu disebut supaya tidak dibaca sebagai ringkasan yang lengkap: tidak ada nama satu pun dari enam kolektor, tidak ada nama platform PMSE yang disebut, tidak ada angka total PPN yang terkumpul dari 270 platform selama enam tahun, dan tidak ada penjelasan tentang mekanisme pengembalian pajak bagi konsumen yang merasa dipungut ganda.",
+        ],
+      },
+      {
+        heading: "Perlindungan konsumen dan keadilan bagi usaha digital dalam negeri",
+        paragraphs: [
+          "Kutipan yang tercetak soal perlindungan konsumen: Halaman menyebut bahwa aturan ini melindungi konsumen dari pemungutan ganda dan menyediakan mekanisme pengembalian pajak. Yang tidak ada di halaman ini adalah penjelasan tentang bagaimana mekanisme pengembalian itu bekerja, berapa lama prosesnya, dan apakah konsumen perlu mengajukan sendiri atau otomatis.",
+          "Kutipan yang tercetak soal keadilan bagi usaha dalam negeri: Halaman menyebut bahwa aturan ini juga menjawab isu keadilan bagi bisnis digital dalam negeri yang selama ini bersaing dengan penjual luar negeri yang tidak memungut PPN. Aturan ini disebut mengikuti rekomendasi OECD. Yang tidak ada di halaman adalah penjelasan tentang apakah rekomendasi OECD itu mengikat atau hanya saran, dan apakah negara lain yang mengikuti rekomendasi yang sama mengalami dampak serupa.",
+          "Perlu dicatat batasannya: halaman tidak menyebut nama satu pun bisnis digital dalam negeri yang diuntungkan, tidak menyebut angka kerugian yang selama ini diderita karena persaingan tidak seimbang, dan tidak menyebut apakah ada studi dampak dari penerapan SPP-TDLN sejak 25 September 2026.",
+        ],
+      },
+      {
+        heading: "Letaknya bagi pembaca Indonesia",
+        paragraphs: [
+          "Yang bisa dibawa pulang dari halaman ini adalah bentuk klarifikasi yang semakin sering muncul di tengah kebijakan pajak digital: apa yang dipajaki dan apa yang tidak, dengan contoh konkret yang langsung menyentuh kehidupan sehari-hari. Bagi pembaca yang berlangganan aplikasi luar negeri, layanan streaming, atau gim daring, penjelasan halaman ini menjawab pertanyaan yang paling mendasar: apakah tagihan bulanan saya akan naik karena pajak digital? Jawabannya tergantung pada apakah penjualnya ditunjuk sebagai pemungut pajak atau tidak — dan halaman tidak menyebut daftar penjual mana yang sudah ditunjuk.",
+          "Bagi pembaca yang bekerja di lingkungan instansi atau UMKM yang memakai layanan digital luar negeri, sisi yang perlu dibaca lebih tenang adalah kalimat tentang transfer antarbank. Halaman menegaskan bahwa transfer regular tidak dikenakan pajak digital — ini penting karena banyak yang khawatir setiap transaksi keuangan akan terdampak. Tapi halaman juga tidak menyebut apakah pembayaran ke vendor luar negeri lewat kartu kredit atau transfer internasional termasuk yang dipajaki atau tidak. Bagi tim keuangan di instansi yang sedang menilai dampak kebijakan ini, yang perlu diminta adalah daftar resmi penjual digital luar negeri yang ditunjuk sebagai pemungut pajak — bukan sekadar klarifikasi umum.",
+          "Di Trendshift 9 November 2026, deretan repositori GitHub sedang bicara hal lain sama sekali. Peringkat satu ditempati sherlock-project/sherlock yang berburu akun media sosial dari nama pengguna, peringkat dua meta/astryx desain sistem terbuka yang disebut siap untuk agen AI, peringkat tiga NotRexed/Hookshot yang deskripsinya kosong di snapshot, peringkat empat anomalyco/rune yang rubrik Repositori situs ini ulas beberapa hari lalu, peringkat lima qybaihe/bla perisai pertahanan terhadap agen AI reverse-engineering, peringkat enam anefzaoui/misterdownloadmanager manajer unduhan murni Rust, peringkat tujuh Minireel/HGhub klien pihak ketiga YellowFruit, peringkat delapan zortos293/Lichii emulator Nintendo Switch 2 yang rubrik Repositori situs ini ulas 6 November, peringkat sembilan sarpstar/cinecode agen AI yang menulis skrip film hingga menghasilkan MP4, dan peringkat sepuluh vercel-labs/agent-browser otomasi peramban untuk agen AI. Editorial hari ini tidak menyamakan satu pun peringkat itu dengan klarifikasi pajak digital: yang pertama adalah perkakas dan proyek kode yang bergerak di GitHub, yang kedua adalah aturan pajak atas transaksi digital lintas negara — dua topik berbeda, dan editorial tidak menyamakan arah keduanya. Ini juga berbeda dari editorial kemarin: laporan ANTARA Minggu 8 November 2026 pukul 04.44 WIB tentang World Media Summit di Beijing memotret industri media dunia yang menata posisi di hadapan AI, sementara halaman Rabu pagi ini menjelaskan aturan pajak yang langsung menyentuh transaksi sehari-hari pembaca Indonesia.",
+        ],
+      },
+      {
+        heading: "Penutup",
+        paragraphs: [
+          "Bandingkan bentuk pesannya dengan lima editorial yang halamannya kami baca dalam enam hari terakhir. Pada Selasa 3 November 2026 pukul 23.24 WIB, ANTARA menulis laporan tentang laporan keuangan Anthropic di tengah wacana recursive self-improvement — angka perusahaan di sisi penyedia model. Pada Rabu 4 November 2026 pukul 20.43 WIB, ANTARA menurunkan hasil studi Universitas RMIT tentang berapa banyak orang yang sudah menjadi korban gambar hasil AI — kerugian yang sudah terjadi dan terukur. Pada Jumat 6 November 2026 pukul 00.21 WIB, ANTARA melaporkan uji coba beta Audio Intelligence pada Apple Watch, dengan daftar hal yang tidak dilakukan fitur itu sebagai janji keamanannya. Pada Sabtu 7 November 2026 pukul 00.48 WIB, ANTARA melaporkan usulan skema hibrid Dewan Pers untuk revisi UU Hak Cipta — siapa yang harus membayar ketika mesin memakai karya jurnalistik. Pada Minggu 8 November 2026 pukul 04.44 WIB, ANTARA melaporkan World Media Summit di Beijing tempat kantor berita negara menata posisi di hadapan AI. Halaman Rabu pagi ini menempati posisi keenam: bukan angka perusahaan, bukan korban yang diukur, bukan fitur yang diuji, bukan rancangan mekanisme pembayaran karya, dan bukan forum global — yang ada adalah klarifikasi tentang apa yang dipajaki dan apa yang tidak di tengah kebijakan pajak digital yang baru mulai dipungut resmi hari ini, 9 November 2026.",
+          "Catatan editorial: artikel ini disusun dari ANTARA News, Rabu 4 November 2026 pukul 10.08 WIB, dengan pewarta Tri Rizki Mefianto dan editor Vienty Kumala sesuai yang tercetak di halaman, dan tanggal akses 9 November 2026. Halaman itu sendiri menjelaskan SPP-TDLN yang diatur dalam Perpres No. 68/2025 dan PMK No. 49/2026, menyebut enam kolektor (lima bank dan satu fintech), dan sekitar 270 platform PMSE yang ditunjuk sejak 2020; Wawasan AI tidak membaca salinan Perpres atau PMK yang disebut, tidak memeriksa daftar enam kolektor, tidak memverifikasi angka 270 platform, tidak menghitung total PPN yang terkumpul, tidak memeriksa apakah rekomendasi OECD yang disebut halaman mengikat atau hanya saran, dan tidak menghubungi satu pun pihak yang disebut. Seluruh kutipan di atas adalah kalimat yang benar-benar tercetak pada halaman ANTARA yang kami akses 9 November 2026, dan halaman itu tidak memuat satu pun angka tentang dampak pajak digital terhadap konsumen Indonesia atau terhadap pendapatan negara.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArtikel(slug: string) {
