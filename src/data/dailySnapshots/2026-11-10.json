@@ -4,36 +4,22 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-10T00:00:43.199Z",
+  "fetchedAt": "2026-11-10T08:42:49.988Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "meta/astryx",
-      "owner": "meta",
-      "repo": "astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "githubUrl": "https://github.com/meta/astryx",
-      "trendshiftUrl": "https://trendshift.io/repositories/65106",
-      "language": "TypeScript",
-      "topics": [
-        "UI components"
-      ],
-      "dateCreated": "2026-01-09T16:20:32Z"
+      "fullName": "huamidev/GestaltX",
+      "owner": "huamidev",
+      "repo": "GestaltX",
+      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+      "githubUrl": "https://github.com/huamidev/GestaltX",
+      "trendshiftUrl": "https://trendshift.io/repositories/345580",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-09T05:15:48Z"
     },
     {
       "rank": 2,
-      "fullName": "sherlock-project/sherlock",
-      "owner": "sherlock-project",
-      "repo": "sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "githubUrl": "https://github.com/sherlock-project/sherlock",
-      "trendshiftUrl": "https://trendshift.io/repositories/3955",
-      "language": "Python",
-      "topics": [],
-      "dateCreated": "2018-12-24T14:30:48Z"
-    },
-    {
-      "rank": 3,
       "fullName": "Minireel/HGhub",
       "owner": "Minireel",
       "repo": "HGhub",
@@ -45,28 +31,44 @@
       "dateCreated": "2026-11-03T14:04:27Z"
     },
     {
-      "rank": 4,
-      "fullName": "anefzaoui/misterdownloadmanager",
-      "owner": "anefzaoui",
-      "repo": "misterdownloadmanager",
-      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
-      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
-      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "rank": 3,
+      "fullName": "expo/exact",
+      "owner": "expo",
+      "repo": "exact",
+      "description": "",
+      "githubUrl": "https://github.com/expo/exact",
+      "trendshiftUrl": "https://trendshift.io/repositories/345756",
       "language": "Rust",
+      "topics": [
+        "UI framework"
+      ],
+      "dateCreated": "2026-11-02T01:29:01Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "FluentRead/FluentRead",
+      "owner": "FluentRead",
+      "repo": "FluentRead",
+      "description": "An open-source browser extension for bilingual translation. 一款开源的浏览器双语翻译插件。",
+      "githubUrl": "https://github.com/FluentRead/FluentRead",
+      "trendshiftUrl": "https://trendshift.io/repositories/9327",
+      "language": "TypeScript",
       "topics": [],
-      "dateCreated": "2026-10-29T01:25:19Z"
+      "dateCreated": "2023-12-22T02:59:51Z"
     },
     {
       "rank": 5,
-      "fullName": "NotRexed/Hookshot",
-      "owner": "NotRexed",
-      "repo": "Hookshot",
-      "description": "",
-      "githubUrl": "https://github.com/NotRexed/Hookshot",
-      "trendshiftUrl": "https://trendshift.io/repositories/341866",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2026-11-05T12:18:58Z"
+      "fullName": "PotterRemember37/minecraft-hacked-client",
+      "owner": "PotterRemember37",
+      "repo": "minecraft-hacked-client",
+      "description": "🎯 minecraft-hacked-client-mod-and-cheats 🎯",
+      "githubUrl": "https://github.com/PotterRemember37/minecraft-hacked-client",
+      "trendshiftUrl": "https://trendshift.io/repositories/341160",
+      "language": "HTML",
+      "topics": [
+        "Game"
+      ],
+      "dateCreated": "2026-08-15T02:57:08Z"
     },
     {
       "rank": 6,
@@ -83,55 +85,53 @@
     },
     {
       "rank": 7,
-      "fullName": "jhaizhou-ops/S2Arm",
-      "owner": "jhaizhou-ops",
-      "repo": "S2Arm",
-      "description": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
-      "githubUrl": "https://github.com/jhaizhou-ops/S2Arm",
-      "trendshiftUrl": "https://trendshift.io/repositories/345175",
-      "language": "C#",
-      "topics": [],
-      "dateCreated": "2026-11-08T05:49:46Z"
+      "fullName": "meta/astryx",
+      "owner": "meta",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/meta/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
     },
     {
       "rank": 8,
-      "fullName": "anthropics/skills",
-      "owner": "anthropics",
-      "repo": "skills",
-      "description": "Public repository for Agent Skills",
-      "githubUrl": "https://github.com/anthropics/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/15786",
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
       "language": "Python",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2025-09-22T15:53:31Z"
+      "topics": [],
+      "dateCreated": "2026-01-10T06:43:20Z"
     },
     {
       "rank": 9,
-      "fullName": "amosblomqvist/learnharness",
-      "owner": "amosblomqvist",
-      "repo": "learnharness",
-      "description": "Agent harness for learning difficult things.",
-      "githubUrl": "https://github.com/amosblomqvist/learnharness",
-      "trendshiftUrl": "https://trendshift.io/repositories/319002",
-      "language": "TypeScript",
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "repo": "misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
       "topics": [],
-      "dateCreated": "2026-10-16T19:35:33Z"
+      "dateCreated": "2026-10-29T01:25:19Z"
     },
     {
       "rank": 10,
-      "fullName": "h4ckf0r0day/obscura",
-      "owner": "h4ckf0r0day",
-      "repo": "obscura",
-      "description": "The headless browser for AI agents and web scraping",
-      "githubUrl": "https://github.com/h4ckf0r0day/obscura",
-      "trendshiftUrl": "https://trendshift.io/repositories/25837",
-      "language": "Rust",
-      "topics": [
-        "Browser automation"
-      ],
-      "dateCreated": "2026-04-13T10:31:41Z"
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
     }
   ]
 }
