@@ -1,0 +1,137 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-10T00:00:43.199Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "meta/astryx",
+      "owner": "meta",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/meta/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "sherlock-project/sherlock",
+      "owner": "sherlock-project",
+      "repo": "sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "githubUrl": "https://github.com/sherlock-project/sherlock",
+      "trendshiftUrl": "https://trendshift.io/repositories/3955",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2018-12-24T14:30:48Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Minireel/HGhub",
+      "owner": "Minireel",
+      "repo": "HGhub",
+      "description": "YellowFruit third-party client",
+      "githubUrl": "https://github.com/Minireel/HGhub",
+      "trendshiftUrl": "https://trendshift.io/repositories/336197",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-03T14:04:27Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "repo": "misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-29T01:25:19Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "janestreet/agent_skills",
+      "owner": "janestreet",
+      "repo": "agent_skills",
+      "description": "Agent skills",
+      "githubUrl": "https://github.com/janestreet/agent_skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/340099",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-11-03T16:50:21Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "jhaizhou-ops/S2Arm",
+      "owner": "jhaizhou-ops",
+      "repo": "S2Arm",
+      "description": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
+      "githubUrl": "https://github.com/jhaizhou-ops/S2Arm",
+      "trendshiftUrl": "https://trendshift.io/repositories/345175",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-11-08T05:49:46Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "anthropics/skills",
+      "owner": "anthropics",
+      "repo": "skills",
+      "description": "Public repository for Agent Skills",
+      "githubUrl": "https://github.com/anthropics/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/15786",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2025-09-22T15:53:31Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "amosblomqvist/learnharness",
+      "owner": "amosblomqvist",
+      "repo": "learnharness",
+      "description": "Agent harness for learning difficult things.",
+      "githubUrl": "https://github.com/amosblomqvist/learnharness",
+      "trendshiftUrl": "https://trendshift.io/repositories/319002",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-16T19:35:33Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "h4ckf0r0day/obscura",
+      "owner": "h4ckf0r0day",
+      "repo": "obscura",
+      "description": "The headless browser for AI agents and web scraping",
+      "githubUrl": "https://github.com/h4ckf0r0day/obscura",
+      "trendshiftUrl": "https://trendshift.io/repositories/25837",
+      "language": "Rust",
+      "topics": [
+        "Browser automation"
+      ],
+      "dateCreated": "2026-04-13T10:31:41Z"
+    }
+  ]
+}
