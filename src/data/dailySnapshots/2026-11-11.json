@@ -4,10 +4,64 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-11T00:01:01.633Z",
+  "fetchedAt": "2026-11-11T08:05:49.308Z",
   "repos": [
     {
       "rank": 1,
+      "fullName": "HybridRobotics/supermimic",
+      "owner": "HybridRobotics",
+      "repo": "supermimic",
+      "description": "SuperTrack implementation.",
+      "githubUrl": "https://github.com/HybridRobotics/supermimic",
+      "trendshiftUrl": "https://trendshift.io/repositories/349278",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-10T10:46:56Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Edge0-AI/Edge0",
+      "owner": "Edge0-AI",
+      "repo": "Edge0",
+      "description": "Run 35B MoE models in ~2.5 GB of RAM. Weights stream from SSD; a trained router predicts loads a step ahead. Mac, iPhone, Android, Windows supported",
+      "githubUrl": "https://github.com/Edge0-AI/Edge0",
+      "trendshiftUrl": "https://trendshift.io/repositories/225605",
+      "language": "Python",
+      "topics": [
+        "LLM inference"
+      ],
+      "dateCreated": "2026-09-08T13:41:47Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Lee-xeo/Claude-Cage",
+      "owner": "Lee-xeo",
+      "repo": "Claude-Cage",
+      "description": "Cage：Mac 上的独立 Claude 编码工作区，集成 Linux 终端、浏览器与项目编辑器。",
+      "githubUrl": "https://github.com/Lee-xeo/Claude-Cage",
+      "trendshiftUrl": "https://trendshift.io/repositories/339051",
+      "language": "Go",
+      "topics": [
+        "AI coding assistant",
+        "Agent sandbox"
+      ],
+      "dateCreated": "2026-10-31T15:07:08Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "GoogleChrome/modern-web-guidance",
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "trendshiftUrl": "https://trendshift.io/repositories/33893",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-23T17:49:14Z"
+    },
+    {
+      "rank": 5,
       "fullName": "huamidev/GestaltX",
       "owner": "huamidev",
       "repo": "GestaltX",
@@ -19,7 +73,19 @@
       "dateCreated": "2026-11-09T05:15:48Z"
     },
     {
-      "rank": 2,
+      "rank": 6,
+      "fullName": "we-promise/sure",
+      "owner": "we-promise",
+      "repo": "sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "githubUrl": "https://github.com/we-promise/sure",
+      "trendshiftUrl": "https://trendshift.io/repositories/15623",
+      "language": "Ruby",
+      "topics": [],
+      "dateCreated": "2025-07-23T04:13:55Z"
+    },
+    {
+      "rank": 7,
       "fullName": "meta/astryx",
       "owner": "meta",
       "repo": "astryx",
@@ -33,19 +99,19 @@
       "dateCreated": "2026-01-09T16:20:32Z"
     },
     {
-      "rank": 3,
-      "fullName": "Minireel/HGhub",
-      "owner": "Minireel",
-      "repo": "HGhub",
-      "description": "YellowFruit third-party client",
-      "githubUrl": "https://github.com/Minireel/HGhub",
-      "trendshiftUrl": "https://trendshift.io/repositories/336197",
-      "language": "TypeScript",
+      "rank": 8,
+      "fullName": "Kianuni/Erosion-CN",
+      "owner": "Kianuni",
+      "repo": "Erosion-CN",
+      "description": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
+      "githubUrl": "https://github.com/Kianuni/Erosion-CN",
+      "trendshiftUrl": "https://trendshift.io/repositories/347713",
+      "language": "Swift",
       "topics": [],
-      "dateCreated": "2026-11-03T14:04:27Z"
+      "dateCreated": "2026-11-10T02:37:31Z"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "fullName": "janestreet/agent_skills",
       "owner": "janestreet",
       "repo": "agent_skills",
@@ -58,82 +124,16 @@
       "dateCreated": "2026-11-03T16:50:21Z"
     },
     {
-      "rank": 5,
-      "fullName": "expo/exact",
-      "owner": "expo",
-      "repo": "exact",
-      "description": "",
-      "githubUrl": "https://github.com/expo/exact",
-      "trendshiftUrl": "https://trendshift.io/repositories/345756",
-      "language": "Rust",
-      "topics": [
-        "UI framework"
-      ],
-      "dateCreated": "2026-11-02T01:29:01Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "anefzaoui/misterdownloadmanager",
-      "owner": "anefzaoui",
-      "repo": "misterdownloadmanager",
-      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
-      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
-      "trendshiftUrl": "https://trendshift.io/repositories/337427",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-29T01:25:19Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "NotRexed/Hookshot",
-      "owner": "NotRexed",
-      "repo": "Hookshot",
-      "description": "",
-      "githubUrl": "https://github.com/NotRexed/Hookshot",
-      "trendshiftUrl": "https://trendshift.io/repositories/341866",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2026-11-05T12:18:58Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "anthropics/skills",
-      "owner": "anthropics",
-      "repo": "skills",
-      "description": "Public repository for Agent Skills",
-      "githubUrl": "https://github.com/anthropics/skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/15786",
-      "language": "Python",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2025-09-22T15:53:31Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "experientiallabs/experiential",
-      "owner": "experientiallabs",
-      "repo": "experiential",
-      "description": "Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1000+ marketplace models. It learns from your traffic to cut costs, recommend better models, and train a specialized model you own.",
-      "githubUrl": "https://github.com/experientiallabs/experiential",
-      "trendshiftUrl": "https://trendshift.io/repositories/69130",
-      "language": "Python",
-      "topics": [
-        "LLM gateway"
-      ],
-      "dateCreated": "2026-06-24T22:40:57Z"
-    },
-    {
       "rank": 10,
-      "fullName": "FluentRead/FluentRead",
-      "owner": "FluentRead",
-      "repo": "FluentRead",
-      "description": "An open-source browser extension for bilingual translation. 一款开源的浏览器双语翻译插件。",
-      "githubUrl": "https://github.com/FluentRead/FluentRead",
-      "trendshiftUrl": "https://trendshift.io/repositories/9327",
-      "language": "TypeScript",
+      "fullName": "tokio-rs/topcoat",
+      "owner": "tokio-rs",
+      "repo": "topcoat",
+      "description": "A batteries-included framework for building web apps",
+      "githubUrl": "https://github.com/tokio-rs/topcoat",
+      "trendshiftUrl": "https://trendshift.io/repositories/85776",
+      "language": "Rust",
       "topics": [],
-      "dateCreated": "2023-12-22T02:59:51Z"
+      "dateCreated": "2026-04-03T14:27:27Z"
     }
   ]
 }
