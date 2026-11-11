@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-11T00:01:01.633Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "huamidev/GestaltX",
+      "owner": "huamidev",
+      "repo": "GestaltX",
+      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+      "githubUrl": "https://github.com/huamidev/GestaltX",
+      "trendshiftUrl": "https://trendshift.io/repositories/345580",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-09T05:15:48Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "meta/astryx",
+      "owner": "meta",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/meta/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "Minireel/HGhub",
+      "owner": "Minireel",
+      "repo": "HGhub",
+      "description": "YellowFruit third-party client",
+      "githubUrl": "https://github.com/Minireel/HGhub",
+      "trendshiftUrl": "https://trendshift.io/repositories/336197",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-03T14:04:27Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "janestreet/agent_skills",
+      "owner": "janestreet",
+      "repo": "agent_skills",
+      "description": "Agent skills",
+      "githubUrl": "https://github.com/janestreet/agent_skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/340099",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-11-03T16:50:21Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "expo/exact",
+      "owner": "expo",
+      "repo": "exact",
+      "description": "",
+      "githubUrl": "https://github.com/expo/exact",
+      "trendshiftUrl": "https://trendshift.io/repositories/345756",
+      "language": "Rust",
+      "topics": [
+        "UI framework"
+      ],
+      "dateCreated": "2026-11-02T01:29:01Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "repo": "misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-29T01:25:19Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "anthropics/skills",
+      "owner": "anthropics",
+      "repo": "skills",
+      "description": "Public repository for Agent Skills",
+      "githubUrl": "https://github.com/anthropics/skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/15786",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2025-09-22T15:53:31Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "experientiallabs/experiential",
+      "owner": "experientiallabs",
+      "repo": "experiential",
+      "description": "Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1000+ marketplace models. It learns from your traffic to cut costs, recommend better models, and train a specialized model you own.",
+      "githubUrl": "https://github.com/experientiallabs/experiential",
+      "trendshiftUrl": "https://trendshift.io/repositories/69130",
+      "language": "Python",
+      "topics": [
+        "LLM gateway"
+      ],
+      "dateCreated": "2026-06-24T22:40:57Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "FluentRead/FluentRead",
+      "owner": "FluentRead",
+      "repo": "FluentRead",
+      "description": "An open-source browser extension for bilingual translation. 一款开源的浏览器双语翻译插件。",
+      "githubUrl": "https://github.com/FluentRead/FluentRead",
+      "trendshiftUrl": "https://trendshift.io/repositories/9327",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2023-12-22T02:59:51Z"
+    }
+  ]
+}
