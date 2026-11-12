@@ -4,20 +4,19 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-12T00:00:35.825Z",
+  "fetchedAt": "2026-11-12T08:42:48.189Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "janestreet/agent_skills",
-      "owner": "janestreet",
-      "repo": "agent_skills",
-      "description": "Agent skills",
-      "githubUrl": "https://github.com/janestreet/agent_skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/340099",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-11-03T16:50:21Z"
+      "fullName": "aws/aws-emulator",
+      "owner": "aws",
+      "repo": "aws-emulator",
+      "description": "",
+      "githubUrl": "https://github.com/aws/aws-emulator",
+      "trendshiftUrl": "https://trendshift.io/repositories/351050",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-09-11T19:01:12Z"
     },
     {
       "rank": 2,
@@ -36,6 +35,58 @@
     },
     {
       "rank": 3,
+      "fullName": "tylertms/Stela",
+      "owner": "tylertms",
+      "repo": "Stela",
+      "description": "Boots unmodified Apple silicon macOS on x86-64 PCs",
+      "githubUrl": "https://github.com/tylertms/Stela",
+      "trendshiftUrl": "https://trendshift.io/repositories/349939",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-12T18:08:41Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "githubUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "trendshiftUrl": "https://trendshift.io/repositories/18527",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-01-10T06:43:20Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Edge0-AI/Edge0",
+      "owner": "Edge0-AI",
+      "repo": "Edge0",
+      "description": "Run 35B MoE models in ~2.5 GB of RAM. Weights stream from SSD; a trained router predicts loads a step ahead. Mac, iPhone, Android, Windows supported",
+      "githubUrl": "https://github.com/Edge0-AI/Edge0",
+      "trendshiftUrl": "https://trendshift.io/repositories/225605",
+      "language": "Python",
+      "topics": [
+        "LLM inference"
+      ],
+      "dateCreated": "2026-09-08T13:41:47Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance-src",
+      "description": "",
+      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "trendshiftUrl": "https://trendshift.io/repositories/36859",
+      "language": "TypeScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-01-27T20:22:24Z"
+    },
+    {
+      "rank": 7,
       "fullName": "GoogleChrome/modern-web-guidance",
       "owner": "GoogleChrome",
       "repo": "modern-web-guidance",
@@ -48,95 +99,42 @@
       "dateCreated": "2026-03-23T17:49:14Z"
     },
     {
-      "rank": 4,
-      "fullName": "huamidev/GestaltX",
-      "owner": "huamidev",
-      "repo": "GestaltX",
-      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
-      "githubUrl": "https://github.com/huamidev/GestaltX",
-      "trendshiftUrl": "https://trendshift.io/repositories/345580",
-      "language": "Swift",
-      "topics": [],
-      "dateCreated": "2026-11-09T05:15:48Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "meta/astryx",
-      "owner": "meta",
-      "repo": "astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "githubUrl": "https://github.com/meta/astryx",
-      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "rank": 8,
+      "fullName": "openai/codex-security",
+      "owner": "openai",
+      "repo": "codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "githubUrl": "https://github.com/openai/codex-security",
+      "trendshiftUrl": "https://trendshift.io/repositories/95947",
       "language": "TypeScript",
       "topics": [
-        "UI components"
+        "Static analysis"
       ],
-      "dateCreated": "2026-01-09T16:20:32Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "we-promise/sure",
-      "owner": "we-promise",
-      "repo": "sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "githubUrl": "https://github.com/we-promise/sure",
-      "trendshiftUrl": "https://trendshift.io/repositories/15623",
-      "language": "Ruby",
-      "topics": [],
-      "dateCreated": "2025-07-23T04:13:55Z"
-    },
-    {
-      "rank": 7,
-      "fullName": "anefzaoui/misterdownloadmanager",
-      "owner": "anefzaoui",
-      "repo": "misterdownloadmanager",
-      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
-      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
-      "trendshiftUrl": "https://trendshift.io/repositories/337427",
-      "language": "Rust",
-      "topics": [],
-      "dateCreated": "2026-10-29T01:25:19Z"
-    },
-    {
-      "rank": 8,
-      "fullName": "NotRexed/Hookshot",
-      "owner": "NotRexed",
-      "repo": "Hookshot",
-      "description": "",
-      "githubUrl": "https://github.com/NotRexed/Hookshot",
-      "trendshiftUrl": "https://trendshift.io/repositories/341866",
-      "language": "C++",
-      "topics": [],
-      "dateCreated": "2026-11-05T12:18:58Z"
+      "dateCreated": "2026-07-13T22:00:13Z"
     },
     {
       "rank": 9,
-      "fullName": "homeassistant-ai/ha-mcp",
-      "owner": "homeassistant-ai",
-      "repo": "ha-mcp",
-      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-      "githubUrl": "https://github.com/homeassistant-ai/ha-mcp",
-      "trendshiftUrl": "https://trendshift.io/repositories/55499",
-      "language": "Python",
-      "topics": [
-        "MCP",
-        "Home automation"
-      ],
-      "dateCreated": "2025-09-14T13:23:45Z"
+      "fullName": "shadcn/improve",
+      "owner": "shadcn",
+      "repo": "improve",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "githubUrl": "https://github.com/shadcn/improve",
+      "trendshiftUrl": "https://trendshift.io/repositories/49896",
+      "topics": [],
+      "dateCreated": "2026-06-10T11:06:58Z"
     },
     {
       "rank": 10,
-      "fullName": "addyosmani/agent-skills",
-      "owner": "addyosmani",
-      "repo": "agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "githubUrl": "https://github.com/addyosmani/agent-skills",
-      "trendshiftUrl": "https://trendshift.io/repositories/25200",
-      "language": "JavaScript",
+      "fullName": "janestreet/agent_skills",
+      "owner": "janestreet",
+      "repo": "agent_skills",
+      "description": "Agent skills",
+      "githubUrl": "https://github.com/janestreet/agent_skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/340099",
       "topics": [
         "AI skills"
       ],
-      "dateCreated": "2026-02-15T20:20:26Z"
+      "dateCreated": "2026-11-03T16:50:21Z"
     }
   ]
 }
