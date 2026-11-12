@@ -1,0 +1,142 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-12T00:00:35.825Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "janestreet/agent_skills",
+      "owner": "janestreet",
+      "repo": "agent_skills",
+      "description": "Agent skills",
+      "githubUrl": "https://github.com/janestreet/agent_skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/340099",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-11-03T16:50:21Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Lee-xeo/Claude-Cage",
+      "owner": "Lee-xeo",
+      "repo": "Claude-Cage",
+      "description": "Cage：Mac 上的独立 Claude 编码工作区，集成 Linux 终端、浏览器与项目编辑器。",
+      "githubUrl": "https://github.com/Lee-xeo/Claude-Cage",
+      "trendshiftUrl": "https://trendshift.io/repositories/339051",
+      "language": "Go",
+      "topics": [
+        "AI coding assistant",
+        "Agent sandbox"
+      ],
+      "dateCreated": "2026-10-31T15:07:08Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "GoogleChrome/modern-web-guidance",
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "trendshiftUrl": "https://trendshift.io/repositories/33893",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-23T17:49:14Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "huamidev/GestaltX",
+      "owner": "huamidev",
+      "repo": "GestaltX",
+      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+      "githubUrl": "https://github.com/huamidev/GestaltX",
+      "trendshiftUrl": "https://trendshift.io/repositories/345580",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-09T05:15:48Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "meta/astryx",
+      "owner": "meta",
+      "repo": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "githubUrl": "https://github.com/meta/astryx",
+      "trendshiftUrl": "https://trendshift.io/repositories/65106",
+      "language": "TypeScript",
+      "topics": [
+        "UI components"
+      ],
+      "dateCreated": "2026-01-09T16:20:32Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "we-promise/sure",
+      "owner": "we-promise",
+      "repo": "sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "githubUrl": "https://github.com/we-promise/sure",
+      "trendshiftUrl": "https://trendshift.io/repositories/15623",
+      "language": "Ruby",
+      "topics": [],
+      "dateCreated": "2025-07-23T04:13:55Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "repo": "misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-29T01:25:19Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "repo": "Hookshot",
+      "description": "",
+      "githubUrl": "https://github.com/NotRexed/Hookshot",
+      "trendshiftUrl": "https://trendshift.io/repositories/341866",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-05T12:18:58Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "homeassistant-ai/ha-mcp",
+      "owner": "homeassistant-ai",
+      "repo": "ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "githubUrl": "https://github.com/homeassistant-ai/ha-mcp",
+      "trendshiftUrl": "https://trendshift.io/repositories/55499",
+      "language": "Python",
+      "topics": [
+        "MCP",
+        "Home automation"
+      ],
+      "dateCreated": "2025-09-14T13:23:45Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "githubUrl": "https://github.com/addyosmani/agent-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/25200",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-02-15T20:20:26Z"
+    }
+  ]
+}
