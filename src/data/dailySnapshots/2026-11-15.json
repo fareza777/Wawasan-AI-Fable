@@ -1,0 +1,146 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-15T00:00:26.795Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "GoogleChrome/modern-web-guidance",
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "trendshiftUrl": "https://trendshift.io/repositories/33893",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-23T17:49:14Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "RoutineMiku/apkstart",
+      "owner": "RoutineMiku",
+      "repo": "apkstart",
+      "description": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+      "githubUrl": "https://github.com/RoutineMiku/apkstart",
+      "trendshiftUrl": "https://trendshift.io/repositories/354080",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-29T13:44:03Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "libracoder/kiri",
+      "owner": "libracoder",
+      "repo": "kiri",
+      "description": "A small, fast container runtime for macOS, Windows and Linux",
+      "githubUrl": "https://github.com/libracoder/kiri",
+      "trendshiftUrl": "https://trendshift.io/repositories/335608",
+      "language": "Rust",
+      "topics": [
+        "Kubernetes"
+      ],
+      "dateCreated": "2026-11-02T16:11:30Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "deepseek-ai/chat-demo",
+      "owner": "deepseek-ai",
+      "repo": "chat-demo",
+      "description": "Chat Demo",
+      "githubUrl": "https://github.com/deepseek-ai/chat-demo",
+      "trendshiftUrl": "https://trendshift.io/repositories/353981",
+      "language": "TypeScript",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-11-12T08:08:19Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance-src",
+      "description": "",
+      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "trendshiftUrl": "https://trendshift.io/repositories/36859",
+      "language": "TypeScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-01-27T20:22:24Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "ChromeDevTools/chrome-devtools-mcp",
+      "owner": "ChromeDevTools",
+      "repo": "chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "githubUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "trendshiftUrl": "https://trendshift.io/repositories/15541",
+      "language": "TypeScript",
+      "topics": [
+        "MCP",
+        "Browser automation"
+      ],
+      "dateCreated": "2025-09-11T10:39:55Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "alibaba/open-code-review",
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "githubUrl": "https://github.com/alibaba/open-code-review",
+      "trendshiftUrl": "https://trendshift.io/repositories/41087",
+      "language": "Go",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-05-18T02:16:36Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2022-09-29T12:09:14Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "cloudflare/kitesurf",
+      "owner": "cloudflare",
+      "repo": "kitesurf",
+      "description": "Kitesurf is an experimental browser engine that runs on Cloudflare Workers.",
+      "githubUrl": "https://github.com/cloudflare/kitesurf",
+      "trendshiftUrl": "https://trendshift.io/repositories/354685",
+      "language": "TypeScript",
+      "topics": [
+        "Browser automation"
+      ],
+      "dateCreated": "2026-09-30T08:51:43Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "backnotprop/plannotator",
+      "owner": "backnotprop",
+      "repo": "plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "githubUrl": "https://github.com/backnotprop/plannotator",
+      "trendshiftUrl": "https://trendshift.io/repositories/22889",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2025-12-28T02:09:40Z"
+    }
+  ]
+}
