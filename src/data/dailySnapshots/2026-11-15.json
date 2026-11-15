@@ -4,20 +4,19 @@
   "periodLabel": "Hari ini",
   "period": null,
   "sourceUrl": "https://trendshift.io/",
-  "fetchedAt": "2026-11-15T00:00:26.795Z",
+  "fetchedAt": "2026-11-15T08:14:20.942Z",
   "repos": [
     {
       "rank": 1,
-      "fullName": "GoogleChrome/modern-web-guidance",
-      "owner": "GoogleChrome",
-      "repo": "modern-web-guidance",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance",
-      "trendshiftUrl": "https://trendshift.io/repositories/33893",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-03-23T17:49:14Z"
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2022-09-29T12:09:14Z"
     },
     {
       "rank": 2,
@@ -33,6 +32,43 @@
     },
     {
       "rank": 3,
+      "fullName": "Eynnzerr/TelemetryCleaner",
+      "owner": "Eynnzerr",
+      "repo": "TelemetryCleaner",
+      "description": "基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块",
+      "githubUrl": "https://github.com/Eynnzerr/TelemetryCleaner",
+      "trendshiftUrl": "https://trendshift.io/repositories/352520",
+      "language": "Kotlin",
+      "topics": [],
+      "dateCreated": "2026-11-11T06:25:10Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "GoogleChrome/modern-web-guidance",
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "trendshiftUrl": "https://trendshift.io/repositories/33893",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-03-23T17:49:14Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "ZiChuanLan/freebie-radar",
+      "owner": "ZiChuanLan",
+      "repo": "freebie-radar",
+      "description": "白嫖资源聚合雷达：57 个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+      "githubUrl": "https://github.com/ZiChuanLan/freebie-radar",
+      "trendshiftUrl": "https://trendshift.io/repositories/356297",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-12T09:08:11Z"
+    },
+    {
+      "rank": 6,
       "fullName": "libracoder/kiri",
       "owner": "libracoder",
       "repo": "kiri",
@@ -46,90 +82,19 @@
       "dateCreated": "2026-11-02T16:11:30Z"
     },
     {
-      "rank": 4,
-      "fullName": "deepseek-ai/chat-demo",
-      "owner": "deepseek-ai",
-      "repo": "chat-demo",
-      "description": "Chat Demo",
-      "githubUrl": "https://github.com/deepseek-ai/chat-demo",
-      "trendshiftUrl": "https://trendshift.io/repositories/353981",
-      "language": "TypeScript",
-      "topics": [
-        "AI chat"
-      ],
-      "dateCreated": "2026-11-12T08:08:19Z"
-    },
-    {
-      "rank": 5,
-      "fullName": "GoogleChrome/modern-web-guidance-src",
-      "owner": "GoogleChrome",
-      "repo": "modern-web-guidance-src",
-      "description": "",
-      "githubUrl": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "trendshiftUrl": "https://trendshift.io/repositories/36859",
-      "language": "TypeScript",
-      "topics": [
-        "AI skills"
-      ],
-      "dateCreated": "2026-01-27T20:22:24Z"
-    },
-    {
-      "rank": 6,
-      "fullName": "ChromeDevTools/chrome-devtools-mcp",
-      "owner": "ChromeDevTools",
-      "repo": "chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "githubUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "trendshiftUrl": "https://trendshift.io/repositories/15541",
-      "language": "TypeScript",
-      "topics": [
-        "MCP",
-        "Browser automation"
-      ],
-      "dateCreated": "2025-09-11T10:39:55Z"
-    },
-    {
       "rank": 7,
-      "fullName": "alibaba/open-code-review",
-      "owner": "alibaba",
-      "repo": "open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "githubUrl": "https://github.com/alibaba/open-code-review",
-      "trendshiftUrl": "https://trendshift.io/repositories/41087",
-      "language": "Go",
-      "topics": [
-        "AI coding assistant"
-      ],
-      "dateCreated": "2026-05-18T02:16:36Z"
+      "fullName": "Noniv/abyssal-garden",
+      "owner": "Noniv",
+      "repo": "abyssal-garden",
+      "description": "A dreamy underwater world you can swim through in your browser: swaying kelp forests, sunbeams, a sunken ship and manta rays. Everything is generated by code with WebGPU (no images, models or sound files), all in a single 97 KB HTML file.",
+      "githubUrl": "https://github.com/Noniv/abyssal-garden",
+      "trendshiftUrl": "https://trendshift.io/repositories/357361",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-11-12T13:57:34Z"
     },
     {
       "rank": 8,
-      "fullName": "dream-num/univer",
-      "owner": "dream-num",
-      "repo": "univer",
-      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "githubUrl": "https://github.com/dream-num/univer",
-      "trendshiftUrl": "https://trendshift.io/repositories/4376",
-      "language": "TypeScript",
-      "topics": [],
-      "dateCreated": "2022-09-29T12:09:14Z"
-    },
-    {
-      "rank": 9,
-      "fullName": "cloudflare/kitesurf",
-      "owner": "cloudflare",
-      "repo": "kitesurf",
-      "description": "Kitesurf is an experimental browser engine that runs on Cloudflare Workers.",
-      "githubUrl": "https://github.com/cloudflare/kitesurf",
-      "trendshiftUrl": "https://trendshift.io/repositories/354685",
-      "language": "TypeScript",
-      "topics": [
-        "Browser automation"
-      ],
-      "dateCreated": "2026-09-30T08:51:43Z"
-    },
-    {
-      "rank": 10,
       "fullName": "backnotprop/plannotator",
       "owner": "backnotprop",
       "repo": "plannotator",
@@ -141,6 +106,32 @@
         "AI coding assistant"
       ],
       "dateCreated": "2025-12-28T02:09:40Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "tradermonty/claude-trading-skills",
+      "owner": "tradermonty",
+      "repo": "claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "githubUrl": "https://github.com/tradermonty/claude-trading-skills",
+      "trendshiftUrl": "https://trendshift.io/repositories/22611",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-19T16:37:29Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "martin-olivier/airgorah",
+      "owner": "martin-olivier",
+      "repo": "airgorah",
+      "description": "A WiFi security auditing software",
+      "githubUrl": "https://github.com/martin-olivier/airgorah",
+      "trendshiftUrl": "https://trendshift.io/repositories/7277",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2022-09-30T09:06:45Z"
     }
   ]
 }
