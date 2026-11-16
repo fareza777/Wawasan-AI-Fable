@@ -1,0 +1,143 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-16T08:22:44.339Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "dream-num/univer",
+      "owner": "dream-num",
+      "repo": "univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "githubUrl": "https://github.com/dream-num/univer",
+      "trendshiftUrl": "https://trendshift.io/repositories/4376",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2022-09-29T12:09:14Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "hitkeeen/blender-ai-mcp-addon",
+      "owner": "hitkeeen",
+      "repo": "blender-ai-mcp-addon",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "githubUrl": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "trendshiftUrl": "https://trendshift.io/repositories/354897",
+      "topics": [],
+      "dateCreated": "2026-11-12T14:32:15Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "libracoder/kiri",
+      "owner": "libracoder",
+      "repo": "kiri",
+      "description": "A small, fast container runtime for macOS, Windows and Linux",
+      "githubUrl": "https://github.com/libracoder/kiri",
+      "trendshiftUrl": "https://trendshift.io/repositories/335608",
+      "language": "Rust",
+      "topics": [
+        "Kubernetes"
+      ],
+      "dateCreated": "2026-11-02T16:11:30Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "deepseek-ai/chat-demo",
+      "owner": "deepseek-ai",
+      "repo": "chat-demo",
+      "description": "Chat Demo",
+      "githubUrl": "https://github.com/deepseek-ai/chat-demo",
+      "trendshiftUrl": "https://trendshift.io/repositories/353981",
+      "language": "TypeScript",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-11-12T08:08:19Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Tencent/LoopForge",
+      "owner": "Tencent",
+      "repo": "LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "githubUrl": "https://github.com/Tencent/LoopForge",
+      "trendshiftUrl": "https://trendshift.io/repositories/300138",
+      "language": "Go",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-07-28T03:51:01Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "githubUrl": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshiftUrl": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "topics": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-05-05T11:22:32Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "ag-ui-protocol/ag-ui",
+      "owner": "ag-ui-protocol",
+      "repo": "ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "githubUrl": "https://github.com/ag-ui-protocol/ag-ui",
+      "trendshiftUrl": "https://trendshift.io/repositories/27961",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2025-05-07T12:49:37Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "NVIDIA/SkillEvaluator",
+      "owner": "NVIDIA",
+      "repo": "SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "githubUrl": "https://github.com/NVIDIA/SkillEvaluator",
+      "trendshiftUrl": "https://trendshift.io/repositories/183837",
+      "language": "Python",
+      "topics": [
+        "LLM evaluation"
+      ],
+      "dateCreated": "2026-06-24T02:32:26Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "BaaRai/ARTEX",
+      "owner": "BaaRai",
+      "repo": "ARTEX",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation)",
+      "githubUrl": "https://github.com/BaaRai/ARTEX",
+      "trendshiftUrl": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-10-08T21:14:39Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "RoutineMiku/apkstart",
+      "owner": "RoutineMiku",
+      "repo": "apkstart",
+      "description": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+      "githubUrl": "https://github.com/RoutineMiku/apkstart",
+      "trendshiftUrl": "https://trendshift.io/repositories/354080",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-29T13:44:03Z"
+    }
+  ]
+}
