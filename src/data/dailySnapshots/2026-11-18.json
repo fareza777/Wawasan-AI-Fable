@@ -1,0 +1,140 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-18T00:05:47.889Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "BaaRai/ARTEX",
+      "owner": "BaaRai",
+      "repo": "ARTEX",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation)",
+      "githubUrl": "https://github.com/BaaRai/ARTEX",
+      "trendshiftUrl": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-10-08T21:14:39Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "githubUrl": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshiftUrl": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "topics": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-05-05T11:22:32Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "owner": "krisgfx9",
+      "repo": "Wireless-Device-Battery-Monitor",
+      "description": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices.",
+      "githubUrl": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/361942",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-16T19:28:29Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "google-research/paper-orchestra",
+      "owner": "google-research",
+      "repo": "paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "githubUrl": "https://github.com/google-research/paper-orchestra",
+      "trendshiftUrl": "https://trendshift.io/repositories/263826",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-05-01T18:07:52Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Immortal-Protocols/lastbook",
+      "owner": "Immortal-Protocols",
+      "repo": "lastbook",
+      "description": "Offline knowledge library for survival and rebuilding",
+      "githubUrl": "https://github.com/Immortal-Protocols/lastbook",
+      "trendshiftUrl": "https://trendshift.io/repositories/357780",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-12T23:49:03Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "NYLLON-SOFTWARE/SignuDoc",
+      "owner": "NYLLON-SOFTWARE",
+      "repo": "SignuDoc",
+      "description": "Open-source document signature platform. Not affiliated with DocuSign.",
+      "githubUrl": "https://github.com/NYLLON-SOFTWARE/SignuDoc",
+      "trendshiftUrl": "https://trendshift.io/repositories/361612",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-03-26T01:25:59Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "kajisho5/ffmpeg-skill",
+      "owner": "kajisho5",
+      "repo": "ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "githubUrl": "https://github.com/kajisho5/ffmpeg-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/211415",
+      "language": "Python",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-09-03T14:33:38Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "gylive/google-ultra",
+      "owner": "gylive",
+      "repo": "google-ultra",
+      "description": "",
+      "githubUrl": "https://github.com/gylive/google-ultra",
+      "trendshiftUrl": "https://trendshift.io/repositories/362212",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-17T10:21:54Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "ag-ui-protocol/ag-ui",
+      "owner": "ag-ui-protocol",
+      "repo": "ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "githubUrl": "https://github.com/ag-ui-protocol/ag-ui",
+      "trendshiftUrl": "https://trendshift.io/repositories/27961",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2025-05-07T12:49:37Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "DeanChensj/jiangshan-map",
+      "owner": "DeanChensj",
+      "repo": "jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "githubUrl": "https://github.com/DeanChensj/jiangshan-map",
+      "trendshiftUrl": "https://trendshift.io/repositories/310545",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-07-23T22:44:35Z"
+    }
+  ]
+}
