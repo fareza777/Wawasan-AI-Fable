@@ -1,0 +1,140 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-19T00:00:23.149Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "erkamyaman/rust-anything",
+      "owner": "erkamyaman",
+      "repo": "rust-anything",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "githubUrl": "https://github.com/erkamyaman/rust-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/363468",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-16T12:10:36Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "BaaRai/ARTEX",
+      "owner": "BaaRai",
+      "repo": "ARTEX",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation)",
+      "githubUrl": "https://github.com/BaaRai/ARTEX",
+      "trendshiftUrl": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-10-08T21:14:39Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "trendshiftUrl": "https://trendshift.io/repositories/17415",
+      "language": "Shell",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2025-10-09T19:45:18Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "githubUrl": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshiftUrl": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "topics": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-05-05T11:22:32Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "google-research/paper-orchestra",
+      "owner": "google-research",
+      "repo": "paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "githubUrl": "https://github.com/google-research/paper-orchestra",
+      "trendshiftUrl": "https://trendshift.io/repositories/263826",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-05-01T18:07:52Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "mdiri-ai/SoduWork",
+      "owner": "mdiri-ai",
+      "repo": "SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "githubUrl": "https://github.com/mdiri-ai/SoduWork",
+      "trendshiftUrl": "https://trendshift.io/repositories/350333",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-29T02:43:14Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "owner": "krisgfx9",
+      "repo": "Wireless-Device-Battery-Monitor",
+      "description": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices.",
+      "githubUrl": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "trendshiftUrl": "https://trendshift.io/repositories/361942",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-11-16T19:28:29Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "mvanhorn/last30days-skill",
+      "owner": "mvanhorn",
+      "repo": "last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "githubUrl": "https://github.com/mvanhorn/last30days-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/21997",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-01-23T20:37:37Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "nexu-io/openmotion",
+      "owner": "nexu-io",
+      "repo": "openmotion",
+      "description": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+      "githubUrl": "https://github.com/nexu-io/openmotion",
+      "trendshiftUrl": "https://trendshift.io/repositories/29398",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-05-11T09:40:38Z"
+    }
+  ]
+}
