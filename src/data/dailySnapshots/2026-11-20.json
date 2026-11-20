@@ -1,0 +1,137 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-20T00:01:20.089Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "BaaRai/ARTEX",
+      "owner": "BaaRai",
+      "repo": "ARTEX",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "githubUrl": "https://github.com/BaaRai/ARTEX",
+      "trendshiftUrl": "https://trendshift.io/repositories/316805",
+      "language": "Go",
+      "topics": [
+        "AI agent",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-10-08T21:14:39Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "githubUrl": "https://github.com/boykopovar/AnyPS5",
+      "trendshiftUrl": "https://trendshift.io/repositories/240094",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2026-08-03T21:30:25Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "erkamyaman/rust-anything",
+      "owner": "erkamyaman",
+      "repo": "rust-anything",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "githubUrl": "https://github.com/erkamyaman/rust-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/363468",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-16T12:10:36Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "mdiri-ai/SoduWork",
+      "owner": "mdiri-ai",
+      "repo": "SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "githubUrl": "https://github.com/mdiri-ai/SoduWork",
+      "trendshiftUrl": "https://trendshift.io/repositories/350333",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-29T02:43:14Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "nexu-io/openmotion",
+      "owner": "nexu-io",
+      "repo": "openmotion",
+      "description": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+      "githubUrl": "https://github.com/nexu-io/openmotion",
+      "trendshiftUrl": "https://trendshift.io/repositories/29398",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-05-11T09:40:38Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "firecrawl/firecrawl",
+      "owner": "firecrawl",
+      "repo": "firecrawl",
+      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+      "githubUrl": "https://github.com/firecrawl/firecrawl",
+      "trendshiftUrl": "https://trendshift.io/repositories/14644",
+      "language": "TypeScript",
+      "topics": [
+        "Web scraping"
+      ],
+      "dateCreated": "2024-04-15T21:02:29Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "simplexai-labs/linger",
+      "owner": "simplexai-labs",
+      "repo": "linger",
+      "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+      "githubUrl": "https://github.com/simplexai-labs/linger",
+      "trendshiftUrl": "https://trendshift.io/repositories/350772",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-11-10T03:50:38Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "HKUDS/CLI-Anything",
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "githubUrl": "https://github.com/HKUDS/CLI-Anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/22991",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-03-08T13:52:57Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "mvanhorn/last30days-skill",
+      "owner": "mvanhorn",
+      "repo": "last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "githubUrl": "https://github.com/mvanhorn/last30days-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/21997",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-01-23T20:37:37Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "Bodila51/gtavi-claudecode",
+      "owner": "Bodila51",
+      "repo": "gtavi-claudecode",
+      "description": "Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trending videos, best moments, 9:16 cuts with hooks, captions and credits.",
+      "githubUrl": "https://github.com/Bodila51/gtavi-claudecode",
+      "trendshiftUrl": "https://trendshift.io/repositories/365728",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-18T17:54:29Z"
+    }
+  ]
+}
