@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
   images: { unoptimized: true },
+  // CI builders are slower than local machines; allow more time per page.
+  staticPageGenerationTimeout: 180,
 };
 
 export default nextConfig;
