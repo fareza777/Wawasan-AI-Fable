@@ -64,6 +64,7 @@ preview build) untuk mengetes di `https://wawasan-ai.<subdomain>.workers.dev`.
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | `https://www.wawasanai.com` | disarankan (default kode sudah sama) |
 | `NEXT_PUBLIC_CF_BEACON_TOKEN` | token Cloudflare Web Analytics | opsional |
+| `GITHUB_TOKEN` | GitHub fine-grained token **tanpa izin apa pun** (read-only public) | opsional — menaikkan limit API GitHub dari 60 ke 5.000 req/jam supaya jumlah bintang repo selalu muncul |
 
 **Runtime variables / secrets Worker** (Settings → Variables and Secrets, atau `npx wrangler secret put NAMA`):
 
@@ -88,6 +89,20 @@ Tidak ada yang berubah di alur konten:
    Build lokal ±1,5 menit; 2 commit/hari ≈ <300 menit/bulan (kuota Free 3.000 menit, 1 build bersamaan).
 4. Hanya file yang berubah yang di-upload ulang ke Static Assets (berdasarkan hash), jadi tidak ada
    "Deployment Storage" yang menumpuk seperti di Vercel.
+
+### Build tahan macet
+
+Build pertama di Workers Builds sempat macet: halaman arsip harian butuh >60 detik karena request ke
+`api.github.com` (jumlah bintang) tanpa timeout dan IP builder bersama gampang kena rate limit (60 req/jam).
+Perbaikannya (`src/lib/githubMeta.ts`, `src/lib/trendshift.ts`, `next.config.ts`):
+
+- request GitHub timeout 5 detik, Trendshift 15 detik;
+- hasil gagal di-cache, dan setelah GitHub membalas 403/429 atau timeout, build berhenti memanggil GitHub
+  (halaman tetap jadi, hanya tanpa angka bintang);
+- `staticPageGenerationTimeout: 180`;
+- opsional build variable `GITHUB_TOKEN` untuk limit 5.000 req/jam.
+
+Build penuh di Workers Builds ±3–4 menit.
 
 Catatan: data live Trendshift (Top Daily/Weekly) dan jumlah bintang GitHub kini diambil **saat build**,
 bukan tiap jam (ISR). Karena ada minimal 2 build per hari, data tetap segar harian.
