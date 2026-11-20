@@ -2,6 +2,8 @@ import { berita } from "@/data/berita";
 import { repos } from "@/data/repos";
 import { SITE_URL } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const items = [
     ...berita.map((b) => ({

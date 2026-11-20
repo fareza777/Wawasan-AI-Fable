@@ -1,26 +1,8 @@
 import { TrendingRepo } from "./trendshift";
 import { Review } from "./types";
 import { getWeeklyTopEntry } from "@/data/weeklyTop";
+import { translateTopic } from "./topics";
 
-const TOPIC_ID: Record<string, string> = {
-  "AI agent": "Agen AI",
-  "AI coding assistant": "Asisten coding AI",
-  "AI skills": "Skill AI",
-  "AI infrastructure": "Infrastruktur AI",
-  "AI workflow": "Alur kerja AI",
-  "Self-hosted": "Self-hosted",
-  "Curated list": "Kurasi",
-  "Web scraping": "Web scraping",
-  "MCP": "MCP",
-  "NLP": "NLP",
-  "Proxy": "Proxy",
-  "Document processing": "Pemrosesan dokumen",
-  "Fintech": "Fintech",
-  "Programming examples": "Contoh pemrograman",
-  "RAG": "RAG",
-  "Workflow automation": "Otomasi workflow",
-  "Resume building": "Pembuatan resume",
-};
 
 /** Apa yang bisa dilakukan pengguna — per topik GitHub */
 const TOPIC_FUNCTION: Record<string, string> = {
@@ -70,9 +52,7 @@ const DESC_REPLACEMENTS: [RegExp, string][] = [
   [/\bintegration\b/gi, "integrasi"],
 ];
 
-export function translateTopic(topic: string): string {
-  return TOPIC_ID[topic] ?? topic;
-}
+export { translateTopic };
 
 function shortRepoName(fullName: string): string {
   return fullName.split("/")[1] ?? fullName;

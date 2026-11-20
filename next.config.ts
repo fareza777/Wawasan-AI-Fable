@@ -1,17 +1,12 @@
 import type { NextConfig } from "next";
 
+// Static export (out/) served by Cloudflare Workers Static Assets.
+// Redirects live in public/_redirects, API routes in worker/index.ts.
+// See MIGRATION-CLOUDFLARE.md.
 const nextConfig: NextConfig = {
+  output: "export",
   reactStrictMode: true,
-  async redirects() {
-    return [
-      { source: "/feed", destination: "/feed.xml", permanent: true },
-      { source: "/rss", destination: "/feed.xml", permanent: true },
-      // Googlebot & browsers still request these paths by convention.
-      { source: "/favicon.ico", destination: "/icon", permanent: false },
-      { source: "/apple-touch-icon.png", destination: "/apple-icon", permanent: false },
-      { source: "/apple-touch-icon", destination: "/apple-icon", permanent: false },
-    ];
-  },
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

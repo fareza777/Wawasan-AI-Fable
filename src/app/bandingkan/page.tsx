@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ModelCompare from "@/components/ModelCompare";
+import { models } from "@/data/models";
 import ListHeader from "@/components/ListHeader";
 import { canonicalPath } from "@/lib/seo";
 
@@ -18,7 +19,15 @@ export default function BandingkanPage() {
         description="Pilih dua model dan bandingkan skor, biaya API/langganan, serta modalitas teks, gambar, video, dan audio."
       />
       <div className="mt-12">
-        <ModelCompare />
+        <ModelCompare
+          models={models.map(({ slug, name, tagline, score, scores }) => ({
+            slug,
+            name,
+            tagline,
+            score,
+            scores,
+          }))}
+        />
       </div>
     </div>
   );

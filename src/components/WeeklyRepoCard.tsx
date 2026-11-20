@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { TrendingRepo } from "@/lib/trendshift";
+import type { TrendingRepo } from "@/lib/trendshift";
 import { Tag } from "./Score";
-import { translateTopic } from "@/lib/weeklyId";
+import { translateTopic } from "@/lib/topics";
 import WeeklyBookmarkButton from "./WeeklyBookmarkButton";
 
 export default function WeeklyRepoCard({

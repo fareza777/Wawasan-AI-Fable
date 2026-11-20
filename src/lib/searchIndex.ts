@@ -2,18 +2,10 @@ import { repos } from "@/data/repos";
 import { models } from "@/data/models";
 import { stacks } from "@/data/stacks";
 import { berita } from "@/data/berita";
-import { ContentType } from "./storage";
+import { cariDiIndeks, type SearchItem } from "./searchQuery";
 
-export type SearchItem = {
-  type: ContentType;
-  typeLabel: string;
-  slug: string;
-  href: string;
-  title: string;
-  subtitle: string;
-  keywords: string;
-  score?: number;
-};
+export type { SearchItem };
+
 
 export const searchIndex: SearchItem[] = [
   ...repos.map((r) => ({
@@ -58,21 +50,5 @@ export const searchIndex: SearchItem[] = [
 ];
 
 export function cariKonten(query: string, limit = 12): SearchItem[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return [];
-  const terms = q.split(/\s+/);
-  return searchIndex
-    .map((item) => {
-      let skor = 0;
-      for (const t of terms) {
-        if (item.title.toLowerCase().includes(t)) skor += 5;
-        else if (item.subtitle.toLowerCase().includes(t)) skor += 3;
-        else if (item.keywords.includes(t)) skor += 1;
-      }
-      return { item, skor };
-    })
-    .filter((x) => x.skor > 0)
-    .sort((a, b) => b.skor - a.skor)
-    .slice(0, limit)
-    .map((x) => x.item);
+  return cariDiIndeks(searchIndex, query, limit);
 }

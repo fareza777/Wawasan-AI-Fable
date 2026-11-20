@@ -1,0 +1,6 @@
+# Cloudflare Workers Static Assets redirects (was next.config.ts redirects()).
+/feed /feed.xml 301
+/rss /feed.xml 301
+/favicon.ico /icon 302
+/apple-touch-icon.png /apple-icon 302
+/apple-touch-icon /apple-icon 302

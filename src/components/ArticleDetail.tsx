@@ -9,12 +9,19 @@ import ReadingProgress from "./ReadingProgress";
 import BookmarkButton from "./BookmarkButton";
 import ShareButton from "./ShareButton";
 import RelatedContent from "./RelatedContent";
-import { getRelatedReviews } from "@/lib/related";
+import type { RelatedItem } from "@/lib/related";
 import { markAsRead } from "@/lib/readTracking";
 import { slugifyTag } from "@/lib/rubrik";
 import CoverArt from "./CoverArt";
 
-export default function ArticleDetail({ artikel }: { artikel: Artikel }) {
+export default function ArticleDetail({
+  artikel,
+  related,
+}: {
+  artikel: Artikel;
+  /** Computed on the server (see berita/[slug]/page.tsx) to keep full datasets out of client JS. */
+  related: RelatedItem[];
+}) {
   useEffect(() => {
     const t = setTimeout(() => markAsRead("berita", artikel.slug), 3000);
     return () => clearTimeout(t);
@@ -64,7 +71,7 @@ export default function ArticleDetail({ artikel }: { artikel: Artikel }) {
         ))}
       </div>
 
-      <RelatedContent items={getRelatedReviews("berita", artikel.slug, [artikel.category])} />
+      <RelatedContent items={related} />
     </article>
   );
 }

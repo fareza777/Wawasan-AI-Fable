@@ -8,6 +8,8 @@ import { SITE_URL } from "@/lib/seo";
 import { listDailyArchiveSitemapEntries } from "@/lib/trendshift";
 import { listWeeklyArchiveSitemapEntries } from "@/lib/weekly-sitemap";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const statis = [
     "",

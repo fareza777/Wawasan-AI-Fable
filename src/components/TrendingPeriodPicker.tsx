@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { TrendCadence, TrendingPeriodOption } from "@/lib/trendshift";
+import type { TrendCadence, TrendingPeriodOption } from "@/lib/trendshift";
 
 export default function TrendingPeriodPicker({
   cadence,

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
+import CadenceRedirect from "@/components/CadenceRedirect";
 import { canonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -12,16 +12,10 @@ export const metadata: Metadata = {
   ...canonicalPath("/repo/weekly"),
 };
 
-export const revalidate = 21_600;
-
-type Props = { searchParams: Promise<{ cadence?: string }> };
-
-export default async function WeeklyRepoPage({ searchParams }: Props) {
-  const { cadence } = await searchParams;
-  if (cadence === "daily") redirect("/repo/daily");
-
+export default async function WeeklyRepoPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <CadenceRedirect />
       <Link
         href="/repo"
         className="text-sm font-medium text-neon-400 hover:underline"

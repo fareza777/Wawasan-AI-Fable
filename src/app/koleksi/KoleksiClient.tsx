@@ -2,10 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { repos } from "@/data/repos";
-import { models } from "@/data/models";
-import { stacks } from "@/data/stacks";
-import { berita } from "@/data/berita";
 import {
   BookmarkItem,
   getBookmarks,
@@ -13,8 +9,8 @@ import {
   Profile,
   STORAGE_EVENT,
 } from "@/lib/storage";
-import ReviewCard from "@/components/ReviewCard";
-import ArtikelCard from "@/components/ArtikelCard";
+import ReviewCard, { type ReviewCardData } from "@/components/ReviewCard";
+import ArtikelCard, { type ArtikelCardData } from "@/components/ArtikelCard";
 import WeeklyKoleksiCard from "@/components/WeeklyKoleksiCard";
 import ListHeader from "@/components/ListHeader";
 
@@ -24,7 +20,16 @@ const popular = [
   { href: "/stack/cursor", label: "Cursor", type: "Stack" },
 ];
 
-export default function KoleksiClient() {
+export type KoleksiData = {
+  repos: ReviewCardData[];
+  models: ReviewCardData[];
+  stacks: ReviewCardData[];
+  berita: ArtikelCardData[];
+};
+
+// Data comes in as slim props from the server page (not imported here) so the full
+// content dataset stays out of the client JS and the server SSR bundle.
+export default function KoleksiClient({ repos, models, stacks, berita }: KoleksiData) {
   const [items, setItems] = useState<BookmarkItem[]>([]);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [ready, setReady] = useState(false);

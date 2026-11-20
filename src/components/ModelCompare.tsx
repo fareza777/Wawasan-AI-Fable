@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { models } from "@/data/models";
+import type { Review } from "@/lib/types";
 import { getModelSpec, ModalityFlags } from "@/data/modelSpecs";
 import { ScoreBar, scoreColor } from "./Score";
 
@@ -36,7 +36,10 @@ function apiPricingOnly(spec: ReturnType<typeof getModelSpec>) {
   return spec?.pricing.filter((p) => p.input || p.output) ?? [];
 }
 
-export default function ModelCompare() {
+/** Slim model data passed from the server page (keeps the full dataset out of client JS). */
+export type CompareModel = Pick<Review, "slug" | "name" | "tagline" | "score" | "scores">;
+
+export default function ModelCompare({ models }: { models: CompareModel[] }) {
   const [a, setA] = useState(models[0]?.slug ?? "");
   const [b, setB] = useState(models[1]?.slug ?? "");
 
