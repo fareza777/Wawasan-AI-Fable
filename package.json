@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "node --experimental-strip-types --test test/*.test.ts",
-    "snapshot:daily": "node scripts/snapshot-daily.mjs"
+    "snapshot:daily": "node scripts/snapshot-daily.mjs",
+    "preview": "next build && wrangler dev",
+    "deploy": "next build && wrangler deploy"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -28,6 +30,10 @@
     "@types/react-dom": "^19.0.0",
     "@types/three": "^0.184.1",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "wrangler": "^4.165.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

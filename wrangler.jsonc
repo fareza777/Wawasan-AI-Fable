@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wawasan-ai",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    // Next.js static export output (`npm run build`)
+    "directory": "./out",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // Only these paths invoke the Worker script; everything else is served
+    // straight from static assets (free, unlimited, not counted as requests).
+    "run_worker_first": ["/api/*", "/admin", "/admin/", "/admin/login", "/admin/login/"]
+  },
+  "workers_dev": true,
+  "preview_urls": true,
+  "observability": { "enabled": true },
+  // Non-secret runtime vars for the Worker. Secrets (ADMIN_PASSWORD,
+  // ADMIN_SESSION_SECRET, RESEND_API_KEY, RESEND_AUDIENCE_ID) are set with
+  // `wrangler secret put <NAME>` or Dashboard → Worker → Settings → Variables and Secrets.
+  // NEXT_PUBLIC_* vars are read at BUILD time — set them as build variables in
+  // Workers Builds (Settings → Build → Variables and secrets), not here.
+  "vars": {
+    "ADMIN_EMAILS": "fajar.mreza@gmail.com"
+  }
+}

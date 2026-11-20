@@ -25,13 +25,22 @@ function invalidateListCache(): void {
   cachedDates = null;
 }
 
-export async function dailySnapshotExists(date: string): Promise<boolean> {
+/**
+ * A snapshot is usable only if it has a non-empty `repos` array. Broken files
+ * (e.g. `{}` from a failed fetch) are skipped so one bad commit can't break the
+ * static build / daily auto-deploy.
+ */
+async function isValidSnapshot(date: string): Promise<boolean> {
   try {
-    await fs.access(fsPath(date));
-    return true;
+    const data = JSON.parse(await fs.readFile(fsPath(date), "utf-8"));
+    return Array.isArray(data?.repos) && data.repos.length > 0;
   } catch {
     return false;
   }
+}
+
+export async function dailySnapshotExists(date: string): Promise<boolean> {
+  return isValidSnapshot(date);
 }
 
 export async function readDailySnapshotRaw(date: string): Promise<string> {
@@ -57,7 +66,7 @@ export async function listDailySnapshotDates(): Promise<string[]> {
     const entries = await fs.readdir(FS_DIR);
     for (const file of entries) {
       const date = parseDateFromName(file);
-      if (date) dates.add(date);
+      if (date && (await isValidSnapshot(date))) dates.add(date);
     }
   } catch {
     // no snapshots yet

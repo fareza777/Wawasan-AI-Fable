@@ -3,11 +3,21 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ListHeader from "@/components/ListHeader";
 import TrendingRepoView from "@/components/TrendingRepoView";
-import { dailySnapshotExists } from "@/lib/daily-snapshot-store";
+import { dailySnapshotExists, listDailySnapshotDates } from "@/lib/daily-snapshot-store";
 import { formatTanggal } from "@/lib/format";
 import { canonicalPath } from "@/lib/seo";
 
-export const revalidate = 21_600;
+// Static export: one page per committed snapshot (src/data/dailySnapshots/*.json).
+// Every daily snapshot commit triggers a rebuild, which adds the new day.
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const dates = await listDailySnapshotDates();
+  return dates.map((date) => {
+    const [year, month, day] = date.split("-");
+    return { year, month, day };
+  });
+}
 
 type Props = { params: Promise<{ year: string; month: string; day: string }> };
 

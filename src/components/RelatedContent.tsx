@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RelatedItem } from "@/lib/related";
+import type { RelatedItem } from "@/lib/related";
 import { rubrikStyle } from "@/lib/rubrik";
 import { scoreColor } from "./Score";
 

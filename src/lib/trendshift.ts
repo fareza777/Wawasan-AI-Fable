@@ -185,6 +185,8 @@ async function fetchTrendshiftHtml(
   const res = await fetch(sourceUrl, {
     next: { revalidate: revalidateSeconds },
     headers: FETCH_HEADERS,
+    // Never let a slow Trendshift response stall the static build.
+    signal: AbortSignal.timeout(15_000),
   });
 
   if (!res.ok) {

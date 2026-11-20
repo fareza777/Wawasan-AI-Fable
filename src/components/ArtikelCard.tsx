@@ -4,7 +4,13 @@ import { formatTanggal } from "@/lib/format";
 import { getKategoriStyle } from "@/lib/kategori";
 import CoverArt from "./CoverArt";
 import NewContentBadge from "./NewContentBadge";
-export default function ArtikelCard({ artikel }: { artikel: Artikel }) {
+/** Fields the card renders — lets client pages pass slim objects instead of full articles. */
+export type ArtikelCardData = Pick<
+  Artikel,
+  "slug" | "category" | "title" | "date" | "readingTime" | "excerpt"
+>;
+
+export default function ArtikelCard({ artikel }: { artikel: ArtikelCardData }) {
   return (
     <Link
       href={`/berita/${artikel.slug}`}

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { berita, getArtikel } from "@/data/berita";
 import ArticleDetail from "@/components/ArticleDetail";
+import { getRelatedReviews } from "@/lib/related";
 import JsonLd from "@/components/JsonLd";
 import { articleBreadcrumbJsonLd, articleDetailMeta, articleJsonLd } from "@/lib/seo";
 
@@ -31,7 +32,10 @@ export default async function BeritaDetailPage({
     <>
       <JsonLd data={articleJsonLd(artikel, path)} />
       <JsonLd data={articleBreadcrumbJsonLd(artikel, path)} />
-      <ArticleDetail artikel={artikel} />
+      <ArticleDetail
+        artikel={artikel}
+        related={getRelatedReviews("berita", artikel.slug, [artikel.category])}
+      />
     </>
   );
 }

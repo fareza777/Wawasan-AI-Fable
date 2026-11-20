@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function AdminLoginForm() {
-  const router = useRouter();
   const [email, setEmail] = useState("fajar.mreza@gmail.com");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -25,8 +23,8 @@ export default function AdminLoginForm() {
         setError(data.error ?? "Gagal masuk.");
         return;
       }
-      router.push("/admin");
-      router.refresh();
+      // Full navigation so the Worker session gate runs.
+      window.location.assign("/admin");
     } catch {
       setError("Koneksi gagal. Coba lagi.");
     } finally {

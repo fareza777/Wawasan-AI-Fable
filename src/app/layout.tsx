@@ -116,7 +116,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <BackToTop />
           <ConsentBanner />
-          <Analytics />
+          <Analytics
+            vercel={Boolean(process.env.VERCEL)}
+            cfBeaconToken={process.env.NEXT_PUBLIC_CF_BEACON_TOKEN}
+          />
         </ThemeProvider>
       </body>
     </html>

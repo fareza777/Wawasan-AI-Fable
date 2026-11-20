@@ -7,12 +7,18 @@ import ItemLogo from "./ItemLogo";
 import NewContentBadge from "./NewContentBadge";
 import { rubrikStyle } from "@/lib/rubrik";
 
+/** Fields the card renders — lets client pages pass slim objects instead of full reviews. */
+export type ReviewCardData = Pick<
+  Review,
+  "slug" | "link" | "name" | "date" | "updatedAt" | "tagline" | "score" | "summary" | "tags"
+>;
+
 export default function ReviewCard({
   review,
   basePath,
   contentType,
 }: {
-  review: Review;
+  review: ReviewCardData;
   basePath: string;
   contentType?: ContentType;
 }) {

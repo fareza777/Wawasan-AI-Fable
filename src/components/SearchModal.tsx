@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { cariKonten, SearchItem } from "@/lib/searchIndex";
+import { cariDiIndeks, type SearchItem } from "@/lib/searchQuery";
 import { scoreColor } from "./Score";
 
 const typeStyle: Record<string, string> = {
@@ -34,7 +34,31 @@ export default function SearchModal() {
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  const results: SearchItem[] = cariKonten(query);
+  const [index, setIndex] = useState<SearchItem[] | null>(null);
+  const [loadError, setLoadError] = useState(false);
+
+  // Load the search index lazily (static /search-index.json) on first open.
+  useEffect(() => {
+    if (!open || index) return;
+    let cancelled = false;
+    setLoadError(false);
+    fetch("/search-index.json")
+      .then((r) => {
+        if (!r.ok) throw new Error(String(r.status));
+        return r.json() as Promise<SearchItem[]>;
+      })
+      .then((data) => {
+        if (!cancelled) setIndex(data);
+      })
+      .catch(() => {
+        if (!cancelled) setLoadError(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [open, index]);
+
+  const results: SearchItem[] = index ? cariDiIndeks(index, query) : [];
 
   const close = () => setOpen(false);
 
@@ -184,6 +208,10 @@ export default function SearchModal() {
                       ))}
                     </div>
                   </div>
+                ) : !index ? (
+                  <p className="px-4 py-8 text-center text-sm text-slate-500">
+                    {loadError ? "Gagal memuat indeks pencarian. Coba lagi nanti." : "Memuat indeks pencarian…"}
+                  </p>
                 ) : results.length === 0 ? (
                   <p className="px-4 py-8 text-center text-sm text-slate-500">
                     Tidak ada hasil untuk &ldquo;{query}&rdquo;
