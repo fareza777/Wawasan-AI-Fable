@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-21T08:38:39.224Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "XinaTian/MROffice",
+      "owner": "XinaTian",
+      "repo": "MROffice",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "githubUrl": "https://github.com/XinaTian/MROffice",
+      "trendshiftUrl": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-10T17:54:07Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Cablezumready/metatrader-5-bot",
+      "owner": "Cablezumready",
+      "repo": "metatrader-5-bot",
+      "description": "Metatrader 5 Bot automated deployment pipeline, pre-configured environment for efficient local workstation setup in 2026.",
+      "githubUrl": "https://github.com/Cablezumready/metatrader-5-bot",
+      "trendshiftUrl": "https://trendshift.io/repositories/366855",
+      "language": "HTML",
+      "topics": [
+        "Trading bot"
+      ],
+      "dateCreated": "2026-06-26T19:01:11Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "havenicec/google-qr-sms-helper",
+      "owner": "havenicec",
+      "repo": "google-qr-sms-helper",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "githubUrl": "https://github.com/havenicec/google-qr-sms-helper",
+      "trendshiftUrl": "https://trendshift.io/repositories/368211",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-26T10:44:47Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "atuizz/posewear",
+      "owner": "atuizz",
+      "repo": "posewear",
+      "description": "姿势、服装、人像参考图库，附中英文提示词，可在浏览器里 AI 试穿 · Pose, outfit & portrait reference library with bilingual prompts and in-browser AI try-on",
+      "githubUrl": "https://github.com/atuizz/posewear",
+      "trendshiftUrl": "https://trendshift.io/repositories/366894",
+      "language": "Python",
+      "topics": [
+        "AI image generation"
+      ],
+      "dateCreated": "2026-10-30T19:08:14Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "ChiefGyk3D/Clouds-Against-Humanity",
+      "owner": "ChiefGyk3D",
+      "repo": "Clouds-Against-Humanity",
+      "description": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
+      "githubUrl": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
+      "trendshiftUrl": "https://trendshift.io/repositories/309875",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-10-10T17:50:27Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "rustrak/rustrak",
+      "owner": "rustrak",
+      "repo": "rustrak",
+      "description": "Self-hosted, open-source Sentry alternative in Rust. Error tracking, performance, logs and AI agent traces in one small container that works with the Sentry SDKs. SQLite or PostgreSQL.",
+      "githubUrl": "https://github.com/rustrak/rustrak",
+      "trendshiftUrl": "https://trendshift.io/repositories/107953",
+      "language": "Rust",
+      "topics": [
+        "Monitoring"
+      ],
+      "dateCreated": "2026-01-22T10:36:38Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "githubUrl": "https://github.com/elementalsouls/Claude-BugHunter",
+      "trendshiftUrl": "https://trendshift.io/repositories/34184",
+      "language": "Python",
+      "topics": [
+        "AI skills",
+        "Pentesting"
+      ],
+      "dateCreated": "2026-05-05T11:22:32Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "akudamatata/iOS-Location-Spoofer-Web",
+      "owner": "akudamatata",
+      "repo": "iOS-Location-Spoofer-Web",
+      "description": "iOS GPS location spoofer web panel - map-based location picker powered by Shadowrocket MITM",
+      "githubUrl": "https://github.com/akudamatata/iOS-Location-Spoofer-Web",
+      "trendshiftUrl": "https://trendshift.io/repositories/187291",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-07-01T03:55:00Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "XiaoYouChR/Ghost-Downloader-3",
+      "owner": "XiaoYouChR",
+      "repo": "Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "githubUrl": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshiftUrl": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2023-08-16T04:23:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "kunkundi/crossdesk",
+      "owner": "kunkundi",
+      "repo": "crossdesk",
+      "description": "A lightweight, cross-platform remote desktop software with support for Web Client access | 一款支持 Web 客户端访问的轻量级跨平台远程桌面软件。",
+      "githubUrl": "https://github.com/kunkundi/crossdesk",
+      "trendshiftUrl": "https://trendshift.io/repositories/17514",
+      "language": "C++",
+      "topics": [],
+      "dateCreated": "2023-11-20T06:31:52Z"
+    }
+  ]
+}
