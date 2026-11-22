@@ -1,0 +1,132 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-22T08:34:49.289Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ItsNotRexed/Leonida",
+      "owner": "ItsNotRexed",
+      "repo": "Leonida",
+      "description": "",
+      "githubUrl": "https://github.com/ItsNotRexed/Leonida",
+      "trendshiftUrl": "https://trendshift.io/repositories/370687",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-20T20:07:13Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "shinyobjectz/raea",
+      "owner": "shinyobjectz",
+      "repo": "raea",
+      "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
+      "githubUrl": "https://github.com/shinyobjectz/raea",
+      "trendshiftUrl": "https://trendshift.io/repositories/338946",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-18T18:08:48Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "XinaTian/MROffice",
+      "owner": "XinaTian",
+      "repo": "MROffice",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "githubUrl": "https://github.com/XinaTian/MROffice",
+      "trendshiftUrl": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-10T17:54:07Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "bol-van/zapret",
+      "owner": "bol-van",
+      "repo": "zapret",
+      "description": "DPI bypass multi platform",
+      "githubUrl": "https://github.com/bol-van/zapret",
+      "trendshiftUrl": "https://trendshift.io/repositories/10967",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2016-02-15T13:30:50Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "havenicec/google-qr-sms-helper",
+      "owner": "havenicec",
+      "repo": "google-qr-sms-helper",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "githubUrl": "https://github.com/havenicec/google-qr-sms-helper",
+      "trendshiftUrl": "https://trendshift.io/repositories/368211",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-26T10:44:47Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "owner": "bookwjitchieni1986",
+      "repo": "blender-ai-mcp-addon",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "githubUrl": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "trendshiftUrl": "https://trendshift.io/repositories/369195",
+      "topics": [],
+      "dateCreated": "2026-11-19T14:43:10Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "jxy333967/jianxunyun",
+      "owner": "jxy333967",
+      "repo": "jianxunyun",
+      "description": "简讯云  最好的vpn服务",
+      "githubUrl": "https://github.com/jxy333967/jianxunyun",
+      "trendshiftUrl": "https://trendshift.io/repositories/339508",
+      "topics": [],
+      "dateCreated": "2026-11-01T12:54:27Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "repo": "misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "githubUrl": "https://github.com/anefzaoui/misterdownloadmanager",
+      "trendshiftUrl": "https://trendshift.io/repositories/337427",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-29T01:25:19Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "baidu/Unlimited-OCR",
+      "owner": "baidu",
+      "repo": "Unlimited-OCR",
+      "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+      "githubUrl": "https://github.com/baidu/Unlimited-OCR",
+      "trendshiftUrl": "https://trendshift.io/repositories/62053",
+      "language": "Python",
+      "topics": [
+        "Document parsing"
+      ],
+      "dateCreated": "2026-06-18T08:40:15Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "deeplethe/sandstorm",
+      "owner": "deeplethe",
+      "repo": "sandstorm",
+      "description": "Run thousands of AI agent sandboxes on the cheapest machines.",
+      "githubUrl": "https://github.com/deeplethe/sandstorm",
+      "trendshiftUrl": "https://trendshift.io/repositories/28565",
+      "language": "Rust",
+      "topics": [
+        "Agent sandbox"
+      ],
+      "dateCreated": "2026-05-11T17:42:24Z"
+    }
+  ]
+}
