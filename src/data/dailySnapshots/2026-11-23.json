@@ -1,0 +1,136 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-23T09:33:47.332Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ItsNotRexed/Leonida",
+      "owner": "ItsNotRexed",
+      "repo": "Leonida",
+      "description": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6",
+      "githubUrl": "https://github.com/ItsNotRexed/Leonida",
+      "trendshiftUrl": "https://trendshift.io/repositories/370687",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-20T20:07:13Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "havenicec/google-qr-sms-helper",
+      "owner": "havenicec",
+      "repo": "google-qr-sms-helper",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "githubUrl": "https://github.com/havenicec/google-qr-sms-helper",
+      "trendshiftUrl": "https://trendshift.io/repositories/368211",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-10-26T10:44:47Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "pierridotite/mobile-agent-testers",
+      "owner": "pierridotite",
+      "repo": "mobile-agent-testers",
+      "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+      "githubUrl": "https://github.com/pierridotite/mobile-agent-testers",
+      "trendshiftUrl": "https://trendshift.io/repositories/371956",
+      "language": "Python",
+      "topics": [
+        "AI agent"
+      ],
+      "dateCreated": "2026-11-16T19:11:44Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "thtbee/nectarlink",
+      "owner": "thtbee",
+      "repo": "nectarlink",
+      "description": "Your Android phone and your PC, working as one. Windows and Linux. Local-first, end-to-end encrypted, no account.",
+      "githubUrl": "https://github.com/thtbee/nectarlink",
+      "trendshiftUrl": "https://trendshift.io/repositories/312285",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-10-04T21:12:31Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "EL4CTEO/fast-anything",
+      "owner": "EL4CTEO",
+      "repo": "fast-anything",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+      "githubUrl": "https://github.com/EL4CTEO/fast-anything",
+      "trendshiftUrl": "https://trendshift.io/repositories/371252",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-21T14:40:27Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "pingdotgg/t3code",
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+      "githubUrl": "https://github.com/pingdotgg/t3code",
+      "trendshiftUrl": "https://trendshift.io/repositories/22711",
+      "language": "TypeScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-02-08T23:46:22Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "lixiaoxiao9888-create/manju-laoli-skill",
+      "owner": "lixiaoxiao9888-create",
+      "repo": "manju-laoli-skill",
+      "description": "漫剧老李 AIGC 创作全流程 Skill · V7.4.26 多技能套装版（Short-Drama Director Suite）：1 总控 + 12 子技能 · 四层纵深——赛道分流 / 素材采风 / 剧本 / 资产 / 分镜 / 三大打戏引擎 / 投喂 / 质检全链路。六道前置锁 + I 画风锁 · 50 份规则库 · 机检 C1~C33 | H1~H12 + 六道投喂闸门 + P4.5 故事板机检（P450~P458）· 素材形态 M0/M1/M2（本包不持有图）· 产出可直接投喂 Seedance 2.5 / 2.0 / MiniMax H3 的七段式提示词组。测试版，二次修改整合开源内容。",
+      "githubUrl": "https://github.com/lixiaoxiao9888-create/manju-laoli-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/191974",
+      "language": "Python",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-08-15T08:00:57Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "os6/nospeaker",
+      "owner": "os6",
+      "repo": "nospeaker",
+      "description": "make your macbook's trackpad talk using its haptic motor",
+      "githubUrl": "https://github.com/os6/nospeaker",
+      "trendshiftUrl": "https://trendshift.io/repositories/371655",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-22T12:05:54Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "XiaoYouChR/Ghost-Downloader-3",
+      "owner": "XiaoYouChR",
+      "repo": "Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "githubUrl": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "trendshiftUrl": "https://trendshift.io/repositories/13847",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2023-08-16T04:23:44Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "AFK-surf/xnulinux",
+      "owner": "AFK-surf",
+      "repo": "xnulinux",
+      "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+      "githubUrl": "https://github.com/AFK-surf/xnulinux",
+      "trendshiftUrl": "https://trendshift.io/repositories/373470",
+      "language": "Objective-C++",
+      "topics": [],
+      "dateCreated": "2026-11-20T10:18:31Z"
+    }
+  ]
+}
