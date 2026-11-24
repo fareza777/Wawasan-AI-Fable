@@ -1,0 +1,129 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-24T11:27:40.014Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "ivall/xcl",
+      "owner": "ivall",
+      "repo": "xcl",
+      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+      "githubUrl": "https://github.com/ivall/xcl",
+      "trendshiftUrl": "https://trendshift.io/repositories/372068",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-20T20:03:21Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "Marvisak/VIctory",
+      "owner": "Marvisak",
+      "repo": "VIctory",
+      "description": "An attempt at running GTA VI on PC",
+      "githubUrl": "https://github.com/Marvisak/VIctory",
+      "trendshiftUrl": "https://trendshift.io/repositories/375251",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-23T21:47:25Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "4lwayz/portwatch-vi",
+      "owner": "4lwayz",
+      "repo": "portwatch-vi",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "githubUrl": "https://github.com/4lwayz/portwatch-vi",
+      "trendshiftUrl": "https://trendshift.io/repositories/374432",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-11-21T23:16:41Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "shirudo-dev/shirudo",
+      "owner": "shirudo-dev",
+      "repo": "shirudo",
+      "description": "eBPF-based security platform",
+      "githubUrl": "https://github.com/shirudo-dev/shirudo",
+      "trendshiftUrl": "https://trendshift.io/repositories/375123",
+      "language": "C",
+      "topics": [],
+      "dateCreated": "2026-10-13T16:06:37Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "Hut-hzf/ung220z-tool",
+      "owner": "Hut-hzf",
+      "repo": "ung220z-tool",
+      "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+      "githubUrl": "https://github.com/Hut-hzf/ung220z-tool",
+      "trendshiftUrl": "https://trendshift.io/repositories/372498",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-15T11:16:46Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "zed-industries/gpui",
+      "owner": "zed-industries",
+      "repo": "gpui",
+      "description": "A GPU-accelerated, open-source UI framework for Rust that combines immediate and retained modes.",
+      "githubUrl": "https://github.com/zed-industries/gpui",
+      "trendshiftUrl": "https://trendshift.io/repositories/375054",
+      "topics": [],
+      "dateCreated": "2022-06-20T19:43:39Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "AFK-surf/xnulinux",
+      "owner": "AFK-surf",
+      "repo": "xnulinux",
+      "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+      "githubUrl": "https://github.com/AFK-surf/xnulinux",
+      "trendshiftUrl": "https://trendshift.io/repositories/373470",
+      "language": "Objective-C++",
+      "topics": [],
+      "dateCreated": "2026-11-20T10:18:31Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "LadybirdBrowser/ladybird",
+      "owner": "LadybirdBrowser",
+      "repo": "ladybird",
+      "description": "Truly independent web browser",
+      "githubUrl": "https://github.com/LadybirdBrowser/ladybird",
+      "trendshiftUrl": "https://trendshift.io/repositories/11667",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2024-05-30T09:18:10Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "nickrunning/wechat-selkies",
+      "owner": "nickrunning",
+      "repo": "wechat-selkies",
+      "description": "基于Selkies的Linux网页版微信/QQ/Telegram，支持本地中文输入法，支持三方应用，支持AMD64和ARM64。",
+      "githubUrl": "https://github.com/nickrunning/wechat-selkies",
+      "trendshiftUrl": "https://trendshift.io/repositories/23355",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2025-10-12T10:03:40Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "XinaTian/MROffice",
+      "owner": "XinaTian",
+      "repo": "MROffice",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "githubUrl": "https://github.com/XinaTian/MROffice",
+      "trendshiftUrl": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-10T17:54:07Z"
+    }
+  ]
+}
