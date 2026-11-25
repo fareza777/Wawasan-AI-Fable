@@ -1,0 +1,133 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-25T10:13:46.272Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "Zettrox/ztrx",
+      "owner": "Zettrox",
+      "repo": "ztrx",
+      "description": "Run the Xbox Series build of the game natively on Windows PCs with NVIDIA GPUs",
+      "githubUrl": "https://github.com/Zettrox/ztrx",
+      "trendshiftUrl": "https://trendshift.io/repositories/377102",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-25T01:12:08Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "crhywun/g1-acq",
+      "owner": "crhywun",
+      "repo": "g1-acq",
+      "description": "",
+      "githubUrl": "https://github.com/crhywun/g1-acq",
+      "trendshiftUrl": "https://trendshift.io/repositories/373989",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-11-22T10:53:17Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "openai/math",
+      "owner": "openai",
+      "repo": "math",
+      "description": "",
+      "githubUrl": "https://github.com/openai/math",
+      "trendshiftUrl": "https://trendshift.io/repositories/286672",
+      "language": "Lean",
+      "topics": [],
+      "dateCreated": "2026-10-06T21:47:02Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "XinaTian/MROffice",
+      "owner": "XinaTian",
+      "repo": "MROffice",
+      "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+      "githubUrl": "https://github.com/XinaTian/MROffice",
+      "trendshiftUrl": "https://trendshift.io/repositories/364478",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-10T17:54:07Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "anhao/ai-pose-gallery-zh",
+      "owner": "anhao",
+      "repo": "ai-pose-gallery-zh",
+      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "githubUrl": "https://github.com/anhao/ai-pose-gallery-zh",
+      "trendshiftUrl": "https://trendshift.io/repositories/321871",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-10-27T12:24:37Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "antigravity-cn-community/Antigravity-Chinese-Localization",
+      "owner": "antigravity-cn-community",
+      "repo": "Antigravity-Chinese-Localization",
+      "description": "antigravity一键汉化",
+      "githubUrl": "https://github.com/antigravity-cn-community/Antigravity-Chinese-Localization",
+      "trendshiftUrl": "https://trendshift.io/repositories/209626",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-05-25T01:35:04Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "Smart-Paocai/VioletToolBox",
+      "owner": "Smart-Paocai",
+      "repo": "VioletToolBox",
+      "description": "一款面向安卓开发的多功能玩机工具箱",
+      "githubUrl": "https://github.com/Smart-Paocai/VioletToolBox",
+      "trendshiftUrl": "https://trendshift.io/repositories/228305",
+      "language": "C#",
+      "topics": [],
+      "dateCreated": "2026-09-11T02:24:45Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "google-gemini/gemini-api-cli",
+      "owner": "google-gemini",
+      "repo": "gemini-api-cli",
+      "description": "An (experimental) CLI for the Gemini API",
+      "githubUrl": "https://github.com/google-gemini/gemini-api-cli",
+      "trendshiftUrl": "https://trendshift.io/repositories/307075",
+      "language": "Go",
+      "topics": [],
+      "dateCreated": "2026-04-29T14:54:25Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "qianyiai/kurocat",
+      "owner": "qianyiai",
+      "repo": "kurocat",
+      "description": "Adorable transparent black cat desktop typing & mouse companion for Windows (Tauri v2)",
+      "githubUrl": "https://github.com/qianyiai/kurocat",
+      "trendshiftUrl": "https://trendshift.io/repositories/372353",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-21T15:49:31Z"
+    }
+  ]
+}
