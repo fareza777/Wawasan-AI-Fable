@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-26T09:54:18.713Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "RMvdesi/obsidian-prism",
+      "owner": "RMvdesi",
+      "repo": "obsidian-prism",
+      "description": "Optical UI, damped-spring choreography, 512K shallow-water vial, pixel mascots & dual-mode thought suite for Antigravity (GPL-3.0)",
+      "githubUrl": "https://github.com/RMvdesi/obsidian-prism",
+      "trendshiftUrl": "https://trendshift.io/repositories/370165",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-11-17T02:50:21Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "alesha-pro/llm.asm",
+      "owner": "alesha-pro",
+      "repo": "llm.asm",
+      "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+      "githubUrl": "https://github.com/alesha-pro/llm.asm",
+      "trendshiftUrl": "https://trendshift.io/repositories/377405",
+      "language": "Assembly",
+      "topics": [],
+      "dateCreated": "2026-11-25T07:28:51Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "jub0t/Concat",
+      "owner": "jub0t",
+      "repo": "Concat",
+      "description": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC API & MCP.",
+      "githubUrl": "https://github.com/jub0t/Concat",
+      "trendshiftUrl": "https://trendshift.io/repositories/191379",
+      "language": "Rust",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-08-25T18:34:47Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "lsernau/grh-lean",
+      "owner": "lsernau",
+      "repo": "grh-lean",
+      "description": "A short Lean 4 proof of the Generalized Riemann Hypothesis",
+      "githubUrl": "https://github.com/lsernau/grh-lean",
+      "trendshiftUrl": "https://trendshift.io/repositories/379402",
+      "language": "Lean",
+      "topics": [],
+      "dateCreated": "2026-11-25T20:42:55Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "opensetlabs/openset-llm",
+      "owner": "opensetlabs",
+      "repo": "openset-llm",
+      "description": "Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server.",
+      "githubUrl": "https://github.com/opensetlabs/openset-llm",
+      "trendshiftUrl": "https://trendshift.io/repositories/378802",
+      "language": "C++",
+      "topics": [
+        "LLM inference"
+      ],
+      "dateCreated": "2026-11-13T12:45:59Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "antigravity-cn-community/Antigravity-Chinese-Localization",
+      "owner": "antigravity-cn-community",
+      "repo": "Antigravity-Chinese-Localization",
+      "description": "antigravity一键汉化",
+      "githubUrl": "https://github.com/antigravity-cn-community/Antigravity-Chinese-Localization",
+      "trendshiftUrl": "https://trendshift.io/repositories/209626",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-05-25T01:35:04Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "4lwayz/portwatch-vi",
+      "owner": "4lwayz",
+      "repo": "portwatch-vi",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "githubUrl": "https://github.com/4lwayz/portwatch-vi",
+      "trendshiftUrl": "https://trendshift.io/repositories/374432",
+      "language": "JavaScript",
+      "topics": [],
+      "dateCreated": "2026-11-21T23:16:41Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "WhiteBr1ck/agy-powertools",
+      "owner": "WhiteBr1ck",
+      "repo": "agy-powertools",
+      "description": "Antigravity 2.0 原生界面增强插件：界面汉化、类 Codex 紧凑排版与阶段汇报、上下文与缓存监控、会话分支及本地用量面板",
+      "githubUrl": "https://github.com/WhiteBr1ck/agy-powertools",
+      "trendshiftUrl": "https://trendshift.io/repositories/370708",
+      "language": "JavaScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-11-16T21:35:31Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "superdesigndev/treg",
+      "owner": "superdesigndev",
+      "repo": "treg",
+      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+      "githubUrl": "https://github.com/superdesigndev/treg",
+      "trendshiftUrl": "https://trendshift.io/repositories/85292",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-07-15T13:38:07Z"
+    }
+  ]
+}
