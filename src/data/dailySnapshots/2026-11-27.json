@@ -1,0 +1,144 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-27T09:58:44.698Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "Belobug/VIctory-Belobug-AMD",
+      "owner": "Belobug",
+      "repo": "VIctory-Belobug-AMD",
+      "description": "",
+      "githubUrl": "https://github.com/Belobug/VIctory-Belobug-AMD",
+      "trendshiftUrl": "https://trendshift.io/repositories/377434",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-25T09:41:37Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "nexu-io/opengame",
+      "owner": "nexu-io",
+      "repo": "opengame",
+      "description": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+      "githubUrl": "https://github.com/nexu-io/opengame",
+      "trendshiftUrl": "https://trendshift.io/repositories/379696",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "Game engine"
+      ],
+      "dateCreated": "2026-11-25T10:35:45Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "VUILabsAI/Luna-Translator",
+      "owner": "VUILabsAI",
+      "repo": "Luna-Translator",
+      "description": "Self-hosted real-time speech-to-speech translation with live captions and translated audio. Web community edition and a Go quickstart for the VUI Labs v3 API.",
+      "githubUrl": "https://github.com/VUILabsAI/Luna-Translator",
+      "trendshiftUrl": "https://trendshift.io/repositories/379533",
+      "language": "TypeScript",
+      "topics": [
+        "AI translation"
+      ],
+      "dateCreated": "2026-10-28T09:55:27Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "Reukix/Reloc",
+      "owner": "Reukix",
+      "repo": "Reloc",
+      "description": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
+      "githubUrl": "https://github.com/Reukix/Reloc",
+      "trendshiftUrl": "https://trendshift.io/repositories/379705",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-25T17:29:48Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "repo": "orca",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "githubUrl": "https://github.com/stablyai/orca",
+      "trendshiftUrl": "https://trendshift.io/repositories/26256",
+      "language": "TypeScript",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-03-17T03:28:57Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "scottsturrock/mate-wayland-desktop",
+      "owner": "scottsturrock",
+      "repo": "mate-wayland-desktop",
+      "description": "MATE Wayland Desktop: the MATE desktop on Wayland with labwc, on an Ubuntu 26.04 base. Sources and build system.",
+      "githubUrl": "https://github.com/scottsturrock/mate-wayland-desktop",
+      "trendshiftUrl": "https://trendshift.io/repositories/360783",
+      "language": "Shell",
+      "topics": [],
+      "dateCreated": "2026-11-16T03:12:11Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "WhiteBr1ck/agy-powertools",
+      "owner": "WhiteBr1ck",
+      "repo": "agy-powertools",
+      "description": "Antigravity 2.0 原生界面增强插件：界面汉化、类 Codex 紧凑排版与阶段汇报、上下文与缓存监控、会话分支及本地用量面板",
+      "githubUrl": "https://github.com/WhiteBr1ck/agy-powertools",
+      "trendshiftUrl": "https://trendshift.io/repositories/370708",
+      "language": "JavaScript",
+      "topics": [
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-11-16T21:35:31Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "grapedjuice/ytm-rs",
+      "owner": "grapedjuice",
+      "repo": "ytm-rs",
+      "description": "Fast, native YouTube Music desktop app for Windows, macOS and Linux, built in Rust. No Electron, synced karaoke lyrics, 30 themes.",
+      "githubUrl": "https://github.com/grapedjuice/ytm-rs",
+      "trendshiftUrl": "https://trendshift.io/repositories/297103",
+      "language": "Rust",
+      "topics": [
+        "Music player"
+      ],
+      "dateCreated": "2026-10-06T21:39:16Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "jub0t/Concat",
+      "owner": "jub0t",
+      "repo": "Concat",
+      "description": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC API & MCP.",
+      "githubUrl": "https://github.com/jub0t/Concat",
+      "trendshiftUrl": "https://trendshift.io/repositories/191379",
+      "language": "Rust",
+      "topics": [
+        "Video editing"
+      ],
+      "dateCreated": "2026-08-25T18:34:47Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "ZigZagBoi1/ScarlettPort",
+      "owner": "ZigZagBoi1",
+      "repo": "ScarlettPort",
+      "description": "Grand Theft Auto VI running natively on Windows from your own Xbox Series dump. No emulator: the game's x64 code runs on your CPU and its GPU code is recompiled for your card.",
+      "githubUrl": "https://github.com/ZigZagBoi1/ScarlettPort",
+      "trendshiftUrl": "https://trendshift.io/repositories/375552",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-24T09:36:26Z"
+    }
+  ]
+}
