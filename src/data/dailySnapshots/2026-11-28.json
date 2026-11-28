@@ -1,0 +1,139 @@
+{
+  "cadence": "daily",
+  "title": "Live trending GitHub repositories — daily momentum ranking",
+  "periodLabel": "Hari ini",
+  "period": null,
+  "sourceUrl": "https://trendshift.io/",
+  "fetchedAt": "2026-11-28T09:14:40.407Z",
+  "repos": [
+    {
+      "rank": 1,
+      "fullName": "trustno1-coder/VIctory-NVIDIA",
+      "owner": "trustno1-coder",
+      "repo": "VIctory-NVIDIA",
+      "description": "VIctory (Xbox Series compatibility layer) made to draw everything on NVIDIA cards: no skipped draws on capped descriptor heaps, Series S interface plane, half-scale Series S at about 20-22 fps on an RTX 5070. Fork of VIctory-7900XTX. No game files.",
+      "githubUrl": "https://github.com/trustno1-coder/VIctory-NVIDIA",
+      "trendshiftUrl": "https://trendshift.io/repositories/380324",
+      "language": "Rust",
+      "topics": [],
+      "dateCreated": "2026-11-25T23:35:29Z"
+    },
+    {
+      "rank": 2,
+      "fullName": "drdon1234/Hentai-Park",
+      "owner": "drdon1234",
+      "repo": "Hentai-Park",
+      "description": "跨平台成人内容聚合客户端：图集、视频、音声、小说与游戏资源，支持聚合搜索、排行榜、阅读播放、订阅追更、离线下载与隐私保护 | Cross-platform adult content client for images, videos, asmr, novels and game resources; unified search, rankings, reading, playback, subscriptions, offline downloads and privacy controls",
+      "githubUrl": "https://github.com/drdon1234/Hentai-Park",
+      "trendshiftUrl": "https://trendshift.io/repositories/358739",
+      "language": "Dart",
+      "topics": [],
+      "dateCreated": "2026-10-11T04:00:54Z"
+    },
+    {
+      "rank": 3,
+      "fullName": "openBitFun/OpenBitFun",
+      "owner": "openBitFun",
+      "repo": "OpenBitFun",
+      "description": "OpenBitFun combines a high-performance agent runtime written in Rust with a polished desktop application. It pairs the depth of a Code Agent with open, general-purpose capabilities for work beyond software development.",
+      "githubUrl": "https://github.com/openBitFun/OpenBitFun",
+      "trendshiftUrl": "https://trendshift.io/repositories/44672",
+      "language": "Rust",
+      "topics": [
+        "AI agent",
+        "AI coding assistant"
+      ],
+      "dateCreated": "2026-02-02T09:52:10Z"
+    },
+    {
+      "rank": 4,
+      "fullName": "DeadInternetStudios/100x-engineer-skill",
+      "owner": "DeadInternetStudios",
+      "repo": "100x-engineer-skill",
+      "description": "100x is a skill by a former Cursor engineer that turns prompts into formally verified, production-ready code",
+      "githubUrl": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+      "trendshiftUrl": "https://trendshift.io/repositories/378317",
+      "language": "JavaScript",
+      "topics": [
+        "AI skills"
+      ],
+      "dateCreated": "2026-11-23T11:06:07Z"
+    },
+    {
+      "rank": 5,
+      "fullName": "VUILabsAI/Luna-Translator",
+      "owner": "VUILabsAI",
+      "repo": "Luna-Translator",
+      "description": "Self-hosted real-time speech-to-speech translation with live captions and translated audio. Web community edition and a Go quickstart for the VUI Labs v3 API.",
+      "githubUrl": "https://github.com/VUILabsAI/Luna-Translator",
+      "trendshiftUrl": "https://trendshift.io/repositories/379533",
+      "language": "TypeScript",
+      "topics": [
+        "AI translation"
+      ],
+      "dateCreated": "2026-10-28T09:55:27Z"
+    },
+    {
+      "rank": 6,
+      "fullName": "pithings/unkernel",
+      "owner": "pithings",
+      "repo": "unkernel",
+      "description": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
+      "githubUrl": "https://github.com/pithings/unkernel",
+      "trendshiftUrl": "https://trendshift.io/repositories/360041",
+      "language": "TypeScript",
+      "topics": [],
+      "dateCreated": "2026-11-12T22:06:00Z"
+    },
+    {
+      "rank": 7,
+      "fullName": "gary23w/f-ck_data_brokers",
+      "owner": "gary23w",
+      "repo": "f-ck_data_brokers",
+      "description": "",
+      "githubUrl": "https://github.com/gary23w/f-ck_data_brokers",
+      "trendshiftUrl": "https://trendshift.io/repositories/380888",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-11-26T17:53:07Z"
+    },
+    {
+      "rank": 8,
+      "fullName": "anomalyco/opencode-rune",
+      "owner": "anomalyco",
+      "repo": "opencode-rune",
+      "description": "OpenCode (Rune) desktop client and embeddable Rune session crates",
+      "githubUrl": "https://github.com/anomalyco/opencode-rune",
+      "trendshiftUrl": "https://trendshift.io/repositories/382447",
+      "language": "Rust",
+      "topics": [
+        "AI chat"
+      ],
+      "dateCreated": "2026-11-04T17:45:01Z"
+    },
+    {
+      "rank": 9,
+      "fullName": "Reukix/Reloc",
+      "owner": "Reukix",
+      "repo": "Reloc",
+      "description": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
+      "githubUrl": "https://github.com/Reukix/Reloc",
+      "trendshiftUrl": "https://trendshift.io/repositories/379705",
+      "language": "Swift",
+      "topics": [],
+      "dateCreated": "2026-11-25T17:29:48Z"
+    },
+    {
+      "rank": 10,
+      "fullName": "garinasset/leak-check",
+      "owner": "garinasset",
+      "repo": "leak-check",
+      "description": "厘查 API © 嘉林数据",
+      "githubUrl": "https://github.com/garinasset/leak-check",
+      "trendshiftUrl": "https://trendshift.io/repositories/26525",
+      "language": "Python",
+      "topics": [],
+      "dateCreated": "2026-03-27T10:26:52Z"
+    }
+  ]
+}
